@@ -207,28 +207,26 @@
         <div class="logo-container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
                 <!-- Background -->
-                <rect width="400" height="200" fill="#1a1a24" />
-
-                <!-- GT Letters -->
-                <path d="M80 50 h160 v30 h-130 v40 h130 v30 h-160 v-100" fill="none" stroke="#00ff99"
-                    stroke-width="8" />
-                <path d="M260 50 v100 h-30 v-35 h35 v-30 h-35 v-35 h30" fill="none" stroke="#00ff99" stroke-width="8" />
-
+                <rect width="400" height="200" fill="#1a1a24"/>
+                
+                <!-- Decorative Border -->
+                <rect x="30" y="30" width="340" height="140" rx="10" fill="none" stroke="#334155" stroke-width="2"/>
+                
+                <!-- Window Controls -->
+                <circle cx="50" cy="45" r="4" fill="#ff3366"/>
+                <circle cx="65" cy="45" r="4" fill="#ffcc00"/>
+                <circle cx="80" cy="45" r="4" fill="#00ff99"/>
+                
+                <!-- GT Letters - Simplified -->
+                <path d="M100 70 h100 v20 h-80 v20 h80 v20 h-100 z" fill="#00ff99"/>
+                <path d="M210 70 v60 h20 v-20 h20 v-20 h-20 v-20 z" fill="#00ff99"/>
+                
                 <!-- Code Text -->
-                <text x="200" y="160" font-family="Monaco, monospace" font-size="24" fill="#00ff99"
-                    text-anchor="middle">CODE</text>
-
-                <!-- Decorative Elements -->
-                <rect x="40" y="30" width="320" height="140" rx="10" fill="none" stroke="#334155" stroke-width="2" />
-                <circle cx="60" cy="45" r="4" fill="#ff3366" />
-                <circle cx="75" cy="45" r="4" fill="#ffcc00" />
-                <circle cx="90" cy="45" r="4" fill="#00ff99" />
-
-                <!-- Binary Background -->
-                <text x="330" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">02</text>
-                <text x="350" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">21</text>
-                <text x="370" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">25</text>
-            </svg>
+                <text x="200" y="150" font-family="Monaco, monospace" font-size="24" fill="#00ff99" text-anchor="middle">CODE</text>
+                
+                <!-- Numbers (moved inside the border) -->
+                <text x="300" y="60" font-family="Monaco, monospace" font-size="14" fill="#334155">02 21 25</text>
+              </svg>
         </div>
     </div>
     <div class="flex-center">
