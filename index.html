@@ -10,47 +10,165 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/3.1.1/mobi.min.css">
     <style type="text/css">
+        :root {
+            --primary-bg: #1a1a24;
+            --secondary-bg: #282834;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --accent: #00ff99;
+            --border-color: #334155;
+            --header-bg: #0f172a;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
         #headercont {
-            background-color: #282834;
+            background-color: var(--header-bg);
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
         }
 
         article {
-            padding: 0 0 2em 0;
-            border-bottom: 1px solid #888;
+            background: var(--secondary-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
         }
 
-        div.copybottom {
-            padding: 0 0 1.25em 0;
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin: 1.2rem 0 0.8rem;
         }
 
         .byline {
+            color: var(--text-secondary);
             font-style: italic;
-            font-size: 0.9em;
-            color: #666;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
         }
 
-        h2.newsrelease {
-            /* Style for News Release heading */
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #333;
-            margin-top: 2em;
-            margin-bottom: 0.5em;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 0.25em;
-        }
-
+        h2.newsrelease,
         h2.editorial {
-            /* Style for Editorial heading */
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #333;
-            margin-top: 2em;
-            margin-bottom: 0.5em;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 0.25em;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-primary);
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        ul,
+        ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .copybottom {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container-fluid {
+                padding: 1rem;
+            }
+
+            article {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Style blockquotes if needed */
+        blockquote {
+            border-left: 4px solid var(--accent);
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* Add focus styles for accessibility */
+        :focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
         }
     </style>
 </head>
@@ -58,7 +176,30 @@
 <body>
     <div class="flex-center" id="headercont">
         <div class="">
-            <img style="height: 200px" src="/gtcode-logo.png" alt="GTCode - Technology and Security Consultation" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+                <!-- Background -->
+                <rect width="400" height="200" fill="#1a1a24" />
+
+                <!-- GT Letters -->
+                <path d="M80 50 h160 v30 h-130 v40 h130 v30 h-160 v-100" fill="none" stroke="#00ff99"
+                    stroke-width="8" />
+                <path d="M260 50 v100 h-30 v-35 h35 v-30 h-35 v-35 h30" fill="none" stroke="#00ff99" stroke-width="8" />
+
+                <!-- Code Text -->
+                <text x="200" y="160" font-family="Monaco, monospace" font-size="24" fill="#00ff99"
+                    text-anchor="middle">CODE</text>
+
+                <!-- Decorative Elements -->
+                <rect x="40" y="30" width="320" height="140" rx="10" fill="none" stroke="#334155" stroke-width="2" />
+                <circle cx="60" cy="45" r="4" fill="#ff3366" />
+                <circle cx="75" cy="45" r="4" fill="#ffcc00" />
+                <circle cx="90" cy="45" r="4" fill="#00ff99" />
+
+                <!-- Binary Background -->
+                <text x="330" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">01</text>
+                <text x="350" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">10</text>
+                <text x="370" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">01</text>
+            </svg>
         </div>
     </div>
     <div class="flex-center">
@@ -95,7 +236,7 @@
                     <p>Immediately following this alleged visual cue from Judge Loo, {(REDACTED)} denied providing the
                         LSD. The cross-examining individual attempted to object to the judge's action, stating, "Let the
                         record show that the judge just..." but was reportedly cut off aggressively by Judge Loo, who
-                        loudly stated, "Nah ah ah enough out of you!!!!!"</p>
+                        loudly stated, "Nah ah ah enough out of you!!"</p>
                     <p>This incident, according to the individual who was cross-examining, fundamentally compromised the
                         fairness of the proceedings and led to a collapse of their ability to effectively question
                         {(REDACTED)}.</p>
