@@ -30,19 +30,48 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        #headercont {
+
+
+        .site-header {
             background-color: var(--header-bg);
-            padding: 2rem 0;
+            padding: 3rem 0;
             border-bottom: 1px solid var(--border-color);
+            width: 100%;
+            margin: 0;
+        }
+
+        .logo-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo-container svg {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .container-fluid {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 2rem 1rem;
         }
+
+
+        .flex-center {
+            flex: 1;
+        }
+
+        .flex-center:first-child {
+            margin-top: 0;
+        }
+
 
         article {
             background: var(--secondary-bg);
@@ -174,31 +203,33 @@
 </head>
 
 <body>
-    <div class="flex-center" id="headercont">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
-            <!-- Background -->
-            <rect width="400" height="200" fill="#1a1a24" />
+    <div class="site-header">
+        <div class="logo-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+                <!-- Background -->
+                <rect width="400" height="200" fill="#1a1a24" />
 
-            <!-- GT Letters -->
-            <path d="M80 50 h160 v30 h-130 v40 h130 v30 h-160 v-100" fill="none" stroke="#00ff99"
-                stroke-width="8" />
-            <path d="M260 50 v100 h-30 v-35 h35 v-30 h-35 v-35 h30" fill="none" stroke="#00ff99" stroke-width="8" />
+                <!-- GT Letters -->
+                <path d="M80 50 h160 v30 h-130 v40 h130 v30 h-160 v-100" fill="none" stroke="#00ff99"
+                    stroke-width="8" />
+                <path d="M260 50 v100 h-30 v-35 h35 v-30 h-35 v-35 h30" fill="none" stroke="#00ff99" stroke-width="8" />
 
-            <!-- Code Text -->
-            <text x="200" y="160" font-family="Monaco, monospace" font-size="24" fill="#00ff99"
-                text-anchor="middle">CODE</text>
+                <!-- Code Text -->
+                <text x="200" y="160" font-family="Monaco, monospace" font-size="24" fill="#00ff99"
+                    text-anchor="middle">CODE</text>
 
-            <!-- Decorative Elements -->
-            <rect x="40" y="30" width="320" height="140" rx="10" fill="none" stroke="#334155" stroke-width="2" />
-            <circle cx="60" cy="45" r="4" fill="#ff3366" />
-            <circle cx="75" cy="45" r="4" fill="#ffcc00" />
-            <circle cx="90" cy="45" r="4" fill="#00ff99" />
+                <!-- Decorative Elements -->
+                <rect x="40" y="30" width="320" height="140" rx="10" fill="none" stroke="#334155" stroke-width="2" />
+                <circle cx="60" cy="45" r="4" fill="#ff3366" />
+                <circle cx="75" cy="45" r="4" fill="#ffcc00" />
+                <circle cx="90" cy="45" r="4" fill="#00ff99" />
 
-            <!-- Binary Background -->
-            <text x="330" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">02</text>
-            <text x="350" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">21</text>
-            <text x="370" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">25</text>
-        </svg>
+                <!-- Binary Background -->
+                <text x="330" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">02</text>
+                <text x="350" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">21</text>
+                <text x="370" y="45" font-family="Monaco, monospace" font-size="10" fill="#334155">25</text>
+            </svg>
+        </div>
     </div>
     <div class="flex-center">
         <div class="container-fluid">
@@ -582,8 +613,8 @@
                             authorities (FBI, Department of Justice, Hawaii Attorney General, etc.) is necessary to
                             determine whether these potential violations occurred and who is responsible.</li>
                     </ul>
-                    <p>This list provides a comprehensive overview of the potential legal ramifications based on the 
-                        provided account. It highlights the seriousness of the allegations and the need for a thorough 
+                    <p>This list provides a comprehensive overview of the potential legal ramifications based on the
+                        provided account. It highlights the seriousness of the allegations and the need for a thorough
                         and impartial investigation.</p>
                 </section>
 
