@@ -669,17 +669,17 @@
                             E -.-> HPDTRY[HPD forwards criminal complaint re: Starbucks Assault to Steve Alm's office
                             containing incorrect date of assault]
                             HPDTRY -.-> RKC
-                            RKC -.-> ALMCOVERUP[Alm's office closes case]
-                            ALMCOVERUP -.-> TRYAGAIN[Victim informs HPD/Alm's Office of mixup on date and requests
+                            RKC -.-> ALMINCOMP[Alm's office closes case]
+                            ALMINCOMP -.-> TRYAGAIN[Victim informs HPD/Alm's Office of mixup on date and requests
                             re-opening of case]
-                            TRYAGAIN -.-> ALMCOVERUP2[(Alm's office refuses)]
+                            TRYAGAIN -.-> ALMINCOMP2[(Alm's office refuses)]
                             subgraph JJF[Court - Honolulu Judge Wilson Loo]
                             K[(Alleged Judicial Misconduct)]
                             RKC[REDACTED makes false statement under oath regarding victim's prior report of Starbucks
                             assault, likely abusing mis-reported date of incident for cover.]
                             K --See Prior Diagram: Judicial Misconduct--> O[Judge Seals Case]
                             end
-                            O ==In The Weeks Following==> ALMCOVERUP
+                            O ==In The Weeks Following==> ALMINCOMP
                             XXX -.-> E
                             O ==Later==> P[Victim Reports LSD provisioning crime to female HPD officer via recorded 911
                             call, including location of evidence]
