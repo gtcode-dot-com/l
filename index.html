@@ -219,11 +219,29 @@
             margin-bottom: 1rem;
             /* Space below the diagram */
         }
+
+        
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.7/dist/mermaid.min.js"></script>
-
-    <script>mermaid.initialize({ startOnLoad: true });</script>
+<script type="module">
+    import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.esm.min.mjs';
+    mermaid.initialize({ 
+        startOnLoad: true,
+        theme: 'default',
+        themeVariables: {
+            'subgraphColor': 'rgba(24, 24, 36, 0.2)', 
+            'subgraphTitleColor': '#00ff99' ,
+            'mainBkg': '#ECECFF',
+            'lineColor': '#000000',
+            'primaryColor': '#ECECFF',
+            'primaryTextColor': '#000000',
+            'actorBorder': '#666',
+            'actorBkg': '#ECECFF',
+            'noteBkgColor': '#fff5ad',
+            'noteTextColor': '#000000'
+        }
+    });
+</script>
 </head>
 
 <body>
@@ -457,10 +475,11 @@
                     <h3>Wilson Loo's Judicial Misconduct</h3>
                     <div class="mermaid-container">
                         <div class="mermaid">
+                            
                             sequenceDiagram
-                            participant CE as Cross-Examiner
-                            participant JL as Judge Loo
-                            participant W as {(REDACTED)}
+                            actor CE as Cross-Examiner
+                            actor JL as Judge Loo
+                            actor W as {(REDACTED)}
                             CE->>W: Asks about providing LSD
                             JL-->>W: [Non-verbal gesture: "no" nod]
                             W->>CE: Denies providing LSD
@@ -470,8 +489,78 @@
                             Note over W: Makes defamatory statement in court
                             Note over JL: Takes no action
                             Note over JL: Seals the case, including records of his own alleged misconduct
+ 
                         </div>
                     </div>
+
+
+
+
+
+                    <h3>Overall Sequence involving REDACTED, Loo, HPD, et. al.</h3>
+                    <div class="mermaid-container">
+                        <div class="mermaid">
+
+                    flowchart TD
+                    A[Initial Interaction] --> B[Alleged LSD Provision]
+                    B --> C[Victim Distances Self, later<br>tries to collect unpaid $200 debt]
+                    C --> DD[Alleged&nbsp;Harassment/Violence starts:<br>Starbucks violent incideent - assault]
+                    DD --> D[Victim informs REDACTED through email of<br>intention to discontinue debt collection and contact]
+                    D --> DE[Escalation/Continuation of<br>Harassment/Violence Campaign<br>by REDACTED]
+                    DE--> GGG
+                    
+                    E[Victim Reports to HPD]
+                    E -.-> GFY
+                    
+                    GGG[Victim Repeatedly Warns REDACTED of intention<br>to report to HPD and to make<br>Social Media Post if violence<br>and harassment continues]
+                    GGG --> GGGH[Victim files multiple police<br>reports over multiple months<br>thus documenting long term haraassment/stalking<br>campaign by REDACTED]
+                    GGGH --> GG[Serious Vehicular Criminal Incident]
+                    GG -.-> E
+                        GFY[(HPD Inaction)]
+                    GG --> G[Victim Makes Social Media Post]
+                    G --> H[REDACTED Files TRO containing libel]
+                    
+                    H --A day later--> I[Victim Files Cross-Petition]
+                    I --> XZX[REDACTED further escalates year-long<br>stalking/harassment campaign after filing]
+                    XZX -.->E
+                    XZX --> XX[REDACTED continually avoids TRO service]
+                    XX -.-> E
+                    XX --> XYX[(Alleged HPD Misconduct)]
+                    XYX --> XXX(REDACTED mentions having<br>'another buddy who is federal')
+                    
+                    XXX --A few days later--> K
+                    
+                    subgraph JJF[Court - Honolulu Judge Wilson Loo]
+                        
+                    K[(Alleged Judicial Misconduct)]
+                    
+                    
+                    
+                    K --> O[Judge Seals Case]
+                    end
+                
+                    
+                    XXX -.->E
+                    O -.-> P[Victim Reports LSD provisioning<br>crime to female HPD officer]
+                    
+                    O -.-> EI2([Victim contacted by<br>former intelligence official])
+
+                    O -.-> EI3([Encounter with former<br>US State Department intern])
+                    O -.-> EI4([Victim targeted with<br>defamation sealed by Loo])
+                
+                
+                        P -.-> Q[(HPD Refuses Investigation)]
+
+                    
+
+
+                        style JJF fill:#ddd,stroke:#334155,stroke-width:2px
+                </div>
+                </div>
+
+
+
+
                 </section>
 
 
