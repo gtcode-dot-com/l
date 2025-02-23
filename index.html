@@ -75,8 +75,8 @@
             background: var(--secondary-bg);
             border-radius: 12px;
             padding: 1.5rem;
-            
-            margin: 1.5rem 0; 
+
+            margin: 1.5rem 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border: 1px solid var(--border-color);
         }
@@ -273,49 +273,58 @@
 
 
         #nsEmail {
-            user-select: none; /* Prevents text selection */
-            -webkit-user-select: none; /* Safari */
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* IE */
+            user-select: none;
+            /* Prevents text selection */
+            -webkit-user-select: none;
+            /* Safari */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* IE */
             position: relative;
             display: inline-block;
         }
+
         #nsEmail::before {
-            content: ""; /* Invisible overlay */
+            content: "";
+            /* Invisible overlay */
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1; /* Sits over the text, blocks clicks */
+            z-index: 1;
+            /* Sits over the text, blocks clicks */
         }
+
         #nsEmail span {
-            pointer-events: none; /* Stops interaction with the text itself */
+            pointer-events: none;
+            /* Stops interaction with the text itself */
         }
     </style>
 
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/+esm';
         mermaid.initialize({
-    startOnLoad: true,
-    theme: 'default',
-    themeVariables: {
-        'subgraphColor': 'rgba(10, 10, 20, 0.8)', 
-        'subgraphTitleColor': '#00ff99', 
-        'mainBkg': '#1a1a24', 
-        'lineColor': '#00ff99',
-        'primaryColor': '#1a1a24',
-        'primaryTextColor': '#00ff99',
-        'actorBorder': '#00ff99', 
-        'actorBkg': '#1a1a24', 
-        'noteBkgColor': '#003d4d',
-        'noteTextColor': '#00ff99',
-        'edgeLabelBackground': 'rgba(0,0,0, 0.5)', 
-        'edgeLabelColor': '#FFFFFF', 
-        'nodeBorder': '#00ff99',
-        'nodeTextColor': '#00ff99'
-    }
-});
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                'subgraphColor': 'rgba(10, 10, 20, 0.8)',
+                'subgraphTitleColor': '#00ff99',
+                'mainBkg': '#1a1a24',
+                'lineColor': '#00ff99',
+                'primaryColor': '#1a1a24',
+                'primaryTextColor': '#00ff99',
+                'actorBorder': '#00ff99',
+                'actorBkg': '#1a1a24',
+                'noteBkgColor': '#003d4d',
+                'noteTextColor': '#00ff99',
+                'edgeLabelBackground': 'rgba(0,0,0, 0.5)',
+                'edgeLabelColor': '#FFFFFF',
+                'nodeBorder': '#00ff99',
+                'nodeTextColor': '#00ff99'
+            }
+        });
     </script>
 </head>
 
@@ -357,7 +366,8 @@
                     <h1>Hawaii's Hidden Hand: Is Justice Blind in the Aloha State?</h1>
                     <h2>An Investigative Report and Editorial on Alleged Judicial Misconduct, Perjury, and a Conspiracy
                         of Silence</h2>
-                    <p class="byline">By: <span class="pel">Paul Edward Lowndes</span><span id="nsEmail"></span><br>February 21, 2025</p>
+                    <p class="byline">By: <span class="pel">Paul Edward Lowndes</span><span
+                            id="nsEmail"></span><br>February 21, 2025</p>
                 </header>
 
                 <section>
@@ -370,47 +380,60 @@
                         parties involved. The case, involving a request for an injunction, has become the center of a
                         controversy stemming from claims of witness influence, perjury, and a biased courtroom
                         environment. This news release details the alleged actions of Judge Loo and the opposing party,
-                        [Redacted <span class="r-a-F">{(REDACTED})</span>], based on the firsthand account of the individual who brought the
+                        [Redacted <span class="r-a-F">({REDACTED})</span>], based on the firsthand account of the
+                        individual who brought the
                         cross-petition for the injunction.</p>
 
                     <h3>The Core Allegation: Influencing Testimony</h3>
-                    <p>The central issue revolves around the cross-examination of <span class="r-a-F">{(REDACTED})</span> during the injunction
-                        hearing. The individual who was cross examining, states that while questioning <span class="r-a-F">{(REDACTED})</span>
+                    <p>The central issue revolves around the cross-examination of <span
+                            class="r-a-F">({REDACTED})</span> during the injunction
+                        hearing. The individual who was cross examining, states that while questioning <span
+                            class="r-a-F">({REDACTED})</span>
                         about whether he had provided LSD to another person, Judge Loo made a distinct non-verbal
-                        gesture <em>before</em> <span class="r-a-F">{(REDACTED})</span> answered the question. This gesture is described as a clear
+                        gesture <em>before</em> <span class="r-a-F">({REDACTED})</span> answered the question. This
+                        gesture is described as a clear
                         "no" nod, accompanied by a facial expression that allegedly conveyed disbelief and suggested the
                         desired response.</p>
-                    <p>Immediately following this alleged visual cue from Judge Loo, <span class="r-a-F">{(REDACTED})</span> denied providing the
+                    <p>Immediately following this alleged visual cue from Judge Loo, <span
+                            class="r-a-F">({REDACTED})</span> denied providing the
                         LSD. The cross-examining individual attempted to object to the judge's action, stating, "Let the
                         record show that the judge just..." but was reportedly cut off aggressively by Judge Loo, who
                         loudly stated, "Nah ah ah enough out of you!!"</p>
                     <p>This incident, according to the individual who was cross-examining, fundamentally compromised the
                         fairness of the proceedings and led to a collapse of their ability to effectively question
-                        <span class="r-a-F">{(REDACTED})</span>.</p>
+                        <span class="r-a-F">({REDACTED})</span>.
+                    </p>
 
                     <h3>Judge Loo's Actions: A Detailed Account</h3>
                     <ol>
-                        <li><strong>Non-Verbal Cue:</strong> Before <span class="r-a-F">{(REDACTED})</span> answered a direct question about
+                        <li><strong>Non-Verbal Cue:</strong> Before <span class="r-a-F">({REDACTED})</span> answered a
+                            direct question about
                             providing LSD, Judge Loo allegedly made a clear non-verbal signal - a "no" nod and a
                             specific facial expression - that communicated a suggested denial to the witness.</li>
                         <li><strong>Interruption of Objection:</strong> When the opposing party attempted to object to
                             this action and make a record of it, Judge Loo allegedly interrupted aggressively and
                             loudly, preventing the objection from being fully stated.</li>
-                        <li><strong>Failure to Address Defamation:</strong> After the main ruling, <span class="r-a-F">{(REDACTED})</span>
+                        <li><strong>Failure to Address Defamation:</strong> After the main ruling, <span
+                                class="r-a-F">({REDACTED})</span>
                             allegedly {redacted} (referencing a social media post related to a third party). Judge Loo
                             reportedly took no action to address this statement.</li>
-                        <li><strong>Granting of Gag Order.</strong> Judge Loo approved the request of <span class="r-a-F">{(REDACTED})</span>'s
+                        <li><strong>Granting of Gag Order.</strong> Judge Loo approved the request of <span
+                                class="r-a-F">({REDACTED})</span>'s
                             Lawyer.</li>
                     </ol>
 
-                    <h3><span class="r-a-F">{(REDACTED})</span>'s Actions: A Detailed Account</h3>
+                    <h3><span class="r-a-F">({REDACTED})</span>'s Actions: A Detailed Account</h3>
                     <ol>
                         <li><strong>Denial Under Oath:</strong> After receiving the alleged visual cue from Judge Loo,
-                            <span class="r-a-F">{(REDACTED})</span> denied providing LSD, despite a prior text message, presented as evidence,
-                            where the accuser had stated they "took the acid."</li>
-                        <li><strong>Defamatory Statement:</strong> Following the judge's ruling, <span class="r-a-F">{(REDACTED})</span> allegedly
+                            <span class="r-a-F">({REDACTED})</span> denied providing LSD, despite a prior text message,
+                            presented as evidence,
+                            where the accuser had stated they "took the acid."
+                        </li>
+                        <li><strong>Defamatory Statement:</strong> Following the judge's ruling, <span
+                                class="r-a-F">({REDACTED})</span> allegedly
                             {redacted} in open court.</li>
-                        <li><strong>Presentation of Prior Text Message:</strong> <span class="r-a-F">{(REDACTED})</span> presented a text message
+                        <li><strong>Presentation of Prior Text Message:</strong> <span class="r-a-F">({REDACTED})</span>
+                            presented a text message
                             as evidence where the opposing party stated they "took the acid."</li>
                     </ol>
 
@@ -418,10 +441,12 @@
                     <p>The current allegations arise from a complex and escalating series of events spanning a
                         considerable period. To understand the full context, it's necessary to review the history of
                         interactions between the reporting individual (who filed the cross-petition for an injunction)
-                        and the individual referred to as "<span class="r-a-F">{(REDACTED})</span>".</p>
+                        and the individual referred to as "<span class="r-a-F">({REDACTED})</span>".</p>
 
-                    <p>The reporting individual had a prior financial interaction with <span class="r-a-F">{(REDACTED})</span>, involving an unpaid
-                        debt of $200. During this period, the reporting individual disclosed to <span class="r-a-F">{(REDACTED})</span> details of
+                    <p>The reporting individual had a prior financial interaction with <span
+                            class="r-a-F">({REDACTED})</span>, involving an unpaid
+                        debt of $200. During this period, the reporting individual disclosed to <span
+                            class="r-a-F">({REDACTED})</span> details of
                         a prior, unrelated incident involving serious allegations of a murder threat (issued by Eugene
                         and Rita Hartmann), blackmail, and witness tampering (issued by an associate of singer Jack
                         Johnson, in relation to the murder threat, while stating some kind of professional or
@@ -430,24 +455,34 @@
                         reported these prior matters, with subsequent events eventually resulting in contact with the
                         Federal Bureau of Investigation (FBI). The prior reporting was made via {redacted}.</p>
 
-                    <p>Following this disclosure to <span class="r-a-F">{(REDACTED})</span>, the reporting individual states that
-                        <span class="r-a-F">{(REDACTED})</span>'s behavior changed significantly. The reporting individual alleges that
-                        <span class="r-a-F">{(REDACTED})</span> began engaging in a pattern of escalating harassment and violence. This allegedly
-                        began with <span class="r-a-F">{(REDACTED})</span> offering and providing controlled substances, including LSD, to the
+                    <p>Following this disclosure to <span class="r-a-F">({REDACTED})</span>, the reporting individual
+                        states that
+                        <span class="r-a-F">({REDACTED})</span>'s behavior changed significantly. The reporting
+                        individual alleges that
+                        <span class="r-a-F">({REDACTED})</span> began engaging in a pattern of escalating harassment and
+                        violence. This allegedly
+                        began with <span class="r-a-F">({REDACTED})</span> offering and providing controlled substances,
+                        including LSD, to the
                         reporting individual. The reporting individual states that they distanced themselves from
-                        <span class="r-a-F">{(REDACTED})</span> after these initial incidents.</p>
+                        <span class="r-a-F">({REDACTED})</span> after these initial incidents.
+                    </p>
 
-                    <p>The reporting individual then alleges that <span class="r-a-F">{(REDACTED})</span> began a campaign of harassment. This
-                        began with an incident at a Starbucks, where <span class="r-a-F">{(REDACTED})</span> allegedly kicked the reporting
-                        individual. Following this, <span class="r-a-F">{(REDACTED})</span> allegedly engaged in repeated acts of vehicular
+                    <p>The reporting individual then alleges that <span class="r-a-F">({REDACTED})</span> began a
+                        campaign of harassment. This
+                        began with an incident at a Starbucks, where <span class="r-a-F">({REDACTED})</span> allegedly
+                        kicked the reporting
+                        individual. Following this, <span class="r-a-F">({REDACTED})</span> allegedly engaged in
+                        repeated acts of vehicular
                         aggression, using his vehicle to threaten and intimidate the reporting individual.</p>
 
                     <p>The most serious of these alleged vehicular incidents occurred on a country road. The
                         reporting individual was walking on the opposite side of the road, facing away from the
-                        direction of oncoming traffic. <span class="r-a-F">{(REDACTED})</span>, approaching from behind, allegedly accelerated his
+                        direction of oncoming traffic. <span class="r-a-F">({REDACTED})</span>, approaching from behind,
+                        allegedly accelerated his
                         vehicle to a high speed (described as "redlining"), crossed the double yellow line, and
                         accelerated the vehicle towards the reporting individual. The reporting individual states they
-                        narrowly avoided being struck. They were able to see <span class="r-a-F">{(REDACTED})</span>'s face in the vehicle as it
+                        narrowly avoided being struck. They were able to see <span class="r-a-F">({REDACTED})</span>'s
+                        face in the vehicle as it
                         sped away.</p>
 
                     <p>The reporting individual reported these incidents, including the near-miss on the country
@@ -457,27 +492,36 @@
                         supervisor allegedly mentioned "other info" as a reason for the inaction but did not disclose
                         the nature of this information.</p>
 
-                    <p>After repeatedly warning <span class="r-a-F">{(REDACTED})</span> to cease contact, and after the alleged vehicular
-                        incidents, the reporting individual made a public post on social media detailing <span class="r-a-F">{(REDACTED})</span>'s
-                        alleged behavior. <span class="r-a-F">{(REDACTED})</span> then filed for a Temporary Restraining Order (TRO) against the
+                    <p>After repeatedly warning <span class="r-a-F">({REDACTED})</span> to cease contact, and after the
+                        alleged vehicular
+                        incidents, the reporting individual made a public post on social media detailing <span
+                            class="r-a-F">({REDACTED})</span>'s
+                        alleged behavior. <span class="r-a-F">({REDACTED})</span> then filed for a Temporary Restraining
+                        Order (TRO) against the
                         reporting individual, via petition containing false and misleading statements. The reporting
-                        individual cross-filed for a TRO against <span class="r-a-F">{(REDACTED})</span>.</p>
+                        individual cross-filed for a TRO against <span class="r-a-F">({REDACTED})</span>.</p>
 
-                    <p>The reporting individual alleges that HPD failed to properly and promptly serve <span class="r-a-F">{(REDACTED})</span> with
-                        the cross-filed TRO, despite repeated requests. During this period, <span class="r-a-F">{(REDACTED})</span> allegedly
+                    <p>The reporting individual alleges that HPD failed to properly and promptly serve <span
+                            class="r-a-F">({REDACTED})</span> with
+                        the cross-filed TRO, despite repeated requests. During this period, <span
+                            class="r-a-F">({REDACTED})</span> allegedly
                         continued to harass the reporting individual. Officer S{redacted} of HPD allegedly informed the
-                        reporting individual that <span class="r-a-F">{(REDACTED})</span> *had* been served, which the reporting individual later
+                        reporting individual that <span class="r-a-F">({REDACTED})</span> *had* been served, which the
+                        reporting individual later
                         discovered to be false. Subsequently, Officer B{redacted} of HPD, responding to another alleged
-                        harassment incident, confirmed that <span class="r-a-F">{(REDACTED})</span> had *not* yet been officially served,
+                        harassment incident, confirmed that <span class="r-a-F">({REDACTED})</span> had *not* yet been
+                        officially served,
                         conflicting with S{redacted}'s prior statement.</p>
 
-                    <p>A few days prior to the injunction hearing, the reporting individual overheard <span class="r-a-F">{(REDACTED})</span>,
+                    <p>A few days prior to the injunction hearing, the reporting individual overheard <span
+                            class="r-a-F">({REDACTED})</span>,
                         while on a phone call in a public place, state, "I have another buddy who is federal." The
                         context of this statement, according to the reporting individual, was ostensibly related to the
                         upcoming legal proceedings. The "another" suggests that a *different* buddy was connected to
                         state, or local government.</p>
 
-                    <p>Regarding the injunction trial before Wilson Loo: It is important to note that these were in-person
+                    <p>Regarding the injunction trial before Wilson Loo: It is important to note that these were
+                        in-person
                         proceedings that were permanenently docuemnted as audio-only recordings.</p>
 
                     <h3>Subsequent Events:</h3>
@@ -501,18 +545,22 @@
                     <h3>Additional Subsequent Events:</h3>
                     <p>Following the hearing and subsequent events, feeling deeply disturbed by the outcome and
                         convinced
-                        that <span class="r-a-F">{(REDACTED})</span> had committed perjury, the individual who filed the cross petition (let's
+                        that <span class="r-a-F">({REDACTED})</span> had committed perjury, the individual who filed the
+                        cross petition (let's
                         refer to
                         them as "the individual" for clarity) took action. They placed a 911 call to the
                         Honolulu
                         Police Department (HPD) to report the alleged crime. This call was made with the specific intent
                         of
-                        reporting <span class="r-a-F">{(REDACTED})</span>'s alleged false testimony under oath regarding the provision of LSD.</p>
+                        reporting <span class="r-a-F">({REDACTED})</span>'s alleged false testimony under oath regarding
+                        the provision of LSD.</p>
                     <p>The 911 call connected the individual to a female HPD officer. The individual explained the
-                        situation, detailing how <span class="r-a-F">{(REDACTED})</span> had denied providing LSD during the hearing, despite the
+                        situation, detailing how <span class="r-a-F">({REDACTED})</span> had denied providing LSD during
+                        the hearing, despite the
                         existence of the text message evidence and, crucially, after allegedly receiving a non-verbal
                         cue
-                        from Judge Wilson Loo. The individual explicitly stated their belief that <span class="r-a-F">{(REDACTED})</span> had
+                        from Judge Wilson Loo. The individual explicitly stated their belief that <span
+                            class="r-a-F">({REDACTED})</span> had
                         committed
                         perjury.</p>
                     <p>The female officer's response was, according to the individual, immediately aggressive and
@@ -524,18 +572,21 @@
                     <p>The individual, attempting to provide further evidence, informed the officer that there was
                         potential
                         CCTV footage at Stonefish Grill that might be relevant to the case (presumably to show context
-                        leading up the case or <span class="r-a-F">{(REDACTED})</span>'s actions). The officer allegedly dismissed this,
+                        leading up the case or <span class="r-a-F">({REDACTED})</span>'s actions). The officer allegedly
+                        dismissed this,
                         reiterating
                         that it was "not their job" to investigate perjury.</p>
                     <p>Undeterred, the individual pointed out that furnishing LSD was, in itself, a separate and serious
-                        crime, regardless of the perjury in court. They requested that HPD investigate <span class="r-a-F">{(REDACTED})</span> for
+                        crime, regardless of the perjury in court. They requested that HPD investigate <span
+                            class="r-a-F">({REDACTED})</span> for
                         the
                         illegal distribution of a controlled substance. The officer, according to the individual,
                         continued
                         to be aggressive and refused to take the report.</p>
                     <p>Finally, the individual, desperate to be heard, mentioned Judge Loo's alleged non-verbal cue -
                         the
-                        nod and facial expression - that they believed had directly influenced <span class="r-a-F">{(REDACTED})</span>'s false
+                        nod and facial expression - that they believed had directly influenced <span
+                            class="r-a-F">({REDACTED})</span>'s false
                         testimony. At this point, the officer reportedly defended Judge Loo, referring to him as "the
                         'Honorable' Loo" in a tone that the individual interpreted as sarcastic and dismissive,
                         conveying a
@@ -553,7 +604,7 @@
                             sequenceDiagram
                             actor CE as Cross-Examiner
                             actor JL as Judge Loo
-                            actor W as {(REDACTED})
+                            actor W as ({REDACTED})
                             CE->>W: Asks about providing LSD
                             JL-->>W: [Non-verbal gesture: "no" nod]
                             W->>CE: Denies providing LSD
@@ -570,64 +621,89 @@
                     <div class="mermaid-container">
                         <div class="mermaid">
                             flowchart TD
-                                A[Initial Interaction] --> B[Alleged LSD Provision, et al]
-                                B --> C[Victim Distances Self, later tries to collect unpaid $200 debt]
-                                C --> DD[Alleged Long Term Pattern of Harassment/Violence starts: Starbucks violent incident - assault]
-                                DD --> D[Victim informs REDACTED through email of intention to discontinue both debt collection and contact]
-                                D --> DE[Escalation/Continuation of Harassment/Violence Campaign by REDACTED]
-                                DE --> GGG
-                                E[Victim Reports to HPD]
-                                E =="Otherwise"==> GFY
-                                GGG[Victim Repeatedly Warns REDACTED of intention to report to HPD and to make public Social Media Post if violence and harassment continues]
-                                GGG --> GGGH[Victim files multiple police reports over multiple months thus documenting long term haraassment/stalking campaign by REDACTED]
-                                GGGH -.-> FBI[Victim Contacts FBI Via SS-7 To Report Serious Federal Concern Regarding Statements By REDACTED]
-                                GGGH --> GG[Serious Vehicular Criminal Incident]
-                                GG -.-> E
-                                GFY[(HPD Inaction)]
-                                GG --> G[Victim Makes Social Media Post]
-                                G --> H[REDACTED Files TRO containing libel]
-                                H --A day later--> I[Victim Files Cross-Petition]
-                                I --> XZX[REDACTED further escalates year-long stalking/harassment campaign after filing]
-                                XZX -.-> E
-                                XZX --> XX[REDACTED continually avoids TRO service]
-                                XX -.-> E
-                                XX --> XYX[(Alleged HPD Misconduct)]
-                                XYX --> ssssss[REDACTED engages in yet another harassment incident after TRO is fully confirmed as served]
-                                ssssss --> ssLongBridge[Victim files yet another report in hopes that finally the legal protection will result in an arrest]
-                                ssLongBridge --> MoreCoverup[HPD responds but takes no action against REDACTED]
-                                MoreCoverup --> sssss[Victim contacts the following agencies regarding the following drug pushing activities by REDACTED: LSD, Cocaine, prescription narcotics both uppers and downers. Reports were made to HPD NarcoVice, Honolulu Sheriff, and even DEA out of desperation. Respectively: dismissal, dismissal, no response ]
+                            A[Initial Interaction] --> B[Alleged LSD Provision, et al]
+                            B --> C[Victim Distances Self, later tries to collect unpaid $200 debt]
+                            C --> DD[Alleged Long Term Pattern of Harassment/Violence starts: Starbucks violent incident
+                            - assault]
+                            DD --> D[Victim informs REDACTED through email of intention to discontinue both debt
+                            collection and contact]
+                            D --> DE[Escalation/Continuation of Harassment/Violence Campaign by REDACTED]
+                            DE --> GGG
+                            E[Victim Reports to HPD]
+                            E =="Otherwise"==> GFY
+                            GGG[Victim Repeatedly Warns REDACTED of intention to report to HPD and to make public Social
+                            Media Post if violence and harassment continues]
+                            GGG --> GGGH[Victim files multiple police reports over multiple months thus documenting long
+                            term haraassment/stalking campaign by REDACTED]
+                            GGGH -.-> FBI[Victim Contacts FBI Via SS-7 To Report Serious Federal Concern Regarding
+                            Statements By REDACTED]
+                            GGGH --> GG[Serious Vehicular Criminal Incident]
+                            GG -.-> E
+                            GFY[(HPD Inaction)]
+                            GG --> G[Victim Makes Social Media Post]
+                            G --> H[REDACTED Files TRO containing libel]
+                            H --A day later--> I[Victim Files Cross-Petition]
+                            I --> XZX[REDACTED further escalates year-long stalking/harassment campaign after filing]
+                            XZX -.-> E
+                            XZX --> XX[REDACTED continually avoids TRO service]
+                            XX -.-> E
+                            XX --> XYX[(Alleged HPD Misconduct)]
+                            XYX --> ssssss[REDACTED engages in yet another harassment incident after TRO is fully
+                            confirmed as served]
+                            ssssss --> ssLongBridge[Victim files yet another report in hopes that finally the legal
+                            protection will result in an arrest]
+                            ssLongBridge --> MoreCoverup[HPD responds but takes no action against REDACTED]
+                            MoreCoverup --> sssss[Victim contacts the following agencies regarding the following drug
+                            pushing activities by REDACTED: LSD, Cocaine, prescription narcotics both uppers and
+                            downers. Reports were made to HPD NarcoVice, Honolulu Sheriff, and even DEA out of
+                            desperation. Respectively: dismissal, dismissal, no response ]
 
-                                sssss --A Few Days Before Trial--> XXX(REDACTED mentions having 'another buddy who is federal')
-                                XXX ==A few days later==> K
-                                E -.-> HPDTRY[HPD forwards criminal complaint re: Starbucks Assault to Steve Alm's office containing incorrect date of assault]
-                                HPDTRY -.-> RKC
-                                RKC -.-> ALMCOVERUP[Alm's office closes case]
-                                ALMCOVERUP -.-> TRYAGAIN[Victim informs HPD/Alm's Office of mixup on date and requests re-opening of case]
-                                TRYAGAIN -.-> ALMCOVERUP2[(Alm's office refuses)]
-                                subgraph JJF[Court - Honolulu Judge Wilson Loo]
-                                    K[(Alleged Judicial Misconduct)]
-                                    RKC[REDACTED makes false statement under oath regarding victim's prior report of Starbucks assault, likely abusing mis-reported date of incident for cover.]
-                                    K --See Prior Diagram: Judicial Misconduct--> O[Judge Seals Case]
-                                end
-                                O ==In The Weeks Following==> ALMCOVERUP
-                                XXX -.-> E
-                                O ==Later==> P[Victim Reports LSD provisioning crime to female HPD officer via recorded 911 call, including location of evidence]
-                                O ==In The Days Following==> EI2(Victim contacted by former intelligence official<br><br>Encounter with former US State Department intern<br><br>Victim targeted with defamation that was sealed by judge<br><br>Officer S'redacted' makes unsolicited offer to show picture of suicide by rope victim<br><br>See Offline Report about further targeting concerns)
-                                Q ==Later,<br>Inside Starbucks Haleiwa:==>ETT55
-                                ETT55[Victim Attempts To Report Previous Hartmann Murder Threat Conspiracy And Subsequent Criminal Escalations That Were Still Unaddressed<br><br>Officer B'redacted' obstructs victim report to other on-duty officer re: prior Hartmann murder threat conspiracy]
-                                ETT55 ==Later,<br>Outside Starbucks Haleiwa:==> ETT5566[Victim Discloses To Other Uniformed HPD Officer the Prior Contact With FBI Regarding Hartmann et.al. Incidents Which Was HPD Responsibility.<br><br>Victim Further Inform Officer Of Suspected Prior Obstruction by Officer B'redacted' Pursuant To TRO Service Malfeasance]
-                                P -.-> Q[(HPD Refuses Investigation)]
-                                ETT5566 ==Later,<br>Via 911 Call From Nalu==> VQ[Victim Again Reports LSD Provisioning Again Over 911 To Male HPD Officer]
-                                VQ -.->COVERUP[(HPD Fails To Followup)]
-                                
-                                %% apply to an element by postpending :::leftText
-                                classDef leftText text-align:left 
+                            sssss --A Few Days Before Trial--> XXX(REDACTED mentions having 'another buddy who is
+                            federal')
+                            XXX ==A few days later==> K
+                            E -.-> HPDTRY[HPD forwards criminal complaint re: Starbucks Assault to Steve Alm's office
+                            containing incorrect date of assault]
+                            HPDTRY -.-> RKC
+                            RKC -.-> ALMCOVERUP[Alm's office closes case]
+                            ALMCOVERUP -.-> TRYAGAIN[Victim informs HPD/Alm's Office of mixup on date and requests
+                            re-opening of case]
+                            TRYAGAIN -.-> ALMCOVERUP2[(Alm's office refuses)]
+                            subgraph JJF[Court - Honolulu Judge Wilson Loo]
+                            K[(Alleged Judicial Misconduct)]
+                            RKC[REDACTED makes false statement under oath regarding victim's prior report of Starbucks
+                            assault, likely abusing mis-reported date of incident for cover.]
+                            K --See Prior Diagram: Judicial Misconduct--> O[Judge Seals Case]
+                            end
+                            O ==In The Weeks Following==> ALMCOVERUP
+                            XXX -.-> E
+                            O ==Later==> P[Victim Reports LSD provisioning crime to female HPD officer via recorded 911
+                            call, including location of evidence]
+                            O ==In The Days Following==> EI2(Victim contacted by former intelligence
+                            official<br><br>Encounter with former US State Department intern<br><br>Victim targeted with
+                            defamation that was sealed by judge<br><br>Officer S'redacted' makes unsolicited offer to
+                            show picture of suicide by rope victim<br><br>See Offline Report about further targeting
+                            concerns)
+                            Q ==Later,<br>Inside Starbucks Haleiwa:==>ETT55
+                            ETT55[Victim Attempts To Report Previous Hartmann Murder Threat Conspiracy And Subsequent
+                            Criminal Escalations That Were Still Unaddressed<br><br>Officer B'redacted' obstructs victim
+                            report to other on-duty officer re: prior Hartmann murder threat conspiracy]
+                            ETT55 ==Later,<br>Outside Starbucks Haleiwa:==> ETT5566[Victim Discloses To Other Uniformed
+                            HPD Officer the Prior Contact With FBI Regarding Hartmann et.al. Incidents Which Was HPD
+                            Responsibility.<br><br>Victim Further Inform Officer Of Suspected Prior Obstruction by
+                            Officer B'redacted' Pursuant To TRO Service Malfeasance]
+                            P -.-> Q[(HPD Refuses Investigation)]
+                            ETT5566 ==Later,<br>Via 911 Call From Nalu==> VQ[Victim Again Reports LSD Provisioning Again
+                            Over 911 To Male HPD Officer]
+                            VQ -.->COVERUP[(HPD Fails To Followup)]
 
-                                classDef default fill:#1a1a24,stroke:#00ff99,color:#00ff99,stroke-width:2px;
-                                classDef special fill:#003d4d,stroke:#00ff99,color:#00ff99,stroke-width:2px;
-                                style JJF fill:#003d4d,stroke:#00ff99,color:#00ff99;
-                                linkStyle default stroke:#00ff99,stroke-width:4px
-                                
+                            %% apply to an element by postpending :::leftText
+                            classDef leftText text-align:left
+
+                            classDef default fill:#1a1a24,stroke:#00ff99,color:#00ff99,stroke-width:2px;
+                            classDef special fill:#003d4d,stroke:#00ff99,color:#00ff99,stroke-width:2px;
+                            style JJF fill:#003d4d,stroke:#00ff99,color:#00ff99;
+                            linkStyle default stroke:#00ff99,stroke-width:4px
+
                         </div>
                     </div>
                 </section>
@@ -644,7 +720,7 @@
                         advice, but rather an analysis of the possible charges based on the provided account.
                     </p>
 
-                    <h4>I. Potential Violations by "<span class="r-a-F">{(REDACTED})</span>" (the opposing party)</h4>
+                    <h4>I. Potential Violations by "<span class="r-a-F">({REDACTED})</span>" (the opposing party)</h4>
 
                     <h5>A. Federal:</h5>
                     <ul>
@@ -700,7 +776,8 @@
 
 
                     <ul>
-                        <li><strong>18 U.S.C. § 1622 - Suborning Perjury:</strong> If he knowingly induced <span class="r-a-F">{(REDACTED})</span>
+                        <li><strong>18 U.S.C. § 1622 - Suborning Perjury:</strong> If he knowingly induced <span
+                                class="r-a-F">({REDACTED})</span>
                             to commit perjury
                             through the alleged non-verbal cue. This is a very serious charge for a judge.</li>
                         <li><strong>18 U.S.C. § 1503 - Obstruction of Justice:</strong> By influencing witness testimony
@@ -709,7 +786,8 @@
                         <li><strong>18 U.S.C. § 242 - Deprivation of Rights Under Color of Law:</strong> By violating
                             the reporting
                             individual's right to a fair trial (due process) through his biased actions.</li>
-                        <li><strong>18 U.S.C. § 371 - Conspiracy:</strong> If he conspired with <span class="r-a-F">{(REDACTED})</span> or others
+                        <li><strong>18 U.S.C. § 371 - Conspiracy:</strong> If he conspired with <span
+                                class="r-a-F">({REDACTED})</span> or others
                             to commit any of
                             the above offenses.</li>
                     </ul>
@@ -752,7 +830,8 @@
                                     impartially."
                                     <ul>
                                         <li><em>Application:</em> The non-verbal cue suggests a pre-judgment and a bias
-                                            against the cross-examining party and in favor of <span class="r-a-F">{(REDACTED})</span>. This is a
+                                            against the cross-examining party and in favor of <span
+                                                class="r-a-F">({REDACTED})</span>. This is a
                                             direct violation of the requirement to be impartial.</li>
                                     </ul>
                                 </li>
@@ -771,7 +850,7 @@
                                             judge shall not convey or permit others to convey the impression that any
                                             person or organization is in a position to influence the judge." While the
                                             motivation is unknown, the actions suggest some external influence led Judge
-                                            Loo to favor <span class="r-a-F">{(REDACTED})</span>.</li>
+                                            Loo to favor <span class="r-a-F">({REDACTED})</span>.</li>
                                     </ul>
                                 </li>
                                 <li><strong>Rule 2.6. Ensuring the Right to Be Heard:</strong> "(a) A judge shall accord
@@ -862,15 +941,17 @@
                     <ul>
                         <li><strong>18 U.S.C. § 1503 - Obstruction of Justice:</strong> For refusing to investigate the
                             perjury report
-                            and potentially covering up <span class="r-a-F">{(REDACTED})</span>'s and/or Judge Loo's actions.</li>
+                            and potentially covering up <span class="r-a-F">({REDACTED})</span>'s and/or Judge Loo's
+                            actions.</li>
                         <li><strong>18 U.S.C. § 242 - Deprivation of Rights Under Color of Law:</strong> For potentially
                             denying the
                             reporting individual equal protection under the law and access to justice through their
                             inaction and
                             alleged bias.</li>
                         <li><strong>18 U.S.C. § 371 - Conspiracy:</strong> If they conspired with each other,
-                            <span class="r-a-F">{(REDACTED})</span>, Judge Loo, or
-                            others to commit any of the above offenses.</li>
+                            <span class="r-a-F">({REDACTED})</span>, Judge Loo, or
+                            others to commit any of the above offenses.
+                        </li>
                         <li><strong>18 U.S.C. § 4 - Misprision of felony</strong>: failure to report a known felony.
                         </li>
 
@@ -884,7 +965,7 @@
 
                         <li><strong>HRS § 710-1029 - Hindering Prosecution in the Second Degree:</strong> If their
                             actions (or inaction) were intended to hinder the apprehension, prosecution, conviction, or
-                            punishment of <span class="r-a-F">{(REDACTED})</span>.</li>
+                            punishment of <span class="r-a-F">({REDACTED})</span>.</li>
                         <li><strong>HRS § 710-1060 et seq. relating to conspiracy.</strong></li>
                         <li><strong>HRS Chapter 806, relating to criminal procedure.</strong> For failure to investigate
                             a crime.</li>
@@ -1064,46 +1145,83 @@
 
                 <section>
                     <h2 class="editorial">Addendum: Clarification of Allegations and Legal Considerations</h2>
-                
-                    <p>This addendum clarifies the author's position regarding the alleged judicial misconduct of Judge Wilson Loo, focusing on the concept of <strong>mens rea</strong>—the mental state or intent behind an action—and presenting a layered analysis of the observed events. This clarification aims to ensure legal protection while raising awareness about potential wrongdoing in a public statement.</p>
-                
+
+                    <p>This addendum clarifies the author's position regarding the alleged judicial misconduct of Judge
+                        Wilson Loo, focusing on the concept of <strong>mens rea</strong>—the mental state or intent
+                        behind an action—and presenting a layered analysis of the observed events. This clarification
+                        aims to ensure legal protection while raising awareness about potential wrongdoing in a public
+                        statement.</p>
+
                     <h3>Layered Analysis of Judge Loo's Actions</h3>
-                
-                    <p>The allegations against Judge Loo are based on firsthand observations during an injunction hearing, which, while officially recorded as audio-only, was conducted in person, allowing the author to witness visual actions. The analysis separates observable facts from their potential implications, emphasizing the most provable violations:</p>
-                
+
+                    <p>The allegations against Judge Loo are based on firsthand observations during an injunction
+                        hearing, which, while officially recorded as audio-only, was conducted in person, allowing the
+                        author to witness visual actions. The analysis separates observable facts from their potential
+                        implications, emphasizing the most provable violations:</p>
+
                     <h4>Non-Verbal Cue (Nod)</h4>
                     <ul>
-                        <li><strong>Observation:</strong> The author observed Judge Loo make a distinct "no" nod with an accompanying facial expression before the witness, <span class="r-a-F">{(REDACTED})</span>, answered a question about providing LSD.</li>
-                        <li><strong>Context:</strong> This occurred during cross-examination, immediately preceding the witness's denial.</li>
-                        <li><strong>Potential Implication:</strong> The timing and nature of the gesture raise concerns that it may have influenced the witness's response, though the judge's intent remains unconfirmed.</li>
-                        <li><strong>Legal Significance:</strong> Under Rule 2.2 of the Hawaii Revised Code of Judicial Conduct, judges must perform duties impartially. Even if unintentional, such a gesture could create an appearance of bias, violating Rule 1.2, which mandates promoting confidence in the judiciary.</li>
-                        <li><strong>Counterargument:</strong> The nod might have been coincidental. However, its occurrence during a critical question undermines the perceived fairness of the proceedings, regardless of intent.</li>
+                        <li><strong>Observation:</strong> The author observed Judge Loo make a distinct "no" nod with an
+                            accompanying facial expression before the witness, <span class="r-a-F">({REDACTED})</span>,
+                            answered a question about providing LSD.</li>
+                        <li><strong>Context:</strong> This occurred during cross-examination, immediately preceding the
+                            witness's denial.</li>
+                        <li><strong>Potential Implication:</strong> The timing and nature of the gesture raise concerns
+                            that it may have influenced the witness's response, though the judge's intent remains
+                            unconfirmed.</li>
+                        <li><strong>Legal Significance:</strong> Under Rule 2.2 of the Hawaii Revised Code of Judicial
+                            Conduct, judges must perform duties impartially. Even if unintentional, such a gesture could
+                            create an appearance of bias, violating Rule 1.2, which mandates promoting confidence in the
+                            judiciary.</li>
+                        <li><strong>Counterargument:</strong> The nod might have been coincidental. However, its
+                            occurrence during a critical question undermines the perceived fairness of the proceedings,
+                            regardless of intent.</li>
                     </ul>
-                
+
                     <h4>Interruption During Objection</h4>
                     <ul>
-                        <li><strong>Observation:</strong> When the author attempted to object, stating, "Let the record show that the judge just...," Judge Loo interrupted in a loud and abrupt manner, saying, "Nah ah ah enough out of you!!"</li>
-                        <li><strong>Context:</strong> This followed the non-verbal cue and prevented the author from completing the objection.</li>
-                        <li><strong>Impact:</strong> The interruption stopped the author from documenting the prior gesture on the record, limiting their ability to challenge the witness's testimony and affecting the fairness of the hearing.</li>
-                        <li><strong>Legal Significance:</strong> This action violates Rule 2.6, ensuring the right to be heard, and Rule 2.8, requiring judicial patience and courtesy. It represents a clear breach of judicial decorum and impartiality, regardless of any preceding events.</li>
-                        <li><strong>Counterargument:</strong> The interruption could be seen as maintaining courtroom order. However, its loud and abrupt nature, combined with its timing, suggests it was aimed at silencing a legitimate objection, exceeding reasonable judicial control.</li>
+                        <li><strong>Observation:</strong> When the author attempted to object, stating, "Let the record
+                            show that the judge just...," Judge Loo interrupted in a loud and abrupt manner, saying,
+                            "Nah ah ah enough out of you!!"</li>
+                        <li><strong>Context:</strong> This followed the non-verbal cue and prevented the author from
+                            completing the objection.</li>
+                        <li><strong>Impact:</strong> The interruption stopped the author from documenting the prior
+                            gesture on the record, limiting their ability to challenge the witness's testimony and
+                            affecting the fairness of the hearing.</li>
+                        <li><strong>Legal Significance:</strong> This action violates Rule 2.6, ensuring the right to be
+                            heard, and Rule 2.8, requiring judicial patience and courtesy. It represents a clear breach
+                            of judicial decorum and impartiality, regardless of any preceding events.</li>
+                        <li><strong>Counterargument:</strong> The interruption could be seen as maintaining courtroom
+                            order. However, its loud and abrupt nature, combined with its timing, suggests it was aimed
+                            at silencing a legitimate objection, exceeding reasonable judicial control.</li>
                     </ul>
-                
+
                     <h3>Strategic Approach and Legal Considerations</h3>
-                
+
                     <p>The author emphasizes the following:</p>
                     <ul>
-                        <li><strong>Good Faith Reporting:</strong> All statements reflect a sincere effort to report events as observed, based on firsthand experience.</li>
-                        <li><strong>Accuracy Acknowledgment:</strong> Minor inaccuracies may exist, but the core observations remain truthful.</li>
-                        <li><strong>Exhaustion of Remedies:</strong> This disclosure follows unsuccessful attempts to seek redress through police reports and FBI contact.</li>
-                        <li><strong>Focus on Facts:</strong> The analysis prioritizes observable events (e.g., the interruption, text message evidence) over unprovable interpretations.</li>
-                        <li><strong>Investigative Deference:</strong> Determining Judge Loo's *mens rea*—whether actions were intentional or reckless—requires further investigation by authorities like the FBI.</li>
-                        <li><strong>Statement Purpose:</strong> Allegations are presented to document what was observed, not to assert their absolute truth without verification.</li>
+                        <li><strong>Good Faith Reporting:</strong> All statements reflect a sincere effort to report
+                            events as observed, based on firsthand experience.</li>
+                        <li><strong>Accuracy Acknowledgment:</strong> Minor inaccuracies may exist, but the core
+                            observations remain truthful.</li>
+                        <li><strong>Exhaustion of Remedies:</strong> This disclosure follows unsuccessful attempts to
+                            seek redress through police reports and FBI contact.</li>
+                        <li><strong>Focus on Facts:</strong> The analysis prioritizes observable events (e.g., the
+                            interruption, text message evidence) over unprovable interpretations.</li>
+                        <li><strong>Investigative Deference:</strong> Determining Judge Loo's *mens rea*—whether actions
+                            were intentional or reckless—requires further investigation by authorities like the FBI.
+                        </li>
+                        <li><strong>Statement Purpose:</strong> Allegations are presented to document what was observed,
+                            not to assert their absolute truth without verification.</li>
                     </ul>
-                
+
                     <h3>Disclaimer</h3>
-                
-                    <p>This document presents allegations based on the author's firsthand observations during the hearing. These claims have not been independently verified and are intended to raise awareness and seek accountability for potential judicial misconduct. This is not legal advice; the author is not an attorney and does not offer legal counsel. All individuals mentioned are presumed innocent until proven guilty in a court of law.</p>
+
+                    <p>This document presents allegations based on the author's firsthand observations during the
+                        hearing. These claims have not been independently verified and are intended to raise awareness
+                        and seek accountability for potential judicial misconduct. This is not legal advice; the author
+                        is not an attorney and does not offer legal counsel. All individuals mentioned are presumed
+                        innocent until proven guilty in a court of law.</p>
                 </section>
 
 
@@ -1153,6 +1271,146 @@
                     <p>In c&#111;nclusion, th&#101; "inf&#111;rmant" th&#101;ory simpl&#121; d&#111;esn&#39;t h&#111;ld w&#97;ter.  It&#39;s a sm&#111;kescreen th&#97;t obsc&#117;res a m&#117;ch d&#97;rker r&#101;ality: a p&#111;tential c&#111;nspiracy t&#111; ab&#117;se p&#111;wer, obstr&#117;ct just&#105;ce, &#97;nd sil&#101;nce a vict&#105;m wh&#111; dar&#101;d t&#111; sp&#101;ak &#111;ut. Th&#105;s c&#97;se d&#101;mands a full &#97;nd imp&#97;rtial inv&#101;stigation, n&#111;t just &#111;f <sp&#97;n cl&#97;ss="r-&#97;-F">{(R&#69;DACT&#69;D)}</sp&#97;n>&#39;s act&#105;ons, b&#117;t &#111;f th&#101; syst&#101;mic f&#97;ilures th&#97;t all&#111;wed th&#105;s sit&#117;ation t&#111; spir&#97;l &#111;ut &#111;f c&#111;ntrol.</p>
                 
                 </s&#101;ctio&#110;>--->
+
+
+
+
+
+
+
+
+                <section>
+                    <h2 class="editorial">97t3q842874M152Y63X8i115I6r214z6t72b284M224U4, Honolulu Field Office</h2>
+
+                    <p><strong>1x:</strong>W9171u2A26s5A8i6W28s2G7p6zF603N99,6z7333k9F5s4h87f6T77e<br>
+                        <strong>6652:</strong>U7n385g076k5k68928o484y27o2I4s3e08j4<br>
+                        <strong>J941:</strong>4x498m01237,2025<br>
+                        <strong>B32x82:</strong>27x174190B53k44h4x27j7619263Y41x7j8M9112055g6370,3h79004g,9347190H5k3f2r0m693t19
+                    </p>
+
+                    <p>5222C3m6r9k42647tP935l9x7z17p93l01g03y7j568961s83x62zP47n0369m8k6r378071351z57c5448t
+                        92798b40y5x62303d22"D8033W54M3u93D1y7"t5z59s.8X20d72215d0404z9y7m31t81w911t898f804f91126e8p7j2785z1k2
+                        709k8905628w4j8i0m,3689p83669362963g9z3r141.4i9995j54n66t5i736s5519817t24s819g4w66u8296r5w69681711926z8i6.
+                    </p>
+
+                    <h3>2i3y92i8941x9r4rF885k5173y4449p79261v:</h3>
+
+                    <ol>
+                        <li><strong>A97M4x1161J5xK3w8<span class="r-a-F">({REDACTED})</span>:</strong>1c4y0<span
+                                class="r-a-F">({REDACTED})</span>'29620p1125b6x4k
+                            9(4j5u5m3,g0j6615,52727z813821s9),63669w2B9k350z2p443z0i421v0w576i19e7
+                            550122843794f3052.7K81810y1n9j0k776m5l6t1j4058931,y139x564k558g195,7p160k91
+                            74928132409849—943J0z10f9025i0e694v2w9j11,29z9z61y6k4m3j4,—5r588036u5d9s0k8930.20902s3
+                            69i9t3684n6p3y9b6t7j8*47b*2y3w6d771q2j5y63j4w3b69m5y3b7j6z.
+                        </li>
+
+                        <li><strong>F3u"T151u282D852y"3210y13:<span
+                                    class="r-a-F">({REDACTED})</span></strong>'773701065s545989b2u7"154s9t0992
+                            u9p869f3"s7a78h14g6627t1r1256r1t24c9j89x74.7E5k4z50i287r0q501n6i2e9i7i9y0
+                            w2e28898l3i330679,w7688y39y308g7c2k7e15j8j2s.192b"h757y"610h552p152w6r150u1
+                            85f633111315y7902.7l3"5p8s49"03f12r737x31s1s0g 695s,m51224530p5482m6q.</li>
+
+                        <li><strong>482g9572949p6t6u3s8A0697:</strong>2u8t6z87690f5l0s540380y7x4651g
+                            4f1j81s(7t1,7G5,I89103) 5v7u205u34z22w7585f3g7l761m4k61t4u32 l3v0646z76813t1.411s48g10s1:
+                            <ul>
+                                <li><strong>7i67y1M8l984v7:</strong>6779021d3b8w8z5404<span
+                                        class="r-a-F">({REDACTED})</span>z46/22c24539p7x6k13u78.</li>
+                                <li><strong>A08r14uC6x33c41i737t6u):</strong>1955n3j9y14y473w8j"549x792u4i2,"95114962g3n6
+                                    p620s8k3095r,80s3w7f08y0395s.
+                                </li>
+                                <li><strong>7t11k03122o8:</strong>27661547w6z847y3t 129h7364t2b62i862k4972,j
+                                    98164414p90g5l7,9t180k53v73j17.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>923v7574Y7d001L2z915o5:</strong>2e85w4484e2z601x72o2f1x767g1j(f5s-j3497
+                            p,i3r8940b31m7j1y)698x6688408r397i45x83z4b56220s6.4D 0770g467x310g8g802i5753<span
+                                class="r-a-F">({REDACTED})</span>(6t75f9j2811)9r465y.33920051106b4g
+                            777o774996h1y(40j19832p49v64h)3 z3r356f4s447587i96.</li>
+
+                        <li><strong>U6s9-T560I1m77:</strong>428t031108s27662e2352z3z5x1c1x48x2594823i33e73n9
+                            841,x17103t7v2p1h1w254592k,b3j11s3f1980 37j16652740619j54188y47.0045z21b1k415
+                            1y5y66y2962407632.</li>
+
+                        <li><strong>X65K05j5z941s78R14929)):</strong>09649531b30h5766w08m98y<span
+                                class="r-a-F">({REDACTED})</span>,
+                            <em>898272</em>62v0z3w0n993y5,7i1938y0r33w93z92m.44'u31g465<span
+                                class="r-a-F">({REDACTED})</span>,9x9685i04h2g4u536,z403959y0h966f,888j5161w0t95e6r7507t.
+                            8z90028127327070w6i81d65k0n63j26j6e3064x,n73x287t210289
+                            3t3034w.656r0009v871z0i41k6t0p6i51h12e5.
+                        </li>
+
+                        <li><strong>B1w617vH10W0x1n401z:</strong>A440h92j59e900f660d9m1s75k(d1j4309fH4g0x8tB{8i926i4})1r9k329j8v557h
+                            1761j.4R'441464w190j78,6081y60716n353,<span
+                                class="r-a-F">({REDACTED})</span>4t7616768z18y70x332m623u936,1631p32j93z9v0387m37h7912.
+                        </li>
+
+                    </ol>
+
+                    <h3>H6j5yC6626v9f1p453(6i4x5v6n2):</h3>
+                    <p>
+                        <span class="r-a-F">({REDACTED})</span>31935s9y51 *2x7*,b299y2k67j8x405x10s1692p2 *037k4t*:
+                    </p>
+                    <ul>
+                        <li> <strong>7k4071:A46"K970216H052y":</strong>7N13j34271u(78i11i829u)z8480960580h3m0i96i69
+                            z4f78913.4999p28090j2026w10540t1g2f5u8j8j(6y57v9j3j).
+                        </li>
+                        <li> <strong>4p6f02:3J2383m62:</strong>497x932t89877(T{i15271 5},B{23470z7},8z9543516v0
+                            h8)4r9m01x20z15h56(796t20f):
+                            <ul>
+                                <li>H9737p97714v<span class="r-a-F">({REDACTED})</span>.</li>
+                                <li>4858r82y1z142.</li>
+                                <li>573y93x68g8z66n.</li>
+                                <li>81w8y9s960t4i4052g6624g.</li>
+                            </ul>
+                        </li>
+                        <li> <strong>X438t3:143uI0zX8x:</strong>X6k904811z11s3b68438p6b322w7i6p421x.2c7z6h4y668<span
+                                class="r-a-F">({REDACTED})</span>(5r50193467k)k624j44694121z.</li>
+                        <li> <strong>T219z4:34z3-M2305k81b:</strong>1c357z904m121m2e51v3j5j6i610g3j45h4.2X3i84m66s29i7e04i924n449s4z0.
+                        </li>
+                        <li> <strong>1s5385:(18119i8)I136v8l3j5o723r:</strong>strong>L4100r529k078v15g4w597t4r2p,2s7i66987n8z2w3s8.
+                        </li>
+                    </ul>
+
+                    <h3>T7920I7t783h1j0R129j9:</h3>
+
+                    <p>8z'443415z4y69e34*78m5g188j119z*v558688m51167088y99.482550n9x09z70s6p3r0019m4j9y0t.</p>
+
+                    <ul>
+                        <li><strong>726w1N211z4:</strong>7f77l279p4i9g"z75976i4,"149n4k93574312q8j554p0254y.</li>
+                        <li><strong>7k742q6s2s4:</strong>21i43k16u6x23j3k4x57z4f5d8h3l00362249.</li>
+                        <li><strong>11s7293R7y210l0:</strong>853x9736k1627244,292k431453m73m0083z69.</li>
+                        <li><strong>"4b11m22B71t":</strong>999423x981y2y5480,1h3n4h5j9,22y48r4r.</li>
+                    </ul>
+                    <p>
+                        8686"1w4u26d3b38"0h155n4x95t3x7r45,621m85u56575z1p80557j9k9z2916.
+                    </p>
+
+                    <h3>40l8320x88l7J9x2z1069:</h3>
+
+                    <ol>
+                        <li><strong>8y5213y383x"8w9670H011y":</strong>115y419s3j6.9k565r2r0u68483769m1f228<span
+                                class="r-a-F">({REDACTED})</span>'0z3405880z344g85922l3.</li>
+                        <li><strong>2g06eE56p8q52192y:</strong>U43i91y6r5h2,9617r4k08,33650,596b169u1u6t479398k(<span
+                                class="r-a-F">({REDACTED})</span>,P8s2J29,8b942941,42x.).</li>
+                        <li><strong>Q3i384hY0t962f921k:</strong>1u66h51r88463t717h807v1d92s1x2n403v9240t986.</li>
+                        <li><strong>2o100I81h477y419j:</strong>7p31261w2r3m3y29f2261h2v5y.3u7q65g7k1r200m5m61029019.
+                        </li>
+                        <li><strong>99x7167A071m68i37r5:</strong>6i673x8410x,4s15p3761,w8h<span
+                                class="r-a-F">({REDACTED})</span>,T82q2j3,2766z09,A425L5i,3u031n234i1u.4v619j1r5s2n641s.
+                        </li>
+                        <li><strong>62t88754F2r'8F71k46j:</strong>N3266l1l8k5j5026z32w921k.</li>
+                        <li><strong>5i4z218X72n83r:</strong>1h0z747692g70351951720.</li>
+                        <li><strong>71216v"R21k76"97v38:</strong>2n4u96u2p22p235d8i43v.
+                        </li>
+                        <li><strong>9i3x2p5946k:</strong>J4w05k5s26895327u80v41n.</li>
+                    </ol>
+
+                    <p>P18r3k621i8i4w956d240n.04y04z9p4j3r4n83x16v3z079y0u5884268l74.7q590z487v2d25t9i41m22614k2s.</p>
+                </section>
+
+
 
             </article>
         </div>
@@ -1272,11 +1530,11 @@
     </script>
 
     <script>
-        window.onload = function() {
-        var x = [90, 101, 114, 111, 84, 114, 117, 115, 116, 64, 78, 83, 72, 107, 114, 46, 99, 111, 109];
-        var y = ["", "x", "foo"];
-        var z = function(a) { return String.fromCharCode(a - (y[1] === "x" ? 0 : 1)); };
-        document.getElementById("nsEmail").innerText = "\xa0<" + x.map(z).join("") + ">";
+        window.onload = function () {
+            var x = [90, 101, 114, 111, 84, 114, 117, 115, 116, 64, 78, 83, 72, 107, 114, 46, 99, 111, 109];
+            var y = ["", "x", "foo"];
+            var z = function (a) { return String.fromCharCode(a - (y[1] === "x" ? 0 : 1)); };
+            document.getElementById("nsEmail").innerText = "\xa0<" + x.map(z).join("") + ">";
         };
     </script>
 
