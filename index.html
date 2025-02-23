@@ -219,29 +219,27 @@
             margin-bottom: 1rem;
             /* Space below the diagram */
         }
-
-        
     </style>
 
-<script type="module">
-    import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.esm.min.mjs';
-    mermaid.initialize({ 
-        startOnLoad: true,
-        theme: 'default',
-        themeVariables: {
-            'subgraphColor': 'rgba(24, 24, 36, 0.2)', 
-            'subgraphTitleColor': '#00ff99' ,
-            'mainBkg': '#ECECFF',
-            'lineColor': '#000000',
-            'primaryColor': '#ECECFF',
-            'primaryTextColor': '#000000',
-            'actorBorder': '#666',
-            'actorBkg': '#ECECFF',
-            'noteBkgColor': '#fff5ad',
-            'noteTextColor': '#000000'
-        }
-    });
-</script>
+    <script type="module">
+        import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                'subgraphColor': 'rgba(24, 24, 36, 0.2)',
+                'subgraphTitleColor': '#00ff99',
+                'mainBkg': '#ECECFF',
+                'lineColor': '#000000',
+                'primaryColor': '#ECECFF',
+                'primaryTextColor': '#000000',
+                'actorBorder': '#666',
+                'actorBkg': '#ECECFF',
+                'noteBkgColor': '#fff5ad',
+                'noteTextColor': '#000000'
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -402,8 +400,8 @@
                         upcoming legal proceedings. The "another" suggests that a *different* buddy was connected to
                         state, or local government.</p>
 
-                    <p>Regarding the injunction trial before Wilson Loo: It is important to note that these were audio
-                        only proceedings.</p>
+                    <p>Regarding the injunction trial before Wilson Loo: It is important to note that these were in-person
+                        proceedings that were permanenently docuemnted as audio-only recordings.</p>
 
                     <h3>Subsequent Events:</h3>
 
@@ -475,7 +473,7 @@
                     <h3>Wilson Loo's Judicial Misconduct</h3>
                     <div class="mermaid-container">
                         <div class="mermaid">
-                            
+
                             sequenceDiagram
                             actor CE as Cross-Examiner
                             actor JL as Judge Loo
@@ -489,7 +487,7 @@
                             Note over W: Makes defamatory statement in court
                             Note over JL: Takes no action
                             Note over JL: Seals the case, including records of his own alleged misconduct
- 
+
                         </div>
                     </div>
 
@@ -497,51 +495,72 @@
                     <div class="mermaid-container">
                         <div class="mermaid">
                             flowchart TD
-                                A[Initial Interaction] --> B[Alleged LSD Provision]
-                                B --> C[Victim Distances Self, later<br>tries to collect unpaid $200 debt]
-                                C --> DD[Alleged Harassment/Violence starts:<br>Starbucks violent incideent - assault]
-                                DD --> D[Victim informs REDACTED through email of<br>intention to discontinue debt collection and contact]
-                                D --> DE[Escalation/Continuation of<br>Harassment/Violence Campaign<br>by REDACTED]
-                                DE --> GGG
-                                E[Victim Reports to HPD]
-                                E --Otherwise--> GFY
-                                GGG[Victim Repeatedly Warns REDACTED of intention<br>to report to HPD and to make<br>Social Media Post if violence<br>and harassment continues]
-                                GGG --> GGGH[Victim files multiple police<br>reports over multiple months<br>thus documenting long term haraassment/stalking<br>campaign by REDACTED]
-                                GGGH -.-> FBI[Victim Contacts FBI Via<br>SS-7 To Report Serious Federal<br>Concern Regarding Statements By<br>REDACTED]
-                                GGGH --> GG[Serious Vehicular Criminal Incident]
-                                GG -.-> E
-                                GFY[(HPD Inaction)]
-                                GG --> G[Victim Makes Social Media Post]
-                                G --> H[REDACTED Files TRO containing libel]
-                                H --A day later--> I[Victim Files Cross-Petition]
-                                I --> XZX[REDACTED further escalates year-long<br>stalking/harassment campaign after filing]
-                                XZX -.-> E
-                                XZX --> XX[REDACTED continually avoids TRO service]
-                                XX -.-> E
-                                XX --> XYX[(Alleged HPD Misconduct)]
-                                XYX --> XXX(REDACTED mentions having<br>'another buddy who is federal')
-                                XXX --A few days later--> K
-                                E -.-> HPDTRY[HPD forwards criminal complaint<br>re: Starbucks Assault to<br>Steve Alm's office containing<br>incorrect date of assault]
-                                HPDTRY -.-> RKC
-                                RKC -.-> ALMCOVERUP[Alm's office closes case]
-                                ALMCOVERUP -.-> TRYAGAIN[Victim informs<br>HPD/Alm's Office<br>of mixup on date and<br>requests re-opening of case]
-                                TRYAGAIN -.-> ALMCOVERUP2[(Alm's office refuses)]
-                                subgraph JJF[Court - Honolulu Judge Wilson Loo]
-                                K[(Alleged Judicial Misconduct)]
-                                RKC[REDACTED makes false statement<br>under oath regarding<br>victim's prior report<br>of Starbucks assault, likely<br>due to mis-reported<br>date of incident]
-                                K --See Prior Diagram:<br>Judicial Misconduct--> O[Judge Seals Case]
-                                end
-                                O --In The Weeks Following--> ALMCOVERUP
-                                XXX -.-> E
-                                O --Later--> P[Victim Reports LSD provisioning<br>crime to female HPD officer<br>via recorded 911 call,<br>including location of evidence]
-                                O --In The Days Following--> EI2(*&nbsp;Victim contacted by<br>former intelligence official<br><br>*&nbsp;Encounter with former<br>US State Department intern<br><br>*&nbsp;Victim targeted with<br>defamation that was<br>sealed by judge<br><br>*&nbsp;Officer S'redacted' makes<br>unsolicited offer to<br>show picture of suicide<br>by rope victim<br><br>*&nbsp;See Offline Report about<br>further targeting concerns)
-                                Q --Later,<br>Inside Starbucks Haleiwa:-->ETT55
-                                ETT55[*&nbsp;Victim Attempts To Report<br>Previous Hartmann Murder Threat<br>Conspiracy And Subsequent Criminal<br>Escalations That Were<br>Still Unaddressed<br><br>*&nbsp;Officer B'redacted' obstructs<br>victim report to other<br>on-duty officer re: prior<br>Hartmann murder threat conspiracy]
-                                ETT55 --Later,<br>Outside Starbucks Haleiwa:--> ETT5566[Victim Discloses To<br>Other Uniformed HPD<br>Officer the Prior<br>Contact With FBI Regarding<br>Hartmann et.al. Incidents<br>Which Was HPD Responsibility.<br><br>*&nbsp;Victim Further Inform<br>Officer Of Suspected Prior<br>Obstruction by Officer B'redacted'<br>Pursuant To TRO Service Malfeasance]
-                                P -.-> Q[(HPD Refuses Investigation)]
-                                ETT5566 --Later,<br>Via 911 Call From Nalu--> VQ[Victim Again Reports<br>LSD Provisioning Again Over<br>911 To Male HPD Officer]
-                                VQ -.->COVERUP[(HPD Fails To Followup)]
-                                style JJF fill:#ddd,stroke:#334155,stroke-width:2px
+                            A[Initial Interaction] --> B[Alleged LSD Provision]
+                            B --> C[Victim Distances Self, later<br>tries to collect unpaid $200 debt]
+                            C --> DD[Alleged Harassment/Violence starts:<br>Starbucks violent incideent - assault]
+                            DD --> D[Victim informs REDACTED through email of<br>intention to discontinue debt
+                            collection and contact]
+                            D --> DE[Escalation/Continuation of<br>Harassment/Violence Campaign<br>by REDACTED]
+                            DE --> GGG
+                            E[Victim Reports to HPD]
+                            E --Otherwise--> GFY
+                            GGG[Victim Repeatedly Warns REDACTED of intention<br>to report to HPD and to make<br>Social
+                            Media Post if violence<br>and harassment continues]
+                            GGG --> GGGH[Victim files multiple police<br>reports over multiple months<br>thus
+                            documenting long term haraassment/stalking<br>campaign by REDACTED]
+                            GGGH -.-> FBI[Victim Contacts FBI Via<br>SS-7 To Report Serious Federal<br>Concern Regarding
+                            Statements By<br>REDACTED]
+                            GGGH --> GG[Serious Vehicular Criminal Incident]
+                            GG -.-> E
+                            GFY[(HPD Inaction)]
+                            GG --> G[Victim Makes Social Media Post]
+                            G --> H[REDACTED Files TRO containing libel]
+                            H --A day later--> I[Victim Files Cross-Petition]
+                            I --> XZX[REDACTED further escalates year-long<br>stalking/harassment campaign after filing]
+                            XZX -.-> E
+                            XZX --> XX[REDACTED continually avoids TRO service]
+                            XX -.-> E
+                            XX --> XYX[(Alleged HPD Misconduct)]
+                            XYX --> XXX(REDACTED mentions having<br>'another buddy who is federal')
+                            XXX --A few days later--> K
+                            E -.-> HPDTRY[HPD forwards criminal complaint<br>re: Starbucks Assault to<br>Steve Alm's
+                            office containing<br>incorrect date of assault]
+                            HPDTRY -.-> RKC
+                            RKC -.-> ALMCOVERUP[Alm's office closes case]
+                            ALMCOVERUP -.-> TRYAGAIN[Victim informs<br>HPD/Alm's Office<br>of mixup on date
+                            and<br>requests re-opening of case]
+                            TRYAGAIN -.-> ALMCOVERUP2[(Alm's office refuses)]
+                            subgraph JJF[Court - Honolulu Judge Wilson Loo]
+                            K[(Alleged Judicial Misconduct)]
+                            RKC[REDACTED makes false statement<br>under oath regarding<br>victim's prior report<br>of
+                            Starbucks assault, likely<br>due to mis-reported<br>date of incident]
+                            K --See Prior Diagram:<br>Judicial Misconduct--> O[Judge Seals Case]
+                            end
+                            O --In The Weeks Following--> ALMCOVERUP
+                            XXX -.-> E
+                            O --Later--> P[Victim Reports LSD provisioning<br>crime to female HPD officer<br>via
+                            recorded 911 call,<br>including location of evidence]
+                            O --In The Days Following--> EI2(*&nbsp;Victim contacted by<br>former intelligence
+                            official<br><br>*&nbsp;Encounter with former<br>US State Department
+                            intern<br><br>*&nbsp;Victim targeted with<br>defamation that was<br>sealed by
+                            judge<br><br>*&nbsp;Officer S'redacted' makes<br>unsolicited offer to<br>show picture of
+                            suicide<br>by rope victim<br><br>*&nbsp;See Offline Report about<br>further targeting
+                            concerns)
+                            Q --Later,<br>Inside Starbucks Haleiwa:-->ETT55
+                            ETT55[*&nbsp;Victim Attempts To Report<br>Previous Hartmann Murder Threat<br>Conspiracy And
+                            Subsequent Criminal<br>Escalations That Were<br>Still Unaddressed<br><br>*&nbsp;Officer
+                            B'redacted' obstructs<br>victim report to other<br>on-duty officer re: prior<br>Hartmann
+                            murder threat conspiracy]
+                            ETT55 --Later,<br>Outside Starbucks Haleiwa:--> ETT5566[Victim Discloses To<br>Other
+                            Uniformed HPD<br>Officer the Prior<br>Contact With FBI Regarding<br>Hartmann et.al.
+                            Incidents<br>Which Was HPD Responsibility.<br><br>*&nbsp;Victim Further Inform<br>Officer Of
+                            Suspected Prior<br>Obstruction by Officer B'redacted'<br>Pursuant To TRO Service
+                            Malfeasance]
+                            P -.-> Q[(HPD Refuses Investigation)]
+                            ETT5566 --Later,<br>Via 911 Call From Nalu--> VQ[Victim Again Reports<br>LSD Provisioning
+                            Again Over<br>911 To Male HPD Officer]
+                            VQ -.->COVERUP[(HPD Fails To Followup)]
+                            style JJF fill:#ddd,stroke:#334155,stroke-width:2px
                         </div>
                     </div>
                 </section>
@@ -975,6 +994,51 @@
                         which our society stands. Let us not allow the shadows of corruption to dim the light of truth.
                         The time for accountability is now.</p>
                 </section>
+
+                <section>
+                    <h2 class="editorial">Addendum: Clarification of Allegations and Legal Considerations</h2>
+                
+                    <p>This addendum clarifies the author's position regarding the alleged judicial misconduct of Judge Wilson Loo, focusing on the concept of *mens rea*—the mental state or intent behind an action—and presenting a layered analysis of the observed events. This clarification aims to ensure legal protection while raising awareness about potential wrongdoing in a public statement.</p>
+                
+                    <h3>Layered Analysis of Judge Loo's Actions</h3>
+                
+                    <p>The allegations against Judge Loo are based on firsthand observations during an injunction hearing, which, while officially recorded as audio-only, was conducted in person, allowing the author to witness visual actions. The analysis separates observable facts from their potential implications, emphasizing the most provable violations:</p>
+                
+                    <h4>Non-Verbal Cue (Nod)</h4>
+                    <ul>
+                        <li><strong>Observation:</strong> The author observed Judge Loo make a distinct "no" nod with an accompanying facial expression before the witness, {(REDACTED)}, answered a question about providing LSD.</li>
+                        <li><strong>Context:</strong> This occurred during cross-examination, immediately preceding the witness’s denial.</li>
+                        <li><strong>Potential Implication:</strong> The timing and nature of the gesture raise concerns that it may have influenced the witness’s response, though the judge’s intent remains unconfirmed.</li>
+                        <li><strong>Legal Significance:</strong> Under Rule 2.2 of the Hawaii Revised Code of Judicial Conduct, judges must perform duties impartially. Even if unintentional, such a gesture could create an appearance of bias, violating Rule 1.2, which mandates promoting confidence in the judiciary.</li>
+                        <li><strong>Counterargument:</strong> The nod might have been coincidental. However, its occurrence during a critical question undermines the perceived fairness of the proceedings, regardless of intent.</li>
+                    </ul>
+                
+                    <h4>Interruption During Objection</h4>
+                    <ul>
+                        <li><strong>Observation:</strong> When the author attempted to object, stating, "Let the record show that the judge just...," Judge Loo interrupted in a loud and abrupt manner, saying, "Nah ah ah enough out of you!!"</li>
+                        <li><strong>Context:</strong> This followed the non-verbal cue and prevented the author from completing the objection.</li>
+                        <li><strong>Impact:</strong> The interruption stopped the author from documenting the prior gesture on the record, limiting their ability to challenge the witness’s testimony and affecting the fairness of the hearing.</li>
+                        <li><strong>Legal Significance:</strong> This action violates Rule 2.6, ensuring the right to be heard, and Rule 2.8, requiring judicial patience and courtesy. It represents a clear breach of judicial decorum and impartiality, regardless of any preceding events.</li>
+                        <li><strong>Counterargument:</strong> The interruption could be seen as maintaining courtroom order. However, its loud and abrupt nature, combined with its timing, suggests it was aimed at silencing a legitimate objection, exceeding reasonable judicial control.</li>
+                    </ul>
+                
+                    <h3>Strategic Approach and Legal Considerations</h3>
+                
+                    <p>The author emphasizes the following:</p>
+                    <ul>
+                        <li><strong>Good Faith Reporting:</strong> All statements reflect a sincere effort to report events as observed, based on firsthand experience.</li>
+                        <li><strong>Accuracy Acknowledgment:</strong> Minor inaccuracies may exist, but the core observations remain truthful.</li>
+                        <li><strong>Exhaustion of Remedies:</strong> This disclosure follows unsuccessful attempts to seek redress through police reports and FBI contact.</li>
+                        <li><strong>Focus on Facts:</strong> The analysis prioritizes observable events (e.g., the interruption, text message evidence) over unprovable interpretations.</li>
+                        <li><strong>Investigative Deference:</strong> Determining Judge Loo’s *mens rea*—whether actions were intentional or reckless—requires further investigation by authorities like the FBI.</li>
+                        <li><strong>Statement Purpose:</strong> Allegations are presented to document what was observed, not to assert their absolute truth without verification.</li>
+                    </ul>
+                
+                    <h3>Disclaimer</h3>
+                
+                    <p>This document presents allegations based on the author’s firsthand observations during the hearing. These claims have not been independently verified and are intended to raise awareness and seek accountability for potential judicial misconduct. This is not legal advice; the author is not an attorney and does not offer legal counsel. All individuals mentioned are presumed innocent until proven guilty in a court of law.</p>
+                </section>
+
 
             </article>
         </div>
