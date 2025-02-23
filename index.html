@@ -510,12 +510,13 @@
                     DE--> GGG
                     
                     E[Victim Reports to HPD]
-                    E -.-> GFY
+                    E --Otherwise--> GFY
                     
                     GGG[Victim Repeatedly Warns REDACTED of intention<br>to report to HPD and to make<br>Social Media Post if violence<br>and harassment continues]
                     GGG --> GGGH[Victim files multiple police<br>reports over multiple months<br>thus documenting long term haraassment/stalking<br>campaign by REDACTED]
                     GGGH --> GG[Serious Vehicular Criminal Incident]
                     GG -.-> E
+                    
                         GFY[(HPD Inaction)]
                     GG --> G[Victim Makes Social Media Post]
                     G --> H[REDACTED Files TRO containing libel]
@@ -533,10 +534,10 @@
 
 
 
-                E -.-> HPDTRY[HPD forwards criminal complaint<br>re: Starbucks Assault to<br>Steve Alm's Office containing<br>incorrect date of assault]
+                E -.-> HPDTRY[HPD<br>forwards<br>criminal<br>complaint<br>re:<br>Starbucks<br>Assault<br>to<br>Steve<br>Alm's<br>Office<br>containing<br>incorrect<br>date<br>of<br>assault]
                             HPDTRY -.-> RKC
                             RKC -.-> ALMCOVERUP[Alm's office closes case]
-                            ALMCOVERUP -.-> TRYAGAIN[Victim informs police of mixup on date and requests re-opening of case]
+                            ALMCOVERUP -.-> TRYAGAIN[Victim<br>informs<br>police<br>of<br>mixup<br>on<br>date<br>and<br>requests<br>re-opening<br>of<br>case]
                             TRYAGAIN -.-> ALMCOVERUP2[(Alm's office refuses)]
 
 
@@ -544,23 +545,23 @@
                     subgraph JJF[Court - Honolulu Judge Wilson Loo]
                         
                     K[(Alleged Judicial Misconduct)]
-                    RKC[REDACTED makes<br>false statement<br>under oath<br>regarding consistency<br>of my reports<br>of Starbucks assault,<br>likely due<br>to my mis-reported date]
+                    RKC[REDACTED<br>makes<br>false<br>statement<br>under<br>oath<br>regarding<br>my<br>report<br>of<br>Starbucks<br>assault,<br>likely<br>due<br>to<br>my<br>mis-reported<br>date<br>of<br>incident]
                     
                     
-                    K --> O[Judge Seals Case]
+                    K --See Other Diagram--> O[Judge<br>Seals<br>Case]
                     end
                 
                     
                     XXX -.->E
-                    O -.-> P[Victim Reports LSD provisioning<br>crime to female HPD officer]
+                    O -.-> P[Victim<br>Reports<br>LSD<br>provisioning<br>crime<br>to<br>female<br>HPD<br>officer<br>including<br>location<br>of<br>evidence]
                     
-                    O -.-> EI2([Victim contacted by<br>former intelligence official])
+                    O -.-> EI2([Victim<br>contacted<br>by<br>former<br>intelligence<br>official])
 
-                    O -.-> EI3([Encounter with former<br>US State Department intern])
-                    O -.-> EI4([Victim targeted with<br>defamation sealed by Loo])
+                    O -.-> EI3([Encounter<br>with<br>former<br>US<br>State<br>Department<br>intern])
+                    O -.-> EI4([Victim<br>targeted<br>with<br>defamation<br>sealed<br>by<br>Loo])
                 
                 
-                        P -.-> Q[(HPD Refuses Investigation)]
+                        P -.-> Q[(HPD<br>Refuses<br>Investigation)]
 
                     
 
