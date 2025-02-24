@@ -5,7 +5,7 @@
     <title>Hawai&#x02BB;i Judicial Misconduct: Judge Loo Coverup Exposed</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Exposing alleged judicial misconduct and coverups in Hawaii. Investigate Judge Wilson Loo and systemic failures in Honolulu.">
     <meta name="keywords"
@@ -72,6 +72,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
         .site-header {
@@ -97,6 +98,8 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 1rem;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .flex-center {
@@ -104,6 +107,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 100%;
         }
 
         .flex-center:first-child {
@@ -114,17 +118,19 @@
             background: var(--secondary-bg);
             border-radius: 12px;
             padding: 1.5rem;
-
             margin: 1.5rem 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border: 1px solid var(--border-color);
+            width: 100%;
+            box-sizing: border-box;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
-
 
         section {
             margin: 2rem 0;
+            width: 100%;
         }
-
 
         h1 {
             color: var(--accent);
@@ -229,6 +235,30 @@
             opacity: 0.8;
         }
 
+        /* Medium screens */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            h3 {
+                font-size: 1.35rem;
+            }
+
+            .container-fluid {
+                padding: 0.75rem;
+            }
+
+            article {
+                padding: 1.25rem;
+            }
+        }
+
+        /* Mobile screens */
         @media (max-width: 768px) {
             .container-fluid {
                 padding: 0.5rem;
@@ -280,10 +310,43 @@
                 padding: 0.5rem;
                 margin: 1rem 0;
                 overflow-x: auto;
+                -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
             }
 
             .logo-container {
                 padding: 0 0.5rem;
+            }
+
+            ul, ol {
+                padding-left: 1.5rem;
+            }
+        }
+        
+        /* Small mobile screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.25rem;
+            }
+            
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            h4 {
+                font-size: 1rem;
+            }
+            
+            article {
+                padding: 0.5rem;
+            }
+            
+            p, li {
+                font-size: 0.9rem;
+                line-height: 1.4;
             }
         }
 
@@ -324,6 +387,17 @@
             border-radius: 8px;
             padding: 1rem;
             margin: 1.5rem 0;
+            width: 100%;
+            box-sizing: border-box;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Responsive scaling for mermaid diagrams */
+        .mermaid {
+            width: 100%;
+            min-width: 320px; /* Ensure minimum width for legibility */
+            margin: 0 auto;
         }
 
 
@@ -404,31 +478,75 @@
 
         section.fixed-width-font {
             font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            section.fixed-width-font {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            section.fixed-width-font {
+                font-size: 0.75rem;
+            }
         }
     </style>
 
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/+esm';
-        mermaid.initialize({
-            startOnLoad: true,
-            theme: 'default',
-            themeVariables: {
-                'subgraphColor': 'rgba(10, 10, 20, 0.8)',
-                'subgraphTitleColor': '#00ff99',
-                'mainBkg': '#1a1a24',
-                'lineColor': '#00ff99',
-                'primaryColor': '#1a1a24',
-                'primaryTextColor': '#00ff99',
-                'actorBorder': '#00ff99',
-                'actorBkg': '#1a1a24',
-                'noteBkgColor': '#003d4d',
-                'noteTextColor': '#00ff99',
-                'edgeLabelBackground': 'rgba(0,0,0, 0.5)',
-                'edgeLabelColor': '#FFFFFF',
-                'nodeBorder': '#00ff99',
-                'nodeTextColor': '#00ff99'
-            }
-        });
+        
+        // Function to adjust font size based on screen width
+        function adjustMermaidConfig() {
+            const fontSize = window.innerWidth < 768 ? 12 : 14;
+            const ganttFontSize = window.innerWidth < 768 ? 10 : 12;
+            
+            mermaid.initialize({
+                startOnLoad: true,
+                theme: 'default',
+                fontSize: fontSize,
+                gantt: {
+                    fontSize: ganttFontSize
+                },
+                flowchart: {
+                    htmlLabels: true,
+                    curve: 'cardinal',
+                    useMaxWidth: true
+                },
+                sequence: {
+                    useMaxWidth: true,
+                    wrap: true,
+                    width: window.innerWidth < 768 ? 600 : 800
+                },
+                themeVariables: {
+                    'subgraphColor': 'rgba(10, 10, 20, 0.8)',
+                    'subgraphTitleColor': '#00ff99',
+                    'mainBkg': '#1a1a24',
+                    'lineColor': '#00ff99',
+                    'primaryColor': '#1a1a24',
+                    'primaryTextColor': '#00ff99',
+                    'actorBorder': '#00ff99',
+                    'actorBkg': '#1a1a24',
+                    'noteBkgColor': '#003d4d',
+                    'noteTextColor': '#00ff99',
+                    'edgeLabelBackground': 'rgba(0,0,0, 0.5)',
+                    'edgeLabelColor': '#FFFFFF',
+                    'nodeBorder': '#00ff99',
+                    'nodeTextColor': '#00ff99'
+                }
+            });
+        }
+        
+        // Initial configuration
+        adjustMermaidConfig();
+        
+        // Update on resize
+        window.addEventListener('resize', adjustMermaidConfig);
     </script>
 </head>
 
@@ -2145,110 +2263,129 @@
     <script type="module">
         import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.module.min.js';
 
-        const container = document.getElementById('ocean-animation');
-        const header = document.querySelector('.site-header');
-        const scene = new THREE.Scene();
-
-        // Set up camera with wider field of view and adjusted position
-        const headerHeight = header.offsetHeight;
-        const camera = new THREE.PerspectiveCamera(90, window.innerWidth / headerHeight, 0.1, 1000);
-        camera.position.z = 1.5; // Moved camera closer
-
-        // Configure renderer
-        const renderer = new THREE.WebGLRenderer({
-            alpha: true,
-            antialias: true,
-            precision: 'highp'
-        });
-        renderer.setSize(window.innerWidth, headerHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        container.appendChild(renderer.domElement);
-
-        // Create wider geometry to ensure full coverage
-        const geometry = new THREE.PlaneGeometry(12, 6, 100, 100); // Increased width and height
-
-        const waveShader = {
-            uniforms: {
-                time: { value: 0 },
-                colorA: { value: new THREE.Color('#0f172a') },  // Deep navy blue (matching header)
-                colorB: { value: new THREE.Color('#0d3868') },  // Rich ocean blue
-                colorC: { value: new THREE.Color('#0369a1') }   // Lighter ocean blue
-            },
-            vertexShader: `
-        varying vec2 vUv;
-        varying float vWave;
-        uniform float time;
+        // Check if we should use ThreeJS based on device performance
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const isLowPerfDevice = isMobile && window.innerWidth < 768;
         
-        void main() {
-            vUv = uv;
-            vec3 pos = position;
+        // Create simplified background for low-performance devices
+        if (isLowPerfDevice) {
+            const container = document.getElementById('ocean-animation');
+            container.style.background = 'linear-gradient(to bottom, #0f172a, #0d3868)';
+            container.style.opacity = '0.8';
+        } else {
+            // Set up ThreeJS for higher-performance devices
+            const container = document.getElementById('ocean-animation');
+            const header = document.querySelector('.site-header');
+            const scene = new THREE.Scene();
             
-            // Create multiple wave patterns with wider spread
-            float wave1 = sin(pos.x * 0.8 + time * 0.7) * 0.15;
-            float wave2 = sin(pos.x * 1.6 + time * 0.9) * 0.1;
-            float wave3 = sin(pos.y * 1.2 + time * 0.8) * 0.12;
-            float wave4 = cos(pos.y * 2.0 + time * 0.6) * 0.08;
+            // Reduce complexity on mobile devices
+            const segmentMultiplier = isMobile ? 0.5 : 1;
+
+            // Set up camera with wider field of view and adjusted position
+            const headerHeight = header.offsetHeight;
+            const camera = new THREE.PerspectiveCamera(90, window.innerWidth / headerHeight, 0.1, 1000);
+            camera.position.z = 1.5; // Moved camera closer
+
+            // Configure renderer
+            const renderer = new THREE.WebGLRenderer({
+                alpha: true,
+                antialias: !isMobile, // Disable antialiasing on mobile for performance
+                precision: isMobile ? 'mediump' : 'highp' // Lower precision on mobile
+            });
+            renderer.setSize(window.innerWidth, headerHeight);
+            renderer.setPixelRatio(isMobile ? 1 : window.devicePixelRatio); // Lower pixel ratio on mobile
+            container.appendChild(renderer.domElement);
+
+            // Create wider geometry with reduced segments on mobile
+            const segmentCount = Math.floor(isMobile ? 50 : 100);
+            const geometry = new THREE.PlaneGeometry(12, 6, segmentCount, segmentCount * 0.5);
+
+            const waveShader = {
+                uniforms: {
+                    time: { value: 0 },
+                    colorA: { value: new THREE.Color('#0f172a') },  // Deep navy blue (matching header)
+                    colorB: { value: new THREE.Color('#0d3868') },  // Rich ocean blue
+                    colorC: { value: new THREE.Color('#0369a1') }   // Lighter ocean blue
+                },
+                vertexShader: `
+            varying vec2 vUv;
+            varying float vWave;
+            uniform float time;
             
-            // Combine waves
-            pos.z = wave1 + wave2 + wave3 + wave4;
-            vWave = pos.z + 0.3;
-            
-            gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
-        }
-    `,
-            fragmentShader: `
-        uniform vec3 colorA;
-        uniform vec3 colorB;
-        uniform vec3 colorC;
-        varying float vWave;
-        
-        void main() {
-            vec3 color;
-            if (vWave < 0.3) {
-                color = mix(colorA, colorB, vWave / 0.3);
-            } else {
-                color = mix(colorB, colorC, (vWave - 0.3) / 0.7);
+            void main() {
+                vUv = uv;
+                vec3 pos = position;
+                
+                // Create multiple wave patterns with wider spread
+                float wave1 = sin(pos.x * 0.8 + time * 0.7) * 0.15;
+                float wave2 = sin(pos.x * 1.6 + time * 0.9) * 0.1;
+                float wave3 = sin(pos.y * 1.2 + time * 0.8) * 0.12;
+                float wave4 = cos(pos.y * 2.0 + time * 0.6) * 0.08;
+                
+                // Combine waves
+                pos.z = wave1 + wave2 + wave3 + wave4;
+                vWave = pos.z + 0.3;
+                
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
             }
-            float alpha = 0.95 - (vWave * 0.1);
-            gl_FragColor = vec4(color, alpha);
+        `,
+                fragmentShader: `
+            uniform vec3 colorA;
+            uniform vec3 colorB;
+            uniform vec3 colorC;
+            varying float vWave;
+            
+            void main() {
+                vec3 color;
+                if (vWave < 0.3) {
+                    color = mix(colorA, colorB, vWave / 0.3);
+                } else {
+                    color = mix(colorB, colorC, (vWave - 0.3) / 0.7);
+                }
+                float alpha = 0.95 - (vWave * 0.1);
+                gl_FragColor = vec4(color, alpha);
+            }
+        `
+            };
+
+            const material = new THREE.ShaderMaterial({
+                uniforms: waveShader.uniforms,
+                vertexShader: waveShader.vertexShader,
+                fragmentShader: waveShader.fragmentShader,
+                transparent: true,
+                wireframe: false
+            });
+
+            const mesh = new THREE.Mesh(geometry, material);
+            mesh.position.z = 0; // Ensure mesh is at the front
+            scene.add(mesh);
+
+            // Adjust rotation for better wave appearance
+            mesh.rotation.x = -0.1;
+
+            // Use slower animation speed on mobile
+            const animationSpeed = isMobile ? 0.005 : 0.01;
+            
+            function animate() {
+                requestAnimationFrame(animate);
+                material.uniforms.time.value += animationSpeed;
+                renderer.render(scene, camera);
+            }
+
+            animate();
+
+            // Handle window resizing
+            window.addEventListener('resize', () => {
+                const width = window.innerWidth;
+                const height = header.offsetHeight;
+                renderer.setSize(width, height);
+                camera.aspect = width / height;
+                camera.updateProjectionMatrix();
+            });
+
+            // Initial resize call
+            window.dispatchEvent(new Event('resize'));
         }
-    `
-        };
-
-        const material = new THREE.ShaderMaterial({
-            uniforms: waveShader.uniforms,
-            vertexShader: waveShader.vertexShader,
-            fragmentShader: waveShader.fragmentShader,
-            transparent: true,
-            wireframe: false
-        });
-
-        const mesh = new THREE.Mesh(geometry, material);
-        mesh.position.z = 0; // Ensure mesh is at the front
-        scene.add(mesh);
-
-        // Adjust rotation for better wave appearance
-        mesh.rotation.x = -0.1;
-
-        function animate() {
-            requestAnimationFrame(animate);
-            material.uniforms.time.value += 0.01;
-            renderer.render(scene, camera);
-        }
-
-        animate();
-
-        // Handle window resizing
-        window.addEventListener('resize', () => {
-            const width = window.innerWidth;
-            const height = header.offsetHeight;
-            renderer.setSize(width, height);
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-        });
-
-        // Initial resize call
-        window.dispatchEvent(new Event('resize'));
     </script>
 
     <script>
