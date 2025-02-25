@@ -66,13 +66,14 @@
             background-color: var(--primary-bg);
             color: var(--text-primary);
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
+            line-f.container-fluid height: 1.6;
             margin: 0;
             padding: 0;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
         }
 
         .site-header {
@@ -80,6 +81,7 @@
             overflow: hidden;
             padding: 1rem 0;
             background: #00000c;
+            z-index: 2;
         }
 
         .logo-container {
@@ -100,6 +102,8 @@
             padding: 1rem;
             width: 100%;
             box-sizing: border-box;
+            position: relative;
+            z-index: 1;
         }
 
         .flex-center {
@@ -223,6 +227,9 @@
             color: var(--text-secondary);
             font-size: 0.9rem;
             border-top: 1px solid var(--border-color);
+            position: relative;
+            z-index: 1;
+            background-color: var(--primary-bg);
         }
 
         a {
@@ -233,6 +240,31 @@
 
         a:hover {
             opacity: 0.8;
+        }
+
+        .ocean-abyss-container {
+            position: fixed;
+            top: 0;
+            width: calc((100% - 1200px) / 2);
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        #left-ocean-abyss {
+            left: 0;
+        }
+
+        #right-ocean-abyss {
+            right: 0;
+        }
+
+
+        @media (max-width: 1220px) {
+            .ocean-abyss-container {
+                width: calc((100% - 90%) / 2);
+            }
         }
 
         /* Medium screens */
@@ -310,41 +342,48 @@
                 padding: 0.5rem;
                 margin: 1rem 0;
                 overflow-x: auto;
-                -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+                -webkit-overflow-scrolling: touch;
+                /* Smooth scrolling on iOS */
             }
 
             .logo-container {
                 padding: 0 0.5rem;
             }
 
-            ul, ol {
+            ul,
+            ol {
                 padding-left: 1.5rem;
             }
+
+            .ocean-abyss-container {
+                width: 5%;
+            }
         }
-        
+
         /* Small mobile screens */
         @media (max-width: 480px) {
             h1 {
                 font-size: 1.5rem;
             }
-            
+
             h2 {
                 font-size: 1.25rem;
             }
-            
+
             h3 {
                 font-size: 1.1rem;
             }
-            
+
             h4 {
                 font-size: 1rem;
             }
-            
+
             article {
                 padding: 0.5rem;
             }
-            
-            p, li {
+
+            p,
+            li {
                 font-size: 0.9rem;
                 line-height: 1.4;
             }
@@ -392,11 +431,12 @@
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
         }
-        
+
         /* Responsive scaling for mermaid diagrams */
         .mermaid {
             width: 100%;
-            min-width: 320px; /* Ensure minimum width for legibility */
+            min-width: 320px;
+            /* Ensure minimum width for legibility */
             margin: 0 auto;
         }
 
@@ -484,13 +524,13 @@
             box-sizing: border-box;
             font-size: 0.9rem;
         }
-        
+
         @media (max-width: 768px) {
             section.fixed-width-font {
                 font-size: 0.8rem;
             }
         }
-        
+
         @media (max-width: 480px) {
             section.fixed-width-font {
                 font-size: 0.75rem;
@@ -498,14 +538,16 @@
         }
     </style>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/+esm';
-        
+
         // Function to adjust font size based on screen width
         function adjustMermaidConfig() {
             const fontSize = window.innerWidth < 768 ? 12 : 14;
             const ganttFontSize = window.innerWidth < 768 ? 10 : 12;
-            
+
             mermaid.initialize({
                 startOnLoad: true,
                 theme: 'default',
@@ -541,10 +583,10 @@
                 }
             });
         }
-        
+
         // Initial configuration
         adjustMermaidConfig();
-        
+
         // Update on resize
         window.addEventListener('resize', adjustMermaidConfig);
     </script>
@@ -891,7 +933,8 @@
                             sssss --A Few Days Before Trial--> XXX(REDACTED mentions having 'another buddy who is
                             federal')
                             XXX ==A few days later==> K
-                            GGG --Approx Timeline--> HPDTeresaGlover[HPD employee Teresa Glover, without provaction, passes out 
+                            GGG --Approx Timeline--> HPDTeresaGlover[HPD employee Teresa Glover, without provaction,
+                            passes out
                             libelous fliers about me in Haleiwa]
                             E -.-> HPDTRY[HPD forwards criminal complaint re: Starbucks Assault to Steve Alm's office
                             containing incorrect date of assault]
@@ -1755,7 +1798,8 @@
 
 
                 <section>
-                    <h2 class="editorial">Open Letter: A Call for Justice and Systemic Reform in Hawai&#x02BB;i - and Beyond</h2>
+                    <h2 class="editorial">Open Letter: A Call for Justice and Systemic Reform in Hawai&#x02BB;i - and
+                        Beyond</h2>
 
                     <p>To the People of Hawai&#x02BB;i, the Honorable Judges of the Hawai&#x02BB;i State Judiciary, the
                         Honolulu
@@ -2157,8 +2201,8 @@
                                 class="r-a-F">({REDACTED})</span>,
                             <em>898272</em><span
                                 class="otp-decrypt">62v0z3w0n993y5,7i1938y0r33w93z92m.44'u31g465</span><span
-                                class="r-a-F">({REDACTED})</span>,9x9685i04 h2g4u536,z403959y0h966f,888j 
-                                5161w0t95e6r7507t.
+                                class="r-a-F">({REDACTED})</span>,9x9685i04 h2g4u536,z403959y0h966f,888j
+                            5161w0t95e6r7507t.
                             8z90028127327070w6i81d65k0n63j26j6e3064x,n73x287t210289
                             3t3034w.656r0009v871z0i41k6t0p6i51h12e5.
                         </li>
@@ -2203,8 +2247,8 @@
                     <p>8z'443415z4y69e34*7 8m5g188j11 9z*v558688m51167088y99 .482550n 9x09z70s6p3r0019m4j9y0t.</p>
 
                     <ul>
-                        <li><strong>726w1N211z4:</strong> <span
-                                class="otp-decrypt">7f77l279p4i9g "z75976i4,"149n4k93574312q8j554p0254y.</span></li>
+                        <li><strong>726w1N211z4:</strong> <span class="otp-decrypt">7f77l279p4i9g
+                                "z75976i4,"149n4k93574312q8j554p0254y.</span></li>
                         <li><strong>7k742q6s2s4:</strong> 21i43k16u6x23j3 k4x57z4f5d8h3l00362249.</li>
                         <li><strong>11s7293R7y210l0:</strong> 853x97 36k1627244,292k 431453m73m0083z69.</li>
                         <li><strong>"4b11m22B71t":</strong> 999423x981y2y5480,1h3n4h5j9,22y48r4r.</li>
@@ -2224,7 +2268,8 @@
                         <li><strong>2o100I81h477y419j:</strong> 7p31261w2 3m3y29f2 261h2v5y.3u7q65g7k1r200m5m6 1029019.
                         </li>
                         <li><strong>99x7167A071m68i37r5:</strong> 6i673x8410x,4s15p3761,w8h<span
-                                class="r-a-F">({REDACTED})</span>,T82q2j3,2766z09, A425L5i,3u0 31n234i1u.4v6 19j1r5s2n641s.
+                                class="r-a-F">({REDACTED})</span>,T82q2j3,2766z09, A425L5i,3u0 31n234i1u.4v6
+                            19j1r5s2n641s.
                         </li>
                         <li><strong>62t88754F2r'8F71k46j:</strong> N3266l1l8k5j5026z32w921k.</li>
                         <li><strong>5i4z218X72n83r:</strong> <span class="otp-decrypt">1h0z747692g70351951720.</span>
@@ -2268,7 +2313,7 @@
         // Check if we should use ThreeJS based on device performance
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         const isLowPerfDevice = isMobile && window.innerWidth < 768;
-        
+
         // Create simplified background for low-performance devices
         if (isLowPerfDevice) {
             const container = document.getElementById('ocean-animation');
@@ -2279,7 +2324,7 @@
             const container = document.getElementById('ocean-animation');
             const header = document.querySelector('.site-header');
             const scene = new THREE.Scene();
-            
+
             // Reduce complexity on mobile devices
             const segmentMultiplier = isMobile ? 0.5 : 1;
 
@@ -2367,7 +2412,7 @@
 
             // Use slower animation speed on mobile
             const animationSpeed = isMobile ? 0.005 : 0.01;
-            
+
             function animate() {
                 requestAnimationFrame(animate);
                 material.uniforms.time.value += animationSpeed;
@@ -2515,6 +2560,497 @@
         document.addEventListener("DOMContentLoaded", () => {
             startDecoding();
         });
+    </script>
+
+
+    <script>
+        // Ocean Abyss Animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const leftSidebar = document.createElement('div');
+            leftSidebar.id = 'left-ocean-abyss';
+            leftSidebar.className = 'ocean-abyss-container';
+            document.body.appendChild(leftSidebar);
+
+            const rightSidebar = document.createElement('div');
+            rightSidebar.id = 'right-ocean-abyss';
+            rightSidebar.className = 'ocean-abyss-container';
+            document.body.appendChild(rightSidebar);
+
+            // Initialize the p5.js sketches for both sides
+            new p5(leftOceanSketch, 'left-ocean-abyss');
+            new p5(rightOceanSketch, 'right-ocean-abyss');
+        });
+
+        // Shared particles array for reuse
+        const particles = [];
+        const jellyfish = [];
+        const anglerfish = [];
+        const bubbles = [];
+
+        // Common colors and settings
+        const deepBlue = [5, 10, 50];
+        const midBlue = [10, 30, 80];
+        const surfaceBlue = [20, 50, 120];
+        const bioluminescentColors = [
+            [10, 200, 255], // Cyan
+            [0, 255, 200],  // Aqua
+            [180, 255, 100], // Lime
+            [255, 100, 200], // Magenta
+            [255, 255, 100]  // Yellow
+        ];
+
+        // Left ocean sketch
+        function leftOceanSketch(p) {
+            p.setup = function () {
+                p.createCanvas(p.windowWidth / 2, p.windowHeight);
+                p.colorMode(p.RGB);
+                p.noiseDetail(3, 0.5);
+
+                // Initialize particles
+                for (let i = 0; i < 50; i++) {
+                    particles.push(createParticle(p, true));
+                }
+
+                // Initialize jellyfish
+                for (let i = 0; i < 3; i++) {
+                    jellyfish.push(createJellyfish(p, true));
+                }
+
+                // Initialize anglerfish
+                for (let i = 0; i < 2; i++) {
+                    anglerfish.push(createAnglerfish(p, true));
+                }
+
+                // Initialize bubbles
+                for (let i = 0; i < 20; i++) {
+                    bubbles.push(createBubble(p, true));
+                }
+            };
+
+            p.draw = function () {
+                // Create gradient background
+                drawOceanBackground(p);
+
+                // Draw light rays
+                drawLightRays(p);
+
+                // Update and display particles
+                for (let particle of particles) {
+                    if (particle.side === 'left') {
+                        updateParticle(p, particle);
+                        displayParticle(p, particle);
+                    }
+                }
+
+                // Update and display bubbles
+                for (let bubble of bubbles) {
+                    if (bubble.side === 'left') {
+                        updateBubble(p, bubble);
+                        displayBubble(p, bubble);
+                    }
+                }
+
+                // Update and display jellyfish
+                for (let fish of jellyfish) {
+                    if (fish.side === 'left') {
+                        updateJellyfish(p, fish);
+                        displayJellyfish(p, fish);
+                    }
+                }
+
+                // Update and display anglerfish
+                for (let fish of anglerfish) {
+                    if (fish.side === 'left') {
+                        updateAnglerfish(p, fish);
+                        displayAnglerfish(p, fish);
+                    }
+                }
+            };
+
+            p.windowResized = function () {
+                p.resizeCanvas(p.windowWidth / 2, p.windowHeight);
+            };
+        }
+
+
+        function rightOceanSketch(p) {
+            p.setup = function () {
+                p.createCanvas(p.windowWidth / 2, p.windowHeight);
+                p.colorMode(p.RGB);
+                p.noiseDetail(3, 0.5);
+
+                // Initialize particles
+                for (let i = 0; i < 50; i++) {
+                    particles.push(createParticle(p, false));
+                }
+
+                // Initialize jellyfish
+                for (let i = 0; i < 3; i++) {
+                    jellyfish.push(createJellyfish(p, false));
+                }
+
+                // Initialize anglerfish
+                for (let i = 0; i < 2; i++) {
+                    anglerfish.push(createAnglerfish(p, false));
+                }
+
+                // Initialize bubbles
+                for (let i = 0; i < 20; i++) {
+                    bubbles.push(createBubble(p, false));
+                }
+            };
+
+            p.draw = function () {
+                // Create gradient background
+                drawOceanBackground(p);
+
+                // Draw light rays
+                drawLightRays(p);
+
+                // Update and display particles
+                for (let particle of particles) {
+                    if (particle.side === 'right') {
+                        updateParticle(p, particle);
+                        displayParticle(p, particle);
+                    }
+                }
+
+                // Update and display bubbles
+                for (let bubble of bubbles) {
+                    if (bubble.side === 'right') {
+                        updateBubble(p, bubble);
+                        displayBubble(p, bubble);
+                    }
+                }
+
+                // Update and display jellyfish
+                for (let fish of jellyfish) {
+                    if (fish.side === 'right') {
+                        updateJellyfish(p, fish);
+                        displayJellyfish(p, fish);
+                    }
+                }
+
+                // Update and display anglerfish
+                for (let fish of anglerfish) {
+                    if (fish.side === 'right') {
+                        updateAnglerfish(p, fish);
+                        displayAnglerfish(p, fish);
+                    }
+                }
+            };
+
+            p.windowResized = function () {
+                p.resizeCanvas(p.windowWidth / 2, p.windowHeight);
+            };
+        }
+
+        // Draw ocean background with gradient
+        function drawOceanBackground(p) {
+            p.background(deepBlue[0], deepBlue[1], deepBlue[2]);
+
+            const surfaceHeight = p.height * 0.9; // Bottom 10% for the copyright
+
+            for (let y = 0; y < surfaceHeight; y++) {
+                let ratio = y / surfaceHeight;
+                let r = p.map(ratio, 0, 1, deepBlue[0], surfaceBlue[0]);
+                let g = p.map(ratio, 0, 1, deepBlue[1], surfaceBlue[1]);
+                let b = p.map(ratio, 0, 1, deepBlue[2], surfaceBlue[2]);
+
+                p.stroke(r, g, b, 250);
+                p.line(0, y, p.width, y);
+            }
+        }
+
+        // Create light rays
+        function drawLightRays(p) {
+            // Draw rays that vary with time
+            p.push();
+            p.blendMode(p.ADD);
+            p.noStroke();
+
+            const time = p.millis() * 0.001;
+            const surfaceHeight = p.height * 0.9;
+
+            // Only in the deeper part of the ocean (bottom half)
+            for (let i = 0; i < 5; i++) {
+                let rayX = p.width * (0.2 + 0.6 * p.noise(i * 0.5, time * 0.1));
+                let rayWidth = p.width * 0.1 * p.noise(i * 0.3, time * 0.05 + 10);
+
+                p.fill(100, 150, 255, 5);
+                p.beginShape();
+                p.vertex(rayX, surfaceHeight * 0.6);
+                p.vertex(rayX + rayWidth, surfaceHeight * 0.6);
+                p.vertex(rayX + rayWidth * 1.5, surfaceHeight);
+                p.vertex(rayX - rayWidth * 0.5, surfaceHeight);
+                p.endShape(p.CLOSE);
+            }
+            p.pop();
+        }
+
+        // Particle functions
+        function createParticle(p, isLeft) {
+            return {
+                x: p.random(p.width),
+                y: p.random(p.height * 0.9), // Keep above the copyright
+                size: p.random(2, 5),
+                speed: p.random(0.2, 1),
+                color: [...bioluminescentColors[Math.floor(p.random(bioluminescentColors.length))], p.random(50, 150)],
+                side: isLeft ? 'left' : 'right'
+            };
+        }
+
+        function updateParticle(p, particle) {
+            // Gentle floating movement
+            particle.x += p.map(p.noise(particle.x * 0.01, particle.y * 0.01, p.frameCount * 0.01), 0, 1, -1, 1);
+            particle.y -= particle.speed;
+
+            // Reset if out of bounds
+            if (particle.y < 0 || particle.x < 0 || particle.x > p.width) {
+                particle.x = p.random(p.width);
+                particle.y = p.height * 0.9;
+                particle.size = p.random(2, 5);
+                particle.speed = p.random(0.2, 1);
+            }
+        }
+
+        function displayParticle(p, particle) {
+            p.push();
+            p.blendMode(p.ADD);
+            p.noStroke();
+            p.fill(particle.color);
+            p.circle(particle.x, particle.y, particle.size);
+
+            // Add glow effect
+            p.fill(particle.color[0], particle.color[1], particle.color[2], 20);
+            p.circle(particle.x, particle.y, particle.size * 2);
+            p.pop();
+        }
+
+        // Bubble functions
+        function createBubble(p, isLeft) {
+            return {
+                x: p.random(p.width),
+                y: p.random(p.height * 0.4, p.height * 0.9), // Bottom part
+                size: p.random(3, 10),
+                speed: p.random(0.5, 2),
+                wobble: p.random(0.1, 0.5),
+                side: isLeft ? 'left' : 'right'
+            };
+        }
+
+        function updateBubble(p, bubble) {
+            // Rising and wobbling
+            bubble.x += Math.sin(p.frameCount * 0.05 + bubble.wobble) * bubble.wobble;
+            bubble.y -= bubble.speed;
+
+            // Reset if out of bounds
+            if (bubble.y < 0) {
+                bubble.x = p.random(p.width);
+                bubble.y = p.random(p.height * 0.7, p.height * 0.9);
+                bubble.size = p.random(3, 10);
+                bubble.speed = p.random(0.5, 2);
+            }
+        }
+
+        function displayBubble(p, bubble) {
+            p.push();
+            p.noFill();
+            p.stroke(255, 255, 255, 60);
+            p.circle(bubble.x, bubble.y, bubble.size);
+
+            // Highlight
+            p.stroke(255, 255, 255, 80);
+            p.arc(bubble.x, bubble.y, bubble.size, bubble.size, p.PI + p.QUARTER_PI, p.TWO_PI - p.QUARTER_PI);
+            p.pop();
+        }
+
+        // Jellyfish functions
+        function createJellyfish(p, isLeft) {
+            // More likely in the lower half
+            const yPos = p.random(p.height * 0.5, p.height * 0.85);
+            return {
+                x: p.random(p.width),
+                y: yPos,
+                size: p.map(yPos, p.height * 0.5, p.height * 0.85, 15, 40), // Larger as they get deeper
+                speed: p.random(0.3, 0.8),
+                tentacleLength: p.random(10, 30),
+                color: bioluminescentColors[Math.floor(p.random(bioluminescentColors.length))],
+                pulseRate: p.random(0.02, 0.05),
+                pulseOffset: p.random(p.TWO_PI),
+                side: isLeft ? 'left' : 'right'
+            };
+        }
+
+        function updateJellyfish(p, jelly) {
+            // Gentle floating movement with slight side-to-side
+            jelly.x += p.map(p.noise(jelly.x * 0.01, jelly.y * 0.01, p.frameCount * 0.01), 0, 1, -1, 1);
+            jelly.y -= jelly.speed * p.map(p.sin(p.frameCount * jelly.pulseRate + jelly.pulseOffset), -1, 1, 0.5, 1.2);
+
+            // Reset if out of bounds
+            if (jelly.y < p.height * 0.3 || jelly.x < -50 || jelly.x > p.width + 50) {
+                jelly.x = p.random(p.width);
+                jelly.y = p.height * 0.9;
+            }
+        }
+
+        function displayJellyfish(p, jelly) {
+            const pulse = p.map(p.sin(p.frameCount * jelly.pulseRate + jelly.pulseOffset), -1, 1, 0.8, 1.2);
+
+            p.push();
+            p.blendMode(p.ADD);
+
+            // Main body
+            p.fill(jelly.color[0], jelly.color[1], jelly.color[2], 80);
+            p.noStroke();
+            p.ellipse(jelly.x, jelly.y, jelly.size * pulse, jelly.size * 0.8 * pulse);
+
+            // Tentacles
+            p.stroke(jelly.color[0], jelly.color[1], jelly.color[2], 60);
+            for (let i = 0; i < 8; i++) {
+                const angle = p.map(i, 0, 8, 0, p.TWO_PI);
+                const xOffset = jelly.size * 0.3 * Math.cos(angle);
+                const tentacleLength = jelly.tentacleLength * (1 + 0.2 * p.sin(p.frameCount * 0.1 + i));
+
+                p.beginShape();
+                for (let j = 0; j < tentacleLength; j += 3) {
+                    const wobble = 4 * p.sin(j * 0.2 + p.frameCount * 0.1 + i);
+                    p.curveVertex(
+                        jelly.x + xOffset + wobble,
+                        jelly.y + j * 0.8
+                    );
+                }
+                p.endShape();
+            }
+
+            // Glow effect
+            p.fill(jelly.color[0], jelly.color[1], jelly.color[2], 15);
+            p.ellipse(jelly.x, jelly.y, jelly.size * 1.5 * pulse, jelly.size * 1.2 * pulse);
+
+            p.pop();
+        }
+
+        // Anglerfish functions
+        function createAnglerfish(p, isLeft) {
+            // Only in the very deep parts
+            return {
+                x: p.random(p.width),
+                y: p.random(p.height * 0.6, p.height * 0.85),
+                size: p.random(25, 45),
+                speed: p.random(0.5, 1.5),
+                direction: p.random([-1, 1]),
+                color: [10, 10, 40],
+                lureColor: bioluminescentColors[Math.floor(p.random(bioluminescentColors.length))],
+                lureSize: p.random(3, 6),
+                lureAngle: 0,
+                jawAngle: 0,
+                side: isLeft ? 'left' : 'right'
+            };
+        }
+
+        function updateAnglerfish(p, fish) {
+            // Swimming with occasional direction changes
+            fish.x += fish.speed * fish.direction;
+
+            // Random direction changes
+            if (p.random(100) < 1) {
+                fish.direction *= -1;
+            }
+
+            // Subtle vertical movement
+            fish.y += p.map(p.noise(fish.x * 0.01, p.frameCount * 0.01), 0, 1, -0.5, 0.5);
+
+            // Animate lure
+            fish.lureAngle = p.sin(p.frameCount * 0.05) * 0.2;
+
+            // Animate jaw
+            fish.jawAngle = p.map(p.sin(p.frameCount * 0.03), -1, 1, 0.1, 0.3);
+
+            // Reset if out of bounds
+            if (fish.x < -fish.size || fish.x > p.width + fish.size) {
+                fish.direction *= -1;
+                fish.x = fish.direction > 0 ? -fish.size : p.width + fish.size;
+                fish.y = p.random(p.height * 0.6, p.height * 0.85);
+            }
+
+            // Keep within vertical bounds
+            fish.y = p.constrain(fish.y, p.height * 0.6, p.height * 0.85);
+        }
+
+        function displayAnglerfish(p, fish) {
+            p.push();
+            p.translate(fish.x, fish.y);
+            p.scale(fish.direction, 1); // Flip based on direction
+
+            // Body
+            p.fill(fish.color);
+            p.noStroke();
+            p.beginShape();
+            p.vertex(-fish.size * 0.5, 0); // Tail
+            p.vertex(fish.size * 0.3, -fish.size * 0.3); // Top
+            p.vertex(fish.size * 0.5, 0); // Front
+            p.vertex(fish.size * 0.3, fish.size * 0.3); // Bottom
+            p.endShape(p.CLOSE);
+
+            // Fins
+            p.triangle(
+                0, 0,
+                -fish.size * 0.2, -fish.size * 0.4,
+                -fish.size * 0.3, -fish.size * 0.2
+            );
+            p.triangle(
+                -fish.size * 0.2, 0,
+                -fish.size * 0.2, fish.size * 0.4,
+                -fish.size * 0.4, fish.size * 0.2
+            );
+
+            // Jaw
+            p.push();
+            p.rotate(fish.jawAngle);
+            p.fill(fish.color);
+            p.beginShape();
+            p.vertex(fish.size * 0.4, 0);
+            p.vertex(fish.size * 0.2, fish.size * 0.3);
+            p.vertex(fish.size * 0.5, fish.size * 0.2);
+            p.endShape(p.CLOSE);
+
+            // Teeth
+            p.stroke(255, 255, 255, 180);
+            p.strokeWeight(1);
+            for (let i = 0; i < 5; i++) {
+                const xPos = p.map(i, 0, 4, fish.size * 0.4, fish.size * 0.2);
+                p.line(xPos, 0, xPos + p.random(-2, 2), fish.size * 0.1);
+            }
+            p.pop();
+
+            // Eye
+            p.fill(255);
+            p.ellipse(fish.size * 0.3, -fish.size * 0.1, fish.size * 0.1, fish.size * 0.1);
+            p.fill(0);
+            p.ellipse(fish.size * 0.32, -fish.size * 0.1, fish.size * 0.05, fish.size * 0.05);
+
+            // Lure with glow effect
+            p.push();
+            p.translate(fish.size * 0.2, -fish.size * 0.3);
+            p.rotate(fish.lureAngle);
+            p.stroke(60, 60, 90);
+            p.strokeWeight(2);
+            p.line(0, 0, 0, -fish.size * 0.25);
+
+            p.blendMode(p.ADD);
+            p.noStroke();
+            p.fill(fish.lureColor[0], fish.lureColor[1], fish.lureColor[2], 200);
+            p.circle(0, -fish.size * 0.25, fish.lureSize);
+
+            p.fill(fish.lureColor[0], fish.lureColor[1], fish.lureColor[2], 80);
+            p.circle(0, -fish.size * 0.25, fish.lureSize * 2);
+
+            p.fill(fish.lureColor[0], fish.lureColor[1], fish.lureColor[2], 40);
+            p.circle(0, -fish.size * 0.25, fish.lureSize * 3);
+            p.pop();
+
+            p.pop();
+        }
     </script>
 
 </body>
