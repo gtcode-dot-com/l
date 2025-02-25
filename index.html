@@ -2566,8 +2566,8 @@
     <script>
         let isLowPerformance = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 1024;
         let perfScale = 1;
-        const frameRate = Math.ceil(perfScale * (isLowPerformance ? 7 : 12));
-        const particlesCnt = Math.ceil(perfScale * (isLowPerformance ? 15 : 50));
+        const frameRate = Math.ceil(perfScale * (isLowPerformance ? 3 : 7));
+        const particlesCnt = Math.ceil(perfScale * (isLowPerformance ? 15 : 35));
         const jellyFishCnt = Math.ceil(perfScale * (isLowPerformance ? 1 : 3));
         const anglerFishCnt = Math.ceil(perfScale * (isLowPerformance ? 1 : 2));
         const bubblesCnt = Math.ceil(perfScale * (isLowPerformance ? 8 : 20));
