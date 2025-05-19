@@ -23,7 +23,8 @@
         #canvas-container {
             margin-top: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            cursor: pointer; /* Indicate interactivity */
+            cursor: pointer;
+            position: relative;
         }
         header {
             text-align: center;
@@ -83,6 +84,7 @@
         let showCoconut = false;
         let waves = []; // Array to hold active waves { x, y, radius, opacity }
         let coconutPulse = 0; // For subtle coconut animation
+        let linkCreated = false;
 
         function setup() {
             let canvasContainer = document.getElementById('canvas-container');
@@ -131,21 +133,43 @@
                     popProgress = min(popProgress, 1); // Clamp at 1
 
                     // Draw the popping brick separately and slightly offset/modified
-                    drawPoppingBrick(targetBrick, popProgress);
-
-                } else {
+                    if (targetBrick) { // Ensure targetBrick is defined before drawing
+                        drawPoppingBrick(targetBrick, popProgress);
+                    }
+                } else { // popProgress >= 1
                     // --- Phase 2: Coconut Revealed ---
                     showCoconut = true;
                     // Hole is naturally left because the target brick wasn't drawn in drawWall()
 
                     // --- Phase 3: Coconut & Gossip Waves ---
-                    drawCoconut(targetBrick.x + targetBrick.w / 2, targetBrick.y + targetBrick.h / 2);
-                    manageWaves(targetBrick.x + targetBrick.w / 2, targetBrick.y + targetBrick.h / 2);
+                    if (targetBrick) { // Ensure targetBrick is defined
+                        drawCoconut(targetBrick.x + targetBrick.w / 2, targetBrick.y + targetBrick.h / 2);
+                        manageWaves(targetBrick.x + targetBrick.w / 2, targetBrick.y + targetBrick.h / 2);
+
+                        // --- Phase 4: Create Link over the coconut/brick area ---
+                        if (!linkCreated) { // Check if linkCreated is false and targetBrick exists
+                            let canvasContainer = document.getElementById('canvas-container');
+                            let link = document.createElement('a');
+                            link.href = '/WilsonLoo_RutgersGraduate_HonoluluJudge.html';
+                            link.style.position = 'absolute';
+                            link.style.left = targetBrick.x + 'px';
+                            link.style.top = targetBrick.y + 'px';
+                            link.style.width = targetBrick.w + 'px';
+                            link.style.height = targetBrick.h + 'px';
+                            link.style.zIndex = "10"; // Ensure it's on top of the canvas drawing
+                            // link.style.outline = "1px dashed red"; // Optional: for debugging visibility
+                            link.setAttribute('aria-label', 'Learn more about the revealed information');
+                            link.setAttribute('title', 'Learn more'); 
+
+                            canvasContainer.appendChild(link);
+                            linkCreated = true;
+                        }
+                    }
                 }
             }
 
-             // Draw the "PRIVATE" sign last so it's on top (unless brick pops under it)
-             drawSign();
+            // Draw the "PRIVATE" sign last so it's on top (unless brick pops under it)
+            drawSign();
         }
 
         // --- Helper Functions ---
