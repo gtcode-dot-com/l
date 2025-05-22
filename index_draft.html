@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GTCode.com - Exposing Institutional Failures in Hawai'i</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documenting institutional failures, judicial misconduct, and systematic coverups in Hawai'i. A permanent record of abuse by those in power.">
+    <meta name="keywords" content="Hawaii judicial misconduct, institutional failure, whistleblower, systematic abuse, corruption">
+    
+    <meta property="og:title" content="GTCode.com - Exposing Institutional Failures">
+    <meta property="og:description" content="A permanent record of institutional abuse and coverups in Hawai'i">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gtcode.com/">
+    
+    <link rel="canonical" href="https://gtcode.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-bg: #1a1a24;
+            --secondary-bg: #282834;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --accent: #00ff99;
+            --warning: #ff6b6b;
+            --border-color: #334155;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .site-title {
+            color: var(--accent);
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem;
+            font-weight: 700;
+        }
+
+        .site-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .warning-notice {
+            background: var(--secondary-bg);
+            border-left: 4px solid var(--warning);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-notice h3 {
+            color: var(--warning);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .content-section {
+            background: var(--secondary-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .content-section h2 {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .content-section h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .timeline-item {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .timeline-date {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .timeline-content {
+            margin-top: 0.5rem;
+        }
+
+        .fact-box {
+            background: rgba(0, 255, 153, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .fact-box h4 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .redacted {
+            background: #ff3366;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .link-button {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--primary-bg);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 1rem 0.5rem 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .link-button:hover {
+            background: #00cc7a;
+            transform: translateY(-2px);
+        }
+
+        .legal-disclaimer {
+            background: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: var(--accent);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem 0.5rem;
+            }
+            
+            .site-title {
+                font-size: 2rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="site-title">GTCode.com</h1>
+            <p class="site-subtitle">Documenting Institutional Failures and Systematic Abuse in Hawai'i</p>
+        </header>
+
+        <div class="warning-notice">
+            <h3>⚠️ Content Warning</h3>
+            <p>This site documents serious allegations of institutional abuse, judicial misconduct, violence, and systematic coverups. Content includes descriptions of childhood trauma, sexual violence, drug crimes, and institutional betrayal that may be disturbing to some readers.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Purpose of This Site</h2>
+            <p>This website serves as a <strong>permanent public record</strong> of alleged institutional failures, criminal activity, and systematic coverups in Hawai'i spanning multiple decades. After exhausting traditional legal remedies and reporting channels, this documentation represents a last resort to preserve the truth and hold powerful institutions accountable.</p>
+            
+            <div class="fact-box">
+                <h4>Key Allegation</h4>
+                <p>Hawai'i Judge Wilson Loo allegedly committed judicial misconduct by influencing witness testimony through non-verbal cues during a legal proceeding, then aggressively silencing objections to his actions. This occurred in an audio-only recorded hearing, making the visual misconduct nearly impossible to prove through official records.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Timeline of Institutional Failures & Systematic Targeting</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">Childhood (Age 11-12) - East Hanover, NJ</div>
+                <div class="timeline-content">
+                    <strong>Repeated Physical Abuse & Institutional Indifference:</strong>
+                    <ul>
+                        <li>Multiple traumatic brain injuries from "full blast upper cuts and kicks to the head"</li>
+                        <li>Testicular violence witnessed by a police officer who took no action</li>
+                        <li>School administrators failed to intervene despite documented abuse</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Age 18 - Newark/Belleville, NJ</div>
+                <div class="timeline-content">
+                    <strong>Brief Association Leading to Permanent Surveillance:</strong>
+                    <ul>
+                        <li>Hung around Andrew Knapik (aka Andrew Merola), allegedly Gambino family's highest ranking member</li>
+                        <li>Best friend Christopher Doscher was running gambling operations for Knapik</li>
+                        <li>Brief association placed author on permanent law enforcement watch list</li>
+                        <li>Later became drummer for Streetlight Manifesto after living with Tomas Kalnoky at Rutgers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2006 - Move to Hawaii</div>
+                <div class="timeline-content">
+                    <strong>Relocated to Hawaii, Continued Surveillance:</strong>
+                    <ul>
+                        <li>Left Streetlight Manifesto and moved to Hawaii</li>
+                        <li>Formed hackerspace HiCapacity with Ryan Kanno (Pierre Omidyar's first Civil Beat techie)</li>
+                        <li>Began experiencing algorithmic targeting on Reddit - articles about Streetlight Manifesto placed next to articles about personal activities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">November 2015</div>
+                <div class="timeline-content">
+                    <strong>Young Kwak Tax Extortion Incident:</strong>
+                    <ul>
+                        <li><strong>State tax collector Young Kwak trapped author in tiny booth, inducing claustrophobia</strong></li>
+                        <li>Kwak threatened author, attempted to steal $20,000</li>
+                        <li>When author objected to the theft, Kwak committed perjury to grand jury</li>
+                        <li>Kwak falsely claimed author threatened him (Kwak didn't speak English well)</li>
+                        <li>Led to indictment despite author being the victim of attempted theft</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Pre-July 2017</div>
+                <div class="timeline-content">
+                    <strong>Murder Threat & Witness Tampering by Jack Johnson Associates:</strong>
+                    <ul>
+                        <li>Investigated hacking/stalking by associates of John John Florence's wife</li>
+                        <li><strong>Eugene and Rita Hartmann issued pre-rehearsed, conspired murder threats</strong> in response to investigation</li>
+                        <li>Witness tampering and blackmail followed the murder threat</li>
+                        <li>Author lived with Hartmann during this period while facing tax-related indictment</li>
+                        <li>Attorney bragged about connections to "high priest" at 2016 Eddie Aikau event (won by John Florence)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">July 2017 - VIWATO Trial</div>
+                <div class="timeline-content">
+                    <strong>Perjury, Prosecutorial Misconduct & Media Blackout:</strong>
+                    <ul>
+                        <li>Witnessed Young Kwak commit perjury during trial testimony</li>
+                        <li>Prosecutor Vincent Kanemoto engaged in misconduct, later lied about it to author's face</li>
+                        <li>Author planned to testify about Hartmann murder threat during tax trial</li>
+                        <li><strong>Complete media blackout</strong> despite "violent interference with tax official" being major news story</li>
+                        <li>Investigator James Yuen brought in NJ State Police partner with La Cosa Nostra connections who knew author's childhood friends</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">November 2018 - Present</div>
+                <div class="timeline-content">
+                    <strong>Escalating Google/Tech Company Targeting:</strong>
+                    <ul>
+                        <li>Google began targeting using news of Christopher Doscher's brother Douglas's suicide for harassment</li>
+                        <li>Repeated targeting by Google employees and algorithms</li>
+                        <li>Continued systematic harassment through tech platforms</li>
+                        <li>Targeting escalated in response to author's investigative work</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Recent Years</div>
+                <div class="timeline-content">
+                    <strong>The <span class="redacted">[REDACTED]</span> Case & Wilson Loo Judicial Misconduct:</strong>
+                    <ul>
+                        <li><span class="redacted">[REDACTED]</span> allegedly provided LSD and engaged in escalating harassment and violence</li>
+                        <li>Multiple police reports filed; HPD took no action despite documented evidence</li>
+                        <li><strong>Judge Wilson Loo allegedly committed judicial misconduct</strong> during injunction hearing</li>
+                        <li><span class="redacted">[REDACTED]</span> allegedly committed felony perjury under oath regarding drug provision</li>
+                        <li>Case was subsequently sealed, burying evidence of misconduct</li>
+                        <li>All crimes covered up while victim faced state-sponsored defamation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>The Interconnected Web of Corruption</h2>
+            
+            <div class="fact-box">
+                <h4>Key Pattern: How Past Associations Are Weaponized</h4>
+                <p>A brief teenage association with organized crime figures has been used to justify decades of surveillance, targeting, and institutional abuse. This demonstrates how the system can weaponize someone's past to deny them basic rights and legal protections.</p>
+            </div>
+
+            <h3>The Players & Connections</h3>
+            <ul>
+                <li><strong>Young Kwak (State Tax Collector):</strong> Attempted theft, perjury to grand jury, prosecutorial protection</li>
+                <li><strong>Vincent Kanemoto (Prosecutor):</strong> Misconduct during VIWATO trial, lied to victim's face afterward</li>
+                <li><strong>James Yuen (Investigator):</strong> Brought in NJ State Police partner with organized crime connections</li>
+                <li><strong>Eugene & Rita Hartmann:</strong> Issued murder threats, witness tampering, connected to Jack Johnson's circle</li>
+                <li><strong>Judge Wilson Loo:</strong> Alleged judicial misconduct to protect perjuring witness</li>
+                <li><strong>Google/Tech Companies:</strong> Algorithmic targeting, harassment using personal tragedies</li>
+                <li><strong>HPD Officers:</strong> Systematic refusal to investigate credible crime reports</li>
+            </ul>
+
+            <h3>The Media Blackout Strategy</h3>
+            <p>Despite involving <strong>"violent interference with a tax official"</strong> - which should have been major news in Hawaii - the VIWATO trial received complete media silence. This occurred specifically because the victim planned to testify about receiving murder threats from Jack Johnson associates, demonstrating how media can be controlled to protect powerful interests.</p>
+
+            <h3>Multi-Platform Targeting Campaign</h3>
+            <ul>
+                <li><strong>Reddit:</strong> Algorithmic manipulation placing Streetlight Manifesto articles next to articles about victim's real-life activities</li>
+                <li><strong>Google:</strong> Using news of childhood friend's brother's suicide for harassment starting November 2018</li>
+                <li><strong>Legal System:</strong> Weaponizing victim's past associations to justify abuse and deny due process</li>
+                <li><strong>Law Enforcement:</strong> Coordinated refusal to investigate crimes against the victim while protecting perpetrators</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Complete Documentation</h2>
+            <p>The full investigative report, including detailed allegations, legal analysis, and supporting evidence, is available in the comprehensive document below:</p>
+            
+            <a href="/WilsonLoo_RutgersGraduate_HonoluluJudge.html" class="link-button">
+                📋 Read Full Investigation Report
+            </a>
+            
+            <p><strong>This report includes:</strong></p>
+            <ul>
+                <li>Detailed timeline of all alleged crimes and coverups</li>
+                <li>Legal analysis of potential federal and state violations</li>
+                <li>Documentation of systematic institutional failures</li>
+                <li>Evidence of judicial misconduct and police obstruction</li>
+                <li>Editorial commentary on the need for systemic reform</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Why This Matters</h2>
+            <p>This is not about one person's grievances. This is about:</p>
+            <ul>
+                <li><strong>Institutional Accountability:</strong> When courts and police protect each other instead of serving justice</li>
+                <li><strong>Victim Silencing:</strong> How powerful systems discredit and destroy those who speak truth</li>
+                <li><strong>Systemic Corruption:</strong> The breakdown of checks and balances designed to prevent abuse</li>
+                <li><strong>Future Prevention:</strong> Creating a public record so others can recognize these patterns</li>
+            </ul>
+
+            <p>Every institution that has failed to act appropriately has contributed to a system where powerful people can abuse vulnerable individuals with impunity. This documentation serves as evidence of that failure and a call for reform.</p>
+        </div>
+
+        <div class="legal-disclaimer">
+            <strong>Legal Disclaimer:</strong> All factual assertions in this documentation are made in good faith based on firsthand observation and documented evidence. This disclosure is made in the public interest following unsuccessful attempts to address these matters through official channels. All individuals mentioned are presumed innocent unless proven guilty in a court of law. The author maintains a commitment to accuracy and will promptly correct any demonstrated factual errors.
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Author:</strong> Paul Edward Lowndes</p>
+            <p><strong>Published:</strong> February 2025</p>
+            <p><em>"The only thing necessary for the triumph of evil is for good men to do nothing."<br>- Edmund Burke</em></p>
+        </div>
+    </div>
+</body>
+</html>
