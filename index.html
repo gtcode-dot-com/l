@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wall - Paradise Point [REDACTED]</title>
+    <title>GTCode - Pioneering AI Solutions</title>
     <!-- Include p5.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <style>
@@ -16,364 +16,287 @@
             align-items: center;
             justify-content: flex-start;
             min-height: 100vh;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #101820; /* Deep dark blue/grey */
+            color: #F2F2F2; /* Light grey/off-white */
             overflow: hidden;
         }
         #canvas-container {
             margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 0 15px rgba(0, 168, 232, 0.3); /* Subtle tech glow */
             cursor: pointer;
-            position: relative;
+            position: relative; /* For potential future absolutely positioned elements if needed */
         }
         header {
             text-align: center;
-            margin: 15px 0 5px 0;
+            margin: 20px 0 10px 0;
         }
         h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
             font-weight: 300;
-            color: #555;
+            color: #00A8E8; /* Bright tech blue */
         }
-        p {
-            margin: 5px 0 0 0;
-            font-style: italic;
-            color: #777;
-            font-size: 0.9em;
+        header p { /* Targeting the p inside header specifically */
+            margin: 8px 0 0 0;
+            font-style: normal;
+            color: #B0C4DE; /* Light steel blue */
+            font-size: 1.1em;
+        }
+        #interaction-prompt { /* Specific ID for the prompt under H1 */
+             margin: 5px 0 15px 0;
+             font-style: italic;
+             color: #999;
+             font-size: 0.9em;
         }
          footer {
-            margin-top: 10px;
-            font-size: 0.8em;
-            color: #999;
+            margin-top: 20px;
+            padding-bottom: 15px;
+            font-size: 0.9em;
+            color: #888;
+            text-align: center;
          }
     </style>
 </head>
 <body>
     <header>
-        <h1>Paradise Point Confidential</h1>
-        <p>Nothing to see here... unless you look closely. (Click the wall)</p>
+        <h1>GTCode</h1>
+        <p>Pioneering the Future of Software with Artificial Intelligence.</p>
+        <p id="interaction-prompt">Interact with the network to witness the core.</p>
     </header>
 
     <div id="canvas-container"></div>
 
     <footer>
-        Visualisation only. No actual coconuts were surveilled.
+        © GTCode.com | Owner: Paul Lowndes | Contact: Info@GTCode.com
     </footer>
 
     <script>
         // --- Configurable Values ---
-        const BRICK_HEIGHT = 25;
-        const BASE_BRICK_WIDTH = 60;
-        const MORTAR = 3;
-        const WALL_START_Y_FACTOR = 0.15; // % from top where wall starts
-        const POP_SPEED = 0.005; // How fast the brick pops out (0 to 1)
-        const POP_DISTANCE = 15; // How far visually it moves out
-        const WAVE_SPEED = 0.8; // How fast waves expand
-        const WAVE_MAX_RADIUS = 1500;
-        const WAVE_FADE_SPEED = 0.2; // How fast waves fade
-        const WAVE_COLOR = [50, 150, 55, 150]; // RGBA for gossip waves  
-        const COCONUT_COLOR = [101, 67, 33]; // Brown
+        const NODE_DIAMETER = 12;
+        const NODE_SPACING = 8; // Gap between nodes
+        const GRID_START_Y_FACTOR = 0.1; // % from top where grid starts
+        const ACTIVATION_SPEED = 0.01; // How fast the node activates (0 to 1)
+        const ACTIVATION_SCALE_TARGET = 1.8; // How much the node scales up
+        const PULSE_SPEED = 1.2; // How fast pulses expand
+        const PULSE_MAX_RADIUS = 400;
+        const PULSE_FADE_SPEED = 0.5; // How fast pulses fade
+        const PULSE_COLOR = [0, 168, 232, 150]; // RGBA for data pulses (GTCode Blue)
+        const NODE_BASE_COLOR_DARK = [0, 51, 102]; // Dark Blue
+        const NODE_BASE_COLOR_LIGHT = [0, 119, 204]; // Medium Blue
+        const ACTIVATED_NODE_COLOR_START = [0, 255, 255]; // Cyan
+        const ACTIVATED_NODE_COLOR_END = [220, 255, 255]; // Lighter Cyan/Whiteish
 
         // --- State Variables ---
         let canvas;
         let noiseSeedX, noiseSeedY;
         let animationTriggered = false;
-        let popProgress = 0; // 0 = not popped, 1 = fully popped
-        let targetBrick = null; // { x, y, w, h, noiseVal, row, col }
-        let showCoconut = false;
-        let waves = []; // Array to hold active waves { x, y, radius, opacity }
-        let coconutPulse = 0; // For subtle coconut animation
-        let linkCreated = false;
+        let activationProgress = 0; // 0 = not activated, 1 = fully activated
+        let targetNode = null; // { x, y, diameter, noiseVal, row, col, centerX, centerY }
+        let showActivatedCore = false;
+        let pulses = []; // Array to hold active pulses { x, y, radius, opacity }
+        let activatedNodePulse = 0; // For subtle activated node animation
 
         function setup() {
             let canvasContainer = document.getElementById('canvas-container');
-            let canvasWidth = min(windowWidth * 0.95, 1200);
-            let canvasHeight = windowHeight * 0.7;
+            let canvasWidth = min(windowWidth * 0.9, 1000); // Slightly smaller for better focus
+            let canvasHeight = windowHeight * 0.6;
             canvas = createCanvas(canvasWidth, canvasHeight);
             canvas.parent('canvas-container');
             colorMode(RGB);
-            noiseDetail(8, 0.3);
-            noiseSeedX = random(100); // Consistent noise for wall appearance
-            noiseSeedY = random(100);
+            noiseDetail(6, 0.4);
+            noiseSeedX = random(1000);
+            noiseSeedY = random(1000);
             textAlign(CENTER, CENTER);
             textFont('Arial');
 
-            // --- Identify the Target Brick ---
-            // Let's target one near the middle-ish right
-            let targetRow = floor( (height * (1 - WALL_START_Y_FACTOR) / (BRICK_HEIGHT + MORTAR)) * 0.6);
-            let targetCol = floor( (width / (BASE_BRICK_WIDTH + MORTAR)) * 0.7);
-            targetBrick = calculateBrickInfo(targetRow, targetCol);
+            // --- Identify the Target Node ---
+            // Target one near the center
+            let numRows = floor((height * (1 - GRID_START_Y_FACTOR)) / (NODE_DIAMETER + NODE_SPACING));
+            let numCols = floor(width / (NODE_DIAMETER + NODE_SPACING));
+            
+            let targetRow = floor(numRows * 0.5);
+            let targetCol = floor(numCols * 0.5);
+            targetNode = calculateNodeInfo(targetRow, targetCol);
 
-            // Add click listener to trigger animation
             canvas.mousePressed(triggerAnimation);
         }
 
         function triggerAnimation() {
             if (!animationTriggered) {
                 animationTriggered = true;
-                // Remove header instruction after click
-                 let headerP = document.querySelector('header p');
-                 if (headerP) headerP.textContent = "What was that..?"
+                 let promptP = document.getElementById('interaction-prompt');
+                 if (promptP) promptP.textContent = "Analyzing core activation..."
             }
         }
 
         function draw() {
-            // 1. Background (Hint of the 'Surf Town') - Redraw every frame
-            drawBackground();
+            // 1. Background (Dark tech theme)
+            background(16, 24, 32); // #101820
 
-            // 2. The Brick Wall - Redraw every frame
-            drawWall();
+            // 2. The Node Grid
+            drawNodeGrid();
 
             // 3. Animation Logic
             if (animationTriggered) {
-                // --- Phase 1: Brick Popping ---
-                if (popProgress < 1) {
-                    popProgress += POP_SPEED;
-                    popProgress = min(popProgress, 1); // Clamp at 1
+                // --- Phase 1: Node Activation ---
+                if (activationProgress < 1) {
+                    activationProgress += ACTIVATION_SPEED;
+                    activationProgress = min(activationProgress, 1);
 
-                    // Draw the popping brick separately and slightly offset/modified
-                    if (targetBrick) { // Ensure targetBrick is defined before drawing
-                        drawPoppingBrick(targetBrick, popProgress);
+                    if (targetNode) {
+                        drawActivatedNode(targetNode, activationProgress);
                     }
-                } else { // popProgress >= 1
-                    // --- Phase 2: Coconut Revealed ---
-                    showCoconut = true;
-                    // Hole is naturally left because the target brick wasn't drawn in drawWall()
+                } else { // activationProgress >= 1
+                    // --- Phase 2: Core Fully Active ---
+                    showActivatedCore = true;
+                    // The "hole" is created by not drawing the targetNode in drawNodeGrid when animationTriggered
 
-                    // --- Phase 3: Coconut & Gossip Waves ---
-                    if (targetBrick) { // Ensure targetBrick is defined
-                        drawCoconut(targetBrick.x + targetBrick.w / 2, targetBrick.y + targetBrick.h / 2);
-                        manageWaves(targetBrick.x + targetBrick.w / 2, targetBrick.y + targetBrick.h / 2);
-
-                        // --- Phase 4: Create Link over the coconut/brick area ---
-                        if (!linkCreated) { // Check if linkCreated is false and targetBrick exists
-                            let canvasContainer = document.getElementById('canvas-container');
-                            let link = document.createElement('a');
-                            link.href = '/WilsonLoo_RutgersGraduate_HonoluluJudge.html';
-                            link.style.position = 'absolute';
-                            link.style.left = targetBrick.x + 'px';
-                            link.style.top = targetBrick.y + 'px';
-                            link.style.width = targetBrick.w + 'px';
-                            link.style.height = targetBrick.h + 'px';
-                            link.style.zIndex = "10"; // Ensure it's on top of the canvas drawing
-                            // link.style.outline = "1px dashed red"; // Optional: for debugging visibility
-                            link.setAttribute('aria-label', 'Learn more about the revealed information');
-                            link.setAttribute('title', 'Learn more'); 
-
-                            canvasContainer.appendChild(link);
-                            linkCreated = true;
-                        }
+                    // --- Phase 3: Activated Core Effects & Pulses ---
+                    if (targetNode) {
+                        drawActivatedNode(targetNode, 1); // Keep drawing it in its active state
+                        managePulses(targetNode.centerX, targetNode.centerY);
                     }
                 }
             }
-
-            // Draw the "PRIVATE" sign last so it's on top (unless brick pops under it)
-            drawSign();
         }
 
-        // --- Helper Functions ---
-
-        function calculateBrickInfo(rowNum, colIndexApprox) {
-            // Recalculates specific brick details - needed because width isn't perfectly uniform
-            // This is slightly approximate but good enough for finding the target
-            let wallStartY = height * WALL_START_Y_FACTOR;
-            let brickY = wallStartY + rowNum * (BRICK_HEIGHT + MORTAR);
-            let offsetX = (rowNum % 2 === 0) ? 0 : -BASE_BRICK_WIDTH / 2 - MORTAR / 2;
-            // Estimate X based on average width - loop might be needed for perfect accuracy
-            let brickX = offsetX + colIndexApprox * (BASE_BRICK_WIDTH + MORTAR);
-
-            // We need noiseVal for consistent color if redrawing popped brick
-             let noiseVal = noise(
-                 (brickX + noiseSeedX) * 0.01,
-                 (brickY + noiseSeedY) * 0.01
-             );
-             // Let's refine X by simulating the row draw until we hit the target column index
-             let currentX = offsetX;
-             let actualColIndex = 0;
-             while(actualColIndex < colIndexApprox && currentX < width) {
-                 let wVar = randomGaussian(0, 1.5); // Simulate width variation CONSISTENTLY (use randomGaussian maybe?)
-                 // For consistency, maybe don't vary target width calculation much
-                 currentX += BASE_BRICK_WIDTH + wVar + MORTAR;
-                 actualColIndex++;
-             }
-              // Re-adjust starting X based on simulated loop
-             brickX = currentX - (BASE_BRICK_WIDTH + MORTAR); // Go back one step to get the start
-
+        function calculateNodeInfo(rowNum, colNum) {
+            let gridStartY = height * GRID_START_Y_FACTOR;
+            let nodeX = colNum * (NODE_DIAMETER + NODE_SPACING) + NODE_SPACING / 2;
+            let nodeY = gridStartY + rowNum * (NODE_DIAMETER + NODE_SPACING) + NODE_SPACING / 2;
+            
+            let noiseVal = noise(
+                 (nodeX + noiseSeedX) * 0.05,
+                 (nodeY + noiseSeedY) * 0.05
+            );
 
             return {
-                x: brickX,
-                y: brickY,
-                w: BASE_BRICK_WIDTH, // Use base width for simplicity here
-                h: BRICK_HEIGHT,
-                noiseVal: noiseVal, // Store noise value for color consistency
+                x: nodeX, // Top-left x for drawing rect/ellipse
+                y: nodeY, // Top-left y
+                diameter: NODE_DIAMETER,
+                noiseVal: noiseVal,
                 row: rowNum,
-                col: colIndexApprox // Store indices
+                col: colNum,
+                centerX: nodeX + NODE_DIAMETER / 2,
+                centerY: nodeY + NODE_DIAMETER / 2
             };
         }
 
-        function drawBackground() {
-            for (let y = 0; y < height; y++) {
-                let inter = map(y, 0, height, 0, 1);
-                let c1 = color(135, 206, 250); // Light Sky Blue
-                let c2 = color(210, 180, 140, 180); // Tan/Beige (slightly transparent)
-                let gradColor = lerpColor(c1, c2, inter);
-                stroke(gradColor);
-                line(0, y, width, y);
-            }
-            noStroke();
-        }
+        function drawNodeGrid() {
+            let gridStartY = height * GRID_START_Y_FACTOR;
+            let gridEndY = height;
 
-        function drawWall() {
-            let wallStartY = height * WALL_START_Y_FACTOR;
-            let wallEndY = height;
+            for (let r = 0, y = gridStartY + NODE_SPACING / 2; y < gridEndY - NODE_DIAMETER / 2; y += NODE_DIAMETER + NODE_SPACING, r++) {
+                for (let c = 0, x = NODE_SPACING / 2; x < width - NODE_DIAMETER / 2; x += NODE_DIAMETER + NODE_SPACING, c++) {
+                    
+                    let isTargetNode = (targetNode && r === targetNode.row && c === targetNode.col);
 
-            for (let y = wallStartY, rowNum = 0; y < wallEndY - BRICK_HEIGHT / 2; y += BRICK_HEIGHT + MORTAR, rowNum++) {
-                let offsetX = (rowNum % 2 === 0) ? 0 : -BASE_BRICK_WIDTH / 2 - MORTAR / 2;
-
-                for (let x = offsetX, colNum = 0; x < width + BASE_BRICK_WIDTH; colNum++) {
-                    // --- Check if this is the target brick ---
-                    let isTargetBrick = (animationTriggered && targetBrick && rowNum === targetBrick.row && colNum === targetBrick.col);
-
-                     // Get Noise for Color
-                     let noiseVal = noise(
-                        (x + noiseSeedX) * 0.01,
-                        (y + noiseSeedY) * 0.01
-                     );
-
-                    // --- Brick Width Variation ---
-                    // IMPORTANT: Use a deterministic way if possible or recalculate target X carefully.
-                    // Using random() here makes exact target brick alignment tricky across frames.
-                    // Let's use a simpler approach for this example: slightly vary non-target bricks.
-                    let brickWidthVariation = isTargetBrick ? 0 : randomGaussian(0, 0.1); // Only vary non-target
-                    let currentBrickWidth = BASE_BRICK_WIDTH + brickWidthVariation;
-
-
-                    // --- Skip drawing the target brick if animation started ---
-                    if (!isTargetBrick) {
-                         // Base brick color (reddish-brown)
-                        let baseR = 160; let baseG = 70; let baseB = 45;
-                        // Vary color components based on noise
-                        let r = constrain(baseR + map(noiseVal, 0, 1, -30, 30), 50, 200);
-                        let g = constrain(baseG + map(noiseVal, 0, 1, -20, 20), 30, 120);
-                        let b = constrain(baseB + map(noiseVal, 0, 1, -15, 15), 20, 90);
-                        fill(r, g, b);
-                        rect(x, y, currentBrickWidth, BRICK_HEIGHT, 2);
+                    if (animationTriggered && isTargetNode) {
+                        // Skip drawing the original target node if animation has started,
+                        // as drawActivatedNode will handle it.
+                        continue;
                     }
-
-                    // Increment x for next brick AFTER potential drawing
-                     x += currentBrickWidth + MORTAR;
+                    
+                    let currentNoiseVal = noise(
+                        (x + noiseSeedX) * 0.05, (y + noiseSeedY) * 0.05
+                    );
+                    
+                    let baseCol = lerpColor(
+                        color(NODE_BASE_COLOR_DARK[0], NODE_BASE_COLOR_DARK[1], NODE_BASE_COLOR_DARK[2]),
+                        color(NODE_BASE_COLOR_LIGHT[0], NODE_BASE_COLOR_LIGHT[1], NODE_BASE_COLOR_LIGHT[2]),
+                        currentNoiseVal
+                    );
+                    fill(baseCol);
+                    noStroke();
+                    ellipse(x + NODE_DIAMETER / 2, y + NODE_DIAMETER / 2, NODE_DIAMETER, NODE_DIAMETER);
                 }
             }
         }
 
-        function drawPoppingBrick(brick, progress) {
-            // Calculate position offset based on progress
-            // Simple outward pop: move slightly diagonally and maybe scale up?
-            let popX = brick.x + (POP_DISTANCE * progress * 0.7); // Move more horizontally
-            let popY = brick.y + (POP_DISTANCE * progress * 0.3); // Move less vertically
-            let scaleFactor = 1 + (progress * 0.05); // Slightly enlarge
+        function drawActivatedNode(node, progress) {
+            activatedNodePulse += 0.05; // For pulsing color/size
 
-             // Use stored noiseVal for consistent color
-             let baseR = 160; let baseG = 70; let baseB = 45;
-             let r = constrain(baseR + map(brick.noiseVal, 0, 1, -30, 30), 50, 200);
-             let g = constrain(baseG + map(brick.noiseVal, 0, 1, -20, 20), 30, 120);
-             let b = constrain(baseB + map(brick.noiseVal, 0, 1, -15, 15), 20, 90);
+            let currentScale = 1 + (ACTIVATION_SCALE_TARGET - 1) * easeOutCubic(progress);
+            let diameter = node.diameter * currentScale;
 
-             // Make it slightly lighter as it pops?
-             let lightenFactor = progress * 50;
-             fill(r + lightenFactor, g + lightenFactor, b + lightenFactor);
-
-            // Draw the brick
-            push(); // Isolate transformations
-            translate(popX + brick.w / 2, popY + brick.h / 2); // Move origin to center for scaling
-            scale(scaleFactor);
-            rect(-brick.w / 2, -brick.h / 2, brick.w, brick.h, 2); // Draw centered
-            pop(); // Restore previous drawing state
-        }
-
-        function drawCoconut(cx, cy) {
-            // Pulsating effect
-            coconutPulse += 0.05;
-            let pulseSize = sin(coconutPulse) * 1.5; // Small size oscillation
-            let pulseColorShift = sin(coconutPulse + PI/4) * 10; // Subtle color shift
-
-            fill(
-                constrain(COCONUT_COLOR[0] + pulseColorShift, 50, 150),
-                constrain(COCONUT_COLOR[1] + pulseColorShift, 30, 100),
-                constrain(COCONUT_COLOR[2], 20, 70) // Keep brown base
+            // Pulsing color for the activated node
+            let pulseColorFactor = (sin(activatedNodePulse) + 1) / 2; // 0 to 1
+            let activeColor = lerpColor(
+                color(ACTIVATED_NODE_COLOR_START[0], ACTIVATED_NODE_COLOR_START[1], ACTIVATED_NODE_COLOR_START[2]),
+                color(ACTIVATED_NODE_COLOR_END[0], ACTIVATED_NODE_COLOR_END[1], ACTIVATED_NODE_COLOR_END[2]),
+                pulseColorFactor
             );
+            
+            // Glow effect
+            let glowSize = diameter * 1.5;
+            let glowAlpha = 100 * easeOutCubic(progress) * (0.6 + pulseColorFactor * 0.4) ; // Make glow pulse slightly
+            fill(red(activeColor), green(activeColor), blue(activeColor), glowAlpha);
             noStroke();
-            ellipse(cx, cy, BRICK_HEIGHT * 0.9 + pulseSize, BRICK_HEIGHT * 0.9 + pulseSize); // Fits nicely in the hole
+            ellipse(node.centerX, node.centerY, glowSize, glowSize);
 
-             // Add 3 little dots?
-             fill(40, 20, 10); // Darker brown
-             ellipse(cx - 5, cy - 5, 3, 3);
-             ellipse(cx + 3, cy - 6, 3, 3);
-             ellipse(cx , cy + 6, 4, 4);
+            // Main activated node
+            fill(activeColor);
+            noStroke();
+            ellipse(node.centerX, node.centerY, diameter, diameter);
 
+            // Optional: Text inside the node
+            if (progress >= 0.9) { // Show text when almost fully activated
+                fill(0, 50, 80, 200 * easeOutCubic(progress)); // Dark text
+                textSize(diameter * 0.4);
+                textStyle(BOLD);
+                text("AI", node.centerX, node.centerY);
+                textStyle(NORMAL);
+            }
+        }
+        
+        function easeOutCubic(t) {
+            return (--t) * t * t + 1;
         }
 
-        function manageWaves(cx, cy) {
-            // Spawn new waves occasionally
-            if (frameCount % 20 === 0) { // Every 20 frames
-                waves.push({ x: cx, y: cy, radius: 0, opacity: WAVE_COLOR[3] });
+        function managePulses(cx, cy) {
+            if (frameCount % 30 === 0) { // Spawn new pulse less frequently
+                pulses.push({ x: cx, y: cy, radius: 0, opacity: PULSE_COLOR[3] });
             }
 
-            // Update and draw existing waves
             noFill();
-            strokeWeight(1.5);
-            for (let i = waves.length - 1; i >= 0; i--) {
-                let wave = waves[i];
-                wave.radius += WAVE_SPEED;
-                wave.opacity -= WAVE_FADE_SPEED;
+            strokeWeight(2);
+            for (let i = pulses.length - 1; i >= 0; i--) {
+                let pulse = pulses[i];
+                pulse.radius += PULSE_SPEED * (1 + pulse.radius * 0.005); // Accelerate slightly as it expands
+                pulse.opacity -= PULSE_FADE_SPEED;
 
-                if (wave.opacity <= 0 || wave.radius > WAVE_MAX_RADIUS) {
-                    waves.splice(i, 1); // Remove faded/large waves
+                if (pulse.opacity <= 0 || pulse.radius > PULSE_MAX_RADIUS) {
+                    pulses.splice(i, 1);
                 } else {
-                    stroke(WAVE_COLOR[0], WAVE_COLOR[1], WAVE_COLOR[2], wave.opacity);
-                    ellipse(wave.x, wave.y, wave.radius * 2, wave.radius * 2); // Diameter
+                    stroke(PULSE_COLOR[0], PULSE_COLOR[1], PULSE_COLOR[2], pulse.opacity);
+                    ellipse(pulse.x, pulse.y, pulse.radius * 2, pulse.radius * 2);
                 }
             }
-             strokeWeight(1); // Reset stroke weight
-             noStroke();
+            strokeWeight(1);
+            noStroke();
         }
-
-         function drawSign() {
-             // Draw the sign (ensure it appears correctly relative to popping brick)
-             let signX = width * 0.4;
-             let signY = height * 0.4;
-             let signW = width * 0.2;
-             let signH = 40;
-
-             // Check if the popping brick overlaps the sign significantly
-             let poppingBrickApparentY = targetBrick ? targetBrick.y + (POP_DISTANCE * popProgress * 0.3) : -1;
-             let signUnderneath = animationTriggered && popProgress > 0 &&
-                                  poppingBrickApparentY + targetBrick.h > signY && // bottom of brick below top of sign
-                                  poppingBrickApparentY < signY + signH && // top of brick above bottom of sign
-                                  targetBrick.x < signX + signW && targetBrick.x + targetBrick.w > signX; // horizontal overlap
-
-             if (!signUnderneath) { // Only draw sign if brick isn't popping 'over' it
-                 fill(255, 255, 255, 200); // Semi-transparent white background
-                 noStroke();
-                 rect(signX, signY, signW, signH, 5);
-                 fill(50, 50, 50); // Dark text
-                 textSize(min(24, width * 0.03)); // Responsive text size
-                 textStyle(BOLD);
-                 text("PRIVATE", signX + signW / 2, signY + signH / 2);
-                 textStyle(NORMAL); // Reset text style
-             }
-         }
-
 
         function windowResized() {
             let canvasContainer = document.getElementById('canvas-container');
-            let canvasWidth = min(windowWidth * 0.95, 1200);
-            let canvasHeight = windowHeight * 0.7;
-            resizeCanvas(canvasWidth, canvasHeight);
-             // Recalculate target brick position based on new dimensions
-             targetBrick = calculateBrickInfo(targetBrick.row, targetBrick.col); // Use stored row/col
-             // Note: Animation state might reset visually on resize, which is acceptable here.
+            let newCanvasWidth = min(windowWidth * 0.9, 1000);
+            let newCanvasHeight = windowHeight * 0.6;
+            resizeCanvas(newCanvasWidth, newCanvasHeight);
+
+            // Recalculate target node position (important if its row/col were relative to canvas size)
+            if (targetNode) { // Ensure targetNode was initialized
+                 let numRows = floor((height * (1 - GRID_START_Y_FACTOR)) / (NODE_DIAMETER + NODE_SPACING));
+                 let numCols = floor(width / (NODE_DIAMETER + NODE_SPACING));
+                 let targetRow = floor(numRows * 0.5); // Keep it centered
+                 let targetCol = floor(numCols * 0.5);
+                 targetNode = calculateNodeInfo(targetRow, targetCol);
+            }
+            // Reset animation state for simplicity on resize, or implement more complex state preservation
+            animationTriggered = false;
+            activationProgress = 0;
+            showActivatedCore = false;
+            pulses = [];
+            let promptP = document.getElementById('interaction-prompt');
+            if (promptP) promptP.textContent = "Interact with the network to witness the core.";
         }
 
     </script>
