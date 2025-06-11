@@ -20,19 +20,329 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        :root {
+            --primary-blue: #2563eb;
+            --primary-blue-dark: #1d4ed8;
+            --primary-blue-light: #3b82f6;
+            --accent-red: #dc2626;
+            --accent-red-dark: #b91c1c;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --text-muted: #6b7280;
+            --bg-subtle: #f8fafc;
+            --border-light: #e5e7eb;
+            --shadow-subtle: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-large: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        
+        * {
+            scroll-behavior: smooth;
+        }
+        
         body {
-            font-family: 'Inter', sans-serif;
-            @apply bg-gray-100 text-gray-800 antialiased;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            color: #111827;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+            line-height: 1.6;
         }
+        
+        /* Typography Enhancements */
+        .prose {
+            text-align: justify;
+            text-justify: inter-word;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+        }
+        
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+        
+        .prose-center {
+            text-align: center;
+        }
+        
+        /* Enhanced Button Styles */
         .button {
-            @apply bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform transform hover:scale-105 duration-300 inline-block;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-medium);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+            transform: translateY(0);
         }
+        
+        .button:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+            box-shadow: var(--shadow-large);
+            transform: translateY(-1px) scale(1.02);
+        }
+        
+        .button:active {
+            transform: translateY(0) scale(0.98);
+        }
+        
+        .button:focus {
+            outline: none;
+            box-shadow: var(--shadow-large), 0 0 0 4px rgba(37, 99, 235, 0.2);
+        }
+        
+        .article-link {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-medium);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+            transform: translateY(0);
+            margin-top: 1rem;
+        }
+        
+        .article-link:hover {
+            background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+            box-shadow: var(--shadow-large);
+            transform: translateY(-1px) scale(1.02);
+        }
+        
+        .article-link:active {
+            transform: translateY(0) scale(0.98);
+        }
+        
+        .article-link:focus {
+            outline: none;
+            box-shadow: var(--shadow-large), 0 0 0 4px rgba(220, 38, 38, 0.2);
+        }
+        
+        /* Enhanced Separators */
         .separator {
-            @apply border-t-2 border-gray-200 my-10;
+            position: relative;
+            margin: 4rem 0;
+            height: 1px;
         }
+        
+        .separator::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent 0%, #d1d5db 50%, transparent 100%);
+            height: 1px;
+        }
+        
+        /* Enhanced Callouts */
         .callout {
-            @apply bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 p-4 rounded-r-lg mt-6;
+            background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+            border-left: 4px solid #f59e0b;
+            color: #92400e;
+            padding: 1.5rem 2rem;
+            border-radius: 0 1rem 1rem 0;
+            box-shadow: var(--shadow-subtle);
+            margin-top: 1.5rem;
+        }
+        
+        .callout h4 {
+            color: #78350f;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+        }
+        
+        /* Featured Article Box */
+        .featured-article {
+            background: linear-gradient(135deg, #fef2f2 0%, #fce7e6 100%);
+            border: 1px solid #fca5a5;
+            padding: 1.5rem 2rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-medium);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .featured-article::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(239, 68, 68, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.05) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        /* Professional Card Styling */
+        .main-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-large);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+            border-radius: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .main-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        /* Enhanced Section Styling */
+        .section-card {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .section-card::before {
+            content: '';
+            position: absolute;
+            inset: -1rem;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
+            border-radius: 1.5rem;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .section-card:hover::before {
+            opacity: 1;
+        }
+        
+        /* Image Enhancements */
+        .enhanced-image {
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-medium);
+            transition: all 0.3s ease;
+            filter: brightness(1.05) contrast(1.05);
+        }
+        
+        .enhanced-image:hover {
+            box-shadow: var(--shadow-large);
+            transform: scale(1.02);
+        }
+        
+        /* Typography Scale */
+        .heading-primary {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #111827 0%, #1e40af 50%, #111827 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+        }
+        
+        .heading-secondary {
+            font-size: clamp(1.875rem, 5vw, 3rem);
+            font-weight: 700;
+            color: #111827;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        
+        .text-large {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            line-height: 1.75;
+        }
+        
+        /* Professional Link Styling */
+        .link-professional {
+            color: #2563eb;
+            font-weight: 500;
+            text-decoration: underline;
+            text-decoration-color: #93c5fd;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+        
+        .link-professional:hover {
+            color: #1d4ed8;
+            text-decoration-color: #3b82f6;
+        }
+        
+        /* Responsive Improvements */
+        @media (max-width: 640px) {
+            .prose {
+                text-align: left;
+            }
+            
+            .separator {
+                margin: 2rem 0;
+            }
+            
+            .callout {
+                padding: 1rem 1.5rem;
+            }
+            
+            .featured-article {
+                padding: 1rem 1.5rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .separator {
+                margin: 5rem 0;
+            }
+        }
+        
+        /* Subtle Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        /* Print Styles */
+        @media print {
+            .main-card {
+                box-shadow: none;
+                border: 1px solid #d1d5db;
+            }
+            
+            .button, .article-link {
+                background: #374151 !important;
+                color: white !important;
+            }
         }
     </style>
 
@@ -94,25 +404,25 @@
     }
     </script>
 </head>
-<body class="flex flex-col items-center p-4 sm:p-6 md:p-8">
-    <div class="max-w-4xl w-full bg-white shadow-2xl rounded-xl p-8 md:p-12">
+<body class="flex flex-col items-center p-4 sm:p-6 md:p-8 lg:p-12">
+    <div class="max-w-4xl w-full main-card p-6 sm:p-8 md:p-12 lg:p-16">
 
         <!-- Header Section -->
-        <header class="text-center mb-10">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">
+        <header class="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <h1 class="heading-primary mb-3 md:mb-4">
                 Paul E. Lowndes
             </h1>
-            <p class="text-xl md:text-2xl font-semibold text-blue-700">
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold text-blue-700 mb-2">
                 Oahu, Hawaii
             </p>
-            <p class="text-lg text-gray-600 mt-4">
+            <p class="text-large text-gray-600 mt-4 md:mt-6">
                 Bridging Advanced Technology and Public Truth
             </p>
         </header>
 
         <!-- Unified Introduction -->
-        <section id="about" class="text-lg text-gray-700 leading-relaxed mb-10">
-            <p>
+        <section id="about" class="prose prose-center text-large text-gray-700 mb-12 md:mb-16 px-2 md:px-4">
+            <p class="max-w-3xl mx-auto">
                 Welcome. This is the central hub for my work, which operates at the intersection of two distinct but complementary fields. I am driven by a passion for building intelligent systems that solve complex problems and a steadfast commitment to upholding transparency and accountability within our community. Here, you will find information on both my professional <strong>AI Engineering Consultancy</strong> and my initiative in <strong>Investigative Journalism</strong>.
             </p>
         </section>
@@ -121,29 +431,36 @@
 
         <!-- AI Engineering Consultancy Section -->
         <!-- AI: Section Start - AI Engineering Consultancy -->
-        <section id="ai-consultancy" class="scroll-mt-20">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        <section id="ai-consultancy" class="scroll-mt-20 mb-12 md:mb-16 section-card">
+            <div class="text-center mb-8 md:mb-12">
+                <h2 class="heading-secondary mb-4 md:mb-6">
                     AI Engineering Consultancy
                 </h2>
-                <p class="text-lg text-gray-600 mb-6">Innovative Solutions. Tangible Results.</p>
+                <p class="text-large text-gray-600 mb-6 md:mb-8">Innovative Solutions. Tangible Results.</p>
             </div>
-            <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 px-2 md:px-4">
                 <div class="md:w-1/3">
-                    <img src="./gtcode_aloha.jpg" alt="A symbolic image for AI Consultancy in Hawaii" class="rounded-lg shadow-lg w-full">
+                    <img src="./gtcode_aloha.jpg" alt="A symbolic image for AI Consultancy in Hawaii" class="enhanced-image w-full">
                 </div>
                 <div class="md:w-2/3">
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        As an AI Engineer, I specialize in designing and deploying bespoke artificial intelligence solutions. My consultancy, <strong>GTCode</strong>, helps organizations harness the power of machine learning, data science, and automation to drive growth, efficiency, and innovation. My approach is grounded in creating robust, ethical, and scalable systems tailored to your unique challenges.
-                    </p>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Core Services Include:</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                    <div class="prose">
+                        <p class="text-large text-gray-700 mb-6 md:mb-8">
+                            As an AI Engineer, I specialize in designing and deploying bespoke artificial intelligence solutions. My consultancy, <strong>GTCode</strong>, helps organizations harness the power of machine learning, data science, and automation to drive growth, efficiency, and innovation. My approach is grounded in creating robust, ethical, and scalable systems tailored to your unique challenges.
+                        </p>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 md:mb-6">Core Services Include:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 md:space-y-4 mb-6 md:mb-8 text-base md:text-lg prose">
                         <li><strong>Custom AI/ML Model Development:</strong> Building predictive models and intelligent systems from the ground up.</li>
                         <li><strong>AI Strategy & Integration:</strong> Advising on how to effectively implement AI into your existing operations.</li>
                         <li><strong>Data Pipeline Architecture:</strong> Creating efficient and reliable systems for data ingestion, processing, and analysis.</li>
                         <li><strong>Natural Language Processing (NLP):</strong> Developing solutions for text analysis, chatbots, and information extraction.</li>
                     </ul>
-                    <a href="mailto:inquire@gtcode.com" class="button">Inquire About AI Services</a>
+                    <a href="mailto:inquire@gtcode.com" class="button">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Inquire About AI Services
+                    </a>
                 </div>
             </div>
         </section>
@@ -153,28 +470,45 @@
 
         <!-- Investigative Journalism Section -->
         <!-- AI: Section Start - Investigative Journalism -->
-        <section id="investigative-journalism" class="scroll-mt-20">
-             <div class="text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        <section id="investigative-journalism" class="scroll-mt-20 mb-12 md:mb-16 section-card">
+             <div class="text-center mb-8 md:mb-12">
+                <h2 class="heading-secondary mb-4 md:mb-6">
                     Investigative Journalism Initiative
                 </h2>
-                <p class="text-lg text-gray-600 mb-6">Seeking Accountability for a Stronger Community.</p>
+                <p class="text-large text-gray-600 mb-6 md:mb-8">Seeking Accountability for a Stronger Community.</p>
             </div>
-            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 px-2 md:px-4">
                 <div class="md:w-1/3">
-                    <img src="./gtcode_mahalo.jpg" alt="A symbolic image for community and transparency in Hawaii" class="rounded-lg shadow-lg w-full">
+                    <img src="./gtcode_mahalo.jpg" alt="A symbolic image for community and transparency in Hawaii" class="enhanced-image w-full">
                 </div>
                 <div class="md:w-2/3">
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        This site also serves as a portal for my ongoing work in investigative journalism, with a specific focus on <em>exposing local corruption and abuses of power within Oahu, Hawaii</em>. A well-informed public is the cornerstone of a healthy democracy. My mission is to uncover facts, provide a voice for the voiceless, and hold those in power accountable to the community they serve.
-                    </p>
-                    <div class="callout" role="alert">
-                        <h4 class="font-bold mb-2">Secure Contact Protocol</h4>
-                        <p>If you have sensitive information related to public interest matters, your security and anonymity are paramount.
-                        <br><br>
-                        <strong>To initiate contact:</strong> Send a general, non-detailed inquiry via email. <strong>DO NOT</strong> send sensitive files, documents, or specifics in your first message. We can then establish a secure channel for communication (such as Signal or PGP-encrypted email).
+                    <div class="prose">
+                        <p class="text-large text-gray-700 mb-6 md:mb-8">
+                            This site also serves as a portal for my ongoing work in investigative journalism, with a specific focus on <em>exposing local corruption and abuses of power within Oahu, Hawaii</em>. A well-informed public is the cornerstone of a healthy democracy. My mission is to uncover facts, provide a voice for the voiceless, and hold those in power accountable to the community they serve.
                         </p>
-                        <p class="mt-4"><strong>Contact:</strong> <a href="mailto:tips@gtcode.com" class="font-semibold hover:underline">tips@gtcode.com</a></p>
+                    </div>
+                    
+                    <!-- Featured Article -->
+                    <div class="featured-article">
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg md:text-xl">Featured Investigation</h4>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            <strong>Hawai'i's Hidden Hand: Is Justice Blind in the Aloha State?</strong> - An investigative report examining alleged judicial misconduct, perjury, and potential conspiracy within Hawaii's legal system.
+                        </p>
+                        <a href="./WilsonLoo_RutgersGraduate_HonoluluJudge.html" class="article-link">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                            Read Full Investigation
+                        </a>
+                    </div>
+                    
+                    <div class="callout" role="alert">
+                        <h4 class="text-lg md:text-xl">🔐 Secure Contact Protocol</h4>
+                        <div class="prose">
+                            <p>If you have sensitive information related to public interest matters, your security and anonymity are paramount.</p>
+                            <p><strong>To initiate contact:</strong> Send a general, non-detailed inquiry via email. <strong>DO NOT</strong> send sensitive files, documents, or specifics in your first message. We can then establish a secure channel for communication (such as Signal or PGP-encrypted email).</p>
+                        </div>
+                        <p class="mt-4"><strong>Contact:</strong> <a href="mailto:tips@gtcode.com" class="link-professional">tips@gtcode.com</a></p>
                     </div>
                 </div>
             </div>
@@ -184,10 +518,13 @@
         <div class="separator"></div>
 
         <!-- Footer Section -->
-        <footer id="contact" class="text-center text-gray-600 text-sm">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-            <p class="mb-2">For professional AI inquiries or to discuss a sensitive matter of public interest, please use the contact methods provided in the respective sections above.</p>
-            <p class="mt-4">© 2025 Paul E. Lowndes. All rights reserved.</p>
+        <footer id="contact" class="text-center text-gray-600 pt-8 md:pt-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">Get In Touch</h2>
+            <div class="prose prose-center max-w-2xl mx-auto">
+                <p class="mb-4 md:mb-6">For professional AI inquiries or to discuss a sensitive matter of public interest, please use the contact methods provided in the respective sections above.</p>
+            </div>
+            <div class="separator"></div>
+            <p class="text-xs md:text-sm text-gray-500">© 2025 Paul E. Lowndes. All rights reserved.</p>
         </footer>
     </div>
 </body>
