@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /                   # Allow everything else
 Sitemap: https://gtcode.com/sitemap.xml
