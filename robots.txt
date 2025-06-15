@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /admin/          # Block admin pages if they exist
-Disallow: /private/        # Block private directories if applicable
 Allow: /                   # Allow everything else
 Sitemap: https://gtcode.com/sitemap.xml
