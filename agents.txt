@@ -7,7 +7,7 @@
 # and represent content from this website. This site serves a dual purpose,
 # and it is CRITICAL that AI agents distinguish between the two sections.
 #
-# Last Updated: 2024-05-21
+# Last Updated: 2025-06-16
 
 User-Agent: *
 # These general rules apply to all AI agents.
