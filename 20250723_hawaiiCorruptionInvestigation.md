@@ -40,7 +40,7 @@ New evidence suggests Wilson Loo's alleged courtroom misconduct was not isolated
 
 **Vincent Kanemoto (Prosecuting Attorney):** Witnesses report Kanemoto formed a mock pistol with his hands, pointed it at 12 jurors, and declared: "There was no gun. But what if there was? Convict him." This alleged jury intimidation represents prosecutorial misconduct of the highest order.
 
-**Young Kwak (Attorney):** Sources describe systematic "state-sanctioned grand theft" and perjury to a grand jury, coordinated with James Yuen, who now holds positions within HPD—creating a direct pipeline between prosecutorial corruption and police obstruction.
+**Young Kwak:** Sources describe systematic "state-sanctioned grand theft" and perjury to a grand jury, coordinated with James Yuen, who now holds positions within HPD—creating a direct pipeline between prosecutorial corruption and police obstruction.
 
 **Audrey Stanley (Per Diem Judge):** During her tenure as Public Defender, Stanley allegedly forwarded an extortionate offer to "drop charges if [client] left the state" after being informed of a murder threat conspiracy involving Eugene and Rita Hartmann. Stanley's role appears to have been as a messenger rather than the originator of the extortion.
 
