@@ -28,9 +28,10 @@ The system must intelligently select which conflicts to focus on. A disagreement
 ### Metric 1: Chirality Score
 
 > **From the Paper (Section 3.2):**
-> $$
-> \text{CScore}(SNO_i, SNO_j) = (1 - H_i \cdot H_j) \cdot (T_i \cdot T_j)
-> $$
+
+$$
+\text{CScore}(SNO_i, SNO_j) = (1 - H_i \cdot H_j) \cdot (T_i \cdot T_j)
+$$
 
 #### Formula Breakdown: `CScore`
 This formula elegantly combines two ideas: semantic opposition and established trust.
