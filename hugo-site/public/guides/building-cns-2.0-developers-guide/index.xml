@@ -49,5 +49,12 @@
       <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/</guid>
       <description>&lt;div class=&#34;guide-header&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/&#34; class=&#34;home-link&#34;&gt;← Back to GTCode.com Homepage&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;chapter-6-complete-implementation&#34;&gt;Chapter 6: Complete Implementation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;bringing-it-all-together&#34;&gt;Bringing It All Together&lt;/h2&gt;&#xA;&lt;p&gt;This chapter builds upon the functional critic and exploration primitives developed in Chapters 3 and 4 to create a fully integrated, end-to-end system. We&amp;rsquo;ve built the foundational components of CNS 2.0: Structured Narrative Objects, the Multi-Component Critic Pipeline, the Generative Synthesis Engine, and system integration framework. Now it&amp;rsquo;s time to complete the implementation with full synthesis capabilities and prepare the system for production deployment.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/</guid>
+      <description>&lt;p&gt;Of course. This is a fantastic idea and the perfect next step for the guide. Moving from a system with hardcoded prompts to one that can be programmatically optimized with DSPy is a huge leap in sophistication and robustness.&lt;/p&gt;&#xA;&lt;p&gt;Here is the complete &lt;code&gt;chapter-7-dspy-optimization.md&lt;/code&gt; file, written in the same style as the previous chapters. I&amp;rsquo;ve also included the necessary update for the chapter summary layout.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1-new-chapter-file&#34;&gt;1. New Chapter File&lt;/h3&gt;&#xA;&lt;p&gt;First, create a new file named &lt;code&gt;chapter-7-dspy-optimization.md&lt;/code&gt; in your &lt;code&gt;content/guides/building-cns-2-0-developers-guide/&lt;/code&gt; directory.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

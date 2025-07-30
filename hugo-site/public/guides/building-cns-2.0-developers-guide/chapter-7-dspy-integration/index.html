@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter 7: Advanced Optimization with DSPy | Building CNS 2.0: A Developer&#39;s Guide</title>
+    <meta name="description" content="Evolving CNS 2.0 from prompt engineering to programmatic optimization using DSPy">
+    <meta name="author" content="CNS Development Team">
+    
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    
+    <link rel="stylesheet" href="/css/style.css?v=1753847429">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    
+
+
+
+
+    
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        
+        <header class="site-header">
+            <div class="container">
+                <nav class="main-nav">
+                    <div class="nav-brand">
+                        <a href="/guides/building-cns-2.0-developers-guide/" class="brand-link">
+                            <span class="brand-icon">🧠</span>
+                            <span class="brand-text">Building CNS 2.0: A Developer&#39;s Guide</span>
+                        </a>
+                    </div>
+                    
+                    <div class="nav-menu">
+                        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                            <i data-feather="menu"></i>
+                        </button>
+                        
+                        <ul class="nav-list">
+                            
+                                <li class="nav-item">
+                                    <a href="/guides/building-cns-2.0-developers-guide/chapter-1-introduction/" class="nav-link ">
+                                        Introduction
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/" class="nav-link ">
+                                        SNO Foundations
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/" class="nav-link ">
+                                        Critic Pipeline
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/" class="nav-link ">
+                                        Synthesis Engine
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/" class="nav-link ">
+                                        System Integration
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/" class="nav-link ">
+                                        Complete Implementation
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/" class="nav-link ">
+                                        DSPy Integration
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        
+        <main class="site-main">
+            <div class="container">
+                
+<article class="content-article">
+    
+    <header class="article-header">
+        <div class="article-meta">
+            <span class="article-weight">Chapter 7</span>
+            <span class="article-separator">•</span>
+            <time class="article-date">July 29, 2025</time>
+        </div>
+        
+        <h1 class="article-title">Chapter 7: Advanced Optimization with DSPy</h1>
+        
+        
+        <p class="article-description">Evolving CNS 2.0 from prompt engineering to programmatic optimization using DSPy</p>
+        
+        
+        
+        <div class="progress-indicator">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 116.69000000000001%"></div>
+            </div>
+            <span class="progress-text">7/7 chapters completed</span>
+        </div>
+    </header>
+
+    
+    <aside class="article-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#from-prompt-engineering-to-programmatic-optimization">From Prompt Engineering to Programmatic Optimization</a></li>
+    <li><a href="#introducing-dspy-a-framework-for-programming-llms">Introducing DSPy: A Framework for Programming LLMs</a>
+      <ul>
+        <li><a href="#from-paper-to-code-tackling-the-research-challenge">From Paper to Code: Tackling the Research Challenge</a></li>
+      </ul>
+    </li>
+    <li><a href="#refactoring-ingestion-with-dspy">Refactoring Ingestion with DSPy</a></li>
+    <li><a href="#integrating-the-dspy-module-into-cns-20">Integrating the DSPy Module into CNS 2.0</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        </nav>
+    </aside>
+
+    
+    <div class="article-content">
+        <div class="guide-header">
+    <a href="/" class="home-link">← Back to GTCode.com Homepage</a>
+</div>
+<h1 id="chapter-7-advanced-optimization-with-dspy">Chapter 7: Advanced Optimization with DSPy</h1>
+<h2 id="from-prompt-engineering-to-programmatic-optimization">From Prompt Engineering to Programmatic Optimization</h2>
+<p>Throughout this guide, we have successfully built a functional CNS 2.0 system based on the research paper&rsquo;s blueprint. Our <code>AdvancedSynthesisEngine</code> and <code>NarrativeIngestionPipeline</code> rely on carefully hand-crafted prompts to instruct Large Language Models (LLMs). This approach, known as &ldquo;prompt engineering,&rdquo; has several critical weaknesses in a production system:</p>
+<ul>
+<li><strong>Brittleness:</strong> Prompts that work well for one model (e.g., GPT-4) may perform poorly or fail entirely on another (e.g., Llama 3) or even on a future version of the same model.</li>
+<li><strong>Poor Composability:</strong> Chaining multiple prompt-driven steps together is complex, and errors in one step can cascade unpredictably.</li>
+<li><strong>Difficult Optimization:</strong> Improving the system requires a manual, trial-and-error process of tweaking prompts, which is inefficient and not scalable.</li>
+</ul>
+<p>To elevate our CNS 2.0 implementation from a prototype to a robust, self-optimizing system, we need to move from <em>prompting</em> to <em>programming</em>. This is where <strong>DSPy</strong> comes in.</p>
+<h2 id="introducing-dspy-a-framework-for-programming-llms">Introducing DSPy: A Framework for Programming LLMs</h2>
+<p>DSPy is a framework from Stanford NLP that provides a systematic way to build and optimize complex systems that use LLMs. It asks us to define the <em>logic</em> of our program (the steps it should take) and the <em>metric</em> we want to maximize, and it then automatically finds the best prompts, few-shot examples, and even model weights to achieve that goal.</p>
+<p>The core components of DSPy are:</p>
+<ol>
+<li><strong>Signatures:</strong> These are declarative specifications that define the input and output fields for an LLM task (e.g., <code>document -&gt; summary, claims</code>).</li>
+<li><strong>Modules:</strong> These are the building blocks of a DSPy program, like <code>dspy.ChainOfThought</code> or <code>dspy.Predict</code>, which use signatures to call LLMs.</li>
+<li><strong>Optimizers (Compilers):</strong> These are algorithms that tune the modules (by generating effective prompts and few-shot examples) to maximize a given performance metric on your data.</li>
+</ol>
+<h3 id="from-paper-to-code-tackling-the-research-challenge">From Paper to Code: Tackling the Research Challenge</h3>
+<p>The CNS 2.0 paper explicitly identifies the <strong>Narrative Ingestion Pipeline</strong> as a &ldquo;major research challenge&rdquo; (Section 3.1). Our heuristic-based implementation in Chapter 5 was a functional placeholder. DSPy provides the exact framework needed to tackle this research challenge head-on.</p>
+<p>Instead of manually trying to find the perfect prompt to extract a hypothesis and claims from a document, we can define what a &ldquo;good&rdquo; extraction looks like with a metric and let a DSPy optimizer do the hard work for us.</p>
+<p>Let&rsquo;s refactor our <code>NarrativeIngestionPipeline</code> to use DSPy.</p>
+<h2 id="refactoring-ingestion-with-dspy">Refactoring Ingestion with DSPy</h2>
+<p>Our goal is to replace the fragile heuristic-based methods (<code>_extract_central_hypothesis</code>, <code>_construct_reasoning_graph</code>) with a single, optimizable DSPy module.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Chapter 7: Optimizing Narrative Ingestion with DSPy
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">===================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Refactoring the CNS 2.0 Ingestion Pipeline for robustness and performance.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> dspy
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel, Field
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> List
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- 1. Configure DSPy ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This sets up the language model we&#39;ll use.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You would replace this with your actual model provider (e.g., OpenAI, Anthropic, or a local model).</span>
+</span></span><span style="display:flex;"><span>turbo <span style="color:#f92672">=</span> dspy<span style="color:#f92672">.</span>OpenAI(model<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gpt-3.5-turbo-1106&#39;</span>, max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>dspy<span style="color:#f92672">.</span>settings<span style="color:#f92672">.</span>configure(lm<span style="color:#f92672">=</span>turbo)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- 2. Define Structured Output with Pydantic ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># We define the structure of a single extracted claim. This ensures the LLM</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># returns data in a clean, predictable format.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExtractedClaim</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    claim_id: str <span style="color:#f92672">=</span> Field(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;A unique identifier for the claim, e.g., &#39;claim_1&#39;&#34;</span>)
+</span></span><span style="display:flex;"><span>    content: str <span style="color:#f92672">=</span> Field(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The text content of the claim.&#34;</span>)
+</span></span><span style="display:flex;"><span>    claim_type: str <span style="color:#f92672">=</span> Field(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The type of claim, e.g., &#39;premise&#39;, &#39;conclusion&#39;.&#34;</span>)
+</span></span><span style="display:flex;"><span>    relationships: List[str] <span style="color:#f92672">=</span> Field(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;List of claim_ids this claim supports or contradicts.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- 3. Define the DSPy Signature ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The signature is the most important part. It tells DSPy what transformation</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># we want the LLM to perform: from an unstructured document to a structured</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># set of claims and a central hypothesis.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DocumentToSNO</span>(dspy<span style="color:#f92672">.</span>Signature):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Extracts the central hypothesis and a structured list of claims from a document.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    document_text: str <span style="color:#f92672">=</span> dspy<span style="color:#f92672">.</span>InputField(desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The full text of the source document.&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    central_hypothesis: str <span style="color:#f92672">=</span> dspy<span style="color:#f92672">.</span>OutputField(desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;A single, concise sentence summarizing the document&#39;s main argument.&#34;</span>)
+</span></span><span style="display:flex;"><span>    claims: List[ExtractedClaim] <span style="color:#f92672">=</span> dspy<span style="color:#f92672">.</span>OutputField(desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;A structured list of key claims and their relationships from the document.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- 4. Create the DSPy Module ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This module implements the logic of our program. We use ChainOfThought to</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># encourage the LLM to &#34;think step-by-step&#34; before producing the final structured output.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SNOIngestionModule</span>(dspy<span style="color:#f92672">.</span>Module):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>generate_structure <span style="color:#f92672">=</span> dspy<span style="color:#f92672">.</span>ChainOfThought(DocumentToSNO)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(self, document_text):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>generate_structure(document_text<span style="color:#f92672">=</span>document_text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- 5. Create Training Data and an Evaluation Metric ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># To optimize our module, DSPy needs a few examples of &#34;good&#34; inputs and outputs,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># and a metric to measure performance.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">validate_sno_structure</span>(example, pred, trace<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;A simple metric to check if the prediction is valid.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check if the hypothesis is a non-empty string</span>
+</span></span><span style="display:flex;"><span>        is_hypothesis_valid <span style="color:#f92672">=</span> isinstance(pred<span style="color:#f92672">.</span>central_hypothesis, str) <span style="color:#f92672">and</span> len(pred<span style="color:#f92672">.</span>central_hypothesis) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check if claims is a list and contains our Pydantic model</span>
+</span></span><span style="display:flex;"><span>        is_claims_valid <span style="color:#f92672">=</span> isinstance(pred<span style="color:#f92672">.</span>claims, list) <span style="color:#f92672">and</span> len(pred<span style="color:#f92672">.</span>claims) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> isinstance(pred<span style="color:#f92672">.</span>claims[<span style="color:#ae81ff">0</span>], ExtractedClaim)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> is_hypothesis_valid <span style="color:#f92672">and</span> is_claims_valid:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1.0</span> <span style="color:#75715e"># Success</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.0</span> <span style="color:#75715e"># Failure</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.0</span> <span style="color:#75715e"># Failure if any parsing error occurs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a few training examples. In a real project, you&#39;d have dozens or hundreds.</span>
+</span></span><span style="display:flex;"><span>train_examples <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    dspy<span style="color:#f92672">.</span>Example(
+</span></span><span style="display:flex;"><span>        document_text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Our research demonstrates that solar panels are becoming more efficient. This is primarily due to advances in perovskite materials. Consequently, we project a 50</span><span style="color:#e6db74">% r</span><span style="color:#e6db74">eduction in cost per watt by 2030.&#34;</span>,
+</span></span><span style="display:flex;"><span>        central_hypothesis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Advances in perovskite materials are significantly increasing solar panel efficiency and will drive down costs.&#34;</span>,
+</span></span><span style="display:flex;"><span>        claims<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>            ExtractedClaim(claim_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claim_1&#34;</span>, content<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Solar panels are becoming more efficient.&#34;</span>, claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;conclusion&#34;</span>, relationships<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;claim_2&#34;</span>]),
+</span></span><span style="display:flex;"><span>            ExtractedClaim(claim_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claim_2&#34;</span>, content<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;This efficiency is due to advances in perovskite materials.&#34;</span>, claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;premise&#34;</span>, relationships<span style="color:#f92672">=</span>[]),
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>    )<span style="color:#f92672">.</span>with_inputs(<span style="color:#e6db74">&#39;document_text&#39;</span>),
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Add one or two more examples here for better optimization</span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- 6. Optimize (Compile) the Module ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This is the magic of DSPy. The BootstrapFewShot optimizer will generate prompts</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># and few-shot examples from our training data and find the combination that</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># performs best according to our metric.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dspy.teleprompt <span style="color:#f92672">import</span> BootstrapFewShot
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Set up the optimizer</span>
+</span></span><span style="display:flex;"><span>optimizer <span style="color:#f92672">=</span> BootstrapFewShot(metric<span style="color:#f92672">=</span>validate_sno_structure, max_bootstrapped_demos<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compile the module. This runs the optimization process.</span>
+</span></span><span style="display:flex;"><span>optimized_ingestion_module <span style="color:#f92672">=</span> optimizer<span style="color:#f92672">.</span>compile(SNOIngestionModule(), trainset<span style="color:#f92672">=</span>train_examples)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- 7. Use the Optimized Module ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Now we can use our optimized module to process a new document.</span>
+</span></span><span style="display:flex;"><span>new_document <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A study has shown that regular exercise improves cognitive function. The mechanism involves increased blood flow to the brain, which supports neural health. Therefore, public health policies should promote physical activity.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>prediction <span style="color:#f92672">=</span> optimized_ingestion_module(new_document)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Central Hypothesis: </span><span style="color:#e6db74">{</span>prediction<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> claim <span style="color:#f92672">in</span> prediction<span style="color:#f92672">.</span>claims:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Claim (</span><span style="color:#e6db74">{</span>claim<span style="color:#f92672">.</span>claim_id<span style="color:#e6db74">}</span><span style="color:#e6db74">): </span><span style="color:#e6db74">{</span>claim<span style="color:#f92672">.</span>content<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;  - Type: </span><span style="color:#e6db74">{</span>claim<span style="color:#f92672">.</span>claim_type<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;  - Supports: </span><span style="color:#e6db74">{</span>claim<span style="color:#f92672">.</span>relationships<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><h2 id="integrating-the-dspy-module-into-cns-20">Integrating the DSPy Module into CNS 2.0</h2>
+<p>With our new <code>optimized_ingestion_module</code>, we can now dramatically simplify and improve our <code>NarrativeIngestionPipeline</code> from Chapter 5.</p>
+<p><strong>The old pipeline:</strong></p>
+<ul>
+<li>Called <code>_extract_central_hypothesis</code> (heuristics).</li>
+<li>Called <code>_construct_reasoning_graph</code> (heuristics).</li>
+<li>Manually built an SNO from the messy results.</li>
+</ul>
+<p><strong>The new DSPy-powered pipeline:</strong></p>
+<ol>
+<li>Initialize and load the compiled <code>optimized_ingestion_module</code> once.</li>
+<li>In the <code>ingest_document</code> method, make a single call: <code>prediction = self.ingestion_module(document_text)</code>.</li>
+<li>The <code>prediction</code> object will contain a clean, structured <code>central_hypothesis</code> and a list of <code>claims</code> that can be directly used to instantiate a <code>StructuredNarrativeObject</code> and build its reasoning graph.</li>
+</ol>
+<p>This approach is not only cleaner and more reliable but is now <strong>optimizable</strong>. If we find our ingestion is performing poorly on certain types of documents, we simply add more examples to our training set and re-compile the module. The system improves without us having to guess at new prompts.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>By integrating DSPy, we have transformed the most fragile part of our CNS 2.0 system into its most robust and adaptable. We&rsquo;ve moved beyond the static, brittle world of hand-crafted prompts and into a dynamic paradigm of programmatic, metric-driven optimization.</p>
+<p>This same methodology can be applied to other components, particularly the <code>AdvancedSynthesisEngine</code>. A DSPy signature can be created to enforce the generation of a synthesized SNO, and the system&rsquo;s own critic pipeline can serve as the metric for optimization. This completes the vision of the research paper: a truly self-improving system that learns to get better at synthesizing knowledge over time.</p>
+<pre tabindex="0"><code></code></pre>
+    </div>
+
+    
+    <nav class="article-nav">
+        <div class="nav-previous">
+            
+        </div>
+        
+        <div class="nav-next">
+            
+                <a href="/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/" class="nav-link next-link">
+                    <div class="nav-text">
+                        <span class="nav-label">Previous</span>
+                        <span class="nav-title">Chapter 6: Complete Implementation</span>
+                    </div>
+                    <i data-feather="arrow-left"></i>
+                </a>
+            
+        </div>
+    </nav>
+
+    
+    <aside class="chapter-summary">
+        <h3>Chapter Summary</h3>
+        <div class="summary-content">
+            
+                <p>Evolving the CNS 2.0 system from prompt engineering to programmatic optimization using DSPy.</p>
+                <ul>
+                    <li>Refactoring ingestion with DSPy Signatures</li>
+                    <li>Building optimizable DSPy Modules</li>
+                    <li>Metric-driven development and compilation</li>
+                </ul>
+            
+        </div>
+    </aside>
+</article>
+
+            </div>
+        </main>
+
+        
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <p>&copy; 2025 <a href="https://GTCode.com/" class="footer-link">GTCode.com</a>. Educational content for CNS 2.0 implementation.</p>
+                        <p>Based on <a target="_blank" 
+                               rel="noopener noreferrer" href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper. (20250617 Version 3)</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="/js/navigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+    
+    <script>
+        
+        if (window.feather) feather.replace();
+    </script>
+</body>
+</html>

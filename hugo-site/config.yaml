@@ -43,6 +43,9 @@ menu:
     - name: "Complete Implementation"
       url: "/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/"
       weight: 6
+    - name: "DSPy Integration"
+      url: "/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/"
+      weight: 7
 
 server:
   host: '0.0.0.0'
