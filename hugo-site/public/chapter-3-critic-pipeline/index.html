@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=5000&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter 3: Multi-Component Critic Pipeline | Building CNS 2.0: A Developer&#39;s Guide</title>
+    <meta name="description" content="Implementing transparent evaluation systems for grounding, logic, and novelty assessment">
+    <meta name="author" content="CNS Development Team">
+    
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+    
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        
+        <header class="site-header">
+            <div class="container">
+                <nav class="main-nav">
+                    <div class="nav-brand">
+                        <a href="http://localhost:5000/" class="brand-link">
+                            <span class="brand-icon">🧠</span>
+                            <span class="brand-text">Building CNS 2.0: A Developer&#39;s Guide</span>
+                        </a>
+                    </div>
+                    
+                    <div class="nav-menu">
+                        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                            <i data-feather="menu"></i>
+                        </button>
+                        
+                        <ul class="nav-list">
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-1-introduction/" class="nav-link ">
+                                        Introduction
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-2-sno-foundations/" class="nav-link ">
+                                        SNO Foundations
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-3-critic-pipeline/" class="nav-link ">
+                                        Critic Pipeline
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-4-synthesis-engine/" class="nav-link ">
+                                        Synthesis Engine
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-5-system-integration/" class="nav-link ">
+                                        System Integration
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-6-complete-implementation/" class="nav-link ">
+                                        Complete Implementation
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        
+        <main class="site-main">
+            <div class="container">
+                
+<article class="content-article">
+    
+    <header class="article-header">
+        <div class="article-meta">
+            <span class="article-weight">Chapter 3</span>
+            <span class="article-separator">•</span>
+            <time class="article-date">July 29, 2025</time>
+        </div>
+        
+        <h1 class="article-title">Chapter 3: Multi-Component Critic Pipeline</h1>
+        
+        
+        <p class="article-description">Implementing transparent evaluation systems for grounding, logic, and novelty assessment</p>
+        
+        
+        
+        <div class="progress-indicator">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50.010000000000005%"></div>
+            </div>
+            <span class="progress-text">3/6 chapters completed</span>
+        </div>
+    </header>
+
+    
+    <aside class="article-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-problem-with-black-box-evaluation">The Problem with Black-Box Evaluation</a>
+      <ul>
+        <li><a href="#from-paper-to-code-the-mathematical-foundation">From Paper to Code: The Mathematical Foundation</a></li>
+      </ul>
+    </li>
+    <li><a href="#implementing-the-specialized-critics">Implementing the Specialized Critics</a>
+      <ul>
+        <li><a href="#2-logic-critic-implementation">2. Logic Critic Implementation</a></li>
+        <li><a href="#3-novelty-parsimony-critic-implementation">3. Novelty-Parsimony Critic Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </nav>
+    </aside>
+
+    
+    <div class="article-content">
+        <h1 id="chapter-3-multi-component-critic-pipeline">Chapter 3: Multi-Component Critic Pipeline</h1>
+<h2 id="the-problem-with-black-box-evaluation">The Problem with Black-Box Evaluation</h2>
+<p>Traditional knowledge synthesis systems often rely on opaque &ldquo;oracle&rdquo; critics that provide scores without explanation. CNS 2.0 takes a fundamentally different approach by decomposing evaluation into transparent, specialized components that each assess distinct aspects of narrative quality.</p>
+<p>The Multi-Component Critic Pipeline consists of three specialized critics:</p>
+<ol>
+<li><strong>Grounding Critic</strong> - Evaluates evidential support</li>
+<li><strong>Logic Critic</strong> - Assesses structural coherence</li>
+<li><strong>Novelty-Parsimony Critic</strong> - Balances innovation against complexity</li>
+</ol>
+<h3 id="from-paper-to-code-the-mathematical-foundation">From Paper to Code: The Mathematical Foundation</h3>
+<p>The power of this pipeline comes from its transparent, component-based approach to calculating a final reward or trust score. The paper formalizes this in Section 2.2 with Equation (1).</p>
+<blockquote>
+<p><strong>From the Paper (Equation 1):</strong>
+The final trust score $T$ and reward signal emerge from a weighted combination:
+</p>
+$$
+> \text{Reward}(\mathcal{S}) = \sum_{i \in \{G, L, N\}} w_i \cdot \text{Score}_i(\mathcal{S})
+> $$<p>
+where $w_i$ are dynamically adjustable weights and the component scores are from the Grounding, Logic, and Novelty-Parsimony critics.</p></blockquote>
+<p><strong>From Paper to Code:</strong></p>
+<p>Our <code>CriticPipeline</code> class directly implements this weighted summation. Look at the <code>evaluate_sno</code> method:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#57606a"># From CriticPipeline.evaluate_sno</span>
+</span></span><span style="display:flex;"><span>total_weighted_score <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>total_weight <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">for</span> critic_type<span style="color:#1f2328">,</span> critic <span style="color:#0550ae">in</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critics<span style="color:#0550ae">.</span>items<span style="color:#1f2328">():</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#0550ae">=</span> critic<span style="color:#0550ae">.</span>evaluate<span style="color:#1f2328">(</span>sno<span style="color:#1f2328">,</span> context<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    total_weighted_score <span style="color:#0550ae">+=</span> result<span style="color:#0550ae">.</span>score <span style="color:#0550ae">*</span> critic<span style="color:#0550ae">.</span>weight
+</span></span><span style="display:flex;"><span>    total_weight <span style="color:#0550ae">+=</span> critic<span style="color:#0550ae">.</span>weight
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>trust_score <span style="color:#0550ae">=</span> total_weighted_score <span style="color:#0550ae">/</span> total_weight <span style="color:#cf222e">if</span> total_weight <span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">0</span> <span style="color:#cf222e">else</span> <span style="color:#0550ae">0.0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Here&rsquo;s the breakdown:</p>
+<ul>
+<li>The <code>for</code> loop iterates through each critic, which represents the summation ($\sum$).</li>
+<li><code>result.score</code> is the $\text{Score}_i(\mathcal{S})$ for a specific critic (Grounding, Logic, or Novelty).</li>
+<li><code>critic.weight</code> is the $w_i$ for that critic.</li>
+<li><code>total_weighted_score</code> accumulates the <code>result.score * critic.weight</code> product for each critic.</li>
+<li>Finally, we divide by <code>total_weight</code> to normalize the score, which becomes the SNO&rsquo;s final <code>trust_score</code> (<code>T</code>).</li>
+</ul>
+<p>The <code>adjust_weights</code> method allows for the dynamic adjustment of $w_i$ values, just as described in the paper.</p>
+<h2 id="implementing-the-specialized-critics">Implementing the Specialized Critics</h2>
+<p><strong>This is the most critical upgrade</strong> - we&rsquo;re replacing placeholder implementations with full mathematical implementations based on the paper&rsquo;s specifications.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">Multi-Component Critic Pipeline Implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">============================================
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">Transparent, auditable evaluation of SNO quality
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">abc</span> <span style="color:#cf222e">import</span> ABC<span style="color:#1f2328">,</span> abstractmethod
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">typing</span> <span style="color:#cf222e">import</span> Dict<span style="color:#1f2328">,</span> List<span style="color:#1f2328">,</span> Tuple<span style="color:#1f2328">,</span> Optional<span style="color:#1f2328">,</span> Any
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">numpy</span> <span style="color:#cf222e">as</span> <span style="color:#24292e">np</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">dataclasses</span> <span style="color:#cf222e">import</span> dataclass
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">enum</span> <span style="color:#cf222e">import</span> Enum
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">CriticResult</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Result from a critic evaluation with full transparency&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    score<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span>  <span style="color:#57606a"># Normalized score [0, 1]</span>
+</span></span><span style="display:flex;"><span>    confidence<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span>  <span style="color:#57606a"># Confidence in the assessment [0, 1]</span>
+</span></span><span style="display:flex;"><span>    explanation<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span>  <span style="color:#57606a"># Human-readable explanation</span>
+</span></span><span style="display:flex;"><span>    evidence<span style="color:#1f2328">:</span> Dict<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> Any<span style="color:#1f2328">]</span>  <span style="color:#57606a"># Supporting evidence for the score</span>
+</span></span><span style="display:flex;"><span>    sub_scores<span style="color:#1f2328">:</span> Dict<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">]</span>  <span style="color:#57606a"># Breakdown of component scores</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">CriticType</span><span style="color:#1f2328">(</span>Enum<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    GROUNDING <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;grounding&#34;</span>
+</span></span><span style="display:flex;"><span>    LOGIC <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;logic&#34;</span>
+</span></span><span style="display:flex;"><span>    NOVELTY <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;novelty&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">BaseCritic</span><span style="color:#1f2328">(</span>ABC<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Abstract base class for all CNS 2.0 critics&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> critic_type<span style="color:#1f2328">:</span> CriticType<span style="color:#1f2328">,</span> weight<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">1.0</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critic_type <span style="color:#0550ae">=</span> critic_type
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>weight <span style="color:#0550ae">=</span> weight
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>evaluation_count <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>performance_history <span style="color:#0550ae">=</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">@abstractmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">evaluate</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> sno<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span> context<span style="color:#1f2328">:</span> Optional<span style="color:#1f2328">[</span>Dict<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> CriticResult<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Evaluate an SNO and return detailed results&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">pass</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">update_weight</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> new_weight<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Dynamically adjust critic weight based on context&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>weight <span style="color:#0550ae">=</span> new_weight
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">get_statistics</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> Dict<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> Any<span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Get performance statistics for this critic&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;type&#39;</span><span style="color:#1f2328">:</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critic_type<span style="color:#0550ae">.</span>value<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;weight&#39;</span><span style="color:#1f2328">:</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>weight<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;evaluations&#39;</span><span style="color:#1f2328">:</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>evaluation_count<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;avg_score&#39;</span><span style="color:#1f2328">:</span> np<span style="color:#0550ae">.</span>mean<span style="color:#1f2328">([</span>r<span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;score&#39;</span><span style="color:#1f2328">]</span> <span style="color:#cf222e">for</span> r <span style="color:#0550ae">in</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>performance_history<span style="color:#1f2328">])</span> <span style="color:#cf222e">if</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>performance_history <span style="color:#cf222e">else</span> <span style="color:#0550ae">0.0</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;avg_confidence&#39;</span><span style="color:#1f2328">:</span> np<span style="color:#0550ae">.</span>mean<span style="color:#1f2328">([</span>r<span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;confidence&#39;</span><span style="color:#1f2328">]</span> <span style="color:#cf222e">for</span> r <span style="color:#0550ae">in</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>performance_history<span style="color:#1f2328">])</span> <span style="color:#cf222e">if</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>performance_history <span style="color:#cf222e">else</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">CriticPipeline</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Orchestrates multiple critics to produce comprehensive SNO evaluation&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critics<span style="color:#1f2328">:</span> Dict<span style="color:#1f2328">[</span>CriticType<span style="color:#1f2328">,</span> BaseCritic<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>evaluation_history <span style="color:#0550ae">=</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">add_critic</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> critic<span style="color:#1f2328">:</span> BaseCritic<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Add a critic to the pipeline&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critics<span style="color:#1f2328">[</span>critic<span style="color:#0550ae">.</span>critic_type<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> critic
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">evaluate_sno</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> sno<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span> context<span style="color:#1f2328">:</span> Optional<span style="color:#1f2328">[</span>Dict<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> Dict<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> Any<span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Evaluate an SNO using all available critics&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        results <span style="color:#0550ae">=</span> <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>        total_weighted_score <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        total_weight <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> critic_type<span style="color:#1f2328">,</span> critic <span style="color:#0550ae">in</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critics<span style="color:#0550ae">.</span>items<span style="color:#1f2328">():</span>
+</span></span><span style="display:flex;"><span>            result <span style="color:#0550ae">=</span> critic<span style="color:#0550ae">.</span>evaluate<span style="color:#1f2328">(</span>sno<span style="color:#1f2328">,</span> context<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            results<span style="color:#1f2328">[</span>critic_type<span style="color:#0550ae">.</span>value<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> result
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Accumulate weighted score</span>
+</span></span><span style="display:flex;"><span>            total_weighted_score <span style="color:#0550ae">+=</span> result<span style="color:#0550ae">.</span>score <span style="color:#0550ae">*</span> critic<span style="color:#0550ae">.</span>weight
+</span></span><span style="display:flex;"><span>            total_weight <span style="color:#0550ae">+=</span> critic<span style="color:#0550ae">.</span>weight
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Update critic performance history</span>
+</span></span><span style="display:flex;"><span>            critic<span style="color:#0550ae">.</span>performance_history<span style="color:#0550ae">.</span>append<span style="color:#1f2328">({</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#0a3069">&#39;score&#39;</span><span style="color:#1f2328">:</span> result<span style="color:#0550ae">.</span>score<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#0a3069">&#39;confidence&#39;</span><span style="color:#1f2328">:</span> result<span style="color:#0550ae">.</span>confidence
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">})</span>
+</span></span><span style="display:flex;"><span>            critic<span style="color:#0550ae">.</span>evaluation_count <span style="color:#0550ae">+=</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Compute final trust score</span>
+</span></span><span style="display:flex;"><span>        trust_score <span style="color:#0550ae">=</span> total_weighted_score <span style="color:#0550ae">/</span> total_weight <span style="color:#cf222e">if</span> total_weight <span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">0</span> <span style="color:#cf222e">else</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Update SNO trust score</span>
+</span></span><span style="display:flex;"><span>        sno<span style="color:#0550ae">.</span>trust_score <span style="color:#0550ae">=</span> trust_score
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        evaluation_result <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;trust_score&#39;</span><span style="color:#1f2328">:</span> trust_score<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;critic_results&#39;</span><span style="color:#1f2328">:</span> results<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;weights_used&#39;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">{</span>ct<span style="color:#0550ae">.</span>value<span style="color:#1f2328">:</span> c<span style="color:#0550ae">.</span>weight <span style="color:#cf222e">for</span> ct<span style="color:#1f2328">,</span> c <span style="color:#0550ae">in</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critics<span style="color:#0550ae">.</span>items<span style="color:#1f2328">()},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;evaluation_id&#39;</span><span style="color:#1f2328">:</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>evaluation_history<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>evaluation_history<span style="color:#0550ae">.</span>append<span style="color:#1f2328">(</span>evaluation_result<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> evaluation_result
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">adjust_weights</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> weight_updates<span style="color:#1f2328">:</span> Dict<span style="color:#1f2328">[</span>CriticType<span style="color:#1f2328">,</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">]):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Dynamically adjust critic weights based on context&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> critic_type<span style="color:#1f2328">,</span> new_weight <span style="color:#0550ae">in</span> weight_updates<span style="color:#0550ae">.</span>items<span style="color:#1f2328">():</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span> critic_type <span style="color:#0550ae">in</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critics<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>critics<span style="color:#1f2328">[</span>critic_type<span style="color:#1f2328">]</span><span style="color:#0550ae">.</span>update_weight<span style="color:#1f2328">(</span>new_weight<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">### 1. Grounding Critic Implementation</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">**</span>From Paper to Code<span style="color:#1f2328">:</span> The Grounding Critic<span style="color:#0550ae">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> The Grounding Critic evaluates how well a narrative<span style="color:#0a3069">&#39;s claims are supported by its evidence. Section 2.2 provides its formula:</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> \text<span style="color:#1f2328">{</span>Score<span style="color:#1f2328">}</span>_G <span style="color:#0550ae">=</span> \frac<span style="color:#1f2328">{</span><span style="color:#0550ae">1</span><span style="color:#1f2328">}{</span><span style="color:#0550ae">|</span>V<span style="color:#0550ae">|</span><span style="color:#1f2328">}</span>\sum_<span style="color:#1f2328">{</span>v \<span style="color:#0550ae">in</span> V<span style="color:#1f2328">}</span> \max_<span style="color:#1f2328">{</span>e \<span style="color:#0550ae">in</span> \mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}}</span> p<span style="color:#1f2328">(</span>v<span style="color:#0550ae">|</span>e<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> Here<span style="color:#1f2328">,</span> <span style="color:#f6f8fa;background-color:#82071e">$</span>p<span style="color:#1f2328">(</span>v<span style="color:#0550ae">|</span>e<span style="color:#1f2328">)</span><span style="color:#f6f8fa;background-color:#82071e">$</span> <span style="color:#0550ae">is</span> the plausibility score of a claim <span style="color:#f6f8fa;background-color:#82071e">`</span>v<span style="color:#f6f8fa;background-color:#82071e">`</span> given a piece of evidence <span style="color:#f6f8fa;background-color:#82071e">`</span>e<span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#0550ae">.</span> We will implement this using a pre<span style="color:#0550ae">-</span>trained Natural Language Inference <span style="color:#1f2328">(</span>NLI<span style="color:#1f2328">)</span> model<span style="color:#0550ae">.</span> An NLI model takes a premise <span style="color:#1f2328">(</span>evidence<span style="color:#1f2328">)</span> <span style="color:#0550ae">and</span> a hypothesis <span style="color:#1f2328">(</span>claim<span style="color:#1f2328">)</span> <span style="color:#0550ae">and</span> outputs probabilities <span style="color:#cf222e">for</span> <span style="color:#0a3069">&#34;entailment,&#34;</span> <span style="color:#0a3069">&#34;neutral,&#34;</span> <span style="color:#0550ae">and</span> <span style="color:#0a3069">&#34;contradiction.&#34;</span> We will use the <span style="color:#0a3069">&#34;entailment&#34;</span> probability <span style="color:#cf222e">as</span> our <span style="color:#f6f8fa;background-color:#82071e">$</span>p<span style="color:#1f2328">(</span>v<span style="color:#0550ae">|</span>e<span style="color:#1f2328">)</span><span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">```</span>python
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">GroundingCritic</span><span style="color:#1f2328">(</span>BaseCritic<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> weight<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">,</span> nli_model<span style="color:#0550ae">=</span><span style="color:#cf222e">None</span><span style="color:#1f2328">,</span> nli_tokenizer<span style="color:#0550ae">=</span><span style="color:#cf222e">None</span><span style="color:#1f2328">,</span> nli_model_name<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span> <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;microsoft/deberta-large-mnli&#34;</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">super</span><span style="color:#1f2328">()</span><span style="color:#0550ae">.</span><span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span>CriticType<span style="color:#0550ae">.</span>GROUNDING<span style="color:#1f2328">,</span> weight<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Use pre-loaded models if provided (for efficiency), otherwise load on demand</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> nli_model <span style="color:#0550ae">is</span> <span style="color:#0550ae">not</span> <span style="color:#cf222e">None</span> <span style="color:#0550ae">and</span> nli_tokenizer <span style="color:#0550ae">is</span> <span style="color:#0550ae">not</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>nli_model <span style="color:#0550ae">=</span> nli_model
+</span></span><span style="display:flex;"><span>            <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>nli_tokenizer <span style="color:#0550ae">=</span> nli_tokenizer
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">elif</span> HAS_TRANSFORMERS<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">import</span> <span style="color:#24292e">transformers</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>nli_tokenizer <span style="color:#0550ae">=</span> transformers<span style="color:#0550ae">.</span>AutoTokenizer<span style="color:#0550ae">.</span>from_pretrained<span style="color:#1f2328">(</span>nli_model_name<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>nli_model <span style="color:#0550ae">=</span> transformers<span style="color:#0550ae">.</span>AutoModelForSequenceClassification<span style="color:#0550ae">.</span>from_pretrained<span style="color:#1f2328">(</span>nli_model_name<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">else</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">raise</span> ImportError<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Transformers library is required for the GroundingCritic.&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Ensure we know the index for entailment</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>entailment_id <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>nli_model<span style="color:#0550ae">.</span>config<span style="color:#0550ae">.</span>label2id<span style="color:#0550ae">.</span>get<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;entailment&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">)</span>  <span style="color:#57606a"># Default to 2 if not found</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">evaluate</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> sno<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span> context<span style="color:#1f2328">:</span> Optional<span style="color:#1f2328">[</span>Dict<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> CriticResult<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        claims <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>data<span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;claim&#39;</span><span style="color:#1f2328">]</span> <span style="color:#cf222e">for</span> _<span style="color:#1f2328">,</span> data <span style="color:#0550ae">in</span> sno<span style="color:#0550ae">.</span>reasoning_graph<span style="color:#0550ae">.</span>nodes<span style="color:#1f2328">(</span>data<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">)]</span>
+</span></span><span style="display:flex;"><span>        evidence_contents <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>item<span style="color:#0550ae">.</span>content <span style="color:#cf222e">for</span> item <span style="color:#0550ae">in</span> sno<span style="color:#0550ae">.</span>evidence_set<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#0550ae">not</span> claims <span style="color:#0550ae">or</span> <span style="color:#0550ae">not</span> evidence_contents<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> CriticResult<span style="color:#1f2328">(</span><span style="color:#0550ae">0.0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.0</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;No claims or evidence to ground.&#34;</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">{},</span> <span style="color:#1f2328">{})</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        total_max_plausibility <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        sub_scores <span style="color:#0550ae">=</span> <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> claim <span style="color:#0550ae">in</span> claims<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            max_plausibility_for_claim <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Prepare NLI model inputs</span>
+</span></span><span style="display:flex;"><span>            pairs <span style="color:#0550ae">=</span> <span style="color:#1f2328">[(</span>e<span style="color:#1f2328">,</span> claim<span style="color:#0550ae">.</span>content<span style="color:#1f2328">)</span> <span style="color:#cf222e">for</span> e <span style="color:#0550ae">in</span> evidence_contents<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            inputs <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>nli_tokenizer<span style="color:#1f2328">(</span>pairs<span style="color:#1f2328">,</span> return_tensors<span style="color:#0550ae">=</span><span style="color:#0a3069">&#39;pt&#39;</span><span style="color:#1f2328">,</span> padding<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">,</span> truncation<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">with</span> torch<span style="color:#0550ae">.</span>no_grad<span style="color:#1f2328">():</span>
+</span></span><span style="display:flex;"><span>                logits <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>nli_model<span style="color:#1f2328">(</span><span style="color:#0550ae">**</span>inputs<span style="color:#1f2328">)</span><span style="color:#0550ae">.</span>logits
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Get probabilities for entailment</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># We use softmax to convert logits to probabilities</span>
+</span></span><span style="display:flex;"><span>            probabilities <span style="color:#0550ae">=</span> torch<span style="color:#0550ae">.</span>softmax<span style="color:#1f2328">(</span>logits<span style="color:#1f2328">,</span> dim<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            entailment_probs <span style="color:#0550ae">=</span> probabilities<span style="color:#1f2328">[:,</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>entailment_id<span style="color:#1f2328">]</span><span style="color:#0550ae">.</span>tolist<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span> entailment_probs<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                max_plausibility_for_claim <span style="color:#0550ae">=</span> <span style="color:#6639ba">max</span><span style="color:#1f2328">(</span>entailment_probs<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            total_max_plausibility <span style="color:#0550ae">+=</span> max_plausibility_for_claim
+</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#1f2328">[</span>claim<span style="color:#0550ae">.</span>claim_id<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> max_plausibility_for_claim
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Score is the average of the max plausibility scores for each claim</span>
+</span></span><span style="display:flex;"><span>        final_score <span style="color:#0550ae">=</span> total_max_plausibility <span style="color:#0550ae">/</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>claims<span style="color:#1f2328">)</span> <span style="color:#cf222e">if</span> claims <span style="color:#cf222e">else</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> CriticResult<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            score<span style="color:#0550ae">=</span>final_score<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            confidence<span style="color:#0550ae">=</span><span style="color:#0550ae">0.8</span><span style="color:#1f2328">,</span> <span style="color:#57606a"># Confidence can be improved with model-specific metrics</span>
+</span></span><span style="display:flex;"><span>            explanation<span style="color:#0550ae">=</span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Average max NLI entailment score across </span><span style="color:#0a3069">{</span><span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>claims<span style="color:#1f2328">)</span><span style="color:#0a3069">}</span><span style="color:#0a3069"> claims is </span><span style="color:#0a3069">{</span>final_score<span style="color:#0a3069">:</span><span style="color:#0a3069">.3f</span><span style="color:#0a3069">}</span><span style="color:#0a3069">.&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0a3069">&#39;claim_scores&#39;</span><span style="color:#1f2328">:</span> sub_scores<span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#0550ae">=</span>sub_scores
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2-logic-critic-implementation">2. Logic Critic Implementation</h3>
+<blockquote>
+<p><strong>From Paper to Code: The Logic Critic</strong>
+The Logic Critic assesses the structural coherence of the reasoning graph $G$. The paper specifies this as:
+</p>
+$$
+> \text{Score}_L = f_{\text{GNN}}(G; \theta)
+> $$<p>
+Training a full Graph Neural Network (GNN) is a research project in itself. For our primitive, we will create a <em>functional proxy</em> for $f_{\text{GNN}}$ that uses graph-theoretic features to approximate logical coherence. This is a robust, explainable starting point for future GNN development. We&rsquo;ll check for orphaned claims, excessive branching (unfocused arguments), and graph density.</p></blockquote>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">LogicCritic</span><span style="color:#1f2328">(</span>BaseCritic<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> weight<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">super</span><span style="color:#1f2328">()</span><span style="color:#0550ae">.</span><span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span>CriticType<span style="color:#0550ae">.</span>LOGIC<span style="color:#1f2328">,</span> weight<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">evaluate</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> sno<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span> context<span style="color:#1f2328">:</span> Optional<span style="color:#1f2328">[</span>Dict<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> CriticResult<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        G <span style="color:#0550ae">=</span> sno<span style="color:#0550ae">.</span>reasoning_graph
+</span></span><span style="display:flex;"><span>        num_nodes <span style="color:#0550ae">=</span> G<span style="color:#0550ae">.</span>number_of_nodes<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> num_nodes <span style="color:#0550ae">&lt;=</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> CriticResult<span style="color:#1f2328">(</span><span style="color:#0550ae">1.0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.0</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;Graph is too simple to assess logic.&#34;</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">{},</span> <span style="color:#1f2328">{})</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 1. Orphaned claims score (we want 0 orphans)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Nodes with in-degree 0 (excluding the root) are orphans</span>
+</span></span><span style="display:flex;"><span>        orphaned_nodes <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>n <span style="color:#cf222e">for</span> n<span style="color:#1f2328">,</span> d <span style="color:#0550ae">in</span> G<span style="color:#0550ae">.</span>in_degree<span style="color:#1f2328">()</span> <span style="color:#cf222e">if</span> d <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span> <span style="color:#0550ae">and</span> n <span style="color:#0550ae">!=</span> <span style="color:#0a3069">&#39;root&#39;</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        orphan_penalty <span style="color:#0550ae">=</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>orphaned_nodes<span style="color:#1f2328">)</span> <span style="color:#0550ae">/</span> <span style="color:#1f2328">(</span>num_nodes <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        orphan_score <span style="color:#0550ae">=</span> <span style="color:#0550ae">1.0</span> <span style="color:#0550ae">-</span> orphan_penalty
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 2. Coherence score (low branching is better)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Average out-degree measures branching. Lower is more focused.</span>
+</span></span><span style="display:flex;"><span>        avg_out_degree <span style="color:#0550ae">=</span> <span style="color:#6639ba">sum</span><span style="color:#1f2328">(</span>d <span style="color:#cf222e">for</span> _<span style="color:#1f2328">,</span> d <span style="color:#0550ae">in</span> G<span style="color:#0550ae">.</span>out_degree<span style="color:#1f2328">())</span> <span style="color:#0550ae">/</span> num_nodes
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Normalize: assume max reasonable branching is ~3</span>
+</span></span><span style="display:flex;"><span>        coherence_score <span style="color:#0550ae">=</span> <span style="color:#6639ba">max</span><span style="color:#1f2328">(</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1.0</span> <span style="color:#0550ae">-</span> <span style="color:#1f2328">(</span>avg_out_degree <span style="color:#0550ae">/</span> <span style="color:#0550ae">3.0</span><span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 3. Parsimony score (related to density)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># We prefer simpler, less dense graphs.</span>
+</span></span><span style="display:flex;"><span>        density <span style="color:#0550ae">=</span> nx<span style="color:#0550ae">.</span>density<span style="color:#1f2328">(</span>G<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        parsimony_score <span style="color:#0550ae">=</span> <span style="color:#0550ae">1.0</span> <span style="color:#0550ae">-</span> density
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Combine scores</span>
+</span></span><span style="display:flex;"><span>        final_score <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.5</span> <span style="color:#0550ae">*</span> orphan_score <span style="color:#0550ae">+</span> <span style="color:#0550ae">0.3</span> <span style="color:#0550ae">*</span> coherence_score <span style="color:#0550ae">+</span> <span style="color:#0550ae">0.2</span> <span style="color:#0550ae">*</span> parsimony_score
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        sub_scores <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;orphan_score&#39;</span><span style="color:#1f2328">:</span> orphan_score<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;coherence_score&#39;</span><span style="color:#1f2328">:</span> coherence_score<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">&#39;parsimony_score&#39;</span><span style="color:#1f2328">:</span> parsimony_score
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> CriticResult<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            score<span style="color:#0550ae">=</span>final_score<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            confidence<span style="color:#0550ae">=</span><span style="color:#0550ae">0.9</span><span style="color:#1f2328">,</span> <span style="color:#57606a"># High confidence as it&#39;s deterministic</span>
+</span></span><span style="display:flex;"><span>            explanation<span style="color:#0550ae">=</span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Logic score based on graph structure: </span><span style="color:#0a3069">{</span>final_score<span style="color:#0a3069">:</span><span style="color:#0a3069">.3f</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0a3069">&#39;num_orphans&#39;</span><span style="color:#1f2328">:</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>orphaned_nodes<span style="color:#1f2328">),</span> <span style="color:#0a3069">&#39;avg_out_degree&#39;</span><span style="color:#1f2328">:</span> avg_out_degree<span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;density&#39;</span><span style="color:#1f2328">:</span> density<span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#0550ae">=</span>sub_scores
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3-novelty-parsimony-critic-implementation">3. Novelty-Parsimony Critic Implementation</h3>
+<blockquote>
+<p><strong>From Paper to Code: The Novelty-Parsimony Critic (Corrected)</strong>
+This critic balances innovation against complexity. The formula from Section 2.2 is:
+</p>
+$$
+> \text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|}
+> $$<p>
+Our previous implementation used a weighted average, which was incorrect. We now implement the formula&rsquo;s subtraction logic directly. The first term rewards novelty (Euclidean distance to the nearest neighbor in the SNO population), and the second term, scaled by β, penalizes graph complexity (edge-to-node ratio). Since the result of this subtraction is not inherently bounded in [0, 1], we calculate the raw score and then clamp the result to ensure it fits within our scoring framework.</p></blockquote>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">NoveltyParsimonyCritic</span><span style="color:#1f2328">(</span>BaseCritic<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> weight<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">,</span> alpha<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">,</span> beta<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">super</span><span style="color:#1f2328">()</span><span style="color:#0550ae">.</span><span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span>CriticType<span style="color:#0550ae">.</span>NOVELTY<span style="color:#1f2328">,</span> weight<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>alpha <span style="color:#0550ae">=</span> alpha
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>beta <span style="color:#0550ae">=</span> beta
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">evaluate</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> sno<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span> context<span style="color:#1f2328">:</span> Optional<span style="color:#1f2328">[</span>Dict<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> CriticResult<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        sno_population <span style="color:#0550ae">=</span> context<span style="color:#0550ae">.</span>get<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;sno_population&#39;</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">[])</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 1. Calculate Novelty Term: α * min_i ||H - H_i||</span>
+</span></span><span style="display:flex;"><span>        population_embeddings <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>s<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#cf222e">for</span> s <span style="color:#0550ae">in</span> sno_population <span style="color:#cf222e">if</span> s<span style="color:#0550ae">.</span>sno_id <span style="color:#0550ae">!=</span> sno<span style="color:#0550ae">.</span>sno_id <span style="color:#0550ae">and</span> s<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#0550ae">not</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#0550ae">not</span> population_embeddings <span style="color:#0550ae">or</span> sno<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            novelty_term <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>alpha <span style="color:#0550ae">*</span> <span style="color:#0550ae">1.0</span> <span style="color:#57606a"># Max novelty if no population to compare to</span>
+</span></span><span style="display:flex;"><span>            min_dist_str <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;N/A (first SNO)&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">else</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            distances <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>np<span style="color:#0550ae">.</span>linalg<span style="color:#0550ae">.</span>norm<span style="color:#1f2328">(</span>sno<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">-</span> h<span style="color:#1f2328">)</span> <span style="color:#cf222e">for</span> h <span style="color:#0550ae">in</span> population_embeddings<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            min_distance <span style="color:#0550ae">=</span> <span style="color:#6639ba">min</span><span style="color:#1f2328">(</span>distances<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a"># Normalize distance (max L2 is 2.0) and multiply by alpha</span>
+</span></span><span style="display:flex;"><span>            novelty_term <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>alpha <span style="color:#0550ae">*</span> <span style="color:#1f2328">(</span>min_distance <span style="color:#0550ae">/</span> <span style="color:#0550ae">2.0</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            min_dist_str <span style="color:#0550ae">=</span> <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">{</span>min_distance<span style="color:#0a3069">:</span><span style="color:#0a3069">.3f</span><span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 2. Calculate Parsimony Penalty Term: β * (|E_G| / |V|)</span>
+</span></span><span style="display:flex;"><span>        G <span style="color:#0550ae">=</span> sno<span style="color:#0550ae">.</span>reasoning_graph
+</span></span><span style="display:flex;"><span>        num_nodes <span style="color:#0550ae">=</span> G<span style="color:#0550ae">.</span>number_of_nodes<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>        num_edges <span style="color:#0550ae">=</span> G<span style="color:#0550ae">.</span>number_of_edges<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        complexity_ratio <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> num_nodes <span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            complexity_ratio <span style="color:#0550ae">=</span> num_edges <span style="color:#0550ae">/</span> num_nodes
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        parsimony_penalty <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>beta <span style="color:#0550ae">*</span> complexity_ratio
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 3. Calculate Final Score according to the formula</span>
+</span></span><span style="display:flex;"><span>        raw_score <span style="color:#0550ae">=</span> novelty_term <span style="color:#0550ae">-</span> parsimony_penalty
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Clamp the score to be within the [0, 1] range</span>
+</span></span><span style="display:flex;"><span>        final_score <span style="color:#0550ae">=</span> np<span style="color:#0550ae">.</span>clip<span style="color:#1f2328">(</span>raw_score<span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        explanation <span style="color:#0550ae">=</span> <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Score(</span><span style="color:#0a3069">{</span>final_score<span style="color:#0a3069">:</span><span style="color:#0a3069">.3f</span><span style="color:#0a3069">}</span><span style="color:#0a3069">) = NoveltyTerm(</span><span style="color:#0a3069">{</span>novelty_term<span style="color:#0a3069">:</span><span style="color:#0a3069">.3f</span><span style="color:#0a3069">}</span><span style="color:#0a3069">) - ParsimonyPenalty(</span><span style="color:#0a3069">{</span>parsimony_penalty<span style="color:#0a3069">:</span><span style="color:#0a3069">.3f</span><span style="color:#0a3069">}</span><span style="color:#0a3069">). Min dist: </span><span style="color:#0a3069">{</span>min_dist_str<span style="color:#0a3069">}</span><span style="color:#0a3069">.&#34;</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> CriticResult<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            score<span style="color:#0550ae">=</span>final_score<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            confidence<span style="color:#0550ae">=</span><span style="color:#0550ae">0.9</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            explanation<span style="color:#0550ae">=</span>explanation<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0a3069">&#39;novelty_term&#39;</span><span style="color:#1f2328">:</span> novelty_term<span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;parsimony_penalty&#39;</span><span style="color:#1f2328">:</span> parsimony_penalty<span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;complexity_ratio&#39;</span><span style="color:#1f2328">:</span> complexity_ratio<span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0a3069">&#39;novelty_term&#39;</span><span style="color:#1f2328">:</span> novelty_term<span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;parsimony_penalty&#39;</span><span style="color:#1f2328">:</span> parsimony_penalty<span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+    <nav class="article-nav">
+        <div class="nav-previous">
+            
+                <a href="/chapter-4-synthesis-engine/" class="nav-link prev-link">
+                    <i data-feather="arrow-right"></i>
+                    <div class="nav-text">
+                        <span class="nav-label">Next</span>
+                        <span class="nav-title">Chapter 4: Generative Synthesis Engine</span>
+                    </div>
+                </a>
+            
+        </div>
+        
+        <div class="nav-next">
+            
+                <a href="/chapter-2-sno-foundations/" class="nav-link next-link">
+                    <div class="nav-text">
+                        <span class="nav-label">Previous</span>
+                        <span class="nav-title">Chapter 2: SNO Foundations</span>
+                    </div>
+                    <i data-feather="arrow-left"></i>
+                </a>
+            
+        </div>
+    </nav>
+
+    
+    <aside class="chapter-summary">
+        <h3>Chapter Summary</h3>
+        <div class="summary-content">
+            
+                <p>Implementing transparent evaluation through specialized critic components.</p>
+                <ul>
+                    <li>Multi-component critic architecture</li>
+                    <li>Grounding, Logic, and Novelty critics</li>
+                    <li>Transparent scoring and evaluation</li>
+                </ul>
+            
+        </div>
+    </aside>
+</article>
+
+            </div>
+        </main>
+
+        
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <p>&copy; 2025 GTCode.com. Educational content for CNS 2.0 implementation.</p>
+                        <p>Based on <a href="https://github.com/nshkrdotcom/research_papers/blob/main/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="/js/navigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+    
+    <script>
+        
+        if (window.feather) feather.replace();
+    </script>
+</body>
+</html>

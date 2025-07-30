@@ -1,0 +1,200 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Chapter 1: Introduction to CNS 2.0 | Building CNS 2.0: A Developer's Guide</title><meta name=description content="Understanding the core concepts and motivation behind Chiral Narrative Synthesis"><meta name=author content="CNS Development Team"><link rel=icon type=image/svg+xml href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>"><link rel=stylesheet href="/css/style.css?v=1753840877"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css><script src=https://unpkg.com/feather-icons></script></head><body><div class=site-wrapper><header class=site-header><div class=container><nav class=main-nav><div class=nav-brand><a href=/guides/building-cns-2.0-developers-guide/ class=brand-link><span class=brand-icon>🧠</span>
+<span class=brand-text>Building CNS 2.0: A Developer's Guide</span></a></div><div class=nav-menu><button class=nav-toggle id=nav-toggle aria-label="Toggle navigation">
+<i data-feather=menu></i></button><ul class=nav-list><li class=nav-item><a href=/guides/building-cns-2.0-developers-guide/chapter-1-introduction/ class=nav-link>Introduction</a></li><li class=nav-item><a href=/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/ class=nav-link>SNO Foundations</a></li><li class=nav-item><a href=/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/ class=nav-link>Critic Pipeline</a></li><li class=nav-item><a href=/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/ class=nav-link>Synthesis Engine</a></li><li class=nav-item><a href=/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/ class=nav-link>System Integration</a></li><li class=nav-item><a href=/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/ class=nav-link>Complete Implementation</a></li></ul></div></nav></div></header><main class=site-main><div class=container><article class=content-article><header class=article-header><div class=article-meta><span class=article-weight>Chapter 1</span>
+<span class=article-separator>•</span>
+<time class=article-date>July 29, 2025</time></div><h1 class=article-title>Chapter 1: Introduction to CNS 2.0</h1><p class=article-description>Understanding the core concepts and motivation behind Chiral Narrative Synthesis</p><div class=progress-indicator><div class=progress-bar><div class=progress-fill style=width:16.67%></div></div><span class=progress-text>1/6 chapters completed</span></div></header><aside class=article-toc><h3>Table of Contents</h3><nav id=TableOfContents><nav id=TableOfContents><ul><li><a href=#the-challenge-of-conflicting-information>The Challenge of Conflicting Information</a></li><li><a href=#core-innovation-beyond-vector-averaging>Core Innovation: Beyond Vector Averaging</a><ul><li><a href=#1-structured-narrative-objects-snos>1. Structured Narrative Objects (SNOs)</a></li><li><a href=#2-multi-component-critic-pipeline>2. Multi-Component Critic Pipeline</a></li><li><a href=#3-generative-synthesis-engine>3. Generative Synthesis Engine</a></li><li><a href=#4-evidential-entanglement-metric>4. Evidential Entanglement Metric</a></li></ul></li><li><a href=#setting-up-our-development-environment>Setting Up Our Development Environment</a></li></ul></nav></nav></aside><div class=article-content><div class=guide-header><a href=/ class=home-link>← Back to GTCode.com Homepage</a></div><h1 id=chapter-1-introduction-to-cns-20>Chapter 1: Introduction to CNS 2.0</h1><h2 id=the-challenge-of-conflicting-information>The Challenge of Conflicting Information</h2><p>In our information-rich world, one of the most pressing challenges is synthesizing knowledge from conflicting, incomplete, and contradictory sources. Whether analyzing scientific research, intelligence reports, or complex domain knowledge, we constantly encounter situations where:</p><ul><li>Multiple credible sources present contradictory claims</li><li>Evidence supports competing hypotheses</li><li>Traditional approaches fail to reconcile differences meaningfully</li></ul><p><strong>Chiral Narrative Synthesis (CNS) 2.0</strong> addresses this fundamental challenge through a computational framework that treats hypotheses as mathematically evaluable data structures rather than simple text.</p><h2 id=core-innovation-beyond-vector-averaging>Core Innovation: Beyond Vector Averaging</h2><p>Traditional knowledge synthesis approaches often resort to simple averaging or majority voting. CNS 2.0 introduces a revolutionary approach through four key innovations:</p><h3 id=1-structured-narrative-objects-snos>1. Structured Narrative Objects (SNOs)</h3><p>Instead of treating narratives as simple vectors, CNS 2.0 represents them as rich data structures that preserve:</p><ul><li>Central hypotheses</li><li>Logical reasoning graphs</li><li>Evidence sets</li><li>Trust scores</li></ul><h3 id=2-multi-component-critic-pipeline>2. Multi-Component Critic Pipeline</h3><p>Rather than relying on black-box evaluation, CNS 2.0 provides transparent assessment through specialized critics:</p><ul><li><strong>Grounding Critic</strong>: Evaluates evidential support</li><li><strong>Logic Critic</strong>: Assesses structural coherence</li><li><strong>Novelty-Parsimony Critic</strong>: Balances innovation against complexity</li></ul><h3 id=3-generative-synthesis-engine>3. Generative Synthesis Engine</h3><p>CNS 2.0 employs LLM-powered dialectical reasoning to create genuine synthesis rather than mechanical blending.</p><h3 id=4-evidential-entanglement-metric>4. Evidential Entanglement Metric</h3><p>A novel measure that identifies narratives opposing each other while arguing over shared evidence.</p><h2 id=setting-up-our-development-environment>Setting Up Our Development Environment</h2><p>Let&rsquo;s begin by establishing the foundational Python environment for our CNS 2.0 implementation:</p><div class=highlight><div style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#727272">97
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#0ff;font-weight:700>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#0ff;font-weight:700>CNS 2.0 Implementation Foundation
+</span></span></span><span style=display:flex><span><span style=color:#0ff;font-weight:700>================================
+</span></span></span><span style=display:flex><span><span style=color:#0ff;font-weight:700>Core imports and basic setup for Chiral Narrative Synthesis
+</span></span></span><span style=display:flex><span><span style=color:#0ff;font-weight:700>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>import</span> numpy <span style=color:#fff;font-weight:700>as</span> np
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>import</span> networkx <span style=color:#fff;font-weight:700>as</span> nx
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>from</span> typing <span style=color:#fff;font-weight:700>import</span> Dict, List, Tuple, Set, Optional, Union
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>from</span> dataclasses <span style=color:#fff;font-weight:700>import</span> dataclass, field
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>from</span> abc <span style=color:#fff;font-weight:700>import</span> ABC, abstractmethod
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>import</span> json
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>import</span> hashlib
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>from</span> enum <span style=color:#fff;font-weight:700>import</span> Enum
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#007f7f># Core dependencies for advanced functionality</span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>try</span>:
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>import</span> torch
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>import</span> transformers
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>from</span> sentence_transformers <span style=color:#fff;font-weight:700>import</span> SentenceTransformer
+</span></span><span style=display:flex><span>    HAS_TRANSFORMERS = <span style=color:#fff;font-weight:700>True</span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>except</span> ImportError:
+</span></span><span style=display:flex><span>    HAS_TRANSFORMERS = <span style=color:#fff;font-weight:700>False</span>
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>print</span>(<span style=color:#0ff;font-weight:700>&#34;ERROR: Transformers library is required for research-grade CNS 2.0 implementation.&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>print</span>(<span style=color:#0ff;font-weight:700>&#34;Install with: pip install torch transformers sentence-transformers&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#007f7f># For research-grade implementation, transformers are mandatory</span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>assert</span> HAS_TRANSFORMERS, <span style=color:#0ff;font-weight:700>&#34;CNS 2.0 requires transformers library for semantic embeddings and NLI models&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>class</span> RelationType(Enum):
+</span></span><span style=display:flex><span>    <span style=color:#0ff;font-weight:700>&#34;&#34;&#34;Enumeration of logical relationship types in reasoning graphs&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    SUPPORTS = <span style=color:#0ff;font-weight:700>&#34;supports&#34;</span>
+</span></span><span style=display:flex><span>    CONTRADICTS = <span style=color:#0ff;font-weight:700>&#34;contradicts&#34;</span>
+</span></span><span style=display:flex><span>    IMPLIES = <span style=color:#0ff;font-weight:700>&#34;implies&#34;</span>
+</span></span><span style=display:flex><span>    WEAKENS = <span style=color:#0ff;font-weight:700>&#34;weakens&#34;</span>
+</span></span><span style=display:flex><span>    EXPLAINS = <span style=color:#0ff;font-weight:700>&#34;explains&#34;</span>
+</span></span><span style=display:flex><span>    GENERALIZES = <span style=color:#0ff;font-weight:700>&#34;generalizes&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>@dataclass
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>class</span> EvidenceItem:
+</span></span><span style=display:flex><span>    <span style=color:#0ff;font-weight:700>&#34;&#34;&#34;Represents a piece of evidence with source tracking&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    content: <span style=color:#fff;font-weight:700>str</span>
+</span></span><span style=display:flex><span>    source_id: <span style=color:#fff;font-weight:700>str</span>
+</span></span><span style=display:flex><span>    doc_hash: Optional[<span style=color:#fff;font-weight:700>str</span>] = <span style=color:#fff;font-weight:700>None</span>
+</span></span><span style=display:flex><span>    confidence: <span style=color:#fff;font-weight:700>float</span> = <span style=color:#ff0;font-weight:700>1.0</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>def</span> __post_init__(<span style=color:#fff;font-weight:700>self</span>):
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>if</span> <span style=color:#fff;font-weight:700>self</span>.doc_hash is <span style=color:#fff;font-weight:700>None</span>:
+</span></span><span style=display:flex><span>            <span style=color:#fff;font-weight:700>self</span>.doc_hash = hashlib.sha256(<span style=color:#fff;font-weight:700>self</span>.content.encode()).hexdigest()[:<span style=color:#ff0;font-weight:700>16</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>class</span> CNSConfig:
+</span></span><span style=display:flex><span>    <span style=color:#0ff;font-weight:700>&#34;&#34;&#34;Configuration class for CNS 2.0 system parameters&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>def</span> __init__(<span style=color:#fff;font-weight:700>self</span>):
+</span></span><span style=display:flex><span>        <span style=color:#007f7f># Embedding dimensions</span>
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>self</span>.embedding_dim = <span style=color:#ff0;font-weight:700>768</span>
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#007f7f># Critic weights (for the final Reward function)</span>
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>self</span>.critic_weights = {
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;grounding&#39;</span>: <span style=color:#ff0;font-weight:700>0.4</span>,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;logic&#39;</span>: <span style=color:#ff0;font-weight:700>0.3</span>,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;novelty&#39;</span>: <span style=color:#ff0;font-weight:700>0.3</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#007f7f># Novelty-Parsimony Critic specific parameters (alpha, beta)</span>
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>self</span>.novelty_alpha = <span style=color:#ff0;font-weight:700>0.7</span>  <span style=color:#007f7f># Weight for novelty (distance from existing SNOs)</span>
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>self</span>.novelty_beta = <span style=color:#ff0;font-weight:700>0.3</span>   <span style=color:#007f7f># Penalty for complexity (graph edge-to-node ratio)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#007f7f># Synthesis trigger thresholds</span>
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>self</span>.synthesis_thresholds = {
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;chirality&#39;</span>: <span style=color:#ff0;font-weight:700>0.7</span>,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;entanglement&#39;</span>: <span style=color:#ff0;font-weight:700>0.5</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#007f7f># Model configurations</span>
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>self</span>.models = {
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;embedding&#39;</span>: <span style=color:#0ff;font-weight:700>&#34;all-MiniLM-L6-v2&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;nli&#39;</span>: <span style=color:#0ff;font-weight:700>&#34;roberta-large-mnli&#34;</span>, <span style=color:#007f7f># A powerful model for the Grounding Critic</span>
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;synthesis&#39;</span>: <span style=color:#0ff;font-weight:700>&#34;mistralai/Mistral-7B-Instruct-v0.1&#34;</span> <span style=color:#007f7f># A more capable synthesis model</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>def</span> to_dict(<span style=color:#fff;font-weight:700>self</span>) -&gt; Dict:
+</span></span><span style=display:flex><span>        <span style=color:#0ff;font-weight:700>&#34;&#34;&#34;Convert configuration to dictionary for serialization&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>return</span> {
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;embedding_dim&#39;</span>: <span style=color:#fff;font-weight:700>self</span>.embedding_dim,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;critic_weights&#39;</span>: <span style=color:#fff;font-weight:700>self</span>.critic_weights,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;novelty_alpha&#39;</span>: <span style=color:#fff;font-weight:700>self</span>.novelty_alpha,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;novelty_beta&#39;</span>: <span style=color:#fff;font-weight:700>self</span>.novelty_beta,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;synthesis_thresholds&#39;</span>: <span style=color:#fff;font-weight:700>self</span>.synthesis_thresholds,
+</span></span><span style=display:flex><span>            <span style=color:#0ff;font-weight:700>&#39;models&#39;</span>: <span style=color:#fff;font-weight:700>self</span>.models
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#007f7f># Global configuration instance</span>
+</span></span><span style=display:flex><span>cns_config = CNSConfig()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>print</span>(<span style=color:#0ff;font-weight:700>&#34;CNS 2.0 Foundation Environment Ready&#34;</span>)
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>print</span>(<span style=color:#0ff;font-weight:700>f</span><span style=color:#0ff;font-weight:700>&#34;Configuration: </span><span style=color:#0ff;font-weight:700>{</span>json.dumps(cns_config.to_dict(), indent=<span style=color:#ff0;font-weight:700>2</span>)<span style=color:#0ff;font-weight:700>}</span><span style=color:#0ff;font-weight:700>&#34;</span>)
+</span></span></code></pre></td></tr></table></div></div></div><nav class=article-nav><div class=nav-previous><a href=/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/ class="nav-link prev-link"><i data-feather=arrow-right></i><div class=nav-text><span class=nav-label>Next</span>
+<span class=nav-title>Chapter 2: SNO Foundations</span></div></a></div><div class=nav-next></div></nav><aside class=chapter-summary><h3>Chapter Summary</h3><div class=summary-content><p>Introduction to CNS 2.0 concepts, core innovations, and development environment setup.</p><ul><li>Understanding the challenge of conflicting information</li><li>Four key CNS 2.0 innovations</li><li>Python environment configuration</li></ul></div></aside></article></div></main><footer class=site-footer><div class=container><div class=footer-content><div class=footer-text><p>&copy; 2025 <a href=https://GTCode.com/ class=footer-link>GTCode.com</a>. Educational content for CNS 2.0 implementation.</p><p>Based on <a href=https://github.com/nshkrdotcom/research_papers/blob/main/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf class=footer-link>CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p></div></div></div></footer></div><script src=/js/navigation.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})'></script><script>window.feather&&feather.replace()</script></body></html>

@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=5000&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter 4: Generative Synthesis Engine | Building CNS 2.0: A Developer&#39;s Guide</title>
+    <meta name="description" content="Implementing LLM-powered dialectical reasoning for knowledge synthesis">
+    <meta name="author" content="CNS Development Team">
+    
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+    
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        
+        <header class="site-header">
+            <div class="container">
+                <nav class="main-nav">
+                    <div class="nav-brand">
+                        <a href="http://localhost:5000/" class="brand-link">
+                            <span class="brand-icon">🧠</span>
+                            <span class="brand-text">Building CNS 2.0: A Developer&#39;s Guide</span>
+                        </a>
+                    </div>
+                    
+                    <div class="nav-menu">
+                        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                            <i data-feather="menu"></i>
+                        </button>
+                        
+                        <ul class="nav-list">
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-1-introduction/" class="nav-link ">
+                                        Introduction
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-2-sno-foundations/" class="nav-link ">
+                                        SNO Foundations
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-3-critic-pipeline/" class="nav-link ">
+                                        Critic Pipeline
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-4-synthesis-engine/" class="nav-link ">
+                                        Synthesis Engine
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-5-system-integration/" class="nav-link ">
+                                        System Integration
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/chapter-6-complete-implementation/" class="nav-link ">
+                                        Complete Implementation
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        
+        <main class="site-main">
+            <div class="container">
+                
+<article class="content-article">
+    
+    <header class="article-header">
+        <div class="article-meta">
+            <span class="article-weight">Chapter 4</span>
+            <span class="article-separator">•</span>
+            <time class="article-date">July 29, 2025</time>
+        </div>
+        
+        <h1 class="article-title">Chapter 4: Generative Synthesis Engine</h1>
+        
+        
+        <p class="article-description">Implementing LLM-powered dialectical reasoning for knowledge synthesis</p>
+        
+        
+        
+        <div class="progress-indicator">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 66.68%"></div>
+            </div>
+            <span class="progress-text">4/6 chapters completed</span>
+        </div>
+    </header>
+
+    
+    <aside class="article-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#beyond-vector-averaging-true-dialectical-synthesis">Beyond Vector Averaging: True Dialectical Synthesis</a></li>
+    <li><a href="#core-synthesis-infrastructure">Core Synthesis Infrastructure</a></li>
+  </ul>
+</nav>
+        </nav>
+    </aside>
+
+    
+    <div class="article-content">
+        <h1 id="chapter-4-generative-synthesis-engine">Chapter 4: Generative Synthesis Engine</h1>
+<h2 id="beyond-vector-averaging-true-dialectical-synthesis">Beyond Vector Averaging: True Dialectical Synthesis</h2>
+<p>Traditional knowledge synthesis approaches often resort to mechanical blending - averaging vectors, voting on claims, or simple concatenation. CNS 2.0&rsquo;s Generative Synthesis Engine takes a fundamentally different approach: it models synthesis as an act of creative, reasoned generation through dialectical argumentation.</p>
+<p>The engine operates through four key stages:</p>
+<ol>
+<li><strong>Chiral Pair Selection</strong> - Identifying productive conflicts</li>
+<li><strong>Dialectical Prompt Construction</strong> - Preserving argumentative structure</li>
+<li><strong>Generative Synthesis</strong> - LLM-powered reasoning</li>
+<li><strong>Candidate Evaluation</strong> - Quality assessment and refinement</li>
+</ol>
+<p>Let&rsquo;s implement each component to create a system capable of genuine knowledge synthesis.</p>
+<h2 id="core-synthesis-infrastructure">Core Synthesis Infrastructure</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">185
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">186
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">187
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">188
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">189
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">190
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">191
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">192
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">193
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">194
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">195
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">196
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">197
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">198
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">208
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">209
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">210
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">211
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">212
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">213
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">214
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">215
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">216
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">217
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">218
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">219
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">220
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">221
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">222
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">223
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">224
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">225
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">226
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">227
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">228
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">229
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">230
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">231
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">232
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">233
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">234
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">235
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">236
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">237
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">238
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">239
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">240
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">241
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">242
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">243
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">244
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">245
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">246
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">247
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">248
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">249
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">250
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">251
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">252
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">253
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">254
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">255
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">256
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">257
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">258
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">259
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">260
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">261
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">262
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">263
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">264
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">265
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">266
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">267
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">268
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">269
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">270
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">271
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">272
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">273
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">274
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">275
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">276
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">277
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">278
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">279
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">280
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">281
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">282
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">283
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">284
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">285
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">286
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">287
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">288
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">289
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">290
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">291
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">292
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">293
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">294
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">295
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">296
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">297
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">298
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">299
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">300
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">301
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">302
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">303
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">304
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">305
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">306
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">307
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">308
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">309
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">310
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">311
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">312
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">313
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">314
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">315
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">316
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">317
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">318
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">319
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">320
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">321
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">322
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">323
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">324
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">325
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">326
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">327
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">328
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">329
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">330
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">331
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">332
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">333
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">334
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">335
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">336
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">337
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">338
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">339
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">340
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">341
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">342
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">343
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">344
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">345
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">346
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">347
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">348
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">349
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">350
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">351
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">352
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">353
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">354
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">355
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">356
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">357
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">358
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">359
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">360
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">361
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">362
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">363
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">364
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">365
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">366
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">367
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">368
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">369
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">370
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">371
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">372
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">373
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">374
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">375
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">376
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">377
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">378
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">379
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">380
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">381
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">382
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">383
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">384
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">385
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">386
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">387
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">388
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">389
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">390
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">391
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">392
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">393
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">394
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">395
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">396
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">397
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">398
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">399
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">400
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">401
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">402
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">403
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">404
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">405
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">406
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">407
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">408
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">409
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">410
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">411
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">412
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">413
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">Generative Synthesis Engine Implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">=========================================
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">LLM-powered dialectical reasoning for knowledge synthesis
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">typing</span> <span style="color:#cf222e">import</span> Dict<span style="color:#1f2328">,</span> List<span style="color:#1f2328">,</span> Tuple<span style="color:#1f2328">,</span> Optional<span style="color:#1f2328">,</span> Any<span style="color:#1f2328">,</span> Set
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">numpy</span> <span style="color:#cf222e">as</span> <span style="color:#24292e">np</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">dataclasses</span> <span style="color:#cf222e">import</span> dataclass
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">enum</span> <span style="color:#cf222e">import</span> Enum
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">json</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">logging</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">abc</span> <span style="color:#cf222e">import</span> ABC<span style="color:#1f2328">,</span> abstractmethod
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Import FAISS for scalable ANN-based pair finding</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">try</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">import</span> <span style="color:#24292e">faiss</span>
+</span></span><span style="display:flex;"><span>    HAS_FAISS <span style="color:#0550ae">=</span> <span style="color:#cf222e">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">except</span> ImportError<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    HAS_FAISS <span style="color:#0550ae">=</span> <span style="color:#cf222e">False</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">print</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Warning: faiss library not found. ChiralPairDetector will be inefficient.&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Configure logging for synthesis operations</span>
+</span></span><span style="display:flex;"><span>logging<span style="color:#0550ae">.</span>basicConfig<span style="color:#1f2328">(</span>level<span style="color:#0550ae">=</span>logging<span style="color:#0550ae">.</span>INFO<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>logger <span style="color:#0550ae">=</span> logging<span style="color:#0550ae">.</span>getLogger<span style="color:#1f2328">(</span><span style="color:#953800">__name__</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">ChiralPair</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Represents a pair of SNOs suitable for synthesis&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    sno_a<span style="color:#1f2328">:</span> StructuredNarrativeObject
+</span></span><span style="display:flex;"><span>    sno_b<span style="color:#1f2328">:</span> StructuredNarrativeObject
+</span></span><span style="display:flex;"><span>    chirality_score<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span>
+</span></span><span style="display:flex;"><span>    entanglement_score<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span>
+</span></span><span style="display:flex;"><span>    synthesis_potential<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span>
+</span></span><span style="display:flex;"><span>    conflict_points<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    shared_evidence<span style="color:#1f2328">:</span> Set<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">SynthesisCandidate</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Represents a candidate synthesis result&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    candidate_sno<span style="color:#1f2328">:</span> StructuredNarrativeObject
+</span></span><span style="display:flex;"><span>    source_pair<span style="color:#1f2328">:</span> ChiralPair
+</span></span><span style="display:flex;"><span>    generation_metadata<span style="color:#1f2328">:</span> Dict<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> Any<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    confidence<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">SynthesisStrategy</span><span style="color:#1f2328">(</span>Enum<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Different approaches to synthesis based on conflict type&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    COMPLEMENTARY <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;complementary&#34;</span>  <span style="color:#57606a"># Non-contradictory integration</span>
+</span></span><span style="display:flex;"><span>    DIALECTICAL <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;dialectical&#34;</span>      <span style="color:#57606a"># Resolution of contradictions</span>
+</span></span><span style="display:flex;"><span>    TRANSCENDENT <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;transcendent&#34;</span>    <span style="color:#57606a"># Higher-order perspective</span>
+</span></span><span style="display:flex;"><span>    EVIDENTIAL <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;evidential&#34;</span>        <span style="color:#57606a"># Evidence-based reconciliation</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">RelationalMetrics</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Computes relationships between SNOs for synthesis planning&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">chirality_score</span><span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span> 
+</span></span><span style="display:flex;"><span>                       sno_b<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Compute chirality score measuring opposition between hypotheses
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        High chirality = strong opposition with high trust
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#1f2328">(</span>sno_a<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span> <span style="color:#0550ae">or</span> 
+</span></span><span style="display:flex;"><span>            sno_b<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span> <span style="color:#0550ae">or</span>
+</span></span><span style="display:flex;"><span>            sno_a<span style="color:#0550ae">.</span>trust_score <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span> <span style="color:#0550ae">or</span> 
+</span></span><span style="display:flex;"><span>            sno_b<span style="color:#0550ae">.</span>trust_score <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Cosine similarity between hypothesis embeddings</span>
+</span></span><span style="display:flex;"><span>        cos_sim <span style="color:#0550ae">=</span> np<span style="color:#0550ae">.</span>dot<span style="color:#1f2328">(</span>sno_a<span style="color:#0550ae">.</span>hypothesis_embedding<span style="color:#1f2328">,</span> sno_b<span style="color:#0550ae">.</span>hypothesis_embedding<span style="color:#1f2328">)</span> <span style="color:#0550ae">/</span> <span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            np<span style="color:#0550ae">.</span>linalg<span style="color:#0550ae">.</span>norm<span style="color:#1f2328">(</span>sno_a<span style="color:#0550ae">.</span>hypothesis_embedding<span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> 
+</span></span><span style="display:flex;"><span>            np<span style="color:#0550ae">.</span>linalg<span style="color:#0550ae">.</span>norm<span style="color:#1f2328">(</span>sno_b<span style="color:#0550ae">.</span>hypothesis_embedding<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Chirality is high when hypotheses oppose but both are trusted</span>
+</span></span><span style="display:flex;"><span>        opposition <span style="color:#0550ae">=</span> <span style="color:#0550ae">1.0</span> <span style="color:#0550ae">-</span> cos_sim  <span style="color:#57606a"># High when dissimilar</span>
+</span></span><span style="display:flex;"><span>        trust_product <span style="color:#0550ae">=</span> sno_a<span style="color:#0550ae">.</span>trust_score <span style="color:#0550ae">*</span> sno_b<span style="color:#0550ae">.</span>trust_score
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> opposition <span style="color:#0550ae">*</span> trust_product
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">evidential_entanglement</span><span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                               sno_b<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> Tuple<span style="color:#1f2328">[</span><span style="color:#6639ba">float</span><span style="color:#1f2328">,</span> Set<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Compute evidential entanglement measuring shared evidence
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Returns (entanglement_score, shared_evidence_ids)
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        evidence_a <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>e<span style="color:#0550ae">.</span>source_id <span style="color:#cf222e">for</span> e <span style="color:#0550ae">in</span> sno_a<span style="color:#0550ae">.</span>evidence_set<span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        evidence_b <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>e<span style="color:#0550ae">.</span>source_id <span style="color:#cf222e">for</span> e <span style="color:#0550ae">in</span> sno_b<span style="color:#0550ae">.</span>evidence_set<span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#0550ae">not</span> evidence_a <span style="color:#0550ae">and</span> <span style="color:#0550ae">not</span> evidence_b<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#0550ae">0.0</span><span style="color:#1f2328">,</span> <span style="color:#6639ba">set</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        intersection <span style="color:#0550ae">=</span> evidence_a<span style="color:#0550ae">.</span>intersection<span style="color:#1f2328">(</span>evidence_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        union <span style="color:#0550ae">=</span> evidence_a<span style="color:#0550ae">.</span>union<span style="color:#1f2328">(</span>evidence_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Jaccard similarity</span>
+</span></span><span style="display:flex;"><span>        entanglement <span style="color:#0550ae">=</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>intersection<span style="color:#1f2328">)</span> <span style="color:#0550ae">/</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>union<span style="color:#1f2328">)</span> <span style="color:#cf222e">if</span> union <span style="color:#cf222e">else</span> <span style="color:#0550ae">0.0</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> entanglement<span style="color:#1f2328">,</span> intersection
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">synthesis_potential</span><span style="color:#1f2328">(</span>chirality<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">,</span> entanglement<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> <span style="color:#6639ba">float</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Compute overall synthesis potential
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        High potential requires both opposition and shared context
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Both metrics should be reasonably high for good synthesis potential</span>
+</span></span><span style="display:flex;"><span>        geometric_mean <span style="color:#0550ae">=</span> np<span style="color:#0550ae">.</span>sqrt<span style="color:#1f2328">(</span>chirality <span style="color:#0550ae">*</span> entanglement<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Bonus for balanced high scores</span>
+</span></span><span style="display:flex;"><span>        balance_bonus <span style="color:#0550ae">=</span> <span style="color:#0550ae">1.0</span> <span style="color:#0550ae">-</span> <span style="color:#6639ba">abs</span><span style="color:#1f2328">(</span>chirality <span style="color:#0550ae">-</span> entanglement<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> geometric_mean <span style="color:#0550ae">*</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">1.0</span> <span style="color:#0550ae">+</span> <span style="color:#0550ae">0.2</span> <span style="color:#0550ae">*</span> balance_bonus<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">ChiralPairDetector</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    Scalable SNO pair detection using Approximate Nearest Neighbor (ANN) search
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    From Paper to Code: Scalable Pair Finding with ANN
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    A naive O(n²) comparison of all SNOs is not scalable. The paper (Section 3.3) mandates 
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    a more efficient, two-step process:
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    1. First, an Approximate Nearest Neighbor index (e.g., LSH) on the H vectors is used 
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">       to efficiently pre-filter a small set of candidate pairs...
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    2. Second, the more computationally intensive EScore is calculated only for these 
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">       pre-filtered pairs.
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    We implement this using the faiss library, a high-performance ANN library. We build 
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    an index of all hypothesis embeddings. For each SNO, we query the index to find its 
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    k nearest neighbors (most conceptually similar SNOs). We then calculate the full 
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    CScore and EScore only for this small, pre-filtered set of candidates, dramatically 
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    reducing computation.
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> 
+</span></span><span style="display:flex;"><span>                 chirality_threshold<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.7</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                 entanglement_threshold<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.3</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                 synthesis_threshold<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.5</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                 k_neighbors<span style="color:#1f2328">:</span> <span style="color:#6639ba">int</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">20</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>chirality_threshold <span style="color:#0550ae">=</span> chirality_threshold
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>entanglement_threshold <span style="color:#0550ae">=</span> entanglement_threshold
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>synthesis_threshold <span style="color:#0550ae">=</span> synthesis_threshold
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>k_neighbors <span style="color:#0550ae">=</span> k_neighbors  <span style="color:#57606a"># Number of nearest neighbors to check</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#0550ae">not</span> HAS_FAISS<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            logger<span style="color:#0550ae">.</span>warning<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;FAISS not installed. Falling back to O(n²) pair detection.&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">find_chiral_pairs</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> 
+</span></span><span style="display:flex;"><span>                         sno_population<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span>StructuredNarrativeObject<span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>                         max_pairs<span style="color:#1f2328">:</span> <span style="color:#6639ba">int</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">10</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> List<span style="color:#1f2328">[</span>ChiralPair<span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Find the most promising chiral pairs using scalable ANN-based pre-filtering
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>sno_population<span style="color:#1f2328">)</span> <span style="color:#0550ae">&lt;</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Use FAISS for efficient pre-filtering if available</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> HAS_FAISS<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>_find_pairs_with_faiss<span style="color:#1f2328">(</span>sno_population<span style="color:#1f2328">,</span> max_pairs<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">else</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>_find_pairs_brute_force<span style="color:#1f2328">(</span>sno_population<span style="color:#1f2328">,</span> max_pairs<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">_find_pairs_with_faiss</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> sno_population<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span>StructuredNarrativeObject<span style="color:#1f2328">],</span> max_pairs<span style="color:#1f2328">:</span> <span style="color:#6639ba">int</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> List<span style="color:#1f2328">[</span>ChiralPair<span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Scalable O(n log n) pair finding using FAISS ANN index&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        promising_pairs <span style="color:#0550ae">=</span> <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 1. Prepare data and build FAISS index</span>
+</span></span><span style="display:flex;"><span>        embeddings <span style="color:#0550ae">=</span> np<span style="color:#0550ae">.</span>array<span style="color:#1f2328">([</span>s<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#cf222e">for</span> s <span style="color:#0550ae">in</span> sno_population <span style="color:#cf222e">if</span> s<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#0550ae">not</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">])</span><span style="color:#0550ae">.</span>astype<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;float32&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> embeddings<span style="color:#0550ae">.</span>shape<span style="color:#1f2328">[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">]</span> <span style="color:#0550ae">&lt;</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">:</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        sno_map <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>i<span style="color:#1f2328">:</span> sno <span style="color:#cf222e">for</span> i<span style="color:#1f2328">,</span> sno <span style="color:#0550ae">in</span> <span style="color:#6639ba">enumerate</span><span style="color:#1f2328">(</span>sno_population<span style="color:#1f2328">)</span> <span style="color:#cf222e">if</span> sno<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#0550ae">not</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        index <span style="color:#0550ae">=</span> faiss<span style="color:#0550ae">.</span>IndexFlatL2<span style="color:#1f2328">(</span>embeddings<span style="color:#0550ae">.</span>shape<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>        index<span style="color:#0550ae">.</span>add<span style="color:#1f2328">(</span>embeddings<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 2. Query the index to find nearest neighbors for each SNO</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># We query for k+1 because the first result will be the item itself</span>
+</span></span><span style="display:flex;"><span>        k <span style="color:#0550ae">=</span> <span style="color:#6639ba">min</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>k_neighbors <span style="color:#0550ae">+</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>sno_map<span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>        distances<span style="color:#1f2328">,</span> indices <span style="color:#0550ae">=</span> index<span style="color:#0550ae">.</span>search<span style="color:#1f2328">(</span>embeddings<span style="color:#1f2328">,</span> k<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 3. Process pre-filtered pairs</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> i <span style="color:#0550ae">in</span> <span style="color:#6639ba">range</span><span style="color:#1f2328">(</span><span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>indices<span style="color:#1f2328">)):</span>
+</span></span><span style="display:flex;"><span>            sno_a <span style="color:#0550ae">=</span> sno_map<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">for</span> j_idx <span style="color:#0550ae">in</span> <span style="color:#6639ba">range</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>indices<span style="color:#1f2328">[</span>i<span style="color:#1f2328">])):</span>  <span style="color:#57606a"># Skip the first one (self)</span>
+</span></span><span style="display:flex;"><span>                sno_b <span style="color:#0550ae">=</span> sno_map<span style="color:#1f2328">[</span>indices<span style="color:#1f2328">[</span>i<span style="color:#1f2328">][</span>j_idx<span style="color:#1f2328">]]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># To avoid duplicates, create a sorted key</span>
+</span></span><span style="display:flex;"><span>                pair_key <span style="color:#0550ae">=</span> <span style="color:#6639ba">tuple</span><span style="color:#1f2328">(</span><span style="color:#6639ba">sorted</span><span style="color:#1f2328">((</span>sno_a<span style="color:#0550ae">.</span>sno_id<span style="color:#1f2328">,</span> sno_b<span style="color:#0550ae">.</span>sno_id<span style="color:#1f2328">)))</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> pair_key <span style="color:#0550ae">in</span> promising_pairs<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># 4. Calculate full metrics ONLY for the pre-filtered pairs</span>
+</span></span><span style="display:flex;"><span>                chirality <span style="color:#0550ae">=</span> RelationalMetrics<span style="color:#0550ae">.</span>chirality_score<span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> chirality <span style="color:#0550ae">&lt;</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>chirality_threshold<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">continue</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                entanglement<span style="color:#1f2328">,</span> shared_evidence <span style="color:#0550ae">=</span> RelationalMetrics<span style="color:#0550ae">.</span>evidential_entanglement<span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> entanglement <span style="color:#0550ae">&lt;</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>entanglement_threshold<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">continue</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                potential <span style="color:#0550ae">=</span> RelationalMetrics<span style="color:#0550ae">.</span>synthesis_potential<span style="color:#1f2328">(</span>chirality<span style="color:#1f2328">,</span> entanglement<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> potential <span style="color:#0550ae">&lt;</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>synthesis_threshold<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">continue</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># If a pair is promising, add it</span>
+</span></span><span style="display:flex;"><span>                conflict_points <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>_identify_conflicts<span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                promising_pairs<span style="color:#1f2328">[</span>pair_key<span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> ChiralPair<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                    sno_a<span style="color:#0550ae">=</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#0550ae">=</span>sno_b<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    chirality_score<span style="color:#0550ae">=</span>chirality<span style="color:#1f2328">,</span> entanglement_score<span style="color:#0550ae">=</span>entanglement<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    synthesis_potential<span style="color:#0550ae">=</span>potential<span style="color:#1f2328">,</span> conflict_points<span style="color:#0550ae">=</span>conflict_points<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                    shared_evidence<span style="color:#0550ae">=</span>shared_evidence
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Sort by potential and return top candidates</span>
+</span></span><span style="display:flex;"><span>        sorted_pairs <span style="color:#0550ae">=</span> <span style="color:#6639ba">sorted</span><span style="color:#1f2328">(</span>promising_pairs<span style="color:#0550ae">.</span>values<span style="color:#1f2328">(),</span> key<span style="color:#0550ae">=</span><span style="color:#cf222e">lambda</span> p<span style="color:#1f2328">:</span> p<span style="color:#0550ae">.</span>synthesis_potential<span style="color:#1f2328">,</span> reverse<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> sorted_pairs<span style="color:#1f2328">[:</span>max_pairs<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">_find_pairs_brute_force</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> sno_population<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span>StructuredNarrativeObject<span style="color:#1f2328">],</span> max_pairs<span style="color:#1f2328">:</span> <span style="color:#6639ba">int</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> List<span style="color:#1f2328">[</span>ChiralPair<span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;O(n²) fallback implementation when FAISS is not available&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        candidate_pairs <span style="color:#0550ae">=</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Evaluate all pairs</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> i<span style="color:#1f2328">,</span> sno_a <span style="color:#0550ae">in</span> <span style="color:#6639ba">enumerate</span><span style="color:#1f2328">(</span>sno_population<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">for</span> j<span style="color:#1f2328">,</span> sno_b <span style="color:#0550ae">in</span> <span style="color:#6639ba">enumerate</span><span style="color:#1f2328">(</span>sno_population<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> i <span style="color:#0550ae">&gt;=</span> j<span style="color:#1f2328">:</span>  <span style="color:#57606a"># Avoid duplicates and self-comparison</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">continue</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Skip if either SNO lacks necessary components</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">not</span> sno_a<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">or</span> <span style="color:#0550ae">not</span> sno_b<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">or</span>
+</span></span><span style="display:flex;"><span>                    sno_a<span style="color:#0550ae">.</span>trust_score <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span> <span style="color:#0550ae">or</span> sno_b<span style="color:#0550ae">.</span>trust_score <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">continue</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Compute relational metrics</span>
+</span></span><span style="display:flex;"><span>                chirality <span style="color:#0550ae">=</span> RelationalMetrics<span style="color:#0550ae">.</span>chirality_score<span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                entanglement<span style="color:#1f2328">,</span> shared_evidence <span style="color:#0550ae">=</span> RelationalMetrics<span style="color:#0550ae">.</span>evidential_entanglement<span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                potential <span style="color:#0550ae">=</span> RelationalMetrics<span style="color:#0550ae">.</span>synthesis_potential<span style="color:#1f2328">(</span>chirality<span style="color:#1f2328">,</span> entanglement<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a"># Apply thresholds</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> <span style="color:#1f2328">(</span>chirality <span style="color:#0550ae">&gt;=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>chirality_threshold <span style="color:#0550ae">and</span> 
+</span></span><span style="display:flex;"><span>                    entanglement <span style="color:#0550ae">&gt;=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>entanglement_threshold <span style="color:#0550ae">and</span>
+</span></span><span style="display:flex;"><span>                    potential <span style="color:#0550ae">&gt;=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>synthesis_threshold<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                    <span style="color:#57606a"># Identify specific conflict points</span>
+</span></span><span style="display:flex;"><span>                    conflict_points <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>_identify_conflicts<span style="color:#1f2328">(</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                    pair <span style="color:#0550ae">=</span> ChiralPair<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>                        sno_a<span style="color:#0550ae">=</span>sno_a<span style="color:#1f2328">,</span> sno_b<span style="color:#0550ae">=</span>sno_b<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                        chirality_score<span style="color:#0550ae">=</span>chirality<span style="color:#1f2328">,</span> entanglement_score<span style="color:#0550ae">=</span>entanglement<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                        synthesis_potential<span style="color:#0550ae">=</span>potential<span style="color:#1f2328">,</span> conflict_points<span style="color:#0550ae">=</span>conflict_points<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                        shared_evidence<span style="color:#0550ae">=</span>shared_evidence
+</span></span><span style="display:flex;"><span>                    <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                    candidate_pairs<span style="color:#0550ae">.</span>append<span style="color:#1f2328">(</span>pair<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Sort by synthesis potential and return top candidates</span>
+</span></span><span style="display:flex;"><span>        candidate_pairs<span style="color:#0550ae">.</span>sort<span style="color:#1f2328">(</span>key<span style="color:#0550ae">=</span><span style="color:#cf222e">lambda</span> p<span style="color:#1f2328">:</span> p<span style="color:#0550ae">.</span>synthesis_potential<span style="color:#1f2328">,</span> reverse<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> candidate_pairs<span style="color:#1f2328">[:</span>max_pairs<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">_identify_conflicts</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> 
+</span></span><span style="display:flex;"><span>                          sno_a<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                          sno_b<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> List<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Identify specific points of conflict between SNOs&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        conflicts <span style="color:#0550ae">=</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Primary conflict: opposing central hypotheses</span>
+</span></span><span style="display:flex;"><span>        conflicts<span style="color:#0550ae">.</span>append<span style="color:#1f2328">(</span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Central hypothesis conflict: &#39;</span><span style="color:#0a3069">{</span>sno_a<span style="color:#0550ae">.</span>central_hypothesis<span style="color:#0a3069">}</span><span style="color:#0a3069">&#39; vs &#39;</span><span style="color:#0a3069">{</span>sno_b<span style="color:#0550ae">.</span>central_hypothesis<span style="color:#0a3069">}</span><span style="color:#0a3069">&#39;&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Secondary conflicts: contradictory claims in reasoning graphs</span>
+</span></span><span style="display:flex;"><span>        claims_a <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>node_data<span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;claim&#39;</span><span style="color:#1f2328">]</span><span style="color:#0550ae">.</span>content <span style="color:#cf222e">for</span> _<span style="color:#1f2328">,</span> node_data <span style="color:#0550ae">in</span> sno_a<span style="color:#0550ae">.</span>reasoning_graph<span style="color:#0550ae">.</span>nodes<span style="color:#1f2328">(</span>data<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">)}</span>
+</span></span><span style="display:flex;"><span>        claims_b <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>node_data<span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;claim&#39;</span><span style="color:#1f2328">]</span><span style="color:#0550ae">.</span>content <span style="color:#cf222e">for</span> _<span style="color:#1f2328">,</span> node_data <span style="color:#0550ae">in</span> sno_b<span style="color:#0550ae">.</span>reasoning_graph<span style="color:#0550ae">.</span>nodes<span style="color:#1f2328">(</span>data<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">)}</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Simple keyword-based conflict detection (in production, use semantic similarity)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> claim_a <span style="color:#0550ae">in</span> claims_a<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">for</span> claim_b <span style="color:#0550ae">in</span> claims_b<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>_claims_conflict<span style="color:#1f2328">(</span>claim_a<span style="color:#1f2328">,</span> claim_b<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>                    conflicts<span style="color:#0550ae">.</span>append<span style="color:#1f2328">(</span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Claim conflict: &#39;</span><span style="color:#0a3069">{</span>claim_a<span style="color:#0a3069">}</span><span style="color:#0a3069">&#39; vs &#39;</span><span style="color:#0a3069">{</span>claim_b<span style="color:#0a3069">}</span><span style="color:#0a3069">&#39;&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> conflicts<span style="color:#1f2328">[:</span><span style="color:#0550ae">5</span><span style="color:#1f2328">]</span>  <span style="color:#57606a"># Limit to most significant conflicts</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">_claims_conflict</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> claim_a<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> claim_b<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> <span style="color:#6639ba">bool</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;Simple heuristic to detect conflicting claims&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Look for opposing terms</span>
+</span></span><span style="display:flex;"><span>        opposing_pairs <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;increase&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;decrease&#39;</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;more&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;less&#39;</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;higher&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;lower&#39;</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;positive&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;negative&#39;</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;beneficial&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;harmful&#39;</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;true&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;false&#39;</span><span style="color:#1f2328">),</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;likely&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;unlikely&#39;</span><span style="color:#1f2328">),</span> <span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;significant&#39;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;insignificant&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        claim_a_lower <span style="color:#0550ae">=</span> claim_a<span style="color:#0550ae">.</span>lower<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>        claim_b_lower <span style="color:#0550ae">=</span> claim_b<span style="color:#0550ae">.</span>lower<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span> pos<span style="color:#1f2328">,</span> neg <span style="color:#0550ae">in</span> opposing_pairs<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span> <span style="color:#1f2328">((</span>pos <span style="color:#0550ae">in</span> claim_a_lower <span style="color:#0550ae">and</span> neg <span style="color:#0550ae">in</span> claim_b_lower<span style="color:#1f2328">)</span> <span style="color:#0550ae">or</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">(</span>neg <span style="color:#0550ae">in</span> claim_a_lower <span style="color:#0550ae">and</span> pos <span style="color:#0550ae">in</span> claim_b_lower<span style="color:#1f2328">)):</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">return</span> <span style="color:#cf222e">True</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#cf222e">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">### From Paper to Code: The Mathematical Metrics</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The <span style="color:#f6f8fa;background-color:#82071e">`</span>RelationalMetrics<span style="color:#f6f8fa;background-color:#82071e">`</span> <span style="color:#cf222e">class</span> <span style="color:#1f2328">is</span> where we implement the crucial formulas <span style="color:#cf222e">from</span> <span style="color:#24292e">Section</span> <span style="color:#0550ae">3.2</span> of the paper<span style="color:#0550ae">.</span> These metrics allow the system to identify the most <span style="color:#0550ae">*</span>productive<span style="color:#0550ae">*</span> conflicts <span style="color:#cf222e">for</span> synthesis<span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">**</span>Connecting the Chirality Score<span style="color:#1f2328">:</span><span style="color:#0550ae">**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The paper defines the Chirality Score <span style="color:#cf222e">as</span> a measure of opposition between highly<span style="color:#0550ae">-</span>trusted narratives<span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">**</span>Definition <span style="color:#0550ae">3.1</span> <span style="color:#1f2328">(</span>Chirality Score<span style="color:#1f2328">):</span><span style="color:#0550ae">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> \text<span style="color:#1f2328">{</span>CScore<span style="color:#1f2328">}(</span>SNO_i<span style="color:#1f2328">,</span> SNO_j<span style="color:#1f2328">)</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">1</span> <span style="color:#0550ae">-</span> H_i \cdot H_j<span style="color:#1f2328">)</span> \cdot <span style="color:#1f2328">(</span>T_i \cdot T_j<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Our Python code <span style="color:#0550ae">in</span> <span style="color:#f6f8fa;background-color:#82071e">`</span>RelationalMetrics<span style="color:#0550ae">.</span>chirality_score<span style="color:#f6f8fa;background-color:#82071e">`</span> mirrors this exactly<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#0550ae">1</span> <span style="color:#0550ae">-</span> H_i \cdot H_j<span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#1f2328">:</span> We calculate this using cosine similarity<span style="color:#0550ae">.</span> Since cosine similarity <span style="color:#0550ae">is</span> <span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#1f2328">(</span>H_i \cdot H_j<span style="color:#1f2328">)</span> <span style="color:#0550ae">/</span> <span style="color:#1f2328">(</span>\<span style="color:#0550ae">|</span>H_i\<span style="color:#0550ae">|</span> \<span style="color:#0550ae">|</span>H_j\<span style="color:#0550ae">|</span><span style="color:#1f2328">)</span><span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">and</span> our embeddings are often normalized<span style="color:#1f2328">,</span> <span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#0550ae">1.0</span> <span style="color:#0550ae">-</span> cos_sim<span style="color:#f6f8fa;background-color:#82071e">`</span> directly corresponds to this opposition term<span style="color:#0550ae">.</span> High similarity <span style="color:#1f2328">(</span>close to <span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> results <span style="color:#0550ae">in</span> low opposition<span style="color:#1f2328">,</span> <span style="color:#0550ae">and</span> low similarity <span style="color:#1f2328">(</span>close to <span style="color:#0550ae">0</span> <span style="color:#0550ae">or</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> results <span style="color:#0550ae">in</span> high opposition<span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">`</span>T_i \cdot T_j<span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#1f2328">:</span> This <span style="color:#0550ae">is</span> implemented <span style="color:#cf222e">as</span> <span style="color:#f6f8fa;background-color:#82071e">`</span>trust_product <span style="color:#0550ae">=</span> sno_a<span style="color:#0550ae">.</span>trust_score <span style="color:#0550ae">*</span> sno_b<span style="color:#0550ae">.</span>trust_score<span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">-</span> The final <span style="color:#cf222e">return</span> value <span style="color:#f6f8fa;background-color:#82071e">`</span>opposition <span style="color:#0550ae">*</span> trust_product<span style="color:#f6f8fa;background-color:#82071e">`</span> <span style="color:#0550ae">is</span> the direct implementation of the paper<span style="color:#0a3069">&#39;s `CScore` formula.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">**</span>Connecting Evidential Entanglement<span style="color:#1f2328">:</span><span style="color:#0550ae">**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The paper introduces Evidential Entanglement to measure <span style="color:#cf222e">if</span> two narratives are arguing over the same facts<span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">**</span>Definition <span style="color:#0550ae">3.2</span> <span style="color:#1f2328">(</span>Evidential Entanglement<span style="color:#1f2328">):</span><span style="color:#0550ae">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> This new metric measures the degree to which two narratives are arguing over the same data<span style="color:#0550ae">.</span> It <span style="color:#0550ae">is</span> calculated using the Jaccard similarity of their <span style="color:#0550ae">*</span>Evidence Sets <span style="color:#1f2328">(</span>E<span style="color:#1f2328">)</span><span style="color:#0550ae">*</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> \text<span style="color:#1f2328">{</span>EScore<span style="color:#1f2328">}(</span>SNO_i<span style="color:#1f2328">,</span> SNO_j<span style="color:#1f2328">)</span> <span style="color:#0550ae">=</span> \frac<span style="color:#1f2328">{</span><span style="color:#0550ae">|</span>\mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_i \cap \mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_j<span style="color:#0550ae">|</span><span style="color:#1f2328">}{</span><span style="color:#0550ae">|</span>\mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_i \cup \mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_j<span style="color:#0550ae">|</span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Let<span style="color:#0a3069">&#39;s look at our `RelationalMetrics.evidential_entanglement` method:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">`</span>evidence_a <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span>e<span style="color:#0550ae">.</span>source_id <span style="color:#cf222e">for</span> e <span style="color:#0550ae">in</span> sno_a<span style="color:#0550ae">.</span>evidence_set<span style="color:#1f2328">}</span><span style="color:#f6f8fa;background-color:#82071e">`</span> creates the <span style="color:#6639ba">set</span> <span style="color:#f6f8fa;background-color:#82071e">$</span>\mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_i<span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">`</span>intersection <span style="color:#0550ae">=</span> evidence_a<span style="color:#0550ae">.</span>intersection<span style="color:#1f2328">(</span>evidence_b<span style="color:#1f2328">)</span><span style="color:#f6f8fa;background-color:#82071e">`</span> calculates the numerator<span style="color:#1f2328">,</span> <span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#0550ae">|</span>\mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_i \cap \mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_j<span style="color:#0550ae">|</span><span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">`</span>union <span style="color:#0550ae">=</span> evidence_a<span style="color:#0550ae">.</span>union<span style="color:#1f2328">(</span>evidence_b<span style="color:#1f2328">)</span><span style="color:#f6f8fa;background-color:#82071e">`</span> calculates the denominator<span style="color:#1f2328">,</span> <span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#0550ae">|</span>\mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_i \cup \mathcal<span style="color:#1f2328">{</span>E<span style="color:#1f2328">}</span>_j<span style="color:#0550ae">|</span><span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">-</span> The final line<span style="color:#1f2328">,</span> <span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>intersection<span style="color:#1f2328">)</span> <span style="color:#0550ae">/</span> <span style="color:#6639ba">len</span><span style="color:#1f2328">(</span>union<span style="color:#1f2328">)</span><span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">is</span> a perfect implementation of the Jaccard similarity formula <span style="color:#cf222e">for</span> <span style="color:#f6f8fa;background-color:#82071e">`</span>EScore<span style="color:#f6f8fa;background-color:#82071e">`</span><span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The system<span style="color:#0a3069">&#39;s trigger for synthesis—prioritizing pairs with **both high Chirality and high Entanglement**—is directly implemented in the logic of our `ChiralPairDetector`.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">### Advanced Agent Action: Guided Narrative Exploration</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Beyond synthesis<span style="color:#1f2328">,</span> agents <span style="color:#0550ae">in</span> the CNS <span style="color:#0550ae">2.0</span> ecosystem can actively explore <span style="color:#0a3069">&#34;conceptual space&#34;</span> to refine <span style="color:#0550ae">or</span> evolve existing narratives<span style="color:#0550ae">.</span> Section <span style="color:#0550ae">3.4</span> of the paper introduces a powerful generative method <span style="color:#cf222e">for</span> this<span style="color:#1f2328">,</span> using a <span style="color:#0550ae">*</span>target embedding<span style="color:#0550ae">*</span> to guide the creation of a new<span style="color:#1f2328">,</span> improved SNO<span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">**</span>From Paper to Code<span style="color:#1f2328">:</span> Latent Space Targeting<span style="color:#0550ae">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> The paper defines a target vector <span style="color:#f6f8fa;background-color:#82071e">$</span>H_<span style="color:#1f2328">{</span>\text<span style="color:#1f2328">{</span>target<span style="color:#1f2328">}}</span><span style="color:#f6f8fa;background-color:#82071e">$</span> that represents a desirable direction <span style="color:#cf222e">for</span> evolution<span style="color:#f6f8fa;background-color:#82071e">—</span>one that increases the narrative<span style="color:#0a3069">&#39;s reward score while also moving away from its chiral opponent.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> H_<span style="color:#1f2328">{</span>\text<span style="color:#1f2328">{</span>target<span style="color:#1f2328">}}</span> <span style="color:#0550ae">=</span> H_<span style="color:#1f2328">{</span>i<span style="color:#1f2328">}</span> <span style="color:#0550ae">+</span> \alpha \nabla_<span style="color:#1f2328">{</span>H_i<span style="color:#1f2328">}</span> \text<span style="color:#1f2328">{</span>Reward<span style="color:#1f2328">}(</span>SNO_i<span style="color:#1f2328">)</span> <span style="color:#0550ae">+</span> \beta \cdot \text<span style="color:#1f2328">{</span>CScore<span style="color:#1f2328">}(</span>SNO_i<span style="color:#1f2328">,</span> SNO_j<span style="color:#1f2328">)</span> \frac<span style="color:#1f2328">{</span>H_<span style="color:#1f2328">{</span>i<span style="color:#1f2328">}</span> <span style="color:#0550ae">-</span> H_<span style="color:#1f2328">{</span>j<span style="color:#1f2328">}}{</span>\<span style="color:#0550ae">|</span>H_<span style="color:#1f2328">{</span>i<span style="color:#1f2328">}</span> <span style="color:#0550ae">-</span> H_<span style="color:#1f2328">{</span>j<span style="color:#1f2328">}</span>\<span style="color:#0550ae">|</span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#f6f8fa;background-color:#82071e">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> Let<span style="color:#0a3069">&#39;s break this down:</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">$</span>H_i<span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#1f2328">:</span> The starting point <span style="color:#1f2328">(</span>embedding of the current SNO<span style="color:#1f2328">)</span><span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">$</span>\alpha \nabla_<span style="color:#1f2328">{</span>H_i<span style="color:#1f2328">}</span> \text<span style="color:#1f2328">{</span>Reward<span style="color:#1f2328">}(</span>SNO_i<span style="color:#1f2328">)</span><span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#1f2328">:</span> The <span style="color:#0a3069">&#34;improvement&#34;</span> vector<span style="color:#0550ae">.</span> This <span style="color:#0550ae">is</span> a gradient step <span style="color:#0550ae">in</span> the direction that maximizes the SNO<span style="color:#0a3069">&#39;s reward. Calculating the true gradient is complex, so we&#39;</span>ll approximate it<span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">-</span> <span style="color:#f6f8fa;background-color:#82071e">$</span>\beta \cdot \text<span style="color:#1f2328">{</span>CScore<span style="color:#1f2328">}</span> \cdot \frac<span style="color:#1f2328">{</span>H_i <span style="color:#0550ae">-</span> H_j<span style="color:#1f2328">}{</span>\<span style="color:#0550ae">|</span>H_i <span style="color:#0550ae">-</span> H_j\<span style="color:#0550ae">|</span><span style="color:#1f2328">}</span><span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#1f2328">:</span> The <span style="color:#0a3069">&#34;repulsion&#34;</span> vector<span style="color:#0550ae">.</span> It pushes the new SNO away <span style="color:#cf222e">from</span> <span style="color:#24292e">its</span> chiral opponent <span style="color:#f6f8fa;background-color:#82071e">$</span>SNO_j<span style="color:#f6f8fa;background-color:#82071e">$</span><span style="color:#1f2328">,</span> scaled by their Chirality Score<span style="color:#0550ae">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">```</span>python
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">NarrativeExplorer</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0a3069">&#34;&#34;&#34;Implements guided narrative exploration via latent space targeting.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">__init__</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> alpha<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.1</span><span style="color:#1f2328">,</span> beta<span style="color:#1f2328">:</span> <span style="color:#6639ba">float</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0.2</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>alpha <span style="color:#0550ae">=</span> alpha  <span style="color:#57606a"># Learning rate for reward gradient</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>beta <span style="color:#0550ae">=</span> beta    <span style="color:#57606a"># Scaling factor for repulsion</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">compute_target_embedding</span><span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        sno_i<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        sno_j<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        critic_pipeline<span style="color:#1f2328">:</span> CriticPipeline
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> Optional<span style="color:#1f2328">[</span>np<span style="color:#0550ae">.</span>ndarray<span style="color:#1f2328">]:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Calculates the target embedding H_target based on Equation (3).
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> sno_i<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span> <span style="color:#0550ae">or</span> sno_j<span style="color:#0550ae">.</span>hypothesis_embedding <span style="color:#0550ae">is</span> <span style="color:#cf222e">None</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#cf222e">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        H_i <span style="color:#0550ae">=</span> sno_i<span style="color:#0550ae">.</span>hypothesis_embedding
+</span></span><span style="display:flex;"><span>        H_j <span style="color:#0550ae">=</span> sno_j<span style="color:#0550ae">.</span>hypothesis_embedding
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 1. Calculate approximate reward gradient (alpha term)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># We approximate the gradient by seeing how a small perturbation towards a random</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># &#34;better&#34; direction affects the reward. For simplicity here, we&#39;ll use a</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># simplified proxy: move towards a generic &#34;high-reward&#34; vector (e.g., origin).</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># A more advanced implementation would use finite differences.</span>
+</span></span><span style="display:flex;"><span>        reward_gradient_approx <span style="color:#0550ae">=</span> <span style="color:#0550ae">-</span>H_i <span style="color:#57606a"># Simple approximation: move towards origin (less extreme)</span>
+</span></span><span style="display:flex;"><span>        improvement_vector <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>alpha <span style="color:#0550ae">*</span> reward_gradient_approx
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 2. Calculate repulsion vector (beta term)</span>
+</span></span><span style="display:flex;"><span>        chirality <span style="color:#0550ae">=</span> RelationalMetrics<span style="color:#0550ae">.</span>chirality_score<span style="color:#1f2328">(</span>sno_i<span style="color:#1f2328">,</span> sno_j<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        direction_vector <span style="color:#0550ae">=</span> H_i <span style="color:#0550ae">-</span> H_j
+</span></span><span style="display:flex;"><span>        norm_direction_vector <span style="color:#0550ae">=</span> direction_vector <span style="color:#0550ae">/</span> np<span style="color:#0550ae">.</span>linalg<span style="color:#0550ae">.</span>norm<span style="color:#1f2328">(</span>direction_vector<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        repulsion_vector <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>beta <span style="color:#0550ae">*</span> chirality <span style="color:#0550ae">*</span> norm_direction_vector
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># 3. Combine to get H_target</span>
+</span></span><span style="display:flex;"><span>        H_target <span style="color:#0550ae">=</span> H_i <span style="color:#0550ae">+</span> improvement_vector <span style="color:#0550ae">+</span> repulsion_vector
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a"># Renormalize the target vector to maintain unit length</span>
+</span></span><span style="display:flex;"><span>        H_target_normalized <span style="color:#0550ae">=</span> H_target <span style="color:#0550ae">/</span> np<span style="color:#0550ae">.</span>linalg<span style="color:#0550ae">.</span>norm<span style="color:#1f2328">(</span>H_target<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> H_target_normalized
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">generate_exploration_prompt</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> target_embedding<span style="color:#1f2328">:</span> np<span style="color:#0550ae">.</span>ndarray<span style="color:#1f2328">,</span> source_sno<span style="color:#1f2328">:</span> StructuredNarrativeObject<span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Creates a prompt for an LLM to generate a new SNO based on H_target.
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        Note: This requires a method to find text corresponding to an embedding (semantic search).
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        For now, we create a descriptive prompt.
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Generate a new, refined central hypothesis that is conceptually similar to a target concept, &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;while drawing inspiration from the following narrative.</span><span style="color:#0a3069">\n\n</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;SOURCE NARRATIVE HYPOTHESIS: &#39;</span><span style="color:#0a3069">{</span>source_sno<span style="color:#0550ae">.</span>central_hypothesis<span style="color:#0a3069">}</span><span style="color:#0a3069">&#39;</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;INSPIRATION CLAIMS:</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">{</span><span style="color:#1f2328">[</span>node<span style="color:#1f2328">[</span><span style="color:#0a3069">&#39;claim&#39;</span><span style="color:#1f2328">]</span><span style="color:#0550ae">.</span>content <span style="color:#cf222e">for</span> _<span style="color:#1f2328">,</span> node <span style="color:#0550ae">in</span> source_sno<span style="color:#0550ae">.</span>reasoning_graph<span style="color:#0550ae">.</span>nodes<span style="color:#1f2328">(</span>data<span style="color:#0550ae">=</span><span style="color:#cf222e">True</span><span style="color:#1f2328">)]</span><span style="color:#0a3069">}</span><span style="color:#0a3069">\n\n</span><span style="color:#0a3069">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;The new hypothesis should explore a conceptual direction that is an improvement upon the source, &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;resolving its weaknesses and moving away from known contradictions. &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Generate only the new, single-sentence central hypothesis.&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+    <nav class="article-nav">
+        <div class="nav-previous">
+            
+                <a href="/chapter-5-system-integration/" class="nav-link prev-link">
+                    <i data-feather="arrow-right"></i>
+                    <div class="nav-text">
+                        <span class="nav-label">Next</span>
+                        <span class="nav-title">Chapter 5: System Integration</span>
+                    </div>
+                </a>
+            
+        </div>
+        
+        <div class="nav-next">
+            
+                <a href="/chapter-3-critic-pipeline/" class="nav-link next-link">
+                    <div class="nav-text">
+                        <span class="nav-label">Previous</span>
+                        <span class="nav-title">Chapter 3: Multi-Component Critic Pipeline</span>
+                    </div>
+                    <i data-feather="arrow-left"></i>
+                </a>
+            
+        </div>
+    </nav>
+
+    
+    <aside class="chapter-summary">
+        <h3>Chapter Summary</h3>
+        <div class="summary-content">
+            
+                <p>Creating LLM-powered dialectical reasoning for knowledge synthesis.</p>
+                <ul>
+                    <li>Chiral pair detection algorithms</li>
+                    <li>Synthesis strategy determination</li>
+                    <li>Generative synthesis implementation</li>
+                </ul>
+            
+        </div>
+    </aside>
+</article>
+
+            </div>
+        </main>
+
+        
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <p>&copy; 2025 GTCode.com. Educational content for CNS 2.0 implementation.</p>
+                        <p>Based on <a href="https://github.com/nshkrdotcom/research_papers/blob/main/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="/js/navigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+    
+    <script>
+        
+        if (window.feather) feather.replace();
+    </script>
+</body>
+</html>
