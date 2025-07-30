@@ -280,17 +280,6 @@ a:hover {
     padding-left: 0;
 }
 
-/* ===== Code Blocks ===== */
-div.highlight {
-    margin: 1.5rem 0;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.875rem;
-}
-
-
-
 /* Inline code styling */
 p code,
 li code,
