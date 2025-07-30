@@ -2,11 +2,9 @@ name: Deploy Hugo Site to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
-    paths: [ "hugo-site/**" ]
+    branches: [ "main", "master" ]
   pull_request:
-    branches: [ "main" ]
-    paths: [ "hugo-site/**" ]
+    branches: [ "main", "master" ]
   workflow_dispatch:
 
 permissions:
@@ -21,7 +19,6 @@ concurrency:
 defaults:
   run:
     shell: bash
-    working-directory: ./hugo-site
 
 jobs:
   build:
@@ -42,9 +39,24 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Check for Hugo files and set working directory
+        id: hugo-check
+        run: |
+          if [ -f "hugo-site/config.yaml" ] || [ -f "hugo-site/config.yml" ] || [ -f "hugo-site/config.toml" ]; then
+            echo "hugo_dir=hugo-site" >> $GITHUB_OUTPUT
+            echo "Hugo site found in hugo-site/ directory"
+          elif [ -f "config.yaml" ] || [ -f "config.yml" ] || [ -f "config.toml" ]; then
+            echo "hugo_dir=." >> $GITHUB_OUTPUT
+            echo "Hugo site found in root directory"
+          else
+            echo "ERROR: No Hugo config file found!"
+            exit 1
+          fi
       - name: Install Node.js dependencies
+        working-directory: ${{ steps.hugo-check.outputs.hugo_dir }}
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
+        working-directory: ${{ steps.hugo-check.outputs.hugo_dir }}
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
@@ -52,11 +64,11 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./hugo-site/public
+          path: ./${{ steps.hugo-check.outputs.hugo_dir }}/public
 
   deploy:
     environment:
