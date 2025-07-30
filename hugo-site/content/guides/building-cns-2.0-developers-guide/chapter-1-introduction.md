@@ -20,6 +20,16 @@ In our information-rich world, one of the most pressing challenges is synthesizi
 
 **Chiral Narrative Synthesis (CNS) 2.0** addresses this fundamental challenge through a computational framework that treats hypotheses as mathematically evaluable data structures rather than simple text.
 
+## Who Is This Guide For?
+
+This guide is designed for developers, researchers, and engineers who are interested in building sophisticated AI systems for knowledge synthesis. It is for you if:
+
+- You are a **Python developer** looking to implement advanced, research-grade AI concepts.
+- You are a **researcher** in NLP or AI who wants to move from theory to a practical, working implementation.
+- You are an **engineer** tasked with building systems that can reason about and reconcile conflicting data sources.
+
+A strong understanding of Python is required, and familiarity with core machine learning concepts (like embeddings) and libraries (like NumPy) will be highly beneficial. While we will explain the CNS-specific concepts in detail, this guide is not a general introduction to AI or Python programming.
+
 ## Core Innovation: Beyond Vector Averaging
 
 Traditional knowledge synthesis approaches often resort to simple averaging or majority voting. CNS 2.0 introduces a revolutionary approach through four key innovations:
@@ -96,47 +106,16 @@ Unstructured Data (Documents, Reports)
 
 This diagram illustrates how raw information is transformed into structured knowledge, which is then refined through a dialectical process that pits competing narratives against each other to generate novel, more robust insights.
 
-## Setting Up Our Development Environment
+## Foundational Data Structures
 
-Let's begin by establishing the foundational Python environment for our CNS 2.0 implementation:
+Before we dive into the full system, let's define two simple but crucial data structures that will be used throughout our implementation: `RelationType` and `EvidenceItem`. These form the building blocks of our reasoning graphs and evidence sets.
 
 ```python
-"""
-CNS 2.0 Implementation Foundation
-================================
-Core imports and basic setup for Chiral Narrative Synthesis
-"""
-
 # --- Standard Library Imports ---
-# These modules provide core functionalities without needing external installation.
-import json  # For working with JSON data (e.g., configurations, SNO serialization)
-import hashlib  # For creating unique fingerprints of data (e.g., evidence content)
-from enum import Enum  # For creating enumerations (like RelationType) for clear, readable code
-from typing import Dict, List, Tuple, Set, Optional, Union  # For precise type hinting, improving code clarity and maintainability
-from dataclasses import dataclass, field  # For creating structured data classes (like SNOs and EvidenceItems) with less boilerplate
-from abc import ABC, abstractmethod  # For defining abstract base classes (like BaseCritic) to enforce a common interface
-
-# --- Core Scientific Computing and Graph Libraries ---
-# These form the backbone of our data structures and mathematical operations.
-import numpy as np  # The fundamental package for numerical computation in Python; essential for vector operations on embeddings.
-import networkx as nx  # A powerful library for creating, manipulating, and studying complex networks; used for our Reasoning Graphs.
-
-# --- Machine Learning and NLP Libraries (Research-Grade Implementation) ---
-# These are required for the advanced semantic capabilities of CNS 2.0.
-try:
-    import torch  # A leading deep learning framework, required by transformers and sentence-transformers.
-    import transformers  # Provides state-of-the-art machine learning models (like RoBERTa for NLI) and tokenizers.
-    from sentence_transformers import SentenceTransformer  # A library for easily computing dense vector embeddings for sentences.
-    HAS_TRANSFORMERS = True
-except ImportError:
-    HAS_TRANSFORMERS = False
-    print("WARNING: Key NLP libraries not found. CNS 2.0 will run in a simplified, data-structure-only mode.")
-    print("For full research-grade functionality, install with: pip install torch transformers sentence-transformers")
-
-# A research-grade implementation relies on semantic understanding, which requires these libraries.
-# We use this assertion to ensure the environment is correctly set up for the main tasks.
-if not HAS_TRANSFORMERS:
-    print("Proceeding in simplified mode. Any operations requiring semantic embeddings will fail.")
+from enum import Enum
+from typing import Optional
+from dataclasses import dataclass, field
+import hashlib
 
 class RelationType(Enum):
     """Enumeration of logical relationship types in reasoning graphs for clarity and consistency."""
@@ -159,39 +138,92 @@ class EvidenceItem:
         """Generate a content hash after the object is initialized."""
         if self.doc_hash is None:
             self.doc_hash = hashlib.sha256(self.content.encode()).hexdigest()[:16]
+```
+These classes ensure our code is readable, type-safe, and consistent when representing the core components of a narrative.
+
+## Setting Up the CNS 2.0 Environment
+
+Now, let's establish the broader Python environment for our implementation. This includes all necessary imports and a centralized configuration class to manage system parameters.
+
+```python
+"""
+CNS 2.0 Implementation Foundation
+================================
+Core imports and basic setup for Chiral Narrative Synthesis
+"""
+
+# --- Standard Library Imports ---
+import json
+from typing import Dict, List, Tuple, Set, Union
+from abc import ABC, abstractmethod
+
+# --- Core Scientific Computing and Graph Libraries ---
+import numpy as np
+import networkx as nx
+
+# --- Machine Learning and NLP Libraries (Research-Grade Implementation) ---
+try:
+    import torch
+    import transformers
+    from sentence_transformers import SentenceTransformer
+    HAS_TRANSFORMERS = True
+except ImportError:
+    HAS_TRANSFORMERS = False
+    print("WARNING: Key NLP libraries not found. CNS 2.0 will run in a simplified, data-structure-only mode.")
+    print("For full research-grade functionality, install with: pip install torch transformers sentence-transformers")
+
+# A research-grade implementation relies on semantic understanding, which requires these libraries.
+if not HAS_TRANSFORMERS:
+    print("Proceeding in simplified mode. Any operations requiring semantic embeddings will fail.")
 
 class CNSConfig:
     """
     Configuration class for all CNS 2.0 system parameters.
-    Centralizing configuration makes the system easier to tune and manage.
+    Centralizing configuration makes the system easier to tune and manage. Each parameter
+    plays a critical role in the system's behavior.
     """
     
     def __init__(self):
-        # Embedding model dimensions. 768 is common for models like all-MiniLM-L6-v2.
+        # --- Embedding Model ---
+        # The dimension of the vectors used to represent text semantically.
+        # This MUST match the output dimension of the chosen embedding model.
+        # 768 is common for models like all-MiniLM-L6-v2.
         self.embedding_dim = 768
         
-        # Weights for the critic pipeline's final reward function. These can be tuned.
+        # --- Critic Pipeline Weights ---
+        # These weights determine the system's "values". They control the balance
+        # between evidential support (grounding), logical coherence (logic), and
+        # originality (novelty) when calculating a narrative's final trust score.
         self.critic_weights = {
             'grounding': 0.4,
             'logic': 0.3,
             'novelty': 0.3
         }
         
-        # Parameters for the Novelty-Parsimony Critic (from the paper's formula).
-        self.novelty_alpha = 0.7  # Weight for novelty (distance from existing SNOs)
-        self.novelty_beta = 0.3   # Penalty for complexity (graph edge-to-node ratio)
+        # --- Novelty-Parsimony Critic Parameters ---
+        # These values tune the Novelty critic.
+        # 'alpha' controls the reward for being different from existing ideas.
+        # 'beta' controls the penalty for being overly complex (too many claims/edges).
+        self.novelty_alpha = 0.7
+        self.novelty_beta = 0.3
 
-        # Thresholds to trigger the synthesis process.
+        # --- Synthesis Trigger Thresholds ---
+        # These thresholds determine when the system should attempt to synthesize
+        # a new idea from two conflicting narratives.
+        # 'chirality': How directly opposed two narratives must be.
+        # 'entanglement': How much shared evidence they must be arguing over.
         self.synthesis_thresholds = {
             'chirality': 0.7,
             'entanglement': 0.5
         }
         
-        # Configuration for the specific machine learning models to be used.
+        # --- Model Identifiers ---
+        # Specifies which pre-trained models to download and use. This allows for
+        # easy swapping of models to experiment with different capabilities.
         self.models = {
             'embedding': "all-MiniLM-L6-v2",
-            'nli': "roberta-large-mnli",  # A powerful model for the Grounding Critic
-            'synthesis': "mistralai/Mistral-7B-Instruct-v0.1"  # A capable model for the Synthesis Engine
+            'nli': "roberta-large-mnli",
+            'synthesis': "mistralai/Mistral-7B-Instruct-v0.1"
         }
 
     def to_dict(self) -> Dict:
@@ -211,3 +243,5 @@ cns_config = CNSConfig()
 print("CNS 2.0 Foundation Environment Ready")
 print("Current Configuration:")
 print(json.dumps(cns_config.to_dict(), indent=2))
+```
+This restructured setup provides a clearer, step-by-step introduction to the foundational components of the CNS 2.0 system.
