@@ -71,4 +71,10 @@
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://gtcode.com/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf</loc>
+        <lastmod>2025-07-30</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
