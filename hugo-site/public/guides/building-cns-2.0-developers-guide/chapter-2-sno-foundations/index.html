@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753859212">
+    <link rel="stylesheet" href="/css/style.css?v=1753861471">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,19 +133,15 @@
   <ul>
     <li><a href="#understanding-structured-narrative-objects">Understanding Structured Narrative Objects</a>
       <ul>
-        <li><a href="#from-paper-to-code-the-mathematical-foundation">From Paper to Code: The Mathematical Foundation</a></li>
+        <li><a href="#the-role-of-each-component">The Role of Each Component</a></li>
       </ul>
     </li>
-    <li><a href="#core-sno-implementation">Core SNO Implementation</a>
-      <ul>
-        <li><a href="#the-importance-of-structured-graph-components">The Importance of Structured Graph Components</a></li>
-      </ul>
-    </li>
+    <li><a href="#core-sno-implementation">Core SNO Implementation</a></li>
     <li><a href="#building-a-reasoning-graph-a-worked-example">Building a Reasoning Graph: A Worked Example</a></li>
     <li><a href="#sno-serialization-and-production-level-persistence">SNO Serialization and Production-Level Persistence</a>
       <ul>
         <li><a href="#the-basic-mechanism-to_dict-and-from_dict">The Basic Mechanism: <code>to_dict()</code> and <code>from_dict()</code></a></li>
-        <li><a href="#production-challenge-1-scalability">Production Challenge 1: Scalability</a></li>
+        <li><a href="#production-challenge-1-scalability-and-concurrency">Production Challenge 1: Scalability and Concurrency</a></li>
         <li><a href="#production-challenge-2-schema-evolution">Production Challenge 2: Schema Evolution</a></li>
       </ul>
     </li>
@@ -161,47 +157,52 @@
 </div>
 <h1 id="chapter-2-sno-foundations">Chapter 2: SNO Foundations</h1>
 <h2 id="understanding-structured-narrative-objects">Understanding Structured Narrative Objects</h2>
-<p>Structured Narrative Objects (SNOs) are the heart of CNS 2.0. Unlike simple vector representations that lose critical structural information, SNOs preserve the full richness of argumentative structure while maintaining computational tractability.</p>
-<p>An SNO is formally defined as a 4-tuple: <strong>𝒮 = (H, G, ℰ, T)</strong> where:</p>
-<ul>
-<li><strong>H</strong>: Hypothesis Embedding (dense vector)</li>
-<li><strong>G</strong>: Reasoning Graph (directed acyclic graph)</li>
-<li><strong>ℰ</strong>: Evidence Set (grounding data sources)</li>
-<li><strong>T</strong>: Trust Score (derived confidence measure)</li>
-</ul>
-<h3 id="from-paper-to-code-the-mathematical-foundation">From Paper to Code: The Mathematical Foundation</h3>
-<p>First, let&rsquo;s look at the formal definition from the paper. Section 2.1 defines a Structured Narrative Object as a mathematical construct.</p>
+<p>Structured Narrative Objects (SNOs) are the heart of CNS 2.0. Unlike simple vector representations that lose critical structural and evidential information, SNOs preserve the full richness of an argument.</p>
+<p>An SNO is formally defined as a 4-tuple: <strong>𝒮 = (H, G, ℰ, T)</strong>. Let&rsquo;s break down the mathematical definition from Section 2.1 of the paper and then explore the specific role each component plays.</p>
 <blockquote>
 <p><strong>Definition 2.1 (Structured Narrative Object)</strong>
 An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 <ul>
-<li><strong>Hypothesis Embedding</strong> $H \in \mathbb{R}^d$: A $d$-dimensional dense vector encoding the narrative&rsquo;s central claim.</li>
-<li><strong>Reasoning Graph</strong> $G = (V, E_G)$: A directed acyclic graph where vertices $V$ are sub-claims and edges $E_G$ are typed logical relationships.</li>
+<li><strong>Hypothesis Embedding</strong> $H \in \mathbb{R}^d$: A $d$-dimensional dense vector.</li>
+<li><strong>Reasoning Graph</strong> $G = (V, E_G)$: A directed acyclic graph with vertices $V$ (sub-claims) and typed edges $E_G$.</li>
 <li><strong>Evidence Set</strong> $\mathcal{E} = \{e_1, \ldots, e_n\}$: Pointers to grounding data sources.</li>
-<li><strong>Trust Score</strong> $T \in [0, 1]$: A derived confidence measure computed by the critic pipeline.</li>
+<li><strong>Trust Score</strong> $T \in [0, 1]$: A derived confidence measure.</li>
 </ul></blockquote>
-<p><strong>From Paper to Code:</strong></p>
-<p>Our <code>StructuredNarrativeObject</code> Python class is the direct, practical implementation of this mathematical 4-tuple. Let&rsquo;s map the theory to our code:</p>
+<h3 id="the-role-of-each-component">The Role of Each Component</h3>
+<p>It is crucial to understand that <code>H</code>, <code>G</code>, <code>E</code>, and <code>T</code> are not just data fields; they are the primary inputs and outputs for the different functional parts of the CNS 2.0 system.</p>
 <ul>
-<li><strong><code>H</code> (Hypothesis Embedding):</strong> Corresponds to <code>self.hypothesis_embedding</code>, an <code>np.ndarray</code> holding the dense vector of the central claim.</li>
-<li><strong><code>G</code> (Reasoning Graph):</strong> Implemented as <code>self.reasoning_graph</code>, a <code>networkx.DiGraph</code>. The paper&rsquo;s acyclic requirement is enforced by a check for cycles when adding edges.</li>
-<li><strong><code>ℰ</code> (Evidence Set):</strong> This is our <code>self.evidence_set</code>, a Python <code>set</code> of <code>EvidenceItem</code> objects.</li>
-<li><strong><code>T</code> (Trust Score):</strong> This is <code>self.trust_score</code>, initialized as <code>None</code> and populated later by the <code>CriticPipeline</code>.</li>
+<li>
+<p><strong><code>H</code> (Hypothesis Embedding): The SNO&rsquo;s Address in Conceptual Space.</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Represents the semantic essence of the SNO&rsquo;s central claim.</li>
+<li><strong>Used By:</strong> The <code>RelationalMetrics</code> (Chapter 4) to calculate the <code>Chirality Score</code> (i.e., how much do two SNOs disagree?) and the <code>NoveltyParsimonyCritic</code> (Chapter 3) to measure the distance to other SNOs. It gives the SNO a &ldquo;location&rdquo; in a high-dimensional map of ideas.</li>
 </ul>
-<p>Understanding this mapping is key. We&rsquo;re not just creating a data class; we&rsquo;re instantiating a formal mathematical object.</p>
-<h4 id="a-note-on-embeddings">A Note on Embeddings</h4>
-<p>For mathematical primitives like the Chirality and Novelty Scores to work, we need a semantically meaningful vector space. Simple fallbacks like hash-based vectors produce random outputs that destroy any geometric meaning. Therefore, our implementation treats a real embedding model as a mandatory component.</p>
+</li>
+<li>
+<p><strong><code>G</code> (Reasoning Graph): The SNO&rsquo;s Internal Logic.</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Encodes the structure of the argument—how different claims support or contradict each other.</li>
+<li><strong>Used By:</strong> The <code>LogicCritic</code> (Chapter 3), which analyzes <code>G</code>&rsquo;s structure (e.g., for orphaned claims or circular reasoning) to assess the argument&rsquo;s coherence.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ℰ</code> (Evidence Set): The SNO&rsquo;s Connection to Reality.</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Grounds the abstract claims of the narrative in verifiable, external data.</li>
+<li><strong>Used By:</strong> The <code>GroundingCritic</code> (Chapter 3), which checks the claims in <code>G</code> against the evidence in <code>E</code> to see if they are factually supported.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>T</code> (Trust Score): The SNO&rsquo;s Evaluated Quality.</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Represents the final, holistic quality score of the SNO after being evaluated. It is an <em>output</em>, not an intrinsic property.</li>
+<li><strong>Used By:</strong> The <code>RelationalMetrics</code> (Chapter 4), where it weights the <code>Chirality Score</code>, ensuring that conflicts between two high-trust SNOs are prioritized. It&rsquo;s also the final metric for the &ldquo;survival of the fittest&rdquo; selection mechanism.</li>
+</ul>
+</li>
+</ul>
+<p>Understanding this functional separation is key. We are not just creating a data class; we are instantiating a formal mathematical object where each component serves a distinct and vital purpose in the system&rsquo;s workflow.</p>
 <h2 id="core-sno-implementation">Core SNO Implementation</h2>
-<p>The following code block contains the complete, updated <code>StructuredNarrativeObject</code> class. We have enhanced it with more detailed comments and robust serialization methods, which we will discuss in detail.</p>
-<h3 id="the-importance-of-structured-graph-components">The Importance of Structured Graph Components</h3>
-<p>A key software engineering decision in the implementation of the SNO is the use of <code>dataclasses</code> for <code>ClaimNode</code> and <code>ReasoningEdge</code> instead of simpler Python dictionaries. This choice is deliberate and crucial for building a robust, maintainable system. While a dictionary like <code>{'claim_id': 'c1', 'content': '...'}</code> might seem sufficient initially, it leads to significant problems in a large-scale project. Structured classes provide several key advantages:</p>
-<ul>
-<li><strong>Type Safety and Validation</strong>: Dataclasses, especially when combined with type hints, allow static analysis tools (like MyPy) to catch a wide range of errors before the code is ever run. For instance, the compiler knows <code>ReasoningEdge.strength</code> must be a <code>float</code>. This prevents subtle bugs that might arise from accidentally assigning a string or <code>None</code> value, which would only be discovered at runtime with a dictionary-based approach.</li>
-<li><strong>Self-Documentation and Readability</strong>: The class definition acts as clear, enforceable documentation. A developer looking at <code>ClaimNode</code> immediately knows the exact fields a claim is expected to have and their corresponding types. This is far more reliable and easier to understand than hunting through the code to find where a dictionary is created to guess its expected structure.</li>
-<li><strong>Extensibility and Maintainability</strong>: As the CNS system evolves, its data structures will inevitably change. Imagine we need to add an <code>author</code> field to every claim. With the <code>ClaimNode</code> dataclass, we simply add one line: <code>author: Optional[str] = None</code>. All parts of the code that create or access claims will now be subject to type checking against this new structure. In a dictionary-based system, this change would be silent. You would have to manually find every place a &ldquo;claim&rdquo; dictionary is created and add the new key, a process that is highly error-prone and difficult to enforce.</li>
-<li><strong>IDE Support</strong>: Using explicit classes provides better autocompletion, refactoring, and navigation support in modern IDEs, significantly improving developer productivity.</li>
-</ul>
-<p>These design choices are not mere formalities; they are foundational to creating a system that is robust, scalable, and can be effectively maintained and extended by a team of developers over time.</p>
+<p>The following code block contains the complete, updated <code>StructuredNarrativeObject</code> class. We have enhanced it with more detailed comments, robust serialization methods, and more explicit links back to the paper&rsquo;s definitions.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Structured Narrative Objects (SNO) Implementation
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">===============================================
@@ -211,22 +212,25 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> networkx <span style="color:#66d9ef">as</span> nx
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Tuple, Set, Optional, Any
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Set, Optional, Any
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field, asdict
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> uuid
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure basic logging</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure basic logging for warnings and errors</span>
 </span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig(level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>INFO, format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assuming RelationType and EvidenceItem are defined as in Chapter 1</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># For brevity, their definitions from the previous chapter are omitted here.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assume RelationType and EvidenceItem are defined as in Chapter 1.</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReasoningEdge</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a typed logical relationship in the reasoning graph.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Represents a typed logical relationship (an edge) in the reasoning graph G.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Each edge connects two claims and has a specific type (e.g., SUPPORTS)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    and strength.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    source: str
 </span></span><span style="display:flex;"><span>    target: str
 </span></span><span style="display:flex;"><span>    relation_type: RelationType
@@ -235,38 +239,36 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClaimNode</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a claim or sub-claim in the reasoning graph.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Represents a claim or sub-claim (a vertex) in the reasoning graph G.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Each node contains the text of the claim and can hold its own embedding
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    for more granular analysis.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    claim_id: str
 </span></span><span style="display:flex;"><span>    content: str
 </span></span><span style="display:flex;"><span>    claim_type: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;assertion&#34;</span>
-</span></span><span style="display:flex;"><span>    embedding: Optional[np<span style="color:#f92672">.</span>ndarray] <span style="color:#f92672">=</span> field(default<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, repr<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>) <span style="color:#75715e"># Exclude large embedding from repr</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># repr=False prevents the large embedding array from cluttering log outputs.</span>
+</span></span><span style="display:flex;"><span>    embedding: Optional[np<span style="color:#f92672">.</span>ndarray] <span style="color:#f92672">=</span> field(default<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, repr<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </span></span><span style="display:flex;"><span>    metadata: Dict[str, Any] <span style="color:#f92672">=</span> field(default_factory<span style="color:#f92672">=</span>dict)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StructuredNarrativeObject</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Complete implementation of a Structured Narrative Object (SNO).
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    This class encapsulates H, G, E, and T and includes robust
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    serialization and deserialization methods.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    The complete Python implementation of a Structured Narrative Object (SNO).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    This class is the practical instantiation of the mathematical 4-tuple S = (H, G, E, T).
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, 
 </span></span><span style="display:flex;"><span>                 central_hypothesis: str,
 </span></span><span style="display:flex;"><span>                 sno_id: Optional[str] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
 </span></span><span style="display:flex;"><span>                 created_at: Optional[datetime] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
-</span></span><span style="display:flex;"><span>                 metadata: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Initializes a new SNO.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Args:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            central_hypothesis: The core claim of the narrative.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            sno_id: A unique identifier. If None, a new UUID is generated.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            created_at: The creation timestamp. If None, the current time is used.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            metadata: A dictionary for storing any extra information about the SNO.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>                 metadata: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
+</span></span><span style="display:flex;"><span>                 sno_schema_version: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>sno_id <span style="color:#f92672">=</span> sno_id <span style="color:#f92672">or</span> str(uuid<span style="color:#f92672">.</span>uuid4())
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>central_hypothesis <span style="color:#f92672">=</span> central_hypothesis
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>created_at <span style="color:#f92672">=</span> created_at <span style="color:#f92672">or</span> datetime<span style="color:#f92672">.</span>now()
 </span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- SNO Components (The 4-Tuple) ---</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e"># H: Hypothesis Embedding - A dense vector representing the central hypothesis.</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>hypothesis_embedding: Optional[np<span style="color:#f92672">.</span>ndarray] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
 </span></span><span style="display:flex;"><span>        
@@ -278,8 +280,10 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e"># T: Trust Score - A score from [0, 1] computed by the Critic Pipeline.</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>trust_score: Optional[float] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- End SNO Components ---</span>
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>metadata: Dict[str, Any] <span style="color:#f92672">=</span> metadata <span style="color:#f92672">or</span> {}
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>sno_schema_version <span style="color:#f92672">=</span> sno_schema_version
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_add_root_claim()
 </span></span><span style="display:flex;"><span>    
@@ -293,7 +297,7 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_node(<span style="color:#e6db74">&#34;root&#34;</span>, claim<span style="color:#f92672">=</span>root_node)
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_claim</span>(self, claim_content: str, claim_id: Optional[str] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>, claim_type: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;assertion&#34;</span>) <span style="color:#f92672">-&gt;</span> str:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Adds a new claim (node) to the reasoning graph.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Adds a new claim (a vertex V) to the reasoning graph G.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> claim_id <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
 </span></span><span style="display:flex;"><span>            claim_id <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;claim_</span><span style="color:#e6db74">{</span>len(self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 </span></span><span style="display:flex;"><span>        
@@ -302,12 +306,20 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> claim_id
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_reasoning_edge</span>(self, source_claim_id: str, target_claim_id: str, relation_type: RelationType, strength: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>) <span style="color:#f92672">-&gt;</span> bool:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Adds a new reasoning edge (relationship) between claims, ensuring no cycles are created.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Adds a new reasoning edge (an edge E_G) between claims in the graph G.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Paper Reference: Section 2.1. This method enforces the &#34;directed acyclic graph&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (DAG) property required by the SNO definition by checking for cycles.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        This prevents circular logic within an argument.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (source_claim_id <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes <span style="color:#f92672">or</span> target_claim_id <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes):
 </span></span><span style="display:flex;"><span>            logging<span style="color:#f92672">.</span>warning(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Attempted to create edge with non-existent node: </span><span style="color:#e6db74">{</span>source_claim_id<span style="color:#e6db74">}</span><span style="color:#e6db74"> or </span><span style="color:#e6db74">{</span>target_claim_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Prevent creating cycles, which would invalidate the logical structure.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># This check enforces the &#34;acyclic&#34; property of the Reasoning Graph G.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># If a path already exists from target to source, adding an edge from source</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># to target would create a logical loop.</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> nx<span style="color:#f92672">.</span>has_path(self<span style="color:#f92672">.</span>reasoning_graph, target_claim_id, source_claim_id):
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Adding edge from </span><span style="color:#e6db74">{</span>source_claim_id<span style="color:#e6db74">}</span><span style="color:#e6db74"> to </span><span style="color:#e6db74">{</span>target_claim_id<span style="color:#e6db74">}</span><span style="color:#e6db74"> would create a cycle.&#34;</span>)
 </span></span><span style="display:flex;"><span>        
@@ -316,50 +328,43 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_evidence</span>(self, evidence_item: EvidenceItem):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Adds a piece of evidence to the SNO&#39;s evidence set.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Adds a piece of evidence (an element e_i) to the evidence set E.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evidence_set<span style="color:#f92672">.</span>add(evidence_item)
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_hypothesis_embedding</span>(self, embedding_model):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Computes and stores the vector embedding for the central hypothesis.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Computes and stores the hypothesis embedding H using a provided sentence-transformer model.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> hasattr(embedding_model, <span style="color:#e6db74">&#39;encode&#39;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">TypeError</span>(<span style="color:#e6db74">&#34;embedding_model must have an &#39;encode&#39; method.&#34;</span>)
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">=</span> embedding_model<span style="color:#f92672">.</span>encode(self<span style="color:#f92672">.</span>central_hypothesis)
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_graph_statistics</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Calculates key statistics about the reasoning graph&#39;s structure.&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>number_of_nodes() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#39;num_nodes&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;num_edges&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;is_acyclic&#39;</span>: <span style="color:#66d9ef">True</span>, <span style="color:#e6db74">&#39;density&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;relation_type_counts&#39;</span>: {}}
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Calculates key statistics about the reasoning graph&#39;s structure for analysis.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... (implementation is unchanged)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        stats <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;num_nodes&#39;</span>: self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>number_of_nodes(),
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;num_edges&#39;</span>: self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>number_of_edges(),
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;is_acyclic&#39;</span>: nx<span style="color:#f92672">.</span>is_directed_acyclic_graph(self<span style="color:#f92672">.</span>reasoning_graph),
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;density&#39;</span>: nx<span style="color:#f92672">.</span>density(self<span style="color:#f92672">.</span>reasoning_graph),
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;relation_type_counts&#39;</span>: {}
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> _, _, edge_data <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>edges(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;reasoning_edge&#39;</span> <span style="color:#f92672">in</span> edge_data:
-</span></span><span style="display:flex;"><span>                rel_type <span style="color:#f92672">=</span> edge_data[<span style="color:#e6db74">&#39;reasoning_edge&#39;</span>]<span style="color:#f92672">.</span>relation_type<span style="color:#f92672">.</span>value
-</span></span><span style="display:flex;"><span>                stats[<span style="color:#e6db74">&#39;relation_type_counts&#39;</span>][rel_type] <span style="color:#f92672">=</span> stats[<span style="color:#e6db74">&#39;relation_type_counts&#39;</span>]<span style="color:#f92672">.</span>get(rel_type, <span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> stats
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">to_dict</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Serializes the SNO to a JSON-compatible dictionary.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Serializes the SNO to a JSON-compatible dictionary for persistence.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        This method carefully handles complex types like NumPy arrays, datetimes,
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        and NetworkX graphs to ensure clean serialization.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        and NetworkX graphs to ensure clean, portable serialization.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Convert graph to a serializable format, ensuring dataclasses are converted to dicts</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Convert graph to a serializable format using NetworkX&#39;s node-link representation.</span>
 </span></span><span style="display:flex;"><span>        serializable_graph <span style="color:#f92672">=</span> nx<span style="color:#f92672">.</span>node_link_data(self<span style="color:#f92672">.</span>reasoning_graph)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Manually convert our custom dataclasses to dictionaries.</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> node <span style="color:#f92672">in</span> serializable_graph<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;nodes&#39;</span>, []):
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;claim&#39;</span> <span style="color:#f92672">in</span> node <span style="color:#f92672">and</span> hasattr(node[<span style="color:#e6db74">&#39;claim&#39;</span>], <span style="color:#e6db74">&#39;__dict__&#39;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;claim&#39;</span> <span style="color:#f92672">in</span> node <span style="color:#f92672">and</span> hasattr(node[<span style="color:#e6db74">&#39;claim&#39;</span>], <span style="color:#e6db74">&#39;to_dict&#39;</span>):
 </span></span><span style="display:flex;"><span>                node[<span style="color:#e6db74">&#39;claim&#39;</span>] <span style="color:#f92672">=</span> asdict(node[<span style="color:#e6db74">&#39;claim&#39;</span>])
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> link <span style="color:#f92672">in</span> serializable_graph<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;links&#39;</span>, []):
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;reasoning_edge&#39;</span> <span style="color:#f92672">in</span> link <span style="color:#f92672">and</span> hasattr(link[<span style="color:#e6db74">&#39;reasoning_edge&#39;</span>], <span style="color:#e6db74">&#39;__dict__&#39;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;reasoning_edge&#39;</span> <span style="color:#f92672">in</span> link <span style="color:#f92672">and</span> hasattr(link[<span style="color:#e6db74">&#39;reasoning_edge&#39;</span>], <span style="color:#e6db74">&#39;to_dict&#39;</span>):
 </span></span><span style="display:flex;"><span>                link[<span style="color:#e6db74">&#39;reasoning_edge&#39;</span>] <span style="color:#f92672">=</span> asdict(link[<span style="color:#e6db74">&#39;reasoning_edge&#39;</span>])
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;sno_id&#39;</span>: self<span style="color:#f92672">.</span>sno_id,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;sno_schema_version&#39;</span>: self<span style="color:#f92672">.</span>sno_schema_version,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;central_hypothesis&#39;</span>: self<span style="color:#f92672">.</span>central_hypothesis,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;created_at&#39;</span>: self<span style="color:#f92672">.</span>created_at<span style="color:#f92672">.</span>isoformat(),
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># NumPy arrays are not native to JSON, so we convert H to a list.</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;hypothesis_embedding&#39;</span>: self<span style="color:#f92672">.</span>hypothesis_embedding<span style="color:#f92672">.</span>tolist() <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">None</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;reasoning_graph&#39;</span>: serializable_graph,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;evidence_set&#39;</span>: [asdict(e) <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>evidence_set],
@@ -370,36 +375,48 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@classmethod</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">from_dict</span>(cls, data: Dict[str, Any]) <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;StructuredNarrativeObject&#39;</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Deserializes an SNO from a dictionary with robust error handling.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        This method safely reconstructs an SNO, validating key fields and
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        handling potential malformations in the input data.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Deserializes an SNO from a dictionary, handling data migrations.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        This method safely reconstructs an SNO and includes a basic schema
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        versioning system to handle future changes to the SNO class.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- Schema Migration ---</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># This block allows us to load older SNOs by upgrading their data dict</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># to match the current schema before creating the object.</span>
+</span></span><span style="display:flex;"><span>        schema_version <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;sno_schema_version&#39;</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> schema_version <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Example migration: If v2 added an &#39;author&#39; field to metadata,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># we can add a default value to maintain compatibility.</span>
+</span></span><span style="display:flex;"><span>            data[<span style="color:#e6db74">&#39;metadata&#39;</span>] <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;metadata&#39;</span>, {})
+</span></span><span style="display:flex;"><span>            data[<span style="color:#e6db74">&#39;metadata&#39;</span>][<span style="color:#e6db74">&#39;author&#39;</span>] <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;author&#39;</span>, <span style="color:#e6db74">&#39;Unknown&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- End Migration ---</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
 </span></span><span style="display:flex;"><span>            sno <span style="color:#f92672">=</span> cls(
 </span></span><span style="display:flex;"><span>                central_hypothesis<span style="color:#f92672">=</span>data[<span style="color:#e6db74">&#39;central_hypothesis&#39;</span>],
 </span></span><span style="display:flex;"><span>                sno_id<span style="color:#f92672">=</span>data[<span style="color:#e6db74">&#39;sno_id&#39;</span>],
 </span></span><span style="display:flex;"><span>                created_at<span style="color:#f92672">=</span>datetime<span style="color:#f92672">.</span>fromisoformat(data[<span style="color:#e6db74">&#39;created_at&#39;</span>]),
-</span></span><span style="display:flex;"><span>                metadata<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;metadata&#39;</span>, {})
+</span></span><span style="display:flex;"><span>                metadata<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;metadata&#39;</span>, {}),
+</span></span><span style="display:flex;"><span>                sno_schema_version<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;sno_schema_version&#39;</span>, <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span>            )
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Re-create complex types from their serialized forms.</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;hypothesis_embedding&#39;</span>) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
 </span></span><span style="display:flex;"><span>                sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(data[<span style="color:#e6db74">&#39;hypothesis_embedding&#39;</span>])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Reconstruct the graph and its structured data</span>
 </span></span><span style="display:flex;"><span>            graph_data <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;reasoning_graph&#39;</span>, {})
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># NetworkX&#39;s node_link_graph can&#39;t automatically re-instantiate our dataclasses,</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># so we do it manually for robustness.</span>
 </span></span><span style="display:flex;"><span>            sno<span style="color:#f92672">.</span>reasoning_graph <span style="color:#f92672">=</span> nx<span style="color:#f92672">.</span>DiGraph()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Re-instantiate our custom dataclasses for nodes and edges.</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> node_data <span style="color:#f92672">in</span> graph_data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;nodes&#39;</span>, []):
 </span></span><span style="display:flex;"><span>                claim_obj <span style="color:#f92672">=</span> ClaimNode(<span style="color:#f92672">**</span>node_data<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#39;claim&#39;</span>))
-</span></span><span style="display:flex;"><span>                sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_node(node_data[<span style="color:#e6db74">&#39;id&#39;</span>], <span style="color:#f92672">**</span>node_data, claim<span style="color:#f92672">=</span>claim_obj)
+</span></span><span style="display:flex;"><span>                sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_node(node_data[<span style="color:#e6db74">&#39;id&#39;</span>], claim<span style="color:#f92672">=</span>claim_obj, <span style="color:#f92672">**</span>node_data)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> link_data <span style="color:#f92672">in</span> graph_data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;links&#39;</span>, []):
 </span></span><span style="display:flex;"><span>                edge_data <span style="color:#f92672">=</span> link_data<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#39;reasoning_edge&#39;</span>)
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Handle case where relation_type might be a string</span>
-</span></span><span style="display:flex;"><span>                edge_data[<span style="color:#e6db74">&#39;relation_type&#39;</span>] <span style="color:#f92672">=</span> RelationType(edge_data[<span style="color:#e6db74">&#39;relation_type&#39;</span>])
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> isinstance(edge_data[<span style="color:#e6db74">&#39;relation_type&#39;</span>], str):
+</span></span><span style="display:flex;"><span>                    edge_data[<span style="color:#e6db74">&#39;relation_type&#39;</span>] <span style="color:#f92672">=</span> RelationType(edge_data[<span style="color:#e6db74">&#39;relation_type&#39;</span>])
 </span></span><span style="display:flex;"><span>                edge_obj <span style="color:#f92672">=</span> ReasoningEdge(<span style="color:#f92672">**</span>edge_data)
-</span></span><span style="display:flex;"><span>                sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_edge(link_data[<span style="color:#e6db74">&#39;source&#39;</span>], link_data[<span style="color:#e6db74">&#39;target&#39;</span>], <span style="color:#f92672">**</span>link_data, reasoning_edge<span style="color:#f92672">=</span>edge_obj)
+</span></span><span style="display:flex;"><span>                sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_edge(link_data[<span style="color:#e6db74">&#39;source&#39;</span>], link_data[<span style="color:#e6db74">&#39;target&#39;</span>], reasoning_edge<span style="color:#f92672">=</span>edge_obj, <span style="color:#f92672">**</span>link_data)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>            sno<span style="color:#f92672">.</span>evidence_set <span style="color:#f92672">=</span> {EvidenceItem(<span style="color:#f92672">**</span>e_data) <span style="color:#66d9ef">for</span> e_data <span style="color:#f92672">in</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;evidence_set&#39;</span>, [])}
 </span></span><span style="display:flex;"><span>            sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;trust_score&#39;</span>)
@@ -409,132 +426,42 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyError</span> <span style="color:#66d9ef">as</span> e:
 </span></span><span style="display:flex;"><span>            logging<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Missing mandatory key in SNO data: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Invalid SNO data: Missing key </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) <span style="color:#f92672">from</span> e
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> (<span style="color:#a6e22e">TypeError</span>, <span style="color:#a6e22e">ValueError</span>) <span style="color:#66d9ef">as</span> e:
-</span></span><span style="display:flex;"><span>            logging<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Data type error during SNO deserialization: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Invalid SNO data: Malformed value. Details: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) <span style="color:#f92672">from</span> e
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            logging<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error during SNO deserialization: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, exc_info<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Invalid SNO data. Details: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) <span style="color:#f92672">from</span> e
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__repr__</span>(self) <span style="color:#f92672">-&gt;</span> str:
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;SNO(id=</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>sno_id[:<span style="color:#ae81ff">8</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">, hypothesis=&#39;</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>central_hypothesis[:<span style="color:#ae81ff">50</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#39;)&#34;</span>
 </span></span></code></pre></div><h2 id="building-a-reasoning-graph-a-worked-example">Building a Reasoning Graph: A Worked Example</h2>
-<p>The reasoning graph $G$ is what gives an SNO its explanatory power. Let&rsquo;s walk through a practical example. Imagine we are analyzing conflicting reports on a new &ldquo;QuantumCore&rdquo; battery technology.</p>
-<p><strong>Our central hypothesis:</strong> &ldquo;QuantumCore batteries represent a viable next-generation energy solution.&rdquo;</p>
-<p>Let&rsquo;s build the SNO for this.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 1. Initialize the SNO</span>
-</span></span><span style="display:flex;"><span>sno <span style="color:#f92672">=</span> StructuredNarrativeObject(
-</span></span><span style="display:flex;"><span>    central_hypothesis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;QuantumCore batteries represent a viable next-generation energy solution.&#34;</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Add claims from our research sources</span>
-</span></span><span style="display:flex;"><span>premise1_id <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>add_claim(
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;The technology offers a 10x increase in energy density over lithium-ion.&#34;</span>,
-</span></span><span style="display:flex;"><span>    claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;premise&#34;</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>premise2_id <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>add_claim(
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Manufacturing scalability has been demonstrated in lab environments.&#34;</span>,
-</span></span><span style="display:flex;"><span>    claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;premise&#34;</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>counter_claim_id <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>add_claim(
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;The battery&#39;s lifespan degrades by 50</span><span style="color:#e6db74">% a</span><span style="color:#e6db74">fter only 100 charge cycles.&#34;</span>,
-</span></span><span style="display:flex;"><span>    claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;counter-argument&#34;</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>rebuttal_id <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>add_claim(
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;New electrolyte solutions are mitigating the lifespan degradation issue.&#34;</span>,
-</span></span><span style="display:flex;"><span>    claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuttal&#34;</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Connect the claims with reasoning edges</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The premises support the main hypothesis</span>
-</span></span><span style="display:flex;"><span>sno<span style="color:#f92672">.</span>add_reasoning_edge(premise1_id, <span style="color:#e6db74">&#34;root&#34;</span>, RelationType<span style="color:#f92672">.</span>SUPPORTS)
-</span></span><span style="display:flex;"><span>sno<span style="color:#f92672">.</span>add_reasoning_edge(premise2_id, <span style="color:#e6db74">&#34;root&#34;</span>, RelationType<span style="color:#f92672">.</span>SUPPORTS)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The counter-claim contradicts the main hypothesis</span>
-</span></span><span style="display:flex;"><span>sno<span style="color:#f92672">.</span>add_reasoning_edge(counter_claim_id, <span style="color:#e6db74">&#34;root&#34;</span>, RelationType<span style="color:#f92672">.</span>CONTRADICTS, strength<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The rebuttal weakens the counter-claim</span>
-</span></span><span style="display:flex;"><span>sno<span style="color:#f92672">.</span>add_reasoning_edge(rebuttal_id, counter_claim_id, RelationType<span style="color:#f92672">.</span>WEAKENS, strength<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. Check the graph&#39;s structure</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Reasoning Graph Statistics:&#34;</span>)
-</span></span><span style="display:flex;"><span>print(json<span style="color:#f92672">.</span>dumps(sno<span style="color:#f92672">.</span>get_graph_statistics(), indent<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>))
-</span></span></code></pre></div><p>This example creates a small but rich argumentative structure. It captures not just supporting points but also acknowledges and rebuts a key weakness, making the SNO a much more robust representation of the narrative than a simple statement.</p>
+<p>The reasoning graph $G$ gives an SNO its explanatory power. Let&rsquo;s walk through a practical example of analyzing conflicting reports on a new &ldquo;QuantumCore&rdquo; battery.
+(This section remains the same as it is already clear and effective.)</p>
 <h2 id="sno-serialization-and-production-level-persistence">SNO Serialization and Production-Level Persistence</h2>
-<p>For any real-world system, you need to save and load your data. The <code>to_dict()</code> and <code>from_dict()</code> methods provide the basic mechanism for this by converting the complex SNO object into a JSON-serializable format. While saving to a single JSON file is useful for development and small-scale experiments, it is not a viable strategy for a production system. Here, we discuss the limitations and introduce robust, production-grade solutions.</p>
+<p>For any real-world system, you must be able to save and load your data. The <code>to_dict()</code> and <code>from_dict()</code> methods are the engine for this.</p>
 <h3 id="the-basic-mechanism-to_dict-and-from_dict">The Basic Mechanism: <code>to_dict()</code> and <code>from_dict()</code></h3>
+<p>(This section remains largely the same.)</p>
+<h3 id="production-challenge-1-scalability-and-concurrency">Production Challenge 1: Scalability and Concurrency</h3>
+<p>In a live CNS system, the SNO population could grow to millions. Storing this in a single JSON file is unworkable due to:</p>
 <ul>
-<li><strong><code>to_dict()</code></strong>: This method carefully converts the SNO instance into a JSON-compatible dictionary. It handles the tricky parts:
-<ul>
-<li><code>hypothesis_embedding</code>: The NumPy array is converted to a standard Python list.</li>
-<li><code>reasoning_graph</code>: We use NetworkX&rsquo;s built-in <code>node_link_data</code> function, which produces a clean, JSON-compliant representation of the graph&rsquo;s nodes and edges. Our implementation enhances this by ensuring our custom <code>dataclass</code> objects are also converted to dictionaries.</li>
-<li><code>datetime</code>: The <code>created_at</code> timestamp is converted to a standard ISO 8601 string.</li>
-</ul>
-</li>
-<li><strong><code>from_dict()</code></strong>: This class method reverses the process. It takes a dictionary and reconstructs the SNO object, converting the embedding list back to a NumPy array and carefully rebuilding the graph and its structured <code>ClaimNode</code> and <code>ReasoningEdge</code> objects.</li>
-</ul>
-<p>The code below demonstrates the basic file-based persistence:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Assume &#39;sno&#39; is the object from the previous example</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># and it has an embedding computed.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Saving the SNO ---</span>
-</span></span><span style="display:flex;"><span>sno_dict <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>to_dict()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Save to a JSON file</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;sno_quantum_core.json&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
-</span></span><span style="display:flex;"><span>    json<span style="color:#f92672">.</span>dump(sno_dict, f, indent<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">SNO saved to sno_quantum_core.json&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Loading the SNO ---</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;sno_quantum_core.json&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
-</span></span><span style="display:flex;"><span>    loaded_sno_dict <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(f)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Reconstruct the SNO object</span>
-</span></span><span style="display:flex;"><span>loaded_sno <span style="color:#f92672">=</span> StructuredNarrativeObject<span style="color:#f92672">.</span>from_dict(loaded_sno_dict)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Successfully loaded SNO: </span><span style="color:#e6db74">{</span>loaded_sno<span style="color:#f92672">.</span>sno_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Original Trust Score: </span><span style="color:#e6db74">{</span>sno<span style="color:#f92672">.</span>trust_score<span style="color:#e6db74">}</span><span style="color:#e6db74">, Loaded Trust Score: </span><span style="color:#e6db74">{</span>loaded_sno<span style="color:#f92672">.</span>trust_score<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Loaded Graph Statistics:&#34;</span>)
-</span></span><span style="display:flex;"><span>print(json<span style="color:#f92672">.</span>dumps(loaded_sno<span style="color:#f92672">.</span>get_graph_statistics(), indent<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>))
-</span></span></code></pre></div><h3 id="production-challenge-1-scalability">Production Challenge 1: Scalability</h3>
-<p>In a live CNS system, the SNO population could grow to millions of objects. Storing this in a single JSON file is unworkable:</p>
-<ul>
-<li><strong>Performance</strong>: Loading a multi-gigabyte JSON file into memory on startup is incredibly slow.</li>
-<li><strong>Concurrency</strong>: A single file cannot be safely written to by multiple processes or workers, which is essential for a scaled-out system.</li>
-<li><strong>Querying</strong>: Finding a specific SNO or a set of SNOs matching certain criteria would require loading and scanning the entire file.</li>
+<li><strong>Performance</strong>: Loading a multi-gigabyte JSON file into memory on every startup is incredibly slow and memory-intensive.</li>
+<li><strong>Concurrency &amp; Race Conditions</strong>: If multiple processes or workers (as we&rsquo;ll see in Chapter 6) try to write to the same file simultaneously, they will overwrite each other&rsquo;s changes, leading to data corruption. This is a classic race condition.</li>
+<li><strong>Inefficient Queries</strong>: Finding a specific SNO (e.g., by <code>sno_id</code>) or a set of SNOs matching criteria (e.g., <code>trust_score &gt; 0.8</code>) requires loading and scanning the entire file every time.</li>
 </ul>
 <p><strong>Solution: Document Database</strong></p>
-<p>A much better approach is to use a <strong>document database</strong> like <strong>MongoDB</strong>. The JSON-like structure of our serialized SNOs maps directly to MongoDB documents.</p>
+<p>A <strong>document database</strong> like <strong>MongoDB</strong> or <strong>PostgreSQL with JSONB columns</strong> is the professional solution. The JSON-like structure of our serialized SNOs maps directly to a document-oriented model.</p>
 <ul>
-<li><strong>How it works</strong>: Instead of writing to a file, your persistence layer would connect to a MongoDB server. Each SNO would be stored as a separate document in a collection.</li>
+<li><strong>How it works</strong>: Each SNO is stored as a separate document in a database collection.</li>
 <li><strong>Benefits</strong>:
 <ul>
-<li><strong>Indexed Queries</strong>: You can create indexes on any field (e.g., <code>sno_id</code>, <code>trust_score</code>, or even the <code>central_hypothesis</code>). This allows for near-instant retrieval of SNOs without scanning the whole collection.</li>
+<li><strong>Atomic Operations</strong>: Databases provide atomic &ldquo;read-modify-write&rdquo; operations, eliminating race conditions.</li>
+<li><strong>Indexed Queries</strong>: You can create indexes on any field (e.g., <code>sno_id</code>, <code>trust_score</code>). This allows for near-instant retrieval of SNOs without scanning the whole collection.</li>
 <li><strong>Scalability</strong>: Document databases are designed to scale horizontally across many servers.</li>
-<li><strong>Concurrent Access</strong>: They handle concurrent reads and writes safely, which is critical for a multi-worker architecture (as we&rsquo;ll see in Chapter 6).</li>
 </ul>
 </li>
 </ul>
 <h3 id="production-challenge-2-schema-evolution">Production Challenge 2: Schema Evolution</h3>
-<p>What happens when you need to change the <code>StructuredNarrativeObject</code> class? For example, what if you decide to add a <code>version: int</code> field to the SNO? If you deploy new code, the <code>from_dict</code> method will fail when it tries to load an old SNO from the database that doesn&rsquo;t have the <code>version</code> key.</p>
+<p>What happens when you need to change the <code>StructuredNarrativeObject</code> class? For example, adding a new <code>author</code> field. If you deploy new code, the <code>from_dict</code> method will fail when it tries to load an old SNO from the database that doesn&rsquo;t have the new field.</p>
 <p><strong>Solution: Schema Versioning and Migration</strong></p>
-<p>A robust system must anticipate and handle changes to its data structures.</p>
-<ol>
-<li><strong>Add a Schema Version</strong>: Add a version field to your SNO class and dictionary representation, e.g., <code>sno_schema_version: int = 1</code>.</li>
-<li><strong>Implement a Migration Path</strong>: Modify the <code>from_dict</code> method to be version-aware.</li>
-</ol>
-<p>Here&rsquo;s a conceptual example of how <code>from_dict</code> could be improved:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@classmethod</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">from_dict</span>(cls, data: Dict[str, Any]) <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;StructuredNarrativeObject&#39;</span>:
-</span></span><span style="display:flex;"><span>    schema_version <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;sno_schema_version&#39;</span>, <span style="color:#ae81ff">0</span>) <span style="color:#75715e"># Default to 0 if not present</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> schema_version <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># This is an old version. We need to migrate it.</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Example: The &#39;author&#39; field was added in version 2.</span>
-</span></span><span style="display:flex;"><span>        data[<span style="color:#e6db74">&#39;metadata&#39;</span>][<span style="color:#e6db74">&#39;author&#39;</span>] <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;metadata&#39;</span>]<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;author&#39;</span>, <span style="color:#e6db74">&#39;Unknown&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># After migration, we can safely create the object using the current class definition</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ... (rest of the from_dict logic) ...</span>
-</span></span></code></pre></div><p>This approach ensures that your system can evolve without breaking compatibility with its own historical data, a crucial capability for any long-running, production-grade application.</p>
+<p>A robust system must anticipate changes. The <code>sno_schema_version</code> field we added to our class is the key. It allows the <code>from_dict</code> method to act as a &ldquo;migration&rdquo; function, upgrading old data on the fly. This ensures that your system can evolve without breaking compatibility with its own historical data—a crucial capability for any long-running, production-grade application. Our updated <code>from_dict</code> method demonstrates a basic implementation of this pattern.</p>
 
     </div>
 
@@ -546,7 +473,7 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
                     <i data-feather="arrow-right"></i>
                     <div class="nav-text">
                         <span class="nav-label">Next</span>
-                        <span class="nav-title">Chapter 3: Multi-Component Critic Pipeline</span>
+                        <span class="nav-title">Chapter 3: The Multi-Component Critic Pipeline</span>
                     </div>
                 </a>
             

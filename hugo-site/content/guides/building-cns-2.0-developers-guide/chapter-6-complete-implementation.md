@@ -1,5 +1,5 @@
 ---
-title: "Chapter 6: Production Deployment & Scaling"
+title: "Chapter 6: Complete Implementation - Production Deployment and Scaling"
 description: "Taking the CNS 2.0 system from a single-process prototype to a scalable, production-grade service."
 weight: 6
 ---
@@ -8,7 +8,7 @@ weight: 6
     <a href="/" class="home-link">← Back to GTCode.com Homepage</a>
 </div>
 
-# Chapter 6: Production Deployment & Scaling
+# Chapter 6: Production Deployment and Scaling
 
 ## From Prototype to Production
 
@@ -25,7 +25,7 @@ Taking a prototype to production requires evolving our architecture to be distri
 The single-process `asyncio` model is limited by the resources of a single machine. To handle a high volume of tasks, we must evolve to a distributed architecture that decouples task submission from task execution.
 
 <div style="text-align: center;">
-  <img src="/img/diagram-02.svg" alt="A diagram of the production architecture, showing an API Server sending tasks to a Redis Queue, which are then consumed by multiple Celery Worker containers." style="display: inline-block;" />
+  <img src="/img/diagram-03.svg" alt="A diagram of the production architecture, showing an API Server sending tasks to a Redis Queue, which are then consumed by multiple Celery Worker containers." style="display: inline-block;" />
 </div>
 
 This architecture consists of three main services:
@@ -181,10 +181,96 @@ services:
 With this setup, you can start the entire distributed system with `docker-compose up` and scale the number of workers on demand to handle any workload.
 
 ## 3. Production-Ready Observability
-(This section remains the same as it is already clear and effective.)
+
+In a distributed system with multiple workers, observability is not a luxury; it's a necessity. We need robust logging and configuration to manage and debug our application effectively.
 
 ### Structured Logging with `structlog`
-(This section remains the same.)
+
+Standard print statements or basic logs are insufficient in a distributed system. **Structured logging** (e.g., in JSON format) is machine-readable, making it easy to search, filter, and analyze logs from all workers in a centralized platform (like ELK Stack, Splunk, or Datadog).
+
+**Step 1: Configure `structlog`.**
+Create a `logging_setup.py` file to configure logging for your entire application.
+
+```python
+# cns/logging_setup.py
+import logging
+import structlog
+
+# Configure standard logging
+logging.basicConfig(level=logging.INFO)
+
+# Configure structlog to output JSON
+structlog.configure(
+    processors=[
+        structlog.stdlib.add_log_level,
+        structlog.processors.TimeStamper(fmt="iso"),
+        structlog.processors.JSONRenderer(),
+    ],
+    logger_factory=structlog.stdlib.LoggerFactory(),
+    wrapper_class=structlog.stdlib.BoundLogger,
+)
+
+logger = structlog.get_logger()
+```
+
+**Step 2: Use the logger in your application.**
+Instead of `print()` or `logging.info()`, use the configured `structlog` logger.
+
+```python
+# in cns/workflow.py
+from .logging_setup import logger
+
+class CNSWorkflowManager:
+    def ingest_and_evaluate(self, text, source):
+        logger.info("sno_ingestion.started", source=source, text_length=len(text))
+        try:
+            # ... ingestion and evaluation logic ...
+            logger.info(
+                "sno_evaluation.complete",
+                sno_id=sno.sno_id,
+                trust_score=sno.trust_score,
+                source=source,
+            )
+        except Exception as e:
+            logger.error("ingestion.failed", error=str(e), source=source)
+```
+
+This produces clean, queryable JSON log entries, which are invaluable for debugging a complex, distributed system:
+`{"log_level": "info", "timestamp": "...", "event": "sno_evaluation.complete", "sno_id": "...", "trust_score": 0.75, "source": "doc1.pdf"}`
 
 ### Externalized Configuration Management
-(This section remains the same.)
+
+Hardcoding values in a `CNSConfig` class is not suitable for production. The solution is to externalize the configuration, allowing you to change parameters without altering the code.
+
+**Strategy 1: Environment Variables**
+This is a highly portable method that aligns with [12-factor app](https://12factor.net/config) principles. You modify the `CNSConfig` class to read from `os.environ`.
+
+```python
+# In CNSConfig class
+import os
+import json
+
+# Read from environment variable, falling back to a default value.
+self.embedding_dim = int(os.environ.get('CNS_EMBEDDING_DIM', 768))
+
+# For nested structures, we can expect a JSON string.
+default_weights = '{"grounding": 0.4, "logic": 0.3, "novelty": 0.3}'
+self.critic_weights = json.loads(os.environ.get('CNS_CRITIC_WEIGHTS', default_weights))
+```
+
+**Strategy 2: Configuration File**
+For more complex configurations, a dedicated YAML file is often easier to manage.
+
+```yaml
+# config.yaml
+embedding_dim: 768
+critic_weights:
+  grounding: 0.4
+  logic: 0.3
+  novelty: 0.3
+models:
+  embedding: "all-MiniLM-L6-v2"
+  nli: "roberta-large-mnli"
+```
+
+Your `CNSConfig` class would then load this file using a library like `PyYAML`. This approach makes it easy to maintain multiple configuration profiles (e.g., `config_dev.yaml`, `config_prod.yaml`) and provides a clear, version-controllable record of the system's parameters.
