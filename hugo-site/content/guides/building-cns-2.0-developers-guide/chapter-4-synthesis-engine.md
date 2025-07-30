@@ -92,6 +92,15 @@ class RelationalMetrics:
         balance_bonus = 1.0 - abs(chirality - entanglement)
         return geometric_mean * (1.0 + 0.2 * balance_bonus)
 
+#### Deconstructing the Synthesis Potential Metric
+The `synthesis_potential` function is designed to identify the *most productive* pairs for synthesis. It's not enough for two narratives to be merely contradictory; they should be contradictory *and* balanced in their conflict. The formula accomplishes this in two parts:
+
+1.  **`geometric_mean = np.sqrt(chirality * entanglement)`**: We use the geometric mean instead of a simple average. The geometric mean heavily penalizes pairs where one score is very low. For example, if `chirality` is `0.9` but `entanglement` is `0.1`, their arithmetic average is `0.5`, but their geometric mean is only `0.3`. This ensures that the system prioritizes pairs that are *both* highly chiral and highly entangled, preventing it from wasting time on pairs that are strong in one aspect but weak in the other.
+
+2.  **`balance_bonus = 1.0 - abs(chirality - entanglement)`**: This term rewards pairs where the chirality and entanglement scores are close to each other. For example, a pair with `(chirality=0.7, entanglement=0.7)` is considered more "balanced" and thus more promising than a pair with `(chirality=0.9, entanglement=0.5)`. The bonus encourages the system to focus on well-proportioned conflicts.
+
+The final score combines these two ideas, prioritizing balanced pairs that have high scores on both of the core relational metrics.
+
 ### Scalable Pair Selection with Robust Conflict Detection
 
 > **From Paper to Code: Scalable Pair Finding with ANN**
@@ -218,13 +227,19 @@ class ChiralPairDetector:
 ```
 
 #### A Note on Semantic Conflict Detection
-It is important to note the subtlety of using cosine similarity for conflict detection. A low cosine similarity score (close to 0) means the vectors are *orthogonal* or unrelated, while a negative score (close to -1) means they are in *opposition*. Our current `_identify_conflicts_semantically` method uses a simple threshold (`< 0.2`), which will catch claims that are either unrelated or conflicting.
+Our `_identify_conflicts_semantically` method uses cosine similarity to find disagreements between sub-claims, but it's crucial to understand the nuances of this approach. Cosine similarity produces a score between -1 and 1:
+-   **Score near 1**: The claims are semantically very similar.
+-   **Score near 0**: The claims are semantically unrelated (orthogonal). For example, "The sky is blue" and "Interest rates are rising".
+-   **Score near -1**: The claims are semantically opposite or contradictory. For example, "The battery is safe" and "The battery is dangerous".
 
-For a more advanced implementation, one could refine this by:
-1.  **Using an NLI model**: Just as in the `GroundingCritic`, one could run an NLI model on pairs of claims to explicitly check for a "contradiction" label. This is more computationally expensive but provides a much stronger signal of true conflict.
-2.  **Setting a negative threshold**: Only flagging pairs with a similarity score below a negative threshold (e.g., `< -0.1`) would focus on more directly oppositional claims, though this might miss more nuanced disagreements.
+Our current implementation uses a simple threshold (`< 0.2`) which correctly identifies claims that are either unrelated or in direct opposition. However, for a more precise and powerful system, this can be refined. Here are two advanced strategies:
 
-Our current approach provides a good balance of computational efficiency and effectiveness for identifying potential areas of disagreement to be resolved by the synthesis engine.
+1.  **Focus on Opposition with a Negative Threshold**: To find only the most direct conflicts, you could change the condition to check for a negative similarity score (e.g., `similarity < -0.2`). This would focus the synthesis engine on resolving clear-cut contradictions rather than just disconnected statements. The trade-off is potentially missing more subtle forms of disagreement.
+
+2.  **Use a Natural Language Inference (NLI) Model**: The most robust method is to leverage the same technology used in our `GroundingCritic`. For each pair of claims, you can query an NLI model:
+    -   **Premise**: Claim A's content.
+    -   **Hypothesis**: Claim B's content.
+    The NLI model will output probabilities for three labels: `entailment`, `neutral`, and `contradiction`. If the `contradiction` probability is high, you have found a strong point of conflict. This is more computationally expensive than cosine similarity but provides a much more explicit and reliable signal of genuine logical conflict, allowing the synthesis engine to focus its efforts on the most meaningful disagreements.
 
 ### From Paper to Code: Mathematical Metrics
 The `RelationalMetrics` class implements the crucial formulas from Section 3.2 of the paper, allowing the system to identify the most *productive* conflicts for synthesis. The `CScore` (Chirality) and `EScore` (Entanglement) are direct translations of the paper's mathematical definitions into code, forming the analytical foundation of the synthesis engine.

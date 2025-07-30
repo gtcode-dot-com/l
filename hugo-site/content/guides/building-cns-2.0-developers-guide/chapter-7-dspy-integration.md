@@ -86,6 +86,15 @@ def graded_sno_structure_metric(example, pred, trace=None) -> float:
 
     return score
 
+#### Why Use a Graded Metric?
+A simple binary metric (e.g., `1.0` if the structure is perfect, `0.0` otherwise) provides a very weak signal to the DSPy optimizer. The optimizer works by trying different prompts, and if it only receives a score of `0.0` for most of its attempts, it has no way of knowing if one failed attempt was "more correct" than another.
+
+A **graded metric** that provides partial credit is far more effective. It creates a smoother optimization landscape. For example:
+- A prompt that correctly extracts the hypothesis but fails on the claims gets a score of `0.5`.
+- A prompt that gets the hypothesis and also produces a list (even if the list items are malformed) gets `0.75`.
+
+This gradient gives the optimizer a clear direction for improvement. It can learn what works for one part of the output and then refine the prompt to solve the remaining parts, leading to much faster and more reliable optimization.
+
 # --- 6. Optimize (Compile) the Module ---
 # (The training examples and optimization process remain the same, but now use the graded metric)
 # optimizer = BootstrapFewShot(metric=graded_sno_structure_metric, max_bootstrapped_demos=2)
@@ -96,9 +105,44 @@ This graded metric allows the DSPy compiler to "hill-climb" towards better promp
 
 ## Closing the Loop: A Self-Optimizing Synthesis Engine
 
-The true power of combining CNS 2.0 and DSPy is realized when we turn the system's critical judgment upon itself. We can use our own **Critic Pipeline** as the metric to optimize the **Synthesis Engine**. This creates a feedback loop where the system learns to generate syntheses that it itself considers to be high-quality.
+The true power of combining CNS 2.0 and DSPy is realized when we turn the system's critical judgment upon itself. We can use our own **Critic Pipeline** as the metric to optimize the **Synthesis Engine**. This creates a feedback loop where the system learns to generate syntheses that it itself considers to be high-quality. This fulfills the vision from the paper of a system capable of "continuous improvement."
 
-This fulfills the vision from the paper of a system capable of "continuous improvement."
+The diagram below illustrates this self-optimizing loop. The goal is to "compile" a `SynthesisModule` that is optimized to produce SNOs that score highly on our `CriticPipeline` metric.
+
+```text
++--------------------------+
+|      Chiral Pair         |
+|  (Narrative A, B)        |
++--------------------------+
+           |
+           v
++--------------------------+
+|    DSPy SynthesisModule  | --(generates)--> [ Candidate Hypothesis ]
+| (Needs optimizing)       |
++--------------------------+
+           |
+           v
++--------------------------------+
+|  Build Candidate SNO_C         |
+| (Hypothesis + Combined Logic)  |
++--------------------------------+
+           |
+           v
++--------------------------------+
+|  CNS 2.0 Critic Pipeline       | --(evaluates)--> [ Trust Score (0.0 to 1.0) ]
+| (Grounding, Logic, Novelty)    |
++--------------------------------+
+           |
+           | (This score is the feedback signal)
+           |
+           v
++--------------------------------+
+|      DSPy Optimizer            |
+| (e.g., BootstrapFewShot)       | --(updates prompts/demos in SynthesisModule)-->
++--------------------------------+
+```
+
+This process allows the system to programmatically discover what makes a "good" synthesis from its own perspective. It will tune the prompts and few-shot examples used by the `SynthesisModule` until it reliably produces outputs that are logical, well-grounded, and novel according to our own critics.
 
 ### 1. Define the Synthesis Signature
 
@@ -108,6 +152,8 @@ First, we define what we want the synthesis LLM to do. It should take two confli
 class ChiralPairToSynthesis(dspy.Signature):
     """
     Given two conflicting narratives, generate a novel, higher-order hypothesis that resolves the conflict.
+    This signature defines the inputs and outputs for our synthesis task. The descriptions (`desc`)
+    are crucial, as they are used by the DSPy optimizer to construct effective prompts.
     """
     narrative_A: str = dspy.InputField(desc="The first narrative, including its central hypothesis and key supporting claims.")
     narrative_B: str = dspy.InputField(desc="The second, conflicting narrative, including its central hypothesis and key supporting claims.")
@@ -118,16 +164,20 @@ class ChiralPairToSynthesis(dspy.Signature):
 
 ### 2. Create the Synthesis Module
 
-Next, we create a DSPy module that uses this signature.
+Next, we create a DSPy module that uses this signature. A module is a reusable component that encapsulates a specific LLM behavior.
 
 ```python
 class SynthesisModule(dspy.Module):
+    """A DSPy module for synthesizing conflicting narratives."""
     def __init__(self):
         super().__init__()
-        # We can experiment with different modules, e.g., dspy.ReAct for more complex reasoning
+        # We define the LLM reasoning strategy here. `dspy.ChainOfThought` tells the LLM
+        # to "think step-by-step" to arrive at the answer, which is effective for
+        # complex reasoning tasks like synthesis.
         self.synthesizer = dspy.ChainOfThought(ChiralPairToSynthesis)
 
     def forward(self, narrative_A, narrative_B, shared_evidence):
+        """The forward method defines how data flows through the module."""
         return self.synthesizer(narrative_A=narrative_A, narrative_B=narrative_B, shared_evidence=shared_evidence)
 ```
 
@@ -140,34 +190,48 @@ def critic_pipeline_metric(cns_workflow_manager, example, pred, trace=None) -> f
     """
     Uses the entire CNS critic pipeline to evaluate the quality of a synthesized hypothesis.
     This function is the bridge between DSPy's optimization and our system's own judgment.
+
+    Args:
+        cns_workflow_manager: An instance of our main workflow manager to access the critics.
+        example: The input example from the training set.
+        pred: The prediction object from the DSPy module.
+        trace: The execution trace (unused here, but required by the metric signature).
+
+    Returns:
+        A float score from 0.0 to 1.0, where 1.0 is a perfect score.
     """
     try:
         # 1. Extract the predicted hypothesis from the DSPy prediction object.
         synthesized_hypothesis = pred.synthesized_hypothesis
 
-        # 2. Perform basic validation. If the prediction is invalid, return the worst possible score (0.0).
+        # 2. Perform basic validation. An invalid or trivial output gets the worst possible score.
         if not isinstance(synthesized_hypothesis, str) or len(synthesized_hypothesis) < 20:
             return 0.0
 
-        # 3. Instantiate a candidate SNO. In a real scenario, you would also populate
-        #    its reasoning graph and evidence set from the parent SNOs in the `example`.
+        # 3. Instantiate a candidate SNO from the LLM's generated hypothesis.
+        #    In a full implementation, you would also populate its reasoning graph and
+        #    evidence set by combining elements from the parent SNOs in the `example`.
         candidate_sno = StructuredNarrativeObject(central_hypothesis=synthesized_hypothesis)
+
+        # We must compute its embedding to allow the Novelty critic to work.
         candidate_sno.compute_hypothesis_embedding(cns_workflow_manager.embedding_model)
 
         # 4. The Novelty Critic needs the existing SNO population to compare against.
-        #    We provide this as context for the evaluation.
+        #    We provide the full SNO population as context for the evaluation.
         context = {'sno_population': cns_workflow_manager.sno_population}
 
         # 5. Run the candidate SNO through our complete, multi-component critic pipeline.
+        #    This is the core of the feedback loop.
         evaluation_result = cns_workflow_manager.critic_pipeline.evaluate_sno(candidate_sno, context)
 
         # 6. The final, holistic trust_score produced by our pipeline is the metric.
-        #    DSPy's optimizer will now try to maximize this very score.
+        #    DSPy's optimizer will now tune the synthesizer's prompts to maximize this score.
         trust_score = evaluation_result.get('trust_score', 0.0)
 
         return trust_score
     except Exception as e:
-        # If any part of the process fails, return a score of 0.0
+        # If any part of the process fails (e.g., malformed prediction), return a score of 0.0.
+        # This penalizes prompts that produce unusable outputs.
         logger.error(f"Critic pipeline metric failed: {e}")
         return 0.0
 ```
@@ -177,22 +241,29 @@ def critic_pipeline_metric(cns_workflow_manager, example, pred, trace=None) -> f
 With the signature, module, and metric defined, we can now compile our `SynthesisModule`. The optimizer will try different prompts and few-shot examples for the synthesis task, and for each attempt, it will check the quality of the output using the `critic_pipeline_metric`. It will learn to generate hypotheses that are well-grounded, logical, and novel *according to the system's own internal criteria*.
 
 ```python
-# Assume 'cns_manager' is an instance of our CNSWorkflowManager
-# We wrap our metric in a lambda to pass the manager instance to it.
-optimizer = BootstrapFewShot(metric=lambda ex, pred, trace: critic_pipeline_metric(cns_manager, ex, pred, trace))
+# Assume 'cns_manager' is an instance of our CNSWorkflowManager containing the critic pipeline.
+# We wrap our metric in a lambda function to pass the cns_manager instance into it.
+# This gives our metric access to the critics and the full SNO population.
+metric_with_context = lambda ex, pred, trace: critic_pipeline_metric(cns_manager, ex, pred, trace)
 
-# We need training examples of chiral pairs
+# We choose an optimizer. `BootstrapFewShot` is a powerful choice that generates
+# both high-quality prompts and effective few-shot examples for the module.
+optimizer = BootstrapFewShot(metric=metric_with_context, max_bootstrapped_demos=2)
+
+# We need a small set of training examples. These don't need to have "correct" output labels,
+# as the metric provides the signal for what is good. We just need representative inputs.
 synthesis_train_examples = [
     dspy.Example(
         narrative_A="Hypothesis: AI regulation stifles innovation. Claims: Excessive rules slow down development.",
         narrative_B="Hypothesis: AI regulation is essential for safety. Claims: Unchecked AI poses existential risks.",
         shared_evidence="The rapid development of large language models."
     ).with_inputs('narrative_A', 'narrative_B', 'shared_evidence'),
-    # ... more examples of conflicting pairs
+    # ... more examples of conflicting pairs would be added here
 ]
 
-# This compilation step creates a synthesizer that is optimized
-# to produce high-trust-score outputs.
+# This is the "compilation" step. The optimizer will run the SynthesisModule on the
+# training examples, evaluate the outputs with our critic_pipeline_metric, and use the
+# feedback to iteratively improve the prompts and few-shot examples inside the module.
 optimized_synthesis_module = optimizer.compile(SynthesisModule(), trainset=synthesis_train_examples)
 ```
 
