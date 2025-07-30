@@ -113,39 +113,79 @@ class ChiralPairDetector:
         self.chirality_threshold = chirality_threshold
         self.entanglement_threshold = entanglement_threshold
         self.synthesis_threshold = synthesis_threshold
-        self.k_neighbors = k_neighbors
+        self.k_neighbors = min(k_neighbors, len(sno_population) if sno_population else k_neighbors)
         if not HAS_FAISS:
             logger.warning("FAISS not installed. Falling back to O(n²) pair detection.")
     
     def find_chiral_pairs(self, sno_population: List[StructuredNarrativeObject], max_pairs: int = 10) -> List[ChiralPair]:
-        # This method now uses the improved conflict detection
-        if len(sno_population) < 2: return []
-        # For brevity, we'll focus on the brute-force method to highlight the new conflict detection logic
-        return self._find_pairs_brute_force(sno_population, max_pairs)
+        """
+        Finds the most promising chiral pairs for synthesis.
+        Uses FAISS for efficient search if available, otherwise falls back to a brute-force O(n^2) search.
+        """
+        if len(sno_population) < 2:
+            return []
 
-    def _find_pairs_brute_force(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) -> List[ChiralPair]:
-        candidate_pairs = []
-        # Pre-compute claim embeddings for all SNOs to avoid redundant calculations
+        # Ensure all necessary embeddings are pre-computed.
         self._embed_all_claims(sno_population)
 
+        if HAS_FAISS:
+            return self._find_pairs_faiss(sno_population, max_pairs)
+        else:
+            return self._find_pairs_brute_force(sno_population, max_pairs)
+
+    def _find_pairs_faiss(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) -> List[ChiralPair]:
+        """Finds candidate pairs efficiently using a FAISS index."""
+        sno_map = {i: sno for i, sno in enumerate(sno_population) if sno.hypothesis_embedding is not None}
+        if len(sno_map) < 2: return []
+
+        embeddings = np.array([sno.hypothesis_embedding for sno in sno_map.values()]).astype('float32')
+        dimension = embeddings.shape[1]
+
+        index = faiss.IndexFlatL2(dimension)
+        index.add(embeddings)
+
+        # Search for k nearest neighbors for each vector.
+        distances, indices = index.search(embeddings, self.k_neighbors)
+
+        processed_pairs = set()
+        candidate_pairs = []
+
+        for i, sno_a in sno_map.items():
+            for j_idx, neighbor_sno_idx in enumerate(indices[i]):
+                if i == neighbor_sno_idx: continue # Skip self-comparison
+
+                pair_key = tuple(sorted((sno_a.sno_id, sno_map[neighbor_sno_idx].sno_id)))
+                if pair_key in processed_pairs: continue
+                processed_pairs.add(pair_key)
+
+                sno_b = sno_map[neighbor_sno_idx]
+                chirality = RelationalMetrics.chirality_score(sno_a, sno_b)
+                if chirality >= self.chirality_threshold:
+                    entanglement, shared_evidence = RelationalMetrics.evidential_entanglement(sno_a, sno_b)
+                    potential = RelationalMetrics.synthesis_potential(chirality, entanglement)
+
+                    if entanglement >= self.entanglement_threshold and potential >= self.synthesis_threshold:
+                        conflict_points = self._identify_conflicts_semantically(sno_a, sno_b)
+                        candidate_pairs.append(ChiralPair(sno_a, sno_b, chirality, entanglement, potential, conflict_points, shared_evidence))
+
+        candidate_pairs.sort(key=lambda p: p.synthesis_potential, reverse=True)
+        return candidate_pairs[:max_pairs]
+
+    def _find_pairs_brute_force(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) -> List[ChiralPair]:
+        """Finds candidate pairs using a simple, O(n^2) brute-force search."""
+        candidate_pairs = []
         for i, sno_a in enumerate(sno_population):
             for j, sno_b in enumerate(sno_population):
                 if i >= j: continue
-                if not sno_a.hypothesis_embedding is None and not sno_b.hypothesis_embedding is None and not sno_a.trust_score is None and not sno_b.trust_score is None:
-                    chirality = RelationalMetrics.chirality_score(sno_a, sno_b)
+
+                chirality = RelationalMetrics.chirality_score(sno_a, sno_b)
+                if chirality >= self.chirality_threshold:
                     entanglement, shared_evidence = RelationalMetrics.evidential_entanglement(sno_a, sno_b)
                     potential = RelationalMetrics.synthesis_potential(chirality, entanglement)
                     
-                    if (chirality >= self.chirality_threshold and entanglement >= self.entanglement_threshold and potential >= self.synthesis_threshold):
-                        # Use the new, improved conflict identification method
+                    if entanglement >= self.entanglement_threshold and potential >= self.synthesis_threshold:
                         conflict_points = self._identify_conflicts_semantically(sno_a, sno_b)
-                        pair = ChiralPair(
-                            sno_a=sno_a, sno_b=sno_b,
-                            chirality_score=chirality, entanglement_score=entanglement,
-                            synthesis_potential=potential, conflict_points=conflict_points,
-                            shared_evidence=shared_evidence
-                        )
-                        candidate_pairs.append(pair)
+                        candidate_pairs.append(ChiralPair(sno_a, sno_b, chirality, entanglement, potential, conflict_points, shared_evidence))
         
         candidate_pairs.sort(key=lambda p: p.synthesis_potential, reverse=True)
         return candidate_pairs[:max_pairs]
@@ -153,6 +193,10 @@ class ChiralPairDetector:
     def _embed_all_claims(self, sno_population: List[StructuredNarrativeObject]):
         """Utility to compute and cache claim embeddings for a population of SNOs."""
         for sno in sno_population:
+            # Ensure central hypothesis is embedded
+            if sno.hypothesis_embedding is None:
+                sno.compute_hypothesis_embedding(self.embedding_model)
+            # Embed all sub-claims
             for node_id, data in sno.reasoning_graph.nodes(data=True):
                 claim_node = data.get('claim')
                 if claim_node and claim_node.embedding is None:
@@ -161,20 +205,26 @@ class ChiralPairDetector:
     def _identify_conflicts_semantically(self, sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject, threshold=0.2) -> List[str]:
         """Identifies conflicts using semantic similarity of claim embeddings."""
         conflicts = [f"Central hypothesis conflict: '{sno_a.central_hypothesis}' vs '{sno_b.central_hypothesis}'"]
-
         claims_a = [data['claim'] for _, data in sno_a.reasoning_graph.nodes(data=True) if 'claim' in data and data['claim'].embedding is not None]
         claims_b = [data['claim'] for _, data in sno_b.reasoning_graph.nodes(data=True) if 'claim' in data and data['claim'].embedding is not None]
 
         for ca in claims_a:
             for cb in claims_b:
-                # Low cosine similarity can indicate opposition or irrelevance.
-                # A value close to -1 is direct opposition, close to 0 is orthogonality.
                 similarity = RelationalMetrics._cosine_similarity(ca.embedding, cb.embedding)
                 if similarity < threshold:
                     conflicts.append(f"Potential claim conflict (similarity {similarity:.2f}): '{ca.content}' vs '{cb.content}'")
 
         return conflicts[:5] # Limit for brevity
 ```
+
+#### A Note on Semantic Conflict Detection
+It is important to note the subtlety of using cosine similarity for conflict detection. A low cosine similarity score (close to 0) means the vectors are *orthogonal* or unrelated, while a negative score (close to -1) means they are in *opposition*. Our current `_identify_conflicts_semantically` method uses a simple threshold (`< 0.2`), which will catch claims that are either unrelated or conflicting.
+
+For a more advanced implementation, one could refine this by:
+1.  **Using an NLI model**: Just as in the `GroundingCritic`, one could run an NLI model on pairs of claims to explicitly check for a "contradiction" label. This is more computationally expensive but provides a much stronger signal of true conflict.
+2.  **Setting a negative threshold**: Only flagging pairs with a similarity score below a negative threshold (e.g., `< -0.1`) would focus on more directly oppositional claims, though this might miss more nuanced disagreements.
+
+Our current approach provides a good balance of computational efficiency and effectiveness for identifying potential areas of disagreement to be resolved by the synthesis engine.
 
 ### From Paper to Code: Mathematical Metrics
 The `RelationalMetrics` class implements the crucial formulas from Section 3.2 of the paper, allowing the system to identify the most *productive* conflicts for synthesis. The `CScore` (Chirality) and `EScore` (Entanglement) are direct translations of the paper's mathematical definitions into code, forming the analytical foundation of the synthesis engine.
@@ -195,6 +245,7 @@ Here’s a function that takes a list of SNOs and generates a plot of their conc
 ```python
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
+from typing import List
 
 def visualize_sno_population(sno_population: List[StructuredNarrativeObject]):
     """

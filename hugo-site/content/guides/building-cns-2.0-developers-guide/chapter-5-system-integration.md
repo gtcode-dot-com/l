@@ -34,128 +34,153 @@ from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from queue import PriorityQueue
 
-# ... (Assume SystemMetrics, ProcessingTask, NarrativeIngestionPipeline are defined as before) ...
+# ... (Assume other classes like SystemMetrics are defined) ...
+
+# For an async system, we use asyncio's Queue
+from asyncio import Queue
 
 class CNSWorkflowManager:
     """
     Manages the complete CNS 2.0 operational workflow with state persistence.
+    This version includes the full asynchronous processing loop.
     """
     
     def __init__(self, state_file: str = "cns_system_state.json"):
+        # Core components
         self.sno_population: List[StructuredNarrativeObject] = []
         self.critic_pipeline = CriticPipeline()
-        self.synthesis_engine = None
+        self.synthesis_engine = None # Will be initialized after models are loaded
         
+        # ML Models
         self.embedding_model = None
         self.nli_model = None
         self.nli_tokenizer = None
         
+        # System state and control
         self.is_running = False
-        self.task_queue = PriorityQueue()
+        self.task_queue = Queue() # Use asyncio's Queue for async operations
         self.metrics = SystemMetrics()
         self.start_time = datetime.now()
         self.state_file = state_file
         
-        self._load_models()
+        self._load_models_and_components()
+        self._load_system_state()
+
+    def _load_models_and_components(self):
+        """Loads all necessary ML models and initializes components that depend on them."""
+        logger.info("Loading ML models and initializing components...")
+        if not HAS_TRANSFORMERS:
+            logger.error("Transformers library not available. Cannot run research-grade system.")
+            return
+
+        from sentence_transformers import SentenceTransformer
+        import transformers
+
+        # Load models
+        self.embedding_model = SentenceTransformer(cns_config.models['embedding'])
+        self.nli_tokenizer = transformers.AutoTokenizer.from_pretrained(cns_config.models['nli'])
+        self.nli_model = transformers.AutoModelForSequenceClassification.from_pretrained(cns_config.models['nli'])
 
         # Initialize components that require models
         self.ingestion_pipeline = NarrativeIngestionPipeline(self.embedding_model)
-        # Pass embedding model to detector for semantic conflict analysis
         self.chiral_detector = ChiralPairDetector(embedding_model=self.embedding_model)
         self._initialize_critics()
+        # self.synthesis_engine = AdvancedSynthesisEngine(...) # Assume this is initialized
 
-        # Load previous state from disk if it exists
-        self._load_system_state()
-    
-    def _load_models(self):
-        """Loads all necessary ML models into memory at startup for efficient reuse"""
-        logger.info("Loading ML models into memory...")
-        
-        if HAS_TRANSFORMERS:
-            from sentence_transformers import SentenceTransformer
-            import transformers
-            
-            self.embedding_model = SentenceTransformer(cns_config.models['embedding'])
-            self.nli_tokenizer = transformers.AutoTokenizer.from_pretrained(cns_config.models['nli'])
-            self.nli_model = transformers.AutoModelForSequenceClassification.from_pretrained(cns_config.models['nli'])
-            
-            logger.info("All models loaded successfully.")
-        else:
-            logger.warning("Transformers library not available - using fallback implementations")
+        logger.info("All models and components loaded successfully.")
 
     def _initialize_critics(self):
-        """Set up the critic pipeline with pre-loaded models for efficiency"""
-        if not HAS_TRANSFORMERS:
-            logger.warning("Cannot initialize research-grade critics without transformers.")
-            return
+        # ... (implementation is the same as before) ...
 
-        grounding_critic = GroundingCritic(
-            weight=cns_config.critic_weights['grounding'],
-            nli_model=self.nli_model,
-            nli_tokenizer=self.nli_tokenizer
-        )
-        logic_critic = LogicCritic(weight=cns_config.critic_weights['logic'])
-        novelty_critic = NoveltyParsimonyCritic(
-            weight=cns_config.critic_weights['novelty'],
-            alpha=cns_config.novelty_alpha,
-            beta=cns_config.novelty_beta
-        )
+    ### --- The Asynchronous Main Loop --- ###
+    
+    async def run(self):
+        """The main entry point to start the continuous operation of the CNS system."""
+        self.is_running = True
+        logger.info("CNS Workflow Manager is running...")
         
-        self.critic_pipeline.add_critic(grounding_critic)
-        self.critic_pipeline.add_critic(logic_critic)
-        self.critic_pipeline.add_critic(novelty_critic)
-        logger.info("Research-grade critic pipeline initialized.")
+        # Create a background task for processing the queue
+        self.processing_task = asyncio.create_task(self._process_task_queue())
 
+        # Keep the main loop alive (e.g., to handle API requests or other inputs)
+        while self.is_running:
+            await asyncio.sleep(1)
 
-    # --- Methods for Ingestion, Evaluation, Synthesis ---
-    # ... (All async task handling methods like _process_task_queue,
-    #      _handle_ingestion_task, etc., remain the same as previous version) ...
+        # On shutdown, ensure the processing task is cancelled
+        self.processing_task.cancel()
+        await self.shutdown_system()
+
+    async def _process_task_queue(self):
+        """Continuously fetches tasks from the queue and handles them."""
+        while self.is_running:
+            try:
+                task = await self.task_queue.get()
+                task_type, data = task
+
+                if task_type == "ingest":
+                    await self._handle_ingestion_task(data)
+                elif task_type == "evaluate":
+                    await self._handle_evaluation_task(data)
+                elif task_type == "synthesize":
+                    await self._handle_synthesis_task()
+
+                self.task_queue.task_done()
+            except asyncio.CancelledError:
+                logger.info("Task processing loop cancelled.")
+                break
+            except Exception as e:
+                logger.error(f"Error in task processing loop: {e}")
+
+    async def _handle_ingestion_task(self, data):
+        """Processes a document ingestion task."""
+        logger.info(f"Ingesting document: {data['source']}")
+        sno = self.ingestion_pipeline.ingest_document(data['text'], data['source'])
+        self.sno_population.append(sno)
+        self.metrics.sno_ingested()
+        # New SNOs should be evaluated
+        await self.task_queue.put(("evaluate", sno))
+
+    async def _handle_evaluation_task(self, sno: StructuredNarrativeObject):
+        """Processes an SNO evaluation task."""
+        logger.info(f"Evaluating SNO: {sno.sno_id[:8]}")
+        context = {'sno_population': self.sno_population}
+        self.critic_pipeline.evaluate_sno(sno, context)
+        self.metrics.sno_evaluated()
+        
+        # After evaluation, check if synthesis should be triggered
+        if len(self.sno_population) > 1:
+            await self.task_queue.put(("synthesize", None))
+
+    async def _handle_synthesis_task(self):
+        """Finds chiral pairs and synthesizes a new SNO if conditions are met."""
+        logger.info("Checking for synthesis opportunities...")
+        chiral_pairs = self.chiral_detector.find_chiral_pairs(self.sno_population)
+        if chiral_pairs:
+            # For simplicity, we'll try to synthesize the top pair
+            top_pair = chiral_pairs[0]
+            logger.info(f"Synthesizing new SNO from pair: {top_pair.sno_a.sno_id[:8]} and {top_pair.sno_b.sno_id[:8]}")
+            # result = await self.synthesis_engine.synthesize_chiral_pair(top_pair)
+            # if result.success:
+            #     self.sno_population.append(result.synthesized_sno)
+            #     self.metrics.sno_synthesized()
+            #     await self.task_queue.put(("evaluate", result.synthesized_sno))
+        else:
+            logger.info("No suitable pairs found for synthesis.")
+
+    ### --- Persistence and Shutdown --- ###
 
     async def shutdown_system(self):
-        """Gracefully shutdown the CNS 2.0 system and save state."""
+        """Gracefully shuts down the CNS 2.0 system and saves state."""
         self.is_running = False
         logger.info("CNS 2.0 System shutting down...")
         await self._save_system_state()
         logger.info("System shutdown complete.")
     
     async def _save_system_state(self):
-        """Saves the entire system state to a JSON file."""
-        logger.info(f"Saving system state to {self.state_file}...")
-        try:
-            state = {
-                'sno_population': [sno.to_dict() for sno in self.sno_population],
-                'metrics': self.metrics.to_dict(),
-                'ingestion_stats': self.ingestion_pipeline.extraction_stats,
-                'critic_stats': {ct.value: c.get_statistics() for ct, c in self.critic_pipeline.critics.items()}
-            }
-            with open(self.state_file, 'w') as f:
-                json.dump(state, f, indent=2)
-            logger.info("System state saved successfully.")
-        except Exception as e:
-            logger.error(f"Failed to save system state: {e}")
+        # ... (implementation is the same as before) ...
 
     def _load_system_state(self):
-        """Loads system state from a JSON file if it exists."""
-        if not os.path.exists(self.state_file):
-            logger.info("No state file found. Starting with a fresh system.")
-            return
-
-        logger.info(f"Loading system state from {self.state_file}...")
-        try:
-            with open(self.state_file, 'r') as f:
-                state = json.load(f)
-
-            self.sno_population = [StructuredNarrativeObject.from_dict(sno_data) for sno_data in state.get('sno_population', [])]
-            self.metrics = SystemMetrics(**state.get('metrics', {}))
-            self.ingestion_pipeline.extraction_stats = state.get('ingestion_stats', {})
-
-            logger.info(f"Successfully loaded {len(self.sno_population)} SNOs. System restored.")
-        except Exception as e:
-            logger.error(f"Failed to load system state: {e}. Starting fresh.")
-            self.sno_population = []
-            self.metrics = SystemMetrics()
-    
-    # ... (Other methods like submit_document, get_system_status remain the same) ...
+        # ... (implementation is the same as before) ...
 ```
 
 ## Persistence: Saving and Loading System State
@@ -182,3 +207,15 @@ The `_load_system_state` method is called when the `CNSWorkflowManager` is first
 4.  **Restore Metrics**: It restores the other system statistics.
 
 This save/load cycle, powered by the serialization methods we built into our SNOs, transforms our system from a transient process into a persistent, robust knowledge base that can grow and evolve over time.
+
+### Production Considerations for Persistence
+
+While saving the entire state to a single JSON file is simple and effective for this guide, it has limitations in a large-scale production environment. Here are two key challenges and potential solutions:
+
+1.  **Scalability and Performance**: As the `sno_population` grows, the `cns_system_state.json` file could become gigabytes in size. Saving and loading this entire file on every startup/shutdown cycle would be extremely slow and inefficient.
+    -   **Solution**: Instead of a monolithic file, use a dedicated database. A document database like **MongoDB** is an excellent fit, as the JSON-like structure of our serialized SNOs (`sno.to_dict()`) maps directly to MongoDB documents. Each SNO can be stored as a separate document, allowing for fast, indexed lookups and updates without needing to read the entire population into memory.
+
+2.  **Schema Versioning**: What happens if we update the `StructuredNarrativeObject` class? For example, if we add a new field, `author: str`, to the `ClaimNode` dataclass, our existing `from_dict` method would fail when trying to load older SNOs that don't have this field.
+    -   **Solution**: Implement a migration strategy. This involves versioning your data schema. When you save an SNO, you would include a schema version number (e.g., `"schema_version": 2`). When `from_dict` loads an SNO, it would check this version. If it's an older version, the method would apply the necessary transformations (like adding the new `author` field with a default value of `"unknown"`) to upgrade the old data structure to the current class definition.
+
+Thinking about these challenges early on is crucial for evolving a prototype into a robust, production-grade system.

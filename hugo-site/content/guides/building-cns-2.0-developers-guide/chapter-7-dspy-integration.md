@@ -139,27 +139,35 @@ This is the core of the self-improvement loop. We create a metric function that 
 def critic_pipeline_metric(cns_workflow_manager, example, pred, trace=None) -> float:
     """
     Uses the entire CNS critic pipeline to evaluate the quality of a synthesized hypothesis.
+    This function is the bridge between DSPy's optimization and our system's own judgment.
     """
     try:
+        # 1. Extract the predicted hypothesis from the DSPy prediction object.
         synthesized_hypothesis = pred.synthesized_hypothesis
+
+        # 2. Perform basic validation. If the prediction is invalid, return the worst possible score (0.0).
         if not isinstance(synthesized_hypothesis, str) or len(synthesized_hypothesis) < 20:
             return 0.0
 
-        # Create a new SNO from the synthesized hypothesis
-        # In a real scenario, you'd also populate its graph and evidence from the source SNOs
+        # 3. Instantiate a candidate SNO. In a real scenario, you would also populate
+        #    its reasoning graph and evidence set from the parent SNOs in the `example`.
         candidate_sno = StructuredNarrativeObject(central_hypothesis=synthesized_hypothesis)
+        candidate_sno.compute_hypothesis_embedding(cns_workflow_manager.embedding_model)
 
-        # We need context (the existing population) for the Novelty Critic to work
+        # 4. The Novelty Critic needs the existing SNO population to compare against.
+        #    We provide this as context for the evaluation.
         context = {'sno_population': cns_workflow_manager.sno_population}
 
-        # Run the full critic pipeline on the new SNO
+        # 5. Run the candidate SNO through our complete, multi-component critic pipeline.
         evaluation_result = cns_workflow_manager.critic_pipeline.evaluate_sno(candidate_sno, context)
 
-        # The final trust score is our metric!
+        # 6. The final, holistic trust_score produced by our pipeline is the metric.
+        #    DSPy's optimizer will now try to maximize this very score.
         trust_score = evaluation_result.get('trust_score', 0.0)
 
         return trust_score
     except Exception as e:
+        # If any part of the process fails, return a score of 0.0
         logger.error(f"Critic pipeline metric failed: {e}")
         return 0.0
 ```
@@ -189,3 +197,9 @@ optimized_synthesis_module = optimizer.compile(SynthesisModule(), trainset=synth
 ```
 
 By integrating DSPy in this way, we have transformed the CNS 2.0 system from a static implementation into a dynamic, learning framework. It not only automates knowledge synthesis but now has the programmatic capability to get better at its own core task over time, truly fulfilling the vision of the original research paper.
+
+## Conclusion: From Blueprint to Dynamic System
+
+This guide has walked through the process of translating the CNS 2.0 research paper from a theoretical blueprint into a practical, working system. We have built each component step-by-step: the core `StructuredNarrativeObject`, the transparent `CriticPipeline`, the scalable `ChiralPairDetector`, and the `AdvancedSynthesisEngine`.
+
+Finally, by integrating DSPy, we have shown a path from a static system to a dynamic one—a system that can programmatically optimize and improve its own reasoning capabilities. This closing of the loop, where the system's own judgment is used to refine its generative components, represents a key step toward the goal of automated, robust, and continuously improving knowledge discovery.
