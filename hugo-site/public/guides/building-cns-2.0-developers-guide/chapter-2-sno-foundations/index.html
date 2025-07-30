@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753843213">
+    <link rel="stylesheet" href="/css/style.css?v=1753845270">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,11 @@
     
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     
+
+
+
 
     
     
@@ -171,381 +175,191 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 <h4 id="a-note-on-embeddings">A Note on Embeddings</h4>
 <p>For the mathematical primitives like the Chirality Score and Novelty Score to work as intended, we need a semantically meaningful vector space. Simple fallbacks like hash-based vectors produce random outputs that destroy any geometric meaning, rendering the core CNS 2.0 mechanics useless. Therefore, our implementation treats a real embedding model as a mandatory component.</p>
 <h2 id="core-sno-implementation">Core SNO Implementation</h2>
-<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 20
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 21
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 22
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 23
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 24
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 25
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 26
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 27
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 28
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 29
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 30
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 31
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 32
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 33
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 34
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 35
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 36
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 37
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 38
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 39
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 40
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 41
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 42
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 43
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 44
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 45
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 46
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 47
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 48
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 49
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 50
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 51
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 52
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 53
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 54
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 55
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 56
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 57
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 58
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 59
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 60
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 61
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 62
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 63
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 64
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 65
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 66
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 67
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 68
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 69
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 70
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 71
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 72
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 73
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 74
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 75
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 76
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 77
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 78
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 79
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 80
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 81
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 82
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 83
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 84
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 85
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 86
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 87
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 88
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 89
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 90
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 91
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 92
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 93
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 94
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 95
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 96
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 97
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 98
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 99
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">100
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">101
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">102
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">103
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">104
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">105
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">106
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">107
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">108
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">109
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">110
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">111
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">112
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">113
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">114
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">115
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">116
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">117
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">118
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">119
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">120
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">121
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">122
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">123
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">124
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">125
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">126
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">127
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">128
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">129
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">130
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">131
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">132
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">133
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">134
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">135
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">136
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">137
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">138
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">139
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">140
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">141
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">142
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">143
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">144
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">145
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">146
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">147
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">148
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">149
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">150
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">151
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">152
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">153
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">154
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">155
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">156
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">157
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">158
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">159
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">160
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">161
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">162
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">163
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">164
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">165
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">166
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">167
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">168
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">169
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">170
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">171
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">172
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">173
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">174
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">175
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">176
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">177
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">178
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">179
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">180
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">181
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">182
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">183
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">184
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">Structured Narrative Objects (SNO) Implementation
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">===============================================
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">The foundational data structure for CNS 2.0
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Structured Narrative Objects (SNO) Implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">===============================================
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">The foundational data structure for CNS 2.0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> numpy <span style="color:#fff;font-weight:bold">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> networkx <span style="color:#fff;font-weight:bold">as</span> nx
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> typing <span style="color:#fff;font-weight:bold">import</span> Dict, List, Tuple, Set, Optional, Any
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> dataclasses <span style="color:#fff;font-weight:bold">import</span> dataclass, field
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> datetime <span style="color:#fff;font-weight:bold">import</span> datetime
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> uuid
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> networkx <span style="color:#66d9ef">as</span> nx
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Tuple, Set, Optional, Any
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> uuid
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@dataclass
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> ReasoningEdge:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Represents a typed logical relationship in the reasoning graph&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    source: <span style="color:#fff;font-weight:bold">str</span>
-</span></span><span style="display:flex;"><span>    target: <span style="color:#fff;font-weight:bold">str</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReasoningEdge</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a typed logical relationship in the reasoning graph&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    source: str
+</span></span><span style="display:flex;"><span>    target: str
 </span></span><span style="display:flex;"><span>    relation_type: RelationType
-</span></span><span style="display:flex;"><span>    strength: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">1.0</span>  <span style="color:#007f7f"># Relationship strength [0,1]</span>
-</span></span><span style="display:flex;"><span>    metadata: Dict[<span style="color:#fff;font-weight:bold">str</span>, Any] = field(default_factory=<span style="color:#fff;font-weight:bold">dict</span>)
+</span></span><span style="display:flex;"><span>    strength: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>  <span style="color:#75715e"># Relationship strength [0,1]</span>
+</span></span><span style="display:flex;"><span>    metadata: Dict[str, Any] <span style="color:#f92672">=</span> field(default_factory<span style="color:#f92672">=</span>dict)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@dataclass
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> ClaimNode:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Represents a claim or sub-claim in the reasoning graph&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    claim_id: <span style="color:#fff;font-weight:bold">str</span>
-</span></span><span style="display:flex;"><span>    content: <span style="color:#fff;font-weight:bold">str</span>
-</span></span><span style="display:flex;"><span>    claim_type: <span style="color:#fff;font-weight:bold">str</span> = <span style="color:#0ff;font-weight:bold">&#34;assertion&#34;</span>  <span style="color:#007f7f"># assertion, premise, conclusion, etc.</span>
-</span></span><span style="display:flex;"><span>    embedding: Optional[np.ndarray] = <span style="color:#fff;font-weight:bold">None</span>
-</span></span><span style="display:flex;"><span>    metadata: Dict[<span style="color:#fff;font-weight:bold">str</span>, Any] = field(default_factory=<span style="color:#fff;font-weight:bold">dict</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClaimNode</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a claim or sub-claim in the reasoning graph&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    claim_id: str
+</span></span><span style="display:flex;"><span>    content: str
+</span></span><span style="display:flex;"><span>    claim_type: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;assertion&#34;</span>  <span style="color:#75715e"># assertion, premise, conclusion, etc.</span>
+</span></span><span style="display:flex;"><span>    embedding: Optional[np<span style="color:#f92672">.</span>ndarray] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>    metadata: Dict[str, Any] <span style="color:#f92672">=</span> field(default_factory<span style="color:#f92672">=</span>dict)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> StructuredNarrativeObject:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    Complete implementation of a Structured Narrative Object (SNO)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    This class encapsulates all four components of an SNO:
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    - Hypothesis Embedding (H)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    - Reasoning Graph (G) 
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    - Evidence Set (E)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    - Trust Score (T)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StructuredNarrativeObject</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Complete implementation of a Structured Narrative Object (SNO)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    This class encapsulates all four components of an SNO:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Hypothesis Embedding (H)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Reasoning Graph (G) 
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Evidence Set (E)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Trust Score (T)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>, 
-</span></span><span style="display:flex;"><span>                 central_hypothesis: <span style="color:#fff;font-weight:bold">str</span>,
-</span></span><span style="display:flex;"><span>                 sno_id: Optional[<span style="color:#fff;font-weight:bold">str</span>] = <span style="color:#fff;font-weight:bold">None</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Initialize a new SNO with a central hypothesis
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Args:
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            central_hypothesis: The main claim or hypothesis
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            sno_id: Unique identifier (auto-generated if None)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.sno_id = sno_id or <span style="color:#fff;font-weight:bold">str</span>(uuid.uuid4())
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.central_hypothesis = central_hypothesis
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.created_at = datetime.now()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, 
+</span></span><span style="display:flex;"><span>                 central_hypothesis: str,
+</span></span><span style="display:flex;"><span>                 sno_id: Optional[str] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Initialize a new SNO with a central hypothesis
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            central_hypothesis: The main claim or hypothesis
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            sno_id: Unique identifier (auto-generated if None)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>sno_id <span style="color:#f92672">=</span> sno_id <span style="color:#f92672">or</span> str(uuid<span style="color:#f92672">.</span>uuid4())
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>central_hypothesis <span style="color:#f92672">=</span> central_hypothesis
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>created_at <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now()
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># H: Hypothesis Embedding - will be computed later</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.hypothesis_embedding: Optional[np.ndarray] = <span style="color:#fff;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># H: Hypothesis Embedding - will be computed later</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>hypothesis_embedding: Optional[np<span style="color:#f92672">.</span>ndarray] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># G: Reasoning Graph - NetworkX directed graph</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph = nx.DiGraph()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># G: Reasoning Graph - NetworkX directed graph</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>reasoning_graph <span style="color:#f92672">=</span> nx<span style="color:#f92672">.</span>DiGraph()
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># E: Evidence Set - collection of evidence items</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.evidence_set: Set[EvidenceItem] = <span style="color:#fff;font-weight:bold">set</span>()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># E: Evidence Set - collection of evidence items</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evidence_set: Set[EvidenceItem] <span style="color:#f92672">=</span> set()
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># T: Trust Score - computed by critic pipeline</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.trust_score: Optional[<span style="color:#fff;font-weight:bold">float</span>] = <span style="color:#fff;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># T: Trust Score - computed by critic pipeline</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>trust_score: Optional[float] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Additional metadata</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.metadata: Dict[<span style="color:#fff;font-weight:bold">str</span>, Any] = {}
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Additional metadata</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>metadata: Dict[str, Any] <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Initialize with central hypothesis as root node</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>._add_root_claim()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Initialize with central hypothesis as root node</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_add_root_claim()
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> _add_root_claim(<span style="color:#fff;font-weight:bold">self</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Add the central hypothesis as the root node of the reasoning graph&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        root_node = ClaimNode(
-</span></span><span style="display:flex;"><span>            claim_id=<span style="color:#0ff;font-weight:bold">&#34;root&#34;</span>,
-</span></span><span style="display:flex;"><span>            content=<span style="color:#fff;font-weight:bold">self</span>.central_hypothesis,
-</span></span><span style="display:flex;"><span>            claim_type=<span style="color:#0ff;font-weight:bold">&#34;central_hypothesis&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_add_root_claim</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Add the central hypothesis as the root node of the reasoning graph&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        root_node <span style="color:#f92672">=</span> ClaimNode(
+</span></span><span style="display:flex;"><span>            claim_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;root&#34;</span>,
+</span></span><span style="display:flex;"><span>            content<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>central_hypothesis,
+</span></span><span style="display:flex;"><span>            claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;central_hypothesis&#34;</span>
 </span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.add_node(<span style="color:#0ff;font-weight:bold">&#34;root&#34;</span>, claim=root_node)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_node(<span style="color:#e6db74">&#34;root&#34;</span>, claim<span style="color:#f92672">=</span>root_node)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> add_claim(<span style="color:#fff;font-weight:bold">self</span>, 
-</span></span><span style="display:flex;"><span>                  claim_content: <span style="color:#fff;font-weight:bold">str</span>, 
-</span></span><span style="display:flex;"><span>                  claim_id: Optional[<span style="color:#fff;font-weight:bold">str</span>] = <span style="color:#fff;font-weight:bold">None</span>,
-</span></span><span style="display:flex;"><span>                  claim_type: <span style="color:#fff;font-weight:bold">str</span> = <span style="color:#0ff;font-weight:bold">&#34;assertion&#34;</span>) -&gt; <span style="color:#fff;font-weight:bold">str</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Add a new claim to the reasoning graph
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Args:
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            claim_content: Text content of the claim
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            claim_id: Unique identifier (auto-generated if None)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            claim_type: Type of claim (assertion, premise, conclusion, etc.)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Returns:
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            The claim_id of the added claim
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> claim_id is <span style="color:#fff;font-weight:bold">None</span>:
-</span></span><span style="display:flex;"><span>            claim_id = <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;claim_</span><span style="color:#0ff;font-weight:bold">{</span><span style="color:#fff;font-weight:bold">len</span>(<span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.nodes)<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_claim</span>(self, 
+</span></span><span style="display:flex;"><span>                  claim_content: str, 
+</span></span><span style="display:flex;"><span>                  claim_id: Optional[str] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
+</span></span><span style="display:flex;"><span>                  claim_type: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;assertion&#34;</span>) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Add a new claim to the reasoning graph
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            claim_content: Text content of the claim
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            claim_id: Unique identifier (auto-generated if None)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            claim_type: Type of claim (assertion, premise, conclusion, etc.)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            The claim_id of the added claim
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> claim_id <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            claim_id <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;claim_</span><span style="color:#e6db74">{</span>len(self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        claim_node = ClaimNode(
-</span></span><span style="display:flex;"><span>            claim_id=claim_id,
-</span></span><span style="display:flex;"><span>            content=claim_content,
-</span></span><span style="display:flex;"><span>            claim_type=claim_type
+</span></span><span style="display:flex;"><span>        claim_node <span style="color:#f92672">=</span> ClaimNode(
+</span></span><span style="display:flex;"><span>            claim_id<span style="color:#f92672">=</span>claim_id,
+</span></span><span style="display:flex;"><span>            content<span style="color:#f92672">=</span>claim_content,
+</span></span><span style="display:flex;"><span>            claim_type<span style="color:#f92672">=</span>claim_type
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.add_node(claim_id, claim=claim_node)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> claim_id
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_node(claim_id, claim<span style="color:#f92672">=</span>claim_node)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> claim_id
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> add_reasoning_edge(<span style="color:#fff;font-weight:bold">self</span>,
-</span></span><span style="display:flex;"><span>                          source_claim_id: <span style="color:#fff;font-weight:bold">str</span>,
-</span></span><span style="display:flex;"><span>                          target_claim_id: <span style="color:#fff;font-weight:bold">str</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_reasoning_edge</span>(self,
+</span></span><span style="display:flex;"><span>                          source_claim_id: str,
+</span></span><span style="display:flex;"><span>                          target_claim_id: str,
 </span></span><span style="display:flex;"><span>                          relation_type: RelationType,
-</span></span><span style="display:flex;"><span>                          strength: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">1.0</span>) -&gt; <span style="color:#fff;font-weight:bold">bool</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Add a reasoning relationship between two claims
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Args:
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            source_claim_id: ID of the source claim
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            target_claim_id: ID of the target claim
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            relation_type: Type of logical relationship
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            strength: Strength of the relationship [0,1]
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Returns:
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            True if edge was added successfully
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> (source_claim_id not in <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.nodes or 
-</span></span><span style="display:flex;"><span>            target_claim_id not in <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.nodes):
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>                          strength: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>) <span style="color:#f92672">-&gt;</span> bool:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Add a reasoning relationship between two claims
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            source_claim_id: ID of the source claim
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            target_claim_id: ID of the target claim
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            relation_type: Type of logical relationship
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            strength: Strength of the relationship [0,1]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            True if edge was added successfully
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (source_claim_id <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes <span style="color:#f92672">or</span> 
+</span></span><span style="display:flex;"><span>            target_claim_id <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Check for cycles (reasoning graph must be acyclic)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> nx.has_path(<span style="color:#fff;font-weight:bold">self</span>.reasoning_graph, target_claim_id, source_claim_id):
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">raise</span> ValueError(<span style="color:#0ff;font-weight:bold">&#34;Adding this edge would create a cycle&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check for cycles (reasoning graph must be acyclic)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> nx<span style="color:#f92672">.</span>has_path(self<span style="color:#f92672">.</span>reasoning_graph, target_claim_id, source_claim_id):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;Adding this edge would create a cycle&#34;</span>)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        edge = ReasoningEdge(
-</span></span><span style="display:flex;"><span>            source=source_claim_id,
-</span></span><span style="display:flex;"><span>            target=target_claim_id,
-</span></span><span style="display:flex;"><span>            relation_type=relation_type,
-</span></span><span style="display:flex;"><span>            strength=strength
+</span></span><span style="display:flex;"><span>        edge <span style="color:#f92672">=</span> ReasoningEdge(
+</span></span><span style="display:flex;"><span>            source<span style="color:#f92672">=</span>source_claim_id,
+</span></span><span style="display:flex;"><span>            target<span style="color:#f92672">=</span>target_claim_id,
+</span></span><span style="display:flex;"><span>            relation_type<span style="color:#f92672">=</span>relation_type,
+</span></span><span style="display:flex;"><span>            strength<span style="color:#f92672">=</span>strength
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.add_edge(
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>add_edge(
 </span></span><span style="display:flex;"><span>            source_claim_id, 
 </span></span><span style="display:flex;"><span>            target_claim_id, 
-</span></span><span style="display:flex;"><span>            reasoning_edge=edge
+</span></span><span style="display:flex;"><span>            reasoning_edge<span style="color:#f92672">=</span>edge
 </span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> add_evidence(<span style="color:#fff;font-weight:bold">self</span>, evidence_item: EvidenceItem):
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Add evidence to support claims in this SNO&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.evidence_set.add(evidence_item)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_evidence</span>(self, evidence_item: EvidenceItem):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Add evidence to support claims in this SNO&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evidence_set<span style="color:#f92672">.</span>add(evidence_item)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> compute_hypothesis_embedding(<span style="color:#fff;font-weight:bold">self</span>, embedding_model):
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Compute the hypothesis embedding using a sentence transformer model.
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        This is a critical step for all geometric operations in CNS 2.0.
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Args:
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            embedding_model: A loaded sentence-transformer model instance.
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># A real embedding is non-negotiable for research-grade implementation.</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.hypothesis_embedding = embedding_model.encode(<span style="color:#fff;font-weight:bold">self</span>.central_hypothesis)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_hypothesis_embedding</span>(self, embedding_model):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Compute the hypothesis embedding using a sentence transformer model.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        This is a critical step for all geometric operations in CNS 2.0.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            embedding_model: A loaded sentence-transformer model instance.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># A real embedding is non-negotiable for research-grade implementation.</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">=</span> embedding_model<span style="color:#f92672">.</span>encode(self<span style="color:#f92672">.</span>central_hypothesis)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> get_graph_statistics(<span style="color:#fff;font-weight:bold">self</span>) -&gt; Dict[<span style="color:#fff;font-weight:bold">str</span>, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Compute statistics about the reasoning graph&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        stats = {
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;num_nodes&#39;</span>: <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.number_of_nodes(),
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;num_edges&#39;</span>: <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.number_of_edges(),
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;is_acyclic&#39;</span>: nx.is_directed_acyclic_graph(<span style="color:#fff;font-weight:bold">self</span>.reasoning_graph),
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;density&#39;</span>: nx.density(<span style="color:#fff;font-weight:bold">self</span>.reasoning_graph),
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;relation_type_counts&#39;</span>: {}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_graph_statistics</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Compute statistics about the reasoning graph&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        stats <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;num_nodes&#39;</span>: self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>number_of_nodes(),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;num_edges&#39;</span>: self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>number_of_edges(),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;is_acyclic&#39;</span>: nx<span style="color:#f92672">.</span>is_directed_acyclic_graph(self<span style="color:#f92672">.</span>reasoning_graph),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;density&#39;</span>: nx<span style="color:#f92672">.</span>density(self<span style="color:#f92672">.</span>reasoning_graph),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;relation_type_counts&#39;</span>: {}
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Count relation types</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> _, _, edge_data in <span style="color:#fff;font-weight:bold">self</span>.reasoning_graph.edges(data=<span style="color:#fff;font-weight:bold">True</span>):
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">if</span> <span style="color:#0ff;font-weight:bold">&#39;reasoning_edge&#39;</span> in edge_data:
-</span></span><span style="display:flex;"><span>                rel_type = edge_data[<span style="color:#0ff;font-weight:bold">&#39;reasoning_edge&#39;</span>].relation_type.value
-</span></span><span style="display:flex;"><span>                stats[<span style="color:#0ff;font-weight:bold">&#39;relation_type_counts&#39;</span>][rel_type] = stats[<span style="color:#0ff;font-weight:bold">&#39;relation_type_counts&#39;</span>].get(rel_type, <span style="color:#ff0;font-weight:bold">0</span>) + <span style="color:#ff0;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Count relation types</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> _, _, edge_data <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>edges(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;reasoning_edge&#39;</span> <span style="color:#f92672">in</span> edge_data:
+</span></span><span style="display:flex;"><span>                rel_type <span style="color:#f92672">=</span> edge_data[<span style="color:#e6db74">&#39;reasoning_edge&#39;</span>]<span style="color:#f92672">.</span>relation_type<span style="color:#f92672">.</span>value
+</span></span><span style="display:flex;"><span>                stats[<span style="color:#e6db74">&#39;relation_type_counts&#39;</span>][rel_type] <span style="color:#f92672">=</span> stats[<span style="color:#e6db74">&#39;relation_type_counts&#39;</span>]<span style="color:#f92672">.</span>get(rel_type, <span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> stats
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> stats
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __repr__(<span style="color:#fff;font-weight:bold">self</span>) -&gt; <span style="color:#fff;font-weight:bold">str</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;SNO(id=</span><span style="color:#0ff;font-weight:bold">{</span><span style="color:#fff;font-weight:bold">self</span>.sno_id[:<span style="color:#ff0;font-weight:bold">8</span>]<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">, hypothesis=&#39;</span><span style="color:#0ff;font-weight:bold">{</span><span style="color:#fff;font-weight:bold">self</span>.central_hypothesis[:<span style="color:#ff0;font-weight:bold">50</span>]<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">...&#39;)&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__repr__</span>(self) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;SNO(id=</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>sno_id[:<span style="color:#ae81ff">8</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">, hypothesis=&#39;</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>central_hypothesis[:<span style="color:#ae81ff">50</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#39;)&#34;</span>
+</span></span></code></pre></div>
     </div>
 
     
@@ -600,7 +414,8 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
                 <div class="footer-content">
                     <div class="footer-text">
                         <p>&copy; 2025 <a href="https://GTCode.com/" class="footer-link">GTCode.com</a>. Educational content for CNS 2.0 implementation.</p>
-                        <p>Based on <a href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
+                        <p>Based on <a target="_blank" 
+                               rel="noopener noreferrer" href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
                     </div>
                 </div>
             </div>
@@ -609,9 +424,9 @@ An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:</p>
 
     
     <script src="/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     
     
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>

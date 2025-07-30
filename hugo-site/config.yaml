@@ -17,11 +17,11 @@ markup:
         delimiters:
           block: [['$$', '$$']]
           inline: [['$', '$']]
-  highlight:
-    style: vs2015
-    lineNos: true
-    lineNumbersInTable: true
-    tabWidth: 4
+  # highlight:
+  #   style: vs2015
+  #   lineNos: true
+  #   lineNumbersInTable: true
+  #   tabWidth: 4
 
 menu:
   main:

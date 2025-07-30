@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753843213">
+    <link rel="stylesheet" href="/css/style.css?v=1753845270">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,11 @@
     
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     
+
+
+
 
     
     
@@ -146,833 +150,417 @@
 </ol>
 <p>Let&rsquo;s implement each component to create a system capable of genuine knowledge synthesis.</p>
 <h2 id="core-synthesis-infrastructure">Core Synthesis Infrastructure</h2>
-<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 20
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 21
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 22
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 23
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 24
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 25
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 26
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 27
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 28
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 29
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 30
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 31
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 32
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 33
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 34
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 35
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 36
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 37
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 38
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 39
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 40
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 41
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 42
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 43
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 44
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 45
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 46
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 47
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 48
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 49
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 50
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 51
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 52
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 53
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 54
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 55
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 56
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 57
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 58
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 59
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 60
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 61
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 62
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 63
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 64
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 65
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 66
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 67
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 68
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 69
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 70
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 71
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 72
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 73
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 74
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 75
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 76
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 77
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 78
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 79
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 80
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 81
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 82
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 83
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 84
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 85
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 86
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 87
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 88
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 89
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 90
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 91
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 92
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 93
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 94
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 95
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 96
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 97
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 98
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 99
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">100
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">101
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">102
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">103
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">104
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">105
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">106
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">107
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">108
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">109
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">110
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">111
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">112
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">113
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">114
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">115
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">116
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">117
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">118
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">119
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">120
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">121
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">122
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">123
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">124
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">125
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">126
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">127
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">128
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">129
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">130
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">131
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">132
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">133
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">134
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">135
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">136
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">137
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">138
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">139
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">140
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">141
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">142
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">143
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">144
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">145
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">146
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">147
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">148
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">149
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">150
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">151
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">152
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">153
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">154
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">155
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">156
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">157
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">158
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">159
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">160
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">161
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">162
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">163
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">164
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">165
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">166
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">167
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">168
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">169
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">170
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">171
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">172
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">173
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">174
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">175
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">176
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">177
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">178
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">179
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">180
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">181
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">182
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">183
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">184
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">185
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">186
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">187
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">188
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">189
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">190
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">191
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">192
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">193
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">194
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">195
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">196
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">197
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">198
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">199
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">200
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">201
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">202
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">203
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">204
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">205
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">206
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">207
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">208
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">209
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">210
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">211
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">212
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">213
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">214
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">215
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">216
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">217
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">218
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">219
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">220
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">221
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">222
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">223
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">224
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">225
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">226
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">227
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">228
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">229
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">230
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">231
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">232
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">233
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">234
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">235
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">236
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">237
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">238
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">239
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">240
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">241
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">242
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">243
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">244
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">245
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">246
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">247
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">248
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">249
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">250
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">251
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">252
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">253
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">254
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">255
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">256
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">257
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">258
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">259
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">260
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">261
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">262
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">263
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">264
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">265
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">266
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">267
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">268
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">269
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">270
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">271
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">272
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">273
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">274
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">275
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">276
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">277
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">278
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">279
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">280
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">281
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">282
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">283
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">284
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">285
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">286
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">287
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">288
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">289
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">290
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">291
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">292
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">293
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">294
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">295
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">296
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">297
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">298
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">299
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">300
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">301
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">302
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">303
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">304
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">305
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">306
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">307
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">308
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">309
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">310
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">311
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">312
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">313
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">314
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">315
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">316
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">317
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">318
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">319
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">320
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">321
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">322
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">323
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">324
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">325
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">326
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">327
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">328
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">329
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">330
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">331
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">332
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">333
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">334
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">335
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">336
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">337
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">338
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">339
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">340
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">341
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">342
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">343
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">344
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">345
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">346
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">347
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">348
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">349
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">350
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">351
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">352
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">353
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">354
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">355
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">356
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">357
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">358
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">359
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">360
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">361
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">362
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">363
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">364
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">365
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">366
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">367
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">368
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">369
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">370
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">371
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">372
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">373
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">374
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">375
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">376
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">377
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">378
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">379
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">380
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">381
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">382
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">383
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">384
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">385
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">386
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">387
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">388
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">389
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">390
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">391
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">392
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">393
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">394
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">395
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">396
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">397
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">398
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">399
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">400
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">401
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">402
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">403
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">404
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">405
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">406
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">407
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">408
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">409
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">410
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">Generative Synthesis Engine Implementation
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">=========================================
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">LLM-powered dialectical reasoning for knowledge synthesis
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Generative Synthesis Engine Implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">=========================================
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">LLM-powered dialectical reasoning for knowledge synthesis
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> typing <span style="color:#fff;font-weight:bold">import</span> Dict, List, Tuple, Optional, Any, Set
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> numpy <span style="color:#fff;font-weight:bold">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> dataclasses <span style="color:#fff;font-weight:bold">import</span> dataclass
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> enum <span style="color:#fff;font-weight:bold">import</span> Enum
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> json
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> logging
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> abc <span style="color:#fff;font-weight:bold">import</span> ABC, abstractmethod
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Tuple, Optional, Any, Set
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> enum <span style="color:#f92672">import</span> Enum
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> abc <span style="color:#f92672">import</span> ABC, abstractmethod
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Import FAISS for scalable ANN-based pair finding</span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">try</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">import</span> faiss
-</span></span><span style="display:flex;"><span>    HAS_FAISS = <span style="color:#fff;font-weight:bold">True</span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">except</span> ImportError:
-</span></span><span style="display:flex;"><span>    HAS_FAISS = <span style="color:#fff;font-weight:bold">False</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">print</span>(<span style="color:#0ff;font-weight:bold">&#34;Warning: faiss library not found. ChiralPairDetector will be inefficient.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Import FAISS for scalable ANN-based pair finding</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> faiss
+</span></span><span style="display:flex;"><span>    HAS_FAISS <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ImportError</span>:
+</span></span><span style="display:flex;"><span>    HAS_FAISS <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Warning: faiss library not found. ChiralPairDetector will be inefficient.&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Configure logging for synthesis operations</span>
-</span></span><span style="display:flex;"><span>logging.basicConfig(level=logging.INFO)
-</span></span><span style="display:flex;"><span>logger = logging.getLogger(__name__)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure logging for synthesis operations</span>
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig(level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(__name__)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@dataclass
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> ChiralPair:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Represents a pair of SNOs suitable for synthesis&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChiralPair</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a pair of SNOs suitable for synthesis&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    sno_a: StructuredNarrativeObject
 </span></span><span style="display:flex;"><span>    sno_b: StructuredNarrativeObject
-</span></span><span style="display:flex;"><span>    chirality_score: <span style="color:#fff;font-weight:bold">float</span>
-</span></span><span style="display:flex;"><span>    entanglement_score: <span style="color:#fff;font-weight:bold">float</span>
-</span></span><span style="display:flex;"><span>    synthesis_potential: <span style="color:#fff;font-weight:bold">float</span>
-</span></span><span style="display:flex;"><span>    conflict_points: List[<span style="color:#fff;font-weight:bold">str</span>]
-</span></span><span style="display:flex;"><span>    shared_evidence: Set[<span style="color:#fff;font-weight:bold">str</span>]
+</span></span><span style="display:flex;"><span>    chirality_score: float
+</span></span><span style="display:flex;"><span>    entanglement_score: float
+</span></span><span style="display:flex;"><span>    synthesis_potential: float
+</span></span><span style="display:flex;"><span>    conflict_points: List[str]
+</span></span><span style="display:flex;"><span>    shared_evidence: Set[str]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@dataclass
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> SynthesisCandidate:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Represents a candidate synthesis result&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SynthesisCandidate</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a candidate synthesis result&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    candidate_sno: StructuredNarrativeObject
 </span></span><span style="display:flex;"><span>    source_pair: ChiralPair
-</span></span><span style="display:flex;"><span>    generation_metadata: Dict[<span style="color:#fff;font-weight:bold">str</span>, Any]
-</span></span><span style="display:flex;"><span>    confidence: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>    generation_metadata: Dict[str, Any]
+</span></span><span style="display:flex;"><span>    confidence: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> SynthesisStrategy(Enum):
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Different approaches to synthesis based on conflict type&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    COMPLEMENTARY = <span style="color:#0ff;font-weight:bold">&#34;complementary&#34;</span>  <span style="color:#007f7f"># Non-contradictory integration</span>
-</span></span><span style="display:flex;"><span>    DIALECTICAL = <span style="color:#0ff;font-weight:bold">&#34;dialectical&#34;</span>      <span style="color:#007f7f"># Resolution of contradictions</span>
-</span></span><span style="display:flex;"><span>    TRANSCENDENT = <span style="color:#0ff;font-weight:bold">&#34;transcendent&#34;</span>    <span style="color:#007f7f"># Higher-order perspective</span>
-</span></span><span style="display:flex;"><span>    EVIDENTIAL = <span style="color:#0ff;font-weight:bold">&#34;evidential&#34;</span>        <span style="color:#007f7f"># Evidence-based reconciliation</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SynthesisStrategy</span>(Enum):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Different approaches to synthesis based on conflict type&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    COMPLEMENTARY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complementary&#34;</span>  <span style="color:#75715e"># Non-contradictory integration</span>
+</span></span><span style="display:flex;"><span>    DIALECTICAL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dialectical&#34;</span>      <span style="color:#75715e"># Resolution of contradictions</span>
+</span></span><span style="display:flex;"><span>    TRANSCENDENT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transcendent&#34;</span>    <span style="color:#75715e"># Higher-order perspective</span>
+</span></span><span style="display:flex;"><span>    EVIDENTIAL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;evidential&#34;</span>        <span style="color:#75715e"># Evidence-based reconciliation</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> RelationalMetrics:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Computes relationships between SNOs for synthesis planning&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RelationalMetrics</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Computes relationships between SNOs for synthesis planning&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    @staticmethod
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> chirality_score(sno_a: StructuredNarrativeObject, 
-</span></span><span style="display:flex;"><span>                       sno_b: StructuredNarrativeObject) -&gt; <span style="color:#fff;font-weight:bold">float</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Compute chirality score measuring opposition between hypotheses
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        High chirality = strong opposition with high trust
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> (sno_a.hypothesis_embedding is <span style="color:#fff;font-weight:bold">None</span> or 
-</span></span><span style="display:flex;"><span>            sno_b.hypothesis_embedding is <span style="color:#fff;font-weight:bold">None</span> or
-</span></span><span style="display:flex;"><span>            sno_a.trust_score is <span style="color:#fff;font-weight:bold">None</span> or 
-</span></span><span style="display:flex;"><span>            sno_b.trust_score is <span style="color:#fff;font-weight:bold">None</span>):
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">chirality_score</span>(sno_a: StructuredNarrativeObject, 
+</span></span><span style="display:flex;"><span>                       sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> float:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Compute chirality score measuring opposition between hypotheses
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        High chirality = strong opposition with high trust
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (sno_a<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> 
+</span></span><span style="display:flex;"><span>            sno_b<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span>
+</span></span><span style="display:flex;"><span>            sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> 
+</span></span><span style="display:flex;"><span>            sno_b<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Cosine similarity between hypothesis embeddings</span>
-</span></span><span style="display:flex;"><span>        cos_sim = np.dot(sno_a.hypothesis_embedding, sno_b.hypothesis_embedding) / (
-</span></span><span style="display:flex;"><span>            np.linalg.norm(sno_a.hypothesis_embedding) * 
-</span></span><span style="display:flex;"><span>            np.linalg.norm(sno_b.hypothesis_embedding)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Cosine similarity between hypothesis embeddings</span>
+</span></span><span style="display:flex;"><span>        cos_sim <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>dot(sno_a<span style="color:#f92672">.</span>hypothesis_embedding, sno_b<span style="color:#f92672">.</span>hypothesis_embedding) <span style="color:#f92672">/</span> (
+</span></span><span style="display:flex;"><span>            np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(sno_a<span style="color:#f92672">.</span>hypothesis_embedding) <span style="color:#f92672">*</span> 
+</span></span><span style="display:flex;"><span>            np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(sno_b<span style="color:#f92672">.</span>hypothesis_embedding)
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Chirality is high when hypotheses oppose but both are trusted</span>
-</span></span><span style="display:flex;"><span>        opposition = <span style="color:#ff0;font-weight:bold">1.0</span> - cos_sim  <span style="color:#007f7f"># High when dissimilar</span>
-</span></span><span style="display:flex;"><span>        trust_product = sno_a.trust_score * sno_b.trust_score
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Chirality is high when hypotheses oppose but both are trusted</span>
+</span></span><span style="display:flex;"><span>        opposition <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> cos_sim  <span style="color:#75715e"># High when dissimilar</span>
+</span></span><span style="display:flex;"><span>        trust_product <span style="color:#f92672">=</span> sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">*</span> sno_b<span style="color:#f92672">.</span>trust_score
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> opposition * trust_product
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> opposition <span style="color:#f92672">*</span> trust_product
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    @staticmethod
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> evidential_entanglement(sno_a: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>                               sno_b: StructuredNarrativeObject) -&gt; Tuple[<span style="color:#fff;font-weight:bold">float</span>, Set[<span style="color:#fff;font-weight:bold">str</span>]]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Compute evidential entanglement measuring shared evidence
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Returns (entanglement_score, shared_evidence_ids)
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        evidence_a = {e.source_id <span style="color:#fff;font-weight:bold">for</span> e in sno_a.evidence_set}
-</span></span><span style="display:flex;"><span>        evidence_b = {e.source_id <span style="color:#fff;font-weight:bold">for</span> e in sno_b.evidence_set}
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evidential_entanglement</span>(sno_a: StructuredNarrativeObject,
+</span></span><span style="display:flex;"><span>                               sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> Tuple[float, Set[str]]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Compute evidential entanglement measuring shared evidence
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Returns (entanglement_score, shared_evidence_ids)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        evidence_a <span style="color:#f92672">=</span> {e<span style="color:#f92672">.</span>source_id <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> sno_a<span style="color:#f92672">.</span>evidence_set}
+</span></span><span style="display:flex;"><span>        evidence_b <span style="color:#f92672">=</span> {e<span style="color:#f92672">.</span>source_id <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> sno_b<span style="color:#f92672">.</span>evidence_set}
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> not evidence_a and not evidence_b:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> <span style="color:#ff0;font-weight:bold">0.0</span>, <span style="color:#fff;font-weight:bold">set</span>()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> evidence_a <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> evidence_b:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.0</span>, set()
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        intersection = evidence_a.intersection(evidence_b)
-</span></span><span style="display:flex;"><span>        union = evidence_a.union(evidence_b)
+</span></span><span style="display:flex;"><span>        intersection <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>intersection(evidence_b)
+</span></span><span style="display:flex;"><span>        union <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>union(evidence_b)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Jaccard similarity</span>
-</span></span><span style="display:flex;"><span>        entanglement = <span style="color:#fff;font-weight:bold">len</span>(intersection) / <span style="color:#fff;font-weight:bold">len</span>(union) <span style="color:#fff;font-weight:bold">if</span> union <span style="color:#fff;font-weight:bold">else</span> <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Jaccard similarity</span>
+</span></span><span style="display:flex;"><span>        entanglement <span style="color:#f92672">=</span> len(intersection) <span style="color:#f92672">/</span> len(union) <span style="color:#66d9ef">if</span> union <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> entanglement, intersection
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> entanglement, intersection
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    @staticmethod
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> synthesis_potential(chirality: <span style="color:#fff;font-weight:bold">float</span>, entanglement: <span style="color:#fff;font-weight:bold">float</span>) -&gt; <span style="color:#fff;font-weight:bold">float</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Compute overall synthesis potential
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        High potential requires both opposition and shared context
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Both metrics should be reasonably high for good synthesis potential</span>
-</span></span><span style="display:flex;"><span>        geometric_mean = np.sqrt(chirality * entanglement)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">synthesis_potential</span>(chirality: float, entanglement: float) <span style="color:#f92672">-&gt;</span> float:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Compute overall synthesis potential
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        High potential requires both opposition and shared context
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Both metrics should be reasonably high for good synthesis potential</span>
+</span></span><span style="display:flex;"><span>        geometric_mean <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(chirality <span style="color:#f92672">*</span> entanglement)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Bonus for balanced high scores</span>
-</span></span><span style="display:flex;"><span>        balance_bonus = <span style="color:#ff0;font-weight:bold">1.0</span> - <span style="color:#fff;font-weight:bold">abs</span>(chirality - entanglement)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Bonus for balanced high scores</span>
+</span></span><span style="display:flex;"><span>        balance_bonus <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> abs(chirality <span style="color:#f92672">-</span> entanglement)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> geometric_mean * (<span style="color:#ff0;font-weight:bold">1.0</span> + <span style="color:#ff0;font-weight:bold">0.2</span> * balance_bonus)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> geometric_mean <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1.0</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.2</span> <span style="color:#f92672">*</span> balance_bonus)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f">### Scalable Pair Selection with ANN</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Scalable Pair Selection with ANN</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; **From Paper to Code: Scalable Pair Finding <span style="color:#fff;font-weight:bold">with</span> ANN**
-</span></span><span style="display:flex;"><span>&gt; A naive O(n²) comparison of <span style="color:#fff;font-weight:bold">all</span> SNOs is not scalable. The paper (Section <span style="color:#ff0;font-weight:bold">3.3</span>) mandates a more efficient, two-step process:
-</span></span><span style="display:flex;"><span>&gt;
-</span></span><span style="display:flex;"><span>&gt; <span style="color:#ff0;font-weight:bold">1.</span> First, an Approximate Nearest Neighbor index (e.g., LSH) on the H vectors is used to efficiently pre-<span style="color:#fff;font-weight:bold">filter</span> a small <span style="color:#fff;font-weight:bold">set</span> of candidate pairs...
-</span></span><span style="display:flex;"><span>&gt; <span style="color:#ff0;font-weight:bold">2.</span> Second, the more computationally intensive EScore is calculated only <span style="color:#fff;font-weight:bold">for</span> these pre-filtered pairs.
-</span></span><span style="display:flex;"><span>&gt;
-</span></span><span style="display:flex;"><span>&gt; We implement this using the <span style="color:#f00">`</span>faiss<span style="color:#f00">`</span> library, a high-performance ANN library. We build an index of <span style="color:#fff;font-weight:bold">all</span> hypothesis embeddings. For each SNO, we query the index to find its k nearest neighbors. We then calculate the full CScore and EScore only <span style="color:#fff;font-weight:bold">for</span> this small, pre-filtered <span style="color:#fff;font-weight:bold">set</span> of candidates, dramatically reducing computation.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>From Paper to Code: Scalable Pair Finding <span style="color:#66d9ef">with</span> ANN<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> A naive O(n²) comparison of all SNOs <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> scalable<span style="color:#f92672">.</span> The paper (Section <span style="color:#ae81ff">3.3</span>) mandates a more efficient, two<span style="color:#f92672">-</span>step process:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1.</span> First, an Approximate Nearest Neighbor index (e<span style="color:#f92672">.</span>g<span style="color:#f92672">.</span>, LSH) on the H vectors <span style="color:#f92672">is</span> used to efficiently pre<span style="color:#f92672">-</span>filter a small set of candidate pairs<span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2.</span> Second, the more computationally intensive EScore <span style="color:#f92672">is</span> calculated only <span style="color:#66d9ef">for</span> these pre<span style="color:#f92672">-</span>filtered pairs<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> We implement this using the <span style="color:#960050;background-color:#1e0010">`</span>faiss<span style="color:#960050;background-color:#1e0010">`</span> library, a high<span style="color:#f92672">-</span>performance ANN library<span style="color:#f92672">.</span> We build an index of all hypothesis embeddings<span style="color:#f92672">.</span> For each SNO, we query the index to find its k nearest neighbors<span style="color:#f92672">.</span> We then calculate the full CScore <span style="color:#f92672">and</span> EScore only <span style="color:#66d9ef">for</span> this small, pre<span style="color:#f92672">-</span>filtered set of candidates, dramatically reducing computation<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> ChiralPairDetector:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Scalable SNO pair detection using Approximate Nearest Neighbor (ANN) search.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChiralPairDetector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Scalable SNO pair detection using Approximate Nearest Neighbor (ANN) search.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>, 
-</span></span><span style="display:flex;"><span>                 chirality_threshold: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">0.7</span>,
-</span></span><span style="display:flex;"><span>                 entanglement_threshold: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">0.3</span>,
-</span></span><span style="display:flex;"><span>                 synthesis_threshold: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">0.5</span>,
-</span></span><span style="display:flex;"><span>                 k_neighbors: <span style="color:#fff;font-weight:bold">int</span> = <span style="color:#ff0;font-weight:bold">20</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.chirality_threshold = chirality_threshold
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.entanglement_threshold = entanglement_threshold
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.synthesis_threshold = synthesis_threshold
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.k_neighbors = k_neighbors  <span style="color:#007f7f"># Number of nearest neighbors to check</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, 
+</span></span><span style="display:flex;"><span>                 chirality_threshold: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>,
+</span></span><span style="display:flex;"><span>                 entanglement_threshold: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>,
+</span></span><span style="display:flex;"><span>                 synthesis_threshold: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>,
+</span></span><span style="display:flex;"><span>                 k_neighbors: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>chirality_threshold <span style="color:#f92672">=</span> chirality_threshold
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>entanglement_threshold <span style="color:#f92672">=</span> entanglement_threshold
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_threshold <span style="color:#f92672">=</span> synthesis_threshold
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>k_neighbors <span style="color:#f92672">=</span> k_neighbors  <span style="color:#75715e"># Number of nearest neighbors to check</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> not HAS_FAISS:
-</span></span><span style="display:flex;"><span>            logger.warning(<span style="color:#0ff;font-weight:bold">&#34;FAISS not installed. Falling back to O(n²) pair detection.&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> HAS_FAISS:
+</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>warning(<span style="color:#e6db74">&#34;FAISS not installed. Falling back to O(n²) pair detection.&#34;</span>)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> find_chiral_pairs(<span style="color:#fff;font-weight:bold">self</span>, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_chiral_pairs</span>(self, 
 </span></span><span style="display:flex;"><span>                         sno_population: List[StructuredNarrativeObject],
-</span></span><span style="display:flex;"><span>                         max_pairs: <span style="color:#fff;font-weight:bold">int</span> = <span style="color:#ff0;font-weight:bold">10</span>) -&gt; List[ChiralPair]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Find the most promising chiral pairs using scalable ANN-based pre-filtering
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> <span style="color:#fff;font-weight:bold">len</span>(sno_population) &lt; <span style="color:#ff0;font-weight:bold">2</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> []
+</span></span><span style="display:flex;"><span>                         max_pairs: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Find the most promising chiral pairs using scalable ANN-based pre-filtering
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> len(sno_population) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> []
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Use FAISS for efficient pre-filtering if available</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> HAS_FAISS:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">self</span>._find_pairs_with_faiss(sno_population, max_pairs)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">self</span>._find_pairs_brute_force(sno_population, max_pairs)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Use FAISS for efficient pre-filtering if available</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> HAS_FAISS:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_find_pairs_with_faiss(sno_population, max_pairs)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_find_pairs_brute_force(sno_population, max_pairs)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> _find_pairs_with_faiss(<span style="color:#fff;font-weight:bold">self</span>, sno_population: List[StructuredNarrativeObject], max_pairs: <span style="color:#fff;font-weight:bold">int</span>) -&gt; List[ChiralPair]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Scalable O(n log n) pair finding using FAISS ANN index&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        promising_pairs = {}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_find_pairs_with_faiss</span>(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Scalable O(n log n) pair finding using FAISS ANN index&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        promising_pairs <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 1. Prepare data and build FAISS index</span>
-</span></span><span style="display:flex;"><span>        embeddings = np.array([s.hypothesis_embedding <span style="color:#fff;font-weight:bold">for</span> s in sno_population <span style="color:#fff;font-weight:bold">if</span> s.hypothesis_embedding is not <span style="color:#fff;font-weight:bold">None</span>]).astype(<span style="color:#0ff;font-weight:bold">&#39;float32&#39;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> embeddings.shape[<span style="color:#ff0;font-weight:bold">0</span>] &lt; <span style="color:#ff0;font-weight:bold">2</span>: 
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Prepare data and build FAISS index</span>
+</span></span><span style="display:flex;"><span>        embeddings <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> sno_population <span style="color:#66d9ef">if</span> s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>])<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;float32&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> embeddings<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>: 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> []
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        sno_map = {i: sno <span style="color:#fff;font-weight:bold">for</span> i, sno in <span style="color:#fff;font-weight:bold">enumerate</span>(sno_population) <span style="color:#fff;font-weight:bold">if</span> sno.hypothesis_embedding is not <span style="color:#fff;font-weight:bold">None</span>}
+</span></span><span style="display:flex;"><span>        sno_map <span style="color:#f92672">=</span> {i: sno <span style="color:#66d9ef">for</span> i, sno <span style="color:#f92672">in</span> enumerate(sno_population) <span style="color:#66d9ef">if</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>}
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        index = faiss.IndexFlatL2(embeddings.shape[<span style="color:#ff0;font-weight:bold">1</span>])
-</span></span><span style="display:flex;"><span>        index.add(embeddings)
+</span></span><span style="display:flex;"><span>        index <span style="color:#f92672">=</span> faiss<span style="color:#f92672">.</span>IndexFlatL2(embeddings<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>        index<span style="color:#f92672">.</span>add(embeddings)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 2. Query the index to find nearest neighbors for each SNO</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># We query for k+1 because the first result will be the item itself</span>
-</span></span><span style="display:flex;"><span>        k = <span style="color:#fff;font-weight:bold">min</span>(<span style="color:#fff;font-weight:bold">self</span>.k_neighbors + <span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#fff;font-weight:bold">len</span>(sno_map))
-</span></span><span style="display:flex;"><span>        distances, indices = index.search(embeddings, k)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Query the index to find nearest neighbors for each SNO</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># We query for k+1 because the first result will be the item itself</span>
+</span></span><span style="display:flex;"><span>        k <span style="color:#f92672">=</span> min(self<span style="color:#f92672">.</span>k_neighbors <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, len(sno_map))
+</span></span><span style="display:flex;"><span>        distances, indices <span style="color:#f92672">=</span> index<span style="color:#f92672">.</span>search(embeddings, k)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 3. Process pre-filtered pairs</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> i in <span style="color:#fff;font-weight:bold">range</span>(<span style="color:#fff;font-weight:bold">len</span>(indices)):
-</span></span><span style="display:flex;"><span>            sno_a = sno_map[i]
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">for</span> j_idx in <span style="color:#fff;font-weight:bold">range</span>(<span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#fff;font-weight:bold">len</span>(indices[i])):  <span style="color:#007f7f"># Skip the first one (self)</span>
-</span></span><span style="display:flex;"><span>                sno_b = sno_map[indices[i][j_idx]]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Process pre-filtered pairs</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(indices)):
+</span></span><span style="display:flex;"><span>            sno_a <span style="color:#f92672">=</span> sno_map[i]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> j_idx <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, len(indices[i])):  <span style="color:#75715e"># Skip the first one (self)</span>
+</span></span><span style="display:flex;"><span>                sno_b <span style="color:#f92672">=</span> sno_map[indices[i][j_idx]]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                <span style="color:#007f7f"># To avoid duplicates, create a sorted key</span>
-</span></span><span style="display:flex;"><span>                pair_key = <span style="color:#fff;font-weight:bold">tuple</span>(<span style="color:#fff;font-weight:bold">sorted</span>((sno_a.sno_id, sno_b.sno_id)))
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> pair_key in promising_pairs:
-</span></span><span style="display:flex;"><span>                    <span style="color:#fff;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># To avoid duplicates, create a sorted key</span>
+</span></span><span style="display:flex;"><span>                pair_key <span style="color:#f92672">=</span> tuple(sorted((sno_a<span style="color:#f92672">.</span>sno_id, sno_b<span style="color:#f92672">.</span>sno_id)))
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> pair_key <span style="color:#f92672">in</span> promising_pairs:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                <span style="color:#007f7f"># 4. Calculate full metrics ONLY for the pre-filtered pairs</span>
-</span></span><span style="display:flex;"><span>                chirality = RelationalMetrics.chirality_score(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> chirality &lt; <span style="color:#fff;font-weight:bold">self</span>.chirality_threshold:
-</span></span><span style="display:flex;"><span>                    <span style="color:#fff;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># 4. Calculate full metrics ONLY for the pre-filtered pairs</span>
+</span></span><span style="display:flex;"><span>                chirality <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>chirality_score(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> chirality <span style="color:#f92672">&lt;</span> self<span style="color:#f92672">.</span>chirality_threshold:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
 </span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                entanglement, shared_evidence = RelationalMetrics.evidential_entanglement(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> entanglement &lt; <span style="color:#fff;font-weight:bold">self</span>.entanglement_threshold:
-</span></span><span style="display:flex;"><span>                    <span style="color:#fff;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>                entanglement, shared_evidence <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>evidential_entanglement(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> entanglement <span style="color:#f92672">&lt;</span> self<span style="color:#f92672">.</span>entanglement_threshold:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
 </span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                potential = RelationalMetrics.synthesis_potential(chirality, entanglement)
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> potential &lt; <span style="color:#fff;font-weight:bold">self</span>.synthesis_threshold:
-</span></span><span style="display:flex;"><span>                    <span style="color:#fff;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>                potential <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>synthesis_potential(chirality, entanglement)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> potential <span style="color:#f92672">&lt;</span> self<span style="color:#f92672">.</span>synthesis_threshold:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
 </span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#007f7f"># If a pair is promising, add it</span>
-</span></span><span style="display:flex;"><span>                conflict_points = <span style="color:#fff;font-weight:bold">self</span>._identify_conflicts(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                promising_pairs[pair_key] = ChiralPair(
-</span></span><span style="display:flex;"><span>                    sno_a=sno_a, sno_b=sno_b,
-</span></span><span style="display:flex;"><span>                    chirality_score=chirality, entanglement_score=entanglement,
-</span></span><span style="display:flex;"><span>                    synthesis_potential=potential, conflict_points=conflict_points,
-</span></span><span style="display:flex;"><span>                    shared_evidence=shared_evidence
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># If a pair is promising, add it</span>
+</span></span><span style="display:flex;"><span>                conflict_points <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_identify_conflicts(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                promising_pairs[pair_key] <span style="color:#f92672">=</span> ChiralPair(
+</span></span><span style="display:flex;"><span>                    sno_a<span style="color:#f92672">=</span>sno_a, sno_b<span style="color:#f92672">=</span>sno_b,
+</span></span><span style="display:flex;"><span>                    chirality_score<span style="color:#f92672">=</span>chirality, entanglement_score<span style="color:#f92672">=</span>entanglement,
+</span></span><span style="display:flex;"><span>                    synthesis_potential<span style="color:#f92672">=</span>potential, conflict_points<span style="color:#f92672">=</span>conflict_points,
+</span></span><span style="display:flex;"><span>                    shared_evidence<span style="color:#f92672">=</span>shared_evidence
 </span></span><span style="display:flex;"><span>                )
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Sort by potential and return top candidates</span>
-</span></span><span style="display:flex;"><span>        sorted_pairs = <span style="color:#fff;font-weight:bold">sorted</span>(promising_pairs.values(), key=<span style="color:#fff;font-weight:bold">lambda</span> p: p.synthesis_potential, reverse=<span style="color:#fff;font-weight:bold">True</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> sorted_pairs[:max_pairs]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Sort by potential and return top candidates</span>
+</span></span><span style="display:flex;"><span>        sorted_pairs <span style="color:#f92672">=</span> sorted(promising_pairs<span style="color:#f92672">.</span>values(), key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> p: p<span style="color:#f92672">.</span>synthesis_potential, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> sorted_pairs[:max_pairs]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> _find_pairs_brute_force(<span style="color:#fff;font-weight:bold">self</span>, sno_population: List[StructuredNarrativeObject], max_pairs: <span style="color:#fff;font-weight:bold">int</span>) -&gt; List[ChiralPair]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;O(n²) fallback implementation when FAISS is not available&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        candidate_pairs = []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_find_pairs_brute_force</span>(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;O(n²) fallback implementation when FAISS is not available&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        candidate_pairs <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Evaluate all pairs</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> i, sno_a in <span style="color:#fff;font-weight:bold">enumerate</span>(sno_population):
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">for</span> j, sno_b in <span style="color:#fff;font-weight:bold">enumerate</span>(sno_population):
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> i &gt;= j:  <span style="color:#007f7f"># Avoid duplicates and self-comparison</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#fff;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Evaluate all pairs</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i, sno_a <span style="color:#f92672">in</span> enumerate(sno_population):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> j, sno_b <span style="color:#f92672">in</span> enumerate(sno_population):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;=</span> j:  <span style="color:#75715e"># Avoid duplicates and self-comparison</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
 </span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#007f7f"># Skip if either SNO lacks necessary components</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> (not sno_a.hypothesis_embedding or not sno_b.hypothesis_embedding or
-</span></span><span style="display:flex;"><span>                    sno_a.trust_score is <span style="color:#fff;font-weight:bold">None</span> or sno_b.trust_score is <span style="color:#fff;font-weight:bold">None</span>):
-</span></span><span style="display:flex;"><span>                    <span style="color:#fff;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Skip if either SNO lacks necessary components</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (<span style="color:#f92672">not</span> sno_a<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> sno_b<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">or</span>
+</span></span><span style="display:flex;"><span>                    sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> sno_b<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
 </span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#007f7f"># Compute relational metrics</span>
-</span></span><span style="display:flex;"><span>                chirality = RelationalMetrics.chirality_score(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                entanglement, shared_evidence = RelationalMetrics.evidential_entanglement(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                potential = RelationalMetrics.synthesis_potential(chirality, entanglement)
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Compute relational metrics</span>
+</span></span><span style="display:flex;"><span>                chirality <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>chirality_score(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                entanglement, shared_evidence <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>evidential_entanglement(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                potential <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>synthesis_potential(chirality, entanglement)
 </span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#007f7f"># Apply thresholds</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> (chirality &gt;= <span style="color:#fff;font-weight:bold">self</span>.chirality_threshold and 
-</span></span><span style="display:flex;"><span>                    entanglement &gt;= <span style="color:#fff;font-weight:bold">self</span>.entanglement_threshold and
-</span></span><span style="display:flex;"><span>                    potential &gt;= <span style="color:#fff;font-weight:bold">self</span>.synthesis_threshold):
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Apply thresholds</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (chirality <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>chirality_threshold <span style="color:#f92672">and</span> 
+</span></span><span style="display:flex;"><span>                    entanglement <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>entanglement_threshold <span style="color:#f92672">and</span>
+</span></span><span style="display:flex;"><span>                    potential <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>synthesis_threshold):
 </span></span><span style="display:flex;"><span>                    
-</span></span><span style="display:flex;"><span>                    <span style="color:#007f7f"># Identify specific conflict points</span>
-</span></span><span style="display:flex;"><span>                    conflict_points = <span style="color:#fff;font-weight:bold">self</span>._identify_conflicts(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e"># Identify specific conflict points</span>
+</span></span><span style="display:flex;"><span>                    conflict_points <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_identify_conflicts(sno_a, sno_b)
 </span></span><span style="display:flex;"><span>                    
-</span></span><span style="display:flex;"><span>                    pair = ChiralPair(
-</span></span><span style="display:flex;"><span>                        sno_a=sno_a, sno_b=sno_b,
-</span></span><span style="display:flex;"><span>                        chirality_score=chirality, entanglement_score=entanglement,
-</span></span><span style="display:flex;"><span>                        synthesis_potential=potential, conflict_points=conflict_points,
-</span></span><span style="display:flex;"><span>                        shared_evidence=shared_evidence
+</span></span><span style="display:flex;"><span>                    pair <span style="color:#f92672">=</span> ChiralPair(
+</span></span><span style="display:flex;"><span>                        sno_a<span style="color:#f92672">=</span>sno_a, sno_b<span style="color:#f92672">=</span>sno_b,
+</span></span><span style="display:flex;"><span>                        chirality_score<span style="color:#f92672">=</span>chirality, entanglement_score<span style="color:#f92672">=</span>entanglement,
+</span></span><span style="display:flex;"><span>                        synthesis_potential<span style="color:#f92672">=</span>potential, conflict_points<span style="color:#f92672">=</span>conflict_points,
+</span></span><span style="display:flex;"><span>                        shared_evidence<span style="color:#f92672">=</span>shared_evidence
 </span></span><span style="display:flex;"><span>                    )
 </span></span><span style="display:flex;"><span>                    
-</span></span><span style="display:flex;"><span>                    candidate_pairs.append(pair)
+</span></span><span style="display:flex;"><span>                    candidate_pairs<span style="color:#f92672">.</span>append(pair)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Sort by synthesis potential and return top candidates</span>
-</span></span><span style="display:flex;"><span>        candidate_pairs.sort(key=<span style="color:#fff;font-weight:bold">lambda</span> p: p.synthesis_potential, reverse=<span style="color:#fff;font-weight:bold">True</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> candidate_pairs[:max_pairs]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Sort by synthesis potential and return top candidates</span>
+</span></span><span style="display:flex;"><span>        candidate_pairs<span style="color:#f92672">.</span>sort(key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> p: p<span style="color:#f92672">.</span>synthesis_potential, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> candidate_pairs[:max_pairs]
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> _identify_conflicts(<span style="color:#fff;font-weight:bold">self</span>, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_identify_conflicts</span>(self, 
 </span></span><span style="display:flex;"><span>                          sno_a: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>                          sno_b: StructuredNarrativeObject) -&gt; List[<span style="color:#fff;font-weight:bold">str</span>]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Identify specific points of conflict between SNOs&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        conflicts = []
+</span></span><span style="display:flex;"><span>                          sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> List[str]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Identify specific points of conflict between SNOs&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        conflicts <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Primary conflict: opposing central hypotheses</span>
-</span></span><span style="display:flex;"><span>        conflicts.append(<span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;Central hypothesis conflict: &#39;</span><span style="color:#0ff;font-weight:bold">{</span>sno_a.central_hypothesis<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#39; vs &#39;</span><span style="color:#0ff;font-weight:bold">{</span>sno_b.central_hypothesis<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#39;&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Primary conflict: opposing central hypotheses</span>
+</span></span><span style="display:flex;"><span>        conflicts<span style="color:#f92672">.</span>append(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Central hypothesis conflict: &#39;</span><span style="color:#e6db74">{</span>sno_a<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; vs &#39;</span><span style="color:#e6db74">{</span>sno_b<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Secondary conflicts: contradictory claims in reasoning graphs</span>
-</span></span><span style="display:flex;"><span>        claims_a = {node_data[<span style="color:#0ff;font-weight:bold">&#39;claim&#39;</span>].content <span style="color:#fff;font-weight:bold">for</span> _, node_data in sno_a.reasoning_graph.nodes(data=<span style="color:#fff;font-weight:bold">True</span>)}
-</span></span><span style="display:flex;"><span>        claims_b = {node_data[<span style="color:#0ff;font-weight:bold">&#39;claim&#39;</span>].content <span style="color:#fff;font-weight:bold">for</span> _, node_data in sno_b.reasoning_graph.nodes(data=<span style="color:#fff;font-weight:bold">True</span>)}
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Secondary conflicts: contradictory claims in reasoning graphs</span>
+</span></span><span style="display:flex;"><span>        claims_a <span style="color:#f92672">=</span> {node_data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node_data <span style="color:#f92672">in</span> sno_a<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)}
+</span></span><span style="display:flex;"><span>        claims_b <span style="color:#f92672">=</span> {node_data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node_data <span style="color:#f92672">in</span> sno_b<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)}
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Simple keyword-based conflict detection (in production, use semantic similarity)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> claim_a in claims_a:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">for</span> claim_b in claims_b:
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">if</span> <span style="color:#fff;font-weight:bold">self</span>._claims_conflict(claim_a, claim_b):
-</span></span><span style="display:flex;"><span>                    conflicts.append(<span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;Claim conflict: &#39;</span><span style="color:#0ff;font-weight:bold">{</span>claim_a<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#39; vs &#39;</span><span style="color:#0ff;font-weight:bold">{</span>claim_b<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#39;&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Simple keyword-based conflict detection (in production, use semantic similarity)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> claim_a <span style="color:#f92672">in</span> claims_a:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> claim_b <span style="color:#f92672">in</span> claims_b:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>_claims_conflict(claim_a, claim_b):
+</span></span><span style="display:flex;"><span>                    conflicts<span style="color:#f92672">.</span>append(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Claim conflict: &#39;</span><span style="color:#e6db74">{</span>claim_a<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; vs &#39;</span><span style="color:#e6db74">{</span>claim_b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> conflicts[:<span style="color:#ff0;font-weight:bold">5</span>]  <span style="color:#007f7f"># Limit to most significant conflicts</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> conflicts[:<span style="color:#ae81ff">5</span>]  <span style="color:#75715e"># Limit to most significant conflicts</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> _claims_conflict(<span style="color:#fff;font-weight:bold">self</span>, claim_a: <span style="color:#fff;font-weight:bold">str</span>, claim_b: <span style="color:#fff;font-weight:bold">str</span>) -&gt; <span style="color:#fff;font-weight:bold">bool</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Simple heuristic to detect conflicting claims&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Look for opposing terms</span>
-</span></span><span style="display:flex;"><span>        opposing_pairs = [
-</span></span><span style="display:flex;"><span>            (<span style="color:#0ff;font-weight:bold">&#39;increase&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;decrease&#39;</span>), (<span style="color:#0ff;font-weight:bold">&#39;more&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;less&#39;</span>), (<span style="color:#0ff;font-weight:bold">&#39;higher&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;lower&#39;</span>),
-</span></span><span style="display:flex;"><span>            (<span style="color:#0ff;font-weight:bold">&#39;positive&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;negative&#39;</span>), (<span style="color:#0ff;font-weight:bold">&#39;beneficial&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;harmful&#39;</span>), (<span style="color:#0ff;font-weight:bold">&#39;true&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;false&#39;</span>),
-</span></span><span style="display:flex;"><span>            (<span style="color:#0ff;font-weight:bold">&#39;likely&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;unlikely&#39;</span>), (<span style="color:#0ff;font-weight:bold">&#39;significant&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;insignificant&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_claims_conflict</span>(self, claim_a: str, claim_b: str) <span style="color:#f92672">-&gt;</span> bool:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Simple heuristic to detect conflicting claims&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Look for opposing terms</span>
+</span></span><span style="display:flex;"><span>        opposing_pairs <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">&#39;increase&#39;</span>, <span style="color:#e6db74">&#39;decrease&#39;</span>), (<span style="color:#e6db74">&#39;more&#39;</span>, <span style="color:#e6db74">&#39;less&#39;</span>), (<span style="color:#e6db74">&#39;higher&#39;</span>, <span style="color:#e6db74">&#39;lower&#39;</span>),
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">&#39;positive&#39;</span>, <span style="color:#e6db74">&#39;negative&#39;</span>), (<span style="color:#e6db74">&#39;beneficial&#39;</span>, <span style="color:#e6db74">&#39;harmful&#39;</span>), (<span style="color:#e6db74">&#39;true&#39;</span>, <span style="color:#e6db74">&#39;false&#39;</span>),
+</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">&#39;likely&#39;</span>, <span style="color:#e6db74">&#39;unlikely&#39;</span>), (<span style="color:#e6db74">&#39;significant&#39;</span>, <span style="color:#e6db74">&#39;insignificant&#39;</span>)
 </span></span><span style="display:flex;"><span>        ]
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        claim_a_lower = claim_a.lower()
-</span></span><span style="display:flex;"><span>        claim_b_lower = claim_b.lower()
+</span></span><span style="display:flex;"><span>        claim_a_lower <span style="color:#f92672">=</span> claim_a<span style="color:#f92672">.</span>lower()
+</span></span><span style="display:flex;"><span>        claim_b_lower <span style="color:#f92672">=</span> claim_b<span style="color:#f92672">.</span>lower()
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> pos, neg in opposing_pairs:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">if</span> ((pos in claim_a_lower and neg in claim_b_lower) or
-</span></span><span style="display:flex;"><span>                (neg in claim_a_lower and pos in claim_b_lower)):
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> pos, neg <span style="color:#f92672">in</span> opposing_pairs:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> ((pos <span style="color:#f92672">in</span> claim_a_lower <span style="color:#f92672">and</span> neg <span style="color:#f92672">in</span> claim_b_lower) <span style="color:#f92672">or</span>
+</span></span><span style="display:flex;"><span>                (neg <span style="color:#f92672">in</span> claim_a_lower <span style="color:#f92672">and</span> pos <span style="color:#f92672">in</span> claim_b_lower)):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f">### From Paper to Code: The Mathematical Metrics</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### From Paper to Code: The Mathematical Metrics</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The <span style="color:#f00">`</span>RelationalMetrics<span style="color:#f00">`</span> <span style="color:#fff;font-weight:bold">class</span> is where we implement the crucial formulas <span style="color:#fff;font-weight:bold">from</span> Section <span style="color:#ff0;font-weight:bold">3.2</span> of the paper. These metrics allow the system to identify the most *productive* conflicts <span style="color:#fff;font-weight:bold">for</span> synthesis.
+</span></span><span style="display:flex;"><span>The <span style="color:#960050;background-color:#1e0010">`</span>RelationalMetrics<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">is</span> where we implement the crucial formulas <span style="color:#f92672">from</span> Section <span style="color:#ae81ff">3.2</span> of the paper<span style="color:#f92672">.</span> These metrics allow the system to identify the most <span style="color:#f92672">*</span>productive<span style="color:#f92672">*</span> conflicts <span style="color:#66d9ef">for</span> synthesis<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>**Connecting the Chirality Score:**
+</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Connecting the Chirality Score:<span style="color:#f92672">**</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The paper defines the Chirality Score <span style="color:#fff;font-weight:bold">as</span> a measure of opposition between highly-trusted narratives.
+</span></span><span style="display:flex;"><span>The paper defines the Chirality Score <span style="color:#66d9ef">as</span> a measure of opposition between highly<span style="color:#f92672">-</span>trusted narratives<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; **Definition <span style="color:#ff0;font-weight:bold">3.1</span> (Chirality Score):**
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>Definition <span style="color:#ae81ff">3.1</span> (Chirality Score):<span style="color:#f92672">**</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
-</span></span><span style="display:flex;"><span>\text{CScore}(SNO_i, SNO_j) = (<span style="color:#ff0;font-weight:bold">1</span> - H_i \cdot H_j) \cdot (T_i \cdot T_j)
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>\text{CScore}(SNO_i, SNO_j) <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> H_i \cdot H_j) \cdot (T_i \cdot T_j)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Our Python code in <span style="color:#f00">`</span>RelationalMetrics.chirality_score<span style="color:#f00">`</span> mirrors this exactly:
+</span></span><span style="display:flex;"><span>Our Python code <span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">`</span>RelationalMetrics<span style="color:#f92672">.</span>chirality_score<span style="color:#960050;background-color:#1e0010">`</span> mirrors this exactly:
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- <span style="color:#f00">`</span><span style="color:#ff0;font-weight:bold">1</span> - H_i \cdot H_j<span style="color:#f00">`</span>: We calculate this using cosine similarity. Since cosine similarity is <span style="color:#f00">$</span>(H_i \cdot H_j) / (\|H_i\| \|H_j\|)<span style="color:#f00">$</span>, and our embeddings are often normalized, <span style="color:#f00">`</span><span style="color:#ff0;font-weight:bold">1.0</span> - cos_sim<span style="color:#f00">`</span> directly corresponds to this opposition term. High similarity (close to <span style="color:#ff0;font-weight:bold">1</span>) results in low opposition, and low similarity (close to <span style="color:#ff0;font-weight:bold">0</span> or -<span style="color:#ff0;font-weight:bold">1</span>) results in high opposition.
-</span></span><span style="display:flex;"><span>- <span style="color:#f00">`</span>T_i \cdot T_j<span style="color:#f00">`</span>: This is implemented <span style="color:#fff;font-weight:bold">as</span> <span style="color:#f00">`</span>trust_product = sno_a.trust_score * sno_b.trust_score<span style="color:#f00">`</span>.
-</span></span><span style="display:flex;"><span>- The final <span style="color:#fff;font-weight:bold">return</span> value <span style="color:#f00">`</span>opposition * trust_product<span style="color:#f00">`</span> is the direct implementation of the paper<span style="color:#0ff;font-weight:bold">&#39;s `CScore` formula.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> H_i \cdot H_j<span style="color:#960050;background-color:#1e0010">`</span>: We calculate this using cosine similarity<span style="color:#f92672">.</span> Since cosine similarity <span style="color:#f92672">is</span> <span style="color:#960050;background-color:#1e0010">$</span>(H_i \cdot H_j) <span style="color:#f92672">/</span> (\<span style="color:#f92672">|</span>H_i\<span style="color:#f92672">|</span> \<span style="color:#f92672">|</span>H_j\<span style="color:#f92672">|</span>)<span style="color:#960050;background-color:#1e0010">$</span>, <span style="color:#f92672">and</span> our embeddings are often normalized, <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> cos_sim<span style="color:#960050;background-color:#1e0010">`</span> directly corresponds to this opposition term<span style="color:#f92672">.</span> High similarity (close to <span style="color:#ae81ff">1</span>) results <span style="color:#f92672">in</span> low opposition, <span style="color:#f92672">and</span> low similarity (close to <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) results <span style="color:#f92672">in</span> high opposition<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>T_i \cdot T_j<span style="color:#960050;background-color:#1e0010">`</span>: This <span style="color:#f92672">is</span> implemented <span style="color:#66d9ef">as</span> <span style="color:#960050;background-color:#1e0010">`</span>trust_product <span style="color:#f92672">=</span> sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">*</span> sno_b<span style="color:#f92672">.</span>trust_score<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> The final <span style="color:#66d9ef">return</span> value <span style="color:#960050;background-color:#1e0010">`</span>opposition <span style="color:#f92672">*</span> trust_product<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#f92672">is</span> the direct implementation of the paper<span style="color:#e6db74">&#39;s `CScore` formula.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>**Connecting Evidential Entanglement:**
+</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Connecting Evidential Entanglement:<span style="color:#f92672">**</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The paper introduces Evidential Entanglement to measure <span style="color:#fff;font-weight:bold">if</span> two narratives are arguing over the same facts.
+</span></span><span style="display:flex;"><span>The paper introduces Evidential Entanglement to measure <span style="color:#66d9ef">if</span> two narratives are arguing over the same facts<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; **Definition <span style="color:#ff0;font-weight:bold">3.2</span> (Evidential Entanglement):**
-</span></span><span style="display:flex;"><span>&gt; This new metric measures the degree to which two narratives are arguing over the same data. It is calculated using the Jaccard similarity of their *Evidence Sets (E)*:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>Definition <span style="color:#ae81ff">3.2</span> (Evidential Entanglement):<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> This new metric measures the degree to which two narratives are arguing over the same data<span style="color:#f92672">.</span> It <span style="color:#f92672">is</span> calculated using the Jaccard similarity of their <span style="color:#f92672">*</span>Evidence Sets (E)<span style="color:#f92672">*</span>:
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
-</span></span><span style="display:flex;"><span>\text{EScore}(SNO_i, SNO_j) = \frac{|\mathcal{E}_i \cap \mathcal{E}_j|}{|\mathcal{E}_i \cup \mathcal{E}_j|}
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>\text{EScore}(SNO_i, SNO_j) <span style="color:#f92672">=</span> \frac{<span style="color:#f92672">|</span>\mathcal{E}_i \cap \mathcal{E}_j<span style="color:#f92672">|</span>}{<span style="color:#f92672">|</span>\mathcal{E}_i \cup \mathcal{E}_j<span style="color:#f92672">|</span>}
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Let<span style="color:#0ff;font-weight:bold">&#39;s look at our `RelationalMetrics.evidential_entanglement` method:</span>
+</span></span><span style="display:flex;"><span>Let<span style="color:#e6db74">&#39;s look at our `RelationalMetrics.evidential_entanglement` method:</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- <span style="color:#f00">`</span>evidence_a = {e.source_id <span style="color:#fff;font-weight:bold">for</span> e in sno_a.evidence_set}<span style="color:#f00">`</span> creates the <span style="color:#fff;font-weight:bold">set</span> <span style="color:#f00">$</span>\mathcal{E}_i<span style="color:#f00">$</span>.
-</span></span><span style="display:flex;"><span>- <span style="color:#f00">`</span>intersection = evidence_a.intersection(evidence_b)<span style="color:#f00">`</span> calculates the numerator, <span style="color:#f00">$</span>|\mathcal{E}_i \cap \mathcal{E}_j|<span style="color:#f00">$</span>.
-</span></span><span style="display:flex;"><span>- <span style="color:#f00">`</span>union = evidence_a.union(evidence_b)<span style="color:#f00">`</span> calculates the denominator, <span style="color:#f00">$</span>|\mathcal{E}_i \cup \mathcal{E}_j|<span style="color:#f00">$</span>.
-</span></span><span style="display:flex;"><span>- The final line, <span style="color:#f00">`</span><span style="color:#fff;font-weight:bold">len</span>(intersection) / <span style="color:#fff;font-weight:bold">len</span>(union)<span style="color:#f00">`</span>, is a perfect implementation of the Jaccard similarity formula <span style="color:#fff;font-weight:bold">for</span> <span style="color:#f00">`</span>EScore<span style="color:#f00">`</span>.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>evidence_a <span style="color:#f92672">=</span> {e<span style="color:#f92672">.</span>source_id <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> sno_a<span style="color:#f92672">.</span>evidence_set}<span style="color:#960050;background-color:#1e0010">`</span> creates the set <span style="color:#960050;background-color:#1e0010">$</span>\mathcal{E}_i<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>intersection <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>intersection(evidence_b)<span style="color:#960050;background-color:#1e0010">`</span> calculates the numerator, <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">|</span>\mathcal{E}_i \cap \mathcal{E}_j<span style="color:#f92672">|</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>union <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>union(evidence_b)<span style="color:#960050;background-color:#1e0010">`</span> calculates the denominator, <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">|</span>\mathcal{E}_i \cup \mathcal{E}_j<span style="color:#f92672">|</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> The final line, <span style="color:#960050;background-color:#1e0010">`</span>len(intersection) <span style="color:#f92672">/</span> len(union)<span style="color:#960050;background-color:#1e0010">`</span>, <span style="color:#f92672">is</span> a perfect implementation of the Jaccard similarity formula <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">`</span>EScore<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The system<span style="color:#0ff;font-weight:bold">&#39;s trigger for synthesis—prioritizing pairs with **both high Chirality and high Entanglement**—is directly implemented in the logic of our `ChiralPairDetector`.</span>
+</span></span><span style="display:flex;"><span>The system<span style="color:#e6db74">&#39;s trigger for synthesis—prioritizing pairs with **both high Chirality and high Entanglement**—is directly implemented in the logic of our `ChiralPairDetector`.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f">### Advanced Agent Action: Guided Narrative Exploration</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Advanced Agent Action: Guided Narrative Exploration</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Beyond synthesis, agents in the CNS <span style="color:#ff0;font-weight:bold">2.0</span> ecosystem can actively explore <span style="color:#0ff;font-weight:bold">&#34;conceptual space&#34;</span> to refine or evolve existing narratives. Section <span style="color:#ff0;font-weight:bold">3.4</span> of the paper introduces a powerful generative method <span style="color:#fff;font-weight:bold">for</span> this, using a *target embedding* to guide the creation of a new, improved SNO.
+</span></span><span style="display:flex;"><span>Beyond synthesis, agents <span style="color:#f92672">in</span> the CNS <span style="color:#ae81ff">2.0</span> ecosystem can actively explore <span style="color:#e6db74">&#34;conceptual space&#34;</span> to refine <span style="color:#f92672">or</span> evolve existing narratives<span style="color:#f92672">.</span> Section <span style="color:#ae81ff">3.4</span> of the paper introduces a powerful generative method <span style="color:#66d9ef">for</span> this, using a <span style="color:#f92672">*</span>target embedding<span style="color:#f92672">*</span> to guide the creation of a new, improved SNO<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; **From Paper to Code: Latent Space Targeting**
-</span></span><span style="display:flex;"><span>&gt; The paper defines a target vector <span style="color:#f00">$</span>H_{\text{target}}<span style="color:#f00">$</span> that represents a desirable direction <span style="color:#fff;font-weight:bold">for</span> evolution<span style="color:#f00">—</span>one that increases the narrative<span style="color:#0ff;font-weight:bold">&#39;s reward score while also moving away from its chiral opponent.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>From Paper to Code: Latent Space Targeting<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> The paper defines a target vector <span style="color:#960050;background-color:#1e0010">$</span>H_{\text{target}}<span style="color:#960050;background-color:#1e0010">$</span> that represents a desirable direction <span style="color:#66d9ef">for</span> evolution<span style="color:#960050;background-color:#1e0010">—</span>one that increases the narrative<span style="color:#e6db74">&#39;s reward score while also moving away from its chiral opponent.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
-</span></span><span style="display:flex;"><span>H_{\text{target}} = H_{i} + \alpha \nabla_{H_i} \text{Reward}(SNO_i) + \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>H_{\text{target}} <span style="color:#f92672">=</span> H_{i} <span style="color:#f92672">+</span> \alpha \nabla_{H_i} \text{Reward}(SNO_i) <span style="color:#f92672">+</span> \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} <span style="color:#f92672">-</span> H_{j}}{\<span style="color:#f92672">|</span>H_{i} <span style="color:#f92672">-</span> H_{j}\<span style="color:#f92672">|</span>}
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; Let<span style="color:#0ff;font-weight:bold">&#39;s break this down:</span>
-</span></span><span style="display:flex;"><span>&gt; - <span style="color:#f00">$</span>H_i<span style="color:#f00">$</span>: The starting point (embedding of the current SNO).
-</span></span><span style="display:flex;"><span>&gt; - <span style="color:#f00">$</span>\alpha \nabla_{H_i} \text{Reward}(SNO_i)<span style="color:#f00">$</span>: The <span style="color:#0ff;font-weight:bold">&#34;improvement&#34;</span> vector. This is a gradient step in the direction that maximizes the SNO<span style="color:#0ff;font-weight:bold">&#39;s reward. Calculating the true gradient is complex, so we&#39;</span>ll approximate it.
-</span></span><span style="display:flex;"><span>&gt; - <span style="color:#f00">$</span>\beta \cdot \text{CScore} \cdot \frac{H_i - H_j}{\|H_i - H_j\|}<span style="color:#f00">$</span>: The <span style="color:#0ff;font-weight:bold">&#34;repulsion&#34;</span> vector. It pushes the new SNO away <span style="color:#fff;font-weight:bold">from</span> its chiral opponent <span style="color:#f00">$</span>SNO_j<span style="color:#f00">$</span>, scaled by their Chirality Score.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> Let<span style="color:#e6db74">&#39;s break this down:</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">$</span>H_i<span style="color:#960050;background-color:#1e0010">$</span>: The starting point (embedding of the current SNO)<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">$</span>\alpha \nabla_{H_i} \text{Reward}(SNO_i)<span style="color:#960050;background-color:#1e0010">$</span>: The <span style="color:#e6db74">&#34;improvement&#34;</span> vector<span style="color:#f92672">.</span> This <span style="color:#f92672">is</span> a gradient step <span style="color:#f92672">in</span> the direction that maximizes the SNO<span style="color:#e6db74">&#39;s reward. Calculating the true gradient is complex, so we&#39;</span>ll approximate it<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">$</span>\beta \cdot \text{CScore} \cdot \frac{H_i <span style="color:#f92672">-</span> H_j}{\<span style="color:#f92672">|</span>H_i <span style="color:#f92672">-</span> H_j\<span style="color:#f92672">|</span>}<span style="color:#960050;background-color:#1e0010">$</span>: The <span style="color:#e6db74">&#34;repulsion&#34;</span> vector<span style="color:#f92672">.</span> It pushes the new SNO away <span style="color:#f92672">from</span> its chiral opponent <span style="color:#960050;background-color:#1e0010">$</span>SNO_j<span style="color:#960050;background-color:#1e0010">$</span>, scaled by their Chirality Score<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f00">```</span>python
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> NarrativeExplorer:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Implements guided narrative exploration via latent space targeting.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">```</span>python
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NarrativeExplorer</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Implements guided narrative exploration via latent space targeting.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>, alpha: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">0.1</span>, beta: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">0.2</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.alpha = alpha  <span style="color:#007f7f"># Learning rate for reward gradient</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.beta = beta    <span style="color:#007f7f"># Scaling factor for repulsion</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, alpha: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, beta: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">=</span> alpha  <span style="color:#75715e"># Learning rate for reward gradient</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>beta <span style="color:#f92672">=</span> beta    <span style="color:#75715e"># Scaling factor for repulsion</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> compute_target_embedding(
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_target_embedding</span>(
+</span></span><span style="display:flex;"><span>        self,
 </span></span><span style="display:flex;"><span>        sno_i: StructuredNarrativeObject,
 </span></span><span style="display:flex;"><span>        sno_j: StructuredNarrativeObject,
 </span></span><span style="display:flex;"><span>        critic_pipeline: CriticPipeline
-</span></span><span style="display:flex;"><span>    ) -&gt; Optional[np.ndarray]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Calculates the target embedding H_target based on Equation (3).
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> sno_i.hypothesis_embedding is <span style="color:#fff;font-weight:bold">None</span> or sno_j.hypothesis_embedding is <span style="color:#fff;font-weight:bold">None</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>    ) <span style="color:#f92672">-&gt;</span> Optional[np<span style="color:#f92672">.</span>ndarray]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Calculates the target embedding H_target based on Equation (3).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> sno_i<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> sno_j<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        H_i = sno_i.hypothesis_embedding
-</span></span><span style="display:flex;"><span>        H_j = sno_j.hypothesis_embedding
+</span></span><span style="display:flex;"><span>        H_i <span style="color:#f92672">=</span> sno_i<span style="color:#f92672">.</span>hypothesis_embedding
+</span></span><span style="display:flex;"><span>        H_j <span style="color:#f92672">=</span> sno_j<span style="color:#f92672">.</span>hypothesis_embedding
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 1. Calculate approximate reward gradient (alpha term)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># We approximate the gradient by seeing how a small perturbation towards a random</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># &#34;better&#34; direction affects the reward. For simplicity here, we&#39;ll use a</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># simplified proxy: move towards a generic &#34;high-reward&#34; vector (e.g., origin).</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># A more advanced implementation would use finite differences.</span>
-</span></span><span style="display:flex;"><span>        reward_gradient_approx = -H_i <span style="color:#007f7f"># Simple approximation: move towards origin (less extreme)</span>
-</span></span><span style="display:flex;"><span>        improvement_vector = <span style="color:#fff;font-weight:bold">self</span>.alpha * reward_gradient_approx
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Calculate approximate reward gradient (alpha term)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># We approximate the gradient by seeing how a small perturbation towards a random</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#34;better&#34; direction affects the reward. For simplicity here, we&#39;ll use a</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># simplified proxy: move towards a generic &#34;high-reward&#34; vector (e.g., origin).</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># A more advanced implementation would use finite differences.</span>
+</span></span><span style="display:flex;"><span>        reward_gradient_approx <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>H_i <span style="color:#75715e"># Simple approximation: move towards origin (less extreme)</span>
+</span></span><span style="display:flex;"><span>        improvement_vector <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> reward_gradient_approx
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 2. Calculate repulsion vector (beta term)</span>
-</span></span><span style="display:flex;"><span>        chirality = RelationalMetrics.chirality_score(sno_i, sno_j)
-</span></span><span style="display:flex;"><span>        direction_vector = H_i - H_j
-</span></span><span style="display:flex;"><span>        norm_direction_vector = direction_vector / np.linalg.norm(direction_vector)
-</span></span><span style="display:flex;"><span>        repulsion_vector = <span style="color:#fff;font-weight:bold">self</span>.beta * chirality * norm_direction_vector
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Calculate repulsion vector (beta term)</span>
+</span></span><span style="display:flex;"><span>        chirality <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>chirality_score(sno_i, sno_j)
+</span></span><span style="display:flex;"><span>        direction_vector <span style="color:#f92672">=</span> H_i <span style="color:#f92672">-</span> H_j
+</span></span><span style="display:flex;"><span>        norm_direction_vector <span style="color:#f92672">=</span> direction_vector <span style="color:#f92672">/</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(direction_vector)
+</span></span><span style="display:flex;"><span>        repulsion_vector <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>beta <span style="color:#f92672">*</span> chirality <span style="color:#f92672">*</span> norm_direction_vector
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 3. Combine to get H_target</span>
-</span></span><span style="display:flex;"><span>        H_target = H_i + improvement_vector + repulsion_vector
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Combine to get H_target</span>
+</span></span><span style="display:flex;"><span>        H_target <span style="color:#f92672">=</span> H_i <span style="color:#f92672">+</span> improvement_vector <span style="color:#f92672">+</span> repulsion_vector
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Renormalize the target vector to maintain unit length</span>
-</span></span><span style="display:flex;"><span>        H_target_normalized = H_target / np.linalg.norm(H_target)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Renormalize the target vector to maintain unit length</span>
+</span></span><span style="display:flex;"><span>        H_target_normalized <span style="color:#f92672">=</span> H_target <span style="color:#f92672">/</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(H_target)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> H_target_normalized
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> H_target_normalized
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> generate_exploration_prompt(<span style="color:#fff;font-weight:bold">self</span>, target_embedding: np.ndarray, source_sno: StructuredNarrativeObject) -&gt; <span style="color:#fff;font-weight:bold">str</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Creates a prompt for an LLM to generate a new SNO based on H_target.
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        Note: This requires a method to find text corresponding to an embedding (semantic search).
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        For now, we create a descriptive prompt.
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> (
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;Generate a new, refined central hypothesis that is conceptually similar to a target concept, &#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;while drawing inspiration from the following narrative.</span><span style="color:#0ff;font-weight:bold">\n\n</span><span style="color:#0ff;font-weight:bold">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;SOURCE NARRATIVE HYPOTHESIS: &#39;</span><span style="color:#0ff;font-weight:bold">{</span>source_sno.central_hypothesis<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#39;</span><span style="color:#0ff;font-weight:bold">\n</span><span style="color:#0ff;font-weight:bold">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;INSPIRATION CLAIMS:</span><span style="color:#0ff;font-weight:bold">\n</span><span style="color:#0ff;font-weight:bold">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#0ff;font-weight:bold">{</span>[node[<span style="color:#0ff;font-weight:bold">&#39;claim&#39;</span>].content <span style="color:#fff;font-weight:bold">for</span> _, node in source_sno.reasoning_graph.nodes(data=<span style="color:#fff;font-weight:bold">True</span>)]<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">\n\n</span><span style="color:#0ff;font-weight:bold">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;The new hypothesis should explore a conceptual direction that is an improvement upon the source, &#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;resolving its weaknesses and moving away from known contradictions. &#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;Generate only the new, single-sentence central hypothesis.&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_exploration_prompt</span>(self, target_embedding: np<span style="color:#f92672">.</span>ndarray, source_sno: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Creates a prompt for an LLM to generate a new SNO based on H_target.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Note: This requires a method to find text corresponding to an embedding (semantic search).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        For now, we create a descriptive prompt.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Generate a new, refined central hypothesis that is conceptually similar to a target concept, &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;while drawing inspiration from the following narrative.</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;SOURCE NARRATIVE HYPOTHESIS: &#39;</span><span style="color:#e6db74">{</span>source_sno<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;INSPIRATION CLAIMS:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>[node[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node <span style="color:#f92672">in</span> source_sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)]<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;The new hypothesis should explore a conceptual direction that is an improvement upon the source, &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;resolving its weaknesses and moving away from known contradictions. &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Generate only the new, single-sentence central hypothesis.&#34;</span>
 </span></span><span style="display:flex;"><span>        )
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+</span></span></code></pre></div>
     </div>
 
     
@@ -1027,7 +615,8 @@
                 <div class="footer-content">
                     <div class="footer-text">
                         <p>&copy; 2025 <a href="https://GTCode.com/" class="footer-link">GTCode.com</a>. Educational content for CNS 2.0 implementation.</p>
-                        <p>Based on <a href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
+                        <p>Based on <a target="_blank" 
+                               rel="noopener noreferrer" href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
                     </div>
                 </div>
             </div>
@@ -1036,9 +625,9 @@
 
     
     <script src="/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     
     
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>

@@ -67,15 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize code blocks with line numbers and copy buttons
     function initializeCodeBlocks() {
-        // Add line numbers by wrapping each line in a span
-        document.querySelectorAll('div.highlight pre code').forEach(code => {
-            if (code.classList.contains('line-numbered')) return; // Already processed
-            
-            const lines = code.textContent.split('\n');
-            const wrappedLines = lines.map(line => `<span class="line">${line}</span>`).join('\n');
-            code.innerHTML = wrappedLines;
-            code.classList.add('line-numbered');
+        document.querySelectorAll('pre[class*="language-"]').forEach(pre => {
+            pre.classList.add('line-numbers');
         });
+
+        if (window.Prism) {
+            Prism.highlightAll();
+        }
         
         addCopyButtons();
     }

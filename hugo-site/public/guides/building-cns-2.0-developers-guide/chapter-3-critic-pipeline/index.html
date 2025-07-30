@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753843213">
+    <link rel="stylesheet" href="/css/style.css?v=1753845270">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,11 @@
     
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     
+
+
+
 
     
     
@@ -163,33 +167,17 @@ $$<blockquote>
 <p>where $w_i$ are dynamically adjustable weights and the component scores are from the Grounding, Logic, and Novelty-Parsimony critics.</p></blockquote>
 <p><strong>From Paper to Code:</strong></p>
 <p>Our <code>CriticPipeline</code> class directly implements this weighted summation. Look at the <code>evaluate_sno</code> method:</p>
-<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">10
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#007f7f"># From CriticPipeline.evaluate_sno</span>
-</span></span><span style="display:flex;"><span>total_weighted_score = <span style="color:#ff0;font-weight:bold">0.0</span>
-</span></span><span style="display:flex;"><span>total_weight = <span style="color:#ff0;font-weight:bold">0.0</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># From CriticPipeline.evaluate_sno</span>
+</span></span><span style="display:flex;"><span>total_weighted_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
+</span></span><span style="display:flex;"><span>total_weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">for</span> critic_type, critic in <span style="color:#fff;font-weight:bold">self</span>.critics.items():
-</span></span><span style="display:flex;"><span>    result = critic.evaluate(sno, context)
-</span></span><span style="display:flex;"><span>    total_weighted_score += result.score * critic.weight
-</span></span><span style="display:flex;"><span>    total_weight += critic.weight
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> critic_type, critic <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> critic<span style="color:#f92672">.</span>evaluate(sno, context)
+</span></span><span style="display:flex;"><span>    total_weighted_score <span style="color:#f92672">+=</span> result<span style="color:#f92672">.</span>score <span style="color:#f92672">*</span> critic<span style="color:#f92672">.</span>weight
+</span></span><span style="display:flex;"><span>    total_weight <span style="color:#f92672">+=</span> critic<span style="color:#f92672">.</span>weight
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>trust_score = total_weighted_score / total_weight <span style="color:#fff;font-weight:bold">if</span> total_weight &gt; <span style="color:#ff0;font-weight:bold">0</span> <span style="color:#fff;font-weight:bold">else</span> <span style="color:#ff0;font-weight:bold">0.0</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Here&rsquo;s the breakdown:</p>
+</span></span><span style="display:flex;"><span>trust_score <span style="color:#f92672">=</span> total_weighted_score <span style="color:#f92672">/</span> total_weight <span style="color:#66d9ef">if</span> total_weight <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
+</span></span></code></pre></div><p>Here&rsquo;s the breakdown:</p>
 <ul>
 <li>The <code>for</code> loop iterates through each critic, which represents the summation ($\sum$).</li>
 <li><code>result.score</code> is the $\text{Score}_i(\mathcal{S})$ for a specific critic (Grounding, Logic, or Novelty).</li>
@@ -199,371 +187,186 @@ $$<blockquote>
 </ul>
 <p>The <code>adjust_weights</code> method allows for the dynamic adjustment of $w_i$ values, just as described in the paper.</p>
 <h2 id="implementing-the-specialized-critics">Implementing the Specialized Critics</h2>
-<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">  9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 20
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 21
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 22
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 23
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 24
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 25
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 26
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 27
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 28
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 29
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 30
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 31
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 32
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 33
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 34
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 35
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 36
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 37
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 38
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 39
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 40
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 41
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 42
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 43
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 44
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 45
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 46
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 47
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 48
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 49
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 50
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 51
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 52
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 53
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 54
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 55
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 56
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 57
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 58
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 59
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 60
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 61
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 62
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 63
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 64
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 65
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 66
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 67
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 68
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 69
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 70
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 71
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 72
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 73
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 74
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 75
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 76
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 77
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 78
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 79
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 80
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 81
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 82
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 83
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 84
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 85
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 86
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 87
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 88
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 89
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 90
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 91
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 92
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 93
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 94
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 95
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 96
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 97
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 98
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 99
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">100
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">101
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">102
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">103
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">104
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">105
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">106
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">107
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">108
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">109
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">110
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">111
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">112
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">113
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">114
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">115
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">116
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">117
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">118
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">119
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">120
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">121
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">122
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">123
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">124
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">125
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">126
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">127
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">128
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">129
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">130
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">131
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">132
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">133
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">134
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">135
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">136
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">137
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">138
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">139
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">140
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">141
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">142
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">143
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">144
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">145
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">146
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">147
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">148
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">149
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">150
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">151
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">152
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">153
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">154
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">155
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">156
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">157
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">158
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">159
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">160
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">161
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">162
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">163
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">164
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">165
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">166
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">167
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">168
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">169
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">170
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">171
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">172
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">173
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">174
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">175
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">176
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">177
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">178
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">179
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">Multi-Component Critic Pipeline Implementation
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">============================================
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">Transparent, auditable evaluation of SNO quality
-</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Multi-Component Critic Pipeline Implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">============================================
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Transparent, auditable evaluation of SNO quality
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> abc <span style="color:#fff;font-weight:bold">import</span> ABC, abstractmethod
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> typing <span style="color:#fff;font-weight:bold">import</span> Dict, List, Tuple, Optional, Any
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> numpy <span style="color:#fff;font-weight:bold">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> dataclasses <span style="color:#fff;font-weight:bold">import</span> dataclass
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">from</span> enum <span style="color:#fff;font-weight:bold">import</span> Enum
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> abc <span style="color:#f92672">import</span> ABC, abstractmethod
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Tuple, Optional, Any
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> enum <span style="color:#f92672">import</span> Enum
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@dataclass
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> CriticResult:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Result from a critic evaluation with full transparency&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    score: <span style="color:#fff;font-weight:bold">float</span>  <span style="color:#007f7f"># Normalized score [0, 1]</span>
-</span></span><span style="display:flex;"><span>    confidence: <span style="color:#fff;font-weight:bold">float</span>  <span style="color:#007f7f"># Confidence in the assessment [0, 1]</span>
-</span></span><span style="display:flex;"><span>    explanation: <span style="color:#fff;font-weight:bold">str</span>  <span style="color:#007f7f"># Human-readable explanation</span>
-</span></span><span style="display:flex;"><span>    evidence: Dict[<span style="color:#fff;font-weight:bold">str</span>, Any]  <span style="color:#007f7f"># Supporting evidence for the score</span>
-</span></span><span style="display:flex;"><span>    sub_scores: Dict[<span style="color:#fff;font-weight:bold">str</span>, <span style="color:#fff;font-weight:bold">float</span>]  <span style="color:#007f7f"># Breakdown of component scores</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CriticResult</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Result from a critic evaluation with full transparency&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    score: float  <span style="color:#75715e"># Normalized score [0, 1]</span>
+</span></span><span style="display:flex;"><span>    confidence: float  <span style="color:#75715e"># Confidence in the assessment [0, 1]</span>
+</span></span><span style="display:flex;"><span>    explanation: str  <span style="color:#75715e"># Human-readable explanation</span>
+</span></span><span style="display:flex;"><span>    evidence: Dict[str, Any]  <span style="color:#75715e"># Supporting evidence for the score</span>
+</span></span><span style="display:flex;"><span>    sub_scores: Dict[str, float]  <span style="color:#75715e"># Breakdown of component scores</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> CriticType(Enum):
-</span></span><span style="display:flex;"><span>    GROUNDING = <span style="color:#0ff;font-weight:bold">&#34;grounding&#34;</span>
-</span></span><span style="display:flex;"><span>    LOGIC = <span style="color:#0ff;font-weight:bold">&#34;logic&#34;</span>
-</span></span><span style="display:flex;"><span>    NOVELTY = <span style="color:#0ff;font-weight:bold">&#34;novelty&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CriticType</span>(Enum):
+</span></span><span style="display:flex;"><span>    GROUNDING <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grounding&#34;</span>
+</span></span><span style="display:flex;"><span>    LOGIC <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;logic&#34;</span>
+</span></span><span style="display:flex;"><span>    NOVELTY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;novelty&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> BaseCritic(ABC):
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Abstract base class for all CNS 2.0 critics&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseCritic</span>(ABC):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Abstract base class for all CNS 2.0 critics&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>, critic_type: CriticType, weight: <span style="color:#fff;font-weight:bold">float</span> = <span style="color:#ff0;font-weight:bold">1.0</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.critic_type = critic_type
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.weight = weight
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.evaluation_count = <span style="color:#ff0;font-weight:bold">0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.performance_history = []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, critic_type: CriticType, weight: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critic_type <span style="color:#f92672">=</span> critic_type
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>weight <span style="color:#f92672">=</span> weight
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evaluation_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>performance_history <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    @abstractmethod
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> evaluate(<span style="color:#fff;font-weight:bold">self</span>, sno: StructuredNarrativeObject, context: Optional[Dict] = <span style="color:#fff;font-weight:bold">None</span>) -&gt; CriticResult:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Evaluate an SNO and return detailed results&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@abstractmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> CriticResult:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Evaluate an SNO and return detailed results&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> update_weight(<span style="color:#fff;font-weight:bold">self</span>, new_weight: <span style="color:#fff;font-weight:bold">float</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Dynamically adjust critic weight based on context&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.weight = new_weight
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update_weight</span>(self, new_weight: float):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Dynamically adjust critic weight based on context&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>weight <span style="color:#f92672">=</span> new_weight
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> get_statistics(<span style="color:#fff;font-weight:bold">self</span>) -&gt; Dict[<span style="color:#fff;font-weight:bold">str</span>, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Get performance statistics for this critic&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;type&#39;</span>: <span style="color:#fff;font-weight:bold">self</span>.critic_type.value,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;weight&#39;</span>: <span style="color:#fff;font-weight:bold">self</span>.weight,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;evaluations&#39;</span>: <span style="color:#fff;font-weight:bold">self</span>.evaluation_count,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;avg_score&#39;</span>: np.mean([r[<span style="color:#0ff;font-weight:bold">&#39;score&#39;</span>] <span style="color:#fff;font-weight:bold">for</span> r in <span style="color:#fff;font-weight:bold">self</span>.performance_history]) <span style="color:#fff;font-weight:bold">if</span> <span style="color:#fff;font-weight:bold">self</span>.performance_history <span style="color:#fff;font-weight:bold">else</span> <span style="color:#ff0;font-weight:bold">0.0</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;avg_confidence&#39;</span>: np.mean([r[<span style="color:#0ff;font-weight:bold">&#39;confidence&#39;</span>] <span style="color:#fff;font-weight:bold">for</span> r in <span style="color:#fff;font-weight:bold">self</span>.performance_history]) <span style="color:#fff;font-weight:bold">if</span> <span style="color:#fff;font-weight:bold">self</span>.performance_history <span style="color:#fff;font-weight:bold">else</span> <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_statistics</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Get performance statistics for this critic&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;type&#39;</span>: self<span style="color:#f92672">.</span>critic_type<span style="color:#f92672">.</span>value,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;weight&#39;</span>: self<span style="color:#f92672">.</span>weight,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;evaluations&#39;</span>: self<span style="color:#f92672">.</span>evaluation_count,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;avg_score&#39;</span>: np<span style="color:#f92672">.</span>mean([r[<span style="color:#e6db74">&#39;score&#39;</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>performance_history]) <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>performance_history <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;avg_confidence&#39;</span>: np<span style="color:#f92672">.</span>mean([r[<span style="color:#e6db74">&#39;confidence&#39;</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>performance_history]) <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>performance_history <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> CriticPipeline:
-</span></span><span style="display:flex;"><span>    <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Orchestrates multiple critics to produce comprehensive SNO evaluation&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CriticPipeline</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Orchestrates multiple critics to produce comprehensive SNO evaluation&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.critics: Dict[CriticType, BaseCritic] = {}
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.evaluation_history = []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critics: Dict[CriticType, BaseCritic] <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evaluation_history <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> add_critic(<span style="color:#fff;font-weight:bold">self</span>, critic: BaseCritic):
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Add a critic to the pipeline&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.critics[critic.critic_type] = critic
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_critic</span>(self, critic: BaseCritic):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Add a critic to the pipeline&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critics[critic<span style="color:#f92672">.</span>critic_type] <span style="color:#f92672">=</span> critic
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> evaluate_sno(<span style="color:#fff;font-weight:bold">self</span>, sno: StructuredNarrativeObject, context: Optional[Dict] = <span style="color:#fff;font-weight:bold">None</span>) -&gt; Dict[<span style="color:#fff;font-weight:bold">str</span>, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Evaluate an SNO using all available critics&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        results = {}
-</span></span><span style="display:flex;"><span>        total_weighted_score = <span style="color:#ff0;font-weight:bold">0.0</span>
-</span></span><span style="display:flex;"><span>        total_weight = <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate_sno</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Evaluate an SNO using all available critics&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        results <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>        total_weighted_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
+</span></span><span style="display:flex;"><span>        total_weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> critic_type, critic in <span style="color:#fff;font-weight:bold">self</span>.critics.items():
-</span></span><span style="display:flex;"><span>            result = critic.evaluate(sno, context)
-</span></span><span style="display:flex;"><span>            results[critic_type.value] = result
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> critic_type, critic <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>            result <span style="color:#f92672">=</span> critic<span style="color:#f92672">.</span>evaluate(sno, context)
+</span></span><span style="display:flex;"><span>            results[critic_type<span style="color:#f92672">.</span>value] <span style="color:#f92672">=</span> result
 </span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#007f7f"># Accumulate weighted score</span>
-</span></span><span style="display:flex;"><span>            total_weighted_score += result.score * critic.weight
-</span></span><span style="display:flex;"><span>            total_weight += critic.weight
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Accumulate weighted score</span>
+</span></span><span style="display:flex;"><span>            total_weighted_score <span style="color:#f92672">+=</span> result<span style="color:#f92672">.</span>score <span style="color:#f92672">*</span> critic<span style="color:#f92672">.</span>weight
+</span></span><span style="display:flex;"><span>            total_weight <span style="color:#f92672">+=</span> critic<span style="color:#f92672">.</span>weight
 </span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#007f7f"># Update critic performance history</span>
-</span></span><span style="display:flex;"><span>            critic.performance_history.append({
-</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#39;score&#39;</span>: result.score,
-</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#39;confidence&#39;</span>: result.confidence
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Update critic performance history</span>
+</span></span><span style="display:flex;"><span>            critic<span style="color:#f92672">.</span>performance_history<span style="color:#f92672">.</span>append({
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;score&#39;</span>: result<span style="color:#f92672">.</span>score,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;confidence&#39;</span>: result<span style="color:#f92672">.</span>confidence
 </span></span><span style="display:flex;"><span>            })
-</span></span><span style="display:flex;"><span>            critic.evaluation_count += <span style="color:#ff0;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>            critic<span style="color:#f92672">.</span>evaluation_count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Compute final trust score</span>
-</span></span><span style="display:flex;"><span>        trust_score = total_weighted_score / total_weight <span style="color:#fff;font-weight:bold">if</span> total_weight &gt; <span style="color:#ff0;font-weight:bold">0</span> <span style="color:#fff;font-weight:bold">else</span> <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Compute final trust score</span>
+</span></span><span style="display:flex;"><span>        trust_score <span style="color:#f92672">=</span> total_weighted_score <span style="color:#f92672">/</span> total_weight <span style="color:#66d9ef">if</span> total_weight <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Update SNO trust score</span>
-</span></span><span style="display:flex;"><span>        sno.trust_score = trust_score
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Update SNO trust score</span>
+</span></span><span style="display:flex;"><span>        sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">=</span> trust_score
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        evaluation_result = {
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;trust_score&#39;</span>: trust_score,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;critic_results&#39;</span>: results,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;weights_used&#39;</span>: {ct.value: c.weight <span style="color:#fff;font-weight:bold">for</span> ct, c in <span style="color:#fff;font-weight:bold">self</span>.critics.items()},
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;evaluation_id&#39;</span>: <span style="color:#fff;font-weight:bold">len</span>(<span style="color:#fff;font-weight:bold">self</span>.evaluation_history)
+</span></span><span style="display:flex;"><span>        evaluation_result <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;trust_score&#39;</span>: trust_score,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;critic_results&#39;</span>: results,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;weights_used&#39;</span>: {ct<span style="color:#f92672">.</span>value: c<span style="color:#f92672">.</span>weight <span style="color:#66d9ef">for</span> ct, c <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics<span style="color:#f92672">.</span>items()},
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;evaluation_id&#39;</span>: len(self<span style="color:#f92672">.</span>evaluation_history)
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.evaluation_history.append(evaluation_result)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> evaluation_result
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evaluation_history<span style="color:#f92672">.</span>append(evaluation_result)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> evaluation_result
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> adjust_weights(<span style="color:#fff;font-weight:bold">self</span>, weight_updates: Dict[CriticType, <span style="color:#fff;font-weight:bold">float</span>]):
-</span></span><span style="display:flex;"><span>        <span style="color:#0ff;font-weight:bold">&#34;&#34;&#34;Dynamically adjust critic weights based on context&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> critic_type, new_weight in weight_updates.items():
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">if</span> critic_type in <span style="color:#fff;font-weight:bold">self</span>.critics:
-</span></span><span style="display:flex;"><span>                <span style="color:#fff;font-weight:bold">self</span>.critics[critic_type].update_weight(new_weight)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">adjust_weights</span>(self, weight_updates: Dict[CriticType, float]):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Dynamically adjust critic weights based on context&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> critic_type, new_weight <span style="color:#f92672">in</span> weight_updates<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> critic_type <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics:
+</span></span><span style="display:flex;"><span>                self<span style="color:#f92672">.</span>critics[critic_type]<span style="color:#f92672">.</span>update_weight(new_weight)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f">### 1. Grounding Critic Implementation</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### 1. Grounding Critic Implementation</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; **From Paper to Code: The Grounding Critic**
-</span></span><span style="display:flex;"><span>&gt; The Grounding Critic evaluates how well a narrative<span style="color:#0ff;font-weight:bold">&#39;s claims are supported by its evidence. Section 2.2 provides its formula:</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>From Paper to Code: The Grounding Critic<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> The Grounding Critic evaluates how well a narrative<span style="color:#e6db74">&#39;s claims are supported by its evidence. Section 2.2 provides its formula:</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
-</span></span><span style="display:flex;"><span>\text{Score}_G = \frac{<span style="color:#ff0;font-weight:bold">1</span>}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} p(v|e)
-</span></span><span style="display:flex;"><span><span style="color:#f00">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>\text{Score}_G <span style="color:#f92672">=</span> \frac{<span style="color:#ae81ff">1</span>}{<span style="color:#f92672">|</span>V<span style="color:#f92672">|</span>}\sum_{v \<span style="color:#f92672">in</span> V} \max_{e \<span style="color:#f92672">in</span> \mathcal{E}} p(v<span style="color:#f92672">|</span>e)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; Here, <span style="color:#f00">$</span>p(v|e)<span style="color:#f00">$</span> is the plausibility score of a claim <span style="color:#f00">`</span>v<span style="color:#f00">`</span> given a piece of evidence <span style="color:#f00">`</span>e<span style="color:#f00">`</span>. We will implement this using a pre-trained Natural Language Inference (NLI) model. An NLI model takes a premise (evidence) and a hypothesis (claim) and outputs probabilities <span style="color:#fff;font-weight:bold">for</span> <span style="color:#0ff;font-weight:bold">&#34;entailment,&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;neutral,&#34;</span> and <span style="color:#0ff;font-weight:bold">&#34;contradiction.&#34;</span> We will use the <span style="color:#0ff;font-weight:bold">&#34;entailment&#34;</span> probability <span style="color:#fff;font-weight:bold">as</span> our <span style="color:#f00">$</span>p(v|e)<span style="color:#f00">$</span>.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> Here, <span style="color:#960050;background-color:#1e0010">$</span>p(v<span style="color:#f92672">|</span>e)<span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#f92672">is</span> the plausibility score of a claim <span style="color:#960050;background-color:#1e0010">`</span>v<span style="color:#960050;background-color:#1e0010">`</span> given a piece of evidence <span style="color:#960050;background-color:#1e0010">`</span>e<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span> We will implement this using a pre<span style="color:#f92672">-</span>trained Natural Language Inference (NLI) model<span style="color:#f92672">.</span> An NLI model takes a premise (evidence) <span style="color:#f92672">and</span> a hypothesis (claim) <span style="color:#f92672">and</span> outputs probabilities <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#34;entailment,&#34;</span> <span style="color:#e6db74">&#34;neutral,&#34;</span> <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;contradiction.&#34;</span> We will use the <span style="color:#e6db74">&#34;entailment&#34;</span> probability <span style="color:#66d9ef">as</span> our <span style="color:#960050;background-color:#1e0010">$</span>p(v<span style="color:#f92672">|</span>e)<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f00">```</span>python
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> GroundingCritic(BaseCritic):
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>, weight: <span style="color:#fff;font-weight:bold">float</span>, nli_model=<span style="color:#fff;font-weight:bold">None</span>, nli_tokenizer=<span style="color:#fff;font-weight:bold">None</span>, nli_model_name: <span style="color:#fff;font-weight:bold">str</span> = <span style="color:#0ff;font-weight:bold">&#34;microsoft/deberta-large-mnli&#34;</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">super</span>().__init__(CriticType.GROUNDING, weight)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">```</span>python
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GroundingCritic</span>(BaseCritic):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, weight: float, nli_model<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, nli_tokenizer<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, nli_model_name: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;microsoft/deberta-large-mnli&#34;</span>):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(CriticType<span style="color:#f92672">.</span>GROUNDING, weight)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Use pre-loaded models if provided (for efficiency), otherwise load on demand</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> nli_model is not <span style="color:#fff;font-weight:bold">None</span> and nli_tokenizer is not <span style="color:#fff;font-weight:bold">None</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">self</span>.nli_model = nli_model
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">self</span>.nli_tokenizer = nli_tokenizer
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">elif</span> HAS_TRANSFORMERS:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">import</span> transformers
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">self</span>.nli_tokenizer = transformers.AutoTokenizer.from_pretrained(nli_model_name)
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">self</span>.nli_model = transformers.AutoModelForSequenceClassification.from_pretrained(nli_model_name)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">raise</span> ImportError(<span style="color:#0ff;font-weight:bold">&#34;Transformers library is required for the GroundingCritic.&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Use pre-loaded models if provided (for efficiency), otherwise load on demand</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> nli_model <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">and</span> nli_tokenizer <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_model <span style="color:#f92672">=</span> nli_model
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_tokenizer <span style="color:#f92672">=</span> nli_tokenizer
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> HAS_TRANSFORMERS:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">import</span> transformers
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_tokenizer <span style="color:#f92672">=</span> transformers<span style="color:#f92672">.</span>AutoTokenizer<span style="color:#f92672">.</span>from_pretrained(nli_model_name)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_model <span style="color:#f92672">=</span> transformers<span style="color:#f92672">.</span>AutoModelForSequenceClassification<span style="color:#f92672">.</span>from_pretrained(nli_model_name)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ImportError</span>(<span style="color:#e6db74">&#34;Transformers library is required for the GroundingCritic.&#34;</span>)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Ensure we know the index for entailment</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.entailment_id = <span style="color:#fff;font-weight:bold">self</span>.nli_model.config.label2id.get(<span style="color:#0ff;font-weight:bold">&#39;entailment&#39;</span>, <span style="color:#ff0;font-weight:bold">2</span>)  <span style="color:#007f7f"># Default to 2 if not found</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Ensure we know the index for entailment</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>entailment_id <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nli_model<span style="color:#f92672">.</span>config<span style="color:#f92672">.</span>label2id<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;entailment&#39;</span>, <span style="color:#ae81ff">2</span>)  <span style="color:#75715e"># Default to 2 if not found</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> evaluate(<span style="color:#fff;font-weight:bold">self</span>, sno: StructuredNarrativeObject, context: Optional[Dict] = <span style="color:#fff;font-weight:bold">None</span>) -&gt; CriticResult:
-</span></span><span style="display:flex;"><span>        claims = [data[<span style="color:#0ff;font-weight:bold">&#39;claim&#39;</span>] <span style="color:#fff;font-weight:bold">for</span> _, data in sno.reasoning_graph.nodes(data=<span style="color:#fff;font-weight:bold">True</span>)]
-</span></span><span style="display:flex;"><span>        evidence_contents = [item.content <span style="color:#fff;font-weight:bold">for</span> item in sno.evidence_set]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> CriticResult:
+</span></span><span style="display:flex;"><span>        claims <span style="color:#f92672">=</span> [data[<span style="color:#e6db74">&#39;claim&#39;</span>] <span style="color:#66d9ef">for</span> _, data <span style="color:#f92672">in</span> sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)]
+</span></span><span style="display:flex;"><span>        evidence_contents <span style="color:#f92672">=</span> [item<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> sno<span style="color:#f92672">.</span>evidence_set]
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> not claims or not evidence_contents:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> CriticResult(<span style="color:#ff0;font-weight:bold">0.0</span>, <span style="color:#ff0;font-weight:bold">1.0</span>, <span style="color:#0ff;font-weight:bold">&#34;No claims or evidence to ground.&#34;</span>, {}, {})
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> claims <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> evidence_contents:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> CriticResult(<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>, <span style="color:#e6db74">&#34;No claims or evidence to ground.&#34;</span>, {}, {})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        total_max_plausibility = <span style="color:#ff0;font-weight:bold">0.0</span>
-</span></span><span style="display:flex;"><span>        sub_scores = {}
+</span></span><span style="display:flex;"><span>        total_max_plausibility <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
+</span></span><span style="display:flex;"><span>        sub_scores <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">for</span> claim in claims:
-</span></span><span style="display:flex;"><span>            max_plausibility_for_claim = <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> claim <span style="color:#f92672">in</span> claims:
+</span></span><span style="display:flex;"><span>            max_plausibility_for_claim <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#007f7f"># Prepare NLI model inputs</span>
-</span></span><span style="display:flex;"><span>            pairs = [(e, claim.content) <span style="color:#fff;font-weight:bold">for</span> e in evidence_contents]
-</span></span><span style="display:flex;"><span>            inputs = <span style="color:#fff;font-weight:bold">self</span>.nli_tokenizer(pairs, return_tensors=<span style="color:#0ff;font-weight:bold">&#39;pt&#39;</span>, padding=<span style="color:#fff;font-weight:bold">True</span>, truncation=<span style="color:#fff;font-weight:bold">True</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Prepare NLI model inputs</span>
+</span></span><span style="display:flex;"><span>            pairs <span style="color:#f92672">=</span> [(e, claim<span style="color:#f92672">.</span>content) <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> evidence_contents]
+</span></span><span style="display:flex;"><span>            inputs <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nli_tokenizer(pairs, return_tensors<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;pt&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, truncation<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">with</span> torch.no_grad():
-</span></span><span style="display:flex;"><span>                logits = <span style="color:#fff;font-weight:bold">self</span>.nli_model(**inputs).logits
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">with</span> torch<span style="color:#f92672">.</span>no_grad():
+</span></span><span style="display:flex;"><span>                logits <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nli_model(<span style="color:#f92672">**</span>inputs)<span style="color:#f92672">.</span>logits
 </span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>            <span style="color:#007f7f"># Get probabilities for entailment</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#007f7f"># We use softmax to convert logits to probabilities</span>
-</span></span><span style="display:flex;"><span>            probabilities = torch.softmax(logits, dim=<span style="color:#ff0;font-weight:bold">1</span>)
-</span></span><span style="display:flex;"><span>            entailment_probs = probabilities[:, <span style="color:#fff;font-weight:bold">self</span>.entailment_id].tolist()
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Get probabilities for entailment</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># We use softmax to convert logits to probabilities</span>
+</span></span><span style="display:flex;"><span>            probabilities <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>softmax(logits, dim<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>            entailment_probs <span style="color:#f92672">=</span> probabilities[:, self<span style="color:#f92672">.</span>entailment_id]<span style="color:#f92672">.</span>tolist()
 </span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">if</span> entailment_probs:
-</span></span><span style="display:flex;"><span>                max_plausibility_for_claim = <span style="color:#fff;font-weight:bold">max</span>(entailment_probs)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> entailment_probs:
+</span></span><span style="display:flex;"><span>                max_plausibility_for_claim <span style="color:#f92672">=</span> max(entailment_probs)
 </span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            total_max_plausibility += max_plausibility_for_claim
-</span></span><span style="display:flex;"><span>            sub_scores[claim.claim_id] = max_plausibility_for_claim
+</span></span><span style="display:flex;"><span>            total_max_plausibility <span style="color:#f92672">+=</span> max_plausibility_for_claim
+</span></span><span style="display:flex;"><span>            sub_scores[claim<span style="color:#f92672">.</span>claim_id] <span style="color:#f92672">=</span> max_plausibility_for_claim
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Score is the average of the max plausibility scores for each claim</span>
-</span></span><span style="display:flex;"><span>        final_score = total_max_plausibility / <span style="color:#fff;font-weight:bold">len</span>(claims) <span style="color:#fff;font-weight:bold">if</span> claims <span style="color:#fff;font-weight:bold">else</span> <span style="color:#ff0;font-weight:bold">0.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Score is the average of the max plausibility scores for each claim</span>
+</span></span><span style="display:flex;"><span>        final_score <span style="color:#f92672">=</span> total_max_plausibility <span style="color:#f92672">/</span> len(claims) <span style="color:#66d9ef">if</span> claims <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> CriticResult(
-</span></span><span style="display:flex;"><span>            score=final_score,
-</span></span><span style="display:flex;"><span>            confidence=<span style="color:#ff0;font-weight:bold">0.8</span>, <span style="color:#007f7f"># Confidence can be improved with model-specific metrics</span>
-</span></span><span style="display:flex;"><span>            explanation=<span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;Average max NLI entailment score across </span><span style="color:#0ff;font-weight:bold">{</span><span style="color:#fff;font-weight:bold">len</span>(claims)<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold"> claims is </span><span style="color:#0ff;font-weight:bold">{</span>final_score<span style="color:#0ff;font-weight:bold">:</span><span style="color:#0ff;font-weight:bold">.3f</span><span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">.&#34;</span>,
-</span></span><span style="display:flex;"><span>            evidence={<span style="color:#0ff;font-weight:bold">&#39;claim_scores&#39;</span>: sub_scores},
-</span></span><span style="display:flex;"><span>            sub_scores=sub_scores
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> CriticResult(
+</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score,
+</span></span><span style="display:flex;"><span>            confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>, <span style="color:#75715e"># Confidence can be improved with model-specific metrics</span>
+</span></span><span style="display:flex;"><span>            explanation<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Average max NLI entailment score across </span><span style="color:#e6db74">{</span>len(claims)<span style="color:#e6db74">}</span><span style="color:#e6db74"> claims is </span><span style="color:#e6db74">{</span>final_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>,
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;claim_scores&#39;</span>: sub_scores},
+</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#f92672">=</span>sub_scores
 </span></span><span style="display:flex;"><span>        )
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="2-logic-critic-implementation">2. Logic Critic Implementation</h3>
+</span></span></code></pre></div><h3 id="2-logic-critic-implementation">2. Logic Critic Implementation</h3>
 <blockquote>
 <p><strong>From Paper to Code: The Logic Critic</strong>
 The Logic Critic assesses the structural coherence of the reasoning graph $G$. The paper specifies this as:</p></blockquote>
@@ -571,99 +374,50 @@ $$
 \text{Score}_L = f_{\text{GNN}}(G; \theta)
 $$<blockquote>
 <p>Training a full Graph Neural Network (GNN) is a research project in itself. For our primitive, we will create a <em>functional proxy</em> for $f_{\text{GNN}}$ that uses graph-theoretic features to approximate logical coherence. This is a robust, explainable starting point for future GNN development. We&rsquo;ll check for orphaned claims, excessive branching (unfocused arguments), and graph density.</p></blockquote>
-<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">20
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">21
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">22
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">23
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">24
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">25
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">26
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">27
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">28
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">29
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">30
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">31
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">32
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">33
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">34
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">35
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">36
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">37
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">38
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">39
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">40
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">41
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">42
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">43
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> LogicCritic(BaseCritic):
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>, weight: <span style="color:#fff;font-weight:bold">float</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">super</span>().__init__(CriticType.LOGIC, weight)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LogicCritic</span>(BaseCritic):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, weight: float):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(CriticType<span style="color:#f92672">.</span>LOGIC, weight)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> evaluate(<span style="color:#fff;font-weight:bold">self</span>, sno: StructuredNarrativeObject, context: Optional[Dict] = <span style="color:#fff;font-weight:bold">None</span>) -&gt; CriticResult:
-</span></span><span style="display:flex;"><span>        G = sno.reasoning_graph
-</span></span><span style="display:flex;"><span>        num_nodes = G.number_of_nodes()
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> num_nodes &lt;= <span style="color:#ff0;font-weight:bold">1</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> CriticResult(<span style="color:#ff0;font-weight:bold">1.0</span>, <span style="color:#ff0;font-weight:bold">1.0</span>, <span style="color:#0ff;font-weight:bold">&#34;Graph is too simple to assess logic.&#34;</span>, {}, {})
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> CriticResult:
+</span></span><span style="display:flex;"><span>        G <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>reasoning_graph
+</span></span><span style="display:flex;"><span>        num_nodes <span style="color:#f92672">=</span> G<span style="color:#f92672">.</span>number_of_nodes()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> num_nodes <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> CriticResult(<span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">1.0</span>, <span style="color:#e6db74">&#34;Graph is too simple to assess logic.&#34;</span>, {}, {})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 1. Orphaned claims score (we want 0 orphans)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Nodes with in-degree 0 (excluding the root) are orphans</span>
-</span></span><span style="display:flex;"><span>        orphaned_nodes = [n <span style="color:#fff;font-weight:bold">for</span> n, d in G.in_degree() <span style="color:#fff;font-weight:bold">if</span> d == <span style="color:#ff0;font-weight:bold">0</span> and n != <span style="color:#0ff;font-weight:bold">&#39;root&#39;</span>]
-</span></span><span style="display:flex;"><span>        orphan_penalty = <span style="color:#fff;font-weight:bold">len</span>(orphaned_nodes) / (num_nodes - <span style="color:#ff0;font-weight:bold">1</span>)
-</span></span><span style="display:flex;"><span>        orphan_score = <span style="color:#ff0;font-weight:bold">1.0</span> - orphan_penalty
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Orphaned claims score (we want 0 orphans)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Nodes with in-degree 0 (excluding the root) are orphans</span>
+</span></span><span style="display:flex;"><span>        orphaned_nodes <span style="color:#f92672">=</span> [n <span style="color:#66d9ef">for</span> n, d <span style="color:#f92672">in</span> G<span style="color:#f92672">.</span>in_degree() <span style="color:#66d9ef">if</span> d <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> n <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;root&#39;</span>]
+</span></span><span style="display:flex;"><span>        orphan_penalty <span style="color:#f92672">=</span> len(orphaned_nodes) <span style="color:#f92672">/</span> (num_nodes <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        orphan_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> orphan_penalty
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 2. Coherence score (low branching is better)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Average out-degree measures branching. Lower is more focused.</span>
-</span></span><span style="display:flex;"><span>        avg_out_degree = <span style="color:#fff;font-weight:bold">sum</span>(d <span style="color:#fff;font-weight:bold">for</span> _, d in G.out_degree()) / num_nodes
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Normalize: assume max reasonable branching is ~3</span>
-</span></span><span style="display:flex;"><span>        coherence_score = <span style="color:#fff;font-weight:bold">max</span>(<span style="color:#ff0;font-weight:bold">0</span>, <span style="color:#ff0;font-weight:bold">1.0</span> - (avg_out_degree / <span style="color:#ff0;font-weight:bold">3.0</span>))
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Coherence score (low branching is better)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Average out-degree measures branching. Lower is more focused.</span>
+</span></span><span style="display:flex;"><span>        avg_out_degree <span style="color:#f92672">=</span> sum(d <span style="color:#66d9ef">for</span> _, d <span style="color:#f92672">in</span> G<span style="color:#f92672">.</span>out_degree()) <span style="color:#f92672">/</span> num_nodes
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Normalize: assume max reasonable branching is ~3</span>
+</span></span><span style="display:flex;"><span>        coherence_score <span style="color:#f92672">=</span> max(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> (avg_out_degree <span style="color:#f92672">/</span> <span style="color:#ae81ff">3.0</span>))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 3. Parsimony score (related to density)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># We prefer simpler, less dense graphs.</span>
-</span></span><span style="display:flex;"><span>        density = nx.density(G)
-</span></span><span style="display:flex;"><span>        parsimony_score = <span style="color:#ff0;font-weight:bold">1.0</span> - density
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Parsimony score (related to density)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># We prefer simpler, less dense graphs.</span>
+</span></span><span style="display:flex;"><span>        density <span style="color:#f92672">=</span> nx<span style="color:#f92672">.</span>density(G)
+</span></span><span style="display:flex;"><span>        parsimony_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> density
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Combine scores</span>
-</span></span><span style="display:flex;"><span>        final_score = <span style="color:#ff0;font-weight:bold">0.5</span> * orphan_score + <span style="color:#ff0;font-weight:bold">0.3</span> * coherence_score + <span style="color:#ff0;font-weight:bold">0.2</span> * parsimony_score
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Combine scores</span>
+</span></span><span style="display:flex;"><span>        final_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">*</span> orphan_score <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.3</span> <span style="color:#f92672">*</span> coherence_score <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.2</span> <span style="color:#f92672">*</span> parsimony_score
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        sub_scores = {
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;orphan_score&#39;</span>: orphan_score,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;coherence_score&#39;</span>: coherence_score,
-</span></span><span style="display:flex;"><span>            <span style="color:#0ff;font-weight:bold">&#39;parsimony_score&#39;</span>: parsimony_score
+</span></span><span style="display:flex;"><span>        sub_scores <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;orphan_score&#39;</span>: orphan_score,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;coherence_score&#39;</span>: coherence_score,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;parsimony_score&#39;</span>: parsimony_score
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> CriticResult(
-</span></span><span style="display:flex;"><span>            score=final_score,
-</span></span><span style="display:flex;"><span>            confidence=<span style="color:#ff0;font-weight:bold">0.9</span>, <span style="color:#007f7f"># High confidence as it&#39;s deterministic</span>
-</span></span><span style="display:flex;"><span>            explanation=<span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;Logic score based on graph structure: </span><span style="color:#0ff;font-weight:bold">{</span>final_score<span style="color:#0ff;font-weight:bold">:</span><span style="color:#0ff;font-weight:bold">.3f</span><span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#34;</span>,
-</span></span><span style="display:flex;"><span>            evidence={<span style="color:#0ff;font-weight:bold">&#39;num_orphans&#39;</span>: <span style="color:#fff;font-weight:bold">len</span>(orphaned_nodes), <span style="color:#0ff;font-weight:bold">&#39;avg_out_degree&#39;</span>: avg_out_degree, <span style="color:#0ff;font-weight:bold">&#39;density&#39;</span>: density},
-</span></span><span style="display:flex;"><span>            sub_scores=sub_scores
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> CriticResult(
+</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score,
+</span></span><span style="display:flex;"><span>            confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>, <span style="color:#75715e"># High confidence as it&#39;s deterministic</span>
+</span></span><span style="display:flex;"><span>            explanation<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Logic score based on graph structure: </span><span style="color:#e6db74">{</span>final_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;num_orphans&#39;</span>: len(orphaned_nodes), <span style="color:#e6db74">&#39;avg_out_degree&#39;</span>: avg_out_degree, <span style="color:#e6db74">&#39;density&#39;</span>: density},
+</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#f92672">=</span>sub_scores
 </span></span><span style="display:flex;"><span>        )
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="3-novelty-parsimony-critic-implementation">3. Novelty-Parsimony Critic Implementation</h3>
+</span></span></code></pre></div><h3 id="3-novelty-parsimony-critic-implementation">3. Novelty-Parsimony Critic Implementation</h3>
 <blockquote>
 <p><strong>From Paper to Code: The Novelty-Parsimony Critic</strong>
 This critic balances innovation against complexity. The formula from Section 2.2 is:
@@ -672,109 +426,55 @@ $$
 > \text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|}
 > $$<p>
 The formula uses subtraction to create this balance. The first term rewards novelty (Euclidean distance to the nearest neighbor in the SNO population), and the second term, scaled by β, penalizes graph complexity (edge-to-node ratio). Since the result is not inherently bounded in [0, 1], our code calculates the raw score and then clamps the result to fit within our scoring framework.</p></blockquote>
-<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">20
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">21
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">22
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">23
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">24
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">25
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">26
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">27
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">28
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">29
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">30
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">31
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">32
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">33
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">34
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">35
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">36
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">37
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">38
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">39
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">40
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">41
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">42
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">43
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">44
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">45
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">46
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">47
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">48
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> NoveltyParsimonyCritic(BaseCritic):
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> __init__(<span style="color:#fff;font-weight:bold">self</span>, weight: <span style="color:#fff;font-weight:bold">float</span>, alpha: <span style="color:#fff;font-weight:bold">float</span>, beta: <span style="color:#fff;font-weight:bold">float</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">super</span>().__init__(CriticType.NOVELTY, weight)
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.alpha = alpha
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">self</span>.beta = beta
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NoveltyParsimonyCritic</span>(BaseCritic):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, weight: float, alpha: float, beta: float):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(CriticType<span style="color:#f92672">.</span>NOVELTY, weight)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">=</span> alpha
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>beta <span style="color:#f92672">=</span> beta
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">def</span> evaluate(<span style="color:#fff;font-weight:bold">self</span>, sno: StructuredNarrativeObject, context: Optional[Dict] = <span style="color:#fff;font-weight:bold">None</span>) -&gt; CriticResult:
-</span></span><span style="display:flex;"><span>        sno_population = context.get(<span style="color:#0ff;font-weight:bold">&#39;sno_population&#39;</span>, [])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> CriticResult:
+</span></span><span style="display:flex;"><span>        sno_population <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;sno_population&#39;</span>, [])
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 1. Calculate Novelty Term: α * min_i ||H - H_i||</span>
-</span></span><span style="display:flex;"><span>        population_embeddings = [s.hypothesis_embedding <span style="color:#fff;font-weight:bold">for</span> s in sno_population <span style="color:#fff;font-weight:bold">if</span> s.sno_id != sno.sno_id and s.hypothesis_embedding is not <span style="color:#fff;font-weight:bold">None</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Calculate Novelty Term: α * min_i ||H - H_i||</span>
+</span></span><span style="display:flex;"><span>        population_embeddings <span style="color:#f92672">=</span> [s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> sno_population <span style="color:#66d9ef">if</span> s<span style="color:#f92672">.</span>sno_id <span style="color:#f92672">!=</span> sno<span style="color:#f92672">.</span>sno_id <span style="color:#f92672">and</span> s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> not population_embeddings or sno.hypothesis_embedding is <span style="color:#fff;font-weight:bold">None</span>:
-</span></span><span style="display:flex;"><span>            novelty_term = <span style="color:#fff;font-weight:bold">self</span>.alpha * <span style="color:#ff0;font-weight:bold">1.0</span> <span style="color:#007f7f"># Max novelty if no population to compare to</span>
-</span></span><span style="display:flex;"><span>            min_dist_str = <span style="color:#0ff;font-weight:bold">&#34;N/A (first SNO)&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span>            distances = [np.linalg.norm(sno.hypothesis_embedding - h) <span style="color:#fff;font-weight:bold">for</span> h in population_embeddings]
-</span></span><span style="display:flex;"><span>            min_distance = <span style="color:#fff;font-weight:bold">min</span>(distances)
-</span></span><span style="display:flex;"><span>            <span style="color:#007f7f"># Normalize distance (max L2 is 2.0) and multiply by alpha</span>
-</span></span><span style="display:flex;"><span>            novelty_term = <span style="color:#fff;font-weight:bold">self</span>.alpha * (min_distance / <span style="color:#ff0;font-weight:bold">2.0</span>)
-</span></span><span style="display:flex;"><span>            min_dist_str = <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#0ff;font-weight:bold">{</span>min_distance<span style="color:#0ff;font-weight:bold">:</span><span style="color:#0ff;font-weight:bold">.3f</span><span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> population_embeddings <span style="color:#f92672">or</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            novelty_term <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.0</span> <span style="color:#75715e"># Max novelty if no population to compare to</span>
+</span></span><span style="display:flex;"><span>            min_dist_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;N/A (first SNO)&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            distances <span style="color:#f92672">=</span> [np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">-</span> h) <span style="color:#66d9ef">for</span> h <span style="color:#f92672">in</span> population_embeddings]
+</span></span><span style="display:flex;"><span>            min_distance <span style="color:#f92672">=</span> min(distances)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Normalize distance (max L2 is 2.0) and multiply by alpha</span>
+</span></span><span style="display:flex;"><span>            novelty_term <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> (min_distance <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.0</span>)
+</span></span><span style="display:flex;"><span>            min_dist_str <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>min_distance<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 2. Calculate Parsimony Penalty Term: β * (|E_G| / |V|)</span>
-</span></span><span style="display:flex;"><span>        G = sno.reasoning_graph
-</span></span><span style="display:flex;"><span>        num_nodes = G.number_of_nodes()
-</span></span><span style="display:flex;"><span>        num_edges = G.number_of_edges()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Calculate Parsimony Penalty Term: β * (|E_G| / |V|)</span>
+</span></span><span style="display:flex;"><span>        G <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>reasoning_graph
+</span></span><span style="display:flex;"><span>        num_nodes <span style="color:#f92672">=</span> G<span style="color:#f92672">.</span>number_of_nodes()
+</span></span><span style="display:flex;"><span>        num_edges <span style="color:#f92672">=</span> G<span style="color:#f92672">.</span>number_of_edges()
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        complexity_ratio = <span style="color:#ff0;font-weight:bold">0.0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">if</span> num_nodes &gt; <span style="color:#ff0;font-weight:bold">0</span>:
-</span></span><span style="display:flex;"><span>            complexity_ratio = num_edges / num_nodes
+</span></span><span style="display:flex;"><span>        complexity_ratio <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> num_nodes <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            complexity_ratio <span style="color:#f92672">=</span> num_edges <span style="color:#f92672">/</span> num_nodes
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        parsimony_penalty = <span style="color:#fff;font-weight:bold">self</span>.beta * complexity_ratio
+</span></span><span style="display:flex;"><span>        parsimony_penalty <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>beta <span style="color:#f92672">*</span> complexity_ratio
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># 3. Calculate Final Score according to the formula</span>
-</span></span><span style="display:flex;"><span>        raw_score = novelty_term - parsimony_penalty
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Calculate Final Score according to the formula</span>
+</span></span><span style="display:flex;"><span>        raw_score <span style="color:#f92672">=</span> novelty_term <span style="color:#f92672">-</span> parsimony_penalty
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#007f7f"># Clamp the score to be within the [0, 1] range</span>
-</span></span><span style="display:flex;"><span>        final_score = np.clip(raw_score, <span style="color:#ff0;font-weight:bold">0</span>, <span style="color:#ff0;font-weight:bold">1</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Clamp the score to be within the [0, 1] range</span>
+</span></span><span style="display:flex;"><span>        final_score <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>clip(raw_score, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        explanation = <span style="color:#0ff;font-weight:bold">f</span><span style="color:#0ff;font-weight:bold">&#34;Score(</span><span style="color:#0ff;font-weight:bold">{</span>final_score<span style="color:#0ff;font-weight:bold">:</span><span style="color:#0ff;font-weight:bold">.3f</span><span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">) = NoveltyTerm(</span><span style="color:#0ff;font-weight:bold">{</span>novelty_term<span style="color:#0ff;font-weight:bold">:</span><span style="color:#0ff;font-weight:bold">.3f</span><span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">) - ParsimonyPenalty(</span><span style="color:#0ff;font-weight:bold">{</span>parsimony_penalty<span style="color:#0ff;font-weight:bold">:</span><span style="color:#0ff;font-weight:bold">.3f</span><span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">). Min dist: </span><span style="color:#0ff;font-weight:bold">{</span>min_dist_str<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">.&#34;</span>
+</span></span><span style="display:flex;"><span>        explanation <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Score(</span><span style="color:#e6db74">{</span>final_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">) = NoveltyTerm(</span><span style="color:#e6db74">{</span>novelty_term<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">) - ParsimonyPenalty(</span><span style="color:#e6db74">{</span>parsimony_penalty<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">). Min dist: </span><span style="color:#e6db74">{</span>min_dist_str<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> CriticResult(
-</span></span><span style="display:flex;"><span>            score=final_score,
-</span></span><span style="display:flex;"><span>            confidence=<span style="color:#ff0;font-weight:bold">0.9</span>,
-</span></span><span style="display:flex;"><span>            explanation=explanation,
-</span></span><span style="display:flex;"><span>            evidence={<span style="color:#0ff;font-weight:bold">&#39;novelty_term&#39;</span>: novelty_term, <span style="color:#0ff;font-weight:bold">&#39;parsimony_penalty&#39;</span>: parsimony_penalty, <span style="color:#0ff;font-weight:bold">&#39;complexity_ratio&#39;</span>: complexity_ratio},
-</span></span><span style="display:flex;"><span>            sub_scores={<span style="color:#0ff;font-weight:bold">&#39;novelty_term&#39;</span>: novelty_term, <span style="color:#0ff;font-weight:bold">&#39;parsimony_penalty&#39;</span>: parsimony_penalty}
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> CriticResult(
+</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score,
+</span></span><span style="display:flex;"><span>            confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>,
+</span></span><span style="display:flex;"><span>            explanation<span style="color:#f92672">=</span>explanation,
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;novelty_term&#39;</span>: novelty_term, <span style="color:#e6db74">&#39;parsimony_penalty&#39;</span>: parsimony_penalty, <span style="color:#e6db74">&#39;complexity_ratio&#39;</span>: complexity_ratio},
+</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;novelty_term&#39;</span>: novelty_term, <span style="color:#e6db74">&#39;parsimony_penalty&#39;</span>: parsimony_penalty}
 </span></span><span style="display:flex;"><span>        )
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+</span></span></code></pre></div>
     </div>
 
     
@@ -829,7 +529,8 @@ The formula uses subtraction to create this balance. The first term rewards nove
                 <div class="footer-content">
                     <div class="footer-text">
                         <p>&copy; 2025 <a href="https://GTCode.com/" class="footer-link">GTCode.com</a>. Educational content for CNS 2.0 implementation.</p>
-                        <p>Based on <a href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
+                        <p>Based on <a target="_blank" 
+                               rel="noopener noreferrer" href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" class="footer-link">CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis</a> research paper.</p>
                     </div>
                 </div>
             </div>
@@ -838,9 +539,9 @@ The formula uses subtraction to create this balance. The first term rewards nove
 
     
     <script src="/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     
     
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
