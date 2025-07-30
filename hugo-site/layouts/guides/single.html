@@ -4,6 +4,7 @@
     <div class="guide-content">
         <article class="content-article">
             <header class="article-header">
+                <a href="{{ .Parent.RelPermalink }}" class="parent-guide-link">← Back to {{ .Parent.Title }}</a>
                 <h1 class="article-title">{{ .Title }}</h1>
                 {{ if .Description }}
                 <p class="article-description">{{ .Description }}</p>

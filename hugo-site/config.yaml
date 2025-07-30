@@ -1,7 +1,6 @@
 baseURL: 'http://localhost:5000'
 languageCode: 'en-us'
-title: 'Building CNS 2.0: A Developer''s Guide'
-disableKinds: ['sitemap']
+title: 'CNS 2.0 Project'
 
 params:
   description: 'A progressive educational guide to implementing Chiral Narrative Synthesis 2.0 in Python'
@@ -25,27 +24,14 @@ markup:
 
 menu:
   main:
-    - name: "Introduction"
-      url: "/guides/building-cns-2.0-developers-guide/chapter-1-introduction/"
+    - name: "Developer's Guide"
+      identifier: "devguide"
+      url: "/guides/building-cns-2.0-developers-guide/"
       weight: 1
-    - name: "SNO Foundations"
-      url: "/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/"
+    - name: "Research Roadmap"
+      identifier: "research"
+      url: "/guides/cns-2.0-research-roadmap/"
       weight: 2
-    - name: "Critic Pipeline"
-      url: "/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/"
-      weight: 3
-    - name: "Synthesis Engine"
-      url: "/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/"
-      weight: 4
-    - name: "System Integration"
-      url: "/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/"
-      weight: 5
-    - name: "Complete Implementation"
-      url: "/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/"
-      weight: 6
-    - name: "DSPy Integration"
-      url: "/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/"
-      weight: 7
 
 server:
   host: '0.0.0.0'

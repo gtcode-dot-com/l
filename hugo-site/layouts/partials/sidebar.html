@@ -1,0 +1,44 @@
+<!-- hugo-site/layouts/partials/sidebar.html -->
+<aside class="guide-sidebar">
+    <nav class="guide-nav">
+        {{ $currentPage := . }}
+        {{ $devGuide := .Site.GetPage "section" "guides/building-cns-2.0-developers-guide" }}
+        {{ $researchGuide := .Site.GetPage "section" "guides/cns-2.0-research-roadmap" }}
+
+        <!-- Determine active section -->
+        {{ $isDevGuide := or (eq . $devGuide) (.IsDescendant $devGuide) }}
+        {{ $isResearchGuide := or (eq . $researchGuide) (.IsDescendant $researchGuide) }}
+
+        <!-- Section 1: Developer's Guide -->
+        <div class="guide-menu-section">
+            <h3 class="guide-menu-title">
+                <a href="{{ $devGuide.RelPermalink }}" class="{{ if $isDevGuide }}active-guide{{ end }}">Developer's Guide</a>
+            </h3>
+            {{ if $isDevGuide }}
+            <ul class="guide-menu-list">
+                {{ range $devGuide.Pages.ByWeight }}
+                <li class="guide-menu-item">
+                    <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+
+        <!-- Section 2: Research Roadmap -->
+        <div class="guide-menu-section">
+            <h3 class="guide-menu-title">
+                <a href="{{ $researchGuide.RelPermalink }}" class="{{ if $isResearchGuide }}active-guide{{ end }}">Research Roadmap</a>
+            </h3>
+            {{ if $isResearchGuide }}
+            <ul class="guide-menu-list">
+                 {{ range $researchGuide.Pages.ByWeight }}
+                <li class="guide-menu-item">
+                    <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </nav>
+</aside>

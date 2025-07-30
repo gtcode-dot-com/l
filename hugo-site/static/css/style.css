@@ -830,17 +830,108 @@ th {
     color: #3b82f6;
 }
 
+/* ===== Guide Layout & Sidebar ===== */
+.guide-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.guide-sidebar {
+    flex: 1 1 280px;
+    max-width: 100%;
+}
+
+.guide-content {
+    flex: 2 1 600px;
+    min-width: 0;
+}
+
+@media (min-width: 992px) {
+    .guide-layout {
+        flex-wrap: nowrap;
+    }
+    .guide-sidebar {
+        max-width: 280px;
+    }
+}
+
+.guide-sidebar .guide-menu-section {
+    margin-bottom: 2rem;
+}
+
+.guide-sidebar .guide-menu-title a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1e293b;
+    transition: color 0.2s ease;
+    padding-bottom: 0.25rem;
+    display: inline-block;
+}
+
+.guide-sidebar .guide-menu-title a:hover {
+    color: #2563eb;
+}
+
+.guide-sidebar .guide-menu-title a.active-guide {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.guide-sidebar .guide-menu-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    border-left: 1px solid #e2e8f0;
+}
+
+.guide-sidebar .guide-menu-item a {
+    text-decoration: none;
+    color: #475569;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.guide-sidebar .guide-menu-item a:hover {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.guide-sidebar .guide-menu-item a.active {
+    font-weight: 600;
+    color: #3b82f6;
+    border-left-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.parent-guide-link {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: #64748b;
+}
+.parent-guide-link:hover {
+    text-decoration: underline;
+}
+
+
 /* ===== Print Styles ===== */
 @media print {
     .site-header,
     .site-footer,
     .nav-toggle,
     .copy-code-btn,
-    .chapter-nav {
+    .chapter-nav,
+    .guide-sidebar {
         display: none;
     }
     
-    .site-main {
+    .site-main, .guide-layout, .guide-content {
+        display: block;
         padding: 0;
     }
     

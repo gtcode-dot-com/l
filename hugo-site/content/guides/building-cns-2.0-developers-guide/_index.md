@@ -5,6 +5,8 @@ description: "A progressive educational guide to implementing Chiral Narrative S
 
 Welcome to the comprehensive developer's guide for implementing **Chiral Narrative Synthesis (CNS) 2.0** in Python. This guide will take you on a progressive journey, translating the groundbreaking research paper, *"CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis,"* from a formal blueprint into a robust, working system.
 
+> **A Note on Scope:** This guide is focused on the **practical implementation** of the CNS 2.0 system. For a detailed look at the scientific validation, experimental design, and the plan for peer-reviewed publication, please see our complementary guide: **[Research Roadmap: From Blueprint to Publication](/guides/cns-2.0-research-roadmap/)**.
+
 We will start with the foundational data structures and evolve step-by-step into a scalable, production-grade, self-optimizing knowledge synthesis engine.
 
 ## What You'll Learn
