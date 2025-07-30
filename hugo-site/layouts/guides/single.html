@@ -1,5 +1,9 @@
 {{ define "main" }}
 <div class="guide-layout">
+    <button class="guide-sidebar-toggle" id="guide-sidebar-toggle" aria-label="Toggle Guide Menu">
+        <i data-feather="menu"></i>
+    </button>
+    <div class="guide-sidebar-overlay" id="guide-sidebar-overlay"></div>
     {{ partial "sidebar.html" . }}
     <div class="guide-content">
         <article class="content-article">

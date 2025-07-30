@@ -424,6 +424,7 @@ th {
 }
 
 .footer-content {
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -832,27 +833,26 @@ th {
 
 /* ===== Guide Layout & Sidebar ===== */
 .guide-layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
+    position: relative; /* Needed for positioning the toggle button */
 }
 
+/* Sidebar will be handled by popout styles later */
 .guide-sidebar {
-    flex: 1 1 280px;
-    max-width: 100%;
+    /* flex: 1 1 280px; */
+    /* max-width: 100%; */
 }
 
 .guide-content {
-    flex: 2 1 600px;
-    min-width: 0;
+    /* flex: 2 1 600px; */
+    min-width: 0; /* Still useful to prevent overflow issues */
 }
 
 @media (min-width: 992px) {
     .guide-layout {
-        flex-wrap: nowrap;
+        /* flex-wrap: nowrap; */
     }
     .guide-sidebar {
-        max-width: 280px;
+        /* max-width: 280px; */
     }
 }
 
@@ -916,6 +916,63 @@ th {
 }
 .parent-guide-link:hover {
     text-decoration: underline;
+}
+
+/* --- Popout Sidebar Specific Styles --- */
+.guide-sidebar-toggle {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    z-index: 1010;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #334155;
+}
+
+.guide-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    z-index: 1020;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 2rem;
+    border-right: 1px solid #e2e8f0;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+}
+
+.guide-sidebar.is-open {
+    transform: translateX(0);
+}
+
+.guide-sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1015;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.guide-sidebar-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 
