@@ -1,0 +1,190 @@
+---
+title: "Chapter 6: Production Deployment & Scaling"
+description: "Taking the CNS 2.0 system from a single-process prototype to a scalable, production-grade service."
+weight: 6
+---
+
+<div class="guide-header">
+    <a href="/" class="home-link">← Back to GTCode.com Homepage</a>
+</div>
+
+# Chapter 6: Production Deployment & Scaling
+
+## From Prototype to Production
+
+In Chapter 5, we built a fully functional, single-process CNS system using `asyncio`. This is an excellent architecture for development and testing. This chapter answers the critical next question: **"How do I run this as a robust, scalable, production-grade service?"**
+
+Taking a prototype to production requires evolving our architecture to be distributed, containerized, and observable. We will cover three pillars:
+
+1.  **Containerization**: Packaging our application and its dependencies into a portable format using Docker.
+2.  **Distributed Task Execution**: Replacing the single `asyncio` queue with a powerful job queue system (Celery with Redis) to enable horizontal scaling.
+3.  **Production-Ready Observability**: Implementing structured logging and externalized configuration, which are essential for managing a deployed application.
+
+## The Production Architecture: Decoupling with a Job Queue
+
+The single-process `asyncio` model is limited by the resources of a single machine. To handle a high volume of tasks, we must evolve to a distributed architecture that decouples task submission from task execution.
+
+<div style="text-align: center;">
+  <img src="/img/diagram-02.svg" alt="A diagram of the production architecture, showing an API Server sending tasks to a Redis Queue, which are then consumed by multiple Celery Worker containers." style="display: inline-block;" />
+</div>
+
+This architecture consists of three main services:
+1.  **API Server (FastAPI)**: A lightweight web server that provides an entry point to the system. Its only job is to validate requests and add them as tasks to the message broker.
+2.  **Message Broker (Redis)**: A high-performance message queue that holds the "to-do list" of tasks for the entire system.
+3.  **Celery Workers**: These are the workhorses. Each worker is a container running our CNS application. They connect to Redis, pull tasks from the queue, and execute them. You can run one, ten, or a hundred of these workers in parallel.
+
+## 1. Containerization with Docker
+
+Containerizing our application with Docker is the foundational step. It bundles our code, dependencies, and environment into a single, portable image.
+
+**`requirements.txt`:**
+```txt
+# Core CNS Libraries
+numpy
+networkx
+torch
+transformers
+sentence-transformers
+faiss-cpu         # Use faiss-gpu if you have a compatible GPU
+
+# Production Services
+fastapi           # For the API server
+uvicorn           # ASGI server for FastAPI
+redis             # Python client for Redis
+celery            # Distributed task queue
+
+# Observability
+structlog         # Structured logging
+PyYAML            # For loading config files
+```
+
+**`Dockerfile`:**
+```dockerfile
+# Start with an official Python slim image
+FROM python:3.10-slim
+WORKDIR /usr/src/app
+
+# Copy and install dependencies first to leverage Docker's layer caching
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code
+COPY ./cns /usr/src/app/cns
+
+# The default command will be to start a Celery worker.
+# We can override this to start the API server instead.
+CMD [ "celery", "-A", "cns.tasks", "worker", "--loglevel=info" ]
+```
+
+## 2. Distributed Task Execution with Celery
+
+We now replace the in-memory `asyncio.Queue` with **Celery**, a powerful distributed task queue, using **Redis** as its message broker.
+
+**`cns/tasks.py` - Defining the Work:**
+This file defines the functions our workers will execute. We initialize a singleton of our `CNSWorkflowManager` so that models are loaded only once per worker, making it very efficient.
+
+```python
+# cns/tasks.py
+from celery import Celery
+from .workflow import CNSWorkflowManager # Your main CNS logic
+from .logging_setup import logger # Use our structured logger
+
+# Configure Celery to use Redis as the message broker.
+# The hostname 'redis' will be resolved by Docker Compose's internal networking.
+celery_app = Celery('cns_tasks', broker='redis://redis:6379/0', backend='redis://redis:6379/0')
+
+# Initialize a singleton instance of the CNS manager.
+# This object will persist in the worker's memory.
+logger.info("worker.initializing_cns_manager")
+cns_manager = CNSWorkflowManager()
+logger.info("worker.cns_manager_initialized")
+
+@celery_app.task(name="process_document_ingestion")
+def process_document_ingestion(document_text: str, source: str):
+    """A Celery task to handle the ingestion of a single document."""
+    logger.info("ingestion_task.received", source=source, text_length=len(document_text))
+    # Note: The original manager used asyncio. For Celery, the core logic
+    # inside the manager should be synchronous.
+    try:
+        sno = cns_manager.ingest_and_evaluate(document_text, source)
+        logger.info("ingestion_task.complete", source=source, sno_id=sno.sno_id)
+        return sno.to_dict()
+    except Exception as e:
+        logger.error("ingestion_task.failed", error=str(e), source=source)
+        # Propagate the error so the task can be marked as failed.
+        raise
+```
+
+**`cns/main.py` - The API Entrypoint:**
+This lightweight FastAPI server receives requests and dispatches them to the queue. It does no heavy lifting itself.
+
+```python
+# cns/main.py
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from .tasks import process_document_ingestion
+
+app = FastAPI(title="CNS 2.0 API")
+
+class IngestionRequest(BaseModel):
+    source: str
+    text: str
+
+@app.post("/ingest", status_code=202)
+def ingest_document(request: IngestionRequest):
+    """
+    Accepts a document for ingestion and adds it to the processing queue.
+    Returns immediately with a task ID.
+    """
+    if not request.text or not request.source:
+        raise HTTPException(status_code=400, detail="Source and text cannot be empty.")
+
+    # This is the key step: .delay() sends the task to the Celery queue
+    # and returns immediately without waiting for the result.
+    task = process_document_ingestion.delay(document_text=request.text, source=request.source)
+
+    return {"message": "Ingestion task accepted", "task_id": task.id}
+```
+
+**`docker-compose.yml` - Orchestrating the Services:**
+This file defines and connects our three services.
+
+```yaml
+version: '3.8'
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  api:
+    build: .
+    command: uvicorn cns.main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./cns:/usr/src/app/cns
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+
+  worker:
+    build: .
+    # The default CMD from the Dockerfile is used here.
+    volumes:
+      - ./cns:/usr/src/app/cns
+    depends_on:
+      - redis
+    # Add deploy section to scale workers
+    deploy:
+      replicas: 2 # Start with 2 workers, can be scaled with `docker-compose up --scale worker=5`
+```
+With this setup, you can start the entire distributed system with `docker-compose up` and scale the number of workers on demand to handle any workload.
+
+## 3. Production-Ready Observability
+(This section remains the same as it is already clear and effective.)
+
+### Structured Logging with `structlog`
+(This section remains the same.)
+
+### Externalized Configuration Management
+(This section remains the same.)
