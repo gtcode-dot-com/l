@@ -2,6 +2,11 @@
 title: "Advanced Technical Research"
 description: "Pushing the boundaries of the CNS 2.0 framework with next-generation models for reasoning, privacy, and inference."
 weight: 6
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 With the foundational components in place, our research can turn to the truly cutting-edge technical challenges required to make CNS 2.0 a robust, scalable, and deeply intelligent system. This phase of the research program moves beyond the initial implementation to tackle next-generation problems in automated reasoning, privacy-preserving AI, and causal inference.

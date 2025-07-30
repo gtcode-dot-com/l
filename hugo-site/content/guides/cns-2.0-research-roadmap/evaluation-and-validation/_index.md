@@ -2,6 +2,11 @@
 title: "Evaluation and Validation Research"
 description: "A research program for rigorously assessing the performance, robustness, and utility of the CNS 2.0 system in diverse, real-world contexts."
 weight: 10
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 Building a technically sophisticated system is only the first step. To make a genuine scientific contribution, we must rigorously and transparently evaluate its performance, understand its limitations, and assess its real-world utility. This research thrust is dedicated to the comprehensive validation of the CNS 2.0 framework.

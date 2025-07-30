@@ -2,6 +2,11 @@
 title: "Project 2: Privacy, Security & Misuse Prevention"
 description: "Developing technical and policy frameworks to protect user data and prevent the CNS 2.0 system from being used for malicious purposes."
 weight: 16
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 ### The Challenge: A Dual-Use Technology

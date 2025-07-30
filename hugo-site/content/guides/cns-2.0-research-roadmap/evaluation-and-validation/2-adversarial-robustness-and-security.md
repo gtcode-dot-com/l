@@ -2,6 +2,11 @@
 title: "Project 2: Adversarial Robustness & Security"
 description: "Conducting a rigorous security assessment of the CNS 2.0 system to test its resilience against sophisticated adversarial attacks."
 weight: 12
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 ### The Challenge: From Benign Errors to Malicious Attacks

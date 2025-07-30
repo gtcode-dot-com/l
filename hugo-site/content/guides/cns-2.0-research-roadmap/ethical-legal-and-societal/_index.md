@@ -2,6 +2,11 @@
 title: "Ethical, Legal, and Societal Research"
 description: "A proactive research program to investigate the ethical implications of CNS 2.0 and develop frameworks for its responsible deployment."
 weight: 14
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 A powerful technology like Chiral Narrative Synthesis is not developed in a vacuum. It has the potential to create enormous value, but it also carries significant risks if not designed and deployed with care. The goal of our Ethical, Legal, and Societal (ELS) research program is to proactively identify, analyze, and mitigate these risks.

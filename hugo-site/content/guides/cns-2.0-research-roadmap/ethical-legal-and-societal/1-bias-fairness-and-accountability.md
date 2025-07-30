@@ -2,6 +2,11 @@
 title: "Project 1: Bias, Fairness, and Accountability"
 description: "Developing methods to detect and mitigate bias, ensure fairness, and establish clear governance frameworks for the CNS 2.0 system."
 weight: 15
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 ### The Challenge: AI as a Mirror

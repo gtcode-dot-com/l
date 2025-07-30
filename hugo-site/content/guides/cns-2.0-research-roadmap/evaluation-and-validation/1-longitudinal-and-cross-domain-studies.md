@@ -2,6 +2,11 @@
 title: "Project 1: Longitudinal & Cross-Domain Studies"
 description: "Evaluating the long-term performance stability and generalization capabilities of the CNS 2.0 system."
 weight: 11
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 ### The Challenge: Beyond a Single Snapshot

@@ -2,6 +2,11 @@
 title: "Project 1: GNNs for Logical Reasoning"
 description: "Developing a next-generation, data-driven Logic Critic using Graph Neural Networks to assess the structural integrity of arguments."
 weight: 7
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 ### The Challenge: Beyond Heuristics

@@ -2,6 +2,11 @@
 title: "Project 3: Human-AI Collaboration"
 description: "Researching the optimal ways for human experts to interact with, guide, and benefit from the CNS 2.0 system."
 weight: 13
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 ### The Challenge: Beyond Algorithmic Performance
