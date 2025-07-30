@@ -58,7 +58,49 @@ This formula measures the degree to which two narratives are arguing over the sa
 **Synthesis is triggered for pairs with both high Chirality and high Entanglement.** These are two well-supported, opposing theories trying to explain the same data—the most fertile ground for a novel insight.
 
 ```python
-# ... (RelationalMetrics class implementation remains the same) ...
+"""
+Generative Synthesis Engine Implementation
+=========================================
+LLM-powered dialectical reasoning for knowledge synthesis
+"""
+# ... (imports and dataclasses like ChiralPair would be here) ...
+
+class RelationalMetrics:
+    @staticmethod
+    def _cosine_similarity(v1: np.ndarray, v2: np.ndarray) -> float:
+        """Helper for cosine similarity, the H_i ⋅ H_j part of the CScore formula."""
+        return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
+
+    @staticmethod
+    def chirality_score(sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject) -> float:
+        """Implements the CScore formula from the paper."""
+        if sno_a.hypothesis_embedding is None or sno_b.hypothesis_embedding is None or sno_a.trust_score is None or sno_b.trust_score is None:
+            return 0.0
+        cos_sim = RelationalMetrics._cosine_similarity(sno_a.hypothesis_embedding, sno_b.hypothesis_embedding)
+        opposition = 1.0 - cos_sim
+        trust_product = sno_a.trust_score * sno_b.trust_score
+        return opposition * trust_product
+    
+    @staticmethod
+    def evidential_entanglement(sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject) -> Tuple[float, Set[str]]:
+        """Implements the EScore formula (Jaccard similarity) from the paper."""
+        evidence_a = {e.source_id for e in sno_a.evidence_set}
+        evidence_b = {e.source_id for e in sno_b.evidence_set}
+        if not evidence_a and not evidence_b:
+            return 0.0, set()
+        intersection = evidence_a.intersection(evidence_b)
+        union = evidence_a.union(evidence_b)
+        return len(intersection) / len(union) if union else 0.0, intersection
+
+    @staticmethod
+    def synthesis_potential(chirality: float, entanglement: float) -> float:
+        """Combines chirality and entanglement into a single heuristic for prioritizing pairs."""
+        # Geometric mean heavily penalizes pairs where one score is very low.
+        geometric_mean = np.sqrt(chirality * entanglement)
+        # Bonus for pairs where scores are balanced, indicating a well-proportioned conflict.
+        balance_bonus = 1.0 - abs(chirality - entanglement)
+        return geometric_mean * (1.0 + 0.2 * balance_bonus)
+
 ```
 
 ### Scalable Pair Detection with `faiss`
@@ -70,7 +112,34 @@ We solve this by using an **Approximate Nearest Neighbor (ANN)** index. Librarie
 Our `ChiralPairDetector` uses `faiss` to pre-filter a small set of candidate pairs with high potential `CScore`, and only then calculates the more intensive `EScore` on this small set.
 
 ```python
-# ... (ChiralPairDetector class implementation remains the same) ...
+# Import FAISS for scalable ANN-based pair finding
+try:
+    import faiss
+    HAS_FAISS = True
+except ImportError:
+    HAS_FAISS = False
+    print("Warning: faiss library not found. ChiralPairDetector will be inefficient.")
+
+class ChiralPairDetector:
+    # ... (the __init__ and find_chiral_pairs methods remain largely the same) ...
+
+    def _find_pairs_faiss(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) -> List[ChiralPair]:
+        """Finds candidate pairs efficiently using a FAISS index."""
+        # ... (implementation remains the same, using RelationalMetrics) ...
+
+    def _identify_conflicts_semantically(self, sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject, threshold=0.2) -> List[str]:
+        """Identifies specific points of disagreement to inform the synthesis prompt."""
+        conflicts = [f"Central hypothesis conflict: '{sno_a.central_hypothesis}' vs '{sno_b.central_hypothesis}'"]
+        claims_a = [data['claim'] for _, data in sno_a.reasoning_graph.nodes(data=True) if 'claim' in data and data['claim'].embedding is not None]
+        claims_b = [data['claim'] for _, data in sno_b.reasoning_graph.nodes(data=True) if 'claim' in data and data['claim'].embedding is not None]
+
+        for ca in claims_a:
+            for cb in claims_b:
+                similarity = RelationalMetrics._cosine_similarity(ca.embedding, cb.embedding)
+                if similarity < threshold:
+                    conflicts.append(f"Potential sub-claim conflict (similarity {similarity:.2f}): '{ca.content}' vs '{cb.content}'")
+
+        return conflicts[:5] # Limit for brevity
 ```
 
 ## Advanced Agent Action: Guided Narrative Exploration
@@ -170,4 +239,62 @@ def generate_exploration_prompt(h_target_vector: np.ndarray, original_sno: Struc
 This implementation turns the abstract mathematical formula into a practical tool for guiding the evolution of knowledge within the CNS system.
 
 ## Making it Concrete: Visualizing the SNO Latent Space
-(This section remains the same as it is already clear and effective.)
+
+The concepts of "latent space," "chirality," and "conceptual distance" are powerful but abstract. We can make them intuitive by visualizing the high-dimensional hypothesis embeddings in 2D space using `t-SNE`. This is a powerful diagnostic and exploratory tool.
+
+**Note:** You may need to install these libraries: `pip install scikit-learn matplotlib`
+
+```python
+import matplotlib.pyplot as plt
+from sklearn.manifold import TSNE
+from typing import List
+
+def visualize_sno_population(sno_population: List[StructuredNarrativeObject]):
+    """
+    Creates a 2D visualization of the SNO population's hypothesis embeddings using t-SNE.
+    """
+    embeddings = [sno.hypothesis_embedding for sno in sno_population if sno.hypothesis_embedding is not None]
+    if len(embeddings) < 2:
+        print("Not enough SNOs with embeddings to visualize.")
+        return
+
+    # Ensure all embeddings are in a single numpy array
+    embedding_matrix = np.array(embeddings)
+
+    # Use t-SNE to reduce to 2 dimensions
+    tsne = TSNE(n_components=2, perplexity=max(min(len(embeddings) - 1, 30), 1), random_state=42)
+    embeddings_2d = tsne.fit_transform(embedding_matrix)
+
+    # Extract trust scores for color-coding the plot
+    trust_scores = [sno.trust_score or 0.0 for sno in sno_population if sno.hypothesis_embedding is not None]
+
+    # Create the scatter plot
+    plt.figure(figsize=(12, 8))
+    scatter = plt.scatter(
+        embeddings_2d[:, 0],
+        embeddings_2d[:, 1],
+        c=trust_scores,
+        cmap='viridis',
+        alpha=0.7,
+        s=100 # size of points
+    )
+
+    # Add labels and titles
+    plt.title('t-SNE Visualization of SNO Latent Space')
+    plt.xlabel('t-SNE Dimension 1')
+    plt.ylabel('t-SNE Dimension 2')
+    plt.colorbar(scatter, label='Trust Score')
+
+    # Annotate points with SNO IDs for clarity
+    for i, sno in enumerate(sno_population):
+         if sno.hypothesis_embedding is not None:
+            plt.annotate(sno.sno_id[:8], (embeddings_2d[i, 0], embeddings_2d[i, 1]), alpha=0.8)
+
+    plt.grid(True)
+    plt.show()
+
+# Example Usage (assuming you have a populated and evaluated list of SNOs):
+# visualize_sno_population(my_sno_list)
+```
+
+This visualization allows you to literally *see* the structure of your knowledge base. Clusters of points represent dominant theories. A "chiral pair" would appear as two points, often far from each other, but both with high trust scores (e.g., bright colors in our plot). A successful synthesis might appear as a new point, also with a high trust score, located somewhere between its parents. This tool transforms the abstract mathematics of CNS 2.0 into a concrete, explorable map of ideas.

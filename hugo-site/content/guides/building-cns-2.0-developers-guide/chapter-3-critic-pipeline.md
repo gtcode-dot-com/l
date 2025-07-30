@@ -44,7 +44,11 @@ Multi-Component Critic Pipeline Implementation
 ============================================
 Transparent, auditable evaluation of SNO quality
 """
-# ... (standard imports like ABC, abstractmethod, typing, etc.) ...
+from abc import ABC, abstractmethod
+from typing import Dict, List, Tuple, Optional, Any
+import numpy as np
+from dataclasses import dataclass
+from enum import Enum
 # Assume StructuredNarrativeObject is available from Chapter 2
 
 @dataclass
@@ -57,7 +61,73 @@ class CriticResult:
     evidence: Dict[str, Any] = field(default_factory=dict)
     sub_scores: Dict[str, float] = field(default_factory=dict)
 
-# ... (BaseCritic and CriticPipeline class implementations remain the same) ...
+class CriticType(Enum):
+    GROUNDING = "grounding"
+    LOGIC = "logic"
+    NOVELTY = "novelty"
+
+class BaseCritic(ABC):
+    """Abstract base class for all CNS 2.0 critics"""
+    
+    def __init__(self, critic_type: CriticType, weight: float = 1.0):
+        self.critic_type = critic_type
+        self.weight = weight
+        self.evaluation_count = 0
+        self.performance_history = []
+    
+    @abstractmethod
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        pass
+    
+    def update_weight(self, new_weight: float):
+        self.weight = new_weight
+    
+    def get_statistics(self) -> Dict[str, Any]:
+        return {
+            'type': self.critic_type.value,
+            'weight': self.weight,
+            'evaluations': self.evaluation_count,
+            'avg_score': np.mean([r['score'] for r in self.performance_history]) if self.performance_history else 0.0,
+        }
+
+class CriticPipeline:
+    """Orchestrates multiple critics to produce comprehensive SNO evaluation"""
+    
+    def __init__(self):
+        self.critics: Dict[CriticType, BaseCritic] = {}
+        self.evaluation_history = []
+    
+    def add_critic(self, critic: BaseCritic):
+        self.critics[critic.critic_type] = critic
+    
+    def evaluate_sno(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> Dict[str, Any]:
+        results = {}
+        total_weighted_score = 0.0
+        total_weight = 0.0
+        
+        for critic_type, critic in self.critics.items():
+            result = critic.evaluate(sno, context)
+            results[critic_type.value] = result
+            total_weighted_score += result.score * critic.weight
+            total_weight += critic.weight
+            critic.performance_history.append({'score': result.score, 'confidence': result.confidence})
+            critic.evaluation_count += 1
+        
+        trust_score = total_weighted_score / total_weight if total_weight > 0 else 0.0
+        sno.trust_score = trust_score
+        
+        evaluation_result = {
+            'trust_score': trust_score,
+            'critic_results': results,
+            'weights_used': {ct.value: c.weight for ct, c in self.critics.items()},
+        }
+        self.evaluation_history.append(evaluation_result)
+        return evaluation_result
+    
+    def adjust_weights(self, weight_updates: Dict[CriticType, float]):
+        for critic_type, new_weight in weight_updates.items():
+            if critic_type in self.critics:
+                self.critics[critic_type].update_weight(new_weight)
 ```
 
 ## 1. Grounding Critic
@@ -79,7 +149,48 @@ This formula calculates the average "best possible support" for all claims in a 
 
 ```python
 class GroundingCritic(BaseCritic):
-    # ... (implementation remains the same as in the original file) ...
+    def __init__(self, weight: float, nli_model=None, nli_tokenizer=None, nli_model_name: str = "microsoft/deberta-large-mnli"):
+        super().__init__(CriticType.GROUNDING, weight)
+        if nli_model and nli_tokenizer:
+            self.nli_model, self.nli_tokenizer = nli_model, nli_tokenizer
+        elif HAS_TRANSFORMERS:
+            import transformers
+            self.nli_tokenizer = transformers.AutoTokenizer.from_pretrained(nli_model_name)
+            self.nli_model = transformers.AutoModelForSequenceClassification.from_pretrained(nli_model_name)
+        else:
+            raise ImportError("Transformers library is required for the GroundingCritic.")
+        self.entailment_id = self.nli_model.config.label2id.get('entailment', 2)
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        claims = [data['claim'] for _, data in sno.reasoning_graph.nodes(data=True)]
+        evidence_contents = [item.content for item in sno.evidence_set]
+        
+        if not claims or not evidence_contents:
+            return CriticResult(0.0, 1.0, "No claims or evidence to ground.", {}, {})
+
+        total_max_plausibility, sub_scores = 0.0, {}
+        # This loop corresponds to the Σ[v ∈ V] part of the formula
+        for claim in claims:
+            # Prepare (evidence, claim) pairs to calculate p(v|e) for all e ∈ E
+            pairs = [(e, claim.content) for e in evidence_contents]
+            inputs = self.nli_tokenizer(pairs, return_tensors='pt', padding=True, truncation=True)
+            with torch.no_grad():
+                logits = self.nli_model(**inputs).logits
+            probabilities = torch.softmax(logits, dim=1)
+            entailment_probs = probabilities[:, self.entailment_id].tolist()
+
+            # This corresponds to the max[e ∈ E] p(v|e) part of the formula
+            max_plausibility_for_claim = max(entailment_probs) if entailment_probs else 0.0
+            total_max_plausibility += max_plausibility_for_claim
+            sub_scores[claim.claim_id] = max_plausibility_for_claim
+
+        # This corresponds to the (1/|V|) * Σ[...] part of the formula
+        final_score = total_max_plausibility / len(claims) if claims else 0.0
+        return CriticResult(
+            score=final_score, confidence=0.8,
+            explanation=f"Average max NLI entailment score across {len(claims)} claims is {final_score:.3f}.",
+            evidence={'claim_scores': sub_scores}, sub_scores=sub_scores
+        )
 ```
 
 ## 2. Logic Critic
@@ -99,7 +210,38 @@ Our heuristic-based `LogicCritic` uses a weighted average of three metrics to ap
 
 ```python
 class LogicCritic(BaseCritic):
-    # ... (implementation remains the same as in the original file) ...
+    def __init__(self, weight: float):
+        super().__init__(CriticType.LOGIC, weight)
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        G = sno.reasoning_graph
+        num_nodes = G.number_of_nodes()
+        if num_nodes <= 1:
+            return CriticResult(1.0, 1.0, "Graph is too simple to assess logic.", {}, {})
+
+        # Heuristic 1: Penalize orphaned claims (unsupported assertions)
+        orphaned_nodes = [n for n, d in G.in_degree() if d == 0 and n != 'root']
+        orphan_penalty = len(orphaned_nodes) / (num_nodes - 1) if num_nodes > 1 else 0
+        orphan_score = 1.0 - orphan_penalty
+        
+        # Heuristic 2: Penalize unfocused claims (a single claim supporting too many others)
+        avg_out_degree = sum(d for _, d in G.out_degree()) / num_nodes
+        coherence_score = max(0, 1.0 - (avg_out_degree / 3.0)) # Assumes avg out-degree > 3 is too much
+
+        # Heuristic 3: Penalize complexity (convoluted, "spaghetti" arguments)
+        density = nx.density(G)
+        parsimony_score = 1.0 - density
+
+        # Our functional proxy for f_GNN is a weighted average of these heuristics
+        final_score = 0.5 * orphan_score + 0.3 * coherence_score + 0.2 * parsimony_score
+        sub_scores = {'orphan_score': orphan_score, 'coherence_score': coherence_score, 'parsimony_score': parsimony_score}
+
+        return CriticResult(
+            score=final_score, confidence=0.9,
+            explanation=f"Logic score based on graph structure: {final_score:.3f}",
+            evidence={'num_orphans': len(orphaned_nodes), 'avg_out_degree': avg_out_degree, 'density': density},
+            sub_scores=sub_scores
+        )
 ```
 
 #### Roadmap to a GNN-based Logic Critic
@@ -179,7 +321,41 @@ This formula is a simple linear combination of a reward and a penalty:
 
 ```python
 class NoveltyParsimonyCritic(BaseCritic):
-    # ... (implementation remains the same as in the original file) ...
+    def __init__(self, weight: float, alpha: float, beta: float):
+        super().__init__(CriticType.NOVELTY, weight)
+        self.alpha = alpha
+        self.beta = beta
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        sno_population = context.get('sno_population', [])
+        population_embeddings = [s.hypothesis_embedding for s in sno_population if s.sno_id != sno.sno_id and s.hypothesis_embedding is not None]
+        
+        if not population_embeddings or sno.hypothesis_embedding is None:
+            novelty_term, min_dist_str = self.alpha * 1.0, "N/A (first SNO)"
+        else:
+            # Corresponds to the ||H - H_i||₂ part of the formula
+            distances = [np.linalg.norm(sno.hypothesis_embedding - h) for h in population_embeddings]
+            # Corresponds to the min_i part of the formula
+            min_distance = min(distances)
+            # Corresponds to the α * ... part, with normalization
+            novelty_term = self.alpha * (min_distance / 2.0)
+            min_dist_str = f"{min_distance:.3f}"
+
+        G = sno.reasoning_graph
+        # Corresponds to the |E_G|/|V| part of the formula
+        complexity_ratio = G.number_of_edges() / G.number_of_nodes() if G.number_of_nodes() > 0 else 0
+        # Corresponds to the β * ... part of the formula
+        parsimony_penalty = self.beta * complexity_ratio
+
+        raw_score = novelty_term - parsimony_penalty
+        final_score = np.clip(raw_score, 0, 1) # Clamp to [0, 1]
+
+        explanation = f"Score({final_score:.3f}) = Novelty({novelty_term:.3f}) - Parsimony({parsimony_penalty:.3f}). Min dist: {min_dist_str}."
+        return CriticResult(
+            score=final_score, confidence=0.9, explanation=explanation,
+            evidence={'novelty_term': novelty_term, 'parsimony_penalty': parsimony_penalty},
+            sub_scores={'novelty_term': novelty_term, 'parsimony_penalty': parsimony_penalty}
+        )
 ```
 
 ## Contextual Evaluation: Dynamic Weight Adjustment
@@ -187,8 +363,65 @@ class NoveltyParsimonyCritic(BaseCritic):
 A key feature of CNS 2.0 is its adaptability. By adjusting the weights $w_i$ in the main reward formula, we can change the system's "priorities." For example, during an initial "exploration" phase, we might heavily weight novelty. During a later "verification" phase, we would shift the weights to prioritize grounding and logic.
 
 ### Scenario: Shifting from Exploration to Verification
-(The example code and explanation for this section remain the same as they are already clear and effective.)
+
+Let's demonstrate this with a concrete example. We will create a sample SNO that is highly novel but has mediocre logic and grounding. We will then evaluate it under two different weighting schemes: one that prioritizes novelty (Exploration Mode) and one that prioritizes rigor (Verification Mode).
+
 ```python
-# ... (mock critic setup and evaluation scenarios) ...
+# --- Setup: Create a sample SNO and a pipeline ---
+# This code assumes the classes from previous chapters are available.
+
+# 1. Create a mock SNO. Let's imagine this is a very new, slightly underdeveloped idea.
+#    We will manually set the scores each critic *would* produce for demonstration.
+class MockCritic(BaseCritic):
+    def __init__(self, critic_type, weight, mock_score):
+        super().__init__(critic_type, weight)
+        self.mock_score = mock_score
+    def evaluate(self, sno, context=None):
+        return CriticResult(score=self.mock_score, confidence=1.0, explanation="Mocked result", evidence={}, sub_scores={})
+
+# Our SNO is very novel (0.9) but has weak logic (0.4) and grounding (0.5)
+mock_novelty_critic = MockCritic(CriticType.NOVELTY, 1.0, 0.9)
+mock_logic_critic = MockCritic(CriticType.LOGIC, 1.0, 0.4)
+mock_grounding_critic = MockCritic(CriticType.GROUNDING, 1.0, 0.5)
+
+# Create the pipeline
+pipeline = CriticPipeline()
+pipeline.add_critic(mock_novelty_critic)
+pipeline.add_critic(mock_logic_critic)
+pipeline.add_critic(mock_grounding_critic)
+
+# A dummy SNO object to pass to the pipeline
+sample_sno = StructuredNarrativeObject(central_hypothesis="A sample SNO for testing.")
+
+# --- Phase 1: Exploration Mode ---
+# We want to find new ideas, so we heavily weight novelty.
+print("--- EVALUATING IN EXPLORATION MODE ---")
+pipeline.adjust_weights({
+    CriticType.NOVELTY: 0.8,   # High weight for new ideas
+    CriticType.LOGIC: 0.1,
+    CriticType.GROUNDING: 0.1
+})
+exploration_result = pipeline.evaluate_sno(sample_sno, {})
+print(f"Weights: {exploration_result['weights_used']}")
+print(f"Novelty Score: {mock_novelty_critic.mock_score}, Logic Score: {mock_logic_critic.mock_score}, Grounding Score: {mock_grounding_critic.mock_score}")
+print(f"Final Trust Score (Exploration): {exploration_result['trust_score']:.4f}\n")
+# Expected: (0.9*0.8 + 0.4*0.1 + 0.5*0.1) / (0.8+0.1+0.1) = 0.81
+
+# --- Phase 2: Verification Mode ---
+# Now, we shift to rigorously checking our ideas.
+print("--- EVALUATING IN VERIFICATION MODE ---")
+pipeline.adjust_weights({
+    CriticType.NOVELTY: 0.1,    # Low weight for novelty
+    CriticType.LOGIC: 0.45,     # High weight for logical soundness
+    CriticType.GROUNDING: 0.45  # High weight for evidential support
+})
+verification_result = pipeline.evaluate_sno(sample_sno, {})
+print(f"Weights: {verification_result['weights_used']}")
+print(f"Novelty Score: {mock_novelty_critic.mock_score}, Logic Score: {mock_logic_critic.mock_score}, Grounding Score: {mock_grounding_critic.mock_score}")
+print(f"Final Trust Score (Verification): {verification_result['trust_score']:.4f}\n")
+# Expected: (0.9*0.1 + 0.4*0.45 + 0.5*0.45) / (0.1+0.45+0.45) = 0.495
 ```
+
+As the output clearly shows, the **same SNO** is considered high-trust (`0.81`) in exploration mode but fails to meet the quality bar (`0.495`) in verification mode. This ability to programmatically shift the system's "values" is not just a theoretical feature but a practical tool for guiding the knowledge discovery process, making CNS 2.0 a powerful and flexible framework.
+
 This ability to programmatically shift the system's "values" is a practical tool for guiding the knowledge discovery process, making CNS 2.0 a powerful and flexible framework.

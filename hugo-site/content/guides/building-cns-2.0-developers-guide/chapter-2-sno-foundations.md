@@ -282,14 +282,93 @@ class StructuredNarrativeObject:
 ```
 
 ## Building a Reasoning Graph: A Worked Example
-The reasoning graph $G$ gives an SNO its explanatory power. Let's walk through a practical example of analyzing conflicting reports on a new "QuantumCore" battery.
-(This section remains the same as it is already clear and effective.)
+
+The reasoning graph $G$ is what gives an SNO its explanatory power. Let's walk through a practical example. Imagine we are analyzing conflicting reports on a new "QuantumCore" battery technology.
+
+**Our central hypothesis:** "QuantumCore batteries represent a viable next-generation energy solution."
+
+Let's build the SNO for this.
+
+```python
+# 1. Initialize the SNO
+sno = StructuredNarrativeObject(
+    central_hypothesis="QuantumCore batteries represent a viable next-generation energy solution."
+)
+
+# 2. Add claims from our research sources
+premise1_id = sno.add_claim(
+    "The technology offers a 10x increase in energy density over lithium-ion.",
+    claim_type="premise"
+)
+premise2_id = sno.add_claim(
+    "Manufacturing scalability has been demonstrated in lab environments.",
+    claim_type="premise"
+)
+counter_claim_id = sno.add_claim(
+    "The battery's lifespan degrades by 50% after only 100 charge cycles.",
+    claim_type="counter-argument"
+)
+rebuttal_id = sno.add_claim(
+    "New electrolyte solutions are mitigating the lifespan degradation issue.",
+    claim_type="rebuttal"
+)
+
+# 3. Connect the claims with reasoning edges
+# The premises support the main hypothesis
+sno.add_reasoning_edge(premise1_id, "root", RelationType.SUPPORTS)
+sno.add_reasoning_edge(premise2_id, "root", RelationType.SUPPORTS)
+
+# The counter-claim contradicts the main hypothesis
+sno.add_reasoning_edge(counter_claim_id, "root", RelationType.CONTRADICTS, strength=0.8)
+
+# The rebuttal weakens the counter-claim
+sno.add_reasoning_edge(rebuttal_id, counter_claim_id, RelationType.WEAKENS, strength=0.7)
+
+# 4. Check the graph's structure
+print("Reasoning Graph Statistics:")
+print(json.dumps(sno.get_graph_statistics(), indent=2))
+```
+
+This example creates a small but rich argumentative structure. It captures not just supporting points but also acknowledges and rebuts a key weakness, making the SNO a much more robust representation of the narrative than a simple statement.
 
 ## SNO Serialization and Production-Level Persistence
 For any real-world system, you must be able to save and load your data. The `to_dict()` and `from_dict()` methods are the engine for this.
 
 ### The Basic Mechanism: `to_dict()` and `from_dict()`
-(This section remains largely the same.)
+
+A successful persistence strategy hinges on robust serialization. Here's a deeper look at how our methods work:
+-   **`to_dict()`**: This method acts as a "dehydrator," carefully converting the SNO instance into a JSON-compatible dictionary. It systematically handles complex types:
+    -   `hypothesis_embedding`: The NumPy array, which is not JSON-native, is converted to a standard Python list.
+    -   `reasoning_graph`: We use NetworkX's built-in `node_link_data` function, which produces a clean, JSON-compliant representation of the graph. Crucially, we then iterate through its output to explicitly convert our `ClaimNode` and `ReasoningEdge` dataclass objects into dictionaries using `asdict`.
+    -   `datetime`: The `created_at` timestamp is converted to a standard ISO 8601 string, a universal format for dates and times.
+-   **`from_dict()`**: This class method is the "rehydrator." It takes a dictionary and meticulously reconstructs the live SNO object. It converts the embedding list back to a NumPy array, re-instantiates the `datetime` object, and carefully rebuilds the graph, re-creating the `ClaimNode` and `ReasoningEdge` dataclasses from their dictionary representations. This ensures all methods and type-safety of the original object are restored.
+
+The code below demonstrates this round-trip process:
+```python
+# Assume 'sno' is the object from the previous example
+# and it has an embedding computed.
+
+# --- Saving the SNO ---
+sno_dict = sno.to_dict()
+
+# Save to a JSON file
+with open("sno_quantum_core.json", "w") as f:
+    json.dump(sno_dict, f, indent=2)
+
+print("\nSNO saved to sno_quantum_core.json")
+
+# --- Loading the SNO ---
+with open("sno_quantum_core.json", "r") as f:
+    loaded_sno_dict = json.load(f)
+
+# Reconstruct the SNO object
+loaded_sno = StructuredNarrativeObject.from_dict(loaded_sno_dict)
+
+print(f"\nSuccessfully loaded SNO: {loaded_sno.sno_id}")
+print(f"Original Trust Score: {sno.trust_score}, Loaded Trust Score: {loaded_sno.trust_score}")
+print("Loaded Graph Statistics:")
+print(json.dumps(loaded_sno.get_graph_statistics(), indent=2))
+```
 
 ### Production Challenge 1: Scalability and Concurrency
 
