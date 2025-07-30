@@ -136,6 +136,13 @@ class CriticPipeline:
 > $$ \text{Score}_G = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} p(v|e) $$
 > Here, $p(v|e)$ is the plausibility score of a claim `v` given evidence `e`. We implement this using a pre-trained Natural Language Inference (NLI) model, where the "entailment" probability serves as $p(v|e)$.
 
+#### Why Use Natural Language Inference?
+Natural Language Inference is the task of determining whether a "hypothesis" sentence is true (entailment), false (contradiction), or undetermined (neutral) given a "premise" sentence. This maps perfectly to our use case:
+-   **Premise**: A piece of evidence (`e`).
+-   **Hypothesis**: A claim from the reasoning graph (`v`).
+
+By feeding a (evidence, claim) pair to an NLI model, the model's predicted probability for the "entailment" class gives us a direct, well-calibrated measure of $p(v|e)$—how likely the evidence is to support the claim. This is a far more robust approach than simple keyword matching or vector similarity.
+
 ```python
 class GroundingCritic(BaseCritic):
     def __init__(self, weight: float, nli_model=None, nli_tokenizer=None, nli_model_name: str = "microsoft/deberta-large-mnli"):
@@ -183,6 +190,15 @@ class GroundingCritic(BaseCritic):
 > The Logic Critic assesses the structural coherence of the reasoning graph $G$. The paper specifies this as:
 > $$ \text{Score}_L = f_{\text{GNN}}(G; \theta) $$
 > Training a full Graph Neural Network (GNN) is a research project. For our implementation, we create a *functional proxy* for $f_{\text{GNN}}$ that uses graph-theoretic features to approximate logical coherence. This is a robust, explainable starting point.
+
+#### Interpreting the Logic Heuristics
+Our heuristic-based `LogicCritic` uses several graph metrics to assess structural quality. Here's what they represent:
+
+-   **Orphan Score**: This checks for "orphaned" claims—nodes that have no incoming links (i.e., they are not supported by any other claim). A good argument should have its premises well-supported. The `root` node is exempt as it represents the central hypothesis. A high number of orphans suggests a collection of disconnected assertions rather than a coherent argument, so it lowers the score.
+-   **Coherence Score**: This is based on the average "out-degree" (the number of outgoing links) of the nodes. A very high average out-degree might indicate a single claim is being used to justify too many different points, potentially making the argument less focused. This score rewards more streamlined reasoning.
+-   **Parsimony Score**: This is based on graph `density`, which measures how many of the possible connections between nodes actually exist. A very dense graph can be a sign of a convoluted, "spaghetti-like" argument where everything is connected to everything else. This score rewards parsimony—a simple, clear structure, which is often a hallmark of strong reasoning.
+
+These heuristics provide a transparent and computationally cheap way to approximate the logical health of a narrative.
 
 ```python
 class LogicCritic(BaseCritic):
@@ -232,6 +248,11 @@ This GNN would be able to learn much more nuanced patterns of logical fallacies 
 > This critic balances innovation against complexity using the formula:
 > $$ \text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|} $$
 > The first term rewards novelty (distance to the nearest SNO), and the second penalizes graph complexity. Our implementation calculates this raw score and then clamps it to the [0, 1] range.
+
+#### A Note on Normalization and Clamping
+The raw score from this formula can be outside the standard `[0, 1]` range required by our system. We handle this in two ways:
+1.  **Distance Normalization**: The raw Euclidean distance `min_distance` between embeddings doesn't have a fixed upper bound. We normalize it by dividing by `2.0`, as the maximum possible distance between two normalized vectors is 2. This brings the novelty term into a more predictable `[0, alpha]` range.
+2.  **Clamping**: After calculating the final `raw_score`, we use `np.clip(raw_score, 0, 1)`. This is a hard clamp that forces the final score into the `[0, 1]` interval. Any value below 0 becomes 0, and any value above 1 becomes 1. This ensures the critic's output is always a valid score that can be used in the final weighted average.
 
 ```python
 class NoveltyParsimonyCritic(BaseCritic):
