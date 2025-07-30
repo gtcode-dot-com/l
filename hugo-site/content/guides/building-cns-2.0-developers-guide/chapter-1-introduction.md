@@ -14,7 +14,7 @@ weight: 1
 
 Complex domains—from scientific research to intelligence analysis—require synthesizing incomplete, uncertain, and contradictory information into coherent knowledge. Despite AI's success in pattern recognition, the cognitive challenge of reconciling conflicting hypotheses remains unsolved. This challenge stems from the inherent complexity of argumentation, where claims exist within intricate webs of evidence and reasoning that resist simple computational approaches.
 
-**Chiral Narrative Synthesis (CNS) 2.0** addresses this fundamental challenge by operationalizing knowledge synthesis. It treats hypotheses as mathematically evaluable data structures rather than simple text, moving beyond conceptual models to a practical, implementable engineering blueprint.
+This guide provides the practical engineering blueprint for **Chiral Narrative Synthesis (CNS) 2.0**, translating the formal research paper into a working system. We will build, step-by-step, a framework that operationalizes knowledge synthesis by treating hypotheses as mathematically evaluable data structures rather than simple text.
 
 ## Who Is This Guide For?
 
@@ -50,9 +50,13 @@ This diagram illustrates how raw information is transformed into structured know
 4.  **Generative Synthesis:** The selected pair is passed to an LLM, which is prompted to perform dialectical reasoning and generate a new, higher-order SNO that resolves the conflict.
 5.  **Critic Evaluation:** The newly synthesized SNO is rigorously evaluated by the multi-component critic pipeline. If its `Trust Score` is high enough, it is added to the population, representing new knowledge. If not, it is archived.
 
-## Foundational Data Structures
+## Setting Up the CNS 2.0 Environment
 
-Before we dive into the full system, let's define two simple but crucial data structures that will be used throughout our implementation: `RelationType` and `EvidenceItem`. These form the building blocks of our reasoning graphs and evidence sets.
+We will now establish the Python environment for our implementation. We'll start with the foundational data structures, then handle imports, and finally define a centralized configuration class to manage all system parameters.
+
+### Foundational Data Structures
+
+Before we build the full `StructuredNarrativeObject` in the next chapter, we need two simple but crucial building blocks: `RelationType` and `EvidenceItem`. These `dataclasses` ensure our code is readable, type-safe, and consistent.
 
 ```python
 # --- Standard Library Imports ---
@@ -62,7 +66,11 @@ from dataclasses import dataclass, field
 import hashlib
 
 class RelationType(Enum):
-    """Enumeration of logical relationship types in reasoning graphs for clarity and consistency."""
+    """
+    Enumeration of logical relationship types in reasoning graphs.
+    This corresponds to the relation set R in the paper's definition
+    of a reasoning graph G = (V, E_G) where E_G is a set of typed edges.
+    """
     SUPPORTS = "supports"
     CONTRADICTS = "contradicts"
     IMPLIES = "implies"
@@ -72,7 +80,11 @@ class RelationType(Enum):
 
 @dataclass
 class EvidenceItem:
-    """Represents a piece of evidence with source tracking and a content hash for integrity."""
+    """
+    Represents a piece of evidence, corresponding to an element e_i in
+    the Evidence Set E from the paper. Includes source tracking and a
+    content hash for integrity.
+    """
     content: str
     source_id: str  # e.g., a DOI, URL, or document ID
     doc_hash: Optional[str] = None
@@ -82,20 +94,14 @@ class EvidenceItem:
         """Generate a content hash after the object is initialized."""
         if self.doc_hash is None:
             self.doc_hash = hashlib.sha256(self.content.encode()).hexdigest()[:16]
+
 ```
-These classes ensure our code is readable, type-safe, and consistent when representing the core components of a narrative.
 
-## Setting Up the CNS 2.0 Environment
+### Core System Imports
 
-Now, let's establish the broader Python environment for our implementation. This includes all necessary imports and a centralized configuration class to manage system parameters.
+Next, we set up the necessary imports for the entire system. A research-grade implementation relies on semantic understanding, which requires libraries like `transformers` and `sentence-transformers`. We include a check to ensure these are installed, allowing the system to run in a simplified, data-structure-only mode if they are missing.
 
 ```python
-"""
-CNS 2.0 Implementation Foundation
-================================
-Core imports and basic setup for Chiral Narrative Synthesis
-"""
-
 # --- Standard Library Imports ---
 import json
 from typing import Dict, List, Tuple, Set, Union
@@ -105,7 +111,7 @@ from abc import ABC, abstractmethod
 import numpy as np
 import networkx as nx
 
-# --- Machine Learning and NLP Libraries (Research-Grade Implementation) ---
+# --- Machine Learning and NLP Libraries ---
 try:
     import torch
     import transformers
@@ -116,34 +122,34 @@ except ImportError:
     print("WARNING: Key NLP libraries not found. CNS 2.0 will run in a simplified, data-structure-only mode.")
     print("For full research-grade functionality, install with: pip install torch transformers sentence-transformers")
 
-# A research-grade implementation relies on semantic understanding, which requires these libraries.
 if not HAS_TRANSFORMERS:
     print("Proceeding in simplified mode. Any operations requiring semantic embeddings will fail.")
+```
 
+### System Configuration
+
+A robust system requires a centralized place to manage key parameters. The `CNSConfig` class serves this purpose. Each parameter is directly tied to a core concept in the CNS 2.0 research paper, allowing us to easily tune the system's behavior.
+
+```python
 class CNSConfig:
     """
     Configuration class for all CNS 2.0 system parameters.
     Centralizing configuration makes the system easier to tune and manage. Each parameter
-    plays a critical role in the system's behavior.
+    maps directly to a concept in the formal research paper.
     """
     
     def __init__(self):
         # --- Embedding Model ---
-        # The dimension of the vectors used to represent text semantically.
+        # Paper Reference: Section 2.1, Hypothesis Embedding H ∈ R^d
+        # The dimension 'd' of the vectors used to represent text semantically.
         # This MUST match the output dimension of the chosen embedding model.
-        # For example, 'all-MiniLM-L6-v2' produces 384-dim vectors, while
-        # 'all-mpnet-base-v2' produces 768-dim vectors. Mismatching this
-        # will cause matrix operations to fail.
-        self.embedding_dim = 384 # Changed to match all-MiniLM-L6-v2
+        # For 'all-MiniLM-L6-v2', this is 384. For 'all-mpnet-base-v2', it's 768.
+        self.embedding_dim = 384
         
         # --- Critic Pipeline Weights ---
-        # These weights define the system's "values" or priorities. They control the
-        # balance between evidential support (grounding), logical coherence (logic), and
-        # originality (novelty).
-        # - High 'grounding' weight: The system prioritizes claims backed by evidence.
-        # - High 'logic' weight: The system prioritizes well-structured, coherent arguments.
-        # - High 'novelty' weight: The system prioritizes new, unexplored ideas.
-        # These can be adjusted dynamically based on the system's current goal (e.g., exploration vs. verification).
+        # Paper Reference: Section 2.2, Equation 1: Reward(S) = Σ w_i * Score_i(S)
+        # These are the weights 'w_i' that define the system's "values". They control
+        # the balance between evidential support (grounding), logical coherence, and originality.
         self.critic_weights = {
             'grounding': 0.4,
             'logic': 0.3,
@@ -151,34 +157,30 @@ class CNSConfig:
         }
         
         # --- Novelty-Parsimony Critic Parameters ---
-        # These values fine-tune the behavior of the Novelty-Parsimony critic.
-        # 'alpha': Scales the reward for novelty. Higher alpha encourages more "out-of-the-box" ideas.
-        # 'beta': Scales the penalty for complexity (number of claims/edges). Higher beta encourages
-        #         simpler, more parsimonious arguments (Occam's Razor).
+        # Paper Reference: Section 2.2, Score_N formula
+        # These are the 'alpha' and 'beta' hyperparameters in the Novelty-Parsimony score.
+        # alpha: Scales the reward for novelty (distance from other SNOs).
+        # beta: Scales the penalty for complexity (graph size), encouraging Occam's Razor.
         self.novelty_alpha = 0.7
         self.novelty_beta = 0.3
 
         # --- Synthesis Trigger Thresholds ---
+        # Paper Reference: Section 3.2, "Synthesis Trigger"
         # These thresholds act as a gatekeeper for the expensive synthesis process.
-        # An SNO pair is only considered for synthesis if BOTH thresholds are met.
-        # 'chirality': Minimum opposition score (0-1). Higher values mean only strongly
-        #              contradictory narratives will be synthesized.
-        # 'entanglement': Minimum evidence overlap (0-1). Higher values mean the system only
-        #                 focuses on conflicts where narratives argue over the same facts.
-        # Setting these correctly is key to balancing computational cost and discovery.
+        # An SNO pair is only considered if BOTH its Chirality and Entanglement scores
+        # exceed these minimums. This is key to balancing cost and discovery.
         self.synthesis_thresholds = {
             'chirality': 0.7,
             'entanglement': 0.5
         }
         
         # --- Model Identifiers ---
-        # Specifies which pre-trained models from Hugging Face to download and use.
-        # This allows for easy experimentation by swapping models.
-        # - 'embedding': A sentence-transformer model for creating semantic vectors.
-        # - 'nli': A Natural Language Inference model for the Grounding Critic. Must be trained on MNLI.
-        # - 'synthesis': A generative instruction-tuned model for the Synthesis Engine.
+        # These are the concrete implementations for the abstract components in the paper.
+        # - 'embedding': Creates the Hypothesis Embedding 'H'.
+        # - 'nli': The Natural Language Inference model for the Grounding Critic.
+        # - 'synthesis': The generative instruction-tuned model for the Synthesis Engine.
         self.models = {
-            'embedding': "sentence-transformers/all-MiniLM-L6-v2", # More specific name
+            'embedding': "sentence-transformers/all-MiniLM-L6-v2",
             'nli': "roberta-large-mnli",
             'synthesis': "mistralai/Mistral-7B-Instruct-v0.1"
         }
@@ -193,12 +195,19 @@ class CNSConfig:
             'synthesis_thresholds': self.synthesis_thresholds,
             'models': self.models
         }
+```
 
-# Create a global configuration instance to be used throughout the system.
+### Initializing the Environment
+
+Finally, we create a global configuration instance to be used throughout the system and print it to confirm our setup.
+
+```python
+# Create a global configuration instance.
 cns_config = CNSConfig()
 
 print("CNS 2.0 Foundation Environment Ready")
 print("Current Configuration:")
 print(json.dumps(cns_config.to_dict(), indent=2))
 ```
-This restructured setup provides a clearer, step-by-step introduction to the foundational components of the CNS 2.0 system.
+
+This restructured setup provides a clearer, step-by-step introduction to the foundational components of the CNS 2.0 system, with explicit links back to the guiding research paper.
