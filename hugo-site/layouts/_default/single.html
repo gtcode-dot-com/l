@@ -19,7 +19,7 @@
             <div class="progress-bar">
                 <div class="progress-fill" style="width: {{ mul .Weight 16.67 }}%"></div>
             </div>
-            <span class="progress-text">{{ .Weight }}/6 chapters completed</span>
+            <span class="progress-text">{{ .Weight }}/7 chapters completed</span>
         </div>
     </header>
 
@@ -108,6 +108,13 @@
                     <li>Advanced synthesis engine</li>
                     <li>Production deployment configuration</li>
                     <li>Performance optimization and monitoring</li>
+                </ul>
+            {{ else if eq .Weight 7 }}
+                <p>Evolving the CNS 2.0 system from prompt engineering to programmatic optimization using DSPy.</p>
+                <ul>
+                    <li>Refactoring ingestion with DSPy Signatures</li>
+                    <li>Building optimizable DSPy Modules</li>
+                    <li>Metric-driven development and compilation</li>
                 </ul>
             {{ end }}
         </div>
