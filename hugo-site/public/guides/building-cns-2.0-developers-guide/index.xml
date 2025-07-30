@@ -1,63 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Building CNS 2.0: A Developer's Guide</title><link>https://gtcode.com/guides/building-cns-2.0-developers-guide/</link><description>Recent content on Building CNS 2.0: A Developer's Guide</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://gtcode.com/guides/building-cns-2.0-developers-guide/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Introduction to CNS 2.0</title><link>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-1-introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-1-introduction/</guid><description>&lt;div class="guide-header">
- &lt;a href="https://gtcode.com/" class="home-link">← Back to GTCode.com Homepage&lt;/a>
-&lt;/div>
-&lt;h1 id="chapter-1-introduction-to-cns-20">Chapter 1: Introduction to CNS 2.0&lt;/h1>
-&lt;h2 id="the-challenge-of-conflicting-information">The Challenge of Conflicting Information&lt;/h2>
-&lt;p>In our information-rich world, one of the most pressing challenges is synthesizing knowledge from conflicting, incomplete, and contradictory sources. Whether analyzing scientific research, intelligence reports, or complex domain knowledge, we constantly encounter situations where:&lt;/p>
-&lt;ul>
-&lt;li>Multiple credible sources present contradictory claims&lt;/li>
-&lt;li>Evidence supports competing hypotheses&lt;/li>
-&lt;li>Traditional approaches fail to reconcile differences meaningfully&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Chiral Narrative Synthesis (CNS) 2.0&lt;/strong> addresses this fundamental challenge through a computational framework that treats hypotheses as mathematically evaluable data structures rather than simple text.&lt;/p></description></item><item><title>Chapter 2: SNO Foundations</title><link>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/</guid><description>&lt;div class="guide-header">
- &lt;a href="https://gtcode.com/" class="home-link">← Back to GTCode.com Homepage&lt;/a>
-&lt;/div>
-&lt;h1 id="chapter-2-sno-foundations">Chapter 2: SNO Foundations&lt;/h1>
-&lt;h2 id="understanding-structured-narrative-objects">Understanding Structured Narrative Objects&lt;/h2>
-&lt;p>Structured Narrative Objects (SNOs) are the heart of CNS 2.0. Unlike simple vector representations that lose critical structural information, SNOs preserve the full richness of argumentative structure while maintaining computational tractability.&lt;/p>
-&lt;p>An SNO is formally defined as a 4-tuple: &lt;strong>𝒮 = (H, G, ℰ, T)&lt;/strong> where:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>H&lt;/strong>: Hypothesis Embedding (dense vector)&lt;/li>
-&lt;li>&lt;strong>G&lt;/strong>: Reasoning Graph (directed acyclic graph)&lt;/li>
-&lt;li>&lt;strong>ℰ&lt;/strong>: Evidence Set (grounding data sources)&lt;/li>
-&lt;li>&lt;strong>T&lt;/strong>: Trust Score (derived confidence measure)&lt;/li>
-&lt;/ul>
-&lt;h3 id="from-paper-to-code-the-mathematical-foundation">From Paper to Code: The Mathematical Foundation&lt;/h3>
-&lt;p>First, let&amp;rsquo;s look at the formal definition from the paper. Section 2.1 defines a Structured Narrative Object as a mathematical construct.&lt;/p></description></item><item><title>Chapter 3: Multi-Component Critic Pipeline</title><link>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/</guid><description>&lt;div class="guide-header">
- &lt;a href="https://gtcode.com/" class="home-link">← Back to GTCode.com Homepage&lt;/a>
-&lt;/div>
-&lt;h1 id="chapter-3-multi-component-critic-pipeline">Chapter 3: Multi-Component Critic Pipeline&lt;/h1>
-&lt;h2 id="the-problem-with-black-box-evaluation">The Problem with Black-Box Evaluation&lt;/h2>
-&lt;p>Traditional knowledge synthesis systems often rely on opaque &amp;ldquo;oracle&amp;rdquo; critics that provide scores without explanation. CNS 2.0 takes a fundamentally different approach by decomposing evaluation into transparent, specialized components that each assess distinct aspects of narrative quality.&lt;/p>
-&lt;p>The Multi-Component Critic Pipeline consists of three specialized critics:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Grounding Critic&lt;/strong> - Evaluates evidential support&lt;/li>
-&lt;li>&lt;strong>Logic Critic&lt;/strong> - Assesses structural coherence&lt;/li>
-&lt;li>&lt;strong>Novelty-Parsimony Critic&lt;/strong> - Balances innovation against complexity&lt;/li>
-&lt;/ol>
-&lt;h3 id="from-paper-to-code-the-mathematical-foundation">From Paper to Code: The Mathematical Foundation&lt;/h3>
-&lt;p>The power of this pipeline comes from its transparent, component-based approach to calculating a final reward or trust score. The paper formalizes this in Section 2.2 with Equation (1).&lt;/p></description></item><item><title>Chapter 4: Generative Synthesis Engine</title><link>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/</guid><description>&lt;div class="guide-header">
- &lt;a href="https://gtcode.com/" class="home-link">← Back to GTCode.com Homepage&lt;/a>
-&lt;/div>
-&lt;h1 id="chapter-4-generative-synthesis-engine">Chapter 4: Generative Synthesis Engine&lt;/h1>
-&lt;h2 id="beyond-vector-averaging-true-dialectical-synthesis">Beyond Vector Averaging: True Dialectical Synthesis&lt;/h2>
-&lt;p>Traditional knowledge synthesis approaches often resort to mechanical blending - averaging vectors, voting on claims, or simple concatenation. CNS 2.0&amp;rsquo;s Generative Synthesis Engine takes a fundamentally different approach: it models synthesis as an act of creative, reasoned generation through dialectical argumentation.&lt;/p>
-&lt;p>The engine operates through four key stages:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Chiral Pair Selection&lt;/strong> - Identifying productive conflicts&lt;/li>
-&lt;li>&lt;strong>Dialectical Prompt Construction&lt;/strong> - Preserving argumentative structure&lt;/li>
-&lt;li>&lt;strong>Generative Synthesis&lt;/strong> - LLM-powered reasoning&lt;/li>
-&lt;li>&lt;strong>Candidate Evaluation&lt;/strong> - Quality assessment and refinement&lt;/li>
-&lt;/ol>
-&lt;p>Let&amp;rsquo;s implement each component to create a system capable of genuine knowledge synthesis.&lt;/p></description></item><item><title>Chapter 5: System Integration</title><link>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/</guid><description>&lt;div class="guide-header">
- &lt;a href="https://gtcode.com/" class="home-link">← Back to GTCode.com Homepage&lt;/a>
-&lt;/div>
-&lt;h1 id="chapter-5-system-integration">Chapter 5: System Integration&lt;/h1>
-&lt;h2 id="building-the-complete-cns-20-system">Building the Complete CNS 2.0 System&lt;/h2>
-&lt;p>Now that we&amp;rsquo;ve implemented the core components—Structured Narrative Objects, the Multi-Component Critic Pipeline, and the Generative Synthesis Engine—it&amp;rsquo;s time to integrate them into a cohesive system. This chapter focuses on the operational workflow, system dynamics, and the critical narrative ingestion pipeline.&lt;/p>
-&lt;p>The complete CNS 2.0 system operates as a continuous loop, processing new information, evaluating conflicts, and generating synthetic knowledge through dialectical reasoning.&lt;/p></description></item><item><title>Chapter 6: Complete Implementation</title><link>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gtcode.com/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/</guid><description>&lt;div class="guide-header">
- &lt;a href="https://gtcode.com/" class="home-link">← Back to GTCode.com Homepage&lt;/a>
-&lt;/div>
-&lt;h1 id="chapter-6-complete-implementation">Chapter 6: Complete Implementation&lt;/h1>
-&lt;h2 id="bringing-it-all-together">Bringing It All Together&lt;/h2>
-&lt;p>This chapter builds upon the functional critic and exploration primitives developed in Chapters 3 and 4 to create a fully integrated, end-to-end system. We&amp;rsquo;ve built the foundational components of CNS 2.0: Structured Narrative Objects, the Multi-Component Critic Pipeline, the Generative Synthesis Engine, and system integration framework. Now it&amp;rsquo;s time to complete the implementation with full synthesis capabilities and prepare the system for production deployment.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building CNS 2.0: A Developer&#39;s Guide</title>
+    <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/</link>
+    <description>Recent content on Building CNS 2.0: A Developer&#39;s Guide</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/guides/building-cns-2.0-developers-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chapter 1: Introduction to CNS 2.0</title>
+      <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-1-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-1-introduction/</guid>
+      <description>&lt;div class=&#34;guide-header&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/&#34; class=&#34;home-link&#34;&gt;← Back to GTCode.com Homepage&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;chapter-1-introduction-to-cns-20&#34;&gt;Chapter 1: Introduction to CNS 2.0&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-challenge-of-conflicting-information&#34;&gt;The Challenge of Conflicting Information&lt;/h2&gt;&#xA;&lt;p&gt;In our information-rich world, one of the most pressing challenges is synthesizing knowledge from conflicting, incomplete, and contradictory sources. Whether analyzing scientific research, intelligence reports, or complex domain knowledge, we constantly encounter situations where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Multiple credible sources present contradictory claims&lt;/li&gt;&#xA;&lt;li&gt;Evidence supports competing hypotheses&lt;/li&gt;&#xA;&lt;li&gt;Traditional approaches fail to reconcile differences meaningfully&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Chiral Narrative Synthesis (CNS) 2.0&lt;/strong&gt; addresses this fundamental challenge through a computational framework that treats hypotheses as mathematically evaluable data structures rather than simple text.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chapter 2: SNO Foundations</title>
+      <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/</guid>
+      <description>&lt;div class=&#34;guide-header&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/&#34; class=&#34;home-link&#34;&gt;← Back to GTCode.com Homepage&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;chapter-2-sno-foundations&#34;&gt;Chapter 2: SNO Foundations&lt;/h1&gt;&#xA;&lt;h2 id=&#34;understanding-structured-narrative-objects&#34;&gt;Understanding Structured Narrative Objects&lt;/h2&gt;&#xA;&lt;p&gt;Structured Narrative Objects (SNOs) are the heart of CNS 2.0. Unlike simple vector representations that lose critical structural information, SNOs preserve the full richness of argumentative structure while maintaining computational tractability.&lt;/p&gt;&#xA;&lt;p&gt;An SNO is formally defined as a 4-tuple: &lt;strong&gt;𝒮 = (H, G, ℰ, T)&lt;/strong&gt; where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;H&lt;/strong&gt;: Hypothesis Embedding (dense vector)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;G&lt;/strong&gt;: Reasoning Graph (directed acyclic graph)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;ℰ&lt;/strong&gt;: Evidence Set (grounding data sources)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;T&lt;/strong&gt;: Trust Score (derived confidence measure)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;from-paper-to-code-the-mathematical-foundation&#34;&gt;From Paper to Code: The Mathematical Foundation&lt;/h3&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s look at the formal definition from the paper. Section 2.1 defines a Structured Narrative Object as a mathematical construct.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chapter 3: Multi-Component Critic Pipeline</title>
+      <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/</guid>
+      <description>&lt;div class=&#34;guide-header&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/&#34; class=&#34;home-link&#34;&gt;← Back to GTCode.com Homepage&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;chapter-3-multi-component-critic-pipeline&#34;&gt;Chapter 3: Multi-Component Critic Pipeline&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-problem-with-black-box-evaluation&#34;&gt;The Problem with Black-Box Evaluation&lt;/h2&gt;&#xA;&lt;p&gt;Traditional knowledge synthesis systems often rely on opaque &amp;ldquo;oracle&amp;rdquo; critics that provide scores without explanation. CNS 2.0 takes a fundamentally different approach by decomposing evaluation into transparent, specialized components that each assess distinct aspects of narrative quality.&lt;/p&gt;&#xA;&lt;p&gt;The Multi-Component Critic Pipeline consists of three specialized critics:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Grounding Critic&lt;/strong&gt; - Evaluates evidential support&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Logic Critic&lt;/strong&gt; - Assesses structural coherence&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Novelty-Parsimony Critic&lt;/strong&gt; - Balances innovation against complexity&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;from-paper-to-code-the-mathematical-foundation&#34;&gt;From Paper to Code: The Mathematical Foundation&lt;/h3&gt;&#xA;&lt;p&gt;The power of this pipeline comes from its transparent, component-based approach to calculating a final reward or trust score. The paper formalizes this in Section 2.2 with Equation (1).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chapter 4: Generative Synthesis Engine</title>
+      <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/</guid>
+      <description>&lt;div class=&#34;guide-header&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/&#34; class=&#34;home-link&#34;&gt;← Back to GTCode.com Homepage&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;chapter-4-generative-synthesis-engine&#34;&gt;Chapter 4: Generative Synthesis Engine&lt;/h1&gt;&#xA;&lt;h2 id=&#34;beyond-vector-averaging-true-dialectical-synthesis&#34;&gt;Beyond Vector Averaging: True Dialectical Synthesis&lt;/h2&gt;&#xA;&lt;p&gt;Traditional knowledge synthesis approaches often resort to mechanical blending - averaging vectors, voting on claims, or simple concatenation. CNS 2.0&amp;rsquo;s Generative Synthesis Engine takes a fundamentally different approach: it models synthesis as an act of creative, reasoned generation through dialectical argumentation.&lt;/p&gt;&#xA;&lt;p&gt;The engine operates through four key stages:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chiral Pair Selection&lt;/strong&gt; - Identifying productive conflicts&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dialectical Prompt Construction&lt;/strong&gt; - Preserving argumentative structure&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Generative Synthesis&lt;/strong&gt; - LLM-powered reasoning&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Candidate Evaluation&lt;/strong&gt; - Quality assessment and refinement&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s implement each component to create a system capable of genuine knowledge synthesis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chapter 5: System Integration</title>
+      <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/</guid>
+      <description>&lt;div class=&#34;guide-header&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/&#34; class=&#34;home-link&#34;&gt;← Back to GTCode.com Homepage&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;chapter-5-system-integration&#34;&gt;Chapter 5: System Integration&lt;/h1&gt;&#xA;&lt;h2 id=&#34;building-the-complete-cns-20-system&#34;&gt;Building the Complete CNS 2.0 System&lt;/h2&gt;&#xA;&lt;p&gt;Now that we&amp;rsquo;ve implemented the core components—Structured Narrative Objects, the Multi-Component Critic Pipeline, and the Generative Synthesis Engine—it&amp;rsquo;s time to integrate them into a cohesive system. This chapter focuses on the operational workflow, system dynamics, and the critical narrative ingestion pipeline.&lt;/p&gt;&#xA;&lt;p&gt;The complete CNS 2.0 system operates as a continuous loop, processing new information, evaluating conflicts, and generating synthetic knowledge through dialectical reasoning.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chapter 6: Complete Implementation</title>
+      <link>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/</guid>
+      <description>&lt;div class=&#34;guide-header&#34;&gt;&#xA;    &lt;a href=&#34;http://localhost:1313/&#34; class=&#34;home-link&#34;&gt;← Back to GTCode.com Homepage&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;chapter-6-complete-implementation&#34;&gt;Chapter 6: Complete Implementation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;bringing-it-all-together&#34;&gt;Bringing It All Together&lt;/h2&gt;&#xA;&lt;p&gt;This chapter builds upon the functional critic and exploration primitives developed in Chapters 3 and 4 to create a fully integrated, end-to-end system. We&amp;rsquo;ve built the foundational components of CNS 2.0: Structured Narrative Objects, the Multi-Component Critic Pipeline, the Generative Synthesis Engine, and system integration framework. Now it&amp;rsquo;s time to complete the implementation with full synthesis capabilities and prepare the system for production deployment.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

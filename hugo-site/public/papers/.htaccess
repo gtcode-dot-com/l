@@ -1,0 +1,4 @@
+<Files "*.pdf">
+    Header set Content-Disposition "attachment"
+    Header set Content-Type "application/pdf"
+</Files>
