@@ -109,38 +109,9 @@ The true power of combining CNS 2.0 and DSPy is realized when we turn the system
 
 The diagram below illustrates this self-optimizing loop. The goal is to "compile" a `SynthesisModule` that is optimized to produce SNOs that score highly on our `CriticPipeline` metric.
 
-```text
-+--------------------------+
-|      Chiral Pair         |
-|  (Narrative A, B)        |
-+--------------------------+
-           |
-           v
-+--------------------------+
-|    DSPy SynthesisModule  | --(generates)--> [ Candidate Hypothesis ]
-| (Needs optimizing)       |
-+--------------------------+
-           |
-           v
-+--------------------------------+
-|  Build Candidate SNO_C         |
-| (Hypothesis + Combined Logic)  |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-|  CNS 2.0 Critic Pipeline       | --(evaluates)--> [ Trust Score (0.0 to 1.0) ]
-| (Grounding, Logic, Novelty)    |
-+--------------------------------+
-           |
-           | (This score is the feedback signal)
-           |
-           v
-+--------------------------------+
-|      DSPy Optimizer            |
-| (e.g., BootstrapFewShot)       | --(updates prompts/demos in SynthesisModule)-->
-+--------------------------------+
-```
+<div style="text-align: center;">
+  <img src="/img/diagram-02.svg" alt="Centered SVG" style="display: inline-block;" />
+</div>
 
 This process allows the system to programmatically discover what makes a "good" synthesis from its own perspective. It will tune the prompts and few-shot examples used by the `SynthesisModule` until it reliably produces outputs that are logical, well-grounded, and novel according to our own critics.
 

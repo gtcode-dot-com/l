@@ -39,48 +39,9 @@ Moving beyond the naive vector averaging of traditional approaches, CNS 2.0 intr
 
 To understand how these components work together, let's visualize the complete system workflow. The system operates in a continuous, cyclical process of ingestion, evaluation, and synthesis.
 
-```text
-Unstructured Data (Documents, Reports)
-           |
-           v
-+--------------------------+
-| Narrative Ingestion      |
-| (Argumentation Mining)   |
-+--------------------------+
-           |
-           v
-[ Structured Narrative Object (SNO) ]
-           |
-           v
-+--------------------------+
-| SNO Population           | ---+
-| {SNO_1, SNO_2, ...}      |    | (Find Chiral Pairs)
-+--------------------------+    |
-           |                    |
-           | (Select Pair)      |
-           v                    |
-[ SNO_A ]-----[ SNO_B ] <-------+
-           |
-           v
-+--------------------------+
-| Generative Synthesis     |
-| (Dialectical Reasoning)  |
-+--------------------------+
-           |
-           v
-[ Synthesized Candidate SNO_C ]
-           |
-           v
-+--------------------------+
-| Multi-Component Critic   |
-| (Grounding, Logic, Novelty) |
-+--------------------------+
-           |
-           | (High Trust Score?)
-           +-----> YES --> Add to SNO Population
-           |
-           +-----> NO ----> Archive
-```
+<div style="text-align: center;">
+  <img src="/img/diagram-01.svg" alt="Centered SVG" style="display: inline-block;" />
+</div>
 
 This diagram illustrates how raw information is transformed into structured knowledge, which is then refined through a dialectical process that pits competing narratives against each other to generate novel, more robust insights. The key stages are:
 1.  **Narrative Ingestion:** Unstructured text is converted into a formal `StructuredNarrativeObject` (SNO), a process known as argumentation mining.
