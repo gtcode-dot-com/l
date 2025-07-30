@@ -48,13 +48,24 @@ For mathematical primitives like the Chirality and Novelty Scores to work, we ne
 
 ## Core SNO Implementation
 
-The following code block contains the complete, updated `StructuredNarrativeObject` class, including new methods for serialization that we will discuss later in this chapter.
+The following code block contains the complete, updated `StructuredNarrativeObject` class. We have enhanced it with more detailed comments and robust serialization methods, which we will discuss in detail.
+
+### The Importance of Structured Graph Components
+
+Before diving into the main class, it's important to understand *why* we use `dataclasses` like `ClaimNode` and `ReasoningEdge` to structure the components of our reasoning graph. While we could use simple dictionaries, these structured classes provide several key advantages:
+
+-   **Type Safety**: Dataclasses enforce data types, reducing runtime errors. For example, `ReasoningEdge.strength` is explicitly a `float`, preventing accidental assignment of incorrect types.
+-   **Self-Documentation**: The class definitions clearly document the expected data structure for a claim or a relationship. This makes the code easier to read, understand, and maintain.
+-   **Extensibility**: If we need to add a new attribute to a claim (e.g., an author field), we can simply add it to the `ClaimNode` definition. This is much cleaner and more explicit than hoping a dictionary key is present everywhere it's used.
+
+These design choices make our implementation more robust and scalable, which is crucial for a complex system like CNS 2.0.
 
 ```python
 """
 Structured Narrative Objects (SNO) Implementation
 ===============================================
-The foundational data structure for CNS 2.0, now with serialization.
+The foundational data structure for CNS 2.0, now with enhanced
+comments and robust serialization.
 """
 
 import numpy as np
@@ -64,13 +75,17 @@ from dataclasses import dataclass, field, asdict
 from datetime import datetime
 import uuid
 import json
+import logging
+
+# Configure basic logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Assuming RelationType and EvidenceItem are defined as in Chapter 1
-# For brevity, their definitions are omitted here.
+# For brevity, their definitions from the previous chapter are omitted here.
 
 @dataclass
 class ReasoningEdge:
-    """Represents a typed logical relationship in the reasoning graph"""
+    """Represents a typed logical relationship in the reasoning graph."""
     source: str
     target: str
     relation_type: RelationType
@@ -79,7 +94,7 @@ class ReasoningEdge:
 
 @dataclass
 class ClaimNode:
-    """Represents a claim or sub-claim in the reasoning graph"""
+    """Represents a claim or sub-claim in the reasoning graph."""
     claim_id: str
     content: str
     claim_type: str = "assertion"
@@ -89,7 +104,8 @@ class ClaimNode:
 class StructuredNarrativeObject:
     """
     Complete implementation of a Structured Narrative Object (SNO).
-    This class encapsulates H, G, E, and T and includes serialization methods.
+    This class encapsulates H, G, E, and T and includes robust
+    serialization and deserialization methods.
     """
     
     def __init__(self, 
@@ -97,20 +113,29 @@ class StructuredNarrativeObject:
                  sno_id: Optional[str] = None,
                  created_at: Optional[datetime] = None,
                  metadata: Optional[Dict] = None):
+        """
+        Initializes a new SNO.
+
+        Args:
+            central_hypothesis: The core claim of the narrative.
+            sno_id: A unique identifier. If None, a new UUID is generated.
+            created_at: The creation timestamp. If None, the current time is used.
+            metadata: A dictionary for storing any extra information about the SNO.
+        """
         self.sno_id = sno_id or str(uuid.uuid4())
         self.central_hypothesis = central_hypothesis
         self.created_at = created_at or datetime.now()
         
-        # H: Hypothesis Embedding
+        # H: Hypothesis Embedding - A dense vector representing the central hypothesis.
         self.hypothesis_embedding: Optional[np.ndarray] = None
         
-        # G: Reasoning Graph
+        # G: Reasoning Graph - A NetworkX DiGraph storing claims and their relationships.
         self.reasoning_graph = nx.DiGraph()
         
-        # E: Evidence Set
+        # E: Evidence Set - A set of EvidenceItem objects grounding the narrative.
         self.evidence_set: Set[EvidenceItem] = set()
         
-        # T: Trust Score
+        # T: Trust Score - A score from [0, 1] computed by the Critic Pipeline.
         self.trust_score: Optional[float] = None
         
         self.metadata: Dict[str, Any] = metadata or {}
@@ -118,6 +143,7 @@ class StructuredNarrativeObject:
         self._add_root_claim()
     
     def _add_root_claim(self):
+        """Internal method to create the root node of the graph from the central hypothesis."""
         root_node = ClaimNode(
             claim_id="root",
             content=self.central_hypothesis,
@@ -126,6 +152,7 @@ class StructuredNarrativeObject:
         self.reasoning_graph.add_node("root", claim=root_node)
     
     def add_claim(self, claim_content: str, claim_id: Optional[str] = None, claim_type: str = "assertion") -> str:
+        """Adds a new claim (node) to the reasoning graph."""
         if claim_id is None:
             claim_id = f"claim_{len(self.reasoning_graph.nodes)}"
         
@@ -134,9 +161,12 @@ class StructuredNarrativeObject:
         return claim_id
     
     def add_reasoning_edge(self, source_claim_id: str, target_claim_id: str, relation_type: RelationType, strength: float = 1.0) -> bool:
+        """Adds a new reasoning edge (relationship) between claims, ensuring no cycles are created."""
         if (source_claim_id not in self.reasoning_graph.nodes or target_claim_id not in self.reasoning_graph.nodes):
+            logging.warning(f"Attempted to create edge with non-existent node: {source_claim_id} or {target_claim_id}")
             return False
         
+        # Prevent creating cycles, which would invalidate the logical structure.
         if nx.has_path(self.reasoning_graph, target_claim_id, source_claim_id):
             raise ValueError(f"Adding edge from {source_claim_id} to {target_claim_id} would create a cycle.")
         
@@ -145,12 +175,18 @@ class StructuredNarrativeObject:
         return True
     
     def add_evidence(self, evidence_item: EvidenceItem):
+        """Adds a piece of evidence to the SNO's evidence set."""
         self.evidence_set.add(evidence_item)
     
     def compute_hypothesis_embedding(self, embedding_model):
+        """Computes and stores the vector embedding for the central hypothesis."""
         self.hypothesis_embedding = embedding_model.encode(self.central_hypothesis)
     
     def get_graph_statistics(self) -> Dict[str, Any]:
+        """Calculates key statistics about the reasoning graph's structure."""
+        if self.reasoning_graph.number_of_nodes() == 0:
+            return {'num_nodes': 0, 'num_edges': 0, 'is_acyclic': True, 'density': 0, 'relation_type_counts': {}}
+
         stats = {
             'num_nodes': self.reasoning_graph.number_of_nodes(),
             'num_edges': self.reasoning_graph.number_of_edges(),
@@ -165,13 +201,26 @@ class StructuredNarrativeObject:
         return stats
 
     def to_dict(self) -> Dict[str, Any]:
-        """Serializes the SNO to a dictionary, handling complex types."""
+        """
+        Serializes the SNO to a JSON-compatible dictionary.
+        This method carefully handles complex types like NumPy arrays, datetimes,
+        and NetworkX graphs to ensure clean serialization.
+        """
+        # Convert graph to a serializable format, ensuring dataclasses are converted to dicts
+        serializable_graph = nx.node_link_data(self.reasoning_graph)
+        for node in serializable_graph.get('nodes', []):
+            if 'claim' in node and hasattr(node['claim'], '__dict__'):
+                node['claim'] = asdict(node['claim'])
+        for link in serializable_graph.get('links', []):
+            if 'reasoning_edge' in link and hasattr(link['reasoning_edge'], '__dict__'):
+                link['reasoning_edge'] = asdict(link['reasoning_edge'])
+
         return {
             'sno_id': self.sno_id,
             'central_hypothesis': self.central_hypothesis,
             'created_at': self.created_at.isoformat(),
             'hypothesis_embedding': self.hypothesis_embedding.tolist() if self.hypothesis_embedding is not None else None,
-            'reasoning_graph': nx.node_link_data(self.reasoning_graph),
+            'reasoning_graph': serializable_graph,
             'evidence_set': [asdict(e) for e in self.evidence_set],
             'trust_score': self.trust_score,
             'metadata': self.metadata
@@ -180,25 +229,49 @@ class StructuredNarrativeObject:
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'StructuredNarrativeObject':
         """
-        Deserializes an SNO from a dictionary.
-        Note: For production, this method should include more robust error handling
-        to manage cases with missing keys or mismatched data types.
+        Deserializes an SNO from a dictionary with robust error handling.
+        This method safely reconstructs an SNO, validating key fields and
+        handling potential malformations in the input data.
         """
-        sno = cls(
-            central_hypothesis=data['central_hypothesis'],
-            sno_id=data['sno_id'],
-            created_at=datetime.fromisoformat(data['created_at']),
-            metadata=data.get('metadata', {}) # Use .get for safer access
-        )
+        try:
+            sno = cls(
+                central_hypothesis=data['central_hypothesis'],
+                sno_id=data['sno_id'],
+                created_at=datetime.fromisoformat(data['created_at']),
+                metadata=data.get('metadata', {})
+            )
 
-        if data.get('hypothesis_embedding'):
-            sno.hypothesis_embedding = np.array(data['hypothesis_embedding'])
+            if data.get('hypothesis_embedding') is not None:
+                sno.hypothesis_embedding = np.array(data['hypothesis_embedding'])
 
-        sno.reasoning_graph = nx.node_link_graph(data['reasoning_graph'])
-        sno.evidence_set = {EvidenceItem(**e_data) for e_data in data.get('evidence_set', [])}
-        sno.trust_score = data.get('trust_score')
+            # Reconstruct the graph and its structured data
+            graph_data = data.get('reasoning_graph', {})
+            # NetworkX's node_link_graph can't automatically re-instantiate our dataclasses,
+            # so we do it manually for robustness.
+            sno.reasoning_graph = nx.DiGraph()
+            for node_data in graph_data.get('nodes', []):
+                claim_obj = ClaimNode(**node_data.pop('claim'))
+                sno.reasoning_graph.add_node(node_data['id'], **node_data, claim=claim_obj)
 
-        return sno
+            for link_data in graph_data.get('links', []):
+                edge_data = link_data.pop('reasoning_edge')
+                # Handle case where relation_type might be a string
+                edge_data['relation_type'] = RelationType(edge_data['relation_type'])
+                edge_obj = ReasoningEdge(**edge_data)
+                sno.reasoning_graph.add_edge(link_data['source'], link_data['target'], **link_data, reasoning_edge=edge_obj)
+
+            sno.evidence_set = {EvidenceItem(**e_data) for e_data in data.get('evidence_set', [])}
+            sno.trust_score = data.get('trust_score')
+
+            return sno
+
+        except KeyError as e:
+            logging.error(f"Missing mandatory key in SNO data: {e}")
+            raise ValueError(f"Invalid SNO data: Missing key {e}") from e
+        except (TypeError, ValueError) as e:
+            logging.error(f"Data type error during SNO deserialization: {e}")
+            raise ValueError(f"Invalid SNO data: Malformed value. Details: {e}") from e
+
 
     def __repr__(self) -> str:
         return f"SNO(id={self.sno_id[:8]}, hypothesis='{self.central_hypothesis[:50]}...')"

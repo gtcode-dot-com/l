@@ -143,6 +143,7 @@ sentence-transformers
 faiss-cpu # or faiss-gpu
 scikit-learn
 matplotlib
+PyYAML # For loading config files
 # For a production job queue:
 redis
 celery
@@ -156,13 +157,16 @@ FROM python:3.10-slim
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Copy the requirements file into the container
+# Copy the requirements file into the container first
 COPY requirements.txt ./
 
-# Install any needed packages specified in requirements.txt
+# Install dependencies. This is done in a separate layer to leverage Docker's
+# layer caching. The dependencies will only be re-installed if requirements.txt changes.
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application code into the container
+# Copy the rest of the application code into the container.
+# This is done *after* installing dependencies, so that code changes
+# don't trigger a full dependency re-installation.
 COPY . .
 
 # Command to run the application
@@ -215,3 +219,68 @@ def process_document_task(document_text: str, source_metadata: dict):
 To start a worker, you would run: `celery -A tasks worker --loglevel=info`.
 
 This architecture decouples the task submission from the actual processing, allowing you to scale the number of workers independently based on the workload, creating a truly robust and scalable production system.
+
+### 3. Production Configuration Management
+
+In our guide, we've used a `CNSConfig` class with hardcoded values for simplicity. This is not suitable for a production environment where you need to change parameters without altering the code. The solution is to externalize the configuration.
+
+#### Strategy 1: Environment Variables
+
+A common practice is to read configuration from environment variables. This is highly portable and aligns with the principles of [12-factor apps](https://12factor.net/config).
+
+You would modify the `CNSConfig` class to read from `os.environ`:
+
+```python
+import os
+import json
+
+class CNSConfig:
+    def __init__(self):
+        # Read from environment variable, falling back to a default value.
+        self.embedding_dim = int(os.environ.get('CNS_EMBEDDING_DIM', 768))
+
+        # For nested structures, we can expect a JSON string.
+        default_weights = '{"grounding": 0.4, "logic": 0.3, "novelty": 0.3}'
+        self.critic_weights = json.loads(os.environ.get('CNS_CRITIC_WEIGHTS', default_weights))
+
+        # ... and so on for all other parameters.
+```
+When running in Docker, you can pass these environment variables using the `-e` flag:
+`docker run -e CNS_CRITIC_WEIGHTS='{"grounding": 0.8, "logic": 0.1, "novelty": 0.1}' cns-app`
+
+#### Strategy 2: Configuration File
+
+For more complex configurations, a dedicated file is often easier to manage. Since we saw a `config.yaml` in the repository, let's use that.
+
+First, create a `config.yaml`:
+```yaml
+# config.yaml
+embedding_dim: 768
+
+critic_weights:
+  grounding: 0.4
+  logic: 0.3
+  novelty: 0.3
+
+models:
+  embedding: "all-MiniLM-L6-v2"
+  nli: "roberta-large-mnli"
+```
+
+Then, modify `CNSConfig` to load from this file:
+
+```python
+import yaml
+
+class CNSConfig:
+    def __init__(self, config_path="config.yaml"):
+        with open(config_path, 'r') as f:
+            config = yaml.safe_load(f)
+
+        self.embedding_dim = config['embedding_dim']
+        self.critic_weights = config['critic_weights']
+        self.models = config['models']
+        # ... and so on
+```
+
+This approach makes it easy to maintain multiple configuration profiles (e.g., `config_dev.yaml`, `config_prod.yaml`) and provides a clear, version-controllable record of the system's parameters.
