@@ -305,9 +305,11 @@ class LogicCritic(BaseCritic):
 
 > **From Paper to Code: The Novelty-Parsimony Critic**
 > This critic balances innovation against complexity. The formula from Section 2.2 is:
-> $$
-> \text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|}
-> $$
+
+$$
+\text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|}
+$$
+
 > The formula uses subtraction to create this balance. The first term rewards novelty (Euclidean distance to the nearest neighbor in the SNO population), and the second term, scaled by β, penalizes graph complexity (edge-to-node ratio). Since the result is not inherently bounded in [0, 1], our code calculates the raw score and then clamps the result to fit within our scoring framework.
 
 ```python
