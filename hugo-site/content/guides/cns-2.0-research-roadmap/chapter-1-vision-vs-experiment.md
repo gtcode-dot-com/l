@@ -2,6 +2,11 @@
 title: "Chapter 1: From Grand Vision to Focused Experiment"
 description: "Explaining the critical difference between the comprehensive CNS 2.0 system and the focused scope required for a single, impactful research paper."
 weight: 2
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 ## The Grand Vision of CNS 2.0

@@ -2,6 +2,11 @@
 title: "Chapter 2: The MVE - Synthesizing a Historical Scientific Debate"
 description: "Providing a detailed, step-by-step methodology for the first experiment designed to produce concrete, publishable results."
 weight: 3
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 This chapter outlines the detailed methodology for our Minimum Viable Experiment (MVE). The goal is to produce rigorous, empirical results that can form the core of our first peer-reviewed publication.

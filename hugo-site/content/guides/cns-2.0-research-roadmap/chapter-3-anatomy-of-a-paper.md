@@ -2,6 +2,11 @@
 title: "Chapter 3: The Anatomy of a Research Paper"
 description: "Showing how the results from the Minimum Viable Experiment will be structured into a standard, high-quality academic paper."
 weight: 4
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 A successful experiment is only half the battle in research. The other half is communicating the findings effectively to the scientific community. To do this, we will structure our results into a high-quality academic paper following the standard **IMRaD** format (Introduction, Methods, Results, and Discussion).

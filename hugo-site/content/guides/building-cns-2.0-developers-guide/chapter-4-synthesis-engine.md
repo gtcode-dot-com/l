@@ -2,6 +2,11 @@
 title: "Chapter 4: The Synthesis Engine & Relational Metrics"
 description: "Implementing LLM-powered dialectical reasoning and the metrics that guide it"
 weight: 4
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 <div class="guide-header">

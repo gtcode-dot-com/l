@@ -2,6 +2,11 @@
 title: "Chapter 1: Introduction to CNS 2.0"
 description: "Understanding the core concepts and motivation behind Chiral Narrative Synthesis"
 weight: 1
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 <div class="guide-header">

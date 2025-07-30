@@ -2,6 +2,11 @@
 title: "Chapter 4: The Research Horizon"
 description: "Outlining the long-term research plan and the path forward after the first publication."
 weight: 5
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 The successful completion of our Minimum Viable Experiment (MVE) and its publication will serve as a foundational, proof-of-concept milestone for the CNS 2.0 project. It is, however, just the first step. The limitations acknowledged in our first paper directly inform the next stages of our research agenda.

@@ -2,6 +2,11 @@
 title: "Chapter 3: The Multi-Component Critic Pipeline"
 description: "Implementing transparent evaluation systems for grounding, logic, and novelty assessment"
 weight: 3
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 <div class="guide-header">

@@ -2,6 +2,11 @@
 title: "Research Roadmap: From Blueprint to Publication"
 description: "Outlining the rigorous, transparent plan to transform the CNS 2.0 proposal into a peer-reviewed scientific publication."
 weight: 1
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 Welcome to the Research Roadmap for the Chiral Narrative Synthesis (CNS) 2.0 project. This section outlines our plan for rigorous, academic validation of the CNS 2.0 framework.

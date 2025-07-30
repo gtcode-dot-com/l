@@ -2,6 +2,11 @@
 title: "Chapter 7: Advanced Optimization with DSPy"
 description: "Evolving CNS 2.0 from prompt engineering to programmatic optimization using DSPy"
 weight: 7
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 <div class="guide-header">

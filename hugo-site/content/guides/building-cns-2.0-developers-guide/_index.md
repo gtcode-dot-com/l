@@ -1,6 +1,11 @@
 ---
 title: "Building CNS 2.0: A Developer's Guide"
 description: "A progressive educational guide to implementing Chiral Narrative Synthesis 2.0 in Python"
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 Welcome to the comprehensive developer's guide for implementing **Chiral Narrative Synthesis (CNS) 2.0** in Python. This guide will take you on a progressive journey, translating the groundbreaking research paper, *"CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis,"* from a formal blueprint into a robust, working system.

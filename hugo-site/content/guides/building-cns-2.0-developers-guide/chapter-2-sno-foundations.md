@@ -2,6 +2,11 @@
 title: "Chapter 2: SNO Foundations"
 description: "Building Structured Narrative Objects - the core data structure of CNS 2.0"
 weight: 2
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 <div class="guide-header">

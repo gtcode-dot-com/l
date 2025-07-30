@@ -2,6 +2,11 @@
 title: "Chapter 6: Complete Implementation - Production Deployment and Scaling"
 description: "Taking the CNS 2.0 system from a single-process prototype to a scalable, production-grade service."
 weight: 6
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 <div class="guide-header">

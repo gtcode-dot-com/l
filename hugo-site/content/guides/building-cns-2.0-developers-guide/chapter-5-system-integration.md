@@ -2,6 +2,11 @@
 title: "Chapter 5: System Integration"
 description: "Combining all CNS 2.0 components into a working, autonomous system"
 weight: 5
+lastmod: "2025-07-30"
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 ---
 
 <div class="guide-header">
