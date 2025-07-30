@@ -32,8 +32,7 @@
       {{ end }}
     </url>
   {{ end }}
-
-      <!-- Research Papers -->
+    <!-- Research Papers -->
     <url>
         <loc>https://gtcode.com/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf</loc>
         <lastmod>2025-07-30</lastmod>
