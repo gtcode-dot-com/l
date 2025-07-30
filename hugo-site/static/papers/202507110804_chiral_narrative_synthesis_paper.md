@@ -29,43 +29,43 @@ This paper is organized as follows. Section 2 reviews related work in argumentat
 
 ### 2.1 Argumentation Mining and Structured Reasoning
 
-Argumentation mining has emerged as a critical research area focused on automatically identifying and extracting argumentative structures from natural language text [1]. Early work by Mochales and Moens [2] established foundational approaches for identifying claims and premises in legal documents. Subsequent research by Lippi and Torroni [3] expanded these techniques across multiple domains, demonstrating the generalizability of argumentation mining approaches.
+Argumentation mining has emerged as a critical research area focused on automatically identifying and extracting argumentative structures from natural language text [[1]](#ref1). Early work by Mochales and Moens [[2]](#ref2) established foundational approaches for identifying claims and premises in legal documents. Subsequent research by Lippi and Torroni [[3]](#ref3) expanded these techniques across multiple domains, demonstrating the generalizability of argumentation mining approaches.
 
-Recent advances have focused on graph-based representations of argumentative structure. Wachsmuth et al. [4] introduced argument quality assessment using graph neural networks, while Skeppstedt et al. [5] developed methods for extracting implicit argumentative relations. However, these approaches typically focus on structure extraction rather than synthesis of conflicting arguments.
+Recent advances have focused on graph-based representations of argumentative structure. Wachsmuth et al. [[4]](#ref4) introduced argument quality assessment using graph neural networks, while Skeppstedt et al. [[5]](#ref5) developed methods for extracting implicit argumentative relations. However, these approaches typically focus on structure extraction rather than synthesis of conflicting arguments.
 
 Critical limitations in current argumentation mining include: (1) difficulty in extracting complex multi-hop reasoning chains, (2) sensitivity to domain-specific terminology and structures, and (3) limited ability to handle implicit argumentative relationships. Our work addresses these limitations through enhanced LLM-based extraction with verification protocols.
 
 ### 2.2 Knowledge Synthesis and Information Integration
 
-Traditional knowledge synthesis approaches in AI rely heavily on vector space models and similarity metrics. Mikolov et al. [6] demonstrated the power of word embeddings for capturing semantic relationships, while subsequent work by Devlin et al. [7] showed how contextual embeddings could improve representation quality.
+Traditional knowledge synthesis approaches in AI rely heavily on vector space models and similarity metrics. Mikolov et al. [[6]](#ref6) demonstrated the power of word embeddings for capturing semantic relationships, while subsequent work by Devlin et al. [[7]](#ref7) showed how contextual embeddings could improve representation quality.
 
-However, vector-based approaches suffer from information loss when dealing with complex argumentative structures. Wang et al. [8] identified this limitation in their analysis of reasoning tasks, demonstrating that structural information is critical for coherent synthesis. Recent work by Chen et al. [9] explored graph-based knowledge integration, but focused primarily on factual knowledge rather than argumentative synthesis.
+However, vector-based approaches suffer from information loss when dealing with complex argumentative structures. Wang et al. [[8]](#ref8) identified this limitation in their analysis of reasoning tasks, demonstrating that structural information is critical for coherent synthesis. Recent work by Chen et al. [[9]](#ref9) explored graph-based knowledge integration, but focused primarily on factual knowledge rather than argumentative synthesis.
 
 ### 2.3 Multi-Agent Systems for Reasoning
 
-Multi-agent systems have shown promise for complex reasoning tasks. Stone and Veloso [10] established foundational frameworks for collaborative problem-solving, while more recent work by Tampuu et al. [11] demonstrated emergent behaviors in competitive multi-agent environments.
+Multi-agent systems have shown promise for complex reasoning tasks. Stone and Veloso [[10]](#ref10) established foundational frameworks for collaborative problem-solving, while more recent work by Tampuu et al. [[11]](#ref11) demonstrated emergent behaviors in competitive multi-agent environments.
 
-Particularly relevant is research on dialectical reasoning systems. Rahwan and Simari [12] provided comprehensive coverage of argumentation frameworks in AI, while Chesñevar et al. [13] explored computational models of debate and argumentation. Recent work by Du et al. [14] introduced multi-agent debate systems using LLMs, demonstrating improved reasoning capabilities through adversarial dialogue.
+Particularly relevant is research on dialectical reasoning systems. Rahwan and Simari [[12]](#ref12) provided comprehensive coverage of argumentation frameworks in AI, while Chesñevar et al. [[13]](#ref13) explored computational models of debate and argumentation. Recent work by Du et al. [[14]](#ref14) introduced multi-agent debate systems using LLMs, demonstrating improved reasoning capabilities through adversarial dialogue.
 
 Our work extends these foundations by introducing structured narrative objects and implementing formal dialectical protocols with evidence verification.
 
 ### 2.4 Trust and Credibility Assessment
 
-Trust assessment in information systems has received significant attention. Josang [15] developed subjective logic frameworks for uncertainty and trust modeling, while Castelfranchi and Falcone [16] explored trust in multi-agent systems. However, most approaches treat trust as a monolithic concept rather than decomposing it into interpretable components.
+Trust assessment in information systems has received significant attention. Josang [[15]](#ref15) developed subjective logic frameworks for uncertainty and trust modeling, while Castelfranchi and Falcone [[16]](#ref16) explored trust in multi-agent systems. However, most approaches treat trust as a monolithic concept rather than decomposing it into interpretable components.
 
-Recent work by Kumar and Shah [17] introduced multi-faceted trust assessment for information sources, while Zhang et al. [18] developed neural approaches to credibility assessment. Our approach extends this work by introducing specialized critics for grounding, logical coherence, and novelty assessment with adaptive weighting mechanisms.
+Recent work by Kumar and Shah [[17]](#ref17) introduced multi-faceted trust assessment for information sources, while Zhang et al. [[18]](#ref18) developed neural approaches to credibility assessment. Our approach extends this work by introducing specialized critics for grounding, logical coherence, and novelty assessment with adaptive weighting mechanisms.
 
 ### 2.5 Evidence Verification and Fact-Checking
 
-Automated fact-checking has emerged as a critical research area. Thorne et al. [19] introduced the FEVER dataset for fact extraction and verification, while Augenstein et al. [20] provided comprehensive surveys of automated fact-checking approaches.
+Automated fact-checking has emerged as a critical research area. Thorne et al. [[19]](#ref19) introduced the FEVER dataset for fact extraction and verification, while Augenstein et al. [[20]](#ref20) provided comprehensive surveys of automated fact-checking approaches.
 
 Current limitations include: (1) difficulty verifying complex claims requiring multi-step reasoning, (2) challenges in assessing evidence quality rather than mere relevance, and (3) limited ability to handle evolving or contextual information. Our work addresses these through multi-stage evidence verification protocols.
 
 ### 2.6 Large Language Models for Complex Reasoning
 
-The emergence of large language models has transformed complex reasoning capabilities. Brown et al. [21] demonstrated few-shot reasoning in GPT-3, while Wei et al. [22] introduced chain-of-thought prompting for multi-step reasoning. Recent work by Yao et al. [23] explored tree-of-thought reasoning for complex problem solving.
+The emergence of large language models has transformed complex reasoning capabilities. Brown et al. [[21]](#ref21) demonstrated few-shot reasoning in GPT-3, while Wei et al. [[22]](#ref22) introduced chain-of-thought prompting for multi-step reasoning. Recent work by Yao et al. [[23]](#ref23) explored tree-of-thought reasoning for complex problem solving.
 
-However, LLMs face challenges with hallucination, logical inconsistency, and bias propagation [24]. Our framework addresses these through structured reasoning protocols, multi-stage verification, and ensemble approaches that reduce reliance on single LLM outputs.
+However, LLMs face challenges with hallucination, logical inconsistency, and bias propagation [[24]](#ref24). Our framework addresses these through structured reasoning protocols, multi-stage verification, and ensemble approaches that reduce reliance on single LLM outputs.
 
 ## 3. Theoretical Framework
 
@@ -75,23 +75,29 @@ We begin by establishing formal definitions for the core components of CNS 2.0.
 
 **Definition 3.1 (Structured Narrative Object)**: A Structured Narrative Object (SNO) is a 5-tuple $\mathcal{S} = (H, G, \mathcal{E}, T, \mathcal{M})$ where:
 
-- **Hypothesis Embedding** $H \in \mathbb{R}^d$: A $d$-dimensional dense vector encoding the narrative's central claim
-- **Reasoning Graph** $G = (V, E_G, \tau)$: A directed acyclic graph with vertices $V$ representing sub-claims, edges $E_G \subseteq V \times V \times \mathcal{R}$ encoding typed logical relationships from relation set $\mathcal{R} = \{\text{supports}, \text{contradicts}, \text{implies}, \text{equivalent}, \text{refines}\}$, and confidence scores $\tau: E_G \rightarrow [0,1]$
-- **Evidence Set** $\mathcal{E} = \{e_1, e_2, \ldots, e_n\}$: Persistent identifiers linking to verifiable data sources with provenance tracking
-- **Trust Score** $T \in [0, 1]$: A derived confidence measure computed by the critic pipeline
-- **Metadata** $\mathcal{M}$: Source attribution, temporal information, and verification status
+-   **Hypothesis Embedding** $H \in \mathbb{R}^d$: A $d$-dimensional dense vector encoding the narrative's central claim
+-   **Reasoning Graph** $G = (V, E_G, \tau)$: A directed acyclic graph with vertices $V$ representing sub-claims, edges $E_G \subseteq V \times V \times \mathcal{R}$ encoding typed logical relationships from relation set $\mathcal{R} = \{\text{supports}, \text{contradicts}, \text{implies}, \text{equivalent}, \text{refines}\}$, and confidence scores $\tau: E_G \rightarrow [0,1]$
+-   **Evidence Set** $\mathcal{E} = \{e_1, e_2, \ldots, e_n\}$: Persistent identifiers linking to verifiable data sources with provenance tracking
+-   **Trust Score** $T \in [0, 1]$: A derived confidence measure computed by the critic pipeline
+-   **Metadata** $\mathcal{M}$: Source attribution, temporal information, and verification status
 
 **Definition 3.2 (Enhanced Chirality Score)**: For two SNOs $\mathcal{S}_i$ and $\mathcal{S}_j$, the Enhanced Chirality Score incorporates both semantic opposition and structural conflict:
 
-$$\text{CScore}(\mathcal{S}_i, \mathcal{S}_j) = \alpha \cdot (1 - \cos(H_i, H_j)) \cdot (T_i \cdot T_j) + \beta \cdot \text{GraphConflict}(G_i, G_j)$$
+```math
+\text{CScore}(\mathcal{S}_i, \mathcal{S}_j) = \alpha \cdot (1 - \cos(H_i, H_j)) \cdot (T_i \cdot T_j) + \beta \cdot \text{GraphConflict}(G_i, G_j)
+```
 
 where $\cos(H_i, H_j) = \frac{H_i \cdot H_j}{\|H_i\| \|H_j\|}$ is the cosine similarity between hypothesis embeddings, and:
 
-$$\text{GraphConflict}(G_i, G_j) = \frac{1}{|V_i| \cdot |V_j|} \sum_{v_i \in V_i, v_j \in V_j} \mathbb{I}[\text{contradicts}(v_i, v_j)]$$
+```math
+\text{GraphConflict}(G_i, G_j) = \frac{1}{|V_i| \cdot |V_j|} \sum_{v_i \in V_i, v_j \in V_j} \mathbb{I}[\text{contradicts}(v_i, v_j)]
+```
 
 **Definition 3.3 (Evidential Entanglement with Quality Weighting)**: The Enhanced Evidential Entanglement Score incorporates evidence quality and verification status:
 
-$$\text{EScore}(\mathcal{S}_i, \mathcal{S}_j) = \frac{\sum_{e \in \mathcal{E}_i \cap \mathcal{E}_j} w_{\text{quality}}(e)}{\sum_{e \in \mathcal{E}_i \cup \mathcal{E}_j} w_{\text{quality}}(e)}$$
+```math
+\text{EScore}(\mathcal{S}_i, \mathcal{S}_j) = \frac{\sum_{e \in \mathcal{E}_i \cap \mathcal{E}_j} w_{\text{quality}}(e)}{\sum_{e \in \mathcal{E}_i \cup \mathcal{E}_j} w_{\text{quality}}(e)}
+```
 
 where $w_{\text{quality}}(e)$ represents the verified quality score of evidence $e$.
 
@@ -101,24 +107,26 @@ The synthesis process operates through a structured dialectical framework that f
 
 **Definition 3.4 (Dialectical Synthesis Protocol)**: Given two SNOs $\mathcal{S}_A$ and $\mathcal{S}_B$ with high chirality and evidential entanglement, the dialectical synthesis follows a four-stage protocol:
 
-1. **Thesis-Antithesis Identification**: Extract core opposing claims $\theta_A$ and $\theta_B$
-2. **Evidence Reconciliation**: Identify shared evidence $\mathcal{E}_{\text{shared}} = \mathcal{E}_A \cap \mathcal{E}_B$ and conflicting interpretations
-3. **Dialectical Reasoning**: Apply structured reasoning protocol $\Pi_{\text{dialectical}}$ to generate synthesis hypothesis $\theta_C$
-4. **Validation**: Verify logical consistency and evidence support for $\theta_C$
+1.  **Thesis-Antithesis Identification**: Extract core opposing claims $\theta_A$ and $\theta_B$
+2.  **Evidence Reconciliation**: Identify shared evidence $\mathcal{E}_{\text{shared}} = \mathcal{E}_A \cap \mathcal{E}_B$ and conflicting interpretations
+3.  **Dialectical Reasoning**: Apply structured reasoning protocol $\Pi_{\text{dialectical}}$ to generate synthesis hypothesis $\theta_C$
+4.  **Validation**: Verify logical consistency and evidence support for $\theta_C$
 
 **Theorem 3.1 (Synthesis Coherence)**: For any synthesis operation $\mathcal{S}_C = \Phi(\mathcal{S}_A, \mathcal{S}_B; \Pi_{\text{dialectical}})$, if both input SNOs satisfy logical consistency constraints and share sufficient high-quality evidence ($|\mathcal{E}_{\text{shared}}| \geq k$ for threshold $k$), then the resulting synthesis maintains logical coherence with probability $\geq 1 - \epsilon$ for bounded error $\epsilon$.
 
 *Proof*: The proof follows from three key properties of the dialectical reasoning protocol:
 
-1. **Evidence Conservation**: The protocol enforces that all high-quality shared evidence $e \in \mathcal{E}_{\text{shared}}$ with $w_{\text{quality}}(e) > \tau_{\text{min}}$ must be accounted for in the synthesis.
+1.  **Evidence Conservation**: The protocol enforces that all high-quality shared evidence $e \in \mathcal{E}_{\text{shared}}$ with $w_{\text{quality}}(e) > \tau_{\text{min}}$ must be accounted for in the synthesis.
 
-2. **Logical Consistency Checking**: At each stage, the protocol applies formal logical validation using automated theorem proving to ensure no contradictions are introduced.
+2.  **Logical Consistency Checking**: At each stage, the protocol applies formal logical validation using automated theorem proving to ensure no contradictions are introduced.
 
-3. **Bounded Synthesis Space**: The synthesis space is constrained by the union of logical structures from input SNOs, preventing arbitrary generation.
+3.  **Bounded Synthesis Space**: The synthesis space is constrained by the union of logical structures from input SNOs, preventing arbitrary generation.
 
 Formally, let $\mathcal{L}(\mathcal{S})$ denote the logical consistency of SNO $\mathcal{S}$. If $\mathcal{L}(\mathcal{S}_A) = \mathcal{L}(\mathcal{S}_B) = \text{true}$ and $|\mathcal{E}_{\text{shared}}| \geq k$, then:
 
-$$P(\mathcal{L}(\mathcal{S}_C) = \text{true}) \geq 1 - \epsilon$$
+```math
+P(\mathcal{L}(\mathcal{S}_C) = \text{true}) \geq 1 - \epsilon
+```
 
 where $\epsilon$ is bounded by the error rates of the evidence verification and logical validation components.
 
@@ -126,23 +134,33 @@ where $\epsilon$ is bounded by the error rates of the evidence verification and 
 
 The trust score emerges from an adaptive weighted combination of specialized critics with learned weighting:
 
-$$T(\mathcal{S}) = \text{softmax}(f_{\text{weight}}(\mathcal{S}; \theta_w))^T \cdot \begin{bmatrix} \text{Score}_G(\mathcal{S}) \\ \text{Score}_L(\mathcal{S}) \\ \text{Score}_N(\mathcal{S}) \\ \text{Score}_V(\mathcal{S}) \end{bmatrix}$$
+```math
+T(\mathcal{S}) = \text{softmax}(f_{\text{weight}}(\mathcal{S}; \theta_w))^T \cdot \begin{bmatrix} \text{Score}_G(\mathcal{S}) \\ \text{Score}_L(\mathcal{S}) \\ \text{Score}_N(\mathcal{S}) \\ \text{Score}_V(\mathcal{S}) \end{bmatrix}
+```
 
 where $f_{\text{weight}}$ is a learned weighting function and the component scores are:
 
-**Enhanced Grounding Critic**: 
-$$\text{Score}_G(\mathcal{S}) = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} P_{\text{NLI}}(\text{entailment}|v, e) \cdot w_{\text{quality}}(e)$$
+**Enhanced Grounding Critic**:
+```math
+\text{Score}_G(\mathcal{S}) = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} P_{\text{NLI}}(\text{entailment}|v, e) \cdot w_{\text{quality}}(e)
+```
 
 **Enhanced Logic Critic**:
-$$\text{Score}_L(\mathcal{S}) = f_{\text{GNN}}(G, \tau; \theta_L) \cdot \text{ConsistencyCheck}(G)$$
+```math
+\text{Score}_L(\mathcal{S}) = f_{\text{GNN}}(G, \tau; \theta_L) \cdot \text{ConsistencyCheck}(G)
+```
 
-where $f_{\text{GNN}}$ includes confidence scores $\tau$ and $\text{ConsistencyCheck}$ performs formal logical validation.
+where $f_{\text{GNN}}$ includes confidence scores $\tau$ and `ConsistencyCheck` performs formal logical validation.
 
 **Novelty-Parsimony Critic**:
-$$\text{Score}_N(\mathcal{S}) = \alpha \cdot \text{Novelty}(\mathcal{S}) - \beta \cdot \text{Complexity}(\mathcal{S}) + \gamma \cdot \text{Insight}(\mathcal{S})$$
+```math
+\text{Score}_N(\mathcal{S}) = \alpha \cdot \text{Novelty}(\mathcal{S}) - \beta \cdot \text{Complexity}(\mathcal{S}) + \gamma \cdot \text{Insight}(\mathcal{S})
+```
 
 **Evidence Verification Critic**:
-$$\text{Score}_V(\mathcal{S}) = \frac{1}{|\mathcal{E}|}\sum_{e \in \mathcal{E}} \text{VerificationScore}(e)$$
+```math
+\text{Score}_V(\mathcal{S}) = \frac{1}{|\mathcal{E}|}\sum_{e \in \mathcal{E}} \text{VerificationScore}(e)
+```
 
 ### 3.4 Complexity Analysis
 
@@ -372,35 +390,47 @@ OUTPUT_FORMAT: [Structured synthesis with explicit reasoning chains]
 
 **Comprehensive Multi-Level Verification Protocol**:
 
-1. **Source Credibility Assessment with Authority Networks**:
-   $$\text{SourceScore}(e) = \alpha \cdot \text{AuthorityScore}(e) + \beta \cdot \text{PublicationScore}(e) + \gamma \cdot \text{CitationScore}(e) + \delta \cdot \text{RecencyScore}(e)$$
+1.  **Source Credibility Assessment with Authority Networks**:
+    ```math
+    \text{SourceScore}(e) = \alpha \cdot \text{AuthorityScore}(e) + \beta \cdot \text{PublicationScore}(e) + \gamma \cdot \text{CitationScore}(e) + \delta \cdot \text{RecencyScore}(e)
+    ```
 
-   Where authority scoring incorporates:
-   - Academic institutional affiliations
-   - Publication venue impact factors
-   - Author citation networks and h-index
-   - Editorial board memberships
+    Where authority scoring incorporates:
+    -   Academic institutional affiliations
+    -   Publication venue impact factors
+    -   Author citation networks and h-index
+    -   Editorial board memberships
 
-2. **Content Quality Analysis with Factual Verification**:
-   $$\text{ContentScore}(e) = f_{\text{NLI}}(\text{evidenceText}) \cdot \text{FactualityScore}(e) \cdot \text{MethodologicalRigor}(e)$$
+2.  **Content Quality Analysis with Factual Verification**:
+    ```math
+    \text{ContentScore}(e) = f_{\text{NLI}}(\text{evidenceText}) \cdot \text{FactualityScore}(e) \cdot \text{MethodologicalRigor}(e)
+    ```
 
-   Including:
-   - Natural language inference for claim support
-   - Cross-reference with fact-checking databases
-   - Methodological quality assessment for empirical claims
-   - Statistical significance and effect size evaluation
+    Including:
+    -   Natural language inference for claim support
+    -   Cross-reference with fact-checking databases
+    -   Methodological quality assessment for empirical claims
+    -   Statistical significance and effect size evaluation
 
-3. **Temporal Relevance with Context Awareness**:
-   $$\text{TemporalScore}(e) = \exp(-\lambda \cdot \text{age}(e)) \cdot \text{CurrencyBonus}(e) \cdot \text{ContextualRelevance}(e)$$
+3.  **Temporal Relevance with Context Awareness**:
+    ```math
+    \text{TemporalScore}(e) = \exp(-\lambda \cdot \text{age}(e)) \cdot \text{CurrencyBonus}(e) \cdot \text{ContextualRelevance}(e)
+    ```
 
-4. **Cross-Reference Validation with Network Analysis**:
-   $$\text{CrossRefScore}(e) = \frac{|\text{independentConfirmations}(e)|}{|\text{totalReferences}(e)|} \cdot \text{DiversityScore}(e)$$
-   
-5. **Bias and Reliability Assessment**:
-   $$\text{BiasScore}(e) = 1 - \text{DetectedBias}(e) \cdot \text{SourceReliability}(e)$$
+4.  **Cross-Reference Validation with Network Analysis**:
+    ```math
+    \text{CrossRefScore}(e) = \frac{|\text{independentConfirmations}(e)|}{|\text{totalReferences}(e)|} \cdot \text{DiversityScore}(e)
+    ```
+
+5.  **Bias and Reliability Assessment**:
+    ```math
+    \text{BiasScore}(e) = 1 - \text{DetectedBias}(e) \cdot \text{SourceReliability}(e)
+    ```
 
 Final evidence quality with uncertainty quantification:
-$$w_{\text{quality}}(e) = \text{BayesianAverage}(\text{SourceScore}, \text{ContentScore}, \text{TemporalScore}, \text{CrossRefScore}, \text{BiasScore})$$
+```math
+w_{\text{quality}}(e) = \text{BayesianAverage}(\text{SourceScore}, \text{ContentScore}, \text{TemporalScore}, \text{CrossRefScore}, \text{BiasScore})
+```
 
 ### 4.6 LLM Reliability Enhancement Strategies
 
@@ -606,29 +636,43 @@ Dataset Specifications:
 
 **Primary Quantitative Metrics with Uncertainty Quantification**:
 
-- **Synthesis Accuracy with Confidence Intervals**:
-  $$\text{Accuracy} = \frac{1}{N} \sum_{i=1}^{N} \text{Similarity}(\text{Generated}_i, \text{Gold}_i) \pm \frac{1.96\sigma}{\sqrt{N}}$$
+-   **Synthesis Accuracy with Confidence Intervals**:
+    ```math
+    \text{Accuracy} = \frac{1}{N} \sum_{i=1}^{N} \text{Similarity}(\text{Generated}_i, \text{Gold}_i) \pm \frac{1.96\sigma}{\sqrt{N}}
+    ```
 
-- **Coherence Score with Inter-Rater Reliability**:
-  $$\text{Coherence} = \frac{1}{M} \sum_{j=1}^{M} \text{LogicalConsistency}(\text{Synthesis}_j), \quad \text{IRR} = \frac{\sigma_{\text{between}}^2}{\sigma_{\text{total}}^2}$$
+-   **Coherence Score with Inter-Rater Reliability**:
+    ```math
+    \text{Coherence} = \frac{1}{M} \sum_{j=1}^{M} \text{LogicalConsistency}(\text{Synthesis}_j), \quad \text{IRR} = \frac{\sigma_{\text{between}}^2}{\sigma_{\text{total}}^2}
+    ```
 
-- **Evidence Preservation with Statistical Significance**:
-  $$\text{Preservation} = \frac{|\text{Evidence}_{\text{synthesis}} \cap \text{Evidence}_{\text{gold}}|}{|\text{Evidence}_{\text{gold}}|}, \quad p < 0.05$$
+-   **Evidence Preservation with Statistical Significance**:
+    ```math
+    \text{Preservation} = \frac{|\text{Evidence}_{\text{synthesis}} \cap \text{Evidence}_{\text{gold}}|}{|\text{Evidence}_{\text{gold}}|}, \quad p < 0.05
+    ```
 
-- **Interpretability Index with Cognitive Load Assessment**:
-  $$\text{Interpretability} = \alpha \cdot \text{Clarity} + \beta \cdot \text{Traceability} + \gamma \cdot \text{Justification}$$
+-   **Interpretability Index with Cognitive Load Assessment**:
+    ```math
+    \text{Interpretability} = \alpha \cdot \text{Clarity} + \beta \cdot \text{Traceability} + \gamma \cdot \text{Justification}
+    ```
 
 **Secondary Performance Metrics**:
 
-- **Computational Efficiency with Scalability Analysis**:
-  $$\text{Efficiency}(N) = \frac{\text{Quality}(N)}{\text{Time}(N) \cdot \text{Memory}(N)}, \quad \text{Scaling} = \frac{\log(\text{Time}(10N))}{\log(\text{Time}(N))}$$
+-   **Computational Efficiency with Scalability Analysis**:
+    ```math
+    \text{Efficiency}(N) = \frac{\text{Quality}(N)}{\text{Time}(N) \cdot \text{Memory}(N)}, \quad \text{Scaling} = \frac{\log(\text{Time}(10N))}{\log(\text{Time}(N))}
+    ```
 
-- **Robustness Score with Adversarial Testing**:
-  $$\text{Robustness} = 1 - \frac{\sum_{i=1}^{K} |\text{Performance}_{\text{clean}} - \text{Performance}_{\text{adversarial}_i}|}{K}$$
+-   **Robustness Score with Adversarial Testing**:
+    ```math
+    \text{Robustness} = 1 - \frac{\sum_{i=1}^{K} |\text{Performance}_{\text{clean}} - \text{Performance}_{\text{adversarial}_i}|}{K}
+    ```
 
-- **Trust Calibration with Reliability Analysis**:
-  $$\text{Calibration} = 1 - \text{ECE}, \quad \text{ECE} = \sum_{m=1}^{M} \frac{|B_m|}{N} |\text{acc}(B_m) - \text{conf}(B_m)|$$
-
+-   **Trust Calibration with Reliability Analysis**:
+    ```math
+    \text{Calibration} = 1 - \text{ECE}, \quad \text{ECE} = \sum_{m=1}^{M} \frac{|B_m|}{N} |\text{acc}(B_m) - \text{conf}(B_m)|
+    ```
+    
 **Statistical Testing Protocols**:
 
 1. **Power Analysis and Sample Size Determination**:
@@ -760,32 +804,38 @@ Based on component-level validation, theoretical analysis, and empirical evidenc
   - *Rationale*: Higher uncertainty and incomplete evidence in operational contexts
   - *Human Expert Comparison*: Expected parity or slight improvement in consistency
   - *Baseline Comparison*: 20-30% improvement over simple aggregation methods
-
+ 
 **Statistical Power Analysis**:
-$$\text{Power} = P(\text{reject } H_0 | H_1 \text{ true}) = \Phi\left(\frac{\mu_1 - \mu_0}{\sigma/\sqrt{n}} - z_{\alpha/2}\right) = 0.85$$
+```math
+\text{Power} = P(\text{reject } H_0 | H_1 \text{ true}) = \Phi\left(\frac{\mu_1 - \mu_0}{\sigma/\sqrt{n}} - z_{\alpha/2}\right) = 0.85
+```
 
 For detecting a medium effect size (Cohen's d = 0.5) with α = 0.05, we require n = 64 per condition.
 
 **Computational Efficiency Projections**:
 
-- **Expected Scaling**: O(N log N) with optimized indexing and caching
-  - *Processing Time*: 2-6 seconds per synthesis on standard hardware (16GB RAM, 8-core CPU)
-  - *Memory Requirements*: Linear scaling with evidence set size (~50MB per 1000 SNOs)
-  - *Throughput*: 500-1500 syntheses per hour depending on complexity
+-   **Expected Scaling**: O(N log N) with optimized indexing and caching
+    -   *Processing Time*: 2-6 seconds per synthesis on standard hardware (16GB RAM, 8-core CPU)
+    -   *Memory Requirements*: Linear scaling with evidence set size (~50MB per 1000 SNOs)
+    -   *Throughput*: 500-1500 syntheses per hour depending on complexity
 
-- **Scalability Analysis**:
-  $$\text{Time}(N) = \alpha \cdot N \log N + \beta \cdot N + \gamma$$
-  where α captures indexing overhead, β represents linear processing, and γ is constant initialization cost.
+-   **Scalability Analysis**:
+    ```math
+    \text{Time}(N) = \alpha \cdot N \log N + \beta \cdot N + \gamma
+    ```
+    where α captures indexing overhead, β represents linear processing, and γ is constant initialization cost.
 
 **Interpretability Performance with Validation**:
 
-- **Expected Transparency Scores**: >92% on clarity and traceability metrics
-  - *Evidence Traceability*: 95% of synthesis claims linked to source evidence
-  - *Reasoning Chain Clarity*: 89% of logical steps explicitly documented
-  - *Decision Audit Trail*: 100% of trust score components explainable
+-   **Expected Transparency Scores**: >92% on clarity and traceability metrics
+    -   *Evidence Traceability*: 95% of synthesis claims linked to source evidence
+    -   *Reasoning Chain Clarity*: 89% of logical steps explicitly documented
+    -   *Decision Audit Trail*: 100% of trust score components explainable
 
-- **Trust Calibration Performance**:
-  $$\text{Calibration Error} = \sum_{i=1}^{M} \frac{|B_i|}{N} |\text{Accuracy}(B_i) - \text{Confidence}(B_i)| < 0.08$$
+-   **Trust Calibration Performance**:
+    ```math
+    \text{Calibration Error} = \sum_{i=1}^{M} \frac{|B_i|}{N} |\text{Accuracy}(B_i) - \text{Confidence}(B_i)| < 0.08
+    ```
 
 ### 6.2 Comprehensive Sensitivity Analysis and Robustness Assessment
 
@@ -945,10 +995,12 @@ Expected performance degradation under systematically introduced challenges:
    ```
 
 ### 6.4 Comparative Analysis with Detailed Performance Modeling
-
+ 
 **Quantitative Comparison Framework**:
 
-$$\text{Performance Ratio} = \frac{\text{CNS}_{\text{accuracy}} \times \text{CNS}_{\text{interpretability}}}{\text{Baseline}_{\text{accuracy}} \times \text{Baseline}_{\text{interpretability}}}$$
+```math
+\text{Performance Ratio} = \frac{\text{CNS}_{\text{accuracy}} \times \text{CNS}_{\text{interpretability}}}{\text{Baseline}_{\text{accuracy}} \times \text{Baseline}_{\text{interpretability}}}
+```
 
 **Expected Performance vs. Primary Baselines**:
 
@@ -976,20 +1028,24 @@ $$\text{Performance Ratio} = \frac{\text{CNS}_{\text{accuracy}} \times \text{CNS
    - **Speed Advantage**: 10-20x faster processing time
    - **Bias Reduction**: 30% reduction in systematic biases
    - **Limitations**: Lower performance on novel domains and creative insight
-
+ 
 **Cost-Benefit Analysis**:
 
-$$\text{Cost-Effectiveness} = \frac{\text{Quality}_{\text{improvement}} \times \text{Speed}_{\text{improvement}}}{\text{Development}_{\text{cost}} + \text{Operational}_{\text{cost}}}$$
+```math
+\text{Cost-Effectiveness} = \frac{\text{Quality}_{\text{improvement}} \times \text{Speed}_{\text{improvement}}}{\text{Development}_{\text{cost}} + \text{Operational}_{\text{cost}}}
+```
 
 **Expected Economic Impact**:
 - **Development Cost**: $2-3M for initial implementation and validation
 - **Operational Cost**: $0.10-0.50 per synthesis (including compute and verification)
 - **Value Generation**: 25-40% improvement in decision quality for supported domains
 - **ROI Timeline**: 12-18 months for high-volume applications
-
+ 
 **Scalability Performance Modeling**:
 
-$$\text{Throughput}(N) = \frac{\alpha \cdot \text{Parallel}_{\text{units}}}{1 + \beta \cdot \log(N) + \gamma \cdot N^{0.5}}$$
+```math
+\text{Throughput}(N) = \frac{\alpha \cdot \text{Parallel}_{\text{units}}}{1 + \beta \cdot \log(N) + \gamma \cdot N^{0.5}}
+```
 
 Where N represents SNO population size, and the denominators capture indexing and memory overhead.
 
@@ -1267,7 +1323,9 @@ CNS 2.0's output quality is fundamentally bounded by the quality and completenes
 - **Creative Insight Limitations**: Bounded by recombination of existing information patterns
 
 *Theoretical Framework for Quality Bounds*:
-$$\text{Synthesis Quality} \leq \min(\text{Evidence Quality}, \text{Reasoning Capability}, \text{Domain Fit})$$
+```math
+\text{Synthesis Quality} \leq \min(\text{Evidence Quality}, \text{Reasoning Capability}, \text{Domain Fit})
+```
 
 **Context and Cultural Dependency**:
 
@@ -1631,50 +1689,50 @@ CNS 2.0 thus represents not merely a technical achievement, but a foundational c
 
 ## References
 
-[1] Lippi, M., & Torroni, P. (2016). Argumentation mining: State of the art and emerging trends. *ACM Transactions on Internet Technology*, 16(2), 1-25.
+<a id="ref1"></a>[1] Lippi, M., & Torroni, P. (2016). Argumentation mining: State of the art and emerging trends. *ACM Transactions on Internet Technology*, 16(2), 1-25.
 
-[2] Mochales, R., & Moens, M. F. (2011). Argumentation mining. *Artificial Intelligence and Law*, 19(1), 1-22.
+<a id="ref2"></a>[2] Mochales, R., & Moens, M. F. (2011). Argumentation mining. *Artificial Intelligence and Law*, 19(1), 1-22.
 
-[3] Lippi, M., & Torroni, P. (2015). Context-independent claim detection for argument mining. In *Proceedings of the 24th International Conference on Artificial Intelligence* (pp. 185-191).
+<a id="ref3"></a>[3] Lippi, M., & Torroni, P. (2015). Context-independent claim detection for argument mining. In *Proceedings of the 24th International Conference on Artificial Intelligence* (pp. 185-191).
 
-[4] Wachsmuth, H., Potthast, M., Al-Khatib, K., Ajjour, Y., Puschmann, J., Qu, J., ... & Stein, B. (2017). Building an argument search engine for the web. In *Proceedings of the 4th Workshop on Argument Mining* (pp. 49-59).
+<a id="ref4"></a>[4] Wachsmuth, H., Potthast, M., Al-Khatib, K., Ajjour, Y., Puschmann, J., Qu, J., ... & Stein, B. (2017). Building an argument search engine for the web. In *Proceedings of the 4th Workshop on Argument Mining* (pp. 49-59).
 
-[5] Skeppstedt, M., Peldszus, A., & Stede, M. (2018). More or less controlled elicitation of argumentative text: Enlarging a microtext corpus via crowdsourcing. In *Proceedings of the 5th Workshop on Argument Mining* (pp. 155-163).
+<a id="ref5"></a>[5] Skeppstedt, M., Peldszus, A., & Stede, M. (2018). More or less controlled elicitation of argumentative text: Enlarging a microtext corpus via crowdsourcing. In *Proceedings of the 5th Workshop on Argument Mining* (pp. 155-163).
 
-[6] Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. *arXiv preprint arXiv:1301.3781*.
+<a id="ref6"></a>[6] Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. *arXiv preprint arXiv:1301.3781*.
 
-[7] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of deep bidirectional transformers for language understanding. *arXiv preprint arXiv:1810.04805*.
+<a id="ref7"></a>[7] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of deep bidirectional transformers for language understanding. *arXiv preprint arXiv:1810.04805*.
 
-[8] Wang, A., Singh, A., Michael, J., Hill, F., Levy, O., & Bowman, S. R. (2018). GLUE: A multi-task benchmark and analysis platform for natural language understanding. *arXiv preprint arXiv:1804.07461*.
+<a id="ref8"></a>[8] Wang, A., Singh, A., Michael, J., Hill, F., Levy, O., & Bowman, S. R. (2018). GLUE: A multi-task benchmark and analysis platform for natural language understanding. *arXiv preprint arXiv:1804.07461*.
 
-[9] Chen, X., Jia, S., & Xiang, Y. (2020). A review: Knowledge reasoning over knowledge graph. *Expert Systems with Applications*, 141, 112948.
+<a id="ref9"></a>[9] Chen, X., Jia, S., & Xiang, Y. (2020). A review: Knowledge reasoning over knowledge graph. *Expert Systems with Applications*, 141, 112948.
 
-[10] Stone, P., & Veloso, M. (2000). Multiagent systems: A survey from a machine learning perspective. *Autonomous Robots*, 8(3), 345-383.
+<a id="ref10"></a>[10] Stone, P., & Veloso, M. (2000). Multiagent systems: A survey from a machine learning perspective. *Autonomous Robots*, 8(3), 345-383.
 
-[11] Tampuu, A., Matiisen, T., Kodelja, D., Kuzovkin, I., Korjus, K., Aru, J., ... & Vicente, R. (2017). Multiagent cooperation and competition with deep reinforcement learning. *PLoS One*, 12(4), e0172395.
+<a id="ref11"></a>[11] Tampuu, A., Matiisen, T., Kodelja, D., Kuzovkin, I., Korjus, K., Aru, J., ... & Vicente, R. (2017). Multiagent cooperation and competition with deep reinforcement learning. *PLoS One*, 12(4), e0172395.
 
-[12] Rahwan, I., & Simari, G. R. (Eds.). (2009). *Argumentation in artificial intelligence*. Springer.
+<a id="ref12"></a>[12] Rahwan, I., & Simari, G. R. (Eds.). (2009). *Argumentation in artificial intelligence*. Springer.
 
-[13] Chesñevar, C., Maguitman, A., & Loui, R. (2000). Logical models of argument. *ACM Computing Surveys*, 32(4), 337-383.
+<a id="ref13"></a>[13] Chesñevar, C., Maguitman, A., & Loui, R. (2000). Logical models of argument. *ACM Computing Surveys*, 32(4), 337-383.
 
-[14] Du, Y., Li, S., Torralba, A., Tenenbaum, J. B., & Mordatch, I. (2023). Improving factuality and reasoning in language models through multiagent debate. *arXiv preprint arXiv:2305.14325*.
+<a id="ref14"></a>[14] Du, Y., Li, S., Torralba, A., Tenenbaum, J. B., & Mordatch, I. (2023). Improving factuality and reasoning in language models through multiagent debate. *arXiv preprint arXiv:2305.14325*.
 
-[15] Jøsang, A. (2001). A logic for uncertain probabilities. *International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems*, 9(3), 279-311.
+<a id="ref15"></a>[15] Jøsang, A. (2001). A logic for uncertain probabilities. *International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems*, 9(3), 279-311.
 
-[16] Castelfranchi, C., & Falcone, R. (2010). *Trust theory: A socio-cognitive and computational model*. John Wiley & Sons.
+<a id="ref16"></a>[16] Castelfranchi, C., & Falcone, R. (2010). *Trust theory: A socio-cognitive and computational model*. John Wiley & Sons.
 
-[17] Kumar, S., & Shah, N. (2018). False information on web and social media: A survey. *arXiv preprint arXiv:1804.08559*.
+<a id="ref17"></a>[17] Kumar, S., & Shah, N. (2018). False information on web and social media: A survey. *arXiv preprint arXiv:1804.08559*.
 
-[18] Zhang, X., Ghorbani, A. A., & Fu, X. (2019). A comprehensive survey on adversarial examples in machine learning. *IEEE Transactions on Knowledge and Data Engineering*, 33(2), 448-466.
+<a id="ref18"></a>[18] Zhang, X., Ghorbani, A. A., & Fu, X. (2019). A comprehensive survey on adversarial examples in machine learning. *IEEE Transactions on Knowledge and Data Engineering*, 33(2), 448-466.
 
-[19] Thorne, J., Vlachos, A., Christodoulopoulos, C., & Mittal, A. (2018). FEVER: a large-scale dataset for fact extraction and verification. In *Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics* (pp. 809-819).
+<a id="ref19"></a>[19] Thorne, J., Vlachos, A., Christodoulopoulos, C., & Mittal, A. (2018). FEVER: a large-scale dataset for fact extraction and verification. In *Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics* (pp. 809-819).
 
-[20] Augenstein, I., Lioma, C., Wang, D., Lima, L. C., Hansen, C., Hansen, C., & Simonsen, J. G. (2019). MultiFC: A real-world multi-domain dataset for evidence-based fact checking of claims. In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing* (pp. 4685-4697).
+<a id="ref20"></a>[20] Augenstein, I., Lioma, C., Wang, D., Lima, L. C., Hansen, C., Hansen, C., & Simonsen, J. G. (2019). MultiFC: A real-world multi-domain dataset for evidence-based fact checking of claims. In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing* (pp. 4685-4697).
 
-[21] Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. *arXiv preprint arXiv:2005.14165*.
+<a id="ref21"></a>[21] Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. *arXiv preprint arXiv:2005.14165*.
 
-[22] Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E., Le, Q., & Zhou, D. (2022). Chain of thought prompting elicits reasoning in large language models. *arXiv preprint arXiv:2201.11903*.
+<a id="ref22"></a>[22] Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E., Le, Q., & Zhou, D. (2022). Chain of thought prompting elicits reasoning in large language models. *arXiv preprint arXiv:2201.11903*.
 
-[23] Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023). Tree of thoughts: Deliberate problem solving with large language models. *arXiv preprint arXiv:2305.10601*.
+<a id="ref23"></a>[23] Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023). Tree of thoughts: Deliberate problem solving with large language models. *arXiv preprint arXiv:2305.10601*.
 
-[24] Zhang, Y., Li, Y., Cui, L., Cai, D., Liu, L., Fu, T., ... & Shi, S. (2023). Siren's song in the AI ocean: A survey on hallucination in large language models. *arXiv preprint arXiv:2309.01219*.
+<a id="ref24"></a>[24] Zhang, Y., Li, Y., Cui, L., Cai, D., Liu, L., Fu, T., ... & Shi, S. (2023). Siren's song in the AI ocean: A survey on hallucination in large language models. *arXiv preprint arXiv:2309.01219*.
