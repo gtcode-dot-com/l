@@ -233,14 +233,27 @@ class LogicCritic(BaseCritic):
 ```
 
 #### Path to a Production GNN-based Logic Critic
-Our heuristic-based `LogicCritic` is a great starting point, but for a production system, implementing the GNN-based critic envisioned by the paper is a key enhancement. Here’s a roadmap for that process:
+Our heuristic-based `LogicCritic` is a robust and transparent starting point. However, to capture more subtle and complex patterns of logical reasoning, implementing the GNN-based critic envisioned by the paper is a key enhancement. A GNN can learn from data to identify sophisticated patterns of coherence or fallacy that are difficult to define with hand-crafted rules. Here is a more detailed roadmap for this research and engineering effort:
 
-1.  **Data Collection:** A GNN needs labeled data. You would need to create a dataset of SNO reasoning graphs, each labeled with a "coherence score" (e.g., from 0 to 1). This dataset could be bootstrapped by human experts rating the logical soundness of various argument structures.
-2.  **Feature Engineering:** Each node (claim) in the graph would need features. The most important feature would be the semantic embedding of the claim's text content. Edge features could include a one-hot encoding of the `RelationType` (e.g., `SUPPORTS`, `CONTRADICTS`).
-3.  **Model Architecture:** A Graph Attention Network (GAT) or GraphSAGE would be excellent choices. These architectures can learn to weigh the importance of different neighboring claims and relationships when evaluating the logic of a central claim.
-4.  **Training Task:** The GNN would be trained on a "graph classification" task. It would take the entire reasoning graph as input and output a single value—the predicted coherence score. The loss function would aim to minimize the difference between the GNN's prediction and the human-provided label from the dataset.
+1.  **Data Collection and Labeling**: This is the most critical and labor-intensive step.
+    *   **Source Material**: Gather a large corpus of arguments. These could be SNOs generated from scientific papers, legal documents, or philosophical texts.
+    *   **Labeling Strategy**: You need to assign a "logical coherence" score to each reasoning graph. This is non-trivial. A good approach is to use multiple human raters (ideally experts in logic or the subject matter) to score each graph on a scale (e.g., 1-5). The average or consensus score becomes the label. You would also want them to flag specific logical fallacies, which could be used for more granular training tasks.
+    *   **Dataset Size**: Aim for a dataset of at least a few thousand labeled graphs to train a robust GNN.
 
-This GNN would be able to learn much more nuanced patterns of logical fallacies or strengths than our heuristic model, moving the critic from a proxy to a powerful, learned component.
+2.  **Feature Engineering for Graph Components**: The GNN needs numerical representations of the graph's nodes and edges.
+    *   **Node Features**: Each node (a `ClaimNode`) in the graph must be represented as a vector. The primary feature is the semantic embedding of the claim's text content, which we can get from the same model used for hypothesis embeddings. You could also add metadata features, like a one-hot encoding of the `claim_type`.
+    *   **Edge Features**: Each edge (a `ReasoningEdge`) can also have features. The most important would be a numerical representation of the `RelationType` (e.g., a one-hot vector where `SUPPORTS` is `[1,0,0]`, `CONTRADICTS` is `[0,1,0]`, etc.). The `strength` of the edge is another direct numerical feature.
+
+3.  **Model Architecture Selection**: The choice of GNN architecture is key.
+    *   **Good Candidates**: Graph Convolutional Networks (GCNs), GraphSAGE, and Graph Attention Networks (GATs) are all strong choices.
+    *   **Why GAT might be best**: A Graph Attention Network (GAT) is particularly well-suited for this task. GATs learn to assign different "attention" weights to different neighbors when aggregating information. In our context, this means the model could learn that a `CONTRADICTS` edge from a highly trusted claim is more important than a `SUPPORTS` edge from a weak one. This ability to weigh the importance of relationships is central to logical analysis.
+
+4.  **Training Task Definition**: The GNN will be trained on a **graph regression** task.
+    *   **Input**: The entire reasoning graph, with its node and edge features.
+    -   **Output**: A single continuous value, the predicted coherence score.
+    -   **Loss Function**: A standard regression loss function like Mean Squared Error (MSE) would be used to minimize the difference between the GNN's predicted score and the average human-rated score from the dataset.
+
+By completing this process, you replace the heuristic-based proxy with a powerful, data-driven model of logical coherence. This learned critic can discover and penalize subtle logical weaknesses that are difficult to anticipate with manual rules, significantly increasing the sophistication of the entire CNS 2.0 system.
 
 ### 3. Novelty-Parsimony Critic Implementation
 
@@ -290,44 +303,66 @@ class NoveltyParsimonyCritic(BaseCritic):
 
 ## Contextual Evaluation: Dynamic Weight Adjustment
 
-A key feature of the CNS 2.0 framework is its adaptability. The `adjust_weights` method in our `CriticPipeline` is the mechanism for this, allowing the system to change its evaluation priorities based on the current context or goal.
-
-Why is this important? Because not all phases of knowledge discovery are the same. Sometimes you need to explore wildly different ideas; other times, you need to rigorously verify a specific claim. Dynamic weights allow the CNS system to support both.
+A key feature of the CNS 2.0 framework is its adaptability. The `adjust_weights` method in our `CriticPipeline` is the mechanism for this, allowing the system to change its "values" or priorities based on the current goal. Not all phases of knowledge discovery are the same; sometimes the goal is to explore wildly different ideas, while other times it is to rigorously verify a specific claim. Dynamic weights allow the CNS system to support both modes of operation.
 
 ### Scenario: Shifting from Exploration to Verification
 
-Let's consider a common workflow:
-1.  **Exploration Phase:** When starting in a new domain, the system's goal is to generate a diverse set of novel hypotheses. We want to reward new ideas, even if they are not yet perfectly logical or well-grounded.
-2.  **Verification Phase:** Once a set of promising, high-novelty SNOs has been identified, the goal shifts. We now need to rigorously test these ideas, prioritizing their logical consistency and evidential support.
-
-Here’s how we would use dynamic weights to manage this shift:
+Let's demonstrate this with a concrete example. We will create a sample SNO that is highly novel but has mediocre logic and grounding. We will then evaluate it under two different weighting schemes: one that prioritizes novelty (Exploration Mode) and one that prioritizes rigor (Verification Mode).
 
 ```python
-# Assume 'critic_pipeline' is an instance of our CriticPipeline
+# --- Setup: Create a sample SNO and a pipeline ---
+# This code assumes the classes from previous chapters are available.
 
-# --- Phase 1: Exploration ---
-# We want to find new ideas, so we boost the weight of the Novelty critic.
-print("Setting weights for EXPLORATION phase...")
-critic_pipeline.adjust_weights({
-    CriticType.NOVELTY: 0.7,   # High weight for new ideas
-    CriticType.LOGIC: 0.15,
-    CriticType.GROUNDING: 0.15
+# 1. Create a mock SNO. Let's imagine this is a very new, slightly underdeveloped idea.
+#    We will manually set the scores each critic *would* produce for demonstration.
+class MockCritic(BaseCritic):
+    def __init__(self, critic_type, weight, mock_score):
+        super().__init__(critic_type, weight)
+        self.mock_score = mock_score
+    def evaluate(self, sno, context=None):
+        return CriticResult(score=self.mock_score, confidence=1.0, explanation="Mocked result", evidence={}, sub_scores={})
+
+# Our SNO is very novel (0.9) but has weak logic (0.4) and grounding (0.5)
+mock_novelty_critic = MockCritic(CriticType.NOVELTY, 1.0, 0.9)
+mock_logic_critic = MockCritic(CriticType.LOGIC, 1.0, 0.4)
+mock_grounding_critic = MockCritic(CriticType.GROUNDING, 1.0, 0.5)
+
+# Create the pipeline
+pipeline = CriticPipeline()
+pipeline.add_critic(mock_novelty_critic)
+pipeline.add_critic(mock_logic_critic)
+pipeline.add_critic(mock_grounding_critic)
+
+# A dummy SNO object to pass to the pipeline
+sample_sno = StructuredNarrativeObject(central_hypothesis="A sample SNO for testing.")
+
+# --- Phase 1: Exploration Mode ---
+# We want to find new ideas, so we heavily weight novelty.
+print("--- EVALUATING IN EXPLORATION MODE ---")
+pipeline.adjust_weights({
+    CriticType.NOVELTY: 0.8,   # High weight for new ideas
+    CriticType.LOGIC: 0.1,
+    CriticType.GROUNDING: 0.1
 })
-# Now, when evaluate_sno is called, it will heavily favor novel SNOs.
-print(f"Current weights: {critic_pipeline.critics[CriticType.NOVELTY].weight=}, {critic_pipeline.critics[CriticType.GROUNDING].weight=}")
+exploration_result = pipeline.evaluate_sno(sample_sno, {})
+print(f"Weights: {exploration_result['weights_used']}")
+print(f"Novelty Score: {mock_novelty_critic.mock_score}, Logic Score: {mock_logic_critic.mock_score}, Grounding Score: {mock_grounding_critic.mock_score}")
+print(f"Final Trust Score (Exploration): {exploration_result['trust_score']:.4f}\n")
+# Expected: (0.9*0.8 + 0.4*0.1 + 0.5*0.1) / (0.8+0.1+0.1) = 0.81
 
-
-# --- Phase 2: Verification ---
-# We have some promising ideas. Now we need to check if they hold up.
-# We boost the Grounding and Logic critics.
-print("\nSetting weights for VERIFICATION phase...")
-critic_pipeline.adjust_weights({
+# --- Phase 2: Verification Mode ---
+# Now, we shift to rigorously checking our ideas.
+print("--- EVALUATING IN VERIFICATION MODE ---")
+pipeline.adjust_weights({
     CriticType.NOVELTY: 0.1,    # Low weight for novelty
     CriticType.LOGIC: 0.45,     # High weight for logical soundness
     CriticType.GROUNDING: 0.45  # High weight for evidential support
 })
-# Now, the same SNOs will be re-evaluated with a focus on their rigor.
-print(f"Current weights: {critic_pipeline.critics[CriticType.NOVELTY].weight=}, {critic_pipeline.critics[CriticType.GROUNDING].weight=}")
+verification_result = pipeline.evaluate_sno(sample_sno, {})
+print(f"Weights: {verification_result['weights_used']}")
+print(f"Novelty Score: {mock_novelty_critic.mock_score}, Logic Score: {mock_logic_critic.mock_score}, Grounding Score: {mock_grounding_critic.mock_score}")
+print(f"Final Trust Score (Verification): {verification_result['trust_score']:.4f}\n")
+# Expected: (0.9*0.1 + 0.4*0.45 + 0.5*0.45) / (0.1+0.45+0.45) = 0.495
 ```
 
-This ability to programmatically shift the system's "values" makes CNS 2.0 a powerful and flexible tool for knowledge work, capable of adapting its strategy to the task at hand.
+As the output clearly shows, the **same SNO** is considered high-trust (`0.81`) in exploration mode but fails to meet the quality bar (`0.495`) in verification mode. This ability to programmatically shift the system's "values" is not just a theoretical feature but a practical tool for guiding the knowledge discovery process, making CNS 2.0 a powerful and flexible framework.

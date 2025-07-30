@@ -126,13 +126,15 @@ class AdvancedSynthesisEngine:
 
 ## Deployment and Scaling for Production
 
-A "complete" implementation isn't just about code; it's about making that code deployable and scalable. The `asyncio` based system we've built is excellent for a single-process application but needs a more robust architecture for production.
+A "complete" implementation isn't just about code; it's about making that code deployable, scalable, and observable. The `asyncio`-based system we've built is an excellent single-process application, but a production-grade system requires a more robust, distributed architecture. This section provides a step-by-step guide to productionizing the CNS 2.0 system.
 
 ### 1. Containerization with Docker
 
-Containerizing the CNS system using Docker provides a consistent, isolated, and portable environment, which is critical for deployment.
+Containerizing the CNS system with Docker is the first step. It provides a consistent, isolated, and portable environment, which is critical for reliable deployment.
 
-First, create a `requirements.txt` file listing all Python dependencies:
+**Step 1: Create a `requirements.txt` file.**
+This file lists all Python dependencies for your project.
+
 ```txt
 # requirements.txt
 numpy
@@ -140,85 +142,148 @@ networkx
 torch
 transformers
 sentence-transformers
-faiss-cpu # or faiss-gpu
+faiss-cpu         # Use faiss-gpu if you have a compatible GPU
 scikit-learn
 matplotlib
-PyYAML # For loading config files
-# For a production job queue:
+PyYAML            # For loading config files from YAML
+
+# For a production job queue
 redis
 celery
+
+# For structured logging
+structlog
 ```
 
-Next, create a `Dockerfile` to package the application:
+**Step 2: Create a `Dockerfile`.**
+This file is a blueprint for building your container image.
+
 ```dockerfile
-# Use an official Python runtime as a parent image
+# Start with an official Python slim image for a smaller footprint
 FROM python:3.10-slim
 
-# Set the working directory in the container
+# Set the working directory inside the container
 WORKDIR /usr/src/app
 
-# Copy the requirements file into the container first
+# Copy the requirements file first to leverage Docker's layer caching.
+# Dependencies will only be re-installed if this file changes.
 COPY requirements.txt ./
-
-# Install dependencies. This is done in a separate layer to leverage Docker's
-# layer caching. The dependencies will only be re-installed if requirements.txt changes.
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code into the container.
-# This is done *after* installing dependencies, so that code changes
+# This is done *after* installing dependencies, so code changes
 # don't trigger a full dependency re-installation.
 COPY . .
 
-# Command to run the application
-# This would be the script that starts the CNSWorkflowManager or Celery workers
-CMD [ "python", "./cns_main.py" ]
+# Define the default command to run when the container starts.
+# This will typically be the command to start a Celery worker.
+CMD [ "celery", "-A", "cns.tasks", "worker", "--loglevel=info" ]
 ```
-With this `Dockerfile`, you can build and run the CNS system anywhere Docker is installed, eliminating "it works on my machine" problems.
 
-### 2. Scaling with a Dedicated Job Queue
+**Step 3: Build the Docker image.**
+From your terminal, run the build command:
+`docker build -t cns-worker:latest .`
 
-The in-memory `asyncio.PriorityQueue` is a major bottleneck for scaling. In a production environment with multiple workers, tasks need to be distributed via a centralized message broker. **Celery** with **Redis** is a standard, powerful solution for this.
+With this image, you can now run the CNS system anywhere Docker is installed, eliminating "it works on my machine" problems.
 
-The architecture would shift as follows:
+### 2. Scaling with a Dedicated Job Queue (Celery)
 
-1.  **API Server (e.g., FastAPI)**: A lightweight web server receives document submission requests. Instead of putting tasks into a local queue, it calls a Celery task.
-2.  **Message Broker (Redis)**: Redis holds the queue of tasks to be processed.
-3.  **Celery Workers (Multiple Containers)**: These are the workhorses. You can run multiple instances of the CNS application as Celery workers. Each worker pulls a task (e.g., "ingest this document") from the Redis queue and executes it.
+The in-memory `asyncio.Queue` is a major bottleneck for scaling. A production environment with multiple workers requires a centralized **message broker** to distribute tasks. We will use **Celery** with **Redis**.
 
-Here’s how you might define an ingestion task using Celery:
+The architecture shifts as follows:
+1.  **API Server (e.g., FastAPI)**: A lightweight web server receives requests (e.g., to ingest a new document). Instead of processing it directly, it enqueues a task in Celery.
+2.  **Message Broker (Redis)**: Redis holds the queue of tasks to be processed. It is a fast, in-memory data store that is perfect for this role.
+3.  **Celery Workers (Multiple Docker Containers)**: These are the workhorses. You can run multiple instances of your `cns-worker` container. Each worker pulls a task from the Redis queue and executes it.
+
+**Step 1: Define Celery tasks.**
+Create a `tasks.py` file. This is where you define the functions that your workers will execute.
 
 ```python
-# tasks.py
+# cns/tasks.py
 from celery import Celery
-from cns_workflow_manager import CNSWorkflowManager # Your main CNS logic
+from .workflow import CNSWorkflowManager # Your main CNS logic
+from .logging_setup import logger # Use our structured logger
 
-# Configure Celery
-# The broker URL points to your Redis instance.
-app = Celery('cns_tasks', broker='redis://localhost:6379/0')
+# Configure Celery to use Redis as the message broker.
+app = Celery('cns_tasks', broker='redis://redis:6379/0')
 
-# Initialize a singleton instance of the CNS manager
-# Models are loaded only once per worker, which is very efficient.
+# Initialize a singleton instance of the CNS manager.
+# Models are loaded only once per worker process, which is very efficient.
 cns_manager = CNSWorkflowManager()
 
 @app.task
-def process_document_task(document_text: str, source_metadata: dict):
-    """
-    A Celery task to handle the ingestion of a single document.
-    This function will be executed by a remote Celery worker.
-    """
-    # Note: The original manager used asyncio, so you would need to adapt
-    # the core ingestion logic to be synchronous or use Celery's async support.
-    # For simplicity, let's assume a synchronous version `ingest_document_sync`.
-    
-    # cns_manager.ingest_document_sync(document_text, source_metadata)
-    
-    logger.info(f"Finished processing document: {source_metadata.get('title')}")
+def process_ingestion(document_text: str, source: str):
+    """A Celery task to handle the ingestion of a single document."""
+    logger.info("ingestion_task_received", source=source)
+    # Note: The original manager used asyncio. For Celery, you would
+    # adapt the core logic to be synchronous or use Celery's async support.
+    # Here, we assume a synchronous `ingest_and_evaluate` method.
+    cns_manager.ingest_and_evaluate(document_text, source)
+    logger.info("ingestion_task_complete", source=source)
+```
+
+**Step 2: Start the services.**
+You would typically use `docker-compose` to start Redis, the API server, and your Celery workers together. This architecture decouples task submission from processing, allowing you to scale the number of workers independently to handle any workload.
+
+### 3. Production-Ready Logging with `structlog`
+
+In a distributed system with multiple workers, standard print statements or basic logs are insufficient. You need **structured logging**. Structured logs (e.g., in JSON format) are machine-readable, making them easy to search, filter, and analyze in a centralized logging platform (like ELK Stack, Splunk, or Datadog).
+
+**Step 1: Configure `structlog`.**
+Create a `logging_setup.py` file to configure logging for your entire application.
+
+```python
+# cns/logging_setup.py
+import logging
+import structlog
+
+# Configure standard logging
+logging.basicConfig(level=logging.INFO)
+
+# Configure structlog
+structlog.configure(
+    processors=[
+        structlog.stdlib.add_log_level,
+        structlog.processors.TimeStamper(fmt="iso"),
+        structlog.processors.JSONRenderer(),
+    ],
+    logger_factory=structlog.stdlib.LoggerFactory(),
+    wrapper_class=structlog.stdlib.BoundLogger,
+)
+
+logger = structlog.get_logger()
+```
+
+**Step 2: Use the logger in your application.**
+Instead of `print()` or `logging.info()`, use the `structlog` logger.
+
+```python
+# in cns/workflow.py
+from .logging_setup import logger
+
+class CNSWorkflowManager:
+    def ingest_and_evaluate(self, text, source):
+        logger.info("sno_ingestion_started", source=source, text_length=len(text))
+        try:
+            # ... ingestion logic ...
+            sno = self.ingestion_pipeline.ingest_document(text, source)
+            # ... evaluation logic ...
+            self.critic_pipeline.evaluate_sno(sno, context)
+            logger.info(
+                "sno_evaluation_complete",
+                sno_id=sno.sno_id,
+                trust_score=sno.trust_score,
+                source=source,
+            )
+        except Exception as e:
+            logger.error("ingestion_failed", error=str(e), source=source)
 
 ```
 
-To start a worker, you would run: `celery -A tasks worker --loglevel=info`.
+When this code runs, it will produce JSON log entries like this:
+`{"log_level": "info", "timestamp": "2023-10-27T10:30:00Z", "event": "sno_evaluation_complete", "sno_id": "...", "trust_score": 0.75, "source": "doc1.pdf"}`
 
-This architecture decouples the task submission from the actual processing, allowing you to scale the number of workers independently based on the workload, creating a truly robust and scalable production system.
+This format is incredibly powerful for debugging and monitoring a complex, distributed system.
 
 ### 3. Production Configuration Management
 
