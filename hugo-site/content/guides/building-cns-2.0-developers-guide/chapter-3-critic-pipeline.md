@@ -35,30 +35,7 @@ $$
 
 **From Paper to Code:**
 
-Our `CriticPipeline` class directly implements this weighted summation. Look at the `evaluate_sno` method:
-
-```python
-# From CriticPipeline.evaluate_sno
-total_weighted_score = 0.0
-total_weight = 0.0
-
-for critic_type, critic in self.critics.items():
-    result = critic.evaluate(sno, context)
-    total_weighted_score += result.score * critic.weight
-    total_weight += critic.weight
-
-trust_score = total_weighted_score / total_weight if total_weight > 0 else 0.0
-```
-
-Here's the breakdown:
-
-- The `for` loop iterates through each critic, which represents the summation ($\sum$).
-- `result.score` is the $\text{Score}_i(\mathcal{S})$ for a specific critic (Grounding, Logic, or Novelty).
-- `critic.weight` is the $w_i$ for that critic.
-- `total_weighted_score` accumulates the `result.score * critic.weight` product for each critic.
-- Finally, we divide by `total_weight` to normalize the score, which becomes the SNO's final `trust_score` (`T`).
-
-The `adjust_weights` method allows for the dynamic adjustment of $w_i$ values, just as described in the paper.
+Our `CriticPipeline` class directly implements this weighted summation. The `evaluate_sno` method iterates through each registered critic, calculates its score, multiplies it by the critic's weight, and sums the results. This weighted sum is then normalized to produce the final `trust_score`. The `adjust_weights` method allows for the dynamic adjustment of $w_i$ values, a crucial feature for contextual evaluation that we will discuss later in this chapter.
 
 ## Implementing the Specialized Critics
 
@@ -78,11 +55,11 @@ from enum import Enum
 @dataclass
 class CriticResult:
     """Result from a critic evaluation with full transparency"""
-    score: float  # Normalized score [0, 1]
-    confidence: float  # Confidence in the assessment [0, 1]
-    explanation: str  # Human-readable explanation
-    evidence: Dict[str, Any]  # Supporting evidence for the score
-    sub_scores: Dict[str, float]  # Breakdown of component scores
+    score: float
+    confidence: float
+    explanation: str
+    evidence: Dict[str, Any]
+    sub_scores: Dict[str, float]
 
 class CriticType(Enum):
     GROUNDING = "grounding"
@@ -100,21 +77,17 @@ class BaseCritic(ABC):
     
     @abstractmethod
     def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
-        """Evaluate an SNO and return detailed results"""
         pass
     
     def update_weight(self, new_weight: float):
-        """Dynamically adjust critic weight based on context"""
         self.weight = new_weight
     
     def get_statistics(self) -> Dict[str, Any]:
-        """Get performance statistics for this critic"""
         return {
             'type': self.critic_type.value,
             'weight': self.weight,
             'evaluations': self.evaluation_count,
             'avg_score': np.mean([r['score'] for r in self.performance_history]) if self.performance_history else 0.0,
-            'avg_confidence': np.mean([r['confidence'] for r in self.performance_history]) if self.performance_history else 0.0
         }
 
 class CriticPipeline:
@@ -125,11 +98,9 @@ class CriticPipeline:
         self.evaluation_history = []
     
     def add_critic(self, critic: BaseCritic):
-        """Add a critic to the pipeline"""
         self.critics[critic.critic_type] = critic
     
     def evaluate_sno(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> Dict[str, Any]:
-        """Evaluate an SNO using all available critics"""
         results = {}
         total_weighted_score = 0.0
         total_weight = 0.0
@@ -137,36 +108,23 @@ class CriticPipeline:
         for critic_type, critic in self.critics.items():
             result = critic.evaluate(sno, context)
             results[critic_type.value] = result
-            
-            # Accumulate weighted score
             total_weighted_score += result.score * critic.weight
             total_weight += critic.weight
-            
-            # Update critic performance history
-            critic.performance_history.append({
-                'score': result.score,
-                'confidence': result.confidence
-            })
+            critic.performance_history.append({'score': result.score, 'confidence': result.confidence})
             critic.evaluation_count += 1
         
-        # Compute final trust score
         trust_score = total_weighted_score / total_weight if total_weight > 0 else 0.0
-        
-        # Update SNO trust score
         sno.trust_score = trust_score
         
         evaluation_result = {
             'trust_score': trust_score,
             'critic_results': results,
             'weights_used': {ct.value: c.weight for ct, c in self.critics.items()},
-            'evaluation_id': len(self.evaluation_history)
         }
-        
         self.evaluation_history.append(evaluation_result)
         return evaluation_result
     
     def adjust_weights(self, weight_updates: Dict[CriticType, float]):
-        """Dynamically adjust critic weights based on context"""
         for critic_type, new_weight in weight_updates.items():
             if critic_type in self.critics:
                 self.critics[critic_type].update_weight(new_weight)
@@ -174,32 +132,23 @@ class CriticPipeline:
 ### 1. Grounding Critic Implementation
 
 > **From Paper to Code: The Grounding Critic**
-> The Grounding Critic evaluates how well a narrative's claims are supported by its evidence. Section 2.2 provides its formula:
-
-$$
-\text{Score}_G = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} p(v|e)
-$$
-
-> Here, $p(v|e)$ is the plausibility score of a claim `v` given a piece of evidence `e`. We will implement this using a pre-trained Natural Language Inference (NLI) model. An NLI model takes a premise (evidence) and a hypothesis (claim) and outputs probabilities for "entailment," "neutral," and "contradiction." We will use the "entailment" probability as our $p(v|e)$.
+> The Grounding Critic evaluates how well a narrative's claims are supported by its evidence. The paper provides its formula:
+> $$ \text{Score}_G = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} p(v|e) $$
+> Here, $p(v|e)$ is the plausibility score of a claim `v` given evidence `e`. We implement this using a pre-trained Natural Language Inference (NLI) model, where the "entailment" probability serves as $p(v|e)$.
 
 ```python
 class GroundingCritic(BaseCritic):
     def __init__(self, weight: float, nli_model=None, nli_tokenizer=None, nli_model_name: str = "microsoft/deberta-large-mnli"):
         super().__init__(CriticType.GROUNDING, weight)
-        
-        # Use pre-loaded models if provided (for efficiency), otherwise load on demand
-        if nli_model is not None and nli_tokenizer is not None:
-            self.nli_model = nli_model
-            self.nli_tokenizer = nli_tokenizer
+        if nli_model and nli_tokenizer:
+            self.nli_model, self.nli_tokenizer = nli_model, nli_tokenizer
         elif HAS_TRANSFORMERS:
             import transformers
             self.nli_tokenizer = transformers.AutoTokenizer.from_pretrained(nli_model_name)
             self.nli_model = transformers.AutoModelForSequenceClassification.from_pretrained(nli_model_name)
         else:
             raise ImportError("Transformers library is required for the GroundingCritic.")
-        
-        # Ensure we know the index for entailment
-        self.entailment_id = self.nli_model.config.label2id.get('entailment', 2)  # Default to 2 if not found
+        self.entailment_id = self.nli_model.config.label2id.get('entailment', 2)
 
     def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
         claims = [data['claim'] for _, data in sno.reasoning_graph.nodes(data=True)]
@@ -208,39 +157,23 @@ class GroundingCritic(BaseCritic):
         if not claims or not evidence_contents:
             return CriticResult(0.0, 1.0, "No claims or evidence to ground.", {}, {})
 
-        total_max_plausibility = 0.0
-        sub_scores = {}
-
+        total_max_plausibility, sub_scores = 0.0, {}
         for claim in claims:
-            max_plausibility_for_claim = 0.0
-            
-            # Prepare NLI model inputs
             pairs = [(e, claim.content) for e in evidence_contents]
             inputs = self.nli_tokenizer(pairs, return_tensors='pt', padding=True, truncation=True)
-            
             with torch.no_grad():
                 logits = self.nli_model(**inputs).logits
-                
-            # Get probabilities for entailment
-            # We use softmax to convert logits to probabilities
             probabilities = torch.softmax(logits, dim=1)
             entailment_probs = probabilities[:, self.entailment_id].tolist()
-            
-            if entailment_probs:
-                max_plausibility_for_claim = max(entailment_probs)
-            
+            max_plausibility_for_claim = max(entailment_probs) if entailment_probs else 0.0
             total_max_plausibility += max_plausibility_for_claim
             sub_scores[claim.claim_id] = max_plausibility_for_claim
 
-        # Score is the average of the max plausibility scores for each claim
         final_score = total_max_plausibility / len(claims) if claims else 0.0
-        
         return CriticResult(
-            score=final_score,
-            confidence=0.8, # Confidence can be improved with model-specific metrics
+            score=final_score, confidence=0.8,
             explanation=f"Average max NLI entailment score across {len(claims)} claims is {final_score:.3f}.",
-            evidence={'claim_scores': sub_scores},
-            sub_scores=sub_scores
+            evidence={'claim_scores': sub_scores}, sub_scores=sub_scores
         )
 ```
 
@@ -248,12 +181,8 @@ class GroundingCritic(BaseCritic):
 
 > **From Paper to Code: The Logic Critic**
 > The Logic Critic assesses the structural coherence of the reasoning graph $G$. The paper specifies this as:
-
-$$
-\text{Score}_L = f_{\text{GNN}}(G; \theta)
-$$
-
-> Training a full Graph Neural Network (GNN) is a research project in itself. For our primitive, we will create a *functional proxy* for $f_{\text{GNN}}$ that uses graph-theoretic features to approximate logical coherence. This is a robust, explainable starting point for future GNN development. We'll check for orphaned claims, excessive branching (unfocused arguments), and graph density.
+> $$ \text{Score}_L = f_{\text{GNN}}(G; \theta) $$
+> Training a full Graph Neural Network (GNN) is a research project. For our implementation, we create a *functional proxy* for $f_{\text{GNN}}$ that uses graph-theoretic features to approximate logical coherence. This is a robust, explainable starting point.
 
 ```python
 class LogicCritic(BaseCritic):
@@ -266,51 +195,43 @@ class LogicCritic(BaseCritic):
         if num_nodes <= 1:
             return CriticResult(1.0, 1.0, "Graph is too simple to assess logic.", {}, {})
 
-        # 1. Orphaned claims score (we want 0 orphans)
-        # Nodes with in-degree 0 (excluding the root) are orphans
         orphaned_nodes = [n for n, d in G.in_degree() if d == 0 and n != 'root']
-        orphan_penalty = len(orphaned_nodes) / (num_nodes - 1)
+        orphan_penalty = len(orphaned_nodes) / (num_nodes - 1) if num_nodes > 1 else 0
         orphan_score = 1.0 - orphan_penalty
         
-        # 2. Coherence score (low branching is better)
-        # Average out-degree measures branching. Lower is more focused.
         avg_out_degree = sum(d for _, d in G.out_degree()) / num_nodes
-        # Normalize: assume max reasonable branching is ~3
         coherence_score = max(0, 1.0 - (avg_out_degree / 3.0))
 
-        # 3. Parsimony score (related to density)
-        # We prefer simpler, less dense graphs.
         density = nx.density(G)
         parsimony_score = 1.0 - density
 
-        # Combine scores
         final_score = 0.5 * orphan_score + 0.3 * coherence_score + 0.2 * parsimony_score
-        
-        sub_scores = {
-            'orphan_score': orphan_score,
-            'coherence_score': coherence_score,
-            'parsimony_score': parsimony_score
-        }
+        sub_scores = {'orphan_score': orphan_score, 'coherence_score': coherence_score, 'parsimony_score': parsimony_score}
 
         return CriticResult(
-            score=final_score,
-            confidence=0.9, # High confidence as it's deterministic
+            score=final_score, confidence=0.9,
             explanation=f"Logic score based on graph structure: {final_score:.3f}",
             evidence={'num_orphans': len(orphaned_nodes), 'avg_out_degree': avg_out_degree, 'density': density},
             sub_scores=sub_scores
         )
 ```
 
+#### Path to a Production GNN-based Logic Critic
+Our heuristic-based `LogicCritic` is a great starting point, but for a production system, implementing the GNN-based critic envisioned by the paper is a key enhancement. Here’s a roadmap for that process:
+
+1.  **Data Collection:** A GNN needs labeled data. You would need to create a dataset of SNO reasoning graphs, each labeled with a "coherence score" (e.g., from 0 to 1). This dataset could be bootstrapped by human experts rating the logical soundness of various argument structures.
+2.  **Feature Engineering:** Each node (claim) in the graph would need features. The most important feature would be the semantic embedding of the claim's text content. Edge features could include a one-hot encoding of the `RelationType` (e.g., `SUPPORTS`, `CONTRADICTS`).
+3.  **Model Architecture:** A Graph Attention Network (GAT) or GraphSAGE would be excellent choices. These architectures can learn to weigh the importance of different neighboring claims and relationships when evaluating the logic of a central claim.
+4.  **Training Task:** The GNN would be trained on a "graph classification" task. It would take the entire reasoning graph as input and output a single value—the predicted coherence score. The loss function would aim to minimize the difference between the GNN's prediction and the human-provided label from the dataset.
+
+This GNN would be able to learn much more nuanced patterns of logical fallacies or strengths than our heuristic model, moving the critic from a proxy to a powerful, learned component.
+
 ### 3. Novelty-Parsimony Critic Implementation
 
 > **From Paper to Code: The Novelty-Parsimony Critic**
-> This critic balances innovation against complexity. The formula from Section 2.2 is:
-
-$$
-\text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|}
-$$
-
-> The formula uses subtraction to create this balance. The first term rewards novelty (Euclidean distance to the nearest neighbor in the SNO population), and the second term, scaled by β, penalizes graph complexity (edge-to-node ratio). Since the result is not inherently bounded in [0, 1], our code calculates the raw score and then clamps the result to fit within our scoring framework.
+> This critic balances innovation against complexity using the formula:
+> $$ \text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|} $$
+> The first term rewards novelty (distance to the nearest SNO), and the second penalizes graph complexity. Our implementation calculates this raw score and then clamps it to the [0, 1] range.
 
 ```python
 class NoveltyParsimonyCritic(BaseCritic):
@@ -321,44 +242,71 @@ class NoveltyParsimonyCritic(BaseCritic):
 
     def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
         sno_population = context.get('sno_population', [])
-        
-        # 1. Calculate Novelty Term: α * min_i ||H - H_i||
         population_embeddings = [s.hypothesis_embedding for s in sno_population if s.sno_id != sno.sno_id and s.hypothesis_embedding is not None]
         
         if not population_embeddings or sno.hypothesis_embedding is None:
-            novelty_term = self.alpha * 1.0 # Max novelty if no population to compare to
-            min_dist_str = "N/A (first SNO)"
+            novelty_term, min_dist_str = self.alpha * 1.0, "N/A (first SNO)"
         else:
             distances = [np.linalg.norm(sno.hypothesis_embedding - h) for h in population_embeddings]
             min_distance = min(distances)
-            # Normalize distance (max L2 is 2.0) and multiply by alpha
-            novelty_term = self.alpha * (min_distance / 2.0)
+            novelty_term = self.alpha * (min_distance / 2.0) # Normalize L2 distance
             min_dist_str = f"{min_distance:.3f}"
 
-        # 2. Calculate Parsimony Penalty Term: β * (|E_G| / |V|)
         G = sno.reasoning_graph
-        num_nodes = G.number_of_nodes()
-        num_edges = G.number_of_edges()
-        
-        complexity_ratio = 0.0
-        if num_nodes > 0:
-            complexity_ratio = num_edges / num_nodes
-        
+        complexity_ratio = G.number_of_edges() / G.number_of_nodes() if G.number_of_nodes() > 0 else 0
         parsimony_penalty = self.beta * complexity_ratio
 
-        # 3. Calculate Final Score according to the formula
         raw_score = novelty_term - parsimony_penalty
-        
-        # Clamp the score to be within the [0, 1] range
         final_score = np.clip(raw_score, 0, 1)
 
-        explanation = f"Score({final_score:.3f}) = NoveltyTerm({novelty_term:.3f}) - ParsimonyPenalty({parsimony_penalty:.3f}). Min dist: {min_dist_str}."
-        
+        explanation = f"Score({final_score:.3f}) = Novelty({novelty_term:.3f}) - Parsimony({parsimony_penalty:.3f}). Min dist: {min_dist_str}."
         return CriticResult(
-            score=final_score,
-            confidence=0.9,
-            explanation=explanation,
-            evidence={'novelty_term': novelty_term, 'parsimony_penalty': parsimony_penalty, 'complexity_ratio': complexity_ratio},
+            score=final_score, confidence=0.9, explanation=explanation,
+            evidence={'novelty_term': novelty_term, 'parsimony_penalty': parsimony_penalty},
             sub_scores={'novelty_term': novelty_term, 'parsimony_penalty': parsimony_penalty}
         )
 ```
+
+## Contextual Evaluation: Dynamic Weight Adjustment
+
+A key feature of the CNS 2.0 framework is its adaptability. The `adjust_weights` method in our `CriticPipeline` is the mechanism for this, allowing the system to change its evaluation priorities based on the current context or goal.
+
+Why is this important? Because not all phases of knowledge discovery are the same. Sometimes you need to explore wildly different ideas; other times, you need to rigorously verify a specific claim. Dynamic weights allow the CNS system to support both.
+
+### Scenario: Shifting from Exploration to Verification
+
+Let's consider a common workflow:
+1.  **Exploration Phase:** When starting in a new domain, the system's goal is to generate a diverse set of novel hypotheses. We want to reward new ideas, even if they are not yet perfectly logical or well-grounded.
+2.  **Verification Phase:** Once a set of promising, high-novelty SNOs has been identified, the goal shifts. We now need to rigorously test these ideas, prioritizing their logical consistency and evidential support.
+
+Here’s how we would use dynamic weights to manage this shift:
+
+```python
+# Assume 'critic_pipeline' is an instance of our CriticPipeline
+
+# --- Phase 1: Exploration ---
+# We want to find new ideas, so we boost the weight of the Novelty critic.
+print("Setting weights for EXPLORATION phase...")
+critic_pipeline.adjust_weights({
+    CriticType.NOVELTY: 0.7,   # High weight for new ideas
+    CriticType.LOGIC: 0.15,
+    CriticType.GROUNDING: 0.15
+})
+# Now, when evaluate_sno is called, it will heavily favor novel SNOs.
+print(f"Current weights: {critic_pipeline.critics[CriticType.NOVELTY].weight=}, {critic_pipeline.critics[CriticType.GROUNDING].weight=}")
+
+
+# --- Phase 2: Verification ---
+# We have some promising ideas. Now we need to check if they hold up.
+# We boost the Grounding and Logic critics.
+print("\nSetting weights for VERIFICATION phase...")
+critic_pipeline.adjust_weights({
+    CriticType.NOVELTY: 0.1,    # Low weight for novelty
+    CriticType.LOGIC: 0.45,     # High weight for logical soundness
+    CriticType.GROUNDING: 0.45  # High weight for evidential support
+})
+# Now, the same SNOs will be re-evaluated with a focus on their rigor.
+print(f"Current weights: {critic_pipeline.critics[CriticType.NOVELTY].weight=}, {critic_pipeline.critics[CriticType.GROUNDING].weight=}")
+```
+
+This ability to programmatically shift the system's "values" makes CNS 2.0 a powerful and flexible tool for knowledge work, capable of adapting its strategy to the task at hand.
