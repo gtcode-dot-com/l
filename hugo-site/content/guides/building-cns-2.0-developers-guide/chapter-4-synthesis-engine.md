@@ -28,10 +28,7 @@ The system must intelligently select which conflicts to focus on. A disagreement
 ### Metric 1: Chirality Score
 
 > **From the Paper (Section 3.2):**
-
-$$
-\text{CScore}(SNO_i, SNO_j) = (1 - H_i \cdot H_j) \cdot (T_i \cdot T_j)
-$$
+> $$\text{CScore}(SNO_i, SNO_j) = (1 - H_i \cdot H_j) \cdot (T_i \cdot T_j)$$
 
 #### Formula Breakdown: `CScore`
 This formula elegantly combines two ideas: semantic opposition and established trust.
@@ -44,10 +41,7 @@ This formula elegantly combines two ideas: semantic opposition and established t
 ### Metric 2: Evidential Entanglement
 
 > **From the Paper (Section 3.2):**
-
-$$
-\text{EScore}(SNO_i, SNO_j) = \frac{|E_{set, i} \cap E_{set, j}|}{|E_{set, i} \cup E_{set, j}|}
-$$
+> $$\text{EScore}(SNO_i, SNO_j) = \frac{|E_{set, i} \cap E_{set, j}|}{|E_{set, i} \cup E_{set, j}|}$$
 
 #### Formula Breakdown: `EScore`
 This formula measures the degree to which two narratives are arguing over the same data.
@@ -150,10 +144,7 @@ The paper also describes a more subtle agent action than direct synthesis: **ref
 The goal is to find a "sweet spot" in the latent space—a new hypothesis that is better than `SNO_i` but doesn't simply copy `SNO_j`. This is achieved by calculating a `target embedding`, $H_{\text{target}}$, that represents a desirable direction for improvement.
 
 > **From the Paper (Equation 2):**
-
-$$
-H_{\text{target}} = H_{i} + \alpha \nabla_{H_i} \text{Reward}(SNO_i) + \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}
-$$
+> $$H_{\text{target}} = H_{i} + \alpha \nabla_{H_i} \text{Reward}(SNO_i) + \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}$$
 
 Instead of directly modifying the SNO, this target vector is used to prompt a generative agent: *"Generate a new SNO whose core hypothesis is semantically close to $H_{\text{target}}$, drawing inspiration from the reasoning and evidence of SNO$_i$."*
 

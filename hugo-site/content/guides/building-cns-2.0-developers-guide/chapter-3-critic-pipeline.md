@@ -25,11 +25,7 @@ The Multi-Component Critic Pipeline consists of three specialized critics:
 The final `Trust Score` emerges from a weighted combination of the individual critic scores, as defined by Equation (1) in Section 2.2 of the paper.
 
 > **From the Paper (Equation 1):**
-
-$$
-\text{Reward}(\mathcal{S}) = \sum_{i \in \{G, L, N\}} w_i \cdot \text{Score}_i(\mathcal{S})
-$$
-
+> $$\text{Reward}(\mathcal{S}) = \sum_{i \in \{G, L, N\}} w_i \cdot \text{Score}_i(\mathcal{S})$$
 > where $w_i$ are dynamically adjustable weights for the Grounding, Logic, and Novelty-Parsimony critics.
 
 Our `CriticPipeline` class directly implements this formula. It iterates through each critic, calculates its score, applies the corresponding weight $w_i$, and normalizes the result to produce the final `Trust Score`.
@@ -135,9 +131,7 @@ class CriticPipeline:
 The Grounding Critic ensures that narratives remain tethered to verifiable facts by evaluating how well claims are supported by evidence.
 
 > **From the Paper (Section 2.2):**
-
-$$ \text{Score}_G = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} p(v|e) $$
-
+> $$ \text{Score}_G = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} p(v|e) $$
 > where $p(v|e)$ is the plausibility of a claim $v$ given evidence $e$.
 
 #### Formula Breakdown: `Score_G`
