@@ -262,8 +262,14 @@ a:hover {
 }
 
 .article-content ul {
-    list-style-type: none;
-    margin-left: 0;
+    list-style: none;
+    padding-left: 0; /* Use padding on li for indentation */
+}
+
+.article-content ul li {
+    position: relative; /* Required for absolute positioning of the pseudo-element */
+    padding-left: 1.5rem; /* Creates hanging indent for wrapped text */
+    margin-bottom: 0.75rem;
 }
 
 .article-content ul li::before {
@@ -271,13 +277,15 @@ a:hover {
     color: #3b82f6;
     font-weight: bold;
     font-size: 1.2em;
-    margin-right: 0.75rem;
+    position: absolute;
+    left: 0;
+    top: 0; 
 }
 
-.article-content ul li {
-    margin-bottom: 0.75rem;
-    padding-left: 0;
-    
+/* Add indentation for nested lists */
+.article-content ul ul {
+    margin-left: 1.5rem;
+    margin-top: 0.75rem;
 }
 
 /* Inline code styling */
