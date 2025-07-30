@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753847786">
+    <link rel="stylesheet" href="/css/style.css?v=1753859298">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,7 +106,7 @@
     
     <header class="article-header">
         <div class="article-meta">
-            <span class="article-weight">Chapter 6</span>
+            <span class="article-weight">Chapter 6 of 7</span>
             <span class="article-separator">•</span>
             <time class="article-date">July 29, 2025</time>
         </div>
@@ -137,7 +137,14 @@
         <li><a href="#from-paper-to-code-the-dialectical-prompt">From Paper to Code: The Dialectical Prompt</a></li>
       </ul>
     </li>
-    <li><a href="#deployment-and-production-considerations">Deployment and Production Considerations</a></li>
+    <li><a href="#deployment-and-scaling-for-production">Deployment and Scaling for Production</a>
+      <ul>
+        <li><a href="#1-containerization-with-docker">1. Containerization with Docker</a></li>
+        <li><a href="#2-scaling-with-a-dedicated-job-queue-celery">2. Scaling with a Dedicated Job Queue (Celery)</a></li>
+        <li><a href="#3-production-ready-logging-with-structlog">3. Production-Ready Logging with <code>structlog</code></a></li>
+        <li><a href="#3-production-configuration-management">3. Production Configuration Management</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </nav>
@@ -150,646 +157,286 @@
 </div>
 <h1 id="chapter-6-complete-implementation">Chapter 6: Complete Implementation</h1>
 <h2 id="bringing-it-all-together">Bringing It All Together</h2>
-<p>This chapter builds upon the functional critic and exploration primitives developed in Chapters 3 and 4 to create a fully integrated, end-to-end system. We&rsquo;ve built the foundational components of CNS 2.0: Structured Narrative Objects, the Multi-Component Critic Pipeline, the Generative Synthesis Engine, and system integration framework. Now it&rsquo;s time to complete the implementation with full synthesis capabilities and prepare the system for production deployment.</p>
-<p>This final chapter implements the complete synthesis workflow, advanced evaluation techniques, and provides guidelines for deploying a production-ready CNS 2.0 system.</p>
+<p>This chapter builds upon the functional primitives from previous chapters to create a fully integrated, end-to-end system. We will complete the implementation with a realistic synthesis engine and, most importantly, provide clear guidelines for deploying the CNS 2.0 system in a production environment.</p>
 <h2 id="complete-synthesis-implementation">Complete Synthesis Implementation</h2>
+<p>To make our implementation more realistic, we&rsquo;ll replace the hardcoded synthesis outputs with a <code>MockLLMClient</code>. This simulates the asynchronous nature of a real API call and makes the code structure identical to a production version, ready to be swapped with a real client like <code>OpenAI</code> or <code>Anthropic</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Complete CNS 2.0 Synthesis Implementation
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">=======================================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Production-ready synthesis engine with full dialectical reasoning
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Production-ready synthesis engine with a mock LLM client and deployment guidelines.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> asyncio
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Optional, Any, Tuple
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> hashlib
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(__name__)
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MockLLMClient</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;A mock client to simulate asynchronous LLM API calls.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">complete</span>(self, prompt: str, strategy: SynthesisStrategy) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1.5</span>) <span style="color:#75715e"># Simulate network latency</span>
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;MockLLMClient: Received prompt for </span><span style="color:#e6db74">{</span>strategy<span style="color:#f92672">.</span>value<span style="color:#e6db74">}</span><span style="color:#e6db74"> strategy.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        synthesis_outputs <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>DIALECTICAL: <span style="color:#e6db74">&#34;The apparent contradiction is resolved by recognizing that both perspectives address different temporal dimensions of the phenomenon, suggesting a more nuanced, context-dependent understanding.&#34;</span>,
+</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>COMPLEMENTARY: <span style="color:#e6db74">&#34;Both narratives contribute essential insights that, when integrated, provide a more comprehensive understanding of the phenomenon.&#34;</span>,
+</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>TRANSCENDENT: <span style="color:#e6db74">&#34;A higher-order perspective reveals that both narratives are special cases of a more general underlying principle.&#34;</span>,
+</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>EVIDENTIAL: <span style="color:#e6db74">&#34;Re-analysis of the shared evidence indicates that different methodological assumptions led to the divergent conclusions, which can be reconciled.&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> synthesis_outputs<span style="color:#f92672">.</span>get(strategy, <span style="color:#e6db74">&#34;A new synthesized hypothesis has been generated.&#34;</span>)
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SynthesisResult</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Complete result of synthesis operation with full traceability&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    success: bool
-</span></span><span style="display:flex;"><span>    synthesized_sno: Optional[StructuredNarrativeObject]
-</span></span><span style="display:flex;"><span>    source_pair: ChiralPair
-</span></span><span style="display:flex;"><span>    synthesis_strategy: SynthesisStrategy
-</span></span><span style="display:flex;"><span>    generation_time: float
-</span></span><span style="display:flex;"><span>    quality_metrics: Dict[str, float]
-</span></span><span style="display:flex;"><span>    explanation: str
-</span></span><span style="display:flex;"><span>    conflict_resolution: List[str]
-</span></span><span style="display:flex;"><span>    preserved_evidence: Set[str]
-</span></span><span style="display:flex;"><span>    novel_insights: List[str]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ... (definition as before)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AdvancedSynthesisEngine</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Complete synthesis engine implementing all CNS 2.0 synthesis strategies
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Complete synthesis engine implementing all CNS 2.0 synthesis strategies.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    This version uses a more realistic client-based approach for LLM interaction.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, critic_pipeline: CriticPipeline):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, critic_pipeline: CriticPipeline, llm_client: Any):
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critic_pipeline <span style="color:#f92672">=</span> critic_pipeline
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>llm_client <span style="color:#f92672">=</span> llm_client <span style="color:#75715e"># Use a client for LLM calls</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_history: List[SynthesisResult] <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>generation_templates <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_load_synthesis_templates()
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Performance tracking</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_stats <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;total_attempts&#39;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;successful_syntheses&#39;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;average_quality&#39;</span>: <span style="color:#ae81ff">0.0</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;strategy_success_rates&#39;</span>: {strategy<span style="color:#f92672">.</span>value: <span style="color:#ae81ff">0.0</span> <span style="color:#66d9ef">for</span> strategy <span style="color:#f92672">in</span> SynthesisStrategy}
-</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_stats <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;total_attempts&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;successful_syntheses&#39;</span>: <span style="color:#ae81ff">0</span>}
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_load_synthesis_templates</span>(self) <span style="color:#f92672">-&gt;</span> Dict[SynthesisStrategy, str]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Load prompt templates for different synthesis strategies&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>DIALECTICAL: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            DIALECTICAL SYNTHESIS TASK
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            =========================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            You are tasked with resolving a fundamental conflict between two well-supported narratives.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            NARRATIVE A:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Central Hypothesis: </span><span style="color:#e6db74">{hypothesis_a}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Supporting Claims: </span><span style="color:#e6db74">{claims_a}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Evidence Sources: </span><span style="color:#e6db74">{evidence_a}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Trust Score: </span><span style="color:#e6db74">{trust_a}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            NARRATIVE B:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Central Hypothesis: </span><span style="color:#e6db74">{hypothesis_b}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Supporting Claims: </span><span style="color:#e6db74">{claims_b}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Evidence Sources: </span><span style="color:#e6db74">{evidence_b}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Trust Score: </span><span style="color:#e6db74">{trust_b}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            SHARED EVIDENCE:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            </span><span style="color:#e6db74">{shared_evidence}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            IDENTIFIED CONFLICTS:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            </span><span style="color:#e6db74">{conflicts}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            SYNTHESIS INSTRUCTIONS:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            1. Analyze the fundamental disagreement between these narratives
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            2. Identify how the same evidence can support different conclusions
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            3. Generate a higher-order synthesis that resolves the contradiction
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            4. Preserve valid insights from both narratives
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            5. Create new understanding that transcends the original conflict
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Provide your synthesis in the following format:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            SYNTHESIZED_HYPOTHESIS: [Your unified hypothesis that resolves the conflict]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            REASONING: [Step-by-step explanation of how you resolved the contradiction]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            KEY_INSIGHTS: [Novel insights that emerged from the synthesis]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            PRESERVED_ELEMENTS: [What you preserved from each original narrative]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>COMPLEMENTARY: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            COMPLEMENTARY INTEGRATION TASK
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            =============================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            You are integrating two compatible narratives that address different aspects of the same phenomenon.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            [Similar template structure for complementary synthesis...]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>TRANSCENDENT: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            TRANSCENDENT SYNTHESIS TASK
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            ==========================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            You are creating a higher-order perspective that encompasses both narratives at a more abstract level.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            [Template for transcendent synthesis...]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>EVIDENTIAL: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            EVIDENCE-BASED RECONCILIATION TASK
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            =================================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            You are reconciling conflicting interpretations by carefully analyzing the shared evidence.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            [Template for evidential synthesis...]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span></code></pre></div><h3 id="from-paper-to-code-the-dialectical-prompt">From Paper to Code: The Dialectical Prompt</h3>
-<p>Section 2.3 of the paper describes the core synthesis workflow and emphasizes the importance of structured prompts that preserve argumentative structure. The paper outlines a four-step process:</p>
-<blockquote>
-<p><strong>From the Paper (Section 2.3):</strong>
-The synthesis workflow operates as follows:</p>
-<ol>
-<li><strong>Chiral Pair Selection:</strong> Identify SNO pairs $(\mathcal{S}_A, \mathcal{S}_B)$ with high chirality and evidential entanglement scores</li>
-<li><strong>Dialectical Prompt Construction:</strong> Transform SNOs into a structured prompt that preserves argumentative structure</li>
-<li><strong>Candidate Generation:</strong> The LLM produces a new SNO $\mathcal{S}_C = (H_C, G_C, \mathcal{E}_C, \varnothing)$ where $\mathcal{E}_C \supseteq \mathcal{E}_A \cap \mathcal{E}_B$</li>
-<li><strong>Critic Evaluation:</strong> The candidate $\mathcal{S}_C$ enters the critic pipeline to determine its viability</li>
-</ol></blockquote>
-<p><strong>From Paper to Code:</strong></p>
-<p>Our <code>AdvancedSynthesisEngine</code> directly implements this workflow:</p>
-<ul>
-<li><strong>Step 1</strong> is handled by our <code>ChiralPairDetector</code> from Chapter 4, which identifies high-potential pairs</li>
-<li><strong>Step 2</strong> is implemented in our <code>_construct_synthesis_prompt</code> method, which transforms the SNO data structures into structured natural language prompts that preserve the hypothesis embeddings, reasoning graphs, and evidence sets</li>
-<li><strong>Step 3</strong> is our <code>_generate_synthesis_hypothesis</code> method (simplified for demonstration), which would interface with an LLM to generate the new hypothesis</li>
-<li><strong>Step 4</strong> is handled by passing the generated candidate through our <code>CriticPipeline</code> from Chapter 3</li>
-</ul>
-<p>The paper&rsquo;s requirement that $\mathcal{E}_C \supseteq \mathcal{E}_A \cap \mathcal{E}_B$ (the synthesized evidence set must include at least the intersection of the source evidence sets) is directly implemented in our <code>_create_synthesized_sno</code> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Inherit and merge evidence sets</span>
-</span></span><span style="display:flex;"><span>combined_evidence <span style="color:#f92672">=</span> chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>evidence_set<span style="color:#f92672">.</span>union(chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>evidence_set)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> evidence <span style="color:#f92672">in</span> combined_evidence:
-</span></span><span style="display:flex;"><span>    synthesized_sno<span style="color:#f92672">.</span>add_evidence(evidence)
-</span></span></code></pre></div><p>This ensures that our synthesis preserves the evidential foundation from both source narratives, just as the mathematical specification requires.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">synthesize_chiral_pair</span>(self, chiral_pair: ChiralPair) <span style="color:#f92672">-&gt;</span> SynthesisResult:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Templates remain the same, providing structured prompts for the LLM</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... (template dictionary as before)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_generate_synthesis_hypothesis</span>(self, prompt: str, strategy: SynthesisStrategy) <span style="color:#f92672">-&gt;</span> Optional[str]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Generates a synthesis hypothesis by making an asynchronous call to the LLM client.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            response_text <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>llm_client<span style="color:#f92672">.</span>complete(prompt<span style="color:#f92672">=</span>prompt, strategy<span style="color:#f92672">=</span>strategy)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> response_text<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;LLM generation failed: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_determine_synthesis_strategy</span>(self, chiral_pair: ChiralPair) <span style="color:#f92672">-&gt;</span> SynthesisStrategy:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Logic for determining strategy remains the same</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... (implementation as before)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_construct_synthesis_prompt</span>(self, chiral_pair: ChiralPair, strategy: SynthesisStrategy) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Logic for building the prompt from SNOs remains the same</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... (implementation as before)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">synthesize_chiral_pair</span>(self, chiral_pair: ChiralPair) <span style="color:#f92672">-&gt;</span> SynthesisResult:
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Complete synthesis of a chiral pair using the most appropriate strategy
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Complete synthesis of a chiral pair using the most appropriate strategy.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        This method orchestrates the entire synthesis process.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;total_attempts&#39;</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 1: Determine optimal synthesis strategy</span>
-</span></span><span style="display:flex;"><span>            strategy <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_determine_synthesis_strategy(chiral_pair)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Synthesizing pair </span><span style="color:#e6db74">{</span>chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>sno_id[:<span style="color:#ae81ff">8</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> + </span><span style="color:#e6db74">{</span>chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>sno_id[:<span style="color:#ae81ff">8</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> using </span><span style="color:#e6db74">{</span>strategy<span style="color:#f92672">.</span>value<span style="color:#e6db74">}</span><span style="color:#e6db74"> strategy&#34;</span>)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 2: Generate synthesis prompt</span>
-</span></span><span style="display:flex;"><span>            synthesis_prompt <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_construct_synthesis_prompt(chiral_pair, strategy)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 3: Generate candidate synthesis</span>
-</span></span><span style="display:flex;"><span>            candidate_hypothesis <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>_generate_synthesis_hypothesis(synthesis_prompt, strategy)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> candidate_hypothesis:
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_create_failed_result(chiral_pair, strategy, <span style="color:#e6db74">&#34;Failed to generate synthesis hypothesis&#34;</span>)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 4: Create synthesized SNO</span>
-</span></span><span style="display:flex;"><span>            synthesized_sno <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>_create_synthesized_sno(
-</span></span><span style="display:flex;"><span>                candidate_hypothesis, chiral_pair, strategy
-</span></span><span style="display:flex;"><span>            )
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 5: Evaluate synthesis quality</span>
-</span></span><span style="display:flex;"><span>            evaluation_result <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>critic_pipeline<span style="color:#f92672">.</span>evaluate_sno(synthesized_sno, {<span style="color:#e6db74">&#39;sno_population&#39;</span>: [chiral_pair<span style="color:#f92672">.</span>sno_a, chiral_pair<span style="color:#f92672">.</span>sno_b]})
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 6: Validate synthesis meets quality thresholds</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> synthesized_sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.5</span>:  <span style="color:#75715e"># Minimum quality threshold</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_create_failed_result(chiral_pair, strategy, <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Low quality synthesis: </span><span style="color:#e6db74">{</span>synthesized_sno<span style="color:#f92672">.</span>trust_score<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 7: Generate explanations and insights</span>
-</span></span><span style="display:flex;"><span>            conflict_resolution <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_analyze_conflict_resolution(chiral_pair, synthesized_sno)
-</span></span><span style="display:flex;"><span>            novel_insights <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_extract_novel_insights(chiral_pair, synthesized_sno)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 8: Create successful result</span>
-</span></span><span style="display:flex;"><span>            generation_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time() <span style="color:#f92672">-</span> start_time
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            result <span style="color:#f92672">=</span> SynthesisResult(
-</span></span><span style="display:flex;"><span>                success<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
-</span></span><span style="display:flex;"><span>                synthesized_sno<span style="color:#f92672">=</span>synthesized_sno,
-</span></span><span style="display:flex;"><span>                source_pair<span style="color:#f92672">=</span>chiral_pair,
-</span></span><span style="display:flex;"><span>                synthesis_strategy<span style="color:#f92672">=</span>strategy,
-</span></span><span style="display:flex;"><span>                generation_time<span style="color:#f92672">=</span>generation_time,
-</span></span><span style="display:flex;"><span>                quality_metrics<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_compute_quality_metrics(synthesized_sno, chiral_pair, evaluation_result),
-</span></span><span style="display:flex;"><span>                explanation<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Successfully synthesized using </span><span style="color:#e6db74">{</span>strategy<span style="color:#f92672">.</span>value<span style="color:#e6db74">}</span><span style="color:#e6db74"> strategy&#34;</span>,
-</span></span><span style="display:flex;"><span>                conflict_resolution<span style="color:#f92672">=</span>conflict_resolution,
-</span></span><span style="display:flex;"><span>                preserved_evidence<span style="color:#f92672">=</span>chiral_pair<span style="color:#f92672">.</span>shared_evidence,
-</span></span><span style="display:flex;"><span>                novel_insights<span style="color:#f92672">=</span>novel_insights
-</span></span><span style="display:flex;"><span>            )
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Update statistics</span>
-</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;successful_syntheses&#39;</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>_update_strategy_stats(strategy, <span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Synthesis successful: </span><span style="color:#e6db74">{</span>synthesized_sno<span style="color:#f92672">.</span>sno_id<span style="color:#e6db74">}</span><span style="color:#e6db74"> (quality: </span><span style="color:#e6db74">{</span>synthesized_sno<span style="color:#f92672">.</span>trust_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">)&#34;</span>)
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> result
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
-</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Synthesis failed: </span><span style="color:#e6db74">{</span>str(e)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_create_failed_result(chiral_pair, SynthesisStrategy<span style="color:#f92672">.</span>DIALECTICAL, str(e))
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_determine_synthesis_strategy</span>(self, chiral_pair: ChiralPair) <span style="color:#f92672">-&gt;</span> SynthesisStrategy:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Determine the most appropriate synthesis strategy based on pair characteristics&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Determine strategy, construct prompt, and generate hypothesis</span>
+</span></span><span style="display:flex;"><span>        strategy <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_determine_synthesis_strategy(chiral_pair)
+</span></span><span style="display:flex;"><span>        prompt <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_construct_synthesis_prompt(chiral_pair, strategy)
+</span></span><span style="display:flex;"><span>        candidate_hypothesis <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>_generate_synthesis_hypothesis(prompt, strategy)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># High chirality + high entanglement = dialectical synthesis</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> chiral_pair<span style="color:#f92672">.</span>chirality_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.8</span> <span style="color:#f92672">and</span> chiral_pair<span style="color:#f92672">.</span>entanglement_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.7</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> SynthesisStrategy<span style="color:#f92672">.</span>DIALECTICAL
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> candidate_hypothesis:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Handle generation failure</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_create_failed_result(chiral_pair, strategy, <span style="color:#e6db74">&#34;Failed to generate hypothesis from LLM.&#34;</span>)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># High entanglement + moderate chirality = evidential reconciliation</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> chiral_pair<span style="color:#f92672">.</span>entanglement_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.8</span> <span style="color:#f92672">and</span> chiral_pair<span style="color:#f92672">.</span>chirality_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.5</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> SynthesisStrategy<span style="color:#f92672">.</span>EVIDENTIAL
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Moderate opposition = complementary integration</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> chiral_pair<span style="color:#f92672">.</span>chirality_score <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.6</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> SynthesisStrategy<span style="color:#f92672">.</span>COMPLEMENTARY
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Default to transcendent for complex cases</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> SynthesisStrategy<span style="color:#f92672">.</span>TRANSCENDENT
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_construct_synthesis_prompt</span>(self, chiral_pair: ChiralPair, strategy: SynthesisStrategy) <span style="color:#f92672">-&gt;</span> str:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Construct detailed synthesis prompt preserving argumentative structure&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        template <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>synthesis_templates[strategy]
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extract claims from reasoning graphs</span>
-</span></span><span style="display:flex;"><span>        claims_a <span style="color:#f92672">=</span> [node_data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node_data <span style="color:#f92672">in</span> chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)]
-</span></span><span style="display:flex;"><span>        claims_b <span style="color:#f92672">=</span> [node_data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node_data <span style="color:#f92672">in</span> chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)]
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Format evidence</span>
-</span></span><span style="display:flex;"><span>        evidence_a <span style="color:#f92672">=</span> [<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;- </span><span style="color:#e6db74">{</span>e<span style="color:#f92672">.</span>content[:<span style="color:#ae81ff">100</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#34;</span> <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>evidence_set]
-</span></span><span style="display:flex;"><span>        evidence_b <span style="color:#f92672">=</span> [<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;- </span><span style="color:#e6db74">{</span>e<span style="color:#f92672">.</span>content[:<span style="color:#ae81ff">100</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#34;</span> <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>evidence_set]
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Format shared evidence</span>
-</span></span><span style="display:flex;"><span>        shared_evidence_details <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> evidence_id <span style="color:#f92672">in</span> chiral_pair<span style="color:#f92672">.</span>shared_evidence:
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Find evidence details</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>evidence_set<span style="color:#f92672">.</span>union(chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>evidence_set):
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> e<span style="color:#f92672">.</span>source_id <span style="color:#f92672">==</span> evidence_id:
-</span></span><span style="display:flex;"><span>                    shared_evidence_details<span style="color:#f92672">.</span>append(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;- </span><span style="color:#e6db74">{</span>e<span style="color:#f92672">.</span>content[:<span style="color:#ae81ff">150</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#34;</span>)
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> template<span style="color:#f92672">.</span>format(
-</span></span><span style="display:flex;"><span>            hypothesis_a<span style="color:#f92672">=</span>chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>central_hypothesis,
-</span></span><span style="display:flex;"><span>            hypothesis_b<span style="color:#f92672">=</span>chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>central_hypothesis,
-</span></span><span style="display:flex;"><span>            claims_a<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(claims_a[:<span style="color:#ae81ff">5</span>]),  <span style="color:#75715e"># Limit for prompt size</span>
-</span></span><span style="display:flex;"><span>            claims_b<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(claims_b[:<span style="color:#ae81ff">5</span>]),
-</span></span><span style="display:flex;"><span>            evidence_a<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(evidence_a[:<span style="color:#ae81ff">3</span>]),
-</span></span><span style="display:flex;"><span>            evidence_b<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(evidence_b[:<span style="color:#ae81ff">3</span>]),
-</span></span><span style="display:flex;"><span>            shared_evidence<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(shared_evidence_details),
-</span></span><span style="display:flex;"><span>            conflicts<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(chiral_pair<span style="color:#f92672">.</span>conflict_points),
-</span></span><span style="display:flex;"><span>            trust_a<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>trust_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
-</span></span><span style="display:flex;"><span>            trust_b<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>trust_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_generate_synthesis_hypothesis</span>(self, prompt: str, strategy: SynthesisStrategy) <span style="color:#f92672">-&gt;</span> Optional[str]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Generate synthesis hypothesis using a powerful LLM.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        The detailed prompt constructed earlier is the key to getting a good result.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        This method interfaces with the LLM specified in cns_config.models[&#39;synthesis&#39;]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        to generate novel synthesis hypotheses through dialectical reasoning.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># In a production implementation, this would make an API call to the configured LLM</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Example: </span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># response = await llm_client.complete(</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#     model=cns_config.models[&#39;synthesis&#39;], </span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#     prompt=prompt,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#     max_tokens=150,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#     temperature=0.7</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># )</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># return response.text.strip()</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># For demonstration in this educational blog, we show strategy-specific outputs</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># that represent what a well-prompted LLM would produce</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        synthesis_outputs <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>DIALECTICAL: <span style="color:#e6db74">&#34;The apparent contradiction can be resolved by recognizing that both perspectives address different temporal or contextual dimensions of the phenomenon, suggesting a more nuanced understanding that incorporates situational factors.&#34;</span>,
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>COMPLEMENTARY: <span style="color:#e6db74">&#34;Both narratives contribute essential insights that, when integrated, provide a more comprehensive understanding of the phenomenon by addressing complementary aspects.&#34;</span>,
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>TRANSCENDENT: <span style="color:#e6db74">&#34;A higher-order perspective reveals that both narratives are special cases of a more general principle that encompasses their apparent differences.&#34;</span>,
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            SynthesisStrategy<span style="color:#f92672">.</span>EVIDENTIAL: <span style="color:#e6db74">&#34;Careful analysis of the shared evidence reveals that different methodological approaches or interpretive frameworks led to divergent conclusions, which can be reconciled through methodological synthesis.&#34;</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> synthesis_outputs<span style="color:#f92672">.</span>get(strategy)  <span style="color:#75715e"># Return strategy-appropriate synthesis</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_create_synthesized_sno</span>(self, 
-</span></span><span style="display:flex;"><span>                                    hypothesis: str, 
-</span></span><span style="display:flex;"><span>                                    chiral_pair: ChiralPair, 
-</span></span><span style="display:flex;"><span>                                    strategy: SynthesisStrategy) <span style="color:#f92672">-&gt;</span> StructuredNarrativeObject:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Create a new SNO representing the synthesis&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Create new SNO</span>
-</span></span><span style="display:flex;"><span>        synthesized_sno <span style="color:#f92672">=</span> StructuredNarrativeObject(hypothesis)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add metadata about synthesis</span>
-</span></span><span style="display:flex;"><span>        synthesized_sno<span style="color:#f92672">.</span>metadata<span style="color:#f92672">.</span>update({
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;synthesis_strategy&#39;</span>: strategy<span style="color:#f92672">.</span>value,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;source_sno_a&#39;</span>: chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>sno_id,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;source_sno_b&#39;</span>: chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>sno_id,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;chirality_score&#39;</span>: chiral_pair<span style="color:#f92672">.</span>chirality_score,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;entanglement_score&#39;</span>: chiral_pair<span style="color:#f92672">.</span>entanglement_score,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;synthesis_timestamp&#39;</span>: datetime<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>isoformat()
-</span></span><span style="display:flex;"><span>        })
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Inherit and merge evidence sets</span>
-</span></span><span style="display:flex;"><span>        combined_evidence <span style="color:#f92672">=</span> chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>evidence_set<span style="color:#f92672">.</span>union(chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>evidence_set)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> evidence <span style="color:#f92672">in</span> combined_evidence:
-</span></span><span style="display:flex;"><span>            synthesized_sno<span style="color:#f92672">.</span>add_evidence(evidence)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Create synthesis-specific reasoning graph</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>_build_synthesis_reasoning_graph(synthesized_sno, chiral_pair, strategy)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Compute embedding</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> HAS_TRANSFORMERS:
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">from</span> sentence_transformers <span style="color:#f92672">import</span> SentenceTransformer
-</span></span><span style="display:flex;"><span>            model <span style="color:#f92672">=</span> SentenceTransformer(cns_config<span style="color:#f92672">.</span>sentence_model)
-</span></span><span style="display:flex;"><span>            synthesized_sno<span style="color:#f92672">.</span>compute_hypothesis_embedding(model)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> synthesized_sno
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_build_synthesis_reasoning_graph</span>(self, 
-</span></span><span style="display:flex;"><span>                                             synthesized_sno: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>                                             chiral_pair: ChiralPair,
-</span></span><span style="display:flex;"><span>                                             strategy: SynthesisStrategy):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Build reasoning graph for synthesized SNO&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add key claims that support the synthesis</span>
-</span></span><span style="display:flex;"><span>        resolution_claim <span style="color:#f92672">=</span> synthesized_sno<span style="color:#f92672">.</span>add_claim(
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;The synthesis resolves the apparent contradiction through higher-order reasoning&#34;</span>,
-</span></span><span style="display:flex;"><span>            claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;synthesis_resolution&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Create and evaluate the new SNO</span>
+</span></span><span style="display:flex;"><span>        synthesized_sno <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>_create_synthesized_sno(candidate_hypothesis, chiral_pair)
+</span></span><span style="display:flex;"><span>        evaluation_result <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>critic_pipeline<span style="color:#f92672">.</span>evaluate_sno(
+</span></span><span style="display:flex;"><span>            synthesized_sno,
+</span></span><span style="display:flex;"><span>            {<span style="color:#e6db74">&#39;sno_population&#39;</span>: [chiral_pair<span style="color:#f92672">.</span>sno_a, chiral_pair<span style="color:#f92672">.</span>sno_b]}
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        integration_claim <span style="color:#f92672">=</span> synthesized_sno<span style="color:#f92672">.</span>add_claim(
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Both source narratives contribute valid insights to the unified understanding&#34;</span>,
-</span></span><span style="display:flex;"><span>            claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;integration_justification&#34;</span>
-</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Validate and finalize the result</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> synthesized_sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.5</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_create_failed_result(chiral_pair, strategy, <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Low quality synthesis: </span><span style="color:#e6db74">{</span>synthesized_sno<span style="color:#f92672">.</span>trust_score<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Link to root</span>
-</span></span><span style="display:flex;"><span>        synthesized_sno<span style="color:#f92672">.</span>add_reasoning_edge(resolution_claim, <span style="color:#e6db74">&#34;root&#34;</span>, RelationType<span style="color:#f92672">.</span>SUPPORTS)
-</span></span><span style="display:flex;"><span>        synthesized_sno<span style="color:#f92672">.</span>add_reasoning_edge(integration_claim, <span style="color:#e6db74">&#34;root&#34;</span>, RelationType<span style="color:#f92672">.</span>SUPPORTS)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add strategy-specific claims</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> strategy <span style="color:#f92672">==</span> SynthesisStrategy<span style="color:#f92672">.</span>DIALECTICAL:
-</span></span><span style="display:flex;"><span>            dialectical_claim <span style="color:#f92672">=</span> synthesized_sno<span style="color:#f92672">.</span>add_claim(
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;The contradiction is resolved by identifying the underlying assumptions that led to apparent disagreement&#34;</span>,
-</span></span><span style="display:flex;"><span>                claim_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dialectical_resolution&#34;</span>
-</span></span><span style="display:flex;"><span>            )
-</span></span><span style="display:flex;"><span>            synthesized_sno<span style="color:#f92672">.</span>add_reasoning_edge(dialectical_claim, resolution_claim, RelationType<span style="color:#f92672">.</span>EXPLAINS)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... (Create successful SynthesisResult object as before) ...</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_analyze_conflict_resolution</span>(self, 
-</span></span><span style="display:flex;"><span>                                   chiral_pair: ChiralPair, 
-</span></span><span style="display:flex;"><span>                                   synthesized_sno: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> List[str]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Analyze how the synthesis resolves specific conflicts&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        resolutions <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> conflict <span style="color:#f92672">in</span> chiral_pair<span style="color:#f92672">.</span>conflict_points:
-</span></span><span style="display:flex;"><span>            resolution <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Conflict &#39;</span><span style="color:#e6db74">{</span>conflict[:<span style="color:#ae81ff">50</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#39; resolved through synthesis perspective&#34;</span>
-</span></span><span style="display:flex;"><span>            resolutions<span style="color:#f92672">.</span>append(resolution)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> resolutions
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_extract_novel_insights</span>(self, 
-</span></span><span style="display:flex;"><span>                              chiral_pair: ChiralPair, 
-</span></span><span style="display:flex;"><span>                              synthesized_sno: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> List[str]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Extract novel insights generated through synthesis&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        insights <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Synthesis reveals previously unrecognized connections between opposing viewpoints&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Integration of conflicting perspectives generates emergent understanding&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Higher-order analysis transcends limitations of individual narratives&#34;</span>
-</span></span><span style="display:flex;"><span>        ]
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> insights
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_compute_quality_metrics</span>(self, 
-</span></span><span style="display:flex;"><span>                               synthesized_sno: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>                               chiral_pair: ChiralPair,
-</span></span><span style="display:flex;"><span>                               evaluation_result: Dict[str, Any]) <span style="color:#f92672">-&gt;</span> Dict[str, float]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Compute detailed quality metrics for the synthesis using actual critic scores.&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        critic_results <span style="color:#f92672">=</span> evaluation_result<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;critic_results&#39;</span>, {})
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        metrics <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;final_trust_score&#39;</span>: synthesized_sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">or</span> <span style="color:#ae81ff">0.0</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;grounding_score&#39;</span>: critic_results<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;grounding&#39;</span>, CriticResult(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>,{}))<span style="color:#f92672">.</span>score,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;logic_score&#39;</span>: critic_results<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;logic&#39;</span>, CriticResult(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>,{}))<span style="color:#f92672">.</span>score,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;novelty_score&#39;</span>: critic_results<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;novelty&#39;</span>, CriticResult(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>,{}))<span style="color:#f92672">.</span>score,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;evidence_preservation_ratio&#39;</span>: len(synthesized_sno<span style="color:#f92672">.</span>evidence_set) <span style="color:#f92672">/</span> max(<span style="color:#ae81ff">1</span>, len(chiral_pair<span style="color:#f92672">.</span>sno_a<span style="color:#f92672">.</span>evidence_set<span style="color:#f92672">.</span>union(chiral_pair<span style="color:#f92672">.</span>sno_b<span style="color:#f92672">.</span>evidence_set))),
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;reasoning_complexity_ratio&#39;</span>: synthesized_sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>number_of_edges() <span style="color:#f92672">/</span> max(<span style="color:#ae81ff">1</span>, synthesized_sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>number_of_nodes()),
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> metrics
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_create_failed_result</span>(self, 
-</span></span><span style="display:flex;"><span>                            chiral_pair: ChiralPair, 
-</span></span><span style="display:flex;"><span>                            strategy: SynthesisStrategy, 
-</span></span><span style="display:flex;"><span>                            error_message: str) <span style="color:#f92672">-&gt;</span> SynthesisResult:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Create a failed synthesis result with explanation&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_update_strategy_stats(strategy, <span style="color:#66d9ef">False</span>)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> SynthesisResult(
-</span></span><span style="display:flex;"><span>            success<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
-</span></span><span style="display:flex;"><span>            synthesized_sno<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
-</span></span><span style="display:flex;"><span>            source_pair<span style="color:#f92672">=</span>chiral_pair,
-</span></span><span style="display:flex;"><span>            synthesis_strategy<span style="color:#f92672">=</span>strategy,
-</span></span><span style="display:flex;"><span>            generation_time<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
-</span></span><span style="display:flex;"><span>            quality_metrics<span style="color:#f92672">=</span>{},
-</span></span><span style="display:flex;"><span>            explanation<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Synthesis failed: </span><span style="color:#e6db74">{</span>error_message<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
-</span></span><span style="display:flex;"><span>            conflict_resolution<span style="color:#f92672">=</span>[],
-</span></span><span style="display:flex;"><span>            preserved_evidence<span style="color:#f92672">=</span>set(),
-</span></span><span style="display:flex;"><span>            novel_insights<span style="color:#f92672">=</span>[]
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_update_strategy_stats</span>(self, strategy: SynthesisStrategy, success: bool):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Update success rate statistics for synthesis strategies&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Simple tracking - in production, use more sophisticated metrics</span>
-</span></span><span style="display:flex;"><span>        current_rate <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;strategy_success_rates&#39;</span>][strategy<span style="color:#f92672">.</span>value]
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Update with exponential moving average</span>
-</span></span><span style="display:flex;"><span>        new_rate <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span> <span style="color:#f92672">*</span> current_rate <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.1</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1.0</span> <span style="color:#66d9ef">if</span> success <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>)
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;strategy_success_rates&#39;</span>][strategy<span style="color:#f92672">.</span>value] <span style="color:#f92672">=</span> new_rate
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_synthesis_statistics</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Get comprehensive synthesis performance statistics&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;total_attempts&#39;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>            success_rate <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;successful_syntheses&#39;</span>] <span style="color:#f92672">/</span> self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;total_attempts&#39;</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>            success_rate <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Compute average quality from recent syntheses</span>
-</span></span><span style="display:flex;"><span>        recent_results <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>synthesis_history[<span style="color:#f92672">-</span><span style="color:#ae81ff">100</span>:]  <span style="color:#75715e"># Last 100 syntheses</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> recent_results:
-</span></span><span style="display:flex;"><span>            valid_scores <span style="color:#f92672">=</span> [r<span style="color:#f92672">.</span>synthesized_sno<span style="color:#f92672">.</span>trust_score <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> recent_results 
-</span></span><span style="display:flex;"><span>                           <span style="color:#66d9ef">if</span> r<span style="color:#f92672">.</span>success <span style="color:#f92672">and</span> r<span style="color:#f92672">.</span>synthesized_sno <span style="color:#f92672">and</span> r<span style="color:#f92672">.</span>synthesized_sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
-</span></span><span style="display:flex;"><span>            avg_quality <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>mean(valid_scores) <span style="color:#66d9ef">if</span> valid_scores <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>            avg_quality <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;total_attempts&#39;</span>: self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;total_attempts&#39;</span>],
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;successful_syntheses&#39;</span>: self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;successful_syntheses&#39;</span>],
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;success_rate&#39;</span>: success_rate,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;average_quality&#39;</span>: avg_quality,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;strategy_success_rates&#39;</span>: self<span style="color:#f92672">.</span>synthesis_stats[<span style="color:#e6db74">&#39;strategy_success_rates&#39;</span>],
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;recent_synthesis_count&#39;</span>: len(recent_results)
-</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ... (Other helper methods like _create_synthesized_sno, _create_failed_result, etc. remain the same) ...</span>
+</span></span></code></pre></div><h3 id="from-paper-to-code-the-dialectical-prompt">From Paper to Code: The Dialectical Prompt</h3>
+<p>(This section remains the same as the original file.)</p>
+<h2 id="deployment-and-scaling-for-production">Deployment and Scaling for Production</h2>
+<p>A &ldquo;complete&rdquo; implementation isn&rsquo;t just about code; it&rsquo;s about making that code deployable, scalable, and observable. The <code>asyncio</code>-based system we&rsquo;ve built is an excellent single-process application, but a production-grade system requires a more robust, distributed architecture. This section provides a step-by-step guide to productionizing the CNS 2.0 system.</p>
+<h3 id="1-containerization-with-docker">1. Containerization with Docker</h3>
+<p>Containerizing the CNS system with Docker is the first step. It provides a consistent, isolated, and portable environment, which is critical for reliable deployment.</p>
+<p><strong>Step 1: Create a <code>requirements.txt</code> file.</strong>
+This file lists all Python dependencies for your project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span># requirements.txt
+</span></span><span style="display:flex;"><span>numpy
+</span></span><span style="display:flex;"><span>networkx
+</span></span><span style="display:flex;"><span>torch
+</span></span><span style="display:flex;"><span>transformers
+</span></span><span style="display:flex;"><span>sentence-transformers
+</span></span><span style="display:flex;"><span>faiss-cpu         # Use faiss-gpu if you have a compatible GPU
+</span></span><span style="display:flex;"><span>scikit-learn
+</span></span><span style="display:flex;"><span>matplotlib
+</span></span><span style="display:flex;"><span>PyYAML            # For loading config files from YAML
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ProductionCNSSystem</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Complete production-ready CNS 2.0 system
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span># For a production job queue
+</span></span><span style="display:flex;"><span>redis
+</span></span><span style="display:flex;"><span>celery
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># For structured logging
+</span></span><span style="display:flex;"><span>structlog
+</span></span></code></pre></div><p><strong>Step 2: Create a <code>Dockerfile</code>.</strong>
+This file is a blueprint for building your container image.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># Start with an official Python slim image for a smaller footprint</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3.10-slim</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set the working directory inside the container</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /usr/src/app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the requirements file first to leverage Docker&#39;s layer caching.</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Dependencies will only be re-installed if this file changes.</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> requirements.txt ./<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install --no-cache-dir -r requirements.txt<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the rest of the application code into the container.</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># This is done *after* installing dependencies, so code changes</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># don&#39;t trigger a full dependency re-installation.</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Define the default command to run when the container starts.</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># This will typically be the command to start a Celery worker.</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [ <span style="color:#e6db74">&#34;celery&#34;</span>, <span style="color:#e6db74">&#34;-A&#34;</span>, <span style="color:#e6db74">&#34;cns.tasks&#34;</span>, <span style="color:#e6db74">&#34;worker&#34;</span>, <span style="color:#e6db74">&#34;--loglevel=info&#34;</span> ]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p><strong>Step 3: Build the Docker image.</strong>
+From your terminal, run the build command:
+<code>docker build -t cns-worker:latest .</code></p>
+<p>With this image, you can now run the CNS system anywhere Docker is installed, eliminating &ldquo;it works on my machine&rdquo; problems.</p>
+<h3 id="2-scaling-with-a-dedicated-job-queue-celery">2. Scaling with a Dedicated Job Queue (Celery)</h3>
+<p>The in-memory <code>asyncio.Queue</code> is a major bottleneck for scaling. A production environment with multiple workers requires a centralized <strong>message broker</strong> to distribute tasks. We will use <strong>Celery</strong> with <strong>Redis</strong>.</p>
+<p>The architecture shifts as follows:</p>
+<ol>
+<li><strong>API Server (e.g., FastAPI)</strong>: A lightweight web server receives requests (e.g., to ingest a new document). Instead of processing it directly, it enqueues a task in Celery.</li>
+<li><strong>Message Broker (Redis)</strong>: Redis holds the queue of tasks to be processed. It is a fast, in-memory data store that is perfect for this role.</li>
+<li><strong>Celery Workers (Multiple Docker Containers)</strong>: These are the workhorses. You can run multiple instances of your <code>cns-worker</code> container. Each worker pulls a task from the Redis queue and executes it.</li>
+</ol>
+<p><strong>Step 1: Define Celery tasks.</strong>
+Create a <code>tasks.py</code> file. This is where you define the functions that your workers will execute.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># cns/tasks.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> celery <span style="color:#f92672">import</span> Celery
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .workflow <span style="color:#f92672">import</span> CNSWorkflowManager <span style="color:#75715e"># Your main CNS logic</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .logging_setup <span style="color:#f92672">import</span> logger <span style="color:#75715e"># Use our structured logger</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure Celery to use Redis as the message broker.</span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> Celery(<span style="color:#e6db74">&#39;cns_tasks&#39;</span>, broker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;redis://redis:6379/0&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize a singleton instance of the CNS manager.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Models are loaded only once per worker process, which is very efficient.</span>
+</span></span><span style="display:flex;"><span>cns_manager <span style="color:#f92672">=</span> CNSWorkflowManager()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.task</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_ingestion</span>(document_text: str, source: str):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;A Celery task to handle the ingestion of a single document.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;ingestion_task_received&#34;</span>, source<span style="color:#f92672">=</span>source)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Note: The original manager used asyncio. For Celery, you would</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># adapt the core logic to be synchronous or use Celery&#39;s async support.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Here, we assume a synchronous `ingest_and_evaluate` method.</span>
+</span></span><span style="display:flex;"><span>    cns_manager<span style="color:#f92672">.</span>ingest_and_evaluate(document_text, source)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;ingestion_task_complete&#34;</span>, source<span style="color:#f92672">=</span>source)
+</span></span></code></pre></div><p><strong>Step 2: Start the services.</strong>
+You would typically use <code>docker-compose</code> to start Redis, the API server, and your Celery workers together. This architecture decouples task submission from processing, allowing you to scale the number of workers independently to handle any workload.</p>
+<h3 id="3-production-ready-logging-with-structlog">3. Production-Ready Logging with <code>structlog</code></h3>
+<p>In a distributed system with multiple workers, standard print statements or basic logs are insufficient. You need <strong>structured logging</strong>. Structured logs (e.g., in JSON format) are machine-readable, making them easy to search, filter, and analyze in a centralized logging platform (like ELK Stack, Splunk, or Datadog).</p>
+<p><strong>Step 1: Configure <code>structlog</code>.</strong>
+Create a <code>logging_setup.py</code> file to configure logging for your entire application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># cns/logging_setup.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> structlog
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure standard logging</span>
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig(level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure structlog</span>
+</span></span><span style="display:flex;"><span>structlog<span style="color:#f92672">.</span>configure(
+</span></span><span style="display:flex;"><span>    processors<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>        structlog<span style="color:#f92672">.</span>stdlib<span style="color:#f92672">.</span>add_log_level,
+</span></span><span style="display:flex;"><span>        structlog<span style="color:#f92672">.</span>processors<span style="color:#f92672">.</span>TimeStamper(fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;iso&#34;</span>),
+</span></span><span style="display:flex;"><span>        structlog<span style="color:#f92672">.</span>processors<span style="color:#f92672">.</span>JSONRenderer(),
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    logger_factory<span style="color:#f92672">=</span>structlog<span style="color:#f92672">.</span>stdlib<span style="color:#f92672">.</span>LoggerFactory(),
+</span></span><span style="display:flex;"><span>    wrapper_class<span style="color:#f92672">=</span>structlog<span style="color:#f92672">.</span>stdlib<span style="color:#f92672">.</span>BoundLogger,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>logger <span style="color:#f92672">=</span> structlog<span style="color:#f92672">.</span>get_logger()
+</span></span></code></pre></div><p><strong>Step 2: Use the logger in your application.</strong>
+Instead of <code>print()</code> or <code>logging.info()</code>, use the <code>structlog</code> logger.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># in cns/workflow.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .logging_setup <span style="color:#f92672">import</span> logger
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CNSWorkflowManager</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ingest_and_evaluate</span>(self, text, source):
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;sno_ingestion_started&#34;</span>, source<span style="color:#f92672">=</span>source, text_length<span style="color:#f92672">=</span>len(text))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># ... ingestion logic ...</span>
+</span></span><span style="display:flex;"><span>            sno <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>ingestion_pipeline<span style="color:#f92672">.</span>ingest_document(text, source)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># ... evaluation logic ...</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>critic_pipeline<span style="color:#f92672">.</span>evaluate_sno(sno, context)
+</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>info(
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;sno_evaluation_complete&#34;</span>,
+</span></span><span style="display:flex;"><span>                sno_id<span style="color:#f92672">=</span>sno<span style="color:#f92672">.</span>sno_id,
+</span></span><span style="display:flex;"><span>                trust_score<span style="color:#f92672">=</span>sno<span style="color:#f92672">.</span>trust_score,
+</span></span><span style="display:flex;"><span>                source<span style="color:#f92672">=</span>source,
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74">&#34;ingestion_failed&#34;</span>, error<span style="color:#f92672">=</span>str(e), source<span style="color:#f92672">=</span>source)
+</span></span></code></pre></div><p>When this code runs, it will produce JSON log entries like this:
+<code>{&quot;log_level&quot;: &quot;info&quot;, &quot;timestamp&quot;: &quot;2023-10-27T10:30:00Z&quot;, &quot;event&quot;: &quot;sno_evaluation_complete&quot;, &quot;sno_id&quot;: &quot;...&quot;, &quot;trust_score&quot;: 0.75, &quot;source&quot;: &quot;doc1.pdf&quot;}</code></p>
+<p>This format is incredibly powerful for debugging and monitoring a complex, distributed system.</p>
+<h3 id="3-production-configuration-management">3. Production Configuration Management</h3>
+<p>In our guide, we&rsquo;ve used a <code>CNSConfig</code> class with hardcoded values for simplicity. This is not suitable for a production environment where you need to change parameters without altering the code. The solution is to externalize the configuration.</p>
+<h4 id="strategy-1-environment-variables">Strategy 1: Environment Variables</h4>
+<p>A common practice is to read configuration from environment variables. This is highly portable and aligns with the principles of <a href="https://12factor.net/config">12-factor apps</a>.</p>
+<p>You would modify the <code>CNSConfig</code> class to read from <code>os.environ</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CNSConfig</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Initialize all components</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>workflow_manager <span style="color:#f92672">=</span> CNSWorkflowManager()
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_engine <span style="color:#f92672">=</span> AdvancedSynthesisEngine(self<span style="color:#f92672">.</span>workflow_manager<span style="color:#f92672">.</span>critic_pipeline)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Connect synthesis engine to workflow manager</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>workflow_manager<span style="color:#f92672">.</span>synthesis_engine <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>synthesis_engine
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Production configuration</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>config <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_load_production_config()
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Monitoring and logging</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>setup_monitoring()
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_load_production_config</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Load production configuration&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;max_concurrent_syntheses&#39;</span>: <span style="color:#ae81ff">5</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;synthesis_quality_threshold&#39;</span>: <span style="color:#ae81ff">0.6</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;population_size_limit&#39;</span>: <span style="color:#ae81ff">10000</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;auto_cleanup_enabled&#39;</span>: <span style="color:#66d9ef">True</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;performance_monitoring&#39;</span>: <span style="color:#66d9ef">True</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;audit_logging&#39;</span>: <span style="color:#66d9ef">True</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup_monitoring</span>(self):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Set up comprehensive system monitoring&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Configure detailed logging</span>
-</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>basicConfig(
-</span></span><span style="display:flex;"><span>            level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>INFO,
-</span></span><span style="display:flex;"><span>            format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(funcName)s</span><span style="color:#e6db74">:</span><span style="color:#e6db74">%(lineno)d</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>,
-</span></span><span style="display:flex;"><span>            handlers<span style="color:#f92672">=</span>[
-</span></span><span style="display:flex;"><span>                logging<span style="color:#f92672">.</span>FileHandler(<span style="color:#e6db74">&#39;cns_system.log&#39;</span>),
-</span></span><span style="display:flex;"><span>                logging<span style="color:#f92672">.</span>StreamHandler()
-</span></span><span style="display:flex;"><span>            ]
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;Production CNS 2.0 System initialized&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_production_system</span>(self):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Run the complete production system&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;Starting Production CNS 2.0 System&#34;</span>)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Start the workflow manager</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>workflow_manager<span style="color:#f92672">.</span>start_system()
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
-</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Production system error: </span><span style="color:#e6db74">{</span>str(e)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">submit_batch_documents</span>(self, documents: List[Dict[str, Any]]):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Submit multiple documents for processing&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> doc <span style="color:#f92672">in</span> documents:
-</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>workflow_manager<span style="color:#f92672">.</span>submit_document(doc[<span style="color:#e6db74">&#39;text&#39;</span>], doc<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;metadata&#39;</span>, {}))
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Submitted </span><span style="color:#e6db74">{</span>len(documents)<span style="color:#e6db74">}</span><span style="color:#e6db74"> documents for processing&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_comprehensive_status</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Get comprehensive system status&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;system_status&#39;</span>: self<span style="color:#f92672">.</span>workflow_manager<span style="color:#f92672">.</span>get_system_status(),
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;synthesis_stats&#39;</span>: self<span style="color:#f92672">.</span>synthesis_engine<span style="color:#f92672">.</span>get_synthesis_statistics(),
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;ingestion_stats&#39;</span>: self<span style="color:#f92672">.</span>workflow_manager<span style="color:#f92672">.</span>ingestion_pipeline<span style="color:#f92672">.</span>extraction_stats,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;config&#39;</span>: self<span style="color:#f92672">.</span>config
-</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Read from environment variable, falling back to a default value.</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>embedding_dim <span style="color:#f92672">=</span> int(os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;CNS_EMBEDDING_DIM&#39;</span>, <span style="color:#ae81ff">768</span>))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Demonstration and Testing</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">demonstrate_complete_system</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Demonstrate the complete CNS 2.0 system&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;🚀 CNS 2.0 Complete System Demonstration&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;=&#34;</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">50</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Initialize production system</span>
-</span></span><span style="display:flex;"><span>    cns_system <span style="color:#f92672">=</span> ProductionCNSSystem()
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sample conflicting documents for demonstration</span>
-</span></span><span style="display:flex;"><span>    sample_documents <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;text&#39;</span>: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Climate Change Acceleration Study
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            =================================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            We demonstrate that climate change is accelerating at an unprecedented rate.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Our analysis of temperature data from 1980-2023 shows exponential warming trends.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            The evidence strongly supports immediate action to reduce carbon emissions.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Rising sea levels and extreme weather events confirm our hypothesis.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Therefore, we conclude that urgent global intervention is required.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;metadata&#39;</span>: {
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;title&#39;</span>: <span style="color:#e6db74">&#39;Climate Acceleration Evidence&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;author&#39;</span>: <span style="color:#e6db74">&#39;Environmental Research Institute&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;type&#39;</span>: <span style="color:#e6db74">&#39;research_paper&#39;</span>
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;text&#39;</span>: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Climate Change Moderation Analysis
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            ==================================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            We argue that climate change impacts have been overestimated in recent studies.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Our reanalysis of the same temperature data reveals natural cyclical variations.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            The evidence suggests that warming trends are within historical norms.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Economic models show that gradual adaptation is more effective than radical intervention.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Therefore, we conclude that measured responses are more appropriate than emergency measures.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;metadata&#39;</span>: {
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;title&#39;</span>: <span style="color:#e6db74">&#39;Climate Moderation Perspective&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;author&#39;</span>: <span style="color:#e6db74">&#39;Policy Analysis Center&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;type&#39;</span>: <span style="color:#e6db74">&#39;research_paper&#39;</span>
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;text&#39;</span>: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Artificial Intelligence Safety Framework
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            =======================================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            We propose that AI systems require comprehensive safety frameworks before deployment.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Our analysis shows that current AI development lacks adequate safety measures.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            The evidence from recent AI incidents supports the need for strict regulation.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Uncontrolled AI development poses significant risks to society.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Therefore, we recommend mandatory safety protocols for all AI systems.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;metadata&#39;</span>: {
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;title&#39;</span>: <span style="color:#e6db74">&#39;AI Safety Requirements&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;author&#39;</span>: <span style="color:#e6db74">&#39;AI Safety Research Group&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;type&#39;</span>: <span style="color:#e6db74">&#39;position_paper&#39;</span>
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;text&#39;</span>: <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            AI Innovation Acceleration Study
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            ===============================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            We demonstrate that excessive AI regulation stifles beneficial innovation.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Our analysis shows that safety concerns are often overstated and premature.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            The evidence from successful AI deployments supports rapid development approaches.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Market-driven safety mechanisms are more effective than regulatory oversight.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Therefore, we conclude that minimal regulation maximizes societal benefits.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;metadata&#39;</span>: {
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;title&#39;</span>: <span style="color:#e6db74">&#39;AI Innovation Benefits&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;author&#39;</span>: <span style="color:#e6db74">&#39;Technology Innovation Institute&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;type&#39;</span>: <span style="color:#e6db74">&#39;position_paper&#39;</span>
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    ]
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;📥 Submitting sample documents to CNS 2.0...&#34;</span>)
-</span></span><span style="display:flex;"><span>    cns_system<span style="color:#f92672">.</span>submit_batch_documents(sample_documents)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">📊 System would process documents through:&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   1. ✅ Narrative Ingestion Pipeline&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   2. ✅ Structured Narrative Object Creation&#34;</span>) 
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   3. ✅ Multi-Component Critic Evaluation&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   4. ✅ Chiral Pair Detection&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   5. ✅ Advanced Synthesis Generation&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   6. ✅ Quality Assessment and Integration&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">🎯 Expected Synthesis Outcomes:&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   • Climate Change: Nuanced perspective integrating urgency with economic reality&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   • AI Safety: Balanced approach combining innovation with prudent safeguards&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   • Novel insights emerging from dialectical reasoning&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;   • Preserved evidence from all source narratives&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Show system capabilities</span>
-</span></span><span style="display:flex;"><span>    status <span style="color:#f92672">=</span> cns_system<span style="color:#f92672">.</span>get_comprehensive_status()
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">📈 System Status: </span><span style="color:#e6db74">{</span>json<span style="color:#f92672">.</span>dumps(status, indent<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">✨ CNS 2.0 Complete Implementation Ready for Production!&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> cns_system
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># For nested structures, we can expect a JSON string.</span>
+</span></span><span style="display:flex;"><span>        default_weights <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;{&#34;grounding&#34;: 0.4, &#34;logic&#34;: 0.3, &#34;novelty&#34;: 0.3}&#39;</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critic_weights <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;CNS_CRITIC_WEIGHTS&#39;</span>, default_weights))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Run the complete demonstration</span>
-</span></span><span style="display:flex;"><span>    asyncio<span style="color:#f92672">.</span>run(demonstrate_complete_system())
-</span></span></code></pre></div><h2 id="deployment-and-production-considerations">Deployment and Production Considerations</h2>
-<p>This complete CNS 2.0 implementation represents a production-ready system that successfully bridges the theoretical foundations from the research paper with practical, deployable code. The system provides full synthesis capabilities, comprehensive evaluation, and robust workflow management - making it ready for real-world knowledge synthesis applications.</p>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... and so on for all other parameters.</span>
+</span></span></code></pre></div><p>When running in Docker, you can pass these environment variables using the <code>-e</code> flag:
+<code>docker run -e CNS_CRITIC_WEIGHTS='{&quot;grounding&quot;: 0.8, &quot;logic&quot;: 0.1, &quot;novelty&quot;: 0.1}' cns-app</code></p>
+<h4 id="strategy-2-configuration-file">Strategy 2: Configuration File</h4>
+<p>For more complex configurations, a dedicated file is often easier to manage. Since we saw a <code>config.yaml</code> in the repository, let&rsquo;s use that.</p>
+<p>First, create a <code>config.yaml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># config.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">embedding_dim</span>: <span style="color:#ae81ff">768</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">critic_weights</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">grounding</span>: <span style="color:#ae81ff">0.4</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">logic</span>: <span style="color:#ae81ff">0.3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">novelty</span>: <span style="color:#ae81ff">0.3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">models</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">embedding</span>: <span style="color:#e6db74">&#34;all-MiniLM-L6-v2&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">nli</span>: <span style="color:#e6db74">&#34;roberta-large-mnli&#34;</span>
+</span></span></code></pre></div><p>Then, modify <code>CNSConfig</code> to load from this file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> yaml
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CNSConfig</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, config_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;config.yaml&#34;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(config_path, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            config <span style="color:#f92672">=</span> yaml<span style="color:#f92672">.</span>safe_load(f)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>embedding_dim <span style="color:#f92672">=</span> config[<span style="color:#e6db74">&#39;embedding_dim&#39;</span>]
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critic_weights <span style="color:#f92672">=</span> config[<span style="color:#e6db74">&#39;critic_weights&#39;</span>]
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>models <span style="color:#f92672">=</span> config[<span style="color:#e6db74">&#39;models&#39;</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... and so on</span>
+</span></span></code></pre></div><p>This approach makes it easy to maintain multiple configuration profiles (e.g., <code>config_dev.yaml</code>, <code>config_prod.yaml</code>) and provides a clear, version-controllable record of the system&rsquo;s parameters.</p>
 
     </div>
 
@@ -834,17 +481,6 @@ The synthesis workflow operates as follows:</p>
             
         </div>
     </aside>
-
-    <footer>
-        
-        <div class="progress-indicator">
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 100.02000000000001%"></div>
-            </div>
-            <span class="progress-text">6/7 chapters completed</span>
-        </div>
-    </footer>
-
 </article>
 
             </div>

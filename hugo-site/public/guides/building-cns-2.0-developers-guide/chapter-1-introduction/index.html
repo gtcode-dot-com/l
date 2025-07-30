@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753847786">
+    <link rel="stylesheet" href="/css/style.css?v=1753859201">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,7 +106,7 @@
     
     <header class="article-header">
         <div class="article-meta">
-            <span class="article-weight">Chapter 1</span>
+            <span class="article-weight">Chapter 1 of 7</span>
             <span class="article-separator">•</span>
             <time class="article-date">July 29, 2025</time>
         </div>
@@ -132,15 +132,11 @@
             <nav id="TableOfContents">
   <ul>
     <li><a href="#the-challenge-of-conflicting-information">The Challenge of Conflicting Information</a></li>
-    <li><a href="#core-innovation-beyond-vector-averaging">Core Innovation: Beyond Vector Averaging</a>
-      <ul>
-        <li><a href="#1-structured-narrative-objects-snos">1. Structured Narrative Objects (SNOs)</a></li>
-        <li><a href="#2-multi-component-critic-pipeline">2. Multi-Component Critic Pipeline</a></li>
-        <li><a href="#3-generative-synthesis-engine">3. Generative Synthesis Engine</a></li>
-        <li><a href="#4-evidential-entanglement-metric">4. Evidential Entanglement Metric</a></li>
-      </ul>
-    </li>
-    <li><a href="#setting-up-our-development-environment">Setting Up Our Development Environment</a></li>
+    <li><a href="#who-is-this-guide-for">Who Is This Guide For?</a></li>
+    <li><a href="#core-innovations">Core Innovations</a></li>
+    <li><a href="#the-cns-20-workflow-at-a-glance">The CNS 2.0 Workflow at a Glance</a></li>
+    <li><a href="#foundational-data-structures">Foundational Data Structures</a></li>
+    <li><a href="#setting-up-the-cns-20-environment">Setting Up the CNS 2.0 Environment</a></li>
   </ul>
 </nav>
         </nav>
@@ -153,67 +149,47 @@
 </div>
 <h1 id="chapter-1-introduction-to-cns-20">Chapter 1: Introduction to CNS 2.0</h1>
 <h2 id="the-challenge-of-conflicting-information">The Challenge of Conflicting Information</h2>
-<p>In our information-rich world, one of the most pressing challenges is synthesizing knowledge from conflicting, incomplete, and contradictory sources. Whether analyzing scientific research, intelligence reports, or complex domain knowledge, we constantly encounter situations where:</p>
+<p>Complex domains—from scientific research to intelligence analysis—require synthesizing incomplete, uncertain, and contradictory information into coherent knowledge. Despite AI&rsquo;s success in pattern recognition, the cognitive challenge of reconciling conflicting hypotheses remains unsolved. This challenge stems from the inherent complexity of argumentation, where claims exist within intricate webs of evidence and reasoning that resist simple computational approaches.</p>
+<p><strong>Chiral Narrative Synthesis (CNS) 2.0</strong> addresses this fundamental challenge by operationalizing knowledge synthesis. It treats hypotheses as mathematically evaluable data structures rather than simple text, moving beyond conceptual models to a practical, implementable engineering blueprint.</p>
+<h2 id="who-is-this-guide-for">Who Is This Guide For?</h2>
+<p>This guide is designed for developers, researchers, and engineers who are interested in building sophisticated AI systems for knowledge synthesis. It is for you if:</p>
 <ul>
-<li>Multiple credible sources present contradictory claims</li>
-<li>Evidence supports competing hypotheses</li>
-<li>Traditional approaches fail to reconcile differences meaningfully</li>
+<li>You are a <strong>Python developer</strong> looking to implement advanced, research-grade AI concepts.</li>
+<li>You are a <strong>researcher</strong> in NLP or AI who wants to move from theory to a practical, working implementation.</li>
+<li>You are an <strong>engineer</strong> tasked with building systems that can reason about and reconcile conflicting data sources.</li>
 </ul>
-<p><strong>Chiral Narrative Synthesis (CNS) 2.0</strong> addresses this fundamental challenge through a computational framework that treats hypotheses as mathematically evaluable data structures rather than simple text.</p>
-<h2 id="core-innovation-beyond-vector-averaging">Core Innovation: Beyond Vector Averaging</h2>
-<p>Traditional knowledge synthesis approaches often resort to simple averaging or majority voting. CNS 2.0 introduces a revolutionary approach through four key innovations:</p>
-<h3 id="1-structured-narrative-objects-snos">1. Structured Narrative Objects (SNOs)</h3>
-<p>Instead of treating narratives as simple vectors, CNS 2.0 represents them as rich data structures that preserve:</p>
-<ul>
-<li>Central hypotheses</li>
-<li>Logical reasoning graphs</li>
-<li>Evidence sets</li>
-<li>Trust scores</li>
-</ul>
-<h3 id="2-multi-component-critic-pipeline">2. Multi-Component Critic Pipeline</h3>
-<p>Rather than relying on black-box evaluation, CNS 2.0 provides transparent assessment through specialized critics:</p>
-<ul>
-<li><strong>Grounding Critic</strong>: Evaluates evidential support</li>
-<li><strong>Logic Critic</strong>: Assesses structural coherence</li>
-<li><strong>Novelty-Parsimony Critic</strong>: Balances innovation against complexity</li>
-</ul>
-<h3 id="3-generative-synthesis-engine">3. Generative Synthesis Engine</h3>
-<p>CNS 2.0 employs LLM-powered dialectical reasoning to create genuine synthesis rather than mechanical blending.</p>
-<h3 id="4-evidential-entanglement-metric">4. Evidential Entanglement Metric</h3>
-<p>A novel measure that identifies narratives opposing each other while arguing over shared evidence.</p>
-<h2 id="setting-up-our-development-environment">Setting Up Our Development Environment</h2>
-<p>Let&rsquo;s begin by establishing the foundational Python environment for our CNS 2.0 implementation:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">CNS 2.0 Implementation Foundation
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">================================
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Core imports and basic setup for Chiral Narrative Synthesis
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> networkx <span style="color:#66d9ef">as</span> nx
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Tuple, Set, Optional, Union
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> abc <span style="color:#f92672">import</span> ABC, abstractmethod
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> hashlib
+<p>A strong understanding of Python is required, and familiarity with core machine learning concepts (like embeddings) and libraries (like NumPy) will be highly beneficial. While we will explain the CNS-specific concepts in detail, this guide is not a general introduction to AI or Python programming.</p>
+<h2 id="core-innovations">Core Innovations</h2>
+<p>Moving beyond the naive vector averaging of traditional approaches, CNS 2.0 introduces four key advances, consistent with the formal research paper:</p>
+<ol>
+<li><strong>Structured Narrative Objects (SNOs):</strong> Rich data structures capturing hypotheses, logical reasoning graphs, evidence sets, and trust scores.</li>
+<li><strong>Multi-Component Critic Pipeline:</strong> Transparent evaluation replacing black-box oracles with specialized assessors for grounding, logic, and novelty.</li>
+<li><strong>Generative Synthesis Engine:</strong> LLM-powered dialectical reasoning that transcends naive vector averaging.</li>
+<li><strong>Evidential Entanglement Metric:</strong> A novel measure identifying narratives that oppose each other while arguing over shared evidence.</li>
+</ol>
+<h2 id="the-cns-20-workflow-at-a-glance">The CNS 2.0 Workflow at a Glance</h2>
+<p>To understand how these components work together, let&rsquo;s visualize the complete system workflow. The system operates in a continuous, cyclical process of ingestion, evaluation, and synthesis.</p>
+<div style="text-align: center;">
+  <img src="/img/diagram-01.svg" alt="Centered SVG" style="display: inline-block;" />
+</div>
+<p>This diagram illustrates how raw information is transformed into structured knowledge, which is then refined through a dialectical process that pits competing narratives against each other to generate novel, more robust insights. The key stages are:</p>
+<ol>
+<li><strong>Narrative Ingestion:</strong> Unstructured text is converted into a formal <code>StructuredNarrativeObject</code> (SNO), a process known as argumentation mining.</li>
+<li><strong>SNO Population:</strong> The system maintains a collection of all known SNOs, forming its knowledge base.</li>
+<li><strong>Chiral Pair Selection:</strong> The system actively searches the population for pairs of SNOs that are both highly contradictory (<code>Chirality</code>) and argue over the same evidence (<code>Entanglement</code>). These are the most productive conflicts to resolve.</li>
+<li><strong>Generative Synthesis:</strong> The selected pair is passed to an LLM, which is prompted to perform dialectical reasoning and generate a new, higher-order SNO that resolves the conflict.</li>
+<li><strong>Critic Evaluation:</strong> The newly synthesized SNO is rigorously evaluated by the multi-component critic pipeline. If its <code>Trust Score</code> is high enough, it is added to the population, representing new knowledge. If not, it is archived.</li>
+</ol>
+<h2 id="foundational-data-structures">Foundational Data Structures</h2>
+<p>Before we dive into the full system, let&rsquo;s define two simple but crucial data structures that will be used throughout our implementation: <code>RelationType</code> and <code>EvidenceItem</code>. These form the building blocks of our reasoning graphs and evidence sets.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># --- Standard Library Imports ---</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> enum <span style="color:#f92672">import</span> Enum
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Core dependencies for advanced functionality</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> torch
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> transformers
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">from</span> sentence_transformers <span style="color:#f92672">import</span> SentenceTransformer
-</span></span><span style="display:flex;"><span>    HAS_TRANSFORMERS <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ImportError</span>:
-</span></span><span style="display:flex;"><span>    HAS_TRANSFORMERS <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;ERROR: Transformers library is required for research-grade CNS 2.0 implementation.&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Install with: pip install torch transformers sentence-transformers&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># For research-grade implementation, transformers are mandatory</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">assert</span> HAS_TRANSFORMERS, <span style="color:#e6db74">&#34;CNS 2.0 requires transformers library for semantic embeddings and NLI models&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Optional
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> hashlib
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RelationType</span>(Enum):
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Enumeration of logical relationship types in reasoning graphs&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Enumeration of logical relationship types in reasoning graphs for clarity and consistency.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    SUPPORTS <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;supports&#34;</span>
 </span></span><span style="display:flex;"><span>    CONTRADICTS <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;contradicts&#34;</span>
 </span></span><span style="display:flex;"><span>    IMPLIES <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;implies&#34;</span>
@@ -223,49 +199,114 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EvidenceItem</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a piece of evidence with source tracking&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a piece of evidence with source tracking and a content hash for integrity.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    content: str
-</span></span><span style="display:flex;"><span>    source_id: str
+</span></span><span style="display:flex;"><span>    source_id: str  <span style="color:#75715e"># e.g., a DOI, URL, or document ID</span>
 </span></span><span style="display:flex;"><span>    doc_hash: Optional[str] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
 </span></span><span style="display:flex;"><span>    confidence: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__post_init__</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Generate a content hash after the object is initialized.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>doc_hash <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
 </span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>doc_hash <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>sha256(self<span style="color:#f92672">.</span>content<span style="color:#f92672">.</span>encode())<span style="color:#f92672">.</span>hexdigest()[:<span style="color:#ae81ff">16</span>]
+</span></span></code></pre></div><p>These classes ensure our code is readable, type-safe, and consistent when representing the core components of a narrative.</p>
+<h2 id="setting-up-the-cns-20-environment">Setting Up the CNS 2.0 Environment</h2>
+<p>Now, let&rsquo;s establish the broader Python environment for our implementation. This includes all necessary imports and a centralized configuration class to manage system parameters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">CNS 2.0 Implementation Foundation
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">================================
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Core imports and basic setup for Chiral Narrative Synthesis
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Standard Library Imports ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict, List, Tuple, Set, Union
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> abc <span style="color:#f92672">import</span> ABC, abstractmethod
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Core Scientific Computing and Graph Libraries ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> networkx <span style="color:#66d9ef">as</span> nx
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Machine Learning and NLP Libraries (Research-Grade Implementation) ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> transformers
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">from</span> sentence_transformers <span style="color:#f92672">import</span> SentenceTransformer
+</span></span><span style="display:flex;"><span>    HAS_TRANSFORMERS <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ImportError</span>:
+</span></span><span style="display:flex;"><span>    HAS_TRANSFORMERS <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;WARNING: Key NLP libraries not found. CNS 2.0 will run in a simplified, data-structure-only mode.&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;For full research-grade functionality, install with: pip install torch transformers sentence-transformers&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A research-grade implementation relies on semantic understanding, which requires these libraries.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> HAS_TRANSFORMERS:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Proceeding in simplified mode. Any operations requiring semantic embeddings will fail.&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CNSConfig</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Configuration class for CNS 2.0 system parameters&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Configuration class for all CNS 2.0 system parameters.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Centralizing configuration makes the system easier to tune and manage. Each parameter
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    plays a critical role in the system&#39;s behavior.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Embedding dimensions</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>embedding_dim <span style="color:#f92672">=</span> <span style="color:#ae81ff">768</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- Embedding Model ---</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># The dimension of the vectors used to represent text semantically.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># This MUST match the output dimension of the chosen embedding model.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># For example, &#39;all-MiniLM-L6-v2&#39; produces 384-dim vectors, while</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#39;all-mpnet-base-v2&#39; produces 768-dim vectors. Mismatching this</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># will cause matrix operations to fail.</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>embedding_dim <span style="color:#f92672">=</span> <span style="color:#ae81ff">384</span> <span style="color:#75715e"># Changed to match all-MiniLM-L6-v2</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Critic weights (for the final Reward function)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- Critic Pipeline Weights ---</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># These weights define the system&#39;s &#34;values&#34; or priorities. They control the</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># balance between evidential support (grounding), logical coherence (logic), and</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># originality (novelty).</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># - High &#39;grounding&#39; weight: The system prioritizes claims backed by evidence.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># - High &#39;logic&#39; weight: The system prioritizes well-structured, coherent arguments.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># - High &#39;novelty&#39; weight: The system prioritizes new, unexplored ideas.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># These can be adjusted dynamically based on the system&#39;s current goal (e.g., exploration vs. verification).</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critic_weights <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;grounding&#39;</span>: <span style="color:#ae81ff">0.4</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;logic&#39;</span>: <span style="color:#ae81ff">0.3</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;novelty&#39;</span>: <span style="color:#ae81ff">0.3</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Novelty-Parsimony Critic specific parameters (alpha, beta)</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>novelty_alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>  <span style="color:#75715e"># Weight for novelty (distance from existing SNOs)</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>novelty_beta <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>   <span style="color:#75715e"># Penalty for complexity (graph edge-to-node ratio)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- Novelty-Parsimony Critic Parameters ---</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># These values fine-tune the behavior of the Novelty-Parsimony critic.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#39;alpha&#39;: Scales the reward for novelty. Higher alpha encourages more &#34;out-of-the-box&#34; ideas.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#39;beta&#39;: Scales the penalty for complexity (number of claims/edges). Higher beta encourages</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#         simpler, more parsimonious arguments (Occam&#39;s Razor).</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>novelty_alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>novelty_beta <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Synthesis trigger thresholds</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- Synthesis Trigger Thresholds ---</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># These thresholds act as a gatekeeper for the expensive synthesis process.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># An SNO pair is only considered for synthesis if BOTH thresholds are met.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#39;chirality&#39;: Minimum opposition score (0-1). Higher values mean only strongly</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#              contradictory narratives will be synthesized.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#39;entanglement&#39;: Minimum evidence overlap (0-1). Higher values mean the system only</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#                 focuses on conflicts where narratives argue over the same facts.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Setting these correctly is key to balancing computational cost and discovery.</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_thresholds <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;chirality&#39;</span>: <span style="color:#ae81ff">0.7</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;entanglement&#39;</span>: <span style="color:#ae81ff">0.5</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Model configurations</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># --- Model Identifiers ---</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Specifies which pre-trained models from Hugging Face to download and use.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># This allows for easy experimentation by swapping models.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># - &#39;embedding&#39;: A sentence-transformer model for creating semantic vectors.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># - &#39;nli&#39;: A Natural Language Inference model for the Grounding Critic. Must be trained on MNLI.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># - &#39;synthesis&#39;: A generative instruction-tuned model for the Synthesis Engine.</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>models <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;embedding&#39;</span>: <span style="color:#e6db74">&#34;all-MiniLM-L6-v2&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;nli&#39;</span>: <span style="color:#e6db74">&#34;roberta-large-mnli&#34;</span>, <span style="color:#75715e"># A powerful model for the Grounding Critic</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;synthesis&#39;</span>: <span style="color:#e6db74">&#34;mistralai/Mistral-7B-Instruct-v0.1&#34;</span> <span style="color:#75715e"># A more capable synthesis model</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;embedding&#39;</span>: <span style="color:#e6db74">&#34;sentence-transformers/all-MiniLM-L6-v2&#34;</span>, <span style="color:#75715e"># More specific name</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;nli&#39;</span>: <span style="color:#e6db74">&#34;roberta-large-mnli&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;synthesis&#39;</span>: <span style="color:#e6db74">&#34;mistralai/Mistral-7B-Instruct-v0.1&#34;</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">to_dict</span>(self) <span style="color:#f92672">-&gt;</span> Dict:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Convert configuration to dictionary for serialization&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Convert configuration to a dictionary for easy serialization and logging.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;embedding_dim&#39;</span>: self<span style="color:#f92672">.</span>embedding_dim,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;critic_weights&#39;</span>: self<span style="color:#f92672">.</span>critic_weights,
@@ -275,12 +316,14 @@
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;models&#39;</span>: self<span style="color:#f92672">.</span>models
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Global configuration instance</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a global configuration instance to be used throughout the system.</span>
 </span></span><span style="display:flex;"><span>cns_config <span style="color:#f92672">=</span> CNSConfig()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;CNS 2.0 Foundation Environment Ready&#34;</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Configuration: </span><span style="color:#e6db74">{</span>json<span style="color:#f92672">.</span>dumps(cns_config<span style="color:#f92672">.</span>to_dict(), indent<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Current Configuration:&#34;</span>)
+</span></span><span style="display:flex;"><span>print(json<span style="color:#f92672">.</span>dumps(cns_config<span style="color:#f92672">.</span>to_dict(), indent<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>))
+</span></span></code></pre></div><p>This restructured setup provides a clearer, step-by-step introduction to the foundational components of the CNS 2.0 system.</p>
+
     </div>
 
     
@@ -316,17 +359,6 @@
             
         </div>
     </aside>
-
-    <footer>
-        
-        <div class="progress-indicator">
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 16.67%"></div>
-            </div>
-            <span class="progress-text">1/7 chapters completed</span>
-        </div>
-    </footer>
-
 </article>
 
             </div>

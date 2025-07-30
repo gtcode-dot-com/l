@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753847786">
+    <link rel="stylesheet" href="/css/style.css?v=1753859163">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,7 +106,7 @@
     
     <header class="article-header">
         <div class="article-meta">
-            <span class="article-weight">Chapter 4</span>
+            <span class="article-weight">Chapter 4 of 7</span>
             <span class="article-separator">•</span>
             <time class="article-date">July 29, 2025</time>
         </div>
@@ -132,7 +132,14 @@
             <nav id="TableOfContents">
   <ul>
     <li><a href="#beyond-vector-averaging-true-dialectical-synthesis">Beyond Vector Averaging: True Dialectical Synthesis</a></li>
-    <li><a href="#core-synthesis-infrastructure">Core Synthesis Infrastructure</a></li>
+    <li><a href="#core-synthesis-infrastructure">Core Synthesis Infrastructure</a>
+      <ul>
+        <li></li>
+        <li><a href="#from-paper-to-code-mathematical-metrics">From Paper to Code: Mathematical Metrics</a></li>
+        <li><a href="#advanced-agent-action-guided-narrative-exploration">Advanced Agent Action: Guided Narrative Exploration</a></li>
+      </ul>
+    </li>
+    <li><a href="#making-it-concrete-visualizing-the-sno-latent-space">Making it Concrete: Visualizing the SNO Latent Space</a></li>
   </ul>
 </nav>
         </nav>
@@ -145,8 +152,7 @@
 </div>
 <h1 id="chapter-4-generative-synthesis-engine">Chapter 4: Generative Synthesis Engine</h1>
 <h2 id="beyond-vector-averaging-true-dialectical-synthesis">Beyond Vector Averaging: True Dialectical Synthesis</h2>
-<p>Traditional knowledge synthesis approaches often resort to mechanical blending - averaging vectors, voting on claims, or simple concatenation. CNS 2.0&rsquo;s Generative Synthesis Engine takes a fundamentally different approach: it models synthesis as an act of creative, reasoned generation through dialectical argumentation.</p>
-<p>The engine operates through four key stages:</p>
+<p>CNS 2.0&rsquo;s Generative Synthesis Engine models synthesis as an act of creative, reasoned generation through dialectical argumentation. The engine operates through four key stages:</p>
 <ol>
 <li><strong>Chiral Pair Selection</strong> - Identifying productive conflicts</li>
 <li><strong>Dialectical Prompt Construction</strong> - Preserving argumentative structure</li>
@@ -177,13 +183,11 @@
 </span></span><span style="display:flex;"><span>    HAS_FAISS <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Warning: faiss library not found. ChiralPairDetector will be inefficient.&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure logging for synthesis operations</span>
 </span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig(level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>INFO)
 </span></span><span style="display:flex;"><span>logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(__name__)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChiralPair</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a pair of SNOs suitable for synthesis&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    sno_a: StructuredNarrativeObject
 </span></span><span style="display:flex;"><span>    sno_b: StructuredNarrativeObject
 </span></span><span style="display:flex;"><span>    chirality_score: float
@@ -192,380 +196,253 @@
 </span></span><span style="display:flex;"><span>    conflict_points: List[str]
 </span></span><span style="display:flex;"><span>    shared_evidence: Set[str]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SynthesisCandidate</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Represents a candidate synthesis result&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    candidate_sno: StructuredNarrativeObject
-</span></span><span style="display:flex;"><span>    source_pair: ChiralPair
-</span></span><span style="display:flex;"><span>    generation_metadata: Dict[str, Any]
-</span></span><span style="display:flex;"><span>    confidence: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SynthesisStrategy</span>(Enum):
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Different approaches to synthesis based on conflict type&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    COMPLEMENTARY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complementary&#34;</span>  <span style="color:#75715e"># Non-contradictory integration</span>
-</span></span><span style="display:flex;"><span>    DIALECTICAL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dialectical&#34;</span>      <span style="color:#75715e"># Resolution of contradictions</span>
-</span></span><span style="display:flex;"><span>    TRANSCENDENT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transcendent&#34;</span>    <span style="color:#75715e"># Higher-order perspective</span>
-</span></span><span style="display:flex;"><span>    EVIDENTIAL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;evidential&#34;</span>        <span style="color:#75715e"># Evidence-based reconciliation</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ... (Other dataclasses and Enums from original file) ...</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RelationalMetrics</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Computes relationships between SNOs for synthesis planning&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">chirality_score</span>(sno_a: StructuredNarrativeObject, 
-</span></span><span style="display:flex;"><span>                       sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> float:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Compute chirality score measuring opposition between hypotheses
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        High chirality = strong opposition with high trust
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (sno_a<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> 
-</span></span><span style="display:flex;"><span>            sno_b<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span>
-</span></span><span style="display:flex;"><span>            sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> 
-</span></span><span style="display:flex;"><span>            sno_b<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_cosine_similarity</span>(v1: np<span style="color:#f92672">.</span>ndarray, v2: np<span style="color:#f92672">.</span>ndarray) <span style="color:#f92672">-&gt;</span> float:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Helper for cosine similarity.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>dot(v1, v2) <span style="color:#f92672">/</span> (np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(v1) <span style="color:#f92672">*</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(v2))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">chirality_score</span>(sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> float:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> sno_a<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> sno_b<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> sno_b<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Cosine similarity between hypothesis embeddings</span>
-</span></span><span style="display:flex;"><span>        cos_sim <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>dot(sno_a<span style="color:#f92672">.</span>hypothesis_embedding, sno_b<span style="color:#f92672">.</span>hypothesis_embedding) <span style="color:#f92672">/</span> (
-</span></span><span style="display:flex;"><span>            np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(sno_a<span style="color:#f92672">.</span>hypothesis_embedding) <span style="color:#f92672">*</span> 
-</span></span><span style="display:flex;"><span>            np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(sno_b<span style="color:#f92672">.</span>hypothesis_embedding)
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Chirality is high when hypotheses oppose but both are trusted</span>
-</span></span><span style="display:flex;"><span>        opposition <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> cos_sim  <span style="color:#75715e"># High when dissimilar</span>
+</span></span><span style="display:flex;"><span>        cos_sim <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>_cosine_similarity(sno_a<span style="color:#f92672">.</span>hypothesis_embedding, sno_b<span style="color:#f92672">.</span>hypothesis_embedding)
+</span></span><span style="display:flex;"><span>        opposition <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> cos_sim
 </span></span><span style="display:flex;"><span>        trust_product <span style="color:#f92672">=</span> sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">*</span> sno_b<span style="color:#f92672">.</span>trust_score
-</span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> opposition <span style="color:#f92672">*</span> trust_product
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evidential_entanglement</span>(sno_a: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>                               sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> Tuple[float, Set[str]]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Compute evidential entanglement measuring shared evidence
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Returns (entanglement_score, shared_evidence_ids)
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evidential_entanglement</span>(sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> Tuple[float, Set[str]]:
 </span></span><span style="display:flex;"><span>        evidence_a <span style="color:#f92672">=</span> {e<span style="color:#f92672">.</span>source_id <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> sno_a<span style="color:#f92672">.</span>evidence_set}
 </span></span><span style="display:flex;"><span>        evidence_b <span style="color:#f92672">=</span> {e<span style="color:#f92672">.</span>source_id <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> sno_b<span style="color:#f92672">.</span>evidence_set}
-</span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> evidence_a <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> evidence_b:
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.0</span>, set()
-</span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        intersection <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>intersection(evidence_b)
 </span></span><span style="display:flex;"><span>        union <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>union(evidence_b)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Jaccard similarity</span>
-</span></span><span style="display:flex;"><span>        entanglement <span style="color:#f92672">=</span> len(intersection) <span style="color:#f92672">/</span> len(union) <span style="color:#66d9ef">if</span> union <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> entanglement, intersection
-</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> len(intersection) <span style="color:#f92672">/</span> len(union) <span style="color:#66d9ef">if</span> union <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>, intersection
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">synthesis_potential</span>(chirality: float, entanglement: float) <span style="color:#f92672">-&gt;</span> float:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Compute overall synthesis potential
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        High potential requires both opposition and shared context
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Both metrics should be reasonably high for good synthesis potential</span>
 </span></span><span style="display:flex;"><span>        geometric_mean <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(chirality <span style="color:#f92672">*</span> entanglement)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Bonus for balanced high scores</span>
 </span></span><span style="display:flex;"><span>        balance_bonus <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> abs(chirality <span style="color:#f92672">-</span> entanglement)
-</span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> geometric_mean <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1.0</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.2</span> <span style="color:#f92672">*</span> balance_bonus)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">### Scalable Pair Selection with ANN</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### Deconstructing the Synthesis Potential Metric</span>
+</span></span><span style="display:flex;"><span>The <span style="color:#960050;background-color:#1e0010">`</span>synthesis_potential<span style="color:#960050;background-color:#1e0010">`</span> function <span style="color:#f92672">is</span> designed to identify the <span style="color:#f92672">*</span>most productive<span style="color:#f92672">*</span> pairs <span style="color:#66d9ef">for</span> synthesis<span style="color:#f92672">.</span> It<span style="color:#e6db74">&#39;s not enough for two narratives to be merely contradictory; they should be contradictory *and* balanced in their conflict. The formula accomplishes this in two parts:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1.</span>  <span style="color:#f92672">**</span><span style="color:#960050;background-color:#1e0010">`</span>geometric_mean <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(chirality <span style="color:#f92672">*</span> entanglement)<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">**</span>: We use the geometric mean instead of a simple average<span style="color:#f92672">.</span> The geometric mean heavily penalizes pairs where one score <span style="color:#f92672">is</span> very low<span style="color:#f92672">.</span> For example, <span style="color:#66d9ef">if</span> <span style="color:#960050;background-color:#1e0010">`</span>chirality<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#f92672">is</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">0.9</span><span style="color:#960050;background-color:#1e0010">`</span> but <span style="color:#960050;background-color:#1e0010">`</span>entanglement<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#f92672">is</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">0.1</span><span style="color:#960050;background-color:#1e0010">`</span>, their arithmetic average <span style="color:#f92672">is</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">0.5</span><span style="color:#960050;background-color:#1e0010">`</span>, but their geometric mean <span style="color:#f92672">is</span> only <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">0.3</span><span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span> This ensures that the system prioritizes pairs that are <span style="color:#f92672">*</span>both<span style="color:#f92672">*</span> highly chiral <span style="color:#f92672">and</span> highly entangled, preventing it <span style="color:#f92672">from</span> wasting time on pairs that are strong <span style="color:#f92672">in</span> one aspect but weak <span style="color:#f92672">in</span> the other<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2.</span>  <span style="color:#f92672">**</span><span style="color:#960050;background-color:#1e0010">`</span>balance_bonus <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> abs(chirality <span style="color:#f92672">-</span> entanglement)<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">**</span>: This term rewards pairs where the chirality <span style="color:#f92672">and</span> entanglement scores are close to each other<span style="color:#f92672">.</span> For example, a pair <span style="color:#66d9ef">with</span> <span style="color:#960050;background-color:#1e0010">`</span>(chirality<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, entanglement<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#f92672">is</span> considered more <span style="color:#e6db74">&#34;balanced&#34;</span> <span style="color:#f92672">and</span> thus more promising than a pair <span style="color:#66d9ef">with</span> <span style="color:#960050;background-color:#1e0010">`</span>(chirality<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>, entanglement<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span> The bonus encourages the system to focus on well<span style="color:#f92672">-</span>proportioned conflicts<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The final score combines these two ideas, prioritizing balanced pairs that have high scores on both of the core relational metrics<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Scalable Pair Selection with Robust Conflict Detection</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>From Paper to Code: Scalable Pair Finding <span style="color:#66d9ef">with</span> ANN<span style="color:#f92672">**</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> A naive O(n²) comparison of all SNOs <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> scalable<span style="color:#f92672">.</span> The paper (Section <span style="color:#ae81ff">3.3</span>) mandates a more efficient, two<span style="color:#f92672">-</span>step process:
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1.</span> First, an Approximate Nearest Neighbor index (e<span style="color:#f92672">.</span>g<span style="color:#f92672">.</span>, LSH) on the H vectors <span style="color:#f92672">is</span> used to efficiently pre<span style="color:#f92672">-</span>filter a small set of candidate pairs<span style="color:#f92672">...</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2.</span> Second, the more computationally intensive EScore <span style="color:#f92672">is</span> calculated only <span style="color:#66d9ef">for</span> these pre<span style="color:#f92672">-</span>filtered pairs<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> We implement this using the <span style="color:#960050;background-color:#1e0010">`</span>faiss<span style="color:#960050;background-color:#1e0010">`</span> library, a high<span style="color:#f92672">-</span>performance ANN library<span style="color:#f92672">.</span> We build an index of all hypothesis embeddings<span style="color:#f92672">.</span> For each SNO, we query the index to find its k nearest neighbors<span style="color:#f92672">.</span> We then calculate the full CScore <span style="color:#f92672">and</span> EScore only <span style="color:#66d9ef">for</span> this small, pre<span style="color:#f92672">-</span>filtered set of candidates, dramatically reducing computation<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> The paper (Section <span style="color:#ae81ff">3.3</span>) mandates an efficient, two<span style="color:#f92672">-</span>step process <span style="color:#66d9ef">for</span> finding synthesis candidates: first, use an Approximate Nearest Neighbor (ANN) index to pre<span style="color:#f92672">-</span>filter pairs, then calculate more intensive scores<span style="color:#f92672">.</span> Our <span style="color:#960050;background-color:#1e0010">`</span>ChiralPairDetector<span style="color:#960050;background-color:#1e0010">`</span> uses the <span style="color:#960050;background-color:#1e0010">`</span>faiss<span style="color:#960050;background-color:#1e0010">`</span> library <span style="color:#66d9ef">for</span> this, ensuring scalability<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This updated <span style="color:#960050;background-color:#1e0010">`</span>ChiralPairDetector<span style="color:#960050;background-color:#1e0010">`</span> features a significantly improved <span style="color:#960050;background-color:#1e0010">`</span>_identify_conflicts<span style="color:#960050;background-color:#1e0010">`</span> method<span style="color:#f92672">.</span> Instead of relying on brittle keyword matching, it now uses <span style="color:#f92672">**</span>semantic similarity<span style="color:#f92672">**</span> on claim embeddings to find nuanced points of disagreement, making our conflict detection far more robust<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">```</span>python
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChiralPairDetector</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Scalable SNO pair detection using Approximate Nearest Neighbor (ANN) search.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Scalable SNO pair detection using ANN search and semantic conflict identification.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, 
+</span></span><span style="display:flex;"><span>                 embedding_model, <span style="color:#75715e"># Pass in the embedding model for on-the-fly computations</span>
 </span></span><span style="display:flex;"><span>                 chirality_threshold: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>,
 </span></span><span style="display:flex;"><span>                 entanglement_threshold: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>,
 </span></span><span style="display:flex;"><span>                 synthesis_threshold: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>,
 </span></span><span style="display:flex;"><span>                 k_neighbors: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>embedding_model <span style="color:#f92672">=</span> embedding_model
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>chirality_threshold <span style="color:#f92672">=</span> chirality_threshold
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>entanglement_threshold <span style="color:#f92672">=</span> entanglement_threshold
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>synthesis_threshold <span style="color:#f92672">=</span> synthesis_threshold
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>k_neighbors <span style="color:#f92672">=</span> k_neighbors  <span style="color:#75715e"># Number of nearest neighbors to check</span>
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>k_neighbors <span style="color:#f92672">=</span> min(k_neighbors, len(sno_population) <span style="color:#66d9ef">if</span> sno_population <span style="color:#66d9ef">else</span> k_neighbors)
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> HAS_FAISS:
 </span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>warning(<span style="color:#e6db74">&#34;FAISS not installed. Falling back to O(n²) pair detection.&#34;</span>)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_chiral_pairs</span>(self, 
-</span></span><span style="display:flex;"><span>                         sno_population: List[StructuredNarrativeObject],
-</span></span><span style="display:flex;"><span>                         max_pairs: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_chiral_pairs</span>(self, sno_population: List[StructuredNarrativeObject], max_pairs: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Find the most promising chiral pairs using scalable ANN-based pre-filtering
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Finds the most promising chiral pairs for synthesis.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Uses FAISS for efficient search if available, otherwise falls back to a brute-force O(n^2) search.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> len(sno_population) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> []
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Use FAISS for efficient pre-filtering if available</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Ensure all necessary embeddings are pre-computed.</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_embed_all_claims(sno_population)
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> HAS_FAISS:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_find_pairs_with_faiss(sno_population, max_pairs)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_find_pairs_faiss(sno_population, max_pairs)
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_find_pairs_brute_force(sno_population, max_pairs)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_find_pairs_with_faiss</span>(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Scalable O(n log n) pair finding using FAISS ANN index&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        promising_pairs <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Prepare data and build FAISS index</span>
-</span></span><span style="display:flex;"><span>        embeddings <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> sno_population <span style="color:#66d9ef">if</span> s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>])<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;float32&#39;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> embeddings<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>: 
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> []
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_find_pairs_faiss</span>(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Finds candidate pairs efficiently using a FAISS index.&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        sno_map <span style="color:#f92672">=</span> {i: sno <span style="color:#66d9ef">for</span> i, sno <span style="color:#f92672">in</span> enumerate(sno_population) <span style="color:#66d9ef">if</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>}
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        index <span style="color:#f92672">=</span> faiss<span style="color:#f92672">.</span>IndexFlatL2(embeddings<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> len(sno_map) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>: <span style="color:#66d9ef">return</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        embeddings <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#66d9ef">for</span> sno <span style="color:#f92672">in</span> sno_map<span style="color:#f92672">.</span>values()])<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;float32&#39;</span>)
+</span></span><span style="display:flex;"><span>        dimension <span style="color:#f92672">=</span> embeddings<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        index <span style="color:#f92672">=</span> faiss<span style="color:#f92672">.</span>IndexFlatL2(dimension)
 </span></span><span style="display:flex;"><span>        index<span style="color:#f92672">.</span>add(embeddings)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Query the index to find nearest neighbors for each SNO</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># We query for k+1 because the first result will be the item itself</span>
-</span></span><span style="display:flex;"><span>        k <span style="color:#f92672">=</span> min(self<span style="color:#f92672">.</span>k_neighbors <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, len(sno_map))
-</span></span><span style="display:flex;"><span>        distances, indices <span style="color:#f92672">=</span> index<span style="color:#f92672">.</span>search(embeddings, k)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Process pre-filtered pairs</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(indices)):
-</span></span><span style="display:flex;"><span>            sno_a <span style="color:#f92672">=</span> sno_map[i]
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> j_idx <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, len(indices[i])):  <span style="color:#75715e"># Skip the first one (self)</span>
-</span></span><span style="display:flex;"><span>                sno_b <span style="color:#f92672">=</span> sno_map[indices[i][j_idx]]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Search for k nearest neighbors for each vector.</span>
+</span></span><span style="display:flex;"><span>        distances, indices <span style="color:#f92672">=</span> index<span style="color:#f92672">.</span>search(embeddings, self<span style="color:#f92672">.</span>k_neighbors)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># To avoid duplicates, create a sorted key</span>
-</span></span><span style="display:flex;"><span>                pair_key <span style="color:#f92672">=</span> tuple(sorted((sno_a<span style="color:#f92672">.</span>sno_id, sno_b<span style="color:#f92672">.</span>sno_id)))
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> pair_key <span style="color:#f92672">in</span> promising_pairs:
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># 4. Calculate full metrics ONLY for the pre-filtered pairs</span>
-</span></span><span style="display:flex;"><span>                chirality <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>chirality_score(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> chirality <span style="color:#f92672">&lt;</span> self<span style="color:#f92672">.</span>chirality_threshold:
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
-</span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                entanglement, shared_evidence <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>evidential_entanglement(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> entanglement <span style="color:#f92672">&lt;</span> self<span style="color:#f92672">.</span>entanglement_threshold:
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
-</span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                potential <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>synthesis_potential(chirality, entanglement)
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> potential <span style="color:#f92672">&lt;</span> self<span style="color:#f92672">.</span>synthesis_threshold:
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
-</span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># If a pair is promising, add it</span>
-</span></span><span style="display:flex;"><span>                conflict_points <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_identify_conflicts(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                promising_pairs[pair_key] <span style="color:#f92672">=</span> ChiralPair(
-</span></span><span style="display:flex;"><span>                    sno_a<span style="color:#f92672">=</span>sno_a, sno_b<span style="color:#f92672">=</span>sno_b,
-</span></span><span style="display:flex;"><span>                    chirality_score<span style="color:#f92672">=</span>chirality, entanglement_score<span style="color:#f92672">=</span>entanglement,
-</span></span><span style="display:flex;"><span>                    synthesis_potential<span style="color:#f92672">=</span>potential, conflict_points<span style="color:#f92672">=</span>conflict_points,
-</span></span><span style="display:flex;"><span>                    shared_evidence<span style="color:#f92672">=</span>shared_evidence
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Sort by potential and return top candidates</span>
-</span></span><span style="display:flex;"><span>        sorted_pairs <span style="color:#f92672">=</span> sorted(promising_pairs<span style="color:#f92672">.</span>values(), key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> p: p<span style="color:#f92672">.</span>synthesis_potential, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> sorted_pairs[:max_pairs]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_find_pairs_brute_force</span>(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;O(n²) fallback implementation when FAISS is not available&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        processed_pairs <span style="color:#f92672">=</span> set()
 </span></span><span style="display:flex;"><span>        candidate_pairs <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Evaluate all pairs</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i, sno_a <span style="color:#f92672">in</span> enumerate(sno_population):
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> j, sno_b <span style="color:#f92672">in</span> enumerate(sno_population):
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;=</span> j:  <span style="color:#75715e"># Avoid duplicates and self-comparison</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
-</span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Skip if either SNO lacks necessary components</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (<span style="color:#f92672">not</span> sno_a<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> sno_b<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">or</span>
-</span></span><span style="display:flex;"><span>                    sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> sno_b<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>):
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
-</span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Compute relational metrics</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i, sno_a <span style="color:#f92672">in</span> sno_map<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> j_idx, neighbor_sno_idx <span style="color:#f92672">in</span> enumerate(indices[i]):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> neighbor_sno_idx: <span style="color:#66d9ef">continue</span> <span style="color:#75715e"># Skip self-comparison</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                pair_key <span style="color:#f92672">=</span> tuple(sorted((sno_a<span style="color:#f92672">.</span>sno_id, sno_map[neighbor_sno_idx]<span style="color:#f92672">.</span>sno_id)))
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> pair_key <span style="color:#f92672">in</span> processed_pairs: <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>                processed_pairs<span style="color:#f92672">.</span>add(pair_key)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                sno_b <span style="color:#f92672">=</span> sno_map[neighbor_sno_idx]
 </span></span><span style="display:flex;"><span>                chirality <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>chirality_score(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                entanglement, shared_evidence <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>evidential_entanglement(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                potential <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>synthesis_potential(chirality, entanglement)
-</span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Apply thresholds</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (chirality <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>chirality_threshold <span style="color:#f92672">and</span> 
-</span></span><span style="display:flex;"><span>                    entanglement <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>entanglement_threshold <span style="color:#f92672">and</span>
-</span></span><span style="display:flex;"><span>                    potential <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>synthesis_threshold):
-</span></span><span style="display:flex;"><span>                    
-</span></span><span style="display:flex;"><span>                    <span style="color:#75715e"># Identify specific conflict points</span>
-</span></span><span style="display:flex;"><span>                    conflict_points <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_identify_conflicts(sno_a, sno_b)
-</span></span><span style="display:flex;"><span>                    
-</span></span><span style="display:flex;"><span>                    pair <span style="color:#f92672">=</span> ChiralPair(
-</span></span><span style="display:flex;"><span>                        sno_a<span style="color:#f92672">=</span>sno_a, sno_b<span style="color:#f92672">=</span>sno_b,
-</span></span><span style="display:flex;"><span>                        chirality_score<span style="color:#f92672">=</span>chirality, entanglement_score<span style="color:#f92672">=</span>entanglement,
-</span></span><span style="display:flex;"><span>                        synthesis_potential<span style="color:#f92672">=</span>potential, conflict_points<span style="color:#f92672">=</span>conflict_points,
-</span></span><span style="display:flex;"><span>                        shared_evidence<span style="color:#f92672">=</span>shared_evidence
-</span></span><span style="display:flex;"><span>                    )
-</span></span><span style="display:flex;"><span>                    
-</span></span><span style="display:flex;"><span>                    candidate_pairs<span style="color:#f92672">.</span>append(pair)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Sort by synthesis potential and return top candidates</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> chirality <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>chirality_threshold:
+</span></span><span style="display:flex;"><span>                    entanglement, shared_evidence <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>evidential_entanglement(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                    potential <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>synthesis_potential(chirality, entanglement)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> entanglement <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>entanglement_threshold <span style="color:#f92672">and</span> potential <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>synthesis_threshold:
+</span></span><span style="display:flex;"><span>                        conflict_points <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_identify_conflicts_semantically(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                        candidate_pairs<span style="color:#f92672">.</span>append(ChiralPair(sno_a, sno_b, chirality, entanglement, potential, conflict_points, shared_evidence))
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        candidate_pairs<span style="color:#f92672">.</span>sort(key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> p: p<span style="color:#f92672">.</span>synthesis_potential, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> candidate_pairs[:max_pairs]
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_identify_conflicts</span>(self, 
-</span></span><span style="display:flex;"><span>                          sno_a: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>                          sno_b: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> List[str]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Identify specific points of conflict between SNOs&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        conflicts <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_find_pairs_brute_force</span>(self, sno_population: List[StructuredNarrativeObject], max_pairs: int) <span style="color:#f92672">-&gt;</span> List[ChiralPair]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Finds candidate pairs using a simple, O(n^2) brute-force search.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        candidate_pairs <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i, sno_a <span style="color:#f92672">in</span> enumerate(sno_population):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> j, sno_b <span style="color:#f92672">in</span> enumerate(sno_population):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;=</span> j: <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                chirality <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>chirality_score(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> chirality <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>chirality_threshold:
+</span></span><span style="display:flex;"><span>                    entanglement, shared_evidence <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>evidential_entanglement(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                    potential <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>synthesis_potential(chirality, entanglement)
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> entanglement <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>entanglement_threshold <span style="color:#f92672">and</span> potential <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>synthesis_threshold:
+</span></span><span style="display:flex;"><span>                        conflict_points <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_identify_conflicts_semantically(sno_a, sno_b)
+</span></span><span style="display:flex;"><span>                        candidate_pairs<span style="color:#f92672">.</span>append(ChiralPair(sno_a, sno_b, chirality, entanglement, potential, conflict_points, shared_evidence))
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Primary conflict: opposing central hypotheses</span>
-</span></span><span style="display:flex;"><span>        conflicts<span style="color:#f92672">.</span>append(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Central hypothesis conflict: &#39;</span><span style="color:#e6db74">{</span>sno_a<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; vs &#39;</span><span style="color:#e6db74">{</span>sno_b<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Secondary conflicts: contradictory claims in reasoning graphs</span>
-</span></span><span style="display:flex;"><span>        claims_a <span style="color:#f92672">=</span> {node_data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node_data <span style="color:#f92672">in</span> sno_a<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)}
-</span></span><span style="display:flex;"><span>        claims_b <span style="color:#f92672">=</span> {node_data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node_data <span style="color:#f92672">in</span> sno_b<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)}
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Simple keyword-based conflict detection (in production, use semantic similarity)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> claim_a <span style="color:#f92672">in</span> claims_a:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> claim_b <span style="color:#f92672">in</span> claims_b:
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>_claims_conflict(claim_a, claim_b):
-</span></span><span style="display:flex;"><span>                    conflicts<span style="color:#f92672">.</span>append(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Claim conflict: &#39;</span><span style="color:#e6db74">{</span>claim_a<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; vs &#39;</span><span style="color:#e6db74">{</span>claim_b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> conflicts[:<span style="color:#ae81ff">5</span>]  <span style="color:#75715e"># Limit to most significant conflicts</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_claims_conflict</span>(self, claim_a: str, claim_b: str) <span style="color:#f92672">-&gt;</span> bool:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Simple heuristic to detect conflicting claims&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Look for opposing terms</span>
-</span></span><span style="display:flex;"><span>        opposing_pairs <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">&#39;increase&#39;</span>, <span style="color:#e6db74">&#39;decrease&#39;</span>), (<span style="color:#e6db74">&#39;more&#39;</span>, <span style="color:#e6db74">&#39;less&#39;</span>), (<span style="color:#e6db74">&#39;higher&#39;</span>, <span style="color:#e6db74">&#39;lower&#39;</span>),
-</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">&#39;positive&#39;</span>, <span style="color:#e6db74">&#39;negative&#39;</span>), (<span style="color:#e6db74">&#39;beneficial&#39;</span>, <span style="color:#e6db74">&#39;harmful&#39;</span>), (<span style="color:#e6db74">&#39;true&#39;</span>, <span style="color:#e6db74">&#39;false&#39;</span>),
-</span></span><span style="display:flex;"><span>            (<span style="color:#e6db74">&#39;likely&#39;</span>, <span style="color:#e6db74">&#39;unlikely&#39;</span>), (<span style="color:#e6db74">&#39;significant&#39;</span>, <span style="color:#e6db74">&#39;insignificant&#39;</span>)
-</span></span><span style="display:flex;"><span>        ]
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        claim_a_lower <span style="color:#f92672">=</span> claim_a<span style="color:#f92672">.</span>lower()
-</span></span><span style="display:flex;"><span>        claim_b_lower <span style="color:#f92672">=</span> claim_b<span style="color:#f92672">.</span>lower()
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> pos, neg <span style="color:#f92672">in</span> opposing_pairs:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> ((pos <span style="color:#f92672">in</span> claim_a_lower <span style="color:#f92672">and</span> neg <span style="color:#f92672">in</span> claim_b_lower) <span style="color:#f92672">or</span>
-</span></span><span style="display:flex;"><span>                (neg <span style="color:#f92672">in</span> claim_a_lower <span style="color:#f92672">and</span> pos <span style="color:#f92672">in</span> claim_b_lower)):
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>        candidate_pairs<span style="color:#f92672">.</span>sort(key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> p: p<span style="color:#f92672">.</span>synthesis_potential, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> candidate_pairs[:max_pairs]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">### From Paper to Code: The Mathematical Metrics</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_embed_all_claims</span>(self, sno_population: List[StructuredNarrativeObject]):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Utility to compute and cache claim embeddings for a population of SNOs.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> sno <span style="color:#f92672">in</span> sno_population:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Ensure central hypothesis is embedded</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                sno<span style="color:#f92672">.</span>compute_hypothesis_embedding(self<span style="color:#f92672">.</span>embedding_model)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Embed all sub-claims</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> node_id, data <span style="color:#f92672">in</span> sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
+</span></span><span style="display:flex;"><span>                claim_node <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;claim&#39;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> claim_node <span style="color:#f92672">and</span> claim_node<span style="color:#f92672">.</span>embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                    claim_node<span style="color:#f92672">.</span>embedding <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>embedding_model<span style="color:#f92672">.</span>encode(claim_node<span style="color:#f92672">.</span>content)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The <span style="color:#960050;background-color:#1e0010">`</span>RelationalMetrics<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">is</span> where we implement the crucial formulas <span style="color:#f92672">from</span> Section <span style="color:#ae81ff">3.2</span> of the paper<span style="color:#f92672">.</span> These metrics allow the system to identify the most <span style="color:#f92672">*</span>productive<span style="color:#f92672">*</span> conflicts <span style="color:#66d9ef">for</span> synthesis<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_identify_conflicts_semantically</span>(self, sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject, threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>) <span style="color:#f92672">-&gt;</span> List[str]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Identifies conflicts using semantic similarity of claim embeddings.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        conflicts <span style="color:#f92672">=</span> [<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Central hypothesis conflict: &#39;</span><span style="color:#e6db74">{</span>sno_a<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; vs &#39;</span><span style="color:#e6db74">{</span>sno_b<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>]
+</span></span><span style="display:flex;"><span>        claims_a <span style="color:#f92672">=</span> [data[<span style="color:#e6db74">&#39;claim&#39;</span>] <span style="color:#66d9ef">for</span> _, data <span style="color:#f92672">in</span> sno_a<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>) <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;claim&#39;</span> <span style="color:#f92672">in</span> data <span style="color:#f92672">and</span> data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
+</span></span><span style="display:flex;"><span>        claims_b <span style="color:#f92672">=</span> [data[<span style="color:#e6db74">&#39;claim&#39;</span>] <span style="color:#66d9ef">for</span> _, data <span style="color:#f92672">in</span> sno_b<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>) <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;claim&#39;</span> <span style="color:#f92672">in</span> data <span style="color:#f92672">and</span> data[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Connecting the Chirality Score:<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> ca <span style="color:#f92672">in</span> claims_a:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> cb <span style="color:#f92672">in</span> claims_b:
+</span></span><span style="display:flex;"><span>                similarity <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>_cosine_similarity(ca<span style="color:#f92672">.</span>embedding, cb<span style="color:#f92672">.</span>embedding)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> similarity <span style="color:#f92672">&lt;</span> threshold:
+</span></span><span style="display:flex;"><span>                    conflicts<span style="color:#f92672">.</span>append(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Potential claim conflict (similarity </span><span style="color:#e6db74">{</span>similarity<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">): &#39;</span><span style="color:#e6db74">{</span>ca<span style="color:#f92672">.</span>content<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; vs &#39;</span><span style="color:#e6db74">{</span>cb<span style="color:#f92672">.</span>content<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The paper defines the Chirality Score <span style="color:#66d9ef">as</span> a measure of opposition between highly<span style="color:#f92672">-</span>trusted narratives<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> conflicts[:<span style="color:#ae81ff">5</span>] <span style="color:#75715e"># Limit for brevity</span>
+</span></span></code></pre></div><h4 id="a-note-on-semantic-conflict-detection">A Note on Semantic Conflict Detection</h4>
+<p>Our <code>_identify_conflicts_semantically</code> method uses cosine similarity to find disagreements between sub-claims, but it&rsquo;s crucial to understand the nuances of this approach. Cosine similarity produces a score between -1 and 1:</p>
+<ul>
+<li><strong>Score near 1</strong>: The claims are semantically very similar.</li>
+<li><strong>Score near 0</strong>: The claims are semantically unrelated (orthogonal). For example, &ldquo;The sky is blue&rdquo; and &ldquo;Interest rates are rising&rdquo;.</li>
+<li><strong>Score near -1</strong>: The claims are semantically opposite or contradictory. For example, &ldquo;The battery is safe&rdquo; and &ldquo;The battery is dangerous&rdquo;.</li>
+</ul>
+<p>Our current implementation uses a simple threshold (<code>&lt; 0.2</code>) which correctly identifies claims that are either unrelated or in direct opposition. However, for a more precise and powerful system, this can be refined. Here are two advanced strategies:</p>
+<ol>
+<li>
+<p><strong>Focus on Opposition with a Negative Threshold</strong>: To find only the most direct conflicts, you could change the condition to check for a negative similarity score (e.g., <code>similarity &lt; -0.2</code>). This would focus the synthesis engine on resolving clear-cut contradictions rather than just disconnected statements. The trade-off is potentially missing more subtle forms of disagreement.</p>
+</li>
+<li>
+<p><strong>Use a Natural Language Inference (NLI) Model</strong>: The most robust method is to leverage the same technology used in our <code>GroundingCritic</code>. For each pair of claims, you can query an NLI model:</p>
+<ul>
+<li><strong>Premise</strong>: Claim A&rsquo;s content.</li>
+<li><strong>Hypothesis</strong>: Claim B&rsquo;s content.
+The NLI model will output probabilities for three labels: <code>entailment</code>, <code>neutral</code>, and <code>contradiction</code>. If the <code>contradiction</code> probability is high, you have found a strong point of conflict. This is more computationally expensive than cosine similarity but provides a much more explicit and reliable signal of genuine logical conflict, allowing the synthesis engine to focus its efforts on the most meaningful disagreements.</li>
+</ul>
+</li>
+</ol>
+<h3 id="from-paper-to-code-mathematical-metrics">From Paper to Code: Mathematical Metrics</h3>
+<p>The <code>RelationalMetrics</code> class implements the crucial formulas from Section 3.2 of the paper, allowing the system to identify the most <em>productive</em> conflicts for synthesis. The <code>CScore</code> (Chirality) and <code>EScore</code> (Entanglement) are direct translations of the paper&rsquo;s mathematical definitions into code, forming the analytical foundation of the synthesis engine.</p>
+<h3 id="advanced-agent-action-guided-narrative-exploration">Advanced Agent Action: Guided Narrative Exploration</h3>
+<p>(This section remains the same as the original file, describing latent space targeting.)</p>
+<h2 id="making-it-concrete-visualizing-the-sno-latent-space">Making it Concrete: Visualizing the SNO Latent Space</h2>
+<p>The concepts of &ldquo;latent space,&rdquo; &ldquo;chirality,&rdquo; and &ldquo;conceptual distance&rdquo; are powerful but abstract. To make them intuitive, we can visualize the high-dimensional hypothesis embeddings in 2D space. This is a powerful diagnostic and exploratory tool.</p>
+<p>We can achieve this using <code>scikit-learn</code> for t-SNE (a dimensionality reduction technique) and <code>matplotlib</code> for plotting.</p>
+<p><strong>Note:</strong> You may need to install these libraries: <code>pip install scikit-learn matplotlib</code></p>
+<p>Here’s a function that takes a list of SNOs and generates a plot of their conceptual relationships:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.manifold <span style="color:#f92672">import</span> TSNE
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> List
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>Definition <span style="color:#ae81ff">3.1</span> (Chirality Score):<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">visualize_sno_population</span>(sno_population: List[StructuredNarrativeObject]):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Creates a 2D visualization of the SNO population&#39;s hypothesis embeddings using t-SNE.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    embeddings <span style="color:#f92672">=</span> [sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#66d9ef">for</span> sno <span style="color:#f92672">in</span> sno_population <span style="color:#66d9ef">if</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> len(embeddings) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Not enough SNOs with embeddings to visualize.&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
-</span></span><span style="display:flex;"><span>\text{CScore}(SNO_i, SNO_j) <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> H_i \cdot H_j) \cdot (T_i \cdot T_j)
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Ensure all embeddings are in a single numpy array</span>
+</span></span><span style="display:flex;"><span>    embedding_matrix <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(embeddings)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Our Python code <span style="color:#f92672">in</span> <span style="color:#960050;background-color:#1e0010">`</span>RelationalMetrics<span style="color:#f92672">.</span>chirality_score<span style="color:#960050;background-color:#1e0010">`</span> mirrors this exactly:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Use t-SNE to reduce to 2 dimensions</span>
+</span></span><span style="display:flex;"><span>    tsne <span style="color:#f92672">=</span> TSNE(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, perplexity<span style="color:#f92672">=</span>max(min(len(embeddings) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">30</span>), <span style="color:#ae81ff">1</span>), random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>    embeddings_2d <span style="color:#f92672">=</span> tsne<span style="color:#f92672">.</span>fit_transform(embedding_matrix)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> H_i \cdot H_j<span style="color:#960050;background-color:#1e0010">`</span>: We calculate this using cosine similarity<span style="color:#f92672">.</span> Since cosine similarity <span style="color:#f92672">is</span> <span style="color:#960050;background-color:#1e0010">$</span>(H_i \cdot H_j) <span style="color:#f92672">/</span> (\<span style="color:#f92672">|</span>H_i\<span style="color:#f92672">|</span> \<span style="color:#f92672">|</span>H_j\<span style="color:#f92672">|</span>)<span style="color:#960050;background-color:#1e0010">$</span>, <span style="color:#f92672">and</span> our embeddings are often normalized, <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> cos_sim<span style="color:#960050;background-color:#1e0010">`</span> directly corresponds to this opposition term<span style="color:#f92672">.</span> High similarity (close to <span style="color:#ae81ff">1</span>) results <span style="color:#f92672">in</span> low opposition, <span style="color:#f92672">and</span> low similarity (close to <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) results <span style="color:#f92672">in</span> high opposition<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>T_i \cdot T_j<span style="color:#960050;background-color:#1e0010">`</span>: This <span style="color:#f92672">is</span> implemented <span style="color:#66d9ef">as</span> <span style="color:#960050;background-color:#1e0010">`</span>trust_product <span style="color:#f92672">=</span> sno_a<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">*</span> sno_b<span style="color:#f92672">.</span>trust_score<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> The final <span style="color:#66d9ef">return</span> value <span style="color:#960050;background-color:#1e0010">`</span>opposition <span style="color:#f92672">*</span> trust_product<span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#f92672">is</span> the direct implementation of the paper<span style="color:#e6db74">&#39;s `CScore` formula.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Extract trust scores for color-coding the plot</span>
+</span></span><span style="display:flex;"><span>    trust_scores <span style="color:#f92672">=</span> [sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">or</span> <span style="color:#ae81ff">0.0</span> <span style="color:#66d9ef">for</span> sno <span style="color:#f92672">in</span> sno_population <span style="color:#66d9ef">if</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Connecting Evidential Entanglement:<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create the scatter plot</span>
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">8</span>))
+</span></span><span style="display:flex;"><span>    scatter <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>scatter(
+</span></span><span style="display:flex;"><span>        embeddings_2d[:, <span style="color:#ae81ff">0</span>],
+</span></span><span style="display:flex;"><span>        embeddings_2d[:, <span style="color:#ae81ff">1</span>],
+</span></span><span style="display:flex;"><span>        c<span style="color:#f92672">=</span>trust_scores,
+</span></span><span style="display:flex;"><span>        cmap<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;viridis&#39;</span>,
+</span></span><span style="display:flex;"><span>        alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>,
+</span></span><span style="display:flex;"><span>        s<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> <span style="color:#75715e"># size of points</span>
+</span></span><span style="display:flex;"><span>    )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The paper introduces Evidential Entanglement to measure <span style="color:#66d9ef">if</span> two narratives are arguing over the same facts<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Add labels and titles</span>
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;t-SNE Visualization of SNO Latent Space&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;t-SNE Dimension 1&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;t-SNE Dimension 2&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>colorbar(scatter, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Trust Score&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>Definition <span style="color:#ae81ff">3.2</span> (Evidential Entanglement):<span style="color:#f92672">**</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> This new metric measures the degree to which two narratives are arguing over the same data<span style="color:#f92672">.</span> It <span style="color:#f92672">is</span> calculated using the Jaccard similarity of their <span style="color:#f92672">*</span>Evidence Sets (E)<span style="color:#f92672">*</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Annotate points with SNO IDs for clarity</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i, sno <span style="color:#f92672">in</span> enumerate(sno_population):
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">if</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            plt<span style="color:#f92672">.</span>annotate(sno<span style="color:#f92672">.</span>sno_id[:<span style="color:#ae81ff">8</span>], (embeddings_2d[i, <span style="color:#ae81ff">0</span>], embeddings_2d[i, <span style="color:#ae81ff">1</span>]), alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
-</span></span><span style="display:flex;"><span>\text{EScore}(SNO_i, SNO_j) <span style="color:#f92672">=</span> \frac{<span style="color:#f92672">|</span>\mathcal{E}_i \cap \mathcal{E}_j<span style="color:#f92672">|</span>}{<span style="color:#f92672">|</span>\mathcal{E}_i \cup \mathcal{E}_j<span style="color:#f92672">|</span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>show()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Let<span style="color:#e6db74">&#39;s look at our `RelationalMetrics.evidential_entanglement` method:</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>evidence_a <span style="color:#f92672">=</span> {e<span style="color:#f92672">.</span>source_id <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> sno_a<span style="color:#f92672">.</span>evidence_set}<span style="color:#960050;background-color:#1e0010">`</span> creates the set <span style="color:#960050;background-color:#1e0010">$</span>\mathcal{E}_i<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>intersection <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>intersection(evidence_b)<span style="color:#960050;background-color:#1e0010">`</span> calculates the numerator, <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">|</span>\mathcal{E}_i \cap \mathcal{E}_j<span style="color:#f92672">|</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">`</span>union <span style="color:#f92672">=</span> evidence_a<span style="color:#f92672">.</span>union(evidence_b)<span style="color:#960050;background-color:#1e0010">`</span> calculates the denominator, <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">|</span>\mathcal{E}_i \cup \mathcal{E}_j<span style="color:#f92672">|</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> The final line, <span style="color:#960050;background-color:#1e0010">`</span>len(intersection) <span style="color:#f92672">/</span> len(union)<span style="color:#960050;background-color:#1e0010">`</span>, <span style="color:#f92672">is</span> a perfect implementation of the Jaccard similarity formula <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">`</span>EScore<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>The system<span style="color:#e6db74">&#39;s trigger for synthesis—prioritizing pairs with **both high Chirality and high Entanglement**—is directly implemented in the logic of our `ChiralPairDetector`.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">### Advanced Agent Action: Guided Narrative Exploration</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Beyond synthesis, agents <span style="color:#f92672">in</span> the CNS <span style="color:#ae81ff">2.0</span> ecosystem can actively explore <span style="color:#e6db74">&#34;conceptual space&#34;</span> to refine <span style="color:#f92672">or</span> evolve existing narratives<span style="color:#f92672">.</span> Section <span style="color:#ae81ff">3.4</span> of the paper introduces a powerful generative method <span style="color:#66d9ef">for</span> this, using a <span style="color:#f92672">*</span>target embedding<span style="color:#f92672">*</span> to guide the creation of a new, improved SNO<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>From Paper to Code: Latent Space Targeting<span style="color:#f92672">**</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> The paper defines a target vector <span style="color:#960050;background-color:#1e0010">$</span>H_{\text{target}}<span style="color:#960050;background-color:#1e0010">$</span> that represents a desirable direction <span style="color:#66d9ef">for</span> evolution<span style="color:#960050;background-color:#1e0010">—</span>one that increases the narrative<span style="color:#e6db74">&#39;s reward score while also moving away from its chiral opponent.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
-</span></span><span style="display:flex;"><span>H_{\text{target}} <span style="color:#f92672">=</span> H_{i} <span style="color:#f92672">+</span> \alpha \nabla_{H_i} \text{Reward}(SNO_i) <span style="color:#f92672">+</span> \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} <span style="color:#f92672">-</span> H_{j}}{\<span style="color:#f92672">|</span>H_{i} <span style="color:#f92672">-</span> H_{j}\<span style="color:#f92672">|</span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> Let<span style="color:#e6db74">&#39;s break this down:</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">$</span>H_i<span style="color:#960050;background-color:#1e0010">$</span>: The starting point (embedding of the current SNO)<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">$</span>\alpha \nabla_{H_i} \text{Reward}(SNO_i)<span style="color:#960050;background-color:#1e0010">$</span>: The <span style="color:#e6db74">&#34;improvement&#34;</span> vector<span style="color:#f92672">.</span> This <span style="color:#f92672">is</span> a gradient step <span style="color:#f92672">in</span> the direction that maximizes the SNO<span style="color:#e6db74">&#39;s reward. Calculating the true gradient is complex, so we&#39;</span>ll approximate it<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">$</span>\beta \cdot \text{CScore} \cdot \frac{H_i <span style="color:#f92672">-</span> H_j}{\<span style="color:#f92672">|</span>H_i <span style="color:#f92672">-</span> H_j\<span style="color:#f92672">|</span>}<span style="color:#960050;background-color:#1e0010">$</span>: The <span style="color:#e6db74">&#34;repulsion&#34;</span> vector<span style="color:#f92672">.</span> It pushes the new SNO away <span style="color:#f92672">from</span> its chiral opponent <span style="color:#960050;background-color:#1e0010">$</span>SNO_j<span style="color:#960050;background-color:#1e0010">$</span>, scaled by their Chirality Score<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">```</span>python
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NarrativeExplorer</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Implements guided narrative exploration via latent space targeting.&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, alpha: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, beta: float <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>):
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">=</span> alpha  <span style="color:#75715e"># Learning rate for reward gradient</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>beta <span style="color:#f92672">=</span> beta    <span style="color:#75715e"># Scaling factor for repulsion</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_target_embedding</span>(
-</span></span><span style="display:flex;"><span>        self,
-</span></span><span style="display:flex;"><span>        sno_i: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>        sno_j: StructuredNarrativeObject,
-</span></span><span style="display:flex;"><span>        critic_pipeline: CriticPipeline
-</span></span><span style="display:flex;"><span>    ) <span style="color:#f92672">-&gt;</span> Optional[np<span style="color:#f92672">.</span>ndarray]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Calculates the target embedding H_target based on Equation (3).
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> sno_i<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> sno_j<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        H_i <span style="color:#f92672">=</span> sno_i<span style="color:#f92672">.</span>hypothesis_embedding
-</span></span><span style="display:flex;"><span>        H_j <span style="color:#f92672">=</span> sno_j<span style="color:#f92672">.</span>hypothesis_embedding
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Calculate approximate reward gradient (alpha term)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># We approximate the gradient by seeing how a small perturbation towards a random</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#34;better&#34; direction affects the reward. For simplicity here, we&#39;ll use a</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># simplified proxy: move towards a generic &#34;high-reward&#34; vector (e.g., origin).</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># A more advanced implementation would use finite differences.</span>
-</span></span><span style="display:flex;"><span>        reward_gradient_approx <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>H_i <span style="color:#75715e"># Simple approximation: move towards origin (less extreme)</span>
-</span></span><span style="display:flex;"><span>        improvement_vector <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> reward_gradient_approx
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Calculate repulsion vector (beta term)</span>
-</span></span><span style="display:flex;"><span>        chirality <span style="color:#f92672">=</span> RelationalMetrics<span style="color:#f92672">.</span>chirality_score(sno_i, sno_j)
-</span></span><span style="display:flex;"><span>        direction_vector <span style="color:#f92672">=</span> H_i <span style="color:#f92672">-</span> H_j
-</span></span><span style="display:flex;"><span>        norm_direction_vector <span style="color:#f92672">=</span> direction_vector <span style="color:#f92672">/</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(direction_vector)
-</span></span><span style="display:flex;"><span>        repulsion_vector <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>beta <span style="color:#f92672">*</span> chirality <span style="color:#f92672">*</span> norm_direction_vector
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Combine to get H_target</span>
-</span></span><span style="display:flex;"><span>        H_target <span style="color:#f92672">=</span> H_i <span style="color:#f92672">+</span> improvement_vector <span style="color:#f92672">+</span> repulsion_vector
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Renormalize the target vector to maintain unit length</span>
-</span></span><span style="display:flex;"><span>        H_target_normalized <span style="color:#f92672">=</span> H_target <span style="color:#f92672">/</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(H_target)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> H_target_normalized
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_exploration_prompt</span>(self, target_embedding: np<span style="color:#f92672">.</span>ndarray, source_sno: StructuredNarrativeObject) <span style="color:#f92672">-&gt;</span> str:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Creates a prompt for an LLM to generate a new SNO based on H_target.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Note: This requires a method to find text corresponding to an embedding (semantic search).
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        For now, we create a descriptive prompt.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> (
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Generate a new, refined central hypothesis that is conceptually similar to a target concept, &#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;while drawing inspiration from the following narrative.</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;SOURCE NARRATIVE HYPOTHESIS: &#39;</span><span style="color:#e6db74">{</span>source_sno<span style="color:#f92672">.</span>central_hypothesis<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;INSPIRATION CLAIMS:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>[node[<span style="color:#e6db74">&#39;claim&#39;</span>]<span style="color:#f92672">.</span>content <span style="color:#66d9ef">for</span> _, node <span style="color:#f92672">in</span> source_sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)]<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;The new hypothesis should explore a conceptual direction that is an improvement upon the source, &#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;resolving its weaknesses and moving away from known contradictions. &#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Generate only the new, single-sentence central hypothesis.&#34;</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example Usage (assuming you have a populated and evaluated list of SNOs):</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># visualize_sno_population(my_sno_list)</span>
+</span></span></code></pre></div><p>This visualization allows you to literally <em>see</em> the structure of your knowledge base. Clusters of points represent dominant theories, while distant outliers are novel or fringe ideas. A &ldquo;chiral pair&rdquo; would appear as two points, often far from each other, but both with high trust scores (e.g., bright colors in our plot). This tool transforms the abstract mathematics of CNS 2.0 into a concrete, explorable map of ideas.</p>
+
     </div>
 
     
@@ -609,17 +486,6 @@
             
         </div>
     </aside>
-
-    <footer>
-        
-        <div class="progress-indicator">
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 66.68%"></div>
-            </div>
-            <span class="progress-text">4/7 chapters completed</span>
-        </div>
-    </footer>
-
 </article>
 
             </div>

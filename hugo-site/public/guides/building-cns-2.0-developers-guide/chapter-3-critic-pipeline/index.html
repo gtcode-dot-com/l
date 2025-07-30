@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
     
-    <link rel="stylesheet" href="/css/style.css?v=1753847786">
+    <link rel="stylesheet" href="/css/style.css?v=1753859163">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,7 +106,7 @@
     
     <header class="article-header">
         <div class="article-meta">
-            <span class="article-weight">Chapter 3</span>
+            <span class="article-weight">Chapter 3 of 7</span>
             <span class="article-separator">•</span>
             <time class="article-date">July 29, 2025</time>
         </div>
@@ -142,6 +142,11 @@
         <li><a href="#3-novelty-parsimony-critic-implementation">3. Novelty-Parsimony Critic Implementation</a></li>
       </ul>
     </li>
+    <li><a href="#contextual-evaluation-dynamic-weight-adjustment">Contextual Evaluation: Dynamic Weight Adjustment</a>
+      <ul>
+        <li><a href="#scenario-shifting-from-exploration-to-verification">Scenario: Shifting from Exploration to Verification</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </nav>
@@ -171,26 +176,7 @@ $$
 $$<blockquote>
 <p>where $w_i$ are dynamically adjustable weights and the component scores are from the Grounding, Logic, and Novelty-Parsimony critics.</p></blockquote>
 <p><strong>From Paper to Code:</strong></p>
-<p>Our <code>CriticPipeline</code> class directly implements this weighted summation. Look at the <code>evaluate_sno</code> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># From CriticPipeline.evaluate_sno</span>
-</span></span><span style="display:flex;"><span>total_weighted_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>total_weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> critic_type, critic <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics<span style="color:#f92672">.</span>items():
-</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> critic<span style="color:#f92672">.</span>evaluate(sno, context)
-</span></span><span style="display:flex;"><span>    total_weighted_score <span style="color:#f92672">+=</span> result<span style="color:#f92672">.</span>score <span style="color:#f92672">*</span> critic<span style="color:#f92672">.</span>weight
-</span></span><span style="display:flex;"><span>    total_weight <span style="color:#f92672">+=</span> critic<span style="color:#f92672">.</span>weight
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>trust_score <span style="color:#f92672">=</span> total_weighted_score <span style="color:#f92672">/</span> total_weight <span style="color:#66d9ef">if</span> total_weight <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
-</span></span></code></pre></div><p>Here&rsquo;s the breakdown:</p>
-<ul>
-<li>The <code>for</code> loop iterates through each critic, which represents the summation ($\sum$).</li>
-<li><code>result.score</code> is the $\text{Score}_i(\mathcal{S})$ for a specific critic (Grounding, Logic, or Novelty).</li>
-<li><code>critic.weight</code> is the $w_i$ for that critic.</li>
-<li><code>total_weighted_score</code> accumulates the <code>result.score * critic.weight</code> product for each critic.</li>
-<li>Finally, we divide by <code>total_weight</code> to normalize the score, which becomes the SNO&rsquo;s final <code>trust_score</code> (<code>T</code>).</li>
-</ul>
-<p>The <code>adjust_weights</code> method allows for the dynamic adjustment of $w_i$ values, just as described in the paper.</p>
+<p>Our <code>CriticPipeline</code> class directly implements this weighted summation. The <code>evaluate_sno</code> method iterates through each registered critic, calculates its score, multiplies it by the critic&rsquo;s weight, and sums the results. This weighted sum is then normalized to produce the final <code>trust_score</code>. The <code>adjust_weights</code> method allows for the dynamic adjustment of $w_i$ values, a crucial feature for contextual evaluation that we will discuss later in this chapter.</p>
 <h2 id="implementing-the-specialized-critics">Implementing the Specialized Critics</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Multi-Component Critic Pipeline Implementation
@@ -207,11 +193,11 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CriticResult</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Result from a critic evaluation with full transparency&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    score: float  <span style="color:#75715e"># Normalized score [0, 1]</span>
-</span></span><span style="display:flex;"><span>    confidence: float  <span style="color:#75715e"># Confidence in the assessment [0, 1]</span>
-</span></span><span style="display:flex;"><span>    explanation: str  <span style="color:#75715e"># Human-readable explanation</span>
-</span></span><span style="display:flex;"><span>    evidence: Dict[str, Any]  <span style="color:#75715e"># Supporting evidence for the score</span>
-</span></span><span style="display:flex;"><span>    sub_scores: Dict[str, float]  <span style="color:#75715e"># Breakdown of component scores</span>
+</span></span><span style="display:flex;"><span>    score: float
+</span></span><span style="display:flex;"><span>    confidence: float
+</span></span><span style="display:flex;"><span>    explanation: str
+</span></span><span style="display:flex;"><span>    evidence: Dict[str, Any]
+</span></span><span style="display:flex;"><span>    sub_scores: Dict[str, float]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CriticType</span>(Enum):
 </span></span><span style="display:flex;"><span>    GROUNDING <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grounding&#34;</span>
@@ -229,21 +215,17 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@abstractmethod</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> CriticResult:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Evaluate an SNO and return detailed results&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update_weight</span>(self, new_weight: float):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Dynamically adjust critic weight based on context&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>weight <span style="color:#f92672">=</span> new_weight
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_statistics</span>(self) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Get performance statistics for this critic&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;type&#39;</span>: self<span style="color:#f92672">.</span>critic_type<span style="color:#f92672">.</span>value,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;weight&#39;</span>: self<span style="color:#f92672">.</span>weight,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;evaluations&#39;</span>: self<span style="color:#f92672">.</span>evaluation_count,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;avg_score&#39;</span>: np<span style="color:#f92672">.</span>mean([r[<span style="color:#e6db74">&#39;score&#39;</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>performance_history]) <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>performance_history <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;avg_confidence&#39;</span>: np<span style="color:#f92672">.</span>mean([r[<span style="color:#e6db74">&#39;confidence&#39;</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>performance_history]) <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>performance_history <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CriticPipeline</span>:
@@ -254,11 +236,9 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evaluation_history <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_critic</span>(self, critic: BaseCritic):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Add a critic to the pipeline&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>critics[critic<span style="color:#f92672">.</span>critic_type] <span style="color:#f92672">=</span> critic
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate_sno</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> Dict[str, Any]:
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Evaluate an SNO using all available critics&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        results <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>        total_weighted_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>        total_weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
@@ -266,36 +246,23 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> critic_type, critic <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics<span style="color:#f92672">.</span>items():
 </span></span><span style="display:flex;"><span>            result <span style="color:#f92672">=</span> critic<span style="color:#f92672">.</span>evaluate(sno, context)
 </span></span><span style="display:flex;"><span>            results[critic_type<span style="color:#f92672">.</span>value] <span style="color:#f92672">=</span> result
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Accumulate weighted score</span>
 </span></span><span style="display:flex;"><span>            total_weighted_score <span style="color:#f92672">+=</span> result<span style="color:#f92672">.</span>score <span style="color:#f92672">*</span> critic<span style="color:#f92672">.</span>weight
 </span></span><span style="display:flex;"><span>            total_weight <span style="color:#f92672">+=</span> critic<span style="color:#f92672">.</span>weight
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Update critic performance history</span>
-</span></span><span style="display:flex;"><span>            critic<span style="color:#f92672">.</span>performance_history<span style="color:#f92672">.</span>append({
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;score&#39;</span>: result<span style="color:#f92672">.</span>score,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;confidence&#39;</span>: result<span style="color:#f92672">.</span>confidence
-</span></span><span style="display:flex;"><span>            })
+</span></span><span style="display:flex;"><span>            critic<span style="color:#f92672">.</span>performance_history<span style="color:#f92672">.</span>append({<span style="color:#e6db74">&#39;score&#39;</span>: result<span style="color:#f92672">.</span>score, <span style="color:#e6db74">&#39;confidence&#39;</span>: result<span style="color:#f92672">.</span>confidence})
 </span></span><span style="display:flex;"><span>            critic<span style="color:#f92672">.</span>evaluation_count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Compute final trust score</span>
 </span></span><span style="display:flex;"><span>        trust_score <span style="color:#f92672">=</span> total_weighted_score <span style="color:#f92672">/</span> total_weight <span style="color:#66d9ef">if</span> total_weight <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Update SNO trust score</span>
 </span></span><span style="display:flex;"><span>        sno<span style="color:#f92672">.</span>trust_score <span style="color:#f92672">=</span> trust_score
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        evaluation_result <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;trust_score&#39;</span>: trust_score,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;critic_results&#39;</span>: results,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;weights_used&#39;</span>: {ct<span style="color:#f92672">.</span>value: c<span style="color:#f92672">.</span>weight <span style="color:#66d9ef">for</span> ct, c <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics<span style="color:#f92672">.</span>items()},
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;evaluation_id&#39;</span>: len(self<span style="color:#f92672">.</span>evaluation_history)
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>evaluation_history<span style="color:#f92672">.</span>append(evaluation_result)
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> evaluation_result
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">adjust_weights</span>(self, weight_updates: Dict[CriticType, float]):
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Dynamically adjust critic weights based on context&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> critic_type, new_weight <span style="color:#f92672">in</span> weight_updates<span style="color:#f92672">.</span>items():
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> critic_type <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>critics:
 </span></span><span style="display:flex;"><span>                self<span style="color:#f92672">.</span>critics[critic_type]<span style="color:#f92672">.</span>update_weight(new_weight)
@@ -303,32 +270,30 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">### 1. Grounding Critic Implementation</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">**</span>From Paper to Code: The Grounding Critic<span style="color:#f92672">**</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> The Grounding Critic evaluates how well a narrative<span style="color:#e6db74">&#39;s claims are supported by its evidence. Section 2.2 provides its formula:</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> The Grounding Critic evaluates how well a narrative<span style="color:#e6db74">&#39;s claims are supported by its evidence. The paper provides its formula:</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#960050;background-color:#1e0010">$$</span> \text{Score}_G <span style="color:#f92672">=</span> \frac{<span style="color:#ae81ff">1</span>}{<span style="color:#f92672">|</span>V<span style="color:#f92672">|</span>}\sum_{v \<span style="color:#f92672">in</span> V} \max_{e \<span style="color:#f92672">in</span> \mathcal{E}} p(v<span style="color:#f92672">|</span>e) <span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> Here, <span style="color:#960050;background-color:#1e0010">$</span>p(v<span style="color:#f92672">|</span>e)<span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#f92672">is</span> the plausibility score of a claim <span style="color:#960050;background-color:#1e0010">`</span>v<span style="color:#960050;background-color:#1e0010">`</span> given evidence <span style="color:#960050;background-color:#1e0010">`</span>e<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span> We implement this using a pre<span style="color:#f92672">-</span>trained Natural Language Inference (NLI) model, where the <span style="color:#e6db74">&#34;entailment&#34;</span> probability serves <span style="color:#66d9ef">as</span> <span style="color:#960050;background-color:#1e0010">$</span>p(v<span style="color:#f92672">|</span>e)<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
-</span></span><span style="display:flex;"><span>\text{Score}_G <span style="color:#f92672">=</span> \frac{<span style="color:#ae81ff">1</span>}{<span style="color:#f92672">|</span>V<span style="color:#f92672">|</span>}\sum_{v \<span style="color:#f92672">in</span> V} \max_{e \<span style="color:#f92672">in</span> \mathcal{E}} p(v<span style="color:#f92672">|</span>e)
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### Why Use Natural Language Inference?</span>
+</span></span><span style="display:flex;"><span>Natural Language Inference <span style="color:#f92672">is</span> the task of determining whether a <span style="color:#e6db74">&#34;hypothesis&#34;</span> sentence <span style="color:#f92672">is</span> true (entailment), false (contradiction), <span style="color:#f92672">or</span> undetermined (neutral) given a <span style="color:#e6db74">&#34;premise&#34;</span> sentence<span style="color:#f92672">.</span> This maps perfectly to our use <span style="color:#66d9ef">case</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span>   <span style="color:#f92672">**</span>Premise<span style="color:#f92672">**</span>: A piece of evidence (<span style="color:#960050;background-color:#1e0010">`</span>e<span style="color:#960050;background-color:#1e0010">`</span>)<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span>   <span style="color:#f92672">**</span>Hypothesis<span style="color:#f92672">**</span>: A claim <span style="color:#f92672">from</span> the reasoning graph (<span style="color:#960050;background-color:#1e0010">`</span>v<span style="color:#960050;background-color:#1e0010">`</span>)<span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> Here, <span style="color:#960050;background-color:#1e0010">$</span>p(v<span style="color:#f92672">|</span>e)<span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#f92672">is</span> the plausibility score of a claim <span style="color:#960050;background-color:#1e0010">`</span>v<span style="color:#960050;background-color:#1e0010">`</span> given a piece of evidence <span style="color:#960050;background-color:#1e0010">`</span>e<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">.</span> We will implement this using a pre<span style="color:#f92672">-</span>trained Natural Language Inference (NLI) model<span style="color:#f92672">.</span> An NLI model takes a premise (evidence) <span style="color:#f92672">and</span> a hypothesis (claim) <span style="color:#f92672">and</span> outputs probabilities <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#34;entailment,&#34;</span> <span style="color:#e6db74">&#34;neutral,&#34;</span> <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;contradiction.&#34;</span> We will use the <span style="color:#e6db74">&#34;entailment&#34;</span> probability <span style="color:#66d9ef">as</span> our <span style="color:#960050;background-color:#1e0010">$</span>p(v<span style="color:#f92672">|</span>e)<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>By feeding a (evidence, claim) pair to an NLI model, the model<span style="color:#e6db74">&#39;s predicted probability for the &#34;entailment&#34; class gives us a direct, well-calibrated measure of $p(v|e)$—how likely the evidence is to support the claim. This is a far more robust approach than simple keyword matching or vector similarity.</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">```</span>python
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GroundingCritic</span>(BaseCritic):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, weight: float, nli_model<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, nli_tokenizer<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, nli_model_name: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;microsoft/deberta-large-mnli&#34;</span>):
 </span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(CriticType<span style="color:#f92672">.</span>GROUNDING, weight)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Use pre-loaded models if provided (for efficiency), otherwise load on demand</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> nli_model <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">and</span> nli_tokenizer <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
-</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_model <span style="color:#f92672">=</span> nli_model
-</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_tokenizer <span style="color:#f92672">=</span> nli_tokenizer
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> nli_model <span style="color:#f92672">and</span> nli_tokenizer:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_model, self<span style="color:#f92672">.</span>nli_tokenizer <span style="color:#f92672">=</span> nli_model, nli_tokenizer
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> HAS_TRANSFORMERS:
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">import</span> transformers
 </span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_tokenizer <span style="color:#f92672">=</span> transformers<span style="color:#f92672">.</span>AutoTokenizer<span style="color:#f92672">.</span>from_pretrained(nli_model_name)
 </span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>nli_model <span style="color:#f92672">=</span> transformers<span style="color:#f92672">.</span>AutoModelForSequenceClassification<span style="color:#f92672">.</span>from_pretrained(nli_model_name)
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ImportError</span>(<span style="color:#e6db74">&#34;Transformers library is required for the GroundingCritic.&#34;</span>)
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Ensure we know the index for entailment</span>
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>entailment_id <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nli_model<span style="color:#f92672">.</span>config<span style="color:#f92672">.</span>label2id<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;entailment&#39;</span>, <span style="color:#ae81ff">2</span>)  <span style="color:#75715e"># Default to 2 if not found</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>entailment_id <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nli_model<span style="color:#f92672">.</span>config<span style="color:#f92672">.</span>label2id<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;entailment&#39;</span>, <span style="color:#ae81ff">2</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> CriticResult:
 </span></span><span style="display:flex;"><span>        claims <span style="color:#f92672">=</span> [data[<span style="color:#e6db74">&#39;claim&#39;</span>] <span style="color:#66d9ef">for</span> _, data <span style="color:#f92672">in</span> sno<span style="color:#f92672">.</span>reasoning_graph<span style="color:#f92672">.</span>nodes(data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)]
@@ -337,48 +302,39 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> claims <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> evidence_contents:
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> CriticResult(<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>, <span style="color:#e6db74">&#34;No claims or evidence to ground.&#34;</span>, {}, {})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        total_max_plausibility <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        sub_scores <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        total_max_plausibility, sub_scores <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>, {}
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> claim <span style="color:#f92672">in</span> claims:
-</span></span><span style="display:flex;"><span>            max_plausibility_for_claim <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Prepare NLI model inputs</span>
 </span></span><span style="display:flex;"><span>            pairs <span style="color:#f92672">=</span> [(e, claim<span style="color:#f92672">.</span>content) <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> evidence_contents]
 </span></span><span style="display:flex;"><span>            inputs <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nli_tokenizer(pairs, return_tensors<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;pt&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, truncation<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>            
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">with</span> torch<span style="color:#f92672">.</span>no_grad():
 </span></span><span style="display:flex;"><span>                logits <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nli_model(<span style="color:#f92672">**</span>inputs)<span style="color:#f92672">.</span>logits
-</span></span><span style="display:flex;"><span>                
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Get probabilities for entailment</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># We use softmax to convert logits to probabilities</span>
 </span></span><span style="display:flex;"><span>            probabilities <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>softmax(logits, dim<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span>            entailment_probs <span style="color:#f92672">=</span> probabilities[:, self<span style="color:#f92672">.</span>entailment_id]<span style="color:#f92672">.</span>tolist()
-</span></span><span style="display:flex;"><span>            
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> entailment_probs:
-</span></span><span style="display:flex;"><span>                max_plausibility_for_claim <span style="color:#f92672">=</span> max(entailment_probs)
-</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            max_plausibility_for_claim <span style="color:#f92672">=</span> max(entailment_probs) <span style="color:#66d9ef">if</span> entailment_probs <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
 </span></span><span style="display:flex;"><span>            total_max_plausibility <span style="color:#f92672">+=</span> max_plausibility_for_claim
 </span></span><span style="display:flex;"><span>            sub_scores[claim<span style="color:#f92672">.</span>claim_id] <span style="color:#f92672">=</span> max_plausibility_for_claim
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Score is the average of the max plausibility scores for each claim</span>
 </span></span><span style="display:flex;"><span>        final_score <span style="color:#f92672">=</span> total_max_plausibility <span style="color:#f92672">/</span> len(claims) <span style="color:#66d9ef">if</span> claims <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> CriticResult(
-</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score,
-</span></span><span style="display:flex;"><span>            confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>, <span style="color:#75715e"># Confidence can be improved with model-specific metrics</span>
+</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score, confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>,
 </span></span><span style="display:flex;"><span>            explanation<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Average max NLI entailment score across </span><span style="color:#e6db74">{</span>len(claims)<span style="color:#e6db74">}</span><span style="color:#e6db74"> claims is </span><span style="color:#e6db74">{</span>final_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>,
-</span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;claim_scores&#39;</span>: sub_scores},
-</span></span><span style="display:flex;"><span>            sub_scores<span style="color:#f92672">=</span>sub_scores
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;claim_scores&#39;</span>: sub_scores}, sub_scores<span style="color:#f92672">=</span>sub_scores
 </span></span><span style="display:flex;"><span>        )
 </span></span></code></pre></div><h3 id="2-logic-critic-implementation">2. Logic Critic Implementation</h3>
 <blockquote>
 <p><strong>From Paper to Code: The Logic Critic</strong>
-The Logic Critic assesses the structural coherence of the reasoning graph $G$. The paper specifies this as:</p></blockquote>
-$$
-\text{Score}_L = f_{\text{GNN}}(G; \theta)
-$$<blockquote>
-<p>Training a full Graph Neural Network (GNN) is a research project in itself. For our primitive, we will create a <em>functional proxy</em> for $f_{\text{GNN}}$ that uses graph-theoretic features to approximate logical coherence. This is a robust, explainable starting point for future GNN development. We&rsquo;ll check for orphaned claims, excessive branching (unfocused arguments), and graph density.</p></blockquote>
+The Logic Critic assesses the structural coherence of the reasoning graph $G$. The paper specifies this as:
+</p>
+$$ \text{Score}_L = f_{\text{GNN}}(G; \theta) $$<p>
+Training a full Graph Neural Network (GNN) is a research project. For our implementation, we create a <em>functional proxy</em> for $f_{\text{GNN}}$ that uses graph-theoretic features to approximate logical coherence. This is a robust, explainable starting point.</p></blockquote>
+<h4 id="interpreting-the-logic-heuristics">Interpreting the Logic Heuristics</h4>
+<p>Our heuristic-based <code>LogicCritic</code> uses several graph metrics to assess structural quality. Here&rsquo;s what they represent:</p>
+<ul>
+<li><strong>Orphan Score</strong>: This checks for &ldquo;orphaned&rdquo; claims—nodes that have no incoming links (i.e., they are not supported by any other claim). A good argument should have its premises well-supported. The <code>root</code> node is exempt as it represents the central hypothesis. A high number of orphans suggests a collection of disconnected assertions rather than a coherent argument, so it lowers the score.</li>
+<li><strong>Coherence Score</strong>: This is based on the average &ldquo;out-degree&rdquo; (the number of outgoing links) of the nodes. A very high average out-degree might indicate a single claim is being used to justify too many different points, potentially making the argument less focused. This score rewards more streamlined reasoning.</li>
+<li><strong>Parsimony Score</strong>: This is based on graph <code>density</code>, which measures how many of the possible connections between nodes actually exist. A very dense graph can be a sign of a convoluted, &ldquo;spaghetti-like&rdquo; argument where everything is connected to everything else. This score rewards parsimony—a simple, clear structure, which is often a hallmark of strong reasoning.</li>
+</ul>
+<p>These heuristics provide a transparent and computationally cheap way to approximate the logical health of a narrative.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LogicCritic</span>(BaseCritic):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, weight: float):
 </span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(CriticType<span style="color:#f92672">.</span>LOGIC, weight)
@@ -389,47 +345,75 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> num_nodes <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> CriticResult(<span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">1.0</span>, <span style="color:#e6db74">&#34;Graph is too simple to assess logic.&#34;</span>, {}, {})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Orphaned claims score (we want 0 orphans)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Nodes with in-degree 0 (excluding the root) are orphans</span>
 </span></span><span style="display:flex;"><span>        orphaned_nodes <span style="color:#f92672">=</span> [n <span style="color:#66d9ef">for</span> n, d <span style="color:#f92672">in</span> G<span style="color:#f92672">.</span>in_degree() <span style="color:#66d9ef">if</span> d <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> n <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;root&#39;</span>]
-</span></span><span style="display:flex;"><span>        orphan_penalty <span style="color:#f92672">=</span> len(orphaned_nodes) <span style="color:#f92672">/</span> (num_nodes <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        orphan_penalty <span style="color:#f92672">=</span> len(orphaned_nodes) <span style="color:#f92672">/</span> (num_nodes <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> num_nodes <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>        orphan_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> orphan_penalty
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Coherence score (low branching is better)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Average out-degree measures branching. Lower is more focused.</span>
 </span></span><span style="display:flex;"><span>        avg_out_degree <span style="color:#f92672">=</span> sum(d <span style="color:#66d9ef">for</span> _, d <span style="color:#f92672">in</span> G<span style="color:#f92672">.</span>out_degree()) <span style="color:#f92672">/</span> num_nodes
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Normalize: assume max reasonable branching is ~3</span>
 </span></span><span style="display:flex;"><span>        coherence_score <span style="color:#f92672">=</span> max(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> (avg_out_degree <span style="color:#f92672">/</span> <span style="color:#ae81ff">3.0</span>))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Parsimony score (related to density)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># We prefer simpler, less dense graphs.</span>
 </span></span><span style="display:flex;"><span>        density <span style="color:#f92672">=</span> nx<span style="color:#f92672">.</span>density(G)
 </span></span><span style="display:flex;"><span>        parsimony_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> density
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Combine scores</span>
 </span></span><span style="display:flex;"><span>        final_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">*</span> orphan_score <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.3</span> <span style="color:#f92672">*</span> coherence_score <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.2</span> <span style="color:#f92672">*</span> parsimony_score
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        sub_scores <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;orphan_score&#39;</span>: orphan_score,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;coherence_score&#39;</span>: coherence_score,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;parsimony_score&#39;</span>: parsimony_score
-</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        sub_scores <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;orphan_score&#39;</span>: orphan_score, <span style="color:#e6db74">&#39;coherence_score&#39;</span>: coherence_score, <span style="color:#e6db74">&#39;parsimony_score&#39;</span>: parsimony_score}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> CriticResult(
-</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score,
-</span></span><span style="display:flex;"><span>            confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>, <span style="color:#75715e"># High confidence as it&#39;s deterministic</span>
+</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score, confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>,
 </span></span><span style="display:flex;"><span>            explanation<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Logic score based on graph structure: </span><span style="color:#e6db74">{</span>final_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
 </span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;num_orphans&#39;</span>: len(orphaned_nodes), <span style="color:#e6db74">&#39;avg_out_degree&#39;</span>: avg_out_degree, <span style="color:#e6db74">&#39;density&#39;</span>: density},
 </span></span><span style="display:flex;"><span>            sub_scores<span style="color:#f92672">=</span>sub_scores
 </span></span><span style="display:flex;"><span>        )
-</span></span></code></pre></div><h3 id="3-novelty-parsimony-critic-implementation">3. Novelty-Parsimony Critic Implementation</h3>
+</span></span></code></pre></div><h4 id="path-to-a-production-gnn-based-logic-critic">Path to a Production GNN-based Logic Critic</h4>
+<p>Our heuristic-based <code>LogicCritic</code> is a robust and transparent starting point. However, to capture more subtle and complex patterns of logical reasoning, implementing the GNN-based critic envisioned by the paper is a key enhancement. A GNN can learn from data to identify sophisticated patterns of coherence or fallacy that are difficult to define with hand-crafted rules. Here is a more detailed roadmap for this research and engineering effort:</p>
+<ol>
+<li>
+<p><strong>Data Collection and Labeling</strong>: This is the most critical and labor-intensive step.</p>
+<ul>
+<li><strong>Source Material</strong>: Gather a large corpus of arguments. These could be SNOs generated from scientific papers, legal documents, or philosophical texts.</li>
+<li><strong>Labeling Strategy</strong>: You need to assign a &ldquo;logical coherence&rdquo; score to each reasoning graph. This is non-trivial. A good approach is to use multiple human raters (ideally experts in logic or the subject matter) to score each graph on a scale (e.g., 1-5). The average or consensus score becomes the label. You would also want them to flag specific logical fallacies, which could be used for more granular training tasks.</li>
+<li><strong>Dataset Size</strong>: Aim for a dataset of at least a few thousand labeled graphs to train a robust GNN.</li>
+</ul>
+</li>
+<li>
+<p><strong>Feature Engineering for Graph Components</strong>: The GNN needs numerical representations of the graph&rsquo;s nodes and edges.</p>
+<ul>
+<li><strong>Node Features</strong>: Each node (a <code>ClaimNode</code>) in the graph must be represented as a vector. The primary feature is the semantic embedding of the claim&rsquo;s text content, which we can get from the same model used for hypothesis embeddings. You could also add metadata features, like a one-hot encoding of the <code>claim_type</code>.</li>
+<li><strong>Edge Features</strong>: Each edge (a <code>ReasoningEdge</code>) can also have features. The most important would be a numerical representation of the <code>RelationType</code> (e.g., a one-hot vector where <code>SUPPORTS</code> is <code>[1,0,0]</code>, <code>CONTRADICTS</code> is <code>[0,1,0]</code>, etc.). The <code>strength</code> of the edge is another direct numerical feature.</li>
+</ul>
+</li>
+<li>
+<p><strong>Model Architecture Selection</strong>: The choice of GNN architecture is key.</p>
+<ul>
+<li><strong>Good Candidates</strong>: Graph Convolutional Networks (GCNs), GraphSAGE, and Graph Attention Networks (GATs) are all strong choices.</li>
+<li><strong>Why GAT might be best</strong>: A Graph Attention Network (GAT) is particularly well-suited for this task. GATs learn to assign different &ldquo;attention&rdquo; weights to different neighbors when aggregating information. In our context, this means the model could learn that a <code>CONTRADICTS</code> edge from a highly trusted claim is more important than a <code>SUPPORTS</code> edge from a weak one. This ability to weigh the importance of relationships is central to logical analysis.</li>
+</ul>
+</li>
+<li>
+<p><strong>Training Task Definition</strong>: The GNN will be trained on a <strong>graph regression</strong> task.</p>
+<ul>
+<li><strong>Input</strong>: The entire reasoning graph, with its node and edge features.</li>
+</ul>
+<ul>
+<li><strong>Output</strong>: A single continuous value, the predicted coherence score.</li>
+<li><strong>Loss Function</strong>: A standard regression loss function like Mean Squared Error (MSE) would be used to minimize the difference between the GNN&rsquo;s predicted score and the average human-rated score from the dataset.</li>
+</ul>
+</li>
+</ol>
+<p>By completing this process, you replace the heuristic-based proxy with a powerful, data-driven model of logical coherence. This learned critic can discover and penalize subtle logical weaknesses that are difficult to anticipate with manual rules, significantly increasing the sophistication of the entire CNS 2.0 system.</p>
+<h3 id="3-novelty-parsimony-critic-implementation">3. Novelty-Parsimony Critic Implementation</h3>
 <blockquote>
 <p><strong>From Paper to Code: The Novelty-Parsimony Critic</strong>
-This critic balances innovation against complexity. The formula from Section 2.2 is:</p></blockquote>
-$$
-\text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|}
-$$<blockquote>
-<p>The formula uses subtraction to create this balance. The first term rewards novelty (Euclidean distance to the nearest neighbor in the SNO population), and the second term, scaled by β, penalizes graph complexity (edge-to-node ratio). Since the result is not inherently bounded in [0, 1], our code calculates the raw score and then clamps the result to fit within our scoring framework.</p></blockquote>
+This critic balances innovation against complexity using the formula:
+</p>
+$$ \text{Score}_N = \alpha \cdot \min_i \|H - H_i\|_2 - \beta \cdot \frac{|E_G|}{|V|} $$<p>
+The first term rewards novelty (distance to the nearest SNO), and the second penalizes graph complexity. Our implementation calculates this raw score and then clamps it to the [0, 1] range.</p></blockquote>
+<h4 id="a-note-on-normalization-and-clamping">A Note on Normalization and Clamping</h4>
+<p>The raw score from this formula can be outside the standard <code>[0, 1]</code> range required by our system. We handle this in two ways:</p>
+<ol>
+<li><strong>Distance Normalization</strong>: The raw Euclidean distance <code>min_distance</code> between embeddings doesn&rsquo;t have a fixed upper bound. We normalize it by dividing by <code>2.0</code>, as the maximum possible distance between two normalized vectors is 2. This brings the novelty term into a more predictable <code>[0, alpha]</code> range.</li>
+<li><strong>Clamping</strong>: After calculating the final <code>raw_score</code>, we use <code>np.clip(raw_score, 0, 1)</code>. This is a hard clamp that forces the final score into the <code>[0, 1]</code> interval. Any value below 0 becomes 0, and any value above 1 becomes 1. This ensures the critic&rsquo;s output is always a valid score that can be used in the final weighted average.</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NoveltyParsimonyCritic</span>(BaseCritic):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, weight: float, alpha: float, beta: float):
 </span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(CriticType<span style="color:#f92672">.</span>NOVELTY, weight)
@@ -438,47 +422,88 @@ $$<blockquote>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno: StructuredNarrativeObject, context: Optional[Dict] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> CriticResult:
 </span></span><span style="display:flex;"><span>        sno_population <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;sno_population&#39;</span>, [])
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 1. Calculate Novelty Term: α * min_i ||H - H_i||</span>
 </span></span><span style="display:flex;"><span>        population_embeddings <span style="color:#f92672">=</span> [s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> sno_population <span style="color:#66d9ef">if</span> s<span style="color:#f92672">.</span>sno_id <span style="color:#f92672">!=</span> sno<span style="color:#f92672">.</span>sno_id <span style="color:#f92672">and</span> s<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> population_embeddings <span style="color:#f92672">or</span> sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
-</span></span><span style="display:flex;"><span>            novelty_term <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.0</span> <span style="color:#75715e"># Max novelty if no population to compare to</span>
-</span></span><span style="display:flex;"><span>            min_dist_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;N/A (first SNO)&#34;</span>
+</span></span><span style="display:flex;"><span>            novelty_term, min_dist_str <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.0</span>, <span style="color:#e6db74">&#34;N/A (first SNO)&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>            distances <span style="color:#f92672">=</span> [np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm(sno<span style="color:#f92672">.</span>hypothesis_embedding <span style="color:#f92672">-</span> h) <span style="color:#66d9ef">for</span> h <span style="color:#f92672">in</span> population_embeddings]
 </span></span><span style="display:flex;"><span>            min_distance <span style="color:#f92672">=</span> min(distances)
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Normalize distance (max L2 is 2.0) and multiply by alpha</span>
-</span></span><span style="display:flex;"><span>            novelty_term <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> (min_distance <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.0</span>)
+</span></span><span style="display:flex;"><span>            novelty_term <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>alpha <span style="color:#f92672">*</span> (min_distance <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.0</span>) <span style="color:#75715e"># Normalize L2 distance</span>
 </span></span><span style="display:flex;"><span>            min_dist_str <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>min_distance<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 2. Calculate Parsimony Penalty Term: β * (|E_G| / |V|)</span>
 </span></span><span style="display:flex;"><span>        G <span style="color:#f92672">=</span> sno<span style="color:#f92672">.</span>reasoning_graph
-</span></span><span style="display:flex;"><span>        num_nodes <span style="color:#f92672">=</span> G<span style="color:#f92672">.</span>number_of_nodes()
-</span></span><span style="display:flex;"><span>        num_edges <span style="color:#f92672">=</span> G<span style="color:#f92672">.</span>number_of_edges()
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        complexity_ratio <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> num_nodes <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>            complexity_ratio <span style="color:#f92672">=</span> num_edges <span style="color:#f92672">/</span> num_nodes
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        complexity_ratio <span style="color:#f92672">=</span> G<span style="color:#f92672">.</span>number_of_edges() <span style="color:#f92672">/</span> G<span style="color:#f92672">.</span>number_of_nodes() <span style="color:#66d9ef">if</span> G<span style="color:#f92672">.</span>number_of_nodes() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>        parsimony_penalty <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>beta <span style="color:#f92672">*</span> complexity_ratio
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 3. Calculate Final Score according to the formula</span>
 </span></span><span style="display:flex;"><span>        raw_score <span style="color:#f92672">=</span> novelty_term <span style="color:#f92672">-</span> parsimony_penalty
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Clamp the score to be within the [0, 1] range</span>
 </span></span><span style="display:flex;"><span>        final_score <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>clip(raw_score, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        explanation <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Score(</span><span style="color:#e6db74">{</span>final_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">) = NoveltyTerm(</span><span style="color:#e6db74">{</span>novelty_term<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">) - ParsimonyPenalty(</span><span style="color:#e6db74">{</span>parsimony_penalty<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">). Min dist: </span><span style="color:#e6db74">{</span>min_dist_str<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        explanation <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Score(</span><span style="color:#e6db74">{</span>final_score<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">) = Novelty(</span><span style="color:#e6db74">{</span>novelty_term<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">) - Parsimony(</span><span style="color:#e6db74">{</span>parsimony_penalty<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">). Min dist: </span><span style="color:#e6db74">{</span>min_dist_str<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> CriticResult(
-</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score,
-</span></span><span style="display:flex;"><span>            confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>,
-</span></span><span style="display:flex;"><span>            explanation<span style="color:#f92672">=</span>explanation,
-</span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;novelty_term&#39;</span>: novelty_term, <span style="color:#e6db74">&#39;parsimony_penalty&#39;</span>: parsimony_penalty, <span style="color:#e6db74">&#39;complexity_ratio&#39;</span>: complexity_ratio},
+</span></span><span style="display:flex;"><span>            score<span style="color:#f92672">=</span>final_score, confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>, explanation<span style="color:#f92672">=</span>explanation,
+</span></span><span style="display:flex;"><span>            evidence<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;novelty_term&#39;</span>: novelty_term, <span style="color:#e6db74">&#39;parsimony_penalty&#39;</span>: parsimony_penalty},
 </span></span><span style="display:flex;"><span>            sub_scores<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;novelty_term&#39;</span>: novelty_term, <span style="color:#e6db74">&#39;parsimony_penalty&#39;</span>: parsimony_penalty}
 </span></span><span style="display:flex;"><span>        )
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="contextual-evaluation-dynamic-weight-adjustment">Contextual Evaluation: Dynamic Weight Adjustment</h2>
+<p>A key feature of the CNS 2.0 framework is its adaptability. The <code>adjust_weights</code> method in our <code>CriticPipeline</code> is the mechanism for this, allowing the system to change its &ldquo;values&rdquo; or priorities based on the current goal. Not all phases of knowledge discovery are the same; sometimes the goal is to explore wildly different ideas, while other times it is to rigorously verify a specific claim. Dynamic weights allow the CNS system to support both modes of operation.</p>
+<h3 id="scenario-shifting-from-exploration-to-verification">Scenario: Shifting from Exploration to Verification</h3>
+<p>Let&rsquo;s demonstrate this with a concrete example. We will create a sample SNO that is highly novel but has mediocre logic and grounding. We will then evaluate it under two different weighting schemes: one that prioritizes novelty (Exploration Mode) and one that prioritizes rigor (Verification Mode).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># --- Setup: Create a sample SNO and a pipeline ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This code assumes the classes from previous chapters are available.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Create a mock SNO. Let&#39;s imagine this is a very new, slightly underdeveloped idea.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#    We will manually set the scores each critic *would* produce for demonstration.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MockCritic</span>(BaseCritic):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, critic_type, weight, mock_score):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(critic_type, weight)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>mock_score <span style="color:#f92672">=</span> mock_score
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate</span>(self, sno, context<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> CriticResult(score<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>mock_score, confidence<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>, explanation<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mocked result&#34;</span>, evidence<span style="color:#f92672">=</span>{}, sub_scores<span style="color:#f92672">=</span>{})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Our SNO is very novel (0.9) but has weak logic (0.4) and grounding (0.5)</span>
+</span></span><span style="display:flex;"><span>mock_novelty_critic <span style="color:#f92672">=</span> MockCritic(CriticType<span style="color:#f92672">.</span>NOVELTY, <span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">0.9</span>)
+</span></span><span style="display:flex;"><span>mock_logic_critic <span style="color:#f92672">=</span> MockCritic(CriticType<span style="color:#f92672">.</span>LOGIC, <span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">0.4</span>)
+</span></span><span style="display:flex;"><span>mock_grounding_critic <span style="color:#f92672">=</span> MockCritic(CriticType<span style="color:#f92672">.</span>GROUNDING, <span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the pipeline</span>
+</span></span><span style="display:flex;"><span>pipeline <span style="color:#f92672">=</span> CriticPipeline()
+</span></span><span style="display:flex;"><span>pipeline<span style="color:#f92672">.</span>add_critic(mock_novelty_critic)
+</span></span><span style="display:flex;"><span>pipeline<span style="color:#f92672">.</span>add_critic(mock_logic_critic)
+</span></span><span style="display:flex;"><span>pipeline<span style="color:#f92672">.</span>add_critic(mock_grounding_critic)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A dummy SNO object to pass to the pipeline</span>
+</span></span><span style="display:flex;"><span>sample_sno <span style="color:#f92672">=</span> StructuredNarrativeObject(central_hypothesis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;A sample SNO for testing.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Phase 1: Exploration Mode ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># We want to find new ideas, so we heavily weight novelty.</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;--- EVALUATING IN EXPLORATION MODE ---&#34;</span>)
+</span></span><span style="display:flex;"><span>pipeline<span style="color:#f92672">.</span>adjust_weights({
+</span></span><span style="display:flex;"><span>    CriticType<span style="color:#f92672">.</span>NOVELTY: <span style="color:#ae81ff">0.8</span>,   <span style="color:#75715e"># High weight for new ideas</span>
+</span></span><span style="display:flex;"><span>    CriticType<span style="color:#f92672">.</span>LOGIC: <span style="color:#ae81ff">0.1</span>,
+</span></span><span style="display:flex;"><span>    CriticType<span style="color:#f92672">.</span>GROUNDING: <span style="color:#ae81ff">0.1</span>
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>exploration_result <span style="color:#f92672">=</span> pipeline<span style="color:#f92672">.</span>evaluate_sno(sample_sno, {})
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Weights: </span><span style="color:#e6db74">{</span>exploration_result[<span style="color:#e6db74">&#39;weights_used&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Novelty Score: </span><span style="color:#e6db74">{</span>mock_novelty_critic<span style="color:#f92672">.</span>mock_score<span style="color:#e6db74">}</span><span style="color:#e6db74">, Logic Score: </span><span style="color:#e6db74">{</span>mock_logic_critic<span style="color:#f92672">.</span>mock_score<span style="color:#e6db74">}</span><span style="color:#e6db74">, Grounding Score: </span><span style="color:#e6db74">{</span>mock_grounding_critic<span style="color:#f92672">.</span>mock_score<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Final Trust Score (Exploration): </span><span style="color:#e6db74">{</span>exploration_result[<span style="color:#e6db74">&#39;trust_score&#39;</span>]<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Expected: (0.9*0.8 + 0.4*0.1 + 0.5*0.1) / (0.8+0.1+0.1) = 0.81</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Phase 2: Verification Mode ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Now, we shift to rigorously checking our ideas.</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;--- EVALUATING IN VERIFICATION MODE ---&#34;</span>)
+</span></span><span style="display:flex;"><span>pipeline<span style="color:#f92672">.</span>adjust_weights({
+</span></span><span style="display:flex;"><span>    CriticType<span style="color:#f92672">.</span>NOVELTY: <span style="color:#ae81ff">0.1</span>,    <span style="color:#75715e"># Low weight for novelty</span>
+</span></span><span style="display:flex;"><span>    CriticType<span style="color:#f92672">.</span>LOGIC: <span style="color:#ae81ff">0.45</span>,     <span style="color:#75715e"># High weight for logical soundness</span>
+</span></span><span style="display:flex;"><span>    CriticType<span style="color:#f92672">.</span>GROUNDING: <span style="color:#ae81ff">0.45</span>  <span style="color:#75715e"># High weight for evidential support</span>
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>verification_result <span style="color:#f92672">=</span> pipeline<span style="color:#f92672">.</span>evaluate_sno(sample_sno, {})
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Weights: </span><span style="color:#e6db74">{</span>verification_result[<span style="color:#e6db74">&#39;weights_used&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Novelty Score: </span><span style="color:#e6db74">{</span>mock_novelty_critic<span style="color:#f92672">.</span>mock_score<span style="color:#e6db74">}</span><span style="color:#e6db74">, Logic Score: </span><span style="color:#e6db74">{</span>mock_logic_critic<span style="color:#f92672">.</span>mock_score<span style="color:#e6db74">}</span><span style="color:#e6db74">, Grounding Score: </span><span style="color:#e6db74">{</span>mock_grounding_critic<span style="color:#f92672">.</span>mock_score<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Final Trust Score (Verification): </span><span style="color:#e6db74">{</span>verification_result[<span style="color:#e6db74">&#39;trust_score&#39;</span>]<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Expected: (0.9*0.1 + 0.4*0.45 + 0.5*0.45) / (0.1+0.45+0.45) = 0.495</span>
+</span></span></code></pre></div><p>As the output clearly shows, the <strong>same SNO</strong> is considered high-trust (<code>0.81</code>) in exploration mode but fails to meet the quality bar (<code>0.495</code>) in verification mode. This ability to programmatically shift the system&rsquo;s &ldquo;values&rdquo; is not just a theoretical feature but a practical tool for guiding the knowledge discovery process, making CNS 2.0 a powerful and flexible framework.</p>
+
     </div>
 
     
@@ -522,17 +547,6 @@ $$<blockquote>
             
         </div>
     </aside>
-
-    <footer>
-        
-        <div class="progress-indicator">
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 50.010000000000005%"></div>
-            </div>
-            <span class="progress-text">3/7 chapters completed</span>
-        </div>
-    </footer>
-
 </article>
 
             </div>
