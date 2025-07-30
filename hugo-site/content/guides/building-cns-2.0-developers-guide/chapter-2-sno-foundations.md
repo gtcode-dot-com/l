@@ -23,25 +23,27 @@ An SNO is formally defined as a 4-tuple: **𝒮 = (H, G, ℰ, T)** where:
 
 ### From Paper to Code: The Mathematical Foundation
 
-First, let's look at the formal definition from the paper. Section 2.1 defines a Structured Narrative Object as a mathematical construct.
+First, let's look at the formal definition from the paper. Section 2.1 defines a Structured Narrative Object as a mathematical construct, which we translate directly into our Python implementation.
 
 > **Definition 2.1 (Structured Narrative Object)**
 > An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:
-> - **Hypothesis Embedding** $H \in \mathbb{R}^d$: A $d$-dimensional dense vector encoding the narrative's central claim.
-> - **Reasoning Graph** $G = (V, E_G)$: A directed acyclic graph where vertices $V$ are sub-claims and edges $E_G$ are typed logical relationships.
+> - **Hypothesis Embedding** $H \in \mathbb{R}^d$: A $d$-dimensional dense vector.
+> - **Reasoning Graph** $G = (V, E_G)$: A directed acyclic graph with vertices $V$ (sub-claims) and edges $E_G \subseteq V \times V \times \mathcal{R}$ encoding typed logical relationships from a relation set $\mathcal{R}$.
 > - **Evidence Set** $\mathcal{E} = \{e_1, \ldots, e_n\}$: Pointers to grounding data sources.
-> - **Trust Score** $T \in [0, 1]$: A derived confidence measure computed by the critic pipeline.
+> - **Trust Score** $T \in [0, 1]$: A derived confidence measure.
 
 **From Paper to Code:**
 
 Our `StructuredNarrativeObject` Python class is the direct, practical implementation of this mathematical 4-tuple. Let's map the theory to our code:
 
-- **`H` (Hypothesis Embedding):** Corresponds to `self.hypothesis_embedding`, an `np.ndarray` holding the dense vector of the central claim.
-- **`G` (Reasoning Graph):** Implemented as `self.reasoning_graph`, a `networkx.DiGraph`. The paper's acyclic requirement is enforced by a check for cycles when adding edges.
+- **`H` (Hypothesis Embedding):** Corresponds to `self.hypothesis_embedding`, an `np.ndarray` of dimension `d`.
+- **`G` (Reasoning Graph):** Implemented as `self.reasoning_graph`, a `networkx.DiGraph`.
+    - The "directed acyclic" property is critical for sound logic and is enforced by a check for cycles whenever a new edge is added.
+    - The "typed logical relationships" from the set $\mathcal{R}$ are implemented by our `RelationType` enum, ensuring every edge has a well-defined meaning.
 - **`ℰ` (Evidence Set):** This is our `self.evidence_set`, a Python `set` of `EvidenceItem` objects.
 - **`T` (Trust Score):** This is `self.trust_score`, initialized as `None` and populated later by the `CriticPipeline`.
 
-Understanding this mapping is key. We're not just creating a data class; we're instantiating a formal mathematical object.
+Understanding this mapping is key. We're not just creating a data class; we're instantiating a formal mathematical object in code.
 
 #### A Note on Embeddings
 For mathematical primitives like the Chirality and Novelty Scores to work, we need a semantically meaningful vector space. Simple fallbacks like hash-based vectors produce random outputs that destroy any geometric meaning. Therefore, our implementation treats a real embedding model as a mandatory component.
@@ -50,16 +52,23 @@ For mathematical primitives like the Chirality and Novelty Scores to work, we ne
 
 The following code block contains the complete, updated `StructuredNarrativeObject` class. We have enhanced it with more detailed comments and robust serialization methods, which we will discuss in detail.
 
-### The Importance of Structured Graph Components
+### Design Rationale: Dataclasses over Dictionaries
 
-A key software engineering decision in the implementation of the SNO is the use of `dataclasses` for `ClaimNode` and `ReasoningEdge` instead of simpler Python dictionaries. This choice is deliberate and crucial for building a robust, maintainable system. While a dictionary like `{'claim_id': 'c1', 'content': '...'}` might seem sufficient initially, it leads to significant problems in a large-scale project. Structured classes provide several key advantages:
+A key software engineering decision is the use of `dataclasses` for `ClaimNode` and `ReasoningEdge` instead of simpler Python dictionaries. This choice is deliberate and foundational to building a robust, maintainable system. While a dictionary might seem sufficient initially, it introduces ambiguity and fragility.
 
--   **Type Safety and Validation**: Dataclasses, especially when combined with type hints, allow static analysis tools (like MyPy) to catch a wide range of errors before the code is ever run. For instance, the compiler knows `ReasoningEdge.strength` must be a `float`. This prevents subtle bugs that might arise from accidentally assigning a string or `None` value, which would only be discovered at runtime with a dictionary-based approach.
--   **Self-Documentation and Readability**: The class definition acts as clear, enforceable documentation. A developer looking at `ClaimNode` immediately knows the exact fields a claim is expected to have and their corresponding types. This is far more reliable and easier to understand than hunting through the code to find where a dictionary is created to guess its expected structure.
--   **Extensibility and Maintainability**: As the CNS system evolves, its data structures will inevitably change. Imagine we need to add an `author` field to every claim. With the `ClaimNode` dataclass, we simply add one line: `author: Optional[str] = None`. All parts of the code that create or access claims will now be subject to type checking against this new structure. In a dictionary-based system, this change would be silent. You would have to manually find every place a "claim" dictionary is created and add the new key, a process that is highly error-prone and difficult to enforce.
--   **IDE Support**: Using explicit classes provides better autocompletion, refactoring, and navigation support in modern IDEs, significantly improving developer productivity.
+| Using Dictionaries (Ambiguous & Brittle) | Using Dataclasses (Explicit & Robust) |
+| :--- | :--- |
+| `claim = {'id': 'c1', 'txt': '...'} ` | `@dataclass`<br>`class ClaimNode:`<br>&nbsp;&nbsp;`claim_id: str`<br>&nbsp;&nbsp;`content: str` |
+| `claim['txt']` (Is it `txt`? `text`? `content`?) | `claim.content` (IDE autocompletes, static analysis verifies) |
 
-These design choices are not mere formalities; they are foundational to creating a system that is robust, scalable, and can be effectively maintained and extended by a team of developers over time.
+Structured classes provide several key advantages:
+
+-   **Type Safety and Validation**: Dataclasses, combined with type hints, allow static analysis tools (like MyPy) to catch errors before the code is ever run. The type checker knows `ReasoningEdge.strength` must be a `float`, preventing runtime errors from accidental type mismatches.
+-   **Self-Documentation and Readability**: The class definition is clear, enforceable documentation. A developer can instantly see the expected structure of a `ClaimNode` without hunting through the code.
+-   **Extensibility and Maintainability**: When the system evolves (e.g., adding an `author` to a claim), you modify the `ClaimNode` dataclass in one place. The type checker will then guide you to every location in the code that needs to be updated, making refactoring safe and easy. With dictionaries, this process is manual and highly error-prone.
+-   **IDE Support**: Dataclasses provide superior autocompletion, refactoring, and navigation support in modern IDEs, boosting developer productivity.
+
+These design choices are not mere formalities; they are foundational to creating a system that is robust, scalable, and can be effectively maintained and extended over time.
 
 ```python
 """
@@ -162,12 +171,17 @@ class StructuredNarrativeObject:
         return claim_id
     
     def add_reasoning_edge(self, source_claim_id: str, target_claim_id: str, relation_type: RelationType, strength: float = 1.0) -> bool:
-        """Adds a new reasoning edge (relationship) between claims, ensuring no cycles are created."""
+        """
+        Adds a new reasoning edge between claims.
+        Crucially, this enforces the "directed acyclic graph" (DAG) property required
+        by the SNO definition, preventing circular logic.
+        """
         if (source_claim_id not in self.reasoning_graph.nodes or target_claim_id not in self.reasoning_graph.nodes):
             logging.warning(f"Attempted to create edge with non-existent node: {source_claim_id} or {target_claim_id}")
             return False
         
         # Prevent creating cycles, which would invalidate the logical structure.
+        # This check enforces the "acyclic" property of the Reasoning Graph G.
         if nx.has_path(self.reasoning_graph, target_claim_id, source_claim_id):
             raise ValueError(f"Adding edge from {source_claim_id} to {target_claim_id} would create a cycle.")
         
@@ -256,8 +270,9 @@ class StructuredNarrativeObject:
 
             for link_data in graph_data.get('links', []):
                 edge_data = link_data.pop('reasoning_edge')
-                # Handle case where relation_type might be a string
-                edge_data['relation_type'] = RelationType(edge_data['relation_type'])
+                # Handle case where relation_type might be a string from JSON
+                if isinstance(edge_data['relation_type'], str):
+                    edge_data['relation_type'] = RelationType(edge_data['relation_type'])
                 edge_obj = ReasoningEdge(**edge_data)
                 sno.reasoning_graph.add_edge(link_data['source'], link_data['target'], **link_data, reasoning_edge=edge_obj)
 
@@ -330,17 +345,18 @@ This example creates a small but rich argumentative structure. It captures not j
 
 ## SNO Serialization and Production-Level Persistence
 
-For any real-world system, you need to save and load your data. The `to_dict()` and `from_dict()` methods provide the basic mechanism for this by converting the complex SNO object into a JSON-serializable format. While saving to a single JSON file is useful for development and small-scale experiments, it is not a viable strategy for a production system. Here, we discuss the limitations and introduce robust, production-grade solutions.
+For any real-world system, you need to save and load your data. The `to_dict()` and `from_dict()` methods are the engine for this, converting the complex SNO object into a format suitable for persistence. While saving to a single JSON file is useful for development, a production system demands more robust solutions.
 
 ### The Basic Mechanism: `to_dict()` and `from_dict()`
 
--   **`to_dict()`**: This method carefully converts the SNO instance into a JSON-compatible dictionary. It handles the tricky parts:
-    -   `hypothesis_embedding`: The NumPy array is converted to a standard Python list.
-    -   `reasoning_graph`: We use NetworkX's built-in `node_link_data` function, which produces a clean, JSON-compliant representation of the graph's nodes and edges. Our implementation enhances this by ensuring our custom `dataclass` objects are also converted to dictionaries.
-    -   `datetime`: The `created_at` timestamp is converted to a standard ISO 8601 string.
--   **`from_dict()`**: This class method reverses the process. It takes a dictionary and reconstructs the SNO object, converting the embedding list back to a NumPy array and carefully rebuilding the graph and its structured `ClaimNode` and `ReasoningEdge` objects.
+A successful persistence strategy hinges on robust serialization. Here's a deeper look at how our methods work:
+-   **`to_dict()`**: This method acts as a "dehydrator," carefully converting the SNO instance into a JSON-compatible dictionary. It systematically handles complex types:
+    -   `hypothesis_embedding`: The NumPy array, which is not JSON-native, is converted to a standard Python list.
+    -   `reasoning_graph`: We use NetworkX's built-in `node_link_data` function, which produces a clean, JSON-compliant representation of the graph. Crucially, we then iterate through its output to explicitly convert our `ClaimNode` and `ReasoningEdge` dataclass objects into dictionaries using `asdict`.
+    -   `datetime`: The `created_at` timestamp is converted to a standard ISO 8601 string, a universal format for dates and times.
+-   **`from_dict()`**: This class method is the "rehydrator." It takes a dictionary and meticulously reconstructs the live SNO object. It converts the embedding list back to a NumPy array, re-instantiates the `datetime` object, and carefully rebuilds the graph, re-creating the `ClaimNode` and `ReasoningEdge` dataclasses from their dictionary representations. This ensures all methods and type-safety of the original object are restored.
 
-The code below demonstrates the basic file-based persistence:
+The code below demonstrates this round-trip process:
 ```python
 # Assume 'sno' is the object from the previous example
 # and it has an embedding computed.
@@ -395,18 +411,31 @@ A robust system must anticipate and handle changes to its data structures.
 1.  **Add a Schema Version**: Add a version field to your SNO class and dictionary representation, e.g., `sno_schema_version: int = 1`.
 2.  **Implement a Migration Path**: Modify the `from_dict` method to be version-aware.
 
-Here's a conceptual example of how `from_dict` could be improved:
+Here's a conceptual example of how `from_dict` could be improved to handle migrations:
 ```python
 @classmethod
 def from_dict(cls, data: Dict[str, Any]) -> 'StructuredNarrativeObject':
-    schema_version = data.get('sno_schema_version', 0) # Default to 0 if not present
+    # Step 1: Identify the schema version of the incoming data.
+    # Default to version 1 for legacy data that doesn't have the field.
+    schema_version = data.get('sno_schema_version', 1)
 
+    # Step 2: Apply sequential migrations to update the data dictionary in-place.
     if schema_version < 2:
-        # This is an old version. We need to migrate it.
-        # Example: The 'author' field was added in version 2.
+        # Migration for v2: The 'author' field was added to metadata.
+        # We add a default value to maintain compatibility.
+        data['metadata'] = data.get('metadata', {})
         data['metadata']['author'] = data['metadata'].get('author', 'Unknown')
 
-    # After migration, we can safely create the object using the current class definition
-    # ... (rest of the from_dict logic) ...
+    if schema_version < 3:
+        # Migration for v3: 'claim_type' in ClaimNode was renamed to 'node_type'.
+        # We must iterate through the graph data and rename the key.
+        if 'reasoning_graph' in data and 'nodes' in data['reasoning_graph']:
+            for node in data['reasoning_graph']['nodes']:
+                if 'claim' in node and 'claim_type' in node['claim']:
+                    node['claim']['node_type'] = node['claim'].pop('claim_type')
+
+    # Step 3: After all migrations, the data dictionary now matches the
+    # current class structure and can be safely loaded.
+    # ... (rest of the from_dict logic from the main class) ...
 ```
 This approach ensures that your system can evolve without breaking compatibility with its own historical data, a crucial capability for any long-running, production-grade application.
