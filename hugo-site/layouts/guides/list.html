@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="guide-header">
+    <a href="/" class="home-link">← Back to GTCode.com Homepage</a>
+</div>
+
+<article class="content-article">
+    <header class="article-header">
+        <h1 class="article-title">{{ .Title }}</h1>
+        
+        {{ if .Description }}
+        <p class="article-description">{{ .Description }}</p>
+        {{ end }}
+    </header>
+
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
