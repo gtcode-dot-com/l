@@ -27,40 +27,46 @@ First, let's look at the formal definition from the paper. Section 2.1 defines a
 
 > **Definition 2.1 (Structured Narrative Object)**
 > An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:
-> - **Hypothesis Embedding** $H \in \mathbb{R}^d$: A $d$-dimensional dense vector encoding the narrative's central claim, enabling geometric similarity computations while preserving semantic content
-> - **Reasoning Graph** $G = (V, E_G)$: A directed acyclic graph with vertices $V$ representing sub-claims and edges $E_G \subseteq V \times V \times \mathcal{R}$ encoding typed logical relationships (e.g., "supports," "contradicts," "implies") from the relation set $\mathcal{R}$
-> - **Evidence Set** $\mathcal{E} = \{e_1, e_2, \ldots, e_n\}$: Pointers to grounding data sources, including document identifiers, data hashes, or persistent identifiers (DOIs), establishing verifiable connections to primary sources
-> - **Trust Score** $T \in [0, 1]$: A derived confidence measure computed by the critic pipeline, not an intrinsic property of the narrative
+> - **Hypothesis Embedding** $H \in \mathbb{R}^d$: A $d$-dimensional dense vector encoding the narrative's central claim.
+> - **Reasoning Graph** $G = (V, E_G)$: A directed acyclic graph where vertices $V$ are sub-claims and edges $E_G$ are typed logical relationships.
+> - **Evidence Set** $\mathcal{E} = \{e_1, \ldots, e_n\}$: Pointers to grounding data sources.
+> - **Trust Score** $T \in [0, 1]$: A derived confidence measure computed by the critic pipeline.
 
 **From Paper to Code:**
 
 Our `StructuredNarrativeObject` Python class is the direct, practical implementation of this mathematical 4-tuple. Let's map the theory to our code:
 
-- **`H` (Hypothesis Embedding):** This corresponds to the `self.hypothesis_embedding` attribute in our class. It's an optional `np.ndarray` that will hold the dense vector representation of the SNO's central claim, calculated by the `compute_hypothesis_embedding` method.
-- **`G` (Reasoning Graph):** This is implemented as `self.reasoning_graph`, a `networkx.DiGraph` object. The vertices `V` are the nodes added via `add_claim`, and the edges `E_G` are the relationships added with `add_reasoning_edge`. The paper's requirement that it be a *directed acyclic graph* is enforced by our check for cycles within the `add_reasoning_edge` method.
-- **`ℰ` (Evidence Set):** This is our `self.evidence_set`, a Python `set` containing `EvidenceItem` objects. This perfectly matches the definition of a collection of pointers to grounding data.
-- **`T` (Trust Score):** This is the `self.trust_score` attribute. As the paper states, it is "not an intrinsic property" but is "derived," which is why it's initialized as `None` and will be populated later by our `CriticPipeline`.
+- **`H` (Hypothesis Embedding):** Corresponds to `self.hypothesis_embedding`, an `np.ndarray` holding the dense vector of the central claim.
+- **`G` (Reasoning Graph):** Implemented as `self.reasoning_graph`, a `networkx.DiGraph`. The paper's acyclic requirement is enforced by a check for cycles when adding edges.
+- **`ℰ` (Evidence Set):** This is our `self.evidence_set`, a Python `set` of `EvidenceItem` objects.
+- **`T` (Trust Score):** This is `self.trust_score`, initialized as `None` and populated later by the `CriticPipeline`.
 
-Understanding this mapping is key. We're not just creating a data class; we're instantiating a formal mathematical object described in the paper.
+Understanding this mapping is key. We're not just creating a data class; we're instantiating a formal mathematical object.
 
 #### A Note on Embeddings
-For the mathematical primitives like the Chirality Score and Novelty Score to work as intended, we need a semantically meaningful vector space. Simple fallbacks like hash-based vectors produce random outputs that destroy any geometric meaning, rendering the core CNS 2.0 mechanics useless. Therefore, our implementation treats a real embedding model as a mandatory component.
+For mathematical primitives like the Chirality and Novelty Scores to work, we need a semantically meaningful vector space. Simple fallbacks like hash-based vectors produce random outputs that destroy any geometric meaning. Therefore, our implementation treats a real embedding model as a mandatory component.
 
 ## Core SNO Implementation
+
+The following code block contains the complete, updated `StructuredNarrativeObject` class, including new methods for serialization that we will discuss later in this chapter.
 
 ```python
 """
 Structured Narrative Objects (SNO) Implementation
 ===============================================
-The foundational data structure for CNS 2.0
+The foundational data structure for CNS 2.0, now with serialization.
 """
 
 import numpy as np
 import networkx as nx
 from typing import Dict, List, Tuple, Set, Optional, Any
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict
 from datetime import datetime
 import uuid
+import json
+
+# Assuming RelationType and EvidenceItem are defined as in Chapter 1
+# For brevity, their definitions are omitted here.
 
 @dataclass
 class ReasoningEdge:
@@ -68,7 +74,7 @@ class ReasoningEdge:
     source: str
     target: str
     relation_type: RelationType
-    strength: float = 1.0  # Relationship strength [0,1]
+    strength: float = 1.0
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 @dataclass
@@ -76,55 +82,42 @@ class ClaimNode:
     """Represents a claim or sub-claim in the reasoning graph"""
     claim_id: str
     content: str
-    claim_type: str = "assertion"  # assertion, premise, conclusion, etc.
-    embedding: Optional[np.ndarray] = None
+    claim_type: str = "assertion"
+    embedding: Optional[np.ndarray] = field(default=None, repr=False) # Exclude large embedding from repr
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 class StructuredNarrativeObject:
     """
-    Complete implementation of a Structured Narrative Object (SNO)
-    
-    This class encapsulates all four components of an SNO:
-    - Hypothesis Embedding (H)
-    - Reasoning Graph (G) 
-    - Evidence Set (E)
-    - Trust Score (T)
+    Complete implementation of a Structured Narrative Object (SNO).
+    This class encapsulates H, G, E, and T and includes serialization methods.
     """
     
     def __init__(self, 
                  central_hypothesis: str,
-                 sno_id: Optional[str] = None):
-        """
-        Initialize a new SNO with a central hypothesis
-        
-        Args:
-            central_hypothesis: The main claim or hypothesis
-            sno_id: Unique identifier (auto-generated if None)
-        """
+                 sno_id: Optional[str] = None,
+                 created_at: Optional[datetime] = None,
+                 metadata: Optional[Dict] = None):
         self.sno_id = sno_id or str(uuid.uuid4())
         self.central_hypothesis = central_hypothesis
-        self.created_at = datetime.now()
+        self.created_at = created_at or datetime.now()
         
-        # H: Hypothesis Embedding - will be computed later
+        # H: Hypothesis Embedding
         self.hypothesis_embedding: Optional[np.ndarray] = None
         
-        # G: Reasoning Graph - NetworkX directed graph
+        # G: Reasoning Graph
         self.reasoning_graph = nx.DiGraph()
         
-        # E: Evidence Set - collection of evidence items
+        # E: Evidence Set
         self.evidence_set: Set[EvidenceItem] = set()
         
-        # T: Trust Score - computed by critic pipeline
+        # T: Trust Score
         self.trust_score: Optional[float] = None
         
-        # Additional metadata
-        self.metadata: Dict[str, Any] = {}
+        self.metadata: Dict[str, Any] = metadata or {}
         
-        # Initialize with central hypothesis as root node
         self._add_root_claim()
     
     def _add_root_claim(self):
-        """Add the central hypothesis as the root node of the reasoning graph"""
         root_node = ClaimNode(
             claim_id="root",
             content=self.central_hypothesis,
@@ -132,89 +125,32 @@ class StructuredNarrativeObject:
         )
         self.reasoning_graph.add_node("root", claim=root_node)
     
-    def add_claim(self, 
-                  claim_content: str, 
-                  claim_id: Optional[str] = None,
-                  claim_type: str = "assertion") -> str:
-        """
-        Add a new claim to the reasoning graph
-        
-        Args:
-            claim_content: Text content of the claim
-            claim_id: Unique identifier (auto-generated if None)
-            claim_type: Type of claim (assertion, premise, conclusion, etc.)
-            
-        Returns:
-            The claim_id of the added claim
-        """
+    def add_claim(self, claim_content: str, claim_id: Optional[str] = None, claim_type: str = "assertion") -> str:
         if claim_id is None:
             claim_id = f"claim_{len(self.reasoning_graph.nodes)}"
         
-        claim_node = ClaimNode(
-            claim_id=claim_id,
-            content=claim_content,
-            claim_type=claim_type
-        )
-        
+        claim_node = ClaimNode(claim_id=claim_id, content=claim_content, claim_type=claim_type)
         self.reasoning_graph.add_node(claim_id, claim=claim_node)
         return claim_id
     
-    def add_reasoning_edge(self,
-                          source_claim_id: str,
-                          target_claim_id: str,
-                          relation_type: RelationType,
-                          strength: float = 1.0) -> bool:
-        """
-        Add a reasoning relationship between two claims
-        
-        Args:
-            source_claim_id: ID of the source claim
-            target_claim_id: ID of the target claim
-            relation_type: Type of logical relationship
-            strength: Strength of the relationship [0,1]
-            
-        Returns:
-            True if edge was added successfully
-        """
-        if (source_claim_id not in self.reasoning_graph.nodes or 
-            target_claim_id not in self.reasoning_graph.nodes):
+    def add_reasoning_edge(self, source_claim_id: str, target_claim_id: str, relation_type: RelationType, strength: float = 1.0) -> bool:
+        if (source_claim_id not in self.reasoning_graph.nodes or target_claim_id not in self.reasoning_graph.nodes):
             return False
         
-        # Check for cycles (reasoning graph must be acyclic)
         if nx.has_path(self.reasoning_graph, target_claim_id, source_claim_id):
-            raise ValueError("Adding this edge would create a cycle")
+            raise ValueError(f"Adding edge from {source_claim_id} to {target_claim_id} would create a cycle.")
         
-        edge = ReasoningEdge(
-            source=source_claim_id,
-            target=target_claim_id,
-            relation_type=relation_type,
-            strength=strength
-        )
-        
-        self.reasoning_graph.add_edge(
-            source_claim_id, 
-            target_claim_id, 
-            reasoning_edge=edge
-        )
+        edge = ReasoningEdge(source=source_claim_id, target=target_claim_id, relation_type=relation_type, strength=strength)
+        self.reasoning_graph.add_edge(source_claim_id, target_claim_id, reasoning_edge=edge)
         return True
     
     def add_evidence(self, evidence_item: EvidenceItem):
-        """Add evidence to support claims in this SNO"""
         self.evidence_set.add(evidence_item)
     
     def compute_hypothesis_embedding(self, embedding_model):
-        """
-        Compute the hypothesis embedding using a sentence transformer model.
-        This is a critical step for all geometric operations in CNS 2.0.
-
-        Args:
-            embedding_model: A loaded sentence-transformer model instance.
-        """
-        # A real embedding is non-negotiable for research-grade implementation.
         self.hypothesis_embedding = embedding_model.encode(self.central_hypothesis)
     
     def get_graph_statistics(self) -> Dict[str, Any]:
-        """Compute statistics about the reasoning graph"""
         stats = {
             'num_nodes': self.reasoning_graph.number_of_nodes(),
             'num_edges': self.reasoning_graph.number_of_edges(),
@@ -222,15 +158,138 @@ class StructuredNarrativeObject:
             'density': nx.density(self.reasoning_graph),
             'relation_type_counts': {}
         }
-        
-        # Count relation types
         for _, _, edge_data in self.reasoning_graph.edges(data=True):
             if 'reasoning_edge' in edge_data:
                 rel_type = edge_data['reasoning_edge'].relation_type.value
                 stats['relation_type_counts'][rel_type] = stats['relation_type_counts'].get(rel_type, 0) + 1
-        
         return stats
-    
+
+    def to_dict(self) -> Dict[str, Any]:
+        """Serializes the SNO to a dictionary, handling complex types."""
+        return {
+            'sno_id': self.sno_id,
+            'central_hypothesis': self.central_hypothesis,
+            'created_at': self.created_at.isoformat(),
+            'hypothesis_embedding': self.hypothesis_embedding.tolist() if self.hypothesis_embedding is not None else None,
+            'reasoning_graph': nx.node_link_data(self.reasoning_graph),
+            'evidence_set': [asdict(e) for e in self.evidence_set],
+            'trust_score': self.trust_score,
+            'metadata': self.metadata
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'StructuredNarrativeObject':
+        """
+        Deserializes an SNO from a dictionary.
+        Note: For production, this method should include more robust error handling
+        to manage cases with missing keys or mismatched data types.
+        """
+        sno = cls(
+            central_hypothesis=data['central_hypothesis'],
+            sno_id=data['sno_id'],
+            created_at=datetime.fromisoformat(data['created_at']),
+            metadata=data.get('metadata', {}) # Use .get for safer access
+        )
+
+        if data.get('hypothesis_embedding'):
+            sno.hypothesis_embedding = np.array(data['hypothesis_embedding'])
+
+        sno.reasoning_graph = nx.node_link_graph(data['reasoning_graph'])
+        sno.evidence_set = {EvidenceItem(**e_data) for e_data in data.get('evidence_set', [])}
+        sno.trust_score = data.get('trust_score')
+
+        return sno
+
     def __repr__(self) -> str:
         return f"SNO(id={self.sno_id[:8]}, hypothesis='{self.central_hypothesis[:50]}...')"
+```
 
+## Building a Reasoning Graph: A Worked Example
+
+The reasoning graph $G$ is what gives an SNO its explanatory power. Let's walk through a practical example. Imagine we are analyzing conflicting reports on a new "QuantumCore" battery technology.
+
+**Our central hypothesis:** "QuantumCore batteries represent a viable next-generation energy solution."
+
+Let's build the SNO for this.
+
+```python
+# 1. Initialize the SNO
+sno = StructuredNarrativeObject(
+    central_hypothesis="QuantumCore batteries represent a viable next-generation energy solution."
+)
+
+# 2. Add claims from our research sources
+premise1_id = sno.add_claim(
+    "The technology offers a 10x increase in energy density over lithium-ion.",
+    claim_type="premise"
+)
+premise2_id = sno.add_claim(
+    "Manufacturing scalability has been demonstrated in lab environments.",
+    claim_type="premise"
+)
+counter_claim_id = sno.add_claim(
+    "The battery's lifespan degrades by 50% after only 100 charge cycles.",
+    claim_type="counter-argument"
+)
+rebuttal_id = sno.add_claim(
+    "New electrolyte solutions are mitigating the lifespan degradation issue.",
+    claim_type="rebuttal"
+)
+
+# 3. Connect the claims with reasoning edges
+# The premises support the main hypothesis
+sno.add_reasoning_edge(premise1_id, "root", RelationType.SUPPORTS)
+sno.add_reasoning_edge(premise2_id, "root", RelationType.SUPPORTS)
+
+# The counter-claim contradicts the main hypothesis
+sno.add_reasoning_edge(counter_claim_id, "root", RelationType.CONTRADICTS, strength=0.8)
+
+# The rebuttal weakens the counter-claim
+sno.add_reasoning_edge(rebuttal_id, counter_claim_id, RelationType.WEAKENS, strength=0.7)
+
+# 4. Check the graph's structure
+print("Reasoning Graph Statistics:")
+print(json.dumps(sno.get_graph_statistics(), indent=2))
+```
+
+This example creates a small but rich argumentative structure. It captures not just supporting points but also acknowledges and rebuts a key weakness, making the SNO a much more robust representation of the narrative than a simple statement.
+
+## SNO Serialization and Persistence
+
+For any real-world system, you need to save and load your data. SNOs, with their mix of standard data types, NumPy arrays, and NetworkX graphs, require a specific serialization strategy. We've added two methods to our class: `to_dict()` and `from_dict()`.
+
+-   **`to_dict()`**: This method converts the SNO instance into a JSON-serializable dictionary. It handles the tricky parts:
+    -   `hypothesis_embedding`: The NumPy array is converted to a standard Python list.
+    -   `reasoning_graph`: We use NetworkX's built-in `node_link_data` function, which produces a clean, JSON-compliant representation of the graph's nodes and edges.
+    -   `datetime`: The `created_at` timestamp is converted to an ISO 8601 string.
+-   **`from_dict()`**: This class method takes a dictionary and reconstructs the SNO object. It reverses the process, converting the embedding list back to a NumPy array and using `node_link_graph` to rebuild the graph.
+
+Here's how you would use them to save and load an SNO:
+
+```python
+# Assume 'sno' is the object from the previous example
+# and it has an embedding computed.
+
+# --- Saving the SNO ---
+sno_dict = sno.to_dict()
+
+# Save to a JSON file
+with open("sno_quantum_core.json", "w") as f:
+    json.dump(sno_dict, f, indent=2)
+
+print("\nSNO saved to sno_quantum_core.json")
+
+# --- Loading the SNO ---
+with open("sno_quantum_core.json", "r") as f:
+    loaded_sno_dict = json.load(f)
+
+# Reconstruct the SNO object
+loaded_sno = StructuredNarrativeObject.from_dict(loaded_sno_dict)
+
+print(f"\nSuccessfully loaded SNO: {loaded_sno.sno_id}")
+print(f"Original Trust Score: {sno.trust_score}, Loaded Trust Score: {loaded_sno.trust_score}")
+print("Loaded Graph Statistics:")
+print(json.dumps(loaded_sno.get_graph_statistics(), indent=2))
+```
+
+This serialization capability is essential for building a persistent SNO population, enabling the system to be stopped and restarted without losing its accumulated knowledge.
