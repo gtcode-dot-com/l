@@ -1,1 +1,50 @@
 repomix*.xml
+
+#-----------------------------------------------------------------------------
+# HUGO
+#-----------------------------------------------------------------------------
+
+# The build output folder, default is 'public'. You should not commit this.
+/hugo-site/public/
+
+# The folder where Hugo caches generated assets (from Hugo Pipes).
+/hugo-site/resources/
+
+# Hugo's lock file, used to prevent multiple Hugo instances from running.
+/hugo-site/.hugo_build.lock
+
+# Hugo log files
+/hugo-site/hugo.log
+
+
+#-----------------------------------------------------------------------------
+# DEVELOPMENT & DEPENDENCIES (Optional but Recommended)
+#-----------------------------------------------------------------------------
+
+# Node.js dependencies, common for asset pipelines (e.g., PostCSS, Sass).
+/node_modules/
+
+# Log files from package managers.
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# Environment variables file.
+# Contains secrets and should NEVER be committed.
+.env
+
+
+#-----------------------------------------------------------------------------
+# OS & EDITOR CONFIG (General good practice)
+#-----------------------------------------------------------------------------
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
