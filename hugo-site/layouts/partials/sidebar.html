@@ -32,10 +32,20 @@
             </h3>
             {{ if $isResearchGuide }}
             <ul class="guide-menu-list">
-                 {{ range $researchGuide.Pages.ByWeight }}
-                <li class="guide-menu-item">
-                    <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
-                </li>
+                {{ range $researchGuide.Pages.ByWeight }}
+                    {{ $isCurrentSection := or (eq . $currentPage) ($currentPage.IsDescendant .) }}
+                    <li class="guide-menu-item {{ if .IsSection }}is-section{{ end }}">
+                        <a href="{{ .RelPermalink }}" class="{{ if and .IsSection $isCurrentSection }}active-section{{ end }} {{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+                        {{ if .IsSection }}
+                            <ul class="guide-menu-list-nested">
+                            {{ range .Pages.ByWeight }}
+                                <li class="guide-menu-item">
+                                    <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+                                </li>
+                            {{ end }}
+                            </ul>
+                        {{ end }}
+                    </li>
                 {{ end }}
             </ul>
             {{ end }}

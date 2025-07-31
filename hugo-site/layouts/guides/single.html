@@ -14,9 +14,14 @@
                 <p class="article-description">{{ .Description }}</p>
                 {{ end }}
             </header>
+
+            {{ partial "page-nav.html" . }}
+
             <div class="article-content">
                 {{ .Content }}
             </div>
+
+            {{ partial "page-nav.html" . }}
         </article>
     </div>
 </div>

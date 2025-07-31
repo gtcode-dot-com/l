@@ -33,7 +33,7 @@ This research project aims to develop a multi-layered strategy for privacy, secu
 **Part 1: Privacy and Security Engineering**
 -   **Privacy-by-Design:** We will integrate privacy-preserving principles directly into the SNO data structure and the synthesis engine. This includes developing protocols for data minimization (only including the essential evidence) and data anonymization.
 -   **Security Audits:** We will conduct regular, independent security audits of the system's codebase and deployment architecture.
--   **Collaboration:** This work will be done in close collaboration with the **[Federated Learning](./../technical-research/2-federated-learning-and-privacy/)** and **[Adversarial Robustness](./../evaluation-and-validation/2-adversarial-robustness-and-security/)** research projects.
+-   **Collaboration:** This work will be done in close collaboration with the **[Federated Learning](/guides/cns-2.0-research-roadmap/technical-research/2-federated-learning-and-privacy/)** and **[Adversarial Robustness](/guides/cns-2.0-research-roadmap/evaluation-and-validation/2-adversarial-robustness-and-security/)** research projects.
 
 **Part 2: Misuse Prevention and Content Authentication**
 -   **Classifier Development:** We will develop a "misuse classifier" trained to identify prompts or source narratives that deal with harmful topics. This classifier would act as a first-line-of-defense, preventing the system from even attempting to synthesize in forbidden areas.
