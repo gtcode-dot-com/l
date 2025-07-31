@@ -301,6 +301,15 @@ td code {
     font-weight: 500;
 }
 
+pre code {
+    background: #e2e8f0;
+    color: #c026d3; /* A more vibrant color for inline code */
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.66em !important;
+    font-weight: 500;
+}
+
 /* FORCE line number spacing fix - override Hugo's inline styles with specificity */
 .highlight pre code span[style*="user-select:none"][style*="margin-right"] {
     margin-right: 2rem !important;
