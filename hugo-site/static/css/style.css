@@ -998,6 +998,67 @@ th {
 }
 
 
+/* ===== Repos Sidebar Styles ===== */
+.repo-accordion {
+    margin-bottom: 0.5rem;
+}
+
+.repo-summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.repo-summary:hover {
+    background-color: #f8fafc;
+}
+
+.repo-summary a {
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.repo-menu-content,
+.repo-submenu-content {
+    padding-left: 1rem;
+    border-left: 1px solid #e2e8f0;
+    margin-left: 1rem;
+}
+
+.repo-menu-item,
+.repo-submenu-summary {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #475569;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: all 0.2s;
+}
+
+.repo-menu-item:hover,
+.repo-submenu-summary:hover {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.repo-menu-item.active {
+    font-weight: 600;
+    color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.repo-submenu-summary {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.repo-submenu {
+    margin-top: 0.5rem;
+}
+
+
 /* ===== Print Styles ===== */
 @media print {
     .site-header,

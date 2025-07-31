@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="guide-layout">
+    <button class="guide-sidebar-toggle" id="guide-sidebar-toggle" aria-label="Toggle Guide Menu">
+        <i data-feather="menu"></i>
+    </button>
+    <div class="guide-sidebar-overlay" id="guide-sidebar-overlay"></div>
+
+    {{ partial "repos-sidebar.html" . }}
+
+    <div class="guide-content">
+        <article class="content-article">
+            <header class="article-header">
+                <a href="{{ .Parent.RelPermalink }}" class="parent-guide-link">← Back to {{ .Parent.Title }}</a>
+                <h1 class="article-title">{{ .Title }}</h1>
+                {{ if .Description }}
+                <p class="article-description">{{ .Description }}</p>
+                {{ end }}
+            </header>
+
+            <aside class="article-toc">
+                <h3>Table of Contents</h3>
+                <nav id="TableOfContents">
+                    {{ .TableOfContents }}
+                </nav>
+            </aside>
+
+            <div class="article-content">
+                {{ .Content }}
+            </div>
+
+            <nav class="article-nav">
+                <div class="nav-previous">
+                    {{ with .PrevInSection }}
+                        <a href="{{ .RelPermalink }}" class="nav-link prev-link">
+                            <i data-feather="arrow-left"></i>
+                            <div class="nav-text">
+                                <span class="nav-label">Previous</span>
+                                <span class="nav-title">{{ .Title }}</span>
+                            </div>
+                        </a>
+                    {{ end }}
+                </div>
+
+                <div class="nav-next">
+                    {{ with .NextInSection }}
+                        <a href="{{ .RelPermalink }}" class="nav-link next-link">
+                            <div class="nav-text">
+                                <span class="nav-label">Next</span>
+                                <span class="nav-title">{{ .Title }}</span>
+                            </div>
+                            <i data-feather="arrow-right"></i>
+                        </a>
+                    {{ end }}
+                </div>
+            </nav>
+        </article>
+    </div>
+</div>
+{{ end }}

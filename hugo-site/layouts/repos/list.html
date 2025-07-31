@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="guide-layout">
+    <button class="guide-sidebar-toggle" id="guide-sidebar-toggle" aria-label="Toggle Guide Menu">
+        <i data-feather="menu"></i>
+    </button>
+    <div class="guide-sidebar-overlay" id="guide-sidebar-overlay"></div>
+
+    {{ partial "repos-sidebar.html" . }}
+
+    <div class="guide-content">
+        <article class="content-article">
+            <header class="article-header">
+                <h1 class="article-title">{{ .Title }}</h1>
+                {{ if .Description }}
+                <p class="article-description">{{ .Description }}</p>
+                {{ end }}
+            </header>
+
+            <div class="article-content">
+                {{ .Content }}
+
+                <div class="chapter-list">
+                    {{ range .Pages.ByTitle }}
+                        <div class="chapter-item">
+                            <a href="{{ .RelPermalink }}" class="chapter-link">
+                                <div class="chapter-info">
+                                    <h3 class="chapter-title">{{ .Title }}</h3>
+                                    {{ if .Description }}
+                                    <p class="chapter-description">{{ .Description }}</p>
+                                    {{ end }}
+                                </div>
+                            </a>
+                        </div>
+                    {{ end }}
+                    {{ range .Sections.ByTitle }}
+                        <div class="chapter-item">
+                            <a href="{{ .RelPermalink }}" class="chapter-link">
+                                <div class="chapter-info">
+                                    <h3 class="chapter-title">{{ .Title }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+{{ end }}

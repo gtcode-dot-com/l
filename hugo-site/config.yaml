@@ -48,6 +48,10 @@ menu:
       identifier: "blueprint"
       url: "/blueprint/"
       weight: 5
+    - name: "Repository repos"
+      identifier: "repos"
+      url: "/repos/"
+      weight: 10
 
 server:
   host: '0.0.0.0'
