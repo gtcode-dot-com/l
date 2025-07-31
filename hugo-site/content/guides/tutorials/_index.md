@@ -15,4 +15,7 @@ Welcome to the tutorials section for Chiral Narrative Synthesis 2.0. This sectio
 
 These guides are designed for researchers and practitioners who want to move from theory to practice. Each tutorial will provide you with the conceptual background, code examples, and step-by-step instructions needed to replicate and build upon our core research.
 
-Our first case study walks through the "Minimum Viable Experiment" (MVE) outlined in the [Research Roadmap](/guides/cns-2.0-research-roadmap/chapter-2-minimum-viable-experiment/), using the historical scientific debate between Plate Tectonics and the older Geosyncline theory as a practical testbed for narrative synthesis.
+## Available Tutorials
+
+-   **[Plate Tectonic Synthesis](./plate-tectonics-synthesis/)**: A case study using the historical scientific debate between Plate Tectonics and Geosyncline theory to test narrative synthesis, implementing the Minimum Viable Experiment from the research roadmap.
+-   **[DSPy Self-Optimization](./dspy-self-optimization/)**: Learn how to move from brittle prompt engineering to robust, programmatic optimization using the DSPy framework to create a self-improving CNS system.

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial Part 4: Analyzing the Results"
 description: "Demonstrating the two-part evaluation protocol (quantitative and qualitative) to validate the generated synthesis."
-weight: 4
+weight: 10
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

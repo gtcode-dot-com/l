@@ -34,10 +34,14 @@ menu:
       identifier: "research"
       url: "/guides/cns-2.0-research-roadmap/"
       weight: 2
+    - name: "Tutorials"
+      identifier: "tutorials"
+      url: "/guides/tutorials/"
+      weight: 3
     - name: "Repositories"
       identifier: "repos"
       url: "/repos/"
-      weight: 3
+      weight: 4
 
 server:
   host: '0.0.0.0'

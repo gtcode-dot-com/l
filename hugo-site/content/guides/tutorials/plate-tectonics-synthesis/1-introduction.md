@@ -1,7 +1,7 @@
 ---
 title: "Tutorial Part 1: Introduction to the Case Study"
 description: "Why the historical debate between Plate Tectonics and Geosyncline theory is a perfect test case for Chiral Narrative Synthesis."
-weight: 1
+weight: 7
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

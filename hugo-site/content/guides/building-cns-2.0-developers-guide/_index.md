@@ -43,7 +43,7 @@ This guide is structured as a progressive learning experience. Each chapter buil
 3.  **[The Critic Pipeline](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/)** - Build the multi-component critics that evaluate SNOs, turning the paper's mathematical formulas into working evaluation code.
 4.  **[The Synthesis Engine](/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/)** - Engineer the creative core of the system, capable of selecting conflicting narratives and using an LLM to generate novel syntheses.
 5.  **[System Integration](/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/)** - Assemble all the components into a cohesive, autonomous system using an `asyncio`-based workflow manager.
-6.  **[Production Deployment & Scaling](/guides/building-cns-2.0-developers-guide/chapter-6-production-deployment/)** - Evolve the prototype into a production-grade service using Docker for containerization and Celery for distributed task execution.
+6.  **[Complete Implementation: Production Deployment & Scaling](/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/)** - Evolve the prototype into a production-grade service using Docker for containerization and Celery for distributed task execution.
 7.  **[Advanced Optimization with DSPy](/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/)** - Move from static prompting to programmatic optimization, creating a self-improving system that uses its own critics to refine its synthesis capabilities.
 
 ## Prerequisites

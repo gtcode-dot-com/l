@@ -4,6 +4,7 @@
         {{ $currentPage := . }}
         {{ $devGuide := .Site.GetPage "section" "guides/building-cns-2.0-developers-guide" }}
         {{ $researchGuide := .Site.GetPage "section" "guides/cns-2.0-research-roadmap" }}
+        {{ $tutorials := .Site.GetPage "section" "guides/tutorials" }}
         {{ $theoryPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/theoretical-foundations" }}
         {{ $ethicsPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/ethics" }}
         {{ $blueprintPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/blueprint" }}
@@ -13,6 +14,7 @@
         <!-- Determine active section -->
         {{ $isDevGuide := or (eq . $devGuide) (.IsDescendant $devGuide) }}
         {{ $isResearchGuide := or (eq . $researchGuide) (.IsDescendant $researchGuide) }}
+        {{ $isTutorials := or (eq . $tutorials) (.IsDescendant $researchGuide) }}
         {{ $isTheory := or (eq . $theoryPage) (.IsDescendant $theoryPage) }}
         {{ $isEthics := or (eq . $ethicsPage) (.IsDescendant $ethicsPage) }}
         {{ $isBlueprint := or (eq . $blueprintPage) (.IsDescendant $blueprintPage) }}
@@ -60,6 +62,34 @@
             </ul>
             {{ end }}
         </div>
+
+        <!-- Section 3: Tutorials -->
+        <div class="guide-menu-section">
+            <h3 class="guide-menu-title">
+                <a href="{{ $tutorials.RelPermalink }}" class="{{ if $isTutorials }}active-guide{{ end }}">Tutorials</a>
+            </h3>
+            {{ if $isTutorials }}
+            <ul class="guide-menu-list">
+                {{ range $tutorials.Pages.ByWeight }}
+                    {{ $isCurrentSection := or (eq . $currentPage) ($currentPage.IsDescendant .) }}
+                    <li class="guide-menu-item {{ if .IsSection }}is-section{{ end }}">
+                        <a href="{{ .RelPermalink }}" class="{{ if and .IsSection $isCurrentSection }}active-section{{ end }} {{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+                        {{ if .IsSection }}
+                            <ul class="guide-menu-list-nested">
+                            {{ range .Pages.ByWeight }}
+                                <li class="guide-menu-item">
+                                    <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+                                </li>
+                            {{ end }}
+                            </ul>
+                        {{ end }}
+                    </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+
+
 
         <div class="guide-menu-section">
             <h3 class="guide-menu-title">

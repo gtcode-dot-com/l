@@ -1,7 +1,7 @@
 ---
 title: "Tutorial Part 2: Building the Parent SNOs"
 description: "A code-heavy guide to manually constructing the Structured Narrative Objects for the Plate Tectonics and Geosyncline theories."
-weight: 2
+weight: 8
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial Part 3: Running the Synthesis"
 description: "How to use the ChiralPairDetector and GenerativeSynthesisEngine to create a novel synthesis from two conflicting SNOs."
-weight: 3
+weight: 9
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
