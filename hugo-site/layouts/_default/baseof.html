@@ -51,11 +51,14 @@
                         <ul class="nav-list">
                             {{ range .Site.Menus.main }}
                                 <li class="nav-item">
-                                    <a href="{{ .URL | relURL }}" class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+                                    <a href="{{ .URL | relURL }}" class="nav-link {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}active{{ end }}">
                                         {{ .Name }}
                                     </a>
                                 </li>
                             {{ end }}
+                            <li class="nav-item">
+                                <a href="/" class="home-link">← Home</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -88,6 +91,9 @@
     <script src="/js/sidebar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-elixir.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-javascript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     
     <!-- KaTeX for math rendering -->

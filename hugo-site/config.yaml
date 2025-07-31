@@ -28,19 +28,19 @@ menu:
   main:
     - name: "Developer's Guide"
       identifier: "devguide"
-      url: "/guides/building-cns-2.0-developers-guide/"
+      pageRef: "/guides/building-cns-2.0-developers-guide"
       weight: 1
     - name: "Research Roadmap"
       identifier: "research"
-      url: "/guides/cns-2.0-research-roadmap/"
+      pageRef: "/guides/cns-2.0-research-roadmap"
       weight: 2
     - name: "Tutorials"
       identifier: "tutorials"
-      url: "/guides/tutorials/"
+      pageRef: "/guides/tutorials"
       weight: 3
     - name: "Repositories"
       identifier: "repos"
-      url: "/repos/"
+      pageRef: "/repos"
       weight: 4
 
 server:

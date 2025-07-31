@@ -9,10 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-<div class="guide-header">
-    <a href="/" class="home-link">← Back to GTCode.com Homepage</a>
-</div>
-
 # Chapter 4: The Synthesis Engine & Relational Metrics
 
 ## Beyond Averaging: The Dialectical Workflow
