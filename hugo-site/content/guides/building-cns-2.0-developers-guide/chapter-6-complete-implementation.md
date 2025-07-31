@@ -27,7 +27,7 @@ Taking a prototype to production requires evolving our architecture to be distri
 
 ## The Production Architecture: Decoupling with a Job Queue
 
-The single-process `asyncio` model is limited by the resources of a single machine. To handle a high volume of tasks, we must evolve to a distributed architecture that decouples task submission from task execution.
+The single-process `asyncio` model is limited by the resources of a single machine. To handle the high volume of computationally expensive tasks required by the CNS operational loop (especially critic evaluations and LLM-based synthesis), we must evolve to a distributed architecture. This new model decouples task submission from task execution, allowing us to scale the system horizontally.
 
 <div style="text-align: center;">
   <img src="/img/diagram-03.svg" alt="A diagram of the production architecture, showing an API Server sending tasks to a Redis Queue, which are then consumed by multiple Celery Worker containers." style="display: inline-block;" />

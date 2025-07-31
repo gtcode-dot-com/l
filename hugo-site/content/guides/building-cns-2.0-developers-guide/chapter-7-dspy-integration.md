@@ -23,11 +23,11 @@ To build a truly robust and adaptive system, we must move from *prompting* to *p
 
 ## Solving a "Major Research Challenge": Narrative Ingestion
 
-The CNS 2.0 paper is candid about the difficulty of the first step in the workflow: converting unstructured text into a well-formed SNO. In Section 3.1, it states:
+The CNS 2.0 research paper is candid about the difficulty of the first step in the workflow: converting unstructured text into a well-formed SNO. In Section 3.1, it states:
 
-> "A critical prerequisite for the CNS ecosystem is the ability to generate SNOs from unstructured source materials... This process, a form of advanced argumentation mining, is a **major research challenge** in itself."
+> "A critical prerequisite for the CNS ecosystem is the ability to generate SNOs from unstructured source materials (e.g., academic papers, intelligence reports). This process, a form of advanced argumentation mining, is a **major research challenge** in itself."
 
-Manually engineering a prompt to reliably extract a hypothesis, claims, and their relationships is exactly the kind of brittle task where DSPy excels. We can programmatically find the best possible prompt for this complex extraction task.
+Manually engineering a fixed prompt to reliably extract a central hypothesis, multiple sub-claims, and their logical relationships from diverse documents is exactly the kind of brittle, complex task where DSPy excels. Instead of guessing the right prompt, we can use DSPy to *find* it programmatically.
 
 ### Defining the Ingestion Task with DSPy
 
@@ -87,7 +87,7 @@ The diagram below illustrates this self-optimizing loop. The goal is to "compile
 
 ### How the Self-Optimizing Loop Works
 
-This process allows the system to programmatically discover what makes a "good" synthesis from its own perspective. Here is a step-by-step breakdown:
+This process allows the system to programmatically discover what makes a "good" synthesis *from its own perspective*. The core idea is to use our `CriticPipeline`—the embodiment of the system's values—as the objective function for the DSPy optimizer. This creates a powerful feedback loop where the system learns to generate syntheses that it itself considers to be high-quality, effectively teaching its generative components to align with its evaluative components. Here is a step-by-step breakdown:
 
 1.  **Define the Task**: We define a `ChiralPairToSynthesis` signature that tells the LLM its goal: take two conflicting narratives and output a new, higher-order hypothesis.
 2.  **Prompt Generation**: The DSPy Optimizer (`BootstrapFewShot`) creates a candidate prompt and few-shot examples for the `SynthesisModule`.

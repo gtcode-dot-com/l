@@ -17,9 +17,9 @@ sitemap:
 
 ## Assembling the Autonomous System
 
-Now that we've implemented the core components—SNOs, Critics, and the Synthesis Engine—it's time to integrate them into a cohesive, stateful, and autonomous system. This chapter focuses on the operational workflow that allows the CNS 2.0 system to run continuously, processing information and refining its knowledge base over time.
+Now that we've implemented the core components—SNOs, Critics, and the Synthesis Engine—it's time to integrate them into a cohesive, stateful, and autonomous system. This chapter focuses on building the **System Operational Loop** described in Section 3.3 of the research paper. We will implement the operational workflow that allows the CNS 2.0 system to run continuously, processing information and refining its knowledge base over time.
 
-We will build a `CNSWorkflowManager` that serves as the central nervous system, orchestrating the flow of data and tasks between all other components.
+The `CNSWorkflowManager` we will build serves as the central nervous system for this loop, orchestrating the flow of data and tasks between all other components to create a cycle of ingestion, evaluation, and synthesis.
 
 ## The `asyncio` Architecture for I/O-Bound Systems
 
@@ -519,15 +519,15 @@ An autonomous system should not be a "black box." Continuous monitoring is essen
 ### Knowledge Quality and Dynamics Metrics
 
 -   **Average Trust Score**
-    -   **What it means**: The mean trust score of all SNOs in your population.
-    -   **Actionable Insight**: A healthy, learning system should show a slowly but steadily increasing average trust score over time, as weaker narratives are replaced by more robust, synthesized ones. A stagnant or decreasing score might indicate a problem with your synthesis prompts, critic weights, or the quality of your source data.
+    -   **What it means**: The mean trust score of all SNOs in the population.
+    -   **Actionable Insight**: This is a high-level indicator of the system's overall **epistemic progress**. A healthy, learning system should show a slowly but steadily increasing average trust score over time, as weaker narratives are replaced by more robust, synthesized ones. A stagnant or decreasing score might indicate a problem with your synthesis prompts, critic weights, or the quality of your source data.
 
 -   **Synthesis Success Rate**
     -   **What it means**: The percentage of synthesized candidate SNOs that pass the critic evaluation and are added to the population.
-    -   **Actionable Insight**: A very low rate (<10%) might indicate that your synthesis prompts are not effective or that your `synthesis_thresholds` for chirality and entanglement are too low, leading to low-quality pairings. You can use this metric to tune your synthesis prompts and selection criteria.
+    -   **Actionable Insight**: This directly measures the effectiveness of the **Generative Synthesis Engine** (Section 2.3 of the paper). A very low rate (<10%) suggests that your synthesis prompts are not effective or that your `synthesis_thresholds` are too low, leading to low-quality pairings. This metric is key for tuning the creative core of the system.
 
 -   **Critic Score Distribution**
     -   **What it means**: A histogram showing the distribution of scores (0.0 to 1.0) for each individual critic (Grounding, Logic, Novelty).
-    -   **Actionable Insight**: This helps you understand the system's "biases." Is your system producing highly logical but unoriginal ideas? The `Novelty` score distribution would be skewed low. Is it producing novel but poorly supported ideas? The `Grounding` score distribution would be skewed low. This insight allows you to adjust the critic weights (`w_i`) to guide the system toward a more balanced state of knowledge.
+    -   **Actionable Insight**: This helps you diagnose the system's "values" as defined by the critic weights (`w_i`) in the main reward formula. Is the system producing highly logical but unoriginal ideas? The `Novelty` score distribution would be skewed low. Is it producing novel but poorly supported ideas? The `Grounding` score distribution would be skewed low. This insight allows you to programmatically adjust the critic weights to guide the system toward a more balanced state of knowledge.
 
 By tracking these metrics, you gain crucial, actionable visibility into the system's operational health and its effectiveness at the core task of knowledge synthesis.

@@ -166,47 +166,51 @@ class CNSConfig:
     def __init__(self):
         # --- Embedding Model ---
         # Paper Reference: Section 2.1, Hypothesis Embedding H ∈ R^d
-        # The dimension 'd' of the vectors used to represent text semantically.
-        # This MUST match the output dimension of the chosen embedding model.
-        # For 'all-MiniLM-L6-v2', d=384. For 'all-mpnet-base-v2', d=768.
-        self.embedding_dim = 384
+        # This parameter defines 'd', the dimension of the vectors used to represent
+        # text semantically. It MUST match the output dimension of the chosen
+        # sentence-transformer model.
+        # 'all-MiniLM-L6-v2' -> d=384
+        # 'all-mpnet-base-v2' -> d=768
+        self.embedding_dim: int = 384
         
         # --- Critic Pipeline Weights ---
         # Paper Reference: Section 2.2, Equation 1: Reward(S) = Σ w_i * Score_i(S)
         # These are the weights 'w_i' that define the system's "values." They control
-        # the balance between evidential support (grounding), logical coherence, and originality.
-        self.critic_weights = {
+        # the balance between evidential support (grounding), logical coherence, and
+        # originality. Adjusting these weights allows for context-sensitive evaluation.
+        self.critic_weights: Dict[str, float] = {
             'grounding': 0.4,
             'logic': 0.3,
             'novelty': 0.3
         }
         
         # --- Novelty-Parsimony Critic Parameters ---
-        # Paper Reference: Section 2.2, Score_N formula
-        # These are the 'alpha' and 'beta' hyperparameters in the Novelty-Parsimony score.
-        # alpha: Scales the reward for novelty (distance from other SNOs).
-        # beta: Scales the penalty for complexity (graph size), encouraging Occam's Razor.
-        self.novelty_alpha = 0.7
-        self.novelty_beta = 0.3
+        # Paper Reference: Section 2.2, Score_N formula:
+        # Score_N = α * min_i ||H - H_i||₂ - β * (|E_G| / |V|)
+        # These are the 'α' and 'β' hyperparameters in the Novelty-Parsimony score.
+        self.novelty_alpha: float = 0.7  # 'α': Scales the reward for novelty (distance from other SNOs).
+        self.novelty_beta: float = 0.3   # 'β': Scales the penalty for complexity (graph size).
 
         # --- Synthesis Trigger Thresholds ---
         # Paper Reference: Section 3.2, "Synthesis Trigger"
         # These thresholds act as a gatekeeper for the expensive synthesis process.
-        # An SNO pair is only considered if BOTH its Chirality and Entanglement scores
-        # exceed these minimums. This is key to balancing cost and discovery.
-        self.synthesis_thresholds = {
+        # An SNO pair is only considered for synthesis if BOTH its Chirality and
+        # Entanglement scores exceed these minimums. This is key to balancing
+        # the cost of synthesis with the potential for discovery.
+        self.synthesis_thresholds: Dict[str, float] = {
             'chirality': 0.7,
             'entanglement': 0.5
         }
         
         # --- Model Identifiers ---
-        # These are the concrete HuggingFace model identifiers for the abstract components in the paper.
-        # - 'embedding': Creates the Hypothesis Embedding 'H'.
-        # - 'nli': The Natural Language Inference model for the Grounding Critic.
-        # - 'synthesis': The generative instruction-tuned model for the Synthesis Engine.
-        self.models = {
+        # These are the concrete HuggingFace model identifiers for the abstract
+        # components described in the paper.
+        self.models: Dict[str, str] = {
+            # Used to compute the Hypothesis Embedding 'H' (Section 2.1)
             'embedding': "sentence-transformers/all-MiniLM-L6-v2",
+            # The Natural Language Inference model for the Grounding Critic (Section 2.2)
             'nli': "roberta-large-mnli",
+            # The generative instruction-tuned model for the Synthesis Engine (Section 2.3)
             'synthesis': "mistralai/Mistral-7B-Instruct-v0.1"
         }
 
