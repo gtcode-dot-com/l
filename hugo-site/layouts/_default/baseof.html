@@ -104,5 +104,12 @@
         // Initialize Feather icons
         if (window.feather) feather.replace();
     </script>
+    <!-- Mermaid Diagram Rendering -->
+    {{ if .Page.Store.Get "hasMermaid" }}
+      <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+      </script>
+    {{ end }}
 </body>
 </html>

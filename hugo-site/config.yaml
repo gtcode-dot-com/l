@@ -16,8 +16,6 @@ markup:
         delimiters:
           block: [['$$', '$$']]
           inline: [['$', '$']]
-  mermaid:
-    enable: true
   # highlight:
   #   style: vs2015
   #   lineNos: true
