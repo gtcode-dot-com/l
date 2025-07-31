@@ -26,44 +26,44 @@ By forcing the LLM to "show its work" within a pre-defined logical structure, we
 
 Our primary template is based on the Hegelian dialectic of *thesis, antithesis, synthesis*. It forces the LLM to move beyond simple summarization and engage in a process of higher-order resolution.
 
-> ```
-> DIALECTICAL_SYNTHESIS_TEMPLATE = """
-> Given the following validated inputs:
-> - THESIS: {thesis_claims} [Supported by evidence: {thesis_evidence}]
-> - ANTITHESIS: {antithesis_claims} [Supported by evidence: {antithesis_evidence}]
-> - SHARED_EVIDENCE: {shared_evidence_list}
-> - CONFLICT_POINTS: {identified_contradictions}
->
-> REQUIRED_PROCESS:
-> 1. CONTRADICTION_ANALYSIS:
->    - Identify the fundamental source of disagreement.
->    - Analyze how the shared evidence is interpreted differently to support opposing conclusions.
->    - Determine if the contradiction is a genuine paradox or merely an apparent conflict.
->
-> 2. EVIDENCE_SYNTHESIS:
->    - Reconcile the interpretation of the shared evidence.
->    - Identify which specific pieces of evidence support aspects of both the thesis and the antithesis.
->    - Determine what additional evidence, if found, would be most likely to resolve the core dispute.
->
-> 3. HIGHER_ORDER_RESOLUTION:
->    - Formulate a new synthesis that preserves the valid insights from both the thesis and antithesis.
->    - Ensure the synthesis directly addresses the root cause of the contradiction identified in the analysis phase.
->    - Generate novel insights or a new conceptual framework that transcends the original disagreement.
->
-> 4. LOGICAL_VALIDATION:
->    - Verify that the final synthesis is internally logically consistent.
->    - Confirm that all claims within the synthesis are supported by the provided evidence.
->    - Ensure that no logical fallacies have been introduced during the reasoning process.
->
-> CONSTRAINTS:
-> - Must preserve and explain all high-quality shared evidence.
-> - Cannot introduce new claims that are unsupported by the provided evidence.
-> - Must explicitly address all major points of contradiction.
-> - Cannot resort to simple averaging, compromise, or "splitting the difference."
->
-> OUTPUT_FORMAT: [Structured synthesis with explicit reasoning chains for each of the four process steps.]
-> """
-> ```
+```bash
+DIALECTICAL_SYNTHESIS_TEMPLATE = """
+Given the following validated inputs:
+- THESIS: {thesis_claims} [Supported by evidence: {thesis_evidence}]
+- ANTITHESIS: {antithesis_claims} [Supported by evidence: {antithesis_evidence}]
+- SHARED_EVIDENCE: {shared_evidence_list}
+- CONFLICT_POINTS: {identified_contradictions}
+
+REQUIRED_PROCESS:
+1. CONTRADICTION_ANALYSIS:
+   - Identify the fundamental source of disagreement.
+   - Analyze how the shared evidence is interpreted differently to support opposing conclusions.
+   - Determine if the contradiction is a genuine paradox or merely an apparent conflict.
+
+2. EVIDENCE_SYNTHESIS:
+   - Reconcile the interpretation of the shared evidence.
+   - Identify which specific pieces of evidence support aspects of both the thesis and the antithesis.
+   - Determine what additional evidence, if found, would be most likely to resolve the core dispute.
+
+3. HIGHER_ORDER_RESOLUTION:
+   - Formulate a new synthesis that preserves the valid insights from both the thesis and antithesis.
+   - Ensure the synthesis directly addresses the root cause of the contradiction identified in the analysis phase.
+   - Generate novel insights or a new conceptual framework that transcends the original disagreement.
+
+4. LOGICAL_VALIDATION:
+   - Verify that the final synthesis is internally logically consistent.
+   - Confirm that all claims within the synthesis are supported by the provided evidence.
+   - Ensure that no logical fallacies have been introduced during the reasoning process.
+
+CONSTRAINTS:
+- Must preserve and explain all high-quality shared evidence.
+- Cannot introduce new claims that are unsupported by the provided evidence.
+- Must explicitly address all major points of contradiction.
+- Cannot resort to simple averaging, compromise, or "splitting the difference."
+
+OUTPUT_FORMAT: [Structured synthesis with explicit reasoning chains for each of the four process steps.]
+"""
+```
 
 ### Breakdown of the Template's Function
 

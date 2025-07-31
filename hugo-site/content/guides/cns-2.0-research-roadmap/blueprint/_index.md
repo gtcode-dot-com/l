@@ -47,8 +47,7 @@ This structured representation enables sophisticated reasoning operations while 
 Traditional "oracle" critics suffer from opacity and unverifiability. We decompose evaluation into a transparent pipeline of specialized critics, each assessing distinct aspects of narrative quality. The final trust score $T$ and reward signal emerge from a weighted combination:
 
 $$
-\text{Reward}(\mathcal{S}) = \sum_{i \in \{G, L, N\}} w_i \cdot \text{Score}_i(\mathcal{S})
-\label{eq:reward}
+\text{Reward}(\mathcal{S}) = \sum_{i \in \{G, L, N\}} w_i \cdot \text{Score}_i(\mathcal{S}) \quad (1)
 $$
 
 where $w_i$ are dynamically adjustable weights and the component scores are:
