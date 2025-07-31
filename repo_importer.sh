@@ -1,36 +1,29 @@
 #!/usr/bin/env bash
 
 #===============================================================================
-# Hugo Docs Importer
+# Hugo Docs Importer v2.0
 #
 # A script to fetch markdown documentation from specified GitHub repositories
-# and organize them into a Hugo website structure. It automatically creates
-# _index.md files for all directories to ensure they are navigable.
+# and organize them into a Hugo website structure. It intelligently creates
+# directories and _index.md files only for paths that contain markdown files,
+# ensuring a clean and efficient content structure.
 #===============================================================================
 
 # --- Robust Scripting Settings ---
-# Exit immediately if a command exits with a non-zero status.
 set -o errexit
-# Treat unset variables as an error when substituting.
 set -o nounset
-# Pipelines return the exit status of the last command to exit with a non-zero
-# status, or zero if no command exited with a non-zero status.
 set -o pipefail
 
 # --- Configuration ---
 
 # The absolute path to the root of your Hugo website repository.
-# Example: HUGO_SITE_ROOT="/Users/your-user/projects/my-hugo-site"
 HUGO_SITE_ROOT="./hugo-site"
 
-# The path within your Hugo site where the content pages should be placed.
-# This is typically 'content/docs' or similar.
-# The script will create subdirectories for each repository here.
+# The path within your Hugo site where the repository content will be placed.
 HUGO_CONTENT_PATH="content/repos"
 
 # An array of repositories to process.
 # Format: "owner/repo" or "owner/repo@branch"
-# If no branch is specified, 'main' is used as the default.
 REPOS_TO_PROCESS=(
   "nshkrdotcom/ds_ex"
   "nshkrdotcom/pipeline_ex"
@@ -43,39 +36,32 @@ REPOS_TO_PROCESS=(
 MAX_FILES_PER_REPO=1000
 
 # Set to "true" to prevent the script from deleting existing content.
-# If "false", the script will remove and replace the content for each repo.
 NO_DELETE_MODE=false
 
 # --- Script Globals ---
-# These are set in _main()
 TEMP_DIR=""
 FULL_CONTENT_PATH=""
 
 # --- Script Logic ---
 
-# Function to display colored messages
 _msg() {
   echo -e "$@"
 }
 
-# Function to display error messages and exit
 _error() {
   echo -e "\033[0;31mError: $1\033[0m" >&2
   exit 1
 }
 
-# Function to create a human-readable title from a string (e.g., file or dir name)
 _generate_title() {
   local input_name="$1"
   local title
   title="${input_name//-/ }"
   title="${title//_/ }"
-  # Capitalize the first letter
   title="$(tr '[:lower:]' '[:upper:]' <<< "${title:0:1}")${title:1}"
   echo "$title"
 }
 
-# Function for cleaning up the temporary directory on exit
 _cleanup() {
   if [[ -n "${TEMP_DIR-}" && -d "$TEMP_DIR" ]]; then
     rm -rf "$TEMP_DIR"
@@ -85,16 +71,12 @@ _cleanup() {
 
 trap _cleanup EXIT SIGHUP SIGINT SIGTERM
 
-
 # --- Repository Processing Function ---
-# This function handles the logic for a single repository.
-# It's designed to be called from the main loop. `set -e` will cause it to
-# exit on failure, which the main loop will catch.
-#
+
 _process_repo() {
   local repo_string="$1"
 
-  # Parse repository and branch from the configuration string
+  # Parse repository and branch details
   local repo_owner_name
   repo_owner_name=$(echo "$repo_string" | cut -d'@' -f1)
   local repo_name
@@ -113,13 +95,27 @@ _process_repo() {
   mkdir -p "$target_repo_path"
 
   _msg "📥 Cloning repository..."
-  # The entire script will no longer exit here if the clone fails.
   git clone --depth 1 --branch "$branch" "https://github.com/${repo_owner_name}.git" "$temp_repo_clone_path"
 
-  # --- [NEW] Create _index.md for all directories to make them navigable ---
-  _msg "📝 Creating index files for navigation..."
-  
-  # 1. Create the root _index.md for the repository itself
+  _msg "🔍 Searching for markdown files..."
+  local markdown_files
+  mapfile -t markdown_files < <(find "$temp_repo_clone_path" -type f \( -name "*.md" -o -name "*.markdown" \) -not -path "*/.git/*" | sort | head -n "$MAX_FILES_PER_REPO")
+
+  local file_count=${#markdown_files[@]}
+  if [[ $file_count -eq 0 ]]; then
+    _msg "🟡 No markdown files found in this repository."
+    # Clean up the empty repo directory we created
+    rmdir "$target_repo_path"
+    return 0
+  fi
+
+  _msg "✅ Found ${file_count} files. Copying and creating indexes as needed..."
+
+  # Associative array to track which directories have had an index created.
+  # This prevents redundant work.
+  declare -A created_indexes
+
+  # --- [REVISED] Create _index.md for the repo root first ---
   local repo_title
   repo_title=$(_generate_title "$repo_name")
   (
@@ -128,45 +124,8 @@ _process_repo() {
     echo "description: \"Browse the contents of the ${repo_title} repository.\""
     echo "---"
   ) > "${target_repo_path}/_index.md"
+  created_indexes["$target_repo_path"]=1
 
-  # 2. Find all subdirectories and create an _index.md in each one
-  local subdirectories
-  mapfile -t subdirectories < <(find "$temp_repo_clone_path" -mindepth 1 -type d -not -path "*/.git/*" | sort)
-
-  for dir_path in "${subdirectories[@]}"; do
-    local relative_dir_path
-    relative_dir_path=${dir_path#${temp_repo_clone_path}/}
-    local dest_dir_path="${target_repo_path}/${relative_dir_path}"
-    mkdir -p "$dest_dir_path" # Ensure target directory exists
-
-    local dir_name
-    dir_name=$(basename "$dir_path")
-    local dir_title
-    dir_title=$(_generate_title "$dir_name")
-    
-    (
-      echo "---"
-      echo "title: \"${dir_title}\""
-      echo "description: \"Contents of the ${dir_title} directory.\""
-      echo "---"
-    ) > "${dest_dir_path}/_index.md"
-  done
-  _msg "   ✓ Created index files for the repo root and ${#subdirectories[@]} subdirectories."
-  # --- End of new logic ---
-
-
-  _msg "🔍 Searching for markdown files..."
-  local markdown_files
-  # Sort files for predictable weighting
-  mapfile -t markdown_files < <(find "$temp_repo_clone_path" -type f -name "*.md" -not -path "*/.git/*" | sort | head -n "$MAX_FILES_PER_REPO")
-
-  local file_count=${#markdown_files[@]}
-  if [[ $file_count -eq 0 ]]; then
-    _msg "🟡 No markdown files found in this repository."
-    return 0 # Success, nothing to do
-  fi
-
-  _msg "✅ Found ${file_count} files. Prepending front matter and copying to Hugo site..."
 
   local file_weight_counter=0
   for file_path in "${markdown_files[@]}"; do
@@ -175,22 +134,46 @@ _process_repo() {
     local relative_path
     relative_path=${file_path#${temp_repo_clone_path}/}
     local dest_path="${target_repo_path}/${relative_path}"
-    mkdir -p "$(dirname "$dest_path")"
+    local dest_dir
+    dest_dir=$(dirname "$dest_path")
 
-    # --- Generate Front Matter ---
+    # Create the destination directory for the markdown file
+    mkdir -p "$dest_dir"
+
+    # --- [REVISED] Intelligent Index Creation ---
+    # Walk up the directory tree from the file's location to the repo root,
+    # creating _index.md files for any directory that doesn't have one yet.
+    local current_check_dir="$dest_dir"
+    while [[ "$current_check_dir" > "$target_repo_path" ]]; do
+      if [[ -z "${created_indexes[$current_check_dir]-}" ]]; then
+        local dir_name
+        dir_name=$(basename "$current_check_dir")
+        local dir_title
+        dir_title=$(_generate_title "$dir_name")
+        (
+          echo "---"
+          echo "title: \"${dir_title}\""
+          echo "description: \"Contents of the ${dir_title} directory.\""
+          echo "---"
+        ) > "${current_check_dir}/_index.md"
+        created_indexes["$current_check_dir"]=1
+      fi
+      current_check_dir=$(dirname "$current_check_dir")
+    done
+    # --- End of revised logic ---
+
+    # --- Generate Front Matter and copy file ---
     local filename
     filename=$(basename "$file_path")
-    local filename_no_ext
-    filename_no_ext="${filename%.md}"
+    local filename_no_ext="${filename%.*}"
 
     local title
     title=$(_generate_title "$filename_no_ext")
-    local description="Documentation for ${filename_no_ext}."
+    local description="Documentation for ${filename_no_ext} from the ${repo_title} repository."
 
     local lastmod
     lastmod=$(cd "$temp_repo_clone_path" && git log -1 --pretty="format:%cs" -- "$relative_path" || date +%Y-%m-%d)
 
-    # Use a temporary file to build the new content to avoid race conditions
     local temp_file
     temp_file=$(mktemp)
     (
@@ -207,21 +190,19 @@ _process_repo() {
       echo ""
       cat "$file_path"
     ) > "$temp_file"
-    
-    # Move the completed file into place
+
     mv "$temp_file" "$dest_path"
   done
 }
 
-
 # --- Main Script Execution ---
 
 _main() {
-  _msg "\n\033[1;34mStarting Hugo Documentation Importer\033[0m"
+  _msg "\n\033[1;34mStarting Hugo Documentation Importer v2.0\033[0m"
 
   # Validate configuration
-  if [[ "$HUGO_SITE_ROOT" == "/path/to/your/hugo/site" || ! -d "$HUGO_SITE_ROOT" ]]; then
-    _error "HUGO_SITE_ROOT is not configured or does not exist. Please edit the script."
+  if [[ ! -d "$HUGO_SITE_ROOT" ]]; then
+    _error "HUGO_SITE_ROOT directory does not exist. Please check the path."
   fi
 
   if [[ ${#REPOS_TO_PROCESS[@]} -eq 0 ]]; then
@@ -231,13 +212,23 @@ _main() {
   FULL_CONTENT_PATH="${HUGO_SITE_ROOT}/${HUGO_CONTENT_PATH}"
   mkdir -p "$FULL_CONTENT_PATH"
 
+  # --- [NEW] Create a single top-level _index.md for the /repos/ section ---
+  if [ ! -f "${FULL_CONTENT_PATH}/_index.md" ]; then
+    _msg "📝 Creating top-level index for the '${HUGO_CONTENT_PATH}' section..."
+    local section_title
+    section_title=$(_generate_title "$(basename "$HUGO_CONTENT_PATH")")
+    (
+      echo "---"
+      echo "title: \"${section_title}\""
+      echo "description: \"A collection of documentation from various code repositories.\""
+      echo "---"
+    ) > "${FULL_CONTENT_PATH}/_index.md"
+  fi
+
   TEMP_DIR=$(mktemp -d)
   _msg "📁 Created temporary directory at: $TEMP_DIR"
 
   for repo_string in "${REPOS_TO_PROCESS[@]}"; do
-    # Call the processing function for each repo.
-    # If the function fails (returns non-zero), catch the error, print a
-    # warning, and continue to the next iteration of the loop.
     _process_repo "$repo_string" || _msg "\033[0;33m⚠️  Skipped repository '${repo_string}' due to an error. Please check the repo name, branch, and permissions.\033[0m"
   done
 

@@ -1,9 +1,10 @@
 <!-- layouts/partials/repos-menu-recursive.html -->
 {{ $context := .context }}
 {{ $currentPage := .currentPage }}
-{{ $pagesAndSections := .context.Pages | append .context.Sections }}
+{{/* FIX: Use .Pages directly. It already contains both regular pages and sections. Appending .Sections caused duplication. */}}
+{{ $pages := $context.Pages.ByTitle }}
 
-{{ range $pagesAndSections.ByTitle }}
+{{ range $pages }}
     {{ if .IsSection }}
         <div class="repo-submenu">
             <details class="repo-submenu-accordion" {{ if or (eq . $currentPage) ($currentPage.IsDescendant .) }}open{{ end }}>

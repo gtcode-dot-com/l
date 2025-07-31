@@ -17,10 +17,10 @@
             </header>
 
             <div class="article-content">
-                {{ .Summary }}
+                {{ .Content }}
 
                 <div class="chapter-list">
-                    {{ $isReposIndex := eq .RelPermalink (.Site.GetPage "section" "repos").RelPermalink }}
+                    {{ $isReposIndex := eq .RelPermalink (.Site.GetPage "repos").RelPermalink }}
                     {{ if $isReposIndex }}
                         {{/* On /repos/ index, list only the main repositories (which are sections) */}}
                         {{ range .Sections.ByTitle }}

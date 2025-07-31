@@ -1,0 +1,16 @@
+<!-- NEW: layouts/partials/guide-menu-recursive.html -->
+{{ $context := .context }}
+{{ $currentPage := .currentPage }}
+
+<ul class="guide-menu-list-nested">
+    {{ range $context.Pages.ByWeight }}
+        {{ $isCurrentSection := or (eq . $currentPage) ($currentPage.IsDescendant .) }}
+        <li class="guide-menu-item {{ if .IsSection }}is-section{{ end }}">
+            <a href="{{ .RelPermalink }}" class="{{ if and .IsSection $isCurrentSection }}active-section{{ end }} {{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+            {{/* If this is a section and the current page is in it, recurse */}}
+            {{ if and .IsSection $isCurrentSection }}
+                {{ partial "guide-menu-recursive.html" (dict "context" . "currentPage" $currentPage) }}
+            {{ end }}
+        </li>
+    {{ end }}
+</ul>

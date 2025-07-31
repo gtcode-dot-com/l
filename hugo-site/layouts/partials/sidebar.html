@@ -1,27 +1,19 @@
-<!-- hugo-site/layouts/partials/sidebar.html -->
+<!-- layouts/partials/sidebar.html -->
 <aside class="guide-sidebar">
     <nav class="guide-nav">
         {{ $currentPage := . }}
-        {{ $devGuide := .Site.GetPage "section" "guides/building-cns-2.0-developers-guide" }}
-        {{ $researchGuide := .Site.GetPage "section" "guides/cns-2.0-research-roadmap" }}
-        {{ $tutorials := .Site.GetPage "section" "guides/tutorials" }}
-        {{ $theoryPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/theoretical-foundations" }}
-        {{ $ethicsPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/ethics" }}
-        {{ $blueprintPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/blueprint" }}
-        {{ $overviewPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/overview" }}
-        {{ $reposPage := .Site.GetPage "section" "repos" }}
+        {{ $devGuide := .Site.GetPage "guides/building-cns-2.0-developers-guide" }}
+        {{ $researchGuide := .Site.GetPage "guides/cns-2.0-research-roadmap" }}
+        {{ $tutorials := .Site.GetPage "guides/tutorials" }}
+        {{ $repos := .Site.GetPage "repos" }}
 
         <!-- Determine active section -->
         {{ $isDevGuide := or (eq . $devGuide) (.IsDescendant $devGuide) }}
         {{ $isResearchGuide := or (eq . $researchGuide) (.IsDescendant $researchGuide) }}
-        {{ $isTutorials := or (eq . $tutorials) (.IsDescendant $researchGuide) }}
-        {{ $isTheory := or (eq . $theoryPage) (.IsDescendant $theoryPage) }}
-        {{ $isEthics := or (eq . $ethicsPage) (.IsDescendant $ethicsPage) }}
-        {{ $isBlueprint := or (eq . $blueprintPage) (.IsDescendant $blueprintPage) }}
-        {{ $isOverview := or (eq . $overviewPage) (.IsDescendant $overviewPage) }}
-        {{ $isRepos := or (eq . $reposPage) (.IsDescendant $reposPage) }}
+        {{ $isTutorials := or (eq . $tutorials) (.IsDescendant $tutorials) }} {{/* Corrected logic */}}
+        {{ $isRepos := or (eq . $repos) (.IsDescendant $repos) }}
 
-        <!-- Section 1: Developer's Guide -->
+       <!-- Section 1: Developer's Guide -->
         <div class="guide-menu-section">
             <h3 class="guide-menu-title">
                 <a href="{{ $devGuide.RelPermalink }}" class="{{ if $isDevGuide }}active-guide{{ end }}">Developer's Guide</a>
@@ -89,13 +81,14 @@
             {{ end }}
         </div>
 
-
-
+        <!-- Section 4: Repositories Link -->
         <div class="guide-menu-section">
             <h3 class="guide-menu-title">
-                <a href="{{ $reposPage.RelPermalink }}" class="{{ if $isRepos }}active-guide{{ end }}">Repositories</a>
+                <a href="{{ $repos.RelPermalink }}" class="{{ if $isRepos }}active-guide{{ end }}">Repositories</a>
             </h3>
+            {{ if $isRepos }}
+                 {{ partial "repos-menu-recursive.html" (dict "context" $repos "currentPage" $currentPage) }}
+            {{ end }}
         </div>
-
     </nav>
 </aside>
