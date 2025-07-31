@@ -34,7 +34,7 @@ menu:
       identifier: "research"
       url: "/guides/cns-2.0-research-roadmap/"
       weight: 2
-    - name: "Repository repos"
+    - name: "Repositories"
       identifier: "repos"
       url: "/repos/"
       weight: 3
