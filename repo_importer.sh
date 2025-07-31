@@ -40,12 +40,16 @@ REPOS_TO_PROCESS=(
 )
 
 # A safety limit on the number of markdown files to process per repository.
-# This prevents issues with repositories containing a very large number of markdown files.
 MAX_FILES_PER_REPO=1000
 
-# Set to "true" to prevent the script from deleting existing content in the target directory.
-# If "false", the script will remove and replace the content for each processed repo.
+# Set to "true" to prevent the script from deleting existing content.
+# If "false", the script will remove and replace the content for each repo.
 NO_DELETE_MODE=false
+
+# --- Script Globals ---
+# These are set in _main()
+TEMP_DIR=""
+FULL_CONTENT_PATH=""
 
 # --- Script Logic ---
 
@@ -68,10 +72,102 @@ _cleanup() {
   fi
 }
 
-# Trap signals to ensure cleanup runs
 trap _cleanup EXIT SIGHUP SIGINT SIGTERM
 
-# --- Main Script ---
+
+# --- Repository Processing Function ---
+# This function handles the logic for a single repository.
+# It's designed to be called from the main loop. `set -e` will cause it to
+# exit on failure, which the main loop will catch.
+#
+_process_repo() {
+  local repo_string="$1"
+
+  # Parse repository and branch from the configuration string
+  local repo_owner_name
+  repo_owner_name=$(echo "$repo_string" | cut -d'@' -f1)
+  local repo_name
+  repo_name=$(basename "$repo_owner_name")
+  local branch
+  branch=$(echo "$repo_string" | awk -F'@' '{if (NF>1) print $2; else print "main"}')
+  local target_repo_path="${FULL_CONTENT_PATH}/${repo_name}"
+  local temp_repo_clone_path="${TEMP_DIR}/${repo_name}"
+
+  _msg "\n\033[1;36mProcessing repository: ${repo_owner_name} (branch: ${branch})\033[0m"
+
+  if [[ "$NO_DELETE_MODE" == "false" && -d "$target_repo_path" ]]; then
+    _msg "🔥 Deleting existing content at ${target_repo_path}"
+    rm -rf "$target_repo_path"
+  fi
+  mkdir -p "$target_repo_path"
+
+  _msg "📥 Cloning repository..."
+  # The entire script will no longer exit here if the clone fails.
+  git clone --depth 1 --branch "$branch" "https://github.com/${repo_owner_name}.git" "$temp_repo_clone_path"
+
+  _msg "🔍 Searching for markdown files..."
+  local markdown_files
+  # Sort files for predictable weighting
+  mapfile -t markdown_files < <(find "$temp_repo_clone_path" -type f -name "*.md" -not -path "*/.git/*" | sort | head -n "$MAX_FILES_PER_REPO")
+
+  local file_count=${#markdown_files[@]}
+  if [[ $file_count -eq 0 ]]; then
+    _msg "🟡 No markdown files found in this repository."
+    return 0 # Success, nothing to do
+  fi
+
+  _msg "✅ Found ${file_count} files. Prepending front matter and copying to Hugo site..."
+
+  local file_weight_counter=0
+  for file_path in "${markdown_files[@]}"; do
+    ((file_weight_counter++))
+
+    local relative_path
+    relative_path=${file_path#${temp_repo_clone_path}/}
+    local dest_path="${target_repo_path}/${relative_path}"
+    mkdir -p "$(dirname "$dest_path")"
+
+    # --- Generate Front Matter ---
+    local filename
+    filename=$(basename "$file_path")
+    local filename_no_ext
+    filename_no_ext="${filename%.md}"
+
+    local title
+    title="${filename_no_ext//-/ }"
+    title="${title//_/ }"
+    title="$(tr '[:lower:]' '[:upper:]' <<< "${title:0:1}")${title:1}"
+
+    local description="$title"
+
+    local lastmod
+    lastmod=$(cd "$temp_repo_clone_path" && git log -1 --pretty="format:%cs" -- "$relative_path" || date +%Y-%m-%d)
+
+    # Use a temporary file to build the new content to avoid race conditions
+    local temp_file
+    temp_file=$(mktemp)
+    (
+      echo "---"
+      echo "title: \"${title}\""
+      echo "description: \"${description}\""
+      echo "weight: ${file_weight_counter}"
+      echo "lastmod: \"${lastmod}\""
+      echo "sitemap:"
+      echo "  changefreq: monthly"
+      echo "  priority: 0.5"
+      echo "  filename: sitemap.xml"
+      echo "---"
+      echo ""
+      cat "$file_path"
+    ) > "$temp_file"
+    
+    # Move the completed file into place
+    mv "$temp_file" "$dest_path"
+  done
+}
+
+
+# --- Main Script Execution ---
 
 _main() {
   _msg "\n\033[1;34mStarting Hugo Documentation Importer\033[0m"
@@ -85,61 +181,20 @@ _main() {
     _error "The REPOS_TO_PROCESS array is empty. Please add repositories to process."
   fi
 
-  local full_content_path="${HUGO_SITE_ROOT}/${HUGO_CONTENT_PATH}"
-  mkdir -p "$full_content_path"
+  FULL_CONTENT_PATH="${HUGO_SITE_ROOT}/${HUGO_CONTENT_PATH}"
+  mkdir -p "$FULL_CONTENT_PATH"
 
-  # Create a secure temporary directory for cloning repositories
   TEMP_DIR=$(mktemp -d)
   _msg "📁 Created temporary directory at: $TEMP_DIR"
 
   for repo_string in "${REPOS_TO_PROCESS[@]}"; do
-    # Parse repository and branch from the configuration string
-    local repo_owner_name
-    repo_owner_name=$(echo "$repo_string" | cut -d'@' -f1)
-    local repo_name
-    repo_name=$(basename "$repo_owner_name")
-    local branch
-    branch=$(echo "$repo_string" | awk -F'@' '{if (NF>1) print $2; else print "main"}')
-
-    local target_repo_path="${full_content_path}/${repo_name}"
-
-    _msg "\n\033[1;36mProcessing repository: ${repo_owner_name} (branch: ${branch})\033[0m"
-
-    # Handle the no-delete option
-    if [[ "$NO_DELETE_MODE" == "false" && -d "$target_repo_path" ]]; then
-      _msg "🔥 Deleting existing content at ${target_repo_path}"
-      rm -rf "$target_repo_path"
-    fi
-    mkdir -p "$target_repo_path"
-
-    # Clone the specific branch of the repository into the temporary directory
-    _msg "📥 Cloning repository..."
-    git clone --depth 1 --branch "$branch" "https://github.com/${repo_owner_name}.git" "${TEMP_DIR}/${repo_name}"
-
-    # Find markdown files, excluding certain paths like .git
-    _msg "🔍 Searching for markdown files..."
-    local markdown_files
-    mapfile -t markdown_files < <(find "${TEMP_DIR}/${repo_name}" -type f -name "*.md" -not -path "*/.git/*" | head -n "$MAX_FILES_PER_REPO")
-
-    local file_count=${#markdown_files[@]}
-    if [[ $file_count -eq 0 ]]; then
-      _msg "🟡 No markdown files found in this repository."
-      continue
-    fi
-
-    _msg "✅ Found ${file_count} markdown files. Copying to Hugo site..."
-
-    for file_path in "${markdown_files[@]}"; do
-      local relative_path
-      relative_path=${file_path#${TEMP_DIR}/${repo_name}/}
-      local dest_path="${target_repo_path}/${relative_path}"
-
-      mkdir -p "$(dirname "$dest_path")"
-      cp "$file_path" "$dest_path"
-    done
+    # Call the processing function for each repo.
+    # If the function fails (returns non-zero), catch the error, print a
+    # warning, and continue to the next iteration of the loop.
+    _process_repo "$repo_string" || _msg "\033[0;33m⚠️  Skipped repository '${repo_string}' due to an error. Please check the repo name, branch, and permissions.\033[0m"
   done
 
-  _msg "\n\033[1;32m🎉 Documentation import process completed successfully!\033[0m"
+  _msg "\n\033[1;32m🎉 Documentation import process completed!\033[0m"
 }
 
 # Run the main function
