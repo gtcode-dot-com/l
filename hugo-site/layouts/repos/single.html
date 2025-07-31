@@ -25,7 +25,7 @@
             </aside>
 
             <div class="article-content">
-                {{ .Content }}
+                {{ .RawContent | markdownify }}
             </div>
 
             <nav class="article-nav">
