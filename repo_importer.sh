@@ -4,8 +4,8 @@
 # Hugo Docs Importer
 #
 # A script to fetch markdown documentation from specified GitHub repositories
-# and organize them into a Hugo website structure.
-#
+# and organize them into a Hugo website structure. It automatically creates
+# _index.md files for all directories to ensure they are navigable.
 #===============================================================================
 
 # --- Robust Scripting Settings ---
@@ -64,6 +64,17 @@ _error() {
   exit 1
 }
 
+# Function to create a human-readable title from a string (e.g., file or dir name)
+_generate_title() {
+  local input_name="$1"
+  local title
+  title="${input_name//-/ }"
+  title="${title//_/ }"
+  # Capitalize the first letter
+  title="$(tr '[:lower:]' '[:upper:]' <<< "${title:0:1}")${title:1}"
+  echo "$title"
+}
+
 # Function for cleaning up the temporary directory on exit
 _cleanup() {
   if [[ -n "${TEMP_DIR-}" && -d "$TEMP_DIR" ]]; then
@@ -105,6 +116,45 @@ _process_repo() {
   # The entire script will no longer exit here if the clone fails.
   git clone --depth 1 --branch "$branch" "https://github.com/${repo_owner_name}.git" "$temp_repo_clone_path"
 
+  # --- [NEW] Create _index.md for all directories to make them navigable ---
+  _msg "📝 Creating index files for navigation..."
+  
+  # 1. Create the root _index.md for the repository itself
+  local repo_title
+  repo_title=$(_generate_title "$repo_name")
+  (
+    echo "---"
+    echo "title: \"${repo_title}\""
+    echo "description: \"Browse the contents of the ${repo_title} repository.\""
+    echo "---"
+  ) > "${target_repo_path}/_index.md"
+
+  # 2. Find all subdirectories and create an _index.md in each one
+  local subdirectories
+  mapfile -t subdirectories < <(find "$temp_repo_clone_path" -mindepth 1 -type d -not -path "*/.git/*" | sort)
+
+  for dir_path in "${subdirectories[@]}"; do
+    local relative_dir_path
+    relative_dir_path=${dir_path#${temp_repo_clone_path}/}
+    local dest_dir_path="${target_repo_path}/${relative_dir_path}"
+    mkdir -p "$dest_dir_path" # Ensure target directory exists
+
+    local dir_name
+    dir_name=$(basename "$dir_path")
+    local dir_title
+    dir_title=$(_generate_title "$dir_name")
+    
+    (
+      echo "---"
+      echo "title: \"${dir_title}\""
+      echo "description: \"Contents of the ${dir_title} directory.\""
+      echo "---"
+    ) > "${dest_dir_path}/_index.md"
+  done
+  _msg "   ✓ Created index files for the repo root and ${#subdirectories[@]} subdirectories."
+  # --- End of new logic ---
+
+
   _msg "🔍 Searching for markdown files..."
   local markdown_files
   # Sort files for predictable weighting
@@ -134,11 +184,8 @@ _process_repo() {
     filename_no_ext="${filename%.md}"
 
     local title
-    title="${filename_no_ext//-/ }"
-    title="${title//_/ }"
-    title="$(tr '[:lower:]' '[:upper:]' <<< "${title:0:1}")${title:1}"
-
-    local description="$title"
+    title=$(_generate_title "$filename_no_ext")
+    local description="Documentation for ${filename_no_ext}."
 
     local lastmod
     lastmod=$(cd "$temp_repo_clone_path" && git log -1 --pretty="format:%cs" -- "$relative_path" || date +%Y-%m-%d)

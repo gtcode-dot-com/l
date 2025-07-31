@@ -4,11 +4,11 @@
         {{ $currentPage := . }}
         {{ $devGuide := .Site.GetPage "section" "guides/building-cns-2.0-developers-guide" }}
         {{ $researchGuide := .Site.GetPage "section" "guides/cns-2.0-research-roadmap" }}
-        {{ $theoryPage := .Site.GetPage "section" "theoretical-foundations" }}
-        {{ $ethicsPage := .Site.GetPage "section" "ethics" }}
-        {{ $blueprintPage := .Site.GetPage "section" "blueprint" }}
+        {{ $theoryPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/theoretical-foundations" }}
+        {{ $ethicsPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/ethics" }}
+        {{ $blueprintPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/blueprint" }}
+        {{ $overviewPage := .Site.GetPage "section" "guides/cns-2.0-research-roadmap/overview" }}
         {{ $reposPage := .Site.GetPage "section" "repos" }}
-        {{ $overviewPage := .Site.GetPage "section" "overview" }}
 
         <!-- Determine active section -->
         {{ $isDevGuide := or (eq . $devGuide) (.IsDescendant $devGuide) }}
@@ -16,8 +16,8 @@
         {{ $isTheory := or (eq . $theoryPage) (.IsDescendant $theoryPage) }}
         {{ $isEthics := or (eq . $ethicsPage) (.IsDescendant $ethicsPage) }}
         {{ $isBlueprint := or (eq . $blueprintPage) (.IsDescendant $blueprintPage) }}
-        {{ $isRepos := or (eq . $reposPage) (.IsDescendant $reposPage) }}
         {{ $isOverview := or (eq . $overviewPage) (.IsDescendant $overviewPage) }}
+        {{ $isRepos := or (eq . $reposPage) (.IsDescendant $reposPage) }}
 
         <!-- Section 1: Developer's Guide -->
         <div class="guide-menu-section">

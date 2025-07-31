@@ -20,26 +20,39 @@
                 {{ .Content }}
 
                 <div class="chapter-list">
-                    {{ range .Pages.ByTitle }}
-                        <div class="chapter-item">
-                            <a href="{{ .RelPermalink }}" class="chapter-link">
-                                <div class="chapter-info">
-                                    <h3 class="chapter-title">{{ .Title }}</h3>
-                                    {{ if .Description }}
-                                    <p class="chapter-description">{{ .Description }}</p>
-                                    {{ end }}
-                                </div>
-                            </a>
-                        </div>
-                    {{ end }}
-                    {{ range .Sections.ByTitle }}
-                        <div class="chapter-item">
-                            <a href="{{ .RelPermalink }}" class="chapter-link">
-                                <div class="chapter-info">
-                                    <h3 class="chapter-title">{{ .Title }}</h3>
-                                </div>
-                            </a>
-                        </div>
+                    {{ $isReposIndex := eq .RelPermalink (.Site.GetPage "section" "repos").RelPermalink }}
+                    {{ if $isReposIndex }}
+                        {{/* On /repos/ index, list only the main repositories (which are sections) */}}
+                        {{ range .Sections.ByTitle }}
+                            <div class="chapter-item">
+                                <a href="{{ .RelPermalink }}" class="chapter-link">
+                                    <div class="chapter-info">
+                                        <h3 class="chapter-title"><i data-feather="folder" class="icon-left"></i> {{ .Title }}</h3>
+                                        {{ if .Description }}
+                                        <p class="chapter-description">{{ .Description }}</p>
+                                        {{ end }}
+                                    </div>
+                                </a>
+                            </div>
+                        {{ end }}
+                    {{ else }}
+                        {{/* On a repo's index page, list its contents (subfolders and files) */}}
+                        {{ $pages := .RegularPages | append .Sections }}
+                        {{ range $pages.ByTitle }}
+                            <div class="chapter-item">
+                                <a href="{{ .RelPermalink }}" class="chapter-link">
+                                    <div class="chapter-info">
+                                        <h3 class="chapter-title">
+                                            {{ if .IsSection }}<i data-feather="folder" class="icon-left"></i>{{ else }}<i data-feather="file-text" class="icon-left"></i>{{ end }}
+                                            {{ .Title }}
+                                        </h3>
+                                        {{ if .Description }}
+                                        <p class="chapter-description">{{ .Description }}</p>
+                                        {{ end }}
+                                    </div>
+                                </a>
+                            </div>
+                        {{ end }}
                     {{ end }}
                 </div>
             </div>
