@@ -45,7 +45,7 @@ This guide focuses on the practical implementation of these components. To explo
 The system operates in a continuous, cyclical process of ingestion, evaluation, and synthesis. This diagram illustrates how raw information is transformed into structured knowledge, which is then refined through a dialectical process that pits competing narratives against each other to generate novel, more robust insights.
 
 <div style="text-align: center;">
-  <img src="/img/diagram-01.svg" alt="A diagram showing the CNS 2.0 workflow loop: Narrative Ingestion to SNO Population, then Chiral Pair Selection, Generative Synthesis, Critic Evaluation, and back to the SNO population." style="display: inline-block;" />
+  <img src="/img/diagram-01.svg" alt="A diagram showing the CNS 2.0 workflow loop: Narrative Ingestion to SNO Population, then Chiral Pair Selection, Generative Synthesis, Critic Evaluation, and back to the SNO population." style="width: 100%; display: inline-block;" />
 </div>
 
 The key stages are:

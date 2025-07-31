@@ -82,7 +82,7 @@ The true power of combining CNS 2.0 and DSPy is realized when we turn the system
 The diagram below illustrates this self-optimizing loop. The goal is to "compile" a `SynthesisModule` that is optimized to produce SNOs that score highly on our `CriticPipeline` metric.
 
 <div style="text-align: center;">
-  <img src="/img/diagram-02.svg" alt="A diagram showing the self-optimizing loop where the DSPy Optimizer compiles a Synthesis Module, which generates a candidate SNO that is then scored by our own CNS Critic Pipeline, with the score being fed back to the optimizer." style="display: inline-block;" />
+  <img src="/img/diagram-02.svg" alt="A diagram showing the self-optimizing loop where the DSPy Optimizer compiles a Synthesis Module, which generates a candidate SNO that is then scored by our own CNS Critic Pipeline, with the score being fed back to the optimizer." style="width: 100%; display: inline-block;" />
 </div>
 
 ### How the Self-Optimizing Loop Works
