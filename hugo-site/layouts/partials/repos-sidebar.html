@@ -6,20 +6,33 @@
 
         <div class="guide-menu-section">
             <h3 class="guide-menu-title">
-                <a href="{{ $reposSection.RelPermalink }}" class="active-guide">All Repositories</a>
+                <a href="{{ $reposSection.RelPermalink }}" class="{{ if eq $currentPage $reposSection }}active-guide{{ end }}">All Repositories</a>
             </h3>
         </div>
 
-        {{ range $reposSection.Sections.ByTitle }}
-            {{ $repoSection := . }}
-            <details class="repo-accordion" {{ if $currentPage.IsDescendant $repoSection }}open{{ end }}>
-                <summary class="repo-summary">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </summary>
-                <div class="repo-menu-content">
-                    {{ partial "repos-menu-recursive.html" (dict "context" . "currentPage" $currentPage) }}
+        {{ if eq $currentPage $reposSection }}
+            <!-- On repos index, list all repos -->
+            {{ range $reposSection.Sections.ByTitle }}
+                 <div class="guide-menu-section">
+                    <h3 class="guide-menu-title">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h3>
                 </div>
-            </details>
+            {{ end }}
+        {{ else }}
+            <!-- Inside a repo, show detailed navigation -->
+            {{ $currentRepo := .CurrentSection }}
+            {{ range $reposSection.Sections.ByTitle }}
+                {{ $repoSection := . }}
+                <details class="repo-accordion" {{ if eq $repoSection $currentRepo }}open{{ end }}>
+                    <summary class="repo-summary">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </summary>
+                    <div class="repo-menu-content">
+                        {{ partial "repos-menu-recursive.html" (dict "context" . "currentPage" $currentPage) }}
+                    </div>
+                </details>
+            {{ end }}
         {{ end }}
     </nav>
 </aside>

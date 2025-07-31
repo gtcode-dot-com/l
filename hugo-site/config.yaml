@@ -26,10 +26,6 @@ markup:
 
 menu:
   main:
-    - name: "Overview"
-      identifier: "overview"
-      url: "/overview/"
-      weight: 0
     - name: "Developer's Guide"
       identifier: "devguide"
       url: "/guides/building-cns-2.0-developers-guide/"
@@ -38,22 +34,10 @@ menu:
       identifier: "research"
       url: "/guides/cns-2.0-research-roadmap/"
       weight: 2
-    - name: "Theoretical Foundations"
-      identifier: "theory"
-      url: "/theoretical-foundations/"
-      weight: 3
-    - name: "Ethics & Responsibility"
-      identifier: "ethics"
-      url: "/ethics/"
-      weight: 4
-    - name: "Blueprint Paper"
-      identifier: "blueprint"
-      url: "/blueprint/"
-      weight: 5
     - name: "Repository repos"
       identifier: "repos"
       url: "/repos/"
-      weight: 10
+      weight: 3
 
 server:
   host: '0.0.0.0'

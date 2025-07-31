@@ -2,27 +2,22 @@
 <aside class="guide-sidebar">
     <nav class="guide-nav">
         {{ $currentPage := . }}
-        {{ $overviewPage := .Site.GetPage "section" "overview" }}
         {{ $devGuide := .Site.GetPage "section" "guides/building-cns-2.0-developers-guide" }}
         {{ $researchGuide := .Site.GetPage "section" "guides/cns-2.0-research-roadmap" }}
         {{ $theoryPage := .Site.GetPage "section" "theoretical-foundations" }}
         {{ $ethicsPage := .Site.GetPage "section" "ethics" }}
         {{ $blueprintPage := .Site.GetPage "section" "blueprint" }}
+        {{ $reposPage := .Site.GetPage "section" "repos" }}
+        {{ $overviewPage := .Site.GetPage "section" "overview" }}
 
         <!-- Determine active section -->
-        {{ $isOverview := or (eq . $overviewPage) (.IsDescendant $overviewPage) }}
         {{ $isDevGuide := or (eq . $devGuide) (.IsDescendant $devGuide) }}
         {{ $isResearchGuide := or (eq . $researchGuide) (.IsDescendant $researchGuide) }}
         {{ $isTheory := or (eq . $theoryPage) (.IsDescendant $theoryPage) }}
         {{ $isEthics := or (eq . $ethicsPage) (.IsDescendant $ethicsPage) }}
         {{ $isBlueprint := or (eq . $blueprintPage) (.IsDescendant $blueprintPage) }}
-
-        <!-- Section 0: Overview -->
-        <div class="guide-menu-section">
-            <h3 class="guide-menu-title">
-                <a href="{{ $overviewPage.RelPermalink }}" class="{{ if $isOverview }}active-guide{{ end }}">Overview</a>
-            </h3>
-        </div>
+        {{ $isRepos := or (eq . $reposPage) (.IsDescendant $reposPage) }}
+        {{ $isOverview := or (eq . $overviewPage) (.IsDescendant $overviewPage) }}
 
         <!-- Section 1: Developer's Guide -->
         <div class="guide-menu-section">
@@ -40,28 +35,7 @@
             {{ end }}
         </div>
 
-        <!-- Section 2: Theoretical Foundations -->
-        <div class="guide-menu-section">
-            <h3 class="guide-menu-title">
-                <a href="{{ $theoryPage.RelPermalink }}" class="{{ if $isTheory }}active-guide{{ end }}">Theoretical Foundations</a>
-            </h3>
-        </div>
-
-        <!-- Section 3: Ethics & Responsibility -->
-        <div class="guide-menu-section">
-            <h3 class="guide-menu-title">
-                <a href="{{ $ethicsPage.RelPermalink }}" class="{{ if $isEthics }}active-guide{{ end }}">Ethics & Responsibility</a>
-            </h3>
-        </div>
-
-        <!-- Section 4: Blueprint Paper -->
-        <div class="guide-menu-section">
-            <h3 class="guide-menu-title">
-                <a href="{{ $blueprintPage.RelPermalink }}" class="{{ if $isBlueprint }}active-guide{{ end }}">Blueprint Paper</a>
-            </h3>
-        </div>
-
-        <!-- Section 5: Research Roadmap -->
+        <!-- Section 2: Research Roadmap -->
         <div class="guide-menu-section">
             <h3 class="guide-menu-title">
                 <a href="{{ $researchGuide.RelPermalink }}" class="{{ if $isResearchGuide }}active-guide{{ end }}">Research Roadmap</a>
@@ -86,5 +60,13 @@
             </ul>
             {{ end }}
         </div>
+
+        <!-- Section 6: Repository repos -->
+        <div class="guide-menu-section">
+            <h3 class="guide-menu-title">
+                <a href="{{ $reposPage.RelPermalink }}" class="{{ if $isRepos }}active-guide{{ end }}">Repositories</a>
+            </h3>
+        </div>
+
     </nav>
 </aside>
