@@ -17,7 +17,7 @@
             </header>
 
             <div class="article-content">
-                {{ .Content }}
+                {{ .Summary }}
 
                 <div class="chapter-list">
                     {{ $isReposIndex := eq .RelPermalink (.Site.GetPage "section" "repos").RelPermalink }}
