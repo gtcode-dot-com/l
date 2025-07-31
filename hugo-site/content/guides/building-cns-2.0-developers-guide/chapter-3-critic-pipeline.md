@@ -325,6 +325,110 @@ class NoveltyParsimonyCritic(BaseCritic):
         )
 ```
 
+```
+
+### Roadmap to a GNN-based Logic Critic
+
+The heuristic-based `LogicCritic` is a functional and transparent starting point. However, the research paper correctly identifies that a **Graph Neural Network (GNN)** is the state-of-the-art solution.
+
+**Why a GNN is the Next Step:**
+Hand-coded heuristics can only capture simple structural flaws. A GNN, in contrast, can *learn* subtle, complex, and non-local patterns of faulty reasoning directly from data. By training on a dataset of valid and fallacious argument graphs, a GNN can learn to identify sophisticated weaknesses like:
+-   **Missing Warrants**: Implicit logical leaps between claims.
+-   **Fallacies of Relevance**: Arguments where the support is only superficially related to the conclusion.
+-   **Complex Circular Reasoning**: Logical loops that span multiple nodes and are hard to detect with simple cycle checks.
+
+A GNN-based critic moves from a "rules-based" system to a "learning-based" system, dramatically increasing the sophistication and accuracy of the logic evaluation.
+
+**Conceptual GNN Implementation (PyTorch & PyG):**
+Below is a conceptual skeleton of what a GNN-based `LogicCritic` might look like using PyTorch and the PyTorch Geometric (`PyG`) library, which is specialized for GNNs.
+
+```python
+# You would need to install: pip install torch torch-geometric
+import torch
+import torch.nn.functional as F
+from torch_geometric.nn import GCNConv, global_mean_pool
+from torch_geometric.data import Data
+
+class GNNLogicModel(torch.nn.Module):
+    """A simple Graph Convolutional Network (GCN) for graph classification."""
+    def __init__(self, num_node_features, hidden_channels):
+        super().__init__()
+        self.conv1 = GCNConv(num_node_features, hidden_channels)
+        self.conv2 = GCNConv(hidden_channels, hidden_channels)
+        # A linear layer for the final graph-level classification
+        self.lin = torch.nn.Linear(hidden_channels, 1)
+
+    def forward(self, x, edge_index, batch):
+        # 1. Obtain node embeddings
+        x = self.conv1(x, edge_index).relu()
+        x = self.conv2(x, edge_index).relu()
+
+        # 2. Global Pooling: Aggregate node features to get a graph-level embedding
+        x = global_mean_pool(x, batch)
+
+        # 3. Apply a final classifier to get a single score for the graph
+        x = self.lin(x)
+
+        # Apply sigmoid to get a score between 0 and 1
+        return torch.sigmoid(x)
+
+def convert_sno_to_graph_data(sno: StructuredNarrativeObject, embedding_model) -> Data:
+    """Converts our NetworkX graph into a PyG Data object for the GNN."""
+    G = sno.reasoning_graph
+
+    # Create node features (e.g., from claim embeddings)
+    node_features = []
+    node_map = {node_id: i for i, node_id in enumerate(G.nodes())}
+    for node_id in G.nodes():
+        claim_content = G.nodes[node_id]['claim'].content
+        # In a real implementation, you'd use pre-computed embeddings
+        embedding = embedding_model.encode(claim_content)
+        node_features.append(embedding)
+
+    x = torch.tensor(np.array(node_features), dtype=torch.float)
+
+    # Create edge index
+    edge_list = [[node_map[u], node_map[v]] for u, v in G.edges()]
+    edge_index = torch.tensor(edge_list, dtype=torch.long).t().contiguous()
+
+    return Data(x=x, edge_index=edge_index)
+
+# --- Conceptual Training Loop ---
+# This would not run in the guide, but shows the process.
+def train_gnn_critic(model, train_loader, optimizer, criterion):
+    model.train()
+    for data in train_loader: # train_loader yields batches of graph Data objects
+        optimizer.zero_grad()
+        out = model(data.x, data.edge_index, data.batch)
+        # `data.y` would be the ground-truth label (0 for fallacious, 1 for valid)
+        loss = criterion(out, data.y.unsqueeze(1).float())
+        loss.backward()
+        optimizer.step()
+
+# --- The GNN-based Critic Class ---
+class GNNLogicCritic(BaseCritic):
+    def __init__(self, weight: float, model_path: str, embedding_model):
+        super().__init__(CriticType.LOGIC, weight)
+        self.model = GNNLogicModel(num_node_features=768, hidden_channels=64) # Example dimensions
+        self.model.load_state_dict(torch.load(model_path))
+        self.model.eval() # Set model to evaluation mode
+        self.embedding_model = embedding_model
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        graph_data = convert_sno_to_graph_data(sno, self.embedding_model)
+
+        with torch.no_grad():
+            score = self.model(graph_data.x, graph_data.edge_index, torch.zeros(graph_data.num_nodes, dtype=torch.long)).item()
+
+        return CriticResult(
+            score=score,
+            confidence=0.95, # Assuming a well-trained model
+            explanation=f"GNN-based logical coherence score: {score:.3f}"
+        )
+```
+
+This roadmap illustrates the clear, principled path from our initial heuristic-based critic to a much more powerful, learned system, which is a core theme of the CNS 2.0 research philosophy.
+
 ## Contextual Evaluation: Dynamic Weight Adjustment
 
 A key feature of CNS 2.0 is its adaptability. By adjusting the weights $w_i$ in the main reward formula, we can change the system's "priorities" to suit different phases of knowledge discovery.

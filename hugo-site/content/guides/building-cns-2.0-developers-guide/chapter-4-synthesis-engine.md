@@ -235,6 +235,138 @@ Instead of directly modifying the SNO, this target vector is used to prompt a ge
 ### Formula Breakdown: `H_target`
 This formula has three distinct vector components:
 1.  **The Starting Point**: $H_i$, the embedding of our current SNO. This is our anchor.
+2.  **The Improvement Vector**: $\alpha \nabla_{H_i} \text{Reward}(SNO_i)$. This vector "points" in a direction in the latent space that would increase the SNO's reward score. Calculating the true gradient ($\nabla$) is complex, so in practice we use a proxy—a vector that moves towards a more "ideal" state (e.g., an embedding representing a highly trusted concept).
+3.  **The Repulsion Vector**: $\beta \cdot \text{CScore} \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}$. This vector points directly away from the opposing SNO, `SNO_j`. The magnitude of this "push" is scaled by the `CScore` and a tuning parameter `beta`.
+
+```python
+def calculate_target_embedding(
+    sno_i: StructuredNarrativeObject,
+    sno_j: StructuredNarrativeObject,
+    reward_gradient_proxy: np.ndarray,
+    alpha: float,
+    beta: float
+) -> np.ndarray:
+    """
+    Implements Guided Narrative Exploration from Section 3.4 of the paper.
+    This function computes a target vector in the latent space to guide the
+    generation of a new, refined narrative.
+    """
+    if sno_i.hypothesis_embedding is None or sno_j.hypothesis_embedding is None:
+        raise ValueError("Both SNOs must have computed hypothesis embeddings.")
+
+    h_i = sno_i.hypothesis_embedding
+    h_j = sno_j.hypothesis_embedding
+
+    # The "improvement vector" points toward a region of higher reward.
+    # In a real system, the proxy could be a vector pointing towards an
+    # archetypal "good" SNO or derived from critic feedback.
+    improvement_vector = alpha * reward_gradient_proxy
+
+    # The "repulsion vector" points away from the opposing SNO.
+    c_score = RelationalMetrics.chirality_score(sno_i, sno_j)
+    # Ensure the direction vector is normalized before scaling.
+    repulsion_direction = (h_i - h_j) / np.linalg.norm(h_i - h_j)
+    repulsion_vector = beta * c_score * repulsion_direction
+
+    # Combine the vectors to find the target destination in the latent space.
+    h_target = h_i + improvement_vector + repulsion_vector
+
+    # Normalize the final vector to ensure it's a valid embedding.
+    h_target_normalized = h_target / np.linalg.norm(h_target)
+
+    return h_target_normalized
+```
+
+## Making it Concrete: Visualizing the SNO Latent Space
+
+The concepts of "latent space," "chirality," and "conceptual distance" are powerful but abstract. We can make them intuitive by visualizing the high-dimensional hypothesis embeddings in 2D space using **t-SNE (t-Distributed Stochastic Neighbor Embedding)**. This is a powerful diagnostic and exploratory tool for understanding the health and structure of your knowledge base.
+
+**Why this is useful:** A t-SNE plot helps you answer key questions at a glance:
+-   Are there distinct **clusters of thought** in my knowledge base?
+-   Are my high-trust SNOs all clustered together, or are there multiple, competing high-trust theories?
+-   Where are the "chiral pairs"? They should appear as two points, often far from each other, but both with high trust scores.
+-   Where do new, synthesized SNOs appear in relation to their parents?
+
+**Complete, Runnable Visualization Function:**
+
+```python
+# You may need to install these libraries: pip install scikit-learn matplotlib
+import matplotlib.pyplot as plt
+from sklearn.manifold import TSNE
+from typing import List
+import numpy as np
+
+def visualize_sno_latent_space(sno_population: List[StructuredNarrativeObject], title: str = 't-SNE Visualization of SNO Latent Space'):
+    """
+    Creates a 2D visualization of the SNO population's hypothesis embeddings using t-SNE.
+    Points are colored by Trust Score, making it easy to see the quality of different
+    conceptual clusters.
+    """
+    # Filter for SNOs that have been processed and have an embedding.
+    valid_snos = [sno for sno in sno_population if sno.hypothesis_embedding is not None]
+    if len(valid_snos) < 2:
+        print("Not enough SNOs with embeddings to visualize.")
+        return
+
+    embedding_matrix = np.array([sno.hypothesis_embedding for sno in valid_snos])
+    trust_scores = np.array([sno.trust_score or 0.0 for sno in valid_snos])
+
+    # t-SNE is sensitive to perplexity; it should be less than the number of samples.
+    perplexity = min(len(valid_snos) - 1, 30)
+
+    # Initialize and run t-SNE
+    tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42, n_iter=300, init='pca')
+    embeddings_2d = tsne.fit_transform(embedding_matrix)
+
+    # Create the plot
+    plt.style.use('seaborn-v0_8-whitegrid')
+    plt.figure(figsize=(16, 12))
+
+    # Use a scatter plot, coloring points by trust score and sizing them for visibility
+    scatter = plt.scatter(
+        embeddings_2d[:, 0],
+        embeddings_2d[:, 1],
+        c=trust_scores,
+        cmap='viridis_r', # Reversed viridis: yellow is high trust, dark purple is low
+        alpha=0.8,
+        s=150,
+        edgecolors='k',
+        linewidth=0.5
+    )
+
+    # Add labels and a color bar for context
+    plt.title(title, fontsize=18, weight='bold')
+    plt.xlabel('t-SNE Dimension 1', fontsize=12)
+    plt.ylabel('t-SNE Dimension 2', fontsize=12)
+    cbar = plt.colorbar(scatter, pad=0.01)
+    cbar.set_label('Trust Score', fontsize=12, weight='bold')
+
+    # Annotate each point with its SNO ID for easy identification
+    for i, sno in enumerate(valid_snos):
+        plt.annotate(
+            sno.sno_id[:6],
+            (embeddings_2d[i, 0] + 0.05, embeddings_2d[i, 1] + 0.05),
+            fontsize=9,
+            alpha=0.85,
+            bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="black", lw=0.5, alpha=0.6)
+        )
+
+    plt.show()
+```
+This visualization transforms the abstract mathematics of CNS 2.0 into a concrete, explorable map of ideas, providing an invaluable tool for debugging and understanding the system's behavior.
+
+## Advanced Agent Action: Guided Narrative Exploration
+
+The paper also describes a more subtle agent action than direct synthesis: **refinement** through guided exploration. Instead of combining two SNOs, an agent can try to improve a single SNO, `SNO_i`, especially when it's in conflict with another, `SNO_j`. The goal is to find a "sweet spot" in the latent space—a new hypothesis that is better than `SNO_i` but doesn't simply copy `SNO_j`. This is achieved by calculating a `target embedding`, $H_{\text{target}}$.
+
+> **From the Paper (Equation 2, Section 3.4):**
+> $$H_{\text{target}} = H_{i} + \alpha \nabla_{H_i} \text{Reward}(SNO_i) + \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}$$
+
+Instead of directly modifying the SNO, this target vector is used to prompt a generative agent: *"Generate a new SNO whose core hypothesis is semantically close to $H_{\text{target}}$, drawing inspiration from the reasoning and evidence of SNO$_i$."*
+
+### Formula Breakdown: `H_target`
+This formula has three distinct vector components:
+1.  **The Starting Point**: $H_i$, the embedding of our current SNO. This is our anchor.
 2.  **The Improvement Vector**: $\alpha \nabla_{H_i} \text{Reward}(SNO_i)$. This vector "points" in a direction in the latent space that would increase the SNO's reward score. Calculating the true gradient ($\nabla$) is complex, so in practice we use a proxy—a vector that moves towards a more "ideal" state.
 3.  **The Repulsion Vector**: $\beta \cdot \text{CScore} \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}$. This vector points directly away from the opposing SNO, `SNO_j`. The magnitude of this "push" is scaled by the `CScore` and a tuning parameter `beta`.
 
