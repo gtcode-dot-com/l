@@ -214,6 +214,8 @@ The Logic Critic assesses the structural coherence of the reasoning graph $G$. A
 > The ideal Logic Score is produced by a Graph Neural Network (GNN) trained to detect logical weaknesses:
 > $$ \text{Score}_L = f_{\text{GNN}}(G; \theta) $$
 > Training a full GNN is a major research project. For our implementation, we create a **functional heuristic proxy** for $f_{\text{GNN}}$ that uses graph-theoretic metrics to approximate logical coherence.
+>
+> > For a deep-dive into the state-of-the-art approach, see the research project on **[GNNs for Logical Reasoning](/guides/cns-2.0-research-roadmap/technical-research/1-gnn-for-logical-reasoning/)**.
 
 #### `Score_L` (Heuristic Proxy)
 Our heuristic-based `LogicCritic` uses a weighted average of three metrics to approximate what a trained GNN would learn:

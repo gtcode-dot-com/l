@@ -9,9 +9,14 @@ sitemap:
   filename: sitemap.xml
 ---
 
-With the foundational components in place, our research can turn to the truly cutting-edge technical challenges required to make CNS 2.0 a robust, scalable, and deeply intelligent system. This phase of the research program moves beyond the initial implementation to tackle next-generation problems in automated reasoning, privacy-preserving AI, and causal inference.
+As the foundational CNS 2.0 papers argue, the "cognitive challenge of reconciling conflicting hypotheses remains unsolved" in artificial intelligence. While the core CNS 2.0 framework provides a powerful blueprint, realizing its full potential requires moving beyond the initial implementation to tackle next-generation problems in automated reasoning, privacy-preserving AI, and causal inference.
 
-The projects in this section represent significant, multi-year research efforts. Each is a potential dissertation topic or a major research grant proposal. They are designed to produce not just incremental improvements, but fundamental breakthroughs in how AI systems handle logic, collaboration, and causality.
+This research thrust is dedicated to solving the deep technical challenges that separate the current prototype from a truly robust, scalable, and intelligent system. The goal is to address the critical limitations inherent in today's AI, including:
+- The opacity of "black-box" models.
+- The loss of structural information in simple vector representations.
+- The failure of naive averaging to produce genuine insight.
+
+The projects in this section represent significant, multi-year research efforts designed to produce fundamental breakthroughs. They are the key to transforming CNS 2.0 into a system that can "reconcile contradictory information into robust, verifiable insights," establishing a new standard for trustworthy AI.
 
 This section details three core advanced research thrusts:
 

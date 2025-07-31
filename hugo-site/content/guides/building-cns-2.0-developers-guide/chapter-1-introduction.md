@@ -42,6 +42,8 @@ CNS 2.0 introduces four key advances that we will implement throughout this guid
 3.  **Generative Synthesis Engine:** LLM-powered dialectical reasoning that transcends naive vector averaging.
 4.  **Evidential Entanglement Metric:** A novel measure identifying narratives that oppose each other while arguing over shared evidence.
 
+This guide focuses on the practical implementation of these components. To explore the long-term vision and the advanced research required to push these concepts to their limits, see the **[CNS 2.0 Research Roadmap](/guides/cns-2.0-research-roadmap/)**.
+
 ## The CNS 2.0 Workflow at a Glance
 
 The system operates in a continuous, cyclical process of ingestion, evaluation, and synthesis. This diagram illustrates how raw information is transformed into structured knowledge, which is then refined through a dialectical process that pits competing narratives against each other to generate novel, more robust insights.

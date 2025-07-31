@@ -33,6 +33,13 @@ The single-process `asyncio` model is limited by the resources of a single machi
   <img src="/img/diagram-03.svg" alt="A diagram of the production architecture, showing an API Server sending tasks to a Redis Queue, which are then consumed by multiple Celery Worker containers." style="display: inline-block;" />
 </div>
 
+### Security Consideration: Adversarial Robustness in Production
+This distributed architecture is scalable and robust, but moving to production introduces a critical new challenge: **security**. A system operating on the open internet will not just encounter benign errors; it will face malicious actors who actively try to manipulate it.
+
+An attacker could attempt to poison the knowledge base by submitting carefully crafted narratives containing subtle logical fallacies or forged evidence. Standard quality checks might not be enough to stop a sophisticated, coordinated attack. Therefore, a production-grade CNS system must be designed with **adversarial robustness** in mind from the outset.
+
+> This is a major research challenge. For a detailed exploration of threat modeling and defense development, see the research project on **[Adversarial Robustness & Security](/guides/cns-2.0-research-roadmap/evaluation-and-validation/2-adversarial-robustness-and-security/)**.
+
 This architecture consists of three main services:
 1.  **API Server (FastAPI)**: A lightweight web server that provides an entry point to the system. Its only job is to validate requests and add them as tasks to the message broker.
 2.  **Message Broker (Redis)**: A high-performance message queue that holds the "to-do list" of tasks for the entire system.

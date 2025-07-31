@@ -331,7 +331,9 @@ While this works perfectly for a single object, deploying a system that manages 
 
 ### Challenge 1: Scalability and Concurrency
 
-In a live CNS system, the SNO population could grow to millions. Storing this data in a single JSON file is unworkable.
+In a live CNS system, the SNO population could grow to millions. Storing this data in a single JSON file is unworkable. The challenges of managing a large-scale, distributed SNO database become even more acute when considering systems that operate across organizational boundaries, where data privacy is paramount.
+
+> Designing such a system is a major undertaking. For more, see the research project on **[Federated Learning and Privacy](/guides/cns-2.0-research-roadmap/technical-research/2-federated-learning-and-privacy/)**.
 
 **The Problems with File-Based Persistence:**
 -   **Scalability**: Loading a multi-gigabyte JSON file into memory on every startup is incredibly slow and resource-intensive.

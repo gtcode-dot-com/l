@@ -504,7 +504,9 @@ This two-stage approach provides a practical roadmap: start with a simple, effec
 
 ## Actionable Monitoring for System Health
 
-An autonomous system should not be a "black box." Continuous monitoring is essential. A dashboard (using tools like Grafana, Prometheus, or Datadog) should track key metrics, and you should know how to interpret them.
+An autonomous system should not be a "black box." Continuous monitoring is essential. A dashboard (using tools like Grafana, Prometheus, or Datadog) should track key metrics, and you should know how to interpret them. The ad-hoc monitoring described here is crucial for operational health, but it is not a substitute for rigorous, scientific evaluation of the system's capabilities and limitations.
+
+> For a comprehensive overview of the formal studies needed to truly validate the system, see the **[Evaluation and Validation Research Thrust](/guides/cns-2.0-research-roadmap/evaluation-and-validation/)**.
 
 ### System Performance Metrics
 

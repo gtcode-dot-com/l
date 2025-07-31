@@ -26,6 +26,14 @@ The creative core of CNS 2.0 is its ability to generate genuinely new knowledge 
 
 This chapter builds the components for this workflow, starting with the critical metrics that guide the first step.
 
+### Ethical Consideration: The Dual-Use Nature of Synthesis
+
+Before we build this powerful engine, it's crucial to address its ethical implications. A system designed to synthesize conflicting information to find truth can just as easily be used to synthesize disparate conspiracy theories into a coherent, believable, and dangerous piece of disinformation. This is the **dual-use** nature of CNS 2.0.
+
+As developers, we have a responsibility to build safeguards directly into our systems. This includes technical solutions for detecting and preventing misuse, as well as clear policies governing the system's operation.
+
+> For a deep-dive into this critical challenge, see the research project on **[Privacy, Security & Misuse Prevention](/guides/cns-2.0-research-roadmap/ethical-legal-and-societal/2-privacy-security-and-misuse-prevention/)**.
+
 ## Step 1: Identifying Productive Conflicts with Relational Metrics
 
 The system must intelligently select which conflicts to focus on. A disagreement between two low-trust, poorly-evidenced narratives is likely just noise. In contrast, a sharp disagreement between two well-supported narratives that both cite the same evidence is a profound opportunity for discovery. Section 3.2 of the paper defines two precise metrics for finding these opportunities.

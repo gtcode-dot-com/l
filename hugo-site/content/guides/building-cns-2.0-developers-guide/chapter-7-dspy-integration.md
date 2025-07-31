@@ -143,6 +143,15 @@ def critic_pipeline_metric(cns_workflow_manager, example, pred, trace=None) -> f
         return 0.0
 ```
 
+### Ethical Consideration: The Power and Peril of Metrics
+The self-optimizing loop is powerful, but it contains a critical ethical risk. The optimizer will relentlessly maximize the score from the `critic_pipeline_metric`, and the old adage "you get what you measure" applies with force.
+
+If our metric is flawed, the system could learn to produce undesirable outputs. For example, if our training data contains biased narratives and our metric only rewards "coherence" and "novelty," the DSPy optimizer could learn to generate *highly coherent and novel but deeply biased* syntheses. It would be optimizing for a plausible-sounding output, not a fair or accurate one.
+
+This highlights the immense responsibility placed on the developer to design metrics that explicitly account for fairness. A metric that is blind to bias will create a system that is blind to injustice.
+
+> Defining and measuring fairness is a complex challenge. For a detailed analysis, see the research project on **[Bias, Fairness, and Accountability](/guides/cns-2.0-research-roadmap/ethical-legal-and-societal/1-bias-fairness-and-accountability/)**.
+
 ### Compiling the Self-Optimizing Synthesizer
 With the signature, module, and metric defined, we can now "compile" our `SynthesisModule`. The optimizer will learn to generate hypotheses that are well-grounded, logical, and novel *according to the system's own internal criteria*.
 
