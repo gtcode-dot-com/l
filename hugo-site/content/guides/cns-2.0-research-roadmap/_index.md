@@ -13,11 +13,13 @@ Welcome to the comprehensive Research Roadmap for the Chiral Narrative Synthesis
 
 > **A Note on Scope:** This guide is focused on the **scientific research program** for the CNS 2.0 project. For a detailed, hands-on guide to the practical implementation of the system in Python, please see our complementary guide: **[Building CNS 2.0: A Developer's Guide](/guides/building-cns-2.0-developers-guide/)**.
 
-The CNS 2.0 vision is ambitious, proposing a novel architecture for automated knowledge synthesis. A vision alone, however, is not a scientific contribution. The purpose of this roadmap is to transparently detail the multi-year, multi-faceted research agenda required to bring this vision to life. Our work is organized into four major thrusts, each comprising several focused research projects that can be pursued in parallel or in sequence.
+The CNS 2.0 vision is ambitious, proposing a novel architecture for automated knowledge synthesis. A vision alone, however, is not a scientific contribution. The purpose of this roadmap is to transparently detail the multi-year, multi-faceted research agenda required to bring this vision to life.
 
-### Phase 1: Foundational Work
+To that end, our research is organized into four major phases, beginning with the foundational work required to validate the core principles of the CNS 2.0 architecture. Each phase comprises several focused research projects that can be pursued in parallel or in sequence.
 
-This initial phase focuses on establishing the core proof-of-concept for the entire CNS 2.0 endeavor. It centers on a "Minimum Viable Experiment" (MVE) designed to validate the single most important claim of our work in a controlled, reproducible manner.
+### Phase 1: Foundational Work & Proof of Concept
+
+This initial phase focuses on establishing the core proof-of-concept for the entire CNS 2.0 endeavor through a Minimum Viable Experiment (MVE), and then building out the essential components, like the ingestion pipeline and data-driven critics, that are necessary for at-scale operation.
 
 1.  **[From Grand Vision to Focused Experiment](/guides/cns-2.0-research-roadmap/chapter-1-vision-vs-experiment/)**: Narrowing the scope from the entire system to a single, testable hypothesis.
 2.  **[The Minimum Viable Experiment (MVE)](/guides/cns-2.0-research-roadmap/chapter-2-minimum-viable-experiment/)**: The precise experimental design for validating the Dialectical Synthesis Engine.
