@@ -9,9 +9,9 @@ sitemap:
   filename: sitemap.xml
 ---
 
-In this section, we will manually construct the two parent Structured Narrative Objects (SNOs) that represent the core arguments of Geosyncline Theory and Plate Tectonics. This process demonstrates how the abstract concepts of a narrative can be translated into the concrete data structures that CNS 2.0 operates on.
+This section establishes the **systematic SNO construction methodology** that serves as the template for DSPy automation. Each construction step demonstrates the quality control standards and structural requirements that must be maintained across n ≥ 30 automated synthesis pairs to ensure statistical validity.
 
-For this tutorial, we'll assume the existence of a hypothetical Python library, `cns_tools`, which provides the necessary classes for creating SNOs, Reasoning Graphs, and other components as defined in the **[CNS 2.0 Blueprint](/guides/cns-2.0-research-roadmap/blueprint/)**.
+The manual construction process provides the **quality benchmark** for automated generation, establishing the evidence standards, reasoning graph complexity, and hypothesis precision required for rigorous synthesis validation. This methodology will be encoded in DSPy optimization to maintain scientific rigor while scaling to statistically significant sample sizes.
 
 ### Setting Up the Environment
 
@@ -134,4 +134,51 @@ SNO_plate_tectonics = StructuredNarrativeObject(
 print("SNO_PlateTectonics created successfully.")
 ```
 
-With these two SNOs constructed, we now have two well-defined, opposing, and computationally tractable narratives. They are ready to be analyzed and fed into the synthesis engine, which we will cover in the next part of this tutorial.
+### DSPy Automation Template for Statistical Scaling
+
+This manual construction establishes the **quality control template** for DSPy-automated generation across n=30+ validation pairs:
+
+```python
+# DSPy signature for systematic SNO generation
+class StatisticalSNOGenerator(dspy.Signature):
+    """Generate high-quality opposing SNOs for statistical synthesis validation."""
+    
+    debate_specification = dspy.InputField(desc="Scientific debate with documented resolution and primary sources")
+    quality_requirements = dspy.InputField(desc="Evidence standards, reasoning complexity, hypothesis precision")
+    validation_framework = dspy.InputField(desc="Ground truth criteria and success metrics")
+    
+    sno_historical = dspy.OutputField(desc="SNO representing historical/minority position")
+    sno_modern = dspy.OutputField(desc="SNO representing accepted/majority position") 
+    quality_metrics = dspy.OutputField(desc="Evidence count, reasoning depth, source authenticity scores")
+    validation_criteria = dspy.OutputField(desc="Measurable synthesis success criteria")
+
+# Quality control parameters derived from manual prototype:
+QUALITY_STANDARDS = {
+    'min_evidence_sources': 3,  # Based on manual SNO construction
+    'min_reasoning_nodes': 5,   # Complexity threshold from prototype
+    'hypothesis_precision': 0.9, # Semantic clarity requirement
+    'source_authenticity': 0.95, # Historical accuracy standard
+    'dialectical_opposition': 0.8 # CScore threshold for valid pairs
+}
+
+# Domain expansion for statistical validation:
+VALIDATION_DOMAINS = [
+    {'domain': 'geology', 'debate': 'plate_tectonics_vs_geosyncline', 'prototype': True},
+    {'domain': 'biology', 'debate': 'darwin_vs_lamarck_evolution'},
+    {'domain': 'physics', 'debate': 'wave_vs_particle_light'},
+    {'domain': 'chemistry', 'debate': 'atomic_vs_continuous_matter'},
+    {'domain': 'cosmology', 'debate': 'big_bang_vs_steady_state'},
+    {'domain': 'medicine', 'debate': 'germ_vs_miasma_theory'},
+    {'domain': 'astronomy', 'debate': 'heliocentric_vs_geocentric'},
+    {'domain': 'genetics', 'debate': 'mendelian_vs_blending_inheritance'}
+]
+```
+
+**Statistical Validation Integration**:
+The manual prototype establishes quality benchmarks that DSPy automation must maintain:
+- **Evidence Density**: ≥ 3 primary sources per SNO (demonstrated in manual construction)
+- **Reasoning Complexity**: ≥ 5 interconnected claims per reasoning graph
+- **Hypothesis Precision**: Semantic clarity score ≥ 0.9 for automated validation
+- **Ground Truth Alignment**: Verifiable modern consensus for objective synthesis evaluation
+
+This template ensures that automated generation maintains the scientific rigor demonstrated in the manual prototype while scaling to the sample sizes required for statistical significance in CNS 2.0 validation.

@@ -9,21 +9,28 @@ sitemap:
   filename: sitemap.xml
 ---
 
-As the foundational CNS 2.0 papers argue, the "cognitive challenge of reconciling conflicting hypotheses remains unsolved" in artificial intelligence. While the core CNS 2.0 framework provides a powerful blueprint, realizing its full potential requires moving beyond the initial implementation to tackle next-generation problems in automated reasoning, privacy-preserving AI, and causal inference.
+Three fundamental technical limitations constrain CNS 2.0's scalability and robustness: heuristic logic evaluation, centralized architecture privacy constraints, and absent formal causal reasoning mechanisms. This research phase addresses these limitations through mathematically rigorous extensions that directly leverage the production system's modular design, extending the critic pipeline (Developer Guide Chapter 3), synthesis engine (Chapter 4), and DSPy optimization framework (Chapter 7) with advanced reasoning capabilities.
 
-This research thrust is dedicated to solving the deep technical challenges that separate the current prototype from a truly robust, scalable, and intelligent system. The goal is to address the critical limitations inherent in today's AI, including:
-- The opacity of "black-box" models.
-- The loss of structural information in simple vector representations.
-- The failure of naive averaging to produce genuine insight.
+**Statistical Validation Framework**: Controlled experimental designs with n≥1000 synthetic examples and n≥100 real-world test cases per thrust. Effect sizes measured using Cohen's d ≥ 0.5, statistical significance at α = 0.05, power ≥ 0.80. DSPy optimization framework (Developer Guide Chapter 7) generates statistically significant datasets through automated example generation, with validation protocols integrated into the critic pipeline's self-evaluation mechanisms (Chapter 3).
 
-The projects in this section represent significant, multi-year research efforts designed to produce fundamental breakthroughs. They are the key to transforming CNS 2.0 into a system that can "reconcile contradictory information into robust, verifiable insights," establishing a new standard for trustworthy AI.
+## Research Thrusts
 
-This section details three core advanced research thrusts:
+**[Graph Neural Networks for Logical Reasoning](./1-gnn-for-logical-reasoning/)** replaces heuristic-based logic evaluation with learned representations of argumentative structure, integrating graph neural architectures into the existing critic pipeline.
 
-1.  **[Graph Neural Networks for Logical Reasoning](./1-gnn-for-logical-reasoning/)**: Moving beyond heuristic-based logic critics to develop sophisticated, data-driven models capable of learning the deep structure of valid argumentation.
+*Implementation Mapping*: Extends `LogicCritic` class (Developer Guide Chapter 3) with GNN-based evaluation modules. DSPy optimization framework (Chapter 7) tunes GNN hyperparameters using system logical consistency metrics. Requires modification of critic pipeline architecture and integration with SNO data structures (Chapter 2).
 
-2.  **[Federated Learning and Privacy](./2-federated-learning-and-privacy/)**: Designing a CNS 2.0 architecture that can operate in a decentralized manner, allowing multiple organizations to collaborate on knowledge synthesis without sharing sensitive, proprietary source data.
+*Timeline*: 18-24 months. Prerequisites: Complete implementation deployment (Chapter 6), DSPy integration (Chapter 7), and 6-month operational validation of baseline critic pipeline performance.
 
-3.  **[Formal Methods and Causal Inference](./3-formal-methods-and-causal-inference/)**: Integrating rigorous logical systems and causal reasoning frameworks to elevate the system's output from plausible narratives to logically sound and causally aware insights.
+**[Federated Learning and Privacy](./2-federated-learning-and-privacy/)** transforms the centralized synthesis architecture into a distributed system enabling multi-organizational knowledge synthesis without proprietary data exposure.
 
-These research directions are essential for realizing the full potential of the CNS 2.0 vision. They aim to solve the core technical limitations of current systems and pave the way for a new generation of automated knowledge discovery tools.
+*Implementation Mapping*: Modifies `SynthesisEngine` (Developer Guide Chapter 4) and workflow manager (Chapter 5) for distributed operation. Integrates differential privacy mechanisms into SNO data structures (Chapter 2) and extends Celery-based task distribution (Chapter 6) with secure aggregation protocols. Requires cryptographic extensions to system integration framework.
+
+*Timeline*: 24-30 months. Prerequisites: Production deployment completion (Chapter 6), demonstrated scalability across ≥10 concurrent synthesis tasks, and security audit of baseline architecture.
+
+**[Formal Methods and Causal Inference](./3-formal-methods-and-causal-inference/)** integrates theorem proving and causal discovery algorithms into the synthesis process, extending the synthesis engine with formal verification capabilities.
+
+*Implementation Mapping*: Augments `SynthesisEngine` (Developer Guide Chapter 4) with formal logic solvers and causal inference libraries. Extends SNO data structures (Chapter 2) to include causal graph representations and integrates causal consistency checks into critic pipeline (Chapter 3). Requires integration with external theorem provers and causal discovery frameworks.
+
+*Timeline*: 30-36 months. Prerequisites: Successful GNN-based logic evaluation integration, demonstrated effectiveness of enhanced critic pipeline across ≥5 domains, and formal verification of baseline synthesis correctness.
+
+Each research thrust produces measurable improvements in synthesis quality, validated through system evaluation metrics and external benchmarking against established reasoning datasets. The modular architecture (Developer Guide Chapter 5) ensures seamless integration with core implementation components, creating progressively more sophisticated knowledge synthesis capabilities.

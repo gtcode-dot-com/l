@@ -9,26 +9,133 @@ sitemap:
   filename: sitemap.xml
 ---
 
-The successful completion of our Minimum Viable Experiment (MVE) and its publication will serve as a foundational, proof-of-concept milestone for the CNS 2.0 project. It is, however, just the first step. The limitations acknowledged in our first paper—specifically, the manual creation of input SNOs and the reliance on a heuristic-based critic—directly inform the next stages of our research.
+The successful completion of our Minimum Viable Experiment (MVE) establishes the foundational proof-of-concept for CNS 2.0. However, the acknowledged limitations—manual SNO creation and heuristic-based evaluation—define precise research objectives for scaling beyond controlled experimentation to autonomous operation.
 
-This chapter outlines the two critical research projects that form the rest of the **Foundational Work** phase. These projects must be tackled to move from the controlled environment of the MVE to the dynamic, at-scale vision of the full CNS 2.0 system. They are the essential prerequisites for the advanced research thrusts detailed in the subsequent sections of this roadmap.
+This chapter specifies two critical research projects comprising the **Foundational Work** phase, each with mathematical validation frameworks and statistical success criteria. These projects bridge the gap between our manual prototype and the self-optimizing system architecture detailed in the [Developer's Guide Chapter 7](/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/), establishing the technical prerequisites for advanced research phases.
 
-### Foundational Project #1: The Narrative Ingestion Pipeline
+## Foundational Project #1: The Narrative Ingestion Pipeline
 
-The most immediate limitation of our first study is the manual creation of parent SNOs. Our next research project will be to address this head-on by developing a robust, semi-automated **Narrative Ingestion Pipeline**. This pipeline is the gateway to the entire CNS ecosystem.
+The transition from manual SNO creation to automated ingestion represents a critical scaling bottleneck requiring rigorous experimental validation. This project transforms unstructured text into structured SNOs through DSPy-optimized extraction pipelines.
 
--   **The Challenge:** The task is to move from unstructured text (e.g., a PDF of a scientific paper) to a structured SNO, correctly identifying the central hypothesis, extracting the reasoning graph, and linking claims to evidence. This is a highly complex problem at the intersection of information extraction, argumentation mining, and natural language understanding.
--   **Proposed Methodology:** We plan to leverage modern Large Language Model (LLM) compilation frameworks like **[DSPy](https://github.com/stanfordnlp/dspy)**. Instead of relying on brittle, hand-crafted prompts, we will define the program's flow (e.g., `extract_hypothesis -> identify_claims -> build_graph`) and use DSPy to programmatically generate and optimize the complex, multi-step prompts required for this pipeline.
--   **Contribution:** A successful ingestion pipeline would represent a significant contribution to the fields of information extraction and argumentation mining and would unlock the ability to populate the CNS system with narratives at scale.
+### Mathematical Validation Framework
 
-### Foundational Project #2: From Heuristics to a Data-Driven Critic
+The ingestion pipeline's performance is quantified through a composite accuracy metric:
 
-Our initial MVE relies on a `CriticPipeline` built with transparent, explainable heuristics. While excellent for a controlled experiment, these heuristics lack the nuance and learning capacity to evaluate the complex, diverse SNOs that a scaled-up system will produce. The next foundational project is to replace the heuristic logic and grounding critics with more powerful, data-driven models.
+$$\text{Ingestion}_{\text{accuracy}} = \frac{1}{3}\left(\text{Precision}_H + \text{Recall}_C + \text{F1}_G\right)$$
 
--   **The Challenge:** Evaluating the logical coherence of a reasoning graph and the subtle relationship between a claim and its evidence requires deep semantic understanding. This is a perfect task for specialized machine learning models.
--   **Proposed Methodology:** Our research will focus on two areas:
-    1.  **Grounding Critic:** Fine-tuning a Natural Language Inference (NLI) model to produce plausibility scores between claims and evidence snippets.
-    2.  **Logic Critic:** Developing a Graph Neural Network (GNN) to assess the structural integrity of reasoning graphs. This requires a significant sub-project focused on creating a large, labeled dataset of valid and fallacious reasoning graphs.
--   **Contribution:** Creating these specialized critic models represents a major research effort. A successful GNN-based logic critic, in particular, would be a powerful tool for automated reasoning and a significant advance over our initial heuristic models.
+where:
+- $\text{Precision}_H$: Hypothesis extraction precision against expert-labeled ground truth
+- $\text{Recall}_C$: Claim identification recall across reasoning graph vertices  
+- $\text{F1}_G$: F1-score for reasoning graph edge reconstruction
 
-With a robust ingestion pipeline and a powerful, data-driven critic pipeline, the foundational components of the CNS 2.0 architecture will be in place. This will allow us to finally begin to approach the "Grand Vision": running the full, autonomous CNS 2.0 system at scale and tackling the advanced research questions outlined in the next sections.
+**Statistical Success Criteria:**
+- Minimum composite accuracy: 0.75 (p < 0.05, n ≥ 200 documents)
+- Inter-annotator agreement (Cohen's κ) ≥ 0.70 for validation dataset
+- Effect size (Cohen's d) ≥ 0.8 compared to baseline prompt engineering
+
+### DSPy Optimization Integration
+
+The pipeline leverages the [DSPy compilation framework](/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/) through programmatic prompt optimization:
+
+```python
+class DocumentToSNO(dspy.Signature):
+    """Extracts structured narrative components from academic text."""
+    document_text: str = dspy.InputField()
+    central_hypothesis: str = dspy.OutputField()
+    claims: List[ExtractedClaim] = dspy.OutputField()
+    reasoning_edges: List[ReasoningEdge] = dspy.OutputField()
+```
+
+The optimization process uses our [multi-component critic pipeline](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/) as the objective function, creating a self-improving extraction system where ingestion quality is measured by the system's own evaluation standards.
+
+### Resource Requirements and Timeline
+
+**Technical Prerequisites:**
+- DSPy framework integration (2 developer-months)
+- Validation dataset creation: 500 expert-annotated documents (6 researcher-months)
+- Multi-model evaluation infrastructure (1 developer-month)
+
+**Estimated Timeline:** 12 months
+- Months 1-3: Dataset creation and annotation protocol establishment
+- Months 4-8: DSPy pipeline development and initial optimization
+- Months 9-12: Statistical validation and performance benchmarking
+
+**Computational Resources:**
+- Training: 100 GPU-hours for DSPy optimization across model variants
+- Evaluation: 50 GPU-hours for statistical significance testing
+
+## Foundational Project #2: From Heuristics to a Data-Driven Critic
+
+The evolution from heuristic-based evaluation to learned models requires systematic validation of improved performance across logical coherence and evidential grounding assessment. This project replaces the transparent heuristics detailed in [Developer's Guide Chapter 3](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/) with statistically validated machine learning models.
+
+### Mathematical Validation Framework
+
+**Grounding Critic Enhancement:**
+The NLI-based grounding model performance is measured through:
+
+$$\text{Grounding}_{\text{improvement}} = \text{AUC}_{\text{NLI}} - \text{AUC}_{\text{heuristic}}$$
+
+**Statistical Success Criteria:**
+- Minimum AUC improvement: 0.10 (p < 0.01, n ≥ 1000 claim-evidence pairs)
+- Cross-validation stability: σ(AUC) ≤ 0.02 across 5-fold validation
+- Calibration error ≤ 0.05 for confidence score reliability
+
+**Logic Critic Enhancement:**
+The GNN-based logic model validation follows:
+
+$$\text{Logic}_{\text{accuracy}} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}$$
+
+where classifications distinguish valid vs. fallacious reasoning graphs.
+
+**Statistical Success Criteria:**
+- Minimum classification accuracy: 0.80 (p < 0.001, n ≥ 2000 labeled graphs)
+- Precision ≥ 0.75 for fallacy detection (minimizing false positives)
+- Recall ≥ 0.85 for valid reasoning identification
+
+### DSPy Self-Optimization Integration
+
+The enhanced critics integrate with the [self-optimizing synthesis loop](/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/) where the improved evaluation models serve as more sophisticated objective functions for DSPy compilation:
+
+```python
+def enhanced_critic_pipeline_metric(example, pred, trace=None) -> float:
+    """Uses learned NLI and GNN models as DSPy optimization targets."""
+    candidate_sno = create_sno_from_prediction(pred)
+    
+    # Enhanced grounding evaluation
+    nli_grounding_score = nli_grounding_critic.evaluate(candidate_sno)
+    
+    # Enhanced logic evaluation  
+    gnn_logic_score = gnn_logic_critic.evaluate(candidate_sno)
+    
+    # Weighted combination for DSPy optimization
+    return 0.4 * nli_grounding_score + 0.4 * gnn_logic_score + 0.2 * novelty_score
+```
+
+This creates a feedback loop where synthesis quality improves through optimization against increasingly sophisticated evaluation criteria.
+
+### Resource Requirements and Timeline
+
+**Technical Prerequisites:**
+- **Grounding Critic:** NLI model fine-tuning infrastructure (1 developer-month)
+- **Logic Critic:** GNN training pipeline and graph dataset creation (4 developer-months)
+- **Integration:** DSPy metric integration and validation framework (2 developer-months)
+
+**Dataset Requirements:**
+- **Grounding:** 5,000 expert-labeled claim-evidence pairs (8 researcher-months)
+- **Logic:** 3,000 annotated reasoning graphs with validity labels (12 researcher-months)
+
+**Estimated Timeline:** 18 months
+- Months 1-6: Dataset creation and annotation protocols
+- Months 7-12: Model development and initial training
+- Months 13-18: Statistical validation and DSPy integration
+
+**Computational Resources:**
+- **NLI Training:** 200 GPU-hours for fine-tuning and hyperparameter optimization
+- **GNN Training:** 500 GPU-hours for architecture search and training
+- **Validation:** 100 GPU-hours for statistical significance testing
+
+### Integration with System Architecture
+
+The enhanced critic models integrate seamlessly with the existing [multi-component pipeline architecture](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/), maintaining the transparent, weighted evaluation framework while dramatically improving individual component accuracy. This preserves the system's explainability while achieving the performance necessary for autonomous operation at scale.
+
+The completion of both foundational projects establishes the technical infrastructure for advanced research phases, enabling autonomous CNS 2.0 operation with statistically validated performance guarantees across the complete knowledge discovery pipeline.
