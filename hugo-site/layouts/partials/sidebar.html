@@ -38,18 +38,18 @@
             </h3>
             {{ if $isResearchGuide }}
             <ul class="guide-menu-list">
+                {{/* Loop through the top-level pages of the research guide */}}
                 {{ range $researchGuide.Pages.ByWeight }}
-                    {{ $isCurrentSection := or (eq . $currentPage) ($currentPage.IsDescendant .) }}
+                    {{/* Check if the current page IS this page or is a child of it */}}
+                    {{ $isCurrentOrDescendant := or (eq . $currentPage) ($currentPage.IsDescendant .) }}
                     <li class="guide-menu-item {{ if .IsSection }}is-section{{ end }}">
-                        <a href="{{ .RelPermalink }}" class="{{ if and .IsSection $isCurrentSection }}active-section{{ end }} {{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
-                        {{ if .IsSection }}
-                            <ul class="guide-menu-list-nested">
-                            {{ range .Pages.ByWeight }}
-                                <li class="guide-menu-item">
-                                    <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
-                                </li>
-                            {{ end }}
-                            </ul>
+                        <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }} {{ if and .IsSection $isCurrentOrDescendant }}active-section{{ end }}">
+                            {{ .Title }}
+                        </a>
+                        
+                        {{/* If this item is a section AND the current page is inside it, render its children recursively */}}
+                        {{ if and .IsSection $isCurrentOrDescendant }}
+                            {{ partial "guide-menu-recursive.html" (dict "context" . "currentPage" $currentPage) }}
                         {{ end }}
                     </li>
                 {{ end }}
