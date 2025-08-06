@@ -9,6 +9,8 @@ sitemap:
   filename: sitemap.xml
 ---
 
+This advanced tutorial demonstrates how a single, well-defined case study is used as a 'statistical prototype' to establish the methodology for a large-scale, scientifically rigorous validation of the CNS 2.0 synthesis engine. It is intended for researchers who need to understand the project's experimental design and validation framework.
+
 ## Statistical Prototype Design: Establishing the Mathematical Foundation
 
 This tutorial establishes the **statistical prototype** for CNS 2.0 validation—a single, rigorously constructed example that demonstrates the mathematical framework and methodology required for scaling to statistically significant validation. The plate tectonics vs. geosyncline debate provides the ideal prototype case because it offers verifiable ground truth, clear dialectical opposition, and documented scientific resolution.

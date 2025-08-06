@@ -29,9 +29,9 @@ The engine's core hypothesis posits that structured dialectical reasoning—oper
 
 Experimental validation implements the standard Experimental Validation Protocol with the following specifications:
 
-**Sample Size Calculation**: Power analysis targeting Cohen's d = 0.8 effect size with α = 0.05 and β = 0.20 requires n ≥ 26 synthesis pairs per experimental condition. Conservative estimation accounting for potential attrition establishes n = 35 pairs per condition.
+**Sample Size Calculation**: To ensure our experiment can reliably detect a meaningful improvement, we first perform a power analysis. Targeting a large effect size (Cohen's d = 0.8) with standard significance (α = 0.05) and power (80%, or β = 0.20) levels, we determined that a minimum of n ≥ 26 synthesis pairs are required per experimental condition. A more conservative estimate of n = 35 pairs per condition was chosen to account for any potential data issues.
 
-**Statistical Measures**: Primary outcomes include synthesis quality scores (0-100 scale), logical coherence ratings (5-point Likert), and novel insight generation counts. Effect sizes will be reported with 95% confidence intervals, and significance testing will employ appropriate parametric or non-parametric methods based on distribution characteristics.
+**Statistical Measures**: To quantify our findings, we will use several key statistical measures. Primary outcomes include synthesis quality scores, logical coherence ratings, and counts of novel insights. To understand the magnitude of our findings, effect sizes will be reported with 95% confidence intervals (giving a range of plausible values for the true effect). Standard significance testing will be used to determine the probability that our results are not due to random chance.
 
 **Implementation Alignment**: The experimental design directly leverages the ChiralPairDetector and RelationalMetrics components detailed in the developer guide Chapter 4, ensuring seamless translation from research validation to production deployment. The DSPy optimization framework from Chapter 7 provides the programmatic infrastructure for systematic prompt refinement and performance optimization.
 

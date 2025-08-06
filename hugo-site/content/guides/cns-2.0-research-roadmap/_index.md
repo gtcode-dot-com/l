@@ -15,7 +15,7 @@ In complex fields like scientific research and intelligence analysis, profession
 
 The CNS 2.0 framework represents a paradigm shift in automated knowledge synthesis, employing dialectical reasoning mechanisms to generate coherent narratives from disparate information sources. This research program establishes the theoretical foundations, experimental validation protocols, and implementation pathways necessary to advance the field of computational narrative synthesis.
 
-The research architecture encompasses four sequential phases, each incorporating rigorous statistical validation with predetermined effect sizes (Cohen's d ≥ 0.5), statistical power (β ≥ 0.80), and significance thresholds (α = 0.05). The experimental design employs the Dialectical Synthesis Engine as the core validation mechanism, with automated example generation through DSPy optimization ensuring statistically significant sample sizes across all research thrusts.
+The research architecture encompasses four sequential phases. To ensure every phase is evaluated with scientific rigor, each incorporates a standard statistical validation framework. This framework uses predetermined targets for key metrics—such as effect sizes (we aim for a meaningful 'medium' effect of Cohen's d ≥ 0.5), statistical power (an 80% chance to detect a real effect), and significance thresholds (a 5% chance of a false positive). The experimental design employs the Dialectical Synthesis Engine as the core validation mechanism, with automated example generation through DSPy optimization ensuring statistically significant sample sizes across all research thrusts.
 
 ### Phase 1: Foundational Validation Framework
 

@@ -17,5 +17,6 @@ These guides are designed for researchers and practitioners who want to move fro
 
 ## Available Tutorials
 
--   **[Plate Tectonic Synthesis](./plate-tectonics-synthesis/)**: A case study using the historical scientific debate between Plate Tectonics and Geosyncline theory to test narrative synthesis, implementing the Minimum Viable Experiment from the research roadmap.
+-   **[Quick Start: A Hands-On Synthesis Example](./quick-start-plate-tectonics/)**: A practical, step-by-step walkthrough of the core synthesis workflow. This is the best starting point for developers and practitioners.
+-   **[Advanced Tutorial: Statistical Validation of a Synthesis](./plate-tectonics-synthesis/)**: An in-depth look at the experimental design and statistical validation framework for a synthesis, using the Plate Tectonics case study as a 'statistical prototype'. Intended for researchers.
 -   **[DSPy Self-Optimization](./dspy-self-optimization/)**: Learn how to move from brittle prompt engineering to robust, programmatic optimization using the DSPy framework to create a self-improving CNS system.

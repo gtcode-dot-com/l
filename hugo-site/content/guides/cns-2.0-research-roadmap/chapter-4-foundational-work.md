@@ -29,9 +29,10 @@ where:
 - $\text{F1}_G$: F1-score for reasoning graph edge reconstruction
 
 **Statistical Success Criteria:**
-- Minimum composite accuracy: 0.75 (p < 0.05, n ≥ 200 documents)
-- Inter-annotator agreement (Cohen's κ) ≥ 0.70 for validation dataset
-- Effect size (Cohen's d) ≥ 0.8 compared to baseline prompt engineering
+To ensure our automated pipeline is reliable, we've set clear, measurable targets.
+- **Minimum composite accuracy: 0.75**: The pipeline must be correct at least 75% of the time, a result that must be statistically significant (p < 0.05) based on a test of at least 200 documents.
+- **Inter-annotator agreement (Cohen's κ) ≥ 0.70**: This measures the level of agreement between our automated system and human experts, with κ ≥ 0.70 indicating substantial agreement.
+- **Effect size (Cohen's d) ≥ 0.8**: We are aiming for a large (d ≥ 0.8) improvement over simpler, non-optimized approaches.
 
 ### DSPy Optimization Integration
 
@@ -76,9 +77,9 @@ The NLI-based grounding model performance is measured through:
 $$\text{Grounding}_{\text{improvement}} = \text{AUC}_{\text{NLI}} - \text{AUC}_{\text{heuristic}}$$
 
 **Statistical Success Criteria:**
-- Minimum AUC improvement: 0.10 (p < 0.01, n ≥ 1000 claim-evidence pairs)
-- Cross-validation stability: σ(AUC) ≤ 0.02 across 5-fold validation
-- Calibration error ≤ 0.05 for confidence score reliability
+- **Minimum AUC improvement: 0.10**: The new model must be at least 10% better than the old one, an improvement that is highly statistically significant (p < 0.01) based on a large dataset.
+- **Cross-validation stability: σ(AUC) ≤ 0.02**: This ensures the model's performance is consistent and not a fluke, by checking that the performance variation is low across different subsets of the data.
+- **Calibration error ≤ 0.05**: This ensures that when the model says it's "90% confident," it's correct about 90% of the time, making its confidence scores reliable.
 
 **Logic Critic Enhancement:**
 The GNN-based logic model validation follows:
@@ -88,9 +89,9 @@ $$\text{Logic}_{\text{accuracy}} = \frac{\text{TP} + \text{TN}}{\text{TP} + \tex
 where classifications distinguish valid vs. fallacious reasoning graphs.
 
 **Statistical Success Criteria:**
-- Minimum classification accuracy: 0.80 (p < 0.001, n ≥ 2000 labeled graphs)
-- Precision ≥ 0.75 for fallacy detection (minimizing false positives)
-- Recall ≥ 0.85 for valid reasoning identification
+- **Minimum classification accuracy: 0.80**: The model must correctly identify valid vs. fallacious reasoning at least 80% of the time, with very high statistical significance (p < 0.001) on a large dataset.
+- **Precision ≥ 0.75 for fallacy detection**: When the model flags an argument as fallacious, it must be correct at least 75% of the time, which helps avoid incorrectly dismissing valid reasoning.
+- **Recall ≥ 0.85 for valid reasoning identification**: The model must successfully identify at least 85% of all the genuinely valid reasoning graphs.
 
 ### DSPy Self-Optimization Integration
 

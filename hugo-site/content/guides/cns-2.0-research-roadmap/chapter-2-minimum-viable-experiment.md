@@ -17,11 +17,13 @@ The prototype validation establishes our primary research hypothesis with measur
 
 **H₁:** The CNS Dialectical Synthesis Engine generates syntheses with significantly higher accuracy scores than baseline methods (Cohen's d ≥ 0.8, p < 0.05).
 
+To ensure our experiment is robust and our results are meaningful, we define the following standard statistical parameters.
+
 **Statistical Parameters:**
-- **Effect Size Target:** Cohen's d = 0.8 (large effect)
-- **Statistical Power:** β = 0.80 (80% power to detect true effects)
-- **Significance Level:** α = 0.05 (5% Type I error rate)
-- **Minimum Sample Size:** n = 26 historical debates (calculated via power analysis for two-sample t-test)
+- **Effect Size Target:** Cohen's d = 0.8 (large effect). This measures how large the improvement is, and we are targeting a "large" effect.
+- **Statistical Power:** 1-β = 0.80 (80% power). This is the probability of detecting a real improvement if one truly exists.
+- **Significance Level:** α = 0.05 (5% Type I error rate). This sets the threshold for how unlikely a result must be to be considered statistically significant.
+- **Minimum Sample Size:** n = 26 historical debates. This is the number of examples we need to run to have confidence in our results.
 
 ### 2. Manual Prototype: Plate Tectonics Validation Template
 
@@ -105,7 +107,7 @@ The evaluation framework scales from single-case validation to population-level 
 
 #### Mathematical Formulation
 
-**Sample Size Calculation:**
+To ensure our experiment is scientifically valid, we must first calculate the minimum number of examples needed to detect a meaningful result. The following standard power analysis formula is used to determine this sample size:
 ```
 n = 2 × (z_α/2 + z_β)² × σ² / δ²
 where:
@@ -117,6 +119,7 @@ where:
 ```
 
 **Effect Size Interpretation:**
+Effect size helps us understand the practical importance of our results. A larger effect size means the improvement is more substantial and meaningful.
 - **Small Effect:** d = 0.2 (synthesis marginally better than baseline)
 - **Medium Effect:** d = 0.5 (synthesis moderately superior)
 - **Large Effect:** d = 0.8 (synthesis substantially superior, target threshold)

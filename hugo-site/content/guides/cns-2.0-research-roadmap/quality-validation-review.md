@@ -72,6 +72,7 @@ This validation review assesses the CNS 2.0 Research Roadmap refinement against 
 **Assessment Findings**:
 
 **Sample Size Calculations**:
+To ensure our experiments are scientifically valid, we must first calculate the minimum number of examples needed to detect a meaningful result. The following standard power analysis formula is used to determine this sample size:
 ```
 n = 2 × (z_α/2 + z_β)² × σ² / δ²
 - α = 0.05 (significance level)
@@ -81,10 +82,11 @@ n = 2 × (z_α/2 + z_β)² × σ² / δ²
 ```
 
 **Statistical Measures Specified**:
-- Effect sizes with 95% confidence intervals
-- Statistical power calculations (β ≥ 0.80)
-- Significance thresholds (α = 0.05)
-- Appropriate test selection (t-tests, ANOVA, non-parametric alternatives)
+To ensure the results are robust, the research plan specifies a full suite of statistical measures.
+- **Effect sizes with 95% confidence intervals**: This tells us the magnitude and precision of the observed improvements.
+- **Statistical power calculations (1-β ≥ 0.80)**: This confirms our experiments have a high probability (typically 80%) of detecting an effect if it's actually there.
+- **Significance thresholds (α = 0.05)**: This sets the standard for what we consider a "statistically significant" result, minimizing the chance of random fluctuations being misinterpreted.
+- **Appropriate test selection (t-tests, ANOVA, non-parametric alternatives)**: This ensures that the right statistical tool is used for the specific research question and data type.
 
 **Validation Result**: ✅ **PASSED** - Mathematical formulations are scientifically sound and clearly presented.
 
