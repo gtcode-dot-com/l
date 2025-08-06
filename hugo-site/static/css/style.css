@@ -216,11 +216,21 @@ a:hover {
     margin-right: auto;
 }
 
+.article-nav {
+    background-color: #e8f0fc;
+}
+
+div.article-content > h2:first-child {
+  /* Your styles here */
+  margin-top: 0;
+}
+
 .article-content {
-    max-width: 800px;
+    max-width: 1125px;
     margin: 0 auto;
-    padding: 1.25rem 2rem 3rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     line-height: 1.7;
+    text-align: justify;
 }
 
 .article-content > * + * {
@@ -630,7 +640,7 @@ th {
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin: 2rem auto;
-    max-width: 800px;
+    max-width: 1125px;
 }
 
 .chapter-summary h3 {
