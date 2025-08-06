@@ -11,7 +11,7 @@ sitemap:
 
 In complex fields like scientific research and intelligence analysis, professionals face a constant challenge: how to make sense of incomplete, uncertain, and often contradictory information. The Chiral Narrative Synthesis (CNS) 2.0 framework was designed to address this challenge.
 
-> **The Foundational Document:** This research roadmap is designed to execute the vision laid out in the CNS 2.0 blueprint. For full architectural details, please refer to the paper: **[CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf)**.
+> **The Foundational Document:** This research roadmap is designed to execute the vision laid out in the CNS 2.0 blueprint. For full architectural details, please refer to the paper: **[CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf)**.
 
 The CNS 2.0 framework represents a paradigm shift in automated knowledge synthesis, employing dialectical reasoning mechanisms to generate coherent narratives from disparate information sources. This research program establishes the theoretical foundations, experimental validation protocols, and implementation pathways necessary to advance the field of computational narrative synthesis.
 

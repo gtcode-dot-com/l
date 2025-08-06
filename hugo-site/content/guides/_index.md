@@ -10,7 +10,7 @@ sitemap:
 
 Chiral Narrative Synthesis (CNS) 2.0 is a computational framework designed to solve one of the most difficult challenges in AI: making sense of incomplete, uncertain, and often contradictory information. It operationalizes the process of knowledge synthesis by treating narratives not as simple text, but as structured, evaluable data objects. This allows an AI to reason about arguments, weigh evidence, and synthesize conflicting viewpoints into a more robust, nuanced, and useful understanding.
 
-> **Read the Blueprint:** For a complete academic definition of the CNS 2.0 architecture, please see the foundational paper: **[CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf)**.
+> **Read the Blueprint:** For a complete academic definition of the CNS 2.0 architecture, please see the foundational paper: **[CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf)**.
 
 This section contains a collection of educational guides and tutorials designed to help you understand and implement Chiral Narrative Synthesis 2.0.
 
