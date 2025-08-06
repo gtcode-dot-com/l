@@ -219,7 +219,7 @@ a:hover {
 .article-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 0 2rem 3rem 2rem;
     line-height: 1.7;
 }
 
@@ -230,7 +230,7 @@ a:hover {
 .article-content h2 {
     font-size: 1.875rem;
     color: #1e293b;
-    margin-top: 3rem;
+    margin-top: 1.25rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #e2e8f0;
