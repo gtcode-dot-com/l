@@ -1,7 +1,7 @@
 ---
 title: "Chapter 4: Building on the Foundation"
 description: "Outlining the immediate research projects that build upon the MVE to enable the broader research vision."
-weight: 5
+weight: 23
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

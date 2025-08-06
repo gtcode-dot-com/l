@@ -1,7 +1,7 @@
 ---
 title: "Project 3: Formal Methods & Causal Inference"
 description: "Elevating CNS 2.0's reasoning capabilities by integrating formal logical systems and causal reasoning frameworks."
-weight: 9
+weight: 33
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

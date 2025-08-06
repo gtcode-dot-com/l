@@ -1,7 +1,7 @@
 ---
 title: "Chapter 1: From Grand Vision to Focused Experiment"
 description: "Establishing experimental boundaries and statistical validation frameworks for the CNS 2.0 dialectical synthesis engine."
-weight: 2
+weight: 20
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

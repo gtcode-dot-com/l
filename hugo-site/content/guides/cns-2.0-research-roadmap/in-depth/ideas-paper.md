@@ -1,7 +1,7 @@
 ---
 title: "CNS 2.0 Ideas Paper"
 description: "Ideas Paper - CNS 2.0: A Computational Framework for Chiral Narrative Synthesis in Automated Knowledge Discovery"
-weight: 32
+weight: 14
 lastmod: "2025-08-06"
 sitemap:
   changefreq: monthly

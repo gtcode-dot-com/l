@@ -1,7 +1,7 @@
 ---
 title: "Annotated Bibliography"
 description: "A curated list of the foundational papers and research that underpin the Chiral Narrative Synthesis 2.0 project."
-weight: 31 # After Guides
+weight: 16
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

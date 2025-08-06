@@ -1,7 +1,7 @@
 ---
 title: "Project 1: Bias, Fairness, and Accountability"
 description: "Developing robust technical and policy frameworks to detect and mitigate bias, ensure fairness, and establish clear accountability for the CNS 2.0 system."
-weight: 15
+weight: 52
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

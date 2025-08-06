@@ -1,7 +1,7 @@
 ---
 title: "Ethics & Responsibility"
 description: "An overview of the ethical principles and frameworks guiding the responsible development of CNS 2.0."
-weight: 20 # To place it after Foundations
+weight: 50
 sitemap:
   changefreq: monthly
   priority: 0.7
