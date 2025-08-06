@@ -1,7 +1,7 @@
 ---
 title: "Dialectical Reasoning Mechanisms"
 description: "Dialectical Reasoning Mechanisms for Coherent Narrative Generation from Disparate Information Sources: A Comprehensive Review of Systems, Research, and Prior Art"
-weight: 7
+weight: 31
 lastmod: "2025-08-05"
 sitemap:
   changefreq: monthly
