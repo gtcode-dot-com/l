@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# Chapter 2: SNO Foundations
-
 ## Why Structured Narrative Objects?
 
 At the heart of CNS 2.0 is the **Structured Narrative Object (SNO)**. To understand its importance, we must first recognize the limitations of simpler representations. Traditional vector embeddings, while powerful for capturing semantic similarity, are insufficient for dialectical reasoning because they discard three critical elements:

@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# Chapter 1: Introduction to CNS 2.0
-
 ## The Challenge: Synthesizing Contradictory Knowledge
 
 The foundational research proposal, "CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis," opens by identifying a fundamental challenge in artificial intelligence:

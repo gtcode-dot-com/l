@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# Chapter 4: The Synthesis Engine & Relational Metrics
-
 ## Beyond Averaging: The Dialectical Workflow
 
 The creative core of CNS 2.0 is its ability to generate genuinely new knowledge from conflict. This is achieved through a sophisticated, four-step dialectical workflow that forms the heart of the Synthesis Engine.

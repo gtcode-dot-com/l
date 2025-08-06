@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# Chapter 5: System Integration
-
 ## Assembling the Autonomous System
 
 Now that we've implemented the core components—SNOs, Critics, and the Synthesis Engine—it's time to integrate them into a cohesive, stateful, and autonomous system. This chapter focuses on building the **System Operational Loop** described in Section 3.3 of the research proposal. We will implement the operational workflow that allows the CNS 2.0 system to run continuously, processing information and refining its knowledge base over time.

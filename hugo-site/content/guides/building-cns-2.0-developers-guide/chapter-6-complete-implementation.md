@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# Chapter 6: Production Deployment and Scaling
-
 ## From Prototype to Production
 
 In Chapter 5, we built a fully functional, single-process CNS system using `asyncio`. This is an excellent architecture for development and testing. This chapter answers the critical next question: **"How do I run this as a robust, scalable, production-grade service?"**

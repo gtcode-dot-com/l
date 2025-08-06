@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# CNS 2.0 Tutorials
-
 Welcome to the tutorials section for Chiral Narrative Synthesis 2.0. This section provides practical, hands-on walkthroughs of key CNS 2.0 applications, from building Structured Narrative Objects (SNOs) from scratch to running a full-fledged synthesis experiment.
 
 These guides are designed for researchers and practitioners who want to move from theory to practice. Each tutorial will provide you with the conceptual background, code examples, and step-by-step instructions needed to replicate and build upon our core research.

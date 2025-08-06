@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# Chapter 3: The Multi-Component Critic Pipeline
-
 ## Why a Multi-Component Critic? The Problem with "Oracles"
 
 Many AI systems rely on opaque, monolithic "oracle" models for evaluation. These models produce a score but offer no insight into their reasoning, making them difficult to debug, trust, or adapt. If an oracle gives a low score, is it because the input was factually wrong, illogical, or simply unoriginal? It's impossible to know.

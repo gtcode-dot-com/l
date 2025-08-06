@@ -9,8 +9,6 @@ sitemap:
   filename: sitemap.xml
 ---
 
-# Chapter 7: Advanced Optimization with DSPy
-
 ## From Brittle Prompting to Robust Programming
 
 Throughout this guide, we've often assumed a developer would write fixed, static prompts to instruct the LLMs in our system. This "prompt engineering" is the standard way of working with LLMs, but it has critical weaknesses: a prompt that works well on one model (e.g., GPT-4) may fail completely on another (e.g., Llama 3), and optimizing it is a manual, time-consuming, and often unscientific process of trial and error.
