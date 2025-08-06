@@ -8,7 +8,9 @@ sitemap:
   filename: sitemap.xml
 ---
 
-Welcome to the comprehensive developer's guide for implementing **Chiral Narrative Synthesis (CNS) 2.0** in Python. This guide will take you on a progressive journey, translating the groundbreaking research paper, *"CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis,"* from a formal blueprint into a robust, working system.
+Chiral Narrative Synthesis (CNS) is a computational framework for reasoning through conflicting arguments to arrive at a coherent understanding. It treats narratives not as simple text, but as structured, mathematically evaluable data objects, allowing an AI to weigh evidence, analyze logical structures, and synthesize opposing viewpoints into a more robust and nuanced conclusion.
+
+Welcome to the comprehensive developer's guide for implementing **Chiral Narrative Synthesis (CNS) 2.0** in Python. This guide will take you on a progressive journey, translating the groundbreaking research paper, **[CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf)**, from a formal blueprint into a robust, working system.
 
 ### The Core Challenge: Moving Beyond Information Retrieval
 

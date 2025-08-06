@@ -9,9 +9,11 @@ sitemap:
   filename: sitemap.xml
 ---
 
-The Chiral Narrative Synthesis (CNS) 2.0 framework represents a paradigm shift in automated knowledge synthesis, employing dialectical reasoning mechanisms to generate coherent narratives from disparate information sources. This research program establishes the theoretical foundations, experimental validation protocols, and implementation pathways necessary to advance the field of computational narrative synthesis.
+In complex fields like scientific research and intelligence analysis, professionals face a constant challenge: how to make sense of incomplete, uncertain, and often contradictory information. The Chiral Narrative Synthesis (CNS) 2.0 framework was designed to address this challenge.
 
-> **Implementation Integration:** Technical specifications and validation protocols reference the [Building CNS 2.0: A Developer's Guide](/guides/building-cns-2.0-developers-guide/) for reproducible experimental implementations.
+> **The Foundational Document:** This research roadmap is designed to execute the vision laid out in the CNS 2.0 blueprint. For full architectural details, please refer to the paper: **[CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf)**.
+
+The CNS 2.0 framework represents a paradigm shift in automated knowledge synthesis, employing dialectical reasoning mechanisms to generate coherent narratives from disparate information sources. This research program establishes the theoretical foundations, experimental validation protocols, and implementation pathways necessary to advance the field of computational narrative synthesis.
 
 The research architecture encompasses four sequential phases, each incorporating rigorous statistical validation with predetermined effect sizes (Cohen's d ≥ 0.5), statistical power (β ≥ 0.80), and significance thresholds (α = 0.05). The experimental design employs the Dialectical Synthesis Engine as the core validation mechanism, with automated example generation through DSPy optimization ensuring statistically significant sample sizes across all research thrusts.
 
