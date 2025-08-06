@@ -1,7 +1,7 @@
 ---
 title: "Ethical, Legal, and Societal Research"
 description: "A proactive research program to investigate the ethical implications of CNS 2.0 and develop frameworks for its responsible deployment."
-weight: 14
+weight: 51
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

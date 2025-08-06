@@ -1,7 +1,7 @@
 ---
 title: "Dialectical Reasoning Templates"
 description: "A deep dive into the structured reasoning templates used by the CNS 2.0 synthesis engine to ensure logical consistency and mitigate hallucination."
-weight: 31
+weight: 13
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

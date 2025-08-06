@@ -1,7 +1,7 @@
 ---
 title: "CNS 2.0: A Practical Blueprint"
 description: "The canonical whitepaper detailing the architecture of Chiral Narrative Synthesis 2.0."
-weight: 30 # To place it after Ethics
+weight: 15
 sitemap:
   changefreq: monthly
   priority: 0.8
