@@ -30,6 +30,6 @@ As detailed in **[Chapter 7 of the Developer's Guide](/guides/building-cns-2.0-d
 
 The DSPy compiler then takes over, automatically experimenting with different prompts, few-shot examples, and reasoning strategies to find the optimal "program" that maximizes the metric on the given examples.
 
-This is the core of the self-optimization loop described in the CNS 2.0 [Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md). By using our own `CriticPipeline` as the optimization metric, we can teach the synthesizer to generate SNOs that our system already considers to be high-quality.
+This is the core of the self-optimization loop described in the CNS 2.0 [Ideas Paper](/guides/cns-2.0-research-roadmap/in-depth/ideas-paper/). By using our own `CriticPipeline` as the optimization metric, we can teach the synthesizer to generate SNOs that our system already considers to be high-quality.
 
 In this tutorial, we will walk through a concrete example of how to use DSPy to build a self-optimizing synthesis module for CNS 2.0. We will move from a manually engineered prompt to a robust, optimized program that is more accurate, reliable, and adaptable.

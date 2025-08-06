@@ -16,7 +16,7 @@ For a system like CNS 2.0, which must be reliable and transparent, this is unacc
 
 ### The Solution: Structured Reasoning Templates
 
-To solve this, CNS 2.0 employs **structured reasoning templates** for its dialectical synthesis phase. As detailed in Section 4.4 of our [Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md), these templates are sophisticated, meta-prompts that guide the LLM through a formal, step-by-step dialectical process.
+To solve this, CNS 2.0 employs **structured reasoning templates** for its dialectical synthesis phase. As detailed in Section 4.4 of our [Ideas Paper](/guides/cns-2.0-research-roadmap/in-depth/ideas-paper/), these templates are sophisticated, meta-prompts that guide the LLM through a formal, step-by-step dialectical process.
 
 By forcing the LLM to "show its work" within a pre-defined logical structure, we achieve two critical goals:
 1.  **Improved Reliability:** The template constrains the LLM, reducing the likelihood of logical fallacies and ensuring that all parts of the problem (thesis, antithesis, shared evidence) are explicitly addressed.

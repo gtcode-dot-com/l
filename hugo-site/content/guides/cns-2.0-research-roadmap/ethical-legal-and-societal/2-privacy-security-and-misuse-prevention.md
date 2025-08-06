@@ -19,7 +19,7 @@ This creates a profound ethical responsibility to address three key challenges:
 
 ### The Vision: A Secure System with Safeguards by Design
 
-This research project aims to develop a multi-layered, "defense-in-depth" strategy for privacy, security, and misuse prevention. Our vision, as detailed in the [Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md) (Sec 8.5), is a system where safeguards are not optional add-ons but are woven into the core architecture and governed by clear, enforceable policies. We aim to set a new standard for responsible AI development.
+This research project aims to develop a multi-layered, "defense-in-depth" strategy for privacy, security, and misuse prevention. Our vision, as detailed in the [Ideas Paper](/guides/cns-2.0-research-roadmap/in-depth/ideas-paper/) (Sec 8.5), is a system where safeguards are not optional add-ons but are woven into the core architecture and governed by clear, enforceable policies. We aim to set a new standard for responsible AI development.
 
 ### Key Research Questions
 

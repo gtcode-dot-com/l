@@ -12,7 +12,7 @@ sitemap:
 
 Standard evaluation tests a system's performance under normal, benign conditions. However, a system designed to operate on real-world information from the open internet will inevitably face adversaries who wish to manipulate its conclusions. These are not random errors; they are carefully crafted attacks designed to exploit a system's reasoning and data-processing vulnerabilities to produce a desired, incorrect, and potentially harmful output.
 
-As detailed in our [Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md) (Sec 8.4), these attacks can include:
+As detailed in our [Ideas Paper](/guides/cns-2.0-research-roadmap/in-depth/ideas-paper/) (Sec 8.4), these attacks can include:
 -   **Subtle Evidence Manipulation:** Slightly altering data points, misquoting sources, or fabricating "plausible" data to support a false claim.
 -   **Coordinated Disinformation:** Ingesting a large number of seemingly independent narratives that all subtly point towards the same false conclusion, overwhelming simple quality filters.
 -   **Logic Bomb Attacks:** Crafting a set of inputs that appear sound on the surface but contain a hidden logical contradiction, fallacy, or structural weakness designed to confuse the synthesis engine or cause a system failure.

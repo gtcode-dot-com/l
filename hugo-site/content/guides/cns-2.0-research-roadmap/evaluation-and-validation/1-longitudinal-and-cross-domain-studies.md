@@ -21,7 +21,7 @@ This research project aims to move beyond standard benchmarks to rigorously eval
 
 ### Key Research Questions
 
-This study is designed to answer the following detailed questions, as outlined in Section 8.4 of our foundational [Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md):
+This study is designed to answer the following detailed questions, as outlined in Section 8.4 of our foundational [Ideas Paper](/guides/cns-2.0-research-roadmap/in-depth/ideas-paper/):
 
 1.  **Longitudinal Performance Dynamics:** How does the quality of synthesis evolve over a long-term deployment (e.g., 12-24 months)? Do we observe a positive learning curve as the system's training data grows, or does performance plateau or degrade? How can we detect and measure potential bias accumulation or performance drift over time?
 2.  **Cross-Domain Transferability:** How much performance is lost when the system is applied in a "zero-shot" capacity to a domain it wasn't specifically trained on? Which internal components (e.g., the `GroundingCritic`, the `LogicCritic`, the LLM synthesizer) are most sensitive to domain shifts, and which exhibit more universal reasoning patterns?

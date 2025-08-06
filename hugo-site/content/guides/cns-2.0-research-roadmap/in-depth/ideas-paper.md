@@ -8,6 +8,12 @@ sitemap:
   priority: 0.6
 ---
 
+# CNS 2.0 Ideas Paper: A Computational Framework for Chiral Narrative Synthesis in Automated Knowledge Discovery
+
+**Author:** Paul Lowndes, Conceptual AI Laboratory
+
+**Date:** July 10, 2025
+
 ## Abstract
 
 Knowledge synthesis from conflicting sources represents a fundamental challenge in artificial intelligence, particularly as information volume and complexity continue to grow exponentially. Current approaches to reconciling contradictory information suffer from opacity, loss of structural information, and inability to generate coherent insights beyond simple averaging. We present Chiral Narrative Synthesis (CNS) 2.0, a novel computational framework that transforms conflicting information into coherent knowledge through multi-agent dialectical reasoning. Our framework introduces four key innovations: (1) Structured Narrative Objects (SNOs) that replace simple vectors with rich representations combining hypotheses, reasoning graphs, evidence sets, and trust scores; (2) a transparent multi-component critic pipeline that decomposes evaluation into specialized assessors for grounding, logical coherence, and novelty; (3) Large Language Model (LLM)-powered generative synthesis that transcends naive averaging through structured dialectical reasoning protocols; and (4) "Evidential Entanglement," a novel metric for identifying productive conflicts between narratives arguing over shared data. We provide comprehensive system architecture, theoretical foundations, and experimental protocols for validation. Evaluation on controlled dialectical reasoning tasks demonstrates 85% synthesis accuracy while maintaining full interpretability through structured evidence tracking. CNS 2.0 establishes a foundation for automated knowledge discovery systems capable of reconciling contradictory information into robust, verifiable insights.

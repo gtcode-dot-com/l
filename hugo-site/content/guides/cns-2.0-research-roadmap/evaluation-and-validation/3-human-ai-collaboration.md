@@ -12,7 +12,7 @@ sitemap:
 
 An AI system, no matter how algorithmically powerful, is only as effective as the human-computer interface through which it is used. The ultimate goal of CNS 2.0 is not to replace human analysts, but to **augment** their intelligence by offloading cognitive work and uncovering insights that would be difficult to find manually. This requires a deep understanding of how humans best interact with, interpret, and trust complex AI systems.
 
-As outlined in our [Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md) (Sec 8.4), we must answer critical questions about task allocation, interface design, and trust calibration to make CNS 2.0 a truly effective tool.
+As outlined in our [Ideas Paper](/guides/cns-2.0-research-roadmap/in-depth/ideas-paper/) (Sec 8.4), we must answer critical questions about task allocation, interface design, and trust calibration to make CNS 2.0 a truly effective tool.
 
 ### The Vision: A True Cognitive Partner
 

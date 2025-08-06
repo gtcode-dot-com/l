@@ -18,7 +18,7 @@ AI systems trained on vast datasets of human-generated text can inadvertently le
 
 ### The Vision: A System Engineered for Equity and Auditable Transparency
 
-This research project is dedicated to building a CNS 2.0 that is not only aware of bias but is engineered with specific mechanisms to detect and mitigate it. Our vision, detailed in the [Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md) (Sec 8.5), is a system whose outputs are demonstrably fair and whose reasoning is transparently auditable from evidence to conclusion. We aim to create a model for responsible AI governance that is as innovative as the system's technical architecture.
+This research project is dedicated to building a CNS 2.0 that is not only aware of bias but is engineered with specific mechanisms to detect and mitigate it. Our vision, detailed in the [Ideas Paper](/guides/cns-2.0-research-roadmap/in-depth/ideas-paper/) (Sec 8.5), is a system whose outputs are demonstrably fair and whose reasoning is transparently auditable from evidence to conclusion. We aim to create a model for responsible AI governance that is as innovative as the system's technical architecture.
 
 ### Key Research Questions
 
