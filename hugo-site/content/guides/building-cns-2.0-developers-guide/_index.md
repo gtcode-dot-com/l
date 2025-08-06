@@ -36,6 +36,10 @@ Through this guide, you'll master the end-to-end implementation of a sophisticat
 -   **Production Deployment & Programmatic Optimization:** You will learn how to take the system from a single-process prototype to a scalable, distributed production architecture using Docker and Celery, and then use DSPy to create a self-optimizing system that programmatically improves its own reasoning capabilities.
     -   **Why it's an advance:** This provides the roadmap to a real-world, dynamic system. By moving from manual prompt engineering to programmatic optimization with DSPy, we create a system that can learn and adapt, using its own critics to refine its synthesis capabilities over time.
 
+## The Vision Beyond the Code
+
+This guide provides the practical steps to build the CNS 2.0 system as it is designed today. To understand the long-term vision for where this technology is headed—integrating the deep structures of human storytelling to create a true narrative intelligence—explore the **[Future Research Directions](/guides/cns-2.0-research-roadmap/future-research-directions/)**.
+
 ## Learning Path
 
 This guide is structured as a progressive learning experience. Each chapter builds upon the last, culminating in a complete and advanced implementation.

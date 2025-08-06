@@ -136,6 +136,8 @@ This CNS 2.0 blueprint creates a far more plausible and powerful system by makin
     -   **Phase 3 (Human-in-the-Loop):** We will develop an interface for human experts to review, rate, and correct syntheses, providing a gold-standard dataset for fine-tuning the LLM on high-quality dialectical reasoning.
 3.  **Formal Evaluation Protocol:** To measure the system's success, we will develop a formal evaluation protocol. A candidate experiment involves seeding the system with SNOs derived from papers representing historical scientific debates (e.g., plate tectonics vs. geosyncline theory). The primary success metric will be the system's ability to generate a synthesized SNO that aligns with the modern scientific consensus, evaluated both by its Critic Score and by human expert review.
 
+This blueprint lays the foundation for the current research program. For a look at the next generation of CNS capabilities, which will integrate deep narratological principles to evolve the system into a true narrative intelligence, see our **[Future Research Directions](/guides/cns-2.0-research-roadmap/future-research-directions/)**.
+
 ## 5. Conclusion
 Chiral Narrative Synthesis 2.0 provides a comprehensive blueprint for a multi-agent system capable of automated knowledge discovery. By integrating a rich narrative structure (SNO), a transparent evaluation pipeline (Multi-Component Critic), a sophisticated generative engine (LLM Synthesizer), and precise relational metrics (Chirality and Entanglement), this framework moves beyond a purely conceptual model. It lays out a practical path and a clear research roadmap toward building AI systems that can reason about, reconcile, and synthesize conflicting information to generate novel and robust insights.
 
