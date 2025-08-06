@@ -249,7 +249,7 @@ div.article-content > h2:first-child {
 .article-content h3 {
     font-size: 1.5rem;
     color: #334155;
-    margin-top: 2.5rem;
+    margin-top: 1.25rem;
     margin-bottom: 1rem;
 }
 
@@ -316,7 +316,7 @@ pre code {
     color: #c026d3; /* A more vibrant color for inline code */
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
-    font-size: 0.66em !important;
+    font-size: 0.96em !important;
     font-weight: 500;
 }
 
