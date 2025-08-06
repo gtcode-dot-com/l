@@ -39,4 +39,4 @@ This overview provides a high-level look at the "what" and "why" of CNS 2.0. To 
 
 -   **[The Developer's Guide](/guides/building-cns-2.0-developers-guide/)**: For a hands-on, practical guide to implementing the CNS 2.0 framework in Python from the ground up.
 -   **[The Research Roadmap](/guides/cns-2.0-research-roadmap/)**: For a look at the future of the project, including the experimental design, plans for publication, and the ethical considerations that guide our work.
--   **[The Blueprint Paper](/blueprint/)**: For the complete, formal academic paper that serves as the canonical definition of the CNS 2.0 architecture.
+-   **[The Blueprint Paper](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf)**: For the complete, formal academic paper that serves as the canonical definition of the CNS 2.0 architecture.
