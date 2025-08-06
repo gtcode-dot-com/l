@@ -6,6 +6,7 @@ sitemap:
   changefreq: monthly
   priority: 0.7
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 # CNS 2.0: A Conceptual Overview

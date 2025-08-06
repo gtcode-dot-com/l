@@ -7,6 +7,7 @@ sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 Autonomous knowledge synthesis introduces specific ethical risks requiring systematic investigation and mitigation. This research addresses unique challenges posed by systems generating authoritative-appearing syntheses from conflicting sources, potentially amplifying biases or enabling sophisticated misinformation campaigns. Each investigation produces concrete modifications to implementation components (Developer Guide Chapters 2-7), embedding ethical considerations directly into technical design rather than applying external constraints.

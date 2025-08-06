@@ -1,6 +1,6 @@
 <nav class="article-nav">
     <div class="nav-prev">
-        {{ with .NextInSection }}
+        {{ with .PrevInSection }}
             <a href="{{ .RelPermalink }}" class="nav-link prev-link">
                 <i data-feather="arrow-left"></i>
                 <div class="nav-text">
@@ -12,7 +12,7 @@
     </div>
 
     <div class="nav-next">
-        {{ with .PrevInSection }}
+        {{ with .NextInSection }}
             <a href="{{ .RelPermalink }}" class="nav-link next-link">
                 <div class="nav-text">
                     <span class="nav-label">Next</span>

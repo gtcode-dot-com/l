@@ -7,6 +7,7 @@ sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 In complex fields like scientific research and intelligence analysis, professionals face a constant challenge: how to make sense of incomplete, uncertain, and often contradictory information. The Chiral Narrative Synthesis (CNS) 2.0 framework was designed to address this challenge.

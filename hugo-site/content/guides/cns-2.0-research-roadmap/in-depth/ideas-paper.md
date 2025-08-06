@@ -6,6 +6,7 @@ lastmod: "2025-08-06"
 sitemap:
   changefreq: monthly
   priority: 0.6
+section: "cns-2.0-research-roadmap"
 ---
 
 # CNS 2.0 Ideas Paper: A Computational Framework for Chiral Narrative Synthesis in Automated Knowledge Discovery

@@ -7,6 +7,7 @@ sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 The successful completion of our Minimum Viable Experiment (MVE) establishes the foundational proof-of-concept for CNS 2.0. However, the acknowledged limitations—manual SNO creation and heuristic-based evaluation—define precise research objectives for scaling beyond controlled experimentation to autonomous operation.

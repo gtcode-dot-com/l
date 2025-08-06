@@ -6,6 +6,7 @@ lastmod: "2025-08-06"
 sitemap:
   changefreq: yearly
   priority: 0.6
+section: "cns-2.0-research-roadmap"
 ---
 
 The mission of Chiral Narrative Synthesis (CNS) is to build systems capable of transforming conflicting information into coherent, insightful, and trustworthy knowledge. Our current CNS 2.0 blueprint establishes a robust foundation for dialectical reasoning through Structured Narrative Objects (SNOs), a multi-component Critic pipeline, and a generative synthesis engine.

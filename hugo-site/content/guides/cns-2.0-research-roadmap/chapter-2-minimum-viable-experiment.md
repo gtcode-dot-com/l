@@ -7,6 +7,7 @@ sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 This chapter establishes the statistical prototype framework that transforms our manual plate tectonics validation into a mathematically rigorous experimental design capable of generating statistically significant results across multiple historical scientific debates. The framework integrates power analysis, effect size calculations, and DSPy automation to scale from single-case validation to comprehensive empirical validation of the CNS dialectical synthesis engine.

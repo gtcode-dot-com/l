@@ -6,6 +6,7 @@ lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
   priority: 0.7
+section: "cns-2.0-research-roadmap"
 ---
 
 ### The Challenge: AI as a Mirror to Society

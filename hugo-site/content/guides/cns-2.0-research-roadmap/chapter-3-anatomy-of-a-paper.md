@@ -7,6 +7,7 @@ sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 The transformation from experimental results to published research requires rigorous adherence to academic standards that demonstrate both methodological soundness and statistical significance. Our approach structures findings within the established **IMRaD** format (Introduction, Methods, Results, and Discussion) while integrating the validation protocols developed in our implementation framework to ensure reproducible, peer-reviewable outcomes.
