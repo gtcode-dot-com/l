@@ -1,7 +1,7 @@
 ---
 title: "CNS 2.0: A Conceptual Overview"
 description: "A high-level introduction to Chiral Narrative Synthesis, its core concepts, and its importance."
-weight: -10 # To place it before other main sections if needed
+weight: 10 # To place it before other main sections if needed
 sitemap:
   changefreq: monthly
   priority: 0.7
@@ -19,6 +19,7 @@ In complex fields like scientific research, journalism, and intelligence analysi
 CNS 2.0 is built on four key advances that, together, create a system capable of sophisticated dialectical reasoning.
 
 ![](/img/diagram-01.svg)
+
 *The CNS 2.0 workflow, showing how narratives are evaluated and synthesized.*
 
 1.  **Structured Narrative Objects (SNOs):** Instead of reducing complex arguments to simple data points (like vectors), CNS uses rich data structures that capture the full context of a narrative. Each SNO contains the core **hypothesis**, the logical **reasoning graph** supporting it, the **evidence set** it's based on, and a **trust score** reflecting its evaluated quality.
@@ -39,4 +40,4 @@ This overview provides a high-level look at the "what" and "why" of CNS 2.0. To 
 
 -   **[The Developer's Guide](/guides/building-cns-2.0-developers-guide/)**: For a hands-on, practical guide to implementing the CNS 2.0 framework in Python from the ground up.
 -   **[The Research Roadmap](/guides/cns-2.0-research-roadmap/)**: For a look at the future of the project, including the experimental design, plans for publication, and the ethical considerations that guide our work.
--   **[The Blueprint Paper](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf)**: For the complete, formal academic paper that serves as the canonical definition of the CNS 2.0 architecture.
+-   **[The Blueprint Paper](/guides/cns-2.0-research-roadmap/blueprint/)**: For the complete, formal academic paper that serves as the canonical definition of the CNS 2.0 architecture.

@@ -11,7 +11,10 @@ sitemap:
 # CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis
 
 **Author:** Paul Lowndes, Conceptual AI Laboratory
+
 **Date:** June 17, 2025
+
+> A print-friendly version of this research proposal is available: **[Download PDF](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf)**
 
 > ### Abstract
 > Knowledge synthesis from conflicting sources remains a fundamental challenge in artificial intelligence. We present Chiral Narrative Synthesis (CNS) 2.0, a practical engineering blueprint that transforms conflicting information into coherent knowledge through multi-agent dialectical reasoning. Our framework introduces four key innovations: (1) Structured Narrative Objects (SNOs) that replace simple vectors with rich representations combining hypotheses, reasoning graphs, evidence sets, and trust scores; (2) a transparent multi-component critic pipeline replacing black-box evaluation with specialized assessors for grounding, logic, and novelty; (3) LLM-powered generative synthesis that transcends naive averaging through dialectical reasoning; and (4) "Evidential Entanglement," a novel metric identifying productive conflicts between narratives arguing over shared data. We provide both the system architecture and a concrete research roadmap addressing critical implementation challenges—from narrative ingestion to model development—establishing a foundation for automated knowledge discovery systems capable of reconciling contradictory information into robust insights.
@@ -117,7 +120,7 @@ Instead of directly modifying an SNO's components via gradient ascent, which can
 
 The target embedding, $H_{\text{target}}$, can be calculated as:
 $$
-H_{\text{target}} = H_{i} + \alpha \nabla_{H_i} \text{Reward}(SNO_i) + \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}
+H_{\text{target}} = H_{i} + \alpha \nabla_{H_i} \text{Reward}(SNO_i) + \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|} \quad (2)
 $$
 This vector represents a conceptual direction that is rewarded by the critic while also being repelled from its chiral partner. This $H_{\text{target}}$ is not used to modify SNO$_i$. Instead, it is used to prompt a generative agent: "Generate a new SNO whose core hypothesis is semantically close to $H_{\text{target}}$, drawing inspiration from the reasoning and evidence of SNO$_i$." This prompts the creation of a new, fully-formed candidate SNO that explores the space between existing ideas, which can then be evaluated by the critic pipeline.
 
@@ -135,8 +138,6 @@ This CNS 2.0 blueprint creates a far more plausible and powerful system by makin
     -   **Phase 2 (Self-Improvement):** The CNS system itself will generate training data. High-scoring syntheses `SNO_C` generated from pairs (`SNO_A`, `SNO_B`) will be archived as positive training examples $(A, B) \to C$, creating a flywheel for continuous improvement.
     -   **Phase 3 (Human-in-the-Loop):** We will develop an interface for human experts to review, rate, and correct syntheses, providing a gold-standard dataset for fine-tuning the LLM on high-quality dialectical reasoning.
 3.  **Formal Evaluation Protocol:** To measure the system's success, we will develop a formal evaluation protocol. A candidate experiment involves seeding the system with SNOs derived from papers representing historical scientific debates (e.g., plate tectonics vs. geosyncline theory). The primary success metric will be the system's ability to generate a synthesized SNO that aligns with the modern scientific consensus, evaluated both by its Critic Score and by human expert review.
-
-This blueprint lays the foundation for the current research program. For a look at the next generation of CNS capabilities, which will integrate deep narratological principles to evolve the system into a true narrative intelligence, see our **[Future Research Directions](/guides/cns-2.0-research-roadmap/future-research-directions/)**.
 
 ## 5. Conclusion
 Chiral Narrative Synthesis 2.0 provides a comprehensive blueprint for a multi-agent system capable of automated knowledge discovery. By integrating a rich narrative structure (SNO), a transparent evaluation pipeline (Multi-Component Critic), a sophisticated generative engine (LLM Synthesizer), and precise relational metrics (Chirality and Entanglement), this framework moves beyond a purely conceptual model. It lays out a practical path and a clear research roadmap toward building AI systems that can reason about, reconcile, and synthesize conflicting information to generate novel and robust insights.
