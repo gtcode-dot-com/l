@@ -1068,6 +1068,17 @@ th {
 }
 
 
+.footnotes a {
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* Fallback for older browsers */
+}
+
+.table-container {
+    overflow-x: auto; /* This is the key property */
+    max-width: 100%;
+}
+
+
 /* ===== Print Styles ===== */
 @media print {
     .site-header,

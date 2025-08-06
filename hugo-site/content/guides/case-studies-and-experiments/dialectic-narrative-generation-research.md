@@ -88,10 +88,14 @@ The framework's stated application in "ethical modeling & polarity navigation" i
 
 **Table 1: Comparison of Key Dialectical AI Frameworks**
 
+<div class="table-container">
+
 | Framework Name                         | Primary Objective                                   | Core Mechanism/Data Structure | Key Components                                           | Reasoning Approach                   | Emphasis                                              | Status                        |
 | :------------------------------------- | :-------------------------------------------------- | :---------------------------- | :------------------------------------------------------- | :----------------------------------- | :---------------------------------------------------- | :---------------------------- |
 | Chiral Narrative Synthesis (CNS) 2.0   | Automated knowledge discovery/synthesis from conflicting sources | Structured Narrative Objects (SNOs) | Multi-component Critic, Generative Synthesis Engine, Chiral Pair Selection | LLM-powered dialectical reasoning    | Robustness, Auditability, Transparency                | Research blueprint/proposal   |
 | The Dialectical Framework (Dialexity)  | Generating insight/revealing blind spots from text  | Dialectical Wheels (DWs)      | Wheel Segments, Wisdom Units, Transitions                | Semantic graph/LLM-based reasoning   | Interpretability, Systemic understanding, Ethical modeling | Open-source framework/repository |
+
+</div>
 
 ### **C. Computational Models of Narrative Conflict: Formalizing Antagonism for Plot Generation**
 
@@ -117,6 +121,8 @@ The explicit goal of formalizing a computational model of conflict to inform the
 
 **Table 2: Dimensions of Narrative Conflict in Computational Models**
 
+<div class="table-container">
+
 | Dimension      | Definition/Description                                                                                      | Narrative Impact                                        |
 | :------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------ |
 | Participants   | The characters involved in incompatible plans.                                                              | Influences character dynamics and relationships.        |
@@ -126,6 +132,8 @@ The explicit goal of formalizing a computational model of conflict to inform the
 | Intensity      | How much is risked by the characters, approximated by the character's utility if the opponent's plan succeeds. | Determines the narrative stakes and emotional weight.    |
 | Balance        | The relative likelihood of each participant to succeed.                                                     | Shapes audience expectation and dramatic tension.       |
 | Resolution     | A character's change in utility once the conflict is over.                                                  | Defines the outcome and thematic message of the conflict. |
+
+</div>
 
 ### **D. Argumentation Theory in AI and Law: Precedents for Dialectical Systems**
 
@@ -168,7 +176,9 @@ Generative AI, powered by LLMs, is increasingly becoming a collaborative partner
 *   **Reviewer:** AI can act as a quality control mechanism, identifying inconsistencies in logic, flagging vague sections, or pointing out misalignments between visuals and text. While it does not replace a human editor, it enhances the revision process and accelerates iteration.
 *   **Assistant:** This is arguably the most potent and versatile role, where AI supports tasks such as data collection, document summarization, generating alternative plot structures, translating content, and creating audience-specific versions of a story. For example, it can suggest new "hooks" depending on the target audience.
 
-**Table 4: Roles of AI in Data Storytelling**
+**Table 3: Roles of AI in Data Storytelling**
+
+<div class="table-container">
 
 | Role      | Description                                                                                     | Key Characteristic/Implication                     | Ethical Consideration                                                                 |
 | :-------- | :---------------------------------------------------------------------------------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------ |
@@ -176,6 +186,8 @@ Generative AI, powered by LLMs, is increasingly becoming a collaborative partner
 | Optimizer | Refines existing content, improving readability, adjusting tone, or restructuring material.     | Useful for tailoring content to different audiences. | Potential for bias, hallucination; requires robust validation (RAG) and human review. |
 | Reviewer  | Acts as a quality control, identifying inconsistencies, vague sections, or misalignments.          | Enhances revision process; does not replace human editor. | Potential for bias, hallucination; requires robust validation (RAG) and human review. |
 | Assistant | Supports tasks like data collection, summarization, generating alternative plot structures, or translating content. | Most potent and versatile; amplifies human voice.  | Potential for bias, hallucination; requires robust validation (RAG) and human review. |
+
+</div>
 
 Ethical considerations are paramount, as AI can introduce biases or hallucinate content. This necessitates the application of robust validation methods, such as Retrieval-Augmented Generation (RAG) techniques, and continuous human review of outputs for accuracy, completeness, and fairness.
 
@@ -217,13 +229,17 @@ The patents demonstrate a clear evolution from basic data-to-text generation to 
 
 There is a commercial imperative for conflict resolution in data narratives. Even in commercial applications like financial reports or patient narratives, data often contains implicit conflicts, such as deviations from targets or unexpected outcomes. Although patents like US11170038B1 and US9576009B1 do not explicitly formalize "dialectical reasoning," the very act of generating "meaningful explanation" or narratives that "satisfy communication goals" from complex data frequently necessitates resolving or explaining these underlying tensions. This indicates that commercial demand for coherent narratives derived from disparate data implicitly drives the need for conflict resolution, suggesting a fertile ground for the future integration of explicit dialectical AI mechanisms to enhance the depth and insight of these automated reports.
 
-**Table 3: Overview of Patented Automated Narrative Generation Technologies**
+**Table 4: Overview of Patented Automated Narrative Generation Technologies**
+
+<div class="table-container">
 
 | Patent Number                                              | Assignee                                                     | Filing/Publication Dates                 | Core Innovation                                              | Relevance to Dialectical Reasoning/Conflicting Data                                                |
 | :--------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
 | US11170038B1                                               | Narrative Science LLC                                        | Filed: 2018-12-28; Published: 2021-11-09 | Automated narratives from visualizations, including sequences. | Implicit need to explain "interesting aspects" or resolve discrepancies in visual data.           |
 | US9576009B1                                                | Narrative Science LLC                                        | Filed: 2015-02-27; Published: 2017-02-21 | Communication goal-driven narratives from data.              | Goal-driven narrative implies selecting/interpreting data to address specific questions, potentially from diverse sources. |
 | US8688434B1                                                | Not specified (Commonly associated with Narrative Science LLC) | Filed: 2011-03-04; Published: 2014-04-01 | Automated story generation from domain events, identifying "angles." | Identifying "angles" suggests handling diverse perspectives or interpretations of events, hinting at conflict. |
+
+</div>
 
 ### **B. Commercial Platforms: Current Capabilities and Future Potential**
 
