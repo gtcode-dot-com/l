@@ -5,7 +5,7 @@ title: 'CNS 2.0 Project'
 params:
   description: 'A progressive educational guide to implementing Chiral Narrative Synthesis 2.0 in Python'
   author: 'CNS Development Team'
-  
+
 markup:
   goldmark:
     renderer:
