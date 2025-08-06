@@ -6,7 +6,6 @@ sitemap:
   changefreq: monthly
   priority: 0.8
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
 ---
 
 # CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis

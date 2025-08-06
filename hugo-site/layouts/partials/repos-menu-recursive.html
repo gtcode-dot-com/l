@@ -1,7 +1,6 @@
 <!-- layouts/partials/repos-menu-recursive.html -->
 {{ $context := .context }}
 {{ $currentPage := .currentPage }}
-{{/* FIX: Use .Pages directly. It already contains both regular pages and sections. Appending .Sections caused duplication. */}}
 {{ $pages := $context.Pages.ByTitle }}
 
 {{ range $pages }}
