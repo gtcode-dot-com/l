@@ -4,12 +4,14 @@
         {{ $currentPage := . }}
         {{ $devGuide := .Site.GetPage "guides/building-cns-2.0-developers-guide" }}
         {{ $researchGuide := .Site.GetPage "guides/cns-2.0-research-roadmap" }}
+        {{ $caseStudies := .Site.GetPage "guides/case-studies-and-experiments" }}
         {{ $tutorials := .Site.GetPage "guides/tutorials" }}
         {{ $repos := .Site.GetPage "repos" }}
 
         <!-- Determine active section -->
         {{ $isDevGuide := or (eq . $devGuide) (.IsDescendant $devGuide) }}
         {{ $isResearchGuide := or (eq . $researchGuide) (.IsDescendant $researchGuide) }}
+        {{ $isCaseStudies := or (eq . $caseStudies) (.IsDescendant $caseStudies) }}
         {{ $isTutorials := or (eq . $tutorials) (.IsDescendant $tutorials) }} {{/* Corrected logic */}}
         {{ $isRepos := or (eq . $repos) (.IsDescendant $repos) }}
 
@@ -55,7 +57,23 @@
             {{ end }}
         </div>
 
-        <!-- Section 3: Tutorials -->
+        <!-- Section 3: Case Studies & Experiments -->
+        <div class="guide-menu-section">
+            <h3 class="guide-menu-title">
+                <a href="{{ $caseStudies.RelPermalink }}" class="{{ if $isCaseStudies }}active-guide{{ end }}">Case Studies & Experiments</a>
+            </h3>
+            {{ if $isCaseStudies }}
+            <ul class="guide-menu-list">
+                {{ range $caseStudies.Pages.ByWeight }}
+                <li class="guide-menu-item">
+                    <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+
+        <!-- Section 4: Tutorials -->
         <div class="guide-menu-section">
             <h3 class="guide-menu-title">
                 <a href="{{ $tutorials.RelPermalink }}" class="{{ if $isTutorials }}active-guide{{ end }}">Tutorials</a>
