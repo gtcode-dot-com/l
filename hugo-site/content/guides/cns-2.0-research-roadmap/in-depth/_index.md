@@ -6,7 +6,7 @@ weight: 30
 
 Welcome to the In-Depth section of the CNS 2.0 documentation.
 
-While other sections of the **[Guides](/guides/)** provide tutorials and high-level roadmaps, this section is dedicated to deep dives into the specific, advanced concepts that form the theoretical and technical backbone of our project. These articles are adapted from the most detailed sections of our foundational **[Ideas Paper](/papers/202507110804_chiral_narrative_synthesis_paper.md)** and are intended for researchers and practitioners who wish to gain a more profound understanding of how CNS 2.0 works under the hood.
+While other sections of the **[Guides](/guides/)** provide tutorials and high-level roadmaps, this section is dedicated to deep dives into the specific, advanced concepts that form the theoretical and technical backbone of our project. These articles are adapted from the most detailed sections of our foundational **[Ideas Paper](./ideas-paper/)** and are intended for researchers and practitioners who wish to gain a more profound understanding of how CNS 2.0 works under the hood.
 
 Here, we will explore topics such as:
 -   The formal structure of our dialectical reasoning templates.

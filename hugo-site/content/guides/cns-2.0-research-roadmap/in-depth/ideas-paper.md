@@ -1,4 +1,12 @@
-# CNS 2.0: A Computational Framework for Chiral Narrative Synthesis in Automated Knowledge Discovery
+---
+title: "CNS 2.0 Ideas Paper"
+description: "Ideas Paper - CNS 2.0: A Computational Framework for Chiral Narrative Synthesis in Automated Knowledge Discovery"
+weight: 32
+lastmod: "2025-08-06"
+sitemap:
+  changefreq: monthly
+  priority: 0.6
+---
 
 ## Abstract
 
@@ -83,21 +91,21 @@ We begin by establishing formal definitions for the core components of CNS 2.0.
 
 **Definition 3.2 (Enhanced Chirality Score)**: For two SNOs $\mathcal{S}_i$ and $\mathcal{S}_j$, the Enhanced Chirality Score incorporates both semantic opposition and structural conflict:
 
-```math
+$$
 \text{CScore}(\mathcal{S}_i, \mathcal{S}_j) = \alpha \cdot (1 - \cos(H_i, H_j)) \cdot (T_i \cdot T_j) + \beta \cdot \text{GraphConflict}(G_i, G_j)
-```
+$$
 
 where $\cos(H_i, H_j) = \frac{H_i \cdot H_j}{\|H_i\| \|H_j\|}$ is the cosine similarity between hypothesis embeddings, and:
 
-```math
+$$
 \text{GraphConflict}(G_i, G_j) = \frac{1}{|V_i| \cdot |V_j|} \sum_{v_i \in V_i, v_j \in V_j} \mathbb{I}[\text{contradicts}(v_i, v_j)]
-```
+$$
 
 **Definition 3.3 (Evidential Entanglement with Quality Weighting)**: The Enhanced Evidential Entanglement Score incorporates evidence quality and verification status:
 
-```math
+$$
 \text{EScore}(\mathcal{S}_i, \mathcal{S}_j) = \frac{\sum_{e \in \mathcal{E}_i \cap \mathcal{E}_j} w_{\text{quality}}(e)}{\sum_{e \in \mathcal{E}_i \cup \mathcal{E}_j} w_{\text{quality}}(e)}
-```
+$$
 
 where $w_{\text{quality}}(e)$ represents the verified quality score of evidence $e$.
 
@@ -124,9 +132,9 @@ The synthesis process operates through a structured dialectical framework that f
 
 Formally, let $\mathcal{L}(\mathcal{S})$ denote the logical consistency of SNO $\mathcal{S}$. If $\mathcal{L}(\mathcal{S}_A) = \mathcal{L}(\mathcal{S}_B) = \text{true}$ and $|\mathcal{E}_{\text{shared}}| \geq k$, then:
 
-```math
+$$
 P(\mathcal{L}(\mathcal{S}_C) = \text{true}) \geq 1 - \epsilon
-```
+$$
 
 where $\epsilon$ is bounded by the error rates of the evidence verification and logical validation components.
 
@@ -134,33 +142,33 @@ where $\epsilon$ is bounded by the error rates of the evidence verification and 
 
 The trust score emerges from an adaptive weighted combination of specialized critics with learned weighting:
 
-```math
+$$
 T(\mathcal{S}) = \text{softmax}(f_{\text{weight}}(\mathcal{S}; \theta_w))^T \cdot \begin{bmatrix} \text{Score}_G(\mathcal{S}) \\ \text{Score}_L(\mathcal{S}) \\ \text{Score}_N(\mathcal{S}) \\ \text{Score}_V(\mathcal{S}) \end{bmatrix}
-```
+$$
 
 where $f_{\text{weight}}$ is a learned weighting function and the component scores are:
 
 **Enhanced Grounding Critic**:
-```math
+$$
 \text{Score}_G(\mathcal{S}) = \frac{1}{|V|}\sum_{v \in V} \max_{e \in \mathcal{E}} P_{\text{NLI}}(\text{entailment}|v, e) \cdot w_{\text{quality}}(e)
-```
+$$
 
 **Enhanced Logic Critic**:
-```math
+$$
 \text{Score}_L(\mathcal{S}) = f_{\text{GNN}}(G, \tau; \theta_L) \cdot \text{ConsistencyCheck}(G)
-```
+$$
 
 where $f_{\text{GNN}}$ includes confidence scores $\tau$ and `ConsistencyCheck` performs formal logical validation.
 
 **Novelty-Parsimony Critic**:
-```math
+$$
 \text{Score}_N(\mathcal{S}) = \alpha \cdot \text{Novelty}(\mathcal{S}) - \beta \cdot \text{Complexity}(\mathcal{S}) + \gamma \cdot \text{Insight}(\mathcal{S})
-```
+$$
 
 **Evidence Verification Critic**:
-```math
+$$
 \text{Score}_V(\mathcal{S}) = \frac{1}{|\mathcal{E}|}\sum_{e \in \mathcal{E}} \text{VerificationScore}(e)
-```
+$$
 
 ### 3.4 Complexity Analysis
 
@@ -391,9 +399,9 @@ OUTPUT_FORMAT: [Structured synthesis with explicit reasoning chains]
 **Comprehensive Multi-Level Verification Protocol**:
 
 1.  **Source Credibility Assessment with Authority Networks**:
-    ```math
+    $$
     \text{SourceScore}(e) = \alpha \cdot \text{AuthorityScore}(e) + \beta \cdot \text{PublicationScore}(e) + \gamma \cdot \text{CitationScore}(e) + \delta \cdot \text{RecencyScore}(e)
-    ```
+    $$
 
     Where authority scoring incorporates:
     -   Academic institutional affiliations
@@ -402,9 +410,9 @@ OUTPUT_FORMAT: [Structured synthesis with explicit reasoning chains]
     -   Editorial board memberships
 
 2.  **Content Quality Analysis with Factual Verification**:
-    ```math
+    $$
     \text{ContentScore}(e) = f_{\text{NLI}}(\text{evidenceText}) \cdot \text{FactualityScore}(e) \cdot \text{MethodologicalRigor}(e)
-    ```
+    $$
 
     Including:
     -   Natural language inference for claim support
@@ -413,24 +421,24 @@ OUTPUT_FORMAT: [Structured synthesis with explicit reasoning chains]
     -   Statistical significance and effect size evaluation
 
 3.  **Temporal Relevance with Context Awareness**:
-    ```math
+    $$
     \text{TemporalScore}(e) = \exp(-\lambda \cdot \text{age}(e)) \cdot \text{CurrencyBonus}(e) \cdot \text{ContextualRelevance}(e)
-    ```
+    $$
 
 4.  **Cross-Reference Validation with Network Analysis**:
-    ```math
+    $$
     \text{CrossRefScore}(e) = \frac{|\text{independentConfirmations}(e)|}{|\text{totalReferences}(e)|} \cdot \text{DiversityScore}(e)
-    ```
+    $$
 
 5.  **Bias and Reliability Assessment**:
-    ```math
+    $$
     \text{BiasScore}(e) = 1 - \text{DetectedBias}(e) \cdot \text{SourceReliability}(e)
-    ```
+    $$
 
 Final evidence quality with uncertainty quantification:
-```math
+$$
 w_{\text{quality}}(e) = \text{BayesianAverage}(\text{SourceScore}, \text{ContentScore}, \text{TemporalScore}, \text{CrossRefScore}, \text{BiasScore})
-```
+$$
 
 ### 4.6 LLM Reliability Enhancement Strategies
 
@@ -637,41 +645,41 @@ Dataset Specifications:
 **Primary Quantitative Metrics with Uncertainty Quantification**:
 
 -   **Synthesis Accuracy with Confidence Intervals**:
-    ```math
+    $$
     \text{Accuracy} = \frac{1}{N} \sum_{i=1}^{N} \text{Similarity}(\text{Generated}_i, \text{Gold}_i) \pm \frac{1.96\sigma}{\sqrt{N}}
-    ```
+    $$
 
 -   **Coherence Score with Inter-Rater Reliability**:
-    ```math
+    $$
     \text{Coherence} = \frac{1}{M} \sum_{j=1}^{M} \text{LogicalConsistency}(\text{Synthesis}_j), \quad \text{IRR} = \frac{\sigma_{\text{between}}^2}{\sigma_{\text{total}}^2}
-    ```
+    $$
 
 -   **Evidence Preservation with Statistical Significance**:
-    ```math
+    $$
     \text{Preservation} = \frac{|\text{Evidence}_{\text{synthesis}} \cap \text{Evidence}_{\text{gold}}|}{|\text{Evidence}_{\text{gold}}|}, \quad p < 0.05
-    ```
+    $$
 
 -   **Interpretability Index with Cognitive Load Assessment**:
-    ```math
+    $$
     \text{Interpretability} = \alpha \cdot \text{Clarity} + \beta \cdot \text{Traceability} + \gamma \cdot \text{Justification}
-    ```
+    $$
 
 **Secondary Performance Metrics**:
 
 -   **Computational Efficiency with Scalability Analysis**:
-    ```math
+    $$
     \text{Efficiency}(N) = \frac{\text{Quality}(N)}{\text{Time}(N) \cdot \text{Memory}(N)}, \quad \text{Scaling} = \frac{\log(\text{Time}(10N))}{\log(\text{Time}(N))}
-    ```
+    $$
 
 -   **Robustness Score with Adversarial Testing**:
-    ```math
+    $$
     \text{Robustness} = 1 - \frac{\sum_{i=1}^{K} |\text{Performance}_{\text{clean}} - \text{Performance}_{\text{adversarial}_i}|}{K}
-    ```
+    $$
 
 -   **Trust Calibration with Reliability Analysis**:
-    ```math
+    $$
     \text{Calibration} = 1 - \text{ECE}, \quad \text{ECE} = \sum_{m=1}^{M} \frac{|B_m|}{N} |\text{acc}(B_m) - \text{conf}(B_m)|
-    ```
+    $$
     
 **Statistical Testing Protocols**:
 
@@ -806,9 +814,9 @@ Based on component-level validation, theoretical analysis, and empirical evidenc
   - *Baseline Comparison*: 20-30% improvement over simple aggregation methods
  
 **Statistical Power Analysis**:
-```math
+$$
 \text{Power} = P(\text{reject } H_0 | H_1 \text{ true}) = \Phi\left(\frac{\mu_1 - \mu_0}{\sigma/\sqrt{n}} - z_{\alpha/2}\right) = 0.85
-```
+$$
 
 For detecting a medium effect size (Cohen's d = 0.5) with α = 0.05, we require n = 64 per condition.
 
@@ -820,9 +828,9 @@ For detecting a medium effect size (Cohen's d = 0.5) with α = 0.05, we require 
     -   *Throughput*: 500-1500 syntheses per hour depending on complexity
 
 -   **Scalability Analysis**:
-    ```math
+    $$
     \text{Time}(N) = \alpha \cdot N \log N + \beta \cdot N + \gamma
-    ```
+    $$
     where α captures indexing overhead, β represents linear processing, and γ is constant initialization cost.
 
 **Interpretability Performance with Validation**:
@@ -833,9 +841,9 @@ For detecting a medium effect size (Cohen's d = 0.5) with α = 0.05, we require 
     -   *Decision Audit Trail*: 100% of trust score components explainable
 
 -   **Trust Calibration Performance**:
-    ```math
+    $$
     \text{Calibration Error} = \sum_{i=1}^{M} \frac{|B_i|}{N} |\text{Accuracy}(B_i) - \text{Confidence}(B_i)| < 0.08
-    ```
+    $$
 
 ### 6.2 Comprehensive Sensitivity Analysis and Robustness Assessment
 
@@ -998,9 +1006,9 @@ Expected performance degradation under systematically introduced challenges:
  
 **Quantitative Comparison Framework**:
 
-```math
+$$
 \text{Performance Ratio} = \frac{\text{CNS}_{\text{accuracy}} \times \text{CNS}_{\text{interpretability}}}{\text{Baseline}_{\text{accuracy}} \times \text{Baseline}_{\text{interpretability}}}
-```
+$$
 
 **Expected Performance vs. Primary Baselines**:
 
@@ -1031,9 +1039,9 @@ Expected performance degradation under systematically introduced challenges:
  
 **Cost-Benefit Analysis**:
 
-```math
+$$
 \text{Cost-Effectiveness} = \frac{\text{Quality}_{\text{improvement}} \times \text{Speed}_{\text{improvement}}}{\text{Development}_{\text{cost}} + \text{Operational}_{\text{cost}}}
-```
+$$
 
 **Expected Economic Impact**:
 - **Development Cost**: $2-3M for initial implementation and validation
@@ -1043,9 +1051,9 @@ Expected performance degradation under systematically introduced challenges:
  
 **Scalability Performance Modeling**:
 
-```math
+$$
 \text{Throughput}(N) = \frac{\alpha \cdot \text{Parallel}_{\text{units}}}{1 + \beta \cdot \log(N) + \gamma \cdot N^{0.5}}
-```
+$$
 
 Where N represents SNO population size, and the denominators capture indexing and memory overhead.
 
@@ -1323,9 +1331,9 @@ CNS 2.0's output quality is fundamentally bounded by the quality and completenes
 - **Creative Insight Limitations**: Bounded by recombination of existing information patterns
 
 *Theoretical Framework for Quality Bounds*:
-```math
+$$
 \text{Synthesis Quality} \leq \min(\text{Evidence Quality}, \text{Reasoning Capability}, \text{Domain Fit})
-```
+$$
 
 **Context and Cultural Dependency**:
 
