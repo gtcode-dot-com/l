@@ -1,4 +1,4 @@
-baseURL: 'http://localhost:5000'
+baseURL: 'https://gtcode.com/'
 languageCode: 'en-us'
 title: 'CNS 2.0 Project'
 
