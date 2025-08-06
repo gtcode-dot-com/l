@@ -6,6 +6,7 @@ lastmod: "2025-08-06"
 sitemap:
   changefreq: yearly
   priority: 0.6
+  filename: sitemap.xml  
 section: "cns-2.0-research-roadmap"
 ---
 

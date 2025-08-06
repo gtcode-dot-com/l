@@ -2,6 +2,10 @@
 title: "In-Depth Conceptual Guides"
 description: "Detailed explorations of the core technical and theoretical mechanisms that power the Chiral Narrative Synthesis 2.0 system."
 weight: 7
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 section: "cns-2.0-research-roadmap"
 ---
 

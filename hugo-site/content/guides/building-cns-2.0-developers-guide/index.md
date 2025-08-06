@@ -6,6 +6,7 @@ sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 Chiral Narrative Synthesis (CNS) is a computational framework for reasoning through conflicting arguments to arrive at a coherent understanding. It treats narratives not as simple text, but as structured, mathematically evaluable data objects, allowing an AI to weigh evidence, analyze logical structures, and synthesize opposing viewpoints into a more robust and nuanced conclusion.

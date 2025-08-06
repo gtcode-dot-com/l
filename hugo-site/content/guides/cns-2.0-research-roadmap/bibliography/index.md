@@ -7,6 +7,7 @@ sitemap:
   changefreq: monthly
   priority: 0.6
   filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 # Annotated Bibliography
