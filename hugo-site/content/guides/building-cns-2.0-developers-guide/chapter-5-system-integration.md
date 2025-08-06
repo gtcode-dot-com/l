@@ -13,7 +13,7 @@ sitemap:
 
 ## Assembling the Autonomous System
 
-Now that we've implemented the core components—SNOs, Critics, and the Synthesis Engine—it's time to integrate them into a cohesive, stateful, and autonomous system. This chapter focuses on building the **System Operational Loop** described in Section 3.3 of the research paper. We will implement the operational workflow that allows the CNS 2.0 system to run continuously, processing information and refining its knowledge base over time.
+Now that we've implemented the core components—SNOs, Critics, and the Synthesis Engine—it's time to integrate them into a cohesive, stateful, and autonomous system. This chapter focuses on building the **System Operational Loop** described in Section 3.3 of the research proposal. We will implement the operational workflow that allows the CNS 2.0 system to run continuously, processing information and refining its knowledge base over time.
 
 The `CNSWorkflowManager` we will build serves as the central nervous system for this loop, orchestrating the flow of data and tasks between all other components to create a cycle of ingestion, evaluation, and synthesis.
 

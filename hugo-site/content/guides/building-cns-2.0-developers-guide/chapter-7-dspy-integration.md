@@ -23,7 +23,7 @@ The DSPy "compiler" then does the hard work of generating and optimizing the bes
 
 ## Solving a "Major Research Challenge": Narrative Ingestion
 
-The CNS 2.0 research paper is candid about the difficulty of the first step in the workflow: converting unstructured text into a well-formed SNO. In Section 3.1, it states:
+The CNS 2.0 research proposal is candid about the difficulty of the first step in the workflow: converting unstructured text into a well-formed SNO. In Section 3.1, it states:
 
 > "A critical prerequisite for the CNS ecosystem is the ability to generate SNOs from unstructured source materials (e.g., academic papers, intelligence reports). This process, a form of advanced argumentation mining, is a **major research challenge** in itself."
 
@@ -167,6 +167,6 @@ optimized_synthesis_module = optimizer.compile(SynthesisModule(), trainset=synth
 
 ## Conclusion: From Blueprint to a Dynamic System
 
-This guide has walked through the entire process of translating the CNS 2.0 research paper from a theoretical blueprint into a practical, working system. We have built each component step-by-step, shown how to assemble them into an autonomous system, and laid out the path to a robust, scalable production deployment.
+This guide has walked through the entire process of translating the CNS 2.0 research proposal from a theoretical blueprint into a practical, working system. We have built each component step-by-step, shown how to assemble them into an autonomous system, and laid out the path to a robust, scalable production deployment.
 
 Finally, by integrating DSPy, we have shown a path from a static system to a dynamic one—a system that can programmatically optimize and improve its own reasoning capabilities. This closing of the loop, where the system's own judgment is used to refine its generative components, represents a key step toward the goal of automated, robust, and continuously improving knowledge discovery.

@@ -13,7 +13,7 @@ sitemap:
 
 ## The Challenge: Synthesizing Contradictory Knowledge
 
-The foundational research paper, "CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis," opens by identifying a fundamental challenge in artificial intelligence:
+The foundational research proposal, "CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis," opens by identifying a fundamental challenge in artificial intelligence:
 
 > "Complex domains—from scientific research to intelligence analysis—require synthesizing incomplete, uncertain, and contradictory information into coherent knowledge. Despite AI's success in pattern recognition, the cognitive challenge of reconciling conflicting hypotheses remains unsolved."
 
@@ -151,14 +151,14 @@ else:
 
 ### System Configuration
 
-A robust system requires a centralized place to manage key parameters. The `CNSConfig` class serves this purpose, directly mapping tunable parameters to concepts in the research paper.
+A robust system requires a centralized place to manage key parameters. The `CNSConfig` class serves this purpose, directly mapping tunable parameters to concepts in the research proposal.
 
 ```python
 class CNSConfig:
     """
     Configuration class for all CNS 2.0 system parameters.
     Centralizing configuration makes the system easier to tune and manage. Each parameter
-    maps directly to a concept in the formal research paper.
+    maps directly to a concept in the formal research proposal.
     """
     
     def __init__(self):

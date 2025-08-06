@@ -327,7 +327,7 @@ class NoveltyParsimonyCritic(BaseCritic):
 
 ### Roadmap to a GNN-based Logic Critic
 
-The heuristic-based `LogicCritic` is a functional and transparent starting point. However, the research paper correctly identifies that a **Graph Neural Network (GNN)** is the state-of-the-art solution.
+The heuristic-based `LogicCritic` is a functional and transparent starting point. However, the research proposal correctly identifies that a **Graph Neural Network (GNN)** is the state-of-the-art solution.
 
 **Why a GNN is the Next Step:**
 Hand-coded heuristics can only capture simple structural flaws. A GNN, in contrast, can *learn* subtle, complex, and non-local patterns of faulty reasoning directly from data. By training on a dataset of valid and fallacious argument graphs, a GNN can learn to identify sophisticated weaknesses like:

@@ -22,7 +22,7 @@ SNOs are designed to capture this richness, transforming a narrative from an opa
 
 ## The Formal Definition
 
-An SNO is formally defined in the research paper as a 4-tuple. This mathematical precision is what allows the rest of the system to operate on it in a principled way.
+An SNO is formally defined in the research proposal as a 4-tuple. This mathematical precision is what allows the rest of the system to operate on it in a principled way.
 
 > **From the Paper: Definition 2.1 (Structured Narrative Object)**
 > An SNO is a 4-tuple $\mathcal{S} = (H, G, \mathcal{E}, T)$ where:
@@ -110,7 +110,7 @@ class StructuredNarrativeObject:
     """
     The complete Python implementation of a Structured Narrative Object (SNO).
     This class is the practical instantiation of the mathematical 4-tuple S = (H, G, E, T)
-    from the CNS 2.0 research paper.
+    from the CNS 2.0 research proposal.
     """
     
     def __init__(self, 
