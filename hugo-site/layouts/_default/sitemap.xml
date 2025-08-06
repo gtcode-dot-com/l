@@ -17,13 +17,15 @@
         <lastmod>2025-07-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
-    </url>{{ range sort .Site.RegularPages ".File.Path" "asc" }}
-    <url>
-        <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
-        <lastmod>{{ .Lastmod.Format "2006-01-02" | safeHTML }}</lastmod>{{ end }} {{ with .Sitemap.ChangeFreq }}
-        <changefreq>{{ . }}</changefreq>{{ end }} {{ if ge .Sitemap.Priority 0.0 }}
-        <priority>{{ .Sitemap.Priority }}</priority>
-    {{ end }}</url>{{ end }}
+    </url>
+{{ range sort .Data.Pages ".File.Path" "asc" }}
+<url>
+    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>{{ end }}{{ if ge .Sitemap.Priority 0.0 }}
+    <priority>{{ .Sitemap.Priority }}</priority>{{ end }}
+</url>
+{{ end }}
     <url>
         <loc>https://gtcode.com/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf</loc>
         <lastmod>2025-07-30</lastmod>
