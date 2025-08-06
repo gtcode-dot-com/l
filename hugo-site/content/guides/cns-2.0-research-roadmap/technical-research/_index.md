@@ -1,7 +1,7 @@
 ---
 title: "Advanced Technical Research"
 description: "Pushing the boundaries of the CNS 2.0 framework with next-generation models for reasoning, privacy, and inference."
-weight: 30
+weight: 12
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

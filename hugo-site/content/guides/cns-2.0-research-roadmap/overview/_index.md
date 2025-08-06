@@ -1,7 +1,7 @@
 ---
 title: "CNS 2.0: A Conceptual Overview"
 description: "A high-level introduction to Chiral Narrative Synthesis, its core concepts, and its importance."
-weight: 10 # To place it before other main sections if needed
+weight: 4
 sitemap:
   changefreq: monthly
   priority: 0.7

@@ -1,7 +1,7 @@
 ---
 title: "Comprehensive Quality Validation Review"
 description: "Statistical assessment of research roadmap refinement against PhD-level academic standards"
-weight: 60
+weight: 24
 lastmod: "2025-08-05"
 sitemap:
   changefreq: monthly

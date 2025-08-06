@@ -1,7 +1,7 @@
 ---
 title: "Evaluation and Validation Research"
 description: "A research program for rigorously assessing the performance, robustness, and utility of the CNS 2.0 system in diverse, real-world contexts."
-weight: 40
+weight: 16
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

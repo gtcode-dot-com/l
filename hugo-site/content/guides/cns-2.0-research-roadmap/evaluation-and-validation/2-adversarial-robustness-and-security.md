@@ -1,7 +1,7 @@
 ---
 title: "Project 2: Adversarial Robustness & Security"
 description: "Conducting a rigorous security assessment of the CNS 2.0 system to test its resilience against sophisticated adversarial attacks and develop novel defenses."
-weight: 42
+weight: 18
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

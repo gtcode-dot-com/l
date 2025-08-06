@@ -1,7 +1,7 @@
 ---
 title: "Project 2: Federated Learning and Privacy"
 description: "Designing a decentralized architecture for CNS 2.0 that enables collaborative knowledge synthesis while preserving data privacy."
-weight: 32
+weight: 14
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

@@ -1,7 +1,7 @@
 ---
 title: "Chapter 2: Statistical Prototype Framework for Dialectical Synthesis Validation"
 description: "Mathematical framework for scaling manual prototype validation to statistically significant experimental designs."
-weight: 21
+weight: 9
 lastmod: "2025-08-05"
 sitemap:
   changefreq: monthly

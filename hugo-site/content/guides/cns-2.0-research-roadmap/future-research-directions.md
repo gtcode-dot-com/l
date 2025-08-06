@@ -1,7 +1,7 @@
 ---
 title: "Future Research Directions"
 description: "The next frontier for CNS: Evolving from a logic engine to a narrative intelligence system by integrating the deep structures of storytelling."
-weight: 61
+weight: 25
 lastmod: "2025-08-06"
 sitemap:
   changefreq: yearly

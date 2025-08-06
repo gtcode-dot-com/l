@@ -1,7 +1,7 @@
 ---
 title: "Theoretical Foundations"
 description: "The intellectual and academic foundations upon which Chiral Narrative Synthesis is built."
-weight: 11
+weight: 5
 sitemap:
   changefreq: monthly
   priority: 0.6

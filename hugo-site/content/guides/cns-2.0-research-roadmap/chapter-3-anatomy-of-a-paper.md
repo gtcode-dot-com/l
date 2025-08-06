@@ -1,7 +1,7 @@
 ---
 title: "Chapter 3: The Anatomy of a Research Paper"
 description: "Showing how the results from the Minimum Viable Experiment will be structured into a standard, high-quality academic paper."
-weight: 22
+weight: 10
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

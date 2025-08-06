@@ -1,7 +1,7 @@
 ---
 title: "Project 1: Longitudinal & Cross-Domain Studies"
 description: "Evaluating the long-term performance stability and generalization capabilities of the CNS 2.0 system across time and diverse professional domains."
-weight: 41
+weight: 17
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

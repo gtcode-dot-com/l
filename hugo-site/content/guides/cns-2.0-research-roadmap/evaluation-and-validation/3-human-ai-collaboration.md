@@ -1,7 +1,7 @@
 ---
 title: "Project 3: Human-AI Collaboration"
 description: "Researching and optimizing the interaction between human experts and CNS 2.0 to create a seamless, trustworthy, and effective cognitive partnership."
-weight: 43
+weight: 19
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
