@@ -321,7 +321,7 @@ class NoveltyParsimonyCritic(BaseCritic):
         )
 ```
 
-```
+
 
 ### Roadmap to a GNN-based Logic Critic
 
