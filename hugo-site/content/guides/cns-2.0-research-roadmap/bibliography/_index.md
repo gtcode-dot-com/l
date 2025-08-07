@@ -1,6 +1,7 @@
 ---
 title: "Annotated Bibliography"
 description: "A curated list of the foundational papers and research that underpin the Chiral Narrative Synthesis 2.0 project."
+meta_keywords: "computational argumentation bibliography, AI reasoning research papers, knowledge synthesis literature"
 weight: 3
 lastmod: "2025-07-30"
 sitemap:

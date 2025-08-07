@@ -1,6 +1,7 @@
 ---
 title: "Evaluation and Validation Research"
 description: "A research program for rigorously assessing the performance, robustness, and utility of the CNS 2.0 system in diverse, real-world contexts."
+meta_keywords: "AI system validation, AI robustness testing, human-AI collaboration research, longitudinal AI studies"
 weight: 16
 lastmod: "2025-07-30"
 sitemap:

@@ -1,6 +1,7 @@
 ---
 title: "Quick Start: A Hands-On Synthesis Example"
 description: "A practical walkthrough of the core synthesis workflow using a historical scientific debate as a clear, hands-on example."
+meta_keywords: "AI quick start guide, hands-on AI example, CNS 2.0 workflow, synthesis tutorial"
 weight: 1
 lastmod: "2025-08-05"
 sitemap:

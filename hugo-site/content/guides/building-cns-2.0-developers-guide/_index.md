@@ -1,6 +1,7 @@
 ---
 title: "Building CNS 2.0: A Developer's Guide"
 description: "A progressive educational guide to implementing Chiral Narrative Synthesis 2.0 in Python"
+meta_keywords: "Python AI Guide, Implement CNS 2.0, AI Reasoning System, Structured Narrative Objects, DSPy Optimization"
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

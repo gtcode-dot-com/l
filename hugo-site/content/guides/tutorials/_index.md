@@ -1,7 +1,8 @@
 ---
 title: "Tutorials"
 description: "Practical, step-by-step walkthroughs of key CNS 2.0 applications and experiments."
-weight: 3 # To place it after the Research Roadmap
+meta_keywords: "AI tutorials, CNS 2.0 examples, DSPy tutorial, hands-on AI guide"
+weight: 3
 lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly

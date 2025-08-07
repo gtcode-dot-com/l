@@ -1,7 +1,8 @@
 ---
 title: "Case Studies & Experiments"
 description: "Exploring the theoretical foundations and empirical validation of the CNS framework through in-depth case studies."
-weight: 30 # Placing it after Roadmap (weight 20)
+meta_keywords: "AI case studies, dialectical AI research, narrative structure theory, computational narratology"
+weight: 30
 lastmod: "2025-08-05"
 sitemap:
   changefreq: monthly

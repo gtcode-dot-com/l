@@ -1,6 +1,7 @@
 ---
 title: "Narrative Structures"
-description: "A Comprehensive Overview of Narrative Structures: From Foundational Theories to Modern Applications and Emerging Trends"
+description: "A comprehensive overview of narrative structures, from foundational theories like Aristotle's Poetics and Propp's Morphology to modern applications in AI, UX, and transmedia."
+meta_keywords: "narrative structures, storytelling theory, Hero's Journey AI, computational narratology, Freytag's Pyramid"
 weight: 32
 lastmod: "2025-08-05"
 sitemap:

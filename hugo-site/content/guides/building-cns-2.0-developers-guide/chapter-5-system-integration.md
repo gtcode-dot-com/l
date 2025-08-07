@@ -1,6 +1,7 @@
 ---
 title: "Chapter 5: System Integration"
 description: "Combining all CNS 2.0 components into a working, autonomous system"
+meta_keywords: "AI system integration, asyncio AI workflow, autonomous AI system, CNS workflow manager"
 weight: 5
 lastmod: "2025-07-30"
 sitemap:

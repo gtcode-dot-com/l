@@ -1,6 +1,7 @@
 ---
 title: "Dialectical Reasoning Mechanisms"
-description: "Dialectical Reasoning Mechanisms for Coherent Narrative Generation from Disparate Information Sources: A Comprehensive Review of Systems, Research, and Prior Art"
+description: "A comprehensive review of systems, research, and prior art in dialectical reasoning for coherent AI narrative generation from disparate information sources."
+meta_keywords: "dialectical reasoning AI, narrative generation research, AI knowledge synthesis, Chiral Narrative Synthesis 2.0"
 weight: 31
 lastmod: "2025-08-05"
 sitemap:

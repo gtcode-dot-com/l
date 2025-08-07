@@ -1,6 +1,7 @@
 ---
 title: "DSPy Self Optimization"
 description: "A tutorial for writing Self Optimizing DSPy for CNS"
+meta_keywords: "DSPy self-optimization, programmatic prompt optimization, CNS DSPy tutorial, self-improving AI"
 weight: 1
 lastmod: "2025-07-30"
 sitemap:

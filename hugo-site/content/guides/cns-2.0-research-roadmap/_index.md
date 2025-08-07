@@ -1,6 +1,7 @@
 ---
 title: "CNS 2.0 Research Roadmap: A Multi-Year Vision"
 description: "Detailing the comprehensive, multi-faceted research program to develop, validate, and responsibly deploy the Chiral Narrative Synthesis framework."
+meta_keywords: "AI research roadmap, CNS 2.0 validation, AI ethics research, computational narrative synthesis"
 weight: 1
 lastmod: "2025-07-30"
 sitemap:

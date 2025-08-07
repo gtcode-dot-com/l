@@ -1,6 +1,7 @@
 ---
 title: "CNS 2.0: A Practical Blueprint"
 description: "The canonical whitepaper detailing the architecture of Chiral Narrative Synthesis 2.0."
+meta_keywords: "Chiral Narrative Synthesis blueprint, CNS 2.0 whitepaper, AI knowledge synthesis, multi-agent dialectical reasoning"
 weight: 2
 sitemap:
   changefreq: monthly

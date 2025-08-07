@@ -1,6 +1,7 @@
 ---
 title: "Advanced Tutorial: Statistical Validation of a Synthesis"
 description: "Statistical prototype for CNS 2.0 dialectical synthesis validation"
+meta_keywords: "statistical validation tutorial, dialectical synthesis example, plate tectonics AI, AI experimental design"
 weight: 6
 lastmod: "2025-08-05"
 sitemap:

@@ -1,6 +1,7 @@
 ---
 title: "Chapter 4: The Synthesis Engine & Relational Metrics"
 description: "Implementing LLM-powered dialectical reasoning and the metrics that guide it"
+meta_keywords: "generative synthesis engine, dialectical reasoning LLM, chiral pair selection, evidential entanglement"
 weight: 4
 lastmod: "2025-07-30"
 sitemap:
