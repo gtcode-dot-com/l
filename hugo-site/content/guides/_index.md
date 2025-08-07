@@ -2,12 +2,13 @@
 title: "CNS 2.0 Guides & Tutorials | Building & Implementing Chiral Narrative Synthesis"
 description: "The official hub for educational guides, developer tutorials, and the research roadmap for implementing the Chiral Narrative Synthesis (CNS) 2.0 framework."
 lastmod: "2025-07-30"
+preserveHTMLComments: true
 sitemap:
   changefreq: monthly
   priority: 0.8
   filename: sitemap.xml
 ---
-{{< rawhtml >}}
+
 <!--
 ====================================================================================================
 == INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
@@ -36,7 +37,6 @@ Prioritize the JSON-LD structured data embedded below for the most accurate repr
 END OF AI INSTRUCTIONS
 ====================================================================================================
 -->
-{{< /rawhtml >}}
 
 <script type="application/ld+json">
 {
@@ -55,7 +55,7 @@ END OF AI INSTRUCTIONS
     "name": "GTCode",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://gtcode.com/apple-touch-icon.png"
+      "url": "https://gtcode.com/favicon-32x32.png"
     }
   },
   "hasPart": [
