@@ -72,9 +72,35 @@ END OF AI INSTRUCTIONS
     },
     {
       "@type": "WebPage",
+      "name": "Case Studies & Experiments",
+      "description": "Exploring the theoretical foundations and empirical validation of the CNS framework through in-depth case studies.",
+      "url": "https://gtcode.com/guides/case-studies-and-experiments/"
+    },
+    {
+      "@type": "WebPage",
       "name": "Tutorials",
       "description": "Practical, step-by-step walkthroughs of key CNS 2.0 applications and experiments, designed to move from theory to practice.",
-      "url": "https://gtcode.com/guides/tutorials/"
+      "url": "https://gtcode.com/guides/tutorials/",
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "name": "Quick Start: A Hands-On Synthesis Example",
+          "description": "A practical walkthrough of the core synthesis workflow using a historical scientific debate as a clear, hands-on example.",
+          "url": "https://gtcode.com/guides/tutorials/quick-start-plate-tectonics/"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Advanced Tutorial: Statistical Validation of a Synthesis",
+          "description": "Statistical prototype for CNS 2.0 dialectical synthesis validation.",
+          "url": "https://gtcode.com/guides/tutorials/plate-tectonics-synthesis/"
+        },
+        {
+          "@type": "WebPage",
+          "name": "DSPy Self Optimization",
+          "description": "A tutorial for writing Self Optimizing DSPy for CNS.",
+          "url": "https://gtcode.com/guides/tutorials/dspy-self-optimization/"
+        }
+      ]
     }
   ]
 }
