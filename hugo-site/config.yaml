@@ -22,6 +22,12 @@ markup:
   #   lineNumbersInTable: true
   #   tabWidth: 4
 
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepComments: true
+
 menu:
   main:
     - name: "Developer's Guide"
