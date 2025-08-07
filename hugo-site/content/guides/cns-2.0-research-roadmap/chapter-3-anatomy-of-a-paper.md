@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document outlines the structure of the academic research paper that will be produced from the Minimum Viable Experiment's findings.
+
+ROLE IN HIERARCHY:
+This is Chapter 3 of the "Research Roadmap," explaining how the experimental results will be translated into a standard, peer-reviewable academic publication following the IMRaD format.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Research Paper Structure
+- IMRaD Format (Introduction, Methods, Results, Discussion)
+- Statistical Reporting
+- Methodological Soundness
+- Peer Review
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as a blueprint for the project's primary academic output. It demonstrates how the research methodology and statistical validation framework map directly to the sections of a formal scientific paper.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 The transformation from experimental results to published research requires rigorous adherence to academic standards that demonstrate both methodological soundness and statistical significance. Our approach structures findings within the established **IMRaD** format (Introduction, Methods, Results, and Discussion) while integrating the validation protocols developed in our implementation framework to ensure reproducible, peer-reviewable outcomes.
 
 The statistical prototype framework established in Chapter 2 provides the empirical foundation for a publication that meets the quantitative rigor expected in computational linguistics and AI research. Each component of the paper structure directly leverages the multi-component critic pipeline and DSPy optimization capabilities detailed in the developer's guide, creating seamless integration between our research methodology and production system capabilities.

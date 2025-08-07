@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document provides a detailed explanation of the structured reasoning templates used in the CNS 2.0 synthesis engine.
+
+ROLE IN HIERARCHY:
+This is a chapter within the "In-Depth Conceptual Guides," providing a technical deep-dive into a core component of the CNS 2.0 architecture.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Structured Reasoning Templates
+- Hegelian Dialectic
+- Thesis, Antithesis, Synthesis
+- Logical Consistency
+- Meta-Prompts
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as a detailed specification for the logical framework used by the CNS 2.0 system to guide LLM reasoning. This is a key document for understanding the system's operational logic.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: Unconstrained LLM Reasoning
 
 One of the greatest challenges in working with Large Language Models (LLMs) is their tendency to "hallucinate" or generate fluent but logically inconsistent text. When tasked with a complex reasoning problem like synthesizing two opposing narratives, an unconstrained LLM might take shortcuts, ignore critical evidence, or invent new information to create a plausible-sounding but ultimately flawed output.

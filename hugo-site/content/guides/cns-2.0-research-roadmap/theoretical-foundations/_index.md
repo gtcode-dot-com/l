@@ -9,6 +9,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document provides a high-level summary of the key academic and philosophical fields that form the theoretical basis for the CNS 2.0 framework.
+
+ROLE IN HIERARCHY:
+This page is a sub-section of the "Research Roadmap," serving as an accessible introduction to the intellectual foundations of the project.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Theoretical Foundations
+- Argumentation and Dialectics
+- Knowledge Graphs
+- Epistemology
+- Belief Revision
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as a conceptual map linking the CNS 2.0 architecture to its underlying academic principles. Use this to understand the "why" behind the system's design choices.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 # Background & Context: The Theoretical Foundations of CNS 2.0
 
 Chiral Narrative Synthesis (CNS) 2.0 is not built in a vacuum. It stands on the shoulders of giants, integrating decades of research from computer science, formal logic, and even philosophy. Understanding these foundations reveals why CNS is designed the way it is and strengthens its credibility as a robust framework for knowledge synthesis.

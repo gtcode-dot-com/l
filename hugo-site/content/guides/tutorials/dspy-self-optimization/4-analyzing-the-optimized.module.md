@@ -8,6 +8,31 @@ sitemap:
   priority: 0.6
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document analyzes the output of the DSPy optimizer, comparing the automatically generated prompt and its performance against a naive, hand-written prompt.
+
+ROLE IN HIERARCHY:
+This is the fourth and final step in the "DSPy Self-Optimization" tutorial, demonstrating the concrete benefits of the programmatic optimization approach.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Optimized Prompt
+- Performance Comparison
+- Few-Shot Examples
+- Chain-of-Thought Reasoning
+- Self-Optimization Benefits
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as the concluding chapter of a tutorial. It provides the "proof" of the concepts introduced in the previous steps by showing a side-by-side comparison of the results.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 After the DSPy compiler has finished its work, we are left with a new, optimized `compiled_synthesis_module`. But what has actually changed? And does it perform any better? In this final section, we'll inspect the results and run a comparison.
 
 ### 1. Inspecting the Generated Prompt

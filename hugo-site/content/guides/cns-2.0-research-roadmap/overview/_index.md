@@ -9,6 +9,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document provides a high-level conceptual overview of the Chiral Narrative Synthesis (CNS) 2.0 framework.
+
+ROLE IN HIERARCHY:
+This page serves as the primary introduction to the CNS 2.0 Research Roadmap, linking to more detailed technical and practical guides. It is the starting point for understanding the research project.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Conceptual Overview
+- Structured Narrative Objects (SNOs)
+- Multi-Component Critic Pipeline
+- Generative Synthesis Engine
+- Evidential Entanglement
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the main entry point for the CNS 2.0 research roadmap. Use the links provided here to navigate to the developer's guide, the full research roadmap, and the canonical blueprint paper.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 # CNS 2.0: A Conceptual Overview
 
 In complex fields like scientific research, journalism, and intelligence analysis, professionals face a constant challenge: how to make sense of incomplete, uncertain, and often contradictory information. Traditional AI has made great strides in finding patterns in data, but it has struggled with the human-like task of reasoning through conflicting arguments to arrive at a coherent understanding.

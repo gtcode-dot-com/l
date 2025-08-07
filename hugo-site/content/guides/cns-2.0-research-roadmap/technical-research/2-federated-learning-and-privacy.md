@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document outlines a research project to design a decentralized, privacy-preserving architecture for CNS 2.0 using federated learning and other cryptographic techniques.
+
+ROLE IN HIERARCHY:
+This file is the second chapter in the "Advanced Technical Research" section, proposing a major architectural evolution for the CNS 2.0 framework to handle sensitive data.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Federated Learning
+- Decentralized Architecture
+- Privacy-Preserving AI
+- Secure Multi-Party Computation (SMPC)
+- Zero-Knowledge Proofs (ZKPs)
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as a proposal for a future, privacy-focused version of CNS 2.0. The described federated architecture is a research goal and is not implemented in the current system.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: Synthesizing from Sensitive Data
 
 Many of the most valuable applications for CNS 2.0 involve synthesizing information from sensitive or proprietary data sources. For example:

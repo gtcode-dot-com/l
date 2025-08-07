@@ -8,6 +8,31 @@ sitemap:
   priority: 0.6
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document explains the practical steps of running the DSPy optimizer to compile a self-optimizing module.
+
+ROLE IN HIERARCHY:
+This is the third step in the "DSPy Self-Optimization" tutorial, showing how to use the components defined in the previous step to perform the actual optimization.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- DSPy Optimizer
+- DSPy Compiler
+- BootstrapFewShot
+- dspy.Module
+- Language Model Configuration
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as a code-focused, sequential step in a tutorial. The key action is the `optimizer.compile()` call, which is the central event of the DSPy workflow.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 Now that we have defined our task with a `Signature`, a `Metric`, and a `trainset`, we can hand things over to the DSPy `BootstrapFewShot` optimizer. The optimizer's job is to explore different ways of prompting an LLM to find a prompt that reliably succeeds on our training examples, as judged by our `critic_pipeline_metric`.
 
 ### 1. Setting Up the DSPy Environment

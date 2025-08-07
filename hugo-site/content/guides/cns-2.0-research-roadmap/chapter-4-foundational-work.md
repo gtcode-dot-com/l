@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document outlines the two foundational research projects that build upon the Minimum Viable Experiment to enable autonomous, at-scale operation of the CNS 2.0 system.
+
+ROLE IN HIERARCHY:
+This is Chapter 4 of the "Research Roadmap," detailing the critical next steps: automating SNO creation (the Narrative Ingestion Pipeline) and replacing heuristic critics with data-driven models.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Foundational Work
+- Narrative Ingestion Pipeline
+- Data-Driven Critic
+- DSPy Optimization
+- Statistical Success Criteria
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as the bridge from the initial proof-of-concept to a production-ready system. It details the specific research and engineering work required to automate and improve the core components of the CNS 2.0 framework.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 The successful completion of our Minimum Viable Experiment (MVE) establishes the foundational proof-of-concept for CNS 2.0. However, the acknowledged limitations—manual SNO creation and heuristic-based evaluation—define precise research objectives for scaling beyond controlled experimentation to autonomous operation.
 
 This chapter specifies two critical research projects comprising the **Foundational Work** phase, each with mathematical validation frameworks and statistical success criteria. These projects bridge the gap between our manual prototype and the self-optimizing system architecture detailed in the [Developer's Guide Chapter 7](/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/), establishing the technical prerequisites for advanced research phases.

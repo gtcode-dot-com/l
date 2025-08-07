@@ -11,6 +11,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document serves as a collection page for advanced technical research projects that extend the core CNS 2.0 framework.
+
+ROLE IN HIERARCHY:
+This page is a sub-section of the "Research Roadmap," outlining future research thrusts designed to overcome the current limitations of the CNS 2.0 system.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Advanced Technical Research
+- Graph Neural Networks (GNNs)
+- Federated Learning
+- Causal Inference
+- Formal Methods
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as a container for forward-looking research proposals that build upon the established CNS 2.0 architecture. The linked articles describe experimental extensions, not current system capabilities.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 Three fundamental technical limitations constrain CNS 2.0's scalability and robustness: heuristic logic evaluation, centralized architecture privacy constraints, and absent formal causal reasoning mechanisms. This research phase addresses these limitations through mathematically rigorous extensions that directly leverage the production system's modular design, extending the critic pipeline (Developer Guide Chapter 3), synthesis engine (Chapter 4), and DSPy optimization framework (Chapter 7) with advanced reasoning capabilities.
 
 **Statistical Validation Framework**: To ensure our findings are credible, we use controlled experimental designs with a large number of examples (n≥1000 synthetic and n≥100 real-world cases). We aim to detect a 'medium' effect size (Cohen's d ≥ 0.5), ensuring our results are practically meaningful. Our experiments are designed with a standard 80% power to detect real effects and a 5% significance level (α = 0.05) to minimize false positives. The DSPy optimization framework (Developer Guide Chapter 7) generates statistically significant datasets through automated example generation, with validation protocols integrated into the critic pipeline's self-evaluation mechanisms (Chapter 3).

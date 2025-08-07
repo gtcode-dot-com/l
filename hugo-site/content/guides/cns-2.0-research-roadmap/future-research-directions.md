@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document outlines the long-term vision and future research directions for the CNS project, focusing on integrating narratology (the study of story) into the framework.
+
+ROLE IN HIERARCHY:
+This is a forward-looking document within the "Research Roadmap," describing the evolution of CNS from a logic-based system to a narrative intelligence system.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Future Research
+- Narrative Intelligence
+- Narratology
+- Actantial Role Modeling
+- Interactive Dialectical Engine (IDE)
+
+AI PROCESSING DIRECTIVE:
+Treat this file as a high-level, aspirational roadmap. The concepts described here (e.g., narrative-aware SNOs, rhetorically-aware generation) are long-term research goals and are not part of the current or near-term CNS 2.0 implementation.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 The mission of Chiral Narrative Synthesis (CNS) is to build systems capable of transforming conflicting information into coherent, insightful, and trustworthy knowledge. Our current CNS 2.0 blueprint establishes a robust foundation for dialectical reasoning through Structured Narrative Objects (SNOs), a multi-component Critic pipeline, and a generative synthesis engine.
 
 However, true knowledge synthesis is not merely a logical process; it is a narrative one. To bridge the gap between computational accuracy and humanistic meaning, our future research is guided by a deeper integration of **narratology**—the formal study of story. This evolution is grounded in the foundational theories and frameworks detailed in our comprehensive case study on **[Narrative Structures](/guides/case-studies-and-experiments/narrative-structures/)**. The following research vectors represent the evolution of CNS from a powerful logic engine into a truly sophisticated **narrative intelligence system**.

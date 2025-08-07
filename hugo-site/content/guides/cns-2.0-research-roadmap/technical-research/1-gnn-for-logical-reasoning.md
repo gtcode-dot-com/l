@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document outlines a specific research project to replace the heuristic-based Logic Critic in CNS 2.0 with a more powerful model using Graph Neural Networks (GNNs).
+
+ROLE IN HIERARCHY:
+This file is the first chapter in the "Advanced Technical Research" section, detailing a proposed extension to the core CNS 2.0 critic pipeline.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Graph Neural Networks (GNNs)
+- Logic Critic
+- Argumentation Graphs
+- Fallacy Detection
+- Explainable AI (XAI)
+
+AI PROCESSING DIRECTIVE:
+Treat this file as a detailed research proposal for a future system enhancement. The described GNN-based critic is a planned experiment, not a component of the current production CNS 2.0 architecture.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: Beyond Heuristics
 
 The heuristic-based `LogicCritic` developed in the foundational phase (and implemented in **[Chapter 3 of the Developer's Guide](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/)**) is transparent and effective for well-structured arguments. However, it has significant limitations. It relies on a predefined set of rules and cannot easily detect more subtle or novel forms of logical fallacies, nor can it learn from new data. To truly assess the complex reasoning graphs that will be generated at scale, we need a more powerful, data-driven approach.

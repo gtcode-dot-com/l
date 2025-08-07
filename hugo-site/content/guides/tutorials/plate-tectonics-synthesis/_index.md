@@ -9,6 +9,31 @@ sitemap:
   priority: 0.6
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document serves as the landing page for an advanced tutorial on the statistical validation of a CNS 2.0 synthesis, using the historical plate tectonics debate as a case study.
+
+ROLE IN HIERARCHY:
+This is a "CollectionPage" for a specific, advanced tutorial that demonstrates the mathematical framework for rigorous, publication-quality experimental design within the CNS 2.0 project.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Statistical Validation
+- Dialectical Synthesis
+- Statistical Prototype
+- Power Analysis
+- Experimental Design
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the starting point for an advanced, research-focused tutorial. The linked pages provide a step-by-step guide to the project's core scientific validation methodology.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 # Tutorial: Statistical Prototype for Dialectical Synthesis Validation
 
 This tutorial demonstrates the mathematical framework for validating CNS 2.0's dialectical synthesis capabilities through statistically rigorous experimentation. The historical debate between **Plate Tectonics** and **Geosyncline theory** serves as our **statistical prototype**—a single, carefully constructed validation case that establishes the methodology for automated generation of n ≥ 30 synthesis pairs required for publication-quality scientific validation.

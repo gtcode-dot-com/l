@@ -9,6 +9,31 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document introduces the plate tectonics vs. geosyncline theory debate as the ideal 'statistical prototype' for validating the CNS 2.0 synthesis engine.
+
+ROLE IN HIERARCHY:
+This is the first step in the "Statistical Validation of a Synthesis" tutorial, explaining the case study's selection criteria and the mathematical framework for scaling the experiment.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Case Study Introduction
+- Statistical Prototype
+- Plate Tectonics
+- Geosyncline Theory
+- Power Analysis
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as the introduction to a detailed, research-oriented tutorial. It establishes the scientific and statistical context for the subsequent practical steps.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 This advanced tutorial demonstrates how a single, well-defined case study is used as a 'statistical prototype' to establish the methodology for a large-scale, scientifically rigorous validation of the CNS 2.0 synthesis engine. It is intended for researchers who need to understand the project's experimental design and validation framework.
 
 ## Statistical Prototype Design: Establishing the Mathematical Foundation

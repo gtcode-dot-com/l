@@ -8,6 +8,31 @@ sitemap:
   priority: 0.6
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document provides a code-heavy, practical guide to defining a task for the DSPy framework by setting up its three core components: the Signature, the Metric, and the training Examples.
+
+ROLE IN HIERARCHY:
+This is the second, implementation-focused step in the "DSPy Self-Optimization" tutorial. It translates the concepts from the introduction into concrete Python code.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- DSPy Signature
+- DSPy Metric
+- DSPy Examples
+- Task Definition
+- Critic Pipeline Integration
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as a sequential step in a tutorial. The code blocks are central to this document and demonstrate the practical setup required before running the DSPy optimizer.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 Before we can optimize our synthesis module, we need to formally define the task for DSPy. This involves three key components:
 
 1.  **The Signature:** Defines the inputs and outputs of our task.

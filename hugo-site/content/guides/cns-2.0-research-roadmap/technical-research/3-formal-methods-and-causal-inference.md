@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document details a research project to integrate formal logical systems and causal reasoning frameworks into the CNS 2.0 architecture.
+
+ROLE IN HIERARCHY:
+This file is the third chapter in the "Advanced Technical Research" section, proposing to enhance the system's reasoning from plausibility to provability.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Formal Methods
+- Causal Inference
+- Automated Theorem Proving
+- Causal Discovery
+- Logical Validity
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as a research proposal for a future, highly advanced version of CNS 2.0. The capabilities described, such as formal verification and causal discovery, are research goals and not part of the current system.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: From Plausibility to Provability
 
 The core CNS 2.0 system, even with a GNN-based logic critic, operates primarily in the realm of **plausibility**. It generates syntheses that are coherent, well-grounded, and structurally sound based on patterns learned from data. However, it cannot *formally prove* that its conclusions are logically valid, nor can it distinguish a robust **causal** link from a simple correlation. For high-stakes domains like mathematical proofs, legal reasoning, or scientific discovery, this is a critical limitation.

@@ -8,6 +8,31 @@ sitemap:
   priority: 0.6
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document introduces the core problem of brittle prompt engineering and presents the DSPy framework as a programmatic solution for creating robust, self-optimizing AI systems.
+
+ROLE IN HIERARCHY:
+This is the first step in the "DSPy Self-Optimization" tutorial, providing the conceptual background and motivation for the rest of the walkthrough.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Prompt Engineering
+- Brittle Prompts
+- Programmatic Optimization
+- DSPy Framework
+- Self-Optimization Loop
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as the introductory chapter of a tutorial. It establishes the "why" before the subsequent chapters explain the "how."
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Problem: The Brittleness of Prompt Engineering
 
 Large Language Models (LLMs) are incredibly powerful, but getting them to perform a specific, complex reasoning task reliably is a major challenge. The standard approach is "prompt engineering": manually tweaking the text of a prompt, often through trial and error, until it produces the desired output for a few examples.

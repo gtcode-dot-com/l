@@ -10,6 +10,31 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+PURPOSE:
+This document explains the experimental design philosophy for validating the CNS 2.0 framework, focusing on isolating the Dialectical Synthesis Engine for rigorous testing.
+
+ROLE IN HIERARCHY:
+This is Chapter 1 of the "Research Roadmap," detailing the transition from the broad architectural vision to a focused, scientifically valid experiment.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- Experimental Design
+- Variable Isolation
+- Minimum Viable Experiment
+- Dialectical Synthesis Engine
+- Statistical Validation
+
+AI PROCESSING DIRECTIVE:
+Recognize this file as the methodological foundation for the research project. It justifies the focus on the synthesis engine and outlines the statistical framework used to validate the core hypothesis.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ## CNS 2.0 System Architecture
 
 The complete CNS 2.0 architecture encompasses four integrated subsystems: automated narrative ingestion with argumentation mining capabilities, GNN-based logical validation through multi-component critic pipelines, autonomous multi-agent synthesis environments, and self-optimizing DSPy-driven prompt evolution. Each subsystem implements specific mathematical frameworks—the ingestion pipeline employs transformer-based embedding models for semantic extraction, the critic system utilizes graph neural networks for logical relationship validation, the synthesis engine operates through dialectical pair selection using chirality scores and evidential entanglement metrics, and the optimization layer leverages programmatic prompt compilation with graded evaluation metrics.
