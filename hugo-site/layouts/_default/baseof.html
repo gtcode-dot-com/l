@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ if .Params.meta_keywords }}<meta name="keywords" content="{{ .Params.meta_keywords }}">{{ end }}
     <meta name="author" content="{{ .Site.Params.author }}">
-    {{ .Params.custom_meta | safeHTML }}
-    {{ .Params.custom_meta2 | safeHTML }}
-    {{ .Params.custom_meta3 | safeHTML }}
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     
@@ -23,11 +21,6 @@
     <!-- KaTeX for math rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet">
-    
-
-
-
-
     
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
