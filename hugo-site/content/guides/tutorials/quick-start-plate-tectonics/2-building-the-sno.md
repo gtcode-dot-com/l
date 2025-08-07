@@ -9,6 +9,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document provides a code-first guide to constructing the parent Structured Narrative Objects (SNOs) for the tutorial's case study.
+
+PURPOSE:
+To provide the Python code for constructing the two parent SNOs, representing the Geosyncline and Plate Tectonics theories.
+
+ROLE IN HIERARCHY:
+This is Part 2 of the "Quick Start" tutorial, representing the first hands-on, code-based step in the tutorial sequence.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Structured Narrative Object (SNO):** The core data structure being created.
+- **Parent SNOs:** The two input objects for the synthesis engine.
+- **Reasoning Graph:** The logical structure of claims within an SNO.
+- **Evidence Set:** The collection of source evidence linked to claims.
+- **Python Code:** The primary content and method of instruction in this document.
+
+AI PROCESSING DIRECTIVE:
+Recognize this document as a foundational, code-centric step in a tutorial. The Python code blocks are the central element, demonstrating the practical construction of the SNOs that will be used in subsequent steps.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 This section provides the Python code to construct the two parent Structured Narrative Objects (SNOs): one for Geosyncline theory and one for Plate Tectonics.
 
 ### Setting Up the Environment

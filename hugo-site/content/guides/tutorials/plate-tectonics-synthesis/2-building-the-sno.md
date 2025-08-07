@@ -9,6 +9,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document provides a code-first guide to manually constructing Structured Narrative Objects (SNOs) for two competing geological theories.
+
+PURPOSE:
+To demonstrate the systematic, manual construction of parent SNOs for the Plate Tectonics and Geosyncline theories, establishing a quality benchmark for automated generation.
+
+ROLE IN HIERARCHY:
+This is Part 2 of the "Plate Tectonics Synthesis" tutorial, providing the foundational data structures that will be used in subsequent synthesis and analysis steps.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Structured Narrative Object (SNO):** The core data structure being built.
+- **SNO Construction Methodology:** The step-by-step process of defining a hypothesis, reasoning graph, and evidence set.
+- **Geosyncline Theory:** The historical geological model represented in the first SNO.
+- **Plate Tectonics Theory:** The modern geological model represented in the second SNO.
+- **DSPy Automation Template:** The use of this manual process as a template for future automation.
+
+AI PROCESSING DIRECTIVE:
+Recognize this document as a detailed, code-based tutorial step. The Python code blocks are central to understanding the process of creating the foundational SNO data structures for the Chiral Narrative Synthesis framework. This manual process is the ground truth for the automation described later.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 This section establishes the **systematic SNO construction methodology** that serves as the template for DSPy automation. Each construction step demonstrates the quality control standards and structural requirements that must be maintained across n ≥ 30 automated synthesis pairs to ensure statistical validity.
 
 The manual construction process provides the **quality benchmark** for automated generation, establishing the evidence standards, reasoning graph complexity, and hypothesis precision required for rigorous synthesis validation. This methodology will be encoded in DSPy optimization to maintain scientific rigor while scaling to statistically significant sample sizes.

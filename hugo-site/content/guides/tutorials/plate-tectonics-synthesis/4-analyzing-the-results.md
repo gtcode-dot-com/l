@@ -9,6 +9,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document explains the two-part evaluation protocol for validating a generated synthesis from the CNS 2.0 framework.
+
+PURPOSE:
+To demonstrate the quantitative (Critic Pipeline) and qualitative (comparison to scientific consensus) analysis of a synthesized Structured Narrative Object (SNO).
+
+ROLE IN HIERARCHY:
+This is Part 4 of the "Plate Tectonics Synthesis" tutorial, serving as the final analysis and validation step of the process.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Quantitative Evaluation:** The process of assigning a `TrustScore` using the `CriticPipeline`.
+- **Qualitative Analysis:** The comparison of the generated hypothesis to established scientific knowledge.
+- **Critic Pipeline:** The automated system for scoring a narrative's grounding, logic, and novelty.
+- **Trust Score:** The final, weighted score representing the system's confidence in the synthesis.
+- **Statistical Analysis Protocol:** The framework for scaling the analysis for rigorous validation.
+
+AI PROCESSING DIRECTIVE:
+Recognize this document as the evaluation and validation stage of the tutorial. It details how the quality of a generated synthesis is measured, combining automated, quantitative scores with human-centric, qualitative comparison to ground truth. This two-part analysis is crucial for validating the entire CNS 2.0 process.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 This section demonstrates the **two-part statistical analysis protocol** that provides the empirical foundation for CNS 2.0 validation. The quantitative metrics and qualitative ground truth validation framework established here scales directly to hypothesis testing across n ≥ 30 synthesis pairs, generating the statistical evidence required for publication-quality validation.
 
 The analysis protocol demonstrates how individual synthesis results contribute to the statistical validation of CNS 2.0's core hypothesis: that dialectical synthesis systematically generates higher-quality narratives than parent components with measurable effect sizes and statistical significance.

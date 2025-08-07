@@ -9,6 +9,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document details the process of running the core synthesis engine on a pair of conflicting Structured Narrative Objects (SNOs).
+
+PURPOSE:
+To demonstrate how the ChiralPairDetector identifies a candidate pair and the GenerativeSynthesisEngine produces a novel, higher-order synthesis from two conflicting SNOs.
+
+ROLE IN HIERARCHY:
+This is Part 3 of the "Plate Tectonics Synthesis" tutorial, showcasing the central synthesis step that follows SNO construction and precedes results analysis.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Generative Synthesis Engine:** The core component that performs the dialectical reasoning task.
+- **ChiralPairDetector:** The tool used to quantitatively assess the conflict and suitability of an SNO pair for synthesis.
+- **CScore (Chirality Score):** The key metric for measuring the degree of semantic opposition between two narratives.
+- **Dialectical Reasoning:** The process of resolving contradictions to form a new hypothesis.
+- **Quantitative Synthesis Validation:** The framework for collecting metrics to validate the synthesis process.
+
+AI PROCESSING DIRECTIVE:
+Recognize this document as the primary execution step in the tutorial. The process flows from identifying a conflicting pair with the ChiralPairDetector to generating a new narrative with the GenerativeSynthesisEngine. This is the central action of the CNS 2.0 framework.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 This section demonstrates the **quantitative synthesis validation protocol** that generates the statistical data required for rigorous CNS 2.0 validation. Each synthesis execution produces measurable outcomes that contribute to the statistical analysis across n ≥ 30 automated pairs, establishing the empirical foundation for publication-quality validation.
 
 The metrics collection framework established here provides the data structure for hypothesis testing, effect size calculation, and confidence interval estimation required for scientific validation of the dialectical synthesis methodology.

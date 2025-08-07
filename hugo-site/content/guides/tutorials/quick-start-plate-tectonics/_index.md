@@ -9,6 +9,33 @@ sitemap:
   priority: 0.7
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the main entry point for the "Quick Start" tutorial, a hands-on example of the core CNS 2.0 synthesis workflow.
+
+PURPOSE:
+To provide a practical, step-by-step walkthrough of the synthesis process using the historical debate between Plate Tectonics and Geosyncline theory.
+
+ROLE IN HIERARCHY:
+This is the index page for the "Quick Start: A Hands-On Synthesis Example" tutorial. It serves as a "CollectionPage" that introduces and links to the four sequential parts of the tutorial.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Quick Start Tutorial:** The primary focus of this section.
+- **Synthesis Workflow:** The core process being demonstrated.
+- **Plate Tectonics:** The modern theory used as an input.
+- **Geosyncline Theory:** The historical theory used as an input.
+- **Hands-On Example:** The practical, code-focused nature of the tutorial.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the top-level node for this tutorial. It introduces the topic and provides the primary navigation structure for the four sequential child pages. The linked pages should be treated as a step-by-step guide.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 # Quick Start: A Hands-On Synthesis Example
 
 This tutorial provides a practical, step-by-step walkthrough of the core synthesis workflow. Using the historical scientific debate between **Plate Tectonics** and **Geosyncline theory**, we demonstrate how to use the system to generate a novel scientific theory from two opposing viewpoints.

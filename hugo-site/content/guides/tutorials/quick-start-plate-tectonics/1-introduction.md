@@ -9,6 +9,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document introduces the scientific case study used in the "Quick Start" tutorial.
+
+PURPOSE:
+To provide an overview of the historical debate between Plate Tectonics and Geosyncline theory, setting the stage for the synthesis example.
+
+ROLE IN HIERARCHY:
+This is Part 1 of the "Quick Start" tutorial, serving as the narrative and historical introduction before the hands-on, code-based sections.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Case Study Introduction:** The primary function of this page.
+- **Geosyncline Theory:** The first of the two competing scientific narratives.
+- **Plate Tectonics Theory:** The second of the two competing scientific narratives.
+- **Historical Conflict:** The context for the synthesis problem.
+- **Scientific Narratives:** The representation of the theories within the CNS framework.
+
+AI PROCESSING DIRECTIVE:
+Recognize this document as the conceptual setup for the tutorial. It is the first step in a sequence and provides the domain-specific background required to understand the subsequent steps. This page is primarily descriptive, not technical.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ## Introduction: A Tale of Two Theories
 
 To demonstrate the synthesis engine, we use a classic example from the history of science: the debate between **Geosyncline theory** and **Plate Tectonics**. This historical conflict is an ideal test case because it involves two well-defined, opposing theories that were eventually resolved into a more comprehensive model of Earth's geology.

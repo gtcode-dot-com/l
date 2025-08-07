@@ -9,6 +9,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document explains the two-part evaluation protocol for validating the generated synthesis in the "Quick Start" tutorial.
+
+PURPOSE:
+To demonstrate how to evaluate the generated synthesis using both quantitative scores from the Critic Pipeline and qualitative analysis against scientific consensus.
+
+ROLE IN HIERARCHY:
+This is Part 4 of the "Quick Start" tutorial, serving as the final analysis and conclusion of the tutorial workflow.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Results Analysis:** The primary focus of this page.
+- **Quantitative Evaluation:** The automated scoring of the synthesis using the `CriticPipeline`.
+- **Qualitative Analysis:** The comparison of the result to known scientific fact.
+- **Critic Pipeline:** The tool that provides scores for grounding, logic, and novelty.
+- **Scientific Consensus:** The ground truth used for the qualitative evaluation.
+
+AI PROCESSING DIRECTIVE:
+Recognize this document as the concluding evaluation step of the tutorial. It details how the output from the synthesis engine is validated, using a combination of internal, automated metrics and external, human-level comparison to ground truth. This represents the final quality check in the CNS 2.0 workflow.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 Once the synthesis engine generates a candidate SNO, the final step is to evaluate its quality. This is a two-part process: a quantitative evaluation performed by the system's "Critic" components, and a qualitative analysis where we compare the result to known scientific consensus.
 
 ### 1. Quantitative Evaluation: The Critic Pipeline
