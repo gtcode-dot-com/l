@@ -27,7 +27,8 @@ minify:
   tdewolff:
     html:
       keepComments: true
-
+      keepQuotes: true
+      
 menu:
   main:
     - name: "Developer's Guide"
