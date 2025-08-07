@@ -7,149 +7,161 @@
     <meta name="description" content="An examination of how early traumatic brain injury and subsequent institutional failures can create cascading effects across a lifetime">
     <style>
         body {
-            font-family: Georgia, serif;
-            line-height: 1.7;
+            font-family: 'Avenir', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+            line-height: 1.65;
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #0a0b0d;
             min-height: 100vh;
+            color: #e8eaed;
         }
         
         .container {
-            background: rgba(255, 255, 255, 0.95);
+            background: #1a1d23;
             padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            backdrop-filter: blur(10px);
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.8), 0 8px 32px rgba(0,0,0,0.5);
+            border: 1px solid #2d3139;
         }
         
         header {
-            border-bottom: 3px solid #667eea;
+            border-bottom: 1px solid #c9aa71;
             padding-bottom: 20px;
             margin-bottom: 30px;
             text-align: center;
         }
         
         h1 {
-            color: #2c3e50;
+            color: #f4f1e8;
             font-size: 2.2em;
             margin-bottom: 10px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            font-weight: 300;
+            letter-spacing: -0.02em;
         }
         
         .subtitle {
-            color: #7f8c8d;
+            color: #a8b0b8;
             font-style: italic;
             font-size: 1.1em;
             margin-bottom: 15px;
+            font-weight: 300;
         }
         
         .trauma-timeline {
-            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-            color: white;
+            background: #2a1810;
+            color: #f4f1e8;
             padding: 25px;
-            border-radius: 10px;
+            border-radius: 2px;
             margin: 25px 0;
-            box-shadow: 0 8px 16px rgba(255,107,107,0.3);
+            border-left: 3px solid #8b4513;
+            box-shadow: inset 0 1px 0 rgba(139,69,19,0.2);
         }
         
         .brain-impact {
-            background: linear-gradient(135deg, #4ecdc4, #44a08d);
-            color: white;
+            background: #1a2420;
+            color: #f4f1e8;
             padding: 25px;
-            border-radius: 10px;
+            border-radius: 2px;
             margin: 25px 0;
-            box-shadow: 0 8px 16px rgba(78,205,196,0.3);
+            border-left: 3px solid #2d5233;
+            box-shadow: inset 0 1px 0 rgba(45,82,51,0.2);
         }
         
         .sensory-damage {
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-            color: white;
+            background: #241a24;
+            color: #f4f1e8;
             padding: 25px;
-            border-radius: 10px;
+            border-radius: 2px;
             margin: 25px 0;
-            box-shadow: 0 8px 16px rgba(240,147,251,0.3);
+            border-left: 3px solid #5d3a5d;
+            box-shadow: inset 0 1px 0 rgba(93,58,93,0.2);
         }
         
         .life-trajectory {
-            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            background: #252219;
             padding: 25px;
-            border-radius: 10px;
+            border-radius: 2px;
             margin: 25px 0;
-            box-shadow: 0 8px 16px rgba(252,182,159,0.3);
-            color: #2c3e50;
+            border-left: 3px solid #c9aa71;
+            box-shadow: inset 0 1px 0 rgba(201,170,113,0.2);
+            color: #f4f1e8;
         }
         
         .systemic-failure {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
+            background: #1f1f1f;
+            color: #f4f1e8;
             padding: 25px;
-            border-radius: 10px;
+            border-radius: 2px;
             margin: 25px 0;
-            box-shadow: 0 8px 16px rgba(44,62,80,0.3);
+            border-left: 3px solid #666666;
+            box-shadow: inset 0 1px 0 rgba(102,102,102,0.2);
         }
         
         .current-state {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
+            background: #1a1e24;
+            color: #f4f1e8;
             padding: 25px;
-            border-radius: 10px;
+            border-radius: 2px;
             margin: 25px 0;
-            box-shadow: 0 8px 16px rgba(102,126,234,0.3);
+            border-left: 3px solid #4a5568;
+            box-shadow: inset 0 1px 0 rgba(74,85,104,0.2);
         }
         
         h2 {
             color: inherit;
-            border-bottom: 2px solid rgba(255,255,255,0.3);
+            border-bottom: 1px solid rgba(201,170,113,0.3);
             padding-bottom: 8px;
             margin-bottom: 15px;
+            font-weight: 400;
+            letter-spacing: -0.01em;
         }
         
         h3 {
             color: inherit;
             margin-top: 20px;
             margin-bottom: 10px;
+            font-weight: 400;
         }
         
         .highlight {
-            background: rgba(255,255,255,0.2);
+            background: rgba(201,170,113,0.1);
             padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid rgba(255,255,255,0.5);
+            border-radius: 2px;
+            border-left: 2px solid rgba(201,170,113,0.4);
             margin: 15px 0;
         }
         
         .age-marker {
-            font-weight: bold;
-            color: #e74c3c;
+            font-weight: 500;
+            color: #c9aa71;
             font-size: 1.1em;
         }
         
         .neurological-symptom {
-            background: rgba(255,255,255,0.15);
+            background: rgba(0,0,0,0.15);
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 2px;
             margin: 8px 0;
-            border-left: 3px solid rgba(255,255,255,0.4);
+            border-left: 2px solid rgba(255,255,255,0.2);
         }
         
         footer {
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #bdc3c7;
-            color: #7f8c8d;
+            border-top: 1px solid #2d3139;
+            color: #a8b0b8;
             font-size: 0.9em;
         }
         
         .legal-note {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
+            background: #252829;
+            border: 1px solid #3a3f47;
+            border-radius: 2px;
             padding: 20px;
             margin: 25px 0;
-            color: #495057;
+            color: #e8eaed;
             font-size: 0.9em;
         }
     </style>
@@ -166,7 +178,7 @@
             <strong>Note:</strong> This analysis examines the long-term neurological and psychological consequences of childhood trauma, sensory damage, and encounters with institutional corruption. The case presented illustrates how early brain injury can create vulnerabilities that compound across decades when protective systems fail.
         </div>
 
-        <p style="font-size: 1.1em; color: #2c3e50; font-style: italic;">
+        <p style="font-size: 1.1em; color: #e8eaed; font-style: italic; font-weight: 300;">
             What happens when a developing brain suffers traumatic injury at critical stages, then encounters institutional betrayal at every turn seeking help? This case study examines a trajectory from promising student to homeless whistleblower, illustrating how neurological damage and systemic failures create cascading consequences across a lifetime.
         </p>
 
@@ -301,16 +313,16 @@
             </div>
         </div>
 
-        <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 25px 0; border-left: 5px solid #17a2b8;">
-            <h2 style="color: #2c3e50;">Implications for Society</h2>
-            <p style="color: #2c3e50;">This case illustrates critical failures in how society handles:</p>
-            <ul style="color: #2c3e50;">
+        <div style="background: #252829; padding: 25px; border-radius: 2px; margin: 25px 0; border-left: 2px solid #c9aa71;">
+            <h2 style="color: #f4f1e8;">Implications for Society</h2>
+            <p style="color: #e8eaed;">This case illustrates critical failures in how society handles:</p>
+            <ul style="color: #e8eaed;">
                 <li><strong>Childhood Trauma Recognition:</strong> Early intervention could have prevented decades of suffering</li>
                 <li><strong>Invisible Disabilities:</strong> Neurological damage often goes unrecognized and unsupported</li>
                 <li><strong>Institutional Accountability:</strong> Corrupted systems exploit vulnerable individuals with impunity</li>
                 <li><strong>Whistleblower Protection:</strong> Those who expose corruption face systematic retaliation</li>
             </ul>
-            <p style="color: #2c3e50; font-weight: bold;">
+            <p style="color: #c9aa71; font-weight: 500;">
                 When protective systems become predatory systems, the most vulnerable members of society—those already damaged by trauma—become targets rather than recipients of help.
             </p>
         </div>
