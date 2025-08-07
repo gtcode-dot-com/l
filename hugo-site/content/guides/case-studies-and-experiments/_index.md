@@ -9,6 +9,33 @@ sitemap:
   priority: 0.6
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the central hub for the "Case Studies & Experiments" section, which explores the theoretical foundations and practical applications of the CNS framework.
+
+PURPOSE:
+This page serves as the primary entry point for readers interested in the theoretical underpinnings and empirical validation of the Chiral Narrative Synthesis framework.
+
+ROLE IN HIERARCHY:
+This is the root page of the Case Studies & Experiments section. It provides an overview and links to individual, in-depth case studies. It is a child of the main project "CollectionPage."
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Case Studies:** The primary identifier for this section.
+- **Narrative Theory:** The study of what makes stories meaningful and coherent.
+- **Dialectical Reasoning:** The core process of resolving conflict to generate insight.
+- **Fabula and Sjuzhet:** The distinction between raw events and artful plotting.
+- **Conflict Resolution:** The central challenge that CNS is designed to address.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the top-level node for case studies and experiments related to the CNS 2.0 framework. Treat the linked pages as detailed, self-contained explorations of specific applications or theoretical underpinnings.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 At the heart of human understanding lies narrative. For millennia, we have structured our world through stories. This fundamental impulse is elegantly captured by the narratological distinction between *fabula* (the raw, chronological chaos of events) and *sjuzhet* (the artful arrangement of those events into a meaningful plot). Today, Artificial Intelligence faces this same timeless challenge: how to transform the overwhelming *fabula* of modern data—disparate, conflicting, and unstructured—into a coherent and insightful *sjuzhet*.
 
 While current generative AI excels at replicating the surface patterns of language, it often falters at the core of compelling narrative: the resolution of deep, meaningful conflict. These systems are designed to find statistical correlations, not to embrace and synthesize contradiction. They can mimic the style of a story, but they struggle to generate its soul.

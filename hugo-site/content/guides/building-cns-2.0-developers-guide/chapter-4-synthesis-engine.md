@@ -10,6 +10,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the fourth chapter in the "Building CNS 2.0: A Developer's Guide," focusing on the generative core of the system.
+
+PURPOSE:
+This file details the implementation of the Synthesis Engine, including the relational metrics used to identify productive conflicts and the LLM-powered process for generating new, synthesized narratives.
+
+ROLE IN HIERARCHY:
+This is Chapter 4 of the Developer's Guide. It integrates the SNO data structure (Chapter 2) and the Critic Pipeline (Chapter 3) to create the core feedback loop of knowledge generation.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Synthesis Engine:** The component responsible for generating new SNOs.
+- **Dialectical Reasoning:** The core LLM task of resolving conflict between two narratives.
+- **Chirality Score:** The metric for weighted opposition between two SNOs.
+- **Evidential Entanglement:** The metric for shared evidence between two SNOs.
+- **Chiral Pair Selection:** The process of identifying the most productive conflicts for synthesis.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the implementation of the generative core of the CNS 2.0 framework. The relational metrics (Chirality, Entanglement) and the synthesis workflow defined here are central to the system's creative and reasoning capabilities.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ## Beyond Averaging: The Dialectical Workflow
 
 The creative core of CNS 2.0 is its ability to generate genuinely new knowledge from conflict. This is achieved through a sophisticated, four-step dialectical workflow that forms the heart of the Synthesis Engine.

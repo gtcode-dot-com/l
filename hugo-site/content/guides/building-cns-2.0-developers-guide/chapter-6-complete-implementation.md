@@ -10,6 +10,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the sixth chapter in the "Building CNS 2.0: A Developer's Guide," focusing on production deployment and scaling.
+
+PURPOSE:
+This file provides a comprehensive guide for transforming the single-process CNS 2.0 prototype into a scalable, robust, and observable production-grade service.
+
+ROLE IN HIERARCHY:
+This is Chapter 6 of the Developer's Guide. It builds upon the integrated system from Chapter 5, detailing the architectural evolution required for real-world deployment.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Production Deployment:** The primary focus of the chapter.
+- **Scalability:** The ability to handle increased workloads by distributing tasks.
+- **Docker:** The technology used for containerizing the application.
+- **Celery:** The distributed task queue used for horizontal scaling.
+- **Observability:** The use of structured logging and externalized configuration for managing the system.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as a guide for operationalizing the CNS 2.0 system. The architectural patterns described (Docker, Celery, structured logging) are best practices for scaling the research prototype into a robust, distributed service.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ## From Prototype to Production
 
 In Chapter 5, we built a fully functional, single-process CNS system using `asyncio`. This is an excellent architecture for development and testing. This chapter answers the critical next question: **"How do I run this as a robust, scalable, production-grade service?"**

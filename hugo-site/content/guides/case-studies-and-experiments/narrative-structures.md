@@ -10,6 +10,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is a case study that provides a comprehensive overview of narrative structures, from foundational theories to modern applications.
+
+PURPOSE:
+This file provides a comprehensive overview of narrative structures, surveying foundational theories from literary criticism and exploring their modern applications in AI, UX, data visualization, and other domains.
+
+ROLE IN HIERARCHY:
+This is the second case study in the "Case Studies & Experiments" section. It establishes the theoretical "problem statement" that the CNS framework is designed to address by grounding our engineering efforts in the rich and timeless tradition of human storytelling.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Narrative Structure:** The fundamental framework that shapes a story.
+- **Narratology:** The academic study of narrative structure.
+- **Foundational Theories:** Key frameworks such as Aristotle's Poetics, Propp's Morphology, and Campbell's Hero's Journey.
+- **Computational Narratology:** The interdisciplinary field that uses computational tools to analyze and generate narratives.
+- **Transmedia Storytelling:** The strategy of distributing a story across multiple media platforms.
+
+AI PROCESSING DIRECTIVE:
+Treat this document as a broad survey of narrative theory. Its primary function is to establish the theoretical context and importance of structured narrative, which is the foundational problem that the CNS framework is designed to address.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ## **Introduction**
 
 Narrative structure refers to the fundamental framework that shapes how a story is presented and understood.[^1] It constitutes the organized framework that influences the presentation of events, characters, and themes to an audience.[^3] Understanding narrative structure involves examining how various narrative elements, such as character actions and settings, interact and are organized.[^1] While initial analysis often begins with foundational questions about the "who, what, when, where, and why" of a story to grasp its basic facts, a deeper investigation into the plot's dramatic structure is required for full comprehension.[^1]

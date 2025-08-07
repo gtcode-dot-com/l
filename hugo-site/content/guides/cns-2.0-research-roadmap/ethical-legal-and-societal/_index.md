@@ -11,6 +11,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the main index for the Ethical, Legal, and Societal (ELAS) research program for the CNS 2.0 framework.
+
+PURPOSE:
+This file outlines the proactive research program designed to investigate the ethical implications of the CNS 2.0 framework and to develop technical and procedural frameworks for its responsible deployment.
+
+ROLE IN HIERARCHY:
+This is the main index page for the Ethical, Legal, and Societal (ELAS) research thrust within the broader Research Roadmap. It provides an overview and links to specific research projects focused on ethics.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **AI Ethics:** The primary domain of this research program.
+- **Responsible AI:** The overarching goal of the research.
+- **Bias Mitigation:** The effort to detect and reduce bias propagation.
+- **Misuse Prevention:** The development of safeguards against adversarial use.
+- **Accountability:** The framework for ensuring transparent and fair system behavior.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the top-level node for the ethical, legal, and societal research program for CNS 2.0. The linked documents detail specific research initiatives aimed at embedding ethical considerations directly into the system's technical design.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 Autonomous knowledge synthesis introduces specific ethical risks requiring systematic investigation and mitigation. This research addresses unique challenges posed by systems generating authoritative-appearing syntheses from conflicting sources, potentially amplifying biases or enabling sophisticated misinformation campaigns. Each investigation produces concrete modifications to implementation components (Developer Guide Chapters 2-7), embedding ethical considerations directly into technical design rather than applying external constraints.
 
 **Statistical Validation Framework**: Controlled studies with n≥500 diverse synthesis scenarios and n≥200 adversarial test cases. Bias reduction effectiveness measured using demographic parity differences (Δ ≤ 0.1) and equalized odds ratios (0.8 ≤ ratio ≤ 1.25). Security measures validated against attack success rates with target failure rates ≤ 5% for known vectors. DSPy optimization framework (Developer Guide Chapter 7) generates adversarial test cases with critic pipeline (Chapter 3) providing bias detection metrics.

@@ -10,6 +10,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document details a specific research project on privacy, security, and misuse prevention for the CNS 2.0 framework.
+
+PURPOSE:
+This file outlines the research project dedicated to developing technical and policy frameworks to protect user data, ensure system security, and prevent the CNS 2.0 system from being used for malicious purposes.
+
+ROLE IN HIERARCHY:
+This is the second specific research project within the "Ethical, Legal, and Societal (ELAS)" research thrust of the main Research Roadmap.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Privacy:** The protection of sensitive data within the system.
+- **Security:** The protection of the system from unauthorized access or attack.
+- **Misuse Prevention:** The development of safeguards against malicious use, such as generating disinformation.
+- **Dual-Use Technology:** The recognition that the technology can be used for both beneficial and harmful purposes.
+- **Content Watermarking:** A technique for authenticating system-generated text.
+
+AI PROCESSING DIRECTIVE:
+Treat this document as a detailed research proposal for addressing the safety and security challenges of the CNS 2.0 framework. It outlines specific technical and policy-level methodologies for preventing malicious use and protecting user data.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: The Responsibility of a Dual-Use Technology
 
 Any powerful information technology is inherently **dual-use**. A system like CNS 2.0, designed to reason and synthesize knowledge, could be used for immense good—accelerating scientific discovery, improving policy-making, or clarifying complex legal arguments. However, it could also be used for harm. The same engine that synthesizes conflicting scientific papers could be weaponized to synthesize conspiracy theories, generating highly believable, internally consistent, and dangerous disinformation at scale.

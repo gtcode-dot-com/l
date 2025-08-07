@@ -10,6 +10,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document details a specific research project on the longitudinal and cross-domain evaluation of the CNS 2.0 framework.
+
+PURPOSE:
+This file outlines the research project dedicated to evaluating the long-term performance stability and cross-domain generalization capabilities of the CNS 2.0 system.
+
+ROLE IN HIERARCHY:
+This is the first specific research project within the "Evaluation and Validation" research thrust of the main Research Roadmap.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Longitudinal Study:** The assessment of system performance over an extended period.
+- **Cross-Domain Validation:** The a-testing of the system's applicability in different knowledge domains.
+- **Performance Stability:** The consistency of the system's output quality over time.
+- **Generalizability:** The ability of the system to perform effectively in new, unseen contexts.
+- **System Adaptation:** The process of efficiently tuning the system for a new domain.
+
+AI PROCESSING DIRECTIVE:
+Treat this document as a detailed research proposal for assessing the real-world viability of the CNS 2.0 system. It outlines specific methodologies for testing the system's performance over time and across different knowledge domains, moving beyond static, single-domain benchmarks.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: Beyond a Single Snapshot
 
 Most AI system evaluations are based on static, single-domain datasets. This provides a valuable but incomplete snapshot, failing to answer critical questions about real-world viability. A truly robust and trustworthy reasoning system must be both **stable** over long-term operation and **generalizable** to new, unforeseen contexts.

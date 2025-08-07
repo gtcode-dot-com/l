@@ -11,6 +11,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the central hub for the "CNS 2.0 Research Roadmap," a multi-year program for the development, validation, and deployment of the framework.
+
+PURPOSE:
+This page serves as the primary entry point for academics, researchers, and stakeholders seeking to understand the comprehensive, multi-faceted research program for the CNS 2.0 framework.
+
+ROLE IN HIERARCHY:
+This is the root page of the Research Roadmap, providing an overview of the multi-year vision and linking to all major research phases, foundational documents, and specific research projects. It is a child of the main project "CollectionPage."
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Research Roadmap:** The primary identifier for this section.
+- **Scientific Validation:** The core focus on empirical, statistically rigorous testing.
+- **Ethical Framework:** The proactive approach to addressing bias, fairness, and misuse.
+- **Technical Architecture:** The plan for advancing the system's computational components.
+- **Multi-Year Vision:** The long-term plan for developing the framework.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the top-level node for the comprehensive research program for the CNS 2.0 project. Treat its sections as a sequentially dependent series of research phases, each with its own set of detailed documents.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 In complex fields like scientific research and intelligence analysis, professionals face a constant challenge: how to make sense of incomplete, uncertain, and often contradictory information. The Chiral Narrative Synthesis (CNS) 2.0 framework was designed to address this challenge.
 
 > **The Foundational Document:** This research roadmap is designed to execute the vision laid out in the [CNS 2.0 Blueprint](./blueprint/). For a complete list of foundational works, see the project's [annotated bibliography](./bibliography/).

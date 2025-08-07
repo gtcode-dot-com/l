@@ -9,6 +9,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document provides a high-level overview of the ethical principles and frameworks guiding the responsible development of the CNS 2.0 project.
+
+PURPOSE:
+This file serves as a summary of the project's commitment to ethical AI development, outlining the key ethical challenges and the approaches being taken to address them.
+
+ROLE IN HIERARCHY:
+This is a high-level index page within the Research Roadmap. It summarizes the project's overall approach to ethics and links to the specific, detailed research projects under the "Ethical, Legal, and Societal (ELAS)" research thrust.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **AI Ethics:** The central theme of this document.
+- **Responsible AI:** The guiding principle for the project's development.
+- **Bias and Fairness:** A primary ethical challenge being addressed.
+- **Privacy and Security:** A core area of ethical and technical focus.
+- **Dual-Use Technology:** The recognition of the technology's potential for both good and harm.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as a summary statement of the project's commitment to ethical AI development. Use it to understand the core ethical challenges that the project aims to address and to navigate to the detailed research papers that propose specific solutions.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 # Ethics & Responsibility in CNS 2.0
 
 A technology as powerful as Chiral Narrative Synthesis carries with it a profound responsibility. The ability to synthesize information and resolve contradictions can be used to accelerate scientific discovery and deepen understanding, but it can also be used to create sophisticated disinformation or perpetuate harmful biases.

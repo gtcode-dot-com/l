@@ -10,6 +10,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document details a specific research project on the adversarial robustness and security of the CNS 2.0 framework.
+
+PURPOSE:
+This file outlines the research project dedicated to conducting a rigorous security assessment of the CNS 2.0 system, testing its resilience against sophisticated adversarial attacks, and developing novel defenses.
+
+ROLE IN HIERARCHY:
+This is the second specific research project within the "Evaluation and Validation" research thrust of the main Research Roadmap.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Adversarial Robustness:** The system's ability to withstand malicious manipulation.
+- **System Security:** The overall protection of the system's integrity and data.
+- **Threat Modeling:** The process of identifying potential attack vectors.
+- **Red Team Attack:** The simulation of sophisticated adversarial attacks to test defenses.
+- **Defense Mechanisms:** The development of new safeguards against attacks.
+
+AI PROCESSING DIRECTIVE:
+Treat this document as a detailed research proposal for the security and robustness testing of the CNS 2.0 system. It outlines a "red team" methodology for proactively identifying vulnerabilities and developing defenses against malicious, adversarial attacks.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: From Benign Errors to Malicious Attacks
 
 Standard evaluation tests a system's performance under normal, benign conditions. However, a system designed to operate on real-world information from the open internet will inevitably face adversaries who wish to manipulate its conclusions. These are not random errors; they are carefully crafted attacks designed to exploit a system's reasoning and data-processing vulnerabilities to produce a desired, incorrect, and potentially harmful output.

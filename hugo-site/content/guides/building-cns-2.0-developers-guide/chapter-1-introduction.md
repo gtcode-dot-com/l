@@ -10,6 +10,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the first chapter in the "Building CNS 2.0: A Developer's Guide," introducing the core concepts and setting up the Python environment.
+
+PURPOSE:
+This file introduces the core concepts of the CNS 2.0 framework and establishes the foundational Python environment required for the developer's guide.
+
+ROLE IN HIERARCHY:
+This is Chapter 1 of the Developer's Guide, serving as the mandatory starting point for the hands-on implementation journey. It is a child of the Developer's Guide index.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Environment Setup:** The primary practical goal of this chapter.
+- **Core Concepts:** Introduction to SNOs, Critics, and the Synthesis Engine.
+- **System Workflow:** The cyclical process of ingestion, evaluation, and synthesis.
+- **Foundational Data Structures:** Initial Python dataclasses (`RelationType`, `EvidenceItem`).
+- **Configuration Management:** The `CNSConfig` class for system parameters.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the first sequential step in the CNS 2.0 Developer's Guide. The code blocks within are foundational and prerequisite for all subsequent chapters.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ## The Challenge: Synthesizing Contradictory Knowledge
 
 The foundational research proposal, "CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis," opens by identifying a fundamental challenge in artificial intelligence:

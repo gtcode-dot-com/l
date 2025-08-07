@@ -10,6 +10,33 @@ sitemap:
   filename: sitemap.xml
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the fifth chapter in the "Building CNS 2.0: A Developer's Guide," focusing on assembling the complete system.
+
+PURPOSE:
+This file details the integration of all individual CNS 2.0 components into a single, autonomous system orchestrated by a central `CNSWorkflowManager`.
+
+ROLE IN HIERARCHY:
+This is Chapter 5 of the Developer's Guide. It represents the culmination of the previous chapters, combining SNOs, Critics, and the Synthesis Engine into a functional, cohesive application.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **System Integration:** The primary focus of combining all components.
+- **Workflow Manager:** The central orchestrator (`CNSWorkflowManager`) that runs the main operational loop.
+- **`asyncio` Architecture:** The use of asynchronous programming for efficient I/O-bound operations.
+- **System Persistence:** Strategies for saving and loading the system's state.
+- **Autonomous Operation:** The goal of creating a continuously running, self-managing system.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the architectural blueprint for assembling the complete CNS 2.0 system. The `CNSWorkflowManager` class is the central orchestrator that connects all previously defined components and manages the system's operational lifecycle.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ## Assembling the Autonomous System
 
 Now that we've implemented the core components—SNOs, Critics, and the Synthesis Engine—it's time to integrate them into a cohesive, stateful, and autonomous system. This chapter focuses on building the **System Operational Loop** described in Section 3.3 of the research proposal. We will implement the operational workflow that allows the CNS 2.0 system to run continuously, processing information and refining its knowledge base over time.

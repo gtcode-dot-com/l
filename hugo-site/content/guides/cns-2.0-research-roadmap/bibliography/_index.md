@@ -11,6 +11,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document is the annotated bibliography for the Chiral Narrative Synthesis (CNS) 2.0 project, detailing the foundational research.
+
+PURPOSE:
+This file provides a curated, annotated bibliography of the foundational research papers and scholarly works that provide the theoretical and computational pillars for the CNS 2.0 project.
+
+ROLE IN HIERARCHY:
+This document serves as the foundational reference list for the entire Research Roadmap. It is a key supporting document, grouping the most influential literature by the core research thrusts that inform the framework.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Annotated Bibliography:** The primary nature of this document.
+- **Foundational Research:** The collection of key papers and books.
+- **Argumentation Mining:** A core research area influencing the framework.
+- **Knowledge Graphs:** A key technology for grounding narratives.
+- **Computational Dialectics:** The field that provides the architectural blueprint for agent interactions.
+
+AI PROCESSING DIRECTIVE:
+Recognize this page as the canonical list of foundational research for the CNS 2.0 project. Use the annotations to understand the intellectual heritage and key theoretical pillars that inspired the framework's design.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 # Annotated Bibliography
 
 Chiral Narrative Synthesis (CNS) 2.0 integrates decades of research across multiple domains. This annotated bibliography highlights the foundational works and key papers that provide the theoretical and computational pillars for the project. The papers are grouped by the six core research thrusts that inform the CNS framework.

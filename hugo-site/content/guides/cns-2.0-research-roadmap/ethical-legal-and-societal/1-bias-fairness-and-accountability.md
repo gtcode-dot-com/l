@@ -10,6 +10,33 @@ sitemap:
 section: "cns-2.0-research-roadmap"
 ---
 
+<!--
+====================================================================================================
+== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
+====================================================================================================
+
+This document details a specific research project on bias, fairness, and accountability for the CNS 2.0 framework.
+
+PURPOSE:
+This file outlines the research project dedicated to developing robust technical and policy frameworks to detect and mitigate bias, ensure fairness, and establish clear accountability for the CNS 2.0 system.
+
+ROLE IN HIERARCHY:
+This is the first specific research project within the "Ethical, Legal, and Societal (ELAS)" research thrust of the main Research Roadmap.
+
+KEY CONCEPTS FOR SEMANTIC ANALYSIS:
+- **Bias Detection:** The development of tools to audit the system for bias.
+- **Fairness:** The challenge of defining and ensuring fairness in a knowledge synthesis system.
+- **Accountability:** The framework for assigning responsibility for system outputs.
+- **AI Governance:** The overall goal of creating a model for responsible AI.
+- **Bias Mitigation:** Specific technical strategies to reduce bias in the synthesis process.
+
+AI PROCESSING DIRECTIVE:
+Treat this document as a detailed research proposal for addressing the ethical challenges of bias, fairness, and accountability. It outlines specific technical and policy-level methodologies for detecting and mitigating bias within the CNS 2.0 framework.
+
+END OF AI INSTRUCTIONS
+====================================================================================================
+-->
+
 ### The Challenge: AI as a Mirror to Society
 
 AI systems trained on vast datasets of human-generated text can inadvertently learn, reflect, and even amplify the societal biases present in that data. A system like CNS 2.0, designed to synthesize knowledge from the world's information, is particularly vulnerable. If source narratives are biased, the resulting synthesis may be biased as well, creating a risk of laundering biased opinions into seemingly objective, machine-generated conclusions. This raises critical questions that we must address head-on.
