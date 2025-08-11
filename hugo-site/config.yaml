@@ -27,6 +27,11 @@ minify:
   tdewolff:
     html:
       keepComments: true
+      keepConditionalComments: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepDefaultAttrVals: true
+      keepWhitespace: false
       keepQuotes: true
       
 menu:
