@@ -1,0 +1,356 @@
+/* American Autopsy - Supplemental Styling */
+
+/* Enhanced prosecution-specific styling */
+.prosecution-summary {
+    background: linear-gradient(135deg, #8b0000 0%, #a50000 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+    border-left: 6px solid #d32f2f;
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
+    position: relative;
+}
+
+.prosecution-summary::before {
+    content: "⚖️";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: white;
+    color: #8b0000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.prosecution-summary strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 8px;
+}
+
+/* Pattern analysis boxes */
+.pattern-analysis {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e6ed;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 25px 0;
+    border: 1px solid #0f3460;
+    box-shadow: 0 6px 20px rgba(15, 52, 96, 0.4);
+    position: relative;
+}
+
+.pattern-analysis::before {
+    content: "🔍";
+    position: absolute;
+    top: -12px;
+    right: 25px;
+    background: #0f3460;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 3px solid #1a1a2e;
+}
+
+.pattern-analysis p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+/* Enhanced key allegations */
+.key-allegation {
+    background: linear-gradient(135deg, #2c1810 0%, #3d2218 100%);
+    color: #f5f5dc;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
+    position: relative;
+}
+
+.key-allegation::before {
+    content: "⚠️";
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    background: #8b4513;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: 3px solid #2c1810;
+}
+
+.key-allegation h3 {
+    color: #ffd700;
+    margin-top: 0;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.key-allegation h4 {
+    color: #daa520;
+    margin: 20px 0 10px 0;
+}
+
+/* Data table styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.data-table th {
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: top;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.data-table tbody tr:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+.data-table td strong {
+    color: #d32f2f;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Table of contents styling */
+.disclaimer {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #6c757d;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.2);
+}
+
+.disclaimer h3 {
+    color: #495057;
+    margin-top: 0;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.disclaimer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.disclaimer > ul > li {
+    margin-bottom: 15px;
+}
+
+.disclaimer > ul > li > a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05em;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.disclaimer > ul > li > a:hover {
+    background-color: #d32f2f;
+    color: white;
+    transform: translateX(5px);
+}
+
+.disclaimer ul ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.disclaimer ul ul li a {
+    color: #666;
+    font-weight: normal;
+    font-size: 0.95em;
+    padding: 5px 10px;
+}
+
+.disclaimer ul ul li a:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Enhanced typography */
+.lead {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #2c3e50;
+    border-left: 6px solid #34495e;
+    padding: 20px 20px 20px 25px;
+    margin: 30px 0;
+    font-style: italic;
+    background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 3px 10px rgba(52, 73, 95, 0.2);
+}
+
+/* Enhanced section headers */
+h2 {
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    color: white;
+    padding: 15px 20px;
+    margin: 40px -20px 25px -20px;
+    border-left: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(211, 47, 47, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.25em;
+    margin: 30px 0 15px 0;
+    font-weight: bold;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+h4 {
+    color: #34495e;
+    font-size: 1.1em;
+    margin: 25px 0 12px 0;
+    font-weight: 600;
+}
+
+/* Enhanced lists */
+ol, ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+ol li, ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+ol li strong, ul li strong {
+    color: #d32f2f;
+}
+
+/* Footer enhancement */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    border-top: none;
+    padding: 30px 20px;
+    margin: 50px -20px 0 -20px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+    .prosecution-summary,
+    .pattern-analysis,
+    .key-allegation {
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 0;
+    }
+    
+    h2 {
+        margin-left: -15px;
+        margin-right: -15px;
+        border-radius: 0;
+    }
+    
+    footer {
+        margin-left: -15px;
+        margin-right: -15px;
+        border-radius: 0;
+    }
+    
+    .data-table {
+        font-size: 0.9em;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 10px 8px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .prosecution-summary,
+    .pattern-analysis,
+    .key-allegation {
+        background: white !important;
+        color: black !important;
+        border: 2px solid #333 !important;
+    }
+    
+    .prosecution-summary::before,
+    .pattern-analysis::before,
+    .key-allegation::before {
+        display: none;
+    }
+}
