@@ -13,19 +13,25 @@
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://gtcode.com/investigation/exhibit-a-federal-intervention-hawaii/</loc>
+        <lastmod>2025-08-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
         <loc>https://gtcode.com/investigation/hawaii-justice-system-wilson-loo/</loc>
         <lastmod>2025-07-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://gtcode.com/investigation/an-american-autopsy/</loc>
+        <loc>https://gtcode.com/essays/an-american-autopsy/</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://gtcode.com/investigation/the-anchronism-of-a-soul/</loc>
+        <loc>https://gtcode.com/essays/the-anchronism-of-a-soul/</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
