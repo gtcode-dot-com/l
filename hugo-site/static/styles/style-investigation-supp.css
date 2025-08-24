@@ -1,356 +1,263 @@
-/* American Autopsy - Supplemental Styling */
+/*
+    File: style-investigation-supp.css
+    Author: Jules
+    Date: 2025-08-23
+    Description: Supplemental stylesheet for the investigative report.
+                 Aims for maximum professionalism, journalistic integrity, and impact.
+*/
 
-/* Enhanced prosecution-specific styling */
-.prosecution-summary {
-    background: linear-gradient(135deg, #8b0000 0%, #a50000 100%);
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 25px 0;
-    border-left: 6px solid #d32f2f;
-    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
-    position: relative;
+/* --- General Enhancements & Typography --- */
+
+/*
+    Using a professional, highly-readable font stack.
+    'Merriweather' for body copy for its excellent on-screen readability.
+    'Roboto' for headings for a clean, modern, and serious look.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Merriweather', 'Georgia', serif;
+    color: #222; /* Darker text for better contrast */
+    background-color: #fdfdfd;
 }
 
-.prosecution-summary::before {
-    content: "⚖️";
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    background: white;
-    color: #8b0000;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-.prosecution-summary strong {
-    display: block;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    padding-bottom: 8px;
+/* --- Header & Title --- */
+
+header h1 {
+    font-size: 2.8em;
+    color: #b71c1c; /* A deeper, more serious red */
+    text-transform: none;
+    font-weight: 700;
 }
 
-/* Pattern analysis boxes */
-.pattern-analysis {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: #e0e6ed;
-    padding: 25px;
-    border-radius: 8px;
-    margin: 25px 0;
-    border: 1px solid #0f3460;
-    box-shadow: 0 6px 20px rgba(15, 52, 96, 0.4);
-    position: relative;
-}
-
-.pattern-analysis::before {
-    content: "🔍";
-    position: absolute;
-    top: -12px;
-    right: 25px;
-    background: #0f3460;
-    color: white;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    border: 3px solid #1a1a2e;
-}
-
-.pattern-analysis p {
-    margin-bottom: 12px;
-    line-height: 1.7;
-}
-
-/* Enhanced key allegations */
-.key-allegation {
-    background: linear-gradient(135deg, #2c1810 0%, #3d2218 100%);
-    color: #f5f5dc;
-    border: 2px solid #8b4513;
-    border-radius: 10px;
-    padding: 25px;
-    margin: 30px 0;
-    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
-    position: relative;
-}
-
-.key-allegation::before {
-    content: "⚠️";
-    position: absolute;
-    top: -15px;
-    left: 25px;
-    background: #8b4513;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    border: 3px solid #2c1810;
-}
-
-.key-allegation h3 {
-    color: #ffd700;
-    margin-top: 0;
-    font-size: 1.3em;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
-
-.key-allegation h4 {
-    color: #daa520;
-    margin: 20px 0 10px 0;
-}
-
-/* Data table styling */
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.data-table th {
-    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
-    color: white;
-    padding: 15px;
-    text-align: left;
-    font-weight: bold;
-    font-size: 0.95em;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.data-table td {
-    padding: 15px;
-    border-bottom: 1px solid #e9ecef;
-    vertical-align: top;
-}
-
-.data-table tbody tr:nth-child(even) {
-    background-color: #f8f9fa;
-}
-
-.data-table tbody tr:hover {
-    background-color: #e3f2fd;
-    transform: scale(1.01);
-    transition: all 0.2s ease;
-}
-
-.data-table td strong {
-    color: #d32f2f;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Table of contents styling */
-.disclaimer {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border: 2px solid #6c757d;
-    border-radius: 10px;
-    padding: 25px;
-    margin: 30px 0;
-    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.2);
-}
-
-.disclaimer h3 {
-    color: #495057;
-    margin-top: 0;
-    font-size: 1.2em;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.disclaimer ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.disclaimer > ul > li {
-    margin-bottom: 15px;
-}
-
-.disclaimer > ul > li > a {
-    color: #d32f2f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.05em;
-    display: block;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: all 0.2s ease;
-}
-
-.disclaimer > ul > li > a:hover {
-    background-color: #d32f2f;
-    color: white;
-    transform: translateX(5px);
-}
-
-.disclaimer ul ul {
-    margin-top: 10px;
-    padding-left: 20px;
-}
-
-.disclaimer ul ul li a {
-    color: #666;
-    font-weight: normal;
-    font-size: 0.95em;
-    padding: 5px 10px;
-}
-
-.disclaimer ul ul li a:hover {
-    background-color: #6c757d;
-    color: white;
-}
-
-/* Enhanced typography */
-.lead {
-    font-size: 1.15em;
-    font-weight: 500;
-    color: #4b6c8c;
-    border-left: 6px solid #34495e;
-    padding: 20px 20px 20px 25px;
-    margin: 30px 0;
+header .subtitle {
+    font-size: 1.4em;
+    color: #555;
+    font-family: 'Merriweather', serif;
     font-style: italic;
-    background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
-    border-radius: 0 8px 8px 0;
-    box-shadow: 0 3px 10px rgba(52, 73, 95, 0.2);
 }
 
-/* Enhanced section headers */
+header .byline, header .date {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+}
+
+/* --- Core Content Elements --- */
+
+p {
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+.lead {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #444;
+    padding: 1em;
+    border-left: 5px solid #b71c1c;
+    background-color: #f9f9f9;
+}
+
 h2 {
-    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
-    color: white;
-    padding: 15px 20px;
-    margin: 40px -20px 25px -20px;
-    border-left: none;
-    border-radius: 5px;
-    box-shadow: 0 3px 12px rgba(211, 47, 47, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.3em;
+    font-size: 1.8em;
+    color: #222;
+    border-bottom: 2px solid #b71c1c;
+    padding-bottom: 0.5em;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    border-left: none; /* Override base style */
+    padding-left: 0; /* Override base style */
 }
 
 h3 {
-    color: #4b6c8c;
-    font-size: 1.25em;
-    margin: 30px 0 15px 0;
-    font-weight: bold;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    display: inline-block;
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
-h4 {
-    color: #34495e;
-    font-size: 1.1em;
-    margin: 25px 0 12px 0;
-    font-weight: 600;
-}
-
-/* Enhanced lists */
-ol, ul {
-    margin: 20px 0;
-    padding-left: 25px;
-}
-
-ol li, ul li {
-    margin-bottom: 12px;
-    line-height: 1.6;
-}
-
-ol li strong, ul li strong {
-    color: #d32f2f;
-}
-
-/* Footer enhancement */
-footer {
-    background: linear-gradient(135deg, #4b6c8c 0%, #34495e 100%);
-    color: white;
-    border-top: none;
-    padding: 30px 20px;
-    margin: 50px -20px 0 -20px;
-    text-align: center;
-    border-radius: 0 0 5px 5px;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #3498db;
+a, a:visited {
+    color: #b71c1c;
     text-decoration: none;
+    border-bottom: 1px dotted #b71c1c;
+    transition: all 0.2s ease-in-out;
 }
 
-footer a:hover {
-    color: #2980b9;
-    text-decoration: underline;
+a:hover, a:focus {
+    color: #fff;
+    background-color: #b71c1c;
+    text-decoration: none;
+    border-bottom: 1px dotted #b71c1c;
 }
 
-/* Responsive enhancements */
+
+/* --- Specialized Content Blocks --- */
+
+/* A consistent, professional style for all special sections */
+.disclaimer,
+.pattern-analysis,
+.key-allegation,
+.violations-box,
+.timeline,
+.highlight,
+.corruption-loophole {
+    margin: 2em 0;
+    padding: 1.5em;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+}
+
+.disclaimer h3,
+.pattern-analysis h3,
+.key-allegation h3,
+.violations-box h3,
+.timeline h3,
+.highlight h3,
+.corruption-loophole h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #222;
+}
+
+/* Specific border colors for each block type to add subtle distinction */
+.disclaimer { border-left-color: #6c757d; }
+.pattern-analysis { border-left-color: #17a2b8; }
+.key-allegation { border-left-color: #b71c1c; }
+.violations-box { border-left-color: #dc3545; }
+.timeline { border-left-color: #007bff; }
+.highlight { border-left-color: #ffc107; }
+.corruption-loophole { border-left-color: #ff8c00; }
+
+
+/* --- Key Allegation Specifics --- */
+.key-allegation {
+    background-color: #fbebeb; /* A very light red tint */
+}
+
+.key-allegation h3 {
+    color: #b71c1c;
+}
+
+
+/* --- Timeline Specifics --- */
+.timeline-item {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 1.5em;
+    border-left: 2px solid #ccc;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.timeline-item strong {
+    display: block;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --- Violations Box --- */
+.violations-box {
+    background-color: #fbebeb;
+}
+.violations-box h3 {
+    color: #b71c1c;
+}
+.violations-box p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95em;
+}
+
+/* --- Lists --- */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 1.5em;
+}
+
+li {
+    line-height: 1.8;
+    margin-bottom: 0.75em;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 3em;
+    padding-top: 2em;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+/* --- Responsive Design --- */
 @media (max-width: 768px) {
-    .prosecution-summary,
-    .pattern-analysis,
-    .key-allegation {
-        margin-left: -10px;
-        margin-right: -10px;
-        border-radius: 0;
+    header h1 {
+        font-size: 2.2em;
     }
-    
+    header .subtitle {
+        font-size: 1.2em;
+    }
     h2 {
-        margin-left: -15px;
-        margin-right: -15px;
-        border-radius: 0;
+        font-size: 1.5em;
     }
-    
-    footer {
-        margin-left: -15px;
-        margin-right: -15px;
-        border-radius: 0;
-    }
-    
-    .data-table {
-        font-size: 0.9em;
-    }
-    
-    .data-table th,
-    .data-table td {
-        padding: 10px 8px;
+    h3 {
+        font-size: 1.2em;
     }
 }
 
-/* Print styles */
+/* --- Print Styles --- */
 @media print {
-    .prosecution-summary,
-    .pattern-analysis,
-    .key-allegation {
-        background: white !important;
-        color: black !important;
-        border: 2px solid #333 !important;
+    body {
+        font-family: 'Times New Roman', serif;
+        color: #000;
+        background-color: #fff;
     }
-    
-    .prosecution-summary::before,
-    .pattern-analysis::before,
-    .key-allegation::before {
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Times New Roman', serif;
+        color: #000;
+    }
+
+    a, a:visited {
+        color: #000;
+        text-decoration: underline;
+        border: none;
+    }
+
+    .disclaimer,
+    .pattern-analysis,
+    .key-allegation,
+    .violations-box,
+    .timeline,
+    .highlight,
+    .corruption-loophole {
+        background-color: #fff !important;
+        border: 1px solid #ccc;
+        border-left-width: 3px;
+        padding: 1em;
+    }
+
+    .breadcrumb-nav, footer {
         display: none;
     }
 }
