@@ -1,5 +1,6 @@
 # CLAUDE.md - Development Guidelines
 
+
 ## Build/Deployment Commands
 - Site is static HTML/CSS/JS - no build process required
 - Deploy by pushing changes to the repository
