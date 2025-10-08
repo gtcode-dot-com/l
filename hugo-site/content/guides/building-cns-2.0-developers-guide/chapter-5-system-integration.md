@@ -247,29 +247,6 @@ class CNSWorkflowManager:
             except Exception as e:
                 logger.error(f"Error in task processing loop: {e}", exc_info=True)
 
-    def _initialize_critics(self):
-        """Set up the critic pipeline with pre-loaded models for efficiency"""
-        # Initialize critics with parameters from cns_config and pre-loaded models
-        grounding_critic = GroundingCritic(
-            weight=cns_config.critic_weights['grounding'],
-            nli_model=self.nli_model,
-            nli_tokenizer=self.nli_tokenizer
-        )
-        logic_critic = LogicCritic(
-            weight=cns_config.critic_weights['logic']
-        )
-        novelty_critic = NoveltyParsimonyCritic(
-            weight=cns_config.critic_weights['novelty'],
-            alpha=cns_config.novelty_alpha,
-            beta=cns_config.novelty_beta
-        )
-        
-        self.critic_pipeline.add_critic(grounding_critic)
-        self.critic_pipeline.add_critic(logic_critic)
-        self.critic_pipeline.add_critic(novelty_critic)
-        
-        logger.info("Research-grade critic pipeline initialized with pre-loaded models for maximum efficiency")
-    
     async def start_system(self):
         """Start the CNS 2.0 system operational loop"""
         self.is_running = True

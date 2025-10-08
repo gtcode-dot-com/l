@@ -72,10 +72,16 @@ This guide provides the practical steps to build the CNS 2.0 system as it is des
 
 This guide is structured as a progressive learning experience. Each chapter builds upon the last, culminating in a complete and advanced implementation.
 
-1.  **[Introduction to CNS 2.0](/guides/building-cns-2.0-developers-guide/chapter-1-introduction/)** - Grasp the core concepts of the CNS framework and set up the foundational Python environment.
-2.  **[SNO Foundations](/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/)** - Implement the `StructuredNarrativeObject`, the core data structure of the entire system, and learn to manage its persistence.
-3.  **[The Critic Pipeline](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/)** - Build the multi-component critics that evaluate SNOs, turning the paper's mathematical formulas into working evaluation code.
-4.  **[The Synthesis Engine](/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/)** - Engineer the creative core of the system, capable of selecting conflicting narratives and using an LLM to generate novel syntheses.
+**Quick Start:**
+0.  **[Quick Start: Your First SNO in 15 Minutes](/guides/building-cns-2.0-developers-guide/chapter-0-quickstart/)** ⚡ - NEW! Get from zero to your first working Structured Narrative Object in under 20 minutes. Perfect for proving the concept works before diving deep.
+
+**Core Implementation:**
+1.  **[Introduction to CNS 2.0](/guides/building-cns-2.0-developers-guide/chapter-1-introduction/)** - Grasp the core concepts of the CNS framework and set up the foundational Python environment with complete installation instructions.
+2.  **[SNO Foundations](/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/)** - Implement the `StructuredNarrativeObject`, the core data structure of the entire system, and learn to manage its persistence. Includes complete working example.
+3.  **[The Critic Pipeline](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/)** - Build the multi-component critics that evaluate SNOs, turning the paper's mathematical formulas into working evaluation code. Includes full critic implementation.
+4.  **[The Synthesis Engine](/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/)** - Engineer the creative core of the system, capable of selecting conflicting narratives and using an LLM to generate novel syntheses. Includes chiral pair detection and visualization.
+
+**Production & Optimization:**
 5.  **[System Integration](/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/)** - Assemble all the components into a cohesive, autonomous system using an `asyncio`-based workflow manager.
 6.  **[Complete Implementation: Production Deployment & Scaling](/guides/building-cns-2.0-developers-guide/chapter-6-complete-implementation/)** - Evolve the prototype into a production-grade service using Docker for containerization and Celery for distributed task execution.
 7.  **[Advanced Optimization with DSPy](/guides/building-cns-2.0-developers-guide/chapter-7-dspy-integration/)** - Move from static prompting to programmatic optimization, creating a self-improving system that uses its own critics to refine its synthesis capabilities.
@@ -84,10 +90,16 @@ This guide is structured as a progressive learning experience. Each chapter buil
 
 - Intermediate Python programming knowledge
 - Basic understanding of machine learning concepts and LLMs
-- Familiarity with natural language processing
+- Familiarity with natural language processing (helpful but not required)
 - An interest in building complex, state-of-the-art AI systems
 
-Ready to begin? Start with **[Chapter 1: Introduction to CNS 2.0](/guides/building-cns-2.0-developers-guide/chapter-1-introduction/)** and embark on your journey to mastering this cutting-edge knowledge synthesis framework.
+## Getting Started
+
+**New to CNS 2.0?** Start with **[Chapter 0: Quick Start](/guides/building-cns-2.0-developers-guide/chapter-0-quickstart/)** ⚡ to create your first working SNO in 15 minutes. This proves the system works before diving into the detailed implementation.
+
+**Already familiar with the basics?** Jump to **[Chapter 1: Introduction to CNS 2.0](/guides/building-cns-2.0-developers-guide/chapter-1-introduction/)** for the complete architectural overview and foundational implementation.
+
+**Want to see the research foundation?** Review the **[CNS 2.0 Blueprint Paper](/guides/cns-2.0-research-roadmap/blueprint/)** for the formal mathematical framework before implementing.
 
 ---
 

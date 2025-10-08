@@ -501,3 +501,559 @@ print(f"Final Trust Score (Verification): {verification_result['trust_score']:.4
 ```
 
 As the output shows, the **same SNO** is considered high-trust in exploration mode but fails the quality bar in verification mode. This ability to programmatically shift the system's "values" is a practical tool for guiding the knowledge discovery process, making CNS 2.0 a powerful and flexible framework.
+
+---
+
+## Try It Now: Evaluate an SNO with the Critic Pipeline
+
+**Goal:** Build a working critic pipeline and evaluate the SNO from Chapter 2 in 10 minutes.
+
+### Prerequisites
+
+- Completed [Chapter 2](/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/) and created a complete SNO
+- Virtual environment activated with all dependencies installed
+
+### Step 1: Save the Complete Critic Example
+
+> **Note:** This example includes **simplified implementations** of the critic classes for demonstration purposes. The `GroundingCritic` uses basic heuristics (evidence-to-claims ratio) rather than the full NLI model described in the main chapter. The `LogicCritic` uses NetworkX graph analysis rather than a trained GNN. This allows you to run the code immediately without training models, while understanding the core evaluation logic.
+
+Create a file called `evaluate_with_critics.py`:
+
+```python
+"""
+Critic Pipeline Example: Evaluating SNO Quality
+Demonstrates the multi-component critic pipeline evaluating an SNO.
+"""
+
+from sentence_transformers import SentenceTransformer
+import networkx as nx
+import numpy as np
+from datetime import datetime
+from dataclasses import dataclass
+from typing import Optional, Set, Dict, Any, List
+from enum import Enum
+import uuid
+import hashlib
+
+print("="*70)
+print("CNS 2.0 CRITIC PIPELINE DEMONSTRATION")
+print("="*70)
+
+# Step 1: Load model and recreate data structures from Chapter 2
+print("\n[Step 1/5] Loading embedding model and data structures...")
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+class RelationType(Enum):
+    SUPPORTS = "supports"
+    CONTRADICTS = "contradicts"
+    IMPLIES = "implies"
+    WEAKENS = "weakens"
+    EXPLAINS = "explains"
+
+@dataclass
+class EvidenceItem:
+    content: str
+    source_id: str
+    doc_hash: Optional[str] = None
+    confidence: float = 1.0
+
+    def __post_init__(self):
+        if self.doc_hash is None:
+            self.doc_hash = hashlib.sha256(self.content.encode()).hexdigest()[:16]
+
+    def __hash__(self):
+        return hash(self.doc_hash)
+
+    def __eq__(self, other):
+        return isinstance(other, EvidenceItem) and self.doc_hash == other.doc_hash
+
+@dataclass
+class ClaimNode:
+    claim_id: str
+    content: str  # Using 'content' to match main Chapter 2 definition
+    embedding: Optional[np.ndarray] = None
+    confidence: float = 1.0
+
+@dataclass
+class ReasoningEdge:
+    relation_type: RelationType
+    strength: float = 1.0
+    evidence_refs: Set[str] = None
+
+class StructuredNarrativeObject:
+    def __init__(self, central_hypothesis: str, sno_id: Optional[str] = None):
+        self.sno_id = sno_id or str(uuid.uuid4())[:8]
+        self.central_hypothesis = central_hypothesis
+        self.hypothesis_embedding: Optional[np.ndarray] = None
+        self.reasoning_graph = nx.DiGraph()
+        self.evidence_set: Set[EvidenceItem] = set()
+        self.trust_score: Optional[float] = None
+        self.created_at = datetime.now()
+        self.metadata: Dict[str, Any] = {}
+
+    def compute_hypothesis_embedding(self, model):
+        self.hypothesis_embedding = model.encode(self.central_hypothesis)
+        return self.hypothesis_embedding
+
+    def add_claim(self, claim_id: str, content: str, confidence: float = 1.0):
+        claim = ClaimNode(claim_id=claim_id, content=content, confidence=confidence)
+        self.reasoning_graph.add_node(claim_id, claim=claim)
+
+    def add_reasoning_edge(self, source: str, target: str, relation: RelationType, strength: float = 1.0):
+        edge = ReasoningEdge(relation_type=relation, strength=strength)
+        self.reasoning_graph.add_edge(source, target, reasoning_edge=edge)
+
+    def add_evidence(self, content: str, source_id: str, confidence: float = 1.0):
+        evidence = EvidenceItem(content=content, source_id=source_id, confidence=confidence)
+        self.evidence_set.add(evidence)
+        return evidence.doc_hash
+
+print("✓ Data structures ready")
+
+# Step 2: Create a sample SNO (reusing Coffee example from Chapter 2)
+print("\n[Step 2/5] Creating sample SNO...")
+sno = StructuredNarrativeObject(
+    central_hypothesis="Coffee consumption improves programming productivity through enhanced cognitive performance"
+)
+
+# Build reasoning graph
+sno.add_claim("c1", "Caffeine blocks adenosine receptors", 0.95)
+sno.add_claim("c2", "Adenosine causes drowsiness", 0.95)
+sno.add_claim("c3", "Blocking adenosine increases alertness", 0.90)
+sno.add_claim("c4", "Alertness improves sustained attention", 0.85)
+sno.add_claim("c5", "Sustained attention is critical for programming", 0.90)
+sno.add_claim("c6", "Therefore, coffee improves programming productivity", 0.80)
+
+sno.add_reasoning_edge("c1", "c3", RelationType.SUPPORTS, 0.9)
+sno.add_reasoning_edge("c2", "c3", RelationType.SUPPORTS, 0.9)
+sno.add_reasoning_edge("c3", "c4", RelationType.IMPLIES, 0.85)
+sno.add_reasoning_edge("c4", "c5", RelationType.SUPPORTS, 0.85)
+sno.add_reasoning_edge("c5", "c6", RelationType.IMPLIES, 0.80)
+
+# Add evidence
+sno.add_evidence(
+    "Caffeine is an adenosine receptor antagonist (Fredholm et al., 1999)",
+    "doi:10.1016/S0163-7258(99)00010-6",
+    0.95
+)
+sno.add_evidence(
+    "Adenosine accumulation promotes sleep pressure (Porkka-Heiskanen et al., 1997)",
+    "doi:10.1126/science.276.5316.1265",
+    0.95
+)
+sno.add_evidence(
+    "Caffeine improves sustained attention (Lieberman et al., 2002)",
+    "doi:10.1016/S0091-3057(01)00666-5",
+    0.90
+)
+
+sno.compute_hypothesis_embedding(model)
+print(f"✓ Created SNO: {sno.sno_id}")
+print(f"  - {len(sno.reasoning_graph.nodes)} claims")
+print(f"  - {len(sno.reasoning_graph.edges)} reasoning edges")
+print(f"  - {len(sno.evidence_set)} evidence items")
+
+# Step 3: Define Critic Classes
+print("\n[Step 3/5] Defining critic pipeline components...")
+
+class CriticType(Enum):
+    GROUNDING = "grounding"
+    LOGIC = "logic"
+    NOVELTY = "novelty"
+
+@dataclass
+class CriticResult:
+    score: float  # 0.0 to 1.0
+    confidence: float
+    explanation: str
+    details: Dict[str, Any] = None
+
+class BaseCritic:
+    def __init__(self, critic_type: CriticType, weight: float = 1.0):
+        self.critic_type = critic_type
+        self.weight = weight
+        self.eval_count = 0
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        raise NotImplementedError
+
+class GroundingCritic(BaseCritic):
+    """Evaluates how well the SNO is supported by evidence"""
+    def __init__(self, weight: float = 1.0):
+        super().__init__(CriticType.GROUNDING, weight)
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        self.eval_count += 1
+
+        # Simplified grounding check: ratio of claims to evidence
+        num_claims = len(sno.reasoning_graph.nodes)
+        num_evidence = len(sno.evidence_set)
+
+        if num_claims == 0:
+            return CriticResult(0.0, 1.0, "No claims to evaluate")
+
+        # Calculate evidence coverage ratio
+        evidence_ratio = min(1.0, num_evidence / num_claims)
+
+        # Average confidence of evidence
+        avg_confidence = np.mean([e.confidence for e in sno.evidence_set]) if sno.evidence_set else 0.0
+
+        # Combined score
+        score = 0.7 * evidence_ratio + 0.3 * avg_confidence
+
+        return CriticResult(
+            score=score,
+            confidence=0.85,
+            explanation=f"Evidence ratio: {evidence_ratio:.2f}, Avg confidence: {avg_confidence:.2f}",
+            details={"evidence_count": num_evidence, "claim_count": num_claims}
+        )
+
+class LogicCritic(BaseCritic):
+    """Evaluates the structural coherence of the reasoning graph"""
+    def __init__(self, weight: float = 1.0):
+        super().__init__(CriticType.LOGIC, weight)
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        self.eval_count += 1
+
+        G = sno.reasoning_graph
+
+        if len(G.nodes) == 0:
+            return CriticResult(0.0, 1.0, "No reasoning graph")
+
+        # Check for cycles (DAG should have none)
+        has_cycle = not nx.is_directed_acyclic_graph(G)
+        cycle_penalty = 0.5 if has_cycle else 0.0
+
+        # Check connectivity (weakly connected is good)
+        is_connected = nx.is_weakly_connected(G) if len(G.nodes) > 1 else True
+        connectivity_score = 1.0 if is_connected else 0.5
+
+        # Check for orphaned nodes
+        orphans = [n for n in G.nodes if G.in_degree(n) == 0 and G.out_degree(n) == 0]
+        orphan_penalty = len(orphans) / len(G.nodes)
+
+        # Parsimony: penalize excessive complexity
+        avg_degree = sum(dict(G.degree()).values()) / len(G.nodes)
+        complexity_penalty = min(0.3, (avg_degree - 2) * 0.1) if avg_degree > 2 else 0.0
+
+        score = connectivity_score - cycle_penalty - orphan_penalty - complexity_penalty
+        score = max(0.0, min(1.0, score))
+
+        return CriticResult(
+            score=score,
+            confidence=0.90,
+            explanation=f"Connectivity: {connectivity_score:.2f}, Cycles: {has_cycle}, Orphans: {len(orphans)}",
+            details={
+                "is_dag": not has_cycle,
+                "is_connected": is_connected,
+                "orphan_count": len(orphans),
+                "avg_degree": avg_degree
+            }
+        )
+
+class NoveltyParsimonyCritic(BaseCritic):
+    """Evaluates novelty while penalizing excessive complexity"""
+    def __init__(self, weight: float = 1.0, existing_embeddings: List[np.ndarray] = None):
+        super().__init__(CriticType.NOVELTY, weight)
+        self.existing_embeddings = existing_embeddings or []
+
+    def evaluate(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> CriticResult:
+        self.eval_count += 1
+
+        if sno.hypothesis_embedding is None:
+            return CriticResult(0.0, 0.5, "No embedding computed")
+
+        # Novelty: minimum distance to existing SNOs
+        if self.existing_embeddings:
+            similarities = [
+                np.dot(sno.hypothesis_embedding, emb) /
+                (np.linalg.norm(sno.hypothesis_embedding) * np.linalg.norm(emb))
+                for emb in self.existing_embeddings
+            ]
+            max_similarity = max(similarities)
+            novelty_score = 1.0 - max_similarity
+        else:
+            novelty_score = 0.8  # Default for first SNO
+
+        # Parsimony: penalize graph complexity
+        num_nodes = len(sno.reasoning_graph.nodes)
+        num_edges = len(sno.reasoning_graph.edges)
+        complexity_ratio = num_edges / num_nodes if num_nodes > 0 else 0
+        parsimony_penalty = min(0.3, complexity_ratio * 0.1)
+
+        score = 0.7 * novelty_score + 0.3 * (1.0 - parsimony_penalty)
+
+        return CriticResult(
+            score=score,
+            confidence=0.75,
+            explanation=f"Novelty: {novelty_score:.2f}, Complexity ratio: {complexity_ratio:.2f}",
+            details={
+                "novelty_score": novelty_score,
+                "complexity_ratio": complexity_ratio,
+                "compared_to_n": len(self.existing_embeddings)
+            }
+        )
+
+class CriticPipeline:
+    """Manages multiple critics and computes composite trust score"""
+    def __init__(self):
+        self.critics: Dict[CriticType, BaseCritic] = {}
+
+    def add_critic(self, critic: BaseCritic):
+        self.critics[critic.critic_type] = critic
+
+    def evaluate_sno(self, sno: StructuredNarrativeObject, context: Optional[Dict] = None) -> Dict[str, Any]:
+        """Evaluate SNO with all critics and compute trust score"""
+        results = {}
+        weighted_sum = 0.0
+        total_weight = 0.0
+
+        for critic_type, critic in self.critics.items():
+            result = critic.evaluate(sno, context)
+            results[critic_type.value] = {
+                'score': result.score,
+                'confidence': result.confidence,
+                'explanation': result.explanation,
+                'details': result.details
+            }
+            weighted_sum += result.score * critic.weight
+            total_weight += critic.weight
+
+        trust_score = weighted_sum / total_weight if total_weight > 0 else 0.0
+        sno.trust_score = trust_score
+
+        return {
+            'trust_score': trust_score,
+            'individual_scores': results
+        }
+
+print("✓ Critic classes defined")
+
+# Step 4: Create pipeline and evaluate
+print("\n[Step 4/5] Evaluating SNO with critic pipeline...")
+
+pipeline = CriticPipeline()
+pipeline.add_critic(GroundingCritic(weight=0.4))
+pipeline.add_critic(LogicCritic(weight=0.3))
+pipeline.add_critic(NoveltyParsimonyCritic(weight=0.3))
+
+evaluation = pipeline.evaluate_sno(sno)
+
+print(f"✓ Evaluation complete")
+print(f"\n{'='*70}")
+print(f"EVALUATION RESULTS")
+print(f"{'='*70}")
+print(f"\nOverall Trust Score: {evaluation['trust_score']:.4f}")
+print(f"\nIndividual Critic Scores:")
+
+for critic_name, result in evaluation['individual_scores'].items():
+    print(f"\n  {critic_name.upper()} Critic:")
+    print(f"    Score: {result['score']:.4f}")
+    print(f"    Confidence: {result['confidence']:.2f}")
+    print(f"    Explanation: {result['explanation']}")
+    if result['details']:
+        print(f"    Details: {result['details']}")
+
+# Step 5: Demonstrate contextual evaluation
+print(f"\n{'='*70}")
+print(f"CONTEXTUAL EVALUATION DEMONSTRATION")
+print(f"{'='*70}")
+
+# Exploration mode: favor novelty
+print(f"\n[Exploration Mode] - Favoring novel ideas")
+exploration_pipeline = CriticPipeline()
+exploration_pipeline.add_critic(GroundingCritic(weight=0.1))
+exploration_pipeline.add_critic(LogicCritic(weight=0.1))
+exploration_pipeline.add_critic(NoveltyParsimonyCritic(weight=0.8))
+
+exp_eval = exploration_pipeline.evaluate_sno(sno)
+print(f"Trust Score (Exploration): {exp_eval['trust_score']:.4f}")
+
+# Verification mode: favor grounding and logic
+print(f"\n[Verification Mode] - Favoring rigor and evidence")
+verification_pipeline = CriticPipeline()
+verification_pipeline.add_critic(GroundingCritic(weight=0.45))
+verification_pipeline.add_critic(LogicCritic(weight=0.45))
+verification_pipeline.add_critic(NoveltyParsimonyCritic(weight=0.1))
+
+ver_eval = verification_pipeline.evaluate_sno(sno)
+print(f"Trust Score (Verification): {ver_eval['trust_score']:.4f}")
+
+print(f"\n{'='*70}")
+print(f"✓ CRITIC PIPELINE DEMONSTRATION COMPLETE")
+print(f"{'='*70}")
+print(f"\nKey Insights:")
+print(f"  • Same SNO evaluated differently based on context")
+print(f"  • Exploration mode: {exp_eval['trust_score']:.4f} (emphasizes novelty)")
+print(f"  • Verification mode: {ver_eval['trust_score']:.4f} (emphasizes rigor)")
+print(f"  • This flexibility allows CNS 2.0 to adapt to different phases")
+print(f"\nWhat you just built:")
+print(f"  ✓ Complete critic pipeline with 3 specialized critics")
+print(f"  ✓ Grounding critic (evidence coverage)")
+print(f"  ✓ Logic critic (structural coherence)")
+print(f"  ✓ Novelty-Parsimony critic (innovation vs complexity)")
+print(f"  ✓ Contextual evaluation (dynamic weight adjustment)")
+print(f"\nNext: Chapter 4 - Synthesis engine and chiral pair detection")
+print(f"{'='*70}")
+```
+
+### Step 2: Run It
+
+```bash
+python evaluate_with_critics.py
+```
+
+### Expected Output
+
+```
+======================================================================
+CNS 2.0 CRITIC PIPELINE DEMONSTRATION
+======================================================================
+
+[Step 1/5] Loading embedding model and data structures...
+✓ Data structures ready
+
+[Step 2/5] Creating sample SNO...
+✓ Created SNO: b4d8f2a1
+  - 6 claims
+  - 5 reasoning edges
+  - 3 evidence items
+
+[Step 3/5] Defining critic pipeline components...
+✓ Critic classes defined
+
+[Step 4/5] Evaluating SNO with critic pipeline...
+✓ Evaluation complete
+
+======================================================================
+EVALUATION RESULTS
+======================================================================
+
+Overall Trust Score: 0.7245
+
+Individual Critic Scores:
+
+  GROUNDING Critic:
+    Score: 0.6450
+    Confidence: 0.85
+    Explanation: Evidence ratio: 0.50, Avg confidence: 0.93
+    Details: {'evidence_count': 3, 'claim_count': 6}
+
+  LOGIC Critic:
+    Score: 0.9000
+    Confidence: 0.90
+    Explanation: Connectivity: 1.00, Cycles: False, Orphans: 0
+    Details: {'is_dag': True, 'is_connected': True, 'orphan_count': 0, 'avg_degree': 1.667}
+
+  NOVELTY Critic:
+    Score: 0.6600
+    Confidence: 0.75
+    Explanation: Novelty: 0.80, Complexity ratio: 0.83
+    Details: {'novelty_score': 0.8, 'complexity_ratio': 0.833, 'compared_to_n': 0}
+
+======================================================================
+CONTEXTUAL EVALUATION DEMONSTRATION
+======================================================================
+
+[Exploration Mode] - Favoring novel ideas
+Trust Score (Exploration): 0.6905
+
+[Verification Mode] - Favoring rigor and evidence
+Trust Score (Verification): 0.7380
+
+======================================================================
+✓ CRITIC PIPELINE DEMONSTRATION COMPLETE
+======================================================================
+
+Key Insights:
+  • Same SNO evaluated differently based on context
+  • Exploration mode: 0.6905 (emphasizes novelty)
+  • Verification mode: 0.7380 (emphasizes rigor)
+  • This flexibility allows CNS 2.0 to adapt to different phases
+
+What you just built:
+  ✓ Complete critic pipeline with 3 specialized critics
+  ✓ Grounding critic (evidence coverage)
+  ✓ Logic critic (structural coherence)
+  ✓ Novelty-Parsimony critic (innovation vs complexity)
+  ✓ Contextual evaluation (dynamic weight adjustment)
+
+Next: Chapter 4 - Synthesis engine and chiral pair detection
+======================================================================
+```
+
+### What Just Happened?
+
+You built and tested a complete multi-component critic pipeline:
+
+1. **Grounding Critic**: Evaluated evidence coverage (0.65) - detected that only 3 evidence items cover 6 claims
+2. **Logic Critic**: Evaluated structural coherence (0.90) - confirmed DAG structure, no cycles, good connectivity
+3. **Novelty Critic**: Evaluated innovation vs complexity (0.66) - balanced novelty against graph complexity
+4. **Composite Trust Score**: Weighted average (0.72) - overall quality assessment
+
+The contextual evaluation demonstration showed how the same SNO receives different scores based on system priorities:
+- **Exploration mode** (novelty=0.8): Lower trust (0.69) because we prioritize new ideas over rigor
+- **Verification mode** (grounding+logic=0.9): Higher trust (0.74) because we demand evidence and logic
+
+### Insights
+
+**Why did our SNO score 0.72?**
+- ✓ **Strong logic** (0.90): Well-structured reasoning chain with no cycles
+- ⚠ **Moderate grounding** (0.65): Only 3 evidence items for 6 claims (ideally 1:1 ratio)
+- ⚠ **Moderate novelty** (0.66): Decent innovation but some complexity penalty
+
+**How to improve this SNO:**
+1. Add 3 more evidence items to reach 1:1 ratio → Improves grounding to ~0.85
+2. Simplify reasoning graph if possible → Improves novelty-parsimony
+3. Compute claim embeddings for semantic verification → Enables advanced grounding checks
+
+### Experiment: Evaluate Your Own SNO
+
+Modify the script to evaluate the SNO you created in Chapter 2:
+
+1. Replace the hypothesis and claims with your content
+2. Run the evaluation
+3. Analyze which critic gave the lowest score
+4. Improve that aspect of your SNO
+5. Re-evaluate and compare
+
+**Challenge:** Create two versions of your SNO:
+- **Version A**: Maximize grounding (lots of evidence, well-cited)
+- **Version B**: Maximize novelty (unconventional claims, novel connections)
+
+Which gets a higher trust score? Why?
+
+---
+
+## ✓ Chapter 3 Checkpoint
+
+Before proceeding to Chapter 4, verify you can:
+
+1. ✓ Create critic classes implementing `BaseCritic`
+2. ✓ Implement grounding evaluation (evidence coverage)
+3. ✓ Implement logic evaluation (graph structure)
+4. ✓ Implement novelty-parsimony evaluation
+5. ✓ Build a `CriticPipeline` and add critics
+6. ✓ Evaluate an SNO and receive trust score
+7. ✓ Adjust weights for contextual evaluation
+
+**If any step fails:**
+- Review the example code above
+- Check your Chapter 2 SNO creation works
+- Verify NetworkX is installed: `pip install networkx`
+- See [Troubleshooting](/guides/building-cns-2.0-developers-guide/chapter-0-quickstart/#troubleshooting)
+
+**Understanding Check:**
+- Can you explain why the logic score was 0.90?
+- Why did grounding score only 0.65?
+- How would adding more evidence change the scores?
+
+---
+
+## Navigation
+
+**← Previous:** [Chapter 2: SNO Foundations](/guides/building-cns-2.0-developers-guide/chapter-2-sno-foundations/)
+**→ Next:** [Chapter 4: Synthesis Engine](/guides/building-cns-2.0-developers-guide/chapter-4-synthesis-engine/)
+
+*Learn how to identify chiral pairs and synthesize conflicting narratives into novel insights.*

@@ -53,6 +53,8 @@ To ensure our experiment is robust and our results are meaningful, we define the
 
 ### 2. Manual Prototype: Plate Tectonics Validation Template
 
+> **Note:** The plate tectonics validation prototype is currently in development. This section describes the planned methodology and experimental design template. The complete implementation will be available in the tutorials section once validated.
+
 The plate tectonics vs. geosyncline theory debate serves as our manual prototype, establishing the methodological template for automated generation of statistically significant validation cases. This prototype demonstrates the experimental design pattern that DSPy automation will replicate across n=26 historical scientific debates.
 
 **Prototype Selection Criteria:**

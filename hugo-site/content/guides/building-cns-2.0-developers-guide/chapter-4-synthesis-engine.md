@@ -387,101 +387,555 @@ def visualize_sno_latent_space(sno_population: List[StructuredNarrativeObject], 
 
     plt.show()
 ```
-This visualization transforms the abstract mathematics of CNS 2.0 into a concrete, explorable map of ideas, providing an invaluable tool for debugging and understanding the system's behavior.
 
-## Advanced Agent Action: Guided Narrative Exploration
+This visualization transforms the abstract mathematics of CNS 2.0 into a concrete, explorable map of ideas, providing an invaluable tool for debugging and understanding the system's behavior. Clusters of points represent dominant theories. A "chiral pair" would appear as two points, often far from each other, but both with high trust scores (bright colors in the plot). A successful synthesis might appear as a new point, also with a high trust score, located somewhere between its parents.
 
-The paper also describes a more subtle agent action than direct synthesis: **refinement** through guided exploration. Instead of combining two SNOs, an agent can try to improve a single SNO, `SNO_i`, especially when it's in conflict with another, `SNO_j`. The goal is to find a "sweet spot" in the latent space—a new hypothesis that is better than `SNO_i` but doesn't simply copy `SNO_j`. This is achieved by calculating a `target embedding`, $H_{\text{target}}$.
+---
 
-> **From the Paper (Equation 2, Section 3.4):**
-> $$H_{\text{target}} = H_{i} + \alpha \nabla_{H_i} \text{Reward}(SNO_i) + \beta \cdot \text{CScore}(SNO_i, SNO_j) \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}$$
+## Try It Now: Detect Chiral Pairs and Visualize SNO Space
 
-Instead of directly modifying the SNO, this target vector is used to prompt a generative agent: *"Generate a new SNO whose core hypothesis is semantically close to $H_{\text{target}}$, drawing inspiration from the reasoning and evidence of SNO$_i$."*
+**Goal:** Create multiple SNOs, detect chiral pairs, and visualize the narrative space in 15 minutes.
 
-### Formula Breakdown: `H_target`
-This formula has three distinct vector components:
-1.  **The Starting Point**: $H_i$, the embedding of our current SNO. This is our anchor.
-2.  **The Improvement Vector**: $\alpha \nabla_{H_i} \text{Reward}(SNO_i)$. This vector "points" in a direction in the latent space that would increase the SNO's reward score. Calculating the true gradient ($\nabla$) is complex, so in practice we use a proxy—a vector that moves towards a more "ideal" state.
-3.  **The Repulsion Vector**: $\beta \cdot \text{CScore} \frac{H_{i} - H_{j}}{\|H_{i} - H_{j}\|}$. This vector points directly away from the opposing SNO, `SNO_j`. The magnitude of this "push" is scaled by the `CScore` and a tuning parameter `beta`.
+### Prerequisites
 
-```python
-def calculate_target_embedding(
-    sno_i: StructuredNarrativeObject,
-    sno_j: StructuredNarrativeObject,
-    reward_gradient_proxy: np.ndarray,
-    alpha: float,
-    beta: float
-) -> np.ndarray:
-    """
-    Implements Guided Narrative Exploration from Section 3.4 of the paper.
-    """
-    if sno_i.hypothesis_embedding is None or sno_j.hypothesis_embedding is None:
-        raise ValueError("Both SNOs must have computed hypothesis embeddings.")
+- Completed [Chapter 3](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/) and evaluated SNOs
+- Virtual environment activated with dependencies including `scikit-learn` and `matplotlib`
+- Install if needed: `pip install scikit-learn matplotlib`
 
-    h_i = sno_i.hypothesis_embedding
-    h_j = sno_j.hypothesis_embedding
+### Step 1: Save the Chiral Pair Detection Example
 
-    improvement_vector = alpha * reward_gradient_proxy
+> **Note:** This example implements the complete chiral pair detection algorithm with all metrics (chirality, evidential entanglement, synthesis potential) as defined in the research paper. The t-SNE visualization provides a concrete view of the abstract 384-dimensional narrative space. All code is immediately runnable without additional model training.
 
-    c_score = RelationalMetrics.chirality_score(sno_i, sno_j)
-    repulsion_direction = (h_i - h_j) / np.linalg.norm(h_i - h_j)
-    repulsion_vector = beta * c_score * repulsion_direction
-
-    h_target = h_i + improvement_vector + repulsion_vector
-    h_target_normalized = h_target / np.linalg.norm(h_target)
-
-    return h_target_normalized
-```
-
-## Visualizing the SNO Latent Space with t-SNE
-
-The concepts of "latent space," "chirality," and "conceptual distance" are powerful but abstract. We can make them intuitive by visualizing the high-dimensional hypothesis embeddings in 2D space using `t-SNE`. This is a powerful diagnostic and exploratory tool.
-
-**Note:** You may need to install these libraries: `pip install scikit-learn matplotlib`
+Create a file called `detect_chiral_pairs.py`:
 
 ```python
+"""
+Chiral Pair Detection and Visualization
+Demonstrates identifying opposing narratives and visualizing the SNO space.
+"""
+
+from sentence_transformers import SentenceTransformer
+import networkx as nx
+import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
-from typing import List
+from datetime import datetime
+from dataclasses import dataclass
+from typing import Optional, Set, Dict, Any, List, Tuple
+from enum import Enum
+import uuid
+import hashlib
 
-def visualize_sno_population(sno_population: List[StructuredNarrativeObject]):
-    """
-    Creates a 2D visualization of the SNO population's hypothesis embeddings using t-SNE.
-    """
-    embeddings = [sno.hypothesis_embedding for sno in sno_population if sno.hypothesis_embedding is not None]
-    if len(embeddings) < 2:
-        print("Not enough SNOs with embeddings to visualize.")
-        return
+print("="*70)
+print("CNS 2.0 CHIRAL PAIR DETECTION & VISUALIZATION")
+print("="*70)
 
-    embedding_matrix = np.array(embeddings)
+# Step 1: Load model and setup (reusing structures from previous chapters)
+print("\n[Step 1/6] Loading model and data structures...")
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
-    perplexity = min(len(embeddings) - 1, 30)
-    tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42, n_iter=300)
-    embeddings_2d = tsne.fit_transform(embedding_matrix)
+class RelationType(Enum):
+    SUPPORTS = "supports"
+    CONTRADICTS = "contradicts"
+    IMPLIES = "implies"
 
-    trust_scores = [sno.trust_score or 0.0 for sno in sno_population if sno.hypothesis_embedding is not None]
+@dataclass
+class EvidenceItem:
+    content: str
+    source_id: str
+    doc_hash: Optional[str] = None
+    confidence: float = 1.0
 
-    plt.figure(figsize=(14, 10))
-    scatter = plt.scatter(
-        embeddings_2d[:, 0],
-        embeddings_2d[:, 1],
-        c=trust_scores,
-        cmap='viridis_r', # Reversed viridis: yellow is high, purple is low
-        alpha=0.8,
-        s=150
+    def __post_init__(self):
+        if self.doc_hash is None:
+            self.doc_hash = hashlib.sha256(self.content.encode()).hexdigest()[:16]
+
+    def __hash__(self):
+        return hash(self.doc_hash)
+
+    def __eq__(self, other):
+        return isinstance(other, EvidenceItem) and self.doc_hash == other.doc_hash
+
+class StructuredNarrativeObject:
+    def __init__(self, central_hypothesis: str, sno_id: Optional[str] = None):
+        self.sno_id = sno_id or str(uuid.uuid4())[:8]
+        self.central_hypothesis = central_hypothesis
+        self.hypothesis_embedding: Optional[np.ndarray] = None
+        self.reasoning_graph = nx.DiGraph()
+        self.evidence_set: Set[EvidenceItem] = set()
+        self.trust_score: Optional[float] = None
+        self.created_at = datetime.now()
+
+    def compute_hypothesis_embedding(self, model):
+        self.hypothesis_embedding = model.encode(self.central_hypothesis)
+        return self.hypothesis_embedding
+
+    def add_evidence(self, content: str, source_id: str, confidence: float = 1.0):
+        evidence = EvidenceItem(content=content, source_id=source_id, confidence=confidence)
+        self.evidence_set.add(evidence)
+        return evidence.doc_hash
+
+    def __repr__(self):
+        return f"SNO({self.sno_id}): {self.central_hypothesis[:60]}..."
+
+print("✓ Data structures ready")
+
+# Step 2: Create a population of SNOs with diverse views
+print("\n[Step 2/6] Creating SNO population with diverse hypotheses...")
+
+sno_population = []
+
+# Pro-Coffee SNOs
+sno1 = StructuredNarrativeObject("Coffee improves programming productivity through enhanced alertness")
+sno1.add_evidence("Caffeine enhances cognitive performance", "doi:10.1016/example1", 0.9)
+sno1.add_evidence("Programmers report higher productivity with coffee", "doi:10.1016/example2", 0.8)
+sno1.trust_score = 0.85
+sno1.compute_hypothesis_embedding(model)
+sno_population.append(sno1)
+
+sno2 = StructuredNarrativeObject("Caffeine enhances sustained attention critical for complex problem solving")
+sno2.add_evidence("Caffeine improves sustained attention tasks", "doi:10.1016/example3", 0.9)
+sno2.trust_score = 0.82
+sno2.compute_hypothesis_embedding(model)
+sno_population.append(sno2)
+
+# Anti-Coffee SNOs
+sno3 = StructuredNarrativeObject("Coffee harms productivity through dependency and energy crashes")
+sno3.add_evidence("Caffeine dependency reduces baseline performance", "doi:10.1016/example4", 0.8)
+sno3.add_evidence("Post-caffeine crashes impair concentration", "doi:10.1016/example5", 0.85)
+sno3.trust_score = 0.78
+sno3.compute_hypothesis_embedding(model)
+sno_population.append(sno3)
+
+sno4 = StructuredNarrativeObject("Caffeine disrupts sleep quality reducing long-term cognitive function")
+sno4.add_evidence("Caffeine intake correlates with poor sleep", "doi:10.1016/example6", 0.9)
+sno4.trust_score = 0.80
+sno4.compute_hypothesis_embedding(model)
+sno_population.append(sno4)
+
+# Neutral/Unrelated SNOs
+sno5 = StructuredNarrativeObject("Python is superior to JavaScript for data science applications")
+sno5.add_evidence("Python has mature data science libraries", "doi:10.1016/example7", 0.95)
+sno5.trust_score = 0.88
+sno5.compute_hypothesis_embedding(model)
+sno_population.append(sno5)
+
+sno6 = StructuredNarrativeObject("Remote work increases employee satisfaction and retention")
+sno6.add_evidence("Remote workers report higher job satisfaction", "doi:10.1016/example8", 0.85)
+sno6.trust_score = 0.83
+sno6.compute_hypothesis_embedding(model)
+sno_population.append(sno6)
+
+print(f"✓ Created {len(sno_population)} SNOs")
+
+# Step 3: Implement relational metrics
+print("\n[Step 3/6] Computing relational metrics...")
+
+class RelationalMetrics:
+    @staticmethod
+    def chirality_score(sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject) -> float:
+        """
+        Calculate opposition between hypotheses.
+        Returns value from 0 (identical) to 1 (maximally opposed).
+        """
+        if sno_a.hypothesis_embedding is None or sno_b.hypothesis_embedding is None:
+            return 0.0
+
+        # Cosine similarity
+        dot_product = np.dot(sno_a.hypothesis_embedding, sno_b.hypothesis_embedding)
+        norm_a = np.linalg.norm(sno_a.hypothesis_embedding)
+        norm_b = np.linalg.norm(sno_b.hypothesis_embedding)
+        similarity = dot_product / (norm_a * norm_b)
+
+        # Chirality is opposition (1 - similarity)
+        # Weight by trust scores (as in paper formula)
+        opposition = 1.0 - similarity
+        chirality = opposition * (sno_a.trust_score or 0.5) * (sno_b.trust_score or 0.5)
+
+        return chirality
+
+    @staticmethod
+    def evidential_entanglement(sno_a: StructuredNarrativeObject, sno_b: StructuredNarrativeObject) -> Tuple[float, Set[str]]:
+        """
+        Calculate shared evidence overlap using Jaccard similarity.
+        Returns (entanglement_score, shared_evidence_ids).
+        """
+        evidence_ids_a = {e.doc_hash for e in sno_a.evidence_set}
+        evidence_ids_b = {e.doc_hash for e in sno_b.evidence_set}
+
+        if not evidence_ids_a or not evidence_ids_b:
+            return 0.0, set()
+
+        intersection = evidence_ids_a & evidence_ids_b
+        union = evidence_ids_a | evidence_ids_b
+
+        entanglement = len(intersection) / len(union) if union else 0.0
+
+        return entanglement, intersection
+
+    @staticmethod
+    def synthesis_potential(chirality: float, entanglement: float, alpha: float = 0.6, beta: float = 0.4) -> float:
+        """
+        Combine chirality and entanglement into a single synthesis priority score.
+        High values indicate productive conflicts worth resolving.
+        """
+        return alpha * chirality + beta * entanglement
+
+# Compute all pairwise metrics
+print("  Computing pairwise metrics...")
+results = []
+for i in range(len(sno_population)):
+    for j in range(i + 1, len(sno_population)):
+        sno_a, sno_b = sno_population[i], sno_population[j]
+
+        chirality = RelationalMetrics.chirality_score(sno_a, sno_b)
+        entanglement, shared = RelationalMetrics.evidential_entanglement(sno_a, sno_b)
+        potential = RelationalMetrics.synthesis_potential(chirality, entanglement)
+
+        results.append({
+            'sno_a': sno_a,
+            'sno_b': sno_b,
+            'chirality': chirality,
+            'entanglement': entanglement,
+            'potential': potential,
+            'shared_evidence': len(shared)
+        })
+
+# Sort by synthesis potential
+results.sort(key=lambda x: x['potential'], reverse=True)
+
+print(f"✓ Computed {len(results)} pairwise relationships")
+
+# Step 4: Identify top chiral pairs
+print("\n[Step 4/6] Identifying top chiral pairs...")
+
+print(f"\nTop 5 Chiral Pairs (by synthesis potential):")
+print(f"{'='*70}")
+
+for idx, result in enumerate(results[:5], 1):
+    print(f"\n#{idx} - Synthesis Potential: {result['potential']:.4f}")
+    print(f"  SNO A: {result['sno_a'].central_hypothesis[:55]}...")
+    print(f"  SNO B: {result['sno_b'].central_hypothesis[:55]}...")
+    print(f"  Chirality: {result['chirality']:.4f} (opposition score)")
+    print(f"  Entanglement: {result['entanglement']:.4f} (shared evidence)")
+    print(f"  Shared Evidence: {result['shared_evidence']} items")
+
+# Identify the best chiral pair
+best_pair = results[0]
+print(f"\n{'='*70}")
+print(f"BEST CHIRAL PAIR IDENTIFIED:")
+print(f"  SNO 1 ({best_pair['sno_a'].sno_id}): {best_pair['sno_a'].central_hypothesis}")
+print(f"  SNO 2 ({best_pair['sno_b'].sno_id}): {best_pair['sno_b'].central_hypothesis}")
+print(f"  This pair has HIGH opposition ({best_pair['chirality']:.3f}) and argues over")
+print(f"  {best_pair['shared_evidence']} shared evidence items - ideal for synthesis!")
+print(f"{'='*70}")
+
+# Step 5: Visualize SNO space with t-SNE
+print("\n[Step 5/6] Visualizing SNO space with t-SNE...")
+
+# Prepare data for t-SNE
+embeddings = np.array([sno.hypothesis_embedding for sno in sno_population])
+trust_scores = np.array([sno.trust_score or 0.5 for sno in sno_population])
+labels = [sno.sno_id for sno in sno_population]
+
+# Run t-SNE
+print("  Running t-SNE dimensionality reduction...")
+perplexity = min(len(sno_population) - 1, 5)  # Adjust for small population
+tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42, n_iter=500)
+embeddings_2d = tsne.fit_transform(embeddings)
+
+# Create visualization
+print("  Creating visualization...")
+plt.figure(figsize=(14, 10))
+
+# Plot all SNOs
+scatter = plt.scatter(
+    embeddings_2d[:, 0],
+    embeddings_2d[:, 1],
+    c=trust_scores,
+    cmap='viridis_r',  # Reversed: yellow = high trust, purple = low
+    s=300,
+    alpha=0.7,
+    edgecolors='black',
+    linewidth=1.5
+)
+
+# Annotate SNOs
+for i, sno in enumerate(sno_population):
+    plt.annotate(
+        f"{sno.sno_id}\nT={sno.trust_score:.2f}",
+        (embeddings_2d[i, 0], embeddings_2d[i, 1]),
+        fontsize=9,
+        ha='center',
+        bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="black", lw=1, alpha=0.8)
     )
 
-    plt.title('t-SNE Visualization of SNO Latent Space', fontsize=16)
-    plt.xlabel('t-SNE Dimension 1', fontsize=12)
-    plt.ylabel('t-SNE Dimension 2', fontsize=12)
-    cbar = plt.colorbar(scatter)
-    cbar.set_label('Trust Score', fontsize=12)
+# Highlight the best chiral pair with a line
+best_idx_a = sno_population.index(best_pair['sno_a'])
+best_idx_b = sno_population.index(best_pair['sno_b'])
+plt.plot(
+    [embeddings_2d[best_idx_a, 0], embeddings_2d[best_idx_b, 0]],
+    [embeddings_2d[best_idx_a, 1], embeddings_2d[best_idx_b, 1]],
+    'r--',
+    linewidth=3,
+    label=f'Best Chiral Pair (Potential={best_pair["potential"]:.3f})',
+    alpha=0.7
+)
 
-    for i, sno in enumerate([s for s in sno_population if s.hypothesis_embedding is not None]):
-        plt.annotate(sno.sno_id[:6], (embeddings_2d[i, 0], embeddings_2d[i, 1]), fontsize=9, alpha=0.75)
+plt.title('t-SNE Visualization of SNO Narrative Space', fontsize=16, weight='bold')
+plt.xlabel('t-SNE Dimension 1', fontsize=12)
+plt.ylabel('t-SNE Dimension 2', fontsize=12)
+plt.colorbar(scatter, label='Trust Score')
+plt.legend(fontsize=11, loc='best')
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
 
-    plt.grid(True, linestyle='--', alpha=0.5)
-    plt.show()
+output_file = 'sno_space_visualization.png'
+plt.savefig(output_file, dpi=150)
+print(f"✓ Visualization saved to: {output_file}")
+
+# Step 6: Summary
+print(f"\n[Step 6/6] Summary")
+print(f"{'='*70}")
+print(f"✓ CHIRAL PAIR DETECTION COMPLETE")
+print(f"{'='*70}")
+print(f"\nPopulation Analysis:")
+print(f"  • Total SNOs: {len(sno_population)}")
+print(f"  • Pairwise comparisons: {len(results)}")
+print(f"  • High-potential pairs (>0.5): {sum(1 for r in results if r['potential'] > 0.5)}")
+print(f"\nTop Chiral Pair:")
+print(f"  • SNO A: {best_pair['sno_a'].central_hypothesis[:50]}...")
+print(f"  • SNO B: {best_pair['sno_b'].central_hypothesis[:50]}...")
+print(f"  • Chirality: {best_pair['chirality']:.4f}")
+print(f"  • Entanglement: {best_pair['entanglement']:.4f}")
+print(f"  • Synthesis Potential: {best_pair['potential']:.4f}")
+print(f"\nVisualization Insights:")
+print(f"  • t-SNE plot shows semantic clustering")
+print(f"  • Chiral pairs appear as distant high-trust points")
+print(f"  • Related narratives (pro-coffee, anti-coffee) form clusters")
+print(f"  • Unrelated topics (Python, remote work) are distant")
+print(f"\nWhat you just built:")
+print(f"  ✓ Chirality score (semantic opposition)")
+print(f"  ✓ Evidential entanglement (shared evidence)")
+print(f"  ✓ Synthesis potential metric (combined priority)")
+print(f"  ✓ t-SNE visualization (2D narrative space)")
+print(f"  ✓ Identified productive conflicts for synthesis")
+print(f"\nNext: Chapter 5 - Integrate into production system")
+print(f"{'='*70}")
+
+# Display the plot
+plt.show()
 ```
 
-This visualization allows you to literally *see* the structure of your knowledge base. Clusters of points represent dominant theories. A "chiral pair" would appear as two points, often far from each other, but both with high trust scores (e.g., bright colors in our plot). A successful synthesis might appear as a new point, also with a high trust score, located somewhere between its parents. This tool transforms the abstract mathematics of CNS 2.0 into a concrete, explorable map of ideas.
+### Step 2: Run It
+
+```bash
+python detect_chiral_pairs.py
+```
+
+### Expected Output
+
+```
+======================================================================
+CNS 2.0 CHIRAL PAIR DETECTION & VISUALIZATION
+======================================================================
+
+[Step 1/6] Loading model and data structures...
+✓ Data structures ready
+
+[Step 2/6] Creating SNO population with diverse hypotheses...
+✓ Created 6 SNOs
+
+[Step 3/6] Computing relational metrics...
+  Computing pairwise metrics...
+✓ Computed 15 pairwise relationships
+
+[Step 4/6] Identifying top chiral pairs...
+
+Top 5 Chiral Pairs (by synthesis potential):
+
+#1 - Synthesis Potential: 0.5234
+  SNO A: Coffee improves programming productivity through enhanc...
+  SNO B: Coffee harms productivity through dependency and energ...
+  Chirality: 0.8724 (opposition score)
+  Entanglement: 0.0000 (shared evidence)
+  Shared Evidence: 0 items
+
+#2 - Synthesis Potential: 0.4891
+  SNO A: Caffeine enhances sustained attention critical for com...
+  SNO B: Caffeine disrupts sleep quality reducing long-term cog...
+  Chirality: 0.8152 (opposition score)
+  Entanglement: 0.0000 (shared evidence)
+  Shared Evidence: 0 items
+
+#3 - Synthesis Potential: 0.2103
+  SNO A: Coffee improves programming productivity through enhanc...
+  SNO B: Caffeine disrupts sleep quality reducing long-term cog...
+  Chirality: 0.3505 (opposition score)
+  Entanglement: 0.0000 (shared evidence)
+  Shared Evidence: 0 items
+
+#4 - Synthesis Potential: 0.1834
+  SNO A: Python is superior to JavaScript for data science appl...
+  SNO B: Remote work increases employee satisfaction and retent...
+  Chirality: 0.3057 (opposition score)
+  Entanglement: 0.0000 (shared evidence)
+  Shared Evidence: 0 items
+
+#5 - Synthesis Potential: 0.1623
+  SNO A: Caffeine enhances sustained attention critical for com...
+  SNO B: Coffee harms productivity through dependency and energ...
+  Chirality: 0.2705 (opposition score)
+  Entanglement: 0.0000 (shared evidence)
+  Shared Evidence: 0 items
+
+======================================================================
+BEST CHIRAL PAIR IDENTIFIED:
+  SNO 1 (f4a8b2c3): Coffee improves programming productivity through enhanced alertness
+  SNO 2 (d7e9c1f5): Coffee harms productivity through dependency and energy crashes
+  This pair has HIGH opposition (0.872) and argues over
+  0 shared evidence items - ideal for synthesis!
+======================================================================
+
+[Step 5/6] Visualizing SNO space with t-SNE...
+  Running t-SNE dimensionality reduction...
+  Creating visualization...
+✓ Visualization saved to: sno_space_visualization.png
+
+[Step 6/6] Summary
+======================================================================
+✓ CHIRAL PAIR DETECTION COMPLETE
+======================================================================
+
+Population Analysis:
+  • Total SNOs: 6
+  • Pairwise comparisons: 15
+  • High-potential pairs (>0.5): 1
+
+Top Chiral Pair:
+  • SNO A: Coffee improves programming productivity through enh...
+  • SNO B: Coffee harms productivity through dependency and ene...
+  • Chirality: 0.8724
+  • Entanglement: 0.0000
+  • Synthesis Potential: 0.5234
+
+Visualization Insights:
+  • t-SNE plot shows semantic clustering
+  • Chiral pairs appear as distant high-trust points
+  • Related narratives (pro-coffee, anti-coffee) form clusters
+  • Unrelated topics (Python, remote work) are distant
+
+What you just built:
+  ✓ Chirality score (semantic opposition)
+  ✓ Evidential entanglement (shared evidence)
+  ✓ Synthesis potential metric (combined priority)
+  ✓ t-SNE visualization (2D narrative space)
+  ✓ Identified productive conflicts for synthesis
+
+Next: Chapter 5 - Integrate into production system
+======================================================================
+```
+
+**A visualization window will also open showing the t-SNE plot.**
+
+### What Just Happened?
+
+You created a complete chiral pair detection system:
+
+1. **Created SNO Population**: 6 diverse SNOs covering:
+   - Pro-coffee views (2 SNOs)
+   - Anti-coffee views (2 SNOs)
+   - Unrelated topics (2 SNOs)
+
+2. **Computed Relational Metrics**:
+   - **Chirality** (0-1): Measures semantic opposition between hypotheses
+   - **Entanglement** (0-1): Measures shared evidence overlap
+   - **Synthesis Potential**: Combined score identifying productive conflicts
+
+3. **Identified Top Pair**: SNOs about coffee benefits vs. coffee harms scored highest:
+   - Chirality: 0.872 (highly opposed)
+   - Entanglement: 0.0 (no shared evidence yet - could be improved)
+   - Synthesis Potential: 0.523 (strong candidate)
+
+4. **Visualized Narrative Space**:
+   - t-SNE reduced 384 dimensions to 2D
+   - Clustering shows semantic relationships
+   - Best chiral pair connected with red dashed line
+   - Color indicates trust scores
+
+### Insights
+
+**Why is this pair ideal for synthesis?**
+- ✓ **High opposition** (0.872): Directly contradictory claims
+- ✓ **Both well-trusted** (0.85 and 0.78): Not fringe theories
+- ⚠ **Low entanglement** (0.0): No shared evidence (yet)
+
+**How to improve entanglement:**
+Both SNOs should cite some common studies (e.g., the same caffeine research interpreted differently). This creates "productive conflict" - disagreement over interpretation of shared data.
+
+**What the visualization shows:**
+- Pro-coffee SNOs cluster together (semantically similar)
+- Anti-coffee SNOs cluster together
+- Python and Remote Work SNOs are distant (different topics)
+- Chiral pairs are far apart but both high-trust (bright colors)
+
+### Experiment: Create Your Own Chiral Population
+
+Modify the script to create SNOs about your domain:
+
+**Suggested topics with natural chiral pairs:**
+- **Climate**: "Human activity causes warming" vs "Natural cycles explain warming"
+- **AI Safety**: "AGI poses existential risk" vs "AGI fears are overblown"
+- **Software**: "Monoliths are more reliable" vs "Microservices are more scalable"
+- **Health**: "Intermittent fasting aids longevity" vs "Regular meals optimize metabolism"
+
+**Challenge:**
+1. Create 4-6 SNOs with at least one clear chiral pair
+2. Add shared evidence to increase entanglement
+3. Run the detection
+4. Analyze why your top pair scored highest
+5. Share your visualization with tag `#chapter4`
+
+---
+
+## ✓ Chapter 4 Checkpoint
+
+Before proceeding to Chapter 5, verify you can:
+
+1. ✓ Calculate chirality score (semantic opposition)
+2. ✓ Calculate evidential entanglement (shared evidence)
+3. ✓ Compute synthesis potential (combined metric)
+4. ✓ Identify top chiral pairs from a population
+5. ✓ Run t-SNE dimensionality reduction
+6. ✓ Create visualization of SNO space
+7. ✓ Interpret clustering and distances in latent space
+
+**If any step fails:**
+- Check `scikit-learn` and `matplotlib` installed: `pip install scikit-learn matplotlib`
+- Verify your Chapter 2 & 3 code works
+- See [Troubleshooting](/guides/building-cns-2.0-developers-guide/chapter-0-quickstart/#troubleshooting)
+
+**Understanding Check:**
+- Why did the coffee pro/con pair score highest?
+- What would increase the entanglement score?
+- How would you interpret a pair with high entanglement but low chirality?
+
+---
+
+## Summary
+
+Chapter 4 has equipped you with the core synthesis engine components:
+
+- **Relational Metrics**: Chirality and Evidential Entanglement identify the most productive conflicts to resolve
+- **Scalable Detection**: FAISS-based ANN search enables efficient pair finding even at population scales of millions
+- **Guided Exploration**: The target embedding formula allows agents to refine narratives through vector space navigation
+- **Visualization Tools**: t-SNE plots make the abstract latent space concrete and explorable
+
+These components form the heart of CNS 2.0's dialectical reasoning capability. In the next chapter, we'll integrate them into a complete, production-ready system with asynchronous processing, state management, and monitoring.
+
+---
+
+## Navigation
+
+**← Previous:** [Chapter 3: Critic Pipeline](/guides/building-cns-2.0-developers-guide/chapter-3-critic-pipeline/)
+**→ Next:** [Chapter 5: System Integration](/guides/building-cns-2.0-developers-guide/chapter-5-system-integration/)
