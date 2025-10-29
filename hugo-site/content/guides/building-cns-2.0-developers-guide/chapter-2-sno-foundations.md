@@ -3,7 +3,7 @@ title: "Chapter 2: SNO Foundations"
 description: "Building Structured Narrative Objects - the core data structure of CNS 2.0"
 meta_keywords: "Structured Narrative Objects, SNO data structure, AI narrative representation, SNO persistence"
 weight: 2
-lastmod: "2025-07-30"
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
   priority: 0.5

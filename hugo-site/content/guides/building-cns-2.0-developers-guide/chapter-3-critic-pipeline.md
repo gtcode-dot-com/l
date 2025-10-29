@@ -3,7 +3,7 @@ title: "Chapter 3: The Multi-Component Critic Pipeline"
 description: "Implementing transparent evaluation systems for grounding, logic, and novelty assessment"
 meta_keywords: "AI critic pipeline, narrative evaluation AI, grounding critic, logic critic, novelty critic"
 weight: 3
-lastmod: "2025-07-30"
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
   priority: 0.5

@@ -3,7 +3,7 @@ title: "Chapter 0: Quick Start - Your First SNO in 15 Minutes"
 description: "Get from zero to working CNS 2.0 environment with your first Structured Narrative Object created and validated"
 meta_keywords: "CNS 2.0 quick start, Python installation, first SNO, sentence transformers setup"
 weight: 0
-lastmod: "2025-10-07"
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
   priority: 0.8

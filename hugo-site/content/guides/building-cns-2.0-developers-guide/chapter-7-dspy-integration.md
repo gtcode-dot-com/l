@@ -3,7 +3,7 @@ title: "Chapter 7: Advanced Optimization with DSPy"
 description: "Evolving CNS 2.0 from prompt engineering to programmatic optimization using DSPy"
 meta_keywords: "DSPy optimization, self-optimizing AI, programmatic prompt engineering, adaptive AI systems"
 weight: 7
-lastmod: "2025-07-30"
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
   priority: 0.5

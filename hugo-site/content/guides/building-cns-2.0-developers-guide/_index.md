@@ -2,7 +2,7 @@
 title: "Building CNS 2.0: A Developer's Guide"
 description: "A progressive educational guide to implementing Chiral Narrative Synthesis 2.0 in Python"
 meta_keywords: "Python AI Guide, Implement CNS 2.0, AI Reasoning System, Structured Narrative Objects, DSPy Optimization"
-lastmod: "2025-07-30"
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
   priority: 0.5
@@ -100,6 +100,50 @@ This guide is structured as a progressive learning experience. Each chapter buil
 **Already familiar with the basics?** Jump to **[Chapter 1: Introduction to CNS 2.0](/guides/building-cns-2.0-developers-guide/chapter-1-introduction/)** for the complete architectural overview and foundational implementation.
 
 **Want to see the research foundation?** Review the **[CNS 2.0 Blueprint Paper](/guides/cns-2.0-research-roadmap/blueprint/)** for the formal mathematical framework before implementing.
+
+## Frequently Asked Questions
+
+**Do I need a GPU to work through this guide?**  
+No. Every chapter intentionally targets CPU-friendly implementations so you can complete the walkthrough on a laptop. Optional GPU acceleration notes are called out when they improve training speed.
+
+**Which Python version and dependencies are required?**  
+The code targets Python 3.11 with a minimal, reproducible environment described in Chapter 0. Each chapter ships with a `requirements.txt` snippet so you can install only the tooling you need for that stage.
+
+**How much time should I budget to finish the full guide?**  
+Expect roughly 8–10 focused sessions. Each chapter includes checkpoints and self-tests, so you can pause after major milestones without losing momentum.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a GPU to work through this guide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Every chapter intentionally targets CPU-friendly implementations so you can complete the walkthrough on a laptop. Optional GPU acceleration notes are called out when they improve training speed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Python version and dependencies are required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The code targets Python 3.11 with a minimal, reproducible environment described in Chapter 0. Each chapter ships with a requirements.txt snippet so you can install only the tooling you need for that stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much time should I budget to finish the full guide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expect roughly 8–10 focused sessions. Each chapter includes checkpoints and self-tests, so you can pause after major milestones without losing momentum."
+      }
+    }
+  ]
+}
+</script>
 
 ---
 

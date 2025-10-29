@@ -3,7 +3,7 @@ title: "Chapter 6: Complete Implementation - Production Deployment and Scaling"
 description: "Taking the CNS 2.0 system from a single-process prototype to a scalable, production-grade service."
 meta_keywords: "production AI deployment, scaling AI systems, Celery Docker AI, distributed task queue"
 weight: 6
-lastmod: "2025-07-30"
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
   priority: 0.5

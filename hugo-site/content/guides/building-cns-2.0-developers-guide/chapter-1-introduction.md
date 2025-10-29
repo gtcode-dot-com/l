@@ -3,7 +3,7 @@ title: "Chapter 1: Introduction to CNS 2.0"
 description: "Understanding the core concepts and motivation behind Chiral Narrative Synthesis"
 meta_keywords: "CNS 2.0 introduction, AI knowledge synthesis, Python AI setup, dialectical reasoning"
 weight: 1
-lastmod: "2025-07-30"
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
   priority: 0.5

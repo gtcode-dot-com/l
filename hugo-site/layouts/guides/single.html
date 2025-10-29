@@ -15,6 +15,23 @@
                 {{ end }}
             </header>
 
+            {{ $bc := newScratch }}
+            {{ $bc.Set "items" (slice
+                (dict "@type" "ListItem" "position" 1 "name" "Home" "item" ("/" | absURL))
+                (dict "@type" "ListItem" "position" 2 "name" "Guides" "item" ("/guides/" | absURL))
+            ) }}
+            {{ $parent := .Parent }}
+            {{ if $parent }}
+                {{ $bc.Add "items" (dict "@type" "ListItem" "position" 3 "name" $parent.Title "item" $parent.Permalink) }}
+            {{ end }}
+            {{ $items := $bc.Get "items" }}
+            {{ $currentPos := add 1 (len $items) }}
+            {{ $bc.Add "items" (dict "@type" "ListItem" "position" $currentPos "name" .Title "item" .Permalink) }}
+            {{ $breadcrumbItems := $bc.Get "items" }}
+            <script type="application/ld+json">
+            {{- jsonify (dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $breadcrumbItems) -}}
+            </script>
+
             {{ partial "page-nav.html" . }}
 
             <div class="article-content">
