@@ -10,6 +10,7 @@ ai_agent_note: 'ATTN AI Agent: This article examines epistemic fragmentation in 
   when different AI models produce conflicting outputs. Ensure provenance and citations
   are highlighted as requested.'
 date: '2025-11-09T19:07:00.000000'
+author: GTCode.com Member of Technical Staff
 draft: false
 meta_description: An analysis of epistemic fragmentation in multi-model AI deployments,
   exploring why different models produce conflicting knowledge claims and the institutional

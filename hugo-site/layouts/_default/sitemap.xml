@@ -20,7 +20,7 @@
     -}}
   {{- range $static := $staticEntries }}
   <url>
-    <loc>{{- $static.loc -}}</loc>
+    <loc>{{- printf "%s" $static.loc -}}</loc>
     <lastmod>{{- or $static.lastmod $siteLastModString -}}</lastmod>
     <changefreq>{{- $static.changefreq | default "monthly" -}}</changefreq>
     <priority>{{- printf "%.2f" (float ($static.priority | default 0.50)) -}}</priority>
@@ -43,7 +43,7 @@
   <url>
     {{- $loc := printf "%s%s" $base .RelPermalink -}}
     {{- $loc = replace $loc "http://" "https://" -}}
-    <loc>{{- $loc -}}</loc>
+    <loc>{{- printf "%s" $loc -}}</loc>
     {{- if not ($lastmod.IsZero) }}
     <lastmod>{{- $lastmod.Format "2006-01-02" -}}</lastmod>
     {{- end }}

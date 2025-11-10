@@ -50,6 +50,10 @@
           </h2>
 
           <div class="card-meta">
+            {{ with .Params.author }}
+              <span>By {{ . }}</span>
+              {{ if or $.Date $.Params.source_url $.Params.feed }}<span>&bull;</span>{{ end }}
+            {{ end }}
             {{ partial "news-date.html" . }}
             {{ with .Params.source_url }}
               <span>&bull;</span>

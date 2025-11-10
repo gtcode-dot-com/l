@@ -25,6 +25,10 @@
       <h1 class="article-title">{{ .Title }}</h1>
 
       <div class="article-meta">
+        {{ with .Params.author }}
+          <span>By {{ . }}</span>
+          {{ if or $.Date $.Params.source_url $.Params.feed }}<span>&bull;</span>{{ end }}
+        {{ end }}
         {{ with .Date }}
           <span>{{ partial "news-date.html" $ }}</span>
         {{ end }}
