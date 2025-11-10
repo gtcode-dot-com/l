@@ -345,6 +345,7 @@ blockquote::before {
 }
 
 .nav-dropdown {
+  --dropdown-gap: 0.35rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -368,7 +369,7 @@ blockquote::before {
 
 .nav-dropdown:hover > a,
 .nav-dropdown:focus-within > a {
-  color: var(--color-text-inverse);
+  color: var(--color-text);
 }
 
 .nav-dropdown:hover > a::after,
@@ -378,8 +379,9 @@ blockquote::before {
 
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 0.35rem);
-  left: 0;
+  top: calc(100% + var(--dropdown-gap));
+  left: auto;
+  right: 0;
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
@@ -394,6 +396,18 @@ blockquote::before {
   pointer-events: none;
   transition: opacity var(--transition-base), transform var(--transition-base);
   z-index: 15;
+  transform-origin: top right;
+}
+
+@media (min-width: 769px) {
+  .nav-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--dropdown-gap));
+    left: 0;
+    right: 0;
+    height: var(--dropdown-gap);
+  }
 }
 
 .nav-dropdown-menu a {
