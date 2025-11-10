@@ -982,8 +982,30 @@ body.nav-open .site-nav-overlay {
   margin: 0;
 }
 
+.news-list.news-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-10);
+}
+
 .news-list-item {
   margin-bottom: var(--space-10);
+}
+
+.news-list.news-list-grid .news-list-item {
+  margin: 0;
+  height: 100%;
+}
+
+.news-list.news-list-grid .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-list.news-list-grid .card .card-summary {
+  flex-grow: 1;
 }
 
 .news-grid {
@@ -995,6 +1017,10 @@ body.nav-open .site-nav-overlay {
 
 @media (max-width: 768px) {
   .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-list.news-list-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1334,6 +1360,10 @@ body.nav-open .site-nav-overlay {
   padding-bottom: var(--space-8);
   border-bottom: 2px solid var(--color-border-light);
   position: relative;
+  max-width: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .article-header::after {
@@ -1367,10 +1397,13 @@ body.nav-open .site-nav-overlay {
 }
 
 .article-content {
-  max-width: var(--max-width-reading);
+  max-width: none;
   font-size: var(--text-lg);
   line-height: 1.8;
   color: var(--color-text-muted);
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 
 .article-content h2 {
@@ -1444,6 +1477,10 @@ body.nav-open .site-nav-overlay {
   margin-top: var(--space-16);
   padding-top: var(--space-8);
   border-top: 1px solid var(--color-border-light);
+  max-width: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* ============================================
@@ -1481,6 +1518,22 @@ body.nav-open .site-nav-overlay {
   color: var(--color-text-muted);
   max-width: var(--max-width-content);
   margin: var(--space-6) auto 0;
+}
+
+.section-body {
+  max-width: none;
+  width: 100%;
+  margin: var(--space-8) 0 var(--space-12);
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.section-body > * {
+  margin: 0;
 }
 
 /* ============================================

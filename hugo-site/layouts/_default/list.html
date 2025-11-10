@@ -36,7 +36,7 @@
       {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
     {{ end }}
     {{ $ordered := $orderedScratch.Get "ordered" }}
-    <div class="news-list">
+    <div class="news-list news-list-grid">
       {{ range $ordered }}
         <article class="card news-list-item">
           {{ if .Params.category }}

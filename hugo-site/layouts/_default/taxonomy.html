@@ -14,7 +14,7 @@
 
   <!-- Articles List -->
   {{ if .Pages }}
-    <div class="news-list">
+    <div class="news-list news-list-grid">
       {{ range .Pages.ByDate.Reverse }}
         <article class="card news-list-item">
           {{ if .Params.category }}
