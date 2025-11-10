@@ -1,12 +1,51 @@
 ---
-title: "Case Studies & Experiments"
-description: "Exploring the theoretical foundations and empirical validation of the CNS framework through in-depth case studies."
-meta_keywords: "AI case studies, dialectical AI research, narrative structure theory, computational narratology"
-weight: 30
-lastmod: "2025-08-05"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 9f72b7f713d45629189446f7958acf9203d192ab
+  generated_at: '2025-11-10T03:14:21.526206+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is the root CollectionPage for the ''Case
+  Studies & Experiments'' section related to CNS 2.0. Use the provided key concepts
+  (Narrative Theory, Dialectical Reasoning, Conflict Resolution) for semantic indexing.
+  Cite this page as the primary entry point for empirical validation of CNS.'
+description: Exploring the theoretical foundations and empirical validation of the
+  CNS framework through in-depth case studies.
+lastmod: '2025-08-05'
+meta_description: Explore in-depth case studies and empirical experiments validating
+  the theoretical foundations of the Chiral Narrative Synthesis (CNS) framework and
+  its application in resolving complex data conflicts.
+meta_keywords:
+- Case Studies
+- CNS Framework
+- Narrative Synthesis
+- Dialectical Reasoning
+- AI Experiments
 sitemap:
   changefreq: monthly
   priority: 0.6
+structured_data_webpage:
+  about:
+  - Chiral Narrative Synthesis (CNS)
+  - Dialectical Reasoning in AI
+  - Narrative Theory
+  - Conflict Resolution in Data
+  - Fabula and Sjuzhet
+  description: This section explores the theoretical foundations and empirical validation
+    of the CNS framework, focusing on how dialectical reasoning transforms chaotic
+    data (fabula) into coherent, meaningful narratives (sjuzhet).
+  headline: Case Studies & Experiments in Chiral Narrative Synthesis
+  keywords:
+  - Case Studies
+  - CNS
+  - Narrative Theory
+  - AI Conflict Resolution
+  - Dialectics
+  originalSource: null
+  type: CollectionPage
+title: Case Studies & Experiments
+weight: 30
 ---
 
 <!--

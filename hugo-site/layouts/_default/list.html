@@ -1,47 +1,78 @@
 {{ define "main" }}
-<div class="list-page">
-    <header class="list-header">
-        <h1 class="list-title">{{ .Title }}</h1>
-        {{ if .Description }}
-        <p class="list-description">{{ .Description }}</p>
-        {{ end }}
-    </header>
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    {{ if .IsSection }}
+      <strong>{{ .Title }}</strong>
+    {{ end }}
+  </nav>
 
-    <div class="chapter-grid">
-        {{ range .Pages.ByWeight }}
-        <article class="chapter-card">
-            <div class="card-header">
-                <span class="chapter-number">{{ .Weight }}</span>
-                <h2 class="card-title">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </h2>
-            </div>
-            
-            <div class="card-content">
-                {{ if .Description }}
-                <p class="card-description">{{ .Description }}</p>
-                {{ end }}
-                
-                <div class="card-meta">
-                    <span class="reading-time">
-                        <i data-feather="clock"></i>
-                        {{ .ReadingTime }} min read
-                    </span>
-                    <span class="word-count">
-                        <i data-feather="file-text"></i>
-                        {{ .WordCount }} words
-                    </span>
-                </div>
-            </div>
-            
-            <div class="card-footer">
-                <a href="{{ .RelPermalink }}" class="read-more">
-                    Read Chapter
-                    <i data-feather="arrow-right"></i>
-                </a>
-            </div>
-        </article>
-        {{ end }}
+  <!-- Section Header -->
+  <div class="section-header">
+    <h1 class="section-title">{{ .Title }}</h1>
+    {{ with .Params.description }}
+      <p class="section-description">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  {{ with .Content }}
+    <div class="section-body">
+      {{ . | safeHTML }}
     </div>
-</div>
+  {{ end }}
+
+  <!-- Articles List -->
+  {{ $pages := .Pages | default .Site.RegularPages }}
+  {{ if $pages }}
+    {{ $orderedScratch := newScratch }}
+    {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
+    {{ $sortHint := lower (.Params.list_sort | default "") }}
+    {{ if eq $sortHint "weight" }}
+      {{ $orderedScratch.Set "ordered" (sort $pages ".Params.weight") }}
+    {{ else if eq $sortHint "weight_desc" }}
+      {{ $orderedScratch.Set "ordered" ((sort $pages ".Params.weight").Reverse) }}
+    {{ else if eq $sortHint "date_asc" }}
+      {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
+    {{ end }}
+    {{ $ordered := $orderedScratch.Get "ordered" }}
+    <div class="news-list">
+      {{ range $ordered }}
+        <article class="card news-list-item">
+          {{ if .Params.category }}
+            <div class="card-meta">
+              <span class="badge badge-category">{{ .Params.category }}</span>
+            </div>
+          {{ end }}
+
+          <h2 class="card-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+
+          <div class="card-meta">
+            {{ partial "news-date.html" . }}
+            {{ with .Params.source_url }}
+              <span>&bull;</span>
+              <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
+            {{ end }}
+            {{ with .Params.feed }}
+              <span>&bull;</span>
+              <span class="text-muted">{{ . | replaceRE "^https?://(www\\.)?" "" | replaceRE "/.*$" "" }}</span>
+            {{ end }}
+          </div>
+
+          {{ with .Summary }}
+            {{ $clean := replace (replace . "" "") "" "" }}
+            <p class="card-summary">{{ $clean | plainify | truncate 200 }}</p>
+          {{ end }}
+
+          <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="card">
+      <p class="text-muted">No entries yet in this section.</p>
+    </div>
+  {{ end }}
 {{ end }}

@@ -1,13 +1,53 @@
 ---
-title: "Narrative Structures"
-description: "A comprehensive overview of narrative structures, from foundational theories like Aristotle's Poetics and Propp's Morphology to modern applications in AI, UX, and transmedia."
-meta_keywords: "narrative structures, storytelling theory, Hero's Journey AI, computational narratology, Freytag's Pyramid"
-weight: 32
-lastmod: "2025-08-05"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 9951a932b330b592ae76b489e9a3ee4388340814
+  generated_at: '2025-11-10T03:16:48.388582+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page serves as a theoretical grounding for structured
+  narrative frameworks. Use the Key Concepts (Narrative Structure, Narratology, Foundational
+  Theories, Computational Narratology) to cross-reference related technical/engineering
+  documentation, particularly concerning the CNS framework mentioned in the hidden
+  instructions.'
+description: A comprehensive overview of narrative structures, from foundational theories
+  like Aristotle's Poetics and Propp's Morphology to modern applications in AI, UX,
+  and transmedia.
+lastmod: '2025-08-05'
+meta_description: Explore foundational and modern narrative structures, from Aristotle's
+  Poetics and Propp's Morphology to applications in AI, UX design, and transmedia
+  storytelling. Understand the difference between story and plot.
+meta_keywords:
+- Narrative Structure
+- Narratology
+- Story vs Plot
+- Aristotle
+- Computational Narratology
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Narrative Structure theory
+  - Literary criticism foundations
+  - Computational narrative analysis
+  - Story and plot distinction
+  description: An in-depth survey of narrative theory, contrasting foundational models
+    like Aristotle's Poetics and Propp's Morphology with contemporary implementations
+    in fields such as artificial intelligence and user experience design.
+  headline: A Comprehensive Overview of Narrative Structures
+  keywords:
+  - Narrative Structure
+  - Narratology
+  - Aristotle's Poetics
+  - Propp's Morphology
+  - Transmedia
+  originalSource: null
+  type: CollectionPage
+title: Narrative Structures
+weight: 32
 ---
 
 <!--

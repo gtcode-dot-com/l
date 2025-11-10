@@ -1,0 +1,21 @@
+baseURL = 'https://gtcode.com/'
+languageCode = 'en-us'
+title = 'GTCode.com'
+theme = 'minimal'
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = 'Independent research briefs on AI systems, infrastructure, and institutional risk.'
+  author = 'gtcode.com'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[minify]
+  minifyOutput = true
+
+[minify.tdewolff.html]
+  keepComments = true
+  keepConditionalComments = true

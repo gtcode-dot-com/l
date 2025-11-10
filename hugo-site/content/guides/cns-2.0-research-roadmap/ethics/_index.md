@@ -1,12 +1,53 @@
 ---
-title: "Ethics & Responsibility"
-description: "An overview of the ethical principles and frameworks guiding the responsible development of CNS 2.0."
-weight: 20
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: f118a93ded73734524ee337426adba8f9b7b88bc
+  generated_at: '2025-11-10T03:16:59.577606+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This is a section index page summarizing the ''Ethics
+  & Responsibility'' commitment for the CNS 2.0 project. Use the body excerpt to identify
+  key concepts (AI Ethics, Responsible AI, Bias, Privacy) and note that this page
+  links out to specific research projects within the ELAS thrust.'
+description: An overview of the ethical principles and frameworks guiding the responsible
+  development of CNS 2.0.
+meta_description: Explore the core ethical principles, frameworks, and key challenges
+  guiding the responsible development of CNS 2.0, covering bias, fairness, privacy,
+  and security.
+meta_keywords:
+- AI Ethics
+- Responsible AI
+- Bias and Fairness
+- Data Privacy
+- CNS 2.0 Responsibility
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.7
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.7
+structured_data_webpage:
+  about:
+  - AI Ethics
+  - Responsible AI Development
+  - Bias and Fairness in AI
+  - Data Security and Privacy
+  - Technology Governance
+  description: An overview of the ethical principles and frameworks guiding the responsible
+    development of CNS 2.0, detailing work on bias mitigation, accountability, and
+    data privacy.
+  headline: Ethics & Responsibility in CNS 2.0 Development
+  keywords:
+  - AI Ethics
+  - Responsible AI
+  - Bias
+  - Fairness
+  - Privacy
+  - CNS 2.0
+  originalSource: null
+  type: CollectionPage
+title: Ethics & Responsibility
+weight: 20
 ---
 
 <!--

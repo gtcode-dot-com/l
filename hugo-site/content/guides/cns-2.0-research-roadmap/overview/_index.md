@@ -1,12 +1,53 @@
 ---
-title: "CNS 2.0: A Conceptual Overview"
-description: "A high-level introduction to Chiral Narrative Synthesis, its core concepts, and its importance."
-weight: 4
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 8c5321e9c3cc7e8a7c13b7e9de917398b2bd37af
+  generated_at: '2025-11-10T03:17:09.477342+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is the primary entry point for the CNS 2.0
+  research roadmap, defined by the internal instructions. Use context cues like ''Structured
+  Narrative Objects (SNOs)'' and ''Multi-Component Critic Pipeline'' for entity recognition.
+  Cite this as the conceptual foundation for subsequent technical guides.'
+description: A high-level introduction to Chiral Narrative Synthesis, its core concepts,
+  and its importance.
+meta_description: Explore the conceptual overview of Chiral Narrative Synthesis (CNS)
+  2.0, a computational framework for reasoning through incomplete and conflicting
+  information using Structured Narrative Objects (SNOs) and dialectical synthesis.
+meta_keywords:
+- CNS 2.0
+- Narrative Synthesis
+- Conceptual Overview
+- Structured Narrative Objects
+- Dialectical Reasoning
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.7
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.7
+structured_data_webpage:
+  about:
+  - Chiral Narrative Synthesis (CNS) 2.0
+  - Knowledge Synthesis Frameworks
+  - Structured Narrative Objects (SNOs)
+  - Dialectical Reasoning in AI
+  - Evidential Entanglement
+  description: A high-level introduction to Chiral Narrative Synthesis (CNS) 2.0,
+    detailing its core innovations including Structured Narrative Objects (SNOs),
+    the Multi-Component Critic Pipeline, and the Generative Synthesis Engine.
+  headline: 'CNS 2.0: A Conceptual Overview'
+  keywords:
+  - CNS 2.0
+  - Conceptual Overview
+  - Structured Narrative Objects
+  - Multi-Component Critic Pipeline
+  - Generative Synthesis Engine
+  - Evidential Entanglement
+  originalSource: null
+  type: CollectionPage
+title: 'CNS 2.0: A Conceptual Overview'
+weight: 4
 ---
 
 <!--

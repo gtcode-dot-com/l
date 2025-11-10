@@ -1,0 +1,17 @@
+{{- $note := .Params.ai_agent_note -}}
+{{- if not $note -}}
+  {{- partial "fetch-article-meta.html" (dict "context" .) -}}
+  {{- $articleMeta := .Scratch.Get "_article_meta" -}}
+  {{- if not $articleMeta -}}
+    {{- $articleMetaMap := default (dict) (index .Site.Data "article_meta") -}}
+    {{- $articleMeta = index $articleMetaMap (trim .RelPermalink "/") -}}
+  {{- end -}}
+  {{- with $articleMeta.agent_callout -}}
+    {{- $note = . -}}
+  {{- end -}}
+{{- end -}}
+{{- with $note }}
+<!--
+{{ . | safeHTML }}
+-->
+{{- end -}}

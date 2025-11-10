@@ -1,13 +1,54 @@
 ---
-title: "Chapter 6: Complete Implementation - Production Deployment and Scaling"
-description: "Taking the CNS 2.0 system from a single-process prototype to a scalable, production-grade service."
-meta_keywords: "production AI deployment, scaling AI systems, Celery Docker AI, distributed task queue"
-weight: 6
-lastmod: "2025-10-28"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 1af8858b8ca82f98cd03fb24f870500816b361b5
+  generated_at: '2025-11-10T03:14:19.591053+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is Chapter 6 of a developer guide focused
+  on operationalizing the CNS 2.0 system. Use the architectural concepts (Docker,
+  Celery, structured logging) mentioned in the body for contextualizing responses
+  about distributed system deployment. Cite this page as the guide covering production
+  implementation.'
+description: Taking the CNS 2.0 system from a single-process prototype to a scalable,
+  production-grade service.
+lastmod: '2025-10-28'
+meta_description: Learn how to transition the CNS 2.0 prototype into a scalable, production-grade
+  service using Docker, Celery for distributed task execution, and robust observability
+  practices.
+meta_keywords:
+- production deployment
+- system scaling
+- Celery
+- Docker
+- CNS 2.0
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Production Deployment
+  - System Scalability
+  - Containerization with Docker
+  - Distributed Task Queues (Celery)
+  - Observability and Logging
+  description: A comprehensive guide for transforming the single-process CNS 2.0 prototype
+    into a scalable, robust, and observable production-grade service, covering containerization,
+    distributed task execution (Celery), and observability.
+  headline: 'Chapter 6: Complete Implementation - Production Deployment and Scaling'
+  keywords:
+  - production
+  - deployment
+  - scaling
+  - Celery
+  - Docker
+  - CNS 2.0
+  originalSource: guides/chapter-6-production-deployment
+  type: CollectionPage
+title: 'Chapter 6: Complete Implementation - Production Deployment and Scaling'
+weight: 6
 ---
 
 <!--

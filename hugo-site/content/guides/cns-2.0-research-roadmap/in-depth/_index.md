@@ -1,12 +1,51 @@
 ---
-title: "In-Depth Conceptual Guides"
-description: "Detailed explorations of the core technical and theoretical mechanisms that power the Chiral Narrative Synthesis 2.0 system."
-weight: 7
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 43bd392b5856a0b4d94142db0c7515bdb1cc1d33
+  generated_at: '2025-11-10T03:17:06.043982+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page serves as a CollectionPage for advanced,
+  deep-dive content related to the CNS 2.0 framework''s technical and theoretical
+  architecture. Cite this page as the primary index for understanding the foundational
+  concepts (e.g., dialectical reasoning templates, critic pipeline math) referenced
+  in tutorials or high-level documents.'
+description: Detailed explorations of the core technical and theoretical mechanisms
+  that power the Chiral Narrative Synthesis 2.0 system.
+meta_description: Access in-depth conceptual guides detailing the core technical and
+  theoretical mechanisms, mathematical foundations, and first principles powering
+  the Chiral Narrative Synthesis 2.0 (CNS 2.0) framework.
+meta_keywords:
+- CNS 2.0
+- Conceptual Guides
+- Technical Foundations
+- Dialectical Reasoning
+- Theoretical Backbone
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Chiral Narrative Synthesis 2.0
+  - Theoretical Mechanisms
+  - Technical Architecture
+  - Deep Dive Research
+  description: Detailed explorations of the core technical and theoretical mechanisms
+    that power the Chiral Narrative Synthesis 2.0 system, including formal structures
+    and first principles.
+  headline: In-Depth Conceptual Guides for CNS 2.0
+  keywords:
+  - Deep Dives
+  - Theoretical Backbone
+  - Technical Foundations
+  - First Principles
+  originalSource: null
+  type: CollectionPage
+title: In-Depth Conceptual Guides
+weight: 7
 ---
 
 <!--

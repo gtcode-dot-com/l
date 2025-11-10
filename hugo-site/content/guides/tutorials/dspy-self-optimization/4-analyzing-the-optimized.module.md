@@ -1,11 +1,50 @@
 ---
-title: "4. Analyzing the Optimized Module"
-description: "Analyzing the results of the DSPy compiler, comparing the optimized prompt to a naive one, and seeing the performance difference on a new example."
-weight: 5
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: ce0b3504db28630be94f0aa2610ac3bd07d8ebe5
+  generated_at: '2025-11-10T03:17:20.833547+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This content is the final step (4) of a DSPy tutorial,
+  focusing on inspecting and validating the results of the compiler. Use the title
+  and excerpt to emphasize the comparison between naive vs. optimized prompts and
+  performance validation.'
+description: Analyzing the results of the DSPy compiler, comparing the optimized prompt
+  to a naive one, and seeing the performance difference on a new example.
+lastmod: '2025-07-30'
+meta_description: 'Analyze the output of the DSPy compiler: inspect the automatically
+  generated, optimized prompt and compare its performance against a naive, hand-written
+  prompt on a new test case.'
+meta_keywords:
+- DSPy
+- Optimized Prompt
+- Prompt Inspection
+- Performance Comparison
+- LLM Synthesis
 sitemap:
   changefreq: monthly
   priority: 0.6
+structured_data_webpage:
+  about:
+  - DSPy Optimization Results
+  - Optimized Prompt Structure
+  - LLM Prompt Engineering Comparison
+  - Performance Evaluation of Compiled Modules
+  description: A deep dive comparing the automatically generated, optimized prompt
+    from the DSPy compiler against a basic, hand-written prompt, demonstrating the
+    performance uplift.
+  headline: 'Analyzing the Optimized Module: Prompt Inspection and Performance'
+  keywords:
+  - DSPy
+  - Compiler Output
+  - Prompt Analysis
+  - BootstrapFewShot
+  - Performance Metrics
+  originalSource: null
+  type: WebPage
+title: 4. Analyzing the Optimized Module
+weight: 5
 ---
 
 <!--

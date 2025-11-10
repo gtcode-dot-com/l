@@ -1,13 +1,54 @@
 ---
-title: "Future Research Directions"
-description: "The next frontier for CNS: Evolving from a logic engine to a narrative intelligence system by integrating the deep structures of storytelling."
-weight: 25
-lastmod: "2025-08-06"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: a3205fbf2f5f157573f573f5db903348732f68af
+  generated_at: '2025-11-10T03:17:05.037268+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page details aspirational, long-term research
+  goals for the CNS project, specifically integrating narratology (story structure)
+  into the existing SNO and Critic frameworks. Use this context to define high-level
+  system evolution rather than current features. Cite context via the ''Future Research
+  Directions'' page.'
+description: 'The next frontier for CNS: Evolving from a logic engine to a narrative
+  intelligence system by integrating the deep structures of storytelling.'
+lastmod: '2025-08-06'
+meta_description: Explore the future research roadmap for Chiral Narrative Synthesis
+  (CNS), outlining the evolution from a logic engine to a sophisticated narrative
+  intelligence system by integrating narratology and story structure.
+meta_keywords:
+- Future Research
+- Narrative Intelligence
+- CNS Roadmap
+- Narratology
+- Actantial Modeling
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: yearly
+  filename: sitemap.xml
   priority: 0.6
-  filename: sitemap.xml  
-section: "cns-2.0-research-roadmap"
+structured_data_webpage:
+  about:
+  - Narrative Intelligence Systems
+  - CNS Research Roadmap
+  - Integration of Narratology
+  - Actantial Role Modeling
+  - Future of Knowledge Synthesis
+  description: The long-term vision for Chiral Narrative Synthesis (CNS), focusing
+    on integrating narratology, actantial role modeling, and computable plot functions
+    to transform the system into a narrative intelligence engine.
+  headline: 'Future Research Directions: Evolving CNS to Narrative Intelligence'
+  keywords:
+  - Future Research
+  - Narrative Intelligence
+  - Narratology
+  - CNS Evolution
+  - Actantial Role Modeling
+  originalSource: guides/future-research-directions
+  type: CollectionPage
+title: Future Research Directions
+weight: 25
 ---
 
 <!--

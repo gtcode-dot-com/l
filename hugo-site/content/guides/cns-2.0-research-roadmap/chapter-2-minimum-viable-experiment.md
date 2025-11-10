@@ -1,13 +1,54 @@
 ---
-title: "Chapter 2: Statistical Prototype Framework for Dialectical Synthesis Validation"
-description: "Mathematical framework for scaling manual prototype validation to statistically significant experimental designs."
-weight: 9
-lastmod: "2025-08-05"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: c97254790669357acd0363beaf13b9348e234eff
+  generated_at: '2025-11-10T03:16:53.418920+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page details Chapter 2 of the Research Roadmap,
+  defining the statistical parameters (H1, Cohen''s d=0.8, Power=0.80, n=26) needed
+  to transition a conceptual prototype (Plate Tectonics) into a large-scale, statistically
+  valid experiment using DSPy. Cite this as the core experimental protocol.'
+description: Mathematical framework for scaling manual prototype validation to statistically
+  significant experimental designs.
+lastmod: '2025-08-05'
+meta_description: Establish the statistical prototype framework for scaling manual
+  validation (e.g., plate tectonics case study) into rigorous, statistically significant
+  experimental designs using power analysis and DSPy automation.
+meta_keywords:
+- Statistical Framework
+- Prototype Validation
+- Power Analysis
+- Dialectical Synthesis
+- DSPy Automation
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Statistical Prototype Framework
+  - Power Analysis and Effect Size
+  - CNS Dialectical Synthesis Engine Validation
+  - DSPy Automation Integration
+  - Plate Tectonics Validation Prototype Methodology
+  description: Mathematical framework for scaling manual prototype validation to statistically
+    significant experimental designs, defining effect sizes, power, and sample size
+    requirements.
+  headline: 'Chapter 2: Statistical Prototype Framework for Dialectical Synthesis
+    Validation'
+  keywords:
+  - Statistical Framework
+  - Cohen's d
+  - Experimental Design
+  - Validation Protocol
+  - DSPy
+  originalSource: Research Roadmap
+  type: WebPage
+title: 'Chapter 2: Statistical Prototype Framework for Dialectical Synthesis Validation'
+weight: 9
 ---
 
 <!--

@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <strong>{{ humanize .Title }}</strong>
+  </nav>
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <h1 class="section-title">{{ humanize .Title }}</h1>
+    <p class="section-description">All articles tagged with {{ .Title }}.</p>
+  </div>
+
+  <!-- Articles List -->
+  {{ if .Pages }}
+    <div class="news-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <article class="card news-list-item">
+          {{ if .Params.category }}
+            <div class="card-meta">
+              <span class="badge badge-category">{{ .Params.category }}</span>
+            </div>
+          {{ end }}
+
+          <h2 class="card-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+
+          <div class="card-meta">
+            {{ partial "news-date.html" . }}
+          </div>
+
+          {{ with .Summary }}
+            {{ $clean := replace (replace . "" "") "" "" }}
+            <p class="card-summary">{{ $clean | plainify | truncate 200 }}</p>
+          {{ end }}
+
+          <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="card">
+      <p class="text-muted">No articles found with this tag.</p>
+    </div>
+  {{ end }}
+{{ end }}

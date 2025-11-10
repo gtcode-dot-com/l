@@ -1,0 +1,96 @@
+{{- partial "fetch-article-meta.html" (dict "context" .) -}}
+{{- $articleMeta := .Scratch.Get "_article_meta" -}}
+{{- if not $articleMeta -}}
+  {{- $articleMetaMap := default (dict) (index .Site.Data "article_meta") -}}
+  {{- $articleMeta = index $articleMetaMap (trim .RelPermalink "/") -}}
+{{- end -}}
+{{- if and $articleMeta $articleMeta.json_ld }}
+<script type="application/ld+json">{{ $articleMeta.json_ld | safeHTML }}</script>
+{{- else -}}
+{{- $sd := .Params.structured_data -}}
+{{- $sdPage := .Params.structured_data_webpage -}}
+{{- if $sdPage }}
+  {{- $schemaType := $sdPage.type | default "WebPage" -}}
+  {{- $headline := cond (and $sdPage.headline (ne $sdPage.headline "")) $sdPage.headline .Title -}}
+  {{- $description := cond (and $sdPage.description (ne $sdPage.description "")) $sdPage.description (.Summary | default "") -}}
+  {{- $lastmod := .Lastmod -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end -}}
+  {{- $modified := $lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $language := .Lang | default "en" -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" $schemaType
+        "name" $headline
+        "headline" $headline
+        "description" $description
+        "url" .Permalink
+        "inLanguage" $language
+        "dateModified" $modified
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+    -}}
+  {{- if $sdPage.about }}
+    {{- $data = merge $data (dict "about" $sdPage.about) -}}
+  {{- end -}}
+  {{- if $sdPage.keywords }}
+    {{- $data = merge $data (dict "keywords" $sdPage.keywords) -}}
+  {{- end -}}
+<script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- else if and (eq .Kind "section") (eq .Section "news") -}}
+  {{- $headline := .Title -}}
+  {{- $description := .Description | default (.Summary | default .Site.Params.description) -}}
+  {{- $lastmod := .Lastmod -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end -}}
+  {{- $modified := $lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $language := .Lang | default "en" -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "CollectionPage"
+        "name" $headline
+        "headline" $headline
+        "description" $description
+        "url" .Permalink
+        "dateModified" $modified
+        "inLanguage" $language
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+        "about" (slice $headline "AI news" "Daily briefings")
+    -}}
+<script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- else if $sd }}
+  {{- $headline := cond (and $sd.headline (ne $sd.headline "")) $sd.headline .Title -}}
+  {{- $description := cond (and $sd.description (ne $sd.description "")) $sd.description (.Summary | default "") -}}
+  {{- $published := cond (.PublishDate.IsZero) (.Date.Format "2006-01-02T15:04:05Z07:00") (.PublishDate.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $modified := cond (.Lastmod.IsZero) $published (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $author := cond (and $sd.author (ne $sd.author "")) $sd.author (.Site.Params.author | default "gtcode.com") -}}
+  {{- $publisher := $sd.publisher | default (dict "name" "gtcode.com" "logo" "/favicon.ico") -}}
+  {{- $image := slice -}}
+  {{- if $sd.main_image }}
+    {{- $image = $image | append $sd.main_image -}}
+  {{- end -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "NewsArticle"
+        "headline" $headline
+        "description" $description
+        "datePublished" $published
+        "dateModified" $modified
+        "author" (dict "@type" "Person" "name" $author)
+        "publisher" (dict "@type" "Organization" "name" ($publisher.name | default "gtcode.com") "logo" (dict "@type" "ImageObject" "url" ($publisher.logo | default "/favicon.ico")))
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    -}}
+  {{- if gt (len $image) 0 }}
+    {{- $data = merge $data (dict "image" $image) -}}
+  {{- end -}}
+  {{- if $sd.about }}
+    {{- $data = merge $data (dict "about" $sd.about) -}}
+  {{- end -}}
+  {{- if $sd.keywords }}
+    {{- $data = merge $data (dict "keywords" $sd.keywords) -}}
+  {{- end -}}
+  {{- if $sd.original_source }}
+    {{- $data = merge $data (dict "originalSource" $sd.original_source) -}}
+  {{- end -}}
+<script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- end -}}
+{{- end -}}

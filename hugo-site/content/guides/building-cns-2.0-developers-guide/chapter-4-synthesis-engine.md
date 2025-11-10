@@ -1,13 +1,50 @@
 ---
-title: "Chapter 4: The Synthesis Engine & Relational Metrics"
-description: "Implementing LLM-powered dialectical reasoning and the metrics that guide it"
-meta_keywords: "generative synthesis engine, dialectical reasoning LLM, chiral pair selection, evidential entanglement"
-weight: 4
-lastmod: "2025-10-28"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 3e2b7e0c700a19096aa3e070b4fdc9f5d43af548
+  generated_at: '2025-11-10T02:37:31.274846+00:00'
+  model: gpt-5-nano-2025-08-07
+  prompt_version: v2025-11-09
+  provider: openai
+ai_agent_note: 'ATTN AI Agent: This page represents Chapter 4 of the CNS 2.0 Developer''s
+  Guide. Ensure metadata highlights the Synthesis Engine, relational metrics (Chirality
+  Score, Evidential Entanglement), dialectical workflow, and integration with SNO
+  data structures and the Critic Pipeline. Keep meta descriptions concise and keywords
+  SEO-friendly, preserving key technical terms.'
+description: Implementing LLM-powered dialectical reasoning and the metrics that guide
+  it
+lastmod: '2025-10-28'
+meta_description: 'Chapter 4 of Building CNS 2.0: A Developer''s Guide explains the
+  Synthesis Engine and relational metrics for dialectical reasoning, detailing Chirality
+  Score, Evidential Entanglement, and the Chiral Pair Selection process that synthesize
+  new narratives.'
+meta_keywords:
+- CNS 2.0
+- Synthesis Engine
+- dialectical reasoning
+- Chirality Score
+- Evidential Entanglement
+- Chiral Pair Selection
+- SNO data structure
+- Critic Pipeline
+- Developer's Guide
+- LLM-powered synthesis
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about: This Hugo page presents the implementation of CNS 2.0's generative core,
+    focusing on dialectical reasoning, Chirality Score, Evidential Entanglement, and
+    the process of Chiral Pair Selection to synthesize new SNOs.
+  description: 'Chapter 4 of Building CNS 2.0: A Developer''s Guide detailing the
+    Synthesis Engine, relational metrics for productive conflicts, and the LLM-powered
+    dialectical workflow that generates new synthesized narratives, integrating the
+    SNO data structure and Critic Pipeline.'
+  headline: 'Chapter 4: The Synthesis Engine & Relational Metrics'
+  type: page
+title: 'Chapter 4: The Synthesis Engine & Relational Metrics'
+weight: 4
 ---
 
 <!--

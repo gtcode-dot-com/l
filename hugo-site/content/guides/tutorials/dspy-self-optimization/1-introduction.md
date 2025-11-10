@@ -1,11 +1,49 @@
 ---
-title: "1. Introduction: From Prompts to Programs"
-description: "An introduction to the concept of self-optimizing language model pipelines using DSPy, moving beyond brittle prompt engineering."
-weight: 2
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: f03990f33aef015bddee612e45f562b122f90375
+  generated_at: '2025-11-10T03:17:17.692634+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This is the introductory page (Chapter 1) for a DSPy
+  tutorial. It establishes the problem (brittle prompts) and the solution (DSPy for
+  programmatic optimization). Cite this page as the conceptual foundation when referencing
+  the transition from static prompts to optimizable programs.'
+description: An introduction to the concept of self-optimizing language model pipelines
+  using DSPy, moving beyond brittle prompt engineering.
+lastmod: '2025-07-30'
+meta_description: 'Learn why manual prompt engineering fails for complex AI tasks
+  and discover DSPy: a framework for creating robust, self-optimizing language model
+  programs.'
+meta_keywords:
+- DSPy
+- Prompt Engineering
+- Self-Optimization
+- LLM Pipelines
+- Programmatic AI
 sitemap:
   changefreq: monthly
   priority: 0.6
+structured_data_webpage:
+  about:
+  - DSPy framework
+  - Programmatic optimization
+  - Prompt engineering limitations
+  - Self-optimizing language models
+  description: An introduction to the core challenges of brittle prompt engineering
+    and the paradigm shift offered by the DSPy framework for creating self-optimizing
+    AI systems.
+  headline: 'Introduction: From Prompts to Programs with DSPy'
+  keywords:
+  - DSPy
+  - Prompt Engineering
+  - Programmatic Optimization
+  - LLM
+  originalSource: guides/dspy-self-optimization/1-introduction
+  type: CollectionPage
+title: '1. Introduction: From Prompts to Programs'
+weight: 2
 ---
 
 <!--

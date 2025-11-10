@@ -1,0 +1,35 @@
+{{- $ctx := .context -}}
+{{- if not $ctx -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $scratchKey := .scratchKey | default "_article_meta" -}}
+{{- $scratch := .scratch | default $ctx.Scratch -}}
+{{- if not $scratch -}}
+  {{- return -}}
+{{- end -}}
+
+{{- if $scratch.Get $scratchKey -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $data := site.Data.article_meta -}}
+{{- if not $data -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $rel := "" -}}
+{{- with $ctx.RelPermalink -}}
+  {{- $rel = trim . "/" -}}
+{{- end -}}
+
+{{- if eq $rel "" -}}
+  {{- $scratch.Delete $scratchKey -}}
+  {{- return -}}
+{{- end -}}
+
+{{- with index $data $rel -}}
+  {{- $scratch.Set $scratchKey . -}}
+{{- else -}}
+  {{- $scratch.Delete $scratchKey -}}
+{{- end -}}

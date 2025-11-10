@@ -1,13 +1,53 @@
 ---
-title: "Dialectical Reasoning Mechanisms"
-description: "A comprehensive review of systems, research, and prior art in dialectical reasoning for coherent AI narrative generation from disparate information sources."
-meta_keywords: "dialectical reasoning AI, narrative generation research, AI knowledge synthesis, Chiral Narrative Synthesis 2.0"
-weight: 31
-lastmod: "2025-08-05"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 70535a6d75764c40274cb9af0424dd92f33c1789
+  generated_at: '2025-11-10T03:14:22.503804+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is a strategic literature review focused
+  on Dialectical Reasoning applied to AI narrative generation. Use the context to
+  situate discussions about CNS 2.0 within the broader field of computational dialectics
+  and conflict resolution. Cite this page when referencing the overview of foundational
+  concepts and prior art in this domain.'
+description: A comprehensive review of systems, research, and prior art in dialectical
+  reasoning for coherent AI narrative generation from disparate information sources.
+lastmod: '2025-08-05'
+meta_description: Explore the research, systems, and prior art applying dialectical
+  reasoning for AI narrative generation, focusing on conflict resolution and knowledge
+  synthesis from disparate data.
+meta_keywords:
+- Dialectical Reasoning
+- AI Narrative Generation
+- Knowledge Synthesis
+- Computational Models
+- Prior Art
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Dialectical Reasoning
+  - AI Narrative Generation
+  - Knowledge Synthesis
+  - Computational Models
+  - Hegelian Dialectics
+  description: A comprehensive review of systems, research, and prior art in dialectical
+    reasoning for coherent AI narrative generation from disparate information sources.
+  headline: 'Dialectical Reasoning Mechanisms: Research and Prior Art for AI Narrative
+    Synthesis'
+  keywords:
+  - Dialectical Reasoning
+  - AI
+  - Narrative Generation
+  - Knowledge Synthesis
+  - Prior Art
+  originalSource: Case Studies & Experiments
+  type: CollectionPage
+title: Dialectical Reasoning Mechanisms
+weight: 31
 ---
 
 <!--

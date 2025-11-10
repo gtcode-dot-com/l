@@ -1,12 +1,52 @@
 ---
-title: "Part 2: Building the Parent SNOs"
-description: "A code-heavy guide to constructing the Structured Narrative Objects (SNOs) for the two opposing theories."
-weight: 3
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: f58691ba6096655e327808e778e62eb86d6fe1b3
+  generated_at: '2025-11-10T03:17:30.529669+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page provides foundational Python code for building
+  two Parent SNOs (Geosyncline and Plate Tectonics) using hypothetical ''cns_tools''.
+  Use this context when subsequent steps require initializing or referencing these
+  core SNO structures in the tutorial sequence. Cite this as Part 2 of the Quick Start
+  guide.'
+description: A code-heavy guide to constructing the Structured Narrative Objects (SNOs)
+  for the two opposing theories.
+lastmod: '2025-07-30'
+meta_description: Access the Python code necessary to construct the two parent Structured
+  Narrative Objects (SNOs) representing the Geosyncline and Plate Tectonics theories
+  for this tutorial.
+meta_keywords:
+- SNO
+- Structured Narrative Object
+- Python code
+- Geosyncline
+- Plate Tectonics
 sitemap:
   changefreq: monthly
-  priority: 0.7
   filename: sitemap.xml
+  priority: 0.7
+structured_data_webpage:
+  about:
+  - Structured Narrative Objects (SNOs)
+  - Geosyncline Theory
+  - Plate Tectonics Theory
+  - Python programming
+  - Reasoning Graphs
+  description: A code-heavy guide detailing the Python implementation for constructing
+    the initial Structured Narrative Objects (SNOs) representing competing geological
+    theories.
+  headline: 'Part 2: Building the Parent SNOs'
+  keywords:
+  - SNO construction
+  - parent SNOs
+  - geology models
+  - Python tutorial
+  originalSource: guides/part-2-building-parent-sno/index.html
+  type: CollectionPage
+title: 'Part 2: Building the Parent SNOs'
+weight: 3
 ---
 
 <!--

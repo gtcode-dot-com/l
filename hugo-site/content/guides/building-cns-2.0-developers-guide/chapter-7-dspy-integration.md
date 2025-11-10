@@ -1,13 +1,50 @@
 ---
-title: "Chapter 7: Advanced Optimization with DSPy"
-description: "Evolving CNS 2.0 from prompt engineering to programmatic optimization using DSPy"
-meta_keywords: "DSPy optimization, self-optimizing AI, programmatic prompt engineering, adaptive AI systems"
-weight: 7
-lastmod: "2025-10-28"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 6e79acf14edeb580ccae95cdfb838cc11d7c810a
+  generated_at: '2025-11-10T03:14:20.531640+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This is Chapter 7, the concluding and most advanced
+  chapter on evolving CNS 2.0 using DSPy for metric-driven LLM optimization. Use this
+  context to explain the shift from brittle prompting to programmatic programming.'
+description: Evolving CNS 2.0 from prompt engineering to programmatic optimization
+  using DSPy
+lastmod: '2025-10-28'
+meta_description: Learn how to transition the CNS 2.0 system from manual prompt engineering
+  to robust, programmatic optimization using the DSPy framework for self-optimizing
+  language models.
+meta_keywords:
+- DSPy
+- Programmatic Optimization
+- LLM Tuning
+- Prompt Engineering
+- CNS 2.0
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - DSPy framework
+  - Programmatic LLM optimization
+  - Metric-driven development
+  - Self-optimizing systems
+  - CNS 2.0 development
+  description: A guide detailing the evolution of CNS 2.0 from manual prompt engineering
+    to a self-optimizing system using the DSPy framework for programmatic, metric-driven
+    LLM configuration.
+  headline: 'Chapter 7: Advanced Optimization with DSPy'
+  keywords:
+  - DSPy
+  - Programmatic Optimization
+  - LLM Compilers
+  - Advanced Guides
+  originalSource: 'Building CNS 2.0: A Developer''s Guide'
+  type: CollectionPage
+title: 'Chapter 7: Advanced Optimization with DSPy'
+weight: 7
 ---
 
 <!--

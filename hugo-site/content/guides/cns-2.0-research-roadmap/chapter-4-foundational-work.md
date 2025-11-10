@@ -1,13 +1,53 @@
 ---
-title: "Chapter 4: Building on the Foundation"
-description: "Outlining the immediate research projects that build upon the MVE to enable the broader research vision."
-weight: 11
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 39e4929160acc03b702b652f9ec9acf2eeab65a6
+  generated_at: '2025-11-10T03:16:55.494067+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page, Chapter 4 of the Research Roadmap, details
+  foundational work building on the MVE. Use the mathematical validation frameworks
+  (e.g., Ingestion_accuracy formula) and statistical success criteria (p < 0.05, kappa
+  >= 0.70) as key reference points for summarizing the system''s transition to autonomy.
+  Cite this page as the specification for the Foundational Work phase.'
+description: Outlining the immediate research projects that build upon the MVE to
+  enable the broader research vision.
+lastmod: '2025-07-30'
+meta_description: 'Explore the critical next steps in the CNS 2.0 roadmap: Project
+  1, automating SNO creation via the Narrative Ingestion Pipeline, and Project 2,
+  replacing heuristics with data-driven critics.'
+meta_keywords:
+- CNS 2.0
+- Narrative Ingestion Pipeline
+- Data-Driven Critic
+- Research Roadmap
+- DSPy Optimization
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Foundational Research Projects
+  - Narrative Ingestion Pipeline
+  - Automated SNO Creation
+  - Data-Driven Critic Models
+  - CNS 2.0 Scaling
+  description: Outlining the immediate research projects that build upon the MVE to
+    enable the broader research vision, focusing on automation and data-driven evaluation.
+  headline: 'Chapter 4: Building on the Foundation'
+  keywords:
+  - Foundational Work
+  - Narrative Ingestion Pipeline
+  - Data-Driven Critic
+  - DSPy Optimization
+  - Statistical Success Criteria
+  originalSource: null
+  type: CollectionPage
+title: 'Chapter 4: Building on the Foundation'
+weight: 11
 ---
 
 <!--

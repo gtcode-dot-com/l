@@ -1,0 +1,102 @@
+{{ define "main" }}
+  {{ with .Content }}
+    {{ . | safeHTML }}
+  {{ end }}
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Research dispatches</p>
+        <h1>GTCode Research Desk</h1>
+        <p class="hero-lede">{{ .Site.Params.description }}</p>
+        <ul class="hero-highlights">
+          <li>Daily briefs on AI research, tooling, and policy experiments</li>
+          <li>Technical notes sourced from primary repos, docs, and filings</li>
+          <li>Long-form investigations into governance and institutional risk</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/news/">Explore Latest News →</a>
+          <a class="btn btn-secondary" href="/investigation/">View Investigations</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-art-glow"></div>
+        <img src="/img/gtcode-core.svg" alt="GTCode signal glyph" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest News Section -->
+  <section class="section-header">
+    <h2 class="section-title">Latest News</h2>
+    <p class="section-description">Stay informed with the latest developments in AI, security, and computational journalism.</p>
+  </section>
+
+  {{ $newsPages := where .Site.RegularPages "Section" "news" }}
+  {{ $sorted := sort $newsPages "Date" "desc" }}
+  {{ $news := first 6 $sorted }}
+  {{ if $news }}
+    <div class="news-grid">
+      {{ range $news }}
+        <article class="card">
+          {{ if .Params.category }}
+            <div class="card-meta">
+              <span class="badge badge-category">{{ .Params.category }}</span>
+            </div>
+          {{ end }}
+          <h3 class="card-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          <div class="card-meta">
+            {{ partial "news-date.html" . }}
+            {{ with .Params.source_url }}
+              <span>&bull;</span>
+              <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
+            {{ end }}
+          </div>
+          {{ with .Summary }}
+            {{ $clean := replace (replace . "" "") "" "" }}
+            <p class="card-summary">{{ $clean | plainify | truncate 160 }}</p>
+          {{ end }}
+          <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="card">
+      <p class="text-muted">No news yet. Run the ingestion workflow to populate content.</p>
+    </div>
+  {{ end }}
+
+  <!-- News Section -->
+  <section class="section-header" style="margin-top: 4rem;">
+    <h2 class="section-title">News</h2>
+    <p class="section-description">Explore latest coverage by focus area or jump into in-depth guides.</p>
+  </section>
+
+  <div class="news-grid">
+    <article class="card">
+      <h3 class="card-title"><a href="/news/ai-security/">AI Security</a></h3>
+      <p class="card-summary">Latest security vulnerabilities, threats, and defensive strategies in AI systems.</p>
+      <a class="btn btn-secondary" href="/news/ai-security/">View Articles →</a>
+    </article>
+
+    <article class="card">
+      <h3 class="card-title"><a href="/news/ai-research/">AI Research</a></h3>
+      <p class="card-summary">Cutting-edge research, breakthroughs, and developments in artificial intelligence.</p>
+      <a class="btn btn-secondary" href="/news/ai-research/">View Articles →</a>
+    </article>
+
+    <article class="card">
+      <h3 class="card-title"><a href="/news/comp-journalism/">Computational Journalism</a></h3>
+      <p class="card-summary">Data-driven journalism, investigative techniques, and technology in newsrooms.</p>
+      <a class="btn btn-secondary" href="/news/comp-journalism/">View Articles →</a>
+    </article>
+
+    <article class="card">
+      <h3 class="card-title"><a href="/guides/">Guides & Playbooks</a></h3>
+      <p class="card-summary">Step-by-step field guides covering incident response, evaluation workflows, and infrastructure hardening.</p>
+      <a class="btn btn-secondary" href="/guides/">View Guides →</a>
+    </article>
+  </div>
+{{ end }}

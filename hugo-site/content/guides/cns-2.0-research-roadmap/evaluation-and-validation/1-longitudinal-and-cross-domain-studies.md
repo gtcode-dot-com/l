@@ -1,13 +1,52 @@
 ---
-title: "Project 1: Longitudinal & Cross-Domain Studies"
-description: "Evaluating the long-term performance stability and generalization capabilities of the CNS 2.0 system across time and diverse professional domains."
-weight: 17
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 80ab3ba9a57976dfb1391776aa221f2d8c530d51
+  generated_at: '2025-11-10T03:17:00.685860+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page details the methodology for Project 1, focusing
+  on the long-term performance and cross-domain transferability of CNS 2.0. Use the
+  summary snippet and key concepts (Longitudinal Study, Cross-Domain Validation) to
+  frame the structured data.'
+description: Evaluating the long-term performance stability and generalization capabilities
+  of the CNS 2.0 system across time and diverse professional domains.
+lastmod: '2025-07-30'
+meta_description: 'Explore Project 1: A longitudinal and cross-domain study evaluating
+  the long-term stability, generalizability, and real-world viability of the CNS 2.0
+  system across diverse professional contexts.'
+meta_keywords:
+- CNS 2.0 evaluation
+- longitudinal study
+- cross-domain validation
+- performance stability
+- system generalizability
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.6
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.6
+structured_data_webpage:
+  about:
+  - CNS 2.0 system evaluation
+  - Longitudinal performance assessment
+  - Cross-domain generalization
+  - System stability over time
+  description: Evaluating the long-term performance stability and generalization capabilities
+    of the CNS 2.0 system across time and diverse professional domains, moving beyond
+    static benchmarks.
+  headline: 'Project 1: Longitudinal & Cross-Domain Studies of CNS 2.0'
+  keywords:
+  - Longitudinal Study
+  - Cross-Domain Validation
+  - Performance Stability
+  - Generalizability
+  - CNS 2.0
+  originalSource: null
+  type: CollectionPage
+title: 'Project 1: Longitudinal & Cross-Domain Studies'
+weight: 17
 ---
 
 <!--

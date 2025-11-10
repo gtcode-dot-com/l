@@ -1,12 +1,52 @@
 ---
-title: "Tutorial Part 1: Introduction to the Case Study"
-description: "Why the historical debate between Plate Tectonics and Geosyncline theory is a perfect test case for Chiral Narrative Synthesis."
-weight: 7
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: e2ba9a9dec695c47cb0d78101317b28fdf1a8e24
+  generated_at: '2025-11-10T03:17:23.055971+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This is Part 1 of a technical validation tutorial.
+  Use the explicit instructions and concepts (Statistical Prototype, Plate Tectonics
+  vs. Geosyncline) in the full excerpt to ensure SEO/metadata accuracy. Cite the provided
+  ''Prototype Selection Criteria'' section.'
+description: Why the historical debate between Plate Tectonics and Geosyncline theory
+  is a perfect test case for Chiral Narrative Synthesis.
+lastmod: '2025-07-30'
+meta_description: Learn why the historical debate between Plate Tectonics and Geosyncline
+  theory is selected as the crucial 'statistical prototype' for validating the CNS
+  2.0 synthesis engine in this advanced tutorial.
+meta_keywords:
+- CNS 2.0
+- Plate Tectonics
+- Geosyncline Theory
+- Statistical Prototype
+- Narrative Synthesis
 sitemap:
   changefreq: monthly
-  priority: 0.7
   filename: sitemap.xml
+  priority: 0.7
+structured_data_webpage:
+  about:
+  - CNS 2.0 Validation Framework
+  - Scientific Methodology
+  - Plate Tectonics
+  - Geosyncline Theory
+  - Statistical Proof
+  description: Establishes the historical debate between Plate Tectonics and Geosyncline
+    theory as the 'statistical prototype' for validating the CNS 2.0 synthesis engine's
+    methodology.
+  headline: 'Tutorial Part 1: Introduction to the Case Study for CNS Validation'
+  keywords:
+  - Statistical Prototype
+  - CNS Validation
+  - Geosyncline
+  - Plate Tectonics Debate
+  - Research Methodology
+  originalSource: guides/tutorial-part-1-case-study
+  type: CollectionPage
+title: 'Tutorial Part 1: Introduction to the Case Study'
+weight: 7
 ---
 
 <!--

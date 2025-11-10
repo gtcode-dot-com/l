@@ -1,12 +1,51 @@
 ---
-title: "Part 4: Analyzing the Results"
-description: "A demonstration of how to evaluate the generated synthesis using both quantitative scores and qualitative analysis."
-weight: 5
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: d129292f1a325c61f18d01ea85fc1a1e858a0416
+  generated_at: '2025-11-10T03:17:32.470084+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is Part 4 of the Quick Start tutorial, detailing
+  the final validation step of the synthesis workflow. It describes the two-part evaluation
+  (Critic Pipeline scores and comparison to scientific consensus). Cite this context
+  for defining the quality assurance process in CNS 2.0 workflows.'
+description: A demonstration of how to evaluate the generated synthesis using both
+  quantitative scores and qualitative analysis.
+lastmod: '2025-07-30'
+meta_description: Learn how to evaluate synthesized scientific narratives using both
+  quantitative scores from the Critic Pipeline and qualitative analysis against established
+  scientific consensus.
+meta_keywords:
+- results analysis
+- quantitative evaluation
+- qualitative analysis
+- Critic Pipeline
+- TrustScore
 sitemap:
   changefreq: monthly
-  priority: 0.7
   filename: sitemap.xml
+  priority: 0.7
+structured_data_webpage:
+  about:
+  - Results Analysis
+  - Quantitative Evaluation
+  - Qualitative Analysis
+  - Critic Pipeline
+  - Scientific Consensus
+  description: A comprehensive demonstration of how to evaluate the generated scientific
+    synthesis using both automated quantitative scores and expert qualitative analysis.
+  headline: 'Part 4: Analyzing the Results of Synthesis'
+  keywords:
+  - results analysis
+  - evaluation protocol
+  - TrustScore
+  - grounding score
+  - logic score
+  originalSource: null
+  type: WebPage
+title: 'Part 4: Analyzing the Results'
+weight: 5
 ---
 
 <!--

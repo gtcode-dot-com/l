@@ -1,122 +1,70 @@
 {{ define "main" }}
-<article class="content-article">
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    {{ if .CurrentSection }}
+      <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
+    {{ else }}
+      <a href="/news/">News</a>
+    {{ end }}
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <strong>{{ .Title }}</strong>
+  </nav>
+
+  <!-- Article -->
+  <article>
     <!-- Article Header -->
     <header class="article-header">
-        <div class="article-meta">
-            <span class="article-weight">Chapter {{ .Weight }} of 7</span>
-            <span class="article-separator">•</span>
-            <time class="article-date">July 29, 2025</time>
+      {{ if .Params.category }}
+        <div style="margin-bottom: 1rem;">
+          <span class="badge badge-category">{{ .Params.category }}</span>
         </div>
-        
-        <h1 class="article-title">{{ .Title }}</h1>
-        
-        {{ if .Description }}
-        <p class="article-description">{{ .Description }}</p>
+      {{ end }}
+
+      <h1 class="article-title">{{ .Title }}</h1>
+
+      <div class="article-meta">
+        {{ with .Date }}
+          <span>{{ partial "news-date.html" $ }}</span>
         {{ end }}
-        
-        <!-- Progress indicator -->
-        <div class="progress-indicator">
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: {{ mul .Weight 16.67 }}%"></div>
-            </div>
-        </div>
+        {{ with .Params.source_url }}
+          <span>&bull;</span>
+          <span>Source: <a href="{{ . }}" target="_blank" rel="noopener">{{ . | replaceRE "^https?://(www\\.)?" "" | replaceRE "/.*$" "" }}</a></span>
+        {{ end }}
+        {{ with .Params.feed }}
+          <span>&bull;</span>
+          <span>Feed: <a href="{{ . }}" target="_blank" rel="noopener">{{ . | replaceRE "^https?://(www\\.)?" "" | replaceRE "/.*$" "" }}</a></span>
+        {{ end }}
+      </div>
     </header>
 
-    <!-- Table of Contents -->
-    <aside class="article-toc">
-        <h3>Table of Contents</h3>
-        <nav id="TableOfContents">
-            {{ .TableOfContents }}
-        </nav>
-    </aside>
+    {{ partial "agent-callout.html" . }}
 
     <!-- Article Content -->
     <div class="article-content">
-        {{ .Content }}
+      {{ $cleanContent := replace (replace .Content "" "") "" "" }}
+      {{ $cleanContent | safeHTML }}
     </div>
 
-    <!-- Navigation -->
-    <nav class="article-nav">
-        <div class="nav-previous">
-            {{ with .PrevInSection }}
-                <a href="{{ .RelPermalink }}" class="nav-link prev-link">
-                    <i data-feather="arrow-right"></i>
-                    <div class="nav-text">
-                        <span class="nav-label">Next</span>
-                        <span class="nav-title">{{ .Title }}</span>
-                    </div>
-                </a>
-            {{ end }}
-        </div>
-        
-        <div class="nav-next">
-            {{ with .NextInSection }}
-                <a href="{{ .RelPermalink }}" class="nav-link next-link">
-                    <div class="nav-text">
-                        <span class="nav-label">Previous</span>
-                        <span class="nav-title">{{ .Title }}</span>
-                    </div>
-                    <i data-feather="arrow-left"></i>
-                </a>
-            {{ end }}
-        </div>
-    </nav>
+    {{ partial "ai-comment.html" . }}
 
-    <!-- Chapter Summary -->
-    <aside class="chapter-summary">
-        <h3>Chapter Summary</h3>
-        <div class="summary-content">
-            {{ if eq .Weight 1 }}
-                <p>Introduction to CNS 2.0 concepts, core innovations, and development environment setup.</p>
-                <ul>
-                    <li>Understanding the challenge of conflicting information</li>
-                    <li>Four key CNS 2.0 innovations</li>
-                    <li>Python environment configuration</li>
-                </ul>
-            {{ else if eq .Weight 2 }}
-                <p>Building Structured Narrative Objects - the foundational data structure of CNS 2.0.</p>
-                <ul>
-                    <li>SNO 4-tuple structure implementation</li>
-                    <li>Reasoning graph construction</li>
-                    <li>Evidence set management</li>
-                </ul>
-            {{ else if eq .Weight 3 }}
-                <p>Implementing transparent evaluation through specialized critic components.</p>
-                <ul>
-                    <li>Multi-component critic architecture</li>
-                    <li>Grounding, Logic, and Novelty critics</li>
-                    <li>Transparent scoring and evaluation</li>
-                </ul>
-            {{ else if eq .Weight 4 }}
-                <p>Creating LLM-powered dialectical reasoning for knowledge synthesis.</p>
-                <ul>
-                    <li>Chiral pair detection algorithms</li>
-                    <li>Synthesis strategy determination</li>
-                    <li>Generative synthesis implementation</li>
-                </ul>
-            {{ else if eq .Weight 5 }}
-                <p>Integrating all components into a cohesive, operational system.</p>
-                <ul>
-                    <li>System architecture and workflow</li>
-                    <li>Narrative ingestion pipeline</li>
-                    <li>Concurrent processing and monitoring</li>
-                </ul>
-            {{ else if eq .Weight 6 }}
-                <p>Complete production-ready implementation with deployment guidelines.</p>
-                <ul>
-                    <li>Advanced synthesis engine</li>
-                    <li>Production deployment configuration</li>
-                    <li>Performance optimization and monitoring</li>
-                </ul>
-            {{ else if eq .Weight 7 }}
-                <p>Evolving the CNS 2.0 system from prompt engineering to programmatic optimization using DSPy.</p>
-                <ul>
-                    <li>Refactoring ingestion with DSPy Signatures</li>
-                    <li>Building optimizable DSPy Modules</li>
-                    <li>Metric-driven development and compilation</li>
-                </ul>
-            {{ end }}
-        </div>
-    </aside>
-</article>
+    <!-- Article Footer -->
+    <footer class="article-footer">
+      {{ with .Params.source_url }}
+        <p>
+          <strong>Original Source:</strong>
+          <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
+        </p>
+      {{ end }}
+
+      <p>
+        {{ if .CurrentSection }}
+          <a class="btn btn-secondary" href="{{ .CurrentSection.RelPermalink }}">&larr; Back to {{ .CurrentSection.Title }}</a>
+        {{ else }}
+          <a class="btn btn-secondary" href="/news/">&larr; Back to News</a>
+        {{ end }}
+      </p>
+    </footer>
+  </article>
 {{ end }}

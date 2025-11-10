@@ -1,47 +1,50 @@
+{{- $base := strings.TrimSuffix "/" .Site.BaseURL -}}
+{{- $siteLastMod := .Site.Lastmod -}}
+{{- $siteLastModString := "" -}}
+{{- if not ($siteLastMod.IsZero) -}}
+  {{- $siteLastModString = $siteLastMod.Format "2006-01-02" -}}
+{{- else -}}
+  {{- $siteLastModString = now.Format "2006-01-02" -}}
+{{- end -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <url>
-        <loc>https://gtcode.com/</loc>
-        <lastmod>2025-07-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://gtcode.com/investigation/hawaii-institutional-capture/</loc>
-        <lastmod>2025-08-13</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://gtcode.com/investigation/exhibit-a-federal-intervention-hawaii/</loc>
-        <lastmod>2025-08-20</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://gtcode.com/investigation/hawaii-justice-system-wilson-loo/</loc>
-        <lastmod>2025-07-13</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gtcode.com/for-agents/conspiracy-of-silence/</loc>
-        <lastmod>2025-07-13</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-{{ range sort .Data.Pages ".File.Path" "asc" }}
-<url>
-    <loc>https://gtcode.com{{ .RelPermalink }}</loc>{{ if not .Lastmod.IsZero }}
-    <lastmod>{{ .Lastmod.Format "2006-01-02" | safeHTML }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
-    <changefreq>{{ . }}</changefreq>{{ end }}{{ if ge .Sitemap.Priority 0.0 }}
-    <priority>{{ .Sitemap.Priority }}</priority>{{ end }}
-</url>
-{{ end }}
-    <url>
-        <loc>https://gtcode.com/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf</loc>
-        <lastmod>2025-07-30</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  {{- /* Static assets that need explicit inclusion */ -}}
+  {{- $staticEntries := slice
+      (dict "loc" (printf "%s/investigation/" $base) "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
+      (dict "loc" (printf "%s/investigation/exhibit-a-federal-intervention-hawaii/" $base) "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
+      (dict "loc" (printf "%s/investigation/hawaii-institutional-capture/" $base) "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-13")
+      (dict "loc" (printf "%s/investigation/hawaii-justice-system-wilson-loo/" $base) "changefreq" "yearly" "priority" 0.80 "lastmod" "2025-07-13")
+      (dict "loc" (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" $base) "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
+    -}}
+  {{- range $static := $staticEntries }}
+  <url>
+    <loc>{{- $static.loc -}}</loc>
+    <lastmod>{{- or $static.lastmod $siteLastModString -}}</lastmod>
+    <changefreq>{{- $static.changefreq | default "monthly" -}}</changefreq>
+    <priority>{{- printf "%.2f" (float ($static.priority | default 0.50)) -}}</priority>
+  </url>
+  {{- end }}
+
+  {{- range sort .Data.Pages "RelPermalink" "asc" }}
+    {{- $lastmod := .Lastmod -}}
+    {{- if $lastmod.IsZero }}{{ $lastmod = .PublishDate }}{{ end -}}
+    {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+    {{- if $lastmod.IsZero }}{{ $lastmod = $siteLastMod }}{{ end -}}
+    {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end -}}
+    {{- $changefreq := .Sitemap.ChangeFreq -}}
+    {{- if not $changefreq }}{{ $changefreq = "monthly" }}{{ end -}}
+    {{- $priority := 0.50 -}}
+    {{- $rawPriority := .Sitemap.Priority -}}
+    {{- if and (ne $rawPriority nil) (ge (float $rawPriority) 0) }}
+      {{- $priority = float $rawPriority -}}
+    {{- end -}}
+  <url>
+    <loc>{{- printf "%s%s" $base .RelPermalink -}}</loc>
+    {{- if not ($lastmod.IsZero) }}
+    <lastmod>{{- $lastmod.Format "2006-01-02" -}}</lastmod>
+    {{- end }}
+    <changefreq>{{- $changefreq -}}</changefreq>
+    <priority>{{- printf "%.2f" $priority -}}</priority>
+  </url>
+  {{- end }}
 </urlset>

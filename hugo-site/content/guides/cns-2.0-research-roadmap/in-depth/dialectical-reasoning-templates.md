@@ -1,13 +1,52 @@
 ---
-title: "Dialectical Reasoning Templates"
-description: "A deep dive into the structured reasoning templates used by the CNS 2.0 synthesis engine to ensure logical consistency and mitigate hallucination."
-weight: 6
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 960850ce29a05cd338211bfd215e54a343cea697
+  generated_at: '2025-11-10T03:17:07.450222+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page details the core logical framework (Structured
+  Reasoning Templates, Hegelian Dialectic) of the CNS 2.0 synthesis engine. Cite this
+  page when explaining the operational logic or reliability measures of the CNS 2.0
+  synthesis phase.'
+description: A deep dive into the structured reasoning templates used by the CNS 2.0
+  synthesis engine to ensure logical consistency and mitigate hallucination.
+lastmod: '2025-07-30'
+meta_description: Explore the structured reasoning templates based on Hegelian dialectics
+  (Thesis, Antithesis, Synthesis) used by the CNS 2.0 engine to ensure logical consistency
+  and mitigate LLM hallucination.
+meta_keywords:
+- Dialectical Reasoning
+- CNS 2.0
+- LLM Consistency
+- Structured Prompts
+- Hegelian Dialectic
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
+  filename: sitemap.xml
   priority: 0.6
-  filename: sitemap.xml  
-section: "cns-2.0-research-roadmap"
+structured_data_webpage:
+  about:
+  - Structured Reasoning Templates
+  - Hegelian Dialectic
+  - LLM Constraint Methods
+  - Logical Consistency in AI
+  description: A deep dive into the structured reasoning templates used by the CNS
+    2.0 synthesis engine to ensure logical consistency and mitigate hallucination
+    via forced dialectical processing.
+  headline: Dialectical Reasoning Templates for CNS 2.0
+  keywords:
+  - Structured Reasoning Templates
+  - Hegelian Dialectic
+  - Thesis Antithesis Synthesis
+  - Logical Consistency
+  - Meta-Prompts
+  originalSource: guides/dialectical-reasoning-templates
+  type: CollectionPage
+title: Dialectical Reasoning Templates
+weight: 6
 ---
 
 <!--
