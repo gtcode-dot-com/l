@@ -1,4 +1,5 @@
-{{- $base := strings.TrimSuffix "/" .Site.BaseURL -}}
+{{- $normalizedBase := replace .Site.BaseURL "http://" "https://" -}}
+{{- $base := strings.TrimSuffix "/" $normalizedBase -}}
 {{- $siteLastMod := .Site.Lastmod -}}
 {{- $siteLastModString := "" -}}
 {{- if not ($siteLastMod.IsZero) -}}
@@ -10,12 +11,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- /* Static assets that need explicit inclusion */ -}}
   {{- $staticEntries := slice
-      (dict "loc" (printf "%s/investigation/" $base) "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
-      (dict "loc" (printf "%s/investigation/exhibit-a-federal-intervention-hawaii/" $base) "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
-      (dict "loc" (printf "%s/investigation/hawaii-institutional-capture/" $base) "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-13")
-      (dict "loc" (printf "%s/investigation/hawaii-justice-system-wilson-loo/" $base) "changefreq" "yearly" "priority" 0.80 "lastmod" "2025-07-13")
-      (dict "loc" (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" $base) "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
-      (dict "loc" (printf "%s/for-agents/conspiracy-of-silence/" $base) "changefreq" "yearly" "priority" 0.75 "lastmod" $siteLastModString)
+      (dict "loc" (replace (printf "%s/investigation/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
+      (dict "loc" (replace (printf "%s/investigation/exhibit-a-federal-intervention-hawaii/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
+      (dict "loc" (replace (printf "%s/investigation/hawaii-institutional-capture/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-13")
+      (dict "loc" (replace (printf "%s/investigation/hawaii-justice-system-wilson-loo/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.80 "lastmod" "2025-07-13")
+      (dict "loc" (replace (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
+      (dict "loc" (replace (printf "%s/for-agents/conspiracy-of-silence/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.75 "lastmod" $siteLastModString)
     -}}
   {{- range $static := $staticEntries }}
   <url>
@@ -40,7 +41,9 @@
       {{- $priority = float $rawPriority -}}
     {{- end -}}
   <url>
-    <loc>{{- printf "%s%s" $base .RelPermalink -}}</loc>
+    {{- $loc := printf "%s%s" $base .RelPermalink -}}
+    {{- $loc = replace $loc "http://" "https://" -}}
+    <loc>{{- $loc -}}</loc>
     {{- if not ($lastmod.IsZero) }}
     <lastmod>{{- $lastmod.Format "2006-01-02" -}}</lastmod>
     {{- end }}

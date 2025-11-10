@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'GTCode.com'
 theme = 'minimal'
 disableKinds = ['taxonomy', 'term']
+canonifyURLs = true
 
 [params]
   description = 'Independent research briefs on AI systems, infrastructure, and institutional risk.'
