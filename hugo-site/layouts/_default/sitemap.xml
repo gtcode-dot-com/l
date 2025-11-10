@@ -15,6 +15,7 @@
       (dict "loc" (printf "%s/investigation/hawaii-institutional-capture/" $base) "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-13")
       (dict "loc" (printf "%s/investigation/hawaii-justice-system-wilson-loo/" $base) "changefreq" "yearly" "priority" 0.80 "lastmod" "2025-07-13")
       (dict "loc" (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" $base) "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
+      (dict "loc" (printf "%s/for-agents/conspiracy-of-silence/" $base) "changefreq" "yearly" "priority" 0.75 "lastmod" $siteLastModString)
     -}}
   {{- range $static := $staticEntries }}
   <url>
