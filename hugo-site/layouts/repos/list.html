@@ -1,80 +1,85 @@
 {{ define "main" }}
-  <section class="hero repo-hero">
-    <div class="hero-inner">
-      <div class="hero-content">
-        {{ with .Params.hero_eyebrow }}
-          <p class="hero-eyebrow">{{ . }}</p>
-        {{ end }}
-        <h1>{{ .Title }}</h1>
-        {{ with .Params.description }}
-          <p class="hero-lede">{{ . }}</p>
-        {{ end }}
-        {{ with .Params.hero_highlights }}
-          <ul class="hero-highlights">
-            {{ range . }}
-              <li>{{ . }}</li>
-            {{ end }}
-          </ul>
-        {{ end }}
-        <div class="hero-actions">
-          {{ if and .Params.hero_cta_text .Params.hero_cta_url }}
-            <a class="btn btn-primary" href="{{ .Params.hero_cta_url }}" target="_blank" rel="noopener">{{ .Params.hero_cta_text }} →</a>
+  {{ $isRootRepos := eq (trim .RelPermalink "/") "repos" }}
+  {{ if not $isRootRepos }}
+    {{ partial "redirect-to.html" (dict "target" "/repos/" "message" "Repositories only live at /repos/. Redirecting you there now.") }}
+  {{ else }}
+    <section class="hero repo-hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          {{ with .Params.hero_eyebrow }}
+            <p class="hero-eyebrow">{{ . }}</p>
           {{ end }}
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="hero-art-glow"></div>
-        <img src="/img/gtcode-repos.svg" alt="Hex.pm release constellation" loading="lazy" decoding="async" />
-      </div>
-    </div>
-  </section>
-
-  {{ $repos := .Site.Data.repos }}
-  {{ if $repos }}
-    <section class="repo-grid">
-      {{ range $repos }}
-        <article class="card repo-card">
-          <div class="repo-card-meta">
-            {{ with .stage }}
-              <span class="badge badge-secondary">{{ . }}</span>
-            {{ end }}
-            {{ with .version }}
-              <span class="repo-card-version">v{{ . }}</span>
-            {{ end }}
-          </div>
-          <h2 class="repo-card-title">{{ .name }}</h2>
-          <p class="repo-card-summary">{{ .summary }}</p>
-
-          {{ if .highlights }}
-            <ul class="repo-highlights">
-              {{ range .highlights }}
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.description }}
+            <p class="hero-lede">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.hero_highlights }}
+            <ul class="hero-highlights">
+              {{ range . }}
                 <li>{{ . }}</li>
               {{ end }}
             </ul>
           {{ end }}
-
-          {{ if .tags }}
-            <div class="repo-card-tags">
-              {{ range .tags }}
-                <span class="tag">{{ . }}</span>
-              {{ end }}
-            </div>
-          {{ end }}
-
-          <div class="repo-card-actions">
-            {{ with .hex_url }}
-              <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Hex.pm</a>
-            {{ end }}
-            {{ with .docs_url }}
-              <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">Docs</a>
+          <div class="hero-actions">
+            {{ if and .Params.hero_cta_text .Params.hero_cta_url }}
+              <a class="btn btn-primary" href="{{ .Params.hero_cta_url }}" target="_blank" rel="noopener">{{ .Params.hero_cta_text }} →</a>
             {{ end }}
           </div>
-        </article>
-      {{ end }}
+        </div>
+        <div class="hero-art">
+          <div class="hero-art-glow"></div>
+          <img src="/img/gtcode-repos.svg" alt="Hex.pm release constellation" loading="lazy" decoding="async" />
+        </div>
+      </div>
     </section>
-  {{ else }}
-    <div class="card">
-      <p class="text-muted">No repositories are published yet.</p>
-    </div>
+
+    {{ $repos := .Site.Data.repos }}
+    {{ if $repos }}
+      <section class="repo-grid">
+        {{ range $repos }}
+          <article class="card repo-card">
+            <div class="repo-card-meta">
+              {{ with .stage }}
+                <span class="badge badge-secondary">{{ . }}</span>
+              {{ end }}
+              {{ with .version }}
+                <span class="repo-card-version">v{{ . }}</span>
+              {{ end }}
+            </div>
+            <h2 class="repo-card-title">{{ .name }}</h2>
+            <p class="repo-card-summary">{{ .summary }}</p>
+
+            {{ if .highlights }}
+              <ul class="repo-highlights">
+                {{ range .highlights }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+
+            {{ if .tags }}
+              <div class="repo-card-tags">
+                {{ range .tags }}
+                  <span class="tag">{{ . }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+
+            <div class="repo-card-actions">
+              {{ with .hex_url }}
+                <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Hex.pm</a>
+              {{ end }}
+              {{ with .docs_url }}
+                <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">Docs</a>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </section>
+    {{ else }}
+      <div class="card">
+        <p class="text-muted">No repositories are published yet.</p>
+      </div>
+    {{ end }}
   {{ end }}
 {{ end }}
