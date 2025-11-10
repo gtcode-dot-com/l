@@ -41,8 +41,6 @@ title: 'Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synt
 type: article
 ---
 
-# Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims
-
 ## The Problem of Model Disagreement
 
 Organizations increasingly deploy multiple AI models in parallel—whether for redundancy, specialization, or competitive evaluation. A legal team might query GPT-4, Claude, and Gemini simultaneously for contract analysis. A research institution might use different models to synthesize literature across domains. A content platform might employ multiple models to moderate user submissions.

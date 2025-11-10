@@ -77,7 +77,16 @@
           <img src="/img/gtcode-badge.svg" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
           <span>{{ .Site.Title }}</span>
         </a>
-        <nav class="site-nav">
+        <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Toggle primary navigation</span>
+          <span class="site-nav-toggle-icon" aria-hidden="true">
+            <span class="site-nav-toggle-bar"></span>
+            <span class="site-nav-toggle-bar"></span>
+            <span class="site-nav-toggle-bar"></span>
+          </span>
+          <span class="site-nav-toggle-label">Menu</span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
           <a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a>
           <a href="/guides/" {{ if eq .Section "guides" }}class="active"{{ end }}>Guides</a>
           <a href="/repos/" {{ if eq .Section "repos" }}class="active"{{ end }}>Repos</a>
@@ -93,6 +102,7 @@
         </nav>
       </div>
     </header>
+    <div class="site-nav-overlay" aria-hidden="true"></div>
 
     <main class="site-main">
       {{ partial "ai-agent-comment.html" . }}
@@ -145,5 +155,79 @@
       });
     </script>
     {{ end }}
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const body = document.body;
+        const toggle = document.querySelector(".site-nav-toggle");
+        const nav = document.getElementById("primary-nav");
+        const overlay = document.querySelector(".site-nav-overlay");
+
+        if (!toggle || !nav) {
+          return;
+        }
+
+        const mobileQuery = window.matchMedia("(max-width: 960px)");
+
+        const closeNav = function () {
+          if (!body.classList.contains("nav-open")) {
+            return false;
+          }
+          body.classList.remove("nav-open");
+          toggle.setAttribute("aria-expanded", "false");
+          return true;
+        };
+
+        const openNav = function () {
+          if (body.classList.contains("nav-open")) {
+            return;
+          }
+          body.classList.add("nav-open");
+          toggle.setAttribute("aria-expanded", "true");
+          const firstLink = nav.querySelector("a");
+          if (firstLink) {
+            firstLink.focus();
+          }
+        };
+
+        body.classList.add("nav-ready");
+
+        toggle.addEventListener("click", function () {
+          if (body.classList.contains("nav-open")) {
+            closeNav();
+          } else {
+            openNav();
+          }
+        });
+
+        if (overlay) {
+          overlay.addEventListener("click", closeNav);
+        }
+
+        nav.addEventListener("click", function (event) {
+          if (event.target.closest("a") && mobileQuery.matches) {
+            closeNav();
+          }
+        });
+
+        document.addEventListener("keyup", function (event) {
+          if (event.key === "Escape" && closeNav()) {
+            toggle.focus();
+          }
+        });
+
+        const mq = window.matchMedia("(min-width: 961px)");
+        const mqHandler = function (event) {
+          if (event.matches) {
+            closeNav();
+          }
+        };
+
+        if (mq.addEventListener) {
+          mq.addEventListener("change", mqHandler);
+        } else if (mq.addListener) {
+          mq.addListener(mqHandler);
+        }
+      });
+    </script>
   </body>
 </html>
