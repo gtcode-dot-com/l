@@ -188,4 +188,5 @@
     </div>
   {{ end }}
   {{ template "_internal/pagination.html" . }}
+  {{ partial "news-itemlist.html" (dict "pages" $newsPages) }}
 {{ end }}

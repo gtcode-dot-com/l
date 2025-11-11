@@ -76,6 +76,7 @@
       {{ end }}
     </div>
     {{ template "_internal/pagination.html" . }}
+    {{ partial "news-itemlist.html" (dict "pages" $paginator.Pages) }}
   {{ else }}
     <div class="card">
       <p class="text-muted">No entries yet in this section.</p>
