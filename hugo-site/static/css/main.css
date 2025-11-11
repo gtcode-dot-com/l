@@ -814,7 +814,9 @@ body.nav-open .site-nav-overlay {
 @media (max-width: 960px) {
   .hero-inner {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    align-items: stretch;
+    gap: var(--space-10);
   }
 
   .hero-content {
@@ -822,14 +824,25 @@ body.nav-open .site-nav-overlay {
   }
 
   .hero-highlights {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .hero-highlights li {
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero-highlights li::before {
+    margin-top: 0.4em;
   }
 
   .hero-actions {
+    justify-content: flex-start;
+  }
+
+  .hero-art {
+    width: 100%;
     justify-content: center;
   }
 }
