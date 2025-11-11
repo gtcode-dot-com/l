@@ -4,7 +4,9 @@
   {{- $articleMetaMap := default (dict) (index .Site.Data "article_meta") -}}
   {{- $articleMeta = index $articleMetaMap (trim .RelPermalink "/") -}}
 {{- end -}}
-{{- if and $articleMeta $articleMeta.json_ld }}
+{{- if .Params.structured_data_graph -}}
+<script type="application/ld+json">{{ .Params.structured_data_graph | jsonify | safeHTML }}</script>
+{{- else if and $articleMeta $articleMeta.json_ld }}
 <script type="application/ld+json">{{ $articleMeta.json_ld | safeHTML }}</script>
 {{- else -}}
 {{- $sd := .Params.structured_data -}}

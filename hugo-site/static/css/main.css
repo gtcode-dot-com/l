@@ -755,6 +755,14 @@ body.nav-open .site-nav-overlay {
   box-shadow: 0 0 20px rgba(20, 241, 217, 0.7);
 }
 
+.hero-location {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: calc(-1 * var(--space-2));
+  margin-bottom: var(--space-3);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -787,6 +795,22 @@ body.nav-open .site-nav-overlay {
   z-index: 1;
 }
 
+.hero-art .hero-dossier-link {
+  position: absolute;
+  left: 50%;
+  bottom: var(--space-4);
+  transform: translateX(-50%);
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+  border-radius: var(--radius-full);
+  box-shadow: 0 18px 40px rgba(2, 13, 40, 0.45);
+  z-index: 3;
+}
+
+.hero-follow {
+  margin-top: var(--space-12);
+}
+
 @media (max-width: 960px) {
   .hero-inner {
     flex-direction: column;
@@ -807,6 +831,17 @@ body.nav-open .site-nav-overlay {
 
   .hero-actions {
     justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-art .hero-dossier-link {
+    position: relative;
+    display: inline-flex;
+    margin-top: var(--space-6);
+    left: auto;
+    bottom: auto;
+    transform: none;
   }
 }
 
@@ -972,6 +1007,65 @@ body.nav-open .site-nav-overlay {
   font-size: var(--text-base);
 }
 
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+}
+
+.card-list li {
+  position: relative;
+  padding-left: var(--space-5);
+  line-height: 1.55;
+}
+
+.card-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 12px rgba(0, 102, 255, 0.35);
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-start;
+  margin-top: var(--space-4);
+}
+
+.card-actions .btn + .btn {
+  margin-top: var(--space-1);
+}
+
+.spotlight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  margin-top: var(--space-4);
+  justify-content: flex-start;
+}
+
+.card-actions .btn-link {
+  padding-left: 0;
+}
+
+.spotlight-actions .btn {
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+
 /* ============================================
    News Grid & List
    ============================================ */
@@ -1015,13 +1109,96 @@ body.nav-open .site-nav-overlay {
   margin-top: var(--space-10);
 }
 
+.mission-grid {
+  margin-bottom: var(--space-12);
+}
+
+.spotlight-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: var(--space-10);
+  padding: var(--space-10);
+  margin-bottom: var(--space-16);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(140deg, rgba(0, 102, 255, 0.4), rgba(124, 58, 237, 0.35));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.spotlight-text h3 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-bottom: var(--space-4);
+}
+
+.spotlight-text p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.spotlight-text,
+.spotlight-media {
+  position: relative;
+  z-index: 1;
+}
+
+.spotlight-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotlight-media img {
+  width: min(320px, 100%);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+  border: 1px solid var(--color-border-light);
+}
+
+.secure-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin-top: var(--space-4);
+}
+
 @media (max-width: 768px) {
+  .spotlight-panel {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .spotlight-text h3 {
+    margin-top: 0;
+  }
+
   .news-grid {
     grid-template-columns: 1fr;
   }
 
   .news-list.news-list-grid {
     grid-template-columns: 1fr;
+  }
+
+  .spotlight-panel {
+    padding: var(--space-6);
+  }
+
+  .spotlight-media img {
+    width: min(260px, 100%);
   }
 }
 
