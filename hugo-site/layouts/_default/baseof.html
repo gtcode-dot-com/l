@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+{{- $siteLang := .Site.LanguageCode | default "en" -}}
+{{- $pageLang := .Lang | default $siteLang -}}
+<html lang="{{ $pageLang }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ if .IsHome }}{{ .Site.Title }} - {{ .Site.Params.description }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+    {{- $siteTitle := .Site.Title -}}
+    {{- $homeSuffix := strings.TrimSpace (.Site.Params.home_title_suffix | default "") -}}
+    {{- $pageTitle := cond .IsHome (cond (ne $homeSuffix "") (printf "%s · %s" $siteTitle $homeSuffix) $siteTitle) (printf "%s · %s" .Title $siteTitle) -}}
+    <title>{{ $pageTitle }}</title>
     {{ $enableMath := or .Params.math .Site.Params.math }}
 
     <!-- Meta tags -->
@@ -35,7 +40,17 @@
     {{ if ne $keywords "" }}
       <meta name="keywords" content="{{ $keywords }}" />
     {{ end }}
-    <link rel="canonical" href="{{ .Permalink }}" />
+    {{ $canonical := .Permalink }}
+    {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
+    <link rel="canonical" href="{{ $canonical }}" />
+    {{ with .Site.Home.OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">
+    {{ end }}
+    {{ with .Site.GetPage "section" "news" }}
+      {{ with .OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ printf "%s News" $.Site.Title }}" href="{{ .RelPermalink }}">
+      {{ end }}
+    {{ end }}
     {{ $ogType := cond (eq .Section "news") "article" "website" }}
     {{ $ogImage := "/img/gtcode-core.svg" }}
     {{ with .Params.structured_data.main_image }}{{ $ogImage = . }}{{ end }}
@@ -46,6 +61,7 @@
     <meta property="og:type" content="{{ $ogType }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:image" content="{{ $ogImage }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.og_site_name | default .Site.Title }}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{ .Title }} · {{ .Site.Title }}" />
     <meta name="twitter:description" content="{{ $pageDescription }}" />
@@ -58,9 +74,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="/css/main.css" />
+    {{ $postcssOpts := dict "inlineImports" true "config" "postcss.config.js" }}
+    {{ $mainCSS := resources.Get "css/main.css" | css.PostCSS $postcssOpts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}" crossorigin="anonymous" />
     {{ if $enableMath }}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" />
     {{ end }}

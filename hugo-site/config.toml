@@ -8,6 +8,8 @@ canonifyURLs = true
 [params]
   description = 'Paul E. Lowndes is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'
   author = 'Paul E. Lowndes'
+  home_title_suffix = 'AI Consulting & Investigations'
+  og_site_name = 'GTCode'
 
 [markup]
   [markup.goldmark]
