@@ -24,6 +24,15 @@
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ end }}
     <meta name="description" content="{{ $pageDescription }}" />
     <meta name="author" content="{{ .Site.Params.author }}" />
+    {{ $robots := .Params.robots }}
+    {{ if and (eq .Section "news") .Params.source_url (not .Params.news_original) }}
+      {{ if not $robots }}
+        {{ $robots = "noindex,follow" }}
+      {{ end }}
+    {{ end }}
+    {{ with $robots }}
+    <meta name="robots" content="{{ . }}" />
+    {{ end }}
     {{ $keywords := "" }}
     {{ with .Params.meta_keywords }}
       {{ if (reflect.IsSlice .) }}
@@ -41,7 +50,11 @@
       <meta name="keywords" content="{{ $keywords }}" />
     {{ end }}
     {{ $canonical := .Permalink }}
-    {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
+    {{ if .Params.canonical }}
+      {{ $canonical = .Params.canonical }}
+    {{ else if and (eq .Section "news") .Params.source_url (not .Params.news_original) }}
+      {{ $canonical = .Params.source_url }}
+    {{ end }}
     {{ $canonical = replace $canonical "http://" "https://" }}
     <link rel="canonical" href="{{ $canonical }}" />
     {{ with .Site.Home.OutputFormats.Get "RSS" }}

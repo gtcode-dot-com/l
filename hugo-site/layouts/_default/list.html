@@ -36,8 +36,9 @@
       {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
     {{ end }}
     {{ $ordered := $orderedScratch.Get "ordered" }}
+    {{ $paginator := .Paginate $ordered }}
     <div class="news-list news-list-grid">
-      {{ range $ordered }}
+      {{ range $paginator.Pages }}
         <article class="card news-list-item">
           {{ if .Params.category }}
             <div class="card-meta">
@@ -74,6 +75,7 @@
         </article>
       {{ end }}
     </div>
+    {{ template "_internal/pagination.html" . }}
   {{ else }}
     <div class="card">
       <p class="text-muted">No entries yet in this section.</p>

@@ -65,6 +65,8 @@ structured_data_webpage:
   headline: CNS 2.0 Guides & Tutorials | Building & Implementing Chiral Narrative
     Synthesis
   type: CollectionPage
+cascade:
+  math: true
 title: CNS 2.0 Guides & Tutorials | Building & Implementing Chiral Narrative Synthesis
 ---
 

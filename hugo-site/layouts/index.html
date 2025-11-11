@@ -119,7 +119,9 @@
     <p class="section-description">Daily briefs on AI security, research, and accountability reporting curated by the GTCode desk.</p>
   </section>
 
-  {{ $newsPages := where .Site.RegularPages "Section" "news" }}
+  {{ $newsPagesAll := sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
+  {{ $newsPaginator := .Paginate $newsPagesAll }}
+  {{ $newsPages := $newsPaginator.Pages }}
   {{ $categories := slice "ai-security" "ai-research" "comp-journalism" }}
   {{ $newsScratch := newScratch }}
   {{ $newsScratch.Set "hasNews" false }}
@@ -157,7 +159,7 @@
     {{ end }}
   </div>
   {{ if not ($newsScratch.Get "hasNews") }}
-    {{ $fallback := first 6 (sort $newsPages "Date" "desc") }}
+    {{ $fallback := first 6 $newsPages }}
     <div class="news-grid">
       {{ range $fallback }}
         <article class="card">
@@ -185,4 +187,5 @@
       {{ end }}
     </div>
   {{ end }}
+  {{ template "_internal/pagination.html" . }}
 {{ end }}
