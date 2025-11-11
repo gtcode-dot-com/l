@@ -5,9 +5,20 @@
   {{- $articleMeta = index $articleMetaMap (trim .RelPermalink "/") -}}
 {{- end -}}
 {{- if .Params.structured_data_graph -}}
-<script type="application/ld+json">{{ .Params.structured_data_graph | jsonify | safeHTML }}</script>
+<script type="application/ld+json">{{ .Params.structured_data_graph | jsonify | safeJS }}</script>
 {{- else if and $articleMeta $articleMeta.json_ld }}
-<script type="application/ld+json">{{ $articleMeta.json_ld | safeHTML }}</script>
+  {{- $jsonLD := $articleMeta.json_ld -}}
+  {{- if not (or (reflect.IsMap $jsonLD) (reflect.IsSlice $jsonLD)) }}
+    {{- $parsed := $jsonLD | transform.Unmarshal -}}
+    {{- if $parsed }}
+      {{- $jsonLD = $parsed -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if or (reflect.IsMap $jsonLD) (reflect.IsSlice $jsonLD) }}
+<script type="application/ld+json">{{ $jsonLD | jsonify | safeJS }}</script>
+  {{- else }}
+<script type="application/ld+json">{{ $jsonLD | safeJS }}</script>
+  {{- end }}
 {{- else -}}
 {{- $sd := .Params.structured_data -}}
 {{- $sdPage := .Params.structured_data_webpage -}}
@@ -37,7 +48,7 @@
   {{- if $sdPage.keywords }}
     {{- $data = merge $data (dict "keywords" $sdPage.keywords) -}}
   {{- end -}}
-<script type="application/ld+json">{{ $data | jsonify }}</script>
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if and (eq .Kind "section") (eq .Section "news") -}}
   {{- $headline := .Title -}}
   {{- $description := .Description | default (.Summary | default .Site.Params.description) -}}
@@ -58,7 +69,7 @@
         "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
         "about" (slice $headline "AI news" "Daily briefings")
     -}}
-<script type="application/ld+json">{{ $data | jsonify }}</script>
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if $sd }}
   {{- $headline := cond (and $sd.headline (ne $sd.headline "")) $sd.headline .Title -}}
   {{- $description := cond (and $sd.description (ne $sd.description "")) $sd.description (.Summary | default "") -}}
@@ -93,6 +104,6 @@
   {{- if $sd.original_source }}
     {{- $data = merge $data (dict "originalSource" $sd.original_source) -}}
   {{- end -}}
-<script type="application/ld+json">{{ $data | jsonify }}</script>
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- end -}}
 {{- end -}}
