@@ -42,6 +42,7 @@
     {{ end }}
     {{ $canonical := .Permalink }}
     {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
+    {{ $canonical = replace $canonical "http://" "https://" }}
     <link rel="canonical" href="{{ $canonical }}" />
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">
@@ -59,7 +60,7 @@
     <meta property="og:title" content="{{ .Title }} · {{ .Site.Title }}" />
     <meta property="og:description" content="{{ $pageDescription }}" />
     <meta property="og:type" content="{{ $ogType }}" />
-    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:url" content="{{ $canonical }}" />
     <meta property="og:image" content="{{ $ogImage }}" />
     <meta property="og:site_name" content="{{ .Site.Params.og_site_name | default .Site.Title }}" />
     <meta name="twitter:card" content="summary_large_image" />
