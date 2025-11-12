@@ -127,14 +127,7 @@
           <a href="/guides/" {{ if eq .Section "guides" }}class="active"{{ end }}>Guides</a>
           <a href="/repos/" {{ if eq .Section "repos" }}class="active"{{ end }}>Repos</a>
           <a href="/articles/" {{ if eq .Section "articles" }}class="active"{{ end }}>Articles</a>
-          <div class="nav-dropdown">
-            <a href="/news/" {{ if eq .Section "news" }}class="active"{{ end }}>News</a>
-            <div class="nav-dropdown-menu">
-              <a href="/news/ai-security/" {{ if eq .CurrentSection.Title "Ai Security" }}class="active"{{ end }}>AI Security</a>
-              <a href="/news/ai-research/" {{ if eq .CurrentSection.Title "Ai Research" }}class="active"{{ end }}>AI Research</a>
-              <a href="/news/comp-journalism/" {{ if eq .CurrentSection.Title "Comp Journalism" }}class="active"{{ end }}>Journalism</a>
-            </div>
-          </div>
+          {{ partial "news-nav.html" . }}
         </nav>
       </div>
     </header>
@@ -153,10 +146,18 @@
         </div>
         <div class="footer-section">
           <h4>News</h4>
+          {{- $newsData := .Site.Data.news_categories | default dict -}}
+          {{- $categories := $newsData.categories | default slice -}}
           <ul>
-            <li><a href="/news/ai-security/">AI Security</a></li>
-            <li><a href="/news/ai-research/">AI Research</a></li>
-            <li><a href="/news/comp-journalism/">Computational Journalism</a></li>
+            {{- if gt (len $categories) 0 -}}
+              {{- range $categories -}}
+                <li><a href="/news/{{ .slug }}/">{{ .title }}</a></li>
+              {{- end -}}
+            {{- else -}}
+              <li><a href="/news/ai-security/">AI Security</a></li>
+              <li><a href="/news/ai-research/">AI Research</a></li>
+              <li><a href="/news/comp-journalism/">Computational Journalism</a></li>
+            {{- end -}}
           </ul>
         </div>
         <div class="footer-section">

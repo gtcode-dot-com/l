@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "slug": "ai-research",
+      "title": "AI Research Dispatch",
+      "display_order": 999,
+      "icon": null,
+      "description": null,
+      "group_slug": null,
+      "group_name": null,
+      "group_order": null
+    },
+    {
+      "slug": "ai-security",
+      "title": "AI Security Roundup",
+      "display_order": 999,
+      "icon": null,
+      "description": null,
+      "group_slug": null,
+      "group_name": null,
+      "group_order": null
+    },
+    {
+      "slug": "comp-journalism",
+      "title": "Computational Journalism Watch",
+      "display_order": 999,
+      "icon": null,
+      "description": null,
+      "group_slug": null,
+      "group_name": null,
+      "group_order": null
+    }
+  ],
+  "grouped": {
+    "uncategorized": [
+      {
+        "slug": "ai-research",
+        "title": "AI Research Dispatch",
+        "display_order": 999,
+        "icon": null,
+        "description": null,
+        "group_slug": null,
+        "group_name": null,
+        "group_order": null
+      },
+      {
+        "slug": "ai-security",
+        "title": "AI Security Roundup",
+        "display_order": 999,
+        "icon": null,
+        "description": null,
+        "group_slug": null,
+        "group_name": null,
+        "group_order": null
+      },
+      {
+        "slug": "comp-journalism",
+        "title": "Computational Journalism Watch",
+        "display_order": 999,
+        "icon": null,
+        "description": null,
+        "group_slug": null,
+        "group_name": null,
+        "group_order": null
+      }
+    ]
+  },
+  "generated_at": "2025-11-12T12:22:29.903280",
+  "count": 3
+}

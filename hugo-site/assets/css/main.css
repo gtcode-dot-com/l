@@ -1556,6 +1556,79 @@ body.nav-open .site-nav-overlay {
   margin-right: 0;
 }
 
+/* Author Section Styling (General Solution) */
+.article-content h3[id*="author"] {
+  margin-top: var(--space-20);
+  padding-top: var(--space-10);
+  border-top: 2px solid var(--color-border-light);
+  position: relative;
+}
+
+.article-content h3[id*="author"]::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background: var(--gradient-primary);
+}
+
+/* Style paragraphs in author section as flex containers */
+.article-content h3[id*="author"] ~ p {
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+  margin-bottom: var(--space-8);
+  clear: both;
+  font-size: var(--text-base);
+  line-height: 1.7;
+}
+
+/* Author photos (first image in paragraph) */
+.article-content h3[id*="author"] ~ p img {
+  flex-shrink: 0;
+  max-width: 100px;
+  min-width: 100px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin: 0 !important;
+  border: 2px solid var(--color-border-light);
+  transition: all var(--transition-base);
+}
+
+.article-content h3[id*="author"] ~ p img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-light);
+}
+
+/* Author text content */
+.article-content h3[id*="author"] ~ p strong {
+  display: block;
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+/* Handle cases where image and name are on separate lines */
+.article-content h3[id*="author"] ~ p:has(img) + p strong:first-child {
+  margin-top: calc(-1 * var(--space-8));
+}
+
+@media (max-width: 640px) {
+  .article-content h3[id*="author"] ~ p {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .article-content h3[id*="author"] ~ p img {
+    margin-bottom: var(--space-4);
+  }
+}
+
 .article-header::after {
   content: '';
   position: absolute;
@@ -1760,6 +1833,127 @@ body.nav-open .site-nav-overlay {
 .card:nth-child(4) { animation-delay: 150ms; }
 .card:nth-child(5) { animation-delay: 200ms; }
 .card:nth-child(6) { animation-delay: 250ms; }
+
+/* ============================================
+   Pagination
+   ============================================ */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin: var(--space-16) 0;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0;
+}
+
+.pagination .page-item {
+  display: inline-block;
+}
+
+.pagination .page-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.pagination .page-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  z-index: -1;
+}
+
+.pagination .page-link > * {
+  position: relative;
+  z-index: 1;
+}
+
+.pagination .page-link:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text-inverse) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+.pagination .page-link:hover::before {
+  opacity: 1;
+}
+
+.pagination .page-item.active .page-link {
+  background: var(--gradient-primary);
+  color: var(--color-text-inverse) !important;
+  border-color: transparent;
+  box-shadow: var(--shadow-md), 0 4px 14px rgba(0, 102, 255, 0.4);
+  cursor: default;
+  transform: translateY(0);
+  position: relative;
+}
+
+.pagination .page-item.active .page-link::before {
+  opacity: 1;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: var(--color-text-lighter);
+  background: var(--color-bg-alt);
+  border-color: var(--color-border-light);
+  cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.pagination .page-item.disabled .page-link:hover {
+  transform: none;
+  border-color: var(--color-border-light);
+  box-shadow: none;
+}
+
+.pagination .page-item.disabled .page-link:hover::before {
+  opacity: 0;
+}
+
+/* First/Last page indicators */
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .pagination {
+    gap: var(--space-1);
+    margin: var(--space-12) 0;
+  }
+
+  .pagination .page-link {
+    min-width: 40px;
+    height: 40px;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+  }
+}
 
 /* ============================================
    Utility Classes
