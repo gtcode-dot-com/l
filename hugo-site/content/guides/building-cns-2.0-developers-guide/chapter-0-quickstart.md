@@ -42,7 +42,7 @@ structured_data_webpage:
   headline: 'Chapter 0: Quick Start - Your First SNO in 15 Minutes'
   type: Article
 title: 'Chapter 0: Quick Start - Your First SNO in 15 Minutes'
-weight: 0
+weight: -1
 ---
 
 <!--

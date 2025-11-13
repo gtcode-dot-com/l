@@ -12,8 +12,9 @@
     <strong>{{ .Title }}</strong>
   </nav>
 
-  <!-- Article -->
-  <article>
+  <div class="guides-shell">
+    {{ partial "article-sidebar.html" . }}
+    <article>
     <!-- Article Header -->
     <header class="article-header">
       {{ if or .Params.category .Params.language }}
@@ -74,4 +75,5 @@
       </p>
     </footer>
   </article>
+  </div>
 {{ end }}

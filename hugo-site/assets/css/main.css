@@ -1906,7 +1906,8 @@ body.nav-open .site-nav-overlay {
 }
 
 /* Style paragraphs in author section as flex containers */
-.article-content h3[id*="author"] ~ p {
+/* Only target paragraphs with images (actual author bio paragraphs) */
+.article-content h3[id*="author"] ~ p:has(img) {
   display: flex;
   gap: var(--space-6);
   align-items: flex-start;
@@ -1917,7 +1918,7 @@ body.nav-open .site-nav-overlay {
 }
 
 /* Author photos (first image in paragraph) */
-.article-content h3[id*="author"] ~ p img {
+.article-content h3[id*="author"] ~ p:has(img) img {
   flex-shrink: 0;
   max-width: 100px;
   min-width: 100px;
@@ -1929,14 +1930,14 @@ body.nav-open .site-nav-overlay {
   transition: all var(--transition-base);
 }
 
-.article-content h3[id*="author"] ~ p img:hover {
+.article-content h3[id*="author"] ~ p:has(img) img:hover {
   transform: scale(1.05);
   box-shadow: var(--shadow-lg);
   border-color: var(--color-primary-light);
 }
 
 /* Author text content */
-.article-content h3[id*="author"] ~ p strong {
+.article-content h3[id*="author"] + p strong {
   display: block;
   font-size: var(--text-lg);
   margin-bottom: var(--space-2);
@@ -1949,13 +1950,13 @@ body.nav-open .site-nav-overlay {
 }
 
 @media (max-width: 640px) {
-  .article-content h3[id*="author"] ~ p {
+  .article-content h3[id*="author"] ~ p:has(img) {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .article-content h3[id*="author"] ~ p img {
+  .article-content h3[id*="author"] ~ p:has(img) img {
     margin-bottom: var(--space-4);
   }
 }
@@ -1992,24 +1993,40 @@ body.nav-open .site-nav-overlay {
 
 .article-content {
   max-width: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   font-size: var(--text-lg);
   line-height: 1.8;
   color: var(--color-text-muted);
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
+  display: block;
+}
+
+.article-content > * {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
 }
 
 .article-content h2 {
-  margin-top: var(--space-16);
+  margin-top: var(--space-12);
   margin-bottom: var(--space-6);
-  padding-top: var(--space-8);
+  padding-top: var(--space-4);
   border-top: 1px solid var(--color-border-light);
 }
 
 .article-content h3 {
   margin-top: var(--space-12);
   margin-bottom: var(--space-4);
+}
+
+.article-content strong {
+  display: inline;
+  font-weight: 700;
+  color: var(--color-text);
+  background: none;
+  padding: 0;
 }
 
 .article-content img {
