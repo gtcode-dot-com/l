@@ -14,23 +14,10 @@
 
   <!-- Articles List -->
   {{ if .Pages }}
-    {{/* Language filter bar for taxonomy pages */}}
-    {{ $langScratch := newScratch }}
-    {{ $langScratch.Set "langsCSV" "" }}
-    {{ range .Pages }}
-      {{ with .Params.language }}
-        {{ $langScratch.Add "langsCSV" (printf "%s," (lower .)) }}
-      {{ end }}
-    {{ end }}
-    {{ $langs := slice }}
-    {{ $langsCSV := $langScratch.Get "langsCSV" | default "" }}
-    {{ if gt (len $langsCSV) 0 }}
-      {{ $trimmed := trim $langsCSV "," }}
-      {{ $langs = uniq (sort (split $trimmed ",")) }}
-    {{ end }}
-    {{/* Language selector removed: we now filter server-side */}}
+    {{ $english := where .Pages "Params.language" "en" }}
+    {{ $collection := cond (gt (len $english) 0) $english .Pages }}
     <div class="news-list news-list-grid">
-      {{ range .Pages.ByDate.Reverse }}
+      {{ range $collection.ByDate.Reverse }}
         <article class="card news-list-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
           {{ if or .Params.category .Params.language }}
             <div class="card-meta" style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
