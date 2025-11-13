@@ -8,12 +8,12 @@ date: 2025-06-17
 
 ### Research Proposal
 
-**[Chiral Narrative Synthesis Research Proposal (PDF)](/papers_legacy/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf)**
+**[Chiral Narrative Synthesis Research Proposal (PDF)](/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf)**
 Comprehensive research proposal for the Chiral Narrative Synthesis framework, exploring AI-powered narrative generation with dialectical reasoning.
 
 - **Format**: PDF (224 KB)
 - **Date**: June 17, 2025
-- **LaTeX Source**: [ResearchProposal-ChiralNarrativeSynthesis_3.tex](/papers_legacy/ResearchProposal-ChiralNarrativeSynthesis_3.tex)
+- **LaTeX Source**: [ResearchProposal-ChiralNarrativeSynthesis_3.tex](/papers/ResearchProposal-ChiralNarrativeSynthesis_3.tex)
 
 ### Research Roadmap & Documentation
 

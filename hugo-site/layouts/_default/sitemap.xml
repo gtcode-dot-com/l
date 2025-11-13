@@ -11,12 +11,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- /* Static assets that need explicit inclusion */ -}}
   {{- $staticEntries := slice
-      (dict "loc" (replace (printf "%s/investigation/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
-      (dict "loc" (replace (printf "%s/investigation/exhibit-a-federal-intervention-hawaii/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-20")
-      (dict "loc" (replace (printf "%s/investigation/hawaii-institutional-capture/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.85 "lastmod" "2025-08-13")
-      (dict "loc" (replace (printf "%s/investigation/hawaii-justice-system-wilson-loo/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.80 "lastmod" "2025-07-13")
       (dict "loc" (replace (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
-      (dict "loc" (replace (printf "%s/for-agents/conspiracy-of-silence/" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.75 "lastmod" $siteLastModString)
+      (dict "loc" (replace (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_3.tex" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
     -}}
   {{- range $static := $staticEntries }}
   <url>
