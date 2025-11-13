@@ -88,7 +88,8 @@
     <meta name="twitter:image" content="{{ $ogImage }}" />
 
     <!-- CSS Reset -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-css-reset/1.4.0/reset.min.css" integrity="sha512-2vU3WXD4Y+PHLxnQM5ljaMmiuLMglTCcl1U3ZpXK9cZjmbRCSQJgP7outomRdwUJNiGXfVwNs3aYvP8HM4ljkA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{ $resetCSS := resources.Get "css/reset.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $resetCSS.RelPermalink }}" integrity="{{ $resetCSS.Data.Integrity }}" crossorigin="anonymous" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -208,6 +209,13 @@
         }
 
         const mobileQuery = window.matchMedia("(max-width: 960px)");
+        const syncNavState = function () {
+          if (mobileQuery.matches) {
+            nav.setAttribute("aria-hidden", body.classList.contains("nav-open") ? "false" : "true");
+          } else {
+            nav.removeAttribute("aria-hidden");
+          }
+        };
 
         const closeNav = function () {
           if (!body.classList.contains("nav-open")) {
@@ -215,6 +223,7 @@
           }
           body.classList.remove("nav-open");
           toggle.setAttribute("aria-expanded", "false");
+          syncNavState();
           return true;
         };
 
@@ -224,6 +233,7 @@
           }
           body.classList.add("nav-open");
           toggle.setAttribute("aria-expanded", "true");
+          syncNavState();
           const firstLink = nav.querySelector("a");
           if (firstLink) {
             firstLink.focus();
@@ -231,6 +241,7 @@
         };
 
         body.classList.add("nav-ready");
+        syncNavState();
 
         toggle.addEventListener("click", function () {
           if (body.classList.contains("nav-open")) {
@@ -261,12 +272,19 @@
           if (event.matches) {
             closeNav();
           }
+          syncNavState();
         };
 
         if (mq.addEventListener) {
           mq.addEventListener("change", mqHandler);
         } else if (mq.addListener) {
           mq.addListener(mqHandler);
+        }
+
+        if (mobileQuery.addEventListener) {
+          mobileQuery.addEventListener("change", syncNavState);
+        } else if (mobileQuery.addListener) {
+          mobileQuery.addListener(syncNavState);
         }
       });
     </script>

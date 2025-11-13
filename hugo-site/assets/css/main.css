@@ -2403,6 +2403,7 @@ body.nav-open .site-nav-overlay {
     opacity: 0;
     pointer-events: none;
     transform: translateY(-8px);
+    visibility: hidden;
     max-height: calc(100vh - var(--header-height) - var(--space-4));
     overflow-y: auto;
     z-index: 110;
@@ -2412,6 +2413,7 @@ body.nav-open .site-nav-overlay {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+    visibility: visible;
   }
 
   body.nav-ready .site-nav a {
