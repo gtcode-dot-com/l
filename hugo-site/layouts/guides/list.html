@@ -1,0 +1,26 @@
+{{ define "main" }}
+  {{ partial "guides-breadcrumbs.html" . }}
+  <div class="guides-shell">
+    {{ partial "guides-sidebar.html" (dict "context" .) }}
+    <div class="guides-content">
+      <header class="guides-page-header">
+        {{ with .Params.hero_eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="guides-page-description">{{ . }}</p>{{ end }}
+      </header>
+      {{ partial "guides-toc.html" . }}
+      {{ if .Content }}
+        <div class="guides-page-body">
+          {{ .Content }}
+        </div>
+      {{ end }}
+      {{ $isRoot := eq (trim .RelPermalink "/") "guides" }}
+      {{ if $isRoot }}
+        {{ partial "guides-pillar-cards.html" . }}
+      {{ else }}
+        {{ partial "guides-children.html" (dict "page" . "title" (.Params.children_title | default "Curriculum")) }}
+      {{ end }}
+      {{ partial "guides-related.html" . }}
+    </div>
+  </div>
+{{ end }}

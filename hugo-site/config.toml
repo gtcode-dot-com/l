@@ -15,6 +15,55 @@ relativeURLs = true
     isPlainText = false
     notAlternative = true
 
+  [outputFormats.plaintextagent]
+    mediaType = "text/plain"
+    baseName = "agent"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextagents]
+    mediaType = "text/plain"
+    baseName = "agents"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextllm]
+    mediaType = "text/plain"
+    baseName = "llm"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextllms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextai]
+    mediaType = "text/plain"
+    baseName = "ai"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintexthumans]
+    mediaType = "text/plain"
+    baseName = "humans"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextrobots]
+    mediaType = "text/plain"
+    baseName = "robots"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
 [outputs]
   home = ["HTML", "RSS", "news-sitemap"]
   section = ["HTML", "RSS"]

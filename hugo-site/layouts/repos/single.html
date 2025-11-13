@@ -43,6 +43,23 @@
     </section>
   {{ end }}
 
+  <!-- Enhanced Installation Section -->
+  {{ with .Params.installation }}
+  <section class="repo-section">
+    <h2>Installation</h2>
+    <div class="installation-steps">
+      {{ range . }}
+      <div class="install-method">
+        <h3>{{ .method }}</h3>
+        <pre><code>{{ .command }}</code></pre>
+        {{ with .note }}
+        <p class="install-note">{{ . }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ else }}
   <section class="repo-installation">
     <h2>Installation</h2>
     <p>Add <code>{{ .Params.slug }}</code> to your list of dependencies in <code>mix.exs</code>:</p>
@@ -54,6 +71,36 @@ end</code></pre>
     <p>Then run:</p>
     <pre><code class="language-bash">mix deps.get</code></pre>
   </section>
+  {{ end }}
+
+  <!-- Usage Section -->
+  {{ with .Params.usage }}
+  <section class="repo-section">
+    <h2>Quick Start</h2>
+    {{ . | markdownify }}
+  </section>
+  {{ end }}
+
+  <!-- Release Timeline -->
+  {{ with .Params.releases }}
+  <section class="repo-section">
+    <h2>Release History</h2>
+    <div class="timeline">
+      {{ range . }}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-version">{{ .version }}</div>
+          <div class="timeline-date">{{ .date }}</div>
+          {{ with .notes }}
+          <div class="timeline-notes">{{ . }}</div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
 
   <section class="repo-actions">
     <h2>Resources</h2>

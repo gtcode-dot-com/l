@@ -1,0 +1,29 @@
+{{- $page := . -}}
+{{- $section := .CurrentSection -}}
+{{- if $section -}}
+  {{- $ordered := (where ($section.RegularPages | default (slice)) "Params.nav_hide" "ne" true).ByWeight -}}
+  {{- $total := len $ordered -}}
+  {{- if ge $total 2 -}}
+    {{- $index := -1 -}}
+    {{- range $i, $p := $ordered -}}
+      {{- if eq $p.RelPermalink $page.RelPermalink -}}
+        {{- $index = $i -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if ge $index 0 -}}
+      {{- $prev := cond (gt $index 0) (index $ordered (sub $index 1)) nil -}}
+      {{- $next := cond (lt (add $index 1) $total) (index $ordered (add $index 1)) nil -}}
+      <div class="guides-series-nav">
+        <div class="guides-series-progress">Step {{ add $index 1 }} of {{ $total }} in {{ $section.LinkTitle | default $section.Title }}</div>
+        <div class="guides-series-links">
+          {{- if $prev -}}
+            <a class="btn btn-secondary" href="{{ $prev.RelPermalink }}">&larr; {{ $prev.LinkTitle | default $prev.Title }}</a>
+          {{- end -}}
+          {{- if $next -}}
+            <a class="btn btn-primary" href="{{ $next.RelPermalink }}">Next: {{ $next.LinkTitle | default $next.Title }} &rarr;</a>
+          {{- end -}}
+        </div>
+      </div>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

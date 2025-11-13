@@ -59,8 +59,17 @@
         {{- end }}
       </ul>
       {{- end }}
-      {{- if .cta_label }}
-      <a class="btn btn-secondary" href="{{ .cta_url }}">{{ .cta_label }}</a>
+      {{- with .ctas }}
+      <div class="card-actions">
+        {{- range . }}
+        <a class="btn btn-{{ .style | default "secondary" }}"
+           href="{{ .url }}"
+           {{- if .target }} target="{{ .target }}"{{ end }}
+           {{- if .rel }} rel="{{ .rel }}"{{ end }}>
+          {{ .label }}
+        </a>
+        {{- end }}
+      </div>
       {{- end }}
     </article>
     {{- end }}

@@ -1,0 +1,25 @@
+pillars:
+  - title: "Developer's Guide"
+    contentPath: "guides/building-cns-2.0-developers-guide"
+    description: "Step-by-step Python builds that turn the CNS 2.0 blueprint into production-grade code."
+    cta:
+      text: "Start at Chapter 0"
+      url: "/guides/building-cns-2.0-developers-guide/chapter-0-quickstart/"
+  - title: "Research Roadmap"
+    contentPath: "guides/cns-2.0-research-roadmap"
+    description: "Multi-year research phases, validation protocols, and the canonical CNS 2.0 blueprint."
+    cta:
+      text: "Read the Blueprint"
+      url: "/guides/cns-2.0-research-roadmap/blueprint/"
+  - title: "Tutorials"
+    contentPath: "guides/tutorials"
+    description: "Hands-on walkthroughs, DSPy optimization tracks, and field experiments for CNS operators."
+    cta:
+      text: "Browse Tutorials"
+      url: "/guides/tutorials/"
+  - title: "Case Studies & Experiments"
+    contentPath: "guides/case-studies-and-experiments"
+    description: "Narrative theory deep dives and empirical studies that pressure-test CNS assumptions."
+    cta:
+      text: "Review Evidence"
+      url: "/guides/case-studies-and-experiments/"

@@ -1480,8 +1480,8 @@ body.nav-open .site-nav-overlay {
 }
 
 .article-nav {
-  margin-top: var(--space-8);
-  padding-top: var(--space-4);
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
   border-top: 1px solid var(--color-border-light);
 }
 
@@ -1492,6 +1492,267 @@ body.nav-open .site-nav-overlay {
 
   .hero-actions {
     justify-content: center;
+  }
+}
+
+/* ============================================
+   Guides Experience
+   ============================================ */
+
+.breadcrumb-guides {
+  margin-bottom: var(--space-6);
+}
+
+.guides-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.guides-sidebar {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-4));
+  padding: var(--space-4);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  height: fit-content;
+}
+
+.guides-sidebar-eyebrow {
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  margin: 0 0 var(--space-3);
+}
+
+.guides-sidebar-group {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+  background: var(--color-bg-alt);
+  margin-bottom: var(--space-3);
+}
+
+.guides-sidebar-group summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  padding: var(--space-2) var(--space-3);
+}
+
+.guides-sidebar-group[open] summary {
+  color: var(--color-primary);
+}
+
+.guides-sidebar-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.guides-sidebar-desc {
+  margin: 0 var(--space-3) var(--space-2);
+  color: var(--color-text-light);
+  font-size: var(--text-sm);
+}
+
+.guides-nav-level {
+  list-style: none;
+  margin: 0;
+  padding: 0 var(--space-3) var(--space-3);
+}
+
+.guides-nav-level-1,
+.guides-nav-level-2 {
+  padding-left: var(--space-4);
+}
+
+.guides-nav-item {
+  margin-bottom: var(--space-2);
+}
+
+.guides-nav-item > a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.guides-nav-item.is-active > a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.guides-content,
+.guides-article {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-2xl);
+  padding: clamp(var(--space-5), 4vw, var(--space-8));
+  box-shadow: var(--shadow-md);
+}
+
+.guides-page-header h1,
+.guides-article-header h1 {
+  margin-bottom: var(--space-3);
+}
+
+.guides-page-description {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.guides-page-body,
+.guides-article-body {
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.guides-toc {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  background: var(--color-bg-alt);
+  margin: var(--space-5) 0;
+}
+
+.guides-toc-label {
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  margin: 0 0 var(--space-3);
+}
+
+.guides-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guides-toc-list li {
+  margin-bottom: var(--space-2);
+}
+
+.guides-toc-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+
+.guides-pillar-cards h2,
+.guides-children h2,
+.guides-related h2 {
+  margin-top: var(--space-8);
+}
+
+.guides-pillar-grid,
+.guides-child-grid,
+.guides-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.guides-pillar-card,
+.guides-child-card,
+.guides-related-card {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+
+.guides-child-eyebrow,
+.guides-related-eyebrow,
+.guides-pillar-eyebrow {
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  margin: 0 0 var(--space-2);
+}
+
+.guides-child-meta {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+.guides-article-header {
+  margin-bottom: var(--space-4);
+}
+
+.guides-article-section {
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  margin: 0 0 var(--space-2);
+}
+
+.guides-article-meta {
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+.guides-series-nav {
+  margin-top: var(--space-8);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.guides-series-progress {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.guides-series-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.guides-related-card h3 a,
+.guides-child-card h3 a,
+.guides-pillar-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.guides-related-card .btn,
+.guides-sidebar .btn {
+  margin-top: var(--space-3);
+}
+
+@media (max-width: 980px) {
+  .guides-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .guides-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .guides-series-links {
+    flex-direction: column;
+  }
+
+  .guides-content,
+  .guides-article {
+    padding: var(--space-5);
   }
 }
 
@@ -2298,6 +2559,140 @@ body.nav-open .site-nav-overlay {
     padding: var(--space-3) var(--space-6);
     font-size: var(--text-sm);
   }
+}
+
+/* ============================================
+   Repository Page Enhancements
+   ============================================ */
+
+.repo-section {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.installation-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.install-method h3 {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-lg);
+}
+
+.install-method pre {
+  background: var(--color-bg-alt);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.install-note {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.timeline {
+  position: relative;
+  padding-left: var(--space-8);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-6);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -33px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 2px solid var(--color-bg);
+}
+
+.timeline-version {
+  font-weight: 600;
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+}
+
+.timeline-date {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin-top: var(--space-1);
+}
+
+.timeline-notes {
+  margin-top: var(--space-2);
+  color: var(--color-text);
+}
+
+/* ============================================
+   Policy Pages
+   ============================================ */
+
+.policy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+.policy-header {
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.policy-version {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: var(--space-2);
+}
+
+.policy-meta {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.policy-related {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.policy-formats {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
 }
 
 /* ============================================

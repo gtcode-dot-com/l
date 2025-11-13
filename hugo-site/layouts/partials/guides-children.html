@@ -1,0 +1,24 @@
+{{- $page := .page -}}
+{{- $children := where ($page.Pages | default (slice)) "Params.nav_hide" "ne" true -}}
+{{- if gt (len $children) 0 -}}
+<section class="guides-children">
+  <h2>{{ .title | default "Curriculum" }}</h2>
+  <div class="guides-child-grid">
+    {{- range $child := $children.ByWeight -}}
+      {{- $type := cond (eq $child.Kind "section") "Section" "Chapter" -}}
+      <article class="guides-child-card">
+        <p class="guides-child-eyebrow">{{ $type }}</p>
+        <h3><a href="{{ $child.RelPermalink }}">{{ $child.LinkTitle | default $child.Title }}</a></h3>
+        <p>{{ with $child.Description }}{{ . }}{{ else }}{{ $child.Summary | plainify | truncate 180 }}{{ end }}</p>
+        <div class="guides-child-meta">
+          {{- if eq $child.Kind "page" -}}
+            <span>{{ $child.ReadingTime }} min read</span>
+          {{- else -}}
+            <span>{{ len ($child.Pages | default (slice)) }} entries</span>
+          {{- end -}}
+        </div>
+      </article>
+    {{- end -}}
+  </div>
+</section>
+{{- end -}}

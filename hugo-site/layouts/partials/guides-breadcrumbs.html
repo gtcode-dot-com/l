@@ -1,0 +1,18 @@
+{{- $page := . -}}
+<nav class="breadcrumb breadcrumb-guides">
+  <a href="/">Home</a>
+  <span class="breadcrumb-separator">&rsaquo;</span>
+  <a href="/guides/">Guides</a>
+  {{- $ancestors := slice -}}
+  {{- range $page.Ancestors -}}
+    {{- if strings.HasPrefix .RelPermalink "/guides/" -}}
+      {{- $ancestors = $ancestors | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range $ancestor := (collections.Reverse $ancestors) -}}
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <a href="{{ $ancestor.RelPermalink }}">{{ $ancestor.LinkTitle | default $ancestor.Title }}</a>
+  {{- end -}}
+  <span class="breadcrumb-separator">&rsaquo;</span>
+  <strong>{{ $page.LinkTitle | default $page.Title }}</strong>
+</nav>

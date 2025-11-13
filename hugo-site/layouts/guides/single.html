@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{ partial "guides-breadcrumbs.html" . }}
+  <div class="guides-shell">
+    {{ partial "guides-sidebar.html" (dict "context" .) }}
+    <article class="guides-article">
+      <header class="guides-article-header">
+        {{ with .CurrentSection }}
+          <p class="guides-article-section">Part of <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        {{ end }}
+        <h1>{{ .Title }}</h1>
+        <div class="guides-article-meta">
+          <span>{{ .ReadingTime }} min read</span>
+          {{ with .Lastmod }}<span>&bull;</span><span>Updated {{ .Format "Jan 2, 2006" }}</span>{{ end }}
+        </div>
+      </header>
+      {{ partial "guides-toc.html" . }}
+      <div class="guides-article-body">
+        {{ .Content }}
+      </div>
+      {{ partial "guides-series-nav.html" . }}
+      {{ partial "guides-related.html" . }}
+    </article>
+  </div>
+{{ end }}
