@@ -113,9 +113,6 @@ structured_data:
       keywords: "Wilson Loo, Judicial Misconduct, Hawaii, Corruption, Commission on Judicial Conduct"
 ---
 
-<!-- TODO: Migrate full content from static/investigation/hawaii-justice-system-wilson-loo/index.html -->
-<!-- This file structure is complete. Copy the article body content from the static HTML file. -->
-
 <div class="disclaimer">
   <h3>Legal Notice</h3>
   <p>This report represents a good faith effort to document and disclose matters of serious public concern.

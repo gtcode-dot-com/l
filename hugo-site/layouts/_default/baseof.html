@@ -110,6 +110,7 @@
     <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="site-header">
       <div class="site-header-inner">
         <a href="/" class="site-logo">
@@ -136,7 +137,7 @@
     </header>
     <div class="site-nav-overlay" aria-hidden="true"></div>
 
-    <main class="site-main">
+    <main class="site-main" id="main-content">
       {{ partial "ai-agent-comment.html" . }}
       {{ block "main" . }}{{ end }}
     </main>

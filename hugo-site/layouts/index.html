@@ -3,27 +3,35 @@
     {{ . | safeHTML }}
   {{ end }}
   <!-- Hero Section -->
+  {{- $hero := .Params.hero | default dict -}}
   <div class="hero hero-profile">
     <div class="hero-inner">
       <div class="hero-content">
-        <p class="hero-eyebrow">Paul E. Lowndes</p>
-        <h1>AI Engineering Consultant & Investigative Journalist</h1>
-        <p class="hero-location">Oahu, Hawai‘i · Founder, GTCode</p>
-        <p class="hero-lede">Bridging advanced technology and public truth through bespoke AI systems, accountability reporting, and Chiral Narrative Synthesis research.</p>
+        <p class="hero-eyebrow">{{ $hero.eyebrow | default "Paul E. Lowndes" }}</p>
+        <h1>{{ $hero.title | default "AI Engineering Consultant & Investigative Journalist" }}</h1>
+        <p class="hero-location">{{ $hero.location | default "Oahu, Hawai'i · Founder, GTCode" }}</p>
+        <p class="hero-lede">{{ $hero.lede | default "Bridging advanced technology and public truth through bespoke AI systems, accountability reporting, and Chiral Narrative Synthesis research." }}</p>
+        {{- with $hero.highlights }}
         <ul class="hero-highlights">
-          <li>Custom ML architectures, multi-agent coordination, and production-grade AI infrastructure</li>
-          <li>Independent investigations exposing institutional corruption and judicial misconduct in Hawaii</li>
-          <li>Chiral Narrative Synthesis (CNS) — a computational truth-seeking framework for multi-agent systems</li>
+          {{- range . }}
+          <li>{{ . }}</li>
+          {{- end }}
         </ul>
+        {{- end }}
+        {{- with $hero.ctas }}
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:inquire@gtcode.com">Book an AI Consult →</a>
-          <a class="btn btn-secondary" href="/investigation/">Review Investigations</a>
+          {{- range . }}
+          <a class="btn btn-{{ .style | default "primary" }}" href="{{ .url }}">{{ .label }}</a>
+          {{- end }}
         </div>
+        {{- end }}
       </div>
       <div class="hero-art hero-art-photo">
         <div class="hero-art-glow"></div>
         <img src="/img/gtcode-core.svg" alt="GTCode signal glyph" loading="lazy" decoding="async" />
-        <a class="btn btn-secondary hero-dossier-link" href="/investigation/">Secure investigative dossiers &amp; CNS field notes →</a>
+        {{- with $hero.art_link }}
+        <a class="btn btn-secondary hero-dossier-link" href="{{ .url }}">{{ .label }}</a>
+        {{- end }}
       </div>
     </div>
   </div>
@@ -34,55 +42,28 @@
     <p class="section-description">Consultancy services, investigative journalism, and computational truth-seeking that reinforce one another.</p>
   </section>
 
+  {{- $missionData := index .Site.Data.home "mission" | default dict -}}
+  {{- $missions := $missionData.missions | default slice -}}
   <div class="news-grid mission-grid">
+    {{- range $missions }}
     <article class="card">
       <div class="card-meta">
-        <span class="badge badge-category">Consultancy</span>
+        <span class="badge badge-category">{{ .badge }}</span>
       </div>
-      <h3 class="card-title"><a href="mailto:inquire@gtcode.com">AI Engineering Studio</a></h3>
-      <p class="card-summary">Bespoke AI systems for organizations that need trustworthy automation, multi-agent orchestration, and resilient infrastructure.</p>
+      <h3 class="card-title"><a href="{{ .title_url }}">{{ .title }}</a></h3>
+      <p class="card-summary">{{ .summary }}</p>
+      {{- with .features }}
       <ul class="card-list">
-        <li>Custom ML model development &amp; evaluation pipelines</li>
-        <li>Multi-agent coordination &amp; distributed compute architectures</li>
-        <li>AI safety reviews, deployment readiness, and executive strategy</li>
+        {{- range . }}
+        <li>{{ . }}</li>
+        {{- end }}
       </ul>
-      <a class="btn btn-secondary" href="mailto:inquire@gtcode.com">Inquire About Services →</a>
+      {{- end }}
+      {{- if .cta_label }}
+      <a class="btn btn-secondary" href="{{ .cta_url }}">{{ .cta_label }}</a>
+      {{- end }}
     </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="badge badge-category">Investigations</span>
-      </div>
-      <h3 class="card-title"><a href="/investigation/">Public Accountability Initiative</a></h3>
-      <p class="card-summary">Independent dossiers documenting the Aloha Protection Racket, Institutional Capture, and whistleblower testimony from across Hawaii.</p>
-      <ul class="card-list">
-        <li>Federal criminal complaint outlining coordinated RICO activity</li>
-        <li>Secure protocol for sources &amp; survivors of retaliation</li>
-        <li>Primary documents, transcripts, and audiovisual evidence</li>
-      </ul>
-      <div class="card-actions">
-        <a class="btn btn-secondary" href="/investigation/">Explore Dossiers →</a>
-        <a class="btn btn-secondary" href="mailto:tips@gtcode.com">Send a tip (no sensitive data) →</a>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="card-meta">
-        <span class="badge badge-category">Research</span>
-      </div>
-      <h3 class="card-title"><a href="/guides/building-cns-2.0-developers-guide/">Chiral Narrative Synthesis</a></h3>
-      <p class="card-summary">CNS is a mathematical framework for truth discovery that models conflicting narratives inside multi-agent reinforcement systems.</p>
-      <ul class="card-list">
-        <li>Topological modeling of asymmetric information</li>
-        <li>Investigator-in-the-loop orchestration patterns</li>
-        <li>Developer playbooks for CNS 2.0 deployments</li>
-      </ul>
-      <div class="card-actions">
-        <a class="btn btn-secondary" href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf" target="_blank" rel="noopener">Research Proposal (PDF) →</a>
-        <a class="btn btn-secondary" href="/articles/epistemic-fragmentation-multi-model-ai-systems/">Latest article →</a>
-        <a class="btn btn-secondary" href="/guides/">Guides Library →</a>
-      </div>
-    </article>
+    {{- end }}
   </div>
 
   <!-- Featured Investigation -->

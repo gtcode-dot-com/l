@@ -102,16 +102,51 @@
         "about" (slice $headline "AI news" "Daily briefings")
     -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if and (eq .Section "repos") .Params.hex_url }}
+  {{- /* SoftwareSourceCode schema for repository pages */ -}}
+  {{- $repoName := .Title -}}
+  {{- $description := .Description | default (.Summary | default "") -}}
+  {{- $modified := cond (.Lastmod.IsZero) (.Date.Format "2006-01-02T15:04:05Z07:00") (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "SoftwareSourceCode"
+        "name" $repoName
+        "description" $description
+        "url" (replace .Permalink "http://" "https://")
+        "codeRepository" (replace .Params.repo_url "http://" "https://")
+        "programmingLanguage" "Elixir"
+        "dateModified" $modified
+    -}}
+  {{- if .Params.license }}
+    {{- $data = merge $data (dict "license" .Params.license) -}}
+  {{- end }}
+  {{- if .Params.hex_url }}
+    {{- $data = merge $data (dict "downloadUrl" (replace .Params.hex_url "http://" "https://")) -}}
+  {{- end }}
+  {{- if .Params.version }}
+    {{- $data = merge $data (dict "softwareVersion" .Params.version) -}}
+  {{- end }}
+  {{- $data = merge $data (dict
+        "author" (dict "@type" "Person" "name" $author "url" $siteRoot)
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" (replace (.Site.Params.logo | default "/img/gtcode-core.svg") "http://" "https://")))
+    ) -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if $sd }}
+  {{- /* NewsArticle/Article schema for content pages */ -}}
   {{- $headline := cond (and $sd.headline (ne $sd.headline "")) $sd.headline .Title -}}
   {{- $description := cond (and $sd.description (ne $sd.description "")) $sd.description (.Summary | default "") -}}
   {{- $published := cond (.PublishDate.IsZero) (.Date.Format "2006-01-02T15:04:05Z07:00") (.PublishDate.Format "2006-01-02T15:04:05Z07:00") -}}
   {{- $modified := cond (.Lastmod.IsZero) $published (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
   {{- $author := cond (and $sd.author (ne $sd.author "")) $sd.author (.Site.Params.author | default "gtcode.com") -}}
   {{- $publisher := $sd.publisher | default (dict "name" "gtcode.com" "logo" "/favicon.ico") -}}
+  {{- /* Image with fallback to OG image or site default */ -}}
   {{- $image := slice -}}
   {{- if $sd.main_image }}
     {{- $image = $image | append $sd.main_image -}}
+  {{- else if .Params.og_image }}
+    {{- $image = $image | append (replace .Params.og_image "http://" "https://") -}}
+  {{- else if .Site.Params.og_image }}
+    {{- $image = $image | append (printf "%s%s" $siteRoot (.Site.Params.og_image | default "/img/gtcode-core.svg")) -}}
   {{- end -}}
   {{- $data := dict
         "@context" "https://schema.org"
@@ -121,8 +156,10 @@
         "datePublished" $published
         "dateModified" $modified
         "author" (dict "@type" "Person" "name" $author)
-        "publisher" (dict "@type" "Organization" "name" ($publisher.name | default "gtcode.com") "logo" (dict "@type" "ImageObject" "url" ($publisher.logo | default "/favicon.ico")))
-        "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" (replace (.Site.Params.logo | default "/img/gtcode-core.svg") "http://" "https://")))
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" (replace .Permalink "http://" "https://"))
+        "articleSection" (.Params.category | default .Section)
+        "wordCount" .WordCount
     -}}
   {{- if gt (len $image) 0 }}
     {{- $data = merge $data (dict "image" $image) -}}
@@ -136,19 +173,11 @@
   {{- if $sd.original_source }}
     {{- $data = merge $data (dict "originalSource" $sd.original_source) -}}
   {{- end -}}
-  {{- $data = merge $data (dict
-        "articleSection" (.Params.category | default .Section)
-        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" (replace (.Site.Params.logo | default "/img/gtcode-core.svg") "http://" "https://")))
-        "wordCount" .WordCount
-    ) -}}
   {{- if .Params.source_url }}
     {{- $data = merge $data (dict "url" (replace .Params.source_url "http://" "https://")) -}}
   {{- end }}
   {{- if not (and (eq .Section "news") (not .Params.news_original) .Params.source_url) }}
     {{- $data = merge $data (dict "potentialAction" (dict "@type" "InteractAction" "target" (replace .Permalink "http://" "https://"))) -}}
-  {{- end }}
-  {{- if (and (eq .Section "repos") .Params.hex_url) }}
-    {{- $data = merge $data (dict "@type" "SoftwareSourceCode" "codeRepository" .Params.repo_url "programmingLanguage" "Elixir" "license" .Params.license "url" .Permalink "downloadUrl" .Params.hex_url) -}}
   {{- end }}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- end -}}

@@ -71,9 +71,6 @@ structured_data:
   keywords: "RICO, Federal Intervention, Hawaii, Institutional Capture, Corruption, Lowndes File"
 ---
 
-<!-- TODO: Migrate full content from static/investigation/exhibit-a-federal-intervention-hawaii/index.html -->
-<!-- This file structure is complete. Copy the article body content from the static HTML file. -->
-
 <div class="disclaimer">
 <h3>Table of Contents</h3>
 <ul>

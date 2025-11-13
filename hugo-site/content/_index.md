@@ -130,6 +130,25 @@ structured_data_graph:
     worksFor:
       '@id': https://gtcode.com/#organization
 title: Paul E. Lowndes | AI Engineering Consultant & Investigative Journalist
+hero:
+  eyebrow: "Paul E. Lowndes"
+  title: "AI Engineering Consultant & Investigative Journalist"
+  location: "Oahu, Hawai'i · Founder, GTCode"
+  lede: "Bridging advanced technology and public truth through bespoke AI systems, accountability reporting, and Chiral Narrative Synthesis research."
+  highlights:
+    - "Custom ML architectures, multi-agent coordination, and production-grade AI infrastructure"
+    - "Independent investigations exposing institutional corruption and judicial misconduct in Hawaii"
+    - "Chiral Narrative Synthesis (CNS) — a computational truth-seeking framework for multi-agent systems"
+  ctas:
+    - label: "Book an AI Consult →"
+      url: "mailto:inquire@gtcode.com"
+      style: "primary"
+    - label: "Review Investigations"
+      url: "/investigation/"
+      style: "secondary"
+  art_link:
+    label: "Secure investigative dossiers & CNS field notes →"
+    url: "/investigation/"
 ---
 
 {{< ai-note >}}

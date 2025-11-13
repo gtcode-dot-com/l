@@ -8,6 +8,18 @@ disableKinds = ['taxonomy', 'term']
 canonifyURLs = false
 relativeURLs = true
 
+[outputFormats]
+  [outputFormats.news-sitemap]
+    baseName = "news-sitemap"
+    mediaType = "application/xml"
+    isPlainText = false
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "news-sitemap"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
 [params]
   description = 'Paul E. Lowndes is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'
   author = 'Paul E. Lowndes'

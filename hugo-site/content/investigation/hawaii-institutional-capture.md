@@ -70,9 +70,6 @@ structured_data:
   keywords: "Institutional Capture, Hawaii, Systemic Corruption, Law Enforcement, Judicial System"
 ---
 
-<!-- TODO: Migrate full content from static/investigation/hawaii-institutional-capture/index.html -->
-<!-- This file structure is complete. Copy the article body content from the static HTML file. -->
-
 <div class="disclaimer">
 <h3>Methodology & Editorial Standards</h3>
 <p>This report presents an analysis of alleged institutional failures based on a synthesis of public records, firsthand accounts, and documented events. The case study subject is referred to as "the subject" or "Individual A" to focus the analysis on systemic patterns rather than personal narrative. All individuals are presumed innocent. This analysis is a good faith effort to model systemic issues of public concern where official channels for accountability have reportedly failed.</p>

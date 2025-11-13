@@ -1,0 +1,33 @@
+missions:
+  - badge: "Consultancy"
+    title: "AI Engineering Studio"
+    title_url: "mailto:inquire@gtcode.com"
+    summary: "Bespoke AI systems for organizations that need trustworthy automation, multi-agent orchestration, and resilient infrastructure."
+    features:
+      - "Custom ML model development & evaluation pipelines"
+      - "Multi-agent coordination & distributed compute architectures"
+      - "AI safety reviews, deployment readiness, and executive strategy"
+    cta_label: "Inquire About Services →"
+    cta_url: "mailto:inquire@gtcode.com"
+
+  - badge: "Investigations"
+    title: "Public Accountability"
+    title_url: "/investigation/"
+    summary: "Independent investigative reporting focused on judicial corruption, institutional capture, and structural failures in Hawaii's legal system."
+    features:
+      - "Evidence-based dossiers documenting systemic misconduct"
+      - "Legal frameworks for federal intervention and whistleblower protection"
+      - "Secure channels for tips: tips@gtcode.com (Signal/encrypted email)"
+    cta_label: "Review Dossiers →"
+    cta_url: "/investigation/"
+
+  - badge: "Research"
+    title: "Chiral Narrative Synthesis"
+    title_url: "/guides/cns-2.0-research-roadmap/"
+    summary: "Computational truth-seeking through multi-agent systems that synthesize evidence, resolve contradictions, and expose information asymmetries."
+    features:
+      - "Graph neural networks for dialectical reasoning & evidence evaluation"
+      - "Critic-synthesis-orchestrator pipelines (DSPy, LangGraph, Elixir)"
+      - "Open frameworks for transparent, accountable AI-driven analysis"
+    cta_label: "Explore CNS Research →"
+    cta_url: "/guides/cns-2.0-research-roadmap/"
