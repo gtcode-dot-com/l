@@ -1282,6 +1282,24 @@ body.nav-open .site-nav-overlay {
   opacity: 1;
 }
 
+.lang-select {
+  appearance: none;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  min-width: 8rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.lang-select:focus {
+  outline: 2px solid var(--color-primary);
+  border-color: var(--color-primary);
+}
+
 .tags {
   display: flex;
   gap: var(--space-3);
@@ -1438,6 +1456,12 @@ body.nav-open .site-nav-overlay {
 
 .repo-resource-links .btn {
   flex: 0 1 auto;
+}
+
+.article-nav {
+  margin-top: var(--space-8);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-light);
 }
 
 @media (max-width: 640px) {

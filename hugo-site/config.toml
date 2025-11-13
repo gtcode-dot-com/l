@@ -3,10 +3,10 @@ languageCode = 'en-us'
 title = 'GTCode | Paul E. Lowndes'
 theme = 'minimal'
 disableKinds = ['taxonomy', 'term']
-canonifyURLs = true
-
 [pagination]
   pagerSize = 10
+canonifyURLs = false
+relativeURLs = true
 
 [params]
   description = 'Paul E. Lowndes is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'
