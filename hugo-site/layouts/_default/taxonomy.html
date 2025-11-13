@@ -28,62 +28,7 @@
       {{ $trimmed := trim $langsCSV "," }}
       {{ $langs = uniq (sort (split $trimmed ",")) }}
     {{ end }}
-    {{ $defaultLang := "en" }}
-    {{ $resolvedDefault := cond (in $langs $defaultLang) $defaultLang "all" }}
-    {{ if gt (len $langs) 0 }}
-      <div class="card-meta" style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap; margin-bottom:1rem;">
-        <label for="lang-filter" style="font-weight:700;">Language:</label>
-        <select id="lang-filter" class="lang-select" data-default="{{ $resolvedDefault }}">
-          <option value="all">ALL</option>
-          {{ range $langs }}
-            <option value="{{ . }}">{{ upper . }}</option>
-          {{ end }}
-        </select>
-      </div>
-      <script>
-        (function(){
-          var sel = document.getElementById('lang-filter');
-          var cards = Array.prototype.slice.call(document.querySelectorAll('article.news-list-item'));
-          var defaultValue = sel.getAttribute('data-default') || 'all';
-          var storageKey = 'gcmsLanguageFilter';
-          function readStored(){
-            try { return localStorage.getItem(storageKey); } catch (_) { return null; }
-          }
-          function writeStored(val){
-            try { localStorage.setItem(storageKey, val); } catch (_) {}
-          }
-          function apply(code){
-            var c = (code || '').toLowerCase();
-            cards.forEach(function(card){
-              var lang = (card.getAttribute('data-lang') || '').toLowerCase();
-              if (!c || c === 'all'){ card.style.display = ''; return; }
-              card.style.display = (lang === c) ? '' : 'none';
-            });
-          }
-          var url = new URL(window.location.href);
-          var urlParam = url.searchParams.get('lang');
-          var stored = readStored();
-          var init = urlParam || stored || defaultValue;
-          if (!Array.prototype.some.call(sel.options, function(o){ return o.value === init; })){
-            init = defaultValue;
-          }
-          sel.value = init;
-          apply(init);
-          if (!urlParam && init && init !== 'all'){
-            url.searchParams.set('lang', init);
-            window.history.replaceState({}, '', url);
-          }
-          sel.addEventListener('change', function(){
-            var code = sel.value;
-            var url = new URL(window.location);
-            if (code === 'all') url.searchParams.delete('lang'); else url.searchParams.set('lang', code);
-            window.history.replaceState({}, '', url);
-            if (code && code !== 'all'){ writeStored(code); } else { writeStored('all'); }
-            apply(code);
-          });
-        })();
-      </script>
-    {{ end }}
+    {{/* Language selector removed: we now filter server-side */}}
     <div class="news-list news-list-grid">
       {{ range .Pages.ByDate.Reverse }}
         <article class="card news-list-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
