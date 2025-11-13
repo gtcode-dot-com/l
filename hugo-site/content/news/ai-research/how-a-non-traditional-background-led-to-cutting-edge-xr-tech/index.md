@@ -1,40 +1,32 @@
 ---
-ai_commentary:
-- body: Isabel’s journey spans multiple cultures, academia, and industry, culminating
-    in a leadership role at Meta’s Reality Labs on cutting-edge XR technology.
-  title: Career arc
-- body: Her work emphasizes including diverse perspectives and avoiding assumptions
-    to build for the future.
-  title: Philosophy and psychology influence
-- body: Growing up in seven countries informed her focus on how people experience
-    the world and what makes them feel happy and fulfilled.
-  title: Global experiences shaping UX
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 544fbea553dadb6b1d211292cbbb7346a13854b1
-  generated_at: '2025-11-10T01:56:31.321283+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.987608+00:00'
-exported_at: '2025-11-09T05:30:20.804347+00:00'
+date: '2025-11-12T22:51:26.352588+00:00'
+exported_at: '2025-11-12T22:54:41.529621+00:00'
 feed: https://research.facebook.com/feed
+language: en
 source_url: https://www.metacareers.com/life/how-a-non-traditional-background-led-to-cutting-edge-xr-tech
 structured_data:
-  about: &id001
-  - 'Isabel: data scientist on Meta Reality Labs and XR innovator'
-  - 'Background: psychology and philosophy undergrad; business analytics master''s'
-  - 'Experience: digital nomad, Estonian startup marketing lead, returning to the
-    US for advanced studies'
-  - 'Focus: understanding how people experience the world across cultures to inform
-    product design'
-  description: Isabel, a data scientist on Meta’s Reality Labs, traces a path from
-    psychology and philosophy to XR innovation, guided by a global upbringing and
-    diverse experiences in startups and analytics.
+  about: []
+  author: ''
+  description: A data scientist at Meta details how her non-traditional path empowers
+    a unique perspective while building the metaverse.
   headline: How a non-traditional background led to cutting-edge XR tech
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://www.metacareers.com/life/how-a-non-traditional-background-led-to-cutting-edge-xr-tech
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: How a non-traditional background led to cutting-edge XR tech
-updated_at: '2025-11-09T05:13:27.987608+00:00'
+updated_at: '2025-11-12T22:51:26.352588+00:00'
 url_hash: 7b5b77747b18785837f9ecb320252e9a3bbd4bf9
 ---
 

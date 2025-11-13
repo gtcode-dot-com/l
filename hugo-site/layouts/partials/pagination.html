@@ -5,7 +5,7 @@
     {{/* First page */}}
     {{ if $paginator.HasPrev }}
       <li class="page-item">
-        <a class="page-link" href="{{ $paginator.First.URL }}" aria-label="First page">
+        <a class="page-link" href="{{ $paginator.First.URL }}#articles" aria-label="First page">
           <span aria-hidden="true">&laquo;&laquo;</span>
         </a>
       </li>
@@ -20,7 +20,7 @@
     {{/* Previous page */}}
     {{ if $paginator.HasPrev }}
       <li class="page-item">
-        <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous page">
+        <a class="page-link" href="{{ $paginator.Prev.URL }}#articles" aria-label="Previous page">
           <span aria-hidden="true">&laquo;</span>
         </a>
       </li>
@@ -57,7 +57,7 @@
           </li>
         {{ else }}
           <li class="page-item">
-            <a class="page-link" href="{{ .URL }}">{{ $pageNum }}</a>
+            <a class="page-link" href="{{ .URL }}#articles">{{ $pageNum }}</a>
           </li>
         {{ end }}
       {{ end }}
@@ -66,7 +66,7 @@
     {{/* Next page */}}
     {{ if $paginator.HasNext }}
       <li class="page-item">
-        <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next page">
+        <a class="page-link" href="{{ $paginator.Next.URL }}#articles" aria-label="Next page">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
@@ -81,7 +81,7 @@
     {{/* Last page */}}
     {{ if $paginator.HasNext }}
       <li class="page-item">
-        <a class="page-link" href="{{ $paginator.Last.URL }}" aria-label="Last page">
+        <a class="page-link" href="{{ $paginator.Last.URL }}#articles" aria-label="Last page">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>

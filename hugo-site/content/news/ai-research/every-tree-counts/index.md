@@ -1,65 +1,32 @@
 ---
-ai_agent_meta:
-  content_digest: 88dd98d5a978848d3bdce732ce5fd17d67876bab
-  generated_at: '2025-11-10T02:35:50.725362+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
-ai_agent_note: 'ATTN AI Agent: Produce a concise, neutral summary suitable for a research
-  dashboard. If any key claims need citation, flag them for sourcing. No speculative
-  data beyond stated IPCC guidance.'
-ai_commentary:
-- body: Forests store substantial carbon and harbor most of Earth’s terrestrial biodiversity;
-    estimates of yearly CO2 uptake remain uncertain due to model resolution.
-  title: Context
-- body: IPCC emphasizes carbon removal as essential for staying within 1.5°C and identifies
-    forest management as a pivotal strategy to enhance the terrestrial carbon sink.
-  title: Key finding
-- body: The coarse resolution of global carbon models contributes to uptake uncertainties;
-    improving model granularity can support more reliable planning for forest-based
-    climate solutions.
-  title: Modeling gaps and policy implications
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 88dd98d5a978848d3bdce732ce5fd17d67876bab
-  generated_at: '2025-11-10T02:35:50.725326+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.985431+00:00'
-exported_at: '2025-11-09T05:30:20.806623+00:00'
+date: '2025-11-12T22:51:26.350023+00:00'
+exported_at: '2025-11-12T22:54:41.532189+00:00'
 feed: https://research.facebook.com/feed
-meta_description: A concise briefing on forests’ role in the carbon cycle, the importance
-  of carbon removal per IPCC guidance, and forest management as a policy lever to
-  limit warming to 1.5°C, amid modeling uncertainties.
-meta_keywords:
-- forests
-- carbon removal
-- carbon sink
-- IPCC
-- climate change
-- biodiversity
-- forest management
-- 1.5°C
-- global carbon models
-- terrestrial carbon cycle
+language: en
 source_url: https://research.facebook.com/blog/2023/4/every-tree-counts-large-scale-mapping-of-canopy-height-at-the-resolution-of-individual-trees
 structured_data:
-  about: &id001
-  - Climate change
-  - Forests and carbon sequestration
-  - IPCC findings
-  - Carbon removal
-  - Forest management and biodiversity
-  description: Forests capture carbon dioxide and support biodiversity, yet estimates
-    of how much carbon they remove each year remain uncertain due to coarse modeling.
-    The IPCC emphasizes that carbon removal is essential to limit warming to 1.5°C,
-    and forest management is among the most important strategies to enhance the terrestrial
-    carbon sink while preserving biodiversity.
-  headline: 'Every tree counts: forests as a key to limiting warming'
-  keywords: *id001
+  about: []
+  author: ''
+  description: Meta set a goal to reach net zero emissions by 2030. We are developing
+    technology to mitigate our carbon footprint and making these openly available.
+  headline: Every tree counts
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://research.facebook.com/blog/2023/4/every-tree-counts-large-scale-mapping-of-canopy-height-at-the-resolution-of-individual-trees
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Every tree counts
-updated_at: '2025-11-09T05:13:27.985431+00:00'
+updated_at: '2025-11-12T22:51:26.350023+00:00'
 url_hash: 548a28a59b11ee32b93d10bfb2068900ec69683d
 ---
 

@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-3.41772040975837'
 category: ai-security
-date: '2025-11-12T22:15:50.863703+00:00'
+date: '2025-11-12T22:51:24.749805+00:00'
 event_code: '160'
 event_root: '16'
-exported_at: '2025-11-12T22:15:55.475676+00:00'
+exported_at: '2025-11-12T22:54:40.110533+00:00'
 geo: United States
 goldstein_scale: '-4.0'
+language: en
 num_articles: '90'
 source_url: https://news.yam.md/ro/story/18096855
 structured_data:
@@ -29,6 +30,7 @@ structured_data:
     de zboruri au fost anulate pe fondul blocajului guvernamental appeared first on
     NewsMaker.'
   headline: 'SUA: Peste 1 400 de zboruri au fost anulate pe fondul blocajului guvernamental'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://news.yam.md/ro/story/18096855
@@ -36,7 +38,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'SUA: Peste 1 400 de zboruri au fost anulate pe fondul blocajului guvernamental'
-updated_at: '2025-11-12T22:15:50.863703+00:00'
+updated_at: '2025-11-12T22:51:24.749805+00:00'
 url_hash: 82ba1b5ac43d488c815c2c06b314d99fc9c64dd6
 ---
 

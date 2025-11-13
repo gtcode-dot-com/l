@@ -1,50 +1,32 @@
 ---
-ai_commentary:
-- body: Ads now operate in a two-way relationship with audiences. Gen Z’s blended
-    real/virtual lives influence ad acceptance and demand for authentic, identity-aware
-    campaigns. Platform-specific expectations should guide creative and targeting
-    strategies.
-  title: Key takeaways
-- body: Prioritize transparency, consent, and relevance in targeting. Foster audience
-    participation and feedback loops, and tailor content to the norms and expectations
-    of each platform and generation.
-  title: Implications for brand strategy
-- body: Research conducted with CrowdDNA across multiple social platforms. Future
-    work could extend to additional generations, cross-cultural contexts, and deeper
-    exploration of privacy considerations and ethical targeting.
-  title: Methodology and future directions
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 1ad28f3dee71d54b2434eed67bb99378f0b2bf70
-  generated_at: '2025-11-10T01:57:25.100662+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.982884+00:00'
-exported_at: '2025-11-09T05:30:20.809048+00:00'
+date: '2025-11-12T22:51:26.347083+00:00'
+exported_at: '2025-11-12T22:54:41.534762+00:00'
 feed: https://research.facebook.com/feed
+language: en
 source_url: https://research.facebook.com/blog/2023/5/how-generational-differences-affect-consumer-attitudes-towards-ads
 structured_data:
-  about: &id001
-  - Collaboration with CrowdDNA to study attitudes toward social media ads across
-    multiple platforms.
-  - Exploration of the evolution from product-focused advertising to campaigns centered
-    on people and two-way consumer engagement.
-  - Gen Z characteristics—constant connectivity and fluid online/offline identities—inform
-    ad perception and response to targeted messaging.
-  - Implications for brands to integrate authenticity, relevance, and respect for
-    diverse identities in campaigns.
-  description: A CrowdDNA collaboration analyzes how people relate to social media
-    ads across platforms. The study highlights a shift from one-way advertising to
-    a two-way consumer relationship, where audiences wield purchasing power and voice
-    to support or challenge brands. Gen Z, born 1995–2010, grows up with perpetual
-    connectivity and fluid real/virtual identities, influencing how targeted messaging
-    is perceived and embraced.
-  headline: Generational differences shape consumer attitudes toward social media
-    ads
-  keywords: *id001
+  about: []
+  author: ''
+  description: Our research study, in collaboration with CrowdDNA, aims to understand
+    people's relationship with social media ads across different social media platforms.
+  headline: How generational differences affect consumer attitudes towards ads
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://research.facebook.com/blog/2023/5/how-generational-differences-affect-consumer-attitudes-towards-ads
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: How generational differences affect consumer attitudes towards ads
-updated_at: '2025-11-09T05:13:27.982884+00:00'
+updated_at: '2025-11-12T22:51:26.347083+00:00'
 url_hash: c36a40f7e6ff6c4ae073777598496534e19c1046
 ---
 

@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-12T06:06:45.899973+00:00'
-exported_at: '2025-11-12T06:06:47.209208+00:00'
+date: '2025-11-12T22:51:27.807510+00:00'
+exported_at: '2025-11-12T22:54:43.024450+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/tennessee-domestic-violence-guns-probation
 structured_data:
   about: []
@@ -18,17 +19,16 @@ structured_data:
     facing an arrest warrant. That reduced supervision can last for months — in one
     case it was over a year. Six mothers died during this gap, WPLN and ProPublica
     found.
-  headline: How a Gap in Tennessee’s Probation System Leaves Domestic Violence Victims
-    in Danger
+  headline: She Begged for Help. This State’s Probation Gap May Have Put Her in Danger.
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/tennessee-domestic-violence-guns-probation
   publisher:
     logo: /favicon.ico
     name: gtcode.com
-title: How a Gap in Tennessee’s Probation System Leaves Domestic Violence Victims
-  in Danger
-updated_at: '2025-11-12T06:06:45.899973+00:00'
+title: She Begged for Help. This State’s Probation Gap May Have Put Her in Danger.
+updated_at: '2025-11-12T22:51:27.807510+00:00'
 url_hash: 94a6cfda9d9e306f951be2d1fe9318cb4b0609c8
 ---
 

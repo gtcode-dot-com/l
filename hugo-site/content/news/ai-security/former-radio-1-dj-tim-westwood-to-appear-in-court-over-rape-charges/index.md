@@ -1,5 +1,5 @@
 ---
-actor1: UNITED KINGDOM
+actor2: POLICE
 ai_commentary: []
 ai_commentary_meta:
   content_digest: ''
@@ -9,13 +9,14 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-8.73786407766995'
 category: ai-security
-date: '2025-11-10T05:50:03.347036+00:00'
-event_code: '1821'
-event_root: '18'
-exported_at: '2025-11-10T05:50:08.463994+00:00'
-geo: London, London, City of, United Kingdom
-goldstein_scale: '-9.0'
-num_articles: '48'
+date: '2025-11-12T22:51:24.835967+00:00'
+event_code: '112'
+event_root: '11'
+exported_at: '2025-11-12T22:54:40.021250+00:00'
+geo: Peterborough, Peterborough, United Kingdom
+goldstein_scale: '-2.0'
+language: en
+num_articles: '72'
 source_url: https://www.witneygazette.co.uk/news/national/25608158.former-radio-1-dj-tim-westwood-appear-court-rape-charges
 structured_data:
   about: []
@@ -23,6 +24,7 @@ structured_data:
   description: The alleged offences are said to have taken place between 1983 and
     2016.
   headline: Former Radio 1 DJ Tim Westwood to appear in court over rape charges
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.witneygazette.co.uk/news/national/25608158.former-radio-1-dj-tim-westwood-appear-court-rape-charges
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Former Radio 1 DJ Tim Westwood to appear in court over rape charges
-updated_at: '2025-11-10T05:50:03.347036+00:00'
+updated_at: '2025-11-12T22:51:24.835967+00:00'
 url_hash: be1e064dc1bd41c08b1077f9e3fc82626732bb2b
 ---
 

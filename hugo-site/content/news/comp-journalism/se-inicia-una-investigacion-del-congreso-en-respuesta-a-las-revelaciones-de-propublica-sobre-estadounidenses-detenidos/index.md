@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T23:39:55.704115+00:00'
-exported_at: '2025-11-11T23:39:57.933914+00:00'
+date: '2025-11-12T22:51:27.803773+00:00'
+exported_at: '2025-11-12T22:54:43.028459+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/se-inicia-una-investigacion-del-congreso-en-respuesta-a-las-revelaciones-de-propublica-sobre-estadounidenses-detenidos
 structured_data:
   about: []
@@ -20,6 +21,7 @@ structured_data:
     menos a 170 ciudadanos
   headline: Se inicia una investigación del Congreso en respuesta a las revelaciones
     de ProPublica sobre estadounidenses detenidos
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/se-inicia-una-investigacion-del-congreso-en-respuesta-a-las-revelaciones-de-propublica-sobre-estadounidenses-detenidos
@@ -28,7 +30,7 @@ structured_data:
     name: gtcode.com
 title: Se inicia una investigación del Congreso en respuesta a las revelaciones de
   ProPublica sobre estadounidenses detenidos
-updated_at: '2025-11-11T23:39:55.704115+00:00'
+updated_at: '2025-11-12T22:51:27.803773+00:00'
 url_hash: a92208038315179855d6e17e6ad36319165bfc41
 ---
 

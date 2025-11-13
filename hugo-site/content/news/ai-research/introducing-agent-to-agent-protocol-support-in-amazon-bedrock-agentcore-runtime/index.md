@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-11T23:38:50.871332+00:00'
-exported_at: '2025-11-11T23:38:54.102272+00:00'
+date: '2025-11-12T22:51:26.367582+00:00'
+exported_at: '2025-11-12T22:54:41.514135+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/introducing-agent-to-agent-protocol-support-in-amazon-bedrock-agentcore-runtime
 structured_data:
   about: []
@@ -23,6 +24,7 @@ structured_data:
     coordination.
   headline: Introducing agent-to-agent protocol support in Amazon Bedrock AgentCore
     Runtime
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/introducing-agent-to-agent-protocol-support-in-amazon-bedrock-agentcore-runtime
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Introducing agent-to-agent protocol support in Amazon Bedrock AgentCore Runtime
-updated_at: '2025-11-11T23:38:50.871332+00:00'
+updated_at: '2025-11-12T22:51:26.367582+00:00'
 url_hash: a0f760dc075bb77e912b41f139fb14508b2517ba
 ---
 

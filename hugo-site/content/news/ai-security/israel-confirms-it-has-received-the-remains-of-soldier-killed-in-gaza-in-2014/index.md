@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-3.62537977859286'
 category: ai-security
-date: '2025-11-10T19:04:17.262671+00:00'
+date: '2025-11-12T22:51:24.827566+00:00'
 event_code: '190'
 event_root: '19'
-exported_at: '2025-11-10T19:04:19.872126+00:00'
+exported_at: '2025-11-12T22:54:40.029445+00:00'
 geo: Gaza, Israel (general), Israel
 goldstein_scale: '-10.0'
+language: en
 num_articles: '42'
 source_url: https://www.sthelensstar.co.uk/news/national/25608040.israel-confirms-received-remains-soldier-killed-gaza-2014
 structured_data:
@@ -25,6 +26,7 @@ structured_data:
     in that year’s war between Israel and Hamas.
   headline: Israel confirms it has received the remains of soldier killed in Gaza
     in 2014
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.sthelensstar.co.uk/news/national/25608040.israel-confirms-received-remains-soldier-killed-gaza-2014
@@ -32,7 +34,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Israel confirms it has received the remains of soldier killed in Gaza in 2014
-updated_at: '2025-11-10T19:04:17.262671+00:00'
+updated_at: '2025-11-12T22:51:24.827566+00:00'
 url_hash: b8209f4ef776e7809459bf045a45499b1bc10a87
 ---
 

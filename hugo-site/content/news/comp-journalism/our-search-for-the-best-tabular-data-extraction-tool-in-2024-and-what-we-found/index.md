@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T06:05:01.191124+00:00'
-exported_at: '2025-11-10T06:05:04.433698+00:00'
+date: '2025-11-12T22:51:27.757465+00:00'
+exported_at: '2025-11-12T22:54:43.078080+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/our-search-best-tabular-data-extraction-tool-2024-
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     from DocumentCloud
   headline: Our search for the best tabular-data extraction tool in 2024, and what
     we found
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/our-search-best-tabular-data-extraction-tool-2024-
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Our search for the best tabular-data extraction tool in 2024, and what we found
-updated_at: '2025-11-10T06:05:01.191124+00:00'
+updated_at: '2025-11-12T22:51:27.757465+00:00'
 url_hash: 3f5eb75222e11f07181d5e34d0385ebad9a78028
 ---
 

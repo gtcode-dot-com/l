@@ -1,6 +1,6 @@
 ---
-actor1: NEIGHBORHOOD
-actor2: ENSIGN
+actor1: ENSIGN
+actor2: NEIGHBORHOOD
 ai_commentary: []
 ai_commentary_meta:
   content_digest: ''
@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '0.881057268722471'
 category: ai-security
-date: '2025-11-10T05:50:07.243339+00:00'
-event_code: '043'
+date: '2025-11-12T22:51:24.840807+00:00'
+event_code: '042'
 event_root: '04'
-exported_at: '2025-11-10T05:50:08.455912+00:00'
+exported_at: '2025-11-12T22:54:40.015640+00:00'
 geo: Athens, AttikíR, Greece
-goldstein_scale: '2.8'
+goldstein_scale: '1.9'
+language: el
 num_articles: '10'
 source_url: https://www.newsbomb.gr/ellada/story/917740/thlipsi-efyge-xafnika-gia-ti-geitonia-ton-aggelon-o-simaioforos-tis-zois-konstantinos-kritzas
 structured_data:
@@ -25,6 +26,7 @@ structured_data:
     παιδί που είχε συγκινήσει όλους τους Έλληνες με τη δύναμη της ψυχής του.
   headline: 'Θλίψη: Έφυγε ξαφνικά για τη γειτονιά των αγγέλων ο "σημαιοφόρος της ζωής",
     Κωνσταντίνος Κριτζάς'
+  inLanguage: el
   keywords: []
   main_image: ''
   original_source: https://www.newsbomb.gr/ellada/story/917740/thlipsi-efyge-xafnika-gia-ti-geitonia-ton-aggelon-o-simaioforos-tis-zois-konstantinos-kritzas
@@ -33,7 +35,7 @@ structured_data:
     name: gtcode.com
 title: 'Θλίψη: Έφυγε ξαφνικά για τη γειτονιά των αγγέλων ο "σημαιοφόρος της ζωής",
   Κωνσταντίνος Κριτζάς'
-updated_at: '2025-11-10T05:50:07.243339+00:00'
+updated_at: '2025-11-12T22:51:24.840807+00:00'
 url_hash: 04372f12acc9592065dbb3ff1d0b38ba1cefb111
 ---
 

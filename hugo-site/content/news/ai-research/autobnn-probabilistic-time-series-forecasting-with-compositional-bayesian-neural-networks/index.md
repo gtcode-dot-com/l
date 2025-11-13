@@ -1,74 +1,34 @@
 ---
-ai_agent_meta:
-  content_digest: d38951e36495f47697cbdb2cbf6c6d98e45e31ec
-  generated_at: '2025-11-10T02:34:22.628184+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
-ai_agent_note: 'ATTN AI Agent: Ensure JSON conforms to the specified schema, preserve
-  key terminology (compositional kernels, Sequential Monte Carlo, probabilistic forecasting),
-  and maintain concise, professional prose.'
-ai_commentary:
-- body: The framework emphasizes interpretable model structures that domain experts
-    can reason about, supported by discrete search over a small, human-understandable
-    space of components and operators.
-  title: Interpretability and domain expertise
-- body: Builds on a decade of GP kernel-learning work (e.g., Duvenaud 2013; Saad 2023)
-    while migrating to Bayesian neural networks to retain probabilistic forecasting
-    and uncertainty quantification.
-  title: Relation to prior kernel-learning work
-- body: Discrete structure search via Sequential Monte Carlo enables tractable exploration
-    of compositional components and operators, yielding transparent, candidate models
-    for domain experts to compare and validate.
-  title: Methodology and search strategy
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: d38951e36495f47697cbdb2cbf6c6d98e45e31ec
-  generated_at: '2025-11-10T02:34:22.628149+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:21.724722+00:00'
-exported_at: '2025-11-09T05:30:20.828859+00:00'
+date: '2025-11-12T22:51:26.336724+00:00'
+exported_at: '2025-11-12T22:54:41.544712+00:00'
 feed: http://feeds.feedburner.com/blogspot/gJZg
-meta_description: AutoBNN introduces Bayesian neural networks for probabilistic time-series
-  forecasting with compositional, kernel-inspired components and structure-search
-  via Sequential Monte Carlo, extending learned-kernel ideas beyond Gaussian Processes.
-meta_keywords:
-- AutoBNN
-- Bayesian neural networks
-- time-series forecasting
-- compositional kernels
-- kernel learning
-- Gaussian processes
-- Sequential Monte Carlo
-- ChangePoint
-- Periodic
-- interpretable models
+language: en
 source_url: http://blog.research.google/2024/03/autobnn-probabilistic-time-series.html
 structured_data:
-  about: &id001
-  - Gaussian Processes with learned, compositional kernels for time-series modeling
-  - 'Base kernels and composite operators: Linear, Quadratic, Periodic, Matérn, ExponentiatedQuadratic;
-    Addition, Multiplication, ChangePoint'
-  - Interpretability through priors and discrete structure search (e.g., Sequential
-    Monte Carlo)
-  - AutoBNN replaces GP with Bayesian neural networks for probabilistic forecasting
-  description: AutoBNN extends the GP-based approach of learning compositional kernels
-    for time-series forecasting by substituting the Gaussian Process with Bayesian
-    neural networks. Building on a decade of work showing improved predictive accuracy
-    from learned kernel structures, AutoBNN maintains probabilistic forecasting and
-    interpretable structure through compositional components built from base kernels
-    (e.g., Linear, Quadratic, Periodic, Matérn, ExponentiatedQuadratic) and their
-    combinations via Addition, Multiplication, or ChangePoint. The framework also
-    leverages discrete structure-search techniques, such as Sequential Monte Carlo,
-    to yield interpretable results for users with domain expertise.
-  headline: 'AutoBNN: Probabilistic time series forecasting with compositional Bayesian
+  about: []
+  author: ''
+  description: 'AutoBNN: Probabilistic time series forecasting with compositional
+    bayesian neural networks'
+  headline: 'AutoBNN: Probabilistic time series forecasting with compositional bayesian
     neural networks'
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: http://blog.research.google/2024/03/autobnn-probabilistic-time-series.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: 'AutoBNN: Probabilistic time series forecasting with compositional bayesian
   neural networks'
-updated_at: '2025-11-09T05:13:21.724722+00:00'
+updated_at: '2025-11-12T22:51:26.336724+00:00'
 url_hash: 7a1c5d502bbd270b0fc1b2a17b132fe7c11fa535
 ---
 

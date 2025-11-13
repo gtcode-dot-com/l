@@ -14,12 +14,64 @@
 
   <!-- Articles List -->
   {{ if .Pages }}
+    {{/* Language filter bar for taxonomy pages */}}
+    {{ $langScratch := newScratch }}
+    {{ $langScratch.Set "langsCSV" "" }}
+    {{ range .Pages }}
+      {{ with .Params.language }}
+        {{ $langScratch.Add "langsCSV" (printf "%s," (lower .)) }}
+      {{ end }}
+    {{ end }}
+    {{ $langs := slice }}
+    {{ $langsCSV := $langScratch.Get "langsCSV" | default "" }}
+    {{ if gt (len $langsCSV) 0 }}
+      {{ $trimmed := trim $langsCSV "," }}
+      {{ $langs = uniq (sort (split $trimmed ",")) }}
+    {{ end }}
+    {{ if gt (len $langs) 0 }}
+      <div class="card-meta" style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap; margin-bottom:1rem;">
+        <label for="lang-filter" style="font-weight:700;">Language:</label>
+        <select id="lang-filter" class="lang-select">
+          <option value="all">ALL</option>
+          {{ range $langs }}
+            <option value="{{ . }}">{{ upper . }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <script>
+        (function(){
+          var sel = document.getElementById('lang-filter');
+          var cards = Array.prototype.slice.call(document.querySelectorAll('article.news-list-item'));
+          function apply(code){
+            var c = (code || '').toLowerCase();
+            cards.forEach(function(card){
+              var lang = (card.getAttribute('data-lang') || '').toLowerCase();
+              if (!c || c === 'all'){ card.style.display = ''; return; }
+              card.style.display = (lang === c) ? '' : 'none';
+            });
+          }
+          var init = new URL(window.location.href).searchParams.get('lang') || 'all';
+          sel.value = init;
+          apply(init);
+          sel.addEventListener('change', function(){
+            var code = sel.value;
+            var url = new URL(window.location);
+            if (code === 'all') url.searchParams.delete('lang'); else url.searchParams.set('lang', code);
+            window.history.replaceState({}, '', url);
+            apply(code);
+          });
+        })();
+      </script>
+    {{ end }}
     <div class="news-list news-list-grid">
       {{ range .Pages.ByDate.Reverse }}
-        <article class="card news-list-item">
-          {{ if .Params.category }}
-            <div class="card-meta">
-              <span class="badge badge-category">{{ .Params.category }}</span>
+        <article class="card news-list-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
+          {{ if or .Params.category .Params.language }}
+            <div class="card-meta" style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+              {{ with .Params.category }}
+                <span class="badge badge-category">{{ . }}</span>
+              {{ end }}
+              {{ partial "language-badge.html" . }}
             </div>
           {{ end }}
 

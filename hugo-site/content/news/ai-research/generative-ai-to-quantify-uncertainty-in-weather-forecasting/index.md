@@ -1,44 +1,31 @@
 ---
-ai_commentary:
-- body: Describes Lorenz's foundational work and the butterfly effect, illustrating
-    why tiny differences in starting conditions can lead to divergent forecasts and
-    a limit to deterministic prediction.
-  title: Historical context
-- body: 'Outlines ensemble forecasting: generating multiple forecasts by perturbing
-    initial conditions and incorporating stochastic representations of physical processes
-    to produce probabilistic guidance.'
-  title: Forecasting approach
-- body: Highlights how exploiting chaotic dynamics through ensembles improves risk
-    assessment for extreme weather events and informs decision-making under uncertainty.
-  title: Impact and methods
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 72c30eb7881e1746566faa53bde739bebb43cc39
-  generated_at: '2025-11-10T01:56:18.807915+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:21.724722+00:00'
-exported_at: '2025-11-09T05:30:20.826820+00:00'
+date: '2025-11-12T22:51:26.283271+00:00'
+exported_at: '2025-11-12T22:54:41.547227+00:00'
 feed: http://feeds.feedburner.com/blogspot/gJZg
+language: en
 source_url: http://blog.research.google/2024/03/generative-ai-to-quantify-uncertainty.html
 structured_data:
-  about: &id001
-  - Chaos theory in weather systems
-  - Ed Lorenz and the butterfly effect
-  - Deterministic vs probabilistic forecasting
-  - Ensemble forecasting and initial-condition uncertainty
-  - Stochastic parameterization in weather models
-  - Uncertainty quantification for extreme weather
-  description: This piece recounts Ed Lorenz's 1972 AAAS talk on the butterfly effect,
-    outlines how chaotic dynamics create a deterministic limit for weather prediction,
-    and explains probabilistic, ensemble-based forecasts that quantify uncertainty
-    by perturbing initial conditions and incorporating stochastic physics, with emphasis
-    on extreme weather events.
+  about: []
+  author: ''
+  description: Generative AI to quantify uncertainty in weather forecasting
   headline: Generative AI to quantify uncertainty in weather forecasting
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: http://blog.research.google/2024/03/generative-ai-to-quantify-uncertainty.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Generative AI to quantify uncertainty in weather forecasting
-updated_at: '2025-11-09T05:13:21.724722+00:00'
+updated_at: '2025-11-12T22:51:26.283271+00:00'
 url_hash: 377c4894f4c7aa1661365498d10d969d3340d60b
 ---
 

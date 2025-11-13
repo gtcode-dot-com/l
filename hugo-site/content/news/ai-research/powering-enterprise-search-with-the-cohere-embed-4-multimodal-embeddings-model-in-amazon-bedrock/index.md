@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-11T23:38:51.514508+00:00'
-exported_at: '2025-11-11T23:38:54.099253+00:00'
+date: '2025-11-12T22:51:26.370676+00:00'
+exported_at: '2025-11-12T22:54:41.511077+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/powering-enterprise-search-with-the-cohere-embed-4-multimodal-embeddings-model-in-amazon-bedrock
 structured_data:
   about: []
@@ -22,6 +23,7 @@ structured_data:
     AgentCore to build powerful agentic retrieval-augmented generation (RAG) workflows.
   headline: Powering enterprise search with the Cohere Embed 4 multimodal embeddings
     model in Amazon Bedrock
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/powering-enterprise-search-with-the-cohere-embed-4-multimodal-embeddings-model-in-amazon-bedrock
@@ -30,7 +32,7 @@ structured_data:
     name: gtcode.com
 title: Powering enterprise search with the Cohere Embed 4 multimodal embeddings model
   in Amazon Bedrock
-updated_at: '2025-11-11T23:38:51.514508+00:00'
+updated_at: '2025-11-12T22:51:26.370676+00:00'
 url_hash: d3524c270b300a24cbf61bb326a66ab893ed1bd1
 ---
 

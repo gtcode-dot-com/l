@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '2.96188755559676'
 category: ai-security
-date: '2025-11-10T19:04:18.443123+00:00'
+date: '2025-11-12T22:51:24.830327+00:00'
 event_code: '051'
 event_root: '05'
-exported_at: '2025-11-10T19:04:19.845788+00:00'
+exported_at: '2025-11-12T22:54:40.026235+00:00'
 geo: Byron Bay, New South Wales, Australia
 goldstein_scale: '3.4'
+language: en
 num_articles: '16'
 source_url: https://www.redlandcitybulletin.com.au/story/9107754/blues-fans-to-see-red-when-split-enz-headline-festival
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: The pioneering Kiwi band Split Enz will take centre stage as the iconic
     Byron Bay Bluesfest is resurrected...
   headline: Blues fans to see red when Split Enz headline festival
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.redlandcitybulletin.com.au/story/9107754/blues-fans-to-see-red-when-split-enz-headline-festival
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Blues fans to see red when Split Enz headline festival
-updated_at: '2025-11-10T19:04:18.443123+00:00'
+updated_at: '2025-11-12T22:51:24.830327+00:00'
 url_hash: c930274c269cd3e410f859029a0dc33786c7723a
 ---
 

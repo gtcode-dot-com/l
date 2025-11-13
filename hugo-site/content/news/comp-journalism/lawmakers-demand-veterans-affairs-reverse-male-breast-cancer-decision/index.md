@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T17:06:32.428888+00:00'
-exported_at: '2025-11-10T17:06:34.886268+00:00'
+date: '2025-11-12T22:51:27.813230+00:00'
+exported_at: '2025-11-12T22:54:43.018036+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/trump-veterans-affairs-male-breast-cancer-lawmakers
 structured_data:
   about: []
@@ -20,6 +21,7 @@ structured_data:
     transparent.
   headline: Trump’s VA Made It Harder for Male Veterans to Get Treatment for Breast
     Cancer. Lawmakers Want to Fix That.
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/trump-veterans-affairs-male-breast-cancer-lawmakers
@@ -28,7 +30,7 @@ structured_data:
     name: gtcode.com
 title: Trump’s VA Made It Harder for Male Veterans to Get Treatment for Breast Cancer.
   Lawmakers Want to Fix That.
-updated_at: '2025-11-10T17:06:32.428888+00:00'
+updated_at: '2025-11-12T22:51:27.813230+00:00'
 url_hash: 27df4dbb1a3f43d01ec062198eea53c836be6f44
 ---
 

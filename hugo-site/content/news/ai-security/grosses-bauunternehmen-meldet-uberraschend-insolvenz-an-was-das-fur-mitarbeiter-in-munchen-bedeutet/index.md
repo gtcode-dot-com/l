@@ -9,11 +9,12 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-1.54561880588054'
 category: ai-security
-date: '2025-11-12T06:05:27.793502+00:00'
+date: '2025-11-12T22:51:24.774843+00:00'
 event_code: '010'
 event_root: '01'
-exported_at: '2025-11-12T06:05:31.604174+00:00'
+exported_at: '2025-11-12T22:54:40.085543+00:00'
 geo: Munich, Bayern, Germany
+language: de
 num_articles: '40'
 source_url: http://www.tz.de/muenchen/stadt/bauunternehmen-meldet-ueberraschend-insolvenz-an-was-das-fuer-mitarbeiter-in-muenchen-bedeutet-grosses-94020804.html
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
     an den Standorten und die Projekte – auch in München – bedeutet. '
   headline: Großes Bauunternehmen meldet überraschend Insolvenz an - was das für Mitarbeiter
     in München bedeutet
+  inLanguage: de
   keywords: []
   main_image: ''
   original_source: http://www.tz.de/muenchen/stadt/bauunternehmen-meldet-ueberraschend-insolvenz-an-was-das-fuer-mitarbeiter-in-muenchen-bedeutet-grosses-94020804.html
@@ -31,7 +33,7 @@ structured_data:
     name: gtcode.com
 title: Großes Bauunternehmen meldet überraschend Insolvenz an - was das für Mitarbeiter
   in München bedeutet
-updated_at: '2025-11-12T06:05:27.793502+00:00'
+updated_at: '2025-11-12T22:51:24.774843+00:00'
 url_hash: 94fc1f607372a01dd4c3954babd54adbe0b24fca
 ---
 

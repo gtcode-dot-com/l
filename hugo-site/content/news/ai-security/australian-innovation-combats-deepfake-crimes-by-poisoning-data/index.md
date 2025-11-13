@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-4.84014103610198'
 category: ai-security
-date: '2025-11-10T17:03:35.420414+00:00'
+date: '2025-11-12T22:51:24.863104+00:00'
 event_code: '190'
 event_root: '19'
-exported_at: '2025-11-10T17:03:45.716307+00:00'
+exported_at: '2025-11-12T22:54:39.995817+00:00'
 geo: Melbourne, Victoria, Australia
 goldstein_scale: '-10.0'
+language: en
 num_articles: '59'
 source_url: https://www.dailyliberal.com.au/story/9107944/australian-innovation-combats-deepfake-crimes-by-poisoning-data
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: Monash University and the AFP develop tech tool to fool AI used by
     cybercriminals to create deepfakes and AI-generated child abuse material.
   headline: Australian innovation combats deepfake crimes by poisoning data
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.dailyliberal.com.au/story/9107944/australian-innovation-combats-deepfake-crimes-by-poisoning-data
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Australian innovation combats deepfake crimes by poisoning data
-updated_at: '2025-11-10T17:03:35.420414+00:00'
+updated_at: '2025-11-12T22:51:24.863104+00:00'
 url_hash: edc4e2093435610aa2229d4fad80299d77a291e6
 ---
 

@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T17:06:33.498991+00:00'
-exported_at: '2025-11-10T17:06:34.876750+00:00'
+date: '2025-11-12T22:51:27.819579+00:00'
+exported_at: '2025-11-12T22:54:42.960550+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/portland-protests-national-guard-trump
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     against only three people. On nights when physical conflict did erupt, it often
     came from police firing on, shoving, pepper-spraying and tackling protesters.
   headline: What Really Happened in Portland Before Trump Deployed the National Guard
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/portland-protests-national-guard-trump
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: What Really Happened in Portland Before Trump Deployed the National Guard
-updated_at: '2025-11-10T17:06:33.498991+00:00'
+updated_at: '2025-11-12T22:51:27.819579+00:00'
 url_hash: ed82dfa77df1ea7cbea8d144ee735924cefe2390
 ---
 

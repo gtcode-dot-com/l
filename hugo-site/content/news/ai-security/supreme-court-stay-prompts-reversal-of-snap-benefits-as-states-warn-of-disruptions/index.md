@@ -9,10 +9,11 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-1.8450184501845'
 category: ai-security
-date: '2025-11-10T19:04:11.431736+00:00'
+date: '2025-11-12T22:51:24.819364+00:00'
 event_code: '010'
 event_root: '01'
-exported_at: '2025-11-10T19:04:19.881011+00:00'
+exported_at: '2025-11-12T22:54:40.038236+00:00'
+language: en
 num_articles: '50'
 source_url: https://khqa.com/news/nation-world/supreme-court-stay-prompts-reversal-of-snap-benefits-as-states-warn-of-disruptions-president-donald-trump-justice-ketanji-brown-jackson-usda-us-department-of-agriculture-government-shutdown
 structured_data:
@@ -22,6 +23,7 @@ structured_data:
     benefits distributed last week under judicial orders.
   headline: Supreme Court stay prompts reversal of SNAP benefits as states warn of
     disruptions
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://khqa.com/news/nation-world/supreme-court-stay-prompts-reversal-of-snap-benefits-as-states-warn-of-disruptions-president-donald-trump-justice-ketanji-brown-jackson-usda-us-department-of-agriculture-government-shutdown
@@ -29,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Supreme Court stay prompts reversal of SNAP benefits as states warn of disruptions
-updated_at: '2025-11-10T19:04:11.431736+00:00'
+updated_at: '2025-11-12T22:51:24.819364+00:00'
 url_hash: a0a4528f5c0bb391fd4a191d83b9ad7b6a0b8617
 ---
 

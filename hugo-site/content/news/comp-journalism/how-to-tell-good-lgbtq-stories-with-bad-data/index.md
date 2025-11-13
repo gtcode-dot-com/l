@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T06:05:02.085273+00:00'
-exported_at: '2025-11-10T06:05:04.430967+00:00'
+date: '2025-11-12T22:51:27.760093+00:00'
+exported_at: '2025-11-12T22:54:43.075107+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/how-tell-good-lgbtq-stories-bad-data
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: Concepts and methods to help you do rigorous journalism even when the
     data is tricky, Part 1
   headline: How to tell good LGBTQ+ stories with bad data
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/how-tell-good-lgbtq-stories-bad-data
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: How to tell good LGBTQ+ stories with bad data
-updated_at: '2025-11-10T06:05:02.085273+00:00'
+updated_at: '2025-11-12T22:51:27.760093+00:00'
 url_hash: 7773ef7255a6facd50e588dcd9fcfc863371d7e3
 ---
 

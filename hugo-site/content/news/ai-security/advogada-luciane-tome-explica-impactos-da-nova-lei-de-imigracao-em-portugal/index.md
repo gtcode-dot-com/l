@@ -8,12 +8,13 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-11-11T23:37:53.031873+00:00'
+date: '2025-11-12T22:51:24.799625+00:00'
 event_code: '020'
 event_root: '02'
-exported_at: '2025-11-11T23:37:56.267464+00:00'
+exported_at: '2025-11-12T22:54:40.058899+00:00'
 geo: Portugal
 goldstein_scale: '3.0'
+language: pt
 num_articles: '20'
 source_url: https://www.justicaemfoco.com.br/noticias/150851
 structured_data:
@@ -22,6 +23,7 @@ structured_data:
   description: Advogada Luciane Tomé explica impactos da nova lei de imigração em
     Portugal
   headline: Advogada Luciane Tomé explica impactos da nova lei de imigração em Portugal
+  inLanguage: pt
   keywords: []
   main_image: ''
   original_source: https://www.justicaemfoco.com.br/noticias/150851
@@ -29,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Advogada Luciane Tomé explica impactos da nova lei de imigração em Portugal
-updated_at: '2025-11-11T23:37:53.031873+00:00'
+updated_at: '2025-11-12T22:51:24.799625+00:00'
 url_hash: 75b8e5991ac0befc968e8d4a039789c53689f75b
 ---
 

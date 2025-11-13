@@ -1,63 +1,31 @@
 ---
-ai_agent_meta:
-  content_digest: b6075c6645b428f93c86796b85d57d440a2adc0d
-  generated_at: '2025-11-10T02:33:58.147564+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
-ai_agent_note: 'ATTN AI Agent: Ensure the summary remains neutral and concise; reflect
-  the article details accurately; avoid speculation beyond provided facts.'
-ai_commentary:
-- body: FAIR's AnimatedDrawings project provides open-source tools and a large curated
-    dataset to advance AI animation of non-realistic art.
-  title: Context
-- body: By focusing on amateur, hand-drawn drawings, the dataset broadens AI training
-    beyond real-world images, enabling more expressive, creative animation applications.
-  title: Impact
-- body: The release includes code and documentation, inviting researchers and creators
-    to experiment with animating diverse drawings and contribute improvements.
-  title: Usage and accessibility
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: b6075c6645b428f93c86796b85d57d440a2adc0d
-  generated_at: '2025-11-10T02:33:58.147529+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.989818+00:00'
-exported_at: '2025-11-09T05:30:20.801663+00:00'
+date: '2025-11-12T22:51:26.355182+00:00'
+exported_at: '2025-11-12T22:54:41.526870+00:00'
 feed: https://research.facebook.com/feed
-meta_description: FAIR releases AnimatedDrawings, a large open-source dataset of nearly
-  180,000 annotated amateur drawings plus animation code to help researchers animate
-  non-realistic artwork.
-meta_keywords:
-- AnimatedDrawings
-- FAIR
-- Facebook AI Research
-- AI animation
-- animated drawings dataset
-- hand-drawn sketches
-- amateur drawings
-- open-source
-- animation code
-- ai-research
+language: en
 source_url: https://ai.facebook.com/blog/ai-dataset-animation-drawings
 structured_data:
-  about: &id001
-  - AI-driven animation of amateur drawings
-  - AnimatedDrawings dataset with nearly 180,000 sketches
-  - Open-source animation code release
-  - Support for research and creative applications in AI animation
-  description: Facebook AI Research announces the AnimatedDrawings project, releasing
-    open-source animation code and a large dataset of nearly 180,000 annotated amateur
-    drawings to help researchers and creators animate non-realistic artwork. The dataset
-    addresses the challenge of teaching AI to interpret and bring to life varied,
-    hand-drawn sketches.
-  headline: 'AnimatedDrawings: Facebook AI Research releases a novel dataset of nearly
-    180,000 annotated amateur drawings for AI animation'
-  keywords: *id001
+  about: []
+  author: ''
+  description: A new, unique AI dataset for animating amateur drawings
+  headline: A new, unique AI dataset for animating amateur drawings
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://ai.facebook.com/blog/ai-dataset-animation-drawings
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: A new, unique AI dataset for animating amateur drawings
-updated_at: '2025-11-09T05:13:27.989818+00:00'
+updated_at: '2025-11-12T22:51:26.355182+00:00'
 url_hash: fb31fbd5cf94c36c10de850d883ced2a38eb5d73
 ---
 

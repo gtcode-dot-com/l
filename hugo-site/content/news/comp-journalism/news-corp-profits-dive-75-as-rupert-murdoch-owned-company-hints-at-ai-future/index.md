@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T15:20:01.216389+00:00'
-exported_at: '2025-11-11T15:20:02.488113+00:00'
+date: '2025-11-12T22:51:27.794924+00:00'
+exported_at: '2025-11-12T22:54:43.038195+00:00'
 feed: https://www.theguardian.com/media/data-journalism/rss
+language: en
 source_url: https://www.theguardian.com/media/2023/aug/11/profits-dive-at-news-corp-as-media-group-hints-at-ai-future-plans-rupert-murdoch
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     News Corp Australia, a division that includes flagship newspaper The Australian
   headline: News Corp profits dive 75% as Rupert Murdoch-owned company hints at AI
     future
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.theguardian.com/media/2023/aug/11/profits-dive-at-news-corp-as-media-group-hints-at-ai-future-plans-rupert-murdoch
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: News Corp profits dive 75% as Rupert Murdoch-owned company hints at AI future
-updated_at: '2025-11-11T15:20:01.216389+00:00'
+updated_at: '2025-11-12T22:51:27.794924+00:00'
 url_hash: d6ab69357603d32f92e5beccc0fea5a4b828a916
 ---
 

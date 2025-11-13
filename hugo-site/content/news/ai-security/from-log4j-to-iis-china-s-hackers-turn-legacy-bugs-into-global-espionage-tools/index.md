@@ -1,46 +1,33 @@
 ---
-ai_commentary:
-- body: The report ties the activity to a China-linked actor aiming to influence U.S.
-    policy on international issues, underscoring policy-focused espionage as a core
-    driver.
-  title: Attribution and motive
-- body: Organizations should monitor for legacy vulnerability exposure, credential-stuffing
-    attempts, and connectivity-check behaviors; emphasis on patching, MFA, and credential
-    hygiene remains essential, particularly for groups engaged in policy-related work.
-  title: Defensive implications
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 08c337cf4544d82c1e90167044cc0a77d0054148
-  generated_at: '2025-11-10T02:01:44.474344+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-security
-date: '2025-11-09T05:30:09.774699+00:00'
-exported_at: '2025-11-09T05:31:58.069916+00:00'
+date: '2025-11-12T22:51:24.880393+00:00'
+exported_at: '2025-11-12T22:54:39.976324+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
+language: en
 source_url: https://thehackernews.com/2025/11/from-log4j-to-iis-chinas-hackers-turn.html
 structured_data:
-  about: &id001
-  - China-linked threat actor
-  - cyberattack on a U.S. non-profit organization
-  - long-term persistence
-  - influence on U.S. government policy
-  - use of legacy vulnerabilities (CVE-2021-44228, CVE-2022-26134, CVE-2017-9805,
-    CVE-2017-17562)
-  - Symantec and Carbon Black threat intelligence
-  - April 2025 activity
-  description: A China-linked threat actor is attributed to a cyberattack against
-    a U.S. non-profit aimed at establishing long-term persistence and influencing
-    U.S. policy on international issues. Symantec and Carbon Black (Broadcom) indicate
-    the activity involved broad scanning leveraging legacy vulnerabilities in April
-    2025, with no indication of successful exploitation; initial access is suspected
-    to have resulted from brute-force or credential stuffing, followed by connectivity-testing
-    actions in mid-April.
+  about: []
+  author: ''
+  description: China-linked hackers exploited multiple CVEs in April 2025 to target
+    global entities with advanced persistence.
   headline: From Log4j to IIS, China’s Hackers Turn Legacy Bugs into Global Espionage
     Tools
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://thehackernews.com/2025/11/from-log4j-to-iis-chinas-hackers-turn.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: From Log4j to IIS, China’s Hackers Turn Legacy Bugs into Global Espionage Tools
-updated_at: '2025-11-09T05:30:09.774699+00:00'
+updated_at: '2025-11-12T22:51:24.880393+00:00'
 url_hash: af5e5ae81498edf5c83f0dd1e569ba622bea81cb
 ---
 

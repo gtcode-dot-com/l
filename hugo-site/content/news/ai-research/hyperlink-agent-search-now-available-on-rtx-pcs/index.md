@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-12T18:17:43.005246+00:00'
-exported_at: '2025-11-12T18:17:44.437034+00:00'
+date: '2025-11-12T22:51:26.382739+00:00'
+exported_at: '2025-11-12T22:54:41.498515+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
+language: en
 source_url: https://blogs.nvidia.com/blog/rtx-ai-garage-nexa-hyperlink-local-agent
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     accelerating meeting prep, studying, content creation and research.
   headline: 'Faster Than a Click: Hyperlink Agent Search Now Available on NVIDIA RTX
     PCs'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://blogs.nvidia.com/blog/rtx-ai-garage-nexa-hyperlink-local-agent
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Faster Than a Click: Hyperlink Agent Search Now Available on NVIDIA RTX PCs'
-updated_at: '2025-11-12T18:17:43.005246+00:00'
+updated_at: '2025-11-12T22:51:26.382739+00:00'
 url_hash: 85f071ae2605be377c7fe64e25fbf7f87c4b29f4
 ---
 

@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T19:05:23.853938+00:00'
-exported_at: '2025-11-10T19:05:22.694565+00:00'
+date: '2025-11-12T22:51:27.782455+00:00'
+exported_at: '2025-11-12T22:54:43.051828+00:00'
 feed: https://www.icij.org/feed/
+language: en
 source_url: https://www.icij.org/news/2025/10/arab-states-deepened-military-ties-with-israel-while-denouncing-gaza-war-leak-reveals
 structured_data:
   about: []
@@ -19,6 +20,7 @@ structured_data:
     and underground tunnels.
   headline: Arab states deepened military ties with Israel while denouncing Gaza war,
     leak reveals
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.icij.org/news/2025/10/arab-states-deepened-military-ties-with-israel-while-denouncing-gaza-war-leak-reveals
@@ -27,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: Arab states deepened military ties with Israel while denouncing Gaza war, leak
   reveals
-updated_at: '2025-11-10T19:05:23.853938+00:00'
+updated_at: '2025-11-12T22:51:27.782455+00:00'
 url_hash: e7c431dc4b1b9ac92519e5cda5415c6d450d606c
 ---
 

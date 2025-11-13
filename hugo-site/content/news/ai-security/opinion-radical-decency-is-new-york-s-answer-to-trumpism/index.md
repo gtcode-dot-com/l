@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-1.57852858752541'
 category: ai-security
-date: '2025-11-11T23:37:49.109341+00:00'
+date: '2025-11-12T22:51:24.791386+00:00'
 event_code: '110'
 event_root: '11'
-exported_at: '2025-11-11T23:37:56.276318+00:00'
+exported_at: '2025-11-12T22:54:40.068001+00:00'
 geo: Canberra, Australian Capital Territory, Australia
 goldstein_scale: '-2.0'
+language: en
 num_articles: '40'
 source_url: https://www.redlandcitybulletin.com.au/story/9107262/opinion-radical-decency-is-new-yorks-answer-to-trumpism
 structured_data:
@@ -24,6 +25,7 @@ structured_data:
   description: Zohran Mamdani's 'radical decency' movement challenges Trumpism with
     people-focused policies as he becomes NY's new mayor.
   headline: 'Opinion: Radical decency is New York''s answer to Trumpism'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.redlandcitybulletin.com.au/story/9107262/opinion-radical-decency-is-new-yorks-answer-to-trumpism
@@ -31,7 +33,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Opinion: Radical decency is New York''s answer to Trumpism'
-updated_at: '2025-11-11T23:37:49.109341+00:00'
+updated_at: '2025-11-12T22:51:24.791386+00:00'
 url_hash: 23fbf83ab23dd1203aaf8012ceec50d6c625c7b6
 ---
 

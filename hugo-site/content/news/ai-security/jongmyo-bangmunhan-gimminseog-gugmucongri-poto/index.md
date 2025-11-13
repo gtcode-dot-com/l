@@ -9,12 +9,13 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-11-10T05:50:01.131947+00:00'
+date: '2025-11-12T22:51:24.833445+00:00'
 event_code: 090
 event_root: 09
-exported_at: '2025-11-10T05:50:08.466261+00:00'
+exported_at: '2025-11-12T22:54:40.023816+00:00'
 geo: Seoul, Soul-t'ukpyolsi, South Korea
 goldstein_scale: '-2.0'
+language: ko
 num_articles: '10'
 source_url: https://www.etoday.co.kr/news/view/2523880
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: ▲김민석 국무총리가 10일 서울 종로구 유네스코 세계문화유산인 종묘를 찾아 최근 서울시의 세운상가 재개발 계획에 따른 영향을
     살펴보고 대책을 점
   headline: 종묘 방문한 김민석 국무총리 [포토]
+  inLanguage: ko
   keywords: []
   main_image: ''
   original_source: https://www.etoday.co.kr/news/view/2523880
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 종묘 방문한 김민석 국무총리 [포토]
-updated_at: '2025-11-10T05:50:01.131947+00:00'
+updated_at: '2025-11-12T22:51:24.833445+00:00'
 url_hash: d693fed4536fbed2841cb7fa986d26cf3683f760
 ---
 

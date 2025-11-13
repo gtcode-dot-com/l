@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-12T22:18:10.290588+00:00'
-exported_at: '2025-11-12T22:18:13.723002+00:00'
+date: '2025-11-12T22:51:27.743428+00:00'
+exported_at: '2025-11-12T22:54:43.092537+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/fact-checking-2024-5-tools-help
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: Newsrooms often devote more time to fact-checking during election season—for
     good reason! These tools can make the most of yours
   headline: Fact-checking in 2024? Five tools to help with research and promotion
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/fact-checking-2024-5-tools-help
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Fact-checking in 2024? Five tools to help with research and promotion
-updated_at: '2025-11-12T22:18:10.290588+00:00'
+updated_at: '2025-11-12T22:51:27.743428+00:00'
 url_hash: a83440730749b27698287bf587ae97e1613e1b70
 ---
 

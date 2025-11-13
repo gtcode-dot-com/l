@@ -1,52 +1,38 @@
 ---
 actor1: LOS ANGELES
-ai_commentary:
-- body: Festival gastronómico organizado por la Presidencia Municipal de Chihuahua,
-    dirigido a los amantes del buen comer y beber.
-  title: Contexto
-- body: '120 expositores locales: restaurantes, chefs especializados, productores
-    artesanales y emprendedores; 20 artistas chihuahuenses.'
-  title: Participantes
-- body: Se espera que asistan más de 40,000 personas durante los dos días.
-  title: Afluencia
-- body: Parque El Reliz, Chihuahua, 8 y 9 de noviembre de 2025.
-  title: Ubicación y fechas
-- body: Oferta variada con productos artesanales, catas de vinos y comida regional.
-  title: Oferta del evento
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: a214c376cf308c13375b5bdc3971f7444060a8e0
-  generated_at: '2025-11-10T02:00:19.718139+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 avg_tone: '-0.850054599403631'
 category: ai-security
-date: '2025-11-09T05:30:09.787017+00:00'
+date: '2025-11-12T22:51:24.902094+00:00'
 event_code: '043'
 event_root: '04'
-exported_at: '2025-11-09T05:31:58.053260+00:00'
+exported_at: '2025-11-12T22:54:39.957912+00:00'
 geo: Philippines
 goldstein_scale: '2.8'
+language: es
 num_articles: '160'
 source_url: https://laopcion.com.mx/local/arranca-cuulinaria-festival-del-buen-comer-2025-en-el-reliz-20251108-504263.html
 structured_data:
-  about: &id001
-  - 'Ciudad: Chihuahua'
-  - 'Evento: Cuulinaria 2025'
-  - 'Fechas: 8-9 de noviembre de 2025'
-  - 'Lugar: Parque El Reliz'
-  - 'Participantes: 120 expositores locales; 20 artistas chihuahuenses'
-  description: Chihuahua.- Este sábado 8 y domingo 9 de noviembre se llevará a cabo
-    Cuulinaria 2025, festival gastronómico organizado por la Presidencia Municipal
-    de Chihuahua, dirigido a los amantes del buen comer y beber. El evento reunirá
-    120 expositores locales —restaurantes, chefs, productores artesanales y emprendedores—
-    y contará con la participación de 20 artistas chihuahuenses. Se espera una afluencia
-    de más de 40 mil personas entre ambos días, con una oferta que incluye productos
-    artesanales, catas de vinos y comida regional, en el Parque El Reliz.
-  headline: 'Arranca Cuulinaria: Festival del Buen Comer 2025 en el Parque El Reliz'
-  keywords: *id001
+  about: []
+  author: ''
+  description: Periodico Digital lider en Chihuahua, lee las noticias al momento que
+    estan sucediendo, la unica opcion para estar bien enterado.
+  headline: 'Arranca Cuulinaria: Festival del Buen Comer 2025 en el Reliz'
+  inLanguage: es
+  keywords: []
+  main_image: ''
+  original_source: https://laopcion.com.mx/local/arranca-cuulinaria-festival-del-buen-comer-2025-en-el-reliz-20251108-504263.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: 'Arranca Cuulinaria: Festival del Buen Comer 2025 en el Reliz'
-updated_at: '2025-11-09T05:30:09.787017+00:00'
+updated_at: '2025-11-12T22:51:24.902094+00:00'
 url_hash: b19ea460b919bfc56faccd74ba9730e255f0a9f2
 ---
 

@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-11T15:19:16.173222+00:00'
-exported_at: '2025-11-11T15:19:17.786055+00:00'
+date: '2025-11-12T22:51:26.361771+00:00'
+exported_at: '2025-11-12T22:54:41.520375+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/fine-tune-vlms-for-multipage-document-to-json-with-sagemaker-ai-and-swift
 structured_data:
   about: []
@@ -20,6 +21,7 @@ structured_data:
     multi-modal models to compete effectively with much larger counterparts (98% accuracy
     with Qwen2.5 VL 3B).
   headline: Fine-tune VLMs for multipage document-to-JSON with SageMaker AI and SWIFT
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/fine-tune-vlms-for-multipage-document-to-json-with-sagemaker-ai-and-swift
@@ -27,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Fine-tune VLMs for multipage document-to-JSON with SageMaker AI and SWIFT
-updated_at: '2025-11-11T15:19:16.173222+00:00'
+updated_at: '2025-11-12T22:51:26.361771+00:00'
 url_hash: ca8a2fc0859149bc725be1d682e89028c71035dc
 ---
 

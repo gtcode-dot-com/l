@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-11T15:19:16.448143+00:00'
-exported_at: '2025-11-11T15:19:17.779257+00:00'
+date: '2025-11-12T22:51:26.364395+00:00'
+exported_at: '2025-11-12T22:54:41.517336+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
+language: en
 source_url: https://news.mit.edu/2025/understanding-nuances-human-intelligence-phillip-isola-1111
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     machines “think” and perceive the world, in an effort to ensure AI is safely and
     effectively integrated into human society.
   headline: Understanding the nuances of human-like intelligence
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://news.mit.edu/2025/understanding-nuances-human-intelligence-phillip-isola-1111
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Understanding the nuances of human-like intelligence
-updated_at: '2025-11-11T15:19:16.448143+00:00'
+updated_at: '2025-11-12T22:51:26.364395+00:00'
 url_hash: d9c542b3ddc906fa6bcb71b2c779bfe54a2aa27e
 ---
 

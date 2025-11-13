@@ -1,48 +1,34 @@
 ---
-ai_commentary:
-- body: The disclosure highlights a new class of side-channel risks for streaming
-    LLM services where traffic can be observed by network adversaries, even when communications
-    are encrypted.
-  title: Context
-- body: If exploitable in practice, attackers at ISPs, on local networks, or on shared
-    Wi‑Fi could infer the topics of user prompts, impacting privacy and confidentiality
-    for individuals and organizations.
-  title: Implications
-- body: Potential mitigations include traffic obfuscation and padding to conceal size
-    and timing patterns, network-level defenses, and thorough risk assessments for
-    deployments relying on remote LLM services.
-  title: Mitigations
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 8f92a610ac62ecd458f10b343dc9f965c192bc1d
-  generated_at: '2025-11-10T02:02:20.321235+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-security
-date: '2025-11-09T05:30:09.780216+00:00'
-exported_at: '2025-11-09T05:31:58.064353+00:00'
+date: '2025-11-12T22:51:24.852363+00:00'
+exported_at: '2025-11-12T22:54:40.004892+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
+language: en
 source_url: https://thehackernews.com/2025/11/microsoft-uncovers-whisper-leak-attack.html
 structured_data:
-  about: &id001
-  - Whisper Leak side-channel attack on remote language models
-  - Inference from encrypted TLS traffic via packet size and timing
-  - Privacy risks for user and enterprise communications
-  - 'Researchers: Jonathan Bar Or, Geoff McDonald, and the Microsoft Defender Security
-    Research Team'
-  - Referenced in arXiv preprint 2511.03675
-  description: Microsoft disclosed a novel side-channel attack that enables a passive
-    observer to infer model conversation topics by analyzing encrypted TLS traffic
-    during streaming-language-model interactions. Codenamed Whisper Leak, the attack
-    leverages packet size and timing patterns to classify whether a conversation falls
-    under sensitive categories, raising privacy concerns for users and enterprises
-    in scenarios where traffic is observable.
+  about: []
+  author: ''
+  description: Microsoft’s Whisper Leak shows encrypted AI chats can secretly reveal
+    user topics through subtle traffic patterns.
   headline: Microsoft Uncovers 'Whisper Leak' Attack That Identifies AI Chat Topics
     in Encrypted Traffic
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://thehackernews.com/2025/11/microsoft-uncovers-whisper-leak-attack.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Microsoft Uncovers 'Whisper Leak' Attack That Identifies AI Chat Topics in
   Encrypted Traffic
-updated_at: '2025-11-09T05:30:09.780216+00:00'
+updated_at: '2025-11-12T22:51:24.852363+00:00'
 url_hash: b2937f4ba9d0d7d5d723622a505ba1e55132c2be
 ---
 

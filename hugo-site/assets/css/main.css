@@ -289,6 +289,18 @@ blockquote::before {
   font-family: Georgia, serif;
 }
 
+blockquote::after {
+  content: '"';
+  position: absolute;
+  bottom: var(--space-4);
+  right: var(--space-4);
+  font-size: var(--text-4xl);
+  color: var(--color-primary);
+  opacity: 0.3;
+  font-family: Georgia, serif;
+  transform: rotate(180deg);
+}
+
 /* ============================================
    Layout Components
    ============================================ */
@@ -431,6 +443,7 @@ blockquote::before {
 .nav-dropdown-menu a {
   width: 100%;
   justify-content: flex-start;
+  text-align: left;
   padding: var(--space-2) var(--space-4);
 }
 
@@ -1191,7 +1204,7 @@ body.nav-open .site-nav-overlay {
 @media (max-width: 768px) {
   .spotlight-panel {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
   }
 
   .spotlight-text h3 {
@@ -1413,6 +1426,18 @@ body.nav-open .site-nav-overlay {
 .repo-card-actions .btn-link {
   font-size: var(--text-sm);
   font-weight: 600;
+}
+
+/* Repo resource links (single page) */
+.repo-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.repo-resource-links .btn {
+  flex: 0 1 auto;
 }
 
 @media (max-width: 640px) {
@@ -1917,12 +1942,22 @@ body.nav-open .site-nav-overlay {
 }
 
 .pagination .page-item.disabled .page-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 600;
   color: var(--color-text-lighter);
   background: var(--color-bg-alt);
-  border-color: var(--color-border-light);
   cursor: not-allowed;
   opacity: 0.5;
   box-shadow: none;
+  transition: all var(--transition-base);
 }
 
 .pagination .page-item.disabled .page-link:hover {

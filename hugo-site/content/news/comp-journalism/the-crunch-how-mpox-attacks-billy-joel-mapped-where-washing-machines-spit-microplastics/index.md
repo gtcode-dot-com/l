@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T15:19:59.515109+00:00'
-exported_at: '2025-11-11T15:20:02.506464+00:00'
+date: '2025-11-12T22:51:27.787465+00:00'
+exported_at: '2025-11-12T22:54:43.046337+00:00'
 feed: https://www.theguardian.com/media/data-journalism/rss
+language: en
 source_url: https://www.theguardian.com/news/2024/nov/29/the-crunch-how-mpox-attacks-billy-joel-mapped-where-washing-machines-spit-microplastics
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     a public health emergency
   headline: 'The Crunch: how mpox attacks, Billy Joel mapped, where washing machines
     spit microplastics'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.theguardian.com/news/2024/nov/29/the-crunch-how-mpox-attacks-billy-joel-mapped-where-washing-machines-spit-microplastics
@@ -26,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: 'The Crunch: how mpox attacks, Billy Joel mapped, where washing machines spit
   microplastics'
-updated_at: '2025-11-11T15:19:59.515109+00:00'
+updated_at: '2025-11-12T22:51:27.787465+00:00'
 url_hash: 832e9498aceae9619f478d1d0c6f070977d4a922
 ---
 

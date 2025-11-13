@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-2.94522820954799'
 category: ai-security
-date: '2025-11-12T22:15:53.996616+00:00'
+date: '2025-11-12T22:51:24.752188+00:00'
 event_code: '163'
 event_root: '16'
-exported_at: '2025-11-12T22:15:55.409515+00:00'
+exported_at: '2025-11-12T22:54:40.107605+00:00'
 geo: Washington, District of Columbia, United States
 goldstein_scale: '-8.0'
+language: mk
 num_articles: '90'
 source_url: https://makfax.com.mk/svet/%D1%81%D0%B0%D0%B4-%D0%BF%D0%BE%D0%BD%D1%83%D0%B4%D0%B8%D1%98%D0%B0-10-%D0%BC%D0%B8%D0%BB%D0%B8%D0%BE%D0%BD%D0%B8-%D0%B4%D0%BE%D0%BB%D0%B0%D1%80%D0%B8-%D0%B7%D0%B0-%D0%BD%D0%B5%D0%B3%D0%BE%D0%B2%D0%B0
 structured_data:
@@ -24,6 +25,7 @@ structured_data:
     во Белата куќа во историска прва официјална посета на сириски лидер откога земјата
   headline: 'САД понудија 10 милиони долари за неговата глава: сега тој е почесен
     гостин на Трамп'
+  inLanguage: mk
   keywords: []
   main_image: ''
   original_source: https://makfax.com.mk/svet/%D1%81%D0%B0%D0%B4-%D0%BF%D0%BE%D0%BD%D1%83%D0%B4%D0%B8%D1%98%D0%B0-10-%D0%BC%D0%B8%D0%BB%D0%B8%D0%BE%D0%BD%D0%B8-%D0%B4%D0%BE%D0%BB%D0%B0%D1%80%D0%B8-%D0%B7%D0%B0-%D0%BD%D0%B5%D0%B3%D0%BE%D0%B2%D0%B0
@@ -32,7 +34,7 @@ structured_data:
     name: gtcode.com
 title: 'САД понудија 10 милиони долари за неговата глава: сега тој е почесен гостин
   на Трамп'
-updated_at: '2025-11-12T22:15:53.996616+00:00'
+updated_at: '2025-11-12T22:51:24.752188+00:00'
 url_hash: 6eb53a25af4550bb0d7b9c2d0db162c39870aba4
 ---
 

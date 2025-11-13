@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-12T22:18:11.274820+00:00'
-exported_at: '2025-11-12T22:18:13.720218+00:00'
+date: '2025-11-12T22:51:27.745985+00:00'
+exported_at: '2025-11-12T22:54:43.089698+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/data-journalism-teaching-community
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: Join the Data Journalism Teachers’ Club–a new place for data journalism
     educators to learn together
   headline: By what metric?
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/data-journalism-teaching-community
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: By what metric?
-updated_at: '2025-11-12T22:18:11.274820+00:00'
+updated_at: '2025-11-12T22:51:27.745985+00:00'
 url_hash: eaf7554c09412814803f676e4efd88aaf69e0067
 ---
 

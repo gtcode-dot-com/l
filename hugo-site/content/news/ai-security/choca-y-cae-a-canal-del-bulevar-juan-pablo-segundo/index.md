@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-0.844654623006339'
 category: ai-security
-date: '2025-11-10T06:05:56.556352+00:00'
+date: '2025-11-12T22:51:24.843284+00:00'
 event_code: '042'
 event_root: '04'
-exported_at: '2025-11-10T06:06:08.006123+00:00'
+exported_at: '2025-11-12T22:54:40.012847+00:00'
 geo: Philippines
 goldstein_scale: '1.9'
+language: es
 num_articles: '80'
 source_url: https://laopcion.com.mx/local/choca-y-cae-a-canal-del-bulevar-juan-pablo-segundo-20251109-504319.html
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: Periodico Digital lider en Chihuahua, lee las noticias al momento que
     estan sucediendo, la unica opcion para estar bien enterado.
   headline: Choca y cae a canal del bulevar Juan Pablo Segundo
+  inLanguage: es
   keywords: []
   main_image: ''
   original_source: https://laopcion.com.mx/local/choca-y-cae-a-canal-del-bulevar-juan-pablo-segundo-20251109-504319.html
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Choca y cae a canal del bulevar Juan Pablo Segundo
-updated_at: '2025-11-10T06:05:56.556352+00:00'
+updated_at: '2025-11-12T22:51:24.843284+00:00'
 url_hash: e1c7aa9ecb711a8421b96a59198ac31433adb7cb
 ---
 

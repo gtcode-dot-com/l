@@ -46,7 +46,9 @@
                 <span class="repo-card-version">v{{ . }}</span>
               {{ end }}
             </div>
-            <h2 class="repo-card-title">{{ .name }}</h2>
+            <h2 class="repo-card-title">
+              <a href="/repos/{{ .slug }}/">{{ .name }}</a>
+            </h2>
             <p class="repo-card-summary">{{ .summary }}</p>
 
             {{ if .highlights }}
@@ -66,8 +68,9 @@
             {{ end }}
 
             <div class="repo-card-actions">
+              <a class="btn btn-primary" href="/repos/{{ .slug }}/">View Details</a>
               {{ with .hex_url }}
-                <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Hex.pm</a>
+                <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">Hex.pm</a>
               {{ end }}
               {{ with .docs_url }}
                 <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">Docs</a>

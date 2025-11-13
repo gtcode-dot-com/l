@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 {{- $siteLang := .Site.LanguageCode | default "en" -}}
-{{- $pageLang := .Lang | default $siteLang -}}
+{{- $contentLang := .Params.language | default "" -}}
+{{- $langFromHugo := .Lang | default "" -}}
+{{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
 <html lang="{{ $pageLang }}">
   <head>
     <meta charset="utf-8" />
@@ -74,6 +76,7 @@
     {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
     {{ with $articleMeta.og_image }}{{ $ogImage = . }}{{ end }}
     <meta property="og:title" content="{{ .Title }} · {{ .Site.Title }}" />
+    <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ $pageDescription }}" />
     <meta property="og:type" content="{{ $ogType }}" />
     <meta property="og:url" content="{{ $canonical }}" />

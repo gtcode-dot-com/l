@@ -1,45 +1,38 @@
 ---
-ai_commentary:
-- body: The piece outlines risks including misinformation via AI, deepfakes, enhanced
-    warfare capabilities, labor issues for data workers, and substantial energy demands,
-    arguing for a more hopeful, proactive framing of AI's role.
-  title: Key concerns highlighted
-- body: Advocates reframing AI development around ethical use, transparency, inclusive
-    governance, and sustainability, alongside sustained, diverse investment in science
-    to balance AI priorities.
-  title: Toward a positive vision
-- body: Recommend responsible science funding, fair compensation for data workers,
-    energy-efficient AI models, and regulatory measures that curb abuse while preserving
-    innovation and public trust.
-  title: Policy and practice suggestions
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 0a1e1e3926f7f6c783faeb7ecddd3401baba05ba
-  generated_at: '2025-11-10T02:03:15.211941+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-security
-date: '2025-11-09T05:30:09.760586+00:00'
-exported_at: '2025-11-09T05:31:58.083683+00:00'
+date: '2025-11-12T22:51:24.855698+00:00'
+exported_at: '2025-11-12T22:54:40.001922+00:00'
 feed: https://www.schneier.com/feed/atom/
+language: en
 source_url: https://www.schneier.com/blog/archives/2025/11/scientists-need-a-positive-vision-for-ai.html
 structured_data:
-  about: &id001
-  - Artificial intelligence
-  - AI misinformation and deepfakes
-  - AI in warfare and societal effects
-  - Energy consumption of AI systems
-  - Labor practices in AI data labeling
-  - Public investment in science and AI policy
-  - Big Tech and control of the AI ecosystem
-  description: An analysis urging the research community to maintain optimism about
-    AI while acknowledging risks such as misinformation, deepfakes, labor practices,
-    energy use, and policy shifts, and advocating for a constructive, future-focused
-    framework for AI development.
+  about: []
+  author: ''
+  description: For many in the research community, it’s gotten harder to be optimistic
+    about the impacts of artificial intelligence. As authoritarianism is rising around
+    the world, AI-generated “slop” is overwhelming legitimate media, while AI-generated
+    deepfakes are spreading misinformation and parroting extremist messages. AI is
+    making warfare more precise and deadly amidst intransigent conflicts. AI companies
+    are exploiting people in the global South who work as data labelers, and profiting
+    from content creators worldwide by using their work without license or compensation.
+    The industry is also affecting an already-roiling climate with its ...
   headline: Scientists Need a Positive Vision for AI
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://www.schneier.com/blog/archives/2025/11/scientists-need-a-positive-vision-for-ai.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Scientists Need a Positive Vision for AI
-updated_at: '2025-11-09T05:30:09.760586+00:00'
+updated_at: '2025-11-12T22:51:24.855698+00:00'
 url_hash: e6716afdd224d4e34ece8978e96094802c01f073
 ---
 

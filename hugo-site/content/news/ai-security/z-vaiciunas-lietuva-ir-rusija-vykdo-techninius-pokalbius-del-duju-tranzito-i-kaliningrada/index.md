@@ -10,11 +10,12 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '0.30604491472955'
 category: ai-security
-date: '2025-11-11T23:37:54.045972+00:00'
+date: '2025-11-12T22:51:24.802192+00:00'
 event_code: '010'
 event_root: '01'
-exported_at: '2025-11-11T23:37:56.262641+00:00'
+exported_at: '2025-11-12T22:54:40.056340+00:00'
 geo: Lithuania
+language: lt
 num_articles: '40'
 source_url: https://www.lrytas.lt/verslas/rinkos-pulsas/2025/11/10/news/z-vaiciunas-lietuva-ir-rusija-vykdo-techninius-pokalbius-del-duju-tranzito-i-kaliningrada-40216645
 structured_data:
@@ -26,6 +27,7 @@ structured_data:
     ir iki metų pabaigos jie turi būti suderinti“, – Eltai sakė energetikos ministras.
   headline: 'Ž. Vaičiūnas: Lietuva ir Rusija vykdo techninius pokalbius dėl dujų tranzito
     į Kaliningradą'
+  inLanguage: lt
   keywords: []
   main_image: ''
   original_source: https://www.lrytas.lt/verslas/rinkos-pulsas/2025/11/10/news/z-vaiciunas-lietuva-ir-rusija-vykdo-techninius-pokalbius-del-duju-tranzito-i-kaliningrada-40216645
@@ -34,7 +36,7 @@ structured_data:
     name: gtcode.com
 title: 'Ž. Vaičiūnas: Lietuva ir Rusija vykdo techninius pokalbius dėl dujų tranzito
   į Kaliningradą'
-updated_at: '2025-11-11T23:37:54.045972+00:00'
+updated_at: '2025-11-12T22:51:24.802192+00:00'
 url_hash: 0a9797466f5c8fc8c6c06ef7d512cf108c5b4808
 ---
 

@@ -1,45 +1,40 @@
 ---
-ai_commentary:
-- body: AgentCore Gateway now supports existing MCP servers as a new target type,
-    allowing multiple MCP servers to be grouped behind a single gateway interface.
-  title: Overview
-- body: Reduces operational overhead by eliminating multiple gateways, simplifies
-    access control, and enables teams to share and reuse MCP-enabled tooling across
-    the organization.
-  title: Benefits
-- body: Plan for security, latency, and version compatibility when routing through
-    a centralized gateway; align governance and consent for tool usage.
-  title: Considerations
-- body: Identify MCP servers to onboard, define gateway topology, and implement phased
-    rollout with monitoring and audit trails.
-  title: Next steps
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: d098531127b9ce5c96100a84aef87518c1b7d0c9
-  generated_at: '2025-11-10T01:58:25.942407+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.970539+00:00'
-exported_at: '2025-11-09T05:30:20.820649+00:00'
+date: '2025-11-12T22:51:26.413726+00:00'
+exported_at: '2025-11-12T22:54:41.488679+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/transform-your-mcp-architecture-unite-mcp-servers-through-agentcore-gateway
 structured_data:
-  about: &id001
-  - Model Context Protocol (MCP) servers tailored to specific agent use cases and
-    domains
-  - Integration of existing MCP servers into a unified gateway
-  - AgentCore Gateway as a centralized MCP tool server
-  - Unified interface for discovery, access, and invocation of tools
-  - Centralized authentication and tool management across the organization
-  description: As AI agents scale, organizations can consolidate dozens to hundreds
-    of MCP servers—custom-built, publicly available, or open source—behind a single
-    AgentCore Gateway, enabling discovery, access, and invocation of tools with centralized
-    authentication and reduced operational complexity.
-  headline: Unite MCP servers with AgentCore Gateway for a centralized interface
-  keywords: *id001
+  about: []
+  author: ''
+  description: Earlier this year, we introduced Amazon Bedrock AgentCore Gateway,
+    a fully managed service that serves as a centralized MCP tool server, providing
+    a unified interface where agents can discover, access, and invoke tools. Today,
+    we're extending support for existing MCP servers as a new target type in AgentCore
+    Gateway. With this capability, you can group multiple task-specific MCP servers
+    aligned to agent goals behind a single, manageable MCP gateway interface. This
+    reduces the operational complexity of maintaining separate gateways, while providing
+    the same centralized tool and authentication management that existed for REST
+    APIs and AWS Lambda functions.
+  headline: 'Transform your MCP architecture: Unite MCP servers through AgentCore
+    Gateway'
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://aws.amazon.com/blogs/machine-learning/transform-your-mcp-architecture-unite-mcp-servers-through-agentcore-gateway
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: 'Transform your MCP architecture: Unite MCP servers through AgentCore Gateway'
-updated_at: '2025-11-09T05:13:27.970539+00:00'
+updated_at: '2025-11-12T22:51:26.413726+00:00'
 url_hash: d48dde6ab723392ed86c8f786ef0a9691593bb65
 ---
 

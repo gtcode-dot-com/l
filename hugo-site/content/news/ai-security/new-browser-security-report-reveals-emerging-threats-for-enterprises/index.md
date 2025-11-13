@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-11-12T06:05:29.970693+00:00'
-exported_at: '2025-11-12T06:05:31.596019+00:00'
+date: '2025-11-12T22:51:24.783051+00:00'
+exported_at: '2025-11-12T22:54:40.076412+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
+language: en
 source_url: https://thehackernews.com/2025/11/new-browser-security-report-reveals.html
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: New 2025 report reveals browsers now drive 32% of corporate data leaks
     through GenAI and extensions.
   headline: New Browser Security Report Reveals Emerging Threats for Enterprises
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://thehackernews.com/2025/11/new-browser-security-report-reveals.html
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: New Browser Security Report Reveals Emerging Threats for Enterprises
-updated_at: '2025-11-12T06:05:29.970693+00:00'
+updated_at: '2025-11-12T22:51:24.783051+00:00'
 url_hash: 84bd8b21bbca061c38670fad3d949ab518301000
 ---
 

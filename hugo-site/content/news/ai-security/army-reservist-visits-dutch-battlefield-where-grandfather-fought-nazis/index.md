@@ -1,35 +1,39 @@
 ---
 actor1: ARMY
 actor2: DUTCH
-ai_commentary:
-- body: Army reservist visits Dutch battlefield where grandfather fought Nazis highlights
-    emerging signals in ai-security.
-  title: Why it matters
-- body: Track follow-up reporting and official advisories for concrete impact.
-  title: What to watch
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: dd7e3f050bb255a8270de748cd3f6be071f87dfb
-  generated_at: '2025-11-10T01:46:50.126535+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: mock
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 avg_tone: '-1.62224797219003'
 category: ai-security
-date: '2025-11-09T05:30:09.784868+00:00'
+date: '2025-11-12T22:51:24.899949+00:00'
 event_code: '190'
 event_root: '19'
-exported_at: '2025-11-09T05:31:58.059188+00:00'
+exported_at: '2025-11-12T22:54:39.962506+00:00'
 geo: Glasgow, Glasgow City, United Kingdom
 goldstein_scale: '-10.0'
+language: en
 num_articles: '86'
 source_url: https://www.leaderlive.co.uk/news/national/25607452.army-reservist-visits-dutch-battlefield-grandfather-fought-nazis
 structured_data:
-  description: Colour Sergeant James Gould, 51, who serves with 6th Battalion, The
-    Royal Regiment of Scotland (6 SCOTS), retraced the footsteps of his grandfather,
-    Private Thomas Polson.
+  about: []
+  author: ''
+  description: Colour Sergeant James Gould retraced his grandfather’s footsteps in
+    the Netherlands on the 81st anniversary of Operation Infatuate.
   headline: Army reservist visits Dutch battlefield where grandfather fought Nazis
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://www.leaderlive.co.uk/news/national/25607452.army-reservist-visits-dutch-battlefield-grandfather-fought-nazis
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Army reservist visits Dutch battlefield where grandfather fought Nazis
-updated_at: '2025-11-09T05:30:09.784868+00:00'
+updated_at: '2025-11-12T22:51:24.899949+00:00'
 url_hash: 2739408f67b5d0078aef25f6f191acc3ece99e6b
 ---
 

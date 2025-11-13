@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '3.88127853881278'
 category: ai-security
-date: '2025-11-10T17:03:38.931632+00:00'
+date: '2025-11-12T22:51:24.868113+00:00'
 event_code: '026'
 event_root: '02'
-exported_at: '2025-11-10T17:03:45.711102+00:00'
+exported_at: '2025-11-12T22:54:39.990234+00:00'
 geo: Washington, District of Columbia, United States
 goldstein_scale: '4.0'
+language: en
 num_articles: '40'
 source_url: https://khqa.com/news/nation-world/senators-work-towards-bipartisan-deal-to-potentially-end-government-shutdown-this-week
 structured_data:
@@ -24,6 +25,7 @@ structured_data:
     shutdown on Sunday.
   headline: Senators work towards bipartisan deal to potentially end government shutdown
     this week
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://khqa.com/news/nation-world/senators-work-towards-bipartisan-deal-to-potentially-end-government-shutdown-this-week
@@ -32,7 +34,7 @@ structured_data:
     name: gtcode.com
 title: Senators work towards bipartisan deal to potentially end government shutdown
   this week
-updated_at: '2025-11-10T17:03:38.931632+00:00'
+updated_at: '2025-11-12T22:51:24.868113+00:00'
 url_hash: d29f00350f44a7acd6d8a941df80ba8e6284003d
 ---
 

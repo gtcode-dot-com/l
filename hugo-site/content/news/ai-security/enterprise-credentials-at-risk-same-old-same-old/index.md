@@ -1,43 +1,32 @@
 ---
-ai_commentary:
-- body: In environments with many stand-alone apps, employees often reuse passwords
-    or create simple variations, enabling attackers to reuse stolen credentials across
-    services after phishing or breaches.
-  title: Credential hygiene and reuse drive risk
-- body: Stolen credentials enter underground databases and are sold or tested against
-    multiple apps to maximize access across an organization.
-  title: Credential lifecycle and monetization
-- body: Adopt strong authentication (MFA, SSO), centralized credential management,
-    phishing awareness training, credential leakage monitoring, and least-privilege
-    access to reduce exposure and limit attacker impact.
-  title: Mitigation priorities
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: c05094be167ffa01acf69e02b48140e7ebc32582
-  generated_at: '2025-11-10T02:00:59.830743+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-security
-date: '2025-11-09T05:30:09.769682+00:00'
-exported_at: '2025-11-09T05:31:58.075257+00:00'
+date: '2025-11-12T22:51:24.893089+00:00'
+exported_at: '2025-11-12T22:54:39.970480+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
+language: en
 source_url: https://thehackernews.com/2025/11/enterprise-credentials-at-risk-same-old.html
 structured_data:
-  about: &id001
-  - Data Protection
-  - Cloud Security
-  - Credential Compromise
-  - Phishing Attacks
-  - Credential Reuse
-  - Cybercrime Monetization
-  description: A routine phishing email leads to credential theft, with attackers
-    monetizing stolen logins on the dark web. The piece outlines a four-stage lifecycle—credential
-    creation, compromise, monetization, and distribution—highlighting ongoing risks
-    from weak credential hygiene across multiple apps.
-  headline: Enterprise Credentials at Risk — Same Old, Same Old?
-  keywords: *id001
+  about: []
+  author: ''
+  description: Stolen credentials sold for $15 each fuel ransomware, data theft, and
+    massive business losses.
+  headline: Enterprise Credentials at Risk – Same Old, Same Old?
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://thehackernews.com/2025/11/enterprise-credentials-at-risk-same-old.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Enterprise Credentials at Risk – Same Old, Same Old?
-updated_at: '2025-11-09T05:30:09.769682+00:00'
+updated_at: '2025-11-12T22:51:24.893089+00:00'
 url_hash: 3e16bc219981dd5cf686f85163904a4b3d9e897e
 ---
 

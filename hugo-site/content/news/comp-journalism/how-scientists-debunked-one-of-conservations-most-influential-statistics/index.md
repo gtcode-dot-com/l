@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T15:19:59.893365+00:00'
-exported_at: '2025-11-11T15:20:02.503608+00:00'
+date: '2025-11-12T22:51:27.790067+00:00'
+exported_at: '2025-11-12T22:54:43.043693+00:00'
 feed: https://www.theguardian.com/media/data-journalism/rss
+language: en
 source_url: https://www.theguardian.com/environment/2024/sep/13/indigenous-factoid-nature-80-percent-false-biodiversity-aoe
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     the world, but scientists say bad data can undermine the very causes it claims
     to support
   headline: How scientists debunked one of conservation’s most influential statistics
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.theguardian.com/environment/2024/sep/13/indigenous-factoid-nature-80-percent-false-biodiversity-aoe
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: How scientists debunked one of conservation’s most influential statistics
-updated_at: '2025-11-11T15:19:59.893365+00:00'
+updated_at: '2025-11-12T22:51:27.790067+00:00'
 url_hash: 423ebf7409147c15d21e3503de96cf4282c1b205
 ---
 

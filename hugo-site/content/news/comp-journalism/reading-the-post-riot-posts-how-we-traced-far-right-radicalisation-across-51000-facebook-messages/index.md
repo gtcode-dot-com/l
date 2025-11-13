@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T15:19:59.097329+00:00'
-exported_at: '2025-11-11T15:20:02.509062+00:00'
+date: '2025-11-12T22:51:27.785022+00:00'
+exported_at: '2025-11-12T22:54:43.048897+00:00'
 feed: https://www.theguardian.com/media/data-journalism/rss
+language: en
 source_url: https://www.theguardian.com/world/2025/sep/28/reading-the-post-riot-posts-how-we-traced-far-right-radicalisation-across-51000-facebook-messages
 structured_data:
   about: []
@@ -19,6 +20,7 @@ structured_data:
     disillusionment
   headline: 'Reading the post-riot posts: how we traced far-right radicalisation across
     51,000 Facebook messages'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.theguardian.com/world/2025/sep/28/reading-the-post-riot-posts-how-we-traced-far-right-radicalisation-across-51000-facebook-messages
@@ -27,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: 'Reading the post-riot posts: how we traced far-right radicalisation across
   51,000 Facebook messages'
-updated_at: '2025-11-11T15:19:59.097329+00:00'
+updated_at: '2025-11-12T22:51:27.785022+00:00'
 url_hash: 3c6dd38c6436ff1dc19df2369d9071325614e846
 ---
 

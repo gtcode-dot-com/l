@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-12T22:18:12.433186+00:00'
-exported_at: '2025-11-12T22:18:13.711393+00:00'
+date: '2025-11-12T22:51:27.748577+00:00'
+exported_at: '2025-11-12T22:54:43.086873+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/what-should-journalists-do-about-social-media
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     them, and what we can do to take power back from platforms
   headline: Much of what made social media feel special to journalists is gone. What
     now?
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/what-should-journalists-do-about-social-media
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Much of what made social media feel special to journalists is gone. What now?
-updated_at: '2025-11-12T22:18:12.433186+00:00'
+updated_at: '2025-11-12T22:51:27.748577+00:00'
 url_hash: 296eba4a23017c37dbd90c97f6494cd42acd4dc4
 ---
 

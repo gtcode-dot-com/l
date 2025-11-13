@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T06:05:03.088997+00:00'
-exported_at: '2025-11-10T06:05:04.425067+00:00'
+date: '2025-11-12T22:51:27.763068+00:00'
+exported_at: '2025-11-12T22:54:43.072184+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/7-tips-data-driven-journalism-lgbtq-communities
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: Concepts and methods to help you do rigorous journalism even when the
     data is tricky, Part 2
   headline: 7 tips for data-driven journalism about LGBTQ+ communities
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/7-tips-data-driven-journalism-lgbtq-communities
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 7 tips for data-driven journalism about LGBTQ+ communities
-updated_at: '2025-11-10T06:05:03.088997+00:00'
+updated_at: '2025-11-12T22:51:27.763068+00:00'
 url_hash: f9b089468a1ae48e45557a787de0db805282bc69
 ---
 

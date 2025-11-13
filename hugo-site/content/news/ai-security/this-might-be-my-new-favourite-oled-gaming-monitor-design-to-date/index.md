@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '2.11315610088617'
 category: ai-security
-date: '2025-11-12T22:15:27.537699+00:00'
+date: '2025-11-12T22:51:24.746396+00:00'
 event_code: 090
 event_root: 09
-exported_at: '2025-11-12T22:15:55.479236+00:00'
+exported_at: '2025-11-12T22:54:40.114200+00:00'
 geo: United Kingdom
 goldstein_scale: '-2.0'
+language: en
 num_articles: '10'
 source_url: https://www.t3.com/tech/monitors/sony-inzone-m10s-review
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: Best get saving for Sony's Inzone M10S OLED gaming monitor, 'cos it's
     a stunner
   headline: This might be my new favourite OLED gaming monitor design to date
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.t3.com/tech/monitors/sony-inzone-m10s-review
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: This might be my new favourite OLED gaming monitor design to date
-updated_at: '2025-11-12T22:15:27.537699+00:00'
+updated_at: '2025-11-12T22:51:24.746396+00:00'
 url_hash: 2972f91bc8174ffcf6c49d33639632617ffae667
 ---
 

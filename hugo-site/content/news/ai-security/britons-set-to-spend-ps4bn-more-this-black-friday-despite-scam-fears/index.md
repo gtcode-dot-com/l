@@ -1,5 +1,5 @@
 ---
-actor1: CITIZEN
+actor1: AMERICAN
 ai_commentary: []
 ai_commentary_meta:
   content_digest: ''
@@ -7,15 +7,16 @@ ai_commentary_meta:
   model: ''
   prompt_version: ''
   provider: ''
-avg_tone: '-1.26582278481013'
+avg_tone: '-1.24087226999784'
 category: ai-security
-date: '2025-11-10T06:06:01.060358+00:00'
+date: '2025-11-12T22:51:24.848274+00:00'
 event_code: '020'
 event_root: '02'
-exported_at: '2025-11-10T06:06:08.001810+00:00'
+exported_at: '2025-11-12T22:54:40.007525+00:00'
 geo: United Kingdom
 goldstein_scale: '3.0'
-num_articles: '42'
+language: en
+num_articles: '70'
 source_url: https://www.halsteadgazette.co.uk/news/national/25608144.britons-set-spend-4bn-black-friday-despite-scam-fears
 structured_data:
   about: []
@@ -23,6 +24,7 @@ structured_data:
   description: Spending is set to reach almost £14 billion over the sales event, e-commerce
     marketing platform Omnisend has predicted.
   headline: Britons set to spend £4bn more this Black Friday despite scam fears
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.halsteadgazette.co.uk/news/national/25608144.britons-set-spend-4bn-black-friday-despite-scam-fears
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Britons set to spend £4bn more this Black Friday despite scam fears
-updated_at: '2025-11-10T06:06:01.060358+00:00'
+updated_at: '2025-11-12T22:51:24.848274+00:00'
 url_hash: 743e9a9725348a7891cca1b72067d512dcc01739
 ---
 

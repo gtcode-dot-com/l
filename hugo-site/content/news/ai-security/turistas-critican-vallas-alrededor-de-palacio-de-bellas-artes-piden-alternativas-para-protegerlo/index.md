@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '3.36842105263158'
 category: ai-security
-date: '2025-11-10T06:06:06.753565+00:00'
+date: '2025-11-12T22:51:24.875417+00:00'
 event_code: '110'
 event_root: '11'
-exported_at: '2025-11-10T06:06:07.993014+00:00'
+exported_at: '2025-11-12T22:54:39.981809+00:00'
 geo: Ciudad De Mexico, Distrito Federal, Mexico
 goldstein_scale: '-2.0'
+language: es
 num_articles: '10'
 source_url: https://www.eluniversal.com.mx/metropoli/turistas-critican-vallas-alrededor-de-palacio-de-bellas-artes-piden-alternativas-para-su-proteccion
 structured_data:
@@ -24,6 +25,7 @@ structured_data:
     azules y con pintas, de unos dos metros de altura
   headline: Turistas critican vallas alrededor de Palacio de Bellas Artes; piden alternativas
     para protegerlo
+  inLanguage: es
   keywords: []
   main_image: ''
   original_source: https://www.eluniversal.com.mx/metropoli/turistas-critican-vallas-alrededor-de-palacio-de-bellas-artes-piden-alternativas-para-su-proteccion
@@ -32,7 +34,7 @@ structured_data:
     name: gtcode.com
 title: Turistas critican vallas alrededor de Palacio de Bellas Artes; piden alternativas
   para protegerlo
-updated_at: '2025-11-10T06:06:06.753565+00:00'
+updated_at: '2025-11-12T22:51:24.875417+00:00'
 url_hash: 8b3a131ff143e25b8557b52bc1c66f9b41f666e0
 ---
 

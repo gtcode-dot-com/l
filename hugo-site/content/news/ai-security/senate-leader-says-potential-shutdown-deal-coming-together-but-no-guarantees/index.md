@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-0.89186176142698'
 category: ai-security
-date: '2025-11-10T06:06:04.091039+00:00'
+date: '2025-11-12T22:51:24.873005+00:00'
 event_code: '130'
 event_root: '13'
-exported_at: '2025-11-10T06:06:07.999423+00:00'
+exported_at: '2025-11-12T22:54:39.984642+00:00'
 geo: Ohio, United States
 goldstein_scale: '-4.4'
+language: en
 num_articles: '60'
 source_url: https://www.thetelegraphandargus.co.uk/news/national/25608087.senate-leader-says-potential-shutdown-deal-coming-together-no-guarantees
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: There have been few signs of progress over the weekend to end the impasse
     which began on October 1.
   headline: Senate leader says potential shutdown deal coming together but no guarantees
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.thetelegraphandargus.co.uk/news/national/25608087.senate-leader-says-potential-shutdown-deal-coming-together-no-guarantees
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Senate leader says potential shutdown deal coming together but no guarantees
-updated_at: '2025-11-10T06:06:04.091039+00:00'
+updated_at: '2025-11-12T22:51:24.873005+00:00'
 url_hash: 6d0905637fa1e96862305c4f0c66d29be76cf23a
 ---
 

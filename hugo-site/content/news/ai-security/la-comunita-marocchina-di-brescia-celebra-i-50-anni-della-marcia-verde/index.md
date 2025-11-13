@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '20.8860759493671'
 category: ai-security
-date: '2025-11-10T05:50:04.772991+00:00'
+date: '2025-11-12T22:51:24.838404+00:00'
 event_code: '051'
 event_root: '05'
-exported_at: '2025-11-10T05:50:08.461626+00:00'
+exported_at: '2025-11-12T22:54:40.018511+00:00'
 geo: Morocco
 goldstein_scale: '3.4'
+language: it
 num_articles: '10'
 source_url: https://www.giornaledibrescia.it/politica/comunita-marocchina-brescia-celebra-50-anni-marcia-verde-t1w29ioy
 structured_data:
@@ -25,6 +26,7 @@ structured_data:
     Un’occasione per celebrare anche i 200 anni di relazioni diplomatiche tra i due
     Paesi
   headline: La comunità marocchina di Brescia celebra i 50 anni della Marcia Verde
+  inLanguage: it
   keywords: []
   main_image: ''
   original_source: https://www.giornaledibrescia.it/politica/comunita-marocchina-brescia-celebra-50-anni-marcia-verde-t1w29ioy
@@ -32,7 +34,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: La comunità marocchina di Brescia celebra i 50 anni della Marcia Verde
-updated_at: '2025-11-10T05:50:04.772991+00:00'
+updated_at: '2025-11-12T22:51:24.838404+00:00'
 url_hash: eb793f6f63c1c7068857e95dfa34f5143697e73f
 ---
 

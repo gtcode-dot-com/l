@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-2.42571058258632'
 category: ai-security
-date: '2025-11-11T15:18:03.606733+00:00'
+date: '2025-11-12T22:51:24.810521+00:00'
 event_code: '071'
 event_root: '07'
-exported_at: '2025-11-11T15:18:08.034986+00:00'
+exported_at: '2025-11-12T22:54:40.047465+00:00'
 geo: Massachusetts, United States
 goldstein_scale: '7.4'
+language: en
 num_articles: '42'
 source_url: https://www.wndu.com/2025/11/09/trump-administration-demands-states-undo-full-snap-payouts-states-warn-catastrophic-impact
 structured_data:
@@ -25,6 +26,7 @@ structured_data:
     full SNAP benefits issued under recent court orders.
   headline: Trump administration demands states ‘undo’ full SNAP payouts as states
     warn of ‘catastrophic impact’
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.wndu.com/2025/11/09/trump-administration-demands-states-undo-full-snap-payouts-states-warn-catastrophic-impact
@@ -33,7 +35,7 @@ structured_data:
     name: gtcode.com
 title: Trump administration demands states ‘undo’ full SNAP payouts as states warn
   of ‘catastrophic impact’
-updated_at: '2025-11-11T15:18:03.606733+00:00'
+updated_at: '2025-11-12T22:51:24.810521+00:00'
 url_hash: 4c8cf744ed5c30f3a81e129345184a5e8f14344f
 ---
 

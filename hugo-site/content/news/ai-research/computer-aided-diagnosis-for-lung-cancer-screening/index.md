@@ -1,72 +1,31 @@
 ---
-ai_agent_meta:
-  content_digest: 207232135c58c9d89e5862674a5399e9f56c40f4
-  generated_at: '2025-11-10T02:34:41.748272+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
-ai_agent_note: 'ATTN AI Agent: Ensure the JSON adheres to the required schema and
-  maintain a concise, professional tone; verify numerical references align with the
-  source material.'
-ai_commentary:
-- body: Low-dose CT screening in high-risk populations reduces mortality by at least
-    20% through earlier detection.
-  title: Impact of low-dose CT screening on mortality
-- body: Recent USPSTF recommendations are expanding screening access, with implications
-    for broader inclusion across demographics.
-  title: Policy and access
-- body: AI-powered computer-aided diagnosis supports interpretation, aiming to reduce
-    false positives, manage costs, and improve throughput in population-scale screening.
-  title: AI CAD and workflow
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 207232135c58c9d89e5862674a5399e9f56c40f4
-  generated_at: '2025-11-10T02:34:41.748241+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:15:56.030680+00:00'
-exported_at: '2025-11-09T05:30:20.788087+00:00'
+date: '2025-11-12T22:51:26.339588+00:00'
+exported_at: '2025-11-12T22:54:41.541946+00:00'
 feed: http://feeds.feedburner.com/blogspot/gJZg
-meta_description: Summary of global lung cancer burden, mortality reduction from low-dose
-  CT screening in high-risk groups, policy expansion, and the role of AI-powered CAD
-  in interpretation.
-meta_keywords:
-- lung cancer
-- lung cancer screening
-- low-dose CT
-- CT screening
-- AI
-- computer-aided diagnosis
-- CAD
-- false positives
-- workflow efficiency
-- policy expansion
-- USPSTF
-- mortality reduction
+language: en
 source_url: http://blog.research.google/2024/03/computer-aided-diagnosis-for-lung.html
 structured_data:
-  about: &id001
-  - Lung cancer is the leading cause of cancer-related deaths worldwide.
-  - Approximately 1.8 million lung cancer deaths were reported in 2020.
-  - Low-dose CT (LDCT) screening reduces mortality in high-risk populations by at
-    least 20%.
-  - In the United States, LDCT screening is typically annual; other regions vary in
-    frequency.
-  - The US Preventive Services Task Force expanded screening recommendations by around
-    80%, aiming to improve access for women and racial/ethnic minority groups.
-  - False positives can cause anxiety and lead to unnecessary procedures and higher
-    healthcare costs.
-  - Efficiency in screening large populations presents logistical and economic challenges.
-  - 'Category: ai-research'
-  description: An overview of the global lung cancer burden, the mortality-reducing
-    potential of low-dose CT screening in high-risk populations, policy shifts expanding
-    screening access, and the balance between false positives, costs, and workflow
-    efficiency—alongside the role of AI-powered computer-aided diagnosis in interpretation.
+  about: []
+  author: ''
+  description: Computer-aided diagnosis for lung cancer screening
   headline: Computer-aided diagnosis for lung cancer screening
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: http://blog.research.google/2024/03/computer-aided-diagnosis-for-lung.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Computer-aided diagnosis for lung cancer screening
-updated_at: '2025-11-09T05:15:56.030680+00:00'
+updated_at: '2025-11-12T22:51:26.339588+00:00'
 url_hash: 9b5b9c06475f0bd46ee8ef87dfc51548987d84b5
 ---
 

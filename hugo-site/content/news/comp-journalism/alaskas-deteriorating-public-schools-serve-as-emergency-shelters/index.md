@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T17:06:31.738972+00:00'
-exported_at: '2025-11-10T17:06:34.892286+00:00'
+date: '2025-11-12T22:51:27.765996+00:00'
+exported_at: '2025-11-12T22:54:43.069237+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/alaska-public-schools-emergency-shelter-neglect-typhoon-halong
 structured_data:
   about: []
@@ -19,6 +20,7 @@ structured_data:
     of state neglect, however, some have become emergencies themselves.
   headline: Alaska’s Public Schools Serve as Emergency Shelters. Those Buildings Are
     Also in Crisis.
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/alaska-public-schools-emergency-shelter-neglect-typhoon-halong
@@ -27,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: Alaska’s Public Schools Serve as Emergency Shelters. Those Buildings Are Also
   in Crisis.
-updated_at: '2025-11-10T17:06:31.738972+00:00'
+updated_at: '2025-11-12T22:51:27.765996+00:00'
 url_hash: c25195b0478ac3c1230799ad2cabe2d7fa8cc9ca
 ---
 

@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T06:05:00.221990+00:00'
-exported_at: '2025-11-10T06:05:04.436689+00:00'
+date: '2025-11-12T22:51:27.754505+00:00'
+exported_at: '2025-11-12T22:54:43.081197+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/product-manager-diary-what-i-learned-taking-intro
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: Spending a month building coding skills gave me the language—and confidence—for
     better communication across teams
   headline: 'Product manager diary: What I learned taking an intro course in web development'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/product-manager-diary-what-i-learned-taking-intro
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Product manager diary: What I learned taking an intro course in web development'
-updated_at: '2025-11-10T06:05:00.221990+00:00'
+updated_at: '2025-11-12T22:51:27.754505+00:00'
 url_hash: 022d5648d82acf776a8099746bfa04884a045b81
 ---
 

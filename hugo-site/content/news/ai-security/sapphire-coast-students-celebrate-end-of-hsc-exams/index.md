@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '2.5907333074819'
 category: ai-security
-date: '2025-11-11T23:37:50.496969+00:00'
+date: '2025-11-12T22:51:24.794298+00:00'
 event_code: '051'
 event_root: '05'
-exported_at: '2025-11-11T23:37:56.273489+00:00'
+exported_at: '2025-11-12T22:54:40.064779+00:00'
 geo: Merimbula, New South Wales, Australia
 goldstein_scale: '3.4'
+language: en
 num_articles: '20'
 source_url: https://www.begadistrictnews.com.au/story/9107795/sapphire-coast-students-celebrate-end-of-hsc-exams
 structured_data:
@@ -24,6 +25,7 @@ structured_data:
   description: Sapphire Coast Anglican College students celebrate HSC completion with
     a formal at Oaklands Event Centre, marking achievements with family and friends.
   headline: Sapphire Coast students celebrate end of HSC exams
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.begadistrictnews.com.au/story/9107795/sapphire-coast-students-celebrate-end-of-hsc-exams
@@ -31,7 +33,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Sapphire Coast students celebrate end of HSC exams
-updated_at: '2025-11-11T23:37:50.496969+00:00'
+updated_at: '2025-11-12T22:51:24.794298+00:00'
 url_hash: 48196fcede7fd376f19f5e120caa8d6ff747d2a4
 ---
 

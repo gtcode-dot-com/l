@@ -1,57 +1,38 @@
 ---
 actor2: MEDIA
-ai_commentary:
-- body: The Telegraph disclosed a summer-era memo by Michael Prescott raising impartiality
-    concerns, prompting the Culture, Media and Sport Committee to demand information
-    from BBC chair Samir Shah and outline next steps.
-  title: Impartiality memo and CMS inquiry
-- body: BBC says the chairman will provide a full response to the CMS Committee on
-    Monday, as scrutiny of editorial standards continues.
-  title: BBC response promised
-- body: 'The Panorama programme Trump: A Second Chance? allegedly edited clips from
-    Trump''s January 6 speech to imply a plan to walk to the Capitol and ''fight like
-    hell,'' raising questions about editorial choices ahead of the US election.'
-  title: Panorama edit and context
-- body: Boris Johnson accused the BBC of arrogance in the aftermath of the controversy,
-    intensifying debate over the corporation's independence and handling of impartiality
-    concerns.
-  title: Political row and public reaction
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: d4b50ced166bddc2dabe65cbe2eef521d2cb9716
-  generated_at: '2025-11-10T02:00:31.160142+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 avg_tone: '-2.86425902864259'
 category: ai-security
-date: '2025-11-09T05:30:09.782506+00:00'
+date: '2025-11-12T22:51:24.897617+00:00'
 event_code: '040'
 event_root: '04'
-exported_at: '2025-11-09T05:31:58.061867+00:00'
+exported_at: '2025-11-12T22:54:39.965255+00:00'
 geo: White House, District of Columbia, United States
 goldstein_scale: '1.0'
+language: en
 num_articles: '66'
 source_url: https://www.thurrockgazette.co.uk/news/national/25607449.bbc-expected-apologise-panorama-edit-trump-speech
 structured_data:
-  about: &id001
-  - BBC impartiality concerns
-  - 'Panorama Trump: A Second Chance? edit'
-  - Trump January 6 speech context
-  - Michael Prescott impartiality memo
-  - Culture, Media and Sport Committee inquiry
-  - BBC chair Samir Shah
-  - Dame Caroline Dinenage
-  - Boris Johnson and Nick Robinson exchange
-  description: 'A Telegraph memo on BBC impartiality by former adviser Michael Prescott
-    has sparked scrutiny, as Boris Johnson and Nick Robinson clash over perceived
-    BBC arrogance. The Panorama edit of Trump: A Second Chance? allegedly stitched
-    together Jan 6 footage to misrepresent his remarks, prompting the Culture, Media
-    and Sport Committee to seek information from BBC chair Samir Shah, with a full
-    response promised for Monday.'
+  about: []
+  author: ''
+  description: The programme spliced clips together from sections of the US president’s
+    speech on January 6 2021.
   headline: BBC expected to apologise over Panorama edit of Trump speech
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://www.thurrockgazette.co.uk/news/national/25607449.bbc-expected-apologise-panorama-edit-trump-speech
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: BBC expected to apologise over Panorama edit of Trump speech
-updated_at: '2025-11-09T05:30:09.782506+00:00'
+updated_at: '2025-11-12T22:51:24.897617+00:00'
 url_hash: 5b2a2c461c53581122207bac7b6db939885f8f75
 ---
 

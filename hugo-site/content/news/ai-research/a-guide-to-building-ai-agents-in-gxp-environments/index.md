@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-11T23:38:52.095270+00:00'
-exported_at: '2025-11-11T23:38:54.095930+00:00'
+date: '2025-11-12T22:51:26.373766+00:00'
+exported_at: '2025-11-12T22:54:41.507427+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/a-guide-to-building-ai-agents-in-gxp-environments
 structured_data:
   about: []
@@ -23,6 +24,7 @@ structured_data:
     implementation considerations across different risk levels, the AWS shared responsibility
     model for compliance, and concrete examples of risk mitigation strategies.
   headline: A guide to building AI agents in GxP environments
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/a-guide-to-building-ai-agents-in-gxp-environments
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: A guide to building AI agents in GxP environments
-updated_at: '2025-11-11T23:38:52.095270+00:00'
+updated_at: '2025-11-12T22:51:26.373766+00:00'
 url_hash: 3aa13784f4fb1e782b51f1346e2293fa1efd5629
 ---
 

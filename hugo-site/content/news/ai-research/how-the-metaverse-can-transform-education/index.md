@@ -1,49 +1,32 @@
 ---
-ai_commentary:
-- body: The piece charts a trajectory from calculators to tablets and interactive
-    exhibits, highlighting how digital tools have become integral to learning.
-  title: 'Technology in education: from devices to immersion'
-- body: Learning thrives in social, shared spaces; 2D remote learning often struggled
-    to sustain engagement because it lacked a tangible sense of presence with peers
-    and teachers.
-  title: The importance of presence in learning
-- body: By integrating VR, AR, and MR, the metaverse can create collaborative, embodied
-    experiences that blend physical and virtual environments, potentially transforming
-    pedagogy and access.
-  title: Metaverse as a learning platform
-- body: Widespread adoption will require attention to pedagogy, equity of access,
-    cognitive load, safety, privacy, and the ongoing need to align technology with
-    learning objectives.
-  title: Future challenges and considerations
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 9d1e4edbdc842ea23868dfed0a603c51c77ff929
-  generated_at: '2025-11-10T01:57:40.243752+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.992108+00:00'
-exported_at: '2025-11-09T05:30:20.798560+00:00'
+date: '2025-11-12T22:51:26.357549+00:00'
+exported_at: '2025-11-12T22:54:41.524305+00:00'
 feed: https://research.facebook.com/feed
+language: en
 source_url: https://about.fb.com/news/2023/04/how-the-metaverse-can-transform-education
 structured_data:
-  about: &id001
-  - Education technology
-  - Metaverse
-  - Virtual reality (VR)
-  - Augmented reality (AR)
-  - Mixed reality (MR)
-  - Remote learning
-  - Social learning
-  description: Digital technologies have rapidly reshaped education, turning calculators
-    into tablets and interactive exhibits into everyday tools. While 2D remote learning
-    sustained education during the pandemic, it often lacked the sense of presence
-    that drives engagement. The metaverse—encompassing VR, AR, and MR—offers immersive,
-    social learning environments that can complement and extend traditional education.
-  headline: How the Metaverse Can Transform Education
-  keywords: *id001
+  about: []
+  author: ''
+  description: With AR and VR, students can walk among dinosaurs to learn about them
+    and medical students can practice surgery without risk to patients.
+  headline: How the metaverse can transform education
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://about.fb.com/news/2023/04/how-the-metaverse-can-transform-education
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: How the metaverse can transform education
-updated_at: '2025-11-09T05:13:27.992108+00:00'
+updated_at: '2025-11-12T22:51:26.357549+00:00'
 url_hash: f7ce6ce3e954c1735002897933dc718c238f3d10
 ---
 

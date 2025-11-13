@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-1.66389351081531'
 category: ai-security
-date: '2025-11-11T15:18:06.652794+00:00'
+date: '2025-11-12T22:51:24.815232+00:00'
 event_code: '042'
 event_root: '04'
-exported_at: '2025-11-11T15:18:08.026257+00:00'
+exported_at: '2025-11-12T22:54:40.041650+00:00'
 geo: Zambia
 goldstein_scale: '1.9'
+language: en
 num_articles: '42'
 source_url: https://www.ealingtimes.co.uk/news/national/25608142.swinney-calls-swift-decisive-action-tackling-climate-crisis
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   author: ''
   description: Gillian Martin is representing Scotland at the Cop30 summit in Brazil.
   headline: Swinney calls for swift and decisive action in tackling climate crisis
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.ealingtimes.co.uk/news/national/25608142.swinney-calls-swift-decisive-action-tackling-climate-crisis
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Swinney calls for swift and decisive action in tackling climate crisis
-updated_at: '2025-11-11T15:18:06.652794+00:00'
+updated_at: '2025-11-12T22:51:24.815232+00:00'
 url_hash: 3583f7d9a8397c0bcb01b70b98de6f36a9e28d85
 ---
 

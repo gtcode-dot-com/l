@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T19:05:19.894897+00:00'
-exported_at: '2025-11-10T19:05:22.843071+00:00'
+date: '2025-11-12T22:51:27.772021+00:00'
+exported_at: '2025-11-12T22:54:43.063100+00:00'
 feed: https://www.icij.org/feed/
+language: en
 source_url: https://www.icij.org/news/2025/11/ar-15-ammunition-at-a-crime-scene-good-odds-this-us-army-plant-made-it
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     likely than any other to turn up in a government database tracking evidence from
     gun crimes, new data shows. 
   headline: AR-15 ammunition at a crime scene? Good odds this US Army plant made it.
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.icij.org/news/2025/11/ar-15-ammunition-at-a-crime-scene-good-odds-this-us-army-plant-made-it
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: AR-15 ammunition at a crime scene? Good odds this US Army plant made it.
-updated_at: '2025-11-10T19:05:19.894897+00:00'
+updated_at: '2025-11-12T22:51:27.772021+00:00'
 url_hash: 7b92f525da60bd4d4bda41d3d56123b71b64dd64
 ---
 

@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-3.26580272697391'
 category: ai-security
-date: '2025-11-10T19:04:14.469583+00:00'
+date: '2025-11-12T22:51:24.825072+00:00'
 event_code: '030'
 event_root: '03'
-exported_at: '2025-11-10T19:04:19.874894+00:00'
+exported_at: '2025-11-12T22:54:40.032203+00:00'
 geo: Denmark
 goldstein_scale: '4.0'
+language: en
 num_articles: '50'
 source_url: https://www.northerndailyleader.com.au/story/9107737/parents-urged-to-prepare-for-social-media-ban-on-kids
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: Social media giants earning billions in revenue will view penalties
     under Australia's ban for under-16s as "peanuts", a...
   headline: Social media ban lacks teeth, former executive warns
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.northerndailyleader.com.au/story/9107737/parents-urged-to-prepare-for-social-media-ban-on-kids
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Social media ban lacks teeth, former executive warns
-updated_at: '2025-11-10T19:04:14.469583+00:00'
+updated_at: '2025-11-12T22:51:24.825072+00:00'
 url_hash: 648cd8413f3a72e70ec4def18a55f242601a14b1
 ---
 

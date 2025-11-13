@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-11-12T18:25:57.349822+00:00'
-exported_at: '2025-11-12T18:26:03.311082+00:00'
+date: '2025-11-12T22:51:24.760017+00:00'
+exported_at: '2025-11-12T22:54:40.100055+00:00'
 feed: https://www.schneier.com/feed/atom/
+language: en
 source_url: https://www.schneier.com/blog/archives/2025/11/new-attacks-against-secure-enclaves.html
 structured_data:
   about: []
@@ -26,6 +27,7 @@ structured_data:
     encrypted data, cloud servers require access to the unencrypted data to do anything
     useful...'
   headline: New Attacks Against Secure Enclaves
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.schneier.com/blog/archives/2025/11/new-attacks-against-secure-enclaves.html
@@ -33,7 +35,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: New Attacks Against Secure Enclaves
-updated_at: '2025-11-12T18:25:57.349822+00:00'
+updated_at: '2025-11-12T22:51:24.760017+00:00'
 url_hash: b0925dd4c94240de2d8448d153d51080088a5950
 ---
 

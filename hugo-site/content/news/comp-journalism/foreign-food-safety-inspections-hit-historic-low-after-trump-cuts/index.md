@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T17:06:32.127732+00:00'
-exported_at: '2025-11-10T17:06:34.888956+00:00'
+date: '2025-11-12T22:51:27.768917+00:00'
+exported_at: '2025-11-12T22:54:43.065998+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/foreign-food-safety-inspections-historic-low-fda
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     been more reliant on foreign food, which accounts for the vast majority of the
     nation’s seafood and more than half its fresh fruit.
   headline: Foreign Food Safety Inspections Hit Historic Low After Trump Cuts
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/foreign-food-safety-inspections-historic-low-fda
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Foreign Food Safety Inspections Hit Historic Low After Trump Cuts
-updated_at: '2025-11-10T17:06:32.127732+00:00'
+updated_at: '2025-11-12T22:51:27.768917+00:00'
 url_hash: c6f1ad1559b3c4b7a8b4157bef2abecf49de3e27
 ---
 

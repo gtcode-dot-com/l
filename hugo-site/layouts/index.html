@@ -80,6 +80,7 @@
       <div class="card-actions">
         <a class="btn btn-secondary" href="/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf" target="_blank" rel="noopener">Research Proposal (PDF) →</a>
         <a class="btn btn-secondary" href="/articles/epistemic-fragmentation-multi-model-ai-systems/">Latest article →</a>
+        <a class="btn btn-secondary" href="/guides/">Guides Library →</a>
       </div>
     </article>
   </div>
@@ -114,7 +115,7 @@
   </article>
 
   <!-- Latest News Section -->
-  <section class="section-header" style="margin-top: 2rem;">
+  <section id="articles" class="section-header" style="margin-top: 2rem;">
     <h2 class="section-title">Latest News</h2>
     <p class="section-description">Daily briefs on AI security, research, and accountability reporting curated by the GTCode desk.</p>
   </section>
@@ -122,71 +123,32 @@
   {{ $newsPagesAll := sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
   {{ $newsPaginator := .Paginate $newsPagesAll }}
   {{ $newsPages := $newsPaginator.Pages }}
-  {{ $categories := slice "ai-security" "ai-research" "comp-journalism" }}
-  {{ $newsScratch := newScratch }}
-  {{ $newsScratch.Set "hasNews" false }}
   <div class="news-grid">
-    {{ range $categories }}
-      {{ $catPages := where $newsPages "Params.category" . }}
-      {{ if gt (len $catPages) 0 }}
-        {{ $sortedCat := sort $catPages "Date" "desc" }}
-        {{ range first 2 $sortedCat }}
-          {{ $newsScratch.Set "hasNews" true }}
-          <article class="card">
-            {{ if .Params.category }}
-              <div class="card-meta">
-                <span class="badge badge-category">{{ .Params.category }}</span>
-              </div>
-            {{ end }}
-            <h3 class="card-title">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h3>
-            <div class="card-meta">
-              {{ partial "news-date.html" . }}
-              {{ with .Params.source_url }}
-                <span>&bull;</span>
-                <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
-              {{ end }}
-            </div>
-            {{ with .Summary }}
-              {{ $clean := replace (replace . "" "") "" "" }}
-              <p class="card-summary">{{ $clean | plainify | truncate 160 }}</p>
-            {{ end }}
-            <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
-          </article>
+    {{ range $newsPages }}
+      <article class="card">
+        {{ if .Params.category }}
+          <div class="card-meta">
+            <span class="badge badge-category">{{ .Params.category }}</span>
+          </div>
         {{ end }}
-      {{ end }}
+        <h3 class="card-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <div class="card-meta">
+          {{ partial "news-date.html" . }}
+          {{ with .Params.source_url }}
+            <span>&bull;</span>
+            <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
+          {{ end }}
+        </div>
+        {{ with .Summary }}
+          {{ $clean := replace (replace . "" "") "" "" }}
+          <p class="card-summary">{{ $clean | plainify | truncate 160 }}</p>
+        {{ end }}
+        <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
+      </article>
     {{ end }}
   </div>
-  {{ if not ($newsScratch.Get "hasNews") }}
-    {{ $fallback := first 6 $newsPages }}
-    <div class="news-grid">
-      {{ range $fallback }}
-        <article class="card">
-          {{ if .Params.category }}
-            <div class="card-meta">
-              <span class="badge badge-category">{{ .Params.category }}</span>
-            </div>
-          {{ end }}
-          <h3 class="card-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h3>
-          <div class="card-meta">
-            {{ partial "news-date.html" . }}
-            {{ with .Params.source_url }}
-              <span>&bull;</span>
-              <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
-            {{ end }}
-          </div>
-          {{ with .Summary }}
-            {{ $clean := replace (replace . "" "") "" "" }}
-            <p class="card-summary">{{ $clean | plainify | truncate 160 }}</p>
-          {{ end }}
-          <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
-        </article>
-      {{ end }}
-    </div>
-  {{ end }}
   {{ partial "pagination.html" . }}
   {{ partial "news-itemlist.html" (dict "pages" $newsPages) }}
 {{ end }}

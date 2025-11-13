@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-11T23:38:52.844187+00:00'
-exported_at: '2025-11-11T23:38:54.089896+00:00'
+date: '2025-11-12T22:51:26.377567+00:00'
+exported_at: '2025-11-12T22:54:41.503683+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/multi-agent-collaboration-patterns-with-strands-agents-and-amazon-nova
 structured_data:
   about: []
@@ -19,6 +20,7 @@ structured_data:
     Workflows – and discuss when and how to apply each using the open-source AWS Strands
     Agents SDK with Amazon Nova models.
   headline: Multi-Agent collaboration patterns with Strands Agents and Amazon Nova
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/multi-agent-collaboration-patterns-with-strands-agents-and-amazon-nova
@@ -26,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Multi-Agent collaboration patterns with Strands Agents and Amazon Nova
-updated_at: '2025-11-11T23:38:52.844187+00:00'
+updated_at: '2025-11-12T22:51:26.377567+00:00'
 url_hash: 963a0c0b777c46af72d647503c9965dd0a25b008
 ---
 

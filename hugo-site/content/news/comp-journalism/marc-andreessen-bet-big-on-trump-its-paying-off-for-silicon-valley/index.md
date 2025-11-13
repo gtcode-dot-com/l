@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T17:06:33.063320+00:00'
-exported_at: '2025-11-10T17:06:34.883058+00:00'
+date: '2025-11-12T22:51:27.816506+00:00'
+exported_at: '2025-11-12T22:54:43.014938+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/trump-cfpb-marc-andreessen-silicon-valley
 structured_data:
   about: []
@@ -19,6 +20,7 @@ structured_data:
     the agency of “terrorizing” fintech startups and crypto companies.
   headline: Tech Billionaire Marc Andreessen Bet Big on Trump. It’s Paying Off for
     Silicon Valley.
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/trump-cfpb-marc-andreessen-silicon-valley
@@ -27,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: Tech Billionaire Marc Andreessen Bet Big on Trump. It’s Paying Off for Silicon
   Valley.
-updated_at: '2025-11-10T17:06:33.063320+00:00'
+updated_at: '2025-11-12T22:51:27.816506+00:00'
 url_hash: 122b60b5e6ef808a85785ac4c61ffe93010627e8
 ---
 

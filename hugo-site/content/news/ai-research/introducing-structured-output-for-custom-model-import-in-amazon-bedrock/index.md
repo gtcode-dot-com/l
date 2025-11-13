@@ -1,41 +1,35 @@
 ---
-ai_commentary:
-- body: Production workloads (e.g., order processing or data extraction) can now rely
-    on deterministic outputs that align with predefined schemas, improving reliability
-    and downstream ingestion.
-  title: What this means for production applications
-- body: During inference, outputs are constrained to a schema you define in real time,
-    ensuring consistency and facilitating seamless integration with enterprise systems.
-  title: How it works at inference time
-- body: Increases reliability, simplifies integration, reduces development time, and
-    preserves model intelligence while delivering machine-readable results.
-  title: Key benefits for enterprises
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: f3feca940ac452390a84f50bd99f511a8bf6b445
-  generated_at: '2025-11-10T01:57:54.177320+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.974329+00:00'
-exported_at: '2025-11-09T05:30:20.817949+00:00'
+date: '2025-11-12T22:51:26.410314+00:00'
+exported_at: '2025-11-12T22:54:41.492452+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/introducing-structured-output-for-custom-model-import-in-amazon-bedrock
 structured_data:
-  about: &id001
-  - Real-time, schema-constrained generation for Custom Model Import
-  - Eliminates reliance on prompt engineering and brittle post-processing
-  - Produces machine-readable outputs aligned to predefined schemas for enterprise
-    systems
-  - Designed for production applications where predictability is critical
-  description: Amazon Bedrock's Custom Model Import now supports structured output,
-    enabling real-time, schema-driven generation. This constrains model outputs to
-    a predefined format, reducing post-processing and enabling seamless enterprise
-    integration within a fully managed, serverless environment.
-  headline: Structured output now available for Custom Model Import in Amazon Bedrock
-  keywords: *id001
+  about: []
+  author: ''
+  description: Today, we are excited to announce the addition of structured output
+    to Custom Model Import. Structured output constrains a model's generation process
+    in real time so that every token it produces conforms to a schema you define.
+    Rather than relying on prompt-engineering tricks or brittle post-processing scripts,
+    you can now generate structured outputs directly at inference time.
+  headline: Introducing structured output for Custom Model Import in Amazon Bedrock
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://aws.amazon.com/blogs/machine-learning/introducing-structured-output-for-custom-model-import-in-amazon-bedrock
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Introducing structured output for Custom Model Import in Amazon Bedrock
-updated_at: '2025-11-09T05:13:27.974329+00:00'
+updated_at: '2025-11-12T22:51:26.410314+00:00'
 url_hash: 62210cc154e8384e237c68792ce26af9a8d79a06
 ---
 

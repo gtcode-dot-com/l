@@ -5,6 +5,9 @@ theme = 'minimal'
 disableKinds = ['taxonomy', 'term']
 canonifyURLs = true
 
+[pagination]
+  pagerSize = 10
+
 [params]
   description = 'Paul E. Lowndes is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'
   author = 'Paul E. Lowndes'

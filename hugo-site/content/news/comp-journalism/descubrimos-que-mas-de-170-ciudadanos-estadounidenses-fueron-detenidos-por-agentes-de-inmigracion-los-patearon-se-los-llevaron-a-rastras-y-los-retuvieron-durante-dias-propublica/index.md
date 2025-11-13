@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T23:39:55.245877+00:00'
-exported_at: '2025-11-11T23:39:57.996425+00:00'
+date: '2025-11-12T22:51:27.801293+00:00'
+exported_at: '2025-11-12T22:54:43.031472+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/descubrimos-que-mas-de-170-ciudadanos-estadounidenses-fueron-detenidos-por-agentes-de-inmigracion-los-patearon-se-los-llevaron-a-rastras-y-los-retuvieron-durante-dias
 structured_data:
   about: []
@@ -20,6 +21,7 @@ structured_data:
   headline: Descubrimos que más de 170 ciudadanos estadounidenses fueron detenidos
     por agentes de inmigración. Los patearon, se los llevaron a rastras y los retuvieron
     durante días.
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/descubrimos-que-mas-de-170-ciudadanos-estadounidenses-fueron-detenidos-por-agentes-de-inmigracion-los-patearon-se-los-llevaron-a-rastras-y-los-retuvieron-durante-dias
@@ -29,7 +31,7 @@ structured_data:
 title: Descubrimos que más de 170 ciudadanos estadounidenses fueron detenidos por
   agentes de inmigración. Los patearon, se los llevaron a rastras y los retuvieron
   durante días.
-updated_at: '2025-11-11T23:39:55.245877+00:00'
+updated_at: '2025-11-12T22:51:27.801293+00:00'
 url_hash: 7494f05ffb8669c63ed0848f25154571a1097228
 ---
 

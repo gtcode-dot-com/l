@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-9.45077096122718'
 category: ai-security
-date: '2025-11-11T15:18:01.990172+00:00'
+date: '2025-11-12T22:51:24.808037+00:00'
 event_code: '190'
 event_root: '19'
-exported_at: '2025-11-11T15:18:08.038673+00:00'
+exported_at: '2025-11-12T22:54:40.050259+00:00'
 geo: Sydney, New South Wales, Australia
 goldstein_scale: '-10.0'
+language: en
 num_articles: '24'
 source_url: https://www.hardenexpress.com.au/story/9108347/gasps-as-message-sent-over-extreme-road-rage-death
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: A killer driver who dragged another man alongside his moving vehicle
     before running over him will spend years...
   headline: Gasps as message sent over 'extreme' road rage death
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.hardenexpress.com.au/story/9108347/gasps-as-message-sent-over-extreme-road-rage-death
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Gasps as message sent over 'extreme' road rage death
-updated_at: '2025-11-11T15:18:01.990172+00:00'
+updated_at: '2025-11-12T22:51:24.808037+00:00'
 url_hash: 088b3a73915f1124fe6fc14a6537ea6558021567
 ---
 

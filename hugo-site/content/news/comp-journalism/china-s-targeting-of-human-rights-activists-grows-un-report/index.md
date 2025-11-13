@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T19:05:23.033858+00:00'
-exported_at: '2025-11-10T19:05:22.833423+00:00'
+date: '2025-11-12T22:51:27.779742+00:00'
+exported_at: '2025-11-12T22:54:43.054689+00:00'
 feed: https://www.icij.org/feed/
+language: en
 source_url: https://www.icij.org/investigations/china-targets/new-un-report-highlights-chinas-alleged-targeting-of-human-rights-activists
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: A new report recounts recent reprisals from two dozen countries and
     underscores ICIJ’s reporting on Beijing's tactics to silence critics abroad.
   headline: New UN report highlights China’s alleged targeting of human rights activists
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.icij.org/investigations/china-targets/new-un-report-highlights-chinas-alleged-targeting-of-human-rights-activists
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: New UN report highlights China’s alleged targeting of human rights activists
-updated_at: '2025-11-10T19:05:23.033858+00:00'
+updated_at: '2025-11-12T22:51:27.779742+00:00'
 url_hash: fe1e30c2d170948e87b517288b080e1017bf9a9b
 ---
 

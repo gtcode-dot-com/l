@@ -1,46 +1,31 @@
 ---
-ai_commentary:
-- body: Floods are the most common natural disaster and cause roughly $50 billion
-    in annual damages. The rate of flood-related disasters has doubled since 2000,
-    influenced by climate change.
-  title: Context
-- body: Nearly 1.5 billion people, about 19% of the world’s population, live with
-    substantial flood risk; better early warnings can save thousands of lives each
-    year.
-  title: Exposure and Impact
-- body: Since 2017, the effort has combined AI research with developing a real-time
-    operational flood forecasting system that provides alerts.
-  title: Approach and Progress
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 90b406607799c19548cd711775e948cd6309f935
-  generated_at: '2025-11-10T01:59:56.204156+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:21.724722+00:00'
-exported_at: '2025-11-09T05:30:20.831078+00:00'
+date: '2025-11-12T22:51:26.341898+00:00'
+exported_at: '2025-11-12T22:54:41.539500+00:00'
 feed: http://feeds.feedburner.com/blogspot/gJZg
+language: en
 source_url: http://blog.research.google/2024/03/using-ai-to-expand-global-access-to.html
 structured_data:
-  about: &id001
-  - AI-enabled flood forecasting
-  - Global risk awareness
-  - Early warning systems
-  - Disaster risk reduction
-  - Real-time alerts
-  description: Floods are the most common natural disaster, causing about $50 billion
-    in annual damages worldwide. The rate of flood-related disasters has more than
-    doubled since 2000, in part due to climate change. Nearly 1.5 billion people,
-    about 19% of the world’s population, are exposed to substantial flood risk. Upgrading
-    early warning systems to deliver accurate, timely information can save thousands
-    of lives per year. Since 2017, a global flood forecasting effort has advanced
-    AI research while building a real-time operational forecast system that issues
-    alerts.
-  headline: AI-Driven Flood Forecasting Expands Global Access to Reliable Early Warnings
-  keywords: *id001
+  about: []
+  author: ''
+  description: Using AI to expand global access to reliable flood forecasts
+  headline: Using AI to expand global access to reliable flood forecasts
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: http://blog.research.google/2024/03/using-ai-to-expand-global-access-to.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Using AI to expand global access to reliable flood forecasts
-updated_at: '2025-11-09T05:13:21.724722+00:00'
+updated_at: '2025-11-12T22:51:26.341898+00:00'
 url_hash: c99099aac6171ec3b4875718c25b31ef1c44f5e5
 ---
 

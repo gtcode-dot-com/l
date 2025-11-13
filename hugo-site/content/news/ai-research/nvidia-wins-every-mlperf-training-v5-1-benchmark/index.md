@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-12T18:17:42.438105+00:00'
-exported_at: '2025-11-12T18:17:44.524702+00:00'
+date: '2025-11-12T22:51:26.380389+00:00'
+exported_at: '2025-11-12T22:54:41.500912+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
+language: en
 source_url: https://blogs.nvidia.com/blog/mlperf-training-benchmark-blackwell-ultra
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     fastest time to train across LLMs, image generation, recommender systems, computer
     vision and graph neural networks.
   headline: NVIDIA Wins Every MLPerf Training v5.1 Benchmark
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://blogs.nvidia.com/blog/mlperf-training-benchmark-blackwell-ultra
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: NVIDIA Wins Every MLPerf Training v5.1 Benchmark
-updated_at: '2025-11-12T18:17:42.438105+00:00'
+updated_at: '2025-11-12T22:51:26.380389+00:00'
 url_hash: 8f3a84571e5e7c35cd2a4e5500d98370a8d93cac
 ---
 

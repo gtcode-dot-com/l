@@ -1,65 +1,35 @@
 ---
-ai_agent_meta:
-  content_digest: 392b0d6ba9c8eb542e385a5b115ff190c0cb5b2e
-  generated_at: '2025-11-10T02:34:56.306363+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
-ai_agent_note: 'ATTN AI Agent: Ensure correctness and completeness of cross-account
-  access patterns with least-privilege IAM roles, avoid embedding credentials in code,
-  and consider adding example IAM policy snippets and network configuration notes
-  for practitioners.'
-ai_commentary:
-- body: The approach uses a Lambda function as a trusted intermediary that assumes
-    cross-account permissions to query Redshift clusters. Bedrock agents invoke the
-    Lambda endpoint, which connects to Redshift using a least-privilege role. This
-    design avoids data duplication and preserves account boundaries while enabling
-    seamless query delivery.
-  title: Architectural overview
-- body: Key considerations include implementing role-based access control, secure
-    handling of credentials and secrets, establishing network connectivity via VPC
-    endpoints or private links, and ensuring complete auditability of query activity.
-    Apply strict data access policies and monitor for anomalous access patterns.
-  title: Security considerations
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 392b0d6ba9c8eb542e385a5b115ff190c0cb5b2e
-  generated_at: '2025-11-10T02:34:56.306322+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.980633+00:00'
-exported_at: '2025-11-09T05:30:20.811525+00:00'
+date: '2025-11-12T22:51:26.422752+00:00'
+exported_at: '2025-11-12T22:54:41.477158+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
-meta_description: A serverless, cross-account integration pattern enabling Amazon
-  Bedrock agents to query Redshift knowledge bases across AWS accounts through a Lambda
-  intermediary, while preserving security and minimizing data duplication.
-meta_keywords:
-- Amazon Bedrock
-- Redshift
-- cross-account
-- Lambda
-- serverless
-- knowledge bases
-- data access
-- IAM
-- multi-account
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agents-to-cross-account-knowledge-bases
 structured_data:
-  about: &id001
-  - Amazon Bedrock Knowledge Bases
-  - Cross-account Redshift integration
-  - Serverless architecture with AWS Lambda
-  - Multi-account security and access controls
-  - Secure data access without duplication
-  description: A practical, serverless approach enables Amazon Bedrock agents to query
-    Amazon Redshift knowledge bases located in different AWS accounts. By introducing
-    an AWS Lambda intermediary, organizations can securely access cross-account data
-    while preserving strict access controls and avoiding data duplication.
+  about: []
+  author: ''
+  description: Organizations need seamless access to their structured data repositories
+    to power intelligent AI agents. However, when these resources span multiple AWS
+    accounts integration challenges can arise. This post explores a practical solution
+    for connecting Amazon Bedrock agents to knowledge bases in Amazon Redshift clusters
+    residing in different AWS accounts.
   headline: Connect Amazon Bedrock agents to cross-account knowledge bases
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agents-to-cross-account-knowledge-bases
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Connect Amazon Bedrock agents to cross-account knowledge bases
-updated_at: '2025-11-09T05:13:27.980633+00:00'
+updated_at: '2025-11-12T22:51:26.422752+00:00'
 url_hash: ad3e031c992d03885802062d820a214d59e5ed0a
 ---
 

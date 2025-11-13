@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-12T22:18:08.833381+00:00'
-exported_at: '2025-11-12T22:18:13.726197+00:00'
+date: '2025-11-12T22:51:27.738700+00:00'
+exported_at: '2025-11-12T22:54:43.095186+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/portland-protests-national-guard-fox-news-coverage
 structured_data:
   about: []
@@ -19,6 +20,7 @@ structured_data:
     “Portland rioters” routinely instigating violence was misleading.
   headline: '“Riots Raging”: The Misleading Story Fox News Told About Portland Before
     Trump Sent Troops'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/portland-protests-national-guard-fox-news-coverage
@@ -27,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: '“Riots Raging”: The Misleading Story Fox News Told About Portland Before Trump
   Sent Troops'
-updated_at: '2025-11-12T22:18:08.833381+00:00'
+updated_at: '2025-11-12T22:51:27.738700+00:00'
 url_hash: 1d4972babde01e84ae50f155ea71fb5bdf690ffe
 ---
 

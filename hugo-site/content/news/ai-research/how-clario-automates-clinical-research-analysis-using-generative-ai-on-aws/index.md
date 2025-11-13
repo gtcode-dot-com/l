@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-11-10T19:04:54.521833+00:00'
-exported_at: '2025-11-10T19:04:55.847921+00:00'
+date: '2025-11-12T22:51:26.416840+00:00'
+exported_at: '2025-11-12T22:54:41.485799+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-clario-automates-clinical-research-analysis-using-generative-ai-on-aws
 structured_data:
   about: []
@@ -19,6 +20,7 @@ structured_data:
     the analysis of COA interviews.
   headline: How Clario automates clinical research analysis using generative AI on
     AWS
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/how-clario-automates-clinical-research-analysis-using-generative-ai-on-aws
@@ -26,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: How Clario automates clinical research analysis using generative AI on AWS
-updated_at: '2025-11-10T19:04:54.521833+00:00'
+updated_at: '2025-11-12T22:51:26.416840+00:00'
 url_hash: 670f33122cf15b1c055d889a69e5131e60120399
 ---
 

@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-2.18907648077562'
 category: ai-security
-date: '2025-11-12T18:26:00.252340+00:00'
+date: '2025-11-12T22:51:24.768870+00:00'
 event_code: '130'
 event_root: '13'
-exported_at: '2025-11-12T18:26:03.305400+00:00'
+exported_at: '2025-11-12T22:54:40.091002+00:00'
 geo: Sydney, New South Wales, Australia
 goldstein_scale: '-4.4'
+language: en
 num_articles: '40'
 source_url: https://www.dailyadvertiser.com.au/story/9108699/generations-connected-as-millions-mark-remembrance-day
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: A veteran has recalled the price paid by men and women who served the
     country as thousands of...
   headline: '''Paid the heaviest price'': supreme sacrifices honoured'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.dailyadvertiser.com.au/story/9108699/generations-connected-as-millions-mark-remembrance-day
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: '''Paid the heaviest price'': supreme sacrifices honoured'
-updated_at: '2025-11-12T18:26:00.252340+00:00'
+updated_at: '2025-11-12T22:51:24.768870+00:00'
 url_hash: 1f5f76d375feb00df4264c6dbb98160231a57604
 ---
 

@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T23:39:54.742566+00:00'
-exported_at: '2025-11-11T23:39:57.999856+00:00'
+date: '2025-11-12T22:51:27.798032+00:00'
+exported_at: '2025-11-12T22:54:43.034999+00:00'
 feed: https://www.propublica.org/rss/
+language: en
 source_url: https://www.propublica.org/article/fort-worth-mercy-culture-church-campaign-university
 structured_data:
   about: []
@@ -20,6 +21,7 @@ structured_data:
     said.
   headline: '“No Separation Between Church and State”: Inside a Texas Church’s Training
     Academy for Christians Running for Office'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.propublica.org/article/fort-worth-mercy-culture-church-campaign-university
@@ -28,7 +30,7 @@ structured_data:
     name: gtcode.com
 title: '“No Separation Between Church and State”: Inside a Texas Church’s Training
   Academy for Christians Running for Office'
-updated_at: '2025-11-11T23:39:54.742566+00:00'
+updated_at: '2025-11-12T22:51:27.798032+00:00'
 url_hash: c5270e2fb9c64767c59b5146be21b6978002e87c
 ---
 

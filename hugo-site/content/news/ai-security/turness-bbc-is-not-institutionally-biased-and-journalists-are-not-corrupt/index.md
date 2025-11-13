@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-4.41767068273094'
 category: ai-security
-date: '2025-11-12T18:26:02.030353+00:00'
+date: '2025-11-12T22:51:24.771826+00:00'
 event_code: '032'
 event_root: '03'
-exported_at: '2025-11-12T18:26:03.300821+00:00'
+exported_at: '2025-11-12T22:54:40.088122+00:00'
 geo: London, London, City of, United Kingdom
 goldstein_scale: '4.5'
+language: en
 num_articles: '120'
 source_url: https://www.ipswichstar.co.uk/news/national/25608504.turness-bbc-not-institutionally-biased-journalists-not-corrupt
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: The outgoing BBC News chief executive, who resigned on Sunday, stressed
     the corporation is not biased.
   headline: 'Turness: BBC is not institutionally biased and journalists are not corrupt'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.ipswichstar.co.uk/news/national/25608504.turness-bbc-not-institutionally-biased-journalists-not-corrupt
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Turness: BBC is not institutionally biased and journalists are not corrupt'
-updated_at: '2025-11-12T18:26:02.030353+00:00'
+updated_at: '2025-11-12T22:51:24.771826+00:00'
 url_hash: cf210599f5d71997301fa66aedded6dabb96e172
 ---
 

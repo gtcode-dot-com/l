@@ -9,11 +9,12 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '0.214707461084269'
 category: ai-security
-date: '2025-11-12T18:25:58.736615+00:00'
+date: '2025-11-12T22:51:24.765831+00:00'
 event_code: '044'
 event_root: '04'
-exported_at: '2025-11-12T18:26:03.308537+00:00'
+exported_at: '2025-11-12T22:54:40.094232+00:00'
 goldstein_scale: '2.5'
+language: ko
 num_articles: '10'
 source_url: https://www.mt.co.kr/photo/202511101506591208
 structured_data:
@@ -22,6 +23,7 @@ structured_data:
   description: 머니투데이는 경제, 증권, 기업 등 실시간 뉴스부터 정치, 사회, 문화에 이르기까지 다양한 분야의 깊이 있는 분석과 신뢰할
     수 있는 정보를 제공합니다. 빠르고 정확한 보도로 대한민국 대표 종합경제미디어의 역할을 충실히 수행하며, 독자에게 가치 있는 뉴스를 전달합니다.
   headline: '''다음생은 없는 미녀 찐친들'''
+  inLanguage: ko
   keywords: []
   main_image: ''
   original_source: https://www.mt.co.kr/photo/202511101506591208
@@ -29,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: '''다음생은 없는 미녀 찐친들'''
-updated_at: '2025-11-12T18:25:58.736615+00:00'
+updated_at: '2025-11-12T22:51:24.765831+00:00'
 url_hash: df98f272dba759711b63e62ad7cd9c0121731d43
 ---
 

@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '7.48091603053435'
 category: ai-security
-date: '2025-11-10T19:04:12.589791+00:00'
+date: '2025-11-12T22:51:24.822048+00:00'
 event_code: '120'
 event_root: '12'
-exported_at: '2025-11-10T19:04:19.878124+00:00'
+exported_at: '2025-11-12T22:54:40.035487+00:00'
 geo: Rahu, Maharashtra, India
 goldstein_scale: '-4.0'
+language: hi
 num_articles: '10'
 source_url: https://www.livehindustan.com/astrology/aaj-ka-rashifal-10-november-2025-lucky-zodiacs-from-aries-to-pisces-horoscope-today-201762710820893.html
 structured_data:
@@ -26,6 +27,7 @@ structured_data:
     एस्ट्रोलॉजी न्यूज़ Hindustan'
   headline: 'Aaj Ka Rashifal, आज का राशिफल: मेष राशि से लेकर मीन का 10 नवंबर का दिन
     कैसा रहेगा?'
+  inLanguage: hi
   keywords: []
   main_image: ''
   original_source: https://www.livehindustan.com/astrology/aaj-ka-rashifal-10-november-2025-lucky-zodiacs-from-aries-to-pisces-horoscope-today-201762710820893.html
@@ -34,7 +36,7 @@ structured_data:
     name: gtcode.com
 title: 'Aaj Ka Rashifal, आज का राशिफल: मेष राशि से लेकर मीन का 10 नवंबर का दिन कैसा
   रहेगा?'
-updated_at: '2025-11-10T19:04:12.589791+00:00'
+updated_at: '2025-11-12T22:51:24.822048+00:00'
 url_hash: 5f81feb90bc98a0a171beaeb6f0f11691b7db030
 ---
 

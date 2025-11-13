@@ -10,12 +10,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-1.95000160560034'
 category: ai-security
-date: '2025-11-12T22:15:26.413240+00:00'
+date: '2025-11-12T22:51:24.741764+00:00'
 event_code: '120'
 event_root: '12'
-exported_at: '2025-11-12T22:15:55.481945+00:00'
+exported_at: '2025-11-12T22:54:40.116878+00:00'
 geo: New York, United States
 goldstein_scale: '-4.0'
+language: en
 num_articles: '110'
 source_url: https://www.cravenherald.co.uk/news/national/25609837.trump-threatens-legal-action-bbc-panorama-speech-edit
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   author: ''
   description: The BBC has said it will ‘respond directly in due course’.
   headline: Trump threatens legal action against BBC over Panorama speech edit
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.cravenherald.co.uk/news/national/25609837.trump-threatens-legal-action-bbc-panorama-speech-edit
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Trump threatens legal action against BBC over Panorama speech edit
-updated_at: '2025-11-12T22:15:26.413240+00:00'
+updated_at: '2025-11-12T22:51:24.741764+00:00'
 url_hash: 2804c27836b140898b4609778593bb12fca67cd9
 ---
 

@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '1.8385145165188'
 category: ai-security
-date: '2025-11-11T23:37:51.860165+00:00'
+date: '2025-11-12T22:51:24.797262+00:00'
 event_code: '043'
 event_root: '04'
-exported_at: '2025-11-11T23:37:56.270723+00:00'
+exported_at: '2025-11-12T22:54:40.061800+00:00'
 geo: Byron Bay, New South Wales, Australia
 goldstein_scale: '2.8'
+language: en
 num_articles: '20'
 source_url: https://www.redlandcitybulletin.com.au/story/9106961/bluesfest-2026-line-up-split-enz-earth-wind-fire
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: Experience Split Enz's reunion at Bluesfest 2026 in Byron Bay, along
     with Earth Wind & Fire. Perfect for the laid-back music lover.
   headline: 'Bluesfest 2026 line-up: Split Enz, Earth Wind & Fire'
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.redlandcitybulletin.com.au/story/9106961/bluesfest-2026-line-up-split-enz-earth-wind-fire
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Bluesfest 2026 line-up: Split Enz, Earth Wind & Fire'
-updated_at: '2025-11-11T23:37:51.860165+00:00'
+updated_at: '2025-11-12T22:51:24.797262+00:00'
 url_hash: 6061c036903a5e75b426a9b7d7620c1ba5d2584c
 ---
 

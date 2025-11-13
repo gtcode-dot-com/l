@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+{{- $siteLang := .Site.LanguageCode | default "en" -}}
+{{- $pageLang := .Lang | default $siteLang -}}
+<html lang="{{ $pageLang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{/* Title */}}
+  <title>{{ .Title }}</title>
+
+  {{/* Meta tags */}}
+  {{ with .Description }}
+  <meta name="description" content="{{ . }}" />
+  {{ end }}
+  {{ with .Params.canonical }}
+  <link rel="canonical" href="{{ . }}" />
+  {{ else }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{ end }}
+  <meta name="author" content="{{ .Params.author | default "Paul E. Lowndes" }}" />
+  {{ with .Params.robots }}
+  <meta name="robots" content="{{ . }}" />
+  {{ else }}
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  {{ end }}
+
+  {{/* Open Graph */}}
+  <meta property="og:title" content="{{ .Params.og_title | default .Title }}" />
+  <meta property="og:description" content="{{ .Params.og_description | default .Description }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:site_name" content="{{ .Params.og_site_name | default "GTCode Investigations" }}" />
+  {{ with .Params.og_image }}
+  <meta property="og:image" content="{{ . }}" />
+  {{ with $.Params.og_image_width }}
+  <meta property="og:image:width" content="{{ . }}" />
+  {{ end }}
+  {{ with $.Params.og_image_height }}
+  <meta property="og:image:height" content="{{ . }}" />
+  {{ end }}
+  {{ end }}
+  <meta property="og:type" content="{{ .Params.og_type | default "article" }}" />
+  {{ if eq (.Params.og_type | default "article") "article" }}
+  {{ with .Params.article_author }}
+  <meta property="article:author" content="{{ . }}" />
+  {{ end }}
+  {{ with .Params.article_published_time }}
+  <meta property="article:published_time" content="{{ . }}" />
+  {{ end }}
+  {{ with .Params.article_modified_time }}
+  <meta property="article:modified_time" content="{{ . }}" />
+  {{ end }}
+  {{ with .Params.article_section }}
+  <meta property="article:section" content="{{ . }}" />
+  {{ end }}
+  {{ range .Params.article_tags }}
+  <meta property="article:tag" content="{{ . }}" />
+  {{ end }}
+  {{ end }}
+
+  {{/* Twitter Card */}}
+  <meta name="twitter:card" content="{{ .Params.twitter_card | default "summary_large_image" }}" />
+  <meta name="twitter:title" content="{{ .Params.twitter_title | default .Title }}" />
+  <meta name="twitter:description" content="{{ .Params.twitter_description | default .Description }}" />
+  {{ with .Params.twitter_image }}
+  <meta name="twitter:image" content="{{ . }}" />
+  {{ with $.Params.twitter_image_alt }}
+  <meta name="twitter:image:alt" content="{{ . }}" />
+  {{ end }}
+  {{ end }}
+
+  {{/* Agentic Comment */}}
+  {{ with .Params.agentic_comment }}
+  <!--
+{{ . | safeHTML }}
+  -->
+  {{ end }}
+
+  {{/* JSON-LD Structured Data */}}
+  {{ with .Params.structured_data }}
+  <script type="application/ld+json">
+  {{ . | jsonify | safeJS }}
+  </script>
+  {{ end }}
+
+  {{/* Fonts */}}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  {{/* Investigation Dark Theme Styles */}}
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #030d1a;
+      --card-bg: #0a1628;
+      --accent: #1d9bf0;
+      --accent-bright: #3db4ff;
+      --text: #f8fafd;
+      --text-bright: #ffffff;
+      --muted: #b8c5d6;
+      --muted-dark: #8899aa;
+      --border: rgba(255, 255, 255, 0.12);
+      --border-bright: rgba(255, 255, 255, 0.2);
+      --surface: #0d1b2e;
+      --surface-raised: #122033;
+      --notice-bg: rgba(29, 155, 240, 0.08);
+      --notice-border: rgba(29, 155, 240, 0.25);
+      --content-max: 100%;
+      --grid-gap: clamp(1rem, 3vw, 1.75rem);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(29, 155, 240, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 60%, rgba(61, 180, 255, 0.08), transparent 45%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: clamp(1.25rem, 3vw, 2.25rem) clamp(0.75rem, 3vw, 2rem) clamp(2rem, 3vw, 3rem);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+      width: min(1100px, 100%);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.15rem, 1.8vw, 1.75rem);
+    }
+
+    nav.back-link {
+      padding-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .back-link a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 160ms ease;
+      letter-spacing: 0.02em;
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      background: transparent;
+    }
+
+    .back-link a:hover {
+      color: var(--text-bright);
+      background: rgba(255, 255, 255, 0.05);
+      gap: 0.5rem;
+    }
+
+    .article-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      padding: clamp(1.75rem, 4vw, 3.5rem);
+      box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.4),
+        0 16px 32px rgba(0, 0, 0, 0.3),
+        0 32px 64px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0.5;
+    }
+
+    .article-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border);
+      position: relative;
+    }
+
+    .article-header::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+    }
+
+    .article-title {
+      margin: 0;
+      font-size: clamp(2.25rem, 5vw, 3.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+      color: var(--text-bright);
+      line-height: 1.15;
+    }
+
+    .article-subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      line-height: 1.5;
+      text-wrap: pretty;
+      font-weight: 400;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+    }
+
+    .article-meta > div {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.35rem;
+      background: rgba(61, 180, 255, 0.05);
+    }
+
+    .article-meta strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .article-content {
+      max-width: var(--content-max);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .article-content h2 {
+      margin: 3rem 0 1rem;
+      font-size: clamp(1.35rem, 3vw, 1.9rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      color: var(--text-bright);
+      padding: 1rem 0 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      background: linear-gradient(90deg, rgba(61, 180, 255, 0.05), transparent 50%);
+      border-radius: 0 0.5rem 0 0;
+      position: relative;
+    }
+
+    .article-content h2::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .article-content h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .article-content h3 {
+      margin: 2rem 0 0.75rem;
+      font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+      font-weight: 600;
+      color: var(--text-bright);
+      padding-left: 0.75rem;
+      border-left: 2px solid rgba(61, 180, 255, 0.4);
+      background: linear-gradient(90deg, rgba(61, 180, 255, 0.03), transparent 40%);
+      padding: 0.5rem 0.75rem;
+      border-radius: 0 0.35rem 0.35rem 0;
+    }
+
+    .article-content h4,
+    .article-content h5,
+    .article-content h6 {
+      margin: 1.5rem 0 0.5rem;
+      font-weight: 600;
+      color: var(--text-bright);
+      padding-left: 0.5rem;
+      border-left: 2px solid rgba(61, 180, 255, 0.25);
+    }
+
+    .article-content p {
+      margin: 0;
+      padding: 0.75rem 0;
+      line-height: 1.85;
+      text-wrap: pretty;
+      color: var(--muted);
+      border-left: 2px solid transparent;
+      padding-left: 0.75rem;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .article-content p:hover {
+      background: rgba(255, 255, 255, 0.02);
+      border-left-color: rgba(61, 180, 255, 0.15);
+    }
+
+    .article-content p strong {
+      color: var(--text-bright);
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 0.1em 0.25em;
+      border-radius: 0.25rem;
+    }
+
+    .article-content p em {
+      color: var(--text);
+      font-style: italic;
+    }
+
+    .article-content a {
+      color: var(--accent-bright);
+      text-decoration-color: rgba(61, 180, 255, 0.4);
+      text-underline-offset: 3px;
+      transition: all 0.2s ease;
+    }
+
+    .article-content a:hover {
+      color: var(--accent-bright);
+      text-decoration-color: var(--accent-bright);
+      text-shadow: 0 0 8px rgba(61, 180, 255, 0.3);
+    }
+
+    .article-content ul {
+      margin: 1rem 0 1.5rem;
+      padding-left: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .article-content ol {
+      margin: 1rem 0 1.5rem;
+      padding-left: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .article-content ul li::marker {
+      color: var(--accent);
+    }
+
+    .article-content ol li::marker {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .article-content li {
+      line-height: 1.7;
+      color: var(--muted);
+      padding: 0.5rem 0.75rem;
+      padding-left: 0.5rem;
+      background: rgba(255, 255, 255, 0.015);
+      border-radius: 0.35rem;
+      border-left: 2px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .article-content li:hover {
+      background: rgba(61, 180, 255, 0.04);
+      border-left-color: rgba(61, 180, 255, 0.3);
+      padding-left: 0.75rem;
+    }
+
+    .article-content li p {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: transparent;
+    }
+
+    .article-content li p:hover {
+      background: transparent;
+      border-left-color: transparent;
+    }
+
+    .article-content li ul,
+    .article-content li ol {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .article-content li li {
+      background: rgba(255, 255, 255, 0.01);
+    }
+
+    .article-content li li:hover {
+      background: rgba(61, 180, 255, 0.03);
+    }
+
+    .article-content dl {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+    }
+
+    .article-content dt {
+      font-weight: 700;
+      color: var(--text-bright);
+      margin-top: 1rem;
+      padding: 0.5rem 0.75rem;
+      background: rgba(61, 180, 255, 0.08);
+      border-left: 2px solid var(--accent);
+      border-radius: 0 0.35rem 0.35rem 0;
+    }
+
+    .article-content dt:first-child {
+      margin-top: 0;
+    }
+
+    .article-content dd {
+      margin: 0.5rem 0 0 1.5rem;
+      padding: 0.5rem 0.75rem;
+      color: var(--muted);
+      border-left: 2px solid rgba(61, 180, 255, 0.2);
+      padding-left: 1rem;
+    }
+
+    .article-content blockquote {
+      margin: 1.5rem 0;
+      padding: 1.25rem 1.5rem;
+      padding-left: 1.75rem;
+      background: rgba(61, 180, 255, 0.05);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 0.5rem 0.5rem 0;
+      color: var(--text);
+      font-style: italic;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .article-content blockquote::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      font-size: 3rem;
+      color: var(--accent);
+      opacity: 0.2;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .article-content blockquote p {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+    }
+
+    .article-content blockquote p:hover {
+      background: transparent;
+      border-left-color: transparent;
+    }
+
+    .legal-notice {
+      background: var(--notice-bg);
+      border: 1px solid var(--notice-border);
+      border-radius: 1rem;
+      padding: 1.25rem 1.5rem;
+      padding-left: 1.75rem;
+      line-height: 1.7;
+      color: var(--muted);
+      font-size: 0.95rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      margin: 1.5rem 0;
+    }
+
+    .legal-notice::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--accent), var(--accent-bright));
+    }
+
+    .legal-notice p {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: transparent;
+    }
+
+    .legal-notice p:hover {
+      background: transparent;
+      border-left-color: transparent;
+    }
+
+    .article-divider {
+      height: 1px;
+      width: 100%;
+      border: 0;
+      background: linear-gradient(90deg, transparent, rgba(61, 180, 255, 0.3), transparent);
+      margin: 2.5rem 0 1rem;
+      position: relative;
+    }
+
+    .article-divider::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(61, 180, 255, 0.5);
+    }
+
+    .grid {
+      margin-top: clamp(2rem, 4vw, 3rem);
+      display: grid;
+      gap: var(--grid-gap);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .section-divider {
+      border-top: 1px solid var(--border);
+      margin: clamp(2.5rem, 6vw, 4rem) 0 clamp(2rem, 3vw, 2.75rem);
+    }
+
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      max-width: 100%;
+    }
+
+    .section-header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+      color: var(--text-bright);
+    }
+
+    .section-header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: clamp(1.5rem, 4vw, 2.25rem);
+      border-radius: 1.25rem;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        0 16px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      transition: all 220ms cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(61, 180, 255, 0.08), transparent 60%);
+      opacity: 0;
+      transition: opacity 220ms ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-bright);
+      box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.35),
+        0 24px 48px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(61, 180, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .card:hover::after {
+      opacity: 1;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.35em;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.35;
+      text-wrap: pretty;
+      color: var(--text-bright);
+      position: relative;
+      z-index: 1;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      flex: 1;
+      text-wrap: pretty;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card a {
+      color: var(--accent-bright);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: auto;
+      padding-top: 0.5rem;
+      position: relative;
+      z-index: 1;
+      transition: all 180ms ease;
+    }
+
+    .card a:hover {
+      gap: 0.5rem;
+      text-shadow: 0 0 8px rgba(61, 180, 255, 0.3);
+    }
+
+    .card a .arrow-circle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--accent);
+      color: var(--accent-bright);
+      background: rgba(61, 180, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: all 180ms ease;
+    }
+
+    .card a:hover .arrow-circle {
+      background: var(--accent);
+      border-color: var(--accent-bright);
+      box-shadow: 0 0 12px rgba(61, 180, 255, 0.5);
+      color: var(--text-bright);
+    }
+
+    .card a .arrow-glyph {
+      display: inline-block;
+      font-size: 0.9rem;
+      line-height: 1;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      margin-top: clamp(2rem, 4vw, 3rem);
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted-dark);
+      font-size: 0.85rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 160ms ease;
+    }
+
+    footer a:hover {
+      color: var(--accent-bright);
+      text-shadow: 0 0 8px rgba(61, 180, 255, 0.2);
+    }
+
+    .article-content img,
+    .article-content video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.75rem;
+      border: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .article-content code {
+      background: rgba(61, 180, 255, 0.1);
+      color: var(--accent-bright);
+      padding: 0.2em 0.5em;
+      border-radius: 0.35rem;
+      font-size: 0.9em;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      border: 1px solid rgba(61, 180, 255, 0.2);
+    }
+
+    .article-content pre {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    .article-content pre code {
+      background: transparent;
+      border: none;
+      padding: 0;
+      color: var(--text);
+    }
+
+    .article-content hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--border-bright), transparent);
+      margin: 2.5rem 0;
+      position: relative;
+    }
+
+    .article-content hr::after {
+      content: '•';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--accent);
+      font-size: 1.5rem;
+      background: var(--surface);
+      padding: 0 0.75rem;
+      line-height: 1;
+    }
+
+    .article-content table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      border: 1px solid var(--border-bright);
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .article-content table th {
+      background: linear-gradient(180deg, var(--surface-raised), var(--card-bg));
+      color: var(--text-bright);
+      font-weight: 700;
+      text-align: left;
+      padding: 1rem 1.25rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 2px solid var(--border-bright);
+      border-right: 1px solid var(--border);
+      position: relative;
+      vertical-align: top;
+    }
+
+    .article-content table th:last-child {
+      border-right: none;
+    }
+
+    .article-content table th:first-child {
+      border-left: 3px solid var(--accent);
+    }
+
+    .article-content table th::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 40%;
+      height: 2px;
+      background: var(--accent);
+      opacity: 0.6;
+    }
+
+    .article-content table td {
+      padding: 1.25rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      transition: all 0.2s ease;
+      vertical-align: top;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .article-content table td:last-child {
+      border-right: none;
+    }
+
+    .article-content table tbody tr {
+      transition: all 0.2s ease;
+    }
+
+    .article-content table tbody tr:hover {
+      background: rgba(61, 180, 255, 0.08);
+    }
+
+    .article-content table tbody tr:nth-child(odd) td {
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .article-content table tbody tr:nth-child(even) td {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .article-content table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* First column - category/label styling */
+    .article-content table tbody tr td:first-child {
+      font-weight: 700;
+      color: var(--text-bright);
+      background: rgba(61, 180, 255, 0.08) !important;
+      border-left: 3px solid var(--accent);
+      font-size: 1rem;
+    }
+
+    .article-content table tbody tr:hover td:first-child {
+      background: rgba(61, 180, 255, 0.15) !important;
+      border-left-color: var(--accent-bright);
+    }
+
+    /* Second column - distinct coloring */
+    .article-content table tbody tr td:nth-child(2) {
+      background: rgba(255, 255, 255, 0.03) !important;
+      color: var(--muted);
+    }
+
+    .article-content table tbody tr:hover td:nth-child(2) {
+      background: rgba(61, 180, 255, 0.06) !important;
+    }
+
+    /* Third column - evidence/details */
+    .article-content table tbody tr td:nth-child(3) {
+      background: rgba(0, 0, 0, 0.15) !important;
+      color: var(--muted-dark);
+      font-size: 0.9rem;
+    }
+
+    .article-content table tbody tr:hover td:nth-child(3) {
+      background: rgba(0, 0, 0, 0.1) !important;
+      color: var(--muted);
+    }
+
+    /* Strong text within table cells */
+    .article-content table strong {
+      color: var(--text-bright);
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 1.05em;
+      letter-spacing: 0.01em;
+    }
+
+    /* Emphasize text within table cells */
+    .article-content table em {
+      color: var(--accent-bright);
+      font-style: normal;
+      font-size: 0.9em;
+    }
+
+    /* Paragraphs within table cells */
+    .article-content table p {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: inherit;
+    }
+
+    .article-content table p:hover {
+      background: transparent;
+      border: none;
+    }
+
+    /* Code/technical text within table cells */
+    .article-content table code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.15em 0.4em;
+      font-size: 0.85em;
+      border: 1px solid rgba(61, 180, 255, 0.15);
+    }
+
+    /* Links within table cells */
+    .article-content table a {
+      color: var(--accent-bright);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: rgba(61, 180, 255, 0.3);
+    }
+
+    .article-content table a:hover {
+      text-decoration-color: var(--accent-bright);
+    }
+
+    /* Lists within table cells */
+    .article-content table ul,
+    .article-content table ol {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+      gap: 0.35rem;
+    }
+
+    .article-content table li {
+      padding: 0.25rem 0;
+      background: transparent;
+      border: none;
+      font-size: 0.9em;
+    }
+
+    .article-content table li:hover {
+      background: transparent;
+      border: none;
+      padding-left: 0;
+    }
+
+    /* Additional column styling for 4+ column tables */
+    .article-content table tbody tr td:nth-child(4) {
+      background: rgba(61, 180, 255, 0.04) !important;
+      color: var(--muted);
+    }
+
+    .article-content table tbody tr:hover td:nth-child(4) {
+      background: rgba(61, 180, 255, 0.08) !important;
+    }
+
+    .article-content table tbody tr td:nth-child(5) {
+      background: rgba(0, 0, 0, 0.25) !important;
+      color: var(--muted-dark);
+    }
+
+    .article-content table tbody tr:hover td:nth-child(5) {
+      background: rgba(0, 0, 0, 0.18) !important;
+    }
+
+    /* Spacing improvements for multi-line content in cells */
+    .article-content table td > *:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content table td br + * {
+      margin-top: 0.5rem;
+    }
+
+    /* Specific styling for .data-table class */
+    .article-content .data-table tbody tr td:first-child {
+      font-weight: 700 !important;
+      color: var(--text-bright) !important;
+      background: rgba(61, 180, 255, 0.08) !important;
+      border-left: 3px solid var(--accent) !important;
+      font-size: 1rem !important;
+    }
+
+    .article-content .data-table tbody tr:hover td:first-child {
+      background: rgba(61, 180, 255, 0.15) !important;
+      border-left-color: var(--accent-bright) !important;
+    }
+
+    .article-content .data-table tbody tr td:nth-child(2) {
+      background: rgba(255, 255, 255, 0.03) !important;
+      color: var(--muted) !important;
+    }
+
+    .article-content .data-table tbody tr:hover td:nth-child(2) {
+      background: rgba(61, 180, 255, 0.06) !important;
+    }
+
+    .article-content .data-table tbody tr td:nth-child(3) {
+      background: rgba(0, 0, 0, 0.15) !important;
+      color: var(--muted-dark) !important;
+      font-size: 0.9rem !important;
+    }
+
+    .article-content .data-table tbody tr:hover td:nth-child(3) {
+      background: rgba(0, 0, 0, 0.1) !important;
+      color: var(--muted) !important;
+    }
+
+    .article-content .data-table tbody tr:nth-child(odd) td {
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .article-content .data-table tbody tr:nth-child(even) td {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .article-content .data-table strong {
+      color: var(--text-bright) !important;
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 1.05em;
+      letter-spacing: 0.01em;
+    }
+
+    .article-content .data-table td {
+      padding: 1.25rem 1.25rem !important;
+      border-bottom: 1px solid var(--border) !important;
+      border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+      vertical-align: top !important;
+      line-height: 1.7 !important;
+    }
+
+    @media (max-width: 720px) {
+      .article-container {
+        padding: 1.5rem;
+      }
+
+      .article-header {
+        padding-bottom: 1rem;
+      }
+
+      .article-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+      }
+
+      .article-meta > div {
+        padding: 0.35rem 0.5rem;
+      }
+
+      .article-content {
+        max-width: 100%;
+        font-size: 1rem;
+      }
+
+      .article-content h2 {
+        font-size: 1.5rem;
+        padding: 0.75rem 0 0.5rem 0.75rem;
+        margin: 2rem 0 0.75rem;
+      }
+
+      .article-content h3 {
+        font-size: 1.25rem;
+        padding: 0.4rem 0.5rem;
+      }
+
+      .article-content p {
+        padding: 0.5rem 0;
+        padding-left: 0.5rem;
+      }
+
+      .article-content li {
+        padding: 0.4rem 0.5rem;
+        padding-left: 0.35rem;
+      }
+
+      .article-content table th,
+      .article-content table td {
+        padding: 0.75rem 0.85rem;
+        font-size: 0.85rem;
+      }
+
+      .article-content table th {
+        font-size: 0.8rem;
+      }
+
+      .article-content table td:first-child {
+        font-size: 0.9rem;
+      }
+
+      .article-content table strong {
+        font-size: 1em;
+        margin-bottom: 0.25rem;
+      }
+
+      .article-content blockquote {
+        padding: 1rem 1.25rem;
+        padding-left: 1.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 2.5rem 1rem 3rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    {{ if not .IsHome }}
+    <nav class="back-link" aria-label="Navigation breadcrumb">
+      <a href="/">← Back to GTCode.com</a>
+      {{ if .Parent }}
+      <a href="/investigation/">← Back to Investigations</a>
+      {{ end }}
+    </nav>
+    {{ else }}
+    <nav class="back-link" aria-label="Return to GTCode homepage">
+      <a href="/">← Back to GTCode.com</a>
+    </nav>
+    {{ end }}
+
+    {{ block "main" . }}{{ end }}
+
+    <footer>
+      © {{ now.Format "2006" }} <a href="/">GTCode.com</a> — Forensic documentation prepared for investigators and oversight bodies.
+    </footer>
+  </div>
+</body>
+</html>

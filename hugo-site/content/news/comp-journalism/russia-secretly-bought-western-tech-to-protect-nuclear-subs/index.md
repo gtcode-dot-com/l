@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T19:05:22.078012+00:00'
-exported_at: '2025-11-10T19:05:22.836913+00:00'
+date: '2025-11-12T22:51:27.777210+00:00'
+exported_at: '2025-11-12T22:54:43.057457+00:00'
 feed: https://www.icij.org/feed/
+language: en
 source_url: https://www.icij.org/investigations/russia-archive/russia-secretly-acquired-western-technology-to-protect-its-nuclear-submarine-fleet
 structured_data:
   about: []
@@ -18,6 +19,7 @@ structured_data:
     procurement network behind Russia’s surveillance program Harmony.
   headline: Russia secretly acquired Western technology to protect its nuclear submarine
     fleet
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.icij.org/investigations/russia-archive/russia-secretly-acquired-western-technology-to-protect-its-nuclear-submarine-fleet
@@ -26,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: Russia secretly acquired Western technology to protect its nuclear submarine
   fleet
-updated_at: '2025-11-10T19:05:22.078012+00:00'
+updated_at: '2025-11-12T22:51:27.777210+00:00'
 url_hash: 1b8bd994a93996d3cd54509a797fd46f1d23a22e
 ---
 

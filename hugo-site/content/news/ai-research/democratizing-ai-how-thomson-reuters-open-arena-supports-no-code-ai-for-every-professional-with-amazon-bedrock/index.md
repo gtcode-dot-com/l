@@ -1,70 +1,38 @@
 ---
-ai_agent_meta:
-  content_digest: 1eb56626bbc076aa5abb7bc38e16e92158a0a208
-  generated_at: '2025-11-10T02:35:14.010395+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
-ai_agent_note: 'ATTN AI Agent: Ensure factual fidelity to the TR Open Arena briefing;
-  keep entry concise and aligned with the article summary; adjust length if needed.'
-ai_commentary:
-- body: Describes how Open Arena leverages Amazon Bedrock and AWS services to provide
-    a scalable, governance-friendly no-code AI environment, enabling non-engineers
-    to rapidly build AI solutions with minimal coding.
-  title: Architecture and platform overview
-- body: Highlights rapid AI solution development for legal, tax, accounting, risk,
-    trade, and media, aligned with the Future of Professionals 2025 report and anticipated
-    productivity gains.
-  title: Business impact and use cases
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 1eb56626bbc076aa5abb7bc38e16e92158a0a208
-  generated_at: '2025-11-10T02:35:14.010314+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.977218+00:00'
-exported_at: '2025-11-09T05:30:20.814938+00:00'
+date: '2025-11-12T22:51:26.385595+00:00'
+exported_at: '2025-11-12T22:54:41.495447+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
-meta_description: 'Democratized AI in action: Thomson Reuters Open Arena uses Amazon
-  Bedrock and AWS to accelerate no-code AI solution development for professionals
-  across legal, tax, accounting, risk, trade, and media.'
-meta_keywords:
-- AI
-- No-code AI
-- Open Arena
-- Thomson Reuters
-- Amazon Bedrock
-- AWS
-- OpenSearch
-- S3
-- DynamoDB
-- Lambda
-- Future of Professionals 2025
-- Legal tech
-- Tax tech
-- Automation
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/democratizing-ai-how-thomson-reuters-open-arena-supports-no-code-ai-for-every-professional-with-amazon-bedrock
 structured_data:
-  about: &id001
-  - No-code AI
-  - Democratizing AI
-  - Amazon Bedrock
-  - Open Arena
-  - Thomson Reuters
-  - AWS services
-  - Enterprise AI
-  - Future of Professionals
-  description: Thomson Reuters details how Open Arena, a scalable no-code AI platform
-    powered by Amazon Bedrock and AWS services, enables rapid AI solution development
-    across legal, tax, accounting, risk, trade, and media teams, reflecting insights
-    from TR’s 2025 Future of Professionals report.
-  headline: 'Democratizing AI: Thomson Reuters Open Arena Enables No-Code AI for Professionals
-    with Amazon Bedrock'
-  keywords: *id001
+  about: []
+  author: ''
+  description: In this blog post, we explore how TR addressed key business use cases
+    with Open Arena, a highly scalable and flexible no-code AI solution powered by
+    Amazon Bedrock and other AWS services such as Amazon OpenSearch Service, Amazon
+    Simple Storage Service (Amazon S3), Amazon DynamoDB, and AWS Lambda. We'll explain
+    how TR used AWS services to build this solution, including how the architecture
+    was designed, the use cases it solves, and the business profiles that use it.
+  headline: 'Democratizing AI: How Thomson Reuters Open Arena supports no-code AI
+    for every professional with Amazon Bedrock'
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://aws.amazon.com/blogs/machine-learning/democratizing-ai-how-thomson-reuters-open-arena-supports-no-code-ai-for-every-professional-with-amazon-bedrock
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: 'Democratizing AI: How Thomson Reuters Open Arena supports no-code AI for every
   professional with Amazon Bedrock'
-updated_at: '2025-11-09T05:13:27.977218+00:00'
+updated_at: '2025-11-12T22:51:26.385595+00:00'
 url_hash: dfd47cbfde7ba63013ba5116ec4a54abac9c15fc
 ---
 

@@ -9,11 +9,12 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '1.10006784890518'
 category: ai-security
-date: '2025-11-10T17:03:44.350220+00:00'
+date: '2025-11-12T22:51:24.870575+00:00'
 event_code: '112'
 event_root: '11'
-exported_at: '2025-11-10T17:03:45.690700+00:00'
+exported_at: '2025-11-12T22:54:39.987339+00:00'
 goldstein_scale: '-2.0'
+language: en
 num_articles: '50'
 source_url: https://island.lk/govt-draws-fire-over-allocation-of-rs-78-mn-to-power-sector-reform-secretariat
 structured_data:
@@ -26,6 +27,7 @@ structured_data:
     questioned the government’s decision to allocate Rs. 78 million to the PSRS, which
     was originally established to […]
   headline: Govt. draws fire over allocation of Rs. 78 mn to Power Sector Reform Secretariat
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://island.lk/govt-draws-fire-over-allocation-of-rs-78-mn-to-power-sector-reform-secretariat
@@ -33,7 +35,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Govt. draws fire over allocation of Rs. 78 mn to Power Sector Reform Secretariat
-updated_at: '2025-11-10T17:03:44.350220+00:00'
+updated_at: '2025-11-12T22:51:24.870575+00:00'
 url_hash: cbc6129f6c9e72498ba7039a841d02589907d5e9
 ---
 

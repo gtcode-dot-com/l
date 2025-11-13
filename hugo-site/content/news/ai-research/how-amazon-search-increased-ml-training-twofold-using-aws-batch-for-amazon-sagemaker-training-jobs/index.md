@@ -1,55 +1,37 @@
 ---
-ai_commentary:
-- body: At Amazon Search, hundreds of GPU-accelerated instances train and evaluate
-    models. They needed prioritization (production high, research medium, hyperparameter
-    sweeps low) and a solution that could adapt to interruptions without FIFO constraints.
-  title: Context and Challenge
-- body: AWS Batch was adopted to orchestrate SageMaker Training jobs, enabling flexible
-    scheduling across GPU families (P5, P4) and other compatible instances within
-    a managed workflow.
-  title: The Solution
-- body: A prioritized queue controlled execution order and resource selection so high-priority
-    production jobs run first, with lower-priority tasks queued when capacity permits.
-  title: Prioritization and Scheduling
-- body: If a job fails or an instance type becomes saturated, the system re-routes
-    the job to other suitable instances while preserving overall prioritization.
-  title: Resilience and Flexibility
-- body: The approach delivered a twofold increase in ML training throughput and enabled
-    more models to be trained in parallel, improving utilization of GPU resources.
-  title: Impact
-- body: Continue refining scheduling criteria, expand to more instance types, and
-    deepen the managed integration to further ease model development.
-  title: Future directions
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: d07d0393f0446ad318df02084095af3b9eb8d203
-  generated_at: '2025-11-10T01:56:49.219961+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-research
-date: '2025-11-09T05:13:27.960975+00:00'
-exported_at: '2025-11-09T05:30:20.823788+00:00'
+date: '2025-11-12T22:51:26.419822+00:00'
+exported_at: '2025-11-12T22:54:41.482732+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-amazon-search-increased-ml-training-twofold-using-aws-batch-for-amazon-sagemaker-training-jobs
 structured_data:
-  about: &id001
-  - Amazon Search
-  - AWS Batch
-  - SageMaker Training
-  - GPU-accelerated instances (P5, P4, and others)
-  - Job prioritization and interruption handling
-  - Managed ML training orchestration
-  description: Amazon Search optimized GPU utilization by leveraging AWS Batch to
-    orchestrate SageMaker Training jobs across GPU-accelerated instances (P5, P4,
-    and others). This managed solution supports prioritization, interruption handling,
-    and scalable scheduling, delivering a twofold improvement in ML training throughput.
-    The post includes a step-by-step implementation walkthrough.
-  headline: How Amazon Search Increased ML Training Throughput Twofold with AWS Batch
-    for SageMaker Training
-  keywords: *id001
+  about: []
+  author: ''
+  description: In this post, we show you how Amazon Search optimized GPU instance
+    utilization by leveraging AWS Batch for SageMaker Training jobs. This managed
+    solution enabled us to orchestrate machine learning (ML) training workloads on
+    GPU-accelerated instance families like P5, P4, and others. We will also provide
+    a step-by-step walkthrough of the use case implementation.
+  headline: How Amazon Search increased ML training twofold using AWS Batch for Amazon
+    SageMaker Training jobs
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://aws.amazon.com/blogs/machine-learning/how-amazon-search-increased-ml-training-twofold-using-aws-batch-for-amazon-sagemaker-training-jobs
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: How Amazon Search increased ML training twofold using AWS Batch for Amazon
   SageMaker Training jobs
-updated_at: '2025-11-09T05:13:27.960975+00:00'
+updated_at: '2025-11-12T22:51:26.419822+00:00'
 url_hash: cd04ea205dccd946ce31247bcb9d203327b6a1f8
 ---
 

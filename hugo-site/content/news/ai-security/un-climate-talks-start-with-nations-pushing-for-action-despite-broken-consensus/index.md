@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-1.998001998002'
 category: ai-security
-date: '2025-11-10T17:03:38.109481+00:00'
+date: '2025-11-12T22:51:24.865618+00:00'
 event_code: 080
 event_root: 08
-exported_at: '2025-11-10T17:03:45.713617+00:00'
+exported_at: '2025-11-12T22:54:39.992959+00:00'
 geo: London, London, City of, United Kingdom
 goldstein_scale: '5.0'
+language: en
 num_articles: '56'
 source_url: https://www.halsteadgazette.co.uk/news/national/25608146.un-climate-talks-start-nations-pushing-action-despite-broken-consensus
 structured_data:
@@ -24,6 +25,7 @@ structured_data:
     as well as defending multilaterialism itself.
   headline: UN climate talks start with nations pushing for action despite broken
     consensus
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.halsteadgazette.co.uk/news/national/25608146.un-climate-talks-start-nations-pushing-action-despite-broken-consensus
@@ -31,7 +33,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: UN climate talks start with nations pushing for action despite broken consensus
-updated_at: '2025-11-10T17:03:38.109481+00:00'
+updated_at: '2025-11-12T22:51:24.865618+00:00'
 url_hash: be4c4c8f5bcda46dc455a07cae32913f01ae72b1
 ---
 

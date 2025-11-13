@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-10T06:04:59.156379+00:00'
-exported_at: '2025-11-10T06:05:04.439004+00:00'
+date: '2025-11-12T22:51:27.751581+00:00'
+exported_at: '2025-11-12T22:54:43.083948+00:00'
 feed: https://source.opennews.org/rss/
+language: en
 source_url: https://source.opennews.org/articles/seven-takeaways-nicar25
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: We surveyed and interviewed more than two dozen attendees about their
     experiences at NICAR25
   headline: Seven takeaways from NICAR25
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://source.opennews.org/articles/seven-takeaways-nicar25
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Seven takeaways from NICAR25
-updated_at: '2025-11-10T06:04:59.156379+00:00'
+updated_at: '2025-11-12T22:51:27.751581+00:00'
 url_hash: f4676115505a4ad5b9910c6fef0862ba2ce401c3
 ---
 

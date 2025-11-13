@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-1.27591706539075'
 category: ai-security
-date: '2025-11-10T06:05:58.730968+00:00'
+date: '2025-11-12T22:51:24.845588+00:00'
 event_code: '020'
 event_root: '02'
-exported_at: '2025-11-10T06:06:08.003978+00:00'
+exported_at: '2025-11-12T22:54:40.010260+00:00'
 geo: Iceland
 goldstein_scale: '3.0'
+language: en
 num_articles: '70'
 source_url: https://www.gazetteandherald.co.uk/news/national/25608143.royal-navy-veteran-urges-people-remember-families-remembrance-day
 structured_data:
@@ -22,6 +23,7 @@ structured_data:
   author: ''
   description: The nation will fall silent at 11am on November 11.
   headline: Royal Navy veteran urges people to remember families on Remembrance Day
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.gazetteandherald.co.uk/news/national/25608143.royal-navy-veteran-urges-people-remember-families-remembrance-day
@@ -29,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Royal Navy veteran urges people to remember families on Remembrance Day
-updated_at: '2025-11-10T06:05:58.730968+00:00'
+updated_at: '2025-11-12T22:51:24.845588+00:00'
 url_hash: 358c44bccddaa45e9e4c24ed3f14413d606073d1
 ---
 

@@ -1,46 +1,38 @@
 ---
-ai_commentary:
-- body: AI-driven forgeries raise the risk of fraudulent reimbursements, pushing providers
-    and employers to strengthen verification beyond surface-level image checks.
-  title: Security implications for expense systems
-- body: Current detectors leverage image metadata and contextual data, but skilled
-    forgers can undermine these signals, highlighting the ongoing arms race between
-    forgery and detection.
-  title: Detection strategies and their limits
-- body: Implement multi-layer verification, cross-check travel and expense data, maintain
-    robust server-side logs, and combine automated checks with human review to mitigate
-    fake receipts.
-  title: Practical steps for organizations
+ai_commentary: []
 ai_commentary_meta:
-  content_digest: 8371f8b518ad8ab2e803ee43ba9439aea032af6a
-  generated_at: '2025-11-10T02:01:14.896686+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
 category: ai-security
-date: '2025-11-09T05:30:09.765094+00:00'
-exported_at: '2025-11-09T05:31:58.079702+00:00'
+date: '2025-11-12T22:51:24.757314+00:00'
+exported_at: '2025-11-12T22:54:40.102586+00:00'
 feed: https://www.schneier.com/feed/atom/
+language: en
 source_url: https://www.schneier.com/blog/archives/2025/11/faking-receipts-with-ai.html
 structured_data:
-  about: &id001
-  - AI-generated receipts are increasingly realistic, including details like wrinkles,
-    itemization, and signatures.
-  - Historically, forgery relied on physical materials; AI now enables convincing
-    digital forgeries with less effort.
-  - Expense management platforms can be deceived by AI-created receipts, prompting
-    reliance on image metadata and contextual cues for detection.
-  - Metadata can be stripped or altered by users via photos or screenshots, complicating
-    verification.
-  - Organizations are using broader contextual signals (e.g., server names, timestamps,
-    trip details) to assess authenticity, fueling an AI-forensics arms race.
-  description: Overview of how AI-generated receipts have become increasingly realistic,
-    the challenges they pose to expense verification, and the ongoing security arms
-    race as organizations seek stronger detection and contextual analysis.
+  about: []
+  author: ''
+  description: 'Over the past few decades, it’s become easier and easier to create
+    fake receipts. Decades ago, it required special paper and printers—I remember
+    a company in the UK advertising its services to people trying to cover up their
+    affairs. Then, receipts became computerized, and faking them required some artistic
+    skills to make the page look realistic. Now, AI can do it all: Several receipts
+    shown to the FT by expense management platforms demonstrated the realistic nature
+    of the images, which included wrinkles in paper, detailed itemization that matched
+    real-life menus, and signatures...'
   headline: Faking Receipts with AI
-  keywords: *id001
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://www.schneier.com/blog/archives/2025/11/faking-receipts-with-ai.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
 title: Faking Receipts with AI
-updated_at: '2025-11-09T05:30:09.765094+00:00'
+updated_at: '2025-11-12T22:51:24.757314+00:00'
 url_hash: 0d56074a0ecffd570ebd09c27ba45cfc2e125d2c
 ---
 

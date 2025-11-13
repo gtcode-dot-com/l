@@ -7,9 +7,10 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-11T15:20:00.732876+00:00'
-exported_at: '2025-11-11T15:20:02.501045+00:00'
+date: '2025-11-12T22:51:27.792538+00:00'
+exported_at: '2025-11-12T22:54:43.040956+00:00'
 feed: https://www.theguardian.com/media/data-journalism/rss
+language: en
 source_url: https://www.theguardian.com/news/2023/nov/30/the-crunch-noisychart-audio-video-series
 structured_data:
   about: []
@@ -17,6 +18,7 @@ structured_data:
   description: Why we’re making charts with audio, and how that relates to our new
     video series and newsletter
   headline: Welcome to The Crunch. Wait, what is The Crunch?
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.theguardian.com/news/2023/nov/30/the-crunch-noisychart-audio-video-series
@@ -24,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Welcome to The Crunch. Wait, what is The Crunch?
-updated_at: '2025-11-11T15:20:00.732876+00:00'
+updated_at: '2025-11-12T22:51:27.792538+00:00'
 url_hash: 8f88044cda0dd101b51d33f497be7fefd2a5212d
 ---
 

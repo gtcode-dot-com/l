@@ -9,12 +9,13 @@ ai_commentary_meta:
   provider: ''
 avg_tone: '-7.5'
 category: ai-security
-date: '2025-11-12T06:05:28.931224+00:00'
+date: '2025-11-12T22:51:24.777409+00:00'
 event_code: '190'
 event_root: '19'
-exported_at: '2025-11-12T06:05:31.601741+00:00'
+exported_at: '2025-11-12T22:54:40.082833+00:00'
 geo: Milan, Lombardia, Italy
 goldstein_scale: '-10.0'
+language: it
 num_articles: '10'
 source_url: https://www.zazoom.it/2025-11-10/incendio-a-milano-aree-industriali-in-fiamme/18104415
 structured_data:
@@ -23,6 +24,7 @@ structured_data:
   description: Un incendio di vaste proporzioni ha devastato un'area industriale di
     Milano, obbligando all'evacuazione di centinaia di persone.
   headline: Incendio a Milano | aree industriali in fiamme
+  inLanguage: it
   keywords: []
   main_image: ''
   original_source: https://www.zazoom.it/2025-11-10/incendio-a-milano-aree-industriali-in-fiamme/18104415
@@ -30,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Incendio a Milano | aree industriali in fiamme
-updated_at: '2025-11-12T06:05:28.931224+00:00'
+updated_at: '2025-11-12T22:51:24.777409+00:00'
 url_hash: ea5095441e33a92e556142112a008965e31dda68
 ---
 

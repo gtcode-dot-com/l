@@ -8,12 +8,13 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-11-11T15:18:04.298435+00:00'
+date: '2025-11-12T22:51:24.812949+00:00'
 event_code: 090
 event_root: 09
-exported_at: '2025-11-11T15:18:08.032425+00:00'
+exported_at: '2025-11-12T22:54:40.044788+00:00'
 geo: Texas, United States
 goldstein_scale: '-2.0'
+language: en
 num_articles: '10'
 source_url: https://www.bgr.com/2014803/are-google-searches-private
 structured_data:
@@ -22,6 +23,7 @@ structured_data:
   description: More people use Google than any other search engine and privacy concerns
     are legitimate. Google does collect data, and per a judge's ruling, shares it.
   headline: Are Your Google Searches Actually Private?
+  inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://www.bgr.com/2014803/are-google-searches-private
@@ -29,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Are Your Google Searches Actually Private?
-updated_at: '2025-11-11T15:18:04.298435+00:00'
+updated_at: '2025-11-12T22:51:24.812949+00:00'
 url_hash: 6a56883cf2e54ce7bdece9431f99de2141cedc94
 ---
 
