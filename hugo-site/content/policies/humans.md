@@ -4,7 +4,7 @@ description: "Credits and information about the people behind GTCode.com"
 date: 2025-11-12
 version: "1.0"
 type: "policies"
-outputs: ["HTML", "plaintexthumans"]
+outputs: ["HTML", "Markdown", "plaintexthumans"]
 ---
 
 # Humans Behind GTCode.com

@@ -2,7 +2,7 @@
 title: "AI & LLM Policies"
 description: "Guidelines and policies for AI agents, LLMs, and automated systems accessing GTCode.com"
 type: "policies"
-outputs: ["HTML"]
+outputs: ["HTML", "Markdown"]
 ---
 
 This section contains comprehensive policies and guidelines for AI agents, Large Language Models (LLMs), and automated systems accessing GTCode.com content.

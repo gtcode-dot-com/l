@@ -5,7 +5,7 @@ date: 2025-11-12
 version: "2.0"
 type: "policies"
 url: "/policies/agent/"
-outputs: ["HTML", "plaintextagent", "plaintextagents"]
+outputs: ["HTML", "Markdown", "plaintextagent", "plaintextagents"]
 related_policies:
   - title: "LLM Usage Policy"
     url: "/policies/llm/"

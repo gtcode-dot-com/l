@@ -4,7 +4,7 @@ description: "General AI access and usage guidelines for GTCode.com"
 date: 2025-11-12
 version: "1.0"
 type: "policies"
-outputs: ["HTML", "plaintextai"]
+outputs: ["HTML", "Markdown", "plaintextai"]
 related_policies:
   - title: "AI Agent Policy"
     url: "/policies/agent/"

@@ -9,6 +9,13 @@ canonifyURLs = false
 relativeURLs = true
 
 [outputFormats]
+  [outputFormats.Markdown]
+    mediaType = "text/markdown"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = false
+    suffix = "md"
+
   [outputFormats.news-sitemap]
     baseName = "news-sitemap"
     mediaType = "application/xml"
@@ -65,9 +72,9 @@ relativeURLs = true
     path = ""
 
 [outputs]
-  home = ["HTML", "RSS", "news-sitemap"]
-  section = ["HTML", "RSS"]
-  page = ["HTML"]
+  home = ["HTML", "Markdown", "RSS", "news-sitemap"]
+  section = ["HTML", "Markdown", "RSS"]
+  page = ["HTML", "Markdown"]
 
 [params]
   description = 'Paul E. Lowndes is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'

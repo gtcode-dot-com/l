@@ -4,7 +4,7 @@ description: "Robots.txt configuration for web crawlers and search engines"
 date: 2025-11-12
 version: "1.0"
 type: "policies"
-outputs: ["HTML", "plaintextrobots"]
+outputs: ["HTML", "Markdown", "plaintextrobots"]
 ---
 
 # Robots.txt Configuration

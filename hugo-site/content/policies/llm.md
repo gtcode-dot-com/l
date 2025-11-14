@@ -4,7 +4,7 @@ description: "Comprehensive guidelines for Large Language Models accessing GTCod
 date: 2025-11-12
 version: "2.0"
 type: "policies"
-outputs: ["HTML", "plaintextllm", "plaintextllms"]
+outputs: ["HTML", "Markdown", "plaintextllm", "plaintextllms"]
 related_policies:
   - title: "AI Agent Policy"
     url: "/policies/agent/"

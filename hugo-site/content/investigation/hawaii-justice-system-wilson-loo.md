@@ -112,351 +112,310 @@ structured_data:
       articleSection: "Investigations"
       keywords: "Wilson Loo, Judicial Misconduct, Hawaii, Corruption, Commission on Judicial Conduct"
 ---
+### Legal Notice
 
-<div class="disclaimer">
-  <h3>Legal Notice</h3>
-  <p>This report represents a good faith effort to document and disclose matters of serious public concern.
-  All factual assertions are made with a reasonable basis and sincere belief in their truth, supported by
-  firsthand observation or authenticated documentation. All individuals mentioned are presumed innocent
-  unless proven guilty in a court of law. This disclosure follows multiple attempts to address these
-  issues through official channels.</p>
-</div>
+This report represents a good faith effort to document and disclose matters of serious public concern.
+All factual assertions are made with a reasonable basis and sincere belief in their truth, supported by
+firsthand observation or authenticated documentation. All individuals mentioned are presumed innocent
+unless proven guilty in a court of law. This disclosure follows multiple attempts to address these
+issues through official channels.
 
-<p class="lead">A legal proceeding in Honolulu has raised serious questions about the integrity of Hawaii's
+A legal proceeding in Honolulu has raised serious questions about the integrity of Hawaii's
 judicial system, following allegations of witness influence, perjury, and systematic obstruction of justice
-involving Judge Wilson Loo, local police, and other parties.</p>
+involving Judge Wilson Loo, local police, and other parties.
 
-<h2>The Core Allegation: Judicial Misconduct in Plain Sight</h2>
+## The Core Allegation: Judicial Misconduct in Plain Sight
 
-<div class="key-allegation">
-<h3>What Allegedly Happened in Judge Loo's Courtroom</h3>
-<p>During an injunction hearing that was recorded audio-only despite being conducted in person, Judge Wilson
-    Loo allegedly made a deliberate non-verbal gesture-a clear "no" nod accompanied by a facial
-    expression-immediately before witness [Anonymous] answered a question about providing LSD to the
-    plaintiff.</p>
+### What Allegedly Happened in Judge Loo's Courtroom
 
-<p>When the plaintiff attempted to object, stating "Let the record show that the judge just...", Judge Loo
-    reportedly cut him off aggressively, shouting "Nah ah ah enough out of you!!" This prevented the visual
-    cue from being documented in the official audio record.</p>
+During an injunction hearing that was recorded audio-only despite being conducted in person, Judge Wilson
+Loo allegedly made a deliberate non-verbal gesture-a clear "no" nod accompanied by a facial
+expression-immediately before witness [Anonymous] answered a question about providing LSD to the
+plaintiff.
 
-<p><strong>Legal Implications:</strong> If proven, this constitutes <em>suborning perjury</em>-a felony
-    under both federal and Hawaii state law. Judge Loo's alleged actions would represent a deliberate
-    attempt to induce false testimony under oath regarding a material fact (drug distribution), potentially
-    carrying penalties including removal from office and criminal prosecution.</p>
-</div>
+When the plaintiff attempted to object, stating "Let the record show that the judge just...", Judge Loo
+reportedly cut him off aggressively, shouting "Nah ah ah enough out of you!!" This prevented the visual
+cue from being documented in the official audio record.
 
-<p>This case centers on a disturbing question: What happens when a judge who previously served on Hawaii's
+**Legal Implications:** If proven, this constitutes *suborning perjury*-a felony
+under both federal and Hawaii state law. Judge Loo's alleged actions would represent a deliberate
+attempt to induce false testimony under oath regarding a material fact (drug distribution), potentially
+carrying penalties including removal from office and criminal prosecution.
+
+This case centers on a disturbing question: What happens when a judge who previously served on Hawaii's
 Commission on Judicial Conduct allegedly uses that insider knowledge to manipulate court proceedings while
-avoiding detection?</p>
+avoiding detection?
 
-<h2>The Pattern of Harassment Leading to Court</h2>
+## The Pattern of Harassment Leading to Court
 
-<p>The events leading to this courtroom confrontation began with what the plaintiff describes as an escalating
-campaign of harassment by the defendant. According to the plaintiff's account:</p>
+The events leading to this courtroom confrontation began with what the plaintiff describes as an escalating
+campaign of harassment by the defendant. According to the plaintiff's account:
 
-<div class="timeline">
-<h3>Timeline of Alleged Events</h3>
-<div class="timeline-item">
-    <strong>Prior Federal Matter:</strong> Before meeting the defendant, the plaintiff had contacted federal
-    authorities regarding separate incidents involving a conspired murder threat from Eugene and Rita
-    Hartmann, and successful witness tampering / blackmail crime commissioned by "Kevin" outside Kahala
-    Whole Foods that referenced {} P_.
-</div>
-<div class="timeline-item">
-    <strong>Police Officer Allegedly Cycled Out:</strong> Following the plaintiff's federal contact, a
-    police officer was allegedly removed from the Wahiawa beat, establishing clear motive for HPD
-    retaliation against the plaintiff.
-</div>
-<div class="timeline-item">
-    <strong>Initial Contact:</strong> The defendant owed the plaintiff $200. Prior to collection efforts,
-    the plaintiff disclosed details of the prior federal incidents.
-</div>
-<div class="timeline-item">
-    <strong>Drug Distribution Begins:</strong> After learning of the federal matter, the defendant allegedly
-    began offering and providing controlled substances, including LSD, to the plaintiff.
-</div>
-<div class="timeline-item">
-    <strong>Physical Violence:</strong> The defendant allegedly kicked the plaintiff at a Starbucks,
-    escalating to physical harassment.
-</div>
-<div class="timeline-item">
-    <strong>Vehicular Assault:</strong> Multiple incidents of alleged vehicular aggression, including one
-    where the defendant reportedly accelerated his vehicle at high speed toward the plaintiff on a country
-    road.
-</div>
-<div class="timeline-item">
-    <strong>Police Reports Filed:</strong> The plaintiff filed multiple reports with HPD. Despite documented
-    evidence, no arrests were made - consistent with the established motive for retaliation.
-</div>
-<div class="timeline-item">
-    <strong>"Federal Buddy" Statement:</strong> Days before the hearing, the defendant was overheard stating
-    "I have another buddy who is federal," suggesting connections that may have influenced subsequent
-    proceedings.
-</div>
-</div>
+### Timeline of Alleged Events
 
-<h2>The Felony Perjury: Material False Testimony Under Oath</h2>
+**Prior Federal Matter:** Before meeting the defendant, the plaintiff had contacted federal
+authorities regarding separate incidents involving a conspired murder threat from Eugene and Rita
+Hartmann, and successful witness tampering / blackmail crime commissioned by "Kevin" outside Kahala
+Whole Foods that referenced {} P\_.
 
-<p>The central criminal act in this case is the defendant's alleged perjury regarding drug distribution. When
+**Police Officer Allegedly Cycled Out:** Following the plaintiff's federal contact, a
+police officer was allegedly removed from the Wahiawa beat, establishing clear motive for HPD
+retaliation against the plaintiff.
+
+**Initial Contact:** The defendant owed the plaintiff $200. Prior to collection efforts,
+the plaintiff disclosed details of the prior federal incidents.
+
+**Drug Distribution Begins:** After learning of the federal matter, the defendant allegedly
+began offering and providing controlled substances, including LSD, to the plaintiff.
+
+**Physical Violence:** The defendant allegedly kicked the plaintiff at a Starbucks,
+escalating to physical harassment.
+
+**Vehicular Assault:** Multiple incidents of alleged vehicular aggression, including one
+where the defendant reportedly accelerated his vehicle at high speed toward the plaintiff on a country
+road.
+
+**Police Reports Filed:** The plaintiff filed multiple reports with HPD. Despite documented
+evidence, no arrests were made - consistent with the established motive for retaliation.
+
+**"Federal Buddy" Statement:** Days before the hearing, the defendant was overheard stating
+"I have another buddy who is federal," suggesting connections that may have influenced subsequent
+proceedings.
+
+## The Felony Perjury: Material False Testimony Under Oath
+
+The central criminal act in this case is the defendant's alleged perjury regarding drug distribution. When
 directly questioned under oath about providing LSD, the defendant denied doing so-despite text message
-evidence presented in court showing the plaintiff had "took the acid."</p>
+evidence presented in court showing the plaintiff had "took the acid."
 
-<div class="highlight">
-<p><strong>The Criminal Elements:</strong></p>
-<ul>
-    <li>The defendant was under oath in a judicial proceeding</li>
-    <li>He was asked a direct question about providing controlled substances</li>
-    <li>Text evidence contradicted his denial</li>
-    <li>The false statement was material to the case outcome</li>
-    <li>Judge Loo allegedly signaled the desired false answer</li>
-</ul>
-</div>
+**The Criminal Elements:**
 
-<p><strong>Legal Consequences:</strong> Perjury is a Class C felony in Hawaii, punishable by up to 5 years
+- The defendant was under oath in a judicial proceeding
+- He was asked a direct question about providing controlled substances
+- Text evidence contradicted his denial
+- The false statement was material to the case outcome
+- Judge Loo allegedly signaled the desired false answer
+
+**Legal Consequences:** Perjury is a Class C felony in Hawaii, punishable by up to 5 years
 imprisonment. Under federal law (18 USC 1621), perjury in judicial proceedings carries up to 5 years and
 substantial fines. The materiality of this false testimony-concerning drug distribution that was central to
 establishing defendants's credibility and the plaintiff's character-makes this a serious felony with no
-mitigating circumstances.</p>
+mitigating circumstances.
 
-<h2>Judge Loo's Suborning of Perjury: The Audio-Only Advantage</h2>
+## Judge Loo's Suborning of Perjury: The Audio-Only Advantage
 
-<p>The critical detail that allegedly enabled Judge Loo's misconduct was the decision to record the in-person
+The critical detail that allegedly enabled Judge Loo's misconduct was the decision to record the in-person
 hearing as audio-only. This created what the plaintiff describes as the perfect opportunity for visual
-manipulation that would leave no official trace.</p>
+manipulation that would leave no official trace.
 
-<div class="key-allegation">
-<h3>Calculated Judicial Misconduct</h3>
-<p>Judge Wilson Loo's alleged actions constitute <em>suborning perjury</em> under Hawaii Revised Statutes §
-    710-1072.2 and federal law 18 USC 1622. The elements are clearly met:</p>
-<ul>
-    <li><strong>Procuring false testimony:</strong> The visual cue allegedly induced the defendant to lie
-    </li>
-    <li><strong>Knowledge of falsity:</strong> Text evidence was already in the record</li>
-    <li><strong>Material testimony:</strong> The drug question was central to credibility</li>
-    <li><strong>Willful conduct:</strong> The timing and aggressive interruption suggest premeditation</li>
-</ul>
-<p><strong>The Stakes:</strong> Suborning perjury by a judge carries potential sentences of 10 years
-    imprisonment, removal from office, and permanent disbarment. Judge Loo's previous service on the
-    Commission on Judicial Conduct makes this misconduct particularly egregious, as he had intimate
-    knowledge of oversight mechanisms and their limitations.</p>
-</div>
+### Calculated Judicial Misconduct
 
-<h3>Judge Loo's Background: Insider Knowledge as a Weapon</h3>
+Judge Wilson Loo's alleged actions constitute *suborning perjury* under Hawaii Revised Statutes §
+710-1072.2 and federal law 18 USC 1622. The elements are clearly met:
 
-<p>What makes these allegations particularly concerning is Judge Wilson Loo's previous service on Hawaii's
-Commission on Judicial Conduct. This experience would have provided him with:</p>
+- **Procuring false testimony:** The visual cue allegedly induced the defendant to lie
+- **Knowledge of falsity:** Text evidence was already in the record
+- **Material testimony:** The drug question was central to credibility
+- **Willful conduct:** The timing and aggressive interruption suggest premeditation
 
-<ul>
-<li>Intimate knowledge of disciplinary proceedings and their limitations</li>
-<li>Understanding of how judicial misconduct complaints are investigated</li>
-<li>Awareness that Commission proceedings are confidential</li>
-<li>Knowledge of procedural vulnerabilities, such as audio-only recording limitations</li>
-</ul>
+**The Stakes:** Suborning perjury by a judge carries potential sentences of 10 years
+imprisonment, removal from office, and permanent disbarment. Judge Loo's previous service on the
+Commission on Judicial Conduct makes this misconduct particularly egregious, as he had intimate
+knowledge of oversight mechanisms and their limitations.
 
-<p>The plaintiff argues that this wasn't judicial bias or a momentary lapse in judgment, but a calculated
-exploitation of systemic weaknesses by someone who understood them intimately.</p>
+### Judge Loo's Background: Insider Knowledge as a Weapon
 
-<h2>The Corruption Loophole: Judicial Accountability Evaded</h2>
+What makes these allegations particularly concerning is Judge Wilson Loo's previous service on Hawaii's
+Commission on Judicial Conduct. This experience would have provided him with:
 
-<div class="key-allegation">
-<h3>The Strategic Resignation and Return</h3>
-<p>The most disturbing aspect of this case may be what happened after the alleged misconduct was reported.
-    According to the Commission on Judicial Conduct's own correspondence, Wilson Loo was "no longer a per
-    diem judge as of July 2024" - conveniently timing his departure to avoid accountability for the
-    misconduct that occurred in his courtroom.</p>
+- Intimate knowledge of disciplinary proceedings and their limitations
+- Understanding of how judicial misconduct complaints are investigated
+- Awareness that Commission proceedings are confidential
+- Knowledge of procedural vulnerabilities, such as audio-only recording limitations
 
-<p><strong>The Timeline of Evasion:</strong></p>
-<ul>
-    <li><strong>May/June 2024:</strong> Plaintiff reported the LSD dealer, Wilson Loo, Eugene and Rita
-        Hartmann, and another Hartmann associate for witness tampering to an honest police officer, also
-        disclosing prior FBI contact.</li>
-    <li><strong>July 2024:</strong> Wilson Loo mysteriously "resigned" from his position as per diem judge
-    </li>
-    <li><strong>March 2025:</strong> Commission on Judicial Conduct claimed they had "no jurisdiction"
-        because Loo had left office</li>
-    <li><strong>May 2025:</strong> Hawaii State Judiciary website still lists Wilson M.N. Loo as an active
-        First Circuit Per Diem Judge</li>
-    <li><strong>Present Day:</strong> Commission refuses to respond to inquiries about this discrepancy</li>
-</ul>
-</div>
+The plaintiff argues that this wasn't judicial bias or a momentary lapse in judgment, but a calculated
+exploitation of systemic weaknesses by someone who understood them intimately.
 
-<h3>The Jurisdictional Shell Game</h3>
+## The Corruption Loophole: Judicial Accountability Evaded
 
-<p>The Commission's March 13, 2025 letter to the plaintiff reveals the cynical calculation behind this maneuver:
-</p>
+### The Strategic Resignation and Return
 
-<blockquote>
-<p>"Wilson M. N. Loo is no longer a per diem judge as of July 2024. Pursuant to Rule 8.2(b) of the Rules of
-    the Supreme Court of Hawai'i, the Commission has no jurisdiction to consider a complaint against any
-    justice or judge if the submission is more than 90 days after the judge leaves office."</p>
-</blockquote>
+The most disturbing aspect of this case may be what happened after the alleged misconduct was reported.
+According to the Commission on Judicial Conduct's own correspondence, Wilson Loo was "no longer a per
+diem judge as of July 2024" - conveniently timing his departure to avoid accountability for the
+misconduct that occurred in his courtroom.
 
-<p>This creates a perfect storm of corruption: a judge can commit misconduct, resign before facing consequences,
+**The Timeline of Evasion:**
+
+- **May/June 2024:** Plaintiff reported the LSD dealer, Wilson Loo, Eugene and Rita
+  Hartmann, and another Hartmann associate for witness tampering to an honest police officer, also
+  disclosing prior FBI contact.
+- **July 2024:** Wilson Loo mysteriously "resigned" from his position as per diem judge
+- **March 2025:** Commission on Judicial Conduct claimed they had "no jurisdiction"
+  because Loo had left office
+- **May 2025:** Hawaii State Judiciary website still lists Wilson M.N. Loo as an active
+  First Circuit Per Diem Judge
+- **Present Day:** Commission refuses to respond to inquiries about this discrepancy
+
+### The Jurisdictional Shell Game
+
+The Commission's March 13, 2025 letter to the plaintiff reveals the cynical calculation behind this maneuver:
+
+> "Wilson M. N. Loo is no longer a per diem judge as of July 2024. Pursuant to Rule 8.2(b) of the Rules of
+> the Supreme Court of Hawai'i, the Commission has no jurisdiction to consider a complaint against any
+> justice or judge if the submission is more than 90 days after the judge leaves office."
+
+This creates a perfect storm of corruption: a judge can commit misconduct, resign before facing consequences,
 wait out the 90-day jurisdictional window, and then return to the bench with impunity. The Commission's own
-rules become a tool for evading accountability rather than ensuring it.</p>
+rules become a tool for evading accountability rather than ensuring it.
 
-<h3>The Audrey Stanley Connection: A Pattern of Corruption</h3>
+### The Audrey Stanley Connection: A Pattern of Corruption
 
-<p>The corruption extends beyond Wilson Loo. The plaintiff's correspondence to the Commission also disclosed
+The corruption extends beyond Wilson Loo. The plaintiff's correspondence to the Commission also disclosed
 alleged misconduct by Audrey L.E. Stanley, now also serving as a First Circuit Per Diem Judge. According to
 the complaint, during her tenure as a Public Defender, Stanley was informed about a "conspired, coordinated
 murder threat issued by Eugene and Rita Hartmann" and allegedly "attempted extortion: relayed offer to 'drop
-charges' if author 'left the state'."</p>
+charges' if author 'left the state'."
 
-<p>This connection to the Eugene and Rita Hartmann murder threat case demonstrates a pattern of officials using
+This connection to the Eugene and Rita Hartmann murder threat case demonstrates a pattern of officials using
 their positions to protect criminal networks rather than serve justice. The fact that Stanley, like Loo, now
 serves as a judge despite these allegations suggests systematic corruption in Hawaii's judicial appointment
-process.</p>
+process.
 
-<h3>The Silence of Institutional Complicity</h3>
+### The Silence of Institutional Complicity
 
-<p>When confronted with evidence that their website still lists Wilson Loo as an active judge - contradicting
+When confronted with evidence that their website still lists Wilson Loo as an active judge - contradicting
 their claim that he resigned - the Commission has maintained complete silence. This refusal to clarify basic
 facts about judicial status reveals an institution more concerned with protecting its members than serving
-the public interest.</p>
+the public interest.
 
-<div class="highlight">
-<p><strong>The Corruption Formula:</strong></p>
-<ol>
-    <li>Judge commits misconduct using insider knowledge of oversight weaknesses</li>
-    <li>When investigation threatens accountability, judge "resigns"</li>
-    <li>Commission claims lack of jurisdiction after 90-day window</li>
-    <li>Judge quietly returns to bench through per diem appointments</li>
-    <li>Commission refuses to acknowledge or explain the contradiction</li>
-</ol>
-<p>This systematic evasion of accountability transforms judicial misconduct from a career-ending scandal
-    into a temporary inconvenience.</p>
-</div>
+**The Corruption Formula:**
 
-<h2>The Police Response: A Pattern of Obstruction</h2>
+1. Judge commits misconduct using insider knowledge of oversight weaknesses
+2. When investigation threatens accountability, judge "resigns"
+3. Commission claims lack of jurisdiction after 90-day window
+4. Judge quietly returns to bench through per diem appointments
+5. Commission refuses to acknowledge or explain the contradiction
 
-<p>Following the court hearing, the plaintiff made multiple attempts to report what he believed were criminal
+This systematic evasion of accountability transforms judicial misconduct from a career-ending scandal
+into a temporary inconvenience.
+
+## The Police Response: A Pattern of Obstruction
+
+Following the court hearing, the plaintiff made multiple attempts to report what he believed were criminal
 acts, including perjury and drug distribution. The response from the Honolulu Police Department was,
-according to his account, consistently dismissive:</p>
+according to his account, consistently dismissive:
 
-<blockquote>
-<p>When I called 911 to report the perjury, the female officer told me it was my responsibility to prove it,
-    not HPD's responsibility to investigate it. When I mentioned the LSD distribution as a separate crime,
-    she continued to refuse to take the report. I even told her there was video evidence of the LSD dealing
-    at Stonefish Grill, but HPD still did nothing.</p>
-</blockquote>
+> When I called 911 to report the perjury, the female officer told me it was my responsibility to prove it,
+> not HPD's responsibility to investigate it. When I mentioned the LSD distribution as a separate crime,
+> she continued to refuse to take the report. I even told her there was video evidence of the LSD dealing
+> at Stonefish Grill, but HPD still did nothing.
 
-<p>The plaintiff describes a pattern where:</p>
-<ul>
-<li>Multiple officers gave conflicting information about service of legal papers</li>
-<li>Reports of serious crimes were dismissed without investigation</li>
-<li>Officers appeared to have "other information" that prevented proper investigation</li>
-<li>Even when the plaintiff provided specific locations for potential evidence, no follow-up occurred</li>
-</ul>
+The plaintiff describes a pattern where:
 
-<h3>The "Federal Connection" and Coordinated Retaliation</h3>
+- Multiple officers gave conflicting information about service of legal papers
+- Reports of serious crimes were dismissed without investigation
+- Officers appeared to have "other information" that prevented proper investigation
+- Even when the plaintiff provided specific locations for potential evidence, no follow-up occurred
 
-<p>Days before the hearing, the plaintiff overheard the defendant in a phone conversation stating, "I have
+### The "Federal Connection" and Coordinated Retaliation
+
+Days before the hearing, the plaintiff overheard the defendant in a phone conversation stating, "I have
 another buddy who is federal." The word "another" suggested the defendant already had connections at the
 state or local level, raising questions about whether these relationships influenced the subsequent legal
-proceedings and police responses.</p>
+proceedings and police responses.
 
-<p><strong>The {} Connection and Evidence Manipulation:</strong> During the injunction trial, the defendant
+**The {} Connection and Evidence Manipulation:** During the injunction trial, the defendant
 strategically introduced evidence from an incoherent Facebook post suggesting connections between {} founder
 P and the defendant's actions. This created a deliberate narrative linking the original blackmail by "Kevin"
-(JJ's associate who had blackmailed the plaintiff's career while name-dropping P_) to the current LSD
+(JJ's associate who had blackmailed the plaintiff's career while name-dropping P\_) to the current LSD
 dealer's behavior. By introducing this evidence, the defendant made the plaintiff appear delusional for
 mentioning {} connections, which contributed to portions of the case being sealed. This tactical move
 obscured the legitimate pattern of retaliation stemming from the plaintiff's original federal contacts about
-the Eugene and Rita Hartmann murder threat.</p>
+the Eugene and Rita Hartmann murder threat.
 
-<h2>Post-Trial Harassment: The Matthew Connection</h2>
+## Post-Trial Harassment: The Matthew Connection
 
-<p>Following the court hearing, the plaintiff reports a series of concerning incidents that suggest coordinated
-retaliation:</p>
+Following the court hearing, the plaintiff reports a series of concerning incidents that suggest coordinated
+retaliation:
 
-<ol>
-<li><strong>Professional Targeting:</strong> Contact from individuals with government security backgrounds
-    making references to the court case.</li>
-<li><strong>Social Media Manipulation:</strong> Targeted content relating to disputed issues from the legal
-    proceeding.</li>
-<li><strong>Local Harassment:</strong> Matthew, described as a former State Department intern driving a
-    (redacted), allegedly engaged in activities that disrupted the plaintiff's community relationships and
-    personal life.</li>
-</ol>
+1. **Professional Targeting:** Contact from individuals with government security backgrounds
+   making references to the court case.
+2. **Social Media Manipulation:** Targeted content relating to disputed issues from the legal
+   proceeding.
+3. **Local Harassment:** Matthew, described as a former State Department intern driving a
+   (redacted), allegedly engaged in activities that disrupted the plaintiff's community relationships and
+   personal life.
 
-<p>This pattern of post-trial targeting reinforces the plaintiff's contention that the courtroom misconduct was
+This pattern of post-trial targeting reinforces the plaintiff's contention that the courtroom misconduct was
 part of a broader effort to silence and discredit him, particularly given his status as someone who had
-previously contacted federal authorities about serious criminal matters.</p>
+previously contacted federal authorities about serious criminal matters.
 
-<h2>The Bigger Picture: Systemic Failure or Coordinated Cover-Up?</h2>
+## The Bigger Picture: Systemic Failure or Coordinated Cover-Up?
 
-<p>The plaintiff's account raises troubling questions about whether this represents isolated misconduct or
-something more systematic. The combination of:</p>
+The plaintiff's account raises troubling questions about whether this represents isolated misconduct or
+something more systematic. The combination of:
 
-<ul>
-<li>A judge with insider knowledge of oversight mechanisms</li>
-<li>Consistent police inaction despite multiple reports</li>
-<li>Alleged connections to federal and state officials</li>
-<li>Subsequent intimidation attempts</li>
-</ul>
+- A judge with insider knowledge of oversight mechanisms
+- Consistent police inaction despite multiple reports
+- Alleged connections to federal and state officials
+- Subsequent intimidation attempts
 
-<p>This suggests what the plaintiff characterizes as a coordinated effort to silence a victim and protect those
-in positions of power.</p>
+This suggests what the plaintiff characterizes as a coordinated effort to silence a victim and protect those
+in positions of power.
 
-<h2>The Call for Investigation</h2>
+## The Call for Investigation
 
-<p>This case demands immediate federal intervention. The allegations represent clear violations of federal
-criminal law:</p>
+This case demands immediate federal intervention. The allegations represent clear violations of federal
+criminal law:
 
-<ul>
-<li><strong>18 USC 1622 - Suborning Perjury:</strong> Judge Loo's alleged visual cue to induce false
-    testimony</li>
-<li><strong>18 USC 1621 - Perjury:</strong> Defendants's material false statements under oath about drug
-    distribution</li>
-<li><strong>18 USC 1503 - Obstruction of Justice:</strong> Systematic interference with judicial proceedings
-</li>
-<li><strong>18 USC 242 - Deprivation of Rights Under Color of Law:</strong> Denial of fair trial rights</li>
-<li><strong>18 USC 1512 - Witness Tampering:</strong> Post-trial intimidation and harassment</li>
-</ul>
+- **18 USC 1622 - Suborning Perjury:** Judge Loo's alleged visual cue to induce false
+  testimony
+- **18 USC 1621 - Perjury:** Defendants's material false statements under oath about drug
+  distribution
+- **18 USC 1503 - Obstruction of Justice:** Systematic interference with judicial proceedings
+- **18 USC 242 - Deprivation of Rights Under Color of Law:** Denial of fair trial rights
+- **18 USC 1512 - Witness Tampering:** Post-trial intimidation and harassment
 
-<p><strong>The Federal Nexus:</strong> This case involves federal crimes, interstate activities, and potential
+**The Federal Nexus:** This case involves federal crimes, interstate activities, and potential
 violations of civil rights. The plaintiff's previous contact with federal authorities regarding separate
 criminal matters, combined with the alleged retaliation, establishes clear federal jurisdiction and the need
-for FBI investigation.</p>
+for FBI investigation.
 
-<p class="lead">The integrity of Hawaii's justice system hangs in the balance. When a judge can allegedly
+The integrity of Hawaii's justice system hangs in the balance. When a judge can allegedly
 manipulate proceedings using insider knowledge of oversight weaknesses, and when police consistently fail to
-investigate serious crimes, the very foundation of justice is at risk.</p>
+investigate serious crimes, the very foundation of justice is at risk.
 
-<h2>A System in Need of Reform</h2>
+## A System in Need of Reform
 
-<p>Regardless of the outcome of any investigation into these specific allegations, this case highlights critical
-vulnerabilities in Hawaii's judicial oversight system:</p>
+Regardless of the outcome of any investigation into these specific allegations, this case highlights critical
+vulnerabilities in Hawaii's judicial oversight system:
 
-<ol>
-<li><strong>Recording Requirements:</strong> All court proceedings should be recorded both visually and
-    audibly, without exception.</li>
-<li><strong>Transparency in Oversight:</strong> The confidentiality surrounding judicial misconduct
-    investigations may inadvertently shield wrongdoing.</li>
-<li><strong>Independent Investigation:</strong> Complaints against judges should be investigated by truly
-    independent bodies with no institutional connections.</li>
-<li><strong>Police Accountability:</strong> Clear protocols must exist for investigating reports of crimes
-    by those with political or official connections.</li>
-</ol>
+1. **Recording Requirements:** All court proceedings should be recorded both visually and
+   audibly, without exception.
+2. **Transparency in Oversight:** The confidentiality surrounding judicial misconduct
+   investigations may inadvertently shield wrongdoing.
+3. **Independent Investigation:** Complaints against judges should be investigated by truly
+   independent bodies with no institutional connections.
+4. **Police Accountability:** Clear protocols must exist for investigating reports of crimes
+   by those with political or official connections.
 
-<h2>Conclusion: Justice Delayed is Justice Denied</h2>
+## Conclusion: Justice Delayed is Justice Denied
 
-<p>The allegations presented here paint a picture of a justice system that may have failed at multiple levels.
+The allegations presented here paint a picture of a justice system that may have failed at multiple levels.
 From the courtroom to the police station, the plaintiff describes encountering institutional resistance that
-protected alleged wrongdoers while silencing their victim.</p>
+protected alleged wrongdoers while silencing their victim.
 
-<p>Whether these allegations prove true or false, they highlight the urgent need for transparency,
+Whether these allegations prove true or false, they highlight the urgent need for transparency,
 accountability, and reform in Hawaii's justice system. The people of Hawaii deserve courts they can trust
-and police who will investigate crimes regardless of who commits them.</p>
+and police who will investigate crimes regardless of who commits them.
 
-<p>The case now rests with federal authorities who have the independence and resources to conduct a thorough
+The case now rests with federal authorities who have the independence and resources to conduct a thorough
 investigation. Only through such scrutiny can the truth emerge and public confidence in Hawaii's justice
-system be restored.</p>
+system be restored.
 
-<div class="disclaimer">
-<h3>Correction Policy</h3>
-<p>This publication maintains a commitment to factual accuracy. Any demonstrated factual errors will be
-    promptly corrected with equal prominence. All corrections will be clearly marked and dated. Inquiries
-    regarding factual assertions may be directed to the author.</p>
-</div>
+### Correction Policy
+
+This publication maintains a commitment to factual accuracy. Any demonstrated factual errors will be
+promptly corrected with equal prominence. All corrections will be clearly marked and dated. Inquiries
+regarding factual assertions may be directed to the author.
