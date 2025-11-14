@@ -72,7 +72,7 @@ relativeURLs = true
     path = ""
 
 [outputs]
-  home = ["HTML", "Markdown", "RSS", "news-sitemap"]
+  home = ["HTML", "Markdown", "RSS", "news-sitemap", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextai", "plaintexthumans", "plaintextrobots"]
   section = ["HTML", "Markdown", "RSS"]
   page = ["HTML", "Markdown"]
 
