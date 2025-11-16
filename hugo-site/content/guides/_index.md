@@ -108,7 +108,7 @@ END OF AI INSTRUCTIONS
   "url": "https://gtcode.com/guides/",
   "author": {
     "@type": "Person",
-    "name": "Paul E. Lowndes",
+    "name": "Ekewaka Lono",
     "url": "https://gtcode.com/"
   },
   "publisher": {

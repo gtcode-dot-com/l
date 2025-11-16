@@ -78,7 +78,7 @@ END OF AI INSTRUCTIONS
 
 # CNS 2.0 Ideas Paper: A Computational Framework for Chiral Narrative Synthesis in Automated Knowledge Discovery
 
-**Author:** Paul Lowndes, Conceptual AI Laboratory
+**Author:** Ekewaka Lono, Conceptual AI Laboratory
 
 **Date:** July 10, 2025
 

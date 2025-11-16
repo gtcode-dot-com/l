@@ -181,4 +181,4 @@ Expect roughly 8–10 focused sessions. Each chapter includes checkpoints and se
 
 ---
 
-*This educational content is based on the CNS 2.0 research proposal by Paul Lowndes and demonstrates practical Python implementation approaches for educational purposes.*
+*This educational content is based on the CNS 2.0 research proposal by Ekewaka Lono and demonstrates practical Python implementation approaches for educational purposes.*

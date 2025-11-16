@@ -11,7 +11,7 @@ outputs: ["HTML", "Markdown", "plaintexthumans"]
 
 ## TEAM
 
-**Author:** Paul Edward Lowndes
+**Author:** Ekewaka Lono
 **Contact:** (use email)
 **Location:** Hawaii
 

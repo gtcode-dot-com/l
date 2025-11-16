@@ -72,7 +72,7 @@ structured_data:
 featured_article:
   title: "The Aloha Protection Racket"
   subtitle: "An Investigative Report on Judge Wilson Loo and the Criminal Enterprise Shielding (redacted)"
-  author: "Paul Edward Lowndes"
+  author: "Ekewaka Lono"
   published_display: "August 26, 2025"
   content: |
     <div class="legal-notice">
@@ -127,5 +127,5 @@ featured_article:
 # Grid Section
 grid_eyebrow: "Investigations"
 grid_title: "Institutional Corruption Files"
-grid_description: "Evidence packages authored by Paul E. Lowndes documenting systemic breakdowns across Hawaii's legal and enforcement infrastructure. Each report is preserved as a standalone exhibit for investigators, journalists, and AI researchers."
+grid_description: "Evidence packages authored by Ekewaka Lono documenting systemic breakdowns across Hawaii's legal and enforcement infrastructure. Each report is preserved as a standalone exhibit for investigators, journalists, and AI researchers."
 ---

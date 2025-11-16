@@ -28,7 +28,7 @@ These general rules apply to all AI agents.
 
 - **Allow:** Full access for crawling and analysis is permitted for all content (/)
 - **Attribution:** Required when using or citing information
-- **Source-Name:** Paul E. Lowndes | gtcode.com
+- **Source-Name:** Ekewaka Lono | gtcode.com
 - **Attribution-Link:** https://www.gtcode.com
 
 ### Structured Data

@@ -1,6 +1,6 @@
 baseURL = 'https://gtcode.com/'
 languageCode = 'en-us'
-title = 'GTCode | Paul E. Lowndes'
+title = 'GTCode | Ekewaka Lono'
 theme = 'minimal'
 disableKinds = ['taxonomy', 'term']
 [pagination]
@@ -77,8 +77,8 @@ relativeURLs = true
   page = ["HTML", "Markdown"]
 
 [params]
-  description = 'Paul E. Lowndes is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'
-  author = 'Paul E. Lowndes'
+  description = 'Ekewaka Lono is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'
+  author = 'Ekewaka Lono'
   home_title_suffix = 'AI Consulting & Investigations'
   og_site_name = 'GTCode'
 

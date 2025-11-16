@@ -3,7 +3,7 @@ title: "A Case Study in Systemic Protection: Institutional Decay in Hawaii"
 subtitle: "Multi-decade analysis of coordinated institutional failure"
 description: "Multi-decade case study showing how legal, law-enforcement, and corporate actors reinforce one another to neutralize accountability and shield connected interests."
 date: 2025-08-13
-author: "Paul E. Lowndes"
+author: "Ekewaka Lono"
 published_display: "August 13, 2025"
 modified_display: "November 9, 2025"
 
@@ -24,7 +24,7 @@ og_image_height: 1024
 og_type: "article"
 
 # Article metadata
-article_author: "https://gtcode.com/#paul-lowndes"
+article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-13T00:00:00Z"
 article_modified_time: "2025-11-09T00:00:00Z"
 article_section: "Investigations"
@@ -55,8 +55,8 @@ structured_data:
   dateModified: "2025-11-09T00:00:00Z"
   author:
     "@type": "Person"
-    name: "Paul E. Lowndes"
-    url: "https://gtcode.com/#paul-lowndes"
+    name: "Ekewaka Lono"
+    url: "https://gtcode.com/#ekewaka-lono"
   publisher:
     "@type": "Organization"
     name: "GTCode"

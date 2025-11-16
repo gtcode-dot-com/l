@@ -77,7 +77,7 @@ END OF AI INSTRUCTIONS
 
 # CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis
 
-**Author:** Paul Lowndes, Conceptual AI Laboratory
+**Author:** Ekewaka Lono, Conceptual AI Laboratory
 
 **Date:** June 17, 2025
 
