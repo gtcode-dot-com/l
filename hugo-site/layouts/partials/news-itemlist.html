@@ -11,7 +11,7 @@
       "@type": "ListItem",
       "position": {{ add $index 1 }},
       "url": "{{ replace $page.Permalink "http://" "https://" }}",
-      "name": {{ $page.Title | jsonify }}
+      "name": {{ $page.Title | htmlUnescape | jsonify }}
     }
   {{- end }}
   ]

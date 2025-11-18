@@ -150,7 +150,7 @@
           </div>
         {{ end }}
         <h3 class="card-title">
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
         </h3>
         <div class="card-meta">
           {{ partial "news-date.html" . }}
