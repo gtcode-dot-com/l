@@ -54,7 +54,7 @@
           {{ end }}
 
           <h2 class="card-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
           </h2>
 
           <div class="card-meta">
