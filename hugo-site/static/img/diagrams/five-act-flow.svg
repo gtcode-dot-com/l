@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 180" width="1000" height="180">
+  <!-- Background -->
+  <rect width="1000" height="180" fill="#0f172a"/>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <!-- Stage Gradients -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4b5563;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b45309;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow Gradient with Glow -->
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:0.6" />
+    </linearGradient>
+
+    <!-- Glow Filter for Arrows -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Stage 1: Signal -->
+  <rect x="20" y="40" width="140" height="100" rx="10" fill="url(#grad1)"/>
+  <text x="90" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Signal</text>
+  <text x="90" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Raw input</text>
+
+  <!-- Arrow 1 -->
+  <g filter="url(#glow)">
+    <line x1="165" y1="90" x2="185" y2="90" stroke="url(#arrowGrad)" stroke-width="2"/>
+    <polygon points="185,90 180,85 180,95" fill="#94a3b8"/>
+  </g>
+
+  <!-- Stage 2: Structure -->
+  <rect x="190" y="40" width="140" height="100" rx="10" fill="url(#grad2)"/>
+  <text x="260" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Structure</text>
+  <text x="260" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Features</text>
+
+  <!-- Arrow 2 -->
+  <g filter="url(#glow)">
+    <line x1="335" y1="90" x2="355" y2="90" stroke="url(#arrowGrad)" stroke-width="2"/>
+    <polygon points="355,90 350,85 350,95" fill="#94a3b8"/>
+  </g>
+
+  <!-- Stage 3: Tension -->
+  <rect x="360" y="40" width="140" height="100" rx="10" fill="url(#grad3)"/>
+  <text x="430" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Tension</text>
+  <text x="430" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Dialectic</text>
+
+  <!-- Arrow 3 -->
+  <g filter="url(#glow)">
+    <line x1="505" y1="90" x2="525" y2="90" stroke="url(#arrowGrad)" stroke-width="2"/>
+    <polygon points="525,90 520,85 520,95" fill="#94a3b8"/>
+  </g>
+
+  <!-- Stage 4: Geometry -->
+  <rect x="530" y="40" width="140" height="100" rx="10" fill="url(#grad4)"/>
+  <text x="600" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Geometry</text>
+  <text x="600" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Manifold</text>
+
+  <!-- Arrow 4 -->
+  <g filter="url(#glow)">
+    <line x1="675" y1="90" x2="695" y2="90" stroke="url(#arrowGrad)" stroke-width="2"/>
+    <polygon points="695,90 690,85 690,95" fill="#94a3b8"/>
+  </g>
+
+  <!-- Stage 5: Surgery -->
+  <rect x="700" y="40" width="140" height="100" rx="10" fill="url(#grad5)"/>
+  <text x="770" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Surgery</text>
+  <text x="770" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Maintain</text>
+
+  <!-- Arrow 5 -->
+  <g filter="url(#glow)">
+    <line x1="845" y1="90" x2="865" y2="90" stroke="url(#arrowGrad)" stroke-width="2"/>
+    <polygon points="865,90 860,85 860,95" fill="#94a3b8"/>
+  </g>
+
+  <!-- Stage 6: Identity -->
+  <rect x="870" y="40" width="110" height="100" rx="10" fill="url(#grad6)"/>
+  <text x="925" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Identity</text>
+  <text x="925" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Persist</text>
+</svg>

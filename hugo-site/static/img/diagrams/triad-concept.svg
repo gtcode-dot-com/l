@@ -1,0 +1,136 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow filters for each point -->
+    <filter id="glowGold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowRed" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowBlue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradient for the curved surface -->
+    <radialGradient id="surfaceGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:0.08"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="500" fill="#0f172a"/>
+
+  <!-- Define triangle points -->
+  <!-- Thesis (top): x=300, y=100 -->
+  <!-- Antithesis (bottom-left): x=150, y=350 -->
+  <!-- Orthesis (bottom-right): x=450, y=350 -->
+
+  <!-- Curved surface patch connecting all three points -->
+  <path d="M 300 100 Q 200 200, 150 350 Q 300 320, 450 350 Q 400 200, 300 100 Z"
+        fill="url(#surfaceGradient)"
+        stroke="rgba(148, 163, 184, 0.2)"
+        stroke-width="1"/>
+
+  <!-- Connection lines (semi-transparent) -->
+  <line x1="300" y1="100" x2="150" y2="350"
+        stroke="rgba(251, 191, 36, 0.3)"
+        stroke-width="2"/>
+  <line x1="300" y1="100" x2="450" y2="350"
+        stroke="rgba(96, 165, 250, 0.3)"
+        stroke-width="2"/>
+  <line x1="150" y1="350" x2="450" y2="350"
+        stroke="rgba(248, 113, 113, 0.3)"
+        stroke-width="2"/>
+
+  <!-- Dotted line showing Thesis projection down to base -->
+  <line x1="300" y1="100" x2="300" y2="350"
+        stroke="rgba(148, 163, 184, 0.5)"
+        stroke-width="1.5"
+        stroke-dasharray="5,5"/>
+
+  <!-- Perpendicular indicator from Orthesis to the Thesis-Antithesis axis -->
+  <line x1="450" y1="350" x2="300" y2="350"
+        stroke="rgba(96, 165, 250, 0.6)"
+        stroke-width="2"/>
+
+  <!-- 90 degree angle marker at Orthesis -->
+  <path d="M 430 350 L 430 330 L 450 330"
+        fill="none"
+        stroke="rgba(96, 165, 250, 0.7)"
+        stroke-width="1.5"/>
+  <text x="420" y="325"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#94a3b8">90°</text>
+
+  <!-- Thesis point (Gold) -->
+  <circle cx="300" cy="100" r="20" fill="#fbbf24" filter="url(#glowGold)"/>
+  <text x="300" y="60"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="bold"
+        fill="#fbbf24"
+        text-anchor="middle">Thesis</text>
+  <text x="300" y="80"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#cbd5e1"
+        text-anchor="middle">The interpretation</text>
+
+  <!-- Antithesis point (Red) -->
+  <circle cx="150" cy="350" r="20" fill="#f87171" filter="url(#glowRed)"/>
+  <text x="150" y="390"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="bold"
+        fill="#f87171"
+        text-anchor="middle">Antithesis</text>
+  <text x="150" y="410"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#cbd5e1"
+        text-anchor="middle">The challenge</text>
+
+  <!-- Orthesis point (Blue) -->
+  <circle cx="450" cy="350" r="20" fill="#60a5fa" filter="url(#glowBlue)"/>
+  <text x="450" y="390"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="bold"
+        fill="#60a5fa"
+        text-anchor="middle">Orthesis</text>
+  <text x="450" y="410"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#cbd5e1"
+        text-anchor="middle">The perpendicular</text>
+  <text x="450" y="428"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#cbd5e1"
+        text-anchor="middle">question</text>
+
+  <!-- Caption area at bottom -->
+  <text x="300" y="470"
+        font-family="Arial, sans-serif"
+        font-size="15"
+        font-style="italic"
+        fill="#e2e8f0"
+        text-anchor="middle">What if both are wrong about something fundamental?</text>
+</svg>

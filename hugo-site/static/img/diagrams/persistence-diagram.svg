@@ -1,0 +1,188 @@
+<svg viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="550" height="550" fill="#0f172a"/>
+
+  <!-- Define gradients and filters for glow effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Plot area margins: 60px left, 40px right, 60px top, 60px bottom -->
+  <!-- Plot dimensions: 450x430 -->
+
+  <!-- Shaded regions -->
+  <!-- Noise zone (near diagonal) - light red/pink -->
+  <path d="M 60 490 L 60 470 Q 150 380 240 290 Q 330 200 420 110 L 440 110 Q 350 200 260 290 Q 170 380 80 470 L 80 490 Z"
+        fill="#ef4444" opacity="0.15"/>
+
+  <!-- Persistent zone (above threshold) - light gold -->
+  <rect x="60" y="60" width="450" height="227" fill="#fbbf24" opacity="0.1"/>
+
+  <!-- Grid lines (subtle) -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.5">
+    <!-- Vertical grid lines -->
+    <line x1="150" y1="60" x2="150" y2="490"/>
+    <line x1="240" y1="60" x2="240" y2="490"/>
+    <line x1="330" y1="60" x2="330" y2="490"/>
+    <line x1="420" y1="60" x2="420" y2="490"/>
+    <!-- Horizontal grid lines -->
+    <line x1="60" y1="150" x2="510" y2="150"/>
+    <line x1="60" y1="240" x2="510" y2="240"/>
+    <line x1="60" y1="330" x2="510" y2="330"/>
+    <line x1="60" y1="420" x2="510" y2="420"/>
+  </g>
+
+  <!-- Axes -->
+  <g stroke="#64748b" stroke-width="2" fill="none">
+    <!-- Y-axis -->
+    <line x1="60" y1="60" x2="60" y2="490"/>
+    <!-- X-axis -->
+    <line x1="60" y1="490" x2="510" y2="490"/>
+  </g>
+
+  <!-- Tick marks -->
+  <g stroke="#64748b" stroke-width="1.5">
+    <!-- X-axis ticks -->
+    <line x1="60" y1="490" x2="60" y2="495"/>
+    <line x1="150" y1="490" x2="150" y2="495"/>
+    <line x1="240" y1="490" x2="240" y2="495"/>
+    <line x1="330" y1="490" x2="330" y2="495"/>
+    <line x1="420" y1="490" x2="420" y2="495"/>
+    <line x1="510" y1="490" x2="510" y2="495"/>
+
+    <!-- Y-axis ticks -->
+    <line x1="55" y1="490" x2="60" y2="490"/>
+    <line x1="55" y1="404" x2="60" y2="404"/>
+    <line x1="55" y1="318" x2="60" y2="318"/>
+    <line x1="55" y1="232" x2="60" y2="232"/>
+    <line x1="55" y1="146" x2="60" y2="146"/>
+    <line x1="55" y1="60" x2="60" y2="60"/>
+  </g>
+
+  <!-- Tick labels -->
+  <g fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">
+    <!-- X-axis labels -->
+    <text x="60" y="510" text-anchor="middle">0</text>
+    <text x="150" y="510" text-anchor="middle">0.2</text>
+    <text x="240" y="510" text-anchor="middle">0.4</text>
+    <text x="330" y="510" text-anchor="middle">0.6</text>
+    <text x="420" y="510" text-anchor="middle">0.8</text>
+    <text x="510" y="510" text-anchor="middle">1</text>
+
+    <!-- Y-axis labels -->
+    <text x="48" y="494" text-anchor="end">0</text>
+    <text x="48" y="408" text-anchor="end">0.2</text>
+    <text x="48" y="322" text-anchor="end">0.4</text>
+    <text x="48" y="236" text-anchor="end">0.6</text>
+    <text x="48" y="150" text-anchor="end">0.8</text>
+    <text x="48" y="64" text-anchor="end">1</text>
+  </g>
+
+  <!-- Diagonal line (birth = death) -->
+  <line x1="60" y1="490" x2="510" y2="60"
+        stroke="#64748b" stroke-width="1.5"
+        stroke-dasharray="8,4" opacity="0.5"/>
+
+  <!-- Persistence threshold line -->
+  <line x1="60" y1="287" x2="510" y2="287"
+        stroke="#fbbf24" stroke-width="1.5"
+        stroke-dasharray="6,3" opacity="0.8"/>
+
+  <!-- Threshold label -->
+  <text x="515" y="291" fill="#fbbf24" font-family="Arial, sans-serif" font-size="11" font-style="italic">
+    Persistence threshold
+  </text>
+
+  <!-- Noise points (near diagonal) - small gray dots -->
+  <g fill="#94a3b8" opacity="0.6" filter="url(#glow)">
+    <circle cx="440" cy="420" r="3"/>
+    <circle cx="410" cy="395" r="3"/>
+    <circle cx="380" cy="365" r="3"/>
+    <circle cx="430" cy="400" r="3"/>
+    <circle cx="390" cy="375" r="3"/>
+    <circle cx="360" cy="345" r="3"/>
+    <circle cx="420" cy="390" r="3"/>
+    <circle cx="350" cy="330" r="3"/>
+    <circle cx="320" cy="305" r="3"/>
+    <circle cx="340" cy="315" r="3"/>
+    <circle cx="290" cy="280" r="3"/>
+    <circle cx="310" cy="295" r="3"/>
+    <circle cx="270" cy="260" r="3"/>
+    <circle cx="250" cy="245" r="3"/>
+    <circle cx="230" cy="220" r="3"/>
+    <circle cx="210" cy="205" r="3"/>
+    <circle cx="190" cy="180" r="3"/>
+    <circle cx="170" cy="165" r="3"/>
+    <circle cx="150" cy="145" r="3"/>
+    <circle cx="130" cy="125" r="3"/>
+  </g>
+
+  <!-- Signal/Persistent points (far from diagonal) - larger gold dots -->
+  <g fill="#fbbf24" filter="url(#strongGlow)">
+    <circle cx="150" cy="260" r="6" opacity="0.9"/>
+    <circle cx="200" cy="200" r="6" opacity="0.9"/>
+    <circle cx="260" cy="160" r="6" opacity="0.9"/>
+    <circle cx="180" cy="230" r="6" opacity="0.9"/>
+    <circle cx="300" cy="120" r="6" opacity="0.9"/>
+    <circle cx="240" cy="180" r="6" opacity="0.9"/>
+  </g>
+
+  <!-- "Still alive" points (death = infinity/1) - at top edge -->
+  <g fill="#10b981" filter="url(#strongGlow)">
+    <circle cx="120" cy="65" r="7" opacity="0.9"/>
+    <circle cx="220" cy="65" r="7" opacity="0.9"/>
+    <circle cx="340" cy="65" r="7" opacity="0.9"/>
+  </g>
+
+  <!-- Labels for point clusters -->
+  <g font-family="Arial, sans-serif" font-size="12">
+    <!-- Noise label -->
+    <text x="450" y="440" fill="#94a3b8" font-style="italic" opacity="0.8">
+      Noise /
+    </text>
+    <text x="445" y="455" fill="#94a3b8" font-style="italic" opacity="0.8">
+      Transient
+    </text>
+
+    <!-- Signal label -->
+    <text x="320" y="180" fill="#fbbf24" font-weight="bold">
+      Signal /
+    </text>
+    <text x="310" y="195" fill="#fbbf24" font-weight="bold">
+      Persistent
+    </text>
+
+    <!-- Still alive label -->
+    <text x="360" y="80" fill="#10b981" font-weight="bold">
+      Still alive
+    </text>
+  </g>
+
+  <!-- Axis labels -->
+  <text x="285" y="540" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">
+    Birth
+  </text>
+
+  <text x="20" y="275" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" transform="rotate(-90 20 275)">
+    Death
+  </text>
+
+  <!-- Title -->
+  <text x="285" y="30" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">
+    Persistence Diagram
+  </text>
+</svg>
