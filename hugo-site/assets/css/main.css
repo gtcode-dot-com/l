@@ -2004,7 +2004,7 @@ body.nav-open .site-nav-overlay {
 }
 
 .article-content {
-  max-width: none;
+  max-width: 100%;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
@@ -2012,6 +2012,7 @@ body.nav-open .site-nav-overlay {
   line-height: 1.8;
   color: var(--color-text-muted);
   display: block;
+  overflow-x: hidden;
 }
 
 .article-content > * {
@@ -2043,10 +2044,12 @@ body.nav-open .site-nav-overlay {
 
 .article-content img {
   max-width: 100%;
+  width: auto;
   height: auto;
   border-radius: var(--radius-xl);
   margin: var(--space-10) 0;
   box-shadow: var(--shadow-xl);
+  display: block;
 }
 
 .article-content table {
@@ -2098,8 +2101,14 @@ body.nav-open .site-nav-overlay {
 
 /* ============================================
    Mobile Overflow Protection for Scraped Content
-   Prevents horizontal scroll from long URLs, code, etc.
+   Prevents horizontal scroll from long URLs, code, images, etc.
    ============================================ */
+
+/* Article container - prevent any overflow */
+article {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .article-content {
   overflow-wrap: break-word;
@@ -2126,12 +2135,21 @@ body.nav-open .site-nav-overlay {
 /* Ensure all block-level children respect container width */
 .article-content > * {
   max-width: 100%;
+  box-sizing: border-box;
 }
 
-/* Handle images that might have inline styles */
+/* Paragraphs containing images need to constrain them */
+.article-content p {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Handle images - use !important to override any inline styles */
 .article-content img {
-  width: auto;
   max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  box-sizing: border-box;
 }
 
 /* Handle potential iframes, embeds from scraped content */
