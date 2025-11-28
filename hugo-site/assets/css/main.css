@@ -2096,6 +2096,88 @@ body.nav-open .site-nav-overlay {
   text-decoration-color: var(--color-primary);
 }
 
+/* ============================================
+   Mobile Overflow Protection for Scraped Content
+   Prevents horizontal scroll from long URLs, code, etc.
+   ============================================ */
+
+.article-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  min-width: 0;
+}
+
+.article-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.article-content pre code {
+  word-break: normal;
+  white-space: pre;
+}
+
+.article-content code {
+  word-break: break-all;
+}
+
+/* Ensure all block-level children respect container width */
+.article-content > * {
+  max-width: 100%;
+}
+
+/* Handle images that might have inline styles */
+.article-content img {
+  width: auto;
+  max-width: 100% !important;
+}
+
+/* Handle potential iframes, embeds from scraped content */
+.article-content iframe,
+.article-content embed,
+.article-content object,
+.article-content video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tables need special handling on mobile */
+.article-content .table-wrapper,
+.article-content > table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+/* Links with long URLs shouldn't break layout */
+.article-content a {
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .article-content pre {
+    font-size: var(--text-sm);
+    padding: var(--space-4);
+  }
+
+  /* More aggressive word breaking on mobile */
+  .article-content {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  .article-content h1,
+  .article-content h2,
+  .article-content h3 {
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+}
+
 .article-footer {
   margin-top: var(--space-16);
   padding-top: var(--space-8);
