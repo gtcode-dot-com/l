@@ -55,7 +55,7 @@
   <!-- Stage 1: Signal -->
   <rect x="20" y="40" width="140" height="100" rx="10" fill="url(#grad1)"/>
   <text x="90" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Signal</text>
-  <text x="90" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Raw input</text>
+  <text x="90" y="110" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Raw input</text>
 
   <!-- Arrow 1 -->
   <g filter="url(#glow)">
@@ -66,7 +66,7 @@
   <!-- Stage 2: Structure -->
   <rect x="190" y="40" width="140" height="100" rx="10" fill="url(#grad2)"/>
   <text x="260" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Structure</text>
-  <text x="260" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Features</text>
+  <text x="260" y="110" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Features</text>
 
   <!-- Arrow 2 -->
   <g filter="url(#glow)">
@@ -77,7 +77,7 @@
   <!-- Stage 3: Tension -->
   <rect x="360" y="40" width="140" height="100" rx="10" fill="url(#grad3)"/>
   <text x="430" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Tension</text>
-  <text x="430" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Dialectic</text>
+  <text x="430" y="110" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Dialectic</text>
 
   <!-- Arrow 3 -->
   <g filter="url(#glow)">
@@ -88,7 +88,7 @@
   <!-- Stage 4: Geometry -->
   <rect x="530" y="40" width="140" height="100" rx="10" fill="url(#grad4)"/>
   <text x="600" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Geometry</text>
-  <text x="600" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Manifold</text>
+  <text x="600" y="110" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Manifold</text>
 
   <!-- Arrow 4 -->
   <g filter="url(#glow)">
@@ -99,7 +99,7 @@
   <!-- Stage 5: Surgery -->
   <rect x="700" y="40" width="140" height="100" rx="10" fill="url(#grad5)"/>
   <text x="770" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Surgery</text>
-  <text x="770" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Maintain</text>
+  <text x="770" y="110" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Maintain</text>
 
   <!-- Arrow 5 -->
   <g filter="url(#glow)">
@@ -110,5 +110,5 @@
   <!-- Stage 6: Identity -->
   <rect x="870" y="40" width="110" height="100" rx="10" fill="url(#grad6)"/>
   <text x="925" y="80" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">Identity</text>
-  <text x="925" y="110" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Persist</text>
+  <text x="925" y="110" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Persist</text>
 </svg>
