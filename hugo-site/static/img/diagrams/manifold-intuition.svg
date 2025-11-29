@@ -274,14 +274,14 @@
 
     <!-- Annotation 2: Geodesic path (upper middle) -->
     <g opacity="0.95">
-      <path d="M 10,-12 L 45,-62" stroke="#94a3b8" stroke-width="1.2"
+      <path d="M 10,-12 L 45,-100" stroke="#94a3b8" stroke-width="1.2"
             fill="none" opacity="0.7" stroke-linecap="round"/>
       <circle cx="10" cy="-12" r="2.5" fill="#22d3ee" opacity="0.8"/>
-      <text x="52" y="-68" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+      <text x="52" y="-108" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
             font-weight="400" fill="#67e8f9" text-anchor="start" filter="url(#textShadow)">
         Geodesic path
       </text>
-      <text x="52" y="-52" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+      <text x="52" y="-92" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
             font-weight="300" fill="#a5f3fc" text-anchor="start" opacity="0.9">
         (shortest distance on manifold)
       </text>
@@ -289,14 +289,14 @@
 
     <!-- Annotation 3: Flat region (center left) -->
     <g opacity="0.95">
-      <path d="M -45,15 L -105,0" stroke="#94a3b8" stroke-width="1.2"
+      <path d="M -45,15 L -150,-10" stroke="#94a3b8" stroke-width="1.2"
             fill="none" opacity="0.7" stroke-linecap="round"/>
       <circle cx="-45" cy="15" r="2.5" fill="#2dd4bf" opacity="0.8"/>
-      <text x="-115" y="-2" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+      <text x="-180" y="-12" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
             font-weight="400" fill="#5eead4" text-anchor="end" filter="url(#textShadow)">
         Flat region
       </text>
-      <text x="-115" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+      <text x="-180" y="2" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
             font-weight="300" fill="#99f6e4" text-anchor="end" opacity="0.85">
         (low epistemic cost)
       </text>
@@ -304,10 +304,10 @@
 
     <!-- Annotation 4: Curved region marker (lower right) -->
     <g opacity="0.95">
-      <path d="M 215,105 L 260,145" stroke="#94a3b8" stroke-width="1.2"
+      <path d="M 215,105 L 290,145" stroke="#94a3b8" stroke-width="1.2"
             fill="none" opacity="0.7" stroke-linecap="round"/>
       <circle cx="215" cy="105" r="2.5" fill="#f97316" opacity="0.8"/>
-      <text x="268" y="148" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+      <text x="298" y="148" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
             font-weight="400" fill="#fdba74" text-anchor="start" filter="url(#textShadow)">
         Curved region
       </text>
@@ -315,13 +315,13 @@
 
     <!-- Annotation 5: Grid density indicator -->
     <g opacity="0.95">
-      <path d="M 140,-25 L 200,-52" stroke="#94a3b8" stroke-width="1.2"
+      <path d="M 140,-25 L 235,-52" stroke="#94a3b8" stroke-width="1.2"
             fill="none" opacity="0.7" stroke-linecap="round"/>
-      <text x="208" y="-55" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+      <text x="243" y="-55" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
             font-weight="300" fill="#cbd5e1" text-anchor="start" opacity="0.85">
         Grid density varies
       </text>
-      <text x="208" y="-42" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+      <text x="243" y="-42" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
             font-weight="300" fill="#cbd5e1" text-anchor="start" opacity="0.85">
         with curvature
       </text>
@@ -344,9 +344,9 @@
 
     <!-- Element 1: Grid density -->
     <g transform="translate(70, 15)">
-      <line x1="0" y1="0" x2="20" y2="0" stroke="#cbd5e1" stroke-width="1.5" opacity="0.6"/>
-      <line x1="0" y1="3" x2="20" y2="3" stroke="#cbd5e1" stroke-width="1.5" opacity="0.6"/>
-      <line x1="0" y1="6" x2="20" y2="6" stroke="#cbd5e1" stroke-width="1.5" opacity="0.6"/>
+      <line x1="0" y1="-2" x2="20" y2="-2" stroke="#cbd5e1" stroke-width="1.5" opacity="0.6"/>
+      <line x1="0" y1="1" x2="20" y2="1" stroke="#cbd5e1" stroke-width="1.5" opacity="0.6"/>
+      <line x1="0" y1="4" x2="20" y2="4" stroke="#cbd5e1" stroke-width="1.5" opacity="0.6"/>
       <text x="28" y="5" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5"
             font-weight="400" fill="#cbd5e1">
         Grid lines follow surface curvature
