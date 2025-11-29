@@ -1,13 +1,13 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: A comprehensive Elixir infrastructure and observability library providing
   essential services for building robust, scalable applications.
 docs_url: https://hexdocs.pm/foundation/
 hex_url: https://hex.pm/packages/foundation
 highlights:
 - 'Latest release: v0.1.5'
-- 'Recent downloads: 74'
-- 'All-time downloads: 287'
+- 'Recent downloads: 50'
+- 'All-time downloads: 311'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/foundation
 slug: foundation
@@ -26,8 +26,8 @@ A comprehensive Elixir infrastructure and observability library providing essent
 ## Package Information
 
 - Latest release: v0.1.5
-- Recent downloads: 74
-- All-time downloads: 287
+- Recent downloads: 50
+- All-time downloads: 311
 - Maintainers: nshkrdotcom
 
 ## Installation

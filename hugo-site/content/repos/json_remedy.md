@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: A blazingly fast Elixir library for repairing malformed JSON using binary
   pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent
   context-aware fixes.
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/json_remedy/
 hex_url: https://hex.pm/packages/json_remedy
 highlights:
 - 'Latest release: v0.1.10'
-- 'Recent downloads: 7298'
-- 'All-time downloads: 7786'
+- 'Recent downloads: 7629'
+- 'All-time downloads: 8845'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/json_remedy
 slug: json_remedy
@@ -27,8 +27,8 @@ A blazingly fast Elixir library for repairing malformed JSON using binary patter
 ## Package Information
 
 - Latest release: v0.1.10
-- Recent downloads: 7298
-- All-time downloads: 7786
+- Recent downloads: 7629
+- All-time downloads: 8845
 - Maintainers: nshkrdotcom
 
 ## Installation

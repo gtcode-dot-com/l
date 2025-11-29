@@ -1,13 +1,13 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Declarative, headless multi-agent runtime for code review orchestration
   with signals, workflows, and Postgres persistence.
 docs_url: https://hexdocs.pm/synapse/
 hex_url: https://hex.pm/packages/synapse
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 0'
-- 'All-time downloads: 0'
+- 'Recent downloads: 28'
+- 'All-time downloads: 28'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/synapse
 slug: synapse
@@ -26,8 +26,8 @@ Declarative, headless multi-agent runtime for code review orchestration with sig
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 0
-- All-time downloads: 0
+- Recent downloads: 28
+- All-time downloads: 28
 - Maintainers: nshkrdotcom
 
 ## Installation

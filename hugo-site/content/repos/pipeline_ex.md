@@ -1,17 +1,17 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: AI pipeline orchestration library for Elixir. Chain Claude and Gemini
   APIs with robust execution, fault tolerance, and self-improving Genesis pipelines.
 docs_url: https://hexdocs.pm/pipeline_ex/
 hex_url: https://hex.pm/packages/pipeline_ex
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 68'
-- 'All-time downloads: 95'
+- 'Recent downloads: 74'
+- 'All-time downloads: 111'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/pipeline_ex
 slug: pipeline_ex
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -26,8 +26,8 @@ AI pipeline orchestration library for Elixir. Chain Claude and Gemini APIs with 
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 68
-- All-time downloads: 95
+- Recent downloads: 74
+- All-time downloads: 111
 - Maintainers: nshkrdotcom
 
 ## Installation

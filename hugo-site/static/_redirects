@@ -31,6 +31,8 @@
 /repos/crucible_harness/ https://hex.pm/packages/crucible_harness 302
 /repos/crucible_hedging https://hex.pm/packages/crucible_hedging 302
 /repos/crucible_hedging/ https://hex.pm/packages/crucible_hedging 302
+/repos/crucible_ir https://hex.pm/packages/crucible_ir 302
+/repos/crucible_ir/ https://hex.pm/packages/crucible_ir 302
 /repos/crucible_telemetry https://hex.pm/packages/crucible_telemetry 302
 /repos/crucible_telemetry/ https://hex.pm/packages/crucible_telemetry 302
 /repos/crucible_trace https://hex.pm/packages/crucible_trace 302
@@ -51,6 +53,8 @@
 /repos/ex_data_check/ https://hex.pm/packages/ex_data_check 302
 /repos/ex_fairness https://hex.pm/packages/ex_fairness 302
 /repos/ex_fairness/ https://hex.pm/packages/ex_fairness 302
+/repos/ex_topology https://hex.pm/packages/ex_topology 302
+/repos/ex_topology/ https://hex.pm/packages/ex_topology 302
 /repos/exdantic https://hex.pm/packages/exdantic 302
 /repos/exdantic/ https://hex.pm/packages/exdantic 302
 /repos/foundation https://hex.pm/packages/foundation 302
@@ -85,5 +89,7 @@
 /repos/supertester/ https://hex.pm/packages/supertester 302
 /repos/synapse https://hex.pm/packages/synapse 302
 /repos/synapse/ https://hex.pm/packages/synapse 302
+/repos/tinkex https://hex.pm/packages/tinkex 302
+/repos/tinkex/ https://hex.pm/packages/tinkex 302
 /repos/weaviate_ex https://hex.pm/packages/weaviate_ex 302
 /repos/weaviate_ex/ https://hex.pm/packages/weaviate_ex 302

@@ -1,12 +1,12 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: The command and control layer for the AI-powered enterprise.
 docs_url: https://hexdocs.pm/citadel/
 hex_url: https://hex.pm/packages/citadel
 highlights:
 - 'Latest release: v0.0.0'
-- 'Recent downloads: 205'
-- 'All-time downloads: 205'
+- 'Recent downloads: 188'
+- 'All-time downloads: 209'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/Citadel
 slug: citadel
@@ -25,8 +25,8 @@ The command and control layer for the AI-powered enterprise.
 ## Package Information
 
 - Latest release: v0.0.0
-- Recent downloads: 205
-- All-time downloads: 205
+- Recent downloads: 188
+- All-time downloads: 209
 - Maintainers: nshkrdotcom
 
 ## Installation

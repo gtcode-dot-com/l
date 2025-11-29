@@ -1,12 +1,12 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Advanced schema definition and validation library for Elixir
 docs_url: https://hexdocs.pm/exdantic/
 hex_url: https://hex.pm/packages/exdantic
 highlights:
 - 'Latest release: v0.0.2'
-- 'Recent downloads: 530'
-- 'All-time downloads: 580'
+- 'Recent downloads: 522'
+- 'All-time downloads: 588'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/exdantic
 slug: exdantic
@@ -25,8 +25,8 @@ Advanced schema definition and validation library for Elixir
 ## Package Information
 
 - Latest release: v0.0.2
-- Recent downloads: 530
-- All-time downloads: 580
+- Recent downloads: 522
+- All-time downloads: 588
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -1,13 +1,13 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Comprehensive benchmarking framework for AI research. Measures latency,
   throughput, cost, and reliability with percentile analysis and Nx numerical computations.
 docs_url: https://hexdocs.pm/crucible_bench/
 hex_url: https://hex.pm/packages/crucible_bench
 highlights:
-- 'Latest release: v0.1.0'
-- 'Recent downloads: 26'
-- 'All-time downloads: 26'
+- 'Latest release: v0.2.1'
+- 'Recent downloads: 63'
+- 'All-time downloads: 63'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_bench
 slug: crucible_bench
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Bench
-version: 0.1.0
+version: 0.2.1
 ---
 
 ## About Crucible Bench
@@ -25,9 +25,9 @@ Comprehensive benchmarking framework for AI research. Measures latency, throughp
 
 ## Package Information
 
-- Latest release: v0.1.0
-- Recent downloads: 26
-- All-time downloads: 26
+- Latest release: v0.2.1
+- Recent downloads: 63
+- All-time downloads: 63
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -37,7 +37,7 @@ Add `crucible_bench` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_bench', "~> 0.1.0"}\n  ]
+    {'crucible_bench', "~> 0.2.1"}\n  ]
 end
 ```
 

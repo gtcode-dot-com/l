@@ -1,14 +1,14 @@
 ---
-date: '2025-11-12'
-description: Adversarial testing and robustness evaluation framework for AI models.
-  Provides 21 attack types including character/word/semantic perturbations, prompt
-  injection, jailbreak…
+date: '2025-11-29'
+description: Adversarial testing and robustness framework for AI models with 25 attacks
+  (character/word/semantic perturbations, prompt injection, jailbreak, extraction,
+  inversion), defenses…
 docs_url: https://hexdocs.pm/crucible_adversary/
 hex_url: https://hex.pm/packages/crucible_adversary
 highlights:
-- 'Latest release: v0.2.0'
-- 'Recent downloads: 44'
-- 'All-time downloads: 44'
+- 'Latest release: v0.3.0'
+- 'Recent downloads: 83'
+- 'All-time downloads: 83'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_adversary
 slug: crucible_adversary
@@ -17,18 +17,18 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Adversary
-version: 0.2.0
+version: 0.3.0
 ---
 
 ## About Crucible Adversary
 
-Adversarial testing and robustness evaluation framework for AI models. Provides 21 attack types including character/word/semantic perturbations, prompt injection, jailbreak…
+Adversarial testing and robustness framework for AI models with 25 attacks (character/word/semantic perturbations, prompt injection, jailbreak, extraction, inversion), defenses…
 
 ## Package Information
 
-- Latest release: v0.2.0
-- Recent downloads: 44
-- All-time downloads: 44
+- Latest release: v0.3.0
+- Recent downloads: 83
+- All-time downloads: 83
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +38,7 @@ Add `crucible_adversary` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_adversary', "~> 0.2.0"}\n  ]
+    {'crucible_adversary', "~> 0.3.0"}\n  ]
 end
 ```
 

@@ -1,12 +1,12 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Advanced telemetry collection and analysis for AI research
 docs_url: https://hexdocs.pm/crucible_telemetry/
 hex_url: https://hex.pm/packages/crucible_telemetry
 highlights:
-- 'Latest release: v0.1.0'
-- 'Recent downloads: 24'
-- 'All-time downloads: 24'
+- 'Latest release: v0.2.0'
+- 'Recent downloads: 48'
+- 'All-time downloads: 48'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_telemetry
 slug: crucible_telemetry
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Telemetry
-version: 0.1.0
+version: 0.2.0
 ---
 
 ## About Crucible Telemetry
@@ -24,9 +24,9 @@ Advanced telemetry collection and analysis for AI research
 
 ## Package Information
 
-- Latest release: v0.1.0
-- Recent downloads: 24
-- All-time downloads: 24
+- Latest release: v0.2.0
+- Recent downloads: 48
+- All-time downloads: 48
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -36,7 +36,7 @@ Add `crucible_telemetry` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_telemetry', "~> 0.1.0"}\n  ]
+    {'crucible_telemetry', "~> 0.2.0"}\n  ]
 end
 ```
 

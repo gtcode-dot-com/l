@@ -1,12 +1,12 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude
 docs_url: https://hexdocs.pm/claude_code_sdk/
 hex_url: https://hex.pm/packages/claude_code_sdk
 highlights:
 - 'Latest release: v0.2.2'
-- 'Recent downloads: 116'
-- 'All-time downloads: 145'
+- 'Recent downloads: 158'
+- 'All-time downloads: 195'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/claude_code_sdk_elixir
 slug: claude_code_sdk
@@ -25,8 +25,8 @@ An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude
 ## Package Information
 
 - Latest release: v0.2.2
-- Recent downloads: 116
-- All-time downloads: 145
+- Recent downloads: 158
+- All-time downloads: 195
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready
   interface with streaming support, comprehensive event handling, and robust testing
   utilities.
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/codex_sdk/
 hex_url: https://hex.pm/packages/codex_sdk
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 65'
-- 'All-time downloads: 65'
+- 'Recent downloads: 89'
+- 'All-time downloads: 89'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/codex_sdk
 slug: codex_sdk
@@ -27,8 +27,8 @@ Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-r
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 65
-- All-time downloads: 65
+- Recent downloads: 89
+- All-time downloads: 89
 - Maintainers: nshkrdotcom
 
 ## Installation

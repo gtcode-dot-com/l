@@ -1,33 +1,34 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: 'CrucibleFramework: A scientific platform for LLM reliability research
-  on the BEAM. This is the meta-package with comprehensive documentation and guides.'
+  on the BEAM. Provides core library functionality with comprehensive documentation
+  and guides.'
 docs_url: https://hexdocs.pm/crucible_framework/
 hex_url: https://hex.pm/packages/crucible_framework
 highlights:
-- 'Latest release: v0.1.1'
-- 'Recent downloads: 44'
-- 'All-time downloads: 44'
+- 'Latest release: v0.3.0'
+- 'Recent downloads: 151'
+- 'All-time downloads: 151'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_framework
 slug: crucible_framework
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
 title: Crucible Framework
-version: 0.1.1
+version: 0.3.0
 ---
 
 ## About Crucible Framework
 
-CrucibleFramework: A scientific platform for LLM reliability research on the BEAM. This is the meta-package with comprehensive documentation and guides.
+CrucibleFramework: A scientific platform for LLM reliability research on the BEAM. Provides core library functionality with comprehensive documentation and guides.
 
 ## Package Information
 
-- Latest release: v0.1.1
-- Recent downloads: 44
-- All-time downloads: 44
+- Latest release: v0.3.0
+- Recent downloads: 151
+- All-time downloads: 151
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -37,7 +38,7 @@ Add `crucible_framework` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_framework', "~> 0.1.1"}\n  ]
+    {'crucible_framework', "~> 0.3.0"}\n  ]
 end
 ```
 

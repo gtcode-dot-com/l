@@ -1,14 +1,14 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Production-ready data validation and quality library for Elixir ML pipelines.
   Provides 22 built-in expectations, drift detection, advanced profiling with outliers
   and…
 docs_url: https://hexdocs.pm/ex_data_check/
 hex_url: https://hex.pm/packages/ex_data_check
 highlights:
-- 'Latest release: v0.2.0'
-- 'Recent downloads: 45'
-- 'All-time downloads: 45'
+- 'Latest release: v0.2.1'
+- 'Recent downloads: 75'
+- 'All-time downloads: 75'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/ExDataCheck
 slug: ex_data_check
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Ex Data Check
-version: 0.2.0
+version: 0.2.1
 ---
 
 ## About Ex Data Check
@@ -26,9 +26,9 @@ Production-ready data validation and quality library for Elixir ML pipelines. Pr
 
 ## Package Information
 
-- Latest release: v0.2.0
-- Recent downloads: 45
-- All-time downloads: 45
+- Latest release: v0.2.1
+- Recent downloads: 75
+- All-time downloads: 75
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +38,7 @@ Add `ex_data_check` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'ex_data_check', "~> 0.2.0"}\n  ]
+    {'ex_data_check', "~> 0.2.1"}\n  ]
 end
 ```
 

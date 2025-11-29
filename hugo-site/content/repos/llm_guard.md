@@ -1,14 +1,14 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: AI Firewall and guardrails for LLM-based Elixir applications. Provides
   prompt injection detection, data leakage prevention, jailbreak detection, and comprehensive
   security…
 docs_url: https://hexdocs.pm/llm_guard/
 hex_url: https://hex.pm/packages/llm_guard
 highlights:
-- 'Latest release: v0.2.0'
-- 'Recent downloads: 42'
-- 'All-time downloads: 42'
+- 'Latest release: v0.2.1'
+- 'Recent downloads: 74'
+- 'All-time downloads: 74'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/LlmGuard
 slug: llm_guard
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Llm Guard
-version: 0.2.0
+version: 0.2.1
 ---
 
 ## About Llm Guard
@@ -26,9 +26,9 @@ AI Firewall and guardrails for LLM-based Elixir applications. Provides prompt in
 
 ## Package Information
 
-- Latest release: v0.2.0
-- Recent downloads: 42
-- All-time downloads: 42
+- Latest release: v0.2.1
+- Recent downloads: 74
+- All-time downloads: 74
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +38,7 @@ Add `llm_guard` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'llm_guard', "~> 0.2.0"}\n  ]
+    {'llm_guard', "~> 0.2.1"}\n  ]
 end
 ```
 

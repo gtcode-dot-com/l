@@ -1,13 +1,13 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: A 100% faithful port of the DuckDB Python client to Elixir, using the
   DuckDB CLI for full API compatibility with the official Python client.
 docs_url: https://hexdocs.pm/duckdb_ex/
 hex_url: https://hex.pm/packages/duckdb_ex
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 54'
-- 'All-time downloads: 54'
+- 'Recent downloads: 74'
+- 'All-time downloads: 74'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/duckdb_ex
 slug: duckdb_ex
@@ -26,8 +26,8 @@ A 100% faithful port of the DuckDB Python client to Elixir, using the DuckDB CLI
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 54
-- All-time downloads: 54
+- Recent downloads: 74
+- All-time downloads: 74
 - Maintainers: nshkrdotcom
 
 ## Installation

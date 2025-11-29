@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: ElixirScope is a next-generation debugging and observability platform
   for Elixir applications, designed to provide an Execution Cinema experience through
   deep, compile-time AST…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/elixir_scope/
 hex_url: https://hex.pm/packages/elixir_scope
 highlights:
 - 'Latest release: v0.0.1'
-- 'Recent downloads: 19'
-- 'All-time downloads: 46'
+- 'Recent downloads: 15'
+- 'All-time downloads: 50'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/ElixirScope
 slug: elixir_scope
@@ -27,8 +27,8 @@ ElixirScope is a next-generation debugging and observability platform for Elixir
 ## Package Information
 
 - Latest release: v0.0.1
-- Recent downloads: 19
-- All-time downloads: 46
+- Recent downloads: 15
+- All-time downloads: 50
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: A modern Elixir client for Weaviate vector database with support for
   collections, objects, batch operations, GraphQL queries, and vector search. Includes
   health checks and…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/weaviate_ex/
 hex_url: https://hex.pm/packages/weaviate_ex
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 57'
-- 'All-time downloads: 57'
+- 'Recent downloads: 75'
+- 'All-time downloads: 75'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/yourusername/weaviate_ex
 slug: weaviate_ex
@@ -27,8 +27,8 @@ A modern Elixir client for Weaviate vector database with support for collections
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 57
-- All-time downloads: 57
+- Recent downloads: 75
+- All-time downloads: 75
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: A metaprogramming framework for building REST APIs from OTP operations
   with automatic endpoint generation, parameter validation, and OpenAPI documentation.
 docs_url: https://hexdocs.pm/arsenal/
@@ -7,7 +7,7 @@ hex_url: https://hex.pm/packages/arsenal
 highlights:
 - 'Latest release: v0.1.0'
 - 'Recent downloads: 1169'
-- 'All-time downloads: 1189'
+- 'All-time downloads: 1195'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/arsenal
 slug: arsenal
@@ -27,7 +27,7 @@ A metaprogramming framework for building REST APIs from OTP operations with auto
 
 - Latest release: v0.1.0
 - Recent downloads: 1169
-- All-time downloads: 1189
+- All-time downloads: 1195
 - Maintainers: nshkrdotcom
 
 ## Installation

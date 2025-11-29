@@ -1,13 +1,13 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Request hedging for tail latency reduction in distributed systems. Implements
   Google's 'Tail at Scale' with adaptive strategies. Reduces P99 latency by 75-96%.
 docs_url: https://hexdocs.pm/crucible_hedging/
 hex_url: https://hex.pm/packages/crucible_hedging
 highlights:
-- 'Latest release: v0.1.0'
-- 'Recent downloads: 26'
-- 'All-time downloads: 26'
+- 'Latest release: v0.2.0'
+- 'Recent downloads: 46'
+- 'All-time downloads: 46'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_hedging
 slug: crucible_hedging
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Hedging
-version: 0.1.0
+version: 0.2.0
 ---
 
 ## About Crucible Hedging
@@ -25,9 +25,9 @@ Request hedging for tail latency reduction in distributed systems. Implements Go
 
 ## Package Information
 
-- Latest release: v0.1.0
-- Recent downloads: 26
-- All-time downloads: 26
+- Latest release: v0.2.0
+- Recent downloads: 46
+- All-time downloads: 46
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -37,7 +37,7 @@ Add `crucible_hedging` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_hedging', "~> 0.1.0"}\n  ]
+    {'crucible_hedging', "~> 0.2.0"}\n  ]
 end
 ```
 

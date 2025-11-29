@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: A multi-agent framework for the BEAM (Erlang VM) that provides agent
   lifecycle management, message passing, discovery, and extensibility for building
   distributed agent-based…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/mabeam/
 hex_url: https://hex.pm/packages/mabeam
 highlights:
 - 'Latest release: v0.0.1'
-- 'Recent downloads: 19'
-- 'All-time downloads: 41'
+- 'Recent downloads: 22'
+- 'All-time downloads: 50'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/mabeam
 slug: mabeam
@@ -27,8 +27,8 @@ A multi-agent framework for the BEAM (Erlang VM) that provides agent lifecycle m
 ## Package Information
 
 - Latest release: v0.0.1
-- Recent downloads: 19
-- All-time downloads: 41
+- Recent downloads: 22
+- All-time downloads: 50
 - Maintainers: nshkrdotcom
 
 ## Installation

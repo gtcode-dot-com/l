@@ -1,13 +1,13 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: A Phoenix LiveView performance monitoring dashboard for tracking slow
   endpoints and database queries during development.
 docs_url: https://hexdocs.pm/elixir_dashboard/
 hex_url: https://hex.pm/packages/elixir_dashboard
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 53'
-- 'All-time downloads: 53'
+- 'Recent downloads: 67'
+- 'All-time downloads: 67'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/elixir_dashboard
 slug: elixir_dashboard
@@ -26,8 +26,8 @@ A Phoenix LiveView performance monitoring dashboard for tracking slow endpoints 
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 53
-- All-time downloads: 53
+- Recent downloads: 67
+- All-time downloads: 67
 - Maintainers: nshkrdotcom
 
 ## Installation

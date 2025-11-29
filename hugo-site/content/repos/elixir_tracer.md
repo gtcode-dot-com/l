@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Local-first observability for Elixir with New Relic API parity. A complete
   tracing and observability solution that works entirely offline while maintaining
   compatibility with New…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/elixir_tracer/
 hex_url: https://hex.pm/packages/elixir_tracer
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 32'
-- 'All-time downloads: 32'
+- 'Recent downloads: 40'
+- 'All-time downloads: 40'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/elixir_tracer
 slug: elixir_tracer
@@ -27,8 +27,8 @@ Local-first observability for Elixir with New Relic API parity. A complete traci
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 32
-- All-time downloads: 32
+- Recent downloads: 40
+- All-time downloads: 40
 - Maintainers: nshkrdotcom
 
 ## Installation

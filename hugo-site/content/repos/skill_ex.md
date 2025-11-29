@@ -1,13 +1,13 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Aggregates and packages Claude skills from multiple Elixir projects into
   a single, validated bundle ready for distribution.
 docs_url: https://hexdocs.pm/skill_ex/
 hex_url: https://hex.pm/packages/skill_ex
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 18'
-- 'All-time downloads: 18'
+- 'Recent downloads: 24'
+- 'All-time downloads: 24'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/supertester/tree/main/skill_ex
 slug: skill_ex
@@ -26,8 +26,8 @@ Aggregates and packages Claude skills from multiple Elixir projects into a singl
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 18
-- All-time downloads: 18
+- Recent downloads: 24
+- All-time downloads: 24
 - Maintainers: nshkrdotcom
 
 ## Installation

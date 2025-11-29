@@ -1,5 +1,5 @@
 ---
-date: '2025-11-12'
+date: '2025-11-29'
 description: Configuration-driven Python library integration for Elixir. Automatically
   generate type-safe Elixir modules from declarative configs, enabling seamless integration
   with any Python…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/snakebridge/
 hex_url: https://hex.pm/packages/snakebridge
 highlights:
 - 'Latest release: v0.2.4'
-- 'Recent downloads: 105'
-- 'All-time downloads: 105'
+- 'Recent downloads: 147'
+- 'All-time downloads: 147'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakebridge
 slug: snakebridge
@@ -27,8 +27,8 @@ Configuration-driven Python library integration for Elixir. Automatically genera
 ## Package Information
 
 - Latest release: v0.2.4
-- Recent downloads: 105
-- All-time downloads: 105
+- Recent downloads: 147
+- All-time downloads: 147
 - Maintainers: nshkrdotcom
 
 ## Installation
