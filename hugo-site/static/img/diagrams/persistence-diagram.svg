@@ -317,13 +317,13 @@
   </text>
 
   <!-- Publication-quality title with refined typography -->
-  <text x="300" y="40" fill="#f8fafc" font-family="'Helvetica Neue', Arial, sans-serif"
+  <text x="300" y="28" fill="#f8fafc" font-family="'Helvetica Neue', Arial, sans-serif"
         font-size="22" font-weight="700" text-anchor="middle" letter-spacing="1">
     Persistence Diagram
   </text>
 
   <!-- Subtle subtitle for additional context -->
-  <text x="300" y="57" fill="#cbd5e1" font-family="'Helvetica Neue', Arial, sans-serif"
+  <text x="300" y="45" fill="#cbd5e1" font-family="'Helvetica Neue', Arial, sans-serif"
         font-size="11" font-weight="400" text-anchor="middle" letter-spacing="0.3" opacity="0.7">
     Topological Features in Birth-Death Coordinates
   </text>
