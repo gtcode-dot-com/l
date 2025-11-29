@@ -1,188 +1,330 @@
-<svg viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg">
-  <!-- Dark background -->
-  <rect width="550" height="550" fill="#0f172a"/>
-
-  <!-- Define gradients and filters for glow effect -->
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Professional dark background with subtle gradient -->
   <defs>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Advanced glow filters -->
+    <filter id="subtleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <filter id="mediumGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="1" result="blur2"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <filter id="strongGlow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feGaussianBlur stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="premiumGlow" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="5" result="blur1"/>
+      <feGaussianBlur stdDeviation="3" result="blur2"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur3"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur3"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft shadow filter for depth -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Refined gradient for noise zone with smooth fade -->
+    <radialGradient id="noiseZoneGradient" cx="100%" cy="100%" r="140%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.25" />
+      <stop offset="50%" style="stop-color:#ef4444;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Refined gradient for persistent zone -->
+    <linearGradient id="persistentZoneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0.05" />
+    </linearGradient>
+
+    <!-- Elegant gradient stroke for diagonal line -->
+    <linearGradient id="diagonalGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#94a3b8;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:0.3" />
+    </linearGradient>
+
+    <!-- Gold gradient for signal points -->
+    <radialGradient id="goldGradient" cx="30%" cy="30%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Green gradient for alive points -->
+    <radialGradient id="greenGradient" cx="30%" cy="30%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Gray gradient for noise points -->
+    <radialGradient id="grayGradient" cx="35%" cy="35%">
+      <stop offset="0%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Clip path for plot area -->
+    <clipPath id="plotClip">
+      <rect x="70" y="70" width="460" height="460"/>
+    </clipPath>
   </defs>
 
-  <!-- Plot area margins: 60px left, 40px right, 60px top, 60px bottom -->
-  <!-- Plot dimensions: 450x430 -->
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGradient)"/>
 
-  <!-- Shaded regions -->
-  <!-- Noise zone (near diagonal) - light red/pink -->
-  <path d="M 60 490 L 60 470 Q 150 380 240 290 Q 330 200 420 110 L 440 110 Q 350 200 260 290 Q 170 380 80 470 L 80 490 Z"
-        fill="#ef4444" opacity="0.15"/>
+  <!-- Plot area margins: 70px left, 70px right, 70px top, 70px bottom -->
+  <!-- Plot dimensions: 460x460 (perfectly square for mathematical accuracy) -->
 
-  <!-- Persistent zone (above threshold) - light gold -->
-  <rect x="60" y="60" width="450" height="227" fill="#fbbf24" opacity="0.1"/>
+  <!-- Shaded regions with refined gradients -->
+  <g clip-path="url(#plotClip)">
+    <!-- Noise zone (near diagonal) - refined gradient fade -->
+    <path d="M 70 530 L 70 505 Q 165 410 260 315 Q 355 220 450 125 L 475 125 Q 380 220 285 315 Q 190 410 95 505 L 95 530 Z"
+          fill="url(#noiseZoneGradient)"/>
 
-  <!-- Grid lines (subtle) -->
-  <g stroke="#1e293b" stroke-width="1" opacity="0.5">
+    <!-- Persistent zone (above threshold) - subtle gradient -->
+    <rect x="70" y="70" width="460" height="235" fill="url(#persistentZoneGradient)"/>
+  </g>
+
+  <!-- Subtle grid lines with refined styling -->
+  <g stroke="#334155" stroke-width="0.75" opacity="0.25">
     <!-- Vertical grid lines -->
-    <line x1="150" y1="60" x2="150" y2="490"/>
-    <line x1="240" y1="60" x2="240" y2="490"/>
-    <line x1="330" y1="60" x2="330" y2="490"/>
-    <line x1="420" y1="60" x2="420" y2="490"/>
+    <line x1="162" y1="70" x2="162" y2="530"/>
+    <line x1="254" y1="70" x2="254" y2="530"/>
+    <line x1="346" y1="70" x2="346" y2="530"/>
+    <line x1="438" y1="70" x2="438" y2="530"/>
     <!-- Horizontal grid lines -->
-    <line x1="60" y1="150" x2="510" y2="150"/>
-    <line x1="60" y1="240" x2="510" y2="240"/>
-    <line x1="60" y1="330" x2="510" y2="330"/>
-    <line x1="60" y1="420" x2="510" y2="420"/>
+    <line x1="70" y1="162" x2="530" y2="162"/>
+    <line x1="70" y1="254" x2="530" y2="254"/>
+    <line x1="70" y1="346" x2="530" y2="346"/>
+    <line x1="70" y1="438" x2="530" y2="438"/>
   </g>
 
-  <!-- Axes -->
-  <g stroke="#64748b" stroke-width="2" fill="none">
+  <!-- Professional axes with crisp lines -->
+  <g stroke="#94a3b8" stroke-width="2.5" fill="none" stroke-linecap="round">
     <!-- Y-axis -->
-    <line x1="60" y1="60" x2="60" y2="490"/>
+    <line x1="70" y1="70" x2="70" y2="530"/>
     <!-- X-axis -->
-    <line x1="60" y1="490" x2="510" y2="490"/>
+    <line x1="70" y1="530" x2="530" y2="530"/>
   </g>
 
-  <!-- Tick marks -->
-  <g stroke="#64748b" stroke-width="1.5">
+  <!-- Precise tick marks -->
+  <g stroke="#94a3b8" stroke-width="2" stroke-linecap="round">
     <!-- X-axis ticks -->
-    <line x1="60" y1="490" x2="60" y2="495"/>
-    <line x1="150" y1="490" x2="150" y2="495"/>
-    <line x1="240" y1="490" x2="240" y2="495"/>
-    <line x1="330" y1="490" x2="330" y2="495"/>
-    <line x1="420" y1="490" x2="420" y2="495"/>
-    <line x1="510" y1="490" x2="510" y2="495"/>
+    <line x1="70" y1="530" x2="70" y2="538"/>
+    <line x1="162" y1="530" x2="162" y2="538"/>
+    <line x1="254" y1="530" x2="254" y2="538"/>
+    <line x1="346" y1="530" x2="346" y2="538"/>
+    <line x1="438" y1="530" x2="438" y2="538"/>
+    <line x1="530" y1="530" x2="530" y2="538"/>
 
     <!-- Y-axis ticks -->
-    <line x1="55" y1="490" x2="60" y2="490"/>
-    <line x1="55" y1="404" x2="60" y2="404"/>
-    <line x1="55" y1="318" x2="60" y2="318"/>
-    <line x1="55" y1="232" x2="60" y2="232"/>
-    <line x1="55" y1="146" x2="60" y2="146"/>
-    <line x1="55" y1="60" x2="60" y2="60"/>
+    <line x1="62" y1="530" x2="70" y2="530"/>
+    <line x1="62" y1="438" x2="70" y2="438"/>
+    <line x1="62" y1="346" x2="70" y2="346"/>
+    <line x1="62" y1="254" x2="70" y2="254"/>
+    <line x1="62" y1="162" x2="70" y2="162"/>
+    <line x1="62" y1="70" x2="70" y2="70"/>
   </g>
 
-  <!-- Tick labels -->
-  <g fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">
+  <!-- Professional tick labels with proper font -->
+  <g fill="#cbd5e1" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400">
     <!-- X-axis labels -->
-    <text x="60" y="510" text-anchor="middle">0</text>
-    <text x="150" y="510" text-anchor="middle">0.2</text>
-    <text x="240" y="510" text-anchor="middle">0.4</text>
-    <text x="330" y="510" text-anchor="middle">0.6</text>
-    <text x="420" y="510" text-anchor="middle">0.8</text>
-    <text x="510" y="510" text-anchor="middle">1</text>
+    <text x="70" y="555" text-anchor="middle">0.0</text>
+    <text x="162" y="555" text-anchor="middle">0.2</text>
+    <text x="254" y="555" text-anchor="middle">0.4</text>
+    <text x="346" y="555" text-anchor="middle">0.6</text>
+    <text x="438" y="555" text-anchor="middle">0.8</text>
+    <text x="530" y="555" text-anchor="middle">1.0</text>
 
     <!-- Y-axis labels -->
-    <text x="48" y="494" text-anchor="end">0</text>
-    <text x="48" y="408" text-anchor="end">0.2</text>
-    <text x="48" y="322" text-anchor="end">0.4</text>
-    <text x="48" y="236" text-anchor="end">0.6</text>
-    <text x="48" y="150" text-anchor="end">0.8</text>
-    <text x="48" y="64" text-anchor="end">1</text>
+    <text x="54" y="535" text-anchor="end">0.0</text>
+    <text x="54" y="443" text-anchor="end">0.2</text>
+    <text x="54" y="351" text-anchor="end">0.4</text>
+    <text x="54" y="259" text-anchor="end">0.6</text>
+    <text x="54" y="167" text-anchor="end">0.8</text>
+    <text x="54" y="75" text-anchor="end">1.0</text>
   </g>
 
-  <!-- Diagonal line (birth = death) -->
-  <line x1="60" y1="490" x2="510" y2="60"
-        stroke="#64748b" stroke-width="1.5"
-        stroke-dasharray="8,4" opacity="0.5"/>
+  <!-- Elegant diagonal line (birth = death) with gradient stroke -->
+  <line x1="70" y1="530" x2="530" y2="70"
+        stroke="url(#diagonalGradient)" stroke-width="2"
+        stroke-dasharray="10,5" stroke-linecap="round" filter="url(#subtleGlow)"/>
 
-  <!-- Persistence threshold line -->
-  <line x1="60" y1="287" x2="510" y2="287"
-        stroke="#fbbf24" stroke-width="1.5"
-        stroke-dasharray="6,3" opacity="0.8"/>
+  <!-- Refined persistence threshold line -->
+  <g filter="url(#mediumGlow)">
+    <line x1="70" y1="305" x2="530" y2="305"
+          stroke="#fbbf24" stroke-width="2"
+          stroke-dasharray="8,4" stroke-linecap="round" opacity="0.9"/>
+  </g>
 
-  <!-- Threshold label -->
-  <text x="515" y="291" fill="#fbbf24" font-family="Arial, sans-serif" font-size="11" font-style="italic">
+  <!-- Threshold label with elegant styling -->
+  <text x="538" y="310" fill="#fbbf24" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="12" font-style="italic" font-weight="500" filter="url(#subtleGlow)">
     Persistence threshold
   </text>
 
-  <!-- Noise points (near diagonal) - small gray dots -->
-  <g fill="#94a3b8" opacity="0.6" filter="url(#glow)">
-    <circle cx="440" cy="420" r="3"/>
-    <circle cx="410" cy="395" r="3"/>
-    <circle cx="380" cy="365" r="3"/>
-    <circle cx="430" cy="400" r="3"/>
-    <circle cx="390" cy="375" r="3"/>
-    <circle cx="360" cy="345" r="3"/>
-    <circle cx="420" cy="390" r="3"/>
-    <circle cx="350" cy="330" r="3"/>
-    <circle cx="320" cy="305" r="3"/>
-    <circle cx="340" cy="315" r="3"/>
-    <circle cx="290" cy="280" r="3"/>
-    <circle cx="310" cy="295" r="3"/>
-    <circle cx="270" cy="260" r="3"/>
-    <circle cx="250" cy="245" r="3"/>
-    <circle cx="230" cy="220" r="3"/>
-    <circle cx="210" cy="205" r="3"/>
-    <circle cx="190" cy="180" r="3"/>
-    <circle cx="170" cy="165" r="3"/>
-    <circle cx="150" cy="145" r="3"/>
-    <circle cx="130" cy="125" r="3"/>
+  <!-- Noise points with refined styling and subtle depth -->
+  <g filter="url(#subtleGlow)">
+    <circle cx="470" cy="455" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="438" cy="428" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="406" cy="397" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="460" cy="435" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="420" cy="408" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="388" cy="377" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="450" cy="425" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="378" cy="362" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="346" cy="335" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="368" cy="347" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="314" cy="308" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="336" cy="325" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="292" cy="288" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="270" cy="272" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="248" cy="247" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="226" cy="230" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="204" cy="205" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="182" cy="188" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="160" cy="168" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="138" cy="148" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="480" cy="465" r="3.5" fill="url(#grayGradient)" opacity="0.45"/>
+    <circle cx="445" cy="432" r="3.5" fill="url(#grayGradient)" opacity="0.48"/>
+    <circle cx="395" cy="385" r="3.5" fill="url(#grayGradient)" opacity="0.47"/>
   </g>
 
-  <!-- Signal/Persistent points (far from diagonal) - larger gold dots -->
-  <g fill="#fbbf24" filter="url(#strongGlow)">
-    <circle cx="150" cy="260" r="6" opacity="0.9"/>
-    <circle cx="200" cy="200" r="6" opacity="0.9"/>
-    <circle cx="260" cy="160" r="6" opacity="0.9"/>
-    <circle cx="180" cy="230" r="6" opacity="0.9"/>
-    <circle cx="300" cy="120" r="6" opacity="0.9"/>
-    <circle cx="240" cy="180" r="6" opacity="0.9"/>
+  <!-- Signal/Persistent points with premium glow and inner highlight -->
+  <g filter="url(#strongGlow)">
+    <!-- Outer glow layer -->
+    <circle cx="162" cy="285" r="7.5" fill="#fbbf24" opacity="0.3"/>
+    <circle cx="216" cy="220" r="7.5" fill="#fbbf24" opacity="0.3"/>
+    <circle cx="278" cy="177" r="7.5" fill="#fbbf24" opacity="0.3"/>
+    <circle cx="194" cy="252" r="7.5" fill="#fbbf24" opacity="0.3"/>
+    <circle cx="324" cy="135" r="7.5" fill="#fbbf24" opacity="0.3"/>
+    <circle cx="254" cy="198" r="7.5" fill="#fbbf24" opacity="0.3"/>
+
+    <!-- Main point with gradient -->
+    <circle cx="162" cy="285" r="6" fill="url(#goldGradient)" opacity="0.95"/>
+    <circle cx="216" cy="220" r="6" fill="url(#goldGradient)" opacity="0.95"/>
+    <circle cx="278" cy="177" r="6" fill="url(#goldGradient)" opacity="0.95"/>
+    <circle cx="194" cy="252" r="6" fill="url(#goldGradient)" opacity="0.95"/>
+    <circle cx="324" cy="135" r="6" fill="url(#goldGradient)" opacity="0.95"/>
+    <circle cx="254" cy="198" r="6" fill="url(#goldGradient)" opacity="0.95"/>
+
+    <!-- Inner highlight for depth -->
+    <circle cx="161" cy="284" r="2" fill="#fef3c7" opacity="0.8"/>
+    <circle cx="215" cy="219" r="2" fill="#fef3c7" opacity="0.8"/>
+    <circle cx="277" cy="176" r="2" fill="#fef3c7" opacity="0.8"/>
+    <circle cx="193" cy="251" r="2" fill="#fef3c7" opacity="0.8"/>
+    <circle cx="323" cy="134" r="2" fill="#fef3c7" opacity="0.8"/>
+    <circle cx="253" cy="197" r="2" fill="#fef3c7" opacity="0.8"/>
   </g>
 
-  <!-- "Still alive" points (death = infinity/1) - at top edge -->
-  <g fill="#10b981" filter="url(#strongGlow)">
-    <circle cx="120" cy="65" r="7" opacity="0.9"/>
-    <circle cx="220" cy="65" r="7" opacity="0.9"/>
-    <circle cx="340" cy="65" r="7" opacity="0.9"/>
+  <!-- "Still alive" points with distinctive premium appearance -->
+  <g filter="url(#premiumGlow)">
+    <!-- Outer glow layer -->
+    <circle cx="130" cy="76" r="9" fill="#10b981" opacity="0.35"/>
+    <circle cx="238" cy="76" r="9" fill="#10b981" opacity="0.35"/>
+    <circle cx="368" cy="76" r="9" fill="#10b981" opacity="0.35"/>
+
+    <!-- Main point with gradient -->
+    <circle cx="130" cy="76" r="7" fill="url(#greenGradient)" opacity="0.95"/>
+    <circle cx="238" cy="76" r="7" fill="url(#greenGradient)" opacity="0.95"/>
+    <circle cx="368" cy="76" r="7" fill="url(#greenGradient)" opacity="0.95"/>
+
+    <!-- Inner highlight -->
+    <circle cx="129" cy="75" r="2.5" fill="#d1fae5" opacity="0.9"/>
+    <circle cx="237" cy="75" r="2.5" fill="#d1fae5" opacity="0.9"/>
+    <circle cx="367" cy="75" r="2.5" fill="#d1fae5" opacity="0.9"/>
+
+    <!-- Subtle outer ring for extra distinction -->
+    <circle cx="130" cy="76" r="8.5" fill="none" stroke="#10b981" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="238" cy="76" r="8.5" fill="none" stroke="#10b981" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="368" cy="76" r="8.5" fill="none" stroke="#10b981" stroke-width="0.5" opacity="0.4"/>
   </g>
 
-  <!-- Labels for point clusters -->
-  <g font-family="Arial, sans-serif" font-size="12">
-    <!-- Noise label -->
-    <text x="450" y="440" fill="#94a3b8" font-style="italic" opacity="0.8">
-      Noise /
-    </text>
-    <text x="445" y="455" fill="#94a3b8" font-style="italic" opacity="0.8">
-      Transient
-    </text>
+  <!-- Elegant annotations with professional styling -->
+  <g font-family="'Helvetica Neue', Arial, sans-serif" font-size="13">
+    <!-- Noise label with subtle callout -->
+    <g opacity="0.75" filter="url(#subtleGlow)">
+      <line x1="460" y1="445" x2="485" y2="465" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
+      <text x="490" y="465" fill="#cbd5e1" font-style="italic" font-weight="300">
+        Noise /
+      </text>
+      <text x="490" y="480" fill="#cbd5e1" font-style="italic" font-weight="300">
+        Transient
+      </text>
+    </g>
 
-    <!-- Signal label -->
-    <text x="320" y="180" fill="#fbbf24" font-weight="bold">
-      Signal /
-    </text>
-    <text x="310" y="195" fill="#fbbf24" font-weight="bold">
-      Persistent
-    </text>
+    <!-- Signal label with elegant positioning -->
+    <g filter="url(#mediumGlow)">
+      <line x1="278" y1="177" x2="335" y2="195" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.6"/>
+      <text x="340" y="197" fill="#fbbf24" font-weight="600" letter-spacing="0.3">
+        Signal /
+      </text>
+      <text x="340" y="212" fill="#fbbf24" font-weight="600" letter-spacing="0.3">
+        Persistent
+      </text>
+    </g>
 
-    <!-- Still alive label -->
-    <text x="360" y="80" fill="#10b981" font-weight="bold">
-      Still alive
-    </text>
+    <!-- Still alive label with premium styling -->
+    <g filter="url(#mediumGlow)">
+      <line x1="368" y1="76" x2="395" y2="90" stroke="#10b981" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.6"/>
+      <text x="400" y="95" fill="#10b981" font-weight="600" letter-spacing="0.3">
+        Still alive
+      </text>
+    </g>
   </g>
 
-  <!-- Axis labels -->
-  <text x="285" y="540" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">
+  <!-- Professional axis labels with proper spacing -->
+  <text x="300" y="585" fill="#f1f5f9" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0.5">
     Birth
   </text>
 
-  <text x="20" y="275" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" transform="rotate(-90 20 275)">
+  <text x="25" y="300" fill="#f1f5f9" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0.5"
+        transform="rotate(-90 25 300)">
     Death
   </text>
 
-  <!-- Title -->
-  <text x="285" y="30" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">
+  <!-- Publication-quality title with refined typography -->
+  <text x="300" y="40" fill="#f8fafc" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="22" font-weight="700" text-anchor="middle" letter-spacing="1">
     Persistence Diagram
+  </text>
+
+  <!-- Subtle subtitle for additional context -->
+  <text x="300" y="57" fill="#cbd5e1" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="11" font-weight="400" text-anchor="middle" letter-spacing="0.3" opacity="0.7">
+    Topological Features in Birth-Death Coordinates
   </text>
 </svg>
