@@ -189,36 +189,36 @@
   </g>
 
   <!-- Threshold label with elegant styling -->
-  <text x="538" y="310" fill="#fbbf24" font-family="'Helvetica Neue', Arial, sans-serif"
-        font-size="12" font-style="italic" font-weight="500" filter="url(#subtleGlow)">
+  <text x="520" y="295" fill="#fbbf24" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="12" font-style="italic" font-weight="500" filter="url(#subtleGlow)" text-anchor="end">
     Persistence threshold
   </text>
 
-  <!-- Noise points with refined styling and subtle depth -->
+  <!-- Noise points with refined styling and subtle depth - positioned just above diagonal (y=x) -->
   <g filter="url(#subtleGlow)">
-    <circle cx="470" cy="455" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="438" cy="428" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="406" cy="397" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="460" cy="435" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="420" cy="408" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="388" cy="377" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="450" cy="425" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="378" cy="362" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="346" cy="335" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="368" cy="347" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="314" cy="308" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="336" cy="325" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="292" cy="288" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="270" cy="272" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="248" cy="247" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="226" cy="230" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="204" cy="205" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="182" cy="188" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="160" cy="168" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="138" cy="148" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
-    <circle cx="480" cy="465" r="3.5" fill="url(#grayGradient)" opacity="0.45"/>
-    <circle cx="445" cy="432" r="3.5" fill="url(#grayGradient)" opacity="0.48"/>
-    <circle cx="395" cy="385" r="3.5" fill="url(#grayGradient)" opacity="0.47"/>
+    <circle cx="100" cy="480" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="115" cy="460" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="130" cy="452" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="145" cy="433" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="160" cy="412" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="175" cy="405" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="190" cy="390" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="210" cy="365" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="230" cy="352" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="250" cy="328" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="270" cy="308" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="290" cy="290" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="310" cy="270" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="330" cy="248" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="350" cy="232" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="370" cy="210" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="390" cy="188" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="410" cy="172" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="430" cy="152" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="450" cy="130" r="3.5" fill="url(#grayGradient)" opacity="0.5"/>
+    <circle cx="108" cy="468" r="3.5" fill="url(#grayGradient)" opacity="0.45"/>
+    <circle cx="200" cy="378" r="3.5" fill="url(#grayGradient)" opacity="0.48"/>
+    <circle cx="380" cy="198" r="3.5" fill="url(#grayGradient)" opacity="0.47"/>
   </g>
 
   <!-- Signal/Persistent points with premium glow and inner highlight -->
@@ -275,11 +275,11 @@
   <g font-family="'Helvetica Neue', Arial, sans-serif" font-size="13">
     <!-- Noise label with subtle callout -->
     <g opacity="0.75" filter="url(#subtleGlow)">
-      <line x1="460" y1="445" x2="485" y2="465" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
-      <text x="490" y="465" fill="#cbd5e1" font-style="italic" font-weight="300">
+      <line x1="130" y1="452" x2="155" y2="472" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
+      <text x="160" y="472" fill="#cbd5e1" font-style="italic" font-weight="300">
         Noise /
       </text>
-      <text x="490" y="480" fill="#cbd5e1" font-style="italic" font-weight="300">
+      <text x="160" y="487" fill="#cbd5e1" font-style="italic" font-weight="300">
         Transient
       </text>
     </g>
