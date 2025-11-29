@@ -188,7 +188,7 @@
           fill="rgba(254, 243, 199, 0.6)"
           opacity="0.8"/>
 
-  <text x="300" y="45"
+  <text x="300" y="38"
         font-family="'Georgia', 'Times New Roman', serif"
         font-size="22"
         font-weight="700"
@@ -196,7 +196,7 @@
         fill="#fbbf24"
         text-anchor="middle"
         filter="url(#textGlow)">Thesis</text>
-  <text x="300" y="67"
+  <text x="300" y="57"
         font-family="'Palatino', 'Book Antiqua', serif"
         font-size="15"
         font-style="italic"
