@@ -274,14 +274,14 @@
 
     <!-- Annotation 2: Geodesic path (upper middle) -->
     <g opacity="0.95">
-      <path d="M 10,-12 L 45,-100" stroke="#94a3b8" stroke-width="1.2"
+      <path d="M 10,-12 L 45,-128" stroke="#94a3b8" stroke-width="1.2"
             fill="none" opacity="0.7" stroke-linecap="round"/>
       <circle cx="10" cy="-12" r="2.5" fill="#22d3ee" opacity="0.8"/>
-      <text x="52" y="-108" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+      <text x="52" y="-136" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
             font-weight="400" fill="#67e8f9" text-anchor="start" filter="url(#textShadow)">
         Geodesic path
       </text>
-      <text x="52" y="-92" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+      <text x="52" y="-120" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
             font-weight="300" fill="#a5f3fc" text-anchor="start" opacity="0.9">
         (shortest distance on manifold)
       </text>
@@ -289,14 +289,14 @@
 
     <!-- Annotation 3: Flat region (center left) -->
     <g opacity="0.95">
-      <path d="M -45,15 L -150,-10" stroke="#94a3b8" stroke-width="1.2"
+      <path d="M -45,15 L -210,-10" stroke="#94a3b8" stroke-width="1.2"
             fill="none" opacity="0.7" stroke-linecap="round"/>
       <circle cx="-45" cy="15" r="2.5" fill="#2dd4bf" opacity="0.8"/>
-      <text x="-180" y="-12" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+      <text x="-240" y="-12" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
             font-weight="400" fill="#5eead4" text-anchor="end" filter="url(#textShadow)">
         Flat region
       </text>
-      <text x="-180" y="2" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+      <text x="-240" y="2" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
             font-weight="300" fill="#99f6e4" text-anchor="end" opacity="0.85">
         (low epistemic cost)
       </text>
