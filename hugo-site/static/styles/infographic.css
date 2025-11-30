@@ -10,10 +10,14 @@
   overflow: hidden;
   box-shadow: var(--shadow-xl, 0 20px 25px -5px rgba(0, 0, 0, 0.1));
   border: 1px solid rgba(255, 255, 255, 0.1);
+  /* iOS fix: ensure figure constrains its contents */
+  max-width: 100%;
+  width: 100%;
 }
 
 .infographic-panel .infographic-image {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s ease;
@@ -26,6 +30,9 @@
 .infographic-panel picture {
   display: block;
   background: linear-gradient(180deg, #0a0a12 0%, #1a1a2a 100%);
+  /* iOS fix: picture element must have explicit width for img to scale */
+  width: 100%;
+  max-width: 100%;
 }
 
 .infographic-panel figcaption {
