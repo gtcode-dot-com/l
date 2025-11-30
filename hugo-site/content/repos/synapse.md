@@ -5,7 +5,7 @@ description: Declarative, headless multi-agent runtime for code review orchestra
 docs_url: https://hexdocs.pm/synapse/
 hex_url: https://hex.pm/packages/synapse
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.1.1'
 - 'Recent downloads: 28'
 - 'All-time downloads: 28'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Synapse
-version: 0.1.0
+version: 0.1.1
 ---
 
 ## About Synapse
@@ -25,7 +25,7 @@ Declarative, headless multi-agent runtime for code review orchestration with sig
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.1.1
 - Recent downloads: 28
 - All-time downloads: 28
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `synapse` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'synapse', "~> 0.1.0"}\n  ]
+    {'synapse', "~> 0.1.1"}\n  ]
 end
 ```
 

@@ -5,7 +5,7 @@ description: Elixir implementation of the GEPA (Genetic-Pareto) optimizer that c
 docs_url: https://hexdocs.pm/gepa_ex/
 hex_url: https://hex.pm/packages/gepa_ex
 highlights:
-- 'Latest release: v0.1.1'
+- 'Latest release: v0.1.2'
 - 'Recent downloads: 50'
 - 'All-time downloads: 50'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Gepa Ex
-version: 0.1.1
+version: 0.1.2
 ---
 
 ## About Gepa Ex
@@ -25,7 +25,7 @@ Elixir implementation of the GEPA (Genetic-Pareto) optimizer that combines LLM-p
 
 ## Package Information
 
-- Latest release: v0.1.1
+- Latest release: v0.1.2
 - Recent downloads: 50
 - All-time downloads: 50
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `gepa_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'gepa_ex', "~> 0.1.1"}\n  ]
+    {'gepa_ex', "~> 0.1.2"}\n  ]
 end
 ```
 

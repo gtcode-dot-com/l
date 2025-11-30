@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/crucible_adversary/
 hex_url: https://hex.pm/packages/crucible_adversary
 highlights:
 - 'Latest release: v0.3.0'
-- 'Recent downloads: 83'
-- 'All-time downloads: 83'
+- 'Recent downloads: 87'
+- 'All-time downloads: 87'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_adversary
 slug: crucible_adversary
@@ -27,8 +27,8 @@ Adversarial testing and robustness framework for AI models with 25 attacks (char
 ## Package Information
 
 - Latest release: v0.3.0
-- Recent downloads: 83
-- All-time downloads: 83
+- Recent downloads: 87
+- All-time downloads: 87
 - Maintainers: nshkrdotcom
 
 ## Installation
