@@ -1,5 +1,5 @@
 ---
-date: '2025-11-29'
+date: '2025-11-30'
 description: Multi-model ensemble prediction with voting strategies for AI reliability.
   Leverages BEAM parallelism for massively concurrent LLM queries.
 docs_url: https://hexdocs.pm/crucible_ensemble/

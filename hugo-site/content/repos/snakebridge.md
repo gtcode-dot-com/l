@@ -1,5 +1,5 @@
 ---
-date: '2025-11-29'
+date: '2025-11-30'
 description: Configuration-driven Python library integration for Elixir. Automatically
   generate type-safe Elixir modules from declarative configs, enabling seamless integration
   with any Python…

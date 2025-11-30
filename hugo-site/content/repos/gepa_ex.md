@@ -1,5 +1,5 @@
 ---
-date: '2025-11-29'
+date: '2025-11-30'
 description: Elixir implementation of the GEPA (Genetic-Pareto) optimizer that combines
   LLM-powered reflection with Pareto search to evolve text-based system components.
 docs_url: https://hexdocs.pm/gepa_ex/
