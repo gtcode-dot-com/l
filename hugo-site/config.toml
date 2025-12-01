@@ -77,9 +77,9 @@ relativeURLs = true
   page = ["HTML", "Markdown"]
 
 [params]
-  description = 'Ekewaka Lono is an AI engineering consultant in Oahu, Hawaii, who also leads investigative journalism initiatives and Chiral Narrative Synthesis research at GTCode.com.'
+  description = 'Ekewaka Lono is an AI engineering consultant in Oahu, Hawaii, building open-source Elixir libraries and leading Chiral Narrative Synthesis research at GTCode.com.'
   author = 'Ekewaka Lono'
-  home_title_suffix = 'AI Consulting & Investigations'
+  home_title_suffix = 'AI Consulting & ML Research'
   og_site_name = 'GTCode'
 
 [markup]

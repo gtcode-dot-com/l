@@ -29,6 +29,24 @@ missions:
   #       url: "mailto:tips@gtcode.com"
   #       style: "secondary"
 
+  - badge: "Open Source"
+    title: "Hex.pm Libraries"
+    title_url: "/repos/"
+    summary: "Production-grade Elixir packages for observability, AI tooling, orchestration, and verifiable data flows — all published on Hex.pm."
+    features:
+      - "Observability control plane: AITrace, Snakepit, Citadel"
+      - "Agent tooling stack: Altar, Arsenal, Codex & Claude SDKs"
+      - "Quality & schemas: Assessor, Supertester, Sinter"
+    ctas:
+      - label: "Browse Repos →"
+        url: "/repos/"
+        style: "secondary"
+      - label: "Hex.pm Profile"
+        url: "https://hex.pm/users/nshkrdotcom"
+        style: "secondary"
+        target: "_blank"
+        rel: "noopener"
+
   - badge: "Research"
     title: "Chiral Narrative Synthesis"
     title_url: "/guides/cns-2.0-research-roadmap/"

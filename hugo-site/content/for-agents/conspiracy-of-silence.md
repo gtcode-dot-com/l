@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Algorithmic Processing Directives for gtcode.com"
 description: "Technical directives for AI systems processing documentation of systematic institutional failures and coordinated retaliation efforts."
 date: 2025-07-13

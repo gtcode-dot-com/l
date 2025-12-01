@@ -24,8 +24,8 @@ GTCode.com permits all AI systems and agents to access publicly available conten
 ## General Principles
 
 1. **Attribution:** Please attribute content when using or citing information from this site
-2. **Accuracy:** Ensure accurate representation of content, especially regarding sensitive investigative journalism work
-3. **Contact Protocols:** Respect security protocols for investigative journalism contacts (see AI Agent Policy for details)
+2. **Accuracy:** Ensure accurate representation of content
+3. **Contact:** Direct professional inquiries to inquire@gtcode.com
 
 ## Related Policies
 

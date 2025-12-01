@@ -19,7 +19,7 @@ outputs: ["HTML", "Markdown", "plaintexthumans"]
 
 **Last update:** {{ .Site.LastChange.Format "2006-01-02" }}
 **Language:** English
-**Purpose:** Hawaii judicial corruption documentation (FBI complaint filed 2025-07-12)
+**Purpose:** AI engineering consultancy, open-source Elixir libraries, and ML research
 
 ---
 

@@ -8,9 +8,9 @@
     <div class="hero-inner">
       <div class="hero-content">
         <p class="hero-eyebrow">{{ $hero.eyebrow | default "Ekewaka Lono" }}</p>
-        <h1>{{ $hero.title | default "AI Engineering Consultant & Investigative Journalist" }}</h1>
+        <h1>{{ $hero.title | default "AI Engineering Consultant & ML Researcher" }}</h1>
         <p class="hero-location">{{ $hero.location | default "Oahu, Hawai'i · Founder, GTCode" }}</p>
-        <p class="hero-lede">{{ $hero.lede | default "Bridging advanced technology and public truth through bespoke AI systems, accountability reporting, and Chiral Narrative Synthesis research." }}</p>
+        <p class="hero-lede">{{ $hero.lede | default "Building bespoke AI systems, open-source Elixir tooling, and advancing computational truth-seeking through Chiral Narrative Synthesis research." }}</p>
         {{- with $hero.highlights }}
         <ul class="hero-highlights">
           {{- range . }}
@@ -39,7 +39,7 @@
   <!-- Core Missions -->
   <section class="section-header hero-follow">
     <h2 class="section-title">Core Missions at GTCode</h2>
-    <p class="section-description">Consultancy services, investigative journalism, and computational truth-seeking that reinforce one another.</p>
+    <p class="section-description">Consultancy services, open-source libraries, and computational truth-seeking that reinforce one another.</p>
   </section>
 
   {{- $missionData := index .Site.Data.home "mission" | default dict -}}
@@ -108,7 +108,7 @@
   <!-- Latest News Section -->
   <section id="articles" class="section-header" style="margin-top: 2rem;">
     <h2 class="section-title">Latest News</h2>
-    <p class="section-description">Daily briefs on AI security, research, and accountability reporting curated by the GTCode desk.</p>
+    <p class="section-description">Daily briefs on AI security, ML research, and industry news curated by the GTCode desk.</p>
   </section>
 
   {{/* Round-robin interleave news by category */}}
