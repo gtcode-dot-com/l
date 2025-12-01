@@ -1,5 +1,5 @@
 ---
-date: '2025-11-30'
+date: '2025-12-01'
 description: Request hedging for tail latency reduction in distributed systems. Implements
   Google's 'Tail at Scale' with adaptive strategies. Reduces P99 latency by 75-96%.
 docs_url: https://hexdocs.pm/crucible_hedging/

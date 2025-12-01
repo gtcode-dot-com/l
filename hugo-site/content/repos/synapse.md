@@ -1,5 +1,5 @@
 ---
-date: '2025-11-30'
+date: '2025-12-01'
 description: Declarative, headless multi-agent runtime for code review orchestration
   with signals, workflows, and Postgres persistence.
 docs_url: https://hexdocs.pm/synapse/

@@ -1,5 +1,5 @@
 ---
-date: '2025-11-30'
+date: '2025-12-01'
 description: Fairness and bias detection library for Elixir AI/ML systems. Provides
   comprehensive fairness metrics, bias detection algorithms, and mitigation techniques.
 docs_url: https://hexdocs.pm/ex_fairness/
