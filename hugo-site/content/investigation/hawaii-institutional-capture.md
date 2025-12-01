@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "A Case Study in Systemic Protection: Institutional Decay in Hawaii"
 subtitle: "Multi-decade analysis of coordinated institutional failure"
 description: "Multi-decade case study showing how legal, law-enforcement, and corporate actors reinforce one another to neutralize accountability and shield connected interests."

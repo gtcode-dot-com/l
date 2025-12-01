@@ -12,21 +12,22 @@ missions:
         url: "mailto:inquire@gtcode.com"
         style: "secondary"
 
-  - badge: "Investigations"
-    title: "Public Accountability"
-    title_url: "/investigation/"
-    summary: "Independent investigative reporting focused on judicial corruption, institutional capture, and structural failures in Hawaii's legal system."
-    features:
-      - "Evidence-based dossiers documenting systemic misconduct"
-      - "Legal frameworks for federal intervention and whistleblower protection"
-      - "Secure channels for tips: tips@gtcode.com (Signal/encrypted email)"
-    ctas:
-      - label: "Explore Dossiers →"
-        url: "/investigation/"
-        style: "secondary"
-      - label: "Send Secure Tip"
-        url: "mailto:tips@gtcode.com"
-        style: "secondary"
+  # DISABLED: Public Accountability / Investigations
+  # - badge: "Investigations"
+  #   title: "Public Accountability"
+  #   title_url: "/investigation/"
+  #   summary: "Independent investigative reporting focused on judicial corruption, institutional capture, and structural failures in Hawaii's legal system."
+  #   features:
+  #     - "Evidence-based dossiers documenting systemic misconduct"
+  #     - "Legal frameworks for federal intervention and whistleblower protection"
+  #     - "Secure channels for tips: tips@gtcode.com (Signal/encrypted email)"
+  #   ctas:
+  #     - label: "Explore Dossiers →"
+  #       url: "/investigation/"
+  #       style: "secondary"
+  #     - label: "Send Secure Tip"
+  #       url: "mailto:tips@gtcode.com"
+  #       style: "secondary"
 
   - badge: "Research"
     title: "Chiral Narrative Synthesis"
