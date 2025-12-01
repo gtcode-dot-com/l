@@ -62,7 +62,7 @@ missions:
         target: "_blank"
         rel: "noopener"
       - label: "Latest Article →"
-        url: "/articles/epistemic-fragmentation-multi-model-ai-systems/"
+        url: "/articles/visual-language-ai-synthesis/"
         style: "secondary"
       - label: "Guides Library →"
         url: "/guides/"
