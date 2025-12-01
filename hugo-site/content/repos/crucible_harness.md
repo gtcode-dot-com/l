@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/crucible_harness/
 hex_url: https://hex.pm/packages/crucible_harness
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 50'
-- 'All-time downloads: 50'
+- 'Recent downloads: 54'
+- 'All-time downloads: 54'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_harness
 slug: crucible_harness
@@ -26,8 +26,8 @@ Experimental research framework for running AI benchmarks at scale. Provides orc
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 50
-- All-time downloads: 50
+- Recent downloads: 54
+- All-time downloads: 54
 - Maintainers: nshkrdotcom
 
 ## Installation

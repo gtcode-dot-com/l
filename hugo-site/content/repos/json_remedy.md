@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/json_remedy/
 hex_url: https://hex.pm/packages/json_remedy
 highlights:
 - 'Latest release: v0.1.10'
-- 'Recent downloads: 7622'
-- 'All-time downloads: 8858'
+- 'Recent downloads: 7390'
+- 'All-time downloads: 8860'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/json_remedy
 slug: json_remedy
@@ -27,8 +27,8 @@ A blazingly fast Elixir library for repairing malformed JSON using binary patter
 ## Package Information
 
 - Latest release: v0.1.10
-- Recent downloads: 7622
-- All-time downloads: 8858
+- Recent downloads: 7390
+- All-time downloads: 8860
 - Maintainers: nshkrdotcom
 
 ## Installation
