@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/skill_ex/
 hex_url: https://hex.pm/packages/skill_ex
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 26'
-- 'All-time downloads: 26'
+- 'Recent downloads: 28'
+- 'All-time downloads: 28'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/supertester/tree/main/skill_ex
 slug: skill_ex
@@ -26,8 +26,8 @@ Aggregates and packages Claude skills from multiple Elixir projects into a singl
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 26
-- All-time downloads: 26
+- Recent downloads: 28
+- All-time downloads: 28
 - Maintainers: nshkrdotcom
 
 ## Installation
