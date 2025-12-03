@@ -32,6 +32,23 @@
   docs_url: "https://hexdocs.pm/altar/"
   repo_url: "https://github.com/nshkrdotcom/ALTAR"
 
+- slug: "anvil_ex"
+  name: "Anvil Ex"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "Labeling queue library for managing human labeling workflows. Domain-agnostic HITL (human-in-the-loop) data annotation with inter-rater reliability metrics (Cohen's kappa, Fleiss'\u2026"
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/anvil_ex"
+  docs_url: "https://hexdocs.pm/anvil_ex/"
+  repo_url: "https://github.com/North-Shore-AI/anvil"
+
 - slug: "arsenal"
   name: "Arsenal"
   stage: "Active"
@@ -474,6 +491,23 @@
   docs_url: "https://hexdocs.pm/exdantic/"
   repo_url: "https://github.com/nshkrdotcom/exdantic"
 
+- slug: "forge_ex"
+  name: "Forge Ex"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "Sample factory library for generating, transforming, and computing measurements on arbitrary samples. Domain-agnostic data pipeline orchestration for ML dataset preparation."
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/forge_ex"
+  docs_url: "https://hexdocs.pm/forge_ex/"
+  repo_url: "https://github.com/North-Shore-AI/forge"
+
 - slug: "foundation"
   name: "Foundation"
   stage: "Preview"
@@ -524,6 +558,23 @@
   hex_url: "https://hex.pm/packages/gepa_ex"
   docs_url: "https://hexdocs.pm/gepa_ex/"
   repo_url: "https://github.com/nshkrdotcom/gepa_ex"
+
+- slug: "ingot"
+  name: "Ingot"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "Phoenix LiveView interface for sample generation and human labeling workflows. Thin wrapper around Forge (sample factory) and Anvil (labeling queue) with real-time progress\u2026"
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/ingot"
+  docs_url: "https://hexdocs.pm/ingot/"
+  repo_url: "https://github.com/North-Shore-AI/ingot"
 
 - slug: "json_remedy"
   name: "Json Remedy"

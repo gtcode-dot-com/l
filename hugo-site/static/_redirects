@@ -5,6 +5,8 @@
 /repos/aitrace/ https://hex.pm/packages/aitrace 302
 /repos/altar https://hex.pm/packages/altar 302
 /repos/altar/ https://hex.pm/packages/altar 302
+/repos/anvil_ex https://hex.pm/packages/anvil_ex 302
+/repos/anvil_ex/ https://hex.pm/packages/anvil_ex 302
 /repos/arsenal https://hex.pm/packages/arsenal 302
 /repos/arsenal/ https://hex.pm/packages/arsenal 302
 /repos/assessor https://hex.pm/packages/assessor 302
@@ -57,12 +59,16 @@
 /repos/ex_topology/ https://hex.pm/packages/ex_topology 302
 /repos/exdantic https://hex.pm/packages/exdantic 302
 /repos/exdantic/ https://hex.pm/packages/exdantic 302
+/repos/forge_ex https://hex.pm/packages/forge_ex 302
+/repos/forge_ex/ https://hex.pm/packages/forge_ex 302
 /repos/foundation https://hex.pm/packages/foundation 302
 /repos/foundation/ https://hex.pm/packages/foundation 302
 /repos/gemini_ex https://hex.pm/packages/gemini_ex 302
 /repos/gemini_ex/ https://hex.pm/packages/gemini_ex 302
 /repos/gepa_ex https://hex.pm/packages/gepa_ex 302
 /repos/gepa_ex/ https://hex.pm/packages/gepa_ex 302
+/repos/ingot https://hex.pm/packages/ingot 302
+/repos/ingot/ https://hex.pm/packages/ingot 302
 /repos/json_remedy https://hex.pm/packages/json_remedy 302
 /repos/json_remedy/ https://hex.pm/packages/json_remedy 302
 /repos/jules_ex https://hex.pm/packages/jules_ex 302
