@@ -6,9 +6,9 @@ description: Labeling queue library for managing human labeling workflows. Domai
 docs_url: https://hexdocs.pm/anvil_ex/
 hex_url: https://hex.pm/packages/anvil_ex
 highlights:
-- 'Latest release: v0.1.0'
-- 'Recent downloads: 0'
-- 'All-time downloads: 0'
+- 'Latest release: v0.1.1'
+- 'Recent downloads: 13'
+- 'All-time downloads: 13'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/anvil
 slug: anvil_ex
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Anvil Ex
-version: 0.1.0
+version: 0.1.1
 ---
 
 ## About Anvil Ex
@@ -26,9 +26,9 @@ Labeling queue library for managing human labeling workflows. Domain-agnostic HI
 
 ## Package Information
 
-- Latest release: v0.1.0
-- Recent downloads: 0
-- All-time downloads: 0
+- Latest release: v0.1.1
+- Recent downloads: 13
+- All-time downloads: 13
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +38,7 @@ Add `anvil_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'anvil_ex', "~> 0.1.0"}\n  ]
+    {'anvil_ex', "~> 0.1.1"}\n  ]
 end
 ```
 

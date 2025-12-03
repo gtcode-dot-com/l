@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/elixir_tracer/
 hex_url: https://hex.pm/packages/elixir_tracer
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 42'
-- 'All-time downloads: 42'
+- 'Recent downloads: 44'
+- 'All-time downloads: 44'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/elixir_tracer
 slug: elixir_tracer
@@ -27,8 +27,8 @@ Local-first observability for Elixir with New Relic API parity. A complete traci
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 42
-- All-time downloads: 42
+- Recent downloads: 44
+- All-time downloads: 44
 - Maintainers: nshkrdotcom
 
 ## Installation

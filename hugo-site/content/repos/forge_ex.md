@@ -6,9 +6,9 @@ description: Sample factory library for generating, transforming, and computing 
 docs_url: https://hexdocs.pm/forge_ex/
 hex_url: https://hex.pm/packages/forge_ex
 highlights:
-- 'Latest release: v0.1.0'
-- 'Recent downloads: 0'
-- 'All-time downloads: 0'
+- 'Latest release: v0.1.1'
+- 'Recent downloads: 10'
+- 'All-time downloads: 10'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/forge
 slug: forge_ex
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Forge Ex
-version: 0.1.0
+version: 0.1.1
 ---
 
 ## About Forge Ex
@@ -26,9 +26,9 @@ Sample factory library for generating, transforming, and computing measurements 
 
 ## Package Information
 
-- Latest release: v0.1.0
-- Recent downloads: 0
-- All-time downloads: 0
+- Latest release: v0.1.1
+- Recent downloads: 10
+- All-time downloads: 10
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +38,7 @@ Add `forge_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'forge_ex', "~> 0.1.0"}\n  ]
+    {'forge_ex', "~> 0.1.1"}\n  ]
 end
 ```
 
