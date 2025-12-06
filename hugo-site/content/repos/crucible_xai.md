@@ -1,5 +1,5 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Explainable AI (XAI) tools for the Crucible framework. Includes LIME
   implementations, SHAP-like explanations, feature attribution, and model interpretability
   for local and global…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/crucible_xai/
 hex_url: https://hex.pm/packages/crucible_xai
 highlights:
 - 'Latest release: v0.3.0'
-- 'Recent downloads: 95'
-- 'All-time downloads: 95'
+- 'Recent downloads: 99'
+- 'All-time downloads: 99'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_xai
 slug: crucible_xai
@@ -27,8 +27,8 @@ Explainable AI (XAI) tools for the Crucible framework. Includes LIME implementat
 ## Package Information
 
 - Latest release: v0.3.0
-- Recent downloads: 95
-- All-time downloads: 95
+- Recent downloads: 99
+- All-time downloads: 99
 - Maintainers: nshkrdotcom
 
 ## Installation

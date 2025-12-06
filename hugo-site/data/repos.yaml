@@ -22,8 +22,8 @@
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 585"
-    - "All-time downloads: 929"
+    - "Recent downloads: 590"
+    - "All-time downloads: 934"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -124,8 +124,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.2.2"
-    - "Recent downloads: 188"
-    - "All-time downloads: 225"
+    - "Recent downloads: 189"
+    - "All-time downloads: 226"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -528,12 +528,12 @@
 - slug: "gemini_ex"
   name: "Gemini Ex"
   stage: "Active"
-  version: "0.6.3"
+  version: "0.7.2"
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
-    - "Latest release: v0.6.3"
-    - "Recent downloads: 897"
-    - "All-time downloads: 1475"
+    - "Latest release: v0.7.2"
+    - "Recent downloads: 954"
+    - "All-time downloads: 1532"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -583,8 +583,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.1.11"
-    - "Recent downloads: 6031"
-    - "All-time downloads: 9125"
+    - "Recent downloads: 6128"
+    - "All-time downloads: 9222"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -617,8 +617,8 @@
   summary: "Shared IR structs for Forge, Anvil, Ingot, and external clients; typed datasets, samples, assignments, labels, artifacts, and evaluation runs for labeling workflows."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 17"
-    - "All-time downloads: 17"
+    - "Recent downloads: 19"
+    - "All-time downloads: 19"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -668,8 +668,8 @@
   summary: "Composable regularization penalties and loss functions for the Nx ecosystem"
   highlights:
     - "Latest release: v0.1.2"
-    - "Recent downloads: 23"
-    - "All-time downloads: 23"
+    - "Recent downloads: 40"
+    - "All-time downloads: 40"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -804,8 +804,8 @@
   summary: "Battle-hardened OTP testing toolkit with chaos engineering, performance testing, and zero-sleep synchronization patterns for building robust Elixir applications."
   highlights:
     - "Latest release: v0.3.1"
-    - "Recent downloads: 267"
-    - "All-time downloads: 322"
+    - "Recent downloads: 271"
+    - "All-time downloads: 326"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -838,8 +838,8 @@
   summary: "Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with telemetry and HTTP/2."
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 365"
-    - "All-time downloads: 365"
+    - "Recent downloads: 397"
+    - "All-time downloads: 397"
     - "Maintainers: nshkrdotcom"
   tags:
     - "Apache-2.0"

@@ -1,5 +1,5 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Production-ready data validation and quality library for Elixir ML pipelines.
   Provides 22 built-in expectations, drift detection, advanced profiling with outliers
   and…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/ex_data_check/
 hex_url: https://hex.pm/packages/ex_data_check
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 89'
-- 'All-time downloads: 89'
+- 'Recent downloads: 91'
+- 'All-time downloads: 91'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/ExDataCheck
 slug: ex_data_check
@@ -27,8 +27,8 @@ Production-ready data validation and quality library for Elixir ML pipelines. Pr
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 89
-- All-time downloads: 89
+- Recent downloads: 91
+- All-time downloads: 91
 - Maintainers: nshkrdotcom
 
 ## Installation

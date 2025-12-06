@@ -1,12 +1,12 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Advanced telemetry collection and analysis for AI research
 docs_url: https://hexdocs.pm/crucible_telemetry/
 hex_url: https://hex.pm/packages/crucible_telemetry
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 53'
-- 'All-time downloads: 53'
+- 'Recent downloads: 55'
+- 'All-time downloads: 55'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_telemetry
 slug: crucible_telemetry
@@ -25,8 +25,8 @@ Advanced telemetry collection and analysis for AI research
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 53
-- All-time downloads: 53
+- Recent downloads: 55
+- All-time downloads: 55
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -1,13 +1,13 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Request hedging for tail latency reduction in distributed systems. Implements
   Google's 'Tail at Scale' with adaptive strategies. Reduces P99 latency by 75-96%.
 docs_url: https://hexdocs.pm/crucible_hedging/
 hex_url: https://hex.pm/packages/crucible_hedging
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 48'
-- 'All-time downloads: 48'
+- 'Recent downloads: 50'
+- 'All-time downloads: 50'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_hedging
 slug: crucible_hedging
@@ -26,8 +26,8 @@ Request hedging for tail latency reduction in distributed systems. Implements Go
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 48
-- All-time downloads: 48
+- Recent downloads: 50
+- All-time downloads: 50
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -1,14 +1,14 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Comprehensive Elixir client for Google's Gemini AI API with dual authentication,
   embeddings with MRL, streaming, type safety, and built-in telemetry for production
   applications.
 docs_url: https://hexdocs.pm/gemini_ex/
 hex_url: https://hex.pm/packages/gemini_ex
 highlights:
-- 'Latest release: v0.4.0'
-- 'Recent downloads: 847'
-- 'All-time downloads: 1415'
+- 'Latest release: v0.7.2'
+- 'Recent downloads: 954'
+- 'All-time downloads: 1532'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/gemini_ex
 slug: gemini_ex
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Gemini Ex
-version: 0.4.0
+version: 0.7.2
 ---
 
 ## About Gemini Ex
@@ -26,9 +26,9 @@ Comprehensive Elixir client for Google's Gemini AI API with dual authentication,
 
 ## Package Information
 
-- Latest release: v0.4.0
-- Recent downloads: 847
-- All-time downloads: 1415
+- Latest release: v0.7.2
+- Recent downloads: 954
+- All-time downloads: 1532
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +38,7 @@ Add `gemini_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'gemini_ex', "~> 0.4.0"}\n  ]
+    {'gemini_ex', "~> 0.7.2"}\n  ]
 end
 ```
 

@@ -1,5 +1,5 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Shared IR structs for Forge, Anvil, Ingot, and external clients; typed
   datasets, samples, assignments, labels, artifacts, and evaluation runs for labeling
   workflows.
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/labeling_ir/
 hex_url: https://hex.pm/packages/labeling_ir
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 0'
-- 'All-time downloads: 0'
+- 'Recent downloads: 19'
+- 'All-time downloads: 19'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/labeling_ir
 slug: labeling_ir
@@ -27,8 +27,8 @@ Shared IR structs for Forge, Anvil, Ingot, and external clients; typed datasets,
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 0
-- All-time downloads: 0
+- Recent downloads: 19
+- All-time downloads: 19
 - Maintainers: nshkrdotcom
 
 ## Installation

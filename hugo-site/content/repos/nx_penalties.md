@@ -1,12 +1,12 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Composable regularization penalties and loss functions for the Nx ecosystem
 docs_url: https://hexdocs.pm/nx_penalties/
 hex_url: https://hex.pm/packages/nx_penalties
 highlights:
-- 'Latest release: v0.1.0'
-- 'Recent downloads: 0'
-- 'All-time downloads: 0'
+- 'Latest release: v0.1.2'
+- 'Recent downloads: 40'
+- 'All-time downloads: 40'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/nx_penalties
 slug: nx_penalties
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Nx Penalties
-version: 0.1.0
+version: 0.1.2
 ---
 
 ## About Nx Penalties
@@ -24,9 +24,9 @@ Composable regularization penalties and loss functions for the Nx ecosystem
 
 ## Package Information
 
-- Latest release: v0.1.0
-- Recent downloads: 0
-- All-time downloads: 0
+- Latest release: v0.1.2
+- Recent downloads: 40
+- All-time downloads: 40
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -36,7 +36,7 @@ Add `nx_penalties` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'nx_penalties', "~> 0.1.0"}\n  ]
+    {'nx_penalties', "~> 0.1.2"}\n  ]
 end
 ```
 

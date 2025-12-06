@@ -1,5 +1,5 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Phoenix LiveView interface for sample generation and human labeling workflows.
   Thin wrapper around Forge (sample factory) and Anvil (labeling queue) with real-time
   progress…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/ingot/
 hex_url: https://hex.pm/packages/ingot
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 7'
-- 'All-time downloads: 7'
+- 'Recent downloads: 17'
+- 'All-time downloads: 17'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/ingot
 slug: ingot
@@ -27,8 +27,8 @@ Phoenix LiveView interface for sample generation and human labeling workflows. T
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 7
-- All-time downloads: 7
+- Recent downloads: 17
+- All-time downloads: 17
 - Maintainers: nshkrdotcom
 
 ## Installation

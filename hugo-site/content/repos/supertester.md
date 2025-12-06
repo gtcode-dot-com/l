@@ -1,13 +1,13 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Battle-hardened OTP testing toolkit with chaos engineering, performance
   testing, and zero-sleep synchronization patterns for building robust Elixir applications.
 docs_url: https://hexdocs.pm/supertester/
 hex_url: https://hex.pm/packages/supertester
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 254'
-- 'All-time downloads: 309'
+- 'Recent downloads: 271'
+- 'All-time downloads: 326'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/supertester
 slug: supertester
@@ -26,8 +26,8 @@ Battle-hardened OTP testing toolkit with chaos engineering, performance testing,
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 254
-- All-time downloads: 309
+- Recent downloads: 271
+- All-time downloads: 326
 - Maintainers: nshkrdotcom
 
 ## Installation

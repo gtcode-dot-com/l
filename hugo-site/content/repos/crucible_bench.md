@@ -1,13 +1,13 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Comprehensive benchmarking framework for AI research. Measures latency,
   throughput, cost, and reliability with percentile analysis and Nx numerical computations.
 docs_url: https://hexdocs.pm/crucible_bench/
 hex_url: https://hex.pm/packages/crucible_bench
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 67'
-- 'All-time downloads: 67'
+- 'Recent downloads: 68'
+- 'All-time downloads: 68'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_bench
 slug: crucible_bench
@@ -26,8 +26,8 @@ Comprehensive benchmarking framework for AI research. Measures latency, throughp
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 67
-- All-time downloads: 67
+- Recent downloads: 68
+- All-time downloads: 68
 - Maintainers: nshkrdotcom
 
 ## Installation

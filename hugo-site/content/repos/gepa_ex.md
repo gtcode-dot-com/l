@@ -1,13 +1,13 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Elixir implementation of the GEPA (Genetic-Pareto) optimizer that combines
   LLM-powered reflection with Pareto search to evolve text-based system components.
 docs_url: https://hexdocs.pm/gepa_ex/
 hex_url: https://hex.pm/packages/gepa_ex
 highlights:
 - 'Latest release: v0.1.2'
-- 'Recent downloads: 67'
-- 'All-time downloads: 67'
+- 'Recent downloads: 71'
+- 'All-time downloads: 71'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/gepa_ex
 slug: gepa_ex
@@ -26,8 +26,8 @@ Elixir implementation of the GEPA (Genetic-Pareto) optimizer that combines LLM-p
 ## Package Information
 
 - Latest release: v0.1.2
-- Recent downloads: 67
-- All-time downloads: 67
+- Recent downloads: 71
+- All-time downloads: 71
 - Maintainers: nshkrdotcom
 
 ## Installation

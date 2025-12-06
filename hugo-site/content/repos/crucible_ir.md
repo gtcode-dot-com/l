@@ -1,12 +1,12 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Intermediate Representation for the Crucible ML reliability ecosystem
 docs_url: https://hexdocs.pm/crucible_ir/
 hex_url: https://hex.pm/packages/crucible_ir
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 34'
-- 'All-time downloads: 34'
+- 'Recent downloads: 38'
+- 'All-time downloads: 38'
 - 'Maintainers: nshkrdotcom'
 repo_url: null
 slug: crucible_ir
@@ -25,8 +25,8 @@ Intermediate Representation for the Crucible ML reliability ecosystem
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 34
-- All-time downloads: 34
+- Recent downloads: 38
+- All-time downloads: 38
 - Maintainers: nshkrdotcom
 
 ## Installation

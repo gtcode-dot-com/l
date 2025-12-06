@@ -1,5 +1,5 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Sample factory library for generating, transforming, and computing measurements
   on arbitrary samples. Domain-agnostic data pipeline orchestration for ML dataset
   preparation.
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/forge_ex/
 hex_url: https://hex.pm/packages/forge_ex
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 10'
-- 'All-time downloads: 10'
+- 'Recent downloads: 39'
+- 'All-time downloads: 39'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/forge
 slug: forge_ex
@@ -27,8 +27,8 @@ Sample factory library for generating, transforming, and computing measurements 
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 10
-- All-time downloads: 10
+- Recent downloads: 39
+- All-time downloads: 39
 - Maintainers: nshkrdotcom
 
 ## Installation

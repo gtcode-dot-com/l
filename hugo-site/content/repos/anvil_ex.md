@@ -1,5 +1,5 @@
 ---
-date: '2025-12-04'
+date: '2025-12-06'
 description: Labeling queue library for managing human labeling workflows. Domain-agnostic
   HITL (human-in-the-loop) data annotation with inter-rater reliability metrics (Cohen's
   kappa, Fleiss'…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/anvil_ex/
 hex_url: https://hex.pm/packages/anvil_ex
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 13'
-- 'All-time downloads: 13'
+- 'Recent downloads: 37'
+- 'All-time downloads: 37'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/anvil
 slug: anvil_ex
@@ -27,8 +27,8 @@ Labeling queue library for managing human labeling workflows. Domain-agnostic HI
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 13
-- All-time downloads: 13
+- Recent downloads: 37
+- All-time downloads: 37
 - Maintainers: nshkrdotcom
 
 ## Installation
