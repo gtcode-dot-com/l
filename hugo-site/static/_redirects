@@ -5,6 +5,8 @@
 /repos/aitrace/ https://hex.pm/packages/aitrace 302
 /repos/altar https://hex.pm/packages/altar 302
 /repos/altar/ https://hex.pm/packages/altar 302
+/repos/altar_ai https://hex.pm/packages/altar_ai 302
+/repos/altar_ai/ https://hex.pm/packages/altar_ai 302
 /repos/anvil_ex https://hex.pm/packages/anvil_ex 302
 /repos/anvil_ex/ https://hex.pm/packages/anvil_ex 302
 /repos/arsenal https://hex.pm/packages/arsenal 302
@@ -41,6 +43,8 @@
 /repos/crucible_trace/ https://hex.pm/packages/crucible_trace 302
 /repos/crucible_xai https://hex.pm/packages/crucible_xai 302
 /repos/crucible_xai/ https://hex.pm/packages/crucible_xai 302
+/repos/datasets_ex https://hex.pm/packages/datasets_ex 302
+/repos/datasets_ex/ https://hex.pm/packages/datasets_ex 302
 /repos/dspex https://hex.pm/packages/dspex 302
 /repos/dspex/ https://hex.pm/packages/dspex 302
 /repos/duckdb_ex https://hex.pm/packages/duckdb_ex 302
@@ -51,6 +55,10 @@
 /repos/elixir_scope/ https://hex.pm/packages/elixir_scope 302
 /repos/elixir_tracer https://hex.pm/packages/elixir_tracer 302
 /repos/elixir_tracer/ https://hex.pm/packages/elixir_tracer 302
+/repos/embed_ex https://hex.pm/packages/embed_ex 302
+/repos/embed_ex/ https://hex.pm/packages/embed_ex 302
+/repos/eval_ex https://hex.pm/packages/eval_ex 302
+/repos/eval_ex/ https://hex.pm/packages/eval_ex 302
 /repos/ex_data_check https://hex.pm/packages/ex_data_check 302
 /repos/ex_data_check/ https://hex.pm/packages/ex_data_check 302
 /repos/ex_fairness https://hex.pm/packages/ex_fairness 302
@@ -59,6 +67,10 @@
 /repos/ex_topology/ https://hex.pm/packages/ex_topology 302
 /repos/exdantic https://hex.pm/packages/exdantic 302
 /repos/exdantic/ https://hex.pm/packages/exdantic 302
+/repos/flowstone https://hex.pm/packages/flowstone 302
+/repos/flowstone/ https://hex.pm/packages/flowstone 302
+/repos/flowstone_ai https://hex.pm/packages/flowstone_ai 302
+/repos/flowstone_ai/ https://hex.pm/packages/flowstone_ai 302
 /repos/forge_ex https://hex.pm/packages/forge_ex 302
 /repos/forge_ex/ https://hex.pm/packages/forge_ex 302
 /repos/foundation https://hex.pm/packages/foundation 302
@@ -79,10 +91,18 @@
 /repos/llm_guard/ https://hex.pm/packages/llm_guard 302
 /repos/mabeam https://hex.pm/packages/mabeam 302
 /repos/mabeam/ https://hex.pm/packages/mabeam 302
+/repos/metrics_ex https://hex.pm/packages/metrics_ex 302
+/repos/metrics_ex/ https://hex.pm/packages/metrics_ex 302
+/repos/nsai_gateway https://hex.pm/packages/nsai_gateway 302
+/repos/nsai_gateway/ https://hex.pm/packages/nsai_gateway 302
+/repos/nsai_registry https://hex.pm/packages/nsai_registry 302
+/repos/nsai_registry/ https://hex.pm/packages/nsai_registry 302
 /repos/nx_penalties https://hex.pm/packages/nx_penalties 302
 /repos/nx_penalties/ https://hex.pm/packages/nx_penalties 302
 /repos/perimeter https://hex.pm/packages/perimeter 302
 /repos/perimeter/ https://hex.pm/packages/perimeter 302
+/repos/pilot https://hex.pm/packages/pilot 302
+/repos/pilot/ https://hex.pm/packages/pilot 302
 /repos/pipeline_ex https://hex.pm/packages/pipeline_ex 302
 /repos/pipeline_ex/ https://hex.pm/packages/pipeline_ex 302
 /repos/playwriter https://hex.pm/packages/playwriter 302
@@ -99,6 +119,8 @@
 /repos/supertester/ https://hex.pm/packages/supertester 302
 /repos/synapse https://hex.pm/packages/synapse 302
 /repos/synapse/ https://hex.pm/packages/synapse 302
+/repos/synapse_ai https://hex.pm/packages/synapse_ai 302
+/repos/synapse_ai/ https://hex.pm/packages/synapse_ai 302
 /repos/tinkex https://hex.pm/packages/tinkex 302
 /repos/tinkex/ https://hex.pm/packages/tinkex 302
 /repos/weaviate_ex https://hex.pm/packages/weaviate_ex 302
