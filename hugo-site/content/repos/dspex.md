@@ -1,5 +1,5 @@
 ---
-date: '2025-12-07'
+date: '2025-12-08'
 description: 'DSPex: Native Elixir implementation of DSPy with Python integration
   via Snakepit. Enables gradual migration from Python DSPy to native Elixir implementations
   while supporting…'
