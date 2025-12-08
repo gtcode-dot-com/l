@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/metrics_ex/
 hex_url: https://hex.pm/packages/metrics_ex
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 5'
-- 'All-time downloads: 5'
+- 'Recent downloads: 11'
+- 'All-time downloads: 11'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/metrics_ex
 slug: metrics_ex
@@ -26,8 +26,8 @@ Metrics aggregation service for experiment results and system health monitoring.
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 5
-- All-time downloads: 5
+- Recent downloads: 11
+- All-time downloads: 11
 - Maintainers: nshkrdotcom
 
 ## Installation

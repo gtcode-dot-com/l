@@ -5,7 +5,7 @@ description: 'Elixir SDK for Tinker: LoRA training, sampling, and future-based w
 docs_url: https://hexdocs.pm/tinkex/
 hex_url: https://hex.pm/packages/tinkex
 highlights:
-- 'Latest release: v0.2.0'
+- 'Latest release: v0.2.1'
 - 'Recent downloads: 405'
 - 'All-time downloads: 405'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - Apache-2.0
 - Hex.pm
 title: Tinkex
-version: 0.2.0
+version: 0.2.1
 ---
 
 ## About Tinkex
@@ -25,7 +25,7 @@ Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with 
 
 ## Package Information
 
-- Latest release: v0.2.0
+- Latest release: v0.2.1
 - Recent downloads: 405
 - All-time downloads: 405
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `tinkex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'tinkex', "~> 0.2.0"}\n  ]
+    {'tinkex', "~> 0.2.1"}\n  ]
 end
 ```
 
