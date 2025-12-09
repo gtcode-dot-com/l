@@ -5,7 +5,7 @@ docs_url: https://hexdocs.pm/citadel/
 hex_url: https://hex.pm/packages/citadel
 highlights:
 - 'Latest release: v0.0.0'
-- 'Recent downloads: 188'
+- 'Recent downloads: 18'
 - 'All-time downloads: 209'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/Citadel
@@ -25,7 +25,7 @@ The command and control layer for the AI-powered enterprise.
 ## Package Information
 
 - Latest release: v0.0.0
-- Recent downloads: 188
+- Recent downloads: 18
 - All-time downloads: 209
 - Maintainers: nshkrdotcom
 

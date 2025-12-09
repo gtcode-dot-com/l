@@ -5,7 +5,7 @@
   summary: "The unified observability layer for the AI Control Plane, delivering full-fidelity tracing for AI agent reasoning, tool calls, and state transitions."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 623"
+    - "Recent downloads: 43"
     - "All-time downloads: 1210"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -22,8 +22,8 @@
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 600"
-    - "All-time downloads: 944"
+    - "Recent downloads: 614"
+    - "All-time downloads: 962"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -39,8 +39,8 @@
   summary: "Protocol-based AI adapter foundation for Elixir. Provides unified abstractions for gemini_ex, claude_agent_sdk, and codex_sdk with automatic fallback support, runtime capability\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 16"
-    - "All-time downloads: 16"
+    - "Recent downloads: 18"
+    - "All-time downloads: 18"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -73,7 +73,7 @@
   summary: "A metaprogramming framework for building REST APIs from OTP operations with automatic endpoint generation, parameter validation, and OpenAPI documentation."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 609"
+    - "Recent downloads: 27"
     - "All-time downloads: 1201"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -90,7 +90,7 @@
   summary: "The definitive CI/CD platform for AI Quality."
   highlights:
     - "Latest release: v0.0.0"
-    - "Recent downloads: 338"
+    - "Recent downloads: 20"
     - "All-time downloads: 359"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -107,7 +107,7 @@
   summary: "The command and control layer for the AI-powered enterprise."
   highlights:
     - "Latest release: v0.0.0"
-    - "Recent downloads: 188"
+    - "Recent downloads: 18"
     - "All-time downloads: 209"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -124,8 +124,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.6.4"
-    - "Recent downloads: 327"
-    - "All-time downloads: 327"
+    - "Recent downloads: 334"
+    - "All-time downloads: 334"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -141,7 +141,7 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.2.2"
-    - "Recent downloads: 189"
+    - "Recent downloads: 188"
     - "All-time downloads: 226"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -362,8 +362,8 @@
   summary: "Dataset management library for ML experiments with support for GSM8K, HumanEval, MMLU loaders and evaluation metrics (BLEU, ROUGE, F1)."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 11"
-    - "All-time downloads: 11"
+    - "Recent downloads: 13"
+    - "All-time downloads: 13"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -447,8 +447,8 @@
   summary: "Local-first observability for Elixir with New Relic API parity. A complete tracing and observability solution that works entirely offline while maintaining compatibility with New\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 44"
-    - "All-time downloads: 44"
+    - "Recent downloads: 46"
+    - "All-time downloads: 46"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -464,8 +464,8 @@
   summary: "Vector embeddings service for the NSAI ecosystem"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 11"
-    - "All-time downloads: 11"
+    - "Recent downloads: 13"
+    - "All-time downloads: 13"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -481,8 +481,8 @@
   summary: "Model evaluation harness for standardized benchmarking with semantic similarity, exact match, and custom metrics."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 11"
-    - "All-time downloads: 11"
+    - "Recent downloads: 13"
+    - "All-time downloads: 13"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -566,8 +566,8 @@
   summary: "Asset-first data orchestration framework for Elixir/BEAM."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 13"
-    - "All-time downloads: 13"
+    - "Recent downloads: 15"
+    - "All-time downloads: 15"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -583,8 +583,8 @@
   summary: "FlowStone integration for altar_ai - AI-powered data pipeline assets. Provides FlowStone.AI.Resource for unified AI access and FlowStone.AI.Assets DSL helpers (classify_each,\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 11"
-    - "All-time downloads: 11"
+    - "Recent downloads: 13"
+    - "All-time downloads: 13"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -634,8 +634,8 @@
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
     - "Latest release: v0.8.2"
-    - "Recent downloads: 1159"
-    - "All-time downloads: 1737"
+    - "Recent downloads: 1185"
+    - "All-time downloads: 1771"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -685,8 +685,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.1.11"
-    - "Recent downloads: 5701"
-    - "All-time downloads: 9237"
+    - "Recent downloads: 5572"
+    - "All-time downloads: 9252"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -770,8 +770,8 @@
   summary: "Metrics aggregation service for experiment results and system health monitoring."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 11"
-    - "All-time downloads: 11"
+    - "Recent downloads: 13"
+    - "All-time downloads: 13"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -821,8 +821,8 @@
   summary: "Composable regularization penalties and loss functions for the Nx ecosystem"
   highlights:
     - "Latest release: v0.1.2"
-    - "Recent downloads: 49"
-    - "All-time downloads: 49"
+    - "Recent downloads: 55"
+    - "All-time downloads: 55"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -974,8 +974,8 @@
   summary: "Battle-hardened OTP testing toolkit with chaos engineering, performance testing, and zero-sleep synchronization patterns for building robust Elixir applications."
   highlights:
     - "Latest release: v0.3.1"
-    - "Recent downloads: 271"
-    - "All-time downloads: 326"
+    - "Recent downloads: 275"
+    - "All-time downloads: 330"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -991,8 +991,8 @@
   summary: "Declarative, headless multi-agent runtime for code review orchestration with signals, workflows, and Postgres persistence."
   highlights:
     - "Latest release: v0.1.1"
-    - "Recent downloads: 55"
-    - "All-time downloads: 55"
+    - "Recent downloads: 57"
+    - "All-time downloads: 57"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1008,8 +1008,8 @@
   summary: "Synapse integration for altar_ai - SDK-backed LLM providers for multi-agent workflows. Provides unified adapter layer for Gemini, Claude, and Codex with automatic fallback,\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 11"
-    - "All-time downloads: 11"
+    - "Recent downloads: 13"
+    - "All-time downloads: 13"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1025,8 +1025,8 @@
   summary: "Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with telemetry and HTTP/2."
   highlights:
     - "Latest release: v0.2.2"
-    - "Recent downloads: 405"
-    - "All-time downloads: 405"
+    - "Recent downloads: 420"
+    - "All-time downloads: 420"
     - "Maintainers: nshkrdotcom"
   tags:
     - "Apache-2.0"
