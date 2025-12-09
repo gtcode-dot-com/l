@@ -1021,10 +1021,10 @@
 - slug: "tinkex"
   name: "Tinkex"
   stage: "Preview"
-  version: "0.2.1"
+  version: "0.2.2"
   summary: "Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with telemetry and HTTP/2."
   highlights:
-    - "Latest release: v0.2.1"
+    - "Latest release: v0.2.2"
     - "Recent downloads: 405"
     - "All-time downloads: 405"
     - "Maintainers: nshkrdotcom"

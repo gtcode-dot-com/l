@@ -1,5 +1,5 @@
 ---
-date: '2025-12-08'
+date: '2025-12-09'
 description: A metaprogramming framework for building REST APIs from OTP operations
   with automatic endpoint generation, parameter validation, and OpenAPI documentation.
 docs_url: https://hexdocs.pm/arsenal/
