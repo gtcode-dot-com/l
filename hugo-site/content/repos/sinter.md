@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/sinter/
 hex_url: https://hex.pm/packages/sinter
 highlights:
 - 'Latest release: v0.0.1'
-- 'Recent downloads: 42'
-- 'All-time downloads: 94'
+- 'Recent downloads: 46'
+- 'All-time downloads: 98'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/sinter
 slug: sinter
@@ -27,8 +27,8 @@ Unified schema definition, validation, and JSON generation for Elixir. Sinter is
 ## Package Information
 
 - Latest release: v0.0.1
-- Recent downloads: 42
-- All-time downloads: 94
+- Recent downloads: 46
+- All-time downloads: 98
 - Maintainers: nshkrdotcom
 
 ## Installation
