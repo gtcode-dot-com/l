@@ -1,5 +1,5 @@
 ---
-date: '2025-12-10'
+date: '2025-12-11'
 description: An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude
 docs_url: https://hexdocs.pm/claude_code_sdk/
 hex_url: https://hex.pm/packages/claude_code_sdk

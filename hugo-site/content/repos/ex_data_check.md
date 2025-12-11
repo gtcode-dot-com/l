@@ -1,5 +1,5 @@
 ---
-date: '2025-12-10'
+date: '2025-12-11'
 description: Production-ready data validation and quality library for Elixir ML pipelines.
   Provides 22 built-in expectations, drift detection, advanced profiling with outliers
   and…
