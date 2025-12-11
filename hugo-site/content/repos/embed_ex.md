@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/embed_ex/
 hex_url: https://hex.pm/packages/embed_ex
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 15'
-- 'All-time downloads: 15'
+- 'Recent downloads: 17'
+- 'All-time downloads: 17'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/embed_ex
 slug: embed_ex
@@ -25,8 +25,8 @@ Vector embeddings service for the NSAI ecosystem
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 15
-- All-time downloads: 15
+- Recent downloads: 17
+- All-time downloads: 17
 - Maintainers: nshkrdotcom
 
 ## Installation

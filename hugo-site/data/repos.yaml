@@ -22,8 +22,8 @@
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 663"
-    - "All-time downloads: 1013"
+    - "Recent downloads: 685"
+    - "All-time downloads: 1037"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -39,8 +39,8 @@
   summary: "Protocol-based AI adapter foundation for Elixir. Provides unified abstractions for gemini_ex, claude_agent_sdk, and codex_sdk with automatic fallback support, runtime capability\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 21"
-    - "All-time downloads: 21"
+    - "Recent downloads: 22"
+    - "All-time downloads: 22"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -141,8 +141,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.2.2"
-    - "Recent downloads: 198"
-    - "All-time downloads: 236"
+    - "Recent downloads: 200"
+    - "All-time downloads: 238"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -362,8 +362,8 @@
   summary: "Dataset management library for ML experiments with support for GSM8K, HumanEval, MMLU loaders and evaluation metrics (BLEU, ROUGE, F1)."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 15"
-    - "All-time downloads: 15"
+    - "Recent downloads: 17"
+    - "All-time downloads: 17"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -379,7 +379,7 @@
   summary: "DSPex: Native Elixir implementation of DSPy with Python integration via Snakepit. Enables gradual migration from Python DSPy to native Elixir implementations while supporting\u2026"
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 122"
+    - "Recent downloads: 120"
     - "All-time downloads: 241"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -464,8 +464,8 @@
   summary: "Vector embeddings service for the NSAI ecosystem"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 15"
-    - "All-time downloads: 15"
+    - "Recent downloads: 17"
+    - "All-time downloads: 17"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -481,8 +481,8 @@
   summary: "Model evaluation harness for standardized benchmarking with semantic similarity, exact match, and custom metrics."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 15"
-    - "All-time downloads: 15"
+    - "Recent downloads: 17"
+    - "All-time downloads: 17"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -634,8 +634,8 @@
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
     - "Latest release: v0.8.2"
-    - "Recent downloads: 1243"
-    - "All-time downloads: 1831"
+    - "Recent downloads: 1262"
+    - "All-time downloads: 1858"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -685,8 +685,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.1.11"
-    - "Recent downloads: 5378"
-    - "All-time downloads: 9334"
+    - "Recent downloads: 5249"
+    - "All-time downloads: 9409"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -906,7 +906,7 @@
   summary: "Unified schema definition, validation, and JSON generation for Elixir. Sinter is a focused, high-performance schema validation library designed specifically for dynamic frameworks\u2026"
   highlights:
     - "Latest release: v0.0.1"
-    - "Recent downloads: 46"
+    - "Recent downloads: 44"
     - "All-time downloads: 98"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -958,7 +958,7 @@
   highlights:
     - "Latest release: v0.6.10"
     - "Recent downloads: 812"
-    - "All-time downloads: 1181"
+    - "All-time downloads: 1183"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1042,8 +1042,8 @@
   summary: "A modern Elixir client for Weaviate vector database with support for collections, objects, batch operations, GraphQL queries, and vector search. Includes health checks and\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 78"
-    - "All-time downloads: 78"
+    - "Recent downloads: 80"
+    - "All-time downloads: 80"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
