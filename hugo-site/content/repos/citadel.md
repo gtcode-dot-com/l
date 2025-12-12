@@ -1,5 +1,5 @@
 ---
-date: '2025-12-11'
+date: '2025-12-12'
 description: The command and control layer for the AI-powered enterprise.
 docs_url: https://hexdocs.pm/citadel/
 hex_url: https://hex.pm/packages/citadel
