@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/altar_ai/
 hex_url: https://hex.pm/packages/altar_ai
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 22'
-- 'All-time downloads: 22'
+- 'Recent downloads: 24'
+- 'All-time downloads: 24'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/altar_ai
 slug: altar_ai
@@ -27,8 +27,8 @@ Protocol-based AI adapter foundation for Elixir. Provides unified abstractions f
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 22
-- All-time downloads: 22
+- Recent downloads: 24
+- All-time downloads: 24
 - Maintainers: nshkrdotcom
 
 ## Installation

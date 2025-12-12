@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/flowstone_ai/
 hex_url: https://hex.pm/packages/flowstone_ai
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 14'
-- 'All-time downloads: 14'
+- 'Recent downloads: 18'
+- 'All-time downloads: 18'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/flowstone_ai
 slug: flowstone_ai
@@ -27,8 +27,8 @@ FlowStone integration for altar_ai - AI-powered data pipeline assets. Provides F
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 14
-- All-time downloads: 14
+- Recent downloads: 18
+- All-time downloads: 18
 - Maintainers: nshkrdotcom
 
 ## Installation

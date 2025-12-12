@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/labeling_ir/
 hex_url: https://hex.pm/packages/labeling_ir
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 20'
-- 'All-time downloads: 20'
+- 'Recent downloads: 22'
+- 'All-time downloads: 22'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/labeling_ir
 slug: labeling_ir
@@ -27,8 +27,8 @@ Shared IR structs for Forge, Anvil, Ingot, and external clients; typed datasets,
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 20
-- All-time downloads: 20
+- Recent downloads: 22
+- All-time downloads: 22
 - Maintainers: nshkrdotcom
 
 ## Installation
