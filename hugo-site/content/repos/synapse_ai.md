@@ -1,5 +1,5 @@
 ---
-date: '2025-12-13'
+date: '2025-12-14'
 description: Synapse integration for altar_ai - SDK-backed LLM providers for multi-agent
   workflows. Provides unified adapter layer for Gemini, Claude, and Codex with automatic
   fallback,…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/synapse_ai/
 hex_url: https://hex.pm/packages/synapse_ai
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 19'
-- 'All-time downloads: 19'
+- 'Recent downloads: 21'
+- 'All-time downloads: 21'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/synapse_ai
 slug: synapse_ai
@@ -27,8 +27,8 @@ Synapse integration for altar_ai - SDK-backed LLM providers for multi-agent work
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 19
-- All-time downloads: 19
+- Recent downloads: 21
+- All-time downloads: 21
 - Maintainers: nshkrdotcom
 
 ## Installation

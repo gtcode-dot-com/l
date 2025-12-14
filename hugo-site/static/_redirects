@@ -121,6 +121,8 @@
 /repos/synapse/ https://hex.pm/packages/synapse 302
 /repos/synapse_ai https://hex.pm/packages/synapse_ai 302
 /repos/synapse_ai/ https://hex.pm/packages/synapse_ai 302
+/repos/tiktoken_ex https://hex.pm/packages/tiktoken_ex 302
+/repos/tiktoken_ex/ https://hex.pm/packages/tiktoken_ex 302
 /repos/tinkex https://hex.pm/packages/tinkex 302
 /repos/tinkex/ https://hex.pm/packages/tinkex 302
 /repos/weaviate_ex https://hex.pm/packages/weaviate_ex 302
