@@ -4,7 +4,7 @@ description: An Elixir SDK for Claude Code - Build AI-powered CLI tools with Cla
 docs_url: https://hexdocs.pm/claude_agent_sdk/
 hex_url: https://hex.pm/packages/claude_agent_sdk
 highlights:
-- 'Latest release: v0.6.4'
+- 'Latest release: v0.6.6'
 - 'Recent downloads: 383'
 - 'All-time downloads: 383'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Claude Agent Sdk
-version: 0.6.4
+version: 0.6.6
 ---
 
 ## About Claude Agent Sdk
@@ -24,7 +24,7 @@ An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude
 
 ## Package Information
 
-- Latest release: v0.6.4
+- Latest release: v0.6.6
 - Recent downloads: 383
 - All-time downloads: 383
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `claude_agent_sdk` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'claude_agent_sdk', "~> 0.6.4"}\n  ]
+    {'claude_agent_sdk', "~> 0.6.6"}\n  ]
 end
 ```
 
