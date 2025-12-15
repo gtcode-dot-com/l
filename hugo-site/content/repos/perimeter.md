@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/perimeter/
 hex_url: https://hex.pm/packages/perimeter
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 56'
-- 'All-time downloads: 87'
+- 'Recent downloads: 60'
+- 'All-time downloads: 91'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/perimeter
 slug: perimeter
@@ -25,8 +25,8 @@ A typing system for Elixir/OTP.
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 56
-- All-time downloads: 87
+- Recent downloads: 60
+- All-time downloads: 91
 - Maintainers: nshkrdotcom
 
 ## Installation

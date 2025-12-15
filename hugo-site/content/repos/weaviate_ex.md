@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/weaviate_ex/
 hex_url: https://hex.pm/packages/weaviate_ex
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 80'
-- 'All-time downloads: 80'
+- 'Recent downloads: 86'
+- 'All-time downloads: 86'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/yourusername/weaviate_ex
 slug: weaviate_ex
@@ -27,8 +27,8 @@ A modern Elixir client for Weaviate vector database with support for collections
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 80
-- All-time downloads: 80
+- Recent downloads: 86
+- All-time downloads: 86
 - Maintainers: nshkrdotcom
 
 ## Installation

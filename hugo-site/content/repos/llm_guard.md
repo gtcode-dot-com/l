@@ -7,12 +7,12 @@ docs_url: https://hexdocs.pm/llm_guard/
 hex_url: https://hex.pm/packages/llm_guard
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 98'
-- 'All-time downloads: 98'
+- 'Recent downloads: 104'
+- 'All-time downloads: 104'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/LlmGuard
 slug: llm_guard
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -27,8 +27,8 @@ AI Firewall and guardrails for LLM-based Elixir applications. Provides prompt in
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 98
-- All-time downloads: 98
+- Recent downloads: 104
+- All-time downloads: 104
 - Maintainers: nshkrdotcom
 
 ## Installation

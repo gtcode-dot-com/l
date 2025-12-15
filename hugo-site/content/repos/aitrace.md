@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/aitrace/
 hex_url: https://hex.pm/packages/aitrace
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 47'
-- 'All-time downloads: 1214'
+- 'Recent downloads: 51'
+- 'All-time downloads: 1218'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/AITrace
 slug: aitrace
@@ -26,8 +26,8 @@ The unified observability layer for the AI Control Plane, delivering full-fideli
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 47
-- All-time downloads: 1214
+- Recent downloads: 51
+- All-time downloads: 1218
 - Maintainers: nshkrdotcom
 
 ## Installation

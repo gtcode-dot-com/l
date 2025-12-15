@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/ex_topology/
 hex_url: https://hex.pm/packages/ex_topology
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 42'
-- 'All-time downloads: 42'
+- 'Recent downloads: 46'
+- 'All-time downloads: 46'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/ex_topology
 slug: ex_topology
@@ -25,8 +25,8 @@ Generic Topological Data Analysis for Elixir
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 42
-- All-time downloads: 42
+- Recent downloads: 46
+- All-time downloads: 46
 - Maintainers: nshkrdotcom
 
 ## Installation
