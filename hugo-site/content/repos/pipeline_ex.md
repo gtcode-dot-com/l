@@ -1,5 +1,5 @@
 ---
-date: '2025-12-14'
+date: '2025-12-15'
 description: AI pipeline orchestration library for Elixir. Chain Claude and Gemini
   APIs with robust execution, fault tolerance, and self-improving Genesis pipelines.
 docs_url: https://hexdocs.pm/pipeline_ex/

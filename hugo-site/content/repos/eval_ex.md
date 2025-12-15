@@ -1,5 +1,5 @@
 ---
-date: '2025-12-14'
+date: '2025-12-15'
 description: Model evaluation harness for standardized benchmarking with semantic
   similarity, exact match, and custom metrics.
 docs_url: https://hexdocs.pm/eval_ex/

@@ -1,5 +1,5 @@
 ---
-date: '2025-12-14'
+date: '2025-12-15'
 description: Pure-Elixir TikToken-style byte-level BPE tokenizer, with helpers for
   Kimi K2 encodings.
 docs_url: https://hexdocs.pm/tiktoken_ex/
