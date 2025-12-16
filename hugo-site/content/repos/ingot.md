@@ -1,5 +1,5 @@
 ---
-date: '2025-12-15'
+date: '2025-12-16'
 description: Phoenix LiveView interface for sample generation and human labeling workflows.
   Thin wrapper around Forge (sample factory) and Anvil (labeling queue) with real-time
   progress…
