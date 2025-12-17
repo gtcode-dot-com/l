@@ -1,5 +1,5 @@
 ---
-date: '2025-12-16'
+date: '2025-12-17'
 description: 'CrucibleFramework: A scientific platform for LLM reliability research
   on the BEAM. Provides core library functionality with comprehensive documentation
   and guides.'

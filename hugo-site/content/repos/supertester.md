@@ -1,5 +1,5 @@
 ---
-date: '2025-12-16'
+date: '2025-12-17'
 description: Battle-hardened OTP testing toolkit with chaos engineering, performance
   testing, and zero-sleep synchronization patterns for building robust Elixir applications.
 docs_url: https://hexdocs.pm/supertester/
