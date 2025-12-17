@@ -22,8 +22,8 @@
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 763"
-    - "All-time downloads: 1149"
+    - "Recent downloads: 767"
+    - "All-time downloads: 1153"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -124,8 +124,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.6.6"
-    - "Recent downloads: 440"
-    - "All-time downloads: 440"
+    - "Recent downloads: 448"
+    - "All-time downloads: 448"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -158,8 +158,8 @@
   summary: "Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready interface with streaming support, comprehensive event handling, and robust testing utilities."
   highlights:
     - "Latest release: v0.3.0"
-    - "Recent downloads: 206"
-    - "All-time downloads: 206"
+    - "Recent downloads: 219"
+    - "All-time downloads: 219"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -379,7 +379,7 @@
   summary: "DSPex: Native Elixir implementation of DSPy with Python integration via Snakepit. Enables gradual migration from Python DSPy to native Elixir implementations while supporting\u2026"
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 122"
+    - "Recent downloads: 120"
     - "All-time downloads: 251"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -549,7 +549,7 @@
   summary: "Advanced schema definition and validation library for Elixir"
   highlights:
     - "Latest release: v0.0.2"
-    - "Recent downloads: 38"
+    - "Recent downloads: 36"
     - "All-time downloads: 596"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -566,8 +566,8 @@
   summary: "Asset-first data orchestration framework for Elixir/BEAM."
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 36"
-    - "All-time downloads: 36"
+    - "Recent downloads: 43"
+    - "All-time downloads: 43"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -634,8 +634,8 @@
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
     - "Latest release: v0.8.4"
-    - "Recent downloads: 1433"
-    - "All-time downloads: 2070"
+    - "Recent downloads: 1436"
+    - "All-time downloads: 2077"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -685,8 +685,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.1.11"
-    - "Recent downloads: 5220"
-    - "All-time downloads: 9696"
+    - "Recent downloads: 5198"
+    - "All-time downloads: 9747"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -736,8 +736,8 @@
   summary: "AI Firewall and guardrails for LLM-based Elixir applications. Provides prompt injection detection, data leakage prevention, jailbreak detection, and comprehensive security\u2026"
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 104"
-    - "All-time downloads: 104"
+    - "Recent downloads: 106"
+    - "All-time downloads: 106"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -906,7 +906,7 @@
   summary: "Unified schema definition, validation, and JSON generation for Elixir. Sinter is a focused, high-performance schema validation library designed specifically for dynamic frameworks\u2026"
   highlights:
     - "Latest release: v0.0.1"
-    - "Recent downloads: 44"
+    - "Recent downloads: 42"
     - "All-time downloads: 100"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -957,7 +957,7 @@
   summary: "High-performance pooler and session manager for external language integrations. Supports Python, Node.js, Ruby, and more with gRPC streaming, session management, and production-\u2026"
   highlights:
     - "Latest release: v0.6.10"
-    - "Recent downloads: 844"
+    - "Recent downloads: 842"
     - "All-time downloads: 1237"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -1042,8 +1042,8 @@
   summary: "Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with telemetry and HTTP/2."
   highlights:
     - "Latest release: v0.3.2"
-    - "Recent downloads: 656"
-    - "All-time downloads: 656"
+    - "Recent downloads: 660"
+    - "All-time downloads: 660"
     - "Maintainers: nshkrdotcom"
   tags:
     - "Apache-2.0"
