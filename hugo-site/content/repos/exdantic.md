@@ -1,5 +1,5 @@
 ---
-date: '2025-12-17'
+date: '2025-12-18'
 description: Advanced schema definition and validation library for Elixir
 docs_url: https://hexdocs.pm/exdantic/
 hex_url: https://hex.pm/packages/exdantic

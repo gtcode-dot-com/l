@@ -1,5 +1,5 @@
 ---
-date: '2025-12-17'
+date: '2025-12-18'
 description: Composable regularization penalties and loss functions for the Nx ecosystem
 docs_url: https://hexdocs.pm/nx_penalties/
 hex_url: https://hex.pm/packages/nx_penalties
