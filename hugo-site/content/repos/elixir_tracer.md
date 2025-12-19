@@ -38,7 +38,8 @@ Add `elixir_tracer` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'elixir_tracer', "~> 0.1.0"}\n  ]
+    {'elixir_tracer', "~> 0.1.0"}
+  ]
 end
 ```
 

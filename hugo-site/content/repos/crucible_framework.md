@@ -38,7 +38,8 @@ Add `crucible_framework` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_framework', "~> 0.3.0"}\n  ]
+    {'crucible_framework', "~> 0.3.0"}
+  ]
 end
 ```
 

@@ -37,7 +37,8 @@ Add `nsai_gateway` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'nsai_gateway', "~> 0.1.0"}\n  ]
+    {'nsai_gateway', "~> 0.1.0"}
+  ]
 end
 ```
 

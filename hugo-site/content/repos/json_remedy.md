@@ -38,7 +38,8 @@ Add `json_remedy` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'json_remedy', "~> 0.1.11"}\n  ]
+    {'json_remedy', "~> 0.1.11"}
+  ]
 end
 ```
 

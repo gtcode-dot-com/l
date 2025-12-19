@@ -37,7 +37,8 @@ Add `tinkex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'tinkex', "~> 0.3.2"}\n  ]
+    {'tinkex', "~> 0.3.2"}
+  ]
 end
 ```
 

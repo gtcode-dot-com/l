@@ -36,7 +36,8 @@ Add `flowstone` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'flowstone', "~> 0.3.0"}\n  ]
+    {'flowstone', "~> 0.3.0"}
+  ]
 end
 ```
 

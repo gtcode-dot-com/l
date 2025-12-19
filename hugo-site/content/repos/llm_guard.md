@@ -38,7 +38,8 @@ Add `llm_guard` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'llm_guard', "~> 0.2.1"}\n  ]
+    {'llm_guard', "~> 0.2.1"}
+  ]
 end
 ```
 

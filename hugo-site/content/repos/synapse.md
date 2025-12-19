@@ -37,7 +37,8 @@ Add `synapse` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'synapse', "~> 0.1.1"}\n  ]
+    {'synapse', "~> 0.1.1"}
+  ]
 end
 ```
 

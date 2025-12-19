@@ -36,7 +36,8 @@ Add `ex_topology` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'ex_topology', "~> 0.1.1"}\n  ]
+    {'ex_topology', "~> 0.1.1"}
+  ]
 end
 ```
 

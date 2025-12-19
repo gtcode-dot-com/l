@@ -37,7 +37,8 @@ Add `pilot` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'pilot', "~> 0.1.0"}\n  ]
+    {'pilot', "~> 0.1.0"}
+  ]
 end
 ```
 

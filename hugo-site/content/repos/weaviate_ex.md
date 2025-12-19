@@ -38,7 +38,8 @@ Add `weaviate_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'weaviate_ex', "~> 0.2.0"}\n  ]
+    {'weaviate_ex', "~> 0.2.0"}
+  ]
 end
 ```
 

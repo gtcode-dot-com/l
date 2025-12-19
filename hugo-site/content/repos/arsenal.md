@@ -37,7 +37,8 @@ Add `arsenal` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'arsenal', "~> 0.1.0"}\n  ]
+    {'arsenal', "~> 0.1.0"}
+  ]
 end
 ```
 

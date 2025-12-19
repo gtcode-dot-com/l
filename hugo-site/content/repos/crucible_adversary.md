@@ -38,7 +38,8 @@ Add `crucible_adversary` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_adversary', "~> 0.3.0"}\n  ]
+    {'crucible_adversary', "~> 0.3.0"}
+  ]
 end
 ```
 

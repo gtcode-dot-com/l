@@ -36,7 +36,8 @@ Add `perimeter` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'perimeter', "~> 0.1.0"}\n  ]
+    {'perimeter', "~> 0.1.0"}
+  ]
 end
 ```
 

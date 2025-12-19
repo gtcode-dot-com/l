@@ -38,7 +38,8 @@ Add `labeling_ir` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'labeling_ir', "~> 0.1.0"}\n  ]
+    {'labeling_ir', "~> 0.1.0"}
+  ]
 end
 ```
 

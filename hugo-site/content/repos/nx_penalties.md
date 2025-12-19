@@ -36,7 +36,8 @@ Add `nx_penalties` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'nx_penalties', "~> 0.1.2"}\n  ]
+    {'nx_penalties', "~> 0.1.2"}
+  ]
 end
 ```
 

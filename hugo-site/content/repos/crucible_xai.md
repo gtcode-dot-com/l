@@ -38,7 +38,8 @@ Add `crucible_xai` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_xai', "~> 0.3.0"}\n  ]
+    {'crucible_xai', "~> 0.3.0"}
+  ]
 end
 ```
 

@@ -36,7 +36,8 @@ Add `exdantic` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'exdantic', "~> 0.0.2"}\n  ]
+    {'exdantic', "~> 0.0.2"}
+  ]
 end
 ```
 

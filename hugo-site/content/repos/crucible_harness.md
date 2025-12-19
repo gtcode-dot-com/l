@@ -37,7 +37,8 @@ Add `crucible_harness` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_harness', "~> 0.2.0"}\n  ]
+    {'crucible_harness', "~> 0.2.0"}
+  ]
 end
 ```
 

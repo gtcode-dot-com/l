@@ -38,7 +38,8 @@ Add `synapse_ai` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'synapse_ai', "~> 0.1.0"}\n  ]
+    {'synapse_ai', "~> 0.1.0"}
+  ]
 end
 ```
 

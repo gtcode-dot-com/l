@@ -38,7 +38,8 @@ Add `snakebridge` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'snakebridge', "~> 0.2.4"}\n  ]
+    {'snakebridge', "~> 0.2.4"}
+  ]
 end
 ```
 

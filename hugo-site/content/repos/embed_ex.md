@@ -36,7 +36,8 @@ Add `embed_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'embed_ex', "~> 0.1.0"}\n  ]
+    {'embed_ex', "~> 0.1.0"}
+  ]
 end
 ```
 

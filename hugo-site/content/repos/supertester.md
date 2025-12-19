@@ -37,7 +37,8 @@ Add `supertester` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'supertester', "~> 0.3.1"}\n  ]
+    {'supertester', "~> 0.3.1"}
+  ]
 end
 ```
 

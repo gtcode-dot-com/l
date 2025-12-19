@@ -38,7 +38,8 @@ Add `altar_ai` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'altar_ai', "~> 0.1.0"}\n  ]
+    {'altar_ai', "~> 0.1.0"}
+  ]
 end
 ```
 

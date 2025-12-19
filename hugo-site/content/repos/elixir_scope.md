@@ -38,7 +38,8 @@ Add `elixir_scope` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'elixir_scope', "~> 0.0.1"}\n  ]
+    {'elixir_scope', "~> 0.0.1"}
+  ]
 end
 ```
 

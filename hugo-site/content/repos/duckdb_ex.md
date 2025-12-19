@@ -37,7 +37,8 @@ Add `duckdb_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'duckdb_ex', "~> 0.1.1"}\n  ]
+    {'duckdb_ex', "~> 0.1.1"}
+  ]
 end
 ```
 

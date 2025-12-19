@@ -37,7 +37,8 @@ Add `nsai_registry` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'nsai_registry', "~> 0.1.0"}\n  ]
+    {'nsai_registry', "~> 0.1.0"}
+  ]
 end
 ```
 

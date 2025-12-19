@@ -38,7 +38,8 @@ Add `playwriter` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'playwriter', "~> 0.0.2"}\n  ]
+    {'playwriter', "~> 0.0.2"}
+  ]
 end
 ```
 

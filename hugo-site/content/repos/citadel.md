@@ -36,7 +36,8 @@ Add `citadel` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'citadel', "~> 0.0.0"}\n  ]
+    {'citadel', "~> 0.0.0"}
+  ]
 end
 ```
 

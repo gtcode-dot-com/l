@@ -38,7 +38,8 @@ Add `ingot` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'ingot', "~> 0.1.0"}\n  ]
+    {'ingot', "~> 0.1.0"}
+  ]
 end
 ```
 

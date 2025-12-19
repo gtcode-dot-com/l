@@ -36,7 +36,8 @@ Add `crucible_ir` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_ir', "~> 0.1.1"}\n  ]
+    {'crucible_ir', "~> 0.1.1"}
+  ]
 end
 ```
 

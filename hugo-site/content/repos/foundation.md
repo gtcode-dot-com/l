@@ -37,7 +37,8 @@ Add `foundation` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'foundation', "~> 0.1.5"}\n  ]
+    {'foundation', "~> 0.1.5"}
+  ]
 end
 ```
 

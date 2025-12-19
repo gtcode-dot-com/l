@@ -36,7 +36,8 @@ Add `assessor` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'assessor', "~> 0.0.0"}\n  ]
+    {'assessor', "~> 0.0.0"}
+  ]
 end
 ```
 

@@ -38,7 +38,8 @@ Add `flowstone_ai` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'flowstone_ai', "~> 0.1.0"}\n  ]
+    {'flowstone_ai', "~> 0.1.0"}
+  ]
 end
 ```
 

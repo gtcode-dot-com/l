@@ -38,7 +38,8 @@ Add `forge_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'forge_ex', "~> 0.1.1"}\n  ]
+    {'forge_ex', "~> 0.1.1"}
+  ]
 end
 ```
 

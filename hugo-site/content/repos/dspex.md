@@ -38,7 +38,8 @@ Add `dspex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'dspex', "~> 0.2.1"}\n  ]
+    {'dspex', "~> 0.2.1"}
+  ]
 end
 ```
 

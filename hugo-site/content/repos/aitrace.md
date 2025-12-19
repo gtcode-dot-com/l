@@ -37,7 +37,8 @@ Add `aitrace` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'aitrace', "~> 0.1.0"}\n  ]
+    {'aitrace', "~> 0.1.0"}
+  ]
 end
 ```
 

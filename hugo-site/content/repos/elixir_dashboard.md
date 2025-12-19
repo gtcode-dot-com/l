@@ -37,7 +37,8 @@ Add `elixir_dashboard` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'elixir_dashboard', "~> 0.2.0"}\n  ]
+    {'elixir_dashboard', "~> 0.2.0"}
+  ]
 end
 ```
 

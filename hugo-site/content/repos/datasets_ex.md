@@ -37,7 +37,8 @@ Add `datasets_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'datasets_ex', "~> 0.1.0"}\n  ]
+    {'datasets_ex', "~> 0.1.0"}
+  ]
 end
 ```
 

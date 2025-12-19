@@ -37,7 +37,8 @@ Add `crucible_hedging` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_hedging', "~> 0.2.0"}\n  ]
+    {'crucible_hedging', "~> 0.2.0"}
+  ]
 end
 ```
 

@@ -37,7 +37,8 @@ Add `pipeline_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'pipeline_ex', "~> 0.1.1"}\n  ]
+    {'pipeline_ex', "~> 0.1.1"}
+  ]
 end
 ```
 

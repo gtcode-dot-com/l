@@ -37,7 +37,8 @@ Add `eval_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'eval_ex', "~> 0.1.0"}\n  ]
+    {'eval_ex', "~> 0.1.0"}
+  ]
 end
 ```
 

@@ -38,7 +38,8 @@ Add `mabeam` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'mabeam', "~> 0.0.1"}\n  ]
+    {'mabeam', "~> 0.0.1"}
+  ]
 end
 ```
 
