@@ -4,7 +4,7 @@ description: Asset-first data orchestration framework for Elixir/BEAM.
 docs_url: https://hexdocs.pm/flowstone/
 hex_url: https://hex.pm/packages/flowstone
 highlights:
-- 'Latest release: v0.3.0'
+- 'Latest release: v0.5.0'
 - 'Recent downloads: 45'
 - 'All-time downloads: 45'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Flowstone
-version: 0.3.0
+version: 0.5.0
 ---
 
 ## About Flowstone
@@ -24,7 +24,7 @@ Asset-first data orchestration framework for Elixir/BEAM.
 
 ## Package Information
 
-- Latest release: v0.3.0
+- Latest release: v0.5.0
 - Recent downloads: 45
 - All-time downloads: 45
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `flowstone` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'flowstone', "~> 0.3.0"}
+    {'flowstone', "~> 0.5.0"}
   ]
 end
 ```

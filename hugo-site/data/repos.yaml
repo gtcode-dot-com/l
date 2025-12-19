@@ -562,10 +562,10 @@
 - slug: "flowstone"
   name: "Flowstone"
   stage: "Incubating"
-  version: "0.3.0"
+  version: "0.5.0"
   summary: "Asset-first data orchestration framework for Elixir/BEAM."
   highlights:
-    - "Latest release: v0.3.0"
+    - "Latest release: v0.5.0"
     - "Recent downloads: 45"
     - "All-time downloads: 45"
     - "Maintainers: nshkrdotcom"
