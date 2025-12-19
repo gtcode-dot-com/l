@@ -1,13 +1,13 @@
 ---
-date: '2025-12-18'
+date: '2025-12-19'
 description: 'Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows
   with telemetry and HTTP/2.'
 docs_url: https://hexdocs.pm/tinkex/
 hex_url: https://hex.pm/packages/tinkex
 highlights:
 - 'Latest release: v0.3.2'
-- 'Recent downloads: 660'
-- 'All-time downloads: 660'
+- 'Recent downloads: 666'
+- 'All-time downloads: 666'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/tinkex
 slug: tinkex
@@ -26,8 +26,8 @@ Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with 
 ## Package Information
 
 - Latest release: v0.3.2
-- Recent downloads: 660
-- All-time downloads: 660
+- Recent downloads: 666
+- All-time downloads: 666
 - Maintainers: nshkrdotcom
 
 ## Installation

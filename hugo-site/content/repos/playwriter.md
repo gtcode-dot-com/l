@@ -1,5 +1,5 @@
 ---
-date: '2025-12-18'
+date: '2025-12-19'
 description: Cross-platform browser automation for Elixir with advanced WSL-to-Windows
   integration. Features headed browser support, Chrome profile integration, and WebSocket-based
   remote…
@@ -7,7 +7,7 @@ docs_url: https://hexdocs.pm/playwriter/
 hex_url: https://hex.pm/packages/playwriter
 highlights:
 - 'Latest release: v0.0.2'
-- 'Recent downloads: 35'
+- 'Recent downloads: 32'
 - 'All-time downloads: 105'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/playwriter
@@ -27,7 +27,7 @@ Cross-platform browser automation for Elixir with advanced WSL-to-Windows integr
 ## Package Information
 
 - Latest release: v0.0.2
-- Recent downloads: 35
+- Recent downloads: 32
 - All-time downloads: 105
 - Maintainers: nshkrdotcom
 

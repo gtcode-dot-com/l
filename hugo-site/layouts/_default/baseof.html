@@ -91,10 +91,8 @@
     {{ $resetCSS := resources.Get "css/reset.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $resetCSS.RelPermalink }}" integrity="{{ $resetCSS.Data.Integrity }}" crossorigin="anonymous" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
 
     <!-- Main Stylesheet -->
@@ -102,7 +100,7 @@
     {{ $mainCSS := resources.Get "css/main.css" | css.PostCSS $postcssOpts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}" crossorigin="anonymous" />
     {{ if $enableMath }}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" />
+    <link rel="stylesheet" href="/vendor/katex/katex.min.css" />
     {{ end }}
 
     {{ partial "jsonld.html" . }}
@@ -179,12 +177,11 @@
       </div>
     </footer>
     {{ if $enableMath }}
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+    <script defer src="/vendor/katex/katex.min.js"></script>
+    <script defer src="/vendor/katex/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
     {{ end }}
     {{ if or (.Store.Get "hasMermaid") (.Page.Store.Get "hasMermaid") }}
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs" type="module"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="/vendor/mermaid/mermaid.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         if (window.mermaid) {

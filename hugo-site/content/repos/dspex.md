@@ -1,5 +1,5 @@
 ---
-date: '2025-12-18'
+date: '2025-12-19'
 description: 'DSPex: Native Elixir implementation of DSPy with Python integration
   via Snakepit. Enables gradual migration from Python DSPy to native Elixir implementations
   while supporting…'
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/dspex/
 hex_url: https://hex.pm/packages/dspex
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 120'
-- 'All-time downloads: 251'
+- 'Recent downloads: 121'
+- 'All-time downloads: 252'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/dspex
 slug: dspex
@@ -27,8 +27,8 @@ DSPex: Native Elixir implementation of DSPy with Python integration via Snakepit
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 120
-- All-time downloads: 251
+- Recent downloads: 121
+- All-time downloads: 252
 - Maintainers: nshkrdotcom
 
 ## Installation

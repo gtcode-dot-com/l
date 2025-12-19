@@ -1,5 +1,5 @@
 ---
-date: '2025-12-18'
+date: '2025-12-19'
 description: Unified schema definition, validation, and JSON generation for Elixir.
   Sinter is a focused, high-performance schema validation library designed specifically
   for dynamic frameworks…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/sinter/
 hex_url: https://hex.pm/packages/sinter
 highlights:
 - 'Latest release: v0.0.1'
-- 'Recent downloads: 42'
-- 'All-time downloads: 100'
+- 'Recent downloads: 44'
+- 'All-time downloads: 102'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/sinter
 slug: sinter
@@ -27,8 +27,8 @@ Unified schema definition, validation, and JSON generation for Elixir. Sinter is
 ## Package Information
 
 - Latest release: v0.0.1
-- Recent downloads: 42
-- All-time downloads: 100
+- Recent downloads: 44
+- All-time downloads: 102
 - Maintainers: nshkrdotcom
 
 ## Installation
