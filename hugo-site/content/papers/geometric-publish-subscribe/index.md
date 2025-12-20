@@ -341,7 +341,7 @@ Semantic fidelity measures whether quantization preserves *relative* similarity 
 
 **Proposition 4.1** (Compression Ratio). For coordination messages with typical JSON payload of $\sim$4KB:
 
-$$\text{Compression ratio} = \frac{|m_{\text{JSON}}|}{|m_{\text{GPS}}|} = \frac{4096}{64} = 64\times$$
+$$\text{Compression ratio} = \frac{|m_{\text{JSON}}|}{|m_{\text{GPS}}|} = \frac{4096}{64} = 64$$
 
 This is the raw size ratio. Effective utility depends on whether the 64-byte payload preserves sufficient semantic content for the coordination task (tested in RQ2).
 

@@ -4,9 +4,18 @@ description: "Academic papers, research proposals, and technical documentation"
 date: 2025-06-17
 ---
 
-## Geometric Publish-Subscribe (GPS) Research
+## Geometric Semantic Communication Research
 
-### Research Proposal
+### Research Agenda
+
+**[Geometric Semantic Communication for Emergent Multi-Agent Intelligence](/papers/geometric-semantic-communication/)**
+A research program toward communication infrastructure for emergent artificial general intelligence, grounded in tensor logic and topological structures for truth, perspective, and narrative. Defines a five-layer protocol stack from implementable GPS through morphogenetic dynamics to manifold semantics.
+
+- **Format**: Web (Markdown)
+- **Date**: December 20, 2025
+- **Topics**: Emergent intelligence, tensor logic, morphogenetic dynamics, manifold semantics, chiral narrative synthesis
+
+### Protocol Specification
 
 **[Geometric Publish-Subscribe: Content-Based Routing in Embedding Space for Multi-Agent Systems](/papers/geometric-publish-subscribe/)**
 A communication protocol for multi-agent systems where messages route by semantic similarity rather than topic strings. Specifies a 64-byte wire format, subscription semantics based on embedding regions, and routing algorithms based on similarity thresholds.
