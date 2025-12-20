@@ -4,6 +4,19 @@ description: "Academic papers, research proposals, and technical documentation"
 date: 2025-06-17
 ---
 
+## Geometric Publish-Subscribe (GPS) Research
+
+### Research Proposal
+
+**[Geometric Publish-Subscribe: Content-Based Routing in Embedding Space for Multi-Agent Systems](/papers/geometric-publish-subscribe/)**
+A communication protocol for multi-agent systems where messages route by semantic similarity rather than topic strings. Specifies a 64-byte wire format, subscription semantics based on embedding regions, and routing algorithms based on similarity thresholds.
+
+- **Format**: Web (Markdown)
+- **Date**: December 20, 2025
+- **Topics**: Multi-agent systems, semantic routing, vector quantization, publish-subscribe
+
+---
+
 ## Chiral Narrative Synthesis (CNS) Research
 
 ### Research Proposal
