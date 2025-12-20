@@ -22,8 +22,8 @@
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 823"
-    - "All-time downloads: 1213"
+    - "Recent downloads: 840"
+    - "All-time downloads: 1230"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -124,8 +124,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.6.7"
-    - "Recent downloads: 463"
-    - "All-time downloads: 463"
+    - "Recent downloads: 465"
+    - "All-time downloads: 465"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -158,8 +158,8 @@
   summary: "Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready interface with streaming support, comprehensive event handling, and robust testing utilities."
   highlights:
     - "Latest release: v0.4.1"
-    - "Recent downloads: 245"
-    - "All-time downloads: 245"
+    - "Recent downloads: 261"
+    - "All-time downloads: 261"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -566,8 +566,8 @@
   summary: "Asset-first data orchestration framework for Elixir/BEAM."
   highlights:
     - "Latest release: v0.5.0"
-    - "Recent downloads: 45"
-    - "All-time downloads: 45"
+    - "Recent downloads: 69"
+    - "All-time downloads: 69"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -634,8 +634,8 @@
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
     - "Latest release: v0.8.5"
-    - "Recent downloads: 1474"
-    - "All-time downloads: 2124"
+    - "Recent downloads: 1485"
+    - "All-time downloads: 2135"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -685,8 +685,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.1.11"
-    - "Recent downloads: 5149"
-    - "All-time downloads: 9848"
+    - "Recent downloads: 5175"
+    - "All-time downloads: 9874"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1025,8 +1025,8 @@
   summary: "Pure-Elixir TikToken-style byte-level BPE tokenizer, with helpers for Kimi K2 encodings."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 24"
-    - "All-time downloads: 24"
+    - "Recent downloads: 26"
+    - "All-time downloads: 26"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1042,8 +1042,8 @@
   summary: "Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with telemetry and HTTP/2."
   highlights:
     - "Latest release: v0.3.2"
-    - "Recent downloads: 666"
-    - "All-time downloads: 666"
+    - "Recent downloads: 672"
+    - "All-time downloads: 672"
     - "Maintainers: nshkrdotcom"
   tags:
     - "Apache-2.0"

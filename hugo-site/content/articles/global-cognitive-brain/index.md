@@ -230,7 +230,7 @@ When these systems operate at scale with proper configuration, emergent properti
 
 ## The Path Forward
 
-The Global Cognitive Brain architecture represents a transition from orchestrated AI services to genuinely distributed machine cognition. The key innovations are:
+The Global Cognitive Brain architecture represents a transition from orchestrated AI services to genuinely distributed machine cognition. The key architectural components are:
 
 1. **Semantic primitives** that bypass linguistic bottlenecks
 2. **Cluster DNA** that enables machine-speed trust decisions
@@ -246,7 +246,7 @@ We are not building a smarter chatbot. We are engineering the first real organis
 
 ## Conclusion: From Vision to Implementation
 
-The Global Cognitive Brain represents a fundamental shift from orchestrated AI services to genuinely distributed machine cognition. Five core innovations make this possible:
+The Global Cognitive Brain represents a fundamental shift from orchestrated AI services to genuinely distributed machine cognition. Five core design principles make this possible:
 
 - **Semantic primitives** that compress 4KB messages to 64 bytes while preserving geometric meaning
 - **Cluster DNA** that enables machine-speed trust decisions through cryptographic identity

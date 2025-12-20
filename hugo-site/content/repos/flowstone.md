@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/flowstone/
 hex_url: https://hex.pm/packages/flowstone
 highlights:
 - 'Latest release: v0.5.0'
-- 'Recent downloads: 45'
-- 'All-time downloads: 45'
+- 'Recent downloads: 69'
+- 'All-time downloads: 69'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/flowstone
 slug: flowstone
@@ -25,8 +25,8 @@ Asset-first data orchestration framework for Elixir/BEAM.
 ## Package Information
 
 - Latest release: v0.5.0
-- Recent downloads: 45
-- All-time downloads: 45
+- Recent downloads: 69
+- All-time downloads: 69
 - Maintainers: nshkrdotcom
 
 ## Installation

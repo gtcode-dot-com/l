@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/tiktoken_ex/
 hex_url: https://hex.pm/packages/tiktoken_ex
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 24'
-- 'All-time downloads: 24'
+- 'Recent downloads: 26'
+- 'All-time downloads: 26'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/tiktoken_ex
 slug: tiktoken_ex
@@ -26,8 +26,8 @@ Pure-Elixir TikToken-style byte-level BPE tokenizer, with helpers for Kimi K2 en
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 24
-- All-time downloads: 24
+- Recent downloads: 26
+- All-time downloads: 26
 - Maintainers: nshkrdotcom
 
 ## Installation
