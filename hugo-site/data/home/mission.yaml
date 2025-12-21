@@ -62,7 +62,7 @@ missions:
         target: "_blank"
         rel: "noopener"
       - label: "Latest Article →"
-        url: "/articles/visual-language-ai-synthesis/"
+        url: "/articles/mechanistic-interpretability-landscape-2025/"
         style: "secondary"
       - label: "Guides Library →"
         url: "/guides/"
