@@ -1,5 +1,5 @@
 ---
-date: '2025-12-20'
+date: '2025-12-21'
 description: A 100% faithful port of the DuckDB Python client to Elixir, using the
   DuckDB CLI for full API compatibility with the official Python client.
 docs_url: https://hexdocs.pm/duckdb_ex/
