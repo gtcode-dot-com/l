@@ -5,12 +5,12 @@ docs_url: https://hexdocs.pm/claude_agent_sdk/
 hex_url: https://hex.pm/packages/claude_agent_sdk
 highlights:
 - 'Latest release: v0.6.8'
-- 'Recent downloads: 471'
-- 'All-time downloads: 471'
+- 'Recent downloads: 505'
+- 'All-time downloads: 505'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/claude_agent_sdk
 slug: claude_agent_sdk
-stage: Preview
+stage: Active
 tags:
 - MIT
 - Hex.pm
@@ -25,8 +25,8 @@ An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude
 ## Package Information
 
 - Latest release: v0.6.8
-- Recent downloads: 471
-- All-time downloads: 471
+- Recent downloads: 505
+- All-time downloads: 505
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -22,8 +22,8 @@
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 843"
-    - "All-time downloads: 1233"
+    - "Recent downloads: 844"
+    - "All-time downloads: 1234"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -100,6 +100,23 @@
   docs_url: "https://hexdocs.pm/assessor/"
   repo_url: "https://github.com/nshkrdotcom/Assessor"
 
+- slug: "chz_ex"
+  name: "Chz Ex"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "Configuration management with CLI parsing for Elixir"
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/chz_ex"
+  docs_url: "https://hexdocs.pm/chz_ex/"
+  repo_url: "https://github.com/North-Shore-AI/chz_ex"
+
 - slug: "citadel"
   name: "Citadel"
   stage: "Preview"
@@ -119,13 +136,13 @@
 
 - slug: "claude_agent_sdk"
   name: "Claude Agent Sdk"
-  stage: "Preview"
+  stage: "Active"
   version: "0.6.8"
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.6.8"
-    - "Recent downloads: 471"
-    - "All-time downloads: 471"
+    - "Recent downloads: 505"
+    - "All-time downloads: 505"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -158,8 +175,8 @@
   summary: "Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready interface with streaming support, comprehensive event handling, and robust testing utilities."
   highlights:
     - "Latest release: v0.4.2"
-    - "Recent downloads: 267"
-    - "All-time downloads: 267"
+    - "Recent downloads: 292"
+    - "All-time downloads: 292"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -175,8 +192,8 @@
   summary: "Adversarial testing and robustness framework for AI models with 25 attacks (character/word/semantic perturbations, prompt injection, jailbreak, extraction, inversion), defenses\u2026"
   highlights:
     - "Latest release: v0.3.0"
-    - "Recent downloads: 108"
-    - "All-time downloads: 108"
+    - "Recent downloads: 110"
+    - "All-time downloads: 110"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -205,12 +222,12 @@
 - slug: "crucible_datasets"
   name: "Crucible Datasets"
   stage: "Incubating"
-  version: "0.4.0"
+  version: "0.4.1"
   summary: "Dataset management and caching for AI research benchmarks"
   highlights:
-    - "Latest release: v0.4.0"
-    - "Recent downloads: 54"
-    - "All-time downloads: 54"
+    - "Latest release: v0.4.1"
+    - "Recent downloads: 62"
+    - "All-time downloads: 62"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -379,8 +396,8 @@
   summary: "DSPex: Native Elixir implementation of DSPy with Python integration via Snakepit. Enables gradual migration from Python DSPy to native Elixir implementations while supporting\u2026"
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 123"
-    - "All-time downloads: 254"
+    - "Recent downloads: 125"
+    - "All-time downloads: 256"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -561,13 +578,13 @@
 
 - slug: "flowstone"
   name: "Flowstone"
-  stage: "Incubating"
+  stage: "Preview"
   version: "0.5.1"
   summary: "Asset-first data orchestration framework for Elixir/BEAM."
   highlights:
     - "Latest release: v0.5.1"
-    - "Recent downloads: 89"
-    - "All-time downloads: 89"
+    - "Recent downloads: 110"
+    - "All-time downloads: 110"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -634,8 +651,8 @@
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
     - "Latest release: v0.8.6"
-    - "Recent downloads: 1495"
-    - "All-time downloads: 2145"
+    - "Recent downloads: 1516"
+    - "All-time downloads: 2166"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -664,12 +681,12 @@
 - slug: "hf_hub"
   name: "Hf Hub"
   stage: "Incubating"
-  version: "0.1.0"
+  version: "0.1.1"
   summary: "Elixir client for HuggingFace Hub\u2014dataset/model metadata, file downloads, caching, and authentication"
   highlights:
-    - "Latest release: v0.1.0"
-    - "Recent downloads: 0"
-    - "All-time downloads: 0"
+    - "Latest release: v0.1.1"
+    - "Recent downloads: 8"
+    - "All-time downloads: 8"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -702,8 +719,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.1.11"
-    - "Recent downloads: 5174"
-    - "All-time downloads: 9877"
+    - "Recent downloads: 5093"
+    - "All-time downloads: 9887"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -855,8 +872,8 @@
   summary: "A typing system for Elixir/OTP."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 58"
-    - "All-time downloads: 91"
+    - "Recent downloads: 60"
+    - "All-time downloads: 93"
     - "Maintainers: nshkrdotcom"
   tags:
     - "Apache-2.0"
@@ -916,6 +933,40 @@
   docs_url: "https://hexdocs.pm/playwriter/"
   repo_url: "https://github.com/nshkrdotcom/playwriter"
 
+- slug: "portfolio_manager"
+  name: "Portfolio Manager"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "AI-native personal project intelligence system"
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/portfolio_manager"
+  docs_url: "https://hexdocs.pm/portfolio_manager/"
+  repo_url: "https://github.com/nshkrdotcom/portfolio_manager"
+
+- slug: "rag_ex"
+  name: "Rag Ex"
+  stage: "Incubating"
+  version: "0.3.4"
+  summary: "A library to make building performant RAG systems in Elixir easy"
+  highlights:
+    - "Latest release: v0.3.4"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/rag_ex"
+  docs_url: "https://hexdocs.pm/rag_ex/"
+  repo_url: "https://github.com/nshkrdotcom/rag_ex"
+
 - slug: "sinter"
   name: "Sinter"
   stage: "Preview"
@@ -974,8 +1025,8 @@
   summary: "High-performance pooler and session manager for external language integrations. Supports Python, Node.js, Ruby, and more with gRPC streaming, session management, and production-\u2026"
   highlights:
     - "Latest release: v0.6.11"
-    - "Recent downloads: 844"
-    - "All-time downloads: 1239"
+    - "Recent downloads: 851"
+    - "All-time downloads: 1246"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -991,8 +1042,8 @@
   summary: "Battle-hardened OTP testing toolkit with chaos engineering, performance testing, and zero-sleep synchronization patterns for building robust Elixir applications."
   highlights:
     - "Latest release: v0.3.1"
-    - "Recent downloads: 312"
-    - "All-time downloads: 369"
+    - "Recent downloads: 314"
+    - "All-time downloads: 371"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
