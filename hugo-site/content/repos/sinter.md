@@ -1,5 +1,5 @@
 ---
-date: '2025-12-21'
+date: '2025-12-22'
 description: Unified schema definition, validation, and JSON generation for Elixir.
   Sinter is a focused, high-performance schema validation library designed specifically
   for dynamic frameworks…

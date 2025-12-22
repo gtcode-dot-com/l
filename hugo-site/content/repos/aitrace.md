@@ -1,5 +1,5 @@
 ---
-date: '2025-12-21'
+date: '2025-12-22'
 description: The unified observability layer for the AI Control Plane, delivering
   full-fidelity tracing for AI agent reasoning, tool calls, and state transitions.
 docs_url: https://hexdocs.pm/aitrace/

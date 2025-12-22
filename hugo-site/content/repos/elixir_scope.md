@@ -1,5 +1,5 @@
 ---
-date: '2025-12-21'
+date: '2025-12-22'
 description: ElixirScope is a next-generation debugging and observability platform
   for Elixir applications, designed to provide an Execution Cinema experience through
   deep, compile-time AST…

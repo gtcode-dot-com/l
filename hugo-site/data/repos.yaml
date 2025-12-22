@@ -205,10 +205,10 @@
 - slug: "crucible_datasets"
   name: "Crucible Datasets"
   stage: "Incubating"
-  version: "0.2.0"
+  version: "0.4.0"
   summary: "Dataset management and caching for AI research benchmarks"
   highlights:
-    - "Latest release: v0.2.0"
+    - "Latest release: v0.4.0"
     - "Recent downloads: 54"
     - "All-time downloads: 54"
     - "Maintainers: nshkrdotcom"
