@@ -1,10 +1,10 @@
 ---
-date: '2025-12-22'
+date: '2025-12-23'
 description: Configuration management with CLI parsing for Elixir
 docs_url: https://hexdocs.pm/chz_ex/
 hex_url: https://hex.pm/packages/chz_ex
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.1.1'
 - 'Recent downloads: 0'
 - 'All-time downloads: 0'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Chz Ex
-version: 0.1.0
+version: 0.1.1
 ---
 
 ## About Chz Ex
@@ -24,7 +24,7 @@ Configuration management with CLI parsing for Elixir
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.1.1
 - Recent downloads: 0
 - All-time downloads: 0
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `chz_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'chz_ex', "~> 0.1.0"}
+    {'chz_ex', "~> 0.1.1"}
   ]
 end
 ```
