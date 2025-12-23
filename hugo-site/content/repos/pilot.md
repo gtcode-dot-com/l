@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/pilot/
 hex_url: https://hex.pm/packages/pilot
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 20'
-- 'All-time downloads: 20'
+- 'Recent downloads: 22'
+- 'All-time downloads: 22'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/pilot
 slug: pilot
@@ -26,8 +26,8 @@ Interactive CLI/REPL for the NSAI ecosystem: unified interface for Crucible expe
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 20
-- All-time downloads: 20
+- Recent downloads: 22
+- All-time downloads: 22
 - Maintainers: nshkrdotcom
 
 ## Installation

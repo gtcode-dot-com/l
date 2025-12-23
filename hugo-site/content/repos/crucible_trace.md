@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/crucible_trace/
 hex_url: https://hex.pm/packages/crucible_trace
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 57'
-- 'All-time downloads: 57'
+- 'Recent downloads: 59'
+- 'All-time downloads: 59'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_trace
 slug: crucible_trace
@@ -26,8 +26,8 @@ Structured causal reasoning chain logging for LLMs. Captures decision-making pro
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 57
-- All-time downloads: 57
+- Recent downloads: 59
+- All-time downloads: 59
 - Maintainers: nshkrdotcom
 
 ## Installation

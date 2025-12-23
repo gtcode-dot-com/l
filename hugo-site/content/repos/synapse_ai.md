@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/synapse_ai/
 hex_url: https://hex.pm/packages/synapse_ai
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 23'
-- 'All-time downloads: 23'
+- 'Recent downloads: 25'
+- 'All-time downloads: 25'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/synapse_ai
 slug: synapse_ai
@@ -27,8 +27,8 @@ Synapse integration for altar_ai - SDK-backed LLM providers for multi-agent work
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 23
-- All-time downloads: 23
+- Recent downloads: 25
+- All-time downloads: 25
 - Maintainers: nshkrdotcom
 
 ## Installation

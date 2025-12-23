@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/crucible_framework/
 hex_url: https://hex.pm/packages/crucible_framework
 highlights:
 - 'Latest release: v0.3.0'
-- 'Recent downloads: 179'
-- 'All-time downloads: 179'
+- 'Recent downloads: 189'
+- 'All-time downloads: 189'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_framework
 slug: crucible_framework
@@ -27,8 +27,8 @@ CrucibleFramework: A scientific platform for LLM reliability research on the BEA
 ## Package Information
 
 - Latest release: v0.3.0
-- Recent downloads: 179
-- All-time downloads: 179
+- Recent downloads: 189
+- All-time downloads: 189
 - Maintainers: nshkrdotcom
 
 ## Installation
