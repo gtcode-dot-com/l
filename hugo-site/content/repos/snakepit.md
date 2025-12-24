@@ -1,5 +1,5 @@
 ---
-date: '2025-12-23'
+date: '2025-12-24'
 description: High-performance pooler and session manager for external language integrations.
   Supports Python, Node.js, Ruby, and more with gRPC streaming, session management,
   and production-…

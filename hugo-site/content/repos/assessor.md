@@ -1,5 +1,5 @@
 ---
-date: '2025-12-23'
+date: '2025-12-24'
 description: The definitive CI/CD platform for AI Quality.
 docs_url: https://hexdocs.pm/assessor/
 hex_url: https://hex.pm/packages/assessor
