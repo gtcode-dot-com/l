@@ -4,18 +4,18 @@ description: Dataset management and caching for AI research benchmarks
 docs_url: https://hexdocs.pm/crucible_datasets/
 hex_url: https://hex.pm/packages/crucible_datasets
 highlights:
-- 'Latest release: v0.5.0'
-- 'Recent downloads: 88'
-- 'All-time downloads: 88'
+- 'Latest release: v0.5.1'
+- 'Recent downloads: 105'
+- 'All-time downloads: 105'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_datasets
 slug: crucible_datasets
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
 title: Crucible Datasets
-version: 0.5.0
+version: 0.5.1
 ---
 
 ## About Crucible Datasets
@@ -24,9 +24,9 @@ Dataset management and caching for AI research benchmarks
 
 ## Package Information
 
-- Latest release: v0.5.0
-- Recent downloads: 88
-- All-time downloads: 88
+- Latest release: v0.5.1
+- Recent downloads: 105
+- All-time downloads: 105
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -36,7 +36,7 @@ Add `crucible_datasets` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_datasets', "~> 0.5.0"}
+    {'crucible_datasets', "~> 0.5.1"}
   ]
 end
 ```

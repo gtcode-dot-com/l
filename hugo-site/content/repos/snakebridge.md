@@ -6,7 +6,7 @@ description: Configuration-driven Python library integration for Elixir. Automat
 docs_url: https://hexdocs.pm/snakebridge/
 hex_url: https://hex.pm/packages/snakebridge
 highlights:
-- 'Latest release: v0.2.4'
+- 'Latest release: v0.3.1'
 - 'Recent downloads: 173'
 - 'All-time downloads: 173'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Snakebridge
-version: 0.2.4
+version: 0.3.1
 ---
 
 ## About Snakebridge
@@ -26,7 +26,7 @@ Configuration-driven Python library integration for Elixir. Automatically genera
 
 ## Package Information
 
-- Latest release: v0.2.4
+- Latest release: v0.3.1
 - Recent downloads: 173
 - All-time downloads: 173
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `snakebridge` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'snakebridge', "~> 0.2.4"}
+    {'snakebridge', "~> 0.3.1"}
   ]
 end
 ```

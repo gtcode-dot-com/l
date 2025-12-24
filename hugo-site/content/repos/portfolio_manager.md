@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/portfolio_manager/
 hex_url: https://hex.pm/packages/portfolio_manager
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 13'
-- 'All-time downloads: 13'
+- 'Recent downloads: 15'
+- 'All-time downloads: 15'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_manager
 slug: portfolio_manager
@@ -25,8 +25,8 @@ AI-native personal project intelligence system
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 13
-- All-time downloads: 13
+- Recent downloads: 15
+- All-time downloads: 15
 - Maintainers: nshkrdotcom
 
 ## Installation

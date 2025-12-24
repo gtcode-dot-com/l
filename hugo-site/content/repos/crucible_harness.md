@@ -5,7 +5,7 @@ description: Experimental research framework for running AI benchmarks at scale.
 docs_url: https://hexdocs.pm/crucible_harness/
 hex_url: https://hex.pm/packages/crucible_harness
 highlights:
-- 'Latest release: v0.2.0'
+- 'Latest release: v0.3.1'
 - 'Recent downloads: 64'
 - 'All-time downloads: 64'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Harness
-version: 0.2.0
+version: 0.3.1
 ---
 
 ## About Crucible Harness
@@ -25,7 +25,7 @@ Experimental research framework for running AI benchmarks at scale. Provides orc
 
 ## Package Information
 
-- Latest release: v0.2.0
+- Latest release: v0.3.1
 - Recent downloads: 64
 - All-time downloads: 64
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `crucible_harness` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_harness', "~> 0.2.0"}
+    {'crucible_harness', "~> 0.3.1"}
   ]
 end
 ```
