@@ -1,5 +1,5 @@
 ---
-date: '2025-12-24'
+date: '2025-12-25'
 description: A typing system for Elixir/OTP.
 docs_url: https://hexdocs.pm/perimeter/
 hex_url: https://hex.pm/packages/perimeter

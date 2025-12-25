@@ -1,5 +1,5 @@
 ---
-date: '2025-12-24'
+date: '2025-12-25'
 description: A blazingly fast Elixir library for repairing malformed JSON using binary
   pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent
   context-aware fixes.

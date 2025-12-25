@@ -1,11 +1,11 @@
 ---
-date: '2025-12-24'
+date: '2025-12-25'
 description: HuggingFace Datasets for Elixir - Load, stream, and process ML datasets
   from the HuggingFace Hub with native BEAM/OTP integration.
 docs_url: https://hexdocs.pm/hf_datasets_ex/
 hex_url: https://hex.pm/packages/hf_datasets_ex
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.1.1'
 - 'Recent downloads: 6'
 - 'All-time downloads: 6'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Hf Datasets Ex
-version: 0.1.0
+version: 0.1.1
 ---
 
 ## About Hf Datasets Ex
@@ -25,7 +25,7 @@ HuggingFace Datasets for Elixir - Load, stream, and process ML datasets from the
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.1.1
 - Recent downloads: 6
 - All-time downloads: 6
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `hf_datasets_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'hf_datasets_ex', "~> 0.1.0"}
+    {'hf_datasets_ex', "~> 0.1.1"}
   ]
 end
 ```
