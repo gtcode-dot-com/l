@@ -5,7 +5,7 @@ description: Comprehensive benchmarking framework for AI research. Measures late
 docs_url: https://hexdocs.pm/crucible_bench/
 hex_url: https://hex.pm/packages/crucible_bench
 highlights:
-- 'Latest release: v0.2.1'
+- 'Latest release: v0.3.1'
 - 'Recent downloads: 86'
 - 'All-time downloads: 86'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Bench
-version: 0.2.1
+version: 0.3.1
 ---
 
 ## About Crucible Bench
@@ -25,7 +25,7 @@ Comprehensive benchmarking framework for AI research. Measures latency, throughp
 
 ## Package Information
 
-- Latest release: v0.2.1
+- Latest release: v0.3.1
 - Recent downloads: 86
 - All-time downloads: 86
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `crucible_bench` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_bench', "~> 0.2.1"}
+    {'crucible_bench', "~> 0.3.1"}
   ]
 end
 ```

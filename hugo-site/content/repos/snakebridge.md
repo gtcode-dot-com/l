@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/snakebridge/
 hex_url: https://hex.pm/packages/snakebridge
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 173'
-- 'All-time downloads: 173'
+- 'Recent downloads: 199'
+- 'All-time downloads: 199'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakebridge
 slug: snakebridge
@@ -27,8 +27,8 @@ Configuration-driven Python library integration for Elixir. Automatically genera
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 173
-- All-time downloads: 173
+- Recent downloads: 199
+- All-time downloads: 199
 - Maintainers: nshkrdotcom
 
 ## Installation
