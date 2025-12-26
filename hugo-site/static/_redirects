@@ -29,8 +29,12 @@
 /repos/crucible_bench/ https://hex.pm/packages/crucible_bench 302
 /repos/crucible_datasets https://hex.pm/packages/crucible_datasets 302
 /repos/crucible_datasets/ https://hex.pm/packages/crucible_datasets 302
+/repos/crucible_deployment https://hex.pm/packages/crucible_deployment 302
+/repos/crucible_deployment/ https://hex.pm/packages/crucible_deployment 302
 /repos/crucible_ensemble https://hex.pm/packages/crucible_ensemble 302
 /repos/crucible_ensemble/ https://hex.pm/packages/crucible_ensemble 302
+/repos/crucible_feedback https://hex.pm/packages/crucible_feedback 302
+/repos/crucible_feedback/ https://hex.pm/packages/crucible_feedback 302
 /repos/crucible_framework https://hex.pm/packages/crucible_framework 302
 /repos/crucible_framework/ https://hex.pm/packages/crucible_framework 302
 /repos/crucible_harness https://hex.pm/packages/crucible_harness 302
@@ -39,10 +43,14 @@
 /repos/crucible_hedging/ https://hex.pm/packages/crucible_hedging 302
 /repos/crucible_ir https://hex.pm/packages/crucible_ir 302
 /repos/crucible_ir/ https://hex.pm/packages/crucible_ir 302
+/repos/crucible_model_registry https://hex.pm/packages/crucible_model_registry 302
+/repos/crucible_model_registry/ https://hex.pm/packages/crucible_model_registry 302
 /repos/crucible_telemetry https://hex.pm/packages/crucible_telemetry 302
 /repos/crucible_telemetry/ https://hex.pm/packages/crucible_telemetry 302
 /repos/crucible_trace https://hex.pm/packages/crucible_trace 302
 /repos/crucible_trace/ https://hex.pm/packages/crucible_trace 302
+/repos/crucible_train https://hex.pm/packages/crucible_train 302
+/repos/crucible_train/ https://hex.pm/packages/crucible_train 302
 /repos/crucible_xai https://hex.pm/packages/crucible_xai 302
 /repos/crucible_xai/ https://hex.pm/packages/crucible_xai 302
 /repos/datasets_ex https://hex.pm/packages/datasets_ex 302

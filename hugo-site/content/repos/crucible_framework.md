@@ -1,12 +1,11 @@
 ---
 date: '2025-12-26'
-description: 'CrucibleFramework: A scientific platform for LLM reliability research
-  on the BEAM. Provides core library functionality with comprehensive documentation
-  and guides.'
+description: 'CrucibleFramework: A thin orchestration layer for experiment pipelines.
+  Provides pipeline execution, stage behaviour, and optional persistence.'
 docs_url: https://hexdocs.pm/crucible_framework/
 hex_url: https://hex.pm/packages/crucible_framework
 highlights:
-- 'Latest release: v0.3.0'
+- 'Latest release: v0.4.0'
 - 'Recent downloads: 189'
 - 'All-time downloads: 189'
 - 'Maintainers: nshkrdotcom'
@@ -17,16 +16,16 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Framework
-version: 0.3.0
+version: 0.4.0
 ---
 
 ## About Crucible Framework
 
-CrucibleFramework: A scientific platform for LLM reliability research on the BEAM. Provides core library functionality with comprehensive documentation and guides.
+CrucibleFramework: A thin orchestration layer for experiment pipelines. Provides pipeline execution, stage behaviour, and optional persistence.
 
 ## Package Information
 
-- Latest release: v0.3.0
+- Latest release: v0.4.0
 - Recent downloads: 189
 - All-time downloads: 189
 - Maintainers: nshkrdotcom
@@ -38,7 +37,7 @@ Add `crucible_framework` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_framework', "~> 0.3.0"}
+    {'crucible_framework', "~> 0.4.0"}
   ]
 end
 ```

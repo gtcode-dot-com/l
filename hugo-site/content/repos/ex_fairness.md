@@ -5,7 +5,7 @@ description: Fairness and bias detection library for Elixir AI/ML systems. Provi
 docs_url: https://hexdocs.pm/ex_fairness/
 hex_url: https://hex.pm/packages/ex_fairness
 highlights:
-- 'Latest release: v0.3.0'
+- 'Latest release: v0.4.0'
 - 'Recent downloads: 116'
 - 'All-time downloads: 116'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Ex Fairness
-version: 0.3.0
+version: 0.4.0
 ---
 
 ## About Ex Fairness
@@ -25,7 +25,7 @@ Fairness and bias detection library for Elixir AI/ML systems. Provides comprehen
 
 ## Package Information
 
-- Latest release: v0.3.0
+- Latest release: v0.4.0
 - Recent downloads: 116
 - All-time downloads: 116
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `ex_fairness` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'ex_fairness', "~> 0.3.0"}
+    {'ex_fairness', "~> 0.4.0"}
   ]
 end
 ```

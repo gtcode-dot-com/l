@@ -1,14 +1,12 @@
 ---
 date: '2025-12-26'
-description: Configuration-driven Python library integration for Elixir. Automatically
-  generate type-safe Elixir modules from declarative configs, enabling seamless integration
-  with any Python…
+description: Generate type-safe Elixir bindings for Python libraries
 docs_url: https://hexdocs.pm/snakebridge/
 hex_url: https://hex.pm/packages/snakebridge
 highlights:
-- 'Latest release: v0.3.1'
-- 'Recent downloads: 199'
-- 'All-time downloads: 199'
+- 'Latest release: v0.4.0'
+- 'Recent downloads: 209'
+- 'All-time downloads: 209'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakebridge
 slug: snakebridge
@@ -17,18 +15,18 @@ tags:
 - MIT
 - Hex.pm
 title: Snakebridge
-version: 0.3.1
+version: 0.4.0
 ---
 
 ## About Snakebridge
 
-Configuration-driven Python library integration for Elixir. Automatically generate type-safe Elixir modules from declarative configs, enabling seamless integration with any Python…
+Generate type-safe Elixir bindings for Python libraries
 
 ## Package Information
 
-- Latest release: v0.3.1
-- Recent downloads: 199
-- All-time downloads: 199
+- Latest release: v0.4.0
+- Recent downloads: 209
+- All-time downloads: 209
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +36,7 @@ Add `snakebridge` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'snakebridge', "~> 0.3.1"}
+    {'snakebridge', "~> 0.4.0"}
   ]
 end
 ```

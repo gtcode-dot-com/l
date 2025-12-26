@@ -4,7 +4,7 @@ description: Generic Topological Data Analysis for Elixir
 docs_url: https://hexdocs.pm/ex_topology/
 hex_url: https://hex.pm/packages/ex_topology
 highlights:
-- 'Latest release: v0.1.1'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 50'
 - 'All-time downloads: 50'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Ex Topology
-version: 0.1.1
+version: 0.2.0
 ---
 
 ## About Ex Topology
@@ -24,7 +24,7 @@ Generic Topological Data Analysis for Elixir
 
 ## Package Information
 
-- Latest release: v0.1.1
+- Latest release: v0.2.0
 - Recent downloads: 50
 - All-time downloads: 50
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `ex_topology` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'ex_topology', "~> 0.1.1"}
+    {'ex_topology', "~> 0.2.0"}
   ]
 end
 ```

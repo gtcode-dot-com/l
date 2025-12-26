@@ -5,7 +5,7 @@ description: Structured causal reasoning chain logging for LLMs. Captures decisi
 docs_url: https://hexdocs.pm/crucible_trace/
 hex_url: https://hex.pm/packages/crucible_trace
 highlights:
-- 'Latest release: v0.2.0'
+- 'Latest release: v0.3.0'
 - 'Recent downloads: 59'
 - 'All-time downloads: 59'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Trace
-version: 0.2.0
+version: 0.3.0
 ---
 
 ## About Crucible Trace
@@ -25,7 +25,7 @@ Structured causal reasoning chain logging for LLMs. Captures decision-making pro
 
 ## Package Information
 
-- Latest release: v0.2.0
+- Latest release: v0.3.0
 - Recent downloads: 59
 - All-time downloads: 59
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `crucible_trace` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_trace', "~> 0.2.0"}
+    {'crucible_trace', "~> 0.3.0"}
   ]
 end
 ```
