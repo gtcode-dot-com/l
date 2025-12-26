@@ -1,5 +1,5 @@
 ---
-date: '2025-12-25'
+date: '2025-12-26'
 description: A library to make building performant RAG systems in Elixir easy
 docs_url: https://hexdocs.pm/rag_ex/
 hex_url: https://hex.pm/packages/rag_ex

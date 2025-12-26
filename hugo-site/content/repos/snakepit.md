@@ -1,12 +1,12 @@
 ---
-date: '2025-12-25'
+date: '2025-12-26'
 description: High-performance pooler and session manager for external language integrations.
   Supports Python, Node.js, Ruby, and more with gRPC streaming, session management,
   and production-…
 docs_url: https://hexdocs.pm/snakepit/
 hex_url: https://hex.pm/packages/snakepit
 highlights:
-- 'Latest release: v0.7.1'
+- 'Latest release: v0.7.3'
 - 'Recent downloads: 884'
 - 'All-time downloads: 1279'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Snakepit
-version: 0.7.1
+version: 0.7.3
 ---
 
 ## About Snakepit
@@ -26,7 +26,7 @@ High-performance pooler and session manager for external language integrations. 
 
 ## Package Information
 
-- Latest release: v0.7.1
+- Latest release: v0.7.3
 - Recent downloads: 884
 - All-time downloads: 1279
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `snakepit` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'snakepit', "~> 0.7.1"}
+    {'snakepit', "~> 0.7.3"}
   ]
 end
 ```

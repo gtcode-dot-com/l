@@ -1,5 +1,5 @@
 ---
-date: '2025-12-25'
+date: '2025-12-26'
 description: Elixir client for HuggingFace Hub—dataset/model metadata, file downloads,
   caching, and authentication
 docs_url: https://hexdocs.pm/hf_hub/
