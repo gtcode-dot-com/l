@@ -6,7 +6,7 @@ docs_url: https://hexdocs.pm/foundation/
 hex_url: https://hex.pm/packages/foundation
 highlights:
 - 'Latest release: v0.1.5'
-- 'Recent downloads: 64'
+- 'Recent downloads: 62'
 - 'All-time downloads: 337'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/foundation
@@ -26,7 +26,7 @@ A comprehensive Elixir infrastructure and observability library providing essent
 ## Package Information
 
 - Latest release: v0.1.5
-- Recent downloads: 64
+- Recent downloads: 62
 - All-time downloads: 337
 - Maintainers: nshkrdotcom
 

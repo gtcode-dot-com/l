@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/eval_ex/
 hex_url: https://hex.pm/packages/eval_ex
 highlights:
 - 'Latest release: v0.1.4'
-- 'Recent downloads: 49'
-- 'All-time downloads: 49'
+- 'Recent downloads: 86'
+- 'All-time downloads: 86'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/eval_ex
 slug: eval_ex
@@ -26,8 +26,8 @@ Model evaluation harness for standardized benchmarking with semantic similarity,
 ## Package Information
 
 - Latest release: v0.1.4
-- Recent downloads: 49
-- All-time downloads: 49
+- Recent downloads: 86
+- All-time downloads: 86
 - Maintainers: nshkrdotcom
 
 ## Installation

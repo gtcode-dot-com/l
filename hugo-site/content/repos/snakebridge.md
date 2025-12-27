@@ -4,9 +4,9 @@ description: Generate type-safe Elixir bindings for Python libraries
 docs_url: https://hexdocs.pm/snakebridge/
 hex_url: https://hex.pm/packages/snakebridge
 highlights:
-- 'Latest release: v0.4.0'
-- 'Recent downloads: 209'
-- 'All-time downloads: 209'
+- 'Latest release: v0.5.0'
+- 'Recent downloads: 216'
+- 'All-time downloads: 216'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakebridge
 slug: snakebridge
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Snakebridge
-version: 0.4.0
+version: 0.5.0
 ---
 
 ## About Snakebridge
@@ -24,9 +24,9 @@ Generate type-safe Elixir bindings for Python libraries
 
 ## Package Information
 
-- Latest release: v0.4.0
-- Recent downloads: 209
-- All-time downloads: 209
+- Latest release: v0.5.0
+- Recent downloads: 216
+- All-time downloads: 216
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -36,7 +36,7 @@ Add `snakebridge` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'snakebridge', "~> 0.4.0"}
+    {'snakebridge', "~> 0.5.0"}
   ]
 end
 ```

@@ -8,7 +8,7 @@ hex_url: https://hex.pm/packages/gemini_ex
 highlights:
 - 'Latest release: v0.8.6'
 - 'Recent downloads: 1597'
-- 'All-time downloads: 2254'
+- 'All-time downloads: 2258'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/gemini_ex
 slug: gemini_ex
@@ -28,7 +28,7 @@ Comprehensive Elixir client for Google's Gemini AI API with dual authentication,
 
 - Latest release: v0.8.6
 - Recent downloads: 1597
-- All-time downloads: 2254
+- All-time downloads: 2258
 - Maintainers: nshkrdotcom
 
 ## Installation

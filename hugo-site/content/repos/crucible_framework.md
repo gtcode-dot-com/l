@@ -5,9 +5,9 @@ description: 'CrucibleFramework: A thin orchestration layer for experiment pipel
 docs_url: https://hexdocs.pm/crucible_framework/
 hex_url: https://hex.pm/packages/crucible_framework
 highlights:
-- 'Latest release: v0.4.0'
-- 'Recent downloads: 189'
-- 'All-time downloads: 189'
+- 'Latest release: v0.5.0'
+- 'Recent downloads: 215'
+- 'All-time downloads: 215'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_framework
 slug: crucible_framework
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Framework
-version: 0.4.0
+version: 0.5.0
 ---
 
 ## About Crucible Framework
@@ -25,9 +25,9 @@ CrucibleFramework: A thin orchestration layer for experiment pipelines. Provides
 
 ## Package Information
 
-- Latest release: v0.4.0
-- Recent downloads: 189
-- All-time downloads: 189
+- Latest release: v0.5.0
+- Recent downloads: 215
+- All-time downloads: 215
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -37,7 +37,7 @@ Add `crucible_framework` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_framework', "~> 0.4.0"}
+    {'crucible_framework', "~> 0.5.0"}
   ]
 end
 ```
