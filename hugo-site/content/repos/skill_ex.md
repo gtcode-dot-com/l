@@ -1,5 +1,5 @@
 ---
-date: '2025-12-26'
+date: '2025-12-27'
 description: Aggregates and packages Claude skills from multiple Elixir projects into
   a single, validated bundle ready for distribution.
 docs_url: https://hexdocs.pm/skill_ex/
