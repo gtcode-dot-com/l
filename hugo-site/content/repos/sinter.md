@@ -6,7 +6,7 @@ description: Unified schema definition, validation, and JSON generation for Elix
 docs_url: https://hexdocs.pm/sinter/
 hex_url: https://hex.pm/packages/sinter
 highlights:
-- 'Latest release: v0.0.1'
+- 'Latest release: v0.1.0'
 - 'Recent downloads: 44'
 - 'All-time downloads: 104'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Sinter
-version: 0.0.1
+version: 0.1.0
 ---
 
 ## About Sinter
@@ -26,7 +26,7 @@ Unified schema definition, validation, and JSON generation for Elixir. Sinter is
 
 ## Package Information
 
-- Latest release: v0.0.1
+- Latest release: v0.1.0
 - Recent downloads: 44
 - All-time downloads: 104
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `sinter` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'sinter', "~> 0.0.1"}
+    {'sinter', "~> 0.1.0"}
   ]
 end
 ```

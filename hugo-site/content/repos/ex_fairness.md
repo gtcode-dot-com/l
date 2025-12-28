@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/ex_fairness/
 hex_url: https://hex.pm/packages/ex_fairness
 highlights:
 - 'Latest release: v0.5.0'
-- 'Recent downloads: 125'
-- 'All-time downloads: 125'
+- 'Recent downloads: 138'
+- 'All-time downloads: 138'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/ExFairness
 slug: ex_fairness
@@ -26,8 +26,8 @@ Fairness and bias detection library for Elixir AI/ML systems. Provides comprehen
 ## Package Information
 
 - Latest release: v0.5.0
-- Recent downloads: 125
-- All-time downloads: 125
+- Recent downloads: 138
+- All-time downloads: 138
 - Maintainers: nshkrdotcom
 
 ## Installation

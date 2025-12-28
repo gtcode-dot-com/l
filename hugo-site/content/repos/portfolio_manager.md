@@ -1,10 +1,11 @@
 ---
 date: '2025-12-28'
-description: AI-native personal project intelligence system
+description: Application layer for Portfolio ecosystem providing RAG workflows, graph
+  analysis, domain registries, and CLI tools built on portfolio_core and portfolio_index.
 docs_url: https://hexdocs.pm/portfolio_manager/
 hex_url: https://hex.pm/packages/portfolio_manager
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 19'
 - 'All-time downloads: 19'
 - 'Maintainers: nshkrdotcom'
@@ -15,16 +16,16 @@ tags:
 - MIT
 - Hex.pm
 title: Portfolio Manager
-version: 0.1.0
+version: 0.2.0
 ---
 
 ## About Portfolio Manager
 
-AI-native personal project intelligence system
+Application layer for Portfolio ecosystem providing RAG workflows, graph analysis, domain registries, and CLI tools built on portfolio_core and portfolio_index.
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.2.0
 - Recent downloads: 19
 - All-time downloads: 19
 - Maintainers: nshkrdotcom
@@ -36,7 +37,7 @@ Add `portfolio_manager` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'portfolio_manager', "~> 0.1.0"}
+    {'portfolio_manager', "~> 0.2.0"}
   ]
 end
 ```

@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/tinkex/
 hex_url: https://hex.pm/packages/tinkex
 highlights:
 - 'Latest release: v0.3.4'
-- 'Recent downloads: 736'
-- 'All-time downloads: 736'
+- 'Recent downloads: 750'
+- 'All-time downloads: 750'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/tinkex
 slug: tinkex
@@ -26,8 +26,8 @@ Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with 
 ## Package Information
 
 - Latest release: v0.3.4
-- Recent downloads: 736
-- All-time downloads: 736
+- Recent downloads: 750
+- All-time downloads: 750
 - Maintainers: nshkrdotcom
 
 ## Installation

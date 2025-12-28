@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/supertester/
 hex_url: https://hex.pm/packages/supertester
 highlights:
 - 'Latest release: v0.4.0'
-- 'Recent downloads: 326'
-- 'All-time downloads: 385'
+- 'Recent downloads: 354'
+- 'All-time downloads: 413'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/supertester
 slug: supertester
@@ -26,8 +26,8 @@ Battle-hardened OTP testing toolkit with chaos engineering, performance testing,
 ## Package Information
 
 - Latest release: v0.4.0
-- Recent downloads: 326
-- All-time downloads: 385
+- Recent downloads: 354
+- All-time downloads: 413
 - Maintainers: nshkrdotcom
 
 ## Installation
