@@ -1,11 +1,11 @@
 ---
-date: '2025-12-27'
+date: '2025-12-28'
 description: Multi-model ensemble prediction with voting strategies for AI reliability.
   Leverages BEAM parallelism for massively concurrent LLM queries.
 docs_url: https://hexdocs.pm/crucible_ensemble/
 hex_url: https://hex.pm/packages/crucible_ensemble
 highlights:
-- 'Latest release: v0.3.0'
+- 'Latest release: v0.4.0'
 - 'Recent downloads: 65'
 - 'All-time downloads: 65'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Ensemble
-version: 0.3.0
+version: 0.4.0
 ---
 
 ## About Crucible Ensemble
@@ -25,7 +25,7 @@ Multi-model ensemble prediction with voting strategies for AI reliability. Lever
 
 ## Package Information
 
-- Latest release: v0.3.0
+- Latest release: v0.4.0
 - Recent downloads: 65
 - All-time downloads: 65
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `crucible_ensemble` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_ensemble', "~> 0.3.0"}
+    {'crucible_ensemble', "~> 0.4.0"}
   ]
 end
 ```

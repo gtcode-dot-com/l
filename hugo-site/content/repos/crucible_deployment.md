@@ -1,10 +1,10 @@
 ---
-date: '2025-12-27'
+date: '2025-12-28'
 description: Model deployment orchestration with health checking and rollback
 docs_url: https://hexdocs.pm/crucible_deployment/
 hex_url: https://hex.pm/packages/crucible_deployment
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 8'
 - 'All-time downloads: 8'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Deployment
-version: 0.1.0
+version: 0.2.0
 ---
 
 ## About Crucible Deployment
@@ -24,7 +24,7 @@ Model deployment orchestration with health checking and rollback
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.2.0
 - Recent downloads: 8
 - All-time downloads: 8
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `crucible_deployment` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_deployment', "~> 0.1.0"}
+    {'crucible_deployment', "~> 0.2.0"}
   ]
 end
 ```

@@ -1,10 +1,10 @@
 ---
-date: '2025-12-27'
+date: '2025-12-28'
 description: Unified ML training infrastructure for Elixir/BEAM
 docs_url: https://hexdocs.pm/crucible_train/
 hex_url: https://hex.pm/packages/crucible_train
 highlights:
-- 'Latest release: v0.1.1'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 23'
 - 'All-time downloads: 23'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Train
-version: 0.1.1
+version: 0.2.0
 ---
 
 ## About Crucible Train
@@ -24,7 +24,7 @@ Unified ML training infrastructure for Elixir/BEAM
 
 ## Package Information
 
-- Latest release: v0.1.1
+- Latest release: v0.2.0
 - Recent downloads: 23
 - All-time downloads: 23
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `crucible_train` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_train', "~> 0.1.1"}
+    {'crucible_train', "~> 0.2.0"}
   ]
 end
 ```

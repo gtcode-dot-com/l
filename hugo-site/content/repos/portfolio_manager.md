@@ -1,5 +1,5 @@
 ---
-date: '2025-12-27'
+date: '2025-12-28'
 description: AI-native personal project intelligence system
 docs_url: https://hexdocs.pm/portfolio_manager/
 hex_url: https://hex.pm/packages/portfolio_manager

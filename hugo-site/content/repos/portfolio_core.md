@@ -1,5 +1,5 @@
 ---
-date: '2025-12-27'
+date: '2025-12-28'
 description: Hexagonal architecture core for building flexible RAG systems in Elixir.
 docs_url: https://hexdocs.pm/portfolio_core/
 hex_url: https://hex.pm/packages/portfolio_core

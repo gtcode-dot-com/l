@@ -1,10 +1,10 @@
 ---
-date: '2025-12-27'
+date: '2025-12-28'
 description: Model versioning, artifact storage, and lineage tracking for ML pipelines
 docs_url: https://hexdocs.pm/crucible_model_registry/
 hex_url: https://hex.pm/packages/crucible_model_registry
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 12'
 - 'All-time downloads: 12'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Model Registry
-version: 0.1.0
+version: 0.2.0
 ---
 
 ## About Crucible Model Registry
@@ -24,7 +24,7 @@ Model versioning, artifact storage, and lineage tracking for ML pipelines
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.2.0
 - Recent downloads: 12
 - All-time downloads: 12
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `crucible_model_registry` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_model_registry', "~> 0.1.0"}
+    {'crucible_model_registry', "~> 0.2.0"}
   ]
 end
 ```
