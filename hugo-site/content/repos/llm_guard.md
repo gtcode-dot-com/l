@@ -6,7 +6,7 @@ description: AI Firewall and guardrails for LLM-based Elixir applications. Provi
 docs_url: https://hexdocs.pm/llm_guard/
 hex_url: https://hex.pm/packages/llm_guard
 highlights:
-- 'Latest release: v0.2.1'
+- 'Latest release: v0.3.1'
 - 'Recent downloads: 120'
 - 'All-time downloads: 120'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Llm Guard
-version: 0.2.1
+version: 0.3.1
 ---
 
 ## About Llm Guard
@@ -26,7 +26,7 @@ AI Firewall and guardrails for LLM-based Elixir applications. Provides prompt in
 
 ## Package Information
 
-- Latest release: v0.2.1
+- Latest release: v0.3.1
 - Recent downloads: 120
 - All-time downloads: 120
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `llm_guard` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'llm_guard', "~> 0.2.1"}
+    {'llm_guard', "~> 0.3.1"}
   ]
 end
 ```

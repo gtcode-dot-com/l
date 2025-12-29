@@ -4,7 +4,7 @@ title = 'GTCode | Ekewaka Lono'
 theme = 'minimal'
 disableKinds = ['taxonomy', 'term']
 [pagination]
-  pagerSize = 10
+  pagerSize = 25
 canonifyURLs = false
 relativeURLs = true
 

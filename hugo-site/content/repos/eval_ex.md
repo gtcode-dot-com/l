@@ -5,7 +5,7 @@ description: Model evaluation harness for standardized benchmarking with semanti
 docs_url: https://hexdocs.pm/eval_ex/
 hex_url: https://hex.pm/packages/eval_ex
 highlights:
-- 'Latest release: v0.1.4'
+- 'Latest release: v0.1.5'
 - 'Recent downloads: 98'
 - 'All-time downloads: 98'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Eval Ex
-version: 0.1.4
+version: 0.1.5
 ---
 
 ## About Eval Ex
@@ -25,7 +25,7 @@ Model evaluation harness for standardized benchmarking with semantic similarity,
 
 ## Package Information
 
-- Latest release: v0.1.4
+- Latest release: v0.1.5
 - Recent downloads: 98
 - All-time downloads: 98
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `eval_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'eval_ex', "~> 0.1.4"}
+    {'eval_ex', "~> 0.1.5"}
   ]
 end
 ```

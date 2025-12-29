@@ -5,12 +5,12 @@ docs_url: https://hexdocs.pm/crucible_ir/
 hex_url: https://hex.pm/packages/crucible_ir
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 88'
-- 'All-time downloads: 88'
+- 'Recent downloads: 103'
+- 'All-time downloads: 103'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_ir
 slug: crucible_ir
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -25,8 +25,8 @@ Intermediate Representation for the Crucible ML reliability ecosystem
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 88
-- All-time downloads: 88
+- Recent downloads: 103
+- All-time downloads: 103
 - Maintainers: nshkrdotcom
 
 ## Installation

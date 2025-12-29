@@ -4,9 +4,9 @@ description: Feedback collection, drift detection, and active learning for ML pi
 docs_url: https://hexdocs.pm/crucible_feedback/
 hex_url: https://hex.pm/packages/crucible_feedback
 highlights:
-- 'Latest release: v0.1.0'
-- 'Recent downloads: 12'
-- 'All-time downloads: 12'
+- 'Latest release: v0.2.0'
+- 'Recent downloads: 14'
+- 'All-time downloads: 14'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_feedback
 slug: crucible_feedback
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Feedback
-version: 0.1.0
+version: 0.2.0
 ---
 
 ## About Crucible Feedback
@@ -24,9 +24,9 @@ Feedback collection, drift detection, and active learning for ML pipelines
 
 ## Package Information
 
-- Latest release: v0.1.0
-- Recent downloads: 12
-- All-time downloads: 12
+- Latest release: v0.2.0
+- Recent downloads: 14
+- All-time downloads: 14
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -36,7 +36,7 @@ Add `crucible_feedback` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_feedback', "~> 0.1.0"}
+    {'crucible_feedback', "~> 0.2.0"}
   ]
 end
 ```

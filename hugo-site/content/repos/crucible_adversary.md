@@ -6,7 +6,7 @@ description: Adversarial testing and robustness framework for AI models with 25 
 docs_url: https://hexdocs.pm/crucible_adversary/
 hex_url: https://hex.pm/packages/crucible_adversary
 highlights:
-- 'Latest release: v0.3.0'
+- 'Latest release: v0.4.0'
 - 'Recent downloads: 117'
 - 'All-time downloads: 117'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Adversary
-version: 0.3.0
+version: 0.4.0
 ---
 
 ## About Crucible Adversary
@@ -26,7 +26,7 @@ Adversarial testing and robustness framework for AI models with 25 attacks (char
 
 ## Package Information
 
-- Latest release: v0.3.0
+- Latest release: v0.4.0
 - Recent downloads: 117
 - All-time downloads: 117
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `crucible_adversary` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_adversary', "~> 0.3.0"}
+    {'crucible_adversary', "~> 0.4.0"}
   ]
 end
 ```

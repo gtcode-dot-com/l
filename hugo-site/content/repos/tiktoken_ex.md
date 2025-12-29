@@ -5,7 +5,7 @@ description: Pure-Elixir TikToken-style byte-level BPE tokenizer, with helpers f
 docs_url: https://hexdocs.pm/tiktoken_ex/
 hex_url: https://hex.pm/packages/tiktoken_ex
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 33'
 - 'All-time downloads: 33'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Tiktoken Ex
-version: 0.1.0
+version: 0.2.0
 ---
 
 ## About Tiktoken Ex
@@ -25,7 +25,7 @@ Pure-Elixir TikToken-style byte-level BPE tokenizer, with helpers for Kimi K2 en
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.2.0
 - Recent downloads: 33
 - All-time downloads: 33
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `tiktoken_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'tiktoken_ex', "~> 0.1.0"}
+    {'tiktoken_ex', "~> 0.2.0"}
   ]
 end
 ```

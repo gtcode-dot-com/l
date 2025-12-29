@@ -6,18 +6,18 @@ description: A modern Elixir client for Weaviate vector database with support fo
 docs_url: https://hexdocs.pm/weaviate_ex/
 hex_url: https://hex.pm/packages/weaviate_ex
 highlights:
-- 'Latest release: v0.2.0'
+- 'Latest release: v0.5.0'
 - 'Recent downloads: 86'
 - 'All-time downloads: 86'
 - 'Maintainers: nshkrdotcom'
-repo_url: https://github.com/yourusername/weaviate_ex
+repo_url: https://github.com/nshkrdotcom/weaviate_ex
 slug: weaviate_ex
 stage: Incubating
 tags:
 - MIT
 - Hex.pm
 title: Weaviate Ex
-version: 0.2.0
+version: 0.5.0
 ---
 
 ## About Weaviate Ex
@@ -26,7 +26,7 @@ A modern Elixir client for Weaviate vector database with support for collections
 
 ## Package Information
 
-- Latest release: v0.2.0
+- Latest release: v0.5.0
 - Recent downloads: 86
 - All-time downloads: 86
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `weaviate_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'weaviate_ex', "~> 0.2.0"}
+    {'weaviate_ex', "~> 0.5.0"}
   ]
 end
 ```
@@ -55,5 +55,5 @@ Full documentation is available at [https://hexdocs.pm/weaviate_ex/](https://hex
 
 ## Source Code
 
-The source code is available on GitHub: [https://github.com/yourusername/weaviate_ex](https://github.com/yourusername/weaviate_ex).
+The source code is available on GitHub: [https://github.com/nshkrdotcom/weaviate_ex](https://github.com/nshkrdotcom/weaviate_ex).
 

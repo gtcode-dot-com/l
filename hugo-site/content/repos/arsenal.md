@@ -6,7 +6,7 @@ docs_url: https://hexdocs.pm/arsenal/
 hex_url: https://hex.pm/packages/arsenal
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 26'
+- 'Recent downloads: 24'
 - 'All-time downloads: 1205'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/arsenal
@@ -26,7 +26,7 @@ A metaprogramming framework for building REST APIs from OTP operations with auto
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 26
+- Recent downloads: 24
 - All-time downloads: 1205
 - Maintainers: nshkrdotcom
 

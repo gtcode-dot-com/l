@@ -41,23 +41,20 @@
     {{ $english := where $ordered "Params.language" "en" }}
     {{ $filtered := cond (gt (len $english) 0) $english $ordered }}
     {{ $paginator := .Paginate $filtered }}
-    <div id="articles" class="news-list news-list-grid">
+    <div id="articles" class="article-list">
       {{ range $paginator.Pages }}
-        <article class="card news-list-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
-          {{ if or .Params.category .Params.language }}
-            <div class="card-meta" style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
-              {{ with .Params.category }}
-                <span class="badge badge-category">{{ . }}</span>
-              {{ end }}
-              {{ partial "language-badge.html" . }}
-            </div>
-          {{ end }}
+        <article class="article-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
+          <div class="article-header">
+            {{ with .Params.category }}
+              <span class="badge badge-category">{{ . }}</span>
+            {{ end }}
+            {{ partial "language-badge.html" . }}
+            <h2 class="article-title">
+              <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </h2>
+          </div>
 
-          <h2 class="card-title">
-            <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
-          </h2>
-
-          <div class="card-meta">
+          <div class="article-meta">
             {{ with .Params.author }}
               <span>By {{ . }}</span>
               {{ if or $.Date $.Params.source_url $.Params.feed }}<span>&bull;</span>{{ end }}
@@ -75,10 +72,8 @@
 
           {{ with .Summary }}
             {{ $clean := replace (replace . "" "") "" "" }}
-            <p class="card-summary">{{ $clean | plainify | truncate 200 }}</p>
+            <p class="article-summary">{{ $clean | plainify | truncate 200 }}</p>
           {{ end }}
-
-          <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
         </article>
       {{ end }}
     </div>

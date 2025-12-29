@@ -4,9 +4,9 @@ description: Model versioning, artifact storage, and lineage tracking for ML pip
 docs_url: https://hexdocs.pm/crucible_model_registry/
 hex_url: https://hex.pm/packages/crucible_model_registry
 highlights:
-- 'Latest release: v0.2.0'
-- 'Recent downloads: 23'
-- 'All-time downloads: 23'
+- 'Latest release: v0.3.1'
+- 'Recent downloads: 35'
+- 'All-time downloads: 35'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_model_registry
 slug: crucible_model_registry
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Model Registry
-version: 0.2.0
+version: 0.3.1
 ---
 
 ## About Crucible Model Registry
@@ -24,9 +24,9 @@ Model versioning, artifact storage, and lineage tracking for ML pipelines
 
 ## Package Information
 
-- Latest release: v0.2.0
-- Recent downloads: 23
-- All-time downloads: 23
+- Latest release: v0.3.1
+- Recent downloads: 35
+- All-time downloads: 35
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -36,7 +36,7 @@ Add `crucible_model_registry` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_model_registry', "~> 0.2.0"}
+    {'crucible_model_registry', "~> 0.3.1"}
   ]
 end
 ```

@@ -6,7 +6,7 @@ description: Explainable AI (XAI) tools for the Crucible framework. Includes LIM
 docs_url: https://hexdocs.pm/crucible_xai/
 hex_url: https://hex.pm/packages/crucible_xai
 highlights:
-- 'Latest release: v0.3.0'
+- 'Latest release: v0.4.0'
 - 'Recent downloads: 121'
 - 'All-time downloads: 121'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Xai
-version: 0.3.0
+version: 0.4.0
 ---
 
 ## About Crucible Xai
@@ -26,7 +26,7 @@ Explainable AI (XAI) tools for the Crucible framework. Includes LIME implementat
 
 ## Package Information
 
-- Latest release: v0.3.0
+- Latest release: v0.4.0
 - Recent downloads: 121
 - All-time downloads: 121
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `crucible_xai` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_xai', "~> 0.3.0"}
+    {'crucible_xai', "~> 0.4.0"}
   ]
 end
 ```
