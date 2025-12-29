@@ -1,5 +1,5 @@
 ---
-date: '2025-12-28'
+date: '2025-12-29'
 description: Model deployment orchestration with health checking and rollback
 docs_url: https://hexdocs.pm/crucible_deployment/
 hex_url: https://hex.pm/packages/crucible_deployment

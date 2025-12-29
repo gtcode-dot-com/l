@@ -1,5 +1,5 @@
 ---
-date: '2025-12-28'
+date: '2025-12-29'
 description: Compile-time generator for type-safe Elixir bindings to Python libraries
 docs_url: https://hexdocs.pm/snakebridge/
 hex_url: https://hex.pm/packages/snakebridge

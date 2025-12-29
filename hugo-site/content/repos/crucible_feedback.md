@@ -1,5 +1,5 @@
 ---
-date: '2025-12-28'
+date: '2025-12-29'
 description: Feedback collection, drift detection, and active learning for ML pipelines
 docs_url: https://hexdocs.pm/crucible_feedback/
 hex_url: https://hex.pm/packages/crucible_feedback
