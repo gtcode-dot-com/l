@@ -1,5 +1,5 @@
 ---
-date: '2025-12-29'
+date: '2025-12-30'
 description: Adversarial testing and robustness framework for AI models with 25 attacks
   (character/word/semantic perturbations, prompt injection, jailbreak, extraction,
   inversion), defenses…

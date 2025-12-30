@@ -1,5 +1,5 @@
 ---
-date: '2025-12-29'
+date: '2025-12-30'
 description: Configuration management with CLI parsing for Elixir
 docs_url: https://hexdocs.pm/chz_ex/
 hex_url: https://hex.pm/packages/chz_ex
