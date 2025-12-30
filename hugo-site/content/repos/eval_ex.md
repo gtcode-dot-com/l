@@ -6,12 +6,12 @@ docs_url: https://hexdocs.pm/eval_ex/
 hex_url: https://hex.pm/packages/eval_ex
 highlights:
 - 'Latest release: v0.1.5'
-- 'Recent downloads: 98'
-- 'All-time downloads: 98'
+- 'Recent downloads: 113'
+- 'All-time downloads: 113'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/eval_ex
 slug: eval_ex
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -26,8 +26,8 @@ Model evaluation harness for standardized benchmarking with semantic similarity,
 ## Package Information
 
 - Latest release: v0.1.5
-- Recent downloads: 98
-- All-time downloads: 98
+- Recent downloads: 113
+- All-time downloads: 113
 - Maintainers: nshkrdotcom
 
 ## Installation

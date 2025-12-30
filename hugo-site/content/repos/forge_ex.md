@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/forge_ex/
 hex_url: https://hex.pm/packages/forge_ex
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 54'
-- 'All-time downloads: 54'
+- 'Recent downloads: 58'
+- 'All-time downloads: 58'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/forge
 slug: forge_ex
@@ -27,8 +27,8 @@ Sample factory library for generating, transforming, and computing measurements 
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 54
-- All-time downloads: 54
+- Recent downloads: 58
+- All-time downloads: 58
 - Maintainers: nshkrdotcom
 
 ## Installation

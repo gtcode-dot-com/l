@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/datasets_ex/
 hex_url: https://hex.pm/packages/datasets_ex
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 23'
-- 'All-time downloads: 23'
+- 'Recent downloads: 25'
+- 'All-time downloads: 25'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/datasets_ex
 slug: datasets_ex
@@ -26,8 +26,8 @@ Dataset management library for ML experiments with support for GSM8K, HumanEval,
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 23
-- All-time downloads: 23
+- Recent downloads: 25
+- All-time downloads: 25
 - Maintainers: nshkrdotcom
 
 ## Installation

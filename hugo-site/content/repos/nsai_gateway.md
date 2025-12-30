@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/nsai_gateway/
 hex_url: https://hex.pm/packages/nsai_gateway
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 22'
-- 'All-time downloads: 22'
+- 'Recent downloads: 24'
+- 'All-time downloads: 24'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/nsai_gateway
 slug: nsai_gateway
@@ -26,8 +26,8 @@ Unified API Gateway for North Shore AI services - handles routing, authenticatio
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 22
-- All-time downloads: 22
+- Recent downloads: 24
+- All-time downloads: 24
 - Maintainers: nshkrdotcom
 
 ## Installation

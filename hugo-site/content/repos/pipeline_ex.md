@@ -7,7 +7,7 @@ hex_url: https://hex.pm/packages/pipeline_ex
 highlights:
 - 'Latest release: v0.1.1'
 - 'Recent downloads: 74'
-- 'All-time downloads: 123'
+- 'All-time downloads: 125'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/pipeline_ex
 slug: pipeline_ex
@@ -27,7 +27,7 @@ AI pipeline orchestration library for Elixir. Chain Claude and Gemini APIs with 
 
 - Latest release: v0.1.1
 - Recent downloads: 74
-- All-time downloads: 123
+- All-time downloads: 125
 - Maintainers: nshkrdotcom
 
 ## Installation
