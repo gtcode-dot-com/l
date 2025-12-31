@@ -1,12 +1,12 @@
 ---
-date: '2025-12-30'
+date: '2025-12-31'
 description: A modern Elixir client for Weaviate vector database with support for
   collections, objects, batch operations, GraphQL queries, and vector search. Includes
   health checks and…
 docs_url: https://hexdocs.pm/weaviate_ex/
 hex_url: https://hex.pm/packages/weaviate_ex
 highlights:
-- 'Latest release: v0.7.2'
+- 'Latest release: v0.7.4'
 - 'Recent downloads: 117'
 - 'All-time downloads: 117'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Weaviate Ex
-version: 0.7.2
+version: 0.7.4
 ---
 
 ## About Weaviate Ex
@@ -26,7 +26,7 @@ A modern Elixir client for Weaviate vector database with support for collections
 
 ## Package Information
 
-- Latest release: v0.7.2
+- Latest release: v0.7.4
 - Recent downloads: 117
 - All-time downloads: 117
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `weaviate_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'weaviate_ex', "~> 0.7.2"}
+    {'weaviate_ex', "~> 0.7.4"}
   ]
 end
 ```

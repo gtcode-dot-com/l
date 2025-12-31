@@ -1,5 +1,5 @@
 ---
-date: '2025-12-30'
+date: '2025-12-31'
 description: Structured causal reasoning chain logging for LLMs. Captures decision-making
   processes with cryptographic verification for transparency and debugging.
 docs_url: https://hexdocs.pm/crucible_trace/

@@ -1,5 +1,5 @@
 ---
-date: '2025-12-30'
+date: '2025-12-31'
 description: Model versioning, artifact storage, and lineage tracking for ML pipelines
 docs_url: https://hexdocs.pm/crucible_model_registry/
 hex_url: https://hex.pm/packages/crucible_model_registry

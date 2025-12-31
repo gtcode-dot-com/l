@@ -1,5 +1,5 @@
 ---
-date: '2025-12-30'
+date: '2025-12-31'
 description: Unified API Gateway for North Shore AI services - handles routing, authentication,
   rate limiting, and circuit breaking
 docs_url: https://hexdocs.pm/nsai_gateway/
