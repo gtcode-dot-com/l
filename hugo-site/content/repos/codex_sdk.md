@@ -6,9 +6,9 @@ description: Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete,
 docs_url: https://hexdocs.pm/codex_sdk/
 hex_url: https://hex.pm/packages/codex_sdk
 highlights:
-- 'Latest release: v0.4.4'
-- 'Recent downloads: 363'
-- 'All-time downloads: 363'
+- 'Latest release: v0.4.5'
+- 'Recent downloads: 391'
+- 'All-time downloads: 391'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/codex_sdk
 slug: codex_sdk
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Codex Sdk
-version: 0.4.4
+version: 0.4.5
 ---
 
 ## About Codex Sdk
@@ -26,9 +26,9 @@ Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-r
 
 ## Package Information
 
-- Latest release: v0.4.4
-- Recent downloads: 363
-- All-time downloads: 363
+- Latest release: v0.4.5
+- Recent downloads: 391
+- All-time downloads: 391
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -38,7 +38,7 @@ Add `codex_sdk` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'codex_sdk', "~> 0.4.4"}
+    {'codex_sdk', "~> 0.4.5"}
   ]
 end
 ```

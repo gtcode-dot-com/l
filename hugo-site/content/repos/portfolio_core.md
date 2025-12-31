@@ -4,9 +4,9 @@ description: Hexagonal architecture core for building flexible RAG systems in El
 docs_url: https://hexdocs.pm/portfolio_core/
 hex_url: https://hex.pm/packages/portfolio_core
 highlights:
-- 'Latest release: v0.3.0'
-- 'Recent downloads: 69'
-- 'All-time downloads: 69'
+- 'Latest release: v0.3.1'
+- 'Recent downloads: 79'
+- 'All-time downloads: 79'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_core
 slug: portfolio_core
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Portfolio Core
-version: 0.3.0
+version: 0.3.1
 ---
 
 ## About Portfolio Core
@@ -24,9 +24,9 @@ Hexagonal architecture core for building flexible RAG systems in Elixir.
 
 ## Package Information
 
-- Latest release: v0.3.0
-- Recent downloads: 69
-- All-time downloads: 69
+- Latest release: v0.3.1
+- Recent downloads: 79
+- All-time downloads: 79
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -36,7 +36,7 @@ Add `portfolio_core` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'portfolio_core', "~> 0.3.0"}
+    {'portfolio_core', "~> 0.3.1"}
   ]
 end
 ```

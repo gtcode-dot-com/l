@@ -5,9 +5,9 @@ description: Application layer for Portfolio ecosystem providing RAG workflows, 
 docs_url: https://hexdocs.pm/portfolio_manager/
 hex_url: https://hex.pm/packages/portfolio_manager
 highlights:
-- 'Latest release: v0.3.0'
-- 'Recent downloads: 51'
-- 'All-time downloads: 51'
+- 'Latest release: v0.3.1'
+- 'Recent downloads: 60'
+- 'All-time downloads: 60'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_manager
 slug: portfolio_manager
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Portfolio Manager
-version: 0.3.0
+version: 0.3.1
 ---
 
 ## About Portfolio Manager
@@ -25,9 +25,9 @@ Application layer for Portfolio ecosystem providing RAG workflows, graph analysi
 
 ## Package Information
 
-- Latest release: v0.3.0
-- Recent downloads: 51
-- All-time downloads: 51
+- Latest release: v0.3.1
+- Recent downloads: 60
+- All-time downloads: 60
 - Maintainers: nshkrdotcom
 
 ## Installation
@@ -37,7 +37,7 @@ Add `portfolio_manager` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'portfolio_manager', "~> 0.3.0"}
+    {'portfolio_manager', "~> 0.3.1"}
   ]
 end
 ```
