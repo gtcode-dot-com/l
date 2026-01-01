@@ -1,5 +1,5 @@
 ---
-date: '2025-12-31'
+date: '2026-01-01'
 description: Code Intelligence Platform built on the Portfolio RAG ecosystem. Repository
   analysis, semantic code search, dependency graphs, and AI-powered code understanding
   with multi-…

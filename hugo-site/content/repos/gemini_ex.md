@@ -1,5 +1,5 @@
 ---
-date: '2025-12-31'
+date: '2026-01-01'
 description: Comprehensive Elixir client for Google's Gemini AI API with dual authentication,
   embeddings with MRL, streaming, type safety, and built-in telemetry for production
   applications.

@@ -137,10 +137,10 @@
 - slug: "claude_agent_sdk"
   name: "Claude Agent Sdk"
   stage: "Active"
-  version: "0.7.2"
+  version: "0.7.3"
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
-    - "Latest release: v0.7.2"
+    - "Latest release: v0.7.3"
     - "Recent downloads: 692"
     - "All-time downloads: 692"
     - "Maintainers: nshkrdotcom"
