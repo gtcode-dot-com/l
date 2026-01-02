@@ -1,5 +1,5 @@
 ---
-date: '2026-01-01'
+date: '2026-01-02'
 description: Code Intelligence Platform built on the Portfolio RAG ecosystem. Repository
   analysis, semantic code search, dependency graphs, and AI-powered code understanding
   with multi-…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/portfolio_coder/
 hex_url: https://hex.pm/packages/portfolio_coder
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 17'
-- 'All-time downloads: 17'
+- 'Recent downloads: 19'
+- 'All-time downloads: 19'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_coder
 slug: portfolio_coder
@@ -27,8 +27,8 @@ Code Intelligence Platform built on the Portfolio RAG ecosystem. Repository anal
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 17
-- All-time downloads: 17
+- Recent downloads: 19
+- All-time downloads: 19
 - Maintainers: nshkrdotcom
 
 ## Installation

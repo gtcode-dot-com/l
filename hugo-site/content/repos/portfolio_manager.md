@@ -1,13 +1,13 @@
 ---
-date: '2026-01-01'
+date: '2026-01-02'
 description: Application layer for Portfolio ecosystem providing RAG workflows, graph
   analysis, domain registries, and CLI tools built on portfolio_core and portfolio_index.
 docs_url: https://hexdocs.pm/portfolio_manager/
 hex_url: https://hex.pm/packages/portfolio_manager
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 60'
-- 'All-time downloads: 60'
+- 'Recent downloads: 73'
+- 'All-time downloads: 73'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_manager
 slug: portfolio_manager
@@ -26,8 +26,8 @@ Application layer for Portfolio ecosystem providing RAG workflows, graph analysi
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 60
-- All-time downloads: 60
+- Recent downloads: 73
+- All-time downloads: 73
 - Maintainers: nshkrdotcom
 
 ## Installation

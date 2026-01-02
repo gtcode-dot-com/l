@@ -1,13 +1,13 @@
 ---
-date: '2026-01-01'
+date: '2026-01-02'
 description: 'CrucibleFramework: A thin orchestration layer for experiment pipelines.
   Provides pipeline execution, stage behaviour, and optional persistence.'
 docs_url: https://hexdocs.pm/crucible_framework/
 hex_url: https://hex.pm/packages/crucible_framework
 highlights:
 - 'Latest release: v0.5.2'
-- 'Recent downloads: 328'
-- 'All-time downloads: 328'
+- 'Recent downloads: 329'
+- 'All-time downloads: 329'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_framework
 slug: crucible_framework
@@ -26,8 +26,8 @@ CrucibleFramework: A thin orchestration layer for experiment pipelines. Provides
 ## Package Information
 
 - Latest release: v0.5.2
-- Recent downloads: 328
-- All-time downloads: 328
+- Recent downloads: 329
+- All-time downloads: 329
 - Maintainers: nshkrdotcom
 
 ## Installation

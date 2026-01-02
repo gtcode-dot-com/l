@@ -1,13 +1,13 @@
 ---
-date: '2026-01-01'
+date: '2026-01-02'
 description: Production adapters and pipelines for PortfolioCore. Vector stores, graph
   stores, embedders, Broadway pipelines, and advanced RAG strategies.
 docs_url: https://hexdocs.pm/portfolio_index/
 hex_url: https://hex.pm/packages/portfolio_index
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 70'
-- 'All-time downloads: 70'
+- 'Recent downloads: 99'
+- 'All-time downloads: 99'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_index
 slug: portfolio_index
@@ -26,8 +26,8 @@ Production adapters and pipelines for PortfolioCore. Vector stores, graph stores
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 70
-- All-time downloads: 70
+- Recent downloads: 99
+- All-time downloads: 99
 - Maintainers: nshkrdotcom
 
 ## Installation

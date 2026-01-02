@@ -1,5 +1,5 @@
 ---
-date: '2026-01-01'
+date: '2026-01-02'
 description: A Phoenix LiveView performance monitoring dashboard for tracking slow
   endpoints and database queries during development.
 docs_url: https://hexdocs.pm/elixir_dashboard/
