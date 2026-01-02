@@ -8,7 +8,7 @@ hex_url: https://hex.pm/packages/dspex
 highlights:
 - 'Latest release: v0.2.1'
 - 'Recent downloads: 124'
-- 'All-time downloads: 258'
+- 'All-time downloads: 260'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/dspex
 slug: dspex
@@ -28,7 +28,7 @@ DSPex: Native Elixir implementation of DSPy with Python integration via Snakepit
 
 - Latest release: v0.2.1
 - Recent downloads: 124
-- All-time downloads: 258
+- All-time downloads: 260
 - Maintainers: nshkrdotcom
 
 ## Installation
