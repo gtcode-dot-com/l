@@ -1,12 +1,10 @@
 ---
-date: '2026-01-02'
-description: 'DSPex: Native Elixir implementation of DSPy with Python integration
-  via Snakepit. Enables gradual migration from Python DSPy to native Elixir implementations
-  while supporting…'
+date: '2026-01-03'
+description: DSPy for Elixir via SnakeBridge - Declarative LLM programming
 docs_url: https://hexdocs.pm/dspex/
 hex_url: https://hex.pm/packages/dspex
 highlights:
-- 'Latest release: v0.2.1'
+- 'Latest release: v0.3.0'
 - 'Recent downloads: 124'
 - 'All-time downloads: 260'
 - 'Maintainers: nshkrdotcom'
@@ -17,16 +15,16 @@ tags:
 - MIT
 - Hex.pm
 title: Dspex
-version: 0.2.1
+version: 0.3.0
 ---
 
 ## About Dspex
 
-DSPex: Native Elixir implementation of DSPy with Python integration via Snakepit. Enables gradual migration from Python DSPy to native Elixir implementations while supporting…
+DSPy for Elixir via SnakeBridge - Declarative LLM programming
 
 ## Package Information
 
-- Latest release: v0.2.1
+- Latest release: v0.3.0
 - Recent downloads: 124
 - All-time downloads: 260
 - Maintainers: nshkrdotcom
@@ -38,7 +36,7 @@ Add `dspex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'dspex', "~> 0.2.1"}
+    {'dspex', "~> 0.3.0"}
   ]
 end
 ```
