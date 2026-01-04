@@ -1,12 +1,12 @@
 ---
-date: '2026-01-03'
+date: '2026-01-04'
 description: Compile-time generator for type-safe Elixir bindings to Python libraries
 docs_url: https://hexdocs.pm/snakebridge/
 hex_url: https://hex.pm/packages/snakebridge
 highlights:
 - 'Latest release: v0.8.0'
-- 'Recent downloads: 422'
-- 'All-time downloads: 422'
+- 'Recent downloads: 475'
+- 'All-time downloads: 475'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakebridge
 slug: snakebridge
@@ -25,8 +25,8 @@ Compile-time generator for type-safe Elixir bindings to Python libraries
 ## Package Information
 
 - Latest release: v0.8.0
-- Recent downloads: 422
-- All-time downloads: 422
+- Recent downloads: 475
+- All-time downloads: 475
 - Maintainers: nshkrdotcom
 
 ## Installation

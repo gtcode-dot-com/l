@@ -1,12 +1,12 @@
 ---
-date: '2026-01-03'
+date: '2026-01-04'
 description: The definitive CI/CD platform for AI Quality.
 docs_url: https://hexdocs.pm/assessor/
 hex_url: https://hex.pm/packages/assessor
 highlights:
 - 'Latest release: v0.0.0'
-- 'Recent downloads: 14'
-- 'All-time downloads: 363'
+- 'Recent downloads: 16'
+- 'All-time downloads: 365'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/Assessor
 slug: assessor
@@ -25,8 +25,8 @@ The definitive CI/CD platform for AI Quality.
 ## Package Information
 
 - Latest release: v0.0.0
-- Recent downloads: 14
-- All-time downloads: 363
+- Recent downloads: 16
+- All-time downloads: 365
 - Maintainers: nshkrdotcom
 
 ## Installation

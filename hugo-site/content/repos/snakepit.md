@@ -1,5 +1,5 @@
 ---
-date: '2026-01-03'
+date: '2026-01-04'
 description: High-performance pooler and session manager for external language integrations.
   Supports Python, Node.js, Ruby, and more with gRPC streaming, session management,
   and production-…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/snakepit/
 hex_url: https://hex.pm/packages/snakepit
 highlights:
 - 'Latest release: v0.9.0'
-- 'Recent downloads: 1200'
-- 'All-time downloads: 1602'
+- 'Recent downloads: 1242'
+- 'All-time downloads: 1644'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakepit
 slug: snakepit
@@ -27,8 +27,8 @@ High-performance pooler and session manager for external language integrations. 
 ## Package Information
 
 - Latest release: v0.9.0
-- Recent downloads: 1200
-- All-time downloads: 1602
+- Recent downloads: 1242
+- All-time downloads: 1644
 - Maintainers: nshkrdotcom
 
 ## Installation

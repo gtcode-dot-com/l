@@ -1,12 +1,12 @@
 ---
-date: '2026-01-03'
+date: '2026-01-04'
 description: Hexagonal architecture core for building flexible RAG systems in Elixir.
 docs_url: https://hexdocs.pm/portfolio_core/
 hex_url: https://hex.pm/packages/portfolio_core
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 109'
-- 'All-time downloads: 109'
+- 'Recent downloads: 110'
+- 'All-time downloads: 110'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_core
 slug: portfolio_core
@@ -25,8 +25,8 @@ Hexagonal architecture core for building flexible RAG systems in Elixir.
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 109
-- All-time downloads: 109
+- Recent downloads: 110
+- All-time downloads: 110
 - Maintainers: nshkrdotcom
 
 ## Installation

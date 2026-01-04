@@ -23,6 +23,8 @@
 /repos/claude_code_sdk/ https://hex.pm/packages/claude_code_sdk 302
 /repos/codex_sdk https://hex.pm/packages/codex_sdk 302
 /repos/codex_sdk/ https://hex.pm/packages/codex_sdk 302
+/repos/command https://hex.pm/packages/command 302
+/repos/command/ https://hex.pm/packages/command 302
 /repos/crucible_adversary https://hex.pm/packages/crucible_adversary 302
 /repos/crucible_adversary/ https://hex.pm/packages/crucible_adversary 302
 /repos/crucible_bench https://hex.pm/packages/crucible_bench 302

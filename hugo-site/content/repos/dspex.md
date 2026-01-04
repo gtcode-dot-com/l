@@ -1,12 +1,12 @@
 ---
-date: '2026-01-03'
+date: '2026-01-04'
 description: DSPy for Elixir via SnakeBridge - Declarative LLM programming
 docs_url: https://hexdocs.pm/dspex/
 hex_url: https://hex.pm/packages/dspex
 highlights:
 - 'Latest release: v0.3.0'
-- 'Recent downloads: 124'
-- 'All-time downloads: 260'
+- 'Recent downloads: 132'
+- 'All-time downloads: 268'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/dspex
 slug: dspex
@@ -25,8 +25,8 @@ DSPy for Elixir via SnakeBridge - Declarative LLM programming
 ## Package Information
 
 - Latest release: v0.3.0
-- Recent downloads: 124
-- All-time downloads: 260
+- Recent downloads: 132
+- All-time downloads: 268
 - Maintainers: nshkrdotcom
 
 ## Installation
