@@ -1,5 +1,5 @@
 ---
-date: '2026-01-04'
+date: '2026-01-05'
 description: Unified ML training infrastructure for Elixir/BEAM
 docs_url: https://hexdocs.pm/crucible_train/
 hex_url: https://hex.pm/packages/crucible_train

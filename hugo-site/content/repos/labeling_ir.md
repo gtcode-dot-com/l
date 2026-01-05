@@ -1,5 +1,5 @@
 ---
-date: '2026-01-04'
+date: '2026-01-05'
 description: Shared IR structs for Forge, Anvil, Ingot, and external clients; typed
   datasets, samples, assignments, labels, artifacts, and evaluation runs for labeling
   workflows.
