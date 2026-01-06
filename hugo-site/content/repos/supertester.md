@@ -1,12 +1,12 @@
 ---
-date: '2026-01-05'
+date: '2026-01-06'
 description: Battle-hardened OTP testing toolkit with chaos engineering, performance
   testing, and zero-sleep synchronization patterns for building robust Elixir applications.
 docs_url: https://hexdocs.pm/supertester/
 hex_url: https://hex.pm/packages/supertester
 highlights:
-- 'Latest release: v0.4.0'
-- 'Recent downloads: 379'
+- 'Latest release: v0.5.0'
+- 'Recent downloads: 371'
 - 'All-time downloads: 444'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/supertester
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Supertester
-version: 0.4.0
+version: 0.5.0
 ---
 
 ## About Supertester
@@ -25,8 +25,8 @@ Battle-hardened OTP testing toolkit with chaos engineering, performance testing,
 
 ## Package Information
 
-- Latest release: v0.4.0
-- Recent downloads: 379
+- Latest release: v0.5.0
+- Recent downloads: 371
 - All-time downloads: 444
 - Maintainers: nshkrdotcom
 
@@ -37,7 +37,7 @@ Add `supertester` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'supertester', "~> 0.4.0"}
+    {'supertester', "~> 0.5.0"}
   ]
 end
 ```

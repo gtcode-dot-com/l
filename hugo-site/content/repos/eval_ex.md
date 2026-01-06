@@ -1,13 +1,13 @@
 ---
-date: '2026-01-05'
+date: '2026-01-06'
 description: Model evaluation harness for standardized benchmarking with semantic
   similarity, exact match, and custom metrics.
 docs_url: https://hexdocs.pm/eval_ex/
 hex_url: https://hex.pm/packages/eval_ex
 highlights:
 - 'Latest release: v0.1.5'
-- 'Recent downloads: 123'
-- 'All-time downloads: 123'
+- 'Recent downloads: 125'
+- 'All-time downloads: 125'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/eval_ex
 slug: eval_ex
@@ -26,8 +26,8 @@ Model evaluation harness for standardized benchmarking with semantic similarity,
 ## Package Information
 
 - Latest release: v0.1.5
-- Recent downloads: 123
-- All-time downloads: 123
+- Recent downloads: 125
+- All-time downloads: 125
 - Maintainers: nshkrdotcom
 
 ## Installation

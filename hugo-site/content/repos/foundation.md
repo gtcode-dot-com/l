@@ -1,5 +1,5 @@
 ---
-date: '2026-01-05'
+date: '2026-01-06'
 description: A comprehensive Elixir infrastructure and observability library providing
   essential services for building robust, scalable applications.
 docs_url: https://hexdocs.pm/foundation/

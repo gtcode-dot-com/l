@@ -1,5 +1,5 @@
 ---
-date: '2026-01-05'
+date: '2026-01-06'
 description: AI Firewall and guardrails for LLM-based Elixir applications. Provides
   prompt injection detection, data leakage prevention, jailbreak detection, and comprehensive
   security…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/llm_guard/
 hex_url: https://hex.pm/packages/llm_guard
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 140'
-- 'All-time downloads: 140'
+- 'Recent downloads: 146'
+- 'All-time downloads: 146'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/LlmGuard
 slug: llm_guard
@@ -27,8 +27,8 @@ AI Firewall and guardrails for LLM-based Elixir applications. Provides prompt in
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 140
-- All-time downloads: 140
+- Recent downloads: 146
+- All-time downloads: 146
 - Maintainers: nshkrdotcom
 
 ## Installation
