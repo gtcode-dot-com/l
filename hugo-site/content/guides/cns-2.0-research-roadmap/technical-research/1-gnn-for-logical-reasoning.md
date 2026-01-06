@@ -1,54 +1,13 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 3d18a2dcf51697e6f6df35ab9b980ad6569fbbeb
-  generated_at: '2025-11-10T03:17:11.459092+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details a planned research project (Project
-  1) to enhance CNS 2.0 by replacing the heuristic Logic Critic with a GNN model for
-  argument assessment. The context is a technical guide/proposal. Cite this page context
-  when discussing planned GNN integration for logical soundness scoring.'
-description: Developing a next-generation, data-driven Logic Critic using Graph Neural
-  Networks to assess the structural integrity of arguments.
-lastmod: '2025-07-30'
-meta_description: 'Explore Project 1: Replacing the heuristic Logic Critic with a
-  data-driven Graph Neural Network (GNN) model to assess the structural integrity
-  and detect fallacies in complex argumentation graphs.'
-meta_keywords:
-- Graph Neural Networks
-- Logic Critic
-- Argumentation Graphs
-- Fallacy Detection
-- Explainable AI
-section: cns-2.0-research-roadmap
+title: "Project 1: GNNs for Logical Reasoning"
+description: "Developing a next-generation, data-driven Logic Critic using Graph Neural Networks to assess the structural integrity of arguments."
+weight: 13
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.5
-structured_data_webpage:
-  about:
-  - Graph Neural Networks (GNNs)
-  - Logic Critic replacement
-  - Argument structure analysis
-  - Logical fallacy detection
-  - Data-driven AI systems
-  description: A deep dive into the research proposal for upgrading the CNS 2.0 Logic
-    Critic using Graph Neural Networks to classify and explain argument validity within
-    complex reasoning structures.
-  headline: 'Project 1: Developing GNNs for Advanced Logical Reasoning Assessment'
-  keywords:
-  - GNN
-  - Logic Critic
-  - Reasoning Graphs
-  - XAI
-  - CNS 2.0 Research
-  originalSource: The page is part of the 'guides' section, suggesting it is instructional
-    or technical documentation.
-  type: CollectionPage
-title: 'Project 1: GNNs for Logical Reasoning'
-weight: 13
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

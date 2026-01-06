@@ -1,53 +1,13 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 4253c19c9097298be25b31c56286becfe25df639
-  generated_at: '2025-11-10T03:17:01.847724+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details Project 2 concerning adversarial
-  robustness testing of the CNS 2.0 system. Use the context to answer specific questions
-  about threat modeling, attack vectors (like subtle evidence manipulation), and defense
-  development within the ''Evaluation and Validation'' thrust. Cite this document
-  as a key project outline.'
-description: Conducting a rigorous security assessment of the CNS 2.0 system to test
-  its resilience against sophisticated adversarial attacks and develop novel defenses.
-lastmod: '2025-07-30'
-meta_description: 'Explore Project 2: Adversarial Robustness & Security. Learn how
-  CNS 2.0 is rigorously tested against sophisticated adversarial attacks to develop
-  novel defenses and ensure system trustworthiness.'
-meta_keywords:
-- Adversarial Robustness
-- System Security
-- CNS 2.0
-- Red Team Attack
-- Defense Mechanisms
-section: cns-2.0-research-roadmap
+title: "Project 2: Adversarial Robustness & Security"
+description: "Conducting a rigorous security assessment of the CNS 2.0 system to test its resilience against sophisticated adversarial attacks and develop novel defenses."
+weight: 18
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.6
-structured_data_webpage:
-  about:
-  - Adversarial Robustness
-  - System Security Assessment
-  - CNS 2.0 Hardening
-  - Red Team Methodologies
-  - Defense Mechanism Development
-  description: A detailed outline of the research project dedicated to rigorously
-    testing the resilience of the CNS 2.0 system against malicious adversarial attacks
-    and developing corresponding defense mechanisms.
-  headline: 'Project 2: Adversarial Robustness & Security Assessment of CNS 2.0'
-  keywords:
-  - Adversarial Attacks
-  - System Integrity
-  - Threat Modeling
-  - CNS 2.0 Security
-  originalSource: guides/project-2-adversarial-robustness-security
-  type: WebPage
-title: 'Project 2: Adversarial Robustness & Security'
-weight: 18
+  filename: sitemap.xml  
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

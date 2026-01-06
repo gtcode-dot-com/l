@@ -1,51 +1,12 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 88bf676adeb8dcee3866e409df15edc445820f5d
-  generated_at: '2025-11-10T03:17:31.557458+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details Part 3 of the Quick Start guide,
-  focusing on invoking the synthesis engine. Context must be cited as ''Quick Start
-  Tutorial, Part 3: Running the Synthesis''. Key concepts include Trust Score initialization,
-  CScore calculation via the ChiralPairDetector, and final generation by the GenerativeSynthesisEngine.'
-description: How to use the system to generate a new theory from the two conflicting
-  SNOs.
-lastmod: '2025-07-30'
-meta_description: 'Execute the core step of the tutorial: run the Generative Synthesis
-  Engine on two conflicting Structured Narrative Objects (SNOs) to produce a new,
-  candidate theory.'
-meta_keywords:
-- Generative Synthesis Engine
-- SNO conflict resolution
-- Chiral Pair Detector
-- Candidate SNO generation
-- Theory synthesis
+title: "Part 3: Running the Synthesis"
+description: "How to use the system to generate a new theory from the two conflicting SNOs."
+weight: 4
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.7
-structured_data_webpage:
-  about:
-  - Generative Synthesis
-  - Structured Narrative Objects (SNOs)
-  - Theory Generation
-  - Conflict Resolution in Knowledge Systems
-  description: A practical guide demonstrating how to use the Generative Synthesis
-    Engine to resolve conflicting Structured Narrative Objects (SNOs) and output a
-    novel candidate theory.
-  headline: 'Part 3: Running the Synthesis Engine'
-  keywords:
-  - Synthesis Engine
-  - Trust Score
-  - CScore
-  - Candidate Theory
-  - Quick Start
-  originalSource: guides
-  type: CollectionPage
-title: 'Part 3: Running the Synthesis'
-weight: 4
+  filename: sitemap.xml
 ---
 
 <!--

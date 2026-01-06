@@ -1,53 +1,14 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: abd1d650caca6087bd561ca92ef8f8cb03582ceb
-  generated_at: '2025-11-10T03:16:50.391831+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is the canonical annotated bibliography for
-  the CNS 2.0 project. Cite this list when referencing the theoretical inspirations
-  (e.g., Dung''s AAFs, Walton''s schemes) for the project''s components like the ReasoningGraph
-  or LogicCritic. The context establishes the intellectual heritage.'
-description: A curated list of the foundational papers and research that underpin
-  the Chiral Narrative Synthesis 2.0 project.
-lastmod: '2025-07-30'
-meta_description: Discover the foundational research papers underpinning the Chiral
-  Narrative Synthesis (CNS) 2.0 project, covering Argumentation Mining, Knowledge
-  Graphs, and Computational Dialectics.
-meta_keywords:
-- Annotated Bibliography
-- CNS 2.0
-- Argumentation Mining
-- Knowledge Graphs
-- Computational Dialectics
-section: cns-2.0-research-roadmap
+title: "Annotated Bibliography"
+description: "A curated list of the foundational papers and research that underpin the Chiral Narrative Synthesis 2.0 project."
+meta_keywords: "computational argumentation bibliography, AI reasoning research papers, knowledge synthesis literature"
+weight: 3
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.6
-structured_data_webpage:
-  about:
-  - Annotated Bibliography
-  - Chiral Narrative Synthesis 2.0
-  - Foundational Research
-  - Argumentation Mining
-  - Computational Dialectics
-  description: A curated list of foundational papers and scholarly works in Argumentation
-    Mining, Multi-Agent Systems, and Knowledge Representation that inform the CNS
-    2.0 framework.
-  headline: 'Annotated Bibliography: Foundational Research for Chiral Narrative Synthesis
-    2.0'
-  keywords:
-  - Dung 1995
-  - Argumentation Frameworks
-  - Knowledge Graphs
-  - Research Roadmap
-  originalSource: null
-  type: CollectionPage
-title: Annotated Bibliography
-weight: 3
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

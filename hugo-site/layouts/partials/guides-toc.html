@@ -1,9 +1,0 @@
-{{- $toc := .TableOfContents -}}
-{{- $trimmed := strings.Trim $toc " \n\r\t" -}}
-{{- if and $toc (gt (len $trimmed) 0) -}}
-  <aside class="guides-toc" aria-label="On this page">
-    <p class="guides-toc-label">On this page</p>
-    {{- $sanitized := replace $toc "<ul>" "<ul class='guides-toc-list'>" -}}
-    {{ $sanitized | safeHTML }}
-  </aside>
-{{- end -}}

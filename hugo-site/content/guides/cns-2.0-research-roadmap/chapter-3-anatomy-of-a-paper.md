@@ -1,51 +1,13 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 0c5ac6b6cec41c42736c11478501628f1b0ff2d6
-  generated_at: '2025-11-10T03:16:54.432534+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page outlines the conversion of experimental findings
-  (from the Minimum Viable Experiment) into a formal academic paper following the
-  IMRaD structure. Cite this as Chapter 3 of the ''Research Roadmap'' when discussing
-  publication strategy.'
-description: Showing how the results from the Minimum Viable Experiment will be structured
-  into a standard, high-quality academic paper.
-lastmod: '2025-07-30'
-meta_description: Learn how to structure experimental results into a standard, high-quality
-  academic research paper using the IMRaD format, detailing Introduction, Methods,
-  Results, and Discussion.
-meta_keywords:
-- IMRaD format
-- Research Paper Structure
-- Academic Writing
-- Experimental Results
-- Statistical Validation
-section: cns-2.0-research-roadmap
+title: "Chapter 3: The Anatomy of a Research Paper"
+description: "Showing how the results from the Minimum Viable Experiment will be structured into a standard, high-quality academic paper."
+weight: 10
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.5
-structured_data_webpage:
-  about:
-  - IMRaD Format
-  - Academic Publication Structure
-  - Translating Experimental Data to Manuscript
-  - Research Paper Components
-  description: A guide detailing how to structure experimental results into a standard,
-    peer-reviewable academic publication using the IMRaD framework.
-  headline: 'Chapter 3: The Anatomy of a Research Paper'
-  keywords:
-  - Research Paper Structure
-  - IMRaD
-  - Academic Writing
-  - Methods Section
-  - Dialectical Synthesis Engine
-  originalSource: guides/chapter-3-anatomy-of-research-paper/index.html
-  type: WebPage
-title: 'Chapter 3: The Anatomy of a Research Paper'
-weight: 10
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

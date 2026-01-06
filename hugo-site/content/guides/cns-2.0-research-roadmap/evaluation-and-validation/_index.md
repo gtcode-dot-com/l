@@ -1,53 +1,14 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 3d1caebf109ea2eddac8f6b8786a120813dd00c4
-  generated_at: '2025-11-10T03:17:03.974103+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is the section index page for the ''Evaluation
-  and Validation'' research thrust of the CNS 2.0 framework. Use the content to contextualize
-  subsequent pages detailing specific validation protocols (e.g., Longitudinal Studies,
-  Adversarial Robustness). Cite this page as the top-level guide for validation research.'
-description: A research program for rigorously assessing the performance, robustness,
-  and utility of the CNS 2.0 system in diverse, real-world contexts.
-lastmod: '2025-07-30'
-meta_description: Explore the comprehensive research program for rigorously assessing
-  the performance, robustness, and utility of the CNS 2.0 system through statistical
-  validation, longitudinal studies, and adversarial testing protocols.
-meta_keywords:
-- System Validation
-- CNS 2.0 Evaluation
-- Adversarial Robustness
-- Longitudinal Studies
-- Performance Metrics
-section: cns-2.0-research-roadmap
+title: "Evaluation and Validation Research"
+description: "A research program for rigorously assessing the performance, robustness, and utility of the CNS 2.0 system in diverse, real-world contexts."
+meta_keywords: "AI system validation, AI robustness testing, human-AI collaboration research, longitudinal AI studies"
+weight: 16
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.5
-structured_data_webpage:
-  about:
-  - System Validation
-  - Performance Evaluation
-  - Adversarial Robustness
-  - Longitudinal Studies
-  - CNS 2.0 Framework
-  description: A research program establishing comprehensive validation protocols,
-    performance assessments, and robustness testing for the CNS 2.0 system across
-    diverse real-world contexts.
-  headline: Evaluation and Validation Research Program for CNS 2.0
-  keywords:
-  - Validation
-  - Evaluation
-  - Robustness
-  - CNS 2.0
-  - Research Protocols
-  originalSource: null
-  type: CollectionPage
-title: Evaluation and Validation Research
-weight: 16
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

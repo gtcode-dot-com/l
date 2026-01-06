@@ -1,88 +1,62 @@
 {{ define "main" }}
-  {{ $isRootRepos := eq (trim .RelPermalink "/") "repos" }}
-  {{ if not $isRootRepos }}
-    {{ partial "redirect-to.html" (dict "target" "/repos/" "message" "Repositories only live at /repos/. Redirecting you there now.") }}
-  {{ else }}
-    <section class="hero repo-hero">
-      <div class="hero-inner">
-        <div class="hero-content">
-          {{ with .Params.hero_eyebrow }}
-            <p class="hero-eyebrow">{{ . }}</p>
-          {{ end }}
-          <h1>{{ .Title }}</h1>
-          {{ with .Params.description }}
-            <p class="hero-lede">{{ . }}</p>
-          {{ end }}
-          {{ with .Params.hero_highlights }}
-            <ul class="hero-highlights">
-              {{ range . }}
-                <li>{{ . }}</li>
-              {{ end }}
-            </ul>
-          {{ end }}
-          <div class="hero-actions">
-            {{ if and .Params.hero_cta_text .Params.hero_cta_url }}
-              <a class="btn btn-primary" href="{{ .Params.hero_cta_url }}" target="_blank" rel="noopener">{{ .Params.hero_cta_text }} →</a>
-            {{ end }}
-          </div>
-        </div>
-        <div class="hero-art">
-          <div class="hero-art-glow"></div>
-          <img src="/img/gtcode-repos.svg" alt="Hex.pm release constellation" loading="lazy" decoding="async" />
-        </div>
-      </div>
-    </section>
+<div class="guide-layout">
+    <button class="guide-sidebar-toggle" id="guide-sidebar-toggle" aria-label="Toggle Guide Menu">
+        <i data-feather="menu"></i>
+    </button>
+    <div class="guide-sidebar-overlay" id="guide-sidebar-overlay"></div>
 
-    {{ $repos := .Site.Data.repos }}
-    {{ if $repos }}
-      <section class="repo-grid">
-        {{ range $repos }}
-          <article class="card repo-card">
-            <div class="repo-card-meta">
-              {{ with .stage }}
-                <span class="badge badge-secondary">{{ . }}</span>
-              {{ end }}
-              {{ with .version }}
-                <span class="repo-card-version">v{{ . }}</span>
-              {{ end }}
-            </div>
-            <h2 class="repo-card-title">
-              <a href="/repos/{{ .slug }}/">{{ .name }}</a>
-            </h2>
-            <p class="repo-card-summary">{{ .summary }}</p>
+    {{ partial "repos-sidebar.html" . }}
 
-            {{ if .highlights }}
-              <ul class="repo-highlights">
-                {{ range .highlights }}
-                  <li>{{ . }}</li>
+    <div class="guide-content">
+        <article class="content-article">
+            <header class="article-header">
+                <h1 class="article-title">{{ .Title }}</h1>
+                {{ if .Description }}
+                <p class="article-description">{{ .Description }}</p>
                 {{ end }}
-              </ul>
-            {{ end }}
+            </header>
 
-            {{ if .tags }}
-              <div class="repo-card-tags">
-                {{ range .tags }}
-                  <span class="tag">{{ . }}</span>
-                {{ end }}
-              </div>
-            {{ end }}
+            <div class="article-content">
+                {{ .Content }}
 
-            <div class="repo-card-actions">
-              <a class="btn btn-primary" href="/repos/{{ .slug }}/">View Details</a>
-              {{ with .hex_url }}
-                <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">Hex.pm</a>
-              {{ end }}
-              {{ with .docs_url }}
-                <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">Docs</a>
-              {{ end }}
+                <div class="chapter-list">
+                    {{ $isReposIndex := eq .RelPermalink (.Site.GetPage "repos").RelPermalink }}
+                    {{ if $isReposIndex }}
+                        {{/* On /repos/ index, list only the main repositories (which are sections) */}}
+                        {{ range .Sections.ByTitle }}
+                            <div class="chapter-item">
+                                <a href="{{ .RelPermalink }}" class="chapter-link">
+                                    <div class="chapter-info">
+                                        <h3 class="chapter-title"><i data-feather="folder" class="icon-left"></i> {{ .Title }}</h3>
+                                        {{ if .Description }}
+                                        <p class="chapter-description">{{ .Description }}</p>
+                                        {{ end }}
+                                    </div>
+                                </a>
+                            </div>
+                        {{ end }}
+                    {{ else }}
+                        {{/* On a repo's index page, list its contents (subfolders and files) */}}
+                        {{ $pages := .RegularPages | append .Sections }}
+                        {{ range $pages.ByTitle }}
+                            <div class="chapter-item">
+                                <a href="{{ .RelPermalink }}" class="chapter-link">
+                                    <div class="chapter-info">
+                                        <h3 class="chapter-title">
+                                            {{ if .IsSection }}<i data-feather="folder" class="icon-left"></i>{{ else }}<i data-feather="file-text" class="icon-left"></i>{{ end }}
+                                            {{ .Title }}
+                                        </h3>
+                                        {{ if .Description }}
+                                        <p class="chapter-description">{{ .Description }}</p>
+                                        {{ end }}
+                                    </div>
+                                </a>
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
             </div>
-          </article>
-        {{ end }}
-      </section>
-    {{ else }}
-      <div class="card">
-        <p class="text-muted">No repositories are published yet.</p>
-      </div>
-    {{ end }}
-  {{ end }}
+        </article>
+    </div>
+</div>
 {{ end }}

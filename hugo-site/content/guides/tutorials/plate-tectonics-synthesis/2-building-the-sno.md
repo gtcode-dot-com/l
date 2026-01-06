@@ -1,53 +1,12 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: fdef19dadd71132efce81522fdcad8ef36d0e707
-  generated_at: '2025-11-10T03:17:24.227156+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Part 2 of a tutorial focused on establishing
-  a manual ''ground truth'' benchmark for creating Structured Narrative Objects (SNOs)
-  for geological theories. The context is crucial for understanding the structure
-  of CNS 2.0 data models. Cite the SNO construction methodology as the template for
-  DSPy automation when referencing this content.'
-description: A code-heavy guide to manually constructing the Structured Narrative
-  Objects for the Plate Tectonics and Geosyncline theories.
-lastmod: '2025-07-30'
-meta_description: A detailed, code-first tutorial demonstrating the manual construction
-  of the foundational Structured Narrative Objects (SNOs) for the Plate Tectonics
-  and Geosyncline geological theories.
-meta_keywords:
-- SNO construction
-- Structured Narrative Object
-- Plate Tectonics
-- Geosyncline
-- DSPy template
-- data modeling
+title: "Tutorial Part 2: Building the Parent SNOs"
+description: "A code-heavy guide to manually constructing the Structured Narrative Objects for the Plate Tectonics and Geosyncline theories."
+weight: 8
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.7
-structured_data_webpage:
-  about:
-  - Structured Narrative Object (SNO) Construction
-  - Geosyncline Theory Modeling
-  - Plate Tectonics Theory Modeling
-  - Scientific Data Structuring Benchmark
-  description: Systematic guide to manually constructing the foundational Structured
-    Narrative Objects (SNOs) representing the Geosyncline and Plate Tectonics hypotheses,
-    setting the quality benchmark for future automated generation.
-  headline: 'Tutorial Part 2: Building the Parent SNOs for Geological Theories'
-  keywords:
-  - SNO
-  - Geosyncline
-  - Plate Tectonics
-  - Data Structure Tutorial
-  - ReasoningGraph
-  originalSource: guides/tutorial-part2-building-parent-sno
-  type: CollectionPage
-title: 'Tutorial Part 2: Building the Parent SNOs'
-weight: 8
+  filename: sitemap.xml
 ---
 
 <!--

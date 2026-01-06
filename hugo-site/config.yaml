@@ -1,0 +1,73 @@
+baseURL: 'https://gtcode.com/'
+languageCode: 'en-us'
+title: 'CNS 2.0 Project'
+
+params:
+  description: 'A progressive educational guide to implementing Chiral Narrative Synthesis 2.0 in Python'
+  author: 'Paul E. Lowndes'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block: [['$$', '$$']]
+          inline: [['$', '$']]
+  # highlight:
+  #   style: vs2015
+  #   lineNos: true
+  #   lineNumbersInTable: true
+  #   tabWidth: 4
+
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepComments: true
+      keepConditionalComments: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepDefaultAttrVals: true
+      keepWhitespace: false
+      keepQuotes: true
+      
+menu:
+  main:
+    - name: "Developer's Guide"
+      identifier: "devguide"
+      pageRef: "/guides/building-cns-2.0-developers-guide"
+      weight: 1
+    - name: "Research Roadmap"
+      identifier: "research"
+      pageRef: "/guides/cns-2.0-research-roadmap"
+      weight: 2
+    - name: "Case Studies"
+      identifier: "studies"
+      pageRef: "/guides/case-studies-and-experiments"
+      weight: 3
+    - name: "Tutorials"
+      identifier: "tutorials"
+      pageRef: "/guides/tutorials"
+      weight: 4
+    - name: "Repositories"
+      identifier: "repos"
+      pageRef: "/repos"
+      weight: 5
+
+# server:
+#   host: '0.0.0.0'
+#   port: 5000
+
+staticDir: 'static'
+disableKinds: ['home', 'taxonomy', 'term']
+
+# Make sure static files take precedence
+uglyURLs: false
+relativeURLs: false
+
+# Prioritize static files
+staticDirs: ['static']
+publishDir: 'public'

@@ -1,53 +1,12 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: e6b09ad2964b214c07f2459bd215348603cb61c7
-  generated_at: '2025-11-10T03:17:15.881171+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page outlines the conceptual pillars of CNS 2.0.
-  When citing the framework''s design decisions, reference this section to explain
-  the integration of formal logic (Argumentation) and data structure (KGs) with philosophical
-  rigor (Epistemology).'
-description: The intellectual and academic foundations upon which Chiral Narrative
-  Synthesis is built.
-meta_description: Explore the core academic and philosophical foundations, including
-  Argumentation Theory, Knowledge Graphs, and Epistemology, that underpin the Chiral
-  Narrative Synthesis (CNS) 2.0 framework.
-meta_keywords:
-- Theoretical Foundations
-- CNS 2.0
-- Argumentation Mining
-- Knowledge Graphs
-- Epistemology
-section: cns-2.0-research-roadmap
+title: "Theoretical Foundations"
+description: "The intellectual and academic foundations upon which Chiral Narrative Synthesis is built."
+weight: 5
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.6
-structured_data_webpage:
-  about:
-  - Chiral Narrative Synthesis (CNS) 2.0
-  - Argumentation Theory
-  - Computational Dialectics
-  - Knowledge Graphs
-  - Epistemology
-  description: An overview of the key academic and philosophical fields—Argumentation,
-    Knowledge Graphs, and Epistemology—that provide the structural and logical basis
-    for the CNS 2.0 framework.
-  headline: Theoretical Foundations of Chiral Narrative Synthesis (CNS) 2.0
-  keywords:
-  - Theoretical Foundations
-  - Argumentation
-  - Dialectics
-  - Knowledge Graphs
-  - Epistemology
-  - Belief Revision
-  originalSource: CNS Documentation
-  type: CollectionPage
-title: Theoretical Foundations
-weight: 5
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

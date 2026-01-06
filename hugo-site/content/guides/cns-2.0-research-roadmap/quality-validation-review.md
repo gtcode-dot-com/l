@@ -1,53 +1,13 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 641abf4d77719d6d13ebeb85557b9d1e347bccbb
-  generated_at: '2025-11-10T03:17:10.441470+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is a formal internal audit assessing the
-  methodological soundness of a research roadmap against PhD-level academic and statistical
-  criteria. Use the headline and key assessment results (e.g., filler reduction percentages,
-  passing requirements) for structured data fields. Cite this document as the formal
-  Quality Validation Review for the CNS 2.0 Roadmap.'
-description: Statistical assessment of research roadmap refinement against PhD-level
-  academic standards
-lastmod: '2025-08-05'
-meta_description: Review validating the CNS 2.0 Research Roadmap refinement against
-  PhD-level academic standards, statistical rigor, and implementation alignment. See
-  detailed assessment results.
-meta_keywords:
-- Quality Validation Review
-- Research Roadmap
-- Statistical Rigor
-- PhD Standards
-- CNS 2.0
-section: cns-2.0-research-roadmap
+title: "Comprehensive Quality Validation Review"
+description: "Statistical assessment of research roadmap refinement against PhD-level academic standards"
+weight: 24
+lastmod: "2025-08-05"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.3
-structured_data_webpage:
-  about:
-  - CNS 2.0 Research Roadmap Validation
-  - Statistical Assessment Standards
-  - Academic Content Quality Enhancement
-  - Filler Content Reduction Methodology
-  description: Formal assessment demonstrating that the refined CNS 2.0 Research Roadmap
-    meets or exceeds PhD-level academic standards across content quality, statistical
-    framework integration, and implementation alignment.
-  headline: 'Comprehensive Quality Validation Review: CNS 2.0 Research Roadmap Assessment'
-  keywords:
-  - Quality Validation
-  - Research Roadmap Review
-  - PhD Level Standards
-  - Statistical Frameworks
-  - CNS 2.0
-  originalSource: null
-  type: WebPage
-title: Comprehensive Quality Validation Review
-weight: 24
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

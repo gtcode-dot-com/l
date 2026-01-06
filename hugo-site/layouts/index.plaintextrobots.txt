@@ -1,1 +1,0 @@
-{{ partial "policy-plaintext.txt" (dict "path" "/policies/robots.md") }}

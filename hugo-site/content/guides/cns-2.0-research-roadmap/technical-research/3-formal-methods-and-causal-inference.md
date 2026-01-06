@@ -1,55 +1,13 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: fcd730e7d7fa409497c58bbc5c9f19627fc98e38
-  generated_at: '2025-11-10T03:17:13.844987+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details a research project (Project 3) aimed
-  at enhancing CNS 2.0. The content should be categorized as an advanced technical
-  guide or research proposal, focusing on the integration of formal logic and causal
-  reasoning frameworks. Citation should reference the project''s role in elevating
-  system rigor from ''plausibility to provability.'''
-description: Elevating CNS 2.0's reasoning capabilities by integrating formal logical
-  systems and causal reasoning frameworks.
-lastmod: '2025-07-30'
-meta_description: 'Explore Project 3: Integrating Formal Methods and Causal Inference
-  into CNS 2.0 to move reasoning beyond plausibility toward provable, causal understanding.
-  Learn about formal verification goals.'
-meta_keywords:
-- Formal Methods
-- Causal Inference
-- Automated Theorem Proving
-- CNS 2.0
-- Causal Discovery
-section: cns-2.0-research-roadmap
+title: "Project 3: Formal Methods & Causal Inference"
+description: "Elevating CNS 2.0's reasoning capabilities by integrating formal logical systems and causal reasoning frameworks."
+weight: 15
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.5
-structured_data_webpage:
-  about:
-  - Formal Logic Integration
-  - Causal Reasoning
-  - Automated Theorem Proving
-  - Semantic Parsing to Logic
-  - Bridging Natural Language to Formal Systems
-  description: A technical research proposal outlining the integration of formal logical
-    systems and causal reasoning frameworks to transition CNS 2.0's capabilities from
-    pattern-based plausibility to formal, verifiable logical validity and explicit
-    causal modeling.
-  headline: 'Project 3: Formal Methods & Causal Inference for Enhanced System Rigor'
-  keywords:
-  - Formal Methods
-  - Causal Inference
-  - Automated Theorem Proving
-  - Causal Discovery
-  - Logical Validity
-  originalSource: CNS 2.0 Advanced Technical Research Guides
-  type: WebPage
-title: 'Project 3: Formal Methods & Causal Inference'
-weight: 15
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

@@ -1,0 +1,26 @@
+<!-- layouts/partials/repos-sidebar.html -->
+<aside class="guide-sidebar">
+    <nav class="guide-nav">
+        {{ $currentPage := . }}
+        {{ $reposSection := .Site.GetPage "section" "repos" }}
+
+        <div class="guide-menu-section">
+            <h3 class="guide-menu-title">
+                <a href="{{ $reposSection.RelPermalink }}" class="{{ if eq $currentPage $reposSection }}active-guide{{ end }}">All Repositories</a>
+            </h3>
+        </div>
+
+        {{ range $reposSection.Sections.ByTitle }}
+            {{ $repo := . }}
+            {{ $isCurrentRepo := or (eq $currentPage $repo) ($currentPage.IsDescendant $repo) }}
+            <details class="repo-accordion" {{ if $isCurrentRepo }}open{{ end }}>
+                <summary class="repo-summary">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </summary>
+                <div class="repo-menu-content">
+                    {{ partial "repos-menu-recursive.html" (dict "context" . "currentPage" $currentPage) }}
+                </div>
+            </details>
+        {{ end }}
+    </nav>
+</aside>

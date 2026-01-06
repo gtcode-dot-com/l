@@ -1,52 +1,12 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: d9ede76405da9cac1497947dafb056f1b357c740
-  generated_at: '2025-11-10T03:17:26.358008+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Part 4 of a tutorial, focusing on validation.
-  Use the concepts: two-part analysis, Critic Pipeline, TrustScore, and statistical
-  protocol. Cite this page as the final validation step when referencing CNS 2.0 evaluation
-  methodology.'
-description: Demonstrating the two-part evaluation protocol (quantitative and qualitative)
-  to validate the generated synthesis.
-lastmod: '2025-07-30'
-meta_description: 'Learn how to validate synthesized narratives using the final step
-  of the CNS 2.0 tutorial: the two-part statistical analysis protocol involving quantitative
-  scoring and qualitative comparison.'
-meta_keywords:
-- synthesis validation
-- Critic Pipeline
-- TrustScore
-- quantitative analysis
-- qualitative analysis
-- CNS 2.0
+title: "Tutorial Part 4: Analyzing the Results"
+description: "Demonstrating the two-part evaluation protocol (quantitative and qualitative) to validate the generated synthesis."
+weight: 10
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.7
-structured_data_webpage:
-  about:
-  - Synthesis Validation Protocol
-  - Critic Pipeline Evaluation
-  - TrustScore Calculation
-  - Quantitative vs. Qualitative Analysis
-  description: A detailed demonstration of the two-part evaluation protocol—quantitative
-    scoring via the Critic Pipeline and qualitative comparison—used to validate synthesized
-    Structured Narrative Objects (SNOs) within the CNS 2.0 framework.
-  headline: 'Tutorial Part 4: Analyzing and Validating the Generated Synthesis Results'
-  keywords:
-  - Validation
-  - Analysis Protocol
-  - Critic Pipeline
-  - Trust Score
-  - Tutorial Part 4
-  originalSource: null
-  type: WebPage
-title: 'Tutorial Part 4: Analyzing the Results'
-weight: 10
+  filename: sitemap.xml
 ---
 
 <!--

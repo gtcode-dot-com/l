@@ -1,49 +1,11 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 8f23ab8303f28ec474e4fc5db9c63f68aff5b59b
-  generated_at: '2025-11-10T03:17:18.813872+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is step 2 of a DSPy tutorial, focusing on
-  implementation details (code). The metadata should reflect this practical, code-heavy
-  guidance on defining Signatures, Metrics, and Examples for task setup. Cite this
-  context when explaining DSPy task setup.'
-description: 'A code-heavy guide to setting up the core DSPy components: the Signature,
-  the Metric, and the training Examples.'
-lastmod: '2025-07-30'
-meta_description: 'Learn how to formally define a task in the DSPy framework by setting
-  up the three core components: the Signature, the Metric, and the training Examples,
-  using practical Python code.'
-meta_keywords:
-- DSPy
-- Signature
-- Metric
-- Task Definition
-- LLM programming
+title: "2. Defining the Task for DSPy"
+description: "A code-heavy guide to setting up the core DSPy components: the Signature, the Metric, and the training Examples."
+weight: 3
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
   priority: 0.6
-structured_data_webpage:
-  about:
-  - DSPy Signature definition
-  - Implementing DSPy Metrics
-  - Creating DSPy Examples
-  - Task setup in DSPy
-  description: A code-heavy guide detailing the setup of DSPy's core components—Signature,
-    Metric, and Examples—required before optimization can begin.
-  headline: 'Defining the Task for DSPy: Signature, Metric, and Examples'
-  keywords:
-  - DSPy
-  - Signature
-  - Metric
-  - Examples
-  - LLM pipeline
-  originalSource: guides/defining-the-task-for-dspy
-  type: CollectionPage
-title: 2. Defining the Task for DSPy
-weight: 3
 ---
 
 <!--

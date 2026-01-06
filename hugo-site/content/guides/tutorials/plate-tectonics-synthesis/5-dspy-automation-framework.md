@@ -1,51 +1,12 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: b119f32c736f7ae6ecde4f9aaf2843e539425cc8
-  generated_at: '2025-11-10T03:17:27.405937+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Part 5 of a technical tutorial series
-  focusing on scaling a prototype using DSPy. Optimize metadata for developers/researchers
-  interested in LLM orchestration for rigorous data generation. Cite the DSPy implementation
-  details and the goal of achieving statistical significance (n ≥ 30) for publication.'
-description: Specifications for automating the manual prototype through DSPy optimization
-  to achieve statistical significance.
-lastmod: '2025-08-05'
-meta_description: Learn how to automate scientific data generation and achieve statistical
-  significance using the DSPy framework. Detailed specifications for scaling manual
-  prototypes to publication-quality evidence.
-meta_keywords:
-- DSPy
-- Automation Framework
-- Statistical Validation
-- LLM Pipelines
-- Scientific Synthesis
+title: "Tutorial Part 5: DSPy Automation Framework"
+description: "Specifications for automating the manual prototype through DSPy optimization to achieve statistical significance."
+weight: 11
+lastmod: "2025-08-05"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.7
-structured_data_webpage:
-  about:
-  - DSPy programming framework
-  - Automated data generation
-  - Statistical rigor in LLM output
-  - Scientific debate formalization
-  description: Technical specifications for implementing the DSPy framework to automate
-    the generation and statistical validation of scientific synthesis pairs, moving
-    from manual prototypes to publication-ready evidence.
-  headline: DSPy Automation Framework for Statistical Validation (Tutorial Part 5)
-  keywords:
-  - DSPy
-  - Automation
-  - Statistical Significance
-  - LLM Signatures
-  - CNS 2.0
-  originalSource: guides/tutorial-part-5-dspy-automation
-  type: CollectionPage
-title: 'Tutorial Part 5: DSPy Automation Framework'
-weight: 11
+  filename: sitemap.xml
 ---
 
 <!--

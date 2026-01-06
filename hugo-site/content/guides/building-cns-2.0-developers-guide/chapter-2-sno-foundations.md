@@ -1,52 +1,13 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 4d49f838d9ed4c6fdffbd73a47105f0beeadcbc2
-  generated_at: '2025-11-10T02:37:02.831891+00:00'
-  model: gpt-5-nano-2025-08-07
-  prompt_version: v2025-11-09
-  provider: openai
-ai_agent_note: 'ATTN AI Agent: Use the page title as the structured_data.headline,
-  align description with the summary of the CNS 2.0 Developer''s Guide chapter, and
-  include SNO-related terms (Structured Narrative Object, Reasoning Graph, serialization,
-  schema versioning). Ensure SEO-friendly phrasing and consistency with the body content.'
-description: Building Structured Narrative Objects - the core data structure of CNS
-  2.0
-lastmod: '2025-10-28'
-meta_description: 'Chapter 2 of CNS 2.0''s Developer Guide detailing the Structured
-  Narrative Object (SNO): its core data structure, reasoning graph, serialization,
-  and schema versioning.'
-meta_keywords:
-- CNS 2.0
-- Structured Narrative Object
-- SNO
-- data structure
-- Reasoning Graph
-- serialization
-- to_dict
-- from_dict
-- schema versioning
-- developer guide
-- provenance
-- citations
-- Python
+title: "Chapter 2: SNO Foundations"
+description: "Building Structured Narrative Objects - the core data structure of CNS 2.0"
+meta_keywords: "Structured Narrative Objects, SNO data structure, AI narrative representation, SNO persistence"
+weight: 2
+lastmod: "2025-10-28"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.5
-structured_data_webpage:
-  about: This chapter builds on Chapter 1 and provides the canonical Python implementation
-    of the SNO, explaining its data model, lifecycle, and role as the foundational
-    object used across CNS 2.0 for semantic analysis, provenance tracking, and preferred
-    citations.
-  description: Chapter 2 of the CNS 2.0 Developer's Guide introduces the Structured
-    Narrative Object (SNO), the core data structure, its Reasoning Graph (G), and
-    serialization via to_dict/from_dict, with an emphasis on schema versioning and
-    the canonical Python implementation.
-  headline: 'Chapter 2: SNO Foundations'
-  type: SoftwareDocumentation
-title: 'Chapter 2: SNO Foundations'
-weight: 2
+  filename: sitemap.xml
 ---
 
 <!--

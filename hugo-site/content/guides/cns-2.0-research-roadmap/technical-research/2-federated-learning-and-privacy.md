@@ -1,55 +1,13 @@
 ---
-ai_agent_manual: true
-ai_agent_meta:
-  content_digest: 89d0692c280b6d293db42d68913cc839ac2a45b1
-  generated_at: '2025-11-10T03:17:12.449929+00:00'
-  model: gemini-flash-lite-latest
-  prompt_version: v2025-11-09
-  provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details a research proposal for a future,
-  privacy-focused CNS 2.0 architecture utilizing Federated Learning and cryptographic
-  techniques (SMPC, ZKPs). Use the content to contextualize the future direction of
-  CNS systems regarding sensitive data handling. Cite this as a technical research
-  document outlining architectural goals, not current implementation.'
-description: Designing a decentralized architecture for CNS 2.0 that enables collaborative
-  knowledge synthesis while preserving data privacy.
-lastmod: '2025-07-30'
-meta_description: 'Explore Project 2: the research proposal for designing a decentralized,
-  privacy-preserving architecture for CNS 2.0 using Federated Learning and advanced
-  cryptographic techniques.'
-meta_keywords:
-- Federated Learning
-- Privacy Preserving AI
-- Decentralized Architecture
-- CNS 2.0
-- SMPC
-- Zero-Knowledge Proofs
-section: cns-2.0-research-roadmap
+title: "Project 2: Federated Learning and Privacy"
+description: "Designing a decentralized architecture for CNS 2.0 that enables collaborative knowledge synthesis while preserving data privacy."
+weight: 14
+lastmod: "2025-07-30"
 sitemap:
   changefreq: monthly
-  filename: sitemap.xml
   priority: 0.5
-structured_data_webpage:
-  about:
-  - Federated Learning
-  - Decentralized systems
-  - Data privacy in knowledge synthesis
-  - Secure Multi-Party Computation (SMPC)
-  - Zero-Knowledge Proofs (ZKPs)
-  description: Designing a decentralized architecture for CNS 2.0 that enables collaborative
-    knowledge synthesis while preserving data privacy using Federated Learning and
-    advanced cryptography.
-  headline: 'Project 2: Federated Learning and Privacy in CNS 2.0 Architecture'
-  keywords:
-  - Federated Learning
-  - Privacy-Preserving AI
-  - Decentralized Architecture
-  - CNS 2.0
-  - Cryptographic Techniques
-  originalSource: null
-  type: WebPage
-title: 'Project 2: Federated Learning and Privacy'
-weight: 14
+  filename: sitemap.xml
+section: "cns-2.0-research-roadmap"
 ---
 
 <!--

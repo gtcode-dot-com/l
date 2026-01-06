@@ -1,0 +1,58 @@
+# CNS 2.0 Developer's Guide - Python Dependencies
+# Compatible with Python 3.9+
+# Installation: pip install -r requirements.txt
+
+# Core ML/NLP Libraries
+torch==2.1.0
+transformers==4.35.0
+sentence-transformers==2.2.2
+
+# Graph Processing
+networkx==3.2
+
+# For Chapter 3 - Logic Critic GNN (optional, advanced)
+# torch-geometric==2.4.0  # Uncomment if implementing GNN-based logic critic
+
+# Vector Search (Chapter 4 - Scalable Chiral Pair Detection)
+faiss-cpu==1.7.4  # Use faiss-gpu if you have CUDA-capable GPU
+
+# Scientific Computing
+numpy==1.24.3
+scipy==1.11.3
+
+# Visualization (Chapter 4 - t-SNE plots)
+matplotlib==3.8.0
+seaborn==0.13.0
+scikit-learn==1.3.2  # For t-SNE, dimensionality reduction
+
+# Data Validation and Schemas
+pydantic==2.5.0
+
+# Utilities
+python-dateutil==2.8.2
+tqdm==4.66.1
+
+# Development/Testing (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+mypy==1.7.0
+flake8==6.1.0
+
+# Production Deployment (Chapters 5-6)
+celery==5.3.4
+redis==5.0.1
+# asyncio is built-in to Python 3.9+
+
+# For Chapter 6 - Containerization
+# Docker is installed separately, not via pip
+# See: https://docs.docker.com/get-docker/
+
+# Notes:
+# - Total download size: ~1.5GB
+# - Installation time: 3-5 minutes on average internet connection
+# - GPU Support: If you have CUDA, uninstall faiss-cpu and install faiss-gpu
+#   pip uninstall faiss-cpu
+#   pip install faiss-gpu
+# - For Apple Silicon (M1/M2): torch and some packages may need specific versions
+#   See: https://pytorch.org/get-started/locally/
