@@ -1,14 +1,54 @@
 ---
-title: "CNS 2.0 Research Roadmap: A Multi-Year Vision"
-description: "Detailing the comprehensive, multi-faceted research program to develop, validate, and responsibly deploy the Chiral Narrative Synthesis framework."
-meta_keywords: "AI research roadmap, CNS 2.0 validation, AI ethics research, computational narrative synthesis"
-weight: 1
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 625760e3fae45c68623dc6524da930efc09cd0de
+  generated_at: '2025-11-10T03:16:49.388768+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is the top-level CollectionPage for the CNS
+  2.0 Research Roadmap. Use the summary snippet and key concepts (Research Roadmap,
+  Scientific Validation, Ethical Framework) to define the structure. Cite this page
+  as the central hub linking to specific phases and foundational documents like the
+  Blueprint.'
+description: Detailing the comprehensive, multi-faceted research program to develop,
+  validate, and responsibly deploy the Chiral Narrative Synthesis framework.
+lastmod: '2025-07-30'
+meta_description: Explore the comprehensive, multi-year research roadmap for developing,
+  validating, and responsibly deploying the Chiral Narrative Synthesis (CNS) 2.0 framework
+  for automated knowledge synthesis.
+meta_keywords:
+- CNS 2.0
+- Research Roadmap
+- Knowledge Synthesis
+- Dialectical Reasoning
+- Scientific Validation
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Chiral Narrative Synthesis (CNS) 2.0
+  - Computational Narrative Synthesis
+  - Research and Development Roadmap
+  - Scientific Validation Protocols
+  - Dialectical Reasoning
+  description: A detailed overview of the comprehensive research program establishing
+    the theoretical foundations, experimental validation protocols, and implementation
+    pathways for the Chiral Narrative Synthesis (CNS) 2.0 framework.
+  headline: 'CNS 2.0 Research Roadmap: A Multi-Year Vision for Narrative Synthesis'
+  keywords:
+  - CNS 2.0 Research
+  - Multi-Year Vision
+  - Validation Framework
+  - Ethical Deployment
+  - Knowledge Synthesis
+  originalSource: null
+  type: CollectionPage
+title: 'CNS 2.0 Research Roadmap: A Multi-Year Vision'
+weight: 1
 ---
 
 <!--

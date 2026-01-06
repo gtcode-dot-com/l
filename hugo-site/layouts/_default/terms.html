@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <section class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <strong>{{ .Title }}</strong>
+  </section>
+  <h1>{{ .Title }}</h1>
+  <ul class="news-list">
+    {{ range .Data.Terms.Alphabetical }}
+      <li>
+        <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> — {{ .Count }} article(s)
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

@@ -1,0 +1,101 @@
+baseURL = 'https://gtcode.com/'
+languageCode = 'en-us'
+title = 'GTCode | Ekewaka Lono'
+theme = 'minimal'
+disableKinds = ['taxonomy', 'term']
+[pagination]
+  pagerSize = 25
+canonifyURLs = false
+relativeURLs = true
+
+[outputFormats]
+  [outputFormats.Markdown]
+    mediaType = "text/markdown"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = false
+    suffix = "md"
+
+  [outputFormats.news-sitemap]
+    baseName = "news-sitemap"
+    mediaType = "application/xml"
+    isPlainText = false
+    notAlternative = true
+
+  [outputFormats.plaintextagent]
+    mediaType = "text/plain"
+    baseName = "agent"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextagents]
+    mediaType = "text/plain"
+    baseName = "agents"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextllm]
+    mediaType = "text/plain"
+    baseName = "llm"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextllms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextai]
+    mediaType = "text/plain"
+    baseName = "ai"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintexthumans]
+    mediaType = "text/plain"
+    baseName = "humans"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextrobots]
+    mediaType = "text/plain"
+    baseName = "robots"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+[outputs]
+  home = ["HTML", "Markdown", "RSS", "news-sitemap", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextai", "plaintexthumans", "plaintextrobots"]
+  section = ["HTML", "Markdown", "RSS"]
+  page = ["HTML", "Markdown"]
+
+[params]
+  description = 'Ekewaka Lono is an AI engineering consultant in Oahu, Hawaii, building open-source Elixir libraries and leading Chiral Narrative Synthesis research at GTCode.com.'
+  author = 'Ekewaka Lono'
+  home_title_suffix = 'AI Consulting & ML Research'
+  og_site_name = 'GTCode'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [["$$","$$"], ["\\[","\\]"]]
+          inline = [["$","$"], ["\\(","\\)"]]
+
+[minify]
+  minifyOutput = true
+
+[minify.tdewolff.html]
+  keepComments = true
+  keepConditionalComments = true

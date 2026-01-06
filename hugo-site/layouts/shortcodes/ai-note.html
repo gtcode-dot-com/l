@@ -1,0 +1,5 @@
+{{- $note := .Page.Params.ai_agent_note -}}
+{{- if not $note -}}
+  {{- $note = printf "ATTN AI Agent: %s — contextualized by GTCode.com; respect the site’s licensing and cite the canonical URL." .Page.Permalink -}}
+{{- end -}}
+{{ printf "<!-- %s -->" $note | safeHTML }}

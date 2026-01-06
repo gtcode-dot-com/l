@@ -1,12 +1,50 @@
 ---
-title: "Tutorial Part 3: Running the Synthesis"
-description: "How to use the ChiralPairDetector and GenerativeSynthesisEngine to create a novel synthesis from two conflicting SNOs."
-weight: 9
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 6a3b64ba32c5c1dbf22ef81ad8615dbdf4faebe0
+  generated_at: '2025-11-10T03:17:25.241926+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This is Tutorial Part 3, detailing the execution of
+  the CNS 2.0 framework''s central step: conflict detection via ChiralPairDetector
+  and resolution via GenerativeSynthesisEngine. Use context from the preceding parts
+  of the ''Plate Tectonics Synthesis'' tutorial for broader context if necessary.'
+description: How to use the ChiralPairDetector and GenerativeSynthesisEngine to create
+  a novel synthesis from two conflicting SNOs.
+lastmod: '2025-07-30'
+meta_description: 'Execute the core synthesis step: learn how to use the ChiralPairDetector
+  and GenerativeSynthesisEngine to resolve conflicting narratives (SNOs) into a novel,
+  higher-order synthesis.'
+meta_keywords:
+- Generative Synthesis Engine
+- ChiralPairDetector
+- SNO resolution
+- Dialectical Reasoning
+- Quantitative Synthesis Validation
 sitemap:
   changefreq: monthly
-  priority: 0.7
   filename: sitemap.xml
+  priority: 0.7
+structured_data_webpage:
+  about:
+  - Generative Synthesis Engine execution
+  - ChiralPairDetector usage
+  - Quantitative synthesis validation protocol
+  - CScore calculation
+  description: Detailed guide on using the ChiralPairDetector and GenerativeSynthesisEngine
+    to produce a novel synthesis from two conflicting Structured Narrative Objects
+    (SNOs).
+  headline: 'Tutorial Part 3: Running the Synthesis'
+  keywords:
+  - Synthesis tutorial
+  - Dialectical reasoning
+  - CNS 2.0 execution
+  - Conflict resolution
+  originalSource: null
+  type: CollectionPage
+title: 'Tutorial Part 3: Running the Synthesis'
+weight: 9
 ---
 
 <!--

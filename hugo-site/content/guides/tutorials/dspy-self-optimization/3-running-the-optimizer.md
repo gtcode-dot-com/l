@@ -1,11 +1,50 @@
 ---
-title: "3. Running the DSPy Optimizer"
-description: "How to use the DSPy compiler to automatically generate and optimize a powerful synthesis prompt based on our defined task."
-weight: 4
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 5cb69f941cb056fa1ebf4abf5e3620afcdf536f5
+  generated_at: '2025-11-10T03:17:19.858684+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page details Step 3 of a DSPy tutorial, focusing
+  on executing the `optimizer.compile()` call. Use the context to emphasize that compilation
+  uses the defined Signature, Metric, and Training Set to find the best prompting
+  strategy for the LLM module.'
+description: How to use the DSPy compiler to automatically generate and optimize a
+  powerful synthesis prompt based on our defined task.
+lastmod: '2025-07-30'
+meta_description: Learn the practical steps for running the DSPy optimizer using BootstrapFewShot
+  to automatically generate and refine the optimal prompt for your defined language
+  model task.
+meta_keywords:
+- DSPy Optimizer
+- DSPy Compile
+- BootstrapFewShot
+- LLM Prompt Optimization
+- dspy.Module
 sitemap:
   changefreq: monthly
   priority: 0.6
+structured_data_webpage:
+  about:
+  - DSPy Compilation
+  - BootstrapFewShot Optimization
+  - dspy.Module Initialization
+  - LLM Prompt Engineering Automation
+  description: A guide detailing how to initialize and execute the DSPy optimizer,
+    such as BootstrapFewShot, to compile a self-optimizing module based on a training
+    set and evaluation metric.
+  headline: Running the DSPy Optimizer and Compiling Modules
+  keywords:
+  - DSPy
+  - Optimizer
+  - Compilation
+  - BootstrapFewShot
+  - dspy.Module
+  originalSource: null
+  type: WebPage
+title: 3. Running the DSPy Optimizer
+weight: 4
 ---
 
 <!--

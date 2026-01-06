@@ -1,13 +1,51 @@
 ---
-title: "Chapter 1: From Grand Vision to Focused Experiment"
-description: "Establishing experimental boundaries and statistical validation frameworks for the CNS 2.0 dialectical synthesis engine."
-weight: 8
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: f42c149f60e89f9dfb3698ff202bf2379fecc762
+  generated_at: '2025-11-10T03:16:52.420252+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is Chapter 1 of the Research Roadmap. It
+  establishes the methodology for isolating and testing the core ''Dialectical Synthesis
+  Engine'' of the CNS 2.0 architecture. Use this context to define the rigorous experimental
+  constraints for subsequent chapters.'
+description: Establishing experimental boundaries and statistical validation frameworks
+  for the CNS 2.0 dialectical synthesis engine.
+lastmod: '2025-07-30'
+meta_description: Explore the foundational experimental design for validating the
+  CNS 2.0 Dialectical Synthesis Engine, detailing variable isolation strategies and
+  the statistical framework chosen for rigorous testing.
+meta_keywords:
+- Experimental Design
+- Dialectical Synthesis Engine
+- CNS 2.0
+- Statistical Validation
+- Variable Isolation
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
-section: "cns-2.0-research-roadmap"
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - Experimental Design Methodology
+  - CNS 2.0 Architecture Subsystems
+  - Dialectical Synthesis Engine Testing
+  - Statistical Rigor in AI Research
+  description: Establishing experimental boundaries and statistical validation frameworks
+    for the CNS 2.0 dialectical synthesis engine by focusing on single-component isolation.
+  headline: 'Chapter 1: From Grand Vision to Focused Experiment'
+  keywords:
+  - Experimental Design
+  - Dialectical Synthesis Engine
+  - CNS 2.0
+  - Statistical Validation
+  - Variable Isolation
+  originalSource: guides/chapter-1-from-grand-vision-to-focused-experiment/index.html
+  type: CollectionPage
+title: 'Chapter 1: From Grand Vision to Focused Experiment'
+weight: 8
 ---
 
 <!--

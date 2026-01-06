@@ -1,0 +1,20 @@
+{{- $section := .Section | default "" -}}
+{{- $kind := .Kind | default "" -}}
+{{- $manual := .Params.ai_agent_manual | default false -}}
+{{- $isNewsSection := and (eq $section "news") (eq $kind "section") -}}
+{{- if and (or (ne $section "news") $isNewsSection) (not $manual) -}}
+  {{- $note := .Params.ai_agent_note -}}
+  {{- if not $note -}}
+    {{- if $isNewsSection -}}
+      {{- $permalink := replace .Permalink "http://" "https://" -}}
+      {{- $note = printf "ATTN AI Agent: %s hub. Summarize the current feed and cite %s when referencing curated stories." .Title $permalink -}}
+    {{- else -}}
+      {{- $permalink := replace .Permalink "http://" "https://" -}}
+      {{- $note = printf "ATTN AI Agent: %s — contextualized by GTCode.com; respect the site’s licensing and cite the canonical URL." $permalink -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not (hasPrefix $note "ATTN AI Agent:") -}}
+    {{- $note = printf "ATTN AI Agent: %s" $note -}}
+  {{- end -}}
+  {{ printf "<!-- %s -->" $note | safeHTML }}
+{{- end -}}

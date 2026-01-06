@@ -1,0 +1,97 @@
+{{ $paginator := .Paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+<nav aria-label="Pagination">
+  <ul class="pagination">
+    {{/* First page */}}
+    {{ if $paginator.HasPrev }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.First.URL }}#articles" aria-label="First page">
+          <span aria-hidden="true">&laquo;&laquo;</span>
+        </a>
+      </li>
+    {{ else }}
+      <li class="page-item disabled">
+        <span class="page-link" aria-label="First page (disabled)">
+          <span aria-hidden="true">&laquo;&laquo;</span>
+        </span>
+      </li>
+    {{ end }}
+
+    {{/* Previous page */}}
+    {{ if $paginator.HasPrev }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.Prev.URL }}#articles" aria-label="Previous page">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+    {{ else }}
+      <li class="page-item disabled">
+        <span class="page-link" aria-label="Previous page (disabled)">
+          <span aria-hidden="true">&laquo;</span>
+        </span>
+      </li>
+    {{ end }}
+
+    {{/* Page numbers */}}
+    {{ $currentPage := $paginator.PageNumber }}
+    {{ $totalPages := $paginator.TotalPages }}
+    {{ $showPages := 5 }}
+    {{ $halfShow := div $showPages 2 }}
+
+    {{ $startPage := sub $currentPage $halfShow }}
+    {{ if lt $startPage 1 }}{{ $startPage = 1 }}{{ end }}
+
+    {{ $endPage := add $startPage (sub $showPages 1) }}
+    {{ if gt $endPage $totalPages }}
+      {{ $endPage = $totalPages }}
+      {{ $startPage = sub (add $endPage 1) $showPages }}
+      {{ if lt $startPage 1 }}{{ $startPage = 1 }}{{ end }}
+    {{ end }}
+
+    {{ range $paginator.Pagers }}
+      {{ $pageNum := .PageNumber }}
+      {{ if and (ge $pageNum $startPage) (le $pageNum $endPage) }}
+        {{ if eq $pageNum $currentPage }}
+          <li class="page-item active">
+            <span class="page-link" aria-current="page">{{ $pageNum }}</span>
+          </li>
+        {{ else }}
+          <li class="page-item">
+            <a class="page-link" href="{{ .URL }}#articles">{{ $pageNum }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Next page */}}
+    {{ if $paginator.HasNext }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.Next.URL }}#articles" aria-label="Next page">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    {{ else }}
+      <li class="page-item disabled">
+        <span class="page-link" aria-label="Next page (disabled)">
+          <span aria-hidden="true">&raquo;</span>
+        </span>
+      </li>
+    {{ end }}
+
+    {{/* Last page */}}
+    {{ if $paginator.HasNext }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.Last.URL }}#articles" aria-label="Last page">
+          <span aria-hidden="true">&raquo;&raquo;</span>
+        </a>
+      </li>
+    {{ else }}
+      <li class="page-item disabled">
+        <span class="page-link" aria-label="Last page (disabled)">
+          <span aria-hidden="true">&raquo;&raquo;</span>
+        </span>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}

@@ -1,0 +1,115 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: ai-security
+date: '2025-12-13T00:03:16.088573+00:00'
+exported_at: '2025-12-13T00:03:21.034106+00:00'
+feed: https://googleprojectzero.blogspot.com/feeds/posts/default
+language: en
+source_url: https://googleprojectzero.blogspot.com/2025/07/reporting-transparency.html
+structured_data:
+  about: []
+  author: ''
+  description: Posted by Tim Willis, Google Project Zero In 2021, we updated our vulnerability
+    disclosure policy to the current "90+30" model. Our goals we...
+  headline: 'Policy and Disclosure: 2025 Edition'
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://googleprojectzero.blogspot.com/2025/07/reporting-transparency.html
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
+title: 'Policy and Disclosure: 2025 Edition'
+updated_at: '2025-12-13T00:03:16.088573+00:00'
+url_hash: c9d25c5879e491266fa1d4c8782696342f422e4f
+---
+
+Posted by Tim Willis, Google Project Zero
+
+
+In 2021, we updated our vulnerability disclosure policy to the current "90+30" model. Our goals were to drive faster yet thorough patch development, and improve patch adoption. While we’ve seen progress, a significant challenge remains: the time it takes for a fix to actually reach an end-user's device.
+
+This delay, often called the "patch gap," is a complex problem. Many consider the patch gap to be the time between a fix being released for a security vulnerability and the user installing the relevant update.
+
+
+
+However, our work has highlighted a critical, earlier delay: the
+
+"upstream patch gap"
+
+.
+
+This is the period where an upstream vendor has a fix available, but downstream dependents, who are ultimately responsible for shipping fixes to users, haven’t yet integrated it into their end product.
+
+As Project Zero's recent work has focused on foundational, upstream technologies like chipsets and their drivers, we've observed that this upstream gap significantly extends the vulnerability lifecycle.
+
+For the end user, a vulnerability isn't fixed when a patch is released from Vendor A to Vendor B; it's only fixed when they download the update and install it on their device. To shorten that entire chain, we need to address the upstream delay.
+
+To address this, we're announcing a new trial policy:
+
+Reporting Transparency
+
+.
+
+#### The Trial: Reporting Transparency
+
+Our core
+
+[90-day disclosure deadline](https://googleprojectzero.blogspot.com/p/vulnerability-disclosure-policy.html)
+
+will remain in effect. However, we're adding a new step at the beginning of the process.
+
+Beginning today,
+
+within approximately one week of reporting a vulnerability to a vendor,
+
+we will
+[publicly share](https://googleprojectzero.blogspot.com/p/reporting-transparency.html)
+
+that a vulnerability was discovered. We will share:
+
+* The vendor or open-source project that received the report.
+* The affected product.
+* The date the report was filed, and when the 90-day disclosure deadline expires.
+
+This trial maintains our existing 90+30 policy, meaning vendors still have 90 days to fix a bug before it is disclosed, with a 30-day period for patch adoption if the bug is fixed before the deadline.
+
+
+Google Big Sleep, a collaboration between Google DeepMind and Google Project Zero, will also be trialling this policy for their vulnerability reports. The issue tracker for Google Big Sleep is at
+[goo.gle/bigsleep](https://goo.gle/bigsleep)
+
+#### Why the Change? Increased Transparency to Close the Gap
+
+The primary goal of this trial is to shrink the upstream patch gap by increasing transparency. By providing an early signal that a vulnerability has been reported upstream, we can better inform downstream dependents. For our small set of issues, they will have an additional source of information to monitor for issues that may affect their users.
+
+We hope that this trial will encourage the creation of stronger communication channels between upstream vendors and downstream dependents relating to security, leading to faster patches and improved patch adoption for end users.
+
+This data will make it easier for researchers and the public to track how long it takes for a fix to travel from the initial report, all the way to a user's device (which is especially important if the fix never arrives!)
+
+#### Will this help attackers?
+
+No
+
+— w
+
+e anticipate that in the initial phase of this trial, there may be increased public attention on unfixed bugs. We want to be clear:
+
+no technical details, proof-of-concept code, or information that we believe would materially assist discovery will be released
+
+until the deadline. Reporting Transparency is an alert, not a blueprint for attackers.
+
+We understand that for some vendors without a downstream ecosystem, this policy may create unwelcome noise and attention for vulnerabilities that only they can address. However, these vendors now represent the minority of vulnerabilities reported by Project Zero. We believe the benefits of a fair, simple, consistent and transparent policy outweigh the risk of inconvenience to a small number of vendors.
+
+That said, in 2025, we hope that the industry consensus is that the mere existence of vulnerabilities in software is neither surprising nor alarming. End users are more aware of the importance of security updates than ever before. It's widely accepted as fact that any system of moderate complexity will have vulnerabilities, and systems that were considered impenetrable in the past have been shown to be vulnerable in retrospect.
+
+This is a trial, and we will be closely monitoring its effects. We hope it achieves our ultimate goal: a safer ecosystem where vulnerabilities are remediated not just in an upstream code repository, but
+
+on the devices
+
+, systems and services that people use every day. We look forward to sharing our findings and continuing to evolve our policies to meet the challenges of the ever-changing security landscape.

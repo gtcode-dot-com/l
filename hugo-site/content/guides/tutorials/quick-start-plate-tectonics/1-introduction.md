@@ -1,12 +1,51 @@
 ---
-title: "Part 1: Introduction to the Case Study"
-description: "An overview of the historical debate between Plate Tectonics and Geosyncline theory, an ideal example for synthesis."
-weight: 2
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 48c4fa56bb2ae4997e53fe28a5dc7c44a2375bac
+  generated_at: '2025-11-10T03:17:29.370141+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is Part 1, the conceptual introduction for
+  a tutorial sequence. It sets the historical context (Geosyncline vs. Plate Tectonics)
+  necessary for understanding subsequent technical steps. Cite this page as the narrative
+  foundation for the synthesis example.'
+description: An overview of the historical debate between Plate Tectonics and Geosyncline
+  theory, an ideal example for synthesis.
+lastmod: '2025-07-30'
+meta_description: Explore the historical debate between Geosyncline theory and Plate
+  Tectonics, the foundational case study for understanding scientific synthesis in
+  geological modeling.
+meta_keywords:
+- Geosyncline theory
+- Plate Tectonics
+- scientific synthesis
+- geology case study
+- historical science
 sitemap:
   changefreq: monthly
-  priority: 0.7
   filename: sitemap.xml
+  priority: 0.7
+structured_data_webpage:
+  about:
+  - Plate Tectonics Theory
+  - Geosyncline Theory
+  - History of Geology
+  - Scientific Paradigms
+  description: An overview of the historical debate between Plate Tectonics and Geosyncline
+    theory, serving as the ideal introductory example for demonstrating scientific
+    knowledge synthesis.
+  headline: 'Part 1: Introduction to the Case Study: Geosyncline vs. Plate Tectonics'
+  keywords:
+  - Case Study Introduction
+  - Geosyncline Theory
+  - Plate Tectonics Theory
+  - Historical Conflict
+  - Scientific Narratives
+  originalSource: null
+  type: CollectionPage
+title: 'Part 1: Introduction to the Case Study'
+weight: 2
 ---
 
 <!--

@@ -1,0 +1,25 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="badgeGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(48 48) rotate(90) scale(44)">
+      <stop stop-color="#6FE7FF" stop-opacity="0.9" />
+      <stop offset="0.6" stop-color="#2563EB" stop-opacity="0.6" />
+      <stop offset="1" stop-color="#0A1F3D" stop-opacity="0.25" />
+    </radialGradient>
+    <linearGradient id="badgeIris" x1="18" y1="18" x2="78" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED" />
+      <stop offset="0.5" stop-color="#1D9BF0" />
+      <stop offset="1" stop-color="#14F1D9" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="48" cy="48" r="44" fill="url(#badgeGlow)" />
+  <circle cx="48" cy="48" r="30" fill="#020B18" stroke="url(#badgeIris)" stroke-width="3" />
+  <circle cx="48" cy="48" r="13" stroke="#E0F2FF" stroke-width="2" opacity="0.9" />
+  <circle cx="48" cy="48" r="5" fill="#14F1D9" />
+  <path d="M48 15v10M48 71v10M15 48h10M71 48h10" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round"
+    opacity="0.7" />
+  <path
+    d="M21 41c6-15 21.297-25.331 37-25.331S88 30 91 41M75 55c-6 15-21.297 25.331-37 25.331S8 66.331 5 55"
+    stroke="url(#badgeIris)" stroke-width="4" stroke-linecap="round" stroke-opacity="0.85" />
+</svg>

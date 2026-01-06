@@ -1,12 +1,46 @@
 ---
-title: "Building CNS 2.0: A Developer's Guide"
-description: "A progressive educational guide to implementing Chiral Narrative Synthesis 2.0 in Python"
-meta_keywords: "Python AI Guide, Implement CNS 2.0, AI Reasoning System, Structured Narrative Objects, DSPy Optimization"
-lastmod: "2025-10-28"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: f618003a35ca30bceb8de0a8b9b7203a867c0736
+  generated_at: '2025-11-10T02:35:34.426703+00:00'
+  model: gpt-5-nano-2025-08-07
+  prompt_version: v2025-11-09
+  provider: openai
+ai_agent_note: 'ATTN AI Agent: This page is the root of the CNS 2.0 Developer''s Guide
+  under the ''guides'' section. Ensure the page metadata prioritizes Python implementation,
+  progressive learning structure, and links to sequential chapters. Treat the chapter
+  list as a dependent series.'
+description: A progressive educational guide to implementing Chiral Narrative Synthesis
+  2.0 in Python
+lastmod: '2025-10-28'
+meta_description: A comprehensive, progressive developer guide to implementing Chiral
+  Narrative Synthesis 2.0 (CNS 2.0) in Python, covering architecture, reasoning over
+  conflicting arguments, and practical, code-first steps.
+meta_keywords:
+- Chiral Narrative Synthesis
+- CNS 2.0
+- Python
+- Developer Guide
+- Narrative Synthesis
+- System Architecture
+- AI Reasoning
+- Progressive Learning
+- Code-first Guide
+- NLP
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about: Chiral Narrative Synthesis (CNS), CNS 2.0, Python implementation, developer
+    guide, progressive learning, system architecture, narrative reasoning
+  description: A step-by-step, Python-focused developer guide for implementing Chiral
+    Narrative Synthesis 2.0, detailing architecture, data objects, evidence weighing,
+    and practical coding practices for building a robust CNS 2.0 system.
+  headline: 'Building CNS 2.0: A Developer''s Guide'
+  type: Guide
+title: 'Building CNS 2.0: A Developer''s Guide'
+list_sort: weight
 ---
 
 <!--
@@ -147,4 +181,4 @@ Expect roughly 8–10 focused sessions. Each chapter includes checkpoints and se
 
 ---
 
-*This educational content is based on the CNS 2.0 research proposal by Paul Lowndes and demonstrates practical Python implementation approaches for educational purposes.*
+*This educational content is based on the CNS 2.0 research proposal by Ekewaka Lono and demonstrates practical Python implementation approaches for educational purposes.*

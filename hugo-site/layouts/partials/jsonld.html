@@ -1,0 +1,184 @@
+{{- partial "fetch-article-meta.html" (dict "context" .) -}}
+{{- $articleMeta := .Scratch.Get "_article_meta" -}}
+{{- if not $articleMeta -}}
+  {{- $articleMetaMap := default (dict) (index .Site.Data "article_meta") -}}
+  {{- $articleMeta = index $articleMetaMap (trim .RelPermalink "/") -}}
+{{- end -}}
+{{- $siteRoot := replace .Site.BaseURL "http://" "https://" -}}
+{{- $siteName := .Site.Title -}}
+{{- $author := .Site.Params.author | default "GTCode" -}}
+
+{{- if .Params.structured_data_graph -}}
+<script type="application/ld+json">{{ .Params.structured_data_graph | jsonify | safeJS }}</script>
+{{- else if and $articleMeta $articleMeta.json_ld }}
+  {{- $jsonLD := $articleMeta.json_ld -}}
+  {{- if not (or (reflect.IsMap $jsonLD) (reflect.IsSlice $jsonLD)) }}
+    {{- $parsed := $jsonLD | transform.Unmarshal -}}
+    {{- if $parsed }}
+      {{- $jsonLD = $parsed -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if or (reflect.IsMap $jsonLD) (reflect.IsSlice $jsonLD) }}
+<script type="application/ld+json">{{ $jsonLD | jsonify | safeJS }}</script>
+  {{- else }}
+<script type="application/ld+json">{{ $jsonLD | safeJS }}</script>
+  {{- end }}
+{{- else -}}
+{{- /* BreadcrumbList */ -}}
+{{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $siteRoot) -}}
+{{- if .CurrentSection -}}
+  {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" .CurrentSection.Title "item" (replace .CurrentSection.Permalink "http://" "https://")) -}}
+{{- end -}}
+{{- if and .IsPage (ne .Kind "home") -}}
+  {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" (add (len $crumbs) 1) "name" .Title "item" (replace .Permalink "http://" "https://")) -}}
+{{- end -}}
+{{- if gt (len $crumbs) 1 -}}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs | jsonify | safeJS }}
+</script>
+{{- end -}}
+{{- /* Person schema */ -}}
+{{- $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" $author
+    "url" $siteRoot
+    "worksFor" (dict "@type" "Organization" "name" $siteName "url" $siteRoot)
+-}}
+{{- if .Site.Params.author_image }}
+  {{- $person = merge $person (dict "image" (replace .Site.Params.author_image "http://" "https://")) -}}
+{{- end -}}
+{{- if .Site.Params.author_sameas }}
+  {{- $person = merge $person (dict "sameAs" .Site.Params.author_sameas) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{- $sd := .Params.structured_data -}}
+{{- $sdPage := .Params.structured_data_webpage -}}
+{{- if $sdPage }}
+  {{- $schemaType := $sdPage.type | default "WebPage" -}}
+  {{- $headline := cond (and $sdPage.headline (ne $sdPage.headline "")) $sdPage.headline .Title -}}
+  {{- $description := cond (and $sdPage.description (ne $sdPage.description "")) $sdPage.description (.Summary | default "") -}}
+  {{- $lastmod := .Lastmod -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end -}}
+  {{- $modified := $lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $language := .Lang | default "en" -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" $schemaType
+        "name" $headline
+        "headline" $headline
+        "description" $description
+        "url" .Permalink
+        "inLanguage" $language
+        "dateModified" $modified
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+    -}}
+  {{- if $sdPage.about }}
+    {{- $data = merge $data (dict "about" $sdPage.about) -}}
+  {{- end -}}
+  {{- if $sdPage.keywords }}
+    {{- $data = merge $data (dict "keywords" $sdPage.keywords) -}}
+  {{- end -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if and (eq .Kind "section") (eq .Section "news") -}}
+  {{- $headline := .Title -}}
+  {{- $description := .Description | default (.Summary | default .Site.Params.description) -}}
+  {{- $lastmod := .Lastmod -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end -}}
+  {{- $modified := $lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $language := .Lang | default "en" -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "CollectionPage"
+        "name" $headline
+        "headline" $headline
+        "description" $description
+        "url" .Permalink
+        "dateModified" $modified
+        "inLanguage" $language
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+        "about" (slice $headline "AI news" "Daily briefings")
+    -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if and (eq .Section "repos") .Params.hex_url }}
+  {{- /* SoftwareSourceCode schema for repository pages */ -}}
+  {{- $repoName := .Title -}}
+  {{- $description := .Description | default (.Summary | default "") -}}
+  {{- $modified := cond (.Lastmod.IsZero) (.Date.Format "2006-01-02T15:04:05Z07:00") (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "SoftwareSourceCode"
+        "name" $repoName
+        "description" $description
+        "url" (replace .Permalink "http://" "https://")
+        "codeRepository" (replace .Params.repo_url "http://" "https://")
+        "programmingLanguage" "Elixir"
+        "dateModified" $modified
+    -}}
+  {{- if .Params.license }}
+    {{- $data = merge $data (dict "license" .Params.license) -}}
+  {{- end }}
+  {{- if .Params.hex_url }}
+    {{- $data = merge $data (dict "downloadUrl" (replace .Params.hex_url "http://" "https://")) -}}
+  {{- end }}
+  {{- if .Params.version }}
+    {{- $data = merge $data (dict "softwareVersion" .Params.version) -}}
+  {{- end }}
+  {{- $data = merge $data (dict
+        "author" (dict "@type" "Person" "name" $author "url" $siteRoot)
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" (replace (.Site.Params.logo | default "/img/gtcode-core.svg") "http://" "https://")))
+    ) -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if $sd }}
+  {{- /* NewsArticle/Article schema for content pages */ -}}
+  {{- $headline := cond (and $sd.headline (ne $sd.headline "")) $sd.headline .Title -}}
+  {{- $description := cond (and $sd.description (ne $sd.description "")) $sd.description (.Summary | default "") -}}
+  {{- $published := cond (.PublishDate.IsZero) (.Date.Format "2006-01-02T15:04:05Z07:00") (.PublishDate.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $modified := cond (.Lastmod.IsZero) $published (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $author := cond (and $sd.author (ne $sd.author "")) $sd.author (.Site.Params.author | default "gtcode.com") -}}
+  {{- $publisher := $sd.publisher | default (dict "name" "gtcode.com" "logo" "/favicon.ico") -}}
+  {{- /* Image with fallback to OG image or site default */ -}}
+  {{- $image := slice -}}
+  {{- if $sd.main_image }}
+    {{- $image = $image | append $sd.main_image -}}
+  {{- else if .Params.og_image }}
+    {{- $image = $image | append (replace .Params.og_image "http://" "https://") -}}
+  {{- else if .Site.Params.og_image }}
+    {{- $image = $image | append (printf "%s%s" $siteRoot (.Site.Params.og_image | default "/img/gtcode-core.svg")) -}}
+  {{- end -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "NewsArticle"
+        "headline" $headline
+        "description" $description
+        "datePublished" $published
+        "dateModified" $modified
+        "author" (dict "@type" "Person" "name" $author)
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" (replace (.Site.Params.logo | default "/img/gtcode-core.svg") "http://" "https://")))
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" (replace .Permalink "http://" "https://"))
+        "articleSection" (.Params.category | default .Section)
+        "wordCount" .WordCount
+    -}}
+  {{- if gt (len $image) 0 }}
+    {{- $data = merge $data (dict "image" $image) -}}
+  {{- end -}}
+  {{- if $sd.about }}
+    {{- $data = merge $data (dict "about" $sd.about) -}}
+  {{- end -}}
+  {{- if $sd.keywords }}
+    {{- $data = merge $data (dict "keywords" $sd.keywords) -}}
+  {{- end -}}
+  {{- if $sd.original_source }}
+    {{- $data = merge $data (dict "originalSource" $sd.original_source) -}}
+  {{- end -}}
+  {{- if .Params.source_url }}
+    {{- $data = merge $data (dict "url" (replace .Params.source_url "http://" "https://")) -}}
+  {{- end }}
+  {{- if not (and (eq .Section "news") (not .Params.news_original) .Params.source_url) }}
+    {{- $data = merge $data (dict "potentialAction" (dict "@type" "InteractAction" "target" (replace .Permalink "http://" "https://"))) -}}
+  {{- end }}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- end -}}
+{{- end -}}

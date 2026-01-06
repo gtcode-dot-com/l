@@ -1,13 +1,29 @@
 {{ define "main" }}
-<main class="container">
-  <h1>404 - Page Not Found</h1>
-  <p>The page you're looking for doesn't exist. Let's get you back on track!</p>
-  <p><a href="{{ .Site.BaseURL }}">Return to Homepage</a></p>
-  <h2>Popular Pages</h2>
-  <ul>
-    {{ range first 3 .Site.RegularPages }}
-      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
-</main>
+  <section class="not-found">
+    <div class="not-found-art">
+      <div class="not-found-glow"></div>
+      <img src="/img/gtcode-404.svg" alt="GTCode lost signal illustration" loading="lazy" decoding="async" />
+    </div>
+    <div class="not-found-copy">
+      <p class="section-eyebrow">404</p>
+      <h1>Signal Lost</h1>
+      <p class="not-found-lede">
+        The page you requested isn't on this node. Check the latest dispatches, browse the repos,
+        or return home to re-establish context.
+      </p>
+      <div class="not-found-actions">
+        <a class="btn btn-primary" href="/">Return home</a>
+        <a class="btn btn-secondary" href="/news/">Browse news</a>
+        <a class="btn btn-link" href="/repos/">Repos</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var path = window.location.pathname || "";
+      if (path.length > 6 && path.indexOf("/repos/") === 0 && path !== "/repos/") {
+        window.location.replace("/repos/");
+      }
+    })();
+  </script>
 {{ end }}

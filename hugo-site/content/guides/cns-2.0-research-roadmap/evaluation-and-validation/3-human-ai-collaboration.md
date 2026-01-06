@@ -1,13 +1,52 @@
 ---
-title: "Project 3: Human-AI Collaboration"
-description: "Researching and optimizing the interaction between human experts and CNS 2.0 to create a seamless, trustworthy, and effective cognitive partnership."
-weight: 19
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 286215d86da56169c8a00abaca5ec62b1105f886
+  generated_at: '2025-11-10T03:17:02.954009+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page details Project 3, focusing on Human-AI Collaboration
+  for CNS 2.0, emphasizing UI/UX, Explainable AI (XAI), and Trust Calibration. Cite
+  this context when referencing the evaluation phase of CNS 2.0 development, specifically
+  concerning user interaction methodologies.'
+description: Researching and optimizing the interaction between human experts and
+  CNS 2.0 to create a seamless, trustworthy, and effective cognitive partnership.
+lastmod: '2025-07-30'
+meta_description: Detailed research project overview on optimizing the interface,
+  trust calibration, and cognitive load management for human experts collaborating
+  with the CNS 2.0 AI system.
+meta_keywords:
+- Human-AI Collaboration
+- CNS 2.0
+- XAI
+- Trust Calibration
+- Cognitive Partnership
+section: cns-2.0-research-roadmap
 sitemap:
   changefreq: monthly
+  filename: sitemap.xml
   priority: 0.6
-  filename: sitemap.xml  
-section: "cns-2.0-research-roadmap"
+structured_data_webpage:
+  about:
+  - Human-AI Collaboration
+  - CNS 2.0 HCI
+  - Explainable AI (XAI) in practice
+  - Trust Calibration methodologies
+  description: Research focused on designing user interfaces, managing cognitive load,
+    and ensuring trust calibration for effective partnership between human experts
+    and the CNS 2.0 framework.
+  headline: 'Project 3: Optimizing Human-AI Collaboration for CNS 2.0'
+  keywords:
+  - Human-AI Collaboration
+  - CNS 2.0
+  - User Interface Design
+  - Cognitive Load
+  - Trust
+  originalSource: /guides/cns-2.0-research-roadmap/in-depth/ideas-paper/
+  type: CollectionPage
+title: 'Project 3: Human-AI Collaboration'
+weight: 19
 ---
 
 <!--

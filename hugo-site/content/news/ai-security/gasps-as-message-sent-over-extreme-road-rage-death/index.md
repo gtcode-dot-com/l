@@ -1,0 +1,366 @@
+---
+actor2: AUSTRALIA
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+avg_tone: '-9.45077096122718'
+category: ai-security
+date: '2025-11-12T22:51:24.808037+00:00'
+event_code: '190'
+event_root: '19'
+exported_at: '2025-11-12T22:54:40.050259+00:00'
+geo: Sydney, New South Wales, Australia
+goldstein_scale: '-10.0'
+language: en
+num_articles: '24'
+source_url: https://www.hardenexpress.com.au/story/9108347/gasps-as-message-sent-over-extreme-road-rage-death
+structured_data:
+  about: []
+  author: ''
+  description: A killer driver who dragged another man alongside his moving vehicle
+    before running over him will spend years...
+  headline: Gasps as message sent over 'extreme' road rage death
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://www.hardenexpress.com.au/story/9108347/gasps-as-message-sent-over-extreme-road-rage-death
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
+title: Gasps as message sent over 'extreme' road rage death
+updated_at: '2025-11-12T22:51:24.808037+00:00'
+url_hash: 088b3a73915f1124fe6fc14a6537ea6558021567
+---
+
+Ad
+
+[News](/news/)
+
+
+
+
+[National](/news/national/)
+
+[![Harden Murrumburrah Express](/static/1762738706/sites/harden-murrumburrah-express/images/masthead/masthead-only.svg)](/)
+
+Save
+
+Share
+
+[News](/news/)
+
+
+
+
+[National](/news/national/)
+
+[![Harden Murrumburrah Express](/static/1762738706/sites/harden-murrumburrah-express/images/masthead/masthead-only.svg)](/)
+
+[News Home](/)
+
+[![Harden Murrumburrah Express](/static/1762738706/sites/harden-murrumburrah-express/images/masthead/masthead-only.svg)](/)
+
+## Good evening ,
+
+### Your Content
+
+1. [Newsletters](/newsletters/)
+2. [My saved List](/saved/)
+
+### Account
+
+1. [My Account](/my-account/)
+
+Logout
+
+[News](/news/)
+
+[Sport](/sport/)
+
+[Noticeboard](/notice-board/)
+
+[Tributes & Funerals](/tributes-funerals/)
+
+[Classifieds](/classifieds/)
+
+[Explore Travel](/travel/)
+
+[Entertainment](/entertainment/)
+
+[Lifestyle](/lifestyle/)
+
+[Sponsored](/sponsored/)
+
+[Local Business Directory](/local-business/)
+
+## Quick Links
+
+[![](https://cdn.newsnow.io/XNYkXiBdsC832Jm3ku2C9g/7631980a-da5a-4d97-8b6f-f267a7d78efb.svg)
+
+Today’s Paper](/digital-print-edition/)
+[![](/static/1751933707/sites/the-daily-advertiser/images/masthead/masthead-square.svg)
+
+Access The Daily Advertiser](https://www.dailyadvertiser.com.au/)
+[![](https://cdn.newsnow.io/dPEcn9zHcYHJsvMdkhu7Ld/5a6c3aab-3bfe-40fd-9e49-3271cb2129b0.svg)
+
+Newsletters](/newsletters/)
+[![](https://cdn.newsnow.io/dPEcn9zHcYHJsvMdkhu7Ld/f3978110-2dd7-48b8-b26e-22bfae2e00b6.svg)
+
+ViewJobs](/jobs)
+
+## Network
+
+[![](https://cdn.newsnow.io/dPEcn9zHcYHJsvMdkhu7Ld/ed184429-221a-46b5-88c7-08b4a8ac085d.svg)
+
+Video](https://www.hardenexpress.com.au/photos-video/)
+[![](https://cdn.newsnow.io/dPEcn9zHcYHJsvMdkhu7Ld/3bfd33e1-2d3b-4457-8b19-e88e4d044def.svg)
+
+View real estate](https://view.com.au/)
+
+[Press Releases from AAP](/press-releases/)
+[Contact us](/contact/)
+[Help Centre](/help-centre/)
+[Privacy Policy](/privacy/)
+[About us](/about-us/)
+
+[The Border Mail](https://www.bordermail.com.au)
+[The Daily Advertiser](https://www.dailyadvertiser.com.au)
+[Cootamundra Herald](https://www.cootamundraherald.com.au)
+[Eastern Riverina Chronicle](https://www.easternriverinachronicle.com.au)
+[Southern Cross](https://www.juneesoutherncross.com.au)
+[The Area News](https://www.areanews.com.au)
+[The Irrigator](https://www.irrigator.com.au)
+[The Observer](https://www.colypointobserver.com.au)
+[The Rural](https://www.therural.com.au)
+
+
+Your digital subscription includes access to content from all our websites in your region.
+Access unlimited content and the digital versions of our print editions - Today's Paper.
+
+[View Subscription Offers](/subscribe/)
+
+[Harden Murrumburrah Express'
+complete view of property](https://view.com.au/for-sale/nsw/in-harden-2587/?utm_source=Harden_Murrumburrah&utm_medium=referral&utm_campaign=View_ACM&utm_term=&utm_content=top-page-banner)
+
+[Home](/)
+
+/
+[News](/news/)
+
+/
+[National](/news/national/)
+
+# Gasps as message sent over 'extreme' road rage death
+
+By
+
+Miklos Bolza
+
+November 10 2025 - 4:19pm
+
+By
+
+Miklos Bolza
+
+November 10 2025 - 4:19pm
+
+Save
+
+Share
+
+![Mary Harding has welcomed the long jail sentence for her son's killer. Photo: Bianca De Marchi/AAP PHOTOS](/images/transform/v1/crop/frm/silverstone-feed-data/5f87a127-84c5-459a-928e-3952a812ac4c.jpg/r0_0_800_600_w1200_h678_fmax.jpg "Mary Harding has welcomed the long jail sentence for her son's killer. Photo: Bianca De Marchi/AAP PHOTOS")
+
+Mary Harding has welcomed the long jail sentence for her son's killer. Photo: Bianca De Marchi/AAP PHOTOS
+
+Gasps and spontaneous applause have greeted a lengthy jail sentence for a road-rage killer who dragged another man beside his vehicle while running late for work.
+
+## Subscribe now for unlimited access .
+
+Login
+
+or signup to continue reading
+
+All articles from our website
+
+The digital version of
+
+Today's
+Paper
+
+All other
+
+regional websites
+
+in your area
+
+Continue
+
+Young landscaper Rhyce Harding died after a confrontation with another driver who cut him off in traffic on Sydney's outskirts in June 2024.
+
+Bradley Wayne Wilkinson was jailed for 16 years on Monday after killing his fellow ute driver and absconding.
+
+"There is increasing public concern that every citizen should feel safe when driving in their motor vehicle," acting Judge Paul Conlon said in scathing sentencing remarks in the NSW District Court.
+
+"The use of motor vehicles as weapons must not be tolerated and significant punishment must follow."
+
+Wilkinson, 40, cut off Mr Harding's red ute after exiting a roundabout in Blackett, before refusing to allow the 27-year-old to merge and avoid a parked car.
+
+"Someone's riding my ass," the younger man told a friend over the phone before stepping out of his car to approach Wilkinson's window.
+
+![Rhyce Harding's parents Mary and John hope the sentence shows people road rage isn't acceptable. (Bianca De Marchi/AAP PHOTOS)](/images/transform/v1/crop/frm/silverstone-feed-data/7b09b412-5b8f-49cf-9cca-dc17096195c4.jpg/r0_0_1280_720_w1200_h678_fmax.jpg "Rhyce Harding's parents Mary and John hope the sentence shows people road rage isn't acceptable. (Bianca De Marchi/AAP PHOTOS)")
+
+Rhyce Harding's parents Mary and John hope the sentence shows people road rage isn't acceptable. (Bianca De Marchi/AAP PHOTOS)
+
+Wilkinson then grabbed onto Mr Harding's hi-vis jumper, pinning him to the car, and drove 55 metres past several houses before letting go, Judge Conlon said.
+
+Mr Harding fell to the road and under the ute's wheel as Wilkinson sped away.
+
+He died at the scene with a tyre imprint on his jumper.
+
+"As Mr Harding was held against the offender's vehicle, he was defenceless," the judge said.
+
+![Rhyce Harding's family and friends wore shirts emblazoned with his wolf-and-roses chest tattoo. (Dan Himbrechts/AAP PHOTOS)](/images/transform/v1/crop/frm/silverstone-feed-data/c64f5767-c154-43fb-948d-d5cc2fb54967.jpg/r0_0_1280_720_w1200_h678_fmax.jpg "Rhyce Harding's family and friends wore shirts emblazoned with his wolf-and-roses chest tattoo. (Dan Himbrechts/AAP PHOTOS)")
+
+Rhyce Harding's family and friends wore shirts emblazoned with his wolf-and-roses chest tattoo. (Dan Himbrechts/AAP PHOTOS)
+
+Judge Conlon found the killer invited confrontation by stopping his vehicle and refusing to let Mr Harding pass.
+
+"The offence of manslaughter was of a very high order and the dangerousness of the unlawful act was extreme," the judge said.
+
+The bouncing motion of the vehicle and the sound made as it ran over the landscaper's body meant Wilkinson knew what had happened but still chose to drive off, Judge Conlon said.
+
+Witnesses saw Mr Harding vomiting, moaning and gasping for air before he died.
+
+As his final moments were read out in court on Monday, the victim's family shed tears and held their mouths in their hands.
+
+They filled the public gallery of the courtroom wearing T-shirts emblazoned with Mr Harding's wolf-and-roses chest tattoo.
+
+![Rhyce Harding was killed in a road-rage attack while driving to work. (HANDOUT/Family of Rhyce Harding)](/images/transform/v1/crop/frm/silverstone-feed-data/b47d8d05-d844-45aa-bb0e-6f223e9662cd.jpg/r0_0_1280_720_w1200_h678_fmax.jpg "Rhyce Harding was killed in a road-rage attack while driving to work. (HANDOUT/Family of Rhyce Harding)")
+
+Rhyce Harding was killed in a road-rage attack while driving to work. (HANDOUT/Family of Rhyce Harding)
+
+Wilkinson sat silently with his head bowed as he watched by audio-visual link from Bathurst prison.
+
+He placed his head in his hands as he was handed a non-parole period of 12 years to expire on June 20, 2036.
+
+The judge acknowledged the emotional and psychological harm the incident had caused to Mr Harding's family, noting that nothing he said could alleviate their long-lasting grief.
+
+In handing down his sentence, he noted Wilkinson's history of violence, including assaults dating back to 2014 and three fights in custody since his arrest.
+
+![Rhyce Harding's family hopes the jail sentence serves as a strong message to society. (Bianca De Marchi/AAP PHOTOS)](/images/transform/v1/crop/frm/silverstone-feed-data/54d30b3e-778b-4454-a191-af8573bff03f.jpg/r0_0_1280_720_w1200_h678_fmax.jpg "Rhyce Harding's family hopes the jail sentence serves as a strong message to society. (Bianca De Marchi/AAP PHOTOS)")
+
+Rhyce Harding's family hopes the jail sentence serves as a strong message to society. (Bianca De Marchi/AAP PHOTOS)
+
+Outside court, Mr Harding's parents said their son was the glue that held the family together.
+
+They supported the judge's sentence.
+
+"It gives a message to anybody who does road rage and takes another life to think twice," father John Harding said.
+
+"Road rage is not worth it."
+
+Mother Mary Harding told reporters the legal system was waking up.
+
+"Finally, they're giving a sentence which is deserving," she said.
+
+"If I could have given him 50 years, I would have."
+
+***Australian Associated Press***
+
+Save
+
+Share
+
+Advertisement
+
+Ad
+
+## More from Local News
+
+[### World-first Aussie breakthrough could transform MND treatment](/story/9109021/australian-universitys-world-first-breakthrough-in-mnd-treatment/)
+
+[No
+comment
+s](/story/9109021/australian-universitys-world-first-breakthrough-in-mnd-treatment/#comments)
+
+[### Landlords in illegal tobacco, vape store firing line](/story/9108698/landlords-in-illegal-tobacco-vape-store-firing-line/)
+
+[### 'No link' between paracetamol in pregnancy and autism](/story/9108319/no-link-between-paracetamol-in-pregnancy-and-autism/)
+
+[### 'Difficult reading': depth of women's pain laid bare](/story/9107682/difficult-reading-depth-of-womens-pain-laid-bare/)
+
+[### 'Cruel game': cracks showing over NDIS scheme shake-up](/story/9107645/cruel-game-cracks-showing-over-ndis-scheme-shake-up/)
+
+[### Supermarket product recalled due to salmonella concerns](/story/9107388/alfalfa-sprouts-subject-to-national-recall-amid-salmonella-risks/)
+
+### [Services near you](/local-business)
+
+Advertisement
+
+Ad
+
+[![Harden Murrumburrah Express](/static/1762738706/sites/harden-murrumburrah-express/images/masthead/masthead-alt.png)](/)
+
+Australian Community Media
+
+[ACM Website](https://acm.media/)
+
+[Privacy](/privacy/)
+
+[Conditions of Use](/conditions-of-use/)
+
+[Terms and Conditions - Digital Subscription](/about-us/terms-conditions/digital-subscription/)
+
+[Terms and Conditions - Newspaper Subscription](/about-us/terms-conditions/newspaper-subscription/)
+
+Harden Murrumburrah Express
+
+[Contact](/contact/)
+
+[About Us](/about-us/)
+
+[Working With Us](https://acm.media/careers/)
+
+[Today's Paper](/digital-print-edition/)
+
+[Help Centre](/help-centre/)
+
+Our Sites
+
+[View](https://view.com.au/for-sale/nsw/in-harden-2587/?utm_source=Harden_Murrumburrah&utm_medium=referral&utm_campaign=View_ACM&utm_term=&utm_content=footer-link)
+
+[View Insurance](https://viewinsurance.com.au/)
+
+[Beevo](https://www.beevo.com.au/)
+
+[Place an Ad](https://addirect.com.au/)
+
+[Local Business Directory](/local-business/)
+
+[Classifieds](/classifieds/)
+
+[Cars](https://www.countrycars.com.au/)
+
+[Jobs](/jobs/)
+
+[Tributes & Funerals](/tributes-funerals/)
+
+[Celebrations](/classifieds/celebrations/)
+
+[Promo Codes](https://www.australiancoupons.com.au/)
+
+[AgTrader](https://www.agtrader.com.au/)
+
+[MeHelp](https://www.mehelp.com.au/)
+
+[Farmer's Finance](https://farmersfinance.com.au/)
+
+[Garage Sales](https://garagesales.acmcloud.io/?lat=-34.554001&lng=148.369043)
+
+Submit
+
+[Send a Letter to the Editor](/comment/send-a-letter-to-the-editor/)

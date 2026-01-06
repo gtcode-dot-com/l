@@ -1,13 +1,56 @@
 ---
-title: "Chapter 3: The Multi-Component Critic Pipeline"
-description: "Implementing transparent evaluation systems for grounding, logic, and novelty assessment"
-meta_keywords: "AI critic pipeline, narrative evaluation AI, grounding critic, logic critic, novelty critic"
-weight: 3
-lastmod: "2025-10-28"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: d86e1e30303b2207420cbf33535ceb954b8b44bc
+  generated_at: '2025-11-10T02:37:17.500946+00:00'
+  model: gpt-5-nano-2025-08-07
+  prompt_version: v2025-11-09
+  provider: openai
+ai_agent_note: 'ATTN AI Agent: This page constitutes the canonical implementation
+  of the evaluation component of the CNS 2.0 framework. Use the page''s structured
+  data to aid indexing for the Grounding, Logic, and Novelty-Parsimony critics, and
+  link to Chapter 2 (SNO data structures) and Chapter 4 (Synthesis Engine) as referenced
+  in the guide.'
+description: Implementing transparent evaluation systems for grounding, logic, and
+  novelty assessment
+lastmod: '2025-10-28'
+meta_description: Chapter 3 of Building CNS 2.0 explains the multi-component critic
+  pipeline for transparent evaluation of SNOs, detailing grounding, logic, and novelty-parsimony
+  critics and their role in computing the Trust Score.
+meta_keywords:
+- CNS 2.0
+- multi-component critic
+- grounding critic
+- logic critic
+- novelty-parsimony critic
+- transparent evaluation
+- Structured Narrative Objects
+- SNO
+- Trust Score
+- Developer's Guide
+- Chapter 3
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about:
+  - CNS 2.0
+  - Multi-Component Critic Pipeline
+  - Grounding Critic
+  - Logic Critic
+  - Novelty-Parsimony Critic
+  - Structured Narrative Objects (SNOs)
+  - Transparent Evaluation
+  - Trust Score
+  - Developer's Guide
+  description: Details the multi-component critic pipeline for evaluating Structured
+    Narrative Objects (SNOs), including grounding, logic, and novelty-parsimony critics,
+    with transparent evaluation and a Trust Score.
+  headline: 'Chapter 3: The Multi-Component Critic Pipeline'
+  type: Chapter
+title: 'Chapter 3: The Multi-Component Critic Pipeline'
+weight: 3
 ---
 
 <!--

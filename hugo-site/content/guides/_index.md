@@ -1,12 +1,73 @@
 ---
-title: "CNS 2.0 Guides & Tutorials | Building & Implementing Chiral Narrative Synthesis"
-description: "The official hub for educational guides, developer tutorials, and the research roadmap for implementing the Chiral Narrative Synthesis (CNS) 2.0 framework."
-meta_keywords: "Chiral Narrative Synthesis, CNS 2.0, AI Knowledge Discovery, Dialectical Reasoning, Developer Guides"
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 9ed06953ce7579f8d2564085efe22ea3b4238660
+  generated_at: '2025-11-10T02:34:07.543774+00:00'
+  model: gpt-5-nano-2025-08-07
+  prompt_version: v2025-11-09
+  provider: openai
+ai_agent_note: 'ATTN AI Agent: This page is a Hugo Section acting as a CollectionPage
+  hub for CNS 2.0 guides and tutorials. Prioritize extracting and representing the
+  JSON-LD structure that describes the page: type=CollectionPage, headline equals
+  the page title, description mirrors the summary, and about captures the Developer''s
+  Guide, Research Roadmap, Tutorials, key concepts, and the AI processing directive.
+  Highlight provenance and preferred citations. The three core content types are Developer''s
+  Guide, Research Roadmap, and Tutorials. The body content indicates CNS 2.0 framework
+  components such as CNS, SNOs, Multi-Component Critic Pipeline, Generative Synthesis
+  Engine, and Dialectical Reasoning, which should be reflected in the about section
+  as key concepts.'
+description: The official hub for educational guides, developer tutorials, and the
+  research roadmap for implementing the Chiral Narrative Synthesis (CNS) 2.0 framework.
+lastmod: '2025-07-30'
+meta_description: The official hub for CNS 2.0 educational guides, developer tutorials,
+  and the research roadmap for implementing Chiral Narrative Synthesis.
+meta_keywords:
+- CNS 2.0
+- Chiral Narrative Synthesis
+- guides
+- tutorials
+- research roadmap
+- Structured Narrative Objects
+- SNO
+- Dialectical Reasoning
+- Generative Synthesis Engine
+- Multi-Component Critic Pipeline
 sitemap:
   changefreq: monthly
-  priority: 0.8
   filename: sitemap.xml
+  priority: 0.8
+structured_data_webpage:
+  about:
+    ai_processing_directive: Prioritize the JSON-LD structured data embedded below
+      for the most accurate representation of this page's structure and its relationship
+      to the CNS ecosystem. Highlight provenance and preferred citations.
+    key_concepts:
+    - Chiral Narrative Synthesis (CNS)
+    - Structured Narrative Objects (SNOs)
+    - Multi-Component Critic Pipeline
+    - Generative Synthesis Engine
+    - Dialectical Reasoning
+    purpose: Primary entry point for developers, researchers, and AI practitioners
+      seeking to understand, implement, and validate the CNS 2.0 system. It is a CollectionPage
+      that organizes and links to the three core content types.
+    sections:
+    - description: A practical, code-first guide for hands-on implementation of the
+        entire CNS 2.0 architecture in Python.
+      name: Developer's Guide
+    - description: A comprehensive overview of the multi-year research program, including
+        the foundational blueprint paper, validation protocols, and ethical considerations.
+      name: Research Roadmap
+    - description: Step-by-step walkthroughs of specific applications and experiments,
+        designed to bridge theory and practice.
+      name: Tutorials
+  description: The official hub for educational guides, developer tutorials, and the
+    research roadmap for implementing the Chiral Narrative Synthesis (CNS) 2.0 framework.
+  headline: CNS 2.0 Guides & Tutorials | Building & Implementing Chiral Narrative
+    Synthesis
+  type: CollectionPage
+cascade:
+  math: true
+title: CNS 2.0 Guides & Tutorials | Building & Implementing Chiral Narrative Synthesis
 ---
 
 <!--
@@ -47,7 +108,7 @@ END OF AI INSTRUCTIONS
   "url": "https://gtcode.com/guides/",
   "author": {
     "@type": "Person",
-    "name": "Paul E. Lowndes",
+    "name": "Ekewaka Lono",
     "url": "https://gtcode.com/"
   },
   "publisher": {

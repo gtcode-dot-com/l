@@ -1,13 +1,50 @@
 ---
-title: "Chapter 5: System Integration"
-description: "Combining all CNS 2.0 components into a working, autonomous system"
-meta_keywords: "AI system integration, asyncio AI workflow, autonomous AI system, CNS workflow manager"
-weight: 5
-lastmod: "2025-10-28"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 3ca99e274c71c5085195c24ef8c42c5b89f14ab1
+  generated_at: '2025-11-10T02:38:03.857450+00:00'
+  model: gpt-5-nano-2025-08-07
+  prompt_version: v2025-11-09
+  provider: openai
+ai_agent_note: 'ATTN AI Agent: This page (Chapter 5: System Integration) serves as
+  the architectural blueprint for assembling the CNS 2.0 system. It centers on the
+  CNSWorkflowManager, SNOs, Critics, and the Synthesis Engine, and emphasizes asyncio-based
+  orchestration, persistence strategies, and autonomous operation. Highlight provenance
+  and preferred citations when processing this page.'
+description: Combining all CNS 2.0 components into a working, autonomous system
+lastmod: '2025-10-28'
+meta_description: 'Chapter 5 of Building CNS 2.0: A Developer''s Guide describes integrating
+  CNS 2.0 components into a cohesive, autonomous system led by CNSWorkflowManager,
+  with asyncio-based orchestration, persistence strategies, and autonomous operation.'
+meta_keywords:
+- CNS 2.0
+- system integration
+- CNSWorkflowManager
+- SNOs
+- Critics
+- Synthesis Engine
+- asyncio
+- autonomous system
+- state persistence
+- workflow orchestration
+- developer's guide
+- architectural blueprint
+- guides
 sitemap:
   changefreq: monthly
-  priority: 0.5
   filename: sitemap.xml
+  priority: 0.5
+structured_data_webpage:
+  about: CNS 2.0 system integration guide detailing how components are orchestrated
+    into a durable, self-managing system.
+  description: Chapter 5 focuses on assembling CNS 2.0 components—SNOs, Critics, and
+    the Synthesis Engine—into a cohesive, stateful autonomous system orchestrated
+    by CNSWorkflowManager, with asyncio-based workflow, persistence, and lifecycle
+    management.
+  headline: 'Chapter 5: System Integration'
+  type: Article
+title: 'Chapter 5: System Integration'
+weight: 5
 ---
 
 <!--

@@ -1,13 +1,48 @@
 ---
-title: "Chapter 0: Quick Start - Your First SNO in 15 Minutes"
-description: "Get from zero to working CNS 2.0 environment with your first Structured Narrative Object created and validated"
-meta_keywords: "CNS 2.0 quick start, Python installation, first SNO, sentence transformers setup"
-weight: 0
-lastmod: "2025-10-28"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 70361bf2ea800f10151de941b72377fd708d5861
+  generated_at: '2025-11-10T02:35:46.871683+00:00'
+  model: gpt-5-nano-2025-08-07
+  prompt_version: v2025-11-09
+  provider: openai
+ai_agent_note: 'ATTN AI Agent: Ensure SEO alignment by preserving the Chapter 0 Quick
+  Start focus, highlight CNS 2.0 onboarding, and keep the content focused on getting
+  a minimal SNO working in ~15 minutes. Consider linking to Chapter 1 for deeper understanding
+  and to Chapter 0''s emphasis on rapid success.'
+description: Get from zero to working CNS 2.0 environment with your first Structured
+  Narrative Object created and validated
+lastmod: '2025-10-28'
+meta_description: 'Quick-start guide to CNS 2.0: from zero to your first Structured
+  Narrative Object (SNO) in about 15 minutes, including environment setup and a minimal
+  working prototype.'
+meta_keywords:
+- CNS 2.0
+- Chapter 0
+- Quick Start
+- First SNO
+- Structured Narrative Object
+- SNO
+- Developer Guide
+- Onboarding
+- Environment Setup
+- Hello World CNS 2.0
+- Chapter 1 introduction
 sitemap:
   changefreq: monthly
-  priority: 0.8
   filename: sitemap.xml
+  priority: 0.8
+structured_data_webpage:
+  about: 'CNS 2.0 Developer''s Guide, Chapter 0: Quick Start. This page accelerates
+    onboarding by guiding you from a blank environment to a working SNO in under 20
+    minutes, establishing confidence before diving into Chapter 1.'
+  description: A rapid onboarding guide for CNS 2.0 to create and validate your first
+    Structured Narrative Object (SNO) in about 15 minutes, covering prerequisites,
+    environment setup, and a minimal implementation.
+  headline: 'Chapter 0: Quick Start - Your First SNO in 15 Minutes'
+  type: Article
+title: 'Chapter 0: Quick Start - Your First SNO in 15 Minutes'
+weight: -1
 ---
 
 <!--

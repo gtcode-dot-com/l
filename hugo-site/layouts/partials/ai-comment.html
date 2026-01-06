@@ -1,0 +1,20 @@
+{{- $comments := .Params.ai_commentary -}}
+{{- if and $comments (gt (len $comments) 0) -}}
+  <section class="ai-commentary">
+    <!-- AI Commentary -->
+    <h2 class="section-title">AI Commentary</h2>
+    {{ range $comments }}
+      <article class="card ai-comment">
+        {{ if .title }}<h3>{{ .title }}</h3>{{ end }}
+        {{ if .body }}<p>{{ .body }}</p>{{ end }}
+      </article>
+    {{ end }}
+    {{ with .Params.ai_commentary_meta }}
+      {{ if .provider }}
+        <p class="text-muted" style="font-size:0.9rem;">
+          Generated via {{ .provider }} {{ with .model }}({{ . }}){{ end }} on {{ .generated_at }}.
+        </p>
+      {{ end }}
+    {{ end }}
+  </section>
+{{- end -}}

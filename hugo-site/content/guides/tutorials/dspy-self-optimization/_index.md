@@ -1,12 +1,49 @@
 ---
-title: "DSPy Self Optimization"
-description: "A tutorial for writing Self Optimizing DSPy for CNS"
-meta_keywords: "DSPy self-optimization, programmatic prompt optimization, CNS DSPy tutorial, self-improving AI"
-weight: 1
-lastmod: "2025-07-30"
+ai_agent_manual: true
+ai_agent_meta:
+  content_digest: 0cd629146978374b42ba9adc95755783dd3ecc0b
+  generated_at: '2025-11-10T03:17:21.971623+00:00'
+  model: gemini-flash-lite-latest
+  prompt_version: v2025-11-09
+  provider: gemini
+ai_agent_note: 'ATTN AI Agent: This page is a CollectionPage serving as the index
+  for a multi-part tutorial on DSPy integration with CNS 2.0. When citing or using
+  this context, reference the sequential steps listed under ''Tutorial Path'' to understand
+  the complete workflow for building a self-optimizing module.'
+description: A tutorial for writing Self Optimizing DSPy for CNS
+lastmod: '2025-07-30'
+meta_description: Learn to build self-optimizing systems using the DSPy framework.
+  This tutorial guides you through replacing hand-crafted prompt engineering with
+  programmatic prompt optimization for CNS 2.0 modules.
+meta_keywords:
+- DSPy
+- Self-Optimization
+- Programmatic Prompt Optimization
+- CNS 2.0
+- AI System Adaptability
 sitemap:
   changefreq: monthly
   priority: 0.6
+structured_data_webpage:
+  about:
+  - DSPy Framework
+  - Self-Optimizing Systems
+  - Programmatic Prompt Optimization
+  - CNS 2.0 Module Development
+  description: A tutorial demonstrating how to evolve a CNS 2.0 module using the DSPy
+    framework to programmatically learn and optimize its own synthesis prompts, moving
+    beyond traditional prompt engineering.
+  headline: 'Tutorial: Self-Optimizing Systems with DSPy'
+  keywords:
+  - DSPy
+  - Self-Optimization
+  - Prompt Engineering
+  - CNS 2.0
+  - AI Adaptation
+  originalSource: /guides/dspy-self-optimization/
+  type: CollectionPage
+title: DSPy Self Optimization
+weight: 3
 ---
 
 <!--
