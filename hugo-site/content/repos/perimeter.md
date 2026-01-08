@@ -1,11 +1,11 @@
 ---
-date: '2026-01-06'
+date: '2026-01-08'
 description: A typing system for Elixir/OTP.
 docs_url: https://hexdocs.pm/perimeter/
 hex_url: https://hex.pm/packages/perimeter
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 61'
+- 'Recent downloads: 45'
 - 'All-time downloads: 97'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/perimeter
@@ -25,7 +25,7 @@ A typing system for Elixir/OTP.
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 61
+- Recent downloads: 45
 - All-time downloads: 97
 - Maintainers: nshkrdotcom
 

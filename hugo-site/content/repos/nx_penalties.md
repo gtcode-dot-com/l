@@ -1,12 +1,12 @@
 ---
-date: '2026-01-06'
+date: '2026-01-08'
 description: Composable regularization penalties and loss functions for the Nx ecosystem
 docs_url: https://hexdocs.pm/nx_penalties/
 hex_url: https://hex.pm/packages/nx_penalties
 highlights:
 - 'Latest release: v0.1.2'
-- 'Recent downloads: 93'
-- 'All-time downloads: 93'
+- 'Recent downloads: 95'
+- 'All-time downloads: 95'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/nx_penalties
 slug: nx_penalties
@@ -25,8 +25,8 @@ Composable regularization penalties and loss functions for the Nx ecosystem
 ## Package Information
 
 - Latest release: v0.1.2
-- Recent downloads: 93
-- All-time downloads: 93
+- Recent downloads: 95
+- All-time downloads: 95
 - Maintainers: nshkrdotcom
 
 ## Installation

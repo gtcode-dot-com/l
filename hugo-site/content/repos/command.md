@@ -1,12 +1,12 @@
 ---
-date: '2026-01-06'
+date: '2026-01-08'
 description: Command center core library for AI agent orchestration
 docs_url: https://hexdocs.pm/command/
 hex_url: https://hex.pm/packages/command
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 16'
-- 'All-time downloads: 16'
+- 'Recent downloads: 17'
+- 'All-time downloads: 17'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/command
 slug: command
@@ -25,8 +25,8 @@ Command center core library for AI agent orchestration
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 16
-- All-time downloads: 16
+- Recent downloads: 17
+- All-time downloads: 17
 - Maintainers: nshkrdotcom
 
 ## Installation

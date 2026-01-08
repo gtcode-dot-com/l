@@ -1,13 +1,13 @@
 ---
-date: '2026-01-06'
+date: '2026-01-08'
 description: The unified observability layer for the AI Control Plane, delivering
   full-fidelity tracing for AI agent reasoning, tool calls, and state transitions.
 docs_url: https://hexdocs.pm/aitrace/
 hex_url: https://hex.pm/packages/aitrace
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 46'
-- 'All-time downloads: 1224'
+- 'Recent downloads: 49'
+- 'All-time downloads: 1227'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/AITrace
 slug: aitrace
@@ -26,8 +26,8 @@ The unified observability layer for the AI Control Plane, delivering full-fideli
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 46
-- All-time downloads: 1224
+- Recent downloads: 49
+- All-time downloads: 1227
 - Maintainers: nshkrdotcom
 
 ## Installation
