@@ -1072,10 +1072,10 @@
 - slug: "portfolio_core"
   name: "Portfolio Core"
   stage: "Preview"
-  version: "0.3.1"
+  version: "0.4.0"
   summary: "Hexagonal architecture core for building flexible RAG systems in Elixir."
   highlights:
-    - "Latest release: v0.3.1"
+    - "Latest release: v0.4.0"
     - "Recent downloads: 116"
     - "All-time downloads: 116"
     - "Maintainers: nshkrdotcom"
