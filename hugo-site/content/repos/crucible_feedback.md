@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/crucible_feedback/
 hex_url: https://hex.pm/packages/crucible_feedback
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 36'
-- 'All-time downloads: 36'
+- 'Recent downloads: 40'
+- 'All-time downloads: 40'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_feedback
 slug: crucible_feedback
@@ -25,8 +25,8 @@ Feedback collection, drift detection, and active learning for ML pipelines
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 36
-- All-time downloads: 36
+- Recent downloads: 40
+- All-time downloads: 40
 - Maintainers: nshkrdotcom
 
 ## Installation

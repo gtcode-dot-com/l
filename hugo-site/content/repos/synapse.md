@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/synapse/
 hex_url: https://hex.pm/packages/synapse
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 73'
-- 'All-time downloads: 73'
+- 'Recent downloads: 77'
+- 'All-time downloads: 77'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/synapse
 slug: synapse
@@ -26,8 +26,8 @@ Declarative, headless multi-agent runtime for code review orchestration with sig
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 73
-- All-time downloads: 73
+- Recent downloads: 77
+- All-time downloads: 77
 - Maintainers: nshkrdotcom
 
 ## Installation
