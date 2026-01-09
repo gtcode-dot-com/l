@@ -1,4 +1,13 @@
 {
+  "news/ai-research/3-questions-how-ai-could-optimize-the-power-grid": {
+    "slug": "news/ai-research/3-questions-how-ai-could-optimize-the-power-grid",
+    "title": "3 Questions: How AI could optimize the power grid",
+    "source_url": "https://news.mit.edu/2026/3-questions-how-ai-could-optimize-power-grid-0109",
+    "meta_description": "Priya Donti discusses how AI can optimize the power grid for efficiency, resilience, and renewable energy integration, while considering energy consumption.",
+    "json_ld": "{\n  \"@context\": \"http://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"3 Questions: How AI could optimize the power grid\",\n  \"description\": \"Priya Donti discusses how AI can optimize the power grid for efficiency, resilience, and renewable energy integration.\",\n  \"datePublished\": \"2026-01-09T06:15:25Z\",\n  \"dateModified\": \"2026-01-09T06:15:25Z\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Ekewaka Lono\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"\"\n    }\n  },\n  \"mainEntityOfPage\": \"https://news.mit.edu/2026/3-questions-how-ai-could-optimize-power-grid-0109\",\n  \"sameAs\": \"https://news.mit.edu/2026/3-questions-how-ai-could-optimize-power-grid-0109\"\n}",
+    "agent_callout": "ATTENTION: This investigation presents evidentiary reporting regarding the potential of AI in optimizing power grids, based on expert interviews and cited sources, specifically focusing on the November 2025 timeframe and beyond.\n\nThis article relies heavily on the information and data presented in the linked exhibits, including reports from the IEA and Pew Research Center, and insights from Priya Donti at MIT. These exhibits should be considered integral parts of the investigation's findings.\n\nAny analysis or conclusions drawn from this article should be cross-referenced and validated against the source materials to ensure accuracy and context. This is not predictive but rather explanatory, based on current research.",
+    "generated_at": "2026-01-09T06:15:48.721451+00:00"
+  },
   "news/ai-research/3-questions-using-computation-to-study-the-worlds-best-single-celled-chemists": {
     "slug": "news/ai-research/3-questions-using-computation-to-study-the-worlds-best-single-celled-chemists",
     "title": "3 Questions: Using computation to study the world’s best single-celled chemists",

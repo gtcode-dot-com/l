@@ -1,11 +1,11 @@
 ---
 date: '2026-01-09'
-description: A comprehensive Elixir infrastructure and observability library providing
-  essential services for building robust, scalable applications.
+description: Lightweight resilience primitives for backoff, retry, rate-limit windows,
+  circuit breakers, semaphores, and telemetry helpers.
 docs_url: https://hexdocs.pm/foundation/
 hex_url: https://hex.pm/packages/foundation
 highlights:
-- 'Latest release: v0.1.5'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 61'
 - 'All-time downloads: 344'
 - 'Maintainers: nshkrdotcom'
@@ -16,16 +16,16 @@ tags:
 - MIT
 - Hex.pm
 title: Foundation
-version: 0.1.5
+version: 0.2.0
 ---
 
 ## About Foundation
 
-A comprehensive Elixir infrastructure and observability library providing essential services for building robust, scalable applications.
+Lightweight resilience primitives for backoff, retry, rate-limit windows, circuit breakers, semaphores, and telemetry helpers.
 
 ## Package Information
 
-- Latest release: v0.1.5
+- Latest release: v0.2.0
 - Recent downloads: 61
 - All-time downloads: 344
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `foundation` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'foundation', "~> 0.1.5"}
+    {'foundation', "~> 0.2.0"}
   ]
 end
 ```

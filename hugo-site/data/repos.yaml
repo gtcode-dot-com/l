@@ -715,10 +715,10 @@
 - slug: "foundation"
   name: "Foundation"
   stage: "Preview"
-  version: "0.1.5"
-  summary: "A comprehensive Elixir infrastructure and observability library providing essential services for building robust, scalable applications."
+  version: "0.2.0"
+  summary: "Lightweight resilience primitives for backoff, retry, rate-limit windows, circuit breakers, semaphores, and telemetry helpers."
   highlights:
-    - "Latest release: v0.1.5"
+    - "Latest release: v0.2.0"
     - "Recent downloads: 61"
     - "All-time downloads: 344"
     - "Maintainers: nshkrdotcom"
