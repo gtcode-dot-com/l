@@ -4,7 +4,7 @@ description: Intermediate Representation for the Crucible ML reliability ecosyst
 docs_url: https://hexdocs.pm/crucible_ir/
 hex_url: https://hex.pm/packages/crucible_ir
 highlights:
-- 'Latest release: v0.2.1'
+- 'Latest release: v0.3.0'
 - 'Recent downloads: 140'
 - 'All-time downloads: 140'
 - 'Maintainers: nshkrdotcom'
@@ -15,7 +15,7 @@ tags:
 - MIT
 - Hex.pm
 title: Crucible Ir
-version: 0.2.1
+version: 0.3.0
 ---
 
 ## About Crucible Ir
@@ -24,7 +24,7 @@ Intermediate Representation for the Crucible ML reliability ecosystem
 
 ## Package Information
 
-- Latest release: v0.2.1
+- Latest release: v0.3.0
 - Recent downloads: 140
 - All-time downloads: 140
 - Maintainers: nshkrdotcom
@@ -36,7 +36,7 @@ Add `crucible_ir` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'crucible_ir', "~> 0.2.1"}
+    {'crucible_ir', "~> 0.3.0"}
   ]
 end
 ```

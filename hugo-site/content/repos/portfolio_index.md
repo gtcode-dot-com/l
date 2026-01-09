@@ -5,7 +5,7 @@ description: Production adapters and pipelines for PortfolioCore. Vector stores,
 docs_url: https://hexdocs.pm/portfolio_index/
 hex_url: https://hex.pm/packages/portfolio_index
 highlights:
-- 'Latest release: v0.3.1'
+- 'Latest release: v0.4.0'
 - 'Recent downloads: 115'
 - 'All-time downloads: 115'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Portfolio Index
-version: 0.3.1
+version: 0.4.0
 ---
 
 ## About Portfolio Index
@@ -25,7 +25,7 @@ Production adapters and pipelines for PortfolioCore. Vector stores, graph stores
 
 ## Package Information
 
-- Latest release: v0.3.1
+- Latest release: v0.4.0
 - Recent downloads: 115
 - All-time downloads: 115
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `portfolio_index` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'portfolio_index', "~> 0.3.1"}
+    {'portfolio_index', "~> 0.4.0"}
   ]
 end
 ```
