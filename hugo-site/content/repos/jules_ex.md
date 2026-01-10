@@ -6,7 +6,7 @@ docs_url: https://hexdocs.pm/jules_ex/
 hex_url: https://hex.pm/packages/jules_ex
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 35'
+- 'Recent downloads: 27'
 - 'All-time downloads: 40'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/jules_ex
@@ -26,7 +26,7 @@ Elixir client library for the Jules API. Jules is an AI-powered coding assistant
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 35
+- Recent downloads: 27
 - All-time downloads: 40
 - Maintainers: nshkrdotcom
 
