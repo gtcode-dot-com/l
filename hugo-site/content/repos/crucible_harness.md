@@ -1,5 +1,5 @@
 ---
-date: '2026-01-09'
+date: '2026-01-10'
 description: Experimental research framework for running AI benchmarks at scale. Provides
   orchestration, streaming processing with Flow/GenStage, and statistical analysis.
 docs_url: https://hexdocs.pm/crucible_harness/
