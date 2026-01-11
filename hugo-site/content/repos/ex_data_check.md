@@ -7,7 +7,7 @@ docs_url: https://hexdocs.pm/ex_data_check/
 hex_url: https://hex.pm/packages/ex_data_check
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 105'
+- 'Recent downloads: 97'
 - 'All-time downloads: 112'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/ExDataCheck
@@ -27,7 +27,7 @@ Production-ready data validation and quality library for Elixir ML pipelines. Pr
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 105
+- Recent downloads: 97
 - All-time downloads: 112
 - Maintainers: nshkrdotcom
 

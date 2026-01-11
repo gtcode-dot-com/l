@@ -7,7 +7,7 @@ docs_url: https://hexdocs.pm/codex_sdk/
 hex_url: https://hex.pm/packages/codex_sdk
 highlights:
 - 'Latest release: v0.5.0'
-- 'Recent downloads: 481'
+- 'Recent downloads: 474'
 - 'All-time downloads: 481'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/codex_sdk
@@ -27,7 +27,7 @@ Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-r
 ## Package Information
 
 - Latest release: v0.5.0
-- Recent downloads: 481
+- Recent downloads: 474
 - All-time downloads: 481
 - Maintainers: nshkrdotcom
 
