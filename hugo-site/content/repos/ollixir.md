@@ -1,5 +1,5 @@
 ---
-date: '2026-01-10'
+date: '2026-01-11'
 description: Ollixir - A nifty Elixir client library for the Ollama API.
 docs_url: https://hexdocs.pm/ollixir/
 hex_url: https://hex.pm/packages/ollixir

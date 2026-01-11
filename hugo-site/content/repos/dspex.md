@@ -1,5 +1,5 @@
 ---
-date: '2026-01-10'
+date: '2026-01-11'
 description: DSPy for Elixir via SnakeBridge - Declarative LLM programming
 docs_url: https://hexdocs.pm/dspex/
 hex_url: https://hex.pm/packages/dspex

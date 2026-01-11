@@ -1,5 +1,5 @@
 ---
-date: '2026-01-10'
+date: '2026-01-11'
 description: Labeling queue library for managing human labeling workflows. Domain-agnostic
   HITL (human-in-the-loop) data annotation with inter-rater reliability metrics (Cohen's
   kappa, Fleiss'…

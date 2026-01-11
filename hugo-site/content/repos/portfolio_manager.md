@@ -1,5 +1,5 @@
 ---
-date: '2026-01-10'
+date: '2026-01-11'
 description: Application layer for Portfolio ecosystem providing RAG workflows, graph
   analysis, domain registries, and CLI tools built on portfolio_core and portfolio_index.
 docs_url: https://hexdocs.pm/portfolio_manager/
