@@ -1191,10 +1191,10 @@
 - slug: "snakepit"
   name: "Snakepit"
   stage: "Active"
-  version: "0.9.1"
+  version: "0.10.1"
   summary: "High-performance pooler and session manager for external language integrations. Supports Python, Node.js, Ruby, and more with gRPC streaming, session management, and production-\u2026"
   highlights:
-    - "Latest release: v0.9.1"
+    - "Latest release: v0.10.1"
     - "Recent downloads: 1291"
     - "All-time downloads: 1774"
     - "Maintainers: nshkrdotcom"
