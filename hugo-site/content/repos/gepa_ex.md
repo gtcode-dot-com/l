@@ -6,12 +6,12 @@ docs_url: https://hexdocs.pm/gepa_ex/
 hex_url: https://hex.pm/packages/gepa_ex
 highlights:
 - 'Latest release: v0.1.2'
-- 'Recent downloads: 95'
-- 'All-time downloads: 95'
+- 'Recent downloads: 107'
+- 'All-time downloads: 107'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/gepa_ex
 slug: gepa_ex
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -26,8 +26,8 @@ Elixir implementation of the GEPA (Genetic-Pareto) optimizer that combines LLM-p
 ## Package Information
 
 - Latest release: v0.1.2
-- Recent downloads: 95
-- All-time downloads: 95
+- Recent downloads: 107
+- All-time downloads: 107
 - Maintainers: nshkrdotcom
 
 ## Installation

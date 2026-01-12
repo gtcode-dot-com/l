@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/ollixir/
 hex_url: https://hex.pm/packages/ollixir
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 14'
-- 'All-time downloads: 14'
+- 'Recent downloads: 18'
+- 'All-time downloads: 18'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/ollixir
 slug: ollixir
@@ -25,8 +25,8 @@ Ollixir - A nifty Elixir client library for the Ollama API.
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 14
-- All-time downloads: 14
+- Recent downloads: 18
+- All-time downloads: 18
 - Maintainers: nshkrdotcom
 
 ## Installation

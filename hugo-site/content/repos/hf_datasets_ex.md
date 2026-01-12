@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/hf_datasets_ex/
 hex_url: https://hex.pm/packages/hf_datasets_ex
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 45'
-- 'All-time downloads: 45'
+- 'Recent downloads: 52'
+- 'All-time downloads: 52'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/hf_datasets_ex
 slug: hf_datasets_ex
@@ -26,8 +26,8 @@ HuggingFace Datasets for Elixir - Load, stream, and process ML datasets from the
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 45
-- All-time downloads: 45
+- Recent downloads: 52
+- All-time downloads: 52
 - Maintainers: nshkrdotcom
 
 ## Installation
