@@ -1174,10 +1174,10 @@
 - slug: "snakebridge"
   name: "Snakebridge"
   stage: "Active"
-  version: "0.8.1"
+  version: "0.8.2"
   summary: "Compile-time generator for type-safe Elixir bindings to Python libraries"
   highlights:
-    - "Latest release: v0.8.1"
+    - "Latest release: v0.8.2"
     - "Recent downloads: 555"
     - "All-time downloads: 555"
     - "Maintainers: nshkrdotcom"

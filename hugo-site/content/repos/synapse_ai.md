@@ -1,5 +1,5 @@
 ---
-date: '2026-01-11'
+date: '2026-01-12'
 description: Synapse integration for altar_ai - SDK-backed LLM providers for multi-agent
   workflows. Provides unified adapter layer for Gemini, Claude, and Codex with automatic
   fallback,…

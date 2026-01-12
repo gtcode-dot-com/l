@@ -1,5 +1,5 @@
 ---
-date: '2026-01-11'
+date: '2026-01-12'
 description: Explainable AI (XAI) tools for the Crucible framework. Includes LIME
   implementations, SHAP-like explanations, feature attribution, and model interpretability
   for local and global…
