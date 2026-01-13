@@ -1,5 +1,5 @@
 ---
-date: '2026-01-12'
+date: '2026-01-13'
 description: Sample factory library for generating, transforming, and computing measurements
   on arbitrary samples. Domain-agnostic data pipeline orchestration for ML dataset
   preparation.

@@ -1,5 +1,5 @@
 ---
-date: '2026-01-12'
+date: '2026-01-13'
 description: 'North Shore AI Registry: Distributed model registry with PubSub coordination,
   health monitoring, and multi-backend storage for ML reliability research.'
 docs_url: https://hexdocs.pm/nsai_registry/
