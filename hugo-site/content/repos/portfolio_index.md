@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/portfolio_index/
 hex_url: https://hex.pm/packages/portfolio_index
 highlights:
 - 'Latest release: v0.4.0'
-- 'Recent downloads: 158'
-- 'All-time downloads: 158'
+- 'Recent downloads: 164'
+- 'All-time downloads: 164'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_index
 slug: portfolio_index
@@ -26,8 +26,8 @@ Production adapters and pipelines for PortfolioCore. Vector stores, graph stores
 ## Package Information
 
 - Latest release: v0.4.0
-- Recent downloads: 158
-- All-time downloads: 158
+- Recent downloads: 164
+- All-time downloads: 164
 - Maintainers: nshkrdotcom
 
 ## Installation

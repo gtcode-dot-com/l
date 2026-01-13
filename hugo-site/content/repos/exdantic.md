@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/exdantic/
 hex_url: https://hex.pm/packages/exdantic
 highlights:
 - 'Latest release: v0.0.2'
-- 'Recent downloads: 38'
-- 'All-time downloads: 612'
+- 'Recent downloads: 48'
+- 'All-time downloads: 622'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/exdantic
 slug: exdantic
@@ -25,8 +25,8 @@ Advanced schema definition and validation library for Elixir
 ## Package Information
 
 - Latest release: v0.0.2
-- Recent downloads: 38
-- All-time downloads: 612
+- Recent downloads: 48
+- All-time downloads: 622
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/nsai_registry/
 hex_url: https://hex.pm/packages/nsai_registry
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 36'
-- 'All-time downloads: 36'
+- 'Recent downloads: 38'
+- 'All-time downloads: 38'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/nsai_registry
 slug: nsai_registry
@@ -26,8 +26,8 @@ North Shore AI Registry: Distributed model registry with PubSub coordination, he
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 36
-- All-time downloads: 36
+- Recent downloads: 38
+- All-time downloads: 38
 - Maintainers: nshkrdotcom
 
 ## Installation

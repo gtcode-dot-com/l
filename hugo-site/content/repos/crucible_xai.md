@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/crucible_xai/
 hex_url: https://hex.pm/packages/crucible_xai
 highlights:
 - 'Latest release: v0.4.0'
-- 'Recent downloads: 148'
-- 'All-time downloads: 165'
+- 'Recent downloads: 171'
+- 'All-time downloads: 190'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_xai
 slug: crucible_xai
@@ -27,8 +27,8 @@ Explainable AI (XAI) tools for the Crucible framework. Includes LIME implementat
 ## Package Information
 
 - Latest release: v0.4.0
-- Recent downloads: 148
-- All-time downloads: 165
+- Recent downloads: 171
+- All-time downloads: 190
 - Maintainers: nshkrdotcom
 
 ## Installation
