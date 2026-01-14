@@ -5,7 +5,7 @@ docs_url: https://hexdocs.pm/crucible_datasets/
 hex_url: https://hex.pm/packages/crucible_datasets
 highlights:
 - 'Latest release: v0.5.4'
-- 'Recent downloads: 278'
+- 'Recent downloads: 276'
 - 'All-time downloads: 296'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_datasets
@@ -25,7 +25,7 @@ Dataset management and caching for AI research benchmarks
 ## Package Information
 
 - Latest release: v0.5.4
-- Recent downloads: 278
+- Recent downloads: 276
 - All-time downloads: 296
 - Maintainers: nshkrdotcom
 
