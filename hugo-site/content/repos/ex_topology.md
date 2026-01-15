@@ -1,5 +1,5 @@
 ---
-date: '2026-01-14'
+date: '2026-01-15'
 description: Generic Topological Data Analysis for Elixir
 docs_url: https://hexdocs.pm/ex_topology/
 hex_url: https://hex.pm/packages/ex_topology
