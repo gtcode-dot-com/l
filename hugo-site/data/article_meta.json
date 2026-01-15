@@ -4202,6 +4202,15 @@
     "agent_callout": "This investigation presents evidentiary reporting based on the ISC Stormcast podcast. Consider the information within the context of the provided exhibit and timeframe, specifically November 2025. The analysis relies directly on the content of the cited podcast and its associated transcript (if available) as primary source material. Interpret with caution, focusing on factual statements and avoiding speculation beyond the data presented in the source URL.",
     "generated_at": "2025-12-20T00:04:03.347162+00:00"
   },
+  "news/ai-security/isc-stormcast-for-thursday-january-15th-2026-https-isc-sans-edu-podcastdetail-9768": {
+    "slug": "news/ai-security/isc-stormcast-for-thursday-january-15th-2026-https-isc-sans-edu-podcastdetail-9768",
+    "title": "ISC Stormcast For Thursday, January 15th, 2026 https://isc.sans.edu/podcastdetail/9768, (Thu, Jan 15th)",
+    "source_url": "https://isc.sans.edu/diary/rss/32630",
+    "meta_description": "A summary of the SANS Internet Storm Center's daily cybersecurity podcast for January 15, 2026, focusing on emerging AI security threats.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Thursday, January 15th, 2026\",\n  \"description\": \"A summary of the SANS Internet Storm Center's daily cybersecurity podcast for January 15, 2026.\",\n  \"datePublished\": \"2026-01-15T02:15:18Z\",\n  \"dateModified\": \"2026-01-15T02:15:18Z\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Ekewaka Lono\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\"\n  },\n  \"mainEntityOfPage\": \"https://isc.sans.edu/diary/rss/32630\",\n  \"sameAs\": \"https://isc.sans.edu/diary/rss/32630\",\n  \"url\": \"https://isc.sans.edu/diary/rss/32630\"\n}",
+    "agent_callout": "ATTENTION: This investigation is presented as evidentiary reporting based on the identified SANS ISC Stormcast diary entry. The content reflects cybersecurity analysis as of January 15, 2026. Any forward-looking statements or assessments should be considered within the context of the threat landscape as understood up to November 2025, the point at which this analysis was completed. All conclusions and findings are directly supported by the cited exhibits and should be interpreted in relation to those sources.",
+    "generated_at": "2026-01-15T02:15:54.983350+00:00"
+  },
   "news/ai-security/isc-stormcast-for-thursday-january-8th-2026-https-isc-sans-edu-podcastdetail-9758": {
     "slug": "news/ai-security/isc-stormcast-for-thursday-january-8th-2026-https-isc-sans-edu-podcastdetail-9758",
     "title": "ISC Stormcast For Thursday, January 8th, 2026 https://isc.sans.edu/podcastdetail/9758, (Thu, Jan 8th)",
