@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/altar/
 hex_url: https://hex.pm/packages/altar
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 1203'
-- 'All-time downloads: 1700'
+- 'Recent downloads: 1163'
+- 'All-time downloads: 1717'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/ALTAR
 slug: altar
@@ -27,8 +27,8 @@ Altar provides a robust, type-safe foundation for building AI agent tools in Eli
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 1203
-- All-time downloads: 1700
+- Recent downloads: 1163
+- All-time downloads: 1717
 - Maintainers: nshkrdotcom
 
 ## Installation
