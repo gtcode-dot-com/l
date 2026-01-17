@@ -1,5 +1,5 @@
 ---
-date: '2026-01-16'
+date: '2026-01-17'
 description: 'CrucibleFramework: A thin orchestration layer for experiment pipelines.
   Provides pipeline execution, stage behaviour, and optional persistence.'
 docs_url: https://hexdocs.pm/crucible_framework/
