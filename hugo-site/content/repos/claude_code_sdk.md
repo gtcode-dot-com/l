@@ -6,7 +6,7 @@ hex_url: https://hex.pm/packages/claude_code_sdk
 highlights:
 - 'Latest release: v0.2.2'
 - 'Recent downloads: 186'
-- 'All-time downloads: 312'
+- 'All-time downloads: 314'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/claude_code_sdk_elixir
 slug: claude_code_sdk
@@ -26,7 +26,7 @@ An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude
 
 - Latest release: v0.2.2
 - Recent downloads: 186
-- All-time downloads: 312
+- All-time downloads: 314
 - Maintainers: nshkrdotcom
 
 ## Installation

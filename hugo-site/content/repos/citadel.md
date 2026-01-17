@@ -6,7 +6,7 @@ hex_url: https://hex.pm/packages/citadel
 highlights:
 - 'Latest release: v0.0.0'
 - 'Recent downloads: 29'
-- 'All-time downloads: 232'
+- 'All-time downloads: 234'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/Citadel
 slug: citadel
@@ -26,7 +26,7 @@ The command and control layer for the AI-powered enterprise.
 
 - Latest release: v0.0.0
 - Recent downloads: 29
-- All-time downloads: 232
+- All-time downloads: 234
 - Maintainers: nshkrdotcom
 
 ## Installation

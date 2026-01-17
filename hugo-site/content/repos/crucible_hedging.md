@@ -7,7 +7,7 @@ hex_url: https://hex.pm/packages/crucible_hedging
 highlights:
 - 'Latest release: v0.4.1'
 - 'Recent downloads: 146'
-- 'All-time downloads: 168'
+- 'All-time downloads: 170'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_hedging
 slug: crucible_hedging
@@ -27,7 +27,7 @@ Request hedging for tail latency reduction in distributed systems. Implements Go
 
 - Latest release: v0.4.1
 - Recent downloads: 146
-- All-time downloads: 168
+- All-time downloads: 170
 - Maintainers: nshkrdotcom
 
 ## Installation

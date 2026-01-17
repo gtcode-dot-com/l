@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/rag_ex/
 hex_url: https://hex.pm/packages/rag_ex
 highlights:
 - 'Latest release: v0.3.4'
-- 'Recent downloads: 144'
-- 'All-time downloads: 144'
+- 'Recent downloads: 146'
+- 'All-time downloads: 146'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/rag_ex
 slug: rag_ex
@@ -25,8 +25,8 @@ A library to make building performant RAG systems in Elixir easy
 ## Package Information
 
 - Latest release: v0.3.4
-- Recent downloads: 144
-- All-time downloads: 144
+- Recent downloads: 146
+- All-time downloads: 146
 - Maintainers: nshkrdotcom
 
 ## Installation

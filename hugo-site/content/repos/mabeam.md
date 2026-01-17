@@ -8,7 +8,7 @@ hex_url: https://hex.pm/packages/mabeam
 highlights:
 - 'Latest release: v0.0.1'
 - 'Recent downloads: 40'
-- 'All-time downloads: 75'
+- 'All-time downloads: 77'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/mabeam
 slug: mabeam
@@ -28,7 +28,7 @@ A multi-agent framework for the BEAM (Erlang VM) that provides agent lifecycle m
 
 - Latest release: v0.0.1
 - Recent downloads: 40
-- All-time downloads: 75
+- All-time downloads: 77
 - Maintainers: nshkrdotcom
 
 ## Installation

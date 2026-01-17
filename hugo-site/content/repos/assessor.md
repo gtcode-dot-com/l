@@ -6,7 +6,7 @@ hex_url: https://hex.pm/packages/assessor
 highlights:
 - 'Latest release: v0.0.0'
 - 'Recent downloads: 23'
-- 'All-time downloads: 376'
+- 'All-time downloads: 378'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/Assessor
 slug: assessor
@@ -26,7 +26,7 @@ The definitive CI/CD platform for AI Quality.
 
 - Latest release: v0.0.0
 - Recent downloads: 23
-- All-time downloads: 376
+- All-time downloads: 378
 - Maintainers: nshkrdotcom
 
 ## Installation
