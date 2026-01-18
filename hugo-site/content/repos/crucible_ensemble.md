@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/crucible_ensemble/
 hex_url: https://hex.pm/packages/crucible_ensemble
 highlights:
 - 'Latest release: v0.4.1'
-- 'Recent downloads: 146'
-- 'All-time downloads: 167'
+- 'Recent downloads: 147'
+- 'All-time downloads: 168'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_ensemble
 slug: crucible_ensemble
@@ -26,8 +26,8 @@ Multi-model ensemble prediction with voting strategies for AI reliability. Lever
 ## Package Information
 
 - Latest release: v0.4.1
-- Recent downloads: 146
-- All-time downloads: 167
+- Recent downloads: 147
+- All-time downloads: 168
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/command/
 hex_url: https://hex.pm/packages/command
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 30'
-- 'All-time downloads: 30'
+- 'Recent downloads: 31'
+- 'All-time downloads: 31'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/command
 slug: command
@@ -25,8 +25,8 @@ Command center core library for AI agent orchestration
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 30
-- All-time downloads: 30
+- Recent downloads: 31
+- All-time downloads: 31
 - Maintainers: nshkrdotcom
 
 ## Installation
