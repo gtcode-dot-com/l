@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/crucible_bench/
 hex_url: https://hex.pm/packages/crucible_bench
 highlights:
 - 'Latest release: v0.4.0'
-- 'Recent downloads: 186'
-- 'All-time downloads: 210'
+- 'Recent downloads: 192'
+- 'All-time downloads: 216'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_bench
 slug: crucible_bench
@@ -26,8 +26,8 @@ Comprehensive benchmarking framework for AI research. Measures latency, throughp
 ## Package Information
 
 - Latest release: v0.4.0
-- Recent downloads: 186
-- All-time downloads: 210
+- Recent downloads: 192
+- All-time downloads: 216
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/foundation/
 hex_url: https://hex.pm/packages/foundation
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 124'
-- 'All-time downloads: 411'
+- 'Recent downloads: 126'
+- 'All-time downloads: 413'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/foundation
 slug: foundation
@@ -26,8 +26,8 @@ Lightweight resilience primitives for backoff, retry, rate-limit windows, circui
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 124
-- All-time downloads: 411
+- Recent downloads: 126
+- All-time downloads: 413
 - Maintainers: nshkrdotcom
 
 ## Installation

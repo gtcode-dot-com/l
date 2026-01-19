@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/crucible_model_registry/
 hex_url: https://hex.pm/packages/crucible_model_registry
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 126'
-- 'All-time downloads: 126'
+- 'Recent downloads: 137'
+- 'All-time downloads: 137'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_model_registry
 slug: crucible_model_registry
@@ -25,8 +25,8 @@ Model versioning, artifact storage, and lineage tracking for ML pipelines
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 126
-- All-time downloads: 126
+- Recent downloads: 137
+- All-time downloads: 137
 - Maintainers: nshkrdotcom
 
 ## Installation
