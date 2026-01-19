@@ -1,5 +1,5 @@
 ---
-date: '2026-01-18'
+date: '2026-01-19'
 description: Advanced telemetry collection and analysis for AI research
 docs_url: https://hexdocs.pm/crucible_telemetry/
 hex_url: https://hex.pm/packages/crucible_telemetry

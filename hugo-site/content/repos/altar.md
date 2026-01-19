@@ -1,5 +1,5 @@
 ---
-date: '2026-01-18'
+date: '2026-01-19'
 description: Altar provides a robust, type-safe foundation for building AI agent tools
   in Elixir. It offers a clean contract to define and execute tools locally, with
   a clear promotion path to…

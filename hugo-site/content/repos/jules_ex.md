@@ -1,5 +1,5 @@
 ---
-date: '2026-01-18'
+date: '2026-01-19'
 description: Elixir client library for the Jules API. Jules is an AI-powered coding
   assistant that can automate software development tasks across multiple repositories.
 docs_url: https://hexdocs.pm/jules_ex/
