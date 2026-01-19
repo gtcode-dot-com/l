@@ -1120,6 +1120,23 @@
   docs_url: "https://hexdocs.pm/portfolio_manager/"
   repo_url: "https://github.com/nshkrdotcom/portfolio_manager"
 
+- slug: "prompt_runner_sdk"
+  name: "Prompt Runner Sdk"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "Prompt Runner SDK - An Elixir toolkit for orchestrating multi-step prompt executions with Claude Agent SDK and Codex SDK. Features streaming output, progress tracking, multi-\u2026"
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/prompt_runner_sdk"
+  docs_url: "https://hexdocs.pm/prompt_runner_sdk/"
+  repo_url: "https://github.com/nshkrdotcom/prompt_runner_sdk"
+
 - slug: "rag_ex"
   name: "Rag Ex"
   stage: "Preview"
