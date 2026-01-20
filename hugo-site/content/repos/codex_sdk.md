@@ -1,5 +1,5 @@
 ---
-date: '2026-01-19'
+date: '2026-01-20'
 description: Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready
   interface with streaming support, comprehensive event handling, and robust testing
   utilities.
