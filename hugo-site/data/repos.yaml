@@ -1191,10 +1191,10 @@
 - slug: "snakebridge"
   name: "Snakebridge"
   stage: "Active"
-  version: "0.9.0"
+  version: "0.11.0"
   summary: "Compile-time generator for type-safe Elixir bindings to Python libraries"
   highlights:
-    - "Latest release: v0.9.0"
+    - "Latest release: v0.11.0"
     - "Recent downloads: 777"
     - "All-time downloads: 777"
     - "Maintainers: nshkrdotcom"
