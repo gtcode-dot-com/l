@@ -477,10 +477,10 @@
 - slug: "dspex"
   name: "Dspex"
   stage: "Preview"
-  version: "0.4.0"
+  version: "0.5.0"
   summary: "DSPy for Elixir via SnakeBridge - Declarative LLM programming"
   highlights:
-    - "Latest release: v0.4.0"
+    - "Latest release: v0.5.0"
     - "Recent downloads: 223"
     - "All-time downloads: 380"
     - "Maintainers: nshkrdotcom"
