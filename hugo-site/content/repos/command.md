@@ -1,5 +1,5 @@
 ---
-date: '2026-01-20'
+date: '2026-01-21'
 description: Command center core library for AI agent orchestration
 docs_url: https://hexdocs.pm/command/
 hex_url: https://hex.pm/packages/command
