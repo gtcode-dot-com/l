@@ -5,12 +5,12 @@ docs_url: https://hexdocs.pm/crucible_train/
 hex_url: https://hex.pm/packages/crucible_train
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 99'
-- 'All-time downloads: 99'
+- 'Recent downloads: 107'
+- 'All-time downloads: 107'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_train
 slug: crucible_train
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -25,8 +25,8 @@ Unified ML training infrastructure for Elixir/BEAM
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 99
-- All-time downloads: 99
+- Recent downloads: 107
+- All-time downloads: 107
 - Maintainers: nshkrdotcom
 
 ## Installation

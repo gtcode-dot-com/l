@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/prompt_runner_sdk/
 hex_url: https://hex.pm/packages/prompt_runner_sdk
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 12'
-- 'All-time downloads: 12'
+- 'Recent downloads: 20'
+- 'All-time downloads: 20'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/prompt_runner_sdk
 slug: prompt_runner_sdk
@@ -27,8 +27,8 @@ Prompt Runner SDK - An Elixir toolkit for orchestrating multi-step prompt execut
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 12
-- All-time downloads: 12
+- Recent downloads: 20
+- All-time downloads: 20
 - Maintainers: nshkrdotcom
 
 ## Installation

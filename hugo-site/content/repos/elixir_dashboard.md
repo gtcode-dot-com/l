@@ -7,7 +7,7 @@ hex_url: https://hex.pm/packages/elixir_dashboard
 highlights:
 - 'Latest release: v0.2.0'
 - 'Recent downloads: 73'
-- 'All-time downloads: 107'
+- 'All-time downloads: 119'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/elixir_dashboard
 slug: elixir_dashboard
@@ -27,7 +27,7 @@ A Phoenix LiveView performance monitoring dashboard for tracking slow endpoints 
 
 - Latest release: v0.2.0
 - Recent downloads: 73
-- All-time downloads: 107
+- All-time downloads: 119
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/dspex/
 hex_url: https://hex.pm/packages/dspex
 highlights:
 - 'Latest release: v0.5.0'
-- 'Recent downloads: 223'
-- 'All-time downloads: 380'
+- 'Recent downloads: 255'
+- 'All-time downloads: 412'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/dspex
 slug: dspex
@@ -25,8 +25,8 @@ DSPy for Elixir via SnakeBridge - Declarative LLM programming
 ## Package Information
 
 - Latest release: v0.5.0
-- Recent downloads: 223
-- All-time downloads: 380
+- Recent downloads: 255
+- All-time downloads: 412
 - Maintainers: nshkrdotcom
 
 ## Installation
