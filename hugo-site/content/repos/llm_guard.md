@@ -1,5 +1,5 @@
 ---
-date: '2026-01-21'
+date: '2026-01-22'
 description: AI Firewall and guardrails for LLM-based Elixir applications. Provides
   prompt injection detection, data leakage prevention, jailbreak detection, and comprehensive
   security…
