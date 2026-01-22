@@ -6,12 +6,12 @@ docs_url: https://hexdocs.pm/synapse/
 hex_url: https://hex.pm/packages/synapse
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 98'
-- 'All-time downloads: 98'
+- 'Recent downloads: 102'
+- 'All-time downloads: 102'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/synapse
 slug: synapse
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -26,8 +26,8 @@ Declarative, headless multi-agent runtime for code review orchestration with sig
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 98
-- All-time downloads: 98
+- Recent downloads: 102
+- All-time downloads: 102
 - Maintainers: nshkrdotcom
 
 ## Installation

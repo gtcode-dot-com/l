@@ -7,12 +7,12 @@ docs_url: https://hexdocs.pm/anvil_ex/
 hex_url: https://hex.pm/packages/anvil_ex
 highlights:
 - 'Latest release: v0.1.1'
-- 'Recent downloads: 94'
-- 'All-time downloads: 94'
+- 'Recent downloads: 100'
+- 'All-time downloads: 100'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/anvil
 slug: anvil_ex
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -27,8 +27,8 @@ Labeling queue library for managing human labeling workflows. Domain-agnostic HI
 ## Package Information
 
 - Latest release: v0.1.1
-- Recent downloads: 94
-- All-time downloads: 94
+- Recent downloads: 100
+- All-time downloads: 100
 - Maintainers: nshkrdotcom
 
 ## Installation

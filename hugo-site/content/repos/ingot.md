@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/ingot/
 hex_url: https://hex.pm/packages/ingot
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 44'
-- 'All-time downloads: 44'
+- 'Recent downloads: 47'
+- 'All-time downloads: 47'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/ingot
 slug: ingot
@@ -27,8 +27,8 @@ Phoenix LiveView interface for sample generation and human labeling workflows. T
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 44
-- All-time downloads: 44
+- Recent downloads: 47
+- All-time downloads: 47
 - Maintainers: nshkrdotcom
 
 ## Installation
