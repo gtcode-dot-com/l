@@ -4247,6 +4247,15 @@
     "agent_callout": "ATTENTION: This investigation reports on squid behavior based on publicly available information. This is evidentiary reporting using a video exhibit dated around November/December 2025. Verification relies on the linked video and quoted commentary. Treat the information as contextual background for assessing technological developments and discussions in AI Security.",
     "generated_at": "2025-12-15T12:03:57.197264+00:00"
   },
+  "news/ai-security/friday-squid-blogging-giant-squid-in-the-star-trek-universe": {
+    "slug": "news/ai-security/friday-squid-blogging-giant-squid-in-the-star-trek-universe",
+    "title": "Friday Squid Blogging: Giant Squid in the Star Trek Universe",
+    "source_url": "https://www.schneier.com/blog/archives/2026/01/friday-squid-blogging-giant-squid-in-the-star-trek-universe.html",
+    "meta_description": "A Star Trek comic features Spock befriending a giant space squid; readers are invited to discuss unreported security news.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: Giant Squid in the Star Trek Universe\",\n  \"description\": \"Spock befriends a giant space squid in the comic Star Trek: Strange New Worlds: The Seeds of Salvation #5. Readers are invited to discuss security stories in the news.\",\n  \"datePublished\": \"2026-01-23T22:15:13Z\",\n  \"dateModified\": \"2026-01-23T22:15:13Z\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Ekewaka Lono\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"url\": \"https://example.com\" \n  },\n  \"mainEntityOfPage\": \"https://www.schneier.com/blog/archives/2026/01/friday-squid-blogging-giant-squid-in-the-star-trek-universe.html\",\n  \"sameAs\": \"https://www.schneier.com/blog/archives/2026/01/friday-squid-blogging-giant-squid-in-the-star-trek-universe.html\"\n}",
+    "agent_callout": "ATTENTION: This is evidentiary reporting concerning popular culture and associated commentary. The article discusses a Star Trek comic published around November 2025. Treat the linked comic preview as a key exhibit. All claims and analyses are predicated on the content found within the linked sources.",
+    "generated_at": "2026-01-23T22:15:49.773288+00:00"
+  },
   "news/ai-security/friday-squid-blogging-petting-a-squid": {
     "slug": "news/ai-security/friday-squid-blogging-petting-a-squid",
     "title": "Friday Squid Blogging: Petting a Squid",
