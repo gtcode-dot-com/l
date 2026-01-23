@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/portfolio_manager/
 hex_url: https://hex.pm/packages/portfolio_manager
 highlights:
 - 'Latest release: v0.3.1'
-- 'Recent downloads: 139'
-- 'All-time downloads: 139'
+- 'Recent downloads: 141'
+- 'All-time downloads: 141'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_manager
 slug: portfolio_manager
@@ -26,8 +26,8 @@ Application layer for Portfolio ecosystem providing RAG workflows, graph analysi
 ## Package Information
 
 - Latest release: v0.3.1
-- Recent downloads: 139
-- All-time downloads: 139
+- Recent downloads: 141
+- All-time downloads: 141
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/crucible_deployment/
 hex_url: https://hex.pm/packages/crucible_deployment
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 113'
-- 'All-time downloads: 113'
+- 'Recent downloads: 118'
+- 'All-time downloads: 118'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_deployment
 slug: crucible_deployment
@@ -25,8 +25,8 @@ Model deployment orchestration with health checking and rollback
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 113
-- All-time downloads: 113
+- Recent downloads: 118
+- All-time downloads: 118
 - Maintainers: nshkrdotcom
 
 ## Installation
