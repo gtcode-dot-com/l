@@ -1,5 +1,5 @@
 ---
-date: '2026-01-22'
+date: '2026-01-23'
 description: Cross-platform browser automation for Elixir with advanced WSL-to-Windows
   integration. Features headed browser support, Chrome profile integration, and WebSocket-based
   remote…

@@ -1,5 +1,5 @@
 ---
-date: '2026-01-22'
+date: '2026-01-23'
 description: Intermediate Representation for the Crucible ML reliability ecosystem
 docs_url: https://hexdocs.pm/crucible_ir/
 hex_url: https://hex.pm/packages/crucible_ir
