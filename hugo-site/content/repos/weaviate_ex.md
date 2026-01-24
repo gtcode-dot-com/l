@@ -1,5 +1,5 @@
 ---
-date: '2026-01-23'
+date: '2026-01-24'
 description: A modern Elixir client for Weaviate vector database with support for
   collections, objects, batch operations, GraphQL queries, and vector search. Includes
   health checks and…
