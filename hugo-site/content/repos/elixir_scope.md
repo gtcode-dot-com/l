@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/elixir_scope/
 hex_url: https://hex.pm/packages/elixir_scope
 highlights:
 - 'Latest release: v0.0.1'
-- 'Recent downloads: 32'
-- 'All-time downloads: 78'
+- 'Recent downloads: 34'
+- 'All-time downloads: 80'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/ElixirScope
 slug: elixir_scope
@@ -27,8 +27,8 @@ ElixirScope is a next-generation debugging and observability platform for Elixir
 ## Package Information
 
 - Latest release: v0.0.1
-- Recent downloads: 32
-- All-time downloads: 78
+- Recent downloads: 34
+- All-time downloads: 80
 - Maintainers: nshkrdotcom
 
 ## Installation
