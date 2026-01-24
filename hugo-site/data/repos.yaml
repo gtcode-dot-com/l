@@ -817,10 +817,10 @@
 - slug: "json_remedy"
   name: "Json Remedy"
   stage: "Stable"
-  version: "0.2.0"
+  version: "0.2.1"
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
-    - "Latest release: v0.2.0"
+    - "Latest release: v0.2.1"
     - "Recent downloads: 5456"
     - "All-time downloads: 12018"
     - "Maintainers: nshkrdotcom"

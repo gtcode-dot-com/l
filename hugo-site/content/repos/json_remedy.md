@@ -6,7 +6,7 @@ description: A blazingly fast Elixir library for repairing malformed JSON using 
 docs_url: https://hexdocs.pm/json_remedy/
 hex_url: https://hex.pm/packages/json_remedy
 highlights:
-- 'Latest release: v0.2.0'
+- 'Latest release: v0.2.1'
 - 'Recent downloads: 5456'
 - 'All-time downloads: 12018'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Json Remedy
-version: 0.2.0
+version: 0.2.1
 ---
 
 ## About Json Remedy
@@ -26,7 +26,7 @@ A blazingly fast Elixir library for repairing malformed JSON using binary patter
 
 ## Package Information
 
-- Latest release: v0.2.0
+- Latest release: v0.2.1
 - Recent downloads: 5456
 - All-time downloads: 12018
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `json_remedy` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'json_remedy', "~> 0.2.0"}
+    {'json_remedy', "~> 0.2.1"}
   ]
 end
 ```
