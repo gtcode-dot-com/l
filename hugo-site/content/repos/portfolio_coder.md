@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/portfolio_coder/
 hex_url: https://hex.pm/packages/portfolio_coder
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 38'
-- 'All-time downloads: 38'
+- 'Recent downloads: 40'
+- 'All-time downloads: 40'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/portfolio_coder
 slug: portfolio_coder
@@ -27,8 +27,8 @@ Code Intelligence Platform built on the Portfolio RAG ecosystem. Repository anal
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 38
-- All-time downloads: 38
+- Recent downloads: 40
+- All-time downloads: 40
 - Maintainers: nshkrdotcom
 
 ## Installation

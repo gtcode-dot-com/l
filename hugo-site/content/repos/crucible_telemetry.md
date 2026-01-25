@@ -5,8 +5,8 @@ docs_url: https://hexdocs.pm/crucible_telemetry/
 hex_url: https://hex.pm/packages/crucible_telemetry
 highlights:
 - 'Latest release: v0.4.0'
-- 'Recent downloads: 161'
-- 'All-time downloads: 185'
+- 'Recent downloads: 164'
+- 'All-time downloads: 188'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_telemetry
 slug: crucible_telemetry
@@ -25,8 +25,8 @@ Advanced telemetry collection and analysis for AI research
 ## Package Information
 
 - Latest release: v0.4.0
-- Recent downloads: 161
-- All-time downloads: 185
+- Recent downloads: 164
+- All-time downloads: 188
 - Maintainers: nshkrdotcom
 
 ## Installation

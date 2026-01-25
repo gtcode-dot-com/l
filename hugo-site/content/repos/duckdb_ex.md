@@ -7,7 +7,7 @@ hex_url: https://hex.pm/packages/duckdb_ex
 highlights:
 - 'Latest release: v0.2.0'
 - 'Recent downloads: 137'
-- 'All-time downloads: 181'
+- 'All-time downloads: 183'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/duckdb_ex
 slug: duckdb_ex
@@ -27,7 +27,7 @@ A 100% faithful port of the DuckDB Python client to Elixir, using the DuckDB CLI
 
 - Latest release: v0.2.0
 - Recent downloads: 137
-- All-time downloads: 181
+- All-time downloads: 183
 - Maintainers: nshkrdotcom
 
 ## Installation
