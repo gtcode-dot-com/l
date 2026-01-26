@@ -6,7 +6,7 @@ description: vLLM for Elixir via SnakeBridge - Easy, fast, and cheap LLM serving
 docs_url: https://hexdocs.pm/vllm/
 hex_url: https://hex.pm/packages/vllm
 highlights:
-- 'Latest release: v0.2.0'
+- 'Latest release: v0.2.1'
 - 'Recent downloads: 59'
 - 'All-time downloads: 59'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Vllm
-version: 0.2.0
+version: 0.2.1
 ---
 
 ## About Vllm
@@ -26,7 +26,7 @@ vLLM for Elixir via SnakeBridge - Easy, fast, and cheap LLM serving for everyone
 
 ## Package Information
 
-- Latest release: v0.2.0
+- Latest release: v0.2.1
 - Recent downloads: 59
 - All-time downloads: 59
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `vllm` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'vllm', "~> 0.2.0"}
+    {'vllm', "~> 0.2.1"}
   ]
 end
 ```
