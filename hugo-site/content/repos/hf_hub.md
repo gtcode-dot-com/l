@@ -5,7 +5,7 @@ description: Elixir client for HuggingFace Hub—dataset/model metadata, file do
 docs_url: https://hexdocs.pm/hf_hub/
 hex_url: https://hex.pm/packages/hf_hub
 highlights:
-- 'Latest release: v0.1.3'
+- 'Latest release: v0.2.0'
 - 'Recent downloads: 164'
 - 'All-time downloads: 164'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Hf Hub
-version: 0.1.3
+version: 0.2.0
 ---
 
 ## About Hf Hub
@@ -25,7 +25,7 @@ Elixir client for HuggingFace Hub—dataset/model metadata, file downloads, cach
 
 ## Package Information
 
-- Latest release: v0.1.3
+- Latest release: v0.2.0
 - Recent downloads: 164
 - All-time downloads: 164
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `hf_hub` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'hf_hub', "~> 0.1.3"}
+    {'hf_hub', "~> 0.2.0"}
   ]
 end
 ```

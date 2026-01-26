@@ -6,7 +6,7 @@ description: Prompt Runner SDK - An Elixir toolkit for orchestrating multi-step 
 docs_url: https://hexdocs.pm/prompt_runner_sdk/
 hex_url: https://hex.pm/packages/prompt_runner_sdk
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.1.1'
 - 'Recent downloads: 26'
 - 'All-time downloads: 26'
 - 'Maintainers: nshkrdotcom'
@@ -17,7 +17,7 @@ tags:
 - MIT
 - Hex.pm
 title: Prompt Runner Sdk
-version: 0.1.0
+version: 0.1.1
 ---
 
 ## About Prompt Runner Sdk
@@ -26,7 +26,7 @@ Prompt Runner SDK - An Elixir toolkit for orchestrating multi-step prompt execut
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.1.1
 - Recent downloads: 26
 - All-time downloads: 26
 - Maintainers: nshkrdotcom
@@ -38,7 +38,7 @@ Add `prompt_runner_sdk` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'prompt_runner_sdk', "~> 0.1.0"}
+    {'prompt_runner_sdk', "~> 0.1.1"}
   ]
 end
 ```
