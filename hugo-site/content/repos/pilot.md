@@ -1,5 +1,5 @@
 ---
-date: '2026-01-25'
+date: '2026-01-26'
 description: 'Interactive CLI/REPL for the NSAI ecosystem: unified interface for Crucible
   experiments, CNS dialectical synthesis, and ML reliability research.'
 docs_url: https://hexdocs.pm/pilot/
