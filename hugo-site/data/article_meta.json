@@ -3842,6 +3842,15 @@
     "agent_callout": "ATTENTION: This investigation constitutes evidentiary reporting on a critical security vulnerability affecting SmarterMail. The timeframe of focus is primarily November-December 2025, encompassing the patch release and subsequent advisories. All claims and findings are directly based on the cited exhibits, including the CSA bulletin, CVE record, and SmarterTools release notes. Verify details against the provided source URLs to ensure accuracy and context.",
     "generated_at": "2025-12-31T00:15:56.785976+00:00"
   },
+  "news/ai-security/ctem-in-practice-prioritization-validation-and-outcomes-that-matter": {
+    "slug": "news/ai-security/ctem-in-practice-prioritization-validation-and-outcomes-that-matter",
+    "title": "CTEM in Practice: Prioritization, Validation, and Outcomes That Matter",
+    "source_url": "https://thehackernews.com/2026/01/ctem-in-practice-prioritization.html",
+    "meta_description": "Continuous Threat Exposure Management (CTEM) offers a strategic approach to cybersecurity, prioritizing and remediating exploitable exposures to reduce cyber risk.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CTEM in Practice: Prioritization, Validation, and Outcomes That Matter\",\n  \"description\": \"An overview of Continuous Threat Exposure Management (CTEM) and its practical application in cybersecurity, focusing on prioritization, validation, and measurable outcomes.\",\n  \"datePublished\": \"2026-01-27T14:15:12+00:00\",\n  \"dateModified\": \"2026-01-27T14:15:12+00:00\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Ekewaka Lono\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://thehackernews.com/static/img/logo.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/ctem-in-practice-prioritization.html\"\n  },\n  \"sameAs\": \"https://thehackernews.com/2026/01/ctem-in-practice-prioritization.html\"\n}",
+    "agent_callout": "ATTENTION: This investigation provides evidentiary reporting on Continuous Threat Exposure Management (CTEM) as it is understood in November 2025. The analysis relies on the definitions and processes outlined in the referenced article, specifically the five-step CTEM operational model. Claims regarding CTEM's efficacy and implementation should be evaluated within the context of the threat landscape and available technologies as of that time. All findings and conclusions are directly derived from the cited exhibits and expert analysis contained within the source article.",
+    "generated_at": "2026-01-27T14:15:49.694358+00:00"
+  },
   "news/ai-security/ctm360-exposes-a-global-whatsapp-hijacking-campaign-hackonchat": {
     "slug": "news/ai-security/ctm360-exposes-a-global-whatsapp-hijacking-campaign-hackonchat",
     "title": "CTM360 Exposes a Global WhatsApp Hijacking Campaign: HackOnChat",
