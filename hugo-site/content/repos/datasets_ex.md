@@ -1,5 +1,5 @@
 ---
-date: '2026-01-26'
+date: '2026-01-27'
 description: Dataset management library for ML experiments with support for GSM8K,
   HumanEval, MMLU loaders and evaluation metrics (BLEU, ROUGE, F1).
 docs_url: https://hexdocs.pm/datasets_ex/
