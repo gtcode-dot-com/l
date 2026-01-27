@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/playwriter/
 hex_url: https://hex.pm/packages/playwriter
 highlights:
 - 'Latest release: v0.0.2'
-- 'Recent downloads: 72'
-- 'All-time downloads: 158'
+- 'Recent downloads: 75'
+- 'All-time downloads: 161'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/playwriter
 slug: playwriter
@@ -27,8 +27,8 @@ Cross-platform browser automation for Elixir with advanced WSL-to-Windows integr
 ## Package Information
 
 - Latest release: v0.0.2
-- Recent downloads: 72
-- All-time downloads: 158
+- Recent downloads: 75
+- All-time downloads: 161
 - Maintainers: nshkrdotcom
 
 ## Installation
