@@ -1123,10 +1123,10 @@
 - slug: "prompt_runner_sdk"
   name: "Prompt Runner Sdk"
   stage: "Incubating"
-  version: "0.1.1"
+  version: "0.1.2"
   summary: "Prompt Runner SDK - An Elixir toolkit for orchestrating multi-step prompt executions with Claude Agent SDK and Codex SDK. Features streaming output, progress tracking, multi-\u2026"
   highlights:
-    - "Latest release: v0.1.1"
+    - "Latest release: v0.1.2"
     - "Recent downloads: 32"
     - "All-time downloads: 32"
     - "Maintainers: nshkrdotcom"
