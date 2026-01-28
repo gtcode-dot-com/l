@@ -5,7 +5,7 @@ description: A comprehensive Elixir library for managing AI agent sessions, stat
 docs_url: https://hexdocs.pm/agent_session_manager/
 hex_url: https://hex.pm/packages/agent_session_manager
 highlights:
-- 'Latest release: v0.1.0'
+- 'Latest release: v0.1.1'
 - 'Recent downloads: 10'
 - 'All-time downloads: 10'
 - 'Maintainers: nshkrdotcom'
@@ -16,7 +16,7 @@ tags:
 - MIT
 - Hex.pm
 title: Agent Session Manager
-version: 0.1.0
+version: 0.1.1
 ---
 
 ## About Agent Session Manager
@@ -25,7 +25,7 @@ A comprehensive Elixir library for managing AI agent sessions, state persistence
 
 ## Package Information
 
-- Latest release: v0.1.0
+- Latest release: v0.1.1
 - Recent downloads: 10
 - All-time downloads: 10
 - Maintainers: nshkrdotcom
@@ -37,7 +37,7 @@ Add `agent_session_manager` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'agent_session_manager', "~> 0.1.0"}
+    {'agent_session_manager', "~> 0.1.1"}
   ]
 end
 ```
