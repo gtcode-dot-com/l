@@ -1,5 +1,5 @@
 ---
-date: '2026-01-27'
+date: '2026-01-28'
 description: Prompt Runner SDK - An Elixir toolkit for orchestrating multi-step prompt
   executions with Claude Agent SDK and Codex SDK. Features streaming output, progress
   tracking, multi-…
