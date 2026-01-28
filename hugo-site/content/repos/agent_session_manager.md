@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/agent_session_manager/
 hex_url: https://hex.pm/packages/agent_session_manager
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 0'
-- 'All-time downloads: 0'
+- 'Recent downloads: 10'
+- 'All-time downloads: 10'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/agent_session_manager
 slug: agent_session_manager
@@ -26,8 +26,8 @@ A comprehensive Elixir library for managing AI agent sessions, state persistence
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 0
-- All-time downloads: 0
+- Recent downloads: 10
+- All-time downloads: 10
 - Maintainers: nshkrdotcom
 
 ## Installation
