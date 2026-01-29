@@ -1,5 +1,5 @@
 ---
-date: '2026-01-28'
+date: '2026-01-29'
 description: Comprehensive benchmarking framework for AI research. Measures latency,
   throughput, cost, and reliability with percentile analysis and Nx numerical computations.
 docs_url: https://hexdocs.pm/crucible_bench/
