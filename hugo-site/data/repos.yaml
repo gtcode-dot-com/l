@@ -984,6 +984,23 @@
   docs_url: "https://hexdocs.pm/nsai_registry/"
   repo_url: "https://github.com/North-Shore-AI/nsai_registry"
 
+- slug: "nsai_work"
+  name: "Nsai Work"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "NsaiWork - Unified job scheduler for the North-Shore-AI platform. Protocol-first, multi-tenant job scheduling with priority queues, resource-aware scheduling, and pluggable\u2026"
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/nsai_work"
+  docs_url: "https://hexdocs.pm/nsai_work/"
+  repo_url: "https://github.com/North-Shore-AI/nsai_work"
+
 - slug: "nx_penalties"
   name: "Nx Penalties"
   stage: "Preview"
