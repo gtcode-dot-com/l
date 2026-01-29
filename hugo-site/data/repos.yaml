@@ -882,6 +882,23 @@
   docs_url: "https://hexdocs.pm/labeling_ir/"
   repo_url: "https://github.com/North-Shore-AI/labeling_ir"
 
+- slug: "lineage_ir"
+  name: "Lineage Ir"
+  stage: "Incubating"
+  version: "0.1.0"
+  summary: "Lineage IR for cross-system traces, spans, artifacts, and provenance edges. Provides a shared event envelope and sink interface for consolidation across runtimes."
+  highlights:
+    - "Latest release: v0.1.0"
+    - "Recent downloads: 0"
+    - "All-time downloads: 0"
+    - "Maintainers: nshkrdotcom"
+  tags:
+    - "MIT"
+    - "Hex.pm"
+  hex_url: "https://hex.pm/packages/lineage_ir"
+  docs_url: "https://hexdocs.pm/lineage_ir/"
+  repo_url: "https://github.com/North-Shore-AI/lineage_ir"
+
 - slug: "llm_guard"
   name: "Llm Guard"
   stage: "Preview"
