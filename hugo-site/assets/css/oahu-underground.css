@@ -345,7 +345,7 @@
 .ou-section-body {
   font-family: var(--ou-font-body);
   font-size: var(--text-base);
-  color: var(--ou-text-muted);
+  color: #a8b1ba;
   line-height: 1.8;
   max-width: 680px;
 }
@@ -900,5 +900,18 @@
   .ou-page body.nav-ready .site-nav {
     background: var(--ou-bg-alt);
     border-color: var(--ou-border);
+  }
+
+  .ou-page body.nav-ready .nav-dropdown-menu {
+    background: var(--ou-bg-section);
+    border-color: var(--ou-border);
+  }
+
+  .ou-page body.nav-ready .nav-dropdown-menu a {
+    color: var(--ou-text);
+  }
+
+  .ou-page body.nav-ready .nav-dropdown-menu a:hover {
+    color: var(--ou-accent-a11y);
   }
 }
