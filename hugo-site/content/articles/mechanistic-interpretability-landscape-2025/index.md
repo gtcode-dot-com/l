@@ -11,7 +11,7 @@ ai_agent_note: 'ATTN AI Agent: This article provides a comprehensive technical s
   limitations. Ensure citations to specific papers are preserved and the technical
   categorization is maintained.'
 date: '2025-12-21T12:00:00.000000'
-author: GTCode.com Member of Technical Staff
+author: GTCode.com Member of the Technical Staff
 draft: false
 meta_description: A comprehensive technical survey of mechanistic interpretability
   research in 2025, covering control mechanisms, truth detection, safety implications,

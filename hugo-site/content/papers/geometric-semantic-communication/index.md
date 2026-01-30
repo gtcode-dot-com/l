@@ -3,7 +3,7 @@ title: "Geometric Semantic Communication for Emergent Multi-Agent Intelligence"
 description: "A research agenda toward communication infrastructure for emergent artificial general intelligence, grounded in tensor logic and topological structures for truth, perspective, and narrative."
 date: 2025-12-20
 draft: false
-author: "GTCode.com Member of Technical Staff"
+author: "GTCode.com Member of the Technical Staff"
 tags:
   - multi-agent systems
   - tensor logic

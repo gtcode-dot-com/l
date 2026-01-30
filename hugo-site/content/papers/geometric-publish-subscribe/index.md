@@ -3,7 +3,7 @@ title: "Geometric Publish-Subscribe: Content-Based Routing in Embedding Space fo
 description: "A research proposal for GPS, a communication protocol for multi-agent systems where messages route by semantic similarity rather than topic strings."
 date: 2025-12-20
 draft: false
-author: "GTCode.com Member of Technical Staff"
+author: "GTCode.com Member of the Technical Staff"
 tags:
   - multi-agent systems
   - publish-subscribe

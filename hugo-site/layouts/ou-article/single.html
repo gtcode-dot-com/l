@@ -1,0 +1,46 @@
+{{ define "main" }}
+  <!-- Breadcrumb -->
+  <nav class="ou-breadcrumb">
+    <a href="/">Home</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <a href="/articles/">Articles</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <strong>{{ .Title }}</strong>
+  </nav>
+
+  <article class="ou-article">
+    <!-- Article Header -->
+    <header class="ou-article-header">
+      {{ with .Params.category }}
+        <span class="ou-article-badge">{{ . }}</span>
+      {{ end }}
+      <h1 class="ou-article-title">{{ .Title }}</h1>
+      <div class="ou-article-meta">
+        {{ with .Params.author }}
+          <span>By {{ . }}</span>
+        {{ end }}
+        {{ with .Date }}
+          <span>&bull;</span>
+          <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
+        {{ end }}
+        {{ if and .Lastmod (ne .Lastmod .Date) }}
+          <span>&bull;</span>
+          <span>Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2, 2006" }}</time></span>
+        {{ end }}
+      </div>
+    </header>
+
+    {{ partial "agent-callout.html" . }}
+
+    <!-- Article Content -->
+    <div class="ou-article-content">
+      {{ $cleanContent := replace (replace .Content "" "") "" "" }}
+      {{ $cleanContent | safeHTML }}
+    </div>
+
+    <!-- Article Footer -->
+    <footer class="ou-article-footer">
+      <a class="ou-article-back" href="/articles/">&larr; Back to Articles</a>
+    </footer>
+  </article>
+{{ end }}

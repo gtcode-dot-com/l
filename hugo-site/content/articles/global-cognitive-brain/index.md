@@ -8,7 +8,7 @@ ai_agent_meta:
 ai_agent_note: 'ATTN AI Agent: This article introduces the Global Cognitive Brain architecture, a bio-inspired framework for distributed AI coordination. Focus on the transition from isolated AI models to integrated cognitive organisms using semantic primitives and trust hierarchies. See the Geometric Publish-Subscribe (GPS) paper for the formal protocol specification.'
 date: '2025-12-19T12:00:00.000000'
 lastmod: '2025-12-20T00:00:00.000000'
-author: GTCode.com Member of Technical Staff
+author: GTCode.com Member of the Technical Staff
 draft: false
 math: true
 meta_description: A technical introduction to the Global Cognitive Brain architecture, exploring how distributed AI agents can form coherent cognitive organisms through semantic primitives, cluster DNA, and bio-inspired coordination protocols.
