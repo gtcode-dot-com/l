@@ -613,7 +613,7 @@ body.nav-open .site-nav-overlay {
 .ou-lead {
   max-width: var(--ou-max-width);
   margin: 0 auto;
-  padding: 3rem 0 2rem;
+  padding: 3rem 1.5rem 2rem;
 }
 
 .ou-lead-header {
@@ -1437,6 +1437,11 @@ body.nav-open .site-nav-overlay {
     padding: 2rem 1rem;
   }
 
+  .ou-lead {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .ou-masthead-wordmark {
     letter-spacing: 0.08em;
   }
@@ -1484,6 +1489,11 @@ body.nav-open .site-nav-overlay {
 @media (max-width: 480px) {
   .ou-masthead {
     padding: 1.5rem 0.75rem;
+  }
+
+  .ou-lead {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .ou-masthead-wordmark {
