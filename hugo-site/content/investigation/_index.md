@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "GTCode Investigations | Public-Interest Files on Hawaii Institutions"
 description: "Independent GTCode investigations documenting systemic failures inside Hawaii courts, oversight commissions, and law-enforcement units."
 date: 2025-11-09

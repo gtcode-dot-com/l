@@ -1,65 +1,67 @@
 {{ define "main" }}
-{{/* Featured Article Section (if featured_article is specified in front matter) */}}
-{{ with .Params.featured_article }}
-<article class="article-container">
-  <header class="article-header">
-    <h1 class="article-title">{{ .title }}</h1>
-    {{ with .subtitle }}
-    <h2 class="article-subtitle">{{ . }}</h2>
-    {{ end }}
-    <div class="article-meta">
-      {{ with .author }}
-      <div><strong>By {{ . }}</strong></div>
+  <!-- Breadcrumb -->
+  <nav class="ou-breadcrumb">
+    <a href="/">Home</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <strong>Investigations</strong>
+  </nav>
+
+  {{/* Featured Article Section */}}
+  {{ with .Params.featured_article }}
+  <article class="ou-article">
+    <header class="ou-article-header">
+      <h1 class="ou-article-title">{{ .title }}</h1>
+      {{ with .subtitle }}
+      <p class="ou-article-subtitle">{{ . }}</p>
       {{ end }}
-      {{ with .published_display }}
-      <div><strong>Published: {{ . }}</strong></div>
-      {{ end }}
+      <div class="ou-article-meta">
+        {{ with .author }}
+          <span>By {{ . }}</span>
+        {{ end }}
+        {{ with .published_display }}
+          <span>&bull;</span>
+          <span>Published: {{ . }}</span>
+        {{ end }}
+      </div>
+    </header>
+
+    <div class="ou-article-content">
+      {{ .content | safeHTML }}
     </div>
-  </header>
-
-  <div class="article-content">
-    {{ .content | safeHTML }}
-  </div>
-</article>
-{{ end }}
-
-{{/* Section Divider */}}
-<div class="section-divider" role="separator" aria-label="Institutional corruption files divider"></div>
-
-{{/* Section Header */}}
-<header class="section-header">
-  {{ with .Params.grid_eyebrow }}
-  <p class="eyebrow">{{ . }}</p>
-  {{ end }}
-  {{ with .Params.grid_title }}
-  <h1>{{ . }}</h1>
-  {{ else }}
-  <h1>{{ .Title }}</h1>
-  {{ end }}
-  {{ with .Params.grid_description }}
-  <p>{{ . | safeHTML }}</p>
-  {{ else with .Content }}
-  {{ . }}
-  {{ end }}
-</header>
-
-{{/* Investigation Cards Grid */}}
-<section class="grid">
-  {{ range .Pages }}
-  <article class="card">
-    {{ with .Params.eyebrow }}
-    <div class="eyebrow">{{ . }}</div>
-    {{ end }}
-    <h2>{{ .Title }}</h2>
-    {{ with .Params.card_summary }}
-    <p>{{ . }}</p>
-    {{ else with .Summary }}
-    <p>{{ . }}</p>
-    {{ end }}
-    <a href="{{ .RelPermalink }}">
-      Read the report <span class="arrow-circle"><span class="arrow-glyph">→</span></span>
-    </a>
   </article>
   {{ end }}
-</section>
+
+  {{/* Investigation Cards */}}
+  <section class="ou-section">
+    <div class="ou-section-wide">
+      {{ with .Params.grid_eyebrow }}
+      <p class="ou-section-label">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.grid_title }}
+      <h2 class="ou-section-heading">{{ . }}</h2>
+      {{ else }}
+      <h2 class="ou-section-heading">{{ .Title }}</h2>
+      {{ end }}
+      {{ with .Params.grid_description }}
+      <div class="ou-section-body"><p>{{ . | safeHTML }}</p></div>
+      {{ end }}
+
+      <div class="ou-cards">
+        {{ range .Pages }}
+        <article class="ou-card">
+          {{ with .Params.eyebrow }}
+          <div class="ou-card-icon">{{ . }}</div>
+          {{ end }}
+          <h3 class="ou-card-title">{{ .Title }}</h3>
+          {{ with .Params.card_summary }}
+          <p class="ou-card-text">{{ . }}</p>
+          {{ else with .Summary }}
+          <p class="ou-card-text">{{ . }}</p>
+          {{ end }}
+          <a class="ou-card-link" href="{{ .RelPermalink }}">Read the report &rarr;</a>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
 {{ end }}

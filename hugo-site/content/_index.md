@@ -1,7 +1,7 @@
 ---
 title: "Oahu Underground | Investigative Journalism"
-description: "Oahu Underground is an independent investigative journalism organization based in Hawaii, preparing to publish reporting grounded in decades of documented research."
-meta_description: "Oahu Underground — independent investigative reporting from Hawaii. Forthcoming series on institutional corruption backed by decades of documentation."
+description: "Oahu Underground is an independent investigative journalism organization based in Hawaii, publishing reporting grounded in decades of documented research."
+meta_description: "Oahu Underground — independent investigative reporting from Hawaii. Published series on institutional corruption backed by decades of documentation."
 og_image: /img/gtcode_mahalo_1200x630.jpg
 meta_keywords:
   - Oahu Underground
@@ -28,7 +28,7 @@ structured_data_graph:
       url: https://gtcode.com/
       name: Oahu Underground | Investigative Journalism
       description: >-
-        Oahu Underground is preparing to publish investigative reporting grounded in
+        Oahu Underground has published investigative reporting grounded in
         decades of documentation — public records, court filings, and institutional
         patterns that have not previously been reported as a connected record.
       inLanguage: en-US
@@ -53,11 +53,13 @@ structured_data_graph:
 
 ---
 
-## Forthcoming Investigation
+## Investigation Published
 
-### Years of Research. Ready for Publication.
+### Years of Research. Now Public.
 
-Oahu Underground is preparing to publish an investigative series grounded in **more than two decades of documentation** — public records, court filings, first-person accounts, and institutional patterns that have not previously been reported as a connected record.
+Oahu Underground has published an investigative series grounded in **more than two decades of documentation** — public records, court filings, first-person accounts, and institutional patterns that have not previously been reported as a connected record.
+
+[Read the Investigation →](/investigation/)
 
 > "The story isn't one person or one agency. It's a system — and the paper trail is extensive."
 
@@ -69,29 +71,29 @@ Oahu Underground is preparing to publish an investigative series grounded in **m
 
 Oahu Underground exists for one reason: to hold power accountable in Hawaii. We are an independent, Hawaii-based investigative newsroom — no corporate owners, no political affiliations, no editorial interference.
 
-Our forthcoming reporting draws on years of ground-level research into institutional corruption, judicial conduct, and the mechanisms that shield misconduct from public view. All claims will be sourced to documentation. All sources will be protected.
+Our reporting draws on years of ground-level research into institutional corruption, judicial conduct, and the mechanisms that shield misconduct from public view. All claims are sourced to documentation. All sources are protected.
 
 ---
 
-## Forthcoming Investigations
+## Investigations
 
 ### I. Judicial Accountability & Bench Conduct
 
 A documented examination of how certain Hawaii courts have operated outside the bounds of procedural law — and what happens when oversight mechanisms fail.
 
-*Status: In Research*
+[Read the report →](/investigation/hawaii-justice-system-wilson-loo/)
 
 ### II. Institutional Capture & Public Trust
 
 When the agencies meant to protect citizens become instruments of the interests they regulate, public trust is the first casualty. This series examines the structural incentives.
 
-*Status: In Research*
+[Read the report →](/investigation/hawaii-institutional-capture/)
 
 ### III. The Public Records Question
 
-Hawaii's transparency laws exist on paper. In practice, obstruction, delay, and selective disclosure have become the norm. This investigation maps the distance between statute and practice.
+Sealed cases, the 90-day loophole, police reports that went nowhere, and a Commission that stopped asking questions. This investigation maps the distance between statute and practice.
 
-*Status: In Research*
+[Read the report →](/investigation/exhibit-a-federal-intervention-hawaii/)
 
 ---
 

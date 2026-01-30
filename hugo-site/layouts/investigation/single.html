@@ -1,27 +1,46 @@
 {{ define "main" }}
-<article class="article-container">
-  <header class="article-header">
-    <h1 class="article-title">{{ .Title }}</h1>
-    {{ with .Params.subtitle }}
-    <h2 class="article-subtitle">{{ . }}</h2>
-    {{ end }}
-    <div class="article-meta">
-      {{ with .Params.author }}
-      <div><strong>By {{ . }}</strong></div>
-      {{ end }}
-      {{ if .Params.published_display }}
-      <div><strong>Published: {{ .Params.published_display }}</strong></div>
-      {{ else if .Date }}
-      <div><strong>Published: {{ .Date.Format "January 2, 2006" }}</strong></div>
-      {{ end }}
-      {{ with .Params.modified_display }}
-      <div><strong>Updated: {{ . }}</strong></div>
-      {{ end }}
-    </div>
-  </header>
+  <!-- Breadcrumb -->
+  <nav class="ou-breadcrumb">
+    <a href="/">Home</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <a href="/investigation/">Investigations</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <strong>{{ .Title }}</strong>
+  </nav>
 
-  <div class="article-content">
-    {{ .Content }}
-  </div>
-</article>
+  <article class="ou-article">
+    <header class="ou-article-header">
+      {{ with .Params.eyebrow }}
+        <span class="ou-article-badge">{{ . }}</span>
+      {{ end }}
+      <h1 class="ou-article-title">{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+      <p class="ou-article-subtitle">{{ . }}</p>
+      {{ end }}
+      <div class="ou-article-meta">
+        {{ with .Params.author }}
+          <span>By {{ . }}</span>
+        {{ end }}
+        {{ if .Params.published_display }}
+          <span>&bull;</span>
+          <span>Published: {{ .Params.published_display }}</span>
+        {{ else if .Date }}
+          <span>&bull;</span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ end }}
+        {{ with .Params.modified_display }}
+          <span>&bull;</span>
+          <span>Updated: {{ . }}</span>
+        {{ end }}
+      </div>
+    </header>
+
+    <div class="ou-article-content">
+      {{ .Content }}
+    </div>
+
+    <footer class="ou-article-footer">
+      <a class="ou-article-back" href="/investigation/">&larr; Back to Investigations</a>
+    </footer>
+  </article>
 {{ end }}

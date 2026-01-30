@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Exhibit A: A Prosecutor's Argument for Federal Intervention in Hawaii"
 subtitle: "The Lono File presented for RICO investigation"
 description: "Closing argument outlining the 'Lono File,' presented as Exhibit A for a federal RICO investigation into coordinated institutional capture across Hawaii."
