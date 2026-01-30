@@ -52,7 +52,21 @@
 
 .ou-page .site-header .site-nav a:hover,
 .ou-page .site-header .site-nav a.active {
-  color: var(--ou-accent-a11y);
+  color: var(--ou-bg);
+}
+
+/* Dropdown menu on dark theme */
+.ou-page .nav-dropdown-menu {
+  background: var(--ou-bg-alt);
+  border-color: var(--ou-border);
+}
+
+.ou-page .nav-dropdown-menu a {
+  color: var(--ou-text);
+}
+
+.ou-page .nav-dropdown-menu a:hover {
+  color: var(--ou-bg);
 }
 
 .ou-page .site-main {
