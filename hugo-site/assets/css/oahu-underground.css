@@ -139,7 +139,7 @@
 /* ---- Masthead ---- */
 .ou-masthead {
   text-align: center;
-  padding: var(--space-20) var(--space-6) var(--space-10);
+  padding: var(--space-24) var(--space-6) var(--space-12);
   border-bottom: none;
   background: var(--ou-bg);
   position: relative;
@@ -165,22 +165,22 @@
   font-family: var(--ou-font-display);
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ou-white);
   margin: 0;
   line-height: 1.1;
   text-shadow:
-    0 0 80px rgba(212, 168, 67, 0.08),
-    0 2px 4px rgba(0, 0, 0, 0.3);
+    0 1px 2px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(212, 168, 67, 0.06);
 }
 
 .ou-masthead-rule {
-  width: 80px;
+  width: 72px;
   height: 2px;
-  background: var(--ou-accent);
+  background: linear-gradient(90deg, transparent, var(--ou-accent), transparent);
   border: none;
-  margin: var(--space-6) auto;
+  margin: var(--space-5) auto;
 }
 
 .ou-masthead-tagline {
@@ -191,7 +191,7 @@
   margin: 0;
   max-width: 540px;
   margin-inline: auto;
-  line-height: 1.65;
+  line-height: 1.7;
   letter-spacing: 0.005em;
 }
 
@@ -226,10 +226,11 @@
   background:
     linear-gradient(
       to bottom,
-      rgba(13, 17, 23, 0.1) 0%,
-      rgba(13, 17, 23, 0.2) 25%,
-      rgba(22, 20, 14, 0.35) 50%,
-      rgba(13, 17, 23, 0.85) 75%,
+      rgba(13, 17, 23, 0.05) 0%,
+      rgba(13, 17, 23, 0.15) 20%,
+      rgba(22, 20, 14, 0.3) 45%,
+      rgba(13, 17, 23, 0.7) 65%,
+      rgba(13, 17, 23, 0.92) 80%,
       rgba(13, 17, 23, 1) 100%
     );
 }
@@ -246,16 +247,17 @@
 
 .ou-hero-label {
   font-family: var(--ou-font-display);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ou-accent-a11y);
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-4);
   display: inline-block;
-  padding: var(--space-1) var(--space-4);
-  border: 1px solid rgba(212, 168, 67, 0.35);
-  background: rgba(212, 168, 67, 0.08);
+  padding: var(--space-1) var(--space-5);
+  border: 1px solid rgba(232, 197, 102, 0.5);
+  background: rgba(212, 168, 67, 0.12);
+  line-height: 1.8;
 }
 
 .ou-hero-headline {
@@ -264,15 +266,17 @@
   font-weight: 700;
   color: var(--ou-white);
   line-height: 1.2;
-  margin: 0 0 var(--space-6);
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  margin: 0 0 var(--space-5);
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.6),
+    0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
 .ou-hero-deck {
   font-family: var(--ou-font-body);
   font-size: var(--text-lg);
-  color: var(--ou-text-muted);
-  line-height: 1.75;
+  color: rgba(139, 148, 158, 0.95);
+  line-height: 1.8;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -284,7 +288,7 @@
 
 /* ---- Section shared ---- */
 .ou-section {
-  padding: var(--space-20) var(--space-6);
+  padding: var(--space-24) var(--space-6);
   border-bottom: none;
   position: relative;
 }
@@ -321,12 +325,12 @@
 
 .ou-section-label {
   font-family: var(--ou-font-display);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--ou-accent-a11y);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-2);
 }
 
 .ou-section-heading {
@@ -335,7 +339,7 @@
   font-weight: 700;
   color: var(--ou-white);
   line-height: 1.2;
-  margin: 0 0 var(--space-8);
+  margin: 0 0 var(--space-6);
 }
 
 .ou-section-body {
@@ -347,11 +351,74 @@
 }
 
 .ou-section-body p {
-  margin: 0 0 var(--space-5);
+  margin: 0 0 var(--space-4);
 }
 
 .ou-section-body p:last-child {
   margin-bottom: 0;
+}
+
+/* ---- Pull quote ---- */
+.ou-pullquote {
+  font-family: var(--ou-font-serif);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  color: var(--ou-text);
+  line-height: 1.8;
+  text-align: left;
+  max-width: var(--ou-max-width);
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-6) var(--space-16) var(--space-12);
+  border-top: none;
+  border-bottom: none;
+  border-left: 3px solid var(--ou-accent);
+  border-right: none;
+  background: linear-gradient(
+    to right,
+    rgba(212, 168, 67, 0.03) 0%,
+    transparent 40%
+  );
+  position: relative;
+}
+
+.ou-pullquote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--ou-accent) 0%,
+    var(--ou-border) 30%,
+    transparent 100%
+  );
+}
+
+.ou-pullquote::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--ou-accent) 0%,
+    var(--ou-border) 30%,
+    transparent 100%
+  );
+}
+
+.ou-pullquote-mark {
+  display: block;
+  font-size: 3rem;
+  color: var(--ou-accent);
+  line-height: 0.5;
+  margin-bottom: var(--space-4);
+  font-family: Georgia, serif;
+  opacity: 0.5;
 }
 
 /* ---- Mission / About split ---- */
@@ -423,20 +490,20 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-6);
-  margin-top: var(--space-4);
+  margin-top: var(--space-6);
 }
 
 @media (min-width: 640px) {
   .ou-cards {
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-8);
+    gap: var(--space-6);
   }
 }
 
 .ou-card {
   background: var(--ou-bg-alt);
   border: 1px solid var(--ou-border);
-  border-top: 2px solid var(--ou-accent);
+  border-top: 3px solid var(--ou-accent);
   border-radius: var(--radius-lg);
   padding: var(--space-8) var(--space-8) var(--space-6);
   transition:
@@ -450,27 +517,29 @@
 .ou-card:hover {
   border-color: var(--ou-accent);
   border-top-color: var(--ou-accent);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(212, 168, 67, 0.15);
+    0 12px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(212, 168, 67, 0.2);
 }
 
 .ou-card-icon {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   margin-bottom: var(--space-5);
   color: var(--ou-accent);
   font-family: var(--ou-font-serif);
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(212, 168, 67, 0.3);
+  border: 1px solid rgba(212, 168, 67, 0.25);
   border-radius: 50%;
   flex-shrink: 0;
+  background: rgba(212, 168, 67, 0.06);
+  letter-spacing: 0.02em;
 }
 
 .ou-card-title {
@@ -486,7 +555,7 @@
   font-family: var(--ou-font-body);
   font-size: var(--text-sm);
   color: var(--ou-text-muted);
-  line-height: 1.7;
+  line-height: 1.75;
   margin: 0;
   flex: 1;
 }
@@ -494,17 +563,18 @@
 .ou-card-status {
   display: inline-block;
   font-family: var(--ou-font-display);
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ou-accent-a11y);
   margin-top: var(--space-5);
-  padding: 2px var(--space-2);
-  border: 1px solid rgba(212, 168, 67, 0.4);
+  padding: 1px var(--space-2);
+  border: 1px solid rgba(212, 168, 67, 0.35);
   border-radius: 2px;
   background: rgba(212, 168, 67, 0.06);
   align-self: flex-start;
+  line-height: 1.6;
 }
 
 /* ---- Secure contact ---- */
@@ -512,15 +582,18 @@
   text-align: center;
   background: var(--ou-bg);
   position: relative;
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
 }
 
-/* Subtle crosshatch texture via CSS */
+/* Subtle radial glow above contact */
 .ou-contact::before {
   content: '';
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 50% 0%, rgba(212, 168, 67, 0.03) 0%, transparent 60%);
+    radial-gradient(ellipse at 50% 0%, rgba(212, 168, 67, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(212, 168, 67, 0.02) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -545,12 +618,12 @@
   padding: var(--space-4) var(--space-10);
   border: 2px solid var(--ou-accent);
   border-radius: var(--radius-md);
-  margin-top: var(--space-8);
+  margin-top: var(--space-6);
   letter-spacing: 0.02em;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  transition: color var(--ou-transition);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ou-contact-email::before {
@@ -584,73 +657,9 @@
   font-family: var(--ou-font-body);
   font-size: var(--text-sm);
   color: var(--ou-text-dim);
-  margin-top: var(--space-5);
+  margin-top: var(--space-4);
   font-style: italic;
-  line-height: 1.6;
-}
-
-/* ---- Pull quote ---- */
-.ou-pullquote {
-  font-family: var(--ou-font-serif);
-  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
-  font-style: italic;
-  color: var(--ou-text);
-  line-height: 1.75;
-  text-align: left;
-  max-width: var(--ou-max-width);
-  margin: 0 auto;
-  padding: var(--space-16) var(--space-6) var(--space-16) var(--space-12);
-  border-top: none;
-  border-bottom: none;
-  border-left: 3px solid var(--ou-accent);
-  border-right: none;
-  background: linear-gradient(
-    to bottom,
-    var(--ou-bg) 0%,
-    rgba(26, 31, 43, 0.4) 50%,
-    var(--ou-bg) 100%
-  );
-  position: relative;
-}
-
-.ou-pullquote::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    var(--ou-accent) 0%,
-    var(--ou-border) 30%,
-    transparent 100%
-  );
-}
-
-.ou-pullquote::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    var(--ou-accent) 0%,
-    var(--ou-border) 30%,
-    transparent 100%
-  );
-}
-
-.ou-pullquote-mark {
-  display: block;
-  font-size: 3.5rem;
-  color: var(--ou-accent);
-  line-height: 0.6;
-  margin-bottom: var(--space-5);
-  font-family: Georgia, serif;
-  opacity: 0.7;
+  line-height: 1.65;
 }
 
 /* ---- Wire feed ---- */
@@ -744,13 +753,13 @@
 /* ---- Responsive refinements ---- */
 @media (min-width: 1440px) {
   .ou-masthead-wordmark {
-    letter-spacing: 0.22em;
+    letter-spacing: 0.26em;
   }
 }
 
 @media (max-width: 1024px) {
   .ou-masthead {
-    padding: var(--space-16) var(--space-6) var(--space-8);
+    padding: var(--space-20) var(--space-6) var(--space-10);
   }
 
   .ou-hero {
@@ -760,11 +769,15 @@
   .ou-hero-content {
     padding: var(--space-20) var(--space-6) var(--space-12);
   }
+
+  .ou-section {
+    padding: var(--space-20) var(--space-6);
+  }
 }
 
 @media (max-width: 768px) {
   .ou-masthead {
-    padding: var(--space-12) var(--space-4) var(--space-6);
+    padding: var(--space-16) var(--space-4) var(--space-8);
   }
 
   .ou-masthead-wordmark {
@@ -780,7 +793,7 @@
   }
 
   .ou-section {
-    padding: var(--space-12) var(--space-4);
+    padding: var(--space-16) var(--space-4);
   }
 
   .ou-pullquote {
@@ -796,6 +809,7 @@
   /* Mission stacking - image below text */
   .ou-mission > .ou-mission-image {
     order: 1;
+    margin-top: var(--space-2);
   }
 
   .ou-mission > div:first-child {
@@ -805,7 +819,7 @@
 
 @media (max-width: 480px) {
   .ou-masthead {
-    padding: var(--space-10) var(--space-3) var(--space-5);
+    padding: var(--space-12) var(--space-3) var(--space-6);
   }
 
   .ou-masthead-wordmark {
@@ -826,12 +840,12 @@
   }
 
   .ou-hero-label {
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     padding: var(--space-1) var(--space-3);
   }
 
   .ou-section {
-    padding: var(--space-10) var(--space-3);
+    padding: var(--space-12) var(--space-3);
   }
 
   .ou-card {
@@ -852,8 +866,8 @@
   }
 
   .ou-card-icon {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     font-size: var(--text-base);
   }
 
@@ -863,6 +877,11 @@
 
   .ou-wire-date {
     min-width: auto;
+  }
+
+  .ou-contact {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
   }
 }
 
