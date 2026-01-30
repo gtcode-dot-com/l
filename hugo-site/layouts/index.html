@@ -1,172 +1,165 @@
 {{ define "main" }}
-  {{ with .Content }}
-    {{ . | safeHTML }}
-  {{ end }}
-  <!-- Hero Section -->
-  {{- $hero := .Params.hero | default dict -}}
-  <div class="hero hero-profile">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <p class="hero-eyebrow">{{ $hero.eyebrow | default "Ekewaka Lono" }}</p>
-        <h1>{{ $hero.title | default "AI Engineering Consultant & ML Researcher" }}</h1>
-        <p class="hero-location">{{ $hero.location | default "Oahu, Hawai'i · Founder, GTCode" }}</p>
-        <p class="hero-lede">{{ $hero.lede | default "Building bespoke AI systems, open-source Elixir tooling, and advancing computational truth-seeking through Chiral Narrative Synthesis research." }}</p>
-        {{- with $hero.highlights }}
-        <ul class="hero-highlights">
-          {{- range . }}
-          <li>{{ . }}</li>
-          {{- end }}
-        </ul>
-        {{- end }}
-        {{- with $hero.ctas }}
-        <div class="hero-actions">
-          {{- range . }}
-          <a class="btn btn-{{ .style | default "primary" }}" href="{{ .url }}">{{ .label }}</a>
-          {{- end }}
+{{/* Load Oahu Underground stylesheet */}}
+{{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" />
+
+<script>document.documentElement.classList.add('ou-page');</script>
+
+<!-- Masthead -->
+<div class="ou-masthead">
+  <h1 class="ou-masthead-wordmark">Oahu Underground</h1>
+  <hr class="ou-masthead-rule" />
+  <p class="ou-masthead-tagline">Deep ground-level research on corruption in the Aloha State</p>
+</div>
+
+<!-- Hero Announcement -->
+<section class="ou-hero">
+  <div class="ou-hero-image">
+    <img
+      src="/img/ou-hero-govt-district.png"
+      alt="Aerial view of Oahu's government district with overlay of redacted court documents"
+      width="2800"
+      height="840"
+      loading="eager"
+      decoding="async"
+    />
+  </div>
+  <div class="ou-hero-overlay"></div>
+  <div class="ou-hero-content">
+    <p class="ou-hero-label">Forthcoming Investigation</p>
+    <h2 class="ou-hero-headline">Years of Research. Exposed at Last.</h2>
+    <p class="ou-hero-deck">
+      Oahu Underground is preparing to publish an investigative series grounded in
+      <span class="ou-hero-emphasis">more than two decades of documentation</span> —
+      public records, court filings, first-person accounts, and institutional patterns
+      that Hawaii's power structures have worked to keep buried.
+    </p>
+  </div>
+</section>
+
+<!-- Pull Quote -->
+<blockquote class="ou-pullquote">
+  <span class="ou-pullquote-mark">&ldquo;</span>
+  The story isn't one person or one agency. It's a system — and we have the paper trail to prove it.
+</blockquote>
+
+<!-- Mission -->
+<section class="ou-section ou-section--alt">
+  <div class="ou-section-wide">
+    <div class="ou-mission">
+      <div>
+        <p class="ou-section-label">Our Mission</p>
+        <h2 class="ou-section-heading">Independent Investigative Journalism for Hawaii</h2>
+        <div class="ou-section-body">
+          <p>
+            Oahu Underground exists for one reason: to hold power accountable in the Aloha State.
+            We are an independent, Hawaii-based investigative newsroom — no corporate owners,
+            no political affiliations, no access journalism.
+          </p>
+          <p>
+            Our forthcoming reporting draws on years of ground-level research into institutional
+            corruption, judicial conduct, and the mechanisms that shield misconduct from public view.
+            Every claim will be documented. Every source will be protected.
+          </p>
         </div>
-        {{- end }}
       </div>
-      <div class="hero-art hero-art-photo">
-        <div class="hero-art-glow"></div>
-        <img src="/img/gtcode-core.svg" alt="GTCode signal glyph" loading="lazy" decoding="async" />
-        {{- with $hero.art_link }}
-        <a class="btn btn-secondary hero-dossier-link" href="{{ .url }}">{{ .label }}</a>
-        {{- end }}
+      <div class="ou-mission-image">
+        <img
+          src="/img/ou-mission-records-desk.png"
+          alt="Stack of public records requests and court filings from Hawaii state courts"
+          width="1120"
+          height="760"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Core Missions -->
-  <section class="section-header hero-follow">
-    <h2 class="section-title">Core Missions at GTCode</h2>
-    <p class="section-description">Consultancy services, open-source libraries, and computational truth-seeking that reinforce one another.</p>
-  </section>
+<!-- Forthcoming Work -->
+<section class="ou-section">
+  <div class="ou-section-wide">
+    <p class="ou-section-label">Coming Soon</p>
+    <h2 class="ou-section-heading">Forthcoming Investigations</h2>
+    <div class="ou-cards">
 
-  {{- $missionData := index .Site.Data.home "mission" | default dict -}}
-  {{- $missions := $missionData.missions | default slice -}}
-  <div class="news-grid mission-grid">
-    {{- range $missions }}
-    <article class="card">
-      <div class="card-meta">
-        <span class="badge badge-category">{{ .badge }}</span>
-      </div>
-      <h3 class="card-title"><a href="{{ .title_url }}">{{ .title }}</a></h3>
-      <p class="card-summary">{{ .summary }}</p>
-      {{- with .features }}
-      <ul class="card-list">
-        {{- range . }}
-        <li>{{ . }}</li>
-        {{- end }}
-      </ul>
-      {{- end }}
-      {{- with .ctas }}
-      <div class="card-actions">
-        {{- range . }}
-        <a class="btn btn-{{ .style | default "secondary" }}"
-           href="{{ .url }}"
-           {{- if .target }} target="{{ .target }}"{{ end }}
-           {{- if .rel }} rel="{{ .rel }}"{{ end }}>
-          {{ .label }}
-        </a>
-        {{- end }}
-      </div>
-      {{- end }}
-    </article>
-    {{- end }}
-  </div>
-
-  {{/* DISABLED: Featured Investigation
-  <section class="section-header" style="margin-top: 2rem;">
-    <h2 class="section-title">Featured Report: The Aloha Protection Racket</h2>
-    <p class="section-description">A legal and investigative dossier on Judge Wilson Loo, institutional capture inside Hawaii's judiciary, and the federal remedies now in motion.</p>
-  </section>
-
-  <article class="card spotlight-panel">
-    <div class="spotlight-text">
-      <div class="card-meta">
-        <span class="badge badge-category">Investigative Journalism</span>
-      </div>
-      <h3>The Architect, the Asset, and the System</h3>
-      <p>December 2, 2022 marked the apex of a protection racket run directly from the bench. Judge Loo's silent obstruction, sealed records, and HPD's coordinated inaction now stand as evidence inside a federal criminal complaint.</p>
-      <ul class="card-list">
-        <li>Documented perjury coaching inside a Hawaii First Circuit courtroom</li>
-        <li>Witness intimidation, narcotics distribution, and vehicular assault ignored by HPD</li>
-        <li>Secure evidence archive including audio, filings, and annotated timelines</li>
-      </ul>
-      <div class="spotlight-actions">
-        <a class="btn btn-primary" href="/investigation/hawaii-justice-system-wilson-loo/">Read the Wilson Loo Investigation →</a>
-        <a class="btn btn-secondary" href="mailto:tips@gtcode.com">Request Secure Contact</a>
-      </div>
-      <p class="secure-note">Send only a non-sensitive introduction to tips@gtcode.com. Encrypted channels are arranged for follow-up.</p>
-    </div>
-    <div class="spotlight-media">
-      <img src="/img/gtcode_mahalo.jpg" alt="Investigative journalism and community reporting in Hawaii" loading="lazy" decoding="async" />
-    </div>
-  </article>
-  END DISABLED */}}
-
-  <!-- Latest News Section -->
-  <section id="articles" class="section-header" style="margin-top: 2rem;">
-    <h2 class="section-title">Latest News</h2>
-    <p class="section-description">Daily briefs on AI security, ML research, and industry news curated by the GTCode desk.</p>
-  </section>
-
-  {{/* Round-robin interleave news by category */}}
-  {{ $newsPagesAll := sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
-  {{ $newsPagesEn := where $newsPagesAll "Params.language" "en" }}
-  {{ $allNews := cond (gt (len $newsPagesEn) 0) $newsPagesEn $newsPagesAll }}
-
-  {{/* Group by category */}}
-  {{ $byCategory := dict }}
-  {{ range $allNews }}
-    {{ $cat := .Params.category | default "uncategorized" }}
-    {{ $existing := index $byCategory $cat | default slice }}
-    {{ $byCategory = merge $byCategory (dict $cat ($existing | append .)) }}
-  {{ end }}
-
-  {{/* Find max length */}}
-  {{ $maxLen := 0 }}
-  {{ range $byCategory }}
-    {{ $maxLen = cond (gt (len .) $maxLen) (len .) $maxLen }}
-  {{ end }}
-
-  {{/* Round-robin interleave */}}
-  {{ $interleaved := slice }}
-  {{ range $i := seq 0 $maxLen }}
-    {{ range $cat, $pages := $byCategory }}
-      {{ if ge (len $pages) (add $i 1) }}
-        {{ $interleaved = $interleaved | append (index $pages $i) }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  {{ $newsPaginator := .Paginate $interleaved }}
-  {{ $newsPages := $newsPaginator.Pages }}
-  <div class="article-list">
-    {{ range $newsPages }}
-      <article class="article-item">
-        <div class="article-header">
-          {{ if .Params.category }}
-            <span class="badge badge-category">{{ .Params.category }}</span>
-          {{ end }}
-          <h3 class="article-title">
-            <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
-          </h3>
-        </div>
-        <div class="article-meta">
-          {{ partial "news-date.html" . }}
-          {{ with .Params.source_url }}
-            <span>&bull;</span>
-            <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
-          {{ end }}
-        </div>
-        {{ with .Summary }}
-          {{ $clean := replace (replace . "" "") "" "" }}
-          <p class="article-summary">{{ $clean | plainify | truncate 160 }}</p>
-        {{ end }}
+      <article class="ou-card">
+        <div class="ou-card-icon">I</div>
+        <h3 class="ou-card-title">Judicial Accountability &amp; Bench Conduct</h3>
+        <p class="ou-card-text">
+          A documented examination of how certain Hawaii courts have operated outside
+          the bounds of procedural law — and who benefits when oversight fails.
+        </p>
+        <span class="ou-card-status">In Research</span>
       </article>
-    {{ end }}
+
+      <article class="ou-card">
+        <div class="ou-card-icon">II</div>
+        <h3 class="ou-card-title">Institutional Capture &amp; Public Trust</h3>
+        <p class="ou-card-text">
+          When the agencies meant to protect citizens become instruments of the interests
+          they regulate, public trust is the first casualty. We follow the evidence.
+        </p>
+        <span class="ou-card-status">In Research</span>
+      </article>
+
+      <article class="ou-card">
+        <div class="ou-card-icon">III</div>
+        <h3 class="ou-card-title">The Public Records Question</h3>
+        <p class="ou-card-text">
+          Hawaii's transparency laws exist on paper. In practice, obstruction,
+          delay, and selective disclosure have become the norm. We document the gap.
+        </p>
+        <span class="ou-card-status">In Research</span>
+      </article>
+
+    </div>
   </div>
-  {{ partial "pagination.html" . }}
-  {{ partial "news-itemlist.html" (dict "pages" $newsPages) }}
+</section>
+
+<!-- Contact -->
+<section class="ou-section ou-contact">
+  <div class="ou-section-inner">
+    <p class="ou-section-label">Get in Touch</p>
+    <h2 class="ou-section-heading">Have Information?</h2>
+    <div class="ou-section-body">
+      <p>
+        If you have documents, first-hand knowledge, or information relevant to
+        institutional misconduct in Hawaii, we want to hear from you.
+        Your identity will be protected.
+      </p>
+    </div>
+    <a class="ou-contact-email" href="mailto:tips@GTCode.com">tips@GTCode.com</a>
+    <p class="ou-contact-note">
+      Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.
+    </p>
+  </div>
+</section>
+
+<!-- Wire Feed -->
+{{ $newsPagesAll := sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
+{{ $newsPagesEn := where $newsPagesAll "Params.language" "en" }}
+{{ $allNews := cond (gt (len $newsPagesEn) 0) $newsPagesEn $newsPagesAll }}
+{{ $wireItems := first 10 $allNews }}
+{{ if gt (len $wireItems) 0 }}
+<section class="ou-section ou-wire">
+  <div class="ou-section-inner">
+    <p class="ou-section-label">From the Wire</p>
+    <ul class="ou-wire-list">
+      {{- range $wireItems }}
+      <li class="ou-wire-item">
+        <span class="ou-wire-date">{{ partial "news-date.html" . }}</span>
+        {{- if .Params.category }}
+        <span class="ou-wire-badge">{{ .Params.category }}</span>
+        {{- end }}
+        <a class="ou-wire-link" href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+      </li>
+      {{- end }}
+    </ul>
+    <a class="ou-wire-more" href="/news/">View all news &rarr;</a>
+  </div>
+</section>
+{{ end }}
+
 {{ end }}
