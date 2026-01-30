@@ -1,12 +1,12 @@
 ---
-date: '2026-01-29'
+date: '2026-01-30'
 description: Configuration management with CLI parsing for Elixir
 docs_url: https://hexdocs.pm/chz_ex/
 hex_url: https://hex.pm/packages/chz_ex
 highlights:
 - 'Latest release: v0.1.3'
-- 'Recent downloads: 175'
-- 'All-time downloads: 175'
+- 'Recent downloads: 180'
+- 'All-time downloads: 180'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/chz_ex
 slug: chz_ex
@@ -25,8 +25,8 @@ Configuration management with CLI parsing for Elixir
 ## Package Information
 
 - Latest release: v0.1.3
-- Recent downloads: 175
-- All-time downloads: 175
+- Recent downloads: 180
+- All-time downloads: 180
 - Maintainers: nshkrdotcom
 
 ## Installation

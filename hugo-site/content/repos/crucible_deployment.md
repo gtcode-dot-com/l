@@ -1,12 +1,12 @@
 ---
-date: '2026-01-29'
+date: '2026-01-30'
 description: Model deployment orchestration with health checking and rollback
 docs_url: https://hexdocs.pm/crucible_deployment/
 hex_url: https://hex.pm/packages/crucible_deployment
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 122'
-- 'All-time downloads: 122'
+- 'Recent downloads: 123'
+- 'All-time downloads: 123'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/crucible_deployment
 slug: crucible_deployment
@@ -25,8 +25,8 @@ Model deployment orchestration with health checking and rollback
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 122
-- All-time downloads: 122
+- Recent downloads: 123
+- All-time downloads: 123
 - Maintainers: nshkrdotcom
 
 ## Installation

@@ -1,5 +1,5 @@
 ---
-date: '2026-01-29'
+date: '2026-01-30'
 description: Altar provides a robust, type-safe foundation for building AI agent tools
   in Elixir. It offers a clean contract to define and execute tools locally, with
   a clear promotion path to…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/altar/
 hex_url: https://hex.pm/packages/altar
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 1398'
-- 'All-time downloads: 2082'
+- 'Recent downloads: 1413'
+- 'All-time downloads: 2099'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/ALTAR
 slug: altar
@@ -27,8 +27,8 @@ Altar provides a robust, type-safe foundation for building AI agent tools in Eli
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 1398
-- All-time downloads: 2082
+- Recent downloads: 1413
+- All-time downloads: 2099
 - Maintainers: nshkrdotcom
 
 ## Installation

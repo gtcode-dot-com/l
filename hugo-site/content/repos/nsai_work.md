@@ -1,5 +1,5 @@
 ---
-date: '2026-01-29'
+date: '2026-01-30'
 description: NsaiWork - Unified job scheduler for the North-Shore-AI platform. Protocol-first,
   multi-tenant job scheduling with priority queues, resource-aware scheduling, and
   pluggable…
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/nsai_work/
 hex_url: https://hex.pm/packages/nsai_work
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 0'
-- 'All-time downloads: 0'
+- 'Recent downloads: 6'
+- 'All-time downloads: 6'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/nsai_work
 slug: nsai_work
@@ -27,8 +27,8 @@ NsaiWork - Unified job scheduler for the North-Shore-AI platform. Protocol-first
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 0
-- All-time downloads: 0
+- Recent downloads: 6
+- All-time downloads: 6
 - Maintainers: nshkrdotcom
 
 ## Installation

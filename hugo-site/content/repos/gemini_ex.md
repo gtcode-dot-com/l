@@ -1,5 +1,5 @@
 ---
-date: '2026-01-29'
+date: '2026-01-30'
 description: Comprehensive Elixir client for Google's Gemini AI API with dual authentication,
   embeddings with MRL, streaming, type safety, and built-in telemetry for production
   applications.
@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/gemini_ex/
 hex_url: https://hex.pm/packages/gemini_ex
 highlights:
 - 'Latest release: v0.9.1'
-- 'Recent downloads: 2277'
-- 'All-time downloads: 3350'
+- 'Recent downloads: 2297'
+- 'All-time downloads: 3372'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/gemini_ex
 slug: gemini_ex
@@ -27,8 +27,8 @@ Comprehensive Elixir client for Google's Gemini AI API with dual authentication,
 ## Package Information
 
 - Latest release: v0.9.1
-- Recent downloads: 2277
-- All-time downloads: 3350
+- Recent downloads: 2297
+- All-time downloads: 3372
 - Maintainers: nshkrdotcom
 
 ## Installation
