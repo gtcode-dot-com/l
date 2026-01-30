@@ -69,10 +69,10 @@
         "name" $headline
         "headline" $headline
         "description" $description
-        "url" .Permalink
+        "url" (replace .Permalink "http://" "https://")
         "inLanguage" $language
         "dateModified" $modified
-        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" $siteRoot)
     -}}
   {{- if $sdPage.about }}
     {{- $data = merge $data (dict "about" $sdPage.about) -}}
@@ -95,10 +95,10 @@
         "name" $headline
         "headline" $headline
         "description" $description
-        "url" .Permalink
+        "url" (replace .Permalink "http://" "https://")
         "dateModified" $modified
         "inLanguage" $language
-        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" $siteRoot)
         "about" (slice $headline "AI news" "Daily briefings")
     -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
