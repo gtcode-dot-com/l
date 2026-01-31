@@ -32,6 +32,8 @@
     <!-- Open Graph -->
     {{ $ogImage := "/img/gtcode-core.svg" }}
     {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
+    {{ if hasPrefix $ogImage "/" }}{{ $ogImage = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $ogImage }}{{ end }}
+    {{ $ogImage = replace $ogImage "http://" "https://" }}
     <meta property="og:title" content="{{ .Params.og_title | default .Title }} · {{ $siteTitle }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ .Params.og_description | default $pageDescription }}" />
@@ -51,7 +53,7 @@
     <meta name="twitter:card" content="{{ .Params.twitter_card | default "summary_large_image" }}" />
     <meta name="twitter:title" content="{{ .Params.twitter_title | default .Title }} · {{ $siteTitle }}" />
     <meta name="twitter:description" content="{{ .Params.twitter_description | default $pageDescription }}" />
-    {{ with .Params.twitter_image }}<meta name="twitter:image" content="{{ . }}" />{{ end }}
+    {{ with .Params.twitter_image }}{{ $twImg := . }}{{ if hasPrefix $twImg "/" }}{{ $twImg = printf "%s%s" (strings.TrimRight "/" $.Site.BaseURL) $twImg }}{{ end }}{{ $twImg = replace $twImg "http://" "https://" }}<meta name="twitter:image" content="{{ $twImg }}" />{{ end }}
     {{ with .Params.twitter_image_alt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ end }}
 
     <!-- Agentic Comment -->
@@ -62,11 +64,6 @@
     {{ end }}
 
     <!-- Structured Data -->
-    {{ with .Params.structured_data }}
-    <script type="application/ld+json">
-    {{ . | jsonify | safeJS }}
-    </script>
-    {{ end }}
     {{ partial "jsonld.html" . }}
 
     <!-- CSS Reset -->

@@ -37,6 +37,8 @@
     {{ $ogImage := "/img/gtcode-core.svg" }}
     {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
     {{ with $articleMeta.og_image }}{{ $ogImage = . }}{{ end }}
+    {{ if hasPrefix $ogImage "/" }}{{ $ogImage = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $ogImage }}{{ end }}
+    {{ $ogImage = replace $ogImage "http://" "https://" }}
     <meta property="og:title" content="{{ .Title }} · {{ .Site.Title }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ $pageDescription }}" />

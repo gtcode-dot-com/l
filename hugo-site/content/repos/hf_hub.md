@@ -1,13 +1,13 @@
 ---
-date: '2026-01-30'
+date: '2026-01-31'
 description: Elixir client for HuggingFace Hub—dataset/model metadata, file downloads,
   caching, and authentication
 docs_url: https://hexdocs.pm/hf_hub/
 hex_url: https://hex.pm/packages/hf_hub
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 183'
-- 'All-time downloads: 183'
+- 'Recent downloads: 187'
+- 'All-time downloads: 187'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/hf_hub_ex
 slug: hf_hub
@@ -26,8 +26,8 @@ Elixir client for HuggingFace Hub—dataset/model metadata, file downloads, cach
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 183
-- All-time downloads: 183
+- Recent downloads: 187
+- All-time downloads: 187
 - Maintainers: nshkrdotcom
 
 ## Installation
