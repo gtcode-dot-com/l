@@ -1,5 +1,5 @@
 ---
-date: '2026-01-30'
+date: '2026-01-31'
 description: Local-first observability for Elixir with New Relic API parity. A complete
   tracing and observability solution that works entirely offline while maintaining
   compatibility with New…
