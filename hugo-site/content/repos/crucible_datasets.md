@@ -1,5 +1,5 @@
 ---
-date: '2026-01-31'
+date: '2026-02-01'
 description: Dataset management and caching for AI research benchmarks
 docs_url: https://hexdocs.pm/crucible_datasets/
 hex_url: https://hex.pm/packages/crucible_datasets

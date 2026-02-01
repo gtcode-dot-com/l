@@ -1,5 +1,5 @@
 ---
-date: '2026-01-31'
+date: '2026-02-01'
 description: NsaiWork - Unified job scheduler for the North-Shore-AI platform. Protocol-first,
   multi-tenant job scheduling with priority queues, resource-aware scheduling, and
   pluggable…
