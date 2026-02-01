@@ -1,0 +1,1 @@
+## Issued me a pre-rehearsed conspired murder threat with his wife Rita Hartmann, after I was investigating being hacked and stalked by associates of Spencer Klein at HiCapacity Manoa Innovation Center
