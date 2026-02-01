@@ -7,8 +7,8 @@ docs_url: https://hexdocs.pm/lineage_ir/
 hex_url: https://hex.pm/packages/lineage_ir
 highlights:
 - 'Latest release: v0.1.0'
-- 'Recent downloads: 16'
-- 'All-time downloads: 16'
+- 'Recent downloads: 19'
+- 'All-time downloads: 19'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/lineage_ir
 slug: lineage_ir
@@ -27,8 +27,8 @@ Lineage IR for cross-system traces, spans, artifacts, and provenance edges. Prov
 ## Package Information
 
 - Latest release: v0.1.0
-- Recent downloads: 16
-- All-time downloads: 16
+- Recent downloads: 19
+- All-time downloads: 19
 - Maintainers: nshkrdotcom
 
 ## Installation

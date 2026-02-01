@@ -6,8 +6,8 @@ docs_url: https://hexdocs.pm/hf_hub/
 hex_url: https://hex.pm/packages/hf_hub
 highlights:
 - 'Latest release: v0.2.0'
-- 'Recent downloads: 187'
-- 'All-time downloads: 187'
+- 'Recent downloads: 191'
+- 'All-time downloads: 191'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/North-Shore-AI/hf_hub_ex
 slug: hf_hub
@@ -26,8 +26,8 @@ Elixir client for HuggingFace Hub—dataset/model metadata, file downloads, cach
 ## Package Information
 
 - Latest release: v0.2.0
-- Recent downloads: 187
-- All-time downloads: 187
+- Recent downloads: 191
+- All-time downloads: 191
 - Maintainers: nshkrdotcom
 
 ## Installation
