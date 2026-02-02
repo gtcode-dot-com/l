@@ -1,5 +1,5 @@
 ---
-date: '2026-02-01'
+date: '2026-02-02'
 description: Production adapters and pipelines for PortfolioCore. Vector stores, graph
   stores, embedders, Broadway pipelines, and advanced RAG strategies.
 docs_url: https://hexdocs.pm/portfolio_index/
