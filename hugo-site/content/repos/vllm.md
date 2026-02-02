@@ -7,12 +7,12 @@ docs_url: https://hexdocs.pm/vllm/
 hex_url: https://hex.pm/packages/vllm
 highlights:
 - 'Latest release: v0.2.1'
-- 'Recent downloads: 97'
-- 'All-time downloads: 97'
+- 'Recent downloads: 101'
+- 'All-time downloads: 101'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/vllm
 slug: vllm
-stage: Incubating
+stage: Preview
 tags:
 - MIT
 - Hex.pm
@@ -27,8 +27,8 @@ vLLM for Elixir via SnakeBridge - Easy, fast, and cheap LLM serving for everyone
 ## Package Information
 
 - Latest release: v0.2.1
-- Recent downloads: 97
-- All-time downloads: 97
+- Recent downloads: 101
+- All-time downloads: 101
 - Maintainers: nshkrdotcom
 
 ## Installation
