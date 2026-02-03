@@ -9,6 +9,17 @@
 
 {{- end -}}
 
+{{- $articles := first 5 (sort (where .Site.RegularPages "Section" "articles") "Date" "desc") -}}
+{{- if gt (len $articles) 0 -}}
+## Latest Articles
+
+{{- range $articles }}
+- [{{ .Title }}]({{ .RelPermalink }}){{- with .Date }} — {{ .Format "2006-01-02" }}{{- end }}{{- with .Params.meta_description }}
+  {{ . }}{{- end }}
+{{- end }}
+
+{{- end -}}
+
 {{- $sections := .Site.Sections -}}
 {{- if gt (len $sections) 0 -}}
 ## Site Sections
