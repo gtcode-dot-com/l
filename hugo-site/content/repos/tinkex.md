@@ -1,5 +1,5 @@
 ---
-date: '2026-02-02'
+date: '2026-02-03'
 description: 'Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows
   with telemetry and HTTP/2.'
 docs_url: https://hexdocs.pm/tinkex/

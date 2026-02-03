@@ -1,5 +1,5 @@
 ---
-date: '2026-02-02'
+date: '2026-02-03'
 description: HuggingFace Datasets for Elixir - Load, stream, and process ML datasets
   from the HuggingFace Hub with native BEAM/OTP integration.
 docs_url: https://hexdocs.pm/hf_datasets_ex/

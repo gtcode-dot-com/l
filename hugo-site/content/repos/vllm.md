@@ -1,5 +1,5 @@
 ---
-date: '2026-02-02'
+date: '2026-02-03'
 description: vLLM for Elixir via SnakeBridge - Easy, fast, and cheap LLM serving for
   everyone. High-throughput LLM inference with PagedAttention, continuous batching,
   and OpenAI-compatible API.
