@@ -1,5 +1,5 @@
 ---
-date: '2026-02-03'
+date: '2026-02-04'
 description: FlowStone integration for altar_ai - AI-powered data pipeline assets.
   Provides FlowStone.AI.Resource for unified AI access and FlowStone.AI.Assets DSL
   helpers (classify_each,…

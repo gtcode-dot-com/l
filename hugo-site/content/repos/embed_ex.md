@@ -1,5 +1,5 @@
 ---
-date: '2026-02-03'
+date: '2026-02-04'
 description: Vector embeddings service for the NSAI ecosystem
 docs_url: https://hexdocs.pm/embed_ex/
 hex_url: https://hex.pm/packages/embed_ex
