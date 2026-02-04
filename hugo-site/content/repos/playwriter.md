@@ -1,12 +1,11 @@
 ---
 date: '2026-02-04'
-description: Cross-platform browser automation for Elixir with advanced WSL-to-Windows
-  integration. Features headed browser support, Chrome profile integration, and WebSocket-based
-  remote…
+description: Elixir browser automation with WSL-to-Windows support. Control visible
+  Windows browsers from WSL.
 docs_url: https://hexdocs.pm/playwriter/
 hex_url: https://hex.pm/packages/playwriter
 highlights:
-- 'Latest release: v0.0.2'
+- 'Latest release: v0.1.0'
 - 'Recent downloads: 78'
 - 'All-time downloads: 164'
 - 'Maintainers: nshkrdotcom'
@@ -17,16 +16,16 @@ tags:
 - MIT
 - Hex.pm
 title: Playwriter
-version: 0.0.2
+version: 0.1.0
 ---
 
 ## About Playwriter
 
-Cross-platform browser automation for Elixir with advanced WSL-to-Windows integration. Features headed browser support, Chrome profile integration, and WebSocket-based remote…
+Elixir browser automation with WSL-to-Windows support. Control visible Windows browsers from WSL.
 
 ## Package Information
 
-- Latest release: v0.0.2
+- Latest release: v0.1.0
 - Recent downloads: 78
 - All-time downloads: 164
 - Maintainers: nshkrdotcom
@@ -38,7 +37,7 @@ Add `playwriter` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {'playwriter', "~> 0.0.2"}
+    {'playwriter', "~> 0.1.0"}
   ]
 end
 ```

@@ -1089,10 +1089,10 @@
 - slug: "playwriter"
   name: "Playwriter"
   stage: "Preview"
-  version: "0.0.2"
-  summary: "Cross-platform browser automation for Elixir with advanced WSL-to-Windows integration. Features headed browser support, Chrome profile integration, and WebSocket-based remote\u2026"
+  version: "0.1.0"
+  summary: "Elixir browser automation with WSL-to-Windows support. Control visible Windows browsers from WSL."
   highlights:
-    - "Latest release: v0.0.2"
+    - "Latest release: v0.1.0"
     - "Recent downloads: 78"
     - "All-time downloads: 164"
     - "Maintainers: nshkrdotcom"
