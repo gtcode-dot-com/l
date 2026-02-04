@@ -39,8 +39,8 @@
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 1602"
-    - "All-time downloads: 2299"
+    - "Recent downloads: 1625"
+    - "All-time downloads: 2323"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -90,8 +90,8 @@
   summary: "A metaprogramming framework for building REST APIs from OTP operations with automatic endpoint generation, parameter validation, and OpenAPI documentation."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 44"
-    - "All-time downloads: 1233"
+    - "Recent downloads: 46"
+    - "All-time downloads: 1235"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -158,8 +158,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.9.2"
-    - "Recent downloads: 1390"
-    - "All-time downloads: 1568"
+    - "Recent downloads: 1403"
+    - "All-time downloads: 1581"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -192,8 +192,8 @@
   summary: "Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready interface with streaming support, comprehensive event handling, and robust testing utilities."
   highlights:
     - "Latest release: v0.6.0"
-    - "Recent downloads: 757"
-    - "All-time downloads: 822"
+    - "Recent downloads: 761"
+    - "All-time downloads: 826"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -430,8 +430,8 @@
   summary: "Structured causal reasoning chain logging for LLMs. Captures decision-making processes with cryptographic verification for transparency and debugging."
   highlights:
     - "Latest release: v0.3.1"
-    - "Recent downloads: 160"
-    - "All-time downloads: 185"
+    - "Recent downloads: 162"
+    - "All-time downloads: 187"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -498,8 +498,8 @@
   summary: "DSPy for Elixir via SnakeBridge - Declarative LLM programming"
   highlights:
     - "Latest release: v0.9.0"
-    - "Recent downloads: 357"
-    - "All-time downloads: 526"
+    - "Recent downloads: 358"
+    - "All-time downloads: 527"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -532,7 +532,7 @@
   summary: "A Phoenix LiveView performance monitoring dashboard for tracking slow endpoints and database queries during development."
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 78"
+    - "Recent downloads: 76"
     - "All-time downloads: 129"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -617,7 +617,7 @@
   summary: "Production-ready data validation and quality library for Elixir ML pipelines. Provides 22 built-in expectations, drift detection, advanced profiling with outliers and\u2026"
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 137"
+    - "Recent downloads: 135"
     - "All-time downloads: 178"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -685,8 +685,8 @@
   summary: "Asset-first data orchestration framework for Elixir/BEAM."
   highlights:
     - "Latest release: v0.5.2"
-    - "Recent downloads: 270"
-    - "All-time downloads: 270"
+    - "Recent downloads: 272"
+    - "All-time downloads: 272"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -753,8 +753,8 @@
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
     - "Latest release: v0.9.1"
-    - "Recent downloads: 2479"
-    - "All-time downloads: 3565"
+    - "Recent downloads: 2507"
+    - "All-time downloads: 3594"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -838,8 +838,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 5194"
-    - "All-time downloads: 12608"
+    - "Recent downloads: 5222"
+    - "All-time downloads: 12741"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -889,8 +889,8 @@
   summary: "Lineage IR for cross-system traces, spans, artifacts, and provenance edges. Provides a shared event envelope and sink interface for consolidation across runtimes."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 19"
-    - "All-time downloads: 19"
+    - "Recent downloads: 21"
+    - "All-time downloads: 21"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -991,8 +991,8 @@
   summary: "NsaiWork - Unified job scheduler for the North-Shore-AI platform. Protocol-first, multi-tenant job scheduling with priority queues, resource-aware scheduling, and pluggable\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 16"
-    - "All-time downloads: 16"
+    - "Recent downloads: 18"
+    - "All-time downloads: 18"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1246,8 +1246,8 @@
   summary: "Compile-time generator for type-safe Elixir bindings to Python libraries"
   highlights:
     - "Latest release: v0.15.1"
-    - "Recent downloads: 1032"
-    - "All-time downloads: 1135"
+    - "Recent downloads: 1034"
+    - "All-time downloads: 1137"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1264,7 +1264,7 @@
   highlights:
     - "Latest release: v0.12.0"
     - "Recent downloads: 1788"
-    - "All-time downloads: 2537"
+    - "All-time downloads: 2539"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1280,8 +1280,8 @@
   summary: "Battle-hardened OTP testing toolkit with chaos engineering, performance testing, and zero-sleep synchronization patterns for building robust Elixir applications."
   highlights:
     - "Latest release: v0.5.1"
-    - "Recent downloads: 463"
-    - "All-time downloads: 649"
+    - "Recent downloads: 464"
+    - "All-time downloads: 650"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1331,8 +1331,8 @@
   summary: "Pure-Elixir TikToken-style byte-level BPE tokenizer, with helpers for Kimi K2 encodings."
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 90"
-    - "All-time downloads: 90"
+    - "Recent downloads: 92"
+    - "All-time downloads: 92"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"

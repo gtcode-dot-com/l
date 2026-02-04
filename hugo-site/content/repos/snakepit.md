@@ -8,7 +8,7 @@ hex_url: https://hex.pm/packages/snakepit
 highlights:
 - 'Latest release: v0.12.0'
 - 'Recent downloads: 1788'
-- 'All-time downloads: 2537'
+- 'All-time downloads: 2539'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakepit
 slug: snakepit
@@ -28,7 +28,7 @@ High-performance pooler and session manager for external language integrations. 
 
 - Latest release: v0.12.0
 - Recent downloads: 1788
-- All-time downloads: 2537
+- All-time downloads: 2539
 - Maintainers: nshkrdotcom
 
 ## Installation
