@@ -58,9 +58,7 @@
 
     <!-- Agentic Comment -->
     {{ with .Params.agentic_comment }}
-    <!--
-{{ . | safeHTML }}
-    -->
+    <script type="text/plain" id="agentic-context" style="display:none">{{ . | htmlEscape }}</script>
     {{ end }}
 
     <!-- Structured Data -->
