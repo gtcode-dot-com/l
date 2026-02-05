@@ -1,5 +1,5 @@
 ---
-date: '2026-02-04'
+date: '2026-02-05'
 description: Lightweight resilience primitives for backoff, retry, rate-limit windows,
   circuit breakers, semaphores, and telemetry helpers.
 docs_url: https://hexdocs.pm/foundation/

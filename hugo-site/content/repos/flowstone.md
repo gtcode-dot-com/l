@@ -1,5 +1,5 @@
 ---
-date: '2026-02-04'
+date: '2026-02-05'
 description: Asset-first data orchestration framework for Elixir/BEAM.
 docs_url: https://hexdocs.pm/flowstone/
 hex_url: https://hex.pm/packages/flowstone

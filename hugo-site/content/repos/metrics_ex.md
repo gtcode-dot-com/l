@@ -1,5 +1,5 @@
 ---
-date: '2026-02-04'
+date: '2026-02-05'
 description: Metrics aggregation service for experiment results and system health
   monitoring.
 docs_url: https://hexdocs.pm/metrics_ex/

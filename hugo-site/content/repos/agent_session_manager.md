@@ -1,5 +1,5 @@
 ---
-date: '2026-02-04'
+date: '2026-02-05'
 description: A comprehensive Elixir library for managing AI agent sessions, state
   persistence, conversation context, and multi-agent orchestration workflows.
 docs_url: https://hexdocs.pm/agent_session_manager/

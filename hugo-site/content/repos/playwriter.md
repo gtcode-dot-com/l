@@ -1,5 +1,5 @@
 ---
-date: '2026-02-04'
+date: '2026-02-05'
 description: Elixir browser automation with WSL-to-Windows support. Control visible
   Windows browsers from WSL.
 docs_url: https://hexdocs.pm/playwriter/
