@@ -235,7 +235,7 @@ Key edges: BF-1 (daughter); NP-4 (Hawaii Leadership Forum); NP-5 ●●● (gove
 Type: Person (attorney / per diem judge)
 Role: Former public defender. Had knowledge of a specific threat against the author. Relayed a coercive offer. Now serves as per diem judge.
 First appears: Issue 4
-Key edges: JD-4 (now per diem judge); JD-5 (connected to Dec 2 events); OV-3 (ODC complaint filed against)
+Key edges: JD-4 (now per diem judge); JD-5 (connected to Dec 2 events); OV-3 (subject of draft ODC complaint — not yet filed)
 
 ### Oversight (additions)
 
@@ -243,7 +243,7 @@ Key edges: JD-4 (now per diem judge); JD-5 (connected to Dec 2 events); OV-3 (OD
 Type: Institution
 Role: Handles attorney misconduct complaints.
 First appears: Issue 4 (mentioned); Issue 5 (detailed)
-Key edges: JD-6 (complaint filed re: Stanley)
+Key edges: JD-6 (Stanley is subject of draft complaint — not yet filed)
 
 ---
 
@@ -255,7 +255,7 @@ Key edges: JD-6 (complaint filed re: Stanley)
 Type: Institution
 Role: Federal complaint filed July 2025.
 First appears: Issue 5
-Key edges: JD-5 (complaint re: Dec 2 incident and related conduct)
+Key edges: JD-5 (complaint filed with FBI re: Dec 2 incident and related conduct)
 
 *No new network nodes in Issue 5. The issue synthesizes the existing map and presents the full evidence file.*
 
@@ -360,10 +360,10 @@ Cathy Luke is JD-2's niece.
 → Media cluster appears. Punahou edge now bridges banking and media (BF-1 ── ED-1 ── ME-2, concurrent trustees). Employment arrow: ME-3 ──▶ BF-2 (former bank employee now media contributor). Donor edge: BF-1 ┄┄ ME-1. Map connects banking → judiciary → oversight → media. Cathy Luke adds a political node connecting to philanthropy chain.
 
 **Issue 4:** Add JD-5, JD-6, OV-3
-→ Courtroom event node anchored inside the structure. Stanley enters the per diem system. ODC enters as complaint target. The map now has a specific incident surrounded by all the enabling conditions. Complaint arrows (▸) appear for the first time: JD-5 ▸ OV-1, JD-6 ▸ OV-3.
+→ Courtroom event node anchored inside the structure. Stanley enters the per diem system. ODC enters as potential complaint recipient. The map now has a specific incident surrounded by all the enabling conditions. Complaint arrows (▸) appear for the first time: JD-5 ▸ OV-1 (complaint filed with CJC), OV-3 ⋯ JD-6 (Stanley subject of draft ODC complaint — not yet filed).
 
 **Issue 5:** Add PO-2. All edges visible. Full map.
-→ FBI node. Complaint arrow: PO-2 ▸ JD-5. The reader has built the complete network one issue at a time. Final spread shows everything. The Minimum Clarifying Record Set (from the series bible) can be cross-referenced to specific nodes and edges on the map.
+→ FBI node. Complaint arrow: JD-5 ▸ PO-2 (complaint filed with FBI). The reader has built the complete network one issue at a time. Final spread shows everything. The Minimum Clarifying Record Set (from the series bible) can be cross-referenced to specific nodes and edges on the map.
 
 ---
 
@@ -407,8 +407,8 @@ Maintain as a spreadsheet. One row per edge. The map can be redrawn every issue 
 | JD-5 | OV-1 | complaint | filed | post-Dec 2022 | Commission correspondence |
 | OV-2 | JD-5 | rule_applied | 90-day invoked | — | Commission response |
 | JD-6 | JD-4 | employment | per diem judge | current | judiciary roster |
-| JD-6 | OV-3 | complaint_target | ODC complaint filed | — | ODC filing |
-| PO-2 | JD-5 | complaint | FBI complaint filed | July 2025 | FBI receipt |
+| JD-5 | PO-2 | complaint | complaint filed with FBI | July 2025 | FBI receipt |
+| OV-3 | JD-6 | complaint_target | subject of draft complaint (not yet filed) | — | ODC filing (draft) |
 
 ---
 
@@ -589,11 +589,11 @@ Canonical Source_Code values used in edge tables, mapped to full citations. Ensu
 | obituary, bank history | K.J. Luke obituary, Honolulu Star-Bulletin, Nov 15 2000 | https://archives.starbulletin.com/2000/11/15/news/story5.html |
 | bank founding records | Generations 808, "Banking, Family Style" (HNB founding narrative) | https://generations808.com/banking-family-style/ |
 | land records, news archive | Star-Bulletin archive (Damon Tract acquisition, 1956) | https://archives.starbulletin.com/2000/11/15/news/story5.html |
-| bank filings | Hawaii National Bank corporate filings | — (verify against FDIC/OCC records) |
-| Fed roster | Federal Reserve Bank of San Francisco, board/director listings | — (verify against FRBSF public records) |
+| bank filings | Hawaii National Bank corporate filings | **TBV** — verify against FDIC/OCC/SEC/DCCA records |
+| Fed roster | Federal Reserve Bank of San Francisco, board/director listings | **TBV** — verify against FRBSF public records |
 | Punahou trustee roster | Punahou Bulletin: Warren Luke retirement; Omidyar K-1 Neighborhood; Omidyar trustee emeritus | https://bulletin.punahou.edu/warren-k-k-luke-62-and-duncan-macnaughton-62-retire/ ; https://www.punahou.edu/archives-facilities-detail?pk=158068 ; https://bulletin.punahou.edu/pierre-omidyar-84-named-trustee-emeritus/ |
-| Punahou records | Punahou School employee/alumni records | — (verify against school directory) |
-| org roster | Various organization board listings | — (per organization) |
+| Punahou records | Punahou School employee/alumni records | **TBV** — verify against school directory/archival records |
+| org roster | Various organization board listings | URL per entity (see individual node citations) |
 | Ethics Commission filing | Wilson Loo 2021 FDS (long form) | https://www.courts.state.hi.us/wp-content/uploads/2022/08/LooWilson2021FDS.pdf |
 | REHAB records | REHAB Hospital Foundation REACH publication (Spring 2017) | https://www.rehabhospital.org/sites/default/files/documents/REACH_Spring2017.pdf |
 | Takitani records | Takitani Foundation board of directors page | https://takitanifoundation.org/board-of-directors/ |
@@ -615,14 +615,14 @@ Canonical Source_Code values used in edge tables, mapped to full citations. Ensu
 | judiciary roster | First Circuit Per Diem Judges roster | https://www.courts.state.hi.us/courts/district/first_circuit |
 | per diem program | Per Diem Judge Opportunities | https://www.courts.state.hi.us/courts/district/perdiem/per_diem |
 | Stanley FDS | Audrey Stanley 2024 Financial Disclosure Statement | https://www.courts.state.hi.us/wp-content/uploads/2025/05/StanleyAudrey2024FDS.pdf |
-| ODC filing | Disciplinary Board of Hawaiʻi: How to file a complaint | https://dbhawaii.org/how-to-file-a-complaint-with-the-odc/ |
+| ODC filing | Disciplinary Board of Hawaiʻi: How to file a complaint (author's complaint in draft) | https://dbhawaii.org/how-to-file-a-complaint-with-the-odc/ |
 | ODC form instructions | ODC Complaint Form Instructions | https://dbhawaii.org/wp-content/uploads/251208-Complaint-Form-Instructions-1.pdf |
 | judiciary complaint page | Hawaiʻi State Judiciary: Filing a Complaint | https://www.courts.state.hi.us/legal_references/attorneys/filing_a_complaint |
 | Commission correspondence | CJC correspondence (author's complaint trail) | — (author's records) |
 | Commission response | CJC response re: 90-day rule application | — (author's records) |
 | FBI receipt | FBI complaint receipt, July 2025 | — (author's records) |
-| public record | Public biographical records | — (various) |
-| public bios | Published biographical information | — (various) |
+| public record | Public biographical records | Per-node basis (news archives, official bios, etc.) |
+| public bios | Published biographical information | Per-node basis (news archives, official bios, etc.) |
 | RSCH reform memo | Judiciary memo re: proposed RSCH Rule 8/15 changes (Oct 2024) | https://www.courts.state.hi.us/wp-content/uploads/2024/10/2024.10.25-MemoCCRO-RSCH-8-15-FDS-RCJC-for-posting-1.pdf |
 
 ---
