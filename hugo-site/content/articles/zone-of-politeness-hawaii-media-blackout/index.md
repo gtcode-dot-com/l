@@ -24,6 +24,7 @@ structured_data_webpage:
 sitemap:
   changefreq: monthly
   priority: 0.8
+og_image: "/img/zone-of-politeness-og.png"
 ---
 
 *An Oʻahu Underground investigative series examining structural forces in Hawaiʻi journalism*
