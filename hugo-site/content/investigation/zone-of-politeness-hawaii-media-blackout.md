@@ -1,5 +1,6 @@
 ---
 draft: false
+weight: 2
 title: "The Zone of Politeness: How Hawaiʻi's Media Blackout Works"
 subtitle: "Why Civil Beat Won't Touch the Luke-Loo Network"
 description: "An investigation into the structural forces that prevent Hawaiʻi's newsrooms from investigating certain networks, and the social enforcement mechanisms that follow when someone tries."
