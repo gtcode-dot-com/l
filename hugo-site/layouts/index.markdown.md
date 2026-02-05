@@ -80,7 +80,7 @@ The record is now public. The architect has been named. The choice is yours.
 
 ### Independent Investigative Journalism for Hawaii
 
-Oahu Underground is the work of **Ekewaka Lono**, an independent investigative journalist based in Hawaii. Born and raised on Oahu, Ekewaka has spent years documenting institutional corruption, judicial misconduct, and the systemic failures that shield the powerful from accountability.
+Oahu Underground is the work of **Ekewaka Lono**, an independent investigative journalist based in Hawaii. Ekewaka has spent years documenting institutional corruption, judicial misconduct, and the systemic failures that shield the powerful from accountability.
 
 This newsroom has no corporate owners, no political affiliations, and no editorial interference. Every report is sourced to documentation. Every source is protected. The mission is simple: hold power accountable in Hawaii, one public record at a time.
 

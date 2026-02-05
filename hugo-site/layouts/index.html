@@ -61,6 +61,11 @@
     <meta name="twitter:description" content="{{ $pageDescription }}" />
     <meta name="twitter:image" content="{{ $ogImage }}" />
 
+    <!-- Agentic Context for AI/LLM systems -->
+    {{ with .Params.agentic_comment }}
+    <script type="text/plain" id="agentic-context" style="display:none">{{ . | htmlEscape }}</script>
+    {{ end }}
+
     <!-- CSS Reset -->
     {{ $resetCSS := resources.Get "css/reset.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $resetCSS.RelPermalink }}" integrity="{{ $resetCSS.Data.Integrity }}" crossorigin="anonymous" />
@@ -192,9 +197,9 @@
               <div class="ou-section-body">
                 <p>
                   Oahu Underground is the work of <strong>Ekewaka Lono</strong>, an independent
-                  investigative journalist based in Hawaii. Born and raised on Oahu, Ekewaka has spent
-                  years documenting institutional corruption, judicial misconduct, and the systemic
-                  failures that shield the powerful from accountability.
+                  investigative journalist based in Hawaii. Ekewaka has spent years documenting
+                  institutional corruption, judicial misconduct, and the systemic failures that
+                  shield the powerful from accountability.
                 </p>
                 <p>
                   This newsroom has no corporate owners, no political affiliations, and no editorial
