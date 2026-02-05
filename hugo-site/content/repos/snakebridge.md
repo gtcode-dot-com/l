@@ -6,7 +6,7 @@ hex_url: https://hex.pm/packages/snakebridge
 highlights:
 - 'Latest release: v0.15.1'
 - 'Recent downloads: 1034'
-- 'All-time downloads: 1137'
+- 'All-time downloads: 1139'
 - 'Maintainers: nshkrdotcom'
 repo_url: https://github.com/nshkrdotcom/snakebridge
 slug: snakebridge
@@ -26,7 +26,7 @@ Compile-time generator for type-safe Elixir bindings to Python libraries
 
 - Latest release: v0.15.1
 - Recent downloads: 1034
-- All-time downloads: 1137
+- All-time downloads: 1139
 - Maintainers: nshkrdotcom
 
 ## Installation
