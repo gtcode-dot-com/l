@@ -159,7 +159,3 @@ Civil Beat didn't drop this story because it was false. The network topology poi
 The "Zone of Politeness" isn't a conspiracy. It's a network topology. The same interlocking directorates that allow Hawaiʻi's elite to resolve conflicts privately also prevent those conflicts from becoming public.
 
 In that structural silence, the threat that followed me was possible. Not because anyone ordered it, but because everyone understood that no one would report it.
-
----
-
-*Ekewaka Lono is an AI engineering consultant and independent investigative journalist based on Oʻahu. His reporting on institutional corruption in Hawaiʻi's judicial system is published at GTCode.com.*
