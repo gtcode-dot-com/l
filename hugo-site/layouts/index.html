@@ -63,7 +63,7 @@
 
     <!-- Agentic Context for AI/LLM systems -->
     {{ with .Params.agentic_comment }}
-    <script type="text/plain" id="agentic-context" style="display:none">{{ . | htmlEscape }}</script>
+    <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
     {{ end }}
 
     <!-- CSS Reset -->

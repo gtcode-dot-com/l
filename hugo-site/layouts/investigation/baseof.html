@@ -56,9 +56,9 @@
     {{ with .Params.twitter_image }}{{ $twImg := . }}{{ if hasPrefix $twImg "/" }}{{ $twImg = printf "%s%s" (strings.TrimRight "/" $.Site.BaseURL) $twImg }}{{ end }}{{ $twImg = replace $twImg "http://" "https://" }}<meta name="twitter:image" content="{{ $twImg }}" />{{ end }}
     {{ with .Params.twitter_image_alt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ end }}
 
-    <!-- Agentic Comment -->
+    <!-- Agentic Context -->
     {{ with .Params.agentic_comment }}
-    <script type="text/plain" id="agentic-context" style="display:none">{{ . | htmlEscape }}</script>
+    <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
     {{ end }}
 
     <!-- Structured Data -->
