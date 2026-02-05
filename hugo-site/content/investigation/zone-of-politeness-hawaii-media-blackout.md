@@ -142,13 +142,13 @@ Investigating Wilson Loo means scrutinizing the Luke network's institutions and 
 
 ## IV. What Followed
 
-When the newsroom went quiet, the network did not.
+The newsroom silence came later. The network had already acted.
 
 **The Hartmann Meeting**
 
 Gene and Rita Hartmann are not public figures. Their significance is specific: they are the parents of Pete Johnson's wife. Pete is Jack Johnson's brother.
 
-In a direct meeting, they delivered what I understood as a credible threat against my life. This was not a legal cease-and-desist. It was not delivered through counsel. It was communicated with the confidence of people who appeared to believe there would be no consequences. I reported it; no investigation followed.
+Previously, in a direct meeting, they delivered what I understood as a credible threat against my life. This was not a legal cease-and-desist. It was not delivered through counsel. It was communicated with the confidence of people who appeared to believe there would be no consequences. I reported it; no investigation followed.
 
 **The Blackmail**
 
