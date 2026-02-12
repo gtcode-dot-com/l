@@ -1,4 +1,58 @@
 ---
-title: "Agent Session Manager"
-description: "A comprehensive Elixir library for managing AI agent sessions, state persistence, conversation context, and multi-agent orchestration workflows."
+date: '2026-02-12'
+description: A comprehensive Elixir library for managing AI agent sessions, state
+  persistence, conversation context, and multi-agent orchestration workflows.
+docs_url: https://hexdocs.pm/agent_session_manager/
+hex_url: https://hex.pm/packages/agent_session_manager
+highlights:
+- 'Latest release: v0.8.0'
+- 'Recent downloads: 228'
+- 'All-time downloads: 228'
+- 'Maintainers: nshkrdotcom'
+repo_url: https://github.com/nshkrdotcom/agent_session_manager
+slug: agent_session_manager
+stage: Preview
+tags:
+- MIT
+- Hex.pm
+title: Agent Session Manager
+version: 0.8.0
 ---
+
+## About Agent Session Manager
+
+A comprehensive Elixir library for managing AI agent sessions, state persistence, conversation context, and multi-agent orchestration workflows.
+
+## Package Information
+
+- Latest release: v0.8.0
+- Recent downloads: 228
+- All-time downloads: 228
+- Maintainers: nshkrdotcom
+
+## Installation
+
+Add `agent_session_manager` to your list of dependencies in `mix.exs`:
+
+```elixir
+def deps do
+  [
+    {'agent_session_manager', "~> 0.8.0"}
+  ]
+end
+```
+
+Then run:
+
+```bash
+mix deps.get
+```
+
+## Documentation
+
+Full documentation is available at [https://hexdocs.pm/agent_session_manager/](https://hexdocs.pm/agent_session_manager/).
+
+## Source Code
+
+The source code is available on GitHub: [https://github.com/nshkrdotcom/agent_session_manager](https://github.com/nshkrdotcom/agent_session_manager).
+

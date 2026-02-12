@@ -1,142 +1,124 @@
 {{ define "main" }}
-{{/* Look up repo from the single source of truth: data/repos.yaml */}}
-{{ $slug := .File.ContentBaseName }}
-{{ $matches := where .Site.Data.repos "slug" $slug }}
-{{ if $matches }}
-  {{ $repo := index $matches 0 }}
-
-  <article class="article-content">
-    <header class="article-header">
-      {{ with $repo.stage }}
-        <p class="article-eyebrow">
-          <span class="badge badge-secondary">{{ . }}</span>
-          {{ with $repo.version }}
-            <span class="text-muted">v{{ . }}</span>
-          {{ end }}
-        </p>
-      {{ end }}
-      <h1>{{ $repo.name }}</h1>
-      {{ with $repo.summary }}
-        <p class="article-lede">{{ . }}</p>
-      {{ end }}
-    </header>
-
-    {{ if $repo.highlights }}
-      <section class="repo-stats">
-        <h2>Stats & Info</h2>
-        <ul class="repo-highlights">
-          {{ range $repo.highlights }}
-            <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-      </section>
+<article class="article-content">
+  <header class="article-header">
+    {{ with .Params.stage }}
+      <p class="article-eyebrow">
+        <span class="badge badge-secondary">{{ . }}</span>
+        {{ with $.Params.version }}
+          <span class="text-muted">v{{ . }}</span>
+        {{ end }}
+      </p>
     {{ end }}
-
-    {{ if .Content }}
-      <section class="repo-description">
-        {{ .Content }}
-      </section>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="article-lede">{{ . }}</p>
     {{ end }}
+  </header>
 
-    {{ if $repo.tags }}
-      <section class="repo-tags-section">
-        <h2>Tags</h2>
-        <div class="repo-card-tags">
-          {{ range $repo.tags }}
-            <span class="tag">{{ . }}</span>
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
+  {{ if .Params.highlights }}
+    <section class="repo-stats">
+      <h2>Stats & Info</h2>
+      <ul class="repo-highlights">
+        {{ range .Params.highlights }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
 
-    <!-- Enhanced Installation Section (optional per-page override via front matter) -->
-    {{ with .Params.installation }}
-    <section class="repo-section">
-      <h2>Installation</h2>
-      <div class="installation-steps">
-        {{ range . }}
-        <div class="install-method">
-          <h3>{{ .method }}</h3>
-          <pre><code>{{ .command }}</code></pre>
-          {{ with .note }}
-          <p class="install-note">{{ . }}</p>
-          {{ end }}
-        </div>
+  {{ if .Content }}
+    <section class="repo-description">
+      {{ .Content }}
+    </section>
+  {{ end }}
+
+  {{ if .Params.tags }}
+    <section class="repo-tags-section">
+      <h2>Tags</h2>
+      <div class="repo-card-tags">
+        {{ range .Params.tags }}
+          <span class="tag">{{ . }}</span>
         {{ end }}
       </div>
     </section>
-    {{ else }}
-    <section class="repo-installation">
-      <h2>Installation</h2>
-      <p>Add <code>{{ $repo.slug }}</code> to your list of dependencies in <code>mix.exs</code>:</p>
-      <pre><code class="language-elixir">def deps do
+  {{ end }}
+
+  <!-- Enhanced Installation Section -->
+  {{ with .Params.installation }}
+  <section class="repo-section">
+    <h2>Installation</h2>
+    <div class="installation-steps">
+      {{ range . }}
+      <div class="install-method">
+        <h3>{{ .method }}</h3>
+        <pre><code>{{ .command }}</code></pre>
+        {{ with .note }}
+        <p class="install-note">{{ . }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ else }}
+  <section class="repo-installation">
+    <h2>Installation</h2>
+    <p>Add <code>{{ .Params.slug }}</code> to your list of dependencies in <code>mix.exs</code>:</p>
+    <pre><code class="language-elixir">def deps do
   [
-    {:{{ $repo.slug }}, "~> {{ $repo.version }}"}
+    {:{{ .Params.slug }}, "~> {{ .Params.version }}"}
   ]
 end</code></pre>
-      <p>Then run:</p>
-      <pre><code class="language-bash">mix deps.get</code></pre>
-    </section>
-    {{ end }}
+    <p>Then run:</p>
+    <pre><code class="language-bash">mix deps.get</code></pre>
+  </section>
+  {{ end }}
 
-    <!-- Usage Section (optional per-page override via front matter) -->
-    {{ with .Params.usage }}
-    <section class="repo-section">
-      <h2>Quick Start</h2>
-      {{ . | markdownify }}
-    </section>
-    {{ end }}
+  <!-- Usage Section -->
+  {{ with .Params.usage }}
+  <section class="repo-section">
+    <h2>Quick Start</h2>
+    {{ . | markdownify }}
+  </section>
+  {{ end }}
 
-    <!-- Release Timeline (optional per-page override via front matter) -->
-    {{ with .Params.releases }}
-    <section class="repo-section">
-      <h2>Release History</h2>
-      <div class="timeline">
-        {{ range . }}
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-version">{{ .version }}</div>
-            <div class="timeline-date">{{ .date }}</div>
-            {{ with .notes }}
-            <div class="timeline-notes">{{ . }}</div>
-            {{ end }}
-          </div>
+  <!-- Release Timeline -->
+  {{ with .Params.releases }}
+  <section class="repo-section">
+    <h2>Release History</h2>
+    <div class="timeline">
+      {{ range . }}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-version">{{ .version }}</div>
+          <div class="timeline-date">{{ .date }}</div>
+          {{ with .notes }}
+          <div class="timeline-notes">{{ . }}</div>
+          {{ end }}
         </div>
-        {{ end }}
       </div>
-    </section>
-    {{ end }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
 
-    <section class="repo-actions">
-      <h2>Resources</h2>
-      <div class="repo-resource-links">
-        {{ with $repo.docs_url }}
-          <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">View Documentation</a>
-        {{ end }}
-        {{ with $repo.hex_url }}
-          <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">View on Hex.pm</a>
-        {{ end }}
-        {{ with $repo.repo_url }}
-          <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">View on GitHub</a>
-        {{ end }}
-      </div>
-    </section>
+  <section class="repo-actions">
+    <h2>Resources</h2>
+    <div class="repo-resource-links">
+      {{ with .Params.docs_url }}
+        <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">View Documentation</a>
+      {{ end }}
+      {{ with .Params.hex_url }}
+        <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">View on Hex.pm</a>
+      {{ end }}
+      {{ with .Params.repo_url }}
+        <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">View on GitHub</a>
+      {{ end }}
+    </div>
+  </section>
 
-    <nav class="article-nav">
-      <a href="/repos/" class="btn btn-secondary">&larr; Back to all repos</a>
-    </nav>
-  </article>
-
-{{ else }}
-  <article class="article-content">
-    <header class="article-header">
-      <h1>{{ .Title }}</h1>
-      <p class="article-lede">This repository could not be found in the data catalog.</p>
-    </header>
-    <nav class="article-nav">
-      <a href="/repos/" class="btn btn-secondary">&larr; Back to all repos</a>
-    </nav>
-  </article>
-{{ end }}
+  <nav class="article-nav">
+    <a href="/repos/" class="btn btn-secondary">← Back to all repos</a>
+  </nav>
+</article>
 {{ end }}

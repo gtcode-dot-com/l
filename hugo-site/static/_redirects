@@ -9,6 +9,8 @@
 /repos/altar/ https://hex.pm/packages/altar 302
 /repos/altar_ai https://hex.pm/packages/altar_ai 302
 /repos/altar_ai/ https://hex.pm/packages/altar_ai 302
+/repos/amp_sdk https://hex.pm/packages/amp_sdk 302
+/repos/amp_sdk/ https://hex.pm/packages/amp_sdk 302
 /repos/anvil_ex https://hex.pm/packages/anvil_ex 302
 /repos/anvil_ex/ https://hex.pm/packages/anvil_ex 302
 /repos/arsenal https://hex.pm/packages/arsenal 302
@@ -89,6 +91,8 @@
 /repos/forge_ex/ https://hex.pm/packages/forge_ex 302
 /repos/foundation https://hex.pm/packages/foundation 302
 /repos/foundation/ https://hex.pm/packages/foundation 302
+/repos/gemini_cli_sdk https://hex.pm/packages/gemini_cli_sdk 302
+/repos/gemini_cli_sdk/ https://hex.pm/packages/gemini_cli_sdk 302
 /repos/gemini_ex https://hex.pm/packages/gemini_ex 302
 /repos/gemini_ex/ https://hex.pm/packages/gemini_ex 302
 /repos/gepa_ex https://hex.pm/packages/gepa_ex 302
