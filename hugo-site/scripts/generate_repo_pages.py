@@ -1,24 +1,23 @@
 #!/usr/bin/env python3
 """
-Generate Hugo content pages for repositories from data/repos.yaml
+Generate minimal Hugo content stubs for repositories from data/repos.yaml
+
+Each stub contains only title and description in front matter. All other
+metadata is read from data/repos.yaml at build time by the Hugo template.
 
 Usage:
-    python generate_repo_pages.py [--overwrite] [--skip-existing]
+    python generate_repo_pages.py [--dry-run] [--prune]
 
 Options:
-    --overwrite      Overwrite all existing repo pages
-    --skip-existing  Skip repos that already have content pages (default)
-    --force         Force overwrite without prompting
+    --dry-run   Show what would be done without writing files
+    --prune     Remove .md files that have no matching slug in repos.yaml
 """
 
-import os
 import sys
 import yaml
 import argparse
 from pathlib import Path
-from datetime import datetime
 
-# Paths
 SCRIPT_DIR = Path(__file__).parent
 HUGO_ROOT = SCRIPT_DIR.parent
 DATA_FILE = HUGO_ROOT / "data" / "repos.yaml"
@@ -28,143 +27,84 @@ CONTENT_DIR = HUGO_ROOT / "content" / "repos"
 def load_repos():
     """Load repository data from YAML file"""
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
-        return yaml.safe_load(f)
+        return yaml.safe_load(f) or []
 
 
-def create_repo_content(repo, overwrite=False):
-    """Create a Hugo content file for a repository"""
-    slug = repo.get('slug', '')
-    content_file = CONTENT_DIR / f"{slug}.md"
-
-    # Check if file exists
-    if content_file.exists() and not overwrite:
-        return 'skipped'
-
-    # Prepare front matter
-    front_matter = {
-        'title': repo.get('name', slug),
-        'description': repo.get('summary', ''),
-        'date': datetime.now().strftime('%Y-%m-%d'),
-        'slug': slug,
-        'stage': repo.get('stage', 'Active'),
-        'version': repo.get('version', '0.0.0'),
-        'highlights': repo.get('highlights', []),
-        'tags': repo.get('tags', []),
-        'hex_url': repo.get('hex_url', ''),
-        'docs_url': repo.get('docs_url', ''),
-        'repo_url': repo.get('repo_url', ''),
-    }
-
-    # Generate content file
-    content = "---\n"
-    content += yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)
-    content += "---\n\n"
-    content += f"## About {repo.get('name', slug)}\n\n"
-    content += f"{repo.get('summary', '')}\n\n"
-
-    if repo.get('highlights'):
-        content += "## Package Information\n\n"
-        for highlight in repo.get('highlights'):
-            content += f"- {highlight}\n"
-        content += "\n"
-
-    content += "## Installation\n\n"
-    content += f"Add `{slug}` to your list of dependencies in `mix.exs`:\n\n"
-    content += "```elixir\n"
-    content += "def deps do\n"
-    content += "  [\n"
-    content += f"    {{{slug!r}, \"~> {repo.get('version', '0.0.0')}\"}}\n"
-    content += "  ]\n"
-    content += "end\n"
-    content += "```\n\n"
-    content += "Then run:\n\n"
-    content += "```bash\n"
-    content += "mix deps.get\n"
-    content += "```\n\n"
-    content += "## Documentation\n\n"
-
-    if repo.get('docs_url'):
-        content += f"Full documentation is available at [{repo.get('docs_url')}]({repo.get('docs_url')}).\n\n"
-
-    if repo.get('repo_url'):
-        content += f"## Source Code\n\n"
-        content += f"The source code is available on GitHub: [{repo.get('repo_url')}]({repo.get('repo_url')}).\n\n"
-
-    # Write file
-    content_file.parent.mkdir(parents=True, exist_ok=True)
-    with open(content_file, 'w', encoding='utf-8') as f:
-        f.write(content)
-
-    return 'created' if not content_file.exists() else 'updated'
+def stub_content(repo):
+    """Generate minimal stub content for a repo"""
+    title = repo.get('name', repo.get('slug', 'Unknown'))
+    desc = repo.get('summary', '')
+    # Escape quotes for YAML safety
+    title_escaped = title.replace('"', '\\"')
+    desc_escaped = desc.replace('"', '\\"')
+    return f'---\ntitle: "{title_escaped}"\ndescription: "{desc_escaped}"\n---\n'
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Generate Hugo content pages for repositories from data/repos.yaml'
+        description='Generate minimal Hugo content stubs from data/repos.yaml'
     )
-    parser.add_argument(
-        '--overwrite',
-        action='store_true',
-        help='Overwrite all existing repo pages'
-    )
-    parser.add_argument(
-        '--skip-existing',
-        action='store_true',
-        default=True,
-        help='Skip repos that already have content pages (default)'
-    )
-    parser.add_argument(
-        '--force',
-        action='store_true',
-        help='Force overwrite without prompting'
-    )
-
+    parser.add_argument('--dry-run', action='store_true',
+                        help='Show what would be done without writing files')
+    parser.add_argument('--prune', action='store_true',
+                        help='Remove .md files with no matching slug in repos.yaml')
     args = parser.parse_args()
 
-    # Load repos
-    print(f"Loading repositories from {DATA_FILE}...")
     repos = load_repos()
-
     if not repos:
         print("No repositories found in data file.")
         return 1
 
-    print(f"Found {len(repos)} repositories.")
+    print(f"Found {len(repos)} repositories in {DATA_FILE}")
+    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Confirm overwrite if requested
-    if args.overwrite and not args.force:
-        response = input(f"\nThis will overwrite existing repo pages. Continue? [y/N]: ")
-        if response.lower() != 'y':
-            print("Aborted.")
-            return 0
-
-    # Process each repo
-    stats = {'created': 0, 'updated': 0, 'skipped': 0}
-
-    print(f"\nProcessing repositories...")
-    print("-" * 60)
+    slugs = set()
+    created = 0
+    updated = 0
+    unchanged = 0
 
     for repo in repos:
-        slug = repo.get('slug', 'unknown')
-        status = create_repo_content(repo, overwrite=args.overwrite)
-        stats[status] = stats.get(status, 0) + 1
+        slug = repo.get('slug', '')
+        if not slug:
+            continue
+        slugs.add(slug)
+        content_file = CONTENT_DIR / f"{slug}.md"
+        new_content = stub_content(repo)
 
-        status_icon = {
-            'created': '✓',
-            'updated': '↻',
-            'skipped': '○'
-        }.get(status, '?')
+        if content_file.exists():
+            existing = content_file.read_text(encoding='utf-8')
+            if existing == new_content:
+                unchanged += 1
+                continue
+            status = 'update'
+            updated += 1
+        else:
+            status = 'create'
+            created += 1
 
-        print(f"{status_icon} {slug:<30} {status}")
+        if args.dry_run:
+            print(f"  [DRY RUN] Would {status}: {content_file.name}")
+        else:
+            content_file.write_text(new_content, encoding='utf-8')
+            print(f"  {status}: {content_file.name}")
 
-    # Summary
-    print("-" * 60)
-    print(f"\nSummary:")
-    print(f"  Created:  {stats['created']}")
-    print(f"  Updated:  {stats['updated']}")
-    print(f"  Skipped:  {stats['skipped']}")
-    print(f"  Total:    {len(repos)}")
+    # Prune orphaned files
+    pruned = 0
+    if args.prune:
+        for md_file in CONTENT_DIR.glob("*.md"):
+            if md_file.name == "_index.md":
+                continue
+            file_slug = md_file.stem
+            if file_slug not in slugs:
+                pruned += 1
+                if args.dry_run:
+                    print(f"  [DRY RUN] Would prune: {md_file.name}")
+                else:
+                    md_file.unlink()
+                    print(f"  pruned: {md_file.name}")
 
+    print(f"\nSummary: {created} created, {updated} updated, "
+          f"{unchanged} unchanged, {pruned} pruned")
     return 0
 
 
