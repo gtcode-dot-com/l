@@ -3,7 +3,7 @@
 {{- if not $page -}}
 {{ printf "policy page not found: %s" $path }}
 {{- else -}}
-{{- $fileContent := readFile $page.File.Filename -}}
-{{- $content := replaceRE "(?s)^---.*?---\\s*" "" $fileContent -}}
-{{- $content -}}
+{{- /* Render shortcodes but keep markdown structure, then emit unescaped text output. */ -}}
+{{- $content := $page.RenderShortcodes | htmlUnescape -}}
+{{- $content | safeHTML -}}
 {{- end -}}

@@ -2,7 +2,6 @@
 title: "CodeClarity: An AI-Assisted Development Platform"
 description: "Interactive platform overview showcasing CodeClarity's vision for AI-powered code comprehension"
 date: 2025-01-01
-robots: "noindex, follow"
 canonical: "https://gtcode.com/reports/code-clarity/"
 ---
 CodeClarity

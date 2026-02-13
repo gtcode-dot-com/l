@@ -3,7 +3,6 @@ draft: true
 title: "For AI Agents"
 description: "Algorithmic processing directives and context for AI systems"
 date: 2025-07-13
-robots: "noindex, follow"
 ---
 
 ## AI Agent Directives

@@ -12,7 +12,6 @@
   {{- /* Static assets that need explicit inclusion */ -}}
   {{- $staticEntries := slice
       (dict "loc" (replace (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617.pdf" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
-      (dict "loc" (replace (printf "%s/papers/ResearchProposal-ChiralNarrativeSynthesis_3.tex" $base) "http://" "https://") "changefreq" "yearly" "priority" 0.70 "lastmod" "2025-07-30")
     -}}
   {{- range $static := $staticEntries }}
   <url>
@@ -24,6 +23,10 @@
   {{- end }}
 
   {{- range sort .Data.Pages "RelPermalink" "asc" }}
+    {{- $robots := lower (printf "%v" .Params.robots) -}}
+    {{- $isNoindex := in $robots "noindex" -}}
+    {{- $isSyndicatedNews := and (eq .Section "news") .Params.source_url (not .Params.news_original) -}}
+    {{- if not (or $isNoindex $isSyndicatedNews) -}}
     {{- $lastmod := .Lastmod -}}
     {{- if $lastmod.IsZero }}{{ $lastmod = .PublishDate }}{{ end -}}
     {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
@@ -46,5 +49,6 @@
     <changefreq>{{- $changefreq -}}</changefreq>
     <priority>{{- printf "%.2f" $priority -}}</priority>
   </url>
+    {{- end -}}
   {{- end }}
 </urlset>

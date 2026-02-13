@@ -2,7 +2,6 @@
 title: "Competitive Landscape: AI-Assisted Development Tools"
 description: "Interactive competitive analysis report comparing AI-assisted development tools against CodeClarity's vision"
 date: 2025-01-01
-robots: "noindex, follow"
 canonical: "https://gtcode.com/reports/code-clarity-existing/"
 ---
 Competitive Analysis

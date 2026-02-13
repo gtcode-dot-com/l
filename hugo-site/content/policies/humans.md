@@ -17,7 +17,7 @@ outputs: ["HTML", "Markdown", "plaintexthumans"]
 
 ## SITE
 
-**Last update:** {{ .Site.LastChange.Format "2006-01-02" }}
+**Last update:** {{< site-last-change >}}
 **Language:** English
 **Purpose:** AI engineering consultancy, open-source Elixir libraries, and ML research
 

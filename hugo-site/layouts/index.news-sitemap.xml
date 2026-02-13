@@ -3,7 +3,16 @@
 {{- $cutoff := now.AddDate 0 0 -2 -}}
 {{- $recentNews := where .Site.RegularPages "Section" "news" -}}
 {{- $recentNews = where $recentNews ".Date" "ge" $cutoff -}}
-{{- $recentNews = first 100 $recentNews -}}
+{{- $indexableNews := slice -}}
+{{- range $recentNews -}}
+  {{- $robots := lower (printf "%v" .Params.robots) -}}
+  {{- $isNoindex := in $robots "noindex" -}}
+  {{- $isSyndicated := and .Params.source_url (not .Params.news_original) -}}
+  {{- if not (or $isNoindex $isSyndicated) -}}
+    {{- $indexableNews = $indexableNews | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $recentNews = first 100 $indexableNews -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
@@ -12,7 +21,7 @@
   {{- if $publishDate.IsZero }}{{ $publishDate = .Date }}{{ end -}}
   {{- $loc := printf "%s%s" $base .RelPermalink -}}
   {{- $loc = replace $loc "http://" "https://" -}}
-  {{- $title := .Title -}}
+  {{- $title := .Title | htmlUnescape -}}
   {{- $pubName := $.Site.Title | default "GTCode" -}}
   {{- $language := .Lang | default "en" -}}
   <url>
