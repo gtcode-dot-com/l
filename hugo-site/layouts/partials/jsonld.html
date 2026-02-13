@@ -7,9 +7,22 @@
 {{- $siteRoot := replace .Site.BaseURL "http://" "https://" -}}
 {{- $siteName := .Site.Title -}}
 {{- $author := .Site.Params.author | default "GTCode" -}}
+{{- $siteLogo := .Site.Params.logo | default "/img/gtcode-core.svg" -}}
+{{- if hasPrefix $siteLogo "/" }}{{ $siteLogo = printf "%s%s" (strings.TrimRight "/" $siteRoot) $siteLogo }}{{ end -}}
+{{- $siteLogo = replace $siteLogo "http://" "https://" -}}
 
 {{- if .Params.structured_data_graph -}}
-<script type="application/ld+json">{{ .Params.structured_data_graph | jsonify | safeJS }}</script>
+{{- $jsonText := "" -}}
+{{- if or (reflect.IsMap .Params.structured_data_graph) (reflect.IsSlice .Params.structured_data_graph) -}}
+  {{- $jsonText = .Params.structured_data_graph | jsonify -}}
+{{- else -}}
+  {{- $jsonText = printf "%v" .Params.structured_data_graph -}}
+{{- end -}}
+{{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*,\\s*\"url\"\\s*:\\s*\"\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+{{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"url\"\\s*:\\s*\"\"\\s*,\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+{{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*,\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+{{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*,\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+<script type="application/ld+json">{{ $jsonText | safeJS }}</script>
 {{- else if and $articleMeta $articleMeta.json_ld }}
   {{- $jsonLD := $articleMeta.json_ld -}}
   {{- if not (or (reflect.IsMap $jsonLD) (reflect.IsSlice $jsonLD)) }}
@@ -18,11 +31,61 @@
       {{- $jsonLD = $parsed -}}
     {{- end -}}
   {{- end -}}
-  {{- if or (reflect.IsMap $jsonLD) (reflect.IsSlice $jsonLD) }}
-<script type="application/ld+json">{{ $jsonLD | jsonify | safeJS }}</script>
-  {{- else }}
-<script type="application/ld+json">{{ $jsonLD | safeJS }}</script>
-  {{- end }}
+  {{- if reflect.IsMap $jsonLD -}}
+    {{- $publisher := index $jsonLD "publisher" -}}
+    {{- if and $publisher (reflect.IsMap $publisher) -}}
+      {{- $pub := $publisher -}}
+      {{- $pubName := strings.TrimSpace (printf "%v" (index $pub "name")) -}}
+      {{- if or (eq $pubName "") (eq $pubName "<nil>") -}}
+        {{- $pub = merge $pub (dict "name" $siteName) -}}
+      {{- end -}}
+      {{- $pubURL := strings.TrimSpace (printf "%v" (index $pub "url")) -}}
+      {{- if or (eq $pubURL "") (eq $pubURL "<nil>") -}}
+        {{- $pubURL = $siteRoot -}}
+      {{- else if hasPrefix $pubURL "/" -}}
+        {{- $pubURL = printf "%s%s" (strings.TrimRight "/" $siteRoot) $pubURL -}}
+      {{- else if hasPrefix $pubURL "http://" -}}
+        {{- $pubURL = replace $pubURL "http://" "https://" -}}
+      {{- end -}}
+      {{- $pub = merge $pub (dict "url" $pubURL) -}}
+
+      {{- $logoRaw := index $pub "logo" -}}
+      {{- $logoMap := dict "@type" "ImageObject" "url" $siteLogo -}}
+      {{- if reflect.IsMap $logoRaw -}}
+        {{- $logoMap = $logoRaw -}}
+      {{- else if $logoRaw -}}
+        {{- $logoRawString := strings.TrimSpace (printf "%v" $logoRaw) -}}
+        {{- if and (ne $logoRawString "") (ne $logoRawString "<nil>") -}}
+          {{- $logoMap = dict "@type" "ImageObject" "url" $logoRawString -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $logoURL := strings.TrimSpace (printf "%v" (index $logoMap "url")) -}}
+      {{- if or (eq $logoURL "") (eq $logoURL "<nil>") (in $logoURL "example.com") -}}
+        {{- $logoURL = $siteLogo -}}
+      {{- else if hasPrefix $logoURL "/" -}}
+        {{- $logoURL = printf "%s%s" (strings.TrimRight "/" $siteRoot) $logoURL -}}
+      {{- else if hasPrefix $logoURL "http://" -}}
+        {{- $logoURL = replace $logoURL "http://" "https://" -}}
+      {{- end -}}
+      {{- $logoMap = merge $logoMap (dict "@type" "ImageObject" "url" $logoURL) -}}
+      {{- $pub = merge $pub (dict "logo" $logoMap) -}}
+      {{- $jsonLD = merge $jsonLD (dict "publisher" $pub) -}}
+    {{- else -}}
+      {{- $jsonLD = merge $jsonLD (dict "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $jsonText := "" -}}
+  {{- if or (reflect.IsMap $jsonLD) (reflect.IsSlice $jsonLD) -}}
+    {{- $jsonText = $jsonLD | jsonify -}}
+  {{- else -}}
+    {{- $jsonText = printf "%v" $jsonLD -}}
+  {{- end -}}
+  {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*,\\s*\"url\"\\s*:\\s*\"\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+  {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"url\"\\s*:\\s*\"\"\\s*,\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+  {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*,\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+  {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*,\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
+<script type="application/ld+json">{{ $jsonText | safeJS }}</script>
 {{- else -}}
 {{- /* BreadcrumbList */ -}}
 {{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $siteRoot) -}}
@@ -128,7 +191,7 @@
   {{- end }}
   {{- $data = merge $data (dict
         "author" (dict "@type" "Person" "name" $author "url" $siteRoot)
-        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" (replace (.Site.Params.logo | default "/img/gtcode-core.svg") "http://" "https://")))
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
     ) -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if $sd }}
@@ -156,7 +219,7 @@
         "datePublished" $published
         "dateModified" $modified
         "author" (dict "@type" "Person" "name" $author)
-        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" (replace (.Site.Params.logo | default "/img/gtcode-core.svg") "http://" "https://")))
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
         "mainEntityOfPage" (dict "@type" "WebPage" "@id" (replace .Permalink "http://" "https://"))
         "articleSection" (.Params.category | default .Section)
         "wordCount" .WordCount
