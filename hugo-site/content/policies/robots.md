@@ -7,46 +7,25 @@ type: "policies"
 outputs: ["HTML", "Markdown", "plaintextrobots"]
 ---
 
-# Robots.txt Configuration
-
-This file controls how web crawlers and search engines access GTCode.com.
-
-## General Access
-
-```
 User-agent: *
 Allow: /
-```
 
-All crawlers are welcome to access all content on this site.
+User-agent: GPTBot
+Allow: /
 
-## AI Crawler Specific Rules
+User-agent: ChatGPT-User
+Allow: /
 
-We explicitly allow and welcome AI crawlers:
+User-agent: CCBot
+Allow: /
 
-- **GPTBot** (OpenAI)
-- **ChatGPT-User** (OpenAI)
-- **CCBot** (Common Crawl)
-- **anthropic-ai** (Anthropic)
-- **Claude-Web** (Anthropic)
+User-agent: anthropic-ai
+Allow: /
 
-All AI crawlers have full access to the site.
+User-agent: Claude-Web
+Allow: /
 
-## Sitemaps
+Sitemap: https://gtcode.com/sitemap.xml
+Sitemap: https://gtcode.com/news-sitemap.xml
 
-Primary sitemaps for discovery:
-- Main sitemap: https://gtcode.com/sitemap.xml
-- News sitemap: https://gtcode.com/news-sitemap.xml
-
-## Crawl Behavior
-
-**Crawl-delay:** 1 second
-
-We request a 1-second delay between requests to ensure site performance for all visitors.
-
----
-
-For AI-specific access policies, see:
-- `/agent.txt` - AI agent guidelines
-- `/llm.txt` - LLM usage policy
-- `/ai.txt` - AI ethics guidelines
+Crawl-delay: 1

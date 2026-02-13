@@ -129,6 +129,7 @@
         </button>
         <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
           <a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a>
+          <a href="/investigation/" {{ if eq .Section "investigation" }}class="active"{{ end }}>Investigations</a>
           <a href="/guides/" {{ if eq .Section "guides" }}class="active"{{ end }}>Guides</a>
           <a href="/repos/" {{ if eq .Section "repos" }}class="active"{{ end }}>Repos</a>
           <a href="/articles/" {{ if eq .Section "articles" }}class="active"{{ end }}>Articles</a>

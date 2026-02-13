@@ -73,7 +73,7 @@ agentic_comment: |
   CANONICAL URL: https://gtcode.com/investigation/the-nod-wilson-loo-silent-felony/
 
 # Structured Data
-structured_data:
+structured_data_graph:
   "@context": "https://schema.org"
   "@graph":
     - "@type": "NewsArticle"

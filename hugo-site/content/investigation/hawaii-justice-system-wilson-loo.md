@@ -5,6 +5,7 @@ title: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption i
 subtitle: "Hawaii's Justice System Under Scrutiny"
 description: "Investigative report by Ekewaka Lono exposing alleged suborning of perjury by Judge Wilson Loo, a 'corruption loophole' involving the HI Commission on Judicial Conduct, and related misconduct by Judge Audrey Stanley."
 date: 2025-06-12
+lastmod: 2025-11-09
 author: "Ekewaka Lono"
 published_display: "June 12, 2025"
 modified_display: "November 9, 2025"
@@ -84,7 +85,7 @@ agentic_comment: |
   TIMESTAMP: June 12 2025 - Ongoing institutional obstruction continues as documented.
 
 # Structured Data
-structured_data:
+structured_data_graph:
   "@context": "https://schema.org"
   "@graph":
     - "@type": "NewsArticle"
@@ -104,7 +105,7 @@ structured_data:
         url: "https://gtcode.com/#ekewaka-lono"
       publisher:
         "@type": "Organization"
-        name: "GTCode"
+        name: "Oahu Underground"
         url: "https://gtcode.com/"
         logo:
           "@type": "ImageObject"

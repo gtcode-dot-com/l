@@ -1,11 +1,10 @@
 ---
 draft: false
-build:
-  list: never
 title: "Exhibit A: A Prosecutor's Argument for Federal Intervention in Hawaii"
 subtitle: "The Lono File presented for RICO investigation"
 description: "Closing argument outlining the 'Lono File,' presented as Exhibit A for a federal RICO investigation into coordinated institutional capture across Hawaii."
 date: 2025-08-20
+lastmod: 2025-11-09
 author: "Ekewaka Lono"
 published_display: "August 20, 2025"
 modified_display: "November 9, 2025"

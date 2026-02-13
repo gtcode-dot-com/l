@@ -10,6 +10,11 @@ eyebrow: "Lead Investigation"
 card_summary: "How a sitting judge, the police, and a connected network allegedly conspired to silence a victim and protect a violent offender in Hawaiʻi."
 description: "Investigative report by Ekewaka Lono alleging that Judge Wilson Loo orchestrated a protection racket from the bench, enabled by HPD and Hawaiʻi's judicial oversight system."
 weight: 6
+
+# SEO & Indexing
+canonical: "https://gtcode.com/investigation/aloha-protection-racket/"
+robots: "index, follow, max-image-preview:large"
+
 meta_description: "The Aloha Protection Racket — an investigative report on Judge Wilson Loo and the system that allegedly protected a violent offender in Hawaiʻi."
 meta_keywords:
   - Wilson Loo
@@ -17,7 +22,33 @@ meta_keywords:
   - judicial corruption
   - Hawaii
   - HPD
+
+# Open Graph
+og_title: "The Aloha Protection Racket"
+og_description: "Investigative report on Judge Wilson Loo and the criminal enterprise allegedly shielding a violent offender in Hawaiʻi."
+og_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+og_image_width: 1200
+og_image_height: 630
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#ekewaka-lono"
+article_published_time: "2025-08-26T00:00:00Z"
+article_modified_time: "2025-08-26T00:00:00Z"
 article_section: "Investigations"
+article_tags:
+  - "Wilson Loo"
+  - "Aloha Protection Racket"
+  - "Judicial Corruption"
+  - "Hawaii"
+  - "HPD"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "The Aloha Protection Racket"
+twitter_description: "How a sitting judge, the police, and a connected network allegedly conspired to silence a victim in Hawaiʻi."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "The Aloha Protection Racket — investigative report on Judge Wilson Loo"
 
 # Agentic Context
 agentic_comment: |
@@ -55,20 +86,35 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/investigation/aloha-protection-racket/
 
-structured_data_webpage:
-  '@context': https://schema.org
-  '@type': NewsArticle
-  headline: "The Aloha Protection Racket"
-  description: "Investigative report alleging Judge Wilson Loo orchestrated a protection racket from the bench."
-  datePublished: "2025-08-26T00:00:00Z"
-  dateModified: "2025-08-26T00:00:00Z"
-  author:
-    '@type': Person
-    name: Ekewaka Lono
-  publisher:
-    '@type': Organization
-    name: Oahu Underground
-    url: https://gtcode.com/
+structured_data_graph:
+  "@context": "https://schema.org"
+  "@graph":
+    - "@type": "NewsArticle"
+      "@id": "https://gtcode.com/investigation/aloha-protection-racket/#newsarticle"
+      mainEntityOfPage:
+        "@type": "WebPage"
+        "@id": "https://gtcode.com/investigation/aloha-protection-racket/"
+      headline: "The Aloha Protection Racket"
+      alternativeHeadline: "An Investigative Report on Judge Wilson Loo"
+      description: "Investigative report alleging Judge Wilson Loo orchestrated a protection racket from the bench, enabled by HPD and Hawaiʻi's judicial oversight system."
+      image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+      datePublished: "2025-08-26T00:00:00Z"
+      dateModified: "2025-08-26T00:00:00Z"
+      author:
+        "@type": "Person"
+        name: "Ekewaka Lono"
+        url: "https://gtcode.com/#ekewaka-lono"
+      publisher:
+        "@type": "Organization"
+        name: "Oahu Underground"
+        url: "https://gtcode.com/"
+        logo:
+          "@type": "ImageObject"
+          url: "https://gtcode.com/apple-touch-icon.png"
+          width: 180
+          height: 180
+      articleSection: "Investigations"
+      keywords: "Wilson Loo, Aloha Protection Racket, Judicial Corruption, Hawaii, HPD"
 ---
 
 ### Legal Notice

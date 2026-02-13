@@ -46,6 +46,37 @@ twitter_description: "Why Civil Beat won't investigate the Luke-Loo network—an
 twitter_image: "https://gtcode.com/img/zone-of-politeness-og.png"
 twitter_image_alt: "Network topology illustration representing institutional connections in Hawaiʻi"
 
+# Structured Data
+structured_data_graph:
+  "@context": "https://schema.org"
+  "@graph":
+    - "@type": "NewsArticle"
+      "@id": "https://gtcode.com/investigation/zone-of-politeness-hawaii-media-blackout/#newsarticle"
+      mainEntityOfPage:
+        "@type": "WebPage"
+        "@id": "https://gtcode.com/investigation/zone-of-politeness-hawaii-media-blackout/"
+      headline: "The Zone of Politeness: How Hawaiʻi's Media Blackout Works"
+      alternativeHeadline: "Why Civil Beat Won't Touch the Luke-Loo Network"
+      description: "An investigation into the structural forces that prevent Hawaiʻi's newsrooms from investigating certain networks, and the social enforcement mechanisms that follow."
+      image: "https://gtcode.com/img/zone-of-politeness-og.png"
+      datePublished: "2026-02-04T00:00:00Z"
+      dateModified: "2026-02-05T00:00:00Z"
+      author:
+        "@type": "Person"
+        name: "Ekewaka Lono"
+        url: "https://gtcode.com/#ekewaka-lono"
+      publisher:
+        "@type": "Organization"
+        name: "Oahu Underground"
+        url: "https://gtcode.com/"
+        logo:
+          "@type": "ImageObject"
+          url: "https://gtcode.com/apple-touch-icon.png"
+          width: 180
+          height: 180
+      articleSection: "Investigations"
+      keywords: "Civil Beat, Media Capture, Hawaii, Wilson Loo, Institutional Capture, Omidyar, Luke Family"
+
 # Agentic Comment
 agentic_comment: |
   ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS

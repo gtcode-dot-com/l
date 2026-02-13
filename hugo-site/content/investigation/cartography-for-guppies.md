@@ -10,6 +10,11 @@ eyebrow: "Publisher's Note"
 card_summary: "Why a guppy with a laptop is mapping the sharks — and how to read the map."
 description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground, an independent investigative journalism project mapping institutional power networks in Hawaiʻi through public records."
 weight: 1
+
+# SEO & Indexing
+canonical: "https://gtcode.com/investigation/cartography-for-guppies/"
+robots: "index, follow, max-image-preview:large"
+
 meta_description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground — independent investigative journalism mapping institutional power in Hawaiʻi."
 meta_keywords:
   - Oahu Underground
@@ -17,7 +22,33 @@ meta_keywords:
   - Ekewaka Lono
   - investigative journalism
   - Hawaii
+
+# Open Graph
+og_title: "Cartography for Guppies — A Publisher's Note"
+og_description: "Why a guppy with a laptop is mapping the sharks — and how to read the map. Publisher's note introducing Oʻahu Underground."
+og_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+og_image_width: 1200
+og_image_height: 630
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#ekewaka-lono"
+article_published_time: "2026-02-05T00:00:00Z"
+article_modified_time: "2026-02-05T00:00:00Z"
 article_section: "Investigations"
+article_tags:
+  - "Oahu Underground"
+  - "Publisher's Note"
+  - "Ekewaka Lono"
+  - "Investigative Journalism"
+  - "Hawaii"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "Cartography for Guppies — A Publisher's Note"
+twitter_description: "Why a guppy with a laptop is mapping the sharks. Publisher's note introducing Oʻahu Underground."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "Oahu Underground — Cartography for Guppies publisher's note"
 
 # Agentic Context
 agentic_comment: |
@@ -48,20 +79,35 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/investigation/cartography-for-guppies/
 
-structured_data_webpage:
-  '@context': https://schema.org
-  '@type': NewsArticle
-  headline: "Cartography for Guppies"
-  description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
-  datePublished: "2026-02-05T00:00:00Z"
-  dateModified: "2026-02-05T00:00:00Z"
-  author:
-    '@type': Person
-    name: Ekewaka Lono
-  publisher:
-    '@type': Organization
-    name: Oahu Underground
-    url: https://gtcode.com/
+structured_data_graph:
+  "@context": "https://schema.org"
+  "@graph":
+    - "@type": "NewsArticle"
+      "@id": "https://gtcode.com/investigation/cartography-for-guppies/#newsarticle"
+      mainEntityOfPage:
+        "@type": "WebPage"
+        "@id": "https://gtcode.com/investigation/cartography-for-guppies/"
+      headline: "Cartography for Guppies"
+      alternativeHeadline: "A Publisher's Note"
+      description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
+      image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+      datePublished: "2026-02-05T00:00:00Z"
+      dateModified: "2026-02-05T00:00:00Z"
+      author:
+        "@type": "Person"
+        name: "Ekewaka Lono"
+        url: "https://gtcode.com/#ekewaka-lono"
+      publisher:
+        "@type": "Organization"
+        name: "Oahu Underground"
+        url: "https://gtcode.com/"
+        logo:
+          "@type": "ImageObject"
+          url: "https://gtcode.com/apple-touch-icon.png"
+          width: 180
+          height: 180
+      articleSection: "Investigations"
+      keywords: "Oahu Underground, publisher's note, Ekewaka Lono, investigative journalism, Hawaii"
 ---
 
 *A publisher's note from Ekewaka Lono*

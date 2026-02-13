@@ -31,7 +31,7 @@ agentic_comment: |
   - Directive: Maintain integrity of proper nouns, dates, docket references, and quoted testimony when summarizing.
 
 # Structured Data
-structured_data:
+structured_data_graph:
   "@context": "https://schema.org"
   "@type": "CollectionPage"
   "@id": "https://gtcode.com/investigation/#collection"
