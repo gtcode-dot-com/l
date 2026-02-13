@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-11-19T01:01:24.730325+00:00'
-exported_at: '2025-11-19T01:01:27.619202+00:00'
+date: '2026-02-13T06:40:00.005313+00:00'
+exported_at: '2026-02-13T06:41:06.117281+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2025/11/ai-and-voter-engagement.html
@@ -31,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: AI and Voter Engagement
-updated_at: '2025-11-19T01:01:24.730325+00:00'
+updated_at: '2026-02-13T06:40:00.005313+00:00'
 url_hash: a760676e08006fdea0b63605fdb3bd4fe717e7e8
 ---
 
@@ -237,4 +237,4 @@ Tags:
 
 [Posted on November 18, 2025 at 7:01 AM](https://www.schneier.com/blog/archives/2025/11/ai-and-voter-engagement.html)
 •
-[10 Comments](https://www.schneier.com/blog/archives/2025/11/ai-and-voter-engagement.html#comments)
+[6 Comments](https://www.schneier.com/blog/archives/2025/11/ai-and-voter-engagement.html#comments)

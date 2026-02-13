@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-12T08:04:12.267933+00:00'
-exported_at: '2025-12-12T08:04:15.702112+00:00'
+date: '2026-02-13T06:41:22.938495+00:00'
+exported_at: '2026-02-13T06:41:31.739037+00:00'
 feed: http://feeds.feedburner.com/blogspot/gJZg
 language: en
 source_url: http://blog.research.google/2024/03/scin-new-resource-for-representative.html
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'SCIN: A new resource for representative dermatology images'
-updated_at: '2025-12-12T08:04:12.267933+00:00'
+updated_at: '2026-02-13T06:41:22.938495+00:00'
 url_hash: 178409cdc1f249ac6e15363e5c865074a2c14860
 ---
 

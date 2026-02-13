@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-12T08:04:12.513693+00:00'
-exported_at: '2025-12-12T08:04:15.700676+00:00'
+date: '2026-02-13T06:41:23.991647+00:00'
+exported_at: '2026-02-13T06:41:31.736312+00:00'
 feed: http://feeds.feedburner.com/blogspot/gJZg
 language: en
 source_url: http://blog.research.google/2024/03/melon-reconstructing-3d-objects-from.html
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'MELON: Reconstructing 3D objects from images with unknown poses'
-updated_at: '2025-12-12T08:04:12.513693+00:00'
+updated_at: '2026-02-13T06:41:23.991647+00:00'
 url_hash: 81999604ae898a68e0b3c3039b18a2b95f933ae3
 ---
 

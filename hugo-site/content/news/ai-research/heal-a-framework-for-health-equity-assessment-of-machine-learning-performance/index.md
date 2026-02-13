@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-12T08:04:12.878651+00:00'
-exported_at: '2025-12-12T08:04:15.698558+00:00'
+date: '2026-02-13T06:41:27.141031+00:00'
+exported_at: '2026-02-13T06:41:31.732672+00:00'
 feed: http://feeds.feedburner.com/blogspot/gJZg
 language: en
 source_url: http://blog.research.google/2024/03/heal-framework-for-health-equity.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'HEAL: A framework for health equity assessment of machine learning performance'
-updated_at: '2025-12-12T08:04:12.878651+00:00'
+updated_at: '2026-02-13T06:41:27.141031+00:00'
 url_hash: 1cd1772b195af5f43a7ae8b74aa363c1f1e7c0b4
 ---
 

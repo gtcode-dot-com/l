@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-12T08:04:13.373293+00:00'
-exported_at: '2025-12-12T08:04:15.695042+00:00'
+date: '2026-02-13T06:41:28.367466+00:00'
+exported_at: '2026-02-13T06:41:31.728125+00:00'
 feed: https://research.facebook.com/feed
 language: en
 source_url: https://engineering.fb.com/2023/04/06/open-source/buck2-open-source-large-scale-build-system
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Build faster with Buck2: Our open source build system'
-updated_at: '2025-12-12T08:04:13.373293+00:00'
+updated_at: '2026-02-13T06:41:28.367466+00:00'
 url_hash: b3c33e72f8f752e3a82db78b85c010917c4dd3af
 ---
 

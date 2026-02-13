@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:31:02.589510+00:00'
-exported_at: '2026-02-12T19:31:06.500714+00:00'
+date: '2026-02-13T06:41:04.794295+00:00'
+exported_at: '2026-02-13T06:41:06.107698+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/google-reports-state-backed-hackers.html
@@ -27,18 +27,9 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Google Reports State-Backed Hackers Using Gemini AI for Recon and Attack Support
-updated_at: '2026-02-12T19:31:02.589510+00:00'
+updated_at: '2026-02-13T06:41:04.794295+00:00'
 url_hash: b9e620c1d14d430dfa5dcb2a74b2e92350dd0b38
 ---
-
-**
-
-Ravie Lakshmanan
-**
-
-Feb 12, 2026
-
-Cyber Espionage / Artificial Intelligence
 
 Google on Thursday said it observed the North Korea-linked threat actor known as
 **UNC2970**
@@ -78,6 +69,10 @@ UNC2970 is far from the only threat actor to have misused Gemini to augment thei
   [CVE-2025-8088](https://thehackernews.com/2026/01/google-warns-of-active-exploitation-of.html)
   ).
 
+One recurring avenue for abuse of generative AI models like Gemini occurs when threat actors reframe their prompts by identifying themselves as a security researcher or a participant in a capture-the-flag (CTF) exercise to trick the system into generating unexpected responses. Steve Miller, AI threat lead at GTIG, told The Hacker News that the company is constantly improving its safety mechanisms to combat such scenarios.
+
+"Google is always working to improve our safety systems, including detection classifiers, mitigations and other safeguards to prevent misuse by threat actors," Miller said. "As adversaries experience friction in misusing our systems, they begin to experiment with new ways to bypass the safeguards – and though we see lots of these experiments, they are not always successful. Gemini is getting better at recognizing persona-based tricks and responding safely. As we observe new threat activity, we work to strengthen those guard rails."
+
 Google also said it detected a malware called HONESTCUE that leverages Gemini's API to outsource functionality generation for the next-stage, along with an AI-generated phishing kit codenamed COINBAIT that's built using Lovable AI and masquerades as a cryptocurrency exchange for credential harvesting. Some aspects of COINBAIT-related activity have been attributed to a financially motivated threat cluster dubbed UNC5356.
 
 "HONESTCUE is a downloader and launcher framework that sends a prompt via Google Gemini's API and receives C# source code as the response," it said. "However, rather than leveraging an LLM to update itself, HONESTCUE calls the Gemini API to generate code that operates the 'stage two' functionality, which downloads and executes another piece of malware."
@@ -99,3 +94,11 @@ Last month, Praetorian devised a PoC extraction attack where a replica model ach
 "Many organizations assume that keeping model weights private is sufficient protection," security researcher Farida Shafik
 [said](https://www.praetorian.com/blog/stealing-ai-models-through-the-api-a-practical-model-extraction-attack/)
 . "But this creates a false sense of security. In reality, behavior is the model. Every query-response pair is a training example for a replica. The model’s behavior is exposed through every API response."
+
+Google, which launched the
+[AI Cyber Defense Initiative](https://thehackernews.com/2024/02/google-open-sources-magika-ai-powered.html)
+in 2024, has noted that AI offers the best opportunity to reverse the Defender's Dilemma and tilt the cybersecurity scales in favor of defenders.
+
+"Everyone is looking to increase productivity with automation. Adversaries are increasingly seeing value from AI," Miller said. "They are using AI routinely and they are building capabilities with it, so it is easy to predict that we will see an increase in the quality, quantity and speed of AI-enabled attacks. Defenders need to prepare for the future and make similar investments in AI, and build towards AI-enabled defensive capabilities that can operate at machine speed."
+
+*(The story was updated after publication to include responses from GTIG.)*
