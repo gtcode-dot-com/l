@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting…</title>
+  <meta name="description" content="Redirecting to the canonical URL." />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="{{ replace .Permalink "http://" "https://" }}" />
+  <meta http-equiv="refresh" content="0; url={{ replace .Permalink "http://" "https://" }}" />
+  <meta property="og:title" content="Redirecting…" />
+  <meta property="og:description" content="Redirecting to the canonical URL." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ replace .Permalink "http://" "https://" }}" />
+  <meta property="og:image" content="{{ replace (printf "%simg/gtcode-core.svg" (strings.TrimRight "/" .Site.BaseURL)) "http://" "https://" }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Redirecting…" />
+  <meta name="twitter:description" content="Redirecting to the canonical URL." />
+  <meta name="twitter:image" content="{{ replace (printf "%simg/gtcode-core.svg" (strings.TrimRight "/" .Site.BaseURL)) "http://" "https://" }}" />
+</head>
+<body>
+  <h1>Redirecting…</h1>
+  <p>
+    This page has moved to
+    <a href="{{ replace .Permalink "http://" "https://" }}">{{ replace .Permalink "http://" "https://" }}</a>.
+  </p>
+</body>
+</html>

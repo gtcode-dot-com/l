@@ -11,7 +11,10 @@
       {{ partial "guides-toc.html" . }}
       {{ if .Content }}
         <div class="guides-page-body">
-          {{ .Content }}
+          {{ $content := printf "%s" .Content }}
+          {{ $content = replaceRE "(?i)<h1([^>]*)>" "<h2$1>" $content }}
+          {{ $content = replaceRE "(?i)</h1>" "</h2>" $content }}
+          {{ $content | safeHTML }}
         </div>
       {{ end }}
       {{ $isRoot := eq (trim .RelPermalink "/") "guides" }}

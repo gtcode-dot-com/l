@@ -1,3 +1,24 @@
+{{ define "pagination-head" }}
+  {{ $pages := .Pages | default .Site.RegularPages }}
+  {{ if $pages }}
+    {{ $orderedScratch := newScratch }}
+    {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
+    {{ $sortHint := lower (.Params.list_sort | default "") }}
+    {{ if eq $sortHint "weight" }}
+      {{ $orderedScratch.Set "ordered" (sort $pages ".Params.weight") }}
+    {{ else if eq $sortHint "weight_desc" }}
+      {{ $orderedScratch.Set "ordered" ((sort $pages ".Params.weight").Reverse) }}
+    {{ else if eq $sortHint "date_asc" }}
+      {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
+    {{ end }}
+    {{ $ordered := $orderedScratch.Get "ordered" }}
+    {{ $english := where $ordered "Params.language" "en" }}
+    {{ $filtered := cond (gt (len $english) 0) $english $ordered }}
+    {{ $paginator := .Paginate $filtered }}
+    {{ .Scratch.Set "_head_paginator" $paginator }}
+  {{ end }}
+{{ end }}
+
 {{ define "main" }}
   <!-- Breadcrumb -->
   <nav class="breadcrumb">
@@ -27,20 +48,24 @@
   {{/* Build available languages via CSV accumulation */}}
   {{/* Language filter UI removed; we now filter server-side */}}
   {{ if $pages }}
-    {{ $orderedScratch := newScratch }}
-    {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
-    {{ $sortHint := lower (.Params.list_sort | default "") }}
-    {{ if eq $sortHint "weight" }}
-      {{ $orderedScratch.Set "ordered" (sort $pages ".Params.weight") }}
-    {{ else if eq $sortHint "weight_desc" }}
-      {{ $orderedScratch.Set "ordered" ((sort $pages ".Params.weight").Reverse) }}
-    {{ else if eq $sortHint "date_asc" }}
-      {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
+    {{ $paginator := .Scratch.Get "_head_paginator" }}
+    {{ if not $paginator }}
+      {{ $orderedScratch := newScratch }}
+      {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
+      {{ $sortHint := lower (.Params.list_sort | default "") }}
+      {{ if eq $sortHint "weight" }}
+        {{ $orderedScratch.Set "ordered" (sort $pages ".Params.weight") }}
+      {{ else if eq $sortHint "weight_desc" }}
+        {{ $orderedScratch.Set "ordered" ((sort $pages ".Params.weight").Reverse) }}
+      {{ else if eq $sortHint "date_asc" }}
+        {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
+      {{ end }}
+      {{ $ordered := $orderedScratch.Get "ordered" }}
+      {{ $english := where $ordered "Params.language" "en" }}
+      {{ $filtered := cond (gt (len $english) 0) $english $ordered }}
+      {{ $paginator = .Paginate $filtered }}
+      {{ .Scratch.Set "_head_paginator" $paginator }}
     {{ end }}
-    {{ $ordered := $orderedScratch.Get "ordered" }}
-    {{ $english := where $ordered "Params.language" "en" }}
-    {{ $filtered := cond (gt (len $english) 0) $english $ordered }}
-    {{ $paginator := .Paginate $filtered }}
     <div id="articles" class="article-list">
       {{ range $paginator.Pages }}
         <article class="article-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
@@ -77,7 +102,7 @@
         </article>
       {{ end }}
     </div>
-    {{ partial "pagination.html" . }}
+    {{ partial "pagination.html" (dict "paginator" $paginator) }}
     {{ partial "news-itemlist.html" (dict "pages" $paginator.Pages) }}
   {{ else }}
     <div class="card">

@@ -15,7 +15,10 @@
       </header>
       {{ partial "guides-toc.html" . }}
       <div class="guides-article-body">
-        {{ .Content }}
+        {{ $content := printf "%s" .Content }}
+        {{ $content = replaceRE "(?i)<h1([^>]*)>" "<h2$1>" $content }}
+        {{ $content = replaceRE "(?i)</h1>" "</h2>" $content }}
+        {{ $content | safeHTML }}
       </div>
       {{ partial "guides-series-nav.html" . }}
       {{ partial "guides-related.html" . }}

@@ -1,4 +1,9 @@
 {{ $paginator := .Paginator }}
+{{ if reflect.IsMap . }}
+  {{ with index . "paginator" }}
+    {{ $paginator = . }}
+  {{ end }}
+{{ end }}
 {{ if gt $paginator.TotalPages 1 }}
 <nav aria-label="Pagination">
   <ul class="pagination">

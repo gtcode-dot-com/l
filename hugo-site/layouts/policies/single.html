@@ -11,7 +11,10 @@
   </header>
 
   <div class="policy-content content">
-    {{ .Content }}
+    {{ $content := printf "%s" .Content }}
+    {{ $content = replaceRE "(?i)<h1([^>]*)>" "<h2$1>" $content }}
+    {{ $content = replaceRE "(?i)</h1>" "</h2>" $content }}
+    {{ $content | safeHTML }}
   </div>
 
   {{ with .Params.related_policies }}

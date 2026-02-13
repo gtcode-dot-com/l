@@ -14,7 +14,7 @@
       {{ with .Params.version }}
       <div class="policy-version">Version {{ . }}</div>
       {{ end }}
-      <p class="card-summary">{{ .Summary }}</p>
+      <p class="card-summary">{{ .Summary | plainify | truncate 220 }}</p>
       <div class="policy-formats">
         <a href="{{ .RelPermalink }}" class="btn btn-secondary">View Policy</a>
       </div>
