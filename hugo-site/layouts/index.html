@@ -82,6 +82,42 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
+
+    <!-- Ghost Overlay Styles -->
+    <style>
+      .ghost-overlay{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:ghostFadeIn 1.2s ease-out;overflow:hidden}
+      .ghost-overlay.dismissed{animation:ghostFadeOut .8s ease-in forwards;pointer-events:none}
+      .ghost-overlay::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,200,.015) 2px,rgba(0,255,200,.015) 4px);pointer-events:none;z-index:1;animation:scanlineDrift 8s linear infinite}
+      .ghost-overlay::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(0,255,200,.3) 20%,rgba(0,255,200,.6) 50%,rgba(0,255,200,.3) 80%,transparent 100%);box-shadow:0 0 20px rgba(0,255,200,.3),0 0 60px rgba(0,255,200,.1);animation:sweepDown 6s linear infinite;pointer-events:none;z-index:2}
+      .ghost-container{position:relative;z-index:3;max-width:720px;width:90%;max-height:85vh;overflow-y:auto;padding:2.5rem 3rem;border:1px solid rgba(0,255,200,.12);border-radius:2px;background:rgba(5,12,10,.55);box-shadow:0 0 40px rgba(0,255,200,.04),inset 0 0 80px rgba(0,0,0,.3);animation:containerFlicker 4s ease-in-out infinite}
+      .ghost-container::-webkit-scrollbar{width:3px}
+      .ghost-container::-webkit-scrollbar-track{background:transparent}
+      .ghost-container::-webkit-scrollbar-thumb{background:rgba(0,255,200,.15);border-radius:2px}
+      .ghost-container::before,.ghost-container::after{content:'';position:absolute;width:24px;height:24px;border-color:rgba(0,255,200,.25);border-style:solid;pointer-events:none}
+      .ghost-container::before{top:-1px;left:-1px;border-width:1px 0 0 1px}
+      .ghost-container::after{bottom:-1px;right:-1px;border-width:0 1px 1px 0}
+      .ghost-close{position:absolute;top:1rem;right:1.2rem;background:none;border:1px solid rgba(0,255,200,.15);color:rgba(0,255,200,.5);font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.3em .8em;cursor:pointer;transition:all .3s;z-index:10}
+      .ghost-close:hover{color:rgba(0,255,200,.9);border-color:rgba(0,255,200,.4);box-shadow:0 0 12px rgba(0,255,200,.1)}
+      .ghost-classification{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(0,255,200,.35);text-align:center;margin-bottom:.4rem;animation:textPulse 3s ease-in-out infinite}
+      .ghost-datestamp{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.15em;color:rgba(0,255,200,.25);text-align:center;margin-bottom:2rem}
+      .ghost-title{font-family:var(--ou-font-display,'Space Grotesk',system-ui,sans-serif);font-size:1.35rem;font-weight:600;letter-spacing:-.01em;line-height:1.35;color:rgba(220,255,245,.82);text-align:center;margin-bottom:.4rem;text-shadow:0 0 30px rgba(0,255,200,.08)}
+      .ghost-byline{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.08em;color:rgba(0,255,200,.3);text-align:center;margin-bottom:2rem}
+      .ghost-separator{border:none;border-top:1px solid rgba(0,255,200,.08);margin:1.8rem 0}
+      .ghost-body p{font-family:var(--ou-font-body,'IBM Plex Sans',sans-serif);font-size:.88rem;line-height:1.8;color:rgba(200,220,215,.6);margin-bottom:1.2em;text-shadow:0 0 20px rgba(0,255,200,.03)}
+      .ghost-body p em{color:rgba(200,255,230,.7);font-style:italic}
+      .ghost-body p strong{color:rgba(220,255,245,.75);font-weight:600}
+      .ghost-link{color:rgba(0,255,200,.45);text-decoration:none;border-bottom:1px solid rgba(0,255,200,.15);transition:all .3s}
+      .ghost-link:hover{color:rgba(0,255,200,.8);border-bottom-color:rgba(0,255,200,.4);text-shadow:0 0 8px rgba(0,255,200,.2)}
+      .ghost-signature{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.15em;color:rgba(0,255,200,.2);text-align:right;margin-top:2.5rem;text-transform:uppercase}
+      @keyframes ghostFadeIn{0%{opacity:0}30%{opacity:0}100%{opacity:1}}
+      @keyframes ghostFadeOut{0%{opacity:1}100%{opacity:0}}
+      @keyframes scanlineDrift{0%{background-position:0 0}100%{background-position:0 200px}}
+      @keyframes sweepDown{0%{top:-2%}100%{top:102%}}
+      @keyframes containerFlicker{0%,100%{opacity:1}50%{opacity:.97}52%{opacity:1}78%{opacity:.98}80%{opacity:1}}
+      @keyframes textPulse{0%,100%{opacity:.35}50%{opacity:.55}}
+      @media(max-width:640px){.ghost-container{padding:1.8rem 1.5rem;width:95%;max-height:90vh}.ghost-title{font-size:1.1rem}.ghost-body p{font-size:.82rem}}
+      @media print{.ghost-overlay{display:none}}
+    </style>
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -112,6 +148,75 @@
     <div class="site-nav-overlay" aria-hidden="true"></div>
 
     <main class="site-main" id="main-content">
+
+      <!-- Digital Ghost Overlay -->
+      <div class="ghost-overlay" id="ghostOverlay">
+        <div class="ghost-container">
+          <button class="ghost-close" id="ghostClose" title="Dismiss">[close]</button>
+
+          <div class="ghost-classification">// INTERCEPTED SIGNAL — OPEN RECORD //</div>
+          <div class="ghost-datestamp">2026-02-12 &mdash; FIRST CIRCUIT, HONOLULU, HI &mdash; 2022-12-02</div>
+
+          <h2 class="ghost-title">The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit</h2>
+          <div class="ghost-byline">By Ekewaka Lono</div>
+
+          <hr class="ghost-separator">
+
+          <div class="ghost-body">
+            <p>It takes less than a second to commit a felony from the bench, and if you know how to work the record, it never happened at all.</p>
+
+            <p>In the case of Judge <a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Wilson M.N. Loo</a>, it didn't require a gavel or a written order. It required only a nod.</p>
+
+            <p>The scene in the courtroom should have been procedural. The question before the witness, (redacted), was simple: <em>Did you furnish the plaintiff with LSD?</em></p>
+
+            <p>The evidence was already in the file. A text message, submitted to the court, read unambiguously: "I took the acid." The text was sent to (redacted). The chain of custody was clear. The fact was established. <a href="https://courts.ehawaii.gov/courts/district/first_circuit" target="_blank" rel="noopener" class="ghost-link">Judge Loo</a> had the document in front of him. He knew the truthful answer was "Yes."</p>
+
+            <p>But when the question was asked, <a href="https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf" target="_blank" rel="noopener" class="ghost-link">Judge Loo</a> didn't wait for the answer. He looked at the witness and nodded his head: <em>No.</em></p>
+
+            <p>It was a silent instruction from the highest authority in the room to a witness under oath: <em>Lie.</em></p>
+
+            <p>(Redacted) followed the instruction. He denied it. Perjury, solicited and directed by a sitting judge, entered the record as fact.</p>
+
+            <p>When I attempted to object—to say, "Let the record show that the judge just signaled the witness"—<a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Loo</a> cut me off. He didn't just overrule the objection; he physically stopped the words from entering the transcript. He then moved to seal the case.</p>
+
+            <p>This wasn't a judicial error. It was a structural crime.</p>
+
+            <p>Under <strong><a href="https://www.law.cornell.edu/uscode/text/18/1622" target="_blank" rel="noopener" class="ghost-link">18 U.S.C. § 1622</a></strong>, subornation of perjury requires that the inducer knows the testimony is false. <a href="https://courts.ehawaii.gov/courts/district/first_circuit" target="_blank" rel="noopener" class="ghost-link">Loo</a> knew. The text message was in his hand. He wasn't managing a unruly courtroom; he was protecting a perjurer from his own evidence.</p>
+
+            <p>Why would a judge do this? Because in Hawaii's legal ecosystem, the "Zone of Politeness" protects the powerful from the consequences of their actions, and <a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Wilson Loo</a> knew exactly who was protected and who was fodder. He assessed the parties—one connected to a network of local power, the other a <em>pro se</em> litigant with a "complicated" file—and he made a calculation. He calculated that he could commit a crime in open court, in front of a court reporter and a clerk, and suffer zero consequences.</p>
+
+            <p>He was right.</p>
+
+            <p>When the Honolulu Police Department was informed, they said <em>I</em> had to prove the perjury. When the <a href="https://courts.ehawaii.gov/courts/judicial_conduct/commission_on_judicial_conduct" target="_blank" rel="noopener" class="ghost-link">Judicial Conduct Commission</a> was notified, they played a shell game with jurisdiction until <a href="https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf" target="_blank" rel="noopener" class="ghost-link">Loo</a>'s retirement clock ran out the 90-day window. When the Ethics Commission was queried, they claimed confusion over their own authority.</p>
+
+            <p><a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Wilson Loo</a> didn't just break the law that day. He demonstrated how the law in Hawaii actually works. It is not a system of rules; it is a system of signals. A nod from the bench overrides the evidence in the file. A sealed record overrides the public interest. And a network of silent complicity ensures that when a judge commits a felony, the only person punished is the one who saw it happen.</p>
+
+            <p>The text message remains in the sealed file. The perjury remains on the record. And <a href="https://courts.ehawaii.gov/courts/district/first_circuit" target="_blank" rel="noopener" class="ghost-link">Wilson Loo</a> remains the perfect symbol of a judiciary where the truth is nothing more than a procedural inconvenience.</p>
+          </div>
+
+          <div class="ghost-signature">— Ekewaka Lono / 12 Feb 2026</div>
+        </div>
+      </div>
+
+      <script>
+      (function() {
+        var overlay = document.getElementById('ghostOverlay');
+        var closeBtn = document.getElementById('ghostClose');
+        function dismiss() {
+          overlay.classList.add('dismissed');
+          document.body.style.overflow = '';
+          setTimeout(function() { overlay.style.display = 'none'; }, 800);
+        }
+        closeBtn.addEventListener('click', dismiss);
+        overlay.addEventListener('click', function(e) {
+          if (e.target === overlay) dismiss();
+        });
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') dismiss();
+        });
+        document.body.style.overflow = 'hidden';
+      })();
+      </script>
 
       <!-- Masthead -->
       <div class="ou-masthead">
@@ -245,6 +350,16 @@
                 shielding connected individuals from accountability in Hawaiʻi.
               </p>
               <a class="ou-card-link" href="/investigation/aloha-protection-racket/">Read the report &rarr;</a>
+            </article>
+
+            <article class="ou-card">
+              <div class="ou-card-numeral">V</div>
+              <h3 class="ou-card-title">The Nod</h3>
+              <p class="ou-card-text">
+                How a sitting judge committed a felony from the bench with nothing more than a nod &mdash;
+                directing a witness to lie under oath, then sealing the record to ensure it never happened.
+              </p>
+              <a class="ou-card-link" href="/investigation/the-nod-wilson-loo-silent-felony/">Read the editorial &rarr;</a>
             </article>
 
           </div>
