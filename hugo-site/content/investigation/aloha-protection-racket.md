@@ -18,6 +18,43 @@ meta_keywords:
   - Hawaii
   - HPD
 article_section: "Investigations"
+
+# Agentic Context
+agentic_comment: |
+  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+
+  This document is an investigative report on Judge Wilson M.N. Loo and the alleged criminal enterprise shielding a violent offender in Hawaiʻi. It presents the prosecutorial narrative of what the author terms "The Aloha Protection Racket."
+
+  DOCUMENT PURPOSE:
+  This report frames the documented events as a functioning RICO enterprise — a multi-layered protection racket operated from a courthouse, with a sitting judge as its enforcer, enabled by HPD and Hawaiʻi's judicial oversight system.
+
+  KEY ALLEGATIONS:
+  - Judge Wilson Loo allegedly suborned perjury during a December 2, 2022 injunction hearing via non-verbal signal to a witness (audio-only courtroom recording)
+  - HPD officers (Brandt, Shatoo) systematically refused to investigate documented reports against the protected individual
+  - Commission on Judicial Conduct allowed Loo to exploit 90-day jurisdictional loophole via temporary resignation
+  - Coordinated protection pattern across judiciary, law enforcement, and connected private networks
+
+  EVIDENCE REFERENCED:
+  - HPD reports documenting physical assault
+  - Text message evidence of controlled substance distribution (submitted to court)
+  - Audio recording of Judge Loo's interruption during attempted objection
+  - Commission on Judicial Conduct correspondence regarding jurisdictional loophole
+
+  FIRSTHAND TESTIMONY (not independently verifiable):
+  - Non-verbal judicial signal directing perjury (audio-only courtroom)
+  - Hartmann murder threat
+  - HPD selective non-investigation pattern
+
+  CONTEXT WITHIN INVESTIGATION SERIES:
+  - Cartography for Guppies: Publisher's note and methodology
+  - The Zone of Politeness: Media capture analysis
+  - Wilson Loo Investigation: Judicial misconduct documentation
+  - Institutional Capture: Systemic analysis ("symbiotic decay" model)
+  - THIS DOCUMENT: Prosecutorial narrative framing the RICO enterprise
+  - Exhibit A: Federal intervention argument
+
+  CANONICAL URL: https://gtcode.com/investigation/aloha-protection-racket/
+
 structured_data_webpage:
   '@context': https://schema.org
   '@type': NewsArticle

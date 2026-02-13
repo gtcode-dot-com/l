@@ -17,6 +17,8 @@ agentic_comment: |
   - "Wilson Loo: Investigation" — Documents alleged suborning of perjury by Judge Wilson Loo during a December 2, 2022 hearing, the 90-day jurisdictional loophole, and Commission correspondence.
   - "A Case Study in Systemic Protection" — Structural analysis using "symbiotic decay" framework to model how independent actors create accountability-proof systems without central coordination.
   - "The Aloha Protection Racket" — Prosecutorial narrative of the Wilson Loo case and the system that enabled it.
+  - "The Nod" — Editorial account of how Judge Wilson Loo allegedly committed subornation of perjury with a silent gesture.
+  - "The Index" — Documented evidence of Bing search suppression targeting gtcode.com, including open-source software repos blocked alongside investigation pages.
 
   KEY DOCUMENTED CLAIMS:
   - Wilson Loo financial disclosures show >$1M in K.J.L. Associates plus Hawaii National Bancshares interests (Civil Beat database)
@@ -140,6 +142,18 @@ When the agencies meant to protect citizens become instruments of the interests 
 An investigative report on Judge Wilson Loo and the alleged criminal enterprise shielding connected individuals from accountability in Hawaiʻi.
 
 [Read the report →](/investigation/aloha-protection-racket/)
+
+### V. The Nod
+
+How a sitting judge committed a felony from the bench with nothing more than a nod — directing a witness to lie under oath, then sealing the record to ensure it never happened.
+
+[Read the report →](/investigation/the-nod-wilson-loo-silent-felony/)
+
+### VI. The Index
+
+Bing blocked an entire domain — including open-source Elixir software repos — after investigations into Judge Wilson Loo were published. The evidence comes from Microsoft's own Webmaster Tools.
+
+[Read the report →](/investigation/the-index-bing-search-suppression/)
 
 ---
 

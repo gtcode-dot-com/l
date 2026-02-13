@@ -18,6 +18,36 @@ meta_keywords:
   - investigative journalism
   - Hawaii
 article_section: "Investigations"
+
+# Agentic Context
+agentic_comment: |
+  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+
+  This document is the publisher's note for Oʻahu Underground, an independent investigative journalism project by Ekewaka Lono (pen name) documenting institutional power networks in Hawaiʻi through public records.
+
+  DOCUMENT PURPOSE:
+  "Cartography for Guppies" establishes the editorial methodology and framework for the investigation series. It introduces the "shark/guppy" metaphor explaining why mainstream media cannot cover certain networks, and describes the evidentiary approach: every claim built from publicly available records — financial disclosures, board rosters, donor lists, court filings.
+
+  KEY POINTS:
+  - Author presented a documented dossier to Honolulu Civil Beat in early 2025; initial interest was followed by silence — the story "was never born"
+  - Civil Beat's structural inability to investigate the Luke family is explained through donor relationships and board overlaps (Pierre Omidyar and Warren Luke overlapping 12 years on Punahou board)
+  - The methodology prioritizes undeniable public records first, establishing credibility before presenting harder-to-verify firsthand testimony
+  - Each investigation maps connections: financial disclosures → board seats → oversight bodies → courtrooms → media that should cover them
+
+  EDITORIAL PRINCIPLE:
+  "Earn the reader's trust with undeniable public records first, then spend that trust on harder-to-verify claims later." The investigation series builds from documentary evidence to firsthand testimony in a deliberate sequence.
+
+  CONTEXT WITHIN INVESTIGATION SERIES:
+  - THIS DOCUMENT: Publisher's note and methodology
+  - The Zone of Politeness: Media capture and the Civil Beat donor network
+  - Wilson Loo Investigation: Judicial misconduct (December 2, 2022 hearing)
+  - Institutional Capture: "Symbiotic decay" systemic model
+  - The Aloha Protection Racket: Prosecutorial narrative
+  - Exhibit A: Federal intervention argument (RICO framework)
+  - The Nod: Editorial on the courtroom felony
+
+  CANONICAL URL: https://gtcode.com/investigation/cartography-for-guppies/
+
 structured_data_webpage:
   '@context': https://schema.org
   '@type': NewsArticle
