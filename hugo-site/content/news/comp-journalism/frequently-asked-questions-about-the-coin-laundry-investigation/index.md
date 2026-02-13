@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-19T12:00:30.474123+00:00'
-exported_at: '2025-11-19T12:00:33.477453+00:00'
+date: '2026-02-13T18:30:53.850788+00:00'
+exported_at: '2026-02-13T18:31:03.610125+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/cryptocurrency-faqs
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Frequently asked questions about The Coin Laundry investigation
-updated_at: '2025-11-19T12:00:30.474123+00:00'
+updated_at: '2026-02-13T18:30:53.850788+00:00'
 url_hash: c7cbdb555dca20b6acaf2650ffa22fe595067698
 ---
 

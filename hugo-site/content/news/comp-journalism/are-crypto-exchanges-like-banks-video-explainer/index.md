@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-19T12:00:29.750394+00:00'
-exported_at: '2025-11-19T12:00:33.482388+00:00'
+date: '2026-02-13T18:30:49.515995+00:00'
+exported_at: '2026-02-13T18:31:03.615929+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/video-cryptocurrency-exchanges-explainer
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'WATCH: Cryptocurrency exchanges, explained'
-updated_at: '2025-11-19T12:00:29.750394+00:00'
+updated_at: '2026-02-13T18:30:49.515995+00:00'
 url_hash: 7cea86b3af169a87fc40b411862f1b050eb583b0
 ---
 
@@ -95,37 +95,37 @@ Help us change the world. Get our stories by email.
 
 * Latest from The Coin Laundry
 
-[##### VIDEO
+[##### CRYPTOCURRENCY
 
-![Graphic showing a spinning coin with words reading The Coin Laundry](https://media.icij.org/uploads/2025/11/thumbnail.jpg)](https://www.icij.org/investigations/coin-laundry/video-cryptocurrency-global-investigation/)
+![Illustration showing panels of microchip designs and parts of US cash](https://media.icij.org/uploads/2025/11/Coin-Laundry-generic-small-1.jpg)](https://www.icij.org/investigations/coin-laundry/auditors-at-bitpandas-german-subsidiary-flagged-information-security-issues-echoing-regulators-concerns/)
 
-### [WATCH: How crypto companies have empowered a shadow economy](https://www.icij.org/investigations/coin-laundry/video-cryptocurrency-global-investigation/)
+### [Auditors at Bitpanda’s German subsidiary flagged information security issues, echoing regulator’s concerns](https://www.icij.org/investigations/coin-laundry/auditors-at-bitpandas-german-subsidiary-flagged-information-security-issues-echoing-regulators-concerns/)
 
-##### Nov 17, 2025
+##### Jan 29, 2026
 
-[##### EXPLAINER
+[##### CRYPTOCURRENCY
 
-![Graphic illustration showing hands using scissors to cut strings that are holding up a large crypto coin, against a background of red, green and yellow squares.](https://media.icij.org/uploads/2025/11/Coin-Laundry-ICIJ-Crypto-regulations.jpg)](https://www.icij.org/investigations/coin-laundry/cryptocurrency-regulations-global-explainer/)
+![](https://media.icij.org/uploads/2025/11/GettyImages-2215753746-1.jpg)](https://www.icij.org/investigations/coin-laundry/elite-portuguese-investigative-unit-to-probe-spacey-movie-producer-with-ties-to-alleged-crypto-scammer/)
 
-### [From trading bans to total embrace, a global guide to crypto regulation](https://www.icij.org/investigations/coin-laundry/cryptocurrency-regulations-global-explainer/)
+### [Elite Portuguese investigative unit to probe Spacey movie producer with ties to alleged crypto scammer](https://www.icij.org/investigations/coin-laundry/elite-portuguese-investigative-unit-to-probe-spacey-movie-producer-with-ties-to-alleged-crypto-scammer/)
 
-##### Nov 17, 2025
+##### Jan 05, 2026
 
-[##### ABOUT
+[##### CRYPTOCURRENCY
 
-![](https://media.icij.org/uploads/2025/11/ICIJ_generic2_r2-1.jpg)](https://www.icij.org/investigations/coin-laundry/about-coin-laundry-investigation-cryptocurrency/)
+![Illustration showing a Circle K sign, a hand holding cash, a Bitcoin Depot ATM and a coin with the bitcoin logo on it](https://media.icij.org/uploads/2025/12/Coin-Laundry-ICIJ-ATMs-CircleK.jpg)](https://www.icij.org/investigations/coin-laundry/retailers-keep-cashing-in-on-crypto-atms-as-scams-surge/)
 
-### [About The Coin Laundry investigation](https://www.icij.org/investigations/coin-laundry/about-coin-laundry-investigation-cryptocurrency/)
+### [Retailers keep cashing in on crypto ATMs as scams surge](https://www.icij.org/investigations/coin-laundry/retailers-keep-cashing-in-on-crypto-atms-as-scams-surge/)
 
-##### Nov 17, 2025
+##### Dec 17, 2025
 
-[##### FAQS
+[##### Accountability
 
-![](https://media.icij.org/uploads/2025/11/Coin-Laundry-ICIJ-Generic-1-credit-Ben-King-ICIJ.jpg)](https://www.icij.org/investigations/coin-laundry/cryptocurrency-faqs/)
+![Changpeng CZ Zhao in a suit and tie carrying a folder of papers outside a Seattle court.](https://media.icij.org/uploads/2025/11/Changpeng-CZ-Zhao-Binance-GettyImages-2150337311.jpg)](https://www.icij.org/investigations/coin-laundry/tracing-firms-say-binances-clean-up-claims-left-out-key-crime-stats/)
 
-### [Frequently asked questions about The Coin Laundry investigation](https://www.icij.org/investigations/coin-laundry/cryptocurrency-faqs/)
+### [Tracing firms say Binance’s claims of improving financial crime left out key stats](https://www.icij.org/investigations/coin-laundry/tracing-firms-say-binances-clean-up-claims-left-out-key-crime-stats/)
 
-##### Nov 17, 2025
+##### Dec 11, 2025
 
 * [Recent investigations](/investigations)
 * [More](#)
@@ -134,6 +134,10 @@ Help us change the world. Get our stories by email.
   [The Implant Files](/implantfiles)
   [Bribery Division](/briberydivision)
 
+[![Illustration for the Damascus Dossier investigation showing a desk scattered with documents and bullets.](https://media.icij.org/uploads/2025/11/Damascus-Dossier-ICIJ-Project-banner-illustration-credit-ICIJ-Molly-Crabapple-1920px.jpg)
+
+### Damascus Dossier](https://www.icij.org/investigations/damascus-dossier/)
+
 [![Illustration showing small squares with crypto coins, USD notes, and other elements in green, gold and black.](https://media.icij.org/uploads/2025/11/Coin-Laundry-ICIJ-Project-banner.jpg)
 
 ### The Coin Laundry](https://www.icij.org/investigations/coin-laundry/)
@@ -141,7 +145,3 @@ Help us change the world. Get our stories by email.
 [![](https://media.icij.org/uploads/2025/04/ICIJ-China-Targets-Project-banner-credit-ICIJ.jpg)
 
 ### China Targets](https://www.icij.org/investigations/china-targets/)
-
-[![](https://media.icij.org/uploads/2024/11/Caspian-Cabals-project-banner.jpg)
-
-### Caspian Cabals](https://www.icij.org/investigations/caspian-cabals/)

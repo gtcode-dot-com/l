@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:33:53.113323+00:00'
-exported_at: '2026-02-12T19:33:56.044310+00:00'
+date: '2026-02-13T18:30:01.835054+00:00'
+exported_at: '2026-02-13T18:30:03.680381+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/3d-printer-surveillance.html
@@ -31,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 3D Printer Surveillance
-updated_at: '2026-02-12T19:33:53.113323+00:00'
+updated_at: '2026-02-13T18:30:01.835054+00:00'
 url_hash: db9196055ebe71ecb23fd7c83bd1de2e125d1c09
 ---
 
@@ -64,6 +64,6 @@ Tags:
 
 [Posted on February 12, 2026 at 7:01 AM](https://www.schneier.com/blog/archives/2026/02/3d-printer-surveillance.html)
 •
-[11 Comments](https://www.schneier.com/blog/archives/2026/02/3d-printer-surveillance.html#comments)
+[16 Comments](https://www.schneier.com/blog/archives/2026/02/3d-printer-surveillance.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-19T12:00:30.002437+00:00'
-exported_at: '2025-11-19T12:00:33.479839+00:00'
+date: '2026-02-13T18:30:51.390111+00:00'
+exported_at: '2026-02-13T18:31:03.612924+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/about-coin-laundry-investigation-cryptocurrency
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: About The Coin Laundry investigation
-updated_at: '2025-11-19T12:00:30.002437+00:00'
+updated_at: '2026-02-13T18:30:51.390111+00:00'
 url_hash: 8fed91a7441d81ae7f34fe98420e929d72f4e190
 ---
 

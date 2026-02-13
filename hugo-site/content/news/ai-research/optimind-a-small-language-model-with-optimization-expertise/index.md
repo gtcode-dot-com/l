@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-21T22:15:29.400676+00:00'
-exported_at: '2026-01-21T22:15:35.406769+00:00'
+date: '2026-02-13T18:30:23.871097+00:00'
+exported_at: '2026-02-13T18:30:29.251677+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/optimind-a-small-language-model-with-optimization-expertise
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'OptiMind: A small language model with optimization expertise'
-updated_at: '2026-01-21T22:15:29.400676+00:00'
+updated_at: '2026-02-13T18:30:23.871097+00:00'
 url_hash: 86e8c755656cf616e012997d20c2b5dbe0e738d1
 ---
 

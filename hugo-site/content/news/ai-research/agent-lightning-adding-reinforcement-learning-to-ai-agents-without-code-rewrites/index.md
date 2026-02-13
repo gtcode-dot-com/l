@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-21T22:15:30.797505+00:00'
-exported_at: '2026-01-21T22:15:35.404643+00:00'
+date: '2026-02-13T18:30:24.956094+00:00'
+exported_at: '2026-02-13T18:30:29.248576+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/agent-lightning-adding-reinforcement-learning-to-ai-agents-without-code-rewrites
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Agent Lightning: Adding reinforcement learning to AI agents without code rewrites'
-updated_at: '2026-01-21T22:15:30.797505+00:00'
+updated_at: '2026-02-13T18:30:24.956094+00:00'
 url_hash: 1bfe0fd52f4a607ea3a2973fb74c254af0050ed9
 ---
 

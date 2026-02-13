@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:33:52.737688+00:00'
-exported_at: '2026-02-12T19:33:56.047978+00:00'
+date: '2026-02-13T18:30:00.878327+00:00'
+exported_at: '2026-02-13T18:30:03.685753+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/first-malicious-outlook-add-in-found.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: First Malicious Outlook Add-In Found Stealing 4,000+ Microsoft Credentials
-updated_at: '2026-02-12T19:33:52.737688+00:00'
+updated_at: '2026-02-13T18:30:00.878327+00:00'
 url_hash: 3984d361af81645bc3788e8922e7489643f459a7
 ---
 
@@ -56,9 +56,9 @@ to create an account and submit their solution to the Partner Center, following 
 
 What's more, Office add-ins make use of a manifest file that declares a URL, the contents of which are fetched and served in real-time from the developer's server every time it's opened within an iframe element inside the application. However, there is nothing stopping a bad actor from taking control of an expired domain.
 
-In the case of AgreeTo, the manifest file pointed to a URL hosted on Vercel ("outlook-one.vercel[.]app"), which became claimable after the developer's Vercel deployment was deleted due to it essentially becoming abandonware sometime around 2023. The infrastructure is still live as of writing.
+In the case of AgreeTo, the manifest file pointed to a URL hosted on Vercel ("outlook-one.vercel[.]app"), which became claimable after the developer's Vercel deployment was deleted due to it essentially becoming abandonware sometime around 2023.
 
-The attacker took advantage of this behavior to stage a phishing kit on that URL that displayed a fake Microsoft sign-in page, capturing entered passwords, exfiltrating the details via the Telegram Bot API, and eventually redirecting the victim to the actual Microsoft login page.
+The attacker took advantage of this behavior to stage a phishing kit on that URL that displayed a fake Microsoft sign-in page, capturing entered passwords, exfiltrating the details via the Telegram Bot API, and eventually redirecting the victim to the actual Microsoft login page. The infrastructure is still live as of writing.
 
 But Koi warns that the incident could have been worse. Given that the add-in is configured with "
 [ReadWriteItem](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)
@@ -66,7 +66,7 @@ But Koi warns that the incident could have been worse. Given that the add-in is 
 
 The findings once again bring to fore the need for rescanning packaged and tools uploaded to marketplaces and repositories to flag malicious/suspicious activity.
 
-Dardikman said while Microsoft reviews the manifest during the initial submission phase, there is no control over the actual content that is retrieved live from the developer's server every time the add-in is opened, once it's signed and approved. As a result, the absence of continued monitoring of what the URL serves opens the door to unintended security risks.
+Dardikman said while Microsoft reviews the manifest during the initial submission phase, there is no control over the actual content that is retrieved live from the developer's server once it's signed and approved. As a result, the absence of continued monitoring of what the URL serves opens the door to unintended security risks every time an unsuspecting user opens the add-in.
 
 "Office add-ins are fundamentally different from traditional software," Dardikman added. "They don't ship a static code bundle. The manifest simply declares a URL, and whatever that URL serves at any given moment is what runs inside Outlook. In AgreeTo's case, Microsoft signed the manifest in December 2022, pointing to outlook-one.vercel.app. That same URL is now serving a phishing kit, and the add-in is still listed in the store."
 
@@ -84,3 +84,7 @@ It bears noting that the problem is not limited to Microsoft Marketplace or the 
 plans to enforce security checks before Microsoft Visual Studio Code (VS Code) extensions are published to the open-source repository. Microsoft's VS Code Marketplace, similarly, does periodic bulk rescanning of all packages in the registry.
 
 "The structural problem is the same across all marketplaces that host remote dynamic dependencies: approve once, trust forever," Dardikman said. "The specifics vary by platform, but the fundamental gap that enabled AgreeTo exists anywhere a marketplace reviews a manifest at submission without monitoring what the referenced URLs actually serve afterward."
+
+### Update
+
+As of February 12, 2026, the AgreeTo add-in is no longer available from Microsoft Marketplace. Users who are still using AgreeTo are advised to remove it as soon as possible, and to reset their Microsoft account passwords out of an abundance of caution.

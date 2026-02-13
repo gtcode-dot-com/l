@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T02:15:30.268782+00:00'
-exported_at: '2026-02-13T02:15:32.984304+00:00'
+date: '2026-02-13T18:30:28.135119+00:00'
+exported_at: '2026-02-13T18:30:29.236178+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/ai-meets-hr-transforming-talent-acquisition-with-amazon-bedrock
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'AI meets HR: Transforming talent acquisition with Amazon Bedrock'
-updated_at: '2026-02-13T02:15:30.268782+00:00'
+updated_at: '2026-02-13T18:30:28.135119+00:00'
 url_hash: d2cf30103f5ef96c61f6919af00fc2cc6f7702d0
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:33:53.371823+00:00'
-exported_at: '2026-02-12T19:33:56.041630+00:00'
+date: '2026-02-13T18:30:02.157081+00:00'
+exported_at: '2026-02-13T18:30:03.677918+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/rewiring-democracy-ebook-is-on-sale.html
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Rewiring Democracy Ebook is on Sale
-updated_at: '2026-02-12T19:33:53.371823+00:00'
+updated_at: '2026-02-13T18:30:02.157081+00:00'
 url_hash: d4c0e983e0108df9cb13d890efa51783b3dbf95f
 ---
 
@@ -66,4 +66,4 @@ Tags:
 
 [Posted on February 11, 2026 at 9:48 AM](https://www.schneier.com/blog/archives/2026/02/rewiring-democracy-ebook-is-on-sale.html)
 •
-[10 Comments](https://www.schneier.com/blog/archives/2026/02/rewiring-democracy-ebook-is-on-sale.html#comments)
+[11 Comments](https://www.schneier.com/blog/archives/2026/02/rewiring-democracy-ebook-is-on-sale.html#comments)

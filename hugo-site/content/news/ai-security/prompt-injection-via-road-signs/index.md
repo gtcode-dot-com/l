@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T20:15:16.799955+00:00'
-exported_at: '2026-02-12T20:15:19.940411+00:00'
+date: '2026-02-13T18:30:02.518090+00:00'
+exported_at: '2026-02-13T18:30:03.672786+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/prompt-injection-via-road-signs.html
@@ -40,7 +40,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Prompt Injection Via Road Signs
-updated_at: '2026-02-12T20:15:16.799955+00:00'
+updated_at: '2026-02-13T18:30:02.518090+00:00'
 url_hash: 026ec793d8b674a33708fbf09074e37830a8a333
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-21T22:15:32.189810+00:00'
-exported_at: '2026-01-21T22:15:35.402564+00:00'
+date: '2026-02-13T18:30:26.292939+00:00'
+exported_at: '2026-02-13T18:30:29.245837+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/promptions-helps-make-ai-prompting-more-precise-with-dynamic-ui-controls
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Promptions helps make AI prompting more precise with dynamic UI controls
-updated_at: '2026-01-21T22:15:32.189810+00:00'
+updated_at: '2026-02-13T18:30:26.292939+00:00'
 url_hash: 12f6478b7ca3e5faed61990730f82bb2218c2083
 ---
 
@@ -98,11 +98,9 @@ We built the Dynamic PRC system to automatically produce prompt options and refi
 
 Figure 2. Interaction flow in the Dynamic PRC system. (1) The user asks the system to explain a long Excel formula. (2) Dynamic PRC generates refinement options: Explanation Detail Level, Focus Areas, and Learning Objectives. (3) The user modifies these options. (4) The AI returns an explanation based on the selected options. (5) In the session chat panel, the user adds a request to control the structure or format of the response. (6) Dynamic PRC generates new option sets based on this input. (7) The AI produces an updated explanation reflecting the newly applied options.
 
-Spotlight: Microsoft research newsletter
+## Azure AI Foundry Labs
 
-## Microsoft Research Newsletter
-
-Stay connected to the research community at Microsoft.
+Get a glimpse of potential future directions for AI, with these experimental technologies from Microsoft Research.
 
 Opens in a new tab
 

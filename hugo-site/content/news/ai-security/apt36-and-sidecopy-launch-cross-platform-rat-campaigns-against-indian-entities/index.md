@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:33:52.952771+00:00'
-exported_at: '2026-02-12T19:33:56.046185+00:00'
+date: '2026-02-13T18:30:01.516029+00:00'
+exported_at: '2026-02-13T18:30:03.683133+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/apt36-and-sidecopy-launch-cross.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: APT36 and SideCopy Launch Cross-Platform RAT Campaigns Against Indian Entities
-updated_at: '2026-02-12T19:33:52.952771+00:00'
+updated_at: '2026-02-13T18:30:01.516029+00:00'
 url_hash: 0ee558d66fbfe4796d0d26d291175152544dabed
 ---
 
