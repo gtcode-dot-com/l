@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:31:03.192954+00:00'
-exported_at: '2026-02-12T19:31:06.490662+00:00'
+date: '2026-02-13T06:48:05.370901+00:00'
+exported_at: '2026-02-13T06:48:08.425079+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/threatsday-bulletin-ai-prompt-rce.html
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: 'ThreatsDay Bulletin: AI Prompt RCE, Claude 0-Click, RenEngine Loader, Auto
   0-Days & 25+ Stories'
-updated_at: '2026-02-12T19:31:03.192954+00:00'
+updated_at: '2026-02-13T06:48:05.370901+00:00'
 url_hash: bb2748b1bcf369869e122e8bca049c2de248df79
 ---
 
@@ -170,7 +170,7 @@ Below is this week’s ThreatsDay Bulletin — a tight scan of the signals that 
     [Huntress and Microsoft](https://thehackernews.com/2026/01/crashfix-chrome-extension-delivers.html)
     , the attack stands out because it did not involve the use of a malicious browser extension. "Instead, the victim was convinced to execute a command via the Windows Run dialog (Win+R) as seen with traditional ClickFix," Binary Defense
     [said](https://binarydefense.com/resources/blog/when-access-brokers-go-interactive-clickfixin-to-python-your-network)
-    . "This command abused a legitimate Windows binary -- finger.exe -- copied from System32, renamed, and executed from a user-writable directory. The output of this execution was piped directly into cmd.exe, acting as a delivery mechanism for an obfuscated PowerShell payload." The PowerShell code then retrieves follow-on content, including Python backdoors and a DLL implant that overlaps with SystemBC, from attacker-controlled infrastructure, while taking steps to fingerprint the host and clean up artifacts on disk. "The coexistence of Python backdoors and a reflective DLL implant highlights a deliberate defense-evasion and persistence strategy," the company said. "By mixing scripting-based and native implants, the attacker reduced reliance on any single execution method, making complete eviction more difficult."
+    . "This command abused a legitimate Windows binary – finger.exe – copied from System32, renamed, and executed from a user-writable directory. The output of this execution was piped directly into cmd.exe, acting as a delivery mechanism for an obfuscated PowerShell payload." The PowerShell code then retrieves follow-on content, including Python backdoors and a DLL implant that overlaps with SystemBC, from attacker-controlled infrastructure, while taking steps to fingerprint the host and clean up artifacts on disk. "The coexistence of Python backdoors and a reflective DLL implant highlights a deliberate defense-evasion and persistence strategy," the company said. "By mixing scripting-based and native implants, the attacker reduced reliance on any single execution method, making complete eviction more difficult."
 19. 76 Zero-Days Found in Cars
 
     The third annual Pwn2Own Automotive competition held in Tokyo, Japan, late last month

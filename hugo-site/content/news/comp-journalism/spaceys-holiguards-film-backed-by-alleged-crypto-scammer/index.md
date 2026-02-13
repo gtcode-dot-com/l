@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-19T02:59:42.864613+00:00'
-exported_at: '2025-11-19T02:59:45.679281+00:00'
+date: '2026-02-13T06:48:57.848323+00:00'
+exported_at: '2026-02-13T06:49:03.932438+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/holiverse-lado-forsage-cryptocurrency-scam
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: The Russian crypto guru’s Hollywood gambit
-updated_at: '2025-11-19T02:59:42.864613+00:00'
+updated_at: '2026-02-13T06:48:57.848323+00:00'
 url_hash: 6480cb77bdbcac6f382b6d7714e69c4d5be97f60
 ---
 
@@ -70,13 +70,19 @@ Elledgy also co-produced “The Portal of Force” and organized the lavish dinn
 
 “His talent is not just about acting,” she said. “It is a truth in self. Truth that makes us cry, makes us believe. He gave this story its breath. He made it alive.”
 
-# ‘Fast and furious’
+## ‘Fast and furious’
 
 Okhotnikov was born in Soviet-ruled Kazakhstan and grew up poor in Russia, according to his website. His father, a wrestling coach, trained him to wrestle, which Okhotnikov credits as the source of his resilience.
 
 “When you overcome real difficulty, it hardens and inspires you,” he said in an interview with a Russian-language website earlier this year.
 
 In the early 2000s, after studying filmmaking in Moscow and failing to break into the film industry, Okhotnikov entered the murky world of multi-level marketing. Also known as network marketing, this controversial and sometimes illegal business model requires salespeople to recruit others to earn commissions.
+
+![Lado Okhotnikov, center, pictured in a since-deleted Instagram post from a June 2024 event where he was promoting Meta Force to potential investors.](https://media.icij.org/uploads/2025/11/Lado-IG-crop-760x427.jpg)
+
+
+Lado Okhotnikov, center, pictured in a since-deleted Instagram post from a June 2024 event where he was promoting Meta Force to potential investors.
+Image: Instagram / @metaforcespace
 
 Since then, Okhotnikov has launched or participated in at least 16 multi-level marketing schemes, ICIJ found. For a self-described libertarian who said he moved to Georgia to avoid paying Russian taxes, crypto innovations promised a way to aim even higher — and recruit more investors than ever before.
 
@@ -132,7 +138,7 @@ The following month, Juels, the Cornell Tech professor, released a forensic repo
 
 “The people who launched the scheme, developed it and advertised it were clearly responsible,” Juels told ICIJ. “It’s just hard to hold people accountable.”
 
-# Cars to crypto
+## Cars to crypto
 
 Okhotnikov ran Forsage from an apartment in the Georgian capital of Tbilisi, where he spent most of the day at his computer making YouTube videos, his former business associate Petr Pak later told a Georgian court.
 
@@ -178,7 +184,7 @@ Despite his mounting legal troubles, Okhotnikov kept busy promoting another plat
 
 Okhotnikov was unfazed. Behind the scenes, he had hired Elvira Gavrilova.
 
-# ‘A magical year’
+## ‘A magical year’
 
 In her Instagram bio, Gavrilova describes herself as a film producer and founder of a company that sells luxury bunkers to the ultrarich. She began her career in public relations about a decade ago when she joined Amillidius, a Kyiv, Ukraine-based advertising and reputation management firm co-owned by her husband at the time, Andrey Gerasimov.
 
@@ -222,7 +228,7 @@ Later in the evening, after Okhotnikov showed the guests a trailer for the film,
 
 On Instagram a few weeks later, Gavrilova shared a 2024 highlights reel that included snapshots from the gala, the Mexico shoot and the Meta Force event in southern France. “It was a magical year,” the caption read.
 
-# To the moon
+## To the moon
 
 In January, Gavrilova sought legal advice. She was concerned that working for Okhotnikov might increase scrutiny of Elledgy, she told a lawyer in voice and text messages reviewed by ICIJ. Gavrilova asked whether she should raise Elledgy’s authorized capital “so that everything looks plausible.”
 
@@ -246,13 +252,19 @@ The space mission never happened, but Gavrilova had a new target to help promote
 
 The first issue was released at Musk’s birthday party in Mumbai, India, organized by Gavrilova, according to the bank records and social media posts of guests who attended. On the cover of the magazine, posted on Instagram by one of the guests, Musk posed in the snow wearing a bedazzled cream gown. Musk did not respond to ICIJ’s requests for comment.
 
+![A screenshot of Maye Musk on the cover of the Holiguard magazine from a now-deleted Instagram post.](https://media.icij.org/uploads/2025/11/Maye-Musk-Holiguard-magazine-cover-512x640.jpg)
+
+
+A screenshot of Maye Musk on the cover of the Holiguard magazine from a now-deleted Instagram post.
+Image: Instagram / @sonali.iyenga
+
 Shortly after the Meta Force party in July 2024, Elledgy began receiving payments from more than a dozen companies based in Germany, the U.K., Belgium and Spain. By May, these payments totaled about $4 million, bank records reviewed by ICIJ show. The entities include a courier service in Dortmund, Germany, that was recently deregistered because of a lack of assets after wiring more than $350,000 to Elledgy in January and March. Some of the others — officially registered as limousine services, couriers or construction firms — have no websites, show dated or no financial statements in the countries’ corporate registries, and often have the same address, suggesting they could be shell companies.
 
 “They probably are red flags,” Graham Barrow, a former banker and financial crime expert, told ICIJ. “Small companies are really commonly used for money laundering,” he added. “It’s a great way of trying to go under the radar. And the more jurisdictions you have involved, the harder it is to do a proper investigation.”
 
 ICIJ reporters in Berlin, Dortmund and Madrid visited the official addresses of six companies, including one registered as a clothing trading firm and others listed as parcel delivery services. Instead of those businesses, the reporters found mailboxes inside co-working spaces and no staff or signs of commercial activity. The reporters also called or emailed the companies with available contact information but were unable to reach any representatives.
 
-# The Meta Whale ‘masterpiece’
+## The Meta Whale ‘masterpiece’
 
 While Gavrilova was enlisting celebrities to promote Okhotnikov’s ventures as reputable startups, the crypto entrepreneur was preparing to unveil yet another decentralized investment scheme.
 
@@ -292,7 +304,7 @@ Last month, Slovenia’s financial watchdog
 [warned](https://www.a-tvp.si/storage/app/media/Opozorila/Opozorila%20Agencije/FORSAGE%20ANG%20opozorilo%20javnosti.pdf)
 that Forsage, Meta Force, Holiverse and Meta Whale were the same entity “linked to an international fraud” operating under different names.
 
-# ‘An honest story’
+## ‘An honest story’
 
 After trumpeting the success of the “Portal of Force” trailer screening in Venice, Okhotnikov and Gavrilova’s social media channels went quiet.
 

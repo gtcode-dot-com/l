@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-27T18:15:28.931927+00:00'
-exported_at: '2026-01-27T18:15:32.619678+00:00'
+date: '2026-02-13T06:48:33.568267+00:00'
+exported_at: '2026-02-13T06:48:35.960019+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/unirg-scaling-medical-imaging-report-generation-with-multimodal-reinforcement-learning
@@ -29,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: 'UniRG: Scaling medical imaging report generation with multimodal reinforcement
   learning'
-updated_at: '2026-01-27T18:15:28.931927+00:00'
+updated_at: '2026-02-13T06:48:33.568267+00:00'
 url_hash: c7f58fddf7e7ebac20c9f2ed6b01dca83933e3e1
 ---
 
@@ -59,11 +59,9 @@ In this blog, we introduce
 
 To our knowledge, this is the first report generation model to achieve consistent state-of-the-art performance across report-level metrics, disease-level diagnostic accuracy, cross-institution generalization, longitudinal report generation, and demographic subgroups. These results demonstrate that reinforcement learning, when guided by clinically meaningful reward signals, can substantially improve both the reliability and generality of medical vision–language models.
 
-Spotlight: Event Series
+## Azure AI Foundry Labs
 
-## Microsoft Research Forum
-
-Join us for a continuous exchange of ideas about research in the era of general AI. Watch the first four episodes on demand.
+Get a glimpse of potential future directions for AI, with these experimental technologies from Microsoft Research.
 
 Opens in a new tab
 

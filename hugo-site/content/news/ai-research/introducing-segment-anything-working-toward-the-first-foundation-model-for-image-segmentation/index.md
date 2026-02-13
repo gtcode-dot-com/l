@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-12T12:03:29.412477+00:00'
-exported_at: '2025-12-12T12:03:32.501057+00:00'
+date: '2026-02-13T06:48:29.772398+00:00'
+exported_at: '2026-02-13T06:48:35.969687+00:00'
 feed: https://research.facebook.com/feed
 language: en
 source_url: https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: 'Introducing Segment Anything: Working toward the first foundation model for
   image segmentation'
-updated_at: '2025-12-12T12:03:29.412477+00:00'
+updated_at: '2026-02-13T06:48:29.772398+00:00'
 url_hash: dc65fff014e31e9c73ba97e9cc12243f47f41935
 ---
 
@@ -110,7 +110,7 @@ We observed that the pretraining task and interactive data collection imposed sp
 
 Under the hood, an image encoder produces a one-time embedding for the image, while a lightweight encoder converts any prompt into an embedding vector in real time. These two information sources are then combined in a lightweight decoder that predicts segmentation masks. After the image embedding is computed, SAM can produce a segment in just 50 milliseconds given any prompt in a web browser.
 
-![](https://scontent-dfw5-2.xx.fbcdn.net/v/t39.2365-6/338558258_1349701259095991_4358060436604292355_n.png?_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=7gYGA7lEFQkQ7kNvwHo_0iY&_nc_oc=AdnWjA0vPcj25QXL1HBlNuiSxxEAKK2ysXis4E61tQjX5FzWHdzQ98KidFlZddw3MSk&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=tGq56AM6uItDAsjjXyPUkw&oh=00_AfmR8pAcjT6rVW8EBWp28gbl95UlakrpbZirv--M5epjPQ&oe=69562E89)
+![](https://scontent.fhnl3-2.fna.fbcdn.net/v/t39.2365-6/338558258_1349701259095991_4358060436604292355_n.png?_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=z7W-Xk6F1dkQ7kNvwHpCuPB&_nc_oc=AdkzPzXWU7kcMCTwQMlMep_zWwjJrPkzY6F-z5eYtHjsaWE90c8qMy2W1lbGysOfgwg&_nc_zt=14&_nc_ht=scontent.fhnl3-2.fna&_nc_gid=igYKb9UNvhaXv54Qh1ON8g&oh=00_AfswMAeZwxpaAq-kQP7-fe3Xo0BAEhMNnWkZcDxYqsEHtA&oe=69A904C9)
 
 In a web browser, SAM efficiently maps the image features and a set of prompt embeddings to produce a segmentation mask.
 
@@ -124,8 +124,8 @@ However, relying on interactively annotating masks does not scale sufficiently t
 
 Our final dataset includes more than 1.1 billion segmentation masks collected on about 11 million licensed and privacy-preserving images. SA-1B has 400x more masks than any existing segmentation dataset, and as verified by human evaluation studies, the masks are of high quality and diversity, and in some cases even comparable in quality to masks from the previous much smaller, fully manually annotated datasets.
 
-![](https://scontent-dfw5-2.xx.fbcdn.net/v/t39.2365-6/338490494_577019134187999_95483266747832988_n.png?_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=XJgh342J37gQ7kNvwGtJTPP&_nc_oc=AdmCkAuK5vsCHjFU1dxrkaNm1_CFsqJ3rg1BzHA0AmtnsxDsQ67AR_KquUT--ft41M0&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=tGq56AM6uItDAsjjXyPUkw&oh=00_Afls-sA1Vhpyoz1WQ4U_2PQVwxvGQ0XQD3n4hKPKvDjQCg&oe=6956427C)
-![](https://scontent-dfw5-3.xx.fbcdn.net/v/t39.2365-6/338713754_989652268682274_1644116157216484057_n.png?_nc_cat=108&ccb=1-7&_nc_sid=e280be&_nc_ohc=3R8PIZBCqCAQ7kNvwHquLRt&_nc_oc=AdnJtMKmvJV56zl91DQ6UL0u-4388gdn4TwDpR8H-RVKmTZffjgMK8YK-4MHCMs42lU&_nc_zt=14&_nc_ht=scontent-dfw5-3.xx&_nc_gid=tGq56AM6uItDAsjjXyPUkw&oh=00_Afk5XP2dWbx-HT-jPa3aIio2ou9ly2POuIyv37lPEqP5FA&oe=695632FF)
+![](https://scontent.fhnl3-2.fna.fbcdn.net/v/t39.2365-6/338490494_577019134187999_95483266747832988_n.png?_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=LVSVBgk2VEIQ7kNvwHbV6kR&_nc_oc=AdmCGmGp8xz1WDGQFOLEv_fpbFMfoSsl9nR-TQOEAtQUKVvTHzBkOfv1zgJwR-5GjNo&_nc_zt=14&_nc_ht=scontent.fhnl3-2.fna&_nc_gid=igYKb9UNvhaXv54Qh1ON8g&oh=00_Aft5luL9-ojtc4P2JZFq1TCvJhVNPjNjgCHMCTybhc7veA&oe=69A918BC)
+![](https://scontent.fhnl3-2.fna.fbcdn.net/v/t39.2365-6/338713754_989652268682274_1644116157216484057_n.png?_nc_cat=108&ccb=1-7&_nc_sid=e280be&_nc_ohc=--Pq8wb-4ZIQ7kNvwFNYOc4&_nc_oc=AdnrZMh3HiBf8eFAtKh6j9bjWzVvGQ65vusjVTo9uqNBragbmlbUdGT5v_K5WzCGkOQ&_nc_zt=14&_nc_ht=scontent.fhnl3-2.fna&_nc_gid=igYKb9UNvhaXv54Qh1ON8g&oh=00_Aft5fqzxJ7B2pxZPFQvB1YZJsNAonZ_vNETeCk8vBxHoHw&oe=69A9093F)
 
 Segment Anything’s capabilities are the result of training on millions of images and masks collected using a data engine. The result is a dataset of more than 1 billion segmentation masks – 400x larger than any prior segmentation dataset.
 

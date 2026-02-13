@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-19T02:59:42.260323+00:00'
-exported_at: '2025-11-19T02:59:45.686577+00:00'
+date: '2026-02-13T06:48:53.582073+00:00'
+exported_at: '2026-02-13T06:49:03.939435+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/cryptocurrency-exchanges-binance-okx-money-laundering-crime
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: Crypto giants moved billions linked to money launderers, drug traffickers and
   North Korean hackers
-updated_at: '2025-11-19T02:59:42.260323+00:00'
+updated_at: '2026-02-13T06:48:53.582073+00:00'
 url_hash: a05e84a6e592f7b8df83414c3e11b2929f282f52
 ---
 
@@ -1540,7 +1540,7 @@ Image: Leah Hennel
 
 It was a trap. U.S. authorities have flagged the growing prevalence of these so-called task scams, warning that “there aren’t any commissions and nobody but the scammers make any money.”
 
-Weber lost more than $25,000 — her life savings, including loans that the platform had encouraged her to take out. When she alerted authorities, they told her, ” ‘You’re not going to get your money back,’ ” she recalled. Her follow-ups have gone unanswered.
+Weber lost more than $25,000 — her life savings, including loans that the platform had encouraged her to take out. When she alerted authorities, they told her, “ ‘You’re not going to get your money back,’ ” she recalled. Her follow-ups have gone unanswered.
 
 “My case is sitting in a filing cabinet and no one’s doing anything with it,” Weber said.
 
@@ -1697,5 +1697,7 @@ The comment was enough to send the value of the coin crashing, CoinDesk later re
 By that Friday, the billionaire had stopped posting about the pardon and was back to promoting BNB Chain.
 
 “Happy Halloween,” he wrote on X. “We are hiring.”
+
+*Update Nov. 28, 2025: WhiteBIT, a cryptocurrency exchange, provided a statement to ICIJ after publication. In response to questions about payments to a wallet controlled by Russian money launderer Khadzhi Magomedov, a WhiteBIT spokesperson said the transfers were made by a third-party service using the exchange’s blockchain infrastructure. WhiteBIT said that it severed ties with this service in early 2022 for failing to meet WhiteBIT’s compliance standards. The company said it “works closely with blockchain analytics providers and regularly cooperates with law-enforcement agencies in multiple jurisdictions.”*
 
 Contributing reporters: Lucy King (Australian Financial Review), Leo Sisti (L’Espresso), Hugo Joncas (La Presse), Dania Kamal Aryf and Hariz Mohd (Malaysiakini), Benedikt Strunz (NDR), Naoki Inoue (NTV), Maxime Tellier (Radio France), Joan Plancade and Sylvain Besson (Tamedia), Ritu Sarin (The Indian Express), David Yaffe-Bellany (The New York Times), Emma McIntosh and Sheila Wang (The Toronto Star), Frédéric Zalac (CBC/Radio-Canada), Petra Blum (WDR), Denise Ajiri, Scilla Alecci, Jelena Cosic, Isabella Cota, Ben Dooley, Brenda Medina, Delphine Reuter, Joanna Robin, David Rowell, Richard H.P. Sia, Fergus Shiel, Annys Shin, Dean Starkman, Tom Stites, and Angie Wu (ICIJ).

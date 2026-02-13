@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-19T02:59:42.624652+00:00'
-exported_at: '2025-11-19T02:59:45.682861+00:00'
+date: '2026-02-13T06:48:55.389219+00:00'
+exported_at: '2026-02-13T06:49:03.935687+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/crypto-cash-desk-currency-exchange-money-laundering
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: From Dubai to Toronto, inside the crypto-to-cash storefronts fueling money
   laundering’s new frontier
-updated_at: '2025-11-19T02:59:42.624652+00:00'
+updated_at: '2026-02-13T06:48:55.389219+00:00'
 url_hash: 661d57b569feb6527b61db41771c34e2de04c33e
 ---
 
@@ -283,6 +283,8 @@ But I wondered: Was this labor- and cost-intensive strategy of repeatedly visiti
 I considered the future we’re already living in: a world where creating anonymous accounts was no longer a specialty of dodgy law firms in the Cayman Islands or Bermuda practicing the dark arts of financial secrecy, but available to anyone with a smartphone at the click of a button — and on a practically unlimited scale. Even if Sanders had a whole team deployed in Dubai, their work would be endless, it seemed to me. It can take a person an hour — and access to significant funds — to travel to a cash desk and do a transaction, while it can take a crypto vendor a mere moment to create a new wallet address for free.
 
 I didn’t think Sanders was ready to accept it, but the war he had been waging against anonymity in crypto seemed impossible to win. Then, two weeks after I returned from Dubai, he sent me a message. His time in Dubai had led him to a new state of despair, he wrote. “I am finally at a point of watching the world burn.”
+
+*Update Nov. 28, 2025: WhiteBIT, a cryptocurrency exchange, provided a statement to ICIJ after publication. WhiteBIT said an 001k service had used its blockchain infrastructure “to perform deposit and withdrawal operations and that such activity is limited exclusively to cryptocurrency,” adding that “no fiat transfers were carried out by this service through WhiteBIT.” The company said it “works closely with blockchain analytics providers and regularly cooperates with law-enforcement agencies in multiple jurisdictions.”*
 
 Contributing reporters: Sheila Wang and Emma McIntosh (The Toronto Star), Hugo Joncas (La Presse), Frédéric Zalac, Jeff Yates and Yanick Rose (CBC/Radio-Canada), Agustin Armendariz, Kathleen Cahill, Miguel Fiandor Gutiérrez, Delphine Reuter, David Rowell, Fergus Shiel, Dean Starkman, Tom Stites, and Angie Wu (ICIJ)
 

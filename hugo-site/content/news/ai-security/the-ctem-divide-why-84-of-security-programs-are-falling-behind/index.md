@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:31:03.575847+00:00'
-exported_at: '2026-02-12T19:31:06.488325+00:00'
+date: '2026-02-13T06:48:05.871570+00:00'
+exported_at: '2026-02-13T06:48:08.422370+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/the-ctem-divide-why-84-of-security.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'The CTEM Divide: Why 84% of Security Programs Are Falling Behind'
-updated_at: '2026-02-12T19:31:03.575847+00:00'
+updated_at: '2026-02-13T06:48:05.871570+00:00'
 url_hash: 32dc9af37189e434dd40ced1f3c60162d946a2d7
 ---
 

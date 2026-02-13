@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T19:31:22.763098+00:00'
-exported_at: '2026-02-12T19:31:28.281381+00:00'
+date: '2026-02-13T06:48:30.887741+00:00'
+exported_at: '2026-02-13T06:48:35.966919+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/rethinking-imitation-learning-with-predictive-inverse-dynamics-models
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Rethinking imitation learning with Predictive Inverse Dynamics Models
-updated_at: '2026-02-12T19:31:22.763098+00:00'
+updated_at: '2026-02-13T06:48:30.887741+00:00'
 url_hash: 74633fb50db77bce3d23a7d1002ac669c2eb89fc
 ---
 
@@ -60,11 +60,11 @@ Figure 1. BC vs. PIDM architectures. (Top) Behavior Cloning learns ho
 
 PIDMs’ approach to imitation learning consists of two core elements: a model that forecasts plausible future states, and an inverse dynamics model (IDM) that predicts the action needed to move from the present state toward that future. Instead of asking, “What action would an expert take?” PIDMs effectively ask, “What would an expert try to achieve, and what action would lead to it?” This shift turns the information in the current observation (e.g., video frame) into a coherent sense of direction, reducing ambiguity about intent and making action prediction easier.
 
-Spotlight: Event Series
+Spotlight: Microsoft research newsletter
 
-## Microsoft Research Forum
+## Microsoft Research Newsletter
 
-Join us for a continuous exchange of ideas about research in the era of general AI. Watch the first four episodes on demand.
+Stay connected to the research community at Microsoft.
 
 Opens in a new tab
 

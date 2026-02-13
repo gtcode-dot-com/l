@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-19T02:59:43.416849+00:00'
-exported_at: '2025-11-19T02:59:45.673235+00:00'
+date: '2026-02-13T06:49:02.772739+00:00'
+exported_at: '2026-02-13T06:49:03.920524+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/cryptocurrency-regulations-global-explainer
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: From trading bans to total embrace, a global guide to crypto regulation
-updated_at: '2025-11-19T02:59:43.416849+00:00'
+updated_at: '2026-02-13T06:49:02.772739+00:00'
 url_hash: 72993232fe285339bbfb24bd16291555928dc956
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-21T22:15:28.452065+00:00'
-exported_at: '2026-01-21T22:15:35.408544+00:00'
+date: '2026-02-13T06:48:34.614687+00:00'
+exported_at: '2026-02-13T06:48:35.923398+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/multimodal-reinforcement-learning-with-agentic-verifier-for-ai-agents
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Multimodal reinforcement learning with agentic verifier for AI agents
-updated_at: '2026-01-21T22:15:28.452065+00:00'
+updated_at: '2026-02-13T06:48:34.614687+00:00'
 url_hash: aacb677f5d74ef455099a8024723cc2537e4d221
 ---
 
@@ -45,11 +45,9 @@ These errors often arise because today’s multimodal agents are trained to gene
 
 To tackle this challenge, we posed the question: How can we train AI agents to generate correct answers and take appropriate actions for the right reasons so that their behavior is reliable even as the environment or tasks change?
 
-Spotlight: Microsoft research newsletter
+## Azure AI Foundry Labs
 
-## Microsoft Research Newsletter
-
-Stay connected to the research community at Microsoft.
+Get a glimpse of potential future directions for AI, with these experimental technologies from Microsoft Research.
 
 Opens in a new tab
 

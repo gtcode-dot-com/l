@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T19:31:02.827623+00:00'
-exported_at: '2026-02-12T19:31:06.496619+00:00'
+date: '2026-02-13T06:48:04.865235+00:00'
+exported_at: '2026-02-13T06:48:08.428676+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/lazarus-campaign-plants-malicious.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Lazarus Campaign Plants Malicious Packages in npm and PyPI Ecosystems
-updated_at: '2026-02-12T19:31:02.827623+00:00'
+updated_at: '2026-02-13T06:48:04.865235+00:00'
 url_hash: 3bb20fbcc48448e587019cc6451d190d0237644f
 ---
 

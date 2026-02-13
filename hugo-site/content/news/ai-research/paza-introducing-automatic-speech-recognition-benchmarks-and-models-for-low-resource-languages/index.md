@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T19:31:24.121401+00:00'
-exported_at: '2026-02-12T19:31:28.278792+00:00'
+date: '2026-02-13T06:48:32.370881+00:00'
+exported_at: '2026-02-13T06:48:35.963726+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/paza-introducing-automatic-speech-recognition-benchmarks-and-models-for-low-resource-languages
@@ -29,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: 'Paza: Introducing automatic speech recognition benchmarks and models for low
   resource languages'
-updated_at: '2026-02-12T19:31:24.121401+00:00'
+updated_at: '2026-02-13T06:48:32.370881+00:00'
 url_hash: eb51e3c0b8a89cc90f12fbaf49b6e730055a5525
 ---
 
@@ -73,11 +73,9 @@ meaning “to project,” or “to raise your voice.”  The name reflects our 
 **Paza is about co-creating speech technologies in partnership with the communities who use them.**
 Guided by this principle, Paza puts human use first, which enables model improvement.
 
-PODCAST SERIES
+## Azure AI Foundry Labs
 
-## The AI Revolution in Medicine, Revisited
-
-Join Microsoft’s Peter Lee on a journey to discover how AI is impacting healthcare and what it means for the future of medicine.
+Get a glimpse of potential future directions for AI, with these experimental technologies from Microsoft Research.
 
 Opens in a new tab
 
