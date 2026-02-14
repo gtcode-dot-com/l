@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T20:15:34.768271+00:00'
-exported_at: '2026-02-12T20:15:39.089885+00:00'
+date: '2026-02-14T23:10:54.319424+00:00'
+exported_at: '2026-02-14T23:10:55.921919+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token
@@ -29,7 +29,7 @@ structured_data:
     name: gtcode.com
 title: Leading Inference Providers Cut AI Costs by up to 10x With Open Source Models
   on NVIDIA Blackwell
-updated_at: '2026-02-12T20:15:34.768271+00:00'
+updated_at: '2026-02-14T23:10:54.319424+00:00'
 url_hash: 568ea7e2d61ab28cb3ffd758cdbd78b13814008d
 ---
 

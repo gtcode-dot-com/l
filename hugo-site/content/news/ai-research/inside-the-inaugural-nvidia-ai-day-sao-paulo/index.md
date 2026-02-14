@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T04:15:29.483505+00:00'
-exported_at: '2026-02-13T04:15:31.875782+00:00'
+date: '2026-02-14T23:10:53.927897+00:00'
+exported_at: '2026-02-14T23:10:55.925421+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/ai-day-sao-paulo
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Code, Compute and Connection: Inside the Inaugural NVIDIA AI Day São Paulo'
-updated_at: '2026-02-13T04:15:29.483505+00:00'
+updated_at: '2026-02-14T23:10:53.927897+00:00'
 url_hash: 7f5e6646c1f08de6719ac46634f9e3121ef58854
 ---
 

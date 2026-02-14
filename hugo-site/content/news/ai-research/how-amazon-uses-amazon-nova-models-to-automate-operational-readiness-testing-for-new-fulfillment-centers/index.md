@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T19:34:11.249007+00:00'
-exported_at: '2026-02-12T19:34:14.914318+00:00'
+date: '2026-02-14T23:10:52.623093+00:00'
+exported_at: '2026-02-14T23:10:55.931559+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-amazon-uses-amazon-nova-models-to-automate-operational-readiness-testing-for-new-fulfillment-centers
@@ -30,7 +30,7 @@ structured_data:
     name: gtcode.com
 title: How Amazon uses Amazon Nova models to automate operational readiness testing
   for new fulfillment centers
-updated_at: '2026-02-12T19:34:11.249007+00:00'
+updated_at: '2026-02-14T23:10:52.623093+00:00'
 url_hash: 864124f9dfbaed2124631377add22d4e49ff1897
 ---
 

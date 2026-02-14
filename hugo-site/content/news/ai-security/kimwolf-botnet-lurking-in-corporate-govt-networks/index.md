@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-01-23T04:15:13.609909+00:00'
-exported_at: '2026-01-23T04:15:15.857798+00:00'
+date: '2026-02-14T23:10:34.346686+00:00'
+exported_at: '2026-02-14T23:10:35.577643+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Kimwolf Botnet Lurking in Corporate, Govt. Networks
-updated_at: '2026-01-23T04:15:13.609909+00:00'
+updated_at: '2026-02-14T23:10:34.346686+00:00'
 url_hash: f9510c94e31a0cdc17590c3b7e0607eb8b0abec7
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T20:15:35.287612+00:00'
-exported_at: '2026-02-12T20:15:39.087069+00:00'
+date: '2026-02-14T23:10:54.668634+00:00'
+exported_at: '2026-02-14T23:10:55.916134+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/dgx-spark-higher-education
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: NVIDIA DGX Spark Powers Big Projects in Higher Education
-updated_at: '2026-02-12T20:15:35.287612+00:00'
+updated_at: '2026-02-14T23:10:54.668634+00:00'
 url_hash: 5a5615b5ec5b9146647c956d815363a4179bc4fb
 ---
 
@@ -67,7 +67,7 @@ At NYU’s Global AI Frontier Lab, ​the
 [ICARE](https://arxiv.org/pdf/2508.02808)
 (Interpretable and Clinically‑Grounded Agent‑Based Report Evaluation) project runs end-to-end on a DGX Spark in the lab. ICARE uses collaborating AI agents and multiple‑choice question generation to evaluate how closely AI‑generated radiology reports align with expert sources, enabling real‑time clinical evaluation and continuous monitoring without sending medical imaging data to the cloud.​
 
-“Being able to run powerful LLMs locally on the DGX Spark has completely changed my workflow,” said Lucius Bynum, data science assistant professor and a faculty fellow at the NYU Center for Data Science. “I have been able to focus my efforts on quickly iterating and improving the research tool I’m developing.”
+“Being able to run powerful LLMs locally on the DGX Spark has completely changed my workflow,” said Lucius Bynum, faculty fellow at the NYU Center for Data Science. “I have been able to focus my efforts on quickly iterating and improving the research tool I’m developing.”
 
 VIDEO
 
