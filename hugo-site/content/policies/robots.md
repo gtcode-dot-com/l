@@ -9,6 +9,12 @@ outputs: ["HTML", "Markdown", "plaintextrobots"]
 
 User-agent: *
 Allow: /
+Allow: /agent.txt
+Allow: /agents.txt
+Allow: /llm.txt
+Allow: /llms.txt
+Allow: /ai.txt
+Allow: /humans.txt
 
 User-agent: GPTBot
 Allow: /

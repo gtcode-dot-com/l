@@ -1,7 +1,7 @@
 missions:
   - badge: "Consultancy"
     title: "AI Engineering Studio"
-    title_url: "mailto:inquire@gtcode.com"
+    title_url: "/consulting/"
     summary: "Bespoke AI systems for organizations that need trustworthy automation, multi-agent orchestration, and resilient infrastructure."
     features:
       - "Custom ML model development & evaluation pipelines"
@@ -9,7 +9,7 @@ missions:
       - "AI safety reviews, deployment readiness, and executive strategy"
     ctas:
       - label: "Inquire About Services →"
-        url: "mailto:inquire@gtcode.com"
+        url: "/consulting/"
         style: "secondary"
 
   # DISABLED: Public Accountability / Investigations

@@ -79,8 +79,19 @@ relativeURLs = true
 [params]
   description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional corruption, judicial misconduct, and accountability in the islands.'
   author = 'Ekewaka Lono'
-  home_title_suffix = 'Independent Investigative Journalism'
-  og_site_name = 'GTCode'
+  home_title_suffix = 'Investigative Journalism + AI Consulting'
+  og_site_name = 'Oahu Underground by GTCode'
+  seo_site_name = 'Oahu Underground by GTCode'
+  newsroom_name = 'Oahu Underground'
+  news_publication_name = 'Oahu Underground'
+  site_brand_short = 'GTCode'
+  logo = '/img/gtcode-core.svg'
+  og_image = '/img/gtcode_mahalo_1200x630.jpg'
+  og_image_width = 1200
+  og_image_height = 630
+  og_image_alt = 'Oahu Underground investigative reporting in Hawaii'
+  contact_email = 'inquire@gtcode.com'
+  tips_email = 'tips@gtcode.com'
 
 [markup]
   [markup.goldmark]

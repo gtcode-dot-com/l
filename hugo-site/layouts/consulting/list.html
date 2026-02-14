@@ -1,0 +1,103 @@
+{{ define "main" }}
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <strong>{{ .Title }}</strong>
+  </nav>
+
+  <div class="hero hero-profile">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">GTCode Consulting</p>
+        <h1>AI Systems That Hold Up in Production</h1>
+        <p class="hero-location">Architecture, delivery, and reliability engineering for applied AI</p>
+        <p class="hero-lede">{{ .Description }}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:{{ .Site.Params.contact_email | default "inquire@gtcode.com" }}">Start a Consulting Conversation</a>
+          <a class="btn btn-secondary" href="/guides/">Review Technical Guides</a>
+        </div>
+      </div>
+      <div class="hero-art hero-art-photo">
+        <div class="hero-art-glow"></div>
+        <img src="/img/gtcode-core.svg" alt="GTCode signal glyph" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </div>
+
+  <section class="section-header hero-follow">
+    <h2 class="section-title">How We Engage</h2>
+    <p class="section-description">Flexible structures depending on your stage, risk profile, and internal team capacity.</p>
+  </section>
+
+  <div class="news-grid mission-grid">
+    <article class="card">
+      <div class="card-meta">
+        <span class="badge badge-category">Assessment Sprint</span>
+      </div>
+      <h3 class="card-title">Architecture and Risk Review</h3>
+      <p class="card-summary">Two-week technical assessment to identify model, data, safety, and deployment bottlenecks.</p>
+      <ul class="card-list">
+        <li>Model and prompt evaluation plan</li>
+        <li>Failure mode register with mitigation options</li>
+        <li>Delivery roadmap with prioritized milestones</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-meta">
+        <span class="badge badge-category">Build Partner</span>
+      </div>
+      <h3 class="card-title">Implementation and Hardening</h3>
+      <p class="card-summary">Hands-on delivery for teams shipping agentic workflows, retrieval systems, and AI product features.</p>
+      <ul class="card-list">
+        <li>Reference architecture and production scaffolding</li>
+        <li>CI/CD, observability, and incident playbooks</li>
+        <li>Security and governance controls for release</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-meta">
+        <span class="badge badge-category">Advisory</span>
+      </div>
+      <h3 class="card-title">Fractional AI Engineering Lead</h3>
+      <p class="card-summary">Senior technical guidance for roadmap, hiring, architecture decisions, and delivery governance.</p>
+      <ul class="card-list">
+        <li>Technical decision support for leadership</li>
+        <li>Vendor and model selection criteria</li>
+        <li>Execution coaching for internal engineering teams</li>
+      </ul>
+    </article>
+  </div>
+
+  <section class="section-header" style="margin-top: 2rem;">
+    <h2 class="section-title">Typical Outcomes</h2>
+    <p class="section-description">Engagements focus on practical throughput: shipping reliable systems faster with fewer regressions.</p>
+  </section>
+
+  <article class="card spotlight-panel">
+    <div class="spotlight-text">
+      <div class="card-meta">
+        <span class="badge badge-category">Delivery Focus</span>
+      </div>
+      <h3>What You Receive</h3>
+      <ul class="card-list">
+        <li>Clear target architecture with implementation sequencing</li>
+        <li>Documented evaluation framework and acceptance gates</li>
+        <li>Operational dashboards and on-call runbooks</li>
+        <li>Security and governance checklist aligned to launch risk</li>
+      </ul>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="mailto:{{ .Site.Params.contact_email | default "inquire@gtcode.com" }}">Discuss Your Project</a>
+        <a class="btn btn-secondary" href="/repos/">View Open Source Work</a>
+        <a class="btn btn-secondary" href="/articles/">Read Technical Writing</a>
+      </div>
+    </div>
+  </article>
+
+  {{ with .Content }}
+    <div class="section-body" style="margin-top:2rem;">
+      {{ . | safeHTML }}
+    </div>
+  {{ end }}
+{{ end }}

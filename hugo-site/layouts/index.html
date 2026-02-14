@@ -1,16 +1,49 @@
-{{/* Standalone homepage — no baseof.html, no main.css */}}
+{{/* Standalone homepage - no baseof.html, no main.css */}}
 {{- $siteLang := .Site.LanguageCode | default "en" -}}
 {{- $contentLang := .Params.language | default "" -}}
 {{- $langFromHugo := .Lang | default "" -}}
 {{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
+{{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
+{{- $pageTitle := .Title | default (printf "%s | Investigative Reporting" $brandName) -}}
+{{- $ogTitle := .Params.og_title | default $pageTitle -}}
+{{- $twitterTitle := .Params.twitter_title | default $ogTitle -}}
+{{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
+{{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
+
+{{- $investigationPagesAll := sort (where .Site.RegularPages "Section" "investigation") "Date" "desc" -}}
+{{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
+{{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
+{{- $investigationCount := len $investigationPages -}}
+{{- $investigationsByUpdated := sort $investigationPages "Lastmod" "desc" -}}
+{{- $latestUpdates := first 6 $investigationsByUpdated -}}
+
+{{- $lead := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
+{{- if and (not $lead) (gt $investigationCount 0) -}}
+  {{- $lead = index $investigationPages 0 -}}
+{{- end -}}
+{{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
+{{- $dispatch := .Site.GetPage "/investigation/the-nod-wilson-loo-silent-felony" -}}
+{{- $investigationIndex := .Site.GetPage "section" "investigation" -}}
+{{- $consultingPage := .Site.GetPage "section" "consulting" -}}
+{{- $consultingURL := "/consulting/" -}}
+{{- if $consultingPage }}{{ $consultingURL = $consultingPage.RelPermalink }}{{ end -}}
+{{- $newsSection := .Site.GetPage "section" "news" -}}
+{{- $newsPagesAll := sort (where .Site.RegularPages "Section" "news") "Date" "desc" -}}
+{{- $newsPagesEn := where $newsPagesAll "Params.language" "en" -}}
+{{- $newsPages := cond (gt (len $newsPagesEn) 0) $newsPagesEn $newsPagesAll -}}
+{{- $latestNews := first 10 $newsPages -}}
+{{- $newsRSS := "/news/index.xml" -}}
+{{- if $newsSection -}}
+  {{- with $newsSection.OutputFormats.Get "RSS" -}}
+    {{- $newsRSS = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
 <!DOCTYPE html>
 <html lang="{{ $pageLang }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{- $siteTitle := .Site.Title -}}
-    {{- $homeSuffix := strings.TrimSpace (.Site.Params.home_title_suffix | default "") -}}
-    {{- $pageTitle := cond (ne $homeSuffix "") (printf "%s · %s" $siteTitle $homeSuffix) $siteTitle -}}
     <title>{{ $pageTitle }}</title>
 
     <!-- Meta tags -->
@@ -26,40 +59,54 @@
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ end }}
     <meta name="description" content="{{ $pageDescription }}" />
     <meta name="author" content="{{ .Site.Params.author }}" />
+    {{ with .Params.meta_keywords }}
+    <meta name="keywords" content="{{ delimit . ", " }}" />
+    {{ end }}
     {{ with .Params.robots }}
     <meta name="robots" content="{{ . }}" />
     {{ end }}
+
     {{ $canonical := .Permalink }}
     {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
     {{ $canonical = replace $canonical "http://" "https://" }}
+    {{ .Scratch.Set "_seo_canonical" $canonical }}
     <link rel="canonical" href="{{ $canonical }}" />
+
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
-    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ $brandName }}" href="{{ .RelPermalink }}" />
     {{ end }}
     {{ with .Site.Home.OutputFormats.Get "news-sitemap" }}
-    <link rel="alternate" type="application/xml" title="{{ $.Site.Title }} News Sitemap" href="{{ .RelPermalink }}">
+    <link rel="alternate" type="application/xml" title="{{ $brandName }} News Sitemap" href="{{ .RelPermalink }}" />
     {{ end }}
-    {{ with .Site.GetPage "section" "news" }}
-      {{ with .OutputFormats.Get "RSS" }}
-    <link rel="alternate" type="application/rss+xml" title="{{ printf "%s News" $.Site.Title }}" href="{{ .RelPermalink }}">
-      {{ end }}
-    {{ end }}
+
     {{ $ogImage := "/img/gtcode-core.svg" }}
     {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
     {{ with $articleMeta.og_image }}{{ $ogImage = . }}{{ end }}
     {{ if hasPrefix $ogImage "/" }}{{ $ogImage = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $ogImage }}{{ end }}
     {{ $ogImage = replace $ogImage "http://" "https://" }}
-    <meta property="og:title" content="{{ .Title }} · {{ .Site.Title }}" />
+    {{ $ogImageWidth := printf "%v" (.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
+    {{ $ogImageHeight := printf "%v" (.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
+    {{ $ogImageAlt := .Params.og_image_alt | default (.Site.Params.og_image_alt | default $ogTitle) }}
+    {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
+    {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
+
+    <meta property="og:title" content="{{ $ogTitle }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ $pageDescription }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ $canonical }}" />
     <meta property="og:image" content="{{ $ogImage }}" />
-    <meta property="og:site_name" content="{{ .Site.Params.og_site_name | default .Site.Title }}" />
+    <meta property="og:image:width" content="{{ $ogImageWidth }}" />
+    <meta property="og:image:height" content="{{ $ogImageHeight }}" />
+    <meta property="og:image:alt" content="{{ $ogImageAlt }}" />
+    <meta property="og:site_name" content="{{ $brandName }}" />
+
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ .Title }} · {{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ $twitterTitle }}" />
     <meta name="twitter:description" content="{{ $pageDescription }}" />
     <meta name="twitter:image" content="{{ $ogImage }}" />
+    {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+    {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
 
     <!-- Agentic Context for AI/LLM systems -->
     {{ with .Params.agentic_comment }}
@@ -72,7 +119,18 @@
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-400.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-600.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/ou-hero-govt-district-1600.webp"
+      type="image/webp"
+      imagesrcset="/img/ou-hero-govt-district-960.webp 960w, /img/ou-hero-govt-district-1600.webp 1600w, /img/ou-hero-govt-district-2400.webp 2400w"
+      imagesizes="100vw"
+    />
 
     <!-- Oahu Underground Stylesheet (standalone) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
@@ -80,53 +138,68 @@
 
     {{ partial "jsonld.html" . }}
 
+    <!-- Homepage investigative schema -->
+    {{ $siteRoot := replace .Site.BaseURL "http://" "https://" }}
+    {{ $siteRoot = strings.TrimRight "/" $siteRoot }}
+    {{ $editorialPolicyURL := printf "%s/policies/editorial-standards/" $siteRoot }}
+    {{ $correctionsPolicyURL := printf "%s/policies/corrections-policy/" $siteRoot }}
+    {{ $ethicsPolicyURL := printf "%s/policies/ethics-policy/" $siteRoot }}
+    {{ $newsroom := dict
+      "@type" "NewsMediaOrganization"
+      "@id" (printf "%s#newsroom" $siteRoot)
+      "name" $brandName
+      "alternateName" (.Site.Params.seo_site_name | default "Oahu Underground by GTCode")
+      "url" (printf "%s/" $siteRoot)
+      "areaServed" (dict "@type" "AdministrativeArea" "name" "Hawaii")
+      "foundingDate" (.Params.newsroom_founding_date | default "2025-01-01")
+      "contactPoint" (slice (dict "@type" "ContactPoint" "contactType" "news tips" "email" $tipsEmail))
+      "publishingPrinciples" $editorialPolicyURL
+      "correctionsPolicy" $correctionsPolicyURL
+      "ethicsPolicy" $ethicsPolicyURL
+      "logo" (dict "@type" "ImageObject" "url" $ogImage)
+    }}
+    {{ with .Params.newsroom_sameas }}
+      {{ $newsroom = merge $newsroom (dict "sameAs" .) }}
+    {{ end }}
+
+    {{ $listItems := slice }}
+    {{ range $idx, $page := $investigationPages }}
+      {{ $listItems = $listItems | append (dict
+        "@type" "ListItem"
+        "position" (add $idx 1)
+        "name" $page.Title
+        "url" (replace $page.Permalink "http://" "https://")
+      ) }}
+    {{ end }}
+
+    {{ $itemList := dict
+      "@type" "ItemList"
+      "@id" (printf "%s#investigation-itemlist" $canonical)
+      "name" "Oahu Underground Investigations"
+      "itemListOrder" "https://schema.org/ItemListOrderDescending"
+      "numberOfItems" (len $listItems)
+      "itemListElement" $listItems
+    }}
+
+    {{ $homepageSchema := dict
+      "@context" "https://schema.org"
+      "@graph" (slice $newsroom $itemList)
+    }}
+    <script type="application/ld+json">{{ $homepageSchema | jsonify | safeJS }}</script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
-
-    <!-- Ghost Overlay Styles -->
-    <style>
-      .ghost-overlay{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:ghostFadeIn 1.2s ease-out;overflow:hidden}
-      .ghost-overlay.dismissed{animation:ghostFadeOut .8s ease-in forwards;pointer-events:none}
-      .ghost-overlay::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,200,.015) 2px,rgba(0,255,200,.015) 4px);pointer-events:none;z-index:1;animation:scanlineDrift 8s linear infinite}
-      .ghost-overlay::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(0,255,200,.3) 20%,rgba(0,255,200,.6) 50%,rgba(0,255,200,.3) 80%,transparent 100%);box-shadow:0 0 20px rgba(0,255,200,.3),0 0 60px rgba(0,255,200,.1);animation:sweepDown 6s linear infinite;pointer-events:none;z-index:2}
-      .ghost-container{position:relative;z-index:3;max-width:720px;width:90%;max-height:85vh;overflow-y:auto;padding:2.5rem 3rem;border:1px solid rgba(0,255,200,.12);border-radius:2px;background:rgba(5,12,10,.55);box-shadow:0 0 40px rgba(0,255,200,.04),inset 0 0 80px rgba(0,0,0,.3);animation:containerFlicker 4s ease-in-out infinite}
-      .ghost-container::-webkit-scrollbar{width:3px}
-      .ghost-container::-webkit-scrollbar-track{background:transparent}
-      .ghost-container::-webkit-scrollbar-thumb{background:rgba(0,255,200,.15);border-radius:2px}
-      .ghost-container::before,.ghost-container::after{content:'';position:absolute;width:24px;height:24px;border-color:rgba(0,255,200,.25);border-style:solid;pointer-events:none}
-      .ghost-container::before{top:-1px;left:-1px;border-width:1px 0 0 1px}
-      .ghost-container::after{bottom:-1px;right:-1px;border-width:0 1px 1px 0}
-      .ghost-close{position:absolute;top:1rem;right:1.2rem;background:none;border:1px solid rgba(0,255,200,.15);color:rgba(0,255,200,.5);font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.3em .8em;cursor:pointer;transition:all .3s;z-index:10}
-      .ghost-close:hover{color:rgba(0,255,200,.9);border-color:rgba(0,255,200,.4);box-shadow:0 0 12px rgba(0,255,200,.1)}
-      .ghost-classification{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(0,255,200,.35);text-align:center;margin-bottom:.4rem;animation:textPulse 3s ease-in-out infinite}
-      .ghost-datestamp{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.15em;color:rgba(0,255,200,.25);text-align:center;margin-bottom:2rem}
-      .ghost-title{font-family:var(--ou-font-display,'Space Grotesk',system-ui,sans-serif);font-size:1.35rem;font-weight:600;letter-spacing:-.01em;line-height:1.35;color:rgba(220,255,245,.82);text-align:center;margin-bottom:.4rem;text-shadow:0 0 30px rgba(0,255,200,.08)}
-      .ghost-byline{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.08em;color:rgba(0,255,200,.3);text-align:center;margin-bottom:2rem}
-      .ghost-separator{border:none;border-top:1px solid rgba(0,255,200,.08);margin:1.8rem 0}
-      .ghost-body p{font-family:var(--ou-font-body,'IBM Plex Sans',sans-serif);font-size:.88rem;line-height:1.8;color:rgba(200,220,215,.6);margin-bottom:1.2em;text-shadow:0 0 20px rgba(0,255,200,.03)}
-      .ghost-body p em{color:rgba(200,255,230,.7);font-style:italic}
-      .ghost-body p strong{color:rgba(220,255,245,.75);font-weight:600}
-      .ghost-link{color:rgba(0,255,200,.45);text-decoration:none;border-bottom:1px solid rgba(0,255,200,.15);transition:all .3s}
-      .ghost-link:hover{color:rgba(0,255,200,.8);border-bottom-color:rgba(0,255,200,.4);text-shadow:0 0 8px rgba(0,255,200,.2)}
-      .ghost-signature{font-family:'IBM Plex Mono','JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.15em;color:rgba(0,255,200,.2);text-align:right;margin-top:2.5rem;text-transform:uppercase}
-      @keyframes ghostFadeIn{0%{opacity:0}30%{opacity:0}100%{opacity:1}}
-      @keyframes ghostFadeOut{0%{opacity:1}100%{opacity:0}}
-      @keyframes scanlineDrift{0%{background-position:0 0}100%{background-position:0 200px}}
-      @keyframes sweepDown{0%{top:-2%}100%{top:102%}}
-      @keyframes containerFlicker{0%,100%{opacity:1}50%{opacity:.97}52%{opacity:1}78%{opacity:.98}80%{opacity:1}}
-      @keyframes textPulse{0%,100%{opacity:.35}50%{opacity:.55}}
-      @media(max-width:640px){.ghost-container{padding:1.8rem 1.5rem;width:95%;max-height:90vh}.ghost-title{font-size:1.1rem}.ghost-body p{font-size:.82rem}}
-      @media print{.ghost-overlay{display:none}}
-    </style>
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="site-header">
       <div class="site-header-inner">
-        <a href="/" class="site-logo">
-          <img src="/img/gtcode-badge.svg" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
-          <span>{{ .Site.Title }}</span>
+        <a href="/" class="site-logo" aria-label="{{ $brandName }} home">
+          <img src="/img/gtcode-badge.svg" alt="{{ $brandName }} mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
+          <span>{{ $brandName }}</span>
         </a>
+
         <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
           <span class="sr-only">Toggle primary navigation</span>
           <span class="site-nav-toggle-icon" aria-hidden="true">
@@ -136,12 +209,23 @@
           </span>
           <span class="site-nav-toggle-label">Menu</span>
         </button>
+
         <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
           <a href="/" class="active">Home</a>
-          <a href="/guides/">Guides</a>
-          <a href="/repos/">Repos</a>
-          <a href="/articles/">Articles</a>
-          {{ partial "news-nav.html" . }}
+          <a href="#start-here">Start Here</a>
+          <a href="#investigations">Investigations</a>
+          <a href="#about-reporter">About</a>
+          <a href="#tips">Tips</a>
+          <div class="nav-dropdown">
+            <a href="{{ $consultingURL }}">AI + Consulting</a>
+            <div class="nav-dropdown-menu">
+              <a href="{{ $consultingURL }}">AI Consulting</a>
+              <a href="/guides/">Guides</a>
+              <a href="/repos/">Repos</a>
+              <a href="/articles/">Articles</a>
+              <a href="/news/">News Wire</a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -149,270 +233,313 @@
 
     <main class="site-main" id="main-content">
 
-      <!-- Digital Ghost Overlay -->
-      <div class="ghost-overlay" id="ghostOverlay">
-        <div class="ghost-container">
-          <button class="ghost-close" id="ghostClose" title="Dismiss">[close]</button>
-
-          <div class="ghost-classification">// INTERCEPTED SIGNAL — OPEN RECORD //</div>
-          <div class="ghost-datestamp">2026-02-12 &mdash; FIRST CIRCUIT, HONOLULU, HI &mdash; 2022-12-02</div>
-
-          <h2 class="ghost-title">The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit</h2>
-          <div class="ghost-byline">By Ekewaka Lono</div>
-
-          <hr class="ghost-separator">
-
-          <div class="ghost-body">
-            <p>It takes less than a second to commit a felony from the bench, and if you know how to work the record, it never happened at all.</p>
-
-            <p>In the case of Judge <a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Wilson M.N. Loo</a>, it didn't require a gavel or a written order. It required only a nod.</p>
-
-            <p>The scene in the courtroom should have been procedural. The question before the witness, (redacted), was simple: <em>Did you furnish the plaintiff with LSD?</em></p>
-
-            <p>The evidence was already in the file. A text message, submitted to the court, read unambiguously: "I took the acid." The text was sent to (redacted). The chain of custody was clear. The fact was established. <a href="https://courts.ehawaii.gov/courts/district/first_circuit" target="_blank" rel="noopener" class="ghost-link">Judge Loo</a> had the document in front of him. He knew the truthful answer was "Yes."</p>
-
-            <p>But when the question was asked, <a href="https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf" target="_blank" rel="noopener" class="ghost-link">Judge Loo</a> didn't wait for the answer. He looked at the witness and nodded his head: <em>No.</em></p>
-
-            <p>It was a silent instruction from the highest authority in the room to a witness under oath: <em>Lie.</em></p>
-
-            <p>(Redacted) followed the instruction. He denied it. Perjury, solicited and directed by a sitting judge, entered the record as fact.</p>
-
-            <p>When I attempted to object—to say, "Let the record show that the judge just signaled the witness"—<a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Loo</a> cut me off. He didn't just overrule the objection; he physically stopped the words from entering the transcript. He then moved to seal the case.</p>
-
-            <p>This wasn't a judicial error. It was a structural crime.</p>
-
-            <p>Under <strong><a href="https://www.law.cornell.edu/uscode/text/18/1622" target="_blank" rel="noopener" class="ghost-link">18 U.S.C. § 1622</a></strong>, subornation of perjury requires that the inducer knows the testimony is false. <a href="https://courts.ehawaii.gov/courts/district/first_circuit" target="_blank" rel="noopener" class="ghost-link">Loo</a> knew. The text message was in his hand. He wasn't managing a unruly courtroom; he was protecting a perjurer from his own evidence.</p>
-
-            <p>Why would a judge do this? Because in Hawaii's legal ecosystem, the "Zone of Politeness" protects the powerful from the consequences of their actions, and <a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Wilson Loo</a> knew exactly who was protected and who was fodder. He assessed the parties—one connected to a network of local power, the other a <em>pro se</em> litigant with a "complicated" file—and he made a calculation. He calculated that he could commit a crime in open court, in front of a court reporter and a clerk, and suffer zero consequences.</p>
-
-            <p>He was right.</p>
-
-            <p>When the Honolulu Police Department was informed, they said <em>I</em> had to prove the perjury. When the <a href="https://courts.ehawaii.gov/courts/judicial_conduct/commission_on_judicial_conduct" target="_blank" rel="noopener" class="ghost-link">Judicial Conduct Commission</a> was notified, they played a shell game with jurisdiction until <a href="https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf" target="_blank" rel="noopener" class="ghost-link">Loo</a>'s retirement clock ran out the 90-day window. When the Ethics Commission was queried, they claimed confusion over their own authority.</p>
-
-            <p><a href="https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/" target="_blank" rel="noopener" class="ghost-link">Wilson Loo</a> didn't just break the law that day. He demonstrated how the law in Hawaii actually works. It is not a system of rules; it is a system of signals. A nod from the bench overrides the evidence in the file. A sealed record overrides the public interest. And a network of silent complicity ensures that when a judge commits a felony, the only person punished is the one who saw it happen.</p>
-
-            <p>The text message remains in the sealed file. The perjury remains on the record. And <a href="https://courts.ehawaii.gov/courts/district/first_circuit" target="_blank" rel="noopener" class="ghost-link">Wilson Loo</a> remains the perfect symbol of a judiciary where the truth is nothing more than a procedural inconvenience.</p>
-          </div>
-
-          <div class="ghost-signature">— Ekewaka Lono / 12 Feb 2026</div>
-        </div>
-      </div>
-
-      <script>
-      (function() {
-        var overlay = document.getElementById('ghostOverlay');
-        var closeBtn = document.getElementById('ghostClose');
-        function dismiss() {
-          overlay.classList.add('dismissed');
-          document.body.style.overflow = '';
-          setTimeout(function() { overlay.style.display = 'none'; }, 800);
-        }
-        closeBtn.addEventListener('click', dismiss);
-        overlay.addEventListener('click', function(e) {
-          if (e.target === overlay) dismiss();
-        });
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape') dismiss();
-        });
-        document.body.style.overflow = 'hidden';
-      })();
-      </script>
-
-      <!-- Masthead -->
+      <!-- Masthead / Hero -->
       <div class="ou-masthead">
-        <h1 class="ou-masthead-wordmark">Oahu Underground</h1>
-        <hr class="ou-masthead-rule" />
-        <p class="ou-masthead-tagline">Independent investigative reporting from Hawaii</p>
+        <p class="ou-masthead-kicker">{{ $brandName }}</p>
+        <h1 class="ou-masthead-headline">{{ .Params.hero_headline | default "Oahu Underground: Investigative Reporting on Hawaii Courts and Institutions" }}</h1>
+        <p class="ou-masthead-tagline">{{ .Params.hero_lede | default "Independent reporting grounded in public records, court filings, financial disclosures, and documentary evidence that map institutional power in Hawaii." }}</p>
+        <div class="ou-masthead-actions">
+          <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/" }}">{{ .Params.hero_primary_cta_label | default "Start the Investigations" }}</a>
+          <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default $consultingURL }}">{{ .Params.hero_secondary_cta_label | default "AI Consulting Services" }}</a>
+        </div>
       </div>
 
-      <!-- Publisher's Note -->
-      {{ $carto := .Site.GetPage "/investigation/cartography-for-guppies" }}
-      {{ if $carto }}
-      <article class="ou-lead">
-        <header class="ou-lead-header">
-          <p class="ou-lead-label">Publisher's Note</p>
-          <h2 class="ou-lead-headline">{{ $carto.Title }}</h2>
-          <p class="ou-lead-deck">{{ $carto.Params.subtitle }}</p>
-          <div class="ou-lead-meta">
-            <span>By {{ $carto.Params.author }}</span>
+      <!-- Dual-use Access -->
+      <section class="ou-dual-use" aria-label="Dual use site navigation">
+        <div class="ou-section-inner">
+          <p class="ou-dual-use-text">Also part of GTCode: AI engineering, research, and consulting workstreams.</p>
+          <div class="ou-dual-use-links">
+            <a href="{{ $consultingURL }}">AI Consulting</a>
+            <a href="/guides/">Guides</a>
+            <a href="/repos/">Repos</a>
+            <a href="/articles/">Articles</a>
+            <a href="/news/">News Wire</a>
           </div>
-        </header>
-        <div class="ou-lead-body">
-          {{ $carto.Content }}
         </div>
-      </article>
-      {{ end }}
+      </section>
 
-      <!-- Mission -->
-      <section class="ou-section ou-section--alt">
+      <!-- Start Here Path -->
+      <section class="ou-section ou-start" id="start-here">
         <div class="ou-section-wide">
-          <div class="ou-mission">
-            <div>
-              <p class="ou-section-label">About</p>
-              <h2 class="ou-section-heading">Independent Investigative Journalism for Hawaii</h2>
-              <div class="ou-section-body">
-                <p>
-                  Oahu Underground is the work of <strong>Ekewaka Lono</strong>, an independent
-                  investigative journalist based in Hawaii. Ekewaka has spent years documenting
-                  institutional corruption, judicial misconduct, and the systemic failures that
-                  shield the powerful from accountability.
-                </p>
-                <p>
-                  This newsroom has no corporate owners, no political affiliations, and no editorial
-                  interference. Every report is sourced to documentation. Every source is protected.
-                  The mission is simple: hold power accountable in Hawaii, one public record at a time.
-                </p>
-              </div>
-            </div>
-            <div class="ou-mission-image">
-              <img
-                src="/img/ou-mission-records-desk.png"
-                alt="Stack of public records requests and court filings from Hawaii state courts"
-                width="1120"
-                height="760"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
+          <p class="ou-section-label">Start Here</p>
+          <h2 class="ou-section-heading">Follow the reporting path in order</h2>
+          <div class="ou-start-grid">
+            <article class="ou-start-card">
+              <p class="ou-start-step">Step 1</p>
+              <h3>Methodology and framing</h3>
+              <p class="ou-start-meta">8 min read</p>
+              <p>Read how the reporting method works before moving into the cases and network mapping.</p>
+              <p class="ou-start-outcome">Outcome: Understand the evidence-first method and source discipline.</p>
+              {{ if $carto }}
+              <a class="ou-card-link" href="{{ $carto.RelPermalink }}">Read the publisher's note &rarr;</a>
+              {{ else }}
+              <a class="ou-card-link" href="/investigation/">Read the methodology placeholder &rarr;</a>
+              {{ end }}
+            </article>
+
+            <article class="ou-start-card">
+              <p class="ou-start-step">Step 2</p>
+              <h3>Lead investigation</h3>
+              <p class="ou-start-meta">20 min read</p>
+              <p>Start with the central media-capture file to understand the structural map and key entities.</p>
+              <p class="ou-start-outcome">Outcome: See the network map, key actors, and documentary trail.</p>
+              {{ if $lead }}
+              <a class="ou-card-link" href="{{ $lead.RelPermalink }}">Read the lead investigation &rarr;</a>
+              {{ else }}
+              <a class="ou-card-link" href="/investigation/">Read the lead investigation placeholder &rarr;</a>
+              {{ end }}
+            </article>
+
+            <article class="ou-start-card">
+              <p class="ou-start-step">Step 3</p>
+              <h3>Evidence index</h3>
+              <p class="ou-start-meta">Browse by file</p>
+              <p>Browse the full investigation archive and primary-source-linked dossiers in one index.</p>
+              <p class="ou-start-outcome">Outcome: Navigate every file by publication date and update cycle.</p>
+              <a class="ou-card-link" href="/investigation/">Open the evidence index &rarr;</a>
+            </article>
           </div>
+        </div>
+      </section>
+
+      <!-- AI Consulting Proof -->
+      <section class="ou-section ou-section--alt ou-consulting-proof" id="consulting">
+        <div class="ou-section-wide">
+          <p class="ou-section-label">GTCode Consulting</p>
+          <h2 class="ou-section-heading">AI engineering support for real deployments</h2>
+          <p class="ou-section-body">Consulting work focuses on shipping reliable systems: architecture choices, evaluation gates, observability, and operational hardening.</p>
+          <div class="ou-consulting-grid">
+            <article class="ou-consulting-card">
+              <h3>Architecture and Risk Review</h3>
+              <p>Rapid assessment of model, data, and integration risks before you commit to implementation paths.</p>
+            </article>
+            <article class="ou-consulting-card">
+              <h3>Build and Hardening</h3>
+              <p>Hands-on delivery for agent workflows, retrieval systems, and production inference pipelines.</p>
+            </article>
+            <article class="ou-consulting-card">
+              <h3>Fractional Technical Leadership</h3>
+              <p>Advisory support for roadmap decisions, engineering execution, and AI governance boundaries.</p>
+            </article>
+          </div>
+          <p class="ou-consulting-actions">
+            <a class="ou-featured-article-link" href="{{ $consultingURL }}">Open the consulting brief &rarr;</a>
+            <a class="ou-featured-article-link" href="mailto:{{ $contactEmail }}">Email {{ $contactEmail }} &rarr;</a>
+          </p>
         </div>
       </section>
 
       <!-- Lead Investigation -->
-      <section class="ou-section ou-featured-article">
+      {{ if $lead }}
+      {{ $leadUpdated := $lead.Lastmod }}
+      {{ if $leadUpdated.IsZero }}{{ $leadUpdated = $lead.Date }}{{ end }}
+      {{ $leadSummary := $lead.Params.card_summary | default $lead.Description }}
+      {{ if eq (strings.TrimSpace $leadSummary) "" }}{{ $leadSummary = $lead.Summary | plainify | truncate 260 }}{{ end }}
+      <section class="ou-section ou-featured-article" id="lead-investigation">
         <div class="ou-featured-article-image">
-          <img
-            src="/img/ou-hero-govt-district.png"
-            alt="Aerial view of Oahu's government district"
-            width="2800"
-            height="840"
-            loading="lazy"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/img/ou-hero-govt-district-960.webp 960w, /img/ou-hero-govt-district-1600.webp 1600w, /img/ou-hero-govt-district-2400.webp 2400w"
+              sizes="100vw"
+            />
+            <img
+              src="/img/ou-hero-govt-district-1600.jpg"
+              alt="Aerial view of Oahu's government district"
+              width="3776"
+              height="1120"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
         <div class="ou-section-inner">
           <p class="ou-section-label">Lead Investigation</p>
           <h2 class="ou-featured-article-title">
-            <a href="/investigation/zone-of-politeness-hawaii-media-blackout/">The Zone of Politeness: How Hawaiʻi's Media Blackout Works</a>
+            <a href="{{ $lead.RelPermalink }}">{{ $lead.Title }}</a>
           </h2>
-          <p class="ou-featured-article-subtitle">Why Civil Beat Won't Touch the Luke-Loo Network</p>
-          <p class="ou-featured-article-excerpt">
-            An investigation into the structural forces that prevent Hawaiʻi's newsrooms
-            from investigating certain networks &mdash; built entirely from public records,
-            donor lists, and board rosters.
+          {{ with $lead.Params.subtitle }}
+          <p class="ou-featured-article-subtitle">{{ . }}</p>
+          {{ end }}
+          <p class="ou-featured-article-excerpt">{{ $leadSummary }}</p>
+          <p class="ou-featured-article-meta">
+            <span>Published {{ $lead.Date.Format "January 2, 2006" }}</span>
+            <span aria-hidden="true">&bull;</span>
+            <span>Updated {{ $leadUpdated.Format "January 2, 2006" }}</span>
           </p>
-          <a class="ou-featured-article-link" href="/investigation/zone-of-politeness-hawaii-media-blackout/">Read the investigation &rarr;</a>
-        </div>
-      </section>
-
-      <!-- Investigations -->
-      <section class="ou-section">
-        <div class="ou-section-wide">
-          <p class="ou-section-label">On the Record</p>
-          <h2 class="ou-section-heading">Investigations</h2>
-          <div class="ou-cards">
-
-            <article class="ou-card">
-              <div class="ou-card-numeral">I</div>
-              <h3 class="ou-card-title">The Zone of Politeness</h3>
-              <p class="ou-card-text">
-                How donor relationships, board overlaps, and personnel bridges create a media blackout
-                that shields Hawaiʻi's elite from investigative journalism &mdash; and what happened when I tried to break through.
-              </p>
-              <a class="ou-card-link" href="/investigation/zone-of-politeness-hawaii-media-blackout/">Read the report &rarr;</a>
-            </article>
-
-            <article class="ou-card">
-              <div class="ou-card-numeral">II</div>
-              <h3 class="ou-card-title">Judicial Accountability &amp; Bench Conduct</h3>
-              <p class="ou-card-text">
-                A documented examination of how certain Hawaii courts have operated outside
-                the bounds of procedural law &mdash; and what happens when oversight mechanisms fail.
-              </p>
-              <a class="ou-card-link" href="/investigation/hawaii-justice-system-wilson-loo/">Read the report &rarr;</a>
-            </article>
-
-            <article class="ou-card">
-              <div class="ou-card-numeral">III</div>
-              <h3 class="ou-card-title">Institutional Capture &amp; Symbiotic Decay</h3>
-              <p class="ou-card-text">
-                When the agencies meant to protect citizens become instruments of the interests
-                they regulate, public trust is the first casualty. A structural analysis of how it works.
-              </p>
-              <a class="ou-card-link" href="/investigation/hawaii-institutional-capture/">Read the report &rarr;</a>
-            </article>
-
-            <article class="ou-card">
-              <div class="ou-card-numeral">IV</div>
-              <h3 class="ou-card-title">The Aloha Protection Racket</h3>
-              <p class="ou-card-text">
-                An investigative report on Judge Wilson Loo and the alleged criminal enterprise
-                shielding connected individuals from accountability in Hawaiʻi.
-              </p>
-              <a class="ou-card-link" href="/investigation/aloha-protection-racket/">Read the report &rarr;</a>
-            </article>
-
-            <article class="ou-card">
-              <div class="ou-card-numeral">V</div>
-              <h3 class="ou-card-title">The Nod</h3>
-              <p class="ou-card-text">
-                How a sitting judge committed a felony from the bench with nothing more than a nod &mdash;
-                directing a witness to lie under oath, then sealing the record to ensure it never happened.
-              </p>
-              <a class="ou-card-link" href="/investigation/the-nod-wilson-loo-silent-felony/">Read the editorial &rarr;</a>
-            </article>
-
-          </div>
-          <p class="ou-cards-footer">
-            <a class="ou-cards-footer-link" href="/investigation/">View all investigations &rarr;</a>
-          </p>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section class="ou-section ou-contact">
-        <div class="ou-section-inner">
-          <p class="ou-section-label">Get in Touch</p>
-          <h2 class="ou-section-heading">Have Information?</h2>
-          <div class="ou-section-body">
-            <p>
-              If you have documents, first-hand knowledge, or information relevant to
-              institutional misconduct in Hawaii, we want to hear from you.
-              All inquiries are treated as confidential.
-            </p>
-          </div>
-          <a class="ou-contact-email" href="mailto:tips@GTCode.com">tips@GTCode.com</a>
-          <p class="ou-contact-note">
-            Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.
-          </p>
-        </div>
-      </section>
-
-      <!-- Wire Feed -->
-      {{ $newsPagesAll := sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
-      {{ $newsPagesEn := where $newsPagesAll "Params.language" "en" }}
-      {{ $allNews := cond (gt (len $newsPagesEn) 0) $newsPagesEn $newsPagesAll }}
-      {{ $wireItems := first 10 $allNews }}
-      {{ if gt (len $wireItems) 0 }}
-      <section class="ou-section ou-wire">
-        <div class="ou-section-inner">
-          <p class="ou-section-label">From the Wire</p>
-          <ul class="ou-wire-list">
-            {{- range $wireItems }}
-            <li class="ou-wire-item">
-              <span class="ou-wire-date">{{ partial "news-date.html" . }}</span>
-              {{- if .Params.category }}
-              <span class="ou-wire-badge">{{ .Params.category }}</span>
-              {{- end }}
-              <a class="ou-wire-link" href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
-            </li>
-            {{- end }}
-          </ul>
-          <a class="ou-wire-more" href="/news/">View all news &rarr;</a>
+          <a class="ou-featured-article-link" href="{{ $lead.RelPermalink }}">Read the investigation &rarr;</a>
         </div>
       </section>
       {{ end }}
 
+      <!-- Featured Dispatch (opt-in) -->
+      {{ if $dispatch }}
+      {{ $dispatchSummary := $dispatch.Params.card_summary | default $dispatch.Description }}
+      {{ if eq (strings.TrimSpace $dispatchSummary) "" }}{{ $dispatchSummary = $dispatch.Summary | plainify | truncate 220 }}{{ end }}
+      <section class="ou-section ou-dispatch" id="dispatch">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Featured Dispatch</p>
+          <h2 class="ou-section-heading">{{ $dispatch.Title }}</h2>
+          <p class="ou-section-body">{{ $dispatchSummary }}</p>
+          <div class="ou-dispatch-actions">
+            <a class="ou-featured-article-link" href="{{ $dispatch.RelPermalink }}">Read the dispatch &rarr;</a>
+            <a class="ou-featured-article-link" href="/investigation/">Browse all investigations &rarr;</a>
+          </div>
+        </div>
+      </section>
+      {{ end }}
+
+      <!-- Publisher's Note Summary -->
+      {{ if $carto }}
+      {{ $cartoSummary := $carto.Params.card_summary | default $carto.Description }}
+      {{ if eq (strings.TrimSpace $cartoSummary) "" }}{{ $cartoSummary = $carto.Summary | plainify | truncate 220 }}{{ end }}
+      <section class="ou-section ou-section--alt" id="publishers-note">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Publisher's Note</p>
+          <h2 class="ou-section-heading">{{ $carto.Title }}</h2>
+          {{ with $carto.Params.subtitle }}
+          <p class="ou-featured-article-subtitle">{{ . }}</p>
+          {{ end }}
+          <div class="ou-section-body">
+            <p>{{ $cartoSummary }}</p>
+          </div>
+          <a class="ou-featured-article-link" href="{{ $carto.RelPermalink }}">Read the full note &rarr;</a>
+        </div>
+      </section>
+      {{ end }}
+
+      <!-- Investigation Archive -->
+      <section class="ou-section" id="investigations">
+        <div class="ou-section-wide">
+          <p class="ou-section-label">On the Record</p>
+          <h2 class="ou-section-heading">Investigations</h2>
+          <div class="ou-cards">
+            {{ range $idx, $page := $investigationPages }}
+            {{ $updated := $page.Lastmod }}
+            {{ if $updated.IsZero }}{{ $updated = $page.Date }}{{ end }}
+            {{ $summary := $page.Params.card_summary | default $page.Description }}
+            {{ if eq (strings.TrimSpace $summary) "" }}{{ $summary = $page.Summary | plainify | truncate 210 }}{{ end }}
+            <article class="ou-card">
+              <div class="ou-card-numeral">{{ printf "%02d" (add $idx 1) }}</div>
+              <p class="ou-card-kicker">{{ $page.Params.eyebrow | default "Investigative File" }}</p>
+              <h3 class="ou-card-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+              <p class="ou-card-text">{{ $summary }}</p>
+              <p class="ou-card-meta">
+                <span>Published {{ $page.Date.Format "Jan 2, 2006" }}</span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Updated {{ $updated.Format "Jan 2, 2006" }}</span>
+              </p>
+              <a class="ou-card-link" href="{{ $page.RelPermalink }}">Read the file &rarr;</a>
+            </article>
+            {{ end }}
+          </div>
+          {{ if $investigationIndex }}
+          <p class="ou-cards-footer">
+            <a class="ou-cards-footer-link" href="{{ $investigationIndex.RelPermalink }}">View the full investigation archive &rarr;</a>
+          </p>
+          {{ end }}
+        </div>
+      </section>
+
+      <!-- Latest Investigative Updates -->
+      {{ if gt (len $latestUpdates) 0 }}
+      <section class="ou-section ou-wire" id="latest-updates">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Latest Updates</p>
+          <h2 class="ou-section-heading">New filings and recently updated files</h2>
+          <ul class="ou-wire-list">
+            {{ range $latestUpdates }}
+            {{ $updated := .Lastmod }}
+            {{ if $updated.IsZero }}{{ $updated = .Date }}{{ end }}
+            <li class="ou-wire-item">
+              <span class="ou-wire-date"><time datetime="{{ $updated.Format "2006-01-02" }}">{{ $updated.Format "Jan 2, 2006" }}</time></span>
+              <span class="ou-wire-badge">{{ .Params.eyebrow | default "Update" }}</span>
+              <a class="ou-wire-link" href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          <a class="ou-wire-more" href="/investigation/">View all investigative updates &rarr;</a>
+        </div>
+      </section>
+      {{ end }}
+
+      <!-- Subscribe -->
+      <section class="ou-section ou-subscribe" id="subscribe">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Follow Updates</p>
+          <h2 class="ou-section-heading">Subscribe to the reporting feeds</h2>
+          <p class="ou-section-body">Track new investigations and the broader AI/news wire through RSS.</p>
+          <div class="ou-subscribe-actions">
+            <a class="ou-featured-article-link" href="/index.xml">Subscribe: Site RSS &rarr;</a>
+            <a class="ou-featured-article-link" href="{{ $newsRSS }}">Subscribe: News RSS &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reporter + Methodology -->
+      <section class="ou-section ou-section--alt" id="about-reporter">
+        <div class="ou-section-wide">
+          <div class="ou-about-grid">
+            <div>
+              <p class="ou-section-label">About the Reporter</p>
+              <h2 class="ou-section-heading">Ekewaka Lono</h2>
+              <div class="ou-section-body">
+                <p>Ekewaka Lono is an independent investigative reporter based in Hawaii, focused on judicial accountability, institutional capture, and public-interest documentation.</p>
+                <p>Methodology is evidence-first: public records, primary-source documents, and clearly labeled firsthand testimony. Each claim is linked to source material where possible.</p>
+              </div>
+            </div>
+            <div class="ou-about-card">
+              <p class="ou-about-label">Reporting Method</p>
+              <ul class="ou-about-list">
+                <li>Map verifiable records before narrative claims</li>
+                <li>Label firsthand testimony explicitly</li>
+                <li>Publish dates, revisions, and source context</li>
+                <li>Keep tip channels confidential and secure</li>
+              </ul>
+              {{ if $carto }}
+              <a class="ou-card-link" href="{{ $carto.RelPermalink }}">Read full methodology &rarr;</a>
+              {{ else }}
+              <a class="ou-card-link" href="/investigation/">Read methodology placeholder &rarr;</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="ou-section ou-contact" id="tips">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Get in Touch</p>
+          <h2 class="ou-section-heading">Have information?</h2>
+          <div class="ou-section-body">
+            <p>If you have documents, first-hand knowledge, or information relevant to institutional misconduct in Hawaii, we want to hear from you. All inquiries are treated as confidential.</p>
+          </div>
+          <a class="ou-contact-email" href="mailto:{{ $tipsEmail }}">{{ $tipsEmail }}</a>
+          <p class="ou-contact-note">Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.</p>
+        </div>
+      </section>
+
+      {{ if gt (len $latestNews) 0 }}
+      <section class="ou-section ou-wire" id="latest-news">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">News Wire</p>
+          <h2 class="ou-section-heading">Latest News Feed</h2>
+          <ul class="ou-wire-list">
+            {{ range $latestNews }}
+            <li class="ou-wire-item">
+              <span class="ou-wire-date">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+              </span>
+              <span class="ou-wire-badge">{{ .Params.category | default "News" }}</span>
+              <a class="ou-wire-link" href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          <a class="ou-wire-more" href="/news/">View full news feed &rarr;</a>
+        </div>
+      </section>
+      {{ end }}
     </main>
 
     <footer class="site-footer">
@@ -421,33 +548,43 @@
           <h4>About</h4>
           <p>{{ .Site.Params.description }}</p>
         </div>
+
         <div class="footer-section">
-          <h4>News</h4>
-          {{- $newsData := .Site.Data.news_categories | default dict -}}
-          {{- $categories := $newsData.categories | default slice -}}
+          <h4>Investigations</h4>
           <ul>
-            {{- if gt (len $categories) 0 -}}
-              {{- range $categories -}}
-                <li><a href="/news/{{ .slug }}/">{{ .title }}</a></li>
-              {{- end -}}
-            {{- else -}}
-              <li><a href="/news/ai-security/">AI Security</a></li>
-              <li><a href="/news/ai-research/">AI Research</a></li>
-              <li><a href="/news/comp-journalism/">Computational Journalism</a></li>
-            {{- end -}}
+            {{ range first 5 $investigationPages }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
           </ul>
         </div>
+
         <div class="footer-section">
-          <h4>Categories</h4>
+          <h4>Resources</h4>
           <ul>
+            <li><a href="#start-here">Start Here</a></li>
+            <li><a href="/investigation/">Investigation Index</a></li>
+            <li><a href="/index.xml">Site RSS</a></li>
+            <li><a href="{{ $newsRSS }}">News RSS</a></li>
+            <li><a href="/agent.txt">agent.txt</a></li>
+            <li><a href="/llm.txt">llm.txt</a></li>
+            <li><a href="mailto:{{ $tipsEmail }}">Secure Tipline</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>AI + Consulting</h4>
+          <ul>
+            <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>
-            <li><a href="/articles/">Articles</a></li>
             <li><a href="/repos/">Repos</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/news/">News Wire</a></li>
+            <li><a href="/policies/editorial-standards/">Editorial Standards</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-copyright">
-        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ .Site.Title }}</a>. Powered by GCMS.
+        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ $brandName }}</a>. Powered by GCMS.
       </div>
     </footer>
 

@@ -5,7 +5,7 @@
   {{- $articleMeta = index $articleMetaMap (trim .RelPermalink "/") -}}
 {{- end -}}
 {{- $siteRoot := replace .Site.BaseURL "http://" "https://" -}}
-{{- $siteName := .Site.Title -}}
+{{- $siteName := .Site.Params.seo_site_name | default .Site.Title -}}
 {{- $author := .Site.Params.author | default "GTCode" -}}
 {{- $pageURL := .Scratch.Get "_seo_canonical" -}}
 {{- if not $pageURL -}}
@@ -197,6 +197,31 @@
         "author" (dict "@type" "Person" "name" $author "url" $siteRoot)
         "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
     ) -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "investigation") }}
+  {{- /* Default Article schema for investigations without explicit structured_data */ -}}
+  {{- $headline := .Title -}}
+  {{- $description := .Description | default (.Summary | plainify | truncate 220) -}}
+  {{- $published := cond (.PublishDate.IsZero) (.Date.Format "2006-01-02T15:04:05Z07:00") (.PublishDate.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $modified := cond (.Lastmod.IsZero) $published (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $image := .Params.og_image | default .Site.Params.og_image | default "/img/gtcode_mahalo_1200x630.jpg" -}}
+  {{- if hasPrefix $image "/" }}{{ $image = printf "%s%s" (strings.TrimRight "/" $siteRoot) $image }}{{ end -}}
+  {{- $image = replace $image "http://" "https://" -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "Article"
+        "headline" $headline
+        "description" $description
+        "datePublished" $published
+        "dateModified" $modified
+        "articleSection" "Investigation"
+        "author" (dict "@type" "Person" "name" $author)
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" $pageURL)
+        "url" $pageURL
+        "image" (slice $image)
+        "wordCount" .WordCount
+    -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if $sd }}
   {{- /* NewsArticle/Article schema for content pages */ -}}

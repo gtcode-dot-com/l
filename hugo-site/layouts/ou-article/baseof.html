@@ -9,7 +9,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{- $siteTitle := .Site.Title -}}
-    <title>{{ .Title }} · {{ $siteTitle }}</title>
+    {{- $seoSiteName := .Site.Params.seo_site_name | default $siteTitle -}}
+    <title>{{ .Title }} · {{ $seoSiteName }}</title>
 
     <!-- Meta tags -->
     {{ partial "fetch-article-meta.html" (dict "context" .) }}
@@ -19,7 +20,7 @@
       {{ $articleMeta = index $articleMetaMap (trim .RelPermalink "/") }}
     {{ end }}
     {{ $pageDescription := .Site.Params.description }}
-    {{ if .Description }}{{ $pageDescription = .Description }}{{ end }}
+    {{ if .Description }}{{ $pageDescription = .Description }}{{ else if .Summary }}{{ $pageDescription = .Summary | plainify | truncate 170 }}{{ end }}
     {{ with .Params.meta_description }}{{ $pageDescription = . }}{{ end }}
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ end }}
     <meta name="description" content="{{ $pageDescription }}" />
@@ -30,26 +31,38 @@
     {{ $canonical := .Permalink }}
     {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
     {{ $canonical = replace $canonical "http://" "https://" }}
+    {{ .Scratch.Set "_seo_canonical" $canonical }}
     <link rel="canonical" href="{{ $canonical }}" />
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
-    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ $seoSiteName }}" href="{{ .RelPermalink }}">
     {{ end }}
     {{ $ogImage := "/img/gtcode-core.svg" }}
     {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
     {{ with $articleMeta.og_image }}{{ $ogImage = . }}{{ end }}
+    {{ if and (eq $ogImage "/img/gtcode-core.svg") .Site.Params.og_image }}{{ $ogImage = .Site.Params.og_image }}{{ end }}
     {{ if hasPrefix $ogImage "/" }}{{ $ogImage = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $ogImage }}{{ end }}
     {{ $ogImage = replace $ogImage "http://" "https://" }}
-    <meta property="og:title" content="{{ .Title }} · {{ .Site.Title }}" />
+    {{ $ogImageWidth := printf "%v" (.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
+    {{ $ogImageHeight := printf "%v" (.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
+    {{ $ogImageAlt := .Params.og_image_alt | default (.Site.Params.og_image_alt | default .Title) }}
+    {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
+    {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
+    <meta property="og:title" content="{{ .Title }} · {{ $seoSiteName }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ $pageDescription }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ $canonical }}" />
     <meta property="og:image" content="{{ $ogImage }}" />
-    <meta property="og:site_name" content="{{ .Site.Params.og_site_name | default .Site.Title }}" />
+    <meta property="og:image:width" content="{{ $ogImageWidth }}" />
+    <meta property="og:image:height" content="{{ $ogImageHeight }}" />
+    <meta property="og:image:alt" content="{{ $ogImageAlt }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.og_site_name | default $seoSiteName }}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ .Title }} · {{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ .Title }} · {{ $seoSiteName }}" />
     <meta name="twitter:description" content="{{ $pageDescription }}" />
     <meta name="twitter:image" content="{{ $ogImage }}" />
+    {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+    {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
 
     <!-- CSS Reset -->
     {{ $resetCSS := resources.Get "css/reset.css" | minify | fingerprint }}
@@ -57,6 +70,9 @@
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-400.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-600.woff2" type="font/woff2" crossorigin="anonymous" />
 
     <!-- Oahu Underground Stylesheet (standalone dark theme) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
@@ -73,7 +89,7 @@
       <div class="site-header-inner">
         <a href="/" class="site-logo">
           <img src="/img/gtcode-badge.svg" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
-          <span>{{ .Site.Title }}</span>
+          <span>{{ .Site.Params.site_brand_short | default .Site.Title }}</span>
         </a>
         <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
           <span class="sr-only">Toggle primary navigation</span>
@@ -86,6 +102,7 @@
         </button>
         <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
           <a href="/">Home</a>
+          <a href="/consulting/" {{ if eq .Section "consulting" }}class="active"{{ end }}>AI Consulting</a>
           <a href="/guides/">Guides</a>
           <a href="/repos/">Repos</a>
           <a href="/articles/" class="active">Articles</a>
@@ -124,14 +141,17 @@
         <div class="footer-section">
           <h4>Categories</h4>
           <ul>
+            <li><a href="/consulting/">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/articles/">Articles</a></li>
             <li><a href="/repos/">Repos</a></li>
+            <li><a href="/agent.txt">agent.txt</a></li>
+            <li><a href="/llm.txt">llm.txt</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-copyright">
-        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ .Site.Title }}</a>. Powered by GCMS.
+        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ .Site.Params.site_brand_short | default .Site.Title }}</a>. Powered by GCMS.
       </div>
     </footer>
 

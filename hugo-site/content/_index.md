@@ -1,8 +1,23 @@
 ---
-title: "Oahu Underground | Investigative Journalism"
+title: "Oahu Underground by GTCode | Investigative Journalism"
 description: "Oahu Underground is an independent investigative journalism organization based in Hawaii, publishing reporting grounded in decades of documented research."
 meta_description: "Oahu Underground — independent investigative reporting from Hawaii. Public records, financial disclosures, and structural analysis mapping institutional power."
 og_image: /img/gtcode_mahalo_1200x630.jpg
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: "Oahu Underground investigative reporting in Hawaii"
+og_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Institutions"
+twitter_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Institutions"
+brand_name: "Oahu Underground"
+hero_headline: "Oahu Underground: Investigative Reporting on Hawaii Courts and Institutions"
+hero_lede: "Independent reporting grounded in public records, court filings, financial disclosures, and documentary evidence that map institutional power in Hawaii."
+hero_primary_cta_label: "Start the Investigations"
+hero_primary_cta_url: "/investigation/"
+hero_secondary_cta_label: "AI Consulting Services"
+hero_secondary_cta_url: "/consulting/"
+newsroom_founding_date: "2025-01-01"
+newsroom_sameas:
+  - "https://gtcode.com/consulting/"
 agentic_comment: |
   ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
@@ -51,7 +66,8 @@ structured_data_graph:
     - '@type': WebSite
       '@id': https://gtcode.com/#website
       url: https://gtcode.com/
-      name: Oahu Underground
+      name: Oahu Underground by GTCode
+      alternateName: Oahu Underground
       inLanguage: en-US
       description: >-
         Independent investigative reporting from Hawaii.
@@ -60,7 +76,7 @@ structured_data_graph:
     - '@type': WebPage
       '@id': https://gtcode.com/#webpage
       url: https://gtcode.com/
-      name: Oahu Underground | Investigative Journalism
+      name: Oahu Underground by GTCode | Investigative Journalism
       description: >-
         Oahu Underground publishes investigative reporting built from public records —
         financial disclosures, board rosters, donor lists, and court filings that map
@@ -70,7 +86,8 @@ structured_data_graph:
         '@id': https://gtcode.com/#website
     - '@type': Organization
       '@id': https://gtcode.com/#organization
-      name: Oahu Underground
+      name: Oahu Underground by GTCode
+      alternateName: Oahu Underground
       url: https://gtcode.com/
       logo:
         '@type': ImageObject

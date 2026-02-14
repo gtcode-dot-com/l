@@ -22,7 +22,7 @@
   {{- $loc := printf "%s%s" $base .RelPermalink -}}
   {{- $loc = replace $loc "http://" "https://" -}}
   {{- $title := .Title | htmlUnescape -}}
-  {{- $pubName := $.Site.Title | default "GTCode" -}}
+  {{- $pubName := $.Site.Params.news_publication_name | default $.Site.Title | default "GTCode" -}}
   {{- $language := .Lang | default "en" -}}
   <url>
     <loc>{{ $loc }}</loc>
