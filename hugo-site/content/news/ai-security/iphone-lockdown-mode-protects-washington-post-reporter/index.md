@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T22:15:14.986436+00:00'
-exported_at: '2026-02-12T22:15:26.922532+00:00'
+date: '2026-02-14T20:06:34.501779+00:00'
+exported_at: '2026-02-14T20:06:35.732660+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/iphone-lockdown-mode-protects-washington-post-reporter.html
@@ -35,11 +35,11 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: iPhone Lockdown Mode Protects Washington Post Reporter
-updated_at: '2026-02-12T22:15:14.986436+00:00'
+updated_at: '2026-02-14T20:06:34.501779+00:00'
 url_hash: 2e4e33b87d50e0ac97887bef32d721cc28dbfc6a
 ---
 
-## iPhone Lockdown Mode Protects Washington Post Reporter
+## iPhone Lockdown Mode Protects *Washington Post* Reporter
 
 404Media is
 [reporting](https://www.404media.co/fbi-couldnt-get-into-wapo-reporters-iphone-because-it-had-lockdown-mode-enabled/)

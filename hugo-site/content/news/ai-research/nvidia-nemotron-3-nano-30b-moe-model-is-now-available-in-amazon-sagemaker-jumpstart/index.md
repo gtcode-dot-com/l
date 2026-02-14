@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T19:31:24.791044+00:00'
-exported_at: '2026-02-12T19:31:28.276443+00:00'
+date: '2026-02-14T20:06:51.637823+00:00'
+exported_at: '2026-02-14T20:06:55.073579+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-30b-is-now-available-in-amazon-sagemaker-jumpstart
@@ -32,7 +32,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: NVIDIA Nemotron 3 Nano 30B MoE model is now available in Amazon SageMaker JumpStart
-updated_at: '2026-02-12T19:31:24.791044+00:00'
+updated_at: '2026-02-14T20:06:51.637823+00:00'
 url_hash: 7d130c782568c913fdbafd4a23c627a4c3394e6e
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T02:15:30.661752+00:00'
-exported_at: '2026-02-13T02:15:32.979178+00:00'
+date: '2026-02-14T20:06:50.899337+00:00'
+exported_at: '2026-02-14T20:06:55.076542+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/build-long-running-mcp-servers-on-amazon-bedrock-agentcore-with-strands-agents-integration
@@ -34,7 +34,7 @@ structured_data:
     name: gtcode.com
 title: Build long-running MCP servers on Amazon Bedrock AgentCore with Strands Agents
   integration
-updated_at: '2026-02-13T02:15:30.661752+00:00'
+updated_at: '2026-02-14T20:06:50.899337+00:00'
 url_hash: 746a238c13e72857adeb447268553213f1d0ee6e
 ---
 

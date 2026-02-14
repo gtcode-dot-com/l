@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T19:34:10.848943+00:00'
-exported_at: '2026-02-12T19:34:14.917516+00:00'
+date: '2026-02-14T20:06:53.793206+00:00'
+exported_at: '2026-02-14T20:06:55.056502+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-linqalpha-assesses-investment-theses-using-devils-advocate-on-amazon-bedrock
@@ -31,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: How LinqAlpha assesses investment theses using Devil’s Advocate on Amazon Bedrock
-updated_at: '2026-02-12T19:34:10.848943+00:00'
+updated_at: '2026-02-14T20:06:53.793206+00:00'
 url_hash: 0d5fcaceba21cc628cbf22851176c002e9093b4c
 ---
 

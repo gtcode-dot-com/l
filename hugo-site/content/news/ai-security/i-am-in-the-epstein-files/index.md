@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T20:15:17.627453+00:00'
-exported_at: '2026-02-12T20:15:19.932535+00:00'
+date: '2026-02-14T20:06:33.924780+00:00'
+exported_at: '2026-02-14T20:06:35.739480+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/i-am-in-the-epstein-files.html
@@ -31,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: I Am in the Epstein Files
-updated_at: '2026-02-12T20:15:17.627453+00:00'
+updated_at: '2026-02-14T20:06:33.924780+00:00'
 url_hash: dd35b721a926615e23786612cfa9163016b1ac9a
 ---
 

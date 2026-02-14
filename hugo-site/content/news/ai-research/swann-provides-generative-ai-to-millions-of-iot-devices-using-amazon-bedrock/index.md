@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T19:31:25.656124+00:00'
-exported_at: '2026-02-12T19:31:28.266921+00:00'
+date: '2026-02-14T20:06:53.112981+00:00'
+exported_at: '2026-02-14T20:06:55.065555+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/swann-provides-generative-ai-to-millions-of-iot-devices-using-amazon-bedrock
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Swann provides Generative AI to millions of IoT Devices using Amazon Bedrock
-updated_at: '2026-02-12T19:31:25.656124+00:00'
+updated_at: '2026-02-14T20:06:53.112981+00:00'
 url_hash: d79decb98e5fe606f491ebdfae8b750af3410bf3
 ---
 
