@@ -94,7 +94,7 @@ McKinley’s reported conduct toward me included physical assault, stalking/hara
 
 1. McKinley was sworn and testified.
 2. I asked under oath whether he **furnished LSD** to me.
-3. A text-message exhibit in the court file contained my message to McKinley: **“I took the acid.”** I sent that message. The legally relevant fact established by the message is that **McKinley furnished LSD to me** (I took possession from him). The text is evidence of his conduct, not mine.
+3. A text-message exhibit in the court file contained my message to McKinley: **“I took the acid.”** I sent that message. The exhibit is materially inconsistent with a categorical denial of any LSD transaction. I do not ask the Department to resolve the ultimate meaning of the message; I ask that the inconsistency be evaluated against the sealed record.
 4. Immediately before the witness’s denial, I observed the presiding judge make a visible “no” signal toward the witness (a head gesture).
 5. The witness denied furnishing LSD.
 6. I attempted to place the judge’s signal on the record by stating: **“Let the record show that the judge just—”**
@@ -189,4 +189,3 @@ I declare under penalty of perjury that the foregoing is true and correct to the
 1. **ODC Complaint Packet** filed [DATE] (cover letter + three complaints + appendices)
 2. **June 26, 2025 Doris M. Ching letter** (Judicial Conduct Commission)
 3. One-page **Exhibit Index / Chronology** (for rapid retrieval)
-

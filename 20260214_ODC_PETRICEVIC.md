@@ -13,7 +13,7 @@ North Shore, Oʻahu, Hawaiʻi
 ZeroTrust@NSHkr.com | 808-232-7551
 
 **Related Court Matter:** First Circuit Court, State of Hawaiʻi
-Case No. **[CASE NUMBER]**
+Case No.: **Sealed / Unknown (record sealed; case number not available)**
 **Nature of Proceeding:** Petition for Injunction Against Harassment
 **Hearing Date:** December 2, 2022 (in-person; audio-only recording)
 **Presiding Judge:** Wilson M.N. Loo
@@ -114,6 +114,8 @@ The central evidence is in the sealed record. ODC has authority to obtain it. I 
 3. **Sealing motion or oral request**, the court's oral ruling, and the written sealing order.
 4. **Minute entries and clerk notations** for the December 2, 2022 hearing, including any notations reflecting the out-of-turn statement.
 5. **Docket sheet** reflecting the procedural history through sealing.
+
+Because the record is sealed and I no longer have copies, I cannot provide the case number; ODC can identify the file by date, judge, parties, and proceeding type.
 
 ### Materials I Can Provide Upon Request
 
