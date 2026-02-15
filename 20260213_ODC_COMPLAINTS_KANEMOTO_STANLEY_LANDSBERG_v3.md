@@ -88,13 +88,13 @@ The earlier public defender who dismissed my first report of the murder threat (
 
 I appeared **pro se** in an in-person First Circuit injunction hearing on **December 2, 2022** in Honolulu. The proceeding was recorded as **audio-only** and later **sealed**.
 
-McKinley’s reported conduct toward me included physical assault, stalking/harassment, and furnishing of LSD (a Schedule I controlled substance) at Stonefish Grill in Haleʻiwa (CCTV location known). I filed reports with HPD and made contacts with HPD Narcotics/Vice and the DEA. HPD declined to investigate. I pursued the injunction proceeding because ordinary channels had not addressed the conduct.
+McKinley’s reported conduct toward me included physical assault, a separate incident in which he accelerated his stick-shift vehicle at high speed toward me as I walked away on the opposite side of the road (I did not see it coming until I turned my head, saw his face, and he veered off at the last moment, narrowly missing me), stalking/harassment, and furnishing of LSD (a Schedule I controlled substance) at Stonefish Grill in Haleʻiwa (CCTV location known). I filed reports with HPD and made contacts with HPD Narcotics/Vice and the DEA. HPD declined to investigate. I pursued the injunction proceeding because ordinary channels had not addressed the conduct.
 
 ### B. What I personally observed (the core event sequence)
 
 1. McKinley was sworn and testified.
 2. I asked under oath whether he **furnished LSD** to me.
-3. A text-message exhibit in the court file contained my message to McKinley: **“I took the acid.”** I sent that message. The exhibit is materially inconsistent with a categorical denial of any LSD transaction. I do not ask the Department to resolve the ultimate meaning of the message; I ask that the inconsistency be evaluated against the sealed record.
+3. A text-message exhibit in the court file contained my message to McKinley: **“I took the acid.”** I sent that message. **Reasonable minds may differ on the exhibit's ultimate import, but the inconsistency between the filed exhibit and the sworn denial is material.** The text supports my account that McKinley furnished LSD to me (i.e., I took possession from him) and is evidence of his conduct, not mine.
 4. Immediately before the witness’s denial, I observed the presiding judge make a visible “no” signal toward the witness (a head gesture).
 5. The witness denied furnishing LSD.
 6. I attempted to place the judge’s signal on the record by stating: **“Let the record show that the judge just—”**
@@ -109,13 +109,17 @@ If the sealed audio, exhibits, and minute entries corroborate the above, the Dep
 * **18 U.S.C. § 1503** (if the interruption prevented creation of a record of misconduct), and
 * **18 U.S.C. § 242** (if due process rights were impaired under color of law through directed false testimony, suppression of objection, and sealing of an unrebutted stigmatizing allegation).
 
+### D. Systemic disclosure implications (Brady / Giglio)
+
+If the sealed audio corroborates that Judge Loo signaled a witness to deny a material fact under oath, that conduct is a prior act bearing on judicial truthfulness that may trigger disclosure obligations under **Brady v. Maryland** and **Giglio v. United States** in other cases Judge Loo adjudicated. This creates institutional risk beyond my individual case: convictions or judgments from those matters could be vulnerable to collateral attack if the record reflects directed false testimony in a sealed proceeding. I raise this not as a demand or separate notification, but as a reason the Department should prioritize a narrow review of the sealed record to assess systemic exposure. A focused review would allow the Department to determine whether any remedial disclosure steps are warranted.
+
 ---
 
 ## V. Factual Statement — 2015–2017 prior criminal matter and witness tampering
 
 ### A. The earlier proceeding (minimal necessary background)
 
-In *State of Hawaiʻi v. Lowndes* (First Circuit; approx. 2015–2017), I was charged with **Violent Interference with a Tax Official**. The charge was initially dismissed due to a charging defect (mens rea omission, to my recollection) and later refiled. The matter proceeded to trial and ended in a **hung jury**.
+In *State of Hawaiʻi v. Lowndes* (First Circuit; approx. 2015–2017), I was charged with **Violent Interference with a Tax Official** (**“VIWATO”**). The case number is not available to me; the record has been sealed or expunged and I no longer possess the case number. ODC and the Department can identify the matter by date (approximately 2015–2017), court (First Circuit), presiding judge, parties, and charge (HRS § 231-86, Violent Interference with a Tax Official). The charge was initially dismissed due to a charging defect (mens rea omission, to my recollection) and later refiled. The matter proceeded to trial and ended in a **hung jury**. The July 2017 trial took place at 777 Punchbowl St, Honolulu, HI 96813 (Ka`ahumanu Hale). To my knowledge, the trial received no media coverage; my counsel at the time also expressed surprise at the absence of coverage.
 
 ### B. Murder threat reported during prosecution
 
@@ -158,6 +162,10 @@ This update is submitted because the central evidence is in **sealed records** a
 * ODC filing proof and the complete ODC packet.
 * HPD report numbers and a concise exhibit index for rapid retrieval.
 
+### C. Documentation loss due to homelessness
+
+Due to prolonged homelessness (2017–present, with brief interruptions), I lost certain records, including the case number for the VIWATO matter, correspondence, and some supporting documentation. I am prepared to assist the Department in locating records through institutional channels (court clerk, Attorney General's office) and will cooperate fully in reconstructing the evidentiary record.
+
 ---
 
 ## VIII. Requested action (narrow, actionable)
@@ -168,6 +176,7 @@ I respectfully request that the Department:
 2. **Preserve and review** the sealed December 2, 2022 record (audio + file + exhibits + minute entries).
 3. Determine whether the record supports inquiry under **18 U.S.C. §§ 1622, 1503, and 242**.
 4. Evaluate whether the Kahala Whole Foods threat incident supports inquiry under **18 U.S.C. § 1512** (witness tampering), including interviewing me and obtaining any corroborating evidence available.
+5. Evaluate whether the seal on the December 2, 2022 proceeding should be challenged under the crime-fraud exception. If the sealed record contains evidence of suborned perjury, obstruction, or deprivation of rights under color of law, the seal may function as an instrument of the alleged criminal conduct rather than protection of a legitimate interest. I request only that the Department assess this possibility based on the sealed record and applicable standards. I am not seeking a determination here, only an evaluation of whether unsealing should be pursued.
 
 I am available for interview and will cooperate fully.
 
