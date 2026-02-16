@@ -126,9 +126,9 @@
     <link
       rel="preload"
       as="image"
-      href="/img/ou-hero-govt-district-1600.webp"
+      href="/img/ou-hero-zero-commission-1600.webp"
       type="image/webp"
-      imagesrcset="/img/ou-hero-govt-district-960.webp 960w, /img/ou-hero-govt-district-1600.webp 1600w, /img/ou-hero-govt-district-2400.webp 2400w"
+      imagesrcset="/img/ou-hero-zero-commission-960.webp 960w, /img/ou-hero-zero-commission-1600.webp 1600w, /img/ou-hero-zero-commission-2400.webp 2400w"
       imagesizes="100vw"
     />
 
@@ -233,16 +233,38 @@
 
     <main class="site-main" id="main-content">
 
-      <!-- Masthead / Hero -->
-      <div class="ou-masthead">
-        <p class="ou-masthead-kicker">{{ $brandName }}</p>
-        <h1 class="ou-masthead-headline">{{ .Params.hero_headline | default "Oahu Underground: Investigative Reporting on Hawaii Courts and Institutions" }}</h1>
-        <p class="ou-masthead-tagline">{{ .Params.hero_lede | default "Independent reporting grounded in public records, court filings, financial disclosures, and documentary evidence that map institutional power in Hawaii." }}</p>
-        <div class="ou-masthead-actions">
-          <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/" }}">{{ .Params.hero_primary_cta_label | default "Start the Investigations" }}</a>
-          <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default $consultingURL }}">{{ .Params.hero_secondary_cta_label | default "AI Consulting Services" }}</a>
+      <!-- Hero Banner -->
+      <section class="ou-hero">
+        <div class="ou-hero-image">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/img/ou-hero-zero-commission-960.webp 960w, /img/ou-hero-zero-commission-1600.webp 1600w, /img/ou-hero-zero-commission-2400.webp 2400w"
+              sizes="100vw"
+            />
+            <img
+              src="/img/ou-hero-zero-commission-1600.jpg"
+              alt="{{ .Params.hero_image_alt | default "The Zero Commission — investigative series on Hawaii's judicial oversight" }}"
+              width="3584"
+              height="1184"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
-      </div>
+        <div class="ou-hero-overlay"></div>
+        <div class="ou-hero-content">
+          <p class="ou-hero-kicker">{{ .Params.hero_kicker | default "The Closed Loop" }}</p>
+          <h1 class="ou-hero-headline">{{ .Params.hero_headline | default "The Zero Commission" }}</h1>
+          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work" }}</p>
+          <div class="ou-hero-actions">
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-zero-commission/" }}">{{ .Params.hero_primary_cta_label | default "Read the Investigation" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/investigation/" }}">{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}</a>
+          </div>
+          <p class="ou-hero-brand">{{ $brandName }}</p>
+        </div>
+      </section>
 
       <!-- Dual-use Access -->
       <section class="ou-dual-use" aria-label="Dual use site navigation">
