@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-01-26T18:15:13.319122+00:00'
-exported_at: '2026-01-26T18:15:15.579629+00:00'
+date: '2026-02-16T05:29:39.845550+00:00'
+exported_at: '2026-02-16T05:29:43.898263+00:00'
 feed: https://googleprojectzero.blogspot.com/feeds/posts/default
 language: en
 source_url: https://projectzero.google/2026/26/windows-administrator-protection.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Bypassing Windows Administrator Protection
-updated_at: '2026-01-26T18:15:13.319122+00:00'
+updated_at: '2026-02-16T05:29:39.845550+00:00'
 url_hash: 13117f0ddfba1b155373dc9bf6527c6a65239387
 ---
 

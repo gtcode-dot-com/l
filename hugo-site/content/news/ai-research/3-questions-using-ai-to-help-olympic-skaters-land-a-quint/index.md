@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T22:15:42.135763+00:00'
-exported_at: '2026-02-12T22:15:46.112276+00:00'
+date: '2026-02-16T05:29:59.920075+00:00'
+exported_at: '2026-02-16T05:30:01.123132+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/3-questions-using-ai-help-olympic-skaters-land-quint-0210
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: '3 Questions: Using AI to help Olympic skaters land a quint'
-updated_at: '2026-02-12T22:15:42.135763+00:00'
+updated_at: '2026-02-16T05:29:59.920075+00:00'
 url_hash: 63c560e46e80564ba29e3848bbfe42894cc58a7b
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-12-18T00:03:24.696422+00:00'
-exported_at: '2025-12-18T00:03:28.087988+00:00'
+date: '2026-02-16T05:29:42.533133+00:00'
+exported_at: '2026-02-16T05:29:43.773966+00:00'
 feed: https://googleprojectzero.blogspot.com/feeds/posts/default
 language: en
 source_url: https://projectzero.google/2025/12/welcome.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Welcome to the new Project Zero Blog
-updated_at: '2025-12-18T00:03:24.696422+00:00'
+updated_at: '2026-02-16T05:29:42.533133+00:00'
 url_hash: 1e557faa4709e78b1f4ab039d22a0ee3e4b5b26a
 ---
 

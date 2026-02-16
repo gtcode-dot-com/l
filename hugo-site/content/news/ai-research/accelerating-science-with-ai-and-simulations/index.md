@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T20:15:36.430966+00:00'
-exported_at: '2026-02-12T20:15:39.077636+00:00'
+date: '2026-02-16T05:29:59.064642+00:00'
+exported_at: '2026-02-16T05:30:01.133505+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/accelerating-science-ai-and-simulations-rafael-gomez-bombarelli-0212
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Accelerating science with AI and simulations
-updated_at: '2026-02-12T20:15:36.430966+00:00'
+updated_at: '2026-02-16T05:29:59.064642+00:00'
 url_hash: abe0a48339abf371fbf73fd83bf6c3a3a24b35c1
 ---
 

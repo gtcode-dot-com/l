@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T04:15:29.618232+00:00'
-exported_at: '2026-02-13T04:15:31.872559+00:00'
+date: '2026-02-16T05:29:58.724648+00:00'
+exported_at: '2026-02-16T05:30:01.136301+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/new-j-pal-research-policy-initiative-to-test-scale-ai-innovations-fight-poverty-0212
@@ -30,7 +30,7 @@ structured_data:
     name: gtcode.com
 title: New J-PAL research and policy initiative to test and scale AI innovations to
   fight poverty
-updated_at: '2026-02-13T04:15:29.618232+00:00'
+updated_at: '2026-02-16T05:29:58.724648+00:00'
 url_hash: 3cd722329315841002ce5a3969585c7a71b2095b
 ---
 

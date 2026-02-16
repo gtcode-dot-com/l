@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T22:15:41.103247+00:00'
-exported_at: '2026-02-12T22:15:46.116326+00:00'
+date: '2026-02-16T05:29:59.300140+00:00'
+exported_at: '2026-02-16T05:30:01.131111+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/using-synthetic-biology-ai-address-global-antimicrobial-resistance-0211
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Using synthetic biology and AI to address global antimicrobial resistance threat
-updated_at: '2026-02-12T22:15:41.103247+00:00'
+updated_at: '2026-02-16T05:29:59.300140+00:00'
 url_hash: 67efaf9d3aafa7efdc6167b0e808d8cb4911679f
 ---
 
