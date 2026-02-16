@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-04T18:15:36.244952+00:00'
-exported_at: '2026-02-04T18:15:38.985755+00:00'
+date: '2026-02-16T04:38:26.273894+00:00'
+exported_at: '2026-02-16T04:38:28.361579+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/ai-agents-intelligent-document-processing
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: 'Nemotron Labs: How AI Agents Are Turning Documents Into Real-Time Business
   Intelligence'
-updated_at: '2026-02-04T18:15:36.244952+00:00'
+updated_at: '2026-02-16T04:38:26.273894+00:00'
 url_hash: 7246cff72a40fd54707d7fb32a28f99db66384a3
 ---
 
@@ -92,6 +92,9 @@ The platform’s AI-powered dispute optimization, powered by Nemotron Parse, app
 
 By pairing document-centric intelligence with decision automation, merchants can recapture a significant portion of revenue lost to illegitimate chargebacks while reducing manual review effort.​
 
+[Read about how Justt’s chargeback management tool autonomously processes financial data](https://developer.nvidia.com/case-studies/justt-scaled-chargeback-document-extraction-using-nvidia-nemotron-parse)
+to handle disputes for merchants.
+
 **Docusign: Scaling Agreement Intelligence**
 
 Docusign is the global leader in Intelligent Agreement Management, handling millions of transactions every day for more than 1.8 million customers and over 1 billion users.
@@ -108,7 +111,7 @@ Edison Scientific’s Kosmos AI Scientist helps researchers navigate complex sci
 
 Edison needed a way to rapidly and accurately extract structured information from large volumes of PDFs, including equations, tables and figures that traditional information parsing methods often mishandle.​
 
-By integrating the NVIDIA Nemotron Parse model into its PaperQA2 pipeline, Edison can decompose research papers, index key concepts and ground responses in specific passages, improving both throughput and answer quality for scientists.​​ This approach turns a sprawling research corpus into an interactive, queryable knowledge engine that accelerates hypothesis generation and literature review.​
+By integrating the NVIDIA Nemotron Parse model into its PaperQA pipeline, Edison can decompose research papers, index key concepts and ground responses in specific passages, improving both throughput and answer quality for scientists.​​ This approach turns a sprawling research corpus into an interactive, queryable knowledge engine that accelerates hypothesis generation and literature review.​
 
 The high efficiency of Nemotron Parse enables cost-efficient serving at scale, allowing Edison’s team to unlock the whole multimodal pipeline.
 

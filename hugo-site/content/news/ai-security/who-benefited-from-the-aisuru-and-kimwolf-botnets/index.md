@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-01-09T00:15:15.215208+00:00'
-exported_at: '2026-01-09T00:15:17.498381+00:00'
+date: '2026-02-16T04:38:01.886011+00:00'
+exported_at: '2026-02-16T04:38:09.416013+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Who Benefited from the Aisuru and Kimwolf Botnets?
-updated_at: '2026-01-09T00:15:15.215208+00:00'
+updated_at: '2026-02-16T04:38:01.886011+00:00'
 url_hash: 048fe18b40e5b2ff2fff225b095760808dd682a8
 ---
 
@@ -177,6 +177,10 @@ for another Plainproxies employee,
 , who is listed as co-founder of ByteConnect. Ms. Levi did not respond to requests for comment. Her resume says she previously worked for two major proxy providers: Netnut Proxy Network, and Bright Data.
 
 Synthient likewise said Plainproxies ignored their outreach, noting that the Byteconnect SDK continues to remain active on devices compromised by Kimwolf.
+
+![](https://krebsonsecurity.com/wp-content/uploads/2026/01/julialevi-plainproxies.png)
+
+A post from the LinkedIn page of Plainproxies Chief Revenue Officer Julia Levi, explaining how the residential proxy business works.
 
 ## MASKIFY
 

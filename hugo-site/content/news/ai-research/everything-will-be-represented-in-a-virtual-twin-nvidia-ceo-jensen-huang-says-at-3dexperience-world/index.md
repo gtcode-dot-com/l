@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-04T00:15:32.058489+00:00'
-exported_at: '2026-02-04T00:15:35.277084+00:00'
+date: '2026-02-16T04:38:26.740062+00:00'
+exported_at: '2026-02-16T04:38:28.359088+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/huang-3dexperience-2026
@@ -19,8 +19,8 @@ structured_data:
     Daloz announced a partnership to build a shared industrial AI architecture, merging
     virtual twins with physics-based AI to redefine the future of design, engineering
     and manufacturing.
-  headline: Everything Will Be Represented in a Virtual Twin, Jensen Huang Says at
-    3DEXPERIENCE World
+  headline: Everything Will Be Represented in a Virtual Twin, NVIDIA CEO Jensen Huang
+    Says at 3DEXPERIENCE World
   inLanguage: en
   keywords: []
   main_image: ''
@@ -28,9 +28,9 @@ structured_data:
   publisher:
     logo: /favicon.ico
     name: gtcode.com
-title: Everything Will Be Represented in a Virtual Twin, Jensen Huang Says at 3DEXPERIENCE
-  World
-updated_at: '2026-02-04T00:15:32.058489+00:00'
+title: Everything Will Be Represented in a Virtual Twin, NVIDIA CEO Jensen Huang Says
+  at 3DEXPERIENCE World
+updated_at: '2026-02-16T04:38:26.740062+00:00'
 url_hash: f8ad8a3f52e6c740d4fd6a953e1c7bef7d0778fa
 ---
 
@@ -50,9 +50,7 @@ continues a collaboration spanning more than a quarter-century between NVIDIA an
 
 “This is the largest collaboration our two companies have ever had in over a quarter century,” Huang said. “We’re going to fuse these technologies so engineers can work at a scale that’s 100 times, 1,000 times — and eventually a million times greater than before.”
 
-The new partnership
-[brings NVIDIA accelerated computing and AI libraries together with Dassault Systèmes’ Virtual Twin platforms](https://www.youtube.com/watch?v=9taAfTbQpIA)
-to move more engineering work into real-time digital workflows, powered by AI companions that help teams explore, validate, prototype and iterate faster.
+The new partnership brings NVIDIA accelerated computing and AI libraries together with Dassault Systèmes’ Virtual Twin platforms to move more engineering work into real-time digital workflows, powered by AI companions that help teams explore, validate, prototype and iterate faster.
 
 Huang framed the shift as a reinvention of the computing stack: moving from hand-specified, structured digital designs to systems that can generate, simulate and optimize in software — at industrial scale.
 
@@ -67,6 +65,8 @@ In Daloz’s framing, the value moves upstream: virtual twins become the place w
 Dassault Systèmes, whose 3DEXPERIENCE platform serves more than 45 million users and 400,000 customers globally, has long been a leader in virtual twin technology — digital replicas that let engineers simulate products and processes before building them physically.
 
 The collaboration brings together accelerated computing, AI and digital twin technologies so engineers can design geometry as well as behavior — and explore radically larger design spaces earlier in development.
+
+VIDEO
 
 Together, the companies outlined how this shared architecture will show up across science, engineering and manufacturing workflows:
 
@@ -119,3 +119,7 @@ Looking ahead, Daloz framed the partnership as about more than performance gains
 The fireside conversation between Huang and Daloz was
 [broadcast live](https://www.youtube.com/watch?v=OtevzCuhEzQ)
 from 3DEXPERIENCE World.
+
+**See what’s next with our partnership at GTC San Jose from March 16-19 by catching Florence Hu-Aubigny’s**
+[**session on virtual twins**](https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s81501/)
+**and exploring demos for each of our collaborations in booth 1841 in the Industrial AI and Robotics pavilion.**

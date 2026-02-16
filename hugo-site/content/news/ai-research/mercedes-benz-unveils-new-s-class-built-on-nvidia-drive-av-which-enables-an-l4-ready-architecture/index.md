@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-30T04:15:31.648367+00:00'
-exported_at: '2026-01-30T04:15:34.084681+00:00'
+date: '2026-02-16T04:38:27.158829+00:00'
+exported_at: '2026-02-16T04:38:28.342781+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/mercedes-benz-l4-s-class-drive-av-platform
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: Mercedes-Benz Unveils New S-Class Built on NVIDIA DRIVE AV, Which Enables an
   L4-Ready Architecture
-updated_at: '2026-01-30T04:15:31.648367+00:00'
+updated_at: '2026-02-16T04:38:27.158829+00:00'
 url_hash: f271741a354c8f72501a5acbf9b83a9ae60d33b6
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T22:15:15.300627+00:00'
-exported_at: '2026-02-12T22:15:26.861314+00:00'
+date: '2026-02-16T04:38:04.297915+00:00'
+exported_at: '2026-02-16T04:38:09.384785+00:00'
 feed: https://googleprojectzero.blogspot.com/feeds/posts/default
 language: en
 source_url: https://projectzero.google/2026/02/windows-administrator-protection.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Bypassing Administrator Protection by Abusing UI Access
-updated_at: '2026-02-12T22:15:15.300627+00:00'
+updated_at: '2026-02-16T04:38:04.297915+00:00'
 url_hash: 4773f8ec219a6eda6eeca7b1006eb9196f3c1d75
 ---
 

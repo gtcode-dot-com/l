@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T20:15:36.106289+00:00'
-exported_at: '2026-02-12T20:15:39.081727+00:00'
+date: '2026-02-16T04:38:25.960837+00:00'
+exported_at: '2026-02-16T04:38:28.364562+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/geforce-now-thursday-feb-2026-games-list
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: GeForce NOW Celebrates Six Years of Streaming With 24 Games in February
-updated_at: '2026-02-12T20:15:36.106289+00:00'
+updated_at: '2026-02-16T04:38:25.960837+00:00'
 url_hash: 9fe1a5440dc73a58d879969919380a4180c2d07e
 ---
 

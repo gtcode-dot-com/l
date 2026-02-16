@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-01-03T00:15:14.962076+00:00'
-exported_at: '2026-01-03T00:15:17.778993+00:00'
+date: '2026-02-16T04:38:03.263533+00:00'
+exported_at: '2026-02-16T04:38:09.412538+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: The Kimwolf Botnet is Stalking Your Local Network
-updated_at: '2026-01-03T00:15:14.962076+00:00'
+updated_at: '2026-02-16T04:38:03.263533+00:00'
 url_hash: b041d1ab907dda61b8bcd285710458421c9d9304
 ---
 
@@ -230,7 +230,7 @@ Among the recipients of Synthient’s notification was the proxy giant
 **Oxylabs**
 . Brundage shared an email he received from Oxylabs’ security team on December 31, which acknowledged Oxylabs had started rolling out security modifications to address the vulnerabilities described in Synthient’s report.
 
-Reached for comment, Oxylabs confirmed they “have implemented changes that now eliminate the ability to bypass the blocklist and forward requests to private network addresses using a controlled domain,” the company said in a written statement. But it said there is no evidence that Kimwolf or other other attackers exploited its network.
+Reached for comment, Oxylabs confirmed they “have implemented changes that now eliminate the ability to bypass the blocklist and forward requests to private network addresses using a controlled domain.” But it said there is no evidence that Kimwolf or other other attackers exploited its network.
 
 “In parallel, we reviewed the domains identified in the reported exploitation activity and did not observe traffic associated with them,” the Oxylabs statement continued. “Based on this review, there is no indication that our residential network was impacted by these activities.”
 
@@ -274,7 +274,7 @@ XLab said Kimwolf has infected at least 1.8 million devices, and has shown it is
 
 XLab said measuring Kimwolf’s size also is difficult because infected devices are distributed across multiple global time zones. “Affected by time zone differences and usage habits (e.g., turning off devices at night, not using TV boxes during holidays, etc.), these devices are not online simultaneously, further increasing the difficulty of comprehensive observation through a single time window,” the blog post observed.
 
-XLab noted that the Kimwolf author “shows an almost ‘obsessive’ fixation on Yours Truly, apparently leaving “easter eggs” related to my name in multiple places through the botnet’s code and communications:
+XLab noted that the Kimwolf author shows an almost ‘obsessive’ fixation” on Yours Truly, apparently leaving “easter eggs” related to my name in multiple places through the botnet’s code and communications:
 
 ![](https://krebsonsecurity.com/wp-content/uploads/2025/12/xlab-kimwolfk.png)
 

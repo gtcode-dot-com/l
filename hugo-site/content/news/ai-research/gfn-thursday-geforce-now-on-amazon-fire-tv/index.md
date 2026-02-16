@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T20:15:35.829522+00:00'
-exported_at: '2026-02-12T20:15:39.084579+00:00'
+date: '2026-02-16T04:38:25.546353+00:00'
+exported_at: '2026-02-16T04:38:28.367442+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/geforce-now-thursday-amazon-fire-tv-app
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: GeForce NOW Turns Screens Into a Gaming Machine
-updated_at: '2026-02-12T20:15:35.829522+00:00'
+updated_at: '2026-02-16T04:38:25.546353+00:00'
 url_hash: e4ae936e43127a9f1c8bceb3a43ced8c64b9ea71
 ---
 
