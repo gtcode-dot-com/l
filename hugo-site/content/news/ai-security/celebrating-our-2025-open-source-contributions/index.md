@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-01-30T12:15:15.629812+00:00'
-exported_at: '2026-01-30T12:15:18.383805+00:00'
+date: '2026-02-16T05:52:04.410424+00:00'
+exported_at: '2026-02-16T05:52:07.642884+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2026/01/30/celebrating-our-2025-open-source-contributions
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Celebrating our 2025 open-source contributions
-updated_at: '2026-01-30T12:15:15.629812+00:00'
+updated_at: '2026-02-16T05:52:04.410424+00:00'
 url_hash: 35f94f1b20004c14d33833ed7ffceca17d89e63e
 ---
 

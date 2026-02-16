@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T22:15:43.078838+00:00'
-exported_at: '2026-02-12T22:15:46.109997+00:00'
+date: '2026-02-16T05:52:24.365314+00:00'
+exported_at: '2026-02-16T05:52:27.642407+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/study-platforms-rank-latest-llms-can-be-unreliable-0209
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Study: Platforms that rank the latest LLMs can be unreliable'
-updated_at: '2026-02-12T22:15:43.078838+00:00'
+updated_at: '2026-02-16T05:52:24.365314+00:00'
 url_hash: 4884855d45250cc8ff42603526e3da06c62417a4
 ---
 

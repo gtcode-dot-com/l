@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-12-31T12:15:13.398100+00:00'
-exported_at: '2025-12-31T12:15:15.625303+00:00'
+date: '2026-02-16T05:52:06.317007+00:00'
+exported_at: '2026-02-16T05:52:07.628634+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2025/12/31/detect-gos-silent-arithmetic-bugs-with-go-panikint
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Detect Go’s silent arithmetic bugs with go-panikint
-updated_at: '2025-12-31T12:15:13.398100+00:00'
+updated_at: '2026-02-16T05:52:06.317007+00:00'
 url_hash: 06b61f634de1465c9af025789154230e58272743
 ---
 

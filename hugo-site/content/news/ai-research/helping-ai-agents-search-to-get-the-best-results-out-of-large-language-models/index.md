@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T00:15:33.157040+00:00'
-exported_at: '2026-02-13T00:15:37.386816+00:00'
+date: '2026-02-16T05:52:25.066755+00:00'
+exported_at: '2026-02-16T05:52:27.637418+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/helping-ai-agents-search-to-get-best-results-from-llms-0205
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Helping AI agents search to get the best results out of large language models
-updated_at: '2026-02-13T00:15:33.157040+00:00'
+updated_at: '2026-02-16T05:52:25.066755+00:00'
 url_hash: a0fb3502cdd1307cb5f32154a10d1d1b602d52e4
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-12T12:03:30.277683+00:00'
-exported_at: '2025-12-12T12:03:32.490850+00:00'
+date: '2026-02-16T05:52:26.199867+00:00'
+exported_at: '2026-02-16T05:52:27.627273+00:00'
 feed: http://bair.berkeley.edu/blog/feed.xml
 language: en
 source_url: http://bair.berkeley.edu/blog/2024/11/12/virutal-persona-llm
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Virtual Personas for Language Models via an Anthology of Backstories
-updated_at: '2025-12-12T12:03:30.277683+00:00'
+updated_at: '2026-02-16T05:52:26.199867+00:00'
 url_hash: b8ee4e657d1105a6e870db68294e13d1a43fbb54
 ---
 

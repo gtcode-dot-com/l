@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-12T22:15:43.827429+00:00'
-exported_at: '2026-02-12T22:15:46.107081+00:00'
+date: '2026-02-16T05:52:24.692743+00:00'
+exported_at: '2026-02-16T05:52:27.640177+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/science-mit-president-talks-about-importance-americas-research-enterprise-gbhs-boston-public
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: “This is science!” – MIT president talks about the importance of America’s
   research enterprise on GBH’s Boston Public Radio
-updated_at: '2026-02-12T22:15:43.827429+00:00'
+updated_at: '2026-02-16T05:52:24.692743+00:00'
 url_hash: 30253fc95578c9f5df6197335fadd1f4c4be879a
 ---
 

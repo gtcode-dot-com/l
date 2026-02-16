@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-01-29T12:15:13.905251+00:00'
-exported_at: '2026-01-29T12:15:16.949167+00:00'
+date: '2026-02-16T05:52:05.246352+00:00'
+exported_at: '2026-02-16T05:52:07.640071+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2026/01/29/building-cryptographic-agility-into-sigstore
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Building cryptographic agility into Sigstore
-updated_at: '2026-01-29T12:15:13.905251+00:00'
+updated_at: '2026-02-16T05:52:05.246352+00:00'
 url_hash: 5320677fd1cf086351eb4ddc58b49e0dbee533b4
 ---
 

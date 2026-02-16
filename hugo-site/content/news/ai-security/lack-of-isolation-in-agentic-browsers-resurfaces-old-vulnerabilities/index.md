@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-01-13T12:15:14.494570+00:00'
-exported_at: '2026-01-13T12:15:16.788973+00:00'
+date: '2026-02-16T05:52:05.722416+00:00'
+exported_at: '2026-02-16T05:52:07.636273+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2026/01/13/lack-of-isolation-in-agentic-browsers-resurfaces-old-vulnerabilities
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Lack of isolation in agentic browsers resurfaces old vulnerabilities
-updated_at: '2026-01-13T12:15:14.494570+00:00'
+updated_at: '2026-02-16T05:52:05.722416+00:00'
 url_hash: daecd4b171c17622e59618d48683ba05e48bfae1
 ---
 
@@ -348,7 +348,6 @@ Figure 12: Content of GitHub gist
 ### **Persistence attacks: Long-term compromise**
 
 These attacks establish persistent footholds or contaminate user data beyond
-
 a single session.
 
 #### **Same-site data leak:** persistent XSS revisited

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-12T12:03:29.952480+00:00'
-exported_at: '2025-12-12T12:03:32.493820+00:00'
+date: '2026-02-16T05:52:25.702083+00:00'
+exported_at: '2026-02-16T05:52:27.634330+00:00'
 feed: http://bair.berkeley.edu/blog/feed.xml
 language: en
 source_url: http://bair.berkeley.edu/blog/2025/03/25/rl-av-smoothing
@@ -27,7 +27,7 @@ structured_data:
     name: gtcode.com
 title: 'Scaling Up Reinforcement Learning for Traffic Smoothing: A 100-AV Highway
   Deployment'
-updated_at: '2025-12-12T12:03:29.952480+00:00'
+updated_at: '2026-02-16T05:52:25.702083+00:00'
 url_hash: 8da1e6a751c9724e9e6b6e702053f173a700609b
 ---
 

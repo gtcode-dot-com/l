@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-12-18T00:03:24.902439+00:00'
-exported_at: '2025-12-18T00:03:28.076745+00:00'
+date: '2026-02-16T05:52:03.881974+00:00'
+exported_at: '2026-02-16T05:52:07.645512+00:00'
 feed: https://googleprojectzero.blogspot.com/feeds/posts/default
 language: en
 source_url: https://projectzero.google/2025/12/thinking-outside-the-box.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Thinking Outside The Box [dusted off draft from 2017]
-updated_at: '2025-12-18T00:03:24.902439+00:00'
+updated_at: '2026-02-16T05:52:03.881974+00:00'
 url_hash: 46b51c0be32bcf7a0cb7affb6ddbad98f6f7c11c
 ---
 
