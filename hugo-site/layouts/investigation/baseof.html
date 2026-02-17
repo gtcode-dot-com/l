@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{- $siteTitle := .Site.Title -}}
     {{- $seoSiteName := .Site.Params.seo_site_name | default $siteTitle -}}
-    <title>{{ .Title }} · {{ $seoSiteName }}</title>
+    {{- $pageTitle := .Params.seo_title | default .Title -}}
+    <title>{{ $pageTitle }} · {{ $seoSiteName }}</title>
 
     <!-- Meta tags -->
     {{ $pageDescription := .Site.Params.description }}
@@ -22,6 +23,17 @@
     {{ else }}
     <meta name="robots" content="index, follow, max-image-preview:large" />
     {{ end }}
+    {{- $keywords := "" -}}
+    {{- with .Params.meta_keywords -}}
+      {{- if (reflect.IsSlice .) -}}
+        {{- $keywords = delimit . ", " -}}
+      {{- else -}}
+        {{- $keywords = . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if ne $keywords "" -}}
+    <meta name="keywords" content="{{ $keywords }}" />
+    {{- end -}}
     {{ $canonical := .Permalink }}
     {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
     {{ $canonical = replace $canonical "http://" "https://" }}

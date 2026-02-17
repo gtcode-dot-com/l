@@ -2,8 +2,9 @@
 draft: false
 weight: 8
 title: "The Zero Commission"
+seo_title: "The Zero Commission — Judicial Corruption in Hawaii's Court Oversight System"
 subtitle: "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work"
-description: "An investigation into Hawaii's Commission on Judicial Conduct — its closed-loop appointment structure, sealed proceedings, zero sustained complaints since 2018, and the conflicts of interest designed into the system."
+description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of complaints against judges since 2018. An investigation into judicial corruption, misconduct, and the broken oversight system protecting Hawaii's courts."
 date: 2026-02-15
 author: "Ekewaka Lono"
 published_display: "February 15, 2026"
@@ -11,14 +12,25 @@ published_display: "February 15, 2026"
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-zero-commission/"
 robots: "index, follow, max-image-preview:large"
+meta_keywords:
+  - "judicial corruption hawaii"
+  - "hawaii judge misconduct"
+  - "hawaii commission on judicial conduct"
+  - "corrupt judges hawaii"
+  - "hawaii court corruption"
+  - "judicial accountability hawaii"
+  - "hawaii judge complaint dismissed"
+  - "hawaii judicial oversight"
+  - "Commission on Judicial Conduct"
+  - "judicial misconduct complaints hawaii"
 
 # Card Display
 eyebrow: "The Closed Loop"
 card_summary: "Seven members. All appointed by the Supreme Court they exist to oversee. 1,009 inquiries. Seven formal complaints. Zero sustained. This is the architecture of unaccountability."
 
 # Open Graph
-og_title: "The Zero Commission — How Hawaii Built the Perfect Machine for Judging Judges"
-og_description: "An investigation into Hawaii's Commission on Judicial Conduct: zero sustained complaints since 2018, sealed proceedings, and a closed-loop appointment structure designed to ensure judicial misconduct does not exist."
+og_title: "Judicial Corruption in Hawaii — The Zero Commission Investigation"
+og_description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of judge misconduct complaints since 2018. An investigation into the corrupt oversight system protecting Hawaii's courts."
 og_image: "https://gtcode.com/img/ou-zero-commission-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -36,11 +48,15 @@ article_tags:
   - "Accountability"
   - "Closed Loop"
   - "Conflict of Interest"
+  - "Judicial Corruption"
+  - "Hawaii Judge Misconduct"
+  - "Court Corruption"
+  - "Judicial Accountability"
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "The Zero Commission — How Hawaii Built the Perfect Machine for Judging Judges"
-twitter_description: "Zero sustained complaints since 2018. Seven members appointed by the court they oversee. This is the architecture of unaccountability."
+twitter_title: "Judicial Corruption in Hawaii — The Zero Commission Investigation"
+twitter_description: "Hawaii's Commission on Judicial Conduct: 100% of judge misconduct complaints dismissed since 2018. Seven members appointed by the court they oversee."
 twitter_image: "https://gtcode.com/img/ou-zero-commission-og-1200x630.jpg"
 twitter_image_alt: "The Zero Commission — investigation into Hawaii's Commission on Judicial Conduct"
 
@@ -92,7 +108,7 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/the-zero-commission/"
       headline: "The Zero Commission"
       alternativeHeadline: "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work"
-      description: "An investigation into Hawaii's Commission on Judicial Conduct: zero sustained complaints since 2018, sealed proceedings, and a closed-loop appointment structure."
+      description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of complaints against judges since 2018. An investigation into judicial corruption, misconduct, and the broken oversight system protecting Hawaii's courts."
       image: "https://gtcode.com/img/ou-zero-commission-og-1200x630.jpg"
       datePublished: "2026-02-15T00:00:00Z"
       dateModified: "2026-02-15T00:00:00Z"
@@ -110,7 +126,7 @@ structured_data_graph:
           width: 180
           height: 180
       articleSection: "Investigations"
-      keywords: "Commission on Judicial Conduct, Judicial Oversight, Hawaii, Accountability, Conflict of Interest"
+      keywords: "judicial corruption hawaii, hawaii judge misconduct, Commission on Judicial Conduct, hawaii court corruption, judicial accountability hawaii, corrupt judges hawaii, hawaii judicial oversight, judicial misconduct complaints hawaii"
 ---
 
 There is a building in Honolulu where complaints go to die.
