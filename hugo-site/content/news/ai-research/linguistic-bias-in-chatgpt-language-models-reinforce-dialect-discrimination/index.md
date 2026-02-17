@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-13T00:03:33.390991+00:00'
-exported_at: '2025-12-13T00:03:38.999587+00:00'
+date: '2026-02-17T00:39:32.632666+00:00'
+exported_at: '2026-02-17T00:39:39.074528+00:00'
 feed: http://bair.berkeley.edu/blog/feed.xml
 language: en
 source_url: http://bair.berkeley.edu/blog/2024/09/20/linguistic-bias
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Linguistic Bias in ChatGPT: Language Models Reinforce Dialect Discrimination'
-updated_at: '2025-12-13T00:03:33.390991+00:00'
+updated_at: '2026-02-17T00:39:32.632666+00:00'
 url_hash: 3570f8eadb18c3dd6c1233a60792d051681cd2e5
 ---
 

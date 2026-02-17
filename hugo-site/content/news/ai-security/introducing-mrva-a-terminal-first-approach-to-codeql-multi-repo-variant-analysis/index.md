@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-12-13T12:03:14.615861+00:00'
-exported_at: '2025-12-13T12:03:17.614756+00:00'
+date: '2026-02-17T00:39:11.119727+00:00'
+exported_at: '2026-02-17T00:39:13.263729+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2025/12/11/introducing-mrva-a-terminal-first-approach-to-codeql-multi-repo-variant-analysis
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Introducing mrva, a terminal-first approach to CodeQL multi-repo variant analysis
-updated_at: '2025-12-13T12:03:14.615861+00:00'
+updated_at: '2026-02-17T00:39:11.119727+00:00'
 url_hash: d03d00143c49e1f304f7109f5d64db4584588bfe
 ---
 

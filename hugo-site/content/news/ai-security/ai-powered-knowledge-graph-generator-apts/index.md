@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-13T04:15:15.084290+00:00'
-exported_at: '2026-02-13T04:15:17.330159+00:00'
+date: '2026-02-17T00:39:11.899809+00:00'
+exported_at: '2026-02-17T00:39:13.255998+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32712
@@ -16,7 +16,8 @@ structured_data:
   about: []
   author: ''
   description: 'AI-Powered Knowledge Graph Generator & APTs, Author: Russ McRee'
-  headline: AI-Powered Knowledge Graph Generator &#x26; APTs, (Thu, Feb 12th)
+  headline: '&#x26;#xa;AI-Powered Knowledge Graph Generator &#x26; APTs, (Thu, Feb
+    12th)'
   inLanguage: en
   keywords: []
   main_image: ''
@@ -24,8 +25,8 @@ structured_data:
   publisher:
     logo: /favicon.ico
     name: gtcode.com
-title: AI-Powered Knowledge Graph Generator &#x26; APTs, (Thu, Feb 12th)
-updated_at: '2026-02-13T04:15:15.084290+00:00'
+title: '&#x26;#xa;AI-Powered Knowledge Graph Generator &#x26; APTs, (Thu, Feb 12th)'
+updated_at: '2026-02-17T00:39:11.899809+00:00'
 url_hash: af1c61cca259c69e7b09a3360e7b6a539e750565
 ---
 

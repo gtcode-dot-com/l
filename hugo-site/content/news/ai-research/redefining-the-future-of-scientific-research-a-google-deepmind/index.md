@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T00:15:34.451533+00:00'
-exported_at: '2026-02-13T00:15:37.382054+00:00'
+date: '2026-02-17T00:39:35.079670+00:00'
+exported_at: '2026-02-17T00:39:39.069542+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Accelerating Mathematical and Scientific Discovery with Gemini Deep Think
-updated_at: '2026-02-13T00:15:34.451533+00:00'
+updated_at: '2026-02-17T00:39:35.079670+00:00'
 url_hash: 3880f3dbfc7cf38e76a39e1e58c63463ade5bc69
 ---
 
@@ -94,7 +94,7 @@ Authors of the first paper âTowards Autonomous Mathematics Researchâ i
 
 Authors of the second paper âAccelerating Scientific Research with Gemini: Case Studies and Common Techniquesâ include David P. Woodruff, Vincent Cohen-Addad, Lalit Jain, Jieming Mao, Song Zuo, MohammadHossein Bateni, Simina Branzei, Michael P. Brenner, Lin Chen, Ying Feng, Lance Fortnow, Gang Fu, Ziyi Guan, Zahra Hadizadeh, Mohammad T. Hajiaghayi, Mahdi JafariRaviz, Adel Javanmard, Karthik C. S., Ken-ichi Kawarabayashi, Ravi Kumar, Silvio Lattanzi, Euiwoong Lee, Yi Li, Ioannis Panageas, Dimitris Paparas, Benjamin Przybocki, Bernardo Subercaseaux, Ola Svensson, Shayan Taherijam, Xuan Wu, Eylon Yogev, Morteza Zadimoghaddam, Samson Zhou, Yossi Matias, Jeff Dean, James Manyika, Vahab Mirrokni. This list includes Google researchers building the agentic reasoning on top of Gemini, and our academic expert collaborators verifying and collaborating with Gemini. We also thank Corinna Cortes for her careful review of the paper.
 
-We are grateful for the foundational support from the rest of the DeepThink team: Anirudh Baddepudi, Michael Brenner, Irene Cai, Kristen Chiafullo, Paul Covington, Rumen Dangovski, Chenjie Gu, Huan Gui, Vihan Jain, Rajesh Jayaram, Melvin Johnson, Rosemary Ke, Maciej Kula, Nate Kushman, Jane Labanowski, Steve Li, Pol Moreno, Sidharth Mudgal, William Nelson, ââAda Maksutaj Oflazer, Sahitya Potluri, Navneet Potti, Shubha Raghvendra, Siamak Shakeri, Archit Sharma, Xinying Song, Mukund Sundararajan, Qijun Tan, Zak Tsai, Theophane Weber, Winnie Xu, Zicheng Xu, Junwen Yao, Shunyu Yao, Adams Yu, Lijun Yu, and Honglei Zhuang.
+We are grateful for the foundational support from the rest of the DeepThink team: Anirudh Baddepudi, Michael Brenner, Irene Cai, Kristen Chiafullo, Paul Covington, Rumen Dangovski, Chenjie Gu, Huan Gui, Vihan Jain, Rajesh Jayaram, Melvin Johnson, Rosemary Ke, Maciej Kula, Nate Kushman, Jane Labanowski, Steve Li, Pol Moreno, Sidharth Mudgal, William Nelson, ââAda Maksutaj Oflazer, Sahitya Potluri, Navneet Potti, Shubha Raghvendra, James Roggeveen, Siamak Shakeri, Archit Sharma, Xinying Song, Mukund Sundararajan, Qijun Tan, Zak Tsai, Erik Wang, Theophane Weber, Winnie Xu, Zicheng Xu, Junwen Yao, Shunyu Yao, Adams Yu, Lijun Yu, and Honglei Zhuang.
 
 We thank Quoc Le, Koray Kavukcuoglu, Demis Hassabis, James Manyika, Yossi Matias, and Jeff Dean for sponsoring this project.
 

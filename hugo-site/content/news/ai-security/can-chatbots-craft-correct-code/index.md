@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-12-21T12:03:12.177314+00:00'
-exported_at: '2025-12-21T12:03:15.313117+00:00'
+date: '2026-02-17T00:39:08.917987+00:00'
+exported_at: '2026-02-17T00:39:13.273408+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2025/12/19/can-chatbots-craft-correct-code
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Can chatbots craft correct code?
-updated_at: '2025-12-21T12:03:12.177314+00:00'
+updated_at: '2026-02-17T00:39:08.917987+00:00'
 url_hash: 0bb0d05b832f2e9da263c21d99f479d32e1cd5b3
 ---
 

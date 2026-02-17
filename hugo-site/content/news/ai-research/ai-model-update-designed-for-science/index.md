@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T00:15:33.654500+00:00'
-exported_at: '2026-02-13T00:15:37.384745+00:00'
+date: '2026-02-17T00:39:33.816337+00:00'
+exported_at: '2026-02-17T00:39:39.072198+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Gemini 3 Deep Think: Advancing science, research and engineering'
-updated_at: '2026-02-13T00:15:33.654500+00:00'
+updated_at: '2026-02-17T00:39:33.816337+00:00'
 url_hash: ba121ed9fd61bf5258188fc59e2cca268e2b24da
 ---
 

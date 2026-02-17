@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-12-15T00:03:12.314335+00:00'
-exported_at: '2025-12-15T00:03:15.208126+00:00'
+date: '2026-02-17T00:39:10.613518+00:00'
+exported_at: '2026-02-17T00:39:13.266989+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2025/12/12/catching-malicious-package-releases-using-a-transparency-log
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Catching malicious package releases using a transparency log
-updated_at: '2025-12-15T00:03:12.314335+00:00'
+updated_at: '2026-02-17T00:39:10.613518+00:00'
 url_hash: e9ce40b6e3c6b3a231dfcb697cfa631fb40aff34
 ---
 

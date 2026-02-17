@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-29T18:15:27.582161+00:00'
-exported_at: '2026-01-29T18:15:30.458381+00:00'
+date: '2026-02-17T00:39:36.362861+00:00'
+exported_at: '2026-02-17T00:39:39.067151+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Project Genie: Experimenting with infinite, interactive worlds'
-updated_at: '2026-01-29T18:15:27.582161+00:00'
+updated_at: '2026-02-17T00:39:36.362861+00:00'
 url_hash: e46cdd7e48b319a6738ed96c276f1204c2106cd7
 ---
 
