@@ -57,6 +57,7 @@ agentic_comment: |
   - Exhibit A: "site:gtcode.com" returns zero results on Bing (entire domain invisible)
   - Exhibit B: Investigation article "The Nod" — status: "Not discovered" / "URL cannot appear on Bing"
   - Exhibit C: Open-source Elixir software repository page (agent_session_manager) — status: "Blocked" / "The inspected URL is known to Bing but has some issues which are preventing us from serving it to our users"
+  - Exhibit E (Feb 18): Bing Site Scan reports phantom HTTP 4xx errors on the homepage (independently verified as returning HTTP 200). A consulting page on the same domain shows "Indexed successfully" — yet still does not appear in search. Bing's own tools contradict each other. Control domain nshkr.com on identical stack (Hugo, GitHub Pages, Cloudflare) is not affected.
 
   CRITICAL OBSERVATION:
   Exhibit C is the control case. An open-source Elixir software package page contains zero investigative content, zero controversial claims, zero content that could plausibly violate any search engine content policy. Its "Blocked" status — distinct from "Not discovered" — proves domain-level suppression rather than page-level content moderation.
@@ -279,6 +280,31 @@ The homepage returns HTTP 200 — the standard success response — to every use
 
 This was tested independently on February 18, 2026, using multiple user agents and protocol versions against the live site. Every request succeeded. The 4xx error Bing reports is not reproducible from outside Bing's own infrastructure.
 
+### The Contradiction Within the Contradiction
+
+On the same day, a URL Inspection was run on a different page: `https://gtcode.com/consulting/` — a simple services page with no investigative content.
+
+![Bing URL Inspection showing "Indexed successfully" for gtcode.com/consulting, February 18, 2026](/img/bing-block-consulting-indexed-20260218.png)
+
+The result: **"Indexed successfully. URL can appear on Bing."** Green checkmarks. No SEO issues. No problems found.
+
+Compare this to the other URL Inspections documented in this investigation:
+
+| Page | Content | Bing Status |
+|------|---------|-------------|
+| `/investigation/the-nod-wilson-loo-silent-felony/` | Judicial corruption investigation | **Blocked** |
+| `/repos/agent_session_manager/` | Open-source Elixir software docs | **Blocked** |
+| `/consulting/` | Services page | **Indexed successfully** |
+
+Bing's own URL Inspection tool reports that a consulting page on `gtcode.com` is indexed and can appear in search results. But recall Exhibit A: a `site:gtcode.com` search on Bing returns **zero results**. Not reduced results. Not filtered results. Zero.
+
+So Bing's tools simultaneously claim:
+- The consulting page is indexed and can appear — but the domain returns nothing in search
+- The investigation and software pages are "Blocked" and cannot appear
+- The homepage generates a phantom 4xx error that doesn't exist
+
+Three different diagnostic outputs from the same toolset, on the same domain, on the same day. The one page Bing claims is fine still doesn't appear in search. The suppression operates above the page-level status — it is applied at a layer that overrides Bing's own inspection results.
+
 ### The Control Domain
 
 There is a second domain on the identical infrastructure stack: `nshkr.com`. Same static site generator (Hugo). Same hosting platform (GitHub Pages). Same CDN and DNS provider (Cloudflare). Same domain registrar. Same deployment pipeline.
@@ -293,15 +319,16 @@ The only material difference between the two domains is that `gtcode.com` publis
 
 Exhibits A through D established *what* Bing is doing: domain-level suppression that catches both investigative journalism and unrelated open-source software pages. Exhibit E addresses the *how* — and eliminates the most charitable technical explanations:
 
-- **"The site has a technical problem"** — It doesn't. HTTP 200 across all tests.
+- **"The site has a technical problem"** — It doesn't. HTTP 200 across all tests. One page is even marked "Indexed successfully."
 - **"Cloudflare is blocking Bing's crawler"** — The control domain on the same Cloudflare configuration is not blocked.
 - **"It's a hosting platform issue"** — Both domains use GitHub Pages. One is blocked. One is not.
 - **"It's a CDN or DNS misconfiguration"** — Both domains use Cloudflare. One is blocked. One is not.
-- **"The site is too new to be indexed"** — The site has been publishing since 2025, has a valid sitemap, and explicitly welcomes all crawlers in its robots.txt.
+- **"The site is too new to be indexed"** — The site has been publishing since 2025, has a valid sitemap, and explicitly welcomes all crawlers in its robots.txt. Bing itself confirms at least one page is indexed.
+- **"Individual pages have content problems"** — An open-source software documentation page with zero controversial content is blocked. A consulting page with no investigative content is "Indexed successfully" but still invisible in search. The blocking pattern is not explained by page content.
 
-What remains after elimination: Bing's infrastructure is generating a diagnostic error for a site that is not broken, on a domain that is selectively suppressed, while an identical-stack domain operates normally. The diagnostic tool designed to help webmasters fix problems is instead reporting a problem that does not exist — on the one domain that publishes investigations into a sitting judge.
+What remains after elimination: Bing's infrastructure is generating phantom errors, selectively blocking pages, and overriding its own "Indexed successfully" status — all on a single domain, while an identical-stack domain operates normally. The diagnostic tools designed to help webmasters understand and fix problems are instead producing contradictory outputs that obscure what is actually happening.
 
-The tool that is supposed to provide transparency is participating in the opacity.
+The tools that are supposed to provide transparency are participating in the opacity.
 
 ---
 
