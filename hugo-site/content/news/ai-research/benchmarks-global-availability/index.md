@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-18T12:03:31.172915+00:00'
-exported_at: '2025-12-18T12:03:34.097196+00:00'
+date: '2026-02-19T04:08:09.521744+00:00'
+exported_at: '2026-02-19T04:08:10.312799+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Gemini 3 Flash: frontier intelligence built for speed'
-updated_at: '2025-12-18T12:03:31.172915+00:00'
+updated_at: '2026-02-19T04:08:09.521744+00:00'
 url_hash: 46d14e60a2fa41c38737ccc9d84e5df2694dd9c0
 ---
 

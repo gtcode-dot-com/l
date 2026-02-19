@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-13T18:15:28.068506+00:00'
-exported_at: '2026-01-13T18:15:30.500223+00:00'
+date: '2026-02-19T04:08:06.515224+00:00'
+exported_at: '2026-02-19T04:08:10.319183+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/veo-3-1-ingredients-to-video-more-consistency-creativity-and-control
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Veo 3.1 Ingredients to Video: More consistency, creativity and control'
-updated_at: '2026-01-13T18:15:28.068506+00:00'
+updated_at: '2026-02-19T04:08:06.515224+00:00'
 url_hash: 3c5b0c2d6a6074d7ad041c2ae229418fbd10e899
 ---
 

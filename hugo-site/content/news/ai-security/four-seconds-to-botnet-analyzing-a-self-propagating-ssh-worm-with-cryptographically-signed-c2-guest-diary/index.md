@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T22:15:17.642417+00:00'
-exported_at: '2026-02-12T22:15:26.855273+00:00'
+date: '2026-02-19T04:07:46.271932+00:00'
+exported_at: '2026-02-19T04:07:49.366056+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32708
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: Four Seconds to Botnet - Analyzing a Self Propagating SSH Worm with Cryptographically
   Signed C2 &#x5b;Guest Diary&#x5d;, (Wed, Feb 11th)
-updated_at: '2026-02-12T22:15:17.642417+00:00'
+updated_at: '2026-02-19T04:07:46.271932+00:00'
 url_hash: aefe51ecfae38519514d6ef59c7eaefb6f0b83cd
 ---
 

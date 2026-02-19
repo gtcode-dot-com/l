@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-12T22:15:24.311081+00:00'
-exported_at: '2026-02-12T22:15:26.845989+00:00'
+date: '2026-02-19T04:07:47.319773+00:00'
+exported_at: '2026-02-19T04:07:49.362008+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32706
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Apple Patches Everything: February 2026, (Wed, Feb 11th)'
-updated_at: '2026-02-12T22:15:24.311081+00:00'
+updated_at: '2026-02-19T04:07:47.319773+00:00'
 url_hash: cd6444f0f50fba529e802745cbb1d2efada8f161
 ---
 

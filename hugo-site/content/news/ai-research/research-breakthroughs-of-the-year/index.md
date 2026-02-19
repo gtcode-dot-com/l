@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-24T12:03:26.520177+00:00'
-exported_at: '2025-12-24T12:03:29.049598+00:00'
+date: '2026-02-19T04:08:08.178264+00:00'
+exported_at: '2026-02-19T04:08:10.316447+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Google''s year in review: 8 areas with research breakthroughs in 2025'
-updated_at: '2025-12-24T12:03:26.520177+00:00'
+updated_at: '2026-02-19T04:08:08.178264+00:00'
 url_hash: 1acd7af1bafd99dd94a92fd702c3da19865a5d42
 ---
 

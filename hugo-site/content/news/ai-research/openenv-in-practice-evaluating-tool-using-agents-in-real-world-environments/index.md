@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T00:15:34.774412+00:00'
-exported_at: '2026-02-13T00:15:37.379750+00:00'
+date: '2026-02-19T04:08:11.286310+00:00'
+exported_at: '2026-02-19T04:08:10.302098+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/openenv-turing
 structured_data:
@@ -24,7 +24,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments'
-updated_at: '2026-02-13T00:15:34.774412+00:00'
+updated_at: '2026-02-19T04:08:11.286310+00:00'
 url_hash: 4ca3f118d865c51a4e9f833bf3d476a7defa8024
 ---
 
