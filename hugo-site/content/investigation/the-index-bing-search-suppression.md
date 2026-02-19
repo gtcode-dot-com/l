@@ -2,8 +2,9 @@
 draft: false
 weight: 7
 title: "The Index: How Bing Blocked an Entire Domain to Bury One Judge's Name"
+seo_title: "How Bing Blocked a Domain to Bury a Judge"
 subtitle: "Domain-Level Search Suppression of an Independent Journalism Site"
-description: "Documented evidence of Bing search suppression targeting gtcode.com — where open-source software repositories are blocked alongside investigations into judicial corruption in Hawaiʻi."
+description: "Evidence of Bing search suppression targeting gtcode.com — open-source repos blocked alongside investigations into judicial corruption in Hawaiʻi."
 date: 2026-02-13
 author: "Ekewaka Lono"
 published_display: "February 13, 2026"
