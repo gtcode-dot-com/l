@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T00:15:35.123653+00:00'
-exported_at: '2026-02-13T00:15:37.376420+00:00'
+date: '2026-02-19T04:26:30.547189+00:00'
+exported_at: '2026-02-19T04:26:34.678608+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/transformersjs-v4
 structured_data:
@@ -24,7 +24,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Transformers.js v4 Preview: Now Available on NPM!'
-updated_at: '2026-02-13T00:15:35.123653+00:00'
+updated_at: '2026-02-19T04:26:30.547189+00:00'
 url_hash: 3f12cf518fa582cc5308a8948a2936f2834f5178
 ---
 

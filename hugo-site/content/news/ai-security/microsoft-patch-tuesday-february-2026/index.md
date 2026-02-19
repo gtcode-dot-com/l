@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-13T00:15:17.053342+00:00'
-exported_at: '2026-02-13T00:15:20.763559+00:00'
+date: '2026-02-19T04:26:08.872008+00:00'
+exported_at: '2026-02-19T04:26:12.428787+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32700
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Microsoft Patch Tuesday - February 2026, (Tue, Feb 10th)
-updated_at: '2026-02-13T00:15:17.053342+00:00'
+updated_at: '2026-02-19T04:26:08.872008+00:00'
 url_hash: 4ee60678564be8d2c16d404449050fcd6e1ff3e9
 ---
 

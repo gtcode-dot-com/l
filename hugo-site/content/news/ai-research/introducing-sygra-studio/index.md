@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T02:15:29.301310+00:00'
-exported_at: '2026-02-13T02:15:32.992622+00:00'
+date: '2026-02-19T04:26:31.389103+00:00'
+exported_at: '2026-02-19T04:26:34.675252+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/ServiceNow-AI/sygra-studio
 structured_data:
@@ -23,7 +23,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Introducing SyGra Studio
-updated_at: '2026-02-13T02:15:29.301310+00:00'
+updated_at: '2026-02-19T04:26:31.389103+00:00'
 url_hash: f54671b0bef59c2787792963957f9ebb3b839610
 ---
 

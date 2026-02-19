@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T02:15:29.624607+00:00'
-exported_at: '2026-02-13T02:15:32.991086+00:00'
+date: '2026-02-19T04:26:32.679885+00:00'
+exported_at: '2026-02-19T04:26:34.668910+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/community-evals
 structured_data:
@@ -26,7 +26,7 @@ structured_data:
     name: gtcode.com
 title: 'Community Evals: Because we''re done trusting black-box leaderboards over
   the community'
-updated_at: '2026-02-13T02:15:29.624607+00:00'
+updated_at: '2026-02-19T04:26:32.679885+00:00'
 url_hash: 427732ac3009d308c667d3f86aa1b9051935a646
 ---
 
@@ -101,6 +101,11 @@ This won't solve benchmark saturation or close the benchmark-reality gap. Nor wi
 Mostly, we hope to make the Hub an active place to build and share reproducible benchmarks. Particularly focusing on new tasks and domains that challenge SOTA models more.
 
 ## **Get Started**
+
+**Read the docs:**
+To learn more about evaluation results, check out the
+[docs](https://huggingface.co/docs/hub/eval-results)
+.
 
 **Add eval results:**
 Publish the evals you conducted as YAML files in

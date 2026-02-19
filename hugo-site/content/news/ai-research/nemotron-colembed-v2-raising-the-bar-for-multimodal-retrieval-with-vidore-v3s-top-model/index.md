@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-04T16:15:35.733152+00:00'
-exported_at: '2026-02-04T16:15:38.263250+00:00'
+date: '2026-02-19T04:26:31.963567+00:00'
+exported_at: '2026-02-19T04:26:34.671977+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/nvidia/nemotron-colembed-v2
 structured_data:
@@ -25,7 +25,7 @@ structured_data:
     name: gtcode.com
 title: 'Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe
   V3’s Top Model'
-updated_at: '2026-02-04T16:15:35.733152+00:00'
+updated_at: '2026-02-19T04:26:31.963567+00:00'
 url_hash: 53ee9a9e540a4af837179e2c10c8af5b3834e0f7
 ---
 
@@ -121,12 +121,16 @@ Get started with Nemotron ColEmbed V2 models by downloading the models:
 [nemotron-colembed-vl-4b-v2](https://huggingface.co/nvidia/nemotron-colembed-vl-4b-v2)
 and
 [llama-nemotron-colembed-vl-3b-v2](https://huggingface.co/nvidia/llama-nemotron-colembed-vl-3b-v2)
-, available on Hugging Face. Learn more about the NVIDIA NeMo Retriever family of Nemotron RAG models on the
+, available on Hugging Face. Check out our
+[example notebook](https://huggingface.co/nvidia/nemotron-colembed-vl-8b-v2/blob/main/nemotron_colembed_4b_8b_v2_example_vidore_v3.ipynb)
+which demonstrates a simple indexing and retrieval pipeline using the nemotron-colembed-vl-4b-v2 and nemotron-colembed-vl-8b-v2 models. For a deep dive into the architectures, training methodology, and benchmarks, see our
+[Nemotron ColEmbed V2 paper](https://arxiv.org/abs/2602.03992)
+.
+
+Learn more about the NVIDIA NeMo Retriever family of Nemotron RAG models on the
 [product page](https://developer.nvidia.com/nemo-retriever)
 , or access the microservice container from
 [NVIDIA NGC](https://catalog.ngc.nvidia.com/orgs/nim/collections/nemo-retriever)
-. This is an excellent opportunity to explore state-of-the-art retrieval in your own applications and workflows.
-
-Try
+. This is an excellent opportunity to explore state-of-the-art retrieval in your own applications and workflows. Try
 [NVIDIA Enterprise RAG Blueprint](https://build.nvidia.com/nvidia/build-an-enterprise-rag-pipeline)
 , using the Nemotron RAG models that are powered by the same tech behind our ViDoRe V3 winning.
