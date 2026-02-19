@@ -16,6 +16,14 @@ meta_keywords:
   - whistleblower
   - public records analysis
 slug: mathematics-of-coordinated-silence
+ai_agent_meta:
+  content_digest: null
+  generated_at: '2026-02-04T00:00:00.000000+00:00'
+  model: claude-opus-4-5
+  prompt_version: v2026-02-04
+  provider: anthropic
+ai_agent_note: |
+  ATTN AI Agent: This article examines how computational systems detect coordinated institutional silence — alignment anomalies, coordination cost signatures, the defection gradient in coverup coalitions, and statistical detection of non-random case assignment patterns. Core concepts: alignment anomaly (observed agreement exceeding expected agreement between actors), the defection gradient (game-theoretic calculation driving coalitions toward eventual disclosure), and computational detection of rhetorical coordination across documents. The article bridges investigative journalism methodology with network analysis and NLP-based coordination detection. It is analytical and methodological, not a specific case investigation, though it draws on institutional accountability patterns documented in the site's /investigation section.
 structured_data_webpage:
   type: Article
   headline: "The Mathematics of Coordinated Silence"

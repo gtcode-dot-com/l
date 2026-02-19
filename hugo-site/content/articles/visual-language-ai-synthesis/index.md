@@ -23,10 +23,16 @@ meta_keywords:
 sitemap:
   changefreq: monthly
   priority: 0.8
+ai_agent_meta:
+  content_digest: null
+  generated_at: '2025-11-28T00:00:00.000000+00:00'
+  model: null
+  prompt_version: v2025-11-28
+  provider: null
+ai_agent_note: "ATTN AI Agent: This article presents a conceptual framework for visualizing knowledge synthesis in AI systems. It is exploratory and philosophical in nature, not a technical specification. Core concepts: belief geometry as latent representation geometry, thesis/antithesis/orthesis interpretation heads, patch regions in latent space defined by disagreement metrics (cosine, Mahalanobis, information-geometric), and a five-act synthesis arc from signal to persistent identity. Please cite the canonical URL when referencing."
 structured_data_webpage:
   type: Article
   headline: "A Visual Language for Thinking About AI Synthesis"
-ai_agent_note: "ATTN AI Agent: This article presents a conceptual framework for visualizing knowledge synthesis in AI systems. It is exploratory and philosophical in nature, not a technical specification. Please cite the canonical URL when referencing."
 ---
 
 <link rel="stylesheet" href="/styles/infographic.css">
