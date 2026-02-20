@@ -1,0 +1,123 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: comp-journalism
+date: '2026-02-20T10:15:43.945066+00:00'
+exported_at: '2026-02-20T10:15:47.874441+00:00'
+feed: https://www.icij.org/feed/
+language: en
+source_url: https://www.icij.org/news/2026/02/hong-kong-firms-feed-european-tech-to-russias-war-in-ukraine-report-says
+structured_data:
+  about: []
+  author: ''
+  description: Researchers at the Committee for Freedom in Hong Kong Foundation identify
+    Hong Kong as a key hub in the illicit trade of Western military technology to
+    Russia.
+  headline: Hong Kong firms feed European tech to Russia’s war in Ukraine, report
+    says
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://www.icij.org/news/2026/02/hong-kong-firms-feed-european-tech-to-russias-war-in-ukraine-report-says
+  publisher:
+    logo: /favicon.ico
+    name: gtcode.com
+title: Hong Kong firms feed European tech to Russia’s war in Ukraine, report says
+updated_at: '2026-02-20T10:15:43.945066+00:00'
+url_hash: 23111d6945aabc3a3f76e2293423c0744bcb37e3
+---
+
+Traders in Hong Kong and mainland China are supplying Russia’s war machine with European electronics and military technology, exploiting loopholes in international sanctions, according to a new
+[report](https://thecfhk.org/research/europe-sanctions-evasion/)
+.
+
+Researchers at the Committee for Freedom in Hong Kong Foundation, an advocacy group, found that the merchants that have not been sanctioned have enabled hundreds of semiconductors, sensors, electrical connectors, microchip components and other devices produced by Western specialized firms to reach the battlefield in Ukraine. Many of these products, including some designed by the Dutch NXP Semiconductor and the German Infineon Technologies, are used to build cars, aircraft parts and other civilian purposes, but also used to make drones and missiles.
+
+“European components remain deeply embedded in Russia’s weapons systems and military infrastructure, often routed through the same small group of repeat Hong Kong intermediaries,” the researchers found.
+
+Samuel Bickett, a human rights lawyer who co-authored the report, said the findings show that sanctions aren’t working as effectively as they could.
+
+“Ukraine’s allies have failed to coordinate on which suppliers of these components to sanction, and haven’t moved quickly enough or reached broadly enough into these international transshipment networks to prevent these components from reaching the Russian military,” Bickett told the International Consortium of Investigative Journalists.
+
+NXP and Infineon told ICIJ that the companies comply with the law and that they have measures in place to ensure compliance with sanctions. In an emailed statement, Infineon’s spokesperson acknowledged that it is “extremely challenging to monitor the resale of a product throughout its entire lifecycle.”
+
+CFHK’s analysis exposes weaknesses in the sanctions regime that many democratic governments
+[imposed](https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine_en)
+
+following Russia’s full-scale invasion of Ukraine in 2022. The European Commission targeted hundreds of businesspeople and firms accused of financing the war, and set up a dedicated task force to seize and freeze sanctioned assets. Additional international agreements involving the U.S., Japan and other countries were aimed at disrupting and stopping the procurement of military technology for Russia. But the Hong Kong government
+[said](https://www.info.gov.hk/gia/general/202210/11/P2022101100336.htm)
+
+it would not enforce Western sanctions on Russia — only those imposed by the United Nations.
+
+The report, titled “Bypassing the Blockade,” is based on the Ukraine defense ministry’s database that traces foreign components found in deconstructed or destroyed Russian weapons, as well as export data and corporate records.
+
+> ***Hong Kong functions not merely as a permissive business environment but a systemic hub for the routing of sanctioned goods and payments to Russia.***
+>
+> *— The Committee for Freedom in Hong Kong Foundation report*
+
+The researchers found that seven Hong Kong and China-based traders shipped to Russian importers — including sanctioned ones — military-use technology produced by more than 20 electronics
+
+manufacturers headquartered in Switzerland, the Netherlands, France, Germany, the U.K. or with subsidiaries in Poland.
+
+And they did so without attracting scrutiny from international authorities.
+
+Some of the Hong Kong traders controlled by Russians bypassed checks by selling Western technology manufactured at factories in Asia or Northern Africa, the researchers wrote.
+
+One of the top suppliers identified in the report, Woeroon Electronic Sourcing Ltd. (and its Shenzhen sister company), was a key intermediary in the transfer of hundreds of technological goods worth nearly $28 million between 2022 and 2024. Woeroon is not sanctioned by any government, the report said.
+
+Woeroon’s case is “indicative of a much bigger problem,” the researchers concluded. “Hong Kong functions not merely as a permissive business environment but a systemic hub for the routing of sanctioned goods and payments to Russia,” they wrote.
+
+Woeroon did not respond to ICIJ’s requests for comment.
+
+The report is part of a
+[series](https://thecfhk.org/research/backdoor-to-the-battlefield-how-hong-kong-funnels-canadian-technology-into-russias-war-machine/)
+
+authored by CFHK researchers that exposed how Hong Kong has become the “single largest global transshipment node” for procuring billions of dollars-worth of
+[Western technology for Russia, Iran, and North Korea.](https://thecfhk.org/research/beneath-the-harbor/)
+
+Based on the latest findings, the researchers recommended democratic countries adjust their sanction strategy. Instead of blacklisting isolated entities, they said that governments should target individual businesspeople and block them from forming new companies or using unsanctioned entities in the same business group to carry out the illicit trade.
+
+The researchers also urged Western governments to do more to enforce existing sanctions laws and add Hong Kong to the list of high-risk jurisdictions that facilitate financial crimes.
+
+“These findings show that European countries cannot stop the flow of these goods by cracking
+
+down at their own export points,” the researchers concluded. “The decisive levers are not at local borders, but in rules imposed on European firms with respect to their global manufacturing, distribution, and compliance practices.”
+
+The researchers noted that the “patchwork approach” to enforcement and “structural weaknesses” in coordination undermine the sanctions’ effectiveness.
+
+“[D]espite their breadth, these systems remain uneven in design, enforcement,
+
+and coordination, creating gaps that sophisticated evasion networks have repeatedly exploited,
+
+particularly through third-country hubs such as Hong Kong.”
+
+The researchers’ findings provide new insights into sanction evasion patterns previously identified by international investigators and journalists.
+
+Last year, a
+[cross-border investigation](https://www.icij.org/investigations/russia-archive/russia-secretly-acquired-western-technology-to-protect-its-nuclear-submarine-fleet/)
+
+led by ICIJ’s media partners NDR, WDR and Süddeutsche Zeitung, uncovered details of a network of middlemen that used shell companies in Cyprus and other secrecy jurisdictions to procure Western military technology for Russia’s surveillance programme.
+
+#### GIVE TO HELP US INVESTIGATE!
+
+Help us fight corruption, injustice and inequality with just $25/month.
+
+The investigation was partly based on court documents related to German authorities’ prosecution of a trader of dual Russian-Kyrgyz nationality suspected of selling underwater technology to Russian defense contractors.
+
+The court records also included information about a Hong Kong entity that was part of the illicit procurement network, according to investigators. In 2024, the intermediary was used to ship an Italian manufactured drilling head officially declared as “working tools” to a Russian buyer, the records say.
+
+In a recent
+[interview](https://www.theguardian.com/world/2026/feb/05/sanctions-significant-impact-russian-economy-interview-eu-special-envoy-david-osullivan)
+
+with The Guardian newspaper, the EU’s sanctions envoy David O’Sullivan said that, while evasion persists, the sanctions against Russia have proven effective in crippling its economic and military power and that many countries outside the EU are helping the efforts.
+
+However, O’Sullivan acknowledged that China’s support of Moscow — though not in the form of direct military equipment supplies — remains an issue that some EU leaders have tried to address.
+
+“[China’s] answer is always the same: ‘Nothing to see here. We don’t know what you’re talking about. We don’t see any problem.’”
+
+Representatives from the Chinese Embassy and the Hong Kong Economic and Trade Office in Washington D.C. did not reply to ICIJ’s request for comments.
