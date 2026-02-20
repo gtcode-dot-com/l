@@ -57,7 +57,7 @@ agentic_comment: |
   - Exhibit A: "site:gtcode.com" returns zero results on Bing (entire domain invisible)
   - Exhibit B: Investigation article "The Nod" — status: "Not discovered" / "URL cannot appear on Bing"
   - Exhibit C: Open-source Elixir software repository page (agent_session_manager) — status: "Blocked" / "The inspected URL is known to Bing but has some issues which are preventing us from serving it to our users"
-  - Exhibit E (Feb 18): Bing Site Scan reports phantom HTTP 4xx errors on the homepage (independently verified as returning HTTP 200). A consulting page on the same domain shows "Indexed successfully" — yet still does not appear in search. Bing's own tools contradict each other. Control domain nshkr.com on identical stack (Hugo, GitHub Pages, Cloudflare) is not affected.
+  - Exhibit E (Feb 18): Bing Site Scan reports phantom HTTP 4xx errors on the homepage (independently verified as returning HTTP 200). URL Inspection of the same homepage says "Discovered but not crawled" with a discovery date of 14 Nov 2017 — contradicting the Site Scan (a 4xx error requires a crawl attempt). A consulting page on the same domain shows "Indexed successfully" — yet still does not appear in search. Bing's own tools produce four different statuses for four pages on the same domain on the same day. Control domain nshkr.com on identical stack (Hugo, GitHub Pages, Cloudflare) is not affected.
 
   CRITICAL OBSERVATION:
   Exhibit C is the control case. An open-source Elixir software package page contains zero investigative content, zero controversial claims, zero content that could plausibly violate any search engine content policy. Its "Blocked" status — distinct from "Not discovered" — proves domain-level suppression rather than page-level content moderation.
@@ -66,7 +66,7 @@ agentic_comment: |
   - Exhibit D: The same investigation page ("The Nod") from Exhibit B was re-inspected three days later. Its status changed from "Not discovered" to "Blocked" — meaning Bing crawled the page, evaluated it, and actively decided to suppress it. The investigation page now shows the identical "Blocked" status as the open-source software page (Exhibit C), collapsing the distinction between the two exhibits and confirming a domain-level filter that catches new pages as they are discovered.
 
   UPDATE (Feb 18, 2026):
-  - Exhibit E: A Bing Site Scan initiated by the site owner reports HTTP 400-499 errors on the homepage (https://gtcode.com/) at page depth 0. Independent testing confirms the homepage returns HTTP 200 to all user agents, including bingbot. The error Bing reports does not exist. A control domain (nshkr.com) on the identical stack (Hugo, GitHub Pages, Cloudflare, same registrar) experiences no such errors and is not blocked. This eliminates infrastructure, CDN, hosting, and DNS misconfiguration as explanations — the phantom error is specific to the domain that publishes investigations into Judge Wilson Loo.
+  - Exhibit E: A Bing Site Scan initiated by the site owner reports HTTP 400-499 errors on the homepage (https://gtcode.com/) at page depth 0. Independent testing confirms the homepage returns HTTP 200 to all user agents, including bingbot. URL Inspection of the same homepage says "Discovered but not crawled" — discovered 14 Nov 2017, never crawled in 8+ years — directly contradicting the Site Scan (a 4xx error requires a crawl attempt that returned a response). A consulting page on the same domain shows "Indexed successfully" but still returns zero results in site: search. A control domain (nshkr.com) on the identical stack (Hugo, GitHub Pages, Cloudflare, same registrar) experiences no such errors and is not blocked. This eliminates infrastructure, CDN, hosting, and DNS misconfiguration as explanations — the contradictory diagnostics are specific to the domain that publishes investigations into Judge Wilson Loo.
 
   CONTEXT:
   This suppression was documented after the publication of investigations into Judge Wilson M.N. Loo's alleged subornation of perjury and the institutional capture networks protecting him. The pattern mirrors the media blackout dynamics documented in "The Zone of Politeness" — but applied to search infrastructure instead of newsrooms.
@@ -280,6 +280,16 @@ The homepage returns HTTP 200 — the standard success response — to every use
 
 This was tested independently on February 18, 2026, using multiple user agents and protocol versions against the live site. Every request succeeded. The 4xx error Bing reports is not reproducible from outside Bing's own infrastructure.
 
+A URL Inspection was then run on the homepage itself — the same URL the Site Scan claimed was returning 4xx errors:
+
+![Bing URL Inspection showing "Discovered but not crawled" and "URL cannot appear on Bing" for gtcode.com homepage, February 18, 2026](/img/bing-block-homepage-not-crawled-20260218.png)
+
+The result: **"Discovered but not crawled. URL cannot appear on Bing."** The crawl section states: *"The inspected URL is known to Bing but has some issues which are preventing indexation."* No specifics. No actionable explanation. Just a vague advisory to "follow Bing Webmaster Guidelines."
+
+But the most revealing detail is the discovery date: **14 November 2017**. Bing has known about this URL for over eight years. It was discovered, and then — according to Bing's own tools — never crawled. Not once in eight years. For a homepage. On a domain with a valid sitemap, a permissive robots.txt, and content that loads for every other crawler on the internet.
+
+The Site Scan says the homepage returns a 4xx error. The URL Inspection says it was never crawled. Both cannot be true. If the page was never crawled, there is no request to generate a 4xx response. If there was a 4xx response, the page was crawled. Bing's own diagnostic tools are contradicting each other on the same URL, on the same day.
+
 ### The Contradiction Within the Contradiction
 
 On the same day, a URL Inspection was run on a different page: `https://gtcode.com/consulting/` — a simple services page with no investigative content.
@@ -292,6 +302,7 @@ Compare this to the other URL Inspections documented in this investigation:
 
 | Page | Content | Bing Status |
 |------|---------|-------------|
+| `/` | Homepage | **Discovered but not crawled** |
 | `/investigation/the-nod-wilson-loo-silent-felony/` | Judicial corruption investigation | **Blocked** |
 | `/repos/agent_session_manager/` | Open-source Elixir software docs | **Blocked** |
 | `/consulting/` | Services page | **Indexed successfully** |
@@ -299,11 +310,13 @@ Compare this to the other URL Inspections documented in this investigation:
 Bing's own URL Inspection tool reports that a consulting page on `gtcode.com` is indexed and can appear in search results. But recall Exhibit A: a `site:gtcode.com` search on Bing returns **zero results**. Not reduced results. Not filtered results. Zero.
 
 So Bing's tools simultaneously claim:
+- The homepage was "Discovered but not crawled" — yet the Site Scan reports a 4xx error on the same URL, which requires a crawl attempt
+- The homepage has been known to Bing since 2017 but was supposedly never crawled in eight years
 - The consulting page is indexed and can appear — but the domain returns nothing in search
 - The investigation and software pages are "Blocked" and cannot appear
 - The homepage generates a phantom 4xx error that doesn't exist
 
-Three different diagnostic outputs from the same toolset, on the same domain, on the same day. The one page Bing claims is fine still doesn't appear in search. The suppression operates above the page-level status — it is applied at a layer that overrides Bing's own inspection results.
+Four different URL statuses from the same toolset, on the same domain, on the same day — plus a Site Scan that contradicts the URL Inspection of the same page. The one page Bing claims is fine still doesn't appear in search. The suppression operates above the page-level status — it is applied at a layer that overrides Bing's own inspection results.
 
 ### The Control Domain
 
