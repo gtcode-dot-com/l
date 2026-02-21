@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-03T16:15:31.484544+00:00'
-exported_at: '2026-02-03T16:15:34.267413+00:00'
+date: '2026-02-21T06:12:40.198419+00:00'
+exported_at: '2026-02-21T06:12:44.330667+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3
 structured_data:
@@ -23,7 +23,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+'
-updated_at: '2026-02-03T16:15:31.484544+00:00'
+updated_at: '2026-02-21T06:12:40.198419+00:00'
 url_hash: 4ef281278407b4321b4d13c1f615a4bd9d8e19e6
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-11-27T00:00:33.475563+00:00'
-exported_at: '2025-11-27T00:00:36.271805+00:00'
+date: '2026-02-21T06:13:17.731785+00:00'
+exported_at: '2026-02-21T06:13:19.042499+00:00'
 feed: https://source.opennews.org/rss/
 language: en
 source_url: https://source.opennews.org/articles/what-does-peer-support-look-like
@@ -28,7 +28,7 @@ structured_data:
     name: gtcode.com
 title: 'What does peer support in journalism look like: Insights from U.S. and international
   experts'
-updated_at: '2025-11-27T00:00:33.475563+00:00'
+updated_at: '2026-02-21T06:13:17.731785+00:00'
 url_hash: 4b75ac3b9bb85298816bba676b6ff7880fdfa87e
 ---
 

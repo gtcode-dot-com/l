@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-04T12:15:43.500780+00:00'
-exported_at: '2026-02-04T12:15:45.787596+00:00'
+date: '2026-02-21T06:13:15.487770+00:00'
+exported_at: '2026-02-21T06:13:19.051436+00:00'
 feed: https://source.opennews.org/rss/
 language: en
 source_url: https://source.opennews.org/articles/our-gatherings-could-be-so-much-better
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Our gatherings could be so much better
-updated_at: '2026-02-04T12:15:43.500780+00:00'
+updated_at: '2026-02-21T06:13:15.487770+00:00'
 url_hash: 4f993489067d0e5c0583d92a602c5bdeb4706bd8
 ---
 
@@ -35,7 +35,7 @@ We attend because we believe in showing up to create a better future of journali
 
 The same speakers present the same slides about the same problems to the same audience, year after year. New or outside voices rarely make it into these conversations, because who counts as a “key” person gets defined by the group itself. The validation is circular, and that's exactly the problem.
 
-This isn't a complaint about any particular event. It's an observation about a pattern that we’re all participating in: preserving podiums in industry spaces for familiar faces instead of welcoming new voices Year after year, journalism gatherings can feel like a cruise ship tour to celebrate the same winners in different settings, rather than fresh spaces to explore fresh ideas.
+This isn't a complaint about any particular event. It's an observation about a pattern that we’re all participating in: preserving podiums in industry spaces for familiar faces instead of welcoming new voices. Year after year, journalism gatherings can feel like a cruise ship tour to celebrate the same winners in different settings, rather than fresh spaces to explore fresh ideas.
 
 It’s a dangerous cycle. We end up pushing out the ones we often claim we praise: the people from less familiar spaces figuring out what actually works. Instead, we default to theatrics of glamorizing established voices and, in turn, keep failing to solve the same problems we keep showing up to discuss: how to reach communities that traditional newsrooms have ignored, provide information services people genuinely need, and build sustainable models that don't depend on foundation cycles.
 
@@ -49,11 +49,13 @@ Our events should extend the first invitation to those propelling innovation. Bu
 
 When the same people keep talking to each other, ideas calcify. Solutions that failed in 2019 get repackaged with fresh trends, like the
 AI
-or creator economy buzzwords, and presented as novel thinking in 2025. Allegiance to established figures becomes more important than whether someone actually has something new to contribute, and tolerance for those with differing thinking or experiences diminishes (and eventually, those folks leave the industry.)
+or creator economy buzzwords, and presented as novel thinking in 2026. Allegiance to established figures becomes more important than whether someone actually has something new to contribute, and tolerance for those with differing thinking or experiences diminishes (and eventually, those
+[folks leave the industry](https://source.opennews.org/articles/what-we-learned-year-exit-interviews/)
+.)
 
 We all have been in rooms where the people doing the most interesting work on the ground (often organizers, technologists, researchers, small-newsroom founders) are absent from the main stage while executives give speeches about transformation they're not actually implementing. At a recent civic journalism conference, a local events creator told us they felt “talked at” by executives instead of conversed with. They’d attended to learn about journalism and share their work with journalists after finding the conference on a public events calendar. Instead, they felt shut out.
 
-This is just one of many examples. Everyone is trying to preserve positioning in times of extreme constraint. But when gatherings don’t do what they’re supposed to do — invite and share new perspectives and ideas — there’s consequences. This matters because journalism's relevance crisis won't be solved by the same approaches that created it.
+This is just one of many examples. Everyone is trying to preserve positioning in times of extreme constraint. But when gatherings don’t do what they’re supposed to do — invite and share new perspectives and ideas — there are consequences. This matters because journalism's relevance crisis won't be solved by the same approaches that created it.
 
 And when new entrants arrive to find an industry that is dishonest about its opportunities - when they occur at private side-events rather than center stage - we create a culture that will never truly welcome genuine innovation.
 
@@ -61,7 +63,9 @@ And when new entrants arrive to find an industry that is dishonest about its opp
 
 The thing is, there's so much happening outside our usual circles.
 
-Some gatherings already break this pattern. Perspectives, a volunteer side project founded in 2022 by Andrew Losowsky, Ariel Zirulnick and Robin Kwong, brings in experts from other fields who are navigating the same challenges as journalists, introducing tactics and strategies from elsewhere that we can bring back to our own work. It's a great idea: stop talking only to ourselves.
+Some gatherings already break this pattern.
+[Perspectives](https://perspectives.info/)
+, a volunteer side project founded in 2022 by Andrew Losowsky, Ariel Zirulnick and Robin Kwong, brings in experts from other fields who are navigating the same challenges as journalists, introducing tactics and strategies from elsewhere that we can bring back to our own work. It's a great idea: stop talking only to ourselves.
 
 There's also small shifts at traditional events: More unconference sessions allow attendees to influence the conference agenda organically, and more spaces are hosting professional development opportunities for marginalized and early career folks. These support the people who will actually be in the seat to lead the industry's future to participate.
 

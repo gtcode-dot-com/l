@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-03T12:15:28.701726+00:00'
-exported_at: '2026-02-03T12:15:31.030161+00:00'
+date: '2026-02-21T06:12:41.248918+00:00'
+exported_at: '2026-02-21T06:12:44.326442+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/Photoroom/prx-part2
 structured_data:
@@ -23,7 +23,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'Training Design for Text-to-Image Models: Lessons from Ablations'
-updated_at: '2026-02-03T12:15:28.701726+00:00'
+updated_at: '2026-02-21T06:12:41.248918+00:00'
 url_hash: e8ffb2c626a5f54bd3822d4390ef76f1ad6e2060
 ---
 
@@ -31,7 +31,9 @@ url_hash: e8ffb2c626a5f54bd3822d4390ef76f1ad6e2060
 
 [![image](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/sAbRvxS84gKtil9BEaqXP.png)](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/sAbRvxS84gKtil9BEaqXP.png)
 
-Welcome back! This is the second part of our series on training efficient text-to-image models from scratch.
+Welcome back! This is the second part of
+[our series on training efficient text-to-image models from scratch](https://huggingface.co/blog/Photoroom/prx-open-source-t2i-model)
+.
 
 In the
 [first post of this series](https://huggingface.co/blog/Photoroom/prx-part1-architectures)
@@ -42,9 +44,13 @@ We also
 [released an early, small (1.2B parameters) version of the model](https://huggingface.co/spaces/Photoroom/PRX-1024-beta-version)
 as a preview of what we are building (go try it if you haven't already 😉).
 
-In this post, we shift our focus from architecture to training. The goal is to document what actually moved the needle for us when trying to make models train faster, converge more reliably, and learn better representations. The field is moving quickly and the list of “training tricks” keeps growing, so rather than attempting an exhaustive survey, we structured this as an experimental logbook: we reproduce (or adapt) a set of recent ideas, implement them in a consistent setup, and report how they affect optimization and convergence in practice. Finally, we do not only report these techniques in isolation; we also explore which ones remain useful when combined.
+In this post, we shift our focus from architecture to training.
+**The goal is to document what actually moved the needle for us**
+when trying to make models train faster, converge more reliably, and learn better representations. The field is moving quickly and the list of “training tricks” keeps growing, so rather than attempting an exhaustive survey, we structured this as an experimental logbook: we reproduce (or adapt) a set of recent ideas, implement them in a consistent setup, and report how they affect optimization and convergence in practice. Finally, we do not only report these techniques in isolation; we also explore which ones remain useful when combined.
 
-In the next post, we will publish the full training recipe as code, including the experiments in this post.
+In the next post,
+**we will publish the full training recipe as code**
+, including the experiments in this post.
 **We will also run and report on a public "speedrun"**
 where we put the best pieces together into a single configuration and stress-test it end-to-end. This exercise will serve both as a stress test of our current training pipeline and as a concrete demonstration of how far careful training design can go under tight constraints.
 If you haven’t already, we invite you to join our
@@ -101,7 +107,7 @@ To keep this post grounded, we rely on a small set of metrics to monitor checkpo
   (
   [Jayasumana et al., 2024](https://openaccess.thecvf.com/content/CVPR2024/papers/Jayasumana_Rethinking_FID_Towards_a_Better_Evaluation_Metric_for_Image_Generation_CVPR_2024_paper.pdf)
   ) Measures the distance between real and generated image distributions using CLIP image embeddings and Maximum Mean Discrepancy (MMD). Unlike FID, CMMD does not assume Gaussian feature distributions and can be more sample-efficient; in practice it often tracks perceptual quality better than FID, though it is still an imperfect proxy.
-* **DINOv2 Maximum Mean Discrepancy (DinoMMD):**
+* **DINOv2 Maximum Mean Discrepancy (DINO-MMD):**
   Same MMD-based distance as CMMD, but computed on DINOv2 (
   [Oquab et al. 2023](https://arxiv.org/abs/2304.07193)
   ) image embeddings instead of CLIP. This provides a complementary view of distribution shift under a self-supervised vision backbone.
@@ -1315,7 +1321,7 @@ We ran REPA on top of our baseline PRX training, using two frozen teachers:
 and
 **DINOv3**
 (
-[Siméoni et al., 2025](https://ai.meta.com/research/publications/dinov3/)
+[Siméoni et al., 2025](https://arxiv.org/abs/2508.10104)
 ). The pattern was very consistent:
 **adding alignment improves quality metrics**
 , and the stronger teacher helps more, at the cost of a bit of speed.
@@ -2283,6 +2289,8 @@ A key advantage is that the objective is almost a drop-in replacement: you keep 
 
 ### What we observed
 
+[![image](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/62As0PavSB4rxTIm-OHYY.png)](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/62As0PavSB4rxTIm-OHYY.png)
+
 | Method | FID ↓ | CMMD ↓ | DINO-MMD ↓ | batches/sec ↑ |
 | --- | --- | --- | --- | --- |
 | Baseline | 18.20 | 0.41 | 0.39 | 3.95 |
@@ -3241,7 +3249,8 @@ We first evaluated
 in the same setting as the rest of our objective experiments, namely
 **training in the FLUX latent space at 256×256 resolution**
 .
-[![image](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/62As0PavSB4rxTIm-OHYY.png)](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/62As0PavSB4rxTIm-OHYY.png)
+
+[![image](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/BoNl8yyAr9ziOT7ORceKr.png)](https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/BoNl8yyAr9ziOT7ORceKr.png)
 
 | Method | FID ↓ | CMMD ↓ | DINO-MMD ↓ | batches/sec ↑ |
 | --- | --- | --- | --- | --- |
@@ -3815,13 +3824,15 @@ We ran a systematic set of ablations on PRX training, comparing a range of optim
 
 The biggest gains came from alignment: REPA boosts early convergence (best used as a burn-in, then turned off), and better latents/tokenizers (REPA-E/FLUX2-AE) give a large jump in quality with clear speed trade-offs. Objective tweaks were mixed—contrastive FM helped slightly, while x-prediction mattered most by enabling stable 1024² pixel training. Token routing (TREAD/SPRINT) is minor at 256² but becomes a major win at high resolution. Data and practical details also mattered: long captions are critical, synthetic vs. real data shifts texture vs. structure, small SFT adds polish, Muon helped, and BF16-stored weights quietly hurt training.
 
+## What's next?
+
 That’s it for Part 2! If you want to play with an earlier public checkpoint from this series, the
 **PRX-1024 T2I beta**
 is still available
 [here](https://huggingface.co/Photoroom/prx-1024-t2i-beta)
 .
 
-Weare really excited about what’s next:
+We're really excited about what’s next:
 **in the coming weeks we will release the full source code of the PRX training framework**
 , and we will do a public
 **24-hour “speedrun”**

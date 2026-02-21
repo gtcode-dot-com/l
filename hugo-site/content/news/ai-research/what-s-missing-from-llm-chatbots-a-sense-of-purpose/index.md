@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-14T01:07:10.576796+00:00'
-exported_at: '2025-12-14T01:07:13.235449+00:00'
+date: '2026-02-21T06:12:43.190140+00:00'
+exported_at: '2026-02-21T06:12:44.312513+00:00'
 feed: https://thegradient.pub/rss/
 language: en
 source_url: https://thegradient.pub/dialog
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: 'What''s Missing From LLM Chatbots: A Sense of Purpose'
-updated_at: '2025-12-14T01:07:10.576796+00:00'
+updated_at: '2026-02-21T06:12:43.190140+00:00'
 url_hash: 66cf0c972a12f469e84a2d3969d8288b9e7a0b76
 ---
 

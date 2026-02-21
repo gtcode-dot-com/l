@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-14T01:07:10.194904+00:00'
-exported_at: '2025-12-14T01:07:13.240033+00:00'
+date: '2026-02-21T06:12:42.696697+00:00'
+exported_at: '2026-02-21T06:12:44.318620+00:00'
 feed: https://thegradient.pub/rss/
 language: en
 source_url: https://thegradient.pub/shape-symmetry-structure
@@ -33,7 +33,7 @@ structured_data:
     name: gtcode.com
 title: 'Shape, Symmetries, and Structure: The Changing Role of Mathematics in Machine
   Learning Research'
-updated_at: '2025-12-14T01:07:10.194904+00:00'
+updated_at: '2026-02-21T06:12:42.696697+00:00'
 url_hash: 70e3dc831fe6f660cc7e49400e46a95ed3f5b776
 ---
 

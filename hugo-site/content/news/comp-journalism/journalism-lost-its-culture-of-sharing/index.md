@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-27T12:15:39.876826+00:00'
-exported_at: '2026-01-27T12:15:43.914263+00:00'
+date: '2026-02-21T06:13:16.701175+00:00'
+exported_at: '2026-02-21T06:13:19.048711+00:00'
 feed: https://source.opennews.org/rss/
 language: en
 source_url: https://source.opennews.org/articles/journalism-lost-sharing-culture
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Journalism lost its culture of sharing
-updated_at: '2026-01-27T12:15:39.876826+00:00'
+updated_at: '2026-02-21T06:13:16.701175+00:00'
 url_hash: 290f661870354a23d10be70f14a9868d11f47df1
 ---
 
@@ -231,4 +231,6 @@ While many institutional funders have open-source requirements in grant agreemen
 
 –
 
-The code and data used to produce this analysis are available on GitHub. Follow @openjournalism.bsky.social to be notified whenever a news organization releases code.
+The code and data used to produce this analysis are available on
+[GitHub](https://github.com/palewire/open-source-news-analysis)
+. Follow @openjournalism.bsky.social to be notified whenever a news organization releases code.

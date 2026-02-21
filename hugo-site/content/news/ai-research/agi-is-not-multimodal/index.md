@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-14T01:07:09.345466+00:00'
-exported_at: '2025-12-14T01:07:13.245181+00:00'
+date: '2026-02-21T06:12:41.971466+00:00'
+exported_at: '2026-02-21T06:12:44.323037+00:00'
 feed: https://thegradient.pub/rss/
 language: en
 source_url: https://thegradient.pub/agi-is-not-multimodal
@@ -31,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: AGI Is Not Multimodal
-updated_at: '2025-12-14T01:07:09.345466+00:00'
+updated_at: '2026-02-21T06:12:41.971466+00:00'
 url_hash: 255d0fc950f33d7a54dd4df0abfc4b500f67c7db
 ---
 
