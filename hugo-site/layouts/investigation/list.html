@@ -50,8 +50,10 @@
       <div class="ou-cards">
         {{ range .Pages }}
         <article class="ou-card">
-          {{ with .Params.eyebrow }}
-          <div class="ou-card-icon">{{ . }}</div>
+          {{ if .Params.series_url }}
+          <a href="{{ .Params.series_url }}" class="ou-card-icon ou-card-icon-link">{{ .Params.eyebrow | default "Investigative File" }}</a>
+          {{ else if .Params.eyebrow }}
+          <div class="ou-card-icon">{{ .Params.eyebrow }}</div>
           {{ end }}
           <h3 class="ou-card-title">{{ .Title }}</h3>
           {{ with .Params.card_summary }}

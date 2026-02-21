@@ -24,6 +24,12 @@ meta_keywords:
   - "Commission on Judicial Conduct"
   - "judicial misconduct complaints hawaii"
 
+# Series
+series: "The Closed Loop"
+series_url: "/investigation/the-closed-loop/"
+series_part: "Part I"
+series_part_title: "The Judicial Branch"
+
 # Card Display
 eyebrow: "The Closed Loop"
 card_summary: "Seven members. All appointed by the Supreme Court they exist to oversee. 1,009 inquiries. Seven formal complaints. Zero sustained. This is the architecture of unaccountability."

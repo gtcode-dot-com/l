@@ -11,7 +11,11 @@
   <article class="ou-article">
     <header class="ou-article-header">
       {{ with .Params.eyebrow }}
-        <span class="ou-article-badge">{{ . }}</span>
+        {{ if $.Params.series_url }}
+          <a href="{{ $.Params.series_url }}" class="ou-article-badge ou-article-badge-link">{{ . }}</a>
+        {{ else }}
+          <span class="ou-article-badge">{{ . }}</span>
+        {{ end }}
       {{ end }}
       <h1 class="ou-article-title">{{ .Title }}</h1>
       {{ with .Params.subtitle }}
@@ -38,6 +42,37 @@
     <div class="ou-article-content">
       {{ .Content }}
     </div>
+
+    {{/* Series Navigation */}}
+    {{ if .Params.series_url }}
+    {{ $seriesName := .Params.series }}
+    {{ $currentPath := .RelPermalink }}
+    {{ $allInSeries := where (where .Site.RegularPages "Section" "investigation") "Params.series" $seriesName }}
+    {{ $allInSeries = sort $allInSeries "Params.series_part" "asc" }}
+    {{ if gt (len $allInSeries) 1 }}
+    <nav class="ou-series-nav" aria-label="Series navigation">
+      <div class="ou-series-nav-header">
+        <a href="{{ $.Params.series_url }}" class="ou-series-nav-title">{{ $seriesName }}</a>
+        <span class="ou-series-nav-count">{{ len $allInSeries }} parts</span>
+      </div>
+      <ol class="ou-series-nav-list">
+        {{ range $allInSeries }}
+        <li class="ou-series-nav-item{{ if eq .RelPermalink $currentPath }} ou-series-nav-current{{ end }}">
+          {{ if eq .RelPermalink $currentPath }}
+            <span class="ou-series-nav-part">{{ .Params.series_part }}</span>
+            <span class="ou-series-nav-label">{{ .Title }}</span>
+          {{ else }}
+            <a href="{{ .RelPermalink }}">
+              <span class="ou-series-nav-part">{{ .Params.series_part }}</span>
+              <span class="ou-series-nav-label">{{ .Title }}</span>
+            </a>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ol>
+    </nav>
+    {{ end }}
+    {{ end }}
 
     <footer class="ou-article-footer">
       <a class="ou-article-back" href="/investigation/">&larr; Back to Investigations</a>

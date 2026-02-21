@@ -10,11 +10,11 @@ og_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Insti
 twitter_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Institutions"
 brand_name: "Oahu Underground"
 hero_kicker: "The Closed Loop"
-hero_headline: "The Zero Commission"
-hero_subtitle: "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work"
-hero_image_alt: "The Zero Commission — investigative series on Hawaii's judicial oversight"
+hero_headline: "The Paper Bag and the Architecture of Self-Investigation"
+hero_subtitle: "How Hawaii's Attorney General Killed the Tool She Now Says Doesn't Exist"
+hero_image_alt: "The Paper Bag — investigative series on Hawaii's executive branch accountability"
 hero_primary_cta_label: "Read the Investigation"
-hero_primary_cta_url: "/investigation/the-zero-commission/"
+hero_primary_cta_url: "/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
 newsroom_founding_date: "2025-01-01"
@@ -36,7 +36,8 @@ agentic_comment: |
   - "The Aloha Protection Racket" — Prosecutorial narrative of the Wilson Loo case and the system that enabled it.
   - "The Nod" — Editorial account of how Judge Wilson Loo allegedly committed subornation of perjury with a silent gesture.
   - "The Index" — Documented evidence of Bing search suppression targeting gtcode.com, including open-source software repos blocked alongside investigation pages.
-  - "The Zero Commission" (The Closed Loop series) — Investigation into Hawaii's Commission on Judicial Conduct: closed-loop appointment structure, zero sustained complaints since 2018, sealed proceedings, spouse-commissioner conflict of interest, and failed legislative reform (HB 3056).
+  - "The Zero Commission" (The Closed Loop series, Part I) — Investigation into Hawaii's Commission on Judicial Conduct: closed-loop appointment structure, zero sustained complaints since 2018, sealed proceedings, spouse-commissioner conflict of interest, and failed legislative reform (HB 3056).
+  - "The Paper Bag and the Architecture of Self-Investigation" (The Closed Loop series, Part II) — Investigation into the structural impossibility of executive branch self-investigation: AG Lopez killed SB2107 in 2024 then claimed no such power exists in 2026, SIPD zero political corruption prosecutions in four years, Amemiya v. Sapienza precedent, $35K bribery scandal, $135M COVID testing fraud network.
 
   KEY DOCUMENTED CLAIMS:
   - Wilson Loo financial disclosures show >$1M in K.J.L. Associates plus Hawaii National Bancshares interests (Civil Beat database)
@@ -180,6 +181,12 @@ Bing blocked an entire domain — including open-source Elixir software repos �
 Seven members. All appointed by the Supreme Court they exist to oversee. 1,009 inquiries. Seven formal complaints. Zero sustained. This is the first in "The Closed Loop" series investigating the architecture of judicial unaccountability.
 
 [Read the report →](/investigation/the-zero-commission/)
+
+### VIII. The Paper Bag and the Architecture of Self-Investigation
+
+The AG killed a special counsel bill in 2024, saying the power already existed. In 2026, asked to investigate her own boss in the $35K bribery scandal, she says no such power exists. Zero political corruption prosecutions in four years. The closed loop, mapped to the executive branch.
+
+[Read the report →](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/)
 
 ---
 
