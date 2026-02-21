@@ -163,4 +163,4 @@ The Attorney General killed a special counsel bill in 2024, testifying that the 
 
 ---
 
-*The Closed Loop is an ongoing series. Future installments will examine law enforcement oversight, the Ethics Commission, and campaign finance enforcement. If you have information relevant to these investigations, contact the author at ZeroTrust@NSHkr.com.*
+*The Closed Loop is an ongoing series. Future installments will examine law enforcement oversight, the Ethics Commission, and campaign finance enforcement. If you have information relevant to these investigations, contact the author at TheClosedLoop@GTCode.com.*

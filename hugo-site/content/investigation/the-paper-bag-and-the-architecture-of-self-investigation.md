@@ -358,7 +358,7 @@ The silence has not broken. But the architecture is visible now. And architectur
 
 ---
 
-*This is the second article in The Closed Loop series. [Part I: The Zero Commission](/investigation/the-zero-commission/) documented the judicial branch. If you have information about SIPD's operations, the SB2107 testimony, or the disposition of SIPD's required legislative reports, contact the author at ZeroTrust@NSHkr.com.*
+*This is the second article in The Closed Loop series. [Part I: The Zero Commission](/investigation/the-zero-commission/) documented the judicial branch. If you have information about SIPD's operations, the SB2107 testimony, or the disposition of SIPD's required legislative reports, contact the author at TheClosedLoop@GTCode.com.*
 
 ---
 
