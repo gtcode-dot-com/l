@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-14T23:10:30.697234+00:00'
-exported_at: '2026-02-14T23:10:35.590858+00:00'
+date: '2026-02-22T08:15:15.175287+00:00'
+exported_at: '2026-02-22T08:15:19.310368+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Patch Tuesday, February 2026 Edition
-updated_at: '2026-02-14T23:10:30.697234+00:00'
+updated_at: '2026-02-22T08:15:15.175287+00:00'
 url_hash: 742a6972155a7eaac533c94edbecf71a1a74c21a
 ---
 

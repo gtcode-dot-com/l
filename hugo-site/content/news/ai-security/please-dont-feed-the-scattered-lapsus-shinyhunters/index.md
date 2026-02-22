@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-14T23:10:31.910642+00:00'
-exported_at: '2026-02-14T23:10:35.588113+00:00'
+date: '2026-02-22T08:15:15.770000+00:00'
+exported_at: '2026-02-22T08:15:19.308606+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Please Don’t Feed the Scattered Lapsus ShinyHunters
-updated_at: '2026-02-14T23:10:31.910642+00:00'
+updated_at: '2026-02-22T08:15:15.770000+00:00'
 url_hash: 2d988be7d3ea0def2a176e5253ee53335520880a
 ---
 

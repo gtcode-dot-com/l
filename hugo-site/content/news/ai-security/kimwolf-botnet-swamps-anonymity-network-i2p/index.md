@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-14T23:10:29.428918+00:00'
-exported_at: '2026-02-14T23:10:35.593433+00:00'
+date: '2026-02-22T08:15:14.584151+00:00'
+exported_at: '2026-02-22T08:15:19.311827+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Kimwolf Botnet Swamps Anonymity Network I2P
-updated_at: '2026-02-14T23:10:29.428918+00:00'
+updated_at: '2026-02-22T08:15:14.584151+00:00'
 url_hash: 955929a474270f7cf11203a7209c5c2fac37ae68
 ---
 

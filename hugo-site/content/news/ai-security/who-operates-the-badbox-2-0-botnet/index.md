@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-14T23:10:33.141217+00:00'
-exported_at: '2026-02-14T23:10:35.585181+00:00'
+date: '2026-02-22T08:15:16.375216+00:00'
+exported_at: '2026-02-22T08:15:19.306635+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Who Operates the Badbox 2.0 Botnet?
-updated_at: '2026-02-14T23:10:33.141217+00:00'
+updated_at: '2026-02-22T08:15:16.375216+00:00'
 url_hash: f55d8c8d6ba10b5a9f5f0b63aab5e5e4e7d267eb
 ---
 
