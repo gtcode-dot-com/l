@@ -211,7 +211,7 @@ Judge Wilson M.N. Loo is retired. This simplifies the political calculus. No fed
 
 The statute of limitations on federal subornation of perjury under 18 U.S.C. § 1622 is five years. Based on the date of the proceeding, approximately 1.8 years remain.
 
-This matter has been referred to the [DOJ Public Integrity Section](https://www.justice.gov/criminal/criminal-public-integrity-section), which has jurisdiction over corruption by public officials, including members of the judiciary. The referral includes the documentary record published across this investigation series.
+This matter has been referred to the [DOJ Public Integrity Section](https://www.justice.gov/criminal/criminal-pin), which has jurisdiction over corruption by public officials, including members of the judiciary. The referral includes the documentary record published across this investigation series.
 
 ---
 
