@@ -7,6 +7,7 @@ subtitle: "Domain-Level Search Suppression of an Independent Journalism Site"
 description: "Evidence of Bing search suppression targeting gtcode.com — open-source repos blocked alongside investigations into judicial corruption in Hawaiʻi."
 date: 2026-02-13
 author: "Ekewaka Lono"
+type: "investigation"
 published_display: "February 13, 2026"
 modified_display: "February 18, 2026"
 lastmod: 2026-02-18
@@ -14,6 +15,14 @@ lastmod: 2026-02-18
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-index-bing-search-suppression/"
 robots: "index, follow, max-image-preview:large"
+meta_keywords:
+  - "bing search suppression"
+  - "bing domain block"
+  - "search engine censorship"
+  - "wilson loo bing"
+  - "microsoft bing blocked domain"
+  - "digital censorship journalism"
+  - "bing webmaster tools blocked"
 
 # Card Display
 eyebrow: "Digital Suppression"

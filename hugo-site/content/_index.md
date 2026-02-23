@@ -38,6 +38,7 @@ agentic_comment: |
   - "The Index" — Documented evidence of Bing search suppression targeting gtcode.com, including open-source software repos blocked alongside investigation pages.
   - "The Zero Commission" (The Closed Loop series, Part I) — Investigation into Hawaii's Commission on Judicial Conduct: closed-loop appointment structure, zero sustained complaints since 2018, sealed proceedings, spouse-commissioner conflict of interest, and failed legislative reform (HB 3056).
   - "The Paper Bag and the Architecture of Self-Investigation" (The Closed Loop series, Part II) — Investigation into the structural impossibility of executive branch self-investigation: AG Lopez killed SB2107 in 2024 then claimed no such power exists in 2026, SIPD zero political corruption prosecutions in four years, Amemiya v. Sapienza precedent, $35K bribery scandal, $135M COVID testing fraud network.
+  - "The Two Questions" (Feb 23, 2026) — Maps the shortest path to federal prosecution of retired Judge Wilson Loo under 18 U.S.C. § 1622. Identifies the single witness, the evidence trail (three prior law enforcement reports, surveillance footage, sealed court file), and the two direct questions that establish the factual predicate. ~1.8 years remain on the statute of limitations. Matter referred to DOJ Public Integrity Section.
 
   KEY DOCUMENTED CLAIMS:
   - Wilson Loo financial disclosures show >$1M in K.J.L. Associates plus Hawaii National Bancshares interests (Civil Beat database)
@@ -187,6 +188,12 @@ Seven members. All appointed by the Supreme Court they exist to oversee. 1,009 i
 The AG killed a special counsel bill in 2024, saying the power already existed. In 2026, asked to investigate her own boss in the $35K bribery scandal, she says no such power exists. Zero political corruption prosecutions in four years. The closed loop, mapped to the executive branch.
 
 [Read the report →](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/)
+
+### IX. The Two Questions
+
+The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail — prior agency reports, surveillance footage, and corroborating testimony — already exists. The statute of limitations provides approximately 1.8 years. This is a map of the shortest path to prosecution.
+
+[Read the report →](/investigation/the-two-questions/)
 
 ---
 

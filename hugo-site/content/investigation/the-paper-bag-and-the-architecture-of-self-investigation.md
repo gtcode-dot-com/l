@@ -6,7 +6,9 @@ seo_title: "The Paper Bag — Hawaii AG Conflict of Interest in the $35K Bribery
 subtitle: "How Hawaii's Attorney General Killed the Tool She Now Says Doesn't Exist"
 description: "Hawaii's AG opposed a special counsel bill in 2024 saying she already had the power. In 2026, investigating her own boss, she claims no such power exists. An investigation into the structural impossibility of executive branch self-investigation."
 date: 2026-02-20
+lastmod: 2026-02-20
 author: "Ekewaka Lono"
+type: "investigation"
 published_display: "February 20, 2026"
 
 # SEO & Indexing

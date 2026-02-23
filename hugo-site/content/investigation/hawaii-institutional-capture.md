@@ -7,12 +7,21 @@ description: "Multi-decade case study showing how legal, law-enforcement, and co
 date: 2025-08-13
 lastmod: 2025-11-09
 author: "Ekewaka Lono"
+type: "investigation"
+seo_title: "Institutional Decay in Hawaii — A Case Study in Systemic Protection"
 published_display: "August 13, 2025"
 modified_display: "November 9, 2025"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/hawaii-institutional-capture/"
 robots: "index, follow, max-image-preview:large"
+meta_keywords:
+  - "institutional capture hawaii"
+  - "systemic corruption hawaii"
+  - "hawaii law enforcement"
+  - "symbiotic decay"
+  - "hawaii judicial system"
+  - "hawaii accountability failure"
 
 # Card Display
 eyebrow: "Case Study"
@@ -42,6 +51,7 @@ twitter_card: "summary_large_image"
 twitter_title: "Institutional Decay in Hawaii: A Case Study"
 twitter_description: "Multi-decade analysis of how Hawaii's institutions protect connected interests while neutralizing accountability."
 twitter_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+twitter_image_alt: "Institutional Decay in Hawaii — case study in systemic protection"
 
 # Agentic Context
 agentic_comment: |

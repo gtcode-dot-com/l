@@ -7,12 +7,21 @@ description: "Investigative report by Ekewaka Lono exposing alleged suborning of
 date: 2025-06-12
 lastmod: 2025-11-09
 author: "Ekewaka Lono"
+type: "investigation"
+seo_title: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption in Hawaii"
 published_display: "June 12, 2025"
 modified_display: "November 9, 2025"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/hawaii-justice-system-wilson-loo/"
 robots: "index, follow, max-image-preview:large"
+meta_keywords:
+  - "wilson loo hawaii"
+  - "judicial corruption hawaii"
+  - "suborning perjury hawaii"
+  - "hawaii judge misconduct"
+  - "commission on judicial conduct"
+  - "hawaii court corruption"
 
 # Card Display
 eyebrow: "Judicial Probe"

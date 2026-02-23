@@ -5,7 +5,10 @@ date: 2026-02-05
 lastmod: 2026-02-05
 author: Ekewaka Lono
 draft: false
+type: "investigation"
+seo_title: "Cartography for Guppies — A Publisher's Note from Oahu Underground"
 subtitle: "A Publisher's Note"
+published_display: "February 5, 2026"
 eyebrow: "Publisher's Note"
 card_summary: "Why a guppy with a laptop is mapping the sharks — and how to read the map."
 description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground, an independent investigative journalism project mapping institutional power networks in Hawaiʻi through public records."

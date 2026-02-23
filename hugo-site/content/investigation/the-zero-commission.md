@@ -6,7 +6,9 @@ seo_title: "The Zero Commission — Judicial Corruption in Hawaii's Court Oversi
 subtitle: "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work"
 description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of complaints against judges since 2018. An investigation into judicial corruption, misconduct, and the broken oversight system protecting Hawaii's courts."
 date: 2026-02-15
+lastmod: 2026-02-15
 author: "Ekewaka Lono"
+type: "investigation"
 published_display: "February 15, 2026"
 
 # SEO & Indexing

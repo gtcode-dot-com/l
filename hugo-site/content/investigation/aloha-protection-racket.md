@@ -5,6 +5,9 @@ date: 2025-08-26
 lastmod: 2025-08-26
 author: Ekewaka Lono
 draft: false
+type: "investigation"
+seo_title: "The Aloha Protection Racket — Judge Wilson Loo and Judicial Corruption in Hawaii"
+published_display: "August 26, 2025"
 subtitle: "An Investigative Report on Judge Wilson Loo and the Criminal Enterprise Shielding (redacted)"
 eyebrow: "Lead Investigation"
 card_summary: "How a sitting judge, the police, and a connected network allegedly conspired to silence a victim and protect a violent offender in Hawaiʻi."

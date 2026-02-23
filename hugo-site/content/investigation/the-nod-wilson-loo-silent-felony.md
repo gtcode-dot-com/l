@@ -5,12 +5,22 @@ title: "The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit"
 subtitle: "How a Judge Committed a Crime with a Gesture"
 description: "An editorial account of how Judge Wilson M.N. Loo allegedly directed perjury from the bench with a silent nod, then sealed the record to bury the evidence."
 date: 2026-02-12
+lastmod: 2026-02-12
 author: "Ekewaka Lono"
+type: "investigation"
+seo_title: "The Nod — Wilson Loo and the Silent Felony in Hawaii's First Circuit"
 published_display: "February 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-nod-wilson-loo-silent-felony/"
 robots: "index, follow, max-image-preview:large"
+meta_keywords:
+  - "wilson loo silent felony"
+  - "suborning perjury hawaii"
+  - "hawaii judge nod perjury"
+  - "judicial misconduct hawaii"
+  - "wilson loo first circuit"
+  - "hawaii courtroom felony"
 
 # Card Display
 eyebrow: "Editorial"

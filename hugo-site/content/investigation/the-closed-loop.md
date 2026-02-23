@@ -8,6 +8,7 @@ description: "The Closed Loop is an investigative series documenting how every b
 date: 2026-02-15
 lastmod: 2026-02-20
 author: "Ekewaka Lono"
+type: "investigation"
 published_display: "February 15, 2026"
 modified_display: "February 20, 2026"
 layout: "series"

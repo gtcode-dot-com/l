@@ -5,13 +5,25 @@ title: "The Zone of Politeness: How Hawaiʻi's Media Blackout Works"
 subtitle: "Why Civil Beat Won't Touch the Luke-Loo Network"
 description: "An investigation into the structural forces that prevent Hawaiʻi's newsrooms from investigating certain networks, and the social enforcement mechanisms that follow when someone tries."
 date: 2026-02-04
+lastmod: 2026-02-05
 author: "Ekewaka Lono"
+type: "investigation"
+seo_title: "The Zone of Politeness: How Hawaiʻi's Media Blackout Works"
 published_display: "February 4, 2026"
 modified_display: "February 5, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/zone-of-politeness-hawaii-media-blackout/"
 robots: "index, follow, max-image-preview:large"
+
+meta_keywords:
+  - "hawaii media blackout"
+  - "civil beat donor network"
+  - "media capture hawaii"
+  - "wilson loo luke family"
+  - "hawaii investigative journalism"
+  - "omidyar punahou"
+  - "zone of politeness"
 
 # Card Display
 eyebrow: "Media Capture"

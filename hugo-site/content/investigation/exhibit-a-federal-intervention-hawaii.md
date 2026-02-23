@@ -1,17 +1,27 @@
 ---
 draft: false
+weight: 5
 title: "Exhibit A: A Prosecutor's Argument for Federal Intervention in Hawaii"
+seo_title: "Exhibit A — A Prosecutor's Argument for Federal RICO Intervention in Hawaii"
 subtitle: "The Lono File presented for RICO investigation"
 description: "Closing argument outlining the 'Lono File,' presented as Exhibit A for a federal RICO investigation into coordinated institutional capture across Hawaii."
 date: 2025-08-20
 lastmod: 2025-11-09
 author: "Ekewaka Lono"
+type: "investigation"
 published_display: "August 20, 2025"
 modified_display: "November 9, 2025"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/exhibit-a-federal-intervention-hawaii/"
 robots: "index, follow, max-image-preview:large"
+meta_keywords:
+  - "RICO hawaii"
+  - "federal intervention hawaii"
+  - "hawaii institutional capture"
+  - "hawaii corruption RICO"
+  - "lono file hawaii"
+  - "hawaii judicial corruption federal"
 
 # Card Display
 eyebrow: "Exhibit A"
@@ -42,6 +52,7 @@ twitter_card: "summary_large_image"
 twitter_title: "Exhibit A: A Prosecutor's Argument for Federal Intervention"
 twitter_description: "The Lono File: Evidence package for federal RICO investigation into Hawaii institutional capture."
 twitter_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+twitter_image_alt: "Exhibit A — federal intervention argument for Hawaii institutional capture"
 
 # Agentic Context
 agentic_comment: |
