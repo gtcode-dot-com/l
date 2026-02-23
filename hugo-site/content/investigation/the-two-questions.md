@@ -123,7 +123,7 @@ structured_data_graph:
       keywords: "Wilson Loo, subornation of perjury, 18 USC 1622, DOJ Public Integrity, FBI, Hawaii, judicial corruption, statute of limitations"
 ---
 
-![The Two Questions](/img/ou-two-questions-og-920x482.jpg)
+![The Two Questions](/img/ou-two-questions-hero-1600x643.jpg)
 
 # The Two Questions
 
