@@ -681,10 +681,10 @@
 - slug: "exdantic"
   name: "Exdantic"
   stage: "Active"
-  version: "0.0.2"
+  version: "0.1.0"
   summary: "Advanced schema definition and validation library for Elixir"
   highlights:
-    - "Latest release: v0.0.2"
+    - "Latest release: v0.1.0"
     - "Recent downloads: 66"
     - "All-time downloads: 654"
     - "Maintainers: nshkrdotcom"
