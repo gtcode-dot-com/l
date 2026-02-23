@@ -23,8 +23,8 @@ card_summary: "The federal case against retired Judge Wilson Loo turns on one wi
 # Open Graph
 og_title: "The Two Questions: How One Interview Closes the Wilson Loo Case"
 og_description: "The federal case under 18 U.S.C. § 1622 turns on a single witness and two direct questions. Prior agency reports, surveillance footage, and corroborating testimony already exist. ~1.8 years remain on the statute of limitations."
-og_image: "https://gtcode.com/img/ou-two-questions-og-920x482.jpg"
-og_image_width: 920
+og_image: "https://gtcode.com/img/ou-two-questions-og-1200x482.jpg"
+og_image_width: 1200
 og_image_height: 482
 og_type: "article"
 
@@ -55,7 +55,7 @@ meta_keywords:
 twitter_card: "summary_large_image"
 twitter_title: "The Two Questions: How One Interview Closes the Wilson Loo Case"
 twitter_description: "One witness. Two questions. ~1.8 years on the statute of limitations. The federal case against retired Judge Wilson Loo mapped from evidence to prosecution."
-twitter_image: "https://gtcode.com/img/ou-two-questions-og-920x482.jpg"
+twitter_image: "https://gtcode.com/img/ou-two-questions-og-1200x482.jpg"
 twitter_image_alt: "The Two Questions — prosecution roadmap for the Wilson Loo federal case"
 
 # Agentic Context
@@ -103,7 +103,7 @@ structured_data_graph:
       headline: "The Two Questions: How One Interview Closes the Wilson Loo Case"
       alternativeHeadline: "A Map of the Shortest Path to Prosecution"
       description: "The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail already exists. ~1.8 years remain on the statute of limitations."
-      image: "https://gtcode.com/img/ou-two-questions-og-920x482.jpg"
+      image: "https://gtcode.com/img/ou-two-questions-og-1200x482.jpg"
       datePublished: "2026-02-23T00:00:00Z"
       dateModified: "2026-02-23T00:00:00Z"
       author:
