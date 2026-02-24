@@ -1,12 +1,12 @@
 - slug: "agent_session_manager"
   name: "Agent Session Manager"
-  stage: "Active"
+  stage: "Stable"
   version: "0.8.0"
   summary: "A comprehensive Elixir library for managing AI agent sessions, state persistence, conversation context, and multi-agent orchestration workflows."
   highlights:
     - "Latest release: v0.8.0"
-    - "Recent downloads: 2389"
-    - "All-time downloads: 2389"
+    - "Recent downloads: 11479"
+    - "All-time downloads: 11479"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -22,8 +22,8 @@
   summary: "The unified observability layer for the AI Control Plane, delivering full-fidelity tracing for AI agent reasoning, tool calls, and state transitions."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 438"
-    - "All-time downloads: 1648"
+    - "Recent downloads: 1952"
+    - "All-time downloads: 3162"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -34,13 +34,13 @@
 
 - slug: "altar"
   name: "Altar"
-  stage: "Active"
+  stage: "Stable"
   version: "0.2.0"
   summary: "Altar provides a robust, type-safe foundation for building AI agent tools in Elixir. It offers a clean contract to define and execute tools locally, with a clear promotion path to\u2026"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 3884"
-    - "All-time downloads: 4737"
+    - "Recent downloads: 11569"
+    - "All-time downloads: 12424"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -51,13 +51,13 @@
 
 - slug: "altar_ai"
   name: "Altar Ai"
-  stage: "Preview"
+  stage: "Active"
   version: "0.1.0"
   summary: "Protocol-based AI adapter foundation for Elixir. Provides unified abstractions for gemini_ex, claude_agent_sdk, and codex_sdk with automatic fallback support, runtime capability\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 251"
-    - "All-time downloads: 251"
+    - "Recent downloads: 1010"
+    - "All-time downloads: 1010"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -73,8 +73,8 @@
   summary: "An Elixir SDK for the Amp CLI \u2014 programmatic access to Amp's AI coding agent"
   highlights:
     - "Latest release: v0.4.0"
-    - "Recent downloads: 794"
-    - "All-time downloads: 794"
+    - "Recent downloads: 3819"
+    - "All-time downloads: 3819"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -85,13 +85,13 @@
 
 - slug: "anvil_ex"
   name: "Anvil Ex"
-  stage: "Preview"
+  stage: "Active"
   version: "0.1.1"
   summary: "Labeling queue library for managing human labeling workflows. Domain-agnostic HITL (human-in-the-loop) data annotation with inter-rater reliability metrics (Cohen's kappa, Fleiss'\u2026"
   highlights:
     - "Latest release: v0.1.1"
-    - "Recent downloads: 458"
-    - "All-time downloads: 458"
+    - "Recent downloads: 1961"
+    - "All-time downloads: 1961"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -107,8 +107,8 @@
   summary: "A metaprogramming framework for building REST APIs from OTP operations with automatic endpoint generation, parameter validation, and OpenAPI documentation."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 47"
-    - "All-time downloads: 1242"
+    - "Recent downloads: 220"
+    - "All-time downloads: 1415"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -141,8 +141,8 @@
   summary: "Configuration management with CLI parsing for Elixir"
   highlights:
     - "Latest release: v0.1.3"
-    - "Recent downloads: 191"
-    - "All-time downloads: 191"
+    - "Recent downloads: 196"
+    - "All-time downloads: 196"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -175,8 +175,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.14.0"
-    - "Recent downloads: 1792"
-    - "All-time downloads: 2049"
+    - "Recent downloads: 1883"
+    - "All-time downloads: 2142"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -192,8 +192,8 @@
   summary: "An Elixir SDK for Claude Code - Build AI-powered CLI tools with Claude"
   highlights:
     - "Latest release: v0.2.2"
-    - "Recent downloads: 209"
-    - "All-time downloads: 404"
+    - "Recent downloads: 213"
+    - "All-time downloads: 408"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -209,8 +209,8 @@
   summary: "Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready interface with streaming support, comprehensive event handling, and robust testing utilities."
   highlights:
     - "Latest release: v0.10.1"
-    - "Recent downloads: 951"
-    - "All-time downloads: 1040"
+    - "Recent downloads: 959"
+    - "All-time downloads: 1048"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -260,7 +260,7 @@
   summary: "Comprehensive benchmarking framework for AI research. Measures latency, throughput, cost, and reliability with percentile analysis and Nx numerical computations."
   highlights:
     - "Latest release: v0.4.0"
-    - "Recent downloads: 268"
+    - "Recent downloads: 255"
     - "All-time downloads: 300"
     - "Maintainers: nshkrdotcom"
   tags:
@@ -277,8 +277,8 @@
   summary: "Dataset management and caching for AI research benchmarks"
   highlights:
     - "Latest release: v0.5.4"
-    - "Recent downloads: 383"
-    - "All-time downloads: 412"
+    - "Recent downloads: 387"
+    - "All-time downloads: 416"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -345,8 +345,8 @@
   summary: "CrucibleFramework: A thin orchestration layer for experiment pipelines. Provides pipeline execution, stage behaviour, and optional persistence."
   highlights:
     - "Latest release: v0.5.2"
-    - "Recent downloads: 452"
-    - "All-time downloads: 599"
+    - "Recent downloads: 456"
+    - "All-time downloads: 603"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -396,8 +396,8 @@
   summary: "Intermediate Representation for the Crucible ML reliability ecosystem"
   highlights:
     - "Latest release: v0.3.0"
-    - "Recent downloads: 299"
-    - "All-time downloads: 299"
+    - "Recent downloads: 313"
+    - "All-time downloads: 313"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -515,8 +515,8 @@
   summary: "DSPy for Elixir via SnakeBridge - Declarative LLM programming"
   highlights:
     - "Latest release: v0.10.0"
-    - "Recent downloads: 382"
-    - "All-time downloads: 588"
+    - "Recent downloads: 389"
+    - "All-time downloads: 597"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -634,8 +634,8 @@
   summary: "Production-ready data validation and quality library for Elixir ML pipelines. Provides 22 built-in expectations, drift detection, advanced profiling with outliers and\u2026"
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 132"
-    - "All-time downloads: 193"
+    - "Recent downloads: 134"
+    - "All-time downloads: 195"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -651,8 +651,8 @@
   summary: "Fairness and bias detection library for Elixir AI/ML systems. Provides comprehensive fairness metrics, bias detection algorithms, and mitigation techniques."
   highlights:
     - "Latest release: v0.5.1"
-    - "Recent downloads: 238"
-    - "All-time downloads: 312"
+    - "Recent downloads: 242"
+    - "All-time downloads: 316"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -668,8 +668,8 @@
   summary: "Generic Topological Data Analysis for Elixir"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 140"
-    - "All-time downloads: 140"
+    - "Recent downloads: 120"
+    - "All-time downloads: 142"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -685,8 +685,8 @@
   summary: "Advanced schema definition and validation library for Elixir"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 66"
-    - "All-time downloads: 654"
+    - "Recent downloads: 82"
+    - "All-time downloads: 670"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -702,8 +702,8 @@
   summary: "Asset-first data orchestration framework for Elixir/BEAM."
   highlights:
     - "Latest release: v0.5.2"
-    - "Recent downloads: 302"
-    - "All-time downloads: 302"
+    - "Recent downloads: 306"
+    - "All-time downloads: 306"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -753,8 +753,8 @@
   summary: "Lightweight resilience primitives for backoff, retry, rate-limit windows, circuit breakers, semaphores, and telemetry helpers."
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 166"
-    - "All-time downloads: 477"
+    - "Recent downloads: 169"
+    - "All-time downloads: 480"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -770,8 +770,8 @@
   summary: "An Elixir SDK for the Gemini CLI \u2014 Build AI-powered applications with Google Gemini"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 23"
-    - "All-time downloads: 23"
+    - "Recent downloads: 27"
+    - "All-time downloads: 27"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -787,8 +787,8 @@
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
     - "Latest release: v0.10.0"
-    - "Recent downloads: 2931"
-    - "All-time downloads: 4242"
+    - "Recent downloads: 3042"
+    - "All-time downloads: 4355"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -821,8 +821,8 @@
   summary: "HuggingFace Datasets for Elixir - Load, stream, and process ML datasets from the HuggingFace Hub with native BEAM/OTP integration."
   highlights:
     - "Latest release: v0.1.1"
-    - "Recent downloads: 85"
-    - "All-time downloads: 85"
+    - "Recent downloads: 87"
+    - "All-time downloads: 87"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -838,8 +838,8 @@
   summary: "Elixir client for HuggingFace Hub\u2014dataset/model metadata, file downloads, caching, and authentication"
   highlights:
     - "Latest release: v0.2.0"
-    - "Recent downloads: 224"
-    - "All-time downloads: 224"
+    - "Recent downloads: 226"
+    - "All-time downloads: 226"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -872,8 +872,8 @@
   summary: "A blazingly fast Elixir library for repairing malformed JSON using binary pattern matching. Handles LLM outputs, legacy data, and broken JSON with intelligent context-aware fixes."
   highlights:
     - "Latest release: v0.2.1"
-    - "Recent downloads: 5614"
-    - "All-time downloads: 14198"
+    - "Recent downloads: 5855"
+    - "All-time downloads: 14507"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -940,8 +940,8 @@
   summary: "AI Firewall and guardrails for LLM-based Elixir applications. Provides prompt injection detection, data leakage prevention, jailbreak detection, and comprehensive security\u2026"
   highlights:
     - "Latest release: v0.3.1"
-    - "Recent downloads: 235"
-    - "All-time downloads: 295"
+    - "Recent downloads: 268"
+    - "All-time downloads: 328"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1076,8 +1076,8 @@
   summary: "A typing system for Elixir/OTP."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 55"
-    - "All-time downloads: 134"
+    - "Recent downloads: 57"
+    - "All-time downloads: 136"
     - "Maintainers: nshkrdotcom"
   tags:
     - "Apache-2.0"
@@ -1127,8 +1127,8 @@
   summary: "Elixir browser automation with WSL-to-Windows support. Control visible Windows browsers from WSL."
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 118"
-    - "All-time downloads: 215"
+    - "Recent downloads: 123"
+    - "All-time downloads: 220"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1161,8 +1161,8 @@
   summary: "Hexagonal architecture core for building flexible RAG systems in Elixir."
   highlights:
     - "Latest release: v0.4.0"
-    - "Recent downloads: 237"
-    - "All-time downloads: 237"
+    - "Recent downloads: 243"
+    - "All-time downloads: 243"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1178,8 +1178,8 @@
   summary: "Production adapters and pipelines for PortfolioCore. Vector stores, graph stores, embedders, Broadway pipelines, and advanced RAG strategies."
   highlights:
     - "Latest release: v0.4.0"
-    - "Recent downloads: 237"
-    - "All-time downloads: 237"
+    - "Recent downloads: 239"
+    - "All-time downloads: 239"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1280,8 +1280,8 @@
   summary: "Low-level BEAM\u2194Python concurrency substrate. ETS-backed shared state with Python views, batched fan-out with real backpressure, and stage composition over BEAM + Python steps.\u2026"
   highlights:
     - "Latest release: v0.1.0"
-    - "Recent downloads: 0"
-    - "All-time downloads: 0"
+    - "Recent downloads: 10"
+    - "All-time downloads: 10"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1297,8 +1297,8 @@
   summary: "Compile-time generator for type-safe Elixir bindings to Python libraries"
   highlights:
     - "Latest release: v0.16.0"
-    - "Recent downloads: 1181"
-    - "All-time downloads: 1326"
+    - "Recent downloads: 1188"
+    - "All-time downloads: 1335"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1314,8 +1314,8 @@
   summary: "High-performance pooler and session manager for external language integrations. Supports Python, Node.js, Ruby, and more with gRPC streaming, session management, and production-\u2026"
   highlights:
     - "Latest release: v0.13.0"
-    - "Recent downloads: 1704"
-    - "All-time downloads: 2727"
+    - "Recent downloads: 1718"
+    - "All-time downloads: 2741"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1331,8 +1331,8 @@
   summary: "Battle-hardened OTP testing toolkit with chaos engineering, performance testing, and zero-sleep synchronization patterns for building robust Elixir applications."
   highlights:
     - "Latest release: v0.5.1"
-    - "Recent downloads: 445"
-    - "All-time downloads: 718"
+    - "Recent downloads: 452"
+    - "All-time downloads: 726"
     - "Maintainers: nshkrdotcom"
   tags:
     - "MIT"
@@ -1399,8 +1399,8 @@
   summary: "Elixir SDK for Tinker: LoRA training, sampling, and future-based workflows with telemetry and HTTP/2."
   highlights:
     - "Latest release: v0.3.4"
-    - "Recent downloads: 1137"
-    - "All-time downloads: 1196"
+    - "Recent downloads: 1139"
+    - "All-time downloads: 1198"
     - "Maintainers: nshkrdotcom"
   tags:
     - "Apache-2.0"
