@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-14T12:03:31.212895+00:00'
-exported_at: '2025-12-14T12:03:35.585036+00:00'
+date: '2026-02-25T05:16:56.494743+00:00'
+exported_at: '2026-02-25T05:16:59.669651+00:00'
 feed: https://thegradient.pub/rss/
 language: en
 source_url: https://thegradient.pub/financial-market-applications-of-llms
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: Financial Market Applications of LLMs
-updated_at: '2025-12-14T12:03:31.212895+00:00'
+updated_at: '2026-02-25T05:16:56.494743+00:00'
 url_hash: d214dcb57450ae8f1e15e4b8ec569e6d8da57dfa
 ---
 

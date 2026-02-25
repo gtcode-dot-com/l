@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-14T12:03:30.469556+00:00'
-exported_at: '2025-12-14T12:03:35.587582+00:00'
+date: '2026-02-25T05:16:55.725223+00:00'
+exported_at: '2026-02-25T05:16:59.672473+00:00'
 feed: https://thegradient.pub/rss/
 language: en
 source_url: https://thegradient.pub/we-need-positive-visions-for-ai-grounded-in-wellbeing
@@ -31,7 +31,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: We Need Positive Visions for AI Grounded in Wellbeing
-updated_at: '2025-12-14T12:03:30.469556+00:00'
+updated_at: '2026-02-25T05:16:55.725223+00:00'
 url_hash: f65ee04cb9b5a62edd5a4262c2d120dd95ca14e2
 ---
 

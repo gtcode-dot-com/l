@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-14T12:03:31.637758+00:00'
-exported_at: '2025-12-14T12:03:35.581636+00:00'
+date: '2026-02-25T05:16:56.982325+00:00'
+exported_at: '2026-02-25T05:16:59.665772+00:00'
 feed: https://thegradient.pub/rss/
 language: en
 source_url: https://thegradient.pub/gender-bias-in-ai
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: gtcode.com
 title: A Brief Overview of Gender Bias in AI
-updated_at: '2025-12-14T12:03:31.637758+00:00'
+updated_at: '2026-02-25T05:16:56.982325+00:00'
 url_hash: 23f625eb8184c3bdab71136ed36be0254480baae
 ---
 
