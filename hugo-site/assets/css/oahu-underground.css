@@ -2075,6 +2075,36 @@ body.nav-open .site-nav-overlay {
   color: var(--ou-text-muted);
 }
 
+/* ---- Article Hero Image ---- */
+.ou-article-hero {
+  margin: 0 0 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.ou-article-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ou-article-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 100% 100%, var(--ou-bg) 0%, var(--ou-bg) 8%, transparent 50%),
+    radial-gradient(ellipse at 0% 100%, var(--ou-bg) 0%, var(--ou-bg) 8%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, var(--ou-bg) 0%, var(--ou-bg) 5%, transparent 40%),
+    radial-gradient(ellipse at 0% 0%, var(--ou-bg) 0%, var(--ou-bg) 5%, transparent 40%),
+    linear-gradient(to top, var(--ou-bg) 0%, transparent 20%),
+    linear-gradient(to bottom, var(--ou-bg) 0%, transparent 12%),
+    linear-gradient(to left, var(--ou-bg) 0%, transparent 15%),
+    linear-gradient(to right, var(--ou-bg) 0%, transparent 15%);
+}
+
 /* ---- Article Content ---- */
 .ou-article-content {
   font-family: var(--ou-font-body);

@@ -39,6 +39,12 @@
       </div>
     </header>
 
+    {{ with .Params.og_image }}
+    <figure class="ou-article-hero">
+      <img src="{{ . }}" alt="{{ $.Params.og_image_alt | default $.Title }}" width="{{ $.Params.og_image_width | default 1200 }}" height="{{ $.Params.og_image_height | default 630 }}" loading="eager" />
+    </figure>
+    {{ end }}
+
     <div class="ou-article-content">
       {{ .Content }}
     </div>

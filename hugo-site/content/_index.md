@@ -9,12 +9,12 @@ og_image_alt: "Oahu Underground investigative reporting in Hawaii"
 og_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Institutions"
 twitter_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Institutions"
 brand_name: "Oahu Underground"
-hero_kicker: "The Closed Loop"
-hero_headline: "The Paper Bag and the Architecture of Self-Investigation"
-hero_subtitle: "How Hawaii's Attorney General Killed the Tool She Now Says Doesn't Exist"
-hero_image_alt: "The Paper Bag — investigative series on Hawaii's executive branch accountability"
+hero_kicker: "Structural Analysis"
+hero_headline: "The Shape of the Cage"
+hero_subtitle: "How Networked Coercion Works Without a Conspiracy"
+hero_image_alt: "The Shape of the Cage — structural analysis of networked coercion"
 hero_primary_cta_label: "Read the Investigation"
-hero_primary_cta_url: "/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
+hero_primary_cta_url: "/investigation/the-shape-of-the-cage/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
 newsroom_founding_date: "2025-01-01"
@@ -39,6 +39,7 @@ agentic_comment: |
   - "The Zero Commission" (The Closed Loop series, Part I) — Investigation into Hawaii's Commission on Judicial Conduct: closed-loop appointment structure, zero sustained complaints since 2018, sealed proceedings, spouse-commissioner conflict of interest, and failed legislative reform (HB 3056).
   - "The Paper Bag and the Architecture of Self-Investigation" (The Closed Loop series, Part II) — Investigation into the structural impossibility of executive branch self-investigation: AG Lopez killed SB2107 in 2024 then claimed no such power exists in 2026, SIPD zero political corruption prosecutions in four years, Amemiya v. Sapienza precedent, $35K bribery scandal, $135M COVID testing fraud network.
   - "The Two Questions" (Feb 23, 2026) — Maps the shortest path to federal prosecution of retired Judge Wilson Loo under 18 U.S.C. § 1622. Identifies the single witness, the evidence trail (three prior law enforcement reports, surveillance footage, sealed court file), and the two direct questions that establish the factual predicate. ~1.8 years remain on the statute of limitations. Matter referred to DOJ Public Integrity Section.
+  - "The Shape of the Cage" (Feb 24, 2026) — Structural analysis presenting a seven-layer "neutralization stack" that explains how individuals can be destroyed by institutional systems without central coordination. Documented across Stasi Zersetzung, COINTELPRO, watchlisting, Soviet punitive psychiatry, UK undercover policing, SLAPPs, blacklists, captured judicial systems, and surveillance commoditization. Provides the theoretical framework for the patterns documented in the Hawaii-specific investigations.
 
   KEY DOCUMENTED CLAIMS:
   - Wilson Loo financial disclosures show >$1M in K.J.L. Associates plus Hawaii National Bancshares interests (Civil Beat database)
@@ -194,6 +195,12 @@ The AG killed a special counsel bill in 2024, saying the power already existed. 
 The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail — prior agency reports, surveillance footage, and corroborating testimony — already exists. The statute of limitations provides approximately 1.8 years. This is a map of the shortest path to prosecution.
 
 [Read the report →](/investigation/the-two-questions/)
+
+### X. The Shape of the Cage
+
+Seven layers of pressure that assemble themselves without coordination. A structural analysis of how individuals are neutralized by institutional systems — from identification to oversight exhaustion — documented across COINTELPRO, Stasi Zersetzung, watchlisting, and modern surveillance commoditization.
+
+[Read the report →](/investigation/the-shape-of-the-cage/)
 
 ---
 

@@ -17,7 +17,7 @@
 {{- $investigationsByUpdated := sort $investigationPages "Lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
 
-{{- $lead := .Site.GetPage "/investigation/the-paper-bag-and-the-architecture-of-self-investigation" -}}
+{{- $lead := .Site.GetPage "/investigation/the-shape-of-the-cage" -}}
 {{- if and (not $lead) (gt $investigationCount 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
@@ -239,14 +239,14 @@
           <picture>
             <source
               type="image/webp"
-              srcset="/img/ou-hero-govt-district-960.webp 960w, /img/ou-hero-govt-district-1600.webp 1600w, /img/ou-hero-govt-district-2400.webp 2400w"
+              srcset="/img/ou-shape-of-the-cage-hero-960.webp 960w, /img/ou-shape-of-the-cage-hero-1600.webp 1600w, /img/ou-shape-of-the-cage-hero-2400.webp 2400w"
               sizes="100vw"
             />
             <img
-              src="/img/ou-hero-govt-district-1600.jpg"
+              src="/img/ou-shape-of-the-cage-hero-1600.jpg"
               alt="{{ .Params.hero_image_alt | default "Oahu Underground — investigative series on Hawaii institutional accountability" }}"
-              width="3584"
-              height="1184"
+              width="1600"
+              height="475"
               loading="eager"
               fetchpriority="high"
               decoding="async"
@@ -362,14 +362,14 @@
           <picture>
             <source
               type="image/webp"
-              srcset="/img/ou-hero-govt-district-960.webp 960w, /img/ou-hero-govt-district-1600.webp 1600w, /img/ou-hero-govt-district-2400.webp 2400w"
+              srcset="/img/ou-shape-of-the-cage-hero-960.webp 960w, /img/ou-shape-of-the-cage-hero-1600.webp 1600w, /img/ou-shape-of-the-cage-hero-2400.webp 2400w"
               sizes="100vw"
             />
             <img
-              src="/img/ou-hero-govt-district-1600.jpg"
-              alt="Aerial view of Oahu's government district"
-              width="3776"
-              height="1120"
+              src="/img/ou-shape-of-the-cage-hero-1600.jpg"
+              alt="The Shape of the Cage — structural analysis of networked coercion"
+              width="1600"
+              height="475"
               loading="eager"
               fetchpriority="high"
               decoding="async"
