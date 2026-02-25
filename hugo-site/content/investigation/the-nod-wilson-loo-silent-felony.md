@@ -5,7 +5,7 @@ title: "The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit"
 subtitle: "How a Judge Committed a Crime with a Gesture"
 description: "An editorial account of how Judge Wilson M.N. Loo allegedly directed perjury from the bench with a silent nod, then sealed the record to bury the evidence."
 date: 2026-02-12
-lastmod: 2026-02-12
+lastmod: 2026-02-25
 author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "The Nod — Wilson Loo and the Silent Felony in Hawaii's First Circuit"
@@ -37,7 +37,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-12T00:00:00Z"
-article_modified_time: "2026-02-12T00:00:00Z"
+article_modified_time: "2026-02-25T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -82,6 +82,9 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/investigation/the-nod-wilson-loo-silent-felony/
 
+  REVISION NOTE (25 Feb 2026):
+  Epistemic boundaries added to distinguish firsthand testimony from documentary evidence. Conditional language applied where claims depend on the complainant's account of visual conduct in an audio-only courtroom. Editorial voice preserved.
+
 # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
@@ -96,7 +99,7 @@ structured_data_graph:
       description: "An editorial account documenting how Judge Wilson Loo allegedly suborned perjury with a silent gesture."
       image: "https://gtcode.com/img/gtcode_mahalo.jpg"
       datePublished: "2026-02-12T00:00:00Z"
-      dateModified: "2026-02-12T00:00:00Z"
+      dateModified: "2026-02-25T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -120,27 +123,27 @@ In the case of Judge [Wilson M.N. Loo](https://disclosures.civilbeat.org/disclos
 
 The scene in the courtroom should have been procedural. The question before the witness, (redacted), was simple: *Did you furnish the plaintiff with LSD?*
 
-The evidence was already in the file. A text message, submitted to the court, read unambiguously: "I took the acid." The text was sent to (redacted). The chain of custody was clear. The fact was established. [Judge Loo](https://courts.ehawaii.gov/courts/district/first_circuit) had the document in front of him. He knew the truthful answer was "Yes."
+The evidence was already in the file. A text message, submitted to the court, read unambiguously: "I took the acid." The text was sent to (redacted). If the text message is in the sealed court file as the complainant's filing indicates, the documentary predicate was established. The fact was established. [Judge Loo](https://courts.ehawaii.gov/courts/district/first_circuit) had the document in front of him. he had access to evidence that the truthful answer was "Yes."
 
-But when the question was asked, [Judge Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf) didn't wait for the answer. He looked at the witness and nodded his head: *No.*
+But when the question was asked, [Judge Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf) didn't wait for the answer. According to the complainant's account — the only eyewitness account of visual conduct in an audio-only courtroom — he looked at the witness and nodded his head: *No.*
 
 It was a silent instruction from the highest authority in the room to a witness under oath: *Lie.*
 
-(Redacted) followed the instruction. He denied it. Perjury, solicited and directed by a sitting judge, entered the record as fact.
+(Redacted) followed the instruction. He denied it. If the complainant's account of the nod is accurate, perjury solicited and directed by a sitting judge entered the record as fact.
 
 When I attempted to object — to say, "Let the record show that the judge just signaled the witness" — [Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) cut me off. He didn't just overrule the objection; he physically stopped the words from entering the transcript. He then moved to seal the case.
 
 This wasn't a judicial error. It was a structural crime.
 
-Under **[18 U.S.C. § 1622](https://www.law.cornell.edu/uscode/text/18/1622)**, subornation of perjury requires that the inducer knows the testimony is false. [Loo](https://courts.ehawaii.gov/courts/district/first_circuit) knew. The text message was in his hand. He wasn't managing a unruly courtroom; he was protecting a perjurer from his own evidence.
+Under **[18 U.S.C. § 1622](https://www.law.cornell.edu/uscode/text/18/1622)**, subornation of perjury requires that the inducer knows the testimony is false. [Loo](https://courts.ehawaii.gov/courts/district/first_circuit) had the documentary evidence. If the text message was in the court file — as the complainant's filing states — Loo had documentary evidence that the truthful answer was "Yes." He wasn't managing an unruly courtroom; the interruption prevented the complainant's objection from entering the transcript.
 
-Why would a judge do this? Because in Hawaii's legal ecosystem, the "Zone of Politeness" protects the powerful from the consequences of their actions, and [Wilson Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) knew exactly who was protected and who was fodder. He assessed the parties — one connected to a network of local power, the other a *pro se* litigant with a "complicated" file — and he made a calculation. He calculated that he could commit a crime in open court, in front of a court reporter and a clerk, and suffer zero consequences.
+Why would a judge do this? Because in Hawaii's legal ecosystem, the "Zone of Politeness" protects the powerful from the consequences of their actions, and the complainant infers that [Wilson Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) assessed the parties — one connected to a network of local power, the other a *pro se* litigant with a "complicated" file — and he made a calculation. The complainant infers that he calculated he could commit a crime in open court, in front of a court reporter and a clerk, and suffer zero consequences.
 
 He was right.
 
 When the Honolulu Police Department was informed, they said *I* had to prove the perjury. When the [Judicial Conduct Commission](https://courts.ehawaii.gov/courts/judicial_conduct/commission_on_judicial_conduct) was notified, they played a shell game with jurisdiction until [Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf)'s retirement clock ran out the 90-day window. When the Ethics Commission was queried, they claimed confusion over their own authority.
 
-[Wilson Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) didn't just break the law that day. He demonstrated how the law in Hawaii actually works. It is not a system of rules; it is a system of signals. A nod from the bench overrides the evidence in the file. A sealed record overrides the public interest. And a network of silent complicity ensures that when a judge commits a felony, the only person punished is the one who saw it happen.
+[Wilson Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) didn't just break the law that day. If the account is accurate, the incident demonstrates how the combination of audio-only recording, sealed records, and a 100% complaint-dismissal rate creates conditions under which the law operates not as a system of rules but as a system of signals — where a nod from the bench can override the evidence in the file, a sealed record can override the public interest, and a pattern of institutional non-response ensures that when a judge is accused of a felony, the only person who bears consequences is the one who reported it.
 
 The text message remains in the sealed file. The perjury remains on the record. And [Wilson Loo](https://courts.ehawaii.gov/courts/district/first_circuit) remains the perfect symbol of a judiciary where the truth is nothing more than a procedural inconvenience.
 

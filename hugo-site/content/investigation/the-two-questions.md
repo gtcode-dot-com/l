@@ -6,7 +6,7 @@ seo_title: "The Two Questions — How One Interview Closes the Wilson Loo Federa
 subtitle: "A Map of the Shortest Path to Prosecution"
 description: "The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail — prior agency reports, surveillance footage, and corroborating testimony — already exists. This is a map of the shortest path to prosecution."
 date: 2026-02-23
-lastmod: 2026-02-23
+lastmod: 2026-02-25
 author: "Ekewaka Lono"
 published_display: "February 23, 2026"
 type: "investigation"
@@ -31,7 +31,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-23T00:00:00Z"
-article_modified_time: "2026-02-23T00:00:00Z"
+article_modified_time: "2026-02-25T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -91,6 +91,9 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/investigation/the-two-questions/
 
+  REVISION NOTE (25 Feb 2026):
+  Conditional language applied to legal conclusions. Firsthand claims attributed to "the complainant's account." Hard conclusions softened to reflect dependency on witness corroboration.
+
 # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
@@ -105,7 +108,7 @@ structured_data_graph:
       description: "The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail already exists. ~1.8 years remain on the statute of limitations."
       image: "https://gtcode.com/img/ou-two-questions-og-1200x634.jpg"
       datePublished: "2026-02-23T00:00:00Z"
-      dateModified: "2026-02-23T00:00:00Z"
+      dateModified: "2026-02-25T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -145,15 +148,15 @@ The federal case against retired Judge Wilson M.N. Loo requires the cooperation 
 
 The [DOJ's own Criminal Resource Manual](https://www.justice.gov/archives/jm/criminal-resource-manual-1752-subornation-perjury) defines the requirements for a subornation of perjury prosecution: perjury was committed; the defendant procured the perjury corruptly, knowing or believing it to be false; and the defendant knew or believed the perjurer had knowledge of the falsity of his testimony.
 
-All three elements are met if ████████████ tells the truth.
+All three elements would be satisfied if ████████████ tells the truth.
 
 ---
 
 ## The Evidence Trail
 
-In 2021, at Stonefish Grill in Hale'iwa, ████████████ received LSD from a woman and subsequently provided it to me. This exchange occurred inside the restaurant and was captured on the establishment's security camera.
+According to the complainant's account, in 2021, at Stonefish Grill in Hale'iwa, ████████████ received LSD from a woman and subsequently provided it to me. This exchange occurred inside the restaurant and was captured on the establishment's security camera.
 
-In the same location's parking lot, I sat in the back seat of ████████████'s ███████ while a man in the passenger seat presented approximately 100 LSD tabs and provided one to me. The quantity and appearance of these tabs closely resembled those seized in a known Honolulu Sheriff's Department bust that occurred shortly afterward.
+According to the complainant's account, in the same location's parking lot, I sat in the back seat of ████████████'s ███████ while a man in the passenger seat presented approximately 100 LSD tabs and provided one to me. The quantity and appearance of these tabs closely resembled those seized in a known Honolulu Sheriff's Department bust that occurred shortly afterward.
 
 This is not new information to law enforcement. I reported ████████████'s activities on three separate occasions, through three separate channels, before and after the Wilson Loo trial:
 
@@ -185,11 +188,11 @@ Once this foundation is laid, the investigator asks the third question — the o
 
 If ████████████ answers yes, the elements of 18 U.S.C. § 1622 are satisfied:
 
-- **Perjury was committed.** ████████████ denied under oath what the court's own evidence — and his own conduct — established as true.
-- **The defendant procured the perjury corruptly.** Loo directed the false testimony through a nonverbal signal — a nod — with the text message in front of him.
-- **The defendant knew the testimony was false.** The documentary evidence was in Loo's possession at the time he signaled the witness. He had the text. He knew the truthful answer. He directed the lie.
+- **Perjury would be established.** ████████████ denied under oath what the court's own evidence — and his own conduct — established as true.
+- **The defendant would have procured the perjury corruptly.** Loo directed the false testimony through a nonverbal signal — a nod — with the text message in front of him.
+- **The defendant would have known the testimony was false.** The documentary evidence was in Loo's possession at the time he signaled the witness. He had the text. He knew the truthful answer. He directed the lie.
 
-This is not a complex case. It is not a circumstantial case. It is a case that turns on whether one person, interviewed away from the courtroom and the judge who directed him, tells the truth about what happened.
+If the witness corroborates the account, this is not a complex case. It is not a circumstantial case. It is a case that turns on whether one person, interviewed away from the courtroom and the judge who directed him, tells the truth about what happened.
 
 ---
 
