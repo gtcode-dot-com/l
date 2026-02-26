@@ -23,6 +23,7 @@
 {{- end -}}
 {{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
 {{- $dispatch := .Site.GetPage "/investigation/the-nod-wilson-loo-silent-felony" -}}
+{{- $twoQuestions := .Site.GetPage "/investigation/the-two-questions" -}}
 {{- $investigationIndex := .Site.GetPage "section" "investigation" -}}
 {{- $consultingPage := .Site.GetPage "section" "consulting" -}}
 {{- $consultingURL := "/consulting/" -}}
@@ -406,6 +407,26 @@
           <p class="ou-section-body">{{ $dispatchSummary }}</p>
           <div class="ou-dispatch-actions">
             <a class="ou-featured-article-link" href="{{ $dispatch.RelPermalink }}">Read the dispatch &rarr;</a>
+            <a class="ou-featured-article-link" href="/investigation/">Browse all investigations &rarr;</a>
+          </div>
+        </div>
+      </section>
+      {{ end }}
+
+      <!-- Prosecution Roadmap -->
+      {{ if $twoQuestions }}
+      {{ $tqSummary := $twoQuestions.Params.card_summary | default $twoQuestions.Description }}
+      {{ if eq (strings.TrimSpace $tqSummary) "" }}{{ $tqSummary = $twoQuestions.Summary | plainify | truncate 220 }}{{ end }}
+      <section class="ou-section ou-roadmap" id="prosecution-roadmap">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">{{ $twoQuestions.Params.eyebrow | default "Prosecution Roadmap" }}</p>
+          <h2 class="ou-section-heading">{{ $twoQuestions.Title }}</h2>
+          {{ with $twoQuestions.Params.subtitle }}
+          <p class="ou-featured-article-subtitle">{{ . }}</p>
+          {{ end }}
+          <p class="ou-section-body">{{ $tqSummary }}</p>
+          <div class="ou-roadmap-actions">
+            <a class="ou-featured-article-link" href="{{ $twoQuestions.RelPermalink }}">Read the roadmap &rarr;</a>
             <a class="ou-featured-article-link" href="/investigation/">Browse all investigations &rarr;</a>
           </div>
         </div>
