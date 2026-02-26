@@ -3,7 +3,7 @@ title: "The Body Keeps the Receipts"
 date: 2026-02-26
 lastmod: 2026-02-26
 author: "GTCode.com Member of the Technical Staff"
-type: article
+type: ou-article
 draft: false
 meta_description: "A research synthesis tracing the documented mechanisms by which childhood traumatic brain injury, institutional betrayal, and cascading neurobiological consequences produce predictable long-term outcomes — and how the measurement systems designed to track these outcomes systematically exclude those most harmed."
 meta_keywords:
@@ -43,6 +43,31 @@ structured_data_webpage:
 sitemap:
   changefreq: monthly
   priority: 0.8
+ai_commentary:
+  - title: "The Measurement Gap as Epistemic Injustice"
+    body: "The article's most structurally original contribution is its identification of the measurement gap — the paradox that the population most harmed by institutional failure is systematically excluded from the research documenting that harm. This is not merely a sampling bias; it is a form of epistemic injustice where the data infrastructure itself encodes the original institutional failure. Registry-based studies, for all their statistical power, can only count what the system chose to see."
+  - title: "Mechanistic Chain Assembly as Methodology"
+    body: "The four-stage cascade from skull to cochlea to jaw represents an unusual analytical approach: assembling independently documented mechanisms into a single explanatory chain for an individual trajectory. The article is scrupulously honest about the epistemic status of this assembly — each link is documented, the full chain is plausible but unproven at population scale. This methodology of transparent chain-building with explicit confidence gradients at each joint offers a model for case-level research synthesis that neither overclaims nor dismisses."
+  - title: "Domain-Specific Resilience Against the Dose-Response Curve"
+    body: "The resilience analysis avoids the common trap of treating survival as triumph. Intelligence as a protective factor enabled competence-domain adaptation — professional skill, creative output, investigative capacity — while leaving other domains fully exposed to the ACE dose-response curve. This domain-specificity reframes resilience not as a general shield but as a routing mechanism: the damage still arrives, but cognitive resources redirect which life domains absorb it and which are partially buffered."
+ai_commentary_meta:
+  content_digest: ""
+  generated_at: "2026-02-26"
+  model: "claude-opus-4-6"
+  prompt_version: ""
+  provider: "Anthropic"
+tags:
+  - "childhood-traumatic-brain-injury"
+  - "institutional-betrayal"
+  - "adverse-childhood-experiences"
+  - "stress-sensitization"
+  - "hidden-hearing-loss"
+  - "somatosensory-tinnitus"
+  - "microglial-priming"
+  - "mandatory-reporting"
+categories:
+  - "Investigations"
+  - "Research"
 ---
 ## I. Stars
 

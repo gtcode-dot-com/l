@@ -2552,3 +2552,109 @@ a.ou-wire-badge-link:focus {
 .ou-series-nav-current .ou-series-nav-label {
   font-weight: 600;
 }
+
+/* ==========================================================================
+   AI Commentary — machine-generated analysis cards
+   ========================================================================== */
+
+.ai-commentary {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--ou-border);
+  position: relative;
+}
+
+.ai-commentary::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background: var(--ou-accent);
+}
+
+.ai-commentary .section-title {
+  font-family: var(--ou-font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ou-accent-a11y);
+  margin: 0 0 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ai-commentary .section-title::before {
+  content: '\2022';
+  color: var(--ou-accent);
+  font-size: 0.5rem;
+}
+
+.ai-commentary .card.ai-comment {
+  background: var(--ou-bg-alt);
+  border: 1px solid var(--ou-border);
+  border-left: 3px solid rgba(212, 168, 67, 0.35);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: border-color var(--ou-transition);
+}
+
+.ai-commentary .card.ai-comment:last-of-type {
+  margin-bottom: 1.25rem;
+}
+
+.ai-commentary .card.ai-comment:hover {
+  border-left-color: var(--ou-accent);
+}
+
+.ai-commentary .card.ai-comment h3 {
+  font-family: var(--ou-font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ou-white);
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
+}
+
+.ai-commentary .card.ai-comment p {
+  font-family: var(--ou-font-body);
+  font-size: 0.9rem;
+  color: var(--ou-text-muted);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.ai-commentary .text-muted {
+  font-family: var(--ou-font-body);
+  font-size: 0.75rem;
+  color: var(--ou-text-dim);
+  font-style: italic;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+
+/* AI Commentary responsive */
+@media (max-width: 768px) {
+  .ai-commentary {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .ai-commentary .card.ai-comment {
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-commentary .card.ai-comment {
+    padding: 0.85rem 1rem;
+  }
+
+  .ai-commentary .card.ai-comment h3 {
+    font-size: 0.925rem;
+  }
+}

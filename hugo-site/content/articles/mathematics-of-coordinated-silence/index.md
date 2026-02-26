@@ -32,6 +32,29 @@ structured_data_webpage:
 sitemap:
   changefreq: monthly
   priority: 0.8
+ai_commentary:
+  - title: "The Measurability of Institutional Coordination"
+    body: "The article's central insight — that coordinated false narratives have a detectable geometric signature because they require ongoing maintenance that truth does not — transforms accountability from a narrative exercise into a quantitative one. The alignment anomaly concept provides a formal detection criterion. This reframes institutional corruption not as something that must be caught in the act but as something that leaves persistent statistical residue in public records, discoverable retroactively at scale."
+  - title: "The Defection Gradient as Inevitable Dissolution"
+    body: "The game-theoretic analysis of coverup coalitions is the article's most practically consequential section. Every participant runs a continuous calculation on the expected value of silence versus defection, and the variables uniformly shift toward defection over time — career changes, unrelated legal exposure, co-conspirator instability, simple fatigue. The gradient always points toward disclosure; only the timing is uncertain."
+  - title: "Computational Detection and the Permanence of Records"
+    body: "The article draws a sharp distinction between information being secret and information being diffuse — scattered across thousands of dockets and administrative records where no single document reveals the architecture. NLP-based detection of rhetorical coordination, statistical analysis of non-random case assignments, and network mapping of relationship patterns can now synthesize what no individual human investigator could hold in working memory. Combined with the permanence of digital records, this creates an asymmetry where the cost of maintaining a coverup increases monotonically while the cost of detecting it decreases with each advance in computational analysis."
+ai_commentary_meta:
+  content_digest: ""
+  generated_at: "2026-02-26"
+  model: "claude-opus-4-6"
+  prompt_version: ""
+  provider: "Anthropic"
+tags:
+  - "institutional-accountability"
+  - "computational-investigation"
+  - "network-analysis"
+  - "coverup-detection"
+  - "game-theory"
+  - "natural-language-processing"
+  - "judicial-oversight"
+categories:
+  - "Investigations"
 ---
 
 *How computational systems are learning to detect the invisible architecture of institutional coverups*
