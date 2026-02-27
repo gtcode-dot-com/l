@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
-"""
-Generate minimal Hugo content stubs for repositories from data/repos.yaml
+"""Generate Hugo content stubs for repositories from data/repos.yaml.
 
 Each stub contains only title and description in front matter. All other
-metadata is read from data/repos.yaml at build time by the Hugo template.
+metadata is read from data/repos.yaml at build time by Hugo templates.
 
-Usage:
-    python generate_repo_pages.py [--dry-run] [--prune]
-
-Options:
-    --dry-run   Show what would be done without writing files
-    --prune     Remove .md files that have no matching slug in repos.yaml
+Default behavior is conservative: create missing files only.
 """
 
 import sys
@@ -31,24 +25,41 @@ def load_repos():
 
 
 def stub_content(repo):
-    """Generate minimal stub content for a repo"""
+    """Generate minimal YAML-front-matter stub content for a repo."""
     title = repo.get('name', repo.get('slug', 'Unknown'))
     desc = repo.get('summary', '')
-    # Escape quotes for YAML safety
-    title_escaped = title.replace('"', '\\"')
-    desc_escaped = desc.replace('"', '\\"')
-    return f'---\ntitle: "{title_escaped}"\ndescription: "{desc_escaped}"\n---\n'
+    front_matter = {
+        "title": str(title),
+        "description": str(desc),
+    }
+    yaml_text = yaml.safe_dump(
+        front_matter,
+        allow_unicode=True,
+        default_flow_style=False,
+        sort_keys=False,
+    )
+    return f"---\n{yaml_text}---\n"
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Generate minimal Hugo content stubs from data/repos.yaml'
+        description='Generate Hugo repo content stubs from data/repos.yaml'
     )
     parser.add_argument('--dry-run', action='store_true',
                         help='Show what would be done without writing files')
     parser.add_argument('--prune', action='store_true',
                         help='Remove .md files with no matching slug in repos.yaml')
+    mode_group = parser.add_mutually_exclusive_group()
+    mode_group.add_argument('--skip-existing', action='store_true',
+                            help='Create only missing files (default behavior)')
+    mode_group.add_argument('--overwrite', action='store_true',
+                            help='Overwrite existing files in addition to creating missing files')
+    parser.add_argument('--force', action='store_true',
+                        help='Required with --overwrite to avoid accidental mass rewrites')
     args = parser.parse_args()
+
+    if args.overwrite and not args.force:
+        parser.error('--overwrite requires --force')
 
     repos = load_repos()
     if not repos:
@@ -61,6 +72,7 @@ def main():
     slugs = set()
     created = 0
     updated = 0
+    skipped = 0
     unchanged = 0
 
     for repo in repos:
@@ -72,6 +84,9 @@ def main():
         new_content = stub_content(repo)
 
         if content_file.exists():
+            if not args.overwrite:
+                skipped += 1
+                continue
             existing = content_file.read_text(encoding='utf-8')
             if existing == new_content:
                 unchanged += 1
@@ -103,7 +118,7 @@ def main():
                     md_file.unlink()
                     print(f"  pruned: {md_file.name}")
 
-    print(f"\nSummary: {created} created, {updated} updated, "
+    print(f"\nSummary: {created} created, {updated} updated, {skipped} skipped, "
           f"{unchanged} unchanged, {pruned} pruned")
     return 0
 
