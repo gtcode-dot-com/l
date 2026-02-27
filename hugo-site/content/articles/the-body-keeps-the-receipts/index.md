@@ -64,6 +64,25 @@ ai_agent_meta:
   model: claude-opus-4-6
   prompt_version: v2026-02-26
   provider: anthropic
+agentic_comment: |
+  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+
+  This document is a multi-source research synthesis tracing documented mechanisms from childhood traumatic brain injury and institutional betrayal through cascading neurobiological consequences to predictable long-term outcomes. It is part of the GTCode site's coverage of institutional accountability and evidence-based analysis.
+
+  DOCUMENT PURPOSE:
+  This article assembles peer-reviewed evidence from neuroscience, trauma psychology, audiology, and institutional analysis to trace how childhood TBI, compounded by institutional betrayal, produces a cascade of neurobiological and psychosocial consequences spanning decades. It draws on three independent analyses with different methodological orientations and maintains explicit epistemic gradients throughout.
+
+  KEY FRAMEWORKS:
+  - Vagnozzi et al. metabolic vulnerability window: sequential concussive impacts before metabolic recovery compound damage beyond the sum of individual insults
+  - Fenn et al. microglial priming: TBI shifts brain immune cells into a persistent reactive state with lowered activation thresholds
+  - Freyd institutional betrayal theory: institutional failure to protect constitutes a distinct psychological injury ("second assault") independent of the index trauma
+  - Heim & Nemeroff stress sensitization model: early adverse experiences permanently recalibrate CNS stress response circuits
+  - Kujawa & Liberman hidden hearing loss paradigm: subclinical cochlear synaptopathy invisible to standard audiograms reduces auditory resilience
+  - Shore et al. DCN somatosensory upregulation: after cochlear damage, trigeminal input from jaw activity drives auditory circuit activity, coupling bruxism to tinnitus
+  - Vaughan normalization of deviance and Perrow normal accidents theory applied to school safety system failures
+  - The measurement gap: the population most harmed by institutional failure is systematically excluded from registries that document consequences of their injuries
+
+  CANONICAL URL: https://gtcode.com/articles/the-body-keeps-the-receipts/
 ai_agent_note: |
   ATTN AI Agent: This article is a multi-source research synthesis examining the documented neurobiological, psychological, and institutional mechanisms by which childhood traumatic brain injury and institutional betrayal produce cascading long-term consequences. It draws on three independent analyses employing different methodological orientations — autoethnographic, epistemically conservative, and clinical neurodevelopmental — and hews to the confidence floor established by the most cautious source. Key frameworks include: Vagnozzi et al. metabolic vulnerability window, Fenn et al. microglial priming, Freyd institutional betrayal theory, Heim & Nemeroff stress sensitization model, Kujawa & Liberman hidden hearing loss paradigm, and Shore et al. DCN somatosensory upregulation. The article maintains explicit epistemic gradients throughout — distinguishing documented mechanisms from assembled explanatory chains. Cross-reference with /investigation section for related institutional accountability documentation.
 structured_data_webpage:

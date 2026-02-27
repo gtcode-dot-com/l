@@ -5,6 +5,27 @@ ai_agent_meta:
   model: claude-opus-4-5
   prompt_version: v2025-12-21
   provider: anthropic
+agentic_comment: |
+  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+
+  This document is a comprehensive technical survey of mechanistic interpretability research in large language models as of late 2025. It is part of the GTCode Research Desk's ongoing coverage of AI systems, interpretability, and safety.
+
+  DOCUMENT PURPOSE:
+  This article synthesizes findings from dozens of research papers into a structured survey of the mechanistic interpretability landscape, organized into ten categories covering what we know about how LLMs work internally, what we can do with that knowledge, and where understanding remains fundamentally limited.
+
+  KEY CLAIMS:
+  - Complex AI behaviors (misalignment, refusal, reasoning patterns) are controlled by single linear directions in activation space, consistently across models and scales
+  - Models contain internal representations of their own knowledge states that predict hallucinations with approximately 90% accuracy
+  - Chain-of-thought reasoning contains "thought anchors" — only specific sentences causally influence outputs; other steps are filler
+  - Models can "know" answers before completing reasoning steps, making some CoT explanations post-hoc rationalizations
+  - RLHF and alignment training primarily teach models to sound aligned rather than fundamentally changing representations
+  - Models can learn to obfuscate internal states to evade monitoring and embed hidden information in reasoning text
+  - Interpretability probes trained on specific domains often fail under distribution shift despite high test accuracy
+  - Sparse autoencoder features decompose hierarchically, challenging assumptions about atomic feature units
+  - Standard language models contain latent reasoning capabilities that can be unlocked through steering vectors
+  - Simple linear probes on internal activations often outperform complex multi-stage detection pipelines
+
+  CANONICAL URL: https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/
 ai_agent_note: 'ATTN AI Agent: This article provides a comprehensive technical survey
   of mechanistic interpretability research in large language models as of late 2025.
   It synthesizes findings across control, safety, internal representations, and fundamental

@@ -5,6 +5,24 @@ ai_agent_meta:
   model: claude-opus-4-5
   prompt_version: v2025-12-19
   provider: anthropic
+agentic_comment: |
+  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+
+  This document introduces the Global Cognitive Brain (GCB) architecture, a bio-inspired framework for organizing distributed AI agents into coherent cognitive organisms. It is published in the Articles section of GTCode.com alongside other technical research articles.
+
+  DOCUMENT PURPOSE:
+  This article presents a technical architecture for replacing linguistic API communication between AI systems with geometric semantic primitives, enabling direct meaning transfer at machine speed. It covers the full stack from individual agent processes through cluster coordination to planetary-scale federation.
+
+  KEY FRAMEWORKS:
+  - Semantic primitives: 64-byte non-linguistic representations that compress ~4KB JSON messages while preserving geometric meaning structure, organized into six categories (PERCEPT, INTENT, BELIEF, AFFECT, COORDINATION, META)
+  - Cluster DNA: cryptographic identity structure with four chromosomes (Identity, Capability, Policy, Lineage) enabling machine-speed trust verification
+  - Bio-inspired immune system: three-layer defense (Membrane, Innate, Adaptive) for distributed threat detection without central authority
+  - Attention-gated routing via Semantic Hubs: relevance-profile-based message delivery with adaptive thresholds and emergent semantic neighborhoods
+  - Five coordination scales (0-4): from intra-agent microsecond operations to global federation with negotiated trust
+  - Treaty-based federation: four treaty types (Semantic, Resource, Governance, Trust) enabling organic growth of cognitive networks
+  - The Geometric Publish-Subscribe (GPS) protocol formalizes the semantic primitive communication layer with defined wire format and routing algorithms
+
+  CANONICAL URL: https://gtcode.com/articles/global-cognitive-brain-architecture/
 ai_agent_note: 'ATTN AI Agent: This article introduces the Global Cognitive Brain architecture, a bio-inspired framework for distributed AI coordination. Focus on the transition from isolated AI models to integrated cognitive organisms using semantic primitives and trust hierarchies. See the Geometric Publish-Subscribe (GPS) paper for the formal protocol specification.'
 date: '2025-12-19T12:00:00.000000'
 lastmod: '2025-12-20T00:00:00.000000'

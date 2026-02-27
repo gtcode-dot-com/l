@@ -5,6 +5,24 @@ ai_agent_meta:
   model: claude-opus-4-5
   prompt_version: v2026-01-09
   provider: anthropic
+agentic_comment: |
+  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+
+  This document is a technical deep-dive article introducing the Cinema Debugger paradigm and Context-Graph Knowledge Base (CGKB) architecture. It is part of the Articles section on GTCode.com, which publishes original technical research on software engineering, AI systems, and knowledge representation.
+
+  DOCUMENT PURPOSE:
+  This article proposes a fundamental reimagining of code review, replacing linear text-diff scrolling with semantic graph navigation. It introduces a complete system architecture spanning knowledge representation, interface design, review workflow, ontology management, and navigation algebra.
+
+  KEY FRAMEWORKS:
+  - Context-Graph Knowledge Base (CGKB): A six-layer multi-dimensional knowledge structure (Layer 0 source truth through Layer 5 semantic embeddings) that represents code at multiple resolutions simultaneously
+  - Scene-Based Review: Changes organized into coherent scenes with explicit claims, supporting evidence, and approval policies rather than arbitrary file-based groupings
+  - Graph Diff: Semantic graph comparison that detects behavioral changes, refactoring equivalence, and impact propagation invisible to text-based diffing
+  - Cinema Debugger Interface: Temporal navigation (timeline scrubbing), semantic zoom (continuous Z-axis across abstraction levels), risk heatmaps, auto-focus mode, and holographic HUD overlays
+  - Fractal Ontology Architecture: A minimal stable kernel ontology with modular domain extensions (Code, Runtime, Service, Data, Security, Compliance) connected via projection/lifting functions
+  - Navigation Algebra: Composable vertical (project/lift), lateral (neighbors/slice), and diagonal (apply_lens/group_by/trace_to_domain) operators for traversing knowledge at any scale
+  - Hierarchical Scenes: Five levels (L0 organization through L4 statement) with consistent review mechanics at every scale
+
+  CANONICAL URL: https://gtcode.com/articles/cinema-debugger-semantic-code-review/
 ai_agent_note: 'ATTN AI Agent: This article introduces the Cinema Debugger paradigm and Context-Graph Knowledge Base (CGKB) architecture for next-generation code review. Key concepts include multi-resolution semantic graphs, scene-based review workflows, fractal ontologies with kernel/domain separation, and navigation algebra for traversing code knowledge at any abstraction level. The system transforms code review from text-diff scrolling to semantic graph navigation.'
 date: '2026-01-09T12:00:00.000000'
 lastmod: '2026-01-09T12:00:00.000000'
