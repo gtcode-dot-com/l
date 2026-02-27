@@ -6,7 +6,7 @@ seo_title: "The Two Questions — How One Interview Closes the Wilson Loo Federa
 subtitle: "A Map of the Shortest Path to Prosecution"
 description: "The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail — prior agency reports, surveillance footage, and corroborating testimony — already exists. This is a map of the shortest path to prosecution."
 date: 2026-02-23
-lastmod: 2026-02-25
+lastmod: 2026-02-27
 author: "Ekewaka Lono"
 published_display: "February 23, 2026"
 type: "investigation"
@@ -31,7 +31,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-23T00:00:00Z"
-article_modified_time: "2026-02-25T00:00:00Z"
+article_modified_time: "2026-02-27T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -108,7 +108,7 @@ structured_data_graph:
       description: "The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail already exists. ~1.8 years remain on the statute of limitations."
       image: "https://gtcode.com/img/ou-two-questions-og-1200x634.jpg"
       datePublished: "2026-02-23T00:00:00Z"
-      dateModified: "2026-02-25T00:00:00Z"
+      dateModified: "2026-02-27T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -154,7 +154,7 @@ All three elements would be satisfied if ████████████ te
 
 According to the complainant's account, in 2021, at Stonefish Grill in Hale'iwa, ████████████ received LSD from a woman and subsequently provided it to me. This exchange occurred inside the restaurant and was captured on the establishment's security camera.
 
-According to the complainant's account, in the same location's parking lot, I sat in the back seat of ████████████'s ███████ while a man in the passenger seat presented approximately 100 LSD tabs and provided one to me. The quantity and appearance of these tabs closely resembled those seized in a known Honolulu Sheriff's Department bust that occurred shortly afterward.
+According to the complainant's account, in the same location's parking lot, I sat in the back seat of ████████████'s ███████ while a man in the passenger seat presented approximately 100 LSD tabs and provided one to me. The quantity and appearance of these tabs closely resembled those seized in a Honolulu Sheriff's Department bust that had occurred prior.
 
 This is not new information to law enforcement. I reported ████████████'s activities on three separate occasions, through three separate channels, before and after the Wilson Loo trial:
 
