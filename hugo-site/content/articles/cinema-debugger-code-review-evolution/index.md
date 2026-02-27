@@ -25,6 +25,35 @@ meta_keywords:
 - AI-Assisted Development
 - Software Engineering
 - Knowledge Representation
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/cinema-debugger-semantic-code-review/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "The Cinema Debugger: Reinventing Code Review Through Semantic Graph Navigation"
+og_description: "A technical deep-dive into the Cinema Debugger paradigm and Context-Graph Knowledge Base architecture for next-generation code review."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2026-01-09T00:00:00Z"
+article_modified_time: "2026-01-09T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Cinema Debugger"
+  - "Code Review"
+  - "Semantic Graphs"
+  - "Knowledge Representation"
+  - "Software Engineering"
+  - "AI-Assisted Development"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "The Cinema Debugger: Reinventing Code Review"
+twitter_description: "How semantic graphs, scene-based workflows, and multi-resolution navigation are transforming code review."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "The Cinema Debugger — GTCode article on semantic code review"
+
 sitemap:
   changefreq: monthly
   priority: 0.8

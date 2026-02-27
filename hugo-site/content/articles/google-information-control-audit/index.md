@@ -37,6 +37,38 @@ ai_agent_note: |
 og_image: /img/google-information-control-audit.jpg
 og_image_width: 1600
 og_image_height: 680
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/google-information-control-audit/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "Google and the Architecture of Information Control"
+og_description: "A comprehensive technical audit combining whistleblower disclosures, the 2024 API leak, federal monopoly rulings, and government-platform coordination evidence."
+og_type: "article"
+og_image_alt: "Google and the Architecture of Information Control — technical audit by GTCode"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2026-02-18T00:00:00Z"
+article_modified_time: "2026-02-18T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Google"
+  - "Information Control"
+  - "Antitrust"
+  - "Algorithmic Bias"
+  - "API Leak"
+  - "Government Coordination"
+  - "AI Overviews"
+  - "Content Moderation"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "Google and the Architecture of Information Control"
+twitter_description: "Technical audit of Google's information control apparatus — whistleblower disclosures, API leak, federal rulings, and government coordination."
+twitter_image: "/img/google-information-control-audit.jpg"
+twitter_image_alt: "Google Information Control Audit — GTCode technical audit"
+
 structured_data_webpage:
   type: Article
   headline: "Google and the Architecture of Information Control: A Technical Audit"

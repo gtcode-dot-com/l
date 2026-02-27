@@ -27,6 +27,37 @@ og_image: /articles/the-body-keeps-the-receipts/the-body-keeps-the-receipts.jpg
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "Abstract editorial illustration of a human silhouette composed of layered medical documents and legal records, with cracked-glass neural pathways radiating from the head and a golden cochlea visible in the neck region"
+
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/the-body-keeps-the-receipts/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "The Body Keeps the Receipts"
+og_description: "A research synthesis tracing documented mechanisms from childhood TBI and institutional betrayal through cascading neurobiological consequences to predictable long-term outcomes."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2026-02-26T00:00:00Z"
+article_modified_time: "2026-02-26T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Childhood Traumatic Brain Injury"
+  - "Institutional Betrayal"
+  - "Adverse Childhood Experiences"
+  - "Stress Sensitization"
+  - "Hidden Hearing Loss"
+  - "Microglial Priming"
+  - "Mandatory Reporting"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "The Body Keeps the Receipts"
+twitter_description: "How childhood traumatic brain injury and institutional betrayal produce cascading neurobiological consequences — and how measurement systems exclude those most harmed."
+twitter_image: "/articles/the-body-keeps-the-receipts/the-body-keeps-the-receipts.jpg"
+twitter_image_alt: "The Body Keeps the Receipts — research synthesis on childhood TBI and institutional betrayal"
+
 ai_agent_meta:
   content_digest: null
   generated_at: '2026-02-26T00:00:00.000000+00:00'
@@ -126,7 +157,7 @@ Rachel Carson showed us that the poison can be in the structure, not the inciden
 
 ## IV. One Year Later
 
-He was twelve. A gathering at the home of a local law enforcement officer. Peers from the neighborhood — some from law enforcement families, some from families adjacent to organized crime. The social physics of late-1980s suburban New Jersey, where these worlds touched and overlapped in ways the adults understood and the children absorbed.
+He was twelve. A gathering at the home of a local law enforcement officer. Peers from the neighborhood — some from law enforcement families, some from families adjacent to organized crime. The social physics of early 1990s suburban New Jersey, where these worlds touched and overlapped in ways the adults understood and the children absorbed.
 
 A peer punched him, deliberately and with full force, in the testicles.
 
@@ -290,11 +321,11 @@ This applies not only to this case but to every child who was hit and not examin
 
 The stars. The teeth. The ringing ears. The distrust with a name and a research literature.
 
-Every major sequela has a documented pathway. The Sariaslan cohort. The ACE dose-response data. Freyd's institutional betrayal framework. The stress sensitization model. The hidden hearing loss paradigm. The dorsal cochlear nucleus somatosensory pathway. Collectively, a nearly complete explanatory architecture for a trajectory that began in 1989 and continues today.
+Every major sequela has a documented pathway. The Sariaslan cohort. The ACE dose-response data. Freyd's institutional betrayal framework. The stress sensitization model. The hidden hearing loss paradigm. The dorsal cochlear nucleus somatosensory pathway. Collectively, a nearly complete explanatory architecture for a trajectory that began in 1991 and continues today.
 
 The cascade was preventable at every stage. A bus driver who intervened. A school nurse who examined. A teacher who connected declining grades to a beaten child. An officer who acted. Any single point of intervention would have altered the trajectory. The statutory framework existed — mandatory reporting under N.J.S.A. section 9:6-8.10 was the law of New Jersey before either incident occurred. The clinical knowledge existed — the relationship between pediatric TBI and academic decline was published before he was born. The protective infrastructure existed in statutory form. None of it was activated.
 
-The research that explains what happened to him was published, in most cases, after it happened to him. But the knowledge that could have prevented it — that children who are hit in the head need medical evaluation, that academic decline after assault signals injury rather than laziness, that institutional non-response compounds trauma — was available in 1989. It was not applied.
+The research that explains what happened to him was published, in most cases, after it happened to him. But the knowledge that could have prevented it — that children who are hit in the head need medical evaluation, that academic decline after assault signals injury rather than laziness, that institutional non-response compounds trauma — was available in 1991. It was not applied.
 
 He is not an outlier. He is not an edge case. He is a data point that conforms to the central tendency of every major longitudinal study of childhood trauma, pediatric brain injury, and institutional betrayal published in the last thirty years.
 

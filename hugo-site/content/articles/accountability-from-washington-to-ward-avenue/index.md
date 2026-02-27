@@ -29,6 +29,35 @@ structured_data_webpage:
   headline: "Accountability from Washington to Ward Avenue: What Federal Reform Means for Hawaii"
   description: "An examination of how federal intelligence community reform parallels Hawaii's own unresolved accountability questions."
   about: "Government accountability and institutional reform in Hawaii"
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/accountability-from-washington-to-ward-avenue/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "Accountability from Washington to Ward Avenue: What Federal Reform Means for Hawaii"
+og_description: "How federal intelligence community reform under DNI Tulsi Gabbard parallels Hawaii's unresolved questions about institutional accountability, judicial oversight, and public records transparency."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2026-01-29T00:00:00Z"
+article_modified_time: "2026-01-29T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Hawaii Accountability"
+  - "Institutional Reform"
+  - "Judicial Oversight"
+  - "Whistleblower Protection"
+  - "Public Records Transparency"
+  - "Intelligence Community"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "Accountability from Washington to Ward Avenue"
+twitter_description: "How federal intelligence reform parallels Hawaii's unresolved institutional accountability failures."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "Accountability from Washington to Ward Avenue — GTCode article on institutional reform"
+
 sitemap:
   changefreq: monthly
   priority: 0.8

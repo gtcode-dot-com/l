@@ -30,6 +30,35 @@ meta_keywords:
 - AI Transparency
 - Chain of Thought
 - Model Probing
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "The Mechanistic Interpretability Landscape: A Technical Survey"
+og_description: "A comprehensive survey of mechanistic interpretability research covering control mechanisms, truth detection, safety implications, and fundamental limitations of understanding LLMs."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2025-12-21T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Mechanistic Interpretability"
+  - "AI Safety"
+  - "Large Language Models"
+  - "Steering Vectors"
+  - "Sparse Autoencoders"
+  - "Model Alignment"
+  - "Chain of Thought"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "The Mechanistic Interpretability Landscape 2025"
+twitter_description: "How researchers are learning to understand large language models — control, truth detection, safety, and fundamental limitations."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "Mechanistic Interpretability Landscape — GTCode technical survey"
+
 sitemap:
   changefreq: monthly
   priority: 0.8

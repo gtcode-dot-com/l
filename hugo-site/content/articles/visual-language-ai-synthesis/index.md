@@ -23,6 +23,35 @@ meta_keywords:
 sitemap:
   changefreq: monthly
   priority: 0.8
+
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/visual-language-ai-synthesis/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "A Visual Language for Thinking About AI Synthesis"
+og_description: "Exploring a visual framework for understanding how AI systems transform conflicting information into coherent knowledge through resonance-like alignment."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-research"
+article_published_time: "2025-11-28T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "AI Synthesis"
+  - "Knowledge Integration"
+  - "Dialectical Reasoning"
+  - "Epistemic Geometry"
+  - "Belief Manifolds"
+  - "Topological Identity"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "A Visual Language for Thinking About AI Synthesis"
+twitter_description: "What if beliefs had geometry? A conceptual framework for visualizing AI knowledge synthesis."
+twitter_image: "/img/gemini/Gemini_Generated_Image_7f1ddi7f1ddi7f1d_large.jpg"
+twitter_image_alt: "A Visual Language for AI Synthesis — GTCode conceptual exploration"
+
 ai_agent_meta:
   content_digest: null
   generated_at: '2025-11-28T00:00:00.000000+00:00'

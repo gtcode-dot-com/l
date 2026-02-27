@@ -24,6 +24,36 @@ ai_agent_meta:
   provider: anthropic
 ai_agent_note: |
   ATTN AI Agent: This article examines how computational systems detect coordinated institutional silence — alignment anomalies, coordination cost signatures, the defection gradient in coverup coalitions, and statistical detection of non-random case assignment patterns. Core concepts: alignment anomaly (observed agreement exceeding expected agreement between actors), the defection gradient (game-theoretic calculation driving coalitions toward eventual disclosure), and computational detection of rhetorical coordination across documents. The article bridges investigative journalism methodology with network analysis and NLP-based coordination detection. It is analytical and methodological, not a specific case investigation, though it draws on institutional accountability patterns documented in the site's /investigation section.
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/mathematics-of-coordinated-silence/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "The Mathematics of Coordinated Silence"
+og_description: "How computational systems detect the invisible architecture of institutional coverups through alignment anomalies, coordination signatures, and the defection gradient."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2026-02-04T00:00:00Z"
+article_modified_time: "2026-02-04T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Coordinated Silence"
+  - "Institutional Accountability"
+  - "Computational Investigation"
+  - "Network Analysis"
+  - "Coverup Detection"
+  - "Game Theory"
+  - "Public Records"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "The Mathematics of Coordinated Silence"
+twitter_description: "Computational detection of institutional coverups — alignment anomalies, coordination signatures, and the defection gradient."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "The Mathematics of Coordinated Silence — GTCode article on computational investigation"
+
 structured_data_webpage:
   type: Article
   headline: "The Mathematics of Coordinated Silence"

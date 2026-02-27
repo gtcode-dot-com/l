@@ -24,6 +24,34 @@ meta_keywords:
 - AI Infrastructure
 - Institutional Risk
 - AI Governance
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/epistemic-fragmentation-multi-model-ai-systems/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "Epistemic Fragmentation in Multi-Model AI Systems"
+og_description: "Why different AI models produce conflicting knowledge claims and the institutional risks for organizations relying on AI-generated insights."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2025-11-09T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Epistemic Fragmentation"
+  - "Multi-Model AI"
+  - "Knowledge Synthesis"
+  - "AI Governance"
+  - "Institutional Risk"
+  - "Model Divergence"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "Epistemic Fragmentation in Multi-Model AI Systems"
+twitter_description: "The challenge of synthesizing divergent knowledge claims when different AI models produce conflicting outputs."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "Epistemic Fragmentation — GTCode article on multi-model AI disagreement"
+
 sitemap:
   changefreq: monthly
   priority: 0.7

@@ -23,6 +23,35 @@ meta_keywords:
 - AI Federation
 - Bio-Inspired Computing
 - Machine Intelligence
+# SEO & Indexing
+canonical: "https://gtcode.com/articles/global-cognitive-brain-architecture/"
+robots: "index, follow, max-image-preview:large"
+
+# Open Graph
+og_title: "The Global Cognitive Brain: Engineering Distributed Machine Intelligence"
+og_description: "A bio-inspired framework for distributed AI coordination using semantic primitives, cluster DNA, and trust hierarchies."
+og_type: "article"
+
+# Article metadata
+article_author: "https://gtcode.com/#gtcode-staff"
+article_published_time: "2025-12-19T00:00:00Z"
+article_modified_time: "2025-12-20T00:00:00Z"
+article_section: "Articles"
+article_tags:
+  - "Distributed AI"
+  - "Multi-Agent Systems"
+  - "Semantic Primitives"
+  - "Cognitive Architecture"
+  - "Bio-Inspired Computing"
+  - "Federation Protocols"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "The Global Cognitive Brain"
+twitter_description: "Engineering distributed machine intelligence as a living system through semantic primitives and bio-inspired coordination."
+twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image_alt: "The Global Cognitive Brain — GTCode article on distributed AI architecture"
+
 sitemap:
   changefreq: monthly
   priority: 0.8
