@@ -42,7 +42,7 @@ structured_data_webpage:
     dialectical workflow that generates new synthesized narratives, integrating the
     SNO data structure and Critic Pipeline.'
   headline: 'Chapter 4: The Synthesis Engine & Relational Metrics'
-  type: page
+  type: WebPage
 title: 'Chapter 4: The Synthesis Engine & Relational Metrics'
 weight: 4
 ---

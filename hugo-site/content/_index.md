@@ -10,7 +10,7 @@ og_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Insti
 twitter_title: "Oahu Underground | Investigative Reporting on Hawaii Courts and Institutions"
 brand_name: "Oahu Underground"
 hero_kicker: "Structural Analysis"
-hero_headline: "The Shape of the Cage"
+hero_headline: "Independent Investigations for Hawaii"
 hero_subtitle: "How Networked Coercion Works Without a Conspiracy"
 hero_image_alt: "The Shape of the Cage — structural analysis of networked coercion"
 hero_primary_cta_label: "Read the Investigation"

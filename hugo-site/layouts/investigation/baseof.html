@@ -58,10 +58,13 @@
     {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" (.Params.og_image_alt | default (.Site.Params.og_image_alt | default .Title)) "max" 120) }}
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
     {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
-    {{ $socialTitle := partial "seo/plaintext.html" (dict "value" (printf "%s · %s" (.Params.og_title | default .Title) $seoSiteName) "max" $titleMax) }}
+    {{ $socialTitleSource := .Params.social_title | default (.Params.og_title | default (.Params.twitter_title | default .Title)) }}
+    {{ $socialTitle := partial "seo/plaintext.html" (dict "value" (printf "%s · %s" $socialTitleSource $seoSiteName) "max" $titleMax) }}
+    {{ $socialDescriptionSource := .Params.social_description | default (.Params.og_description | default (.Params.twitter_description | default $pageDescription)) }}
+    {{ $socialDescription := partial "seo/plaintext.html" (dict "value" $socialDescriptionSource "max" $descMax) }}
     <meta property="og:title" content="{{ $socialTitle }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
-    <meta property="og:description" content="{{ .Params.og_description | default $pageDescription }}" />
+    <meta property="og:description" content="{{ $socialDescription }}" />
     <meta property="og:type" content="{{ .Params.og_type | default "article" }}" />
     <meta property="og:url" content="{{ $canonical }}" />
     <meta property="og:image" content="{{ $ogImage }}" />
@@ -77,8 +80,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="{{ .Params.twitter_card | default "summary_large_image" }}" />
-    <meta name="twitter:title" content="{{ partial "seo/plaintext.html" (dict "value" (printf "%s · %s" (.Params.twitter_title | default .Title) $seoSiteName) "max" $titleMax) }}" />
-    <meta name="twitter:description" content="{{ .Params.twitter_description | default $pageDescription }}" />
+    <meta name="twitter:title" content="{{ $socialTitle }}" />
+    <meta name="twitter:description" content="{{ $socialDescription }}" />
     {{ with .Params.twitter_image }}{{ $twImg := . }}{{ if hasPrefix $twImg "/" }}{{ $twImg = printf "%s%s" (strings.TrimRight "/" $.Site.BaseURL) $twImg }}{{ end }}{{ $twImg = replace $twImg "http://" "https://" }}<meta name="twitter:image" content="{{ $twImg }}" />{{ end }}
     {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
     {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}

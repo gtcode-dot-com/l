@@ -124,8 +124,36 @@
 <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
 {{- $sd := .Params.structured_data -}}
 {{- $sdPage := .Params.structured_data_webpage -}}
+{{- $schemaTypeMap := dict
+    "page" "WebPage"
+    "webpage" "WebPage"
+    "article" "Article"
+    "newsarticle" "NewsArticle"
+    "collectionpage" "CollectionPage"
+    "softwaredocumentation" "SoftwareDocumentation"
+    "faqpage" "FAQPage"
+    "chapter" "Chapter"
+    "guide" "Guide"
+  -}}
+{{- $repoRecord := dict -}}
+{{- if and .IsPage (eq .Section "repos") .File -}}
+  {{- $repoSlug := .File.ContentBaseName -}}
+  {{- $repoMatches := where .Site.Data.repos "slug" $repoSlug -}}
+  {{- if gt (len $repoMatches) 0 -}}
+    {{- $repoRecord = index $repoMatches 0 -}}
+  {{- end -}}
+{{- end -}}
+{{- $repoHexURL := default .Params.hex_url (index $repoRecord "hex_url") -}}
+{{- $repoDocsURL := default .Params.docs_url (index $repoRecord "docs_url") -}}
+{{- $repoCodeURL := default .Params.repo_url (index $repoRecord "repo_url") -}}
+{{- $repoVersion := default .Params.version (index $repoRecord "version") -}}
+{{- $repoLicense := default .Params.license (index $repoRecord "license") -}}
+{{- $repoTags := default .Params.meta_keywords (index $repoRecord "tags") -}}
 {{- if $sdPage }}
-  {{- $schemaType := $sdPage.type | default "WebPage" -}}
+  {{- $schemaTypeRaw := strings.TrimSpace (printf "%v" ($sdPage.type | default "WebPage")) -}}
+  {{- $schemaTypeKey := lower $schemaTypeRaw -}}
+  {{- $schemaType := default $schemaTypeRaw (index $schemaTypeMap $schemaTypeKey) -}}
+  {{- if eq $schemaType "" }}{{ $schemaType = "WebPage" }}{{ end -}}
   {{- $headline := partial "seo/plaintext.html" (dict "value" (cond (and $sdPage.headline (ne $sdPage.headline "")) $sdPage.headline .Title) "max" 110) -}}
   {{- $description := partial "seo/plaintext.html" (dict "value" (cond (and $sdPage.description (ne $sdPage.description "")) $sdPage.description (.Summary | default "")) "max" $jsonldDescMax) -}}
   {{- $lastmod := .Lastmod -}}
@@ -172,34 +200,51 @@
         "about" (slice $headline "AI news" "Daily briefings")
     -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
-{{- else if and (eq .Section "repos") .Params.hex_url }}
+{{- else if and .IsPage (eq .Section "repos") (or $repoHexURL $repoCodeURL) }}
   {{- /* SoftwareSourceCode schema for repository pages */ -}}
   {{- $repoName := partial "seo/plaintext.html" (dict "value" .Title "max" 110) -}}
   {{- $description := partial "seo/plaintext.html" (dict "value" (.Description | default (.Summary | default "")) "max" $jsonldDescMax) -}}
-  {{- $modified := cond (.Lastmod.IsZero) (.Date.Format "2006-01-02T15:04:05Z07:00") (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+  {{- $repoLanguage := .Params.programming_language | default "Elixir" -}}
+  {{- $repoCodeURL = strings.TrimSpace (printf "%v" (or $repoCodeURL "")) -}}
+  {{- $repoHexURL = strings.TrimSpace (printf "%v" (or $repoHexURL "")) -}}
+  {{- $repoDocsURL = strings.TrimSpace (printf "%v" (or $repoDocsURL "")) -}}
+  {{- $repoVersion = strings.TrimSpace (printf "%v" (or $repoVersion "")) -}}
+  {{- $repoLicense = strings.TrimSpace (printf "%v" (or $repoLicense "")) -}}
+  {{- if eq (lower $repoVersion) "<nil>" }}{{ $repoVersion = "" }}{{ end -}}
+  {{- if eq (lower $repoLicense) "<nil>" }}{{ $repoLicense = "" }}{{ end -}}
+  {{- $repoLastMod := .Lastmod -}}
+  {{- if $repoLastMod.IsZero }}{{ $repoLastMod = .Date }}{{ end -}}
+  {{- if $repoLastMod.IsZero }}{{ $repoLastMod = now }}{{ end -}}
+  {{- $modified := $repoLastMod.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $data := dict
         "@context" "https://schema.org"
         "@type" "SoftwareSourceCode"
         "name" $repoName
         "description" $description
         "url" $pageURL
-        "codeRepository" (replace .Params.repo_url "http://" "https://")
-        "programmingLanguage" "Elixir"
+        "programmingLanguage" $repoLanguage
         "dateModified" $modified
-    -}}
-  {{- if .Params.license }}
-    {{- $data = merge $data (dict "license" .Params.license) -}}
-  {{- end }}
-  {{- if .Params.hex_url }}
-    {{- $data = merge $data (dict "downloadUrl" (replace .Params.hex_url "http://" "https://")) -}}
-  {{- end }}
-  {{- if .Params.version }}
-    {{- $data = merge $data (dict "softwareVersion" .Params.version) -}}
-  {{- end }}
-  {{- $data = merge $data (dict
         "author" (dict "@type" "Person" "name" $author "url" $siteRoot)
         "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
-    ) -}}
+    -}}
+  {{- if $repoCodeURL }}
+    {{- $data = merge $data (dict "codeRepository" (replace $repoCodeURL "http://" "https://")) -}}
+  {{- end }}
+  {{- if $repoHexURL }}
+    {{- $data = merge $data (dict "downloadUrl" (replace $repoHexURL "http://" "https://")) -}}
+  {{- end }}
+  {{- if $repoDocsURL }}
+    {{- $data = merge $data (dict "documentation" (replace $repoDocsURL "http://" "https://")) -}}
+  {{- end }}
+  {{- if $repoVersion }}
+    {{- $data = merge $data (dict "softwareVersion" $repoVersion) -}}
+  {{- end }}
+  {{- if $repoLicense }}
+    {{- $data = merge $data (dict "license" $repoLicense) -}}
+  {{- end }}
+  {{- if $repoTags }}
+    {{- $data = merge $data (dict "keywords" $repoTags) -}}
+  {{- end }}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if and .IsPage (eq .Section "investigation") }}
   {{- /* Default Article schema for investigations without explicit structured_data */ -}}
