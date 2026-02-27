@@ -1,4 +1,4 @@
 ---
-title: "Assessor"
-description: "The definitive CI/CD platform for AI Quality."
+title: Assessor
+description: The definitive CI/CD platform for AI Quality.
 ---

@@ -1,4 +1,4 @@
 ---
-title: "Embed Ex"
-description: "Vector embeddings service for the NSAI ecosystem"
+title: Embed Ex
+description: Vector embeddings service for the NSAI ecosystem
 ---

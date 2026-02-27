@@ -1,4 +1,4 @@
 ---
-title: "Ex Topology"
-description: "Generic Topological Data Analysis for Elixir"
+title: Ex Topology
+description: Generic Topological Data Analysis for Elixir
 ---

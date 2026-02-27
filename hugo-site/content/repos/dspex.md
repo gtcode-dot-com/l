@@ -1,4 +1,4 @@
 ---
-title: "Dspex"
-description: "DSPy for Elixir via SnakeBridge - Declarative LLM programming"
+title: Dspex
+description: DSPy for Elixir via SnakeBridge - Declarative LLM programming
 ---
