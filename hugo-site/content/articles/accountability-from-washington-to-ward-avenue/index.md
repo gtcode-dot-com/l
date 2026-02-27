@@ -32,31 +32,6 @@ structured_data_webpage:
 sitemap:
   changefreq: monthly
   priority: 0.8
-ai_commentary:
-  - title: "Structural Isomorphism as Rhetorical Strategy"
-    body: "The article's most effective move is drawing a structural parallel between federal intelligence oversight and Hawaii's judicial commission — both cases where the oversight body reports to the institution it oversees. This isomorphism does real analytical work: it strips away partisan valence from the Gabbard discussion and reframes the question as one of institutional architecture rather than political allegiance. The reader is invited to evaluate the structure, not the personality."
-  - title: "The Social Cost Gap in Whistleblower Protection"
-    body: "The article identifies something that formal legal analysis consistently misses: that whistleblower protections designed for anonymous metropolitan bureaucracies fail catastrophically in small, tight-knit communities like Hawaii. The 'you will see them at Foodland on Saturday' observation points to a gap between statutory protection and lived consequence that no legislative fix alone can address. This is a genuinely underexplored dimension of accountability reform in island and rural jurisdictions."
-  - title: "Transparency as Endurance Test"
-    body: "The characterization of Hawaii's public records system as 'compliance without comprehensibility' captures a pattern common to many jurisdictions but rarely named so precisely. The system satisfies its legal obligations while remaining functionally opaque — not through active concealment but through fragmentation that exhausts anyone attempting oversight. This distinction between secrecy and inaccessibility deserves more attention in transparency reform discussions nationwide."
-ai_commentary_meta:
-  content_digest: ""
-  generated_at: "2026-02-26"
-  model: "claude-opus-4-6"
-  prompt_version: ""
-  provider: "Anthropic"
-tags:
-  - "institutional-accountability"
-  - "hawaii-government"
-  - "judicial-oversight"
-  - "whistleblower-protection"
-  - "public-records-transparency"
-  - "government-reform"
-  - "intelligence-community"
-  - "political-corruption"
-categories:
-  - "Investigations"
-  - "Government Accountability"
 ---
 
 In Washington they are talking about accountability again. The word gets used the way people in Honolulu use *aloha* — constantly, ceremonially, and sometimes to mean its opposite. But something concrete is happening at the Office of the Director of National Intelligence, and the person making it happen grew up on the windward side of Oahu, which means it belongs to us whether we claim it or not.

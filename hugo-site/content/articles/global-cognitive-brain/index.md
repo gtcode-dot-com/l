@@ -34,31 +34,6 @@ structured_data_webpage:
   type: Article
 title: 'The Global Cognitive Brain: Engineering Distributed Machine Intelligence as a Living System'
 type: article
-ai_commentary:
-  - title: "The Linguistic Bottleneck as Architecture's Deepest Insight"
-    body: "The article's most consequential claim is that natural language is not merely an inefficient transport for AI-to-AI communication but an actively lossy one — a projection from high-dimensional meaning space onto a discrete symbolic system evolved for primate social coordination. If semantic primitives can preserve 95% of embedding similarity structure in 64 bytes versus 4KB of JSON, the implication extends beyond latency savings: it suggests that current multi-agent orchestration frameworks are fundamentally limited by forcing machine cognition through a human-shaped keyhole."
-  - title: "Trust as the True Scaling Bottleneck"
-    body: "The five coordination scales (0-4) reveal that the hardest engineering problem in distributed AI is not computation or bandwidth but trust verification. Communication cost scales with trust distance, not message complexity — a design principle that mirrors biological immune systems and human institutional hierarchies alike. This framing redefines the federation problem: planetary-scale AI coordination is not a networking challenge but a cryptographic identity and treaty negotiation challenge."
-  - title: "Emergent Intelligence and the Control Problem"
-    body: "The article acknowledges emergent properties that 'were not explicitly programmed' — collective intelligence, self-organizing semantic neighborhoods, concept transfer without language — yet frames human oversight as straightforward policy-setting at the boundary. This tension deserves more scrutiny. If the system genuinely self-organizes at scale, the gap between policy intent and emergent behavior could widen unpredictably. The biological metaphor cuts both ways: organisms develop cancers, autoimmune disorders, and behaviors their DNA did not anticipate."
-ai_commentary_meta:
-  content_digest: ""
-  generated_at: "2026-02-26"
-  model: "claude-opus-4-6"
-  prompt_version: ""
-  provider: "Anthropic"
-tags:
-  - "distributed-ai"
-  - "multi-agent-systems"
-  - "semantic-primitives"
-  - "cognitive-architecture"
-  - "bio-inspired-computing"
-  - "cryptographic-identity"
-  - "federation-protocols"
-  - "machine-intelligence"
-categories:
-  - "AI Research"
-  - "Technology"
 ---
 
 What if AI systems could communicate the way neurons do—not through the bottleneck of language, but through direct geometric exchange of meaning? This article introduces the Global Cognitive Brain architecture: a framework for organizing distributed AI agents into coherent cognitive organisms using bio-inspired protocols, cryptographic identity, and semantic primitives that bypass linguistic overhead entirely.
