@@ -1,13 +1,30 @@
+{{/* Taxonomy overview — all tags (e.g. /tags/) */}}
 {{ define "main" }}
-  <section class="breadcrumb">
-    <a href="/">Home</a> &rsaquo; <strong>{{ .Title }}</strong>
-  </section>
-  <h1>{{ .Title }}</h1>
-  <ul class="news-list">
-    {{ range .Data.Terms.Alphabetical }}
-      <li>
-        <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> — {{ .Count }} article(s)
-      </li>
-    {{ end }}
-  </ul>
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <strong>Tags</strong>
+  </nav>
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <h1 class="section-title">Tags</h1>
+    <p class="section-description">Browse all topics across investigations, articles, and reports.</p>
+  </div>
+
+  <!-- Tag Cloud -->
+  {{ if .Data.Terms }}
+    <div class="tag-cloud" style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:2rem;">
+      {{ range .Data.Terms.Alphabetical }}
+        <a href="{{ .Page.RelPermalink }}" class="badge badge-category" style="font-size:1rem; padding:0.5rem 1rem; text-decoration:none;">
+          {{ .Page.Title }} <span class="text-muted" style="margin-left:0.25rem;">({{ .Count }})</span>
+        </a>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="card">
+      <p class="text-muted">No tags yet.</p>
+    </div>
+  {{ end }}
 {{ end }}

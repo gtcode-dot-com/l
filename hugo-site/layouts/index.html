@@ -72,15 +72,16 @@
     {{ with .Params.meta_keywords }}
     <meta name="keywords" content="{{ delimit . ", " }}" />
     {{ end }}
-    {{ with .Params.robots }}
-    <meta name="robots" content="{{ . }}" />
-    {{ end }}
+    {{ $robots := .Params.robots | default "max-image-preview:large" }}
+    <meta name="robots" content="{{ $robots }}" />
 
     {{ $canonical := .Permalink }}
     {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
     {{ $canonical = replace $canonical "http://" "https://" }}
     {{ .Scratch.Set "_seo_canonical" $canonical }}
     <link rel="canonical" href="{{ $canonical }}" />
+    <link rel="alternate" hreflang="{{ $pageLang }}" href="{{ $canonical }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ $canonical }}" />
 
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" title="{{ $brandName }}" href="{{ .RelPermalink }}" />
@@ -129,7 +130,8 @@
     <link rel="stylesheet" href="{{ $resetCSS.RelPermalink }}" integrity="{{ $resetCSS.Data.Integrity }}" crossorigin="anonymous" />
 
     <!-- Fonts (self-hosted) -->
-    <link rel="stylesheet" href="/fonts/fonts.css" />
+    {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $fontsCSS.RelPermalink }}" integrity="{{ $fontsCSS.Data.Integrity }}" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/ibm-plex-sans-400.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/ibm-plex-sans-600.woff2" type="font/woff2" crossorigin="anonymous" />

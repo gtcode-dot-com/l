@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T16:15:34.775686+00:00'
-exported_at: '2026-02-20T16:15:37.008682+00:00'
+date: '2026-02-27T06:25:39.372927+00:00'
+exported_at: '2026-02-27T06:25:41.572230+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/custom-cuda-kernels-agent-skills
 structured_data:
@@ -22,9 +22,9 @@ structured_data:
   original_source: https://huggingface.co/blog/custom-cuda-kernels-agent-skills
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Custom Kernels for All from Codex and Claude
-updated_at: '2026-02-20T16:15:34.775686+00:00'
+updated_at: '2026-02-27T06:25:39.372927+00:00'
 url_hash: 835809aa0dbebbb9771f36317088d878e2ec22ad
 ---
 

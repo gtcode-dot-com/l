@@ -15,6 +15,16 @@ og_image_height: 630
 og_type: "website"
 og_site_name: "Oahu Underground Investigations"
 
+meta_keywords:
+  - Hawaii investigations
+  - judicial misconduct Hawaii
+  - institutional corruption
+  - Hawaii courts
+  - media blackout
+  - judicial accountability
+  - Wilson Loo
+  - Oahu Underground
+
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Oahu Underground Investigations | Public-Interest Files on Hawaii Institutions"

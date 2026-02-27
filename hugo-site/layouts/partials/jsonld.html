@@ -175,7 +175,7 @@
   {{- if $sdPage.about }}
     {{- $data = merge $data (dict "about" $sdPage.about) -}}
   {{- end -}}
-  {{- if $sdPage.keywords }}
+  {{- if and $sdPage.keywords (gt (len $sdPage.keywords) 0) }}
     {{- $data = merge $data (dict "keywords" $sdPage.keywords) -}}
   {{- end -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
@@ -307,7 +307,7 @@
   {{- if $sd.about }}
     {{- $data = merge $data (dict "about" $sd.about) -}}
   {{- end -}}
-  {{- if $sd.keywords }}
+  {{- if and $sd.keywords (gt (len $sd.keywords) 0) }}
     {{- $data = merge $data (dict "keywords" $sd.keywords) -}}
   {{- end -}}
   {{- if $sd.original_source }}

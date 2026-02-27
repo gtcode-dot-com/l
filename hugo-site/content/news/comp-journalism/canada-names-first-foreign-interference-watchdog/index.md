@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-12T20:15:53.101107+00:00'
-exported_at: '2026-02-12T20:15:55.712475+00:00'
+date: '2026-02-27T06:26:03.610993+00:00'
+exported_at: '2026-02-27T06:26:07.198051+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/china-targets/canada-names-first-foreign-interference-watchdog
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://www.icij.org/investigations/china-targets/canada-names-first-foreign-interference-watchdog
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Canada names first foreign interference watchdog
-updated_at: '2026-02-12T20:15:53.101107+00:00'
+updated_at: '2026-02-27T06:26:03.610993+00:00'
 url_hash: 414580750d26773ea26758cfb77b1d02ad0a0862
 ---
 

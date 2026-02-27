@@ -1,53 +1,78 @@
+{{/* Term page — individual tag (e.g. /tags/wilson-loo/) */}}
+{{ define "pagination-head" }}
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+    {{ $paginator := .Paginate ($pages.ByDate.Reverse) }}
+    {{ .Scratch.Set "_head_paginator" $paginator }}
+    {{ if gt $paginator.PageNumber 1 }}
+    <link rel="prev" href="{{ (index $paginator.Pagers (sub $paginator.PageNumber 2)).URL | absURL }}" />
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <link rel="next" href="{{ (index $paginator.Pagers $paginator.PageNumber).URL | absURL }}" />
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ define "main" }}
   <!-- Breadcrumb -->
   <nav class="breadcrumb">
     <a href="/">Home</a>
     <span class="breadcrumb-separator">&rsaquo;</span>
-    <strong>{{ humanize .Title }}</strong>
+    <a href="/tags/">Tags</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <strong>{{ .Title }}</strong>
   </nav>
 
-  <!-- Section Header -->
+  <!-- Tag Header -->
   <div class="section-header">
-    <h1 class="section-title">{{ humanize .Title }}</h1>
-    <p class="section-description">All articles tagged with {{ .Title }}.</p>
+    <h1 class="section-title">{{ .Title }}</h1>
+    <p class="section-description">{{ len .Pages }} {{ cond (eq (len .Pages) 1) "article" "articles" }} tagged &ldquo;{{ .Title }}&rdquo;</p>
   </div>
 
-  <!-- Articles List -->
-  {{ if .Pages }}
-    {{ $english := where .Pages "Params.language" "en" }}
-    {{ $collection := cond (gt (len $english) 0) $english .Pages }}
-    <div class="news-list news-list-grid">
-      {{ range $collection.ByDate.Reverse }}
-        <article class="card news-list-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
-          {{ if or .Params.category .Params.language }}
-            <div class="card-meta" style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
-              {{ with .Params.category }}
-                <span class="badge badge-category">{{ . }}</span>
-              {{ end }}
-              {{ partial "language-badge.html" . }}
-            </div>
-          {{ end }}
+  <!-- Tagged Articles -->
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+    {{ $paginator := .Scratch.Get "_head_paginator" }}
+    {{ if not $paginator }}
+      {{ $paginator = .Paginate ($pages.ByDate.Reverse) }}
+      {{ .Scratch.Set "_head_paginator" $paginator }}
+    {{ end }}
+    <div id="articles" class="article-list">
+      {{ range $paginator.Pages }}
+        <article class="article-item">
+          <div class="article-header">
+            {{ with .Params.category }}
+              <span class="badge badge-category">{{ . }}</span>
+            {{ end }}
+            {{ partial "language-badge.html" . }}
+            <h2 class="article-title">
+              <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </h2>
+          </div>
 
-          <h2 class="card-title">
-            <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
-          </h2>
-
-          <div class="card-meta">
+          <div class="article-meta">
+            {{ with .Params.author }}
+              <span>By {{ . }}</span>
+              {{ if or $.Date $.Params.source_url }}<span>&bull;</span>{{ end }}
+            {{ end }}
             {{ partial "news-date.html" . }}
+            {{ with .Params.source_url }}
+              <span>&bull;</span>
+              <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
+            {{ end }}
           </div>
 
           {{ with .Summary }}
             {{ $clean := replace (replace . "" "") "" "" }}
-            <p class="card-summary">{{ $clean | plainify | truncate 200 }}</p>
+            <p class="article-summary">{{ $clean | plainify | truncate 200 }}</p>
           {{ end }}
-
-          <a class="btn btn-link" href="{{ .RelPermalink }}">Read article →</a>
         </article>
       {{ end }}
     </div>
+    {{ partial "pagination.html" (dict "paginator" $paginator) }}
   {{ else }}
     <div class="card">
-      <p class="text-muted">No articles found with this tag.</p>
+      <p class="text-muted">No articles with this tag yet.</p>
     </div>
   {{ end }}
 {{ end }}

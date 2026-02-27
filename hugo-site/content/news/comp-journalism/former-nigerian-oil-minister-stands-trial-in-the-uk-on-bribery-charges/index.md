@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-12T20:15:52.867613+00:00'
-exported_at: '2026-02-12T20:15:55.716271+00:00'
+date: '2026-02-27T06:26:02.472563+00:00'
+exported_at: '2026-02-27T06:26:07.200926+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/panama-papers/former-nigerian-oil-minister-stands-trial-in-the-uk-on-bribery-charges
@@ -17,7 +17,7 @@ structured_data:
   author: ''
   description: Prosecutors accused former minister Diezani Alison-Madueke, who featured
     in the ICIJ-led Panama Papers investigation, of living a “life of luxury in London”
-    fueled by corrupt Nigerian oil deals. 
+    fueled by corrupt Nigerian oil deals.
   headline: Former Nigerian oil minister stands trial in the UK on bribery charges
   inLanguage: en
   keywords: []
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.icij.org/investigations/panama-papers/former-nigerian-oil-minister-stands-trial-in-the-uk-on-bribery-charges
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Former Nigerian oil minister stands trial in the UK on bribery charges
-updated_at: '2026-02-12T20:15:52.867613+00:00'
+updated_at: '2026-02-27T06:26:02.472563+00:00'
 url_hash: ab52052b355d79668ae91c04eb7ef4edf2062751
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T10:15:30.397295+00:00'
-exported_at: '2026-02-20T10:15:33.266941+00:00'
+date: '2026-02-27T06:25:40.167587+00:00'
+exported_at: '2026-02-27T06:25:41.563209+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/customize-ai-agent-browsing-with-proxies-profiles-and-extensions-in-amazon-bedrock-agentcore-browser
@@ -18,8 +18,7 @@ structured_data:
   description: 'Today, we are announcing three new capabilities that address these
     requirements: proxy configuration, browser profiles, and browser extensions. Together,
     these features give you fine-grained control over how your AI agents interact
-    with the web. This post will walk through each capability with configuration examples
-    and practical use cases to help you get started.'
+    with the web. This post will walk through each capability with configuration examples...'
   headline: Customize AI agent browsing with proxies, profiles, and extensions in
     Amazon Bedrock AgentCore Browser
   inLanguage: en
@@ -28,10 +27,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/customize-ai-agent-browsing-with-proxies-profiles-and-extensions-in-amazon-bedrock-agentcore-browser
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Customize AI agent browsing with proxies, profiles, and extensions in Amazon
   Bedrock AgentCore Browser
-updated_at: '2026-02-20T10:15:30.397295+00:00'
+updated_at: '2026-02-27T06:25:40.167587+00:00'
 url_hash: d56bec4bd3dcb32390d3324d7149acfc293c815c
 ---
 

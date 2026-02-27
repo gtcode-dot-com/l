@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-04T10:15:42.615027+00:00'
-exported_at: '2026-02-04T10:15:45.191094+00:00'
+date: '2026-02-27T06:26:04.086823+00:00'
+exported_at: '2026-02-27T06:26:07.195181+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/china-cables/beijings-backtrack-on-xinjiang-detention-camps-spurred-by-icij-investigation-research-finds
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://www.icij.org/investigations/china-cables/beijings-backtrack-on-xinjiang-detention-camps-spurred-by-icij-investigation-research-finds
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Beijing’s backtrack on Xinjiang detention camps spurred by ICIJ investigation,
   research finds
-updated_at: '2026-02-04T10:15:42.615027+00:00'
+updated_at: '2026-02-27T06:26:04.086823+00:00'
 url_hash: bf86d03ec2569dc776183029068949c9ee8feba5
 ---
 
@@ -84,9 +84,9 @@ According to human rights activists and Uyghur groups, Uyghurs continue to face 
 [f mid-2022,](https://www.hrw.org/news/2023/09/13/chinas-beautiful-xinjiang-continues-oppress-uighurs)
 Human Rights Watch estimated that close to half a million Uyghurs and other Turkic peoples remained in prison.
 
-Last August, the U.N. high commissioner for human rights
+In August 2024, the U.N. high commissioner for human rights
 [reported many problematic laws and policies remain in place](https://www.ohchr.org/en/press-briefing-notes/2024/08/china-update-work-un-human-rights-office)
-in Xinjiang.,
+in Xinjiang.
 
 But Švec’s research indicates that without sustained international scrutiny — and without reporting efforts like those led by ICIJ — the camp system in its original form might have continued well beyond 2020.
 

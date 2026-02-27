@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-15T00:03:26.803159+00:00'
-exported_at: '2025-12-15T00:03:30.458505+00:00'
+date: '2026-02-27T06:25:38.413845+00:00'
+exported_at: '2026-02-27T06:25:41.575840+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-437-co-improving-ai-rl
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-437-co-improving-ai-rl
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 437: Co-improving AI; RL dreams; AI labels might be annoying'
-updated_at: '2025-12-15T00:03:26.803159+00:00'
+updated_at: '2026-02-27T06:25:38.413845+00:00'
 url_hash: 155a2a9b15b9ac24aad76de2a71a38a16475fe91
 ---
 

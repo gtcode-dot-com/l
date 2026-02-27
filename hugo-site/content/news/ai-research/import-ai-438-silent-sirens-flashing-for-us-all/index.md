@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2025-12-23T12:03:25.829463+00:00'
-exported_at: '2025-12-23T12:03:28.092466+00:00'
+date: '2026-02-27T06:25:37.952821+00:00'
+exported_at: '2026-02-27T06:25:41.578941+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-438-cyber-capability-overhang
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-438-cyber-capability-overhang
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 438: Silent sirens, flashing for us all'
-updated_at: '2025-12-23T12:03:25.829463+00:00'
+updated_at: '2026-02-27T06:25:37.952821+00:00'
 url_hash: d30c8be85206802c8ad6d067f2aef9422d739b6e
 ---
 
@@ -51,7 +51,7 @@ it is. I walk around the town in which I live and there aren’t drones in the s
 
 
 
-And yet you and I both know there are great changes afoot. Huge new beast lumbering from some unknown future into our present, dragging with them change.
+And yet you and I both know there are great changes afoot. Huge new beasts lumbering from some unknown future into our present, dragging with them change.
 
 
 

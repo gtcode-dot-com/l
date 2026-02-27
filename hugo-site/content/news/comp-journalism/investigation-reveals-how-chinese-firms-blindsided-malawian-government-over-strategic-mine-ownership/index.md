@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-03T20:15:44.534962+00:00'
-exported_at: '2026-02-03T20:15:46.716904+00:00'
+date: '2026-02-27T06:26:05.987649+00:00'
+exported_at: '2026-02-27T06:26:07.189483+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/news/2026/02/investigation-reveals-how-chinese-firms-blindsided-malawian-government-over-strategic-mine-ownership
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://www.icij.org/news/2026/02/investigation-reveals-how-chinese-firms-blindsided-malawian-government-over-strategic-mine-ownership
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Investigation reveals how Chinese firms blindsided Malawian government over
   strategic mine ownership
-updated_at: '2026-02-03T20:15:44.534962+00:00'
+updated_at: '2026-02-27T06:26:05.987649+00:00'
 url_hash: 998548af62815da5449b165de64d2381ad1175ae
 ---
 

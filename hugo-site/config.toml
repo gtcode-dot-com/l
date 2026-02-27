@@ -2,7 +2,10 @@ baseURL = 'https://gtcode.com/'
 languageCode = 'en-us'
 title = 'GTCode | Ekewaka Lono'
 theme = 'minimal'
-disableKinds = ['taxonomy', 'term']
+disableKinds = []
+
+[taxonomies]
+  tag = "article_tags"
 [pagination]
   pagerSize = 25
 canonifyURLs = false
@@ -104,6 +107,14 @@ relativeURLs = true
   # robots.txt policy
   robots_crawl_delay_enabled = false
   robots_crawl_delay_seconds = 1
+  author_image = '/img/gtcode_mahalo_1200x630.jpg'
+  author_sameas = ['https://github.com/nshkrdotcom', 'https://hex.pm/users/nshkrdotcom']
+
+[permalinks]
+  [permalinks.term]
+    article_tags = "/tags/:slug/"
+  [permalinks.taxonomy]
+    article_tags = "/tags/"
 
 [markup]
   [markup.goldmark]

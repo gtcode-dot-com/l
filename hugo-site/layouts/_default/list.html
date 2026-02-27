@@ -16,6 +16,12 @@
     {{ $filtered := cond (gt (len $english) 0) $english $ordered }}
     {{ $paginator := .Paginate $filtered }}
     {{ .Scratch.Set "_head_paginator" $paginator }}
+    {{ if gt $paginator.PageNumber 1 }}
+    <link rel="prev" href="{{ (index $paginator.Pagers (sub $paginator.PageNumber 2)).URL | absURL }}" />
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <link rel="next" href="{{ (index $paginator.Pagers $paginator.PageNumber).URL | absURL }}" />
+    {{ end }}
   {{ end }}
 {{ end }}
 

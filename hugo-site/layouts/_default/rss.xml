@@ -32,7 +32,11 @@
         <link>{{ $itemPermalink }}</link>
         <pubDate>{{ $pubDate.UTC.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
         <guid>{{ $itemPermalink }}</guid>
-        <description>{{ .Summary | html }}</description>
+        {{ $rssDesc := "" }}
+        {{ with .Description }}{{ $rssDesc = . }}{{ end }}
+        {{ if eq $rssDesc "" }}{{ with .Params.meta_description }}{{ $rssDesc = . }}{{ end }}{{ end }}
+        {{ if eq $rssDesc "" }}{{ with .Summary }}{{ $rssDesc = . | plainify | truncate 300 }}{{ end }}{{ end }}
+        <description>{{ $rssDesc | html }}</description>
       </item>
     {{- end }}
   </channel>

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-08T21:28:42.187716+00:00'
-exported_at: '2026-01-08T21:28:45.831469+00:00'
+date: '2026-02-27T06:25:37.424181+00:00'
+exported_at: '2026-02-27T06:25:41.582037+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-439-ai-kernels-decentralized
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-439-ai-kernels-decentralized
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 439: AI kernels; decentralized training; and universal representations'
-updated_at: '2026-01-08T21:28:42.187716+00:00'
+updated_at: '2026-02-27T06:25:37.424181+00:00'
 url_hash: 7fe7bd8cc2f4c16a91acefc26c259418340855d1
 ---
 

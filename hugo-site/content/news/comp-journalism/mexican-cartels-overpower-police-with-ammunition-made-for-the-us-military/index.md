@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-12T20:15:52.658216+00:00'
-exported_at: '2026-02-12T20:15:55.718260+00:00'
+date: '2026-02-27T06:25:59.934816+00:00'
+exported_at: '2026-02-27T06:26:07.203899+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/news/2026/02/mexican-cartels-overpower-police-with-ammunition-made-for-the-us-military
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.icij.org/news/2026/02/mexican-cartels-overpower-police-with-ammunition-made-for-the-us-military
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Mexican cartels overpower police with ammunition made for the US military
-updated_at: '2026-02-12T20:15:52.658216+00:00'
+updated_at: '2026-02-27T06:25:59.934816+00:00'
 url_hash: f38822f02adfeb50c9ec6606b6610dcee340d0d8
 ---
 
