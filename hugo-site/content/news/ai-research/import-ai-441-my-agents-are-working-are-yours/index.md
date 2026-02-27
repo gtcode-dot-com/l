@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-19T14:15:28.024358+00:00'
-exported_at: '2026-01-19T14:15:30.281017+00:00'
+date: '2026-02-27T04:26:27.617733+00:00'
+exported_at: '2026-02-27T04:26:29.592317+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-441-my-agents-are-working
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-441-my-agents-are-working
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 441: My agents are working. Are yours?'
-updated_at: '2026-01-19T14:15:28.024358+00:00'
+updated_at: '2026-02-27T04:26:27.617733+00:00'
 url_hash: 85300657b6794d83520394d10c7b91cb7b9f24ec
 ---
 

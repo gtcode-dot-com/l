@@ -11,4 +11,35 @@
 {{- if hasPrefix $src "http://" -}}
   {{- $src = replace $src "http://" "https://" -}}
 {{- end -}}
-<img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async" />
+{{- $page := .Page -}}
+{{- $img := $page.Resources.GetMatch $src -}}
+{{- if $img -}}
+  {{- if eq $img.MediaType.SubType "svg" -}}
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async" />
+  {{- else -}}
+    {{- $widths := slice 600 900 1200 -}}
+    {{- $fallback := $img -}}
+    {{- if gt $img.Width 1200 -}}
+      {{- $fallback = $img.Resize "1200x webp" -}}
+    {{- else -}}
+      {{- $fallback = $img.Process "webp" -}}
+    {{- end -}}
+    <picture>
+      <source type="image/webp" srcset="
+        {{- range $i, $w := $widths -}}
+          {{- if gt $img.Width $w -}}
+            {{- $resized := $img.Resize (printf "%dx webp" $w) -}}
+            {{- if $i }}, {{ end -}}
+            {{ $resized.RelPermalink }} {{ $w }}w
+          {{- end -}}
+        {{- end -}}
+        {{- if gt $img.Width 1200 -}}
+          , {{ ($img.Resize "1536x webp").RelPermalink }} 1536w
+        {{- end -}}
+      " sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px">
+      <img src="{{ $fallback.RelPermalink }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }} width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" />
+    </picture>
+  {{- end -}}
+{{- else -}}
+  <img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async" />
+{{- end -}}

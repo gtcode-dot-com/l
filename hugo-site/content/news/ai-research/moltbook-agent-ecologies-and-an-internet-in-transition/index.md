@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-02T14:15:28.809555+00:00'
-exported_at: '2026-02-02T14:15:31.075477+00:00'
+date: '2026-02-27T04:26:27.723418+00:00'
+exported_at: '2026-02-27T04:26:29.588729+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-443-into-the-mist-moltbook
@@ -24,10 +24,10 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-443-into-the-mist-moltbook
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 443: Into the mist: Moltbook, agent ecologies, and the internet
   in transition'
-updated_at: '2026-02-02T14:15:28.809555+00:00'
+updated_at: '2026-02-27T04:26:27.723418+00:00'
 url_hash: 5c92864c6b6ef6d02036d5f6f10c303b62644448
 ---
 

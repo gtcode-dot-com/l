@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-01-12T14:15:27.762749+00:00'
-exported_at: '2026-01-12T14:15:30.432769+00:00'
+date: '2026-02-27T04:26:28.217839+00:00'
+exported_at: '2026-02-27T04:26:29.585228+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-440-red-queen-ai-ai-regulating
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-440-red-queen-ai-ai-regulating
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 440: Red queen AI; AI regulating AI; o-ring automation'
-updated_at: '2026-01-12T14:15:27.762749+00:00'
+updated_at: '2026-02-27T04:26:28.217839+00:00'
 url_hash: 7a726cb9ca3368a825ab42b22365b3c8f0b6f38c
 ---
 

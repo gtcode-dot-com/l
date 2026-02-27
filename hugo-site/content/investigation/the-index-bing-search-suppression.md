@@ -129,7 +129,7 @@ The evidence comes from Microsoft's own tools.
 
 A `site:gtcode.com` search on Bing returns nothing.
 
-![Bing search for site:gtcode.com returning zero results](/img/bing-block-site-search.png)
+![Bing search for site:gtcode.com returning zero results](/img/bing-block-site-search.webp)
 
 *"There are no results for site:gtcode.com."*
 
@@ -141,7 +141,7 @@ This is not a new domain. This site has been publishing investigative journalism
 
 URL Inspection of the most recent investigation — "[The Nod: Wilson Loo and the Silent Felony](/investigation/the-nod-wilson-loo-silent-felony/)" — returns **"Not discovered."**
 
-![Bing URL Inspection showing "Not discovered" for Wilson Loo investigation](/img/bing-block-wilson-loo-not-discovered.png)
+![Bing URL Inspection showing "Not discovered" for Wilson Loo investigation](/img/bing-block-wilson-loo-not-discovered.webp)
 
 *"URL cannot appear on Bing. The inspected URL is not known to Bing."*
 
@@ -155,7 +155,7 @@ This is the exhibit that proves domain-level suppression.
 
 URL Inspection of `gtcode.com/repos/agent_session_manager/` — an open-source Elixir software package page — returns **"Blocked."**
 
-![Bing URL Inspection showing "Blocked" for open-source Elixir package](/img/bing-block-agent-session-manager.png)
+![Bing URL Inspection showing "Blocked" for open-source Elixir package](/img/bing-block-agent-session-manager.webp)
 
 *"The inspected URL is known to Bing but has some issues which are preventing us from serving it to our users. We recommend you to follow Bing Webmaster Guidelines."*
 
@@ -251,7 +251,7 @@ Three days after this article was published, the same investigation page from Ex
 
 The status has changed.
 
-![Bing URL Inspection showing "Blocked" for The Nod investigation page, February 15, 2026](/img/bing-block-nod-blocked-20260215.png)
+![Bing URL Inspection showing "Blocked" for The Nod investigation page, February 15, 2026](/img/bing-block-nod-blocked-20260215.webp)
 
 On February 12, this page was **"Not discovered"** — Bing claimed it had never seen it. On February 15, the status reads **"Blocked"**:
 
@@ -273,13 +273,13 @@ Six days after the initial documentation, and three days after Exhibit D confirm
 
 The scan completed. An email confirmation arrived from Bing Webmaster Tools (`bingwb@microsoft.com`):
 
-![Bing Webmaster Tools email confirming site scan completion for gtcode.com, February 18, 2026](/img/bing-block-scan-email-20260218.png)
+![Bing Webmaster Tools email confirming site scan completion for gtcode.com, February 18, 2026](/img/bing-block-scan-email-20260218.webp)
 
 *"Scan initiated in Bing Webmaster with name test is now available."*
 
 The scan report contained a single finding: **"ERROR: Http 400-499 errors"** — on the homepage.
 
-![Bing Site Scan showing HTTP 400-499 errors for gtcode.com root URL, February 18, 2026](/img/bing-block-scan-4xx-20260218.png)
+![Bing Site Scan showing HTTP 400-499 errors for gtcode.com root URL, February 18, 2026](/img/bing-block-scan-4xx-20260218.webp)
 
 The scan reached **page depth 0**. It could not get past the front door. According to Bing's own diagnostic infrastructure, `https://gtcode.com/` is returning an HTTP client error — a 4xx status code — which means the server is supposedly rejecting the request.
 
@@ -291,7 +291,7 @@ This was tested independently on February 18, 2026, using multiple user agents a
 
 A URL Inspection was then run on the homepage itself — the same URL the Site Scan claimed was returning 4xx errors:
 
-![Bing URL Inspection showing "Discovered but not crawled" and "URL cannot appear on Bing" for gtcode.com homepage, February 18, 2026](/img/bing-block-homepage-not-crawled-20260218.png)
+![Bing URL Inspection showing "Discovered but not crawled" and "URL cannot appear on Bing" for gtcode.com homepage, February 18, 2026](/img/bing-block-homepage-not-crawled-20260218.webp)
 
 The result: **"Discovered but not crawled. URL cannot appear on Bing."** The crawl section states: *"The inspected URL is known to Bing but has some issues which are preventing indexation."* No specifics. No actionable explanation. Just a vague advisory to "follow Bing Webmaster Guidelines."
 
@@ -303,7 +303,7 @@ The Site Scan says the homepage returns a 4xx error. The URL Inspection says it 
 
 On the same day, a URL Inspection was run on a different page: `https://gtcode.com/consulting/` — a simple services page with no investigative content.
 
-![Bing URL Inspection showing "Indexed successfully" for gtcode.com/consulting, February 18, 2026](/img/bing-block-consulting-indexed-20260218.png)
+![Bing URL Inspection showing "Indexed successfully" for gtcode.com/consulting, February 18, 2026](/img/bing-block-consulting-indexed-20260218.webp)
 
 The result: **"Indexed successfully. URL can appear on Bing."** Green checkmarks. No SEO issues. No problems found.
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-13T02:15:29.793206+00:00'
-exported_at: '2026-02-13T02:15:32.988694+00:00'
+date: '2026-02-27T04:26:27.277028+00:00'
+exported_at: '2026-02-27T04:26:29.596231+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-444-llm-societies-huawei
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-444-llm-societies-huawei
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench'
-updated_at: '2026-02-13T02:15:29.793206+00:00'
+updated_at: '2026-02-27T04:26:27.277028+00:00'
 url_hash: 70cc7172853ba4d6d31d9715da717b7674c11413
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-12T20:15:52.186721+00:00'
-exported_at: '2026-02-12T20:15:55.726711+00:00'
+date: '2026-02-27T04:26:49.678627+00:00'
+exported_at: '2026-02-27T04:26:51.023205+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/news/2026/02/nearly-half-of-powerful-50-caliber-ammo-seized-by-mexican-government-came-from-us-army-plant-defense-minister-says
@@ -16,7 +16,7 @@ structured_data:
   about: []
   author: ''
   description: Mexican officials shared the data in response to an investigation by
-    ICIJ and media partners. 
+    ICIJ and media partners.
   headline: Nearly half of powerful .50-caliber ammo seized by Mexican government
     came from US Army plant, defense minister says
   inLanguage: en
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://www.icij.org/news/2026/02/nearly-half-of-powerful-50-caliber-ammo-seized-by-mexican-government-came-from-us-army-plant-defense-minister-says
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Nearly half of powerful .50-caliber ammo seized by Mexican government came
   from US Army plant, defense minister says
-updated_at: '2026-02-12T20:15:52.186721+00:00'
+updated_at: '2026-02-27T04:26:49.678627+00:00'
 url_hash: c8a25c978473deb97da319b452a0ffdf046cff3f
 ---
 

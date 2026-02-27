@@ -32,7 +32,7 @@ card_summary: "How donor relationships, board overlaps, and personnel bridges cr
 # Open Graph
 og_title: "The Zone of Politeness: How Hawaiʻi's Media Blackout Works"
 og_description: "An investigation into structural forces preventing Hawaiʻi newsrooms from investigating certain networks, and the retaliation that follows when someone tries."
-og_image: "https://gtcode.com/img/zone-of-politeness-og.png"
+og_image: "https://gtcode.com/img/zone-of-politeness-og.jpg"
 og_image_width: 1200
 og_image_height: 628
 og_type: "article"
@@ -55,7 +55,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Zone of Politeness: How Hawaiʻi's Media Blackout Works"
 twitter_description: "Why Civil Beat won't investigate the Luke-Loo network—and what happened when I tried."
-twitter_image: "https://gtcode.com/img/zone-of-politeness-og.png"
+twitter_image: "https://gtcode.com/img/zone-of-politeness-og.jpg"
 twitter_image_alt: "Network topology illustration representing institutional connections in Hawaiʻi"
 
 # Structured Data
@@ -70,7 +70,7 @@ structured_data_graph:
       headline: "The Zone of Politeness: How Hawaiʻi's Media Blackout Works"
       alternativeHeadline: "Why Civil Beat Won't Touch the Luke-Loo Network"
       description: "An investigation into the structural forces that prevent Hawaiʻi's newsrooms from investigating certain networks, and the social enforcement mechanisms that follow."
-      image: "https://gtcode.com/img/zone-of-politeness-og.png"
+      image: "https://gtcode.com/img/zone-of-politeness-og.jpg"
       datePublished: "2026-02-04T00:00:00Z"
       dateModified: "2026-02-05T00:00:00Z"
       author:

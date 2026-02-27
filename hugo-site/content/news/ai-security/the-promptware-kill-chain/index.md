@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T12:15:15.095988+00:00'
-exported_at: '2026-02-20T12:15:18.042903+00:00'
+date: '2026-02-27T04:26:05.128785+00:00'
+exported_at: '2026-02-27T04:26:07.221887+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/the-promptware-kill-chain.html
@@ -19,10 +19,7 @@ structured_data:
     language models (LLMs) pose a real threat. Yet discussions around these attacks
     and their potential defenses are dangerously myopic. The dominant narrative focuses
     on “prompt injection,” a set of techniques to embed instructions into inputs to
-    LLM intended to perform malicious activity. This term suggests a simple, singular
-    vulnerability. This framing obscures a more complex and dangerous reality. Attacks
-    on LLM-based systems have evolved into a distinct class of malware execution mechanisms,
-    which we term “promptware.” In a ...
+    LLM...
   headline: The Promptware Kill Chain
   inLanguage: en
   keywords: []
@@ -30,9 +27,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/the-promptware-kill-chain.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: The Promptware Kill Chain
-updated_at: '2026-02-20T12:15:15.095988+00:00'
+updated_at: '2026-02-27T04:26:05.128785+00:00'
 url_hash: 85a071f015ff9f2696a5dfcffac1850138154516
 ---
 
