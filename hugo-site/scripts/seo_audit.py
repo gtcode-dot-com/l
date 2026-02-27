@@ -99,6 +99,14 @@ class PageRecord:
         return len(parts) >= 2 and parts[0] == "repos"
 
 
+@dataclass
+class RedirectRule:
+    line_no: int
+    source: str
+    destination: str
+    status: str = ""
+
+
 class PageHTMLParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -434,6 +442,58 @@ def parse_robots_crawl_delay(robots_path: Path) -> tuple[list[str], str | None]:
     return values, None
 
 
+def parse_redirect_rules(path: Path) -> tuple[list[RedirectRule], str | None]:
+    if not path.exists():
+        return [], f"Missing redirects file: {path}"
+    rules: list[RedirectRule] = []
+    for idx, raw in enumerate(path.read_text(encoding="utf-8", errors="ignore").splitlines(), start=1):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split()
+        if len(parts) < 2:
+            continue
+        source = parts[0]
+        destination = parts[1]
+        status = parts[2] if len(parts) >= 3 else ""
+        rules.append(RedirectRule(line_no=idx, source=source, destination=destination, status=status))
+    return rules, None
+
+
+def redirect_pattern_matches_path(source_pattern: str, candidate_path: str) -> bool:
+    pattern = source_pattern.strip()
+    if not pattern.startswith("/"):
+        return False
+
+    regex_parts: list[str] = []
+    index = 0
+    while index < len(pattern):
+        char = pattern[index]
+        if char == "*":
+            regex_parts.append(".*")
+            index += 1
+            continue
+        if char == ":":
+            end = index + 1
+            while end < len(pattern) and (pattern[end].isalnum() or pattern[end] == "_"):
+                end += 1
+            token = pattern[index + 1 : end]
+            if token:
+                regex_parts.append(".*" if token.lower() == "splat" else "[^/]+")
+                index = end
+                continue
+        regex_parts.append(re.escape(char))
+        index += 1
+
+    regex = f"^{''.join(regex_parts)}$"
+    return re.match(regex, candidate_path) is not None
+
+
+def redirect_rule_matches_repos(source_pattern: str) -> bool:
+    candidates = ("/repos", "/repos/", "/repos/example", "/repos/example/")
+    return any(redirect_pattern_matches_path(source_pattern, candidate) for candidate in candidates)
+
+
 def check_workflow_alignment(
     workflow_path: Path | None,
     hugo_version_file: Path | None,
@@ -663,22 +723,27 @@ def run_audit(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
         )
 
     redirects_path = public_dir / "_redirects"
+    redirect_rules, redirects_error = parse_redirect_rules(redirects_path)
     repos_redirect_conflicts: list[str] = []
-    if redirects_path.exists():
-        for idx, raw in enumerate(redirects_path.read_text(encoding="utf-8", errors="ignore").splitlines(), start=1):
-            line = raw.strip()
-            if not line or line.startswith("#"):
-                continue
-            source = line.split()[0]
-            if source == "/repos" or source.startswith("/repos/"):
-                repos_redirect_conflicts.append(f"line {idx}: {source}")
+    if redirects_error:
+        repos_redirect_conflicts.append(redirects_error)
     else:
-        repos_redirect_conflicts.append(f"missing redirects file: {redirects_path}")
+        for rule in redirect_rules:
+            source_lower = rule.source.lower()
+            if source_lower == "/repos" or source_lower.startswith("/repos/"):
+                repos_redirect_conflicts.append(
+                    f"line {rule.line_no}: direct /repos rule ({rule.source} -> {rule.destination})"
+                )
+                continue
+            if redirect_rule_matches_repos(rule.source):
+                repos_redirect_conflicts.append(
+                    f"line {rule.line_no}: wildcard can match /repos/ ({rule.source} -> {rule.destination})"
+                )
     add_check(
         checks,
         "required.repos_redirect_conflicts",
         len(repos_redirect_conflicts),
-        "Redirect rules must not rewrite first-party /repos/ URLs",
+        "Redirect rules must not rewrite first-party /repos/ URLs (including wildcard patterns)",
         repos_redirect_conflicts,
     )
 
