@@ -48,3 +48,6 @@ desktop.ini
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+/hugo-site/.audit/
+/hugo-site/scripts/__pycache__/

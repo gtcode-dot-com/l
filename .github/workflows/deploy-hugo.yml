@@ -104,8 +104,31 @@ jobs:
         run: |
           hugo \
             --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --minify
+
+      - name: Run SEO audit gate
+        working-directory: ${{ steps.hugo-check.outputs.hugo_dir }}
+        run: |
+          if [[ ! -f scripts/seo_audit.py ]]; then
+            echo "ERROR: scripts/seo_audit.py not found in $PWD"
+            exit 1
+          fi
+          python3 scripts/seo_audit.py \
+            --public-dir public \
+            --config config.toml \
+            --base-url "https://gtcode.com/" \
+            --workflow-path "${{ github.workspace }}/.github/workflows/deploy-hugo.yml" \
+            --hugo-version-file .hugo-version \
+            --report-json "${{ github.workspace }}/seo-audit-report.json" \
+            --strict
+
+      - name: Upload SEO audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-audit-report
+          path: ./seo-audit-report.json
+          if-no-files-found: ignore
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
