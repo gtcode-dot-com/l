@@ -286,7 +286,7 @@
   {{- else if .Params.og_image }}
     {{- $image = $image | append (replace .Params.og_image "http://" "https://") -}}
   {{- else if .Site.Params.og_image }}
-    {{- $image = $image | append (printf "%s%s" $siteRoot (.Site.Params.og_image | default "/img/gtcode-core.svg")) -}}
+    {{- $image = $image | append (printf "%s%s" (strings.TrimRight "/" $siteRoot) (.Site.Params.og_image | default "/img/gtcode-core.svg")) -}}
   {{- end -}}
   {{- $data := dict
         "@context" "https://schema.org"
