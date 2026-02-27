@@ -33,5 +33,3 @@ Allow: /
 
 Sitemap: https://gtcode.com/sitemap.xml
 Sitemap: https://gtcode.com/news-sitemap.xml
-
-Crawl-delay: 1

@@ -1,5 +1,18 @@
+{{- $windowDays := int (.Site.Params.news_sitemap_window_days | default 2) -}}
+{{- if lt $windowDays 1 }}{{ $windowDays = 2 }}{{ end -}}
+{{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
 {{- $newsPages := where .Site.RegularPages "Section" "news" -}}
-{{- $recent := first 100 (where (sort $newsPages "Date" "desc") "Date" "gt" (now.AddDate 0 0 -2)) -}}
+{{- $recent := where (sort $newsPages "Date" "desc") "Date" "gt" (now.AddDate 0 0 (mul -1 $windowDays)) -}}
+{{- $indexable := slice -}}
+{{- range $recent -}}
+  {{- $robots := lower (printf "%v" .Params.robots) -}}
+  {{- $isNoindex := in $robots "noindex" -}}
+  {{- $isSyndicated := and .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}
+  {{- if not (or $isNoindex $isSyndicated) -}}
+    {{- $indexable = $indexable | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $recent = first 100 $indexable -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">

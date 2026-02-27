@@ -1,0 +1,14 @@
+{{- $alt := strings.TrimSpace (.PlainText | default .Text) -}}
+{{- $altNormalized := lower $alt -}}
+{{- if or (eq $alt "") (in (slice "image" "photo" "graphic" "screenshot" "img") $altNormalized) -}}
+  {{- $fallback := strings.TrimSpace (.Title | default "") -}}
+  {{- if eq $fallback "" -}}
+    {{- $fallback = printf "%s illustration" (.Page.Title | plainify) -}}
+  {{- end -}}
+  {{- $alt = $fallback -}}
+{{- end -}}
+{{- $src := .Destination -}}
+{{- if hasPrefix $src "http://" -}}
+  {{- $src = replace $src "http://" "https://" -}}
+{{- end -}}
+<img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async" />

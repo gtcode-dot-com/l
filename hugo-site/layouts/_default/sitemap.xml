@@ -1,5 +1,6 @@
 {{- $normalizedBase := replace .Site.BaseURL "http://" "https://" -}}
 {{- $base := strings.TrimSuffix "/" $normalizedBase -}}
+{{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
 {{- $siteLastMod := .Site.Lastmod -}}
 {{- $siteLastModString := "" -}}
 {{- if not ($siteLastMod.IsZero) -}}
@@ -25,7 +26,7 @@
   {{- range sort .Data.Pages "RelPermalink" "asc" }}
     {{- $robots := lower (printf "%v" .Params.robots) -}}
     {{- $isNoindex := in $robots "noindex" -}}
-    {{- $isSyndicatedNews := and (eq .Section "news") .Params.source_url (not .Params.news_original) -}}
+    {{- $isSyndicatedNews := and (eq .Section "news") .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}
     {{- if not (or $isNoindex $isSyndicatedNews) -}}
     {{- $lastmod := .Lastmod -}}
     {{- if $lastmod.IsZero }}{{ $lastmod = .PublishDate }}{{ end -}}

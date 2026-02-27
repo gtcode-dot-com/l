@@ -10,8 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{- $siteTitle := .Site.Title -}}
     {{- $seoSiteName := .Site.Params.seo_site_name | default $siteTitle -}}
+    {{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
+    {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
     {{- $pageTitle := .Params.seo_title | default .Title -}}
-    <title>{{ $pageTitle }} · {{ $seoSiteName }}</title>
+    {{- $pageTitle = partial "seo/plaintext.html" (dict "value" (printf "%s · %s" $pageTitle $seoSiteName) "max" $titleMax) -}}
+    <title>{{ $pageTitle }}</title>
 
     <!-- Meta tags -->
     {{ partial "fetch-article-meta.html" (dict "context" .) }}
@@ -21,9 +24,10 @@
       {{ $articleMeta = index $articleMetaMap (trim .RelPermalink "/") }}
     {{ end }}
     {{ $pageDescription := .Site.Params.description }}
-    {{ if .Description }}{{ $pageDescription = .Description }}{{ else if .Summary }}{{ $pageDescription = .Summary | plainify | truncate 170 }}{{ end }}
+    {{ if .Description }}{{ $pageDescription = .Description }}{{ else if .Summary }}{{ $pageDescription = .Summary | plainify | truncate $descMax }}{{ end }}
     {{ with .Params.meta_description }}{{ $pageDescription = . }}{{ end }}
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ end }}
+    {{ $pageDescription = partial "seo/plaintext.html" (dict "value" $pageDescription "max" $descMax) }}
     <meta name="description" content="{{ $pageDescription }}" />
     <meta name="author" content="{{ .Params.author | default .Site.Params.author }}" />
     {{ with .Params.robots }}
@@ -60,10 +64,11 @@
     {{ $ogImage = replace $ogImage "http://" "https://" }}
     {{ $ogImageWidth := printf "%v" (.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
     {{ $ogImageHeight := printf "%v" (.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
-    {{ $ogImageAlt := .Params.og_image_alt | default (.Site.Params.og_image_alt | default .Title) }}
+    {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" (.Params.og_image_alt | default (.Site.Params.og_image_alt | default .Title)) "max" 120) }}
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
     {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
-    <meta property="og:title" content="{{ .Params.og_title | default .Title }} · {{ $seoSiteName }}" />
+    {{ $socialTitle := partial "seo/plaintext.html" (dict "value" (printf "%s · %s" (.Params.og_title | default .Title) $seoSiteName) "max" $titleMax) }}
+    <meta property="og:title" content="{{ $socialTitle }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ .Params.og_description | default $pageDescription }}" />
     <meta property="og:type" content="{{ .Params.og_type | default "article" }}" />
@@ -81,7 +86,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="{{ .Params.twitter_card | default "summary_large_image" }}" />
-    <meta name="twitter:title" content="{{ .Params.twitter_title | default .Title }} · {{ $seoSiteName }}" />
+    <meta name="twitter:title" content="{{ partial "seo/plaintext.html" (dict "value" (printf "%s · %s" (.Params.twitter_title | default .Title) $seoSiteName) "max" $titleMax) }}" />
     <meta name="twitter:description" content="{{ .Params.twitter_description | default $pageDescription }}" />
     {{ with .Params.twitter_image }}{{ $twImg := . }}{{ if hasPrefix $twImg "/" }}{{ $twImg = printf "%s%s" (strings.TrimRight "/" $.Site.BaseURL) $twImg }}{{ end }}{{ $twImg = replace $twImg "http://" "https://" }}<meta name="twitter:image" content="{{ $twImg }}" />{{ else }}<meta name="twitter:image" content="{{ $ogImage }}" />{{ end }}
     {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}

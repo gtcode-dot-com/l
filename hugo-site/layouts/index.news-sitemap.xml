@@ -1,13 +1,16 @@
 {{- $normalizedBase := replace .Site.BaseURL "http://" "https://" -}}
 {{- $base := strings.TrimSuffix "/" $normalizedBase -}}
-{{- $cutoff := now.AddDate 0 0 -2 -}}
+{{- $windowDays := int (.Site.Params.news_sitemap_window_days | default 2) -}}
+{{- if lt $windowDays 1 }}{{ $windowDays = 2 }}{{ end -}}
+{{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
+{{- $cutoff := now.AddDate 0 0 (mul -1 $windowDays) -}}
 {{- $recentNews := where .Site.RegularPages "Section" "news" -}}
 {{- $recentNews = where $recentNews ".Date" "ge" $cutoff -}}
 {{- $indexableNews := slice -}}
 {{- range $recentNews -}}
   {{- $robots := lower (printf "%v" .Params.robots) -}}
   {{- $isNoindex := in $robots "noindex" -}}
-  {{- $isSyndicated := and .Params.source_url (not .Params.news_original) -}}
+  {{- $isSyndicated := and .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}
   {{- if not (or $isNoindex $isSyndicated) -}}
     {{- $indexableNews = $indexableNews | append . -}}
   {{- end -}}

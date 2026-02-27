@@ -80,6 +80,9 @@ relativeURLs = true
   description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional corruption, judicial misconduct, and accountability in the islands.'
   author = 'Ekewaka Lono'
   home_title_suffix = 'Investigative Journalism + AI Consulting'
+  # SEO guardrails (template-level normalization/truncation)
+  seo_title_max_chars = 60
+  seo_description_max_chars = 158
   og_site_name = 'Oahu Underground by GTCode'
   seo_site_name = 'Oahu Underground by GTCode'
   newsroom_name = 'Oahu Underground'
@@ -92,6 +95,15 @@ relativeURLs = true
   og_image_alt = 'Oahu Underground investigative reporting in Hawaii'
   contact_email = 'inquire@gtcode.com'
   tips_email = 'tips@gtcode.com'
+  # News indexing strategy:
+  # false => syndicated feed imports remain noindex with canonical pointing to source_url.
+  # true  => syndicated imports can be indexed on gtcode.com.
+  news_index_syndicated = false
+  # Google News sitemap window in days (Google recommendation: last 2 days).
+  news_sitemap_window_days = 2
+  # robots.txt policy
+  robots_crawl_delay_enabled = false
+  robots_crawl_delay_seconds = 1
 
 [markup]
   [markup.goldmark]

@@ -4,6 +4,8 @@
 {{- $langFromHugo := .Lang | default "" -}}
 {{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
 {{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
+{{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
+{{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
 {{- $pageTitle := .Title | default (printf "%s | Investigative Reporting" $brandName) -}}
 {{- $ogTitle := .Params.og_title | default $pageTitle -}}
 {{- $twitterTitle := .Params.twitter_title | default $ogTitle -}}
@@ -45,6 +47,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{- $pageTitle = partial "seo/plaintext.html" (dict "value" $pageTitle "max" $titleMax) -}}
     <title>{{ $pageTitle }}</title>
 
     <!-- Meta tags -->
@@ -58,6 +61,7 @@
     {{ if .Description }}{{ $pageDescription = .Description }}{{ end }}
     {{ with .Params.meta_description }}{{ $pageDescription = . }}{{ end }}
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ end }}
+    {{ $pageDescription = partial "seo/plaintext.html" (dict "value" $pageDescription "max" $descMax) }}
     <meta name="description" content="{{ $pageDescription }}" />
     <meta name="author" content="{{ .Site.Params.author }}" />
     {{ with .Params.meta_keywords }}
@@ -87,7 +91,9 @@
     {{ $ogImage = replace $ogImage "http://" "https://" }}
     {{ $ogImageWidth := printf "%v" (.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
     {{ $ogImageHeight := printf "%v" (.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
-    {{ $ogImageAlt := .Params.og_image_alt | default (.Site.Params.og_image_alt | default $ogTitle) }}
+    {{ $ogTitle = partial "seo/plaintext.html" (dict "value" $ogTitle "max" $titleMax) }}
+    {{ $twitterTitle = partial "seo/plaintext.html" (dict "value" $twitterTitle "max" $titleMax) }}
+    {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" (.Params.og_image_alt | default (.Site.Params.og_image_alt | default $ogTitle)) "max" 120) }}
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
     {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
 

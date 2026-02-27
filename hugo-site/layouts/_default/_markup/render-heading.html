@@ -1,0 +1,9 @@
+{{- $level := .Level -}}
+{{- if and .Page.IsPage (eq $level 1) -}}
+  {{- $level = 2 -}}
+{{- end -}}
+{{- $anchor := .Anchor -}}
+{{- if eq $anchor "" -}}
+  {{- $anchor = .Text | plainify | anchorize -}}
+{{- end -}}
+<h{{ $level }} id="{{ $anchor }}">{{ .Text | safeHTML }}</h{{ $level }}>

@@ -1,0 +1,8 @@
+{{- $value := .value | default "" -}}
+{{- $text := printf "%v" $value -}}
+{{- $text = $text | htmlUnescape | plainify | replaceRE "\\s+" " " | strings.TrimSpace -}}
+{{- $max := int (.max | default 0) -}}
+{{- if and (gt $max 0) (gt (len $text) $max) -}}
+  {{- $text = truncate $max $text -}}
+{{- end -}}
+{{- return $text -}}

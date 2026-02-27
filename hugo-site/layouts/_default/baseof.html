@@ -9,8 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{- $siteTitle := .Site.Title -}}
     {{- $seoSiteName := .Site.Params.seo_site_name | default $siteTitle -}}
+    {{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
+    {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
     {{- $homeSuffix := strings.TrimSpace (.Site.Params.home_title_suffix | default "") -}}
-    {{- $pageTitle := cond .IsHome (cond (ne $homeSuffix "") (printf "%s · %s" $seoSiteName $homeSuffix) $seoSiteName) (printf "%s · %s" .Title $seoSiteName) -}}
+    {{- $pageTitle := cond .IsHome (cond (ne $homeSuffix "") (printf "%s · %s" $seoSiteName $homeSuffix) $seoSiteName) (printf "%s · %s" (.Params.seo_title | default .Title) $seoSiteName) -}}
+    {{- $pageTitle = partial "seo/plaintext.html" (dict "value" $pageTitle "max" $titleMax) -}}
     <title>{{ $pageTitle }}</title>
     {{ $enableMath := or .Params.math .Site.Params.math }}
 
@@ -27,18 +30,20 @@
     {{ with .Params.meta_description }}{{ $pageDescription = . }}{{ $hasSpecificDescription = true }}{{ end }}
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ $hasSpecificDescription = true }}{{ end }}
     {{ if and (not $hasSpecificDescription) .Summary }}
-      {{ $summaryFallback := .Summary | plainify | truncate 170 }}
+      {{ $summaryFallback := .Summary | plainify | truncate $descMax }}
       {{ if ne (strings.TrimSpace $summaryFallback) "" }}{{ $pageDescription = $summaryFallback }}{{ end }}
     {{ end }}
+    {{ $pageDescription = partial "seo/plaintext.html" (dict "value" $pageDescription "max" $descMax) }}
     <meta name="description" content="{{ $pageDescription }}" />
     <meta name="author" content="{{ .Site.Params.author }}" />
     {{ block "pagination-head" . }}{{ end }}
     {{ $headPaginator := .Scratch.Get "_head_paginator" }}
+    {{ $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false }}
     {{ $robots := .Params.robots }}
     {{ if and (not $robots) $headPaginator (gt $headPaginator.PageNumber 1) }}
       {{ $robots = "noindex,follow" }}
     {{ end }}
-    {{ if and (eq .Section "news") .Params.source_url (not .Params.news_original) }}
+    {{ if and (eq .Section "news") .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) }}
       {{ if not $robots }}
         {{ $robots = "noindex,follow" }}
       {{ end }}
@@ -65,7 +70,7 @@
     {{ $canonical := .Permalink }}
     {{ if .Params.canonical }}
       {{ $canonical = .Params.canonical }}
-    {{ else if and (eq .Section "news") .Params.source_url (not .Params.news_original) }}
+    {{ else if and (eq .Section "news") .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) }}
       {{ $canonical = .Params.source_url }}
     {{ else if and $headPaginator (gt $headPaginator.PageNumber 1) }}
       {{ $canonical = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $headPaginator.URL }}
@@ -94,10 +99,11 @@
     {{ $ogImage = replace $ogImage "http://" "https://" }}
     {{ $ogImageWidth := printf "%v" (.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
     {{ $ogImageHeight := printf "%v" (.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
-    {{ $ogImageAlt := .Params.og_image_alt | default (.Site.Params.og_image_alt | default .Title) }}
+    {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" (.Params.og_image_alt | default (.Site.Params.og_image_alt | default .Title)) "max" 120) }}
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
     {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
-    <meta property="og:title" content="{{ .Title }} · {{ $seoSiteName }}" />
+    {{ $socialTitle := partial "seo/plaintext.html" (dict "value" (printf "%s · %s" (.Params.og_title | default .Title) $seoSiteName) "max" $titleMax) }}
+    <meta property="og:title" content="{{ $socialTitle }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ $pageDescription }}" />
     <meta property="og:type" content="{{ $ogType }}" />
@@ -113,7 +119,7 @@
     {{ with .Params.article_section }}<meta property="article:section" content="{{ . }}" />{{ end }}
     {{ range .Params.article_tags }}<meta property="article:tag" content="{{ . }}" />{{ end }}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ .Title }} · {{ $seoSiteName }}" />
+    <meta name="twitter:title" content="{{ $socialTitle }}" />
     <meta name="twitter:description" content="{{ $pageDescription }}" />
     <meta name="twitter:image" content="{{ $ogImage }}" />
     {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
