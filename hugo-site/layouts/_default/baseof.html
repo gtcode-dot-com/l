@@ -171,6 +171,10 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -263,95 +267,7 @@
       });
     </script>
     {{ end }}
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const body = document.body;
-        const toggle = document.querySelector(".site-nav-toggle");
-        const nav = document.getElementById("primary-nav");
-        const overlay = document.querySelector(".site-nav-overlay");
-
-        if (!toggle || !nav) {
-          return;
-        }
-
-        const mobileQuery = window.matchMedia("(max-width: 960px)");
-        const syncNavState = function () {
-          if (mobileQuery.matches) {
-            nav.setAttribute("aria-hidden", body.classList.contains("nav-open") ? "false" : "true");
-          } else {
-            nav.removeAttribute("aria-hidden");
-          }
-        };
-
-        const closeNav = function () {
-          if (!body.classList.contains("nav-open")) {
-            return false;
-          }
-          body.classList.remove("nav-open");
-          toggle.setAttribute("aria-expanded", "false");
-          syncNavState();
-          return true;
-        };
-
-        const openNav = function () {
-          if (body.classList.contains("nav-open")) {
-            return;
-          }
-          body.classList.add("nav-open");
-          toggle.setAttribute("aria-expanded", "true");
-          syncNavState();
-          const firstLink = nav.querySelector("a");
-          if (firstLink) {
-            firstLink.focus();
-          }
-        };
-
-        syncNavState();
-
-        toggle.addEventListener("click", function () {
-          if (body.classList.contains("nav-open")) {
-            closeNav();
-          } else {
-            openNav();
-          }
-        });
-
-        if (overlay) {
-          overlay.addEventListener("click", closeNav);
-        }
-
-        nav.addEventListener("click", function (event) {
-          if (event.target.closest("a") && mobileQuery.matches) {
-            closeNav();
-          }
-        });
-
-        document.addEventListener("keyup", function (event) {
-          if (event.key === "Escape" && closeNav()) {
-            toggle.focus();
-          }
-        });
-
-        const mq = window.matchMedia("(min-width: 961px)");
-        const mqHandler = function (event) {
-          if (event.matches) {
-            closeNav();
-          }
-          syncNavState();
-        };
-
-        if (mq.addEventListener) {
-          mq.addEventListener("change", mqHandler);
-        } else if (mq.addListener) {
-          mq.addListener(mqHandler);
-        }
-
-        if (mobileQuery.addEventListener) {
-          mobileQuery.addEventListener("change", syncNavState);
-        } else if (mobileQuery.addListener) {
-          mobileQuery.addListener(syncNavState);
-        }
-      });
-    </script>
+    {{ $navJS := resources.Get "js/nav.js" | minify | fingerprint }}
+    <script src="{{ $navJS.RelPermalink }}" integrity="{{ $navJS.Data.Integrity }}" defer></script>
   </body>
 </html>

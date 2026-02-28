@@ -1,6 +1,6 @@
 {{ define "main" }}
   <!-- Breadcrumb -->
-  <nav class="ou-breadcrumb">
+  <nav class="ou-breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
     <strong>Investigations</strong>
@@ -11,7 +11,7 @@
   {{ with .Params.featured_article }}
   <article class="ou-article">
     <header class="ou-article-header">
-      <h1 class="ou-article-title">{{ .title }}</h1>
+      <h2 class="ou-article-title">{{ .title }}</h2>
       {{ with .subtitle }}
       <p class="ou-article-subtitle">{{ . }}</p>
       {{ end }}

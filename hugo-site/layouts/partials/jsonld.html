@@ -12,7 +12,7 @@
 {{- if not $pageURL -}}
   {{- $pageURL = replace .Permalink "http://" "https://" -}}
 {{- end -}}
-{{- $siteLogo := .Site.Params.logo | default "/img/gtcode-core.svg" -}}
+{{- $siteLogo := .Site.Params.logo | default "/apple-touch-icon.png" -}}
 {{- if hasPrefix $siteLogo "/" }}{{ $siteLogo = printf "%s%s" (strings.TrimRight "/" $siteRoot) $siteLogo }}{{ end -}}
 {{- $siteLogo = replace $siteLogo "http://" "https://" -}}
 
@@ -77,8 +77,13 @@
       {{- $pub = merge $pub (dict "logo" $logoMap) -}}
       {{- $jsonLD = merge $jsonLD (dict "publisher" $pub) -}}
     {{- else -}}
-      {{- $jsonLD = merge $jsonLD (dict "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))) -}}
+      {{- $jsonLD = merge $jsonLD (dict "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo "width" 180 "height" 180))) -}}
     {{- end -}}
+  {{- end -}}
+  {{- $jsonLD = merge $jsonLD (dict "isAccessibleForFree" true) -}}
+  {{- $jType := index $jsonLD "@type" | default "" -}}
+  {{- if eq $jType "NewsArticle" -}}
+    {{- $jsonLD = merge $jsonLD (dict "speakable" (dict "@type" "SpeakableSpecification" "cssSelector" (slice ".article-content" ".ou-article-content"))) -}}
   {{- end -}}
 
   {{- $jsonText := "" -}}
@@ -225,7 +230,7 @@
         "programmingLanguage" $repoLanguage
         "dateModified" $modified
         "author" (dict "@type" "Person" "name" $author "url" $siteRoot)
-        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo "width" 180 "height" 180))
     -}}
   {{- if $repoCodeURL }}
     {{- $data = merge $data (dict "codeRepository" (replace $repoCodeURL "http://" "https://")) -}}
@@ -264,11 +269,12 @@
         "dateModified" $modified
         "articleSection" "Investigation"
         "author" (dict "@type" "Person" "name" $author)
-        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo "width" 180 "height" 180))
         "mainEntityOfPage" (dict "@type" "WebPage" "@id" $pageURL)
         "url" $pageURL
         "image" (slice $image)
         "wordCount" .WordCount
+        "isAccessibleForFree" true
     -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if $sd }}
@@ -296,10 +302,12 @@
         "datePublished" $published
         "dateModified" $modified
         "author" (dict "@type" "Person" "name" $author)
-        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo))
+        "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo "width" 180 "height" 180))
         "mainEntityOfPage" (dict "@type" "WebPage" "@id" $pageURL)
         "articleSection" (.Params.category | default .Section)
         "wordCount" .WordCount
+        "isAccessibleForFree" true
+        "speakable" (dict "@type" "SpeakableSpecification" "cssSelector" (slice ".article-content" ".ou-article-content"))
     -}}
   {{- if gt (len $image) 0 }}
     {{- $data = merge $data (dict "image" $image) -}}

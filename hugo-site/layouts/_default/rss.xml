@@ -9,7 +9,9 @@
 {{- if ge $limit 0 -}}
   {{- $pages = first $limit $pages -}}
 {{- end -}}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+{{- $siteRoot := replace .Site.BaseURL "http://" "https://" -}}
+{{- $siteRoot = strings.TrimRight "/" $siteRoot -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>{{ .Title }}</title>
     <link>{{ $httpsPermalink }}</link>
@@ -18,9 +20,14 @@
     <language>{{ $language }}</language>
     <lastBuildDate>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
     {{- with .OutputFormats.Get "RSS" -}}
-      {{- $self := replace .Permalink "http://" "https://" -}}
+      {{- $self := replace .Permalink "http://" "https://" }}
     <atom:link href="{{ $self }}" rel="self" type="application/rss+xml" />
-    {{- end -}}
+    {{- end }}
+    <image>
+      <url>{{ $siteRoot }}/apple-touch-icon.png</url>
+      <title>{{ .Title }}</title>
+      <link>{{ $httpsPermalink }}</link>
+    </image>
     {{- range $pages }}
       {{- $itemPermalink := replace .Permalink "http://" "https://" -}}
       {{- $pubDate := .Date -}}
@@ -37,6 +44,7 @@
         {{ if eq $rssDesc "" }}{{ with .Params.meta_description }}{{ $rssDesc = . }}{{ end }}{{ end }}
         {{ if eq $rssDesc "" }}{{ with .Summary }}{{ $rssDesc = . | plainify | truncate 300 }}{{ end }}{{ end }}
         <description>{{ $rssDesc | html }}</description>
+        <content:encoded><![CDATA[{{ .Content }}]]></content:encoded>
       </item>
     {{- end }}
   </channel>

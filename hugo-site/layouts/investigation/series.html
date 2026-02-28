@@ -1,6 +1,6 @@
 {{ define "main" }}
   <!-- Breadcrumb -->
-  <nav class="ou-breadcrumb">
+  <nav class="ou-breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
     <a href="/investigation/">Investigations</a>
@@ -21,11 +21,11 @@
         {{ end }}
         {{ if .Params.published_display }}
           <span>&bull;</span>
-          <span>Published: {{ .Params.published_display }}</span>
+          <span>Published: <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.published_display }}</time></span>
         {{ end }}
         {{ with .Params.modified_display }}
           <span>&bull;</span>
-          <span>Updated: {{ . }}</span>
+          <span>Updated: <time {{ with $.Lastmod }}datetime="{{ .Format "2006-01-02" }}"{{ end }}>{{ . }}</time></span>
         {{ end }}
       </div>
     </header>

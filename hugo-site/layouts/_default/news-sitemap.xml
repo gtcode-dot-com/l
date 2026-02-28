@@ -21,7 +21,7 @@
     <loc>{{ replace .Permalink "http://" "https://" }}</loc>
     <news:news>
       <news:publication>
-        <news:name>{{ $.Site.Title | htmlEscape }}</news:name>
+        <news:name>{{ $.Site.Params.news_publication_name | default $.Site.Title | htmlEscape }}</news:name>
         <news:language>{{ .Lang | default "en" }}</news:language>
       </news:publication>
       <news:publication_date>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</news:publication_date>
