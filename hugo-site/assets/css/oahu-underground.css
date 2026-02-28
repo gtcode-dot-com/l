@@ -42,8 +42,8 @@ body {
   --ou-border: #30363d;
   --ou-border-light: #21262d;
   --ou-white: #ffffff;
-  --ou-font-display: 'Space Grotesk', 'IBM Plex Sans', system-ui, sans-serif;
-  --ou-font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ou-font-display: 'Space Grotesk', system-ui, sans-serif;
+  --ou-font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --ou-font-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
   --ou-max-width: 920px;
   --ou-wide-width: 1120px;

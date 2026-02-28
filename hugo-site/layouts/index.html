@@ -133,18 +133,7 @@
     {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify }}
     <style>{{ $fontsCSS.Content | safeCSS }}</style>
     <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-400.woff2" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-500.woff2" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-600.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
-    <link
-      rel="preload"
-      as="image"
-      href="/img/ou-hero-govt-district-1600.webp"
-      type="image/webp"
-      imagesrcset="/img/ou-hero-govt-district-960.webp 960w, /img/ou-hero-govt-district-1600.webp 1600w, /img/ou-hero-govt-district-2400.webp 2400w"
-      imagesizes="100vw"
-    />
 
     <!-- Oahu Underground Stylesheet (standalone) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
