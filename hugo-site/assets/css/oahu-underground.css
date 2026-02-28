@@ -790,6 +790,16 @@ body.nav-open .site-nav-overlay {
   margin-bottom: 0;
 }
 
+.ou-section-body a {
+  color: var(--ou-accent-a11y);
+  text-underline-offset: 0.15em;
+}
+
+.ou-section-body a:hover,
+.ou-section-body a:focus {
+  color: var(--ou-white);
+}
+
 /* ---- Lead Story ---- */
 .ou-lead {
   max-width: var(--ou-max-width);
