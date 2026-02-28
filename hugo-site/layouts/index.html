@@ -125,15 +125,16 @@
     <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
     {{ end }}
 
-    <!-- CSS Reset -->
-    {{ $resetCSS := resources.Get "css/reset.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $resetCSS.RelPermalink }}" integrity="{{ $resetCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <!-- CSS Reset (inlined to eliminate render-blocking request) -->
+    {{ $resetCSS := resources.Get "css/reset.css" | minify }}
+    <style>{{ $resetCSS.Content | safeCSS }}</style>
 
-    <!-- Fonts (self-hosted) -->
-    {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $fontsCSS.RelPermalink }}" integrity="{{ $fontsCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <!-- Font faces (inlined to eliminate render-blocking request) -->
+    {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify }}
+    <style>{{ $fontsCSS.Content | safeCSS }}</style>
     <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/ibm-plex-sans-400.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-500.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/ibm-plex-sans-600.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
     <link
@@ -489,7 +490,7 @@
                 <span aria-hidden="true">&bull;</span>
                 <span>Updated {{ $updated.Format "Jan 2, 2006" }}</span>
               </p>
-              <a class="ou-card-link" href="{{ $page.RelPermalink }}">Read the file &rarr;</a>
+              <a class="ou-card-link" href="{{ $page.RelPermalink }}" aria-label="Read the file: {{ $page.Title }}">Read the file &rarr;</a>
             </article>
             {{ end }}
           </div>
@@ -604,12 +605,12 @@
     <footer class="site-footer">
       <div class="site-footer-inner">
         <div class="footer-section">
-          <h4>About</h4>
+          <p class="footer-heading">About</p>
           <p>{{ .Site.Params.description }}</p>
         </div>
 
         <div class="footer-section">
-          <h4>Investigations</h4>
+          <p class="footer-heading">Investigations</p>
           <ul>
             {{ range first 5 $investigationPages }}
             <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
@@ -618,7 +619,7 @@
         </div>
 
         <div class="footer-section">
-          <h4>Resources</h4>
+          <p class="footer-heading">Resources</p>
           <ul>
             <li><a href="#start-here">Start Here</a></li>
             <li><a href="/investigation/">Investigation Index</a></li>
@@ -631,7 +632,7 @@
         </div>
 
         <div class="footer-section">
-          <h4>AI + Consulting</h4>
+          <p class="footer-heading">AI + Consulting</p>
           <ul>
             <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>

@@ -621,7 +621,7 @@ body.nav-open .site-nav-overlay {
   z-index: 1;
 }
 
-.footer-section h4 {
+.footer-heading {
   font-size: var(--text-sm);
   text-transform: uppercase;
   letter-spacing: 0.1em;

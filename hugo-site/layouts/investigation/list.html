@@ -61,7 +61,7 @@
           {{ else with .Summary }}
           <p class="ou-card-text">{{ . }}</p>
           {{ end }}
-          <a class="ou-card-link" href="{{ .RelPermalink }}">Read the report &rarr;</a>
+          <a class="ou-card-link" href="{{ .RelPermalink }}" aria-label="Read the report: {{ .Title }}">Read the report &rarr;</a>
         </article>
         {{ end }}
       </div>

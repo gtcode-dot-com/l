@@ -403,7 +403,7 @@ body.nav-open .site-nav-overlay {
   z-index: 1;
 }
 
-.footer-section h4 {
+.footer-heading {
   font-family: var(--ou-font-display);
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -1420,7 +1420,7 @@ body.nav-open .site-nav-overlay {
   font-size: 0.62rem;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  color: var(--ou-text-dim);
+  color: var(--ou-text-muted);
 }
 
 .ou-card-text {
@@ -1439,7 +1439,7 @@ body.nav-open .site-nav-overlay {
   flex-wrap: wrap;
   align-items: center;
   font-size: 0.75rem;
-  color: var(--ou-text-dim);
+  color: var(--ou-text-muted);
   font-family: var(--ou-font-body);
 }
 
@@ -1598,7 +1598,7 @@ body.nav-open .site-nav-overlay {
   flex-shrink: 0;
   min-width: 5.5em;
   font-size: 0.75rem;
-  color: var(--ou-text-dim);
+  color: var(--ou-text-muted);
   font-variant-numeric: tabular-nums;
 }
 

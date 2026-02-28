@@ -149,15 +149,16 @@
     {{ end }}
     {{ end }}
 
-    <!-- CSS Reset -->
-    {{ $resetCSS := resources.Get "css/reset.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $resetCSS.RelPermalink }}" integrity="{{ $resetCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <!-- CSS Reset (inlined to eliminate render-blocking request) -->
+    {{ $resetCSS := resources.Get "css/reset.css" | minify }}
+    <style>{{ $resetCSS.Content | safeCSS }}</style>
 
-    <!-- Fonts (self-hosted) -->
-    {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $fontsCSS.RelPermalink }}" integrity="{{ $fontsCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <!-- Font faces (inlined to eliminate render-blocking request) -->
+    {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify }}
+    <style>{{ $fontsCSS.Content | safeCSS }}</style>
     <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/ibm-plex-sans-400.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/ibm-plex-sans-500.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/ibm-plex-sans-600.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
 
@@ -212,11 +213,11 @@
     <footer class="site-footer">
       <div class="site-footer-inner">
         <div class="footer-section">
-          <h4>About</h4>
+          <p class="footer-heading">About</p>
           <p class="text-muted">{{ .Site.Params.description }}</p>
         </div>
         <div class="footer-section">
-          <h4>News</h4>
+          <p class="footer-heading">News</p>
           {{- $newsData := .Site.Data.news_categories | default dict -}}
           {{- $categories := $newsData.categories | default slice -}}
           <ul>
@@ -232,7 +233,7 @@
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Categories</h4>
+          <p class="footer-heading">Categories</p>
           <ul>
             <li><a href="/consulting/">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>
