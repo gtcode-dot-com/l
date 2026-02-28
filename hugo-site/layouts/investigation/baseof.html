@@ -121,7 +121,9 @@
 
     <!-- Oahu Underground Stylesheet (same as homepage) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <link rel="preload" as="style" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" /></noscript>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />

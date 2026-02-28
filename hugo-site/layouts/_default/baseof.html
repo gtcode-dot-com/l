@@ -165,9 +165,13 @@
     <!-- Main Stylesheet -->
     {{ $postcssOpts := dict "inlineImports" true "config" "postcss.config.js" }}
     {{ $mainCSS := resources.Get "css/main.css" | css.PostCSS $postcssOpts | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <link rel="preload" as="style" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}" crossorigin="anonymous" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}" crossorigin="anonymous" /></noscript>
     {{ if $enableMath }}
-    <link rel="stylesheet" href="/vendor/katex/katex.min.css" />
+    <link rel="preload" as="style" href="/vendor/katex/katex.min.css" />
+    <link rel="stylesheet" href="/vendor/katex/katex.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="/vendor/katex/katex.min.css" /></noscript>
     {{ end }}
 
     {{ partial "jsonld.html" . }}
