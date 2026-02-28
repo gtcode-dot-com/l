@@ -127,9 +127,7 @@
 
     <!-- Oahu Underground Stylesheet (standalone dark theme) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
-    <link rel="preload" as="style" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" />
-    <link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" /></noscript>
+    <link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" />
 
     {{ partial "jsonld.html" . }}
 
