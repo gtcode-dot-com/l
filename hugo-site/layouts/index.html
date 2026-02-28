@@ -273,20 +273,6 @@
         </div>
       </section>
 
-      <!-- Dual-use Access -->
-      <section class="ou-dual-use" aria-label="Dual use site navigation">
-        <div class="ou-section-inner">
-          <p class="ou-dual-use-text">Also part of GTCode: AI engineering, research, and consulting workstreams.</p>
-          <div class="ou-dual-use-links">
-            <a href="{{ $consultingURL }}">AI Consulting</a>
-            <a href="/guides/">Guides</a>
-            <a href="/repos/">Repos</a>
-            <a href="/articles/">Articles</a>
-            <a href="/news/">News Wire</a>
-          </div>
-        </div>
-      </section>
-
       <!-- Start Here Path -->
       <section class="ou-section ou-start" id="start-here">
         <div class="ou-section-wide">
@@ -458,12 +444,18 @@
       {{ end }}
 
       <!-- Investigation Archive -->
+      {{- $featuredPaths := slice -}}
+      {{- if $lead }}{{ $featuredPaths = $featuredPaths | append $lead.RelPermalink }}{{ end -}}
+      {{- if $dispatch }}{{ $featuredPaths = $featuredPaths | append $dispatch.RelPermalink }}{{ end -}}
+      {{- if $twoQuestions }}{{ $featuredPaths = $featuredPaths | append $twoQuestions.RelPermalink }}{{ end -}}
+      {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
+      {{- $archivePages := where $investigationPages ".RelPermalink" "not in" $featuredPaths -}}
       <section class="ou-section" id="investigations">
         <div class="ou-section-wide">
           <p class="ou-section-label">On the Record</p>
           <h2 class="ou-section-heading">Investigations</h2>
           <div class="ou-cards">
-            {{ range $idx, $page := $investigationPages }}
+            {{ range $idx, $page := first 8 $archivePages }}
             {{ $updated := $page.Lastmod }}
             {{ if $updated.IsZero }}{{ $updated = $page.Date }}{{ end }}
             {{ $summary := $page.Params.card_summary | default $page.Description }}
@@ -526,6 +518,12 @@
             <a class="ou-featured-article-link" href="/index.xml">Subscribe: Site RSS &rarr;</a>
             <a class="ou-featured-article-link" href="{{ $newsRSS }}">Subscribe: News RSS &rarr;</a>
           </div>
+          <div class="ou-share-links">
+            <span class="ou-share-label">Share this page:</span>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgtcode.com%2F&amp;text=Oahu%20Underground%20%E2%80%94%20independent%20investigative%20reporting%20from%20Hawaii" rel="noopener" target="_blank" aria-label="Share on X">X</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgtcode.com%2F" rel="noopener" target="_blank" aria-label="Share on LinkedIn">LinkedIn</a>
+            <a href="mailto:?subject=Oahu%20Underground&amp;body=Independent%20investigative%20reporting%20from%20Hawaii%3A%20https%3A%2F%2Fgtcode.com%2F" aria-label="Share via email">Email</a>
+          </div>
         </div>
       </section>
 
@@ -537,14 +535,14 @@
               <p class="ou-section-label">About the Reporter</p>
               <h2 class="ou-section-heading">Ekewaka Lono</h2>
               <div class="ou-section-body">
-                <p>Ekewaka Lono is an independent investigative reporter based in Hawaii, focused on judicial accountability, institutional capture, and public-interest documentation.</p>
+                <p>Ekewaka Lono is an independent investigative reporter based in Hawaii, focused on judicial accountability, institutional capture, and public-interest documentation within <a href="https://www.courts.state.hi.us/" rel="noopener" target="_blank">Hawaii&rsquo;s court system</a>.</p>
                 <p>Methodology is evidence-first: public records, primary-source documents, and clearly labeled firsthand testimony. Each claim is linked to source material where possible.</p>
               </div>
             </div>
             <div class="ou-about-card">
               <p class="ou-about-label">Reporting Method</p>
               <ul class="ou-about-list">
-                <li>Map verifiable records before narrative claims</li>
+                <li>Map verifiable <a href="https://oip.hawaii.gov/" rel="noopener" target="_blank">public records</a> before narrative claims</li>
                 <li>Label firsthand testimony explicitly</li>
                 <li>Publish dates, revisions, and source context</li>
                 <li>Keep tip channels confidential and secure</li>
