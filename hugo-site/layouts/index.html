@@ -135,9 +135,11 @@
     <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
 
-    <!-- Oahu Underground Stylesheet (inlined to eliminate render-blocking request) -->
-    {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify }}
-    <style>{{ $ouCSS.Content | safeCSS }}</style>
+    <!-- Oahu Underground Stylesheet (preloaded + async to avoid render-blocking while staying cacheable) -->
+    {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
+    <link rel="preload" href="{{ $ouCSS.RelPermalink }}" as="style" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" /></noscript>
 
     {{ partial "jsonld.html" . }}
 
