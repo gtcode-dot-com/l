@@ -228,7 +228,6 @@
           var firstLink = nav.querySelector("a");
           if (firstLink) firstLink.focus();
         };
-        body.classList.add("nav-ready");
         syncNavState();
         toggle.addEventListener("click", function () {
           body.classList.contains("nav-open") ? closeNav() : openNav();
