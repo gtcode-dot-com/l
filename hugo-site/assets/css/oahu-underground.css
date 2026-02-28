@@ -1748,6 +1748,16 @@ body.nav-open .site-nav-overlay {
   line-height: 1.65;
 }
 
+.ou-about-list a {
+  color: var(--ou-accent-a11y);
+  text-underline-offset: 0.15em;
+}
+
+.ou-about-list a:hover,
+.ou-about-list a:focus {
+  color: var(--ou-white);
+}
+
 /* ============================================
    Responsive
    ============================================ */
