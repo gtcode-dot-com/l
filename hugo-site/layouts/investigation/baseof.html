@@ -132,8 +132,8 @@
     <header class="site-header">
       <div class="site-header-inner">
         <a href="/" class="site-logo">
-          <img src="/img/gtcode-badge.svg" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
-          <span>{{ .Site.Params.site_brand_short | default .Site.Title }}</span>
+          <img src="/img/gtcode-badge.svg" alt="Oahu Underground mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
+          <span>{{ .Site.Params.newsroom_name | default "Oahu Underground" }}</span>
         </a>
         <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
           <span class="sr-only">Toggle primary navigation</span>
@@ -196,7 +196,7 @@
         </div>
       </div>
       <div class="footer-copyright">
-        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ .Site.Params.site_brand_short | default .Site.Title }}</a>. Powered by GCMS.
+        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ .Site.Params.newsroom_name | default "Oahu Underground" }}</a>. Powered by GCMS.
       </div>
     </footer>
 
