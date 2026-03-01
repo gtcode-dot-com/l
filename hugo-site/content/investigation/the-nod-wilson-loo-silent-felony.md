@@ -115,7 +115,7 @@ structured_data_graph:
       keywords: "Wilson Loo, Judicial Misconduct, Hawaii, Perjury, Subornation, First Circuit"
 ---
 
-It takes less than a second to commit a felony from the bench, and if you know how to work the record, it never happened at all.
+It takes less than a second to allegedly commit a felony from the bench, and if you know how to work the record, it never happened at all.
 
 In the case of Judge [Wilson M.N. Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/), it didn't require a gavel or a written order. It required only a nod.
 
@@ -143,7 +143,7 @@ When the Honolulu Police Department was informed, they said *I* had to prove the
 
 [Wilson Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) didn't just break the law that day. If the account is accurate, the incident demonstrates how the combination of audio-only recording, sealed records, and a 100% complaint-dismissal rate creates conditions under which the law operates not as a system of rules but as a system of signals — where a nod from the bench can override the evidence in the file, a sealed record can override the public interest, and a pattern of institutional non-response ensures that when a judge is accused of a felony, the only person who bears consequences is the one who reported it.
 
-The text message remains in the sealed file. The perjury remains on the record. And [Wilson Loo](https://courts.ehawaii.gov/courts/district/first_circuit) remains the perfect symbol of a judiciary where the truth is nothing more than a procedural inconvenience.
+The text message remains in the sealed file. The alleged perjury remains on the record. And [Wilson Loo](https://courts.ehawaii.gov/courts/district/first_circuit) remains the perfect symbol of a judiciary where the truth is nothing more than a procedural inconvenience.
 
 ---
 

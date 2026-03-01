@@ -264,7 +264,7 @@ the complaint, during her tenure as a Public Defender, Stanley was informed abou
 murder threat issued by Eugene and Rita Hartmann" and allegedly "attempted extortion: relayed offer to 'drop
 charges' if author 'left the state'."
 
-This connection to the Eugene and Rita Hartmann murder threat case demonstrates a pattern of officials using
+This connection to the Eugene and Rita Hartmann murder threat case appears to demonstrate a pattern of officials using
 their positions to protect criminal networks rather than serve justice. The fact that Stanley, like Loo, now
 serves as a judge despite these allegations suggests systematic corruption in Hawaii's judicial appointment
 process.

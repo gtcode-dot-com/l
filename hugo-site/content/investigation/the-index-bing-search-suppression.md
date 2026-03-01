@@ -68,7 +68,7 @@ agentic_comment: |
   - Exhibit E (Feb 18): Bing Site Scan reports phantom HTTP 4xx errors on the homepage (independently verified as returning HTTP 200). URL Inspection of the same homepage says "Discovered but not crawled" with a discovery date of 14 Nov 2017 — contradicting the Site Scan (a 4xx error requires a crawl attempt). A consulting page on the same domain shows "Indexed successfully" — yet still does not appear in search. Bing's own tools produce four different statuses for four pages on the same domain on the same day. Control domain nshkr.com on identical stack (Hugo, GitHub Pages, Cloudflare) is not affected.
 
   CRITICAL OBSERVATION:
-  Exhibit C is the control case. An open-source Elixir software package page contains zero investigative content, zero controversial claims, zero content that could plausibly violate any search engine content policy. Its "Blocked" status — distinct from "Not discovered" — proves domain-level suppression rather than page-level content moderation.
+  Exhibit C is the control case. An open-source Elixir software package page contains zero investigative content, zero controversial claims, zero content that could plausibly violate any search engine content policy. Its "Blocked" status — distinct from "Not discovered" — demonstrates domain-level suppression rather than page-level content moderation.
 
   UPDATE (Feb 15, 2026):
   - Exhibit D: The same investigation page ("The Nod") from Exhibit B was re-inspected three days later. Its status changed from "Not discovered" to "Blocked" — meaning Bing crawled the page, evaluated it, and actively decided to suppress it. The investigation page now shows the identical "Blocked" status as the open-source software page (Exhibit C), collapsing the distinction between the two exhibits and confirming a domain-level filter that catches new pages as they are discovered.
@@ -149,7 +149,7 @@ This could be explained away. New page, hasn't been crawled yet. But it wasn't c
 
 ## Exhibit C: The Control Case
 
-This is the exhibit that proves domain-level suppression.
+This is the exhibit that demonstrates domain-level suppression.
 
 URL Inspection of `gtcode.com/repos/agent_session_manager/` — an open-source Elixir software package page — returns **"Blocked."**
 

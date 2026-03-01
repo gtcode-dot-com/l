@@ -330,7 +330,7 @@ This investigation argues that the structural explanation — while not excludin
 
 Warren Luke served nine years on the Federal Reserve Bank of San Francisco's board and chaired its audit committee.[^63] He is a trustee of a Department of Defense foundation.[^64] He governs a security policy institution alongside two retired Pacific Fleet commanders.[^65] His son ran Hawaii's campaign finance enforcement body for years while simultaneously running the family bank.[^66] His sister's husband clerked for the same federal judge as the man who became Chief Justice of the state supreme court and held appointment authority over the judge's continued service.[^67] The family's general counsel is the son of a former judge who sat on the bank's board.[^68] The chairman of Honolulu's leading business newspaper sat on the bank's board for sixteen years.[^69]
 
-None of that is a crime. All of it is a structure.
+None of that is necessarily a crime. All of it is a structure.
 
 None of the individuals named in this article are accused of wrongdoing. Their board memberships, professional relationships, and institutional roles are matters of public record, disclosed and lawful. The argument here is structural, not personal: legitimate relationships, in sufficient density, produce institutional inertia without any individual needing to act corruptly.
 
