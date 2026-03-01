@@ -16,6 +16,7 @@ html {
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--ou-header-height) + 1rem);
+  overflow-x: hidden;
 }
 
 body {
@@ -2178,6 +2179,9 @@ body.nav-open .site-nav-overlay {
   font-size: 1.0625rem;
   line-height: 1.85;
   color: #a8b1ba;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .ou-article-content h2 {
