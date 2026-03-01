@@ -11,7 +11,7 @@
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
 
-{{- $investigationPagesAll := sort (where .Site.RegularPages "Section" "investigation") "Date" "desc" -}}
+{{- $investigationPagesAll := sort (where (where .Site.RegularPages "Section" "investigation") "Params.homepage_exclude" "ne" true) "Date" "desc" -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationCount := len $investigationPages -}}
