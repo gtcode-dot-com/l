@@ -10,7 +10,7 @@ author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "Institutional Decay in Hawaii — A Case Study in Systemic Protection"
 published_display: "August 13, 2025"
-modified_display: "November 9, 2025"
+modified_display: "February 28, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/hawaii-institutional-capture/"

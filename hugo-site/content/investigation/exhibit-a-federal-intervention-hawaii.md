@@ -10,7 +10,7 @@ lastmod: 2026-02-28
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "August 20, 2025"
-modified_display: "February 25, 2026"
+modified_display: "February 28, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/exhibit-a-federal-intervention-hawaii/"

@@ -10,7 +10,7 @@ author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption in Hawaii"
 published_display: "June 12, 2025"
-modified_display: "February 25, 2026"
+modified_display: "February 28, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/hawaii-justice-system-wilson-loo/"
