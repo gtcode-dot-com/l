@@ -6,7 +6,7 @@ seo_title: "Exhibit A — Federal Intervention in Hawaii [Archived]"
 subtitle: "This article has been superseded by the records-first investigation series"
 description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/investigation/."
 date: 2025-08-20
-lastmod: 2026-02-25
+lastmod: 2026-02-28
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "August 20, 2025"
@@ -106,7 +106,7 @@ The RICO framework claimed conclusions that exceed what the published evidence s
 
 | File | Focus |
 | --- | --- |
-| [The Two Questions](/investigation/the-two-questions/) | Prosecution roadmap: one witness, two questions, 18 U.S.C. § 1622 |
+| [The Two Questions](/investigation/the-two-questions/) | Prosecution roadmap: one witness, two questions, 18 U.S.C. § 242 / § 1622 |
 | [The Nod](/investigation/the-nod-wilson-loo-silent-felony/) | The courtroom incident — editorial account |
 | [The Zero Commission](/investigation/the-zero-commission/) | Judicial oversight failure — public-record basis |
 | [The Paper Bag](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/) | Executive branch self-investigation |

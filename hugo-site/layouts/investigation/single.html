@@ -32,9 +32,9 @@
           <span>&bull;</span>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
         {{ end }}
-        {{ with .Params.modified_display }}
+        {{ if and .Lastmod (ne .Lastmod .Date) }}
           <span>&bull;</span>
-          <span>Updated: <time {{ with $.Lastmod }}datetime="{{ .Format "2006-01-02" }}"{{ end }}>{{ . }}</time></span>
+          <span>Updated: <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Params.modified_display | default (.Lastmod.Format "January 2, 2006") }}</time></span>
         {{ end }}
       </div>
     </header>

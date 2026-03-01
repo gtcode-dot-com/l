@@ -5,7 +5,7 @@ title: "The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit"
 subtitle: "How a Judge Committed a Crime with a Gesture"
 description: "An editorial account of how Judge Wilson M.N. Loo allegedly directed perjury from the bench with a silent nod, then sealed the record to bury the evidence."
 date: 2026-02-12
-lastmod: 2026-02-25
+lastmod: 2026-02-28
 author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "The Nod — Wilson Loo and the Silent Felony in Hawaii's First Circuit"
@@ -37,7 +37,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-12T00:00:00Z"
-article_modified_time: "2026-02-25T00:00:00Z"
+article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -64,10 +64,10 @@ agentic_comment: |
 
   KEY CLAIMS:
   - Judge Wilson Loo made a deliberate non-verbal "no" gesture to a witness under oath (audio-only courtroom — visual conduct not captured on record)
-  - Text message evidence in the court file established the truthful answer before the question was asked
+  - Text message evidence in the court file, if it reads as described, would establish the truthful answer before the question was asked
   - When the author attempted to object ("Let the record show that the judge just..."), Loo interrupted to prevent the objection from entering the transcript
   - Case was subsequently sealed
-  - Violation of 18 U.S.C. § 1622 (subornation of perjury) — inducer must know testimony is false; documentary evidence was in the judge's possession
+  - Violation of 18 U.S.C. § 242 (deprivation of rights under color of law) and potentially 18 U.S.C. § 1622 (subornation of perjury) — the cut-off is captured on sealed audio; documentary evidence was in the judge's possession
 
   INSTITUTIONAL FAILURE CHAIN:
   - HPD: Told the complainant he had to prove the perjury himself
@@ -99,7 +99,7 @@ structured_data_graph:
       description: "An editorial account documenting how Judge Wilson Loo allegedly suborned perjury with a silent gesture."
       image: "https://gtcode.com/img/gtcode_mahalo.jpg"
       datePublished: "2026-02-12T00:00:00Z"
-      dateModified: "2026-02-25T00:00:00Z"
+      dateModified: "2026-02-28T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -123,7 +123,7 @@ In the case of Judge [Wilson M.N. Loo](https://disclosures.civilbeat.org/disclos
 
 The scene in the courtroom should have been procedural. The question before the witness, (redacted), was simple: *Did you furnish the plaintiff with LSD?*
 
-The evidence was already in the file. A text message, submitted to the court, read unambiguously: "I took the acid." The text was sent to (redacted). If the text message is in the sealed court file as the complainant's filing indicates, the documentary predicate was established. The fact was established. [Judge Loo](https://courts.ehawaii.gov/courts/district/first_circuit) had the document in front of him. he had access to evidence that the truthful answer was "Yes."
+The evidence was already in the file. A text message, submitted to the court, read unambiguously: "I took the acid." The text was sent to (redacted). If the text message is in the sealed court file as the complainant's filing indicates, the documentary predicate would be present — Loo would have had access to evidence that the truthful answer was "Yes."
 
 But when the question was asked, [Judge Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf) didn't wait for the answer. According to the complainant's account — the only eyewitness account of visual conduct in an audio-only courtroom — he looked at the witness and nodded his head: *No.*
 
@@ -135,7 +135,7 @@ When I attempted to object — to say, "Let the record show that the judge just 
 
 This wasn't a judicial error. It was a structural crime.
 
-Under **[18 U.S.C. § 1622](https://www.law.cornell.edu/uscode/text/18/1622)**, subornation of perjury requires that the inducer knows the testimony is false. [Loo](https://courts.ehawaii.gov/courts/district/first_circuit) had the documentary evidence. If the text message was in the court file — as the complainant's filing states — Loo had documentary evidence that the truthful answer was "Yes." He wasn't managing an unruly courtroom; the interruption prevented the complainant's objection from entering the transcript.
+Under **[18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242)** — deprivation of rights under color of law — a state judge who willfully deprives a litigant of constitutional rights while acting in official capacity commits a federal felony. The Supreme Court unanimously confirmed this statute's application to state judges in [*United States v. Lanier*, 520 U.S. 259 (1997)](https://supreme.justia.com/cases/federal/us/520/259/). The conduct described here — if the complainant's account is accurate — deprived the petitioner of both the right to be heard and the right to an impartial tribunal. The interruption preventing the objection from entering the record is captured on the sealed audio.
 
 Why would a judge do this? Because in Hawaii's legal ecosystem, the "Zone of Politeness" protects the powerful from the consequences of their actions, and the complainant infers that [Wilson Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) assessed the parties — one connected to a network of local power, the other a *pro se* litigant with a "complicated" file — and he made a calculation. The complainant infers that he calculated he could commit a crime in open court, in front of a court reporter and a clerk, and suffer zero consequences.
 

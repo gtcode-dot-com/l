@@ -2,7 +2,7 @@
 title: "The Aloha Protection Racket"
 slug: aloha-protection-racket
 date: 2025-08-26
-lastmod: 2026-02-25
+lastmod: 2026-02-28
 author: Ekewaka Lono
 draft: false
 type: "investigation"
@@ -37,7 +37,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-26T00:00:00Z"
-article_modified_time: "2026-02-25T00:00:00Z"
+article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -113,13 +113,13 @@ On **December 2, 2022**, an injunction hearing took place in Hawaiʻi's First Ci
 
 During cross-examination, the complainant asked the defendant a direct question: whether he had provided the complainant with LSD.
 
-**Documentary evidence (submitted to court, sealed):** Prior to this question being asked, text message evidence had been submitted to the court file. According to the complainant, this evidence included a message in which the defendant acknowledged taking LSD, establishing the factual predicate for the question.
+**Documentary evidence (submitted to court, sealed):** Prior to this question being asked, text message evidence had been submitted to the court file. According to the complainant, this evidence included a message in which the defendant acknowledged taking LSD — which, if the text reads as described, would provide the documentary predicate for the question.
 
 **Firsthand testimony (complainant's account, not independently verified):** According to the complainant, before the defendant answered, Judge Loo made a deliberate non-verbal "no" gesture — a head movement accompanied by a facial expression — directed at the defendant. The defendant then denied under oath that he had provided LSD.
 
 **Public record (audio recording):** The complainant attempted to place the observed conduct on the record. His words began: "Let the record show that the judge just..." Judge Loo interrupted, stating **"Nah ah ah enough out of you!!"** The audio record captures both the attempted objection and the interruption. It does not capture any visual conduct.
 
-If the complainant's account of the non-verbal signal is accurate, Loo's conduct would constitute suborning perjury — a felony under 18 U.S.C. Section 1622. The sealed court file and the audio record are the primary evidence bearing on this question.
+If the complainant's account of the non-verbal signal is accurate, Loo's conduct would constitute deprivation of rights under color of law — a federal felony under [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242), a statute the Supreme Court held applies to state judges in *United States v. Lanier* (1997) — and may also constitute subornation of perjury under 18 U.S.C. § 1622. The sealed court file and the audio record are the primary evidence bearing on this question.
 
 The case was subsequently sealed.
 

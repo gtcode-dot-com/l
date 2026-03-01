@@ -3,7 +3,7 @@ draft: false
 weight: 12
 title: "The Federal Layer"
 seo_title: "The Federal Layer — Warren Luke, Hawaii National Bank, and the Federal Establishment"
-subtitle: "How Hawaii's Most Connected Banker Sits at the Intersection of Every Institution That Might Hold Him to Account"
+subtitle: "How One of Hawaii's Most Connected Bankers Sits at the Intersection of Every Institution That Might Hold Him to Account"
 description: "An investigation into how Warren K.K. Luke — Federal Reserve director, DOD foundation trustee, and brother-in-law of retired Judge Wilson Loo — built an institutional presence so dense across federal banking, defense, and security establishments that the simple prosecution of one judge is crowded out before it begins."
 date: 2026-02-28
 lastmod: 2026-02-28
@@ -95,8 +95,11 @@ agentic_comment: |
   - Warren Luke is trustee of the APCSS Foundation (EIN 99-0350533), a DOD-adjacent entity (source: PBEC biography; ProPublica Nonprofit Explorer)
   - Bryan Luke served as Campaign Spending Commission Chair (May 2016 through at least September 2021) while simultaneously serving as HNB President/CEO (July 2019+)
   - Duane Kurisu served as HNB Director 2008-2024 while chairing the aio Group/Pacific Business News (source: OCC CRA evaluation)
-  - DOJ Public Integrity Section has been reduced from 36 attorneys to 2; FBI elite public corruption squad has been disbanded (current reporting, requires primary source verification)
-  - The statute of limitations on 18 U.S.C. § 1622 expires approximately December 2027
+  - DOJ Public Integrity Section has been reduced from 30+ attorneys to approximately 5; its case-filing authority and gatekeeping role have been suspended or constrained; FBI elite public corruption squad has been disbanded (source: Reuters, June 9, 2025)
+  - The statute of limitations under 18 U.S.C. § 242 (and § 1622, if applicable) expires approximately December 2027
+  - 18 U.S.C. § 242 (deprivation of rights under color of law) is the primary federal theory — settled law per *United States v. Lanier*, 520 U.S. 259 (1997)
+  - 18 U.S.C. § 1513(e) (retaliation against person who reported to federal LE) provides a federal nexus through the complainant's documented FBI and DEA contacts
+  - 18 U.S.C. § 1622 (subornation of perjury) is retained as a secondary theory with an acknowledged jurisdictional question regarding state-court perjury
 
   IMPORTANT DISTINCTIONS:
   - This investigation does NOT claim conspiracy or active coordination to obstruct
@@ -119,7 +122,7 @@ structured_data_graph:
         "@type": "WebPage"
         "@id": "https://gtcode.com/investigation/the-federal-layer/"
       headline: "The Federal Layer"
-      alternativeHeadline: "How Hawaii's Most Connected Banker Sits at the Intersection of Every Institution That Might Hold Him to Account"
+      alternativeHeadline: "How One of Hawaii's Most Connected Bankers Sits at the Intersection of Every Institution That Might Hold Him to Account"
       description: "An investigation into how Warren K.K. Luke built an institutional presence so dense across federal banking, defense, and security establishments that the simple prosecution of one judge is crowded out before it begins."
       image: "https://gtcode.com/img/ou-federal-layer-og-1200x630.jpg"
       datePublished: "2026-02-28T00:00:00Z"
@@ -141,7 +144,7 @@ structured_data_graph:
       keywords: "Warren Luke, Hawaii National Bank, Federal Reserve, Wilson Loo, institutional capture, FBI, DOJ Public Integrity, Pacific Forum, APCSS, campaign spending commission, INDOPACOM, Hawaii, judicial corruption"
 ---
 
-The case against retired Per Diem Judge Wilson M.N. Loo is not complicated. It requires one witness, three questions, and a federal agent willing to knock on a door. The statute of limitations on the underlying federal crime — subornation of perjury under 18 U.S.C. § 1622 — runs approximately five years from the date of the act.[^1] The act occurred on December 2, 2022. The clock has been running for more than three years. Roughly twenty months remain.
+The case against retired Per Diem Judge Wilson M.N. Loo is not complicated. It requires one witness, two questions, and a federal agent willing to knock on a door. The statute of limitations on the applicable federal statutes — including 18 U.S.C. § 242 (deprivation of rights under color of law) and potentially 18 U.S.C. § 1622 (subornation of perjury) — runs five years from the date of the act.[^1] The act occurred on December 2, 2022. The clock has been running for more than three years. Roughly twenty months remain.
 
 No door has been knocked on.
 
@@ -153,17 +156,33 @@ That family is the Lukes. And at the center of it is Warren K.K. Luke.
 
 ---
 
+## Federal Jurisdiction
+
+The primary federal theory against Loo is [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242) — deprivation of rights under color of law. The statute is purpose-built for state officials who abuse their authority to deny constitutional rights. The Supreme Court unanimously confirmed its application to state judges in [*United States v. Lanier*, 520 U.S. 259 (1997)](https://supreme.justia.com/cases/federal/us/520/259/), in which a Tennessee state judge was convicted under § 242 for abuse of judicial power. Judicial immunity — a defense to civil suits under 42 U.S.C. § 1983 — has no application to criminal prosecution under § 242. It is settled that judges can be prosecuted under § 242; the harder question is whether these specific facts meet § 242's willfulness requirement and *Lanier*'s fair-warning standard — that the unlawfulness of the conduct must be "apparent" in light of pre-existing law.
+
+The conduct captured on the sealed audio recording — Loo cutting off the petitioner's objection when the petitioner attempted to place the judge's behavior on the record — is evidence from which a jury could infer that Loo willfully deprived a party of the right to be heard in a meaningful manner, a "basic requirement of due process." *In re Murchison*, 349 U.S. 133, 136 (1955); *Mathews v. Eldridge*, 424 U.S. 319 (1976). The audio does not depend on any witness's cooperation, though it is sealed and investigators would need to obtain it through appropriate legal process.
+
+The series has previously framed this case under [18 U.S.C. § 1622](https://www.law.cornell.edu/uscode/text/18/1622) — subornation of perjury. That statute remains an alternative theory, but its jurisdictional reach to perjury committed in state court (rather than in a federal proceeding) is a genuine legal question this investigation acknowledges. Section 242, by contrast, requires no federal proceeding and no jurisdictional workaround. It applies to any person acting "under color of any law" who willfully deprives another of constitutional rights. A presiding judge in a state courtroom satisfies the color-of-law element; the contested questions are willfulness and whether the specific rights at issue meet *Lanier*'s fair-warning standard.
+
+Federal law also provides heightened protections for individuals who provide information to law enforcement about federal offenses. *See* [18 U.S.C. § 1513(e)](https://www.law.cornell.edu/uscode/text/18/1513). The complainant's documented contacts with the FBI and DEA preceded the hearing at which the alleged perjury and due process deprivation occurred. If the adverse actions documented in this series were taken because of those reports — that is, with retaliatory intent — then § 1513(e) would place this matter within a broader federal framework that extends beyond the courtroom conduct itself.
+
+This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. No claim in this article requires non-public information to be true. The purpose of this brief is to document the public record and identify the investigative questions that a competent federal investigation would confirm or falsify.
+
+---
+
 ## The Banker and the Federal Reserve
 
 Warren Luke has been Chairman and CEO of Hawaii National Bank since 1980.[^4] That alone is unremarkable. What is not unremarkable is what he did with that position over the following four decades.
 
 For nine years — documented in two confirmed periods, 1990-1992 and 1996-2001 — Warren Luke served as a Director of the Federal Reserve Bank of San Francisco.[^5] He was, according to his own official biography at the Pacific Basin Economic Council, only the second Hawaiian ever to hold the position.[^6] He served as Chairman of its Audit Committee — the committee responsible for overseeing the financial integrity of the Reserve Bank itself.[^7]
 
-Let that sit for a moment. A community bank CEO in Honolulu chaired the audit function of the federal institution that operates within the same supervisory architecture as his own bank. The Federal Reserve System, of which the FRBSF is a regional arm, participates in supervisory coordination with the Office of the Comptroller of the Currency, which regulates national banks including Hawaii National Bank.[^8] Luke was simultaneously inside the federal banking establishment's audit oversight and running a bank that existed within that same establishment's regulatory reach.
+Regional Federal Reserve banks are governed by nine-member boards of directors. Three seats (Class A) are reserved by statute for representatives of member banks — banker participation is structural, not anomalous. The relevant question is not whether a community banker served on a Reserve Bank board, but what specific oversight functions he held during that service and what cumulative institutional density that service represents alongside his other positions.
 
-No disclosure of this arrangement has surfaced in the public record. No firewall. No recusal history. It is presented, in every official biography, simply as a credential.
+In Luke's case, the answer is the Audit Committee chairmanship. A community bank CEO in Honolulu chaired the audit function of the federal institution that operates within the same supervisory architecture as his own bank. The Federal Reserve System, of which the FRBSF is a regional arm, participates in supervisory coordination with the Office of the Comptroller of the Currency, which regulates national banks including Hawaii National Bank.[^8] Luke was simultaneously inside the federal banking establishment's audit oversight and running a bank that existed within that same establishment's regulatory reach — for nine years, across two confirmed periods.
 
-The FRBSF president during part of Luke's tenure was Robert T. Parry, a voting member of the Federal Open Market Committee from 1986 through 2004.[^9] Among Luke's co-directors during documented periods was A.W. "Tom" Clausen, former CEO of Bank of America and former President of the World Bank.[^10] This is not a Rotary Club. This is a federal institution. And its audit committee was chaired by the brother-in-law of the judge who allegedly directed a witness to commit perjury in open court.
+No publicly accessible recusal log was located in FRBSF annual reports, the PBEC biographical record, or SEC proxy filings reviewed for this investigation. Federal Reserve director conflicts of interest are governed by 18 U.S.C. § 208 (the federal criminal conflicts-of-interest statute) and the Board's *Guide to Conduct for Directors of Federal Reserve Banks*; the specific recusal processes applicable to Luke during his 1990–2001 tenure were not determinable from these public sources. No FOIA request was filed with the FRBSF for this article.
+
+The FRBSF president during part of Luke's tenure was Robert T. Parry, a voting member of the Federal Open Market Committee from 1986 through 2004.[^9] Among Luke's co-directors during documented periods was A.W. "Tom" Clausen, former CEO of Bank of America and former President of the World Bank.[^10] This is not a Rotary Club. This is a federal institution. And its audit committee was chaired by the brother-in-law of the judge who allegedly directed a witness to commit perjury in open court. This is documented governance density — not an allegation of obstruction.
 
 ---
 
@@ -241,13 +260,15 @@ The Daniel K. Inouye Asia-Pacific Center for Security Studies — APCSS — is a
 
 The APCSS Foundation, EIN 99-0350533, exists to support the DOD institution's programming.[^37] Warren K.K. Luke is a Trustee.[^38]
 
-His fellow trustees on that foundation include Duane Kurisu, who for sixteen years — from 2008 through 2024 — served as a Director of Hawaii National Bancshares, and who simultaneously chairs the aio Group, the media company that controls Pacific Business News, Honolulu's dominant business newspaper.[^39] The trustee serving as Foundation President is Gerald Sumida — the same Gerald Sumida who sits on the Pacific Forum board alongside Luke.[^40]
+His fellow trustees on that foundation include Duane Kurisu, who for sixteen years — from 2008 through 2024 — served as a Director of Hawaii National Bancshares, and who simultaneously chairs the aio Group, the media company that controls Pacific Business News, Honolulu's leading business newspaper.[^39] The trustee serving as Foundation President is Gerald Sumida — the same Gerald Sumida who sits on the Pacific Forum board alongside Luke.[^40]
 
 Also on the APCSS Foundation board: Constance Lau, former CEO of Hawaiian Electric Industries, who served as Chairman of the Department of Homeland Security's National Infrastructure Advisory Council under the Obama administration.[^41] And W. David Carey III, current Chairman of the Punahou School Board of Trustees.[^42]
 
 Three of the six documented APCSS Foundation trustees — Luke, Kurisu, and Lau — simultaneously served as Punahou trustees or chairs during overlapping periods.[^43]
 
-This is the architecture of institutional capture in its mature form. It is not one person with power in one place. It is the same small set of people in every place that matters, simultaneously: the bank, the DOD-adjacent foundation, the security policy think tank, the dominant private school, and the dominant business press. They do not need to coordinate. They share the same interests, the same social world, and the same professional horizon.
+For the purposes of this investigation, "institutional capture" describes the condition in which the same small set of individuals occupy governance positions across the institutions that would need to act independently to produce accountability. It is not a claim of illegal coordination. It is a description of structural inertia through interlocking directorates.
+
+This is that architecture in its mature form. It is not one person with power in one place. It is the same small set of people in every place that matters, simultaneously: the bank, the DOD-adjacent foundation, the security policy think tank, the leading private school, and the leading business press. They do not need to coordinate. They share the same interests, the same social world, and the same professional horizon.
 
 ---
 
@@ -273,7 +294,7 @@ The Commission on Judicial Conduct received, in the fiscal years for which data 
 
 Wilson Loo was a Commissioner on this body while serving as a per diem judge.[^56] He was subject to oversight and participant in it simultaneously. He retired before the ninety-day clock on any final complaint could be meaningfully adjudicated. The Commission closed the door.
 
-The DOJ Public Integrity Section, as of this writing, has acknowledged receipt of the referral and communicated nothing further.[^57] The Section, which once employed thirty-six attorneys, has been reduced to two, and has filed no new criminal cases since the current administration took office.[^58] The FBI's elite public corruption squad has been disbanded.[^59] The Honolulu Field Office operates in an environment shaped by the professional network that passed through Charles Marsland's Organized Crime Unit in the early 1980s — the same unit where Wilson Loo built his prosecutorial career alongside colleagues who subsequently occupied every major prosecutorial position in the state, including Edward Kubo Jr., who served as U.S. Attorney for the District of Hawaii from 2001 through 2009.[^60]
+The DOJ Public Integrity Section, as of this writing, has acknowledged receipt of the referral and communicated nothing further.[^57] The Section, which once employed more than thirty attorneys, has been reduced to approximately five, and its authority to file new cases and its gatekeeping role over public-corruption prosecutions have been suspended or constrained under the current administration.[^58] The FBI's elite public corruption squad has been disbanded.[^59] The Honolulu Field Office operates in an environment shaped by the professional network that passed through Charles Marsland's Organized Crime Unit in the early 1980s — the same unit where Wilson Loo built his prosecutorial career alongside colleagues who subsequently occupied every major prosecutorial position in the state, including Edward Kubo Jr., who served as U.S. Attorney for the District of Hawaii from 2001 through 2009.[^60]
 
 Loo's peers, in other words, ran the office that would have prosecuted him.
 
@@ -285,7 +306,7 @@ There is a version of this story in which nothing I have documented is sinister.
 
 That version of the story is probably true in part. It is not the whole story.
 
-Because the whole story includes this: the case against Wilson Loo is unusually simple. The witness is identified. The prosecution theory is published in sufficient detail to serve as a briefing memo. The documentary evidence — a text message reading "I took the acid," admitted into the December 2, 2022 proceeding before Loo himself — is in a sealed court file.[^61] Two prior law enforcement reports, one from the DEA and one from the Honolulu Police Department's Narcotics and Vice Division, established the factual predicate before the trial date.[^62] The math is not complicated: lever the witness, get the testimony, close the case.
+Because the whole story includes this: the public record suggests the case against Wilson Loo is unusually simple. The witness is identified. The prosecution theory is published in sufficient detail to serve as a briefing memo. The documentary evidence — a text message reading "I took the acid," admitted into the December 2, 2022 proceeding before Loo himself — is in a sealed court file.[^61] Two prior law enforcement reports, one from the DEA and one from the Honolulu Police Department's Narcotics and Vice Division, documented the factual predicate before the trial date.[^62] Standard investigative steps — interview the witness, obtain the sealed audio, evaluate the evidence — would confirm or falsify the relevant legal theories.
 
 One or two FBI agents. A car. A door.
 
@@ -293,7 +314,23 @@ The question this investigation poses — the one that three years of federal si
 
 That is how institutional capture produces impunity. Not through conspiracy. Through the quiet, cumulative weight of knowing who sits on which board, who chaired what committee, who governs alongside whom on the body that advises the DOD institution down the road from your field office.
 
-Warren Luke served nine years on the Federal Reserve Bank of San Francisco's board and chaired its audit committee.[^63] He is a trustee of a Department of Defense foundation.[^64] He governs a security policy institution alongside two retired Pacific Fleet commanders.[^65] His son ran Hawaii's campaign finance enforcement body for years while simultaneously running the family bank.[^66] His sister's husband clerked for the same federal judge as the man who became Chief Justice of the state supreme court and held appointment authority over the judge's continued service.[^67] The family's general counsel is the son of a former judge who sat on the bank's board.[^68] The chairman of Honolulu's dominant business newspaper sat on the bank's board for sixteen years.[^69]
+### What This Investigation Cannot Establish
+
+This investigation presents a structural argument. It does not — and cannot, from public records alone — establish that any individual acted to obstruct or delay prosecution. The following alternative explanations deserve genuine engagement:
+
+1. **The federal theory may be incomplete.** The series previously relied on 18 U.S.C. § 1622 (subornation of perjury) as its sole federal theory. That statute's jurisdictional reach to state-court perjury is a genuine legal question — which is why this investigation now identifies § 242 (deprivation of rights under color of law) as the primary theory. But a reader would be justified in noting that the legal framework has shifted, and in asking whether the current framework will prove more durable than the last.
+
+2. **DOJ may have evaluated the referral and declined on the merits.** The Section could have assessed the evidence, concluded the case was not prosecutable — understaffing, evidence quality, witness cooperation uncertainty — and declined without communicating reasons. Non-communication is standard DOJ practice for declined referrals.
+
+3. **A defense attorney would challenge the audio-only limitation.** The nod occurred in a courtroom with sworn officers present — court reporter, clerk, and potentially a bailiff — but the hearing was recorded audio-only, producing no video. A defense attorney would argue that the absence of video makes the nod harder to prove at trial, and that Loo's interruption of the objection was a routine exercise of courtroom control rather than evidence of rights deprivation. The sealed audio of the cut-off and the testimony of everyone present in that room would be weighed by a jury.
+
+4. **Network density may correlate with but not cause inaction.** The Luke family's institutional footprint is documented. The inference that this footprint produces ambient impunity is structural, not proven. Correlation between institutional density and prosecutorial non-action is not evidence of causation.
+
+5. **Triage alone may be a sufficient explanation.** A retired per diem judge earning between ten and twenty-five thousand dollars a year in judicial work is low-priority by any field office's metrics. The DOJ Public Integrity Section has been gutted. The FBI's elite corruption squad is disbanded. These resource constraints produce non-action across many cases, not just this one.
+
+This investigation argues that the structural explanation — while not excluding any of these alternatives — is the most complete account of the evidence. But the reader should weigh all five.
+
+Warren Luke served nine years on the Federal Reserve Bank of San Francisco's board and chaired its audit committee.[^63] He is a trustee of a Department of Defense foundation.[^64] He governs a security policy institution alongside two retired Pacific Fleet commanders.[^65] His son ran Hawaii's campaign finance enforcement body for years while simultaneously running the family bank.[^66] His sister's husband clerked for the same federal judge as the man who became Chief Justice of the state supreme court and held appointment authority over the judge's continued service.[^67] The family's general counsel is the son of a former judge who sat on the bank's board.[^68] The chairman of Honolulu's leading business newspaper sat on the bank's board for sixteen years.[^69]
 
 None of that is a crime. All of it is a structure.
 
@@ -303,15 +340,35 @@ The structure is this investigation's subject. The structure is why the door has
 
 ---
 
-*The statute of limitations on 18 U.S.C. § 1622 subornation of perjury expires approximately December 2027, based on the date of the alleged conduct. A referral has been filed with the DOJ Public Integrity Section, National Security Division, Washington D.C. The referral has been acknowledged. No further communication has been received.*
+*The statute of limitations on 18 U.S.C. § 242 (deprivation of rights under color of law) and 18 U.S.C. § 1622 (subornation of perjury) expires approximately December 2027, based on the date of the alleged conduct. Prosecutions under § 242 are handled by the DOJ Civil Rights Division, Criminal Section, with the FBI as the primary investigative agency. A referral has been filed with the DOJ Public Integrity Section, Criminal Division, Washington D.C. The referral has been acknowledged. No further communication has been received.*
 
 *The full prosecution roadmap is published at: [The Two Questions](/investigation/the-two-questions/)*
 
 ---
 
+> **Timeline**
+>
+> | Date | Event |
+> |---|---|
+> | Jul 5, 1995 | Loo appointed Per Diem District Judge, First Circuit |
+> | Dec 2, 2022 | The hearing — alleged subornation of perjury / deprivation of rights |
+> | Mar 22, 2023 | CJC: "insufficient evidence" |
+> | Jul 2024 | Loo retires from per diem service |
+> | Oct 2024 | 90-day CJC window closes |
+> | Mar 13, 2025 | CJC: "no jurisdiction" — permanent closure |
+> | Jul 12, 2025 | DOJ referral filed |
+> | Feb 28, 2026 | This article published |
+> | ~Dec 2027 | Statute of limitations expires (5 years from act) |
+
+---
+
+**Disclosure and Scope:** No comment was requested from individuals or institutions named in this article prior to publication. This investigation is based entirely on public records, government filings, and primary-source documents. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. No claim in this article requires non-public information to be true. The author welcomes factual corrections at ZeroTrust@NSHkr.com.
+
+---
+
 ## Sources and Notes
 
-[^1]: 18 U.S.C. § 3282 sets the general federal felony statute of limitations at five years. The alleged subornation of perjury occurred during proceedings on December 2, 2022. This calculation places the SOL expiration at approximately December 2027.
+[^1]: 18 U.S.C. § 3282 sets the general federal felony statute of limitations at five years. The alleged deprivation of rights under color of law (§ 242) and subornation of perjury (§ 1622) occurred during proceedings on December 2, 2022. This calculation places the SOL expiration at approximately December 2027.
 
 [^2]: DOJ Public Integrity Section, acknowledgment of referral received by author. On file.
 
@@ -389,7 +446,7 @@ The structure is this investigation's subject. The structure is why the door has
 
 [^39]: Duane Kurisu, Director, Hawaii National Bancshares 2008–2024. Source: OCC CRA evaluation for Hawaii National Bank (primary). Kurisu's aio Group/Pacific Business News chairmanship: multiple secondary sources.
 
-[^40]: Gerald Sumida, President, APCSS Foundation; also Board of Governors, Pacific Forum. Sources: Pacific Forum 2020 Annual Report (primary for Pacific Forum); APCSS Foundation session research (secondary — verify against Form 990).
+[^40]: Gerald Sumida, President, APCSS Foundation; also Board of Governors, Pacific Forum. Sources: Pacific Forum 2020 Annual Report (primary for Pacific Forum); APCSS Foundation Form 990 via ProPublica Nonprofit Explorer, EIN 99-0350533.
 
 [^41]: Constance Lau, Chair, DHS National Infrastructure Advisory Council. Source: NIAC official records; multiple secondary sources confirming Obama-era appointment.
 
@@ -425,9 +482,9 @@ The structure is this investigation's subject. The structure is why the door has
 
 [^57]: DOJ Public Integrity Section acknowledgment letter. On file with author.
 
-[^58]: DOJ PIN staffing: reporting from current news cycle, session research. Reduction from 36 attorneys to 2 attorneys; no new criminal cases filed since current administration. Requires primary source verification before publication of specific numbers.
+[^58]: DOJ Public Integrity Section staffing: Reuters, "How Trump defanged the Justice Department's political corruption watchdogs," June 9, 2025. Reuters reported the Section reduced from more than 30 attorneys to approximately 5, with at least 28 staff departures; the Section's authority to file new cases and its gatekeeping role over public-corruption prosecutions suspended or constrained. See also Washington Post, May 17, 2025.
 
-[^59]: FBI elite public corruption squad disbanding: current reporting, session research. Requires primary source verification.
+[^59]: FBI elite public corruption squad disbanding: Reuters, "How Trump defanged the Justice Department's political corruption watchdogs," June 9, 2025; AP News reporting on FBI restructuring under current administration.
 
 [^60]: Edward Kubo Jr. served as U.S. Attorney for the District of Hawaii 2001–2009. His service in the Marsland-era Organized Crime Unit at the same time as Wilson Loo (1980–1984): established through separate research. Wilson Loo's OC Unit tenure: mediation.com biography (primary).
 

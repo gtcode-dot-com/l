@@ -5,7 +5,7 @@ title: "A Case Study in Systemic Protection: Institutional Decay in Hawaii"
 subtitle: "Multi-decade analysis of coordinated institutional failure"
 description: "Multi-decade case study showing how legal, law-enforcement, and corporate actors reinforce one another to neutralize accountability and shield connected interests."
 date: 2025-08-13
-lastmod: 2025-11-09
+lastmod: 2026-02-28
 author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "Institutional Decay in Hawaii — A Case Study in Systemic Protection"
@@ -38,7 +38,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-13T00:00:00Z"
-article_modified_time: "2025-11-09T00:00:00Z"
+article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Institutional Capture"
@@ -189,7 +189,7 @@ A pattern of alleged judicial misconduct is further examined in a December 2022 
 
 The subject alleges that the judge exploited the fact that the hearing was being recorded for audio only. Specifically, when a defendant was asked a critical question under oath, the judge allegedly made a non-verbal gesture to coach a "no" answer, thereby inducing perjury. When the subject attempted to object to place the alleged coaching on the record, he was reportedly silenced.
 
-**Systemic Analysis:** This incident is a critical case study in how procedural limitations can be weaponized. The absence of mandatory audio-visual recording creates a vulnerability that can be exploited by a sophisticated actor who understands the limits of the oversight system. The alleged action, if true, represents a direct violation of statutes against suborning perjury (e.g., 18 U.S.C. § 1622). The judge's prior service on a judicial conduct commission is a key data point, as it suggests an expert understanding of how to operate within the gaps of the very system designed to ensure accountability.
+**Systemic Analysis:** This incident is a critical case study in how procedural limitations can be weaponized. The absence of mandatory audio-visual recording creates a vulnerability that can be exploited by a sophisticated actor who understands the limits of the oversight system. The alleged action, if true, would warrant investigation under federal law — including 18 U.S.C. § 242 (deprivation of rights under color of law) and potentially 18 U.S.C. § 1622 (subornation of perjury). The judge's prior service on a judicial conduct commission is a key data point, as it suggests an expert understanding of how to operate within the gaps of the very system designed to ensure accountability.
 
 ## Phase IV: Analysis of Law Enforcement Non-Response
 
@@ -267,10 +267,11 @@ The patterns observed here are not entirely novel. They can be situated within e
 
 While this report does not make legal conclusions, the pattern of alleged events raises questions regarding several areas of law. An official investigation might examine whether the observed behaviors, taken together, could constitute violations of statutes concerning:
 
+- **Deprivation of Rights Under Color of Law (18 U.S.C. § 242):** The primary federal theory. Individual acts by state officials that allegedly deprived the subject of due process or equal protection. The Supreme Court confirmed § 242's application to state judges in *United States v. Lanier*, 520 U.S. 259 (1997).
+- **Retaliation Against a Person Who Provided Information to Federal Law Enforcement (18 U.S.C. § 1513(e)):** The subject's documented contacts with the FBI and DEA preceded the hearing at which the alleged deprivation occurred. If the alleged adverse actions were taken because of those reports — with retaliatory intent — § 1513(e) would apply.
 - **Conspiracy Against Rights (18 U.S.C. § 241):** If independent actions were found to be part of a mutual understanding to deprive the subject of constitutional rights.
-- **Deprivation of Rights Under Color of Law (18 U.S.C. § 242):** Regarding individual acts by state officials that allegedly deprived the subject of due process or equal protection.
 - **Obstruction of Justice (18 U.S.C. § 1503, § 1512):** In relation to acts that could be interpreted as witness coaching or discouraging testimony.
-- **Perjury and Suborning Perjury (18 U.S.C. § 1621-22):** Specifically in the case of the alleged non-verbal witness coaching.
+- **Perjury and Subornation of Perjury (18 U.S.C. § 1621-22):** Specifically in the case of the alleged non-verbal witness coaching. The jurisdictional reach of § 1622 to state-court perjury is a legal question.
 
 The high bar for proving a "criminal enterprise" under RICO (18 U.S.C. § 1961-1968) makes it a difficult charge, but an investigation could determine if the pattern of symbiotic decay rises to that level.
 

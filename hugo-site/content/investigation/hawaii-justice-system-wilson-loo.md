@@ -5,7 +5,7 @@ title: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption i
 subtitle: "Hawaii's Justice System Under Scrutiny"
 description: "Investigative report by Ekewaka Lono exposing alleged suborning of perjury by Judge Wilson Loo, a 'corruption loophole' involving the HI Commission on Judicial Conduct, and related misconduct by Judge Audrey Stanley."
 date: 2025-06-12
-lastmod: 2026-02-25
+lastmod: 2026-02-28
 author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption in Hawaii"
@@ -38,7 +38,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-06-12T00:00:00Z"
-article_modified_time: "2026-02-25T00:00:00Z"
+article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -200,8 +200,7 @@ manipulation that would leave no official trace.
 
 ### The Subornation Allegation
 
-Judge Wilson Loo's alleged actions constitute *suborning perjury* under Hawaii Revised Statutes §
-710-1072.2 and federal law 18 USC 1622. If the sealed audio corroborates the complainant's account, these elements would be satisfied:
+Judge Wilson Loo's alleged actions, if corroborated, could constitute *deprivation of rights under color of law* under [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242) — a statute the Supreme Court unanimously confirmed applies to state judges in *United States v. Lanier*, 520 U.S. 259 (1997) — and potentially *suborning perjury* under Hawaii Revised Statutes § 710-1072.2 and federal law 18 U.S.C. § 1622. If the sealed audio corroborates the complainant's account, a competent investigation would evaluate whether these elements could be met:
 
 - **Procuring false testimony:** The visual cue allegedly induced the defendant to lie
 - **Knowledge of falsity:** Text evidence was already in the record
@@ -361,18 +360,15 @@ criminal law:
 
 If corroborated by the sealed record and independent investigation:
 
-- **18 USC 1622 - Suborning Perjury:** Judge Loo's alleged visual cue to induce false
-  testimony
-- **18 USC 1621 - Perjury:** Defendants's material false statements under oath about drug
-  distribution
-- **18 USC 1503 - Obstruction of Justice:** Systematic interference with judicial proceedings
-- **18 USC 242 - Deprivation of Rights Under Color of Law:** Denial of fair trial rights
-- **18 USC 1512 - Witness Tampering:** Post-trial intimidation and harassment
+- **18 U.S.C. § 242 - Deprivation of Rights Under Color of Law:** Judge Loo's alleged conduct — directing false testimony and cutting off the petitioner's objection — deprived a party of due process rights. The Supreme Court confirmed § 242's application to state judges in *United States v. Lanier*, 520 U.S. 259 (1997).
+- **18 U.S.C. § 1513(e) - Retaliation Against a Person Who Provided Information to Federal Law Enforcement:** The complainant's documented contacts with the FBI and DEA preceded the hearing.
+- **18 U.S.C. § 1622 - Subornation of Perjury:** Judge Loo's alleged visual cue to induce false testimony. Jurisdictional reach to state-court perjury is a legal question this investigation acknowledges.
+- **18 U.S.C. § 1621 - Perjury:** Defendant's material false statements under oath about drug distribution
+- **18 U.S.C. § 1503 - Obstruction of Justice:** Systematic interference with judicial proceedings
+- **18 U.S.C. § 1512 - Witness Tampering:** Post-trial intimidation and harassment
 
 **The Federal Nexus:** This case involves federal crimes, interstate activities, and potential
-violations of civil rights. The plaintiff's previous contact with federal authorities regarding separate
-criminal matters, combined with the alleged retaliation, establishes clear federal jurisdiction and the need
-for FBI investigation.
+violations of civil rights. The complainant's previous contacts with the FBI and DEA regarding federal offenses preceded the hearing. If the alleged adverse actions were taken because of those reports — with retaliatory intent — then 18 U.S.C. § 1513(e) would establish an additional basis for federal jurisdiction requiring FBI investigation.
 
 The integrity of Hawaii's justice system hangs in the balance. When a judge can allegedly
 manipulate proceedings using insider knowledge of oversight weaknesses, and when police consistently fail to
