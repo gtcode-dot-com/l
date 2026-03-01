@@ -5,7 +5,7 @@ title: "A Case Study in Systemic Protection: Institutional Decay in Hawaii"
 subtitle: "Multi-decade analysis of coordinated institutional failure"
 description: "Multi-decade case study showing how legal, law-enforcement, and corporate actors reinforce one another to neutralize accountability and shield connected interests."
 date: 2025-08-13
-lastmod: 2026-02-28
+lastmod: 2026-03-01
 author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "Institutional Decay in Hawaii — A Case Study in Systemic Protection"
@@ -38,7 +38,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-13T00:00:00Z"
-article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Institutional Capture"
@@ -97,7 +96,6 @@ structured_data:
   description: "Multi-decade case study of institutional capture in Hawaii"
   image: "https://gtcode.com/img/gtcode_mahalo.jpg"
   datePublished: "2025-08-13T00:00:00Z"
-  dateModified: "2025-11-09T00:00:00Z"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"

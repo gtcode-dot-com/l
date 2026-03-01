@@ -41,7 +41,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-24T00:00:00Z"
-article_modified_time: "2026-02-24T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Networked Coercion"
@@ -111,7 +110,6 @@ structured_data_graph:
       description: "A structural analysis of how networked coercion neutralizes individuals without central coordination — mapping the seven-layer architecture documented across decades and continents."
       image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
       datePublished: "2026-02-24T00:00:00Z"
-      dateModified: "2026-02-24T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

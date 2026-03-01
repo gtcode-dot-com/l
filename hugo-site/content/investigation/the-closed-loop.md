@@ -43,7 +43,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-15T00:00:00Z"
-article_modified_time: "2026-02-20T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Closed Loop"
@@ -97,7 +96,6 @@ structured_data_graph:
       description: "The Closed Loop is an investigative series documenting how every branch of Hawaii government has built oversight systems controlled by the institutions they exist to oversee."
       image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
       datePublished: "2026-02-15T00:00:00Z"
-      dateModified: "2026-02-20T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

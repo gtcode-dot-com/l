@@ -71,7 +71,6 @@ og_image_alt: "Google and the Architecture of Information Control — technical 
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-staff"
 article_published_time: "2026-02-18T00:00:00Z"
-article_modified_time: "2026-02-18T00:00:00Z"
 article_section: "Articles"
 article_tags:
   - "Google"

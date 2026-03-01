@@ -10,7 +10,7 @@ author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 13, 2026"
 modified_display: "February 28, 2026"
-lastmod: 2026-02-28
+lastmod: 2026-03-01
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-index-bing-search-suppression/"
@@ -39,7 +39,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-13T00:00:00Z"
-article_modified_time: "2026-02-18T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Bing"
@@ -99,7 +98,6 @@ structured_data:
       description: "Documented evidence of Bing search suppression targeting gtcode.com"
       image: "https://gtcode.com/img/bing-block-agent-session-manager.png"
       datePublished: "2026-02-13T00:00:00Z"
-      dateModified: "2026-02-18T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

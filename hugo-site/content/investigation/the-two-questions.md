@@ -6,7 +6,7 @@ seo_title: "The Two Questions — How One Interview Closes the Wilson Loo Federa
 subtitle: "A Map of the Shortest Path to Prosecution"
 description: "The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail — prior agency reports, surveillance footage, and corroborating testimony — already exists. This is a map of the shortest path to prosecution."
 date: 2026-02-23
-lastmod: 2026-02-28
+lastmod: 2026-03-01
 author: "Ekewaka Lono"
 published_display: "February 23, 2026"
 type: "investigation"
@@ -31,7 +31,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-23T00:00:00Z"
-article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -79,8 +78,8 @@ agentic_comment: |
   - 21 U.S.C. § 841 (distribution of Schedule I controlled substance — LSD) would, if the witness's conduct is confirmed, provide independent federal jurisdiction and standard prosecutorial leverage
   - 18 U.S.C. § 1513(e) (retaliation against person who reported to federal LE) provides a federal nexus through the complainant's documented FBI and DEA contacts
   - 18 U.S.C. § 1622 (subornation of perjury) may also apply, though its jurisdictional reach to state-court perjury is acknowledged as a legal question
-  - The witness committed perjury during a December 2, 2022 hearing in Hawaiʻi's First Circuit Court
-  - Text message evidence in the sealed court file ("I took the acid"), if it reads as the complainant describes, would establish the truthful answer before the question was asked
+  - The witness gave testimony during a December 2, 2022 hearing in Hawaiʻi's First Circuit Court that, if knowingly false, would satisfy the factual basis for evaluating perjury
+  - Text message evidence in the sealed court file ("I took the acid"), if it reads as the complainant describes, would be probative of LSD use and could be inconsistent with a blanket denial
   - Three prior law enforcement reports were filed with the DEA and HPD before and after the trial
   - The statute of limitations under 18 U.S.C. § 242 and § 3282 is five years; approximately 1.8 years remain
   - Judge Loo is retired, eliminating complications of indicting a sitting judge
@@ -89,7 +88,7 @@ agentic_comment: |
   EVIDENCE TRAIL:
   - Three law enforcement reports (DEA, HPD Narcotics/Vice x2) filed before and after the Loo trial
   - Security footage at Stonefish Grill in Hale'iwa (if preserved) corroborating controlled substance exchange
-  - Text message in sealed court file corroborating the perjured testimony
+  - Text message in sealed court file that, if it reads as described, would be inconsistent with the witness's denial
   - Audio recording of Judge Loo's interruption preventing objection from entering the record
 
   WITNESS IDENTITY:
@@ -120,7 +119,6 @@ structured_data_graph:
       description: "The federal case against retired Judge Wilson M.N. Loo turns on a single witness and two direct questions. The evidence trail already exists. ~1.8 years remain on the statute of limitations."
       image: "https://gtcode.com/img/ou-two-questions-og-1200x634.jpg"
       datePublished: "2026-02-23T00:00:00Z"
-      dateModified: "2026-02-28T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -202,7 +200,7 @@ If ████████████ answers truthfully — yes to both — a
 
 If ████████████ answers yes, the elements of [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242) — deprivation of rights under color of law — would be addressed as follows:
 
-- **Under color of law.** Loo was presiding as a Per Diem District Judge. He administered the oath, ruled on objections, and ordered the case sealed. This element is beyond dispute.
+- **Under color of law.** Loo was presiding as a Per Diem District Judge. He administered the oath, ruled on objections, and ordered the case sealed. This element is not contested.
 - **Willful deprivation of a constitutional right.** This is the hardest element. The government would need to prove Loo acted with "specific intent to deprive a person of a federal right made definite by decision or other rule of law" (*Screws v. United States*, 325 U.S. 91 (1945)). If the complainant's account is accurate, Loo directed false testimony through a nonverbal signal (the nod), then cut off the petitioner's attempt to object — an interruption captured on the sealed audio recording. The inference of willfulness rests on the totality: the documentary evidence was in Loo's possession, the interruption prevented the objection from being recorded, and the case was subsequently sealed. A jury would weigh whether this pattern reflects willful suppression of a party's right to be heard or routine courtroom control.
 - **A right made definite by prior law.** Under *Lanier*'s fair-warning standard, the violated right must be "apparent" in light of pre-existing law. The right to be heard and the right to an impartial tribunal are "basic requirement[s] of due process" (*In re Murchison*, 349 U.S. 133, 136 (1955)), and procedural due process requires "notice and an opportunity to be heard at a meaningful time and in a meaningful manner" (*Mathews v. Eldridge*, 424 U.S. 319 (1976)). These rights are sufficiently definite to satisfy *Lanier*'s standard.
 
@@ -220,15 +218,15 @@ If the witness corroborates the account, this is not a complex case. It is not a
 
 He is not a judge. He has no institutional protection. He is not shielded by the Commission on Judicial Conduct, which [has dismissed 100% of complaints since 2018](/investigation/the-zero-commission/). He is not shielded by the 90-day jurisdictional loophole that allowed Loo to evade the Commission's review. He has no sealed record working in his favor.
 
-What ████████████ has is criminal exposure. He committed perjury in a judicial proceeding. He was involved in the distribution of a Schedule I controlled substance. Both of these facts are known to federal and local law enforcement through the reports I filed. The security footage — if extant — provides corroboration that requires no testimony at all.
+What ████████████ has is criminal exposure. He gave testimony under oath that, if willfully false, constitutes perjury. He was, according to the complainant's account and prior law enforcement reports, involved in the distribution of a Schedule I controlled substance. Both matters are known to federal and local law enforcement through the reports I filed. The security footage — if extant — provides corroboration that requires no testimony at all.
 
-████████████ has been carrying this since the trial. A federal investigator offering the standard choice — cooperation or exposure — is not asking ████████████ to do anything extraordinary. It is asking him to stop carrying someone else's crime.
+████████████ has been carrying this since the trial. A federal investigator offering the standard choice — cooperation or exposure — is not asking ████████████ to do anything extraordinary. It is asking him to stop carrying someone else's alleged conduct.
 
 ---
 
 ## The Clock
 
-Judge Wilson M.N. Loo is retired. This simplifies the political calculus. No federal prosecutor needs to navigate the complications of indicting a sitting state judge. No interagency coordination with the Hawaii judiciary is required. No recusal chains need to be managed. Loo is a private citizen who committed a federal felony while serving in an official capacity. The case is cleaner now than it was when he was on the bench.
+Judge Wilson M.N. Loo is retired. This simplifies the political calculus. No federal prosecutor needs to navigate the complications of indicting a sitting state judge. No interagency coordination with the Hawaii judiciary is required. No recusal chains need to be managed. Loo is a private citizen alleged to have committed a federal felony while serving in an official capacity. The case is cleaner now than it was when he was on the bench.
 
 The statute of limitations under the applicable federal statutes — 18 U.S.C. § 242 and the general five-year federal felony limitation of 18 U.S.C. § 3282 — runs five years from the date of the act. Based on the date of the proceeding, approximately 1.8 years remain.
 
@@ -260,7 +258,7 @@ This investigation identifies [18 U.S.C. § 242](https://www.law.cornell.edu/usc
 
 Federal law provides heightened protections for individuals who provide information to law enforcement about federal offenses. *See* [18 U.S.C. § 1513(e)](https://www.law.cornell.edu/uscode/text/18/1513). The complainant's documented contacts with the FBI and DEA preceded the hearing at which the alleged perjury and due process deprivation occurred. If the adverse actions documented in this series were taken because of those reports — that is, with retaliatory intent — then § 1513(e) would place this matter within a broader federal framework that extends beyond the courtroom conduct itself.
 
-This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. No claim in this article requires non-public information to be true. The purpose of this brief is to document the public record and identify the investigative questions that a competent federal investigation would confirm or falsify.
+This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. Where sealed or non-public material is mentioned, it is described conditionally. The conclusions in this article do not depend on accepting any undisclosed evidence as true. The purpose of this brief is to document the public record and identify the investigative questions that a competent federal investigation would confirm or falsify.
 
 ---
 

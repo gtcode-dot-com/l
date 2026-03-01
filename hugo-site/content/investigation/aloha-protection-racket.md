@@ -2,7 +2,7 @@
 title: "The Aloha Protection Racket"
 slug: aloha-protection-racket
 date: 2025-08-26
-lastmod: 2026-02-28
+lastmod: 2026-03-01
 author: Ekewaka Lono
 draft: false
 type: "investigation"
@@ -37,7 +37,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-26T00:00:00Z"
-article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
@@ -81,7 +80,6 @@ structured_data_graph:
       description: "Investigative report alleging Judge Wilson Loo orchestrated a protection racket from the bench, enabled by HPD and Hawaiʻi's judicial oversight system."
       image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
       datePublished: "2025-08-26T00:00:00Z"
-      dateModified: "2026-02-25T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

@@ -6,7 +6,7 @@ seo_title: "Exhibit A — Federal Intervention in Hawaii [Archived]"
 subtitle: "This article has been superseded by the records-first investigation series"
 description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/investigation/."
 date: 2025-08-20
-lastmod: 2026-02-28
+lastmod: 2026-03-01
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "August 20, 2025"
@@ -36,7 +36,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-20T00:00:00Z"
-article_modified_time: "2026-02-25T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Federal Intervention"
@@ -79,7 +78,6 @@ structured_data:
   description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/investigation/."
   image: "https://gtcode.com/img/gtcode_mahalo.jpg"
   datePublished: "2025-08-20T00:00:00Z"
-  dateModified: "2026-02-25T00:00:00Z"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"

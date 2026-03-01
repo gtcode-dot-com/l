@@ -58,7 +58,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-staff"
 article_published_time: "2026-01-29T00:00:00Z"
-article_modified_time: "2026-01-29T00:00:00Z"
 article_section: "Articles"
 article_tags:
   - "Hawaii Accountability"

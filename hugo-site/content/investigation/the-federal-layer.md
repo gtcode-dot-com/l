@@ -6,7 +6,7 @@ seo_title: "The Federal Layer — Warren Luke, Hawaii National Bank, and the Fed
 subtitle: "How One of Hawaii's Most Connected Bankers Sits at the Intersection of Every Institution That Might Hold Him to Account"
 description: "An investigation into how Warren K.K. Luke — Federal Reserve director, DOD foundation trustee, and brother-in-law of retired Judge Wilson Loo — built an institutional presence so dense across federal banking, defense, and security establishments that the simple prosecution of one judge is crowded out before it begins."
 date: 2026-02-28
-lastmod: 2026-02-28
+lastmod: 2026-03-01
 author: "Ekewaka Lono"
 published_display: "February 28, 2026"
 type: "investigation"
@@ -46,7 +46,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-28T00:00:00Z"
-article_modified_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Warren Luke"
@@ -126,7 +125,6 @@ structured_data_graph:
       description: "An investigation into how Warren K.K. Luke built an institutional presence so dense across federal banking, defense, and security establishments that the simple prosecution of one judge is crowded out before it begins."
       image: "https://gtcode.com/img/ou-federal-layer-og-1200x630.jpg"
       datePublished: "2026-02-28T00:00:00Z"
-      dateModified: "2026-02-28T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -166,7 +164,7 @@ The series has previously framed this case under [18 U.S.C. § 1622](https://www
 
 Federal law also provides heightened protections for individuals who provide information to law enforcement about federal offenses. *See* [18 U.S.C. § 1513(e)](https://www.law.cornell.edu/uscode/text/18/1513). The complainant's documented contacts with the FBI and DEA preceded the hearing at which the alleged perjury and due process deprivation occurred. If the adverse actions documented in this series were taken because of those reports — that is, with retaliatory intent — then § 1513(e) would place this matter within a broader federal framework that extends beyond the courtroom conduct itself.
 
-This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. No claim in this article requires non-public information to be true. The purpose of this brief is to document the public record and identify the investigative questions that a competent federal investigation would confirm or falsify.
+This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. Where sealed or non-public material is mentioned, it is described conditionally. The conclusions in this article do not depend on accepting any undisclosed evidence as true. The purpose of this brief is to document the public record and identify the investigative questions that a competent federal investigation would confirm or falsify.
 
 ---
 
@@ -362,7 +360,7 @@ The structure is this investigation's subject. The structure is why the door has
 
 ---
 
-**Disclosure and Scope:** No comment was requested from individuals or institutions named in this article prior to publication. This investigation is based entirely on public records, government filings, and primary-source documents. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. No claim in this article requires non-public information to be true. The author welcomes factual corrections at ZeroTrust@NSHkr.com.
+**Disclosure and Scope:** No comment was requested from individuals or institutions named in this article prior to publication; outreach was deferred due to safety and source-protection constraints. Institutions and individuals may respond at ZeroTrust@NSHkr.com. This investigation is based entirely on public records, government filings, and primary-source documents. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. Where sealed or non-public material is mentioned, it is described conditionally. The conclusions in this article do not depend on accepting any undisclosed evidence as true.
 
 ---
 

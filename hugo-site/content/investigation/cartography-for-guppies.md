@@ -37,7 +37,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-05T00:00:00Z"
-article_modified_time: "2026-02-05T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Oahu Underground"
@@ -95,7 +94,6 @@ structured_data_graph:
       description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
       image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
       datePublished: "2026-02-05T00:00:00Z"
-      dateModified: "2026-02-05T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

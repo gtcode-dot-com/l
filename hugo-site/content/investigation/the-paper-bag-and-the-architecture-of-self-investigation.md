@@ -47,7 +47,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-20T00:00:00Z"
-article_modified_time: "2026-02-20T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Closed Loop"
@@ -112,7 +111,6 @@ structured_data_graph:
       description: "Hawaii's AG opposed a special counsel bill in 2024 saying she already had the power. In 2026, investigating her own boss, she claims no such power exists. An investigation into the structural impossibility of executive branch self-investigation."
       image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
       datePublished: "2026-02-20T00:00:00Z"
-      dateModified: "2026-02-20T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

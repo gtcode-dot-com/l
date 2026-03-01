@@ -28,6 +28,17 @@
 {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*,\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
 {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*,\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
 {{- $jsonText = replaceRE "(?s)</?[^>]+>" "" $jsonText -}}
+{{- /* Inject or override dateModified from .Lastmod (single source of truth).
+     Skip section/list pages (e.g. _index.md) whose structured_data_graph may
+     contain dateModified for multiple child articles in hasPart. */ -}}
+{{- if and (not .Lastmod.IsZero) .IsPage -}}
+  {{- $lastmodISO := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- if findRE "\"dateModified\"" $jsonText -}}
+    {{- $jsonText = replaceRE "\"dateModified\"\\s*:\\s*\"[^\"]*\"" (printf "\"dateModified\":\"%s\"" $lastmodISO) $jsonText -}}
+  {{- else if findRE "\"datePublished\"" $jsonText -}}
+    {{- $jsonText = replaceRE "(\"datePublished\"\\s*:\\s*\"[^\"]*\")" (printf "${1},\"dateModified\":\"%s\"" $lastmodISO) $jsonText -}}
+  {{- end -}}
+{{- end -}}
 <script type="application/ld+json">{{ $jsonText | safeJS }}</script>
 {{- else if and $articleMeta $articleMeta.json_ld }}
   {{- $jsonLD := $articleMeta.json_ld -}}

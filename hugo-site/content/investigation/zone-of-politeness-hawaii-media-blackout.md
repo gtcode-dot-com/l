@@ -40,7 +40,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-04T00:00:00Z"
-article_modified_time: "2026-02-05T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Civil Beat"
@@ -72,7 +71,6 @@ structured_data_graph:
       description: "An investigation into the structural forces that prevent Hawaiʻi's newsrooms from investigating certain networks, and the social enforcement mechanisms that follow."
       image: "https://gtcode.com/img/zone-of-politeness-og.jpg"
       datePublished: "2026-02-04T00:00:00Z"
-      dateModified: "2026-02-05T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

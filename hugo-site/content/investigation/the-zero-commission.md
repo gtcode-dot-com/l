@@ -47,7 +47,6 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-15T00:00:00Z"
-article_modified_time: "2026-02-15T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Commission on Judicial Conduct"
@@ -119,7 +118,6 @@ structured_data_graph:
       description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of complaints against judges since 2018. An investigation into judicial corruption, misconduct, and the broken oversight system protecting Hawaii's courts."
       image: "https://gtcode.com/img/ou-zero-commission-og-1200x630.jpg"
       datePublished: "2026-02-15T00:00:00Z"
-      dateModified: "2026-02-15T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
