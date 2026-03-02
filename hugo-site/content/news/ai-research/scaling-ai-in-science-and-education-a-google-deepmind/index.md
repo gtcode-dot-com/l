@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T14:15:42.273415+00:00'
-exported_at: '2026-02-20T14:15:44.559005+00:00'
+date: '2026-03-02T03:16:26.754635+00:00'
+exported_at: '2026-03-02T03:16:30.514180+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Accelerating discovery in India through AI-powered science and education
-updated_at: '2026-02-20T14:15:42.273415+00:00'
+updated_at: '2026-03-02T03:16:26.754635+00:00'
 url_hash: 4657cdb664fb96a6bf5b1e5869f4830a4344de45
 ---
 

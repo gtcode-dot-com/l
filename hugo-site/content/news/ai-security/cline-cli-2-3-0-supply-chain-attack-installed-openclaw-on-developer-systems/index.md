@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T18:15:14.636734+00:00'
-exported_at: '2026-02-20T18:15:17.351860+00:00'
+date: '2026-03-02T03:16:08.858612+00:00'
+exported_at: '2026-03-02T03:16:10.812374+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/cline-cli-230-supply-chain-attack.html
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/cline-cli-230-supply-chain-attack.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Cline CLI 2.3.0 Supply Chain Attack Installed OpenClaw on Developer Systems
-updated_at: '2026-02-20T18:15:14.636734+00:00'
+updated_at: '2026-03-02T03:16:08.858612+00:00'
 url_hash: 8551a59d446718dea8a317cd6b1f22581cd38b1f
 ---
 

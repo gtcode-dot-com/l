@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T20:15:15.784217+00:00'
-exported_at: '2026-02-20T20:15:18.039150+00:00'
+date: '2026-03-02T03:16:08.410891+00:00'
+exported_at: '2026-03-02T03:16:10.815585+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/beyondtrust-flaw-used-for-web-shells.html
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/beyondtrust-flaw-used-for-web-shells.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: BeyondTrust Flaw Used for Web Shells, Backdoors, and Data Exfiltration
-updated_at: '2026-02-20T20:15:15.784217+00:00'
+updated_at: '2026-03-02T03:16:08.410891+00:00'
 url_hash: a169910a32ef307db48289493499c0e7c5fe478d
 ---
 
@@ -80,3 +80,11 @@ With CVE-2024-12356 exploited by China-nexus threat actors like
 The development comes as the U.S. Cybersecurity and Infrastructure Security Agency (CISA)
 [updated](https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-1731&field_date_added_wrapper=all&field_cve=&sort_by=field_date_added&items_per_page=20&url=)
 its Known Exploited Vulnerabilities (KEV) catalog entry for CVE-2026-1731 to confirm that the bug has been exploited in ransomware campaigns.
+
+In an update to its advisory, BeyondTrust stated that exploitation attempts targeting the flaw were first detected on January 31, 2026, after "anomalous activity" was flagged on a single Remote Support appliance, at least a week before it was publicly disclosed on February 6, 2026.
+
+"BeyondTrust is aware of and supporting a limited number of self-hosted customers in responding to active exploitation attempts of the previously disclosed critical vulnerability (CVE-2026-1731) in its Remote Support and Privileged Remote Access solutions," the company
+[said](https://www.beyondtrust.com/trust-center/security-advisories/bt26-02)
+.
+
+"Observed exploitation activity has been limited to internet-facing, self-hosted environments where the patch had not been applied before February 9, 2026."

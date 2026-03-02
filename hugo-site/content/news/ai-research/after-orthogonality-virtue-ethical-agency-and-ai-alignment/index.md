@@ -7,23 +7,18 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T18:15:29.759241+00:00'
-exported_at: '2026-02-20T18:15:32.974104+00:00'
+date: '2026-03-02T03:16:29.207398+00:00'
+exported_at: '2026-03-02T03:16:30.498407+00:00'
 feed: https://thegradient.pub/rss/
 language: en
 source_url: https://thegradient.pub/virtue-ethics-ai-alignment
 structured_data:
   about: []
   author: ''
-  description: 'Preface
-
-
-
-    This essay argues that rational people don’t have goals, and that rational AIs
-    shouldn’t have goals. Human actions are rational not because we direct them at
-    some final ‘goals,’ but because we align actions to practices[1]: networks of
-    actions, action-dispositions, action-evaluation criteria, and action-resources
-    that structure,'
+  description: 'Preface This essay argues that rational people don’t have goals, and
+    that rational AIs shouldn’t have goals. Human actions are rational not because
+    we direct them at some final ‘goals,’ but because we align actions to practices[1]:
+    networks of actions, action-dispositions, action-evaluation criteria, and action-reso...'
   headline: 'After Orthogonality: Virtue-Ethical Agency and AI Alignment'
   inLanguage: en
   keywords: []
@@ -31,9 +26,9 @@ structured_data:
   original_source: https://thegradient.pub/virtue-ethics-ai-alignment
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'After Orthogonality: Virtue-Ethical Agency and AI Alignment'
-updated_at: '2026-02-20T18:15:29.759241+00:00'
+updated_at: '2026-03-02T03:16:29.207398+00:00'
 url_hash: 9d59ee8f065a355f3667baeaabb9c60b2993b861
 ---
 

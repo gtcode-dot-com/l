@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T16:15:34.430481+00:00'
-exported_at: '2026-02-20T16:15:37.012290+00:00'
+date: '2026-03-02T03:16:27.941941+00:00'
+exported_at: '2026-03-02T03:16:30.508636+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/gradio-html-one-shot-apps
 structured_data:
@@ -22,9 +22,9 @@ structured_data:
   original_source: https://huggingface.co/blog/gradio-html-one-shot-apps
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: One-Shot Any Web App with Gradio's gr.HTML
-updated_at: '2026-02-20T16:15:34.430481+00:00'
+updated_at: '2026-03-02T03:16:27.941941+00:00'
 url_hash: a10c31319962675c5df2dd490085067aa96a5b61
 ---
 

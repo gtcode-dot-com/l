@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T16:15:17.875393+00:00'
-exported_at: '2026-02-20T16:15:20.218390+00:00'
+date: '2026-03-02T03:16:09.490697+00:00'
+exported_at: '2026-03-02T03:16:10.803111+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/identity-cyber-scores-new-metric.html
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/identity-cyber-scores-new-metric.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Identity Cyber Scores: The New Metric Shaping Cyber Insurance in 2026'
-updated_at: '2026-02-20T16:15:17.875393+00:00'
+updated_at: '2026-03-02T03:16:09.490697+00:00'
 url_hash: 4dc6c5e3ae344b3d581ebd1a0106e9fec8ba25ba
 ---
 

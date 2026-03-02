@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T16:15:34.146960+00:00'
-exported_at: '2026-02-20T16:15:37.013880+00:00'
+date: '2026-03-02T03:16:27.309181+00:00'
+exported_at: '2026-03-02T03:16:30.511468+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/ibm-research/itbenchandmast
 structured_data:
@@ -22,10 +22,10 @@ structured_data:
   original_source: https://huggingface.co/blog/ibm-research/itbenchandmast
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and
   MAST
-updated_at: '2026-02-20T16:15:34.146960+00:00'
+updated_at: '2026-03-02T03:16:27.309181+00:00'
 url_hash: a48598059a697bdeb732df993055d23207e5e50e
 ---
 
