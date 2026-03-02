@@ -59,7 +59,16 @@
   <div class="ou-list-hero">
     <div class="ou-section-inner">
       <figure class="ou-list-hero-fig">
-        <img src="{{ . }}" alt="Oahu Underground Investigations" width="1200" height="630" loading="eager">
+        {{ partial "media/responsive-image.html" (dict
+          "page" $
+          "src" .
+          "alt" "Oahu Underground Investigations"
+          "slot" "investigation_list_hero"
+          "width" ($.Params.og_image_width | default 1200)
+          "height" ($.Params.og_image_height | default 630)
+          "loading" "eager"
+          "fetchpriority" "high"
+        ) }}
       </figure>
     </div>
   </div>
@@ -75,14 +84,22 @@
 
       <div class="ou-series-showcase">
         {{ range $seriesPages }}
+        {{ $seriesPage := . }}
         {{ $seriesName := .Title }}
         {{ $seriesURL := .RelPermalink }}
         {{ $parts := where (where $.Site.RegularPages "Params.series" $seriesName) "Layout" "!=" "series" }}
         {{ $parts = sort $parts "Params.series_part" "asc" }}
         <article class="ou-series-block">
-          {{ with .Params.og_image }}
+          {{ with $seriesPage.Params.og_image }}
           <figure class="ou-series-block-thumb">
-            <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+            {{ partial "media/responsive-image.html" (dict
+              "page" $seriesPage
+              "src" .
+              "alt" $seriesPage.Title
+              "slot" "investigation_series_thumb"
+              "width" ($seriesPage.Params.og_image_width | default 1200)
+              "height" ($seriesPage.Params.og_image_height | default 630)
+            ) }}
           </figure>
           {{ end }}
           <div class="ou-series-block-badge">Series</div>
@@ -143,11 +160,19 @@
 
       <div class="ou-cards">
         {{ range $standalone }}
+          {{ $cardPage := . }}
           {{ if not (in $seriesMembers .File.Path) }}
         <article class="ou-card">
-          {{ with .Params.og_image }}
+          {{ with $cardPage.Params.og_image }}
           <figure class="ou-card-thumb">
-            <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+            {{ partial "media/responsive-image.html" (dict
+              "page" $cardPage
+              "src" .
+              "alt" $cardPage.Title
+              "slot" "investigation_card"
+              "width" ($cardPage.Params.og_image_width | default 1200)
+              "height" ($cardPage.Params.og_image_height | default 630)
+            ) }}
           </figure>
           {{ end }}
           {{ if .Params.series_url }}

@@ -30,6 +30,13 @@
 {{- if and $lead (eq (lower (strings.TrimSpace $heroHeadline)) (lower (strings.TrimSpace $lead.Title))) -}}
   {{- $heroHeadline = printf "%s Investigative Series" $heroHeadline -}}
 {{- end -}}
+{{- $homeHeroImage := .Params.hero_image | default "/img/ou-shape-of-the-cage-hero-1600.jpg" -}}
+{{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
+  {{- $heroParsed := urls.Parse $homeHeroImage -}}
+  {{- with $heroParsed.Path -}}
+    {{- $homeHeroImage = . -}}
+  {{- end -}}
+{{- end -}}
 {{- $investigationIndex := .Site.GetPage "section" "investigation" -}}
 {{- $consultingPage := .Site.GetPage "section" "consulting" -}}
 {{- $consultingURL := "/consulting/" -}}
@@ -241,22 +248,16 @@
       <!-- Hero Banner -->
       <section class="ou-hero">
         <div class="ou-hero-image">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="/img/ou-shape-of-the-cage-hero-960.webp 960w, /img/ou-shape-of-the-cage-hero-1600.webp 1600w, /img/ou-shape-of-the-cage-hero-2400.webp 2400w"
-              sizes="100vw"
-            />
-            <img
-              src="/img/ou-shape-of-the-cage-hero-1600.jpg"
-              alt="{{ .Params.hero_image_alt | default "Oahu Underground — investigative series on Hawaii institutional accountability" }}"
-              width="1600"
-              height="475"
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-            />
-          </picture>
+          {{ partial "media/responsive-image.html" (dict
+            "page" .
+            "src" $homeHeroImage
+            "alt" (.Params.hero_image_alt | default "Oahu Underground investigative reporting in Hawaii")
+            "slot" "hero_banner"
+            "loading" "eager"
+            "fetchpriority" "high"
+            "width" 1600
+            "height" 475
+          ) }}
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
@@ -355,7 +356,14 @@
           <article class="ou-feature-row" id="lead-investigation">
             {{ with $lead.Params.og_image }}
             <a href="{{ $lead.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+              {{ partial "media/responsive-image.html" (dict
+                "page" $
+                "src" .
+                "alt" $lead.Title
+                "slot" "investigation_feature_row"
+                "width" ($lead.Params.og_image_width | default 1200)
+                "height" ($lead.Params.og_image_height | default 630)
+              ) }}
             </a>
             {{ end }}
             <div class="ou-feature-row-body">
@@ -384,7 +392,14 @@
           <article class="ou-feature-row" id="dispatch">
             {{ with $dispatch.Params.og_image }}
             <a href="{{ $dispatch.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+              {{ partial "media/responsive-image.html" (dict
+                "page" $
+                "src" .
+                "alt" $dispatch.Title
+                "slot" "investigation_feature_row"
+                "width" ($dispatch.Params.og_image_width | default 1200)
+                "height" ($dispatch.Params.og_image_height | default 630)
+              ) }}
             </a>
             {{ end }}
             <div class="ou-feature-row-body">
@@ -405,7 +420,14 @@
           <article class="ou-feature-row" id="prosecution-roadmap">
             {{ with $twoQuestions.Params.og_image }}
             <a href="{{ $twoQuestions.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+              {{ partial "media/responsive-image.html" (dict
+                "page" $
+                "src" .
+                "alt" $twoQuestions.Title
+                "slot" "investigation_feature_row"
+                "width" ($twoQuestions.Params.og_image_width | default 1200)
+                "height" ($twoQuestions.Params.og_image_height | default 630)
+              ) }}
             </a>
             {{ end }}
             <div class="ou-feature-row-body">
@@ -429,7 +451,14 @@
           <article class="ou-feature-row" id="publishers-note">
             {{ with $carto.Params.og_image }}
             <a href="{{ $carto.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+              {{ partial "media/responsive-image.html" (dict
+                "page" $
+                "src" .
+                "alt" $carto.Title
+                "slot" "investigation_feature_row"
+                "width" ($carto.Params.og_image_width | default 1200)
+                "height" ($carto.Params.og_image_height | default 630)
+              ) }}
             </a>
             {{ end }}
             <div class="ou-feature-row-body">
@@ -513,7 +542,14 @@
             <article class="ou-card">
               {{ with $page.Params.og_image }}
               <figure class="ou-card-thumb">
-                <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+                {{ partial "media/responsive-image.html" (dict
+                  "page" $
+                  "src" .
+                  "alt" $page.Title
+                  "slot" "investigation_card"
+                  "width" ($page.Params.og_image_width | default 1200)
+                  "height" ($page.Params.og_image_height | default 630)
+                ) }}
               </figure>
               {{ end }}
               {{ if $page.Params.series_url }}

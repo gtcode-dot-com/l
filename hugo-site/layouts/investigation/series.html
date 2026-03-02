@@ -30,17 +30,18 @@
       </div>
     </header>
 
-    {{ $heroImage := .Params.hero_image | default .Params.og_image }}
-    {{ $heroSrc := $heroImage }}
-    {{ if and $heroImage (or (hasPrefix $heroImage "https://") (hasPrefix $heroImage "http://")) }}
-      {{ $parsedHero := urls.Parse $heroImage }}
-      {{ with $parsedHero.Path }}
-        {{ $heroSrc = . }}
-      {{ end }}
-    {{ end }}
-    {{ with $heroSrc }}
+    {{ with (.Params.hero_image | default .Params.og_image) }}
     <figure class="ou-article-hero">
-      <img src="{{ . }}" alt="{{ $.Params.hero_image_alt | default $.Params.og_image_alt | default $.Title }}" width="{{ $.Params.hero_image_width | default $.Params.og_image_width | default 1200 }}" height="{{ $.Params.hero_image_height | default $.Params.og_image_height | default 630 }}" loading="eager" />
+      {{ partial "media/responsive-image.html" (dict
+        "page" $
+        "src" .
+        "alt" ($.Params.hero_image_alt | default $.Params.og_image_alt | default $.Title)
+        "slot" "investigation_article_hero"
+        "loading" "eager"
+        "fetchpriority" "high"
+        "width" ($.Params.hero_image_width | default $.Params.og_image_width | default 1200)
+        "height" ($.Params.hero_image_height | default $.Params.og_image_height | default 630)
+      ) }}
     </figure>
     {{ end }}
 

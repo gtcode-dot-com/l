@@ -2314,8 +2314,12 @@ body.nav-open .site-nav-overlay {
 }
 
 /* ---- Footnote References ---- */
-.ou-article-content sup + sup {
+.ou-article-content sup {
   margin-left: 0.15em;
+}
+
+.ou-article-content sup + sup {
+  margin-left: 0.1em;
 }
 
 /* ---- Article Tables ---- */

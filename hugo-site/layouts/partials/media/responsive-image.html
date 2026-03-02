@@ -1,0 +1,163 @@
+{{- $page := .page -}}
+{{- $srcInput := strings.TrimSpace (.src | default "") -}}
+{{- if ne $srcInput "" -}}
+  {{- $slotName := .slot | default "default" -}}
+  {{- $slots := $page.Site.Data.media_slots.slots | default dict -}}
+  {{- $slotConfig := index $slots $slotName | default (index $slots "default") -}}
+  {{- $widths := $slotConfig.widths | default (slice 360 480 640 760 960 1200) -}}
+  {{- $sizes := .sizes | default ($slotConfig.sizes | default "100vw") -}}
+  {{- $loading := .loading | default ($slotConfig.loading | default "lazy") -}}
+  {{- $decoding := .decoding | default "async" -}}
+  {{- $fetchpriority := .fetchpriority | default "" -}}
+  {{- $class := .class | default "" -}}
+  {{- $alt := .alt | default "" -}}
+  {{- $title := .title | default "" -}}
+  {{- $explicitWidth := int (.width | default 0) -}}
+  {{- $explicitHeight := int (.height | default 0) -}}
+
+  {{- $src := $srcInput -}}
+  {{- if hasPrefix $src "http://" -}}
+    {{- $src = replace $src "http://" "https://" -}}
+  {{- end -}}
+
+  {{- $isRemote := or (hasPrefix $src "https://") (hasPrefix $src "http://") -}}
+  {{- if $isRemote -}}
+    {{- $parsedSrc := urls.Parse $src -}}
+    {{- $baseParsed := urls.Parse $page.Site.BaseURL -}}
+    {{- if eq (lower $parsedSrc.Host) (lower $baseParsed.Host) -}}
+      {{- $src = $parsedSrc.Path -}}
+      {{- $isRemote = false -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if and (not $isRemote) (hasPrefix $src "/") -}}
+    {{- $ext := lower (path.Ext $src) -}}
+    {{- $base := strings.TrimSuffix $ext $src -}}
+    {{- $diskPath := printf "static%s" $src -}}
+    {{- $localExists := fileExists $diskPath -}}
+
+    {{- $width := $explicitWidth -}}
+    {{- $height := $explicitHeight -}}
+    {{- if and $localExists (eq $width 0) (eq $height 0) (ne $ext ".svg") -}}
+      {{- with imageConfig $diskPath -}}
+        {{- $width = .Width -}}
+        {{- $height = .Height -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $fallbackSrc := $src -}}
+    {{- $fallbackExt := $ext -}}
+    {{- if eq $ext ".webp" -}}
+      {{- range (slice ".jpg" ".jpeg" ".png") -}}
+        {{- $candidate := printf "%s%s" $base . -}}
+        {{- if fileExists (printf "static%s" $candidate) -}}
+          {{- $fallbackSrc = $candidate -}}
+          {{- $fallbackExt = . -}}
+          {{- break -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $webpSrcset := slice -}}
+    {{- $rasterSrcset := slice -}}
+    {{- if and $localExists (or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".webp")) -}}
+      {{- $dimensionBase := replaceRE "-[0-9]+$" "" $base -}}
+      {{- $fallbackBase := strings.TrimSuffix $fallbackExt $fallbackSrc -}}
+      {{- $fallbackDimensionBase := replaceRE "-[0-9]+$" "" $fallbackBase -}}
+      {{- range $widths -}}
+        {{- $targetWidth := int . -}}
+        {{- if or (eq $width 0) (le $targetWidth $width) -}}
+          {{- $webpCandidate := printf "%s-%dw.webp" $base $targetWidth -}}
+          {{- if fileExists (printf "static%s" $webpCandidate) -}}
+            {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webpCandidate $targetWidth) -}}
+          {{- else -}}
+            {{- $legacyWebp := printf "%s-%d.webp" $base $targetWidth -}}
+            {{- if fileExists (printf "static%s" $legacyWebp) -}}
+              {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $legacyWebp $targetWidth) -}}
+            {{- else if ne $dimensionBase $base -}}
+              {{- $dimensionWebp := printf "%s-%d.webp" $dimensionBase $targetWidth -}}
+              {{- if fileExists (printf "static%s" $dimensionWebp) -}}
+                {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $dimensionWebp $targetWidth) -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+
+          {{- $rasterCandidate := printf "%s-%dw%s" $fallbackBase $targetWidth $fallbackExt -}}
+          {{- if fileExists (printf "static%s" $rasterCandidate) -}}
+            {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $rasterCandidate $targetWidth) -}}
+          {{- else -}}
+            {{- $legacyRaster := printf "%s-%d%s" $fallbackBase $targetWidth $fallbackExt -}}
+            {{- if fileExists (printf "static%s" $legacyRaster) -}}
+              {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $legacyRaster $targetWidth) -}}
+            {{- else if ne $fallbackDimensionBase $fallbackBase -}}
+              {{- $dimensionRaster := printf "%s-%d%s" $fallbackDimensionBase $targetWidth $fallbackExt -}}
+              {{- if fileExists (printf "static%s" $dimensionRaster) -}}
+                {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $dimensionRaster $targetWidth) -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- if eq (len $webpSrcset) 0 -}}
+        {{- if eq $ext ".webp" -}}
+          {{- if gt $width 0 -}}
+            {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $src $width) -}}
+          {{- end -}}
+        {{- else -}}
+          {{- $pairWebp := printf "%s.webp" $base -}}
+          {{- if fileExists (printf "static%s" $pairWebp) -}}
+            {{- if gt $width 0 -}}
+              {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $pairWebp $width) -}}
+            {{- else -}}
+              {{- $webpSrcset = $webpSrcset | append $pairWebp -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- if and (eq (len $rasterSrcset) 0) (gt $width 0) -}}
+        {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $fallbackSrc $width) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if or (gt (len $webpSrcset) 0) (gt (len $rasterSrcset) 0) -}}
+<picture>
+  {{- if gt (len $webpSrcset) 0 }}
+  <source type="image/webp" srcset="{{ delimit $webpSrcset ", " }}" sizes="{{ $sizes }}" />
+  {{- end }}
+  <img src="{{ $fallbackSrc }}"
+    {{- if gt (len $rasterSrcset) 0 }} srcset="{{ delimit $rasterSrcset ", " }}" sizes="{{ $sizes }}"{{ end }}
+    alt="{{ $alt }}"
+    {{- with $title }} title="{{ . }}"{{ end }}
+    {{- with $class }} class="{{ . }}"{{ end }}
+    loading="{{ $loading }}"
+    decoding="{{ $decoding }}"
+    {{- if ne $fetchpriority "" }} fetchpriority="{{ $fetchpriority }}"{{ end }}
+    {{- if gt $width 0 }} width="{{ $width }}"{{ end }}
+    {{- if gt $height 0 }} height="{{ $height }}"{{ end }}
+  />
+</picture>
+    {{- else -}}
+<img src="{{ $src }}" alt="{{ $alt }}"
+  {{- with $title }} title="{{ . }}"{{ end }}
+  {{- with $class }} class="{{ . }}"{{ end }}
+  loading="{{ $loading }}"
+  decoding="{{ $decoding }}"
+  {{- if ne $fetchpriority "" }} fetchpriority="{{ $fetchpriority }}"{{ end }}
+  {{- if gt $width 0 }} width="{{ $width }}"{{ end }}
+  {{- if gt $height 0 }} height="{{ $height }}"{{ end }}
+/>
+    {{- end -}}
+  {{- else -}}
+<img src="{{ $src }}" alt="{{ $alt }}"
+  {{- with $title }} title="{{ . }}"{{ end }}
+  {{- with $class }} class="{{ . }}"{{ end }}
+  loading="{{ $loading }}"
+  decoding="{{ $decoding }}"
+  {{- if ne $fetchpriority "" }} fetchpriority="{{ $fetchpriority }}"{{ end }}
+  {{- if gt $explicitWidth 0 }} width="{{ $explicitWidth }}"{{ end }}
+  {{- if gt $explicitHeight 0 }} height="{{ $explicitHeight }}"{{ end }}
+/>
+  {{- end -}}
+{{- end -}}

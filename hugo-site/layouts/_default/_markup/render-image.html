@@ -41,5 +41,38 @@
     </picture>
   {{- end -}}
 {{- else -}}
-  <img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async" />
+  {{- if hasPrefix $src "/" -}}
+    {{- $imgWidth := 0 -}}
+    {{- $imgHeight := 0 -}}
+    {{- $imgExt := lower (path.Ext $src) -}}
+    {{- $diskPath := printf "static%s" $src -}}
+    {{- if and (not (fileExists $diskPath)) (hasPrefix $src "/articles/") -}}
+      {{- $diskPath = printf "content%s" $src -}}
+    {{- end -}}
+    {{- if and (fileExists $diskPath) (ne $imgExt ".svg") -}}
+      {{- with imageConfig $diskPath -}}
+        {{- $imgWidth = .Width -}}
+        {{- $imgHeight = .Height -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $sizeCap := 1200 -}}
+    {{- if and (gt $imgWidth 0) (lt $imgWidth $sizeCap) -}}
+      {{- $sizeCap = $imgWidth -}}
+    {{- end -}}
+    {{- $sizes := printf "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, %dpx" $sizeCap -}}
+    {{ partial "media/responsive-image.html" (dict
+      "page" $page
+      "src" $src
+      "alt" $alt
+      "title" .Title
+      "slot" "markdown_image"
+      "sizes" $sizes
+      "loading" "lazy"
+      "decoding" "async"
+      "width" $imgWidth
+      "height" $imgHeight
+    ) }}
+  {{- else -}}
+    <img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async" />
+  {{- end -}}
 {{- end -}}
