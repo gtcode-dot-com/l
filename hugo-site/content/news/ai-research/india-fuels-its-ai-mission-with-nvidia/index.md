@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T10:15:31.018149+00:00'
-exported_at: '2026-02-20T10:15:33.260253+00:00'
+date: '2026-03-02T02:39:16.462012+00:00'
+exported_at: '2026-03-02T02:39:20.332627+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: India Fuels Its AI Mission With NVIDIA
-updated_at: '2026-02-20T10:15:31.018149+00:00'
+updated_at: '2026-03-02T02:39:16.462012+00:00'
 url_hash: 39e99e011643a2e63c114a83ed7a3bec35241e70
 ---
 
@@ -115,7 +115,7 @@ Adopters in India of Nemotron — and
   . Training was conducted on NVIDIA H100 GPUs through NVIDIA Cloud Partners, including Yotta. With these sovereign models, Sarvam.ai’s new Pravah platform enables production-grade inference for Indian government and enterprise applications.
 * **Soket.ai**
   , which is using a modern large-model training stack on open NVIDIA Nemotron technologies, including NVIDIA Megatron and NVIDIA NeMo. These open source components enable scalable experimentation, training stability and efficient GPU usage, while preserving full control over the model’s data, design and life cycle.
-* **Tech Mahindra**
+* [**Tech Mahindra**](https://www.techmahindra.com/insights/news/techm-teams-nvidia-launch-cutting-edge-education-llm-under-project-indus/)
   , which has developed an 8-billion-parameter foundation model tailored for Indian languages and dialects. The model, built with Nemotron, is being designed for use in classrooms, where it can help make educational materials available in a wider range of Indian languages including Hindi, Maithili and Dogri. The team generated synthetic data with Nemotron libraries and tools such as
   [NeMo Data Designer](https://nvidia-nemo.github.io/DataDesigner/latest/)
   and conducted supervised fine-tuning with

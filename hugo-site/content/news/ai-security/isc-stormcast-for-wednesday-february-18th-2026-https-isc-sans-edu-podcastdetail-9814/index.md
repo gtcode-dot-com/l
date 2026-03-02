@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T14:15:23.003748+00:00'
-exported_at: '2026-02-20T14:15:25.184241+00:00'
+date: '2026-03-02T02:38:52.890678+00:00'
+exported_at: '2026-03-02T02:38:54.838000+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32724
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://isc.sans.edu/diary/rss/32724
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: ISC Stormcast For Wednesday, February 18th, 2026 https://isc.sans.edu/podcastdetail/9814,
   (Wed, Feb 18th)
-updated_at: '2026-02-20T14:15:23.003748+00:00'
+updated_at: '2026-03-02T02:38:52.890678+00:00'
 url_hash: 199c9588b2f08edc0c2a93983a915071ff276c88
 ---
 

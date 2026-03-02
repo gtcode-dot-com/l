@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T12:15:34.286010+00:00'
-exported_at: '2026-02-20T12:15:37.132235+00:00'
+date: '2026-03-02T02:39:17.175276+00:00'
+exported_at: '2026-03-02T02:39:20.327366+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/india-global-industrial-software-leaders-manufacturers-ai
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/india-global-industrial-software-leaders-manufacturers-ai
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: NVIDIA and Global Industrial Software Leaders Partner With India’s Largest
   Manufacturers to Drive AI Boom
-updated_at: '2026-02-20T12:15:34.286010+00:00'
+updated_at: '2026-03-02T02:39:17.175276+00:00'
 url_hash: 844793e957de94677d3aea3ead5e800c71bf5f22
 ---
 

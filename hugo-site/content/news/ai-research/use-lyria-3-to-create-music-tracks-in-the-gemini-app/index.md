@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T14:15:41.585505+00:00'
-exported_at: '2026-02-20T14:15:44.561751+00:00'
+date: '2026-03-02T02:39:19.056334+00:00'
+exported_at: '2026-03-02T02:39:20.279895+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'A new way to express yourself: Gemini can now create music'
-updated_at: '2026-02-20T14:15:41.585505+00:00'
+updated_at: '2026-03-02T02:39:19.056334+00:00'
 url_hash: 8fd7712afa193984936a764b60fc18599132fb0a
 ---
 

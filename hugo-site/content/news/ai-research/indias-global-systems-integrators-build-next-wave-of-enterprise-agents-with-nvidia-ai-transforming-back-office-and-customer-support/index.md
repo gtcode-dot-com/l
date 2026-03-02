@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T12:15:34.118681+00:00'
-exported_at: '2026-02-20T12:15:37.133819+00:00'
+date: '2026-03-02T02:39:16.835075+00:00'
+exported_at: '2026-03-02T02:39:20.330161+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/india-enterprise-ai-agents
@@ -27,10 +27,10 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/india-enterprise-ai-agents
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: India’s Global Systems Integrators Build Next Wave of Enterprise Agents With
   NVIDIA AI, Transforming Back Office and Customer Support
-updated_at: '2026-02-20T12:15:34.118681+00:00'
+updated_at: '2026-03-02T02:39:16.835075+00:00'
 url_hash: 9ebe52d86d123dc326b4ad8f2e99dc5f8bf1fce4
 ---
 

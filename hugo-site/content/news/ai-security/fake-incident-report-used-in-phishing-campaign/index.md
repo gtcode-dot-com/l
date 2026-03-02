@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T16:15:15.510863+00:00'
-exported_at: '2026-02-20T16:15:20.226446+00:00'
+date: '2026-03-02T02:38:53.631316+00:00'
+exported_at: '2026-03-02T02:38:54.832251+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32722
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://isc.sans.edu/diary/rss/32722
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Fake Incident Report Used in Phishing Campaign, (Tue, Feb 17th)
-updated_at: '2026-02-20T16:15:15.510863+00:00'
+updated_at: '2026-03-02T02:38:53.631316+00:00'
 url_hash: cbad33acdab8b4d591a903d52fc449cc7ce34940
 ---
 

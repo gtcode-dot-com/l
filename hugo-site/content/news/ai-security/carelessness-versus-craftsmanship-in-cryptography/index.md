@@ -7,19 +7,19 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T12:15:15.758591+00:00'
-exported_at: '2026-02-20T12:15:18.035531+00:00'
+date: '2026-03-02T02:38:50.061843+00:00'
+exported_at: '2026-03-02T02:38:54.846110+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2026/02/18/carelessness-versus-craftsmanship-in-cryptography
 structured_data:
   about: []
   author: ''
-  description: "\n                Two popular AES libraries (aes-js and pyaes) provide
-    dangerous default IVs that lead to key/IV reuse vulnerabilities affecting thousands
-    of projects. One maintainer dismissed the issue, while strongSwan's maintainer
-    exemplified proper security response by comprehensively fixing the vulnerability
-    in their VPN management tool.\n            "
+  description: Two popular AES libraries (aes-js and pyaes) provide dangerous default
+    IVs that lead to key/IV reuse vulnerabilities affecting thousands of projects.
+    One maintainer dismissed the issue, while strongSwan's maintainer exemplified
+    proper security response by comprehensively fixing the vulnerability in their
+    VPN managem...
   headline: Carelessness versus craftsmanship in cryptography
   inLanguage: en
   keywords: []
@@ -27,9 +27,9 @@ structured_data:
   original_source: https://blog.trailofbits.com/2026/02/18/carelessness-versus-craftsmanship-in-cryptography
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Carelessness versus craftsmanship in cryptography
-updated_at: '2026-02-20T12:15:15.758591+00:00'
+updated_at: '2026-03-02T02:38:50.061843+00:00'
 url_hash: 0250e42c79e3315c7f5cfb556bd85734ae11c6da
 ---
 

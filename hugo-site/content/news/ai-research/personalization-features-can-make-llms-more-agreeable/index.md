@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T14:15:40.615203+00:00'
-exported_at: '2026-02-20T14:15:44.564376+00:00'
+date: '2026-03-02T02:39:17.482573+00:00'
+exported_at: '2026-03-02T02:39:20.324638+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/personalization-features-can-make-llms-more-agreeable-0218
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://news.mit.edu/2026/personalization-features-can-make-llms-more-agreeable-0218
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Personalization features can make LLMs more agreeable
-updated_at: '2026-02-20T14:15:40.615203+00:00'
+updated_at: '2026-03-02T02:39:17.482573+00:00'
 url_hash: f3508d2e587208c3721c47e18debb29ebddb3523
 ---
 
