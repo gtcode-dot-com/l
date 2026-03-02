@@ -30,9 +30,10 @@ card_summary: "Multi-decade case study showing how legal, law-enforcement, and c
 # Open Graph
 og_title: "Institutional Decay in Hawaii: A Case Study in Systemic Protection"
 og_description: "Analysis of coordinated institutional failure across Hawaii's legal system, law enforcement, and oversight bodies."
-og_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
-og_image_width: 1024
-og_image_height: 1024
+og_image: "/img/ou-institutional-capture-og-1200x630.jpg"
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: "Illustration of interlocking corroded institutional gears turning without a central operator — representing symbiotic decay across Hawaii's judiciary, law enforcement, and private sector"
 og_type: "article"
 
 # Article metadata
@@ -49,7 +50,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Institutional Decay in Hawaii: A Case Study"
 twitter_description: "Multi-decade analysis of how Hawaii's institutions protect connected interests while neutralizing accountability."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+twitter_image: "/img/ou-institutional-capture-og-1200x630.jpg"
 twitter_image_alt: "Institutional Decay in Hawaii — case study in systemic protection"
 
 # Agentic Context
@@ -94,7 +95,7 @@ structured_data:
     "@id": "https://gtcode.com/investigation/hawaii-institutional-capture/"
   headline: "A Case Study in Systemic Protection: Institutional Decay in Hawaii"
   description: "Multi-decade case study of institutional capture in Hawaii"
-  image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+  image: "/img/ou-institutional-capture-og-1200x630.jpg"
   datePublished: "2025-08-13T00:00:00Z"
   author:
     "@type": "Person"

@@ -29,9 +29,10 @@ card_summary: "How a sitting judge allegedly committed a felony from the bench w
 # Open Graph
 og_title: "The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit"
 og_description: "An editorial account documenting how Judge Wilson Loo allegedly suborned perjury with a silent gesture and weaponized court procedure to bury the evidence."
-og_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
-og_image_width: 1024
-og_image_height: 1024
+og_image: "/img/ou-the-nod-og-1200x630.jpg"
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: "Minimalist illustration of a silhouetted profile making a subtle downward gesture with an interrupted audio waveform — representing the alleged courtroom felony committed through silence"
 og_type: "article"
 
 # Article metadata
@@ -49,7 +50,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit"
 twitter_description: "How a judge allegedly committed a federal felony from the bench with a silent nod, then sealed the record."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+twitter_image: "/img/ou-the-nod-og-1200x630.jpg"
 twitter_image_alt: "The Nod — editorial on Judge Wilson Loo's alleged courtroom felony"
 
 # Agentic Context
@@ -96,7 +97,7 @@ structured_data_graph:
       headline: "The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit"
       alternativeHeadline: "How a Judge Committed a Crime with a Gesture"
       description: "An editorial account documenting how Judge Wilson Loo allegedly suborned perjury with a silent gesture."
-      image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+      image: "/img/ou-the-nod-og-1200x630.jpg"
       datePublished: "2026-02-12T00:00:00Z"
       author:
         "@type": "Person"

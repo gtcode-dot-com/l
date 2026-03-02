@@ -2,16 +2,17 @@
 draft: false
 weight: 100
 title: "The Closed Loop"
-seo_title: "The Closed Loop — Investigative Series on Hawaii's Accountability Architecture"
-subtitle: "An investigative series mapping the structural impossibility of self-oversight in Hawaii"
-description: "The Closed Loop is an investigative series documenting how every branch of Hawaii government has built oversight systems controlled by the institutions they exist to oversee. From the judiciary to the executive branch, the architecture is the same: the overseer reports to the overseen."
+seo_title: "Hawaii Oversight Loop: CJC, Attorney General, SIPD"
+subtitle: "Series landing page on the Hawaii Commission on Judicial Conduct, Attorney General, SIPD, and structural accountability gaps"
+description: "Series map of Hawaii oversight and self-investigation focused on the Hawaii Commission on Judicial Conduct, Attorney General, SIPD, and accountability gaps."
 date: 2026-02-15
-lastmod: 2026-02-20
+lastmod: 2026-03-01
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 15, 2026"
-modified_display: "February 20, 2026"
+modified_display: "March 1, 2026"
 layout: "series"
+
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-closed-loop/"
@@ -19,25 +20,30 @@ robots: "index, follow, max-image-preview:large"
 meta_keywords:
   - "hawaii closed loop accountability"
   - "hawaii oversight failures"
-  - "hawaii corruption investigation"
   - "hawaii attorney general conflict"
   - "hawaii judicial conduct commission"
   - "hawaii SIPD"
   - "hawaii special prosecutor"
+  - "hawaii corruption investigation"
   - "hawaii institutional corruption"
   - "hawaii executive branch oversight"
   - "hawaii self-investigation"
+  - "hawaii commission on judicial conduct"
+  - "hawaii attorney general self-investigation"
+  - "hawaii special counsel bill sb2107"
+  - "amemiya v sapienza disqualification"
 
 # Card Display
 eyebrow: "Series"
-card_summary: "Every branch of Hawaii government has built an oversight mechanism controlled by the institution it exists to oversee. The overseer reports to the overseen. The loop is closed."
+card_summary: "Series overview mapping Hawaii oversight and self-investigation patterns across the Hawaii Commission on Judicial Conduct, Attorney General, and SIPD. The reporting focuses on structural accountability limits."
 
 # Open Graph
-og_title: "The Closed Loop — Hawaii's Architecture of Unaccountability"
-og_description: "An investigative series documenting how every branch of Hawaii government built oversight systems controlled by the institutions they exist to oversee."
-og_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+og_title: "Hawaii Oversight Loop: CJC, Attorney General, SIPD"
+og_description: "Public records map Hawaii oversight and self-investigation across the Hawaii Commission on Judicial Conduct, Attorney General, and SIPD accountability gaps."
+og_image: "/img/ou-closed-loop-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
+og_image_alt: "Illustration of an ouroboros serpent as an institutional seal with three segments representing judiciary, executive, and law enforcement — representing Hawaii's self-appointing oversight architecture"
 og_type: "article"
 
 # Article metadata
@@ -47,18 +53,21 @@ article_section: "Investigations"
 article_tags:
   - "Closed Loop"
   - "Hawaii"
+  - "Hawaii Commission on Judicial Conduct"
+  - "Attorney General"
+  - "SIPD"
+  - "Oversight"
+  - "Self-Investigation"
   - "Accountability"
   - "Series"
   - "Judicial Conduct"
-  - "Attorney General"
-  - "SIPD"
   - "Political Corruption"
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "The Closed Loop — Hawaii's Architecture of Unaccountability"
-twitter_description: "An investigative series documenting how every branch of Hawaii government built oversight systems controlled by the institutions they exist to oversee."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_title: "Hawaii Oversight Loop: CJC, Attorney General, SIPD"
+twitter_description: "Public records map Hawaii oversight and self-investigation across the Hawaii Commission on Judicial Conduct, Attorney General, and SIPD accountability gaps."
+twitter_image: "/img/ou-closed-loop-og-1200x630.jpg"
 twitter_image_alt: "The Closed Loop — investigative series on Hawaii institutional oversight"
 
 # Agentic Context
@@ -93,9 +102,11 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/the-closed-loop/"
       headline: "The Closed Loop"
       alternativeHeadline: "An investigative series mapping the structural impossibility of self-oversight in Hawaii"
-      description: "The Closed Loop is an investigative series documenting how every branch of Hawaii government has built oversight systems controlled by the institutions they exist to oversee."
-      image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+      description: "Series map of Hawaii oversight and self-investigation focused on the Hawaii Commission on Judicial Conduct, Attorney General, SIPD, and accountability gaps."
+      url: "https://gtcode.com/investigation/the-closed-loop/"
+      image: "/img/ou-closed-loop-og-1200x630.jpg"
       datePublished: "2026-02-15T00:00:00Z"
+      dateModified: "2026-03-01T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -110,21 +121,71 @@ structured_data_graph:
           width: 180
           height: 180
       articleSection: "Investigations"
-      keywords: "hawaii closed loop, hawaii accountability, hawaii oversight failures, hawaii corruption, hawaii institutional capture"
+      isPartOf:
+        "@type": "CollectionPage"
+        "@id": "https://gtcode.com/investigation/#collection"
+        name: "Oahu Underground Investigations"
+        url: "https://gtcode.com/investigation/"
+      about:
+        - "@type": "Organization"
+          name: "Hawaii Commission on Judicial Conduct"
+        - "@type": "GovernmentOrganization"
+          name: "Office of the Attorney General, State of Hawaii"
+        - "@type": "GovernmentOrganization"
+          name: "Special Investigation and Prosecution Division"
+        - "@type": "DefinedTerm"
+          name: "oversight"
+        - "@type": "DefinedTerm"
+          name: "self-investigation"
+        - "@type": "DefinedTerm"
+          name: "accountability"
+      mentions:
+        - "@type": "Organization"
+          name: "Supreme Court of Hawaii"
+        - "@type": "GovernmentOrganization"
+          name: "State of Hawaii"
+        - "@type": "GovernmentOrganization"
+          name: "Governor of Hawaii"
+        - "@type": "Legislation"
+          name: "HB 3056 (2008)"
+        - "@type": "Legislation"
+          name: "SB2107 (special counsel bill)"
+        - "@type": "LegalCase"
+          name: "Amemiya v. Sapienza (1981)"
+      keywords: "hawaii closed loop accountability, hawaii commission on judicial conduct, attorney general conflict, SIPD oversight, special counsel bill SB2107, special prosecutor, hawaii oversight failures, self-investigation, accountability architecture, amemiya v sapienza"
       hasPart:
         - "@type": "NewsArticle"
+          "@id": "https://gtcode.com/investigation/the-zero-commission/#newsarticle"
           name: "The Zero Commission"
+          headline: "The Zero Commission"
           url: "https://gtcode.com/investigation/the-zero-commission/"
+          datePublished: "2026-02-15T00:00:00Z"
+          dateModified: "2026-03-01T00:00:00Z"
           position: 1
         - "@type": "NewsArticle"
+          "@id": "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/#newsarticle"
           name: "The Paper Bag and the Architecture of Self-Investigation"
+          headline: "The Paper Bag and the Architecture of Self-Investigation"
           url: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
+          datePublished: "2026-02-20T00:00:00Z"
+          dateModified: "2026-03-01T00:00:00Z"
           position: 2
 ---
 
 Every branch of Hawaii government has built an oversight mechanism controlled by the institution it exists to oversee. The overseer is appointed by the overseen. Proceedings are sealed. Reform legislation dies in committee — killed by the entity it was designed to constrain. The variable changes. The architecture doesn't.
 
 This series maps the closed loops, branch by branch.
+
+---
+
+## Read Next
+
+- [Part I: The Zero Commission and the Hawaii Commission on Judicial Conduct](/investigation/the-zero-commission/)
+- [Part II: The Paper Bag and the Architecture of Self-Investigation](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/)
+- [The Federal Layer: Warren K.K. Luke and federal institutional overlap](/investigation/the-federal-layer/)
+- [The Architecture of Access: federal and PRC-facing series hub](/investigation/the-architecture-of-access/)
+- [The Two Questions: federal investigative roadmap in the Wilson M.N. Loo matter](/investigation/the-two-questions/)
+- [Hawaii Institutional Capture: systemic governance network analysis](/investigation/hawaii-institutional-capture/)
 
 ---
 
@@ -162,4 +223,4 @@ The Attorney General killed a special counsel bill in 2024, testifying that the 
 
 ---
 
-*The Closed Loop is an ongoing series. Future installments will examine law enforcement oversight, the Ethics Commission, and campaign finance enforcement. If you have information relevant to these investigations, contact the author at TheClosedLoop@GTCode.com.*
+*The Closed Loop is an ongoing series. Future installments will examine law enforcement oversight, the Ethics Commission, and campaign finance enforcement. If you have information relevant to these investigations, contact the author at [tips@GTCode.com](mailto:tips@gtcode.com).*

@@ -11,7 +11,8 @@
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
 
-{{- $investigationPagesAll := sort (where (where .Site.RegularPages "Section" "investigation") "Params.homepage_exclude" "ne" true) "Date" "desc" -}}
+{{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Section" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
+{{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationCount := len $investigationPages -}}
@@ -339,109 +340,117 @@
           </div>
           <p class="ou-consulting-actions">
             <a class="ou-featured-article-link" href="{{ $consultingURL }}">Open the consulting brief &rarr;</a>
-            <a class="ou-featured-article-link" href="mailto:{{ $contactEmail }}">Email {{ $contactEmail }} &rarr;</a>
+            <a class="ou-featured-article-link" href="mailto:{{ $contactEmail }}">Email Inquire@GTCode.com &rarr;</a>
           </p>
         </div>
       </section>
 
-      <!-- Lead Investigation -->
-      {{ if $lead }}
-      {{ $leadUpdated := $lead.Lastmod }}
-      {{ if $leadUpdated.IsZero }}{{ $leadUpdated = $lead.Date }}{{ end }}
-      {{ $leadSummary := $lead.Params.card_summary | default $lead.Description }}
-      {{ if eq (strings.TrimSpace $leadSummary) "" }}{{ $leadSummary = $lead.Summary | plainify | truncate 260 }}{{ end }}
-      <section class="ou-section ou-featured-article" id="lead-investigation">
-        <div class="ou-featured-article-image">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="/img/ou-shape-of-the-cage-hero-960.webp 960w, /img/ou-shape-of-the-cage-hero-1600.webp 1600w, /img/ou-shape-of-the-cage-hero-2400.webp 2400w"
-              sizes="100vw"
-            />
-            <img
-              src="/img/ou-shape-of-the-cage-hero-1600.jpg"
-              alt="The Shape of the Cage — structural analysis of networked coercion"
-              width="1600"
-              height="475"
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
-        </div>
-        <div class="ou-section-inner">
-          <p class="ou-section-label">Lead Investigation</p>
-          <h2 class="ou-featured-article-title">
-            <a href="{{ $lead.RelPermalink }}">{{ $lead.Title }}</a>
-          </h2>
-          {{ with $lead.Params.subtitle }}
-          <p class="ou-featured-article-subtitle">{{ . }}</p>
-          {{ end }}
-          <p class="ou-featured-article-excerpt">{{ $leadSummary }}</p>
-          <p class="ou-featured-article-meta">
-            <span>Published {{ $lead.Date.Format "January 2, 2006" }}</span>
-            <span aria-hidden="true">&bull;</span>
-            <span>Updated {{ $leadUpdated.Format "January 2, 2006" }}</span>
-          </p>
-          <a class="ou-featured-article-link" href="{{ $lead.RelPermalink }}">Read the investigation &rarr;</a>
-        </div>
-      </section>
-      {{ end }}
+      <!-- Featured Investigations — side-by-side image + text -->
+      <section class="ou-section" id="featured-investigations">
+        <div class="ou-section-wide">
 
-      <!-- Featured Dispatch (opt-in) -->
-      {{ if $dispatch }}
-      {{ $dispatchSummary := $dispatch.Params.card_summary | default $dispatch.Description }}
-      {{ if eq (strings.TrimSpace $dispatchSummary) "" }}{{ $dispatchSummary = $dispatch.Summary | plainify | truncate 220 }}{{ end }}
-      <section class="ou-section ou-dispatch" id="dispatch">
-        <div class="ou-section-inner">
-          <p class="ou-section-label">Featured Dispatch</p>
-          <h2 class="ou-section-heading">{{ $dispatch.Title }}</h2>
-          <p class="ou-section-body">{{ $dispatchSummary }}</p>
-          <div class="ou-dispatch-actions">
-            <a class="ou-featured-article-link" href="{{ $dispatch.RelPermalink }}">Read the dispatch &rarr;</a>
-            <a class="ou-featured-article-link" href="/investigation/">Browse all investigations &rarr;</a>
-          </div>
-        </div>
-      </section>
-      {{ end }}
-
-      <!-- Prosecution Roadmap -->
-      {{ if $twoQuestions }}
-      {{ $tqSummary := $twoQuestions.Params.card_summary | default $twoQuestions.Description }}
-      {{ if eq (strings.TrimSpace $tqSummary) "" }}{{ $tqSummary = $twoQuestions.Summary | plainify | truncate 220 }}{{ end }}
-      <section class="ou-section ou-roadmap" id="prosecution-roadmap">
-        <div class="ou-section-inner">
-          <p class="ou-section-label">{{ $twoQuestions.Params.eyebrow | default "Prosecution Roadmap" }}</p>
-          <h2 class="ou-section-heading">{{ $twoQuestions.Title }}</h2>
-          {{ with $twoQuestions.Params.subtitle }}
-          <p class="ou-featured-article-subtitle">{{ . }}</p>
+          {{/* Lead Investigation */}}
+          {{ if $lead }}
+          {{ $leadUpdated := $lead.Lastmod }}
+          {{ if $leadUpdated.IsZero }}{{ $leadUpdated = $lead.Date }}{{ end }}
+          {{ $leadSummary := $lead.Params.card_summary | default $lead.Description }}
+          {{ if eq (strings.TrimSpace $leadSummary) "" }}{{ $leadSummary = $lead.Summary | plainify | truncate 260 }}{{ end }}
+          <article class="ou-feature-row" id="lead-investigation">
+            {{ with $lead.Params.og_image }}
+            <a href="{{ $lead.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
+              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+            </a>
+            {{ end }}
+            <div class="ou-feature-row-body">
+              <p class="ou-section-label">Lead Investigation</p>
+              <h2 class="ou-feature-row-title">
+                <a href="{{ $lead.RelPermalink }}">{{ $lead.Title }}</a>
+              </h2>
+              {{ with $lead.Params.subtitle }}
+              <p class="ou-feature-row-subtitle">{{ . }}</p>
+              {{ end }}
+              <p class="ou-feature-row-text">{{ $leadSummary }}</p>
+              <p class="ou-feature-row-meta">
+                <span>Published {{ $lead.Date.Format "January 2, 2006" }}</span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Updated {{ $leadUpdated.Format "January 2, 2006" }}</span>
+              </p>
+              <a class="ou-featured-article-link" href="{{ $lead.RelPermalink }}">Read the investigation &rarr;</a>
+            </div>
+          </article>
           {{ end }}
-          <p class="ou-section-body">{{ $tqSummary }}</p>
-          <div class="ou-roadmap-actions">
-            <a class="ou-featured-article-link" href="{{ $twoQuestions.RelPermalink }}">Read the roadmap &rarr;</a>
-            <a class="ou-featured-article-link" href="/investigation/">Browse all investigations &rarr;</a>
-          </div>
-        </div>
-      </section>
-      {{ end }}
 
-      <!-- Publisher's Note Summary -->
-      {{ if $carto }}
-      {{ $cartoSummary := $carto.Params.card_summary | default $carto.Description }}
-      {{ if eq (strings.TrimSpace $cartoSummary) "" }}{{ $cartoSummary = $carto.Summary | plainify | truncate 220 }}{{ end }}
-      <section class="ou-section ou-section--alt" id="publishers-note">
-        <div class="ou-section-inner">
-          <p class="ou-section-label">Publisher's Note</p>
-          <h2 class="ou-section-heading">{{ $carto.Title }}</h2>
-          {{ with $carto.Params.subtitle }}
-          <p class="ou-featured-article-subtitle">{{ . }}</p>
+          {{/* Featured Dispatch */}}
+          {{ if $dispatch }}
+          {{ $dispatchSummary := $dispatch.Params.card_summary | default $dispatch.Description }}
+          {{ if eq (strings.TrimSpace $dispatchSummary) "" }}{{ $dispatchSummary = $dispatch.Summary | plainify | truncate 220 }}{{ end }}
+          <article class="ou-feature-row" id="dispatch">
+            {{ with $dispatch.Params.og_image }}
+            <a href="{{ $dispatch.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
+              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+            </a>
+            {{ end }}
+            <div class="ou-feature-row-body">
+              <p class="ou-section-label">Featured Dispatch</p>
+              <h2 class="ou-feature-row-title">
+                <a href="{{ $dispatch.RelPermalink }}">{{ $dispatch.Title }}</a>
+              </h2>
+              <p class="ou-feature-row-text">{{ $dispatchSummary }}</p>
+              <a class="ou-featured-article-link" href="{{ $dispatch.RelPermalink }}">Read the dispatch &rarr;</a>
+            </div>
+          </article>
           {{ end }}
-          <div class="ou-section-body">
-            <p>{{ $cartoSummary }}</p>
-          </div>
-          <a class="ou-featured-article-link" href="{{ $carto.RelPermalink }}">Read the full note &rarr;</a>
+
+          {{/* Prosecution Roadmap */}}
+          {{ if $twoQuestions }}
+          {{ $tqSummary := $twoQuestions.Params.card_summary | default $twoQuestions.Description }}
+          {{ if eq (strings.TrimSpace $tqSummary) "" }}{{ $tqSummary = $twoQuestions.Summary | plainify | truncate 220 }}{{ end }}
+          <article class="ou-feature-row" id="prosecution-roadmap">
+            {{ with $twoQuestions.Params.og_image }}
+            <a href="{{ $twoQuestions.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
+              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+            </a>
+            {{ end }}
+            <div class="ou-feature-row-body">
+              <p class="ou-section-label">{{ $twoQuestions.Params.eyebrow | default "Prosecution Roadmap" }}</p>
+              <h2 class="ou-feature-row-title">
+                <a href="{{ $twoQuestions.RelPermalink }}">{{ $twoQuestions.Title }}</a>
+              </h2>
+              {{ with $twoQuestions.Params.subtitle }}
+              <p class="ou-feature-row-subtitle">{{ . }}</p>
+              {{ end }}
+              <p class="ou-feature-row-text">{{ $tqSummary }}</p>
+              <a class="ou-featured-article-link" href="{{ $twoQuestions.RelPermalink }}">Read the roadmap &rarr;</a>
+            </div>
+          </article>
+          {{ end }}
+
+          {{/* Publisher's Note */}}
+          {{ if $carto }}
+          {{ $cartoSummary := $carto.Params.card_summary | default $carto.Description }}
+          {{ if eq (strings.TrimSpace $cartoSummary) "" }}{{ $cartoSummary = $carto.Summary | plainify | truncate 220 }}{{ end }}
+          <article class="ou-feature-row" id="publishers-note">
+            {{ with $carto.Params.og_image }}
+            <a href="{{ $carto.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
+              <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+            </a>
+            {{ end }}
+            <div class="ou-feature-row-body">
+              <p class="ou-section-label">Publisher's Note</p>
+              <h2 class="ou-feature-row-title">
+                <a href="{{ $carto.RelPermalink }}">{{ $carto.Title }}</a>
+              </h2>
+              {{ with $carto.Params.subtitle }}
+              <p class="ou-feature-row-subtitle">{{ . }}</p>
+              {{ end }}
+              <p class="ou-feature-row-text">{{ $cartoSummary }}</p>
+              <a class="ou-featured-article-link" href="{{ $carto.RelPermalink }}">Read the full note &rarr;</a>
+            </div>
+          </article>
+          {{ end }}
+
         </div>
       </section>
-      {{ end }}
 
       <!-- Investigation Archive -->
       {{- $featuredPaths := slice -}}
@@ -449,11 +458,55 @@
       {{- if $dispatch }}{{ $featuredPaths = $featuredPaths | append $dispatch.RelPermalink }}{{ end -}}
       {{- if $twoQuestions }}{{ $featuredPaths = $featuredPaths | append $twoQuestions.RelPermalink }}{{ end -}}
       {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
+
+      {{/* Also exclude Closed Loop series members — they get their own showcase */}}
+      {{- $closedLoopSeries := .Site.GetPage "/investigation/the-closed-loop" -}}
+      {{- $closedLoopMembers := slice -}}
+      {{- if $closedLoopSeries -}}
+        {{- $featuredPaths = $featuredPaths | append $closedLoopSeries.RelPermalink -}}
+        {{- range where $.Site.RegularPages "Params.series" "The Closed Loop" -}}
+          {{- $closedLoopMembers = $closedLoopMembers | append . -}}
+          {{- $featuredPaths = $featuredPaths | append .RelPermalink -}}
+        {{- end -}}
+        {{- $closedLoopMembers = sort $closedLoopMembers "Params.series_part" "asc" -}}
+      {{- end -}}
+
       {{- $archivePages := where $investigationPages ".RelPermalink" "not in" $featuredPaths -}}
       <section class="ou-section" id="investigations">
         <div class="ou-section-wide">
           <p class="ou-section-label">On the Record</p>
           <h2 class="ou-section-heading">Investigations</h2>
+
+          {{/* Closed Loop series showcase — horizontal layout like publisher's note */}}
+          {{ if $closedLoopSeries }}
+          <div class="ou-hp-series-banner">
+            <div class="ou-hp-series-banner-left">
+              <div class="ou-publisher-note-badge">Series</div>
+              <h3 class="ou-publisher-note-title" style="font-style:normal">
+                <a href="{{ $closedLoopSeries.RelPermalink }}" style="color:inherit;text-decoration:none">{{ $closedLoopSeries.Title }}</a>
+              </h3>
+            </div>
+            <div class="ou-hp-series-banner-right">
+              {{ with $closedLoopSeries.Params.card_summary }}
+              <p class="ou-publisher-note-text">{{ . }}</p>
+              {{ end }}
+              {{ if $closedLoopMembers }}
+              <ol class="ou-hp-series-banner-parts">
+                {{ range $closedLoopMembers }}
+                <li>
+                  <a href="{{ .RelPermalink }}">
+                    <span class="ou-series-block-part">{{ .Params.series_part }}</span>
+                    <span class="ou-series-block-part-title">{{ .Title }}</span>
+                  </a>
+                </li>
+                {{ end }}
+              </ol>
+              {{ end }}
+              <a class="ou-card-link" href="{{ $closedLoopSeries.RelPermalink }}" aria-label="Read series: The Closed Loop">Read series &rarr;</a>
+            </div>
+          </div>
+          {{ end }}
+
           <div class="ou-cards">
             {{ range $idx, $page := first 8 $archivePages }}
             {{ $updated := $page.Lastmod }}
@@ -461,7 +514,11 @@
             {{ $summary := $page.Params.card_summary | default $page.Description }}
             {{ if eq (strings.TrimSpace $summary) "" }}{{ $summary = $page.Summary | plainify | truncate 210 }}{{ end }}
             <article class="ou-card">
-              <div class="ou-card-numeral">{{ printf "%02d" (add $idx 1) }}</div>
+              {{ with $page.Params.og_image }}
+              <figure class="ou-card-thumb">
+                <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+              </figure>
+              {{ end }}
               {{ if $page.Params.series_url }}
               <p class="ou-card-kicker"><a href="{{ $page.Params.series_url }}" class="ou-card-kicker-link">{{ $page.Params.eyebrow | default "Investigative File" }}</a></p>
               {{ else }}
@@ -565,7 +622,7 @@
           <div class="ou-section-body">
             <p>If you have documents, first-hand knowledge, or information relevant to institutional misconduct in Hawaii, we want to hear from you. All inquiries are treated as confidential.</p>
           </div>
-          <a class="ou-contact-email" href="mailto:{{ $tipsEmail }}">{{ $tipsEmail }}</a>
+          <a class="ou-contact-email" href="mailto:{{ $tipsEmail }}">tips@GTCode.com</a>
           <p class="ou-contact-note">Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.</p>
         </div>
       </section>
@@ -630,6 +687,7 @@
             <li><a href="/articles/">Articles</a></li>
             <li><a href="/news/">News Wire</a></li>
             <li><a href="/policies/editorial-standards/">Editorial Standards</a></li>
+            <li><a href="/policies/corrections-policy/">Corrections Policy</a></li>
           </ul>
         </div>
       </div>

@@ -2,6 +2,7 @@
 title: "AI & LLM Policies"
 description: "Guidelines and policies for AI agents, LLMs, and automated systems accessing GTCode.com"
 type: "policies"
+robots: "noindex, follow"
 outputs: ["HTML", "Markdown"]
 ---
 

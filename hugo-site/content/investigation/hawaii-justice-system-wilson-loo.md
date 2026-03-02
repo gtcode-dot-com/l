@@ -30,9 +30,10 @@ card_summary: "Investigation into alleged suborning of perjury by Judge Wilson L
 # Open Graph
 og_title: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption"
 og_description: "A detailed report on how Judge Wilson Loo allegedly used his insider knowledge to suborn perjury and evade accountability via a systemic 'corruption loophole'."
-og_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
-og_image_width: 1024
-og_image_height: 1024
+og_image: "/img/ou-judicial-probe-og-1200x630.jpg"
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: "Illustration of broken scales of justice with a nearly-expired hourglass and a revolving door — representing the 90-day jurisdictional loophole exploited to evade judicial accountability"
 og_type: "article"
 
 # Article metadata
@@ -49,7 +50,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption in Hawaii"
 twitter_description: "Detailed investigative report documenting alleged judicial misconduct, systemic corruption, and calls for federal review in Hawaii."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+twitter_image: "/img/ou-judicial-probe-og-1200x630.jpg"
 twitter_image_alt: "Investigative report cover art highlighting the Wilson Loo case"
 
 # Agentic Comment
@@ -82,7 +83,7 @@ structured_data_graph:
       headline: "Wilson Loo: Investigation into Suborning Perjury & Judicial Corruption in Hawaii"
       alternativeHeadline: "Hawaii's Justice System Under Scrutiny"
       description: "Investigative report exposing alleged judicial misconduct and systemic failures"
-      image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+      image: "/img/ou-judicial-probe-og-1200x630.jpg"
       datePublished: "2025-06-12T00:00:00Z"
       author:
         "@type": "Person"

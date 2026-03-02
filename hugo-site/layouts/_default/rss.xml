@@ -42,9 +42,9 @@
         {{ $rssDesc := "" }}
         {{ with .Description }}{{ $rssDesc = . }}{{ end }}
         {{ if eq $rssDesc "" }}{{ with .Params.meta_description }}{{ $rssDesc = . }}{{ end }}{{ end }}
-        {{ if eq $rssDesc "" }}{{ with .Summary }}{{ $rssDesc = . | plainify | truncate 300 }}{{ end }}{{ end }}
-        <description>{{ $rssDesc | html }}</description>
-        <content:encoded><![CDATA[{{ .Content }}]]></content:encoded>
+        {{ if eq $rssDesc "" }}{{ with .Summary }}{{ $rssDesc = . | plainify | htmlUnescape | truncate 300 }}{{ end }}{{ end }}
+        <description>{{ htmlEscape $rssDesc }}</description>
+        <content:encoded>{{ printf "<![CDATA[%s]]>" (replace .Content "]]>" "]]]]><![CDATA[>") | safeHTML }}</content:encoded>
       </item>
     {{- end }}
   </channel>

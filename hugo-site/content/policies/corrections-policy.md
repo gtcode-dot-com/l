@@ -23,4 +23,4 @@ Include the page URL, the specific statement in question, and supporting evidenc
 
 ## Contact
 
-Send correction requests to tips@gtcode.com with subject line: `Correction Request`.
+Send correction requests to [tips@GTCode.com](mailto:tips@gtcode.com) with subject line: `Correction Request`.

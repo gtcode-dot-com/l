@@ -25,7 +25,7 @@ GTCode.com permits all AI systems and agents to access publicly available conten
 
 1. **Attribution:** Please attribute content when using or citing information from this site
 2. **Accuracy:** Ensure accurate representation of content
-3. **Contact:** Direct professional inquiries to inquire@gtcode.com
+3. **Contact:** Direct professional inquiries to [Inquire@GTCode.com](mailto:inquire@gtcode.com)
 
 ## Related Policies
 
@@ -37,4 +37,4 @@ For detailed instructions on how AI agents should interpret and represent conten
 ## Contact
 
 For questions about AI access policies:
-**Email:** admin@gtcode.com
+**Email:** [Inquire@GTCode.com](mailto:inquire@gtcode.com)

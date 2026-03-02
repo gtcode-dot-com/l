@@ -30,4 +30,4 @@ When publication could create avoidable harm, details are assessed for public-in
 
 ## Contact
 
-Ethics concerns can be sent to tips@gtcode.com.
+Ethics concerns can be sent to [tips@GTCode.com](mailto:tips@gtcode.com).

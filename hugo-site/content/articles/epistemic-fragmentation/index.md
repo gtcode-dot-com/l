@@ -67,7 +67,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Epistemic Fragmentation in Multi-Model AI Systems"
 twitter_description: "The challenge of synthesizing divergent knowledge claims when different AI models produce conflicting outputs."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/gtcode_mahalo_1200x630.jpg"
 twitter_image_alt: "Epistemic Fragmentation — GTCode article on multi-model AI disagreement"
 
 sitemap:

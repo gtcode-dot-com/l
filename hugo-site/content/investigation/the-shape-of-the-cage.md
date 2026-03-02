@@ -36,6 +36,7 @@ og_description: "A structural model of how individuals are neutralized without c
 og_image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
+og_image_alt: "Illustration of an institutional cage structure representing the documented pattern of systemic protection in Hawaii's justice system"
 og_type: "article"
 
 # Article metadata

@@ -32,7 +32,101 @@
   </article>
   {{ end }}
 
-  {{/* Investigation Cards */}}
+  {{/* ── Publisher's Note ── */}}
+  {{ range where .Pages "Params.eyebrow" "Publisher's Note" }}
+  <section class="ou-section ou-publisher-note-section">
+    <div class="ou-section-wide">
+      <article class="ou-publisher-note">
+        <div class="ou-publisher-note-left">
+          <div class="ou-publisher-note-badge">Publisher&rsquo;s Note</div>
+          <h2 class="ou-publisher-note-title">{{ .Title }}</h2>
+        </div>
+        <div class="ou-publisher-note-right">
+          {{ with .Params.card_summary }}
+          <p class="ou-publisher-note-text">{{ . }}</p>
+          {{ else with .Summary }}
+          <p class="ou-publisher-note-text">{{ . }}</p>
+          {{ end }}
+          <a class="ou-card-link" href="{{ .RelPermalink }}" aria-label="Read the note: {{ .Title }}">Read the note &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Hero Image — below publisher's note */}}
+  {{ with .Params.og_image }}
+  <div class="ou-list-hero">
+    <div class="ou-section-inner">
+      <figure class="ou-list-hero-fig">
+        <img src="{{ . }}" alt="Oahu Underground Investigations" width="1200" height="630" loading="eager">
+      </figure>
+    </div>
+  </div>
+  {{ end }}
+
+  {{/* ── Multi-Part Series ── */}}
+  {{ $seriesPages := where .Pages "Layout" "series" }}
+  {{ if $seriesPages }}
+  <section class="ou-section">
+    <div class="ou-section-wide">
+      <p class="ou-section-label">Multi-Part Series</p>
+      <h2 class="ou-section-heading">In-Depth Investigations</h2>
+
+      <div class="ou-series-showcase">
+        {{ range $seriesPages }}
+        {{ $seriesName := .Title }}
+        {{ $seriesURL := .RelPermalink }}
+        {{ $parts := where (where $.Site.RegularPages "Params.series" $seriesName) "Layout" "!=" "series" }}
+        {{ $parts = sort $parts "Params.series_part" "asc" }}
+        <article class="ou-series-block">
+          {{ with .Params.og_image }}
+          <figure class="ou-series-block-thumb">
+            <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+          </figure>
+          {{ end }}
+          <div class="ou-series-block-badge">Series</div>
+          <h3 class="ou-series-block-title">
+            <a href="{{ $seriesURL }}">{{ $seriesName }}</a>
+          </h3>
+          {{ with .Params.card_summary }}
+          <p class="ou-series-block-desc">{{ . }}</p>
+          {{ else with .Params.subtitle }}
+          <p class="ou-series-block-desc">{{ . }}</p>
+          {{ end }}
+          {{ if $parts }}
+          <ol class="ou-series-block-parts">
+            {{ range $parts }}
+            <li>
+              <a href="{{ .RelPermalink }}">
+                <span class="ou-series-block-part">{{ .Params.series_part }}</span>
+                <span class="ou-series-block-part-title">{{ .Title }}</span>
+              </a>
+            </li>
+            {{ end }}
+          </ol>
+          {{ end }}
+          <a class="ou-card-link" href="{{ $seriesURL }}" aria-label="Read series: {{ $seriesName }}">Read series &rarr;</a>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ── Standalone Investigation Cards ── */}}
+  {{/* Exclude: Publisher's Note, series landing pages, series member articles */}}
+  {{ $seriesMembers := slice }}
+  {{ range where .Pages "Layout" "series" }}
+    {{ $name := .Title }}
+    {{ range where $.Site.RegularPages "Params.series" $name }}
+      {{ $seriesMembers = $seriesMembers | append .File.Path }}
+    {{ end }}
+  {{ end }}
+
+  {{ $standalone := where .Pages "Layout" "!=" "series" }}
+  {{ $standalone = where $standalone "Params.eyebrow" "!=" "Publisher's Note" }}
+
   <section class="ou-section">
     <div class="ou-section-wide">
       {{ with .Params.grid_eyebrow }}
@@ -48,8 +142,14 @@
       {{ end }}
 
       <div class="ou-cards">
-        {{ range .Pages }}
+        {{ range $standalone }}
+          {{ if not (in $seriesMembers .File.Path) }}
         <article class="ou-card">
+          {{ with .Params.og_image }}
+          <figure class="ou-card-thumb">
+            <img src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+          </figure>
+          {{ end }}
           {{ if .Params.series_url }}
           <a href="{{ .Params.series_url }}" class="ou-card-icon ou-card-icon-link">{{ .Params.eyebrow | default "Investigative File" }}</a>
           {{ else if .Params.eyebrow }}
@@ -63,6 +163,7 @@
           {{ end }}
           <a class="ou-card-link" href="{{ .RelPermalink }}" aria-label="Read the report: {{ .Title }}">Read the report &rarr;</a>
         </article>
+          {{ end }}
         {{ end }}
       </div>
     </div>

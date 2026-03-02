@@ -28,9 +28,10 @@ card_summary: "[Archived] This article has been superseded by the records-first 
 # Open Graph
 og_title: "Exhibit A: Federal Intervention in Hawaii"
 og_description: "[Archived] Superseded by the records-first investigation series."
-og_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
-og_image_width: 1024
-og_image_height: 1024
+og_image: "/img/ou-exhibit-a-og-1200x630.jpg"
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: "Illustration of a redacted legal document marked as archived with successor investigation branches radiating outward — representing the retired RICO framework superseded by evidence-based reporting"
 og_type: "article"
 
 # Article metadata
@@ -47,7 +48,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Exhibit A: A Prosecutor's Argument for Federal Intervention"
 twitter_description: "[Archived] Superseded by the records-first investigation series."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+twitter_image: "/img/ou-exhibit-a-og-1200x630.jpg"
 twitter_image_alt: "Exhibit A — federal intervention argument for Hawaii institutional capture"
 
 # Agentic Context
@@ -76,7 +77,7 @@ structured_data:
     "@id": "https://gtcode.com/investigation/exhibit-a-federal-intervention-hawaii/"
   headline: "Exhibit A: Federal Intervention in Hawaii [Archived]"
   description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/investigation/."
-  image: "https://gtcode.com/img/gtcode_mahalo.jpg"
+  image: "/img/ou-exhibit-a-og-1200x630.jpg"
   datePublished: "2025-08-20T00:00:00Z"
   author:
     "@type": "Person"

@@ -2,27 +2,29 @@
 draft: false
 weight: 9
 title: "The Paper Bag and the Architecture of Self-Investigation"
-seo_title: "The Paper Bag — Hawaii AG Conflict of Interest in the $35K Bribery Scandal"
-subtitle: "How Hawaii's Attorney General Killed the Tool She Now Says Doesn't Exist"
-description: "Hawaii's AG opposed a special counsel bill in 2024 saying she already had the power. In 2026, investigating her own boss, she claims no such power exists. An investigation into the structural impossibility of executive branch self-investigation."
+seo_title: "Hawaii AG, SB2107, and SIPD: The Paper Bag Inquiry"
+subtitle: "Closed Loop Part II on special counsel authority and executive self-investigation limits"
+description: "Public records compare AG testimony on SB2107 with later statements in the $35,000 paper bag inquiry and map executive-branch self-investigation limits."
 date: 2026-02-20
-lastmod: 2026-02-20
+lastmod: 2026-03-01
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 20, 2026"
+modified_display: "March 1, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
-  - "sylvia luke bribery hawaii"
-  - "anne lopez conflict of interest"
   - "hawaii attorney general special prosecutor"
+  - "anne lopez conflict of interest"
+  - "sb2107 special counsel hawaii"
   - "hawaii SIPD public corruption"
+  - "amemiya v sapienza"
   - "35000 paper bag hawaii"
+  - "sylvia luke bribery hawaii"
   - "hawaii political corruption"
   - "hawaii closed loop accountability"
-  - "amemiya v sapienza"
   - "hawaii executive branch corruption"
   - "hawaii special prosecutor"
 
@@ -34,14 +36,15 @@ series_part_title: "The Executive Branch"
 
 # Card Display
 eyebrow: "The Closed Loop"
-card_summary: "The AG opposed a special counsel bill in 2024, saying the power already existed. In 2026, asked to investigate her own boss, she says no such power exists. The bill is dead — killed by her own testimony. The loop is closed."
+card_summary: "Public records compare 2024 and 2026 Attorney General statements on special counsel authority and map the structural limits of executive-branch self-investigation in Hawaii."
 
 # Open Graph
-og_title: "The Paper Bag and the Architecture of Self-Investigation — Hawaii AG Conflict"
-og_description: "Hawaii's AG killed a special counsel bill in 2024, then claimed no such mechanism exists when asked to investigate her own boss. Zero political corruption prosecutions in four years. The closed loop continues."
-og_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+og_title: "Hawaii AG, SB2107, and SIPD: The Paper Bag Inquiry"
+og_description: "Public records compare AG testimony on SB2107 with later statements in the $35,000 paper bag inquiry and map executive-branch self-investigation limits."
+og_image: "/img/ou-paper-bag-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
+og_image_alt: "Illustration of a brown paper bag on a dark surface with architectural blueprints radiating outward and a doorway being bricked shut — representing the AG's contradictory positions on special counsel authority"
 og_type: "article"
 
 # Article metadata
@@ -64,9 +67,9 @@ article_tags:
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "The Paper Bag and the Architecture of Self-Investigation"
-twitter_description: "Hawaii's AG killed the special counsel bill in 2024, then claimed no such power exists when investigating her own boss. Zero political corruption prosecutions in four years."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_title: "Hawaii AG, SB2107, and SIPD: The Paper Bag Inquiry"
+twitter_description: "Public records compare AG testimony on SB2107 with later statements in the $35,000 paper bag inquiry and map executive-branch self-investigation limits."
+twitter_image: "/img/ou-paper-bag-og-1200x630.jpg"
 twitter_image_alt: "The Paper Bag and the Architecture of Self-Investigation — Closed Loop Part II"
 
 # Agentic Context
@@ -108,9 +111,11 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
       headline: "The Paper Bag and the Architecture of Self-Investigation"
       alternativeHeadline: "How Hawaii's Attorney General Killed the Tool She Now Says Doesn't Exist"
-      description: "Hawaii's AG opposed a special counsel bill in 2024 saying she already had the power. In 2026, investigating her own boss, she claims no such power exists. An investigation into the structural impossibility of executive branch self-investigation."
-      image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+      description: "Public records compare AG testimony on SB2107 with later statements in the $35,000 paper bag inquiry and map executive-branch self-investigation limits."
+      url: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
+      image: "/img/ou-paper-bag-og-1200x630.jpg"
       datePublished: "2026-02-20T00:00:00Z"
+      dateModified: "2026-03-01T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -125,7 +130,36 @@ structured_data_graph:
           width: 180
           height: 180
       articleSection: "Investigations"
-      keywords: "sylvia luke bribery hawaii, anne lopez conflict of interest, hawaii attorney general special prosecutor, hawaii SIPD public corruption, amemiya v sapienza, hawaii political corruption, hawaii closed loop accountability"
+      isPartOf:
+        - "@type": "CollectionPage"
+          "@id": "https://gtcode.com/investigation/#collection"
+          name: "Oahu Underground Investigations"
+          url: "https://gtcode.com/investigation/"
+        - "@type": "Article"
+          "@id": "https://gtcode.com/investigation/the-closed-loop/#article"
+          name: "The Closed Loop"
+          url: "https://gtcode.com/investigation/the-closed-loop/"
+      about:
+        - "@type": "Person"
+          name: "Anne Lopez"
+        - "@type": "Person"
+          name: "Sylvia Luke"
+        - "@type": "GovernmentOrganization"
+          name: "Office of the Attorney General, State of Hawaii"
+        - "@type": "GovernmentOrganization"
+          name: "Special Investigation and Prosecution Division"
+        - "@type": "DefinedTerm"
+          name: "self-investigation"
+      mentions:
+        - "@type": "Legislation"
+          name: "SB2107 (special counsel bill)"
+        - "@type": "Legislation"
+          name: "HRS § 28-8"
+        - "@type": "LegalCase"
+          name: "Amemiya v. Sapienza (1981)"
+        - "@type": "Legislation"
+          name: "SB2930 (2022)"
+      keywords: "hawaii attorney general special prosecutor, sb2107 special counsel hawaii, hawaii SIPD public corruption, amemiya v sapienza, paper bag inquiry hawaii, executive branch self-investigation"
 ---
 
 In January 2024, [Senate Bill 2107](https://www.capitol.hawaii.gov/sessions/Session2024/Testimony/SB2107_TESTIMONY_JDC_01-25-24_.PDF) arrived at the Senate Judiciary Committee. It was a small piece of legislation — a few paragraphs amending HRS §28-8 to let the Attorney General appoint independent special counsel when an investigation "may present a conflict of interest for the Department." It formalized a power the AG arguably already possessed. A doorstop, really. The kind of bill you pass on a voice vote and forget about.
@@ -139,6 +173,15 @@ Thirteen months later, on [February 13, 2026](https://bigislandnow.com/2026/02/1
 "First," Lopez said, "there is no legal process in Hawaiʻi law for the appointment of a special prosecutor."
 
 The door she bricked shut in 2024, she now gestured toward in 2026, palms up, as if she had never held the trowel.
+
+## Series Navigation
+
+- [Series hub: The Closed Loop](/investigation/the-closed-loop/)
+- [Read Part I: The Zero Commission](/investigation/the-zero-commission/)
+- Part II (this page): The Paper Bag and the Architecture of Self-Investigation
+- [The Federal Layer: domestic federal network mapping](/investigation/the-federal-layer/)
+- [The Two Questions: federal investigative roadmap](/investigation/the-two-questions/)
+- [Investigations index](/investigation/)
 
 ---
 
@@ -358,7 +401,7 @@ The silence has not broken. But the architecture is visible now. And architectur
 
 ---
 
-*This is the second article in The Closed Loop series. [Part I: The Zero Commission](/investigation/the-zero-commission/) documented the judicial branch. If you have information about SIPD's operations, the SB2107 testimony, or the disposition of SIPD's required legislative reports, contact the author at TheClosedLoop@GTCode.com.*
+*This is the second article in The Closed Loop series. [Part I: The Zero Commission](/investigation/the-zero-commission/) documented the judicial branch. If you have information about SIPD's operations, the SB2107 testimony, or the disposition of SIPD's required legislative reports, contact the author at [tips@GTCode.com](mailto:tips@gtcode.com).*
 
 ---
 

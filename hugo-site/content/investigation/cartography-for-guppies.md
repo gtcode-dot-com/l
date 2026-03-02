@@ -29,9 +29,10 @@ meta_keywords:
 # Open Graph
 og_title: "Cartography for Guppies — A Publisher's Note"
 og_description: "Why a guppy with a laptop is mapping the sharks — and how to read the map. Publisher's note introducing Oʻahu Underground."
-og_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+og_image: "/img/ou-cartography-for-guppies-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
+og_image_alt: "Illustration of a small fish navigating dark waters overlaid with cartographic grid lines and institutional connection diagrams — representing the lone investigator mapping Hawaii's power networks"
 og_type: "article"
 
 # Article metadata
@@ -49,7 +50,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Cartography for Guppies — A Publisher's Note"
 twitter_description: "Why a guppy with a laptop is mapping the sharks. Publisher's note introducing Oʻahu Underground."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/ou-cartography-for-guppies-og-1200x630.jpg"
 twitter_image_alt: "Oahu Underground — Cartography for Guppies publisher's note"
 
 # Agentic Context
@@ -92,7 +93,7 @@ structured_data_graph:
       headline: "Cartography for Guppies"
       alternativeHeadline: "A Publisher's Note"
       description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
-      image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+      image: "/img/ou-cartography-for-guppies-og-1200x630.jpg"
       datePublished: "2026-02-05T00:00:00Z"
       author:
         "@type": "Person"

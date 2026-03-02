@@ -68,7 +68,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Cinema Debugger: Reinventing Code Review"
 twitter_description: "How semantic graphs, scene-based workflows, and multi-resolution navigation are transforming code review."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/gtcode_mahalo_1200x630.jpg"
 twitter_image_alt: "The Cinema Debugger — GTCode article on semantic code review"
 
 sitemap:

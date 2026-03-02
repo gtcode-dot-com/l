@@ -26,4 +26,4 @@ Oahu Underground reporting follows an evidence-first process.
 
 ## Contact
 
-Questions about standards can be sent to tips@gtcode.com.
+Questions about standards can be sent to [tips@GTCode.com](mailto:tips@gtcode.com).

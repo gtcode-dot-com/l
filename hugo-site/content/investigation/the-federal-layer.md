@@ -2,24 +2,40 @@
 draft: false
 weight: 12
 title: "The Federal Layer"
-seo_title: "The Federal Layer — Warren Luke, Hawaii National Bank, and the Federal Establishment"
-subtitle: "How One of Hawaii's Most Connected Bankers Sits at the Intersection of Every Institution That Might Hold Him to Account"
-description: "An investigation into how Warren K.K. Luke — Federal Reserve director, DOD foundation trustee, and brother-in-law of retired Judge Wilson Loo — built an institutional presence so dense across federal banking, defense, and security establishments that the simple prosecution of one judge is crowded out before it begins."
+seo_title: "Warren K.K. Luke, Hawaii National Bank, and FRBSF"
+subtitle: "Public-record mapping of Hawaii National Bank, the Federal Reserve Bank of San Francisco, Pacific Forum, APCSS Foundation, and the Wilson M.N. Loo timeline"
+description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
 date: 2026-02-28
 lastmod: 2026-03-01
 author: "Ekewaka Lono"
 published_display: "February 28, 2026"
+modified_display: "March 1, 2026"
 type: "investigation"
-tags: ["warren-luke", "hawaii-national-bank", "federal-reserve", "wilson-loo", "institutional-capture", "fbi", "doj", "pacific-forum", "apcss", "campaign-spending-commission"]
+series: "The Architecture of Access"
+series_url: "/investigation/the-architecture-of-access/"
+series_part: "Part I"
+series_part_title: "Domestic federal"
+
 homepage_exclude: true
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-federal-layer/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
+  - "warren k.k. luke hawaii national bank federal reserve bank of san francisco"
+  - "warren k.k. luke"
   - "warren luke hawaii national bank"
+  - "federal reserve bank of san francisco audit committee"
+  - "federal reserve director hawaii national bank"
   - "hawaii national bank federal reserve"
+  - "pacific forum board of governors"
+  - "apcss foundation trustee"
+  - "wilson m.n. loo"
   - "wilson loo warren luke"
+  - "18 u.s.c. § 242"
+  - "deprivation of rights under color of law"
+  - "18 u.s.c. § 1622"
+  - "public integrity section referral"
   - "institutional capture hawaii"
   - "federal reserve bank san francisco director"
   - "apcss foundation trustees"
@@ -32,11 +48,11 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Network Mapping"
-card_summary: "Warren K.K. Luke chaired the Federal Reserve Bank of San Francisco's audit committee, trustees a DOD foundation, and co-governs a security policy institute with retired Pacific Fleet commanders. His brother-in-law is the judge whose prosecution requires one FBI agent and a car. The door has not been knocked on."
+card_summary: "Public records map Warren K.K. Luke across Hawaii National Bank, the Federal Reserve Bank of San Francisco, Pacific Forum, and APCSS Foundation. This Architecture of Access brief examines oversight questions around Wilson M.N. Loo."
 
 # Open Graph
-og_title: "The Federal Layer — How One Family's Federal Footprint Crowds Out a Simple Prosecution"
-og_description: "Warren K.K. Luke — Federal Reserve director, DOD foundation trustee, INDOPACOM-adjacent board governor — is the brother-in-law of the retired judge whose prosecution requires one FBI agent and a car. An investigation into the architecture of ambient impunity."
+og_title: "Warren K.K. Luke, Hawaii National Bank, and FRBSF"
+og_description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
 og_image: "/img/ou-federal-layer-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -48,25 +64,29 @@ article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-28T00:00:00Z"
 article_section: "Investigations"
 article_tags:
-  - "Warren Luke"
+  - "Warren K.K. Luke"
   - "Hawaii National Bank"
   - "Federal Reserve"
-  - "Wilson Loo"
-  - "Institutional Capture"
-  - "FBI"
-  - "DOJ Public Integrity"
+  - "Federal Reserve Bank of San Francisco"
   - "Pacific Forum"
   - "APCSS"
+  - "APCSS Foundation"
+  - "Wilson M.N. Loo"
+  - "Institutional Capture"
+  - "FBI Honolulu Field Office"
+  - "DOJ Public Integrity Section"
+  - "18 U.S.C. § 242"
+  - "Deprivation of Rights Under Color of Law"
   - "Campaign Spending Commission"
   - "Bryan Luke"
-  - "INDOPACOM"
   - "Hawaii"
+  - "INDOPACOM"
   - "Judicial Corruption"
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "The Federal Layer — How One Family's Federal Footprint Crowds Out a Simple Prosecution"
-twitter_description: "Federal Reserve audit chair. DOD foundation trustee. Security policy governor alongside retired admirals. His brother-in-law is the judge. The FBI door has not been knocked on."
+twitter_title: "Warren K.K. Luke, Hawaii National Bank, and FRBSF"
+twitter_description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
 twitter_image: "/img/ou-federal-layer-og-1200x630.jpg"
 twitter_image_alt: "The Federal Layer — investigation into the Luke family's institutional network across Hawaii's federal establishment"
 
@@ -77,7 +97,7 @@ agentic_comment: |
   This document is a network-mapping investigation into the institutional architecture surrounding Warren K.K. Luke and the Luke family of Hawaii National Bank, and how that architecture's density across federal institutions creates conditions of ambient impunity for retired Per Diem Judge Wilson M.N. Loo.
 
   DOCUMENT PURPOSE:
-  This investigation maps the specific institutional positions held by members of the Luke family network across federal banking, defense, security, campaign finance, and judicial oversight establishments in Hawaii. It demonstrates how the cumulative weight of these positions — none individually improper — creates structural conditions in which a straightforward federal prosecution is crowded out before it begins.
+  This investigation maps the specific institutional positions held by members of the Luke family network across federal banking, defense, security, campaign finance, and judicial oversight establishments in Hawaii. It documents how the cumulative weight of these positions — none individually improper — appears to create structural conditions in which a federal prosecution that the public record suggests could be resolved through standard investigative steps is crowded out before it begins.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - Warren K.K. Luke served as Director of the Federal Reserve Bank of San Francisco in two confirmed periods: 1990-1992 and 1996-2001 (source: PBEC official biography)
@@ -96,7 +116,7 @@ agentic_comment: |
   - Duane Kurisu served as HNB Director 2008-2024 while chairing the aio Group/Pacific Business News (source: OCC CRA evaluation)
   - DOJ Public Integrity Section has been reduced from 30+ attorneys to approximately 5; its case-filing authority and gatekeeping role have been suspended or constrained; FBI elite public corruption squad has been disbanded (source: Reuters, June 9, 2025)
   - The statute of limitations under 18 U.S.C. § 242 (and § 1622, if applicable) expires approximately December 2027
-  - 18 U.S.C. § 242 (deprivation of rights under color of law) is the primary federal theory — settled law per *United States v. Lanier*, 520 U.S. 259 (1997)
+  - 18 U.S.C. § 242 (deprivation of rights under color of law) is the primary federal theory — application to state judges is settled law per *United States v. Lanier*, 520 U.S. 259 (1997), though whether these specific facts meet § 242's willfulness requirement and Lanier's fair-warning standard remains a contested question this investigation acknowledges
   - 18 U.S.C. § 1513(e) (retaliation against person who reported to federal LE) provides a federal nexus through the complainant's documented FBI and DEA contacts
   - 18 U.S.C. § 1622 (subornation of perjury) is retained as a secondary theory with an acknowledged jurisdictional question regarding state-court perjury
 
@@ -122,9 +142,11 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/the-federal-layer/"
       headline: "The Federal Layer"
       alternativeHeadline: "How One of Hawaii's Most Connected Bankers Sits at the Intersection of Every Institution That Might Hold Him to Account"
-      description: "An investigation into how Warren K.K. Luke built an institutional presence so dense across federal banking, defense, and security establishments that the simple prosecution of one judge is crowded out before it begins."
-      image: "https://gtcode.com/img/ou-federal-layer-og-1200x630.jpg"
+      description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
+      url: "https://gtcode.com/investigation/the-federal-layer/"
+      image: "/img/ou-federal-layer-og-1200x630.jpg"
       datePublished: "2026-02-28T00:00:00Z"
+      dateModified: "2026-03-01T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -139,18 +161,74 @@ structured_data_graph:
           width: 180
           height: 180
       articleSection: "Investigations"
-      keywords: "Warren Luke, Hawaii National Bank, Federal Reserve, Wilson Loo, institutional capture, FBI, DOJ Public Integrity, Pacific Forum, APCSS, campaign spending commission, INDOPACOM, Hawaii, judicial corruption"
+      isPartOf:
+        - "@type": "CollectionPage"
+          "@id": "https://gtcode.com/investigation/#collection"
+          name: "Oahu Underground Investigations"
+          url: "https://gtcode.com/investigation/"
+        - "@type": "Article"
+          "@id": "https://gtcode.com/investigation/the-architecture-of-access/#article"
+          name: "The Architecture of Access"
+          url: "https://gtcode.com/investigation/the-architecture-of-access/"
+      about:
+        - "@type": "Person"
+          name: "Warren K.K. Luke"
+        - "@type": "Organization"
+          name: "Hawaii National Bank"
+        - "@type": "Organization"
+          name: "Federal Reserve Bank of San Francisco"
+        - "@type": "Organization"
+          name: "Pacific Forum"
+        - "@type": "Organization"
+          name: "APCSS Foundation"
+        - "@type": "Person"
+          name: "Wilson M.N. Loo"
+      mentions:
+        - "@type": "Organization"
+          name: "United States Department of Justice Public Integrity Section"
+        - "@type": "Organization"
+          name: "Federal Bureau of Investigation Honolulu Field Office"
+        - "@type": "Organization"
+          name: "Hawaii Commission on Judicial Conduct"
+        - "@type": "Legislation"
+          name: "18 U.S.C. § 242"
+          url: "https://www.law.cornell.edu/uscode/text/18/242"
+        - "@type": "Legislation"
+          name: "18 U.S.C. § 1513(e)"
+          url: "https://www.law.cornell.edu/uscode/text/18/1513"
+        - "@type": "Legislation"
+          name: "18 U.S.C. § 1622"
+          url: "https://www.law.cornell.edu/uscode/text/18/1622"
+      keywords: "Warren K.K. Luke, Hawaii National Bank, Federal Reserve Bank of San Francisco, Pacific Forum, APCSS Foundation, Wilson M.N. Loo, 18 U.S.C. § 242, deprivation of rights under color of law, DOJ Public Integrity Section, institutional capture"
 ---
 
-The case against retired Per Diem Judge Wilson M.N. Loo is not complicated. It requires one witness, two questions, and a federal agent willing to knock on a door. The statute of limitations on the applicable federal statutes — including 18 U.S.C. § 242 (deprivation of rights under color of law) and potentially 18 U.S.C. § 1622 (subornation of perjury) — runs five years from the date of the act.[^1] The act occurred on December 2, 2022. The clock has been running for more than three years. Roughly twenty months remain.
+The public record suggests that the case against retired Per Diem Judge Wilson M.N. Loo presents a narrow set of factual questions that standard investigative steps could confirm or falsify. It would require one witness, two questions, and a federal agent willing to knock on a door. The statute of limitations on the applicable federal statutes — including 18 U.S.C. § 242 (deprivation of rights under color of law) and potentially 18 U.S.C. § 1622 (subornation of perjury) — runs five years from the date of the act.[^1] The act occurred on December 2, 2022. The clock has been running for more than three years. Roughly twenty months remain.
 
-No door has been knocked on.
+There is no public indication that any investigative contact has been made, and no such contact has been communicated to the author.
 
-This investigation began, as these things often do, with a simpler question: why not? The conduct is documented. The witness is identified. The referral has been filed with the Department of Justice's Public Integrity Section, which acknowledged receipt.[^2] The prosecution roadmap has been published at this outlet in enough detail that any competent federal prosecutor could use it as a briefing memo.[^3] And still nothing moves.
+This investigation began, as these things often do, with a simpler question: why not? The relevant conduct is documented in public filings, the complainant's firsthand account, and sealed exhibits referenced herein. The witness is identified in the public record. The referral has been filed with the Department of Justice's Public Integrity Section, which acknowledged receipt.[^2] The prosecution roadmap has been published at this outlet in enough detail that any competent federal prosecutor could use it as a briefing memo.[^3] And still nothing moves.
 
-The answer, it turns out, is not corruption in the Hollywood sense — no envelopes, no phone calls, no made men. The answer is architecture. In a state this small, the family of the man whose conduct triggered this investigation has spent four decades constructing an institutional presence so dense, so cross-stitched through the federal establishment's own infrastructure, that the investigation requiring only one FBI agent and a car is crowded out before it begins — not by any one relationship, but by their cumulative weight.
+The answer, it turns out, is not corruption in the Hollywood sense — no envelopes, no phone calls, no made men. The answer is architecture. In a state this small, the family of the man whose conduct triggered this investigation has spent four decades constructing an institutional presence so dense, so cross-stitched through the federal establishment's own infrastructure, that an investigation the public record suggests could be resolved through standard steps appears crowded out before it begins — not by any one relationship, but by their cumulative weight.
 
 That family is the Lukes. And at the center of it is Warren K.K. Luke.
+
+## Read Next
+
+- [Series: The Architecture of Access](/investigation/the-architecture-of-access/)
+- Part I (this page): The Federal Layer
+- [Read Part II: The Bridges (international / PRC-facing)](/investigation/the-bridges/)
+- [The Two Questions: federal investigative roadmap in the Wilson M.N. Loo matter](/investigation/the-two-questions/)
+- [The Closed Loop: oversight and self-investigation series hub](/investigation/the-closed-loop/)
+- [Investigations index](/investigation/)
+
+> **Core Claims and Primary Sources**
+>
+> - **Warren Luke served as FRBSF Director (1990–92, 1996–2001) and Audit Committee Chair** — PBEC official biography[^4]; FRBSF Annual Reports[^5]
+> - **Wilson Loo married into the Luke family; held 11,265 HNB shares as a sitting judge** — SEC DEF 14A proxy filing, 1996[^12][^13]
+> - **Loo and Chief Justice Recktenwald both clerked for Judge Harold Fong** — Loo mediation.com biography[^18]; Recktenwald legislative confirmation records[^22]
+> - **Warren Luke is APCSS Foundation trustee and Pacific Forum board governor** — APCSS Foundation Form 990[^38]; Pacific Forum 2020 Annual Report[^27]
+> - **Bryan Luke chaired the Campaign Spending Commission while serving as HNB CEO** — CSC meeting minutes[^46]; Star-Advertiser[^44]
+> - **DOJ Public Integrity Section reduced from 30+ to ~5 attorneys; FBI corruption squad disbanded** — Reuters, June 9, 2025[^58][^59]
 
 ---
 
@@ -180,7 +258,7 @@ In Luke's case, the answer is the Audit Committee chairmanship. A community bank
 
 No publicly accessible recusal log was located in FRBSF annual reports, the PBEC biographical record, or SEC proxy filings reviewed for this investigation. Federal Reserve director conflicts of interest are governed by 18 U.S.C. § 208 (the federal criminal conflicts-of-interest statute) and the Board's *Guide to Conduct for Directors of Federal Reserve Banks*; the specific recusal processes applicable to Luke during his 1990–2001 tenure were not determinable from these public sources. No FOIA request was filed with the FRBSF for this article.
 
-The FRBSF president during part of Luke's tenure was Robert T. Parry, a voting member of the Federal Open Market Committee from 1986 through 2004.[^9] Among Luke's co-directors during documented periods was A.W. "Tom" Clausen, former CEO of Bank of America and former President of the World Bank.[^10] This is not a Rotary Club. This is a federal institution. And its audit committee was chaired by the brother-in-law of the judge who allegedly directed a witness to commit perjury in open court. This is documented governance density — not an allegation of obstruction.
+The FRBSF president during part of Luke's tenure was Robert T. Parry, a voting member of the Federal Open Market Committee from 1986 through 2004.[^9] Among Luke's co-directors during documented periods was A.W. "Tom" Clausen, former CEO of Bank of America and former President of the World Bank.[^10] The audit committee of this federal institution was chaired by the brother-in-law of the judge who allegedly directed a witness to commit perjury in open court. This is documented governance density — not an allegation of obstruction.
 
 ---
 
@@ -208,13 +286,13 @@ Another Harold Fong clerk, who served approximately three to four years after Lo
 
 As Chief Justice, Recktenwald held administrative authority over per diem judge appointments in the state court system — including, after 2010, the appointments of Wilson M.N. Loo.[^21]
 
-Two men who clerked for the same federal judge: one became a per diem judge whose continued service depended on the other's administrative authority. Neither disclosed this. Neither recused. The connection is confirmed through Loo's own professional biography and through Recktenwald's legislative confirmation records.[^22]
+Two men who clerked for the same federal judge: one became a per diem judge whose continued service depended on the other's administrative authority. The connection is confirmed through Loo's own professional biography and through Recktenwald's legislative confirmation records.[^22] No public recusal record referencing this shared clerkship was located in the materials reviewed for this investigation. Whether the connection required formal disclosure or recusal under applicable judicial conduct rules is a question this article does not resolve; what is documented is the relationship itself and the administrative authority it intersected.
 
 The Fong connection runs a second, more recent thread. Harold Fong — not to be confused with Judge Arthur S.K. Fong, a separate figure — was Chief Judge through 1991.[^23] Arthur S.K. Fong was a Hawaii First Circuit judge who simultaneously served as a Director of Hawaii National Bank.[^24] He died in March 2020; his Star-Advertiser obituary confirmed both his judicial career and his bank board service.[^25]
 
 Arthur S.K. Fong's son is Daniel Fong. Since July 1, 2019, Daniel Fong has served as Senior Vice President, General Corporate Counsel, Compliance Administrator, and Assistant Secretary of Hawaii National Bancshares and Hawaii National Bank.[^26] He is, to be precise, the person responsible for ensuring that Hawaii National Bank operates within the law.
 
-The man running compliance at the bank central to this investigation is the son of a judge who sat on that bank's board. The network's reach across generations is not accidental; it is self-replicating.
+The man running compliance at the bank central to this investigation is the son of a judge who sat on that bank's board. Whatever the intent, the effect is replication: governance roles and institutional affiliations tend to concentrate across a small set of families and institutions, generation after generation.
 
 ---
 
@@ -238,7 +316,7 @@ So do the following:
 
 **Gerald Sumida** — Partner, Carlsmith Ball LLP, Honolulu.[^34]
 
-This is not a social club. Pacific Forum conducts what the security establishment calls Track 1.5 diplomacy — dialogue between governments and non-governmental actors, involving people with current or recent access to classified information and policy processes. Its work is oriented toward INDOPACOM's theater of operations. Several of its programs receive U.S. government funding, though Pacific Forum's own website is careful to specify that government grants represent "a small percentage" of its annual budget.[^35]
+Pacific Forum conducts what the security establishment calls Track 1.5 diplomacy — dialogue between governments and non-governmental actors, involving people with current or recent access to classified information and policy processes. Its work is oriented toward INDOPACOM's theater of operations. Several of its programs receive U.S. government funding, though Pacific Forum's own website is careful to specify that government grants represent "a small percentage" of its annual budget.[^35]
 
 The important point is not the funding percentage. The important point is the board.
 
@@ -278,7 +356,7 @@ For approximately four years, the CEO of Hawaii National Bank simultaneously cha
 
 The Commission records show two disclosed conflicts during Bryan Luke's tenure — February 14, 2018, and August 12, 2020 — both involving attorney relationships connected to his family.[^47] In both instances, he disclosed the conflict but continued participating after no party objected.[^48]
 
-What the records do not show is any formal docket entry during his tenure involving Sylvia Luke, Ty Cullen, or Tobi Solidum — despite the fact that $10,000 in coordinated contributions from Solidum and Pae to Sylvia Luke's campaign, received on January 20-21, 2022, went unreported to the Commission for nearly four years, and were only disclosed in February 2026 after Civil Beat inquired about them.[^49] Sylvia Luke, the Lieutenant Governor of Hawaii, is not a member of the HNB Luke family by blood, having married into the surname. But the political money story and the banking network's footprint occupy adjacent institutional territory, and the Commission's inaction on both during Bryan Luke's chairmanship belongs in the same paragraph.
+What the records do not show is any formal docket entry during his tenure involving Sylvia Luke, Ty Cullen, or Tobi Solidum — despite the fact that $10,000 in coordinated contributions from Solidum and Pae to Sylvia Luke's campaign, received on January 20-21, 2022, went unreported to the Commission for nearly four years, and were only disclosed in February 2026 after Civil Beat inquired about them.[^49] Sylvia Luke, the Lieutenant Governor of Hawaii, is not a member of the HNB Luke family by blood, having married into the surname. The overlap between the unreported contributions and Bryan Luke's Commission chairmanship is documented, but causation is not alleged. This episode illustrates the limits of CSC enforcement capacity and disclosure latency — structural governance questions that exist independently of any individual's intent.
 
 ---
 
@@ -294,7 +372,7 @@ Wilson Loo was a Commissioner on this body while serving as a per diem judge.[^5
 
 The DOJ Public Integrity Section, as of this writing, has acknowledged receipt of the referral and communicated nothing further.[^57] The Section, which once employed more than thirty attorneys, has been reduced to approximately five, and its authority to file new cases and its gatekeeping role over public-corruption prosecutions have been suspended or constrained under the current administration.[^58] The FBI's elite public corruption squad has been disbanded.[^59] The Honolulu Field Office operates in an environment shaped by the professional network that passed through Charles Marsland's Organized Crime Unit in the early 1980s — the same unit where Wilson Loo built his prosecutorial career alongside colleagues who subsequently occupied every major prosecutorial position in the state, including Edward Kubo Jr., who served as U.S. Attorney for the District of Hawaii from 2001 through 2009.[^60]
 
-Loo's peers, in other words, ran the office that would have prosecuted him.
+Individuals from the same prosecutorial cohort, in other words, later held senior roles in Hawaii's federal prosecutorial ecosystem, including the U.S. Attorney's Office for the District of Hawaii.
 
 ---
 
@@ -304,7 +382,7 @@ There is a version of this story in which nothing I have documented is sinister.
 
 That version of the story is probably true in part. It is not the whole story.
 
-Because the whole story includes this: the public record suggests the case against Wilson Loo is unusually simple. The witness is identified. The prosecution theory is published in sufficient detail to serve as a briefing memo. The documentary evidence — a text message reading "I took the acid," admitted into the December 2, 2022 proceeding before Loo himself — is in a sealed court file.[^61] Two prior law enforcement reports, one from the DEA and one from the Honolulu Police Department's Narcotics and Vice Division, documented the factual predicate before the trial date.[^62] Standard investigative steps — interview the witness, obtain the sealed audio, evaluate the evidence — would confirm or falsify the relevant legal theories.
+Because the whole story includes this: the public record suggests the case against Wilson Loo presents an unusually narrow set of factual questions. The witness is identified in the public record. The prosecution theory is published in sufficient detail to serve as a briefing memo. The documentary evidence — a text message reading "I took the acid," admitted into the December 2, 2022 proceeding before Loo himself — is in a sealed court file.[^61] Two prior law enforcement reports, one from the DEA and one from the Honolulu Police Department's Narcotics and Vice Division, documented the factual predicate before the trial date.[^62] Standard investigative steps — interview the witness, obtain the sealed audio, evaluate the evidence — would confirm or falsify the relevant legal theories.
 
 One or two FBI agents. A car. A door.
 
@@ -334,7 +412,7 @@ None of that is necessarily a crime. All of it is a structure.
 
 None of the individuals named in this article are accused of wrongdoing. Their board memberships, professional relationships, and institutional roles are matters of public record, disclosed and lawful. The argument here is structural, not personal: legitimate relationships, in sufficient density, produce institutional inertia without any individual needing to act corruptly.
 
-The structure is this investigation's subject. The structure is why the door has not been knocked on. And the clock is still running.
+The structure is this investigation's subject. The structure is, the public record suggests, why there is no indication that standard investigative steps have been taken. And the clock is still running.
 
 ---
 
@@ -360,45 +438,47 @@ The structure is this investigation's subject. The structure is why the door has
 
 ---
 
-**Disclosure and Scope:** No comment was requested from individuals or institutions named in this article prior to publication; outreach was deferred due to safety and source-protection constraints. Institutions and individuals may respond at ZeroTrust@NSHkr.com. This investigation is based entirely on public records, government filings, and primary-source documents. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. Where sealed or non-public material is mentioned, it is described conditionally. The conclusions in this article do not depend on accepting any undisclosed evidence as true.
+**Disclosure and Scope:** No comment was requested from individuals or institutions named in this article prior to publication; outreach was deferred due to safety and source-protection constraints. Institutions and individuals may respond at [Inquire@GTCode.com](mailto:inquire@gtcode.com). This investigation is based entirely on public records, government filings, and primary-source documents. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. Where sealed or non-public material is mentioned, it is described conditionally. The conclusions in this article do not depend on accepting any undisclosed evidence as true.
+
+**What Would Falsify This:** If the Department of Justice has investigated the referral and declined on the merits, confirmation of that fact would materially alter this investigation's structural thesis. If recusal or safeguard records exist for any of the institutional overlaps documented here — FRBSF board service, judicial appointments, Commission on Judicial Conduct participation — their production would narrow or resolve specific claims. If any individual named herein can demonstrate that the relationships described were subject to appropriate disclosure or ethics review, this outlet will publish corrections. The purpose of this investigation is to identify questions the public record leaves open; answers that close them are invited.
 
 ---
 
 ## Sources and Notes
 
-[^1]: 18 U.S.C. § 3282 sets the general federal felony statute of limitations at five years. The alleged deprivation of rights under color of law (§ 242) and subornation of perjury (§ 1622) occurred during proceedings on December 2, 2022. This calculation places the SOL expiration at approximately December 2027.
+[^1]: 18 U.S.C. § 3282 sets the general federal felony statute of limitations at five years. The alleged deprivation of rights under color of law (§ 242) and subornation of perjury (§ 1622) occurred during proceedings on December 2, 2022. This calculation places the SOL expiration at approximately December 2027. ([archival copy — § 242](/sources/the-federal-layer/LawCornell_18USC242.html)) ([archival copy — § 1622](/sources/the-federal-layer/LawCornell_18USC1622.html)) ([archival copy — § 1513](/sources/the-federal-layer/LawCornell_18USC1513.html))
 
 [^2]: DOJ Public Integrity Section, acknowledgment of referral received by author. On file.
 
 [^3]: Ekewaka Lono, "The Two Questions: How One Interview Closes the Wilson Loo Case," Oahu Underground / gtcode.com, February 23, 2026. https://gtcode.com/investigation/the-two-questions/
 
-[^4]: Warren K.K. Luke official biography, Pacific Basin Economic Council. https://www.pbec.org/team-showcase/mr-warren-k-k-luke/
+[^4]: Warren K.K. Luke official biography, Pacific Basin Economic Council. https://www.pbec.org/team-showcase/mr-warren-k-k-luke/ ([archival copy](/sources/the-federal-layer/PBEC_WarrenLuke_Profile.html))
 
-[^5]: Ibid. Confirmed periods 1990–1992 and 1996–2001 per PBEC profile; also cited in Loo/Luke network mapping research, February 2026, drawing on PBEC primary source.
+[^5]: Ibid. Confirmed periods 1990–1992 and 1996–2001 per PBEC profile. Corroborated by FRBSF Annual Reports, which list Board of Directors rosters by year (*see, e.g.*, FRBSF 1991 Annual Report, Board of Directors roster, confirming Luke's service during the first period; *see also* FRBSF 1997 Annual Report for the second period). FRBSF annual reports are available via https://www.frbsf.org/about-us/our-district/annual-report/.
 
 [^6]: Ibid.
 
 [^7]: Ibid.
 
-[^8]: Federal Reserve System structure and OCC relationship: standard regulatory framework. See federalreserve.gov and occ.gov for supervisory coordination documentation.
+[^8]: Federal Reserve System supervisory coordination with OCC: The Federal Reserve Board's Supervision and Regulation division coordinates with the OCC and FDIC under the framework described in the Federal Financial Institutions Examination Council (FFIEC) interagency agreements. *See* Board of Governors, "The Federal Reserve System: Purposes and Functions," 10th ed., Section 5: "Supervision and Regulation," describing the interagency supervisory framework. https://www.federalreserve.gov/aboutthefed/pf.htm. For OCC regulatory authority over national banks including Hawaii National Bank, *see* OCC CRA evaluation records. ([archival copy — OCC CRA index](/sources/the-federal-layer/OCC_CRA_HNB.html))
 
-[^9]: Federal Reserve Bank of San Francisco, historical leadership. Robert T. Parry served as FRBSF President 1986–2004 and as a rotating voting member of the FOMC.
+[^9]: Robert T. Parry served as President and CEO of the Federal Reserve Bank of San Francisco from 1986 to 2004. *See* Federal Reserve History, "Robert T. Parry," https://www.federalreservehistory.org/people/robert-t-parry; FRBSF historical leadership page, https://www.frbsf.org/about-us/our-leadership/past-bank-presidents/.
 
-[^10]: A.W. "Tom" Clausen served as CEO of Bank of America 1970–1981 and 1986–1990, and as World Bank President 1981–1986. His FRBSF board service overlapped with Luke's documented tenure.
+[^10]: A.W. "Tom" Clausen served as CEO of Bank of America 1970–1981 and 1986–1990, and as President of the World Bank 1981–1986. His FRBSF board service overlapped with Luke's documented tenure. *See* FRBSF 1991 Annual Report, Board of Directors roster; World Bank Archives, "A.W. Clausen," https://www.worldbank.org/en/about/archives/history/past-presidents/alden-winship-clausen.
 
 [^11]: Hawaii National Bank history; confirmed through multiple secondary sources including PBEC profile and corporate history references.
 
-[^12]: Hawaii National Bancshares, Inc., DEF 14A Proxy Statement, 1996. SEC EDGAR, CIK 805304. Janice Luke Loo beneficial ownership: 47,858 shares.
+[^12]: Hawaii National Bancshares, Inc., DEF 14A Proxy Statement, 1996. SEC EDGAR, CIK 805304. Janice Luke Loo beneficial ownership: 47,858 shares. https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000805304&type=DEF+14A&dateb=19970101&owner=include&count=10 ([archival copy](/sources/the-federal-layer/SEC_EDGAR_HNB_Filings.html))
 
 [^13]: Ibid. Wilson Loo direct ownership: 11,265 shares, included within Janice Luke Loo's beneficial ownership total.
 
-[^14]: Wilson Loo appointment as Per Diem District Judge, First Circuit, July 5, 1995. Appointment by Chief Justice Ronald Moon.
+[^14]: Wilson Loo appointment as Per Diem District Judge, First Circuit, July 5, 1995. Appointment by Chief Justice Ronald Moon. Appointment date confirmed in Loo's mediation.com professional biography ([archival copy](/sources/the-federal-layer/Mediation_WilsonLoo.html)) and corroborated by Civil Beat judicial disclosure filings ([archival copy](/sources/the-federal-layer/CivilBeat_Loo_Disclosure_2019.html)).
 
-[^15]: Wilson M.N. Loo, Hawaii Judicial Financial Disclosure, 2019. Available via Civil Beat Hawaii judicial disclosure database: https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/
+[^15]: Wilson M.N. Loo, Hawaii Judicial Financial Disclosure, 2019. Available via Civil Beat Hawaii judicial disclosure database: https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/ ([archival copy](/sources/the-federal-layer/CivilBeat_Loo_Disclosure_2019.html))
 
 [^16]: Commission on Judicial Conduct, Hawaii Supreme Court. Wilson Loo listed as Commissioner in Commission publications. Confirmed in Exhibit A of "The Zone of Politeness," Oahu Underground, 2025.
 
-[^17]: Wilson M.N. Loo professional biography, mediation.com profile. Career history includes: Deputy Prosecuting Attorney, City and County of Honolulu, 1980–1984.
+[^17]: Wilson M.N. Loo professional biography, mediation.com profile. Career history includes: Deputy Prosecuting Attorney, City and County of Honolulu, 1980–1984. ([archival copy](/sources/the-federal-layer/Mediation_WilsonLoo.html))
 
 [^18]: Ibid. Law Clerk to Chief Judge Harold M. Fong, U.S. District Court for the District of Hawaii, 1982–1983.
 
@@ -408,17 +488,17 @@ The structure is this investigation's subject. The structure is why the door has
 
 [^21]: Hawaii Revised Statutes § 604-2 and related Supreme Court administrative rules governing appointment of per diem judges. Administrative authority vests in the Chief Justice.
 
-[^22]: Loo clerkship: mediation.com professional biography, Loo's own representation. Recktenwald clerkship: MidWeek profile; Hawaii Legislature confirmation testimony.
+[^22]: Loo clerkship: mediation.com professional biography, Loo's own representation ([archival copy](/sources/the-federal-layer/Mediation_WilsonLoo.html)). Recktenwald clerkship: MidWeek profile; Hawaii Legislature confirmation testimony.
 
-[^23]: Harold M. Fong, Chief Judge, U.S. District Court for the District of Hawaii, 1984–1991. Federal Judicial Center biographical database.
+[^23]: Harold M. Fong, Chief Judge, U.S. District Court for the District of Hawaii, 1984–1991. Federal Judicial Center biographical database. https://www.fjc.gov/history/judges/fong-harold-m ([archival copy](/sources/the-federal-layer/FJC_HaroldFong.html))
 
-[^24]: Arthur S.K. Fong, Hawaii First Circuit Court Judge; Director, Hawaii National Bank. Source: Honolulu Star-Advertiser obituary, March 2020.
+[^24]: Arthur S.K. Fong, Hawaii First Circuit Court Judge; Director, Hawaii National Bank. Source: Honolulu Star-Advertiser obituary, March 2020. ([archival copy](/sources/the-federal-layer/StarAdv_ArthurFong_Obit_2020.html))
 
 [^25]: Ibid.
 
 [^26]: Daniel Fong, role as SVP, General Corporate Counsel, Compliance Administrator, and Assistant Secretary of Hawaii National Bancshares and Hawaii National Bank since July 1, 2019. Source: Shidler College of Business alumni publications; Hawaii DCCA corporate filings via OpenCorporates.
 
-[^27]: Pacific Forum, 2020 Annual Report. PDF retrieved directly from pacforum.org. Primary source.
+[^27]: Pacific Forum, 2020 Annual Report. PDF retrieved directly from pacforum.org. Primary source. https://pacforum.org/wp-content/uploads/2023/11/2020-Annual-Report.pdf ([archival copy](/sources/the-federal-layer/PacForum_AnnualReport_2020.pdf))
 
 [^28]: Ibid. Karl W. Eikenberry listed as "Lt.Gen., USA (Ret.); Shorenstein Asia-Pacific Research Center, Stanford University; former US Ambassador to Afghanistan."
 
@@ -434,35 +514,35 @@ The structure is this investigation's subject. The structure is why the door has
 
 [^34]: Ibid. Gerald Sumida listed as "Partner, Carlsmith Ball LLP (Honolulu)."
 
-[^35]: Pacific Forum official website, organizational description: "governments, the latter providing a small percentage of the forum's annual budget." https://pacforum.org/about-us/ (retrieved February 28, 2026, via search result at ciaotest.cc.columbia.edu).
+[^35]: Pacific Forum official website, organizational description: "governments, the latter providing a small percentage of the forum's annual budget." https://pacforum.org/about-us/ (retrieved February 28, 2026, via search result at ciaotest.cc.columbia.edu). ([archival copy](/sources/the-federal-layer/PacForum_About.html))
 
-[^36]: Daniel K. Inouye Asia-Pacific Center for Security Studies, official description. APCSS.org. DOD institution under INDOPACOM.
+[^36]: Daniel K. Inouye Asia-Pacific Center for Security Studies, official description. https://dkiapcss.edu/about/ DOD institution under INDOPACOM. ([archival copy](/sources/the-federal-layer/DKIAPCSS_About.html))
 
-[^37]: APCSS Foundation, EIN 99-0350533. ProPublica Nonprofit Explorer.
+[^37]: APCSS Foundation, EIN 99-0350533. ProPublica Nonprofit Explorer. https://projects.propublica.org/nonprofits/organizations/990350533 ([archival copy](/sources/the-federal-layer/ProPublica_APCSS_Foundation_990.html))
 
-[^38]: Warren K.K. Luke, Trustee, APCSS Foundation. Source: PBEC profile (primary).
+[^38]: Warren K.K. Luke, Trustee, APCSS Foundation. Source: PBEC profile; corroborated by APCSS Foundation Form 990 filings via ProPublica Nonprofit Explorer, EIN 99-0350533. *See* 2020 Form 990, Part VII, Section A (Officers, Directors, Trustees, Key Employees), listing Luke as Trustee. https://projects.propublica.org/nonprofits/organizations/990350533 ([archival copy](/sources/the-federal-layer/ProPublica_APCSS_Foundation_990.html))
 
-[^39]: Duane Kurisu, Director, Hawaii National Bancshares 2008–2024. Source: OCC CRA evaluation for Hawaii National Bank (primary). Kurisu's aio Group/Pacific Business News chairmanship: multiple secondary sources.
+[^39]: Duane Kurisu, Director, Hawaii National Bancshares 2008–2024. Source: OCC CRA evaluation for Hawaii National Bank (primary). https://www.occ.gov/topics/consumers-and-communities/cra/cra-evaluations/index-cra-evaluation.html ([archival copy](/sources/the-federal-layer/OCC_CRA_HNB.html)). Kurisu's aio Group/Pacific Business News chairmanship: multiple secondary sources.
 
-[^40]: Gerald Sumida, President, APCSS Foundation; also Board of Governors, Pacific Forum. Sources: Pacific Forum 2020 Annual Report (primary for Pacific Forum); APCSS Foundation Form 990 via ProPublica Nonprofit Explorer, EIN 99-0350533.
+[^40]: Gerald Sumida, President, APCSS Foundation; also Board of Governors, Pacific Forum. Sources: Pacific Forum 2020 Annual Report (primary for Pacific Forum); APCSS Foundation Form 990 via ProPublica Nonprofit Explorer, EIN 99-0350533. ([archival copy — ProPublica](/sources/the-federal-layer/ProPublica_APCSS_Foundation_990.html))
 
 [^41]: Constance Lau, Chair, DHS National Infrastructure Advisory Council. Source: NIAC official records; multiple secondary sources confirming Obama-era appointment.
 
-[^42]: W. David Carey III, Chairman, Punahou School Board of Trustees. Source: Punahou School website (current).
+[^42]: W. David Carey III, Chairman, Punahou School Board of Trustees. Source: Punahou School website (current). https://www.punahou.edu/about/leadership ([archival copy](/sources/the-federal-layer/Punahou_About_Leadership.html))
 
 [^43]: Board overlap documented through Punahou trustee archives and APCSS Foundation board composition. Sources: Punahou Bulletin for Luke and Omidyar trusteeships; PBEC profile for Luke; secondary sources for Kurisu and Lau trusteeships.
 
-[^44]: "Bryan Luke Named President and CEO of Hawaii National Bank," Honolulu Star-Advertiser, July 16, 2019 (primary).
+[^44]: "Bryan Luke Named President and CEO of Hawaii National Bank," Honolulu Star-Advertiser, July 16, 2019 (primary). ([archival copy](/sources/the-federal-layer/StarAdv_BryanLuke_CEO_2019.html))
 
-[^45]: Bryan Luke, Commissioner, Hawaii Campaign Spending Commission, July 1, 2015. Source: CSC Newsletter, July 2023 (primary).
+[^45]: Bryan Luke, Commissioner, Hawaii Campaign Spending Commission, July 1, 2015. Source: CSC Newsletter, July 2023 (primary). https://ags.hawaii.gov/campaign/newsletter/csc-newsletter-july-2023-vol-29-no-2/ ([archival copy](/sources/the-federal-layer/CSC_Newsletter_July2023.html))
 
-[^46]: Bryan Luke elected Chair, May 2016. Source: CSC meeting minutes (primary). Tenure as Chair through at least September 2021 per CSC Newsletter, July 2023.
+[^46]: Bryan Luke elected Chair, May 2016. Source: CSC meeting minutes (primary). Tenure as Chair through at least September 2021 per CSC Newsletter, July 2023. ([archival copy — newsletter](/sources/the-federal-layer/CSC_Newsletter_July2023.html))
 
-[^47]: CSC meeting minutes, February 14, 2018 and August 12, 2020. Both minutes document Luke conflict disclosures (primary sources).
+[^47]: CSC meeting minutes, February 14, 2018 and August 12, 2020. Both minutes document Luke conflict disclosures (primary sources). ([archival copy — Feb 2018](/sources/the-federal-layer/CSC_Minutes_Feb2018.html)) ([archival copy — Aug 2020](/sources/the-federal-layer/CSC_Minutes_Aug2020.html))
 
 [^48]: Ibid. In both instances, Luke offered potential recusal; no party objected; he continued participating.
 
-[^49]: Sylvia Luke unreported contributions: Civil Beat, February 2026; Hawaii Public Radio, February 2026. The $10,000 from Tobi Solidum and Brian Pae received January 20–21, 2022, was not reported to the CSC until after Civil Beat inquiries, approximately February 7–8, 2026.
+[^49]: Sylvia Luke unreported contributions: Civil Beat, February 2026; Hawaii Public Radio, February 2026. The $10,000 from Tobi Solidum and Brian Pae received January 20–21, 2022, was not reported to the CSC until after Civil Beat inquiries, approximately February 7–8, 2026. ([archival copy](/sources/the-federal-layer/CivilBeat_SylviaLuke_Feb2026.html))
 
 [^50]: Commission on Judicial Conduct, State of Hawaii, letter to Paul Lowndes, March 13, 2025. Signed by Dickson C.H. Lee, Chair. On file with author (primary).
 
@@ -470,21 +550,21 @@ The structure is this investigation's subject. The structure is why the door has
 
 [^52]: Ibid.
 
-[^53]: Commission on Judicial Conduct annual reports, FY2019–FY2021 and FY2023–FY2024. Figures cited from confirmed report data: 1,009 public inquiries; 7 formal complaints; 7 dismissed.
+[^53]: Commission on Judicial Conduct annual reports, FY2019–FY2021 and FY2023–FY2024. Figures cited from confirmed report data: 1,009 public inquiries; 7 formal complaints; 7 dismissed. ([archival copy — FY2023-24](/sources/the-federal-layer/COJC_AnnualReport_2023_2024.pdf)) ([archival copy — FY2022-23](/sources/the-federal-layer/COJC_AnnualReport_2022_2023.pdf)) ([archival copy — FY2020-21](/sources/the-federal-layer/COJC_AnnualReport_2020_2021.pdf)) ([archival copy — FY2019-20](/sources/the-federal-layer/COJC_AnnualReport_2019_2020.pdf))
 
-[^54]: Hawaii Revised Statutes § 601-14 and Rules of the Supreme Court of Hawaiʻi governing COJC composition and appointment.
+[^54]: Hawaii Revised Statutes § 601-14 and Rules of the Supreme Court of Hawaiʻi governing COJC composition and appointment. ([archival copy — CSC homepage](/sources/the-federal-layer/HI_CSC_Homepage.html))
 
 [^55]: Commission on Judicial Conduct, Rules of the Supreme Court of Hawaiʻi, Rule 8. Total confidentiality provisions.
 
 [^56]: Wilson Loo COJC Commissionership: confirmed in the author's own written communications with the Commission and in Exhibit A of Zone of Politeness (primary).
 
-[^57]: DOJ Public Integrity Section acknowledgment letter. On file with author.
+[^57]: DOJ Public Integrity Section acknowledgment correspondence. On file with author.
 
-[^58]: DOJ Public Integrity Section staffing: Reuters, "How Trump defanged the Justice Department's political corruption watchdogs," June 9, 2025. Reuters reported the Section reduced from more than 30 attorneys to approximately 5, with at least 28 staff departures; the Section's authority to file new cases and its gatekeeping role over public-corruption prosecutions suspended or constrained. See also Washington Post, May 17, 2025.
+[^58]: DOJ Public Integrity Section staffing: Reuters, "How Trump defanged the Justice Department's political corruption watchdogs," June 9, 2025. Reuters reported the Section reduced from more than 30 attorneys to approximately 5, with at least 28 staff departures; the Section's authority to file new cases and its gatekeeping role over public-corruption prosecutions suspended or constrained. See also Washington Post, May 17, 2025. ([archival copy](/sources/the-federal-layer/Reuters_DOJ_PublicIntegrity_2025.html))
 
 [^59]: FBI elite public corruption squad disbanding: Reuters, "How Trump defanged the Justice Department's political corruption watchdogs," June 9, 2025; AP News reporting on FBI restructuring under current administration.
 
-[^60]: Edward Kubo Jr. served as U.S. Attorney for the District of Hawaii 2001–2009. His service in the Marsland-era Organized Crime Unit at the same time as Wilson Loo (1980–1984): established through separate research. Wilson Loo's OC Unit tenure: mediation.com biography (primary).
+[^60]: Edward Kubo Jr. served as U.S. Attorney for the District of Hawaii 2001–2009. His service in the Marsland-era Organized Crime Unit at the same time as Wilson Loo (1980–1984): established through separate research. Wilson Loo's OC Unit tenure: mediation.com biography (primary). ([archival copy](/sources/the-federal-layer/Mediation_WilsonLoo.html))
 
 [^61]: Text message "I took the acid" was introduced as exhibit in the December 2, 2022 proceeding. On file with the court; record is sealed. Author was a party to the proceeding.
 

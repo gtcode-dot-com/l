@@ -66,7 +66,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Global Cognitive Brain"
 twitter_description: "Engineering distributed machine intelligence as a living system through semantic primitives and bio-inspired coordination."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/gtcode_mahalo_1200x630.jpg"
 twitter_image_alt: "The Global Cognitive Brain — GTCode article on distributed AI architecture"
 
 sitemap:

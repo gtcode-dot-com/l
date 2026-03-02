@@ -2,29 +2,31 @@
 draft: false
 weight: 8
 title: "The Zero Commission"
-seo_title: "The Zero Commission — Judicial Corruption in Hawaii's Court Oversight System"
-subtitle: "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work"
-description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of complaints against judges since 2018. An investigation into judicial corruption, misconduct, and the broken oversight system protecting Hawaii's courts."
+seo_title: "Hawaii Commission on Judicial Conduct: The Zero Commission"
+subtitle: "Closed Loop Part I on appointments, confidentiality rules, and complaint outcomes"
+description: "Public records map Hawaii's Commission on Judicial Conduct appointment structure, complaint outcomes, and confidentiality rules in The Closed Loop Part I."
 date: 2026-02-15
-lastmod: 2026-02-15
+lastmod: 2026-03-01
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 15, 2026"
+modified_display: "March 1, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-zero-commission/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
-  - "judicial corruption hawaii"
-  - "hawaii judge misconduct"
   - "hawaii commission on judicial conduct"
-  - "corrupt judges hawaii"
-  - "hawaii court corruption"
+  - "commission on judicial conduct"
+  - "judicial corruption hawaii"
+  - "hawaii judicial oversight"
+  - "hawaii judge misconduct"
   - "judicial accountability hawaii"
   - "hawaii judge complaint dismissed"
-  - "hawaii judicial oversight"
-  - "Commission on Judicial Conduct"
   - "judicial misconduct complaints hawaii"
+  - "rule 8.4 hawaii commission on judicial conduct"
+  - "hb 3056 judicial reform hawaii"
+  - "oip opinion f22-02 hawaii"
 
 # Series
 series: "The Closed Loop"
@@ -34,14 +36,15 @@ series_part_title: "The Judicial Branch"
 
 # Card Display
 eyebrow: "The Closed Loop"
-card_summary: "Seven members. All appointed by the Supreme Court they exist to oversee. 1,009 inquiries. Seven formal complaints. Zero sustained. This is the architecture of unaccountability."
+card_summary: "Public records map Hawaii's Commission on Judicial Conduct appointment structure, complaint processing, confidentiality rules, and reported outcomes in Closed Loop Part I."
 
 # Open Graph
-og_title: "Judicial Corruption in Hawaii — The Zero Commission Investigation"
-og_description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of judge misconduct complaints since 2018. An investigation into the corrupt oversight system protecting Hawaii's courts."
-og_image: "https://gtcode.com/img/ou-zero-commission-og-1200x630.jpg"
+og_title: "Hawaii Commission on Judicial Conduct: The Zero Commission"
+og_description: "Public records map Hawaii's Commission on Judicial Conduct appointment structure, complaint outcomes, and confidentiality rules in The Closed Loop Part I."
+og_image: "/img/ou-zero-commission-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
+og_image_alt: "Illustration representing Hawaii's Commission on Judicial Conduct and its zero sustained complaints record"
 og_type: "article"
 
 # Article metadata
@@ -62,9 +65,9 @@ article_tags:
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "Judicial Corruption in Hawaii — The Zero Commission Investigation"
-twitter_description: "Hawaii's Commission on Judicial Conduct: 100% of judge misconduct complaints dismissed since 2018. Seven members appointed by the court they oversee."
-twitter_image: "https://gtcode.com/img/ou-zero-commission-og-1200x630.jpg"
+twitter_title: "Hawaii Commission on Judicial Conduct: The Zero Commission"
+twitter_description: "Public records map Hawaii's Commission on Judicial Conduct appointment structure, complaint outcomes, and confidentiality rules in The Closed Loop Part I."
+twitter_image: "/img/ou-zero-commission-og-1200x630.jpg"
 twitter_image_alt: "The Zero Commission — investigation into Hawaii's Commission on Judicial Conduct"
 
 # Agentic Context
@@ -115,9 +118,11 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/the-zero-commission/"
       headline: "The Zero Commission"
       alternativeHeadline: "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work"
-      description: "Hawaii's Commission on Judicial Conduct has dismissed 100% of complaints against judges since 2018. An investigation into judicial corruption, misconduct, and the broken oversight system protecting Hawaii's courts."
-      image: "https://gtcode.com/img/ou-zero-commission-og-1200x630.jpg"
+      description: "Public records map Hawaii's Commission on Judicial Conduct appointment structure, complaint outcomes, and confidentiality rules in The Closed Loop Part I."
+      url: "https://gtcode.com/investigation/the-zero-commission/"
+      image: "/img/ou-zero-commission-og-1200x630.jpg"
       datePublished: "2026-02-15T00:00:00Z"
+      dateModified: "2026-03-01T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -132,7 +137,32 @@ structured_data_graph:
           width: 180
           height: 180
       articleSection: "Investigations"
-      keywords: "judicial corruption hawaii, hawaii judge misconduct, Commission on Judicial Conduct, hawaii court corruption, judicial accountability hawaii, corrupt judges hawaii, hawaii judicial oversight, judicial misconduct complaints hawaii"
+      isPartOf:
+        - "@type": "CollectionPage"
+          "@id": "https://gtcode.com/investigation/#collection"
+          name: "Oahu Underground Investigations"
+          url: "https://gtcode.com/investigation/"
+        - "@type": "Article"
+          "@id": "https://gtcode.com/investigation/the-closed-loop/#article"
+          name: "The Closed Loop"
+          url: "https://gtcode.com/investigation/the-closed-loop/"
+      about:
+        - "@type": "Organization"
+          name: "Hawaii Commission on Judicial Conduct"
+        - "@type": "Organization"
+          name: "Supreme Court of Hawaii"
+        - "@type": "DefinedTerm"
+          name: "judicial oversight"
+        - "@type": "DefinedTerm"
+          name: "self-investigation"
+      mentions:
+        - "@type": "Legislation"
+          name: "HB 3056 (2008)"
+        - "@type": "CreativeWork"
+          name: "Rule 8.4, Rules of the Supreme Court of Hawaii"
+        - "@type": "CreativeWork"
+          name: "OIP Opinion Letter F22-02"
+      keywords: "hawaii commission on judicial conduct, judicial oversight hawaii, rule 8.4 confidentiality, hb 3056, closed loop series, complaint outcomes"
 ---
 
 There is a building in Honolulu where complaints go to die.
@@ -140,6 +170,15 @@ There is a building in Honolulu where complaints go to die.
 You wouldn't know it from the outside. The Commission on Judicial Conduct operates with all the visible urgency of a tide pool — still, contained, and utterly opaque. Seven members. All appointed by the very Supreme Court they exist to oversee. Proceedings sealed behind confidentiality rules so total that even acknowledging a complaint exists can get you sanctioned. In fiscal year 2023–2024, they received 1,009 inquiries from the public. They processed seven as formal complaints. They dismissed every single one.
 
 This is not a story about one bad judge. It would be easier if it were. One bad judge is a headline, a recall campaign, a segment on the evening news. One bad judge can be removed, and the system that produced him can shrug and call it an aberration. What I am describing is not an aberration. It is architecture.
+
+## Series Navigation
+
+- [Series hub: The Closed Loop](/investigation/the-closed-loop/)
+- Part I (this page): The Zero Commission
+- [Read Part II: The Paper Bag and the Architecture of Self-Investigation](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/)
+- [The Federal Layer: domestic federal network mapping](/investigation/the-federal-layer/)
+- [The Two Questions: federal investigative roadmap](/investigation/the-two-questions/)
+- [Investigations index](/investigation/)
 
 ---
 

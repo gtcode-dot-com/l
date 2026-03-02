@@ -9,7 +9,7 @@ robots: "index, follow, max-image-preview:large"
 # Open Graph
 og_title: "Oahu Underground Investigations | Public-Interest Files on Hawaii Institutions"
 og_description: "Independent investigations covering Hawaii institutional accountability — media capture, judicial misconduct, and structural decay."
-og_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+og_image: "/img/ou-investigations-index-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
 og_type: "website"
@@ -29,7 +29,7 @@ meta_keywords:
 twitter_card: "summary_large_image"
 twitter_title: "Oahu Underground Investigations | Public-Interest Files on Hawaii Institutions"
 twitter_description: "Investigate the structural forces that prevent accountability in Hawaiʻi — media capture, judicial oversight failures, and institutional decay."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 
 # Agentic Comment
 agentic_comment: |

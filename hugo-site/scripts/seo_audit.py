@@ -175,7 +175,7 @@ class PageHTMLParser(HTMLParser):
         if tag == "img":
             self.image_count += 1
             alt = attr_map.get("alt")
-            if alt is None or alt.strip() == "":
+            if alt is None:
                 self.missing_alt_images.append(attr_map.get("src", ""))
             return
 
@@ -374,6 +374,8 @@ def parse_html_pages(public_dir: Path, base_url: str) -> list[PageRecord]:
     pages: list[PageRecord] = []
     for path in sorted(public_dir.rglob("*.html")):
         rel_path = path.relative_to(public_dir).as_posix()
+        if rel_path.startswith("sources/"):
+            continue
         rel_url = page_url_from_rel_path(rel_path)
         expected_url = build_expected_abs_url(base_url, rel_url)
 

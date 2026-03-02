@@ -29,9 +29,10 @@ meta_keywords:
 # Open Graph
 og_title: "The Aloha Protection Racket"
 og_description: "Investigative report documenting institutional failures that shielded an individual accused of violence in Hawaiʻi — judiciary, law enforcement, and oversight."
-og_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+og_image: "/img/ou-aloha-protection-racket-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
+og_image_alt: "Illustration of a shadowed courtroom with an interrupted audio waveform and a chain of static dominoes — representing documented institutional non-response that shielded misconduct from accountability"
 og_type: "article"
 
 # Article metadata
@@ -49,7 +50,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Aloha Protection Racket"
 twitter_description: "How documented institutional failures across Hawaiʻi's institutions shielded an individual accused of violence from accountability."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/ou-aloha-protection-racket-og-1200x630.jpg"
 twitter_image_alt: "The Aloha Protection Racket — investigative report on Judge Wilson Loo"
 
 # Agentic Context
@@ -78,7 +79,7 @@ structured_data_graph:
       headline: "The Aloha Protection Racket"
       alternativeHeadline: "An Investigative Report on Judge Wilson Loo"
       description: "Investigative report alleging Judge Wilson Loo orchestrated a protection racket from the bench, enabled by HPD and Hawaiʻi's judicial oversight system."
-      image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+      image: "/img/ou-aloha-protection-racket-og-1200x630.jpg"
       datePublished: "2025-08-26T00:00:00Z"
       author:
         "@type": "Person"

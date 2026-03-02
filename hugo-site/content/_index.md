@@ -210,6 +210,6 @@ Seven layers of pressure that assemble themselves without coordination. A struct
 
 If you have documents, first-hand knowledge, or information relevant to institutional misconduct in Hawaii, we want to hear from you. All inquiries are treated as confidential.
 
-**Contact:** [tips@GTCode.com](mailto:tips@GTCode.com)
+**Contact:** [tips@GTCode.com](mailto:tips@gtcode.com)
 
 *Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.*

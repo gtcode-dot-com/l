@@ -71,7 +71,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Accountability from Washington to Ward Avenue"
 twitter_description: "How federal intelligence reform parallels Hawaii's unresolved institutional accountability failures."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/gtcode_mahalo_1200x630.jpg"
 twitter_image_alt: "Accountability from Washington to Ward Avenue — GTCode article on institutional reform"
 
 sitemap:

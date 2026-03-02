@@ -68,7 +68,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Mathematics of Coordinated Silence"
 twitter_description: "Computational detection of institutional coverups — alignment anomalies, coordination signatures, and the defection gradient."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/gtcode_mahalo_1200x630.jpg"
 twitter_image_alt: "The Mathematics of Coordinated Silence — GTCode article on computational investigation"
 
 structured_data_webpage:

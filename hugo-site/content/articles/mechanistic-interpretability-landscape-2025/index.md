@@ -77,7 +77,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Mechanistic Interpretability Landscape 2025"
 twitter_description: "How researchers are learning to understand large language models — control, truth detection, safety, and fundamental limitations."
-twitter_image: "https://gtcode.com/img/gtcode_mahalo_1200x630.jpg"
+twitter_image: "/img/gtcode_mahalo_1200x630.jpg"
 twitter_image_alt: "Mechanistic Interpretability Landscape — GTCode technical survey"
 
 sitemap:

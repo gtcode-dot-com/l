@@ -31,9 +31,10 @@ card_summary: "Bing blocked an entire domain — including open-source Elixir so
 # Open Graph
 og_title: "The Index: How Bing Blocked an Entire Domain to Bury One Judge's Name"
 og_description: "Documented evidence of domain-level Bing search suppression targeting an independent journalism site and its open-source software repositories."
-og_image: "https://gtcode.com/img/bing-block-agent-session-manager.png"
+og_image: "/img/bing-block-agent-session-manager.png"
 og_image_width: 1200
 og_image_height: 628
+og_image_alt: "Screenshot of Bing search agent session manager blocking gtcode.com — documenting algorithmic suppression of investigative journalism"
 og_type: "article"
 
 # Article metadata
@@ -52,7 +53,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Index: How Bing Blocked an Entire Domain to Bury One Judge's Name"
 twitter_description: "Bing blocked open-source Elixir repos alongside judicial corruption investigations. The evidence comes from Microsoft's own Webmaster Tools."
-twitter_image: "https://gtcode.com/img/bing-block-agent-session-manager.png"
+twitter_image: "/img/bing-block-agent-session-manager.png"
 twitter_image_alt: "Bing Webmaster Tools showing domain-level block of gtcode.com"
 
 # Agentic Context
@@ -96,7 +97,7 @@ structured_data:
       headline: "The Index: How Bing Blocked an Entire Domain to Bury One Judge's Name"
       alternativeHeadline: "Domain-Level Search Suppression of an Independent Journalism Site"
       description: "Documented evidence of Bing search suppression targeting gtcode.com"
-      image: "https://gtcode.com/img/bing-block-agent-session-manager.png"
+      image: "/img/bing-block-agent-session-manager.png"
       datePublished: "2026-02-13T00:00:00Z"
       author:
         "@type": "Person"
