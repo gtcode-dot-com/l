@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T10:15:30.048396+00:00'
-exported_at: '2026-02-20T10:15:33.269291+00:00'
+date: '2026-03-02T01:12:54.171500+00:00'
+exported_at: '2026-03-02T01:12:55.571225+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon
@@ -17,10 +17,8 @@ structured_data:
   author: ''
   description: 'In this post, we present a comprehensive evaluation framework for
     Amazon agentic AI systems that addresses the complexity of agentic AI applications
-    at Amazon through two core components: a generic evaluation workflow that standardizes
-    assessment procedures across diverse agent implementations, and an agent evaluation
-    library that provides systematic measurements and metrics in Amazon Bedrock AgentCore
-    Evaluations, along with Amazon use case-specific evaluation approaches and metrics. '
+    at Amazon through two core components: a generic evaluation workflow that standardizes
+    assessment procedures across diverse agent implementations, and an agent evaluati...'
   headline: 'Evaluating AI agents: Real-world lessons from building agentic systems
     at Amazon'
   inLanguage: en
@@ -29,10 +27,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Evaluating AI agents: Real-world lessons from building agentic systems at
   Amazon'
-updated_at: '2026-02-20T10:15:30.048396+00:00'
+updated_at: '2026-03-02T01:12:54.171500+00:00'
 url_hash: b69c04624429ea5568a413f570a717a7dfaeca6f
 ---
 

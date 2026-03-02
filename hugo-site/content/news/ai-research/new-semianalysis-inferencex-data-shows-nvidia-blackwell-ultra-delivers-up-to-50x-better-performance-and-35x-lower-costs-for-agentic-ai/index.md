@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T12:15:34.456388+00:00'
-exported_at: '2026-02-20T12:15:37.129568+00:00'
+date: '2026-03-02T01:12:51.125246+00:00'
+exported_at: '2026-03-02T01:12:55.589306+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai
@@ -27,10 +27,10 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: New SemiAnalysis InferenceX Data Shows NVIDIA Blackwell Ultra Delivers up to
   50x Better Performance and 35x Lower Costs for Agentic AI
-updated_at: '2026-02-20T12:15:34.456388+00:00'
+updated_at: '2026-03-02T01:12:51.125246+00:00'
 url_hash: bfc42a6bd37467d8b106ad2a32d34cf86e902452
 ---
 

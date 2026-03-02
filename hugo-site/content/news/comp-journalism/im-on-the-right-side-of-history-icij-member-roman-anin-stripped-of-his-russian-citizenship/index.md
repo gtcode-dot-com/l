@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-22T20:15:40.225310+00:00'
-exported_at: '2026-01-22T20:15:42.529017+00:00'
+date: '2026-03-02T01:13:19.502369+00:00'
+exported_at: '2026-03-02T01:13:21.735370+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/news/2026/01/im-on-the-right-side-of-history-icij-member-roman-anin-stripped-of-his-russian-citizenship
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://www.icij.org/news/2026/01/im-on-the-right-side-of-history-icij-member-roman-anin-stripped-of-his-russian-citizenship
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: '‘I’m on the right side of history’: ICIJ member Roman Anin stripped of his
   Russian citizenship'
-updated_at: '2026-01-22T20:15:40.225310+00:00'
+updated_at: '2026-03-02T01:13:19.502369+00:00'
 url_hash: c8ad1ee430e80c4daea7ec8fd4a69561a9b4c6be
 ---
 

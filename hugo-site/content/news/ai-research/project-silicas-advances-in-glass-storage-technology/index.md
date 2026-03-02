@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T08:15:34.380841+00:00'
-exported_at: '2026-02-20T08:15:37.772214+00:00'
+date: '2026-03-02T01:12:52.906128+00:00'
+exported_at: '2026-03-02T01:12:55.582856+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/project-silicas-advances-in-glass-storage-technology
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.microsoft.com/en-us/research/blog/project-silicas-advances-in-glass-storage-technology
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Project Silica’s advances in glass storage technology
-updated_at: '2026-02-20T08:15:34.380841+00:00'
+updated_at: '2026-03-02T01:12:52.906128+00:00'
 url_hash: b3986ac1316c63888347ad3c67c5e408ab56ee29
 ---
 

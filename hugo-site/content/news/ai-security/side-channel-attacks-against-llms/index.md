@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T12:15:14.995837+00:00'
-exported_at: '2026-02-20T12:15:18.044739+00:00'
+date: '2026-03-02T01:12:34.445929+00:00'
+exported_at: '2026-03-02T01:12:35.652318+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/side-channel-attacks-against-llms.html
@@ -19,19 +19,7 @@ structured_data:
     LLMs. “Remote Timing Attacks on Efficient Language Model Inference“: Abstract:
     Scaling up language models has significantly increased their capabilities. But
     larger models are slower models, and so there is now an extensive body of work
-    (e.g., speculative sampling or parallel decoding) that improves the (average case)
-    efficiency of language model generation. But these techniques introduce data-dependent
-    timing characteristics. We show it is possible to exploit these timing differences
-    to mount a timing attack. By monitoring the (encrypted) network traffic between
-    a victim user and a remote language model, we can learn information about the
-    content of messages by noting when responses are faster or slower. With complete
-    black-box access, on open source systems we show how it is possible to learn the
-    topic of a user’s conversation (e.g., medical advice vs. coding assistance) with
-    90%+ precision, and on production systems like OpenAI’s ChatGPT and Anthropic’s
-    Claude we can distinguish between specific messages or infer the user’s language.
-    We further show that an active adversary can leverage a boosting attack to recover
-    PII placed in messages (e.g., phone numbers or credit card numbers) for open source
-    systems. We conclude with potential defenses and directions for future work...'
+    (e.g., s...'
   headline: Side-Channel Attacks Against LLMs
   inLanguage: en
   keywords: []
@@ -39,9 +27,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/side-channel-attacks-against-llms.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Side-Channel Attacks Against LLMs
-updated_at: '2026-02-20T12:15:14.995837+00:00'
+updated_at: '2026-03-02T01:12:34.445929+00:00'
 url_hash: f52db74d18b1e403135d5769f1838635139541dc
 ---
 
@@ -79,4 +67,4 @@ Tags:
 
 [Posted on February 17, 2026 at 7:01 AM](https://www.schneier.com/blog/archives/2026/02/side-channel-attacks-against-llms.html)
 •
-[7 Comments](https://www.schneier.com/blog/archives/2026/02/side-channel-attacks-against-llms.html#comments)
+[8 Comments](https://www.schneier.com/blog/archives/2026/02/side-channel-attacks-against-llms.html#comments)

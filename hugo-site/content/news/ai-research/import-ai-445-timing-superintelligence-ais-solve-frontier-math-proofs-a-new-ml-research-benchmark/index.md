@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T18:15:29.984017+00:00'
-exported_at: '2026-02-20T18:15:32.971465+00:00'
+date: '2026-03-02T01:12:51.617857+00:00'
+exported_at: '2026-03-02T01:12:55.586547+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-445-timing-superintelligence
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-445-timing-superintelligence
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 445: Timing superintelligence; AIs solve frontier math proofs; a
   new ML research benchmark'
-updated_at: '2026-02-20T18:15:29.984017+00:00'
+updated_at: '2026-03-02T01:12:51.617857+00:00'
 url_hash: 690482fbdeff9135987f5e272cfd172841cbdc2a
 ---
 

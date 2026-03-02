@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T08:15:35.500046+00:00'
-exported_at: '2026-02-20T08:15:37.761353+00:00'
+date: '2026-03-02T01:12:53.527649+00:00'
+exported_at: '2026-03-02T01:12:55.579324+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/build-unified-intelligence-with-amazon-bedrock-agentcore
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/build-unified-intelligence-with-amazon-bedrock-agentcore
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Build unified intelligence with Amazon Bedrock AgentCore
-updated_at: '2026-02-20T08:15:35.500046+00:00'
+updated_at: '2026-03-02T01:12:53.527649+00:00'
 url_hash: 47387120b672789917ba96d23a10231d7bcfe69c
 ---
 

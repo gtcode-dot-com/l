@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-02T18:15:52.978738+00:00'
-exported_at: '2026-02-02T18:15:55.216640+00:00'
+date: '2026-03-02T01:13:14.989959+00:00'
+exported_at: '2026-03-02T01:13:21.746169+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/news/2026/02/asian-financial-hubs-are-reshaping-africas-offshore-economy
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://www.icij.org/news/2026/02/asian-financial-hubs-are-reshaping-africas-offshore-economy
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Asian financial hubs are reshaping Africa’s offshore economy
-updated_at: '2026-02-02T18:15:52.978738+00:00'
+updated_at: '2026-03-02T01:13:14.989959+00:00'
 url_hash: 96d61459b94a95c9103265cb1fb775554be34e1f
 ---
 

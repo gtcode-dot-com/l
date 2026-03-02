@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-29T12:15:44.289157+00:00'
-exported_at: '2026-01-29T12:15:46.778124+00:00'
+date: '2026-03-02T01:13:18.722437+00:00'
+exported_at: '2026-03-02T01:13:21.739429+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/auditors-at-bitpandas-german-subsidiary-flagged-information-security-issues-echoing-regulators-concerns
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://www.icij.org/investigations/coin-laundry/auditors-at-bitpandas-german-subsidiary-flagged-information-security-issues-echoing-regulators-concerns
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Auditors at Bitpanda’s German subsidiary flagged information security issues,
   echoing regulator’s concerns
-updated_at: '2026-01-29T12:15:44.289157+00:00'
+updated_at: '2026-03-02T01:13:18.722437+00:00'
 url_hash: 6c6b5cde0c272826812b2bb7c664f07832f10d08
 ---
 

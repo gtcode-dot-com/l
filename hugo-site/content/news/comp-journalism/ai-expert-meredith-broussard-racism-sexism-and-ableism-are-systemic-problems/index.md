@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-12-24T12:03:42.977478+00:00'
-exported_at: '2025-12-24T12:03:45.229303+00:00'
+date: '2026-03-02T01:13:20.439672+00:00'
+exported_at: '2026-03-02T01:13:21.618617+00:00'
 feed: https://www.theguardian.com/media/data-journalism/rss
 language: en
 source_url: https://www.theguardian.com/technology/2023/mar/26/artificial-intelligence-meredith-broussard-more-than-a-glitch-racism-sexism-ableism
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.theguardian.com/technology/2023/mar/26/artificial-intelligence-meredith-broussard-more-than-a-glitch-racism-sexism-ableism
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'AI expert Meredith Broussard: ‘Racism, sexism and ableism are systemic problems’'
-updated_at: '2025-12-24T12:03:42.977478+00:00'
+updated_at: '2026-03-02T01:13:20.439672+00:00'
 url_hash: 7a0d2df9a6b32d3c5a7e05517bbee188c43d6c65
 ---
 
@@ -58,6 +58,8 @@ AI is in all our technologies nowadays. But we can demand that our technologies 
 I’m enthusiastic about the distinction in the
 [proposed European Union AI Act](https://artificialintelligenceact.eu/)
 that divides uses into high and low risk based on context. A low-risk use of facial recognition might be using it to unlock your phone: the stakes are low – you have a passcode if it doesn’t work. But facial recognition in policing would be a high-risk use that needs to be regulated or – better still – not deployed at all because it leads to wrongful arrests and isn’t very effective. It isn’t the end of the world if you don’t use a computer for a thing. You can’t assume that a technological system is good because it exists.
+
+double quotation mark
 
 > A lot of people imagine a sleek AI future where machines replace doctors. This does not sound enticing to me
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T10:15:15.134606+00:00'
-exported_at: '2026-02-20T10:15:17.599130+00:00'
+date: '2026-03-02T01:12:33.787113+00:00'
+exported_at: '2026-03-02T01:12:35.666291+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/ai-found-twelve-new-vulnerabilities-in-openssl.html
@@ -19,10 +19,7 @@ structured_data:
     It Works,” and I agree: In the latest OpenSSL security release> on January 27,
     2026, twelve new zero-day vulnerabilities (meaning unknown to the maintainers
     at time of disclosure) were announced. Our AI system is responsible for the original
-    discovery of all twelve, each found and responsibly disclosed to the OpenSSL team
-    during the fall and winter of 2025. Of those, 10 were assigned CVE-2025 identifiers
-    and 2 received CVE-2026 identifiers. Adding the 10 to the three we already found
-    in the ...'
+    discover...'
   headline: AI Found Twelve New Vulnerabilities in OpenSSL
   inLanguage: en
   keywords: []
@@ -30,9 +27,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/ai-found-twelve-new-vulnerabilities-in-openssl.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: AI Found Twelve New Vulnerabilities in OpenSSL
-updated_at: '2026-02-20T10:15:15.134606+00:00'
+updated_at: '2026-03-02T01:12:33.787113+00:00'
 url_hash: d1b9d374fbe1d2a5200c59fc980f47277903ccb8
 ---
 
@@ -74,6 +71,6 @@ Tags:
 
 [Posted on February 18, 2026 at 7:03 AM](https://www.schneier.com/blog/archives/2026/02/ai-found-twelve-new-vulnerabilities-in-openssl.html)
 •
-[19 Comments](https://www.schneier.com/blog/archives/2026/02/ai-found-twelve-new-vulnerabilities-in-openssl.html#comments)
+[20 Comments](https://www.schneier.com/blog/archives/2026/02/ai-found-twelve-new-vulnerabilities-in-openssl.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

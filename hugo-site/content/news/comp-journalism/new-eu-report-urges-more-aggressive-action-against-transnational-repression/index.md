@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-29T18:15:41.405038+00:00'
-exported_at: '2026-01-29T18:15:44.201676+00:00'
+date: '2026-03-02T01:13:16.933581+00:00'
+exported_at: '2026-03-02T01:13:21.742996+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/china-targets/new-eu-report-urges-more-aggressive-action-against-transnational-repression
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://www.icij.org/investigations/china-targets/new-eu-report-urges-more-aggressive-action-against-transnational-repression
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: New EU report urges more aggressive action against transnational repression
-updated_at: '2026-01-29T18:15:41.405038+00:00'
+updated_at: '2026-03-02T01:13:16.933581+00:00'
 url_hash: cc6c8de98a01308d5bbb89ad1f90f1ddece884f0
 ---
 
