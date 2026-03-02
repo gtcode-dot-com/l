@@ -20,12 +20,6 @@ relativeURLs = false
     notAlternative = false
     suffix = "md"
 
-  [outputFormats.news-sitemap]
-    baseName = "news-sitemap"
-    mediaType = "application/xml"
-    isPlainText = false
-    notAlternative = true
-
   [outputFormats.plaintextagent]
     mediaType = "text/plain"
     baseName = "agent"
@@ -76,7 +70,7 @@ relativeURLs = false
     path = ""
 
 [outputs]
-  home = ["HTML", "Markdown", "RSS", "news-sitemap", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextai", "plaintexthumans", "plaintextrobots"]
+  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextai", "plaintexthumans", "plaintextrobots"]
   section = ["HTML", "Markdown", "RSS"]
   page = ["HTML", "Markdown"]
 

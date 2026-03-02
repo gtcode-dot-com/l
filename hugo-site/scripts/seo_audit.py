@@ -818,18 +818,23 @@ def run_audit(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
     )
 
     sitemap_urls, sitemap_error = parse_sitemap_locs(public_dir / "sitemap.xml")
-    news_sitemap_urls, news_sitemap_error = parse_sitemap_locs(public_dir / "news-sitemap.xml")
     if sitemap_error:
         add_check(checks, "sitemap.main_present_and_valid", 1, sitemap_error)
         sitemap_urls = set()
     else:
         add_check(checks, "sitemap.main_present_and_valid", 0, "sitemap.xml is present and parseable")
 
-    if news_sitemap_error:
-        add_check(checks, "sitemap.news_present_and_valid", 1, news_sitemap_error)
-        news_sitemap_urls = set()
+    news_sitemap_path = public_dir / "news-sitemap.xml"
+    if news_sitemap_path.exists():
+        news_sitemap_urls, news_sitemap_error = parse_sitemap_locs(news_sitemap_path)
+        if news_sitemap_error:
+            add_check(checks, "sitemap.news_present_and_valid", 1, news_sitemap_error)
+            news_sitemap_urls = set()
+        else:
+            add_check(checks, "sitemap.news_present_and_valid", 0, "news-sitemap.xml is present and parseable")
     else:
-        add_check(checks, "sitemap.news_present_and_valid", 0, "news-sitemap.xml is present and parseable")
+        news_sitemap_urls = set()
+        add_check(checks, "sitemap.news_present_and_valid", 0, "news-sitemap.xml not generated (skipped)")
 
     indexable_url_set = {normalize_url(page.expected_url) for page in indexable_pages}
     all_html_url_set = {normalize_url(page.expected_url) for page in pages}

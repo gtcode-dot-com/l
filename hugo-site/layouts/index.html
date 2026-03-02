@@ -87,9 +87,6 @@
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" title="{{ $brandName }}" href="{{ .RelPermalink }}" />
     {{ end }}
-    {{ with .Site.Home.OutputFormats.Get "news-sitemap" }}
-    <link rel="alternate" type="application/xml" title="{{ $brandName }} News Sitemap" href="{{ .RelPermalink }}" />
-    {{ end }}
 
     {{ $ogImage := "/img/gtcode-core.svg" }}
     {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}

@@ -84,9 +84,6 @@
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" title="{{ $seoSiteName }}" href="{{ .RelPermalink }}">
     {{ end }}
-    {{ with .Site.Home.OutputFormats.Get "news-sitemap" }}
-    <link rel="alternate" type="application/xml" title="{{ $seoSiteName }} News Sitemap" href="{{ .RelPermalink }}">
-    {{ end }}
     {{ with .Site.GetPage "section" "news" }}
       {{ with .OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" title="{{ printf "%s News" $seoSiteName }}" href="{{ .RelPermalink }}">

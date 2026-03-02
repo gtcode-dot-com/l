@@ -24,7 +24,6 @@ User-agent: Claude-Web
 Allow: /
 
 Sitemap: {{ $siteRoot }}/sitemap.xml
-Sitemap: {{ $siteRoot }}/news-sitemap.xml
 {{- if .Site.Params.robots_crawl_delay_enabled }}
 
 Crawl-delay: {{ .Site.Params.robots_crawl_delay_seconds | default 1 }}

@@ -22,7 +22,6 @@ Allow: /
 
 # Sitemap locations
 Sitemap: https://gtcode.com/sitemap.xml
-Sitemap: https://gtcode.com/news-sitemap.xml
 
 {{- if .Site.Params.robots_crawl_delay_enabled }}
 # Crawl delay (optional; disabled by default)
