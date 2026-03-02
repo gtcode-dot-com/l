@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T08:15:33.257165+00:00'
-exported_at: '2026-02-20T08:15:37.773936+00:00'
+date: '2026-03-02T03:56:46.028773+00:00'
+exported_at: '2026-03-02T03:56:49.810600+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/media-authenticity-methods-in-practice-capabilities-limitations-and-directions
@@ -27,9 +27,9 @@ structured_data:
   original_source: https://www.microsoft.com/en-us/research/blog/media-authenticity-methods-in-practice-capabilities-limitations-and-directions
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Media Authenticity Methods in Practice: Capabilities, Limitations, and Directions'
-updated_at: '2026-02-20T08:15:33.257165+00:00'
+updated_at: '2026-03-02T03:56:46.028773+00:00'
 url_hash: 3f2c674b3ac1490184353ef815aade012ee0d025
 ---
 
@@ -66,11 +66,11 @@ To address these challenges, we launched a comprehensive evaluation of the real-
 report](https://www.microsoft.com/en-us/research/publication/media-integrity-and-authentication-status-directions-and-futures/)
 . The report distills lessons learned and outlines practical directions for strengthening media integrity in the years ahead.
 
-Spotlight: Event Series
+video series
 
-## Microsoft Research Forum
+## On Second Thought
 
-Join us for a continuous exchange of ideas about research in the era of general AI. Watch the first four episodes on demand.
+A video series with Sinead Bovell built around the questions everyone’s asking about AI. With expert voices from across Microsoft, we break down the tension and promise of this rapidly changing technology, exploring what’s evolving and what’s possible.
 
 Opens in a new tab
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T22:15:14.852391+00:00'
-exported_at: '2026-02-20T22:15:17.059667+00:00'
+date: '2026-03-02T03:56:27.853510+00:00'
+exported_at: '2026-03-02T03:56:29.006959+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-cartoon-3.html
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-cartoon-3.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Friday Squid Blogging: Squid Cartoon'
-updated_at: '2026-02-20T22:15:14.852391+00:00'
+updated_at: '2026-03-02T03:56:27.853510+00:00'
 url_hash: b4bea74720f8004a0100b5ab663e36f93be4b24b
 ---
 
@@ -48,4 +48,4 @@ Tags:
 
 [Posted on February 20, 2026 at 5:05 PM](https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-cartoon-3.html)
 •
-[0 Comments](https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-cartoon-3.html#respond)
+[39 Comments](https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-cartoon-3.html#comments)

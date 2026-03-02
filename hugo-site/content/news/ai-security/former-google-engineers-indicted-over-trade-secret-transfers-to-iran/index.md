@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T08:15:15.687613+00:00'
-exported_at: '2026-02-20T08:15:18.931781+00:00'
+date: '2026-03-02T03:56:26.908656+00:00'
+exported_at: '2026-03-02T03:56:29.020171+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/three-former-google-engineers-indicted.html
@@ -17,28 +17,18 @@ structured_data:
   author: ''
   description: DOJ indicts two ex-Google engineers and a spouse for allegedly stealing
     Tensor trade secrets, sending hundreds of files to Iran, and obstructing justi
-  headline: Three Former Google Engineers Indicted Over Trade Secret Transfers to
-    Iran
+  headline: Former Google Engineers Indicted Over Trade Secret Transfers to Iran
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://thehackernews.com/2026/02/three-former-google-engineers-indicted.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
-title: Three Former Google Engineers Indicted Over Trade Secret Transfers to Iran
-updated_at: '2026-02-20T08:15:15.687613+00:00'
+    name: GTCode
+title: Former Google Engineers Indicted Over Trade Secret Transfers to Iran
+updated_at: '2026-03-02T03:56:26.908656+00:00'
 url_hash: 03624afeea89dce4a1c51f7c56f1c68a2ea536a1
 ---
-
-**
-
-Ravie Lakshmanan
-**
-
-Feb 20, 2026
-
-Insider Threat / Corporate Espionage
 
 Two former Google engineers and one of their husbands have been
 [indicted](https://www.courtlistener.com/docket/72303995/united-states-v-ghandali-etal/)
@@ -49,6 +39,8 @@ Samaneh Ghandali, 41, and her husband Mohammadjavad Khosravi (aka Mohammad Khosr
 The three defendants, all Iranian nationals and residing in San Jose, were arrested on Thursday and made their initial appearances in federal district court in the California city.
 
 According to the U.S. Department of Justice (DoJ), the Ghandali sisters worked at Google before joining another technology company identified as Company 3. Khosravi is said to have been employed at a different company (named Company 2). All three of them landed jobs in the area of mobile computer processors.
+
+While the names of Company 2 and Company 3 were not disclosed, The Hacker News found that Soroor Ghandali worked as a hardware engineer intern at Google before joining Intel. Khosravi, on the other hand, was employed at Qualcomm as an ASIC design engineer.
 
 "As part of the alleged scheme to commit trade secret theft, the defendants used their employment to obtain access to confidential and sensitive information," the DoJ
 [said](https://www.justice.gov/usao-ndca/pr/silicon-valley-engineers-charged-stealing-trade-secrets-leading-tech-companies-and)

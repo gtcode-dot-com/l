@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T22:15:31.653576+00:00'
-exported_at: '2026-02-20T22:15:34.271955+00:00'
+date: '2026-03-02T03:56:46.702798+00:00'
+exported_at: '2026-03-02T03:56:49.807286+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-in-2025-a-year-in-review-part-1-flexible-training-plans-and-improvements-to-price-performance-for-inference-workloads
@@ -19,9 +19,7 @@ structured_data:
     offerings along four dimensions: capacity, price performance, observability, and
     usability. In this series of posts, we discuss these various improvements and
     their benefits. In Part 1, we discuss capacity improvements with the launch of
-    Flexible Training Plans. We also describe improvements to price performance for
-    inference workloads. In Part 2, we discuss enhancements made to observability,
-    model customization, and model hosting.'
+    F...'
   headline: 'Amazon SageMaker AI in 2025, a year in review part 1: Flexible Training
     Plans and improvements to price performance for inference workloads'
   inLanguage: en
@@ -30,10 +28,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-in-2025-a-year-in-review-part-1-flexible-training-plans-and-improvements-to-price-performance-for-inference-workloads
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Amazon SageMaker AI in 2025, a year in review part 1: Flexible Training Plans
   and improvements to price performance for inference workloads'
-updated_at: '2026-02-20T22:15:31.653576+00:00'
+updated_at: '2026-03-02T03:56:46.702798+00:00'
 url_hash: 99708c0a0a0c29e2394c773e939d9c8f5b5ddd97
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T22:15:31.996286+00:00'
-exported_at: '2026-02-20T22:15:34.267967+00:00'
+date: '2026-03-02T03:56:47.299758+00:00'
+exported_at: '2026-03-02T03:56:49.803267+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-in-2025-a-year-in-review-part-2-improved-observability-and-enhanced-features-for-sagemaker-ai-model-customization-and-hosting
@@ -19,20 +19,19 @@ structured_data:
     help you train, tune, and host generative AI workloads. In Part 1 of this series,
     we discussed Flexible Training Plans and price performance improvements made to
     inference components. In this post, we discuss enhancements made to observability,
-    model customization, and model hosting. These improvements facilitate a whole
-    new class of customer use cases to be hosted on SageMaker AI.
+    model...
   headline: 'Amazon SageMaker AI in 2025, a year in review part 2: Improved observability
-    and enhanced features for SageMaker AI model customization and hosting'
+    and enhanced features for SageMaker AI model customization a...'
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-in-2025-a-year-in-review-part-2-improved-observability-and-enhanced-features-for-sagemaker-ai-model-customization-and-hosting
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Amazon SageMaker AI in 2025, a year in review part 2: Improved observability
   and enhanced features for SageMaker AI model customization and hosting'
-updated_at: '2026-02-20T22:15:31.996286+00:00'
+updated_at: '2026-03-02T03:56:47.299758+00:00'
 url_hash: c761f6773452754c33c16ed8ad558e64c3d6f994
 ---
 

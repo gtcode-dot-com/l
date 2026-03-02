@@ -1,0 +1,184 @@
+{{- $page := .page -}}
+{{- $srcInput := strings.TrimSpace (.src | default "") -}}
+{{- if ne $srcInput "" -}}
+  {{- $slotName := .slot | default "default" -}}
+  {{- $slots := $page.Site.Data.media_slots.slots | default dict -}}
+  {{- $slotConfig := index $slots $slotName | default (index $slots "default") -}}
+  {{- $widths := $slotConfig.widths | default (slice 360 480 640 760 960 1200) -}}
+  {{- $sizes := .sizes | default ($slotConfig.sizes | default "100vw") -}}
+  {{- $fetchpriority := .fetchpriority | default "high" -}}
+
+  {{- $src := $srcInput -}}
+  {{- if hasPrefix $src "http://" -}}
+    {{- $src = replace $src "http://" "https://" -}}
+  {{- end -}}
+
+  {{- $isRemote := or (hasPrefix $src "https://") (hasPrefix $src "http://") -}}
+  {{- if $isRemote -}}
+    {{- $parsedSrc := urls.Parse $src -}}
+    {{- $baseParsed := urls.Parse $page.Site.BaseURL -}}
+    {{- if eq (lower $parsedSrc.Host) (lower $baseParsed.Host) -}}
+      {{- $src = $parsedSrc.Path -}}
+      {{- $isRemote = false -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $href := $src -}}
+  {{- $srcset := slice -}}
+  {{- $mimeType := "" -}}
+
+  {{- if and (not $isRemote) (hasPrefix $src "/") -}}
+    {{- $ext := lower (path.Ext $src) -}}
+    {{- $base := strings.TrimSuffix $ext $src -}}
+    {{- $diskPath := printf "static%s" $src -}}
+    {{- $localExists := fileExists $diskPath -}}
+
+    {{- $width := 0 -}}
+    {{- if and $localExists (ne $ext ".svg") -}}
+      {{- with imageConfig $diskPath -}}
+        {{- $width = .Width -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $fallbackSrc := $src -}}
+    {{- $fallbackExt := $ext -}}
+    {{- if eq $ext ".webp" -}}
+      {{- range (slice ".jpg" ".jpeg" ".png") -}}
+        {{- $candidate := printf "%s%s" $base . -}}
+        {{- if fileExists (printf "static%s" $candidate) -}}
+          {{- $fallbackSrc = $candidate -}}
+          {{- $fallbackExt = . -}}
+          {{- break -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if and $localExists (or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".webp")) -}}
+      {{- $dimensionBase := replaceRE "-[0-9]+$" "" $base -}}
+      {{- $fallbackBase := strings.TrimSuffix $fallbackExt $fallbackSrc -}}
+      {{- $fallbackDimensionBase := replaceRE "-[0-9]+$" "" $fallbackBase -}}
+      {{- $webpCandidates := slice -}}
+      {{- $webpSrcset := slice -}}
+      {{- $rasterCandidates := slice -}}
+      {{- $rasterSrcset := slice -}}
+
+      {{- range $widths -}}
+        {{- $targetWidth := int . -}}
+        {{- if or (eq $width 0) (le $targetWidth $width) -}}
+          {{- $webpCandidate := printf "%s-%dw.webp" $base $targetWidth -}}
+          {{- if fileExists (printf "static%s" $webpCandidate) -}}
+            {{- $webpCandidates = $webpCandidates | append $webpCandidate -}}
+            {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webpCandidate $targetWidth) -}}
+          {{- else -}}
+            {{- $legacyWebp := printf "%s-%d.webp" $base $targetWidth -}}
+            {{- if fileExists (printf "static%s" $legacyWebp) -}}
+              {{- $webpCandidates = $webpCandidates | append $legacyWebp -}}
+              {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $legacyWebp $targetWidth) -}}
+            {{- else if ne $dimensionBase $base -}}
+              {{- $dimensionWebp := printf "%s-%d.webp" $dimensionBase $targetWidth -}}
+              {{- if fileExists (printf "static%s" $dimensionWebp) -}}
+                {{- $webpCandidates = $webpCandidates | append $dimensionWebp -}}
+                {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $dimensionWebp $targetWidth) -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+
+          {{- $rasterCandidate := printf "%s-%dw%s" $fallbackBase $targetWidth $fallbackExt -}}
+          {{- if fileExists (printf "static%s" $rasterCandidate) -}}
+            {{- $rasterCandidates = $rasterCandidates | append $rasterCandidate -}}
+            {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $rasterCandidate $targetWidth) -}}
+          {{- else -}}
+            {{- $legacyRaster := printf "%s-%d%s" $fallbackBase $targetWidth $fallbackExt -}}
+            {{- if fileExists (printf "static%s" $legacyRaster) -}}
+              {{- $rasterCandidates = $rasterCandidates | append $legacyRaster -}}
+              {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $legacyRaster $targetWidth) -}}
+            {{- else if ne $fallbackDimensionBase $fallbackBase -}}
+              {{- $dimensionRaster := printf "%s-%d%s" $fallbackDimensionBase $targetWidth $fallbackExt -}}
+              {{- if fileExists (printf "static%s" $dimensionRaster) -}}
+                {{- $rasterCandidates = $rasterCandidates | append $dimensionRaster -}}
+                {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $dimensionRaster $targetWidth) -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- if eq (len $webpSrcset) 0 -}}
+        {{- if eq $ext ".webp" -}}
+          {{- if gt $width 0 -}}
+            {{- $webpCandidates = $webpCandidates | append $src -}}
+            {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $src $width) -}}
+          {{- end -}}
+        {{- else -}}
+          {{- $pairWebp := printf "%s.webp" $base -}}
+          {{- if fileExists (printf "static%s" $pairWebp) -}}
+            {{- $webpCandidates = $webpCandidates | append $pairWebp -}}
+            {{- if gt $width 0 -}}
+              {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $pairWebp $width) -}}
+            {{- else -}}
+              {{- $webpSrcset = $webpSrcset | append $pairWebp -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- if and (eq (len $rasterSrcset) 0) (gt $width 0) -}}
+        {{- $rasterCandidates = $rasterCandidates | append $fallbackSrc -}}
+        {{- $rasterSrcset = $rasterSrcset | append (printf "%s %dw" $fallbackSrc $width) -}}
+      {{- end -}}
+
+      {{- if gt (len $webpSrcset) 0 -}}
+        {{- $href = index $webpCandidates 0 -}}
+        {{- $srcset = $webpSrcset -}}
+        {{- $mimeType = "image/webp" -}}
+      {{- else if gt (len $rasterSrcset) 0 -}}
+        {{- $href = index $rasterCandidates 0 -}}
+        {{- $srcset = $rasterSrcset -}}
+        {{- if eq $fallbackExt ".jpg" -}}
+          {{- $mimeType = "image/jpeg" -}}
+        {{- else if eq $fallbackExt ".jpeg" -}}
+          {{- $mimeType = "image/jpeg" -}}
+        {{- else if eq $fallbackExt ".png" -}}
+          {{- $mimeType = "image/png" -}}
+        {{- else if eq $fallbackExt ".webp" -}}
+          {{- $mimeType = "image/webp" -}}
+        {{- end -}}
+      {{- else if eq $ext ".jpg" -}}
+        {{- $mimeType = "image/jpeg" -}}
+      {{- else if eq $ext ".jpeg" -}}
+        {{- $mimeType = "image/jpeg" -}}
+      {{- else if eq $ext ".png" -}}
+        {{- $mimeType = "image/png" -}}
+      {{- else if eq $ext ".webp" -}}
+        {{- $mimeType = "image/webp" -}}
+      {{- else if eq $ext ".svg" -}}
+        {{- $mimeType = "image/svg+xml" -}}
+      {{- else if eq $ext ".avif" -}}
+        {{- $mimeType = "image/avif" -}}
+      {{- end -}}
+    {{- else if eq $ext ".svg" -}}
+      {{- $mimeType = "image/svg+xml" -}}
+    {{- end -}}
+  {{- else if $isRemote -}}
+    {{- $remoteExt := lower (path.Ext (urls.Parse $src).Path) -}}
+    {{- if eq $remoteExt ".jpg" -}}
+      {{- $mimeType = "image/jpeg" -}}
+    {{- else if eq $remoteExt ".jpeg" -}}
+      {{- $mimeType = "image/jpeg" -}}
+    {{- else if eq $remoteExt ".png" -}}
+      {{- $mimeType = "image/png" -}}
+    {{- else if eq $remoteExt ".webp" -}}
+      {{- $mimeType = "image/webp" -}}
+    {{- else if eq $remoteExt ".svg" -}}
+      {{- $mimeType = "image/svg+xml" -}}
+    {{- else if eq $remoteExt ".avif" -}}
+      {{- $mimeType = "image/avif" -}}
+    {{- end -}}
+  {{- end -}}
+
+  <link rel="preload" as="image" href="{{ $href }}"
+    {{- if gt (len $srcset) 0 }} {{ printf "imagesrcset=%q" (delimit $srcset ", ") | safeHTMLAttr }} {{ printf "imagesizes=%q" $sizes | safeHTMLAttr }}{{ end }}
+    {{- if ne $mimeType "" }} type="{{ $mimeType }}"{{ end }}
+    {{- if ne $fetchpriority "" }} fetchpriority="{{ $fetchpriority }}"{{ end }}
+  />
+{{- end -}}

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T16:15:17.586534+00:00'
-exported_at: '2026-02-20T16:15:20.221893+00:00'
+date: '2026-03-02T03:56:26.588787+00:00'
+exported_at: '2026-03-02T03:56:29.023001+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/fbi-reports-1900-atm-jackpotting.html
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/fbi-reports-1900-atm-jackpotting.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: FBI Reports 1,900 ATM Jackpotting Incidents Since 2020, $20M Lost in 2025
-updated_at: '2026-02-20T16:15:17.586534+00:00'
+updated_at: '2026-03-02T03:56:26.588787+00:00'
 url_hash: bcc211ebf0c943e81d7f3ebf04a70424d68576c1
 ---
 
@@ -70,3 +70,9 @@ in Mexico in 2013. Once installed, it grants threat actors complete control over
 The agency has outlined a long list of recommendations that organizations can adopt to mitigate jackpotting risks. This includes tightening physical security by installing threat sensors, setting up security cameras, and changing standard locks on ATM devices.
 
 Other measures involve auditing ATM devices, changing default credentials, configuring an automatic shutdown mode once indicators of compromise are detected, enforcing device allowlisting to prevent connection of unauthorized devices, and maintaining logs.
+
+## Update
+
+The U.S. has
+[indicted](https://www.justice.gov/opa/pr/six-more-defendants-charged-international-atm-jackpotting-scheme)
+six more suspects for ATM jackpotting crimes, accusing them of conspiracy to commit bank fraud, conspiracy to commit bank burglary and computer fraud, bank fraud, bank burglary, and damage to computers. The suspects are alleged to be affiliated with Tren de Aragua, a designated Foreign Terrorist Organization. With the latest development, a total of 93 defendants have been charged in connection with the scheme in recent months.

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T18:15:30.740518+00:00'
-exported_at: '2026-02-20T18:15:32.965762+00:00'
+date: '2026-03-02T03:56:48.027678+00:00'
+exported_at: '2026-03-02T03:56:49.800002+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/integrate-external-tools-with-amazon-quick-agents-using-model-context-protocol-mcp
@@ -16,10 +16,9 @@ structured_data:
   about: []
   author: ''
   description: In this post, you’ll use a six-step checklist to build a new MCP server
-    or validate and adjust an existing MCP server for Amazon Quick integration. The
-    Amazon Quick User Guide describes the MCP client behavior and constraints. This
-    is a “How to” guide for detailed implementation required by 3P partners to integrate
-    with Amazon Quick with MCP.
+    or validate and adjust an existing MCP server for Amazon Quick integration. The
+    Amazon Quick User Guide describes the MCP client behavior and constraints. This
+    is a “How to” guide for detailed implementation required by 3P partners to integrate...
   headline: Integrate external tools with Amazon Quick Agents using Model Context
     Protocol (MCP)
   inLanguage: en
@@ -28,10 +27,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/integrate-external-tools-with-amazon-quick-agents-using-model-context-protocol-mcp
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Integrate external tools with Amazon Quick Agents using Model Context Protocol
   (MCP)
-updated_at: '2026-02-20T18:15:30.740518+00:00'
+updated_at: '2026-03-02T03:56:48.027678+00:00'
 url_hash: cabe3d133cf5d5872209f2dbc0f7a6e24e6df6a8
 ---
 

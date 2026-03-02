@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T08:15:34.812004+00:00'
-exported_at: '2026-02-20T08:15:37.768687+00:00'
+date: '2026-03-02T03:56:48.639740+00:00'
+exported_at: '2026-03-02T03:56:49.793891+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/build-ai-workflows-on-amazon-eks-with-union-ai-and-flyte
@@ -18,9 +18,7 @@ structured_data:
   description: In this post, we explain how you can use the Flyte Python SDK to orchestrate
     and scale AI/ML workflows. We explore how the Union.ai 2.0 system enables deployment
     of Flyte on Amazon Elastic Kubernetes Service (Amazon EKS), integrating seamlessly
-    with AWS services like Amazon Simple Storage Service (Amazon S3), Amazon Aurora,
-    AWS Identity and Access Management (IAM), and Amazon CloudWatch. We explore the
-    solution through an AI workflow example, using the new Amazon S3 Vectors service.
+    with AWS services like Amazon Simple Storage Service (Amazon S3), Amazon...
   headline: Build AI workflows on Amazon EKS with Union.ai and Flyte
   inLanguage: en
   keywords: []
@@ -28,9 +26,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/build-ai-workflows-on-amazon-eks-with-union-ai-and-flyte
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Build AI workflows on Amazon EKS with Union.ai and Flyte
-updated_at: '2026-02-20T08:15:34.812004+00:00'
+updated_at: '2026-03-02T03:56:48.639740+00:00'
 url_hash: 66f1aa2578d53aba3fcde64a8c5a4adc4284df89
 ---
 

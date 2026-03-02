@@ -139,6 +139,12 @@
     <style>{{ $fontsCSS.Content | safeCSS }}</style>
     <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
+    {{ partial "media/preload-responsive-image.html" (dict
+      "page" .
+      "src" $homeHeroImage
+      "slot" "hero_banner"
+      "fetchpriority" "high"
+    ) }}
 
     <!-- Oahu Underground Stylesheet (inlined to eliminate render-blocking request) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify }}
