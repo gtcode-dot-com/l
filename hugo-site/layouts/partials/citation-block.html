@@ -1,0 +1,85 @@
+{{/*
+  Citation block partial — renders "How to Cite" section for citable pages.
+
+  Reads from site.Data.citations keyed by .RelPermalink.
+  Only renders if citation data exists for the current page.
+*/}}
+{{- $cite := index site.Data.citations .RelPermalink -}}
+{{- if $cite -}}
+<aside class="citation-block" aria-label="How to cite this publication">
+  <h2 class="citation-block-heading">How to Cite</h2>
+
+  <div class="citation-tabs" role="tablist" aria-label="Citation format">
+    <button class="citation-tab citation-tab-active" role="tab" aria-selected="true" aria-controls="cite-bibtex" id="tab-bibtex" data-format="bibtex">BibTeX</button>
+    <button class="citation-tab" role="tab" aria-selected="false" aria-controls="cite-apa" id="tab-apa" data-format="apa" tabindex="-1">APA</button>
+    <button class="citation-tab" role="tab" aria-selected="false" aria-controls="cite-chicago" id="tab-chicago" data-format="chicago" tabindex="-1">Chicago</button>
+  </div>
+
+  <div class="citation-panel citation-panel-active" role="tabpanel" id="cite-bibtex" aria-labelledby="tab-bibtex">
+    <pre class="citation-pre"><code>{{ $cite.bibtex }}</code></pre>
+  </div>
+  <div class="citation-panel" role="tabpanel" id="cite-apa" aria-labelledby="tab-apa" hidden>
+    <p class="citation-text">{{ $cite.apa | markdownify }}</p>
+  </div>
+  <div class="citation-panel" role="tabpanel" id="cite-chicago" aria-labelledby="tab-chicago" hidden>
+    <p class="citation-text">{{ $cite.chicago | markdownify }}</p>
+  </div>
+
+  <div class="citation-actions">
+    <button class="citation-copy" type="button" aria-label="Copy citation to clipboard" data-bibtex="{{ $cite.bibtex | htmlEscape }}" data-apa="{{ $cite.apa }}" data-chicago="{{ $cite.chicago }}">Copy</button>
+    <a class="citation-repo-link" href="{{ $cite.repo_url }}" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+</aside>
+
+<script>
+(function() {
+  var block = document.querySelector('.citation-block');
+  if (!block) return;
+
+  var tabs = block.querySelectorAll('[role="tab"]');
+  var panels = block.querySelectorAll('[role="tabpanel"]');
+  var copyBtn = block.querySelector('.citation-copy');
+  var activeFormat = 'bibtex';
+
+  function activate(tab) {
+    tabs.forEach(function(t) {
+      t.classList.remove('citation-tab-active');
+      t.setAttribute('aria-selected', 'false');
+      t.setAttribute('tabindex', '-1');
+    });
+    panels.forEach(function(p) {
+      p.classList.remove('citation-panel-active');
+      p.hidden = true;
+    });
+    tab.classList.add('citation-tab-active');
+    tab.setAttribute('aria-selected', 'true');
+    tab.removeAttribute('tabindex');
+    activeFormat = tab.dataset.format;
+    var panel = document.getElementById(tab.getAttribute('aria-controls'));
+    panel.classList.add('citation-panel-active');
+    panel.hidden = false;
+  }
+
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() { activate(tab); });
+    tab.addEventListener('keydown', function(e) {
+      var idx = Array.prototype.indexOf.call(tabs, tab);
+      if (e.key === 'ArrowRight') { activate(tabs[(idx + 1) % tabs.length]); tabs[(idx + 1) % tabs.length].focus(); }
+      if (e.key === 'ArrowLeft') { activate(tabs[(idx - 1 + tabs.length) % tabs.length]); tabs[(idx - 1 + tabs.length) % tabs.length].focus(); }
+    });
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function() {
+      var text = copyBtn.dataset[activeFormat] || '';
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(function() {
+          copyBtn.textContent = 'Copied!';
+          setTimeout(function() { copyBtn.textContent = 'Copy'; }, 2000);
+        });
+      }
+    });
+  }
+})();
+</script>
+{{- end -}}

@@ -20,6 +20,7 @@
         {{ $content = replaceRE "(?i)</h1>" "</h2>" $content }}
         {{ $content | safeHTML }}
       </div>
+      {{ partial "citation-block.html" . }}
       {{ partial "guides-series-nav.html" . }}
       {{ partial "guides-related.html" . }}
     </article>

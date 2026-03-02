@@ -17,6 +17,8 @@
     {{ $content | safeHTML }}
   </div>
 
+  {{ partial "citation-block.html" . }}
+
   {{ with .Params.related_policies }}
   <aside class="policy-related">
     <h2>Related Policies</h2>

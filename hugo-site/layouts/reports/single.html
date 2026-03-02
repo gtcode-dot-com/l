@@ -1,3 +1,6 @@
 {{ define "main" }}
+<article>
   {{ .Content }}
+  {{ partial "citation-block.html" . }}
+</article>
 {{ end }}
