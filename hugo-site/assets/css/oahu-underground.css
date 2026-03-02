@@ -406,8 +406,8 @@ body.nav-open .site-nav-overlay {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ou-accent-a11y);
-  margin: 0 0 1.25rem;
-  padding-bottom: 0.375rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--ou-border);
   font-weight: 600;
 }
@@ -437,7 +437,7 @@ body.nav-open .site-nav-overlay {
   transform: translateX(2px);
 }
 
-.footer-section p {
+.footer-section p:not(.footer-heading) {
   color: var(--ou-text-muted);
   font-size: 0.875rem;
   line-height: 1.8;
