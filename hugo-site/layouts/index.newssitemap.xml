@@ -1,0 +1,41 @@
+{{- $normalizedBase := replace .Site.BaseURL "http://" "https://" -}}
+{{- $base := strings.TrimSuffix "/" $normalizedBase -}}
+{{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
+{{- $newsWindowDays := int (.Site.Params.news_sitemap_window_days | default 2) -}}
+{{- if lt $newsWindowDays 1 -}}
+  {{- $newsWindowDays = 2 -}}
+{{- end -}}
+{{- $cutoff := now.AddDate 0 0 (mul -1 $newsWindowDays) -}}
+{{- $publicationName := .Site.Params.news_publication_name | default .Site.Title -}}
+{{- $defaultLang := .Site.Language.Lang | default "en" -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  {{- range sort .Site.RegularPages "Date" "desc" -}}
+    {{- if eq .Section "news" -}}
+      {{- $robots := lower (printf "%v" .Params.robots) -}}
+      {{- $isNoindex := in $robots "noindex" -}}
+      {{- $isSyndicatedNews := and .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}
+      {{- $published := .PublishDate -}}
+      {{- if $published.IsZero }}{{ $published = .Date }}{{ end -}}
+      {{- if $published.IsZero }}{{ $published = .Lastmod }}{{ end -}}
+      {{- if and (not $isNoindex) (not $isSyndicatedNews) (not $published.IsZero) (ge $published.Unix $cutoff.Unix) -}}
+        {{- $pageLang := .Params.language | default .Lang | default $defaultLang -}}
+        {{- if hasPrefix $pageLang "en-" -}}
+          {{- $pageLang = "en" -}}
+        {{- end -}}
+  <url>
+    <loc>{{- printf "%s%s" $base .RelPermalink | replace "http://" "https://" -}}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>{{- $publicationName -}}</news:name>
+        <news:language>{{- $pageLang -}}</news:language>
+      </news:publication>
+      <news:publication_date>{{- $published.Format "2006-01-02T15:04:05Z07:00" -}}</news:publication_date>
+      <news:title>{{- partial "seo/plaintext.html" (dict "value" .Title "max" 110) -}}</news:title>
+    </news:news>
+  </url>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+</urlset>

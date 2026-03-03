@@ -59,6 +59,7 @@ class PageRecord:
     jsonld_desc_html_hits: list[str] = field(default_factory=list)
     jsonld_placeholder_hits: list[str] = field(default_factory=list)
     jsonld_dates: list[str] = field(default_factory=list)
+    jsonld_dates_by_key: dict[str, list[str]] = field(default_factory=dict)
 
     @property
     def title_len(self) -> int:
@@ -291,12 +292,15 @@ def walk_json(node: Any, callback) -> None:
             walk_json(value, callback)
 
 
-def parse_jsonld_signals(raw_scripts: list[str]) -> tuple[set[str], list[str], list[str], list[str], list[str]]:
+def parse_jsonld_signals(
+    raw_scripts: list[str],
+) -> tuple[set[str], list[str], list[str], list[str], list[str], dict[str, list[str]]]:
     types: set[str] = set()
     invalid_errors: list[str] = []
     desc_html_hits: list[str] = []
     placeholder_hits: list[str] = []
     dates: list[str] = []
+    dates_by_key: dict[str, list[str]] = {}
 
     for raw in raw_scripts:
         try:
@@ -322,11 +326,13 @@ def parse_jsonld_signals(raw_scripts: list[str]) -> tuple[set[str], list[str], l
                 if isinstance(value, str) and PLACEHOLDER_RE.search(value):
                     placeholder_hits.append(f"{key}={value}")
                 if key in DATE_KEYS and isinstance(value, str) and value.strip():
-                    dates.append(value.strip())
+                    normalized = value.strip()
+                    dates.append(normalized)
+                    dates_by_key.setdefault(key, []).append(normalized)
 
         walk_json(payload, callback)
 
-    return types, invalid_errors, desc_html_hits, placeholder_hits, dates
+    return types, invalid_errors, desc_html_hits, placeholder_hits, dates, dates_by_key
 
 
 def parse_iso_datetime(raw: str) -> datetime | None:
@@ -384,7 +390,7 @@ def parse_html_pages(public_dir: Path, base_url: str) -> list[PageRecord]:
         parser.feed(html)
         parser.close()
 
-        types, invalid, desc_html, placeholders, dates = parse_jsonld_signals(parser.jsonld_scripts)
+        types, invalid, desc_html, placeholders, dates, dates_by_key = parse_jsonld_signals(parser.jsonld_scripts)
 
         record = PageRecord(
             file_path=str(path),
@@ -409,6 +415,7 @@ def parse_html_pages(public_dir: Path, base_url: str) -> list[PageRecord]:
             jsonld_desc_html_hits=desc_html,
             jsonld_placeholder_hits=placeholders,
             jsonld_dates=dates,
+            jsonld_dates_by_key=dates_by_key,
         )
         pages.append(record)
     return pages
@@ -842,6 +849,13 @@ def run_audit(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
     sitemap_missing_indexable = sorted(indexable_url_set - sitemap_urls)
     sitemap_html_non_indexable = sorted((sitemap_urls & all_html_url_set) - indexable_url_set)
     sitemap_non_html_entries = sorted(sitemap_urls - all_html_url_set)
+    allowlisted_non_html: set[str] = set()
+    raw_allowlist = params.get("seo_sitemap_non_html_allowlist", [])
+    if isinstance(raw_allowlist, list):
+        for value in raw_allowlist:
+            if isinstance(value, str) and value.strip():
+                allowlisted_non_html.add(normalize_url(value.strip()))
+    unexpected_non_html_entries = sorted(url for url in sitemap_non_html_entries if url not in allowlisted_non_html)
 
     add_check(
         checks,
@@ -860,9 +874,9 @@ def run_audit(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
     add_check(
         checks,
         "sitemap.non_html_entries",
-        len(sitemap_non_html_entries),
-        "sitemap.xml includes non-HTML entries (informational)",
-        sitemap_non_html_entries,
+        len(unexpected_non_html_entries),
+        "sitemap.xml includes unexpected non-HTML entries (informational)",
+        unexpected_non_html_entries,
         warn_only=True,
     )
 
@@ -876,10 +890,20 @@ def run_audit(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
     for page in indexable_pages:
         if not page.is_news_article():
             continue
-        candidate_dates = page.jsonld_dates + page.time_datetimes
+        candidate_groups = [
+            page.jsonld_dates_by_key.get("datePublished", []),
+            page.jsonld_dates_by_key.get("dateCreated", []),
+            page.jsonld_dates_by_key.get("uploadDate", []),
+            page.time_datetimes,
+            page.jsonld_dates_by_key.get("dateModified", []),
+            page.jsonld_dates,
+        ]
         parsed_dt: datetime | None = None
-        for raw in candidate_dates:
-            parsed_dt = parse_iso_datetime(raw)
+        for candidate_dates in candidate_groups:
+            for raw in candidate_dates:
+                parsed_dt = parse_iso_datetime(raw)
+                if parsed_dt:
+                    break
             if parsed_dt:
                 break
         if parsed_dt is None:

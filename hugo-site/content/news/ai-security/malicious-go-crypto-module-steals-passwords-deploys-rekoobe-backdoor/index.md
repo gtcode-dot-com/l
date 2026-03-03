@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T18:15:14.430245+00:00'
-exported_at: '2026-02-27T18:15:16.655036+00:00'
+date: '2026-03-03T19:51:57.222220+00:00'
+exported_at: '2026-03-03T19:51:59.024275+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor
-updated_at: '2026-02-27T18:15:14.430245+00:00'
+updated_at: '2026-03-03T19:51:57.222220+00:00'
 url_hash: 0b72b85096ba5bac2c35c6468c50d8e07aba0b5b
 ---
 
@@ -47,7 +47,7 @@ The Go module, github[.]com/xinfeisoft/crypto, impersonates the legitimate "gola
 [said](https://socket.dev/blog/malicious-go-crypto-module-steals-passwords-and-deploys-rekoobe-backdoor)
 . "The legitimate project identifies go.googlesource.com/crypto as canonical and treats GitHub as a mirror, a distinction the threat actor abuses to make github.com/xinfeisoft/crypto look routine in dependency graphs."
 
-Specifically, the backdoor has been placed within the "ssh/terminal/terminal.go" file, so that every time a victim application invokes ReadPassword() – a function supposedly meant to read input like passwords from a terminal – it causes that information to capture interactive secrets.
+Specifically, the backdoor has been placed within the "ssh/terminal/terminal.go" file, so that every time a victim application invokes ReadPassword() – a function supposedly meant to read input like passwords from a terminal – it causes those interactive secrets to be captured.
 
 The main responsibility of the downloaded script is to function as a Linux stager, appending a threat actor's SSH key to the "/home/ubuntu/.ssh/authorized\_keys" file, set iptables default policies to ACCEPT in an attempt to loosen firewall restrictions, and retrieve additional payloads from an external server while disguising them with the .mp5 extension.
 
@@ -68,7 +68,7 @@ of receiving commands from an attacker-controlled server to download more payloa
 
 While the package
 [still remains listed](https://pkg.go.dev/github.com/xinfeisoft/crypto)
-on pkg.go.dev, the Go security team has taken steps to block the package as malicious.
+on pkg.go.dev, the Go security team has taken steps to block the library as malicious.
 
 "This campaign will likely repeat because the pattern is low-effort and high-impact: a lookalike module that hooks a high-value boundary (ReadPassword), uses GitHub Raw as a rotating pointer, then pivots into curl | sh staging and Linux payload delivery," Boychenko said.
 

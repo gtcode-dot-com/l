@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T18:15:14.241060+00:00'
-exported_at: '2026-02-27T18:15:16.658686+00:00'
+date: '2026-03-03T19:51:56.925435+00:00'
+exported_at: '2026-03-03T19:51:59.027461+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 900+ Sangoma FreePBX Instances Compromised in Ongoing Web Shell Attacks
-updated_at: '2026-02-27T18:15:14.241060+00:00'
+updated_at: '2026-03-03T19:51:56.925435+00:00'
 url_hash: ed14668691e6b309ca65c278be655b134c35b853
 ---
 

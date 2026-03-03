@@ -69,8 +69,14 @@ relativeURLs = false
     notAlternative = false
     path = ""
 
+  [outputFormats.newsSitemap]
+    mediaType = "application/xml"
+    baseName = "news-sitemap"
+    isPlainText = false
+    notAlternative = true
+
 [outputs]
-  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextai", "plaintexthumans", "plaintextrobots"]
+  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextai", "plaintexthumans", "plaintextrobots", "newsSitemap"]
   section = ["HTML", "Markdown", "RSS"]
   page = ["HTML", "Markdown"]
 
@@ -99,6 +105,8 @@ relativeURLs = false
   news_index_syndicated = false
   # Google News sitemap window in days (Google recommendation: last 2 days).
   news_sitemap_window_days = 2
+  # Intentional non-HTML entries in sitemap.xml (suppress recurring audit warnings).
+  seo_sitemap_non_html_allowlist = ['https://gtcode.com/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf']
   # robots.txt policy
   robots_crawl_delay_enabled = false
   robots_crawl_delay_seconds = 1

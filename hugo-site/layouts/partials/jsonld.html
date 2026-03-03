@@ -343,10 +343,13 @@
   {{- if $sd.original_source }}
     {{- $data = merge $data (dict "originalSource" $sd.original_source) -}}
   {{- end -}}
-  {{- if .Params.source_url }}
+  {{- $isSyndicatedNews := and (eq .Section "news") (not .Params.news_original) .Params.source_url -}}
+  {{- if $isSyndicatedNews -}}
     {{- $data = merge $data (dict "url" (replace .Params.source_url "http://" "https://")) -}}
-  {{- end }}
-  {{- if not (and (eq .Section "news") (not .Params.news_original) .Params.source_url) }}
+  {{- else -}}
+    {{- $data = merge $data (dict "url" $pageURL) -}}
+  {{- end -}}
+  {{- if not $isSyndicatedNews }}
     {{- $data = merge $data (dict "potentialAction" (dict "@type" "InteractAction" "target" $pageURL)) -}}
   {{- end }}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>

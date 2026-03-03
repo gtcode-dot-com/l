@@ -11,6 +11,7 @@ date: '2025-12-25T00:03:50.419931+00:00'
 exported_at: '2025-12-25T00:03:54.334624+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
+news_original: true
 source_url: https://www.bellingcat.com/news/2025/12/05/from-school-to-battlefield-to-grave-how-russian-cossacks-drive-young-people-to-war
 structured_data:
   about: []

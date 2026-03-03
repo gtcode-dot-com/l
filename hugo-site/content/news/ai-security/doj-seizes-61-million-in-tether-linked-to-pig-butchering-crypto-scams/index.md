@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T20:15:13.248023+00:00'
-exported_at: '2026-02-27T20:15:15.443056+00:00'
+date: '2026-03-03T19:51:56.624912+00:00'
+exported_at: '2026-03-03T19:51:59.030324+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/doj-seizes-61-million-in-tether-linked.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: DoJ Seizes $61 Million in Tether Linked to Pig Butchering Crypto Scams
-updated_at: '2026-02-27T20:15:13.248023+00:00'
+updated_at: '2026-03-03T19:51:56.624912+00:00'
 url_hash: 516063f9933708dde77eb81c4873cf5cbcb2073b
 ---
 
