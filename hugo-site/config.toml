@@ -127,4 +127,4 @@ relativeURLs = false
 
 [minify.tdewolff.html]
   keepComments = true
-  keepConditionalComments = true
+  keepSpecialComments = true

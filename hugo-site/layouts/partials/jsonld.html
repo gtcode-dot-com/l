@@ -28,6 +28,17 @@
 {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*,\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
 {{- $jsonText = replaceRE "\"logo\"\\s*:\\s*\\{\\s*\"url\"\\s*:\\s*\"https?://example\\.com[^\"]*\"\\s*,\\s*\"@type\"\\s*:\\s*\"ImageObject\"\\s*\\}" (printf "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"%s\"}" $siteLogo) $jsonText -}}
 {{- $jsonText = replaceRE "(?s)</?[^>]+>" "" $jsonText -}}
+{{- /* Front matter map keys can be lower-cased by parser; restore common Schema.org camelCase keys. */ -}}
+{{- $jsonText = replaceRE "\"datemodified\"\\s*:" "\"dateModified\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"datepublished\"\\s*:" "\"datePublished\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"inlanguage\"\\s*:" "\"inLanguage\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"haspart\"\\s*:" "\"hasPart\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"ispartof\"\\s*:" "\"isPartOf\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"mainentityofpage\"\\s*:" "\"mainEntityOfPage\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"itemlistelement\"\\s*:" "\"itemListElement\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"itemlistorder\"\\s*:" "\"itemListOrder\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"numberofitems\"\\s*:" "\"numberOfItems\":" $jsonText -}}
+{{- $jsonText = replaceRE "\"contenturl\"\\s*:" "\"contentUrl\":" $jsonText -}}
 {{- /* Inject or override dateModified from .Lastmod (single source of truth).
      Skip section/list pages (e.g. _index.md) whose structured_data_graph may
      contain dateModified for multiple child articles in hasPart. */ -}}
