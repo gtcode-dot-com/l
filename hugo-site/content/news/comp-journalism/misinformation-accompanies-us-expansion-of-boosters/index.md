@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T12:15:43.551171+00:00'
-exported_at: '2026-01-02T12:15:47.697955+00:00'
+date: '2026-03-03T06:43:24.861939+00:00'
+exported_at: '2026-03-03T06:43:27.324215+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/misinformation-accompanies-us-expansion-of-boosters
@@ -18,8 +18,7 @@ structured_data:
   description: As the United States is poised to roll out its Covid-19 vaccine booster
     program for all adults, misleading information on social media around this latest
     development is likely to become the focal point of the next round of vaccine misinformation.
-    Already, false narratives about additional vaccine shots creating a new wave of
-    infections and newer […]
+    Already, false narratives about additional vaccine shots creating a ne...
   headline: Misinformation accompanies US expansion of boosters
   inLanguage: en
   keywords: []
@@ -27,9 +26,9 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/misinformation-accompanies-us-expansion-of-boosters
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Misinformation accompanies US expansion of boosters
-updated_at: '2026-01-02T12:15:43.551171+00:00'
+updated_at: '2026-03-03T06:43:24.861939+00:00'
 url_hash: 909bf6244ef55daabe178631dd8e1645c1baaaba
 ---
 

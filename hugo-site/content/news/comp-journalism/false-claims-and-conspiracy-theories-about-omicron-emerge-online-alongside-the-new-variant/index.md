@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T12:15:42.757476+00:00'
-exported_at: '2026-01-02T12:15:47.699521+00:00'
+date: '2026-03-03T06:43:23.905043+00:00'
+exported_at: '2026-03-03T06:43:27.326697+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/false-claims-and-conspiracy-theories-about-omicron-emerge-online-alongside-the-new-variant
@@ -19,7 +19,7 @@ structured_data:
     Omicron emerged online after the variant was reported by South Africa to the World
     Health Organization (WHO) on November 24. The WHO said the variant has had a large
     number of mutations and may present an increased risk of reinfection, but studies
-    on its transmissibility, […]
+    o...
   headline: False claims and conspiracy theories about Omicron emerge online alongside
     the new variant
   inLanguage: en
@@ -28,10 +28,10 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/false-claims-and-conspiracy-theories-about-omicron-emerge-online-alongside-the-new-variant
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: False claims and conspiracy theories about Omicron emerge online alongside
   the new variant
-updated_at: '2026-01-02T12:15:42.757476+00:00'
+updated_at: '2026-03-03T06:43:23.905043+00:00'
 url_hash: b710a5c06aef37ef99ebbee3f30b4fc7abf42c28
 ---
 

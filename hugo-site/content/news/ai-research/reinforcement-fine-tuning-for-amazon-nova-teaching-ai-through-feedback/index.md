@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T18:15:32.639316+00:00'
-exported_at: '2026-02-26T18:15:35.841748+00:00'
+date: '2026-03-03T06:42:59.552585+00:00'
+exported_at: '2026-03-03T06:43:03.824695+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-for-amazon-nova-teaching-ai-through-feedback
@@ -19,10 +19,7 @@ structured_data:
     Nova models, which can be a powerful customization technique that learns through
     evaluation rather than imitation. We'll cover how RFT works, when to use it versus
     supervised fine-tuning, real-world applications from code generation to customer
-    service, and implementation options ranging from fully managed Amazon Bedrock
-    to multi-turn agentic workflows with Nova Forge. You'll also learn practical guidance
-    on data preparation, reward function design, and best practices for achieving
-    optimal results.
+    serv...
   headline: 'Reinforcement fine-tuning for Amazon Nova: Teaching AI through feedback'
   inLanguage: en
   keywords: []
@@ -30,9 +27,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-for-amazon-nova-teaching-ai-through-feedback
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Reinforcement fine-tuning for Amazon Nova: Teaching AI through feedback'
-updated_at: '2026-02-26T18:15:32.639316+00:00'
+updated_at: '2026-03-03T06:42:59.552585+00:00'
 url_hash: 4a0ab01ac3760378f696bc3aebcb2257393aa36d
 ---
 
@@ -122,13 +119,17 @@ The following are the key benefits of RFT:
 
 Amazon offers multiple implementation paths for reinforcement fine-tuning with Nova models, ranging from fully managed experiences to customizable infrastructure. By following this tiered approach you can match your RFT implementation to your specific needs, technical expertise, and desired level of control.
 
-![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/02/24/ML-20340-image-2.png)
+![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/02/26/ML-20340-image-2-new.png)
 
 ### Amazon Bedrock
 
 Amazon Bedrock provides an entry point to RFT with a fully managed experience that requires minimal ML expertise. Through the Amazon Bedrock console or API, you can upload your training prompts, configure your reward function as an AWS Lambda, and launch your reinforcement fine-tuning job with just a few clicks. Bedrock handles all infrastructure provisioning, training orchestration, and model deployment automatically. This approach works well for straightforward use cases where you need to optimize specific criteria without managing infrastructure. The simplified workflow makes RFT accessible to teams without dedicated ML engineers while still delivering powerful customization capabilities. Bedrock RFT supports both RLVR (rule-based rewards) and RLAIF (AI-based feedback) approaches, with built-in monitoring and evaluation tools to track your model’s improvement. To get started, see the
 [Amazon Nova RFT](https://github.com/aws-samples/amazon-bedrock-samples/tree/main/custom-models/bedrock-reinforcement-fine-tuning)
 GitHub repository.
+
+### Amazon SageMaker Serverless Model Customization
+
+Amazon SageMaker AI’s serverless model customization is purpose-built for ML practitioners who are ready to move beyond prompt engineering and RAG, and into fine-tuning LLMs for high-impact, specialized use cases. Whether the goal is improving complex reasoning, domain-specific code generation, or optimizing LLMs for agentic workflows including planning, tool calling, and reflection, SageMaker’s offering removes the traditional infrastructure and expertise barriers that slow experimentation. At its core, the service brings advanced reinforcement learning techniques like GRPO with RLVR/RLAIF to developers without requiring complex RL setup, alongside a comprehensive evaluation suite that goes well beyond basic accuracy metrics. Complementing this, AI-assisted synthetic data generation, integrated experiment tracking, and full lineage and audit trail support round out a production-grade customization pipeline. Deployment flexibility allows teams to ship fine-tuned models to SageMaker endpoints, Amazon Bedrock, or custom infrastructure, making it a compelling end-to-end serverless solution for teams looking to accelerate their model customization cycles and unlock the full potential of models like Amazon Nova in real-world applications.
 
 ### SageMaker Training Jobs
 

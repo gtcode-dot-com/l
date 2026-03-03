@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T12:15:14.295338+00:00'
-exported_at: '2026-02-26T12:15:16.650211+00:00'
+date: '2026-03-03T06:42:40.638376+00:00'
+exported_at: '2026-03-03T06:42:42.956291+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/malicious-stripeapi-nuget-package.html
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/malicious-stripeapi-nuget-package.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Malicious StripeApi NuGet Package Mimicked Official Library and Stole API Tokens
-updated_at: '2026-02-26T12:15:14.295338+00:00'
+updated_at: '2026-03-03T06:42:40.638376+00:00'
 url_hash: a5532bf71ffd095514dcc49b91852467349fad6f
 ---
 

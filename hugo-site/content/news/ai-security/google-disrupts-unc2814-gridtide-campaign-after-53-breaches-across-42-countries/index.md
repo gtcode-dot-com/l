@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T06:07:52.203864+00:00'
-exported_at: '2026-02-26T06:07:55.646275+00:00'
+date: '2026-03-03T06:42:41.385686+00:00'
+exported_at: '2026-03-03T06:42:42.947177+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/google-disrupts-unc2814-gridtide.html
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/google-disrupts-unc2814-gridtide.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Google Disrupts UNC2814 GRIDTIDE Campaign After 53 Breaches Across 42 Countries
-updated_at: '2026-02-26T06:07:52.203864+00:00'
+updated_at: '2026-03-03T06:42:41.385686+00:00'
 url_hash: 21b2ec2fed01755de570d7dc974f943429546923
 ---
 
@@ -50,9 +50,9 @@ in a report published today.
 
 UNC2814 is also suspected to be linked to additional infections in more than 20 other nations. The tech giant, which has been tracking the threat actor since 2017, has been observed using API calls to communicate with software-as-a-service (SaaS) apps as command-and-control (C2) infrastructure. The idea, it added, is to disguise their malicious traffic as benign.
 
-Dan Perez, GTIG researcher, told The Hacker News via email that they cannot confirm if all the intrusions involved the use of the GRIDTIDE backdoor. "We believe many of these organizations have been compromised for years."
-
 Central to the hacking group's operations is a novel backdoor dubbed GRIDTIDE that abuses Google Sheets API as a communication channel to disguise C2 traffic and facilitate the transfer of raw data and shell commands. It's a C-based malware that supports file upload/download and the execution of arbitrary shell commands.
+
+Dan Perez, GTIG researcher, told The Hacker News via email that they cannot confirm if all the intrusions involved the use of the GRIDTIDE backdoor. "We believe many of these organizations have been compromised for years," Perez added.
 
 Exactly how UNC2814 obtains initial access remains a topic of investigation, but the group is said to have a history of exploiting and compromising web servers and edge systems.
 

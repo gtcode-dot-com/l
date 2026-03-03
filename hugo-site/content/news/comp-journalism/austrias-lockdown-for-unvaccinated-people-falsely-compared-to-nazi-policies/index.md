@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T12:15:44.543686+00:00'
-exported_at: '2026-01-02T12:15:47.696420+00:00'
+date: '2026-03-03T06:43:25.987472+00:00'
+exported_at: '2026-03-03T06:43:27.319099+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/austrias-lockdown-for-unvaccinated-people-falsely-compared-to-nazi-policies
@@ -19,7 +19,7 @@ structured_data:
     pandemic measures, this time prompted by the introduction of a lockdown for people
     in Austria who are not fully vaccinated. About two million people in Austria,
     or one-third of the population, were placed in lockdown on Monday, November 15,
-    with the country facing a […]
+    wi...
   headline: Austria’s lockdown for unvaccinated people falsely compared to Nazi policies
   inLanguage: en
   keywords: []
@@ -27,9 +27,9 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/austrias-lockdown-for-unvaccinated-people-falsely-compared-to-nazi-policies
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Austria’s lockdown for unvaccinated people falsely compared to Nazi policies
-updated_at: '2026-01-02T12:15:44.543686+00:00'
+updated_at: '2026-03-03T06:43:25.987472+00:00'
 url_hash: 912621136915227a90ce00af12fee3ca6c04efc1
 ---
 

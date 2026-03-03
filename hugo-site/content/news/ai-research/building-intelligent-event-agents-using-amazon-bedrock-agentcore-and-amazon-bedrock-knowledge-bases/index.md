@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T06:08:08.373770+00:00'
-exported_at: '2026-02-26T06:08:11.316201+00:00'
+date: '2026-03-03T06:43:01.876189+00:00'
+exported_at: '2026-03-03T06:43:03.815334+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases
@@ -18,12 +18,7 @@ structured_data:
   description: This post demonstrates how to quickly deploy a production-ready event
     assistant using the components of Amazon Bedrock AgentCore. We'll build an intelligent
     companion that remembers attendee preferences and builds personalized experiences
-    over time, while Amazon Bedrock AgentCore handles the heavy lifting of production
-    deployment: Amazon Bedrock AgentCore Memory for maintaining both conversation
-    context and long-term preferences without custom storage solutions, Amazon Bedrock
-    AgentCore Identity for secure multi-IDP authentication, and Amazon Bedrock AgentCore
-    Runtime for serverless scaling and session isolation. We will also use Amazon
-    Bedrock Knowledge Bases for managed RAG and event data retrieval.
+    over time, while Amazon Bedrock AgentCore handles the heavy lifting of product...
   headline: Building intelligent event agents using Amazon Bedrock AgentCore and Amazon
     Bedrock Knowledge Bases
   inLanguage: en
@@ -32,10 +27,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Building intelligent event agents using Amazon Bedrock AgentCore and Amazon
   Bedrock Knowledge Bases
-updated_at: '2026-02-26T06:08:08.373770+00:00'
+updated_at: '2026-03-03T06:43:01.876189+00:00'
 url_hash: bc8e1a78786cac430c88b93117c16d57de9e9fd5
 ---
 

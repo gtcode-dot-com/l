@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T20:15:29.191390+00:00'
-exported_at: '2026-02-26T20:15:31.425184+00:00'
+date: '2026-03-03T06:43:02.388555+00:00'
+exported_at: '2026-03-03T06:43:03.809512+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/lilly-ai-factory-live
@@ -18,7 +18,7 @@ structured_data:
   description: Lilly this week launched the most powerful AI factory wholly owned
     and operated by a pharmaceutical company to help its teams make meaningful medical
     advancements faster, more accurately and at unprecedented scale. Dubbed LillyPod,
-    it’s the world’s first NVIDIA DGX SuperPOD with DGX B300 systems. 
+    it’s the world’s first NVIDIA DGX SuperPOD with DGX B300 systems.
   headline: 'Now Live: The World’s Most Powerful AI Factory for Pharmaceutical Discovery
     and Development'
   inLanguage: en
@@ -27,10 +27,10 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/lilly-ai-factory-live
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Now Live: The World’s Most Powerful AI Factory for Pharmaceutical Discovery
   and Development'
-updated_at: '2026-02-26T20:15:29.191390+00:00'
+updated_at: '2026-03-03T06:43:02.388555+00:00'
 url_hash: 8bfb592879e4e4f99c7ec14a6cc5a8d2b3341f49
 ---
 

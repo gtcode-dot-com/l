@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T12:15:41.868372+00:00'
-exported_at: '2026-01-02T12:15:47.701429+00:00'
+date: '2026-03-03T06:43:22.943514+00:00'
+exported_at: '2026-03-03T06:43:27.329153+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/clubhouse-facebook-and-twitter-live-audio-and-misinformation
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/clubhouse-facebook-and-twitter-live-audio-and-misinformation
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: An introduction to live audio social media and misinformation
-updated_at: '2026-01-02T12:15:41.868372+00:00'
+updated_at: '2026-03-03T06:43:22.943514+00:00'
 url_hash: 8dbba1d3a57840ad78c1f6195c3b8f56d37e27c7
 ---
 

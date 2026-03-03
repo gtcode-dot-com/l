@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T06:08:08.041161+00:00'
-exported_at: '2026-02-26T06:08:11.318880+00:00'
+date: '2026-03-03T06:43:01.094566+00:00'
+exported_at: '2026-03-03T06:43:03.818491+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock
@@ -27,10 +27,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/efficiently-serve-dozens-of-fine-tuned-models-with-vllm-on-amazon-sagemaker-ai-and-amazon-bedrock
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Efficiently serve dozens of fine-tuned models with vLLM on Amazon SageMaker
   AI and Amazon Bedrock
-updated_at: '2026-02-26T06:08:08.041161+00:00'
+updated_at: '2026-03-03T06:43:01.094566+00:00'
 url_hash: 027e7761505616743aa02fe74669a4423ebcd29d
 ---
 

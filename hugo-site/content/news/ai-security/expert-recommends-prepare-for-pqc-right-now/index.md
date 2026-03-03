@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T14:15:15.116523+00:00'
-exported_at: '2026-02-26T14:15:17.699009+00:00'
+date: '2026-03-03T06:42:39.801544+00:00'
+exported_at: '2026-03-03T06:42:42.962641+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/expert-recommends-prepare-for-pqc-right.html
@@ -16,7 +16,7 @@ structured_data:
   about: []
   author: ''
   description: Quantum Computers won’t be available for another decade. Why worry
-    about them now, then? A cryptography expert explains. 
+    about them now, then? A cryptography expert explains.
   headline: 'Expert Recommends: Prepare for PQC Right Now'
   inLanguage: en
   keywords: []
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/expert-recommends-prepare-for-pqc-right.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Expert Recommends: Prepare for PQC Right Now'
-updated_at: '2026-02-26T14:15:15.116523+00:00'
+updated_at: '2026-03-03T06:42:39.801544+00:00'
 url_hash: b3e82bd66cd9bbe477664e25ebec376b8ba70ec2
 ---
 

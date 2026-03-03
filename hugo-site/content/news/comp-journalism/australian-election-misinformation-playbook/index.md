@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T01:03:22.377814+00:00'
-exported_at: '2026-01-02T01:03:24.707235+00:00'
+date: '2026-03-03T06:43:21.731238+00:00'
+exported_at: '2026-03-03T06:43:27.331816+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/australian-election-misinformation-playbook
@@ -18,9 +18,7 @@ structured_data:
   description: The challenge of monitoring, understanding, defining and responding
     to mis- and disinformation is exacerbated during election campaigns. This report
     outlines tactics used by agents of disinformation to undermine elections as observed
-    by First Draft’s global monitoring since 2015.  This is placed within a brief
-    overview of the characteristics and vulnerabilities that bear consideration during
-    elections […]
+    by First Draft’s global monitoring since 2015. This is placed within a brief overvi...
   headline: Australian election misinformation playbook
   inLanguage: en
   keywords: []
@@ -28,9 +26,9 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/australian-election-misinformation-playbook
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Australian election misinformation playbook
-updated_at: '2026-01-02T01:03:22.377814+00:00'
+updated_at: '2026-03-03T06:43:21.731238+00:00'
 url_hash: 2fb391e19011e6bae9dd6232ab578cf8fb10e982
 ---
 
