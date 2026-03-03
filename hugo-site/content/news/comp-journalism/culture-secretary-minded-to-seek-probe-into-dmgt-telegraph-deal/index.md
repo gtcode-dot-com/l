@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-20T16:15:48.893627+00:00'
-exported_at: '2026-01-20T16:15:51.176716+00:00'
+date: '2026-03-03T01:17:00.167812+00:00'
+exported_at: '2026-03-03T01:17:01.677137+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/nandy-minded-to-seek-competition-probe-into-dmgts-telegraph-takeover
@@ -17,16 +17,16 @@ structured_data:
   author: ''
   description: Culture Secretary Lisa Nandy has said she is "minded to" intervene
     in Daily Mail owner DMGT's takeover of The Telegraph.
-  headline: Nandy ‘minded to’ seek competition probe into DMGT’s Telegraph takeover
+  headline: Nandy launches competition probe into DMGT’s Telegraph takeover
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://pressgazette.co.uk/news/nandy-minded-to-seek-competition-probe-into-dmgts-telegraph-takeover
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
-title: Nandy ‘minded to’ seek competition probe into DMGT’s Telegraph takeover
-updated_at: '2026-01-20T16:15:48.893627+00:00'
+    name: GTCode
+title: Nandy launches competition probe into DMGT’s Telegraph takeover
+updated_at: '2026-03-03T01:17:00.167812+00:00'
 url_hash: 7956db1e2b855e09937c69a4a8f04d46e11da162
 ---
 
@@ -35,10 +35,29 @@ url_hash: 7956db1e2b855e09937c69a4a8f04d46e11da162
 
 Culture Secretary Lisa Nandy, leaving 10 Downing Street after taking part in Prime Minister Sir Keir Starmer’s first Cabinet meeting on Saturday 6 July 2024. Picture: Tejas Sandhu/PA Wire
 
-Culture Secretary Lisa Nandy has said she is “minded to” intervene in
+**Update, 12 February 2026:**
+Culture Secretary Lisa Nandy said she has launched an investigation over
 [Daily Mail](https://pressgazette.co.uk/subject/daily-mail/)
 owner DMGT’s takeover of
-[The Telegraph.](https://pressgazette.co.uk/subject/telegraph-media-group/)
+[The Telegraph](https://pressgazette.co.uk/subject/telegraph-media-group/)
+on public interest and competition grounds.
+
+Nandy said in a
+[written statement to MPs](https://questions-statements.parliament.uk/written-statements/detail/2026-02-12/hcws1338)
+on Thursday that she has ordered the competition probe over concerns the deal could affect the “plurality of views” in the UK media.
+
+Competition issues will be assessed by the Competition and Markets Authority (CMA), while media regulator Ofcom will look at the public interest impact, Nandy added, with both expected to report back by 10 June.
+
+A spokesperson for DMGT said: “We welcome the secretary of state’s decision to issue a public interest intervention notice, which marks a significant step forward in our proposed acquisition of The Telegraph.
+
+“As the [secretary of state] has recognised, the news media industry is changing rapidly, and publishers must compete with an array of online sources. Against this backdrop, trusted news organisations will play an ever more critical role, and that requires publishers with the resources and experience to compete.
+
+“We remain committed to investing in The Telegraph and its journalists, preserving its distinctive editorial voice and team, and accelerating its global expansion, with a focus on the US.
+
+“We look forward to working constructively with regulators and the government to secure a timely completion of the transaction, which will provide stability and certainty to The Telegraph after a protracted period of uncertainty.”
+
+**Original story, 20 January 2026:**
+Culture Secretary Lisa Nandy has said she is “minded to” intervene in Daily Mail owner DMGT’s takeover of The Telegraph.
 
 [Nandy told Parliament on Tuesday](https://questions-statements.parliament.uk/written-statements/detail/2026-01-20/hcws1263)
 that she is considering intervention based on two public interest grounds: whether the deal will create a “sufficient plurality of views” and whether it will result in a “sufficient plurality of persons with control”.
@@ -81,7 +100,7 @@ Telegraph Media Group is currently owned by Redbird IMI which agreed a deal to p
 
 However, Redbird IMI was blocked from ownership because it was majority funded by the United Arab Emirates, making it in breach of a new UK law banning foreign states from owning more than 15% of UK newspapers.
 
-Last year US-based private investment firm Redbird said it would buy The Telegraph in a new £500m with IMI owning no more than the permitted 15%. DMGT were also involved as an investor.
+Last year US-based private investment firm Redbird said it would buy The Telegraph in a new £500m deal with IMI owning no more than the permitted 15%. DMGT were also involved as an investor.
 
 [However Redbird withdrew its bid](https://pressgazette.co.uk/news/redbird-withdraws-500m-telegraph-bid-after-six-months/)
 , which still had not received Government approval, in November because the process was taking so long and it was receiving negative publicity from the pages of The Telegraph itself.

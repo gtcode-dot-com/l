@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T20:15:35.140353+00:00'
-exported_at: '2026-02-24T20:15:38.110872+00:00'
+date: '2026-03-03T01:16:35.189706+00:00'
+exported_at: '2026-03-03T01:16:37.886349+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/generate-structured-output-from-llms-with-dottxt-outlines-in-aws
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/generate-structured-output-from-llms-with-dottxt-outlines-in-aws
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Generate structured output from LLMs with Dottxt Outlines in AWS
-updated_at: '2026-02-24T20:15:35.140353+00:00'
+updated_at: '2026-03-03T01:16:35.189706+00:00'
 url_hash: fdfdf8bf0307d6739d8a70a1336bfe5fa6a105f0
 ---
 

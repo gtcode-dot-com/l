@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-09T08:15:43.515621+00:00'
-exported_at: '2026-01-09T08:15:45.686923+00:00'
+date: '2026-03-03T01:16:54.637323+00:00'
+exported_at: '2026-03-03T01:17:01.700550+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/01/07/inside-the-strike-the-us-munition-that-hit-a-residential-building-in-venezuela
@@ -18,8 +18,8 @@ structured_data:
   description: A Bellingcat investigation has identified remnants of an AGM-88 series
     missile inside a three-storey apartment complex that was hit in Catia La Mar during
     the US military raid on Venezuela on Jan. 3, 2026 that reportedly killed at least
-    one civilian.  According to the Venezuelan independent media outlet, El Pitazo,
-    Rosa Gonzalez, 79, was killed […]
+    one civilian. According to the Venezuelan independent media outlet, El Pitazo,
+    R...
   headline: 'Inside the Strike: The US Munition That Hit a Residential Building in
     Venezuela'
   inLanguage: en
@@ -28,9 +28,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/01/07/inside-the-strike-the-us-munition-that-hit-a-residential-building-in-venezuela
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Inside the Strike: The US Munition That Hit a Residential Building in Venezuela'
-updated_at: '2026-01-09T08:15:43.515621+00:00'
+updated_at: '2026-03-03T01:16:54.637323+00:00'
 url_hash: d65a7ccc54e33d443b0fddd08cd84e78b09020ca
 ---
 

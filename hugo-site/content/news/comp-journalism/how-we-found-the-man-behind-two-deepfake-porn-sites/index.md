@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2025-12-30T00:15:44.221471+00:00'
-exported_at: '2025-12-30T00:15:46.444124+00:00'
+date: '2026-03-03T01:16:58.020035+00:00'
+exported_at: '2026-03-03T01:17:01.690910+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2025/12/15/mark-resan-reface-deepfake-porn
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2025/12/15/mark-resan-reface-deepfake-porn
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Profiting From Exploitation: How We Found the Man Behind Two Deepfake Porn
   Sites'
-updated_at: '2025-12-30T00:15:44.221471+00:00'
+updated_at: '2026-03-03T01:16:58.020035+00:00'
 url_hash: 8f064e503055637cbb001b1a0cd24a7b5e96edb1
 ---
 

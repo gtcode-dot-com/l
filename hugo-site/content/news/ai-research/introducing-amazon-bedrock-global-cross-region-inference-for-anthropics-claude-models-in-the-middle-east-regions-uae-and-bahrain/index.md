@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T20:15:35.798650+00:00'
-exported_at: '2026-02-24T20:15:38.103785+00:00'
+date: '2026-03-03T01:16:36.522825+00:00'
+exported_at: '2026-03-03T01:16:37.841190+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-global-cross-region-inference-for-anthropics-claude-models-in-the-middle-east-regions
@@ -18,10 +18,7 @@ structured_data:
   description: We’re excited to announce the availability of Anthropic’s Claude Opus
     4.6, Claude Sonnet 4.6, Claude Opus 4.5, Claude Sonnet 4.5, and Claude Haiku 4.5
     through Amazon Bedrock global cross-Region inference for customers operating in
-    the Middle East. In this post, we guide you through the capabilities of each Anthropic
-    Claude model variant, the key advantages of global cross-Region inference including
-    improved resilience, real-world use cases you can implement, and a code example
-    to help you start building generative AI applications immediately.
+    the Middle East. In this post, we guide you through the capabilities of each Anthropic...
   headline: Introducing Amazon Bedrock global cross-Region inference for Anthropic’s
     Claude models in the Middle East Regions (UAE and Bahrain)
   inLanguage: en
@@ -30,10 +27,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-global-cross-region-inference-for-anthropics-claude-models-in-the-middle-east-regions
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Introducing Amazon Bedrock global cross-Region inference for Anthropic’s Claude
   models in the Middle East Regions (UAE and Bahrain)
-updated_at: '2026-02-24T20:15:35.798650+00:00'
+updated_at: '2026-03-03T01:16:36.522825+00:00'
 url_hash: 2eebda6778ca6b0a69dd1efd0e3f389d7596081d
 ---
 

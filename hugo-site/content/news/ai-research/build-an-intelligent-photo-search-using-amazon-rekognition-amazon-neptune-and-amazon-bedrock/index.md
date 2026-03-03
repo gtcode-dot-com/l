@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T20:15:34.345677+00:00'
-exported_at: '2026-02-24T20:15:38.118822+00:00'
+date: '2026-03-03T01:16:33.781606+00:00'
+exported_at: '2026-03-03T01:16:37.893638+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/build-an-intelligent-photo-search-using-amazon-rekognition-amazon-neptune-and-amazon-bedrock
@@ -27,10 +27,10 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/build-an-intelligent-photo-search-using-amazon-rekognition-amazon-neptune-and-amazon-bedrock
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Build an intelligent photo search using Amazon Rekognition, Amazon Neptune,
   and Amazon Bedrock
-updated_at: '2026-02-24T20:15:34.345677+00:00'
+updated_at: '2026-03-03T01:16:33.781606+00:00'
 url_hash: 4334ccaf37975e34efc0a154a985e70cfa2e371c
 ---
 

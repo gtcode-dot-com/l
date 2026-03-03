@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-03T16:41:38.135631+00:00'
-exported_at: '2026-01-03T16:41:44.743752+00:00'
+date: '2026-03-03T01:16:55.612639+00:00'
+exported_at: '2026-03-03T01:17:01.697902+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2025/12/17/israel-iran-nuclear-strikes-usa-us-conflict-weapons
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2025/12/17/israel-iran-nuclear-strikes-usa-us-conflict-weapons
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Investigating the Impact of US-Israeli Strikes on Iran’s Nuclear Programme
-updated_at: '2026-01-03T16:41:38.135631+00:00'
+updated_at: '2026-03-03T01:16:55.612639+00:00'
 url_hash: 8c40272e893cca1ff9015c16f258809335ee8573
 ---
 

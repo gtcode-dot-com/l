@@ -2955,6 +2955,12 @@ article {
   margin: 0 0 var(--space-4);
 }
 
+.citation-version {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin: calc(-1 * var(--space-2)) 0 var(--space-4);
+}
+
 .citation-tabs {
   display: flex;
   gap: 0;
@@ -3015,10 +3021,33 @@ article {
   line-height: 1.6;
   color: var(--color-text);
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .citation-text em {
   font-style: italic;
+}
+
+.citation-block .citation-text a,
+.citation-block .citation-text a:visited {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+  text-decoration-color: color-mix(in srgb, var(--color-primary) 55%, transparent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+  overflow-wrap: anywhere;
+}
+
+.citation-block .citation-text a:hover,
+.citation-block .citation-text a:focus-visible {
+  color: var(--color-primary-dark);
+  text-decoration-color: var(--color-primary-dark);
+}
+
+.citation-block .citation-text a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-primary) 45%, transparent);
+  outline-offset: 2px;
+  border-radius: 0.125rem;
 }
 
 .citation-actions {

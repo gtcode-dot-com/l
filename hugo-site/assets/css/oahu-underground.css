@@ -3117,6 +3117,13 @@ a.ou-wire-badge-link:focus {
   letter-spacing: 0.02em;
 }
 
+.citation-version {
+  font-family: var(--ou-font-display);
+  font-size: 0.78rem;
+  color: var(--ou-text-muted);
+  margin: -0.35rem 0 0.9rem;
+}
+
 .citation-tabs {
   display: flex;
   gap: 0;
@@ -3177,10 +3184,33 @@ a.ou-wire-badge-link:focus {
   line-height: 1.6;
   color: var(--ou-text);
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .citation-text em {
   font-style: italic;
+}
+
+.citation-block .citation-text a,
+.citation-block .citation-text a:visited {
+  color: var(--ou-accent-a11y);
+  text-decoration-color: var(--ou-accent-a11y);
+  text-decoration-color: color-mix(in srgb, var(--ou-accent-a11y) 55%, transparent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+  overflow-wrap: anywhere;
+}
+
+.citation-block .citation-text a:hover,
+.citation-block .citation-text a:focus-visible {
+  color: var(--ou-accent);
+  text-decoration-color: var(--ou-accent);
+}
+
+.citation-block .citation-text a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ou-accent-a11y) 45%, transparent);
+  outline-offset: 2px;
+  border-radius: 0.125rem;
 }
 
 .citation-actions {

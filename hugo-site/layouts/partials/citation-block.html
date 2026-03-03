@@ -8,6 +8,9 @@
 {{- if $cite -}}
 <aside class="citation-block" aria-label="How to cite this publication">
   <h2 class="citation-block-heading">How to Cite</h2>
+  {{ if and $cite.lastmod (ne $cite.lastmod $cite.date) }}
+  <p class="citation-version">Last modified: {{ $cite.lastmod }}</p>
+  {{ end }}
 
   <div class="citation-tabs" role="tablist" aria-label="Citation format">
     <button class="citation-tab citation-tab-active" role="tab" aria-selected="true" aria-controls="cite-bibtex" id="tab-bibtex" data-format="bibtex">BibTeX</button>

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T20:15:34.723152+00:00'
-exported_at: '2026-02-24T20:15:38.113908+00:00'
+date: '2026-03-03T01:16:34.430608+00:00'
+exported_at: '2026-03-03T01:16:37.890034+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/train-codefu-7b-with-verl-and-ray-on-amazon-sagemaker-training-jobs
@@ -18,12 +18,7 @@ structured_data:
   description: In this post, we demonstrate how to train CodeFu-7B, a specialized
     7-billion parameter model for competitive programming, using Group Relative Policy
     Optimization (GRPO) with veRL, a flexible and efficient training library for large
-    language models (LLMs) that enables straightforward extension of diverse RL algorithms
-    and seamless integration with existing LLM infrastructure, within a distributed
-    Ray cluster managed by SageMaker training jobs. We walk through the complete implementation,
-    covering data preparation, distributed training setup, and comprehensive observability,
-    showcasing how this unified approach delivers both computational scale and developer
-    experience for sophisticated RL training workloads.
+    language models (LLMs) that enables straightforward extension of diverse RL algorith...
   headline: Train CodeFu-7B with veRL and Ray on Amazon SageMaker Training jobs
   inLanguage: en
   keywords: []
@@ -31,9 +26,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/train-codefu-7b-with-verl-and-ray-on-amazon-sagemaker-training-jobs
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Train CodeFu-7B with veRL and Ray on Amazon SageMaker Training jobs
-updated_at: '2026-02-24T20:15:34.723152+00:00'
+updated_at: '2026-03-03T01:16:34.430608+00:00'
 url_hash: db9e186ea4c08134b11b2c87b35588fc4d5a85a4
 ---
 

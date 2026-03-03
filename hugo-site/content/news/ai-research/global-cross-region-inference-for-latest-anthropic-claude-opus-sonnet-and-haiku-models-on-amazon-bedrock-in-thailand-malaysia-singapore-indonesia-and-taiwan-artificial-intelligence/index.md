@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T20:15:35.481638+00:00'
-exported_at: '2026-02-24T20:15:38.107501+00:00'
+date: '2026-03-03T01:16:35.903351+00:00'
+exported_at: '2026-03-03T01:16:37.881908+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/global-cross-region-inference-for-latest-anthropic-claude-opus-sonnet-and-haiku-models-on-amazon-bedrock-in-thailand-malaysia-singapore-indonesia-and-taiwan
@@ -19,21 +19,20 @@ structured_data:
     for customers in Thailand, Malaysia, Singapore, Indonesia, and Taiwan and give
     a walkthrough of technical implementation steps, and cover quota management best
     practices to maximize the value of your AI Inference deployments. We also provide
-    guidance on best practices for production deployments.
+    guida...
   headline: Global cross-Region inference for latest Anthropic Claude Opus, Sonnet
-    and Haiku models on Amazon Bedrock in Thailand, Malaysia, Singapore, Indonesia,
-    and Taiwan
+    and Haiku models on Amazon Bedrock in Thailand, Malaysia, Singapor...
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://aws.amazon.com/blogs/machine-learning/global-cross-region-inference-for-latest-anthropic-claude-opus-sonnet-and-haiku-models-on-amazon-bedrock-in-thailand-malaysia-singapore-indonesia-and-taiwan
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Global cross-Region inference for latest Anthropic Claude Opus, Sonnet and
   Haiku models on Amazon Bedrock in Thailand, Malaysia, Singapore, Indonesia, and
   Taiwan
-updated_at: '2026-02-24T20:15:35.481638+00:00'
+updated_at: '2026-03-03T01:16:35.903351+00:00'
 url_hash: d62f62add45ac611acc13d4250b8b76784165751
 ---
 

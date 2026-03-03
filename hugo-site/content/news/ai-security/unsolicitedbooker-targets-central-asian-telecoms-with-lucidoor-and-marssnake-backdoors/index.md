@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-24T20:15:17.739603+00:00'
-exported_at: '2026-02-24T20:15:20.015425+00:00'
+date: '2026-03-03T01:16:13.229190+00:00'
+exported_at: '2026-03-03T01:16:15.992407+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/unsolicitedbooker-targets-central-asian.html
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/unsolicitedbooker-targets-central-asian.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: UnsolicitedBooker Targets Central Asian Telecoms With LuciDoor and MarsSnake
   Backdoors
-updated_at: '2026-02-24T20:15:17.739603+00:00'
+updated_at: '2026-03-03T01:16:13.229190+00:00'
 url_hash: 0f019fa4664675339268bfa918584c150bb28e4f
 ---
 
@@ -78,6 +78,18 @@ in attacks targeting Thailand in 2022.
 "In their attacks, the group used rare tools of Chinese origin," Positive Technologies said. "Interestingly, at the very beginning, the group used a backdoor we dubbed LuciDoor, but later switched to the MarsSnake backdoor. However, in 2026, the group made a U-turn and resumed using LuciDoor."
 
 "Furthermore, in at least one case, we observed the attackers using a hacked router as a C2 server, and their infrastructure mimicked that of Russia in some attacks."
+
+When reached for comment, ESET told The Hacker News that it has not observed any new campaigns conducted by the threat actor since May 2025. But the Slovakian security company assessed with high confidence that UnsolicitedBooker is a China‑aligned cyber espionage group based on the tactics used, victimology patterns, and relevant non‑public data.
+
+One such indicator is the use of known backdoors like
+[Chinoxy](https://thehackernews.com/2020/11/chinese-apt-hackers-target-southeast.html)
+,
+[Deed RAT](https://thehackernews.com/2024/05/japanese-experts-warn-of-bloodalchemy.html)
+(a successor to ShadowPad, which itself is an evolution of PlugX),
+[Poison Ivy](https://thehackernews.com/2026/01/google-warns-of-active-exploitation-of.html)
+, and BeRAT, all of which are shared among multiple China-aligned groups.
+
+"Over the past several years, we have observed the group targeting entities in multiple countries, including Algeria, Belgium, Egypt, India, Mongolia, Saudi Arabia, and Taiwan." Matthieu Faou, senior malware researcher at ESET, said. "Their typical victims include government ministries, telecommunications providers, and legal professionals."
 
 ### PseudoSticky and Cloud Atlas Target Russia
 

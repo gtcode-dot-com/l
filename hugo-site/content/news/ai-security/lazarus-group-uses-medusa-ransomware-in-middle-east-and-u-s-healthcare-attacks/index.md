@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-24T20:15:17.552337+00:00'
-exported_at: '2026-02-24T20:15:20.019098+00:00'
+date: '2026-03-03T01:16:12.896001+00:00'
+exported_at: '2026-03-03T01:16:15.995056+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/lazarus-group-uses-medusa-ransomware-in.html
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/lazarus-group-uses-medusa-ransomware-in.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Lazarus Group Uses Medusa Ransomware in Middle East and U.S. Healthcare Attacks
-updated_at: '2026-02-24T20:15:17.552337+00:00'
+updated_at: '2026-03-03T01:16:12.896001+00:00'
 url_hash: 3e356ac7cf09266e138aa6cc8731cd87f6b66300
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-03T16:41:38.991528+00:00'
-exported_at: '2026-01-03T16:41:44.741827+00:00'
+date: '2026-03-03T01:16:56.762685+00:00'
+exported_at: '2026-03-03T01:17:01.694634+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2025/12/17/how-russias-invasion-is-impacting-ukraines-youth
@@ -17,7 +17,7 @@ structured_data:
   author: ''
   description: Since the beginning of Russia's full-scale invasion, Ukrainian educational
     facilities and spaces used by children have been damaged in air strikes or closed
-    because of them.  
+    because of them.
   headline: How Russia’s Invasion is Impacting Ukraine’s Youth
   inLanguage: en
   keywords: []
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2025/12/17/how-russias-invasion-is-impacting-ukraines-youth
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: How Russia’s Invasion is Impacting Ukraine’s Youth
-updated_at: '2026-01-03T16:41:38.991528+00:00'
+updated_at: '2026-03-03T01:16:56.762685+00:00'
 url_hash: 7fad79fcc5033a50e60a0d7a5675276fb9168e5d
 ---
 
