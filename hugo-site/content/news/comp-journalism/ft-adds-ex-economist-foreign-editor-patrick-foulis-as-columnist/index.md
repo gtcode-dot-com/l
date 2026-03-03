@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T04:15:48.173923+00:00'
-exported_at: '2026-02-13T04:15:50.676383+00:00'
+date: '2026-03-03T03:25:41.280226+00:00'
+exported_at: '2026-03-03T03:25:43.788359+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/the-wire/media-jobs-uk-news/ft-adds-ex-economist-foreign-editor-patrick-foulis-as-columnist
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/the-wire/media-jobs-uk-news/ft-adds-ex-economist-foreign-editor-patrick-foulis-as-columnist
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: FT adds ex-Economist foreign editor Patrick Foulis as columnist
-updated_at: '2026-02-13T04:15:48.173923+00:00'
+updated_at: '2026-03-03T03:25:41.280226+00:00'
 url_hash: 6c4a0c6c8dffd881faec3afb8c41b0d9c82ff232
 ---
 

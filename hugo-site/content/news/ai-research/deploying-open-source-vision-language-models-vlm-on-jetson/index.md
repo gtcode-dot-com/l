@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T22:15:37.361477+00:00'
-exported_at: '2026-02-24T22:15:39.533529+00:00'
+date: '2026-03-03T03:25:15.609145+00:00'
+exported_at: '2026-03-03T03:25:19.382646+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/nvidia/cosmos-on-jetson
 structured_data:
@@ -21,9 +21,9 @@ structured_data:
   original_source: https://huggingface.co/blog/nvidia/cosmos-on-jetson
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Deploying Open Source Vision Language Models (VLM) on Jetson
-updated_at: '2026-02-24T22:15:37.361477+00:00'
+updated_at: '2026-03-03T03:25:15.609145+00:00'
 url_hash: 328ac70aed76788dbf6102d13722ea7596d612ab
 ---
 
@@ -44,6 +44,8 @@ model across the Jetson lineup using the
 framework. We will also guide you through connecting this model to the
 [Live VLM WebUI](https://github.com/NVIDIA-AI-IOT/live-vlm-webui)
 , enabling a real-time, webcam-based interface for interactive physical AI.
+
+[![robot_pick_place](https://cdn-uploads.huggingface.co/production/uploads/658e083904cd2b7fd5f530d6/lrsP6RhYbwj0hBeuLjV_k.png)](https://cdn-uploads.huggingface.co/production/uploads/658e083904cd2b7fd5f530d6/lrsP6RhYbwj0hBeuLjV_k.png)
 
 ## Prerequisites
 
@@ -170,6 +172,9 @@ docker pull ghcr.io/nvidia-ai-iot/vllm:r36.4-tegra-aarch64-cu126-22.04
 ```
 
 ---
+
+[
+](https://cdn-uploads.huggingface.co/production/uploads/658e083904cd2b7fd5f530d6/dR3UVpD22I0vP1kzhdXQ1.mp4)
 
 ## Step 4: Serve Cosmos Reason 2B with vLLM
 

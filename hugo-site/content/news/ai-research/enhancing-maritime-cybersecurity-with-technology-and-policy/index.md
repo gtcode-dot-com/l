@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-25T06:58:02.245300+00:00'
-exported_at: '2026-02-25T06:58:04.431571+00:00'
+date: '2026-03-03T03:25:14.936250+00:00'
+exported_at: '2026-03-03T03:25:19.385236+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/enhancing-maritime-cybersecurity-technology-policy-strahinja-janjusevic-0225
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://news.mit.edu/2026/enhancing-maritime-cybersecurity-technology-policy-strahinja-janjusevic-0225
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Enhancing maritime cybersecurity with technology and policy
-updated_at: '2026-02-25T06:58:02.245300+00:00'
+updated_at: '2026-03-03T03:25:14.936250+00:00'
 url_hash: bf799c4b74349e61152b65916015517d0d4ee675
 ---
 
@@ -58,16 +58,14 @@ Janjusevic’s thesis brings together disciplines of cybersecurity, AI and deep 
 
 The research utilizes advanced threat modeling and vessel dynamics to train AI systems to distinguish between legitimate maneuvers and spoofed signals. It involves building a framework that employs an internal LSTM (long short-term memory) autoencoder to analyze signal integrity, while simultaneously using a physics-based forecaster to predict the vessel's movement based on environmental factors like wind and the sea state. By comparing these predictions against reported GPS positions, the system can effectively distinguish between natural sensor noise and malicious spoofing attacks. This hybrid framework is designed to empower, not replace, human operators, providing verified navigation data that allows watch standers to distinguish technical glitches from strategic cyberattacks.
 
-Sanjusevic has been able to enhance his academic research with industry experience. In summer 2025, he interned with the Network Detection team at the AI cybersecurity company Vectra AI. There, he investigated potential threats new technologies can bring, particularly AI agents and the model context protocol (MCP) — the emerging standard for AI agent communication. His research demonstrated how this technology could be repurposed for autonomous hacking operations and advanced command and control. This work on the security risks of agentic AI was recently presented in the preprint,
+Janjusevic has been able to enhance his academic research with industry experience. In summer 2025, he interned with the Network Detection team at the AI cybersecurity company Vectra AI. There, he investigated potential threats new technologies can bring, particularly AI agents and the model context protocol (MCP) — the emerging standard for AI agent communication. His research demonstrated how this technology could be repurposed for autonomous hacking operations and advanced command and control. This work on the security risks of agentic AI was recently presented in the preprint,
 [“Hiding in the AI Traffic: Abusing MCP for LLM-Powered Agentic Red Teaming.”](https://arxiv.org/abs/2511.15998)
 
 “I was able to gain practical insights and hands-on experience into how a data science team uses AI models to detect anomalies in a network,” says Janjusevic. “This work within industry directly informed the anomaly detection models in my research.”
 
 **International policy perspective**
 
-“Strajo brings not just a high level of intelligence and energy to his work on cyber-physical security for merchant vessels, but also a strong instinct from his Navy training that resonates deeply with the research effort and grounds it in actionable policy,” says Fotini Christia, the Ford International Professor of the Social Sciences, director of IDSS and the
-[MIT Sociotechnical Systems Research Center](https://ssrc.mit.edu/)
-, and a leader of the
+“Strajo brings not just a high level of intelligence and energy to his work on cyber-physical security for merchant vessels, but also a strong instinct from his Navy training that resonates deeply with the research effort and grounds it in actionable policy,” says Fotini Christia, the Ford International Professor of the Social Sciences, director of IDSS, and a leader of the
 [MIT Maritime Consortium](https://maritime.mit.edu/)
 .
 

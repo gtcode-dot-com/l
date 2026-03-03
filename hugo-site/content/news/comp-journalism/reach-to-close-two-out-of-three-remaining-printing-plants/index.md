@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T04:15:43.688433+00:00'
-exported_at: '2026-02-13T04:15:50.683326+00:00'
+date: '2026-03-03T03:25:36.618762+00:00'
+exported_at: '2026-03-03T03:25:43.796795+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/reach-to-close-two-out-of-three-remaining-printing-plants
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/news/reach-to-close-two-out-of-three-remaining-printing-plants
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Reach to close two out of three remaining printing plants
-updated_at: '2026-02-13T04:15:43.688433+00:00'
+updated_at: '2026-03-03T03:25:36.618762+00:00'
 url_hash: 352253614d8850cf0fc8668ef586e0d2abb10341
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-23T14:15:28.776065+00:00'
-exported_at: '2026-02-23T14:15:30.995197+00:00'
+date: '2026-03-03T03:25:16.064043+00:00'
+exported_at: '2026-03-03T03:25:19.379796+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-446-nuclear-llms-chinas
@@ -24,10 +24,10 @@ structured_data:
   original_source: https://importai.substack.com/p/import-ai-446-nuclear-llms-chinas
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Import AI 446: Nuclear LLMs; China''s big AI benchmark; measurement and AI
   policy'
-updated_at: '2026-02-23T14:15:28.776065+00:00'
+updated_at: '2026-03-03T03:25:16.064043+00:00'
 url_hash: 088f597a9cfc39a9ff65bef476bb466861b367c3
 ---
 

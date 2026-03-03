@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T01:03:21.427636+00:00'
-exported_at: '2026-01-02T01:03:24.712041+00:00'
+date: '2026-03-03T03:25:42.497005+00:00'
+exported_at: '2026-03-03T03:25:43.782141+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/ratcheting-up-a-red-line-how-china-is-being-used-in-the-australian-election-campaign
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/ratcheting-up-a-red-line-how-china-is-being-used-in-the-australian-election-campaign
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Ratcheting up a red line: How China is being used in the Australian election
   campaign'
-updated_at: '2026-01-02T01:03:21.427636+00:00'
+updated_at: '2026-03-03T03:25:42.497005+00:00'
 url_hash: 84ab8568f71e256ac8564bc82c6c0626e377c4eb
 ---
 

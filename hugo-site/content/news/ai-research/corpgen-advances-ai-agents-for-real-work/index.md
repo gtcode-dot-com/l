@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T18:15:32.223028+00:00'
-exported_at: '2026-02-26T18:15:35.845223+00:00'
+date: '2026-03-03T03:25:17.361388+00:00'
+exported_at: '2026-03-03T03:25:19.376911+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: CORPGEN advances AI agents for real work
-updated_at: '2026-02-26T18:15:32.223028+00:00'
+updated_at: '2026-03-03T03:25:17.361388+00:00'
 url_hash: 6eed536b1535debb088f483a353f3845b69d98f6
 ---
 
@@ -100,11 +100,9 @@ We introduced CORPGEN’s components sequentially: first the orchestration layer
 **Evaluation methodology changes the picture.**
 When we inspected the actual output files produced by agents, the results agreed with human judgements roughly 90% of the time. Evaluation based on screenshots and action logs agreed only about 40% of the time. This gap suggests that common evaluation approaches may underestimate what agents actually accomplish in practice.
 
-PODCAST SERIES
+## Azure AI Foundry Labs
 
-## AI Testing and Evaluation: Learnings from Science and Industry
-
-Discover how Microsoft is learning from other domains to advance evaluation and testing as a pillar of AI governance.
+Get a glimpse of potential future directions for AI, with these experimental technologies from Microsoft Research.
 
 Opens in a new tab
 
@@ -126,6 +124,6 @@ team and the
 (opens in new tab)](https://github.com/mem0ai/mem0)
 project for their open-source contributions, which enabled key components of the CORPGEN architecture, and the OSWorld team for the benchmark that served as the foundation for our multi-task evaluation.
 
-Finally, we thank the many contributors to this research: Anjel Shaileshbhai Patel, Dayquan Julienne, Charlotte Siska, Manuel Raúl Meléndez Luján, Anthony Twum-Barimah, Mauricio Velazco, and Tianwei Chen.
+Finally, we thank the many contributors to this research: Charlotte Siska, Manuel Raúl Meléndez Luján, Anthony Twum-Barimah, and Mauricio Velazco.
 
 Opens in a new tab

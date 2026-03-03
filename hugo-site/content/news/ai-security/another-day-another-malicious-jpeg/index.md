@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-23T14:15:14.846729+00:00'
-exported_at: '2026-02-23T14:15:17.114717+00:00'
+date: '2026-03-03T03:24:55.395618+00:00'
+exported_at: '2026-03-03T03:24:59.312110+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32738
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://isc.sans.edu/diary/rss/32738
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Another day, another malicious JPEG, (Mon, Feb 23rd)
-updated_at: '2026-02-23T14:15:14.846729+00:00'
+updated_at: '2026-03-03T03:24:55.395618+00:00'
 url_hash: 1ae22819c1094f5a8a3671eeb817b5e26a63fabb
 ---
 
@@ -67,9 +67,7 @@ Right above the error handling code, we see a call using four different variable
 
 At this point, the only thing remaining would be to look at the “whatsamatta” variable. Even here, the “begin at the end” approach can help us, since if we were to look at the final characters of the line that defines it, we would see that it was obfuscated in the same manner as the previously discussed variables (simple inclusion of a garbage string), only this time using different characters, since it ended in the following code:
 
-```
-.split("?????").join("");
-```
+![](https://isc.sans.edu/diaryimages/images/26-02-23-split.png)
 
 If we removed this final layer of obfuscation, we would end up with an ~2kB of Base64 encoded PowerShell. To decode Base64, we could use CyberChef or any other appropriate tool.
 

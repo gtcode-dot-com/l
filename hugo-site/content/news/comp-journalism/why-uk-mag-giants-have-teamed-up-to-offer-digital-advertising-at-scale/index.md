@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T04:15:46.488587+00:00'
-exported_at: '2026-02-13T04:15:50.679315+00:00'
+date: '2026-03-03T03:25:39.530270+00:00'
+exported_at: '2026-03-03T03:25:43.791089+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/marketing/why-uk-mag-giants-have-teamed-up-to-offer-digital-advertising-at-scale
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/marketing/why-uk-mag-giants-have-teamed-up-to-offer-digital-advertising-at-scale
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Why UK mag giants have teamed up to offer digital advertising at scale
-updated_at: '2026-02-13T04:15:46.488587+00:00'
+updated_at: '2026-03-03T03:25:39.530270+00:00'
 url_hash: 1ce2c9558334e11dcebcaf6879e168b05ff1beef
 ---
 

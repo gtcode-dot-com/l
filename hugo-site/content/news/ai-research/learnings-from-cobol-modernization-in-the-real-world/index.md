@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T20:15:28.959097+00:00'
-exported_at: '2026-02-26T20:15:31.432670+00:00'
+date: '2026-03-03T03:25:18.054336+00:00'
+exported_at: '2026-03-03T03:25:19.368002+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/learnings-from-cobol-modernization-in-the-real-world
@@ -19,7 +19,7 @@ structured_data:
     can reverse engineer deterministically, produce validated and traceable specs,
     and help those specs flow into any AI-powered coding assistant for the forward
     engineering. A successful modernization requires both reverse engineering and
-    forward engineering. Learn more about COBOL in this post.
+    forward engine...
   headline: Learnings from COBOL modernization in the real world
   inLanguage: en
   keywords: []
@@ -27,9 +27,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/learnings-from-cobol-modernization-in-the-real-world
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Learnings from COBOL modernization in the real world
-updated_at: '2026-02-26T20:15:28.959097+00:00'
+updated_at: '2026-03-03T03:25:18.054336+00:00'
 url_hash: 3e65c2de92bb5ee154f471596f9c4b6be67046b7
 ---
 

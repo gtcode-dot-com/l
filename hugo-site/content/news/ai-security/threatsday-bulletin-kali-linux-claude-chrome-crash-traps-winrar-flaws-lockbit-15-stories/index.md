@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T16:15:16.325443+00:00'
-exported_at: '2026-02-26T16:15:18.714634+00:00'
+date: '2026-03-03T03:24:57.890248+00:00'
+exported_at: '2026-03-03T03:24:59.297613+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/threatsday-bulletin-kali-linux-claude.html
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/threatsday-bulletin-kali-linux-claude.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'ThreatsDay Bulletin: Kali Linux + Claude, Chrome Crash Traps, WinRAR Flaws,
   LockBit & 15+ Stories'
-updated_at: '2026-02-26T16:15:16.325443+00:00'
+updated_at: '2026-03-03T03:24:57.890248+00:00'
 url_hash: 8ca736b39419d1f85864eed18d458c733195814c
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T20:15:13.591824+00:00'
-exported_at: '2026-02-26T20:15:15.791252+00:00'
+date: '2026-03-03T03:24:57.095526+00:00'
+exported_at: '2026-03-03T03:24:59.306855+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/aeternum-c2-botnet-stores-encrypted.html
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/aeternum-c2-botnet-stores-encrypted.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Aeternum C2 Botnet Stores Encrypted Commands on Polygon Blockchain to Evade
   Takedown
-updated_at: '2026-02-26T20:15:13.591824+00:00'
+updated_at: '2026-03-03T03:24:57.095526+00:00'
 url_hash: f19c319fe3c605f5c7c8fe69764e0089b3b15198
 ---
 
@@ -48,7 +48,7 @@ that uses the Bitcoin blockchain as a backup C2 mechanism to fetch the actual C2
 
 Details of Aeternum C2 first emerged in December 2025, when Outpost24's KrakenLabs
 [revealed](https://x.com/KrakenLabs_Team/status/1998330973461622894)
-that a threat actor by the name of LenAI was advertising the malware on underground forums for $200 that grants customers access to a panel and a configured build. For $4,000, customers were allegedly promised the entire C++ codebase along with updates.
+that a threat actor by the name of LenAI was advertising the malware on underground forums. A $200 payment grants customers access to a panel and a configured build. For $4,000, customers were allegedly promised the entire C++ codebase along with updates.
 
 A native C++ loader available in both x32 and x64 builds, the malware works by writing commands to be issued to the infected host to smart contracts on the Polygon blockchain. The bots then read those commands by querying public remote procedure call (RPC) endpoints.
 
@@ -70,7 +70,7 @@ to ensure that they are not flagged by antivirus vendors.
 
 The threat actor has since
 [attempted to sell the entire toolkit](https://x.com/KrakenLabs_Team/status/2024872751266148544)
-for an asking price of $10,000, claiming a lack of time for support and their involvement in another project. "I will sell the entire project to one person with permission for resale and commercial use, with all 'rights,'" LenAI said. "I will also give useful tips/notes on development that I did not have time to implement."
+for an asking price of $10,000, claiming a lack of time for support and their involvement in another project. "I will sell the entire project to one person with permission for resale and commercial use, with all 'rights,'" LenAI wrote in a dark web forum post. "I will also give useful tips/notes on development that I did not have time to implement."
 
 It's worth noting that LenAI is also behind a second crimeware solution called
 [ErrTraffic](https://thehackernews.com/2026/01/threatsday-bulletin-ghostad-drain-macos.html#fake-glitch-scam-toolkit-exposed)

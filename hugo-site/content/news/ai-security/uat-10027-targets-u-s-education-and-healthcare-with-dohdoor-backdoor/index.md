@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T16:15:16.055871+00:00'
-exported_at: '2026-02-26T16:15:18.718926+00:00'
+date: '2026-03-03T03:24:57.561391+00:00'
+exported_at: '2026-03-03T03:24:59.303910+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/uat-10027-targets-us-education-and.html
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/uat-10027-targets-us-education-and.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor
-updated_at: '2026-02-26T16:15:16.055871+00:00'
+updated_at: '2026-03-03T03:24:57.561391+00:00'
 url_hash: f1d7c8934a68011067d289d11abce74547c4c085
 ---
 
@@ -65,8 +65,12 @@ Dohdoor has also been found to unhook system calls to bypass endpoint detection 
 [user-mode hooks in NTDLL.dll](https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams/)
 .
 
+Raghuprasad told The Hacker News that, "the attacker had infected several educational institutions, including a university that is connected to several other institutions, indicating a potential wider attack surface. Additionally, one of the affected entities was a healthcare facility, specifically for elderly care."
+
+Analysis of the campaign has revealed no evidence of data exfiltration to date. Although no final payloads have been observed other than what appears to be the Cobalt Strike Beacon to backdoor into the victim's environment, it's believed that UAT-10027's actions are likely driven by financial gain based on the victimology pattern, the researcher added.
+
 There is currently no clarity on who is behind UAT-10027, but Cisco Talos said it found some tactical similarities between Dohdoor and
-[Lazarloader](https://thehackernews.com/2025/03/thn-weekly-recap-router-hacks-pypi.html#:~:text=Lazarus%20Group%20Drops%20LazarLoader%20Malware)
+[LazarLoader](https://thehackernews.com/2025/03/thn-weekly-recap-router-hacks-pypi.html#:~:text=Lazarus%20Group%20Drops%20LazarLoader%20Malware)
 , a
 [downloader](https://s2w.inc/en/resource/detail/941)
 previously identified as used by the North Korean hacking group Lazarus in attacks aimed at South Korea.
