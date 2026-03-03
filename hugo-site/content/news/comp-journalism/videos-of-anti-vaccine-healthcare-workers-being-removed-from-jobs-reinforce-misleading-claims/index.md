@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-03T00:15:47.077520+00:00'
-exported_at: '2026-01-03T00:15:54.492746+00:00'
+date: '2026-03-03T19:23:29.907092+00:00'
+exported_at: '2026-03-03T19:23:34.046079+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/videos-of-anti-vaccine-healthcare-workers-being-removed-from-jobs-reinforce-misleading-claims
@@ -19,7 +19,7 @@ structured_data:
     being suspended or fired from their jobs at healthcare facilities have generated
     significant interest in the past few days. Most physicians and healthcare workers
     in the United States have received Covid-19 vaccines. In a June survey, the American
-    Medical Association reported that 96 percent of physicians have […]
+    M...
   headline: Videos of anti-vaccine healthcare workers being removed from jobs reinforce
     misleading claims
   inLanguage: en
@@ -28,10 +28,10 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/videos-of-anti-vaccine-healthcare-workers-being-removed-from-jobs-reinforce-misleading-claims
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Videos of anti-vaccine healthcare workers being removed from jobs reinforce
   misleading claims
-updated_at: '2026-01-03T00:15:47.077520+00:00'
+updated_at: '2026-03-03T19:23:29.907092+00:00'
 url_hash: edeefc6b39d578dc31943f82a198eedc4453f9da
 ---
 

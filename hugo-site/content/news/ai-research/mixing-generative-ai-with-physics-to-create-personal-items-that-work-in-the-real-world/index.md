@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T06:08:08.814776+00:00'
-exported_at: '2026-02-26T06:08:11.312140+00:00'
+date: '2026-03-03T19:23:07.659319+00:00'
+exported_at: '2026-03-03T19:23:10.983207+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/mixing-ai-with-physics-to-create-personal-items-0225
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://news.mit.edu/2026/mixing-ai-with-physics-to-create-personal-items-0225
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Mixing generative AI with physics to create personal items that work in the
   real world
-updated_at: '2026-02-26T06:08:08.814776+00:00'
+updated_at: '2026-03-03T19:23:07.659319+00:00'
 url_hash: e316f174133c9ad4fdc4541efe4705cc53337473
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T16:15:31.732001+00:00'
-exported_at: '2026-02-26T16:15:34.057396+00:00'
+date: '2026-03-03T19:23:09.594598+00:00'
+exported_at: '2026-03-03T19:23:10.970502+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Nano Banana 2: Combining Pro capabilities with lightning-fast speed'
-updated_at: '2026-02-26T16:15:31.732001+00:00'
+updated_at: '2026-03-03T19:23:09.594598+00:00'
 url_hash: c0628d0f5f8233bcc6501e15a668130010dd5215
 ---
 
@@ -233,8 +233,8 @@ Nano Banana 2 is rolling out today across Google products, including:
   Nano Banana 2 is the new default image generation model in
   [Flow](https://flow.google/)
   , available to all Flow users for zero credits.
-* **Ads:**
-  Nano Banana is available in Ads, powering suggestions while creating campaigns.
+* **Google Ads:**
+  Nano Banana 2 is available now, powering suggestions while creating campaigns in Google Ads.
 
 Try Nano Banana 2 in the Gemini app, using the new templates feature.
 

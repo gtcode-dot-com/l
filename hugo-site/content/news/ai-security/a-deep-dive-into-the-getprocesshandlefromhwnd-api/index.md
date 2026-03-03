@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T18:15:14.322754+00:00'
-exported_at: '2026-02-26T18:15:16.820067+00:00'
+date: '2026-03-03T19:22:49.571563+00:00'
+exported_at: '2026-03-03T19:22:52.499221+00:00'
 feed: https://googleprojectzero.blogspot.com/feeds/posts/default
 language: en
 source_url: https://projectzero.google/2026/02/gphfh-deep-dive.html
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://projectzero.google/2026/02/gphfh-deep-dive.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: A Deep Dive into the GetProcessHandleFromHwnd API
-updated_at: '2026-02-26T18:15:14.322754+00:00'
+updated_at: '2026-03-03T19:22:49.571563+00:00'
 url_hash: fff7a6b46d2a2f6de515e6573797e9987800bd35
 ---
 

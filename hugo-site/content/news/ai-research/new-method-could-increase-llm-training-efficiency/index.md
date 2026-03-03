@@ -7,17 +7,17 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T06:08:08.558989+00:00'
-exported_at: '2026-02-26T06:08:11.314495+00:00'
+date: '2026-03-03T19:23:07.410561+00:00'
+exported_at: '2026-03-03T19:23:10.985934+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/new-method-could-increase-llm-training-efficiency-0226
 structured_data:
   about: []
   author: ''
-  description: 'A new technique leverages computing downtime to accelerate the training
+  description: A new technique leverages computing downtime to accelerate the training
     process for reasoning large language models (LLMs) without any additional computational
-    overhead. '
+    overhead.
   headline: New method could increase LLM training efficiency
   inLanguage: en
   keywords: []
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://news.mit.edu/2026/new-method-could-increase-llm-training-efficiency-0226
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: New method could increase LLM training efficiency
-updated_at: '2026-02-26T06:08:08.558989+00:00'
+updated_at: '2026-03-03T19:23:07.410561+00:00'
 url_hash: 1f2579539dc8edc0b6fa59c2db5ed3453fd189dc
 ---
 

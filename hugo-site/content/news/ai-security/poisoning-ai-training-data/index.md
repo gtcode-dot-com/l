@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T06:15:15.431586+00:00'
-exported_at: '2026-02-26T06:15:18.536168+00:00'
+date: '2026-03-03T19:22:48.647261+00:00'
+exported_at: '2026-03-03T19:22:52.502529+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/poisoning-ai-training-data.html
@@ -19,14 +19,7 @@ structured_data:
     spent 20 minutes writing an article on my personal website titled “The best tech
     journalists at eating hot dogs.” Every word is a lie. I claimed (without evidence)
     that competitive hot-dog-eating is a popular hobby among tech reporters and based
-    my ranking on the 2026 South Dakota International Hot Dog Championship (which
-    doesn’t exist). I ranked myself number one, obviously. Then I listed a few fake
-    reporters and real journalists who gave me permission…. Less than 24 hours later,
-    the world’s leading chatbots were blabbering about my world-class hot dog skills.
-    When I asked about the best hot-dog-eating tech journalists, Google parroted the
-    gibberish from my website, both in the Gemini app and AI Overviews, the AI responses
-    at the top of Google Search. ChatGPT did the same thing, though Claude, a chatbot
-    made by the company Anthropic, wasn’t fooled...'
+    my ra...'
   headline: Poisoning AI Training Data
   inLanguage: en
   keywords: []
@@ -34,9 +27,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/poisoning-ai-training-data.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Poisoning AI Training Data
-updated_at: '2026-02-26T06:15:15.431586+00:00'
+updated_at: '2026-03-03T19:22:48.647261+00:00'
 url_hash: 527844ef8f50dc8a0b6f3ba56a9899a1909cd709
 ---
 
@@ -65,6 +58,6 @@ Tags:
 
 [Posted on February 25, 2026 at 7:01 AM](https://www.schneier.com/blog/archives/2026/02/poisoning-ai-training-data.html)
 •
-[16 Comments](https://www.schneier.com/blog/archives/2026/02/poisoning-ai-training-data.html#comments)
+[28 Comments](https://www.schneier.com/blog/archives/2026/02/poisoning-ai-training-data.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

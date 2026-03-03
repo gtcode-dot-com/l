@@ -7,16 +7,16 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T06:15:15.898287+00:00'
-exported_at: '2026-02-26T06:15:18.520878+00:00'
+date: '2026-03-03T19:22:50.155463+00:00'
+exported_at: '2026-03-03T19:22:52.496493+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2026/02/25/mquire-linux-memory-forensics-without-external-dependencies
 structured_data:
   about: []
   author: ''
-  description: "\n                We’re open-sourcing mquire, a tool that analyzes
-    Linux memory dumps without requiring any external debug information.\n            "
+  description: We’re open-sourcing mquire, a tool that analyzes Linux memory dumps
+    without requiring any external debug information.
   headline: 'mquire: Linux memory forensics without external dependencies'
   inLanguage: en
   keywords: []
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://blog.trailofbits.com/2026/02/25/mquire-linux-memory-forensics-without-external-dependencies
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'mquire: Linux memory forensics without external dependencies'
-updated_at: '2026-02-26T06:15:15.898287+00:00'
+updated_at: '2026-03-03T19:22:50.155463+00:00'
 url_hash: 318c1c37c3df3674cb14faeb4cf400f24fb497e6
 ---
 

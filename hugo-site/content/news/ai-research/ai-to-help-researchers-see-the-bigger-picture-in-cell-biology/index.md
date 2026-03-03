@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T06:08:08.984177+00:00'
-exported_at: '2026-02-26T06:08:11.308368+00:00'
+date: '2026-03-03T19:23:07.899214+00:00'
+exported_at: '2026-03-03T19:23:10.980654+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/ai-help-researchers-see-bigger-picture-cell-biology-0225
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://news.mit.edu/2026/ai-help-researchers-see-bigger-picture-cell-biology-0225
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: AI to help researchers see the bigger picture in cell biology
-updated_at: '2026-02-26T06:08:08.984177+00:00'
+updated_at: '2026-03-03T19:23:07.899214+00:00'
 url_hash: 49605122f307d325c81920c230aa6525145d8549
 ---
 

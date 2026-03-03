@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T12:15:14.384936+00:00'
-exported_at: '2026-02-26T12:15:16.644446+00:00'
+date: '2026-03-03T19:22:48.254043+00:00'
+exported_at: '2026-03-03T19:22:52.505292+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/llms-generate-predictable-passwords.html
@@ -19,11 +19,7 @@ structured_data:
     patterns among these 50 passwords that can be seen easily: All of the passwords
     start with a letter, usually uppercase G, almost always followed by the digit
     7. Character choices are highly uneven ­ for example, L , 9, m, 2, $ and # appeared
-    in all 50 passwords, but 5 and @ only appeared in one password each, and most
-    of the letters in the alphabet never appeared at all. There are no repeating characters
-    within any password. Probabilistically, this would be very unlikely if the passwords
-    were truly random ­ but Claude preferred to avoid repeating characters, possibly
-    because it “looks like it’s less random”. ...'
+    in all 50...'
   headline: LLMs Generate Predictable Passwords
   inLanguage: en
   keywords: []
@@ -31,9 +27,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/llms-generate-predictable-passwords.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: LLMs Generate Predictable Passwords
-updated_at: '2026-02-26T12:15:14.384936+00:00'
+updated_at: '2026-03-03T19:22:48.254043+00:00'
 url_hash: 682aa6d546e455c916ee0a5738c055f83df49294
 ---
 
@@ -75,6 +71,6 @@ Tags:
 
 [Posted on February 26, 2026 at 7:07 AM](https://www.schneier.com/blog/archives/2026/02/llms-generate-predictable-passwords.html)
 •
-[0 Comments](https://www.schneier.com/blog/archives/2026/02/llms-generate-predictable-passwords.html#respond)
+[22 Comments](https://www.schneier.com/blog/archives/2026/02/llms-generate-predictable-passwords.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

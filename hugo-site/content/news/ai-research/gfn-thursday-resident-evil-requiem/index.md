@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T16:15:30.715535+00:00'
-exported_at: '2026-02-26T16:15:34.061177+00:00'
+date: '2026-03-03T19:23:07.136876+00:00'
+exported_at: '2026-03-03T19:23:10.988379+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/geforce-now-thursday-resident-evil-requiem
@@ -17,24 +17,24 @@ structured_data:
   author: ''
   description: 'Catch the launch of Capcom''s ''Resident Evil: Requiem'' and a special
     launch offer with the purchase of a 12-month Ultimate membership.'
-  headline: 'Horror Awakens in the Cloud: GeForce NOW Unleashes Capcom’s ‘Resident
-    Evil: Requiem’'
+  headline: 'The Nightmare Returns in the Cloud: GeForce NOW Unleashes Capcom’s ‘Resident
+    Evil Requiem’'
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://blogs.nvidia.com/blog/geforce-now-thursday-resident-evil-requiem
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
-title: 'Horror Awakens in the Cloud: GeForce NOW Unleashes Capcom’s ‘Resident Evil:
-  Requiem’'
-updated_at: '2026-02-26T16:15:30.715535+00:00'
+    name: GTCode
+title: 'The Nightmare Returns in the Cloud: GeForce NOW Unleashes Capcom’s ‘Resident
+  Evil Requiem’'
+updated_at: '2026-03-03T19:23:07.136876+00:00'
 url_hash: aa2222ad03836eb698df4970e076c41fd2c2155c
 ---
 
 [GeForce NOW](https://www.nvidia.com/en-us/geforce-now/)
 ’s anniversary celebration reaches a chilling crescendo as Capcom’s
-*Resident Evil: Requiem*
+*Resident Evil Requiem*
 creeps into the cloud — and the horrors look better than ever on a GeForce NOW Ultimate membership.
 
 To mark the occasion, a special launch bundle rises from the shadows, pairing the game with a yearlong Ultimate membership for a limited time.
@@ -47,18 +47,17 @@ Suit up and grab it alongside 11 new games joining the cloud this week.
 
 ## **The Nightmare Returns in the Cloud**
 
-A new era of survival horror dawns with
-*Resident Evil: Requiem*
-, the iconic Capcom series’ most immersive entry yet. Follow FBI analyst Grace Ashcroft and veteran agent Leon S. Kennedy as their stories and playstyles intertwine in a chilling, emotional fight for survival.
+A new era of survival horror arrives with
+*Resident Evil Requiem*
+, the latest and most immersive entry yet in the iconic
+*Resident Evil*
+series. Experience terrifying survival horror with FBI analyst Grace Ashcroft and dive into pulse-pounding action with legendary agent Leon S. Kennedy. Their journeys and unique gameplay styles intertwine into a heart-stopping, emotional experience that will chill gamers to their core.
 
 ![](https://blogs.nvidia.com/wp-content/uploads/2026/02/gfn-social-rtx-5080-spotlights-resident-evil-requiem-2048x1024-1-1680x840.jpg)
 
 
-*The city has been waiting — and it remembers.*
-
-Return to Raccoon City, the ruined heart of a 1998 bioweapon disaster now buried in government secrecy. Grace investigates her mother’s mysterious death while Leon, hardened by years of battling outbreaks, uncovers a new bioterror threat spreading through the Midwest. Classic
-*Resident Evil*
-survival horror returns with tense combat and clever puzzles — now enhanced with seamless switching between first‑ and third‑person views for a more personal nightmare.
+**Requiem for the dead. Nightmare for the living*
+.*
 
 With GeForce RTX 5080-class power in the cloud, experience
 *Requiem*
@@ -67,7 +66,7 @@ with lifelike lighting, full path tracing, ray‑traced reflections and cinemati
 with Multi Frame Generation for maximum performance. The Ultimate membership keeps every encounter smooth and immersive when streaming from powerful GPUs in the cloud.
 
 To celebrate GeForce NOW’s sixth anniversary, a special launch offer emerges from the fog: For a limited time,
-*Resident Evil: Requiem*
+*Resident Evil Requiem*
 is included with the purchase of a 12‑month Ultimate membership. It’s the perfect way to return to the city of disaster and despair, now more haunting and beautiful than ever.
 
 ## **Priority Package**
@@ -109,7 +108,7 @@ This week, members can look for the following:
   (New release on
   [Steam](https://store.steampowered.com/app/2458470?utm_source=nvidia&utm_campaign=geforce_now)
   , Feb. 26, GeForce RTX 5080-ready)
-* *Resident Evil: Requiem*
+* *Resident Evil Requiem*
   (New release on
   [Steam](https://store.steampowered.com/app/3764200?utm_source=nvidia&utm_campaign=geforce_now)
   , Feb. 27, GeForce RTX 5080-ready)

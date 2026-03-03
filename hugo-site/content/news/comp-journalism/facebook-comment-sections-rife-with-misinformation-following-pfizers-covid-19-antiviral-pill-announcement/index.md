@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-03T00:15:46.135210+00:00'
-exported_at: '2026-01-03T00:15:54.494088+00:00'
+date: '2026-03-03T19:23:28.456061+00:00'
+exported_at: '2026-03-03T19:23:34.048296+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/facebook-comment-sections-rife-with-misinformation-following-pfizers-covid-19-antiviral-pill-announcement
@@ -18,8 +18,7 @@ structured_data:
   description: Last week Pfizer published interim trial results for its experimental
     Covid-19 antiviral pill, Paxlovid, which the company said reduced the chance of
     hospitalization or death for some adults by almost 90 per cent. The US pharmaceutical
-    giant’s analysis included 1,219 adults who had been diagnosed with mild to moderate
-    Covid-19 and who had at least […]
+    giant’s analysis included 1,219 adults who had been diagnosed with mild to modera...
   headline: Facebook comment sections rife with misinformation following Pfizer’s
     Covid-19 antiviral pill announcement
   inLanguage: en
@@ -28,10 +27,10 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/facebook-comment-sections-rife-with-misinformation-following-pfizers-covid-19-antiviral-pill-announcement
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Facebook comment sections rife with misinformation following Pfizer’s Covid-19
   antiviral pill announcement
-updated_at: '2026-01-03T00:15:46.135210+00:00'
+updated_at: '2026-03-03T19:23:28.456061+00:00'
 url_hash: 0a049a50a8034a0feddf5e2204f2f3fc16598e53
 ---
 

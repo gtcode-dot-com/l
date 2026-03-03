@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T12:15:45.453348+00:00'
-exported_at: '2026-01-02T12:15:47.693829+00:00'
+date: '2026-03-03T19:23:27.303503+00:00'
+exported_at: '2026-03-03T19:23:34.050747+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/disinformation-actors-share-misconstrued-narratives-about-coronavirus-spike-protein-to-push-vaccine-skepticism
@@ -19,8 +19,7 @@ structured_data:
     again picked up in recent days. Vaccine skeptics and deniers have weaponized this
     medical term to deter people from trusting Covid-19 vaccines, which have been
     proven effective and safe. Natural News, InfoWars and other well-known disinformation
-    actors intentionally misinterpreted a recently published paper on a potential
-    mechanism […]
+    act...
   headline: Disinformation actors share misconstrued narratives about coronavirus
     spike protein to push vaccine skepticism
   inLanguage: en
@@ -29,10 +28,10 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/disinformation-actors-share-misconstrued-narratives-about-coronavirus-spike-protein-to-push-vaccine-skepticism
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Disinformation actors share misconstrued narratives about coronavirus spike
   protein to push vaccine skepticism
-updated_at: '2026-01-02T12:15:45.453348+00:00'
+updated_at: '2026-03-03T19:23:27.303503+00:00'
 url_hash: 0fdee4b360a1883409b90f14b18dc61833fc927a
 ---
 

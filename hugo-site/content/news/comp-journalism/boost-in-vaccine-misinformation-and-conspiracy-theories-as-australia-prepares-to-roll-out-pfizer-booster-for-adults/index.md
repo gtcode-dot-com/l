@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-03T00:15:47.954608+00:00'
-exported_at: '2026-01-03T00:15:54.491380+00:00'
+date: '2026-03-03T19:23:30.982832+00:00'
+exported_at: '2026-03-03T19:23:34.042666+00:00'
 feed: https://firstdraftnews.org/feed/
 language: en
 source_url: https://firstdraftnews.org/articles/boost-in-vaccine-misinformation-and-conspiracy-theories-as-australia-prepares-to-roll-out-pfizer-booster-for-adults
@@ -19,7 +19,7 @@ structured_data:
     members of its adult population on November 8. News that the country’s medicines
     regulator, the Therapeutic Goods Administration (TGA), had provisionally approved
     the Pfizer vaccine as a third dose was met with skepticism, misinformation and
-    conspiracy theories online. Shared as posts and comments on Facebook, […]
+    co...
   headline: Boost in vaccine misinformation and conspiracy theories as Australia prepares
     to roll out Pfizer booster for adults
   inLanguage: en
@@ -28,10 +28,10 @@ structured_data:
   original_source: https://firstdraftnews.org/articles/boost-in-vaccine-misinformation-and-conspiracy-theories-as-australia-prepares-to-roll-out-pfizer-booster-for-adults
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Boost in vaccine misinformation and conspiracy theories as Australia prepares
   to roll out Pfizer booster for adults
-updated_at: '2026-01-03T00:15:47.954608+00:00'
+updated_at: '2026-03-03T19:23:30.982832+00:00'
 url_hash: 912067a2b7603464f8deec191bba5c4dc24bb899
 ---
 
