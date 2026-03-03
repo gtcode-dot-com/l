@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T12:15:14.244685+00:00'
-exported_at: '2026-02-27T12:15:16.661090+00:00'
+date: '2026-03-03T20:07:30.663545+00:00'
+exported_at: '2026-03-03T20:07:33.813873+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/phishing-attacks-against-people-seeking-programming-jobs.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Phishing Attacks Against People Seeking Programming Jobs
-updated_at: '2026-02-27T12:15:14.244685+00:00'
+updated_at: '2026-03-03T20:07:30.663545+00:00'
 url_hash: a8b1b6016e44700bce3da880b6b63332e58e2b05
 ---
 
@@ -53,4 +53,4 @@ Tags:
 
 [Posted on February 27, 2026 at 7:04 AM](https://www.schneier.com/blog/archives/2026/02/phishing-attacks-against-people-seeking-programming-jobs.html)
 •
-[0 Comments](https://www.schneier.com/blog/archives/2026/02/phishing-attacks-against-people-seeking-programming-jobs.html#respond)
+[5 Comments](https://www.schneier.com/blog/archives/2026/02/phishing-attacks-against-people-seeking-programming-jobs.html#comments)

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-01T02:28:57.377647+00:00'
-exported_at: '2026-03-01T02:29:00.049233+00:00'
+date: '2026-03-03T20:07:32.480248+00:00'
+exported_at: '2026-03-03T20:07:33.803833+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Who is the Kimwolf Botmaster “Dort”?
-updated_at: '2026-03-01T02:28:57.377647+00:00'
+updated_at: '2026-03-03T20:07:32.480248+00:00'
 url_hash: 4cfc5cdfbfb83f29ea7a1a2ac7c5a32db0f3bb04
 ---
 

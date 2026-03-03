@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T12:15:14.046990+00:00'
-exported_at: '2026-02-27T12:15:16.668204+00:00'
+date: '2026-03-03T20:07:29.324992+00:00'
+exported_at: '2026-03-03T20:07:33.821573+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/trojanized-gaming-tools-spread-java.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Trojanized Gaming Tools Spread Java-Based RAT via Browser and Chat Platforms
-updated_at: '2026-02-27T12:15:14.046990+00:00'
+updated_at: '2026-03-03T20:07:29.324992+00:00'
 url_hash: c487c939a70f63c73fb3b54144225684a60bb94b
 ---
 

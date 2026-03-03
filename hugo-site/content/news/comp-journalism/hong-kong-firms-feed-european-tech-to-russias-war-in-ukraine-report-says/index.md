@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T10:15:43.945066+00:00'
-exported_at: '2026-02-20T10:15:47.874441+00:00'
+date: '2026-03-03T20:08:27.949171+00:00'
+exported_at: '2026-03-03T20:08:30.228307+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/news/2026/02/hong-kong-firms-feed-european-tech-to-russias-war-in-ukraine-report-says
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://www.icij.org/news/2026/02/hong-kong-firms-feed-european-tech-to-russias-war-in-ukraine-report-says
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Hong Kong firms feed European tech to Russia’s war in Ukraine, report says
-updated_at: '2026-02-20T10:15:43.945066+00:00'
+updated_at: '2026-03-03T20:08:27.949171+00:00'
 url_hash: 23111d6945aabc3a3f76e2293423c0744bcb37e3
 ---
 

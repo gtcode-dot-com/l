@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T12:15:14.151542+00:00'
-exported_at: '2026-02-27T12:15:16.665706+00:00'
+date: '2026-03-03T20:07:30.335246+00:00'
+exported_at: '2026-03-03T20:07:33.816576+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/why-tehrans-two-tiered-internet-is-so-dangerous.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Why Tehran’s Two-Tiered Internet Is So Dangerous
-updated_at: '2026-02-27T12:15:14.151542+00:00'
+updated_at: '2026-03-03T20:07:30.335246+00:00'
 url_hash: a85f480f10ce909818b4b8d42d427c0a41731149
 ---
 
@@ -127,4 +127,4 @@ Tags:
 
 [Posted on February 27, 2026 at 7:05 AM](https://www.schneier.com/blog/archives/2026/02/why-tehrans-two-tiered-internet-is-so-dangerous.html)
 •
-[0 Comments](https://www.schneier.com/blog/archives/2026/02/why-tehrans-two-tiered-internet-is-so-dangerous.html#respond)
+[17 Comments](https://www.schneier.com/blog/archives/2026/02/why-tehrans-two-tiered-internet-is-so-dangerous.html#comments)

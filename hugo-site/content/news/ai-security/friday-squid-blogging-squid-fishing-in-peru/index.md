@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T22:15:13.021707+00:00'
-exported_at: '2026-02-27T22:15:15.260343+00:00'
+date: '2026-03-03T20:07:29.988481+00:00'
+exported_at: '2026-03-03T20:07:33.819181+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-fishing-in-peru.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'Friday Squid Blogging: Squid Fishing in Peru'
-updated_at: '2026-02-27T22:15:13.021707+00:00'
+updated_at: '2026-03-03T20:07:29.988481+00:00'
 url_hash: b2746bfc4a453dc26bc9890b389352a8472502b4
 ---
 
@@ -47,4 +47,4 @@ Tags:
 
 [Posted on February 27, 2026 at 5:04 PM](https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-fishing-in-peru.html)
 •
-[0 Comments](https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-fishing-in-peru.html#respond)
+[24 Comments](https://www.schneier.com/blog/archives/2026/02/friday-squid-blogging-squid-fishing-in-peru.html#comments)

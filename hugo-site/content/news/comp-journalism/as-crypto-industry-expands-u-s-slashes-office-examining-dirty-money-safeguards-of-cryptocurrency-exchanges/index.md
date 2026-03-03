@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T10:15:45.511480+00:00'
-exported_at: '2026-02-20T10:15:47.870982+00:00'
+date: '2026-03-03T20:08:28.331303+00:00'
+exported_at: '2026-03-03T20:08:30.207667+00:00'
 feed: https://www.icij.org/feed/
 language: en
 source_url: https://www.icij.org/investigations/coin-laundry/as-crypto-industry-expands-u-s-slashes-office-examining-dirty-money-safeguards-of-cryptocurrency-exchanges
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://www.icij.org/investigations/coin-laundry/as-crypto-industry-expands-u-s-slashes-office-examining-dirty-money-safeguards-of-cryptocurrency-exchanges
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: As crypto industry expands, U.S. slashes office examining dirty money safeguards
   of cryptocurrency exchanges
-updated_at: '2026-02-20T10:15:45.511480+00:00'
+updated_at: '2026-03-03T20:08:28.331303+00:00'
 url_hash: fd01fea5c8c4933344b51405814be17614348a14
 ---
 
