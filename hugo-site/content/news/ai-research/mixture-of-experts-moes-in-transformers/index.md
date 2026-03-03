@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-26T14:15:29.583179+00:00'
-exported_at: '2026-02-26T14:15:31.840074+00:00'
+date: '2026-03-03T19:48:24.641194+00:00'
+exported_at: '2026-03-03T19:48:27.851650+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/moe-transformers
 structured_data:
@@ -22,9 +22,9 @@ structured_data:
   original_source: https://huggingface.co/blog/moe-transformers
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Mixture of Experts (MoEs) in Transformers
-updated_at: '2026-02-26T14:15:29.583179+00:00'
+updated_at: '2026-03-03T19:48:24.641194+00:00'
 url_hash: e44d72287f6142b276a728b74bbd126033c8e2e2
 ---
 

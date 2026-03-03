@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T08:15:16.500088+00:00'
-exported_at: '2026-02-26T08:15:19.387172+00:00'
+date: '2026-03-03T19:48:02.494320+00:00'
+exported_at: '2026-03-03T19:48:05.516549+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32748
@@ -18,25 +18,27 @@ structured_data:
   description: 'The CLAIR Model: A Synthesized Conceptual Framework for Mapping Critical
     Infrastructure Interdependencies [Guest Diary], Author: Johannes Ullrich'
   headline: 'The CLAIR Model: A Synthesized Conceptual Framework for Mapping Critical
-    Infrastructure Interdependencies &#x5b;Guest Diary&#x5d;, (Wed, Feb 25th)'
+    Infrastructure Interdependencies &#x5b;Guest Diary&#x5d;, (Wed,...'
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://isc.sans.edu/diary/rss/32748
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'The CLAIR Model: A Synthesized Conceptual Framework for Mapping Critical Infrastructure
   Interdependencies &#x5b;Guest Diary&#x5d;, (Wed, Feb 25th)'
-updated_at: '2026-02-26T08:15:16.500088+00:00'
+updated_at: '2026-03-03T19:48:02.494320+00:00'
 url_hash: 8b6a6fcce152f788e4788f251335e18e766ac0b2
 ---
 
 [This is a guest diary contributed by Claire Perry (
-[LinkedIn](http://https://www.linkedin.com/in/ctwperry/)
+[LinkedIn](https://www.linkedin.com/in/ctwperry/)
 
 
 )]
+
+[PDF Version](/diaryimages/images/The_CLAIR_Model.pdf)
 
 The structural integrity of modern society is predicated upon a dense and often opaque network of interconnected systems. For decades, the modeling of these systems remained siloed within specific domains: industrial processes were governed by the hierarchical constraints of the Purdue Model, while corporate and data-centric ecosystems were organized using various Enterprise Architecture (EA) frameworks (Fortinet, n.d.; The Open Group, n.d.). However, the accelerating convergence of Information Technology (IT) and Operational Technology (OT) has exposed a critical analytical gap. Disruptions in the external utility grid, once considered an unlikely factor, now propagate through the physical and logical layers of the enterprise with devastating speed, as evidenced by recent power-related disconnections of large-scale data center operations (Mural et al., 2026; Islam et al., 2023).
 

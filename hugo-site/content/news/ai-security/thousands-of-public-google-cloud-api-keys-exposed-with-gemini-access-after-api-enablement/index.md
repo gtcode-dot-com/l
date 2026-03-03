@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-01T02:28:56.112036+00:00'
-exported_at: '2026-03-01T02:29:00.057620+00:00'
+date: '2026-03-03T19:48:04.156874+00:00'
+exported_at: '2026-03-03T19:48:05.498240+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: Thousands of Public Google Cloud API Keys Exposed with Gemini Access After
   API Enablement
-updated_at: '2026-03-01T02:28:56.112036+00:00'
+updated_at: '2026-03-03T19:48:04.156874+00:00'
 url_hash: 04afd2b93174f3afe31955c96fc363d30a967979
 ---
 

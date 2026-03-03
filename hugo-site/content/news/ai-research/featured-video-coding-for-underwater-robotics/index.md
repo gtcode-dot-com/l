@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-28T00:15:30.347237+00:00'
-exported_at: '2026-02-28T00:15:32.619156+00:00'
+date: '2026-03-03T19:48:25.686873+00:00'
+exported_at: '2026-03-03T19:48:27.842758+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/featured-video-coding-underwater-robotics-0227
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'Featured video: Coding for underwater robotics'
-updated_at: '2026-02-28T00:15:30.347237+00:00'
+updated_at: '2026-03-03T19:48:25.686873+00:00'
 url_hash: f9ef6b6776e0588ace00673be8199af21fa339fe
 ---
 

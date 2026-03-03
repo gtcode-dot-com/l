@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-01T02:28:55.926199+00:00'
-exported_at: '2026-03-01T02:29:00.061769+00:00'
+date: '2026-03-03T19:48:03.774149+00:00'
+exported_at: '2026-03-03T19:48:05.510902+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: ClawJacked Flaw Lets Malicious Sites Hijack Local OpenClaw AI Agents via WebSocket
-updated_at: '2026-03-01T02:28:55.926199+00:00'
+updated_at: '2026-03-03T19:48:03.774149+00:00'
 url_hash: 79761b668f54bea7c19c7b91e8b2665053e03ddb
 ---
 
@@ -50,13 +50,13 @@ set up and running on their laptop, with its
 The infection sequence then follows the steps below -
 
 * Malicious JavaScript on the web page opens a WebSocket connection to localhost on the OpenClaw gateway port.
-* The script brute-forces the gateway password by taking advantage of a missing rate-limiting mechanism.
+* The script brute-forces the gateway password by taking advantage of a missing rate-limiting mechanism for localhost.
 * Post successful authentication with admin-level permissions, the script stealthily registers as a trusted device, which is auto-approved by the gateway without any user prompt.
 * The attacker gains complete control over the AI agent, allowing them to interact with it, dump configuration data, enumerate connected nodes, and read application logs.
 
 "Any website you visit can open one to your localhost. Unlike regular HTTP requests, the browser doesn't block these cross-origin connections," Oasis Security said. "So while you're browsing any website, JavaScript running on that page can silently open a connection to your local OpenClaw gateway. The user sees nothing."
 
-"That misplaced trust has real consequences. The gateway relaxes several security mechanisms for local connections - including silently approving new device registrations without prompting the user. Normally, when a new device connects, the user must confirm the pairing. From localhost, it's automatic."
+"That misplaced trust has real consequences. The gateway relaxes several security mechanisms for local connections – including silently approving new device registrations without prompting the user. Normally, when a new device connects, the user must confirm the pairing. From localhost, it's automatic."
 
 Following responsible disclosure, OpenClaw pushed a fix in less than 24 hours with
 [version 2026.2.25](https://github.com/openclaw/openclaw/releases/tag/v2026.2.25)
@@ -132,7 +132,7 @@ What's more, a recent analysis of 3,505 ClawHub skills by AI security company St
 [uncovered](https://www.straiker.ai/blog/built-on-clawhub-spread-on-moltbook-the-new-agent-to-agent-attack-chain)
 no less than 71 malicious ones, some of which posed as legitimate cryptocurrency tools but contained hidden functionality to redirect funds to threat actor-controlled wallets.
 
-Two other skills, bob-p2p-beta and runware, have been attributed to a multi-layered cryptocurrency scam that employs an agent-to-agent attack chain targeting the AI agent ecosystem. The skills have been attributed to a threat actor who operates under the aliases "26medias" on ClawHub and "BobVonNeumann" on
+Two other skills, bob-p2p-beta and runware, have been linked to a multi-layered cryptocurrency scam that employs an agent-to-agent attack chain targeting the AI agent ecosystem. The skills have been attributed to a threat actor who operates under the aliases "26medias" on ClawHub and "BobVonNeumann" on
 [Moltbook](https://thehackernews.com/2026/02/openclaw-integrates-virustotal-scanning.html)
 and X.
 

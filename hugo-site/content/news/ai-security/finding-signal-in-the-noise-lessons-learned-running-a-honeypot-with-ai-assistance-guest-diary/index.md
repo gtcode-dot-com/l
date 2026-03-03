@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-26T08:15:15.315967+00:00'
-exported_at: '2026-02-26T08:15:19.391914+00:00'
+date: '2026-03-03T19:48:01.683492+00:00'
+exported_at: '2026-03-03T19:48:05.519474+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32744
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://isc.sans.edu/diary/rss/32744
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Finding Signal in the Noise: Lessons Learned Running a Honeypot with AI Assistance
   &#x5b;Guest Diary&#x5d;, (Tue, Feb 24th)'
-updated_at: '2026-02-26T08:15:15.315967+00:00'
+updated_at: '2026-03-03T19:48:01.683492+00:00'
 url_hash: 855f0249f6ad29001e2d57ac82c69b7ea1de28c7
 ---
 
