@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T12:15:34.858827+00:00'
-exported_at: '2026-02-20T12:15:37.124384+00:00'
+date: '2026-03-03T00:14:16.382292+00:00'
+exported_at: '2026-03-03T00:14:17.712014+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/exposing-biases-moods-personalities-hidden-large-language-models-0219
@@ -27,10 +27,10 @@ structured_data:
   original_source: https://news.mit.edu/2026/exposing-biases-moods-personalities-hidden-large-language-models-0219
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Exposing biases, moods, personalities, and abstract concepts hidden in large
   language models
-updated_at: '2026-02-20T12:15:34.858827+00:00'
+updated_at: '2026-03-03T00:14:16.382292+00:00'
 url_hash: 62c1ae27c0d3c57eec180b4eb3913c4ae3140302
 ---
 

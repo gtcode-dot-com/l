@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-04T18:15:50.745865+00:00'
-exported_at: '2026-02-04T18:15:53.383079+00:00'
+date: '2026-03-03T00:17:57.496355+00:00'
+exported_at: '2026-03-03T00:18:03.089387+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/02/04/made-in-the-usa-how-american-built-weapons-have-wrought-destruction-in-gaza
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/02/04/made-in-the-usa-how-american-built-weapons-have-wrought-destruction-in-gaza
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Made in the USA: How American-Built Weapons Have Wrought Destruction in Gaza'
-updated_at: '2026-02-04T18:15:50.745865+00:00'
+updated_at: '2026-03-03T00:17:57.496355+00:00'
 url_hash: 8d689e408924f1cfb2d46bcfd834da84dc5aca44
 ---
 

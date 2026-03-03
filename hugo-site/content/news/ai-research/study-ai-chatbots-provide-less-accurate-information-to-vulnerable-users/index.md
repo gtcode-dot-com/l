@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T12:15:34.613154+00:00'
-exported_at: '2026-02-20T12:15:37.127842+00:00'
+date: '2026-03-03T00:14:16.058358+00:00'
+exported_at: '2026-03-03T00:14:17.735265+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/study-ai-chatbots-provide-less-accurate-information-vulnerable-users-0219
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://news.mit.edu/2026/study-ai-chatbots-provide-less-accurate-information-vulnerable-users-0219
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Study: AI chatbots provide less-accurate information to vulnerable users'
-updated_at: '2026-02-20T12:15:34.613154+00:00'
+updated_at: '2026-03-03T00:14:16.058358+00:00'
 url_hash: f7aea2e330ac2ffb908dde4e1f2325833e0587c6
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-27T16:15:41.902536+00:00'
-exported_at: '2026-01-27T16:15:44.846133+00:00'
+date: '2026-03-03T00:17:58.648939+00:00'
+exported_at: '2026-03-03T00:18:03.085957+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/resources/2026/01/27/less-lethal-weapons-guide
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://www.bellingcat.com/resources/2026/01/27/less-lethal-weapons-guide
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Identifying ‘Less-Lethal’ Weapons Used By DHS Agents in US Immigration Raids
   and Protests
-updated_at: '2026-01-27T16:15:41.902536+00:00'
+updated_at: '2026-03-03T00:17:58.648939+00:00'
 url_hash: 27d267fe721085e06d49750bb4ccbf96b63ca946
 ---
 

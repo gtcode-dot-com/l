@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T14:15:16.268153+00:00'
-exported_at: '2026-02-20T14:15:25.189417+00:00'
+date: '2026-03-03T00:17:19.534564+00:00'
+exported_at: '2026-03-03T00:17:22.391758+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32730
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://isc.sans.edu/diary/rss/32730
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Under the Hood of DynoWiper, (Thu, Feb 19th)
-updated_at: '2026-02-20T14:15:16.268153+00:00'
+updated_at: '2026-03-03T00:17:19.534564+00:00'
 url_hash: d369823d382c719320f94717494653a743772507
 ---
 

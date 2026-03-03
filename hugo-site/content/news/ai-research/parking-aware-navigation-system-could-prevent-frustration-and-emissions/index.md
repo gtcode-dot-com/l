@@ -7,17 +7,17 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T14:15:40.407793+00:00'
-exported_at: '2026-02-20T14:15:44.565996+00:00'
+date: '2026-03-03T00:17:37.254856+00:00'
+exported_at: '2026-03-03T00:17:42.271453+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/parking-aware-navigation-could-prevent-frustration-and-emissions-0219
 structured_data:
   about: []
   author: ''
-  description: 'By minimizing the need to drive around looking for a parking spot,
+  description: By minimizing the need to drive around looking for a parking spot,
     this technique can save drivers up to 35 minutes — and give them a realistic estimate
-    of total travel time. '
+    of total travel time.
   headline: Parking-aware navigation system could prevent frustration and emissions
   inLanguage: en
   keywords: []
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://news.mit.edu/2026/parking-aware-navigation-could-prevent-frustration-and-emissions-0219
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Parking-aware navigation system could prevent frustration and emissions
-updated_at: '2026-02-20T14:15:40.407793+00:00'
+updated_at: '2026-03-03T00:17:37.254856+00:00'
 url_hash: aedb98148dcf415600c56f5d99615dc16ccfcf0d
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-24T20:15:16.717827+00:00'
-exported_at: '2026-02-24T20:15:20.025099+00:00'
+date: '2026-03-03T00:17:20.232467+00:00'
+exported_at: '2026-03-03T00:17:22.388801+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/roguepilot-flaw-in-github-codespaces.html
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/roguepilot-flaw-in-github-codespaces.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: RoguePilot Flaw in GitHub Codespaces Enabled Copilot to Leak GITHUB_TOKEN
-updated_at: '2026-02-24T20:15:16.717827+00:00'
+updated_at: '2026-03-03T00:17:20.232467+00:00'
 url_hash: 38c2dad3e85a6f1f0688154802a329e4e4b394db
 ---
 
@@ -95,7 +95,7 @@ An attacker could weaponize such a backdoor to intercept requests to fetch conte
 [said](https://hiddenlayer.com/innovation-hub/agentic-shadowlogic/)
 . "The user receives their expected data with no errors or warnings. Everything functions normally on the surface while the attacker silently logs the entire transaction in the background."
 
-And that's not all. Last month, Neural Trust demonstrated a new image jailbreak attack codenamed Semantic Chaining that allows users to sidestep safety filters in models like Grok 4, Gemini Nano Banana Pro, and Seedance 4.5, and generate prohibited content by leveraging the models' ability to perform multi-stage image modifications.
+And that's not all. Last month, NeuralTrust demonstrated a new image jailbreak attack codenamed Semantic Chaining that allows users to sidestep safety filters in models like Grok 4, Gemini Nano Banana Pro, and Seedance 4.5, and generate prohibited content by leveraging the models' ability to perform multi-stage image modifications.
 
 The attack, at its core, weaponizes the models' lack of "reasoning depth" to track the latent intent across a multi-step instruction, thereby allowing a bad actor to introduce a series of edits that, while innocuous in isolation, can gradually-but-steadily erode the model's safety resistance until the undesirable output is generated.
 

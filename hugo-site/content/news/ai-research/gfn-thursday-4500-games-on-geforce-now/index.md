@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T10:15:30.820008+00:00'
-exported_at: '2026-02-20T10:15:33.263701+00:00'
+date: '2026-03-03T00:14:15.763409+00:00'
+exported_at: '2026-03-03T00:14:17.741223+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/geforce-now-thursday-battlefield-season-2
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/geforce-now-thursday-battlefield-season-2
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'All About the Games: Play Over 4,500 Titles With GeForce NOW'
-updated_at: '2026-02-20T10:15:30.820008+00:00'
+updated_at: '2026-03-03T00:14:15.763409+00:00'
 url_hash: d8427be22b75f8c494d242436b36623360a38beb
 ---
 

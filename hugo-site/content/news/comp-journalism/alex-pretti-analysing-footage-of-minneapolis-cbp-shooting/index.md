@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-25T20:15:41.315923+00:00'
-exported_at: '2026-01-25T20:15:43.610237+00:00'
+date: '2026-03-03T00:17:59.616775+00:00'
+exported_at: '2026-03-03T00:18:03.082688+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/01/25/alex-pretti-analysing-footage-of-minneapolis-cbp-shooting
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/01/25/alex-pretti-analysing-footage-of-minneapolis-cbp-shooting
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Alex Pretti: Analysing Footage of Minneapolis CBP Shooting'
-updated_at: '2026-01-25T20:15:41.315923+00:00'
+updated_at: '2026-03-03T00:17:59.616775+00:00'
 url_hash: 022c61a97053bfc13d0748a41d7cde204a407cc0
 ---
 
@@ -38,7 +38,7 @@ On January 24, Alex Pretti,
 [a 37-year-old intensive care unit nurse](https://www.startribune.com/alex-pretti-identified-as-man-fatally-shot-by-federal-officers-in-minneapolis/601570109)
 at the Minneapolis Veterans Affairs Health Care System, was shot and killed by federal agents on Nicollet Avenue in Minneapolis, Minnesota. The shooting comes just over two weeks after Renee Good
 [was shot and killed](https://www.bellingcat.com/news/2026/01/13/analysing-footage-of-minneapolis-ice-shooting/)
-by a federal agent in the same city
+by a federal agent in the same city.
 
 The United States Department of Homeland Security
 [claimed](https://x.com/DHSgov/status/2015115351797780500)
@@ -104,7 +104,8 @@ to their agents, the gun that DHS claims Pretti had is customized, and visually 
 
 These distinct features include a white pistol grip, black pistol frame, brown slide, and a red dot sight mounted atop the slide. The red dot sight and these various colours are visible on the gun the federal agent is seen leaving with.
 
-*Left: Screenshot showing the federal agent retreating as Pretti is shot with the gun. Right: Photo released by DHS of the gun they say belonged to Pretti. Sources:*
+*Left: Screenshot showing a federal agent retreating with a gun retrieved from Pretti’s rear waistband, as Pretti is shot by another federal agent. Right: Photo released by DHS of the gun they say belonged to Pretti.
+Sources:*
 [*Philophon/Reddit*](https://www.reddit.com/r/law/comments/1qlvdx6/new_video_of_124_ice_shooting_shows_victim_had/)
 *and*
 [*Department of Homeland Security*](https://x.com/DHSgov/status/2015115351797780500?s=20)
@@ -131,7 +132,7 @@ Two agents appear to fire their weapons from the footage available, one wearing 
 
 *A screengrab from a Facebook*
 [*video*](https://www.facebook.com/reel/1207062461029220)
-*shows the agent in the brown beanie (left) and the agent in the black beanie (right), both in red boxes, who fired the shots.*
+*shows the agent in the brown beanie (left) and the agent in the black beanie (right), both in white box, who fired the shots.*
 *Annotations by Bellingcat.*
 
 At the same time as the first shot is fired, the agent in the grey jacket is leaving with the gun taken from Pretti’s holster. An
@@ -144,7 +145,7 @@ Bellingcat synced and slowed three videos to show where the agent in the black b
 appear to be snow, that is visible before any shots occur.
 
 > Three-way video sync and slow+zoom showing the moment of the first shot before Alex Pretti was killed by DHS agents in Minneapolis yesterday.
-> There's some claims that Pretti's gun was the source of the first shot after it was taken from him, though in these videos it doesn't appear that's the case.
+> There’s some claims that Pretti’s gun was the source of the first shot after it was taken from him, though in these videos it doesn’t appear that’s the case.
 >
 >
 > [[image or embed]](https://bsky.app/profile/did:plc:ku5tlep6op4n5h5dvdcvgsfs/post/3mdbejpznrs2x?ref_src=embed)
@@ -154,7 +155,7 @@ appear to be snow, that is visible before any shots occur.
 > )
 > [25 January 2026 at 18:33](https://bsky.app/profile/did:plc:ku5tlep6op4n5h5dvdcvgsfs/post/3mdbejpznrs2x?ref_src=embed)
 
-Whatsmore, the agent with the black beanie’s right arm that was seen holding the gun moves backwards as the first shot is heard, likely due to the recoil from firing.
+What’s more, the agent with the black beanie’s right arm that was seen holding the gun moves backwards as the first shot is heard, likely due to the recoil from firing.
 
 After firing once, the agent in the black beanie repositions, and then quickly fires three more shots at Pretti’s back at close range while he appears to try to stand up.
 

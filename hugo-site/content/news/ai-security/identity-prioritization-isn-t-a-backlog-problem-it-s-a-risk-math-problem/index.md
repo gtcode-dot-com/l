@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-24T20:15:17.137864+00:00'
-exported_at: '2026-02-24T20:15:20.021162+00:00'
+date: '2026-03-03T00:17:20.953969+00:00'
+exported_at: '2026-03-03T00:17:22.379794+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/02/identity-prioritization-isnt-backlog.html
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://thehackernews.com/2026/02/identity-prioritization-isnt-backlog.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Identity Prioritization isn't a Backlog Problem - It's a Risk Math Problem
-updated_at: '2026-02-24T20:15:17.137864+00:00'
+updated_at: '2026-03-03T00:17:20.953969+00:00'
 url_hash: 8e633088c2c85cee41a399d9626635e692ed3efe
 ---
 
@@ -200,6 +200,11 @@ Identity risk isn’t a list, it’s a graph of trust paths plus context. Contro
 
 [Orchid](https://eu1.hubs.ly/H0qBxh00)
 passively discovers the entire application estate managed or unmanaged and identities via telemetry, builds an identity graph, and converts posture signals + hygiene + business context + activity into contextual risk scores. It ranks the toxic combinations that matter most, via dynamic Severity produces a sequenced remediation plan, and then drives no-code onboarding into governance (managed identities/IGA policies) with continuous monitoring, so teams reduce real exposure fast, not just close the most findings.
+
+**Note:**
+*This article was expertly written and contributed by
+[Roy Katmor](https://www.linkedin.com/in/roykatmor/)
+, CEO of Orchid Security.*
 
 Found this article interesting?
 

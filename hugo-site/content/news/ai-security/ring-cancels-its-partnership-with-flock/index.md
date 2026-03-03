@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T18:15:14.191862+00:00'
-exported_at: '2026-02-20T18:15:17.355232+00:00'
+date: '2026-03-03T00:13:53.523597+00:00'
+exported_at: '2026-03-03T00:13:58.499545+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/ring-cancels-its-partnership-with-flock.html
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/ring-cancels-its-partnership-with-flock.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Ring Cancels Its Partnership with Flock
-updated_at: '2026-02-20T18:15:14.191862+00:00'
+updated_at: '2026-03-03T00:13:53.523597+00:00'
 url_hash: 3a97d23d1f9a21583fdb303b6fa1d46cb45f9e4d
 ---
 
@@ -52,4 +52,4 @@ Tags:
 
 [Posted on February 20, 2026 at 7:08 AM](https://www.schneier.com/blog/archives/2026/02/ring-cancels-its-partnership-with-flock.html)
 •
-[2 Comments](https://www.schneier.com/blog/archives/2026/02/ring-cancels-its-partnership-with-flock.html#comments)
+[8 Comments](https://www.schneier.com/blog/archives/2026/02/ring-cancels-its-partnership-with-flock.html#comments)

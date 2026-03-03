@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T14:15:41.043250+00:00'
-exported_at: '2026-02-20T14:15:44.563171+00:00'
+date: '2026-03-03T00:17:38.686540+00:00'
+exported_at: '2026-03-03T00:17:42.268143+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Gemini 3.1 Pro: A smarter model for your most complex tasks'
-updated_at: '2026-02-20T14:15:41.043250+00:00'
+updated_at: '2026-03-03T00:17:38.686540+00:00'
 url_hash: f2c017b8c71223725bf754482018006c0fc3b3eb
 ---
 

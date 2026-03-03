@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T08:15:35.194545+00:00'
-exported_at: '2026-02-20T08:15:37.766278+00:00'
+date: '2026-03-03T00:14:15.441764+00:00'
+exported_at: '2026-03-03T00:14:17.744020+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/amazon-quick-suite-now-supports-key-pair-authentication-to-snowflake-data-source
@@ -25,16 +25,16 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/amazon-quick-suite-now-supports-key-pair-authentication-to-snowflake-data-source
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Amazon Quick now supports key pair authentication to Snowflake data source
-updated_at: '2026-02-20T08:15:35.194545+00:00'
+updated_at: '2026-03-03T00:14:15.441764+00:00'
 url_hash: a7cdf4ae74f3f1c6321e3de9661b2a94dc05650a
 ---
 
 Modern enterprises face significant challenges connecting business intelligence platforms to cloud data warehouses while maintaining automation. Password-based authentication introduces security vulnerabilities, operational friction, and compliance gaps—especially critical as Snowflake is deprecating username password.
 
 [Amazon Quick Sight](https://aws.amazon.com/quick/quicksight/)
-(a capability of Amazon Quick Suite) now supports key pair authentication for Snowflake integrations, using asymmetric cryptography where RSA key pairs replace traditional passwords. This enhancement addresses a critical need as Snowflake moves toward deprecating password-based authentication, which requires more secure authentication methods. With this new capability, Amazon Quick Suite users can establish secure, passwordless connections to Snowflake data sources using RSA key pairs, providing a seamless and secure integration experience that meets enterprise security standards.
+(a capability of Amazon Quick) now supports key pair authentication for Snowflake integrations, using asymmetric cryptography where RSA key pairs replace traditional passwords. This enhancement addresses a critical need as Snowflake moves toward deprecating password-based authentication, which requires more secure authentication methods. With this new capability, Amazon Quick users can establish secure, passwordless connections to Snowflake data sources using RSA key pairs, providing a seamless and secure integration experience that meets enterprise security standards.
 
 In this blog post, we will guide you through establishing data source connectivity between Amazon Quick Sight and Snowflake through secure key pair authentication.
 

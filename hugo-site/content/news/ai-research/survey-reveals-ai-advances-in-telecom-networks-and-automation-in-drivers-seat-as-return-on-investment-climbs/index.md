@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T10:15:30.581009+00:00'
-exported_at: '2026-02-20T10:15:33.265298+00:00'
+date: '2026-03-03T00:14:15.890194+00:00'
+exported_at: '2026-03-03T00:14:17.738482+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/ai-in-telco-survey-2026
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/ai-in-telco-survey-2026
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Survey Reveals AI Advances in Telecom: Networks and Automation in Driver’s
   Seat as Return on Investment Climbs'
-updated_at: '2026-02-20T10:15:30.581009+00:00'
+updated_at: '2026-03-03T00:14:15.890194+00:00'
 url_hash: 3604f5a17365492071ae41d5bce3580476829638
 ---
 

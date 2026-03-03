@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T16:15:33.739738+00:00'
-exported_at: '2026-02-20T16:15:37.018170+00:00'
+date: '2026-03-03T00:17:40.240714+00:00'
+exported_at: '2026-03-03T00:17:42.261600+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/unsloth-jobs
 structured_data:
@@ -22,9 +22,9 @@ structured_data:
   original_source: https://huggingface.co/blog/unsloth-jobs
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Train AI models with Unsloth and Hugging Face Jobs for FREE
-updated_at: '2026-02-20T16:15:33.739738+00:00'
+updated_at: '2026-03-03T00:17:40.240714+00:00'
 url_hash: 921e5a859005bc54efdb8f140e35ab6a629014eb
 ---
 

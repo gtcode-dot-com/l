@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T10:15:14.773049+00:00'
-exported_at: '2026-02-20T10:15:17.607662+00:00'
+date: '2026-03-03T00:13:53.949079+00:00'
+exported_at: '2026-03-03T00:13:58.496484+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/malicious-ai.html
@@ -19,9 +19,7 @@ structured_data:
     wrote and published a personalized hit piece about me after I rejected its code,
     attempting to damage my reputation and shame me into accepting its changes into
     a mainstream python library. This represents a first-of-its-kind case study of
-    misaligned AI behavior in the wild, and raises serious concerns about currently
-    deployed AI agents executing blackmail threats. Part 2 of the story. And a Wall
-    Street Journal article. EDITED TO ADD (2/20) Here are parts 3, and 4 of the story...'
+    misaligne...'
   headline: Malicious AI
   inLanguage: en
   keywords: []
@@ -29,9 +27,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/malicious-ai.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Malicious AI
-updated_at: '2026-02-20T10:15:14.773049+00:00'
+updated_at: '2026-03-03T00:13:53.949079+00:00'
 url_hash: 65005b61f590594347190c0d92df35e1ce63a5b8
 ---
 
@@ -65,6 +63,6 @@ Tags:
 
 [Posted on February 19, 2026 at 7:05 AM](https://www.schneier.com/blog/archives/2026/02/malicious-ai.html)
 •
-[11 Comments](https://www.schneier.com/blog/archives/2026/02/malicious-ai.html#comments)
+[12 Comments](https://www.schneier.com/blog/archives/2026/02/malicious-ai.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

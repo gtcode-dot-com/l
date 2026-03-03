@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-22T06:15:16.511566+00:00'
-exported_at: '2026-02-22T06:15:18.749396+00:00'
+date: '2026-03-03T00:13:55.546420+00:00'
+exported_at: '2026-03-03T00:13:58.492056+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa
@@ -23,13 +23,13 @@ structured_data:
   original_source: https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: ‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA
-updated_at: '2026-02-22T06:15:16.511566+00:00'
+updated_at: '2026-03-03T00:13:55.546420+00:00'
 url_hash: d01dc8114217a6369bf3090db62c5b3589b1c202
 ---
 
-Most phishing websites are little more than static copies of login pages for popular online destinations, and they are often quickly taken down by anti-abuse activists and security firms. But a stealthy new phishing-as-a-service offering lets customers sidestep both of these pitfalls: It uses cleverly disguised links to load the target brand’s real website, and then acts as a relay between the target and the legitimate site — forwarding the victim’s username, password and multi-factor authentication (MFA) code to the legitimate site and returning its responses.
+Most phishing websites are little more than static copies of login pages for popular online destinations, and they are often quickly taken down by anti-abuse activists and security firms. But a stealthy new phishing-as-a-service offering lets customers sidestep both of these pitfalls: It uses cleverly disguised links to load the target brand’s real website, and then acts as a relay between the victim and the legitimate site — forwarding the victim’s username, password and multi-factor authentication (MFA) code to the legitimate site and returning its responses.
 
 There are countless phishing kits that would-be scammers can use to get started, but successfully wielding them requires some modicum of skill in configuring servers, domain names, certificates, proxy services, and other repetitive tech drudgery. Enter
 **Starkiller**

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-13T16:15:45.779927+00:00'
-exported_at: '2026-01-13T16:15:48.026118+00:00'
+date: '2026-03-03T00:18:01.741288+00:00'
+exported_at: '2026-03-03T00:18:03.072579+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/01/13/analysing-footage-of-minneapolis-ice-shooting
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/01/13/analysing-footage-of-minneapolis-ice-shooting
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Analysing Footage of Minneapolis ICE Shooting
-updated_at: '2026-01-13T16:15:45.779927+00:00'
+updated_at: '2026-03-03T00:18:01.741288+00:00'
 url_hash: fa285c18a6b34b4a90eb7426eac7d976c96a1f6f
 ---
 
@@ -95,7 +95,7 @@ Another
 published by CNN (middle lower left) shows a head-on view of the incident from surveillance footage
 **.**
 
-> New footage from the ICE agent's phone who shot at Renee Nicole Good in Minneapolis has emerged, posted by AlphaNews on X. We've placed that footage in a synced timeline with the other currently available footage.
+> New footage from the ICE agent’s phone who shot at Renee Nicole Good in Minneapolis has emerged, posted by AlphaNews on X. We’ve placed that footage in a synced timeline with the other currently available footage.
 >
 >
 > [[image or embed]](https://bsky.app/profile/did:plc:sb54dpdfefflykmf5bcfvr7t/post/3mbzglg3ids24?ref_src=embed)
@@ -113,7 +113,7 @@ in the US.
 
 US President, Donald Trump, and Department of Homeland Security, Kristi Noem, initially said that Good had tried to run over an ICE officer after blocking the road, labelling her a “domestic terrorist”. However, the Democratic mayor of Minneapolis, Jacob Frey, said that version of events was “garbage” and disproven by the video footage.
 
-On Monday January 12, Noem,
+On Monday Jan. 12, Noem,
 [told FOX News](https://news.sky.com/story/hundreds-more-officers-heading-to-minnesota-amid-nationwide-protests-over-ice-killing-of-mother-of-three-13493516)
 that more ICE agents would be sent to Minnesota.
 

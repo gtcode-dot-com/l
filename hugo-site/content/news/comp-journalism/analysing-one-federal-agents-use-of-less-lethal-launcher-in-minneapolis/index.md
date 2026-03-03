@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-16T18:15:43.627531+00:00'
-exported_at: '2026-01-16T18:15:47.128154+00:00'
+date: '2026-03-03T00:18:00.785968+00:00'
+exported_at: '2026-03-03T00:18:03.079310+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/01/16/border-patrol-minneapolis
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/01/16/border-patrol-minneapolis
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Five Shots in Five Minutes: Analysing One Federal Agent’s Use of Less-Lethal
   Launcher in Minneapolis'
-updated_at: '2026-01-16T18:15:43.627531+00:00'
+updated_at: '2026-03-03T00:18:00.785968+00:00'
 url_hash: f60ac92cc5375ce24ea278b1b957366cd68ed8a0
 ---
 
@@ -246,7 +246,7 @@ Chemical irritant smoke was seen being released by the projectiles from this las
 *One projectile visibly emits chemical irritants as it travels through the air, at 9:23. Source:*
 [*Status Coup News*](https://youtu.be/LnfiWmX_mTE?t=563)
 
-The multiple projectiles are consistent with the 40mm “SKAT SHELL” by Defense Technology, which ejects four separate submunitions upon firing which each dispense chemical irritants. In one of the videos, a
+The multiple projectiles are consistent with the 40mm “SKAT Shell” by Defense Technology, which ejects four separate submunitions upon firing, each dispensing chemical irritants. In one of the videos, a
 [SKAT Shell](https://www.defense-technology.com/product/skat-shell-40-mm-multiple-projectile-round-saf-smoke/)
 is seen in EZ-17’s belt.
 

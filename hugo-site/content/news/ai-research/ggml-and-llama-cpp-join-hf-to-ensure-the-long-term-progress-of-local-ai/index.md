@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T18:15:30.308679+00:00'
-exported_at: '2026-02-20T18:15:32.969704+00:00'
+date: '2026-03-03T00:17:39.681293+00:00'
+exported_at: '2026-03-03T00:17:42.264898+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/ggml-joins-hf
 structured_data:
@@ -22,9 +22,9 @@ structured_data:
   original_source: https://huggingface.co/blog/ggml-joins-hf
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: GGML and llama.cpp join HF to ensure the long-term progress of Local AI
-updated_at: '2026-02-20T18:15:30.308679+00:00'
+updated_at: '2026-03-03T00:17:39.681293+00:00'
 url_hash: ca4b92433d4bdcc0f15f8d6c296302de3806fb42
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-20T16:15:33.941724+00:00'
-exported_at: '2026-02-20T16:15:37.016235+00:00'
+date: '2026-03-03T00:17:40.854278+00:00'
+exported_at: '2026-03-03T00:17:42.254614+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja
 structured_data:
@@ -21,9 +21,9 @@ structured_data:
   original_source: https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速
-updated_at: '2026-02-20T16:15:33.941724+00:00'
+updated_at: '2026-03-03T00:17:40.854278+00:00'
 url_hash: 7904925c0a8a67bf7014accc50047980e6481b76
 ---
 

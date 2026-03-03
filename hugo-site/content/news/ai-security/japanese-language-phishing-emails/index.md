@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-22T08:15:17.029074+00:00'
-exported_at: '2026-02-22T08:15:19.304068+00:00'
+date: '2026-03-03T00:13:57.109731+00:00'
+exported_at: '2026-03-03T00:13:58.482162+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32734
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://isc.sans.edu/diary/rss/32734
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Japanese-Language Phishing Emails, (Sat, Feb 21st)
-updated_at: '2026-02-22T08:15:17.029074+00:00'
+updated_at: '2026-03-03T00:13:57.109731+00:00'
 url_hash: 0284f028e954888da62a47e1adaaf704c9454bcf
 ---
 

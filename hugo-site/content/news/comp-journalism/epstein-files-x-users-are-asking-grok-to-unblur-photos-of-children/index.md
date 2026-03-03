@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T00:15:50.734726+00:00'
-exported_at: '2026-02-13T00:15:52.939086+00:00'
+date: '2026-03-03T00:14:36.673076+00:00'
+exported_at: '2026-03-03T00:14:38.041733+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/02/10/grok-epstein-photos
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/02/10/grok-epstein-photos
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Epstein Files: X Users Are Asking Grok to ‘Unblur’ Photos of Children'
-updated_at: '2026-02-13T00:15:50.734726+00:00'
+updated_at: '2026-03-03T00:14:36.673076+00:00'
 url_hash: 96dbbf9e409bf3696045a6500543170cdd26ab38
 ---
 

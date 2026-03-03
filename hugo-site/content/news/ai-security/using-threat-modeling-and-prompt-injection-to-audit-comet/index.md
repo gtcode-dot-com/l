@@ -7,20 +7,18 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-20T18:15:15.069325+00:00'
-exported_at: '2026-02-20T18:15:17.348655+00:00'
+date: '2026-03-03T00:13:56.084672+00:00'
+exported_at: '2026-03-03T00:13:58.488570+00:00'
 feed: https://blog.trailofbits.com/feed/
 language: en
 source_url: https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet
 structured_data:
   about: []
   author: ''
-  description: "\n                Trail of Bits used ML-centered threat modeling and
-    adversarial testing to identify four prompt injection techniques that could exploit
-    Perplexity's Comet browser AI assistant to exfiltrate private Gmail data. The
-    audit demonstrated how fake security mechanisms, system instructions, and user
-    requests could manipulate the AI agent into accessing and transmitting sensitive
-    user information.\n            "
+  description: Trail of Bits used ML-centered threat modeling and adversarial testing
+    to identify four prompt injection techniques that could exploit Perplexity's Comet
+    browser AI assistant to exfiltrate private Gmail data. The audit demonstrated
+    how fake security mechanisms, system instructions, and user requests could manipulate...
   headline: Using threat modeling and prompt injection to audit Comet
   inLanguage: en
   keywords: []
@@ -28,9 +26,9 @@ structured_data:
   original_source: https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Using threat modeling and prompt injection to audit Comet
-updated_at: '2026-02-20T18:15:15.069325+00:00'
+updated_at: '2026-03-03T00:13:56.084672+00:00'
 url_hash: 028b59f42e2bd7083c21c96c70623ef55aefa517
 ---
 
