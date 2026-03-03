@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T02:16:00.981332+00:00'
-exported_at: '2026-02-13T02:16:05.373161+00:00'
+date: '2026-03-03T03:02:56.729103+00:00'
+exported_at: '2026-03-03T03:03:01.035995+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/platforms/how-all-you-can-read-app-readly-is-gearing-up-for-growth-after-cafeyn-merger
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/platforms/how-all-you-can-read-app-readly-is-gearing-up-for-growth-after-cafeyn-merger
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: How ‘all you can read’ app Readly is gearing up for growth after Cafeyn merger
-updated_at: '2026-02-13T02:16:00.981332+00:00'
+updated_at: '2026-03-03T03:02:56.729103+00:00'
 url_hash: c426b695ef41bc03e0d5729ac0eaa9fdec9b8d4c
 ---
 
@@ -44,7 +44,7 @@ Readly has undergone multiple strategic divestments since Press Gazette last spo
 
 Readly then reported
 [full-year profitability for the first time a year later](https://news.cision.com/readly/r/readly-reports-strong-revenue-growth-and-first-ever-annual-profit,c4104840)
-, with revenue of SEK 725.3 million (£60.8m) and gross profit of SEK 292.4 million (£24m), for the 12 months ending December 2024 .
+, with revenue of SEK 725.3 million (£60.8m) and gross profit of SEK 292.4 million (£24m), for the 12 months ending December 2024.
 
 A price increase in different markets also “helped us get to profitability”, said head of content Chloe Rushmere (the app costs £12.99 per month in the UK, increasing from £9.99).
 
@@ -53,14 +53,12 @@ Partnered with 1,200 publishers, Readly offers 8,200 magazines and 360 newspaper
 The app currently has 427,200 full-paying subscribers overall per its third quarter to September 2025.
 
 Swedish media company Bonnier acquired 96% of Readly’s shares, which was then followed by “all you can read” French magazine platform
-[Cafeyn buying up “basically all the non-Nordics” businesses of Readly’s from Bonnier in November 2025](https://communities.cafeyn.co/press/cafeyn-partners-bonniernewsgroup-readly)
-as part of a strategic partnership, said Rushmere.
+[Cafeyn agreeing a deal to buy up “basically all the non-Nordics” businesses of Readly’s from Bonnier in November 2025](https://communities.cafeyn.co/press/cafeyn-partners-bonniernewsgroup-readly)
+as part of a strategic partnership, said Rushmere. That merger is yet to be completed.
 
 Cafeyn had
 [already acquired its French business in November 2024](https://news.cision.com/readly/r/readly-divests-its-holding-in-toutabo-epresse-to-cafeyn,c4002590)
-. Cafeyn’s involvement does not mean it is a shareholder, having only been involved in a business asset transfers. Cafeyn operates Readly in France and the non-nordics, keeping the Readly brand in some markets. Bonnier is currently
-[the main owner of Readly](https://news.cision.com/readly/r/bonnier-news-increases-its-ownership-in-readly-to-over-92--and-declares-the-offer-unconditional%2Cc4153677?utm_source=chatgpt.com)
-, now holding 100% of shares in the company.
+.
 
 Readly has “started to invest” in itself again, said Rushmere.
 

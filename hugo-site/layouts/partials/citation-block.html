@@ -6,6 +6,29 @@
 */}}
 {{- $cite := index site.Data.citations .RelPermalink -}}
 {{- if $cite -}}
+<style>
+.citation-block{margin-top:3rem;padding:1.5rem;border:1px solid var(--ou-border,var(--color-border,#30363d));border-radius:.5rem;background:var(--ou-bg-alt,var(--color-bg-alt,#161b22))}
+.citation-block-heading{font-family:var(--ou-font-display,var(--font-heading,system-ui,-apple-system,sans-serif));font-size:1rem;font-weight:600;color:var(--ou-accent-a11y,var(--color-text,#c9d1d9));margin:0 0 1rem;letter-spacing:.02em}
+.citation-version{font-family:var(--ou-font-display,var(--font-heading,system-ui,-apple-system,sans-serif));font-size:.78rem;color:var(--ou-text-muted,var(--color-text-muted,#8b949e));margin:-.35rem 0 .9rem}
+.citation-tabs{display:flex;gap:0;border-bottom:1px solid var(--ou-border,var(--color-border,#30363d));margin-bottom:1rem}
+.citation-tab{font-family:var(--ou-font-display,var(--font-heading,system-ui,-apple-system,sans-serif));font-size:.8rem;font-weight:600;padding:.5rem 1rem;background:none;border:none;border-bottom:2px solid transparent;color:var(--ou-text-muted,var(--color-text-muted,#8b949e));cursor:pointer;transition:color .2s,border-color .2s}
+.citation-tab:hover{color:var(--ou-text,var(--color-text,#c9d1d9))}
+.citation-tab-active{color:var(--ou-accent-a11y,var(--color-primary,#58a6ff));border-bottom-color:var(--ou-accent,var(--color-primary,#58a6ff))}
+.citation-panel{display:none}
+.citation-panel-active{display:block}
+.citation-pre{background:var(--ou-bg,var(--color-bg,#0d1117));border:1px solid var(--ou-border-light,var(--color-border-light,#21262d));border-radius:.375rem;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5;margin:0}
+.citation-pre code{font-family:var(--font-mono,'SF Mono','Fira Code','Fira Mono',Menlo,Consolas,monospace);color:var(--ou-text,var(--color-text,#c9d1d9));background:none;padding:0}
+.citation-text{font-size:.85rem;line-height:1.6;color:var(--ou-text,var(--color-text,#c9d1d9));margin:0;overflow-wrap:anywhere}
+.citation-text em{font-style:italic}
+.citation-block .citation-text a,.citation-block .citation-text a:visited{color:var(--ou-accent-a11y,var(--color-primary,#58a6ff));text-decoration-color:color-mix(in srgb,var(--ou-accent-a11y,var(--color-primary,#58a6ff)) 55%,transparent);text-decoration-thickness:.08em;text-underline-offset:.16em;overflow-wrap:anywhere}
+.citation-block .citation-text a:hover,.citation-block .citation-text a:focus-visible{color:var(--ou-accent,var(--color-primary-dark,#79c0ff));text-decoration-color:var(--ou-accent,var(--color-primary-dark,#79c0ff))}
+.citation-block .citation-text a:focus-visible{outline:2px solid color-mix(in srgb,var(--ou-accent-a11y,var(--color-primary,#58a6ff)) 45%,transparent);outline-offset:2px;border-radius:.125rem}
+.citation-actions{display:flex;gap:.75rem;margin-top:1rem;align-items:center}
+.citation-copy{font-family:var(--ou-font-display,var(--font-heading,system-ui,-apple-system,sans-serif));font-size:.8rem;font-weight:600;padding:.4rem 1rem;background:none;border:1px solid var(--ou-border,var(--color-border,#30363d));border-radius:.375rem;color:var(--ou-text-muted,var(--color-text-muted,#8b949e));cursor:pointer;transition:color .2s,border-color .2s}
+.citation-copy:hover{color:var(--ou-accent-a11y,var(--color-primary,#58a6ff));border-color:var(--ou-accent,var(--color-primary,#58a6ff))}
+.citation-repo-link{font-family:var(--ou-font-display,var(--font-heading,system-ui,-apple-system,sans-serif));font-size:.8rem;font-weight:600;color:var(--ou-text-muted,var(--color-text-muted,#8b949e));text-decoration:none;transition:color .2s}
+.citation-repo-link:hover{color:var(--ou-accent-a11y,var(--color-primary,#58a6ff))}
+</style>
 <aside class="citation-block" aria-label="How to cite this publication">
   <h2 class="citation-block-heading">How to Cite</h2>
   {{ if and $cite.lastmod (ne $cite.lastmod $cite.date) }}

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-23T18:15:34.412911+00:00'
-exported_at: '2026-02-23T18:15:36.656822+00:00'
+date: '2026-03-03T03:02:33.431610+00:00'
+exported_at: '2026-03-03T03:02:35.509769+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/ai-cybersecurity-operational-technology-industrial-control-systems
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/ai-cybersecurity-operational-technology-industrial-control-systems
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: NVIDIA Brings AI-Powered Cybersecurity to World’s Critical Infrastructure
-updated_at: '2026-02-23T18:15:34.412911+00:00'
+updated_at: '2026-03-03T03:02:33.431610+00:00'
 url_hash: 3a16fe79f989018453150882358259e0974eba70
 ---
 
@@ -38,7 +38,13 @@ Many of these systems were originally designed for reliability and longevity, no
 
 NVIDIA is collaborating with leading cybersecurity providers
 [Akamai](https://www.akamai.com/)
-, Forescout, Palo Alto Networks and Xage Security, as well as industrial automation innovator Siemens, to bring accelerated computing and AI to OT cybersecurity, advancing real-time threat detection and response across critical infrastructure.
+, Forescout,
+[Palo Alto Networks](https://www.paloaltonetworks.com/blog/network-security/prisma-airs-on-nvidia-bluefield-secures-the-industrial-edge/)
+and
+[Xage Security](https://xage.com/blog/securing-the-energy-supply-chain-for-ai/)
+, as well as industrial automation innovator
+[Siemens](https://blog.siemens.com/2025/08/new-class-of-ot-cybersecurity/)
+, to bring accelerated computing and AI to OT cybersecurity, advancing real-time threat detection and response across critical infrastructure.
 
 These efforts represent a fundamental shift in OT and ICS cybersecurity, where security is embedded into and distributed across infrastructure, enforced at the edge and coordinated through centralized, AI-driven intelligence, bringing modern cybersecurity to the systems that keep the physical world running.
 

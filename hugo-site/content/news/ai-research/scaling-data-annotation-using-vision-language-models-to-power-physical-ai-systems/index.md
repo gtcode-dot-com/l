@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T22:15:36.864129+00:00'
-exported_at: '2026-02-24T22:15:39.538411+00:00'
+date: '2026-03-03T03:02:31.095906+00:00'
+exported_at: '2026-03-03T03:02:36.074014+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/scaling-data-annotation-using-vision-language-models-to-power-physical-ai-systems
@@ -18,8 +18,7 @@ structured_data:
   description: In this post, we examine how Bedrock Robotics tackles this challenge.
     By joining the AWS Physical AI Fellowship, the startup partnered with the AWS
     Generative AI Innovation Center to apply vision-language models that analyze construction
-    video footage, extract operational details, and generate labeled training datasets
-    at scale, to improve data preparation for autonomous construction equipment.
+    video footage, extract operational details, and generate labeled training datas...
   headline: Scaling data annotation using vision-language models to power physical
     AI systems
   inLanguage: en
@@ -28,9 +27,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/scaling-data-annotation-using-vision-language-models-to-power-physical-ai-systems
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Scaling data annotation using vision-language models to power physical AI systems
-updated_at: '2026-02-24T22:15:36.864129+00:00'
+updated_at: '2026-03-03T03:02:31.095906+00:00'
 url_hash: 5529250feabc221c7160cdc133f69d74d44d3b6e
 ---
 

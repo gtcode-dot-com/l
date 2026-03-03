@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-23T18:15:34.079890+00:00'
-exported_at: '2026-02-23T18:15:36.659696+00:00'
+date: '2026-03-03T03:02:32.460835+00:00'
+exported_at: '2026-03-03T03:02:36.067346+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/accelerating-ai-model-production-at-hexagon-with-amazon-sagemaker-hyperpod
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/accelerating-ai-model-production-at-hexagon-with-amazon-sagemaker-hyperpod
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Accelerating AI model production at Hexagon with Amazon SageMaker HyperPod
-updated_at: '2026-02-23T18:15:34.079890+00:00'
+updated_at: '2026-03-03T03:02:32.460835+00:00'
 url_hash: 137fce980b0f7244d7a9cd3915fd8a8319563b34
 ---
 

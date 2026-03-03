@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-24T22:15:15.036880+00:00'
-exported_at: '2026-02-24T22:15:19.300683+00:00'
+date: '2026-03-03T03:02:08.351607+00:00'
+exported_at: '2026-03-03T03:02:12.553649+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/02/is-ai-good-for-democracy.html
@@ -18,11 +18,7 @@ structured_data:
   description: Politicians fixate on the global race for technological supremacy between
     US and China. They debate geopolitical implications of chip exports, latest model
     releases from each country, and military applications of AI. Someday, they believe,
-    we might see advancements in AI tip the scales in a superpower conflict. But the
-    most important arms race of the 21st century is already happening elsewhere and,
-    while AI is definitely the weapon of choice, combatants are distributed across
-    dozens of domains. Academic journals are flooded with AI-generated papers, and
-    are turning to AI to help review submissions. Brazil’s ...
+    we might see advancements in AI tip the scales in a superpower conflict. But...
   headline: Is AI Good for Democracy?
   inLanguage: en
   keywords: []
@@ -30,9 +26,9 @@ structured_data:
   original_source: https://www.schneier.com/blog/archives/2026/02/is-ai-good-for-democracy.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Is AI Good for Democracy?
-updated_at: '2026-02-24T22:15:15.036880+00:00'
+updated_at: '2026-03-03T03:02:08.351607+00:00'
 url_hash: 1a7349d0299cb111c5a5ae2f153a1734801219e4
 ---
 
@@ -124,4 +120,4 @@ Tags:
 
 [Posted on February 24, 2026 at 7:06 AM](https://www.schneier.com/blog/archives/2026/02/is-ai-good-for-democracy.html)
 •
-[11 Comments](https://www.schneier.com/blog/archives/2026/02/is-ai-good-for-democracy.html#comments)
+[22 Comments](https://www.schneier.com/blog/archives/2026/02/is-ai-good-for-democracy.html#comments)

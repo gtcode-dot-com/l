@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-24T22:15:37.070138+00:00'
-exported_at: '2026-02-24T22:15:39.536577+00:00'
+date: '2026-03-03T03:02:32.882658+00:00'
+exported_at: '2026-03-03T03:02:36.063799+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/ai-in-healthcare-survey-2026
@@ -26,10 +26,10 @@ structured_data:
   original_source: https://blogs.nvidia.com/blog/ai-in-healthcare-survey-2026
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: From Radiology to Drug Discovery, Survey Reveals AI Is Delivering Clear Return
   on Investment in Healthcare
-updated_at: '2026-02-24T22:15:37.070138+00:00'
+updated_at: '2026-03-03T03:02:32.882658+00:00'
 url_hash: 4093ab7888dcaff9fa5901196aabcda19458d68c
 ---
 

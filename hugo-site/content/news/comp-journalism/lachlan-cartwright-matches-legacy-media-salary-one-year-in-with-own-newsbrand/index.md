@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T02:15:59.097429+00:00'
-exported_at: '2026-02-13T02:16:05.376928+00:00'
+date: '2026-03-03T03:02:53.797144+00:00'
+exported_at: '2026-03-03T03:03:01.041387+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/newsletters/lachlan-cartwright-matches-legacy-media-salary-one-year-in-with-own-newsbrand
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/newsletters/lachlan-cartwright-matches-legacy-media-salary-one-year-in-with-own-newsbrand
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Lachlan Cartwright matches ‘legacy media’ salary one year in with own newsbrand
-updated_at: '2026-02-13T02:15:59.097429+00:00'
+updated_at: '2026-03-03T03:02:53.797144+00:00'
 url_hash: ff4c7809687b843ba23ccd8bd41d6bfbdb765c1a
 ---
 

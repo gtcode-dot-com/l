@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T02:16:03.034492+00:00'
-exported_at: '2026-02-13T02:16:05.366307+00:00'
+date: '2026-03-03T03:02:59.738016+00:00'
+exported_at: '2026-03-03T03:03:01.026414+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/paul-dacre-says-hacking-and-tapping-claims-grave-preposterous-deeply-upsetting
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/news/paul-dacre-says-hacking-and-tapping-claims-grave-preposterous-deeply-upsetting
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Paul Dacre says hacking and tapping claims ‘grave, preposterous, deeply upsetting’
-updated_at: '2026-02-13T02:16:03.034492+00:00'
+updated_at: '2026-03-03T03:02:59.738016+00:00'
 url_hash: e17c46f7f5b56b81fdd59bf294d34be0e56d7aed
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-02-23T18:15:33.746914+00:00'
-exported_at: '2026-02-23T18:15:36.662313+00:00'
+date: '2026-03-03T03:02:31.748792+00:00'
+exported_at: '2026-03-03T03:02:36.070886+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-sonrai-uses-amazon-sagemaker-ai-to-accelerate-precision-medicine-trials
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://aws.amazon.com/blogs/machine-learning/how-sonrai-uses-amazon-sagemaker-ai-to-accelerate-precision-medicine-trials
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: How Sonrai uses Amazon SageMaker AI to accelerate precision medicine trials
-updated_at: '2026-02-23T18:15:33.746914+00:00'
+updated_at: '2026-03-03T03:02:31.748792+00:00'
 url_hash: 54ebee468b5feb4963e0cbed7ffae7c4a9b7186e
 ---
 

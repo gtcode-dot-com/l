@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T02:15:59.970133+00:00'
-exported_at: '2026-02-13T02:16:05.375058+00:00'
+date: '2026-03-03T03:02:54.876950+00:00'
+exported_at: '2026-03-03T03:03:01.038807+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media-audience-and-business-data/news-subcriptions-prices-2026
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/media-audience-and-business-data/news-subcriptions-prices-2026
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Cost of online news rises 3% as Telegraph and Mail+ Editions lead on discounts
-updated_at: '2026-02-13T02:15:59.970133+00:00'
+updated_at: '2026-03-03T03:02:54.876950+00:00'
 url_hash: aedd75e45429d7d0f40dedeb93c0bfcd6b02a947
 ---
 

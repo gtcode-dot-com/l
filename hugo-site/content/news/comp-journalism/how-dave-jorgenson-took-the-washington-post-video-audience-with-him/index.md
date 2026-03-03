@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-13T02:16:01.964690+00:00'
-exported_at: '2026-02-13T02:16:05.370301+00:00'
+date: '2026-03-03T03:02:57.817935+00:00'
+exported_at: '2026-03-03T03:03:01.032890+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/publishers/digital-journalism/how-dave-jorgenson-took-the-washington-post-video-audience-with-him
@@ -16,7 +16,7 @@ structured_data:
   about: []
   author: ''
   description: A former senior video producer of The Washington Post has said one
-    of the reasons he left was because video was not “getting the support”.  
+    of the reasons he left was because video was not “getting the support”.
   headline: How Dave Jorgenson took the Washington Post video audience with him
   inLanguage: en
   keywords: []
@@ -24,16 +24,16 @@ structured_data:
   original_source: https://pressgazette.co.uk/publishers/digital-journalism/how-dave-jorgenson-took-the-washington-post-video-audience-with-him
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: How Dave Jorgenson took the Washington Post video audience with him
-updated_at: '2026-02-13T02:16:01.964690+00:00'
+updated_at: '2026-03-03T03:02:57.817935+00:00'
 url_hash: 612aa819d1eb5e2b003358d33784f31e39996d5d
 ---
 
-![Dave Jorgenson presenting news on Washington Post cuts and AI companies for Local News Initiative (LNI). Picture: Youtube Shorts](https://pressgazette.co.uk/wp-content/uploads/sites/7/2026/02/lni-1038x778.jpg)
+![Split screen image of two Youtube Shorts videos: Dave Jorgenson presenting news on Washington Post cuts and AI companies](https://pressgazette.co.uk/wp-content/uploads/sites/7/2026/02/lni-1038x778.jpg)
 
 
-Dave Jorgenson presenting news on Washington Post cuts and AI companies for Local News Initiative (LNI). Picture: Youtube Shorts
+Dave Jorgenson presenting news on Washington Post cuts and AI companies for Local News International (LNI). Picture: Youtube Shorts
 
 The
 [Washington Post](https://pressgazette.co.uk/subject/washington-post/)
