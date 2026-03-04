@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T20:07:51.869668+00:00'
-exported_at: '2026-03-03T20:07:56.041001+00:00'
+date: '2026-03-04T00:15:33.714735+00:00'
+exported_at: '2026-03-04T00:15:36.752993+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-lendi-revamped-the-refinance-journey-for-its-customers-using-agentic-ai-in-12-weeks-using-amazon-bedrock
@@ -30,7 +30,7 @@ structured_data:
     name: GTCode
 title: How Lendi revamped the refinance journey for its customers using agentic AI
   in 16 weeks using Amazon Bedrock
-updated_at: '2026-03-03T20:07:51.869668+00:00'
+updated_at: '2026-03-04T00:15:33.714735+00:00'
 url_hash: 46f120445ce73ff5bf4b79a717899db5ffdb4734
 ---
 

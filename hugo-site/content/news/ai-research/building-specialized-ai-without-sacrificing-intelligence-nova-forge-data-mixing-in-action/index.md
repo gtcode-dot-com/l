@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T19:48:26.483067+00:00'
-exported_at: '2026-03-03T19:48:27.809777+00:00'
+date: '2026-03-04T00:15:34.467806+00:00'
+exported_at: '2026-03-04T00:15:36.745443+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/building-specialized-ai-without-sacrificing-intelligence-nova-forge-data-mixing-in-action
@@ -29,7 +29,7 @@ structured_data:
     name: GTCode
 title: Building specialized AI without sacrificing intelligence: Nova Forge data mixing
   in action
-updated_at: '2026-03-03T19:48:26.483067+00:00'
+updated_at: '2026-03-04T00:15:34.467806+00:00'
 url_hash: beb292cf4d1000d975cd34e1db62f464eb75a274
 ---
 

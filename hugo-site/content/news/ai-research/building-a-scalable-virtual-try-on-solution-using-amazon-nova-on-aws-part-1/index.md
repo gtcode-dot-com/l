@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T19:52:20.977216+00:00'
-exported_at: '2026-03-03T19:52:22.235278+00:00'
+date: '2026-03-04T00:15:33.374647+00:00'
+exported_at: '2026-03-04T00:15:36.755718+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/building-a-scalable-virtual-try-on-solution-using-amazon-nova-on-aws-part-1
@@ -29,7 +29,7 @@ structured_data:
     name: GTCode
 title: 'Building a scalable virtual try-on solution using Amazon Nova on AWS: part
   1'
-updated_at: '2026-03-03T19:52:20.977216+00:00'
+updated_at: '2026-03-04T00:15:33.374647+00:00'
 url_hash: ab1de0ef5fe150bcb7e6168aa4a8a672e874888b
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T20:07:52.591293+00:00'
-exported_at: '2026-03-03T20:07:56.038182+00:00'
+date: '2026-03-04T00:15:34.132401+00:00'
+exported_at: '2026-03-04T00:15:36.750407+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-tines-enhances-security-analysis-with-amazon-quick-suite
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: How Tines enhances security analysis with Amazon Quick Suite
-updated_at: '2026-03-03T20:07:52.591293+00:00'
+updated_at: '2026-03-04T00:15:34.132401+00:00'
 url_hash: 21972139aca16f99d8cd1cbe41263b68ca603dad
 ---
 
