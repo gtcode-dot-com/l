@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T19:52:19.191332+00:00'
-exported_at: '2026-03-03T19:52:22.246148+00:00'
+date: '2026-03-05T22:15:34.448677+00:00'
+exported_at: '2026-03-05T22:15:38.741140+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-447-the-agi-economy-testing
@@ -27,7 +27,7 @@ structured_data:
     name: GTCode
 title: 'Import AI 447: The AGI economy; testing AIs with generated games; and agent
   ecologies'
-updated_at: '2026-03-03T19:52:19.191332+00:00'
+updated_at: '2026-03-05T22:15:34.448677+00:00'
 url_hash: 28c411f10b98ce6192f17bc5e55711125c9ac508
 ---
 

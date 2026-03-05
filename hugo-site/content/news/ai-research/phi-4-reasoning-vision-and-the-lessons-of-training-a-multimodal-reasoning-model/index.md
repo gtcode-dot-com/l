@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-05T01:05:32.261576+00:00'
-exported_at: '2026-03-05T01:05:36.055390+00:00'
+date: '2026-03-05T22:15:35.701391+00:00'
+exported_at: '2026-03-05T22:15:38.737563+00:00'
 feed: https://www.microsoft.com/en-us/research/feed
 language: en
 source_url: https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Phi-4-reasoning-vision and the lessons of training a multimodal reasoning model
-updated_at: '2026-03-05T01:05:32.261576+00:00'
+updated_at: '2026-03-05T22:15:35.701391+00:00'
 url_hash: 776ba45a1db1905e736bdf66d6357a4b01b0e4b6
 ---
 

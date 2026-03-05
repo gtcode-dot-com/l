@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T20:07:54.732282+00:00'
-exported_at: '2026-03-03T20:07:56.029379+00:00'
+date: '2026-03-05T22:15:34.204032+00:00'
+exported_at: '2026-03-05T22:15:38.744187+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/Photoroom/prx-part3
 structured_data:
@@ -23,7 +23,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: PRX Part 3 — Training a Text-to-Image Model in 24h!
-updated_at: '2026-03-03T20:07:54.732282+00:00'
+updated_at: '2026-03-05T22:15:34.204032+00:00'
 url_hash: 0490fd40e37c4812bebb1f8cfcb24ee1999e0923
 ---
 
@@ -56,7 +56,7 @@ This is very far from the early diffusion days, where training competitive model
 This speedrun is not just a fun experiment. It will likely serve as the foundation for our large-scale training recipe going forward.
 
 Alongside the results, we’re also open-sourcing our code (
-[Github](https://github.com/Photoroom/PRX)
+[Github link](https://github.com/Photoroom/PRX)
 ), which contains:
 
 * The training code used for this speedrun
@@ -363,7 +363,11 @@ Zooming out, this speed run also highlights how far diffusion training has come.
 
 This 24h run is just a starting point, not the finish line. Next, we will keep pushing the same recipe with a bit more scale and iterate on the dataset mix and captioning.
 
-All the code and configs behind this speedrun, as well as the full experimental framework used throughout Parts 1 and 2, are available in the PRX repository:
+All the code and configs behind this speedrun, as well as the full experimental framework used throughout
+[Part 1](https://huggingface.co/blog/Photoroom/prx-part1-architectures)
+and
+[Part 2](https://huggingface.co/blog/Photoroom/prx-part2)
+, are available in the PRX repository:
 <https://github.com/Photoroom/PRX>
 .
 
@@ -374,3 +378,20 @@ If you made it this far, thank you for reading. We would also love to have you j
 community, where we share PRX progress and results, and discuss anything diffusion and text-to-image related.
 
 Goodbye for now, and stay tuned for the next round of experiments! 🚀
+
+## Acknowledgements.
+
+This speedrun was inspired by several recent efforts exploring fast and low-cost training of diffusion models. If you're interested in speedrunning text-to-image models, we encourage you to check out the following works:
+
+* Haridas, A., Shen, T., Yu, J.
+  *Nitro-T: Training a Text-to-Image Diffusion Model from Scratch in 1 Day.*
+  <https://rocm.blogs.amd.com/artificial-intelligence/nitro-t-diffusion/README.html>
+* Bhanded, S.
+  *Speedrunning ImageNet Diffusion.*
+  <https://arxiv.org/abs/2512.12386>
+* Sehwag, V., Kong, X., Li, J., Spranger, M., Lyu, L.
+  *Stretching Each Dollar: Diffusion Training from Scratch on a Micro-Budget.*
+  <https://arxiv.org/abs/2407.15811>
+* Yeh, S.-Y.
+  *Home-made Diffusion Model from Scratch to Hatch.*
+  <https://arxiv.org/abs/2509.06068>
