@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T19:52:18.771007+00:00'
-exported_at: '2026-03-03T19:52:22.249601+00:00'
+date: '2026-03-05T22:04:15.932605+00:00'
+exported_at: '2026-03-05T22:04:19.266942+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/build-safe-generative-ai-applications-like-a-pro-best-practices-with-amazon-bedrock-guardrails
@@ -30,7 +30,7 @@ structured_data:
     name: GTCode
 title: 'Build safe generative AI applications like a Pro: Best Practices with Amazon
   Bedrock Guardrails'
-updated_at: '2026-03-03T19:52:18.771007+00:00'
+updated_at: '2026-03-05T22:04:15.932605+00:00'
 url_hash: 86539bacefcfd7a70b64a9ce7c323f13aaac71b5
 ---
 

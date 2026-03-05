@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T20:07:54.167523+00:00'
-exported_at: '2026-03-03T20:07:56.035844+00:00'
+date: '2026-03-05T22:04:16.916101+00:00'
+exported_at: '2026-03-05T22:04:19.258822+00:00'
 feed: https://deepmind.google/blog/rss.xml
 language: en
 source_url: https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'Gemini 3.1 Flash-Lite: Built for intelligence at scale'
-updated_at: '2026-03-03T20:07:54.167523+00:00'
+updated_at: '2026-03-05T22:04:16.916101+00:00'
 url_hash: 25ba8a02b810fa549df0ac3e51824f4f8b067b29
 ---
 

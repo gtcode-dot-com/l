@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T19:52:18.103471+00:00'
-exported_at: '2026-03-03T19:52:22.252820+00:00'
+date: '2026-03-05T22:04:15.584193+00:00'
+exported_at: '2026-03-05T22:04:19.270115+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/build-a-serverless-conversational-ai-agent-using-claude-with-langgraph-and-managed-mlflow-on-amazon-sagemaker-ai
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: Build a serverless conversational AI agent using Claude with LangGraph and
   managed MLflow on Amazon SageMaker AI
-updated_at: '2026-03-03T19:52:18.103471+00:00'
+updated_at: '2026-03-05T22:04:15.584193+00:00'
 url_hash: 9780145a7275ae9e6579d9676d23b83788c76ae1
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T19:48:25.339641+00:00'
-exported_at: '2026-03-03T19:48:27.845640+00:00'
+date: '2026-03-05T22:04:16.489521+00:00'
+exported_at: '2026-03-05T22:04:19.262139+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/software-defined-ai-ran
@@ -29,7 +29,7 @@ structured_data:
     name: GTCode
 title: NVIDIA and Partners Show That Software-Defined AI-RAN Is the Next Wireless
   Generation
-updated_at: '2026-03-03T19:48:25.339641+00:00'
+updated_at: '2026-03-05T22:04:16.489521+00:00'
 url_hash: 992c8df81c0ce98828ce851493b1537d81e6f814
 ---
 
@@ -77,7 +77,7 @@ Some of these demos include:
 * zTouch Networks and partners built an AI-RAN orchestration blueprint showing how operators can safely share GPUs across AI and RAN workloads. By using
   [NVIDIA Multi-Instance GPU](https://www.nvidia.com/en-us/technologies/multi-instance-gpu/)
   technology, the blueprint steers resources in real time, maximizing GPU utilization and improving energy management while ensuring RAN quality of service. This is a key step for making multi-tenant AI-RAN solutions ready for commercial use, so operators can turn GPU capacity into revenue.
-* Northeastern University and SoftBank will demonstrate an AI switching solution for NVIDIA AI Aerial that flips in microseconds between AI and classic algorithms for channel estimation. This selects, in real time, the best possible processing solution at all times depending on conditions, improving stability and throughput while proving AI can coexist with classical approaches.
+* Northeastern University and SoftBank will demonstrate an AI switching solution for NVIDIA AI Aerial that flips seamlessly and without data loss between AI and classic algorithms for channel estimation. This selects, in real time, the best possible processing solution at all times depending on conditions, improving stability and throughput while proving AI can coexist with classical approaches.
 
 “AI-RAN is emerging as a unifying architecture for future radio networks,” said Alex Choi, chair of the AI-RAN Alliance. “By aligning operators, vendors and researchers around software-defined, GPU-accelerated architectures, we are boosting innovation, validating new concepts quickly and building the foundation for AI-native 6G, now.”
 

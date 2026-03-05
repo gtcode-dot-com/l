@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-03T19:48:25.039375+00:00'
-exported_at: '2026-03-03T19:48:27.848754+00:00'
+date: '2026-03-05T22:04:16.187158+00:00'
+exported_at: '2026-03-05T22:04:19.264639+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/nvidia-agentic-ai-blueprints-telco-reasoning-models
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: NVIDIA Advances Autonomous Networks With Agentic AI Blueprints and Telco Reasoning
   Models
-updated_at: '2026-03-03T19:48:25.039375+00:00'
+updated_at: '2026-03-05T22:04:16.187158+00:00'
 url_hash: 31bfac3520f1c775e5d3a3bd1458f586dd1e5fbf
 ---
 
