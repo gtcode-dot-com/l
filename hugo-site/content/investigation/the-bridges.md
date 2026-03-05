@@ -203,6 +203,7 @@ structured_data_graph:
 - [Series: The Architecture of Access](/investigation/the-architecture-of-access/)
 - [Read Part I: The Federal Layer (domestic federal)](/investigation/the-federal-layer/)
 - Part II (this page): The Bridges
+- [Read Part III: The Ledger (funding pathways and disclosure surfaces)](/investigation/the-ledger/)
 - [The Two Questions: federal investigative roadmap](/investigation/the-two-questions/)
 - [Investigations index](/investigation/)
 

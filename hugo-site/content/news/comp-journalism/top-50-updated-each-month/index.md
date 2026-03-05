@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T01:03:20.948068+00:00'
-exported_at: '2026-01-02T01:03:24.713850+00:00'
+date: '2026-03-05T01:05:59.678270+00:00'
+exported_at: '2026-03-05T01:06:02.954975+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/most-popular-websites-news-us-monthly-3
@@ -17,25 +17,66 @@ structured_data:
   author: ''
   description: Press Gazette lists the top 50 biggest websites for news in the US.
     Monthly updated top 50 listing based on data from Similarweb.
-  headline: 'Top 50 news websites in the US in November: Ten newsbrands down by over
-    40% in a year'
+  headline: 'Top 50 US news websites: Minnesota Star Tribune traffic boosted by ICE
+    coverage'
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/most-popular-websites-news-us-monthly-3
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
-title: 'Top 50 news websites in the US in November: Ten newsbrands down by over 40%
-  in a year'
-updated_at: '2026-01-02T01:03:20.948068+00:00'
+    name: GTCode
+title: 'Top 50 US news websites: Minnesota Star Tribune traffic boosted by ICE coverage'
+updated_at: '2026-03-05T01:05:59.678270+00:00'
 url_hash: b37d01b39b145f942ee2043f917ca895c3f2e340
 ---
 
-![Forbes homepage on 8 December 2025.](https://pressgazette.co.uk/wp-content/uploads/sites/7/2025/12/forbes-1038x778.jpg)
+![The Minnesota Star Tribune homepage showing news on ICE crackdown on 11 February 2026. Picture: The Minnesota Star Tribune](https://pressgazette.co.uk/wp-content/uploads/sites/7/2026/02/minnesotastartribune-1038x778.jpg)
 
 
-Forbes homepage on 8 December 2025.
+The Minnesota Star Tribune homepage showing news on ICE crackdown on 11 February 2026. Picture: The Minnesota Star Tribune
+
+The Minnesota Star Tribune saw triple-digit month-on-month growth in visits in January.
+
+This is likely linked to its coverage of Immigration and Customs Enforcement (ICE) activity in the state, which included two fatal shootings of residents.
+
+The site reached 16.3 million visits, up 126% month on month and 67% year on year, according to the latest Similarweb data. This was the biggest month-on-month increase in visits among the top 50 biggest news sites in the US.
+
+On a year-on-year basis, the Star Tribune fell behind The Sun in growth, with the latter seeing its visits rise by 70% to 39 million. This was followed by US political site The Hill, up 38% to 51 million visits.
+
+Only ten sites grew their visits year on year, while the biggest declines were recorded at Forbes (down 51% to 60.1 million visits), LA Times (down 51% to 20.9 million) and Newsweek (down 43% to 45.2 million).
+
+Newsweek also saw the biggest month-on-month decline, down 17%, followed by The Times of India (down 15% to 28.1 million), SF Gate (18.5 million) and New York Post (87.4 million), both down 7%.
+
+Some 41 sites grew their traffic compared to the month before, with the Star Tribune ahead of AP News (up 36% to 98.1 million visits) and NBC News (up 35% to 89.4 million visits).
+
+***[Sign up for Press Gazette’s weekly Future of Media US newsletter on Substack for more stories like this](https://pressgazettefutureofmediaus.substack.com/)***
+
+Similarweb generates its traffic data by applying machine learning and modelling to the statistically representative datasets that the company collects. Datasets are based on direct measurement (i.e. websites and apps that choose to share first-party analytics with Similarweb); contributory networks that aggregate device data; partnerships and public data extraction from websites and apps. The sites in the list are based on Similarweb’s classification of news and media publishers, although Press Gazette refines the list to exclude some sites with a less journalistic focus.
+
+### December 2025
+
+Men’s lifestyle magazine Men’s Journal recorded the highest year-on-year and month-on-month growth among the top 50 news websites in the US in December.
+
+Visits to the Arena Group site were up 184% year on year and 130% month on month to 19.5 million in December, according to the latest Similarweb data.
+
+Men’s Journal therefore rejoined Press Gazette’s top 50 ranking, having also featured with significant growth in May and June 2025. The site relaunched its quarterly print magazine in July 2025 after a two-year print hiatus.
+
+The US Sun followed on both growth metrics, up 52% year on year and 59% month on month to 34.9 million visits.
+
+Forbes recorded the third highest month-on-month increase in visits, up 15% to 59.3 million. This is despite it seeing the biggest decline year on year, down by almost half (49%).
+
+Among the top ten US news sites, only celebrity news site People saw year-on-year growth in December, up 5% to 151.9 million visits.
+
+Seven of the top ten websites saw month-on-month growth, and People recorded the highest jump among these, up 14%, followed by MSN (up 8% to 148.7 million visits) and Yahoo Finance (up 4% to 133.2 million).
+
+The New York Post (down 34% to 93.5 million) and MSN (down 28%) saw the biggest year-on-year declines in the top ten.
+
+Across the top 50, 11 sites saw year-on-year growth, an improvement from just four seeing an increase in November.
+
+Meanwhile 28 newsbrands saw month-on-month growth, up from 14 in November.
+
+### November 2025
 
 Ten news websites saw their monthly visits decline by 40% or more in November compared to a year earlier, according to the latest data from Similarweb.
 
@@ -47,8 +88,6 @@ However Forbes did see an increase in visits by 5% compared to October.
 , such as “Who’s the richest person in the world?”, because of Google’s AI Overviews.
 
 Athlon Sports followed Forbes in year-on-year traffic decline with a drop in visits of 48% to 290.3 million, along with AP News (down 46% to 78.5 million visits).
-
-***[Sign up for Press Gazette’s weekly Future of Media US newsletter on Substack for more stories like this](https://pressgazettefutureofmediaus.substack.com/)***
 
 Only four sites saw growth year on year: India Times (up 58% to 33.8 million), Alabama-based Al.com (up 32% to 16.3 million), Substack (up 27% to 75.1 million) and news aggregator News Break (up 13% to 30.7 million).
 
@@ -65,8 +104,6 @@ Australian-based Science Alert saw the highest growth month on month, up 60% to 
 In total 35 sites saw month-on-month decline, with Variety decreasing the most (down 22% to 17.4 million visits), followed by The Sun (down 16% to 21.9 million) and US News (down 14% to 19.6 million).
 
 The New York Times was the only site of the top 11 most visited sites to see month-on-month growth, up 1% to 444.9 million visits.
-
-Similarweb generates its traffic data by applying machine learning and modelling to the statistically representative datasets that the company collects. Datasets are based on direct measurement (i.e. websites and apps that choose to share first-party analytics with Similarweb); contributory networks that aggregate device data; partnerships and public data extraction from websites and apps. The sites in the list are based on Similarweb’s classification of news and media publishers, although Press Gazette refines the list to exclude some sites with a less journalistic focus.
 
 ### October 2025
 

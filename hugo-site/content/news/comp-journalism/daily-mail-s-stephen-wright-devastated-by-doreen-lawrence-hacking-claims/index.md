@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T18:15:47.737908+00:00'
-exported_at: '2026-02-20T18:15:52.357868+00:00'
+date: '2026-03-05T01:05:58.545853+00:00'
+exported_at: '2026-03-05T01:06:02.960179+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/daily-mails-stephen-wright-devastated-by-doreen-lawrence-hacking-claims
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/news/daily-mails-stephen-wright-devastated-by-doreen-lawrence-hacking-claims
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Daily Mail’s Stephen Wright ‘devastated’ by Doreen Lawrence hacking claims
-updated_at: '2026-02-20T18:15:47.737908+00:00'
+updated_at: '2026-03-05T01:05:58.545853+00:00'
 url_hash: f852320f888bbfe5dfebedb5751ee0ba44bf8e72
 ---
 

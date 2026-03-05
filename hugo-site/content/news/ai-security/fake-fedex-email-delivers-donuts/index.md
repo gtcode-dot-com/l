@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-02-27T14:15:15.515594+00:00'
-exported_at: '2026-02-27T14:15:18.134629+00:00'
+date: '2026-03-05T01:05:11.936403+00:00'
+exported_at: '2026-03-05T01:05:15.440899+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32754
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Fake Fedex Email Delivers Donuts&#x21;, (Fri, Feb 27th)
-updated_at: '2026-02-27T14:15:15.515594+00:00'
+updated_at: '2026-03-05T01:05:11.936403+00:00'
 url_hash: 78b911663d27d7ae47de424061da3685dc53cfc3
 ---
 

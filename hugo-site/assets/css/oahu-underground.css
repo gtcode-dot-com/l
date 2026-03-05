@@ -2333,6 +2333,14 @@ body.nav-open .site-nav-overlay {
   overflow: hidden;
 }
 
+.ou-article-content table th,
+.ou-article-content table td {
+  /* Prevent the global "break-word" behavior from turning multi-column tables
+     into unreadable vertical letter-stacks on narrow screens. */
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
 .ou-article-content table th {
   background: var(--ou-bg-alt);
   color: var(--ou-white);
@@ -2359,6 +2367,108 @@ body.nav-open .site-nav-overlay {
 
 .ou-article-content table tbody tr:hover td {
   background: rgba(212, 168, 67, 0.04);
+}
+
+/* ---- Responsive Tables (Investigation / OU Articles) ----
+   JS enhancement wraps tables in .ou-table-scroll and adds data-label attributes
+   so small screens can render rows as readable cards without horizontal scrolling. */
+.ou-article-content .ou-table-scroll {
+  margin: 2rem 0;
+  border: 1px solid var(--ou-border);
+  border-radius: 0.5rem;
+  background: var(--ou-bg);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ou-article-content .ou-table-scroll:focus-visible {
+  outline: 2px solid var(--ou-accent);
+  outline-offset: 3px;
+}
+
+.ou-article-content .ou-table-scroll table {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.ou-article-content .ou-table-scroll table.ou-table--wide th,
+.ou-article-content .ou-table-scroll table.ou-table--wide td {
+  min-width: 9rem;
+}
+
+.ou-article-content .ou-table-scroll table.ou-table--xwide th,
+.ou-article-content .ou-table-scroll table.ou-table--xwide td {
+  min-width: 11rem;
+}
+
+@media (max-width: 720px) {
+  /* Card mode: each row becomes a block with labeled fields. */
+  .ou-article-content .ou-table-scroll {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    overflow: visible;
+  }
+
+  .ou-article-content .ou-table-scroll table {
+    border: 0;
+  }
+
+  .ou-article-content .ou-table-scroll thead {
+    /* Keep semantic headers for assistive tech, but visually hide. */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .ou-article-content .ou-table-scroll tbody,
+  .ou-article-content .ou-table-scroll tr,
+  .ou-article-content .ou-table-scroll td {
+    display: block;
+    width: 100%;
+  }
+
+  .ou-article-content .ou-table-scroll tbody tr {
+    margin: 1rem 0;
+    border: 1px solid var(--ou-border);
+    border-radius: 0.5rem;
+    background: var(--ou-bg-alt);
+    overflow: hidden;
+  }
+
+  .ou-article-content .ou-table-scroll tbody td {
+    border-bottom: 0;
+    padding: 0.8rem 1rem;
+    background: transparent;
+  }
+
+  .ou-article-content .ou-table-scroll tbody td + td {
+    border-top: 1px solid var(--ou-border-light);
+  }
+
+  .ou-article-content .ou-table-scroll tbody td::before {
+    content: attr(data-label);
+    display: block;
+    margin: 0 0 0.35rem;
+    font-family: var(--ou-font-display);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ou-text-dim);
+  }
+
+  .ou-article-content table tbody tr:hover td {
+    background: transparent;
+  }
 }
 
 .ou-article-content .legal-notice {

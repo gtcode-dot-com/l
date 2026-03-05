@@ -217,6 +217,7 @@ That family is the Lukes. And at the center of it is Warren K.K. Luke.
 - [Series: The Architecture of Access](/investigation/the-architecture-of-access/)
 - Part I (this page): The Federal Layer
 - [Read Part II: The Bridges (international / PRC-facing)](/investigation/the-bridges/)
+- [Read Part III: The Ledger (funding pathways and disclosure surfaces)](/investigation/the-ledger/)
 - [The Two Questions: federal investigative roadmap in the Wilson M.N. Loo matter](/investigation/the-two-questions/)
 - [The Closed Loop: oversight and self-investigation series hub](/investigation/the-closed-loop/)
 - [Investigations index](/investigation/)

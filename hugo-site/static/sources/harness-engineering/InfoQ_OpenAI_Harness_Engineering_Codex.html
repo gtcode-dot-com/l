@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>OpenAI Introduces Harness Engineering: Codex Agents Power Large&#8209;Scale Software Development - InfoQ (Archived Copy)</title>
+</head>
+<body>
+<header>
+<h1>OpenAI Introduces Harness Engineering: Codex Agents Power Large&#8209;Scale Software Development - InfoQ</h1>
+<p><strong>Archived from:</strong> <a href="https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/">https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/</a></p>
+<p><strong>Retrieved:</strong> 2026-03-04T23:31:36Z</p>
+<p><strong>Status:</strong> HTTP 200</p>
+</header>
+<main>
+
+<pre>InfoQ Homepage
+News
+OpenAI Introduces Harness Engineering: Codex Agents Power Large&#8209;Scale Software Development
+Architecture &amp; Design
+OpenAI Introduces Harness Engineering: Codex Agents Power Large&#8209;Scale Software Development
+Feb 21, 2026
+2
+min read
+by
+Leela Kumili
+Write for InfoQ
+Feed your curiosity.
+Help 550k+ global
+senior developers
+each month stay ahead.
+Get in touch
+Listen to this article -
+0:00
+Audio ready to play
+Your browser does not support the audio element.
+0:00
+0:00
+Normal
+1.25x
+1.5x
+Like
+Reading list
+OpenAI has detailed a new
+internal engineering methodology called Harness engineering
+that leverages AI agents to drive key aspects of the software development lifecycle. The system uses Codex, a suite of AI agents, to perform tasks such as writing code, generating tests, and managing observability, based on declarative prompts defined by engineers. Harness standardizes workflows, reducing reliance on handcrafted scripts and custom tooling.
+Ryan Lopopolo
+, member of the technical staff at OpenAI, mentioned:
+We built Harness to provide a consistent and reliable way to run large-scale AI workloads, so teams can focus on research and product development rather than infrastructure orchestration.
+In a five-month internal experiment, OpenAI engineers built and shipped a beta product containing roughly a million lines of code without any manually written source code. A small team of engineers guided agents through pull requests and continuous integration workflows. The work included application logic, documentation, CI configuration, observability setup, and tooling. Engineers provided prompts and feedback, while
+Codex
+agents iterated autonomously on tasks including reproducing bugs, proposing fixes, and validating outcomes.
+Codex Agent&#8209;Driven Application Testing and Feedback ( Source:
+OpenAI Blog Post
+)
+Harness engineering shifts human engineers&#160;focus from implementing code to designing environments, specifying intent, and providing structured feedback. Codex interacts directly with development tools, opening pull requests, evaluating changes, and iterating until task criteria are satisfied. Agents use telemetry, including logs, metrics, and spans, to monitor application performance and reproduce bugs across isolated development environments.
+Observability and Telemetry Workflow for Codex Agents ( Source:
+OpenAI Blog Post
+)
+Internal documentation is organized in a structured docs directory containing maps, execution plans, and design specifications. These documents serve as the single source of truth for agents. Cross-linked design and architecture documentation is mechanically enforced with linters and CI validation, ensuring consistency and reducing the need for manual oversight.
+OpenAI enforces architectural boundaries and dependency layers across domains through mechanical rules and structural tests. Dependencies flow in a controlled sequence from Types &#8594; Config &#8594; Repo &#8594; Service &#8594; Runtime &#8594; UI, with agents restricted to operate within these layers. Structural tests validate compliance and prevent violations of modular layering.
+Martin Fowler
+, author and Thoughtworks technologist, mentioned in a LinkedIn
+Post
+Harness Engineering is a valuable framing of a key part of AI&#8209;enabled software development. Harness includes context engineering, architectural constraints, and garbage collection.
+OpenAI reports that Harness encodes scaffolding, feedback loops, documentation, and architectural constraints into machine-readable artifacts, which Codex agents use to execute tasks across development workflows, including code generation, testing, and observability.
+About the Author
+Leela Kumili
+Show more
+Show less
+Rate this Article
+Adoption
+Style
+Author Contacted
+This content is in the
+Agents
+topic
+Related Topics:
+Development
+Architecture &amp; Design
+AI, ML &amp; Data Engineering
+Continuous Improvement
+OpenAI
+Observability
+Software Engineering
+Continuous Integration
+Product Development
+SoftwareParadigm
+Agents
+Continuous Delivery
+AI Development
+Automation
+Related Editorial
+Related Sponsors
+Popular across InfoQ
+Vercel Releases React Best Practices Skill with 40+ Performance Rules for AI Agents
+Kubernetes Introduces Node Readiness Controller to Improve Pod Scheduling Reliability
+AWS Launches Agent Plugins to Automate Cloud Deployment
+Google Publishes Scaling Principles for Agentic Architectures
+ASP.NET Core in .NET 11 Preview 1 Brings New Blazor Components, Improved Navigation, and WebAssembly
+[Video Podcast] Frictionless DevEx with Nicole Forsgren
+The InfoQ
+Newsletter
+A round-up of last week&#8217;s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers.
+View an example
+Enter your e-mail address
+Select your country
+Select a country
+I consent to InfoQ.com handling my data as explained in this
+Privacy Notice
+.
+We protect your privacy.</pre>
+</main>
+</body>
+</html>

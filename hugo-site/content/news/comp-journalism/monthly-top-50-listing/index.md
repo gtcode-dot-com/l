@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-01-02T01:03:18.197120+00:00'
-exported_at: '2026-01-02T01:03:24.720763+00:00'
+date: '2026-03-05T01:05:55.810369+00:00'
+exported_at: '2026-03-05T01:06:02.962983+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/most-popular-websites-news-world-monthly-2
@@ -17,25 +17,75 @@ structured_data:
   author: ''
   description: Press Gazette lists the top 50 most popular news websites in the world.
     Monthly updated top 50 listing based on data provided by SimilarWeb.
-  headline: 'Top 50 English-language news sites in the world: No traffic growth among
-    ten biggest'
+  headline: 'Top 50 English-language news sites in the world: Substack leads YoY growth
+    for seventh months as most down in January'
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/most-popular-websites-news-world-monthly-2
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
-title: 'Top 50 English-language news sites in the world: No traffic growth among ten
-  biggest'
-updated_at: '2026-01-02T01:03:18.197120+00:00'
+    name: GTCode
+title: 'Top 50 English-language news sites in the world: Substack leads YoY growth
+  for seventh months as most down in January'
+updated_at: '2026-03-05T01:05:55.810369+00:00'
 url_hash: 4975b95ea55e877527dfb77aff99802799d35336
 ---
 
-![Four of the biggest English-language news websites: New York Times, CNN, Fox News and MSN homepages screenshotted on 1 August 2025](https://pressgazette.co.uk/wp-content/uploads/sites/7/2025/08/UStop502-1038x778.webp)
+![Three images, top shows Substack logo on a phone with money behind, alongside homepage screenshots of The Hill and Al Jazeera](https://pressgazette.co.uk/wp-content/uploads/sites/7/2026/02/topenglanguage-1038x778.jpg)
 
 
-Four of the biggest English-language news websites: New York Times, CNN, Fox News and MSN homepages screenshotted on 1 August 2025
+The sites with the biggest year-on-year growth in visits in January: Substack (Photo For Everything/Shutterstock), The Hill and Al Jazeera (both homepages on 11 February 2026)
+
+Just seven of the 50 biggest English-language news websites in the world saw year-on-year growth in visits in January.
+
+Some 43 news sites saw a decline in visits compared to January last year, according to the latest Similarweb data, with Indian sites India.com (52.7 million visits) and Hindustan Times (99.3 million visits) down the most by 72% and 63% respectively.
+
+This was followed by Forbes, down 48% to 94.8 million visits.
+
+The widespread decline continues a trend as in December, only eight sites saw year-on-year growth in visits.
+
+Of the seven sites that saw year-on-year growth in January, Substack was up 44% to 166.9 million visits. The newsletter platform has reported the biggest year-on-year growth in Press Gazette’s top-50 ranking for seven months since July 2025.
+
+Qatar-based 24-hour news channel Al Jazeera recorded the second biggest year-on-year growth of 39% to 58.8 million, while US political site The Hill followed with a 38% increase in visits to 56.6 million.
+
+Meanwhile, most of the top 50 English-language sites posted month-on-month growth in January, with 36 sites seeing an increase in visits compared to December 2025.
+
+The biggest month-on-month increase was at Al Jazeera (up 64%), followed by AP News (up 38% to 114 million visits) and NBC News (up 37% to 106.7 million).
+
+As well as the biggest year-on-year decline, Hindustan Times also saw the biggest month-on-month fall in visits, down 22%. This was followed by Newsweek (down 16% month on month to 53 million visits) and One India (down 9% to 58.8 million).
+
+Similarweb has recently changed the methodology used to calculate the global audience for the BBC online. The BBC data is not simply the total of bbc.co.uk and bbc.com, but accounts for .com visits in the UK that get redirected to bbc.co.uk, and visits from elsewhere that get redirected from bbc.co.uk to bbc.com.
+
+### December 2025
+
+Newsletter platform Substack has recorded the highest year-on-year growth for six consecutive months across the 50 biggest English-language news websites in the world.
+
+In December, Substack continued to see the biggest growth year on year, up by almost half (48%) to 140.6 million visits according to the latest Similarweb data. It has held this lead since July 2025.
+
+***[Read more:
+[The Free Press goes from zero to $150m valuation in five years on Substack](https://pressgazette.co.uk/newsletters/the-free-press-goes-from-zero-to-150m-valuation-in-five-years-on-substack/)
+]***
+
+The Hill followed for biggest year-on-year growth, up 39% to 44.2 million visits, ahead of Politico, up 31% to 46.4 million visits.
+
+None of the top ten English-language newsbrands in the world saw year-on-year growth.
+
+Daily Mail saw the biggest drop year on year among the top ten, down 23% to 212.8 million visits, alongside The Times of India (down 23% to 282.9 million visits). This was followed by Fox News, down 19% to 226.4 million.
+
+However eight of the top ten English-language news sites saw growth month on month in December.
+
+Despite its year-on-year drop, the Daily Mail saw the biggest month-on-month growth in this group, up 9%.
+
+This was followed by MSN, up 7% to 496.9 million visits, and Google News, up 4% to 297.6 million visits.
+
+Across the whole top 50, India-based sites India.com (57.4 million visits) and Hindustan Times (127 million visits) saw their year-on-year visits drop by more than half, down 70% and 52% respectively. It follows previous significant year-on-year declines for the India-based sites in November.
+
+Russian website RT and Forbes followed in year-on-year decline, both down by 45% to 41.3 million and 93.3 million visits respectively.
+
+Despite this Forbes led month-on-month growth, up 17%. Newsweek recorded the biggest month-on-month decline, down 33% to 63.3 million visits.
+
+### November 2025
 
 None of the top ten English-language news sites saw growth in visits, either month on month or year on year, in November, according to the latest Similarweb data.
 
@@ -65,8 +115,6 @@ with a major redesign across print and online.
 Some 32 sites saw month-on-month declines in visits, with Yahoo Finance and CNBC (102.2 million visits) both down the most by 13%.
 
 Despite US political news site The Hill leading monthly growth in October, it then saw 11% month-on-month decline in visits to 43.3 million in November.
-
-Similarweb has recently changed the methodology used to calculate the global audience for the BBC online. The BBC data is not simply the total of bbc.co.uk and bbc.com, but accounts for .com visits in the UK that get redirected to bbc.co.uk, and visits from elsewhere that get redirected from bbc.co.uk to bbc.com.
 
 ### October 2025
 

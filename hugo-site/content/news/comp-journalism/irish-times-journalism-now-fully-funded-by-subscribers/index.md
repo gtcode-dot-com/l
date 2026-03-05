@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T16:15:53.655620+00:00'
-exported_at: '2026-02-20T16:15:55.871967+00:00'
+date: '2026-03-05T01:05:55.218765+00:00'
+exported_at: '2026-03-05T01:06:02.967574+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/paywalls/irish-times-journalism-now-fully-funded-by-subscribers
@@ -24,13 +24,13 @@ structured_data:
   original_source: https://pressgazette.co.uk/paywalls/irish-times-journalism-now-fully-funded-by-subscribers
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Irish Times journalism now fully funded by subscribers
-updated_at: '2026-02-20T16:15:53.655620+00:00'
+updated_at: '2026-03-05T01:05:55.218765+00:00'
 url_hash: c99c9b32b6e88944b815471d3199c1a890dbcf41
 ---
 
-![Irish Times editor Ruadhán Mac Cormaic in the newsroom with staff at computers around him](https://pressgazette.co.uk/wp-content/uploads/sites/7/2026/02/theirishtimes-ruadhnmaccormaiceditor-e1770911647520-1038x778.webp)
+![Irish Times editor Ruadhán Mac Cormaic in the newsroom with staff at computers around him](https://pressgazette.co.uk/wp-content/uploads/sites/7/2026/02/irishtimes-1038x778.webp)
 
 
 Irish Times editor Ruadhán Mac Cormaic in the newsroom. Picture: Irish Times

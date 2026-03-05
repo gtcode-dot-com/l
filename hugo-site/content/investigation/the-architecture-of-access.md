@@ -2,15 +2,15 @@
 draft: false
 weight: 101
 title: "The Architecture of Access"
-seo_title: "The Architecture of Access: Federal and PRC-Facing Mapping"
+seo_title: "The Architecture of Access: Federal, PRC-Facing, and Financial Mapping"
 subtitle: "Series hub for dimension-by-dimension mapping of one network's institutional reach"
-description: "Series hub mapping one Hawaii network across federal institutions and PRC-facing engagement using public records, attribution discipline, and structural analysis."
+description: "Series hub mapping one Hawaii network across federal institutions, PRC-facing engagement, and financial disclosure using public records, attribution discipline, and structural analysis."
 date: 2026-03-01
-lastmod: 2026-03-01
+lastmod: 2026-03-03
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "March 1, 2026"
-modified_display: "March 1, 2026"
+modified_display: "March 3, 2026"
 layout: "series"
 
 
@@ -28,14 +28,17 @@ meta_keywords:
   - "institutional access points hawaii"
   - "counterintelligence exposure mapping hawaii"
   - "oahu underground investigations series"
+  - "chinese chamber of commerce hawaii irs 990"
+  - "ccch schedule f fara compliance"
+  - "hawaii nonprofit foreign activity disclosure"
 
 # Card Display
 eyebrow: "Series"
-card_summary: "A series mapping one network's reach across domestic federal oversight structures and PRC-facing institutional engagement using public records and attribution-disciplined sourcing."
+card_summary: "A series mapping one network's reach across domestic federal oversight structures, PRC-facing institutional engagement, and financial disclosure using public records and attribution-disciplined sourcing."
 
 # Open Graph
-og_title: "The Architecture of Access: Federal and PRC-Facing Mapping"
-og_description: "Series hub mapping one Hawaii network across federal institutions and PRC-facing engagement using public records, attribution discipline, and structural analysis."
+og_title: "The Architecture of Access: Federal, PRC-Facing, and Financial Mapping"
+og_description: "Series hub mapping one Hawaii network across federal institutions, PRC-facing engagement, and financial disclosure using public records, attribution discipline, and structural analysis."
 og_image: "/img/ou-architecture-of-access-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -56,11 +59,15 @@ article_tags:
   - "Punahou School"
   - "PRC Party-State Engagement"
   - "Counterintelligence Exposure"
+  - "Chinese Chamber of Commerce of Hawaii"
+  - "IRS Form 990"
+  - "FARA"
+  - "Schedule F"
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "The Architecture of Access: Federal and PRC-Facing Mapping"
-twitter_description: "Series hub mapping one Hawaii network across federal institutions and PRC-facing engagement using public records, attribution discipline, and structural analysis."
+twitter_title: "The Architecture of Access: Federal, PRC-Facing, and Financial Mapping"
+twitter_description: "Series hub mapping one Hawaii network across federal institutions, PRC-facing engagement, and financial disclosure using public records, attribution discipline, and structural analysis."
 twitter_image: "/img/ou-architecture-of-access-og-1200x630.jpg"
 twitter_image_alt: "The Architecture of Access — series hub for institutional network mapping"
 
@@ -82,6 +89,7 @@ agentic_comment: |
   PUBLISHED PARTS:
   - Part I: The Federal Layer (domestic federal)
   - Part II: The Bridges (international / PRC-facing)
+  - Part III: The Ledger (funding pathways and disclosure surfaces)
 
   CANONICAL URL: https://gtcode.com/investigation/the-architecture-of-access/
 
@@ -96,11 +104,11 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/the-architecture-of-access/"
       headline: "The Architecture of Access"
       alternativeHeadline: "Series hub for dimension-by-dimension mapping of one network's institutional reach"
-      description: "Series hub mapping one Hawaii network across federal institutions and PRC-facing engagement using public records, attribution discipline, and structural analysis."
+      description: "Series hub mapping one Hawaii network across federal institutions, PRC-facing engagement, and financial disclosure using public records, attribution discipline, and structural analysis."
       url: "https://gtcode.com/investigation/the-architecture-of-access/"
       image: "/img/ou-architecture-of-access-og-1200x630.jpg"
       datePublished: "2026-03-01T00:00:00Z"
-      dateModified: "2026-03-01T00:00:00Z"
+      dateModified: "2026-03-03T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -133,6 +141,10 @@ structured_data_graph:
           name: "APCSS Foundation"
         - "@type": "DefinedTerm"
           name: "counterintelligence exposure"
+        - "@type": "Organization"
+          name: "Chinese Chamber of Commerce of Hawaii"
+        - "@type": "Thing"
+          name: "IRS Form 990"
       mentions:
         - "@type": "DefinedTerm"
           name: "public-record brief"
@@ -140,7 +152,7 @@ structured_data_graph:
           name: "attribution discipline"
         - "@type": "DefinedTerm"
           name: "institutional access mapping"
-      keywords: "architecture of access, warren k.k. luke network mapping, hawaii national bank, federal reserve bank of san francisco, pacific forum, apcss foundation, prc party-state engagement, counterintelligence exposure"
+      keywords: "architecture of access, warren k.k. luke network mapping, hawaii national bank, federal reserve bank of san francisco, pacific forum, apcss foundation, prc party-state engagement, counterintelligence exposure, chinese chamber of commerce hawaii, irs form 990, schedule f, fara"
       hasPart:
         - "@type": "NewsArticle"
           "@id": "https://gtcode.com/investigation/the-federal-layer/#newsarticle"
@@ -158,9 +170,17 @@ structured_data_graph:
           datePublished: "2026-03-01T00:00:00Z"
           dateModified: "2026-03-01T00:00:00Z"
           position: 2
+        - "@type": "NewsArticle"
+          "@id": "https://gtcode.com/investigation/the-ledger/#newsarticle"
+          name: "The Ledger"
+          headline: "The Ledger"
+          url: "https://gtcode.com/investigation/the-ledger/"
+          datePublished: "2026-03-03T00:00:00Z"
+          dateModified: "2026-03-03T00:00:00Z"
+          position: 3
 ---
 
-This series maps one institutional network dimension by dimension: first through domestic federal oversight structures, then through international and PRC-facing engagement surfaces documented in the public record.
+This series maps one institutional network dimension by dimension: first through domestic federal oversight structures, then through international and PRC-facing engagement surfaces, then through funding pathways and financial disclosure — all documented in the public record.
 
 ## Thesis
 
@@ -178,10 +198,10 @@ Where source material characterizes an organization as linked to a party-state, 
 |---|---|---|---|---|
 | Part I | The Federal Layer | Domestic federal | February 28, 2026 | [Read Part I](/investigation/the-federal-layer/) |
 | Part II | The Bridges | International / PRC-facing | March 1, 2026 | [Read Part II](/investigation/the-bridges/) |
+| Part III | The Ledger | Funding pathways and disclosure surfaces | March 3, 2026 | [Read Part III](/investigation/the-ledger/) |
 
 ## Proposed Forthcoming Parts
 
-- Part III (proposed): **The Ledger** — funding pathways and disclosure surfaces.
 - Part IV (proposed): **The Roster** — governance overlap and appointment chains.
 - Part V (proposed): **The Gap** — safeguarding expectations versus public-record evidence.
 

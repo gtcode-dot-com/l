@@ -204,5 +204,9 @@
 
     {{ $navJS := resources.Get "js/nav.js" | minify | fingerprint }}
     <script src="{{ $navJS.RelPermalink }}" integrity="{{ $navJS.Data.Integrity }}" defer></script>
+
+    {{/* Responsive table enhancement for .ou-article-content */}}
+    {{ $ouTablesJS := resources.Get "js/ou-tables.js" | minify | fingerprint }}
+    <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
   </body>
 </html>

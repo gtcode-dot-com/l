@@ -2112,6 +2112,19 @@ body.nav-open .site-nav-overlay {
   color: var(--color-text-light);
 }
 
+/* ---- Article Hero Image ---- */
+.ou-article-hero {
+  margin: 0 0 2rem;
+  overflow: hidden;
+  border-radius: var(--radius-md, 6px);
+}
+
+.ou-article-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .article-content {
   max-width: 100%;
   width: 100%;

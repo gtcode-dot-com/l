@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" returnVersion="2021v4.0">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2022-08-26T14:42:58-05:00</ReturnTs>
+    <TaxPeriodEndDt>2022-05-31</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmEIN>990209165</PreparerFirmEIN>
+      <PreparerFirmName>
+        <BusinessNameLine1Txt>CHUNG &amp; WONG CPA'S INC</BusinessNameLine1Txt>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1Txt>1149 BETHEL STREET STE 711</AddressLine1Txt>
+        <CityNm>HONOLULU</CityNm>
+        <StateAbbreviationCd>HI</StateAbbreviationCd>
+        <ZIPCd>96813</ZIPCd>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990</ReturnTypeCd>
+    <TaxPeriodBeginDt>2021-06-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>990035507</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>CHINESE CHAMBER OF COMMERCE OF HI</BusinessNameLine1Txt>
+      </BusinessName>
+      <BusinessNameControlTxt>CHIN</BusinessNameControlTxt>
+      <PhoneNum>8085333181</PhoneNum>
+      <USAddress>
+        <AddressLine1Txt>8 SOUTH KING STREET SUITE 201</AddressLine1Txt>
+        <CityNm>HONOLULU</CityNm>
+        <StateAbbreviationCd>HI</StateAbbreviationCd>
+        <ZIPCd>96813</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>SHENGRI ZHANG</PersonNm>
+      <PersonTitleTxt>EXEC VICE PRESIDENT</PersonTitleTxt>
+      <PhoneNum>8085333181</PhoneNum>
+      <SignatureDt>2022-07-29</SignatureDt>
+    </BusinessOfficerGrp>
+    <SigningOfficerGrp>
+      <PersonFullName>
+        <PersonFirstNm>SHENGRI</PersonFirstNm>
+        <PersonLastNm>ZHANG</PersonLastNm>
+      </PersonFullName>
+      <SSN>999009999</SSN>
+    </SigningOfficerGrp>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>ALEXANDER KW CHUNG</PreparerPersonNm>
+      <PTIN>P00116721</PTIN>
+      <PhoneNum>8085212602</PhoneNum>
+      <PreparationDt>2022-07-29</PreparationDt>
+    </PreparerPersonGrp>
+    <TaxYr>2021</TaxYr>
+    <BuildTS>2022-09-23 18:48:47Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="4">
+    <IRS990 documentId="RetDoc4" referenceDocumentId="RetDoc6">
+      <PrincipalOfficerNm>RUSSELL J LAU</PrincipalOfficerNm>
+      <USAddress>
+        <AddressLine1Txt>1503 UALAKAA PLACE</AddressLine1Txt>
+        <CityNm>HONOLULU</CityNm>
+        <StateAbbreviationCd>HI</StateAbbreviationCd>
+        <ZIPCd>96822</ZIPCd>
+      </USAddress>
+      <GrossReceiptsAmt>458512</GrossReceiptsAmt>
+      <GroupReturnForAffiliatesInd>false</GroupReturnForAffiliatesInd>
+      <Organization501cInd organization501cTypeTxt="6">X</Organization501cInd>
+      <WebsiteAddressTxt>INFO@CHINESECHAMBER.COM</WebsiteAddressTxt>
+      <TypeOfOrganizationCorpInd>X</TypeOfOrganizationCorpInd>
+      <FormationYr>1911</FormationYr>
+      <LegalDomicileStateCd>HI</LegalDomicileStateCd>
+      <ActivityOrMissionDesc>TO PROMOTE BUSINESS RELATIONS IN COMMUNITY &amp; ABROAD.</ActivityOrMissionDesc>
+      <VotingMembersGoverningBodyCnt>91</VotingMembersGoverningBodyCnt>
+      <VotingMembersIndependentCnt>216</VotingMembersIndependentCnt>
+      <TotalEmployeeCnt>2</TotalEmployeeCnt>
+      <TotalGrossUBIAmt>0</TotalGrossUBIAmt>
+      <PYContributionsGrantsAmt>91150</PYContributionsGrantsAmt>
+      <CYContributionsGrantsAmt>106802</CYContributionsGrantsAmt>
+      <PYProgramServiceRevenueAmt>18429</PYProgramServiceRevenueAmt>
+      <CYProgramServiceRevenueAmt>230585</CYProgramServiceRevenueAmt>
+      <PYInvestmentIncomeAmt>672</PYInvestmentIncomeAmt>
+      <CYInvestmentIncomeAmt>895</CYInvestmentIncomeAmt>
+      <PYOtherRevenueAmt>29599</PYOtherRevenueAmt>
+      <CYOtherRevenueAmt>71812</CYOtherRevenueAmt>
+      <PYTotalRevenueAmt>139850</PYTotalRevenueAmt>
+      <CYTotalRevenueAmt>410094</CYTotalRevenueAmt>
+      <CYGrantsAndSimilarPaidAmt>0</CYGrantsAndSimilarPaidAmt>
+      <CYBenefitsPaidToMembersAmt>0</CYBenefitsPaidToMembersAmt>
+      <PYSalariesCompEmpBnftPaidAmt>107921</PYSalariesCompEmpBnftPaidAmt>
+      <CYSalariesCompEmpBnftPaidAmt>121281</CYSalariesCompEmpBnftPaidAmt>
+      <CYTotalProfFndrsngExpnsAmt>0</CYTotalProfFndrsngExpnsAmt>
+      <CYTotalFundraisingExpenseAmt>0</CYTotalFundraisingExpenseAmt>
+      <PYOtherExpensesAmt>43492</PYOtherExpensesAmt>
+      <CYOtherExpensesAmt>195686</CYOtherExpensesAmt>
+      <PYTotalExpensesAmt>151413</PYTotalExpensesAmt>
+      <CYTotalExpensesAmt>316967</CYTotalExpensesAmt>
+      <PYRevenuesLessExpensesAmt>-11563</PYRevenuesLessExpensesAmt>
+      <CYRevenuesLessExpensesAmt>93127</CYRevenuesLessExpensesAmt>
+      <TotalAssetsBOYAmt>1009429</TotalAssetsBOYAmt>
+      <TotalAssetsEOYAmt>1053210</TotalAssetsEOYAmt>
+      <TotalLiabilitiesBOYAmt>528979</TotalLiabilitiesBOYAmt>
+      <TotalLiabilitiesEOYAmt>479633</TotalLiabilitiesEOYAmt>
+      <NetAssetsOrFundBalancesBOYAmt>480450</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>573577</NetAssetsOrFundBalancesEOYAmt>
+      <InfoInScheduleOPartIIIInd>X</InfoInScheduleOPartIIIInd>
+      <SignificantNewProgramSrvcInd>false</SignificantNewProgramSrvcInd>
+      <SignificantChangeInd>false</SignificantChangeInd>
+      <Desc>TO PROMOTE THE CULTURAL, HISTORIC AND SOCIAL HERITAGE OF THE CHINESE PEOPLE IN HAWAII; TO PROMOTE SOCIAL AND BUSINESS RELATIONS IN THE COMMUNITY; TO INSPIRE IN ITS MEMBERS INDIVIDUAL CIVIC RESPONSIBILITIES.</Desc>
+      <ProgSrvcAccomActyOtherGrp>
+        <Desc>TO PROMOTE THE CULTURAL, HISTORIC AND SOCIAL HERITAGE OF THE CHINESE PEOPLE IN HAWAII; TO PROMOTE SOCIAL AND BUSINESS RELATIONS IN THE COMMUNITY; TO INSPIRE IN ITS MEMBERS INDIVIDUAL CIVIC RESPONSIBILITIES.</Desc>
+      </ProgSrvcAccomActyOtherGrp>
+      <DescribedInSection501c3Ind>false</DescribedInSection501c3Ind>
+      <ScheduleBRequiredInd referenceDocumentId="RetDoc1">true</ScheduleBRequiredInd>
+      <PoliticalCampaignActyInd>false</PoliticalCampaignActyInd>
+      <SubjectToProxyTaxInd>false</SubjectToProxyTaxInd>
+      <DonorAdvisedFundInd referenceDocumentId="RetDoc5">false</DonorAdvisedFundInd>
+      <ConservationEasementsInd referenceDocumentId="RetDoc5">false</ConservationEasementsInd>
+      <CollectionsOfArtInd referenceDocumentId="RetDoc5">false</CollectionsOfArtInd>
+      <CreditCounselingInd referenceDocumentId="RetDoc5">false</CreditCounselingInd>
+      <DonorRstrOrQuasiEndowmentsInd referenceDocumentId="RetDoc5">false</DonorRstrOrQuasiEndowmentsInd>
+      <ReportLandBuildingEquipmentInd referenceDocumentId="RetDoc5">true</ReportLandBuildingEquipmentInd>
+      <ReportInvestmentsOtherSecInd referenceDocumentId="RetDoc5">false</ReportInvestmentsOtherSecInd>
+      <ReportProgramRelatedInvstInd referenceDocumentId="RetDoc5">false</ReportProgramRelatedInvstInd>
+      <ReportOtherAssetsInd referenceDocumentId="RetDoc5">false</ReportOtherAssetsInd>
+      <ReportOtherLiabilitiesInd referenceDocumentId="RetDoc5">false</ReportOtherLiabilitiesInd>
+      <IncludeFIN48FootnoteInd referenceDocumentId="RetDoc5">false</IncludeFIN48FootnoteInd>
+      <IndependentAuditFinclStmtInd referenceDocumentId="RetDoc5">false</IndependentAuditFinclStmtInd>
+      <ConsolidatedAuditFinclStmtInd referenceDocumentId="RetDoc5">false</ConsolidatedAuditFinclStmtInd>
+      <SchoolOperatingInd>false</SchoolOperatingInd>
+      <ForeignOfficeInd>false</ForeignOfficeInd>
+      <ForeignActivitiesInd>false</ForeignActivitiesInd>
+      <MoreThan5000KToOrgInd>false</MoreThan5000KToOrgInd>
+      <MoreThan5000KToIndividualsInd>false</MoreThan5000KToIndividualsInd>
+      <ProfessionalFundraisingInd>false</ProfessionalFundraisingInd>
+      <FundraisingActivitiesInd>false</FundraisingActivitiesInd>
+      <GamingActivitiesInd>false</GamingActivitiesInd>
+      <OperateHospitalInd>false</OperateHospitalInd>
+      <GrantsToOrganizationsInd>false</GrantsToOrganizationsInd>
+      <GrantsToIndividualsInd>false</GrantsToIndividualsInd>
+      <ScheduleJRequiredInd>false</ScheduleJRequiredInd>
+      <TaxExemptBondsInd>false</TaxExemptBondsInd>
+      <LoanOutstandingInd>false</LoanOutstandingInd>
+      <GrantToRelatedPersonInd>false</GrantToRelatedPersonInd>
+      <BusinessRlnWithOrgMemInd>false</BusinessRlnWithOrgMemInd>
+      <BusinessRlnWithFamMemInd>false</BusinessRlnWithFamMemInd>
+      <BusinessRlnWith35CtrlEntInd>false</BusinessRlnWith35CtrlEntInd>
+      <DeductibleNonCashContriInd>false</DeductibleNonCashContriInd>
+      <DeductibleArtContributionInd>false</DeductibleArtContributionInd>
+      <TerminateOperationsInd>false</TerminateOperationsInd>
+      <PartialLiquidationInd>false</PartialLiquidationInd>
+      <DisregardedEntityInd>false</DisregardedEntityInd>
+      <RelatedEntityInd>false</RelatedEntityInd>
+      <RelatedOrganizationCtrlEntInd>false</RelatedOrganizationCtrlEntInd>
+      <ActivitiesConductedPrtshpInd>false</ActivitiesConductedPrtshpInd>
+      <ScheduleORequiredInd>false</ScheduleORequiredInd>
+      <IRPDocumentCnt>1</IRPDocumentCnt>
+      <IRPDocumentW2GCnt>0</IRPDocumentW2GCnt>
+      <BackupWthldComplianceInd>false</BackupWthldComplianceInd>
+      <EmployeeCnt>2</EmployeeCnt>
+      <EmploymentTaxReturnsFiledInd>true</EmploymentTaxReturnsFiledInd>
+      <UnrelatedBusIncmOverLimitInd>false</UnrelatedBusIncmOverLimitInd>
+      <ForeignFinancialAccountInd>false</ForeignFinancialAccountInd>
+      <ProhibitedTaxShelterTransInd>false</ProhibitedTaxShelterTransInd>
+      <TaxablePartyNotificationInd>false</TaxablePartyNotificationInd>
+      <NondeductibleContributionsInd>false</NondeductibleContributionsInd>
+      <QuidProQuoContributionsInd>false</QuidProQuoContributionsInd>
+      <Form8282PropertyDisposedOfInd>false</Form8282PropertyDisposedOfInd>
+      <RcvFndsToPayPrsnlBnftCntrctInd>false</RcvFndsToPayPrsnlBnftCntrctInd>
+      <PayPremiumsPrsnlBnftCntrctInd>false</PayPremiumsPrsnlBnftCntrctInd>
+      <Form8899Filedind>false</Form8899Filedind>
+      <Form1098CFiledInd>false</Form1098CFiledInd>
+      <IndoorTanningServicesInd>false</IndoorTanningServicesInd>
+      <SubjToTaxRmnrtnExPrchtPymtInd>false</SubjToTaxRmnrtnExPrchtPymtInd>
+      <SubjectToExcsTaxNetInvstIncInd>false</SubjectToExcsTaxNetInvstIncInd>
+      <InfoInScheduleOPartVIInd>X</InfoInScheduleOPartVIInd>
+      <GoverningBodyVotingMembersCnt>91</GoverningBodyVotingMembersCnt>
+      <IndependentVotingMemberCnt>216</IndependentVotingMemberCnt>
+      <FamilyOrBusinessRlnInd>false</FamilyOrBusinessRlnInd>
+      <DelegationOfMgmtDutiesInd>false</DelegationOfMgmtDutiesInd>
+      <ChangeToOrgDocumentsInd>false</ChangeToOrgDocumentsInd>
+      <MaterialDiversionOrMisuseInd>false</MaterialDiversionOrMisuseInd>
+      <MembersOrStockholdersInd>true</MembersOrStockholdersInd>
+      <ElectionOfBoardMembersInd>false</ElectionOfBoardMembersInd>
+      <DecisionsSubjectToApprovaInd>false</DecisionsSubjectToApprovaInd>
+      <MinutesOfGoverningBodyInd>true</MinutesOfGoverningBodyInd>
+      <MinutesOfCommitteesInd>true</MinutesOfCommitteesInd>
+      <OfficerMailingAddressInd>false</OfficerMailingAddressInd>
+      <LocalChaptersInd>false</LocalChaptersInd>
+      <Form990ProvidedToGvrnBodyInd>false</Form990ProvidedToGvrnBodyInd>
+      <ConflictOfInterestPolicyInd>true</ConflictOfInterestPolicyInd>
+      <AnnualDisclosureCoveredPrsnInd>true</AnnualDisclosureCoveredPrsnInd>
+      <RegularMonitoringEnfrcInd>false</RegularMonitoringEnfrcInd>
+      <WhistleblowerPolicyInd>true</WhistleblowerPolicyInd>
+      <DocumentRetentionPolicyInd>true</DocumentRetentionPolicyInd>
+      <CompensationProcessCEOInd>false</CompensationProcessCEOInd>
+      <CompensationProcessOtherInd>true</CompensationProcessOtherInd>
+      <InvestmentInJointVentureInd>false</InvestmentInJointVentureInd>
+      <StatesWhereCopyOfReturnIsFldCd>HI</StatesWhereCopyOfReturnIsFldCd>
+      <UponRequestInd>X</UponRequestInd>
+      <BooksInCareOfDetail>
+        <PersonNm>CHINESE CHAMBER OF COMMERCE OF HI</PersonNm>
+        <PhoneNum>8085333181</PhoneNum>
+        <USAddress>
+          <AddressLine1Txt>8 S KING STREET SUITE 201</AddressLine1Txt>
+          <CityNm>HONOLULU</CityNm>
+          <StateAbbreviationCd>HI</StateAbbreviationCd>
+          <ZIPCd>96813</ZIPCd>
+        </USAddress>
+      </BooksInCareOfDetail>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>WEN CHUNG LIN</PersonNm>
+        <TitleTxt>EXEC VICE PR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>65331</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>SHENGRI ZHANG</PersonNm>
+        <TitleTxt>EXEC VICE PR</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>4167</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JONATHAN COOK</PersonNm>
+        <TitleTxt>PRESIDENT EL</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>CY FENG</PersonNm>
+        <TitleTxt>CHINESE SECR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>RUSSELL J LAU</PersonNm>
+        <TitleTxt>PRESIDENT</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>ELVIRA LO</PersonNm>
+        <TitleTxt>IMMEDIATE PA</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>SARAH MOY</PersonNm>
+        <TitleTxt>ASST TREASUR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>ANGELINE SHIROMA</PersonNm>
+        <TitleTxt>1ST VICE PRE</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>YU SHING TING</PersonNm>
+        <TitleTxt>ENGLISH SECR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>MICHELLE W J WONG</PersonNm>
+        <TitleTxt>2ND VICE PRE</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>SHERMAN WONG</PersonNm>
+        <TitleTxt>TREASURER</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>MICHAEL PHF YOUNG</PersonNm>
+        <TitleTxt>3RD VICE PRE</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <TotalReportableCompFromOrgAmt>69498</TotalReportableCompFromOrgAmt>
+      <FormerOfcrEmployeesListedInd>false</FormerOfcrEmployeesListedInd>
+      <TotalCompGreaterThan150KInd>false</TotalCompGreaterThan150KInd>
+      <CompensationFromOtherSrcsInd>false</CompensationFromOtherSrcsInd>
+      <MembershipDuesAmt>34104</MembershipDuesAmt>
+      <AllOtherContributionsAmt>72698</AllOtherContributionsAmt>
+      <TotalContributionsAmt>106802</TotalContributionsAmt>
+      <ProgramServiceRevenueGrp>
+        <Desc>TOUR</Desc>
+        <TotalRevenueColumnAmt>94365</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>94365</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>NARCISSUS FESTIVAL</Desc>
+        <TotalRevenueColumnAmt>67440</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>67440</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>GOLF TOURNAMENT</Desc>
+        <TotalRevenueColumnAmt>51220</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>51220</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>CORONATION BALL</Desc>
+        <TotalRevenueColumnAmt>9490</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>9490</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>QUEEN PEGEANT</Desc>
+        <TotalRevenueColumnAmt>5645</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>5645</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <TotalOthProgramServiceRevGrp>
+        <TotalRevenueColumnAmt>2425</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>2425</RelatedOrExemptFuncIncomeAmt>
+      </TotalOthProgramServiceRevGrp>
+      <TotalProgramServiceRevenueAmt>230585</TotalProgramServiceRevenueAmt>
+      <InvestmentIncomeGrp>
+        <TotalRevenueColumnAmt>895</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>895</RelatedOrExemptFuncIncomeAmt>
+      </InvestmentIncomeGrp>
+      <GrossRentsGrp>
+        <RealAmt>86255</RealAmt>
+      </GrossRentsGrp>
+      <LessRentalExpensesGrp>
+        <RealAmt>48418</RealAmt>
+      </LessRentalExpensesGrp>
+      <RentalIncomeOrLossGrp>
+        <RealAmt>37837</RealAmt>
+      </RentalIncomeOrLossGrp>
+      <NetRentalIncomeOrLossGrp>
+        <TotalRevenueColumnAmt>37837</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>37837</RelatedOrExemptFuncIncomeAmt>
+      </NetRentalIncomeOrLossGrp>
+      <OtherRevenueMiscGrp>
+        <Desc>INAUGURAL DINNER</Desc>
+        <TotalRevenueColumnAmt>14000</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>14000</RelatedOrExemptFuncIncomeAmt>
+      </OtherRevenueMiscGrp>
+      <OtherRevenueMiscGrp>
+        <Desc>EMPLOYER RETENTION CREDIT</Desc>
+        <TotalRevenueColumnAmt>13084</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>13084</RelatedOrExemptFuncIncomeAmt>
+      </OtherRevenueMiscGrp>
+      <OtherRevenueMiscGrp>
+        <Desc>MEALS &amp; GIFTS INCOME</Desc>
+        <TotalRevenueColumnAmt>5050</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>5050</RelatedOrExemptFuncIncomeAmt>
+      </OtherRevenueMiscGrp>
+      <MiscellaneousRevenueGrp>
+        <TotalRevenueColumnAmt>1841</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>1841</RelatedOrExemptFuncIncomeAmt>
+      </MiscellaneousRevenueGrp>
+      <OtherRevenueTotalAmt>33975</OtherRevenueTotalAmt>
+      <TotalRevenueGrp>
+        <TotalRevenueColumnAmt>410094</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>303292</RelatedOrExemptFuncIncomeAmt>
+      </TotalRevenueGrp>
+      <OtherSalariesAndWagesGrp>
+        <TotalAmt>105674</TotalAmt>
+        <ProgramServicesAmt>79255</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>26419</ManagementAndGeneralAmt>
+      </OtherSalariesAndWagesGrp>
+      <OtherEmployeeBenefitsGrp>
+        <TotalAmt>7040</TotalAmt>
+        <ProgramServicesAmt>5280</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>1760</ManagementAndGeneralAmt>
+      </OtherEmployeeBenefitsGrp>
+      <PayrollTaxesGrp>
+        <TotalAmt>8567</TotalAmt>
+        <ProgramServicesAmt>6425</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>2142</ManagementAndGeneralAmt>
+      </PayrollTaxesGrp>
+      <FeesForServicesAccountingGrp>
+        <TotalAmt>6725</TotalAmt>
+        <ProgramServicesAmt>5044</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>1681</ManagementAndGeneralAmt>
+      </FeesForServicesAccountingGrp>
+      <OfficeExpensesGrp>
+        <TotalAmt>3023</TotalAmt>
+        <ProgramServicesAmt>2267</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>756</ManagementAndGeneralAmt>
+      </OfficeExpensesGrp>
+      <OccupancyGrp>
+        <TotalAmt>18000</TotalAmt>
+        <ProgramServicesAmt>13500</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>4500</ManagementAndGeneralAmt>
+      </OccupancyGrp>
+      <DepreciationDepletionGrp>
+        <TotalAmt>635</TotalAmt>
+        <ProgramServicesAmt>635</ProgramServicesAmt>
+      </DepreciationDepletionGrp>
+      <InsuranceGrp>
+        <TotalAmt>1651</TotalAmt>
+        <ProgramServicesAmt>1238</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>413</ManagementAndGeneralAmt>
+      </InsuranceGrp>
+      <OtherExpensesGrp>
+        <Desc>TOUR</Desc>
+        <TotalAmt>88865</TotalAmt>
+        <ProgramServicesAmt>66649</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>22216</ManagementAndGeneralAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>EVENT EXPENSES</Desc>
+        <TotalAmt>28324</TotalAmt>
+        <ProgramServicesAmt>28324</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>MEALS - CORONATION BALL</Desc>
+        <TotalAmt>13750</TotalAmt>
+        <ProgramServicesAmt>13750</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>MEALS &amp; GIFTS</Desc>
+        <TotalAmt>11115</TotalAmt>
+        <ManagementAndGeneralAmt>11115</ManagementAndGeneralAmt>
+      </OtherExpensesGrp>
+      <AllOtherExpensesGrp>
+        <TotalAmt>23598</TotalAmt>
+        <ProgramServicesAmt>5826</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>17772</ManagementAndGeneralAmt>
+      </AllOtherExpensesGrp>
+      <TotalFunctionalExpensesGrp>
+        <TotalAmt>316967</TotalAmt>
+        <ProgramServicesAmt>228193</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>88774</ManagementAndGeneralAmt>
+        <FundraisingAmt>0</FundraisingAmt>
+      </TotalFunctionalExpensesGrp>
+      <CashNonInterestBearingGrp>
+        <BOYAmt>119437</BOYAmt>
+        <EOYAmt>136276</EOYAmt>
+      </CashNonInterestBearingGrp>
+      <SavingsAndTempCashInvstGrp>
+        <BOYAmt>20965</BOYAmt>
+        <EOYAmt>49829</EOYAmt>
+      </SavingsAndTempCashInvstGrp>
+      <LandBldgEquipCostOrOtherBssAmt>1072179</LandBldgEquipCostOrOtherBssAmt>
+      <LandBldgEquipAccumDeprecAmt>232852</LandBldgEquipAccumDeprecAmt>
+      <LandBldgEquipBasisNetGrp>
+        <BOYAmt>855064</BOYAmt>
+        <EOYAmt>839327</EOYAmt>
+      </LandBldgEquipBasisNetGrp>
+      <InvestmentsPubTradedSecGrp>
+        <BOYAmt>9606</BOYAmt>
+        <EOYAmt>10484</EOYAmt>
+      </InvestmentsPubTradedSecGrp>
+      <IntangibleAssetsGrp>
+        <BOYAmt>2917</BOYAmt>
+        <EOYAmt>2770</EOYAmt>
+      </IntangibleAssetsGrp>
+      <OtherAssetsTotalGrp>
+        <BOYAmt>1440</BOYAmt>
+        <EOYAmt>14524</EOYAmt>
+      </OtherAssetsTotalGrp>
+      <TotalAssetsGrp>
+        <BOYAmt>1009429</BOYAmt>
+        <EOYAmt>1053210</EOYAmt>
+      </TotalAssetsGrp>
+      <AccountsPayableAccrExpnssGrp>
+        <BOYAmt>99814</BOYAmt>
+        <EOYAmt>68767</EOYAmt>
+      </AccountsPayableAccrExpnssGrp>
+      <UnsecuredNotesLoansPayableGrp>
+        <BOYAmt>429165</BOYAmt>
+        <EOYAmt>410866</EOYAmt>
+      </UnsecuredNotesLoansPayableGrp>
+      <TotalLiabilitiesGrp>
+        <BOYAmt>528979</BOYAmt>
+        <EOYAmt>479633</EOYAmt>
+      </TotalLiabilitiesGrp>
+      <OrgDoesNotFollowFASB117Ind>X</OrgDoesNotFollowFASB117Ind>
+      <RtnEarnEndowmentIncmOthFndsGrp>
+        <BOYAmt>480450</BOYAmt>
+        <EOYAmt>573577</EOYAmt>
+      </RtnEarnEndowmentIncmOthFndsGrp>
+      <TotalNetAssetsFundBalanceGrp>
+        <BOYAmt>480450</BOYAmt>
+        <EOYAmt>573577</EOYAmt>
+      </TotalNetAssetsFundBalanceGrp>
+      <TotLiabNetAssetsFundBalanceGrp>
+        <BOYAmt>1009429</BOYAmt>
+        <EOYAmt>1053210</EOYAmt>
+      </TotLiabNetAssetsFundBalanceGrp>
+      <ReconcilationRevenueExpnssAmt>93127</ReconcilationRevenueExpnssAmt>
+      <MethodOfAccountingCashInd>X</MethodOfAccountingCashInd>
+      <AccountantCompileOrReviewInd>false</AccountantCompileOrReviewInd>
+      <FSAuditedInd>false</FSAuditedInd>
+    </IRS990>
+    <IRS990ScheduleB documentId="RetDoc1">
+      <ContributorInformationGrp>
+        <ContributorNum>RESTRICTED</ContributorNum>
+        <ContributorBusinessName>
+          <BusinessNameLine1>RESTRICTED</BusinessNameLine1>
+        </ContributorBusinessName>
+        <ContributorUSAddress>
+          <AddressLine1>RESTRICTED</AddressLine1>
+          <AddressLine2>RESTRICTED</AddressLine2>
+          <City>RESTRICTED</City>
+          <State>RESTRICTED</State>
+          <ZIPCode>RESTRICTED</ZIPCode>
+        </ContributorUSAddress>
+        <TotalContributionsAmt>RESTRICTED</TotalContributionsAmt>
+      </ContributorInformationGrp>
+    </IRS990ScheduleB>
+    <IRS990ScheduleD documentId="RetDoc5">
+      <LandGrp>
+        <OtherCostOrOtherBasisAmt>596099</OtherCostOrOtherBasisAmt>
+        <BookValueAmt>596099</BookValueAmt>
+      </LandGrp>
+      <BuildingsGrp>
+        <OtherCostOrOtherBasisAmt>280517</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>93807</DepreciationAmt>
+        <BookValueAmt>186710</BookValueAmt>
+      </BuildingsGrp>
+      <LeaseholdImprovementsGrp>
+        <OtherCostOrOtherBasisAmt>66433</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>10168</DepreciationAmt>
+        <BookValueAmt>56265</BookValueAmt>
+      </LeaseholdImprovementsGrp>
+      <EquipmentGrp>
+        <OtherCostOrOtherBasisAmt>126660</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>126638</DepreciationAmt>
+        <BookValueAmt>22</BookValueAmt>
+      </EquipmentGrp>
+      <OtherLandBuildingsGrp>
+        <OtherCostOrOtherBasisAmt>2470</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>2239</DepreciationAmt>
+        <BookValueAmt>231</BookValueAmt>
+      </OtherLandBuildingsGrp>
+      <TotalBookValueLandBuildingsAmt>839327</TotalBookValueLandBuildingsAmt>
+    </IRS990ScheduleD>
+    <IRS990ScheduleO documentId="RetDoc6">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PAGE 2, PART III, LINE 4D</FormAndLineReferenceDesc>
+        <ExplanationTxt>TO PROMOTE THE CULTURAL, HISTORIC AND SOCIAL HERITAGE OF THE CHINESE PEOPLE IN HAWAII; TO PROMOTE SOCIAL AND BUSINESS RELATIONS IN THE COMMUNITY; TO INSPIRE IN ITS MEMBERS INDIVIDUAL CIVIC RESPONSIBILITIES.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PAGE 6, PART VI, LINE 6</FormAndLineReferenceDesc>
+        <ExplanationTxt>PART VI, LINE 6 THIS ORGANIZATION IS MEMBERSHIP BASE NO STOCKHOLDERS</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PAGE 6, PART VI, LINE 11B</FormAndLineReferenceDesc>
+        <ExplanationTxt>PART VII, LINE 2C THE FINANCE COMMITTEE HAS THE DUTY TO REVIEW THE FINANCIAL STATEMENTS PART VI, LINE 19 THE GOVERNING DOCUMENTS, CONFLICT OF INTEREST POLICY AND FINANCIAL STATEMENTS ARE FILED WITH THE OFFICE AND OPEN FOR REVIEW BY THE PUBLIC</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PAGE 6, PART VI, LINE 15B</FormAndLineReferenceDesc>
+        <ExplanationTxt>PART VI, LINE 15B THE PERSONAL COMMITTEE HAS THE RESPONSIBILITY TO REVIEW PAY COMPENSATIONS OF STAFF</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PAGE 6, PART VI, LINE 19</FormAndLineReferenceDesc>
+        <ExplanationTxt>NO DOCUMENTS AVAILABLE TO THE PUBLIC</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+  </ReturnData>
+</Return>
