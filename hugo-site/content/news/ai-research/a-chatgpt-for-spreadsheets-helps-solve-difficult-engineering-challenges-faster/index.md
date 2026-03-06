@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-05T01:05:34.693165+00:00'
-exported_at: '2026-03-05T01:05:36.037905+00:00'
+date: '2026-03-06T00:15:32.290925+00:00'
+exported_at: '2026-03-06T00:15:34.728425+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/chatgpt-spreadsheets-helps-solve-difficult-engineering-challenges-faster-0304
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: A “ChatGPT for spreadsheets” helps solve difficult engineering challenges faster
-updated_at: '2026-03-05T01:05:34.693165+00:00'
+updated_at: '2026-03-06T00:15:32.290925+00:00'
 url_hash: 6e37335aeecdef6da2dbbd996667fa5fe5d0e40c
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-05T01:05:33.040096+00:00'
-exported_at: '2026-03-05T01:05:36.052389+00:00'
+date: '2026-03-06T00:15:31.052375+00:00'
+exported_at: '2026-03-06T00:15:34.740614+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/embed-amazon-quick-suite-chat-agents-in-enterprise-applications
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Embed Amazon Quick Suite chat agents in enterprise applications
-updated_at: '2026-03-05T01:05:33.040096+00:00'
+updated_at: '2026-03-06T00:15:31.052375+00:00'
 url_hash: ce33277cafd41212ec6414ddcf24f9ad5546eb41
 ---
 

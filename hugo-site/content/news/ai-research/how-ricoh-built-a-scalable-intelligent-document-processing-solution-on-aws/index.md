@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-05T01:05:34.440508+00:00'
-exported_at: '2026-03-05T01:05:36.045341+00:00'
+date: '2026-03-06T00:15:31.737729+00:00'
+exported_at: '2026-03-06T00:15:34.734734+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/how-ricoh-built-a-scalable-intelligent-document-processing-solution-on-aws
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: How Ricoh built a scalable intelligent document processing solution on AWS
-updated_at: '2026-03-05T01:05:34.440508+00:00'
+updated_at: '2026-03-06T00:15:31.737729+00:00'
 url_hash: 38f8fd984573d167956641de015a2cd7b6bd141e
 ---
 
@@ -257,15 +257,15 @@ Jeremy Jacobson is a lead developer and solutions architect for AI within Ricoh 
 
 ### Rado Fulek
 
-Rado Fulek is a software engineer at Ricoh where he builds secure, scalable and reliable document processing platforms. Previously, he conducted cutting-edge algorithmic research, publishing in top journals on algorithms, and discovering efficient algorithms, whose existence had been open for decades. Rado brings a problem solver mindset to AI, emphasizing practical, well-architected solutions that bridge the gap between cutting-edge research and real-world production systems.
+Rado Fulek is a software engineer at Ricoh where he builds secure, scalable and reliable document processing platforms. Rado brings a problem solver mindset to AI, emphasizing practical, well-architected solutions that bridge the gap between cutting-edge research and real-world production systems.
 
 ### Earl Bovell
 
-Earl Bovell is a Senior Solutions Architect at Amazon Web Services (AWS), where he serves as a technical advisor and strategist helping enterprise customers solve business problems by leveraging AWS technology.
+Earl Bovell is a Senior Solutions Architect at Amazon Web Services (AWS), where he serves as a technical advisor and strategist helping enterprise customers solve business problems by using AWS technology.
 
 ### Vincil Bishop
 
-Vincil Bishop is a Senior Deep Learning Architect in AWS’s Generative AI Innovation Center. He has over 25 years of experience in the IT industry and holds a PhD in Systems Engineering. Vincil specializes in designing and implementing AI solutions that help organizations solve their toughest business challenges.
+Vincil Bishop is a Senior Deep Learning Architect in AWS Generative AI Innovation Center. With over 25 years of experience and a PhD in Systems Engineering, he specializes in designing and implementing AI solutions that help organizations solve their toughest business challenges.
 
 ### Jordan Ratner
 

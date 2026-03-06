@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-05T01:05:33.758284+00:00'
-exported_at: '2026-03-05T01:05:36.049306+00:00'
+date: '2026-03-06T00:15:31.373355+00:00'
+exported_at: '2026-03-06T00:15:34.738452+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/unlock-powerful-call-center-analytics-with-amazon-nova-foundation-models
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Unlock powerful call center analytics with Amazon Nova foundation models
-updated_at: '2026-03-05T01:05:33.758284+00:00'
+updated_at: '2026-03-06T00:15:31.373355+00:00'
 url_hash: bcee7b29a9cf8f6f9c9cf14c4dde7b059ebbf12c
 ---
 
