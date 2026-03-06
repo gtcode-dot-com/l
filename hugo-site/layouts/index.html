@@ -19,18 +19,18 @@
 {{- $investigationsByUpdated := sort $investigationPages "Lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
 
-{{- $lead := .Site.GetPage "/investigation/the-shape-of-the-cage" -}}
+{{- $lead := .Site.GetPage "/investigation/the-nod-wilson-loo-silent-felony" -}}
 {{- if and (not $lead) (gt $investigationCount 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
 {{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
-{{- $dispatch := .Site.GetPage "/investigation/the-nod-wilson-loo-silent-felony" -}}
+{{- $zoneOfPoliteness := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
 {{- $twoQuestions := .Site.GetPage "/investigation/the-two-questions" -}}
-{{- $heroHeadline := .Params.hero_headline | default "The Zero Commission" -}}
+{{- $heroHeadline := .Params.hero_headline | default "The Two Questions" -}}
 {{- if and $lead (eq (lower (strings.TrimSpace $heroHeadline)) (lower (strings.TrimSpace $lead.Title))) -}}
   {{- $heroHeadline = printf "%s Investigative Series" $heroHeadline -}}
 {{- end -}}
-{{- $homeHeroImage := .Params.hero_image | default "/img/ou-shape-of-the-cage-hero-1600.jpg" -}}
+{{- $homeHeroImage := .Params.hero_image | default "/img/ou-two-questions-og-1200x634.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
   {{- $heroParsed := urls.Parse $homeHeroImage -}}
   {{- with $heroParsed.Path -}}
@@ -267,11 +267,11 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="/investigation/the-closed-loop/" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "The Closed Loop" }}</a></p>
+          <p class="ou-hero-kicker"><a href="/investigation/the-two-questions/" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Prosecution Roadmap" }}</a></p>
           <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
-          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work" }}</p>
+          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "One Witness. Two Questions. ~1.8 Years on the Clock." }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-zero-commission/" }}">{{ .Params.hero_primary_cta_label | default "Read the Investigation" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-two-questions/" }}">{{ .Params.hero_primary_cta_label | default "Read the Roadmap" }}</a>
             <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/investigation/" }}">{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>
@@ -299,24 +299,28 @@
 
             <article class="ou-start-card">
               <p class="ou-start-step">Step 2</p>
-              <h3>Lead investigation</h3>
-              <p class="ou-start-meta">20 min read</p>
-              <p>Start with the central media-capture file to understand the structural map and key entities.</p>
-              <p class="ou-start-outcome">Outcome: See the network map, key actors, and documentary trail.</p>
+              <h3>The courtroom incident</h3>
+              <p class="ou-start-meta">12 min read</p>
+              <p>Read how a sitting judge allegedly directed perjury from the bench with a silent nod, then sealed the record.</p>
+              <p class="ou-start-outcome">Outcome: Understand what happened in Judge Wilson Loo's courtroom.</p>
               {{ if $lead }}
-              <a class="ou-card-link" href="{{ $lead.RelPermalink }}">Read the lead investigation &rarr;</a>
+              <a class="ou-card-link" href="{{ $lead.RelPermalink }}">Read The Nod &rarr;</a>
               {{ else }}
-              <a class="ou-card-link" href="/investigation/">Read the lead investigation placeholder &rarr;</a>
+              <a class="ou-card-link" href="/investigation/">Read the investigation &rarr;</a>
               {{ end }}
             </article>
 
             <article class="ou-start-card">
               <p class="ou-start-step">Step 3</p>
-              <h3>Evidence index</h3>
-              <p class="ou-start-meta">Browse by file</p>
-              <p>Browse the full investigation archive and primary-source-linked dossiers in one index.</p>
-              <p class="ou-start-outcome">Outcome: Navigate every file by publication date and update cycle.</p>
-              <a class="ou-card-link" href="/investigation/">Open the evidence index &rarr;</a>
+              <h3>The prosecution path</h3>
+              <p class="ou-start-meta">15 min read</p>
+              <p>The federal case turns on one witness and two questions. The evidence trail exists. The statute of limitations is running.</p>
+              <p class="ou-start-outcome">Outcome: See the shortest path to federal prosecution mapped end to end.</p>
+              {{ if $twoQuestions }}
+              <a class="ou-card-link" href="{{ $twoQuestions.RelPermalink }}">Read The Two Questions &rarr;</a>
+              {{ else }}
+              <a class="ou-card-link" href="/investigation/">Browse investigations &rarr;</a>
+              {{ end }}
             </article>
           </div>
         </div>
@@ -353,7 +357,7 @@
       <section class="ou-section" id="featured-investigations">
         <div class="ou-section-wide">
 
-          {{/* Lead Investigation */}}
+          {{/* Lead Investigation — The Nod */}}
           {{ if $lead }}
           {{ $leadUpdated := $lead.Lastmod }}
           {{ if $leadUpdated.IsZero }}{{ $leadUpdated = $lead.Date }}{{ end }}
@@ -391,61 +395,33 @@
           </article>
           {{ end }}
 
-          {{/* Featured Dispatch */}}
-          {{ if $dispatch }}
-          {{ $dispatchSummary := $dispatch.Params.card_summary | default $dispatch.Description }}
-          {{ if eq (strings.TrimSpace $dispatchSummary) "" }}{{ $dispatchSummary = $dispatch.Summary | plainify | truncate 220 }}{{ end }}
-          <article class="ou-feature-row" id="dispatch">
-            {{ with $dispatch.Params.og_image }}
-            <a href="{{ $dispatch.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
+          {{/* Media Capture — Zone of Politeness */}}
+          {{ if $zoneOfPoliteness }}
+          {{ $zopSummary := $zoneOfPoliteness.Params.card_summary | default $zoneOfPoliteness.Description }}
+          {{ if eq (strings.TrimSpace $zopSummary) "" }}{{ $zopSummary = $zoneOfPoliteness.Summary | plainify | truncate 220 }}{{ end }}
+          <article class="ou-feature-row" id="media-capture">
+            {{ with $zoneOfPoliteness.Params.og_image }}
+            <a href="{{ $zoneOfPoliteness.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
               {{ partial "media/responsive-image.html" (dict
                 "page" $
                 "src" .
-                "alt" $dispatch.Title
+                "alt" $zoneOfPoliteness.Title
                 "slot" "investigation_feature_row"
-                "width" ($dispatch.Params.og_image_width | default 1200)
-                "height" ($dispatch.Params.og_image_height | default 630)
+                "width" ($zoneOfPoliteness.Params.og_image_width | default 1200)
+                "height" ($zoneOfPoliteness.Params.og_image_height | default 630)
               ) }}
             </a>
             {{ end }}
             <div class="ou-feature-row-body">
-              <p class="ou-section-label">Featured Dispatch</p>
+              <p class="ou-section-label">{{ $zoneOfPoliteness.Params.eyebrow | default "Media Capture" }}</p>
               <h2 class="ou-feature-row-title">
-                <a href="{{ $dispatch.RelPermalink }}">{{ $dispatch.Title }}</a>
+                <a href="{{ $zoneOfPoliteness.RelPermalink }}">{{ $zoneOfPoliteness.Title }}</a>
               </h2>
-              <p class="ou-feature-row-text">{{ $dispatchSummary }}</p>
-              <a class="ou-featured-article-link" href="{{ $dispatch.RelPermalink }}">Read the dispatch &rarr;</a>
-            </div>
-          </article>
-          {{ end }}
-
-          {{/* Prosecution Roadmap */}}
-          {{ if $twoQuestions }}
-          {{ $tqSummary := $twoQuestions.Params.card_summary | default $twoQuestions.Description }}
-          {{ if eq (strings.TrimSpace $tqSummary) "" }}{{ $tqSummary = $twoQuestions.Summary | plainify | truncate 220 }}{{ end }}
-          <article class="ou-feature-row" id="prosecution-roadmap">
-            {{ with $twoQuestions.Params.og_image }}
-            <a href="{{ $twoQuestions.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              {{ partial "media/responsive-image.html" (dict
-                "page" $
-                "src" .
-                "alt" $twoQuestions.Title
-                "slot" "investigation_feature_row"
-                "width" ($twoQuestions.Params.og_image_width | default 1200)
-                "height" ($twoQuestions.Params.og_image_height | default 630)
-              ) }}
-            </a>
-            {{ end }}
-            <div class="ou-feature-row-body">
-              <p class="ou-section-label">{{ $twoQuestions.Params.eyebrow | default "Prosecution Roadmap" }}</p>
-              <h2 class="ou-feature-row-title">
-                <a href="{{ $twoQuestions.RelPermalink }}">{{ $twoQuestions.Title }}</a>
-              </h2>
-              {{ with $twoQuestions.Params.subtitle }}
+              {{ with $zoneOfPoliteness.Params.subtitle }}
               <p class="ou-feature-row-subtitle">{{ . }}</p>
               {{ end }}
-              <p class="ou-feature-row-text">{{ $tqSummary }}</p>
-              <a class="ou-featured-article-link" href="{{ $twoQuestions.RelPermalink }}">Read the roadmap &rarr;</a>
+              <p class="ou-feature-row-text">{{ $zopSummary }}</p>
+              <a class="ou-featured-article-link" href="{{ $zoneOfPoliteness.RelPermalink }}">Read the investigation &rarr;</a>
             </div>
           </article>
           {{ end }}
@@ -487,7 +463,7 @@
       <!-- Investigation Archive -->
       {{- $featuredPaths := slice -}}
       {{- if $lead }}{{ $featuredPaths = $featuredPaths | append $lead.RelPermalink }}{{ end -}}
-      {{- if $dispatch }}{{ $featuredPaths = $featuredPaths | append $dispatch.RelPermalink }}{{ end -}}
+      {{- if $zoneOfPoliteness }}{{ $featuredPaths = $featuredPaths | append $zoneOfPoliteness.RelPermalink }}{{ end -}}
       {{- if $twoQuestions }}{{ $featuredPaths = $featuredPaths | append $twoQuestions.RelPermalink }}{{ end -}}
       {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
 

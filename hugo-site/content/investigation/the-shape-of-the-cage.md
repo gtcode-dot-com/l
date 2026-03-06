@@ -12,6 +12,8 @@ type: "investigation"
 published_display: "February 24, 2026"
 
 # SEO & Indexing
+homepage_exclude: true
+
 canonical: "https://gtcode.com/investigation/the-shape-of-the-cage/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
