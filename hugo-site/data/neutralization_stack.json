@@ -1,0 +1,109 @@
+{
+  "layers": [
+    {
+      "num": 7,
+      "name": "Search Suppression",
+      "code": "THE INDEX",
+      "color": "#8844cc",
+      "url": "/investigation/the-index-bing-search-suppression/",
+      "published": "Feb 13, 2026",
+      "mechanism": "Domain-level delisting prevents organic discovery",
+      "one_liner": "Bing returns zero results for gtcode.com. A control domain on the same stack is not blocked.",
+      "status": "published"
+    },
+    {
+      "num": 6,
+      "name": "Media Capture",
+      "code": "ZONE OF POLITENESS",
+      "color": "#4488cc",
+      "url": "/investigation/zone-of-politeness-hawaii-media-blackout/",
+      "published": "Feb 4, 2026",
+      "mechanism": "Donor/board overlap creates editorial self-censorship",
+      "one_liner": "Luke family donors to Civil Beat. Omidyar & Warren Luke: 12 years on the same board. Coverage of Luke/HNB: ~0.",
+      "status": "published"
+    },
+    {
+      "num": 5,
+      "name": "Judicial Sealing",
+      "code": "THE NOD",
+      "color": "#44cccc",
+      "url": "/investigation/the-nod-wilson-loo-silent-felony/",
+      "published": "Feb 12, 2026",
+      "mechanism": "Judge directs perjury, then seals the record",
+      "one_liner": "Audio-only recording. The crime was visual. The judge who committed it controlled the format and the seal.",
+      "status": "published"
+    },
+    {
+      "num": 4,
+      "name": "Oversight Nullification",
+      "code": "THE ZERO COMMISSION",
+      "color": "#88cc44",
+      "url": "/investigation/the-zero-commission/",
+      "published": "Feb 15, 2026",
+      "mechanism": "100% complaint dismissal rate for six consecutive years",
+      "one_liner": "1,009 inquiries. 7 formal complaints. 0 sustained. Commissioner's spouse was an active judge for 21 years.",
+      "status": "published"
+    },
+    {
+      "num": 3,
+      "name": "Prosecution Blockade",
+      "code": "THE PAPER BAG",
+      "color": "#ffcc44",
+      "url": "/investigation/the-paper-bag-and-the-architecture-of-self-investigation/",
+      "published": "Feb 20, 2026",
+      "mechanism": "AG declines authority using contradictory rationales",
+      "one_liner": "2024: 'The power already exists.' 2026: 'No such power exists.' The bill is dead — killed by her own testimony.",
+      "status": "published"
+    },
+    {
+      "num": 2,
+      "name": "Report Suppression",
+      "code": "THE FIRST GATE",
+      "color": "#ff8844",
+      "url": "/investigation/the-first-gate/",
+      "published": "Mar 6, 2026",
+      "mechanism": "Officer refuses to take report; no case number generated",
+      "one_liner": "Policy says 'shall.' Officer said 'stop telling me how to do my job.' PSO said 'totality.' No written authority found.",
+      "status": "live",
+      "live_detail": "HPD officer refused report intake, March 6, 2026, 8:10 AM HST"
+    },
+    {
+      "num": 1,
+      "name": "Direct Threat",
+      "code": "WHO TOLD THE NEWSROOM",
+      "color": "#ff4444",
+      "url": "/investigation/who-told-the-newsroom/",
+      "published": "Coming",
+      "mechanism": "Murder threat, witness tampering, testimony suppressed",
+      "one_liner": "Two voices, two roles, one message. 'Stay away from Jack.' 'Or you'll be whacked.' The jury never heard it.",
+      "status": "forthcoming"
+    }
+  ],
+  "series_hubs": [
+    {
+      "name": "The Closed Loop",
+      "url": "/investigation/the-closed-loop/",
+      "desc": "Oversight series"
+    },
+    {
+      "name": "The Architecture of Access",
+      "url": "/investigation/the-architecture-of-access/",
+      "desc": "Federal & PRC-facing mapping"
+    },
+    {
+      "name": "The Two Questions",
+      "url": "/investigation/the-two-questions/",
+      "desc": "Prosecution roadmap"
+    },
+    {
+      "name": "The Bridges",
+      "url": "/investigation/the-bridges/",
+      "desc": "PRC-facing access surface"
+    },
+    {
+      "name": "Cartography for Guppies",
+      "url": "/investigation/cartography-for-guppies/",
+      "desc": "Methodology"
+    }
+  ]
+}

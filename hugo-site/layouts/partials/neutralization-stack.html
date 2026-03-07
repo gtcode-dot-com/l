@@ -1,0 +1,397 @@
+{{/* Neutralization Stack — Seven-layer investigation architecture overview */}}
+{{ $data := .Site.Data.neutralization_stack }}
+
+<style>
+  .ns-stack { padding-top: 1.25rem; padding-bottom: 3rem; }
+  .ns-inner { max-width: 640px; margin: 0 auto; }
+  .ns-label {
+    font-family: var(--ou-font-display);
+    font-size: 0.5625rem;
+    letter-spacing: 0.2em;
+    color: var(--ou-text-dim);
+    text-transform: uppercase;
+    margin: 0 0 0.375rem;
+  }
+  .ns-title {
+    font-family: var(--ou-font-display);
+    font-size: clamp(1.35rem, 3.5vw, 1.6rem);
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0.25rem;
+    color: var(--ou-white);
+    letter-spacing: -0.01em;
+  }
+  .ns-subtitle {
+    font-size: 0.875rem;
+    font-style: italic;
+    color: var(--ou-text-dim);
+    margin: 0 0 1rem;
+    font-family: var(--ou-font-serif);
+  }
+  .ns-thesis {
+    font-size: 0.8rem;
+    line-height: 1.65;
+    color: var(--ou-text-muted);
+    font-family: var(--ou-font-serif);
+    margin: 0 0 1rem;
+  }
+
+  /* Live indicator */
+  .ns-live-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(212,168,67,0.06);
+    border: 1px solid rgba(212,168,67,0.2);
+    margin-bottom: 0.75rem;
+    font-size: 0.6875rem;
+    font-family: var(--ou-font-display);
+  }
+  .ns-live-dot {
+    color: var(--ou-accent);
+    animation: ns-pulse 2s ease-in-out infinite;
+    line-height: 1;
+  }
+  .ns-live-bar-label { color: var(--ou-accent-light); }
+  .ns-live-bar-detail { color: var(--ou-text-dim); }
+
+  /* Layer cards */
+  .ns-layer {
+    background: var(--ou-bg-alt);
+    border: 1px solid var(--ou-border-light);
+    border-left: 3px solid var(--ou-accent-dark);
+    margin-bottom: 1px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .ns-layer:hover { border-left-color: var(--ou-accent); }
+  .ns-layer[open] {
+    background: var(--ou-bg-section);
+    border-color: var(--ou-border);
+    border-left-color: var(--ou-accent);
+  }
+  .ns-layer summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .ns-layer summary::-webkit-details-marker { display: none; }
+  .ns-layer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+  .ns-layer-num {
+    font-family: var(--ou-font-display);
+    font-size: 0.625rem;
+    color: var(--ou-accent);
+    opacity: 0.6;
+    flex-shrink: 0;
+    width: 0.875rem;
+  }
+  .ns-layer-code {
+    font-family: var(--ou-font-display);
+    font-size: 0.5625rem;
+    letter-spacing: 0.12em;
+    color: var(--ou-accent-a11y);
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  .ns-layer-name {
+    font-size: 0.8rem;
+    color: var(--ou-text);
+    font-family: var(--ou-font-serif);
+    line-height: 1.2;
+  }
+  .ns-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    font-size: 0.5rem;
+    font-family: var(--ou-font-display);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .ns-badge--published {
+    color: var(--ou-text-dim);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--ou-border);
+  }
+  .ns-badge--live {
+    color: var(--ou-accent-light);
+    background: rgba(212,168,67,0.1);
+    border: 1px solid var(--ou-accent-dark);
+    animation: ns-pulse 2s ease-in-out infinite;
+  }
+  .ns-badge--forthcoming {
+    color: var(--ou-text-dim);
+    background: transparent;
+    border: 1px solid var(--ou-border-light);
+    opacity: 0.6;
+  }
+  .ns-badge .ns-pulse-dot { margin-right: 0.2rem; }
+
+  /* Expanded body */
+  .ns-layer-body {
+    margin: 0 0.75rem 0.625rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--ou-border-light);
+    animation: ns-fadeIn 0.25s ease;
+  }
+  .ns-mech-label {
+    font-family: var(--ou-font-display);
+    font-size: 0.5625rem;
+    color: var(--ou-text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.2rem;
+  }
+  .ns-mech {
+    font-size: 0.78rem;
+    color: var(--ou-text-muted);
+    line-height: 1.45;
+    margin: 0 0 0.5rem;
+    font-family: var(--ou-font-serif);
+  }
+  .ns-quote {
+    font-size: 0.78rem;
+    color: var(--ou-text-dim);
+    line-height: 1.55;
+    font-style: italic;
+    font-family: var(--ou-font-serif);
+    border-left: 2px solid var(--ou-accent-dark);
+    padding-left: 0.625rem;
+    margin: 0 0 0.5rem;
+  }
+  .ns-layer-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--ou-font-display);
+    font-size: 0.5625rem;
+  }
+  .ns-layer-date { color: var(--ou-text-dim); opacity: 0.6; }
+  .ns-layer-link {
+    color: var(--ou-accent-a11y);
+    opacity: 0.6;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+  .ns-layer-link:hover { opacity: 1; }
+  .ns-layer-wip { font-style: italic; opacity: 0.4; cursor: default; }
+
+  /* Aggregate output */
+  .ns-output {
+    margin-top: 0.75rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-family: var(--ou-font-display);
+    font-size: 0.5625rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ou-text-dim);
+  }
+  .ns-output strong {
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    color: var(--ou-accent-light);
+    font-weight: 300;
+  }
+
+  /* Series hubs */
+  .ns-series {
+    margin-top: 1rem;
+    border-top: 1px solid var(--ou-border-light);
+  }
+  .ns-series > summary {
+    list-style: none;
+    cursor: pointer;
+    font-family: var(--ou-font-display);
+    font-size: 0.5625rem;
+    letter-spacing: 0.1em;
+    color: var(--ou-text-dim);
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+  .ns-series > summary::-webkit-details-marker { display: none; }
+  .ns-series-arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    font-size: 0.5rem;
+  }
+  .ns-series[open] .ns-series-arrow { transform: rotate(90deg); }
+  .ns-series-list {
+    padding: 0 0 0.25rem 1.25rem;
+    animation: ns-fadeIn 0.25s ease;
+  }
+  .ns-series-item {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid var(--ou-border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .ns-series-name {
+    font-size: 0.78rem;
+    color: var(--ou-text-muted);
+    text-decoration: none;
+  }
+  .ns-series-name:hover { color: var(--ou-white); }
+  .ns-series-desc {
+    font-family: var(--ou-font-display);
+    font-size: 0.5625rem;
+    color: var(--ou-text-dim);
+    opacity: 0.6;
+  }
+
+  /* DC pitch */
+  .ns-dc-pitch {
+    margin-top: 1rem;
+    padding: 0.875rem;
+    background: var(--ou-bg-alt);
+    border: 1px solid var(--ou-border-light);
+    border-left: 3px solid var(--ou-accent-dark);
+  }
+  .ns-dc-label {
+    font-family: var(--ou-font-display);
+    font-size: 0.5rem;
+    letter-spacing: 0.12em;
+    color: var(--ou-accent-a11y);
+    text-transform: uppercase;
+    margin-bottom: 0.375rem;
+  }
+  .ns-dc-pitch p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--ou-text-muted);
+    margin: 0;
+    font-family: var(--ou-font-serif);
+  }
+  .ns-dc-pitch p + p {
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--ou-text-dim);
+    font-style: italic;
+  }
+  .ns-dc-link {
+    color: var(--ou-accent-a11y);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ou-accent-dark);
+  }
+  .ns-dc-link:hover { border-bottom-color: var(--ou-accent-light); }
+  .ns-dc-footer {
+    margin-top: 0.5rem !important;
+    font-family: var(--ou-font-display) !important;
+    font-size: 0.5625rem !important;
+    color: var(--ou-accent) !important;
+    opacity: 0.5;
+    font-style: normal !important;
+  }
+
+  @keyframes ns-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+@keyframes ns-fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @media (max-width: 600px) {
+    .ns-stack { padding-top: 2rem; padding-bottom: 2rem; }
+    .ns-layer summary { padding: 0.4rem 0.5rem; }
+    .ns-layer-body { margin: 0 0.5rem 0.5rem; }
+    .ns-live-bar { font-size: 0.625rem; padding: 0.375rem 0.5rem; }
+    .ns-live-bar-detail { display: block; width: 100%; }
+  }
+</style>
+
+<section class="ou-section ns-stack" id="start-here">
+  <div class="ns-inner">
+    <p class="ns-label">Investigation Architecture</p>
+    <h2 class="ns-title">The Seven-Layer Neutralization Stack</h2>
+    <p class="ns-subtitle">How one network produces silence without coordination</p>
+
+    <p class="ns-thesis">Each layer is independently sufficient to suppress a claim. Together, they form a defense-in-depth architecture: if one layer fails, the next catches the signal and attenuates it. No single point of failure. No coordination required. Each actor follows institutional incentives. The aggregate output is silence.</p>
+
+    {{ range $data.layers }}{{ if eq .status "live" }}
+    <div class="ns-live-bar">
+      <span class="ns-live-dot" aria-hidden="true">&#9679;</span>
+      <span class="ns-live-bar-label">LAYER {{ .num }} ACTIVATED</span>
+      {{ with .live_detail }}<span class="ns-live-bar-detail">&mdash; {{ . }}</span>{{ end }}
+    </div>
+    {{ end }}{{ end }}
+
+    {{ range $i, $layer := $data.layers }}
+    <details class="ns-layer" name="ns-layers">
+      <summary>
+        <div class="ns-layer-left">
+          <span class="ns-layer-num">{{ $layer.num }}</span>
+          <div>
+            <div class="ns-layer-code">{{ $layer.code }}</div>
+            <div class="ns-layer-name">{{ $layer.name }}</div>
+          </div>
+        </div>
+        <span class="ns-badge ns-badge--{{ $layer.status }}">
+          {{- if eq $layer.status "live" -}}
+            <span class="ns-pulse-dot" aria-hidden="true">&#9679;</span> LIVE
+          {{- else if eq $layer.status "forthcoming" -}}
+            FORTHCOMING
+          {{- else -}}
+            PUBLISHED
+          {{- end -}}
+        </span>
+      </summary>
+      <div class="ns-layer-body">
+        <div class="ns-mech-label">Mechanism</div>
+        <p class="ns-mech">{{ $layer.mechanism }}</p>
+        <blockquote class="ns-quote">{{ $layer.one_liner }}</blockquote>
+        <div class="ns-layer-footer">
+          <span class="ns-layer-date">{{ $layer.published }}</span>
+          {{ if eq $layer.status "forthcoming" }}
+          <a href="mailto:tips@gtcode.com" class="ns-layer-link">Have information? &rarr;</a>
+          {{ else if eq $layer.status "live" }}
+          <span class="ns-layer-link ns-layer-wip">Investigation in progress</span>
+          {{ else }}
+          <a href="{{ $layer.url }}" class="ns-layer-link">Read the investigation &rarr;</a>
+          {{ end }}
+        </div>
+      </div>
+    </details>
+    {{ end }}
+
+    <div class="ns-output">Aggregate output: <strong>Silence</strong></div>
+
+    <details class="ns-series">
+      <summary>
+        <span class="ns-series-arrow" aria-hidden="true">&#9656;</span>
+        Related series &amp; methodology
+      </summary>
+      <div class="ns-series-list">
+        {{ range $data.series_hubs }}
+        <div class="ns-series-item">
+          <a href="{{ .url }}" class="ns-series-name">{{ .name }}</a>
+          <span class="ns-series-desc">{{ .desc }}</span>
+        </div>
+        {{ end }}
+      </div>
+    </details>
+
+    <div class="ns-dc-pitch">
+      <div class="ns-dc-label">For the CI Reform Audience</div>
+      <p>The <a href="https://www.congress.gov/bill/119th-congress/senate-bill/2106" rel="noopener" target="_blank" class="ns-dc-link">SECURE Act</a>, signed into law in December 2025, broadened U.S. counterintelligence from a protective function to one that includes deterrence, disruption, and exploitation, and directed information-sharing with state, local, and tribal partners to counter foreign influence operations. This site shows what that mandate looks like in practice at the state level: one network, seventeen investigations, primary-source records. Coordination is only possible once the operating environment has been mapped.</p>
+      <p class="ns-dc-footer">gtcode.com/investigation/ · CC-BY-4.0 · GitHub-archived · Wayback Machine indexed</p>
+    </div>
+  </div>
+</section>

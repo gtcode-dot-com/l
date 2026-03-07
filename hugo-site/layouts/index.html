@@ -278,53 +278,7 @@
         </div>
       </section>
 
-      <!-- Start Here Path -->
-      <section class="ou-section ou-start" id="start-here">
-        <div class="ou-section-wide">
-          <p class="ou-section-label">Start Here</p>
-          <h2 class="ou-section-heading">Follow the reporting path in order</h2>
-          <div class="ou-start-grid">
-            <article class="ou-start-card">
-              <p class="ou-start-step">Step 1</p>
-              <h3>Methodology and framing</h3>
-              <p class="ou-start-meta">8 min read</p>
-              <p>Read how the reporting method works before moving into the cases and network mapping.</p>
-              <p class="ou-start-outcome">Outcome: Understand the evidence-first method and source discipline.</p>
-              {{ if $carto }}
-              <a class="ou-card-link" href="{{ $carto.RelPermalink }}">Read the publisher's note &rarr;</a>
-              {{ else }}
-              <a class="ou-card-link" href="/investigation/">Read the methodology placeholder &rarr;</a>
-              {{ end }}
-            </article>
-
-            <article class="ou-start-card">
-              <p class="ou-start-step">Step 2</p>
-              <h3>The courtroom incident</h3>
-              <p class="ou-start-meta">12 min read</p>
-              <p>Read how a sitting judge allegedly directed perjury from the bench with a silent nod, then sealed the record.</p>
-              <p class="ou-start-outcome">Outcome: Understand what happened in Judge Wilson Loo's courtroom.</p>
-              {{ if $lead }}
-              <a class="ou-card-link" href="{{ $lead.RelPermalink }}">Read The Nod &rarr;</a>
-              {{ else }}
-              <a class="ou-card-link" href="/investigation/">Read the investigation &rarr;</a>
-              {{ end }}
-            </article>
-
-            <article class="ou-start-card">
-              <p class="ou-start-step">Step 3</p>
-              <h3>The prosecution path</h3>
-              <p class="ou-start-meta">15 min read</p>
-              <p>The federal case turns on one witness and two questions. The evidence trail exists. The statute of limitations is running.</p>
-              <p class="ou-start-outcome">Outcome: See the shortest path to federal prosecution mapped end to end.</p>
-              {{ if $twoQuestions }}
-              <a class="ou-card-link" href="{{ $twoQuestions.RelPermalink }}">Read The Two Questions &rarr;</a>
-              {{ else }}
-              <a class="ou-card-link" href="/investigation/">Browse investigations &rarr;</a>
-              {{ end }}
-            </article>
-          </div>
-        </div>
-      </section>
+      {{ partial "neutralization-stack.html" . }}
 
       <!-- AI Consulting Proof -->
       <section class="ou-section ou-section--alt ou-consulting-proof" id="consulting">
