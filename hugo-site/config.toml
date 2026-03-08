@@ -69,6 +69,13 @@ relativeURLs = false
     notAlternative = false
     path = ""
 
+  [outputFormats.plaintextllmsfull]
+    mediaType = "text/plain"
+    baseName = "llms-full"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
   [outputFormats.newsSitemap]
     mediaType = "application/xml"
     baseName = "news-sitemap"
@@ -76,7 +83,7 @@ relativeURLs = false
     notAlternative = true
 
 [outputs]
-  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextai", "plaintexthumans", "plaintextrobots", "newsSitemap"]
+  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextllmsfull", "plaintextai", "plaintexthumans", "plaintextrobots", "newsSitemap"]
   section = ["HTML", "Markdown", "RSS"]
   page = ["HTML", "Markdown"]
 

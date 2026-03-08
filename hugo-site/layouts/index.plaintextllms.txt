@@ -1,1 +1,60 @@
-{{ partial "policy-plaintext.txt" (dict "path" "/policies/llm.md") }}
+{{- /* llms.txt — https://llmstxt.org/ specification compliant */ -}}
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+This site publishes: (1) Oahu Underground — independent investigative journalism documenting institutional corruption in Hawaiʻi through public records, financial disclosures, and court filings; and (2) GTCode — AI engineering consulting with open-source Elixir libraries on Hex.pm.
+
+- Author: {{ site.Params.author }}
+- Contact: {{ site.Params.contact_email }}
+- Tips: {{ site.Params.tips_email }}
+- Full context for LLMs: {{ "llms-full.txt" | absURL }}
+{{- with site.GetPage "/investigation" }}{{ with .Pages.ByWeight }}
+
+## Investigations
+{{ range . }}
+- [{{ .Title }}]({{ .Permalink }}): {{ with .Params.card_summary }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ .Params.meta_description }}{{ end }}{{ end }}
+{{- end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/articles" }}{{ with .Pages.ByDate.Reverse }}
+
+## Articles
+{{ range . }}
+- [{{ .Title }}]({{ .Permalink }}): {{ with .Description }}{{ . }}{{ else }}{{ .Params.meta_description }}{{ end }}
+{{- end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/papers" }}{{ with .Pages.ByDate.Reverse }}
+
+## Research Papers
+{{ range . }}
+- [{{ .Title }}]({{ .Permalink }}): {{ with .Description }}{{ . }}{{ else }}{{ .Params.meta_description }}{{ end }}
+{{- end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/guides" }}{{ with .Pages }}
+
+## Guides
+{{ range . }}
+- [{{ .Title }}]({{ .Permalink }}): {{ with .Description }}{{ . }}{{ else }}{{ .Params.meta_description }}{{ end }}
+{{- end }}
+{{ end }}{{ end }}
+
+## Open Source Libraries
+
+- [Hex.pm Profile](https://hex.pm/users/nshkrdotcom): Complete Elixir package catalog
+- [All Repositories]({{ "/repos/" | absURL }}): Full library listing
+{{ range site.Data.repos }}
+- [{{ .name }}]({{ .hex_url }}): {{ .summary }}
+{{- end }}
+{{- with site.GetPage "/consulting" }}
+
+## Consulting
+
+- [{{ .Title }}]({{ .Permalink }}): {{ with .Description }}{{ . }}{{ else }}{{ .Params.meta_description }}{{ end }}
+{{- end }}
+{{- with site.GetPage "/policies" }}{{ with .Pages }}
+
+## Policies
+{{ range . }}
+- [{{ .Title }}]({{ .Permalink }}): {{ with .Description }}{{ . }}{{ else }}{{ .Params.meta_description }}{{ end }}
+{{- end }}
+{{ end }}{{ end }}

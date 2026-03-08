@@ -1,0 +1,130 @@
+{{- /* llms-full.txt — expanded context for LLMs, per https://llmstxt.org/ */ -}}
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+This site publishes: (1) Oahu Underground — independent investigative journalism documenting institutional corruption in Hawaiʻi through public records, financial disclosures, and court filings; and (2) GTCode — AI engineering consulting with open-source Elixir libraries on Hex.pm.
+
+- Author: {{ site.Params.author }}
+- Contact: {{ site.Params.contact_email }}
+- Tips: {{ site.Params.tips_email }}
+- Concise version: {{ "llms.txt" | absURL }}
+{{- with site.GetPage "/investigation" }}{{ with .Pages.ByWeight }}
+
+## Investigations
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+- Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+- Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/articles" }}{{ with .Pages.ByDate.Reverse }}
+
+## Articles
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+- Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+- Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/papers" }}{{ with .Pages.ByDate.Reverse }}
+
+## Research Papers
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+- Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/guides" }}{{ with .Pages }}
+
+## Guides
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+
+## Open Source Libraries
+
+- Hex.pm Profile: https://hex.pm/users/nshkrdotcom
+- All Repositories: {{ "/repos/" | absURL }}
+{{ range site.Data.repos }}
+### {{ .name }}
+
+{{ .summary }}
+
+- Version: {{ .version }}
+- Stage: {{ .stage }}
+- Hex.pm: {{ .hex_url }}
+- Documentation: {{ .docs_url }}
+- Source: {{ .repo_url }}
+{{ end }}
+{{- with site.GetPage "/consulting" }}
+
+## Consulting
+
+- URL: {{ .Permalink }}
+
+{{ .RawContent }}
+{{- end }}
+{{- with site.GetPage "/policies" }}{{ with .Pages }}
+
+## Policies
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
