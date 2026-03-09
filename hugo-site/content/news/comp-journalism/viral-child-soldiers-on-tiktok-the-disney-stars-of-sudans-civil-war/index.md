@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T18:15:49.493388+00:00'
-exported_at: '2026-02-20T18:15:52.352143+00:00'
+date: '2026-03-09T05:28:10.173960+00:00'
+exported_at: '2026-03-09T05:28:14.100217+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/02/20/viral-child-soldiers-on-tiktok-the-disney-stars-of-sudans-civil-war
@@ -16,10 +16,10 @@ structured_data:
   about: []
   author: ''
   description: To stay up to date on our latest investigations, join Bellingcat’s
-    WhatsApp channel here. Child soldiers linked to Sudan’s warring factions have
+    WhatsApp channel here. You can read an Arabic version of this investigation on
+    Radio Dabanga’s site here. Child soldiers linked to Sudan’s warring factions have
     gained viral fame on TikTok, with their videos attracting millions of views. A
-    Bellingcat investigation has found that the young boys – widely referred to as
-    “lion cubs” – have become celebrated figures […]
+    Bellingcat...
   headline: 'Viral Child Soldiers on TikTok: The ‘Disney Stars’ of Sudan’s Civil War'
   inLanguage: en
   keywords: []
@@ -27,15 +27,19 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/02/20/viral-child-soldiers-on-tiktok-the-disney-stars-of-sudans-civil-war
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Viral Child Soldiers on TikTok: The ‘Disney Stars’ of Sudan’s Civil War'
-updated_at: '2026-02-20T18:15:49.493388+00:00'
+updated_at: '2026-03-09T05:28:10.173960+00:00'
 url_hash: 00b1fa5884118df8a57a44564684227a6e55bf03
 ---
 
 *To stay up to date on our latest investigations, join Bellingcat’s WhatsApp channel*
 [*here*](https://www.whatsapp.com/channel/0029VbB7PAn9RZAd6F1R1m2r)
 *.*
+
+*You can read an Arabic version of this investigation on Radio Dabanga’s site
+[here](https://www.dabangasudan.org/ar/all-news/article/%d8%a3%d8%b4%d8%a8%d8%a7%d9%84-%d8%a7%d9%84%d8%a3%d8%b3%d9%88%d8%af)
+.*
 
 Child soldiers linked to Sudan’s warring factions have gained viral fame on TikTok, with their videos attracting millions of views.
 
@@ -48,6 +52,7 @@ Child soldier experts told Bellingcat that the visibility and popularity of this
 Bellingcat flagged 12 TikTok accounts that had each posted viral content of child soldiers through the platform’s internal reporting mechanism. After more than 48 hours without action, we emailed TikTok to request comment, providing links to the reported content. This was done to give TikTok a further opportunity to review and remove the accounts, in order to minimise the risk of amplification by reporting on it.
 
 Following our inquiry, TikTok removed seven of the reported accounts. The remaining active accounts continue to host more than a dozen videos featuring child soldier content, which, according to TikTok’s own guidelines, breaches its content policies.
+*(Update: Following the publication of this article, TikTok has removed all remaining active accounts.)*
 
 Under
 [the Paris Principles](https://childrenandarmedconflict.un.org/six-grave-violations/child-soldiers/)
@@ -274,6 +279,8 @@ Bellingcat also reported three Facebook accounts through the internal reporting 
 In response, Meta said it had removed the content for violating its policies, stating: “We do not allow content, activity or interactions that recruit people for, facilitate or exploit people through the recruitment of child soldiers.” The company also pointed to a 2025 safety messaging campaign in Sudan aimed at raising awareness among young users about the risks of child soldier recruitment.
 
 At the time of publication, one week after reaching out to TikTok and Facebook, more than a dozen posts featuring the “lion cubs” remained accessible across both platforms simply by searching for the boys’ names.
+
+*Update: This article has been updated to include TikTok’s removal of all remaining active accounts and to add a link to Radio Dabanga’s Arabic version.*
 
 ---
 

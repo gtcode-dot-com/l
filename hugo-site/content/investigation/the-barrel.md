@@ -81,7 +81,7 @@ agentic_comment: |
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - Hawaii's petroleum dependence (~90% of total energy consumption) is the highest in the nation (source: EIA state energy data)
-  - WTI crude rose 35.63% in the week ended March 6, 2026, closing at $90.90/barrel (source: market data cited)
+  - WTI crude rose 35.63% in the week ended March 6, 2026, closing at &#36;90.90/barrel (source: market data cited)
   - Par Pacific's sole Hawaii refinery processes sweet crude from Libya, Argentina, Nigeria, and Brazil — none from the Persian Gulf (source: Par Pacific SEC filings, investor presentations)
   - Hawaiian Electric's ECRC mechanically passes fuel-cost changes to ratepayers (source: PUC tariff filings)
   - Hawaii imports approximately 90% of its food and maintains 5-7 days of on-island supply (source: cited studies)
@@ -163,13 +163,13 @@ Start with what you already know. You live on islands in the middle of the Pacif
 
 1. **Hawaii's exposure runs through benchmark pricing, war-risk insurance, freight, and systemic import dependence—the channels that connect every oil-dependent economy to the Gulf, regardless of where its crude is loaded.** Hawaii's sole refinery processes sweet crude from Libya, Argentina, Nigeria, and Brazil. The Persian Gulf supplies none of it. The Gulf supplies the price. Petroleum accounts for approximately 90% of the state's total energy consumption—the highest share in the nation—and there is no grid interconnection, no domestic crude production, and no strategic fuel reserve. *(Confidence: HIGH)*
 
-2. **The oil price shock is severe and accelerating.** WTI crude closed Friday March 6 at $90.90 per barrel, up 35.63% for the week—the largest weekly percentage gain since spring 2020. [1] Brent crude, which more closely tracks the pricing of the non-Gulf sweet crudes Par Pacific imports, moved in lockstep through the week. As of Sunday evening March 8 HST, a live WTI/USOIL print on TradingView showed prices above $113, with an intraday level above $115. [*] If these levels hold into Monday's settled session, sustained benchmark prices above $120 per barrel—previously a two-to-four-week projection—become a near-term possibility rather than a scenario. *(Confidence: HIGH on direction; the Sunday level is a live market indication, not a settled close.)*
+2. **The oil price shock is severe and accelerating.** WTI crude closed Friday March 6 at &#36;90.90 per barrel, up 35.63% for the week—the largest weekly percentage gain since spring 2020.[^1] Brent crude, which more closely tracks the pricing of the non-Gulf sweet crudes Par Pacific imports, moved in lockstep through the week. As of Sunday evening March 8 HST, a live WTI/USOIL print on TradingView showed prices above &#36;113, with an intraday level above &#36;115.[^star] If these levels hold into Monday's settled session, sustained benchmark prices above &#36;120 per barrel—previously a two-to-four-week projection—become a near-term possibility rather than a scenario. *(Confidence: HIGH on direction; the Sunday level is a live market indication, not a settled close.)*
 
 3. **Duration is the most consequential variable for Hawaii.** A shock measured in days is painful. Measured in weeks, it forces utility pass-through, transport repricing, and household stress. Measured in months, it becomes an emergency-management problem. *(Confidence: HIGH)*
 
 4. **Hawaii's electricity rates will rise materially within one to two billing cycles** through Hawaiian Electric's Energy Cost Recovery Clause, which mechanically passes fuel-cost changes to ratepayers. The magnitude depends on the duration and peak of actual fuel procurement costs, which track crude benchmarks indirectly. *(Confidence: HIGH that rates will rise; MEDIUM on magnitude. See methodological note in the Electricity Generation section.)*
 
-5. **Food supply disruption is a tail risk that becomes a real risk if the crisis extends beyond 30 days.** Hawaii maintains approximately five to seven days of on-island food supply [10], imports roughly 90% of its food [10], and depends on a single-thread supply chain—ship to Honolulu, barge to neighbor islands, truck to store—that is directly exposed to fuel and insurance cost shocks. *(Confidence: MEDIUM)*
+5. **Food supply disruption is a tail risk that becomes a real risk if the crisis extends beyond 30 days.** Hawaii maintains approximately five to seven days of on-island food supply[^10], imports roughly 90% of its food[^10], and depends on a single-thread supply chain—ship to Honolulu, barge to neighbor islands, truck to store—that is directly exposed to fuel and insurance cost shocks. *(Confidence: MEDIUM)*
 
 6. **The stated U.S. war aim—unconditional surrender—has no clear mechanism for achievement and no diplomatic off-ramp.** The President has stated the operation could last four to five weeks, but the military objectives imply sustained operations. Every plausible path to stability carries costs: military escalation to reopen the Strait by force, sanctions collapse on Russian oil, or Chinese diplomatic leverage over post-war Gulf architecture. There is no clean path. *(Confidence: HIGH)*
 
@@ -179,19 +179,19 @@ Start with what you already know. You live on islands in the middle of the Pacif
 
 ## Current Situation
 
-*As of Sunday evening, March 8, 2026 HST. Confirmed reporting unless otherwise noted. Weekend price levels marked [*] are live TradingView indications, not settled closes.*
+*As of Sunday evening, March 8, 2026 HST. Confirmed reporting unless otherwise noted. Weekend price levels marked[^star] are live TradingView indications, not settled closes.*
 
-WTI crude closed Friday March 6 at $90.90 a barrel, up 35.63% for the week—the largest weekly percentage gain since spring 2020, when prices recovered from the COVID-induced collapse. [1] As of Sunday evening HST, a live WTI/USOIL print on TradingView showed prices above $113, with an intraday level above $115—an additional move of roughly 25% over the Friday close. [*]
+WTI crude closed Friday March 6 at &#36;90.90 a barrel, up 35.63% for the week—the largest weekly percentage gain since spring 2020, when prices recovered from the COVID-induced collapse.[^1] As of Sunday evening HST, a live WTI/USOIL print on TradingView showed prices above &#36;113, with an intraday level above &#36;115—an additional move of roughly 25% over the Friday close.[^star]
 
-The Strait of Hormuz, which carries approximately 20 million barrels per day of crude oil and roughly 20% of global LNG trade, has seen tanker traffic come to a near standstill following the U.S.-Israel military operation against Iran that began March 1. [2]
+The Strait of Hormuz, which carries approximately 20 million barrels per day of crude oil and roughly 20% of global LNG trade, has seen tanker traffic come to a near standstill following the U.S.-Israel military operation against Iran that began March 1.[^2]
 
-The disruption extends beyond the Strait. Reuters reports that Iraq's southern oil production—one of the world's largest production centers—has fallen approximately 70%, to 1.3 million barrels per day. Qatar has declared force majeure and shut down gas liquefaction facilities. Kuwait has announced production cuts. [2] Maritime war-risk insurance premiums have surged by more than 1,000%, effectively paralyzing commercial shipping through and near the conflict zone. [3]
+The disruption extends beyond the Strait. Reuters reports that Iraq's southern oil production—one of the world's largest production centers—has fallen approximately 70%, to 1.3 million barrels per day. Qatar has declared force majeure and shut down gas liquefaction facilities. Kuwait has announced production cuts.[^2] Maritime war-risk insurance premiums have surged by more than 1,000%, effectively paralyzing commercial shipping through and near the conflict zone.[^3]
 
-On March 5, the U.S. Treasury's Office of Foreign Assets Control issued Russia-related General License 133, authorizing the delivery and sale to India of Russian-origin crude oil and petroleum products loaded on vessels as of that date, through April 4, 2026. [4]
+On March 5, the U.S. Treasury's Office of Foreign Assets Control issued Russia-related General License 133, authorizing the delivery and sale to India of Russian-origin crude oil and petroleum products loaded on vessels as of that date, through April 4, 2026.[^4]
 
-President Trump has said the operation could last four to five weeks and has demanded "unconditional surrender" from Iran. [1] [8] No defined political or military endgame has been articulated. Analysts regard this absence as the primary source of market and strategic uncertainty. [8]
+President Trump has said the operation could last four to five weeks and has demanded "unconditional surrender" from Iran.[^1][^8] No defined political or military endgame has been articulated. Analysts regard this absence as the primary source of market and strategic uncertainty.[^8]
 
-For context: the EIA's February 5 Short-Term Energy Outlook projected Brent crude would average $58 per barrel in 2026. [13] J.P. Morgan's research baseline was $60. [14] At Friday's settled close of $90.90, crude had already exceeded those projections by more than 50%. If Sunday's futures levels hold, the gap approaches 90%.
+For context: the EIA's February 5 Short-Term Energy Outlook projected Brent crude would average &#36;58 per barrel in 2026.[^13] J.P. Morgan's research baseline was &#36;60.[^14] At Friday's settled close of &#36;90.90, crude had already exceeded those projections by more than 50%. If Sunday's futures levels hold, the gap approaches 90%.
 
 ---
 
@@ -201,47 +201,47 @@ For context: the EIA's February 5 Short-Term Energy Outlook projected Brent crud
 
 Hawaii is the most petroleum-dependent state in the nation. The arithmetic tells the story.
 
-Petroleum accounts for approximately 90% of Hawaii's total energy consumption—the highest share of any state. [5] The state imports approximately 90% of its food [10] and 100% of its fuel. Hawaii's emergency operations planning identifies an on-island food supply of approximately five to seven days. [10]
+Petroleum accounts for approximately 90% of Hawaii's total energy consumption—the highest share of any state.[^5] The state imports approximately 90% of its food[^10] and 100% of its fuel. Hawaii's emergency operations planning identifies an on-island food supply of approximately five to seven days.[^10]
 
-Each island generates its own power on its own isolated grid. No undersea cables, no interconnections, no neighboring utility to borrow from when something goes wrong. [5]
+Each island generates its own power on its own isolated grid. No undersea cables, no interconnections, no neighboring utility to borrow from when something goes wrong.[^5]
 
 ### Electricity Generation
 
-Roughly two-thirds of Hawaii's electricity is generated by burning petroleum, compared with less than 1% nationally. [5] The state's last coal plant was retired in September 2022. [5] There is no natural gas infrastructure. What remains behind the oil is sunlight and wind that provide about 33% of statewide generation as of 2024 [5]—real progress, but it means the other two-thirds is still petroleum.
+Roughly two-thirds of Hawaii's electricity is generated by burning petroleum, compared with less than 1% nationally.[^5] The state's last coal plant was retired in September 2022.[^5] There is no natural gas infrastructure. What remains behind the oil is sunlight and wind that provide about 33% of statewide generation as of 2024[^5]—real progress, but it means the other two-thirds is still petroleum.
 
-Hawaiian Electric's 2025 residential effective rates range from 40.54 cents per kWh on Oahu to 50.02 cents per kWh on Lanai. [17] The EIA's 2024 average residential electricity price in Hawaii was 42.86 cents per kWh, with average monthly residential consumption of 495 kWh and an average monthly residential bill of $212. [25] The national average residential electricity price was 16.48 cents per kWh. [25] Hawaii residents pay roughly 2.6 times the national residential rate. That rate was set when oil was in the $60s.
+Hawaiian Electric's 2025 residential effective rates range from 40.54 cents per kWh on Oahu to 50.02 cents per kWh on Lanai.[^17] The EIA's 2024 average residential electricity price in Hawaii was 42.86 cents per kWh, with average monthly residential consumption of 495 kWh and an average monthly residential bill of &#36;212.[^25] The national average residential electricity price was 16.48 cents per kWh.[^25] Hawaii residents pay roughly 2.6 times the national residential rate. That rate was set when oil was in the &#36;60s.
 
-Hawaiian Electric's Energy Cost Recovery Clause mechanically passes fuel-cost changes through to ratepayers, with a lag of one to two billing cycles. [12] The ECRC reflects the utility's actual fuel procurement costs—a function of the specific petroleum products burned, the prices at which they were contracted, any hedging in place, and the share of renewable generation at the time. Crude benchmarks like Brent and WTI are directional indicators of these costs, not direct inputs.
+Hawaiian Electric's Energy Cost Recovery Clause mechanically passes fuel-cost changes through to ratepayers, with a lag of one to two billing cycles.[^12] The ECRC reflects the utility's actual fuel procurement costs—a function of the specific petroleum products burned, the prices at which they were contracted, any hedging in place, and the share of renewable generation at the time. Crude benchmarks like Brent and WTI are directional indicators of these costs, not direct inputs.
 
 With that caveat, the following scenarios illustrate the range of residential rate outcomes under sustained crude price levels, based on the historical relationship between benchmark crude and ECRC filings:
 
-- **At ~$90/bbl crude** (Friday settled close): Residential rates likely push toward 48–52 cents per kWh. For a household consuming 495 kWh per month, roughly $240–$260—up from the 2024 average of $212. [25]
-- **At ~$113/bbl crude** (Sunday evening live WTI/USOIL level [*]): Rates likely push toward 52–58 cents per kWh. Monthly bills for an average household approach $255–$290. If this level holds into settled trading, Hawaii is already in the middle tier of this scenario range.
-- **At $120–$150/bbl** (plausible if disruption continues beyond two weeks): Rates could reach 55–65 cents per kWh. Monthly bills for an average household approach $270–$320. Neighbor island households, where distribution costs are higher and grids are smaller, would face steeper increases.
-- **Above $150/bbl** (tail scenario if conflict escalates or extends beyond six weeks): Rate projections become unreliable. The question shifts from bill size to system viability—whether the barges that distribute refined fuel from Oahu to Maui, Kauai, and the Big Island can continue operating at a cost that keeps the lights on at all.
+- **At ~&#36;90/bbl crude** (Friday settled close): Residential rates likely push toward 48–52 cents per kWh. For a household consuming 495 kWh per month, roughly &#36;240–&#36;260—up from the 2024 average of &#36;212.[^25]
+- **At ~&#36;113/bbl crude** (Sunday evening live WTI/USOIL level[^star]): Rates likely push toward 52–58 cents per kWh. Monthly bills for an average household approach &#36;255–&#36;290. If this level holds into settled trading, Hawaii is already in the middle tier of this scenario range.
+- **At &#36;120–&#36;150/bbl** (plausible if disruption continues beyond two weeks): Rates could reach 55–65 cents per kWh. Monthly bills for an average household approach &#36;270–&#36;320. Neighbor island households, where distribution costs are higher and grids are smaller, would face steeper increases.
+- **Above &#36;150/bbl** (tail scenario if conflict escalates or extends beyond six weeks): Rate projections become unreliable. The question shifts from bill size to system viability—whether the barges that distribute refined fuel from Oahu to Maui, Kauai, and the Big Island can continue operating at a cost that keeps the lights on at all.
 
 *Methodological note: These estimates assume Hawaiian Electric's fuel procurement costs track crude benchmarks with approximately the elasticity observed in historical ECRC filings. The actual relationship is indirect—mediated by fuel contracts, hedging positions, product-to-crude spreads, and the share of generation from renewables. Petroleum fuels roughly two-thirds of the state's electricity; the ECRC adjusts for the difference between actual fuel costs and the fuel cost assumed in base rates. The ranges above are directional estimates, not rate-case projections. Actual rate adjustments depend on timing, fuel mix, and PUC regulatory process.*
 
 ### Transportation Fuels
 
-Hawaii's petroleum consumption divides roughly into thirds: electricity generation, aviation fuel, and ground and marine transportation. [11] Renewable electricity generation is growing. It does nothing for the liquid fuels that move people, cargo, and food.
+Hawaii's petroleum consumption divides roughly into thirds: electricity generation, aviation fuel, and ground and marine transportation.[^11] Renewable electricity generation is growing. It does nothing for the liquid fuels that move people, cargo, and food.
 
-Hawaii's sole refinery, operated by Par Pacific in the Honolulu port area, processes approximately 94,000 barrels per day. [6] Its crude comes mainly from Libya, Argentina, Nigeria, and Brazil—not from the Persian Gulf. [6]
+Hawaii's sole refinery, operated by Par Pacific in the Honolulu port area, processes approximately 94,000 barrels per day.[^6] Its crude comes mainly from Libya, Argentina, Nigeria, and Brazil—not from the Persian Gulf.[^6]
 
 In the base case, the crude itself keeps coming—Par Pacific's sources are outside the Gulf, and Latin American and West African supply routes are not directly disrupted. But continued sourcing at manageable freight rates is an assumption, not a certainty (see Key Uncertainty #7 in the Intelligence Annex). The exposure runs through four channels:
 
 1. **Global benchmark pricing.** The refinery buys crude on the world market, priced primarily off Brent and regional benchmarks. When benchmarks spike, Hawaii's input costs spike regardless of the barrel's origin.
 2. **Tanker availability and freight rates.** A global shipping disruption thins the tanker pool for all routes, including trans-Pacific. Freight rates rise worldwide.
-3. **War-risk insurance repricing.** Even routes distant from the conflict zone face premium increases as underwriters reassess global maritime risk. [3]
+3. **War-risk insurance repricing.** Even routes distant from the conflict zone face premium increases as underwriters reassess global maritime risk.[^3]
 4. **Refinery economics.** If Par Pacific's input costs rise faster than it can pass them through, refining margins compress—and Hawaii's sole source of locally refined fuel faces financial stress.
 
 ### Food and Shipping
 
-Hawaii spends approximately $3 billion a year importing food. [15] Roughly 90% of the food consumed on the islands comes from the mainland or foreign producers. [10] If the state's ports closed tomorrow, there would be enough food on the islands for five to seven days. That figure comes from the state's emergency operations plan. [10] Five to seven days.
+Hawaii spends approximately &#36;3 billion a year importing food.[^15] Roughly 90% of the food consumed on the islands comes from the mainland or foreign producers.[^10] If the state's ports closed tomorrow, there would be enough food on the islands for five to seven days. That figure comes from the state's emergency operations plan.[^10] Five to seven days.
 
 Every calorie that arrives by container ship carries a fuel surcharge. When crude prices spike, shipping rates spike, and the wholesale cost of every item reprices upward. *Inference:* The lag is typically two to six weeks as existing freight contracts roll over and new rates take hold, though the timing depends on contract structures and carrier pricing decisions.
 
-The Jones Act compounds the vulnerability. Federal law (46 U.S.C. § 55102) requires that goods shipped between U.S. ports travel on vessels that are U.S.-built, U.S.-flagged, and U.S.-crewed. [26] This limits the number of vessels eligible to carry goods to Hawaii and eliminates the competitive pressure that might otherwise moderate freight costs. The Government Accountability Office and the Congressional Research Service have each documented the cost premium this imposes on noncontiguous states and territories. [27] When oil spikes, the premium compounds because the constrained fleet cannot be supplemented by foreign-flagged vessels.
+The Jones Act compounds the vulnerability. Federal law (46 U.S.C. § 55102) requires that goods shipped between U.S. ports travel on vessels that are U.S.-built, U.S.-flagged, and U.S.-crewed.[^26] This limits the number of vessels eligible to carry goods to Hawaii and eliminates the competitive pressure that might otherwise moderate freight costs. The Government Accountability Office and the Congressional Research Service have each documented the cost premium this imposes on noncontiguous states and territories.[^27] When oil spikes, the premium compounds because the constrained fleet cannot be supplemented by foreign-flagged vessels.
 
 ### Inter-Island Logistics
 
@@ -249,7 +249,7 @@ The neighbor islands—Maui, Kauai, Hawaii Island, Molokai, Lanai—depend on ba
 
 ### Tourism and Aviation
 
-Tourism is Hawaii's largest economic sector. Jet fuel is kerosene. Kerosene is oil. *Inference:* When sustained crude prices exceed $100, round-trip airfares from the West Coast could plausibly rise by $150–$300, based on the historical relationship between jet fuel costs and ticket pricing. At that level, a measurable percentage of discretionary visitors stay home. The service economy contracts. Workers lose hours at precisely the moment their household costs are rising.
+Tourism is Hawaii's largest economic sector. Jet fuel is kerosene. Kerosene is oil. *Inference:* When sustained crude prices exceed &#36;100, round-trip airfares from the West Coast could plausibly rise by &#36;150–&#36;300, based on the historical relationship between jet fuel costs and ticket pricing. At that level, a measurable percentage of discretionary visitors stay home. The service economy contracts. Workers lose hours at precisely the moment their household costs are rising.
 
 ### The Feedback Loop
 
@@ -273,29 +273,29 @@ The people who feel it first are those already on the edge. The families in Waia
 
 ### Strait of Hormuz
 
-Tanker traffic has come to a near standstill. [2] Approximately 20 million barrels per day of crude and significant LNG volumes normally transit the Strait. Even a partial, temporary disruption removes a meaningful fraction of globally traded crude from the market. Reopening depends on the military situation, which as of this writing is escalatory.
+Tanker traffic has come to a near standstill.[^2] Approximately 20 million barrels per day of crude and significant LNG volumes normally transit the Strait. Even a partial, temporary disruption removes a meaningful fraction of globally traded crude from the market. Reopening depends on the military situation, which as of this writing is escalatory.
 
 ### Physical Production Losses
 
-Iraq's southern production is down approximately 70% to 1.3 million bpd—a loss of roughly 3 million bpd from one of the world's largest production centers. [2] Qatar has declared force majeure on gas liquefaction. Kuwait has announced production cuts. [2] Replacement supply has not materialized. Saudi Arabia has limited spare capacity, and U.S. shale requires months to ramp.
+Iraq's southern production is down approximately 70% to 1.3 million bpd—a loss of roughly 3 million bpd from one of the world's largest production centers.[^2] Qatar has declared force majeure on gas liquefaction. Kuwait has announced production cuts.[^2] Replacement supply has not materialized. Saudi Arabia has limited spare capacity, and U.S. shale requires months to ramp.
 
 ### Insurance and Shipping Economics
 
-Maritime war-risk insurance premiums have surged more than 1,000%. [3] Coverage remains technically available. The premiums have reached levels that make most commercial transits uneconomical. The practical effect is closure. The repricing extends beyond the Gulf—underwriters are reassessing risk across adjacent shipping lanes.
+Maritime war-risk insurance premiums have surged more than 1,000%.[^3] Coverage remains technically available. The premiums have reached levels that make most commercial transits uneconomical. The practical effect is closure. The repricing extends beyond the Gulf—underwriters are reassessing risk across adjacent shipping lanes.
 
 ### U.S. War Aims and Exit Strategy
 
-The President has stated the operation could last four to five weeks and has demanded "unconditional surrender." [1] [8] Analysts have criticized the absence of a defined military or political endgame. [8] "Unconditional surrender" does not contain an off-ramp. Without clarity on termination conditions, markets and downstream planners cannot model a return to normal. *Inference:* The duration of elevated prices—the variable this ambiguity controls—determines whether Hawaii's impact is manageable or structural.
+The President has stated the operation could last four to five weeks and has demanded "unconditional surrender."[^1][^8] Analysts have criticized the absence of a defined military or political endgame.[^8] "Unconditional surrender" does not contain an off-ramp. Without clarity on termination conditions, markets and downstream planners cannot model a return to normal. *Inference:* The duration of elevated prices—the variable this ambiguity controls—determines whether Hawaii's impact is manageable or structural.
 
 ### Global Macroeconomic Context
 
-The oil shock lands on an already stressed global economy. The Supreme Court ruled 6-3 on February 20 that the administration's primary tariff authority under IEEPA was unconstitutional. [19] A replacement 10% tariff under Section 122 of the Trade Act of 1974—which expires in 150 days—took immediate effect. [20] Moody's chief economist characterized the outlook as "nothing but downside" for the U.S. economy. [21] The dollar has weakened significantly against major currencies over the prior year [22], reducing U.S. purchasing power for imported commodities including oil.
+The oil shock lands on an already stressed global economy. The Supreme Court ruled 6-3 on February 20 that the administration's primary tariff authority under IEEPA was unconstitutional.[^19] A replacement 10% tariff under Section 122 of the Trade Act of 1974—which expires in 150 days—took immediate effect.[^20] Moody's chief economist characterized the outlook as "nothing but downside" for the U.S. economy.[^21] The dollar has weakened significantly against major currencies over the prior year[^22], reducing U.S. purchasing power for imported commodities including oil.
 
 ### Russia, China, and India
 
-China has called for an immediate ceasefire and positioned itself as a potential mediator, but has not intervened militarily or materially altered the supply picture. [7] Russia and China have accelerated bilateral trade in non-dollar currencies—Russia's finance minister has stated that 99.1% of bilateral trade is now settled in rubles and yuan. [16] The dollar's share of global foreign exchange reserves has been declining for two decades, though it remains dominant. [18] *Inference:* For Hawaii, the consequence is indirect but real: these dynamics constrain the U.S. government's ability to orchestrate a coordinated global supply response of the kind that resolved past oil crises.
+China has called for an immediate ceasefire and positioned itself as a potential mediator, but has not intervened militarily or materially altered the supply picture.[^7] Russia and China have accelerated bilateral trade in non-dollar currencies—Russia's finance minister has stated that 99.1% of bilateral trade is now settled in rubles and yuan.[^16] The dollar's share of global foreign exchange reserves has been declining for two decades, though it remains dominant.[^18] *Inference:* For Hawaii, the consequence is indirect but real: these dynamics constrain the U.S. government's ability to orchestrate a coordinated global supply response of the kind that resolved past oil crises.
 
-OFAC's General License 133—authorizing Russian crude delivery to India through April 4 [4]—is a tactical concession: the administration is easing sanctions enforcement on Russian oil to prevent an India supply crisis while simultaneously prosecuting a war that removes Gulf oil from the market. *Inference:* The tension is structural—easing oil sanctions to moderate prices while waging a war that constricts supply works against itself, and the resolution will be determined by which pressure the administration treats as binding.
+OFAC's General License 133—authorizing Russian crude delivery to India through April 4[^4]—is a tactical concession: the administration is easing sanctions enforcement on Russian oil to prevent an India supply crisis while simultaneously prosecuting a war that removes Gulf oil from the market. *Inference:* The tension is structural—easing oil sanctions to moderate prices while waging a war that constricts supply works against itself, and the resolution will be determined by which pressure the administration treats as binding.
 
 ### Hawaii's Position
 
@@ -325,16 +325,16 @@ Everything below this line is projection.
 
 **Trigger:** U.S. Navy establishes escort corridor through the Strait—sustained minesweeping, carrier group escort, degradation of IRGC coastal missile batteries—while Gulf states activate pipeline bypass capacity. Saudi Arabia's East-West Pipeline (Petroline, ~5 million bpd capacity to Yanbu on the Red Sea) and the UAE's ADCOP pipeline (~1.5 million bpd to Fujairah, outside the Strait) ramp to maximum throughput. Combined pipeline bypass recovers perhaps 6–7 million of the 20 million bpd normally transiting Hormuz. SPR and IEA coordinated release bridges the gap.
 **Time horizon:** Two to six weeks for partial flow restoration.
-**Oil:** Benchmarks moderate to $75–$95 as partial flow resumes; elevated but manageable.
+**Oil:** Benchmarks moderate to &#36;75–&#36;95 as partial flow resumes; elevated but manageable.
 **Critical constraint:** Whether the U.S. can project sufficient force simultaneously in the Strait *and* inland Iran. The Pentagon faces a timeline measured in days to demonstrate this capability. Iran may target pipeline terminals and Red Sea port facilities, turning the bypass into a new front.
 **Hawaii:** Electricity rate adjustment is significant but manageable—one to two billing cycles of elevated ECRC charges. Food price increases of 5–10%. Tourism impact moderate.
 **Confidence: MEDIUM.** The most likely path over the near term (one to six weeks). The military capability exists; the question is whether the IRGC can sustain denial operations against escorted convoys.
 
 ### Scenario 2: Contested Strait + Russian Sanctions Collapse
 
-**Trigger:** Military operations continue at current pace for four to eight weeks. Strait escort operations are partially successful but insufficient to restore full flow. Gulf pipeline bypass is active but constrained by Iranian targeting of infrastructure. Meanwhile, the sanctions architecture against Russian oil collapses under its own weight: the 30-day OFAC India waiver [4] is the first crack, and as the crisis extends, the U.S. tacitly drops Russian oil enforcement to keep prices below catastrophic levels. Russia becomes the most important marginal barrel on earth—and Moscow knows it.
+**Trigger:** Military operations continue at current pace for four to eight weeks. Strait escort operations are partially successful but insufficient to restore full flow. Gulf pipeline bypass is active but constrained by Iranian targeting of infrastructure. Meanwhile, the sanctions architecture against Russian oil collapses under its own weight: the 30-day OFAC India waiver[^4] is the first crack, and as the crisis extends, the U.S. tacitly drops Russian oil enforcement to keep prices below catastrophic levels. Russia becomes the most important marginal barrel on earth—and Moscow knows it.
 **Time horizon:** Four to eight weeks of elevated disruption; gradual normalization as Russian supply fills the gap.
-**Oil:** Benchmarks trade in the $100–$130 range for four to eight weeks, moderating as Russian barrels re-enter global markets without sanctions friction.
+**Oil:** Benchmarks trade in the &#36;100–&#36;130 range for four to eight weeks, moderating as Russian barrels re-enter global markets without sanctions friction.
 **Strategic cost:** This hands Moscow the leverage it wanted over Ukraine negotiations. The war in Iran may effectively end the sanctions war on Russia.
 **Hawaii:** Electricity rates rise materially within two billing cycles. Food prices rise 10–20% with a two-to-six-week lag. Tourism begins measurable decline. Inter-island logistics costs spike. State emergency planning should be activated. Low-income households face genuine hardship.
 **Confidence: MEDIUM-HIGH.** The most likely path if the crisis extends beyond six weeks—consistent with the administration's stated timeline, reflecting the path of least resistance on Russian sanctions.
@@ -343,7 +343,7 @@ Everything below this line is projection.
 
 **Trigger:** Conflict escalates to broader infrastructure destruction—U.S. strikes on Iranian oil and gas facilities are met with Iranian retaliation against Gulf state oil infrastructure (Saudi Aramco, UAE ADNOC). Pipeline terminals and bypass routes are targeted. Hormuz effectively closed for months. Significant regional production infrastructure is damaged or destroyed. SPR reserves deplete without resolution—depleted strategic stocks and an ongoing supply crisis simultaneously.
 **Time horizon:** Two to six months of severe disruption.
-**Oil:** Benchmarks exceed $150; sustained above $120 for months. At this level, demand destruction becomes the de facto rationing mechanism.
+**Oil:** Benchmarks exceed &#36;150; sustained above &#36;120 for months. At this level, demand destruction becomes the de facto rationing mechanism.
 **Global:** Global recession. Energy rationing in import-dependent economies. Fundamental repricing of energy security assumptions worldwide.
 **Hawaii:** Electricity bills approach or exceed double current levels. Food supply chain under severe stress—the five-to-seven-day reserve buffer becomes operationally relevant. Tourism faces significant contraction. Inter-island barge economics may become unviable for some routes without state subsidy. Low-income households and neighbor island communities face crisis-level hardship. The feedback loop described in this assessment becomes the dominant economic dynamic.
 **Confidence: LOW.** The most dangerous scenario. Its probability is low; its consequences warrant contingency planning regardless.
@@ -388,7 +388,7 @@ If Gulf states activate maximum bypass capacity while the Strait is contested, t
 
 This is the path no one in Washington wants to acknowledge, and it may be the one that matters most.
 
-With Gulf supply constrained, Russia becomes the most important marginal barrel on earth. Moscow knows this. The 30-day OFAC waiver for Russian crude to India [4] is the first crack—the U.S. is already quietly allowing Russian oil flows it had been sanctioning. If the Strait stays closed for weeks, the sanctions architecture against Russian oil collapses under its own weight, because the alternative is $200+ crude and global recession.
+With Gulf supply constrained, Russia becomes the most important marginal barrel on earth. Moscow knows this. The 30-day OFAC waiver for Russian crude to India[^4] is the first crack—the U.S. is already quietly allowing Russian oil flows it had been sanctioning. If the Strait stays closed for weeks, the sanctions architecture against Russian oil collapses under its own weight, because the alternative is &#36;200+ crude and global recession.
 
 The "stability" here is that the U.S. tacitly drops Russian oil enforcement to keep prices below catastrophic levels. This hands Moscow exactly the leverage it wanted over Ukraine negotiations. The war in Iran may effectively end the sanctions war on Russia.
 
@@ -410,17 +410,17 @@ The four paths above are outside Hawaii's control. The state cannot reopen the S
 
 **Pre-negotiate federal asks.** *Actor: Governor's office, congressional delegation. Trigger: Now.* If conditions worsen, the state should already know what it wants from Washington—on waivers, fuel prioritization, emergency support, and FEMA channels. Building the request during the crisis costs weeks. Building it now costs hours.
 
-**Emergency Jones Act waiver petition.** *Actor: Governor, to DHS/CBP. Legal basis: 46 U.S.C. § 501. Trigger: Sustained crude above $100 or freight surcharges exceeding 25%.* The statute authorizes waivers when "necessary in the interest of national defense." [26] There is precedent—waivers were granted for Puerto Rico after Hurricane Maria. The "national defense" threshold is high; an active war that disrupts global oil supply is the strongest factual basis for meeting it. A waiver would increase the pool of eligible vessels and introduce competitive pressure on freight rates. The maritime industry will oppose it. The political calculus changes under sustained crisis.
+**Emergency Jones Act waiver petition.** *Actor: Governor, to DHS/CBP. Legal basis: 46 U.S.C. § 501. Trigger: Sustained crude above &#36;100 or freight surcharges exceeding 25%.* The statute authorizes waivers when "necessary in the interest of national defense."[^26] There is precedent—waivers were granted for Puerto Rico after Hurricane Maria. The "national defense" threshold is high; an active war that disrupts global oil supply is the strongest factual basis for meeting it. A waiver would increase the pool of eligible vessels and introduce competitive pressure on freight rates. The maritime industry will oppose it. The political calculus changes under sustained crisis.
 
-**Emergency demand reduction.** *Actor: Hawaiian Electric (operational), PUC (regulatory), Governor (emergency declaration). Trigger: Now.* Hawaii has no state strategic petroleum reserve. The available levers are demand-side: Hawaiian Electric implements rolling conservation measures and public conservation campaigns immediately. Formal demand-response programs are limited—Hawaiian Electric's EnergyScout program operates only on Oahu and is currently closed to new participants, and Hawaii Island has no demand-response program at present. [28] [29] The realistic near-term tools are conservation appeals, voluntary commercial load reduction, and rate signals—not automated demand response at scale. The governor declares an energy emergency under HRS § 127A, unlocking federal assistance channels. The difference between acting now and acting after the first $300 utility bill arrives is the difference between managed hardship and political crisis.
+**Emergency demand reduction.** *Actor: Hawaiian Electric (operational), PUC (regulatory), Governor (emergency declaration). Trigger: Now.* Hawaii has no state strategic petroleum reserve. The available levers are demand-side: Hawaiian Electric implements rolling conservation measures and public conservation campaigns immediately. Formal demand-response programs are limited—Hawaiian Electric's EnergyScout program operates only on Oahu and is currently closed to new participants, and Hawaii Island has no demand-response program at present.[^28][^29] The realistic near-term tools are conservation appeals, voluntary commercial load reduction, and rate signals—not automated demand response at scale. The governor declares an energy emergency under HRS § 127A, unlocking federal assistance channels. The difference between acting now and acting after the first &#36;300 utility bill arrives is the difference between managed hardship and political crisis.
 
-**Fast-track permitted renewable projects.** *Actor: PUC, DLNR, county permitting authorities. Trigger: Now for projects already in permitting; structural reform otherwise.* Every megawatt of solar or battery storage that comes online during this crisis is a megawatt that does not burn $90+ oil. Permitting acceleration is within the governor's authority under an energy emergency declaration. The honest constraint: permitting is not the only bottleneck—interconnection, procurement, and construction timelines mean that most queued projects will not deliver power within the 30-day shock window. The emergency action is to identify projects that are genuinely shovel-ready (permits issued, equipment procured, interconnection approved) and clear remaining obstacles for those. Broader permitting reform belongs in the structural reform section below, where it can compound over the medium term.
+**Fast-track permitted renewable projects.** *Actor: PUC, DLNR, county permitting authorities. Trigger: Now for projects already in permitting; structural reform otherwise.* Every megawatt of solar or battery storage that comes online during this crisis is a megawatt that does not burn &#36;90+ oil. Permitting acceleration is within the governor's authority under an energy emergency declaration. The honest constraint: permitting is not the only bottleneck—interconnection, procurement, and construction timelines mean that most queued projects will not deliver power within the 30-day shock window. The emergency action is to identify projects that are genuinely shovel-ready (permits issued, equipment procured, interconnection approved) and clear remaining obstacles for those. Broader permitting reform belongs in the structural reform section below, where it can compound over the medium term.
 
-**Emergency food supply coordination.** *Actor: Department of Agriculture, HI-EMA, major distributors. Trigger: Crude sustained above $120 for two weeks.* With five to seven days of on-island food supply [10], the state should immediately assess inventory levels with major distributors, identify priority shipping for essential goods, and establish communication channels for potential allocation. The absence of a plan under Scenario 3 is indefensible, regardless of how unlikely Scenario 3 may seem today.
+**Emergency food supply coordination.** *Actor: Department of Agriculture, HI-EMA, major distributors. Trigger: Crude sustained above &#36;120 for two weeks.* With five to seven days of on-island food supply[^10], the state should immediately assess inventory levels with major distributors, identify priority shipping for essential goods, and establish communication channels for potential allocation. The absence of a plan under Scenario 3 is indefensible, regardless of how unlikely Scenario 3 may seem today.
 
 **Low-income bill relief.** *Actor: Hawaiian Electric (proposal), PUC (approval), state legislature (funding). Constraint: Any rate deferral or expansion of assistance programs requires PUC authorization or legislative appropriation; LIHEAP funds flow through the federal-state pipeline.* Hawaiian Electric should file for emergency bill-relief measures for qualifying low-income households before the ECRC adjustment hits. Defer rate increases, expand existing assistance programs, or create emergency payment plans. The alternative is mass disconnections during a crisis. The deferred costs shift to other ratepayers or the general fund. That is a cost worth bearing.
 
-**Inter-island logistics contingency.** *Actor: State DOT, Young Brothers, Governor's office. Trigger: Diesel sustained above $5.50/gallon.* The state should assess, with Young Brothers, minimum viable barge schedules and pricing under $120+ diesel. If certain neighbor island routes become uneconomical, the emergency backstop—state subsidy, military logistics support, or something else—needs to be identified before the barges stop running.
+**Inter-island logistics contingency.** *Actor: State DOT, Young Brothers, Governor's office. Trigger: Diesel sustained above &#36;5.50/gallon.* The state should assess, with Young Brothers, minimum viable barge schedules and pricing under &#36;120+ diesel. If certain neighbor island routes become uneconomical, the emergency backstop—state subsidy, military logistics support, or something else—needs to be identified before the barges stop running.
 
 ### Path 6: The Food Sovereignty Question
 
@@ -428,9 +428,9 @@ The four paths above are outside Hawaii's control. The state cannot reopen the S
 
 This path operates on a longer timeline, but the crisis creates the political conditions that decades of agricultural policy papers could not.
 
-The directional argument: at $150+ oil, the cost of importing food to Hawaii rises enough that local production becomes more competitive relative to imports. The crisis creates a market signal favoring local agriculture that normal pricing does not.
+The directional argument: at &#36;150+ oil, the cost of importing food to Hawaii rises enough that local production becomes more competitive relative to imports. The crisis creates a market signal favoring local agriculture that normal pricing does not.
 
-The argument has real constraints that this assessment does not resolve. Local food production requires water access (the binding constraint on Hawaii agriculture, not land), time to bring fallow land into production (months to years for most crops), processing and cold-chain infrastructure that does not currently exist at scale, and labor in a tight market. Whether the cost crossover is real at $150 crude—or $200, or never—depends on crop-specific cost curves this assessment has not modeled. The thesis is plausible. It is not proven.
+The argument has real constraints that this assessment does not resolve. Local food production requires water access (the binding constraint on Hawaii agriculture, not land), time to bring fallow land into production (months to years for most crops), processing and cold-chain infrastructure that does not currently exist at scale, and labor in a tight market. Whether the cost crossover is real at &#36;150 crude—or &#36;200, or never—depends on crop-specific cost curves this assessment has not modeled. The thesis is plausible. It is not proven.
 
 What the state can do now, at low cost, to be ready if the window opens:
 
@@ -445,12 +445,12 @@ None of this solves a 30-day emergency. If the crisis lasts 60–90 days, the po
 
 If Hawaii survives this crisis without structural reform, the next one will arrive on the same terms. Every item below has been recommended in prior state energy studies, legislative reports, and policy papers. The current crisis simply makes the cost of continued inaction visible.
 
-- **Accelerate battery storage and grid-scale renewable deployment.** The 100% renewable electricity mandate by 2045 was signed in 2015—eleven years ago. Renewables provide about 33% of statewide generation as of 2024. [5] The pace tells its own story.
-- **Resolve the LNG transition debate.** The Hawaii State Energy Office's January 2025 study concluded that LNG is "the near-term fuel with the potential to cost-effectively reduce the state's greenhouse gas emissions" during the transition. [9] The study itself states it is "not a proposed plan" and requires "further analysis, pursuit by the electric utility, and appropriate regulatory approval." Hawaii has no natural gas infrastructure. An FSRU-based import terminal could reduce petroleum dependence for electricity generation, but the infrastructure may delay full renewable transition—and the project remains a proposal.
+- **Accelerate battery storage and grid-scale renewable deployment.** The 100% renewable electricity mandate by 2045 was signed in 2015—eleven years ago. Renewables provide about 33% of statewide generation as of 2024.[^5] The pace tells its own story.
+- **Resolve the LNG transition debate.** The Hawaii State Energy Office's January 2025 study concluded that LNG is "the near-term fuel with the potential to cost-effectively reduce the state's greenhouse gas emissions" during the transition.[^9] The study itself states it is "not a proposed plan" and requires "further analysis, pursuit by the electric utility, and appropriate regulatory approval." Hawaii has no natural gas infrastructure. An FSRU-based import terminal could reduce petroleum dependence for electricity generation, but the infrastructure may delay full renewable transition—and the project remains a proposal.
 - **Build a state fuel reserve.** No other state of comparable isolation and petroleum dependence operates without one.
 - **Invest in food-system resilience.** Five to seven days of food supply is a structural emergency waiting for a trigger.
 - **Pursue ground transportation electrification.** Aviation remains kerosene-dependent for the foreseeable future. Ground transport can be electrified, constrained by vehicle cost, charging infrastructure, and grid capacity.
-- **Diversify refinery capacity.** A single refinery is a single point of failure. Par Pacific is beginning renewable diesel conversion at Kapolei, but that conversion is early-stage. [23]
+- **Diversify refinery capacity.** A single refinery is a single point of failure. Par Pacific is beginning renewable diesel conversion at Kapolei, but that conversion is early-stage.[^23]
 
 ---
 
@@ -471,101 +471,6 @@ The state can plan for what comes next, or it can absorb the hit. That decision 
 ---
 
 *Ekewaka Lono is the publisher of [Oahu Underground](https://gtcode.com). This dispatch is part of an ongoing investigation into institutional capture and structural vulnerability in Hawaiʻi.*
-
----
-
-## Sources
-
-[*] WTI/USOIL (CFDs on WTI Crude Oil, TVC), observed via TradingView at approximately 10:00 PM HST, Sunday March 8, 2026. Live market indication, not a settled exchange close or named futures contract. The Friday March 6 settled close of $90.90 per barrel is sourced separately in [1].
-
-[1] Reuters, "Oil falls as US may intervene in futures market, issues waiver for Russian purchases," March 6, 2026.
-https://www.reuters.com/business/energy/oil-falls-us-may-intervene-futures-market-issues-waiver-russian-purchases-2026-03-06/
-
-[2] Reuters, "Tanker traffic in the Strait of Hormuz comes to a standstill," March 5, 2026.
-https://www.reuters.com/graphics/IRAN-CRISIS/MAPS/znpnmelervl/2026-03-05/tanker-traffic-in-the-strait-of-hormuz-comes-to-a-standstill/
-
-[3] Reuters, "Maritime insurance premiums surge as Iran conflict widens," March 6, 2026.
-https://www.reuters.com/world/middle-east/maritime-insurance-premiums-surge-iran-conflict-widens-2026-03-06/
-
-[4] U.S. Department of the Treasury, Office of Foreign Assets Control, "Russia-related General License 133," March 5, 2026.
-https://ofac.treasury.gov/recent-actions/20260305_33
-
-[5] U.S. Energy Information Administration, "Hawaii State Energy Profile," updated 2025.
-https://www.eia.gov/state/print.php?sid=HI
-
-[6] U.S. Energy Information Administration, "Hawaii State Energy Analysis," updated 2025.
-https://www.eia.gov/state/analysis.php?sid=HI
-
-[7] Reuters, "China urges immediate ceasefire after US-Israel strike on Iran," March 1, 2026.
-https://www.reuters.com/world/asia-pacific/china-urges-immediate-ceasefire-after-us-israel-strike-iran-2026-03-01/
-
-[8] Reuters, "One week into Iran war, dangers for US, Trump multiply," March 7, 2026.
-https://www.reuters.com/world/middle-east/one-week-into-iran-war-dangers-us-trump-multiply-2026-03-07/
-
-[9] Hawaiʻi State Energy Office, "Alternative Fuels, Repowering and Energy Transition Study," January 2025.
-https://energy.hawaii.gov/alternative-fuels-repowering-and-energy-transition-study/
-
-[10] State of Hawaiʻi, Hawaii Emergency Management Agency, *State of Hawaii Emergency Operations Plan* (EOP), February 2022. The EOP identifies Hawaii as importing approximately 90% of its food and maintaining approximately five to seven days of on-island food supply.
-https://dod.hawaii.gov/hiema/files/2022/03/Hawaii-State-EOP-FEB-2022-1.pdf
-
-[11] Hawaiian Electric, "Renewable Energy Sources" (petroleum consumption breakdown: approximately one-third each for electricity generation, aviation fuel, and ground/marine transportation).
-https://www.hawaiianelectric.com/clean-energy-hawaii/our-clean-energy-portfolio/renewable-energy-sources
-
-[12] Hawaiian Electric, "Rates & Regulations" (Energy Cost Recovery Clause mechanism).
-https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations
-
-[13] U.S. Energy Information Administration, "Short-Term Energy Outlook," forecast completed February 5, 2026.
-https://www.eia.gov/outlooks/steo/
-
-[14] J.P. Morgan Global Research, "Oil Price Forecast for 2026."
-https://www.jpmorgan.com/insights/global-research/commodities/oil-prices
-
-[15] Civil Beat, "How Hawaii Squandered Its Food Security — And What It Will Take To Get It Back," April 2021.
-https://www.civilbeat.org/2021/04/how-hawaii-squandered-its-food-security-and-what-it-will-take-to-get-it-back/
-
-[16] Lowy Institute, "A reality check for BRICS and the lofty dedollarisation agenda," 2026. Citing Russian Finance Minister Anton Siluanov.
-https://www.lowyinstitute.org/the-interpreter/reality-check-brics-lofty-dedollarisation-agenda
-
-[17] Hawaiian Electric, Effective Rate Summary, 2025 (Oahu residential effective rate: 40.54¢/kWh; Lānaʻi: 50.02¢/kWh). Monthly PDF filings available at:
-https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations/effective-rate-summary
-
-[18] International Monetary Fund, Currency Composition of Official Foreign Exchange Reserves (COFER), Q3 2025.
-https://data.imf.org/regular.aspx?key=41175
-
-[19] Tax Foundation, "Tariff Tracker: 2026 Trump Tariffs & Trade War by the Numbers," updated March 2026.
-https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/
-
-[20] Al Jazeera, "New US tariff starts at 10% as Trump works to hike it to 15%," February 24, 2026.
-https://www.aljazeera.com/news/2026/2/24/new-trump-tariffs-take-effect-days-after-supreme-court-decision
-
-[21] CNBC, "Supreme Court ruling throws Trump administration's tariff strategy into flux," February 23, 2026.
-https://www.cnbc.com/2026/02/23/what-supreme-court-tariff-ruling-means-for-global-trade-us-economy.html
-
-[22] Atlantic Council, "What the data shows — and doesn't show — about the future of the dollar," Hung Tran, February 4, 2026.
-https://www.atlanticcouncil.org/blogs/what-the-data-shows-and-doesnt-show-about-the-future-of-the-dollar/
-
-[23] Civil Beat, "Hawaiʻi Can Own Its Energy Future," Noel Morin, January 10, 2026.
-https://www.civilbeat.org/2026/01/hawaii-can-own-its-energy-future/
-
-[25] U.S. Energy Information Administration, "2024 Average Monthly Bill—Residential" (Table 5A) and "2024 Total Electric Industry—Average Retail Price" (Table 4). Hawaii residential average: 42.86¢/kWh; average monthly consumption: 495 kWh; average monthly bill: $212.12. U.S. residential average: 16.48¢/kWh.
-https://www.eia.gov/electricity/sales_revenue_price/
-
-[26] Jones Act cabotage requirement: 46 U.S.C. § 55102. Waiver authority: 46 U.S.C. § 501 (waivers granted by DHS/CBP when "necessary in the interest of national defense"). Waiver request process:
-https://www.cbp.gov/trade/jones-act-waiver-request
-
-[27] U.S. Government Accountability Office, "Puerto Rico: Characteristics of the Island's Maritime Trade and Potential Effects of Modifying the Jones Act," GAO-13-260 (March 2013); Congressional Research Service, "Shipping Under the Jones Act: Legislative and Regulatory Background," R46653 (updated 2021). Both document cost premiums imposed on noncontiguous U.S. jurisdictions.
-
-[28] Hawaiian Electric, "Energy Scout" demand response program (Oahu only; currently closed to new participants).
-https://www.hawaiianelectric.com/products-and-services/customer-incentive-programs/energy-scout
-
-[29] Hawaiian Electric, "Performance Scorecards and Metrics — Emerging Technologies" (Hawaii Island currently has no demand-response program).
-https://www.hawaiianelectric.com/about-us/performance-scorecards-and-metrics/emerging-technologies
-
-[30] Hawaiʻi Emergency Management Agency, "Preparedness Information" (14-day household preparedness guidance).
-https://dod.hawaii.gov/hiema/preparedness-information/
-
-[31] Hawaiʻi Emergency Management Agency, "2-Weeks Ready in Hawaiʻi" public preparedness campaign.
-https://dod.hawaii.gov/hiema/2-weeks-ready-in-hawai%CA%BBi/
 
 ---
 
@@ -608,7 +513,7 @@ The following developments would shift the assessment. Monitor daily. Organized 
 - U.S. or Israeli strikes on Iranian oil or gas production infrastructure
 - Iran retaliates against Gulf state oil facilities (Saudi Aramco, UAE ADNOC terminals)
 - Insurance underwriters issue blanket exclusion zones covering the entire Persian Gulf
-- Benchmarks cross $120 and hold for 48+ hours
+- Benchmarks cross &#36;120 and hold for 48+ hours
 - Par Pacific or Hawaiian Electric invoke force majeure or announce allocation restrictions
 - Young Brothers announces barge service reductions or surcharges to neighbor islands
 - Hawaii food distributors report wholesale price increases exceeding 15%
@@ -619,7 +524,7 @@ The following developments would shift the assessment. Monitor daily. Organized 
 - Governor convenes (or fails to convene) emergency energy task force
 - Hawaiian Electric publishes (or does not publish) ECRC scenario analysis
 - Jones Act waiver petition filed or denied
-- First ECRC rate adjustment reflecting $90+ crude hits residential bills
+- First ECRC rate adjustment reflecting &#36;90+ crude hits residential bills
 - Neighbor island food or fuel shortages reported
 
 ## Key Uncertainties
@@ -646,9 +551,9 @@ The following developments would shift the assessment. Monitor daily. Organized 
 |-------|---------------------------|------------------------|---------------------|-------------------|------------------------|------------------------|
 | **Federal govt** | CENTCOM execution; escort authorization | Diplomatic support for Gulf state activation | OFAC waiver decisions; sanctions enforcement | SPR release authorization; IEA coordination | Jones Act waiver (DHS); LIHEAP; priority fuel allocation | USDA emergency programs |
 | **State of Hawaiʻi** | Monitor; no direct role | Monitor; no direct role | Monitor; no direct role | Petition for priority allocation | Emergency declaration (HRS §127A); task force; permitting acceleration; demand reduction | Land use reclassification; water permits; institutional procurement |
-| **Hawaiian Electric** | Monitor; prepare for rate moderation | Monitor | Monitor | Coordinate with federal fuel allocation | ECRC scenario publication; conservation campaigns; voluntary commercial load reduction (formal DR is Oahu-only and limited [28] [29]); low-income relief filing (PUC); clear obstacles for shovel-ready renewable projects | N/A |
+| **Hawaiian Electric** | Monitor; prepare for rate moderation | Monitor | Monitor | Coordinate with federal fuel allocation | ECRC scenario publication; conservation campaigns; voluntary commercial load reduction (formal DR is Oahu-only and limited[^28][^29]); low-income relief filing (PUC); clear obstacles for shovel-ready renewable projects | N/A |
 | **Par Pacific** | Assess Strait escort feasibility for crude deliveries | Monitor alternative supply routes | Evaluate Russian crude sourcing | Coordinate with SPR distribution | Communicate supply status; contingency planning | N/A |
-| **Households** | Budget for 4–8 weeks elevated prices | N/A | N/A | N/A | Conservation; 14-day food and supply buffer per HI-EMA "2-Weeks Ready" guidance [30] [31] (households with means should consider extending to 30 days given multi-week supply chain lag, but 14 days is the state standard); review fixed costs | Support local agriculture where possible |
+| **Households** | Budget for 4–8 weeks elevated prices | N/A | N/A | N/A | Conservation; 14-day food and supply buffer per HI-EMA "2-Weeks Ready" guidance[^30][^31] (households with means should consider extending to 30 days given multi-week supply chain lag, but 14 days is the state standard); review fixed costs | Support local agriculture where possible |
 
 ## What Would Change This Assessment
 
@@ -662,3 +567,69 @@ This assessment would require significant revision if any of the following occur
 - **Par Pacific announces crude sourcing disruption or force majeure** → Upgrade Hawaii-specific risk to critical; recommend emergency federal fuel allocation
 - **Hawaiian Electric announces emergency rate surcharge exceeding 30%** → Activate immediate low-income relief; demand-reduction recommendations become urgent
 - **Governor declares energy emergency** → Positive signal; shifts Path 5 from recommendation to active implementation
+
+---
+
+## Sources and Notes
+
+[^star]: WTI/USOIL (CFDs on WTI Crude Oil, TVC), observed via TradingView at approximately 10:00 PM HST, Sunday March 8, 2026. Live market indication, not a settled exchange close or named futures contract. The Friday March 6 settled close of &#36;90.90 per barrel is sourced separately in note 1.
+
+[^1]: Reuters, "Oil falls as US may intervene in futures market, issues waiver for Russian purchases," March 6, 2026. https://www.reuters.com/business/energy/oil-falls-us-may-intervene-futures-market-issues-waiver-russian-purchases-2026-03-06/
+
+[^2]: Reuters, "Tanker traffic in the Strait of Hormuz comes to a standstill," March 5, 2026. https://www.reuters.com/graphics/IRAN-CRISIS/MAPS/znpnmelervl/2026-03-05/tanker-traffic-in-the-strait-of-hormuz-comes-to-a-standstill/
+
+[^3]: Reuters, "Maritime insurance premiums surge as Iran conflict widens," March 6, 2026. https://www.reuters.com/world/middle-east/maritime-insurance-premiums-surge-iran-conflict-widens-2026-03-06/
+
+[^4]: U.S. Department of the Treasury, Office of Foreign Assets Control, "Russia-related General License 133," March 5, 2026. https://ofac.treasury.gov/recent-actions/20260305_33
+
+[^5]: U.S. Energy Information Administration, "Hawaii State Energy Profile," updated 2025. https://www.eia.gov/state/print.php?sid=HI
+
+[^6]: U.S. Energy Information Administration, "Hawaii State Energy Analysis," updated 2025. https://www.eia.gov/state/analysis.php?sid=HI
+
+[^7]: Reuters, "China urges immediate ceasefire after US-Israel strike on Iran," March 1, 2026. https://www.reuters.com/world/asia-pacific/china-urges-immediate-ceasefire-after-us-israel-strike-iran-2026-03-01/
+
+[^8]: Reuters, "One week into Iran war, dangers for US, Trump multiply," March 7, 2026. https://www.reuters.com/world/middle-east/one-week-into-iran-war-dangers-us-trump-multiply-2026-03-07/
+
+[^9]: Hawaiʻi State Energy Office, "Alternative Fuels, Repowering and Energy Transition Study," January 2025. https://energy.hawaii.gov/alternative-fuels-repowering-and-energy-transition-study/
+
+[^10]: State of Hawaiʻi, Hawaii Emergency Management Agency, *State of Hawaii Emergency Operations Plan* (EOP), February 2022. The EOP identifies Hawaii as importing approximately 90% of its food and maintaining approximately five to seven days of on-island food supply. https://dod.hawaii.gov/hiema/files/2022/03/Hawaii-State-EOP-FEB-2022-1.pdf
+
+[^11]: Hawaiian Electric, "Renewable Energy Sources" (petroleum consumption breakdown: approximately one-third each for electricity generation, aviation fuel, and ground/marine transportation). https://www.hawaiianelectric.com/clean-energy-hawaii/our-clean-energy-portfolio/renewable-energy-sources
+
+[^12]: Hawaiian Electric, "Rates & Regulations" (Energy Cost Recovery Clause mechanism). https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations
+
+[^13]: U.S. Energy Information Administration, "Short-Term Energy Outlook," forecast completed February 5, 2026. https://www.eia.gov/outlooks/steo/
+
+[^14]: J.P. Morgan Global Research, "Oil Price Forecast for 2026." https://www.jpmorgan.com/insights/global-research/commodities/oil-prices
+
+[^15]: Civil Beat, "How Hawaii Squandered Its Food Security — And What It Will Take To Get It Back," April 2021. https://www.civilbeat.org/2021/04/how-hawaii-squandered-its-food-security-and-what-it-will-take-to-get-it-back/
+
+[^16]: Lowy Institute, "A reality check for BRICS and the lofty dedollarisation agenda," 2026. Citing Russian Finance Minister Anton Siluanov. https://www.lowyinstitute.org/the-interpreter/reality-check-brics-lofty-dedollarisation-agenda
+
+[^17]: Hawaiian Electric, Effective Rate Summary, 2025 (Oahu residential effective rate: 40.54¢/kWh; Lānaʻi: 50.02¢/kWh). Monthly PDF filings available at: https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations/effective-rate-summary
+
+[^18]: International Monetary Fund, Currency Composition of Official Foreign Exchange Reserves (COFER), Q3 2025. https://data.imf.org/regular.aspx?key=41175
+
+[^19]: Tax Foundation, "Tariff Tracker: 2026 Trump Tariffs & Trade War by the Numbers," updated March 2026. https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/
+
+[^20]: Al Jazeera, "New US tariff starts at 10% as Trump works to hike it to 15%," February 24, 2026. https://www.aljazeera.com/news/2026/2/24/new-trump-tariffs-take-effect-days-after-supreme-court-decision
+
+[^21]: CNBC, "Supreme Court ruling throws Trump administration's tariff strategy into flux," February 23, 2026. https://www.cnbc.com/2026/02/23/what-supreme-court-tariff-ruling-means-for-global-trade-us-economy.html
+
+[^22]: Atlantic Council, "What the data shows — and doesn't show — about the future of the dollar," Hung Tran, February 4, 2026. https://www.atlanticcouncil.org/blogs/what-the-data-shows-and-doesnt-show-about-the-future-of-the-dollar/
+
+[^23]: Civil Beat, "Hawaiʻi Can Own Its Energy Future," Noel Morin, January 10, 2026. https://www.civilbeat.org/2026/01/hawaii-can-own-its-energy-future/
+
+[^25]: U.S. Energy Information Administration, "2024 Average Monthly Bill—Residential" (Table 5A) and "2024 Total Electric Industry—Average Retail Price" (Table 4). Hawaii residential average: 42.86¢/kWh; average monthly consumption: 495 kWh; average monthly bill: &#36;212.12. U.S. residential average: 16.48¢/kWh. https://www.eia.gov/electricity/sales_revenue_price/
+
+[^26]: Jones Act cabotage requirement: 46 U.S.C. § 55102. Waiver authority: 46 U.S.C. § 501 (waivers granted by DHS/CBP when "necessary in the interest of national defense"). Waiver request process: https://www.cbp.gov/trade/jones-act-waiver-request
+
+[^27]: U.S. Government Accountability Office, "Puerto Rico: Characteristics of the Island's Maritime Trade and Potential Effects of Modifying the Jones Act," GAO-13-260 (March 2013); Congressional Research Service, "Shipping Under the Jones Act: Legislative and Regulatory Background," R46653 (updated 2021). Both document cost premiums imposed on noncontiguous U.S. jurisdictions.
+
+[^28]: Hawaiian Electric, "Energy Scout" demand response program (Oahu only; currently closed to new participants). https://www.hawaiianelectric.com/products-and-services/customer-incentive-programs/energy-scout
+
+[^29]: Hawaiian Electric, "Performance Scorecards and Metrics — Emerging Technologies" (Hawaii Island currently has no demand-response program). https://www.hawaiianelectric.com/about-us/performance-scorecards-and-metrics/emerging-technologies
+
+[^30]: Hawaiʻi Emergency Management Agency, "Preparedness Information" (14-day household preparedness guidance). https://dod.hawaii.gov/hiema/preparedness-information/
+
+[^31]: Hawaiʻi Emergency Management Agency, "2-Weeks Ready in Hawaiʻi" public preparedness campaign. https://dod.hawaii.gov/hiema/2-weeks-ready-in-hawai%CA%BBi/

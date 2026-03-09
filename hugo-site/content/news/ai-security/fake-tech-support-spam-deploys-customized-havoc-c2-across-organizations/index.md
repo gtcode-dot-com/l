@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-04T00:15:14.804265+00:00'
-exported_at: '2026-03-04T00:15:18.079367+00:00'
+date: '2026-03-09T05:27:34.630328+00:00'
+exported_at: '2026-03-09T05:27:36.981177+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/fake-tech-support-spam-deploys.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Fake Tech Support Spam Deploys Customized Havoc C2 Across Organizations
-updated_at: '2026-03-04T00:15:14.804265+00:00'
+updated_at: '2026-03-09T05:27:34.630328+00:00'
 url_hash: f2c8b838418a7e812ca2286dceaf8d0a11c63a59
 ---
 

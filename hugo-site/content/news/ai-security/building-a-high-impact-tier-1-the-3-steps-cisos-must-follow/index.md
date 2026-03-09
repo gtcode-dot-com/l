@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-04T00:15:15.049223+00:00'
-exported_at: '2026-03-04T00:15:18.076940+00:00'
+date: '2026-03-09T05:27:35.111205+00:00'
+exported_at: '2026-03-09T05:27:36.977340+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/building-high-impact-tier-1-3-steps.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'Building a High-Impact Tier 1: The 3 Steps CISOs Must Follow'
-updated_at: '2026-03-04T00:15:15.049223+00:00'
+updated_at: '2026-03-09T05:27:35.111205+00:00'
 url_hash: 7d49fba7473792e9c78618f667b835aebaa8034f
 ---
 

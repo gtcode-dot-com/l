@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T18:15:49.743160+00:00'
-exported_at: '2026-02-20T18:15:52.350058+00:00'
+date: '2026-03-09T05:28:12.695636+00:00'
+exported_at: '2026-03-09T05:28:14.085828+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/biggest-selling-magazines-in-uk-2025
@@ -17,16 +17,16 @@ structured_data:
   author: ''
   description: Biggest selling magazines in the UK in 2025. Full breakdown of the
     latest print circulation figures from ABC.
-  headline: Just 11 out of 131 ABC-audited magazines grew sales in 2025
+  headline: Ten out of 131 ABC-audited magazines grew sales in 2025
   inLanguage: en
   keywords: []
   main_image: ''
   original_source: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/biggest-selling-magazines-in-uk-2025
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
-title: Just 11 out of 131 ABC-audited magazines grew sales in 2025
-updated_at: '2026-02-20T18:15:49.743160+00:00'
+    name: GTCode
+title: Ten out of 131 ABC-audited magazines grew sales in 2025
+updated_at: '2026-03-09T05:28:12.695636+00:00'
 url_hash: 5216bc8d08594870594ee773ab38ca7da36fe7ac
 ---
 
@@ -35,9 +35,9 @@ url_hash: 5216bc8d08594870594ee773ab38ca7da36fe7ac
 
 Magazines on the newsstand. Picture: Press Gazette
 
-Only 11 UK magazines grew their actively-purchased print sales in 2025, according to the latest data from ABC on the biggest-selling magazines in the UK.
+Ten UK magazines grew their actively-purchased print sales in 2025, according to the latest data from ABC on the biggest-selling magazines in the UK.
 
-Monthly title Autosport grew its paid-for print circulation by 175% to 13,916. Fashion and lifestyle monthly Harper’s Bazaar grew its paid print circulation by 22% to 30,547 and The Week Junior grew by 9% to just under 40,000 copies per week.
+Monthly title Autosport grew its paid-for print circulation by 175% to 13,916 after it went from weekly to monthly distribution and merged with GP Racing. Fashion and lifestyle monthly Harper’s Bazaar grew its paid print circulation by 22% to 30,547 and The Week Junior grew by 9% to just under 40,000 copies per week.
 
 Other print success stories
 [included: The Spectator (up 3% to 55,191)](https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/new-subs-technology-helps-spectator-reach-198-year-sales-high/)

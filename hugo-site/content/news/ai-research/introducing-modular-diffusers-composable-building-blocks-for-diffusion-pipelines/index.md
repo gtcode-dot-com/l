@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-06T20:36:20.475550+00:00'
-exported_at: '2026-03-06T20:36:23.025999+00:00'
+date: '2026-03-09T05:27:51.773202+00:00'
+exported_at: '2026-03-09T05:27:53.335972+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/modular-diffusers
 structured_data:
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines
-updated_at: '2026-03-06T20:36:20.475550+00:00'
+updated_at: '2026-03-09T05:27:51.773202+00:00'
 url_hash: 41daf44b6dc98dcd36017056e6ae164014c217af
 ---
 

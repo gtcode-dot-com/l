@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-04T00:15:15.264505+00:00'
-exported_at: '2026-03-04T00:15:18.074803+00:00'
+date: '2026-03-09T05:27:35.508445+00:00'
+exported_at: '2026-03-09T05:27:36.867289+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/open-source-cyberstrikeai-deployed-in.html
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: Open-Source CyberStrikeAI Deployed in AI-Driven FortiGate Attacks Across 55
   Countries
-updated_at: '2026-03-04T00:15:15.264505+00:00'
+updated_at: '2026-03-09T05:27:35.508445+00:00'
 url_hash: 4dc0f31409d41e73503a962866ebb0dfc858565d
 ---
 

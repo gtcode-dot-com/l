@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T14:15:56.423265+00:00'
-exported_at: '2026-02-20T14:15:59.501796+00:00'
+date: '2026-03-09T05:28:11.471397+00:00'
+exported_at: '2026-03-09T05:28:14.096513+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/02/19/shipwrecks-sham-papers-and-false-flags-tracking-the-company-behind-it-all
@@ -26,9 +26,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/02/19/shipwrecks-sham-papers-and-false-flags-tracking-the-company-behind-it-all
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Shipwrecks, Sham Papers and False Flags: Tracking the Company Behind It All'
-updated_at: '2026-02-20T14:15:56.423265+00:00'
+updated_at: '2026-03-09T05:28:11.471397+00:00'
 url_hash: 64ef1158916eb375af3e33bd958ef32671f39ddd
 ---
 
@@ -88,9 +88,7 @@ In an
 [open letter](https://web.archive.org/web/20260218155106/https://marina.gov.ph/wp-content/uploads/2022/03/Circular-Letter-No.4502-Communication-From-The-Government-Of-The-Co-Operative-Republic-OfGuyana-Secretariat.pdf)
 , the IMO, together with the Guyana authorities, denounced the flag under which Eolika was sailing as false. They warned of a fraudulent company, the International Maritime Safety Agency of Guyana (IMSAG), for flagging vessels without authorisation from any flag state. Guyana’s police force said it would investigate “this rogue enterprise led by Captain Suniel Kumar”, together with Interpol.
 
-There is no suggestion that Sharma or IMSAG took part in the transport of illicit goods.
-
-The
+There is no suggestion that Sharma or IMSAG took part in the transport of illicit goods. The
 [IMO warning](https://web.archive.org/web/20260218155106/https://marina.gov.ph/wp-content/uploads/2022/03/Circular-Letter-No.4502-Communication-From-The-Government-Of-The-Co-Operative-Republic-OfGuyana-Secretariat.pdf)
 was issued in response to IMSAG supplying false paperwork, which then enables vessels to
 [operate without oversight](https://pages.marketintelligence.spglobal.com/14845-False-Flags-Maritime-State-of-Play-Report-2025-CD-Request.html)

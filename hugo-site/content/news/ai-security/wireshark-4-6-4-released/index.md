@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-05T22:15:17.442331+00:00'
-exported_at: '2026-03-05T22:15:20.711804+00:00'
+date: '2026-03-09T05:27:33.358670+00:00'
+exported_at: '2026-03-09T05:27:36.987260+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32758
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Wireshark 4.6.4 Released, (Mon, Mar 2nd)
-updated_at: '2026-03-05T22:15:17.442331+00:00'
+updated_at: '2026-03-09T05:27:33.358670+00:00'
 url_hash: 092c9e1eaf728e2a4736a4b32dd77f79c3b9b85a
 ---
 
