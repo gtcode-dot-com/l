@@ -572,7 +572,7 @@ This assessment would require significant revision if any of the following occur
 
 ## Sources and Notes
 
-[^star]: WTI/USOIL (CFDs on WTI Crude Oil, TVC), observed via TradingView at approximately 10:00 PM HST, Sunday March 8, 2026. Live market indication, not a settled exchange close or named futures contract. The Friday March 6 settled close of &#36;90.90 per barrel is sourced separately in note 1.
+[^star]: WTI/USOIL (CFDs on WTI Crude Oil, TVC), observed at approximately 6:45 PM HST, Sunday March 8, 2026, via TradingView. Live market indication, not a settled exchange close or named futures contract. The Friday March 6 settled close of &#36;90.90 per barrel is sourced separately in note 1.
 
 [^1]: Reuters, "Oil falls as US may intervene in futures market, issues waiver for Russian purchases," March 6, 2026. https://www.reuters.com/business/energy/oil-falls-us-may-intervene-futures-market-issues-waiver-russian-purchases-2026-03-06/
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-05T22:15:14.783286+00:00'
-exported_at: '2026-03-05T22:15:20.716840+00:00'
+date: '2026-03-09T05:39:14.149430+00:00'
+exported_at: '2026-03-09T05:39:17.182225+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32762
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Bruteforce Scans for CrushFTP , (Tue, Mar 3rd)
-updated_at: '2026-03-05T22:15:14.783286+00:00'
+updated_at: '2026-03-09T05:39:14.149430+00:00'
 url_hash: 0e7cccf0b38e61505f9072242d8976c66b67ab70
 ---
 

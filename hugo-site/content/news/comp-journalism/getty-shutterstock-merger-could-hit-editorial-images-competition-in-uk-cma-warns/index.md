@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T14:15:57.188335+00:00'
-exported_at: '2026-02-20T14:15:59.497269+00:00'
+date: '2026-03-09T05:39:50.924113+00:00'
+exported_at: '2026-03-09T05:39:56.695754+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/publishers/photography/getty-shutterstock-merger-could-hit-editorial-images-competition-in-uk-cma-warns
@@ -24,10 +24,10 @@ structured_data:
   original_source: https://pressgazette.co.uk/publishers/photography/getty-shutterstock-merger-could-hit-editorial-images-competition-in-uk-cma-warns
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Getty-Shutterstock merger could hit editorial images competition in UK, CMA
   warns
-updated_at: '2026-02-20T14:15:57.188335+00:00'
+updated_at: '2026-03-09T05:39:50.924113+00:00'
 url_hash: da88ce269bcee483144dfceb67248c5a565cd096
 ---
 

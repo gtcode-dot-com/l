@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T16:15:51.242073+00:00'
-exported_at: '2026-02-20T16:15:55.882238+00:00'
+date: '2026-03-09T05:39:53.129894+00:00'
+exported_at: '2026-03-09T05:39:56.692820+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/senior-former-policeman-casts-doubt-over-key-prince-harry-privacy-case-source
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/news/senior-former-policeman-casts-doubt-over-key-prince-harry-privacy-case-source
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Senior former policeman casts doubt over key Prince Harry privacy case source
-updated_at: '2026-02-20T16:15:51.242073+00:00'
+updated_at: '2026-03-09T05:39:53.129894+00:00'
 url_hash: 843ad3d34a90d991eb3ce14d9fb5f0e1b80e0676
 ---
 

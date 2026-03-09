@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T16:15:51.641077+00:00'
-exported_at: '2026-02-20T16:15:55.879802+00:00'
+date: '2026-03-09T05:39:54.358805+00:00'
+exported_at: '2026-03-09T05:39:56.689142+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/publishers/digital-journalism/sun-grows-video-audience-to-1bn-monthly-audience-with-25-new-shows
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/publishers/digital-journalism/sun-grows-video-audience-to-1bn-monthly-audience-with-25-new-shows
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Sun grows video audience to 1bn+ monthly views with 25 new shows
-updated_at: '2026-02-20T16:15:51.641077+00:00'
+updated_at: '2026-03-09T05:39:54.358805+00:00'
 url_hash: a256fef20c35d07137d9cb049ff93925772d0a7b
 ---
 

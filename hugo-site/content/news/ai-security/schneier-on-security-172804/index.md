@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-05T22:03:59.033333+00:00'
-exported_at: '2026-03-05T22:04:01.592037+00:00'
+date: '2026-03-09T05:39:13.137729+00:00'
+exported_at: '2026-03-09T05:39:17.186341+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/on-moltbook.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: On Moltbook
-updated_at: '2026-03-05T22:03:59.033333+00:00'
+updated_at: '2026-03-09T05:39:13.137729+00:00'
 url_hash: 172804912357aba344c58d0d984f30d0c68d3124
 ---
 
@@ -63,4 +63,4 @@ Tags:
 
 [Posted on March 3, 2026 at 7:04 AM](https://www.schneier.com/blog/archives/2026/03/on-moltbook.html)
 •
-[14 Comments](https://www.schneier.com/blog/archives/2026/03/on-moltbook.html#comments)
+[15 Comments](https://www.schneier.com/blog/archives/2026/03/on-moltbook.html#comments)

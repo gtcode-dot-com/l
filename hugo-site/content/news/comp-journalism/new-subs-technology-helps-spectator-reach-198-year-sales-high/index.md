@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T16:15:52.032066+00:00'
-exported_at: '2026-02-20T16:15:55.878224+00:00'
+date: '2026-03-09T05:39:54.977884+00:00'
+exported_at: '2026-03-09T05:39:56.585287+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/new-subs-technology-helps-spectator-reach-198-year-sales-high
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/new-subs-technology-helps-spectator-reach-198-year-sales-high
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: New subs technology helps Spectator reach 198-year sales high
-updated_at: '2026-02-20T16:15:52.032066+00:00'
+updated_at: '2026-03-09T05:39:54.977884+00:00'
 url_hash: 8776c8516f9756f2a43cb330497b0fb61b7c2fe0
 ---
 
