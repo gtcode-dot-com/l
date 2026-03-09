@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-08T02:51:50.737381+00:00'
-exported_at: '2026-03-08T02:51:53.747176+00:00'
+date: '2026-03-09T23:27:02.347495+00:00'
+exported_at: '2026-03-09T23:27:04.681920+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/openai-codex-security-scanned-12.html
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: OpenAI Codex Security Scanned 1.2 Million Commits and Found 10,561 High-Severity
   Issues
-updated_at: '2026-03-08T02:51:50.737381+00:00'
+updated_at: '2026-03-09T23:27:02.347495+00:00'
 url_hash: 8e8ecbeefb89973eafa73cf47b293532ef5976f3
 ---
 

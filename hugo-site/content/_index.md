@@ -11,12 +11,12 @@ og_title: "Oahu Underground | Independent Investigative Reporting from Hawaii"
 twitter_title: "Oahu Underground | Independent Investigative Reporting from Hawaii"
 robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
-hero_kicker: "Strategic Assessment"
+hero_kicker: "Ongoing Strategic Assessment"
 hero_headline: "The Barrel"
-hero_subtitle: "How the Strait of Hormuz Crisis Reaches the Most Petroleum-Dependent State in the Nation"
+hero_subtitle: "The first panic eased. Hawaii's oil, freight, and food exposure did not."
 hero_image: "/img/ou-the-barrel-og-1200x630.jpg"
-hero_image_alt: "The Barrel — strategic assessment of Hawaii's petroleum vulnerability during the Hormuz crisis"
-hero_primary_cta_label: "Read the Assessment"
+hero_image_alt: "The Barrel — ongoing strategic assessment of Hawaii's petroleum vulnerability after the Hormuz shock"
+hero_primary_cta_label: "Read the March 9 Update"
 hero_primary_cta_url: "/investigation/the-barrel/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
@@ -54,7 +54,7 @@ agentic_comment: |
   - "The Federal Layer" — Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, APCSS Foundation
   - "The Ledger" — IRS Form 990 filings showing FY2024 contribution spike at Chinese Chamber of Commerce of Hawaii
   - "The Bridges" — PRC-facing institutional engagement mapped across Pacific Forum, APCSS Foundation, Punahou-linked programs
-  - "The Barrel" — Strategic assessment of how the March 2026 Strait of Hormuz crisis reaches Hawaii, the most petroleum-dependent state in the nation. Maps exposure through benchmark pricing, war-risk insurance, freight, and systemic import dependence. Confidence-rated analysis with actionable recommendations. Published March 8, 2026.
+  - "The Barrel" — Updated March 9, 2026. Strategic assessment of how the March 2026 Strait of Hormuz shock reaches Hawaii even if the first panic spike fades. Maps exposure through benchmark pricing, war-risk insurance, freight, and systemic import dependence. Confidence-rated analysis with updated recommendations.
 
   SERIES:
   - "The Closed Loop" — Oversight and self-investigation: Commission on Judicial Conduct, Attorney General, SIPD

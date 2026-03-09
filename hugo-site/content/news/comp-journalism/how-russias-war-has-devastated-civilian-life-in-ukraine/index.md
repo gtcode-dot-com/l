@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-24T22:15:51.438858+00:00'
-exported_at: '2026-02-24T22:15:55.101566+00:00'
+date: '2026-03-09T23:27:39.325878+00:00'
+exported_at: '2026-03-09T23:27:42.813119+00:00'
 feed: https://www.bellingcat.com/feed/
 language: en
 source_url: https://www.bellingcat.com/news/2026/02/24/how-russias-war-has-devastated-civilian-life-in-ukraine
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://www.bellingcat.com/news/2026/02/24/how-russias-war-has-devastated-civilian-life-in-ukraine
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: How Russia’s War Has Devastated Civilian Life in Ukraine
-updated_at: '2026-02-24T22:15:51.438858+00:00'
+updated_at: '2026-03-09T23:27:39.325878+00:00'
 url_hash: 9fe4a4f5348098ac5b71ff8c251260afc4cc6352
 ---
 

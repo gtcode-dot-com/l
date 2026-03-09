@@ -33,8 +33,12 @@
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
         {{ end }}
         {{ if and .Lastmod (ne .Lastmod .Date) }}
+          {{- $updatedDatetime := .Lastmod.Format "2006-01-02" -}}
+          {{- with .Params.lastmod -}}
+            {{- $updatedDatetime = (time.AsTime .).Format "2006-01-02" -}}
+          {{- end -}}
           <span>&bull;</span>
-          <span>Updated: <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Params.modified_display | default (.Lastmod.Format "January 2, 2006") }}</time></span>
+          <span>Updated: <time datetime="{{ $updatedDatetime }}">{{ .Params.modified_display | default (.Lastmod.Format "January 2, 2006") }}</time></span>
         {{ end }}
       </div>
     </header>

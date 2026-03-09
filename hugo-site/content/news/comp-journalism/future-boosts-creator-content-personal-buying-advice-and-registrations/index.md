@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-24T22:15:52.646723+00:00'
-exported_at: '2026-02-24T22:15:55.095398+00:00'
+date: '2026-03-09T23:27:41.639979+00:00'
+exported_at: '2026-03-09T23:27:42.804895+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/publishers/digital-journalism/future-boosts-creator-content-personal-buying-advice-and-registrations
@@ -23,9 +23,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/publishers/digital-journalism/future-boosts-creator-content-personal-buying-advice-and-registrations
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Future boosts creator content, personal buying advice and registrations
-updated_at: '2026-02-24T22:15:52.646723+00:00'
+updated_at: '2026-03-09T23:27:41.639979+00:00'
 url_hash: 37ede2081491e25c1173095d6bbade7b86ae0299
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-08T02:51:50.939174+00:00'
-exported_at: '2026-03-08T02:51:53.745107+00:00'
+date: '2026-03-09T23:27:02.717134+00:00'
+exported_at: '2026-03-09T23:27:04.679366+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Anthropic Finds 22 Firefox Vulnerabilities Using Claude Opus 4.6 AI Model
-updated_at: '2026-03-08T02:51:50.939174+00:00'
+updated_at: '2026-03-09T23:27:02.717134+00:00'
 url_hash: 90b28db64afccfc07c4db9fb88c28b5e731e7da9
 ---
 

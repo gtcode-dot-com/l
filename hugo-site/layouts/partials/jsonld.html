@@ -42,12 +42,15 @@
 {{- /* Inject or override dateModified from .Lastmod (single source of truth).
      Skip section/list pages (e.g. _index.md) whose structured_data_graph may
      contain dateModified for multiple child articles in hasPart. */ -}}
-{{- if and (not .Lastmod.IsZero) .IsPage -}}
-  {{- $lastmodISO := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+{{- $pageModifiedISO := "" -}}
+{{- with .Params.article_modified_time }}{{ $pageModifiedISO = . }}{{ end -}}
+{{- if and (eq $pageModifiedISO "") .Params.lastmod }}{{ $pageModifiedISO = (time.AsTime .Params.lastmod).Format "2006-01-02T15:04:05Z07:00" }}{{ end -}}
+{{- if and (eq $pageModifiedISO "") (not .Lastmod.IsZero) .IsPage }}{{ $pageModifiedISO = .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}{{ end -}}
+{{- if and (ne $pageModifiedISO "") .IsPage -}}
   {{- if findRE "\"dateModified\"" $jsonText -}}
-    {{- $jsonText = replaceRE "\"dateModified\"\\s*:\\s*\"[^\"]*\"" (printf "\"dateModified\":\"%s\"" $lastmodISO) $jsonText -}}
+    {{- $jsonText = replaceRE "\"dateModified\"\\s*:\\s*\"[^\"]*\"" (printf "\"dateModified\":\"%s\"" $pageModifiedISO) $jsonText -}}
   {{- else if findRE "\"datePublished\"" $jsonText -}}
-    {{- $jsonText = replaceRE "(\"datePublished\"\\s*:\\s*\"[^\"]*\")" (printf "${1},\"dateModified\":\"%s\"" $lastmodISO) $jsonText -}}
+    {{- $jsonText = replaceRE "(\"datePublished\"\\s*:\\s*\"[^\"]*\")" (printf "${1},\"dateModified\":\"%s\"" $pageModifiedISO) $jsonText -}}
   {{- end -}}
 {{- end -}}
 <script type="application/ld+json">{{ $jsonText | safeJS }}</script>

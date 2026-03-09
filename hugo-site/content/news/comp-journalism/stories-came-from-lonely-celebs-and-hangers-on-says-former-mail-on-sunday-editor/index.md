@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-24T22:15:51.804664+00:00'
-exported_at: '2026-02-24T22:15:55.099272+00:00'
+date: '2026-03-09T23:27:41.035893+00:00'
+exported_at: '2026-03-09T23:27:42.810473+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/stories-came-from-lonely-celebs-and-hangers-on-says-former-mail-on-sunday-editor
@@ -26,17 +26,17 @@ structured_data:
   original_source: https://pressgazette.co.uk/news/stories-came-from-lonely-celebs-and-hangers-on-says-former-mail-on-sunday-editor
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Stories came from lonely celebs and ‘hangers on’ says former Mail on Sunday
   editor
-updated_at: '2026-02-24T22:15:51.804664+00:00'
+updated_at: '2026-03-09T23:27:41.035893+00:00'
 url_hash: d1e0bfc3d4323f1025bdca7a0521b8809db4b691
 ---
 
-![Daily Mail editor emeritus Peter Wright in black tie speaking at a lectern microphone](https://pressgazette.co.uk/wp-content/uploads/sites/7/styles/node_image/public/peter_wright.png)
+![Mail on Sunday cuts](https://pressgazette.co.uk/wp-content/uploads/sites/7/2023/05/MOS-30-April-e1683187781355-1038x778.jpg)
 
 
-Daily Mail editor emeritus Peter Wright
+The Mail on Sunday, 30 April 2023
 
 Celebrities are often lonely and confide in journalists, according to former Mail on Sunday editor Peter Wright who said
 [Prince Harry’s](https://pressgazette.co.uk/subject/prince-harry/)
