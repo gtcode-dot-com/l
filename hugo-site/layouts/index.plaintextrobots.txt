@@ -1,4 +1,27 @@
 {{- $siteRoot := strings.TrimRight "/" (replace .Site.BaseURL "http://" "https://") -}}
+{{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
+{{- $newsWindowDays := int (.Site.Params.news_sitemap_window_days | default 2) -}}
+{{- if lt $newsWindowDays 1 -}}
+  {{- $newsWindowDays = 2 -}}
+{{- end -}}
+{{- $cutoff := now.AddDate 0 0 (mul -1 $newsWindowDays) -}}
+{{- $newsScratch := newScratch -}}
+{{- $newsScratch.Set "has_entries" false -}}
+{{- range sort .Site.RegularPages "Date" "desc" -}}
+  {{- if not ($newsScratch.Get "has_entries") -}}
+    {{- if eq .Section "news" -}}
+      {{- $robots := lower (printf "%v" .Params.robots) -}}
+      {{- $isNoindex := in $robots "noindex" -}}
+      {{- $isSyndicatedNews := and .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}
+      {{- $published := .PublishDate -}}
+      {{- if $published.IsZero }}{{ $published = .Date }}{{ end -}}
+      {{- if $published.IsZero }}{{ $published = .Lastmod }}{{ end -}}
+      {{- if and (not $isNoindex) (not $isSyndicatedNews) (not $published.IsZero) (ge $published.Unix $cutoff.Unix) -}}
+        {{- $newsScratch.Set "has_entries" true -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 User-agent: *
 Allow: /
 Allow: /agent.txt
@@ -24,7 +47,9 @@ User-agent: Claude-Web
 Allow: /
 
 Sitemap: {{ $siteRoot }}/sitemap.xml
+{{- if $newsScratch.Get "has_entries" }}
 Sitemap: {{ $siteRoot }}/news-sitemap.xml
+{{- end }}
 {{- if .Site.Params.robots_crawl_delay_enabled }}
 
 Crawl-delay: {{ .Site.Params.robots_crawl_delay_seconds | default 1 }}

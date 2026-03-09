@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-06T22:15:14.561114+00:00'
-exported_at: '2026-03-06T22:15:19.738947+00:00'
+date: '2026-03-09T18:05:01.053317+00:00'
+exported_at: '2026-03-09T18:05:03.220171+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/manipulating-ai-summarization-features.html
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Manipulating AI Summarization Features
-updated_at: '2026-03-06T22:15:14.561114+00:00'
+updated_at: '2026-03-09T18:05:01.053317+00:00'
 url_hash: 553d4a073cb138678a5c95139b00ba7cfcb6e9a2
 ---
 

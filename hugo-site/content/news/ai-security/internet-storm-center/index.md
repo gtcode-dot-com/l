@@ -7,111 +7,97 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-12-21T12:03:12.707074+00:00'
-exported_at: '2025-12-21T12:03:15.311721+00:00'
+date: '2026-03-09T18:05:02.050317+00:00'
+exported_at: '2026-03-09T18:05:03.214363+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
-source_url: https://isc.sans.edu/diary/rss/32580
+source_url: https://isc.sans.edu/diary/rss/32766
 structured_data:
   about: []
   author: ''
-  description: 'DLLs & TLS Callbacks, Author: Didier Stevens'
-  headline: DLLs &#x26; TLS Callbacks, (Fri, Dec 19th)
+  description: 'Want More XWorm?, Author: Xavier Mertens'
+  headline: Want More XWorm&#x3f;, (Wed, Mar 4th)
   inLanguage: en
   keywords: []
   main_image: ''
-  original_source: https://isc.sans.edu/diary/rss/32580
+  original_source: https://isc.sans.edu/diary/rss/32766
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
-title: DLLs &#x26; TLS Callbacks, (Fri, Dec 19th)
-updated_at: '2025-12-21T12:03:12.707074+00:00'
-url_hash: eb95a27df31d6c2303f98eea86896c29ed3e2c63
+    name: GTCode
+title: Want More XWorm&#x3f;, (Wed, Mar 4th)
+updated_at: '2026-03-09T18:05:02.050317+00:00'
+url_hash: 44e38bbe4128ea69a72bd888c599a4e5da7cf7fe
 ---
 
-Xavier's diary entry "
-[Abusing DLLs EntryPoint for the Fun](https://isc.sans.edu/diary/Abusing+DLLs+EntryPoint+for+the+Fun/32562/)
-" inspired me to do some tests with TLS Callbacks and DLLs.
+And another XWorm[
+[1](https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm)
+] wave in the wild! This malware family is not new and heavily spread but delivery techniques always evolve and deserve to be described to show you how threat actors can be imaginative! This time, we are facing another piece of multi-technology malware.
 
-TLS stands for Thread Local Storage. TLS Callbacks are an execution mechanism in Windows PE files that lets code run automatically when a process or thread starts, before the program’s normal entry point is reached. I've done tests in the past with EXEs and TLS Callbacks, but never with DLLs.
+Here is a quick overview:
 
-In Windows, TLS is used to give each thread its own copy of certain variables. To support this, the PE format has a TLS directory (IMAGE\_TLS\_DIRECTORY) that describes:
+![](https://isc.sans.edu/diaryimages/images/isc-20260304-1.png)
 
-* Where TLS data is stored
-* How large it is
-* A list of callback functions
+The Javascript is a classic obfuscated one:
 
-My
-[pecheck.py](https://github.com/DidierStevens/DidierStevensSuite/blob/master/pecheck.py)
-tool lists TLS callbacks:
+![](https://isc.sans.edu/diaryimages/images/isc-20260304-2.png)
 
-![](https://isc.sans.edu/diaryimages/images/20251217-193116.png)
+No need to try to analyze it, just let it run in a sandbox and see its magic. It will drop a PowerShell script in a temporary directory (“C:\Temp\ps\_5uGUQcco8t5W\_1772542824586.ps1
+*”).*
+This loader will decode (Base64 + XOR) another payload that invokes another piece of PowerShell in memory:
 
-I used the following code for a DLL with a TLS callback:
+![](https://isc.sans.edu/diaryimages/images/isc-20260304-3.png)
+
+Because the last payload is XOR-encrypted, it is not obfuscated and easy to understand. The DLL exports a function called “ProcessHollowing” (nice name, btw) and acts as a loader. It inject the XWorm client in the .Net compiler process…
+
+Here is the extracted config:
 
 ```
-#include <windows.h>
-
-// Declare TLS callback section
-#pragma section(".CRT$XLB", read)
-
-// TLS callback function
-void NTAPI MyTlsCallback(PVOID hModule, DWORD dwReason, PVOID pReserved)
 {
-    if (dwReason == DLL_PROCESS_ATTACH)
-    {
-        MessageBoxA(NULL, "TLS Callback fired", "TLS", MB_OK);
-    }
-}
-
-// Force linker to include TLS directory symbol
-#ifdef _WIN64
-#pragma comment(linker, "/INCLUDE:_tls_used")
-#pragma comment(linker, "/INCLUDE:tls_callback_func")
-#else
-#pragma comment(linker, "/INCLUDE:__tls_used")
-#pragma comment(linker, "/INCLUDE:_tls_callback_func")
-#endif
-
-// Place pointer in TLS callback section (extern "C" prevents mangling)
-extern "C" __declspec(allocate(".CRT$XLB"))
-PIMAGE_TLS_CALLBACK tls_callback_func = MyTlsCallback;
-
-// Standard DllMain
-BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)
-{
-    if (ul_reason_for_call == DLL_PROCESS_ATTACH)
-        MessageBoxA(NULL, "DllMain fired", "DllMain", MB_OK);
-    return TRUE;
+    "c2": [
+        "204[.]10[.]160[.]190:7003"
+    ],
+    "attr": {
+        "install_file": "USB.exe"
+    },
+    "keys": [
+        {
+            "key": "aes_key",
+            "kind": "aes.plain",
+            "value": "XAorWEAzx4+ic89KWd910w=="
+        }
+    ],
+    "rule": "Xworm",
+    "mutex": [
+        "Cqu1F0NxohroKG5U"
+    ],
+    "family": "xworm",
+    "version": "XWorm V6.4"
 }
 ```
 
-And compiled it with Visual Studio C++:
+Do you recognize the C2 IP address? It's the same as the one detected in my latest diary![
+[2](https://isc.sans.edu/diary/Fake%20Fedex%20Email%20Delivers%20Donuts!/32754)
+]
 
-```
-cl /nologo /EHsc /LD tls_dll.cpp user32.lib
-```
+And some IOC's:
 
-I used rundll32 to load the DLL.
+| File | SHA256 |
+| --- | --- |
+| Inv-4091-CBM-4091-CUSTOM-Packing\_List.js | 5140b02a05b7e8e0c0afbb459e66de4d74f79665c1d83419235ff0cdcf046e9c |
+| ps\_5uGUQcco8t5W\_1772542824586.ps1 | 5a3d33efaaff4ef7b7d473901bd1eec76dcd9cf638213c7d1d3b9029e2aa99a4 |
+| MAD.dll | af3919de04454af9ed2ffa7f34e4b600b3ce24168f745dba4c372eb8bcc22a21 |
+| payload.exe (XWorm) | 58e38fffb78964300522d89396f276ae0527def8495126ff036e57f0e8d3c33b |
 
-The callback function got executed:
+[1]
+<https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm>
 
-![](https://isc.sans.edu/diaryimages/images/20251217-193545.png)
+[2]
+<https://isc.sans.edu/diary/Fake%20Fedex%20Email%20Delivers%20Donuts!/32754>
 
-before the DllMain function:
+Xavier Mertens (@xme)
 
-![](https://isc.sans.edu/diaryimages/images/20251217-193611.png)
+Xameco
 
-This is something to take into account when performing static analysis: next to looking at DllMain and exported functions, look also at TLS callbacks (if any).
+Senior ISC Handler - Freelance Cyber Security Consultant
 
-And it's also important when performing dynamic analysis: when using a debugger, make sure to check how it is configured:
-
-![](https://isc.sans.edu/diaryimages/images/20251217-194453.png)
-
-This debugger is configured to break on TLS callbacks: thus these callbacks will not execute unbeknownst to you.
-
-Didier Stevens
-
-Senior handler
-
-[blog.DidierStevens.com](http://blog.DidierStevens.com)
+[PGP Key](https://keybase.io/xme/key.asc)
