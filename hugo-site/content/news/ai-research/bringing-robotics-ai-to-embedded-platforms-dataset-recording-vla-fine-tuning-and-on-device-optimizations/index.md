@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-06T20:36:20.236137+00:00'
-exported_at: '2026-03-06T20:36:23.029345+00:00'
+date: '2026-03-09T04:45:33.852993+00:00'
+exported_at: '2026-03-09T04:45:35.152741+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms
 structured_data:
@@ -25,7 +25,7 @@ structured_data:
     name: GTCode
 title: 'Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning,
   and On‑Device Optimizations'
-updated_at: '2026-03-06T20:36:20.236137+00:00'
+updated_at: '2026-03-09T04:45:33.852993+00:00'
 url_hash: e8788bf50532d146843477ca621db186d25a88e5
 ---
 

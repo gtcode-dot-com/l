@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-05T22:15:36.399790+00:00'
-exported_at: '2026-03-05T22:15:38.730336+00:00'
+date: '2026-03-09T04:45:32.391835+00:00'
+exported_at: '2026-03-09T04:45:35.169736+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/building-custom-model-provider-for-strands-agents-with-llms-hosted-on-sagemaker-ai-endpoints
@@ -31,7 +31,7 @@ structured_data:
     name: GTCode
 title: Building custom model provider for Strands Agents with LLMs hosted on SageMaker
   AI endpoints
-updated_at: '2026-03-05T22:15:36.399790+00:00'
+updated_at: '2026-03-09T04:45:32.391835+00:00'
 url_hash: 482e7f567ca261450bf26e57a7df4733c7b9192d
 ---
 

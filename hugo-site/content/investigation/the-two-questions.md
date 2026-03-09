@@ -11,6 +11,7 @@ author: "Ekewaka Lono"
 published_display: "February 23, 2026"
 type: "investigation"
 
+homepage_exclude: true
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-two-questions/"

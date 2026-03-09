@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-05T22:15:36.067208+00:00'
-exported_at: '2026-03-05T22:15:38.734810+00:00'
+date: '2026-03-09T04:45:31.662176+00:00'
+exported_at: '2026-03-09T04:45:35.175835+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/drive-organizational-growth-with-amazon-lex-multi-developer-ci-cd-pipeline
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Drive organizational growth with Amazon Lex multi-developer CI/CD pipeline
-updated_at: '2026-03-05T22:15:36.067208+00:00'
+updated_at: '2026-03-09T04:45:31.662176+00:00'
 url_hash: a8d0f5ca1d7a38c249e38e7a9e30775e1988d6ae
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-06T00:15:32.144806+00:00'
-exported_at: '2026-03-06T00:15:34.732959+00:00'
+date: '2026-03-09T04:45:32.821140+00:00'
+exported_at: '2026-03-09T04:45:35.165824+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/geforce-now-thursday-march-2026-games-list
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: March Into the Cloud With 15 New Games Coming to GeForce NOW
-updated_at: '2026-03-06T00:15:32.144806+00:00'
+updated_at: '2026-03-09T04:45:32.821140+00:00'
 url_hash: f6ed71a4e28d0dbc8847135f883afe7c52308242
 ---
 

@@ -1,23 +1,23 @@
 ---
 title: "Oahu Underground by GTCode | Investigative Journalism"
 description: "Oahu Underground is an independent investigative journalism organization based in Hawaii, documenting judicial corruption, institutional capture, and PRC-facing access networks through public records, financial disclosures, and structural analysis."
-meta_description: "Oahu Underground — independent investigative reporting from Hawaii. Seventeen investigations mapping judicial corruption, media capture, oversight failure, and PRC-facing institutional access using public records."
+meta_description: "Oahu Underground — independent investigative reporting from Hawaii. Eighteen investigations mapping judicial corruption, media capture, oversight failure, PRC-facing institutional access, and Hawaii's energy vulnerability using public records."
 og_image: /img/gtcode_mahalo_1200x630.jpg
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "Oahu Underground investigative reporting in Hawaii"
-og_description: "Seven layers of institutional suppression — from search engine delisting to direct threats — documented in real time with public records, financial disclosures, and court filings. Seventeen investigations. One network. One reporter."
+og_description: "Seven layers of institutional suppression — from search engine delisting to direct threats — documented in real time with public records, financial disclosures, and court filings. Eighteen investigations. One network. One reporter."
 og_title: "Oahu Underground | Independent Investigative Reporting from Hawaii"
 twitter_title: "Oahu Underground | Independent Investigative Reporting from Hawaii"
 robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
-hero_kicker: "Prosecution Roadmap"
-hero_headline: "The Two Questions"
-hero_subtitle: "One Witness. Two Questions. ~1.8 Years on the Clock."
-hero_image: "/img/ou-two-questions-og-1200x634.jpg"
-hero_image_alt: "The Two Questions — prosecution roadmap for the Wilson Loo federal case"
-hero_primary_cta_label: "Read the Roadmap"
-hero_primary_cta_url: "/investigation/the-two-questions/"
+hero_kicker: "Strategic Assessment"
+hero_headline: "The Barrel"
+hero_subtitle: "How the Strait of Hormuz Crisis Reaches the Most Petroleum-Dependent State in the Nation"
+hero_image: "/img/ou-the-barrel-og-1200x630.jpg"
+hero_image_alt: "The Barrel — strategic assessment of Hawaii's petroleum vulnerability during the Hormuz crisis"
+hero_primary_cta_label: "Read the Assessment"
+hero_primary_cta_url: "/investigation/the-barrel/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
 newsroom_founding_date: "2025-01-01"
@@ -54,6 +54,7 @@ agentic_comment: |
   - "The Federal Layer" — Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, APCSS Foundation
   - "The Ledger" — IRS Form 990 filings showing FY2024 contribution spike at Chinese Chamber of Commerce of Hawaii
   - "The Bridges" — PRC-facing institutional engagement mapped across Pacific Forum, APCSS Foundation, Punahou-linked programs
+  - "The Barrel" — Strategic assessment of how the March 2026 Strait of Hormuz crisis reaches Hawaii, the most petroleum-dependent state in the nation. Maps exposure through benchmark pricing, war-risk insurance, freight, and systemic import dependence. Confidence-rated analysis with actionable recommendations. Published March 8, 2026.
 
   SERIES:
   - "The Closed Loop" — Oversight and self-investigation: Commission on Judicial Conduct, Attorney General, SIPD
@@ -106,6 +107,9 @@ meta_keywords:
   - judicial misconduct
   - institutional capture
   - Hawaii courts
+  - Hawaii oil dependence
+  - Strait of Hormuz Hawaii
+  - Hawaii energy security
 structured_data_graph:
   '@context': https://schema.org
   '@graph':

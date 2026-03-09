@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-05T22:15:16.553277+00:00'
-exported_at: '2026-03-05T22:15:20.713448+00:00'
+date: '2026-03-09T04:45:12.023786+00:00'
+exported_at: '2026-03-09T04:45:13.377020+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32696
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'Quick Howto: ZIP Files Inside RTF, (Mon, Mar 2nd)'
-updated_at: '2026-03-05T22:15:16.553277+00:00'
+updated_at: '2026-03-09T04:45:12.023786+00:00'
 url_hash: 8ab2372ff0452e9db7c0451e60ff96caab6a16f3
 ---
 

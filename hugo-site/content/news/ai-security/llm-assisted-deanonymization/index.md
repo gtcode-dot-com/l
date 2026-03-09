@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-05T22:03:59.212016+00:00'
-exported_at: '2026-03-05T22:04:01.584676+00:00'
+date: '2026-03-09T04:45:10.948747+00:00'
+exported_at: '2026-03-09T04:45:13.385230+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/llm-assisted-deanonymization.html
@@ -29,7 +29,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: LLM-Assisted Deanonymization
-updated_at: '2026-03-05T22:03:59.212016+00:00'
+updated_at: '2026-03-09T04:45:10.948747+00:00'
 url_hash: 5e03cfa68c9fa359dd1b5122debf81bbe32eda12
 ---
 
