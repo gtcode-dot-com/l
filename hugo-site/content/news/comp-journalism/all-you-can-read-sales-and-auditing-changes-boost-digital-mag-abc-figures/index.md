@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T20:15:47.436333+00:00'
-exported_at: '2026-02-20T20:15:49.691876+00:00'
+date: '2026-03-09T05:31:09.025739+00:00'
+exported_at: '2026-03-09T05:31:11.835906+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/all-you-can-read-sales-and-auditing-changes-boost-digital-mag-abc-figures
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/all-you-can-read-sales-and-auditing-changes-boost-digital-mag-abc-figures
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: All you can read sales and auditing changes boost digital mag ABC figures
-updated_at: '2026-02-20T20:15:47.436333+00:00'
+updated_at: '2026-03-09T05:31:09.025739+00:00'
 url_hash: ecec5a825bca661e73eba607dcd2121459fad361
 ---
 

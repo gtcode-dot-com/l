@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-04T00:15:15.566888+00:00'
-exported_at: '2026-03-04T00:15:18.072118+00:00'
+date: '2026-03-09T05:30:34.306578+00:00'
+exported_at: '2026-03-09T05:30:36.919452+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/ai-agents-next-wave-identity-dark.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'AI Agents: The Next Wave Identity Dark Matter - Powerful, Invisible, and Unmanaged'
-updated_at: '2026-03-04T00:15:15.566888+00:00'
+updated_at: '2026-03-09T05:30:34.306578+00:00'
 url_hash: b4123d87dd227bcee21c5a82dab133bfd3b39993
 ---
 

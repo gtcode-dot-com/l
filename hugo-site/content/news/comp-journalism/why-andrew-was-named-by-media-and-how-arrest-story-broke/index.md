@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T14:15:56.808689+00:00'
-exported_at: '2026-02-20T14:15:59.500099+00:00'
+date: '2026-03-09T05:31:10.289974+00:00'
+exported_at: '2026-03-09T05:31:11.832769+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media_law/why-andrew-named
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/media_law/why-andrew-named
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Prince Andrew arrest: How story broke and why he was named by media'
-updated_at: '2026-02-20T14:15:56.808689+00:00'
+updated_at: '2026-03-09T05:31:10.289974+00:00'
 url_hash: eea528efb7ece0a856b05ac6d303310e297d27fa
 ---
 
@@ -87,6 +87,24 @@ At around midday on Thursday King Charles issued a statement referring explicitl
 
 [Other recent high-profile exceptions of being named upon arrest included the case of comedian Russell Brand](https://pressgazette.co.uk/comment-analysis/russell-brand-met-police-statement-privacy-rules/)
 , who was arrested in 2023 on suspicion of sexual assaults (and has since been charged with offences including rape and sexual assault and has pleaded not guilty). The Met Police put out a statement that did not name Brand but was positioned in direct response to an investigation by Channel 4 Dispatches and The Sunday Times. The allegations and police complaint were already public knowledge, meaning there was a low privacy risk.
+
+## How Reuters bagged ‘lucky shot’ of former prince leaving custody
+
+Update (23/2/26): Reuters photographer Phil Noble captured a photo later in the day on Thursday which found its way on to newspaper front pages around the world – featuring Andrew being driven home after his police interview.
+
+Acting on a tip, Noble headed t0 the town of Aylesham on the morning Andrew was arrested (one of 20 possible police stations in the Thames Valley area where he could have been taken), Reuters reports.
+
+As darkness fell Noble wondered whether he was at the wrong place (the station was more than an hour’s drive from the Sandringham estate).
+
+He saw two vehicles leaving at high speed and aimed his camera and flash at the second one.
+
+Out of six frames: two were blank, two showed the police in the front, one was out of focus and one “captured the unprecedented nature of the moment”.
+
+Noble said: “You can plan and use your experience and know roughly what you need to do, but still everything needs to align. When you’re doing car shots it’s more luck than judgment.”
+
+Red eye caused by the flash is usually something photographers try to avoid, but on this occasion it added rather demonic element of drama to the shot.
+
+VIDEO
 
 Email
 **[pged@pressgazette.co.uk](mailto:%20pged@pressgazette.co.uk)**

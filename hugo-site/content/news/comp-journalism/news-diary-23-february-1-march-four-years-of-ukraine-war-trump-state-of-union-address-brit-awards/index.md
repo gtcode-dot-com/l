@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T18:15:50.085657+00:00'
-exported_at: '2026-02-20T18:15:52.346703+00:00'
+date: '2026-03-09T05:31:07.198840+00:00'
+exported_at: '2026-03-09T05:31:11.841816+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/news-diary-23-february-1-march-four-years-of-ukraine-war-trump-state-of-union-address-brit-awards
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://pressgazette.co.uk/news/news-diary-23-february-1-march-four-years-of-ukraine-war-trump-state-of-union-address-brit-awards
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'News diary 23 February – 1 March: Four years of Ukraine war, Trump State of
   Union address, Brit Awards'
-updated_at: '2026-02-20T18:15:50.085657+00:00'
+updated_at: '2026-03-09T05:31:07.198840+00:00'
 url_hash: 6a5b5b2198ba0a6842eaab0df8a82fd3b7d040c5
 ---
 

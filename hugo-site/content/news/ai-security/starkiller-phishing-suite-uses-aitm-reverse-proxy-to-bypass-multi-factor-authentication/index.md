@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-04T00:15:15.753892+00:00'
-exported_at: '2026-03-04T00:15:18.068501+00:00'
+date: '2026-03-09T05:30:34.621414+00:00'
+exported_at: '2026-03-09T05:30:36.917075+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html
@@ -27,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication
-updated_at: '2026-03-04T00:15:15.753892+00:00'
+updated_at: '2026-03-09T05:30:34.621414+00:00'
 url_hash: a2a4288c7e9590630fb2ed370c45c1a45df1ed9a
 ---
 

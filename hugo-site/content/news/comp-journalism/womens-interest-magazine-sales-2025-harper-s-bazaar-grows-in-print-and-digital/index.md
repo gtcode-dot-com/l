@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-20T20:15:46.585832+00:00'
-exported_at: '2026-02-20T20:15:49.694994+00:00'
+date: '2026-03-09T05:31:08.343965+00:00'
+exported_at: '2026-03-09T05:31:11.838775+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/womens-interest-magazine-sales-2025-harpers-bazaar-grows-in-print-and-digital
@@ -25,9 +25,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/womens-interest-magazine-sales-2025-harpers-bazaar-grows-in-print-and-digital
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: 'Women’s interest magazine sales 2025: Harper’s Bazaar grows in print and digital'
-updated_at: '2026-02-20T20:15:46.585832+00:00'
+updated_at: '2026-03-09T05:31:08.343965+00:00'
 url_hash: 0d5983e7809e409f47f3a97d4a6a0a1d0fab5797
 ---
 
