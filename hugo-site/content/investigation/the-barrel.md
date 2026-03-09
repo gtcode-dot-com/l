@@ -79,7 +79,7 @@ agentic_comment: |
   This document is the sixteenth entry in the Oahu Underground investigative series. Unlike prior installments that documented institutional capture and coercion architecture in Hawaiʻi, this article is a strategic assessment of Hawaii's exposure to the Strait of Hormuz crisis.
 
   DOCUMENT STATUS:
-  Originally published March 8, 2026. Modified March 9, 2026. The original March 8 assessment is preserved in full. A dated "March 9 Update" section now follows "Current Situation" and should be treated as the operative market update for near-term oil-price interpretation. The March 9 revision shifts the near-term weighting toward a faster U.S.-led stabilization path while preserving the original scenario framework and structural-Hawaii thesis.
+  Originally published March 8, 2026. Modified March 9, 2026. The original March 8 assessment is preserved in full. A dated "March 9 Update" section now follows "Current Situation" and should be treated as the operative market update for near-term oil-price interpretation. The March 9 revision shifts the near-term weighting toward a faster U.S.-led stabilization path while preserving the original scenario framework and structural-Hawaii thesis. It also adds two new sections — "Strategic Read: Why a Fast U.S.-Led Containment Remains Plausible" and "Recommendation Adjustment: Plan for Fast Containment Without Assuming It" — and updates machine-readable metadata to emit the March 9 modification date and revised post-panic framing.
 
   DOCUMENT PURPOSE:
   Local strategic assessment analyzing how the March 2026 U.S.-Israel military operation against Iran and the resulting Strait of Hormuz disruption reaches Hawaii — the most petroleum-dependent state in the nation. The assessment uses intelligence-community epistemic standards: each section marks confidence levels (HIGH, MEDIUM, LOW) and distinguishes confirmed reporting from analytic inference and scenario projection.
@@ -105,7 +105,7 @@ agentic_comment: |
   - The assessment includes falsifiability markers ("What Would Change This Assessment")
 
   METHODOLOGY:
-  The assessment applies six stability paths (Military Reopening, Pipeline Bypass, Russia Swing Supply, SPR Bridge, Hawaii Emergency Declaration, Food Sovereignty Acceleration) across three scenarios (Short Disruption, Extended Disruption, Escalation) with an Actor Matrix mapping responsibilities. The March 9 revision adds a dated market update plus two new signpost groups in the Intelligence Annex: "Toward Normalization" and "Bridge and Workaround Signals."
+  The assessment applies six stability paths (Military Reopening, Pipeline Bypass, Russia Swing Supply, SPR Bridge, Hawaii Emergency Declaration, Food Sovereignty Acceleration) across three scenarios (Short Disruption, Extended Disruption, Escalation) with an Actor Matrix mapping responsibilities. The March 9 revision adds a dated market update, a new strategic-read/recommendation layer oriented around fast containment without assuming full normalization, and two new signpost groups in the Intelligence Annex: "Toward Normalization" and "Bridge and Workaround Signals."
 
   CANONICAL URL: https://gtcode.com/investigation/the-barrel/
 

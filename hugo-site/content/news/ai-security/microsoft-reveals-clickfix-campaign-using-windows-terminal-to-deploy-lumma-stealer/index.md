@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-07T04:00:07.047437+00:00'
-exported_at: '2026-03-07T04:00:09.835272+00:00'
+date: '2026-03-09T23:40:00.998362+00:00'
+exported_at: '2026-03-09T23:40:02.585856+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/microsoft-reveals-clickfix-campaign.html
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: Microsoft Reveals ClickFix Campaign Using Windows Terminal to Deploy Lumma
   Stealer
-updated_at: '2026-03-07T04:00:07.047437+00:00'
+updated_at: '2026-03-09T23:40:00.998362+00:00'
 url_hash: dff65c3e89fb7085b58e9132cbd00441bbd3ba23
 ---
 

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-23T16:15:41.320412+00:00'
-exported_at: '2026-02-23T16:15:43.531667+00:00'
+date: '2026-03-09T23:40:39.610574+00:00'
+exported_at: '2026-03-09T23:40:42.482130+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/news/police-media-guidelines-updated
@@ -25,10 +25,10 @@ structured_data:
   original_source: https://pressgazette.co.uk/news/police-media-guidelines-updated
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Post Leveson chill in police-press relations thaws after 15 years with new
   rulebook
-updated_at: '2026-02-23T16:15:41.320412+00:00'
+updated_at: '2026-03-09T23:40:39.610574+00:00'
 url_hash: 75bffb83461a483bf0d9bea298a745e8b79ffa10
 ---
 

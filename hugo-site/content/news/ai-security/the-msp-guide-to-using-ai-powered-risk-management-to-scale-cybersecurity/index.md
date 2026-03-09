@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-06T22:52:43.461792+00:00'
-exported_at: '2026-03-06T22:52:46.124211+00:00'
+date: '2026-03-09T23:39:59.904187+00:00'
+exported_at: '2026-03-09T23:40:02.593872+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: The MSP Guide to Using AI-Powered Risk Management to Scale Cybersecurity
-updated_at: '2026-03-06T22:52:43.461792+00:00'
+updated_at: '2026-03-09T23:39:59.904187+00:00'
 url_hash: b79518feebfccf83573b5d18089005d90fb60d8c
 ---
 

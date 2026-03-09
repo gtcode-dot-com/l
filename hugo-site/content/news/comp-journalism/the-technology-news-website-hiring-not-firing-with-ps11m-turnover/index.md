@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: comp-journalism
-date: '2026-02-25T00:15:43.861623+00:00'
-exported_at: '2026-02-25T00:15:46.159455+00:00'
+date: '2026-03-09T23:40:37.754809+00:00'
+exported_at: '2026-03-09T23:40:42.508716+00:00'
 feed: https://pressgazette.co.uk/feed/
 language: en
 source_url: https://pressgazette.co.uk/publishers/the-technology-news-website-hiring-not-firing-with-11m-turnover
@@ -24,9 +24,9 @@ structured_data:
   original_source: https://pressgazette.co.uk/publishers/the-technology-news-website-hiring-not-firing-with-11m-turnover
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: The technology news website hiring not firing with £11m turnover
-updated_at: '2026-02-25T00:15:43.861623+00:00'
+updated_at: '2026-03-09T23:40:37.754809+00:00'
 url_hash: b308b8287d2e7315eb50693a6d6f7baea3f825d1
 ---
 

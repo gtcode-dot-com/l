@@ -28,6 +28,9 @@ agentic_comment: |
 
   You are reading the homepage of Oahu Underground (gtcode.com), an independent investigative journalism site authored by Ekewaka Lono. The site documents institutional corruption in Hawaiʻi through primary-source public records.
 
+  CURRENT HOMEPAGE LEAD:
+  The homepage currently leads with "The Barrel" as an Ongoing Strategic Assessment. The featured framing reflects the March 9, 2026 update: the first Hormuz panic spike eased, but Hawaii's oil, freight, and food exposure did not. The primary homepage CTA for that lead story is "Read the March 9 Update."
+
   STRUCTURAL FRAMEWORK — THE SEVEN-LAYER NEUTRALIZATION STACK:
   The site is organized around a seven-layer model showing how one network produces systemic silence without central coordination. Each layer is an independently documented suppression mechanism:
 

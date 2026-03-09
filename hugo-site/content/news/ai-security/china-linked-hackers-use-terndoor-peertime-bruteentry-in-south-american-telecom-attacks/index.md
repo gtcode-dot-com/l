@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-07T04:00:06.857566+00:00'
-exported_at: '2026-03-07T04:00:09.837199+00:00'
+date: '2026-03-09T23:40:00.615936+00:00'
+exported_at: '2026-03-09T23:40:02.588463+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/china-linked-hackers-use-terndoor.html
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: China-Linked Hackers Use TernDoor, PeerTime, BruteEntry in South American Telecom
   Attacks
-updated_at: '2026-03-07T04:00:06.857566+00:00'
+updated_at: '2026-03-09T23:40:00.615936+00:00'
 url_hash: 10e9f8d80d21ae73374d75958e4cb9598cd1b9a4
 ---
 

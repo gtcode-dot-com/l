@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-07T05:17:07.094498+00:00'
-exported_at: '2026-03-07T05:17:09.351495+00:00'
+date: '2026-03-09T23:40:01.429989+00:00'
+exported_at: '2026-03-09T23:40:02.566379+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/friday-squid-blogging-squid-in-byzantine-monk-cooking.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'Friday Squid Blogging: Squid in Byzantine Monk Cooking'
-updated_at: '2026-03-07T05:17:07.094498+00:00'
+updated_at: '2026-03-09T23:40:01.429989+00:00'
 url_hash: 6b41ef00ac7fa265ea550e008ba105d8b687ab4e
 ---
 
@@ -57,6 +57,6 @@ Tags:
 
 [Posted on March 6, 2026 at 5:03 PM](https://www.schneier.com/blog/archives/2026/03/friday-squid-blogging-squid-in-byzantine-monk-cooking.html)
 •
-[0 Comments](https://www.schneier.com/blog/archives/2026/03/friday-squid-blogging-squid-in-byzantine-monk-cooking.html#respond)
+[18 Comments](https://www.schneier.com/blog/archives/2026/03/friday-squid-blogging-squid-in-byzantine-monk-cooking.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

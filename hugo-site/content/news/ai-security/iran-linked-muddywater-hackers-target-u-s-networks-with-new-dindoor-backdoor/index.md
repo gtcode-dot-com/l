@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-06T22:52:43.745183+00:00'
-exported_at: '2026-03-06T22:52:46.120279+00:00'
+date: '2026-03-09T23:40:00.268375+00:00'
+exported_at: '2026-03-09T23:40:02.591284+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/iran-linked-muddywater-hackers-target.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Iran-Linked MuddyWater Hackers Target U.S. Networks With New Dindoor Backdoor
-updated_at: '2026-03-06T22:52:43.745183+00:00'
+updated_at: '2026-03-09T23:40:00.268375+00:00'
 url_hash: d3ac49878da41b13cfbe7dbf99db14e25041dac5
 ---
 
@@ -47,6 +47,10 @@ The attacks targeting the software company, as well as a U.S. bank and a Canadia
 JavaScript runtime for execution. Broadcom said it also identified an attempt to exfiltrate data from the software company using the Rclone utility to a Wasabi cloud storage bucket. However, it's currently not known if the effort paid off.
 
 Also found in the networks of a U.S. airport and a non-profit was a separate Python backdoor called Fakeset, which was downloaded from servers belonging to Backblaze, an American cloud storage and data backup company. The digital certificate used to sign Fakeset has also been used to sign Stagecomp and Darkcomp malware, both previously linked to MuddyWater.
+
+Brigid O Gorman, senior intelligence analyst, Symantec and Carbon Black Threat Hunter Team, said Microsoft and Kaspersky have detected samples associated with the Stagecomp and the Darkcomp malware with Muddywater-linked signatures – "
+[Trojan:Python/MuddyWater.DB!MTB](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Trojan:Python/MuddyWater.DB!MTB)
+" for Microsoft and "Backdoor.Python.MuddyWater.a" for Kaspersky.
 
 "While this malware wasn't seen on the targeted networks, the use of the same certificates suggests the same actor -- namely Seedworm -- was behind the activity on the networks of the U.S. companies," Symantec and Carbon Black said.
 
