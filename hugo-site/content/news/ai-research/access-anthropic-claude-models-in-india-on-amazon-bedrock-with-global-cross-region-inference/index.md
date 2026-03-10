@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-09T23:27:20.147093+00:00'
-exported_at: '2026-03-09T23:27:22.632325+00:00'
+date: '2026-03-10T00:15:34.738118+00:00'
+exported_at: '2026-03-10T00:15:38.571215+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/access-anthropic-claude-models-in-india-on-amazon-bedrock-with-global-cross-region-inference
@@ -30,7 +30,7 @@ structured_data:
     name: GTCode
 title: Access Anthropic Claude models in India on Amazon Bedrock with Global cross-Region
   inference
-updated_at: '2026-03-09T23:27:20.147093+00:00'
+updated_at: '2026-03-10T00:15:34.738118+00:00'
 url_hash: e44fbc3c001fd623508f7b975394fead5dc3713c
 ---
 

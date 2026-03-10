@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-09T18:05:21.151758+00:00'
-exported_at: '2026-03-09T18:05:24.033791+00:00'
+date: '2026-03-10T00:15:35.134601+00:00'
+exported_at: '2026-03-10T00:15:38.568958+00:00'
 feed: http://feeds.feedburner.com/nvidiablog
 language: en
 source_url: https://blogs.nvidia.com/blog/abb-robotics-omniverse
@@ -28,11 +28,13 @@ structured_data:
     name: GTCode
 title: ABB Robotics Taps NVIDIA Omniverse to Deliver Industrial‑Grade Physical AI
   at Scale
-updated_at: '2026-03-09T18:05:21.151758+00:00'
+updated_at: '2026-03-10T00:15:35.134601+00:00'
 url_hash: 6508184585b5b27d2c6d859f7733deca5260f381
 ---
 
-ABB Robotics and NVIDIA today announced a breakthrough partnership that brings industrial‑grade
+ABB Robotics and NVIDIA today announced a
+[breakthrough partnership](https://www.abb.com/global/en/news/134030)
+that brings industrial‑grade
 [physical AI](https://www.nvidia.com/en-us/glossary/generative-physical-ai/)
 
 to the factory floor.

@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-09T04:45:33.147461+00:00'
-exported_at: '2026-03-09T04:45:35.161772+00:00'
+date: '2026-03-10T00:15:35.531706+00:00'
+exported_at: '2026-03-10T00:15:38.557859+00:00'
 feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
 language: en
 source_url: https://news.mit.edu/2026/improving-ai-models-ability-explain-predictions-0309
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Improving AI models’ ability to explain their predictions
-updated_at: '2026-03-09T04:45:33.147461+00:00'
+updated_at: '2026-03-10T00:15:35.531706+00:00'
 url_hash: f1d4406c19da4154c3c46dfe8019a65a17fb7474
 ---
 

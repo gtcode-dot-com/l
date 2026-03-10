@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-09T23:27:19.421740+00:00'
-exported_at: '2026-03-09T23:27:22.636184+00:00'
+date: '2026-03-10T00:15:34.346072+00:00'
+exported_at: '2026-03-10T00:15:38.575514+00:00'
 feed: https://aws.amazon.com/blogs/machine-learning/feed
 language: en
 source_url: https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-3-nano-as-a-fully-managed-serverless-model-on-amazon-bedrock
@@ -30,7 +30,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Run NVIDIA Nemotron 3 Nano as a fully managed serverless model on Amazon Bedrock
-updated_at: '2026-03-09T23:27:19.421740+00:00'
+updated_at: '2026-03-10T00:15:34.346072+00:00'
 url_hash: 21d8c7fa4323587d3d41a27330772415c68b12a9
 ---
 
