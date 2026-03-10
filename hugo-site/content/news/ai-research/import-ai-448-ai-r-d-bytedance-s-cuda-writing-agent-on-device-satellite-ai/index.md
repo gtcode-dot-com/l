@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-09T18:05:22.814751+00:00'
-exported_at: '2026-03-09T18:05:24.020676+00:00'
+date: '2026-03-10T02:15:35.250485+00:00'
+exported_at: '2026-03-10T02:15:37.532853+00:00'
 feed: https://importai.substack.com/feed
 language: en
 source_url: https://importai.substack.com/p/import-ai-448-ai-r-and-d-bytedances
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: 'Import AI 448: AI R&D; Bytedance''s CUDA-writing agent; on-device satellite
   AI'
-updated_at: '2026-03-09T18:05:22.814751+00:00'
+updated_at: '2026-03-10T02:15:35.250485+00:00'
 url_hash: 21d03ee4f77921e08a89ef8d7d77511196b96ea2
 ---
 

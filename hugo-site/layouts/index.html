@@ -26,11 +26,11 @@
 {{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
 {{- $zoneOfPoliteness := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
 {{- $twoQuestions := .Site.GetPage "/investigation/the-two-questions" -}}
-{{- $heroHeadline := .Params.hero_headline | default "The Two Questions" -}}
+{{- $heroHeadline := .Params.hero_headline | default "The Barrel" -}}
 {{- if and $lead (eq (lower (strings.TrimSpace $heroHeadline)) (lower (strings.TrimSpace $lead.Title))) -}}
   {{- $heroHeadline = printf "%s Investigative Series" $heroHeadline -}}
 {{- end -}}
-{{- $homeHeroImage := .Params.hero_image | default "/img/ou-two-questions-og-1200x634.jpg" -}}
+{{- $homeHeroImage := .Params.hero_image | default "/img/ou-the-barrel-og-1200x630.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
   {{- $heroParsed := urls.Parse $homeHeroImage -}}
   {{- with $heroParsed.Path -}}
@@ -267,11 +267,11 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/investigation/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Prosecution Roadmap" }}</a></p>
+          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/investigation/the-barrel/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Ongoing Strategic Assessment" }}</a></p>
           <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
-          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "One Witness. Two Questions. ~1.8 Years on the Clock." }}</p>
+          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "The first panic eased. Hawaii's oil, freight, and food exposure did not." }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-two-questions/" }}">{{ .Params.hero_primary_cta_label | default "Read the Roadmap" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-barrel/" }}">{{ .Params.hero_primary_cta_label | default "Read the March 9 Update" }}</a>
             <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/investigation/" }}">{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>

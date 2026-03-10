@@ -6,6 +6,8 @@ ai_commentary_meta:
   model: ''
   prompt_version: ''
   provider: ''
+aliases:
+- /news/comp-journalism/journalism-job-cuts-in-2026-tracked-rolling-updates/
 category: comp-journalism
 date: '2026-03-03T19:48:43.378815+00:00'
 exported_at: '2026-03-03T19:48:47.667577+00:00'

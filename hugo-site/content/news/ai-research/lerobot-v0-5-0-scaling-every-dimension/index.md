@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-09T18:05:22.017847+00:00'
-exported_at: '2026-03-09T18:05:24.026755+00:00'
+date: '2026-03-10T02:15:35.009557+00:00'
+exported_at: '2026-03-10T02:15:37.537398+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/lerobot-release-v050
 structured_data:
@@ -24,7 +24,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'LeRobot v0.5.0: Scaling Every Dimension'
-updated_at: '2026-03-09T18:05:22.017847+00:00'
+updated_at: '2026-03-10T02:15:35.009557+00:00'
 url_hash: 96b2284ecdf3b55b54009f4306767010c37ba5f1
 ---
 

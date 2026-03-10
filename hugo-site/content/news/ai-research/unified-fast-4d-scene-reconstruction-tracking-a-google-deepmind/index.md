@@ -6,6 +6,8 @@ ai_commentary_meta:
   model: ''
   prompt_version: ''
   provider: ''
+aliases:
+- /news/ai-research/d4rt-unified-fast-4d-scene-reconstruction-tracking/
 category: ai-research
 date: '2026-02-17T00:39:37.615752+00:00'
 exported_at: '2026-02-17T00:39:39.059921+00:00'

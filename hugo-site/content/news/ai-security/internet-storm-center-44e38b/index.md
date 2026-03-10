@@ -6,9 +6,11 @@ ai_commentary_meta:
   model: ''
   prompt_version: ''
   provider: ''
+aliases:
+- /news/ai-security/internet-storm-center/
 category: ai-security
-date: '2026-03-06T22:15:17.302613+00:00'
-exported_at: '2026-03-06T22:15:19.729975+00:00'
+date: '2026-03-09T18:05:02.050317+00:00'
+exported_at: '2026-03-09T18:05:03.214363+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32766
@@ -25,7 +27,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Want More XWorm&#x3f;, (Wed, Mar 4th)
-updated_at: '2026-03-06T22:15:17.302613+00:00'
+updated_at: '2026-03-09T18:05:02.050317+00:00'
 url_hash: 44e38bbe4128ea69a72bd888c599a4e5da7cf7fe
 ---
 

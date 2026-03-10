@@ -6,6 +6,8 @@ ai_commentary_meta:
   model: ''
   prompt_version: ''
   provider: ''
+aliases:
+- /news/ai-research/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/
 category: ai-research
 date: '2026-02-19T04:08:10.606032+00:00'
 exported_at: '2026-02-19T04:08:10.309833+00:00'

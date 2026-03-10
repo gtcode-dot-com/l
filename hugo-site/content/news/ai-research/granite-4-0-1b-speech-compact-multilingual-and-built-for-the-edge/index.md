@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-research
-date: '2026-03-09T23:27:20.684489+00:00'
-exported_at: '2026-03-09T23:27:22.629234+00:00'
+date: '2026-03-10T02:15:34.184257+00:00'
+exported_at: '2026-03-10T02:15:37.542680+00:00'
 feed: https://huggingface.co/blog/feed.xml
 source_url: https://huggingface.co/blog/ibm-granite/granite-4-speech
 structured_data:
@@ -23,7 +23,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: 'Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge'
-updated_at: '2026-03-09T23:27:20.684489+00:00'
+updated_at: '2026-03-10T02:15:34.184257+00:00'
 url_hash: ec92a6e121b60abcc4d5bb9bdf583240ef47f779
 ---
 
