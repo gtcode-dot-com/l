@@ -5,7 +5,7 @@ title: "The Nod: Wilson Loo and the Silent Felony in Hawaii's First Circuit"
 subtitle: "How a Judge Committed a Crime with a Gesture"
 description: "An editorial account of how Judge Wilson M.N. Loo allegedly directed perjury from the bench with a silent nod, then sealed the record to bury the evidence."
 date: 2026-02-12
-lastmod: 2026-03-01
+lastmod: 2026-03-11
 author: "Ekewaka Lono"
 type: "investigation"
 seo_title: "The Nod — Wilson Loo and the Silent Felony in Hawaii's First Circuit"
@@ -130,7 +130,7 @@ It was a silent instruction from the highest authority in the room to a witness 
 
 (Redacted) followed the instruction. He denied it. If the complainant's account of the nod is accurate, perjury solicited and directed by a sitting judge entered the record as fact.
 
-When I attempted to object — to say, "Let the record show that the judge just signaled the witness" — [Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) cut me off. He didn't just overrule the objection; he physically stopped the words from entering the transcript. He then moved to seal the case.
+When I attempted to object — to say, "Let the record show that the judge just signaled the witness" — [Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) cut me off. He didn't just overrule the objection; he physically stopped the words from entering the transcript. He then ordered the case sealed upon the attorney's request.
 
 This wasn't a judicial error. If the account is accurate, it was a structural crime.
 
