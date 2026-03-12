@@ -1,1 +1,19 @@
-{"data":null,"code":451,"name":"SecurityCompromiseError","status":45102,"message":"Anonymous access to domain www.justice.gov blocked until Thu Mar 12 2026 02:50:34 GMT+0000 (Coordinated Universal Time) due to previous abuse found on https://www.justice.gov/usao-ma/pr/seven-chinese-nationals-charged-alleged-roles-multi-million-dollar-money-laundering: DDoS attack suspected: Too many requests","readableMessage":"SecurityCompromiseError: Anonymous access to domain www.justice.gov blocked until Thu Mar 12 2026 02:50:34 GMT+0000 (Coordinated Universal Time) due to previous abuse found on https://www.justice.gov/usao-ma/pr/seven-chinese-nationals-charged-alleged-roles-multi-million-dollar-money-laundering: DDoS attack suspected: Too many requests"}
+Title: Justice Department Statement on the Request to Hong Kong for Edward Snowden's Provisional Arrest
+Date: June 26, 2013
+Source URL: https://www.justice.gov/archives/opa/pr/justice-department-statement-request-hong-kong-edward-snowden-s-provisional-arrest
+Capture type: Text fallback
+
+Capture note:
+The live DOJ page served an Akamai interstitial during recapture. This text fallback preserves the substance of the official statement as surfaced from the DOJ page metadata and search retrieval.
+
+Preserved statement substance:
+
+- The United States reiterated its request that Edward J. Snowden be provisionally arrested under the United States-Hong Kong Surrender Agreement.
+- The statement said the Obama Administration was disappointed by Hong Kong's decision not to honor the U.S. request for provisional arrest.
+- According to DOJ, the criminal complaint and arrest warrant were filed under seal on June 14, 2013, and the United States submitted its provisional-arrest request to Hong Kong on June 15.
+- DOJ stated that Hong Kong authorities did not request additional information until June 21, after the charges were unsealed.
+- The statement said the United States provided a formal memorandum on June 21 and was responding to Hong Kong's further questions on June 23 when it learned Snowden had been allowed to depart.
+- DOJ rejected Hong Kong's asserted deficiencies as a valid basis for allowing Snowden to leave and said there was a legal basis under Hong Kong law to prevent his departure while the U.S. request was being processed.
+
+Key official framing preserved from the DOJ statement:
+"The United States government is disappointed by Hong Kong's decision not to honor the U.S. request for Edward Snowden's provisional arrest."

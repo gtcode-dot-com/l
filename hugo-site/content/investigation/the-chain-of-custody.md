@@ -611,7 +611,7 @@ The public record does not answer every decisive question. It does make one poin
 
 [^28]: Quick Roll Productions / RT, "The World Tomorrow with Julian Assange," twelve episodes, April-June 2012. Documented by The Guardian, April 17, 2012, "Julian Assange's TV show launches with interview with Hezbollah leader." See also: Christian Science Monitor. https://www.csmonitor.com/World/Global-News/2013/0623/Snowden-s-stealthy-exit-How-WikiLeaks-and-maybe-Russia-helped ([archival copy](/sources/the-chain-of-custody/CSMonitor_Snowden_Stealthy_Exit_20130623.html))
 
-[^29]: Visa, Mastercard, Bank of America, and PayPal financial blockade of WikiLeaks, 2010-2011. Documented by The Guardian, December 2010, and Wired, December 2010. https://www.theguardian.com/media/2010/dec/07/wikileaks-visa-mastercard-paypal ([archival copy](/sources/the-chain-of-custody/Guardian_WikiLeaks_Financial_Blockade_20101207.html))
+[^29]: WIRED, "WikiLeaks Wins Icelandic Court Battle Against Visa for Blocking Donations," July 12, 2012. The report recounts the payment blockade imposed by Visa, MasterCard, PayPal, Bank of America, and other financial institutions following Cablegate. https://www.wired.com/2012/07/wikileaks-visa-blockade/ ([archival copy](/sources/the-chain-of-custody/Wired_WikiLeaks_Visa_Blockade_20120712.html))
 
 [^30]: WikiLeaks financial disclosures, 2012. Approximately $93,000 in donations against $530,000 operating budget. Reported by Wired and the Associated Press; financial data compiled by Electrospaces.net. https://www.electrospaces.net/2019/04/the-snowden-files-where-are-they-and.html ([archival copy](/sources/the-chain-of-custody/Electrospaces_Snowden_Files_Archive_20190401.html))
 
