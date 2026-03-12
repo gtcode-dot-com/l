@@ -73,7 +73,7 @@ Each layer is independently sufficient to suppress a claim. Together, they form 
 
 ### For the CI Reform Audience
 
-The SECURE Act, signed into law in December 2025, broadened U.S. counterintelligence from a protective function to one that includes deterrence, disruption, and exploitation, and directed information-sharing with state, local, and tribal partners to counter foreign influence operations. This site shows what that mandate looks like in practice at the state level: one network, seventeen investigations, primary-source records. Coordination is only possible once the operating environment has been mapped.
+The SECURE Act, signed into law in December 2025, broadened U.S. counterintelligence from a protective function to one that includes deterrence, disruption, and exploitation, and directed information-sharing with state, local, and tribal partners to counter foreign influence operations. This site shows what that mandate looks like in practice at the state level: one network, a growing archive of source-backed investigations. Coordination is only possible once the operating environment has been mapped.
 
 gtcode.com/investigation/ · CC-BY-4.0 · GitHub-archived · Wayback Machine indexed
 

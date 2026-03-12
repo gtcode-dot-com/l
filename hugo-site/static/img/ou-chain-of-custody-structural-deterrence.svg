@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="det-title det-desc">
+  <title id="det-title">Illustrative threshold-key deterrence model</title>
+  <desc id="det-desc">A schematic showing an encrypted archive, an illustrative threshold-key split into multiple shares, distribution to multiple custodians, and the resulting deterrent effect against single-point recovery.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="840" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#111824"/>
+      <stop offset="1" stop-color="#0b1017"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171f2c"/>
+      <stop offset="1" stop-color="#101722"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c566"/>
+      <stop offset="1" stop-color="#d4a843"/>
+    </linearGradient>
+    <linearGradient id="sigH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ec8ff"/>
+      <stop offset="1" stop-color="#e8c566"/>
+    </linearGradient>
+    <linearGradient id="sigV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ec8ff"/>
+      <stop offset="1" stop-color="#e8c566"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.26"/>
+    </filter>
+    <style>
+      .frame{fill:url(#bg);stroke:#30363d;stroke-width:2}
+      .panel{fill:url(#panel);stroke:#30363d;stroke-width:1.5}
+      .sub{fill:#0f1621;stroke:#2b3544;stroke-width:1.5}
+      .share{fill:#122131;stroke:#50708f;stroke-width:1.5}
+      .title{font:700 32px "Space Grotesk","Segoe UI",sans-serif;fill:#f0f2f5}
+      .subtitle{font:400 14px "Segoe UI",sans-serif;fill:#a7b1bc}
+      .badge{font:700 12px "Segoe UI",sans-serif;fill:#0d1117;letter-spacing:1.5px}
+      .ptitle{font:700 19px "Space Grotesk","Segoe UI",sans-serif;fill:#f0f2f5}
+      .kicker{font:700 12px "Segoe UI",sans-serif;fill:#e8c566;letter-spacing:1.6px}
+      .lbl{font:600 15px "Segoe UI",sans-serif;fill:#f0f2f5}
+      .body{font:400 14px "Segoe UI",sans-serif;fill:#c4ccd5}
+      .note{font:400 13px "Segoe UI",sans-serif;fill:#9aa5b2}
+      .chip{font:700 14px "Segoe UI",sans-serif;fill:#0d1117}
+      .sharelbl{font:400 12px "Segoe UI",sans-serif;fill:#8899aa;letter-spacing:0.4px}
+      .div{fill:none;stroke:#425064;stroke-width:1.5}
+    </style>
+  </defs>
+
+  <!-- ═══ Frame ═══ -->
+  <rect class="frame" x="16" y="16" width="1168" height="808" rx="24"/>
+
+  <!-- ═══ Header ═══ -->
+  <text class="title" x="56" y="66">Illustrative Threshold-Key Deterrence Model</text>
+  <text class="subtitle" x="56" y="92">Operational logic only: how distributed encrypted custody can deter single-point recovery.</text>
+  <text class="subtitle" x="56" y="112">The exact archive implementation is not public; this figure shows the concept, not a proven design.</text>
+  <rect x="992" y="59" width="152" height="28" rx="14" fill="url(#accent)"/>
+  <text class="badge" x="1068" y="78" text-anchor="middle">ILLUSTRATIVE</text>
+
+  <!-- ═══ Panel backgrounds (painted first so connectors layer above them) ═══ -->
+  <rect class="panel" x="56" y="138" width="240" height="606" rx="18" filter="url(#shadow)"/>
+  <rect class="panel" x="328" y="138" width="500" height="252" rx="18" filter="url(#shadow)"/>
+  <rect class="panel" x="328" y="422" width="500" height="322" rx="18" filter="url(#shadow)"/>
+  <rect class="panel" x="860" y="138" width="296" height="606" rx="18" filter="url(#shadow)"/>
+
+  <!-- ═══ Connectors (painted above panel bg, below all detail content) ═══ -->
+
+  <!-- Archive → Key split -->
+  <path d="M296 380 C312 380 312 306 320 306" fill="none" stroke="url(#sigH)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="328,306 320,302 320,310" fill="#e8c566"/>
+
+  <!-- Share 1 → Custodian A -->
+  <path d="M395 354 C395 434 426 494 426 516" fill="none" stroke="url(#sigV)" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="426,524 422,516 430,516" fill="#e8c566"/>
+
+  <!-- Share 2 → Custodian B -->
+  <path d="M485 354 C485 434 582 494 582 516" fill="none" stroke="url(#sigV)" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="582,524 578,516 586,516" fill="#e8c566"/>
+
+  <!-- Share 3 → Custodian C -->
+  <path d="M575 354 C575 434 738 494 738 516" fill="none" stroke="url(#sigV)" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="738,524 734,516 742,516" fill="#e8c566"/>
+
+  <!-- Share 4 → Custodian D -->
+  <path d="M665 354 C665 434 504 558 504 592" fill="none" stroke="url(#sigV)" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="504,600 500,592 508,592" fill="#e8c566"/>
+
+  <!-- Share 5 → Custodian E -->
+  <path d="M755 354 C755 434 660 558 660 592" fill="none" stroke="url(#sigV)" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="660,600 656,592 664,592" fill="#e8c566"/>
+
+  <!-- Custody → Deterrent card 1 -->
+  <path d="M828 552 C844 552 844 305 878 305" fill="none" stroke="url(#sigH)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="886,305 878,301 878,309" fill="#e8c566"/>
+
+  <!-- Custody → Deterrent card 2 -->
+  <path d="M828 590 C844 590 844 458 878 458" fill="none" stroke="url(#sigH)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="886,458 878,454 878,462" fill="#e8c566"/>
+
+  <!-- Custody → Deterrent card 3 -->
+  <path d="M828 628 C844 628 844 611 878 611" fill="none" stroke="url(#sigH)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="886,611 878,607 878,615" fill="#e8c566"/>
+
+  <!-- ═══ LAYER 1 — Encrypted archive (detail content) ═══ -->
+  <text class="kicker" x="80" y="176">LAYER 1</text>
+  <text class="ptitle" x="80" y="204">Encrypted archive</text>
+  <line class="div" x1="80" y1="218" x2="272" y2="218"/>
+
+  <rect class="sub" x="80" y="242" width="192" height="190" rx="14"/>
+  <!-- padlock icon -->
+  <path d="M150 322 V298 A26 26 0 0 1 202 298 V322" fill="none" stroke="#e8c566" stroke-width="6" stroke-linecap="round"/>
+  <rect x="138" y="320" width="76" height="82" rx="10" fill="#152334" stroke="#5e7491" stroke-width="1.5"/>
+  <circle cx="176" cy="354" r="7" fill="#e8c566"/>
+  <rect x="172" y="361" width="8" height="18" rx="4" fill="#e8c566"/>
+
+  <text class="lbl" x="80" y="462">Approx. 1.5M documents</text>
+  <text class="body" x="80" y="488">Readable only if the release</text>
+  <text class="body" x="80" y="508">key can be reconstructed.</text>
+
+  <!-- ═══ LAYER 2 — Threshold-key split (detail content) ═══ -->
+  <text class="kicker" x="352" y="176">LAYER 2</text>
+  <text class="ptitle" x="352" y="204">Threshold-key split</text>
+  <line class="div" x1="352" y1="218" x2="804" y2="218"/>
+  <text class="body" x="352" y="244">Example: any 3 of 5 shares can reconstruct the release key.</text>
+  <text class="body" x="352" y="264">Deterrence logic per Schneier; not a verbatim public blueprint.</text>
+
+  <!-- 5 share boxes -->
+  <rect class="share" x="362" y="288" width="66" height="66" rx="14"/>
+  <rect class="share" x="452" y="288" width="66" height="66" rx="14"/>
+  <rect class="share" x="542" y="288" width="66" height="66" rx="14"/>
+  <rect class="share" x="632" y="288" width="66" height="66" rx="14"/>
+  <rect class="share" x="722" y="288" width="66" height="66" rx="14"/>
+  <!-- numbered chips — centered at box midpoint y=321 -->
+  <circle cx="395" cy="321" r="12" fill="url(#accent)"/>
+  <circle cx="485" cy="321" r="12" fill="url(#accent)"/>
+  <circle cx="575" cy="321" r="12" fill="url(#accent)"/>
+  <circle cx="665" cy="321" r="12" fill="url(#accent)"/>
+  <circle cx="755" cy="321" r="12" fill="url(#accent)"/>
+  <text class="chip" x="391" y="326">1</text>
+  <text class="chip" x="481" y="326">2</text>
+  <text class="chip" x="571" y="326">3</text>
+  <text class="chip" x="661" y="326">4</text>
+  <text class="chip" x="751" y="326">5</text>
+  <!-- share label backdrops — dim arrows, keep visual continuity -->
+  <rect x="374" y="360" width="44" height="20" rx="4" fill="#121a26" fill-opacity="0.82"/>
+  <rect x="464" y="360" width="44" height="20" rx="4" fill="#121a26" fill-opacity="0.82"/>
+  <rect x="554" y="360" width="44" height="20" rx="4" fill="#121a26" fill-opacity="0.82"/>
+  <rect x="644" y="360" width="44" height="20" rx="4" fill="#121a26" fill-opacity="0.82"/>
+  <rect x="734" y="360" width="44" height="20" rx="4" fill="#121a26" fill-opacity="0.82"/>
+  <!-- share labels -->
+  <text class="sharelbl" x="380" y="374">share</text>
+  <text class="sharelbl" x="470" y="374">share</text>
+  <text class="sharelbl" x="560" y="374">share</text>
+  <text class="sharelbl" x="650" y="374">share</text>
+  <text class="sharelbl" x="740" y="374">share</text>
+
+  <!-- ═══ LAYER 3 — Distributed custody (detail content) ═══ -->
+  <!-- header backdrop — angled mask dims arrows behind text, preserves arrow continuity -->
+  <rect x="340" y="440" width="132" height="58" rx="8" fill="#151d29" fill-opacity="0.80" transform="rotate(-1.5, 406, 469)"/>
+  <text class="kicker" x="352" y="460">LAYER 3</text>
+  <text class="ptitle" x="352" y="488">Distributed custody</text>
+  <line class="div" x1="352" y1="502" x2="804" y2="502"/>
+
+  <!-- custodian row 1: 3 boxes -->
+  <rect class="sub" x="358" y="524" width="136" height="56" rx="12"/>
+  <rect class="sub" x="514" y="524" width="136" height="56" rx="12"/>
+  <rect class="sub" x="670" y="524" width="136" height="56" rx="12"/>
+  <text class="lbl" x="384" y="558">Custodian A</text>
+  <text class="lbl" x="540" y="558">Custodian B</text>
+  <text class="lbl" x="696" y="558">Custodian C</text>
+
+  <!-- custodian row 2: 2 boxes centered -->
+  <rect class="sub" x="436" y="600" width="136" height="56" rx="12"/>
+  <rect class="sub" x="592" y="600" width="136" height="56" rx="12"/>
+  <text class="lbl" x="462" y="634">Custodian D</text>
+  <text class="lbl" x="618" y="634">Custodian E</text>
+
+  <text class="body" x="352" y="724">Shares held across different people and jurisdictions.</text>
+
+  <!-- ═══ LAYER 4 — Deterrent effect (detail content) ═══ -->
+  <text class="kicker" x="886" y="176">LAYER 4</text>
+  <text class="ptitle" x="886" y="204">Deterrent effect</text>
+  <line class="div" x1="886" y1="218" x2="1132" y2="218"/>
+
+  <rect class="sub" x="886" y="242" width="246" height="127" rx="14"/>
+  <text class="lbl" x="908" y="274">No single seizure</text>
+  <text class="body" x="908" y="302">One raid, arrest, or border</text>
+  <text class="body" x="908" y="322">stop cannot unlock the</text>
+  <text class="body" x="908" y="342">archive.</text>
+
+  <rect class="sub" x="886" y="395" width="246" height="127" rx="14"/>
+  <text class="lbl" x="908" y="427">Cross-border pressure</text>
+  <text class="body" x="908" y="455">Recovery requires multiple</text>
+  <text class="body" x="908" y="475">holders across distinct</text>
+  <text class="body" x="908" y="495">jurisdictions.</text>
+
+  <rect class="sub" x="886" y="548" width="246" height="127" rx="14"/>
+  <text class="lbl" x="908" y="580">Credible release threat</text>
+  <text class="body" x="908" y="608">Aggressive action risks the</text>
+  <text class="body" x="908" y="628">very disclosure it seeks</text>
+  <text class="body" x="908" y="648">to prevent.</text>
+
+  <!-- ═══ Note bar ═══ -->
+  <rect class="sub" x="56" y="764" width="1084" height="50" rx="14"/>
+  <text class="note" x="80" y="794">Figure shows the cryptographic layer only. The article discusses additional legal and institutional layers of deterrence separately.</text>
+</svg>

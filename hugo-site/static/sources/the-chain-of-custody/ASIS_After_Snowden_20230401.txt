@@ -1,0 +1,132 @@
+Title: The State of Insider Threat Initiatives 10 Years After Snowden
+
+URL Source: http://www.asisonline.org/security-management-magazine/articles/2023/04/insider-threats/after-snowden/
+
+Markdown Content:
+“I understand that I will be made to suffer for my actions,” but “I will be satisfied if the federation of secret law, unequal pardon, and irresistible executive powers that rule the world that I love are revealed even for an instant,” wrote Edward Snowden, a former National Security Agency (NSA) contractor turned whistleblower, in a note accompanying the first set of U.S. government documents he leaked to [_The Guardian_](https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance) in 2013.
+
+[The documents](https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded#section/1) Snowden shared divulged the massive U.S. government surveillance program that allowed [illegal access](https://www.theguardian.com/us-news/2020/sep/03/edward-snowden-nsa-surveillance-guardian-court-rules) to millions of Americans’ phone records. The leaks disclosed how spy agencies from the United States and the United Kingdom were accessing information on [people around the world](https://www.asisonline.org/security-management-magazine/articles/2016/02/an-unsafe-harbor/) via cables that carried telephone and Internet traffic.
+
+Ten years later, the effects of Snowden’s disclosures continue to resonate. They forced U.S. leaders to be more [transparent](https://www.nytimes.com/2023/03/03/us/politics/fbi-queries-warrants-surveillance.html) about existing surveillance methods impacting Americans and initiated a major reform for [government surveillance practices](https://www.theguardian.com/us-news/2015/jun/02/congress-surveillance-reform-edward-snowden). The leaks also changed the global conversation on[privacy](https://www.pewresearch.org/fact-tank/2016/09/21/the-state-of-privacy-in-america/) and the public’s expectations of private communications. Additionally, new efforts arose to assess the risk of insider threats and implement policies and procedures for responding to them.
+
+#### **From Questions to Controls**
+
+Lisa Thayer, U.S. deputy assistant director of the Enterprise Threat-Mitigation Directorate at the National Counterintelligence and Security Center (NCSC), was working in counterintelligence for the U.S. Department of Defense (DOD) in 2013. When the Snowden leaks happened, she says the initial focus was on [damage control](https://www.washingtonpost.com/world/national-security/investigators-looking-at-how-snowden-gained-access-at-nsa/2013/06/10/83b4841a-d209-11e2-8cbe-1bcbee06f8f8_story.html)—looking at the damage done to personnel and agency assets.
+
+“We were looking at it from the damage assessment perspective at the time, and that really enhanced resources for insider threats,” Thayer tells _Security Management._“Agencies wanted to know [how did this happen?](https://www.nytimes.com/2014/02/09/us/snowden-used-low-cost-tool-to-best-nsa.html) Why didn’t we see it?”
+
+In remarks to the U.S. Senate Select Committee on Intelligence on 29 January 2014, then-Director of National Intelligence (DNI) James Clapper said Snowden’s disclosures caused “profound damage” and that consequently the nation was less safe.
+
+* * *
+
+_The stark consequences of this perfect storm are plainly evident._
+
+* * *
+
+“Moreover, the effects of the unauthorized disclosures hurt the entire intelligence community, not just (the) NSA,” Clapper [explained in his testimony.](https://www.dni.gov/files/documents/WWTA%20Opening%20Remarks%20as%20Delivered%20to%20SSCI_29_Jan_2014.pdf) “Critical intelligence capabilities in which the United States has invested billions of dollars are at risk, or likely to be curtailed or eliminated either because of compromise or conscious decision. Moreover, the impact of the losses caused by the disclosures will be amplified by the substantial budget reductions we’re incurring. The stark consequences of this perfect storm are plainly evident.”
+
+In the six months after Snowden’s leaks, the NSA put forth plans to implement 41 technical measures to control data, supervise its networks, and increase oversight of individuals, [Reuters reported](https://www.reuters.com/article/idUSBRE9BC0YZ20131213) in December 2013.
+
+“Measures include requiring two-person control of every place where someone could access data and enhancing the security process that people go through, and requiring more frequent screenings of systems administrative access,” according to Reuters.
+
+The former deputy director and senior civilian leader of the NSA during the Snowden leaks, Chris Inglis, spoke at the RSA Conference in 2017 about some of the controls implemented after the Snowden leaks. [He explained](https://www.asisonline.org/security-management-magazine/articles/2017/10/the-unique-threat-of-insiders/) that while they impacted the agency workforce’s performance, the controls helped address insider threats—which are low probability events with extremely high consequences.
+
+Snowden, for instance, was a SharePoint administrator responsible for populating a server that thousands of NSA analysts could then use to chase threats. Snowden’s job was to understand how the NSA collects, processes, stores, queries, and produces information.
+
+“That’s a pretty rich, dangerous set of information, which we now know,” Inglis said in his prepared remarks. “And the controls were relatively low on that—not missing—but low because we wanted that crowd to run at that speed, to exceed their expectations.”
+
+With the implementation of more data controls and oversight, NSA employees’ performance was less sufficient but there was greater alignment between trust and capability, added Inglis, whose office did not respond to a request for comment for this story.
+
+The NSA was not alone in implementing these new controls and oversight measures. Government agencies across the board moved forward on [creating insider threat programs,](https://www.dni.gov/files/NCSC/documents/nittf/NITTF-Insider-Threat-Guide-2017.pdf) following through on an [executive order](https://obamawhitehouse.archives.gov/the-press-office/2011/10/07/executive-order-13587-structural-reforms-improve-security-classified-net) from 2011. The order—which required agencies to implement insider threat detection and prevention programs—was issued following the [Chelsea Manning’s leaks](https://www.theguardian.com/us-news/2022/oct/22/chelsea-manning-leaked-military-documents-free-world-prison) of classified information to WikiLeaks.
+
+These programs needed to meet at least 26 requirements. These included mandates intended to detect and mitigate insider threats, such as monitoring user activity on classified computer networks controlled by the federal government, evaluating personnel security information, insider threat awareness and reporting training for employees, and gathering information for a centralized analysis, reporting, and response capability, according to the [National Insider Threat Policy.](https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy.pdf)
+
+Additionally, the framework required government agencies to designate a senior official with the authority to provide management, accountability, and oversight of the insider threat program; enable independent assessments for compliance; and perform self-assessments.
+
+**[ Stay Aware of Threats.SM7 Newsletter: _[Sign Up](https://www.asisonline.org/security-management-magazine/resources/sign-up-for-sm7-newsletter/)_]**
+
+Since the framework was introduced, agencies have spent more than $1 billion to implement its requirements, as of fiscal year 2020, [Bloomberg Government reported](https://about.bgov.com/news/insider-threat-market-to-top-1-billion-in-fiscal-2020-this-is/).
+
+“The top agencies buying insider threat-related products and services are the departments of Defense, Homeland Security, Health and Human Services, and Veterans Affairs,” according to Bloomberg. “All of the top four agencies, which account for about two-thirds of insider threat obligations annually, spent more on insider threat in fiscal 2019 than in fiscal 2018, with the exception of HHS, which fell by 25 percent.”
+
+For instance, the U.S. Department of Justice (DOJ) spent $21.8 million and had 73 positions—including 14 attorneys—dedicated to its insider threat prevention and protection of classified systems in 2020. In 2021, it [requested](https://www.justice.gov/file/1246156/download) that an additional $1 million and four staff positions be added to the program.
+
+#### **The Task Force**
+
+A key player in helping agencies determine the best processes and procedures for their insider threat programs is the National Insider Threat Task Force (NITTF). It was created by the National Threat Insider Policy and is a joint operation between the U.S. Director of National Intelligence and the U.S. Attorney General. The task force is housed in the NCSC, part of the Office of the Director of National Intelligence, and draws together expertise from across the government in security, counterintelligence, and information assurance to develop policies and standards for government agencies to implement insider threat programs.
+
+Rebecca Morgan, who served as the deputy director of the NITTF until late 2022, helped usher in a new era of insider threat management. The programs helped identify individuals deviating from their baseline behavior and created opportunities for colleagues, supervisors, and threat management teams to intercede before an incident occurred.
+
+“These programs are designed to help folks,” Morgan said in a previous interview with [_Security Management_.](https://www.asisonline.org/security-management-magazine/articles/2021/09/insider-threat-the-shift-from-report-to-support/) “We like to use the phrase, ‘Turning people around, not turning them in.’ Our goal is to get ahead of any negative action.”
+
+Thayer moved over to the NCSC in 2021 as the group chief running the client engagement group— meaning she was conducting assessments on developing insider threat programs with the intelligence community, DOD, and other agencies. She then took on the role of deputy director of the NITTF in October 2022. One area of insider threat management that some government programs struggle with implementing is a requirement for continuous monitoring of portions of their workforces, she says. Such an ability, for instance, could have prevented Snowden from assembling, copying, and removing the documents from the NSA office where he worked.
+
+Agencies may not have implemented these measures because they may not have had the resources or backing from leadership—in part because they are unfunded mandates.
+
+“They don’t have a budget for it. They don’t have dedicated permanent staff in some cases or have had employees move on and are not being replaced,” Thayer adds, referencing some of the employee turnover challenges of the COVID-19 pandemic era.
+
+The workload of the NCSC has also grown, encompassing the National Operations Security Program Office (OPSEC)—pushing Thayer and her team to now work with approximately 400 agencies. Previously, the NSA was responsible for this program that was focused on protecting unclassified information that could be used by adversaries against U.S. interests.
+
+Transitioning this program over to the NCSC, however, meant that it was spending less time on insider threat in order to get the OPSEC program up to speed to fulfill requirements outlined in a National Security Presidential Memorandum, Thayer adds.
+
+“Because of resources on our end, as well as the receiving agencies’ ends, we had to spend more time on OPSEC,” she explains. “Now that that program is pretty much underway and being developed nicely, my focus is getting back to insider threat.”
+
+Many of the agencies’ programs are operating at full capacity—meaning they meet all 26 requirements of the National Insider Threat Policy. However, that does not necessarily mean the programs are effective.
+
+The NITTF is now in talks with agencies to begin rolling out assessments of insider threat programs to help them determine how effective they are using a standardized methodology. These conversations have involved the agencies, and academics to determine how these assessments should be carried out.
+
+“Ultimately, what we want to look at is how an effective a program is going to be measured by the preventative measures it was able to take to help employees in the beginning stages of a critical path toward either espionage or unauthorized disclosure or harm to self or others,” Thayer explains.
+
+The NITFF will conduct the assessments based on a new framework, one that was planned to be completed by _Security Management’s_ press time. Once the framework is finalized, Thayer says the NITFF will prioritize which agencies will be assessed first—taking into consideration agencies’ willingness to participate in the process. Her hope is that 12 assessments will be completed by the end of the 2023 calendar year.
+
+“It might be a little bit of an ambitious goal, but that’s what we’re aiming for right now,” she adds.
+
+#### **Evolving Threats**
+
+Assessing the effectiveness of insider threat programs is all the more important because recent research reveals that insider threats increased in both frequency and cost between 2020 and 2022.
+
+In Proofpoint’s fourth benchmarking study, [_The Cost of Insider Threats,_](https://www.proofpoint.com/sites/default/files/threat-reports/pfpt-us-tr-the-cost-of-insider-threats-ponemon-report.pdf) the Ponemon Institute found that it is taking employers longer to identify insider threats, increasing from an average of 77 days to contain as identified in the previous study to 85 days. The study, sponsored by Proofpoint, also identified that careless or negligent employees often caused these incidents.
+
+“A total of 3,807 attacks, or 56 percent, were caused by employee or contractor negligence, costing on average $484,931 per incident,” the researchers wrote. “This could be the result of a variety of factors, including not ensuring their devices are secured, not following the company’s security policy, or forgetting to patch and upgrade.”
+
+On the flip side, the researchers found that malicious insiders caused just 26 percent of the incidents they reviewed. Each of these incidents, however, cost an average of $648,062 for the victim organization.
+
+“Because employees are increasingly granted access to more information to enhance productivity in today’s [work-from-anywhere workforce](https://www.asisonline.org/security-management-magazine/articles/2022/07/remote-work-risk-hits-the-road-with-digital-nomads2/), malicious insiders are harder to detect than external attackers or hackers,” the survey explained.
+
+* * *
+
+_Insider threats increased in both frequency and cost between 2020 and 2022._
+
+* * *
+
+A key mitigation tool for security practitioners moving into the future will be implementing technologies such as user behavior tools and automation.
+
+“User behavior-based tools for detecting insider threats are considered essential or very important to reducing insider threats (62 percent of respondents),” the researchers wrote. “This is followed by automation for the prevention, investigation, escalation, containment and remediation of insider incidents (55 percent of respondents), and AI and machine learning to prevent, investigate, escalate, contain, and remediate insider incidents (54 percent of respondents).”
+
+While the researchers point to these tools—which are similar to continuous monitoring capabilities—to mitigate insider threats, the NITTF’s framework will also assess how effective agencies’ insider threat programs are. Thayer did not disclose exactly what will be in the framework to evaluate agencies, which is expected to be released in the second quarter of 2023.
+
+“We’re going to be ranking and stacking agencies for priority, looking at agencies that are targeted more heavily than others,” Thayer explains. She adds that some agencies are frequently targeted by U.S. adversaries, including China, Russia, and Iran—especially those that work in research, health, environmental, and energy.
+
+“Once we conduct the assessment, we’ll get back with the agency and give them a readout of the assessment itself and make recommendations for where they’re vulnerable and how they can make improvements,” Thayer says. “We don’t just present them with a list. We do follow up, and we do have solid relationships with about 100 agencies.”
+
+Furthermore, NITTF provides guidance to the private sector about threat information, lessons learned, and best practices for conducting their own insider threat program assessments, she adds. Providing these resources may be especially valuable to private sector businesses in energy, research, and technology verticals. In the [annual threat assessment](https://www.dni.gov/files/ODNI/documents/assessments/ATA-2023-Unclassified-Report.pdf) of the U.S. intelligence community released in March 2023, for instance, U.S. Director of National Intelligence Avril Haines highlighted the [rising risk China poses](https://www.asisonline.org/security-management-magazine/articles/2020/07/an-unfair-advantage-confronting-organized-intellectual-property-theft/) to the United States—especially in the [technological competitiveness space.](https://www.asisonline.org/security-management-magazine/monthly-issues/security-technology/archive/2023/february/template-article32/)
+
+“China will persist with efforts to acquire foreign science and technology information and expertise, making extensive use of foreign scientific collaborations and partnerships, investments and acquisitions, talent recruitment, [economic espionage,](https://www.nytimes.com/2023/03/07/magazine/china-spying-intellectual-property.html) and cyber theft to acquire and transfer technologies and technical knowledge,” according to the assessment.
+
+Building awareness of the scope of insider threat issues and creating systems to assess effectiveness of insider threat programs will help security managers be more proactive in addressing threats—an approach agencies are looking to adopt, based on the NITTF’s annual insider threat trends report, Thayer says.
+
+Agencies are “steadily moving from that reactive approach to a proactive mitigation,” she adds. “The agencies are really focused on re-establishing hubs that include security, counterintelligence, their CIO shop, HR, inspector general, and office of general counsel.”
+
+The NITTF also stresses to agencies that when reviewing incidents, there should be a focus on proactive measures—including spotting indicators related to stress, suicidal ideas, and workplace violence. Agencies should also be looking for how to provide benefits and support to employees.
+
+“We also would caution agencies that while you’re looking to help employees and get them the mental health care that they may need or other resources for their well-being, and we encourage that, we can’t lose sight of the fact that espionage does still occur; unauthorized disclosures still occur,” Thayer says. “We have to be mindful of that as well, and keep the pendulum from swinging from looking from what we were focused on—threats—to employee wellness. We have to maintain a solid middle ground and focus. Both are very important.”
+
+_For more on Edward Snowden and his impact on insider threat management, read these articles from_ Security Management’s _archives:_
+
+*   [_“Confronting the Insider Threat,”_](https://www.asisonline.org/security-management-magazine/articles/2013/10/confronting-the-insider-threat/)_October 2013_
+*   [_“Insider Threats in the Private Sector,”_](https://www.asisonline.org/security-management-magazine/articles/2015/05/insider-threats-in-the-private-sector/)_May 2015_
+*   [_“The Unique Threat of Insiders,”_](https://www.asisonline.org/security-management-magazine/articles/2017/10/the-unique-threat-of-insiders/)_October 2017_
+*   [_“Personnel Peril: The Risk of the Insider Threat,”_](https://www.asisonline.org/security-management-magazine/articles/2018/04/personnel-peril/)_April 2018_
+*   [_“Insider Threat: The Shift from Report to Support,”_](https://www.asisonline.org/security-management-magazine/articles/2021/09/insider-threat-the-shift-from-report-to-support/)_September/October 2021_
+
+_Megan Gates is senior editor for_ Security Management. _Connect with her at_[megan.gates@asisonline.org](mailto:megan.gates@asisonline.org)_or on LinkedIn. Follow her on Twitter: @mgngates._
