@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-07T04:00:07.536887+00:00'
-exported_at: '2026-03-07T04:00:09.826651+00:00'
+date: '2026-03-12T00:34:02.880097+00:00'
+exported_at: '2026-03-12T00:34:06.440129+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/claude-used-to-hack-mexican-government.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Claude Used to Hack Mexican Government
-updated_at: '2026-03-07T04:00:07.536887+00:00'
+updated_at: '2026-03-12T00:34:02.880097+00:00'
 url_hash: 7a84f9d472b44cf1c2b99b525a86daecf7418ab4
 ---
 
@@ -63,6 +63,6 @@ Tags:
 
 [Posted on March 6, 2026 at 6:53 AM](https://www.schneier.com/blog/archives/2026/03/claude-used-to-hack-mexican-government.html)
 •
-[5 Comments](https://www.schneier.com/blog/archives/2026/03/claude-used-to-hack-mexican-government.html#comments)
+[4 Comments](https://www.schneier.com/blog/archives/2026/03/claude-used-to-hack-mexican-government.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

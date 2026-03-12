@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-07T04:00:07.338359+00:00'
-exported_at: '2026-03-07T04:00:09.830527+00:00'
+date: '2026-03-12T00:34:02.405545+00:00'
+exported_at: '2026-03-12T00:34:06.443212+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/anthropic-and-the-pentagon.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Anthropic and the Pentagon
-updated_at: '2026-03-07T04:00:07.338359+00:00'
+updated_at: '2026-03-12T00:34:02.405545+00:00'
 url_hash: fd557a81ee95dac9e95ec38380574a3c99ee135e
 ---
 
@@ -127,4 +127,4 @@ Tags:
 
 [Posted on March 6, 2026 at 12:07 PM](https://www.schneier.com/blog/archives/2026/03/anthropic-and-the-pentagon.html)
 •
-[7 Comments](https://www.schneier.com/blog/archives/2026/03/anthropic-and-the-pentagon.html#comments)
+[10 Comments](https://www.schneier.com/blog/archives/2026/03/anthropic-and-the-pentagon.html#comments)

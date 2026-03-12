@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-06T20:36:05.896418+00:00'
-exported_at: '2026-03-06T20:36:08.149772+00:00'
+date: '2026-03-12T00:34:03.914938+00:00'
+exported_at: '2026-03-12T00:34:06.433970+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/hacked-app-part-of-us-israeli-propaganda-campaign-against-iran.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Hacked App Part of US/Israeli Propaganda Campaign Against Iran
-updated_at: '2026-03-06T20:36:05.896418+00:00'
+updated_at: '2026-03-12T00:34:03.914938+00:00'
 url_hash: eecc08899f25979ee58b3bcf98e34606198dad68
 ---
 
@@ -60,6 +60,6 @@ Tags:
 
 [Posted on March 5, 2026 at 6:28 AM](https://www.schneier.com/blog/archives/2026/03/hacked-app-part-of-us-israeli-propaganda-campaign-against-iran.html)
 •
-[6 Comments](https://www.schneier.com/blog/archives/2026/03/hacked-app-part-of-us-israeli-propaganda-campaign-against-iran.html#comments)
+[7 Comments](https://www.schneier.com/blog/archives/2026/03/hacked-app-part-of-us-israeli-propaganda-campaign-against-iran.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

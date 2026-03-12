@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-10T02:15:15.313874+00:00'
-exported_at: '2026-03-10T02:15:18.688131+00:00'
+date: '2026-03-12T00:34:05.087837+00:00'
+exported_at: '2026-03-12T00:34:06.420862+00:00'
 feed: https://krebsonsecurity.com/feed/
 language: en
 source_url: https://krebsonsecurity.com/2026/03/how-ai-assistants-are-moving-the-security-goalposts
@@ -25,7 +25,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: How AI Assistants are Moving the Security Goalposts
-updated_at: '2026-03-10T02:15:15.313874+00:00'
+updated_at: '2026-03-12T00:34:05.087837+00:00'
 url_hash: 35d1b07ac01e4b994b29a6af98a92e5cedb341e7
 ---
 
@@ -43,7 +43,7 @@ and
 
 The OpenClaw logo.
 
-If that sounds like a risky proposition or a dare, consider that OpenClaw is most useful when it has complete access to your entire digital life, where it can then manage your inbox and calendar, execute programs and tools, browse the Internet for information, and integrate with chat apps like Discord, Signal, Teams or WhatsApp.
+If that sounds like a risky proposition or a dare, consider that OpenClaw is most useful when it has complete access to your digital life, where it can then manage your inbox and calendar, execute programs and tools, browse the Internet for information, and integrate with chat apps like Discord, Signal, Teams or WhatsApp.
 
 Other more established AI assistants like Anthropic’s
 **Claude**
@@ -126,10 +126,10 @@ Less than a week later, Moltbook had more than 1.5 million registered agents tha
 found a bug in Moltbook’s code and posted it to an AI agent discussion forum, while other agents came up with and implemented a patch to fix the flaw.
 
 Moltbook’s creator
-**Matt Schlict**
+**Matt Schlicht**
 said on social media that he didn’t write a single line of code for the project.
 
-“I just had a vision for the technical architecture and AI made it a reality,” Schlict said. “We’re in the golden ages. How can we not give AI a place to hang out.”
+“I just had a vision for the technical architecture and AI made it a reality,” Schlicht said. “We’re in the golden ages. How can we not give AI a place to hang out.”
 
 ## ATTACKERS LEVEL UP
 

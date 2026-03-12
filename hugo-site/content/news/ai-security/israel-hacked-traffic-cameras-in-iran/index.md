@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-06T20:36:05.725943+00:00'
-exported_at: '2026-03-06T20:36:08.153257+00:00'
+date: '2026-03-12T00:34:03.570182+00:00'
+exported_at: '2026-03-12T00:34:06.437242+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
 source_url: https://www.schneier.com/blog/archives/2026/03/israel-hacked-traffic-cameras-in-iran.html
@@ -28,7 +28,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Israel Hacked Traffic Cameras in Iran
-updated_at: '2026-03-06T20:36:05.725943+00:00'
+updated_at: '2026-03-12T00:34:03.570182+00:00'
 url_hash: ba05dc02a167b81eb643b3f404801dbb444f573d
 ---
 
