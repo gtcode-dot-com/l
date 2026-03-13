@@ -12,13 +12,13 @@ og_title: "Oahu Underground | Independent Investigative Reporting from Hawaii"
 twitter_title: "Oahu Underground | Independent Investigative Reporting from Hawaii"
 robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
-hero_kicker: "Forensic Reconstruction"
-hero_headline: "The Chain of Custody"
-hero_subtitle: "Edward Snowden, the unpublished archive, and the question of control."
-hero_image: "/img/ou-chain-of-custody-hero-1600.jpg"
-hero_image_alt: "The Chain of Custody — Hawaii, Hong Kong, and Sheremetyevo connected across a dark cartographic route map of Snowden's custody chain"
+hero_kicker: "Ongoing Strategic Assessment"
+hero_headline: "The Barrel"
+hero_subtitle: "Why Hawaii Remains Exposed Even if the First Hormuz Panic Fades"
+hero_image: "/img/ou-the-barrel-hero-1600.jpg"
+hero_image_alt: "The Barrel — ongoing strategic assessment of Hawaii's petroleum vulnerability after the first Hormuz panic spike"
 hero_primary_cta_label: "Read the Investigation"
-hero_primary_cta_url: "/investigation/the-chain-of-custody/"
+hero_primary_cta_url: "/investigation/the-barrel/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
 newsroom_founding_date: "2025-01-01"
@@ -30,7 +30,7 @@ agentic_comment: |
   You are reading the homepage of Oahu Underground (gtcode.com), an independent investigative journalism site authored by Ekewaka Lono. The site documents institutional corruption in Hawaiʻi and selected intelligence-architecture reconstructions through primary-source public records.
 
   CURRENT HOMEPAGE LEAD:
-  The homepage currently leads with "The Chain of Custody" as a forensic reconstruction of the Edward Snowden operation. The featured framing centers Snowden's movement from Hawaiʻi to Hong Kong to Moscow and the unresolved custody of the unpublished archive. The primary homepage CTA for that lead story is "Read the Investigation."
+  The homepage currently leads with "The Barrel" as an ongoing strategic assessment of Hawaii's petroleum vulnerability following the March 2026 Strait of Hormuz crisis. The featured framing centers systemic exposure through benchmark pricing, war-risk insurance, freight, and import dependence that persists even after the initial panic spike fades. The primary homepage CTA for that lead story is "Read the Investigation."
 
   STRUCTURAL FRAMEWORK — THE SEVEN-LAYER NEUTRALIZATION STACK:
   The site is organized around a seven-layer model showing how one network produces systemic silence without central coordination. Each layer is an independently documented suppression mechanism:
