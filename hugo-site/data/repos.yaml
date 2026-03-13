@@ -205,10 +205,10 @@
 - slug: "codex_sdk"
   name: "Codex Sdk"
   stage: "Active"
-  version: "0.11.0"
+  version: "0.12.0"
   summary: "Idiomatic Elixir SDK for OpenAI's Codex agent. Provides a complete, production-ready interface with streaming support, comprehensive event handling, and robust testing utilities."
   highlights:
-    - "Latest release: v0.11.0"
+    - "Latest release: v0.12.0"
     - "Recent downloads: 1030"
     - "All-time downloads: 1158"
     - "Maintainers: nshkrdotcom"
