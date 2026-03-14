@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-13T16:15:14.250742+00:00'
-exported_at: '2026-03-13T16:15:16.495538+00:00'
+date: '2026-03-14T05:50:05.592867+00:00'
+exported_at: '2026-03-14T05:50:07.467072+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/storm-2561-spreads-trojan-vpn-clients.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Storm-2561 Spreads Trojan VPN Clients via SEO Poisoning to Steal Credentials
-updated_at: '2026-03-13T16:15:14.250742+00:00'
+updated_at: '2026-03-14T05:50:05.592867+00:00'
 url_hash: cce9c0b54893216784208df387ec9c717bd0f3c5
 ---
 

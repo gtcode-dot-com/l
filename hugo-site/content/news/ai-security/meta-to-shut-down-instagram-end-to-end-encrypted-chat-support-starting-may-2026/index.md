@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-13T18:15:15.113497+00:00'
-exported_at: '2026-03-13T18:15:17.501380+00:00'
+date: '2026-03-14T05:50:04.253005+00:00'
+exported_at: '2026-03-14T05:50:07.472337+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/meta-to-shut-down-instagram-end-to-end.html
@@ -28,7 +28,7 @@ structured_data:
     name: GTCode
 title: Meta to Shut Down Instagram End-to-End Encrypted Chat Support Starting May
   2026
-updated_at: '2026-03-13T18:15:15.113497+00:00'
+updated_at: '2026-03-14T05:50:04.253005+00:00'
 url_hash: a31f192cb7aa8189d7da47e91933455509021d14
 ---
 

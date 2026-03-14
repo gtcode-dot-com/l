@@ -3,13 +3,13 @@ draft: false
 weight: 15
 title: "The Barrel"
 seo_title: "The Barrel — How the Strait of Hormuz Crisis Reaches Hawaii"
-subtitle: "Why Hawaii Remains Exposed Even if the First Hormuz Panic Fades"
-description: "An updated strategic assessment of how the Hormuz shock reaches Hawaii through benchmark pricing, war-risk insurance, freight, and systemic import dependence — and why a calmer oil chart does not mean the risk is over."
+subtitle: "Why Escorting Tankers Is Not the Same as Reopening the Strait"
+description: "A March 13, 2026 strategic update on how the Hormuz shock reaches Hawaii through benchmark pricing, insurance, freight, and import dependence — and why the operative questions now are escort credibility, Kharg Island, and whether a heightened U.S. threat environment turns a volatile shock into $150-plus oil."
 date: 2026-03-08
-lastmod: 2026-03-09
+lastmod: 2026-03-13
 author: "Ekewaka Lono"
 published_display: "March 8, 2026"
-modified_display: "March 9, 2026"
+modified_display: "March 13, 2026"
 type: "investigation"
 
 # SEO & Indexing
@@ -29,14 +29,16 @@ meta_keywords:
   - "hawaii war risk insurance"
   - "iran crisis hawaii energy"
   - "hawaii island economy oil"
+  - "kharg island oil terminal"
+  - "hormuz escort risk"
 
 # Card Display
 eyebrow: "Ongoing Strategic Assessment"
-card_summary: "Updated March 9: the acute oil panic eased, but Hawaii remains exposed through benchmark pricing, war-risk insurance, freight, and a supply chain with no redundancy."
+card_summary: "Updated March 13: the core risk is no longer the first panic spike but whether escorts become commercially credible, whether Kharg stays inside the target set, and whether the threat environment broadens into a $150-plus oil scenario."
 
 # Open Graph
 og_title: "The Barrel — How the Strait of Hormuz Crisis Reaches Hawaii"
-og_description: "An updated strategic assessment of how the Hormuz shock reaches Hawaii through benchmark pricing, war-risk insurance, freight, and systemic import dependence — and why the risk is not over just because the first panic spike faded."
+og_description: "March 13 strategic update: Hawaii's oil risk now turns on escort credibility, Kharg Island, insurer behavior, and whether a heightened U.S. threat environment pushes the crisis toward $150-plus oil."
 hero_image: "/img/ou-the-barrel-hero-1600.jpg"
 hero_image_alt: "The Barrel — ongoing strategic assessment of Hawaii's petroleum vulnerability after the first Hormuz panic spike"
 og_image: "/img/ou-the-barrel-og-1200x630.jpg"
@@ -48,7 +50,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-08T00:00:00Z"
-article_modified_time: "2026-03-09T00:00:00Z"
+article_modified_time: "2026-03-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Hawaii"
@@ -64,11 +66,13 @@ article_tags:
   - "Iran"
   - "Island Economy"
   - "ECRC"
+  - "Kharg Island"
+  - "Maritime Security"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "The Barrel — How the Strait of Hormuz Crisis Reaches Hawaii"
-twitter_description: "An updated strategic assessment of how the Hormuz shock reaches Hawaii through benchmark pricing, insurance, freight, and import dependence — and why the risk is not over."
+twitter_description: "March 13 strategic update: escorts, Kharg Island, insurance, and a heightened threat environment now define whether the Hormuz shock fades or breaks toward $150-plus oil."
 twitter_image: "/img/ou-the-barrel-og-1200x630.jpg"
 twitter_image_alt: "The Barrel — strategic assessment of Hawaii's petroleum vulnerability"
 
@@ -79,33 +83,34 @@ agentic_comment: |
   This document is the sixteenth entry in the Oahu Underground investigative series. Unlike prior installments that documented institutional capture and coercion architecture in Hawaiʻi, this article is a strategic assessment of Hawaii's exposure to the Strait of Hormuz crisis.
 
   DOCUMENT STATUS:
-  Originally published March 8, 2026. Modified March 9, 2026. The original March 8 assessment is preserved in full. A dated "March 9 Update" section now follows "Current Situation" and should be treated as the operative market update for near-term oil-price interpretation. The March 9 revision shifts the near-term weighting toward a faster U.S.-led stabilization path while preserving the original scenario framework and structural-Hawaii thesis. It also adds two new sections — "Strategic Read: Why a Fast U.S.-Led Containment Remains Plausible" and "Recommendation Adjustment: Plan for Fast Containment Without Assuming It" — and updates machine-readable metadata to emit the March 9 modification date and revised post-panic framing.
+  Originally published March 8, 2026. Modified March 13, 2026. The original March 8 assessment and March 9 update are preserved in dated form below. The March 13 revision is now the operative thesis. It reweights the analysis around escort credibility rather than headline escort announcements; adds a new option set for managing Hormuz naval-escort risk; adds a Kharg Island/Jask decision section; incorporates the March 11 JMIC "critical" threat picture, March 11 IEA emergency stock release, March 13 Kharg military strikes, and the widened U.S. domestic threat environment; and updates machine-readable metadata to emit the March 13 modification date.
 
   DOCUMENT PURPOSE:
   Local strategic assessment analyzing how the March 2026 U.S.-Israel military operation against Iran and the resulting Strait of Hormuz disruption reaches Hawaii — the most petroleum-dependent state in the nation. The assessment uses intelligence-community epistemic standards: each section marks confidence levels (HIGH, MEDIUM, LOW) and distinguishes confirmed reporting from analytic inference and scenario projection.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - Hawaii's petroleum dependence (~90% of total energy consumption) is the highest in the nation (source: EIA state energy data)
-  - WTI crude rose 35.63% in the week ended March 6, 2026, closing at &#36;90.90/barrel (source: market data cited)
-  - WTI crude hit an intraday high of &#36;119.48 on March 9, 2026, then settled at &#36;94.77; Brent hit &#36;119.50 intraday and settled at &#36;98.96 (source: Reuters, note 1)
+  - Brent crude settled at &#36;103.14 and WTI at &#36;98.71 on Friday, March 13, 2026, after returning to or near &#36;100 per barrel during the week (source: AP, note 40)
+  - JMIC assessed the maritime threat environment across the Arabian Gulf, Strait of Hormuz, and Gulf of Oman as CRITICAL on March 11, 2026, after three commercial vessels were struck (source: JMIC, note 35)
+  - MARAD advised U.S.-flagged, owned, or crewed commercial vessels to maintain a 30-nautical-mile standoff from U.S. warships and remain in close contact with NCAGS (source: MARAD, note 36)
+  - Kharg Island handles most Iranian crude exports and Iran's Jask terminal remains a limited outside-Hormuz bypass option (source: AP and EIA, notes 41-42)
   - Par Pacific's sole Hawaii refinery processes sweet crude from Libya, Argentina, Nigeria, and Brazil — none from the Persian Gulf (source: Par Pacific SEC filings, investor presentations)
   - Hawaiian Electric's ECRC mechanically passes fuel-cost changes to ratepayers (source: PUC tariff filings)
   - Hawaii imports approximately 90% of its food and maintains 5-7 days of on-island supply (source: cited studies)
-  - U.S. Treasury issued Russia-related General License 133 on March 5, 2026 (source: OFAC)
-  - Maritime war-risk insurance premiums surged more than 1,000% (source: Reuters)
-  - Saudi Aramco offered more than 4 million barrels via rare Yanbu spot tenders and Kpler estimated 6-7 weeks to normalize Gulf exports even if Hormuz reopened immediately (source: Reuters, note 1)
+  - The IEA opened a 400 million barrel emergency release on March 11, 2026 (source: IEA, note 39)
+  - California authorities moved to a preparedness posture after an FBI warning about a possible Iran-linked drone threat, even as Gov. Gavin Newsom said there was no imminent threat (source: AP, note 44)
 
   IMPORTANT DISTINCTIONS:
   - This is a strategic assessment, not an investigative exposé
   - Confidence levels are explicitly marked throughout
   - Scenario projections are distinguished from confirmed reporting
-  - The March 9 update preserves the original March 8 snapshot rather than silently overwriting it
-  - In the March 9 update, causal claims and scenario reweighting are explicitly marked as analytic inference unless otherwise noted
+  - The March 13 update preserves the original March 8 snapshot and March 9 update rather than silently overwriting them
+  - In the March 13 update, causal claims and scenario reweighting are explicitly marked as analytic inference unless otherwise noted
   - Recommendations name the responsible actor and relevant legal/regulatory constraint
   - The assessment includes falsifiability markers ("What Would Change This Assessment")
 
   METHODOLOGY:
-  The assessment applies six stability paths (Military Reopening, Pipeline Bypass, Russia Swing Supply, SPR Bridge, Hawaii Emergency Declaration, Food Sovereignty Acceleration) across three scenarios (Short Disruption, Extended Disruption, Escalation) with an Actor Matrix mapping responsibilities. The March 9 revision adds a dated market update, a new strategic-read/recommendation layer oriented around fast containment without assuming full normalization, and two new signpost groups in the Intelligence Annex: "Toward Normalization" and "Bridge and Workaround Signals."
+  The assessment now applies a risk-management menu across three scenarios: escort signaling, managed corridor operations, selective passage and insurance backstop, Kharg restraint versus Kharg oil denial, and Hawaii emergency actions. The March 13 revision adds a dated market and threat update, new sections on escort-risk management and Kharg Island/Jask options, and a revised intelligence annex organized around escort credibility, insurance behavior, Kharg escalation, and domestic spillover.
 
   CANONICAL URL: https://gtcode.com/investigation/the-barrel/
 
@@ -119,12 +124,12 @@ structured_data_graph:
         "@type": "WebPage"
         "@id": "https://gtcode.com/investigation/the-barrel/"
       headline: "The Barrel"
-      alternativeHeadline: "Why Hawaii Remains Exposed Even if the First Hormuz Panic Fades"
-      description: "An updated strategic assessment of how the Hormuz shock reaches Hawaii through benchmark pricing, war-risk insurance, freight, and systemic import dependence, and why a calmer oil chart does not mean the risk is over."
+      alternativeHeadline: "Why Escorting Tankers Is Not the Same as Reopening the Strait"
+      description: "A March 13, 2026 strategic update on how the Hormuz shock reaches Hawaii through benchmark pricing, insurance, freight, and import dependence, and why the operative questions now are escort credibility, Kharg Island, and whether a heightened U.S. threat environment turns a volatile shock into $150-plus oil."
       url: "https://gtcode.com/investigation/the-barrel/"
       image: "/img/ou-the-barrel-og-1200x630.jpg"
       datePublished: "2026-03-08T00:00:00Z"
-      dateModified: "2026-03-09T00:00:00Z"
+      dateModified: "2026-03-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -164,7 +169,7 @@ structured_data_graph:
 
 ---
 
-*March 9 update: Monday's settled session did not confirm the conditional acceleration case flagged in Key Judgment 2 below. WTI settled at &#36;94.77 per barrel—above Friday's &#36;90.90 close but far below Sunday's live indication above &#36;113. The original March 8 assessment is preserved in full; a dated update follows the Current Situation section.[^1]*
+*March 13 update: The operative question is no longer whether Washington can announce escorts. It is whether escorts can become commercially credible under a critical threat picture that now includes struck commercial vessels, persistent GNSS/AIS interference, insurer hesitation, emergency reserve releases, Kharg Island entering the target ladder, and a visibly heightened U.S. homeland threat posture. The original March 8 assessment and March 9 update are preserved below; the March 13 section is now the operative thesis.[^35][^36][^37][^38][^39][^40][^41][^42][^43][^44][^45][^46][^47][^48]*
 
 Start with what you already know. You live on islands in the middle of the Pacific Ocean, 2,500 miles from the nearest continent. Almost everything you touch arrived on a boat. And the commodity that powers the boats, the generators, the barges, and the planes just became a weapon of war.
 
@@ -172,25 +177,27 @@ Start with what you already know. You live on islands in the middle of the Pacif
 
 ## Key Judgments
 
-1. **Hawaii's exposure runs through benchmark pricing, war-risk insurance, freight, and systemic import dependence—the channels that connect every oil-dependent economy to the Gulf, regardless of where its crude is loaded.** Hawaii's sole refinery processes sweet crude from Libya, Argentina, Nigeria, and Brazil. The Persian Gulf supplies none of it. The Gulf supplies the price. Petroleum accounts for approximately 90% of the state's total energy consumption—the highest share in the nation—and there is no grid interconnection, no domestic crude production, and no strategic fuel reserve. *(Confidence: HIGH)*
+1. **Hawaii's exposure still runs through benchmark pricing, war-risk insurance, freight, and systemic import dependence, not through direct Persian Gulf crude purchases.** Par Pacific's refinery does not buy Gulf crude, but Hawaii still prices off a global system whose marginal fear is being set in Hormuz. Petroleum remains about 90% of total state energy consumption, food supply remains measured in days, and there is still no strategic reserve or grid interconnection.[^4][^13] *(Confidence: HIGH)*
 
-2. **The oil price shock is severe and accelerating.** WTI crude closed Friday March 6 at &#36;90.90 per barrel, up 35.63% for the week—the largest weekly percentage gain since spring 2020.[^2] Brent crude, which more closely tracks the pricing of the non-Gulf sweet crudes Par Pacific imports, moved in lockstep through the week. As of Sunday evening March 8 HST, a live WTI/USOIL print on TradingView showed prices above &#36;113, with an intraday level above &#36;115.[^3] If these levels hold into Monday's settled session, sustained benchmark prices above &#36;120 per barrel—previously a two-to-four-week projection—become a near-term possibility rather than a scenario. *(Confidence: HIGH on direction; the Sunday level is a live market indication, not a settled close.)*
+2. **The core March 13 thesis is that escorting tankers is not the same as reopening the Strait.** JMIC now assesses the regional maritime threat as critical after three commercial vessels were struck on March 10-11, and it warns of follow-on attacks against stationary ships, offshore infrastructure, ports, and navigation systems.[^35] MARAD simultaneously advises merchant ships to keep a 30-nautical-mile standoff from U.S. warships and remain in close contact with NCAGS.[^36] *Inference:* If ships cannot safely anchor, queue, load, insure, and navigate, then "escort" is a headline, not a commercial reopening. *(Confidence: HIGH)*
 
-3. **Duration is the most consequential variable for Hawaii.** A shock measured in days is painful. Measured in weeks, it forces utility pass-through, transport repricing, and household stress. Measured in months, it becomes an emergency-management problem. *(Confidence: HIGH)*
+3. **The operational menu has narrowed to a small range of real options: signaling escort, managed corridor, selective passage, Kharg restraint, Kharg oil denial, and emergency stock/insurance bridge.** Those options differ less in military feasibility than in what they do to commercial confidence and to the number of barrels the market believes will still exist next month.[^37][^38][^39][^41][^42][^43] *(Confidence: MEDIUM-HIGH)*
 
-4. **Hawaii's electricity rates will rise materially within one to two billing cycles** through Hawaiian Electric's Energy Cost Recovery Clause, which mechanically passes fuel-cost changes to ratepayers. The magnitude depends on the duration and peak of actual fuel procurement costs, which track crude benchmarks indirectly. *(Confidence: HIGH that rates will rise; MEDIUM on magnitude. See methodological note in the Electricity Generation section.)*
+4. **Kharg Island is now central because it is both Iran's main export node and the point where military and oil-war choices converge.** AP and EIA reporting indicate Kharg handles most Iranian crude exports, while Jask offers only a limited outside-Hormuz bypass.[^41][^42] Friday's U.S. strike on military sites on Kharg, coupled with a threat that oil infrastructure could be next, moves the crisis onto the threshold between military pressure and oil-infrastructure war.[^43] *(Confidence: HIGH)*
 
-5. **Food supply disruption is a tail risk that becomes a real risk if the crisis extends beyond 30 days.** Hawaii maintains approximately five to seven days of on-island food supply[^4], imports roughly 90% of its food[^4], and depends on a single-thread supply chain—ship to Honolulu, barge to neighbor islands, truck to store—that is directly exposed to fuel and insurance cost shocks. *(Confidence: MEDIUM)*
+5. **The path to &#36;150-plus oil is no longer just "Hormuz stays shut."** It is a chain: escorts fail to restore commercially credible transit, insurers remain unwilling or too expensive, Kharg or Gulf bypass terminals are degraded, and retaliation broadens across energy infrastructure or the homeland threat picture. That chain is now easier to imagine than it was on March 8. *(Confidence: MEDIUM)*
 
-6. **The stated U.S. war aim—unconditional surrender—has no clear mechanism for achievement and no diplomatic off-ramp.** The President has stated the operation could last four to five weeks, but the military objectives imply sustained operations. Every plausible path to stability carries costs: military escalation to reopen the Strait by force, sanctions collapse on Russian oil, or Chinese diplomatic leverage over post-war Gulf architecture. There is no clean path. *(Confidence: HIGH)*
+6. **Emergency stock releases and state-backed insurance can cap panic, but they cannot substitute for restored transit.** The IEA's 400 million barrel release is large enough to buy time, but even the IEA said stable flows require resumed movement through Hormuz.[^39] USNI reports Washington is also assembling a war-insurance backstop through DFC, but insurance only matters if the voyage itself is operationally plausible.[^37] *(Confidence: HIGH)*
 
-7. **The most dangerous scenario is a prolonged disruption that triggers a compounding feedback loop** unique to island economies: rising energy costs → rising food and transportation costs → tourism contraction → service-economy job losses → household income compression → inability to absorb the cost increases that triggered the cycle. This loop has no natural self-correcting mechanism in Hawaii. *(Confidence: MEDIUM. The mechanism is structural; the trigger threshold is uncertain.)*
+7. **The domestic U.S. threat environment now belongs inside the oil-risk assessment, not outside it.** California officials moved to a preparedness posture after an FBI warning about a possible Iran-linked drone threat, even as the governor said there was no imminent threat.[^44] Reuters also reported the White House halted, at least temporarily, a federal security bulletin warning of heightened Iran-related threats.[^45] The FBI and CISA both continue to frame Iran as a cyber, terrorism, and critical-infrastructure threat vector.[^47][^48] *Inference:* Homeland risk does not directly remove barrels from the market, but it does narrow Washington's tolerance for prolonged, messy escalation. *(Confidence: MEDIUM)*
+
+8. **For Hawaii, Scenario 2 is now the base case and Scenario 3 must be treated as an active contingency, not a remote tail.** Brent settled at &#36;103.14 on Friday and WTI at &#36;98.71, confirming that the market has repriced higher even after the first panic spike faded.[^40] A sustained base around &#36;100 is already enough to hit utility pass-through, freight contracts, airline pricing, and neighbor-island logistics. *(Confidence: HIGH on base-case stress; MEDIUM on escalation timing)*
 
 ---
 
-## Current Situation
+## Original March 8 Snapshot
 
-*As of Sunday evening, March 8, 2026 HST. Confirmed reporting unless otherwise noted. Weekend price levels marked[^3] are live TradingView indications, not settled closes.*
+*Preserved for record. This section reflects what was knowable on Sunday evening, March 8, 2026 HST, and is no longer the operative market read.*
 
 WTI crude closed Friday March 6 at &#36;90.90 a barrel, up 35.63% for the week—the largest weekly percentage gain since spring 2020, when prices recovered from the COVID-induced collapse.[^2] As of Sunday evening HST, a live WTI/USOIL print on TradingView showed prices above &#36;113, with an intraday level above &#36;115—an additional move of roughly 25% over the Friday close.[^3]
 
@@ -206,7 +213,7 @@ For context: the EIA's February 5 Short-Term Energy Outlook projected Brent crud
 
 ---
 
-## March 9 Update
+## March 9 Update (Historical)
 
 *As of Monday afternoon, March 9, 2026 HST. Confirmed settlement data sourced to Reuters.[^1] Market analysis sourced separately.[^11] Causal claims and scenario reweighting below are analytic inference unless otherwise noted.*
 
@@ -276,6 +283,95 @@ This is why Washington may be able to impose a rapid military ceiling on the cri
 
 ---
 
+## March 13 Update
+
+*As of Friday evening, March 13, 2026 HST. Confirmed reporting is sourced below. Causal weighting and option ranking are analytic inference unless otherwise noted.*
+
+The update is this: the market has moved from pricing a pure closure shock to pricing an argument over whether closure can be operationally managed.
+
+Brent crude settled Friday at &#36;103.14 and WTI at &#36;98.71.[^40] That is below Monday's intraday extremes, but it is still a regime shift relative to the prewar &#36;60 baseline this assessment cited earlier.[^9][^10] The key change since March 9 is not simply where crude settled. It is that the maritime threat picture worsened while the policy answer remained incomplete.
+
+On March 11, the Joint Maritime Information Center assessed the maritime threat environment across the Arabian Gulf, Strait of Hormuz, and Gulf of Oman as **CRITICAL** after three commercial vessels were struck in the Strait's transit corridor between March 10 and 11.[^35] JMIC warned that the next 24-48 hours of risk included continued UAV and missile activity, stand-off or sabotage-style attacks on stationary vessels and offshore infrastructure, and persistent GNSS interference, AIS anomalies, and communications disruption.[^35] Its operational bottom line was blunt: traffic is expected to remain heavily suppressed and any vessel transiting Hormuz does so at its own risk.[^35]
+
+MARAD's parallel guidance is equally revealing. U.S.-flagged, owned, or crewed commercial vessels are advised to maintain a 30-nautical-mile standoff from U.S. military vessels, keep clear of the area if possible, remain in close contact with NCAGS, and review the latest UKMTO and JMIC advisories before entering the region.[^36] *Inference:* This is not the posture of a waterway that is about to function normally under a simple convoy flag.
+
+### New Thesis
+
+The question is no longer whether the United States and its partners can escort some ships. The question is whether they can convert military escort into a commercially usable corridor before the threat environment broadens again.
+
+That distinction matters because oil markets care about usable flows, not press releases. A usable corridor requires at least five things at once:
+
+1. Ships willing to move.
+2. Insurers willing to write or reinsure the voyage.
+3. A navigation picture reliable enough to prevent congestion and misidentification.
+4. Port and anchorage behavior that does not leave vessels exposed while stationary.
+5. Confidence that the corridor will still exist on the return trip.
+
+JMIC's March 11 advisory shows that items 3 and 4 are still broken.[^35] MARAD's guidance shows item 5 is still fragile.[^36] USNI and Axios reporting show that the escort mission itself is still being assembled, with analysts warning that a fully set-up convoy scheme may take until late March or even early April.[^37][^38] *Inference:* The market is currently paying for a corridor that exists in outline, not in finished commercial form.
+
+### Range of Escort-Risk Management Options
+
+There is now a real option space. The options are not morally equivalent, and they do not produce the same oil outcome.
+
+**Option 1: Signaling escort.** Announce escorts, push more naval hulls into the region, and use the announcement itself to calm futures. This can cap panic for a session or two. It does not solve mine risk, stationary-vessel risk, loading windows, or insurance. *Inference:* This is a market-management tactic, not a reopening plan.[^37][^38]
+
+**Option 2: Managed corridor.** Build a true corridor with NCAGS coordination, mine-countermeasure work, route discipline, moving transits, electronic-warfare support, and state-backed war-risk insurance. This is the first option that can plausibly restore partial commercial flow. It is also the slowest and most resource-intensive because every missing layer turns the corridor back into Option 1.[^35][^36][^37]
+
+**Option 3: Selective passage.** Accept that not every ship will move and instead prioritize certain flags, cargoes, or politically backed voyages while others stay anchored. France, Pakistan, and other states are already discussing or building national escort concepts, and Washington is working on a U.S.-led version.[^38][^37] *Inference:* This would move some oil and LNG without restoring a genuinely open market. It lowers price pressure at the margin but entrenches a fragmented, discriminatory shipping regime.
+
+**Option 4: Insurance-first bridge.** Use DFC or other public balance sheets to backstop large war-risk losses while waiting for escorts to mature.[^37] This matters because insurance paralysis can shut a route even when the Navy thinks it is open. But it is only a bridge. If shipowners still believe loading berths, anchorage zones, or return voyages are unsafe, they will not sail just because the deductible changed.
+
+**Option 5: Coercive suppression short of oil war.** Expand strikes on Iranian mine-laying vessels, coastal missile batteries, surveillance nodes, drone launch sites, and military facilities on islands such as Kharg while deliberately sparing export loading equipment.[^37][^43] *Inference:* This is the cleanest military way to improve escort odds without immediately deleting Iranian export barrels from the global supply stack.
+
+No serious option exists in which escorts alone fix the problem. The real choice is whether governments are willing to pay the political, military, and fiscal cost of all the layers that make escort commercially credible.
+
+### Kharg Island and Jask: The Option Space
+
+Kharg Island is where the crisis shifts from maritime-risk management into oil-war management.
+
+AP reports that Kharg handled almost all of Iran's roughly 1.6 million barrels per day of prewar crude exports, with multiple tankers still seen loading there after the war began.[^41] EIA's Iran backgrounder is even starker: Kharg is Iran's largest export terminal, handles most crude exports, and has reportedly been upgraded to about 7 million barrels per day of loading capacity.[^42] Jask matters because it gives Iran an export point east of the Strait, but AP describes it as limited and EIA notes that the terminal remains a project whose long-run capacity ambitions far exceed what is evidently usable today.[^41][^42]
+
+That creates four Kharg options:
+
+**Kharg restraint.** Hit only military or ISR assets on and around Kharg, keep the oil terminal outside the target set, and preserve some Iranian export capacity. Friday's U.S. strikes on military sites there fit this model so far.[^43] *Inference:* This improves the odds of future escort success because it punishes interference without removing Iranian export barrels.
+
+**Kharg coercive signaling.** Threaten oil infrastructure, temporarily halt loading, or force tankers to disperse without destroying the terminal.[^43] This increases pressure on Tehran while leaving room to reverse course. It also raises the price floor immediately because the market starts discounting eventual export loss.
+
+**Kharg oil denial.** Strike loading arms, storage, pumping, or supporting oil infrastructure directly. That would remove Iranian barrels from a market already losing Gulf flows. *Inference:* Militarily, it may look like leverage. Commercially, it is one of the shortest routes to &#36;150-plus oil because it converts a navigational choke-point crisis into a true supply-destruction crisis.
+
+**Jask denial.** If Washington decides Iran cannot be allowed an outside-Hormuz bypass, the Jask/Goreh-Jask chain becomes part of the target ladder too.[^41][^42] But once Jask enters the target set, Iran's incentive to retaliate against Yanbu, Fujairah, Abqaiq, or other bypass architecture rises sharply. That is escalation by symmetry.
+
+The cleanest insight from this week's reporting is that *Kharg restraint and escort management belong together; Kharg oil denial and &#36;150-plus oil belong together.*
+
+### How This Turns Into &#36;150-Plus Oil
+
+This assessment's March 8 version treated &#36;150-plus oil as a low-probability infrastructure-war tail. That remains directionally right, but the pathway is clearer now.
+
+The most plausible escalation ladder looks like this:
+
+1. Escort plans are announced, but commercial traffic remains heavily suppressed because of mine risk, spoofing, and stationary-vessel attacks.[^35][^36][^37]
+2. Governments respond with state-backed insurance and selective passage, which moves some ships but not enough to restore confidence.[^37][^38]
+3. Kharg or Jask enter the oil target set, or Iran infers they are next and retaliates against alternative export infrastructure such as Fujairah or Yanbu.[^41][^42][^43]
+4. Emergency stock releases stop feeling like stabilization and start feeling like depletion.[^39]
+5. A widened U.S. domestic threat picture reduces the political appetite for a long, expensive corridor-clearing war while also raising cyber and terrorism concerns at home.[^44][^45][^46][^47][^48]
+
+At that point, the market no longer sees a temporary maritime disruption. It sees a durable loss of export nodes, a finite reserve bridge, and an unstable homeland policy environment. That is how &#36;150 becomes plausible without every single day of Hormuz traffic being zero.
+
+### What This Means for Hawaii Now
+
+For Hawaii, the practical implication is not that physical scarcity has already arrived. It is that the lower-risk interpretation of the crisis now depends on several things going right in sequence, and several of them are still missing.
+
+The crude benchmarks in Friday's settlement range already imply future pressure on Hawaiian Electric fuel-cost pass-through, aviation pricing, freight surcharges, and inter-island diesel economics.[^16][^40] What changed this week is that the commercial normalization story got more conditional: it now depends on a corridor that does not yet fully exist, an insurance market that still needs public help, and restraint around Kharg that may or may not hold.
+
+The state should therefore act as though the crisis has entered a more complex second phase:
+
+- Oil is no longer in pure panic, but it is still in a higher and more dangerous regime.
+- Fast military stabilization remains possible, but it is no longer the only story the evidence supports.
+- The threshold between maritime management and infrastructure war is now visible and close.
+- Hawaii's emergency posture should be keyed to commercial indicators and cyber/terror posture together, not oil charts alone.
+
+---
+
 ## Hawaii's Structural Exposure
 
 *Confirmed structural data. Scenario projections are labeled.*
@@ -296,9 +392,9 @@ Hawaiian Electric's Energy Cost Recovery Clause mechanically passes fuel-cost ch
 
 With that caveat, the following scenarios illustrate the range of residential rate outcomes under sustained crude price levels, based on the historical relationship between benchmark crude and ECRC filings:
 
-- **At ~&#36;90/bbl crude** (Friday settled close): Residential rates likely push toward 48–52 cents per kWh. For a household consuming 495 kWh per month, roughly &#36;240–&#36;260—up from the 2024 average of &#36;212.[^15]
-- **At ~&#36;113/bbl crude** (Sunday evening live WTI/USOIL level[^3]): Rates likely push toward 52–58 cents per kWh. Monthly bills for an average household approach &#36;255–&#36;290. If this level holds into settled trading, Hawaii is already in the middle tier of this scenario range.
-- **At &#36;120–&#36;150/bbl** (plausible if disruption continues beyond two weeks): Rates could reach 55–65 cents per kWh. Monthly bills for an average household approach &#36;270–&#36;320. Neighbor island households, where distribution costs are higher and grids are smaller, would face steeper increases.
+- **At ~&#36;100/bbl crude** (roughly the current March 13 WTI/Brent regime[^40]): Residential rates likely push toward 50–55 cents per kWh. For a household consuming 495 kWh per month, roughly &#36;248–&#36;272—already well above the 2024 average of &#36;212.[^15]
+- **At ~&#36;120/bbl crude** (plausible under a prolonged selective-passage or failed-corridor phase): Rates likely push toward 54–60 cents per kWh. Monthly bills for an average household approach &#36;267–&#36;297.
+- **At &#36;135–&#36;150/bbl** (plausible if Kharg or bypass infrastructure enters the oil target set): Rates could reach 58–66 cents per kWh. Monthly bills for an average household approach &#36;287–&#36;327. Neighbor island households, where distribution costs are higher and grids are smaller, would face steeper increases.
 - **Above &#36;150/bbl** (tail scenario if conflict escalates or extends beyond six weeks): Rate projections become unreliable. The question shifts from bill size to system viability—whether the barges that distribute refined fuel from Oahu to Maui, Kauai, and the Big Island can continue operating at a cost that keeps the lights on at all.
 
 *Methodological note: These estimates assume Hawaiian Electric's fuel procurement costs track crude benchmarks with approximately the elasticity observed in historical ECRC filings. The actual relationship is indirect—mediated by fuel contracts, hedging positions, product-to-crude spreads, and the share of generation from renewables. Petroleum fuels roughly two-thirds of the state's electricity; the ECRC adjusts for the difference between actual fuel costs and the fuel cost assumed in base rates. The ranges above are directional estimates, not rate-case projections. Actual rate adjustments depend on timing, fuel mix, and PUC regulatory process.*
@@ -309,7 +405,7 @@ Hawaii's petroleum consumption divides roughly into thirds: electricity generati
 
 Hawaii's sole refinery, operated by Par Pacific in the Honolulu port area, processes approximately 94,000 barrels per day.[^18] Its crude comes mainly from Libya, Argentina, Nigeria, and Brazil—not from the Persian Gulf.[^18]
 
-In the base case, the crude itself keeps coming—Par Pacific's sources are outside the Gulf, and Latin American and West African supply routes are not directly disrupted. But continued sourcing at manageable freight rates is an assumption, not a certainty (see Key Uncertainty #7 in the Intelligence Annex). The exposure runs through four channels:
+In the base case, the crude itself keeps coming—Par Pacific's sources are outside the Gulf, and Latin American and West African supply routes are not directly disrupted. But continued sourcing at manageable freight rates is still an assumption, not a certainty. The exposure runs through four channels:
 
 1. **Global benchmark pricing.** The refinery buys crude on the world market, priced primarily off Brent and regional benchmarks. When benchmarks spike, Hawaii's input costs spike regardless of the barrel's origin.
 2. **Tanker availability and freight rates.** A global shipping disruption thins the tanker pool for all routes, including trans-Pacific. Freight rates rise worldwide.
@@ -388,11 +484,11 @@ No strategic petroleum reserve. No natural gas infrastructure. A lone refinery p
 
 *Analytic inferences drawn from confirmed data. These are assessments, not sourced facts.*
 
-Hawaii's crude supply is physically distant from the Gulf disruption. The crisis reaches the islands through benchmark prices, freight rates, and insurance premiums. Local resilience depends on whether global shipping and insurance conditions normalize—the origin stamp on the next crude cargo is irrelevant.
+Hawaii's crude supply is still physically distant from the Gulf disruption. The crisis still reaches the islands through benchmark prices, freight rates, and insurance premiums. What changed is that the key commercial variable is now escort credibility, not just the abstract status of the Strait.
 
-The base-case near-term effect is inflationary pressure before physical scarcity. The signs to watch: utility fuel-cost adjustments, freight surcharges, airline repricing, refinery or barge operating notices, and evidence that Gulf shipping delays are spreading into wider tanker availability problems.
+The base-case near-term effect is still inflationary pressure before physical scarcity. But the indicators have widened. The state now has to watch utility fuel-cost adjustments, freight surcharges, airline repricing, refinery or barge operating notices, cyber posture, and any sign that the homeland threat picture is feeding back into U.S. risk tolerance.
 
-Duration is the hinge variable. A sharp spike lasting days is painful. At weeks, household budgets and transport economics change. At months, the state faces a logistics and social-protection crisis.
+Duration remains the hinge variable. But the more precise March 13 formulation is this: a multi-week crisis with restrained Kharg targeting is painful; a multi-week crisis that shifts into oil-infrastructure war is where the Hawaii problem becomes much harder, much faster.
 
 Everything below this line is projection.
 
@@ -402,112 +498,112 @@ Everything below this line is projection.
 
 *Projections. These are structured estimates of how the crisis could evolve, not predictions. Each scenario is conditioned on a stated trigger and time horizon.*
 
-### Scenario 1: Military Strait Reopening + Pipeline Bypass (Partial Restoration)
+### Scenario 1: Managed Corridor + Kharg Restraint
 
-**Trigger:** U.S. Navy establishes escort corridor through the Strait—sustained minesweeping, carrier group escort, degradation of IRGC coastal missile batteries—while Gulf states activate pipeline bypass capacity. Saudi Arabia's East-West Pipeline (Petroline, ~5 million bpd capacity to Yanbu on the Red Sea) and the UAE's ADCOP pipeline (~1.5 million bpd to Fujairah, outside the Strait) ramp to maximum throughput. Combined pipeline bypass recovers perhaps 6–7 million of the 20 million bpd normally transiting Hormuz. SPR and IEA coordinated release bridges the gap.
-**Time horizon:** Two to six weeks for partial flow restoration.
-**Oil:** Benchmarks moderate to &#36;75–&#36;95 as partial flow resumes; elevated but manageable.
-**Critical constraint:** Whether the U.S. can project sufficient force simultaneously in the Strait *and* inland Iran. The Pentagon faces a timeline measured in days to demonstrate this capability. Iran may target pipeline terminals and Red Sea port facilities, turning the bypass into a new front.
-**Hawaii:** Electricity rate adjustment is significant but manageable—one to two billing cycles of elevated ECRC charges. Food price increases of 5–10%. Tourism impact moderate.
-**Confidence: MEDIUM.** The most likely path over the near term (one to six weeks). The military capability exists; the question is whether the IRGC can sustain denial operations against escorted convoys.
+**Trigger:** The U.S. and partners move from announced escort to a real managed corridor: minesweeping, route discipline, NCAGS coordination, state-backed insurance, and sustained military pressure on Iranian launch and surveillance nodes. Kharg military assets remain targetable, but Kharg's oil-loading system stays outside the target set. IEA emergency stocks bridge the delay while bypass routes through Yanbu and Fujairah expand.[^35][^36][^37][^39][^43]
+**Time horizon:** Two to six weeks to partial flow normalization.
+**Oil:** Benchmarks moderate into roughly the &#36;90–&#36;110 range, with high volatility but a visible ceiling.
+**Critical constraint:** The corridor has to be commercially usable, not just militarily announced. JMIC's current warning on stationary vessels and navigation interference shows how much work remains.[^35]
+**Hawaii:** Electricity and freight costs still rise, but the shock stays in the "painful, not catastrophic" range. Food inflation lands with a lag rather than a shortage dynamic.
+**Confidence: MEDIUM.** This is plausible, but it requires several missing layers to come together at once.
 
-### Scenario 2: Contested Strait + Russian Sanctions Collapse
+### Scenario 2: Selective Passage + Insurance Bridge + Kharg Under Threat
 
-**Trigger:** Military operations continue at current pace for four to eight weeks. Strait escort operations are partially successful but insufficient to restore full flow. Gulf pipeline bypass is active but constrained by Iranian targeting of infrastructure. Meanwhile, the sanctions architecture against Russian oil collapses under its own weight: the 30-day OFAC India waiver[^7] is the first crack, and as the crisis extends, the U.S. tacitly drops Russian oil enforcement to keep prices below catastrophic levels. Russia becomes the most important marginal barrel on earth—and Moscow knows it.
-**Time horizon:** Four to eight weeks of elevated disruption; gradual normalization as Russian supply fills the gap.
-**Oil:** Benchmarks trade in the &#36;100–&#36;130 range for four to eight weeks, moderating as Russian barrels re-enter global markets without sanctions friction.
-**Strategic cost:** This hands Moscow the leverage it wanted over Ukraine negotiations. The war in Iran may effectively end the sanctions war on Russia.
-**Hawaii:** Electricity rates rise materially within two billing cycles. Food prices rise 10–20% with a two-to-six-week lag. Tourism begins measurable decline. Inter-island logistics costs spike. State emergency planning should be activated. Low-income households face genuine hardship.
-**Confidence: MEDIUM-HIGH.** The most likely path if the crisis extends beyond six weeks—consistent with the administration's stated timeline, reflecting the path of least resistance on Russian sanctions.
+**Trigger:** Some ships move under national or U.S.-led protection, but commercial traffic remains heavily suppressed and fragmented. Public insurance or reserve releases cap panic, Russian barrels and non-Gulf flows do some bridging work, Kharg remains threatened but not fully disabled, and Jask remains too small to solve Iran's export problem.[^37][^38][^39][^41][^42]
+**Time horizon:** Four to eight weeks of contested normalization.
+**Oil:** Benchmarks trade mostly in the &#36;105–&#36;130 range, with spikes whenever convoy credibility or Kharg restraint looks shaky.
+**Strategic cost:** This is a half-open market: enough movement to avoid total scarcity, not enough to restore trust. The crisis grinds on, reserves deplete, insurers remain cautious, and the sanctions architecture around Russian oil continues eroding under price pressure.
+**Hawaii:** This is the base-case stress scenario. Utility pass-through, airfares, freight costs, and neighbor-island diesel economics all worsen within the same budgeting window. State emergency planning should be warm and operational.
+**Confidence: MEDIUM-HIGH.** This is the current base case because it requires the fewest miracles.
 
-### Scenario 3: Prolonged Infrastructure War (Most Dangerous)
+### Scenario 3: Escort Failure + Kharg Oil Loss + Regional Retaliation
 
-**Trigger:** Conflict escalates to broader infrastructure destruction—U.S. strikes on Iranian oil and gas facilities are met with Iranian retaliation against Gulf state oil infrastructure (Saudi Aramco, UAE ADNOC). Pipeline terminals and bypass routes are targeted. Hormuz effectively closed for months. Significant regional production infrastructure is damaged or destroyed. SPR reserves deplete without resolution—depleted strategic stocks and an ongoing supply crisis simultaneously.
-**Time horizon:** Two to six months of severe disruption.
-**Oil:** Benchmarks exceed &#36;150; sustained above &#36;120 for months. At this level, demand destruction becomes the de facto rationing mechanism.
-**Global:** Global recession. Energy rationing in import-dependent economies. Fundamental repricing of energy security assumptions worldwide.
-**Hawaii:** Electricity bills approach or exceed double current levels. Food supply chain under severe stress—the five-to-seven-day reserve buffer becomes operationally relevant. Tourism faces significant contraction. Inter-island barge economics may become unviable for some routes without state subsidy. Low-income households and neighbor island communities face crisis-level hardship. The feedback loop described in this assessment becomes the dominant economic dynamic.
-**Confidence: LOW.** The most dangerous scenario. Its probability is low; its consequences warrant contingency planning regardless.
+**Trigger:** Escort efforts fail to restore commercially credible transit; Kharg or Jask enter the oil target set; Iran retaliates against Gulf bypass infrastructure or major energy nodes; reserve releases continue but look finite; and domestic terrorism or cyber concerns further constrain political decision-making in Washington.[^35][^39][^43][^44][^45][^47][^48]
+**Time horizon:** Two to twelve weeks for the repricing; months for normalization.
+**Oil:** Benchmarks move through &#36;150 and can overshoot higher if both Iranian export capacity and Gulf alternative routes are hit.
+**Global:** This is the transition from maritime shock to real supply destruction. Recession risk and explicit demand destruction become central.
+**Hawaii:** The problem ceases to be "higher bills" and becomes "how to keep the logistics system functioning." Inter-island barge economics, food buffers, low-income payment distress, and tourism contraction all move into the same emergency lane.
+**Confidence: MEDIUM on the pathway, LOW on precise timing.** The steps are now visible enough that this can no longer be dismissed as a remote abstraction.
 
-### Potential Modifier: China as Maritime Broker
+### Potential Modifier: China-Linked or National-Flag Passage
 
-*This is a speculative variable, not a scenario. No evidence has emerged as of this writing that China is pursuing a maritime brokerage role. The assessment below rests on strategic incentive analysis, not observed action.*
+*This is a modifier, not a scenario. The evidence still points to fragmented national responses more than a fully brokered settlement.*
 
-Across all scenarios, one variable could accelerate normalization: China's self-interest. Beijing's entire energy import architecture depends on the Strait of Hormuz. China has the diplomatic relationship with Tehran—or whatever emerges as Iranian leadership—to broker a de facto maritime corridor, a tacit arrangement where commercial shipping resumes even while military operations continue inland. The precedent is the Iran-Iraq War tanker wars of the 1980s, when shipping continued through a combat zone under escort and insurance arrangements.
-
-If Beijing were to broker such a corridor, the insurance and freight components of Hawaii's exposure would begin normalizing even while the conflict continues—front-loading the price spike into a severe but shorter period. **The indicator to watch:** Chinese-flagged tankers transiting Hormuz, China-Iran diplomatic intensification, or insurers offering corridor-specific coverage. Until those indicators appear, this variable should be weighted accordingly.
+If Chinese, French, Pakistani, or other nationally backed voyages begin transiting under bespoke security arrangements while the broader market stays cautious, prices could ease without genuine normalization.[^38] That would help Hawaii at the margin by reducing benchmark panic. It would not fix the underlying insurance and availability problem, because a fragmented escort market is still a constrained market.
 
 ---
 
-## Paths to Stability
+## Risk-Management Options
 
-*Analytic framework. These are assessed pathways, not assured outcomes. Recommendations name the responsible actor and relevant constraints.*
+*Analytic framework. These are assessed options, not assured outcomes. Recommendations name the responsible actor and relevant constraints.*
 
-There is no clean path. The assumption underlying this section is that the U.S. and Israel are prosecuting a kinetic campaign with stated objectives that require sustained operations—unconditional surrender, a four-to-five-week timeline, strikes on oil infrastructure on day six, and continued escalation. The Strait stays closed for weeks to months. There is no ceasefire until the military objectives are met or the campaign becomes unsustainable.
+There is no clean path. The basic March 13 conclusion is that any workable path now has to solve both a military problem and a commercial one. A navy can clear a lane. Only a combined military-insurance-routing package can turn that lane into usable oil flow.
 
-Through that eye of the needle, these are the actual routes to price stabilization. Each involves tradeoffs that would be unthinkable in normal times.
+Through that eye of the needle, these are the actual options. Each involves tradeoffs that would be politically uncomfortable in normal times and strategically dangerous in wartime.
 
-### Path 1: Strait Reopening by Force
+### Option 1: Signal and Buy Time
 
-The most likely near-term path is military. The U.S. Navy attempts to clear and escort commercial shipping through the Strait while the campaign continues inland. This requires sustained minesweeping, carrier group escort, and degradation of IRGC coastal missile batteries along the Iranian shoreline. The President has proposed an escort scheme.
+The first option is the cheapest politically: announce escorts, surge naval presence, talk openly about convoys, and let the announcement compress the risk premium. The virtue is speed. The weakness is that the market quickly tests whether the signal corresponds to a real voyage plan.
 
-The critical question is whether the U.S. can project sufficient force simultaneously in the Strait and inland Iran. The Pentagon faces a timeline measured in days to demonstrate this capability. If escort operations begin and tankers resume transit—even partially, even under fire—the price spike moderates significantly. If the IRGC demonstrates the ability to sustain strikes against escorted convoys, the market prices in prolonged closure.
+*Hawaii implication:* This option can knock a few dollars off the screen temporarily. It should not be mistaken for resilience.
 
-*Hawaii implication:* A successful escort operation is the fastest path to price relief. Partial reopening under military escort still means elevated insurance premiums, high freight rates, and gradual supply recovery. Hawaii should plan for four to eight weeks of elevated prices even under this best-case military scenario.
+### Option 2: Build a Managed Corridor
 
-### Path 2: Pipeline Bypass Around the Strait
+This is the first serious reopening option. It requires minesweeping, moving transits, escort timing, NCAGS deconfliction, EW/GNSS mitigation, clear port procedures, and a financial backstop for war-risk insurance.[^35][^36][^37] It is slow because every commercial weak point must be solved, not just every military one.
 
-Saudi Arabia's East-West Pipeline (Petroline) can move approximately 5 million barrels per day from the Eastern Province to Yanbu on the Red Sea, bypassing Hormuz entirely. The UAE's ADCOP pipeline moves roughly 1.5 million bpd to Fujairah on the Gulf of Oman, outside the Strait. Neither pipeline is operating at full capacity.
+*Critical constraint:* JMIC's current warning about attacks on stationary vessels means the corridor has to protect anchorage and loading behavior, not only moving tankers.[^35] If ships can be hit while waiting, the corridor never becomes economically normal.
 
-If Gulf states activate maximum bypass capacity while the Strait is contested, that recovers perhaps 6–7 million of the 20 million bpd normally transiting Hormuz—far short of full replacement, but a floor under the worst-case supply scenario that prevents the market from pricing in total Gulf supply loss.
+*Hawaii implication:* This is still the best realistic path to lower prices without deleting more barrels from the market. It just takes longer than a headline cycle.
 
-*Critical constraint:* Iran is striking Saudi and UAE infrastructure. Pipeline terminals and Red Sea port facilities become targets. The bypass path works only if the U.S. and coalition can defend the pipeline endpoints while simultaneously prosecuting the campaign. If Iran demonstrates the ability to interdict pipeline terminals, this path closes and the price spikes further.
+### Option 3: Selective Passage and Insurance Backstop
 
-*Hawaii implication:* Pipeline bypass is a global supply stabilizer. It does not directly affect Hawaii's crude sourcing—which comes from Latin America and West Africa—but it moderates the global benchmark price that determines what Par Pacific pays for every barrel.
+If a universal corridor is too hard in the near term, governments can move into a selective model: certain flags, certain cargos, certain national escorts, and public loss-sharing through DFC or other state vehicles.[^37][^38] Saudi and UAE bypass pipelines, plus tolerated Russian supply, fit inside the same logic: move enough barrels to stop panic, even if the market is still visibly broken.
 
-### Path 3: Russia as the Swing Supplier
+*Critical constraint:* Selective passage lowers the ceiling without restoring normality. That means a persistent price floor stays in the market.
 
-This is the path no one in Washington wants to acknowledge, and it may be the one that matters most.
+*Hawaii implication:* This is the most realistic near-term path, which is why Hawaii should budget against the Scenario 2 range rather than hope for Scenario 1 by default.
 
-With Gulf supply constrained, Russia becomes the most important marginal barrel on earth. Moscow knows this. The 30-day OFAC waiver for Russian crude to India[^7] is the first crack—the U.S. is already quietly allowing Russian oil flows it had been sanctioning. If the Strait stays closed for weeks, the sanctions architecture against Russian oil collapses under its own weight, because the alternative is &#36;200+ crude and global recession.
+### Option 4: Kharg Restraint
 
-The "stability" here is that the U.S. tacitly drops Russian oil enforcement to keep prices below catastrophic levels. This hands Moscow exactly the leverage it wanted over Ukraine negotiations. The war in Iran may effectively end the sanctions war on Russia.
+This option keeps Kharg's oil terminal outside the target set while allowing military assets on or around the island to be struck. Friday's Kharg strikes appear to fit that pattern so far.[^43] It is a narrow path: punish interference, preserve some Iranian export capacity, and keep the crisis from becoming an explicit oil-destruction war.
 
-*Hawaii implication:* If Russian barrels re-enter the global market at scale, the price spike moderates. Hawaii benefits indirectly through lower benchmark prices. This path has no timeline Hawaii can plan around—it depends entirely on Washington's willingness to accept a geopolitical concession it has so far refused.
+*Critical constraint:* Tehran has to believe restraint is real. If it expects Kharg oil infrastructure to be next anyway, it has incentive to retaliate preemptively against bypass routes.
 
-### Path 4: SPR and Allied Reserves as a Bridge
+*Hawaii implication:* Kharg restraint is one of the few external choices that directly lowers Hawaii's probability of seeing a jump from stressful to catastrophic oil prices.
 
-The U.S. Strategic Petroleum Reserve holds approximately 350 million barrels. IEA member nations collectively hold significant additional reserves. A coordinated release can bridge 60–90 days of partial supply replacement.
+### Option 5: Kharg Oil Denial
 
-*Critical constraint:* This only works if there is a credible timeline for Strait restoration—whether by military reopening (Path 1), pipeline bypass (Path 2), or diplomatic arrangement. If the campaign extends beyond the President's four-week estimate, reserves deplete without resolution: depleted strategic stocks and an ongoing supply crisis. An SPR release without a credible restoration timeline is a bridge to nowhere.
+This option targets Kharg's export function directly or expands the target ladder to Jask and the Goreh-Jask chain.[^41][^42][^43] It raises the military cost to Tehran, but it also removes Iranian barrels the market is still counting on and increases the odds of symmetric retaliation against Yanbu, Fujairah, Abqaiq, or tankers further from the Strait.
 
-*Hawaii implication:* SPR release is the most likely federal action in the next one to two weeks. It buys time. Hawaii should not plan as though time alone solves the problem.
+*Critical constraint:* Once oil infrastructure is openly in the war, reserve releases start looking finite very quickly.[^39]
 
-### Path 5: What Hawaii Can Actually Do
+*Hawaii implication:* This is the option most directly associated with the article's original &#36;150-plus warning. If it becomes policy, Hawaii's planning horizon compresses.
 
-The four paths above are outside Hawaii's control. The state cannot reopen the Strait, activate Saudi pipelines, or negotiate sanctions policy. What follows is what the state can do—and should be doing now, before the next billing cycle. Each recommendation names the responsible actor and the constraint that governs it.
+### Option 6: What Hawaii Can Actually Do
 
-**Cross-sector monitoring.** *Actor: Governor's office. Trigger: Now.* Utilities, the refinery, major food distributors, ocean carriers, barge operators, and state emergency management should be on a common reporting rhythm—a cross-sector monitoring cell convened by the governor's office this week. The alternative is each sector reacting to its own signals on its own timeline, which is what happens by default.
+The options above are outside Hawaii's control. The state cannot clear mines, insure supertankers, or set Kharg targeting policy. What the state can do is stop pretending that a calmer futures tape solves the local problem.
 
-**Pre-negotiate federal asks.** *Actor: Governor's office, congressional delegation. Trigger: Now.* If conditions worsen, the state should already know what it wants from Washington—on waivers, fuel prioritization, emergency support, and FEMA channels. Building the request during the crisis costs weeks. Building it now costs hours.
+**Cross-sector monitoring with a security lane.** *Actor: Governor's office, HI-EMA, fusion-center/law-enforcement partners. Trigger: Now.* Utilities, the refinery, major food distributors, ocean carriers, barge operators, state emergency management, cyber responders, and law-enforcement threat analysts should be on a common reporting rhythm. The state's risk is now commercial and security-linked.
+
+**Pre-negotiate federal asks.** *Actor: Governor's office, congressional delegation. Trigger: Now.* If conditions worsen, the state should already know what it wants from Washington—on waivers, fuel prioritization, emergency support, FEMA channels, and any data or access needed to understand war-risk pass-through from carriers and fuel suppliers.
 
 **Emergency Jones Act waiver petition.** *Actor: Governor, to DHS/CBP. Legal basis: 46 U.S.C. § 501. Trigger: Sustained crude above &#36;100 or freight surcharges exceeding 25%.* The statute authorizes waivers when "necessary in the interest of national defense."[^20] There is precedent—waivers were granted for Puerto Rico after Hurricane Maria. The "national defense" threshold is high; an active war that disrupts global oil supply is the strongest factual basis for meeting it. A waiver would increase the pool of eligible vessels and introduce competitive pressure on freight rates. The maritime industry will oppose it. The political calculus changes under sustained crisis.
 
-**Emergency demand reduction.** *Actor: Hawaiian Electric (operational), PUC (regulatory), Governor (emergency declaration). Trigger: Now.* Hawaii has no state strategic petroleum reserve. The available levers are demand-side: Hawaiian Electric implements rolling conservation measures and public conservation campaigns immediately. Formal demand-response programs are limited—Hawaiian Electric's EnergyScout program operates only on Oahu and is currently closed to new participants, and Hawaii Island has no demand-response program at present.[^29][^30] The realistic near-term tools are conservation appeals, voluntary commercial load reduction, and rate signals—not automated demand response at scale. The governor declares an energy emergency under HRS § 127A, unlocking federal assistance channels. The difference between acting now and acting after the first &#36;300 utility bill arrives is the difference between managed hardship and political crisis.
+**Emergency demand reduction.** *Actor: Hawaiian Electric (operational), PUC (regulatory), Governor (emergency declaration). Trigger: Now.* Hawaii has no state strategic petroleum reserve. The available levers are demand-side: Hawaiian Electric implements rolling conservation measures and public conservation campaigns immediately. Formal demand-response programs are limited—Hawaiian Electric's EnergyScout program operates only on Oahu and is currently closed to new participants, and Hawaii Island has no demand-response program at present.[^29][^30] The realistic near-term tools are conservation appeals, voluntary commercial load reduction, and rate signals—not automated demand response at scale.
 
 **Fast-track permitted renewable projects.** *Actor: PUC, DLNR, county permitting authorities. Trigger: Now for projects already in permitting; structural reform otherwise.* Every megawatt of solar or battery storage that comes online during this crisis is a megawatt that does not burn &#36;90+ oil. Permitting acceleration is within the governor's authority under an energy emergency declaration. The honest constraint: permitting is not the only bottleneck—interconnection, procurement, and construction timelines mean that most queued projects will not deliver power within the 30-day shock window. The emergency action is to identify projects that are genuinely shovel-ready (permits issued, equipment procured, interconnection approved) and clear remaining obstacles for those. Broader permitting reform belongs in the structural reform section below, where it can compound over the medium term.
 
-**Emergency food supply coordination.** *Actor: Department of Agriculture, HI-EMA, major distributors. Trigger: Crude sustained above &#36;120 for two weeks.* With five to seven days of on-island food supply[^4], the state should immediately assess inventory levels with major distributors, identify priority shipping for essential goods, and establish communication channels for potential allocation. The absence of a plan under Scenario 3 is indefensible, regardless of how unlikely Scenario 3 may seem today.
+**Emergency food supply coordination.** *Actor: Department of Agriculture, HI-EMA, major distributors. Trigger: Crude sustained above &#36;120 for two weeks, or any clear commercial sign of reduced sailings.* With five to seven days of on-island food supply[^4], the state should immediately assess inventory levels with major distributors, identify priority shipping for essential goods, and establish communication channels for potential allocation. The absence of a plan under Scenario 3 is indefensible.
 
 **Low-income bill relief.** *Actor: Hawaiian Electric (proposal), PUC (approval), state legislature (funding). Constraint: Any rate deferral or expansion of assistance programs requires PUC authorization or legislative appropriation; LIHEAP funds flow through the federal-state pipeline.* Hawaiian Electric should file for emergency bill-relief measures for qualifying low-income households before the ECRC adjustment hits. Defer rate increases, expand existing assistance programs, or create emergency payment plans. The alternative is mass disconnections during a crisis. The deferred costs shift to other ratepayers or the general fund. That is a cost worth bearing.
 
 **Inter-island logistics contingency.** *Actor: State DOT, Young Brothers, Governor's office. Trigger: Diesel sustained above &#36;5.50/gallon.* The state should assess, with Young Brothers, minimum viable barge schedules and pricing under &#36;120+ diesel. If certain neighbor island routes become uneconomical, the emergency backstop—state subsidy, military logistics support, or something else—needs to be identified before the barges stop running.
 
-### Path 6: The Food Sovereignty Question
+### Option 7: The Food Sovereignty Question
 
 *Lower-confidence, longer-term implication. The thesis below is directionally plausible but unquantified.*
 
-This path operates on a longer timeline, but the crisis creates the political conditions that decades of agricultural policy papers could not.
+This option operates on a longer timeline, but the crisis creates the political conditions that decades of agricultural policy papers could not.
 
 The directional argument: at &#36;150+ oil, the cost of importing food to Hawaii rises enough that local production becomes more competitive relative to imports. The crisis creates a market signal favoring local agriculture that normal pricing does not.
 
@@ -537,7 +633,7 @@ If Hawaii survives this crisis without structural reform, the next one will arri
 
 ## The Honest Conclusion
 
-There is no clean path. Every route to stability involves accepting costs that would be unthinkable in normal times—military escalation in the Strait, sanctions collapse on Russia, Chinese diplomatic leverage over post-war Gulf architecture, or demand destruction that falls hardest on the people least equipped to absorb it.
+There is no clean path. The March 13 version is harsher than the March 9 version for one reason: the crisis is no longer only about whether the Strait is contested. It is now also about whether escorts can be made commercially real, whether Kharg stays outside the oil target set, and whether the threat environment broadens far enough to shrink Washington's room for error.
 
 Gulf crude was never headed for Honolulu. What reaches the islands is a global oil-and-shipping shock, poured into the most petroleum-dependent, electrically fragmented, and import-reliant state in the country.
 
@@ -559,114 +655,101 @@ The state can plan for what comes next, or it can absorb the hit. That decision 
 
 ## Watch Indicators / Signposts
 
-The following developments would shift the assessment. Monitor daily. Organized by the stability paths identified in the main analysis.
+The following developments would shift the assessment. Monitor daily. Organized by the option set identified in the main analysis.
 
-### Path 1 Indicators: Military Strait Reopening
+### Escort Credibility Indicators
 
-- U.S. Navy announces or begins minesweeping/escort operations in the Strait
-- First escorted tanker transits Hormuz (even under fire—partial flow is a signal)
-- IRGC coastal missile battery degradation confirmed by CENTCOM
-- Conversely: IRGC successfully strikes escorted convoy → market prices in sustained closure
+- JMIC downgrades the regional threat picture from **critical**
+- First escorted tanker completes a full round trip, including loading and departure, without incident
+- NCAGS begins publishing routine transit windows or deconfliction guidance for merchant shipping
+- MARAD softens current standoff and caution language
+- War-risk quotes begin to fall from crisis pricing toward merely expensive pricing
+- Conversely: another moving or stationary commercial vessel is struck despite announced escort coverage
 
-### Path 2 Indicators: Pipeline Bypass
+### Insurance, Selective Passage, and Bridge Indicators
 
-- Saudi Aramco announces Petroline throughput increase toward 5M bpd capacity
-- UAE activates additional ADCOP pipeline capacity to Fujairah
-- Conversely: Iran strikes Yanbu terminal or Fujairah port → bypass path closes
-- Red Sea shipping lanes face new insurance repricing
+- DFC or allied public war-risk backstop is formally launched with disclosed loss capacity
+- French, Pakistani, or other national escort concepts begin producing actual sailings rather than planning statements
+- Chinese-linked or other politically backed tankers begin repeat transits through Hormuz
+- Saudi Petroline and UAE Fujairah-linked bypass throughput rises materially
+- OFAC extends or broadens Russian oil flexibility beyond April 4
+- IEA reserve release is paired with evidence of real physical-flow recovery rather than only lower panic pricing
 
-### Path 3 Indicators: Russian Sanctions Collapse
+### Kharg Island and Jask Indicators
 
-- OFAC extends India waiver beyond April 4 or broadens to other buyers
-- U.S. does not enforce secondary sanctions on Russian oil purchases by non-sanctioned countries
-- Russian seaborne crude exports increase above pre-crisis levels
-- G7 price cap enforcement visibly weakens
-
-### China Maritime Brokering Indicators
-
-- China-Iran diplomatic contacts intensify (MFA statements, envoy dispatches)
-- Commercial shipping resumes through Strait under non-U.S. escort or flag arrangements
-- Chinese-flagged tankers transit Hormuz without incident
-- Lloyd's or other insurers begin offering corridor-specific coverage
+- Additional strikes hit Kharg military sites while oil loading equipment remains untouched
+- Washington or Jerusalem explicitly threatens Kharg oil infrastructure as the next rung on the ladder
+- Tankers disperse from Kharg anchorage or loading pauses are reported
+- Jask sees repeat loadings at volumes large enough to matter
+- Iranian threats or strikes shift toward Yanbu, Fujairah, Abqaiq, or other bypass infrastructure
+- Goreh-Jask pipeline facilities enter public reporting as potential targets
 
 ### Toward Escalation (Higher Risk for Hawaii)
 
-- U.S. or Israeli strikes on Iranian oil or gas production infrastructure
-- Iran retaliates against Gulf state oil facilities (Saudi Aramco, UAE ADNOC terminals)
-- Insurance underwriters issue blanket exclusion zones covering the entire Persian Gulf
-- Benchmarks cross &#36;120 and hold for 48+ hours
-- Par Pacific or Hawaiian Electric invoke force majeure or announce allocation restrictions
-- Young Brothers announces barge service reductions or surcharges to neighbor islands
-- Hawaii food distributors report wholesale price increases exceeding 15%
-- Visitor arrival data shows month-over-month decline exceeding 10%
+- Kharg oil loading arms, storage, pumping systems, or associated export infrastructure are struck
+- Jask or the Goreh-Jask chain are disabled
+- Insurance underwriters move from punitive pricing to effective blanket exclusion
+- Benchmarks cross &#36;120 and hold for 48+ hours, or spike above &#36;140 on infrastructure news
+- Par Pacific, Hawaiian Electric, Young Brothers, or major food distributors cite allocation, schedule reduction, or force-majeure-type behavior
+- A material domestic terror or cyber incident in the United States is tied credibly to the crisis
 
 ### Toward Normalization (Lower Risk for Hawaii)
 
-- Ceasefire announced or credible diplomatic framework emerges
-- U.S. Navy begins escorted tanker transits through the Strait (Path 1 activation)
-- Tanker traffic resumes through Hormuz under any flag arrangement
-- Iraq southern production resumes above 3 million bpd
-- War-risk insurance premiums decline for Gulf-adjacent routes
-- Benchmarks fall below &#36;85 and hold for 48+ hours
-
-### Bridge and Workaround Signals (Price Relief Without Underlying Resolution)
-
-- IEA announces coordinated strategic reserve release with specific volumes and timeline
-- OFAC extends or broadens Russian oil waiver beyond April 4 (Path 3 acceleration)
-- G7 commits to "necessary measures" with specific volume commitments
-- Saudi pipeline bypass throughput confirmed above 4 million bpd via Yanbu (Path 2 activation)
-- WTI fails to reclaim &#36;100 for 48+ hours despite no change in Strait status
-
-*These signals moderate price pressure and buy time. They do not indicate the underlying disruption is resolving. If bridge mechanisms exhaust without physical restoration of Gulf flows, the market reprices upward.*
+- Repeated escorted round trips occur without further vessel strikes
+- JMIC lowers the threat assessment and reports reduced spoofing or interference
+- Kharg oil infrastructure is explicitly kept outside the target set
+- War-risk premiums decline in parallel with, not ahead of, higher physical traffic
+- Brent falls below &#36;95 and holds while actual tanker movement improves
 
 ### Hawaii-Specific Signposts
 
-- Governor convenes (or fails to convene) emergency energy task force
-- Hawaiian Electric publishes (or does not publish) ECRC scenario analysis
-- Jones Act waiver petition filed or denied
-- First ECRC rate adjustment reflecting &#36;90+ crude hits residential bills
-- Neighbor island food or fuel shortages reported
+- Governor convenes an integrated energy, freight, and security task force
+- Hawaiian Electric publishes ECRC scenario analysis tied to current benchmark ranges
+- Jones Act waiver petition is filed or placed in ready-to-file status
+- First major fuel or freight surcharges hit neighbor-island routes
+- Food distributors report inventory management or allocation measures
+- State agencies begin public preparedness messaging beyond routine "2-Weeks Ready" framing
 
 ## Key Uncertainties
 
-1. **U.S. force projection capacity.** Whether the Navy can simultaneously prosecute the inland campaign and establish a Strait escort corridor. This is the most consequential near-term variable—it determines whether Path 1 (the fastest route to price relief) is viable.
+1. **Escort-to-corridor conversion.** Whether the Navy and its partners can turn announced escort into a corridor merchant shipping actually trusts.
 
-2. **IRGC denial capability.** Whether Iran can sustain strikes against escorted convoys and pipeline terminals. If the IRGC is degraded quickly, Paths 1 and 2 open within weeks. If it demonstrates sustained capability, the market prices in months of disruption.
+2. **Insurance sufficiency.** Whether public backstops are large and fast enough to matter before shipowners permanently re-route or wait out the crisis.
 
-3. **Russian sanctions architecture durability.** Whether the U.S. maintains sanctions enforcement against Russian oil under crisis conditions. The 30-day India waiver is the leading indicator. If extended or expanded, Russian barrels re-enter the market and moderate prices—at the cost of Moscow's strategic leverage.
+3. **Stationary-vessel and port risk.** Whether the threat to anchored, waiting, loading, or discharging vessels remains too high even if moving transits improve.
 
-4. **Chinese diplomatic intent.** Whether Beijing actively brokers a maritime corridor or limits itself to rhetorical ceasefire calls. China's energy import dependence gives it urgent incentive; the question is whether it acts. As of this writing, no evidence of active brokerage has emerged.
+4. **Kharg restraint durability.** Whether Washington continues to distinguish between military targets on Kharg and the island's export function.
 
-5. **SPR bridge-to-what.** Whether strategic stock releases buy time for a credible restoration path or simply deplete reserves without resolution.
+5. **Jask usability.** Whether Iran can make Jask a meaningful export workaround or whether it remains strategically interesting but commercially marginal.
 
-6. **Insurance market behavior.** Whether war-risk premiums stabilize at current levels, rise further, or whether underwriters effectively withdraw coverage for Gulf-adjacent routes. The distinction between "extremely expensive" and "unavailable" is operationally significant for Hawaii's tanker supply chain.
+6. **Bridge durability.** Whether reserve releases, Russian flexibility, and bypass flows buy enough time for real normalization rather than simply delay a sharper repricing.
 
-7. **Hawaii refinery crude sourcing.** Whether Par Pacific can continue sourcing sweet crude from Latin America and West Africa at manageable freight rates, or whether global tanker dislocation disrupts even non-Gulf routes.
+7. **Domestic spillover.** Whether the U.S. homeland threat environment worsens through cyber or terrorism pressure, further constraining federal decision-making.
 
-8. **Speed of state response.** Whether Hawaii's government acts in the next two weeks or waits for the crisis to arrive on utility bills. The difference is between managed hardship and political crisis.
+8. **Speed of state response.** Whether Hawaiʻi acts before the crisis appears on household bills and shelves, or only after.
 
-## Stability Paths × Actor Matrix
+## Risk-Management Options × Actor Matrix
 
-| Actor | Path 1: Military Reopening | Path 2: Pipeline Bypass | Path 3: Russia Swing | Path 4: SPR Bridge | Path 5: Hawaii Emergency | Path 6: Food Sovereignty |
-|-------|---------------------------|------------------------|---------------------|-------------------|------------------------|------------------------|
-| **Federal govt** | CENTCOM execution; escort authorization | Diplomatic support for Gulf state activation | OFAC waiver decisions; sanctions enforcement | SPR release authorization; IEA coordination | Jones Act waiver (DHS); LIHEAP; priority fuel allocation | USDA emergency programs |
-| **State of Hawaiʻi** | Monitor; no direct role | Monitor; no direct role | Monitor; no direct role | Petition for priority allocation | Emergency declaration (HRS §127A); task force; permitting acceleration; demand reduction | Land use reclassification; water permits; institutional procurement |
-| **Hawaiian Electric** | Monitor; prepare for rate moderation | Monitor | Monitor | Coordinate with federal fuel allocation | ECRC scenario publication; conservation campaigns; voluntary commercial load reduction (formal DR is Oahu-only and limited[^29][^30]); low-income relief filing (PUC); clear obstacles for shovel-ready renewable projects | N/A |
-| **Par Pacific** | Assess Strait escort feasibility for crude deliveries | Monitor alternative supply routes | Evaluate Russian crude sourcing | Coordinate with SPR distribution | Communicate supply status; contingency planning | N/A |
-| **Households** | Budget for 4–8 weeks elevated prices | N/A | N/A | N/A | Conservation; 14-day food and supply buffer per HI-EMA "2-Weeks Ready" guidance[^33][^34] (households with means should consider extending to 30 days given multi-week supply chain lag, but 14 days is the state standard); review fixed costs | Support local agriculture where possible |
+| Actor | Option 1: Signal | Option 2: Managed Corridor | Option 3: Selective Passage / Insurance | Option 4: Kharg Restraint | Option 5: Kharg Oil Denial | Option 6: Hawaiʻi Emergency | Option 7: Food Sovereignty |
+|-------|------------------|----------------------------|-----------------------------------------|---------------------------|----------------------------|----------------------------|----------------------------|
+| **Federal govt** | Public deterrent signaling | CENTCOM, Navy, NCAGS, mine warfare, escort rules | DFC backstop, sanctions flexibility, allied coordination | Targeting discipline | Escalation decision and strike authorization | Jones Act waiver, LIHEAP, FEMA, fuel prioritization | USDA emergency programs |
+| **State of Hawaiʻi** | Monitor | Monitor | Petition for data access and federal support | Monitor | Monitor | Emergency declaration (HRS §127A), integrated task force, demand reduction, preparedness messaging | Land use, water, institutional procurement |
+| **Hawaiian Electric** | Monitor | Monitor procurement conditions | Monitor war-risk pass-through and fuel procurement | Monitor | Monitor | ECRC scenario publication, conservation campaigns, low-income relief filing, clear shovel-ready projects | N/A |
+| **Par Pacific** | Monitor market signals | Assess corridor usability for crude cargos | Assess insurance and alternative sourcing | Monitor export-node restraint | Assess impact on global crude balances | Communicate supply status, contingency planning | N/A |
+| **Households** | Budget cautiously | Budget for several weeks of elevated prices | Expect sticky higher costs even if headlines calm | N/A | Prepare for severe-price scenario | Conservation; 14-day food and supply buffer per HI-EMA "2-Weeks Ready" guidance[^33][^34] (households with means should consider extending to 30 days given multi-week supply chain lag) | Support local agriculture where possible |
 
 ## What Would Change This Assessment
 
 This assessment would require significant revision if any of the following occurred:
 
-- **U.S. Navy successfully escorts tankers through Hormuz** → Downgrade price projections; shift to Scenario 1 as base case
-- **Iran strikes Saudi pipeline terminals or Fujairah port** → Upgrade to Scenario 3; pipeline bypass path closes; price projections increase significantly
-- **OFAC extends or expands Russian oil waiver** → Signal that sanctions collapse (Path 3) is underway; moderate medium-term price projections but flag strategic cost
-- **China brokers observable maritime corridor arrangement** → Front-loaded spike followed by moderation; shift insurance and freight projections downward
-- **SPR release exceeds 100M barrels with IEA coordination** → Moderate price impact projections for 60–90 days, but flag reserve depletion risk
-- **Par Pacific announces crude sourcing disruption or force majeure** → Upgrade Hawaii-specific risk to critical; recommend emergency federal fuel allocation
-- **Hawaiian Electric announces emergency rate surcharge exceeding 30%** → Activate immediate low-income relief; demand-reduction recommendations become urgent
-- **Governor declares energy emergency** → Positive signal; shifts Path 5 from recommendation to active implementation
+- **Repeated escorted round trips occur without further vessel strikes** → Shift toward Scenario 1 as base case
+- **JMIC lowers the threat level while insurers materially ease terms** → Downgrade price-risk projections
+- **Washington explicitly keeps Kharg oil infrastructure outside the target set** → Lower the probability of the &#36;150-plus path
+- **Kharg oil loading or Jask export infrastructure is struck** → Upgrade immediately toward Scenario 3
+- **Yanbu, Fujairah, Abqaiq, or comparable bypass infrastructure is hit** → Treat the oil-war scenario as active, not contingent
+- **A verified domestic terror or cyber attack materially tied to the crisis occurs in the United States** → Raise escalation risk and policy-friction assumptions
+- **Par Pacific announces crude sourcing disruption or force majeure** → Upgrade Hawaiʻi-specific risk to critical
+- **Governor declares an integrated energy emergency and begins filing relief requests** → Positive local signal; does not erase the global risk, but improves Hawaiʻi's odds of managed hardship
 
 ---
 
@@ -739,3 +822,31 @@ This assessment would require significant revision if any of the following occur
 [^33]: Hawaiʻi Emergency Management Agency, "Preparedness Information" (14-day household preparedness guidance). https://dod.hawaii.gov/hiema/preparedness-information/
 
 [^34]: Hawaiʻi Emergency Management Agency, "2-Weeks Ready in Hawaiʻi" public preparedness campaign. https://dod.hawaii.gov/hiema/2-weeks-ready-in-hawai%CA%BBi/
+
+[^35]: Joint Maritime Information Center, "Update 011 — JMIC Advisory Note," March 11, 2026. https://www.ukmto.org/-/media/ukmto/products/update-011---jmic-advisory-note-11_mar_2026_final.pdf
+
+[^36]: U.S. Maritime Administration, "2026-001A-Strait of Hormuz, Persian Gulf, Gulf of Oman, and Arabian Sea-Military Operations and Potential Retaliatory Strikes by Iranian Forces," March 2026. https://www.maritime.dot.gov/msci/2026-001a-strait-hormuz-persian-gulf-gulf-oman-and-arabian-sea-military-operations-and
+
+[^37]: USNI News, "Operation Epic Escort: Pentagon Weighs Options on Strait of Hormuz Transits," March 10, 2026. https://news.usni.org/2026/03/10/operation-epic-escort-pentagon-weighs-options-on-strait-of-hormuz-transits
+
+[^38]: Axios, "Trump officials: Ship escorts to start in Strait of Hormuz 'soon'," March 13, 2026. https://www.axios.com/2026/03/13/strait-hormuz-convoy-us-iran
+
+[^39]: International Energy Agency, "IEA opens emergency stock release to calm global oil markets," March 11, 2026. https://www.iea.org/news/iea-opens-emergency-stock-release-to-calm-global-oil-markets
+
+[^40]: Associated Press, "Oil prices rise again as Israeli troops approach Tehran and Trump urges evacuation of the city," March 13, 2026. https://apnews.com/article/2424327d60295e3ac67d8cb4e64dc859
+
+[^41]: Associated Press, "How infrastructure helps Iran's oil keep flowing, even as Middle East war rages," March 13, 2026. https://apnews.com/article/24c4f3851748ff4cf35284fa0065b7a5
+
+[^42]: U.S. Energy Information Administration, "Iran Country Analysis Brief," updated February 27, 2026. https://www.eia.gov/international/analysis/country/IRN
+
+[^43]: Associated Press, "US strikes military sites on Iran's Kharg Island and warns oil facilities could be next," March 13, 2026 HST / March 14, 2026 UTC. https://apnews.com/article/561f7190d2025bfc8de61475d6e5f507
+
+[^44]: Associated Press, "California officials on alert after FBI issues warning of possible Iran-linked drone threat," March 13, 2026. https://apnews.com/article/e17f6527044cb4506cf0bbf9af6a22a7
+
+[^45]: Reuters via Al-Monitor, "White House halts bulletin warning of Iran-related threats: Reuters," March 7, 2026. https://www.al-monitor.com/originals/2026/03/white-house-halts-bulletin-warning-iran-related-threats-reuters
+
+[^46]: U.S. Department of Homeland Security, "DHS Issues National Terrorism Advisory System Bulletin Amid Israel-Iran Conflict," June 22, 2025; see also DHS's NTAS archive page, which showed no current advisories on the March 2026 archived page view. https://www.dhs.gov/news/2025/06/22/dhs-issues-national-terrorism-advisory-system-bulletin-amid-israel-iran-conflict ; https://www.dhs.gov/national-terrorism-advisory-system
+
+[^47]: Federal Bureau of Investigation, "Iran" (counterintelligence threat overview). https://www.fbi.gov/investigate/counterintelligence/iran
+
+[^48]: CISA, "CISA and Partners Urge Critical Infrastructure to Stay Vigilant in the Current Geopolitical Environment," June 30, 2025. https://www.cisa.gov/news-events/alerts/2025/06/30/cisa-and-partners-urge-critical-infrastructure-stay-vigilant-current-geopolitical-environment

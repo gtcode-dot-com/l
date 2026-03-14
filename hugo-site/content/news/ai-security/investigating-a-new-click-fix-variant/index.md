@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-13T14:15:14.751365+00:00'
-exported_at: '2026-03-13T14:15:16.993555+00:00'
+date: '2026-03-14T05:50:06.002122+00:00'
+exported_at: '2026-03-14T05:50:07.458833+00:00'
 feed: https://feeds.feedburner.com/TheHackersNews
 language: en
 source_url: https://thehackernews.com/2026/03/investigating-new-click-fix-variant.html
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: Investigating a New Click-Fix Variant
-updated_at: '2026-03-13T14:15:14.751365+00:00'
+updated_at: '2026-03-14T05:50:06.002122+00:00'
 url_hash: 56a5498b85cdd3c8bd253778265cff16c354e95f
 ---
 

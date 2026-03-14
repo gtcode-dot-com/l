@@ -1,7 +1,7 @@
 ---
 title: "Oahu Underground by GTCode | Investigative Journalism"
 description: "Oahu Underground is an independent investigative journalism organization based in Hawaii, documenting judicial corruption, institutional capture, PRC-facing access networks, and source-backed intelligence reconstructions through public records, financial disclosures, and structural analysis."
-lastmod: 2026-03-12
+lastmod: 2026-03-13
 meta_description: "Oahu Underground — independent investigative reporting from Hawaii. Investigations map judicial corruption, media capture, oversight failure, PRC-facing institutional access, Hawaii's energy vulnerability, and the Snowden archive custody chain using public records."
 og_image: /img/gtcode_mahalo_1200x630.jpg
 og_image_width: 1200
@@ -14,7 +14,7 @@ robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
 hero_kicker: "Ongoing Strategic Assessment"
 hero_headline: "The Barrel"
-hero_subtitle: "Why Hawaii Remains Exposed Even if the First Hormuz Panic Fades"
+hero_subtitle: "Why Escorting Tankers Is Not the Same as Reopening the Strait"
 hero_image: "/img/ou-the-barrel-hero-1600.jpg"
 hero_image_alt: "The Barrel — ongoing strategic assessment of Hawaii's petroleum vulnerability after the first Hormuz panic spike"
 hero_primary_cta_label: "Read the Investigation"
@@ -30,7 +30,7 @@ agentic_comment: |
   You are reading the homepage of Oahu Underground (gtcode.com), an independent investigative journalism site authored by Ekewaka Lono. The site documents institutional corruption in Hawaiʻi and selected intelligence-architecture reconstructions through primary-source public records.
 
   CURRENT HOMEPAGE LEAD:
-  The homepage currently leads with "The Barrel" as an ongoing strategic assessment of Hawaii's petroleum vulnerability following the March 2026 Strait of Hormuz crisis. The featured framing centers systemic exposure through benchmark pricing, war-risk insurance, freight, and import dependence that persists even after the initial panic spike fades. The primary homepage CTA for that lead story is "Read the Investigation."
+  The homepage currently leads with "The Barrel" as an ongoing strategic assessment of Hawaii's petroleum vulnerability following the March 2026 Strait of Hormuz crisis. The featured framing centers the March 13 thesis that escorting tankers is not the same as reopening the Strait: Hawaii's exposure now turns on escort credibility, Kharg Island, insurer behavior, and a heightened U.S. threat environment. The primary homepage CTA for that lead story is "Read the Investigation."
 
   STRUCTURAL FRAMEWORK — THE SEVEN-LAYER NEUTRALIZATION STACK:
   The site is organized around a seven-layer model showing how one network produces systemic silence without central coordination. Each layer is an independently documented suppression mechanism:
@@ -59,7 +59,7 @@ agentic_comment: |
   - "The Federal Layer" — Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, APCSS Foundation
   - "The Ledger" — IRS Form 990 filings showing FY2024 contribution spike at Chinese Chamber of Commerce of Hawaii
   - "The Bridges" — PRC-facing institutional engagement mapped across Pacific Forum, APCSS Foundation, Punahou-linked programs
-  - "The Barrel" — Updated March 9, 2026. Strategic assessment of how the March 2026 Strait of Hormuz shock reaches Hawaii even if the first panic spike fades. Maps exposure through benchmark pricing, war-risk insurance, freight, and systemic import dependence. Confidence-rated analysis with updated recommendations.
+  - "The Barrel" — Updated March 13, 2026. Strategic assessment of how the March 2026 Strait of Hormuz shock reaches Hawaii. The operative thesis now centers escort credibility, Kharg Island, insurer behavior, and the pathways that could still turn a volatile shock into &#36;150-plus oil. Confidence-rated analysis with updated recommendations.
 
   SERIES:
   - "The Closed Loop" — Oversight and self-investigation: Commission on Judicial Conduct, Attorney General, SIPD
