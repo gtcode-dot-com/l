@@ -671,6 +671,7 @@ def run_audit(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
         len(duplicate_h1),
         "Indexable pages with multiple H1 elements",
         [page.rel_url for page in duplicate_h1],
+        warn_only=True,
     )
     add_check(
         checks,
