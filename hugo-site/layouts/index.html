@@ -25,16 +25,11 @@
 {{- end -}}
 {{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
 {{- $zoneOfPoliteness := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
-{{- $twoQuestionsPage := .Site.GetPage "/investigation/the-two-questions" -}}
-{{- $twoQuestionsHome := .Site.GetPage "/homepage-fragments/the-two-questions" -}}
-{{- if and (not $twoQuestionsHome) $twoQuestionsPage -}}
-  {{- $twoQuestionsHome = $twoQuestionsPage -}}
-{{- end -}}
-{{- $heroHeadline := .Params.hero_headline | default "The Barrel" -}}
+{{- $heroHeadline := .Params.hero_headline | default "The Shape of the Cage" -}}
 {{- if and $lead (eq (lower (strings.TrimSpace $heroHeadline)) (lower (strings.TrimSpace $lead.Title))) -}}
   {{- $heroHeadline = printf "%s Investigative Series" $heroHeadline -}}
 {{- end -}}
-{{- $homeHeroImage := .Params.hero_image | default "/img/ou-the-barrel-hero-1600.jpg" -}}
+{{- $homeHeroImage := .Params.hero_image | default "/img/ou-shape-of-the-cage-hero-1600.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
   {{- $heroParsed := urls.Parse $homeHeroImage -}}
   {{- with $heroParsed.Path -}}
@@ -255,63 +250,6 @@
     <div class="site-nav-overlay" aria-hidden="true"></div>
 
     <main class="site-main" id="main-content">
-      {{ if $twoQuestionsHome }}
-      {{ $twoQuestionsUpdated := $twoQuestionsHome.Lastmod }}
-      {{ with $twoQuestionsHome.Params.lastmod }}{{ $twoQuestionsUpdated = time.AsTime . }}{{ end }}
-      {{ if $twoQuestionsUpdated.IsZero }}{{ $twoQuestionsUpdated = $twoQuestionsHome.Date }}{{ end }}
-      {{ $twoQuestionsLink := $twoQuestionsHome.RelPermalink }}
-      {{ if $twoQuestionsPage }}{{ $twoQuestionsLink = $twoQuestionsPage.RelPermalink }}{{ end }}
-      <section class="ou-section">
-        <div class="ou-section-wide">
-          <article class="ou-article">
-            <header class="ou-article-header">
-              {{ with $twoQuestionsHome.Params.eyebrow }}
-              <span class="ou-article-badge">{{ . }}</span>
-              {{ end }}
-              <h2 class="ou-article-title">{{ $twoQuestionsHome.Title }}</h2>
-              {{ with $twoQuestionsHome.Params.subtitle }}
-              <p class="ou-article-subtitle">{{ . }}</p>
-              {{ end }}
-              <div class="ou-article-meta">
-                {{ with $twoQuestionsHome.Params.author }}
-                <span>By {{ . }}</span>
-                {{ end }}
-                <span>&bull;</span>
-                <span>Published: <time datetime="{{ $twoQuestionsHome.Date.Format "2006-01-02" }}">{{ $twoQuestionsHome.Params.published_display | default ($twoQuestionsHome.Date.Format "January 2, 2006") }}</time></span>
-                {{ if ne ($twoQuestionsUpdated.Format "2006-01-02") ($twoQuestionsHome.Date.Format "2006-01-02") }}
-                <span>&bull;</span>
-                <span>Updated: <time datetime="{{ $twoQuestionsUpdated.Format "2006-01-02" }}">{{ $twoQuestionsHome.Params.modified_display | default ($twoQuestionsUpdated.Format "January 2, 2006") }}</time></span>
-                {{ end }}
-              </div>
-            </header>
-
-            {{ with ($twoQuestionsHome.Params.hero_image | default $twoQuestionsHome.Params.og_image) }}
-            <figure class="ou-article-hero">
-              {{ partial "media/responsive-image.html" (dict
-                "page" $
-                "src" .
-                "alt" ($twoQuestionsHome.Params.hero_image_alt | default $twoQuestionsHome.Params.og_image_alt | default $twoQuestionsHome.Title)
-                "slot" "investigation_article_hero"
-                "loading" "eager"
-                "fetchpriority" "high"
-                "width" ($twoQuestionsHome.Params.hero_image_width | default $twoQuestionsHome.Params.og_image_width | default 1200)
-                "height" ($twoQuestionsHome.Params.hero_image_height | default $twoQuestionsHome.Params.og_image_height | default 630)
-              ) }}
-            </figure>
-            {{ end }}
-
-            <div class="ou-article-content">
-              {{ printf "%s" $twoQuestionsHome.Content | safeHTML }}
-            </div>
-
-            <footer class="ou-article-footer">
-              <a class="ou-article-back" href="{{ $twoQuestionsLink }}">Open the standalone investigation &rarr;</a>
-            </footer>
-          </article>
-        </div>
-      </section>
-      {{ end }}
-
       <!-- Hero Banner -->
       <section class="ou-hero">
         <div class="ou-hero-image">
@@ -328,11 +266,11 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/investigation/the-barrel/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Ongoing Strategic Assessment" }}</a></p>
+          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/investigation/the-shape-of-the-cage/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Structural Analysis" }}</a></p>
           <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
-          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "Why Hawaii Remains Exposed Even if the First Hormuz Panic Fades" }}</p>
+          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "How Networked Coercion Works Without a Conspiracy" }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-barrel/" }}">{{ .Params.hero_primary_cta_label | default "Read the Investigation" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-shape-of-the-cage/" }}">{{ .Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
             <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/investigation/" }}">{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>
@@ -480,7 +418,6 @@
       {{- $featuredPaths := slice -}}
       {{- if $lead }}{{ $featuredPaths = $featuredPaths | append $lead.RelPermalink }}{{ end -}}
       {{- if $zoneOfPoliteness }}{{ $featuredPaths = $featuredPaths | append $zoneOfPoliteness.RelPermalink }}{{ end -}}
-      {{- if $twoQuestionsPage }}{{ $featuredPaths = $featuredPaths | append $twoQuestionsPage.RelPermalink }}{{ end -}}
       {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
 
       {{/* Also exclude Closed Loop series members — they get their own showcase */}}

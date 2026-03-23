@@ -13,7 +13,6 @@
 {{- end -}}
 {{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
 {{- $zoneOfPoliteness := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
-{{- $twoQuestions := .Site.GetPage "/investigation/the-two-questions" -}}
 {{- $consultingPage := .Site.GetPage "section" "consulting" -}}
 {{- $consultingURL := "/consulting/" -}}
 {{- if $consultingPage }}{{ $consultingURL = $consultingPage.RelPermalink }}{{ end -}}
@@ -31,13 +30,13 @@
 {{- $data := .Site.Data.neutralization_stack -}}
 # {{ .Title }}
 
-{{ .Params.hero_kicker | default "Prosecution Roadmap" }}
+{{ .Params.hero_kicker | default "Structural Analysis" }}
 
-## {{ .Params.hero_headline | default "The Two Questions" }}
+## {{ .Params.hero_headline | default "The Shape of the Cage" }}
 
-{{ .Params.hero_subtitle | default "One Witness. Two Questions. ~1.8 Years on the Clock." }}
+{{ .Params.hero_subtitle | default "How Networked Coercion Works Without a Conspiracy" }}
 
-[{{ .Params.hero_primary_cta_label | default "Read the Roadmap" }}]({{ .Params.hero_primary_cta_url | default "/investigation/the-two-questions/" }})
+[{{ .Params.hero_primary_cta_label | default "Read the Analysis" }}]({{ .Params.hero_primary_cta_url | default "/investigation/the-shape-of-the-cage/" }})
 [{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}]({{ .Params.hero_secondary_cta_url | default "/investigation/" }})
 
 ---
@@ -149,7 +148,6 @@ Published {{ $lead.Date.Format "January 2, 2006" }} · Updated {{ $leadUpdated.F
 {{- $featuredPaths := slice -}}
 {{- if $lead }}{{ $featuredPaths = $featuredPaths | append $lead.RelPermalink }}{{ end -}}
 {{- if $zoneOfPoliteness }}{{ $featuredPaths = $featuredPaths | append $zoneOfPoliteness.RelPermalink }}{{ end -}}
-{{- if $twoQuestions }}{{ $featuredPaths = $featuredPaths | append $twoQuestions.RelPermalink }}{{ end -}}
 {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
 
 {{- $closedLoopSeries := .Site.GetPage "/investigation/the-closed-loop" -}}
