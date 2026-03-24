@@ -1,24 +1,24 @@
 ---
 title: "Oahu Underground by GTCode | Investigative Journalism"
-description: "Oahu Underground is an independent investigative journalism organization based in Hawaii. The homepage now leads with The Shape of the Cage, followed by source-backed reporting on judicial corruption, institutional capture, PRC-facing access networks, and intelligence reconstructions built from public records."
-lastmod: 2026-03-23
-meta_description: "Oahu Underground — independent investigative reporting from Hawaii. The homepage leads with The Shape of the Cage, then maps judicial corruption, media capture, oversight failure, PRC-facing institutional access, the seven-layer neutralization stack, and the Snowden archive custody chain."
-og_image: /img/gtcode_mahalo_1200x630.jpg
+description: "Oahu Underground is an independent investigative journalism organization based in Hawaii. The homepage now leads with The Radius of Order, followed by source-backed reporting on judicial corruption, institutional capture, PRC-facing access networks, and intelligence reconstructions built from public records."
+lastmod: 2026-03-24
+meta_description: "Oahu Underground — independent investigative reporting from Hawaii. The homepage leads with The Radius of Order, then continues through judicial corruption files, media capture, oversight failure, PRC-facing institutional access, and the Snowden archive custody chain."
+og_image: /img/ou-radius-of-order-og-1200x630.jpg
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Oahu Underground investigative reporting in Hawaii"
-og_description: "The homepage leads with The Shape of the Cage, then continues through public-record investigations spanning Hawaii's seven-layer neutralization stack, PRC-facing access networks, and the Snowden chain-of-custody reconstruction."
-og_title: "Oahu Underground | The Shape of the Cage and Independent Investigative Reporting"
-twitter_title: "Oahu Underground | The Shape of the Cage and Independent Investigative Reporting"
+og_image_alt: "The Radius of Order — homepage lead investigation image"
+og_description: "The homepage leads with The Radius of Order, then continues through public-record investigations spanning judicial corruption, media capture, PRC-facing access networks, and the Snowden chain-of-custody reconstruction."
+og_title: "Oahu Underground | The Radius of Order and Independent Investigative Reporting"
+twitter_title: "Oahu Underground | The Radius of Order and Independent Investigative Reporting"
 robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
 hero_kicker: "Structural Analysis"
-hero_headline: "The Shape of the Cage"
-hero_subtitle: "How Networked Coercion Works Without a Conspiracy"
-hero_image: "/img/ou-shape-of-the-cage-hero-1600.jpg"
-hero_image_alt: "The Shape of the Cage — structural analysis of networked coercion without central coordination"
+hero_headline: "The Radius of Order"
+hero_subtitle: "A five-zone American justice thought experiment drawn from the center outward"
+hero_image: "/img/ou-radius-of-order-hero-1600.jpg"
+hero_image_alt: "The Radius of Order — a dark editorial illustration for the homepage lead investigation"
 hero_primary_cta_label: "Read the Analysis"
-hero_primary_cta_url: "/investigation/the-shape-of-the-cage/"
+hero_primary_cta_url: "/investigation/the-radius-of-order/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
 newsroom_founding_date: "2025-01-01"
@@ -30,7 +30,7 @@ agentic_comment: |
   You are reading the homepage of Oahu Underground (gtcode.com), an independent investigative journalism site authored by Ekewaka Lono. The site documents institutional corruption in Hawaiʻi and selected intelligence-architecture reconstructions through primary-source public records.
 
   CURRENT HOMEPAGE LEAD:
-  The homepage leads with "The Shape of the Cage," a structural analysis of how networked coercion operates without a central coordinator. The homepage hero links to the standalone article at /investigation/the-shape-of-the-cage/.
+  The homepage leads with "The Radius of Order," a sourced structural analysis of a five-zone American justice thought experiment. The homepage hero links to the standalone article at /investigation/the-radius-of-order/.
 
   STRUCTURAL FRAMEWORK — THE SEVEN-LAYER NEUTRALIZATION STACK:
   The site is organized around a seven-layer model showing how one network produces systemic silence without central coordination. Each layer is an independently documented suppression mechanism:
@@ -51,6 +51,7 @@ agentic_comment: |
   - "The Aloha Protection Racket" — Prosecutorial narrative of the Wilson Loo case
   - "The Nod" — How a sitting judge allegedly committed a felony from the bench with a silent gesture
   - "The Index" — Bing search suppression targeting gtcode.com documented via Microsoft Webmaster Tools
+  - "The Radius of Order" — A five-zone American justice thought experiment analyzing centripetal legal protection, spatial inequality, mobility constraints, and a speculative quality-of-life-indexed civic crypto economy
   - "The Zero Commission" (Closed Loop, Part I) — Hawaii Commission on Judicial Conduct: closed-loop appointments, zero sustained complaints since 2018, sealed proceedings
   - "The Paper Bag" (Closed Loop, Part II) — AG Lopez killed SB2107 in 2024 then claimed no such power exists in 2026; SIPD zero political corruption prosecutions in four years
   - "The Shape of the Cage" — Seven-layer neutralization stack theory documented across COINTELPRO, Stasi Zersetzung, watchlisting, and modern surveillance
@@ -174,11 +175,11 @@ I am one person with a laptop on the North Shore of Oʻahu, mapping a network th
 
 ## Lead Investigation
 
-### The Zone of Politeness: How Hawaiʻi's Media Blackout Works
+### The Radius of Order
 
-An investigation into the structural forces that prevent Hawaiʻi's newsrooms from investigating certain networks — built entirely from public records, donor lists, and board rosters.
+A sourced structural analysis of a five-zone American justice thought experiment: maximum protection at the urban core, negotiated autonomy in the middle rings, and coercive exile at the edge.
 
-[Read the investigation →](/investigation/zone-of-politeness-hawaii-media-blackout/)
+[Read the investigation →](/investigation/the-radius-of-order/)
 
 ---
 

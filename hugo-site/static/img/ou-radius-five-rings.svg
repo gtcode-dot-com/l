@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">The Radius of Order five-zone diagram</title>
+  <desc id="desc">A clinical systems diagram showing five concentric zones from a protected city core to remote containment estates.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f1720"/>
+      <stop offset="100%" stop-color="#081018"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#152230"/>
+      <stop offset="100%" stop-color="#101a24"/>
+    </linearGradient>
+    <marker id="leader-arrow" viewBox="0 0 12 12" refX="1.5" refY="6" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M12 0L0 6L12 12Z" fill="#dbe7f3"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <g stroke="#24313f" stroke-width="1">
+    <path d="M0 76H1200M0 152H1200M0 228H1200M0 304H1200M0 380H1200M0 456H1200M0 532H1200M0 608H1200M0 684H1200"/>
+    <path d="M120 0V760M240 0V760M360 0V760M480 0V760M600 0V760M720 0V760M840 0V760M960 0V760M1080 0V760"/>
+  </g>
+  <text x="72" y="72" fill="#d9e2ea" font-family="system-ui, sans-serif" font-size="32" font-weight="700">FIVE-ZONE GEOMETRY</text>
+  <text x="524" y="72" fill="#7f95aa" font-family="ui-monospace, monospace" font-size="22" letter-spacing="2">PROTECTION DENSITY / AUTONOMY / CONTAINMENT</text>
+
+  <g transform="translate(305 380)">
+    <circle r="240" fill="none" stroke="#4d6175" stroke-width="64"/>
+    <circle r="176" fill="none" stroke="#61788f" stroke-width="56"/>
+    <circle r="120" fill="none" stroke="#7d97b0" stroke-width="48"/>
+    <circle r="72" fill="none" stroke="#9bb4cc" stroke-width="40"/>
+    <circle r="32" fill="#dbe7f3"/>
+    <text x="0" y="8" text-anchor="middle" fill="#0f1720" font-family="system-ui, sans-serif" font-size="20" font-weight="700">1</text>
+  </g>
+
+  <g font-family="system-ui, sans-serif" font-size="18" font-weight="700">
+    <g transform="translate(305 308)">
+      <circle r="18" fill="#eff5fb" stroke="#0f1720" stroke-width="2"/>
+      <text x="0" y="6" text-anchor="middle" fill="#0f1720">2</text>
+    </g>
+    <g transform="translate(305 260)">
+      <circle r="18" fill="#eff5fb" stroke="#0f1720" stroke-width="2"/>
+      <text x="0" y="6" text-anchor="middle" fill="#0f1720">3</text>
+    </g>
+    <g transform="translate(305 204)">
+      <circle r="18" fill="#eff5fb" stroke="#0f1720" stroke-width="2"/>
+      <text x="0" y="6" text-anchor="middle" fill="#0f1720">4</text>
+    </g>
+    <g transform="translate(305 140)">
+      <circle r="18" fill="#eff5fb" stroke="#0f1720" stroke-width="2"/>
+      <text x="0" y="6" text-anchor="middle" fill="#0f1720">5</text>
+    </g>
+  </g>
+
+  <g font-family="system-ui, sans-serif">
+    <g transform="translate(645 176)">
+      <rect width="471" height="76" rx="14" fill="url(#panel)" stroke="#334557"/>
+      <text x="24" y="31" fill="#f3f7fb" font-size="23" font-weight="700">Zone 1  City Core</text>
+      <text x="24" y="57" fill="#99afc4" font-size="16">Full legal protection, surveillance density, rapid response</text>
+      <path d="M-312 180L-140 38H0" fill="none" stroke="#dbe7f3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#leader-arrow)"/>
+    </g>
+
+    <g transform="translate(645 270)">
+      <rect width="471" height="76" rx="14" fill="url(#panel)" stroke="#334557"/>
+      <text x="24" y="31" fill="#f3f7fb" font-size="23" font-weight="700">Zone 2  Inner Suburbs</text>
+      <text x="24" y="57" fill="#99afc4" font-size="16">Committee rule, humane detention, re-entry emphasis</text>
+      <path d="M-272 96L-125 38H0" fill="none" stroke="#dbe7f3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#leader-arrow)"/>
+    </g>
+
+    <g transform="translate(645 364)">
+      <rect width="471" height="76" rx="14" fill="url(#panel)" stroke="#334557"/>
+      <text x="24" y="31" fill="#f3f7fb" font-size="23" font-weight="700">Zone 3  Exurbs</text>
+      <text x="24" y="57" fill="#99afc4" font-size="16">Managed friction, lower-formalism dispute handling</text>
+      <path d="M-226 28L-115 38H0" fill="none" stroke="#dbe7f3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#leader-arrow)"/>
+    </g>
+
+    <g transform="translate(645 458)">
+      <rect width="471" height="76" rx="14" fill="url(#panel)" stroke="#334557"/>
+      <text x="24" y="31" fill="#f3f7fb" font-size="23" font-weight="700">Zone 4  Rural Hinterland</text>
+      <text x="24" y="57" fill="#99afc4" font-size="16">Diffuse autonomy, community norms, felony threshold</text>
+      <path d="M-177 -12L-105 38H0" fill="none" stroke="#dbe7f3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#leader-arrow)"/>
+    </g>
+
+    <g transform="translate(645 552)">
+      <rect width="471" height="92" rx="14" fill="url(#panel)" stroke="#334557"/>
+      <text x="24" y="31" fill="#f3f7fb" font-size="23" font-weight="700">Zone 5  Containment Estates</text>
+      <text x="24" y="57" fill="#99afc4" font-size="16">Remote land, legal exception, automated perimeter, isolation</text>
+      <text x="24" y="79" fill="#73889d" font-size="14">OUTER EDGE / LOW VISIBILITY / HIGH CONTROL</text>
+      <path d="M-152 -28L-80 46H0" fill="none" stroke="#dbe7f3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#leader-arrow)"/>
+    </g>
+  </g>
+</svg>

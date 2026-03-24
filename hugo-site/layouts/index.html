@@ -19,17 +19,17 @@
 {{- $investigationsByUpdated := sort $investigationPages "Params.lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
 
-{{- $lead := .Site.GetPage "/investigation/the-nod-wilson-loo-silent-felony" -}}
+{{- $lead := .Site.GetPage "/investigation/the-radius-of-order" -}}
 {{- if and (not $lead) (gt $investigationCount 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
 {{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
 {{- $zoneOfPoliteness := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
-{{- $heroHeadline := .Params.hero_headline | default "The Shape of the Cage" -}}
+{{- $heroHeadline := .Params.hero_headline | default "The Radius of Order" -}}
 {{- if and $lead (eq (lower (strings.TrimSpace $heroHeadline)) (lower (strings.TrimSpace $lead.Title))) -}}
   {{- $heroHeadline = printf "%s Investigative Series" $heroHeadline -}}
 {{- end -}}
-{{- $homeHeroImage := .Params.hero_image | default "/img/ou-shape-of-the-cage-hero-1600.jpg" -}}
+{{- $homeHeroImage := .Params.hero_image | default "/img/ou-radius-of-order-hero-1600.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
   {{- $heroParsed := urls.Parse $homeHeroImage -}}
   {{- with $heroParsed.Path -}}
@@ -266,11 +266,11 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/investigation/the-shape-of-the-cage/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Structural Analysis" }}</a></p>
+          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/investigation/the-radius-of-order/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Structural Analysis" }}</a></p>
           <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
-          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "How Networked Coercion Works Without a Conspiracy" }}</p>
+          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "A five-zone American justice thought experiment drawn from the center outward" }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-shape-of-the-cage/" }}">{{ .Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/the-radius-of-order/" }}">{{ .Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
             <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/investigation/" }}">{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>
@@ -310,7 +310,7 @@
       <section class="ou-section" id="featured-investigations">
         <div class="ou-section-wide">
 
-          {{/* Lead Investigation — The Nod */}}
+          {{/* Lead Investigation */}}
           {{ if $lead }}
           {{ $leadUpdated := $lead.Lastmod }}
           {{ with $lead.Params.lastmod }}{{ $leadUpdated = time.AsTime . }}{{ end }}

@@ -2294,6 +2294,115 @@ body.nav-open .site-nav-overlay {
   line-height: 1.6;
 }
 
+.ou-article-content .radius-diagram {
+  position: relative;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(124, 145, 168, 0.26);
+  background:
+    linear-gradient(180deg, rgba(14, 21, 29, 0.98), rgba(7, 12, 18, 0.98)),
+    linear-gradient(90deg, rgba(108, 128, 148, 0.08), rgba(108, 128, 148, 0));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.ou-article-content .radius-diagram::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 100%);
+}
+
+.ou-article-content .radius-diagram img {
+  position: relative;
+  z-index: 1;
+  border-radius: 0.75rem;
+  background: rgba(4, 8, 12, 0.92);
+}
+
+.ou-article-content .radius-diagram figcaption {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.9rem;
+  font-family: 'JetBrains Mono', 'SF Mono', Monaco, monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8ea0b3;
+  font-style: normal;
+}
+
+.ou-article-content .radius-signal-quote {
+  position: relative;
+  margin: 2.5rem 0;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(180deg, #0f1720 0%, #081018 100%);
+  border: 1px solid #24313f;
+  border-left: 3px solid #7f95aa;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ou-article-content .radius-signal-quote::before {
+  content: "SYS.READOUT // " attr(data-label);
+  display: block;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  width: 100%;
+  border-bottom: 1px solid #24313f;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #7f95aa;
+}
+
+.ou-article-content .radius-signal-quote p {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: #f3f7fb;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.ou-article-content .radius-signal-quote--wide {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  border-top: 1px solid #3c4c5d;
+  border-bottom: 1px solid #3c4c5d;
+  background: #0b1219;
+}
+
+@media (min-width: 768px) {
+  .ou-article-content .radius-signal-quote--wide {
+    margin-left: -3rem;
+    margin-right: -3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ou-article-content .radius-signal-quote {
+    margin: 2rem 0;
+    padding: 1rem 1rem 1.1rem;
+  }
+
+  .ou-article-content .radius-diagram {
+    padding: 0.85rem;
+  }
+}
+
 .ou-article-content code {
   font-family: 'JetBrains Mono', 'SF Mono', Monaco, monospace;
   font-size: 0.875em;
