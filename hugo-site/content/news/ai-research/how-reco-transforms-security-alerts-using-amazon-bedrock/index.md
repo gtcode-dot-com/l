@@ -1,0 +1,150 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: ai-research
+date: '2026-03-26T22:51:53.735517+00:00'
+exported_at: '2026-03-26T22:51:56.059821+00:00'
+feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
+source_url: https://aws.amazon.com/blogs/machine-learning/how-reco-transforms-security-alerts-using-amazon-bedrock
+structured_data:
+  about: []
+  author: ''
+  description: In this blog post, we show you how Reco implemented Amazon Bedrock
+    to help transform security alerts and achieve significant improvements in incident
+    response times.
+  headline: How Reco transforms security alerts using Amazon Bedrock
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://aws.amazon.com/blogs/machine-learning/how-reco-transforms-security-alerts-using-amazon-bedrock
+  publisher:
+    logo: /favicon.ico
+    name: GTCode
+title: How Reco transforms security alerts using Amazon Bedrock
+updated_at: '2026-03-26T22:51:53.735517+00:00'
+url_hash: b3bdde0a265bacdca4ec96dcd6cb0d717d07067e
+---
+
+*This post is cowritten by Tal Shapira and Tamir Friedman from Reco.*
+
+[Reco](https://www.reco.ai/)
+helps organizations strengthen the security of their software as a service (SaaS) applications and accelerate business without compromise. Using
+[Anthropic Claude in Amazon Bedrock](https://aws.amazon.com/bedrock/anthropic)
+, Reco tackles the challenge of machine-readable security alerts that SOC teams struggle to quickly interpret. This implementation helps transform raw alerts into intuitive, human-readable insights, optimizing security operations with AI-powered analytics that help enhance threat detection, streamline alert processing, and provide the contextual intelligence needed for faster response times and improved risk mitigation.
+
+In this blog post, we show you how
+[Reco](https://www.reco.ai/)
+implemented
+[Amazon Bedrock](https://aws.amazon.com/bedrock/?refid=66201650-d244-48f7-91d2-4f54a5b0ae07)
+to help transform security alerts and achieve significant improvements in incident response times.
+
+Reco selected Amazon Bedrock for this solution because of its comprehensive advantages in deploying generative AI capabilities. Amazon Bedrock provides access to multiple foundation models from leading AI providers, enabling the flexibility to choose the optimal model for specific use cases. The service offers built-in security features including data encryption, virtual private cloud (VPC) integration, and compliance alignment with industry standards, helping to ensure that sensitive data remains protected throughout the AI workflow. Its pay-per-use pricing model removes upfront infrastructure costs and scales automatically with demand, making it cost-effective for variable workloads. Additionally, developers can use the API-based architecture of Amazon Bedrock to integrate AI capabilities into their applications, so they can build sophisticated AI-powered solutions while maintaining control over their application architecture and data flow.
+
+## The challenge: Making security alerts actionable
+
+Modern security alerts are often highly technical, requiring security engineers to manually analyze raw event data, cross-reference indicators across multiple security alerts, determine potential impact and appropriate responses, derive actionable insights, and communicate findings to non-technical stakeholders. This process is time-consuming and increases the risk of missing critical threats. This raises two challenges:
+
+1. **Alert comprehension**
+   – How to turn structured alert data into meaningful insights security teams can quickly grasp
+2. **Investigation and remediation**
+   – How to automate the process of suggesting investigation queries and remediation actions based on the alert context
+
+## The solution: Reco Alert Story Generator
+
+Reco’s Alert Story Generator is a core component of the Reco solution that addresses these challenges through four key capabilities:
+
+* **Alert transformation**
+  – Converts complex JSON alert data into clear, actionable narratives that security teams can quickly understand
+* **Risk correlation**
+  – Analyzes multiple data points to identify key security risks, assesses potential impact, and prioritizes response actions
+* **Cross-team communication**
+  – Generates self-explanatory alert summaries for seamless sharing between security and business stakeholders
+* **Automated investigation**
+  – Creates ready-to-execute investigation queries that help analysts dive deeper into suspicious activities without manual query construction
+
+### Technical implementation
+
+The Alert Story Generator uses a sophisticated prompt engineering approach that combines:
+
+* Using carefully selected examples for few-shot learning to facilitate consistent output quality. The transition from the zero-shot to the few-shot approach significantly improved the consistency of structured outputs generated by the language model.
+* Implementation of contextual prompting that uses alert metadata and historical patterns. This approach includes injecting specific row data for each alert while providing dynamically selected few-shot examples tailored to the alert’s source and type.
+* [Amazon Bedrock prompt caching](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html)
+  to help reduce inference latency by 75%
+
+This AI-powered approach helps transform what was traditionally a manual, time-intensive process into an automated workflow that can deliver immediate insights while maintaining the depth and accuracy security teams require.
+
+### Pipeline architecture
+
+To understand how these technical components work together, let’s examine the end-to-end processing pipeline that powers Reco’s alert transformation system, as shown in the following chart:
+
+![Pipeline architecture diagram](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/02/21/ML-18558-image-1-resized.png)
+
+The workflow follows these key steps, orchestrating data from raw alert to actionable insight:
+
+1. User selects an alert to investigate in the UI.
+2. The alert, in JSON format, is retrieved from the database.
+3. The alert JSON, few-shot prompt, and golden examples are joined together to generate a prompt for identifying suspicious patterns and anomalies and providing actionable, prioritized response recommendations.
+4. A contextualized prompt is sent to Anthropic Claude Sonnet in Amazon Bedrock.
+5. The system sends the response back to the client for rendering.
+
+The workflow, shown in the following image, runs on the AWS cloud using microservices deployed on
+[Amazon Elastic Kubernetes Service (Amazon EKS)](https://aws.amazon.com/eks/)
+, a fully managed Kubernetes service, and
+[Amazon RDS for PostgreSQL](https://aws.amazon.com/rds/?p=ft&c=db&z=3&refid=e21cc09f-34cd-4d7e-a012-ad97353eb4b4)
+, a relational database service that holds the related contextual data for the prompts. Users’ access to the chat is guarded by
+[AWS WAF](https://aws.amazon.com/waf/)
+, which helps protect the backend from common exploits, and is served by
+[Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+, which helps deliver content with low latency and high transfer speeds.
+
+![Pipeline request flow](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/02/19/ML-18558-image-2.png)
+
+### Example outcome
+
+The following image is an example Reco Alert Story Generator result generated on mock data:
+
+![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/03/10/ML-18558-image-21.png)
+
+## Conclusion
+
+By using
+[Anthropic Claude in Amazon Bedrock](https://aws.amazon.com/bedrock/anthropic)
+, Reco has built a cutting-edge alert summarization tool that helps transform raw security alerts into actionable intelligence. This innovation empowers security teams to respond more effectively, collaborate seamlessly, and mitigate risks faster than ever before.
+
+The integration of Amazon Bedrock has significantly helped enhance the way Reco customers manage and respond to security incidents. Some key benefits include:
+
+* **54% investigation time improvement**
+  – The AI-powered system suggests investigation steps, automatically generating queries that help analysts uncover deeper insights into potential threats.
+* **63% incident response time improvement**
+  – Security teams can use clear, AI-generated remediation recommendations to act on security alerts more efficiently, significantly helping reduce threat mitigation times. Reco customers report that first-line support (tier 1) analysts can now handle a broader range of security incidents independently, alleviating the need for escalation to specialists with advanced expertise.
+* **Enhanced cross-functional collaboration**
+  – The AI-generated narratives help transform technical alerts into business-relevant intelligence that security teams can share with non-technical stakeholders. This improved communication accelerates decision-making and aligns security responses with business priorities.
+
+To further explore how AI can help transform security alerts, enhance incident response, and implement Amazon Bedrock for your security operations, check out these essential resources:
+
+---
+
+## About the authors
+
+### Tal Shapira
+
+**Tal Shapira**
+, Ph.D., is the Co-founder and CTO of
+[Reco](https://www.reco.ai/)
+, a SaaS security leader, and an active member of the Cloud Security Alliance. He previously headed a cybersecurity R&D group within the Israeli Prime Minister’s Office and is a graduate of the elite Talpiot program. Tal’s research spans artificial intelligence, computer networks, and cybersecurity, with post-doctoral work at the Hebrew University of Jerusalem and Reichman University. He holds a Ph.D. in Electrical Engineering from Tel Aviv University.
+
+### Tamir Friedman
+
+**Tamir Friedman,**
+is a GenAI and Infrastructure Engineer at Reco in Tel Aviv, where he has architected the company’s AWS-based DevOps and enterprise-grade infrastructure since its founding. He leads the development of Reco’s generative-AI solutions, built on Amazon Bedrock and Anthropic Claude, including multiple production AI agents. Tamir holds a B.Sc. in Electrical & Computer Engineering from the Technion–Israel Institute of Technology and speaks regularly at industry events such as the Go Israel meetup. When he’s not optimizing cloud pipelines, you’ll likely find him on the dance floor practicing bachata.
+
+### Doron Bleiberg
+
+**Doron Bleiberg**
+, Senior Startup Solutions Architect.
