@@ -817,10 +817,10 @@
 - slug: "gemini_ex"
   name: "Gemini Ex"
   stage: "Stable"
-  version: "0.11.1"
+  version: "0.12.0"
   summary: "Comprehensive Elixir client for Google's Gemini AI API with dual authentication, embeddings with MRL, streaming, type safety, and built-in telemetry for production applications."
   highlights:
-    - "Latest release: v0.11.1"
+    - "Latest release: v0.12.0"
     - "Recent downloads: 3758"
     - "All-time downloads: 6155"
     - "Maintainers: nshkrdotcom"
