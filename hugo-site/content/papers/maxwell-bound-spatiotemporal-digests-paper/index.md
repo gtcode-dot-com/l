@@ -41,7 +41,7 @@ A recurring question in media provenance is narrow but operationally important:
 
 On commodity phones, software alone cannot answer that question with cryptographic certainty. There is no trusted path from sensor to verifier, radio observability is coarse, external world models are incomplete, and API-visible readings are several abstraction layers above the underlying physics. The honest output of such a system is therefore **not** a binary “real/fake” oracle. It is an evidence object plus a calibrated probability or confidence score.
 
-A baseline near-term design already exists in the form of a **spatiotemporal digest SDK**: capture a time-ordered sequence of sensor samples during media creation, canonicalize them, hash them, bind them to the content hash, and verify them against public or quasi-public world models such as GNSS ephemerides, meteorological records, geomagnetic models, astronomical tables, and RF registries [1]. That baseline is directionally correct. Its main weakness is not the choice of sensors, but the way RF channels are treated. In the baseline, Wi-Fi, cellular, and parts of GNSS are mostly **registry-matchable** evidence. An attacker may succeed by presenting plausible identifiers and plausible coarse strengths, even when the overall RF scene is not physically coherent.
+A baseline near-term design already exists in the form of a **spatiotemporal digest SDK**: capture a time-ordered sequence of sensor samples during media creation, canonicalize them, hash them, bind them to the content hash, and verify them against public or quasi-public world models such as GNSS ephemerides, meteorological records, geomagnetic models, astronomical tables, and RF registries [^1]. That baseline is directionally correct. Its main weakness is not the choice of sensors, but the way RF channels are treated. In the baseline, Wi-Fi, cellular, and parts of GNSS are mostly **registry-matchable** evidence. An attacker may succeed by presenting plausible identifiers and plausible coarse strengths, even when the overall RF scene is not physically coherent.
 
 This paper sharpens the design in three ways.
 
@@ -55,7 +55,7 @@ Third, and most importantly, it **treats the oracle as part of a strategic game*
 
 The answer defended here is bounded and conditional. PISD can still help because generating a trace that is jointly consistent across **multiple windows, multiple channels, latent pose hypotheses, sensor-mask dynamics, and optional online challenge randomness** can be harder than scoring one observed trace against a calibrated acceptance region. But that asymmetry narrows over time. PISD should therefore be viewed as a **time-buyer and bar-raiser**, not as a permanent substitute for trusted sensor hardware.
 
-Recent progress in learned electromagnetic forward models makes this question newly practical. Arena Physica’s March 31, 2026 Atlas RF Studio / Heaviside-0 publication reports component-scale forward prediction with weighted magnitude error well under 1 dB and about 13 ms latency per board on its benchmark, for a current scope centered on two-layer 8 mm × 8 mm RF structures [2]. That result is **not** evidence that scene-scale phone verification is solved. It is only a feasibility signal that high-speed learned EM forward operators are now credible enough to motivate a verifier architecture that was previously too expensive to contemplate.
+Recent progress in learned electromagnetic forward models makes this question newly practical. Arena Physica’s March 31, 2026 Atlas RF Studio / Heaviside-0 publication reports component-scale forward prediction with weighted magnitude error well under 1 dB and about 13 ms latency per board on its benchmark, for a current scope centered on two-layer 8 mm × 8 mm RF structures [^2]. That result is **not** evidence that scene-scale phone verification is solved. It is only a feasibility signal that high-speed learned EM forward operators are now credible enough to motivate a verifier architecture that was previously too expensive to contemplate.
 
 ### 1.1 Contributions
 
@@ -84,7 +84,7 @@ This paper makes six concrete contributions.
 PISD is **not**:
 
 - a hardware root of trust,
-- a replacement for remote attestation in the RFC 9334 / RATS sense [3],
+- a replacement for remote attestation in the RFC 9334 / RATS sense [^3],
 - a complete chain-of-custody system,
 - a robust detector of post-capture edits beyond content binding,
 - a claim that learned physics permanently solves spoofing,
@@ -111,7 +111,7 @@ This decomposition matters because the digest object can be specified and evalua
 We retain four attacker classes.
 
 - **A1. Over-the-air RF spoofer.**  
-  The attacker is physically near the victim and can transmit fake GNSS, Wi-Fi, or cellular signals, or relay real ones [15].
+  The attacker is physically near the victim and can transmit fake GNSS, Wi-Fi, or cellular signals, or relay real ones [^15].
 
 - **A2. Local environmental manipulator.**  
   The attacker can partially control pressure, light, or acoustic context in a bounded area.
@@ -141,13 +141,13 @@ This distinction matters because an attacker who can jam or disable a channel ca
 
 ### 3.1 What commodity phone APIs actually expose
 
-A software verifier does not see raw electromagnetic fields. It sees what the mobile OS permits an app to observe. On Android, for example, Wi-Fi APIs expose visible access points and connected-network information, telephony APIs expose serving and neighboring cell information and technology-specific signal metrics, and GNSS APIs expose satellite status and per-satellite observables [5]–[8].
+A software verifier does not see raw electromagnetic fields. It sees what the mobile OS permits an app to observe. On Android, for example, Wi-Fi APIs expose visible access points and connected-network information, telephony APIs expose serving and neighboring cell information and technology-specific signal metrics, and GNSS APIs expose satellite status and per-satellite observables [^5]–[^8].
 
 | Channel | Typical API-visible observables | Notes for verification |
 |---|---|---|
-| **Wi-Fi** | visible AP list from scan results; connected-network RSSI where available [5], [6] | strongest features are often **set membership**, band mix, rank order, and turnover, not exact dBm |
-| **Cellular** | serving and neighboring cell identities; LTE/NR metrics such as RSRP/RSRQ/RSSI/SINR when exposed [7] | neighbor-set evolution and handover structure are often more robust than absolute strengths |
-| **GNSS** | satellite count, per-satellite C/N0, carrier frequency, constellation identity [8] | strongest outdoor RF channel because ephemerides are public and geometry is precise |
+| **Wi-Fi** | visible AP list from scan results; connected-network RSSI where available [^5], [^6] | strongest features are often **set membership**, band mix, rank order, and turnover, not exact dBm |
+| **Cellular** | serving and neighboring cell identities; LTE/NR metrics such as RSRP/RSRQ/RSSI/SINR when exposed [^7] | neighbor-set evolution and handover structure are often more robust than absolute strengths |
+| **GNSS** | satellite count, per-satellite C/N0, carrier frequency, constellation identity [^8] | strongest outdoor RF channel because ephemerides are public and geometry is precise |
 | **Barometric / magnetic / light / audio / IMU** | pressure series, field magnitude / heading change, lux, privacy-preserving audio features, motion summaries | not RF, but important for environment classification and transition plausibility |
 
 This ceiling is not a nuisance detail. It determines whether a physics oracle is worth building.
@@ -563,11 +563,11 @@ where:
 
 Examples include:
 
-- GNSS ephemerides from CDDIS / IGS [11],
-- meteorological pressure context from GHCNh or equivalent [9],
-- geomagnetic priors from WMM2025 [10],
-- astronomical priors from JPL Horizons [12],
-- cell registries from OpenCelliD [13].
+- GNSS ephemerides from CDDIS / IGS [^11],
+- meteorological pressure context from GHCNh or equivalent [^9],
+- geomagnetic priors from WMM2025 [^10],
+- astronomical priors from JPL Horizons [^12],
+- cell registries from OpenCelliD [^13].
 
 A public-registry-only verifier should treat Wi-Fi and cell databases as **supporting evidence**, not infallible truth. Sparse maps widen uncertainty; they do not create contradictions by themselves.
 
@@ -836,7 +836,7 @@ This prevents a single surprising window from causing an irreversible flag while
 
 ### 6.8 What Heaviside-class results do and do not imply
 
-The role of Arena Physica’s result remains deliberately narrow [2].
+The role of Arena Physica’s result remains deliberately narrow [^2].
 
 What it **does** imply:
 
@@ -953,7 +953,7 @@ where $N_{\text{ver}}$ is daily verifications and $T_{\text{acc}}$ is accelerato
 GNSS still has three decisive advantages:
 
 1. **Precise public world model.**  
-   Ephemerides and clocks are public from CDDIS / IGS [11].
+   Ephemerides and clocks are public from CDDIS / IGS [^11].
 
 2. **Better-defined geometry.**  
    Satellite visibility and C/N0 structure are governed by orbital mechanics and line-of-sight constraints more cleanly than urban Wi-Fi / cell multipath.
@@ -975,7 +975,7 @@ Any learned physical model deployed for verification is also useful to a sophist
 
 If the verifier uses a model $\mathcal R_\theta$ to score what RF observations should look like at a claimed location and time, the attacker can attempt to:
 
-1. extract or approximate $\mathcal R_\theta$ through querying or independent training [23], [24];
+1. extract or approximate $\mathcal R_\theta$ through querying or independent training [^23], [^24];
 2. run a comparable model against the target claim;
 3. synthesize observations that land inside the verifier’s acceptance region.
 
@@ -1168,7 +1168,7 @@ Nothing in PISD removes the fact that location-adjacent evidence is privacy-sens
 
 ### 9.5 Versioning and extensibility
 
-C2PA itself has a versioning model [4], and PISD should align to it.
+C2PA itself has a versioning model [^4], and PISD should align to it.
 
 The paper adopts three rules.
 
@@ -1304,7 +1304,7 @@ Dense cities with rich infrastructure are easier than rural, maritime, aerial, o
 
 ### 11.3 Legal and experimental constraints
 
-GNSS spoofing, rogue AP experiments, and especially cellular spoofing can be unlawful outside shielded or licensed environments [15]. Evaluation must be conducted in controlled conditions with appropriate approvals.
+GNSS spoofing, rogue AP experiments, and especially cellular spoofing can be unlawful outside shielded or licensed environments [^15]. Evaluation must be conducted in controlled conditions with appropriate approvals.
 
 ### 11.4 Privacy-sensitive channels
 
@@ -1326,7 +1326,7 @@ The strongest result of this paper is conceptual discipline.
 
 The **windowed state-and-transition digest** is a concrete, useful contribution on its own. It creates the right evidence object for software-only provenance because it preserves local dynamics, makes missingness explicit, promotes cross-channel residuals into the digest, and makes replay and stitching meaningfully harder than in a monolithic digest.
 
-The **receiver-conditioned physics oracle** is a second, distinct contribution. It is plausible enough to justify research because fast learned RF forward operators and propagation models now exist [2], [17]–[22], but it remains an empirical bet constrained by the coarse observability of mobile APIs. The right near-term stance is therefore not “physics solves spoofing,” but:
+The **receiver-conditioned physics oracle** is a second, distinct contribution. It is plausible enough to justify research because fast learned RF forward operators and propagation models now exist [^2], [^17]–[^22], but it remains an empirical bet constrained by the coarse observability of mobile APIs. The right near-term stance is therefore not “physics solves spoofing,” but:
 
 > **Use WSTD now. Measure metric-robust OMR. Build a GNSS-first oracle first. Expand only where empirical separation exists. Treat the whole software-only stack as a time-buyer, not an endpoint.**
 
@@ -1340,58 +1340,58 @@ That is a bounded claim. It is also, at least for now, a useful one.
 
 ## References
 
-[1] ASKA Program. *ASKA repository documentation on spatiotemporal content verification and auxiliary-memory integrity mechanisms* (see `README.md`, `10.md`, and `13.md`, covering P30, P31, and P34b). GitHub, commit `d99183bfcd8770ef209dd917c4c3701e3e0d96de`, accessed April 2, 2026. https://github.com/nshkrdotcom/ASKA/blob/d99183bfcd8770ef209dd917c4c3701e3e0d96de/README.md ; https://github.com/nshkrdotcom/ASKA/blob/d99183bfcd8770ef209dd917c4c3701e3e0d96de/10.md ; https://github.com/nshkrdotcom/ASKA/blob/d99183bfcd8770ef209dd917c4c3701e3e0d96de/13.md
+[^1]: ASKA Program. *ASKA repository documentation on spatiotemporal content verification and auxiliary-memory integrity mechanisms* (see [`README.md`](https://github.com/nshkrdotcom/ASKA/blob/d99183bfcd8770ef209dd917c4c3701e3e0d96de/README.md), [`10.md`](https://github.com/nshkrdotcom/ASKA/blob/d99183bfcd8770ef209dd917c4c3701e3e0d96de/10.md), and [`13.md`](https://github.com/nshkrdotcom/ASKA/blob/d99183bfcd8770ef209dd917c4c3701e3e0d96de/13.md), covering P30, P31, and P34b). GitHub, commit `d99183bfcd8770ef209dd917c4c3701e3e0d96de`, accessed April 2, 2026.
 
-[2] Christopher Bryant, Tommaso Dreossi, Hao Liu, Nathan Mirman, Noah Kessler, Usman Farman, Daniel Pedraza, Trevor Beaton, Akshay Kumar, Ben Gelb, Mike Frei, Arun Natarajan, and Harish Krishnaswamy. *Introducing Atlas RF Studio: Toward a Foundation Model for Electromagnetics.* Arena Physica research publication, March 31, 2026. https://www.arenaphysica.com/publications/rf-studio
+[^2]: Christopher Bryant, Tommaso Dreossi, Hao Liu, Nathan Mirman, Noah Kessler, Usman Farman, Daniel Pedraza, Trevor Beaton, Akshay Kumar, Ben Gelb, Mike Frei, Arun Natarajan, and Harish Krishnaswamy. *Introducing Atlas RF Studio: Toward a Foundation Model for Electromagnetics.* Arena Physica research publication, March 31, 2026. [Publication](https://www.arenaphysica.com/publications/rf-studio)
 
-[3] Henk Birkholz, Dave Thaler, Michael Richardson, Ned Smith, and Weiming Pan. *Remote ATtestation procedureS (RATS) Architecture.* RFC 9334, IETF, January 2023. https://www.rfc-editor.org/rfc/rfc9334
+[^3]: Henk Birkholz, Dave Thaler, Michael Richardson, Ned Smith, and Weiming Pan. *Remote ATtestation procedureS (RATS) Architecture.* RFC 9334, IETF, January 2023. [RFC 9334](https://www.rfc-editor.org/rfc/rfc9334)
 
-[4] Coalition for Content Provenance and Authenticity (C2PA). *Content Credentials: C2PA Technical Specification.* Version 2.3, 2025. https://spec.c2pa.org/specifications/specifications/2.3/specs/C2PA_Specification.html
+[^4]: Coalition for Content Provenance and Authenticity (C2PA). *Content Credentials: C2PA Technical Specification.* Version 2.3, 2025. [Specification](https://spec.c2pa.org/specifications/specifications/2.3/specs/C2PA_Specification.html)
 
-[5] Android Developers. *Wi-Fi scanning overview.* Official developer documentation. https://developer.android.com/develop/connectivity/wifi/wifi-scan
+[^5]: Android Developers. *Wi-Fi scanning overview.* Official developer documentation. [Documentation](https://developer.android.com/develop/connectivity/wifi/wifi-scan)
 
-[6] Android Developers. *WifiInfo API reference.* Official developer documentation. https://developer.android.com/reference/android/net/wifi/WifiInfo
+[^6]: Android Developers. *WifiInfo API reference.* Official developer documentation. [API reference](https://developer.android.com/reference/android/net/wifi/WifiInfo)
 
-[7] Android Developers. *TelephonyManager* and *CellSignalStrength* API references. Official developer documentation. https://developer.android.com/reference/android/telephony/TelephonyManager ; https://developer.android.com/reference/android/telephony/CellSignalStrength
+[^7]: Android Developers. *TelephonyManager* and *CellSignalStrength* API references. Official developer documentation. [TelephonyManager](https://developer.android.com/reference/android/telephony/TelephonyManager) ; [CellSignalStrength](https://developer.android.com/reference/android/telephony/CellSignalStrength)
 
-[8] Android Developers. *GnssStatus API reference.* Official developer documentation. https://developer.android.com/reference/android/location/GnssStatus
+[^8]: Android Developers. *GnssStatus API reference.* Official developer documentation. [API reference](https://developer.android.com/reference/android/location/GnssStatus)
 
-[9] NOAA National Centers for Environmental Information. *Global Historical Climatology Network-Hourly (GHCNh).* Official dataset page and documentation. https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly ; https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf
+[^9]: NOAA National Centers for Environmental Information. *Global Historical Climatology Network-Hourly (GHCNh).* Official dataset page and documentation. [Dataset page](https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly) ; [Documentation PDF](https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf)
 
-[10] NOAA National Centers for Environmental Information and British Geological Survey. *World Magnetic Model 2025 (WMM2025 / WMMHR2025).* Official release and documentation. https://www.ncei.noaa.gov/products/world-magnetic-model
+[^10]: NOAA National Centers for Environmental Information and British Geological Survey. *World Magnetic Model 2025 (WMM2025 / WMMHR2025).* Official release and documentation. [Release and documentation](https://www.ncei.noaa.gov/products/world-magnetic-model)
 
-[11] NASA Earthdata. *GNSS data and products* (covering CDDIS-hosted GNSS holdings and products). Official data portal. https://www.earthdata.nasa.gov/data/space-geodesy-techniques/gnss
+[^11]: NASA Earthdata. *GNSS data and products* (covering CDDIS-hosted GNSS holdings and products). Official data portal. [Data portal](https://www.earthdata.nasa.gov/data/space-geodesy-techniques/gnss)
 
-[12] Jet Propulsion Laboratory Solar System Dynamics Group. *Horizons System.* Official ephemeris service. https://ssd.jpl.nasa.gov/horizons/
+[^12]: Jet Propulsion Laboratory Solar System Dynamics Group. *Horizons System.* Official ephemeris service. [Service](https://ssd.jpl.nasa.gov/horizons/)
 
-[13] OpenCelliD. *Largest Open Database of Cell Towers & Geolocation.* Official service documentation. https://opencellid.org/
+[^13]: OpenCelliD. *Largest Open Database of Cell Towers & Geolocation.* Official service documentation. [Service](https://opencellid.org/)
 
-[14] Mozilla / Ichnaea project. *Retiring the Mozilla Location Service.* 2024 retirement notice and archive context. https://github.com/mozilla/ichnaea/issues/2065
+[^14]: Mozilla / Ichnaea project. *Retiring the Mozilla Location Service.* 2024 retirement notice and archive context. [Issue](https://github.com/mozilla/ichnaea/issues/2065)
 
-[15] Nils Ole Tippenhauer, Christina Pöpper, Kasper Bonne Rasmussen, and Srdjan Čapkun. “On the Requirements for Successful GPS Spoofing Attacks.” In *Proceedings of the 18th ACM Conference on Computer and Communications Security (CCS)*, 2011. https://doi.org/10.1145/2046707.2046719
+[^15]: Nils Ole Tippenhauer, Christina Pöpper, Kasper Bonne Rasmussen, and Srdjan Čapkun. “On the Requirements for Successful GPS Spoofing Attacks.” In *Proceedings of the 18th ACM Conference on Computer and Communications Security (CCS)*, 2011. [DOI](https://doi.org/10.1145/2046707.2046719)
 
-[16] Martin Azizyan, Ionut Constandache, and Romit Roy Choudhury. “SurroundSense: Mobile Phone Localization via Ambience Fingerprinting.” In *Proceedings of ACM MobiCom*, 2009. https://doi.org/10.1145/1614320.1614350
+[^16]: Martin Azizyan, Ionut Constandache, and Romit Roy Choudhury. “SurroundSense: Mobile Phone Localization via Ambience Fingerprinting.” In *Proceedings of ACM MobiCom*, 2009. [DOI](https://doi.org/10.1145/1614320.1614350)
 
-[17] Ron Levie, Çağkan Yapar, Gitta Kutyniok, and Giuseppe Caire. “RadioUNet: Fast Radio Map Estimation With Convolutional Neural Networks.” *IEEE Transactions on Wireless Communications*, 2021. https://doi.org/10.1109/TWC.2021.3054977
+[^17]: Ron Levie, Çağkan Yapar, Gitta Kutyniok, and Giuseppe Caire. “RadioUNet: Fast Radio Map Estimation With Convolutional Neural Networks.” *IEEE Transactions on Wireless Communications*, 2021. [DOI](https://doi.org/10.1109/TWC.2021.3054977)
 
-[18] Xiaopeng Zhao, Zhenlin An, Qingrui Pan, and Lei Yang. “NeRF2: Neural Radio-Frequency Radiance Fields.” In *Proceedings of ACM MobiCom*, 2023. https://doi.org/10.1145/3570361.3592527
+[^18]: Xiaopeng Zhao, Zhenlin An, Qingrui Pan, and Lei Yang. “NeRF2: Neural Radio-Frequency Radiance Fields.” In *Proceedings of ACM MobiCom*, 2023. [DOI](https://doi.org/10.1145/3570361.3592527)
 
-[19] Haofan Lu, Christopher Vattheuer, Baharan Mirzasoleiman, and Omid Abari. “NeWRF: A Deep Learning Framework for Wireless Radiation Field Reconstruction and Channel Prediction.” In *Proceedings of ICML*, 2024. https://proceedings.mlr.press/v235/lu24j.html
+[^19]: Haofan Lu, Christopher Vattheuer, Baharan Mirzasoleiman, and Omid Abari. “NeWRF: A Deep Learning Framework for Wireless Radiation Field Reconstruction and Channel Prediction.” In *Proceedings of ICML*, 2024. [Proceedings](https://proceedings.mlr.press/v235/lu24j.html)
 
-[20] Kang Yang, Yuning Chen, and Wan Du. “GWRF: A Generalizable Wireless Radiance Field for Wireless Signal Propagation Modeling.” arXiv preprint arXiv:2502.05708, 2025. https://arxiv.org/abs/2502.05708
+[^20]: Kang Yang, Yuning Chen, and Wan Du. “GWRF: A Generalizable Wireless Radiance Field for Wireless Signal Propagation Modeling.” arXiv preprint arXiv:2502.05708, 2025. [arXiv](https://arxiv.org/abs/2502.05708)
 
-[21] Xiucheng Wang, Yuhao Pan, and Nan Cheng. “A Tutorial on Learning-Based Radio Map Construction: Data, Paradigms, and Physics-Awareness.” arXiv preprint arXiv:2603.17499, 2026. https://arxiv.org/abs/2603.17499
+[^21]: Xiucheng Wang, Yuhao Pan, and Nan Cheng. “A Tutorial on Learning-Based Radio Map Construction: Data, Paradigms, and Physics-Awareness.” arXiv preprint arXiv:2603.17499, 2026. [arXiv](https://arxiv.org/abs/2603.17499)
 
-[22] Stefanos Bakirtzis, Çağkan Yapar, Marco Fiore, Jie Zhang, and Ian Wassell. “Empowering Wireless Network Applications with Deep Learning-based Radio Propagation Models.” arXiv preprint arXiv:2408.12193, 2024. https://arxiv.org/abs/2408.12193
+[^22]: Stefanos Bakirtzis, Çağkan Yapar, Marco Fiore, Jie Zhang, and Ian Wassell. “Empowering Wireless Network Applications with Deep Learning-based Radio Propagation Models.” arXiv preprint arXiv:2408.12193, 2024. [arXiv](https://arxiv.org/abs/2408.12193)
 
-[23] Florian Tramèr, Fan Zhang, Ari Juels, Michael K. Reiter, and Thomas Ristenpart. “Stealing Machine Learning Models via Prediction APIs.” In *USENIX Security Symposium*, 2016. https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer
+[^23]: Florian Tramèr, Fan Zhang, Ari Juels, Michael K. Reiter, and Thomas Ristenpart. “Stealing Machine Learning Models via Prediction APIs.” In *USENIX Security Symposium*, 2016. [USENIX](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer)
 
-[24] Varun Chandrasekaran, Kedar Chaudhuri, Ilaria Giacomelli, Somesh Jha, and Songbai Yan. “Exploring Connections Between Active Learning and Model Extraction.” In *USENIX Security Symposium*, 2020. https://www.usenix.org/conference/usenixsecurity20/presentation/chandrasekaran
+[^24]: Varun Chandrasekaran, Kedar Chaudhuri, Ilaria Giacomelli, Somesh Jha, and Songbai Yan. “Exploring Connections Between Active Learning and Model Extraction.” In *USENIX Security Symposium*, 2020. [USENIX](https://www.usenix.org/conference/usenixsecurity20/presentation/chandrasekaran)
 
-[25] Rémi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, et al. “Learning Skillful Medium-Range Global Weather Forecasting.” *Science*, 2023. https://doi.org/10.1126/science.adi2336
+[^25]: Rémi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, et al. “Learning Skillful Medium-Range Global Weather Forecasting.” *Science*, 2023. [DOI](https://doi.org/10.1126/science.adi2336)
 
-[26] Ian Price, Alvaro Sanchez-Gonzalez, Ferran Alet, et al. “GenCast: Diffusion-Based Ensemble Forecasting for Medium-Range Weather.” arXiv preprint arXiv:2312.15796, 2023. https://arxiv.org/abs/2312.15796
+[^26]: Ian Price, Alvaro Sanchez-Gonzalez, Ferran Alet, et al. “GenCast: Diffusion-Based Ensemble Forecasting for Medium-Range Weather.” arXiv preprint arXiv:2312.15796, 2023. [arXiv](https://arxiv.org/abs/2312.15796)
 
-[27] Andrew F. Luo, Yilun Du, Michael J. Tarr, Joshua B. Tenenbaum, Antonio Torralba, and Chuang Gan. “Learning Neural Acoustic Fields.” In *Advances in Neural Information Processing Systems (NeurIPS)*, 2022. https://papers.nips.cc/paper_files/paper/2022/hash/151f4dfc71f025ae387e2d7a4ea1639b-Abstract-Conference.html
+[^27]: Andrew F. Luo, Yilun Du, Michael J. Tarr, Joshua B. Tenenbaum, Antonio Torralba, and Chuang Gan. “Learning Neural Acoustic Fields.” In *Advances in Neural Information Processing Systems (NeurIPS)*, 2022. [Proceedings](https://papers.nips.cc/paper_files/paper/2022/hash/151f4dfc71f025ae387e2d7a4ea1639b-Abstract-Conference.html)
 
-[28] Alexey Kurakin, Ian Goodfellow, and Samy Bengio. “Adversarial Examples in the Physical World.” In *ICLR Workshop*, 2017. https://arxiv.org/abs/1607.02533
+[^28]: Alexey Kurakin, Ian Goodfellow, and Samy Bengio. “Adversarial Examples in the Physical World.” In *ICLR Workshop*, 2017. [arXiv](https://arxiv.org/abs/1607.02533)

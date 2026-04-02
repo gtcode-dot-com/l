@@ -10,6 +10,10 @@
   Content-Disposition: attachment
   Content-Type: application/pdf
 
+/sources/the-bridges/PacForum_Annual_Report_2017.pdf
+  Link: <https://pacforum.org/wp-content/uploads/2023/11/Pacific-Forum-Annual-Report-2017.pdf>; rel="canonical"
+  Content-Type: application/pdf
+
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
