@@ -195,6 +195,7 @@
           <a href="/investigation/" {{ if eq .Section "investigation" }}class="active"{{ end }}>Investigations</a>
           <a href="/consulting/" {{ if eq .Section "consulting" }}class="active"{{ end }}>AI Consulting</a>
           <a href="/guides/" {{ if eq .Section "guides" }}class="active"{{ end }}>Guides</a>
+          <a href="/papers/" {{ if eq .Section "papers" }}class="active"{{ end }}>Papers</a>
           <a href="/repos/" {{ if eq .Section "repos" }}class="active"{{ end }}>Repos</a>
           <a href="/articles/" {{ if eq .Section "articles" }}class="active"{{ end }}>Articles</a>
           {{ partial "news-nav.html" . }}
@@ -268,5 +269,8 @@
     {{ end }}
     {{ $navJS := resources.Get "js/nav.js" | minify | fingerprint }}
     <script src="{{ $navJS.RelPermalink }}" integrity="{{ $navJS.Data.Integrity }}" defer></script>
+    {{/* Responsive table enhancement for default article-content pages */}}
+    {{ $ouTablesJS := resources.Get "js/ou-tables.js" | minify | fingerprint }}
+    <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
   </body>
 </html>

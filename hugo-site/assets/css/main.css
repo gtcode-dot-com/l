@@ -2189,6 +2189,8 @@ body.nav-open .site-nav-overlay {
   padding: var(--space-3) var(--space-4);
   border-bottom: 1px solid var(--color-border-light);
   text-align: left;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 .article-content table th {
@@ -2290,6 +2292,40 @@ article {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
+}
+
+/* Responsive tables for default article pages.
+   Mirrors the investigation/OU article treatment so wide markdown tables
+   collapse into readable row cards instead of shrinking into letter-stacks. */
+.article-content .ou-table-scroll {
+  margin: var(--space-8) 0;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.article-content .ou-table-scroll:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.article-content .ou-table-scroll table {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.article-content .ou-table-scroll table.ou-table--wide th,
+.article-content .ou-table-scroll table.ou-table--wide td {
+  min-width: 9rem;
+}
+
+.article-content .ou-table-scroll table.ou-table--xwide th,
+.article-content .ou-table-scroll table.ou-table--xwide td {
+  min-width: 11rem;
 }
 
 /* Links with long URLs shouldn't break layout */
@@ -2773,16 +2809,67 @@ article {
     gap: var(--space-6);
   }
 
-  .article-content table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+  .article-content .ou-table-scroll {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    overflow: visible;
   }
 
-  .article-content table th,
-  .article-content table td {
-    min-width: 140px;
+  .article-content .ou-table-scroll table {
+    display: table;
+    width: 100%;
+    border: 0;
+  }
+
+  .article-content .ou-table-scroll thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .article-content .ou-table-scroll tbody,
+  .article-content .ou-table-scroll tr,
+  .article-content .ou-table-scroll td {
+    display: block;
+    width: 100%;
+  }
+
+  .article-content .ou-table-scroll tbody tr {
+    margin: 1rem 0;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-xl);
+    background: var(--color-bg-alt);
+    overflow: hidden;
+  }
+
+  .article-content .ou-table-scroll tbody td {
+    min-width: 0;
+    border-bottom: 0;
+    padding: var(--space-3) var(--space-4);
+    background: transparent;
+    white-space: normal;
+  }
+
+  .article-content .ou-table-scroll tbody td + td {
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .article-content .ou-table-scroll tbody td::before {
+    content: attr(data-label);
+    display: block;
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
   }
 }
 
