@@ -1,6 +1,6 @@
 ---
 title: Prompt Runner Sdk
-description: Prompt Runner SDK - An Elixir toolkit for orchestrating multi-step prompt
-  executions through AgentSessionManager with streaming output, progress tracking,
-  multi-repository…
+description: Prompt Runner SDK - Convention-driven and legacy-config prompt orchestration
+  for Elixir, Mix, and production applications with streaming output, provider abstractions,
+  runtime…
 ---
