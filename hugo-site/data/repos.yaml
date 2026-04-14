@@ -1667,10 +1667,10 @@
 - slug: "weld"
   name: "Weld"
   stage: "Preview"
-  version: "0.5.0"
+  version: "0.7.0"
   summary: "Deterministic Hex package projection for Elixir monorepos"
   highlights:
-    - "Latest release: v0.5.0"
+    - "Latest release: v0.7.0"
     - "Recent downloads: 157"
     - "All-time downloads: 157"
     - "Maintainers: nshkrdotcom"
