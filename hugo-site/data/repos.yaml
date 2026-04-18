@@ -1446,10 +1446,10 @@
 - slug: "sinter"
   name: "Sinter"
   stage: "Preview"
-  version: "0.2.0"
+  version: "0.3.0"
   summary: "Unified schema definition, validation, and JSON generation for Elixir. Sinter is a focused, high-performance schema validation library designed specifically for dynamic frameworks\u2026"
   highlights:
-    - "Latest release: v0.2.0"
+    - "Latest release: v0.3.0"
     - "Recent downloads: 150"
     - "All-time downloads: 296"
     - "Maintainers: nshkrdotcom"
