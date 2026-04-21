@@ -131,7 +131,7 @@ structured_data_graph:
       name: "The Two Questions: How One Interview Closes the Wilson Loo Case"
       url: "https://gtcode.com/investigation/the-two-questions/"
       datePublished: "2026-02-23T00:00:00Z"
-      dateModified: "2026-02-28T00:00:00Z"
+      dateModified: "2026-04-21T00:00:00Z"
       articleSection: "Investigations"
     - "@type": "NewsArticle"
       name: "The Shape of the Cage"
