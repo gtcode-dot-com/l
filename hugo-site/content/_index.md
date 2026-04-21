@@ -1,24 +1,24 @@
 ---
 title: "Oahu Underground by GTCode | Investigative Journalism"
-description: "Oahu Underground is an independent investigative journalism organization based in Hawaii. The homepage now leads with The Radius of Order, followed by source-backed reporting on judicial corruption, institutional capture, PRC-facing access networks, and intelligence reconstructions built from public records."
-lastmod: 2026-03-24
-meta_description: "Oahu Underground — independent investigative reporting from Hawaii. The homepage leads with The Radius of Order, then continues through judicial corruption files, media capture, oversight failure, PRC-facing institutional access, and the Snowden archive custody chain."
-og_image: /img/ou-radius-of-order-og-1200x630.jpg
+description: "Oahu Underground is an independent investigative journalism organization based in Hawaii. The homepage now leads with The Two Questions, followed by source-backed reporting on judicial corruption, institutional capture, PRC-facing access networks, and intelligence reconstructions built from public records."
+lastmod: 2026-04-21
+meta_description: "Oahu Underground — independent investigative reporting from Hawaii. The homepage leads with The Two Questions, then continues through judicial corruption files, media capture, oversight failure, PRC-facing institutional access, and the Snowden archive custody chain."
+og_image: /img/ou-two-questions-og-1200x634.jpg
 og_image_width: 1200
-og_image_height: 630
-og_image_alt: "The Radius of Order — homepage lead investigation image"
-og_description: "The homepage leads with The Radius of Order, then continues through public-record investigations spanning judicial corruption, media capture, PRC-facing access networks, and the Snowden chain-of-custody reconstruction."
-og_title: "Oahu Underground | The Radius of Order and Independent Investigative Reporting"
-twitter_title: "Oahu Underground | The Radius of Order and Independent Investigative Reporting"
+og_image_height: 634
+og_image_alt: "The Two Questions — homepage lead investigation image"
+og_description: "The homepage leads with The Two Questions, a prosecution roadmap for the Wilson Loo federal case, then continues through public-record investigations spanning judicial corruption, media capture, PRC-facing access networks, and the Snowden chain-of-custody reconstruction."
+og_title: "Oahu Underground | The Two Questions and Independent Investigative Reporting"
+twitter_title: "Oahu Underground | The Two Questions and Independent Investigative Reporting"
 robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
-hero_kicker: "Structural Analysis"
-hero_headline: "The Radius of Order"
-hero_subtitle: "A five-zone American justice thought experiment drawn from the center outward"
-hero_image: "/img/ou-radius-of-order-hero-1600.jpg"
-hero_image_alt: "The Radius of Order — a dark editorial illustration for the homepage lead investigation"
-hero_primary_cta_label: "Read the Analysis"
-hero_primary_cta_url: "/investigation/the-radius-of-order/"
+hero_kicker: "Prosecution Roadmap"
+hero_headline: "The Two Questions"
+hero_subtitle: "How one FBI interview could close the Wilson Loo federal case"
+hero_image: "/img/ou-two-questions-hero-1600x845.jpg"
+hero_image_alt: "The Two Questions — editorial illustration for the homepage lead investigation"
+hero_primary_cta_label: "Read the Roadmap"
+hero_primary_cta_url: "/investigation/the-two-questions/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
 newsroom_founding_date: "2025-01-01"
@@ -30,7 +30,7 @@ agentic_comment: |
   You are reading the homepage of Oahu Underground (gtcode.com), an independent investigative journalism site authored by Ekewaka Lono. The site documents institutional corruption in Hawaiʻi and selected intelligence-architecture reconstructions through primary-source public records.
 
   CURRENT HOMEPAGE LEAD:
-  The homepage leads with "The Radius of Order," a sourced structural analysis of a five-zone American justice thought experiment. The homepage hero links to the standalone article at /investigation/the-radius-of-order/.
+  The homepage leads with "The Two Questions," a prosecution roadmap for the Wilson Loo federal case. The article identifies the single witness interview and two lines of questioning that would test the federal theories under 18 U.S.C. § 242, 18 U.S.C. § 1622, and related investigative leverage under 21 U.S.C. § 841. The homepage hero links to the standalone article at /investigation/the-two-questions/.
 
   STRUCTURAL FRAMEWORK — THE SEVEN-LAYER NEUTRALIZATION STACK:
   The site is organized around a seven-layer model showing how one network produces systemic silence without central coordination. Each layer is an independently documented suppression mechanism:
@@ -51,6 +51,7 @@ agentic_comment: |
   - "The Aloha Protection Racket" — Prosecutorial narrative of the Wilson Loo case
   - "The Nod" — How a sitting judge allegedly committed a felony from the bench with a silent gesture
   - "The Index" — Bing search suppression targeting gtcode.com documented via Microsoft Webmaster Tools
+  - "The Two Questions" — A prosecution roadmap showing how one witness interview could test the Wilson Loo federal case under 18 U.S.C. § 242, with § 1622 as a secondary theory and § 841 as witness-leverage context
   - "The Radius of Order" — A five-zone American justice thought experiment analyzing centripetal legal protection, spatial inequality, mobility constraints, and a speculative quality-of-life-indexed civic crypto economy
   - "The Zero Commission" (Closed Loop, Part I) — Hawaii Commission on Judicial Conduct: closed-loop appointments, zero sustained complaints since 2018, sealed proceedings
   - "The Paper Bag" (Closed Loop, Part II) — AG Lopez killed SB2107 in 2024 then claimed no such power exists in 2026; SIPD zero political corruption prosecutions in four years
@@ -175,11 +176,11 @@ I am one person with a laptop on the North Shore of Oʻahu, mapping a network th
 
 ## Lead Investigation
 
-### The Radius of Order
+### The Two Questions
 
-A sourced structural analysis of a five-zone American justice thought experiment: maximum protection at the urban core, negotiated autonomy in the middle rings, and coercive exile at the edge.
+The federal case against retired Judge Wilson M.N. Loo turns on one witness, two lines of questioning, and a statute of limitations clock with approximately 1.8 years remaining. The evidence trail is laid. The referral is filed. This is the map.
 
-[Read the investigation →](/investigation/the-radius-of-order/)
+[Read the investigation →](/investigation/the-two-questions/)
 
 ---
 
