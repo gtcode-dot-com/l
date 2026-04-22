@@ -1,0 +1,103 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: ai-research
+date: '2026-04-22T16:15:42.010005+00:00'
+exported_at: '2026-04-22T16:15:44.506349+00:00'
+feed: https://aws.amazon.com/blogs/machine-learning/feed
+language: en
+source_url: https://aws.amazon.com/blogs/machine-learning/company-wise-memory-in-amazon-bedrock-with-amazon-neptune-and-mem0
+structured_data:
+  about: []
+  author: ''
+  description: Company-wise memory in Amazon Bedrock, powered by Amazon Neptune and
+    Mem0, provides AI agents with persistent, company-specific context—enabling them
+    to learn, adapt, and respond intelligently across multiple interactions. TrendMicro,
+    one of the largest antivirus software companies in the world, developed the Trend’...
+  headline: Company-wise memory in Amazon Bedrock with Amazon Neptune and Mem0
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://aws.amazon.com/blogs/machine-learning/company-wise-memory-in-amazon-bedrock-with-amazon-neptune-and-mem0
+  publisher:
+    logo: /favicon.ico
+    name: GTCode
+title: Company-wise memory in Amazon Bedrock with Amazon Neptune and Mem0
+updated_at: '2026-04-22T16:15:42.010005+00:00'
+url_hash: f4b39c78f949df88416d361a70f701dc4b64d6c2
+---
+
+*This post is cowritten by Shawn Tsai from TrendMicro.*
+
+Delivering relevant, context-aware responses is important for customer satisfaction. For enterprise-grade AI chatbots, understanding not only the current query but also the organizational context behind it is key. Company-wise memory in
+[Amazon Bedrock](https://aws.amazon.com/bedrock/)
+, powered by
+[Amazon Neptune](https://aws.amazon.com/neptune/)
+and
+[Mem0](https://github.com/mem0ai/mem0)
+, provides AI agents with persistent, company-specific context—enabling them to learn, adapt, and respond intelligently across multiple interactions. TrendMicro, one of the largest antivirus software companies in the world, developed the Trend’s Companion chatbot, so their customers can explore information through natural, conversational interactions (
+[learn more](https://www.trendmicro.com/zh_tw/business/ai/companion.html)
+).
+
+TrendMicro aimed to enhance its AI chatbot service to deliver personalized, context-aware support for enterprise customers. The chatbot needed to retain conversation history for continuity, reference company-specific knowledge at scale, and ensure that memory remained accurate, secure, and up to date. The challenge is in integrating long-term memory for organizational knowledge with short-term memory for ongoing conversations, while supporting company-wide knowledge sharing. In collaboration with the AWS team, including AWS’s Generative AI Innovation Center, TrendMicro addressed this challenge using Amazon Neptune, Amazon OpenSearch, and Amazon Bedrock, as we elaborate in this blog.
+
+## Solution overview
+
+TrendMicro implemented company-wise memory in Amazon Bedrock by combining multiple AWS services. Amazon Neptune stores a company-specific knowledge graph, representing organizational relationships, processes, and data to enable precise and structured retrieval. Mem0 manages short-term conversational memory for immediate context and long-term memory for persistent knowledge across sessions. Amazon Bedrock orchestrates the AI agent workflows, integrating with both Neptune and Mem0 to retrieve and apply contextual knowledge during inference. This architecture allows the chatbot to recall relevant history, retrieve structured company knowledge, and respond with tailored, context-rich answers—helping significantly improve user experience.
+
+![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/03/13/architecture-1-1024x683.png)
+
+### Memory creation and update
+
+The architecture begins with capturing user messages and extracting entities, relationships, and potential memories through the Claude model on Amazon Bedrock. These are then embedded with Amazon Bedrock Titan Text Embed and searched against both Amazon OpenSearch Service and Amazon Neptune. Relevant entities and memories are retrieved, and updated through the model before being re-embedded and indexed back into OpenSearch and Neptune. This closed-loop process makes sure that entity-related memories can be continuously refreshed and the knowledge graph in Neptune remains consistent with conversational insights.
+
+### Memory retrieval
+
+When handling user queries, the system applies a similar embedding pipeline with Bedrock Titan to search across both vector embeddings in OpenSearch Service and entity triples in Neptune. The relevant memories are then reranked using Amazon Bedrock Rerank or Cohere Rerank models to make sure that the most contextually accurate information is delivered. This dual retrieval strategy provides both semantic flexibility from OpenSearch and structured precision from Neptune, enabling the chatbot to deliver highly relevant, context-aware answers.
+
+### Response-memory mapping and human-in-the-loop feedback
+
+For each AI response, the system maps sentences to the specific memories referenced, generating a memory assessment report. Users are then presented with the opportunity to approve or reject these mappings. Approved memories remain part of the knowledge base, while rejected ones are removed from both OpenSearch Service and Neptune. This makes sure that only validated and trusted knowledge persists. This human-in-the-loop mechanism strengthens trust and helps continuously improve memory accuracy and gives enterprise customers direct influence over the refinement of their AI’s knowledge.
+
+## Amazon Neptune in action
+
+![Graph](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/03/13/Picture1-3-1024x507.png)
+
+To illustrate how Amazon Neptune enriches chatbot memory, consider a customer asking, “Who recognized Kublai as ruler?” Without the knowledge graph, the AI might return a vague response such as: “Kublai was a Mongol ruler who gained recognition from different groups.” This kind of answer is generic and lacks precision.
+
+When the same question is asked but the Neptune entity graph is queried and placed into the large language model’s (LLM) context window, the model can ground its reasoning in structured triples like (Ilkhans, recognized, Kublai). The chatbot can then reply more accurately: “According to the organizational knowledge base, Kublai was recognized by the Ilkhans as ruler.” This before-and-after example demonstrates how structured entity relationships in Neptune allow the model to produce answers that are both contextually relevant and verifiable.
+
+## Conclusion and next step
+
+As described in the
+[AWS Trend Micro case study](https://aws.amazon.com/solutions/case-studies/trendmicro/)
+, Trend Micro uses AWS to help deliver more secure, scalable, and intelligent customer experiences. Building on this foundation, Trend Micro combines Amazon Bedrock, Amazon Neptune, Amazon OpenSearch Service, and Mem0 to create an AI chatbot with persistent, organization-specific memory that delivers intelligent, context-aware conversations at scale. By integrating graph-based knowledge with generative AI, Trend Micro is expected to improve answer quality, delivering clearer and more accurate responses while establishing a foundation for AI systems that continuously adapt to evolving organizational knowledge; This work remains under evaluation and tuning to further enhance the end-user experience.
+
+Looking ahead, TrendMicro is exploring future enhancements such as broader graph coverage, additional update pipelines, and multilingual support. For readers who want to dive deeper, we recommend exploring the
+[GitHub sample implementation](https://github.com/aws-samples/sample-company-wise-memory-in-bedrock)
+, which includes the source code we implemented, and the
+[Amazon Neptune Documentation](https://docs.aws.amazon.com/neptune/)
+for further technical details and inspiration.
+
+---
+
+## About the authors
+
+### Shawn Tsai
+
+Shawn Tsai is a senior architect at Trend Micro, specializing in large language model application development and security practices, cloud architecture design, large-scale software architecture design, and DevOps practices. He is currently primarily responsible for Trend Micro’s large language model application development and security framework.
+
+### Ray Wang
+
+**Ray Wang**
+is a Senior Solutions Architect at AWS. With 12+ years of experience in the backend and consultant, Ray is dedicated to building modern solutions in the cloud, especially in especially in NoSQL, big data, machine learning, and Generative AI. As a hungry go-getter, he passed all 12 AWS certificates to increase the breadth and depth of his technical knowledge. He loves to read and watch sci-fi movies in his spare time.
+
+### Zhihao Lin
+
+**Zhihao Lin**
+is an Applied Scientist at the AWS Generative AI Innovation Center. With a Master’s degree from Peking University and publications in top conferences such as CVPR and IJCAI, he brings extensive AI/ML research experience to his role. At AWS, he focuses on developing generative AI solutions, leveraging cutting-edge technology for innovative applications. He specializes in solving complex computer vision and natural language processing challenges and advancing the practical use of generative AI in business.
