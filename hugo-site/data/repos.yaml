@@ -868,10 +868,10 @@
 - slug: "gepa_ex"
   name: "Gepa Ex"
   stage: "Preview"
-  version: "0.2.0"
+  version: "0.3.0"
   summary: "Elixir implementation of the GEPA (Genetic-Pareto) optimizer that combines LLM-powered reflection with Pareto search to evolve text-based system components."
   highlights:
-    - "Latest release: v0.2.0"
+    - "Latest release: v0.3.0"
     - "Recent downloads: 47"
     - "All-time downloads: 188"
     - "Maintainers: nshkrdotcom"
