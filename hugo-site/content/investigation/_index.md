@@ -3,7 +3,7 @@ draft: false
 title: "Oahu Underground Investigations | Public-Interest Files and Source Archives"
 description: "Independent investigations documenting systemic failures inside Hawaii courts, oversight commissions, media institutions, and selected intelligence-accountability cases."
 date: 2026-03-08
-lastmod: 2026-03-12
+lastmod: 2026-05-06
 canonical: "https://gtcode.com/investigation/"
 robots: "index, follow, max-image-preview:large"
 
@@ -62,7 +62,7 @@ structured_data_graph:
   name: "Oahu Underground Investigations"
   description: "Independent investigations documenting systemic failures inside Hawaii courts, oversight commissions, media institutions, and selected intelligence-accountability cases."
   inLanguage: "en"
-  dateModified: "2026-03-12T00:00:00Z"
+  dateModified: "2026-05-06T00:00:00Z"
   publisher:
     "@type": "Organization"
     name: "Oahu Underground"
@@ -183,6 +183,10 @@ structured_data_graph:
       articleSection: "Investigations"
 
 # Grid Section
+standards_eyebrow: "Editorial Standards"
+standards_title: "Investigation Standards"
+standards_note: "Firsthand observations are labeled as such. Sealed-record-dependent claims are identified as record-dependent. Legal theories are presented as investigative frameworks unless and until adjudicated by a competent authority."
+
 grid_eyebrow: "Investigations"
 grid_title: "The Public Record"
 grid_description: "Each issue of Oʻahu Underground takes publicly available records and shows what they look like laid next to each other. Financial disclosures, board rosters, donor lists, court filings — the network isn't hidden, it's just that nobody with a masthead has any incentive to draw the lines between the dots."

@@ -7,7 +7,7 @@
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationsByUpdated := sort $investigationPages "Lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
-{{- $lead := .Site.GetPage "/investigation/the-two-questions" -}}
+{{- $lead := .Site.GetPage "/investigation/open-letter-bosko-petricevic" -}}
 {{- if and (not $lead) (gt (len $investigationPages) 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
@@ -30,13 +30,13 @@
 {{- $data := .Site.Data.neutralization_stack -}}
 # {{ .Title }}
 
-{{ .Params.hero_kicker | default "Prosecution Roadmap" }}
+{{ .Params.hero_kicker | default "Open Letter" }}
 
-## {{ .Params.hero_headline | default "The Two Questions" }}
+## {{ .Params.hero_headline | default "An Open Letter to Bosko Petricevic, Esq." }}
 
 {{ .Params.hero_subtitle | default "How one FBI interview could close the Wilson Loo federal case" }}
 
-[{{ .Params.hero_primary_cta_label | default "Read the Roadmap" }}]({{ .Params.hero_primary_cta_url | default "/investigation/the-two-questions/" }})
+[{{ .Params.hero_primary_cta_label | default "Read the Letter" }}]({{ .Params.hero_primary_cta_url | default "/investigation/open-letter-bosko-petricevic/" }})
 [{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}]({{ .Params.hero_secondary_cta_url | default "/investigation/" }})
 
 ---

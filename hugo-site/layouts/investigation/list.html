@@ -74,6 +74,23 @@
   </div>
   {{ end }}
 
+  {{/* ── Editorial Standards ── */}}
+  {{ with .Params.standards_note }}
+  <section class="ou-section ou-standards-note-section" aria-labelledby="investigation-standards-title">
+    <div class="ou-section-wide">
+      <aside class="ou-standards-note">
+        <div class="ou-standards-note-left">
+          <div class="ou-publisher-note-badge">{{ $.Params.standards_eyebrow | default "Editorial Standards" }}</div>
+          <h2 class="ou-publisher-note-title" id="investigation-standards-title">{{ $.Params.standards_title | default "Investigation Standards" }}</h2>
+        </div>
+        <div class="ou-standards-note-right">
+          <p class="ou-publisher-note-text">{{ . }}</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  {{ end }}
+
   {{/* ── Multi-Part Series ── */}}
   {{ $seriesPages := where .Pages "Layout" "series" }}
   {{ if $seriesPages }}

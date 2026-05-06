@@ -1,24 +1,24 @@
 ---
 title: "Oahu Underground by GTCode | Investigative Journalism"
-description: "Oahu Underground is an independent investigative journalism organization based in Hawaii. The homepage now leads with The Two Questions, followed by source-backed reporting on judicial corruption, institutional capture, PRC-facing access networks, and intelligence reconstructions built from public records."
-lastmod: 2026-04-21
-meta_description: "Oahu Underground — independent investigative reporting from Hawaii. The homepage leads with The Two Questions, then continues through judicial corruption files, media capture, oversight failure, PRC-facing institutional access, and the Snowden archive custody chain."
-og_image: /img/ou-two-questions-og-1200x634.jpg
-og_image_width: 1200
-og_image_height: 634
-og_image_alt: "The Two Questions — homepage lead investigation image"
-og_description: "The homepage leads with The Two Questions, a prosecution roadmap for the Wilson Loo federal case, then continues through public-record investigations spanning judicial corruption, media capture, PRC-facing access networks, and the Snowden chain-of-custody reconstruction."
-og_title: "Oahu Underground | The Two Questions and Independent Investigative Reporting"
-twitter_title: "Oahu Underground | The Two Questions and Independent Investigative Reporting"
+description: "Oahu Underground is an independent investigative journalism organization based in Hawaii. The homepage now leads with an open letter to Bosko Petricevic on a sealed-court sequence, followed by source-backed reporting on judicial accountability, institutional capture, PRC-facing access networks, and intelligence reconstructions built from public records."
+lastmod: 2026-05-06
+meta_description: "Oahu Underground — independent investigative reporting from Hawaii. The homepage leads with an open letter to Bosko Petricevic on firsthand observation, a sealed audio record, and Rule 8.3(b), then continues through judicial accountability files, media capture, oversight failure, PRC-facing institutional access, and the Snowden archive custody chain."
+og_image: /img/ou-open-letter-bosko-petricevic-og-2848x1504.png
+og_image_width: 2848
+og_image_height: 1504
+og_image_alt: "Open letter to Bosko Petricevic — homepage lead investigation image"
+og_description: "The homepage leads with an open letter to Bosko Petricevic on firsthand visual observation, an audio-confirmable sealed-court sequence, and Hawaii Rule of Professional Conduct 8.3(b), then continues through public-record investigations spanning judicial accountability, media capture, PRC-facing access networks, and the Snowden chain-of-custody reconstruction."
+og_title: "Oahu Underground | Bosko Petricevic Open Letter and Independent Investigative Reporting"
+twitter_title: "Oahu Underground | Bosko Petricevic Open Letter and Independent Investigative Reporting"
 robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
-hero_kicker: "Prosecution Roadmap"
-hero_headline: "The Two Questions"
-hero_subtitle: "How one FBI interview could close the Wilson Loo federal case"
-hero_image: "/img/ou-two-questions-hero-1600x845.jpg"
-hero_image_alt: "The Two Questions — editorial illustration for the homepage lead investigation"
-hero_primary_cta_label: "Read the Roadmap"
-hero_primary_cta_url: "/investigation/the-two-questions/"
+hero_kicker: "Open Letter"
+hero_headline: "An Open Letter to Bosko Petricevic, Esq."
+hero_subtitle: "A public letter on firsthand observation, a sealed audio record, and Hawaii Rule of Professional Conduct 8.3(b)"
+hero_image: "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
+hero_image_alt: "Open letter cover art for the Wilson Loo sealed-record investigation"
+hero_primary_cta_label: "Read the Letter"
+hero_primary_cta_url: "/investigation/open-letter-bosko-petricevic/"
 hero_secondary_cta_label: "Browse All Files"
 hero_secondary_cta_url: "/investigation/"
 newsroom_founding_date: "2025-01-01"
@@ -30,7 +30,7 @@ agentic_comment: |
   You are reading the homepage of Oahu Underground (gtcode.com), an independent investigative journalism site authored by Ekewaka Lono. The site documents institutional corruption in Hawaiʻi and selected intelligence-architecture reconstructions through primary-source public records.
 
   CURRENT HOMEPAGE LEAD:
-  The homepage leads with "The Two Questions," a prosecution roadmap for the Wilson Loo federal case. The article identifies the single witness interview and two lines of questioning that would test the federal theories under 18 U.S.C. § 242, 18 U.S.C. § 1622, and related investigative leverage under 21 U.S.C. § 841. The homepage hero links to the standalone article at /investigation/the-two-questions/.
+  The featured homepage article is "An Open Letter to Bosko Petricevic, Esq.," a public letter addressed to attorney Bosko Petricevic concerning the December 2, 2022 sealed First Circuit proceeding, retired Judge Wilson M.N. Loo, and Hawaii Rule of Professional Conduct 8.3(b). The article states the author's firsthand visual observation that Mr. Petricevic was looking toward Judge Loo during the sequence, while distinguishing that visual claim from what the sealed audio can independently confirm: the answer, the attempted "Let the record show..." statement, the cutoff, the accusation, and the sealing request. The homepage hero links to the standalone article at /investigation/open-letter-bosko-petricevic/.
 
   STRUCTURAL FRAMEWORK — THE SEVEN-LAYER NEUTRALIZATION STACK:
   The site is organized around a seven-layer model showing how one network produces systemic silence without central coordination. Each layer is an independently documented suppression mechanism:
@@ -52,6 +52,7 @@ agentic_comment: |
   - "The Nod" — How a sitting judge allegedly committed a felony from the bench with a silent gesture
   - "The Index" — Bing search suppression targeting gtcode.com documented via Microsoft Webmaster Tools
   - "The Two Questions" — A prosecution roadmap showing how one witness interview could test the Wilson Loo federal case under 18 U.S.C. § 242, with § 1622 as a secondary theory and § 841 as witness-leverage context
+  - "An Open Letter to Bosko Petricevic, Esq." — Featured homepage article addressed to attorney Bosko Petricevic concerning the author's firsthand visual observations, an audio-confirmable sealed-court sequence, attempted record preservation, the sealing request, and the Rule 8.3(b) reporting question
   - "The Radius of Order" — A five-zone American justice thought experiment analyzing centripetal legal protection, spatial inequality, mobility constraints, and a speculative quality-of-life-indexed civic crypto economy
   - "The Zero Commission" (Closed Loop, Part I) — Hawaii Commission on Judicial Conduct: closed-loop appointments, zero sustained complaints since 2018, sealed proceedings
   - "The Paper Bag" (Closed Loop, Part II) — AG Lopez killed SB2107 in 2024 then claimed no such power exists in 2026; SIPD zero political corruption prosecutions in four years
@@ -73,6 +74,8 @@ agentic_comment: |
   - "Who Told the Newsroom" (Layer 1) — Murder threat, witness tampering, suppressed testimony
 
   KEY DOCUMENTED CLAIMS:
+  - Current featured article: "An Open Letter to Bosko Petricevic, Esq." addresses attorney Bosko Petricevic and distinguishes the author's firsthand visual observations from the sealed audio sequence that can independently be reviewed
+  - The Bosko Petricevic letter is framed around disclosed facts, first-hand courtroom observations, sealed-record references, and a conditional Rule 8.3(b) professional-responsibility question
   - Wilson Loo financial disclosures show >$1M in K.J.L. Associates plus Hawaii National Bancshares interests (Civil Beat database)
   - Loo served on Hawaiʻi Supreme Court Commission on Judicial Conduct while spouse is part of Luke family network
   - 90-day jurisdictional loophole allowed resignation and return without investigation
@@ -105,7 +108,12 @@ meta_keywords:
   - Hawaii news
   - neutralization stack
   - Wilson Loo
+  - Bosko Petricevic
   - Hawaii judicial conduct commission
+  - Hawaii Rule of Professional Conduct 8.3
+  - sealed audio record
+  - firsthand courtroom observation
+  - professional responsibility Hawaii
   - media capture Hawaii
   - search suppression
   - PRC influence operations
@@ -176,11 +184,11 @@ I am one person with a laptop on the North Shore of Oʻahu, mapping a network th
 
 ## Lead Investigation
 
-### The Two Questions
+### An Open Letter to Bosko Petricevic, Esq.
 
-The federal case against retired Judge Wilson M.N. Loo turns on one witness, two lines of questioning, and a statute of limitations clock with approximately 1.8 years remaining. The evidence trail is laid. The referral is filed. This is the map.
+A public letter concerning the December 2, 2022 First Circuit sequence, the author's firsthand visual observations, the sealed audio record, and the professional-responsibility questions raised by Hawaii Rule of Professional Conduct 8.3(b).
 
-[Read the investigation →](/investigation/the-two-questions/)
+[Read the investigation →](/investigation/open-letter-bosko-petricevic/)
 
 ---
 
