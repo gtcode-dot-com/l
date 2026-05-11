@@ -7,8 +7,8 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2026-03-14T06:15:15.536693+00:00'
-exported_at: '2026-03-14T06:15:17.777037+00:00'
+date: '2026-05-11T02:28:41.013994+00:00'
+exported_at: '2026-05-11T02:28:47.511319+00:00'
 feed: https://isc.sans.edu/rssfeed.xml
 language: en
 source_url: https://isc.sans.edu/diary/rss/32796
@@ -26,7 +26,7 @@ structured_data:
     logo: /favicon.ico
     name: GTCode
 title: SmartApeSG campaign uses ClickFix page to push Remcos RAT, (Sat, Mar 14th)
-updated_at: '2026-03-14T06:15:15.536693+00:00'
+updated_at: '2026-05-11T02:28:41.013994+00:00'
 url_hash: f771688b9283ce66f16dd9277c1178348c58b682
 ---
 

@@ -7,7 +7,7 @@ seo_title: "Open Letter to Bosko Petricevic on the Wilson Loo Sealed Record"
 subtitle: "You Were in the Room"
 description: "A public letter to attorney Bosko Petricevic concerning a December 2, 2022 First Circuit courtroom sequence, a sealed audio record, and professional-responsibility questions under Hawaii Rule of Professional Conduct 8.3(b)."
 date: 2026-05-06
-lastmod: 2026-05-06
+lastmod: 2026-05-10
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "May 6, 2026"
@@ -44,7 +44,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-06T00:00:00Z"
-article_modified_time: "2026-05-06T00:00:00Z"
+article_modified_time: "2026-05-10T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Bosko Petricevic"
@@ -128,6 +128,8 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, judicial conduct question, sealed audio record, firsthand observation, professional responsibility, First Circuit, Hawaii"
 ---
+
+**Editor’s note, May 10, 2026:** A companion analysis, [The Lawyer in the Room](/investigation/the-lawyer-in-the-room/), explains why the answer to this letter matters under Hawaiʻi Rule of Professional Conduct 8.3(b).
 
 Mr. Petricevic,
 
