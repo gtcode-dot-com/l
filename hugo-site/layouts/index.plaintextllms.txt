@@ -3,7 +3,7 @@
 
 > {{ site.Params.description }}
 
-This site publishes: (1) Oahu Underground — independent investigative journalism documenting institutional corruption in Hawaiʻi through public records, financial disclosures, and court filings; and (2) GTCode — AI engineering consulting with open-source Elixir libraries on Hex.pm.
+This site publishes: (1) Oahu Underground — independent investigative journalism documenting institutional accountability failures in Hawaiʻi through public records, financial disclosures, and court filings; and (2) GTCode — AI engineering consulting with open-source Elixir libraries on Hex.pm.
 
 - Author: {{ site.Params.author }}
 - Contact: {{ site.Params.contact_email }}

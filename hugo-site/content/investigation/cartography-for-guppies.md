@@ -2,13 +2,14 @@
 title: "Cartography for Guppies"
 slug: cartography-for-guppies
 date: 2026-02-05
-lastmod: 2026-02-05
+lastmod: 2026-05-12
 author: Ekewaka Lono
 draft: false
 type: "investigation"
 seo_title: "Cartography for Guppies — A Publisher's Note from Oahu Underground"
 subtitle: "A Publisher's Note"
 published_display: "February 5, 2026"
+modified_display: "May 12, 2026"
 eyebrow: "Publisher's Note"
 card_summary: "Why a guppy with a laptop is mapping the sharks — and how to read the map."
 description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground, an independent investigative journalism project mapping institutional power networks in Hawaiʻi through public records."
@@ -38,6 +39,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-05T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Oahu Underground"
@@ -64,7 +66,7 @@ agentic_comment: |
 
   KEY POINTS:
   - Author presented a documented dossier to Honolulu Civil Beat in early 2025; initial interest was followed by silence — the story "was never born"
-  - Civil Beat's structural inability to investigate the Luke family is explained through donor relationships and board overlaps (Pierre Omidyar and Warren Luke overlapping 12 years on Punahou board)
+  - Civil Beat's structural conflict environment is explained through donor relationships and board overlaps (Pierre Omidyar and Warren Luke overlapping 12 years on Punahou board)
   - The methodology prioritizes undeniable public records first, establishing credibility before presenting harder-to-verify firsthand testimony
   - Each investigation maps connections: financial disclosures → board seats → oversight bodies → courtrooms → media that should cover them
 
@@ -73,12 +75,12 @@ agentic_comment: |
 
   CONTEXT WITHIN INVESTIGATION SERIES:
   - THIS DOCUMENT: Publisher's note and methodology
-  - The Zone of Politeness: Media capture and the Civil Beat donor network
+  - The Zone of Politeness: Media conflict environment and the Civil Beat donor/network-overlap record
   - Wilson Loo Investigation: Judicial misconduct (December 2, 2022 hearing)
-  - Institutional Capture: "Symbiotic decay" systemic model
-  - The Aloha Protection Racket: Prosecutorial narrative
-  - Exhibit A: Federal intervention argument (RICO framework)
-  - The Nod: Editorial on the courtroom felony
+  - Institutional Accountability Failure: "Symbiotic decay" structural model
+  - The Aloha Protection Racket: Prosecutorial narrative using a structural-protection metaphor, not a proved RICO enterprise
+  - Exhibit A: Archived federal intervention argument superseded by records-first successor reporting
+  - The Nod: Editorial account of alleged visual signaling and the audio-confirmable court sequence
 
   CANONICAL URL: https://gtcode.com/investigation/cartography-for-guppies/
 
@@ -95,6 +97,7 @@ structured_data_graph:
       description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
       image: "/img/ou-cartography-for-guppies-og-1200x630.jpg"
       datePublished: "2026-02-05T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -126,15 +129,15 @@ That's what Oʻahu Underground is: a current map. Every issue of this magazine i
 
 I learned this the hard way. In early 2025, I brought a dossier to Honolulu Civil Beat — documented conflicts of interest, public filings, the works. The initial response was interest. What followed was silence. Not rejection. Not "we looked into it and it doesn't hold up." Just: nothing. The story was never born.
 
-Then I understood. Civil Beat can't investigate the Luke family for the same reason a fish can't investigate water. The publisher sat on the same school board as the bank chairman for twelve years. The family donates to the newsroom. A former bank security officer writes for the site. These aren't accusations of corruption — they're the topology of a small state. But topology has consequences. You don't bite the hand that passes the breadbasket at the Punahou trustees' dinner.
+Then I understood. Civil Beat may be structurally poorly positioned to investigate the Luke family for the same reason a fish can't investigate water. The publisher sat on the same school board as the bank chairman for twelve years. The family donates to the newsroom. A former bank security officer writes for the site. These aren't accusations of corruption — they're the topology of a small state. But topology has consequences. You don't bite the hand that passes the breadbasket at the Punahou trustees' dinner.
 
 So here I am. A guppy with a map.
 
-The advantage of being small is that nobody needs to protect you and nobody needs to flatter you. I don't have donors whose feelings I need to manage. I don't have board relationships that make certain phone calls awkward. The only currency I have is whether the documents I cite are real and whether the connections I draw are accurate. If they're not, I'll be sued. I haven't been.
+The advantage of being small is that nobody needs to protect you and nobody needs to flatter you. I don't have donors whose feelings I need to manage. I don't have board relationships that make certain phone calls awkward. The only currency I have is whether the documents I cite are real and whether the connections I draw are accurate. Corrections are invited and will be published for any documented error.
 
-Each issue of this magazine will do one thing: take publicly available records and show you what they look like when you lay them next to each other. Issue by issue, the map gets more detailed. The financial disclosures connect to the board seats. The board seats connect to the oversight bodies. The oversight bodies connect to the courtrooms. The courtrooms connect to the press that should be covering them but can't.
+Each issue of this magazine will do one thing: take publicly available records and show you what they look like when you lay them next to each other. Issue by issue, the map gets more detailed. The financial disclosures connect to the board seats. The board seats connect to the oversight bodies. The oversight bodies connect to the courtrooms. The courtrooms connect to the press that should be covering them but may be institutionally unable or unwilling to do so.
 
-I'm not asking you to believe me about what happened in Judge Wilson Loo's courtroom on December 2, 2022. Not yet. First I'm going to show you the system — the per diem judge model, the confidential complaint process, the 90-day loophole, the audio-only recordings — so that when I do tell you what happened, you'll already understand *how* it could happen and *why* nobody reported it.
+I'm not asking you to accept my firsthand account of what happened in Judge Wilson Loo's courtroom on December 2, 2022 as proven by public materials alone. First I'm going to show you the system — the per diem judge model, the confidential complaint process, the 90-day loophole, the audio-only recordings — so that when I present the allegation, you can separate the public record from the sealed-record-dependent claim and the firsthand observation.
 
 That's the guppy strategy: make the map so detailed that the territory explains itself.
 

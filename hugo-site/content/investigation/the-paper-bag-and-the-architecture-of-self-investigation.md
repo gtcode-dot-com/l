@@ -6,11 +6,11 @@ seo_title: "Hawaii AG, SB2107, and SIPD: The Paper Bag Inquiry"
 subtitle: "Closed Loop Part II on special counsel authority and executive self-investigation limits"
 description: "Public records compare AG testimony on SB2107 with later statements in the $35,000 paper bag inquiry and map executive-branch self-investigation limits."
 date: 2026-02-20
-lastmod: 2026-03-01
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 20, 2026"
-modified_display: "March 1, 2026"
+modified_display: "May 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
@@ -50,12 +50,13 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-20T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Closed Loop"
   - "Hawaii"
   - "Accountability"
-  - "Political Corruption"
+  - "Oversight Failure"
   - "Attorney General"
   - "Sylvia Luke"
   - "Anne Lopez"
@@ -110,12 +111,12 @@ structured_data_graph:
         "@type": "WebPage"
         "@id": "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
       headline: "The Paper Bag and the Architecture of Self-Investigation"
-      alternativeHeadline: "How Hawaii's Attorney General Killed the Tool She Now Says Doesn't Exist"
+      alternativeHeadline: "How Hawaii's Attorney General Opposed the Tool She Later Said Does Not Exist"
       description: "Public records compare AG testimony on SB2107 with later statements in the $35,000 paper bag inquiry and map executive-branch self-investigation limits."
       url: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
       image: "/img/ou-paper-bag-og-1200x630.jpg"
       datePublished: "2026-02-20T00:00:00Z"
-      dateModified: "2026-03-01T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -207,7 +208,7 @@ What follows is documented. It requires no interpretation. The record contradict
 
 **2024.** Senate Bill 2107. Senate Judiciary Committee, [January 25, 2024](https://www.capitol.hawaii.gov/sessions/Session2024/Testimony/SB2107_TESTIMONY_JDC_01-25-24_.PDF). The AG's office submits written testimony in opposition. The argument: the bill is unnecessary. The AG already has authority under HRS § 28-8 to appoint special deputy attorneys general with specified duties and powers. The AG can "tap any of the four county prosecutor's offices or enlist the Hawaiʻi Department of Law Enforcement." Conclusion: ["This bill, while well-intended, is ultimately unnecessary."](https://www.civilbeat.org/2026/02/hawaii-ag-not-giving-up-35k-paper-bag-case/)
 
-The bill died. The AG's testimony killed it.
+The bill died after the AG's testimony helped make it unnecessary in the committee record.
 
 **2026.** Press conference, Department of the Attorney General, February 13. Forty organizations comprising the [Clean Elections Hawaii Coalition](https://www.hawaiipublicradio.org/local-news/2026-02-13/hawaii-ag-says-no-conflict-her-investigation-of-alleged-35k-lawmaker-exchange) — Common Cause Hawaii, the League of Women Voters, the ACLU of Hawaii among them — have demanded an independent prosecutor. Lopez's response:
 
@@ -215,7 +216,7 @@ The bill died. The AG's testimony killed it.
 
 She continued: ["We can hire special deputy AG, an SDAG. The SDAG is still accountable to me and my department. It doesn't provide the special prosecutor that people are looking for — somebody that can act completely independent of this department."](https://www.kitv.com/news/hawaii-attorney-general-defends-bribery-investigation-of-unknown-lawmaker/article_fa2bfb7d-1eed-4b14-9dcd-9758136cc949.html)
 
-Read it again. In 2024, the power existed and the bill was unnecessary. In 2026, with her own boss under scrutiny, the power does not exist and independence is structurally impossible. The bill that would have formalized the mechanism lies dead in committee, killed by her own hand.
+Read it again. In 2024, the power existed and the bill was unnecessary. In 2026, with her own boss under scrutiny, the power does not exist and independence is structurally impossible. The bill that would have formalized the mechanism lies dead in committee after the office opposed it.
 
 This is not a change of mind. A change of mind requires acknowledging the first position. This is the quiet removal of a tool from a toolbox when the tool becomes inconvenient — and the subsequent insistence that the toolbox was always empty.
 
@@ -298,7 +299,7 @@ Lieutenant Governor Sylvia Luke — at the time the House Finance Committee Chai
 
 During the week of January 20–27, 2022, Luke's campaign reported $36,350 in deposits from 16 individuals and organizations. According to [Civil Beat's analysis of state campaign finance data](https://www.civilbeat.org/2026/01/we-asked-hawaii-lawmakers-did-you-take-35000-in-a-paper-bag/), she was the only lawmaker to report receiving at least $35,000 within the seven-day reporting window of the federal transaction. The $10,000 from Solidum and Pae was not included in that $36,350 — those were the unreported donations — meaning the actual total was higher.
 
-Whether the $35,000 in the paper bag and the $36,350 in deposits are the same money is a question for forensic accountants and, eventually, a grand jury. But for the purposes of this structural analysis, the answer is irrelevant. Whether Luke is innocent or guilty, the investigation is being conducted by a person who cannot investigate her independently. That is the architectural failure. It is load-bearing. It holds either way.
+Whether the $35,000 in the paper bag and the $36,350 in deposits are the same money is a question for forensic accountants and, eventually, a grand jury. But for the purposes of this structural analysis, the answer is irrelevant. The investigation is being conducted through an office structurally tied to the executive branch figure under scrutiny. That conflict is load-bearing. It holds whether Luke is innocent or guilty.
 
 ---
 
@@ -355,7 +356,7 @@ In Part I, I mapped the judicial closed loop. Here is the executive loop alongsi
 
 The third column. Civil Beat's [analysis of 58 arbitration awards over 25 years](https://www.civilbeat.org/2021/11/police-arbitration-decisions-are-raising-concerns-throughout-the-country/) found HPD ranks fourth nationally in reinstating fired officers. The SHOPO contract — which [expired June 30, 2025](https://www.civilbeat.org/2021/03/why-the-public-needs-to-know-more-about-police-contract-talks/) and is presumably under renegotiation — includes 30-minute interrogation limits, on-duty questioning requirements, a one-year statute of limitations on misconduct allegations, and mandatory purging of derogatory material from personnel files after four years. Sergeant Darren Cachola, terminated for assaulting a woman on video in 2014, was [reinstated in 2018](https://www.publicfirstlaw.org/case/arbitration/) after an arbitrator called it a "playful sparring match." Daniel Sellers, convicted in the Kealoha corruption case, was [reinstated through arbitration](https://www.civilbeat.org/2021/11/convicted-cop-in-kealoha-case-gets-his-job-back-in-arbitration/). A 2024 city audit found the Honolulu Police Commission's oversight ["inconsistent and ineffective"](https://www.civilbeat.org/2024/08/audit-calls-honolulu-police-commissions-oversight-inconsistent-and-ineffective/) — a "black box" where complaint outcomes disappear.
 
-Three branches. Three loops. The same blueprint stamped onto different institutional facades. Every overseer appointed by the overseen. Every record sealed by the institution that produced it. Every reform attempt dead on arrival, killed by the entity it was designed to constrain. The city is built on these loops. They are the foundation. The rest is decoration.
+Three branches. Three loops. The same blueprint stamped onto different institutional facades. Overseers are appointed by the institutions they review. Records are sealed by the institutions that produced them. Reform attempts can die inside the same political architecture they were designed to constrain. The city is built on these loops. They are the foundation. The rest is decoration.
 
 ---
 

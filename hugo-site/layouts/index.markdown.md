@@ -43,11 +43,11 @@
 
 ## Investigation Architecture
 
-### The Seven-Layer Neutralization Stack
+### The Seven-Layer Accountability-Failure Framework
 
-*How one network produces silence without coordination*
+*How separate mechanisms can produce accountability failure without central coordination*
 
-Each layer is independently sufficient to suppress a claim. Together, they form a defense-in-depth architecture: if one layer fails, the next catches the signal and attenuates it. No single point of failure. No coordination required. Each actor follows institutional incentives. The aggregate output is silence.
+Each layer can create a barrier to review. Together, they can produce a defense-in-depth effect: if one layer fails, the next can catch the signal and attenuate it. No single point of failure. No central coordination required. Each actor can follow institutional incentives. The aggregate output is non-response.
 
 {{ range $data.layers }}{{ if eq .status "live" }}> **LAYER {{ .num }} ACTIVATED** — {{ .live_detail }}
 
@@ -63,7 +63,7 @@ Each layer is independently sufficient to suppress a claim. Together, they form 
 - *{{ .one_liner }}*
 - Status: {{ if eq .status "live" }}LIVE{{ else if eq .status "forthcoming" }}FORTHCOMING{{ else }}PUBLISHED{{ end }} · {{ .published }}{{ if and (ne .status "forthcoming") (ne .status "live") }} · [Read the investigation →]({{ .url }}){{ else if eq .status "live" }} · Investigation in progress{{ else }} · [Have information? →](mailto:tips@gtcode.com){{ end }}
 {{ end }}
-**Aggregate output: Silence**
+**Aggregate output: Non-response**
 
 ### Related Series & Methodology
 {{ range $data.series_hubs }}
@@ -72,7 +72,7 @@ Each layer is independently sufficient to suppress a claim. Together, they form 
 
 ### For the CI Reform Audience
 
-The SECURE Act, signed into law in December 2025, broadened U.S. counterintelligence from a protective function to one that includes deterrence, disruption, and exploitation, and directed information-sharing with state, local, and tribal partners to counter foreign influence operations. This site shows what that mandate looks like in practice at the state level: one network, a growing archive of source-backed investigations. Coordination is only possible once the operating environment has been mapped.
+The SECURE Act, signed into law in December 2025, broadened U.S. counterintelligence from a protective function to one that includes deterrence, disruption, and exploitation, and directed information-sharing with state, local, and tribal partners to address subnational risk. This site shows why state-level mapping matters: documented networks, public-record access points, and a growing archive of source-backed investigations. Safeguards are only possible once the operating environment has been mapped.
 
 gtcode.com/investigation/ · CC-BY-4.0 · GitHub-archived · Wayback Machine indexed
 

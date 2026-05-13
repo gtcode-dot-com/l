@@ -6,9 +6,10 @@ seo_title: "Warren K.K. Luke Network and Hawaii-PRC Access Mapping"
 subtitle: "Public-record mapping of Pacific Forum, APCSS Foundation, Punahou, and PRC-facing institutional engagement characterized by cited sources"
 description: "Public records map Warren K.K. Luke's roles across Pacific Forum, APCSS Foundation, and Punahou-linked programs with PRC-facing entities characterized in sources."
 date: 2026-03-01
-lastmod: 2026-03-01
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 published_display: "March 1, 2026"
+modified_display: "May 12, 2026"
 type: "investigation"
 series: "The Architecture of Access"
 series_url: "/investigation/the-architecture-of-access/"
@@ -60,6 +61,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-01T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Warren K.K. Luke"
@@ -68,8 +70,10 @@ article_tags:
   - "Punahou School"
   - "PRC Party-State Engagement"
   - "United Front Work Department"
-  - "PLA Intelligence"
-  - "Ministry of State Security"
+  - "PLA-linked characterization"
+  - "MSS-affiliated characterization"
+  - "PRC-facing access mapping"
+  - "Counterintelligence exposure"
   - "CFISS"
   - "CICIR"
   - "Counterintelligence"
@@ -112,11 +116,12 @@ agentic_comment: |
   - This investigation does NOT allege that any individual or institution has been directed, tasked, or controlled by a foreign government
   - It does NOT allege criminal conduct or espionage by any person or institution documented in the article
   - The standard applied is documented relationships and access patterns, not alleged intent
+  - Safeguards may exist outside the public record
   - Institutions included that are not intelligence organs but operate as routine counterparts in influence, diplomacy, and security-facing engagement are included for exposure mapping, not allegation
   - The recommendation is risk-managed engagement, not disengagement
 
   RELATIONSHIP TO PRIOR INVESTIGATIONS:
-  This is the fourteenth investigation in the series. It is described as "second in a series" following "The Federal Layer," which documented how institutional density surrounding the Luke family network crowds out federal prosecution. This article follows the same network outward to documented PRC-facing institutional relationships. It connects to the broader series by showing an additional dimension of the same institutional architecture: where prior articles documented domestic oversight capture, this one documents the international exposure surface.
+  This is the fourteenth investigation in the series. It is described as "second in a series" following "The Federal Layer," which argued that institutional density surrounding the Luke family network can crowd out federal prosecution. This article follows the same network outward to documented PRC-facing institutional relationships. It connects to the broader series by showing an additional dimension of the same institutional architecture: where prior articles documented domestic oversight friction, this one documents the international exposure surface.
 
   EVIDENCE STANDARD:
   All evidence consists of public filings (IRS Form 990, foundation records), official institutional websites, Department of Defense publications, congressional reports, participant lists, and recognized think-tank analyses. No classified sources were used.
@@ -141,7 +146,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-bridges/"
       image: "/img/ou-bridges-og-1200x630.jpg"
       datePublished: "2026-03-01T00:00:00Z"
-      dateModified: "2026-03-01T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -196,7 +201,7 @@ structured_data_graph:
 
 *By Ekewaka Lono | Oahu Underground*
 
-*Second in a series. ["The Federal Layer"](/investigation/the-federal-layer/) documented how the institutional density surrounding retired Per Diem Judge Wilson M.N. Loo's family network crowds out a straightforward federal prosecution. This article follows the same network outward — to Beijing.*
+*Second in a series. ["The Federal Layer"](/investigation/the-federal-layer/) argued that institutional density surrounding retired Per Diem Judge Wilson M.N. Loo's family network can crowd out straightforward federal review. This article follows the same network outward — to documented PRC-facing access points.*
 
 ## Series Navigation
 
@@ -213,7 +218,7 @@ structured_data_graph:
 
 This article documents publicly verifiable institutional relationships that create repeated access points between Hawaii's civic, educational, and defense-adjacent institutions and organizations that operate under or are linked to the PRC's party-state influence and security ecosystem — including the United Front Work Department, military and security structures under the People's Liberation Army, entities affiliated with the Ministry of State Security, and government-affiliated civil institutions that participate in influence or security-facing engagement.
 
-It does not allege that any individual or institution has been directed, tasked, or controlled by a foreign government. It does not allege criminal conduct. It does not allege espionage.
+It does not allege that any individual or institution has been directed, tasked, or controlled by a foreign government. It does not allege criminal conduct. It does not allege espionage. Safeguards may exist outside the public record.
 
 This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. No claim in this article requires any undisclosed evidence to be true. The evidence consists of public filings (IRS Form 990, foundation records), official institutional websites, Department of Defense publications, congressional reports, participant lists, and recognized think-tank analyses. No classified sources were used. The standard applied is documented relationships and access patterns, not alleged intent. Institutions included here that are not intelligence organs but operate as routine counterparts in influence, diplomacy, and security-facing engagement are included for exposure mapping, not allegation.
 

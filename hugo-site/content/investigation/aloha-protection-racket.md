@@ -2,33 +2,34 @@
 title: "The Aloha Protection Racket"
 slug: aloha-protection-racket
 date: 2025-08-26
-lastmod: 2026-03-01
+lastmod: 2026-05-12
 author: Ekewaka Lono
 draft: false
 type: "investigation"
-seo_title: "The Aloha Protection Racket — Judge Wilson Loo and Judicial Corruption in Hawaii"
+seo_title: "The Aloha Protection Racket — Judge Wilson Loo and Judicial Accountability in Hawaii"
 published_display: "August 26, 2025"
+modified_display: "May 12, 2026"
 subtitle: "An Investigative Report on Institutional Failures That Shielded an Individual Accused of Violence"
 eyebrow: "Lead Investigation"
-card_summary: "How documented institutional failures across the judiciary, law enforcement, and oversight bodies in Hawaiʻi shielded an individual accused of violence from accountability."
-description: "Investigative report by Ekewaka Lono documenting how institutional failures in Hawaiʻi's judiciary, law enforcement, and oversight systems shielded an individual accused of violence from accountability."
+card_summary: "How documented institutional failures across the judiciary, law enforcement, and oversight bodies in Hawaiʻi produced a protection effect around an individual accused of violence."
+description: "Investigative report by Ekewaka Lono documenting how institutional failures in Hawaiʻi's judiciary, law enforcement, and oversight systems produced a protection effect for an individual accused of violence."
 weight: 6
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/aloha-protection-racket/"
 robots: "index, follow, max-image-preview:large"
 
-meta_description: "The Aloha Protection Racket — an investigative report on Judge Wilson Loo and the system that allegedly shielded an individual accused of violence in Hawaiʻi."
+meta_description: "The Aloha Protection Racket — an investigative report on Judge Wilson Loo and institutional sequences that produced a protection effect for an individual accused of violence in Hawaiʻi."
 meta_keywords:
   - Wilson Loo
-  - judicial corruption
+  - judicial accountability
   - Hawaii
   - HPD
   - judicial oversight failure hawaii
 
 # Open Graph
 og_title: "The Aloha Protection Racket"
-og_description: "Investigative report documenting institutional failures that shielded an individual accused of violence in Hawaiʻi — judiciary, law enforcement, and oversight."
+og_description: "Investigative report documenting institutional failures that produced a protection effect around an individual accused of violence in Hawaiʻi — judiciary, law enforcement, and oversight."
 og_image: "/img/ou-aloha-protection-racket-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -38,18 +39,19 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-26T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Wilson Loo"
   - "Aloha Protection Racket"
-  - "Judicial Corruption"
+  - "Judicial Accountability"
   - "Hawaii"
   - "HPD"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "The Aloha Protection Racket"
-twitter_description: "How documented institutional failures across Hawaiʻi's institutions shielded an individual accused of violence from accountability."
+twitter_description: "How documented institutional failures across Hawaiʻi's institutions produced a protection effect around an individual accused of violence."
 twitter_image: "/img/ou-aloha-protection-racket-og-1200x630.jpg"
 twitter_image_alt: "The Aloha Protection Racket — investigative report on Judge Wilson Loo"
 
@@ -78,9 +80,10 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/aloha-protection-racket/"
       headline: "The Aloha Protection Racket"
       alternativeHeadline: "An Investigative Report on Judge Wilson Loo"
-      description: "Investigative report alleging Judge Wilson Loo orchestrated a protection racket from the bench, enabled by HPD and Hawaiʻi's judicial oversight system."
+      description: "Investigative report documenting alleged judicial signaling and institutional sequences that produced a protection effect across HPD and Hawaiʻi's judicial oversight system."
       image: "/img/ou-aloha-protection-racket-og-1200x630.jpg"
       datePublished: "2025-08-26T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -95,12 +98,12 @@ structured_data_graph:
           width: 180
           height: 180
       articleSection: "Investigations"
-      keywords: "Wilson Loo, Aloha Protection Racket, Judicial Corruption, Hawaii, HPD"
+      keywords: "Wilson Loo, Aloha Protection Racket, Judicial Accountability, Hawaii, HPD"
 ---
 
 ### Legal Notice
 
-*This report documents alleged misconduct based on public records, court filings, and firsthand testimony. All individuals are presumed innocent. Firsthand claims are attributed to the complainant's account. Where conclusions depend on sealed records or unverified testimony, conditional language is used. This publication follows the failure of official channels to address the matters described.*
+*This report documents alleged misconduct based on public records, court filings, and firsthand testimony. All individuals are presumed innocent. Firsthand claims are attributed to the complainant's account. Where conclusions depend on sealed records or unverified testimony, conditional language is used. The title uses "protection racket" as a structural metaphor for a protection effect; this article does not allege a proved RICO enterprise or a centralized conspiracy.*
 
 ---
 
@@ -118,7 +121,7 @@ During cross-examination, the complainant asked the defendant a direct question:
 
 **Public record (audio recording):** The complainant attempted to place the observed conduct on the record. His words began: "Let the record show that the judge just..." Judge Loo interrupted, stating **"Nah ah ah enough out of you!!"** The audio record captures both the attempted objection and the interruption. It does not capture any visual conduct.
 
-If the complainant's account of the non-verbal signal is accurate, Loo's conduct would constitute deprivation of rights under color of law — a federal felony under [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242), a statute the Supreme Court held applies to state judges in *United States v. Lanier* (1997) — and may also constitute subornation of perjury under 18 U.S.C. § 1622. The sealed court file and the audio record are the primary evidence bearing on this question.
+If the complainant's account of the non-verbal signal is accurate, Loo's conduct would raise serious deprivation-of-rights questions under [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242), a statute the Supreme Court held applies to state judges in *United States v. Lanier* (1997). It may also raise subornation-of-perjury questions, but federal statutes such as 18 U.S.C. § 1622 have jurisdictional limits when the alleged perjury occurred in state court. The sealed court file and the audio record are the primary evidence bearing on this question.
 
 The case was subsequently sealed.
 
@@ -162,7 +165,7 @@ According to the complainant, HPD officers provided conflicting information abou
 
 **Public record (court procedures):** The audio-only recording format of the December 2022 hearing created a structural condition in which any visual conduct — whether judicial signals, gestures, or facial expressions — would be unrecorded. If the complainant's account of a non-verbal signal is accurate, this procedural condition meant the most consequential act in the hearing left no trace in the official record.
 
-The documented sequence shows a pattern where each institution's response — or non-response — effectively shielded the same individual from accountability. Whether this reflects coordination or independent failures, the structural outcome is identical.
+The documented sequence shows a pattern in which multiple institutional responses — or non-responses — produced the practical effect of shielding the same individual from accountability. Whether this reflects coordination, inertia, conflict avoidance, or independent failures remains open; the structural outcome is identical.
 
 ---
 
@@ -199,5 +202,15 @@ Whether this pattern reflects coordination or independent institutional failures
 This matter has been referred to the **DOJ Public Integrity Section**, which acknowledged receipt of the complaint.
 
 Successor reporting examines specific elements of this case in greater detail: *[The Two Questions](/investigation/the-two-questions/)* addresses the evidentiary path to resolution. *[The Nod](/investigation/the-nod-wilson-loo-silent-felony/)* reconstructs the hearing in forensic detail. *[The Zero Commission](/investigation/the-zero-commission/)* documents the oversight body's structural failure. *[The Paper Bag](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/)* examines the conflict-of-interest architecture in Hawaiʻi's self-investigation model. *[The Shape of the Cage](/investigation/the-shape-of-the-cage/)* presents the structural model of how networked institutional failure operates without requiring a single point of coordination.
+
+## What This Article Does Not Prove
+
+This article does not prove from public materials alone that Judge Loo made the alleged visual signal, that HPD or any oversight body coordinated with him, or that the institutional sequence constitutes a RICO enterprise. It documents public records, sealed-record-dependent claims, firsthand allegations, and the protection effect created when reports, court records, and oversight pathways fail to produce substantive review.
+
+## What Would Falsify This
+
+The structural thesis would be materially narrowed by production of HPD or Commission records showing substantive review of the primary evidence, public correction of the judicial-status discrepancy, or records showing that reported violence and intimidation were investigated on the merits.
+
+Material weakening or falsification of the courtroom allegation would require sealed-record review showing a materially different audio sequence; court-file review showing absence of the described exhibit or a materially different exhibit; production of a full record showing an uninterrupted attempted record statement; or credible, disinterested courtroom testimony contradicting the alleged visual signal while remaining consistent with timing, layout, line of sight, sealed audio, and the documentary record. A self-interested denial by an implicated participant is not dispositive. It carries evidentiary weight only to the extent it is specific, record-consistent, line-of-sight-aware, and independently supported.
 
 The record is public. The sealed file exists. The questions remain open.

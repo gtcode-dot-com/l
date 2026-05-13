@@ -88,7 +88,7 @@ relativeURLs = false
   page = ["HTML", "Markdown"]
 
 [params]
-  description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional corruption, judicial misconduct, and accountability in the islands.'
+  description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional accountability, judicial conduct, and public-record power mapping in the islands.'
   author = 'Ekewaka Lono'
   home_title_suffix = 'Investigative Journalism + AI Consulting'
   # SEO guardrails (template-level normalization/truncation)

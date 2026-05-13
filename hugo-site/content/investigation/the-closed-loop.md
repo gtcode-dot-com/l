@@ -6,11 +6,11 @@ seo_title: "Hawaii Oversight Loop: CJC, Attorney General, SIPD"
 subtitle: "Series landing page on the Hawaii Commission on Judicial Conduct, Attorney General, SIPD, and structural accountability gaps"
 description: "Series map of Hawaii oversight and self-investigation focused on the Hawaii Commission on Judicial Conduct, Attorney General, SIPD, and accountability gaps."
 date: 2026-02-15
-lastmod: 2026-03-01
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 15, 2026"
-modified_display: "March 1, 2026"
+modified_display: "May 12, 2026"
 layout: "series"
 
 
@@ -24,8 +24,8 @@ meta_keywords:
   - "hawaii judicial conduct commission"
   - "hawaii SIPD"
   - "hawaii special prosecutor"
-  - "hawaii corruption investigation"
-  - "hawaii institutional corruption"
+  - "hawaii public corruption oversight"
+  - "hawaii institutional accountability"
   - "hawaii executive branch oversight"
   - "hawaii self-investigation"
   - "hawaii commission on judicial conduct"
@@ -49,6 +49,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-15T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Closed Loop"
@@ -61,7 +62,7 @@ article_tags:
   - "Accountability"
   - "Series"
   - "Judicial Conduct"
-  - "Political Corruption"
+  - "Oversight Failure"
 
 # Twitter Card
 twitter_card: "summary_large_image"
@@ -77,7 +78,7 @@ agentic_comment: |
   This is the series landing page for "The Closed Loop," an investigative series by Oahu Underground documenting structural accountability failures across all branches of Hawaii state government.
 
   SERIES THESIS:
-  Every branch of Hawaii government has constructed oversight mechanisms controlled by the institutions they exist to oversee. The pattern is identical across branches: the appointing authority selects the overseers, confidentiality rules seal the proceedings, and reform legislation dies in committee — killed by the entities it was designed to constrain.
+  Hawaii government repeatedly uses oversight mechanisms structurally tied to the institutions they exist to oversee. The pattern recurs across branches: the appointing authority selects the overseers, confidentiality rules seal the proceedings, and reform legislation can die in committees influenced by the entities it was designed to constrain.
 
   PUBLISHED INSTALLMENTS:
   - Part I: "The Zero Commission" (Feb 15, 2026) — The judicial branch. Hawaii's Commission on Judicial Conduct: all 7 members appointed by the Supreme Court, zero sustained complaints since 2018, proceedings sealed under Rule 8.4, HB 3056 reform bill died in committee (2008).
@@ -101,12 +102,12 @@ structured_data_graph:
         "@type": "WebPage"
         "@id": "https://gtcode.com/investigation/the-closed-loop/"
       headline: "The Closed Loop"
-      alternativeHeadline: "An investigative series mapping the structural impossibility of self-oversight in Hawaii"
+      alternativeHeadline: "An investigative series mapping structural limits of self-oversight in Hawaii"
       description: "Series map of Hawaii oversight and self-investigation focused on the Hawaii Commission on Judicial Conduct, Attorney General, SIPD, and accountability gaps."
       url: "https://gtcode.com/investigation/the-closed-loop/"
       image: "/img/ou-closed-loop-og-1200x630.jpg"
       datePublished: "2026-02-15T00:00:00Z"
-      dateModified: "2026-03-01T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -160,7 +161,7 @@ structured_data_graph:
           headline: "The Zero Commission"
           url: "https://gtcode.com/investigation/the-zero-commission/"
           datePublished: "2026-02-15T00:00:00Z"
-          dateModified: "2026-03-01T00:00:00Z"
+          dateModified: "2026-05-12T00:00:00Z"
           position: 1
         - "@type": "NewsArticle"
           "@id": "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/#newsarticle"
@@ -168,11 +169,11 @@ structured_data_graph:
           headline: "The Paper Bag and the Architecture of Self-Investigation"
           url: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
           datePublished: "2026-02-20T00:00:00Z"
-          dateModified: "2026-03-01T00:00:00Z"
+          dateModified: "2026-05-12T00:00:00Z"
           position: 2
 ---
 
-Every branch of Hawaii government has built an oversight mechanism controlled by the institution it exists to oversee. The overseer is appointed by the overseen. Proceedings are sealed. Reform legislation dies in committee — killed by the entity it was designed to constrain. The variable changes. The architecture doesn't.
+Hawaii government repeatedly builds oversight mechanisms structurally tied to the institutions they exist to oversee. The overseer is appointed by the overseen. Proceedings are sealed. Reform legislation can die in committees shaped by the entity it was designed to constrain. The variable changes. The architecture recurs.
 
 This series maps the closed loops, branch by branch.
 
@@ -185,7 +186,7 @@ This series maps the closed loops, branch by branch.
 - [The Federal Layer: Warren K.K. Luke and federal institutional overlap](/investigation/the-federal-layer/)
 - [The Architecture of Access: federal and PRC-facing series hub](/investigation/the-architecture-of-access/)
 - [The Two Questions: federal investigative roadmap in the Wilson M.N. Loo matter](/investigation/the-two-questions/)
-- [Hawaii Institutional Capture: systemic governance network analysis](/investigation/hawaii-institutional-capture/)
+- [Hawaii Institutional Accountability Failure: systemic governance network analysis](/investigation/hawaii-institutional-capture/)
 
 ---
 

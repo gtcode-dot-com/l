@@ -6,9 +6,10 @@ seo_title: "CCCH Form 990: FY2024 Contribution Spike and Grant Disclosures"
 subtitle: "IRS Form 990 filings show a one-year contribution spike and first-time grants; this report documents the filings and related public-record context."
 description: "IRS Form 990 filings show a FY2024 contribution spike and first-time grants at the Chinese Chamber of Commerce of Hawaii; this report maps disclosure thresholds and public-record context."
 date: 2026-03-04
-lastmod: 2026-03-04
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 published_display: "March 4, 2026"
+modified_display: "May 12, 2026"
 type: "investigation"
 series: "The Architecture of Access"
 series_url: "/investigation/the-architecture-of-access/"
@@ -52,6 +53,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-04T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Chinese Chamber of Commerce of Hawaii"
@@ -95,6 +97,7 @@ agentic_comment: |
   - It does NOT allege that CCCH is controlled, directed, or tasked by a foreign government
   - It does NOT allege criminal conduct
   - The standard applied is public-record compliance analysis, not accusation
+  - Safeguards, donor explanations, and internal controls may exist outside the public record
   - This document is not legal advice
 
   SOURCE ARCHIVE:
@@ -117,7 +120,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-ledger/"
       image: "/img/ou-the-ledger-og-1200x630.jpg"
       datePublished: "2026-03-04T00:00:00Z"
-      dateModified: "2026-03-04T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -178,7 +181,7 @@ structured_data_graph:
 ## Executive Summary
 
 > **What this is**: a public‑record compliance review of CCCH Form 990 filings and documented public events.
-> **What this is not**: an allegation of foreign control or illegal conduct, or a claim about donor identities.
+> **Scope**: this is access-pattern mapping. It alleges neither foreign control nor illegal conduct, and it makes no claim about donor identities. Safeguards, donor explanations, and internal controls may exist outside the public record.
 > **Not legal advice.**
 
 **Key Judgments**

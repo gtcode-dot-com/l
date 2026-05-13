@@ -26,6 +26,7 @@ User-agent: *
 Allow: /
 Allow: /agent.txt
 Allow: /agents.txt
+Allow: /AGENTS.md
 Allow: /llm.txt
 Allow: /llms.txt
 Allow: /ai.txt

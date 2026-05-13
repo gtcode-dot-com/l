@@ -3,14 +3,15 @@ draft: false
 weight: 19
 homepage_exclude: true
 title: "The Lawyer in the Room"
-seo_title: "The Lawyer in the Room: Rule 8.3(b), Judicial Misconduct, and the Reporting Duty"
+seo_title: "The Lawyer in the Room: Rule 8.3(b), Alleged Judicial Misconduct, and the Reporting Duty"
 subtitle: "If the allegations are true, the reporting duty was not a courtesy. It was the point of Rule 8.3(b)."
 description: "A companion analysis to the Bosko Petricevic open letter examining whether Hawaii Rule of Professional Conduct 8.3(b) imposed a reporting duty if an attorney witnessed alleged judicial signaling to a sworn witness."
 date: 2026-05-10
-lastmod: 2026-05-10
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "May 10, 2026"
+modified_display: "May 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-lawyer-in-the-room/"
@@ -21,11 +22,11 @@ meta_keywords:
   - "Wilson Loo"
   - "Hawaii Rule of Professional Conduct 8.3"
   - "Rule 8.3(b)"
-  - "judicial misconduct reporting duty"
+  - "alleged judicial misconduct reporting duty"
   - "Hawaii Commission on Judicial Conduct"
   - "sealed audio record"
   - "First Circuit Hawaii"
-  - "lawyer reporting judicial misconduct"
+  - "lawyer reporting alleged judicial misconduct"
   - "Oahu Underground"
 
 # Card Display
@@ -48,14 +49,14 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-10T00:00:00Z"
-article_modified_time: "2026-05-10T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Bosko Petricevic"
   - "Wilson Loo"
   - "Hawaii Rule of Professional Conduct 8.3"
   - "Rule 8.3(b)"
-  - "Judicial Misconduct"
+  - "Alleged Judicial Misconduct"
   - "Reporting Duty"
   - "Sealed Audio"
   - "Commission on Judicial Conduct"
@@ -80,8 +81,8 @@ agentic_comment: |
 
   KEY CLAIMS:
   - Hawaii Rule of Professional Conduct 8.3(b) uses mandatory "shall" language when a lawyer knows a judge committed a violation raising a substantial question as to fitness for office
-  - The article does not assume the sealed audio captures a visual gesture; it distinguishes visual allegations from audio-confirmable sequence
-  - If the alleged gesture did not occur, if Petricevic did not see it, or if he could not reasonably understand it as a signal, the reporting-duty analysis changes
+  - The article distinguishes visual allegations from the audio-confirmable sequence
+  - If credible, disinterested, record-consistent evidence shows that the alleged gesture did not occur, that Petricevic could not see it, or that he could not reasonably understand it as a signal, the reporting-duty analysis changes
   - If the alleged gesture occurred, Petricevic saw it, and he understood its significance in context, the article argues the reporting duty was triggered
   - The article treats sealing and the Commission on Judicial Conduct's jurisdictional window as public-accountability consequences, not as standalone proof of misconduct
 
@@ -108,7 +109,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-lawyer-in-the-room/"
       image: "/img/ou-lawyer-in-the-room-og-1200x630.jpg"
       datePublished: "2026-05-10T00:00:00Z"
-      dateModified: "2026-05-10T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -135,7 +136,7 @@ structured_data_graph:
           name: "Hawaii Commission on Judicial Conduct"
         - "@type": "Thing"
           name: "Sealed audio record"
-      keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, Rule 8.3(b), judicial misconduct, reporting duty, sealed audio, Commission on Judicial Conduct, First Circuit, Hawaii"
+      keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, Rule 8.3(b), alleged judicial misconduct, reporting duty, sealed audio, Commission on Judicial Conduct, First Circuit, Hawaii"
 ---
 
 This article serves as the companion legal argument to the [open letter to Bosko Petricevic about the December 2, 2022 hearing](/investigation/open-letter-bosko-petricevic/).
@@ -312,6 +313,14 @@ That means the legally relevant question turns on whether the rule was triggered
 
 If the allegations are true, and if no Rule 1.6 confidentiality barrier prevented disclosure, it was.
 
+## What This Article Does Not Prove
+
+This article does not prove that Mr. Petricevic saw the alleged gesture, understood it as judicial signaling, or had knowledge sufficient to trigger Rule 8.3(b). It does not prove that Rule 1.6 permitted disclosure. It states the professional consequence if the alleged gesture occurred, if counsel saw and understood it, and if no confidentiality rule barred an appropriate report.
+
+## What Would Falsify This
+
+Material weakening or falsification of the reporting-duty theory would require sealed-record review showing a materially different audio sequence; court-file review showing absence of the described exhibit or a materially different exhibit; production of a full record showing an uninterrupted attempted record statement; credible, disinterested courtroom testimony establishing absence of the alleged gesture, blocked line of sight for Mr. Petricevic, or lack of contextual understanding; evidence that Rule 1.6 barred any report; or evidence that a timely report to an appropriate authority was made. A self-interested denial by an implicated participant is not dispositive. It carries evidentiary weight only to the extent it is specific, record-consistent, line-of-sight-aware, and independently supported.
+
 ## Why This Is a Public-Accountability Issue
 
 For the public, one attorney’s silence matters because of what it reveals about access to judicial accountability.
@@ -320,7 +329,7 @@ Rule 8.3(b) is supposed to be one of the few mechanisms by which judicial miscon
 
 In that environment, the represented lawyer who saw the event may be the only legally trained witness with professional standing, institutional knowledge, and an independent rule-based duty to act.
 
-If that lawyer remains silent, the system defaults to institutional self-protection. The pro se litigant’s statement is truncated. The audio is sealed. The visual conduct is absent from the transcript. And because judicial-discipline jurisdiction is time-limited after a judge leaves office, delay can close the Commission’s ordinary review path entirely. The record exists, but review becomes procedurally obstructed.
+If that lawyer remains silent, the system can default to institutional self-protection. The pro se litigant’s statement is truncated. The audio is sealed. The visual conduct is absent from the transcript. And because judicial-discipline jurisdiction is time-limited after a judge leaves office, delay can close the Commission’s ordinary review path entirely. The record exists, but review can become procedurally unavailable.
 
 That result is more than an accident of paperwork. It is the accountability failure Rule 8.3(b) is supposed to prevent.
 

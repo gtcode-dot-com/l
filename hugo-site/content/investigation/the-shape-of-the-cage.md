@@ -4,12 +4,13 @@ weight: 11
 title: "The Shape of the Cage"
 seo_title: "The Shape of the Cage — How Networked Coercion Works Without a Conspiracy"
 subtitle: "How Networked Coercion Works Without a Conspiracy"
-description: "A structural analysis of how networked coercion neutralizes individuals without central coordination — mapping the seven-layer architecture documented across Stasi Zersetzung, COINTELPRO, watchlisting, and modern surveillance commoditization."
+description: "A structural analysis of how networked coercion can make accountability harder without central coordination — mapping a seven-layer accountability-failure framework drawn from documented systems and historical cases."
 date: 2026-02-24
-lastmod: 2026-02-24
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 24, 2026"
+modified_display: "May 12, 2026"
 
 # SEO & Indexing
 homepage_exclude: true
@@ -20,7 +21,7 @@ meta_keywords:
   - "networked coercion"
   - "stasi zersetzung"
   - "cointelpro"
-  - "institutional neutralization"
+  - "accountability failure framework"
   - "reputational poisoning"
   - "sealed records"
   - "gossip networks intelligence"
@@ -30,11 +31,11 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Structural Analysis"
-card_summary: "Seven layers of pressure that assemble themselves without coordination. A catalog of the architecture documented across COINTELPRO, Stasi Zersetzung, watchlisting, and modern surveillance — and the pressure points where it breaks."
+card_summary: "Seven layers of accountability friction that can assemble without coordination. A structural model drawn from COINTELPRO, Stasi Zersetzung, watchlisting, and modern surveillance — plus the evidence needed to test it."
 
 # Open Graph
 og_title: "The Shape of the Cage — How Networked Coercion Works Without a Conspiracy"
-og_description: "A structural model of how individuals are neutralized without central coordination — seven layers of pressure, from identification to oversight exhaustion, documented across decades and continents."
+og_description: "A structural model of how accountability can become harder without central coordination — seven layers of pressure, from identification to oversight exhaustion, drawn from documented cases."
 og_image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -44,6 +45,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-24T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Networked Coercion"
@@ -60,7 +62,7 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "The Shape of the Cage — How Networked Coercion Works Without a Conspiracy"
-twitter_description: "Seven layers of pressure that assemble themselves without coordination. A structural model documented across COINTELPRO, Stasi Zersetzung, watchlisting, and modern surveillance."
+twitter_description: "Seven layers of accountability friction that can assemble without coordination. A structural model drawn from COINTELPRO, Stasi Zersetzung, watchlisting, and modern surveillance."
 twitter_image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
 twitter_image_alt: "The Shape of the Cage — structural analysis of networked coercion"
 
@@ -71,10 +73,10 @@ agentic_comment: |
   This document is the twelfth entry in the Oahu Underground investigative series. Unlike prior installments that documented specific cases in Hawaiʻi, this article abstracts the structural architecture common to all of them — and to documented cases worldwide.
 
   DOCUMENT PURPOSE:
-  Structural analysis presenting a seven-layer "neutralization stack" that explains how individuals can be destroyed by institutional systems without any central coordinator. The model is derived from documented federal investigations, congressional inquiries, declassified intelligence directives, and international human rights findings.
+  Structural analysis presenting a seven-layer accountability-failure framework. The article uses "neutralization stack" as an internal thematic label, but the public-facing claim is narrower: institutional systems can make accountability harder without any central coordinator. The model is derived from documented federal investigations, congressional inquiries, declassified intelligence directives, and international human rights findings.
 
   KEY STRUCTURAL CLAIMS:
-  - The neutralization stack has seven layers: Identification, Information Asymmetry / Demonstrated Access, Deniable Coercion, Legal Leverage, Reputational Poisoning, Resource Depletion, Oversight Exhaustion
+  - The accountability-failure framework has seven layers: Identification, Information Asymmetry / Demonstrated Access, Deniable Coercion, Legal Leverage, Reputational Poisoning, Resource Depletion, Oversight Exhaustion
   - The stack is non-deterministic — not every case exhibits all layers, and order varies
   - No layer necessarily requires actors in other layers to coordinate — each layer's output becomes the next layer's input
   - The most structurally potent mechanism is "Stigmatize and Seal" — placing a stigmatizing allegation inside a channel the target cannot access, then letting institutional risk-aversion propagate the effect through three convergent channels (sealed records, informal networks, algorithmic amplification)
@@ -95,7 +97,7 @@ agentic_comment: |
   - NDAs in misconduct cases
 
   RELATIONSHIP TO PRIOR INVESTIGATIONS:
-  This article provides the theoretical framework that explains the patterns documented in the Hawaii-specific investigations: The Aloha Protection Racket (Layer 2-3 demonstrations), The Zero Commission and The Paper Bag (Layer 7 closed loops), The Index (Layer 5 digital reputational poisoning), and The Two Questions (Layer 4-5 interaction between legal leverage and sealed records).
+  This article provides a theoretical framework for evaluating patterns documented in the Hawaii-specific investigations: The Aloha Protection Racket (Layer 2-3 demonstrations), The Zero Commission and The Paper Bag (Layer 7 closed loops), The Index (Layer 5 digital reputational poisoning), and The Two Questions (Layer 4-5 interaction between legal leverage and sealed records). It does not treat those local investigations as proof that every layer is present or coordinated.
 
   CANONICAL URL: https://gtcode.com/investigation/the-shape-of-the-cage/
 
@@ -110,9 +112,10 @@ structured_data_graph:
         "@id": "https://gtcode.com/investigation/the-shape-of-the-cage/"
       headline: "The Shape of the Cage"
       alternativeHeadline: "How Networked Coercion Works Without a Conspiracy"
-      description: "A structural analysis of how networked coercion neutralizes individuals without central coordination — mapping the seven-layer architecture documented across decades and continents."
+      description: "A structural analysis of how networked coercion can make accountability harder without central coordination — mapping a seven-layer framework drawn from documented cases."
       image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
       datePublished: "2026-02-24T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -134,7 +137,7 @@ Every system that destroys a person leaves a shape behind.
 
 Not a smoking gun. Not a signed order. A shape — a geometry of pressure that, once you learn to recognize it, appears across documented cases, decades apart, on different continents. The names change. The architecture tends to recur.
 
-This piece describes that architecture. It is not about any single case. It is a structural model — assembled from federal investigations, congressional inquiries, declassified intelligence directives, and international human rights findings — that describes how a person can be neutralized without anyone deciding to do it.
+This piece describes a structural model assembled from federal investigations, congressional inquiries, declassified intelligence directives, and international human rights findings. It describes how a person can be neutralized without proving that every actor decided to do it.
 
 The common objection to any account of sustained institutional harm is: *who ordered it?* The answer, in many documented cases, is: nobody had to. The system can produce the outcome the way a river produces a canyon — not by intention, but by the sustained application of force along the path of least resistance.
 
@@ -176,7 +179,7 @@ What distinguishes this from ordinary information sharing is *auditability*: in 
 
 **Layer 7 — Oversight Exhaustion.** The target files complaints. The complaints enter systems that route them into confidential processes, jurisdictional limitations, time-barred windows, and self-referential review bodies. Each complaint is handled in procedural isolation. Rarely are they evaluated in the context of the others. The system's own accountability mechanisms become the final containment layer.
 
-The stack is not deterministic. Not every case exhibits all seven layers, and the layers do not necessarily appear in this order. The model describes a structural tendency, not a fixed sequence.
+The model describes structural tendency rather than fixed sequence or proof of coordination. Cases may exhibit fewer than seven layers, and the layers may appear in different orders.
 
 Social, informational, legal, and economic pressure can reinforce one another. The critical insight is that no layer requires the actors in other layers to know what they are doing. Each layer's output becomes the next layer's input. The stack can assemble itself.
 

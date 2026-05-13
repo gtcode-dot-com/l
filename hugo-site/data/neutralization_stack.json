@@ -2,24 +2,24 @@
   "layers": [
     {
       "num": 7,
-      "name": "Search Suppression",
+      "name": "Search-Index Anomaly",
       "code": "THE INDEX",
       "color": "#8844cc",
       "url": "/investigation/the-index-bing-search-suppression/",
       "published": "Feb 13, 2026",
-      "mechanism": "Domain-level delisting prevents organic discovery",
-      "one_liner": "Bing returns zero results for gtcode.com. A control domain on the same stack is not blocked.",
+      "mechanism": "Bing diagnostics show domain-level blocking, contradictory statuses, and selective visibility",
+      "one_liner": "Bing previously returned zero visible results; a later site-search surfaced one non-investigative technical article and the captured first-page result set excluded the investigation corpus. Motive remains open.",
       "status": "published"
     },
     {
       "num": 6,
-      "name": "Media Capture",
+      "name": "Media Conflict Environment",
       "code": "ZONE OF POLITENESS",
       "color": "#4488cc",
       "url": "/investigation/zone-of-politeness-hawaii-media-blackout/",
       "published": "Feb 4, 2026",
-      "mechanism": "Donor/board overlap creates editorial self-censorship",
-      "one_liner": "Luke family donors to Civil Beat. Omidyar & Warren Luke: 12 years on the same board. Coverage of Luke/HNB: ~0.",
+      "mechanism": "Donor/board overlap creates structural friction around coverage",
+      "one_liner": "Public records show Luke-linked donor and board overlap around Civil Beat. The article frames this as a conflict environment while leaving any coverage order unproved.",
       "status": "published"
     },
     {
@@ -29,8 +29,8 @@
       "color": "#44cccc",
       "url": "/investigation/the-nod-wilson-loo-silent-felony/",
       "published": "Feb 12, 2026",
-      "mechanism": "Judge directs perjury, then seals the record",
-      "one_liner": "Audio-only recording. The crime was visual. The judge who committed it controlled the format and the seal.",
+      "mechanism": "Alleged visual signaling in an audio-only proceeding followed by sealing",
+      "one_liner": "The alleged signal is a firsthand observation. The sealed audio can test the timing, answer, attempted record statement, and cutoff.",
       "status": "published"
     },
     {
@@ -51,8 +51,8 @@
       "color": "#ffcc44",
       "url": "/investigation/the-paper-bag-and-the-architecture-of-self-investigation/",
       "published": "Feb 20, 2026",
-      "mechanism": "AG declines authority using contradictory rationales",
-      "one_liner": "2024: 'The power already exists.' 2026: 'No such power exists.' The bill is dead — killed by her own testimony.",
+      "mechanism": "AG statements create a public-record conflict over special counsel authority",
+      "one_liner": "2024: 'The power already exists.' 2026: 'No such power exists.' The contradiction is documented; motive and internal rationale remain open.",
       "status": "published"
     },
     {
@@ -62,7 +62,7 @@
       "color": "#ff8844",
       "url": "/investigation/the-first-gate/",
       "published": "Mar 6, 2026",
-      "mechanism": "Officer refuses to take report; no case number generated",
+      "mechanism": "Report-intake refusal allegedly prevents case-number generation",
       "one_liner": "Policy says 'shall.' Officer said 'stop telling me how to do my job.' PSO said 'totality.' No written authority found.",
       "status": "live",
       "live_detail": "HPD officer refused report intake, March 6, 2026, 8:10 AM HST"
@@ -74,7 +74,7 @@
       "color": "#ff4444",
       "url": "/investigation/who-told-the-newsroom/",
       "published": "Coming",
-      "mechanism": "Murder threat, witness tampering, testimony suppressed",
+      "mechanism": "Reported murder threat, alleged witness tampering, and excluded testimony",
       "one_liner": "Two voices, two roles, one message. 'Stay away from Jack.' 'Or you'll be whacked.' The jury never heard it.",
       "status": "forthcoming"
     }

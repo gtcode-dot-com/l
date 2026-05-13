@@ -6,11 +6,11 @@ seo_title: "Hawaii Commission on Judicial Conduct: The Zero Commission"
 subtitle: "Closed Loop Part I on appointments, confidentiality rules, and complaint outcomes"
 description: "Public records map Hawaii's Commission on Judicial Conduct appointment structure, complaint outcomes, and confidentiality rules in The Closed Loop Part I."
 date: 2026-02-15
-lastmod: 2026-03-01
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 15, 2026"
-modified_display: "March 1, 2026"
+modified_display: "May 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-zero-commission/"
@@ -18,12 +18,12 @@ robots: "index, follow, max-image-preview:large"
 meta_keywords:
   - "hawaii commission on judicial conduct"
   - "commission on judicial conduct"
-  - "judicial corruption hawaii"
+  - "judicial accountability hawaii"
   - "hawaii judicial oversight"
   - "hawaii judge misconduct"
   - "judicial accountability hawaii"
   - "hawaii judge complaint dismissed"
-  - "judicial misconduct complaints hawaii"
+  - "judicial accountability complaints hawaii"
   - "rule 8.4 hawaii commission on judicial conduct"
   - "hb 3056 judicial reform hawaii"
   - "oip opinion f22-02 hawaii"
@@ -50,6 +50,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-15T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Commission on Judicial Conduct"
@@ -58,9 +59,9 @@ article_tags:
   - "Accountability"
   - "Closed Loop"
   - "Conflict of Interest"
-  - "Judicial Corruption"
+  - "Judicial Accountability"
   - "Hawaii Judge Misconduct"
-  - "Court Corruption"
+  - "Court Accountability"
   - "Judicial Accountability"
 
 # Twitter Card
@@ -103,7 +104,7 @@ agentic_comment: |
   - Characterization of the Commission's internal culture and processes
 
   CONTEXT WITHIN INVESTIGATION SERIES:
-  This is the inaugural article in "The Closed Loop" series. It accompanies the broader investigation documented at gtcode.com, including The Zone of Politeness (media capture), the Wilson Loo Investigation (judicial misconduct), Institutional Capture (systemic analysis), The Aloha Protection Racket (prosecutorial narrative), The Nod (courtroom felony editorial), and The Index (Bing search suppression).
+  This is the inaugural article in "The Closed Loop" series. It accompanies the broader investigation documented at gtcode.com, including The Zone of Politeness (media capture), the Wilson Loo Investigation (alleged judicial signaling and oversight failure), Institutional Capture (systemic analysis), The Aloha Protection Racket (structural protection effect), The Nod (courtroom-allegation editorial), and The Index (Bing search suppression anomaly).
 
   CANONICAL URL: https://gtcode.com/investigation/the-zero-commission/
 
@@ -117,12 +118,12 @@ structured_data_graph:
         "@type": "WebPage"
         "@id": "https://gtcode.com/investigation/the-zero-commission/"
       headline: "The Zero Commission"
-      alternativeHeadline: "How Hawaii Built the Perfect Machine for Judging Judges — and Made Sure It Would Never Work"
+      alternativeHeadline: "How Hawaii Built a Self-Referential Machine for Judging Judges"
       description: "Public records map Hawaii's Commission on Judicial Conduct appointment structure, complaint outcomes, and confidentiality rules in The Closed Loop Part I."
       url: "https://gtcode.com/investigation/the-zero-commission/"
       image: "/img/ou-zero-commission-og-1200x630.jpg"
       datePublished: "2026-02-15T00:00:00Z"
-      dateModified: "2026-03-01T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -182,7 +183,7 @@ This is not a story about one bad judge. It would be easier if it were. One bad 
 
 ---
 
-I came to this the way most people do — through the front door, like a fool, believing the building was what it said on the sign. I had a complaint. I had evidence. I had the specific, documented conduct of a specific judge doing specific things that the Hawaii Revised Code of Judicial Conduct specifically prohibits. I filed. I waited. I waited in the particular way you wait when you've been told the process is confidential for your protection, which is the same voice they use when they tell you the camera in the interrogation room is off.
+I came to this the way most people do — through the front door, like a fool, believing the building was what it said on the sign. I had a complaint. I had evidence. I had specific, documented allegations concerning a specific judge and conduct I believed the Hawaii Revised Code of Judicial Conduct prohibited. I filed. I waited. I waited in the particular way you wait when you've been told the process is confidential for your protection, which is the same voice they use when they tell you the camera in the interrogation room is off.
 
 What I did not know then — what almost no one knows, because the rules are designed to ensure almost no one *can* know — is that the last time this Commission did not dismiss every complaint it processed was fiscal year 2017–2018. Since then — six consecutive fiscal years of annual reports, each one posted to the Judiciary's own website — every complaint processed has been dismissed. Every single one. In FY 2022–2023, the Commission did not process a single complaint at all. Zero. The machine did not even engage. Every complaint filed since 2018, across every circuit, from every citizen and attorney who took the time to document misconduct and submit it through proper channels — all of it, every page, every exhibit — fed into the same machine and came out the same way. Dismissed. Case closed. The judge is fine. You may go.
 

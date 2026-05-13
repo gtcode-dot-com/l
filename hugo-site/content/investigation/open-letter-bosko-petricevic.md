@@ -7,10 +7,11 @@ seo_title: "Open Letter to Bosko Petricevic on the Wilson Loo Sealed Record"
 subtitle: "You Were in the Room"
 description: "A public letter to attorney Bosko Petricevic concerning a December 2, 2022 First Circuit courtroom sequence, a sealed audio record, and professional-responsibility questions under Hawaii Rule of Professional Conduct 8.3(b)."
 date: 2026-05-06
-lastmod: 2026-05-10
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "May 6, 2026"
+modified_display: "May 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/open-letter-bosko-petricevic/"
@@ -44,7 +45,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-06T00:00:00Z"
-article_modified_time: "2026-05-10T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Bosko Petricevic"
@@ -111,7 +112,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/open-letter-bosko-petricevic/"
       image: "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
       datePublished: "2026-05-06T00:00:00Z"
-      dateModified: "2026-05-06T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -129,7 +130,7 @@ structured_data_graph:
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, judicial conduct question, sealed audio record, firsthand observation, professional responsibility, First Circuit, Hawaii"
 ---
 
-**Editor’s note, May 10, 2026:** A companion analysis, [The Lawyer in the Room](/investigation/the-lawyer-in-the-room/), explains why the answer to this letter matters under Hawaiʻi Rule of Professional Conduct 8.3(b).
+**Editor’s note, May 12, 2026:** A companion analysis, [The Lawyer in the Room](/investigation/the-lawyer-in-the-room/), explains why the answer to this letter matters under Hawaiʻi Rule of Professional Conduct 8.3(b).
 
 Mr. Petricevic,
 
@@ -167,11 +168,11 @@ If a judge signals a sworn witness before an answer, that raises a substantial q
 
 In my account, you were not merely present. You were looking at the judge during the exchange. That is why the reporting question is directed to you.
 
-If you dispute that observation, the audio-confirmable sequence still remains: the answer, the attempted “Let the record show…” statement, the cutoff, the accusation, and the sealing request.
+If you dispute that observation, the audio-confirmable sequence still remains: the answer, the attempted “Let the record show…” statement, the cutoff, the accusation, and the sealing request. Any denial by a participant whose client, reputation, conduct, or institutional role is implicated requires evidentiary weighting against motive, specificity, line of sight, timing, the sealed audio sequence, and the court file.
 
-You were not required to agree with me. You were not required to become my advocate. You were not required to abandon your client’s lawful interests. The question is whether the sequence created a reporting obligation for a Hawaiʻi lawyer and officer of the court under Rule 8.3(b).
+Rule 8.3(b) analysis permits disagreement, preserves client advocacy, and respects lawful client interests. It still asks whether the sequence created a reporting obligation for a Hawaiʻi lawyer and officer of the court.
 
-If Rule 8.3(b) was triggered, it contains no exception for local professional risk. It contains no exception for discomfort. It contains no exception for the institutional standing of a judge. It contains no exception for a lawyer who would rather treat a courtroom irregularity as someone else’s problem.
+If Rule 8.3(b) was triggered, it contains no exception for local professional risk. It contains no exception for discomfort. It contains no exception for the institutional standing of a judge. It contains no exception for treating alleged judicial signaling as someone else’s problem.
 
 The practical consequence of the absence of any known report was concrete. A sealed official record now contains the very exchange I tried to preserve and the accusation I was not allowed to answer. Institutional reviewers can encounter that sealed record before they encounter any public rebuttal, complaint, or investigative publication. The sealing request you made was part of the sequence that created that posture.
 
@@ -181,9 +182,9 @@ That foreclosure matters because any reporting question had to be addressed when
 
 This letter is public because the institutional record remains sealed, the ordinary oversight window has closed, and the question of professional responsibility remains.
 
-The sealed audio exists. The court file exists. The audio-confirmable sequence can be reviewed. The question is whether the institutions with authority to retrieve the record will listen to it.
+The sealed audio exists. The court file exists. The audio-confirmable sequence can be reviewed by institutions with authority to retrieve the record.
 
-When they do, your role in the sequence can be evaluated.
+When they do, your role in the sequence can be evaluated through the same conditional structure that governs this letter: what you saw, what you understood, whether Rule 1.6 limited disclosure, and whether any reporting duty was triggered.
 
 You were present for the sworn denial.
 You were present for the attempted “Let the record show…” statement.
@@ -192,4 +193,4 @@ You were present for the accusation.
 You requested the seal.
 I am aware of no report by you to the Commission on Judicial Conduct or any other appropriate authority.
 
-The record will show what happened. History will ask what those present did with it.
+The record can show the audio sequence. The remaining question is what those present saw, understood, and did with it.

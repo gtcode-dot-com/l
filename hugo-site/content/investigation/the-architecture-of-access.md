@@ -6,11 +6,11 @@ seo_title: "The Architecture of Access: Federal, PRC-Facing, and Financial Mappi
 subtitle: "Series hub for dimension-by-dimension mapping of one network's institutional reach"
 description: "Series hub mapping one Hawaii network across federal institutions, PRC-facing engagement, and financial disclosure using public records, attribution discipline, and structural analysis."
 date: 2026-03-01
-lastmod: 2026-03-03
+lastmod: 2026-05-12
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "March 1, 2026"
-modified_display: "March 3, 2026"
+modified_display: "May 12, 2026"
 layout: "series"
 
 
@@ -48,6 +48,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-01T00:00:00Z"
+article_modified_time: "2026-05-12T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Architecture of Access"
@@ -85,6 +86,7 @@ agentic_comment: |
   - Attribution-safe language when characterizing entities (for example, "described by" and "characterized by" source type)
   - Structural analysis of access patterns and safeguarding questions
   - No allegation that documented relationships alone establish direction, control, or criminal conduct
+  - Safeguards may exist outside the public record
 
   PUBLISHED PARTS:
   - Part I: The Federal Layer (domestic federal)
@@ -108,7 +110,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-architecture-of-access/"
       image: "/img/ou-architecture-of-access-og-1200x630.jpg"
       datePublished: "2026-03-01T00:00:00Z"
-      dateModified: "2026-03-03T00:00:00Z"
+      dateModified: "2026-05-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -160,7 +162,7 @@ structured_data_graph:
           headline: "The Federal Layer"
           url: "https://gtcode.com/investigation/the-federal-layer/"
           datePublished: "2026-02-28T00:00:00Z"
-          dateModified: "2026-03-01T00:00:00Z"
+          dateModified: "2026-05-12T00:00:00Z"
           position: 1
         - "@type": "NewsArticle"
           "@id": "https://gtcode.com/investigation/the-bridges/#newsarticle"
@@ -168,7 +170,7 @@ structured_data_graph:
           headline: "The Bridges"
           url: "https://gtcode.com/investigation/the-bridges/"
           datePublished: "2026-03-01T00:00:00Z"
-          dateModified: "2026-03-01T00:00:00Z"
+          dateModified: "2026-05-12T00:00:00Z"
           position: 2
         - "@type": "NewsArticle"
           "@id": "https://gtcode.com/investigation/the-ledger/#newsarticle"
@@ -176,7 +178,7 @@ structured_data_graph:
           headline: "The Ledger"
           url: "https://gtcode.com/investigation/the-ledger/"
           datePublished: "2026-03-03T00:00:00Z"
-          dateModified: "2026-03-03T00:00:00Z"
+          dateModified: "2026-05-12T00:00:00Z"
           position: 3
 ---
 
@@ -190,7 +192,7 @@ The Architecture of Access tracks cumulative institutional reach rather than iso
 
 This is a public-record series. It relies on attributable documents, institutional records, filings, and archived source material.
 
-Where source material characterizes an organization as linked to a party-state, military, or intelligence structure, this series attributes that characterization to the named source. It does not treat institutional relationship mapping alone as proof of direction, control, or wrongdoing.
+Where source material characterizes an organization as linked to a party-state, military, or intelligence structure, this series attributes that characterization to the named source. It does not treat institutional relationship mapping alone as proof of direction, control, tasking, espionage, criminal conduct, or wrongdoing. Safeguards may exist outside the public record.
 
 ## Published Parts
 
