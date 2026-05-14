@@ -119,7 +119,7 @@ The first steps are direct: interview the witness, obtain the sealed audio, revi
 
 This brief shows why standard investigative steps are warranted. The witness is identified. The legal theories are coherent. The statute of limitations provides a defined window. The subject is retired and carries no judicial immunity. The unresolved questions are factual and narrow: witness testimony, line-of-sight review, court-file review, and the sealed audio.
 
-The Department of Justice now controls whether those steps occur, or whether this referral joins the [Commission on Judicial Conduct's annual reports](/investigation/the-zero-commission/) -- processed, filed, and closed without public evidence of primary-record review.
+The Department of Justice now controls whether those steps occur, or whether this referral joins the [Commission on Judicial Conduct's annual reports](/hawaii-courts/zero-commission-judicial-conduct/) -- processed, filed, and closed without public evidence of primary-record review.
 
 The record is public. The clock is running.
 
@@ -143,10 +143,10 @@ This public-record brief relies on materials that are publicly accessible or pub
 
 | File | Published | Summary |
 | --- | --- | --- |
-| [The Nod](/investigation/the-nod-visual-allegation-audio-sequence/) | Feb 12, 2026 | Firsthand allegation of judicial signaling from the bench |
-| [The Zero Commission](/investigation/the-zero-commission/) | Feb 15, 2026 | 100% dismissal rate: the architecture of judicial unaccountability |
-| [The Closed Loop](/investigation/the-closed-loop/) | Feb 15, 2026 | Series overview: oversight controlled by the overseen |
-| [Wilson Loo: Investigation](/investigation/hawaii-justice-system-wilson-loo/) | Jun 12, 2025 | Original investigation into alleged judicial signaling and the Commission |
+| [The Nod](/hawaii-courts/the-nod-visual-allegation/) | Feb 12, 2026 | Firsthand allegation of judicial signaling from the bench |
+| [The Zero Commission](/hawaii-courts/zero-commission-judicial-conduct/) | Feb 15, 2026 | 100% dismissal rate: the architecture of judicial unaccountability |
+| [The Closed Loop](/hawaii-courts/closed-loop-oversight-failure/) | Feb 15, 2026 | Series overview: oversight controlled by the overseen |
+| [Wilson Loo: Investigation](/hawaii-courts/wilson-loo-judicial-signaling/) | Jun 12, 2025 | Original investigation into alleged judicial signaling and the Commission |
 
 ---
 

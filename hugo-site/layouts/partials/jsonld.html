@@ -307,7 +307,7 @@
     {{- $data = merge $data (dict "keywords" $repoTags) -}}
   {{- end }}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
-{{- else if and .IsPage (eq .Section "investigation") }}
+{{- else if and .IsPage (eq .Type "investigation") }}
   {{- /* Default Article schema for investigations without explicit structured_data */ -}}
   {{- $headline := partial "seo/plaintext.html" (dict "value" .Title "max" 110) -}}
   {{- $description := partial "seo/plaintext.html" (dict "value" (.Description | default (.Summary | plainify | truncate 220)) "max" $jsonldDescMax) -}}

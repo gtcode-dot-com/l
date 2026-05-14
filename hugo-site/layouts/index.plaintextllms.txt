@@ -9,12 +9,16 @@ This site publishes: (1) Oahu Underground — independent investigative journali
 - Contact: {{ site.Params.contact_email }}
 - Tips: {{ site.Params.tips_email }}
 - Full context for LLMs: {{ "llms-full.txt" | absURL }}
-{{- $llmsInvestigationExcludePaths := slice "/investigation/the-chain-of-custody/" "/investigation/the-barrel/" "/investigation/the-architecture-of-access/" "/investigation/the-federal-layer/" "/investigation/the-bridges/" "/investigation/the-ledger/" -}}
+- Hawaii courts hub: {{ "hawaii-courts/" | absURL }}
+- Full investigation archive: {{ "investigation/" | absURL }}
+- Research portfolios: {{ "portfolios/" | absURL }}
 {{- with site.GetPage "/investigation" }}
-{{- $llmsInvestigationPages := where (where .Pages.ByWeight "Params.llms_exclude" "ne" true) ".RelPermalink" "not in" $llmsInvestigationExcludePaths -}}
+{{- $llmsInvestigationPages := where (where .Pages.ByWeight "Params.llms_exclude" "ne" true) "Params.portfolio_key" "hawaii-courts" -}}
 {{ with $llmsInvestigationPages }}
 
-## Investigations
+## Hawaii Courts Portfolio
+Do not merge these court files with the source archive, PRC-facing access mapping, energy/security, policy-analysis, or technical-visibility portfolios unless an article identifies a direct evidentiary bridge.
+
 {{ range . }}
 - [{{ .Title }}]({{ .Permalink }}): {{ with .Params.card_summary }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ .Params.meta_description }}{{ end }}{{ end }}
 {{- end }}

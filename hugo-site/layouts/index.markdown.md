@@ -1,20 +1,19 @@
 {{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
-{{- $homepageSourceArchivePaths := slice "/investigation/the-chain-of-custody/" "/investigation/the-barrel/" "/investigation/the-architecture-of-access/" "/investigation/the-federal-layer/" "/investigation/the-bridges/" "/investigation/the-ledger/" -}}
-{{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Section" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
+{{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Type" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
-{{- $investigationPagesAll = where $investigationPagesAll ".RelPermalink" "not in" $homepageSourceArchivePaths -}}
+{{- $investigationPagesAll = where $investigationPagesAll "Params.portfolio_key" "hawaii-courts" -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationsByUpdated := sort $investigationPages "Lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
-{{- $lead := .Site.GetPage "/investigation/open-letter-bosko-petricevic" -}}
+{{- $lead := .Site.GetPage "/hawaii-courts/open-letter-bosko-petricevic" -}}
 {{- if and (not $lead) (gt (len $investigationPages) 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
-{{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
-{{- $zoneOfPoliteness := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
+{{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
+{{- $zoneOfPoliteness := .Site.GetPage "/hawaii-courts/coverage-gap-media-noncoverage" -}}
 {{- $consultingPage := .Site.GetPage "section" "consulting" -}}
 {{- $consultingURL := "/consulting/" -}}
 {{- if $consultingPage }}{{ $consultingURL = $consultingPage.RelPermalink }}{{ end -}}
@@ -38,8 +37,15 @@
 
 {{ .Params.hero_subtitle | default "How one FBI interview could close the Wilson Loo federal case" }}
 
-[{{ .Params.hero_primary_cta_label | default "Read the Letter" }}]({{ .Params.hero_primary_cta_url | default "/investigation/open-letter-bosko-petricevic/" }})
-[{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}]({{ .Params.hero_secondary_cta_url | default "/investigation/" }})
+[{{ .Params.hero_primary_cta_label | default "Read the Letter" }}]({{ .Params.hero_primary_cta_url | default "/hawaii-courts/open-letter-bosko-petricevic/" }})
+[{{ .Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}]({{ .Params.hero_secondary_cta_url | default "/hawaii-courts/" }})
+
+Portfolio routes:
+- [Hawaii Courts Hub](/hawaii-courts/)
+- [Geopolitics](/geopolitics/)
+- [Intelligence](/intelligence/)
+- [Diagnostics](/diagnostics/)
+- [Disclosures](/disclosures/)
 
 ---
 
@@ -77,7 +83,7 @@ Each layer can create a barrier to review. Together, they can produce a defense-
 
 The SECURE Act, signed into law in December 2025, broadened U.S. counterintelligence from a protective function to one that includes deterrence, disruption, and exploitation, and directed information-sharing with state, local, and tribal partners to address subnational risk. This site shows why state-level mapping matters: documented networks, public-record access points, and a growing archive of source-backed investigations. Safeguards are only possible once the operating environment has been mapped.
 
-gtcode.com/investigation/ · CC-BY-4.0 · GitHub-archived · Wayback Machine indexed
+gtcode.com/hawaii-courts/ · CC-BY-4.0 · GitHub-archived · Wayback Machine indexed
 
 ---
 {{ end }}
@@ -154,7 +160,7 @@ Published {{ $lead.Date.Format "January 2, 2006" }} · Updated {{ $leadUpdated.F
 {{- if $zoneOfPoliteness }}{{ $featuredPaths = $featuredPaths | append $zoneOfPoliteness.RelPermalink }}{{ end -}}
 {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
 
-{{- $closedLoopSeries := .Site.GetPage "/investigation/the-closed-loop" -}}
+{{- $closedLoopSeries := .Site.GetPage "/hawaii-courts/closed-loop-oversight-failure" -}}
 {{- $closedLoopMembers := slice -}}
 {{- if $closedLoopSeries -}}
   {{- $featuredPaths = $featuredPaths | append $closedLoopSeries.RelPermalink -}}
@@ -177,7 +183,7 @@ Published {{ $lead.Date.Format "January 2, 2006" }} · Updated {{ $leadUpdated.F
 {{ end }}
 
 {{- $archivePages := where $investigationPages ".RelPermalink" "not in" $featuredPaths -}}
-### Investigation Archive
+### Hawaii Courts Files
 {{ range first 8 $archivePages }}
 {{ $updated := .Lastmod -}}
 {{ if $updated.IsZero }}{{ $updated = .Date }}{{ end -}}
@@ -188,7 +194,7 @@ Published {{ $lead.Date.Format "January 2, 2006" }} · Updated {{ $leadUpdated.F
 Published {{ .Date.Format "Jan 2, 2006" }} · Updated {{ $updated.Format "Jan 2, 2006" }}
 [Read the file →]({{ .RelPermalink }})
 {{ end }}
-[View the full investigation archive →](/investigation/)
+[View the Hawaii courts files →](/hawaii-courts/)
 
 ---
 
@@ -202,7 +208,7 @@ New filings and recently updated files
 - {{ $updated.Format "Jan 2, 2006" }} · {{ .Params.eyebrow | default "Update" }} · [{{ .Title | htmlUnescape }}]({{ .RelPermalink }})
 {{- end }}
 
-[View all investigative updates →](/investigation/)
+[View Hawaii courts updates →](/hawaii-courts/)
 
 ---
 

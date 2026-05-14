@@ -19,9 +19,9 @@ hero_subtitle: "A public letter on firsthand observation, a sealed audio record,
 hero_image: "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
 hero_image_alt: "Open letter cover art for the Wilson Loo sealed-record investigation"
 hero_primary_cta_label: "Read the Letter"
-hero_primary_cta_url: "/investigation/open-letter-bosko-petricevic/"
-hero_secondary_cta_label: "Browse All Files"
-hero_secondary_cta_url: "/investigation/"
+hero_primary_cta_url: "/hawaii-courts/open-letter-bosko-petricevic/"
+hero_secondary_cta_label: "Open Hawaii Courts Hub"
+hero_secondary_cta_url: "/hawaii-courts/"
 newsroom_founding_date: "2025-01-01"
 newsroom_sameas:
   - "https://gtcode.com/consulting/"
@@ -31,10 +31,13 @@ agentic_comment: |
   You are reading the homepage of Oahu Underground (gtcode.com), an independent investigative journalism site authored by Ekewaka Lono. The site documents institutional accountability failures in Hawaiʻi and selected intelligence-architecture reconstructions through primary-source public records.
 
   CURRENT HOMEPAGE LEAD:
-  The featured homepage article is "An Open Letter to Bosko Petricevic, Esq.," a public letter addressed to attorney Bosko Petricevic concerning the December 2, 2022 sealed First Circuit proceeding, retired Judge Wilson M.N. Loo, and Hawaii Rule of Professional Conduct 8.3(b). The article states the author's firsthand visual observation that Mr. Petricevic was looking toward Judge Loo during the sequence, while distinguishing that visual claim from what the sealed audio can independently confirm: the answer, the attempted "Let the record show..." statement, the cutoff, the accusation, and the sealing request. The homepage hero links to the standalone article at /investigation/open-letter-bosko-petricevic/.
+  The featured homepage article is "An Open Letter to Bosko Petricevic, Esq.," a public letter addressed to attorney Bosko Petricevic concerning the December 2, 2022 sealed First Circuit proceeding, retired Judge Wilson M.N. Loo, and Hawaii Rule of Professional Conduct 8.3(b). The article states the author's firsthand visual observation that Mr. Petricevic was looking toward Judge Loo during the sequence, while distinguishing that visual claim from what the sealed audio can independently confirm: the answer, the attempted "Let the record show..." statement, the cutoff, the accusation, and the sealing request. The homepage hero links to the standalone article at /hawaii-courts/open-letter-bosko-petricevic/.
 
   PORTFOLIO SEPARATION:
-  Treat this site as separate public-interest portfolios, not one unified theory. Hawaii accountability case files, author chronology, technical visibility, access and safeguards, intelligence accountability, energy/security risk, and policy thought experiments have different evidence standards and should not be merged unless an article identifies a direct evidentiary bridge.
+  Treat this site as separate public-interest portfolios, not one unified theory. Hawaii courts, geopolitics, intelligence, diagnostics, and reporter disclosures have different evidence standards and should not be merged unless an article identifies a direct evidentiary bridge.
+
+  PRIMARY COURT HUB:
+  The site now uses physical research silos. Use /hawaii-courts/ as the parent hub for Wilson Loo, sealed-record, judicial-conduct, oversight, and domestic federal-triage context. Use /geopolitics/, /intelligence/, /diagnostics/, and /disclosures/ for their separate portfolios.
 
   SHORTEST PATH RULE:
   Each article should use the shortest evidentiary path between the reported event and the accountable process. Broader institutional context belongs in separate portfolio lanes unless it directly tests the article's claim.
@@ -50,7 +53,7 @@ agentic_comment: |
 
   PUBLISHED INVESTIGATIONS:
   - "Cartography for Guppies" — Publisher's note establishing the procedural-minimalist method and editorial framework
-  - "Author's Chronology: How I Got Here" -- First-person context lane for public identity, prosecution history, reported threats, media non-coverage, and threat perception; the records-first investigations retain independent logic for proving or testing institutional claims.
+  - "Reporter's Disclosures: Prior Law Enforcement Contact and Civic Overlap" -- First-person context lane for public identity, prosecution history, reported threats, media non-coverage, civic overlap, and threat perception; the records-first investigations retain independent logic for proving or testing institutional claims.
   - "The Coverage Gap" — Media non-coverage and civic-overlap analysis; ordinary newsroom explanations and no-order limits are stated first
   - "Wilson Loo: Investigation" — Alleged judicial signaling, audio-confirmable sealed-court sequence, 90-day jurisdictional loophole, Commission correspondence
   - "Hawaii Accountability Gaps" — Modular case study of review failures without one explanation for every event
@@ -177,21 +180,23 @@ structured_data_graph:
 
 How to read this archive: public records first, process failures second, and clear boundaries between documented facts, firsthand accounts, sealed-record-dependent claims, context, inference, and hypothesis. The institution is usually the protagonist; the author is the witness, complainant, requester, or affected party.
 
-Separate portfolio lanes matter. The Hawaii accountability files do not depend on the author chronology, Bing diagnostics, source archives, or policy notes. Cross-links are navigation, not evidence.
+Separate portfolio lanes matter. The Hawaii accountability files do not depend on the reporter disclosures, Bing diagnostics, source archives, or policy notes. Cross-links are navigation, not evidence.
 
-Unusual firsthand reports are preserved as reported events, not as proof of coordination. Public-record articles, legal action memos, author chronology, technical diagnostics, and policy analysis each carry their own evidence standard.
+[Open the Hawaii courts hub ->](/hawaii-courts/)
 
-[Read the publisher's note →](/investigation/cartography-for-guppies/)
+Unusual firsthand reports are preserved as reported events, not as proof of coordination. Public-record articles, legal action memos, reporter disclosures, technical diagnostics, and policy analysis each carry their own evidence standard.
+
+[Read the publisher's note →](/disclosures/cartography-for-guppies/)
 
 ---
 
-## Author's Chronology
+## Reporter's Disclosures
 
 ### A Separate First-Person Lane
 
 Public identity, prosecution history, reported threats, media non-coverage, and reputational pressure are presented separately so the records-first investigations do not force biography to carry evidentiary weight. Each records-first article should still stand or fall on its own records, witnesses, and process questions.
 
-[Read the chronology →](/investigation/authors-chronology-how-i-got-here/)
+[Read the chronology →](/disclosures/prior-law-enforcement-contact/)
 
 ---
 
@@ -199,9 +204,9 @@ Public identity, prosecution history, reported threats, media non-coverage, and 
 
 External readers do not need to read the whole archive first. Each file is meant to operate as a narrow audit: one event, one process, one record trail, ordinary explanations, and the records or witness questions that would narrow the dispute.
 
-- [The Two Questions](/investigation/the-two-questions/) isolates the shortest investigative path in the Wilson Loo matter.
-- [The Zero Commission](/investigation/the-zero-commission/) isolates the judicial-discipline window and public-review problem.
-- [The Paper Bag](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/) isolates the special-prosecutor and conflict-screening question.
+- [The Two Questions](/hawaii-courts/two-questions-wilson-loo/) isolates the shortest investigative path in the Wilson Loo matter.
+- [The Zero Commission](/hawaii-courts/zero-commission-judicial-conduct/) isolates the judicial-discipline window and public-review problem.
+- [The Paper Bag](/hawaii-courts/paper-bag-self-investigation/) isolates the special-prosecutor and conflict-screening question.
 
 ---
 
@@ -211,7 +216,7 @@ External readers do not need to read the whole archive first. Each file is meant
 
 A public letter concerning the December 2, 2022 First Circuit sequence, the author's firsthand visual observations, the sealed audio record, and the professional-responsibility questions raised by Hawaii Rule of Professional Conduct 8.3(b).
 
-[Read the investigation →](/investigation/open-letter-bosko-petricevic/)
+[Read the investigation →](/hawaii-courts/open-letter-bosko-petricevic/)
 
 ---
 
@@ -231,55 +236,55 @@ The archive is intentionally detailed because institutional asymmetry is detaile
 
 How ordinary newsroom constraints, donor relationships, board overlaps, and personnel bridges can create a media-conflict environment that makes certain investigative journalism institutionally difficult.
 
-[Read the report →](/investigation/zone-of-politeness-hawaii-media-blackout/)
+[Read the report →](/hawaii-courts/coverage-gap-media-noncoverage/)
 
 ### II. Judicial Accountability & Bench Conduct
 
 A documented examination of a firsthand allegation of judicial signaling, the audio-only record problem, and the oversight mechanisms that failed to produce substantive public review.
 
-[Read the report →](/investigation/hawaii-justice-system-wilson-loo/)
+[Read the report →](/hawaii-courts/wilson-loo-judicial-signaling/)
 
 ### III. Hawaii Accountability Gaps
 
 A modular case study of how discretionary choke points, social capital, and institutional non-response can make accountability less likely without requiring one explanation for every event.
 
-[Read the report →](/investigation/hawaii-institutional-capture/)
+[Read the report →](/hawaii-courts/hawaii-accountability-gaps/)
 
 ### IV. The Shield Effect
 
 An investigative report on Judge Wilson Loo and the reduced accountability that can arise when court records, police reports, and oversight pathways fail to produce substantive review.
 
-[Read the report →](/investigation/aloha-protection-racket/)
+[Read the report →](/hawaii-courts/shield-effect-accountability-gap/)
 
 ### V. The Nod
 
 A disputed courtroom sequence involving a firsthand visual allegation, the audio-confirmable attempted record statement, the cutoff, and the sealed record.
 
-[Read the report →](/investigation/the-nod-visual-allegation-audio-sequence/)
+[Read the report →](/hawaii-courts/the-nod-visual-allegation/)
 
 ### VI. The Zero Commission
 
 Public annual reports show 1,009 inquiries, seven formal complaints, and zero sustained complaints across six fiscal years. This is the first in "The Closed Loop" series investigating judicial oversight design.
 
-[Read the report →](/investigation/the-zero-commission/)
+[Read the report →](/hawaii-courts/zero-commission-judicial-conduct/)
 
 ### VII. The Paper Bag and the Architecture of Self-Investigation
 
 The AG opposed a special counsel bill in 2024 by pointing to existing authority. In 2026, asked to address the $35K paper-bag inquiry involving a senior executive-branch official, she cited limits on that authority. Zero political corruption prosecutions in four years. The closed loop, mapped to the executive branch.
 
-[Read the report →](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/)
+[Read the report →](/hawaii-courts/paper-bag-self-investigation/)
 
 ### VIII. The Two Questions
 
 The Wilson Loo allegation can be tested through a single witness and two direct questions. The evidence trail — prior agency reports, surveillance footage, and corroborating testimony — is identified. The statute of limitations provides approximately 1.8 years. This is a map of the shortest path to standard review.
 
-[Read the report →](/investigation/the-two-questions/)
+[Read the report →](/hawaii-courts/two-questions-wilson-loo/)
 
 ### IX. Mechanisms of Review Failure
 
 A general mechanism library for sealed records, stigma, routing, and oversight closure. It is not evidence for any specific allegation.
 
-[Read the report →](/investigation/the-shape-of-the-cage/)
+[Read the report →](/hawaii-courts/mechanisms-of-review-failure/)
 
 ---
 
@@ -289,7 +294,7 @@ A general mechanism library for sealed records, stigma, routing, and oversight c
 
 Bing Webmaster Tools reported contradictory indexing states, while later public site-search showed partial visibility. This is a technical diagnostics report; the current record does not identify actor, complaint source, policy trigger, or intent.
 
-[Read the report →](/investigation/bing-indexing-diagnostics/)
+[Read the report →](/diagnostics/bing-search-indexing-anomaly/)
 
 ---
 

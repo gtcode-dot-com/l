@@ -149,7 +149,11 @@
         </button>
         <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
           <a href="/">Home</a>
-          <a href="/investigation/" class="active">Investigations</a>
+          <a href="/hawaii-courts/" {{ if or (eq .RelPermalink "/hawaii-courts/") (eq .Params.portfolio_key "hawaii-courts") }}class="active"{{ end }}>Hawaii Courts</a>
+          <a href="/geopolitics/" {{ if or (eq .RelPermalink "/geopolitics/") (eq .Params.portfolio_key "geopolitics") }}class="active"{{ end }}>Geopolitics</a>
+          <a href="/intelligence/" {{ if or (eq .RelPermalink "/intelligence/") (eq .Params.portfolio_key "intelligence") }}class="active"{{ end }}>Intelligence</a>
+          <a href="/diagnostics/" {{ if or (eq .RelPermalink "/diagnostics/") (eq .Params.portfolio_key "diagnostics") }}class="active"{{ end }}>Diagnostics</a>
+          <a href="/disclosures/" {{ if or (eq .RelPermalink "/disclosures/") (eq .Params.portfolio_key "disclosures") }}class="active"{{ end }}>Disclosures</a>
           <a href="/consulting/" {{ if eq .Section "consulting" }}class="active"{{ end }}>AI Consulting</a>
           <a href="/guides/">Guides</a>
           <a href="/papers/" {{ if eq .Section "papers" }}class="active"{{ end }}>Papers</a>
@@ -190,6 +194,11 @@
         <div class="footer-section">
           <p class="footer-heading">Categories</p>
           <ul>
+            <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
+            <li><a href="/geopolitics/">Geopolitics</a></li>
+            <li><a href="/intelligence/">Intelligence</a></li>
+            <li><a href="/diagnostics/">Diagnostics</a></li>
+            <li><a href="/disclosures/">Reporter Disclosures</a></li>
             <li><a href="/consulting/">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/articles/">Articles</a></li>

@@ -11,22 +11,21 @@
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
 
-{{- $homepageSourceArchivePaths := slice "/investigation/the-chain-of-custody/" "/investigation/the-barrel/" "/investigation/the-architecture-of-access/" "/investigation/the-federal-layer/" "/investigation/the-bridges/" "/investigation/the-ledger/" -}}
-{{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Section" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
+{{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Type" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
-{{- $investigationPagesAll = where $investigationPagesAll ".RelPermalink" "not in" $homepageSourceArchivePaths -}}
+{{- $investigationPagesAll = where $investigationPagesAll "Params.portfolio_key" "hawaii-courts" -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationCount := len $investigationPages -}}
 {{- $investigationsByUpdated := sort $investigationPages "Params.lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
 
-{{- $lead := .Site.GetPage "/investigation/open-letter-bosko-petricevic" -}}
+{{- $lead := .Site.GetPage "/hawaii-courts/open-letter-bosko-petricevic" -}}
 {{- if and (not $lead) (gt $investigationCount 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
-{{- $carto := .Site.GetPage "/investigation/cartography-for-guppies" -}}
-{{- $zoneOfPoliteness := .Site.GetPage "/investigation/zone-of-politeness-hawaii-media-blackout" -}}
+{{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
+{{- $zoneOfPoliteness := .Site.GetPage "/hawaii-courts/coverage-gap-media-noncoverage" -}}
 {{- $heroHeadline := .Params.hero_headline | default "An Open Letter to Bosko Petricevic, Esq." -}}
 {{- $homeHeroImage := .Params.hero_image | default "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
@@ -35,7 +34,6 @@
     {{- $homeHeroImage = . -}}
   {{- end -}}
 {{- end -}}
-{{- $investigationIndex := .Site.GetPage "section" "investigation" -}}
 {{- $consultingPage := .Site.GetPage "section" "consulting" -}}
 {{- $consultingURL := "/consulting/" -}}
 {{- if $consultingPage }}{{ $consultingURL = $consultingPage.RelPermalink }}{{ end -}}
@@ -230,8 +228,12 @@
 
         <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
           <a href="/" class="active">Home</a>
+          <a href="/hawaii-courts/">Hawaii Courts</a>
+          <a href="/geopolitics/">Geopolitics</a>
+          <a href="/intelligence/">Intelligence</a>
+          <a href="/diagnostics/">Diagnostics</a>
+          <a href="/disclosures/">Disclosures</a>
           <a href="#start-here">Start Here</a>
-          <a href="#investigations">Investigations</a>
           <a href="#about-reporter">About</a>
           <a href="#tips">Tips</a>
           <div class="nav-dropdown">
@@ -267,12 +269,12 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/investigation/open-letter-bosko-petricevic/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Open Letter" }}</a></p>
+          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/open-letter-bosko-petricevic/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Open Letter" }}</a></p>
           <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
           <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "How one FBI interview could close the Wilson Loo federal case" }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/investigation/open-letter-bosko-petricevic/" }}">{{ .Params.hero_primary_cta_label | default "Read the Letter" }}</a>
-            <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/investigation/" }}">{{ .Params.hero_secondary_cta_label | default "Browse All Files" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/open-letter-bosko-petricevic/" }}">{{ .Params.hero_primary_cta_label | default "Read the Letter" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/hawaii-courts/" }}">{{ .Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>
         </div>
@@ -417,14 +419,14 @@
         </div>
       </section>
 
-      <!-- Investigation Archive -->
+      <!-- Research Portfolios -->
       {{- $featuredPaths := slice -}}
       {{- if $lead }}{{ $featuredPaths = $featuredPaths | append $lead.RelPermalink }}{{ end -}}
       {{- if $zoneOfPoliteness }}{{ $featuredPaths = $featuredPaths | append $zoneOfPoliteness.RelPermalink }}{{ end -}}
       {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
 
       {{/* Also exclude Closed Loop series members — they get their own showcase */}}
-      {{- $closedLoopSeries := .Site.GetPage "/investigation/the-closed-loop" -}}
+      {{- $closedLoopSeries := .Site.GetPage "/hawaii-courts/closed-loop-oversight-failure" -}}
       {{- $closedLoopMembers := slice -}}
       {{- if $closedLoopSeries -}}
         {{- $featuredPaths = $featuredPaths | append $closedLoopSeries.RelPermalink -}}
@@ -436,15 +438,16 @@
       {{- end -}}
 
       {{- $archivePages := where $investigationPages ".RelPermalink" "not in" $featuredPaths -}}
-      {{- $homepagePortfolios := slice -}}
-      {{- if and $investigationIndex $investigationIndex.Params.portfolio_sections -}}
-        {{- $homepagePortfolios = $investigationIndex.Params.portfolio_sections -}}
-        {{- $homepagePortfolios = where $homepagePortfolios "eyebrow" "ne" "Separate Source Archives" -}}
+      {{- $homepageSilos := slice -}}
+      {{- range slice "/hawaii-courts" "/geopolitics" "/intelligence" "/diagnostics" "/disclosures" -}}
+        {{- with $.Site.GetPage . -}}
+          {{- $homepageSilos = $homepageSilos | append . -}}
+        {{- end -}}
       {{- end -}}
       <section class="ou-section" id="investigations">
         <div class="ou-section-wide">
-          <p class="ou-section-label">On the Record</p>
-          <h2 class="ou-section-heading">Investigations</h2>
+          <p class="ou-section-label">Research Portfolios</p>
+          <h2 class="ou-section-heading">Separate research silos</h2>
 
           {{/* Closed Loop series showcase — horizontal layout like publisher's note */}}
           {{ if $closedLoopSeries }}
@@ -476,72 +479,30 @@
           </div>
           {{ end }}
 
-          {{ if gt (len $homepagePortfolios) 0 }}
-          {{ with $investigationIndex.Params.portfolio_description }}
-          <div class="ou-section-body ou-home-investigation-note"><p>{{ . | safeHTML }}</p></div>
-          {{ end }}
-          <div class="ou-portfolio-groups ou-home-portfolio-groups">
-            {{ range $homepagePortfolios }}
-              {{ $portfolio := . }}
-              {{ $portfolioPages := slice }}
-              {{ range $portfolio.pages }}
-                {{ with $.Site.GetPage . }}
-                  {{ if and (not .Params.homepage_exclude) (not (in $featuredPaths .RelPermalink)) }}
-                    {{ $portfolioPages = $portfolioPages | append . }}
-                  {{ end }}
-                {{ end }}
+          {{ if gt (len $homepageSilos) 0 }}
+          <div class="ou-section-body ou-home-investigation-note">
+            <p>The research library is split by discipline so legal-audit files, geopolitical mapping, intelligence reconstruction, diagnostics, and reporter disclosures are evaluated on their own terms.</p>
+          </div>
+          <div class="ou-cards">
+            {{ range $silo := $homepageSilos }}
+            <article class="ou-card">
+              {{ with $silo.Params.og_image }}
+              <figure class="ou-card-thumb">
+                {{ partial "media/responsive-image.html" (dict
+                  "page" $silo
+                  "src" .
+                  "alt" $silo.Title
+                  "slot" "investigation_card"
+                  "width" ($silo.Params.og_image_width | default 1200)
+                  "height" ($silo.Params.og_image_height | default 630)
+                ) }}
+              </figure>
               {{ end }}
-              {{ $portfolioPages = first 4 $portfolioPages }}
-              {{ if gt (len $portfolioPages) 0 }}
-              <section class="ou-portfolio-group ou-home-portfolio-group">
-                <header class="ou-portfolio-header">
-                  {{ with $portfolio.eyebrow }}
-                  <p class="ou-section-label ou-portfolio-label">{{ . }}</p>
-                  {{ end }}
-                  <h3 class="ou-portfolio-title">{{ $portfolio.title }}</h3>
-                  {{ with $portfolio.description }}
-                  <p class="ou-portfolio-description">{{ . }}</p>
-                  {{ end }}
-                </header>
-
-                <div class="ou-cards ou-portfolio-cards">
-                  {{ range $page := $portfolioPages }}
-                  {{ $updated := $page.Lastmod }}
-                  {{ with $page.Params.lastmod }}{{ $updated = time.AsTime . }}{{ end }}
-                  {{ if $updated.IsZero }}{{ $updated = $page.Date }}{{ end }}
-                  {{ $summary := $page.Params.card_summary | default $page.Description }}
-                  {{ if eq (strings.TrimSpace $summary) "" }}{{ $summary = $page.Summary | plainify | truncate 210 }}{{ end }}
-                  <article class="ou-card">
-                    {{ with $page.Params.og_image }}
-                    <figure class="ou-card-thumb">
-                      {{ partial "media/responsive-image.html" (dict
-                        "page" $page
-                        "src" .
-                        "alt" $page.Title
-                        "slot" "investigation_card"
-                        "width" ($page.Params.og_image_width | default 1200)
-                        "height" ($page.Params.og_image_height | default 630)
-                      ) }}
-                    </figure>
-                    {{ end }}
-                    {{ if $page.Params.series_url }}
-                    <p class="ou-card-kicker"><a href="{{ $page.Params.series_url }}" class="ou-card-kicker-link">{{ $page.Params.eyebrow | default "Investigative File" }}</a></p>
-                    {{ else }}
-                    <p class="ou-card-kicker">{{ $page.Params.eyebrow | default "Investigative File" }}</p>
-                    {{ end }}
-                    <h3 class="ou-card-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
-                    <p class="ou-card-text">{{ $summary }}</p>
-                    <p class="ou-card-meta">
-                      <span>Published {{ $page.Date.Format "Jan 2, 2006" }}</span>
-                      <span aria-hidden="true">&bull;</span>
-                      <span>Updated {{ $page.Params.modified_display | default ($updated.Format "Jan 2, 2006") }}</span>
-                    </p>
-                    <a class="ou-card-link" href="{{ $page.RelPermalink }}" aria-label="Read the file: {{ $page.Title }}">Read the file &rarr;</a>
-                  </article>
-                  {{ end }}
-                </div>
-              </section>
-              {{ end }}
+              <p class="ou-card-kicker">Research Silo</p>
+              <h3 class="ou-card-title"><a href="{{ $silo.RelPermalink }}">{{ $silo.Title }}</a></h3>
+              <p class="ou-card-text">{{ $silo.Description }}</p>
+              <a class="ou-card-link" href="{{ $silo.RelPermalink }}" aria-label="Open silo: {{ $silo.Title }}">Open silo &rarr;</a>
+            </article>
             {{ end }}
           </div>
           {{ else }}
@@ -582,11 +543,9 @@
             {{ end }}
           </div>
           {{ end }}
-          {{ if $investigationIndex }}
           <p class="ou-cards-footer">
-            <a class="ou-cards-footer-link" href="{{ $investigationIndex.RelPermalink }}">View the full investigation archive &rarr;</a>
+            <a class="ou-cards-footer-link" href="/hawaii-courts/">Open the Hawaii courts legal-audit route &rarr;</a>
           </p>
-          {{ end }}
         </div>
       </section>
 
@@ -608,7 +567,7 @@
             </li>
             {{ end }}
           </ul>
-          <a class="ou-wire-more" href="/investigation/">View all investigative updates &rarr;</a>
+          <a class="ou-wire-more" href="/hawaii-courts/">View Hawaii courts updates &rarr;</a>
         </div>
       </section>
       {{ end }}
@@ -655,7 +614,7 @@
               {{ if $carto }}
               <a class="ou-card-link" href="{{ $carto.RelPermalink }}">Read full methodology &rarr;</a>
               {{ else }}
-              <a class="ou-card-link" href="/investigation/">Read methodology placeholder &rarr;</a>
+              <a class="ou-card-link" href="/disclosures/">Read disclosures &rarr;</a>
               {{ end }}
             </div>
           </div>
@@ -705,8 +664,13 @@
         </div>
 
         <div class="footer-section">
-          <p class="footer-heading">Investigations</p>
+          <p class="footer-heading">Research Silos</p>
           <ul>
+            <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
+            <li><a href="/geopolitics/">Geopolitics</a></li>
+            <li><a href="/intelligence/">Intelligence</a></li>
+            <li><a href="/diagnostics/">Diagnostics</a></li>
+            <li><a href="/disclosures/">Disclosures</a></li>
             {{ range first 5 $investigationPages }}
             <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
@@ -717,7 +681,8 @@
           <p class="footer-heading">Resources</p>
           <ul>
             <li><a href="#start-here">Start Here</a></li>
-            <li><a href="/investigation/">Investigation Index</a></li>
+            <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
+            <li><a href="/disclosures/">Reporter Disclosures</a></li>
             <li><a href="/index.xml">Site RSS</a></li>
             <li><a href="{{ $newsRSS }}">News RSS</a></li>
             <li><a href="/agent.txt">agent.txt</a></li>

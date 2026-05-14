@@ -3,7 +3,7 @@
   <nav class="ou-breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
-    <strong>Investigations</strong>
+    <strong>{{ .Params.breadcrumb_label | default "Investigations" }}</strong>
   </nav>
   <h1 class="sr-only">{{ .Title }}</h1>
 
@@ -164,17 +164,20 @@
       {{ end }}
 
       <div class="ou-portfolio-groups">
-        {{ range . }}
+          {{ range . }}
           {{ $portfolio := . }}
+          {{ $portfolioID := $portfolio.id | default ($portfolio.eyebrow | default $portfolio.title) | urlize }}
           {{ $portfolioPages := slice }}
           {{ range $portfolio.pages }}
             {{ with $.Site.GetPage . }}
-              {{ $portfolioPaths = $portfolioPaths | append .File.Path }}
+              {{ $portfolioPath := .RelPermalink }}
+              {{ with .File }}{{ $portfolioPath = .Path }}{{ end }}
+              {{ $portfolioPaths = $portfolioPaths | append $portfolioPath }}
               {{ $portfolioPages = $portfolioPages | append . }}
             {{ end }}
           {{ end }}
           {{ if gt (len $portfolioPages) 0 }}
-          <section class="ou-portfolio-group">
+          <section class="ou-portfolio-group" id="{{ $portfolioID }}">
             <header class="ou-portfolio-header">
               {{ with $portfolio.eyebrow }}
               <p class="ou-section-label ou-portfolio-label">{{ . }}</p>
@@ -201,7 +204,7 @@
                   ) }}
                 </figure>
                 {{ end }}
-                {{ if $cardPage.Params.series_url }}
+                {{ if and $cardPage.Params.series_url (not $.Params.hide_series_links) (not $cardPage.Params.suppress_series_link) }}
                 <a href="{{ $cardPage.Params.series_url }}" class="ou-card-icon ou-card-icon-link">{{ $cardPage.Params.eyebrow | default "Investigative File" }}</a>
                 {{ else if $cardPage.Params.eyebrow }}
                 <div class="ou-card-icon">{{ $cardPage.Params.eyebrow }}</div>
@@ -276,7 +279,7 @@
             ) }}
           </figure>
           {{ end }}
-          {{ if .Params.series_url }}
+          {{ if and .Params.series_url (not $.Params.hide_series_links) (not .Params.suppress_series_link) }}
           <a href="{{ .Params.series_url }}" class="ou-card-icon ou-card-icon-link">{{ .Params.eyebrow | default "Investigative File" }}</a>
           {{ else if .Params.eyebrow }}
           <div class="ou-card-icon">{{ .Params.eyebrow }}</div>

@@ -15,7 +15,7 @@ missions:
   # DISABLED: Public Accountability / Investigations
   # - badge: "Investigations"
   #   title: "Public Accountability"
-  #   title_url: "/investigation/"
+  #   title_url: "/hawaii-courts/"
   #   summary: "Independent investigative reporting focused on judicial accountability, institutional capture analysis, and structural failures in Hawaii's legal system."
   #   features:
   #     - "Evidence-based dossiers documenting systemic misconduct"
@@ -23,7 +23,7 @@ missions:
   #     - "Secure channels for tips: tips@gtcode.com (Signal/encrypted email)"
   #   ctas:
   #     - label: "Explore Dossiers →"
-  #       url: "/investigation/"
+  #       url: "/hawaii-courts/"
   #       style: "secondary"
   #     - label: "Send Secure Tip"
   #       url: "mailto:tips@gtcode.com"

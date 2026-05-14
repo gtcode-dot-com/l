@@ -5,7 +5,7 @@
       "name": "Search-Index Anomaly",
       "code": "THE INDEX",
       "color": "#8844cc",
-      "url": "/investigation/bing-indexing-diagnostics/",
+      "url": "/diagnostics/bing-search-indexing-anomaly/",
       "published": "Feb 13, 2026",
       "mechanism": "Bing diagnostics show contradictory statuses and partial visibility",
       "one_liner": "Bing previously returned zero visible results; a later site-search surfaced one non-investigative technical article and the captured first-page result set excluded the investigation corpus. Cause remains unresolved.",
@@ -16,7 +16,7 @@
       "name": "Media Conflict Environment",
       "code": "ZONE OF POLITENESS",
       "color": "#4488cc",
-      "url": "/investigation/zone-of-politeness-hawaii-media-blackout/",
+      "url": "/hawaii-courts/coverage-gap-media-noncoverage/",
       "published": "Feb 4, 2026",
       "mechanism": "Donor/board overlap creates structural friction around coverage",
       "one_liner": "Public records show Luke-linked donor and board overlap around Civil Beat. The article frames this as a conflict environment while leaving any coverage order unproved.",
@@ -27,7 +27,7 @@
       "name": "Judicial Sealing",
       "code": "THE NOD",
       "color": "#44cccc",
-      "url": "/investigation/the-nod-visual-allegation-audio-sequence/",
+      "url": "/hawaii-courts/the-nod-visual-allegation/",
       "published": "Feb 12, 2026",
       "mechanism": "Disputed visual allegation in an audio-only proceeding followed by sealing",
       "one_liner": "The visual allegation is a firsthand observation. The sealed audio can test the timing, answer, attempted record statement, and cutoff.",
@@ -38,7 +38,7 @@
       "name": "Oversight Nullification",
       "code": "THE ZERO COMMISSION",
       "color": "#88cc44",
-      "url": "/investigation/the-zero-commission/",
+      "url": "/hawaii-courts/zero-commission-judicial-conduct/",
       "published": "Feb 15, 2026",
       "mechanism": "100% complaint dismissal rate for six consecutive years",
       "one_liner": "1,009 inquiries. 7 formal complaints. 0 sustained. Commissioner's spouse was an active judge for 21 years.",
@@ -49,7 +49,7 @@
       "name": "Prosecution Blockade",
       "code": "THE PAPER BAG",
       "color": "#ffcc44",
-      "url": "/investigation/the-paper-bag-and-the-architecture-of-self-investigation/",
+      "url": "/hawaii-courts/paper-bag-self-investigation/",
       "published": "Feb 20, 2026",
       "mechanism": "AG statements create a public-record conflict over special counsel authority",
       "one_liner": "2024: 'The power already exists.' 2026: 'No such power exists.' The contradiction is documented; motive and internal rationale remain open.",
@@ -60,7 +60,7 @@
       "name": "Report Suppression",
       "code": "THE FIRST GATE",
       "color": "#ff8844",
-      "url": "/investigation/the-first-gate/",
+      "url": "/hawaii-courts/the-first-gate/",
       "published": "Mar 6, 2026",
       "mechanism": "Report-intake refusal allegedly prevents case-number generation",
       "one_liner": "Policy says 'shall.' Officer said 'stop telling me how to do my job.' PSO said 'totality.' No written authority found.",
@@ -72,7 +72,7 @@
       "name": "Direct Threat",
       "code": "WHO TOLD THE NEWSROOM",
       "color": "#ff4444",
-      "url": "/investigation/who-told-the-newsroom/",
+      "url": "/hawaii-courts/who-told-the-newsroom/",
       "published": "Coming",
       "mechanism": "Reported murder threat, alleged witness tampering, and excluded testimony",
       "one_liner": "Two voices, two roles, one message. 'Stay away from Jack.' 'Or you'll be whacked.' The jury never heard it.",
@@ -82,27 +82,27 @@
   "series_hubs": [
     {
       "name": "The Closed Loop",
-      "url": "/investigation/the-closed-loop/",
+      "url": "/hawaii-courts/closed-loop-oversight-failure/",
       "desc": "Oversight series"
     },
     {
       "name": "The Architecture of Access",
-      "url": "/investigation/the-architecture-of-access/",
+      "url": "/geopolitics/architecture-of-access-luke-network/",
       "desc": "Federal & PRC-facing mapping"
     },
     {
       "name": "The Shape of the Cage",
-      "url": "/investigation/the-shape-of-the-cage/",
+      "url": "/hawaii-courts/mechanisms-of-review-failure/",
       "desc": "Structural model"
     },
     {
       "name": "The Bridges",
-      "url": "/investigation/the-bridges/",
+      "url": "/geopolitics/prc-access-mapping-hawaii/",
       "desc": "PRC-facing access surface"
     },
     {
       "name": "Cartography for Guppies",
-      "url": "/investigation/cartography-for-guppies/",
+      "url": "/disclosures/cartography-for-guppies/",
       "desc": "Methodology"
     }
   ]

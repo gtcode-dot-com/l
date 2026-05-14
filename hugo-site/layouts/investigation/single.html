@@ -1,9 +1,14 @@
 {{ define "main" }}
+  {{ $currentPage := . }}
+  {{ $portfolioLabel := .Params.portfolio_label | default "Investigations" }}
+  {{ $portfolioIndex := .Params.portfolio_index | default "/hawaii-courts/" }}
+  {{ $portfolioKey := .Params.portfolio_key | default "" }}
+
   <!-- Breadcrumb -->
   <nav class="ou-breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
-    <a href="/investigation/">Investigations</a>
+    <a href="{{ $portfolioIndex }}">{{ $portfolioLabel }}</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
     <strong>{{ .Title }}</strong>
   </nav>
@@ -11,7 +16,7 @@
   <article class="ou-article">
     <header class="ou-article-header">
       {{ with .Params.eyebrow }}
-        {{ if $.Params.series_url }}
+        {{ if and $.Params.series_url (not $.Params.suppress_series_link) }}
           <a href="{{ $.Params.series_url }}" class="ou-article-badge ou-article-badge-link">{{ . }}</a>
         {{ else }}
           <span class="ou-article-badge">{{ . }}</span>
@@ -70,10 +75,10 @@
     </div>
 
     {{/* Series Navigation */}}
-    {{ if .Params.series_url }}
+    {{ if and .Params.series_url (not .Params.suppress_series_nav) }}
     {{ $seriesName := .Params.series }}
     {{ $currentPath := .RelPermalink }}
-    {{ $allInSeries := where (where .Site.RegularPages "Section" "investigation") "Params.series" $seriesName }}
+    {{ $allInSeries := where (where .Site.RegularPages "Type" "investigation") "Params.series" $seriesName }}
     {{ $allInSeries = sort $allInSeries "Params.series_part" "asc" }}
     {{ if gt (len $allInSeries) 1 }}
     <nav class="ou-series-nav" aria-label="Series navigation">
@@ -102,8 +107,49 @@
 
     {{ partial "citation-block.html" . }}
 
+    {{ if $portfolioKey }}
+    {{ $portfolioRelated := slice }}
+    {{ if eq $portfolioKey "hawaii-courts" }}
+      {{ with .Site.GetPage "/hawaii-courts" }}
+        {{ range .Params.portfolio_sections }}
+          {{ range .pages }}
+            {{ with $currentPage.Site.GetPage . }}
+              {{ if ne .RelPermalink $currentPage.RelPermalink }}
+                {{ $portfolioRelated = $portfolioRelated | append . }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{ range sort (where (where .Site.RegularPages "Type" "investigation") "Params.portfolio_key" $portfolioKey) "Params.weight" "asc" }}
+        {{ if ne .RelPermalink $currentPage.RelPermalink }}
+          {{ $portfolioRelated = $portfolioRelated | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $portfolioRelated = first 6 $portfolioRelated }}
+    {{ if gt (len $portfolioRelated) 0 }}
+    <nav class="ou-series-nav ou-portfolio-nav" aria-label="Related reports in this portfolio">
+      <div class="ou-series-nav-header">
+        <a href="{{ $portfolioIndex }}" class="ou-series-nav-title">More in {{ $portfolioLabel }}</a>
+        <span class="ou-series-nav-count">{{ len $portfolioRelated }} links</span>
+      </div>
+      <ol class="ou-series-nav-list">
+        {{ range $portfolioRelated }}
+        <li class="ou-series-nav-item">
+          <a href="{{ .RelPermalink }}">
+            <span class="ou-series-nav-label">{{ .Title }}</span>
+          </a>
+        </li>
+        {{ end }}
+      </ol>
+    </nav>
+    {{ end }}
+    {{ end }}
+
     <footer class="ou-article-footer">
-      <a class="ou-article-back" href="/investigation/">&larr; Back to Investigations</a>
+      <a class="ou-article-back" href="{{ $portfolioIndex }}">&larr; Back to {{ $portfolioLabel }}</a>
     </footer>
   </article>
 {{ end }}
