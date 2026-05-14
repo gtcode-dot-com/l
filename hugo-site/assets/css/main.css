@@ -353,6 +353,8 @@ blockquote::after {
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  flex: 0 0 auto;
+  white-space: nowrap;
   transition: transform var(--transition-fast);
 }
 
@@ -371,6 +373,8 @@ blockquote::after {
   display: flex;
   gap: var(--space-2);
   align-items: center;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
 }
 
 .site-nav a {
@@ -388,6 +392,7 @@ blockquote::after {
   justify-content: center;
   gap: var(--space-2);
   text-align: center;
+  white-space: nowrap;
 }
 
 .nav-dropdown {
@@ -2714,7 +2719,7 @@ article {
    Responsive Design
    ============================================ */
 
-@media (max-width: 960px) {
+@media (max-width: 1120px) {
   .site-header-inner {
     flex-wrap: wrap;
     align-items: center;

@@ -125,6 +125,8 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex: 0 0 auto;
+  white-space: nowrap;
   transition: transform 150ms ease;
 }
 
@@ -135,6 +137,7 @@ body {
 
 .site-logo span {
   color: var(--ou-white);
+  white-space: nowrap;
 }
 
 .site-logo-mark {
@@ -149,6 +152,8 @@ body {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
 }
 
 .site-nav a {
@@ -167,6 +172,7 @@ body {
   justify-content: center;
   gap: 0.5rem;
   text-align: center;
+  white-space: nowrap;
 }
 
 .site-nav a::before {
@@ -1847,8 +1853,8 @@ body.nav-open .site-nav-overlay {
   }
 }
 
-/* ---- Mobile nav (≤960px) ---- */
-@media (max-width: 960px) {
+/* ---- Mobile nav (≤1120px) ---- */
+@media (max-width: 1120px) {
   .site-header-inner {
     flex-wrap: wrap;
     align-items: center;
