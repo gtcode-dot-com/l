@@ -59,7 +59,7 @@ ai_agent_meta:
   prompt_version: v2025-11-28
   provider: null
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document is a conceptual exploration proposing a visual language for understanding how AI systems transform conflicting information into coherent knowledge. It is part of the GTCode Research section's work on AI epistemology and knowledge integration.
 

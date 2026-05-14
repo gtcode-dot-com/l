@@ -75,6 +75,13 @@ END OF AI INSTRUCTIONS
 ====================================================================================================
 -->
 
+> **Historical note:** This is the canonical CNS 2.0 blueprint. It remains useful
+> for the origin of Structured Narrative Objects, critic pipelines, chirality,
+> and evidential entanglement. The current framework is
+> **[CNS 7.1 / GCTS](/guides/cns-gcts/)**, which replaces direct trust-score
+> synthesis with access-aware possible worlds, strict proof separation,
+> calibrated likely-truth ranking, and oracle-boundary controls.
+
 # CNS 2.0: A Practical Blueprint for Chiral Narrative Synthesis
 
 **Author:** Ekewaka Lono, Conceptual AI Laboratory

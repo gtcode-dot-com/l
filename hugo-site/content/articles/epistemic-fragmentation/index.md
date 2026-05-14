@@ -6,7 +6,7 @@ ai_agent_meta:
   prompt_version: v2025-11-09
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document is a technical analysis of epistemic fragmentation in multi-model AI systems. It is part of the Articles section on GTCode.com, which publishes original research on AI systems, institutional risk, and knowledge synthesis.
 
@@ -86,6 +86,12 @@ title: 'Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synt
   Divergent Knowledge Claims'
 type: article
 ---
+
+> **Update:** This article reflects the earlier CNS/SNO framing of epistemic
+> fragmentation. The current CNS research line is
+> **[CNS 7.1 / GCTS](/guides/cns-gcts/)**, which extends the work with
+> record-access states, possible-world ranking, strict proof separation, and
+> oracle-boundary discipline.
 
 When different AI models produce conflicting outputs on the same query, organizations face a fundamental challenge: which answer should they trust? This article examines epistemic fragmentation in multi-model AI deployments—the production of irreconcilable knowledge claims from ostensibly authoritative sources—and explores emerging mathematical frameworks for synthesizing divergent outputs into coherent understanding.
 

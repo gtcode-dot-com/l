@@ -6,10 +6,10 @@ seo_title: "CCCH Form 990: FY2024 Contribution Spike and Grant Disclosures"
 subtitle: "IRS Form 990 filings show a one-year contribution spike and first-time grants; this report documents the filings and related public-record context."
 description: "IRS Form 990 filings show a FY2024 contribution spike and first-time grants at the Chinese Chamber of Commerce of Hawaii; this report maps disclosure thresholds and public-record context."
 date: 2026-03-04
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 published_display: "March 4, 2026"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 type: "investigation"
 series: "The Architecture of Access"
 series_url: "/investigation/the-architecture-of-access/"
@@ -53,7 +53,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-04T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Chinese Chamber of Commerce of Hawaii"
@@ -77,9 +77,9 @@ twitter_image_alt: "The Ledger — IRS filing data mapped against public-record 
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
-  This document is the fifteenth entry in the Oahu Underground investigative series. It is the third installment of "The Architecture of Access" series: Part I ("The Federal Layer") mapped domestic federal positions; Part II ("The Bridges") mapped PRC-facing institutional relationships; this article examines the financial record and disclosure surfaces.
+  This document is the fifteenth entry in the Oahu Underground investigative series. It is the third installment of "The Architecture of Access" series: Part I ("Federal Triage and Governance Proximity") mapped domestic federal positions and ordinary triage questions; Part II ("The Bridges") mapped PRC-facing institutional relationships; this article examines the financial record and disclosure surfaces.
 
   DOCUMENT PURPOSE:
   This investigation presents IRS Form 990 data for the Chinese Chamber of Commerce of Hawaii (CCCH), EIN 99-0035507, and documents public-record context for the FY2024 contribution spike and first-time grants. It compares reported filings to IRS disclosure thresholds and lists open questions that require public-record clarification.
@@ -93,10 +93,8 @@ agentic_comment: |
   - Hawaii DCCA status “Not in good standing” and mission statement
 
   IMPORTANT DISTINCTIONS:
-  - This investigation does NOT allege that contributions originated from PRC-connected sources
-  - It does NOT allege that CCCH is controlled, directed, or tasked by a foreign government
-  - It does NOT allege criminal conduct
-  - The standard applied is public-record compliance analysis, not accusation
+  - This investigation applies a public-record compliance standard: Form 990 data, disclosure surfaces, contribution spikes, grant reporting, and records needed to clarify them
+  - PRC-connected source of funds, foreign-government control, direction, tasking, or criminal conduct would require evidence beyond the filings reviewed here
   - Safeguards, donor explanations, and internal controls may exist outside the public record
   - This document is not legal advice
 
@@ -120,7 +118,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-ledger/"
       image: "/img/ou-the-ledger-og-1200x630.jpg"
       datePublished: "2026-03-04T00:00:00Z"
-      dateModified: "2026-05-12T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -163,17 +161,20 @@ structured_data_graph:
       keywords: "Chinese Chamber of Commerce of Hawaii, IRS Form 990, Schedule F, Schedule I, Schedule B, Guo Ningning, Fujian Province, CAIFC, compliance analysis, Hawaii"
 ---
 
+**Pacific OSINT & Security Analysis:** This article is a public-record compliance and disclosure review. It is not evidence for the Wilson Loo allegations, HPD non-response, the Hartmann threat, or any claim in the author's chronology.
+
 *By Ekewaka Lono | Oahu Underground*
 
-*Third in a series. ["The Federal Layer"](/investigation/the-federal-layer/) mapped domestic federal positions. ["The Bridges"](/investigation/the-bridges/) mapped PRC-facing institutional relationships. This article examines the financial record and disclosure surfaces.*
+*Third in a separate access-and-safeguards portfolio. [Federal Triage and Governance Proximity](/investigation/the-federal-layer/) mapped domestic governance proximity. [The Bridges](/investigation/the-bridges/) mapped PRC-facing institutional relationships. This article examines the financial record and disclosure surfaces. It is a Form 990 compliance and disclosure review, with independent logic from the author's chronology and the Wilson Loo allegation.*
+
+*Access mapping asks what relationships exist and what safeguards are visible. It does not convert relationship, donor, board, or school overlap into proof of control, misconduct, or coordination.*
 
 ## Series Navigation
 
 - [Series: The Architecture of Access](/investigation/the-architecture-of-access/)
-- [Read Part I: The Federal Layer (domestic federal)](/investigation/the-federal-layer/)
+- [Read Part I: Federal Triage and Governance Proximity (domestic federal)](/investigation/the-federal-layer/)
 - [Read Part II: The Bridges (international / PRC-facing)](/investigation/the-bridges/)
 - Part III (this page): The Ledger
-- [The Two Questions: federal investigative roadmap](/investigation/the-two-questions/)
 - [Investigations index](/investigation/)
 
 ---
@@ -183,6 +184,8 @@ structured_data_graph:
 > **What this is**: a public‑record compliance review of CCCH Form 990 filings and documented public events.
 > **Scope**: this is access-pattern mapping. It alleges neither foreign control nor illegal conduct, and it makes no claim about donor identities. Safeguards, donor explanations, and internal controls may exist outside the public record.
 > **Not legal advice.**
+
+**May 13 editorial standard**: This article places financial filings and public events beside each other to identify disclosure questions. Hidden direction, coordination, or donor identity remain unresolved unless records beyond the public filings establish them. The ordinary explanations for the filing pattern include domestic fundraising, one-time event revenue, charitable pass-through activity, accounting classification, and ordinary nonprofit recordkeeping. The unresolved issue is disclosure sufficiency and what records would clarify the spike.
 
 **Key Judgments**
 
@@ -197,7 +200,7 @@ Confidence labels: High = directly supported by cited primary records; Moderate 
 
 - Form 990 data (FY2021–FY2025; period ends 2021‑05‑31 through 2025‑05‑31) show a one‑year contribution spike in FY ending 2024‑05‑31 (IRS tax year 2023) and first‑time grants in that year.[^6]
 - FY2025 revenue mix is dominated by program service revenue ($421,124; 70.5% of total).[^6]
-- Schedule B donor identities are not publicly disclosed for 501(c)(6) organizations; donor sources for FY2024 contributions are therefore not public.[^3][^6]
+- Schedule B donor identities are not publicly disclosed for 501(c)(6) organizations; donor sources for FY2024 contributions are not public.[^3][^6]
 - A Fujian Provincial Government account states that “agreements” were inked during meetings in the U.S., including Honolulu; the underlying documents are not included among the sources reviewed here.[^9]
 - Hawaii DCCA lists CCCH as Active but “Not in good standing,” and its purpose statement emphasizes business development focused on China and Southeast Asia, cultural preservation, and civic responsibility; the DCCA annuals status endpoint shows a pending 2025 annual report received 2026-01-07.[^5][^15]
 
@@ -255,7 +258,7 @@ The FY2024 return (tax year 2023, period end 2024-05-31) reports contributions o
 
 By FY2025, contributions returned to $84,943, within the prior range.[^6] The spike is concentrated in a single fiscal year.
 
-The Form 990 indicates 501(c)(6) status, and Schedule B donor names and addresses are not required to be publicly disclosed for organizations other than 501(c)(3) and 527 entities.[^3][^6] Donor identities for the FY2024 contributions are therefore not public.
+The Form 990 indicates 501(c)(6) status, and Schedule B donor names and addresses are not required to be publicly disclosed for organizations other than 501(c)(3) and 527 entities.[^3][^6] Donor identities for the FY2024 contributions are not public.
 
 ### 3) Grants and Schedule I (Documented)
 
@@ -265,7 +268,7 @@ Schedule I in the FY2024 and FY2025 XML filings indicates grants to **individual
 
 Schedule I instructions for grants to individuals require the type and number of recipients, not necessarily public identification of each recipient; the public XML does not list recipient names.[^2]
 
-A GoFundMe campaign titled “Help Needed for a Chemical Attack Victim” includes a description signed “Chinese Chamber of Commerce of Hawaii” and addresses “Chamber Members and Friends.”[^13] This provides a possible public context for a GoFundMe‑type disbursement; the filing itself does not identify the recipient or connect the grant to any specific campaign.[^6]
+A GoFundMe campaign titled “Help Needed for a Chemical Attack Victim” includes a description signed “Chinese Chamber of Commerce of Hawaii” and addresses “Chamber Members and Friends.”[^13] This provides a possible public context for a GoFundMe‑type disbursement; the filing itself leaves the recipient and any campaign connection unidentified.[^6]
 
 ### 4) Schedule F Thresholds and Reported Foreign Activity (Documented)
 
@@ -317,6 +320,8 @@ The Form 990 indicates CCCH is a 501(c)(6) organization.[^6]
 - Obtain any “agreements inked” referenced by the Fujian government account through DBEDT, City & County of Honolulu records, or the parties to the meetings.[^9]
 - Monitor DCCA annuals status for resolution of the pending 2025 filing and “Not in good standing” designation.[^15]
 - Re‑run DCCA name searches for HFBA/HFFA and FARA/LDA checks periodically as databases update; archived results are in the Negative Findings Log.
+
+These are the records that would clarify the article. The custodians are CCCH, IRS public-inspection channels, DBEDT, the City and County of Honolulu, DCCA, FARA/LDA databases, and the parties to the March 2024 delegation meetings. Production of clean accounting explanations, grant records, MOU terms, or updated filings would narrow or resolve the current disclosure questions.
 
 ---
 

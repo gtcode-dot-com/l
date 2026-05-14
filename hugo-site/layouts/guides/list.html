@@ -23,6 +23,7 @@
       {{ else }}
         {{ partial "guides-children.html" (dict "page" . "title" (.Params.children_title | default "Curriculum")) }}
       {{ end }}
+      {{ partial "citation-block.html" . }}
       {{ partial "guides-related.html" . }}
     </div>
   </div>

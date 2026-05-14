@@ -93,8 +93,8 @@
 
   {{/* ── Multi-Part Series ── */}}
   {{ $seriesPages := where .Pages "Layout" "series" }}
-  {{ if $seriesPages }}
-  <section class="ou-section">
+  {{ if and (gt (len $seriesPages) 0) (not .Params.portfolio_sections) }}
+  <section class="ou-section ou-portfolio-section">
     <div class="ou-section-wide">
       <p class="ou-section-label">Multi-Part Series</p>
       <h2 class="ou-section-heading">In-Depth Investigations</h2>
@@ -148,6 +148,82 @@
   </section>
   {{ end }}
 
+  {{/* ── Visible Portfolio Lanes ── */}}
+  {{ $portfolioPaths := slice }}
+  {{ with .Params.portfolio_sections }}
+  <section class="ou-section">
+    <div class="ou-section-wide">
+      {{ with $.Params.portfolio_eyebrow }}
+      <p class="ou-section-label">{{ . }}</p>
+      {{ end }}
+      {{ with $.Params.portfolio_title }}
+      <h2 class="ou-section-heading">{{ . }}</h2>
+      {{ end }}
+      {{ with $.Params.portfolio_description }}
+      <div class="ou-section-body"><p>{{ . | safeHTML }}</p></div>
+      {{ end }}
+
+      <div class="ou-portfolio-groups">
+        {{ range . }}
+          {{ $portfolio := . }}
+          {{ $portfolioPages := slice }}
+          {{ range $portfolio.pages }}
+            {{ with $.Site.GetPage . }}
+              {{ $portfolioPaths = $portfolioPaths | append .File.Path }}
+              {{ $portfolioPages = $portfolioPages | append . }}
+            {{ end }}
+          {{ end }}
+          {{ if gt (len $portfolioPages) 0 }}
+          <section class="ou-portfolio-group">
+            <header class="ou-portfolio-header">
+              {{ with $portfolio.eyebrow }}
+              <p class="ou-section-label ou-portfolio-label">{{ . }}</p>
+              {{ end }}
+              <h3 class="ou-portfolio-title">{{ $portfolio.title }}</h3>
+              {{ with $portfolio.description }}
+              <p class="ou-portfolio-description">{{ . }}</p>
+              {{ end }}
+            </header>
+
+            <div class="ou-cards ou-portfolio-cards">
+              {{ range $portfolioPages }}
+                {{ $cardPage := . }}
+              <article class="ou-card">
+                {{ with $cardPage.Params.og_image }}
+                <figure class="ou-card-thumb">
+                  {{ partial "media/responsive-image.html" (dict
+                    "page" $cardPage
+                    "src" .
+                    "alt" $cardPage.Title
+                    "slot" "investigation_card"
+                    "width" ($cardPage.Params.og_image_width | default 1200)
+                    "height" ($cardPage.Params.og_image_height | default 630)
+                  ) }}
+                </figure>
+                {{ end }}
+                {{ if $cardPage.Params.series_url }}
+                <a href="{{ $cardPage.Params.series_url }}" class="ou-card-icon ou-card-icon-link">{{ $cardPage.Params.eyebrow | default "Investigative File" }}</a>
+                {{ else if $cardPage.Params.eyebrow }}
+                <div class="ou-card-icon">{{ $cardPage.Params.eyebrow }}</div>
+                {{ end }}
+                <h3 class="ou-card-title"><a href="{{ $cardPage.RelPermalink }}">{{ $cardPage.Title }}</a></h3>
+                {{ with $cardPage.Params.card_summary }}
+                <p class="ou-card-text">{{ . }}</p>
+                {{ else with $cardPage.Summary }}
+                <p class="ou-card-text">{{ . }}</p>
+                {{ end }}
+                <a class="ou-card-link" href="{{ $cardPage.RelPermalink }}" aria-label="Read the report: {{ $cardPage.Title }}">Read the report &rarr;</a>
+              </article>
+              {{ end }}
+            </div>
+          </section>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
   {{/* ── Standalone Investigation Cards ── */}}
   {{/* Exclude: Publisher's Note, series landing pages, series member articles */}}
   {{ $seriesMembers := slice }}
@@ -160,7 +236,16 @@
 
   {{ $standalone := where .Pages "Layout" "!=" "series" }}
   {{ $standalone = where $standalone "Params.eyebrow" "!=" "Publisher's Note" }}
+  {{ $standaloneVisible := slice }}
+  {{ range $standalone }}
+    {{ if not (in $seriesMembers .File.Path) }}
+      {{ if or (not $.Params.portfolio_sections) (not (in $portfolioPaths .File.Path)) }}
+        {{ $standaloneVisible = $standaloneVisible | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
 
+  {{ if $standaloneVisible }}
   <section class="ou-section">
     <div class="ou-section-wide">
       {{ with .Params.grid_eyebrow }}
@@ -176,9 +261,8 @@
       {{ end }}
 
       <div class="ou-cards">
-        {{ range $standalone }}
+        {{ range $standaloneVisible }}
           {{ $cardPage := . }}
-          {{ if not (in $seriesMembers .File.Path) }}
         <article class="ou-card">
           {{ with $cardPage.Params.og_image }}
           <figure class="ou-card-thumb">
@@ -205,9 +289,9 @@
           {{ end }}
           <a class="ou-card-link" href="{{ .RelPermalink }}" aria-label="Read the report: {{ .Title }}">Read the report &rarr;</a>
         </article>
-          {{ end }}
         {{ end }}
       </div>
     </div>
   </section>
+  {{ end }}
 {{ end }}

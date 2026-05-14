@@ -7,7 +7,7 @@
   <meta name="description" content="Redirecting to the canonical URL." />
   <meta name="robots" content="noindex,follow" />
   <link rel="canonical" href="{{ replace .Permalink "http://" "https://" }}" />
-  <meta http-equiv="refresh" content="0; url={{ replace .Permalink "http://" "https://" }}" />
+  <meta http-equiv="refresh" content="0; url={{ .RelPermalink }}" />
   <meta property="og:title" content="Redirecting…" />
   <meta property="og:description" content="Redirecting to the canonical URL." />
   <meta property="og:type" content="website" />
@@ -22,7 +22,7 @@
   <h1>Redirecting…</h1>
   <p>
     This page has moved to
-    <a href="{{ replace .Permalink "http://" "https://" }}">{{ replace .Permalink "http://" "https://" }}</a>.
+    <a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a>.
   </p>
 </body>
 </html>

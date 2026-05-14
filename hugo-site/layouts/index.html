@@ -6,13 +6,15 @@
 {{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
 {{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
 {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
-{{- $pageTitle := .Title | default (printf "%s | Investigative Reporting" $brandName) -}}
+{{- $pageTitle := .Params.seo_title | default .Title | default (printf "%s | Investigative Reporting" $brandName) -}}
 {{- $socialTitleSource := .Params.social_title | default (.Params.og_title | default (.Params.twitter_title | default $pageTitle)) -}}
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
 
+{{- $homepageSourceArchivePaths := slice "/investigation/the-chain-of-custody/" "/investigation/the-barrel/" "/investigation/the-architecture-of-access/" "/investigation/the-federal-layer/" "/investigation/the-bridges/" "/investigation/the-ledger/" -}}
 {{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Section" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
+{{- $investigationPagesAll = where $investigationPagesAll ".RelPermalink" "not in" $homepageSourceArchivePaths -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationCount := len $investigationPages -}}
@@ -122,9 +124,10 @@
     {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
     {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
 
-    <!-- Agentic Context for AI/LLM systems -->
-    {{ with .Params.agentic_comment }}
+    {{ if .Site.Params.enable_agentic_context }}
+      {{ with .Params.agentic_comment }}
     <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
+      {{ end }}
     {{ end }}
 
     <!-- CSS Reset (inlined to eliminate render-blocking request) -->
@@ -275,7 +278,9 @@
         </div>
       </section>
 
+      {{ if .Site.Params.show_home_neutralization_stack }}
       {{ partial "neutralization-stack.html" . }}
+      {{ end }}
 
       <!-- AI Consulting Proof -->
       <section class="ou-section ou-section--alt ou-consulting-proof" id="consulting">
@@ -431,6 +436,11 @@
       {{- end -}}
 
       {{- $archivePages := where $investigationPages ".RelPermalink" "not in" $featuredPaths -}}
+      {{- $homepagePortfolios := slice -}}
+      {{- if and $investigationIndex $investigationIndex.Params.portfolio_sections -}}
+        {{- $homepagePortfolios = $investigationIndex.Params.portfolio_sections -}}
+        {{- $homepagePortfolios = where $homepagePortfolios "eyebrow" "ne" "Separate Source Archives" -}}
+      {{- end -}}
       <section class="ou-section" id="investigations">
         <div class="ou-section-wide">
           <p class="ou-section-label">On the Record</p>
@@ -466,6 +476,75 @@
           </div>
           {{ end }}
 
+          {{ if gt (len $homepagePortfolios) 0 }}
+          {{ with $investigationIndex.Params.portfolio_description }}
+          <div class="ou-section-body ou-home-investigation-note"><p>{{ . | safeHTML }}</p></div>
+          {{ end }}
+          <div class="ou-portfolio-groups ou-home-portfolio-groups">
+            {{ range $homepagePortfolios }}
+              {{ $portfolio := . }}
+              {{ $portfolioPages := slice }}
+              {{ range $portfolio.pages }}
+                {{ with $.Site.GetPage . }}
+                  {{ if and (not .Params.homepage_exclude) (not (in $featuredPaths .RelPermalink)) }}
+                    {{ $portfolioPages = $portfolioPages | append . }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ $portfolioPages = first 4 $portfolioPages }}
+              {{ if gt (len $portfolioPages) 0 }}
+              <section class="ou-portfolio-group ou-home-portfolio-group">
+                <header class="ou-portfolio-header">
+                  {{ with $portfolio.eyebrow }}
+                  <p class="ou-section-label ou-portfolio-label">{{ . }}</p>
+                  {{ end }}
+                  <h3 class="ou-portfolio-title">{{ $portfolio.title }}</h3>
+                  {{ with $portfolio.description }}
+                  <p class="ou-portfolio-description">{{ . }}</p>
+                  {{ end }}
+                </header>
+
+                <div class="ou-cards ou-portfolio-cards">
+                  {{ range $page := $portfolioPages }}
+                  {{ $updated := $page.Lastmod }}
+                  {{ with $page.Params.lastmod }}{{ $updated = time.AsTime . }}{{ end }}
+                  {{ if $updated.IsZero }}{{ $updated = $page.Date }}{{ end }}
+                  {{ $summary := $page.Params.card_summary | default $page.Description }}
+                  {{ if eq (strings.TrimSpace $summary) "" }}{{ $summary = $page.Summary | plainify | truncate 210 }}{{ end }}
+                  <article class="ou-card">
+                    {{ with $page.Params.og_image }}
+                    <figure class="ou-card-thumb">
+                      {{ partial "media/responsive-image.html" (dict
+                        "page" $page
+                        "src" .
+                        "alt" $page.Title
+                        "slot" "investigation_card"
+                        "width" ($page.Params.og_image_width | default 1200)
+                        "height" ($page.Params.og_image_height | default 630)
+                      ) }}
+                    </figure>
+                    {{ end }}
+                    {{ if $page.Params.series_url }}
+                    <p class="ou-card-kicker"><a href="{{ $page.Params.series_url }}" class="ou-card-kicker-link">{{ $page.Params.eyebrow | default "Investigative File" }}</a></p>
+                    {{ else }}
+                    <p class="ou-card-kicker">{{ $page.Params.eyebrow | default "Investigative File" }}</p>
+                    {{ end }}
+                    <h3 class="ou-card-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+                    <p class="ou-card-text">{{ $summary }}</p>
+                    <p class="ou-card-meta">
+                      <span>Published {{ $page.Date.Format "Jan 2, 2006" }}</span>
+                      <span aria-hidden="true">&bull;</span>
+                      <span>Updated {{ $page.Params.modified_display | default ($updated.Format "Jan 2, 2006") }}</span>
+                    </p>
+                    <a class="ou-card-link" href="{{ $page.RelPermalink }}" aria-label="Read the file: {{ $page.Title }}">Read the file &rarr;</a>
+                  </article>
+                  {{ end }}
+                </div>
+              </section>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ else }}
           <div class="ou-cards">
             {{ range $idx, $page := first 8 $archivePages }}
             {{ $updated := $page.Lastmod }}
@@ -477,7 +556,7 @@
               {{ with $page.Params.og_image }}
               <figure class="ou-card-thumb">
                 {{ partial "media/responsive-image.html" (dict
-                  "page" $
+                  "page" $page
                   "src" .
                   "alt" $page.Title
                   "slot" "investigation_card"
@@ -502,6 +581,7 @@
             </article>
             {{ end }}
           </div>
+          {{ end }}
           {{ if $investigationIndex }}
           <p class="ou-cards-footer">
             <a class="ou-cards-footer-link" href="{{ $investigationIndex.RelPermalink }}">View the full investigation archive &rarr;</a>

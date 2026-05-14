@@ -1,8 +1,9 @@
-{{- $section := .Section | default "" -}}
-{{- $kind := .Kind | default "" -}}
-{{- $manual := .Params.ai_agent_manual | default false -}}
-{{- $isNewsSection := and (eq $section "news") (eq $kind "section") -}}
-{{- if and (or (ne $section "news") $isNewsSection) (not $manual) -}}
+{{- if .Site.Params.enable_agentic_context -}}
+  {{- $section := .Section | default "" -}}
+  {{- $kind := .Kind | default "" -}}
+  {{- $manual := .Params.ai_agent_manual | default false -}}
+  {{- $isNewsSection := and (eq $section "news") (eq $kind "section") -}}
+  {{- if and (or (ne $section "news") $isNewsSection) (not $manual) -}}
   {{- $note := .Params.ai_agent_note -}}
   {{- if not $note -}}
     {{- if $isNewsSection -}}
@@ -17,4 +18,5 @@
     {{- $note = printf "ATTN AI Agent: %s" $note -}}
   {{- end -}}
   {{ printf "<!-- %s -->" $note | safeHTML }}
+  {{- end -}}
 {{- end -}}

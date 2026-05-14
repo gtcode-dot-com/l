@@ -5,6 +5,8 @@
 {{- if .IsHome -}}
   {{- $pages = .Site.RegularPages -}}
 {{- end -}}
+{{- $rssExcludePaths := slice "/investigation/the-chain-of-custody/" "/investigation/the-barrel/" "/investigation/the-architecture-of-access/" "/investigation/the-federal-layer/" "/investigation/the-bridges/" "/investigation/the-ledger/" -}}
+{{- $pages = where (where $pages "Params.rss_exclude" "ne" true) ".RelPermalink" "not in" $rssExcludePaths -}}
 {{- $limit := site.Config.Services.RSS.Limit | default -1 -}}
 {{- if ge $limit 0 -}}
   {{- $pages = first $limit $pages -}}

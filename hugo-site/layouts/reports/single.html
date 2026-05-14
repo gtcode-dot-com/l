@@ -1,5 +1,11 @@
 {{ define "main" }}
-<article>
+<article class="article-content">
+  <header class="article-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="article-lede">{{ . }}</p>
+    {{ end }}
+  </header>
   {{ .Content }}
   {{ partial "citation-block.html" . }}
 </article>

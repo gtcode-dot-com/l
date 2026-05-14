@@ -7,11 +7,11 @@ seo_title: "Open Letter to Bosko Petricevic on the Wilson Loo Sealed Record"
 subtitle: "You Were in the Room"
 description: "A public letter to attorney Bosko Petricevic concerning a December 2, 2022 First Circuit courtroom sequence, a sealed audio record, and professional-responsibility questions under Hawaii Rule of Professional Conduct 8.3(b)."
 date: 2026-05-06
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "May 6, 2026"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/open-letter-bosko-petricevic/"
@@ -45,7 +45,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-06T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Bosko Petricevic"
@@ -68,7 +68,7 @@ twitter_image_alt: "Open letter cover art for Oahu Underground investigation on 
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
   This document is a public open letter addressed to attorney Bosko Petricevic concerning the December 2, 2022 First Circuit proceeding involving retired Judge Wilson M.N. Loo and a sealed audio record.
 
@@ -80,7 +80,7 @@ agentic_comment: |
   - Bosko Petricevic was present as counsel for the opposing party
   - The author asked the witness a question testing testimony against a text-message exhibit already in the court file
   - According to the author's firsthand observation, Judge Wilson M.N. Loo looked from the author toward the witness and made a "no" head gesture while scrunching his nose before the witness gave testimony that appeared inconsistent with that exhibit
-  - According to the author's firsthand observation, Petricevic was looking toward Judge Loo during the sequence
+  - According to the author's firsthand observation, Petricevic was looking at Judge Loo during the sequence
   - The sealed audio is represented as capturing the answer, the author's interrupted attempt to place his contemporaneous observation on the record, and the court's interruption
   - Petricevic requested that the record be sealed
   - The letter frames Hawaii Rule of Professional Conduct 8.3(b) as the central professional-responsibility framework
@@ -112,7 +112,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/open-letter-bosko-petricevic/"
       image: "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
       datePublished: "2026-05-06T00:00:00Z"
-      dateModified: "2026-05-12T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -130,7 +130,9 @@ structured_data_graph:
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, judicial conduct question, sealed audio record, firsthand observation, professional responsibility, First Circuit, Hawaii"
 ---
 
-**Editor’s note, May 12, 2026:** A companion analysis, [The Lawyer in the Room](/investigation/the-lawyer-in-the-room/), explains why the answer to this letter matters under Hawaiʻi Rule of Professional Conduct 8.3(b).
+**Editor’s note, May 13, 2026:** A companion analysis, [The Lawyer in the Room](/investigation/the-lawyer-in-the-room/), explains why the answer to this letter matters under Hawaiʻi Rule of Professional Conduct 8.3(b). This letter states the author's firsthand observation plainly while distinguishing that observation from any adjudicated finding about what you saw, knew, or understood.
+
+This letter does not rely on any broader institutional theory. It asks what one lawyer saw and what professional duty followed if he saw it.
 
 Mr. Petricevic,
 
@@ -142,7 +144,7 @@ This letter concerns the professional-responsibility questions arising from the 
 
 Your client was placed under oath. I [asked a question](/investigation/the-two-questions/) that tested his testimony against a text-message exhibit already in the court file. That exhibit was directly relevant to the truthfulness of the testimony being given. As counsel, you had access to the file and were in a position to understand the context in which the question was being asked.
 
-I was facing Judge Loo while asking the question. Before your client answered, I observed Judge Loo look from me toward the witness and make a “no” head gesture while scrunching his nose. I also observed you and your client looking toward Judge Loo during that sequence. You were seated facing the bench. You were positioned to observe the judge, the witness, and the exchange.
+I was facing Judge Loo while asking the question. Before your client answered, I observed Judge Loo look from me toward the witness and make a “no” head gesture while scrunching his nose. I also observed you and your client looking at Judge Loo during that sequence. You were seated facing the bench. You were positioned to observe the judge, the witness, and the exchange.
 
 Your client then gave testimony that appeared inconsistent with that exhibit.
 
@@ -150,9 +152,13 @@ I immediately attempted to place what I had observed on the record. I began: “
 
 Judge Loo cut me off.
 
-That exchange is on the sealed audio. The words, the timing, and the interruption do not depend on memory. They are preserved in the court’s own record.
+That exchange is on the sealed audio. The words, the timing, and the interruption are preserved in the court’s own record.
 
-The visual gesture and where you were looking are my firsthand observations. The sealed audio cannot capture where anyone’s eyes were, but it can capture what happened immediately afterward: your client’s answer, my attempted “Let the record show…” statement, and the court’s interruption. What you personally perceived or concluded is your account to give.
+The visual gesture and where you were looking are my firsthand observations. The sealed audio cannot prove where anyone's eyes were or whether a visual signal occurred, but it can capture what happened immediately afterward: your client's answer, my attempted "Let the record show..." statement, and the court's interruption. What you personally perceived or concluded is your account to give.
+
+If my account is accurate, a presiding judge signaled a sworn witness to deny a material fact and then cut off my attempt to preserve the signal on an audio-only record. This letter asks the narrower professional-responsibility question: what did you see, what did you understand, and what did Rule 8.3(b) require if you saw and understood the sequence?
+
+The predicate for the question was the court file and the exhibit in that proceeding. This letter concerns the courtroom sequence and the professional-responsibility question that follows if the sequence occurred as I observed it. Platform, newsroom, agency, or private-actor access to sealed material is outside this letter's factual claim.
 
 During the same proceeding, your client introduced the accusation of ███████. The court did not strike it. The court did not admonish the witness. The court did not permit me to answer it before the record was sealed.
 
@@ -166,7 +172,7 @@ When the rule is triggered, the duty is mandatory. The operative word is “shal
 
 If a judge signals a sworn witness before an answer, that raises a substantial question. If a judge cuts off a pro se litigant’s attempt to place alleged judicial conduct on the record, that raises a substantial question. If a judge allows a severe out-of-turn accusation to remain unrebutted and then grants a sealing request that closes the record around the sequence, that raises a substantial question.
 
-In my account, you were not merely present. You were looking at the judge during the exchange. That is why the reporting question is directed to you.
+In my account, you were not merely present. You were looking at the judge during the exchange. The reporting question is directed to you for that reason.
 
 If you dispute that observation, the audio-confirmable sequence still remains: the answer, the attempted “Let the record show…” statement, the cutoff, the accusation, and the sealing request. Any denial by a participant whose client, reputation, conduct, or institutional role is implicated requires evidentiary weighting against motive, specificity, line of sight, timing, the sealed audio sequence, and the court file.
 
@@ -174,17 +180,33 @@ Rule 8.3(b) analysis permits disagreement, preserves client advocacy, and respec
 
 If Rule 8.3(b) was triggered, it contains no exception for local professional risk. It contains no exception for discomfort. It contains no exception for the institutional standing of a judge. It contains no exception for treating alleged judicial signaling as someone else’s problem.
 
+The narrow questions are these:
+
+1. Where were you looking when the LSD question was asked?
+2. What did you see Judge Loo do before your client answered?
+3. What did you understand the attempted “Let the record show…” statement to concern?
+4. Did you analyze whether Rule 8.3(b), Rule 1.6, or any confidential reporting channel required or permitted a report?
+5. If a report was made, to whom and when?
+
 The practical consequence of the absence of any known report was concrete. A sealed official record now contains the very exchange I tried to preserve and the accusation I was not allowed to answer. Institutional reviewers can encounter that sealed record before they encounter any public rebuttal, complaint, or investigative publication. The sealing request you made was part of the sequence that created that posture.
 
 The Commission on Judicial Conduct later stated that Judge Loo had left per diem service as of July 2024 and that the jurisdictional window had closed. By the time the matter was presented again, the state judicial-discipline pathway had been procedurally foreclosed.
 
-That foreclosure matters because any reporting question had to be addressed when the record was fresh, when the audio was available, when the judge remained within the Commission’s jurisdiction, and when a lawyer present for the sequence and, in my observation, looking toward the judge could have asked the appropriate authority to review it.
+That foreclosure matters because any reporting question had to be addressed when the record was fresh, when the audio was available, when the judge remained within the Commission’s jurisdiction, and when a lawyer present for the sequence and, in my observation, looking at the judge could have asked the appropriate authority to review it.
 
 This letter is public because the institutional record remains sealed, the ordinary oversight window has closed, and the question of professional responsibility remains.
 
 The sealed audio exists. The court file exists. The audio-confirmable sequence can be reviewed by institutions with authority to retrieve the record.
 
 When they do, your role in the sequence can be evaluated through the same conditional structure that governs this letter: what you saw, what you understood, whether Rule 1.6 limited disclosure, and whether any reporting duty was triggered.
+
+## Scope Boundaries
+
+This letter makes a conditional professional-responsibility claim. The public record contains no adjudicated finding that you violated Rule 8.3(b). Employment overlap, professional proximity, and your role as opposing counsel do not substitute for knowledge. A reporting duty would not have required you to abandon your client, disclose client confidences, or litigate the issue publicly in the moment.
+
+It claims that I saw you looking at Judge Loo during a material courtroom sequence; that the sealed audio can test the immediate timing around that sequence; and that, if you saw and understood what I observed and no confidentiality rule barred a narrow report, the professional-responsibility question was real.
+
+If your client is asked under oath by an authorized investigator and credibly denies that the signal occurred, the allegation is materially narrowed. If no other corroboration emerges, it may fail. The point of this letter is to identify the review path, not to substitute accusation for testimony.
 
 You were present for the sworn denial.
 You were present for the attempted “Let the record show…” statement.
@@ -194,3 +216,7 @@ You requested the seal.
 I am aware of no report by you to the Commission on Judicial Conduct or any other appropriate authority.
 
 The record can show the audio sequence. The remaining question is what those present saw, understood, and did with it.
+
+## What Would Resolve This
+
+The narrow resolution path is procedural: review the sealed audio; review the court-file exhibit; reconstruct the courtroom layout and line of sight; ask the witness what he saw; ask Mr. Petricevic what he saw, understood, and did; and determine whether any timely report was made to an appropriate authority. A documented Rule 1.6 analysis, a documented report, or credible disinterested testimony contradicting the line-of-sight account would materially narrow this letter.

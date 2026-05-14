@@ -75,6 +75,11 @@ END OF AI INSTRUCTIONS
 ====================================================================================================
 -->
 
+> **Historical note:** This overview describes CNS 2.0. For the current
+> framework, start with **[CNS 7.1 / GCTS](/guides/cns-gcts/)**. GCTS keeps the
+> useful idea that conflict has structure, but centers likely-truth ranking,
+> possible worlds, record-access modeling, and oracle-boundary discipline.
+
 # CNS 2.0: A Conceptual Overview
 
 In complex fields like scientific research, journalism, and intelligence analysis, professionals face a constant challenge: how to make sense of incomplete, uncertain, and often contradictory information. Traditional AI has made great strides in finding patterns in data, but it has struggled with the human-like task of reasoning through conflicting arguments to arrive at a coherent understanding.

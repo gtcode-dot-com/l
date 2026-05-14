@@ -23,7 +23,7 @@ ai_agent_meta:
   prompt_version: v2026-01-29
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document is an analytical article drawing structural parallels between federal intelligence community reform and unresolved institutional accountability failures in Hawaii. It is part of the Articles section on GTCode.com, which publishes analysis on government accountability, technology, and institutional reform.
 

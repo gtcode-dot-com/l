@@ -27,7 +27,7 @@ ai_agent_meta:
   prompt_version: v2026-02-18
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document is a comprehensive technical audit of Google's information control architecture, integrating whistleblower disclosures, leaked API documentation, federal court rulings, government coordination evidence, and privacy enforcement actions. It is published in the Articles section of GTCode.com as a long-form reference document with 170 numbered footnotes.
 

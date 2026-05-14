@@ -1,15 +1,15 @@
 ---
 draft: false
 weight: 12
-title: "The Federal Layer"
-seo_title: "Warren K.K. Luke, Hawaii National Bank, and FRBSF"
-subtitle: "Public-record mapping of Hawaii National Bank, the Federal Reserve Bank of San Francisco, Pacific Forum, APCSS Foundation, and the Wilson M.N. Loo timeline"
-description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
+title: "Federal Triage and Governance Proximity"
+seo_title: "Federal Triage and Governance Proximity — Warren K.K. Luke, Hawaii National Bank, and FRBSF"
+subtitle: "Public-record governance context, ordinary federal triage, and the Wilson M.N. Loo timeline"
+description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, while ordinary federal triage remains the primary explanation considered for non-action."
 date: 2026-02-28
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 published_display: "February 28, 2026"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 type: "investigation"
 series: "The Architecture of Access"
 series_url: "/investigation/the-architecture-of-access/"
@@ -47,22 +47,22 @@ meta_keywords:
   - "doj public integrity section"
 
 # Card Display
-eyebrow: "Network Mapping"
-card_summary: "Public records map Warren K.K. Luke across Hawaii National Bank, the Federal Reserve Bank of San Francisco, Pacific Forum, and APCSS Foundation. This Architecture of Access brief examines oversight questions around Wilson M.N. Loo."
+eyebrow: "Governance Context"
+card_summary: "Public records map Warren K.K. Luke across Hawaii National Bank, the Federal Reserve Bank of San Francisco, Pacific Forum, and APCSS Foundation as governance context and safeguard surface."
 
 # Open Graph
-og_title: "Warren K.K. Luke, Hawaii National Bank, and FRBSF"
-og_description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
+og_title: "Federal Triage and Governance Proximity"
+og_description: "Public records map governance proximity while ordinary federal triage remains the primary explanation considered for non-action."
 og_image: "/img/ou-federal-layer-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Illustration of an island with interconnected institutional buildings linked by glowing lines, a lone figure at a desk at the center, and a clock marking the passage of time — representing dense institutional architecture and the inference of ambient impunity"
+og_image_alt: "Illustration of an island with interconnected institutional buildings linked by lines, a lone figure at a desk at the center, and a clock marking the passage of time — representing institutional density, resource triage, and delayed accountability review"
 og_type: "article"
 
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-28T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Warren K.K. Luke"
@@ -86,19 +86,19 @@ article_tags:
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "Warren K.K. Luke, Hawaii National Bank, and FRBSF"
-twitter_description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
+twitter_title: "Federal Triage and Governance Proximity"
+twitter_description: "Public records map governance proximity while ordinary federal triage remains the primary explanation considered for non-action."
 twitter_image: "/img/ou-federal-layer-og-1200x630.jpg"
-twitter_image_alt: "The Federal Layer — investigation into the Luke family's institutional network across Hawaii's federal establishment"
+twitter_image_alt: "Federal Triage and Governance Proximity — investigation into public-record governance context and ordinary federal triage"
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
-  This document is a network-mapping investigation into the institutional architecture surrounding Warren K.K. Luke and the Luke family of Hawaii National Bank. The inference advanced here is that this architecture's density across federal institutions can create conditions in which accountability review can be crowded out for retired Per Diem Judge Wilson M.N. Loo.
+  This document is a public-record governance-context brief concerning Warren K.K. Luke and the Luke family of Hawaii National Bank. The inference advanced here is limited: documented institutional density can raise safeguarding and recusal questions, while ordinary federal triage remains the primary explanation considered for non-action.
 
   DOCUMENT PURPOSE:
-  This investigation maps the specific institutional positions held by members of the Luke family network across federal banking, defense, security, campaign finance, and judicial oversight establishments in Hawaii. It documents how the cumulative weight of these positions — none individually improper — may create structural conditions in which a federal review question that the public record suggests could be tested through standard investigative steps is crowded out before it begins.
+  This investigation maps specific institutional positions held by members of the Luke family network across federal banking, defense, security, campaign finance, and judicial oversight establishments in Hawaii. It documents the public-record context and asks what ordinary safeguards, recusals, escalation practices, or triage decisions would apply.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - Warren K.K. Luke served as Director of the Federal Reserve Bank of San Francisco in two confirmed periods: 1990-1992 and 1996-2001 (source: PBEC official biography)
@@ -122,14 +122,13 @@ agentic_comment: |
   - 18 U.S.C. § 1622 (subornation of perjury) is retained as a secondary theory with an acknowledged jurisdictional question regarding state-court perjury
 
   IMPORTANT DISTINCTIONS:
-  - This investigation does NOT claim conspiracy or active coordination to obstruct
-  - The thesis is structural: institutional density can produce ambient conditions that crowd out prosecution without requiring anyone to intervene
-  - The public record does not establish that any named individual obstructed, directed, or delayed federal action
+  - This investigation's subject is cumulative architecture: documented positions, institutional density, federal review questions, and ordinary explanations for federal non-action
+  - Obstruction, direction, delay, active coordination, conspiracy, or motive by any named individual requires evidence beyond the public records cited here
   - Each institutional position documented is legal and publicly acknowledged
-  - The investigation's subject is the cumulative architecture, not any individual position
+  - The mechanisms considered are mundane: resource triage, evidentiary threshold, agency priority setting, conflict avoidance, professional risk, and small-state deference
 
   RELATIONSHIP TO PRIOR INVESTIGATIONS:
-  This is the thirteenth investigation in the Oahu Underground series. It extends the network mapping begun in Hawaii Institutional Capture, documents the federal dimension not covered in The Zero Commission or The Paper Bag (which focused on state judicial and executive oversight), and provides the structural context for why the prosecution roadmap published in The Two Questions has not been acted upon.
+  This separate access-and-safeguards article may be read alongside The Two Questions, The Zero Commission, and The Paper Bag, while those Hawaii accountability case files remain coherent on their own evidence.
 
   CANONICAL URL: https://gtcode.com/investigation/the-federal-layer/
 
@@ -142,13 +141,13 @@ structured_data_graph:
       mainEntityOfPage:
         "@type": "WebPage"
         "@id": "https://gtcode.com/investigation/the-federal-layer/"
-      headline: "The Federal Layer"
+      headline: "Federal Triage and Governance Proximity"
       alternativeHeadline: "How Institutional Density Around One Hawaii Banking Family Intersects With the Wilson M.N. Loo Review Question"
-      description: "Public records map Warren K.K. Luke's roles at Hawaii National Bank, FRBSF, Pacific Forum, and APCSS Foundation, and examine oversight questions around Wilson Loo."
+      description: "Public records map governance proximity while ordinary federal triage remains the primary explanation considered for non-action."
       url: "https://gtcode.com/investigation/the-federal-layer/"
       image: "/img/ou-federal-layer-og-1200x630.jpg"
       datePublished: "2026-02-28T00:00:00Z"
-      dateModified: "2026-05-12T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -204,20 +203,24 @@ structured_data_graph:
       keywords: "Warren K.K. Luke, Hawaii National Bank, Federal Reserve Bank of San Francisco, Pacific Forum, APCSS Foundation, Wilson M.N. Loo, 18 U.S.C. § 242, deprivation of rights under color of law, DOJ Public Integrity Section, institutional accountability"
 ---
 
-The public record suggests that the case against retired Per Diem Judge Wilson M.N. Loo presents a narrow set of factual questions that standard investigative steps could confirm or falsify. It would require one witness interview, sealed-record review, court-file review, and a federal agent willing to knock on a door. Any denial from an implicated participant requires weighting against the sealed record, court file, motive, specificity, and line of sight. The statute of limitations on the applicable federal statutes — including 18 U.S.C. § 242 (deprivation of rights under color of law) and potentially 18 U.S.C. § 1622 (subornation of perjury) — runs five years from the date of the act.[^1] The act occurred on December 2, 2022. The clock has been running for more than three years. Roughly twenty months remain.
+The public record suggests that the case against retired Per Diem Judge Wilson M.N. Loo presents a narrow set of factual questions that standard investigative steps could confirm or falsify. It would require one witness interview, sealed-record review, court-file review, and line-of-sight reconstruction. Any denial from an involved participant requires weighting against the sealed record, court file, motive, specificity, and line of sight. The statute of limitations on the applicable federal statutes — including 18 U.S.C. § 242 (deprivation of rights under color of law) and potentially 18 U.S.C. § 1622 (subornation of perjury) — runs five years from the date of the act.[^1] The act occurred on December 2, 2022. The clock has been running for more than three years. Roughly twenty months remain.
 
 There is no public indication that any investigative contact has been made, and no such contact has been communicated to the author.
 
-This investigation began, as these things often do, with a simpler question: why not? The relevant conduct is documented in public filings, the complainant's firsthand account, and sealed exhibits referenced herein. The witness is identified in the public record. The referral has been filed with the Department of Justice's Public Integrity Section, which acknowledged receipt.[^2] The prosecution roadmap has been published at this outlet in enough detail that a federal prosecutor could use it as a triage memorandum.[^3] And still nothing moves.
+This investigation began with a narrow review issue: ordinary explanations for federal non-action come first, and remaining questions should be identified only after those explanations are considered. The relevant conduct is documented in public filings, the complainant's firsthand account, and sealed exhibits referenced herein. The witness is identified in the public record. The referral has been filed with the Department of Justice's Public Integrity Section, which acknowledged receipt.[^2] The prosecution roadmap has been published at this outlet in enough detail that a federal prosecutor could use it as a triage memorandum.[^3]
 
-The article advances an architectural explanation: institutional density can crowd out review without visible orders, payments, or calls. In a state this small, the family of the man whose conduct triggered this investigation has spent four decades building an institutional presence so dense, so cross-stitched through the federal establishment's own infrastructure, that an investigation the public record suggests could be tested through standard steps may be crowded out before it begins through cumulative institutional weight.
+**Record posture:** This article maps public governance proximity and federal triage questions. The ordinary explanations come first: agency triage, evidentiary threshold, sealed-record access, proof of willfulness, jurisdiction, prosecutorial discretion, resource constraints, declination without comment, and federal priority setting. Governance proximity is documented context and a safeguard question. Causation, obstruction, direction, delay, active coordination, conspiracy, or motive require evidence beyond the cited public records.
 
-That family is the Lukes. And at the center of it is Warren K.K. Luke.
+The sociology is boring by design. Resource triage explains why hard cases wait behind easier cases. Principal-agent problems explain why a local field office may not escalate a matter whose proof is sealed, visual, and politically awkward. Regulatory-capture analogues explain how repeated professional proximity can normalize deference without any explicit instruction. Small-community dynamics explain why lawful relationships can still raise the cost of review.
+
+**Ambient protection:** In this article, ambient protection means the deference that can attach to a locally prominent family before anyone makes a call or gives an instruction. It is a local social-capital claim and a conflict-screening question. It is not evidence that Warren Luke, the Federal Reserve, Pacific Forum, APCSS, DOJ, FBI, DOD, or any foreign actor directed non-action in the Wilson Loo matter.
+
+The family at issue is the Luke family. The public-record figure at the center of this governance-context brief is Warren K.K. Luke.
 
 ## Read Next
 
 - [Series: The Architecture of Access](/investigation/the-architecture-of-access/)
-- Part I (this page): The Federal Layer
+- Part I (this page): Federal Triage and Governance Proximity
 - [Read Part II: The Bridges (international / PRC-facing)](/investigation/the-bridges/)
 - [Read Part III: The Ledger (funding pathways and disclosure surfaces)](/investigation/the-ledger/)
 - [The Two Questions: federal investigative roadmap in the Wilson M.N. Loo matter](/investigation/the-two-questions/)
@@ -239,11 +242,11 @@ That family is the Lukes. And at the center of it is Warren K.K. Luke.
 
 The primary federal theory against Loo is [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242) — deprivation of rights under color of law. The statute is purpose-built for state officials who abuse their authority to deny constitutional rights. The Supreme Court unanimously confirmed its application to state judges in [*United States v. Lanier*, 520 U.S. 259 (1997)](https://supreme.justia.com/cases/federal/us/520/259/), in which a Tennessee state judge was convicted under § 242 for abuse of judicial power. Judicial immunity — a defense to civil suits under 42 U.S.C. § 1983 — has no application to criminal prosecution under § 242. It is settled that judges can be prosecuted under § 242; the harder question is whether these specific facts meet § 242's willfulness requirement and *Lanier*'s fair-warning standard — that the unlawfulness of the conduct must be "apparent" in light of pre-existing law.
 
-The conduct captured on the sealed audio recording — Loo cutting off the petitioner's objection when the petitioner attempted to place the judge's behavior on the record — is evidence from which a jury could infer that Loo willfully deprived a party of the right to be heard in a meaningful manner, a "basic requirement of due process." *In re Murchison*, 349 U.S. 133, 136 (1955); *Mathews v. Eldridge*, 424 U.S. 319 (1976). The audio does not depend on any witness's cooperation, though it is sealed and investigators would need to obtain it through appropriate legal process.
+The conduct captured on the sealed audio recording — Loo cutting off the petitioner's objection when the petitioner attempted to place the judge's behavior on the record — is evidence from which a jury could infer that Loo willfully deprived a party of the right to be heard in a meaningful manner, a "basic requirement of due process." *In re Murchison*, 349 U.S. 133, 136 (1955); *Mathews v. Eldridge*, 424 U.S. 319 (1976). The audio exists independently of any witness's cooperation, though it is sealed and investigators would need to obtain it through appropriate legal process.
 
 Denials matter only when credible, disinterested, specific, and consistent with the audio-confirmable sequence and court-file evidence.
 
-The series has previously framed this case under [18 U.S.C. § 1622](https://www.law.cornell.edu/uscode/text/18/1622) — subornation of perjury. That statute remains an alternative theory, but its jurisdictional reach to perjury committed in state court (rather than in a federal proceeding) is a genuine legal question this investigation acknowledges. Section 242, by contrast, requires no federal proceeding and no jurisdictional workaround. It applies to any person acting "under color of any law" who willfully deprives another of constitutional rights. A presiding judge in a state courtroom satisfies the color-of-law element; the contested questions are willfulness and whether the specific rights at issue meet *Lanier*'s fair-warning standard.
+The series has previously framed this case under [18 U.S.C. § 1622](https://www.law.cornell.edu/uscode/text/18/1622) — subornation of perjury. That statute remains an alternative theory, but its jurisdictional reach to state-court perjury is a genuine legal question this investigation acknowledges. Section 242, by contrast, requires no federal proceeding and no jurisdictional workaround. It applies to any person acting "under color of any law" who willfully deprives another of constitutional rights. A presiding judge in a state courtroom satisfies the color-of-law element; the contested questions are willfulness and whether the specific rights at issue meet *Lanier*'s fair-warning standard.
 
 Federal law also provides heightened protections for individuals who provide information to law enforcement about federal offenses. *See* [18 U.S.C. § 1513(e)](https://www.law.cornell.edu/uscode/text/18/1513). The complainant's documented contacts with the FBI and DEA preceded the hearing at which the alleged perjury and due process deprivation occurred. If the adverse actions documented in this series were taken because of those reports — that is, with retaliatory intent — then § 1513(e) would place this matter within a broader federal framework that extends beyond the courtroom conduct itself.
 
@@ -253,17 +256,17 @@ This public-record brief relies on materials that are publicly accessible or pub
 
 ## The Banker and the Federal Reserve
 
-Warren Luke has been Chairman and CEO of Hawaii National Bank since 1980.[^4] That alone is unremarkable. What is not unremarkable is what he did with that position over the following four decades.
+Warren Luke has been Chairman and CEO of Hawaii National Bank since 1980.[^4] That role is lawful and publicly disclosed. The relevant issue for this article is how that role intersects with other disclosed governance positions over the following four decades.
 
 For nine years — documented in two confirmed periods, 1990-1992 and 1996-2001 — Warren Luke served as a Director of the Federal Reserve Bank of San Francisco.[^5] He was, according to his own official biography at the Pacific Basin Economic Council, only the second Hawaiian ever to hold the position.[^6] He served as Chairman of its Audit Committee — the committee responsible for overseeing the financial integrity of the Reserve Bank itself.[^7]
 
-Regional Federal Reserve banks are governed by nine-member boards of directors. Three seats (Class A) are reserved by statute for representatives of member banks — banker participation is structural, not anomalous. The relevant question is not whether a community banker served on a Reserve Bank board, but what specific oversight functions he held during that service and what cumulative institutional density that service represents alongside his other positions.
+Regional Federal Reserve banks are governed by nine-member boards of directors. Three seats (Class A) are reserved by statute for representatives of member banks — banker participation is structural, not anomalous. The relevant question is what specific oversight functions Warren Luke held during Reserve Bank service and what cumulative institutional density that service represents alongside his other positions. Community-bank representation on Reserve Bank boards is structural and expected.
 
 In Luke's case, the answer is the Audit Committee chairmanship. A community bank CEO in Honolulu chaired the audit function of the federal institution that operates within the same supervisory architecture as his own bank. The Federal Reserve System, of which the FRBSF is a regional arm, participates in supervisory coordination with the Office of the Comptroller of the Currency, which regulates national banks including Hawaii National Bank.[^8] Luke was simultaneously inside the federal banking establishment's audit oversight and running a bank that existed within that same establishment's regulatory reach — for nine years, across two confirmed periods.
 
 No publicly accessible recusal log was located in FRBSF annual reports, the PBEC biographical record, or SEC proxy filings reviewed for this investigation. Federal Reserve director conflicts of interest are governed by 18 U.S.C. § 208 (the federal criminal conflicts-of-interest statute) and the Board's *Guide to Conduct for Directors of Federal Reserve Banks*; the specific recusal processes applicable to Luke during his 1990–2001 tenure were not determinable from these public sources. No FOIA request was filed with the FRBSF for this article.
 
-The FRBSF president during part of Luke's tenure was Robert T. Parry, a voting member of the Federal Open Market Committee from 1986 through 2004.[^9] Among Luke's co-directors during documented periods was A.W. "Tom" Clausen, former CEO of Bank of America and former President of the World Bank.[^10] The audit committee of this federal institution was chaired by the brother-in-law of the judge who allegedly directed a witness to commit perjury in open court. This is documented governance density — not an allegation of obstruction.
+The FRBSF president during part of Luke's tenure was Robert T. Parry, a voting member of the Federal Open Market Committee from 1986 through 2004.[^9] Among Luke's co-directors during documented periods was A.W. "Tom" Clausen, former CEO of Bank of America and former President of the World Bank.[^10] The public-record point is documented governance density: the brother-in-law of the judge at issue in the Wilson Loo case held an audit-committee role within a regional Federal Reserve institution. Obstruction would require evidence of action, communication, or intent beyond the board records cited here.
 
 ---
 
@@ -273,9 +276,9 @@ Wilson M.N. Loo married into the Luke family. His wife, Janice Luke Loo, is the 
 
 According to a 1996 SEC proxy filing — a primary source document submitted to federal regulators — Janice Luke Loo held 47,858 shares of Hawaii National Bancshares stock, beneficially, at a time when the bank's total outstanding common shares were approximately 715,000.[^12] Of those 47,858 shares, 11,265 were owned directly by Wilson Loo himself.[^13]
 
-This matters because Loo, by 1996, was already serving as a Per Diem District Judge in the First Circuit.[^14] A judge with personal equity in a bank holding company can be expected to encounter — across thirty years on the bench, cycling through District and Family Court calendars — matters involving that bank's borrowers, tenants, and counterparties. No recusal records for any such matters have been found in the public record. Because Loo's cases were largely per diem assignments through a system that does not generate easily searchable recusal histories, absence of records does not mean absence of conflicts. It means opacity.
+The recusal-review question arises because Loo, by 1996, was already serving as a Per Diem District Judge in the First Circuit.[^14] A judge with personal equity in a bank holding company may encounter — across thirty years on the bench, cycling through District and Family Court calendars — matters involving that bank's borrowers, tenants, and counterparties. No recusal records for any such matters have been found in the public record. Because Loo's cases were largely per diem assignments through a system that does not generate easily searchable recusal histories, the record gap creates opacity.
 
-His 2019 judicial financial disclosure — the last filed before he retired in July 2024 — shows a judge with more than one million dollars in K.J.L. Associates, a family commercial real estate limited partnership; additional shares in Hawaii National Bancshares; shares in Loyalty Enterprises, Ltd.; and directorships in the K.J. Luke Foundation and REHAB Hospital of the Pacific.[^15] He was not a man estranged from his wife's family's money. He was embedded in it.
+His 2019 judicial financial disclosure — the last filed before he retired in July 2024 — shows a judge with more than one million dollars in K.J.L. Associates, a family commercial real estate limited partnership; additional shares in Hawaii National Bancshares; shares in Loyalty Enterprises, Ltd.; and directorships in the K.J. Luke Foundation and REHAB Hospital of the Pacific.[^15] The disclosure places him inside his wife's family financial structure.
 
 Wilson Loo served as a Commissioner on the Hawaii Supreme Court Commission on Judicial Conduct.[^16] The Commission is the body tasked with investigating complaints against judges. He was, in other words, both subject to oversight and participant in it — while the financial entanglements above remained in place.
 
@@ -283,25 +286,25 @@ Wilson Loo served as a Commissioner on the Hawaii Supreme Court Commission on Ju
 
 ## The Clerkship That Binds
 
-Before he was a judge, Wilson Loo was a lawyer's lawyer. He graduated from Rutgers School of Law, passed the Hawaii bar in 1980, and went to work as a Deputy Prosecuting Attorney in the Organized Crime Unit under Honolulu's famously aggressive Prosecuting Attorney Charles Marsland.[^17] In 1982, he left the DA's office to clerk for Chief U.S. District Judge Harold M. Fong at the federal courthouse in Honolulu.[^18]
+Before he was a judge, Wilson Loo was a lawyer's lawyer. He graduated from Rutgers School of Law, passed the Hawaii bar in 1980, and went to work as a Deputy Prosecuting Attorney for the City and County of Honolulu.[^17] In 1982, he left the prosecutor's office to clerk for Chief U.S. District Judge Harold M. Fong at the federal courthouse in Honolulu.[^18]
 
-Judicial clerkships create bonds. They are apprenticeships of a particular intimacy — a year or more in daily proximity to a federal judge, absorbing how law is practiced at the highest available level. They also create networks. The people who clerk for the same judge share an institutional ancestor and tend to remain professionally and socially connected across careers.
+Judicial clerkships create professional relationships. They place lawyers in daily proximity to a federal judge and can form durable career networks. The public-record question is whether a shared clerkship later intersected with appointment authority, disclosure practice, or recusal review.
 
 Another Harold Fong clerk, who served approximately three to four years after Loo, went on to become Chief Justice of the Hawaii Supreme Court.[^19] His name is Mark Recktenwald. He was confirmed as Chief Justice in 2010.[^20]
 
 As Chief Justice, Recktenwald held administrative authority over per diem judge appointments in the state court system — including, after 2010, the appointments of Wilson M.N. Loo.[^21]
 
-Two men who clerked for the same federal judge: one became a per diem judge whose continued service depended on the other's administrative authority. The connection is confirmed through Loo's own professional biography and through Recktenwald's legislative confirmation records.[^22] No public recusal record referencing this shared clerkship was located in the materials reviewed for this investigation. Whether the connection required formal disclosure or recusal under applicable judicial conduct rules is a question this article does not resolve; what is documented is the relationship itself and the administrative authority it intersected.
+Two men who clerked for the same federal judge: one became a per diem judge whose continued service depended on the other's administrative authority. The connection is confirmed through Loo's own professional biography and through Recktenwald's legislative confirmation records.[^22] No public recusal record referencing this shared clerkship was located in the materials reviewed for this investigation. The documented facts are the shared clerkship and the administrative authority it intersected. Whether applicable judicial-conduct rules required formal disclosure or recusal is a separate legal question.
 
 The Fong connection runs a second, more recent thread. Harold Fong — not to be confused with Judge Arthur S.K. Fong, a separate figure — was Chief Judge through 1991.[^23] Arthur S.K. Fong was a Hawaii First Circuit judge who simultaneously served as a Director of Hawaii National Bank.[^24] He died in March 2020; his Star-Advertiser obituary confirmed both his judicial career and his bank board service.[^25]
 
 Arthur S.K. Fong's son is Daniel Fong. Since July 1, 2019, Daniel Fong has served as Senior Vice President, General Corporate Counsel, Compliance Administrator, and Assistant Secretary of Hawaii National Bancshares and Hawaii National Bank.[^26] He is, to be precise, the person responsible for ensuring that Hawaii National Bank operates within the law.
 
-The man running compliance at the bank central to this investigation is the son of a judge who sat on that bank's board. Whatever the intent, the effect is replication: governance roles and institutional affiliations tend to concentrate across a small set of families and institutions, generation after generation.
+The compliance role at Hawaii National Bank is held by the son of a judge who sat on that bank's board. The public-record point is concentration of governance roles across the same families and institutions. Intent, influence, or improper action would require evidence beyond the affiliations cited here.
 
 ---
 
-## Where the Admirals Gather
+## Security Policy Governance
 
 In 2020, Pacific Forum — a Honolulu-based foreign policy research institute with close ties to the U.S. security establishment — published its annual report. The document is a primary source, retrieved directly.[^27] Warren K.K. Luke appears on the Board of Governors.
 
@@ -323,17 +326,17 @@ So do the following:
 
 Pacific Forum conducts what the security establishment calls Track 1.5 diplomacy — dialogue between governments and non-governmental actors, involving people with current or recent access to classified information and policy processes. Its work is oriented toward INDOPACOM's theater of operations. Several of its programs receive U.S. government funding, though Pacific Forum's own website is careful to specify that government grants represent "a small percentage" of its annual budget.[^35]
 
-The important point is not the funding percentage. The important point is the board.
+The board is the relevant public-record feature.
 
-Warren Luke — the banker whose brother-in-law is the judge whose prosecution this investigation is urging — sits in sustained governance proximity to two retired Pacific Fleet commanders and a former Afghanistan ambassador. They are not his acquaintances. They are his co-governors. They meet. They discuss programming. They represent an institution to funders and policymakers together.
+Warren Luke's Pacific Forum role places him, as a matter of public board records, in sustained governance proximity to two retired Pacific Fleet commanders and a former Afghanistan ambassador. The documented issue is governance proximity across banking, defense-adjacent education, and security policy institutions. Specific action or intent requires separate evidence.
 
 INDOPACOM is headquartered at Camp Smith on Oahu's Aiea Heights, approximately seventeen miles from the stretch of Kamehameha Highway where the FBI's Honolulu Field Office operates. The FBI field office, which would conduct any criminal investigation of Wilson Loo, is staffed by agents who live and work in the same geographic and institutional environment where Warren Luke co-governs an Indo-Pacific security policy institution with retired PACOM commanders.
 
-No reasonable person should read this as evidence that those admirals are protecting Wilson Loo. There is no evidence of that, and this article makes no such claim. The point is subtler and more durable: the ambient professional density of Hawaii's federal and security establishment creates conditions in which a retired per diem judge whose official judicial compensation was not, by itself, the kind of target profile that typically drives federal public-corruption metrics — and whose prosecution would require examining a network that includes people connected to that establishment — does not feel like a priority to anyone whose career requires navigating the same environment.
+The mundane point is narrower: Hawaii's federal and security establishment is small, professionally dense, and resource-constrained. A retired per diem judge whose official judicial compensation is a low-yield case profile by federal public-corruption metrics — and whose prosecution would require examining a network that includes people connected to that establishment — may be treated as low-yield by institutions operating under proof, staffing, and priority constraints.
 
 ---
 
-## The DOD Connection Nobody Mentions
+## The APCSS Foundation
 
 Warren Luke's most direct connection to the federal national security apparatus is not Pacific Forum. It is a smaller institution with a more specific mission.
 
@@ -347,9 +350,9 @@ Also on the APCSS Foundation board: Constance Lau, former CEO of Hawaiian Electr
 
 Three of the six documented APCSS Foundation trustees — Luke, Kurisu, and Lau — simultaneously served as Punahou trustees or chairs during overlapping periods.[^43]
 
-For the purposes of this investigation, "institutional capture" describes structural inertia through interlocking directorates: the same small set of individuals occupying governance positions across institutions that would need to act independently to produce accountability. The term does not allege illegal coordination.
+For the purposes of this article, the public-record risk is structural inertia through interlocking directorates: the same small set of individuals occupying governance positions across institutions that would need to act independently to produce accountability.
 
-This is that architecture in its mature form. It is not one person with power in one place. It is the same small set of people in every place that matters, simultaneously: the bank, the DOD-adjacent foundation, the security policy think tank, the leading private school, and the leading business press. They do not need to coordinate. They share the same interests, the same social world, and the same professional horizon.
+The article maps shared governance space across the bank, the DOD-adjacent foundation, the security policy think tank, the leading private school, and the leading business press. The public-record claim is institutional caution and deference risk.
 
 ---
 
@@ -361,7 +364,7 @@ For approximately four years, the CEO of Hawaii National Bank simultaneously cha
 
 The Commission records show two disclosed conflicts during Bryan Luke's tenure — February 14, 2018, and August 12, 2020 — both involving attorney relationships connected to his family.[^47] In both instances, he disclosed the conflict but continued participating after no party objected.[^48]
 
-What the records do not show is any formal docket entry during his tenure involving Sylvia Luke, Ty Cullen, or Tobi Solidum — despite the fact that $10,000 in coordinated contributions from Solidum and Pae to Sylvia Luke's campaign, received on January 20-21, 2022, went unreported to the Commission for nearly four years, and were only disclosed in February 2026 after Civil Beat inquired about them.[^49] Sylvia Luke, the Lieutenant Governor of Hawaii, is not a member of the HNB Luke family by blood, having married into the surname. The overlap between the unreported contributions and Bryan Luke's Commission chairmanship is documented, but causation is not alleged. This episode illustrates the limits of CSC enforcement capacity and disclosure latency — structural governance questions that exist independently of any individual's intent.
+The records reviewed for this article contain no formal docket entry during his tenure involving Sylvia Luke, Ty Cullen, or Tobi Solidum — despite the fact that $10,000 in coordinated contributions from Solidum and Pae to Sylvia Luke's campaign, received on January 20-21, 2022, went unreported to the Commission for nearly four years, and were only disclosed in February 2026 after Civil Beat inquired about them.[^49] Sylvia Luke, the Lieutenant Governor of Hawaii, is not a member of the HNB Luke family by blood, having married into the surname. The overlap between the unreported contributions and Bryan Luke's Commission chairmanship is documented. This episode illustrates the limits of CSC enforcement capacity and disclosure latency — structural governance questions that exist independently of any individual's intent.
 
 ---
 
@@ -373,51 +376,79 @@ Loo retired in July 2024. By February 2025, when my renewed filing arrived, the 
 
 The Commission on Judicial Conduct received, in the fiscal years for which data is available, a total of more than a thousand public inquiries and filed seven formal complaints — all of which were dismissed.[^53] The Commission's membership is appointed by the Supreme Court it is tasked with overseeing.[^54] It has one staff member. It operates under total confidentiality, which means there is no public record of what evidence was considered, by whom, under what standard, and with what conflicts of interest among the commissioners themselves.[^55]
 
-Wilson Loo was a Commissioner on this body while serving as a per diem judge.[^56] He was subject to oversight and participant in it simultaneously. He retired before the ninety-day clock on any final complaint could be meaningfully adjudicated. The Commission closed the door.
+Wilson Loo was a Commissioner on this body while serving as a per diem judge.[^56] He was subject to oversight and participant in it simultaneously. He retired before the ninety-day clock on any final complaint could be meaningfully adjudicated. The Commission closed its review path.
 
-The DOJ Public Integrity Section, as of this writing, has acknowledged receipt of the referral and communicated nothing further.[^57] The Section, which once employed more than thirty attorneys, has been reduced to approximately five, and its authority to file new cases and its gatekeeping role over public-corruption prosecutions have been suspended or constrained under the current administration.[^58] The FBI's elite public corruption squad has been disbanded.[^59] The Honolulu Field Office operates in an environment shaped by the professional network that passed through Charles Marsland's Organized Crime Unit in the early 1980s — the same unit where Wilson Loo built his prosecutorial career alongside colleagues who subsequently occupied every major prosecutorial position in the state, including Edward Kubo Jr., who served as U.S. Attorney for the District of Hawaii from 2001 through 2009.[^60]
-
-Individuals from the same prosecutorial cohort, in other words, later held senior roles in Hawaii's federal prosecutorial ecosystem, including the U.S. Attorney's Office for the District of Hawaii.
+The DOJ Public Integrity Section, as of this writing, has acknowledged receipt of the referral and communicated nothing further.[^57] The Section, which once employed more than thirty attorneys, has been reduced to approximately five, and its authority to file new cases and its gatekeeping role over public-corruption prosecutions have been suspended or constrained under the current administration.[^58] The FBI's elite public corruption squad has been disbanded.[^59] Those resource facts supply the primary explanation this article considers for federal non-action. Loo's early prosecutorial work is background context only; public records reviewed for this article do not establish that any former colleague, federal official, or prosecutorial cohort influenced DOJ or FBI handling of the referral.
 
 ---
 
 ## What Non-Action Means
 
-There is a version of this story in which nothing I have documented is sinister. Federal law enforcement is understaffed, politically constrained, and perpetually triaging. A retired per diem judge who made somewhere between ten and twenty-five thousand dollars a year in judicial work is not the kind of target that moves any field office's metrics. The DOJ Public Integrity Section has been gutted. The elite corruption squad is gone. These are structural conditions that produce inaction across many cases, not just this one.
+The ordinary explanation requires no improper influence. Federal law enforcement is understaffed, politically constrained, and perpetually triaging. A retired per diem judge who made somewhere between ten and twenty-five thousand dollars a year in judicial work presents a low-yield target by field-office metrics. The DOJ Public Integrity Section has been sharply reduced. The elite corruption squad is gone. These are structural conditions that produce inaction across many cases, including this one.
 
-That version of the story is probably true in part. It is not the whole story.
+That boring version of the story may explain part or all of federal non-action.
 
-Because the whole story includes this: the public record suggests the case against Wilson Loo presents an unusually narrow set of factual questions. The witness is identified in the public record. The prosecution theory is published in sufficient detail to serve as a briefing memo. The documentary evidence — a text message reading "I took the acid," admitted into the December 2, 2022 proceeding before Loo himself — is in a sealed court file.[^61] Two prior law enforcement reports, one from the DEA and one from the Honolulu Police Department's Narcotics and Vice Division, documented the factual predicate before the trial date.[^62] Standard investigative steps — interview the witness, obtain the sealed audio, evaluate the evidence, and test any denial against motive, line of sight, specificity, and the surrounding record — would confirm or falsify the relevant legal theories.
+The public record also suggests the case against Wilson Loo presents a narrow set of factual questions. The witness is identified in the public record. The prosecution theory is published in sufficient detail to serve as a briefing memo. The documentary evidence — a text message reading "I took the acid," admitted into the December 2, 2022 proceeding before Loo himself — is in a sealed court file.[^61] Two prior law enforcement reports, one from the DEA and one from the Honolulu Police Department's Narcotics and Vice Division, documented the factual predicate before the trial date.[^62] Standard investigative steps — interview the witness, obtain the sealed audio, evaluate the evidence, and test any denial against motive, line of sight, specificity, and the surrounding record — would confirm, narrow, or falsify the relevant legal theories.
 
-One or two FBI agents. A car. A door.
+Those are ordinary investigative steps.
 
-Three years without communicated federal action opens a narrower inquiry: whether network density in the institutions that would need to act can itself produce a protection effect. Federal silence is consistent with several explanations, including triage, declination, under-resourcing, evidentiary concerns, or institutional reluctance. This article argues that network density is a material explanation, not the only possible one.
+Three years without communicated federal action opens a narrower inquiry: whether network density in the institutions that would need to act can contribute to non-prioritization. Federal silence is consistent with several explanations, including triage, declination, under-resourcing, evidentiary concerns, jurisdiction, proof of willfulness, sealed-record access, or institutional reluctance. This article treats network density as material context for institutional reluctance. It is one possible explanation among several, and federal motive remains unestablished without agency records, communications, or testimony.
 
-The inference advanced here is ambient impunity through cumulative institutional density: knowing who sits on which board, who chaired what committee, and who governs alongside whom on the body that advises the DOD institution down the road from your field office.
+The inference advanced here is public-review risk through cumulative institutional density: knowing who sits on which board, who chaired what committee, and what public conflict-screening records exist when a low-priority referral intersects with prominent local institutions.
 
-### What This Investigation Cannot Establish
+### Limits of the Public Record
 
-This investigation presents a structural argument. It does not — and cannot, from public records alone — establish that any individual acted to obstruct or delay prosecution. The following alternative explanations deserve genuine engagement:
+This investigation presents a structural argument from public records. It documents institutional density, federal review questions, and ordinary investigative steps that remain available. Public records alone leave unresolved whether any individual acted to obstruct or delay prosecution. The following alternative explanations deserve genuine engagement:
 
 1. **The federal theory may be incomplete.** The series previously relied on 18 U.S.C. § 1622 (subornation of perjury) as its sole federal theory. That statute's jurisdictional reach to state-court perjury is a genuine legal question — which is why this investigation now identifies § 242 (deprivation of rights under color of law) as the primary theory. But a reader would be justified in noting that the legal framework has shifted, and in asking whether the current framework will prove more durable than the last.
 
 2. **DOJ may have evaluated the referral and declined on the merits.** The Section could have assessed the evidence, concluded the case was not prosecutable — understaffing, evidence quality, witness cooperation uncertainty — and declined without communicating reasons. Non-communication is standard DOJ practice for declined referrals.
 
-3. **A defense attorney would challenge the audio-only limitation.** The nod occurred in a courtroom with sworn officers present — court reporter, clerk, and potentially a bailiff — but the hearing was recorded audio-only, producing no video. A defense attorney would argue that the absence of video makes the nod harder to prove at trial, and that Loo's interruption of the objection was a routine exercise of courtroom control rather than evidence of rights deprivation. The sealed audio of the cut-off and any testimony from people present would be weighed against motive, line of sight, specificity, the courtroom layout, and the documentary record.
+3. **A defense attorney would challenge the audio-only limitation.** The nod occurred in a courtroom with sworn officers present — court reporter, clerk, and potentially a bailiff — but the hearing was recorded audio-only, producing no video. A defense attorney would argue that the absence of video makes the nod harder to prove at trial, and that Loo's interruption of the objection was a routine exercise of courtroom control. The sealed audio of the cut-off and any testimony from people present would be weighed against motive, line of sight, specificity, the courtroom layout, and the documentary record.
 
-4. **Network density may correlate with but not cause inaction.** The Luke family's institutional footprint is documented. The inference that this footprint produces ambient impunity is structural, not proven. Correlation between institutional density and prosecutorial non-action is not evidence of causation.
+4. **Network density may correlate with inaction.** The Luke family's institutional footprint is documented. The inference that this footprint contributes to institutional reluctance is structural. Causation requires additional evidence.
 
-5. **Triage alone may be a sufficient explanation.** A retired per diem judge earning between ten and twenty-five thousand dollars a year in judicial work is low-priority by any field office's metrics. The DOJ Public Integrity Section has been gutted. The FBI's elite corruption squad is disbanded. These resource constraints produce non-action across many cases, not just this one.
+5. **Triage alone may be a sufficient explanation.** A retired per diem judge earning between ten and twenty-five thousand dollars a year in judicial work is low-priority by any field office's metrics. The DOJ Public Integrity Section has been sharply reduced. The FBI's elite corruption squad is disbanded. These resource constraints produce non-action across many cases, not just this one.
 
-This investigation argues that the structural explanation — while not excluding any of these alternatives — is the most complete account of the evidence. But the reader should weigh all five.
+The structural explanation can be material without excluding those alternatives. Network density is a context variable and should be weighed alongside triage, evidentiary limits, sealed-record access, jurisdiction, and resource constraints. Causation requires additional evidence.
 
-Warren Luke served nine years on the Federal Reserve Bank of San Francisco's board and chaired its audit committee.[^63] He is a trustee of a Department of Defense foundation.[^64] He governs a security policy institution alongside two retired Pacific Fleet commanders.[^65] His son ran Hawaii's campaign finance enforcement body for years while simultaneously running the family bank.[^66] His sister's husband clerked for the same federal judge as the man who became Chief Justice of the state supreme court and held appointment authority over the judge's continued service.[^67] The family's general counsel is the son of a former judge who sat on the bank's board.[^68] The chairman of Honolulu's leading business newspaper sat on the bank's board for sixteen years.[^69]
+### Claim Boundary
 
-None of that is necessarily a crime. All of it is a structure.
+The actionable claim is limited: the public record identifies disclosure, recusal, and triage-review questions. It does not establish control, direction, obstruction, DOJ knowledge, FBI knowledge, or any instruction to decline or delay the Wilson Loo referral. Those stronger claims would require agency records, communications, witness testimony, conflict logs, recusal records, or other direct evidence.
 
-None of the individuals named in this article are accused of wrongdoing. Their board memberships, professional relationships, and institutional roles are matters of public record, disclosed and lawful. The argument here is structural, not personal: legitimate relationships, in sufficient density, produce institutional inertia without any individual needing to act corruptly.
+Ordinary resource triage remains the primary public-record explanation for federal non-action. Reuters and other reporting on the DOJ Public Integrity Section's staffing collapse, combined with the reported disbanding of the FBI's elite public-corruption squad, supply the strongest documented explanation currently available.[^58][^59] Governance proximity is a safeguard question, not a substitute for proof of federal motive.
 
-The structure is this investigation's subject. The public record suggests it is a material reason standard investigative steps may not have been taken. And the clock is still running.
+### External Method Check
+
+Subsequent public reporting on the Sylvia Luke / $35,000 paper-bag matter made governance-proximity and conflict-screening questions independently reviewable in another Hawaii accountability context. That later reporting does not prove FBI reluctance, DOJ triage motive, any connection to Wilson Loo, or any improper act by the people listed below. It is a limited method check: public-record topology can identify conflict-screening surfaces before an institution publicly explains how it handled them.
+
+### Public-Record Review Surface
+
+| Public-record relationship | Why it matters for review | What it does not prove | Record that would resolve or narrow it |
+|---|---|---|---|
+| Warren Luke served nine years on the Federal Reserve Bank of San Francisco's board and chaired its audit committee.[^63] | Federal banking governance proximity can raise disclosure and safeguard questions when a related local matter intersects with federal review. | It does not prove federal influence, agency reluctance, or communication with DOJ or FBI. | FRBSF conflict policies, correspondence, recusal logs, or records showing no relevance to the referral. |
+| Warren Luke is a trustee of the APCSS Foundation, which supports a Department of Defense institution.[^64] | DOD-adjacent civic governance may be relevant to small-state professional proximity and conflict-screening review. | It does not prove DOD involvement, federal protection, or knowledge of the Loo matter. | Foundation minutes, conflict policies, federal liaison records, or records showing no relation to the matter. |
+| Warren Luke governs a security policy institution alongside two retired Pacific Fleet commanders.[^65] | The relationship identifies a security-policy governance surface in the same local federal environment. | It does not prove influence over FBI, DOJ, or any operational decision. | Board records, conflict-screening policies, or agency records showing whether the relationship was known or irrelevant. |
+| Bryan Luke ran Hawaii's campaign finance enforcement body while also running the family bank.[^66] | Simultaneous enforcement and banking roles create public conflict-screening questions in matters involving political money and local governance. | It does not prove misconduct, favoritism, or non-enforcement in any specific case. | Campaign Spending Commission recusal logs, enforcement dockets, staff memos, and conflict-review records. |
+| Wilson Loo clerked for the same federal judge as the later Chief Justice with appointment authority over per diem judges.[^67] | Shared clerkship and appointment authority are relevant to judicial appointment and recusal-review questions. | It does not prove bias, protection, or improper appointment handling. | Judiciary appointment files, screening notes, conflict disclosures, and recusal records. |
+| The family bank's general counsel is the son of a former judge who sat on the bank's board.[^68] | The relationship maps legal, judicial, and bank-governance proximity relevant to disclosure review. | It does not prove coordination or any effect on court or federal review. | Bank governance files, counsel role records, judicial disclosure records, and conflict-screening materials. |
+| The chairman of Honolulu's leading business newspaper sat on the bank's board for sixteen years.[^69] | Media/business governance overlap can be relevant to coverage and conflict-screening questions. | It does not prove editorial control, non-publication motive, or newsroom direction. | Newsroom recusal policies, editorial records, board-disclosure policies, or published explanation. |
+
+### Falsifiable Review Questions
+
+This article would narrow materially if records showed any of the following:
+
+- DOJ investigated the referral and declined it on the merits.
+- DOJ or FBI reviewed the sealed audio, the text exhibit, and relevant witness questions before declining or taking no action.
+- Recusal, safeguard, or conflict-review logs exist for any public-record overlap material to the referral.
+- The public-record relationships described here were screened, disclosed, or deemed immaterial through documented procedures.
+- Standard federal triage, evidentiary limits, sealed-record access, jurisdiction, or proof-of-willfulness concerns fully explain the referral status.
+
+The remaining procedural ask is narrow: identify who reviewed the referral, whether any conflict or recusal safeguard applied, whether the sealed record was reviewed, and whether the matter was declined on the merits.
+
+The investigation's subject is structure: public governance proximity, federal triage, and a remaining limitations period in which standard investigative steps remain available.
+
+The PRC-facing records in [The Bridges](/investigation/the-bridges/) are a separate access-and-safeguards portfolio. They are not evidence that any foreign actor participated in or influenced the Wilson Loo matter.
 
 ---
 
@@ -443,9 +474,11 @@ The structure is this investigation's subject. The public record suggests it is 
 
 ---
 
-**Disclosure and Scope:** No comment was requested from individuals or institutions named in this article prior to publication; outreach was deferred due to safety and source-protection constraints. Institutions and individuals may respond at [Inquire@GTCode.com](mailto:inquire@gtcode.com). This investigation is based entirely on public records, government filings, and primary-source documents. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. Where sealed or non-public material is mentioned, it is described conditionally. The conclusions in this article do not depend on accepting any undisclosed evidence as true.
+**Disclosure and Scope:** No comment was requested from individuals or institutions named in this article prior to publication; outreach was deferred due to safety and source-protection constraints. Institutions and individuals may respond at [Inquire@GTCode.com](mailto:inquire@gtcode.com). This investigation is based entirely on public records, government filings, and primary-source documents. The author may possess additional non-public information that is withheld to protect sources, safety, or lawful investigative constraints. Sealed or non-public material is described conditionally. The public-record conclusions in this article rest on cited records.
 
-**What Would Falsify This:** If the Department of Justice has investigated the referral and declined on the merits, confirmation of that fact would materially alter this investigation's structural thesis. If recusal or safeguard records exist for any of the institutional overlaps documented here — FRBSF board service, judicial appointments, Commission on Judicial Conduct participation — their production would narrow or resolve specific claims. If any individual named herein can demonstrate that the relationships described were subject to appropriate disclosure or ethics review, this outlet will publish corrections. The purpose of this investigation is to identify questions the public record leaves open; answers that close them are invited.
+## What Would Falsify This
+
+If the Department of Justice has investigated the referral and declined on the merits, confirmation of that fact would materially alter this investigation's structural thesis. If recusal or safeguard records exist for any of the institutional overlaps documented here — FRBSF board service, judicial appointments, Commission on Judicial Conduct participation — their production would narrow or resolve specific claims. If any individual named herein can demonstrate that the relationships described were subject to appropriate disclosure or ethics review, this outlet will publish corrections. The purpose of this investigation is to identify questions the public record leaves open; answers that close them are invited.
 
 ---
 
@@ -455,7 +488,7 @@ The structure is this investigation's subject. The public record suggests it is 
 
 [^2]: DOJ Public Integrity Section, acknowledgment of referral received by author. On file.
 
-[^3]: Ekewaka Lono, "The Two Questions: How One Interview Closes the Wilson Loo Case," Oahu Underground / gtcode.com, February 23, 2026. https://gtcode.com/investigation/the-two-questions/
+[^3]: Ekewaka Lono, "The Two Questions: How One Interview Could Test the Wilson Loo Case," Oahu Underground / gtcode.com, February 23, 2026. https://gtcode.com/investigation/the-two-questions/
 
 [^4]: Warren K.K. Luke official biography, Pacific Basin Economic Council. https://www.pbec.org/team-showcase/mr-warren-k-k-luke/ ([archival copy](/sources/the-federal-layer/PBEC_WarrenLuke_Profile.html))
 
@@ -568,8 +601,6 @@ The structure is this investigation's subject. The public record suggests it is 
 [^58]: DOJ Public Integrity Section staffing: Reuters, "How Trump defanged the Justice Department's political corruption watchdogs," June 9, 2025. Reuters reported the Section reduced from more than 30 attorneys to approximately 5, with at least 28 staff departures; the Section's authority to file new cases and its gatekeeping role over public-corruption prosecutions suspended or constrained. See also Washington Post, May 17, 2025. ([archival copy](/sources/the-federal-layer/Reuters_DOJ_PublicIntegrity_2025.html))
 
 [^59]: FBI elite public corruption squad disbanding: Reuters, "How Trump defanged the Justice Department's political corruption watchdogs," June 9, 2025; AP News reporting on FBI restructuring under current administration.
-
-[^60]: Edward Kubo Jr. served as U.S. Attorney for the District of Hawaii 2001–2009. His service in the Marsland-era Organized Crime Unit at the same time as Wilson Loo (1980–1984): established through separate research. Wilson Loo's OC Unit tenure: mediation.com biography (primary). ([archival copy](/sources/the-federal-layer/Mediation_WilsonLoo.html))
 
 [^61]: Text message "I took the acid" was introduced as exhibit in the December 2, 2022 proceeding. On file with the court; record is sealed. Author was a party to the proceeding.
 

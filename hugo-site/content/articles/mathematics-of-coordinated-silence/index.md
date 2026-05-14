@@ -23,7 +23,7 @@ ai_agent_meta:
   prompt_version: v2026-02-04
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document examines how computational systems detect coordinated institutional silence -- the measurable patterns that emerge when institutions coordinate to suppress information. It is published in the Articles section of GTCode.com and provides methodological context for the site's /investigation section.
 

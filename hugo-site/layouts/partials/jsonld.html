@@ -209,6 +209,37 @@
     {{- $data = merge $data (dict "keywords" $sdPage.keywords) -}}
   {{- end -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
+  {{- $schemaTitle := .Title -}}
+  {{- if eq .Kind "taxonomy" }}{{ $schemaTitle = "Tags" }}{{ end -}}
+  {{- $headline := partial "seo/plaintext.html" (dict "value" $schemaTitle "max" 110) -}}
+  {{- $descriptionSource := "" -}}
+  {{- if eq .Kind "term" -}}
+    {{- $termCount := len .Pages -}}
+    {{- $termLabel := cond (eq $termCount 1) "page" "pages" -}}
+    {{- $descriptionSource = printf "Browse %d GTCode %s tagged %s across investigations, articles, reports, guides, and software repository documentation." $termCount $termLabel .Title -}}
+  {{- else -}}
+    {{- $descriptionSource = "Browse GTCode topic pages across investigations, articles, reports, policy notes, guides, and software repository documentation." -}}
+  {{- end -}}
+  {{- $description := partial "seo/plaintext.html" (dict "value" $descriptionSource "max" $jsonldDescMax) -}}
+  {{- $lastmod := .Lastmod -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+  {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end -}}
+  {{- $modified := $lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $language := .Lang | default "en" -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" "CollectionPage"
+        "name" $headline
+        "headline" $headline
+        "description" $description
+        "url" $pageURL
+        "dateModified" $modified
+        "inLanguage" $language
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" $siteRoot)
+        "about" (slice $schemaTitle "GTCode topics")
+    -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if and (eq .Kind "section") (eq .Section "news") -}}
   {{- $headline := partial "seo/plaintext.html" (dict "value" .Title "max" 110) -}}
   {{- $description := partial "seo/plaintext.html" (dict "value" (.Description | default (.Summary | default .Site.Params.description)) "max" $jsonldDescMax) -}}
@@ -352,9 +383,37 @@
   {{- else -}}
     {{- $data = merge $data (dict "url" $pageURL) -}}
   {{- end -}}
-  {{- if not $isSyndicatedNews }}
-    {{- $data = merge $data (dict "potentialAction" (dict "@type" "InteractAction" "target" $pageURL)) -}}
-  {{- end }}
-<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
-{{- end -}}
-{{- end -}}
+	  {{- if not $isSyndicatedNews }}
+	    {{- $data = merge $data (dict "potentialAction" (dict "@type" "InteractAction" "target" $pageURL)) -}}
+	  {{- end }}
+	<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+	{{- else if .IsPage }}
+	  {{- $headline := partial "seo/plaintext.html" (dict "value" .Title "max" 110) -}}
+	  {{- $description := partial "seo/plaintext.html" (dict "value" (.Description | default (.Summary | plainify | truncate 220)) "max" $jsonldDescMax) -}}
+	  {{- $published := "" -}}
+	  {{- if not .PublishDate.IsZero }}{{ $published = .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}{{ end -}}
+	  {{- if and (eq $published "") (not .Date.IsZero) }}{{ $published = .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ end -}}
+	  {{- $lastmod := .Lastmod -}}
+	  {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+	  {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end -}}
+	  {{- $modified := $lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+	  {{- $schemaType := "WebPage" -}}
+	  {{- if in (slice "articles" "papers" "reports") .Section }}{{ $schemaType = "Article" }}{{ end -}}
+	  {{- $data := dict
+	        "@context" "https://schema.org"
+	        "@type" $schemaType
+	        "headline" $headline
+	        "name" $headline
+	        "description" $description
+	        "url" $pageURL
+	        "dateModified" $modified
+	        "inLanguage" (.Lang | default "en")
+	        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" $siteRoot)
+	    -}}
+	  {{- if ne $published "" }}{{ $data = merge $data (dict "datePublished" $published) }}{{ end -}}
+	  {{- if eq $schemaType "Article" -}}
+	    {{- $data = merge $data (dict "author" (dict "@type" "Person" "name" $author) "publisher" (dict "@type" "Organization" "name" $siteName "url" $siteRoot "logo" (dict "@type" "ImageObject" "url" $siteLogo "width" 180 "height" 180)) "mainEntityOfPage" (dict "@type" "WebPage" "@id" $pageURL) "wordCount" .WordCount "isAccessibleForFree" true) -}}
+	  {{- end -}}
+	<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+	{{- end -}}
+	{{- end -}}

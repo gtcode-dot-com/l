@@ -6,7 +6,7 @@ ai_agent_meta:
   prompt_version: v2025-12-19
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document introduces the Global Cognitive Brain (GCB) architecture, a bio-inspired framework for organizing distributed AI agents into coherent cognitive organisms. It is published in the Articles section of GTCode.com alongside other technical research articles.
 

@@ -6,11 +6,11 @@ seo_title: "Exhibit A — Federal Intervention in Hawaii [Archived]"
 subtitle: "This article has been superseded by the records-first investigation series"
 description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/investigation/."
 date: 2025-08-20
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "August 20, 2025"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/exhibit-a-federal-intervention-hawaii/"
@@ -37,7 +37,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-20T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Federal Intervention"
@@ -54,7 +54,7 @@ twitter_image_alt: "Exhibit A — federal intervention argument for Hawaii insti
 
 # Agentic Context
 agentic_comment: |
-  ARCHIVAL NOTE (UPDATED 12 MAY 2026):
+  ARCHIVAL NOTE (UPDATED 13 MAY 2026):
   This article has been retired. Its RICO-enterprise framing does not meet the records-first epistemic standard adopted across the investigation series beginning February 2026.
 
   The core factual record — the December 2, 2022 hearing, the Commission's 90-day loophole, HPD non-investigation, the sealed record — continues through successor pieces that distinguish public record, firsthand testimony, and inference:
@@ -62,11 +62,11 @@ agentic_comment: |
   - The Zero Commission (judicial oversight failure, public-record basis)
   - The Paper Bag (executive branch self-investigation, public-record basis)
   - The Two Questions (prosecution roadmap, conditional framing)
-  - The Shape of the Cage (structural model, cross-jurisdictional evidence)
+  - Mechanisms of Review Failure (general mechanism library; not case evidence)
   - The Closed Loop (series overview)
-  - The Aloha Protection Racket (revised: records-first rewrite; structural-protection metaphor, not a proved RICO enterprise)
+  - The Shield Effect (revised records-first treatment of reduced accountability)
 
-  Original text preserved in version-control history.
+  May 13 revision clarifies that successor publications, not this archive page, are the canonical records-first treatment. Original text preserved in version-control history.
 
 # Structured Data
 structured_data:
@@ -80,7 +80,7 @@ structured_data:
   description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/investigation/."
   image: "/img/ou-exhibit-a-og-1200x630.jpg"
   datePublished: "2025-08-20T00:00:00Z"
-  dateModified: "2026-05-12T00:00:00Z"
+  dateModified: "2026-05-13T00:00:00Z"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"
@@ -99,21 +99,23 @@ structured_data:
 ---
 ## Archival Notice
 
-This article was retired on February 25, 2026. Its original framing — presenting the documented record as a federal RICO case — does not meet the records-first epistemic standard adopted across this investigation series.
+This article was retired on February 25, 2026. Its original framing — presenting the documented record as a federal RICO case — exceeded the records-first epistemic standard adopted across this investigation series.
 
 The RICO framework claimed conclusions that exceed what the published evidence supports without independent corroboration. The core factual record remains sound: the December 2, 2022 hearing in Hawaiʻi's First Circuit Court, the Commission on Judicial Conduct's 90-day jurisdictional loophole, HPD's pattern of non-investigation, and the sealed court file. That record now continues through pieces that distinguish evidence types and use conditional language where claims depend on sealed or unverified material.
+
+May 13 clarification: this page is an archive marker. The successor articles are the current records-first treatment: they identify records, process gaps, ordinary explanations, and testable questions. Any coordinated-enterprise theory would require evidence beyond this archived framing.
 
 ### Successor Publications
 
 | File | Focus |
 | --- | --- |
 | [The Two Questions](/investigation/the-two-questions/) | Prosecution roadmap: one witness, two questions, 18 U.S.C. § 242 / § 1622 |
-| [The Nod](/investigation/the-nod-wilson-loo-silent-felony/) | Alleged visual signaling and the audio-confirmable courtroom sequence — editorial account |
+| [The Nod](/investigation/the-nod-visual-allegation-audio-sequence/) | Alleged visual signaling and the audio-confirmable courtroom sequence — editorial account |
 | [The Zero Commission](/investigation/the-zero-commission/) | Judicial oversight failure — public-record basis |
 | [The Paper Bag](/investigation/the-paper-bag-and-the-architecture-of-self-investigation/) | Executive branch self-investigation |
-| [The Shape of the Cage](/investigation/the-shape-of-the-cage/) | Structural model — seven-layer accountability-failure framework |
+| [Mechanisms of Review Failure](/investigation/the-shape-of-the-cage/) | General mechanism library and vocabulary |
 | [The Closed Loop](/investigation/the-closed-loop/) | Series overview |
-| [The Aloha Protection Racket](/investigation/aloha-protection-racket/) | Revised: records-first rewrite; structural-protection metaphor |
+| [The Shield Effect](/investigation/aloha-protection-racket/) | Revised records-first treatment of reduced accountability |
 
 The original text of this article is preserved in the site's version-control history.
 

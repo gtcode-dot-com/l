@@ -2,24 +2,24 @@
 title: "Cartography for Guppies"
 slug: cartography-for-guppies
 date: 2026-02-05
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: Ekewaka Lono
 draft: false
 type: "investigation"
 seo_title: "Cartography for Guppies — A Publisher's Note from Oahu Underground"
 subtitle: "A Publisher's Note"
 published_display: "February 5, 2026"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 eyebrow: "Publisher's Note"
-card_summary: "Why a guppy with a laptop is mapping the sharks — and how to read the map."
-description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground, an independent investigative journalism project mapping institutional power networks in Hawaiʻi through public records."
+card_summary: "How to read Oahu Underground: public records first, process failures second, and clear boundaries between fact, firsthand account, context, and inference."
+description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground, an independent investigative journalism project using public records, evidence categories, and process questions."
 weight: 1
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/cartography-for-guppies/"
 robots: "index, follow, max-image-preview:large"
 
-meta_description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground — independent investigative journalism mapping institutional power in Hawaiʻi."
+meta_description: "Publisher's note from Ekewaka Lono introducing Oʻahu Underground — independent investigative journalism using public records, evidence categories, and process questions."
 meta_keywords:
   - Oahu Underground
   - publisher's note
@@ -29,7 +29,7 @@ meta_keywords:
 
 # Open Graph
 og_title: "Cartography for Guppies — A Publisher's Note"
-og_description: "Why a guppy with a laptop is mapping the sharks — and how to read the map. Publisher's note introducing Oʻahu Underground."
+og_description: "How to read Oahu Underground: public records first, process failures second, and clear boundaries between fact, firsthand account, context, and inference."
 og_image: "/img/ou-cartography-for-guppies-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -39,7 +39,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-05T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Oahu Underground"
@@ -51,34 +51,34 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Cartography for Guppies — A Publisher's Note"
-twitter_description: "Why a guppy with a laptop is mapping the sharks. Publisher's note introducing Oʻahu Underground."
+twitter_description: "Publisher's note explaining Oahu Underground's public-record method and evidence boundaries."
 twitter_image: "/img/ou-cartography-for-guppies-og-1200x630.jpg"
 twitter_image_alt: "Oahu Underground — Cartography for Guppies publisher's note"
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
-  This document is the publisher's note for Oʻahu Underground, an independent investigative journalism project by Ekewaka Lono (pen name) documenting institutional power networks in Hawaiʻi through public records.
+  This document is the publisher's note for Oʻahu Underground, an independent investigative journalism project by Ekewaka Lono (pen name) documenting accountability questions through public records, evidence categories, and process analysis.
 
   DOCUMENT PURPOSE:
-  "Cartography for Guppies" establishes the editorial methodology and framework for the investigation series. It introduces the "shark/guppy" metaphor explaining why mainstream media cannot cover certain networks, and describes the evidentiary approach: every claim built from publicly available records — financial disclosures, board rosters, donor lists, court filings.
+  "Cartography for Guppies" establishes the editorial methodology and framework for the investigation series. As revised on May 13, 2026, it explains the procedural-minimalist standard: public records first, process failures second, and clear boundaries between documented fact, firsthand account, sealed-record-dependent claim, context, inference, and hypothesis.
 
   KEY POINTS:
-  - Author presented a documented dossier to Honolulu Civil Beat in early 2025; initial interest was followed by silence — the story "was never born"
-  - Civil Beat's structural conflict environment is explained through donor relationships and board overlaps (Pierre Omidyar and Warren Luke overlapping 12 years on Punahou board)
+  - Author presented a documented dossier to Honolulu Civil Beat in early 2025; initial interest was followed by non-publication
+  - Civil Beat's structural conflict environment is discussed through donor relationships and board overlaps (Pierre Omidyar and Warren Luke overlapping 12 years on Punahou board), without asserting newsroom motive or coordination
   - The methodology prioritizes undeniable public records first, establishing credibility before presenting harder-to-verify firsthand testimony
-  - Each investigation maps connections: financial disclosures → board seats → oversight bodies → courtrooms → media that should cover them
+  - Each investigation places records, events, gaps, ordinary explanations, and testable questions beside each other without treating adjacency as proof of coordination
 
   EDITORIAL PRINCIPLE:
-  "Earn the reader's trust with undeniable public records first, then spend that trust on harder-to-verify claims later." The investigation series builds from documentary evidence to firsthand testimony in a deliberate sequence.
+  "Earn the reader's trust with undeniable public records first, then label harder-to-verify claims precisely." The investigation series builds from documentary evidence to firsthand testimony in an ordered sequence.
 
   CONTEXT WITHIN INVESTIGATION SERIES:
   - THIS DOCUMENT: Publisher's note and methodology
-  - The Zone of Politeness: Media conflict environment and the Civil Beat donor/network-overlap record
+  - The Coverage Gap: Media non-coverage and civic-overlap record
   - Wilson Loo Investigation: Judicial misconduct (December 2, 2022 hearing)
-  - Institutional Accountability Failure: "Symbiotic decay" structural model
-  - The Aloha Protection Racket: Prosecutorial narrative using a structural-protection metaphor, not a proved RICO enterprise
+  - Hawaii Accountability Gaps: Modular review-failure case study
+  - The Shield Effect: Reports filed, review missing, and the practical result of reduced accountability
   - Exhibit A: Archived federal intervention argument superseded by records-first successor reporting
   - The Nod: Editorial account of alleged visual signaling and the audio-confirmable court sequence
 
@@ -97,7 +97,7 @@ structured_data_graph:
       description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
       image: "/img/ou-cartography-for-guppies-og-1200x630.jpg"
       datePublished: "2026-02-05T00:00:00Z"
-      dateModified: "2026-05-12T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -119,29 +119,41 @@ structured_data_graph:
 
 ---
 
-I am one person with a laptop on the North Shore of Oʻahu, mapping a network that includes a Federal Reserve director, the founding family of Hawaiʻi's only nationally chartered bank, a judge who sat on the commission that polices judges, and the billionaire who owns the state's investigative newsroom. They have endowed chairs, named buildings, and thirty-one million dollars in foundation assets. I have a domain name.
+I am one person with a laptop on the North Shore of Oʻahu, reading public records about institutions that usually encounter each other behind closed doors: financial disclosures, board rosters, donor lists, court filings, legislative testimony, annual reports, and appellate opinions.
 
-This is not a fair fight. It was never supposed to be.
+The reader's task is procedural: look at the records, the process gaps, and the places where ordinary institutions failed to produce reviewable answers. The site advances testable institutional questions and avoids a single master explanation.
 
-The thing about sharks is they don't need to coordinate. They don't hold meetings. They just swim in the same water, eat the same food, and leave the same things alone. A guppy doesn't need to understand shark psychology to map the currents. He just needs to watch what doesn't get eaten.
+That distinction controls the method. A public record showing two people on the same board establishes overlap and raises safeguard questions. A sealed audio file can test timing around an alleged visual courtroom event, while eyewitness testimony remains the source for the visual claim. A newsroom's non-publication decision can have structural consequences, even when motive remains unresolved. A platform-indexing anomaly can reduce visibility while leaving technical cause and human intent open.
 
-That's what Oʻahu Underground is: a current map. Every issue of this magazine is built from the same materials available to any journalist in the state — financial disclosures filed with the Ethics Commission, board rosters published by the organizations themselves, donor lists the nonprofits post voluntarily, appellate opinions the courts put online. I'm not hacking databases. I'm *reading* them. The network isn't hidden. It's just that nobody with a masthead has any incentive to draw the lines between the dots.
+The editorial method is procedural minimalism: state what happened, identify the record that proves or tests it, present the ordinary explanation first, and separate inference from fact. The institution is the protagonist. The author is the witness, complainant, or stress-test subject.
 
-I learned this the hard way. In early 2025, I brought a dossier to Honolulu Civil Beat — documented conflicts of interest, public filings, the works. The initial response was interest. What followed was silence. Not rejection. Not "we looked into it and it doesn't hold up." Just: nothing. The story was never born.
+## The Shortest Path Rule
 
-Then I understood. Civil Beat may be structurally poorly positioned to investigate the Luke family for the same reason a fish can't investigate water. The publisher sat on the same school board as the bank chairman for twelve years. The family donates to the newsroom. A former bank security officer writes for the site. These aren't accusations of corruption — they're the topology of a small state. But topology has consequences. You don't bite the hand that passes the breadbasket at the Punahou trustees' dinner.
+The volume is controlled by a rule: use the shortest evidentiary path between the reported event and the accountable process. Some files require detail because the accountable process is opaque. Detail should still serve a defined evidentiary function: record, process, decision-maker, deadline, conflict screen, or test. Details outside that function belong in background.
 
-So here I am. A guppy with a map.
+I know a many-part institutional autopsy can look disproportionate from the outside. It is disproportionate in the same way the process is disproportionate: one form letter can close a complaint, while showing why that closure matters may require reconstructing the office, rule, record, deadline, conflict screen, and appeal path that produced it.
 
-The advantage of being small is that nobody needs to protect you and nobody needs to flatter you. I don't have donors whose feelings I need to manage. I don't have board relationships that make certain phone calls awkward. The only currency I have is whether the documents I cite are real and whether the connections I draw are accurate. Corrections are invited and will be published for any documented error.
+I learned why that discipline matters the hard way. In early 2025, I brought a dossier to Honolulu Civil Beat — documented conflicts of interest, public filings, and a broader accountability story. The initial response was interest. What followed was non-publication. There are ordinary explanations for that: limited newsroom resources, legal risk, editorial judgment, verification difficulty, complexity, and competing priorities. The structural effect was still real. A story involving powerful local institutions did not receive public review from the state's most visible investigative newsroom.
 
-Each issue of this magazine will do one thing: take publicly available records and show you what they look like when you lay them next to each other. Issue by issue, the map gets more detailed. The financial disclosures connect to the board seats. The board seats connect to the oversight bodies. The oversight bodies connect to the courtrooms. The courtrooms connect to the press that should be covering them but may be institutionally unable or unwilling to do so.
+Oʻahu Underground exists to make those review gaps visible. The only currency here is whether the documents cited are real, whether firsthand claims are labeled, whether sealed-record-dependent claims are identified, and whether readers can tell what would confirm, narrow, or falsify each assertion. Corrections are invited and will be published for any documented error.
 
-I'm not asking you to accept my firsthand account of what happened in Judge Wilson Loo's courtroom on December 2, 2022 as proven by public materials alone. First I'm going to show you the system — the per diem judge model, the confidential complaint process, the 90-day loophole, the audio-only recordings — so that when I present the allegation, you can separate the public record from the sealed-record-dependent claim and the firsthand observation.
+Each investigation places records and events beside each other without asking proximity to carry the whole evidentiary burden. Financial disclosures may sit next to board seats. Board seats may sit next to oversight bodies. Oversight bodies may sit next to courtrooms. Courtrooms may sit next to media non-coverage. Each adjacency triggers a process question: what institution handled the event, what record did it create, what ordinary explanation accounts for the outcome, and what records or witness interviews would test what remains unresolved.
 
-That's the guppy strategy: make the map so detailed that the territory explains itself.
+Personal history belongs in a separate lane. The records-first investigations should stay cold: public documents, firsthand observations, sealed-record references, institutional structures, ordinary explanations, and testable questions. The author's lived chronology explains why certain events were experienced as threatening or connected. The public-record claims stand or fall on their own records, witnesses, timelines, and falsification tests.
 
-The sharks will keep swimming. They always do. But the thing about a good map is that once it exists, other people can read it too.
+The chronology uses abstracted exposure with limited disclosure. The author had public music and civic-technology visibility before these events, and some more sensitive background is intentionally withheld to protect privacy, safety, and third parties. That context explains why reputation and searchability matter. Later coordination, targeting, or restricted-information access would require actor-specific evidence.
+
+Readers should read each article as a procedural file: what record exists, what process acted, what ordinary explanation may apply, and what test would narrow the remaining dispute.
+
+The same rule applies outside the site. A journalist, agency reviewer, attorney, or researcher should evaluate a claim through a single-file audit: one anomaly, one accountable process, one set of records, one list of ordinary explanations, and one short list of steps that would confirm, narrow, or falsify the claim.
+
+How to read this site:
+
+- Read each article as its own file.
+- Identify the evidence type before accepting the inference.
+- Consider ordinary explanations first.
+- Use cross-links for source context or navigation only.
+- Treat separate portfolios as separate unless a direct evidentiary bridge is identified.
 
 Welcome to Oʻahu Underground.
 

@@ -6,7 +6,7 @@ ai_agent_meta:
   prompt_version: v2025-12-21
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document is a comprehensive technical survey of mechanistic interpretability research in large language models as of late 2025. It is part of the GTCode Research Desk's ongoing coverage of AI systems, interpretability, and safety.
 

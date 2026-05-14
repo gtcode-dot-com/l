@@ -1,8 +1,10 @@
 {{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
+{{- $homepageSourceArchivePaths := slice "/investigation/the-chain-of-custody/" "/investigation/the-barrel/" "/investigation/the-architecture-of-access/" "/investigation/the-federal-layer/" "/investigation/the-bridges/" "/investigation/the-ledger/" -}}
 {{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Section" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
+{{- $investigationPagesAll = where $investigationPagesAll ".RelPermalink" "not in" $homepageSourceArchivePaths -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationsByUpdated := sort $investigationPages "Lastmod" "desc" -}}
@@ -41,6 +43,7 @@
 
 ---
 
+{{ if .Site.Params.show_home_neutralization_stack }}
 ## Investigation Architecture
 
 ### The Seven-Layer Accountability-Failure Framework
@@ -77,6 +80,7 @@ The SECURE Act, signed into law in December 2025, broadened U.S. counterintellig
 gtcode.com/investigation/ · CC-BY-4.0 · GitHub-archived · Wayback Machine indexed
 
 ---
+{{ end }}
 
 ## GTCode Consulting
 

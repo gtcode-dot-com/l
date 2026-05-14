@@ -6,10 +6,12 @@ seo_title: "The Radius of Order — A Five-Zone American Justice Thought Experim
 subtitle: "What happens when you reverse the prison map and make the city center the most protected place in the country?"
 description: "A sourced investigation into a five-zone urban policy thought experiment that concentrates legal protection at the city core, pushes punishment outward, and asks whether America would become safer, fairer, or simply more explicit about the geography of exclusion."
 date: 2026-03-24
-lastmod: 2026-03-24
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 published_display: "March 24, 2026"
+modified_display: "May 13, 2026"
 type: "investigation"
+portfolio: "Policy Thought Experiment"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-radius-of-order/"
@@ -30,7 +32,7 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Structural Analysis"
-card_summary: "A five-ring justice map that flips the American pattern inside out: maximum protection in the urban core, negotiated autonomy in the middle, and coercive exile at the edge. The point is exposure. It lays out the geography of order in plain view."
+card_summary: "A five-ring justice map that flips the American pattern inside out: maximum protection in the urban core, negotiated autonomy in the middle, and coercive exile at the edge. The article treats the map as a policy diagnostic."
 
 # Open Graph
 og_title: "The Radius of Order"
@@ -48,6 +50,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-24T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Urban Policy"
@@ -72,7 +75,7 @@ twitter_image_alt: "The Radius of Order — investigation into a five-zone Ameri
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
   This document is a sourced structural analysis of a five-zone American urban policy thought experiment. It examines the proposal as a diagnostic instrument: what does this model reveal about punishment, spatial inequality, democratic legitimacy, mobility, and the political economy of safety?
 
@@ -103,7 +106,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-radius-of-order/"
       image: "/img/ou-radius-of-order-og-1200x630.jpg"
       datePublished: "2026-03-24T00:00:00Z"
-      dateModified: "2026-03-24T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -136,7 +139,11 @@ structured_data_graph:
           name: "United States"
 ---
 
+**Separate policy analysis:** This article is a policy thought experiment. It is unrelated to the Hawaii accountability case files, the author chronology, Bing visibility, or access-and-safeguards portfolio.
+
 Big idea. No tweaking one sentencing guideline. No stapling on another useless pilot program. Redraw the whole country as five rings.
+
+May 13 editorial note: this article is a policy thought experiment and system-design analysis using sourced analogues and explicit failure modes. It is separate from the Wilson Loo, media, federal, platform, and author-chronology investigations, and should not be used as evidence for factual allegations about any person or institution.
 
 At the center: the Platinum Standard city, dense with services, surveillance, rapid response, and full legal protection. Around it: an inner ring of humane, committee-governed detention. Then an exurban ring of managed friction. Then a rural belt of diffuse autonomy. At the edge: containment estates, robotically managed, isolated, and legally exceptional.
 
@@ -177,11 +184,11 @@ Set the rings out plainly.
 
 The core is the sales pitch. Safety first. Delay reduced to the minimum.
 
-**Zone 2: Inner Suburbs.** Democratic committee rule paired with radically humane detention. This is the zone where the proposal is most obviously borrowing from real institutional analogues.[^2][^3]
+**Zone 2: Inner Suburbs.** Democratic committee rule paired with radically humane detention. This is the zone where the proposal most directly borrows from real institutional analogues.[^2][^3]
 
 **Zone 3: Outer Suburbs and Exurbs.** Managed friction. Committees sanction limited, consensual misdemeanor-level physical dispute resolution in designated areas. Grievances can be settled inside the zone's own social compact. Conduct outside the sanctioned scope escalates inward.
 
-This is where the map starts gambling on local culture.
+At Zone 3, the map begins to depend on local culture.
 
 **Zone 4: Rural Hinterland.** Diffuse autonomy. Low formal governance. Common law and community norms dominate. Federal law mainly appears at the felony level.
 
@@ -191,7 +198,7 @@ And at the edge, the hard answer. No romance. No ambiguity.
 
 Each zone answers a different policy problem. Zone 1 promises order at the core. Zone 2 promises rehabilitation without chaos. Zone 3 promises lower formal transaction costs for low-level disputes. Zone 4 promises local autonomy. Zone 5 promises a hard containment answer without the usual corruption vector.
 
-That is also why the map is politically interesting. It offers something recognizable to several constituencies at once without forcing them to agree on a single theory of punishment.
+The map is politically interesting because it offers something recognizable to several constituencies at once without forcing them to agree on a single theory of punishment.
 
 ---
 
@@ -201,7 +208,7 @@ Lay this over the United States and the regional logic comes into focus quickly.
 
 The **Northeast** is the cleanest fit.
 
-The core cities are obvious: Manhattan, Boston proper, Center City Philadelphia, Washington inside the Beltway. The inner committee belt fits the high-capacity, civically assertive municipalities just outside them: Jersey City and Hoboken, Cambridge and Somerville, Bethesda and Silver Spring. The exurban negotiation belt reaches into the Hudson Valley, central Pennsylvania, western Massachusetts, and the Virginia piedmont. The hinterland pushes out into the Adirondacks, western Maine, and Appalachian terrain. The proposed containment edge begins where population thins and the terrain itself becomes part of the perimeter.
+The core cities are straightforward: Manhattan, Boston proper, Center City Philadelphia, Washington inside the Beltway. The inner committee belt fits the high-capacity, civically assertive municipalities just outside them: Jersey City and Hoboken, Cambridge and Somerville, Bethesda and Silver Spring. The exurban negotiation belt reaches into the Hudson Valley, central Pennsylvania, western Massachusetts, and the Virginia piedmont. The hinterland pushes out into the Adirondacks, western Maine, and Appalachian terrain. The proposed containment edge begins where population thins and the terrain itself becomes part of the perimeter.
 
 The **Southeast** works the same way. Downtown Atlanta, Charlotte, Nashville, and Miami become core. Their immediate wealth belts become the humane-governance zone. Beyond that: Piedmont towns, Tennessee river valleys, deep rural interior, swamp margin, hollow country.
 
@@ -221,7 +228,7 @@ The central problem is mobility.
 
 Metropolitan Americans move. Constantly. One jurisdiction for home, another for work, then several more in between. The Census Bureau's county-to-county commuting analysis found that more than a quarter of U.S. workers traveled outside their county of residence for work during a typical week, with commuting patterns showing a large and dispersed commuter shed.[^5]
 
-Sealed habitats? Forget it.
+Sealed habitats are not a workable assumption for a mobile metropolitan population.
 
 A five-zone justice regime would need neutral corridors between zones that function as legally neutral passageways, close to the role of international waters or diplomatic transit routes in the original source framing. It would need neutral vehicles, neutral stations, neutral labor rules, neutral emergency response, neutral insurance, and neutral commercial guarantees.
 
@@ -233,7 +240,7 @@ The operational point is plain enough. Any serious version of this system would 
 
 ## V. The Currency Question
 
-This is where the system becomes more than a punishment map.
+At this point, the system becomes more than a punishment map.
 
 Build this thing in full and dollars stop being enough. Time matters too. Access matters. The quality of ordinary daily life in each ring matters. That is what makes the *In Time* comparison useful. The 2011 film treated lifespan itself as currency. The more plausible version here would be **quality-adjusted civic time**.
 
@@ -251,11 +258,11 @@ Whatever one thinks of the crypto wrapper, it clarifies the proposal. These zone
 
 Treat it as diagnosis. The transit problem is severe. The committee-governance rings would need constitutional backstopping against local overreach. The containment estates would need technical systems and legal doctrines still missing in usable form.
 
-It makes several things explicit. American debates about crime are often debates about geography. Rehabilitation is easier to support when it is spatially separated from the most protected districts. Local democracy becomes much more contested once it is asked to govern force. Automated custody looks cleaner on paper because it promises to remove ordinary corruption from the chain of control.
+It makes several things explicit. American debates about crime are often debates about geography. Rehabilitation is easier to support when it is spatially separated from the most protected districts. Local democracy becomes much more contested once it is asked to govern force. Automated custody looks cleaner on paper because it promises to reduce ordinary misconduct risk in the chain of control.
 
 Most of all, this map converts an existing national habit into a readable diagram. American order is already allocated unevenly through zoning, school districts, police saturation, emergency response times, detention siting, and land use. The proposal gathers those scattered facts into one formal map.
 
-That is why the thought experiment is useful. It is systematic. It is geographically concrete. And it makes official a pattern the country already recognizes in fragments.
+The thought experiment is useful because it is systematic, geographically concrete, and explicit about a pattern the country already recognizes in fragments.
 
 ---
 
@@ -304,7 +311,7 @@ The border land fight pushes the same logic back onto the mainland. WOLA and the
 
 That is the Miller test after the record catches up.
 
-Zone 1 becomes the dragnet. Zone 2 gets gutted. Zone 3 and Zone 4 turn into franchise territory for aligned local power. Zone 5 receives the people pushed off the map.
+Zone 1 becomes the dragnet. Zone 2 is reduced. Zone 3 and Zone 4 turn into franchise territory for aligned local power. Zone 5 receives the people pushed off the map.
 
 The deeper point stays the same. America already moves disorder around. Miller reads that geography clearly. Then he adds quotas, software, deputized locals, swamp detention, military land, and offshore fog.
 
@@ -312,7 +319,7 @@ The deeper point stays the same. America already moves disorder around. Miller r
 
 ## VIII. Conclusion
 
-Here is the part that should stay with you.
+The concluding policy point is geographic.
 
 The five-ring thought experiment still lands. The Miller record changes the middle. The core turns into dragnet space. The humane ring gets stripped for parts. The outer bands fracture by loyalty. Friendly sheriffs and deputized departments become force multipliers. Hostile jurisdictions get federal override. The edge keeps its cages, swamps, and military perimeter.
 
@@ -322,17 +329,23 @@ Look at that for a minute.
 
 Count people where they are confined. Build the map from there. Shift the count for representation when state law says to do it. Administrative language. Clean. Flat. Routine. The whole argument sits right there. Geography decides who belongs to which place. Geography decides who strengthens a district, who disappears into a perimeter, who becomes part of a number instead of part of a neighborhood.
 
-That is why the five rings hit so hard. They feel familiar because the country already runs on this logic. Safer blocks in one direction. Custody sites in another. Faster response here. Proxy force over there. Federal override in one jurisdiction. Delegated force in the next. Hard edge at the perimeter.
+The five rings remain useful as a policy test because they feel familiar. The country already runs on versions of this logic: safer blocks in one direction, custody sites in another, faster response here, proxy force over there, federal override in one jurisdiction, delegated force in the next, hard edge at the perimeter.
 
 Try drawing it yourself.
 
-Start with the protected core. Work outward. Mark the suburbs that get process and recovery. Mark the outer bands where the state loosens its grip. Then mark the places built for confinement, detention, and permanent removal. After that, ask one question: where does the country say a person counts?
+Start with the protected core. Work outward. Mark the suburbs that get process and recovery. Mark the outer bands where the state loosens its grip. Then mark the places built for confinement, detention, and permanent removal. The policy test is concrete: which rights, services, constraints, and review mechanisms apply in each zone?
 
 That question gets you to the real story faster than any campaign speech ever will.
 
 The five-zone map may stay on paper. Fine. Large parts of the underlying order are already built. The roads are real. The districts are real. The detention sites are real. The count is real.
 
 America keeps organizing protection, punishment, and political value by location. The map is already on the books.
+
+---
+
+## What Would Test the Model
+
+The thought experiment would be narrowed by concrete policy maps: policing response times, detention siting, school funding, hospital access, emergency-service coverage, zoning, prison-counting rules, and federal override authorities by geography. The practical question is not whether the five-ring model should be adopted. It is whether current law already distributes protection, punishment, services, and political representation by location in ways the public can measure.
 
 ---
 

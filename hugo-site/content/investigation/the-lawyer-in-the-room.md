@@ -4,14 +4,14 @@ weight: 19
 homepage_exclude: true
 title: "The Lawyer in the Room"
 seo_title: "The Lawyer in the Room: Rule 8.3(b), Alleged Judicial Misconduct, and the Reporting Duty"
-subtitle: "If the allegations are true, the reporting duty was not a courtesy. It was the point of Rule 8.3(b)."
+subtitle: "If the allegations are true, Rule 8.3(b)'s reporting duty is the central professional-responsibility issue."
 description: "A companion analysis to the Bosko Petricevic open letter examining whether Hawaii Rule of Professional Conduct 8.3(b) imposed a reporting duty if an attorney witnessed alleged judicial signaling to a sworn witness."
 date: 2026-05-10
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "May 10, 2026"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-lawyer-in-the-room/"
@@ -31,7 +31,7 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Legal Analysis"
-card_summary: "A companion analysis to the Bosko Petricevic open letter: if the alleged courtroom sequence occurred and counsel witnessed it, Rule 8.3(b)'s reporting duty was the point, not a courtesy."
+card_summary: "A companion analysis to the Bosko Petricevic open letter: if the alleged courtroom sequence occurred and counsel witnessed it, Rule 8.3(b)'s reporting duty is the central professional-responsibility issue."
 
 # Open Graph
 og_title: "The Lawyer in the Room"
@@ -49,7 +49,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-10T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Bosko Petricevic"
@@ -66,13 +66,13 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "The Lawyer in the Room"
-twitter_description: "If the alleged courtroom sequence occurred and counsel witnessed it, the reporting duty was not optional."
+twitter_description: "If the alleged courtroom sequence occurred and counsel witnessed it, Rule 8.3(b) supplies the reporting-duty question."
 twitter_image: "/img/ou-lawyer-in-the-room-og-1200x630.jpg"
 twitter_image_alt: "The Lawyer in the Room cover art for Oahu Underground legal analysis"
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
   This document is a companion legal analysis to the public open letter addressed to attorney Bosko Petricevic.
 
@@ -104,12 +104,12 @@ structured_data_graph:
         "@type": "WebPage"
         "@id": "https://gtcode.com/investigation/the-lawyer-in-the-room/"
       headline: "The Lawyer in the Room"
-      alternativeHeadline: "If the allegations are true, the reporting duty was not a courtesy. It was the point of Rule 8.3(b)."
+      alternativeHeadline: "If the allegations are true, Rule 8.3(b)'s reporting duty is the central professional-responsibility issue."
       description: "A companion analysis to the Bosko Petricevic open letter examining whether Hawaii Rule of Professional Conduct 8.3(b) imposed a reporting duty if an attorney witnessed alleged judicial signaling to a sworn witness."
       url: "https://gtcode.com/investigation/the-lawyer-in-the-room/"
       image: "/img/ou-lawyer-in-the-room-og-1200x630.jpg"
       datePublished: "2026-05-10T00:00:00Z"
-      dateModified: "2026-05-12T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -147,7 +147,7 @@ Under those conditions, and absent an applicable Rule 1.6 confidentiality barrie
 
 The case presents a narrow but important professional-responsibility problem: when alleged judicial misconduct is nonverbal and visual, when the proceeding is audio-only, and when the lawyers present may be the only legally trained witnesses, Rule 8.3(b) becomes one of the few remaining safeguards for the integrity of the record itself.
 
-That conclusion can be reached without proving the entire case in public, pretending the sealed audio captures a visual gesture it cannot capture, or saying that Mr. Petricevic was required to become the pro se litigant’s advocate, abandon his client, or litigate the issue in the middle of the hearing.
+The conclusion rests on narrow boundaries: the public record need not prove the whole case; the sealed audio preserves aftermath and timing; and opposing counsel's duty, if triggered, would have been a professional-responsibility issue. It would not require him to become the pro se litigant's advocate, abandon his client, or litigate the issue in the middle of the hearing.
 
 It requires only a narrower proposition: **if Judge Loo made the alleged nonverbal signal to a sworn witness, Mr. Petricevic saw and understood it, and Rule 1.6 did not bar disclosure, Hawaiʻi Rule of Professional Conduct 8.3(b) required more than passive silence. It required taking steps to inform an appropriate authority capable of reviewing judicial misconduct. If Rule 1.6 limited what could be disclosed, then the duty required a real confidentiality analysis—not a silent assumption that no report was possible.**
 
@@ -155,15 +155,21 @@ Hawaiʻi Rule of Professional Conduct 8.3(b) provides that a lawyer having knowl
 
 The reason this matters is structural. The alleged misconduct was nonverbal and visual. The proceeding was audio-only. The litigant attempted to translate the visual event into the record. Judge Loo allegedly stopped him before he could do so. The resulting audio was later sealed. If a lawyer in the room saw the event and understood it, Rule 8.3(b) was among the few remaining mechanisms by which the event could reach an authority outside the courtroom.
 
-This article addresses the antecedent question rather than any adjudicated finding against Mr. Petricevic: whether, on the stated facts, the rule imposed a duty that required action rather than silence.
+This article addresses the antecedent duty question: whether, on the stated facts, the rule required action.
 
 The public-interest question is narrower than every courtroom irregularity. It concerns whether this specific alleged sequence—judicial signaling to a sworn witness, interruption of the litigant’s immediate attempt to preserve the conduct on an audio-only record, and later sealing of the record at opposing counsel’s request—was serious enough that silence ceased to be ethically neutral.
 
 Assuming the allegations are true, silence crossed that line.
 
+## The Stress Test
+
+The legal stress test is intentionally narrow. Assume the alleged facts are true: Judge Loo signaled "no"; Mr. Petricevic saw and understood the signal; the witness denied furnishing LSD after the signal; the litigant immediately attempted to place the judge's conduct on the record; and Judge Loo cut him off.
+
+On those assumptions, the strongest counterarguments are factual: occurrence, perception, understanding, and audio limitations. If the stated facts are credited, the professional-responsibility consequence is straightforward: the sequence raises a substantial question about judicial fitness.
+
 ## The Rule Is Narrow, But This Allegation Is Not Small
 
-Rule 8.3(b) is intentionally limited. Hawaiʻi’s own comment to Rule 8.3 explains that requiring lawyers to report every rules violation would be unenforceable. The rule therefore reaches only those offenses that a self-regulating profession must vigorously endeavor to prevent, and “substantial” refers to the seriousness of the possible offense, not the amount of evidence available to the lawyer. [^1] The ABA commentary to Model Rule 8.3 tracks the same limiting principle. [^2]
+Rule 8.3(b) is intentionally limited. Hawaiʻi’s own comment to Rule 8.3 explains that requiring lawyers to report every rules violation would be unenforceable. The rule reaches only those offenses that a self-regulating profession must vigorously endeavor to prevent, and “substantial” refers to the seriousness of the possible offense, not the amount of evidence available to the lawyer. [^1] The ABA commentary to Model Rule 8.3 tracks the same limiting principle. [^2]
 
 That limitation matters. A lawyer need not report every sharp remark, every impatient ruling, every evidentiary mistake, or every instance of judicial discourtesy. Rule 8.3(b) should not become a weapon for relitigating adverse rulings through bar complaints.
 
@@ -177,21 +183,21 @@ That distinction is decisive.
 
 A judge is not just another courtroom participant. A judge controls the proceeding, the record, the witness environment, the opportunity to object, and the later reviewability of what occurred. When a judge’s alleged misconduct happens visually in an audio-only proceeding, the judge’s power over the record becomes even more important. If the event is not spoken into the record, it disappears from the ordinary transcript-based review universe.
 
-That is why the alleged cutoff matters as much as the alleged nod.
+The alleged cutoff matters as much as the alleged nod because it concerns whether the visual allegation could enter the record.
 
 ## The Knowledge Question
 
 Rule 8.3(b) requires knowledge. Presence in the courtroom, by itself, is not enough.
 
-A lawyer cannot be said to have violated Rule 8.3(b) for failing to report what he did not see, did not hear, did not understand, or did not actually recognize as judicial misconduct. If Mr. Petricevic did not see the alleged gesture, Rule 8.3(b) was not triggered. If the alleged gesture did not occur, Rule 8.3(b) was not triggered. If he saw some movement but did not actually understand it as communicative or material, and the surrounding circumstances were insufficient to infer actual knowledge, the knowledge element remains contested.
+Rule 8.3(b) turns on actual perception and actual understanding. If Mr. Petricevic lacked sight of the alleged gesture, lacked hearing of the relevant sequence, lacked understanding of the movement as communicative or material, or lacked circumstances sufficient to infer actual knowledge, the reporting-duty analysis changes. If the alleged gesture never occurred, the reporting duty was never triggered.
 
 But if the allegations are true—if he was positioned to see the bench, saw Judge Loo signal, saw the witness answer, and heard the immediate attempt to place the conduct on the record—then the knowledge element becomes much stronger.
 
-Hawaiʻi’s rule defines knowledge in the professional-conduct context as actual knowledge, while allowing knowledge to be inferred from the circumstances. That matters because professional responsibility does not require a lawyer to possess a signed confession from a judge before a reporting duty can arise. It asks what the lawyer actually knew; but actual knowledge need not be admitted in words and may be inferred from the sequence, the timing, the participants’ positions, and later conduct such as a request to seal the record containing the immediate audio-confirmable aftermath. [^1]
+Hawaiʻi’s rule defines knowledge in the professional-conduct context as actual knowledge, while allowing knowledge to be inferred from the circumstances. That matters because professional responsibility can arise from circumstantial knowledge; it does not require a signed confession from a judge. It asks what the lawyer actually knew, and actual knowledge may be inferred from the sequence, the timing, the participants’ positions, and later conduct such as a request to seal the record containing the immediate audio-confirmable aftermath. [^1]
 
-The argument does not rest on negligence-style “should have known” reasoning, nor on treating sealing, by itself, as proof of knowledge. It is narrower: if the surrounding circumstances show actual perception and actual understanding, the rule does not require him to admit that knowledge before the duty can be analyzed.
+The argument depends on actual perception and actual understanding shown by surrounding circumstances, not negligence-style “should have known” reasoning or sealing alone. If the surrounding circumstances show actual perception and actual understanding, the rule does not require him to admit that knowledge before the duty can be analyzed.
 
-Here, the alleged sequence is not a stray visual impression isolated from everything else. It is alleged to have occurred immediately before the witness’s answer, immediately before the litigant attempted to document the judge’s conduct, and immediately before the judge cut off that documentation attempt.
+Here, the alleged sequence is embedded in surrounding events. It is alleged to have occurred immediately before the witness’s answer, immediately before the litigant attempted to document the judge’s conduct, and immediately before the judge cut off that documentation attempt.
 
 Those surrounding facts are the kind of circumstances from which knowledge can be inferred—again, assuming the allegations are true and assuming Mr. Petricevic personally perceived the relevant events.
 
@@ -203,7 +209,7 @@ The Code defines impropriety to include conduct that materially impairs a judge�
 
 A nonverbal signal from a judge to a sworn witness concerning how to answer a material question would reach beyond an appearance problem by placing the judge inside the testimonial act.
 
-That is why this allegation, if true, goes directly to fitness for office.
+If true, this allegation goes directly to fitness for office because it concerns testimony and record integrity.
 
 A judge who signals a witness about how to answer moves from adjudicating the evidence to allegedly shaping it. If the cutoff was directed at preventing the litigant from documenting the signal, the act went beyond brusque courtroom management and became control, or attempted control, over the official memory of the proceeding.
 
@@ -215,9 +221,9 @@ That is what “Let the record show” is for.
 
 Courts have long recognized that judicial demeanor, gestures, tone, and facial expressions can matter because they can influence the fairness of proceedings in ways that do not automatically appear in a transcript.
 
-In *Butler v. United States*, the D.C. Circuit addressed a trial judge’s refusal to let defense counsel identify specific judicial gesticulation and facial expression for the record. The court rejected the idea that counsel had no right to preserve such matters. The point was not that every gesture proves reversible error. The point was that appellate review requires a record, and a record cannot review what a judge prevents from being recorded. [^4]
+In *Butler v. United States*, the D.C. Circuit addressed a trial judge’s refusal to let defense counsel identify specific judicial gesticulation and facial expression for the record. The court rejected the idea that counsel had no right to preserve such matters. The Butler point is record preservation: appellate review requires a record, and a record cannot review visual conduct that a judge prevents from being stated. [^4]
 
-That is the structural problem in an audio-only proceeding. Visual conduct is not self-preserving. A transcript captures words. It does not capture a nod, a headshake, a mouthed word, a facial expression, or a gesture unless someone verbalizes it.
+That is the structural problem in an audio-only proceeding. Visual conduct in an audio-only proceeding must be verbalized to become reviewable. A transcript captures words; a nod, headshake, mouthed word, facial expression, or gesture enters the record only if someone says what happened.
 
 The issue reaches beyond courtroom decorum into record integrity. Record integrity is what makes appellate review, disciplinary review, and public accountability possible. When alleged misconduct is nonverbal and visual, the right to verbalize it into the record is not a technicality; it is the mechanism by which the event becomes legally reviewable.
 
@@ -233,7 +239,7 @@ In *United States v. Flint*, the Ninth Circuit held that evidence supported the 
 
 Other witness-coaching cases are merely illustrative, not necessary to the legal argument. In *Hernandez v. City of Vancouver*, the Ninth Circuit described allegations of witness coaching involving nods, headshakes, and mouthing words during testimony. Although that case involved no judicial misconduct and proves nothing about what happened here, it illustrates that courts do not treat nonverbal signals during testimony as imaginary or categorically irrelevant. [^6]
 
-That matters for Rule 8.3(b). A lawyer in the room cannot dismiss alleged judicial signaling as legally trivial merely because it was nonverbal. The law is capable of recognizing nonverbal communication. The question becomes factual: did it happen, who saw it, what did it mean, and what did the lawyer know?
+For Rule 8.3(b), this is material. A lawyer in the room cannot dismiss alleged judicial signaling as legally trivial merely because it was nonverbal. The law is capable of recognizing nonverbal communication. The factual inquiry is whether it happened, who saw it, what it meant, and what the lawyer knew.
 
 ## The Sealing Request Made the Silence More Consequential
 
@@ -257,9 +263,9 @@ That matters because Hawaiʻi’s disciplinary system covers full-time and part-
 
 The deadline matters because Rule 8.3(b) concerns more than abstract morality; it preserves the ability of an authority to investigate while jurisdiction still exists.
 
-Whether or not anyone could predict the precise date Judge Loo would leave service, the disciplinary pathway was time-sensitive. The point is that Mr. Petricevic did not need to know the future date of Judge Loo’s departure for delay to matter. The disciplinary path was jurisdictional, and delay could convert a reviewable judicial-misconduct question into a procedurally barred one. Silence, if the reporting duty was triggered and no confidentiality rule barred disclosure, could therefore have practical consequences: it could permanently foreclose the very review the rule was designed to trigger.
+Whether or not anyone could predict the precise date Judge Loo would leave service, the disciplinary pathway was time-sensitive. Mr. Petricevic did not need to know the future date of Judge Loo’s departure for delay to matter. The disciplinary path was jurisdictional, and delay could convert a reviewable judicial-misconduct question into a procedurally barred one. Silence, if the reporting duty was triggered and no confidentiality rule barred disclosure, could have practical consequences: it could permanently foreclose the very review the rule was designed to trigger.
 
-That is why the “lawyer in the room” matters so much. A pro se litigant may not know the disciplinary architecture. A member of the public may not know the deadline. But a Hawaiʻi lawyer, especially one with significant government and litigation experience, is an officer of the court operating inside the professional system. Rule 8.3(b) exists because lawyers are expected to act when they know judicial misconduct has crossed the line from ordinary error into a substantial fitness question.
+The “lawyer in the room” matters because a pro se litigant may not know the disciplinary architecture. A member of the public may not know the deadline. But a Hawaiʻi lawyer, especially one with significant government and litigation experience, is an officer of the court operating inside the professional system. Rule 8.3(b) exists because lawyers are expected to act when they know judicial misconduct has crossed the line from ordinary error into a substantial fitness question.
 
 ## The Confidentiality Caveat Does Not Erase the Duty
 
@@ -267,19 +273,19 @@ The strongest technical caveat is Rule 8.3(c), which provides that the reporting
 
 That caveat should be respected. A lawyer’s duty to a client is real. A lawyer should not casually disclose protected information merely because disclosure would be rhetorically satisfying.
 
-This caveat does not convert “shall report” into “may ignore.” The confidentiality caveat may affect the contents, timing, and channel of any report. It may also mean reporting through a confidential disciplinary channel rather than through public accusation. It may require client consultation, informed consent, ethics advice, or a narrowly framed report that identifies the judge’s conduct without disclosing protected client information.
+The confidentiality caveat affects contents, timing, channel, client consultation, ethics advice, and narrow framing. The "shall report" analysis still applies, and the reporting channel may be a confidential disciplinary process instead of public accusation.
 
 The threshold professional-responsibility question remains. A lawyer who personally observed serious judicial misconduct in open court could not simply assume Rule 8.3(b) was nonexistent. He would have to identify whether Rule 1.6 actually barred disclosure, whether client consent could be sought, and whether any exception or independent duty permitted or required action.
 
-The public act of a judge in a courtroom, witnessed during a proceeding, is not automatically insulated from Rule 8.3(b) analysis merely because one party benefited from it. Rule 1.6 may still matter, because Hawaiʻi’s confidentiality rule is broad, but it must be analyzed rather than invoked as a blanket escape hatch. The relevant question would be whether a genuine Rule 1.6 barrier existed, apart from inconvenience, embarrassment, or client advantage.
+A public courtroom act that benefits one party still requires Rule 8.3(b) analysis. Rule 1.6 may matter because Hawaiʻi's confidentiality rule is broad, but the question is whether a genuine Rule 1.6 barrier existed, apart from inconvenience, embarrassment, or client advantage.
 
 ## The ABA’s Recent Recusal Guidance Supports the Same Principle
 
-ABA Formal Opinion 522 addresses recusal rather than witness-signaling, and it rests principally on Model Rule 8.4(d)’s duty not to engage in conduct prejudicial to the administration of justice, not on Rule 8.3(b) alone. Its relevance here is narrower but important: it confirms that a lawyer’s adversarial role does not automatically excuse silence about known facts bearing on judicial neutrality, and that any disclosure obligation must be analyzed alongside Rule 1.6 confidentiality. [^9]
+ABA Formal Opinion 522 addresses recusal and Model Rule 8.4(d)'s duty to avoid conduct prejudicial to the administration of justice. Its narrower relevance is that adversarial posture does not end the analysis when known facts bear on judicial neutrality, and that any disclosure obligation must be analyzed alongside Rule 1.6 confidentiality. [^9]
 
-That caution strengthens the article’s narrow framing. The problem here concerns alleged real-time judicial interference with sworn testimony and alleged suppression of the attempt to preserve that interference on an audio-only record.
+That caution strengthens the article’s narrow framing. The problem here concerns alleged real-time judicial interference with sworn testimony and the alleged cutoff of the attempt to preserve that interference on an audio-only record.
 
-Its value is confirmatory: recent ethics guidance treats known facts bearing on judicial neutrality as structural integrity facts requiring affirmative professional analysis. The opinion leaves the Rule 8.3(b) question here undecided, while supporting the same professional-responsibility premise: when a lawyer has actual knowledge of serious facts bearing on judicial neutrality, the lawyer must confront an affirmative duty question rather than treat silence as the default.
+Its value is confirmatory: recent ethics guidance treats known facts bearing on judicial neutrality as structural integrity facts requiring affirmative professional analysis. The opinion leaves the Rule 8.3(b) question here undecided, while supporting the same professional-responsibility premise: when a lawyer has actual knowledge of serious facts bearing on judicial neutrality, the lawyer must confront an affirmative duty question.
 
 If the alleged courtroom sequence is true, the concern reaches beyond appearance to whether the judge remained a neutral adjudicator or became a participant in the testimony.
 
@@ -313,9 +319,9 @@ That means the legally relevant question turns on whether the rule was triggered
 
 If the allegations are true, and if no Rule 1.6 confidentiality barrier prevented disclosure, it was.
 
-## What This Article Does Not Prove
+## Limits of the Public Record
 
-This article does not prove that Mr. Petricevic saw the alleged gesture, understood it as judicial signaling, or had knowledge sufficient to trigger Rule 8.3(b). It does not prove that Rule 1.6 permitted disclosure. It states the professional consequence if the alleged gesture occurred, if counsel saw and understood it, and if no confidentiality rule barred an appropriate report.
+This article states the professional consequence if the alleged gesture occurred, if counsel saw and understood it, and if no confidentiality rule barred an appropriate report. Public materials alone leave unresolved whether Mr. Petricevic saw the alleged gesture, understood it as judicial signaling, had knowledge sufficient to trigger Rule 8.3(b), or could report without violating Rule 1.6. The analysis rests on the courtroom sequence, not on Mr. Petricevic's biography, employment history, or professional proximity to anyone else.
 
 ## What Would Falsify This
 

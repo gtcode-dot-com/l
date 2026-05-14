@@ -6,7 +6,7 @@ ai_agent_meta:
   prompt_version: v2026-01-09
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document is a technical deep-dive article introducing the Cinema Debugger paradigm and Context-Graph Knowledge Base (CGKB) architecture. It is part of the Articles section on GTCode.com, which publishes original technical research on software engineering, AI systems, and knowledge representation.
 

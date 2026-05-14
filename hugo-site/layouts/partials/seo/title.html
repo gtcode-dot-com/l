@@ -1,0 +1,14 @@
+{{- $title := partial "seo/plaintext.html" (dict "value" (.title | default "") "max" 0) -}}
+{{- $siteName := partial "seo/plaintext.html" (dict "value" (.siteName | default "") "max" 0) -}}
+{{- $separator := .separator | default " · " -}}
+{{- $max := int (.max | default 0) -}}
+{{- $candidate := $title -}}
+{{- if and (ne $siteName "") (ne $title "") -}}
+  {{- $candidate = printf "%s%s%s" $title $separator $siteName -}}
+{{- else if ne $siteName "" -}}
+  {{- $candidate = $siteName -}}
+{{- end -}}
+{{- if and (gt $max 0) (gt (len $candidate) $max) (ne $title "") -}}
+  {{- $candidate = $title -}}
+{{- end -}}
+{{- partial "seo/plaintext.html" (dict "value" $candidate "max" $max) -}}

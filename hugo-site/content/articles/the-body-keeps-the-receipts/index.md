@@ -64,7 +64,7 @@ ai_agent_meta:
   prompt_version: v2026-02-26
   provider: anthropic
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
 
   This document is a multi-source research synthesis tracing documented mechanisms from childhood traumatic brain injury and institutional betrayal through cascading neurobiological consequences to predictable long-term outcomes. It is part of the GTCode site's coverage of institutional accountability and evidence-based analysis.
 

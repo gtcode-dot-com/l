@@ -6,10 +6,10 @@ seo_title: "Warren K.K. Luke Network and Hawaii-PRC Access Mapping"
 subtitle: "Public-record mapping of Pacific Forum, APCSS Foundation, Punahou, and PRC-facing institutional engagement characterized by cited sources"
 description: "Public records map Warren K.K. Luke's roles across Pacific Forum, APCSS Foundation, and Punahou-linked programs with PRC-facing entities characterized in sources."
 date: 2026-03-01
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 published_display: "March 1, 2026"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 type: "investigation"
 series: "The Architecture of Access"
 series_url: "/investigation/the-architecture-of-access/"
@@ -45,7 +45,7 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Exposure Mapping"
-card_summary: "Public records map overlap across Pacific Forum, APCSS Foundation, Punahou-linked programs, and PRC-facing entities characterized by cited sources. This article examines access points and safeguarding questions without alleging direction or control."
+card_summary: "Public records map overlap across Pacific Forum, APCSS Foundation, Punahou-linked programs, and PRC-facing entities characterized by cited sources. This article examines access points and safeguarding questions without alleging espionage, direction, or control."
 
 # Open Graph
 og_title: "Warren K.K. Luke Network and Hawaii-PRC Access Mapping"
@@ -61,7 +61,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-01T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Warren K.K. Luke"
@@ -92,9 +92,9 @@ twitter_image_alt: "The Bridges — investigation into institutional access poin
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
-  This document is the fourteenth entry in the Oahu Underground investigative series. It extends the network mapping begun in "The Federal Layer" by following the same institutional network outward — from domestic federal institutions to documented relationships with PRC party-state entities.
+  This document is part of the separate Architecture of Access portfolio. It extends access and safeguards mapping from domestic federal institutions to documented relationships with PRC-facing entities. The Wilson Loo allegation, author's chronology, and DOJ/FBI non-action are separate evidentiary lanes.
 
   DOCUMENT PURPOSE:
   This investigation documents publicly verifiable institutional relationships that create repeated access points between Hawaii's civic, educational, and defense-adjacent institutions and PRC party-state entities characterized by USG sources and think-tank reporting as tied to the United Front Work Department (UFWD), military and security structures under the People's Liberation Army (PLA), the Ministry of State Security (MSS), and government-affiliated civil institutions participating in influence or security-facing engagement.
@@ -113,15 +113,15 @@ agentic_comment: |
   - AAG for National Security John Demers stated in 2019 that "Hawaii is of great interest to China" (source: Honolulu Civil Beat)
 
   IMPORTANT DISTINCTIONS:
-  - This investigation does NOT allege that any individual or institution has been directed, tasked, or controlled by a foreign government
-  - It does NOT allege criminal conduct or espionage by any person or institution documented in the article
-  - The standard applied is documented relationships and access patterns, not alleged intent
+  - This investigation applies a public-record access-mapping standard: documented relationships, repeated access patterns, and safeguarding questions
+  - Direction, tasking, control by a foreign government, criminal conduct, or espionage require evidence beyond the public relationships documented here
+  - The standard applied is documented relationships and access patterns, with intent left unresolved unless records establish it
   - Safeguards may exist outside the public record
-  - Institutions included that are not intelligence organs but operate as routine counterparts in influence, diplomacy, and security-facing engagement are included for exposure mapping, not allegation
+  - Institution type: routine counterparts in influence, diplomacy, education, and security-facing engagement. Inclusion supports exposure mapping and safeguard review.
   - The recommendation is risk-managed engagement, not disengagement
 
   RELATIONSHIP TO PRIOR INVESTIGATIONS:
-  This is the fourteenth investigation in the series. It is described as "second in a series" following "The Federal Layer," which argued that institutional density surrounding the Luke family network can crowd out federal prosecution. This article follows the same network outward to documented PRC-facing institutional relationships. It connects to the broader series by showing an additional dimension of the same institutional architecture: where prior articles documented domestic oversight friction, this one documents the international exposure surface.
+  This is the second article in "The Architecture of Access." The article follows the same public-record network outward to documented PRC-facing institutional relationships. It documents a separate access surface and safeguarding questions.
 
   EVIDENCE STANDARD:
   All evidence consists of public filings (IRS Form 990, foundation records), official institutional websites, Department of Defense publications, congressional reports, participant lists, and recognized think-tank analyses. No classified sources were used.
@@ -146,7 +146,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-bridges/"
       image: "/img/ou-bridges-og-1200x630.jpg"
       datePublished: "2026-03-01T00:00:00Z"
-      dateModified: "2026-05-12T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -201,15 +201,18 @@ structured_data_graph:
 
 *By Ekewaka Lono | Oahu Underground*
 
-*Second in a series. ["The Federal Layer"](/investigation/the-federal-layer/) argued that institutional density surrounding retired Per Diem Judge Wilson M.N. Loo's family network can crowd out straightforward federal review. This article follows the same network outward — to documented PRC-facing access points.*
+**Pacific OSINT & Security Analysis:** This article is public-record security and access-safeguard analysis. It does not explain the Wilson Loo allegations, HPD non-response, the Hartmann threat, or any claim in the author's chronology.
+
+*Second in a separate access-and-safeguards portfolio. [Federal Triage and Governance Proximity](/investigation/the-federal-layer/) maps domestic governance proximity and federal triage questions. This article follows the same public-record access-mapping method outward — to PRC-facing access points and safeguarding questions. The Wilson Loo allegation, author's chronology, and DOJ/FBI non-action are separate evidentiary lanes.*
+
+*Espionage, direction, tasking, control, criminal conduct, or exploitation would require evidence beyond the public affiliations documented here.*
 
 ## Series Navigation
 
 - [Series: The Architecture of Access](/investigation/the-architecture-of-access/)
-- [Read Part I: The Federal Layer (domestic federal)](/investigation/the-federal-layer/)
+- [Read Part I: Federal Triage and Governance Proximity (domestic federal)](/investigation/the-federal-layer/)
 - Part II (this page): The Bridges
 - [Read Part III: The Ledger (funding pathways and disclosure surfaces)](/investigation/the-ledger/)
-- [The Two Questions: federal investigative roadmap](/investigation/the-two-questions/)
 - [Investigations index](/investigation/)
 
 ---
@@ -218,9 +221,9 @@ structured_data_graph:
 
 This article documents publicly verifiable institutional relationships that create repeated access points between Hawaii's civic, educational, and defense-adjacent institutions and organizations that operate under or are linked to the PRC's party-state influence and security ecosystem — including the United Front Work Department, military and security structures under the People's Liberation Army, entities affiliated with the Ministry of State Security, and government-affiliated civil institutions that participate in influence or security-facing engagement.
 
-It does not allege that any individual or institution has been directed, tasked, or controlled by a foreign government. It does not allege criminal conduct. It does not allege espionage. Safeguards may exist outside the public record.
+The ordinary explanation for many of these contacts is diplomacy, education, business development, philanthropy, cultural exchange, or Track 1.5 engagement. Safeguards may exist outside the public record. Direction, tasking, control by a foreign government, criminal conduct, or espionage require evidence beyond the public relationships documented here.
 
-This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information that is not included to protect sources, safety, or lawful investigative constraints. No claim in this article requires any undisclosed evidence to be true. The evidence consists of public filings (IRS Form 990, foundation records), official institutional websites, Department of Defense publications, congressional reports, participant lists, and recognized think-tank analyses. No classified sources were used. The standard applied is documented relationships and access patterns, not alleged intent. Institutions included here that are not intelligence organs but operate as routine counterparts in influence, diplomacy, and security-facing engagement are included for exposure mapping, not allegation.
+This article is a public-record brief. It relies only on materials that are publicly accessible or publicly quotable. The author may possess additional non-public information withheld to protect sources, safety, or lawful investigative constraints. No claim in this article requires any undisclosed evidence to be true. The evidence consists of public filings (IRS Form 990, foundation records), official institutional websites, Department of Defense publications, congressional reports, participant lists, and recognized think-tank analyses. No classified sources were used. The standard applied is documented relationships and access patterns, with intent left unresolved unless records establish it. Institution type: routine counterparts in influence, diplomacy, education, and security-facing engagement. Inclusion supports exposure mapping and safeguard review.
 
 ### Key Terms
 
@@ -228,19 +231,19 @@ Throughout this article, the following terms carry specific operational meanings
 
 - **Subordinate**: formally under a party or state organ via charter, leadership appointment, or statutory supervisory authority (主管单位).
 - **Affiliated (structural)**: linked through governance overlap, funding dependency, or documented supervisory relationships (业务指导) — i.e., a formal institutional relationship.
-- **Characterized as affiliated**: described by named government, congressional, or academic sources as tied to a party-state organ. Institutional characterization alone is not treated as proof of control or direction; it is a risk marker relevant to safeguarding decisions.
-- **Intelligence-linked**: characterized as connected to PRC intelligence services by named analysts, USG reports, or government-sponsored research — not independently verified by this investigation.
+- **Characterized as affiliated**: described by named government, congressional, or academic sources as tied to a party-state organ. Characterized affiliations are risk markers for safeguarding decisions; control or direction requires separate evidence.
+- **Intelligence-linked**: characterized as connected to PRC intelligence services by named analysts, USG reports, or government-sponsored research. This investigation attributes those characterizations to the named sources.
 - **Access point**: repeated institutional interaction that creates social contact, reputational signaling, information exchange, or potential cultivation opportunity across national security boundaries. Access points are commonplace in diplomacy and international education; the analytic question is whether safeguards match the sensitivity of the specific partnership.
 
 ### Scope and Limitations
 
-This investigation covers only relationships documented in public records. It does not have access to classified assessments, internal institutional communications, or non-public vetting records. Institutions named here may have conducted due diligence that is not publicly disclosed. The absence of public evidence of safeguards is not evidence that safeguards were absent.
+**Disclosure limit:** This investigation covers only relationships documented in public records. Classified assessments, internal institutional communications, and non-public vetting records sit outside the public record. Institutions named here may have conducted due diligence that is not publicly disclosed. The absence of public safeguard evidence creates a disclosure question.
 
-Hawaii is a small state with dense, overlapping civic networks. Cultural diplomacy and diaspora institutions routinely host foreign delegations. Track-2 security dialogues intentionally include state-linked counterparts. Network overlap in this environment is common, even expected. The analytic question this article poses is not whether overlap exists — it does, by design — but whether institutional safeguards scale with the sensitivity of specific partnerships, particularly when a foreign partner operates under a party-state influence or intelligence structure.
+Hawaii is a small state with dense, overlapping civic networks. Cultural diplomacy and diaspora institutions routinely host foreign delegations. Track-2 security dialogues intentionally include state-linked counterparts. Network overlap in this environment is common, even expected. The operative question is safeguard adequacy: whether institutional safeguards scale with the sensitivity of specific partnerships, particularly when a foreign partner operates under a party-state influence or intelligence structure.
 
-**A note on Track 1.5 dialogues.** Several relationships documented in this article involve "Track 1.5" security dialogues. Track 1 refers to official government-to-government negotiations. Track 2 refers to unofficial dialogues between private citizens or academics. Track 1.5 occupies the space between: participants include current or former government officials and military officers acting in an unofficial or semi-official capacity alongside academic and think-tank experts. Discussions are typically off-the-record. The format is deliberately designed to allow candid exchange on sensitive topics — including nuclear strategy — outside formal diplomatic channels. Pacific Forum describes this format in its event reporting.[^78]
+**A note on Track 1.5 dialogues.** Several relationships documented in this article involve "Track 1.5" security dialogues. Track 1 refers to official government-to-government negotiations. Track 2 refers to unofficial dialogues between private citizens or academics. Track 1.5 occupies the space between: participants include current or former government officials and military officers acting in an unofficial or semi-official capacity alongside academic and think-tank experts. Discussions are typically off-the-record. The format is structured to allow candid exchange on sensitive topics — including nuclear strategy — outside formal diplomatic channels. Pacific Forum describes this format in its event reporting.[^78]
 
-**A note on "Beijing."** This article uses "Beijing" as shorthand for the PRC party-state ecosystem — the institutional apparatus of the Chinese Communist Party, the State Council, and subordinate organs. It does not equate the Chinese people, Chinese culture, or China as a civilization with the activities of its governing structures. The institutional relationships documented here involve specific party-state organs and their affiliates, not China broadly.
+**A note on "Beijing."** This article uses "Beijing" as shorthand for the PRC party-state ecosystem — the institutional apparatus of the Chinese Communist Party, the State Council, and subordinate organs. "Beijing" refers here to the PRC party-state ecosystem: the Chinese Communist Party, the State Council, subordinate organs, and affiliated institutions. The article addresses those governing structures and does not generalize to the Chinese people, Chinese culture, or China as a civilization.
 
 ---
 
@@ -248,7 +251,7 @@ Hawaii is a small state with dense, overlapping civic networks. Cultural diploma
 
 Punahou School describes its Luke Center for Chinese Studies on the school's official website.[^1] The Center was established with $1.5 million from the K.J. Luke family — the family behind Hawaii National Bank.[^2] The Luke Center supports K–12 Chinese language and China studies, immersion experiences in China, and faculty travel groups to China.[^3]
 
-Warren K.K. Luke, chairman of Hawaii National Bank and a member of the K.J. Luke family, is listed as chairman of the Dr. Sun Yat-sen Hawaii Foundation, a member of Pacific Forum's Board of Governors (confirmed in the Pacific Forum 2020 Annual Report), and a trustee of the APCSS Foundation (confirmed in ProPublica filings for EIN 99-0350533).[^75][^76] Whether this governance concentration reflects deliberate strategy, organic civic engagement, or both is not assessed here. What it creates is a structural overlap between educational, diplomatic, defense-adjacent, and PRC-facing institutions that warrants documentation.
+Warren K.K. Luke, chairman of Hawaii National Bank and a member of the K.J. Luke family, is listed as chairman of the Dr. Sun Yat-sen Hawaii Foundation, a member of Pacific Forum's Board of Governors (confirmed in the Pacific Forum 2020 Annual Report), and a trustee of the APCSS Foundation (confirmed in ProPublica filings for EIN 99-0350533).[^75][^76] Whether this governance concentration reflects intentional strategy, organic civic engagement, or both is not assessed here. What it creates is a structural overlap between educational, diplomatic, defense-adjacent, and PRC-facing institutions that warrants documentation.
 
 Punahou is the largest single-campus independent school in the United States, with 3,770 students.[^74]
 
@@ -288,7 +291,7 @@ Not all contact carries equal risk. The relationships documented in this article
 - **Tier 2 — Institutional diplomacy and recurring delegation hosting** (CSCLF visits, Chamber of Commerce delegations, foundation cooperation agreements): create persistent access channels and reputational signaling that can be leveraged for cultivation, per USCC analysis.[^8]
 - **Tier 3 — Defense-adjacent engagements with entities characterized as intelligence-linked** (Pacific Forum–CFISS Track 1.5 nuclear dialogues, APCSS hosting PLA delegations, Track 1.5 participation by think tanks described by USG sources as MSS-affiliated or intelligence-run): involve the highest sensitivity and the most direct counterintelligence exposure.[^19][^21][^26][^28][^34][^40][^41]
 
-The analytic question is whether safeguards scale with tier. Being a partner is not being an agent. Being a target of cultivation is not being controlled. This article documents access patterns across all three tiers. Evidence of exploitation would require a different investigation.
+The analytic question is whether safeguards scale with tier. The analytic tiers distinguish partnership, cultivation exposure, and control. This article documents access patterns across those tiers. Agency, control, or exploitation would require a different evidence set and, likely, a different investigation.
 
 ---
 
@@ -296,17 +299,17 @@ The analytic question is whether safeguards scale with tier. Being a partner is 
 
 Pacific Forum, the Honolulu-based foreign policy research institute on whose Board of Governors Warren Luke served, was a primary U.S. convener of a Track 1.5 U.S.–China dialogue on strategic nuclear dynamics that ran from 2004 to 2019, according to a history of the series by the Center for Global Security Research (CGSR) at Lawrence Livermore National Laboratory.[^25] Pacific Forum's 2017 annual report lists the China‑U.S. Dialogue on Strategic Nuclear Dynamics and identifies the China Foundation for International and Strategic Studies (CFISS) as the Chinese co‑convenor.[^19][^20]
 
-The National Committee on U.S.-China Relations, in its survey of bilateral security programs, states that CFISS "has ties with the Second Department (Intelligence) of the People's Liberation Army (PLA) General Staff."[^21] This investigation does not independently verify that relationship; the survey is a single open‑source characterization.
+The National Committee on U.S.-China Relations, in its survey of bilateral security programs, states that CFISS "has ties with the Second Department (Intelligence) of the People's Liberation Army (PLA) General Staff."[^21] The survey is a single open-source characterization. This article attributes the relationship to that source and would need additional records to verify it independently.
 
 CGSR notes the dialogue was supported by the Defense Threat Reduction Agency (DTRA), that DTRA invested approximately $5 million over 15 years, and that DTRA terminated its support in 2019 following declining Chinese participation.[^25] CGSR also notes that Pacific Forum played the primary convening role for many years.[^25]
 
-Track 1.5 dialogues like this are routinely used by U.S. agencies to reduce miscalculation and improve crisis communication. The counterintelligence question is not why the dialogue existed, but how persistent semi‑formal access was screened and safeguarded when a counterpart is described in U.S. survey research as PLA intelligence‑linked.
+Track 1.5 dialogues like this are routinely used by U.S. agencies to reduce miscalculation and improve crisis communication. The counterintelligence issue is safeguard design for persistent semi‑formal access involving a counterpart described in U.S. survey research as PLA intelligence‑linked.
 
 Pacific Forum published participant lists. The March 2017 dialogue in Washington is documented in a PDF on pacforum.org.[^26] The Chinese delegation included:
 
 - **Liu Chong**, Deputy Director, Institute of Arms Control and Security Studies, China Institutes of Contemporary International Relations (CICIR).[^27] CICIR is a government research institute; a DNI Open Source Center profile describes it as "MSS-affiliated."[^28] Peter Mattis testified that CICIR and CIISS are think tanks run by Chinese intelligence.[^34] **Context:** the presence of officials from an institution characterized by U.S. intelligence community sources as MSS‑affiliated in a recurring nuclear strategy dialogue underscores the sensitivity of the exposure surface.
 
-- **Chunsi Wu**, Director, Institute of International Strategic Studies, Shanghai Institutes for International Studies (SIIS).[^29] SIIS describes itself as "a government-affiliated high-caliber think tank dedicated to informing government decision-making" and "bolstering China's international influence and soft power."[^30] **Context:** SIIS is a PRC government think tank, not an intelligence entity; it is included here for the range of state-linked participants in the dialogue.
+- **Chunsi Wu**, Director, Institute of International Strategic Studies, Shanghai Institutes for International Studies (SIIS).[^29] SIIS describes itself as "a government-affiliated high-caliber think tank dedicated to informing government decision-making" and "bolstering China's international influence and soft power."[^30] **Context:** SIIS is a PRC government think tank included to show the range of state-linked dialogue participants.
 
 - **Senior Colonel Shuman Yu**, PRC Embassy in Washington.[^31] **Context:** a serving PLA military officer in diplomatic assignment.
 
@@ -342,7 +345,7 @@ Warren Luke is listed as an Emeritus Director of the Chinese Chamber of Commerce
 
 In January 2024, the Chamber led a delegation to China, visiting Fuzhou, Zhangzhou, and Zhongshan.[^47] In March 2024, the Chamber hosted a welcome reception for Vice Governor Guo Ningning of Fujian Province in Honolulu.[^48]
 
-The U.S.-China Economic and Security Review Commission has documented that Chinese chambers of commerce globally are common targets for UFWD cultivation.[^49] The Jamestown Foundation and the Australian Strategic Policy Institute have published similar analyses.[^50] Being identified as a target of cultivation is not evidence of being controlled.
+The U.S.-China Economic and Security Review Commission has documented that Chinese chambers of commerce globally are common targets for UFWD cultivation.[^49] The Jamestown Foundation and the Australian Strategic Policy Institute have published similar analyses.[^50] A cultivation-risk category marks exposure for safeguard analysis; control requires separate evidence.
 
 No direct evidence of UFWD control or direction of the Hawaii Chinese Chamber was found in this investigation.[^51]
 
@@ -350,7 +353,7 @@ No direct evidence of UFWD control or direction of the Hawaii Chinese Chamber wa
 
 ## Counterintelligence Environment
 
-*The following cases provide context for why Hawaii is a high-interest counterintelligence environment. They are not evidence that any individual or organization named elsewhere in this article is connected to espionage. None of the named individuals or institutions documented in the preceding sections appear in any of these cases.*
+*The following cases provide context for why Hawaii is a high-interest counterintelligence environment. Any connection between those cases and individuals or organizations named elsewhere in this article would require separate evidence. The named individuals and institutions documented in the preceding sections appear in none of these cases.*
 
 Three espionage cases have been prosecuted in the District of Hawaii.[^52] The following summaries are drawn from DOJ press releases and court records:
 
@@ -387,7 +390,7 @@ The open questions posed in this article are not rhetorical. Institutions that m
 - Documentation: maintaining records of all contacts, topics discussed, and follow-up.
 - Staff training: ensuring personnel involved in foreign engagements are aware of common cultivation and elicitation techniques as described by the National Counterintelligence and Security Center (NCSC).[^77]
 
-Whether any of the institutions named in this article have implemented such measures is not known from public records. These engagements were common, sometimes government-sponsored, and may have been deliberately structured to manage risk. The question is not whether engagement occurred — it did, by design — but what the safeguarding structure was. The tiers above are the standards against which readers can assess the adequacy of institutional responses.
+Public records reviewed for this article leave implementation of these measures unresolved. These engagements were common, sometimes government-sponsored, and may have been specifically structured to manage risk. Engagement occurred by design. The unresolved issue is the safeguarding structure. The tiers above are the standards against which readers can assess the adequacy of institutional responses.
 
 ---
 
@@ -405,9 +408,9 @@ The documented institutional relationships, in chronological order:
 
 Warren Luke is listed as serving on Pacific Forum's Board of Governors (Pacific Forum 2020 Annual Report), as Trustee of the APCSS Foundation (ProPublica filings, EIN 99-0350533), and as chairman of the Sun Yat‑sen Foundation.[^75][^76]
 
-This does not establish direction, tasking, or espionage. It establishes that a small number of individuals occupied positions across civic, educational, financial, and defense-adjacent institutions — and that several of those institutions maintained relationships with PRC entities that U.S. government sources describe as tied to party‑state influence, military, or security structures (UFWD, PLA, MSS), as well as government‑affiliated civil institutions participating in influence and security‑facing engagement.
+The public record establishes that a small number of individuals occupied positions across civic, educational, financial, and defense-adjacent institutions — and that several of those institutions maintained relationships with PRC entities that U.S. government sources describe as tied to party-state influence, military, or security structures (UFWD, PLA, MSS), as well as government-affiliated civil institutions participating in influence and security-facing engagement. Direction, tasking, control, or espionage would require a different evidence set.
 
-The recommendation is not disengagement — it is risk-managed engagement: ensuring that safeguards scale with the tier of partnership. The open questions that follow are offered in that spirit.
+The recommendation is risk-managed engagement: ensuring that safeguards scale with the tier of partnership. The open questions that follow are offered in that spirit.
 
 ### Evidence Map
 
@@ -432,6 +435,12 @@ The recommendation is not disengagement — it is risk-managed engagement: ensur
 - What due diligence did Punahou, Pacific Forum, and the APCSS Foundation perform regarding the UFWD, PLA, or MSS affiliations of their partner organizations?
 - What safeguards existed for the Track 1.5 dialogues co‑organized by Pacific Forum with CFISS, which a U.S. bilateral-program survey describes as having ties to PLA intelligence?
 - The APCSS Foundation (EIN 99-0350533) files 990-EZ returns, but publicly available copies typically redact donor identities (Schedule B).[^44] Unredacted contributor records held by the IRS or the foundation itself could clarify major funding streams. Congressional oversight committees, the DOD Inspector General, and GAO may be able to obtain this information through mechanisms such as congressional subpoena, IG audit request, or GAO review.
+
+---
+
+## Records That Would Clarify This
+
+The relevant custodians are ordinary: Punahou, Pacific Forum, APCSS Foundation, DKI APCSS, DBEDT, the City and County of Honolulu, the IRS, DOD Inspector General, GAO, and congressional oversight committees. MOUs, participant lists, vetting memoranda, donor records, travel reimbursements, agenda packets, facility-access logs, and safeguard policies would narrow this article. Those records would show whether the documented engagement was routine, risk-managed, poorly documented, or something stronger.
 
 ---
 

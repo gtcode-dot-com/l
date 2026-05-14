@@ -1,6 +1,6 @@
 ---
 title: "Corrections Policy"
-description: "How factual corrections and clarifications are handled for Oahu Underground reporting."
+description: "Corrections policy explaining how GTCode reviews reported factual errors, updates Oahu Underground pages, adds dated notes, and handles clarifications."
 date: 2026-02-14
 type: "policies"
 outputs: ["HTML", "Markdown"]

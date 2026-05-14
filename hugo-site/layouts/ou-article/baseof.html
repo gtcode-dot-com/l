@@ -10,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{- $siteTitle := .Site.Title -}}
     {{- $seoSiteName := .Site.Params.seo_site_name | default $siteTitle -}}
+    {{- $titleSiteName := .Site.Params.seo_title_site_name | default $seoSiteName -}}
     {{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
     {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
     {{- $pageTitle := .Params.seo_title | default .Title -}}
-    {{- $pageTitle = partial "seo/plaintext.html" (dict "value" (printf "%s · %s" $pageTitle $seoSiteName) "max" $titleMax) -}}
+    {{- $pageTitle = partial "seo/title.html" (dict "title" $pageTitle "siteName" $titleSiteName "max" $titleMax) -}}
     <title>{{ $pageTitle }}</title>
 
     <!-- Meta tags -->
@@ -70,7 +71,7 @@
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
     {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
     {{ $socialTitleSource := .Params.social_title | default (.Params.og_title | default (.Params.twitter_title | default .Title)) }}
-    {{ $socialTitle := partial "seo/plaintext.html" (dict "value" (printf "%s · %s" $socialTitleSource $seoSiteName) "max" $titleMax) }}
+    {{ $socialTitle := partial "seo/title.html" (dict "title" $socialTitleSource "siteName" $titleSiteName "max" $titleMax) }}
     {{ $socialDescriptionSource := .Params.social_description | default (.Params.og_description | default (.Params.twitter_description | default $pageDescription)) }}
     {{ $socialDescription := partial "seo/plaintext.html" (dict "value" $socialDescriptionSource "max" $descMax) }}
     <meta property="og:title" content="{{ $socialTitle }}" />
@@ -107,13 +108,14 @@
     {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
     {{ with .Params.twitter_image_alt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ end }}
 
-    <!-- Agentic Context -->
-    {{ with .Params.agentic_comment }}
+    {{ if .Site.Params.enable_agentic_context }}
+      {{ with .Params.agentic_comment }}
     <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-    {{ else }}
-    {{ with .Params.ai_agent_note }}
+      {{ else }}
+        {{ with .Params.ai_agent_note }}
     <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-    {{ end }}
+        {{ end }}
+      {{ end }}
     {{ end }}
 
     <!-- CSS Reset (inlined to eliminate render-blocking request) -->

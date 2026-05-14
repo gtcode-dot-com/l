@@ -11,9 +11,17 @@
     {{- $seoSiteName := .Site.Params.seo_site_name | default $siteTitle -}}
     {{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
     {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
+    {{- $titleSiteName := .Site.Params.seo_title_site_name | default $seoSiteName -}}
     {{- $homeSuffix := strings.TrimSpace (.Site.Params.home_title_suffix | default "") -}}
-    {{- $pageTitle := cond .IsHome (cond (ne $homeSuffix "") (printf "%s · %s" $seoSiteName $homeSuffix) $seoSiteName) (printf "%s · %s" (.Params.seo_title | default .Title) $seoSiteName) -}}
-    {{- $pageTitle = partial "seo/plaintext.html" (dict "value" $pageTitle "max" $titleMax) -}}
+    {{- $pageTitleSource := .Params.seo_title | default .Title -}}
+    {{- if eq .Kind "taxonomy" }}{{ $pageTitleSource = "Tags" }}{{ end -}}
+    {{- $pageTitle := "" -}}
+    {{- if .IsHome -}}
+      {{- $homeTitle := cond (ne $homeSuffix "") (printf "%s · %s" $seoSiteName $homeSuffix) $seoSiteName -}}
+      {{- $pageTitle = partial "seo/plaintext.html" (dict "value" $homeTitle "max" $titleMax) -}}
+    {{- else -}}
+      {{- $pageTitle = partial "seo/title.html" (dict "title" $pageTitleSource "siteName" $titleSiteName "max" $titleMax) -}}
+    {{- end -}}
     <title>{{ $pageTitle }}</title>
     {{ $enableMath := or .Params.math .Site.Params.math }}
 
@@ -29,6 +37,16 @@
     {{ if .Description }}{{ $pageDescription = .Description }}{{ $hasSpecificDescription = true }}{{ end }}
     {{ with .Params.meta_description }}{{ $pageDescription = . }}{{ $hasSpecificDescription = true }}{{ end }}
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ $hasSpecificDescription = true }}{{ end }}
+    {{ if and (not $hasSpecificDescription) (eq .Kind "taxonomy") }}
+      {{ $pageDescription = printf "Browse GTCode topic pages across investigations, articles, reports, policy notes, guides, and software repository documentation." }}
+      {{ $hasSpecificDescription = true }}
+    {{ end }}
+    {{ if and (not $hasSpecificDescription) (eq .Kind "term") }}
+      {{ $termCount := len .Pages }}
+      {{ $termLabel := cond (eq $termCount 1) "page" "pages" }}
+      {{ $pageDescription = printf "Browse %d GTCode %s tagged %s across investigations, articles, reports, guides, and software repository documentation." $termCount $termLabel .Title }}
+      {{ $hasSpecificDescription = true }}
+    {{ end }}
     {{ if and (not $hasSpecificDescription) .Summary }}
       {{ $summaryFallback := .Summary | plainify | truncate $descMax }}
       {{ if ne (strings.TrimSpace $summaryFallback) "" }}{{ $pageDescription = $summaryFallback }}{{ end }}
@@ -39,7 +57,14 @@
     {{ block "pagination-head" . }}{{ end }}
     {{ $headPaginator := .Scratch.Get "_head_paginator" }}
     {{ $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false }}
+    {{ $minIndexableTermPages := int (.Site.Params.seo_min_indexable_term_pages | default 1) }}
     {{ $robots := .Params.robots }}
+    {{ if and (not $robots) (eq .Kind "404") }}
+      {{ $robots = "noindex,follow" }}
+    {{ end }}
+    {{ if and (not $robots) (eq .Kind "term") (gt $minIndexableTermPages 1) (lt (len .Pages) $minIndexableTermPages) }}
+      {{ $robots = "noindex,follow" }}
+    {{ end }}
     {{ if and (not $robots) $headPaginator (gt $headPaginator.PageNumber 1) }}
       {{ $robots = "noindex,follow" }}
     {{ end }}
@@ -102,7 +127,7 @@
     {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" (.Params.og_image_alt | default (.Site.Params.og_image_alt | default .Title)) "max" 120) }}
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
     {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
-    {{ $socialTitle := partial "seo/plaintext.html" (dict "value" (printf "%s · %s" (.Params.og_title | default .Title) $seoSiteName) "max" $titleMax) }}
+    {{ $socialTitle := partial "seo/title.html" (dict "title" (.Params.og_title | default $pageTitleSource) "siteName" $titleSiteName "max" $titleMax) }}
     <meta property="og:title" content="{{ $socialTitle }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
     <meta property="og:description" content="{{ $pageDescription }}" />
@@ -137,13 +162,14 @@
     {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
     {{ with .Params.twitter_image_alt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ end }}
 
-    <!-- Agentic Context -->
-    {{ with .Params.agentic_comment }}
+    {{ if .Site.Params.enable_agentic_context }}
+      {{ with .Params.agentic_comment }}
     <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-    {{ else }}
-    {{ with .Params.ai_agent_note }}
+      {{ else }}
+        {{ with .Params.ai_agent_note }}
     <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-    {{ end }}
+        {{ end }}
+      {{ end }}
     {{ end }}
 
     <!-- CSS Reset (inlined to eliminate render-blocking request) -->
@@ -258,11 +284,51 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         if (window.mermaid) {
+          function fitMermaidDiagrams() {
+            document.querySelectorAll(".mermaid-scroll svg").forEach(function (svg) {
+              try {
+                var box = svg.getBBox();
+                if (!box || !box.width || !box.height) {
+                  return;
+                }
+                var padding = 18;
+                svg.setAttribute(
+                  "viewBox",
+                  [
+                    box.x - padding,
+                    box.y - padding,
+                    box.width + padding * 2,
+                    box.height + padding * 2
+                  ].join(" ")
+                );
+                svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+              } catch (error) {
+                return;
+              }
+            });
+          }
+
           window.mermaid.initialize({
-            startOnLoad: true,
+            startOnLoad: false,
             theme: "dark",
-            securityLevel: "loose"
+            securityLevel: "loose",
+            flowchart: {
+              useMaxWidth: true,
+              htmlLabels: true
+            }
           });
+          if (typeof window.mermaid.run === "function") {
+            window.mermaid
+              .run({ querySelector: ".mermaid" })
+              .then(fitMermaidDiagrams)
+              .catch(function () {
+                window.setTimeout(fitMermaidDiagrams, 300);
+              });
+          } else {
+            window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+            window.setTimeout(fitMermaidDiagrams, 300);
+          }
+          window.addEventListener("load", fitMermaidDiagrams);
         }
       });
     </script>

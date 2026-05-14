@@ -78,7 +78,9 @@
   }
 
   function enhanceAll() {
-    var tables = document.querySelectorAll(".ou-article-content table, .article-content table");
+    var tables = document.querySelectorAll(
+      ".ou-article-content table, .article-content table, .guides-page-body table, .guides-article-body table"
+    );
     for (var i = 0; i < tables.length; i++) {
       enhanceTable(tables[i]);
     }

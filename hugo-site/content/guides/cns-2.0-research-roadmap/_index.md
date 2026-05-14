@@ -78,6 +78,12 @@ END OF AI INSTRUCTIONS
 ====================================================================================================
 -->
 
+> **Historical note:** This roadmap documents the CNS 2.0 research program. The
+> current framework is **[CNS 7.1 / GCTS](/guides/cns-gcts/)**, which reframes
+> CNS around access-aware likely-truth ranking, possible worlds, record-access
+> states, and the oracle boundary. Use this roadmap as prior work unless the
+> question is specifically about CNS 2.0.
+
 In complex fields like scientific research and intelligence analysis, professionals face a constant challenge: how to make sense of incomplete, uncertain, and often contradictory information. The Chiral Narrative Synthesis (CNS) 2.0 framework was designed to address this challenge.
 
 > **The Foundational Document:** This research roadmap is designed to execute the vision laid out in the [CNS 2.0 Blueprint](./blueprint/). For a complete list of foundational works, see the project's [annotated bibliography](./bibliography/).

@@ -6,11 +6,11 @@ seo_title: "Hawaii AG, SB2107, and SIPD: The Paper Bag Inquiry"
 subtitle: "Closed Loop Part II on special counsel authority and executive self-investigation limits"
 description: "Public records compare AG testimony on SB2107 with later statements in the $35,000 paper bag inquiry and map executive-branch self-investigation limits."
 date: 2026-02-20
-lastmod: 2026-05-12
+lastmod: 2026-05-13
 author: "Ekewaka Lono"
 type: "investigation"
 published_display: "February 20, 2026"
-modified_display: "May 12, 2026"
+modified_display: "May 13, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
@@ -22,10 +22,10 @@ meta_keywords:
   - "hawaii SIPD public corruption"
   - "amemiya v sapienza"
   - "35000 paper bag hawaii"
-  - "sylvia luke bribery hawaii"
-  - "hawaii political corruption"
+  - "sylvia luke paper bag inquiry"
+  - "hawaii public corruption inquiry"
   - "hawaii closed loop accountability"
-  - "hawaii executive branch corruption"
+  - "hawaii executive branch self investigation"
   - "hawaii special prosecutor"
 
 # Series
@@ -44,13 +44,13 @@ og_description: "Public records compare AG testimony on SB2107 with later statem
 og_image: "/img/ou-paper-bag-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Illustration of a brown paper bag on a dark surface with architectural blueprints radiating outward and a doorway being bricked shut — representing the AG's contradictory positions on special counsel authority"
+og_image_alt: "Illustration of a brown paper bag on a dark surface with architectural blueprints radiating outward — representing special counsel authority and executive-branch self-investigation"
 og_type: "article"
 
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-20T00:00:00Z"
-article_modified_time: "2026-05-12T00:00:00Z"
+article_modified_time: "2026-05-13T00:00:00Z"
 article_section: "Investigations"
 article_tags:
   - "Closed Loop"
@@ -63,7 +63,7 @@ article_tags:
   - "SIPD"
   - "Special Prosecutor"
   - "Amemiya v Sapienza"
-  - "Bribery"
+  - "Public Corruption Inquiry"
   - "Conflict of Interest"
 
 # Twitter Card
@@ -75,12 +75,12 @@ twitter_image_alt: "The Paper Bag and the Architecture of Self-Investigation —
 
 # Agentic Context
 agentic_comment: |
-  ATTENTION: LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
+  EVIDENCE NOTE
 
   This document is the second installment of "The Closed Loop" investigative series. Part I ("The Zero Commission," Feb 15, 2026) documented the judicial branch closed loop. This article documents the executive branch closed loop.
 
   DOCUMENT PURPOSE:
-  Structural analysis of why Hawaii's Attorney General cannot independently investigate the Lieutenant Governor in the $35,000 bribery scandal. This is NOT an assertion of guilt — the structural argument holds regardless of whether the Lt. Governor took the money. The issue is that the investigating body reports to the person being investigated.
+  Structural analysis of public-record conflict questions surrounding Hawaii's Attorney General, the Lieutenant Governor, SB2107, and the $35,000 paper-bag inquiry. The structural argument holds regardless of whether the alleged cash-transfer episode occurred as described in federal-court references and news reporting. The issue is whether the investigating body is sufficiently arm's length from the administration under review, and whether the public record can verify that independence.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - AG Anne Lopez opposed SB2107 (2024) with written testimony calling it "ultimately unnecessary" because she already had special deputy authority (Civil Beat, KHON2, Legislature testimony archive)
@@ -116,7 +116,7 @@ structured_data_graph:
       url: "https://gtcode.com/investigation/the-paper-bag-and-the-architecture-of-self-investigation/"
       image: "/img/ou-paper-bag-og-1200x630.jpg"
       datePublished: "2026-02-20T00:00:00Z"
-      dateModified: "2026-05-12T00:00:00Z"
+      dateModified: "2026-05-13T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -163,52 +163,61 @@ structured_data_graph:
       keywords: "hawaii attorney general special prosecutor, sb2107 special counsel hawaii, hawaii SIPD public corruption, amemiya v sapienza, paper bag inquiry hawaii, executive branch self-investigation"
 ---
 
-In January 2024, [Senate Bill 2107](https://www.capitol.hawaii.gov/sessions/Session2024/Testimony/SB2107_TESTIMONY_JDC_01-25-24_.PDF) arrived at the Senate Judiciary Committee. It was a small piece of legislation — a few paragraphs amending HRS §28-8 to let the Attorney General appoint independent special counsel when an investigation "may present a conflict of interest for the Department." It formalized a power the AG arguably already possessed. A doorstop, really. The kind of bill you pass on a voice vote and forget about.
+In January 2024, [Senate Bill 2107](https://www.capitol.hawaii.gov/sessions/Session2024/Testimony/SB2107_TESTIMONY_JDC_01-25-24_.PDF) arrived at the Senate Judiciary Committee. It was a small piece of legislation — a few paragraphs amending HRS §28-8 to let the Attorney General appoint independent special counsel when an investigation "may present a conflict of interest for the Department." It formalized a power the AG arguably already possessed.
 
 Attorney General Anne Lopez did not forget about it. She submitted [written testimony](https://www.civilbeat.org/2026/02/hawaii-ag-not-giving-up-35k-paper-bag-case/) calling SB2107 "ultimately unnecessary." She already had authority under HRS § 28-8 to appoint special deputy attorneys general with specified duties and powers. She could tap any of the four county prosecutors. She could enlist the Department of Law Enforcement. The tools existed. The bill was redundant.
 
-The bill died in committee.
+The bill did not advance out of committee.
 
-Thirteen months later, on [February 13, 2026](https://bigislandnow.com/2026/02/15/hawai%CA%BBi-attorney-general-addresses-ongoing-investigation-into-possible-public-corruption/), a reporter asked Lopez why she would not appoint an independent prosecutor to investigate whether Lieutenant Governor Sylvia Luke accepted $35,000 in a paper bag from the dinner companion of an FBI informant.
+Thirteen months later, on [February 13, 2026](https://bigislandnow.com/2026/02/15/hawai%CA%BBi-attorney-general-addresses-ongoing-investigation-into-possible-public-corruption/), a reporter asked Lopez why she would not appoint an independent prosecutor to review public reporting and federal-court references concerning whether Lieutenant Governor Sylvia Luke had accepted $35,000 in a paper bag from the dinner companion of an FBI informant.
 
 "First," Lopez said, "there is no legal process in Hawaiʻi law for the appointment of a special prosecutor."
 
-The door she bricked shut in 2024, she now gestured toward in 2026, palms up, as if she had never held the trowel.
+The public record contains a tension. In 2024, the Attorney General's office opposed a bill formalizing independent special-counsel authority partly because existing tools were described as sufficient. In 2026, when the public asked for arm's-length review of the paper-bag matter, the Attorney General described the law as lacking the independent special-prosecutor mechanism critics wanted.
+
+## Editorial Method — May 13, 2026
+
+This article treats the contradiction as a public-record problem. Hidden motive remains unresolved; the ordinary explanations come first: the Attorney General may distinguish a special deputy attorney general from a fully independent special prosecutor; the office may view SIPD as the lawful internal vehicle; the legal posture may have changed once a live investigation existed; and public comments at a press conference may not map perfectly onto legislative testimony.
+
+Those explanations identify the remaining structural issue: whether Hawaii has a clear, public, arm's-length mechanism for political-corruption investigations when the Attorney General reports within the same executive branch that includes the official under scrutiny.
+
+Source posture: this article relies on public records, federal filings, official statements, legislative records, and third-party news reporting. The alleged cash transfer is treated as an allegation until adjudicated. The structural issue is independent of guilt: whether an arm's-length mechanism exists when the Attorney General's office investigates a matter involving a senior official within the same executive branch.
+
+Method context: this article is a public-record follow-up to the coverage-gap problem. Subsequent public reporting made a governance-proximity and independence question publicly testable. That does not prove prior newsroom motive, private intimidation, or coordination. It supplies a cleaner record question: whether the investigating authority is visibly arm's length from the administration under review.
 
 ## Series Navigation
 
 - [Series hub: The Closed Loop](/investigation/the-closed-loop/)
 - [Read Part I: The Zero Commission](/investigation/the-zero-commission/)
 - Part II (this page): The Paper Bag and the Architecture of Self-Investigation
-- [The Federal Layer: domestic federal network mapping](/investigation/the-federal-layer/)
 - [The Two Questions: federal investigative roadmap](/investigation/the-two-questions/)
 - [Investigations index](/investigation/)
 
 ---
 
-### I. The Architecture
+### I. The Process Design
 
-This is Part II of a series called The Closed Loop. [Part I](/investigation/the-zero-commission/) examined the judicial branch: the Commission on Judicial Conduct, all seven members appointed by the Supreme Court they are meant to police, zero sustained complaints across six consecutive fiscal years, proceedings entombed behind confidentiality rules so total that complainants cannot obtain copies of their own filings. A fortress built by its own prisoners.
+This is Part II of a series called The Closed Loop. [Part I](/investigation/the-zero-commission/) examined the judicial branch: the Commission on Judicial Conduct, all seven members appointed by the Supreme Court, zero sustained complaints across six consecutive fiscal years, and proceedings sealed behind confidentiality rules so broad that complainants cannot obtain copies of their own filings. The subject there was process design: appointment, confidentiality, conflict visibility, and disposition. The structural argument turned on public design features and public outcomes.
 
-That was one wing of the building. This is another.
+That was one part of the structure. This is another.
 
-In Hawaii, the Attorney General is not elected. She is appointed by the Governor and serves at his pleasure. Attorney General Anne Lopez was appointed by Governor Josh Green. Lieutenant Governor Sylvia Luke is Governor Green's running mate and, under the state's Plan of Organization, Lopez's hierarchical superior. When Lopez announced on [January 21, 2026](https://www.civilbeat.org/2026/01/hawaii-attorney-general-investigate-35k-bribery-case/) that her office would investigate the $35,000 scandal, she was describing a building in which the investigator's office sits one floor below the suspect's — connected by stairwell, ventilation shaft, and the plumbing of political appointment. The state's chief law enforcement officer would investigate the second-highest official in the administration that created her.
+In Hawaii, the Attorney General is not elected. She is appointed by the Governor and serves at his pleasure. Attorney General Anne Lopez was appointed by Governor Josh Green. Lieutenant Governor Sylvia Luke is Governor Green's running mate and, under the state's Plan of Organization, Lopez's hierarchical superior. When Lopez announced on [January 21, 2026](https://www.civilbeat.org/2026/01/hawaii-attorney-general-investigate-35k-bribery-case/) that her office would investigate the $35,000 paper-bag matter, the public-record conflict question was straightforward: the state's chief law enforcement officer would investigate a senior official in the administration that appointed her.
 
 Retired federal public defender [Alexander Silvert](https://www.civilbeat.org/2026/02/governor-must-appoint-an-independent-prosecutor-in-bribery-case/) stated the geometry: "Because they're being asked to investigate their immediate supervisor boss, the lieutenant governor, it creates a clear conflict of interest."
 
-Lopez's rebuttal was a kind of architectural denial — the assertion that the rooms are not connected, that the stairwell does not exist. "There is no conflict because of my prosecutorial independence," she told reporters. ["I really want people to understand that I can't be influenced."](https://mauinow.com/2026/02/13/hawai%CA%BBi-attorney-general-addresses-ongoing-investigation-into-possible-public-corruption/)
+Lopez's answer was institutional: "There is no conflict because of my prosecutorial independence," she told reporters. ["I really want people to understand that I can't be influenced."](https://mauinow.com/2026/02/13/hawai%CA%BBi-attorney-general-addresses-ongoing-investigation-into-possible-public-corruption/)
 
-In Part I, the closed loop was a design problem: the Supreme Court appointing its own overseers. In Part II, the same blueprint has been transposed to the executive branch: the Governor appointing the person who decides whether his administration faces criminal charges. The nameplate on the door changes. The floorplan does not.
+In Part I, the closed loop was a design problem: the Supreme Court appointing its own overseers. In Part II, the executive-branch design issue is the Governor appointing the person who decides whether his administration faces criminal charges.
 
 ---
 
 ### II. The Contradiction
 
-What follows is documented. It requires no interpretation. The record contradicts itself and the contradiction has a name attached to it.
+What follows is documented. The legal meaning can be disputed. The public-record tension cannot.
 
 **2024.** Senate Bill 2107. Senate Judiciary Committee, [January 25, 2024](https://www.capitol.hawaii.gov/sessions/Session2024/Testimony/SB2107_TESTIMONY_JDC_01-25-24_.PDF). The AG's office submits written testimony in opposition. The argument: the bill is unnecessary. The AG already has authority under HRS § 28-8 to appoint special deputy attorneys general with specified duties and powers. The AG can "tap any of the four county prosecutor's offices or enlist the Hawaiʻi Department of Law Enforcement." Conclusion: ["This bill, while well-intended, is ultimately unnecessary."](https://www.civilbeat.org/2026/02/hawaii-ag-not-giving-up-35k-paper-bag-case/)
 
-The bill died after the AG's testimony helped make it unnecessary in the committee record.
+The bill did not advance after the AG's testimony helped make it unnecessary in the committee record.
 
 **2026.** Press conference, Department of the Attorney General, February 13. Forty organizations comprising the [Clean Elections Hawaii Coalition](https://www.hawaiipublicradio.org/local-news/2026-02-13/hawaii-ag-says-no-conflict-her-investigation-of-alleged-35k-lawmaker-exchange) — Common Cause Hawaii, the League of Women Voters, the ACLU of Hawaii among them — have demanded an independent prosecutor. Lopez's response:
 
@@ -216,31 +225,31 @@ The bill died after the AG's testimony helped make it unnecessary in the committ
 
 She continued: ["We can hire special deputy AG, an SDAG. The SDAG is still accountable to me and my department. It doesn't provide the special prosecutor that people are looking for — somebody that can act completely independent of this department."](https://www.kitv.com/news/hawaii-attorney-general-defends-bribery-investigation-of-unknown-lawmaker/article_fa2bfb7d-1eed-4b14-9dcd-9758136cc949.html)
 
-Read it again. In 2024, the power existed and the bill was unnecessary. In 2026, with her own boss under scrutiny, the power does not exist and independence is structurally impossible. The bill that would have formalized the mechanism lies dead in committee after the office opposed it.
+In 2024, the Attorney General's office described existing authority as sufficient reason to oppose the bill. In 2026, with a senior executive-branch official under scrutiny, the Attorney General said the legal process critics wanted did not exist and that a special deputy attorney general would remain accountable to her department. The bill that would have formalized an independent mechanism did not advance out of committee after the office opposed it.
 
-This is not a change of mind. A change of mind requires acknowledging the first position. This is the quiet removal of a tool from a toolbox when the tool becomes inconvenient — and the subsequent insistence that the toolbox was always empty.
+The strongest innocent explanation is that these are different legal categories: special deputy attorney general authority may be available while fully independent special-prosecutor authority remains absent. That distinction matters. If that is the distinction, it should be stated plainly, because the public issue is independence and the label attached to the lawyer.
 
-Silvert, in his [February 15 Civil Beat essay](https://www.civilbeat.org/2026/02/governor-must-appoint-an-independent-prosecutor-in-bribery-case/), named it: "Presenting one position to a Senate committee to have a bill killed in 2024 and then taking the exact opposite position in 2026 to now justify why the office cannot appoint a special prosecutor raises troubling questions regarding the office's candor and ability to act in the public's best interest."
+Silvert, in his [February 15 Civil Beat essay](https://www.civilbeat.org/2026/02/governor-must-appoint-an-independent-prosecutor-in-bribery-case/), argued that the office had presented one position to a Senate committee in 2024 and the opposite position in 2026, raising questions about candor and public-interest decision-making.
 
-Retired Judge [Randal Lee](https://www.hawaiinewsnow.com/2026/02/13/attorney-general-address-ongoing-bribery-case-investigation/) did not bother with diplomacy: "When she says these things, which is factually incorrect, I think it questions her truth and veracity."
+Retired Judge [Randal Lee](https://www.hawaiinewsnow.com/2026/02/13/attorney-general-address-ongoing-bribery-case-investigation/) stated directly: "When she says these things, which is factually incorrect, I think it questions her truth and veracity."
 
-This is how closed loops maintain themselves. The legal justification migrates to wherever it needs to be to ensure the investigation never leaves the building. The rationale is not a principle. It is a thermostat.
+This is the closed-loop problem in practical form. The legal justification can change depending on whether the question is legislative reform or a live investigation, while the investigation remains inside the same executive branch.
 
 ---
 
 ### III. The Precedent She's Ignoring
 
-Lopez's position — that a verbal declaration of independence neutralizes a structural conflict — is not merely unusual. It runs headlong into forty-five years of Hawaii Supreme Court jurisprudence, jurisprudence the Court itself has recently reaffirmed.
+Lopez's position — that a verbal declaration of independence neutralizes a structural conflict — conflicts with forty-five years of Hawaii Supreme Court jurisprudence, jurisprudence the Court itself has recently reaffirmed.
 
-[*Amemiya v. Sapienza*, 63 Haw. 424, 629 P.2d 1126 (1981)](https://law.justia.com/cases/hawaii/supreme-court/1981/6463-2.html). The Kukui Plaza bribery scandal. Developer Hal Hansen allegedly funneled approximately $500,000 to Honolulu Mayor Frank Fasi through campaign contributions in exchange for a redevelopment contract. City Prosecutor Maurice Sapienza — appointed by the Mayor — was asked to present the matter to the grand jury. Attorney General Ronald Amemiya looked at that arrangement and saw what it was: a man investigating his patron. Amemiya moved to disqualify Sapienza and his entire office. Sapienza refused to step aside. Amemiya obtained a circuit court injunction. A special prosecutor was appointed — Grant B. Cooper, a prominent California trial lawyer [recommended by former Watergate special prosecutor Leon Jaworski](https://www.washingtonpost.com/archive/politics/1977/12/05/hawaiis-political-wars/e637dbfb-7c6a-4f25-a48a-cbe881c22990/).
+[*Amemiya v. Sapienza*, 63 Haw. 424, 629 P.2d 1126 (1981)](https://law.justia.com/cases/hawaii/supreme-court/1981/6463-2.html). The Kukui Plaza public-corruption matter. Developer Hal Hansen allegedly funneled approximately $500,000 to Honolulu Mayor Frank Fasi through campaign contributions in exchange for a redevelopment contract. City Prosecutor Maurice Sapienza — appointed by the Mayor — was asked to present the matter to the grand jury. Attorney General Ronald Amemiya looked at that arrangement and saw what it was: a man investigating his patron. Amemiya moved to disqualify Sapienza and his entire office. Sapienza refused to step aside. Amemiya obtained a circuit court injunction. A special prosecutor was appointed — Grant B. Cooper, a prominent California trial lawyer [recommended by former Watergate special prosecutor Leon Jaworski](https://www.washingtonpost.com/archive/politics/1977/12/05/hawaiis-political-wars/e637dbfb-7c6a-4f25-a48a-cbe881c22990/).
 
 The Hawaii Supreme Court affirmed. The holding:
 
 > **"Because public trust in the scrupulous administration of justice and in the integrity of the judicial process is paramount, any serious doubt will be resolved in favor of disqualification."**
 
-The Court did not stop there: "Where the public prosecutor has refused to act and such refusal amounts to a serious dereliction of duty on his part, or where, in the unusual case, it would be highly improper for the public prosecutor and his deputies to act, the attorney general may [supersede]."
+The Court added: "Where the public prosecutor has refused to act and such refusal amounts to a serious dereliction of duty on his part, or where, in the unusual case, it would be highly improper for the public prosecutor and his deputies to act, the attorney general may [supersede]."
 
-This is not a case buried in the basement of Westlaw. The Hawaii Supreme Court cited *Amemiya* extensively in [*McGuire v. County of Hawaiʻi* (2025)](https://www.naag.org/attorney-general-journal/recent-attorney-general-powers-and-duties-cases-in-brief-late-2024-2/), confirming it remains active, authoritative, governing law.
+The precedent remains current. The Hawaii Supreme Court cited *Amemiya* extensively in [*McGuire v. County of Hawaiʻi* (2025)](https://www.naag.org/attorney-general-journal/recent-attorney-general-powers-and-duties-cases-in-brief-late-2024-2/), confirming it remains active, authoritative, governing law.
 
 The structural parallel requires no embellishment. It is precise:
 
@@ -254,7 +263,7 @@ The structural parallel requires no embellishment. It is precise:
 
 In 1981, the Attorney General was the one *demanding* that a conflicted prosecutor step aside. In 2026, the Attorney General is the one *refusing* to step aside — from an identical conflict, in the same jurisdiction, under the same constitutional framework.
 
-The building hasn't changed. Only the person standing in the doorway, blocking it.
+The precedent leaves modern facts for modern review while setting the public-trust standard: serious doubt should favor disqualification.
 
 ---
 
@@ -275,15 +284,15 @@ SIPD has brought cases. They should be enumerated plainly, because the pattern i
 - **December 2025:** [Alohi Kaupu-Grace bank teller embezzlement](https://www.hawaiinewsnow.com/2025/12/13/hawaii-bank-teller-indicted-embezzling-more-than-40000-customers/) (~$44K from Bank of Hawaii). Not public corruption.
 - **January 2026:** [HPD Officers Serrao & Kenolio](https://www.hawaiitribune-herald.com/2025/08/08/hawaii-news/ag-seeks-records-involving-4-cops/) — perjury, evidence tampering. Closest to public integrity. Not political corruption.
 
-Bank tellers. Nonprofit bookkeepers. A mileage-form cheat in Hilo. The unit created to catch the next Milton Choy has spent four years prosecuting people who could not afford lawyers good enough to make the case complicated. In a state rocked by [multimillion-dollar COVID testing fraud](https://www.civilbeat.org/2026/02/luke-donor-and-friends-cashed-in-on-city-funded-covid-testing-program/), unreported campaign contributions from federally investigated lobbyists, and the $35,000 paper bag exchange — SIPD has produced <strong>zero prosecutions of elected state officials, cabinet-level appointees, or influential political donors</strong>. The highest-profile public corruption target it has reached is a Department of Education complex area business manager charged with [falsifying mileage and parking forms to steal approximately $7,000](https://ag.hawaii.gov/wp-content/uploads/2023/02/News-Release-2023-07.pdf).
+Bank tellers. Nonprofit bookkeepers. A mileage-form case in Hilo. SIPD has brought public cases, and some involve public employees or campaign finance. But in a state rocked by [multimillion-dollar COVID testing fraud](https://www.civilbeat.org/2026/02/luke-donor-and-friends-cashed-in-on-city-funded-covid-testing-program/), unreported campaign contributions from federally investigated lobbyists, and the $35,000 paper-bag exchange, the public record identified for this article shows <strong>zero SIPD prosecutions of elected state officials, cabinet-level appointees, or influential political donors</strong>. The highest-profile public-employee corruption target it has reached is a Department of Education complex area business manager charged with [falsifying mileage and parking forms to steal approximately $7,000](https://ag.hawaii.gov/wp-content/uploads/2023/02/News-Release-2023-07.pdf).
 
-Seven thousand dollars. That is the ceiling.
+High-level political-corruption cases may require federal tools, long timelines, cooperating witnesses, grand-jury secrecy, or nonpublic evidence. The public performance record still matters: four years of visible SIPD output have yet to show the state doing what SIPD was created after the Cullen-English scandal to do, which is build major political-corruption cases without waiting for the FBI. Bad faith remains a separate question.
 
 Retired Judge [Randal Lee](https://www.hawaiinewsnow.com/2026/02/13/attorney-general-address-ongoing-bribery-case-investigation/) heard Lopez claim that SIPD "has been investigating and prosecuting public corruption" and responded: "When she says these things, which is factually incorrect, I think it questions her truth and veracity. And then, in essence, it heightens the lack of transparency."
 
-There is one more thing. [SB2930 SD2, Section 3](https://www.capitol.hawaii.gov/sessions/session2022/bills/SB2930_SD2_.HTM) required SIPD to submit annual reports to the Legislature for 2023, 2024, and 2025 — case data, personnel numbers, budget information, policy recommendations. No published SIPD annual reports could be located through the AG's website, the Legislature's website, or news archives. Whether these reports were filed confidentially, filed and never published, or never filed at all is unknown. The statute required them. The public cannot find them. The unit created to end Hawaii's reliance on federal prosecutors for public corruption cases has no publicly verifiable performance record.
+There is one more thing. [SB2930 SD2, Section 3](https://www.capitol.hawaii.gov/sessions/session2022/bills/SB2930_SD2_.HTM) required SIPD to submit annual reports to the Legislature for 2023, 2024, and 2025 — case data, personnel numbers, budget information, policy recommendations. No published SIPD annual reports could be located through the AG's website, the Legislature's website, or news archives. Whether these reports were filed confidentially, filed and never published, or never filed at all is unknown. The statute required them. The public cannot find them. That limits public verification of the unit created to reduce Hawaii's reliance on federal prosecutors for public corruption cases.
 
-The loop is closed from the inside.
+That is the structural gap.
 
 ---
 
@@ -293,19 +302,19 @@ Understanding why the structural failure matters requires understanding what the
 
 On [January 20, 2022](https://www.civilbeat.org/2025/03/influential-hawaii-lawmaker-took-35000-under-fbi-surveillance/), former State Representative Ty Cullen — by then a cooperating FBI informant, wired and recording — attended a dinner with lobbyist Tobi Solidum, Solidum's stepdaughter Kristen Pae, and an unnamed "influential state legislator." According to federal court documents filed in Cullen's sentencing, Solidum handed the legislator approximately $35,000 in a paper bag.
 
-A paper bag. Not a wire transfer, not a bundled contribution through a PAC, not even a check with a memo line left tactfully blank. A paper bag at a dinner table. The FBI was recording.
+The alleged form was low-tech: a paper bag at a dinner table. The FBI was recording.
 
-Lieutenant Governor Sylvia Luke — at the time the House Finance Committee Chair, the most powerful budget position in the Legislature — [acknowledged on February 10, 2026](https://www.hawaiinewsnow.com/2026/02/10/lieutenant-governor-says-she-may-be-influential-state-legislator-referred-federal-case/) that "the circumstances are that it could be me." She simultaneously denied receiving $35,000 in cash or a paper bag, stating she received two $5,000 checks from Solidum and Pae at the dinner — totaling $10,000, not $35,000. She returned the checks in March 2022 after Cullen was federally charged — but [did not report either the donations or the refunds](https://www.civilbeat.org/2026/02/sylvia-luke-quietly-took-thousands-from-this-lobbyist-linked-to-cullen/) on her campaign spending filings until Civil Beat asked about them in February 2026. Four years of silence, broken only by a reporter's phone call. Her campaign simultaneously discovered a $6,000 donation from Brant Tanaka in 2021 that had been deposited but never recorded. Total unreported: $16,000.
+Lieutenant Governor Sylvia Luke — at the time the House Finance Committee Chair, the most powerful budget position in the Legislature — [acknowledged on February 10, 2026](https://www.hawaiinewsnow.com/2026/02/10/lieutenant-governor-says-she-may-be-influential-state-legislator-referred-federal-case/) that "the circumstances are that it could be me." She simultaneously denied receiving $35,000 in cash or a paper bag, stating she received two $5,000 checks from Solidum and Pae at the dinner — totaling $10,000. She returned the checks in March 2022 after Cullen was federally charged. Her campaign spending filings omitted both the donations and the refunds until Civil Beat asked about them in February 2026. Four years of silence, broken only by a reporter's phone call. Her campaign simultaneously discovered a $6,000 donation from Brant Tanaka in 2021 that had been deposited but never recorded. Total unreported: $16,000.
 
 During the week of January 20–27, 2022, Luke's campaign reported $36,350 in deposits from 16 individuals and organizations. According to [Civil Beat's analysis of state campaign finance data](https://www.civilbeat.org/2026/01/we-asked-hawaii-lawmakers-did-you-take-35000-in-a-paper-bag/), she was the only lawmaker to report receiving at least $35,000 within the seven-day reporting window of the federal transaction. The $10,000 from Solidum and Pae was not included in that $36,350 — those were the unreported donations — meaning the actual total was higher.
 
-Whether the $35,000 in the paper bag and the $36,350 in deposits are the same money is a question for forensic accountants and, eventually, a grand jury. But for the purposes of this structural analysis, the answer is irrelevant. The investigation is being conducted through an office structurally tied to the executive branch figure under scrutiny. That conflict is load-bearing. It holds whether Luke is innocent or guilty.
+Whether the $35,000 in the paper bag and the $36,350 in deposits are the same money is a question for forensic accountants and, eventually, a grand jury. For this structural analysis, the answer is immaterial. The investigation is being conducted through an office structurally tied to the executive branch figure under scrutiny. That conflict question exists whether Luke is innocent or guilty.
 
 ---
 
 ### VI. Where the Money Came From
 
-The $35,000 did not materialize at a dinner table. It had an origin. Trace it backward and you arrive at a pandemic, a nonprofit, and an Ohio startup that nobody had heard of.
+The alleged $35,000 had an origin story. Trace the surrounding money backward and you arrive at a pandemic, a nonprofit, and an Ohio startup that nobody had heard of.
 
 In early 2020, lobbyist Tobi Solidum — working as a consultant for the [National Kidney Foundation of Hawaiʻi (NKFH)](https://www.civilbeat.org/2026/02/luke-donor-and-friends-cashed-in-on-city-funded-covid-testing-program/) — approached then-Mayor Kirk Caldwell's administration with a proposal: give the foundation a no-bid emergency contract and it would stand up a COVID testing lab at Daniel K. Inouye International Airport. Caldwell agreed. No competitive bid. No vetting of downstream subcontractors. Emergency procurement.
 
@@ -313,7 +322,7 @@ Before the pandemic, NKFH's annual revenue never exceeded $3 million. Between FY
 
 The ecology of this arrangement deserves mapping. Solidum's company, Geopolicy Development Group — registered in Las Vegas under stepdaughter Pae's name — held equity in Capture Diagnostics. The [Green Coral Trust](https://www.staradvertiser.com/2026/02/13/hawaii-news/lobbyist-at-center-paper-bag-case-under-federal-investigation/), controlled by Solidum, Pae, and a Beverly Hills attorney, owned 5.46% of Capture and 80% of Geopolicy. In September 2022, the trust received a dividend of approximately $995,000. An email from Capture's CEO to the trust's attorney had the subject line "Tobi Dividend." Capture's bankruptcy filings later alleged Solidum overbilled the company by [$7 million](https://www.civilbeat.org/2026/02/luke-donor-and-friends-cashed-in-on-city-funded-covid-testing-program/) in consulting fees.
 
-A nonprofit kidney foundation. A no-bid pandemic contract. An Ohio lab charging six times the market rate. A Las Vegas shell company. A Beverly Hills trust. A million-dollar dividend. A $7 million overbilling claim. And from somewhere inside this apparatus, $35,000 found its way into a paper bag and across a dinner table while the FBI listened.
+A nonprofit kidney foundation. A no-bid pandemic contract. An Ohio lab charging six times the market rate. A Las Vegas shell company. A Beverly Hills trust. A million-dollar dividend. A $7 million overbilling claim. Against that backdrop, federal filings describe a $35,000 paper-bag exchange at a dinner table while the FBI listened.
 
 Milton Choy — the same man whose bribes to Cullen and English created the federal scandal that led to SIPD's creation — was also embedded in this network. His company, H2O Process Systems, received approximately [$968,000](https://www.staradvertiser.com/2026/02/13/hawaii-news/lobbyist-at-center-paper-bag-case-under-federal-investigation/) from NKFH for sanitization and hazardous waste services at the airport lab. Civil Beat documented [19 occasions between 2015 and 2021](https://www.civilbeat.org/2026/02/sylvia-luke-quietly-took-thousands-from-this-lobbyist-linked-to-cullen/) where Solidum and Choy donated to the same political candidates on the same dates, often in the same amounts — combined total: $31,450 to matching candidates. Overall, Choy gave $160,150 and Solidum gave $108,626 to state and county lawmakers between 2014 and 2022.
 
@@ -321,48 +330,48 @@ Choy was convicted federally of bribing Cullen and English, and separately of pa
 
 Solidum is [believed to be in the Philippines](https://www.hawaiinewsnow.com/2026/02/12/sylvia-lukes-controversial-donor-was-already-under-federal-investigation/). His phone is disconnected. He is no longer at his last known Honolulu address. Capture Diagnostics' bankruptcy filings noted the $7 million claim against him was "probably uncollectable because his whereabouts were unknown." He has not been criminally charged. He is described as ["a target of an ongoing federal public corruption and COVID-19 fraud probe."](https://www.hawaiitribune-herald.com/2026/02/14/hawaii-news/hawaii-attorney-general-says-subpoenas-issued-in-criminal-public-corruption-case/)
 
-Same people. Same dinner. Same money. And the state's anti-corruption unit — tasked with following the thread — reports to the AG, who reports to the Governor, who ran on a ticket with the person the thread leads to. The architecture was not designed to fail. It was designed to succeed at something other than accountability.
+The state anti-corruption unit tasked with following these threads reports within the Attorney General's office. The Attorney General reports within the same executive branch as the official under scrutiny. That defines the conflict geometry. Guilt, innocence, and charging decisions require case-specific evidence and prosecutorial judgment.
 
 ---
 
 ### VII. The Pattern
 
-The state of Hawaii did not catch Ty Cullen. The FBI did. The state did not catch J. Kalani English. The FBI did. The state did not catch HPD Chief Louis Kealoha and Deputy Prosecutor Katherine Kealoha — the [greatest corruption case in Hawaii history](https://www.civilbeat.org/2019/05/from-flying-carpets-to-the-kealohas-hawaiis-rich-history-of-scandal/), involving a fabricated mailbox theft, framed family members, corrupt officers, and a $250,000 illegal payout orchestrated by three former city officials. The FBI did. The state did not detect the $35,000 in the paper bag. An improperly redacted federal sentencing memo and a Civil Beat reporter did.
+Federal investigators built the Ty Cullen case. Federal investigators built the J. Kalani English case. Federal investigators built the Kealoha case — the [greatest corruption case in Hawaii history](https://www.civilbeat.org/2019/05/from-flying-carpets-to-the-kealohas-hawaiis-rich-history-of-scandal/), involving a fabricated mailbox theft, framed family members, corrupt officers, and a $250,000 illegal payout orchestrated by three former city officials. The paper-bag allegation entered public view through an improperly redacted federal sentencing memo and Civil Beat reporting.
 
-This is the pattern. Federal investigators build the case, collect the evidence, wire the informants, record the dinners. Then they hand the wreckage to the state. The state stands over it with a broom and a dustpan and a mandate to clean house and somehow the house is never clean.
+The public records show a recurring sequence. Federal investigators built several major cases, collected key evidence, used cooperating witnesses, and recorded conversations. The state then had to decide what it could do with the material it received.
 
 AG Lopez herself acknowledged this history when announcing SIPD's takeover of the investigation. ["Prior to 2022,"](https://spectrumlocalnews.com/hi/hawaii/news/2026/02/13/hawaii-ag-says--no-conflict--in-alleged-35k-bribery-investigation) she said, "the state relied on the federal government to investigate and prosecute public corruption."
 
-She offered this as an argument for SIPD — her internal unit, created in 2022 — being the solution. But SIPD's four-year record says something else. It says the state built a new room in the same building and called it a separate structure. The federal government built the English/Cullen case. The federal government built the Kealoha case. The federal government recorded the paper bag exchange. Then the federal government handed the evidence to the state, and the state is investigating it with an office that answers to the administration implicated by the evidence.
+She offered this as an argument for SIPD — her internal unit, created in 2022 — being the solution. But SIPD's public four-year record leaves a narrower issue: whether the state has created an arm's-length public-corruption capacity or an internal division whose independence cannot be verified in the highest-level cases. The federal government built the English/Cullen case. The federal government built the Kealoha case. The federal government recorded the paper-bag exchange. Then the federal government handed evidence to the state, and the state is investigating it through an office that reports within the administration implicated by the evidence.
 
-The initial federal refusal to share evidence with SIPD was not a bureaucratic oversight. It was an assessment. Federal law enforcement understood that injecting sensitive evidence into a system where the AG reports to the Governor — who relies on the targets of the investigation for political survival — creates a security risk. They eventually reversed course, reportedly after determining the alleged conduct did not constitute a federal crime but might violate state campaign finance law. The evidence was shared. The structural conflict was not addressed.
+The initial federal refusal to share evidence with SIPD may have had ordinary explanations: jurisdictional uncertainty, evidentiary sensitivity, privilege, charging evaluation, witness protection, or routine federal-state coordination. It may also have reflected concern about injecting sensitive evidence into a state process with unresolved conflict questions. They eventually reversed course, reportedly after determining federal criminal elements were absent while possible state campaign-finance issues remained. The evidence was shared. The structural conflict question remained.
 
-The evidence crossed the threshold. The architecture that makes the threshold a trap did not change.
+The evidence crossed the threshold. The public-record independence problem remained.
 
 ---
 
 ### VIII. Three Loops
 
-In Part I, I mapped the judicial closed loop. Here is the executive loop alongside it. And beside that, a third — law enforcement — because the topology of accountability in this state has a fractal quality. The pattern repeats at every scale.
+In Part I, I mapped the judicial closed loop. Here is the executive loop alongside it. And beside that, a third — law enforcement. The shared vulnerability is structural: oversight routed through bodies close to the institution under review.
 
 | | **Judicial (CJC)** | **Executive (AG/SIPD)** | **Law Enforcement (HPD/SHOPO)** |
 |---|---|---|---|
 | **Who appoints oversight?** | Supreme Court appoints all 7 CJC members | Governor appoints the AG | Police Commission: 7 members appointed by Mayor |
 | **Who does oversight report to?** | Supreme Court | Governor | Arbitration decisions are final and binding |
 | **Track record** | 0 sustained complaints in 6 years | 0 political corruption prosecutions in 4 years | [~75% of fired officers reinstated](https://www.civilbeat.org/2021/11/police-arbitration-decisions-are-raising-concerns-throughout-the-country/) via arbitration |
-| **Structural blocker** | All members appointed by the overseen court | AG investigates her boss's running mate | [SHOPO contract](https://www.civilbeat.org/2021/03/why-the-public-needs-to-know-more-about-police-contract-talks/) provisions gut discipline |
-| **Reform attempted?** | HB 3056 (2008) — died in committee | SB2107 (2024) — killed by AG's testimony | Contract expired June 2025; renegotiation pending |
-| **Confidentiality shield** | Rule 8.4 seals everything; UIPA exemption | Investigations unconfirmable until charges filed | Arbitration proceedings private; union fights disclosure |
+| **Structural blocker** | All members appointed by the overseen court | AG investigates her boss's running mate | [SHOPO contract](https://www.civilbeat.org/2021/03/why-the-public-needs-to-know-more-about-police-contract-talks/) provisions constrain discipline |
+| **Reform attempted?** | HB 3056 (2008) — did not advance | SB2107 (2024) — opposed by AG testimony; did not advance | Contract expired June 2025; renegotiation pending |
+| **Confidentiality rule** | Rule 8.4 seals everything; UIPA exemption | Investigations unconfirmable until charges filed | Arbitration proceedings private; union contests disclosure |
 
 The third column. Civil Beat's [analysis of 58 arbitration awards over 25 years](https://www.civilbeat.org/2021/11/police-arbitration-decisions-are-raising-concerns-throughout-the-country/) found HPD ranks fourth nationally in reinstating fired officers. The SHOPO contract — which [expired June 30, 2025](https://www.civilbeat.org/2021/03/why-the-public-needs-to-know-more-about-police-contract-talks/) and is presumably under renegotiation — includes 30-minute interrogation limits, on-duty questioning requirements, a one-year statute of limitations on misconduct allegations, and mandatory purging of derogatory material from personnel files after four years. Sergeant Darren Cachola, terminated for assaulting a woman on video in 2014, was [reinstated in 2018](https://www.publicfirstlaw.org/case/arbitration/) after an arbitrator called it a "playful sparring match." Daniel Sellers, convicted in the Kealoha corruption case, was [reinstated through arbitration](https://www.civilbeat.org/2021/11/convicted-cop-in-kealoha-case-gets-his-job-back-in-arbitration/). A 2024 city audit found the Honolulu Police Commission's oversight ["inconsistent and ineffective"](https://www.civilbeat.org/2024/08/audit-calls-honolulu-police-commissions-oversight-inconsistent-and-ineffective/) — a "black box" where complaint outcomes disappear.
 
-Three branches. Three loops. The same blueprint stamped onto different institutional facades. Overseers are appointed by the institutions they review. Records are sealed by the institutions that produced them. Reform attempts can die inside the same political architecture they were designed to constrain. The city is built on these loops. They are the foundation. The rest is decoration.
+Three branches. Three loops. Different legal regimes, but recurring structural features. Overseers are appointed by or routed through the institutions they review. Records are often sealed by the institutions that produced them. Reform attempts can fail inside the same political system they were designed to constrain. The comparison is structural.
 
 ---
 
-### IX. The Walls
+### IX. Confidentiality Barriers
 
-Every accountability mechanism in Hawaii operates behind a confidentiality wall. This is not an incidental feature. It is structural. The walls are load-bearing.
+Every accountability mechanism in Hawaii operates behind a confidentiality barrier. The confidentiality barriers are structural load-bearing features of the accountability system.
 
 The **Commission on Judicial Conduct** seals everything under [Rule 8.4](https://www.courts.state.hi.us/wp-content/uploads/2025/07/rsch_ada.pdf). The Office of Information Practices [ruled it exempt](https://oip.hawaii.gov/f22-02/) from public records law. The public cannot see in. The subjects cannot see out.
 
@@ -370,35 +379,42 @@ The **AG/SIPD** operates under blanket policy: the Department "will not make sta
 
 The **State Ethics Commission** is confidential by statute. [HRS §84-31(b)](https://www.capitol.hawaii.gov/hrscurrent/vol02_ch0046-0115/hrs0084/hrs_0084-0031.htm): "The commission shall investigate all charges on a confidential basis... proceedings at this stage shall not be public." Every complaint sealed until a formal contested case hearing — if one ever occurs. The Ethics Commission currently has two of its five seats vacant, with the application deadline [extended to March 13, 2026](https://www.courts.state.hi.us/news_and_reports/2026/02/deadline-extended-to-submit-applications-for-state-ethics-commission-2). New commissioners will be nominated by the Judicial Council and appointed by the Governor — the same Governor whose administration is under investigation. Another loop, nested inside the others.
 
-The **Campaign Spending Commission** operates under similar opacity. Its executive director [stated in July 2025](https://www.civilbeat.org/2026/02/sylvia-luke-quietly-took-thousands-from-this-lobbyist-linked-to-cullen/) that the agency did not want to "jeopardize criminal investigations" and would wait until "feasible" to pursue civil violations. Deference as paralysis.
+The **Campaign Spending Commission** operates under similar opacity. Its executive director [stated in July 2025](https://www.civilbeat.org/2026/02/sylvia-luke-quietly-took-thousands-from-this-lobbyist-linked-to-cullen/) that the agency did not want to "jeopardize criminal investigations" and would wait until "feasible" to pursue civil violations. Deferral can limit public visibility.
 
-**SHOPO** aggressively fights disclosure of arbitration proceedings. In the Cachola case, the union sued to block release of the arbitration decision. The Hawaii Supreme Court eventually ruled in [*SHOPO v. SPJ*](https://www.courts.state.hi.us/wp-content/uploads/2021/09/SCAP-19-0000450ada.pdf) that police misconduct records have minimal privacy protection — but the union continues to resist disclosure as its default posture. The ruling changed the law. It did not change the behavior.
+**SHOPO** regularly contests disclosure of arbitration proceedings. In the Cachola case, the union sued to block release of the arbitration decision. The Hawaii Supreme Court eventually ruled in [*SHOPO v. SPJ*](https://www.courts.state.hi.us/wp-content/uploads/2021/09/SCAP-19-0000450ada.pdf) that police misconduct records have minimal privacy protection. The union's disclosure-resistance posture continued after the ruling.
 
-**Grand jury** proceedings are sealed under HRPP Rule 6(e). In a system where the AG controls what evidence reaches the grand jury, and the AG has a structural interest in the outcome, grand jury secrecy ceases to function as a protection for witnesses and becomes an insulation layer for the prosecutor. A conflicted AG with sole control of the presentation can under-present evidence, decline to call witnesses, frame questions to steer away from an indictment — all of it invisible, all of it unreviewable, all of it behind the wall.
+**Grand jury** proceedings are sealed under HRPP Rule 6(e). Grand-jury secrecy protects witnesses and investigations. It also means the public cannot evaluate presentation choices. In a structurally conflicted matter, that creates a specific risk: under-presenting evidence, declining to call witnesses, or narrowing questions could be indistinguishable from ordinary prosecutorial judgment from the outside.
 
-At every checkpoint — judicial, executive, law enforcement, ethics, campaign finance, grand jury — confidentiality provisions prevent the public from verifying whether accountability mechanisms are functioning. The system asserts that it works. No one can check. The walls were built to protect the process from outside interference. In practice, they protect the process from outside observation. The distinction is the entire ballgame.
+At every checkpoint — judicial, executive, law enforcement, ethics, campaign finance, grand jury — confidentiality provisions limit public verification of whether accountability mechanisms are functioning. Those barriers may have been built to protect the process from outside interference. In practice, they can also protect the process from outside observation.
 
 ---
 
-### X. The Question That Answers Itself
+### X. The Independence Question
 
-This article is not about whether Sylvia Luke took $35,000 in a paper bag. The structural argument does not depend on the answer.
+The structural argument rests on the independence, visibility, and public trustworthiness of the process used to evaluate the $35,000 paper-bag allegation, regardless of the allegation's ultimate truth.
 
-If she is innocent, an investigation conducted by her political subordinate will carry the taint of a whitewash permanently. No exoneration will be complete. The public will measure the verdict against the architecture that produced it and find both insufficient.
+If she is innocent, an investigation conducted by her political subordinate may still carry the appearance of inadequate internal review. Public exoneration is weaker when the reviewer is not visibly arm's length.
 
-If she is guilty, an investigation conducted by her political subordinate faces overwhelming institutional incentives to narrow the scope, undercharge, or close the file quietly — all behind a confidentiality wall that makes each of these outcomes indistinguishable from the others.
+If she is guilty, an investigation conducted by her political subordinate faces institutional incentives to narrow the scope, undercharge, or close the file quietly — all behind a confidentiality barrier that can make those outcomes hard to distinguish from ordinary investigative judgment.
 
-Either way, the building fails. That is what it means to talk about architecture. It is not about the people in the rooms. It is about the rooms.
+Either way, the structure weakens public confidence. The process question is which office, authority, disclosure rule, and conflict screen govern the decision.
 
 The [Clean Elections Hawaii Coalition](https://www.hawaiipublicradio.org/local-news/2026-02-13/hawaii-ag-says-no-conflict-her-investigation-of-alleged-35k-lawmaker-exchange) — 40 organizations — stated it: "The Executive Branch cannot investigate itself. Public trust in government has been severely impacted by recent revelations. Restoring public trust requires an appropriate arm's length distance from the interested parties in the Executive Branch."
 
 The Hawaii Supreme Court stated the same principle in 1981: **"Any serious doubt will be resolved in favor of disqualification."**
 
-The AG killed the bill that would have given her the tool. She now says the tool does not exist. The forty-five-year-old precedent says otherwise. The record says otherwise. The data says otherwise. And the investigation of the second-highest official in the state — bankrolled by $135 million in pandemic testing profits routed through a kidney foundation, laundered through an Ohio lab charging six times cost, channeled through a lobbyist who has fled to the Philippines, connected to a convicted felon who died in a federal prison in North Carolina — advances inside the closed loop, behind the wall, where the public is told the machinery is working but cannot hear it run.
+The procedural record is narrower and sufficient:
 
-I told you in Part I: the machine runs on silence.
+- The AG's office opposed the bill that would have formalized an independent special-counsel tool.
+- The AG later said the fully independent special-prosecutor mechanism critics wanted does not exist.
+- The forty-five-year-old *Amemiya* precedent supplies a public-trust standard that points toward disqualification when serious doubt exists.
+- The public record creates the conflict question; the AG/SIPD process is the reviewing channel; confidentiality limits public verification; an arm's-length review or written conflict-screening record would narrow the issue.
 
-The silence has not broken. But the architecture is visible now. And architecture, unlike silence, can be taken apart.
+Part I's point applies here too: confidentiality can protect process integrity, but it can also prevent the public from seeing whether the process is working.
+
+### Records That Would Clarify This
+
+The next procedural steps are concrete: publish SIPD's required annual reports or explain their status; disclose whether an outside special deputy, county prosecutor, or federal referral was considered; identify the conflict-screening standard used for the paper-bag matter; and state whether *Amemiya* disqualification analysis was performed in writing. Those steps would leave guilt or innocence to the appropriate process while making the independence question reviewable.
 
 ---
 
@@ -422,4 +438,4 @@ Data compiled from [AG news releases](https://ag.hawaii.gov/), federal court fil
 | Dec 2025 | Alohi Kaupu-Grace (bank teller) | Embezzlement (~$44K) | No — financial fraud | [Hawaii News Now](https://www.hawaiinewsnow.com/2025/12/13/hawaii-bank-teller-indicted-embezzling-more-than-40000-customers/) |
 | Jan 2026 | HPD Officers Serrao & Kenolio | Perjury, evidence tampering | Partial — police misconduct | [Hawaii Tribune-Herald](https://www.hawaiitribune-herald.com/2025/08/08/hawaii-news/ag-seeks-records-involving-4-cops/) |
 
-Of the cases above, one involves campaign finance violations (Timothy Lee) and two involve police officer misconduct. None involve elected state lawmakers, cabinet officials, or high-level political donors. SIPD's enabling legislation — SB2930, passed in direct response to the English/Cullen federal bribery convictions — was specifically mandated to address public corruption at the highest levels. Four years in, the unit has not reached that level.
+Of the cases above, one involves campaign finance violations (Timothy Lee) and two involve police officer misconduct. The public case list contains no elected state lawmakers, cabinet officials, or high-level political donors. SIPD's enabling legislation — SB2930, passed in direct response to the English/Cullen federal bribery convictions — was specifically mandated to address public corruption at the highest levels. Four years in, the unit's visible output has not reached that level.

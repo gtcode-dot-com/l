@@ -1,4 +1,6 @@
-<div class="mermaid">
-  {{ .Inner | safeHTML }}
+<div class="mermaid-scroll" role="region" tabindex="0" aria-label="Scrollable diagram">
+  <div class="mermaid">
+    {{ .Inner | safeHTML }}
+  </div>
 </div>
 {{ .Page.Store.Set "hasMermaid" true }}

@@ -1731,6 +1731,108 @@ body.nav-open .site-nav-overlay {
   color: var(--color-text);
 }
 
+.guides-page-body table,
+.guides-article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-8) 0;
+  font-size: var(--text-base);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.guides-page-body table th,
+.guides-page-body table td,
+.guides-article-body table th,
+.guides-article-body table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border-light);
+  text-align: left;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  vertical-align: top;
+}
+
+.guides-page-body table th,
+.guides-article-body table th {
+  background: var(--color-bg-alt);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.guides-page-body table tbody tr:nth-child(even) td,
+.guides-article-body table tbody tr:nth-child(even) td {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.guides-page-body .ou-table-scroll,
+.guides-article-body .ou-table-scroll {
+  margin: var(--space-8) 0;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.guides-page-body .ou-table-scroll:focus-visible,
+.guides-article-body .ou-table-scroll:focus-visible,
+.mermaid-scroll:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.guides-page-body .ou-table-scroll table,
+.guides-article-body .ou-table-scroll table {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.guides-page-body .ou-table-scroll table.ou-table--wide th,
+.guides-page-body .ou-table-scroll table.ou-table--wide td,
+.guides-article-body .ou-table-scroll table.ou-table--wide th,
+.guides-article-body .ou-table-scroll table.ou-table--wide td {
+  min-width: 9rem;
+}
+
+.guides-page-body .ou-table-scroll table.ou-table--xwide th,
+.guides-page-body .ou-table-scroll table.ou-table--xwide td,
+.guides-article-body .ou-table-scroll table.ou-table--xwide th,
+.guides-article-body .ou-table-scroll table.ou-table--xwide td {
+  min-width: 11rem;
+}
+
+.mermaid-scroll {
+  width: 100%;
+  max-width: 100%;
+  margin: var(--space-8) 0;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-alt);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mermaid-scroll .mermaid {
+  width: 100%;
+  min-width: 0;
+  padding: var(--space-4);
+  overflow: visible;
+}
+
+.mermaid-scroll svg {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+  overflow: visible !important;
+}
+
 .guides-toc {
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-lg);
@@ -2871,6 +2973,80 @@ article {
     text-transform: uppercase;
     color: var(--color-text-light);
   }
+
+  .guides-page-body .ou-table-scroll,
+  .guides-article-body .ou-table-scroll {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    overflow: visible;
+  }
+
+  .guides-page-body .ou-table-scroll table,
+  .guides-article-body .ou-table-scroll table {
+    display: table;
+    width: 100%;
+    border: 0;
+  }
+
+  .guides-page-body .ou-table-scroll thead,
+  .guides-article-body .ou-table-scroll thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .guides-page-body .ou-table-scroll tbody,
+  .guides-page-body .ou-table-scroll tr,
+  .guides-page-body .ou-table-scroll td,
+  .guides-article-body .ou-table-scroll tbody,
+  .guides-article-body .ou-table-scroll tr,
+  .guides-article-body .ou-table-scroll td {
+    display: block;
+    width: 100%;
+  }
+
+  .guides-page-body .ou-table-scroll tbody tr,
+  .guides-article-body .ou-table-scroll tbody tr {
+    margin: 1rem 0;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-xl);
+    background: var(--color-bg-alt);
+    overflow: hidden;
+  }
+
+  .guides-page-body .ou-table-scroll tbody td,
+  .guides-article-body .ou-table-scroll tbody td {
+    min-width: 0;
+    border-bottom: 0;
+    padding: var(--space-3) var(--space-4);
+    background: transparent;
+    white-space: normal;
+  }
+
+  .guides-page-body .ou-table-scroll tbody td + td,
+  .guides-article-body .ou-table-scroll tbody td + td {
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .guides-page-body .ou-table-scroll tbody td::before,
+  .guides-article-body .ou-table-scroll tbody td::before {
+    content: attr(data-label);
+    display: block;
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+  }
+
 }
 
 @media (max-width: 480px) {

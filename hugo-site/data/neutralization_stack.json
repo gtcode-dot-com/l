@@ -5,10 +5,10 @@
       "name": "Search-Index Anomaly",
       "code": "THE INDEX",
       "color": "#8844cc",
-      "url": "/investigation/the-index-bing-search-suppression/",
+      "url": "/investigation/bing-indexing-diagnostics/",
       "published": "Feb 13, 2026",
-      "mechanism": "Bing diagnostics show domain-level blocking, contradictory statuses, and selective visibility",
-      "one_liner": "Bing previously returned zero visible results; a later site-search surfaced one non-investigative technical article and the captured first-page result set excluded the investigation corpus. Motive remains open.",
+      "mechanism": "Bing diagnostics show contradictory statuses and partial visibility",
+      "one_liner": "Bing previously returned zero visible results; a later site-search surfaced one non-investigative technical article and the captured first-page result set excluded the investigation corpus. Cause remains unresolved.",
       "status": "published"
     },
     {
@@ -27,10 +27,10 @@
       "name": "Judicial Sealing",
       "code": "THE NOD",
       "color": "#44cccc",
-      "url": "/investigation/the-nod-wilson-loo-silent-felony/",
+      "url": "/investigation/the-nod-visual-allegation-audio-sequence/",
       "published": "Feb 12, 2026",
-      "mechanism": "Alleged visual signaling in an audio-only proceeding followed by sealing",
-      "one_liner": "The alleged signal is a firsthand observation. The sealed audio can test the timing, answer, attempted record statement, and cutoff.",
+      "mechanism": "Disputed visual allegation in an audio-only proceeding followed by sealing",
+      "one_liner": "The visual allegation is a firsthand observation. The sealed audio can test the timing, answer, attempted record statement, and cutoff.",
       "status": "published"
     },
     {

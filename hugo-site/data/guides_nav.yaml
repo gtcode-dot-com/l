@@ -1,13 +1,19 @@
 pillars:
+  - title: "CNS 7.1 / GCTS"
+    contentPath: "guides/cns-gcts"
+    description: "Current access-aware likely-truth framework: evidence atoms, record-access states, possible worlds, and oracle-boundary discipline."
+    cta:
+      text: "Read the GCTS Hub"
+      url: "/guides/cns-gcts/"
   - title: "Developer's Guide"
     contentPath: "guides/building-cns-2.0-developers-guide"
-    description: "Step-by-step Python builds that turn the CNS 2.0 blueprint into production-grade code."
+    description: "Historical CNS 2.0 Python builds centered on Structured Narrative Objects and critic pipelines."
     cta:
       text: "Start at Chapter 0"
       url: "/guides/building-cns-2.0-developers-guide/chapter-0-quickstart/"
   - title: "Research Roadmap"
     contentPath: "guides/cns-2.0-research-roadmap"
-    description: "Multi-year research phases, validation protocols, and the canonical CNS 2.0 blueprint."
+    description: "Historical CNS 2.0 roadmap, blueprint, validation protocols, and theoretical background."
     cta:
       text: "Read the Blueprint"
       url: "/guides/cns-2.0-research-roadmap/blueprint/"

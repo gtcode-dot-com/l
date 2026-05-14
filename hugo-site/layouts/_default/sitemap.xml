@@ -1,6 +1,7 @@
 {{- $normalizedBase := replace .Site.BaseURL "http://" "https://" -}}
 {{- $base := strings.TrimSuffix "/" $normalizedBase -}}
 {{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
+{{- $minIndexableTermPages := int (.Site.Params.seo_min_indexable_term_pages | default 1) -}}
 {{- $siteLastMod := .Site.Lastmod -}}
 {{- $siteLastModString := "" -}}
 {{- if not ($siteLastMod.IsZero) -}}
@@ -31,7 +32,8 @@
     {{- $robots := lower (printf "%v" .Params.robots) -}}
     {{- $isNoindex := in $robots "noindex" -}}
     {{- $isSyndicatedNews := and (eq .Section "news") .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}
-    {{- if not (or $isNoindex $isSyndicatedNews) -}}
+    {{- $isThinTerm := and (eq .Kind "term") (gt $minIndexableTermPages 1) (lt (len .Pages) $minIndexableTermPages) -}}
+    {{- if not (or $isNoindex $isSyndicatedNews $isThinTerm) -}}
     {{- $lastmod := .Lastmod -}}
     {{- if $lastmod.IsZero }}{{ $lastmod = .PublishDate }}{{ end -}}
     {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}

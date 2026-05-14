@@ -1489,6 +1489,72 @@ body.nav-open .site-nav-overlay {
   color: var(--ou-white);
 }
 
+/* ---- Investigation portfolio lanes ---- */
+.ou-portfolio-section .ou-section-body,
+.ou-home-investigation-note {
+  max-width: 920px;
+}
+
+.ou-portfolio-groups {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.25rem, 4vw, 3.5rem);
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.ou-portfolio-group {
+  border-top: 1px solid var(--ou-border);
+  padding-top: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.ou-portfolio-group:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.ou-portfolio-header {
+  max-width: 860px;
+  margin-bottom: 1rem;
+}
+
+.ou-portfolio-label {
+  margin-bottom: 0.45rem;
+}
+
+.ou-portfolio-title {
+  font-family: var(--ou-font-display);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  color: var(--ou-white);
+  margin: 0 0 0.6rem;
+  line-height: 1.25;
+}
+
+.ou-portfolio-description {
+  font-family: var(--ou-font-body);
+  font-size: 0.95rem;
+  color: var(--ou-text-muted);
+  line-height: 1.75;
+  margin: 0;
+  max-width: 780px;
+}
+
+.ou-portfolio-cards {
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ou-portfolio-cards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .ou-portfolio-cards {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
 /* ---- Secure contact ---- */
 .ou-contact {
   text-align: center;
