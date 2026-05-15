@@ -19,13 +19,23 @@
         {{ with .Params.author }}
           <span>By {{ . }}</span>
         {{ end }}
+        {{ $publishedDate := "" }}
         {{ with .Date }}
+          {{ $publishedDate = .Format "2006-01-02" }}
           <span>&bull;</span>
           <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
         {{ end }}
-        {{ if and .Lastmod (ne .Lastmod .Date) }}
+        {{ $updated := .Lastmod }}
+        {{ with .Params.lastmod }}
+          {{ $updated = time.AsTime . }}
+        {{ end }}
+        {{ $updatedDate := "" }}
+        {{ if not $updated.IsZero }}
+          {{ $updatedDate = $updated.Format "2006-01-02" }}
+        {{ end }}
+        {{ if and $updatedDate (ne $updatedDate $publishedDate) }}
           <span>&bull;</span>
-          <span>Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2, 2006" }}</time></span>
+          <span>Updated <time datetime="{{ $updatedDate }}">{{ $updated.Format "Jan 2, 2006" }}</time></span>
         {{ end }}
       </div>
     </header>
