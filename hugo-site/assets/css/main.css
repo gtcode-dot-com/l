@@ -1736,6 +1736,31 @@ body.nav-open .site-nav-overlay {
   color: var(--color-text);
 }
 
+.gcts-feature-figure {
+  margin: var(--space-8) 0 var(--space-10);
+  border: 1px solid rgba(111, 214, 210, 0.22);
+  border-radius: var(--radius-2xl);
+  background: #071019;
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+}
+
+.gcts-feature-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gcts-feature-figure figcaption {
+  margin: 0;
+  padding: var(--space-3) 3.5% var(--space-4);
+  color: var(--color-text-muted);
+  background: rgba(7, 16, 25, 0.92);
+  border-top: 1px solid rgba(111, 214, 210, 0.18);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
 .guides-page-body table,
 .guides-article-body table {
   width: 100%;
