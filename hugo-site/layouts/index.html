@@ -226,28 +226,7 @@
           <span class="site-nav-toggle-label">Menu</span>
         </button>
 
-        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
-          <a href="/" class="active">Home</a>
-          <a href="/hawaii-courts/">Hawaii Courts</a>
-          <a href="/geopolitics/">Geopolitics</a>
-          <a href="/intelligence/">Intelligence</a>
-          <a href="/diagnostics/">Diagnostics</a>
-          <a href="/disclosures/">Disclosures</a>
-          <a href="#start-here">Start Here</a>
-          <a href="#about-reporter">About</a>
-          <a href="#tips">Tips</a>
-          <div class="nav-dropdown">
-            <a href="{{ $consultingURL }}">AI + Consulting</a>
-            <div class="nav-dropdown-menu">
-              <a href="{{ $consultingURL }}">AI Consulting</a>
-              <a href="/guides/">Guides</a>
-              <a href="/papers/">Papers</a>
-              <a href="/repos/">Repos</a>
-              <a href="/articles/">Articles</a>
-              <a href="/news/">News Wire</a>
-            </div>
-          </div>
-        </nav>
+        {{ partial "primary-nav.html" . }}
       </div>
     </header>
     <div class="site-nav-overlay" aria-hidden="true"></div>

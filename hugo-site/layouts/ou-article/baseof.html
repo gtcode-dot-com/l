@@ -157,15 +157,7 @@
           </span>
           <span class="site-nav-toggle-label">Menu</span>
         </button>
-        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
-          <a href="/">Home</a>
-          <a href="/consulting/" {{ if eq .Section "consulting" }}class="active"{{ end }}>AI Consulting</a>
-          <a href="/guides/">Guides</a>
-          <a href="/papers/" {{ if eq .Section "papers" }}class="active"{{ end }}>Papers</a>
-          <a href="/repos/">Repos</a>
-          <a href="/articles/" class="active">Articles</a>
-          {{ partial "news-nav.html" . }}
-        </nav>
+        {{ partial "primary-nav.html" . }}
       </div>
     </header>
     <div class="site-nav-overlay" aria-hidden="true"></div>

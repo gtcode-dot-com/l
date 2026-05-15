@@ -1,0 +1,43 @@
+{{- $ctx := . -}}
+{{- $section := $ctx.Section -}}
+{{- $portfolioKey := $ctx.Params.portfolio_key | default "" -}}
+{{- $rel := $ctx.RelPermalink -}}
+{{- $isInvestigations := or
+  (or (eq $section "hawaii-courts") (eq $portfolioKey "hawaii-courts") (eq $rel "/hawaii-courts/"))
+  (or (eq $section "geopolitics") (eq $portfolioKey "geopolitics") (eq $rel "/geopolitics/"))
+  (or (eq $section "intelligence") (eq $portfolioKey "intelligence") (eq $rel "/intelligence/"))
+  (or (eq $section "diagnostics") (eq $portfolioKey "diagnostics") (eq $rel "/diagnostics/"))
+  (or (eq $section "disclosures") (eq $portfolioKey "disclosures") (eq $rel "/disclosures/"))
+-}}
+{{- $isLibrary := or (eq $section "consulting") (eq $section "guides") (eq $section "papers") (eq $section "repos") (eq $section "articles") (eq $section "news") -}}
+
+<nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
+  <a href="/" {{ if $ctx.IsHome }}class="active"{{ end }}>Home</a>
+
+  <div class="nav-dropdown">
+    <a href="/hawaii-courts/" {{ if $isInvestigations }}class="active"{{ end }}>Investigations</a>
+    <div class="nav-dropdown-menu">
+      <a href="/hawaii-courts/" {{ if or (eq $section "hawaii-courts") (eq $portfolioKey "hawaii-courts") (eq $rel "/hawaii-courts/") }}class="active"{{ end }}>Hawaii Courts</a>
+      <a href="/geopolitics/" {{ if or (eq $section "geopolitics") (eq $portfolioKey "geopolitics") (eq $rel "/geopolitics/") }}class="active"{{ end }}>Geopolitics</a>
+      <a href="/intelligence/" {{ if or (eq $section "intelligence") (eq $portfolioKey "intelligence") (eq $rel "/intelligence/") }}class="active"{{ end }}>Intelligence</a>
+      <a href="/diagnostics/" {{ if or (eq $section "diagnostics") (eq $portfolioKey "diagnostics") (eq $rel "/diagnostics/") }}class="active"{{ end }}>Diagnostics</a>
+      <a href="/disclosures/" {{ if or (eq $section "disclosures") (eq $portfolioKey "disclosures") (eq $rel "/disclosures/") }}class="active"{{ end }}>Disclosures</a>
+    </div>
+  </div>
+
+  <a href="/#start-here">Start Here</a>
+  <a href="/#about-reporter">About</a>
+  <a href="/#tips">Tips</a>
+
+  <div class="nav-dropdown">
+    <a href="/consulting/" {{ if $isLibrary }}class="active"{{ end }}>AI + Consulting</a>
+    <div class="nav-dropdown-menu">
+      <a href="/consulting/" {{ if eq $section "consulting" }}class="active"{{ end }}>AI Consulting</a>
+      <a href="/guides/" {{ if eq $section "guides" }}class="active"{{ end }}>Guides</a>
+      <a href="/papers/" {{ if eq $section "papers" }}class="active"{{ end }}>Papers</a>
+      <a href="/repos/" {{ if eq $section "repos" }}class="active"{{ end }}>Repos</a>
+      <a href="/articles/" {{ if eq $section "articles" }}class="active"{{ end }}>Articles</a>
+      <a href="/news/" {{ if eq $section "news" }}class="active"{{ end }}>News Wire</a>
+    </div>
+  </div>
+</nav>

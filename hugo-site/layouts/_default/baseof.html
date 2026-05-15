@@ -216,20 +216,7 @@
           </span>
           <span class="site-nav-toggle-label">Menu</span>
         </button>
-        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
-          <a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a>
-          <a href="/hawaii-courts/" {{ if or (eq .Section "hawaii-courts") (eq .Params.portfolio_key "hawaii-courts") }}class="active"{{ end }}>Hawaii Courts</a>
-          <a href="/geopolitics/" {{ if or (eq .Section "geopolitics") (eq .Params.portfolio_key "geopolitics") }}class="active"{{ end }}>Geopolitics</a>
-          <a href="/intelligence/" {{ if or (eq .Section "intelligence") (eq .Params.portfolio_key "intelligence") }}class="active"{{ end }}>Intelligence</a>
-          <a href="/diagnostics/" {{ if or (eq .Section "diagnostics") (eq .Params.portfolio_key "diagnostics") }}class="active"{{ end }}>Diagnostics</a>
-          <a href="/disclosures/" {{ if or (eq .Section "disclosures") (eq .Params.portfolio_key "disclosures") }}class="active"{{ end }}>Disclosures</a>
-          <a href="/consulting/" {{ if eq .Section "consulting" }}class="active"{{ end }}>AI Consulting</a>
-          <a href="/guides/" {{ if eq .Section "guides" }}class="active"{{ end }}>Guides</a>
-          <a href="/papers/" {{ if eq .Section "papers" }}class="active"{{ end }}>Papers</a>
-          <a href="/repos/" {{ if eq .Section "repos" }}class="active"{{ end }}>Repos</a>
-          <a href="/articles/" {{ if eq .Section "articles" }}class="active"{{ end }}>Articles</a>
-          {{ partial "news-nav.html" . }}
-        </nav>
+        {{ partial "primary-nav.html" . }}
       </div>
     </header>
     <div class="site-nav-overlay" aria-hidden="true"></div>
