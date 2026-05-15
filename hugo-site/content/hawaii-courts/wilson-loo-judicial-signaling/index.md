@@ -5,7 +5,7 @@ title: "Wilson Loo: Investigation into Alleged Judicial Signaling and Oversight 
 subtitle: "Hawaii's Justice System Under Scrutiny"
 description: "Investigative report by Ekewaka Lono documenting a firsthand allegation of judicial signaling by Judge Wilson Loo, sealed-record-dependent evidence, and oversight failures involving the Hawaii Commission on Judicial Conduct."
 date: 2025-06-12
-lastmod: 2026-05-13
+lastmod: 2026-05-15
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -13,7 +13,7 @@ portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 seo_title: "Wilson Loo: Alleged Judicial Signaling and Oversight Failure in Hawaii"
 published_display: "June 12, 2025"
-modified_display: "May 13, 2026"
+modified_display: "May 15, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/"
@@ -44,7 +44,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-06-12T00:00:00Z"
-article_modified_time: "2026-05-13T00:00:00Z"
+article_modified_time: "2026-05-15T00:00:00Z"
 article_section: "Hawaii Courts"
 article_tags:
   - "Wilson Loo"
@@ -91,7 +91,7 @@ structured_data_graph:
       description: "Investigative report documenting a firsthand courtroom allegation, sealed-record-dependent evidence, and public-record oversight failures"
       image: "/img/ou-judicial-probe-og-1200x630.jpg"
       datePublished: "2025-06-12T00:00:00Z"
-      dateModified: "2026-05-13T00:00:00Z"
+      dateModified: "2026-05-15T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -111,8 +111,8 @@ structured_data_graph:
 ### Legal Notice
 
 This report represents a good faith effort to document and disclose matters of serious public concern.
-All factual assertions are made with a reasonable basis and sincere belief in their truth, supported by
-firsthand observation or authenticated documentation. All individuals mentioned are presumed innocent
+All factual assertions are grounded in a reasonable basis: firsthand observation, authenticated
+documentation, or clearly labeled inference. All individuals mentioned are presumed innocent
 unless proven guilty in a court of law. This disclosure follows multiple attempts to address these
 issues through official channels.
 

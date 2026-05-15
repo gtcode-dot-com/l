@@ -6,14 +6,14 @@ seo_title: "Reporter's Disclosures: Prior Law Enforcement Contact and Civic Over
 subtitle: "A disclosure lane for prior contact, civic overlap, reporting context, and evidence categories"
 description: "A controlled reporter-disclosure page separating documented facts, firsthand accounts, sealed-record-dependent claims, context, and interpretation behind the Oahu Underground investigations."
 date: 2026-05-13
-lastmod: 2026-05-13
+lastmod: 2026-05-15
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "disclosures"
 portfolio_label: "Disclosures"
 portfolio_index: "/disclosures/"
 published_display: "May 13, 2026"
-modified_display: "May 13, 2026"
+modified_display: "May 15, 2026"
 homepage_exclude: true
 
 # SEO & Indexing
@@ -46,7 +46,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-13T00:00:00Z"
-article_modified_time: "2026-05-13T00:00:00Z"
+article_modified_time: "2026-05-15T00:00:00Z"
 article_section: "Disclosures"
 article_tags:
   - "Reporter Disclosures"
@@ -93,7 +93,7 @@ structured_data_graph:
       description: "A controlled reporter-disclosure page separating documented facts, firsthand accounts, sealed-record-dependent claims, context, and interpretation behind the Oahu Underground investigations."
       url: "https://gtcode.com/disclosures/prior-law-enforcement-contact/"
       datePublished: "2026-05-13T00:00:00Z"
-      dateModified: "2026-05-13T00:00:00Z"
+      dateModified: "2026-05-15T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -278,7 +278,7 @@ Several other reported events belong in this chronology because they shaped the 
 
 **Spring 2021 FBI/HPD sequence:** The author reports an FBI online report and later in-person FBI contact in Mokuleia regarding prior reported threats, witness-tampering concerns, and law-enforcement integrity context. The author also reports that an HPD officer was later "cycled out" or replaced, and that the following day two HPD cruisers responded to his truck at Malama Market in Haleiwa and issued parking citations in a manner the author experienced as intimidation. The chronology treats this as a firsthand account and record-locator issue; whether the officer change or cruiser response was routine, retaliatory, intimidating, coincidental, or otherwise connected would require dispatch, assignment, citation, bodycam, in-car video, and federal-intake records.
 
-**2021-2022 HPD report sequence involving the redacted witness:** The author reports that after ending a brief work and personal relationship with a redacted witness in September 2021, he later contacted that person by text and email to collect a small work debt, then wrote off the debt and stated he would avoid further in-person contact after a reported Starbucks assault in November 2021. The author reports a later sequence of alleged incidents involving the same redacted witness: vehicle intimidation at Malama Marketplace in December 2021; a vehicle threat outside Breakers at North Shore Marketplace in June 2022; bicycle/vehicle intimidation on Waialua Beach Road in July 2022; a July 24, 2022 cease-and-desist email; a September 12, 2022 PaaLaa Road vehicle-threat report identified as HPD report 22-353421; a September 16, 2022 TRO submission at Wahiawa Police Station; September 19-22, 2022 reported harassment and TRO-service confusion, including HPD report 22-365099; HPD safety advice to avoid PaaLaa Road; and the author's position that in-person encounters were coincidental while he was on foot or bicycle on main roads in Haleiwa. The record question is what HPD reports, CAD logs, dispatch audio, bodycam, in-car video, TRO-service records, emails, photos, witness accounts, and any closure or declination notes show about intake, response, service, investigation, and non-response.
+**2021-2022 HPD report sequence involving the redacted witness:** The author reports that after ending a brief work relationship and social acquaintance with a redacted witness in September 2021, he later contacted that person by text and email to collect a small work debt, then wrote off the debt and stated he would avoid further in-person contact after a reported Starbucks assault. The author states that the assault was initially reported to HPD as occurring in November 2021, that HPD investigated and referred the matter to prosecutors with that date in the record, and that after the related proceedings ended he located a contemporaneous photo and now dates the incident to January 2022. The author reports a sequence of alleged incidents involving the same redacted witness: vehicle intimidation at Malama Marketplace in December 2021; the corrected January 2022 Starbucks assault date; a vehicle threat outside Breakers at North Shore Marketplace in June 2022; bicycle/vehicle intimidation on Waialua Beach Road in July 2022; a July 24, 2022 cease-and-desist email; a September 12, 2022 PaaLaa Road vehicle-threat report identified as HPD report 22-353421; a September 16, 2022 TRO submission at Wahiawa Police Station; September 19-22, 2022 reported harassment and TRO-service confusion, including HPD report 22-365099; HPD safety advice to avoid PaaLaa Road; and the author's position that in-person encounters were coincidental while he was on foot or bicycle on main roads in Haleiwa. The record question is what HPD reports, CAD logs, dispatch audio, bodycam, in-car video, TRO-service records, emails, photos, prosecutor referral records, witness accounts, and any closure or declination notes show about intake, response, service, investigation, referral, and non-response.
 
 **Federal-buddy statement:** The author reports overhearing a reference to a "federal buddy." The meaning is unknown. It may have been bragging, exaggeration, intimidation, a misunderstood phrase, or a real reference to a relationship. The record category is reported statement and possible witness question.
 
