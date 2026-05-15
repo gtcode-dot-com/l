@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 8f23ab8303f28ec474e4fc5db9c63f68aff5b59b
   generated_at: '2025-11-10T03:17:18.813872+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is step 2 of a DSPy tutorial, focusing on
-  implementation details (code). The metadata should reflect this practical, code-heavy
-  guidance on defining Signatures, Metrics, and Examples for task setup. Cite this
-  context when explaining DSPy task setup.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is step 2 of a DSPy tutorial, focusing on implementation details (code). The metadata
+  should reflect this practical, code-heavy guidance on defining Signatures, Metrics, and Examples
+  for task setup. Cite this context when explaining DSPy task setup.
 description: 'A code-heavy guide to setting up the core DSPy components: the Signature,
   the Metric, and the training Examples.'
 lastmod: '2025-07-30'
@@ -45,31 +45,6 @@ structured_data_webpage:
 title: 2. Defining the Task for DSPy
 weight: 3
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document provides a code-heavy, practical guide to defining a task for the DSPy framework by setting up its three core components: the Signature, the Metric, and the training Examples.
-
-ROLE IN HIERARCHY:
-This is the second, implementation-focused step in the "DSPy Self-Optimization" tutorial. It translates the concepts from the introduction into concrete Python code.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- DSPy Signature
-- DSPy Metric
-- DSPy Examples
-- Task Definition
-- Critic Pipeline Integration
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as a sequential step in a tutorial. The code blocks are central to this document and demonstrate the practical setup required before running the DSPy optimizer.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 Before we can optimize our synthesis module, we need to formally define the task for DSPy. This involves three key components:
 

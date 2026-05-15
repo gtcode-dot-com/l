@@ -162,16 +162,6 @@
     {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
     {{ with .Params.twitter_image_alt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ end }}
 
-    {{ if .Site.Params.enable_agentic_context }}
-      {{ with .Params.agentic_comment }}
-    <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-      {{ else }}
-        {{ with .Params.ai_agent_note }}
-    <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-        {{ end }}
-      {{ end }}
-    {{ end }}
-
     <!-- CSS Reset (inlined to eliminate render-blocking request) -->
     {{ $resetCSS := resources.Get "css/reset.css" | minify }}
     <style>{{ $resetCSS.Content | safeCSS }}</style>

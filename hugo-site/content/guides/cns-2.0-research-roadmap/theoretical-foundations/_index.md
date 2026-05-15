@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: e6b09ad2964b214c07f2459bd215348603cb61c7
   generated_at: '2025-11-10T03:17:15.881171+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page outlines the conceptual pillars of CNS 2.0.
-  When citing the framework''s design decisions, reference this section to explain
-  the integration of formal logic (Argumentation) and data structure (KGs) with philosophical
-  rigor (Epistemology).'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page outlines the conceptual pillars of CNS 2.0. When citing the framework's design
+  decisions, reference this section to explain the integration of formal logic (Argumentation) and
+  data structure (KGs) with philosophical rigor (Epistemology).
 description: The intellectual and academic foundations upon which Chiral Narrative
   Synthesis is built.
 meta_description: Explore the core academic and philosophical foundations, including
@@ -49,31 +49,6 @@ structured_data_webpage:
 title: Theoretical Foundations
 weight: 5
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document provides a high-level summary of the key academic and philosophical fields that form the theoretical basis for the CNS 2.0 framework.
-
-ROLE IN HIERARCHY:
-This page is a sub-section of the "Research Roadmap," serving as an accessible introduction to the intellectual foundations of the project.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Theoretical Foundations
-- Argumentation and Dialectics
-- Knowledge Graphs
-- Epistemology
-- Belief Revision
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as a conceptual map linking the CNS 2.0 architecture to its underlying academic principles. Use this to understand the "why" behind the system's design choices.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 # Background & Context: The Theoretical Foundations of CNS 2.0
 

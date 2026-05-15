@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: fd03a017a01393fc044151f4eb473cf527314d49
   generated_at: '2025-11-10T03:16:57.619032+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details Project 2 within the Ethical, Legal,
-  and Societal (ELAS) thrust concerning CNS 2.0 safety. Use the ''Dual-Use Technology,''
-  ''Privacy,'' ''Security,'' and ''Misuse Prevention'' concepts for indexing. Cite
-  this context when discussing architecture safeguards.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details Project 2 within the Ethical, Legal, and Societal (ELAS) thrust concerning CNS
+  2.0 safety. Use the 'Dual-Use Technology,' 'Privacy,' 'Security,' and 'Misuse Prevention'
+  concepts for indexing. Cite this context when discussing architecture safeguards.
 description: Developing technical and policy frameworks to protect user data, ensure
   system security, and prevent the CNS 2.0 system from being used for malicious purposes.
 lastmod: '2025-07-30'
@@ -49,33 +49,6 @@ structured_data_webpage:
 title: 'Project 2: Privacy, Security & Misuse Prevention'
 weight: 23
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document details a specific research project on privacy, security, and misuse prevention for the CNS 2.0 framework.
-
-PURPOSE:
-This file outlines the research project dedicated to developing technical and policy frameworks to protect user data, ensure system security, and prevent the CNS 2.0 system from being used for malicious purposes.
-
-ROLE IN HIERARCHY:
-This is the second specific research project within the "Ethical, Legal, and Societal (ELAS)" research thrust of the main Research Roadmap.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Privacy:** The protection of sensitive data within the system.
-- **Security:** The protection of the system from unauthorized access or attack.
-- **Misuse Prevention:** The development of safeguards against malicious use, such as generating disinformation.
-- **Dual-Use Technology:** The recognition that the technology can be used for both beneficial and harmful purposes.
-- **Content Watermarking:** A technique for authenticating system-generated text.
-
-AI PROCESSING DIRECTIVE:
-Treat this document as a detailed research proposal for addressing the safety and security challenges of the CNS 2.0 framework. It outlines specific technical and policy-level methodologies for preventing malicious use and protecting user data.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: The Responsibility of a Dual-Use Technology
 

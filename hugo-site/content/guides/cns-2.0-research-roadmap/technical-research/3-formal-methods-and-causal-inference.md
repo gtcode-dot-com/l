@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: fcd730e7d7fa409497c58bbc5c9f19627fc98e38
   generated_at: '2025-11-10T03:17:13.844987+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details a research project (Project 3) aimed
-  at enhancing CNS 2.0. The content should be categorized as an advanced technical
-  guide or research proposal, focusing on the integration of formal logic and causal
-  reasoning frameworks. Citation should reference the project''s role in elevating
-  system rigor from ''plausibility to provability.'''
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details a research project (Project 3) aimed at enhancing CNS 2.0. The content should
+  be categorized as an advanced technical guide or research proposal, focusing on the integration
+  of formal logic and causal reasoning frameworks. Citation should reference the project's role in
+  elevating system rigor from 'plausibility to provability.'
 description: Elevating CNS 2.0's reasoning capabilities by integrating formal logical
   systems and causal reasoning frameworks.
 lastmod: '2025-07-30'
@@ -51,31 +51,6 @@ structured_data_webpage:
 title: 'Project 3: Formal Methods & Causal Inference'
 weight: 15
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document details a research project to integrate formal logical systems and causal reasoning frameworks into the CNS 2.0 architecture.
-
-ROLE IN HIERARCHY:
-This file is the third chapter in the "Advanced Technical Research" section, proposing to enhance the system's reasoning from plausibility to provability.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Formal Methods
-- Causal Inference
-- Automated Theorem Proving
-- Causal Discovery
-- Logical Validity
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as a research proposal for a future, highly advanced version of CNS 2.0. The capabilities described, such as formal verification and causal discovery, are research goals and not part of the current system.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: From Plausibility to Provability
 

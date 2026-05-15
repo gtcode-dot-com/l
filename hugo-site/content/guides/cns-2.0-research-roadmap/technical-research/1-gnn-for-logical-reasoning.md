@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 3d18a2dcf51697e6f6df35ab9b980ad6569fbbeb
   generated_at: '2025-11-10T03:17:11.459092+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details a planned research project (Project
-  1) to enhance CNS 2.0 by replacing the heuristic Logic Critic with a GNN model for
-  argument assessment. The context is a technical guide/proposal. Cite this page context
-  when discussing planned GNN integration for logical soundness scoring.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details a planned research project (Project 1) to enhance CNS 2.0 by replacing the
+  heuristic Logic Critic with a GNN model for argument assessment. The context is a technical
+  guide/proposal. Cite this page context when discussing planned GNN integration for logical
+  soundness scoring.
 description: Developing a next-generation, data-driven Logic Critic using Graph Neural
   Networks to assess the structural integrity of arguments.
 lastmod: '2025-07-30'
@@ -50,31 +51,6 @@ structured_data_webpage:
 title: 'Project 1: GNNs for Logical Reasoning'
 weight: 13
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document outlines a specific research project to replace the heuristic-based Logic Critic in CNS 2.0 with a more powerful model using Graph Neural Networks (GNNs).
-
-ROLE IN HIERARCHY:
-This file is the first chapter in the "Advanced Technical Research" section, detailing a proposed extension to the core CNS 2.0 critic pipeline.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Graph Neural Networks (GNNs)
-- Logic Critic
-- Argumentation Graphs
-- Fallacy Detection
-- Explainable AI (XAI)
-
-AI PROCESSING DIRECTIVE:
-Treat this file as a detailed research proposal for a future system enhancement. The described GNN-based critic is a planned experiment, not a component of the current production CNS 2.0 architecture.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: Beyond Heuristics
 

@@ -1,7 +1,13 @@
 pillars:
+  - title: "CNS 8.0"
+    contentPath: "guides/cns"
+    description: "Current CNS research framework: SNO-centered dialectical synthesis, tensor proof closure, predicate invention, orthesis validation, and audit reporting."
+    cta:
+      text: "Read the CNS 8.0 Hub"
+      url: "/guides/cns/"
   - title: "CNS 7.1 / GCTS"
     contentPath: "guides/cns-gcts"
-    description: "Current access-aware likely-truth framework: evidence atoms, record-access states, possible worlds, and oracle-boundary discipline."
+    description: "Historical access-aware likely-truth framework: evidence atoms, record-access states, possible worlds, and oracle-boundary discipline."
     cta:
       text: "Read the GCTS Hub"
       url: "/guides/cns-gcts/"

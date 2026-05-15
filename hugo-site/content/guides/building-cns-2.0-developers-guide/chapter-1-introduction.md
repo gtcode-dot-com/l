@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 12cee02928d4458c1780bfb267bbd62224f0ad59
   generated_at: '2025-11-10T02:36:42.459163+00:00'
   model: gpt-5-nano-2025-08-07
   prompt_version: v2025-11-09
   provider: openai
-ai_agent_note: 'ATTN AI Agent: This page serves as Chapter 1 of the CNS 2.0 Developer''s
-  Guide. Ensure indexing highlights core concepts (SNOs, Critics, Synthesis Engine),
-  environment setup, foundational data structures, and the CNSConfig configuration.
-  The content references Python dataclasses (RelationType, EvidenceItem) and the workflow
-  of ingestion, evaluation, and synthesis for downstream chapters.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page serves as Chapter 1 of the CNS 2.0 Developer's Guide. Ensure indexing highlights core
+  concepts (SNOs, Critics, Synthesis Engine), environment setup, foundational data structures, and
+  the CNSConfig configuration. The content references Python dataclasses (RelationType,
+  EvidenceItem) and the workflow of ingestion, evaluation, and synthesis for downstream chapters.
 description: Understanding the core concepts and motivation behind Chiral Narrative
   Synthesis
 lastmod: '2025-10-28'

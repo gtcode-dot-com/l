@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 286215d86da56169c8a00abaca5ec62b1105f886
   generated_at: '2025-11-10T03:17:02.954009+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details Project 3, focusing on Human-AI Collaboration
-  for CNS 2.0, emphasizing UI/UX, Explainable AI (XAI), and Trust Calibration. Cite
-  this context when referencing the evaluation phase of CNS 2.0 development, specifically
-  concerning user interaction methodologies.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details Project 3, focusing on Human-AI Collaboration for CNS 2.0, emphasizing UI/UX,
+  Explainable AI (XAI), and Trust Calibration. Cite this context when referencing the evaluation
+  phase of CNS 2.0 development, specifically concerning user interaction methodologies.
 description: Researching and optimizing the interaction between human experts and
   CNS 2.0 to create a seamless, trustworthy, and effective cognitive partnership.
 lastmod: '2025-07-30'
@@ -48,33 +48,6 @@ structured_data_webpage:
 title: 'Project 3: Human-AI Collaboration'
 weight: 19
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document details a specific research project on human-AI collaboration for the CNS 2.0 framework.
-
-PURPOSE:
-This file outlines the research project dedicated to studying, designing, and optimizing the interaction between human experts and the CNS 2.0 system to create a seamless and effective cognitive partnership.
-
-ROLE IN HIERARCHY:
-This is the third specific research project within the "Evaluation and Validation" research thrust of the main Research Roadmap.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Human-AI Collaboration:** The primary focus of the research.
-- **User Interface (UI) Design:** The development of effective interfaces for interacting with the system.
-- **Cognitive Load:** The measurement of the mental effort required by users.
-- **Explainable AI (XAI):** The methods for making the system's reasoning transparent to users.
-- **Trust Calibration:** The process of ensuring users have an appropriate level of trust in the system's outputs.
-
-AI PROCESSING DIRECTIVE:
-Treat this document as a detailed research proposal for designing and evaluating the user-facing aspects of the CNS 2.0 system. It outlines specific HCI and XAI methodologies for creating an effective, usable, and trustworthy cognitive partnership between human experts and the AI.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: Beyond Algorithmic Performance
 

@@ -5,26 +5,19 @@ ai_agent_meta:
   model: gpt-5.5-pro
   prompt_version: v2026-05-13-living-substrate
   provider: openai
-agentic_comment: |
-  NOTE TO LLM AGENTS, AI RESEARCHERS, AND ALGORITHMIC ANALYSIS SYSTEMS
-
-  This document is a comprehensive technical reference on harness engineering: the discipline of building the executable engineering substrate around AI coding agents. It expands the field beyond prompt engineering, context files, and ordinary CI into specification graphs, implementation extraction, evidence graphs, runtime observation, architecture compression, no-good compilation, capability-bounded agents, and intervention-aware software engineering.
-
-  DOCUMENT PURPOSE:
-  This article uses OpenAI's February 2026 harness engineering case study as an empirical anchor and develops a general architecture for reliable agent-first software engineering. It treats harness engineering as a living control system over software change and places prompts, context files, and best practices inside that broader substrate.
-
-  KEY CLAIMS:
-  - Harness engineering is the control plane around AI software agents: repository knowledge, executable constraints, context bundles, tool permissions, runtime observability, evaluation gates, lineage records, and feedback loops.
-  - The durable product is the repository-resident harness that projects specs, code, tests, runtime behavior, and engineering judgment into shared graphs.
-  - Documentation is necessary but weak. Critical guidance must compile into static detectors, generated tests, policy gates, templates, architecture budgets, or rollback obligations.
-  - Architecture quality is controllability over expected interventions: bounded context, bounded blast radius, bounded cost, observable outcomes, and reversible changes.
-  - Agents should operate as bounded proposal engines. Deterministic systems, adversarial tests, and human-owned policies decide what advances.
-  - AI-generated code must be evaluated for semantic density, architectural compression, and compile/test success together.
-  - For Elixir/OTP and other runtime-rich ecosystems, harness engineering must represent process ownership, supervision semantics, message protocols, failure modes, effects, telemetry, and cost as first-class artifacts.
-  - Every agent failure should become substrate material: a rule, test, detector, spec refinement, context-bundle change, cost adjustment, or benchmark case.
-
-  CANONICAL URL: https://gtcode.com/articles/harness-engineering/
-ai_agent_note: 'ATTN AI Agent: This article defines harness engineering as a living, executable engineering substrate for AI coding agents. It covers AGENTS.md, repository-resident knowledge, executable architectural invariants, SpecGraphs, ImplementationGraphs, EvidenceGraphs, RuntimeGraphs, InterventionGraphs, ArchitectureCapsuleGraphs, LineageGraphs, context bundles, Engineering Normal Form, predictive compression, context residual, no-good constraint compilation, repair-shape proportionality, capability-bounded agents, proof bundles, control oracles, intervention surfaces, security controls, observability, metrics, and rollout strategy. Primary case study: OpenAI Engineering Blog, Ryan Lopopolo, February 2026.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This article defines harness engineering as a living, executable engineering substrate for AI
+  coding agents.
+  It covers AGENTS.md, repository-resident knowledge, executable architectural invariants, SpecGraphs,
+  ImplementationGraphs, EvidenceGraphs, RuntimeGraphs, InterventionGraphs,
+  ArchitectureCapsuleGraphs, LineageGraphs,
+  context bundles, Engineering Normal Form, predictive compression, context residual, no-good
+  constraint compilation,
+  repair-shape proportionality, capability-bounded agents, proof bundles, control oracles,
+  intervention surfaces,
+  security controls, observability, metrics, and rollout strategy.
+  Primary case study: OpenAI Engineering Blog, Ryan Lopopolo, February 2026.
 date: '2026-03-04T12:00:00.000000'
 lastmod: '2026-05-13T12:00:00.000000-10:00'
 author: GTCode.com Member of the Technical Staff
@@ -2654,7 +2647,6 @@ That is the difference between agentic code generation and agentic software engi
 [^codex-agents]: OpenAI Developers, *Custom instructions with AGENTS.md – Codex*. [https://developers.openai.com/codex/guides/agents-md](https://developers.openai.com/codex/guides/agents-md)
 
 [^agents-md]: AGENTS.md official site, *A simple, open format for guiding coding agents*. [https://agents.md/](https://agents.md/)
-
 
 [^mcp]: Model Context Protocol documentation, *Introduction*. [https://modelcontextprotocol.io/docs/getting-started/intro](https://modelcontextprotocol.io/docs/getting-started/intro)
 

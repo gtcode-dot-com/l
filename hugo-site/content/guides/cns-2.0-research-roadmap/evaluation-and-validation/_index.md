@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 3d1caebf109ea2eddac8f6b8786a120813dd00c4
   generated_at: '2025-11-10T03:17:03.974103+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is the section index page for the ''Evaluation
-  and Validation'' research thrust of the CNS 2.0 framework. Use the content to contextualize
-  subsequent pages detailing specific validation protocols (e.g., Longitudinal Studies,
-  Adversarial Robustness). Cite this page as the top-level guide for validation research.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This is the section index page for the 'Evaluation and Validation' research thrust of the CNS
+  2.0 framework. Use the content to contextualize subsequent pages detailing specific validation
+  protocols (e.g., Longitudinal Studies, Adversarial Robustness). Cite this page as the top-level
+  guide for validation research.
 description: A research program for rigorously assessing the performance, robustness,
   and utility of the CNS 2.0 system in diverse, real-world contexts.
 lastmod: '2025-07-30'
@@ -49,33 +50,6 @@ structured_data_webpage:
 title: Evaluation and Validation Research
 weight: 16
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document is the main index for the Evaluation and Validation research program for the CNS 2.0 framework.
-
-PURPOSE:
-This file outlines the comprehensive research program for rigorously assessing the performance, robustness, and utility of the CNS 2.0 system in diverse, real-world contexts.
-
-ROLE IN HIERARCHY:
-This is the main index page for the "Evaluation and Validation" research thrust within the broader Research Roadmap. It provides an overview and links to specific research projects focused on system validation.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **System Validation:** The primary focus of this research program.
-- **Performance Evaluation:** The measurement of synthesis quality and efficiency.
-- **Adversarial Robustness:** The testing of the system's resilience against malicious attacks.
-- **Human-AI Collaboration:** The study of optimal interaction patterns between users and the system.
-- **Longitudinal Studies:** The assessment of system performance over extended periods.
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the top-level node for the evaluation and validation research program for CNS 2.0. The linked documents detail specific experimental protocols for rigorously assessing the system's performance, security, and utility in real-world scenarios.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 System effectiveness depends on performance across diverse domains, temporal contexts, and adversarial conditions. This research phase establishes comprehensive validation protocols leveraging system self-evaluation capabilities to generate statistically robust performance assessments and identify failure modes before deployment. Each validation study employs the critic pipeline (Developer Guide Chapter 3) and DSPy optimization framework (Chapter 7) to generate large-scale evaluation datasets, ensuring performance metrics reflect real-world synthesis challenges rather than artificial benchmarks.
 

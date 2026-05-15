@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: ce0b3504db28630be94f0aa2610ac3bd07d8ebe5
   generated_at: '2025-11-10T03:17:20.833547+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This content is the final step (4) of a DSPy tutorial,
-  focusing on inspecting and validating the results of the compiler. Use the title
-  and excerpt to emphasize the comparison between naive vs. optimized prompts and
-  performance validation.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This content is the final step (4) of a DSPy tutorial, focusing on inspecting and validating the
+  results of the compiler. Use the title and excerpt to emphasize the comparison between naive vs.
+  optimized prompts and performance validation.
 description: Analyzing the results of the DSPy compiler, comparing the optimized prompt
   to a naive one, and seeing the performance difference on a new example.
 lastmod: '2025-07-30'
@@ -46,31 +46,6 @@ structured_data_webpage:
 title: 4. Analyzing the Optimized Module
 weight: 5
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document analyzes the output of the DSPy optimizer, comparing the automatically generated prompt and its performance against a naive, hand-written prompt.
-
-ROLE IN HIERARCHY:
-This is the fourth and final step in the "DSPy Self-Optimization" tutorial, demonstrating the concrete benefits of the programmatic optimization approach.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Optimized Prompt
-- Performance Comparison
-- Few-Shot Examples
-- Chain-of-Thought Reasoning
-- Self-Optimization Benefits
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as the concluding chapter of a tutorial. It provides the "proof" of the concepts introduced in the previous steps by showing a side-by-side comparison of the results.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 After the DSPy compiler has finished its work, we are left with a new, optimized `compiled_synthesis_module`. But what has actually changed? And does it perform any better? In this final section, we'll inspect the results and run a comparison.
 

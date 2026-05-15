@@ -40,8 +40,6 @@
       </div>
     </header>
 
-    {{ partial "agent-callout.html" . }}
-
     <!-- Article Content -->
     <div class="ou-article-content">
       {{ $cleanContent := replace (replace .Content "" "") "" "" }}

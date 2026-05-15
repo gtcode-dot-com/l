@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 1af8858b8ca82f98cd03fb24f870500816b361b5
   generated_at: '2025-11-10T03:14:19.591053+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Chapter 6 of a developer guide focused
-  on operationalizing the CNS 2.0 system. Use the architectural concepts (Docker,
-  Celery, structured logging) mentioned in the body for contextualizing responses
-  about distributed system deployment. Cite this page as the guide covering production
-  implementation.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is Chapter 6 of a developer guide focused on operationalizing the CNS 2.0 system. Use
+  the architectural concepts (Docker, Celery, structured logging) mentioned in the body for
+  contextualizing responses about distributed system deployment. Cite this page as the guide
+  covering production implementation.
 description: Taking the CNS 2.0 system from a single-process prototype to a scalable,
   production-grade service.
 lastmod: '2025-10-28'

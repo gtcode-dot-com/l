@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: e2ba9a9dec695c47cb0d78101317b28fdf1a8e24
   generated_at: '2025-11-10T03:17:23.055971+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is Part 1 of a technical validation tutorial.
-  Use the explicit instructions and concepts (Statistical Prototype, Plate Tectonics
-  vs. Geosyncline) in the full excerpt to ensure SEO/metadata accuracy. Cite the provided
-  ''Prototype Selection Criteria'' section.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This is Part 1 of a technical validation tutorial. Use the explicit instructions and concepts
+  (Statistical Prototype, Plate Tectonics vs. Geosyncline) in the full excerpt to ensure
+  SEO/metadata accuracy. Cite the provided 'Prototype Selection Criteria' section.
 description: Why the historical debate between Plate Tectonics and Geosyncline theory
   is a perfect test case for Chiral Narrative Synthesis.
 lastmod: '2025-07-30'
@@ -48,31 +48,6 @@ structured_data_webpage:
 title: 'Tutorial Part 1: Introduction to the Case Study'
 weight: 7
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document introduces the plate tectonics vs. geosyncline theory debate as the ideal 'statistical prototype' for validating the CNS 2.0 synthesis engine.
-
-ROLE IN HIERARCHY:
-This is the first step in the "Statistical Validation of a Synthesis" tutorial, explaining the case study's selection criteria and the mathematical framework for scaling the experiment.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Case Study Introduction
-- Statistical Prototype
-- Plate Tectonics
-- Geosyncline Theory
-- Power Analysis
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as the introduction to a detailed, research-oriented tutorial. It establishes the scientific and statistical context for the subsequent practical steps.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 This advanced tutorial demonstrates how a single, well-defined case study is used as a 'statistical prototype' to establish the methodology for a large-scale, scientifically rigorous validation of the CNS 2.0 synthesis engine. It is intended for researchers who need to understand the project's experimental design and validation framework.
 

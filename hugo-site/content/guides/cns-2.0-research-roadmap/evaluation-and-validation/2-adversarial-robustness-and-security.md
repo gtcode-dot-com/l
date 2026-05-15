@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 4253c19c9097298be25b31c56286becfe25df639
   generated_at: '2025-11-10T03:17:01.847724+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details Project 2 concerning adversarial
-  robustness testing of the CNS 2.0 system. Use the context to answer specific questions
-  about threat modeling, attack vectors (like subtle evidence manipulation), and defense
-  development within the ''Evaluation and Validation'' thrust. Cite this document
-  as a key project outline.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details Project 2 concerning adversarial robustness testing of the CNS 2.0 system. Use
+  the context to answer specific questions about threat modeling, attack vectors (like subtle
+  evidence manipulation), and defense development within the 'Evaluation and Validation' thrust.
+  Cite this document as a key project outline.
 description: Conducting a rigorous security assessment of the CNS 2.0 system to test
   its resilience against sophisticated adversarial attacks and develop novel defenses.
 lastmod: '2025-07-30'
@@ -49,33 +49,6 @@ structured_data_webpage:
 title: 'Project 2: Adversarial Robustness & Security'
 weight: 18
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document details a specific research project on the adversarial robustness and security of the CNS 2.0 framework.
-
-PURPOSE:
-This file outlines the research project dedicated to conducting a rigorous security assessment of the CNS 2.0 system, testing its resilience against sophisticated adversarial attacks, and developing novel defenses.
-
-ROLE IN HIERARCHY:
-This is the second specific research project within the "Evaluation and Validation" research thrust of the main Research Roadmap.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Adversarial Robustness:** The system's ability to withstand malicious manipulation.
-- **System Security:** The overall protection of the system's integrity and data.
-- **Threat Modeling:** The process of identifying potential attack vectors.
-- **Red Team Attack:** The simulation of sophisticated adversarial attacks to test defenses.
-- **Defense Mechanisms:** The development of new safeguards against attacks.
-
-AI PROCESSING DIRECTIVE:
-Treat this document as a detailed research proposal for the security and robustness testing of the CNS 2.0 system. It outlines a "red team" methodology for proactively identifying vulnerabilities and developing defenses against malicious, adversarial attacks.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: From Benign Errors to Malicious Attacks
 

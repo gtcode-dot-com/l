@@ -81,13 +81,21 @@ twitter_image: "/img/ou-the-ledger-og-1200x630.jpg"
 twitter_image_alt: "The Ledger — IRS filing data mapped against public-record context"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is the fifteenth entry in the Oahu Underground investigative series. It is the third installment of "The Architecture of Access" series: Part I ("Federal Triage and Governance Proximity") mapped domestic federal positions and ordinary triage questions; Part II ("The Bridges") mapped PRC-facing institutional relationships; this article examines the financial record and disclosure surfaces.
+  This document is the fifteenth entry in the Oahu Underground investigative series. It is the
+  third installment of "The Architecture of Access" series: Part I ("Federal Triage and Governance
+  Proximity") mapped domestic federal positions and ordinary triage questions; Part II ("The
+  Bridges") mapped PRC-facing institutional relationships; this article examines the financial
+  record and disclosure surfaces.
 
   DOCUMENT PURPOSE:
-  This investigation presents IRS Form 990 data for the Chinese Chamber of Commerce of Hawaii (CCCH), EIN 99-0035507, and documents public-record context for the FY2024 contribution spike and first-time grants. It compares reported filings to IRS disclosure thresholds and lists open questions that require public-record clarification.
+  This investigation presents IRS Form 990 data for the Chinese Chamber of Commerce of Hawaii
+  (CCCH), EIN 99-0035507, and documents public-record context for the FY2024 contribution spike
+  and first-time grants. It compares reported filings to IRS disclosure thresholds and lists open
+  questions that require public-record clarification.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - FY2024 contributions and grants figures from IRS Form 990 XML (tax year 2023, period end 2024-05-31)
@@ -108,7 +116,7 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/geopolitics/ccch-financial-disclosure-ledger/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

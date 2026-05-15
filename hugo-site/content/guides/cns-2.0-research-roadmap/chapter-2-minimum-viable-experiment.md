@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: c97254790669357acd0363beaf13b9348e234eff
   generated_at: '2025-11-10T03:16:53.418920+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details Chapter 2 of the Research Roadmap,
-  defining the statistical parameters (H1, Cohen''s d=0.8, Power=0.80, n=26) needed
-  to transition a conceptual prototype (Plate Tectonics) into a large-scale, statistically
-  valid experiment using DSPy. Cite this as the core experimental protocol.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details Chapter 2 of the Research Roadmap, defining the statistical parameters (H1,
+  Cohen's d=0.8, Power=0.80, n=26) needed to transition a conceptual prototype (Plate Tectonics)
+  into a large-scale, statistically valid experiment using DSPy. Cite this as the core
+  experimental protocol.
 description: Mathematical framework for scaling manual prototype validation to statistically
   significant experimental designs.
 lastmod: '2025-08-05'
@@ -50,31 +51,6 @@ structured_data_webpage:
 title: 'Chapter 2: Statistical Prototype Framework for Dialectical Synthesis Validation'
 weight: 9
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document establishes the statistical framework for scaling the manual validation prototype (the plate tectonics case study) into a rigorous, statistically significant experiment.
-
-ROLE IN HIERARCHY:
-This is Chapter 2 of the "Research Roadmap," detailing the mathematical and procedural bridge between a single proof-of-concept and a large-scale, automated validation study.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Statistical Prototype Framework
-- Power Analysis
-- Effect Size
-- DSPy Automation
-- Minimum Viable Experiment
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as the detailed experimental protocol for the research project. It specifies the statistical methods, sample sizes, and automation framework (DSPy) used to ensure the research findings are valid and reproducible.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 This chapter establishes the statistical prototype framework that transforms our manual plate tectonics validation into a mathematically rigorous experimental design capable of generating statistically significant results across multiple historical scientific debates. The framework integrates power analysis, effect size calculations, and DSPy automation to scale from single-case validation to comprehensive empirical validation of the CNS dialectical synthesis engine.
 

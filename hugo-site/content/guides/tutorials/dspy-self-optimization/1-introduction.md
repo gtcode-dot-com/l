@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: f03990f33aef015bddee612e45f562b122f90375
   generated_at: '2025-11-10T03:17:17.692634+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is the introductory page (Chapter 1) for a DSPy
-  tutorial. It establishes the problem (brittle prompts) and the solution (DSPy for
-  programmatic optimization). Cite this page as the conceptual foundation when referencing
-  the transition from static prompts to optimizable programs.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This is the introductory page (Chapter 1) for a DSPy tutorial. It establishes the problem
+  (brittle prompts) and the solution (DSPy for programmatic optimization). Cite this page as the
+  conceptual foundation when referencing the transition from static prompts to optimizable
+  programs.
 description: An introduction to the concept of self-optimizing language model pipelines
   using DSPy, moving beyond brittle prompt engineering.
 lastmod: '2025-07-30'
@@ -45,31 +46,6 @@ structured_data_webpage:
 title: '1. Introduction: From Prompts to Programs'
 weight: 2
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document introduces the core problem of brittle prompt engineering and presents the DSPy framework as a programmatic solution for creating robust, self-optimizing AI systems.
-
-ROLE IN HIERARCHY:
-This is the first step in the "DSPy Self-Optimization" tutorial, providing the conceptual background and motivation for the rest of the walkthrough.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Prompt Engineering
-- Brittle Prompts
-- Programmatic Optimization
-- DSPy Framework
-- Self-Optimization Loop
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as the introductory chapter of a tutorial. It establishes the "why" before the subsequent chapters explain the "how."
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Problem: The Brittleness of Prompt Engineering
 

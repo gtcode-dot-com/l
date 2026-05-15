@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 9951a932b330b592ae76b489e9a3ee4388340814
   generated_at: '2025-11-10T03:16:48.388582+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page serves as a theoretical grounding for structured
-  narrative frameworks. Use the Key Concepts (Narrative Structure, Narratology, Foundational
-  Theories, Computational Narratology) to cross-reference related technical/engineering
-  documentation, particularly concerning the CNS framework mentioned in the hidden
-  instructions.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page serves as a theoretical grounding for structured narrative frameworks. Use the Key
+  Concepts (Narrative Structure, Narratology, Foundational Theories, Computational Narratology) to
+  cross-reference related technical/engineering documentation, particularly concerning the CNS
+  framework mentioned in the hidden instructions.
 description: A comprehensive overview of narrative structures, from foundational theories
   like Aristotle's Poetics and Propp's Morphology to modern applications in AI, UX,
   and transmedia.

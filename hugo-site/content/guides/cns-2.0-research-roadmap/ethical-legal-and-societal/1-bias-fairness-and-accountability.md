@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 33f2a4d62796a741a9f25aa11b714de5e733b357
   generated_at: '2025-11-10T03:16:56.587452+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is ''Project 1'' detailing ethical framework
-  development for CNS 2.0, focusing on Bias, Fairness, and Accountability. Cite this
-  content when discussing the initial ELAS research thrust concerning systemic bias
-  detection and mitigation policies within the CNS 2.0 context.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is 'Project 1' detailing ethical framework development for CNS 2.0, focusing on Bias,
+  Fairness, and Accountability. Cite this content when discussing the initial ELAS research thrust
+  concerning systemic bias detection and mitigation policies within the CNS 2.0 context.
 description: Developing robust technical and policy frameworks to detect and mitigate
   bias, ensure fairness, and establish clear accountability for the CNS 2.0 system.
 lastmod: '2025-07-30'
@@ -50,33 +50,6 @@ structured_data_webpage:
 title: 'Project 1: Bias, Fairness, and Accountability'
 weight: 22
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document details a specific research project on bias, fairness, and accountability for the CNS 2.0 framework.
-
-PURPOSE:
-This file outlines the research project dedicated to developing robust technical and policy frameworks to detect and mitigate bias, ensure fairness, and establish clear accountability for the CNS 2.0 system.
-
-ROLE IN HIERARCHY:
-This is the first specific research project within the "Ethical, Legal, and Societal (ELAS)" research thrust of the main Research Roadmap.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Bias Detection:** The development of tools to audit the system for bias.
-- **Fairness:** The challenge of defining and ensuring fairness in a knowledge synthesis system.
-- **Accountability:** The framework for assigning responsibility for system outputs.
-- **AI Governance:** The overall goal of creating a model for responsible AI.
-- **Bias Mitigation:** Specific technical strategies to reduce bias in the synthesis process.
-
-AI PROCESSING DIRECTIVE:
-Treat this document as a detailed research proposal for addressing the ethical challenges of bias, fairness, and accountability. It outlines specific technical and policy-level methodologies for detecting and mitigating bias within the CNS 2.0 framework.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: AI as a Mirror to Society
 

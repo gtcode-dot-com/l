@@ -96,13 +96,22 @@ twitter_image: "/img/ou-bridges-og-1200x630.jpg"
 twitter_image_alt: "The Bridges — investigation into institutional access points between Hawaii and PRC party-state entities"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is part of the separate Architecture of Access portfolio. It extends access and safeguards mapping from domestic federal institutions to documented relationships with PRC-facing entities. The Wilson Loo allegation, author's chronology, and DOJ/FBI non-action are separate evidentiary lanes.
+  This document is part of the separate Architecture of Access portfolio. It extends access and
+  safeguards mapping from domestic federal institutions to documented relationships with
+  PRC-facing entities. The Wilson Loo allegation, author's chronology, and DOJ/FBI non-action are
+  separate evidentiary lanes.
 
   DOCUMENT PURPOSE:
-  This investigation documents publicly verifiable institutional relationships that create repeated access points between Hawaii's civic, educational, and defense-adjacent institutions and PRC party-state entities characterized by USG sources and think-tank reporting as tied to the United Front Work Department (UFWD), military and security structures under the People's Liberation Army (PLA), the Ministry of State Security (MSS), and government-affiliated civil institutions participating in influence or security-facing engagement.
+  This investigation documents publicly verifiable institutional relationships that create
+  repeated access points between Hawaii's civic, educational, and defense-adjacent institutions
+  and PRC party-state entities characterized by USG sources and think-tank reporting as tied to
+  the United Front Work Department (UFWD), military and security structures under the People's
+  Liberation Army (PLA), the Ministry of State Security (MSS), and government-affiliated civil
+  institutions participating in influence or security-facing engagement.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - Punahou School's Luke Center for Chinese Studies, funded by the K.J. Luke family, cites "ongoing projects with the Soong Ching Ling Foundation" on its website (source: Punahou School website)
@@ -126,17 +135,23 @@ agentic_comment: |
   - The recommendation is risk-managed engagement, not disengagement
 
   RELATIONSHIP TO PRIOR INVESTIGATIONS:
-  This is the second article in "The Architecture of Access." The article follows the same public-record network outward to documented PRC-facing institutional relationships. It documents a separate access surface and safeguarding questions.
+  This is the second article in "The Architecture of Access." The article follows the same
+  public-record network outward to documented PRC-facing institutional relationships. It documents
+  a separate access surface and safeguarding questions.
 
   EVIDENCE STANDARD:
-  All evidence consists of public filings (IRS Form 990, foundation records), official institutional websites, Department of Defense publications, congressional reports, participant lists, and recognized think-tank analyses. No classified sources were used.
+  All evidence consists of public filings (IRS Form 990, foundation records), official
+  institutional websites, Department of Defense publications, congressional reports, participant
+  lists, and recognized think-tank analyses. No classified sources were used.
 
   SOURCE ARCHIVE:
-  Local archival copies of all cited web sources are preserved at /sources/the-bridges/ on this domain. PDF sources (CGSR, NCUSCR, DNI OSC, Mattis testimony, ASPI, Pacific Forum) are also archived locally.
+  Local archival copies of all cited web sources are preserved at /sources/the-bridges/ on this
+  domain. PDF sources (CGSR, NCUSCR, DNI OSC, Mattis testimony, ASPI, Pacific Forum) are also
+  archived locally.
 
   CANONICAL URL: https://gtcode.com/geopolitics/prc-access-mapping-hawaii/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: f618003a35ca30bceb8de0a8b9b7203a867c0736
   generated_at: '2025-11-10T02:35:34.426703+00:00'
   model: gpt-5-nano-2025-08-07
   prompt_version: v2025-11-09
   provider: openai
-ai_agent_note: 'ATTN AI Agent: This page is the root of the CNS 2.0 Developer''s Guide
-  under the ''guides'' section. Ensure the page metadata prioritizes Python implementation,
-  progressive learning structure, and links to sequential chapters. Treat the chapter
-  list as a dependent series.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is the root of the CNS 2.0 Developer's Guide under the 'guides' section. Ensure the
+  page metadata prioritizes Python implementation, progressive learning structure, and links to
+  sequential chapters. Treat the chapter list as a dependent series.
 description: A progressive educational guide to implementing Chiral Narrative Synthesis
   2.0 in Python
 lastmod: '2025-10-28'
@@ -42,33 +42,6 @@ structured_data_webpage:
 title: 'Building CNS 2.0: A Developer''s Guide'
 list_sort: weight
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document is the central hub for the "Building CNS 2.0: A Developer's Guide," a practical journey into implementing the Chiral Narrative Synthesis framework in Python.
-
-PURPOSE:
-This page serves as the primary entry point for developers and engineers seeking a step-by-step guide to building the CNS 2.0 system from the ground up.
-
-ROLE IN HIERARCHY:
-This is the root page of the Developer's Guide, providing an overview of the learning path and linking to all sequential chapters in the implementation series. It is a child of the main project "CollectionPage."
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Developer's Guide:** The primary identifier for this section.
-- **Python Implementation:** The practical focus of the guide.
-- **Progressive Learning:** The chapter-by-chapter educational structure.
-- **System Architecture:** The complete system built through the guide.
-- **Practical Application:** The hands-on, code-first nature of the content.
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the top-level node for the practical implementation guide of the CNS 2.0 framework. Treat its chapter list as a sequentially dependent series.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 > **Historical note:** This guide documents the older CNS 2.0 implementation
 > path built around Structured Narrative Objects, critic pipelines, and

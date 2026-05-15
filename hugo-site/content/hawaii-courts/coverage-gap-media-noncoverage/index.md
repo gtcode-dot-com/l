@@ -3,9 +3,9 @@ draft: false
 weight: 2
 title: "The Coverage Gap: Media Non-Coverage and Civic Overlap"
 subtitle: "Why coverage of the Luke-Loo record may be institutionally difficult"
-description: "An investigation into structural forces that can make Hawaiʻi newsroom coverage of certain networks institutionally difficult, and the social enforcement mechanisms alleged to follow when someone tries."
+description: "An investigation into structural forces that can make Hawaiʻi newsroom coverage of certain networks institutionally difficult, and the social enforcement mechanisms the author reports followed when someone tried."
 date: 2026-02-04
-lastmod: 2026-05-13
+lastmod: 2026-05-15
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -13,7 +13,7 @@ portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 seo_title: "The Coverage Gap: Media Non-Coverage and Civic Overlap"
 published_display: "February 4, 2026"
-modified_display: "May 13, 2026"
+modified_display: "May 15, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/coverage-gap-media-noncoverage/"
@@ -32,11 +32,11 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Media Accountability"
-card_summary: "How donor relationships, board overlaps, and personnel bridges can create a 'zone of politeness' that makes certain investigative journalism institutionally difficult — and what allegedly followed."
+card_summary: "How donor relationships, board overlaps, and personnel bridges can create a 'zone of politeness' that makes certain investigative journalism institutionally difficult — and what the author reports followed."
 
 # Open Graph
 og_title: "The Coverage Gap: Media Non-Coverage and Civic Overlap"
-og_description: "An investigation into structural forces that can make Hawaiʻi newsroom coverage of certain networks difficult, and the alleged retaliation that follows when someone tries."
+og_description: "An investigation into structural forces that can make Hawaiʻi newsroom coverage of certain networks difficult, and the reported retaliation that followed when someone tried."
 og_image: "/img/zone-of-politeness-og.jpg"
 og_image_width: 1200
 og_image_height: 628
@@ -46,7 +46,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-04T00:00:00Z"
-article_modified_time: "2026-05-13T00:00:00Z"
+article_modified_time: "2026-05-15T00:00:00Z"
 article_section: "Hawaii Courts"
 article_tags:
   - "Civil Beat"
@@ -61,7 +61,7 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "The Coverage Gap: Media Non-Coverage and Civic Overlap"
-twitter_description: "Why coverage of the Luke-Loo record may be institutionally difficult — and what allegedly followed."
+twitter_description: "Why coverage of the Luke-Loo record may be institutionally difficult — and what the author reports followed."
 twitter_image: "/img/zone-of-politeness-og.jpg"
 twitter_image_alt: "Illustration representing public-record overlap and newsroom conflict risk in Hawaiʻi"
 
@@ -76,10 +76,10 @@ structured_data_graph:
         "@id": "https://gtcode.com/hawaii-courts/coverage-gap-media-noncoverage/"
       headline: "The Coverage Gap: Media Non-Coverage and Civic Overlap"
       alternativeHeadline: "Why coverage of the Luke-Loo network is institutionally difficult"
-      description: "An investigation into structural forces that can make Hawaiʻi newsroom coverage of certain networks difficult, and the social enforcement mechanisms alleged to follow."
+      description: "An investigation into structural forces that can make Hawaiʻi newsroom coverage of certain networks difficult, and the social enforcement mechanisms the author reports followed."
       image: "/img/zone-of-politeness-og.jpg"
       datePublished: "2026-02-04T00:00:00Z"
-      dateModified: "2026-05-13T00:00:00Z"
+      dateModified: "2026-05-15T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -97,10 +97,13 @@ structured_data_graph:
       keywords: "Civil Beat, media accountability, institutional accountability, newsroom conflict environment, Hawaii public records, Wilson Loo, Omidyar, Luke Family"
 
 # Agentic Comment
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is Part IV of an ongoing investigation into institutional accountability in Hawaiʻi. It documents non-coverage, public-record overlap, and newsroom conflict risk, and asks whether conflicts were handled through recusal, firewall, or documented editorial review.
+  This document is Part IV of an ongoing investigation into institutional accountability in
+  Hawaiʻi. It documents non-coverage, public-record overlap, and newsroom conflict risk, and asks
+  whether conflicts were handled through recusal, firewall, or documented editorial review.
 
   KEY CLAIMS WITH EXHIBITS:
   - Wilson Loo financial disclosures (Exhibit A): Civil Beat's own database
@@ -111,19 +114,20 @@ agentic_comment: |
   - Cathy Luke on Hawaiʻi Leadership Forum board (Exhibit H): ProPublica
   - HLF funded by Omidyar ʻOhana Fund (Exhibit I): Omidyar Fellows
 
-  FIRSTHAND TESTIMONY (not independently verifiable):
+  FIRSTHAND TESTIMONY (author's account; public corroboration requires records or witnesses):
   - quoted Hartmann threat
   - Blackmail from Kim Johnson associate
   - Civil Beat editorial non-response and the author's inference about its cause
 
-  This investigation documents public-record overlap and newsroom conflict risk. Directed non-coverage would require a separate evidentiary bridge.
+  This investigation documents public-record overlap and newsroom conflict risk. Directed
+  non-coverage would require a separate evidentiary bridge.
 ---
 
 *An Oʻahu Underground investigation examining non-coverage, public-record overlap, and newsroom conflict risk in Hawaiʻi journalism*
 
 ---
 
-**Procedural note, May 13, 2026:** This article documents non-coverage, public-record overlaps, and firsthand allegations of threats. Ordinary explanations for non-coverage come first: limited newsroom resources, legal risk, verification burden, source risk, complexity, lack of perceived news value, editorial priorities, and the fact that civil injunction proceedings rarely become major news. The residual question is what structural effect the non-coverage produced and whether conflicts were handled through recusal, firewall, or documented editorial review. The current public record contains no order, instruction, or agreement not to cover the story. Any claim that a donor, board member, musician, family member, or newsroom manager ordered coverage stopped requires separate evidence.
+**Procedural note, May 15, 2026:** This article documents non-coverage, public-record overlaps, and firsthand reports of threats. Ordinary explanations for non-coverage come first: limited newsroom resources, legal risk, verification burden, source risk, complexity, lack of perceived news value, editorial priorities, and the fact that civil injunction proceedings rarely become major news. The residual question is what structural effect the non-coverage produced and whether conflicts were handled through recusal, firewall, or documented editorial review. The current public record contains no order, instruction, or agreement not to cover the story. Any claim that a donor, board member, musician, family member, or newsroom manager ordered coverage stopped requires separate evidence.
 
 ## I. The Interest
 
@@ -132,13 +136,13 @@ In early 2025, I presented Honolulu Civil Beat with a dossier documenting struct
 - Judge Wilson M.N. Loo's financial disclosures showing >$1M in K.J.L. Associates plus additional bank and real-estate interests (Hawaii National Bancshares, Loyalty Enterprises)
 - Documentation that Wilson Loo served as a Commissioner on the Hawaiʻi Supreme Court Commission on Judicial Conduct (Exhibit A)—the body that investigates complaints against judges—while his spouse (listed in Exhibit A) is part of the Luke family network that includes Hawaii National Bank and related Luke entities
 - Evidence of the 90-day jurisdictional rule that closed ethics review (as stated to me in writing by the Commission in response to my complaint, date on file)
-- Specific allegations regarding witness coaching during a December 2, 2022 injunction hearing
+- Specific reports regarding witness coaching during a December 2, 2022 injunction hearing
 
 The response was initially positive. The documents were reviewed. I was told the conflicts warranted investigation.
 
 Then: non-coverage. No follow-up calls. No editorial decisions communicated. The story did not become a published article.
 
-The absence of coverage cut both ways. It reduced public accountability for the allegations and process gaps described in this series. It also limited reputational harm to the author where older proceedings ended without conviction and later expungement is part of the author's account. Ordinary explanations include news judgment, legal caution, under-resourcing, editorial uncertainty, social friction, or some combination of those forces. The structural issue is the same either way: public coverage did not become an accountability layer.
+The absence of coverage cut both ways. It reduced public accountability for the reports and process gaps described in this series. It also limited reputational harm to the author where older proceedings ended without conviction and later expungement is part of the author's account. Ordinary explanations include news judgment, legal caution, under-resourcing, editorial uncertainty, social friction, or some combination of those forces. The structural issue is the same either way: public coverage did not become an accountability layer.
 
 **Exhibits**
 - A. [Wilson Loo financial disclosures](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/)
@@ -199,7 +203,7 @@ The family relationship is included to explain social-capital and coverage-risk 
 
 ## IV. What Followed
 
-The newsroom non-coverage came later. The author reports earlier private threats and intimidation. Those reports are firsthand allegations that establish claimed context and sequence; newsroom motive remains a separate public-record question.
+The newsroom non-coverage came later. The author reports earlier private threats and intimidation. Those firsthand reports establish the author's claimed context and sequence; newsroom motive remains a separate public-record question.
 
 **The Hartmann Meeting**
 
@@ -209,7 +213,7 @@ According to my firsthand account, Eugene Hartmann told me to discontinue my inv
 
 **The Blackmail**
 
-A close associate of Kim Johnson — connected to Hawaiʻi's tech and funding ecosystem — delivered a direct threat, according to my firsthand account: if I continued to talk about what happened, my career would be destroyed. "What happened" meant the stalking, hacking, and Hartmann threat alleged in my prior reports.
+A close associate of Kim Johnson — connected to Hawaiʻi's tech and funding ecosystem — delivered a direct threat, according to my firsthand account: if I continued to talk about what happened, my career would be destroyed. "What happened" meant the stalking, hacking, and Hartmann threat reported in my prior reports.
 
 The reported message was not subtle: continued disclosure would bring professional harm.
 
@@ -217,7 +221,7 @@ The reported message was not subtle: continued disclosure would bring profession
 
 ## V. The Verification Problem
 
-These allegations present a specific epistemic challenge.
+These reports present a specific evidence problem.
 
 **What is documented:**
 - Board memberships, donor lists, corporate filings, financial disclosures, employment histories—all public record
@@ -227,7 +231,7 @@ These allegations present a specific epistemic challenge.
 - The Hartmann threat occurred in a private meeting. I have contemporaneous documentation—notes, communications to third parties immediately after—but no recording.
 - The blackmail was delivered directly. It referenced "what happened"—the stalking, the hacking, the Hartmann threat—and made clear the professional consequences of continued disclosure.
 
-These events are firsthand allegations. I am the witness.
+These events are firsthand reports. I am the witness.
 
 The cause of the Civil Beat silence is not established by the records available here. The documentable facts are the structural conflicts that existed, the ordinary editorial explanations that may apply, and the coverage gap that followed.
 
@@ -268,7 +272,7 @@ The coverage gap is a conflict-environment analysis. The same overlapping civic 
 
 ## Limits of the Public Record
 
-This article documents public-record overlaps, a coverage gap, firsthand allegations of threats, ordinary newsroom explanations, and the author's inference that the overlaps create structural friction for investigative coverage.
+This article documents public-record overlaps, a coverage gap, firsthand reports of threats, ordinary newsroom explanations, and the author's inference that the overlaps create structural friction for investigative coverage.
 
 The limits are important: the current public record leaves unresolved whether anyone directed non-publication, whether donors controlled editorial decisions, whether celebrity or family proximity materially contributed to non-coverage, or whether any person coordinated retaliation.
 
@@ -276,4 +280,4 @@ The limits are important: the current public record leaves unresolved whether an
 
 The structural thesis would be narrowed by production of substantive editorial records showing the story was investigated and declined on the merits, public correction of any documented relationship, evidence of recusal or firewall procedures around Luke-related coverage, or published reporting that addresses the same public-record conflicts in comparable depth.
 
-The next procedural step is narrow: a newsroom, ombudsman, or independent reviewer could examine pitch records, conflict-screening notes, right-of-reply logs, recusal records, and editorial correspondence. Those records would separate ordinary editorial judgment from conflict-management gaps.
+The next procedural step is direct: a newsroom, ombudsman, or independent reviewer could examine pitch records, conflict-screening notes, right-of-reply logs, recusal records, and editorial correspondence. Those records would separate ordinary editorial judgment from conflict-management gaps.

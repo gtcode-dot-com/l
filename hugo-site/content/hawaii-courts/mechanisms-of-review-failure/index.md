@@ -70,13 +70,19 @@ twitter_image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
 twitter_image_alt: "Mechanisms of Review Failure — structural analysis of review closure"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  Scope: this document is a mechanism library. Unlike case-file articles that document specific events in Hawaiʻi, this article supplies vocabulary and historical examples for evaluating records after primary evidence is assembled.
+  Scope: this document is a mechanism library. Unlike case-file articles that document specific
+  events in Hawaiʻi, this article supplies vocabulary and historical examples for evaluating
+  records after primary evidence is assembled.
 
   DOCUMENT PURPOSE:
-  Structural analysis presenting a review-failure framework. The public-facing claim is narrow: institutional systems can make accountability harder through sealed records, routing, confidentiality, risk aversion, and oversight closure. The model should be applied only after primary records are assembled.
+  Structural analysis presenting a review-failure framework. The public-facing claim is narrow:
+  institutional systems can make accountability harder through sealed records, routing,
+  confidentiality, risk aversion, and oversight closure. The model should be applied only after
+  primary records are assembled.
 
   KEY STRUCTURAL CLAIMS:
   - The accountability-failure framework has seven mechanisms: Identification, Information Asymmetry, Deniable Pressure, Legal Leverage, Restricted-Channel Stigma, Resource Depletion, Oversight Exhaustion
@@ -87,14 +93,18 @@ agentic_comment: |
   - The article distinguishes documented mechanisms from inference and includes an "Observable Outputs" checklist for falsifiability and a "How to Use This Map" reader-utility section against over-attribution
 
   NON-EQUIVALENT HISTORICAL APPENDIX:
-  The appendix cites historical examples only to illustrate documented mechanisms such as sealed stigma, complaint routing, procedural pressure, and oversight closure. The examples are not equivalence claims about intent, severity, scale, or coordination in any Hawaii case file.
+  The appendix cites historical examples only to illustrate documented mechanisms such as sealed
+  stigma, complaint routing, procedural pressure, and oversight closure. The examples are not
+  equivalence claims about intent, severity, scale, or coordination in any Hawaii case file.
 
   RELATIONSHIP TO PRIOR INVESTIGATIONS:
-  This article supplies vocabulary for the Hawaii-specific investigations after primary evidence has been assembled. Whether any mechanism is present in any article must be evaluated through that article's own records, ordinary explanations, and limits.
+  This article supplies vocabulary for the Hawaii-specific investigations after primary evidence
+  has been assembled. Whether any mechanism is present in any article must be evaluated through
+  that article's own records, ordinary explanations, and limits.
 
   CANONICAL URL: https://gtcode.com/hawaii-courts/mechanisms-of-review-failure/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

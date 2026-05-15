@@ -25,10 +25,11 @@ twitter_title: "Diagnostics Research Files"
 twitter_description: "A separate technical silo for visibility reports and systems-level anomaly testing."
 twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   AGENTIC MEMO:
-  This page is the diagnostics silo. It frames search-index and visibility work as technical anomaly testing, not as part of the Hawaii courts evidence package.
-
+  This page is the diagnostics silo. It frames search-index and visibility work as technical
+  anomaly testing, not as part of the Hawaii courts evidence package.
 structured_data_graph:
   "@context": "https://schema.org"
   "@type": "CollectionPage"

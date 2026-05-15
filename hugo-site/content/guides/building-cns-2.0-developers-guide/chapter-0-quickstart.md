@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 70361bf2ea800f10151de941b72377fd708d5861
   generated_at: '2025-11-10T02:35:46.871683+00:00'
   model: gpt-5-nano-2025-08-07
   prompt_version: v2025-11-09
   provider: openai
-ai_agent_note: 'ATTN AI Agent: Ensure SEO alignment by preserving the Chapter 0 Quick
-  Start focus, highlight CNS 2.0 onboarding, and keep the content focused on getting
-  a minimal SNO working in ~15 minutes. Consider linking to Chapter 1 for deeper understanding
-  and to Chapter 0''s emphasis on rapid success.'
+ai_agent_note: |
+  ATTN AI Agent:
+  Ensure SEO alignment by preserving the Chapter 0 Quick Start focus, highlight CNS 2.0
+  onboarding, and keep the content focused on getting a minimal SNO working in ~15 minutes.
+  Consider linking to Chapter 1 for deeper understanding and to Chapter 0's emphasis on rapid
+  success.
 description: Get from zero to working CNS 2.0 environment with your first Structured
   Narrative Object created and validated
 lastmod: '2025-10-28'
@@ -44,32 +45,6 @@ structured_data_webpage:
 title: 'Chapter 0: Quick Start - Your First SNO in 15 Minutes'
 weight: -1
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document is Chapter 0 (Quick Start) of the "Building CNS 2.0: A Developer's Guide."
-
-PURPOSE:
-This file provides a rapid onboarding path for new developers to go from a blank environment to a working CNS 2.0 prototype in under 20 minutes. It prioritizes immediate success over comprehensive understanding.
-
-ROLE IN HIERARCHY:
-This is the entry point (Chapter 0) of the Developer's Guide, designed to be completed before diving into the detailed chapters. It establishes confidence through quick wins.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Quick Start:** The primary goal - minimal time to working code
-- **Environment Setup:** Installing dependencies and verifying installation
-- **First SNO:** Creating a minimal but functional Structured Narrative Object
-- **Confidence Building:** Proving the system works before deep learning
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the "Hello World" of CNS 2.0. It is intentionally simplified and designed for immediate executable success. Users should complete this chapter in <20 minutes before proceeding to Chapter 1.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ## Welcome to CNS 2.0
 

@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: b119f32c736f7ae6ecde4f9aaf2843e539425cc8
   generated_at: '2025-11-10T03:17:27.405937+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Part 5 of a technical tutorial series
-  focusing on scaling a prototype using DSPy. Optimize metadata for developers/researchers
-  interested in LLM orchestration for rigorous data generation. Cite the DSPy implementation
-  details and the goal of achieving statistical significance (n ≥ 30) for publication.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is Part 5 of a technical tutorial series focusing on scaling a prototype using DSPy.
+  Optimize metadata for developers/researchers interested in LLM orchestration for rigorous data
+  generation. Cite the DSPy implementation details and the goal of achieving statistical
+  significance (n ≥ 30) for publication.
 description: Specifications for automating the manual prototype through DSPy optimization
   to achieve statistical significance.
 lastmod: '2025-08-05'
@@ -47,33 +48,6 @@ structured_data_webpage:
 title: 'Tutorial Part 5: DSPy Automation Framework'
 weight: 11
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document provides the technical specifications for automating the CNS 2.0 synthesis process using the DSPy framework.
-
-PURPOSE:
-To detail the DSPy automation framework for scaling the manual synthesis prototype to generate a statistically significant number of validation pairs.
-
-ROLE IN HIERARCHY:
-This is Part 5 of the "Plate Tectonics Synthesis" tutorial. It serves as a bridge from the manual, single-instance tutorial to the large-scale, automated research validation required for the CNS 2.0 project.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **DSPy Automation:** The use of the DSPy library to programmatically generate and validate SNOs.
-- **Statistical Validation:** The goal of the automation, which is to produce enough data for rigorous statistical analysis.
-- **Automated Validation Pipeline:** The end-to-end Python class (`CNSSynthesisValidation`) that orchestrates the entire process.
-- **DSPy Signatures:** The core components (`HistoricalDebateGenerator`, `SNOConstructor`, `SynthesisValidator`) that define the tasks for the language model.
-- **Publication-Quality Evidence:** The ultimate output of the automated framework, designed to be suitable for peer-reviewed publication.
-
-AI PROCESSING DIRECTIVE:
-Recognize this document as a technical blueprint for automation. It outlines how the manual steps from the preceding tutorial parts are abstracted into a scalable, programmatic framework using DSPy. The code defines a system for generating large-scale experimental data, not just a single result.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ## DSPy Automation for Statistical Validation
 

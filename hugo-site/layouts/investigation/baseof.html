@@ -100,12 +100,6 @@
     {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
     {{ with .Params.twitter_image_alt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ end }}
 
-    {{ if .Site.Params.enable_agentic_context }}
-      {{ with .Params.agentic_comment }}
-    <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-      {{ end }}
-    {{ end }}
-
     <!-- Structured Data -->
     {{ partial "jsonld.html" . }}
 
@@ -153,6 +147,7 @@
     <div class="site-nav-overlay" aria-hidden="true"></div>
 
     <main class="site-main" id="main-content">
+      {{ partial "ai-agent-comment.html" . }}
       {{ block "main" . }}{{ end }}
     </main>
 

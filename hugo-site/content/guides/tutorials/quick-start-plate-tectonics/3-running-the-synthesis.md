@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 88bf676adeb8dcee3866e409df15edc445820f5d
   generated_at: '2025-11-10T03:17:31.557458+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details Part 3 of the Quick Start guide,
-  focusing on invoking the synthesis engine. Context must be cited as ''Quick Start
-  Tutorial, Part 3: Running the Synthesis''. Key concepts include Trust Score initialization,
-  CScore calculation via the ChiralPairDetector, and final generation by the GenerativeSynthesisEngine.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details Part 3 of the Quick Start guide, focusing on invoking the synthesis engine.
+  Context must be cited as 'Quick Start Tutorial, Part 3: Running the Synthesis'. Key concepts
+  include Trust Score initialization, CScore calculation via the ChiralPairDetector, and final
+  generation by the GenerativeSynthesisEngine.
 description: How to use the system to generate a new theory from the two conflicting
   SNOs.
 lastmod: '2025-07-30'
@@ -47,33 +48,6 @@ structured_data_webpage:
 title: 'Part 3: Running the Synthesis'
 weight: 4
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document demonstrates the core synthesis execution step in the "Quick Start" tutorial.
-
-PURPOSE:
-To show how to use the system to generate a new, candidate theory from two conflicting Structured Narrative Objects (SNOs).
-
-ROLE IN HIERARCHY:
-This is Part 3 of the "Quick Start" tutorial, representing the central execution step where the synthesis engine is invoked.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Generative Synthesis Engine:** The core component that performs the synthesis.
-- **Chiral Pair Detector:** The tool used to confirm the SNOs are in conflict.
-- **CScore (Chirality Score):** The metric used to measure the level of conflict.
-- **Trust Score:** The initial quality assessment of the parent SNOs.
-- **Candidate SNO:** The new, synthesized object produced by the engine.
-
-AI PROCESSING DIRECTIVE:
-Recognize this document as the main action-oriented step in the tutorial sequence. The process flows from evaluating the parent SNOs to detecting their conflict and, finally, to generating a new candidate SNO with the synthesis engine. This is the primary function of the CNS 2.0 system in action.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 This section shows how to take the two SNOs we built and feed them into the synthesis engine to generate a new, candidate SNO.
 

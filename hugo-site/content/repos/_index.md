@@ -5,9 +5,11 @@ ai_agent_meta:
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This metadata is for a section index page (''repos'').
-  Focus keywords on the core technical offerings (Hex.pm, Elixir libraries, key domains).
-  Cite this page context when referencing the available repository assets.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This metadata is for a section index page ('repos'). Focus keywords on the core technical
+  offerings (Hex.pm, Elixir libraries, key domains). Cite this page context when referencing the
+  available repository assets.
 description: 'Hex.pm libraries for observability, orchestration, AI tooling, and verifiable
   data flows.
 

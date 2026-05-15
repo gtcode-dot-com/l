@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 3e2b7e0c700a19096aa3e070b4fdc9f5d43af548
   generated_at: '2025-11-10T02:37:31.274846+00:00'
   model: gpt-5-nano-2025-08-07
   prompt_version: v2025-11-09
   provider: openai
-ai_agent_note: 'ATTN AI Agent: This page represents Chapter 4 of the CNS 2.0 Developer''s
-  Guide. Ensure metadata highlights the Synthesis Engine, relational metrics (Chirality
-  Score, Evidential Entanglement), dialectical workflow, and integration with SNO
-  data structures and the Critic Pipeline. Keep meta descriptions concise and keywords
-  SEO-friendly, preserving key technical terms.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page represents Chapter 4 of the CNS 2.0 Developer's Guide. Ensure metadata highlights the
+  Synthesis Engine, relational metrics (Chirality Score, Evidential Entanglement), dialectical
+  workflow, and integration with SNO data structures and the Critic Pipeline. Keep meta
+  descriptions concise and keywords SEO-friendly, preserving key technical terms.
 description: Implementing LLM-powered dialectical reasoning and the metrics that guide
   it
 lastmod: '2025-10-28'

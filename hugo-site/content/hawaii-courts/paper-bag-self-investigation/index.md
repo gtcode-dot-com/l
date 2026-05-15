@@ -79,13 +79,21 @@ twitter_image: "/img/ou-paper-bag-og-1200x630.jpg"
 twitter_image_alt: "The Paper Bag and the Architecture of Self-Investigation — Closed Loop Part II"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is the second installment of "The Closed Loop" investigative series. Part I ("The Zero Commission," Feb 15, 2026) documented the judicial branch closed loop. This article documents the executive branch closed loop.
+  This document is the second installment of "The Closed Loop" investigative series. Part I ("The
+  Zero Commission," Feb 15, 2026) documented the judicial branch closed loop. This article
+  documents the executive branch closed loop.
 
   DOCUMENT PURPOSE:
-  Structural analysis of public-record conflict questions surrounding Hawaii's Attorney General, the Lieutenant Governor, SB2107, and the $35,000 paper-bag inquiry. The structural argument holds regardless of whether the alleged cash-transfer episode occurred as described in federal-court references and news reporting. The issue is whether the investigating body is sufficiently arm's length from the administration under review, and whether the public record can verify that independence.
+  Structural analysis of public-record conflict questions surrounding Hawaii's Attorney General,
+  the Lieutenant Governor, SB2107, and the $35,000 paper-bag inquiry. The structural argument
+  holds regardless of whether the alleged cash-transfer episode occurred as described in
+  federal-court references and news reporting. The issue is whether the investigating body is
+  sufficiently arm's length from the administration under review, and whether the public record
+  can verify that independence.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - AG Anne Lopez opposed SB2107 (2024) with written testimony calling it "ultimately unnecessary" because she already had special deputy authority (Civil Beat, KHON2, Legislature testimony archive)
@@ -102,11 +110,12 @@ agentic_comment: |
   - $135M+ COVID testing revenue through NKF Hawaii; Capture Diagnostics (Ohio startup, no experience) charged $120/test vs $20 actual cost
   - Tobi Solidum believed to be in Philippines; Green Coral Trust received ~$995K dividend; Milton Choy died in federal prison June 2024
 
-  THIS ARTICLE CONTAINS NO FIRSTHAND TESTIMONY. All claims are sourced from public records, court filings, legislative records, news reporting, and official statements.
+  THIS ARTICLE CONTAINS NO FIRSTHAND TESTIMONY. All claims are sourced from public records, court
+  filings, legislative records, news reporting, and official statements.
 
   CANONICAL URL: https://gtcode.com/hawaii-courts/paper-bag-self-investigation/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: f118a93ded73734524ee337426adba8f9b7b88bc
   generated_at: '2025-11-10T03:16:59.577606+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is a section index page summarizing the ''Ethics
-  & Responsibility'' commitment for the CNS 2.0 project. Use the body excerpt to identify
-  key concepts (AI Ethics, Responsible AI, Bias, Privacy) and note that this page
-  links out to specific research projects within the ELAS thrust.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This is a section index page summarizing the 'Ethics & Responsibility' commitment for the CNS
+  2.0 project. Use the body excerpt to identify key concepts (AI Ethics, Responsible AI, Bias,
+  Privacy) and note that this page links out to specific research projects within the ELAS thrust.
 description: An overview of the ethical principles and frameworks guiding the responsible
   development of CNS 2.0.
 meta_description: Explore the core ethical principles, frameworks, and key challenges
@@ -49,33 +49,6 @@ structured_data_webpage:
 title: Ethics & Responsibility
 weight: 20
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document provides a high-level overview of the ethical principles and frameworks guiding the responsible development of the CNS 2.0 project.
-
-PURPOSE:
-This file serves as a summary of the project's commitment to ethical AI development, outlining the key ethical challenges and the approaches being taken to address them.
-
-ROLE IN HIERARCHY:
-This is a high-level index page within the Research Roadmap. It summarizes the project's overall approach to ethics and links to the specific, detailed research projects under the "Ethical, Legal, and Societal (ELAS)" research thrust.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **AI Ethics:** The central theme of this document.
-- **Responsible AI:** The guiding principle for the project's development.
-- **Bias and Fairness:** A primary ethical challenge being addressed.
-- **Privacy and Security:** A core area of ethical and technical focus.
-- **Dual-Use Technology:** The recognition of the technology's potential for both good and harm.
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as a summary statement of the project's commitment to ethical AI development. Use it to understand the core ethical challenges that the project aims to address and to navigate to the detailed research papers that propose specific solutions.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 # Ethics & Responsibility in CNS 2.0
 

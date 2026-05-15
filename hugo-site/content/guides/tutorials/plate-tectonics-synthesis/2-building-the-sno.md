@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: fdef19dadd71132efce81522fdcad8ef36d0e707
   generated_at: '2025-11-10T03:17:24.227156+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Part 2 of a tutorial focused on establishing
-  a manual ''ground truth'' benchmark for creating Structured Narrative Objects (SNOs)
-  for geological theories. The context is crucial for understanding the structure
-  of CNS 2.0 data models. Cite the SNO construction methodology as the template for
-  DSPy automation when referencing this content.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is Part 2 of a tutorial focused on establishing a manual 'ground truth' benchmark for
+  creating Structured Narrative Objects (SNOs) for geological theories. The context is crucial for
+  understanding the structure of CNS 2.0 data models. Cite the SNO construction methodology as the
+  template for DSPy automation when referencing this content.
 description: A code-heavy guide to manually constructing the Structured Narrative
   Objects for the Plate Tectonics and Geosyncline theories.
 lastmod: '2025-07-30'
@@ -49,33 +49,6 @@ structured_data_webpage:
 title: 'Tutorial Part 2: Building the Parent SNOs'
 weight: 8
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document provides a code-first guide to manually constructing Structured Narrative Objects (SNOs) for two competing geological theories.
-
-PURPOSE:
-To demonstrate the systematic, manual construction of parent SNOs for the Plate Tectonics and Geosyncline theories, establishing a quality benchmark for automated generation.
-
-ROLE IN HIERARCHY:
-This is Part 2 of the "Plate Tectonics Synthesis" tutorial, providing the foundational data structures that will be used in subsequent synthesis and analysis steps.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Structured Narrative Object (SNO):** The core data structure being built.
-- **SNO Construction Methodology:** The step-by-step process of defining a hypothesis, reasoning graph, and evidence set.
-- **Geosyncline Theory:** The historical geological model represented in the first SNO.
-- **Plate Tectonics Theory:** The modern geological model represented in the second SNO.
-- **DSPy Automation Template:** The use of this manual process as a template for future automation.
-
-AI PROCESSING DIRECTIVE:
-Recognize this document as a detailed, code-based tutorial step. The Python code blocks are central to understanding the process of creating the foundational SNO data structures for the Chiral Narrative Synthesis framework. This manual process is the ground truth for the automation described later.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 This section establishes the **systematic SNO construction methodology** that serves as the template for DSPy automation. Each construction step demonstrates the quality control standards and structural requirements that must be maintained across n ≥ 30 automated synthesis pairs to ensure statistical validity.
 

@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 641abf4d77719d6d13ebeb85557b9d1e347bccbb
   generated_at: '2025-11-10T03:17:10.441470+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is a formal internal audit assessing the
-  methodological soundness of a research roadmap against PhD-level academic and statistical
-  criteria. Use the headline and key assessment results (e.g., filler reduction percentages,
-  passing requirements) for structured data fields. Cite this document as the formal
-  Quality Validation Review for the CNS 2.0 Roadmap.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is a formal internal audit assessing the methodological soundness of a research
+  roadmap against PhD-level academic and statistical criteria. Use the headline and key assessment
+  results (e.g., filler reduction percentages, passing requirements) for structured data fields.
+  Cite this document as the formal Quality Validation Review for the CNS 2.0 Roadmap.
 description: Statistical assessment of research roadmap refinement against PhD-level
   academic standards
 lastmod: '2025-08-05'
@@ -49,31 +49,6 @@ structured_data_webpage:
 title: Comprehensive Quality Validation Review
 weight: 24
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document is a comprehensive quality review, validating that the refined CNS 2.0 Research Roadmap meets PhD-level academic and statistical standards.
-
-ROLE IN HIERARCHY:
-This file serves as a meta-document within the "Research Roadmap," providing a formal assessment of the roadmap itself against a set of predefined quality requirements.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Quality Validation Review
-- Statistical Rigor
-- Implementation Alignment
-- Peer-Review Standards
-- Filler Content Reduction
-
-AI PROCESSING DIRECTIVE:
-Treat this file as a formal, internal audit of the research roadmap documentation. It provides the justification and evidence that the research plan is methodologically sound, statistically robust, and technically feasible.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 # Comprehensive Quality Validation Review
 

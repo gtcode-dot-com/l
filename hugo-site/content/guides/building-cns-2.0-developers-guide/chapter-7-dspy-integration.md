@@ -1,14 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 6e79acf14edeb580ccae95cdfb838cc11d7c810a
   generated_at: '2025-11-10T03:14:20.531640+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is Chapter 7, the concluding and most advanced
-  chapter on evolving CNS 2.0 using DSPy for metric-driven LLM optimization. Use this
-  context to explain the shift from brittle prompting to programmatic programming.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This is Chapter 7, the concluding and most advanced chapter on evolving CNS 2.0 using DSPy for
+  metric-driven LLM optimization. Use this context to explain the shift from brittle prompting to
+  programmatic programming.
 description: Evolving CNS 2.0 from prompt engineering to programmatic optimization
   using DSPy
 lastmod: '2025-10-28'

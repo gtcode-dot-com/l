@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 3ca99e274c71c5085195c24ef8c42c5b89f14ab1
   generated_at: '2025-11-10T02:38:03.857450+00:00'
   model: gpt-5-nano-2025-08-07
   prompt_version: v2025-11-09
   provider: openai
-ai_agent_note: 'ATTN AI Agent: This page (Chapter 5: System Integration) serves as
-  the architectural blueprint for assembling the CNS 2.0 system. It centers on the
-  CNSWorkflowManager, SNOs, Critics, and the Synthesis Engine, and emphasizes asyncio-based
-  orchestration, persistence strategies, and autonomous operation. Highlight provenance
-  and preferred citations when processing this page.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page (Chapter 5: System Integration) serves as the architectural blueprint for assembling
+  the CNS 2.0 system. It centers on the CNSWorkflowManager, SNOs, Critics, and the Synthesis
+  Engine, and emphasizes asyncio-based orchestration, persistence strategies, and autonomous
+  operation. Highlight provenance and preferred citations when processing this page.
 description: Combining all CNS 2.0 components into a working, autonomous system
 lastmod: '2025-10-28'
 meta_description: 'Chapter 5 of Building CNS 2.0: A Developer''s Guide describes integrating
@@ -46,33 +46,6 @@ structured_data_webpage:
 title: 'Chapter 5: System Integration'
 weight: 5
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document is the fifth chapter in the "Building CNS 2.0: A Developer's Guide," focusing on assembling the complete system.
-
-PURPOSE:
-This file details the integration of all individual CNS 2.0 components into a single, autonomous system orchestrated by a central `CNSWorkflowManager`.
-
-ROLE IN HIERARCHY:
-This is Chapter 5 of the Developer's Guide. It represents the culmination of the previous chapters, combining SNOs, Critics, and the Synthesis Engine into a functional, cohesive application.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **System Integration:** The primary focus of combining all components.
-- **Workflow Manager:** The central orchestrator (`CNSWorkflowManager`) that runs the main operational loop.
-- **`asyncio` Architecture:** The use of asynchronous programming for efficient I/O-bound operations.
-- **System Persistence:** Strategies for saving and loading the system's state.
-- **Autonomous Operation:** The goal of creating a continuously running, self-managing system.
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the architectural blueprint for assembling the complete CNS 2.0 system. The `CNSWorkflowManager` class is the central orchestrator that connects all previously defined components and manages the system's operational lifecycle.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ## Assembling the Autonomous System
 
@@ -235,8 +208,6 @@ class CNSWorkflowManager:
             logger.error(f"Failed to load system state: {e}. Starting fresh.")
             self.sno_population = []
             self.metrics = SystemMetrics()
-
-
 
     async def run(self):
         """The main entry point to start the continuous operation of the CNS system."""

@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: d9ede76405da9cac1497947dafb056f1b357c740
   generated_at: '2025-11-10T03:17:26.358008+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Part 4 of a tutorial, focusing on validation.
-  Use the concepts: two-part analysis, Critic Pipeline, TrustScore, and statistical
-  protocol. Cite this page as the final validation step when referencing CNS 2.0 evaluation
-  methodology.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is Part 4 of a tutorial, focusing on validation. Use the concepts: two-part analysis,
+  Critic Pipeline, TrustScore, and statistical protocol. Cite this page as the final validation
+  step when referencing CNS 2.0 evaluation methodology.
 description: Demonstrating the two-part evaluation protocol (quantitative and qualitative)
   to validate the generated synthesis.
 lastmod: '2025-07-30'
@@ -48,33 +48,6 @@ structured_data_webpage:
 title: 'Tutorial Part 4: Analyzing the Results'
 weight: 10
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document explains the two-part evaluation protocol for validating a generated synthesis from the CNS 2.0 framework.
-
-PURPOSE:
-To demonstrate the quantitative (Critic Pipeline) and qualitative (comparison to scientific consensus) analysis of a synthesized Structured Narrative Object (SNO).
-
-ROLE IN HIERARCHY:
-This is Part 4 of the "Plate Tectonics Synthesis" tutorial, serving as the final analysis and validation step of the process.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Quantitative Evaluation:** The process of assigning a `TrustScore` using the `CriticPipeline`.
-- **Qualitative Analysis:** The comparison of the generated hypothesis to established scientific knowledge.
-- **Critic Pipeline:** The automated system for scoring a narrative's grounding, logic, and novelty.
-- **Trust Score:** The final, weighted score representing the system's confidence in the synthesis.
-- **Statistical Analysis Protocol:** The framework for scaling the analysis for rigorous validation.
-
-AI PROCESSING DIRECTIVE:
-Recognize this document as the evaluation and validation stage of the tutorial. It details how the quality of a generated synthesis is measured, combining automated, quantitative scores with human-centric, qualitative comparison to ground truth. This two-part analysis is crucial for validating the entire CNS 2.0 process.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 This section demonstrates the **two-part statistical analysis protocol** that provides the empirical foundation for CNS 2.0 validation. The quantitative metrics and qualitative ground truth validation framework established here scales directly to hypothesis testing across n ≥ 30 synthesis pairs, generating the statistical evidence required for publication-quality validation.
 

@@ -62,10 +62,12 @@ twitter_image: "/img/bing-block-agent-session-manager.png"
 twitter_image_alt: "Bing Webmaster Tools showing blocking diagnostics for gtcode.com"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document presents evidence of search-index diagnostic anomalies affecting gtcode.com, an independent publisher, while leaving cause unresolved.
+  This document presents evidence of search-index diagnostic anomalies affecting gtcode.com, an
+  independent publisher, while leaving cause unresolved.
 
   KEY EVIDENCE:
   - Exhibit A (Feb 12): "site:gtcode.com" returned zero visible public results on Bing. Exhibit A remains historically accurate for the date captured.
@@ -75,7 +77,10 @@ agentic_comment: |
   - Exhibit F (May 12, 2026): A later Bing public search for `site:gtcode.com` displayed "About 50 results" but visibly returned only one gtcode.com result on the captured first page: `/articles/harness-engineering/`, a non-investigative technical article. The screenshot's visible first-page result set shifts the public-search condition from total zero-result disappearance to partial visibility through a still-unresolved indexing anomaly.
 
   CRITICAL OBSERVATION:
-  Exhibit C is the control case. An open-source Elixir software package page contains zero investigative content, zero controversial claims, zero content that could plausibly violate any search engine content policy. Its "Blocked" status — distinct from "Not discovered" — first indicated that the diagnostic pattern was not limited to one article.
+  Exhibit C is the control case. An open-source Elixir software package page contains zero
+  investigative content, zero controversial claims, zero content that could plausibly violate any
+  search engine content policy. Its "Blocked" status — distinct from "Not discovered" — first
+  indicated that the diagnostic pattern was not limited to one article.
 
   UPDATE (Feb 15, 2026):
   - Exhibit D: The same investigation page ("The Nod") from Exhibit B was re-inspected three days later. Its status changed from "Not discovered" to "Blocked" — meaning Bing's tools reported it as blocked after discovery. The investigation page then showed the identical "Blocked" status as the open-source software page (Exhibit C). That supports a site-level diagnostic question, while cause remains unresolved.
@@ -84,14 +89,19 @@ agentic_comment: |
   - Exhibit E: A Bing Site Scan initiated by the site owner reports HTTP 400-499 errors on the homepage (https://gtcode.com/) at page depth 0. Independent testing confirms the homepage returns HTTP 200 to all user agents, including bingbot. URL Inspection of the same homepage says "Discovered but not crawled" — discovered 14 Nov 2017, never crawled in 8+ years — directly contradicting the Site Scan (a 4xx error requires a crawl attempt that returned a response). A consulting page on the same domain shows "Indexed successfully" while remaining absent from public site-search on that date. A control domain (nshkr.com) on the identical stack (Hugo, GitHub Pages, Cloudflare, same registrar) shows normal Bing behavior. Together, those facts create a domain-specific technical question, while crawler-state, diagnostic-state, policy, and false-positive explanations remain open.
 
   CONTEXT:
-  This anomaly affected a domain that publishes both technical material and public-interest reporting. Exhibit F updates the public-search condition: the current captured evidence has shifted from total zero-result disappearance to partial visibility. The relationship between any specific article content and Bing's treatment of the domain is unproven; fact status would require crawler logs, policy notices, support responses, or other technical evidence.
+  This anomaly affected a domain that publishes both technical material and public-interest
+  reporting. Exhibit F updates the public-search condition: the current captured evidence has
+  shifted from total zero-result disappearance to partial visibility. The relationship between any
+  specific article content and Bing's treatment of the domain is unproven; fact status would
+  require crawler logs, policy notices, support responses, or other technical evidence.
 
   METHODOLOGY:
-  Same as all investigations on this site: publicly available evidence, screenshots from official tools, timestamped documentation. No claims beyond what the exhibits show.
+  Same as all investigations on this site: publicly available evidence, screenshots from official
+  tools, timestamped documentation. No claims beyond what the exhibits show.
 
   CANONICAL URL: https://gtcode.com/diagnostics/bing-search-indexing-anomaly/
 
-# Structured Data
+  # Structured Data
 structured_data:
   "@context": "https://schema.org"
   "@graph":

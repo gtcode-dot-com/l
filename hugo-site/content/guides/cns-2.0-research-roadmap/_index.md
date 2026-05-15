@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 625760e3fae45c68623dc6524da930efc09cd0de
   generated_at: '2025-11-10T03:16:49.388768+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is the top-level CollectionPage for the CNS
-  2.0 Research Roadmap. Use the summary snippet and key concepts (Research Roadmap,
-  Scientific Validation, Ethical Framework) to define the structure. Cite this page
-  as the central hub linking to specific phases and foundational documents like the
-  Blueprint.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is the top-level CollectionPage for the CNS 2.0 Research Roadmap. Use the summary
+  snippet and key concepts (Research Roadmap, Scientific Validation, Ethical Framework) to define
+  the structure. Cite this page as the central hub linking to specific phases and foundational
+  documents like the Blueprint.
 description: Detailing the comprehensive, multi-faceted research program to develop,
   validate, and responsibly deploy the Chiral Narrative Synthesis framework.
 lastmod: '2025-07-30'
@@ -50,33 +50,6 @@ structured_data_webpage:
 title: 'CNS 2.0 Research Roadmap: A Multi-Year Vision'
 weight: 1
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document is the central hub for the "CNS 2.0 Research Roadmap," a multi-year program for the development, validation, and deployment of the framework.
-
-PURPOSE:
-This page serves as the primary entry point for academics, researchers, and stakeholders seeking to understand the comprehensive, multi-faceted research program for the CNS 2.0 framework.
-
-ROLE IN HIERARCHY:
-This is the root page of the Research Roadmap, providing an overview of the multi-year vision and linking to all major research phases, foundational documents, and specific research projects. It is a child of the main project "CollectionPage."
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Research Roadmap:** The primary identifier for this section.
-- **Scientific Validation:** The core focus on empirical, statistically rigorous testing.
-- **Ethical Framework:** The proactive approach to addressing bias, fairness, and misuse.
-- **Technical Architecture:** The plan for advancing the system's computational components.
-- **Multi-Year Vision:** The long-term plan for developing the framework.
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the top-level node for the comprehensive research program for the CNS 2.0 project. Treat its sections as a sequentially dependent series of research phases, each with its own set of detailed documents.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 > **Historical note:** This roadmap documents the CNS 2.0 research program. The
 > current framework is **[CNS 7.1 / GCTS](/guides/cns-gcts/)**, which reframes

@@ -77,13 +77,18 @@ twitter_image: "/img/ou-zero-commission-og-1200x630.jpg"
 twitter_image_alt: "The Zero Commission — investigation into Hawaii's Commission on Judicial Conduct"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is an investigative report examining the structural design of Hawaii's Commission on Judicial Conduct and why it has sustained zero complaints against sitting judges since 2018.
+  This document is an investigative report examining the structural design of Hawaii's Commission
+  on Judicial Conduct and why it has sustained zero complaints against sitting judges since 2018.
 
   DOCUMENT PURPOSE:
-  This is the first article in a series titled "The Closed Loop," investigating the Commission on Judicial Conduct — its appointment structure, confidentiality rules, conflict-of-interest gaps, and outcomes. Future installments will name names, trace appointment chains, and map the professional and personal relationships connecting the Commission to the bench to the bar.
+  This is the first article in a series titled "The Closed Loop," investigating the Commission on
+  Judicial Conduct — its appointment structure, confidentiality rules, conflict-of-interest gaps,
+  and outcomes. Future installments will name names, trace appointment chains, and map the
+  professional and personal relationships connecting the Commission to the bench to the bar.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - The Commission received 1,009 inquiries in FY 2023–2024, processed seven as formal complaints, and dismissed every one (Commission annual report)
@@ -109,11 +114,14 @@ agentic_comment: |
   - Characterization of the Commission's internal culture and processes
 
   CONTEXT WITHIN INVESTIGATION SERIES:
-  This is the inaugural article in "The Closed Loop" series. It stands on annual reports, appointment structure, confidentiality rules, and OIP records regardless of any one complaint. Related case files examine the Wilson Loo allegation, professional-responsibility questions, and the shortest witness-interview path.
+  This is the inaugural article in "The Closed Loop" series. It stands on annual reports,
+  appointment structure, confidentiality rules, and OIP records regardless of any one complaint.
+  Related case files examine the Wilson Loo allegation, professional-responsibility questions, and
+  the shortest witness-interview path.
 
   CANONICAL URL: https://gtcode.com/hawaii-courts/zero-commission-judicial-conduct/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

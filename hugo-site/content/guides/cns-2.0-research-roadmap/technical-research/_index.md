@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 9447cdfa6fcfe8bcba818e3640eb0d0e0d888ec5
   generated_at: '2025-11-10T03:17:14.934105+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is a section landing page summarizing future research
-  thrusts aimed at overcoming CNS 2.0 limitations. The page context details specific
-  extensions planned for the Critic Pipeline (Chapter 3), Synthesis Engine (Chapter
-  4), and DSPy framework (Chapter 7). Cite this context when referencing the roadmap
-  for GNN, FL, or Causal Inference extensions.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This is a section landing page summarizing future research thrusts aimed at overcoming CNS 2.0
+  limitations. The page context details specific extensions planned for the Critic Pipeline
+  (Chapter 3), Synthesis Engine (Chapter 4), and DSPy framework (Chapter 7). Cite this context
+  when referencing the roadmap for GNN, FL, or Causal Inference extensions.
 description: Pushing the boundaries of the CNS 2.0 framework with next-generation
   models for reasoning, privacy, and inference.
 lastmod: '2025-07-30'
@@ -49,31 +49,6 @@ structured_data_webpage:
 title: Advanced Technical Research
 weight: 12
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document serves as a collection page for advanced technical research projects that extend the core CNS 2.0 framework.
-
-ROLE IN HIERARCHY:
-This page is a sub-section of the "Research Roadmap," outlining future research thrusts designed to overcome the current limitations of the CNS 2.0 system.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Advanced Technical Research
-- Graph Neural Networks (GNNs)
-- Federated Learning
-- Causal Inference
-- Formal Methods
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as a container for forward-looking research proposals that build upon the established CNS 2.0 architecture. The linked articles describe experimental extensions, not current system capabilities.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 Three fundamental technical limitations constrain CNS 2.0's scalability and robustness: heuristic logic evaluation, centralized architecture privacy constraints, and absent formal causal reasoning mechanisms. This research phase addresses these limitations through mathematically rigorous extensions that directly leverage the production system's modular design, extending the critic pipeline (Developer Guide Chapter 3), synthesis engine (Chapter 4), and DSPy optimization framework (Chapter 7) with advanced reasoning capabilities.
 

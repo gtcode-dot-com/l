@@ -63,10 +63,14 @@ twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 twitter_image_alt: "Oahu Underground investigations index image representing public-record files and evidence-boundary review"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This page is the author's first-person chronology. It keeps biographical context, lived sequence, and reporting context in one lane, while the records-first investigations handle public records, sealed-record-dependent claims, legal theories, and institutional process questions.
+  This page is the author's first-person chronology. It keeps biographical context, lived
+  sequence, and reporting context in one lane, while the records-first investigations handle
+  public records, sealed-record-dependent claims, legal theories, and institutional process
+  questions.
 
   EVIDENCE STANDARD:
   - Documented public facts should be read as record claims only where linked to records.
@@ -79,7 +83,7 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/disclosures/prior-law-enforcement-contact/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":
@@ -170,7 +174,7 @@ According to the author's account, he appeared in person to address a disputed t
 
 The author's position is that the alleged verbal threat language was false and converted an unrecorded tax-office confrontation into a violent-threat narrative. That is a firsthand account and interpretive claim. The precise record support for the tax amount, testimony, and trial handling belongs in any separate prosecution-history file, with transcripts, accounting records, and filings identified directly.
 
-According to the author's account, the tax official's threat allegation was presented in the grand-jury process, a charging channel that is secret by design. The author states that he told his attorney he had not made that threat. At trial, according to the author, the alleged threat language was not presented, argued, or tested by any party. The process issue is narrow: a serious allegation can help shape a secret charging record and then disappear from the adversarial trial record where the defense could confront it.
+According to the author's account, the tax official's threat allegation was presented in the grand-jury process, a charging channel that is secret by design. The author states that he told his attorney he had not made that threat. At trial, according to the author, the alleged threat language was not presented, argued, or tested by any party. The process issue is concrete: a serious allegation can help shape a secret charging record and then disappear from the adversarial trial record where the defense could confront it.
 
 The case ended in a hung jury. The author states that the matter was later expunged.
 
@@ -208,7 +212,7 @@ This includes the author's account that the warning was framed around a named bo
 
 The author also reports that one specific man, described by the author as a friend of Jack and Kim Johnson, threatened the author's career if he kept talking about "what happened." In that statement, "what happened" referred to the stalking, hacking, Hartmann threat, and related reports described in this chronology. The social context around the Johnson/Hartmann environment made reporting and press engagement unusually difficult, according to the author's account.
 
-Those are serious firsthand allegations. The relevant articles should present them as reported events, reports made, institutional responses, and record gaps. Celebrity proximity, family status, wealth, or social capital may be relevant context. Motive, direction, and coordination require separate evidence.
+Those are serious firsthand reports. The relevant articles should present them as reported events, reports made, institutional responses, and record gaps. Celebrity proximity, family status, wealth, or social capital may be relevant context. Motive, direction, and coordination require separate evidence.
 
 **What is reported:** Stalking, harassment, the quoted "Stay away from Jack" / "or you'll be whacked" sequence, and a career-destruction threat by one specific man described as a friend of Jack and Kim Johnson before the 2017 trial.
 
@@ -238,21 +242,21 @@ The chronology records the overlap as a representation and record-preservation i
 
 ## The Mock-Pistol Gesture
 
-The author reports that, during the 2017 trial, prosecutor Vincent Kanemoto formed his hand into a mock pistol in front of the jury.
+The author reports that, during the 2017 trial, prosecutor Vincent Kanemoto argued to the jury that there had been no gun in the case, formed both hands into a mock pistol, pointed the two-handed gesture at all twelve jurors, and then asked the jury to imagine the case as if there had been a gun before urging conviction and resting his case. In the author's account, Kanemoto said, in substance, "There was no gun in this trial," made the two-handed mock-pistol gesture toward the jury, then said, "But what if there was? Convict him. I rest my case."
 
-The legally serious frame is courtroom fairness. If the gesture occurred as described, it could have functioned as an extra-record danger cue, visually associating the defendant with guns, dangerousness, or other inadmissible character themes without proving those themes through admissible evidence. Jury-pool contamination remains a separate risk question requiring its own evidence.
+The legally serious frame is courtroom fairness and prosecutorial misconduct. In the author's account, the sequence inserted an extra-record danger cue and a hypothetical gun into the jury's evaluation, visually and verbally associating the defendant with guns, dangerousness, or other inadmissible character themes without proving those themes through admissible evidence. The author's position is that this was obvious misconduct. Jury-pool contamination remains a separate risk question requiring its own evidence.
 
-The prior investigator encounter is the context the author gives for treating the gesture as a serious extra-record cue. In the author's account, law enforcement had already introduced an organized-crime frame by referencing childhood associates later publicly associated with organized-crime prosecutions. The alleged courtroom gesture then visually invoked that same frame in front of jurors. Kanemoto's subjective intent, source of knowledge, and any coordination with the investigator require direct evidence.
+The prior investigator encounter is the context the author gives for treating the sequence as a serious extra-record cue. In the author's account, law enforcement had already introduced an organized-crime frame by referencing childhood associates later publicly associated with organized-crime prosecutions. The courtroom sequence then visually invoked that same frame in front of jurors. Kanemoto's subjective intent, source of knowledge, and any coordination with the investigator require direct evidence.
 
-According to the author, the trial judge called chambers after the alleged gesture. No visible corrective action followed before the jury was allowed to deliberate. The remaining questions are what was said in chambers, whether the conduct was preserved on the record, whether counsel advised the author about available remedies or professional-responsibility complaints, and whether any motion, objection, curative instruction, mistrial request, appellate issue, or ODC report was pursued.
+According to the author, the trial judge called chambers after the sequence. No visible corrective action followed before the jury was allowed to deliberate. The remaining questions are what was said in chambers, whether the conduct was preserved on the record, whether counsel advised the author about available remedies or professional-responsibility complaints, and whether any motion, objection, curative instruction, mistrial request, appellate issue, or ODC report was pursued.
 
-The author also reports a summer 2019 encounter with Kanemoto at Glazers in Haleiwa. According to the author, he asked Kanemoto why he had pointed a mock pistol at the jury. Kanemoto denied doing it.
+The author also reports a summer 2019 encounter with Kanemoto at Glazers in Haleiwa. According to the author, he asked Kanemoto why he had formed a two-handed mock pistol, pointed it at all twelve jurors, and asked them to imagine a gun that was not in evidence. Kanemoto denied doing it.
 
-**What is reported:** A mock-pistol gesture by Vincent Kanemoto before the jury, the judge calling chambers, no visible corrective action before deliberation, and Kanemoto's reported 2019 denial at Glazers in Haleiwa.
+**What is reported:** A closing-argument sequence in which the author reports that Vincent Kanemoto acknowledged there was no gun in the case, formed both hands into a mock pistol, pointed it at all twelve jurors, asked them to imagine a gun anyway, urged conviction, and rested his case; the judge calling chambers; no visible corrective action before deliberation; and Kanemoto's reported 2019 denial at Glazers in Haleiwa.
 
 **What is documented:** Trial records and any chambers or counsel records if obtained.
 
-**What remains interpretation:** Whether the gesture occurred, what it communicated to jurors, whether it invoked the organized-crime frame introduced in the investigator encounter, and what the 2019 denial establishes.
+**What remains interpretation:** Kanemoto's subjective intent, how jurors understood the two-handed mock-pistol sequence, whether it invoked the organized-crime frame introduced in the investigator encounter, and what the 2019 denial establishes.
 
 **What would test it:** Trial transcripts, chambers records if any exist, attorney notes, juror or courtroom witness testimony, motion practice, appellate records, ODC records if any exist, professional-responsibility records, contemporaneous notes or messages about the 2019 Glazers exchange, and witnesses to that exchange.
 
@@ -260,7 +264,7 @@ The author also reports a summer 2019 encounter with Kanemoto at Glazers in Hale
 
 The absence of media coverage cut both ways.
 
-It deprived the public of visibility into a serious prosecution and alleged courtroom misconduct. It also benefited the author personally because, after the hung jury and stated expungement, the absence of press coverage reduced the risk that an indictment without conviction would become the first public fact attached to his name.
+It deprived the public of visibility into a serious prosecution and reported courtroom misconduct. It also benefited the author personally because, after the hung jury and stated expungement, the absence of press coverage reduced the risk that an indictment without conviction would become the first public fact attached to his name.
 
 That dual effect matters. Ordinary explanations for non-coverage include editorial judgment, resource limits, legal risk, verification difficulty, source concerns, low perceived news value, and story complexity. The practical effect was still real: no public accountability layer formed around the proceeding.
 
@@ -278,7 +282,7 @@ Several other reported events belong in this chronology because they shaped the 
 
 **Spring 2021 FBI/HPD sequence:** The author reports an FBI online report and later in-person FBI contact in Mokuleia regarding prior reported threats, witness-tampering concerns, and law-enforcement integrity context. The author also reports that an HPD officer was later "cycled out" or replaced, and that the following day two HPD cruisers responded to his truck at Malama Market in Haleiwa and issued parking citations in a manner the author experienced as intimidation. The chronology treats this as a firsthand account and record-locator issue; whether the officer change or cruiser response was routine, retaliatory, intimidating, coincidental, or otherwise connected would require dispatch, assignment, citation, bodycam, in-car video, and federal-intake records.
 
-**2021-2022 HPD report sequence involving the redacted witness:** The author reports that after ending a brief work relationship and social acquaintance with a redacted witness in September 2021, he later contacted that person by text and email to collect a small work debt, then wrote off the debt and stated he would avoid further in-person contact after a reported Starbucks assault. The author states that the assault was initially reported to HPD as occurring in November 2021, that HPD investigated and referred the matter to prosecutors with that date in the record, and that after the related proceedings ended he located a contemporaneous photo and now dates the incident to January 2022. The author reports a sequence of alleged incidents involving the same redacted witness: vehicle intimidation at Malama Marketplace in December 2021; the corrected January 2022 Starbucks assault date; a vehicle threat outside Breakers at North Shore Marketplace in June 2022; bicycle/vehicle intimidation on Waialua Beach Road in July 2022; a July 24, 2022 cease-and-desist email; a September 12, 2022 PaaLaa Road vehicle-threat report identified as HPD report 22-353421; a September 16, 2022 TRO submission at Wahiawa Police Station; September 19-22, 2022 reported harassment and TRO-service confusion, including HPD report 22-365099; HPD safety advice to avoid PaaLaa Road; and the author's position that in-person encounters were coincidental while he was on foot or bicycle on main roads in Haleiwa. The record question is what HPD reports, CAD logs, dispatch audio, bodycam, in-car video, TRO-service records, emails, photos, prosecutor referral records, witness accounts, and any closure or declination notes show about intake, response, service, investigation, referral, and non-response.
+**2021-2022 HPD report sequence involving the redacted witness:** The author reports that after ending a brief work relationship and social acquaintance with a redacted witness in September 2021, he later contacted that person by text and email to collect a small work debt, then wrote off the debt and stated he would avoid further in-person contact after a reported Starbucks assault. The author states that the assault was initially reported to HPD as occurring in November 2021, that HPD investigated and referred the matter to prosecutors with that date in the record, and that after the related proceedings ended he located a contemporaneous photo and now dates the incident to January 2022. The author reports a sequence of reported incidents involving the same redacted witness: vehicle intimidation at Malama Marketplace in December 2021; the corrected January 2022 Starbucks assault date; a vehicle threat outside Breakers at North Shore Marketplace in June 2022; bicycle/vehicle intimidation on Waialua Beach Road in July 2022; a July 24, 2022 cease-and-desist email; a September 12, 2022 PaaLaa Road vehicle-threat report identified as HPD report 22-353421; a September 16, 2022 TRO submission at Wahiawa Police Station; September 19-22, 2022 reported harassment and TRO-service confusion, including HPD report 22-365099; HPD safety advice to avoid PaaLaa Road; and the author's position that in-person encounters were coincidental while he was on foot or bicycle on main roads in Haleiwa. The record question is what HPD reports, CAD logs, dispatch audio, bodycam, in-car video, TRO-service records, emails, photos, prosecutor referral records, witness accounts, and any closure or declination notes show about intake, response, service, investigation, referral, and non-response.
 
 **Federal-buddy statement:** The author reports overhearing a reference to a "federal buddy." The meaning is unknown. It may have been bragging, exaggeration, intimidation, a misunderstood phrase, or a real reference to a relationship. The record category is reported statement and possible witness question.
 
@@ -310,7 +314,7 @@ The current record supports a firsthand observation of aligned recommendation pa
 
 ## The 2022 Loo Proceeding
 
-The December 2, 2022 proceeding is treated in separate records-first articles because it has its own narrow evidentiary spine:
+The December 2, 2022 proceeding is treated in separate records-first articles because it has its own evidence track:
 
 - the author asked a specific question about LSD / lysergic acid diethylamide;
 - the author states that a sealed text exhibit supplied the predicate for the question;
@@ -323,37 +327,37 @@ The December 2, 2022 proceeding is treated in separate records-first articles be
 
 The prior prosecution, threats, and career-destruction warning explain why the author treated the 2022 sequence as serious. The courtroom event stands or falls on testimony, sealed audio timing, the text exhibit, line of sight, witness interviews, and professional-responsibility review.
 
-**What is reported:** The alleged visual signal, Petricevic's line of sight, the denial, the attempted record statement, and the cutoff.
+**What is reported:** The author reports the visual signal, Petricevic's line of sight, the denial, the attempted record statement, and the cutoff.
 
 **What is documented:** The sealed audio sequence and sealed court exhibit if reviewed by an authorized person.
 
-**What remains interpretation:** Whether the visual conduct occurred as described and what each participant saw, understood, or intended.
+**What remains interpretation:** What each participant saw, understood, or intended, and what an authorized reviewer would conclude after testing the author's report against the sealed audio, court file, line of sight, and witness testimony.
 
 **What would test it:** Sealed audio, court exhibits, courtroom layout, witness testimony, line-of-sight reconstruction, and attorney or judicial-conduct records.
 
-## Firsthand Allegation Chronology
+## Firsthand Report Chronology
 
 This table is a triage chart: event, source category, record status, and review path.
 
 | Period | Reported event | Evidence category | What is documented | What remains unknown | What would test it |
 |---|---|---|---|---|---|
-| Early life | Violent assault allegedly occurred in the presence of a law-enforcement officer who did not intervene | Firsthand account | Any contemporaneous records if located | Officer conduct, available duty record, third-party witnesses | Police records, school records, witness interviews |
+| Early life | The author reports a violent assault in the presence of a law-enforcement officer who did not intervene | Firsthand account | Any contemporaneous records if located | Officer conduct, available duty record, third-party witnesses | Police records, school records, witness interviews |
 | Early life / withheld context | Prior law-enforcement and reputational context involving withheld background | Firsthand account plus withheld context | Specific details are withheld for privacy and third-party safety | Whether any background affected later official treatment | FOIA/Privacy Act records, agency correspondence, attorney files |
-| 2015-2017 | Tax-office booth encounter, coercive payment demand, verbal attack, grand-jury threat allegation, statement to counsel denying the alleged threat, and alleged trial non-presentation of the threat language | Firsthand account plus trial/accounting records if obtained | Trial, accounting, and court records where reviewed | Whether the encounter was fairly characterized by the prosecution and why the alleged threat language was not tested at trial | Trial transcript, exhibits, accounting records, attorney files, indictment materials, grand-jury material where available |
-| 2015-2017 | Out-of-state investigator allegedly referenced organized-crime-associated childhood associates and used the phrase "colonoscopy" | Firsthand account | Investigator role if records exist | Motive, scope, and formal basis for investigator involvement | Agency records, interview notes, witness testimony, FOIA/Privacy Act responses |
+| 2015-2017 | Tax-office booth encounter, coercive payment demand, verbal attack, grand-jury threat allegation, statement to counsel denying the official's threat allegation, and reported trial non-presentation of the threat language | Firsthand account plus trial/accounting records if obtained | Trial, accounting, and court records where reviewed | Whether the encounter was fairly characterized by the prosecution and why the threat language was not tested at trial | Trial transcript, exhibits, accounting records, attorney files, indictment materials, grand-jury material where available |
+| 2015-2017 | The author reports that an out-of-state investigator referenced organized-crime-associated childhood associates and used the phrase "colonoscopy" | Firsthand account | Investigator role if records exist | Motive, scope, and formal basis for investigator involvement | Agency records, interview notes, witness testimony, FOIA/Privacy Act responses |
 | Pretrial / North Shore-Haleiwa | Quoted Hartmann threat and career-destruction warning before the 2017 trial | Firsthand account | Reports, messages, attorney records, or witness statements if obtained | Motive, connection, and institutional response | Police records, attorney files, witnesses, contemporaneous communications |
-| Pretrial representation period | Assigned counsel allegedly was told about the quoted threat sequence and later communicated a possible leave-Hawaiʻi resolution concept before the 2017 trial | Firsthand account plus attorney-file question | Representation records if obtained | Whether counsel documented the threat, who originated the leave-Hawaiʻi concept, and whether the overlap was reviewed | Attorney file, supervisor consultations, prosecutor communications, written terms, court records, client-advice notes |
-| 2017 trial | Prosecutor allegedly made a mock-pistol gesture before the jury after the organized-crime frame had been introduced during the out-of-state investigator encounter | Firsthand account | Trial/chambers records if obtained | What the gesture was, who saw it, what it communicated to jurors, and what counsel preserved | Court records, attorney notes, courtroom witnesses, juror testimony where lawful |
-| Summer 2019 | Glazers/Haleiwa encounter where the author allegedly asked Kanemoto why he pointed a mock pistol at the jury and Kanemoto denied it | Firsthand account | Contemporaneous notes, messages, or witnesses if obtained | What the exchange establishes about the alleged 2017 gesture | Witnesses, messages, date/time/location records, contemporaneous notes |
+| Pretrial representation period | The author reports telling assigned counsel about the quoted threat sequence; the author also reports that counsel later communicated a possible leave-Hawaiʻi resolution concept before the 2017 trial | Firsthand account plus attorney-file question | Representation records if obtained | Whether counsel documented the threat, who originated the leave-Hawaiʻi concept, and whether the overlap was reviewed | Attorney file, supervisor consultations, prosecutor communications, written terms, court records, client-advice notes |
+| 2017 trial | The author reports that the prosecutor acknowledged there was no gun in the case, formed both hands into a mock pistol, pointed it at all twelve jurors, asked them to imagine a gun anyway, urged conviction, and rested his case after the organized-crime frame had been introduced during the out-of-state investigator encounter | Firsthand account | Trial/chambers records if obtained | Who saw the sequence, what it communicated to jurors, how the court and counsel responded, and what counsel preserved | Court records, attorney notes, courtroom witnesses, juror testimony where lawful |
+| Summer 2019 | Glazers/Haleiwa encounter where the author reports asking Kanemoto why he made the two-handed mock-pistol argument to the jury and Kanemoto denied it | Firsthand account | Contemporaneous notes, messages, or witnesses if obtained | What the exchange establishes about the reported 2017 sequence | Witnesses, messages, date/time/location records, contemporaneous notes |
 | Spring 2021 | FBI online report and later in-person FBI contact in Mokuleia regarding prior reported threats, witness-tampering concerns, and law-enforcement integrity context; author reports that an HPD officer was later "cycled out" or replaced, and that the following day two HPD cruisers responded to his truck at Malama Market in Haleiwa and issued parking citations in a manner the author experienced as intimidation | Firsthand account plus federal/HPD record-locator question | FBI contact records, intake or agent notes, correspondence, case or referral records, HPD CAD/dispatch logs, event numbers, unit IDs, officer assignment records, citation records, bodycam, or in-car video if obtained | What was reported, what federal intake occurred, what "cycled out" meant operationally, what explains the HPD response the following day, whether citations were routine or connected, and whether any later actor knew of the contact | FBI records, FOIA/Privacy Act responses, HPD CAD/dispatch logs, shift or assignment records, event and citation records, bodycam or in-car video, contemporaneous notes, witness records |
-| 2021-2022 | Stonefish Grill drug-distribution allegations; reported Starbucks physical assault; reported vehicle intimidation and vehicle-threat incidents at Malama Marketplace, Breakers/North Shore Marketplace, Waialua Beach Road, and PaaLaa Road; July 24, 2022 cease-and-desist email; September 16, 2022 TRO submission; September 19-22, 2022 harassment and TRO-service confusion; HPD safety advice to avoid PaaLaa Road; and reported HPD non-response involving a redacted witness | Firsthand account plus HPD report existence where available | HPD reports including 22-353421 and 22-365099 if produced, TRO-service records, emails, photos, dispatch/CAD records, bodycam, in-car video, and any surveillance video if preserved | Completeness of investigation, reasons for non-response, TRO-service handling, whether encounters were routine/coincidental or threatening, and what records show about intake and closure | HPD records, TRO-service records, dispatch/CAD logs, 911 audio, bodycam, in-car video, surveillance video, witness interviews, emails, photos, report files, closure notes |
+| 2021-2022 | Stonefish Grill drug-distribution reports; reported Starbucks physical assault; reported vehicle intimidation and vehicle-threat incidents at Malama Marketplace, Breakers/North Shore Marketplace, Waialua Beach Road, and PaaLaa Road; July 24, 2022 cease-and-desist email; September 16, 2022 TRO submission; September 19-22, 2022 harassment and TRO-service confusion; HPD safety advice to avoid PaaLaa Road; and reported HPD non-response involving a redacted witness | Firsthand account plus HPD report existence where available | HPD reports including 22-353421 and 22-365099 if produced, TRO-service records, emails, photos, dispatch/CAD records, bodycam, in-car video, and any surveillance video if preserved | Completeness of investigation, reasons for non-response, TRO-service handling, whether encounters were routine/coincidental or threatening, and what records show about intake and closure | HPD records, TRO-service records, dispatch/CAD logs, 911 audio, bodycam, in-car video, surveillance video, witness interviews, emails, photos, report files, closure notes |
 | 2022 | "Federal buddy" statement, Officer Brandt intake-obstruction account, and HPD allowed-threat statement | Firsthand account | Any logs, bodycam, witnesses, or contemporaneous notes if obtained | Whether the statements were bragging, bias, misunderstanding, real relationship references, or intake failure | Witness interviews, call logs, bodycam, dispatch records, report-intake records, internal-affairs files |
-| December 2, 2022 | Judge Loo allegedly gave a nonverbal "no" signal; Bosko Petricevic allegedly was looking at the judge; the witness denied furnishing LSD; attempted record statement was cut off | Firsthand account plus sealed-record-dependent evidence | Sealed audio can test timing; sealed text exhibit can test predicate | Whether the visual signal occurred and who saw or understood it | Sealed audio, sealed exhibit, line-of-sight reconstruction, witness interviews |
+| December 2, 2022 | The author reports that Judge Loo gave a nonverbal "no" signal and that Bosko Petricevic was looking at the judge; the witness denied furnishing LSD; attempted record statement was cut off | Firsthand account plus sealed-record-dependent evidence | Sealed audio can test timing; sealed text exhibit can test predicate | What an authorized reviewer would conclude about the visual signal, line of sight, and participant understanding | Sealed audio, sealed exhibit, line-of-sight reconstruction, witness interviews |
 | 2023-2026 | Platform recommendations, surfaced content sequences, and Bing/indexing issues | Firsthand account for platform observations; technical exhibits for Bing where documented | Screenshots, webmaster diagnostics, data exports if preserved | Mechanism and whether ordinary platform behavior explains it | Platform logs, data exports, ad-delivery records, reproducible technical tests |
 
 ## Scope Boundaries
 
-This chronology makes one kind of claim: the author reports a sequence of prosecution, reported intimidation, alleged courtroom symbolism, institutional non-response, sealed-record problems, and career-threatening pressure that requires context to evaluate.
+This chronology makes one kind of claim: the author reports a sequence of prosecution, reported intimidation, reported courtroom symbolism, institutional non-response, sealed-record problems, and career-threatening pressure that requires context to evaluate.
 
 It separates that context from article-specific evidentiary claims. Coordination by a single group, knowledge among named people, and causal significance of withheld background, employment overlap, geographic proximity, media silence, or celebrity proximity require records or testimony beyond the chronology itself.
 
@@ -369,7 +373,7 @@ The useful questions are ordinary:
 - What police, attorney, or agency reports exist for the Hartmann threat and related pressure?
 - What does Audrey L.E. Stanley's representation file show about the pretrial quoted threat report, the leave-Hawaiʻi concept, written terms, advice, preservation, and any supervisor consultation?
 - What advice did assigned counsel give about intimidation, reporting, safety, preservation, or legal remedies?
-- What did the 2017 trial judge do after the alleged mock-pistol gesture, and what was preserved?
+- What did the 2017 trial judge do after the reported two-handed mock-pistol sequence, and what was preserved?
 - What witnesses, notes, messages, or date/location records exist for the summer 2019 Glazers/Haleiwa exchange with Kanemoto?
 - What FBI intake or agent notes, online-report records, correspondence, case or referral records, HPD CAD/dispatch logs, event numbers, unit IDs, citation records, bodycam or in-car video, or FOIA/Privacy Act responses exist for the Spring 2021 federal contact and the reported Malama Market HPD response?
 - What HPD reports, TRO-service records, dispatch/CAD logs, 911 audio, bodycam, in-car video, surveillance video, emails, photos, witness records, report files, or closure notes exist for the 2021-2022 reported assault, vehicle-threat, harassment, TRO-service, and non-response sequence involving the redacted witness, including HPD reports 22-353421 and 22-365099?

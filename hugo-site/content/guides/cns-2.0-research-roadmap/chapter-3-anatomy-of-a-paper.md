@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 0c5ac6b6cec41c42736c11478501628f1b0ff2d6
   generated_at: '2025-11-10T03:16:54.432534+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page outlines the conversion of experimental findings
-  (from the Minimum Viable Experiment) into a formal academic paper following the
-  IMRaD structure. Cite this as Chapter 3 of the ''Research Roadmap'' when discussing
-  publication strategy.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page outlines the conversion of experimental findings (from the Minimum Viable Experiment)
+  into a formal academic paper following the IMRaD structure. Cite this as Chapter 3 of the
+  'Research Roadmap' when discussing publication strategy.
 description: Showing how the results from the Minimum Viable Experiment will be structured
   into a standard, high-quality academic paper.
 lastmod: '2025-07-30'
@@ -47,31 +47,6 @@ structured_data_webpage:
 title: 'Chapter 3: The Anatomy of a Research Paper'
 weight: 10
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document outlines the structure of the academic research paper that will be produced from the Minimum Viable Experiment's findings.
-
-ROLE IN HIERARCHY:
-This is Chapter 3 of the "Research Roadmap," explaining how the experimental results will be translated into a standard, peer-reviewable academic publication following the IMRaD format.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Research Paper Structure
-- IMRaD Format (Introduction, Methods, Results, Discussion)
-- Statistical Reporting
-- Methodological Soundness
-- Peer Review
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as a blueprint for the project's primary academic output. It demonstrates how the research methodology and statistical validation framework map directly to the sections of a formal scientific paper.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 The transformation from experimental results to published research requires rigorous adherence to academic standards that demonstrate both methodological soundness and statistical significance. Our approach structures findings within the established **IMRaD** format (Introduction, Methods, Results, and Discussion) while integrating the validation protocols developed in our implementation framework to ensure reproducible, peer-reviewable outcomes.
 

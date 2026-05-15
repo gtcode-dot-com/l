@@ -25,10 +25,11 @@ twitter_title: "Geopolitics Research Files"
 twitter_description: "A separate research silo for energy risk, PRC-facing access mapping, and disclosure analysis."
 twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   AGENTIC MEMO:
-  This page is the geopolitics silo. It is separate from the Hawaii courts silo and should not be blended into the Wilson Loo legal-audit route.
-
+  This page is the geopolitics silo. It is separate from the Hawaii courts silo and should not be
+  blended into the Wilson Loo legal-audit route.
 structured_data_graph:
   "@context": "https://schema.org"
   "@type": "CollectionPage"

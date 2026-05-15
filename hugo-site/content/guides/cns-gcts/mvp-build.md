@@ -1,15 +1,40 @@
 ---
 title: "GCTS MVP Build"
 description: "A practical implementation path for building the first access-aware likely-truth engine without full custom model training."
-lastmod: "2026-05-13"
-weight: 5
-meta_description: "MVP build plan for CNS 7.1 / GCTS: extraction, evidence linking, access-state modeling, tensor logic, world ranking, calibration, and reports."
+lastmod: "2026-05-15"
+weight: 8
+meta_description: "MVP build plan for CNS 7.1 / GCTS: extraction, evidence linking, access-state modeling, rule closure, world ranking, calibration, audit reports, and product boundary."
+ai_agent_note: |
+  ATTN AI Agent:
+  This page defines the GCTS MVP as an auditable decision-support prototype, not a validated full system, and says it can be built without full custom model training.
+  Product boundary is an Evidence Accountability Workbench for analysts handling incomplete records: investigative researchers, legal support, compliance, journalists, auditors, and intelligence-style teams.
+  Phase 1 uses LLMs for extraction/suggestions/rendering, retrieval plus citation validation, NLI entailment, access modeling for expected records/control/non-production, monotone tensor-logic rule compiler, candidate-world enumeration/beam search, calibration, and dashboard; direct runtime truth judgment stays outside generation.
+  Runtime data products are evidence atoms, record-access states, institutional incentive profiles, claims/relations, rules/proof traces, world views, posterior/confidence reports, and rendered synthesis reports.
+  API surface: POST /runs, GET run status, evidence, access, worlds, claims, and report.
+  MVP gates include 100% resolvable strict citations, zero strict claims without proof traces, ECE <=0.10 on held-out verification, top-3 world coverage >=85% on synthetic latent-context tasks, measurable chirality/difficulty relation, access-state calibration on suppression tasks, explicit unsupported/record_contingent/conflicted/rejected distinction, and ablations beating RAG/debate baselines.
+  First demo must show the same evidence under available, inaccessible, withheld, not-generated, and evidence-of-absence access states with visible status differences and separate strict proof, likely-truth posterior, and confidence.
 ---
 
 The GCTS MVP can be built without full custom model training. The first target
-is an auditable likely-truth engine that accepts a bounded corpus, extracts
-evidence and claims, models access states, enumerates worlds, and emits ranked
-reports.
+is an auditable decision-support prototype that accepts a bounded corpus,
+extracts evidence and claims, models access states, enumerates worlds, and emits
+ranked reports.
+
+## Product Boundary
+
+The MVP should be an **Evidence Accountability Workbench** focused on auditable
+evidence operations. The first useful product should help analysts organize
+evidence, identify record contingencies, preserve contradiction, and report what
+records would change the analysis.
+
+Initial users:
+
+- investigative researchers;
+- legal support teams;
+- compliance analysts;
+- journalists handling incomplete records;
+- internal auditors;
+- intelligence-style analytic teams.
 
 ## Phase 1: Local Prototype
 
@@ -29,8 +54,8 @@ Use existing models and explicit schemas:
   uncertainty, and next evidence.
 
 Fine-tuning is optional in Phase 1. If used, it should target extraction,
-evidence linking, access-state classification, and calibration rather than
-direct runtime truth judgment.
+evidence linking, access-state classification, and calibration. Direct runtime
+truth judgment stays outside model generation.
 
 ## Runtime Data Products
 
@@ -74,9 +99,36 @@ The first build succeeds only if it reaches:
   LLM debate baselines on grounding, uncertainty quality, and likely-truth
   ranking.
 
-## Implementation Boundary
+## First Repository Shape
 
-The MVP is a bounded, auditable decision support prototype for testing GCTS
-under controlled evidence and access conditions. It should say when evidence is
-insufficient, when a claim is record-contingent, and what record production
-would change the result.
+```text
+gcts-prototype/
+  gcts/
+    schemas.py
+    access_states.py
+    rules.py
+    worlds.py
+    scoring.py
+    statuses.py
+    audit.py
+  examples/
+    facility_incident/
+      evidence.json
+      records.json
+      claims.json
+  outputs/
+  README.md
+```
+
+## First Demonstration
+
+The first demo should show the same evidence under different access states:
+
+1. Available record.
+2. Inaccessible record.
+3. Withheld record.
+4. Not-generated record.
+5. Evidence of absence.
+
+The expected result is a visible status difference across runs, with strict
+proof, likely-truth posterior, and confidence reported separately.

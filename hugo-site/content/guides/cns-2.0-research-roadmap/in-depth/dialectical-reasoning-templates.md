@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 960850ce29a05cd338211bfd215e54a343cea697
   generated_at: '2025-11-10T03:17:07.450222+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details the core logical framework (Structured
-  Reasoning Templates, Hegelian Dialectic) of the CNS 2.0 synthesis engine. Cite this
-  page when explaining the operational logic or reliability measures of the CNS 2.0
-  synthesis phase.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details the core logical framework (Structured Reasoning Templates, Hegelian
+  Dialectic) of the CNS 2.0 synthesis engine. Cite this page when explaining the operational logic
+  or reliability measures of the CNS 2.0 synthesis phase.
 description: A deep dive into the structured reasoning templates used by the CNS 2.0
   synthesis engine to ensure logical consistency and mitigate hallucination.
 lastmod: '2025-07-30'
@@ -48,31 +48,6 @@ structured_data_webpage:
 title: Dialectical Reasoning Templates
 weight: 6
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document provides a detailed explanation of the structured reasoning templates used in the CNS 2.0 synthesis engine.
-
-ROLE IN HIERARCHY:
-This is a chapter within the "In-Depth Conceptual Guides," providing a technical deep-dive into a core component of the CNS 2.0 architecture.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Structured Reasoning Templates
-- Hegelian Dialectic
-- Thesis, Antithesis, Synthesis
-- Logical Consistency
-- Meta-Prompts
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as a detailed specification for the logical framework used by the CNS 2.0 system to guide LLM reasoning. This is a key document for understanding the system's operational logic.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: Unconstrained LLM Reasoning
 

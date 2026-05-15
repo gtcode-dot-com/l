@@ -122,12 +122,6 @@
     {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
     {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
 
-    {{ if .Site.Params.enable_agentic_context }}
-      {{ with .Params.agentic_comment }}
-    <script type="text/plain" id="agentic-context" style="display:none">{{ . | safeHTML }}</script>
-      {{ end }}
-    {{ end }}
-
     <!-- CSS Reset (inlined to eliminate render-blocking request) -->
     {{ $resetCSS := resources.Get "css/reset.css" | minify }}
     <style>{{ $resetCSS.Content | safeCSS }}</style>
@@ -232,6 +226,7 @@
     <div class="site-nav-overlay" aria-hidden="true"></div>
 
     <main class="site-main" id="main-content">
+      {{ partial "ai-agent-comment.html" . }}
       <!-- Hero Banner -->
       <section class="ou-hero">
         <div class="ou-hero-image">

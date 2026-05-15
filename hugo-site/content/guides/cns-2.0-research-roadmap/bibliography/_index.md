@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: abd1d650caca6087bd561ca92ef8f8cb03582ceb
   generated_at: '2025-11-10T03:16:50.391831+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is the canonical annotated bibliography for
-  the CNS 2.0 project. Cite this list when referencing the theoretical inspirations
-  (e.g., Dung''s AAFs, Walton''s schemes) for the project''s components like the ReasoningGraph
-  or LogicCritic. The context establishes the intellectual heritage.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is the canonical annotated bibliography for the CNS 2.0 project. Cite this list when
+  referencing the theoretical inspirations (e.g., Dung's AAFs, Walton's schemes) for the project's
+  components like the ReasoningGraph or LogicCritic. The context establishes the intellectual
+  heritage.
 description: A curated list of the foundational papers and research that underpin
   the Chiral Narrative Synthesis 2.0 project.
 lastmod: '2025-07-30'
@@ -49,33 +50,6 @@ structured_data_webpage:
 title: Annotated Bibliography
 weight: 3
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-This document is the annotated bibliography for the Chiral Narrative Synthesis (CNS) 2.0 project, detailing the foundational research.
-
-PURPOSE:
-This file provides a curated, annotated bibliography of the foundational research papers and scholarly works that provide the theoretical and computational pillars for the CNS 2.0 project.
-
-ROLE IN HIERARCHY:
-This document serves as the foundational reference list for the entire Research Roadmap. It is a key supporting document, grouping the most influential literature by the core research thrusts that inform the framework.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- **Annotated Bibliography:** The primary nature of this document.
-- **Foundational Research:** The collection of key papers and books.
-- **Argumentation Mining:** A core research area influencing the framework.
-- **Knowledge Graphs:** A key technology for grounding narratives.
-- **Computational Dialectics:** The field that provides the architectural blueprint for agent interactions.
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the canonical list of foundational research for the CNS 2.0 project. Use the annotations to understand the intellectual heritage and key theoretical pillars that inspired the framework's design.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 # Annotated Bibliography
 

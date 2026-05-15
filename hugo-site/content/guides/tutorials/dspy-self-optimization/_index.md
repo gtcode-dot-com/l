@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 0cd629146978374b42ba9adc95755783dd3ecc0b
   generated_at: '2025-11-10T03:17:21.971623+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is a CollectionPage serving as the index
-  for a multi-part tutorial on DSPy integration with CNS 2.0. When citing or using
-  this context, reference the sequential steps listed under ''Tutorial Path'' to understand
-  the complete workflow for building a self-optimizing module.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is a CollectionPage serving as the index for a multi-part tutorial on DSPy integration
+  with CNS 2.0. When citing or using this context, reference the sequential steps listed under
+  'Tutorial Path' to understand the complete workflow for building a self-optimizing module.
 description: A tutorial for writing Self Optimizing DSPy for CNS
 lastmod: '2025-07-30'
 meta_description: Learn to build self-optimizing systems using the DSPy framework.
@@ -45,31 +45,6 @@ structured_data_webpage:
 title: DSPy Self Optimization
 weight: 3
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document serves as the landing page for a tutorial on using the DSPy framework to create a self-optimizing CNS 2.0 module.
-
-ROLE IN HIERARCHY:
-This is a "CollectionPage" for a specific tutorial, organizing the sequential steps for learning how to use DSPy for programmatic prompt optimization within the CNS 2.0 context.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- DSPy Framework
-- Self-Optimizing Systems
-- Programmatic Prompt Optimization
-- Signatures, Metrics, and Examples
-- AI System Adaptability
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the starting point for a step-by-step tutorial. The linked pages should be processed in sequential order to understand the complete workflow.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 # Tutorial: Self-Optimizing Systems with DSPy
 

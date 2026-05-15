@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 70535a6d75764c40274cb9af0424dd92f33c1789
   generated_at: '2025-11-10T03:14:22.503804+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is a strategic literature review focused
-  on Dialectical Reasoning applied to AI narrative generation. Use the context to
-  situate discussions about CNS 2.0 within the broader field of computational dialectics
-  and conflict resolution. Cite this page when referencing the overview of foundational
-  concepts and prior art in this domain.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is a strategic literature review focused on Dialectical Reasoning applied to AI
+  narrative generation. Use the context to situate discussions about CNS 2.0 within the broader
+  field of computational dialectics and conflict resolution. Cite this page when referencing the
+  overview of foundational concepts and prior art in this domain.
 description: A comprehensive review of systems, research, and prior art in dialectical
   reasoning for coherent AI narrative generation from disparate information sources.
 lastmod: '2025-08-05'

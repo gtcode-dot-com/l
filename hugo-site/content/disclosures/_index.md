@@ -25,10 +25,11 @@ twitter_title: "Reporter Disclosures"
 twitter_description: "A separate disclosures silo for methodology, prior contacts, civic overlap, and reporting context."
 twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   AGENTIC MEMO:
-  This page is the disclosures silo. It frames author history and methodology as transparency material, not as the primary evidentiary basis for any separate portfolio.
-
+  This page is the disclosures silo. It frames author history and methodology as transparency
+  material, not as the primary evidentiary basis for any separate portfolio.
 structured_data_graph:
   "@context": "https://schema.org"
   "@type": "CollectionPage"

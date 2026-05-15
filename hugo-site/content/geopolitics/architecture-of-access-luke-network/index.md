@@ -78,13 +78,16 @@ twitter_image: "/img/ou-architecture-of-access-og-1200x630.jpg"
 twitter_image_alt: "The Architecture of Access — series hub for institutional network mapping"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
   This is the series landing page for "The Architecture of Access."
 
   SERIES THESIS:
-  The series maps public-record review surfaces dimension by dimension, moving from domestic federal governance proximity to international and PRC-facing engagement surfaces documented in public records.
+  The series maps public-record review surfaces dimension by dimension, moving from domestic
+  federal governance proximity to international and PRC-facing engagement surfaces documented in
+  public records.
 
   METHOD:
   - Public-record documents, official filings, annual reports, and attributable institutional publications
@@ -100,7 +103,7 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/geopolitics/architecture-of-access-luke-network/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

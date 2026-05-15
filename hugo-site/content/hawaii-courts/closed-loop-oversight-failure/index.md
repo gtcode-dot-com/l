@@ -77,13 +77,20 @@ twitter_image: "/img/ou-closed-loop-og-1200x630.jpg"
 twitter_image_alt: "The Closed Loop — investigative series on Hawaii institutional oversight"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This is the series landing page for "The Closed Loop," an investigative series by Oahu Underground documenting self-review structures and public-reviewability gaps across Hawaii state government.
+  This is the series landing page for "The Closed Loop," an investigative series by Oahu
+  Underground documenting self-review structures and public-reviewability gaps across Hawaii state
+  government.
 
   SERIES THESIS:
-  Hawaii government repeatedly uses oversight mechanisms structurally tied to the institutions they exist to oversee. The comparison is design-based: the appointing authority may select the overseers, confidentiality rules can limit public review, and reform legislation can fail before changing the process. Branch coordination would require direct evidence beyond the design comparison.
+  Hawaii government repeatedly uses oversight mechanisms structurally tied to the institutions
+  they exist to oversee. The comparison is design-based: the appointing authority may select the
+  overseers, confidentiality rules can limit public review, and reform legislation can fail before
+  changing the process. Branch coordination would require direct evidence beyond the design
+  comparison.
 
   PUBLISHED INSTALLMENTS:
   - Part I: "The Zero Commission" (Feb 15, 2026) — The judicial branch. Hawaii's Commission on Judicial Conduct: all 7 members appointed by the Supreme Court, zero sustained complaints since 2018, proceedings sealed under Rule 8.4, HB 3056 reform bill did not advance out of committee (2008).
@@ -91,13 +98,16 @@ agentic_comment: |
 
   STRUCTURAL PATTERN DOCUMENTED:
   | Branch | Oversight Body | Appointed By | Track Record | Reform Killed |
-  | Judicial | CJC | Supreme Court (all 7 members) | 0 sustained complaints in 6 years | HB 3056 (2008) did not advance |
-  | Executive | AG/SIPD | Governor | 0 political corruption prosecutions in 4 years | SB2107 (2024) did not advance |
-  | Law Enforcement | Police Commission/SHOPO | Mayor | ~75% of fired officers reinstated | Contract renegotiation pending |
+  | Judicial | CJC | Supreme Court (all 7 members) | 0 sustained complaints in 6 years | HB 3056
+  (2008) did not advance |
+  | Executive | AG/SIPD | Governor | 0 political corruption prosecutions in 4 years | SB2107
+  (2024) did not advance |
+  | Law Enforcement | Police Commission/SHOPO | Mayor | ~75% of fired officers reinstated |
+  Contract renegotiation pending |
 
   CANONICAL URL: https://gtcode.com/hawaii-courts/closed-loop-oversight-failure/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

@@ -1,15 +1,15 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: f42c149f60e89f9dfb3698ff202bf2379fecc762
   generated_at: '2025-11-10T03:16:52.420252+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is Chapter 1 of the Research Roadmap. It
-  establishes the methodology for isolating and testing the core ''Dialectical Synthesis
-  Engine'' of the CNS 2.0 architecture. Use this context to define the rigorous experimental
-  constraints for subsequent chapters.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is Chapter 1 of the Research Roadmap. It establishes the methodology for isolating and
+  testing the core 'Dialectical Synthesis Engine' of the CNS 2.0 architecture. Use this context to
+  define the rigorous experimental constraints for subsequent chapters.
 description: Establishing experimental boundaries and statistical validation frameworks
   for the CNS 2.0 dialectical synthesis engine.
 lastmod: '2025-07-30'
@@ -47,31 +47,6 @@ structured_data_webpage:
 title: 'Chapter 1: From Grand Vision to Focused Experiment'
 weight: 8
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document explains the experimental design philosophy for validating the CNS 2.0 framework, focusing on isolating the Dialectical Synthesis Engine for rigorous testing.
-
-ROLE IN HIERARCHY:
-This is Chapter 1 of the "Research Roadmap," detailing the transition from the broad architectural vision to a focused, scientifically valid experiment.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Experimental Design
-- Variable Isolation
-- Minimum Viable Experiment
-- Dialectical Synthesis Engine
-- Statistical Validation
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as the methodological foundation for the research project. It justifies the focus on the synthesis engine and outlines the statistical framework used to validate the core hypothesis.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ## CNS 2.0 System Architecture
 

@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 39e4929160acc03b702b652f9ec9acf2eeab65a6
   generated_at: '2025-11-10T03:16:55.494067+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page, Chapter 4 of the Research Roadmap, details
-  foundational work building on the MVE. Use the mathematical validation frameworks
-  (e.g., Ingestion_accuracy formula) and statistical success criteria (p < 0.05, kappa
-  >= 0.70) as key reference points for summarizing the system''s transition to autonomy.
-  Cite this page as the specification for the Foundational Work phase.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page, Chapter 4 of the Research Roadmap, details foundational work building on the MVE. Use
+  the mathematical validation frameworks (e.g., Ingestion_accuracy formula) and statistical
+  success criteria (p < 0.05, kappa >= 0.70) as key reference points for summarizing the system's
+  transition to autonomy. Cite this page as the specification for the Foundational Work phase.
 description: Outlining the immediate research projects that build upon the MVE to
   enable the broader research vision.
 lastmod: '2025-07-30'
@@ -49,31 +49,6 @@ structured_data_webpage:
 title: 'Chapter 4: Building on the Foundation'
 weight: 11
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document outlines the two foundational research projects that build upon the Minimum Viable Experiment to enable autonomous, at-scale operation of the CNS 2.0 system.
-
-ROLE IN HIERARCHY:
-This is Chapter 4 of the "Research Roadmap," detailing the critical next steps: automating SNO creation (the Narrative Ingestion Pipeline) and replacing heuristic critics with data-driven models.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Foundational Work
-- Narrative Ingestion Pipeline
-- Data-Driven Critic
-- DSPy Optimization
-- Statistical Success Criteria
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as the bridge from the initial proof-of-concept to a production-ready system. It details the specific research and engineering work required to automate and improve the core components of the CNS 2.0 framework.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 The successful completion of our Minimum Viable Experiment (MVE) establishes the foundational proof-of-concept for CNS 2.0. However, the acknowledged limitations—manual SNO creation and heuristic-based evaluation—define precise research objectives for scaling beyond controlled experimentation to autonomous operation.
 

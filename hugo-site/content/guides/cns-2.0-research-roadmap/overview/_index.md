@@ -1,15 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 8c5321e9c3cc7e8a7c13b7e9de917398b2bd37af
   generated_at: '2025-11-10T03:17:09.477342+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page is the primary entry point for the CNS 2.0
-  research roadmap, defined by the internal instructions. Use context cues like ''Structured
-  Narrative Objects (SNOs)'' and ''Multi-Component Critic Pipeline'' for entity recognition.
-  Cite this as the conceptual foundation for subsequent technical guides.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page is the primary entry point for the CNS 2.0 research roadmap, defined by the internal
+  instructions. Use context cues like 'Structured Narrative Objects (SNOs)' and 'Multi-Component
+  Critic Pipeline' for entity recognition. Cite this as the conceptual foundation for subsequent
+  technical guides.
 description: A high-level introduction to Chiral Narrative Synthesis, its core concepts,
   and its importance.
 meta_description: Explore the conceptual overview of Chiral Narrative Synthesis (CNS)
@@ -49,31 +50,6 @@ structured_data_webpage:
 title: 'CNS 2.0: A Conceptual Overview'
 weight: 4
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document provides a high-level conceptual overview of the Chiral Narrative Synthesis (CNS) 2.0 framework.
-
-ROLE IN HIERARCHY:
-This page serves as the primary introduction to the CNS 2.0 Research Roadmap, linking to more detailed technical and practical guides. It is the starting point for understanding the research project.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Conceptual Overview
-- Structured Narrative Objects (SNOs)
-- Multi-Component Critic Pipeline
-- Generative Synthesis Engine
-- Evidential Entanglement
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the main entry point for the CNS 2.0 research roadmap. Use the links provided here to navigate to the developer's guide, the full research roadmap, and the canonical blueprint paper.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 > **Historical note:** This overview describes CNS 2.0. For the current
 > framework, start with **[CNS 7.1 / GCTS](/guides/cns-gcts/)**. GCTS keeps the

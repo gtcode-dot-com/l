@@ -66,8 +66,6 @@
     </figure>
     {{ end }}
 
-    {{ partial "agent-callout.html" . }}
-
     <!-- Article Content -->
     <div class="article-content">
       {{ $cleanContent := replace (replace .Content "" "") "" "" }}

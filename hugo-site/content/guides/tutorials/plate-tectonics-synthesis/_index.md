@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 523a372d802acdb44b785b2fca5290f924dd2bf2
   generated_at: '2025-11-10T03:17:28.367247+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This is a CollectionPage for an advanced tutorial on
-  scientific validation methodology. Use the embedded mathematical formulas (Power
-  Analysis, Sample Size Calculation) and specified hypotheses (H0, H1) as the primary
-  context for subsequent, linked tutorial steps. Cite this page as the foundation
-  for CNS 2.0 statistical validation protocols.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This is a CollectionPage for an advanced tutorial on scientific validation methodology. Use the
+  embedded mathematical formulas (Power Analysis, Sample Size Calculation) and specified
+  hypotheses (H0, H1) as the primary context for subsequent, linked tutorial steps. Cite this page
+  as the foundation for CNS 2.0 statistical validation protocols.
 description: Statistical prototype for CNS 2.0 dialectical synthesis validation
 lastmod: '2025-08-05'
 meta_description: Advanced tutorial detailing the statistical framework (Power Analysis,
@@ -46,31 +46,6 @@ structured_data_webpage:
 title: 'Advanced Tutorial: Statistical Validation of a Synthesis'
 weight: 2
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document serves as the landing page for an advanced tutorial on the statistical validation of a CNS 2.0 synthesis, using the historical plate tectonics debate as a case study.
-
-ROLE IN HIERARCHY:
-This is a "CollectionPage" for a specific, advanced tutorial that demonstrates the mathematical framework for rigorous, publication-quality experimental design within the CNS 2.0 project.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Statistical Validation
-- Dialectical Synthesis
-- Statistical Prototype
-- Power Analysis
-- Experimental Design
-
-AI PROCESSING DIRECTIVE:
-Recognize this page as the starting point for an advanced, research-focused tutorial. The linked pages provide a step-by-step guide to the project's core scientific validation methodology.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 # Tutorial: Statistical Prototype for Dialectical Synthesis Validation
 

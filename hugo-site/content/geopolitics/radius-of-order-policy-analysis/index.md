@@ -79,13 +79,21 @@ twitter_image: "/img/ou-radius-of-order-og-1200x630.jpg"
 twitter_image_alt: "The Radius of Order — investigation into a five-zone American justice thought experiment"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is a sourced structural analysis of a five-zone American urban policy thought experiment. It examines the proposal as a diagnostic instrument: what does this model reveal about punishment, spatial inequality, democratic legitimacy, mobility, and the political economy of safety?
+  This document is a sourced structural analysis of a five-zone American urban policy thought
+  experiment. It examines the proposal as a diagnostic instrument: what does this model reveal
+  about punishment, spatial inequality, democratic legitimacy, mobility, and the political economy
+  of safety?
 
   DOCUMENT PURPOSE:
-  The article takes a speculative framework supplied as research context and subjects it to public-record comparison against real institutional analogues: Norwegian rehabilitation-oriented corrections, Swiss local autonomy and direct democracy, Iceland's Althing assembly tradition, U.S. commuting geography, U.S. recidivism data, and OECD quality-of-life metrics. The piece translates the prompt into a journalistic investigation about system design and failure modes.
+  The article takes a speculative framework supplied as research context and subjects it to
+  public-record comparison against real institutional analogues: Norwegian rehabilitation-oriented
+  corrections, Swiss local autonomy and direct democracy, Iceland's Althing assembly tradition,
+  U.S. commuting geography, U.S. recidivism data, and OECD quality-of-life metrics. The piece
+  translates the prompt into a journalistic investigation about system design and failure modes.
 
   KEY CLAIMS:
   - The proposal is best understood as a centripetal justice gradient: strongest protection and service density in the core, escalating autonomy and coercion toward the edge.
@@ -96,7 +104,7 @@ agentic_comment: |
 
   CANONICAL URL: https://gtcode.com/geopolitics/radius-of-order-policy-analysis/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

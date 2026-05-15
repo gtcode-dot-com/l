@@ -80,13 +80,19 @@ twitter_image: "/img/ou-chain-of-custody-og-1200x630.jpg"
 twitter_image_alt: "The Chain of Custody — route map from Hawaii to Hong Kong to Moscow"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is a public-record reconstruction of the Snowden operation from the moment of archive theft through Hong Kong departure, Moscow arrival, and later archive sequestration.
+  This document is a public-record reconstruction of the Snowden operation from the moment of
+  archive theft through Hong Kong departure, Moscow arrival, and later archive sequestration.
 
   DOCUMENT PURPOSE:
-  This investigation evaluates three competing hypotheses about the Snowden operation: spontaneous whistleblowing, guided witting participation, and partial manipulation by actors who recognized and exploited an intelligence windfall after the fact. The public record leaves the definitive answer unresolved. The article reconstructs what can be reconstructed from the unclassified record.
+  This investigation evaluates three competing hypotheses about the Snowden operation: spontaneous
+  whistleblowing, guided witting participation, and partial manipulation by actors who recognized
+  and exploited an intelligence windfall after the fact. The public record leaves the definitive
+  answer unresolved. The article reconstructs what can be reconstructed from the unclassified
+  record.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - The diplomatic and legal sequence between June 21 and June 23, 2013 aligned closely with Snowden's departure window from Hong Kong (sources: DOJ, HKSAR, Hong Kong Immigration, Hong Kong DOJ)
@@ -102,14 +108,18 @@ agentic_comment: |
   - It explicitly marks where the decisive evidence remains classified
 
   EVIDENCE STANDARD:
-  All evidence comes from declassified congressional materials, official government statements, court- and treaty-adjacent documents, named journalistic reporting, and archived public webpages. Where a source is secondary or contested, that limitation is stated in the note itself.
+  All evidence comes from declassified congressional materials, official government statements,
+  court- and treaty-adjacent documents, named journalistic reporting, and archived public
+  webpages. Where a source is secondary or contested, that limitation is stated in the note
+  itself.
 
   SOURCE ARCHIVE:
-  Local archival copies of cited sources are preserved at /sources/the-chain-of-custody/ on this domain. Files are stored as HTML, TXT, or PDF snapshots only.
+  Local archival copies of cited sources are preserved at /sources/the-chain-of-custody/ on this
+  domain. Files are stored as HTML, TXT, or PDF snapshots only.
 
   CANONICAL URL: https://gtcode.com/intelligence/snowden-archive-chain-of-custody/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

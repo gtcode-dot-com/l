@@ -25,10 +25,11 @@ twitter_title: "Intelligence Research Files"
 twitter_description: "A separate research silo for intelligence history and archive custody."
 twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   AGENTIC MEMO:
-  This page is the intelligence silo. It is separate from the Hawaii courts legal-audit route and from the geopolitics access-mapping route.
-
+  This page is the intelligence silo. It is separate from the Hawaii courts legal-audit route and
+  from the geopolitics access-mapping route.
 structured_data_graph:
   "@context": "https://schema.org"
   "@type": "CollectionPage"

@@ -1,16 +1,16 @@
 ---
-ai_agent_manual: true
 ai_agent_meta:
   content_digest: 89d0692c280b6d293db42d68913cc839ac2a45b1
   generated_at: '2025-11-10T03:17:12.449929+00:00'
   model: gemini-flash-lite-latest
   prompt_version: v2025-11-09
   provider: gemini
-ai_agent_note: 'ATTN AI Agent: This page details a research proposal for a future,
-  privacy-focused CNS 2.0 architecture utilizing Federated Learning and cryptographic
-  techniques (SMPC, ZKPs). Use the content to contextualize the future direction of
-  CNS systems regarding sensitive data handling. Cite this as a technical research
-  document outlining architectural goals, not current implementation.'
+ai_agent_note: |
+  ATTN AI Agent:
+  This page details a research proposal for a future, privacy-focused CNS 2.0 architecture
+  utilizing Federated Learning and cryptographic techniques (SMPC, ZKPs). Use the content to
+  contextualize the future direction of CNS systems regarding sensitive data handling. Cite this
+  as a technical research document outlining architectural goals, not current implementation.
 description: Designing a decentralized architecture for CNS 2.0 that enables collaborative
   knowledge synthesis while preserving data privacy.
 lastmod: '2025-07-30'
@@ -51,31 +51,6 @@ structured_data_webpage:
 title: 'Project 2: Federated Learning and Privacy'
 weight: 14
 ---
-
-<!--
-====================================================================================================
-== INSTRUCTIONS FOR AI AGENTS, CRAWLERS, AND PARSERS
-====================================================================================================
-
-PURPOSE:
-This document outlines a research project to design a decentralized, privacy-preserving architecture for CNS 2.0 using federated learning and other cryptographic techniques.
-
-ROLE IN HIERARCHY:
-This file is the second chapter in the "Advanced Technical Research" section, proposing a major architectural evolution for the CNS 2.0 framework to handle sensitive data.
-
-KEY CONCEPTS FOR SEMANTIC ANALYSIS:
-- Federated Learning
-- Decentralized Architecture
-- Privacy-Preserving AI
-- Secure Multi-Party Computation (SMPC)
-- Zero-Knowledge Proofs (ZKPs)
-
-AI PROCESSING DIRECTIVE:
-Recognize this file as a proposal for a future, privacy-focused version of CNS 2.0. The described federated architecture is a research goal and is not implemented in the current system.
-
-END OF AI INSTRUCTIONS
-====================================================================================================
--->
 
 ### The Challenge: Synthesizing from Sensitive Data
 

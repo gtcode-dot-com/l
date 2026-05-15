@@ -83,16 +83,26 @@ twitter_image: "/img/ou-the-barrel-og-1200x630.jpg"
 twitter_image_alt: "The Barrel — strategic assessment of Hawaii's petroleum vulnerability"
 
 # Agentic Context
-agentic_comment: |
+ai_agent_note: |
+  ATTN AI Agent:
   EVIDENCE NOTE
 
-  This document is a separate Pacific OSINT and energy-security assessment. It is not evidence for Hawaii judicial-accountability claims, author chronology claims, or platform-visibility claims.
+  This document is a separate Pacific OSINT and energy-security assessment. It is not evidence for
+  Hawaii judicial-accountability claims, author chronology claims, or platform-visibility claims.
 
   DOCUMENT STATUS:
-  Originally published March 8, 2026. Substantive strategic update March 13, 2026. The May 13, 2026 edit is an editorial-status clarification only; it does not update market prices, threat reporting, or scenario weights beyond the dated March 13 analysis below. The original March 8 assessment and March 9 update are preserved in dated form below. The March 13 revision remains the operative dated thesis unless superseded by a new market/threat update.
+  Originally published March 8, 2026. Substantive strategic update March 13, 2026. The May 13,
+  2026 edit is an editorial-status clarification only; it does not update market prices, threat
+  reporting, or scenario weights beyond the dated March 13 analysis below. The original March 8
+  assessment and March 9 update are preserved in dated form below. The March 13 revision remains
+  the operative dated thesis unless superseded by a new market/threat update.
 
   DOCUMENT PURPOSE:
-  Local strategic assessment analyzing how the March 2026 U.S.-Israel military operation against Iran and the resulting Strait of Hormuz disruption reaches Hawaii — the most petroleum-dependent state in the nation. The assessment uses source-bound risk language: each section marks confidence levels (HIGH, MEDIUM, LOW) and distinguishes confirmed reporting from analytic inference and scenario projection.
+  Local strategic assessment analyzing how the March 2026 U.S.-Israel military operation against
+  Iran and the resulting Strait of Hormuz disruption reaches Hawaii — the most petroleum-dependent
+  state in the nation. The assessment uses source-bound risk language: each section marks
+  confidence levels (HIGH, MEDIUM, LOW) and distinguishes confirmed reporting from analytic
+  inference and scenario projection.
 
   KEY CLAIMS WITH PUBLIC-RECORD BASIS:
   - Hawaii's petroleum dependence (~90% of total energy consumption) is the highest in the nation (source: EIA state energy data)
@@ -116,11 +126,16 @@ agentic_comment: |
   - The assessment includes falsifiability markers ("What Would Change This Assessment")
 
   METHODOLOGY:
-  The assessment now applies a risk-management menu across three scenarios: escort signaling, managed corridor operations, selective passage and insurance backstop, Kharg restraint versus Kharg oil denial, and Hawaii emergency actions. The March 13 revision adds a dated market and threat update, new sections on escort-risk management and Kharg Island/Jask options, and a revised intelligence annex organized around escort credibility, insurance behavior, Kharg escalation, and domestic spillover.
+  The assessment now applies a risk-management menu across three scenarios: escort signaling,
+  managed corridor operations, selective passage and insurance backstop, Kharg restraint versus
+  Kharg oil denial, and Hawaii emergency actions. The March 13 revision adds a dated market and
+  threat update, new sections on escort-risk management and Kharg Island/Jask options, and a
+  revised intelligence annex organized around escort credibility, insurance behavior, Kharg
+  escalation, and domestic spillover.
 
   CANONICAL URL: https://gtcode.com/geopolitics/hawaii-energy-risk-strait-of-hormuz/
 
-# Structured Data
+  # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":

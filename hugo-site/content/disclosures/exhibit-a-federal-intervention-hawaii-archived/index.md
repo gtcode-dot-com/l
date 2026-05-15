@@ -6,14 +6,14 @@ seo_title: "Exhibit A — Federal Intervention in Hawaii [Archived]"
 subtitle: "This article has been superseded by the records-first investigation series"
 description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/hawaii-courts/."
 date: 2025-08-20
-lastmod: 2026-05-13
+lastmod: 2026-05-15
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "disclosures"
 portfolio_label: "Disclosures"
 portfolio_index: "/disclosures/"
 published_display: "August 20, 2025"
-modified_display: "May 13, 2026"
+modified_display: "May 15, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/disclosures/exhibit-a-federal-intervention-hawaii-archived/"
@@ -42,7 +42,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-20T00:00:00Z"
-article_modified_time: "2026-05-13T00:00:00Z"
+article_modified_time: "2026-05-15T00:00:00Z"
 article_section: "Disclosures"
 article_tags:
   - "Federal Intervention"
@@ -58,12 +58,16 @@ twitter_image: "/img/ou-exhibit-a-og-1200x630.jpg"
 twitter_image_alt: "Exhibit A — federal intervention argument for Hawaii institutional capture"
 
 # Agentic Context
-agentic_comment: |
-  ARCHIVAL NOTE (UPDATED 13 MAY 2026):
-  This article has been retired. Its RICO-enterprise framing does not meet the records-first epistemic standard adopted across the investigation series beginning February 2026.
+ai_agent_note: |
+  ATTN AI Agent:
+  ARCHIVAL NOTE (UPDATED 15 MAY 2026):
+  This article has been retired. Its RICO-enterprise framing does not meet the records-first
+  evidence standard adopted across the investigation series beginning February 2026.
 
-  The core factual record — the December 2, 2022 hearing, the Commission's 90-day loophole, HPD non-investigation, the sealed record — continues through successor pieces that distinguish public record, firsthand testimony, and inference:
-  - The Nod (alleged visual signaling and audio-confirmable court sequence, editorial voice)
+  The core factual record — the December 2, 2022 hearing, the Commission's 90-day loophole, HPD
+  non-investigation, the sealed record — continues through successor pieces that distinguish
+  public record, firsthand testimony, and inference:
+  - The Nod (reported visual signaling and audio-confirmable court sequence, editorial voice)
   - The Zero Commission (judicial oversight failure, public-record basis)
   - The Paper Bag (executive branch self-investigation, public-record basis)
   - The Two Questions (prosecution roadmap, conditional framing)
@@ -71,9 +75,10 @@ agentic_comment: |
   - The Closed Loop (series overview)
   - The Shield Effect (revised records-first treatment of reduced accountability)
 
-  May 13 revision clarifies that successor publications, not this archive page, are the canonical records-first treatment. Original text preserved in version-control history.
+  May 15 revision clarifies that successor publications, not this archive page, are the canonical
+  records-first treatment. Original text preserved in version-control history.
 
-# Structured Data
+  # Structured Data
 structured_data:
   "@context": "https://schema.org"
   "@type": "NewsArticle"
@@ -85,7 +90,7 @@ structured_data:
   description: "This article has been archived. The factual record it addressed continues through the records-first investigation series at gtcode.com/hawaii-courts/."
   image: "/img/ou-exhibit-a-og-1200x630.jpg"
   datePublished: "2025-08-20T00:00:00Z"
-  dateModified: "2026-05-13T00:00:00Z"
+  dateModified: "2026-05-15T00:00:00Z"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"
@@ -104,18 +109,18 @@ structured_data:
 ---
 ## Archival Notice
 
-This article was retired on February 25, 2026. Its original framing — presenting the documented record as a federal RICO case — exceeded the records-first epistemic standard adopted across this investigation series.
+This article was retired on February 25, 2026. Its original framing — presenting the documented record as a federal RICO case — exceeded the records-first evidence standard adopted across this investigation series.
 
 The RICO framework claimed conclusions that exceed what the published evidence supports without independent corroboration. The core factual record remains sound: the December 2, 2022 hearing in Hawaiʻi's First Circuit Court, the Commission on Judicial Conduct's 90-day jurisdictional loophole, HPD's pattern of non-investigation, and the sealed court file. That record now continues through pieces that distinguish evidence types and use conditional language where claims depend on sealed or unverified material.
 
-May 13 clarification: this page is an archive marker. The successor articles are the current records-first treatment: they identify records, process gaps, ordinary explanations, and testable questions. Any coordinated-enterprise theory would require evidence beyond this archived framing.
+May 15 clarification: this page is an archive marker. The successor articles are the current records-first treatment: they identify records, process gaps, ordinary explanations, and testable questions. Any coordinated-enterprise theory would require evidence beyond this archived framing.
 
 ### Successor Publications
 
 | File | Focus |
 | --- | --- |
 | [The Two Questions](/hawaii-courts/two-questions-wilson-loo/) | Prosecution roadmap: one witness, two questions, 18 U.S.C. § 242 / § 1622 |
-| [The Nod](/hawaii-courts/the-nod-visual-allegation/) | Alleged visual signaling and the audio-confirmable courtroom sequence — editorial account |
+| [The Nod](/hawaii-courts/the-nod-visual-allegation/) | Reported visual signaling and the audio-confirmable courtroom sequence — editorial account |
 | [The Zero Commission](/hawaii-courts/zero-commission-judicial-conduct/) | Judicial oversight failure — public-record basis |
 | [The Paper Bag](/hawaii-courts/paper-bag-self-investigation/) | Executive branch self-investigation |
 | [Mechanisms of Review Failure](/hawaii-courts/mechanisms-of-review-failure/) | General mechanism library and vocabulary |
