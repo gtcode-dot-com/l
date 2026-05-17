@@ -61,7 +61,7 @@ Specifically, the XSS vulnerability enables the execution of arbitrary JavaScrip
 
 The extension, for its part, allows the prompt to land in Claude's sidebar as if it's a legitimate user request simply because it comes from an allow-listed domain.
 
-"The attacker's page embeds the vulnerable Arkose component in a hidden <iframe>, sends the XSS payload via postMessage, and the injected script fires the prompt to the extension," Yomtov explained. "The victim sees nothing."
+"The attacker's page embeds the vulnerable Arkose component in a hidden &lt;iframe&gt;, sends the XSS payload via postMessage, and the injected script fires the prompt to the extension," Yomtov explained. "The victim sees nothing."
 
 VIDEO
 

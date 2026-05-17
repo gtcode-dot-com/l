@@ -2702,7 +2702,7 @@
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2026-05-15",
+    "date": "2026-05-17",
     "lastmod": "2026-05-15",
     "abstract": "Original CNS 8.0 source package table of contents.",
     "canonical": "https://gtcode.com/guides/cns/source-table-of-contents/",
@@ -2722,9 +2722,9 @@
     "repo_path": "guides/cns/source-table-of-contents",
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/guides/cns/source-table-of-contents",
     "bibtex_key": "gtcodeeditorial2026sourcetablecontents",
-    "bibtex": "@misc{gtcodeeditorial2026sourcetablecontents,\n  author  = {GTCode Editorial, },\n  title   = {CNS 8.0 Table of Contents},\n  institution = {GTCode.com Guides},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/guides/cns/source-table-of-contents/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/guides/cns/source-table-of-contents}}\n}",
-    "apa": "GTCode Editorial (2026, May 15). CNS 8.0 Table of Contents. *GTCode.com Guides*. https://gtcode.com/guides/cns/source-table-of-contents/ (Archived at https://github.com/GTCode-Press/publications/tree/main/guides/cns/source-table-of-contents)",
-    "chicago": "GTCode Editorial. \"CNS 8.0 Table of Contents.\" *GTCode.com Guides*, May 15, 2026. https://gtcode.com/guides/cns/source-table-of-contents/. Archived at https://github.com/GTCode-Press/publications/tree/main/guides/cns/source-table-of-contents."
+    "bibtex": "@misc{gtcodeeditorial2026sourcetablecontents,\n  author  = {GTCode Editorial, },\n  title   = {CNS 8.0 Table of Contents},\n  institution = {GTCode.com Guides},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/guides/cns/source-table-of-contents/},\n  note    = {Last modified 2026-05-15; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/guides/cns/source-table-of-contents}}\n}",
+    "apa": "GTCode Editorial (2026, May 17). CNS 8.0 Table of Contents. *GTCode.com Guides*. https://gtcode.com/guides/cns/source-table-of-contents/ (Archived at https://github.com/GTCode-Press/publications/tree/main/guides/cns/source-table-of-contents)",
+    "chicago": "GTCode Editorial. \"CNS 8.0 Table of Contents.\" *GTCode.com Guides*, May 17, 2026. https://gtcode.com/guides/cns/source-table-of-contents/. Archived at https://github.com/GTCode-Press/publications/tree/main/guides/cns/source-table-of-contents."
   },
   "/guides/cns/tensor-logic-predicate-invention/": {
     "title": "07 — Tensor Logic and Predicate Invention",
