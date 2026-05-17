@@ -3242,6 +3242,26 @@ article {
 }
 
 /* ============================================
+   Math Rendering
+   ============================================ */
+
+.math-display {
+  overflow-x: auto;
+  margin: var(--space-5) 0;
+  padding: var(--space-3) 0;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: var(--space-2) 0;
+}
+
+.katex {
+  font-size: 1.04em;
+}
+
+/* ============================================
    Print Styles
    ============================================ */
 

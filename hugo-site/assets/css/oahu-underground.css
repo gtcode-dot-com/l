@@ -3481,3 +3481,18 @@ a.ou-wire-badge-link:focus {
   font-size: 0.82rem;
   color: var(--ou-text);
 }
+
+.math-display,
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.65rem 0;
+}
+
+.math-display {
+  margin: 1.5rem 0;
+}
+
+.katex {
+  font-size: 1.04em;
+}

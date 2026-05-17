@@ -15,6 +15,10 @@
     {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
     {{- $pageTitle := .Params.seo_title | default .Title -}}
     {{- $pageTitle = partial "seo/title.html" (dict "title" $pageTitle "siteName" $titleSiteName "max" $titleMax) -}}
+    {{ $rawContent := .RawContent | default "" }}
+    {{ $hasMathSyntax := or (in $rawContent "```math") (in $rawContent "$$") (in $rawContent "\\(") (in $rawContent "\\[") }}
+    {{ $autoMath := and (ne .Section "news") $hasMathSyntax }}
+    {{ $enableMath := or .Params.math .Site.Params.math $autoMath }}
     <title>{{ $pageTitle }}</title>
 
     <!-- Meta tags -->
@@ -116,6 +120,9 @@
     <!-- Oahu Underground Stylesheet (same as homepage) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $ouCSS.RelPermalink }}" integrity="{{ $ouCSS.Data.Integrity }}" crossorigin="anonymous" />
+    {{ if $enableMath }}
+    <link rel="stylesheet" href="/vendor/katex/katex.min.css" />
+    {{ end }}
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
@@ -203,5 +210,25 @@
     {{/* Responsive table enhancement for .ou-article-content */}}
     {{ $ouTablesJS := resources.Get "js/ou-tables.js" | minify | fingerprint }}
     <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
+    {{ if $enableMath }}
+    <script defer src="/vendor/katex/katex.min.js"></script>
+    <script defer src="/vendor/katex/auto-render.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.renderMathInElement) {
+          window.renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "\\[", right: "\\]", display: true },
+              { left: "\\(", right: "\\)", display: false },
+              { left: "$", right: "$", display: false }
+            ],
+            ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code", "option"],
+            throwOnError: false
+          });
+        }
+      });
+    </script>
+    {{ end }}
   </body>
 </html>

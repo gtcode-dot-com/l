@@ -23,7 +23,10 @@
       {{- $pageTitle = partial "seo/title.html" (dict "title" $pageTitleSource "siteName" $titleSiteName "max" $titleMax) -}}
     {{- end -}}
     <title>{{ $pageTitle }}</title>
-    {{ $enableMath := or .Params.math .Site.Params.math }}
+    {{ $rawContent := .RawContent | default "" }}
+    {{ $hasMathSyntax := or (in $rawContent "```math") (in $rawContent "$$") (in $rawContent "\\(") (in $rawContent "\\[") }}
+    {{ $autoMath := and (ne .Section "news") $hasMathSyntax }}
+    {{ $enableMath := or .Params.math .Site.Params.math $autoMath }}
 
     <!-- Meta tags -->
     {{ partial "fetch-article-meta.html" (dict "context" .) }}
@@ -263,7 +266,23 @@
     </footer>
     {{ if $enableMath }}
     <script defer src="/vendor/katex/katex.min.js"></script>
-    <script defer src="/vendor/katex/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+    <script defer src="/vendor/katex/auto-render.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.renderMathInElement) {
+          window.renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "\\[", right: "\\]", display: true },
+              { left: "\\(", right: "\\)", display: false },
+              { left: "$", right: "$", display: false }
+            ],
+            ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code", "option"],
+            throwOnError: false
+          });
+        }
+      });
+    </script>
     {{ end }}
     {{ if or (.Store.Get "hasMermaid") (.Page.Store.Get "hasMermaid") }}
     <script src="/vendor/mermaid/mermaid.min.js"></script>
