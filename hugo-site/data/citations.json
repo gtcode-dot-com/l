@@ -1009,38 +1009,6 @@
     "apa": "GTCode Editorial (2026, May 15). Harness Engineering: From Agent Prompts to Engineering Control Systems. *GTCode.com Articles*. https://gtcode.com/articles/harness-engineering/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering)",
     "chicago": "GTCode Editorial. \"Harness Engineering: From Agent Prompts to Engineering Control Systems.\" *GTCode.com Articles*, May 15, 2026. https://gtcode.com/articles/harness-engineering/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering."
   },
-  "/articles/hybrid-consciousness-neural-digital-integration/": {
-    "title": "The Bio-Digital Interface: A Complete History of Hybrid Consciousness Integration, the Simulacrum-Bliss Incident, and the NEXUS Frontier",
-    "author": "GTCode Editorial",
-    "author_family": "GTCode Editorial",
-    "author_given": "",
-    "date": "2026-05-22",
-    "lastmod": "2026-05-22",
-    "abstract": "A complete history and future roadmap of hybrid consciousness integration experiments, detailing the BARLI-QM framework, the catastrophic Simulacrum-Bliss incident, the Q-CHIF safety design, the SCIN social scaling network, and the four-arm NEXUS frontier.",
-    "canonical": "https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/",
-    "section": "articles",
-    "section_label": "Articles",
-    "series": null,
-    "series_part": null,
-    "series_part_title": null,
-    "tags": [
-      "Hybrid Consciousness",
-      "AI Alignment",
-      "Neural-Digital Integration",
-      "NEXUS",
-      "Safety Systems",
-      "Epistemic Emergence"
-    ],
-    "bibtex_type": "article",
-    "cff_type": "article",
-    "journal": "GTCode.com Articles",
-    "repo_path": "articles/hybrid-consciousness-neural-digital-integration",
-    "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration",
-    "bibtex_key": "gtcodeeditorial2026hybridconsciousnessneural",
-    "bibtex": "@article{gtcodeeditorial2026hybridconsciousnessneural,\n  author  = {GTCode Editorial, },\n  title   = {The Bio-Digital Interface: A Complete History of Hybrid Consciousness Integration, the Simulacrum-Bliss Incident, and the NEXUS Frontier},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration}}\n}",
-    "apa": "GTCode Editorial (2026, May 22). The Bio-Digital Interface: A Complete History of Hybrid Consciousness Integration, the Simulacrum-Bliss Incident, and the NEXUS Frontier. *GTCode.com Articles*. https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration)",
-    "chicago": "GTCode Editorial. \"The Bio-Digital Interface: A Complete History of Hybrid Consciousness Integration, the Simulacrum-Bliss Incident, and the NEXUS Frontier.\" *GTCode.com Articles*, May 22, 2026. https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration."
-  },
   "/articles/mathematics-of-coordinated-silence/": {
     "title": "The Mathematics of Coordinated Silence",
     "author": "GTCode Editorial",
