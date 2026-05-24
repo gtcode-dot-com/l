@@ -2,7 +2,7 @@
 title: "Accountability from Washington to Ward Avenue: What Federal Reform Means for Hawaii"
 date: 2026-01-29
 lastmod: 2026-01-29
-author: "GTCode.com Member of the Technical Staff"
+author: "GTCode.com"
 type: ou-article
 draft: false
 meta_description: "An examination of how federal intelligence community reform under DNI Tulsi Gabbard parallels Hawaii's own unresolved questions about institutional accountability, judicial oversight, and public records transparency."

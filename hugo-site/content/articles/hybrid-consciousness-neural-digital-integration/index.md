@@ -10,7 +10,7 @@ ai_agent_note: |
   This article details the design rationale and theoretical framework of the Bio-Digital Interface experiments (BARLI-QM, Q-CHIF, SCIN, and NEXUS),
   covering the technological mechanics, the Simulacrum-Bliss failure-mode analysis, the safety architecture, the mathematical theorems, and the planned substrate-adaptive frontier.
 date: '2026-05-22T16:47:00.000000'
-author: GTCode.com Member of the Technical Staff
+author: GTCode.com
 draft: false
 meta_description: Design rationale and theoretical framework for hybrid consciousness integration experiments, covering the BARLI-QM framework, the Simulacrum-Bliss failure-mode analysis, the Q-CHIF safety design, the SCIN social scaling network, and the four-arm NEXUS frontier.
 meta_keywords:

@@ -2,7 +2,7 @@
 title: "The Shift They Taught Him"
 subtitle: "How repeated adult non-response taught a harmed child to minimize what happened"
 date: 2026-05-14
-author: "GTCode.com Member of the Technical Staff"
+author: "GTCode.com"
 type: ou-article
 draft: false
 meta_description: "An open-letter companion to The Body Keeps the Receipts, tracing how childhood peer violence, school non-response, an officer-watched assault, and institutional betrayal taught a harmed child to minimize what happened."

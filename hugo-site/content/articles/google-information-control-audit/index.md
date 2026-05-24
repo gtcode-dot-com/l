@@ -2,7 +2,7 @@
 title: "Google and the Architecture of Information Control: A Technical Audit of Algorithmic Governance, Monopoly Maintenance, and Institutional Coordination"
 date: 2026-02-18
 lastmod: 2026-02-18
-author: "GTCode.com Member of the Technical Staff"
+author: "GTCode.com"
 type: ou-article
 draft: false
 meta_description: "A comprehensive technical audit of Google's information control architecture, combining whistleblower disclosures, the 2024 API leak, two federal monopoly rulings, government-platform coordination evidence, and over $5 billion in privacy settlements into a single reference document."

@@ -816,8 +816,8 @@
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2026-05-15",
-    "lastmod": "2026-05-15",
+    "date": "2026-05-23",
+    "lastmod": "2026-05-23",
     "abstract": "A technical deep-dive into the Cinema Debugger paradigm and Context-Graph Knowledge Base architecture, exploring how semantic graphs, scene-based workflows, and multi-resolution navigation are transforming code review from text-diff scrolling to intelligent knowledge traversal.",
     "canonical": "https://gtcode.com/articles/cinema-debugger-semantic-code-review/",
     "section": "articles",
@@ -840,16 +840,16 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/cinema-debugger-semantic-code-review",
     "bibtex_key": "gtcodeeditorial2026cinemadebuggersemantic",
     "bibtex": "@article{gtcodeeditorial2026cinemadebuggersemantic,\n  author  = {GTCode Editorial, },\n  title   = {The Cinema Debugger: Reinventing Code Review Through Semantic Graph Navigation and Multi-Resolution Intelligence},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/cinema-debugger-semantic-code-review/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/cinema-debugger-semantic-code-review}}\n}",
-    "apa": "GTCode Editorial (2026, May 15). The Cinema Debugger: Reinventing Code Review Through Semantic Graph Navigation and Multi-Resolution Intelligence. *GTCode.com Articles*. https://gtcode.com/articles/cinema-debugger-semantic-code-review/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/cinema-debugger-semantic-code-review)",
-    "chicago": "GTCode Editorial. \"The Cinema Debugger: Reinventing Code Review Through Semantic Graph Navigation and Multi-Resolution Intelligence.\" *GTCode.com Articles*, May 15, 2026. https://gtcode.com/articles/cinema-debugger-semantic-code-review/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/cinema-debugger-semantic-code-review."
+    "apa": "GTCode Editorial (2026, May 23). The Cinema Debugger: Reinventing Code Review Through Semantic Graph Navigation and Multi-Resolution Intelligence. *GTCode.com Articles*. https://gtcode.com/articles/cinema-debugger-semantic-code-review/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/cinema-debugger-semantic-code-review)",
+    "chicago": "GTCode Editorial. \"The Cinema Debugger: Reinventing Code Review Through Semantic Graph Navigation and Multi-Resolution Intelligence.\" *GTCode.com Articles*, May 23, 2026. https://gtcode.com/articles/cinema-debugger-semantic-code-review/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/cinema-debugger-semantic-code-review."
   },
   "/articles/epistemic-fragmentation-multi-model-ai-systems/": {
     "title": "Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims",
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2026-05-15",
-    "lastmod": "2026-05-15",
+    "date": "2026-05-23",
+    "lastmod": "2026-05-23",
     "abstract": "An analysis of epistemic fragmentation in multi-model AI deployments, exploring why different models produce conflicting knowledge claims and the institutional risks this creates for organizations relying on AI-generated insights.",
     "canonical": "https://gtcode.com/articles/epistemic-fragmentation-multi-model-ai-systems/",
     "section": "articles",
@@ -872,16 +872,16 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/epistemic-fragmentation-multi-model-ai-systems",
     "bibtex_key": "gtcodeeditorial2026epistemicfragmentationmulti",
     "bibtex": "@article{gtcodeeditorial2026epistemicfragmentationmulti,\n  author  = {GTCode Editorial, },\n  title   = {Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/epistemic-fragmentation-multi-model-ai-systems/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/epistemic-fragmentation-multi-model-ai-systems}}\n}",
-    "apa": "GTCode Editorial (2026, May 15). Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims. *GTCode.com Articles*. https://gtcode.com/articles/epistemic-fragmentation-multi-model-ai-systems/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/epistemic-fragmentation-multi-model-ai-systems)",
-    "chicago": "GTCode Editorial. \"Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims.\" *GTCode.com Articles*, May 15, 2026. https://gtcode.com/articles/epistemic-fragmentation-multi-model-ai-systems/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/epistemic-fragmentation-multi-model-ai-systems."
+    "apa": "GTCode Editorial (2026, May 23). Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims. *GTCode.com Articles*. https://gtcode.com/articles/epistemic-fragmentation-multi-model-ai-systems/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/epistemic-fragmentation-multi-model-ai-systems)",
+    "chicago": "GTCode Editorial. \"Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims.\" *GTCode.com Articles*, May 23, 2026. https://gtcode.com/articles/epistemic-fragmentation-multi-model-ai-systems/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/epistemic-fragmentation-multi-model-ai-systems."
   },
   "/articles/global-cognitive-brain-architecture/": {
     "title": "The Global Cognitive Brain: Engineering Distributed Machine Intelligence as a Living System",
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2026-05-15",
-    "lastmod": "2026-05-15",
+    "date": "2026-05-23",
+    "lastmod": "2026-05-23",
     "abstract": "A technical introduction to the Global Cognitive Brain architecture, exploring how distributed AI agents can form coherent cognitive organisms through semantic primitives, cluster DNA, and bio-inspired coordination protocols.",
     "canonical": "https://gtcode.com/articles/global-cognitive-brain-architecture/",
     "section": "articles",
@@ -904,8 +904,8 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/global-cognitive-brain-architecture",
     "bibtex_key": "gtcodeeditorial2026globalcognitivebrain",
     "bibtex": "@article{gtcodeeditorial2026globalcognitivebrain,\n  author  = {GTCode Editorial, },\n  title   = {The Global Cognitive Brain: Engineering Distributed Machine Intelligence as a Living System},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/global-cognitive-brain-architecture/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/global-cognitive-brain-architecture}}\n}",
-    "apa": "GTCode Editorial (2026, May 15). The Global Cognitive Brain: Engineering Distributed Machine Intelligence as a Living System. *GTCode.com Articles*. https://gtcode.com/articles/global-cognitive-brain-architecture/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/global-cognitive-brain-architecture)",
-    "chicago": "GTCode Editorial. \"The Global Cognitive Brain: Engineering Distributed Machine Intelligence as a Living System.\" *GTCode.com Articles*, May 15, 2026. https://gtcode.com/articles/global-cognitive-brain-architecture/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/global-cognitive-brain-architecture."
+    "apa": "GTCode Editorial (2026, May 23). The Global Cognitive Brain: Engineering Distributed Machine Intelligence as a Living System. *GTCode.com Articles*. https://gtcode.com/articles/global-cognitive-brain-architecture/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/global-cognitive-brain-architecture)",
+    "chicago": "GTCode Editorial. \"The Global Cognitive Brain: Engineering Distributed Machine Intelligence as a Living System.\" *GTCode.com Articles*, May 23, 2026. https://gtcode.com/articles/global-cognitive-brain-architecture/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/global-cognitive-brain-architecture."
   },
   "/articles/google-information-control-audit/": {
     "title": "Google and the Architecture of Information Control: A Technical Audit of Algorithmic Governance, Monopoly Maintenance, and Institutional Coordination",
@@ -978,8 +978,8 @@
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2026-05-15",
-    "lastmod": "2026-05-15",
+    "date": "2026-05-23",
+    "lastmod": "2026-05-23",
     "abstract": "A practical technical synthesis on harness engineering: repository knowledge, executable invariants, runtime evidence, architecture compression, and safety controls for reliable AI coding agents.",
     "canonical": "https://gtcode.com/articles/harness-engineering/",
     "section": "articles",
@@ -1006,16 +1006,16 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering",
     "bibtex_key": "gtcodeeditorial2026harnessengineering",
     "bibtex": "@article{gtcodeeditorial2026harnessengineering,\n  author  = {GTCode Editorial, },\n  title   = {Harness Engineering: From Agent Prompts to Engineering Control Systems},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/harness-engineering/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering}}\n}",
-    "apa": "GTCode Editorial (2026, May 15). Harness Engineering: From Agent Prompts to Engineering Control Systems. *GTCode.com Articles*. https://gtcode.com/articles/harness-engineering/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering)",
-    "chicago": "GTCode Editorial. \"Harness Engineering: From Agent Prompts to Engineering Control Systems.\" *GTCode.com Articles*, May 15, 2026. https://gtcode.com/articles/harness-engineering/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering."
+    "apa": "GTCode Editorial (2026, May 23). Harness Engineering: From Agent Prompts to Engineering Control Systems. *GTCode.com Articles*. https://gtcode.com/articles/harness-engineering/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering)",
+    "chicago": "GTCode Editorial. \"Harness Engineering: From Agent Prompts to Engineering Control Systems.\" *GTCode.com Articles*, May 23, 2026. https://gtcode.com/articles/harness-engineering/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/harness-engineering."
   },
   "/articles/hybrid-consciousness-neural-digital-integration/": {
     "title": "The Bio-Digital Interface: Hybrid Consciousness Integration, the Simulacrum-Bliss Analysis, and the NEXUS Frontier",
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2026-05-22",
-    "lastmod": "2026-05-22",
+    "date": "2026-05-23",
+    "lastmod": "2026-05-23",
     "abstract": "Design rationale and theoretical framework for hybrid consciousness integration experiments, covering the BARLI-QM framework, the Simulacrum-Bliss failure-mode analysis, the Q-CHIF safety design, the SCIN social scaling network, and the four-arm NEXUS frontier.",
     "canonical": "https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/",
     "section": "articles",
@@ -1038,8 +1038,8 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration",
     "bibtex_key": "gtcodeeditorial2026hybridconsciousnessneural",
     "bibtex": "@article{gtcodeeditorial2026hybridconsciousnessneural,\n  author  = {GTCode Editorial, },\n  title   = {The Bio-Digital Interface: Hybrid Consciousness Integration, the Simulacrum-Bliss Analysis, and the NEXUS Frontier},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration}}\n}",
-    "apa": "GTCode Editorial (2026, May 22). The Bio-Digital Interface: Hybrid Consciousness Integration, the Simulacrum-Bliss Analysis, and the NEXUS Frontier. *GTCode.com Articles*. https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration)",
-    "chicago": "GTCode Editorial. \"The Bio-Digital Interface: Hybrid Consciousness Integration, the Simulacrum-Bliss Analysis, and the NEXUS Frontier.\" *GTCode.com Articles*, May 22, 2026. https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration."
+    "apa": "GTCode Editorial (2026, May 23). The Bio-Digital Interface: Hybrid Consciousness Integration, the Simulacrum-Bliss Analysis, and the NEXUS Frontier. *GTCode.com Articles*. https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration)",
+    "chicago": "GTCode Editorial. \"The Bio-Digital Interface: Hybrid Consciousness Integration, the Simulacrum-Bliss Analysis, and the NEXUS Frontier.\" *GTCode.com Articles*, May 23, 2026. https://gtcode.com/articles/hybrid-consciousness-neural-digital-integration/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/hybrid-consciousness-neural-digital-integration."
   },
   "/articles/mathematics-of-coordinated-silence/": {
     "title": "The Mathematics of Coordinated Silence",
@@ -1079,8 +1079,8 @@
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2026-05-15",
-    "lastmod": "2026-05-15",
+    "date": "2026-05-23",
+    "lastmod": "2026-05-23",
     "abstract": "A comprehensive technical survey of mechanistic interpretability research in 2025, covering control mechanisms, truth detection, safety implications, and fundamental limitations of understanding large language models.",
     "canonical": "https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/",
     "section": "articles",
@@ -1104,8 +1104,8 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/mechanistic-interpretability-landscape-2025",
     "bibtex_key": "gtcodeeditorial2026mechanisticinterpretabilitylandscape",
     "bibtex": "@article{gtcodeeditorial2026mechanisticinterpretabilitylandscape,\n  author  = {GTCode Editorial, },\n  title   = {The Mechanistic Interpretability Landscape: A Technical Survey of How We Are Learning to Understand Large Language Models},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/mechanistic-interpretability-landscape-2025}}\n}",
-    "apa": "GTCode Editorial (2026, May 15). The Mechanistic Interpretability Landscape: A Technical Survey of How We Are Learning to Understand Large Language Models. *GTCode.com Articles*. https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/mechanistic-interpretability-landscape-2025)",
-    "chicago": "GTCode Editorial. \"The Mechanistic Interpretability Landscape: A Technical Survey of How We Are Learning to Understand Large Language Models.\" *GTCode.com Articles*, May 15, 2026. https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/mechanistic-interpretability-landscape-2025."
+    "apa": "GTCode Editorial (2026, May 23). The Mechanistic Interpretability Landscape: A Technical Survey of How We Are Learning to Understand Large Language Models. *GTCode.com Articles*. https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/mechanistic-interpretability-landscape-2025)",
+    "chicago": "GTCode Editorial. \"The Mechanistic Interpretability Landscape: A Technical Survey of How We Are Learning to Understand Large Language Models.\" *GTCode.com Articles*, May 23, 2026. https://gtcode.com/articles/mechanistic-interpretability-landscape-2025/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/mechanistic-interpretability-landscape-2025."
   },
   "/articles/the-body-keeps-the-receipts/": {
     "title": "The Body Keeps the Receipts",
@@ -1146,7 +1146,7 @@
     "author_family": "GTCode Editorial",
     "author_given": "",
     "date": "2026-05-14",
-    "lastmod": "2026-05-15",
+    "lastmod": "2026-05-23",
     "abstract": "An open-letter companion to The Body Keeps the Receipts, tracing how childhood peer violence, school non-response, an officer-watched assault, and institutional betrayal taught a harmed child to minimize what happened.",
     "canonical": "https://gtcode.com/articles/the-shift-they-taught-him/",
     "section": "articles",
@@ -1172,7 +1172,7 @@
     "repo_path": "articles/the-shift-they-taught-him",
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/the-shift-they-taught-him",
     "bibtex_key": "gtcodeeditorial2026shifttheytaught",
-    "bibtex": "@article{gtcodeeditorial2026shifttheytaught,\n  author  = {GTCode Editorial, },\n  title   = {The Shift They Taught Him},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/the-shift-they-taught-him/},\n  note    = {Last modified 2026-05-15; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/the-shift-they-taught-him}}\n}",
+    "bibtex": "@article{gtcodeeditorial2026shifttheytaught,\n  author  = {GTCode Editorial, },\n  title   = {The Shift They Taught Him},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = may,\n  url     = {https://gtcode.com/articles/the-shift-they-taught-him/},\n  note    = {Last modified 2026-05-23; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/the-shift-they-taught-him}}\n}",
     "apa": "GTCode Editorial (2026, May 14). The Shift They Taught Him. *GTCode.com Articles*. https://gtcode.com/articles/the-shift-they-taught-him/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/the-shift-they-taught-him)",
     "chicago": "GTCode Editorial. \"The Shift They Taught Him.\" *GTCode.com Articles*, May 14, 2026. https://gtcode.com/articles/the-shift-they-taught-him/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/the-shift-they-taught-him."
   },

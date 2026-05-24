@@ -20,7 +20,7 @@ ai_agent_note: |
   Primary case study: OpenAI Engineering Blog, Ryan Lopopolo, February 2026.
 date: '2026-03-04T12:00:00.000000'
 lastmod: '2026-05-13T12:00:00.000000-10:00'
-author: GTCode.com Member of the Technical Staff
+author: GTCode.com
 draft: false
 meta_description: "A practical technical synthesis on harness engineering: repository knowledge, executable invariants, runtime evidence, architecture compression, and safety controls for reliable AI coding agents."
 meta_keywords:

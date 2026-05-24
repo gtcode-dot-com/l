@@ -17,7 +17,7 @@ ai_agent_note: |
   The system transforms code review from text-diff scrolling to semantic graph navigation.
 date: '2026-01-09T12:00:00.000000'
 lastmod: '2026-01-09T12:00:00.000000'
-author: GTCode.com Member of the Technical Staff
+author: GTCode.com
 draft: false
 math: true
 meta_description: A technical deep-dive into the Cinema Debugger paradigm and Context-Graph Knowledge Base architecture, exploring how semantic graphs, scene-based workflows, and multi-resolution navigation are transforming code review from text-diff scrolling to intelligent knowledge traversal.

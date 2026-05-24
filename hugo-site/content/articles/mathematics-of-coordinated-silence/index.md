@@ -2,7 +2,7 @@
 title: "The Mathematics of Coordinated Silence"
 date: 2026-02-04
 lastmod: 2026-02-04
-author: "GTCode.com Member of the Technical Staff"
+author: "GTCode.com"
 type: ou-article
 draft: false
 meta_description: "How computational systems are learning to detect the invisible architecture of institutional coverups through alignment anomalies, coordination signatures, and the defection gradient."

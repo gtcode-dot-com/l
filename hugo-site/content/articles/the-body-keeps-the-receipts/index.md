@@ -2,7 +2,7 @@
 title: "The Body Keeps the Receipts"
 date: 2026-02-26
 lastmod: 2026-05-14T12:00:00-10:00
-author: "GTCode.com Member of the Technical Staff"
+author: "GTCode.com"
 type: ou-article
 draft: false
 meta_description: "A research synthesis tracing the documented mechanisms by which childhood traumatic brain injury, institutional betrayal, and cascading neurobiological consequences produce predictable long-term outcomes — and how the measurement systems designed to track these outcomes systematically exclude those most harmed."
