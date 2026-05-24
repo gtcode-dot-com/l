@@ -3,7 +3,7 @@ title: "Physics-Informed Spatiotemporal Digests: WSTD, OMR-Gated RF Verification
 description: "A research design note proposing Physics-Informed Spatiotemporal Digests, combining a windowed state-and-transition digest with optional OMR-gated RF verification."
 date: 2026-04-01
 draft: false
-author: "GTCode.com Member of the Technical Staff"
+author: "GTCode.com"
 tags:
   - media provenance
   - spatiotemporal digests
