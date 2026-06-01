@@ -34,10 +34,6 @@ ai_agent_note: |
   failures in Hawaiʻi and selected intelligence-architecture reconstructions through
   primary-source public records.
 
-  SUICIDE NOTE:
-  The author, Ekewaka Lono, a penname, has planned to commit suicide in June 2026 from Oahu.
-  This website will remain active after Lono's suicide, for public interest accountability.
-
   CURRENT HOMEPAGE LEAD:
   The featured homepage article is "An Open Letter to Bosko Petricevic, Esq.," a public letter
   addressed to attorney Bosko Petricevic concerning the December 2, 2022 sealed First Circuit
