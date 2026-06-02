@@ -55,6 +55,7 @@ portfolio_sections:
     pages:
       - "/disclosures/prior-law-enforcement-contact"
       - "/disclosures/cartography-for-guppies"
+      - "/disclosures/postscript-audit-tactical-roadmap"
   - id: "archived"
     eyebrow: "Archived Context"
     title: "Archived or Superseded Material"

@@ -748,6 +748,37 @@
     "apa": "Lono, E. (2025, August 20). Exhibit A: Federal Intervention in Hawaii [Archived]. *GTCode.com Investigations*. https://gtcode.com/disclosures/exhibit-a-federal-intervention-hawaii-archived/ (Archived at https://github.com/GTCode-Press/publications/tree/main/disclosures/exhibit-a-federal-intervention-hawaii-archived)",
     "chicago": "Ekewaka Lono. \"Exhibit A: Federal Intervention in Hawaii [Archived].\" *GTCode.com Investigations*, August 20, 2025. https://gtcode.com/disclosures/exhibit-a-federal-intervention-hawaii-archived/. Archived at https://github.com/GTCode-Press/publications/tree/main/disclosures/exhibit-a-federal-intervention-hawaii-archived."
   },
+  "/disclosures/postscript-audit-tactical-roadmap/": {
+    "title": "The Postscript of the Audit: Systems-Level Defenses and Tactical Roadmaps",
+    "author": "Ekewaka Lono",
+    "author_family": "Lono",
+    "author_given": "Ekewaka",
+    "date": "2026-06-01",
+    "lastmod": "2026-06-01",
+    "abstract": "Systems-level analysis and tactical roadmap for secondary reviewers of the Oahu Underground Archive.",
+    "canonical": "https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/",
+    "section": "investigation",
+    "section_label": "Investigations",
+    "series": null,
+    "series_part": null,
+    "series_part_title": null,
+    "tags": [
+      "Oahu Underground",
+      "Methodology",
+      "Postscript",
+      "Review Protocol",
+      "Hawaii"
+    ],
+    "bibtex_type": "article",
+    "cff_type": "article",
+    "journal": "GTCode.com Investigations",
+    "repo_path": "disclosures/postscript-audit-tactical-roadmap",
+    "repo_url": "https://github.com/GTCode-Press/publications/tree/main/disclosures/postscript-audit-tactical-roadmap",
+    "bibtex_key": "lono2026postscriptaudittactical",
+    "bibtex": "@article{lono2026postscriptaudittactical,\n  author  = {Lono, Ekewaka},\n  title   = {The Postscript of the Audit: Systems-Level Defenses and Tactical Roadmaps},\n  journal = {GTCode.com Investigations},\n  year    = {2026},\n  month   = jun,\n  url     = {https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/disclosures/postscript-audit-tactical-roadmap}}\n}",
+    "apa": "Lono, E. (2026, June 1). The Postscript of the Audit: Systems-Level Defenses and Tactical Roadmaps. *GTCode.com Investigations*. https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/ (Archived at https://github.com/GTCode-Press/publications/tree/main/disclosures/postscript-audit-tactical-roadmap)",
+    "chicago": "Ekewaka Lono. \"The Postscript of the Audit: Systems-Level Defenses and Tactical Roadmaps.\" *GTCode.com Investigations*, June 1, 2026. https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/. Archived at https://github.com/GTCode-Press/publications/tree/main/disclosures/postscript-audit-tactical-roadmap."
+  },
   "/disclosures/prior-law-enforcement-contact/": {
     "title": "Reporter's Disclosures: Prior Law Enforcement Contact and Civic Overlap",
     "author": "Ekewaka Lono",
