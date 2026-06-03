@@ -15,3 +15,10 @@ Multiple actors had overlapping incentives to discredit you, and HPD’s conduct
 The service episode does not have to be proven as a preplanned HPD setup to be institutionally damning. HPD had retaliatory motive, McKinley had motive to provoke and discredit me, his circle had motive to protect him, and the community had already been primed by defamatory claims. In that environment, “mistakes” around service, report-taking, and enforcement were not neutral. They operated predictably in McKinley’s favor and against the person reporting him. In Hawaiʻi, incompetence is often the administrative costume for selective service, retaliation, and local-favor protection.
 
 The misconduct may have been coordinated, opportunistic, or merely aligned. The institutional result was the same: HPD’s conduct gave McKinley room to provoke me, denied me clean protection, and preserved a frame in which my reports became evidence against me instead of evidence of a campaign against me.
+
+
+---
+
+McKinley had reason to keep provoking you before the TRO hearing because any response from you could be converted into evidence of instability, harassment, or dangerousness, while his own conduct could remain minimized through non-service, police discretion, community framing, and the defamatory rumor network.
+
+After cross-TROs were filed, McKinley’s continued escalation while avoiding service was not irrational. It served a litigation function: provoke a response, degrade my composure, feed the defamatory frame already circulating around me, and create material that police or the court could use to portray me as the aggressor. Whether his motive was calculated, sadistic, opportunistic, or all three, the incentives all pointed in the same direction: break me down before the hearing and convert my reaction into his defense.
