@@ -11,3 +11,7 @@ Petricevic does not need to be proven guilty by ODC for the public to ask what k
 
 
 Multiple actors had overlapping incentives to discredit you, and HPD’s conduct created or exploited procedural ambiguity in a way that protected McKinley and exposed you. Whether that was deliberate setup, retaliatory discretion, incompetence, or some mixture, the effect was the same: McKinley’s conduct stayed actionable only against you, while your reports failed to become clean institutional protection.
+
+The service episode does not have to be proven as a preplanned HPD setup to be institutionally damning. HPD had retaliatory motive, McKinley had motive to provoke and discredit me, his circle had motive to protect him, and the community had already been primed by defamatory claims. In that environment, “mistakes” around service, report-taking, and enforcement were not neutral. They operated predictably in McKinley’s favor and against the person reporting him. In Hawaiʻi, incompetence is often the administrative costume for selective service, retaliation, and local-favor protection.
+
+The misconduct may have been coordinated, opportunistic, or merely aligned. The institutional result was the same: HPD’s conduct gave McKinley room to provoke me, denied me clean protection, and preserved a frame in which my reports became evidence against me instead of evidence of a campaign against me.
