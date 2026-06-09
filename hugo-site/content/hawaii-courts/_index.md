@@ -4,7 +4,7 @@ title: "Hawaii Courts Accountability Files"
 seo_title: "Hawaii Courts Accountability Files | Oahu Underground"
 description: "A public-interest records audit of Hawaii court oversight, judicial conduct review, 18 U.S.C. Section 242 issues, and institutional response gaps."
 date: 2026-05-14
-lastmod: 2026-05-14
+lastmod: 2026-06-08
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/hawaii-courts/"
@@ -60,8 +60,11 @@ structured_data_graph:
   name: "Hawaii Courts Accountability Files"
   description: "A public-interest records audit of Hawaii court oversight, judicial conduct review, 18 U.S.C. Section 242 issues, and institutional response gaps."
   inLanguage: "en"
-  dateModified: "2026-05-14T00:00:00Z"
+  dateModified: "2026-06-08T00:00:00Z"
   hasPart:
+    - "@type": "Article"
+      name: "The Silent Conspiracy"
+      url: "https://gtcode.com/hawaii-courts/silent-conspiracy-rule-83-mens-rea/"
     - "@type": "Article"
       name: "An Open Letter to Bosko Petricevic, Esq."
       url: "https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/"
@@ -97,6 +100,7 @@ portfolio_sections:
       - "/hawaii-courts/two-questions-wilson-loo"
       - "/hawaii-courts/wilson-loo-judicial-signaling"
       - "/hawaii-courts/lawyer-in-the-room-bosko-petricevic"
+      - "/hawaii-courts/silent-conspiracy-rule-83-mens-rea"
   - id: "oversight-failure"
     eyebrow: "Oversight Failure"
     title: "Judicial Discipline and Self-Investigation"
