@@ -159,7 +159,7 @@ This article is based on my firsthand account of the December 2, 2022 courtroom 
 
 | Category | What belongs in it |
 | --- | --- |
-| Firsthand visual claim | I witnessed Loo look toward the witness and nod "no." I saw the nose-scrunching expression. I saw the witness looking toward Loo. I saw Petricevic looking toward Loo during the sequence. |
+| Firsthand visual claim | I witnessed Loo look toward the witness and nod "no." I saw the nose-scrunching expression, and I perceived its register as casual: a relaxed, lip-pursing "no" that conveyed social alignment and prior orientation toward the witness rather than detached judicial evaluation. I saw the witness looking toward Loo. I saw Petricevic looking toward Loo during the sequence. |
 | Audio-confirmable claim | The question, the answer, my attempted "Let the record show..." statement, the cutoff, the accusation/objection sequence, the sealing request, and any audible courtroom exchange. |
 | Sealed-record-dependent claim | The text-message exhibit concerning acid, the sealed audio, the precise courtroom sequence as preserved in the court file, and any materials closed from ordinary public inspection. |
 | Legal inference | Whether the gesture was witness cueing, whether Petricevic understood it, whether HRPC 8.3(b) was triggered, whether Rule 1.6 was misapplied as a silence rationale, and whether 18 U.S.C. Section 242 mens rea could be proven. |
@@ -174,7 +174,7 @@ I asked the redacted witness a question about the redacted witness's alleged pri
 
 That is why the timing matters. A no-nod before an ordinary question creates one kind of problem. A no-nod before a binary, exposure-generating question tied to a court-file exhibit creates a different problem.
 
-Before the witness answered, I witnessed Loo look toward the witness and nod "no." I saw the nose-scrunching expression. I saw the witness looking toward Loo. I saw Petricevic looking toward Loo during the sequence. Petricevic was counsel for the opposing party, the lawyer for the witness whose answer is preserved in the sealed audio.
+Before the witness answered, I witnessed Loo look toward the witness and nod "no." I saw the nose-scrunching expression. The expression's register matters. It looked casual to me: a lip-pursing "no" of the kind that communicates social alignment between people who already understand each other's position. The signal read as closer to *we're in agreement* than to detached judicial reaction. I saw the witness looking toward Loo. I saw Petricevic looking toward Loo during the sequence. Petricevic was counsel for the opposing party, the lawyer for the witness whose answer is preserved in the sealed audio.
 
 The witness denied.
 
@@ -222,7 +222,11 @@ That is the binary exposure event. The LSD question belonged at the center of th
 
 Loo's alleged mental state has to be analyzed in layers. My perception is direct: I saw an unambiguous "no" nod with a nose-scrunching expression toward the witness before the denial. Legal institutions would need more than my perception to prove intent. They would need to decide what inference follows from timing, line of sight, courtroom layout, the question, the exhibit, the answer, my immediate attempt to make a record, the cutoff, and the sealing sequence.
 
-The LSD question changes that analysis because it supplied the semantic content of the gesture. I asked the question slowly and deliberately, using the full term lysergic acid diethylamide, and the account here is that Loo turned from me toward the witness before nodding "no." The alleged no-nod mapped onto a specific answer: no, I did not furnish LSD. That mapping is why the act matters to mens rea. The strongest innocent reading contests communicative intent; it does not require treating the visual observation itself as generic or meaningless.
+The LSD question changes that analysis because it supplied the semantic content of the gesture. I asked the question slowly and deliberately, using the full term lysergic acid diethylamide, and the account here is that Loo turned from me toward the witness before nodding "no." The alleged no-nod mapped onto a specific answer: no, I did not furnish LSD. That mapping is why the act matters to mens rea.
+
+The facial expression mattered too. It added affective content. I perceived it as casual social alignment: a look that conveyed, in context, something closer to *not you*. The expression appeared to treat the witness as known or trusted and gave the negative answer a relational quality. That distinction matters because the alleged no-nod carried more than negative head movement. It was, as I perceived it, a socially loaded negative signal attached to a binary exposure question. It conveyed the intended answer before the witness gave it.
+
+The strongest innocent reading contests communicative intent; it does not require treating the visual observation itself as generic or meaningless.
 
 Several mens rea categories still have to be sorted, but the weaker labels collapse against timing, target, and semantic content.
 
@@ -230,7 +234,7 @@ The first is innocent movement: a head motion, facial expression, or physical re
 
 The second is courtroom management. That category can explain a ruling, interruption, admonishment, relevance decision, or instruction directed at me. It has little force as an explanation for turning toward the witness and making a no-gesture before a binary exposure answer.
 
-The third is disbelief or body language. That label might describe a facial expression in isolation. Paired with a directed no-nod toward the witness before the answer, it becomes a weak mens rea defense rather than a serious account of the whole sequence.
+The third is disbelief or body language. That label might describe a facial expression in isolation. The expression observed here fits the disbelief register poorly even in isolation. A disbelief reaction evaluates the claim in front of the judge. My perception was relational: a casual lip-pursing "no" of the kind that communicates social alignment and prior agreement rather than skeptical reaction. It looked like a settled orientation toward the witness: casual, familiar, and pre-assessed. A sharp disbelief shake falls within the innocent body-language spectrum. A relaxed, socially aligned signal to a witness facing a binary exposure question falls outside that spectrum.
 
 The fourth is communicative signal: a judge using nonverbal conduct to tell a sworn witness how to answer a material question.
 
@@ -469,7 +473,11 @@ Those records would clarify the dispute without requiring the public to accept m
 
 A fair analysis has to state the best version of the other side. The strongest version does not require reducing my perception of the room to generic confusion. I saw what I saw. The strongest innocent reading focuses on intent and institutional caution.
 
-As to intent, the most favorable account available to Loo is generic courtroom reaction: a claim that the movement carried no communicative purpose and that the witness was expected to answer independently. That reading has little force against the sequence described here: I asked a deliberate yes/no exposure question, Loo turned toward the witness, the witness was looking toward Loo, and Loo gave a no-nod before the denial. As to caution, a lawyer might sincerely raise Rule 1.6, but that concern only matters if a report would reveal separate protected client information beyond the judge's visible courtroom act. A lawyer who reports a sitting judge on a contested allegation also risks his client's interests, his standing before the local bench, and a sanction for a frivolous or weaponized complaint. The limited scope of Rule 8.3(b) exists precisely to prevent every adverse gesture from becoming a discipline file. None of that should be waved away.
+As to intent, the most favorable account available to Loo is generic courtroom reaction: a claim that the movement carried no communicative purpose and that the witness was expected to answer independently. That reading has little force against the sequence described here: I asked a deliberate yes/no exposure question, Loo turned toward the witness, the witness was looking toward Loo, and Loo gave a no-nod before the denial.
+
+The strongest innocent reading also has to account for the quality of the expression. My account describes a casual, familiar, socially aligned expression: a *not you* look, rather than a detached adjudicative reaction. That quality alone proves no corrupt intent. It changes the burden on the innocent account. The question becomes why, during a binary exposure question, the judge turned toward the witness and gave a casual negative signal before the witness denied. A casual, socially aligned expression before a binary exposure answer changes the innocent reading's burden without requiring the allegation to be proved.
+
+As to caution, a lawyer might sincerely raise Rule 1.6, but that concern only matters if a report would reveal separate protected client information beyond the judge's visible courtroom act. A lawyer who reports a sitting judge on a contested allegation also risks his client's interests, his standing before the local bench, and a sanction for a frivolous or weaponized complaint. The limited scope of Rule 8.3(b) exists precisely to prevent every adverse gesture from becoming a discipline file. None of that should be waved away.
 
 But the innocent reading leaves the problem intact and locates it. It explains why a single actor, looking only at his own incentives, might decline to act. It leaves unexplained why every record capable of testing the competing accounts is unavailable. Genuine doubt about a judge's intent points toward examining the evidence rather than sealing it. A judge whose gesture was innocent loses nothing from an unsealed recording and a reconstructed courtroom. The innocent reading and the accountability demand converge on the same remedy: produce the audio, reconstruct the room, and ask the people who were in it under oath. The equilibrium is troubling even without proving bad faith by every actor, because an open record is the one outcome the process design forecloses and the one outcome that could vindicate any of them.
 
