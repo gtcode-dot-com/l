@@ -268,6 +268,8 @@ Line of sight matters because this was a visual event, and on this point my acco
 
 Petricevic's status as trained counsel matters because Rule 8.3(b) relies on lawyers to recognize serious professional misconduct. A pro se litigant may recognize unfairness in real time and still lack the procedural language, institutional leverage, or reporting knowledge to convert the event into reviewable fact. A lawyer knows the difference between a bad ruling and judicial interference with testimony. A lawyer knows the professional rules, or is charged with knowing them. A lawyer knows that an audio-only record requires visual events to be stated aloud.
 
+The pro se posture also removed professional redundancy. A represented party would have had his own lawyer in the room: another trained observer, another person able to say "Let the record show...," another professional capable of requesting a sidebar, preserving the issue, seeking unsealing, performing a Rule 8.3(b) analysis, or reporting the event. In this courtroom, the only trained lawyer positioned to convert the event into professional process represented the party whose answer benefited from the alleged signal. Pro se status did more than weaken my procedural footing; it left the reporting system dependent on the adversarial beneficiary.
+
 His client-benefit posture matters because it is the design defect. Rule 8.3(b) treats the observing lawyer as a professional officer of the court. The adversary system treats him as the advocate for a client whose position benefited from the alleged misconduct. Those roles collide when the misconduct is favorable to the client and harmful to the opposing pro se party.
 
 That is the lawyer-as-only-trained-witness problem. A neutral lawyer who sees a judge signal a witness in an unrelated case can report without tactical damage to a client. An adversarial lawyer whose client benefits from the signal faces a different payoff structure. Reporting can undermine the client's win, expose the client's testimony, create conflict with the client, anger the judge or local bench, and invite professional friction. Silence preserves the result and can be explained through the rule's own thresholds.
@@ -350,7 +352,7 @@ That is a design failure. A simpler explanation is enough: a rule designed to pr
 
 ## What a Rule Without This Defect Would Require
 
-This section diagnoses the rule defect and leaves remedy design to rulemakers. The defect comes into focus when you describe what a rule without it would have to contain.
+This section diagnoses a failure mode; rulemakers would still have to write precise text. Any repair has to answer three predictable objections. Judges need room to manage courtrooms without turning every facial expression into a discipline file. An objective trigger can sweep too broadly if it treats ambiguous movement as reportable misconduct. A preservation duty can become a tactical weapon if lawyers use it to brand ordinary rulings as ethics events.
 
 It would replace "knows" with "has reasonable grounds to believe," converting a self-assessed certainty standard into an objective inference standard that maintained ambiguity cannot defeat. The objective gloss in *Riehlmann* already points this way; the Hawaii text does not yet compel it.[^riehlmann]
 
@@ -359,6 +361,8 @@ It would enumerate categories of judicial conduct—nonverbal communication with
 It would state plainly that a judge's conduct in open, adversarial proceedings, observed by all parties, falls outside client-confidential treatment under Rule 1.6 merely because a lawyer happened to witness it while representing a client.
 
 And it would impose an affirmative preservation duty: a lawyer who observes potential judicial misconduct during a proceeding should make and keep a contemporaneous note, whether or not the reporting duty is ultimately triggered—so that the question of what the lawyer saw cannot later be dissolved by the passage of time and the sealing of the record.
+
+Those objections are real, and they point toward guardrails. The category should turn on materiality, witness-facing conduct, timing during a pending answer, line of sight, and contemporaneous preservation facts. A calendar-call grimace, a ruling from the bench, or ordinary courtroom friction with counsel stays outside the category. A judge turning toward a witness and giving a no-nod before a binary exposure answer belongs in a different class. Reports can be confidential, limited to observed courtroom conduct, routed to an appropriate authority, and screened for bad faith. Contemporaneous preservation can record uncertainty as uncertainty. The answer to weaponization risk is disciplined intake, confidentiality, and sanctions for bad-faith use.
 
 The current rule contains none of these features. The silent conspiracy lives in their absence.
 
