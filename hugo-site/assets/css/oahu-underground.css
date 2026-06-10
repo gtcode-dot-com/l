@@ -2501,14 +2501,27 @@ body.nav-open .site-nav-overlay {
   color: var(--ou-text);
 }
 
-.ou-article-content ul,
-.ou-article-content ol {
+.ou-article-content ul {
   margin: 0 0 1.25rem;
   padding-left: 1.5rem;
 }
 
+.ou-article-content ol {
+  margin: 0 0 1.25rem;
+  padding-left: 2.25rem;
+  list-style-position: outside;
+}
+
 .ou-article-content li {
   margin-bottom: 0.5rem;
+}
+
+.ou-article-content ol > li {
+  padding-left: 0.1rem;
+}
+
+.ou-article-content ol > li::marker {
+  font-variant-numeric: tabular-nums;
 }
 
 .ou-article-content hr {
