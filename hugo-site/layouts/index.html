@@ -20,14 +20,14 @@
 {{- $investigationsByUpdated := sort $investigationPages "Params.lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
 
-{{- $lead := .Site.GetPage "/hawaii-courts/open-letter-bosko-petricevic" -}}
+{{- $lead := .Site.GetPage "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea" -}}
 {{- if and (not $lead) (gt $investigationCount 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
 {{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
 {{- $zoneOfPoliteness := .Site.GetPage "/hawaii-courts/coverage-gap-media-noncoverage" -}}
-{{- $heroHeadline := .Params.hero_headline | default "An Open Letter to Bosko Petricevic, Esq." -}}
-{{- $homeHeroImage := .Params.hero_image | default "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png" -}}
+{{- $heroHeadline := .Params.hero_headline | default "The Silent Conspiracy" -}}
+{{- $homeHeroImage := .Params.hero_image | default "/img/ou-silent-conspiracy-hero-1600.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
   {{- $heroParsed := urls.Parse $homeHeroImage -}}
   {{- with $heroParsed.Path -}}
@@ -243,11 +243,11 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/open-letter-bosko-petricevic/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Open Letter" }}</a></p>
+          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Legal Analysis" }}</a></p>
           <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
-          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "How one FBI interview could close the Wilson Loo federal case" }}</p>
+          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "HRPC 8.3(b), mens rea, sealed-record dependency, and a reported First Circuit courtroom sequence" }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/open-letter-bosko-petricevic/" }}">{{ .Params.hero_primary_cta_label | default "Read the Letter" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}">{{ .Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
             <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/hawaii-courts/" }}">{{ .Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>

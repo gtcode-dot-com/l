@@ -1,7 +1,7 @@
 ---
 draft: false
 weight: 20
-homepage_exclude: true
+homepage_exclude: false
 title: "The Silent Conspiracy"
 seo_title: "The Silent Conspiracy: HRPC 8.3(b), Mens Rea, and Sealed-Record Dependency"
 subtitle: "HRPC 8.3(b), Mens Rea, and Sealed-Record Dependency"
