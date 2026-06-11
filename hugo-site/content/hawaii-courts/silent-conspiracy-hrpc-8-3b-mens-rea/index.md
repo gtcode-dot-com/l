@@ -341,7 +341,7 @@ Gate two is a violation of applicable judicial-conduct rules. The Hawaii Revised
 
 Gate three is a substantial question as to fitness. The HRPC comment makes seriousness of the possible offense the key point, ahead of evidence quantity.[^hrpc83] That point cuts in favor of reporting when the alleged conduct is severe. A judge signaling a witness about a sworn answer is serious by category. Yet the same comment also explains why the rule is limited: mandatory reporting of every violation would be unenforceable, so the rule requires judgment. That professional judgment gives the conflicted lawyer room to say the event was too ambiguous or insufficiently fitness-level.
 
-Rule 1.6 allows a report limited to the judge's visible open-court conduct unless the report would disclose separate protected client information. The reportable object is judicial conduct: I observed the judge turn toward a witness and nonverbally signal "no" before the witness answered. That statement reports the judge's conduct rather than client-confidential information.
+Rule 1.6 does not bar a report limited to the judge's visible open-court conduct unless the report would disclose separate protected client information. The reportable object is judicial conduct: I observed the judge turn toward a witness and nonverbally signal "no" before the witness answered. That statement reports the judge's conduct rather than client-confidential information.
 
 Rule 1.6 becomes an overbroad excuse when a lawyer uses it to avoid reporting without identifying any separate protected client information actually disclosed by the report. Petricevic's issue is knowledge: what he saw, heard, understood, and whether that understanding triggered HRPC 8.3(b).
 
@@ -405,7 +405,7 @@ As a reform, a repaired rule would create a rebuttable serious-conduct category 
 
 It would define judge-to-witness nonverbal communication during a pending material answer as presumptively serious when materiality, witness-facing conduct, timing, line of sight, and contemporaneous preservation support the claim.
 
-It would treat confidentiality as implicated only where a report would disclose separate protected client information. A report limited to visible conduct by the judge in open court would stay outside that concern.
+It would treat confidentiality as implicated only where a report would disclose separate protected client information. Rule 1.6 would not bar a report limited to visible conduct by the judge in open court unless that report disclosed separate protected client information.
 
 And it would impose an affirmative preservation duty: a lawyer who observes potential judicial misconduct during a proceeding should make and keep a contemporaneous note, regardless of whether the reporting duty is ultimately triggered—so that the question of what the lawyer saw cannot later be dissolved by the passage of time and the sealing of the record.
 
@@ -413,7 +413,7 @@ A contemporaneous-preservation duty would do more than preserve access. It would
 
 Those objections are real, and they point toward guardrails. The category should turn on materiality, witness-facing conduct, timing during a pending answer, line of sight, and contemporaneous preservation facts. A calendar-call grimace, a ruling from the bench, or ordinary courtroom friction with counsel stays outside the category. A judge turning toward a witness and giving a no-nod before the pending answer belongs in a different class. Reports can be confidential, limited to observed courtroom conduct, routed to an appropriate authority, and screened for bad faith. Contemporaneous preservation can record uncertainty as uncertainty. The answer to weaponization risk is disciplined intake, confidentiality, and sanctions for bad-faith use.
 
-The current rule contains none of these features. That is where the silent conspiracy forms.
+HRPC 8.3(b) itself contains none of these features. That is where the silent conspiracy forms.
 
 ## The Silent Conspiracy
 
@@ -433,7 +433,7 @@ The shared event generates shared incentives to deny shared knowledge.
 
 No one needs to coordinate. Loo has no reason to clarify communicative intent. The witness has no reason to reopen the answer. Petricevic has no reason to convert a client-beneficial ambiguity into a professional report. The court file has no video. The disciplinary bodies can demand proof. The public cannot inspect the sealed audio. Time moves forward.
 
-That equilibrium is stronger than a clumsy cover story because it can be maintained through ordinary institutional language. Ambiguous gesture. Insufficient knowledge. No substantial fitness question. Overbroad confidentiality rationale. Sealed record. No jurisdiction. No public finding.
+This structure is stronger than a clumsy cover story because it can be maintained through ordinary institutional language. Ambiguous gesture. Insufficient knowledge. No substantial fitness question. Overbroad confidentiality rationale. Sealed record. No jurisdiction. No public finding.
 
 Each phrase may be defensible in isolation. Combined, they create the accountability failure.
 
@@ -495,7 +495,7 @@ The authority map supports a limited proposition: courts and ethics rules alread
 
 | Authority | Use in this article |
 | --- | --- |
-| HRPC 8.3(b) and comments | Mandatory reporting of known judicial misconduct raising a substantial question as to fitness; "substantial" concerns seriousness over evidence quantity; Rule 1.6 allows a report limited to the judge's visible open-court conduct unless separate protected client information would be disclosed.[^hrpc83] |
+| HRPC 8.3(b) and comments | Mandatory reporting of known judicial misconduct raising a substantial question as to fitness; "substantial" concerns seriousness over evidence quantity; Rule 1.6 does not bar a report limited to the judge's visible open-court conduct unless separate protected client information would be disclosed.[^hrpc83] |
 | HRPC 1.6 | Confidentiality covers protected information relating to representation; in this fact pattern, it enters only if a report would disclose separate protected client information rather than the judge's visible conduct.[^hrpc16] |
 | HRPC 1.0(f) | Actual knowledge may be inferred from circumstances; the article avoids treating that as a pure negligence or constructive-knowledge standard.[^hrpc10] |
 | HRPC 8.4(a), 8.4(c), and 8.4(f) | Hawaii-specific post-event lawyer-conduct hooks: knowingly assisting or inducing another rules violation, dishonesty/fraud/deceit/misrepresentation, and knowingly assisting a judge or judicial officer in conduct violating judicial-conduct rules or other law. HRPC 8.4(d) is reserved.[^hrpc84] |
@@ -557,7 +557,7 @@ The strongest innocent reading also has to account for the quality of the expres
 
 As to caution, a lawyer who reports a sitting judge on a contested allegation risks his client's interests, his standing before the local bench, and a sanction for a frivolous or weaponized complaint. The limited scope of Rule 8.3(b) exists precisely to prevent every adverse gesture from becoming a discipline file. Rule 1.6 would matter only if the report disclosed separate protected client information. None of that should be waved away.
 
-But the innocent reading leaves the problem intact and locates it. It explains why a single actor, looking only at his own incentives, might decline to act. It leaves unexplained why every record capable of testing the competing accounts is unavailable. Genuine doubt about a judge's intent points toward examining the evidence rather than sealing it. Independent review of the sealed audio and courtroom sequence would strengthen an innocent explanation. The innocent reading and the accountability demand converge on the same remedy: produce the audio, reconstruct the room, and ask the people who were in it under oath. The equilibrium is troubling even without proving bad faith by every actor, because an open record is the one outcome the process design forecloses and the one outcome that could vindicate any of them.
+But the innocent reading leaves the problem intact and locates it. It explains why a single actor, looking only at his own incentives, might decline to act. It leaves unexplained why every record capable of testing the competing accounts is unavailable. Genuine doubt about a judge's intent points toward examining the evidence rather than sealing it. Independent review of the sealed audio and courtroom sequence would strengthen an innocent explanation. The innocent reading and the accountability demand converge on the same remedy: produce the audio, reconstruct the room, and ask the people who were in it under oath. The pattern is troubling even without proving bad faith by every actor, because an open record is the one outcome the process design forecloses and the one outcome that could vindicate any of them.
 
 ## The Professional Duty to Convert Ambiguity
 
@@ -575,7 +575,7 @@ The rule says "shall." The equilibrium says preserve ambiguity. The sealed audio
 
 [^mass-snitch]: Massachusetts Board of Bar Overseers / Office of Bar Counsel, Nancy Kaufman, [Reporting Professional Misconduct](https://bbopublic.blob.core.windows.net/web/f/misconduct.pdf) (Sept. 2004), stating that Rule 8.3 is sometimes called the “snitch” rule and contrasting that attitude with a professional “code of silence.” ([archival copy](/sources/silent-conspiracy-rule-83-mens-rea/MassBBO_Reporting_Professional_Misconduct.pdf))
 
-[^hrpc16]: Hawaii State Judiciary, [Hawaii Rules of Professional Conduct](https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrpcond_ada.htm), Rule 1.6 and comments. The operative language of HRPC 1.6 applicable on December 2, 2022 appears materially unchanged in the cited current Judiciary text; the cited 2022 amendment index does not identify a relevant intervening amendment to Rule 1.6. The rule governs confidential information relating to representation and its exceptions; this article treats Rule 1.6 as allowing a report limited to the judge's visible open-court conduct unless separate protected client information would be disclosed. ([archival copy — current html](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_2024.html)) ([archival copy — integrated PDF](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_docs_rules_pdf.pdf)) ([archival copy — 2022 amendment index](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_Court_Rules_Orders_of_Amendment_2022.html))
+[^hrpc16]: Hawaii State Judiciary, [Hawaii Rules of Professional Conduct](https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrpcond_ada.htm), Rule 1.6 and comments. The operative language of HRPC 1.6 applicable on December 2, 2022 appears materially unchanged in the cited current Judiciary text; the cited 2022 amendment index does not identify a relevant intervening amendment to Rule 1.6. The rule governs confidential information relating to representation and its exceptions; this article treats Rule 1.6 as not barring a report limited to the judge's visible open-court conduct unless separate protected client information would be disclosed. ([archival copy — current html](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_2024.html)) ([archival copy — integrated PDF](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_docs_rules_pdf.pdf)) ([archival copy — 2022 amendment index](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_Court_Rules_Orders_of_Amendment_2022.html))
 
 [^hrpc10]: Hawaii State Judiciary, [Hawaii Rules of Professional Conduct](https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrpcond_ada.htm), Rule 1.0(f). The operative language of HRPC 1.0(f) applicable on December 2, 2022 appears materially unchanged in the cited current Judiciary text; the cited 2022 amendment index does not identify a relevant intervening amendment to Rule 1.0. The rule defines knowledge in the professional-conduct rules as actual knowledge, which may be inferred from circumstances. ([archival copy — current html](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_2024.html)) ([archival copy — integrated PDF](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_docs_rules_pdf.pdf)) ([archival copy — 2022 amendment index](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_Court_Rules_Orders_of_Amendment_2022.html))
 
