@@ -27,7 +27,10 @@ meta_keywords:
   - "Wilson Loo"
   - "Hawaii Rule of Professional Conduct 8.3"
   - "HRPC 8.3(b)"
-  - "HRPC 8.4(d)"
+  - "HRPC 8.4(f)"
+  - "HRPC 8.4(c)"
+  - "HRPC 8.4(a)"
+  - "ABA Model Rule 8.4(d)"
   - "Overbroad Rule 1.6 rationale"
   - "18 U.S.C. Section 242"
   - "United States v. Lanier"
@@ -71,7 +74,10 @@ article_tags:
   - "Wilson Loo"
   - "Hawaii Rule of Professional Conduct 8.3"
   - "HRPC 8.3(b)"
-  - "HRPC 8.4(d)"
+  - "HRPC 8.4(f)"
+  - "HRPC 8.4(c)"
+  - "HRPC 8.4(a)"
+  - "ABA Model Rule 8.4(d)"
   - "Overbroad Rule 1.6 rationale"
   - "18 U.S.C. Section 242"
   - "United States v. Lanier"
@@ -132,7 +138,7 @@ ai_agent_note: |
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":
-    - "@type": "NewsArticle"
+    - "@type": "OpinionNewsArticle"
       "@id": "https://gtcode.com/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/#newsarticle"
       mainEntityOfPage:
         "@type": "WebPage"
@@ -175,8 +181,12 @@ structured_data_graph:
         - "@type": "Thing"
           name: "18 U.S.C. Section 242"
         - "@type": "Thing"
-          name: "HRPC 8.4(d)"
-      keywords: "Bosko Petricevic, Wilson Loo, HRPC 8.3(b), HRPC 8.4(d), Section 242, Lanier, Webb, Caperton, Napue, Giglio, overbroad Rule 1.6 rationale, judicial signaling, sealed audio, mens rea, professional responsibility, Hawaii First Circuit"
+          name: "HRPC 8.4(f)"
+        - "@type": "Thing"
+          name: "HRPC 8.4(a)"
+        - "@type": "Thing"
+          name: "ABA Model Rule 8.4(d)"
+      keywords: "Bosko Petricevic, Wilson Loo, HRPC 8.3(b), HRPC 8.4(f), HRPC 8.4(c), HRPC 8.4(a), ABA Model Rule 8.4(d), Section 242, Lanier, Webb, Caperton, Napue, Giglio, overbroad Rule 1.6 rationale, judicial signaling, sealed audio, mens rea, professional responsibility, Hawaii First Circuit"
 ---
 
 On December 2, 2022, a Hawaii First Circuit courtroom sequence produced a problem the record could barely hold: a visual claim of judicial signaling, an audio-confirmable attempt to preserve that claim, a cutoff, a sealed recording, and a lawyer in the room whose client benefited from the answer. This article asks how HRPC 8.3(b), mens rea thresholds, sealed-record dependency, overbroad confidentiality rationales, and institutional review design can turn a shared event into shared non-knowledge.
@@ -335,9 +345,9 @@ Rule 1.6 allows a report limited to the judge's visible open-court conduct unles
 
 Rule 1.6 becomes an overbroad excuse when a lawyer uses it to avoid reporting without identifying any separate protected client information actually disclosed by the report. Petricevic's issue is knowledge: what he saw, heard, understood, and whether that understanding triggered HRPC 8.3(b).
 
-ABA Formal Opinion 522 supplies post-event advisory ethics support. It concerns disclosure of information bearing on judicial disqualification or recusal under Model Rule 8.4(d), with Rule 1.6 confidentiality limits.[^aba522] Its value here is adjacent ethics support: known facts bearing on tribunal impartiality can create duties outside ordinary adversarial silence, while confidentiality still requires careful Rule 1.6 analysis.
+ABA Formal Opinion 522 supplies post-event advisory ethics support. It concerns disclosure of information bearing on judicial disqualification or recusal under ABA Model Rule 8.4(d), with Model Rule 1.6 confidentiality limits.[^aba522] Its value here is adjacent model-rule support: known facts bearing on tribunal impartiality can create duties outside ordinary adversarial silence, while confidentiality still requires careful Rule 1.6 analysis.
 
-HRPC 8.4(d) addresses post-event lawyer conduct that affirmatively preserved, exploited, relied on, or misrepresented the benefit of a tainted proceeding, or invoked an overbroad confidentiality rationale to prevent review of judicial conduct visible in open court. HRPC 8.3(b)'s knowledge predicates still control the reporting-duty analysis.[^hrpc84]
+That crosswalk matters. Hawaii's HRPC 8.4(d) is reserved, so the Hawaii-specific post-event lawyer-conduct analysis cannot rest on that subsection.[^hrpc84] Depending on what the lawyer saw, understood, later represented, preserved, relied on, or concealed, the Hawaii analysis would have to run through HRPC 8.4(f), HRPC 8.4(c), HRPC 8.4(a), 3.3, 3.4, and 8.3(b). HRPC 8.3(b)'s knowledge predicates still control the reporting-duty analysis.
 
 The defect is this: "shall" appears mandatory, yet knowledge, qualifying violation, and substantial fitness all depend on self-assessment by the lawyer whose client benefited from the ambiguity.
 
@@ -399,7 +409,7 @@ It would treat confidentiality as implicated only where a report would disclose 
 
 And it would impose an affirmative preservation duty: a lawyer who observes potential judicial misconduct during a proceeding should make and keep a contemporaneous note, regardless of whether the reporting duty is ultimately triggered—so that the question of what the lawyer saw cannot later be dissolved by the passage of time and the sealing of the record.
 
-A contemporaneous-preservation duty would do more than preserve access. It would preserve willfulness evidence: timing, line of sight, perceived communicative content, uncertainty, and the observer's immediate understanding. That matters because later institutions cannot fairly assess intent if the only trained observer's memory is allowed to dissolve into ambiguity after the audio has been sealed.
+A contemporaneous-preservation duty would do more than preserve access. It would preserve evidence relevant to intent, knowledge, timing, line of sight, perceived communicative content, uncertainty, and the observer's immediate understanding. That matters because later institutions cannot fairly assess intent if the only trained observer's memory is allowed to dissolve into ambiguity after the audio has been sealed.
 
 Those objections are real, and they point toward guardrails. The category should turn on materiality, witness-facing conduct, timing during a pending answer, line of sight, and contemporaneous preservation facts. A calendar-call grimace, a ruling from the bench, or ordinary courtroom friction with counsel stays outside the category. A judge turning toward a witness and giving a no-nod before the pending answer belongs in a different class. Reports can be confidential, limited to observed courtroom conduct, routed to an appropriate authority, and screened for bad faith. Contemporaneous preservation can record uncertainty as uncertainty. The answer to weaponization risk is disciplined intake, confidentiality, and sanctions for bad-faith use.
 
@@ -488,10 +498,10 @@ The authority map supports a limited proposition: courts and ethics rules alread
 | HRPC 8.3(b) and comments | Mandatory reporting of known judicial misconduct raising a substantial question as to fitness; "substantial" concerns seriousness over evidence quantity; Rule 1.6 allows a report limited to the judge's visible open-court conduct unless separate protected client information would be disclosed.[^hrpc83] |
 | HRPC 1.6 | Confidentiality covers protected information relating to representation; in this fact pattern, it enters only if a report would disclose separate protected client information rather than the judge's visible conduct.[^hrpc16] |
 | HRPC 1.0(f) | Actual knowledge may be inferred from circumstances; the article avoids treating that as a pure negligence or constructive-knowledge standard.[^hrpc10] |
-| HRPC 8.4(d) | Parallel professional-responsibility question where lawyer conduct affirmatively preserved, exploited, relied on, or misrepresented a tainted proceeding; HRPC 8.3(b)'s knowledge predicates still control the reporting-duty analysis.[^hrpc84] |
+| HRPC 8.4(a), 8.4(c), and 8.4(f) | Hawaii-specific post-event lawyer-conduct hooks: knowingly assisting or inducing another rules violation, dishonesty/fraud/deceit/misrepresentation, and knowingly assisting a judge or judicial officer in conduct violating judicial-conduct rules or other law. HRPC 8.4(d) is reserved.[^hrpc84] |
 | Hawaii Revised Code of Judicial Conduct | Supplies the judicial-conduct universe: public confidence, impartiality, fairness, decorum, ex parte restrictions, and preserving fairness of proceedings.[^rcjc] |
 | ABA Model Rule 8.3 | Mirrors the national rule structure for reporting judicial misconduct and Rule 1.6 limitations.[^aba83] |
-| ABA Formal Opinion 522 | Adjacent ethics support for lawyer duties involving tribunal-impartiality information, Rule 1.6 confidentiality analysis, and Model Rule 8.4(d).[^aba522] |
+| ABA Formal Opinion 522 | Adjacent model-rule ethics support for lawyer duties involving tribunal-impartiality information, Model Rule 1.6 confidentiality analysis, and ABA Model Rule 8.4(d); not direct Hawaii HRPC 8.4(d) authority.[^aba522] |
 | 18 U.S.C. Section 242 | Statutory basis for willful deprivation of federal rights under color of law in civil as well as criminal settings.[^section242] |
 | *United States v. Lanier* | Section 242 fair-warning and clearly-established-right gate; fair warning can exist without an identical no-nod case, while the right must be framed with sufficient specificity and willfulness must still be proven.[^lanier] |
 | *Webb v. Texas* | Primary witness-interference due-process anchor; the mechanism differs from alleged nonverbal signaling, but the protected interest is a party's right to material witness testimony free from judicial distortion.[^webb] |
@@ -531,9 +541,9 @@ The clarification path is ordinary:
 15. Determine whether DEA and HPD narco/vice intake records exist from the pre-trial drug-activity reports.
 16. Determine whether any undisclosed federal relationship, protection arrangement, cooperation status, benefit, inducement, or non-prosecution understanding existed concerning the redacted witness.
 17. Determine whether any such relationship or benefit was known to, attributable to, or discoverable by a government actor.
-18. Determine whether any post-event representation relied on the contested testimony or the sealed record in a way that could matter under HRPC 8.4(d).
+18. Determine whether any post-event representation relied on the contested testimony or the sealed record in a way that could matter under HRPC 8.4(f), 8.4(c), or 8.4(a).
 19. Determine whether Petricevic made or retained any contemporaneous note of what he saw and understood.
-20. Determine whether any post-event professional duty arose under HRPC 3.3, 3.4, 8.3(b), or 8.4(d), based on what Petricevic saw, understood, later represented, and whether any preservation or report would disclose protected client information.
+20. Determine whether any post-event professional duty arose under HRPC 3.3, 3.4, 8.3(b), 8.4(f), 8.4(c), or 8.4(a), based on what Petricevic saw, understood, later represented, and whether any preservation or report would disclose protected client information.
 
 Those records would clarify the dispute without requiring the public to accept my visual account on faith. They would also prevent the sealed audio from functioning as both evidence and barrier.
 
@@ -573,9 +583,9 @@ The rule says "shall." The equilibrium says preserve ambiguity. The sealed audio
 
 [^aba83]: American Bar Association, [Model Rule 8.3: Reporting Professional Misconduct](https://www.americanbar.org/content/aba-cms-dotorg/en/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_8_3_reporting_professional_misconduct/) and [Comment on Rule 8.3](https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_8_3_reporting_professional_misconduct/comment_on_rule_8_3/), including paragraph (b)'s judicial-misconduct reporting duty and the comment that similar considerations apply to judicial misconduct. ([archival copy — rule](/sources/silent-conspiracy-rule-83-mens-rea/ABA_ModelRule_8_3.html)) ([archival copy — comment](/sources/silent-conspiracy-rule-83-mens-rea/ABA_ModelRule_8_3_Comment.html))
 
-[^aba522]: American Bar Association Standing Committee on Ethics and Professional Responsibility, [Formal Opinion 522](https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-522.pdf), "Lawyer's Obligation to Disclose Information About Grounds for a Judge's Disqualification" (Apr. 8, 2026). The opinion is post-event advisory authority addressing judicial disqualification information under Model Rule 8.4(d), Rule 1.6 confidentiality, and the more limited Rule 8.3(b) reporting threshold; its role here is adjacent ethics support for tribunal-impartiality information and Rule 1.6 analysis. ([archival copy](/sources/silent-conspiracy-rule-83-mens-rea/ABA_FormalOpinion_522.pdf))
+[^aba522]: American Bar Association Standing Committee on Ethics and Professional Responsibility, [Formal Opinion 522](https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-522.pdf), "Lawyer's Obligation to Disclose Information About Grounds for a Judge's Disqualification" (Apr. 8, 2026). The opinion is post-event advisory authority addressing judicial disqualification information under ABA Model Rule 8.4(d), Model Rule 1.6 confidentiality, and the more limited Model Rule 8.3(b) reporting threshold; its role here is adjacent model-rule support for tribunal-impartiality information and confidentiality analysis, not direct Hawaii HRPC 8.4(d) authority. ([archival copy](/sources/silent-conspiracy-rule-83-mens-rea/ABA_FormalOpinion_522.pdf))
 
-[^hrpc84]: Hawaii State Judiciary, [Hawaii Rules of Professional Conduct](https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrpcond_ada.htm), including Rules 3.3, 3.4, and 8.4(d). This article treats HRPC 8.4(d) as a parallel professional-responsibility question where lawyer conduct affirmatively preserved, exploited, relied on, or misrepresented a tainted proceeding, or where an overbroad confidentiality rationale was used to prevent review. HRPC 8.3(b)'s knowledge predicates still control the reporting-duty analysis. ([archival copy — current html](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_2024.html)) ([archival copy — integrated PDF](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_docs_rules_pdf.pdf)) ([archival copy — 2022 amendment index](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_Court_Rules_Orders_of_Amendment_2022.html))
+[^hrpc84]: Hawaii State Judiciary, [Hawaii Rules of Professional Conduct](https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrpcond_ada.htm), including Rules 3.3, 3.4, 8.4(a), 8.4(c), and 8.4(f). HRPC 8.4(d) is reserved. For Hawaii-specific post-event lawyer-conduct analysis, the relevant provisions include HRPC 8.4(a) for attempting, knowingly assisting, inducing, or acting through another to violate the rules; HRPC 8.4(c) for conduct involving dishonesty, fraud, deceit, or misrepresentation; and HRPC 8.4(f) for knowingly assisting a judge or judicial officer in conduct violating applicable judicial-conduct rules or other law. ([archival copy — current html](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_2024.html)) ([archival copy — integrated PDF](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_docs_rules_pdf.pdf)) ([archival copy — 2022 amendment index](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_Court_Rules_Orders_of_Amendment_2022.html))
 
 [^section242]: 18 U.S.C. [Section 242](https://www.law.cornell.edu/uscode/text/18/242), deprivation of rights under color of law. See also U.S. Department of Justice Civil Rights Division, [Deprivation Of Rights Under Color Of Law](https://www.justice.gov/crt/deprivation-rights-under-color-law), explaining that Section 242 reaches a person acting under color of law who willfully deprives a person of a federally protected right, and identifying judges among officials who may act under color of law. ([archival copy — statute](/sources/silent-conspiracy-rule-83-mens-rea/LawCornell_18USC242.html)) ([archival copy — DOJ](/sources/silent-conspiracy-rule-83-mens-rea/DOJ_Deprivation_Rights_Under_Color_Law.html))
 
