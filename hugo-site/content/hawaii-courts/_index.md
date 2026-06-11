@@ -64,7 +64,7 @@ structured_data_graph:
   hasPart:
     - "@type": "Article"
       name: "The Silent Conspiracy"
-      url: "https://gtcode.com/hawaii-courts/silent-conspiracy-rule-83-mens-rea/"
+      url: "https://gtcode.com/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/"
     - "@type": "Article"
       name: "An Open Letter to Bosko Petricevic, Esq."
       url: "https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/"
@@ -100,7 +100,7 @@ portfolio_sections:
       - "/hawaii-courts/two-questions-wilson-loo"
       - "/hawaii-courts/wilson-loo-judicial-signaling"
       - "/hawaii-courts/lawyer-in-the-room-bosko-petricevic"
-      - "/hawaii-courts/silent-conspiracy-rule-83-mens-rea"
+      - "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea"
   - id: "oversight-failure"
     eyebrow: "Oversight Failure"
     title: "Judicial Discipline and Self-Investigation"
