@@ -289,7 +289,7 @@ If the witness did not see the nod, the denial remains independently analyzable 
 
 If the witness saw the nod and adopted it, the denial supports a coached-answer inference. That inference would still require testing—against line of sight, timing, the witness's own statement, the sealed audio, and the exhibit. The nod matters in this branch because it appeared at the precise moment the witness confronted the highest-pressure answer choice.
 
-If the witness had already resolved to deny, the nod retains significance. Judicial confirmation can stabilize false testimony even where the witness required little encouragement; a judge's nonverbal agreement can convert a risky denial into the safer answer inside the room.
+If the witness had already resolved to deny, the nod retains significance. Judicial confirmation can stabilize a false denial, if the denial was false, even where the witness required little encouragement; a judge's nonverbal agreement can convert a risky denial into the safer answer inside the room.
 
 After the hearing, the witness's dominant strategy is silence. Reopening the answer invites exposure on the drug issue, the denial, the courtroom sequence, and the relationship between the answer and the court-file exhibit. Silence preserves the denial and avoids any new statement. A self-interested denial by the witness would nonetheless constitute evidence; its weight would depend on specificity, consistency with the sealed file, line of sight, and independent corroboration.
 
