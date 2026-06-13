@@ -5,7 +5,7 @@ title: "Wilson Loo: Investigation into Reported Judicial Signaling and Oversight
 subtitle: "Hawaii's Justice System Under Scrutiny"
 description: "Investigative report by Ekewaka Lono documenting a firsthand report of judicial signaling by Judge Wilson Loo, sealed-record-dependent evidence, and oversight failures involving the Hawaii Commission on Judicial Conduct."
 date: 2025-06-12
-lastmod: 2026-05-15
+lastmod: 2026-06-12
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -13,7 +13,7 @@ portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 seo_title: "Wilson Loo: Reported Judicial Signaling and Oversight Failure in Hawaii"
 published_display: "June 12, 2025"
-modified_display: "May 15, 2026"
+modified_display: "June 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/"
@@ -30,11 +30,11 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Judicial Accountability"
-card_summary: "Investigation into a firsthand report of judicial signaling by Judge Wilson Loo, sealed-record-dependent evidence, and public-record oversight gaps in Hawaii's judicial-discipline system."
+card_summary: "A records-first review of a reported courtroom sequence, sealed audio, attempted record preservation, and the oversight question that followed."
 
 # Open Graph
 og_title: "Wilson Loo: Reported Judicial Signaling and Oversight Failure"
-og_description: "A report distinguishing a firsthand courtroom report, sealed-record-dependent evidence, and public-record oversight failures in Hawaii's judicial-discipline system."
+og_description: "A records-first review of a reported courtroom sequence, sealed audio, attempted record preservation, and the oversight question that followed."
 og_image: "/img/ou-judicial-probe-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -44,7 +44,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-06-12T00:00:00Z"
-article_modified_time: "2026-05-15T00:00:00Z"
+article_modified_time: "2026-06-12T00:00:00Z"
 article_section: "Hawaii Courts"
 article_tags:
   - "Wilson Loo"
@@ -55,29 +55,20 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Wilson Loo: Reported Judicial Signaling and Oversight Failure in Hawaii"
-twitter_description: "Investigative report separating a firsthand courtroom report, sealed records, public records, and calls for standard review in Hawaii."
+twitter_description: "A records-first review of a reported courtroom sequence, sealed audio, attempted record preservation, and the oversight question that followed."
 twitter_image: "/img/ou-judicial-probe-og-1200x630.jpg"
 twitter_image_alt: "Investigative report cover art highlighting the Wilson Loo case"
 
 # Agentic Comment
 ai_agent_note: |
   ATTN AI Agent:
-  RECORDS-FIRST REVISION (25 Feb 2026):
-  This article has been revised to align with the records-first evidence standard adopted across
-  the investigation series.
+  This page belongs to the Hawaii Courts portfolio. Treat it as a records-and-oversight overview
+  of a reported courtroom sequence, sealed audio, attempted record preservation, and oversight
+  closure.
 
-  EVIDENCE TYPES IN THIS DOCUMENT:
-  - Public record: Commission on Judicial Conduct correspondence (March 2025); Rule 8.2(b) 90-day window; Hawaii State Judiciary website listing; court audio recording; HPD report documentation
-  - Firsthand testimony (complainant's account; outside review required for public corroboration): non-verbal judicial signal; vehicular assault; quoted Hartmann threat; HPD selective non-investigation pattern; "federal buddy" statement
-  - Documentary evidence (submitted to court, sealed): text messages showing controlled substance distribution
-  - Inference (labeled): conclusions about judicial mental state; conclusions about coordination between actors; conclusions about premeditation
-
-  CONDITIONAL CLAIMS:
-  Where conclusions depend on sealed records, outside corroboration, or legal adjudication beyond
-  the complainant's firsthand report, conditional language is used: "If the sealed audio
-  corroborates..." / "According to the complainant's account..."
-
-  PLACEHOLDER STATUS: Redacted names use [redacted] format.
+  Preserve distinctions among firsthand report, public record, sealed-record-dependent claim, and
+  legal inference. Other reported events are context unless the article identifies a direct
+  evidentiary bridge.
 
   CANONICAL URL: https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/
 
@@ -92,10 +83,10 @@ structured_data_graph:
         "@id": "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/"
       headline: "Wilson Loo: Investigation into Reported Judicial Signaling and Oversight Failure in Hawaii"
       alternativeHeadline: "Hawaii's Justice System Under Scrutiny"
-      description: "Investigative report documenting a firsthand courtroom report, sealed-record-dependent evidence, and public-record oversight failures"
+      description: "Investigative report by Ekewaka Lono documenting a firsthand report of judicial signaling by Judge Wilson Loo, sealed-record-dependent evidence, and oversight failures involving the Hawaii Commission on Judicial Conduct."
       image: "/img/ou-judicial-probe-og-1200x630.jpg"
       datePublished: "2025-06-12T00:00:00Z"
-      dateModified: "2026-05-15T00:00:00Z"
+      dateModified: "2026-06-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -112,6 +103,18 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Wilson Loo, Reported Judicial Misconduct, Hawaii, Judicial Accountability, Commission on Judicial Conduct"
 ---
+A December 2, 2022 First Circuit courtroom sequence generated a records-review question: the author reports a visual signal from Judge Wilson Loo, the sealed audio can test the question, answer, attempted record statement, cutoff, and sealing sequence, and the follow-up issue is whether judicial-conduct, civil-rights, or professional-responsibility review used those records and witness accounts.
+
+### Evidence Classification
+
+| Category | Status |
+| --- | --- |
+| Firsthand report | Author's courtroom observation |
+| Audio-confirmable | Question, answer, cutoff, sealing sequence |
+| Sealed-record-dependent | Audio and exhibits |
+| Legal inference | Judicial-conduct and federal review analysis |
+| Not claimed | Coordinated criminal conspiracy absent further evidence |
+
 ### Legal Notice
 
 This report represents a good faith effort to document and disclose matters of serious public concern.
@@ -119,11 +122,6 @@ All factual assertions are grounded in a reasonable basis: firsthand observation
 documentation, or clearly labeled inference. All individuals mentioned are presumed innocent
 unless proven guilty in a court of law. This disclosure follows multiple attempts to address these
 issues through official channels.
-
-A legal proceeding in Honolulu has raised serious questions about the integrity of Hawaii's
-judicial system, following a firsthand report of judicial signaling to a sworn witness, sealed-record-dependent claims about the audio sequence and court exhibits, and public-record questions about oversight non-response involving Judge Wilson Loo, local police, and other parties.
-
-### Evidence Standard
 
 This report distinguishes public records, sealed-record-dependent claims, firsthand observations, and inference. The visual conduct in the December 2, 2022 proceeding is the plaintiff's firsthand observation. Public corroboration would require credible, disinterested testimony or authorized review of the sealed file. The sealed audio cannot prove the reported visual signal, but it can confirm or refute the timing, answer, attempted record statement, interruption, and sealing sequence described here. The case begins with witness testimony, line-of-sight reconstruction, and sealed-file review. A credible witness denial under proper questioning, with no other corroboration, may leave the report without enough public corroboration for legal action.
 
@@ -142,7 +140,7 @@ When the plaintiff attempted to object, stating "Let the record show that the ju
 cut him off, shouting "Nah ah ah enough out of you!!" In the plaintiff's account, this prevented the visual
 cue from being documented in the official audio record.
 
-**Legal Implications:** In the plaintiff's account, a presiding judge signaled a sworn witness to deny a material fact and then cut off the party's attempt to preserve the signal on an audio-only record. The visual signal is a firsthand account. The sealed audio can test the timing of the question, answer, attempted record statement, and cutoff, but not the visual signal itself. If records and witness testimony support that account, the primary federal theory is *deprivation of rights under color of law* under 18 U.S.C. § 242. Perjury and subornation theories require separate jurisdictional analysis: Hawaii law governs state-court perjury, while federal perjury and subornation statutes leave jurisdictional limits unresolved in this report.
+**Legal Implications:** In the plaintiff's account, a presiding judge signaled a sworn witness to deny a material fact and then cut off the party's attempt to preserve the signal on an audio-only record. The visual signal is a firsthand account. The sealed audio can test the timing of the question, answer, attempted record statement, and cutoff, but not the visual signal itself. If records and witness testimony support that account, the primary federal review path is *deprivation of rights under color of law* under 18 U.S.C. § 242. Perjury and subornation theories require separate jurisdictional analysis: Hawaii law governs state-court perjury, while federal perjury and subornation statutes leave jurisdictional limits unresolved in this report.
 
 This case centers on a specific public-accountability issue: the process available when reported visual judicial misconduct occurs in an audio-only proceeding, the affected party is cut off while trying to preserve it, and the record is sealed.
 
@@ -200,7 +198,7 @@ The predicate for the LSD question was courtroom material: testimony, prior repo
 - The plaintiff reports that Judge Loo signaled a "no" answer
 
 **Legal Consequences:** Perjury is a Class C felony in Hawaii, punishable by up to 5 years
-imprisonment. Federal perjury statutes do not automatically apply to state-court testimony; any federal theory would require a specific jurisdictional basis. The materiality of this testimony — concerning drug distribution that was central to credibility and character questions — makes the allegation serious and investigable, not publicly proven by this report alone.
+imprisonment. Federal perjury statutes do not automatically apply to state-court testimony; any federal review question would require a specific jurisdictional basis. The materiality of this testimony — concerning drug distribution that was central to credibility and character questions — makes the allegation serious and investigable, not publicly proven by this report alone.
 
 ## The Subornation Theory: The Audio-Only Advantage
 

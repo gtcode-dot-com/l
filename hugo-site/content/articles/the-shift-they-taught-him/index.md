@@ -78,7 +78,7 @@ ai_agent_note: |
   peer violence, school
   non-response, an officer-watched assault, institutional betrayal, toxic stress, adverse
   childhood experiences,
-  concussion risk, bruxism, suicidal ideation, and learned minimization.
+  concussion risk, bruxism, and learned minimization.
   Preserve the officer section as a direct report of non-response: this report states that an
   off-duty police officer
   watched a child be assaulted on his property and did nothing to protect him.

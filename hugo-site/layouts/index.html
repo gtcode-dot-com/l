@@ -25,7 +25,6 @@
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
 {{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
-{{- $zoneOfPoliteness := .Site.GetPage "/hawaii-courts/coverage-gap-media-noncoverage" -}}
 {{- $heroHeadline := .Params.hero_headline | default "The Silent Conspiracy" -}}
 {{- $homeHeroImage := .Params.hero_image | default "/img/ou-silent-conspiracy-hero-1600.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
@@ -328,37 +327,6 @@
           </article>
           {{ end }}
 
-          {{/* Media Capture — Zone of Politeness */}}
-          {{ if $zoneOfPoliteness }}
-          {{ $zopSummary := $zoneOfPoliteness.Params.card_summary | default $zoneOfPoliteness.Description }}
-          {{ if eq (strings.TrimSpace $zopSummary) "" }}{{ $zopSummary = $zoneOfPoliteness.Summary | plainify | truncate 220 }}{{ end }}
-          <article class="ou-feature-row" id="media-capture">
-            {{ with $zoneOfPoliteness.Params.og_image }}
-            <a href="{{ $zoneOfPoliteness.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              {{ partial "media/responsive-image.html" (dict
-                "page" $
-                "src" .
-                "alt" $zoneOfPoliteness.Title
-                "slot" "investigation_feature_row"
-                "width" ($zoneOfPoliteness.Params.og_image_width | default 1200)
-                "height" ($zoneOfPoliteness.Params.og_image_height | default 630)
-              ) }}
-            </a>
-            {{ end }}
-            <div class="ou-feature-row-body">
-              <p class="ou-section-label">{{ $zoneOfPoliteness.Params.eyebrow | default "Media Capture" }}</p>
-              <h2 class="ou-feature-row-title">
-                <a href="{{ $zoneOfPoliteness.RelPermalink }}">{{ $zoneOfPoliteness.Title }}</a>
-              </h2>
-              {{ with $zoneOfPoliteness.Params.subtitle }}
-              <p class="ou-feature-row-subtitle">{{ . }}</p>
-              {{ end }}
-              <p class="ou-feature-row-text">{{ $zopSummary }}</p>
-              <a class="ou-featured-article-link" href="{{ $zoneOfPoliteness.RelPermalink }}">Read the investigation &rarr;</a>
-            </div>
-          </article>
-          {{ end }}
-
           {{/* Publisher's Note */}}
           {{ if $carto }}
           {{ $cartoSummary := $carto.Params.card_summary | default $carto.Description }}
@@ -396,7 +364,6 @@
       <!-- Research Portfolios -->
       {{- $featuredPaths := slice -}}
       {{- if $lead }}{{ $featuredPaths = $featuredPaths | append $lead.RelPermalink }}{{ end -}}
-      {{- if $zoneOfPoliteness }}{{ $featuredPaths = $featuredPaths | append $zoneOfPoliteness.RelPermalink }}{{ end -}}
       {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
 
       {{/* Also exclude Closed Loop series members — they get their own showcase */}}
@@ -455,7 +422,7 @@
 
           {{ if gt (len $homepageSilos) 0 }}
           <div class="ou-section-body ou-home-investigation-note">
-            <p>The research library is split by discipline so legal-audit files, geopolitical mapping, intelligence reconstruction, diagnostics, and reporter disclosures are evaluated on their own terms.</p>
+            <p>Other portfolios are listed for navigation only. Each silo carries its own evidence standard and should not be merged into the Hawaii Courts route without a direct evidentiary bridge.</p>
           </div>
           <div class="ou-cards">
             {{ range $silo := $homepageSilos }}

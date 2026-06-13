@@ -2,6 +2,7 @@
 title: "Editorial Standards"
 description: "How Oahu Underground by GTCode handles sourcing, verification, and publication updates."
 date: 2026-02-14
+lastmod: 2026-06-12
 type: "policies"
 outputs: ["HTML", "Markdown"]
 ---
@@ -23,6 +24,23 @@ Oahu Underground reporting follows an evidence-first process.
 - Public records are linked directly where available.
 - Quotations are checked against source material before publication.
 - For technical claims, reproducible references are preferred over secondary summaries.
+- Firsthand reports are labeled as firsthand reports, not adjudicated facts.
+- Sealed-record-dependent claims are identified as dependent on authorized review of sealed audio, exhibits, filings, or transcripts.
+- Legal and structural conclusions are labeled as analysis or inference unless an adjudicative body has made the finding.
+- Article pages may be revised when records, source responses, or official dispositions clarify the facts.
+
+## Source Archive Policy
+
+- Public source links are preserved where possible through direct links, citations, and archived copies.
+- Local archival copies are used to preserve public records, not to imply that every archived source proves every claim on a page.
+- Sealed, confidential, private, or unlawfully obtained material is not published merely because it would be useful to a narrative.
+- When a page describes sealed or non-public records, it should state what authorized review would be needed to confirm or falsify the claim.
+
+## Right of Reply
+
+Named people, institutions, and organizations may send corrections, clarifications, or responses.
+Responses are reviewed for factual relevance and may be incorporated, summarized, linked, or noted
+in-page when they materially clarify the record.
 
 ## Contact
 

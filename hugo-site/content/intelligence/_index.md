@@ -4,7 +4,7 @@ title: "Intelligence Research Files"
 seo_title: "Intelligence Research Files | Oahu Underground"
 description: "Formal reconstruction of intelligence history and archive custody."
 date: 2026-05-14
-lastmod: 2026-05-14
+lastmod: 2026-06-12
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/intelligence/"
@@ -50,7 +50,7 @@ portfolio_description: "Archive custody and intelligence-history analysis in a s
 portfolio_sections:
   - id: "archive-custody"
     eyebrow: "Archive Custody"
-    title: "Snowden Archive Chain of Custody"
+    title: "Archive Chain of Custody"
     description: "Formal reconstruction of archive custody and intelligence-history questions."
     pages:
       - "/intelligence/snowden-archive-chain-of-custody"

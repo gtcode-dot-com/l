@@ -6,21 +6,19 @@ seo_title: "Mechanisms of Review Failure — Sealed Records, Stigma, and Oversig
 subtitle: "A mechanism library for sealed records, stigma, routing, and oversight closure"
 description: "A cautious mechanism library for evaluating review failures after primary records are assembled, with attention to sealed records, complaint routing, written dispositions, and oversight closure."
 date: 2026-02-24
-lastmod: 2026-05-13
+lastmod: 2026-06-12
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 published_display: "February 24, 2026"
-modified_display: "May 13, 2026"
+modified_display: "June 12, 2026"
 
 # SEO & Indexing
 homepage_exclude: true
 
 canonical: "https://gtcode.com/hawaii-courts/mechanisms-of-review-failure/"
-aliases:
-  - "/investigation/the-shape-of-the-cage/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
   - "review failure"
@@ -41,7 +39,7 @@ card_summary: "A mechanism library for sealed records, stigma, complaint routing
 # Open Graph
 og_title: "Mechanisms of Review Failure"
 og_description: "A mechanism library for evaluating sealed records, stigma, complaint routing, and oversight closure after primary records are assembled."
-og_image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
+og_image: "/img/ou-investigations-index-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "Illustration of review files, sealed records, and routing paths representing mechanisms of review failure"
@@ -50,7 +48,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-24T00:00:00Z"
-article_modified_time: "2026-05-13T00:00:00Z"
+article_modified_time: "2026-06-12T00:00:00Z"
 article_section: "Hawaii Courts"
 article_tags:
   - "Review Failure"
@@ -66,7 +64,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Mechanisms of Review Failure"
 twitter_description: "A mechanism library for sealed records, stigma, complaint routing, and oversight closure after primary records are assembled."
-twitter_image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
+twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 twitter_image_alt: "Mechanisms of Review Failure — structural analysis of review closure"
 
 # Agentic Context
@@ -116,9 +114,9 @@ structured_data_graph:
       headline: "Mechanisms of Review Failure"
       alternativeHeadline: "A mechanism library for sealed records, stigma, and oversight closure"
       description: "A cautious mechanism library for evaluating review failures after primary records are assembled."
-      image: "/img/ou-shape-of-the-cage-og-1200x630.jpg"
+      image: "/img/ou-investigations-index-og-1200x630.jpg"
       datePublished: "2026-02-24T00:00:00Z"
-      dateModified: "2026-05-13T00:00:00Z"
+      dateModified: "2026-06-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"

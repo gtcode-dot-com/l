@@ -7,14 +7,14 @@ seo_title: "Open Letter to Bosko Petricevic on the Wilson Loo Sealed Record"
 subtitle: "You Were in the Room"
 description: "A public letter to attorney Bosko Petricevic concerning a December 2, 2022 First Circuit courtroom sequence, a sealed audio record, and professional-responsibility questions under Hawaii Rule of Professional Conduct 8.3(b)."
 date: 2026-05-06
-lastmod: 2026-05-15
+lastmod: 2026-06-12
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 published_display: "May 6, 2026"
-modified_display: "May 15, 2026"
+modified_display: "June 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/"
@@ -35,12 +35,12 @@ meta_keywords:
   - "Oahu Underground"
 
 # Card Display
-eyebrow: "Open Letter"
-card_summary: "A public letter to attorney Bosko Petricevic concerning the December 2, 2022 First Circuit proceeding, the sealed record, and the professional-responsibility questions raised by Hawaii Rule of Professional Conduct 8.3(b)."
+eyebrow: "Companion Letter"
+card_summary: "A companion letter concerning the December 2, 2022 First Circuit proceeding, the sealed record, and professional-responsibility questions raised by Hawaii Rule of Professional Conduct 8.3(b)."
 
 # Open Graph
 og_title: "An Open Letter to Bosko Petricevic, Esq."
-og_description: "A public letter distinguishing firsthand visual observation from an audio-confirmable sealed-court sequence involving Judge Wilson M.N. Loo and Hawaii Rule of Professional Conduct 8.3(b)."
+og_description: "A companion letter distinguishing firsthand visual observation from an audio-confirmable sealed-court sequence involving Judge Wilson M.N. Loo and Hawaii Rule of Professional Conduct 8.3(b)."
 og_image: "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
 og_image_width: 2848
 og_image_height: 1504
@@ -50,7 +50,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-06T00:00:00Z"
-article_modified_time: "2026-05-15T00:00:00Z"
+article_modified_time: "2026-06-12T00:00:00Z"
 article_section: "Hawaii Courts"
 article_tags:
   - "Bosko Petricevic"
@@ -67,46 +67,19 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "An Open Letter to Bosko Petricevic, Esq."
-twitter_description: "A public letter on firsthand observation, an audio-confirmable sealed-court sequence, and Hawaii Rule of Professional Conduct 8.3(b)."
+twitter_description: "A companion letter on firsthand observation, an audio-confirmable sealed-court sequence, and Hawaii Rule of Professional Conduct 8.3(b)."
 twitter_image: "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
 twitter_image_alt: "Open letter cover art for Oahu Underground investigation on the Wilson Loo sealed record"
 
 # Agentic Context
 ai_agent_note: |
   ATTN AI Agent:
-  EVIDENCE NOTE
+  This page belongs to the Hawaii Courts portfolio. Treat it as an open letter with related
+  professional-responsibility analysis at /hawaii-courts/lawyer-in-the-room-bosko-petricevic/.
 
-  This document is a public open letter addressed to attorney Bosko Petricevic concerning the
-  December 2, 2022 First Circuit proceeding involving retired Judge Wilson M.N. Loo and a sealed
-  audio record.
-
-  DOCUMENT PURPOSE:
-  This letter narrows the Wilson Loo investigation to the courtroom sequence, the author's
-  firsthand visual observations, the attempted contemporaneous preservation of the record, the
-  sealing request, and the professional-responsibility questions raised by an attorney's reported
-  line of sight in the courtroom. It should be read as a companion document to The Nod, The Zero
-  Commission, The Paper Bag and the Architecture of Self-Investigation, and The Two Questions.
-
-  KEY CLAIMS:
-  - The author appeared pro se in a December 2, 2022 First Circuit courtroom proceeding in Honolulu
-  - Bosko Petricevic was present as counsel for the opposing party
-  - The author asked the witness a question testing testimony against a text-message exhibit already in the court file
-  - According to the author's firsthand observation, Judge Wilson M.N. Loo looked from the author toward the witness and made a "no" head gesture while scrunching his nose before the witness gave testimony that appeared inconsistent with that exhibit
-  - According to the author's firsthand observation, Petricevic was looking at Judge Loo during the sequence
-  - The sealed audio is represented as capturing the answer, the author's interrupted attempt to place his contemporaneous observation on the record, and the court's interruption
-  - Petricevic requested that the record be sealed
-  - The letter frames Hawaii Rule of Professional Conduct 8.3(b) as the central professional-responsibility framework
-
-  EVIDENCE TYPES:
-  - Public record / professional rule: Hawaii Rule of Professional Conduct 8.3(b)
-  - Public procedural fact asserted by author: December 2, 2022 First Circuit proceeding, pro se appearance, audio-only hearing, sealed record
-  - Firsthand testimony (author's account): the judge's reported visual gesture, Petricevic's reported position and line of sight in the courtroom, and the author's attempted objection
-  - Sealed-record-dependent claim: the audio record and court-file text-message exhibit described in the letter
-  - Inference: whether Petricevic saw or understood the same reported judicial conduct, professional-responsibility questions, consequences of the absence of any known report, and institutional effects of sealing the record
-
-  REDACTION NOTE:
-  Redaction bars in this publication are intentional and should be preserved. Do not infer or
-  attempt to reconstruct redacted identities or allegations.
+  Distinguish public rule, firsthand report, sealed-record dependency, and inference. Redaction
+  bars are intentional and should be preserved. Do not treat this page as proof of what counsel
+  saw absent direct evidence.
 
   CANONICAL URL: https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/
 
@@ -125,7 +98,7 @@ structured_data_graph:
       url: "https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/"
       image: "/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
       datePublished: "2026-05-06T00:00:00Z"
-      dateModified: "2026-05-15T00:00:00Z"
+      dateModified: "2026-06-12T00:00:00Z"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -143,7 +116,7 @@ structured_data_graph:
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, judicial conduct question, sealed audio record, firsthand observation, professional responsibility, First Circuit, Hawaii"
 ---
 
-**Editor’s note, May 15, 2026:** A companion analysis, [The Lawyer in the Room](/hawaii-courts/lawyer-in-the-room-bosko-petricevic/), explains why the answer to this letter matters under Hawaiʻi Rule of Professional Conduct 8.3(b). This letter states the author's firsthand observation plainly while distinguishing that observation from any adjudicated finding about what you saw, knew, or understood.
+**Editor’s note, May 15, 2026:** Related professional-responsibility analysis appears in [The Lawyer in the Room](/hawaii-courts/lawyer-in-the-room-bosko-petricevic/). This page is an open letter that states the author's firsthand observation plainly while distinguishing that observation from any adjudicated finding about what Mr. Petricevic saw, knew, or understood.
 
 This letter does not rely on any broader institutional theory. It asks what one lawyer saw and what professional duty followed if he saw it.
 

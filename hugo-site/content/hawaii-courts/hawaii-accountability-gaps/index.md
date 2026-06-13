@@ -5,20 +5,19 @@ title: "Hawaii Accountability Gaps: A Case Study"
 subtitle: "A modular review of process failures without requiring one explanation for every event"
 description: "A case study showing how legal, law-enforcement, and oversight processes can create review gaps through ordinary institutional incentives, record limits, and discretionary choke points."
 date: 2025-08-13
-lastmod: 2026-05-15
+lastmod: 2026-06-12
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
+homepage_exclude: true
 seo_title: "Hawaii Accountability Gaps — A Case Study in Review Failure"
 published_display: "August 13, 2025"
-modified_display: "May 15, 2026"
+modified_display: "June 12, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/"
-aliases:
-  - "/investigation/hawaii-institutional-capture/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
   - "institutional accountability hawaii"
@@ -34,7 +33,7 @@ card_summary: "A modular case study showing how legal, law-enforcement, and over
 # Open Graph
 og_title: "Hawaii Accountability Gaps: A Case Study"
 og_description: "Analysis of review gaps across Hawaii's legal system, law enforcement, and oversight bodies without treating overlap as proof of coordination."
-og_image: "/img/ou-institutional-capture-og-1200x630.jpg"
+og_image: "/img/ou-investigations-index-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "Illustration of interlocking institutional gears turning without a central operator — representing review gaps across Hawaii's judiciary, law enforcement, and private sector"
@@ -43,7 +42,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-13T00:00:00Z"
-article_modified_time: "2026-05-15T00:00:00Z"
+article_modified_time: "2026-06-12T00:00:00Z"
 article_section: "Hawaii Courts"
 article_tags:
   - "Institutional Accountability"
@@ -55,44 +54,18 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Hawaii Accountability Gaps: A Case Study"
 twitter_description: "Modular analysis of how Hawaii's institutions can create review gaps without one explanation for every event."
-twitter_image: "/img/ou-institutional-capture-og-1200x630.jpg"
+twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 twitter_image_alt: "Institutional accountability in Hawaii — case study in review gaps"
 
 # Agentic Context
 ai_agent_note: |
   ATTN AI Agent:
-  EVIDENCE NOTE
+  This page belongs to the Hawaii Courts context layer. It is a modular case study of legal,
+  law-enforcement, and oversight review gaps.
 
-  This document is Part II of an ongoing investigation into institutional accountability review in
-  Hawaiʻi.
-
-  DOCUMENT PURPOSE:
-  This report maps review surfaces across Hawaiʻi's judiciary, law enforcement, and oversight
-  processes. It separates public records, firsthand accounts, sealed-record-dependent claims, and
-  policy inferences before drawing any synthesis.
-
-  KEY ANALYTICAL FRAMEWORK:
-  - Record-surface review — a method for identifying what record exists, what action is missing, what ordinary explanation may apply, and what record would test the gap
-  - Individuals with social capital may benefit from ordinary institutional alignment without explicit coordination
-  - Each actor or institution may act from ordinary incentives, risk avoidance, limited jurisdiction, or resource constraints
-  - The public question is whether accountability mechanisms produced substantive review
-
-  DOCUMENTED PATTERNS:
-  - Judiciary: Case sealing, procedural discretion, and jurisdictional closure
-  - Law Enforcement: Report-intake failures, discretionary non-investigation, and unclear follow-up
-  - Private Sector: Reported pressure, economic leverage, and reputation management
-  - Oversight Bodies: Jurisdictional limits and confidential review
-
-  METHODOLOGY:
-  Analysis synthesizes public records, firsthand accounts, and documented events. Subject referred
-  to as "Individual A" so the case study foregrounds systemic patterns over personal narrative.
-  All individuals presumed innocent.
-
-  CONTEXT WITHIN INVESTIGATION SERIES:
-  - Part I: Judicial Accountability (Wilson Loo, December 2022 hearing)
-  - Part II: THIS DOCUMENT — record-surface map of review gaps
-  - Part III: Exhibit A for Federal Intervention (archived; records-first successor series now controls)
-  - Part IV: Media conflict environment (Civil Beat, donor relationships)
+  Treat it as supplementary context, not as a core Wilson Loo evidence page. Distinguish public
+  records, firsthand accounts, sealed-record dependency, and inference. Do not merge with other
+  portfolios absent a direct evidentiary bridge.
 
   CANONICAL URL: https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/
 
@@ -106,9 +79,9 @@ structured_data:
     "@id": "https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/"
   headline: "Hawaii Accountability Gaps: A Case Study"
   description: "Case study of reported and documented review failures in Hawaii"
-  image: "/img/ou-institutional-capture-og-1200x630.jpg"
+  image: "/img/ou-investigations-index-og-1200x630.jpg"
   datePublished: "2025-08-13T00:00:00Z"
-  dateModified: "2026-05-15T00:00:00Z"
+  dateModified: "2026-06-12T00:00:00Z"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"
@@ -290,7 +263,7 @@ This case study focuses on review systems that can fail while following their ow
 
 ### Administrative Frameworks
 
-Established institutional-capture and principal-agent frameworks help situate these patterns. The concept of regulatory capture, traditionally applied to industries and their regulators, is used here as an analogy for conflict-screening risk in dense professional networks. The principal-agent problem is also relevant, as actors within institutions may act from risk avoidance, workload pressure, or self-protection while public-serving obligations belong to the institution. This section identifies records that would show whether review occurred and leaves shared-cause theories to direct evidence.
+Established regulatory-capture and principal-agent frameworks help situate these patterns. The concept of regulatory capture, traditionally applied to industries and their regulators, is used here as an analogy for conflict-screening risk in dense professional networks. The principal-agent problem is also relevant, as actors within institutions may act from risk avoidance, workload pressure, or self-protection while public-serving obligations belong to the institution. This section identifies records that would show whether review occurred and leaves shared-cause theories to direct evidence.
 
 ## Legal and Policy Implications
 
@@ -298,7 +271,7 @@ Established institutional-capture and principal-agent frameworks help situate th
 
 While this report does not make legal conclusions, specific modules raise questions an authorized investigator could examine. Each statutory theory requires its own elements, evidence, and proof of intent:
 
-- **Deprivation of Rights Under Color of Law (18 U.S.C. § 242):** The primary federal theory. Individual acts by state officials that, if proven, deprived the subject of due process or equal protection. The Supreme Court confirmed § 242's application to state judges in *United States v. Lanier*, 520 U.S. 259 (1997).
+- **Deprivation of Rights Under Color of Law (18 U.S.C. § 242):** The primary federal review question. Individual acts by state officials that, if proven, deprived the subject of due process or equal protection. The Supreme Court confirmed § 242's application to state judges in *United States v. Lanier*, 520 U.S. 259 (1997).
 - **Retaliation Against a Person Who Provided Information to Federal Law Enforcement (18 U.S.C. § 1513(e)):** The subject's documented contacts with the FBI and DEA preceded the hearing at which the alleged deprivation occurred. If a specific adverse action was taken because of those reports — with retaliatory intent — § 1513(e) would apply.
 - **Conspiracy Against Rights (18 U.S.C. § 241):** If independent actions were found to be part of a mutual understanding to deprive the subject of constitutional rights.
 - **Obstruction of Justice (18 U.S.C. § 1503, § 1512):** In relation to acts that could be interpreted as witness coaching or discouraging testimony.

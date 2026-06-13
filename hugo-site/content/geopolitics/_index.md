@@ -2,9 +2,9 @@
 draft: false
 title: "Geopolitics Research Files"
 seo_title: "Geopolitics Research Files | Oahu Underground"
-description: "Public-record analysis of energy risk, foreign access mapping, and financial disclosure surfaces."
+description: "Public-record analysis of energy risk, institutional access, and financial disclosure surfaces."
 date: 2026-05-14
-lastmod: 2026-05-14
+lastmod: 2026-06-12
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/geopolitics/"
@@ -13,7 +13,7 @@ robots: "index, follow, max-image-preview:large"
 breadcrumb_label: "Geopolitics"
 
 og_title: "Geopolitics Research Files"
-og_description: "A separate research silo for energy risk, PRC-facing access mapping, and disclosure analysis."
+og_description: "A separate research silo for energy risk, institutional access, and disclosure analysis."
 og_image: "/img/ou-investigations-index-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -22,7 +22,7 @@ og_type: "website"
 
 twitter_card: "summary_large_image"
 twitter_title: "Geopolitics Research Files"
-twitter_description: "A separate research silo for energy risk, PRC-facing access mapping, and disclosure analysis."
+twitter_description: "A separate research silo for energy risk, institutional access, and disclosure analysis."
 twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
 
 ai_agent_note: |

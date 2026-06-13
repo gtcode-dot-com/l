@@ -2,11 +2,11 @@
 title: "The Two Questions: How One Interview Could Test the Wilson Loo Case"
 subtitle: "A Map of the Shortest Investigative Path"
 date: 2026-02-23
-lastmod: 2026-05-13
+lastmod: 2026-06-12
 author: "Ekewaka Lono"
 published_display: "February 23, 2026"
-modified_display: "May 13, 2026"
-eyebrow: "Prosecution Roadmap"
+modified_display: "June 12, 2026"
+eyebrow: "Investigative Triage"
 hero_image: "/img/ou-two-questions-og-1200x634.jpg"
 hero_image_width: 1200
 hero_image_height: 634
@@ -17,25 +17,25 @@ build:
   publishResources: false
 ---
 
-This file identifies the shortest investigative path for one courtroom allegation.
+This file identifies the shortest investigative path for one courtroom report.
 
-The allegation is narrow: a nonverbal signal allegedly preceded a witness's denial under oath of a matter the author states was supported by evidence in the court's own file. The institutional question is whether standard investigative steps can test that account.
+The report is narrow: a nonverbal signal reportedly preceded a witness's denial under oath of a matter the author states was supported by evidence in the court's own file. The institutional question is whether standard investigative steps can test that account.
 
 This investigation asks what ordinary investigative steps would test the claim.
 
 The shortest test is one interview, tested against the sealed audio, court file, exhibit, timing, and line-of-sight facts.
 
-**Evidence standard:** This article separates the visual claim -- a firsthand allegation of a no-head gesture and facial cue -- from the audio-confirmable sequence: the question, the answer, the attempted "Let the record show..." statement, the cutoff, and the sealing request. The sealed audio can test the sequence; it cannot prove the visual signal. Credible, disinterested testimony and authorized review of the sealed file can test the visual allegation. If the witness credibly denies the signal under proper questioning and no other corroboration emerges, the case may fail. Courtroom evidence is separate from biography, media non-coverage, platform anomalies, and federal non-action. Those may be context in other articles; they are not needed for this roadmap.
+**Evidence standard:** This article separates the visual claim -- a firsthand report of a no-head gesture and facial cue -- from the audio-confirmable sequence: the question, the answer, the attempted "Let the record show..." statement, the cutoff, and the sealing request. The sealed audio can test the sequence; it cannot prove the visual signal. Credible, disinterested testimony and authorized review of the sealed file can test the visual report. If the witness credibly denies the signal under proper questioning and no other corroboration emerges, the case may fail. Courtroom evidence is separate from biography, media non-coverage, platform anomalies, and federal non-action. Those may be context in other articles; they are not needed for this review path.
 
 ---
 
-The federal theory involving retired Judge Wilson M.N. Loo turns on the cooperation of one person: ████████████. ████████████ is the witness alleged to have received the nonverbal signal. He is also the person whose prior alleged conduct -- specifically, his alleged role as an intermediary in LSD distribution on the North Shore -- created the factual predicate at issue in the courtroom question.
+The review path involving retired Judge Wilson M.N. Loo turns on the cooperation of one person: ████████████. ████████████ is the witness reported to have received the nonverbal signal. He is also the person whose prior reported conduct -- specifically, his reported role as an intermediary in LSD distribution on the North Shore -- created the factual predicate at issue in the courtroom question.
 
 Investigators should weigh ████████████'s account against motive, specificity, line of sight, the sealed audio sequence, and the court file. Truthful corroboration, combined with the sealed audio recording of Loo cutting off the petitioner's objection, could allow investigators to evaluate the elements of [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242) -- deprivation of rights under color of law. Judges can be prosecuted under § 242: the Supreme Court unanimously confirmed this in [*United States v. Lanier*, 520 U.S. 259 (1997)](https://supreme.justia.com/cases/federal/us/520/259/). The harder issue is whether these specific facts meet § 242's willfulness requirement and *Lanier*'s fair-warning standard -- that the unlawfulness of the conduct must be "apparent" in light of pre-existing law. Judicial immunity -- a defense to civil suits -- has no application to criminal prosecution.
 
 18 U.S.C. § 1622 (subornation of perjury) may also apply, though its jurisdictional reach to perjury committed in state court (rather than in a federal proceeding) is a legal question this investigation acknowledges but does not resolve.
 
-Corroborating testimony from ████████████ would allow investigators to evaluate both theories -- § 242 for the deprivation of rights, and § 1622 for the subornation, if its jurisdictional reach extends to state court.
+Corroborating testimony from ████████████ would allow investigators to evaluate both legal questions -- § 242 for the deprivation of rights, and § 1622 for the subornation issue, if its jurisdictional reach extends to state court.
 
 ---
 
@@ -57,7 +57,7 @@ The author has not been informed of any resulting action. Ordinary explanations 
 
 The distribution of a Schedule I controlled substance -- LSD -- is independently chargeable under [21 U.S.C. § 841](https://www.law.cornell.edu/uscode/text/21/841). Federal investigators routinely seek cooperation by confronting witnesses with their own potential criminal exposure. ████████████'s exposure under § 841 provides the standard framework for obtaining testimony.
 
-The security footage at Stonefish Grill, if preserved, would be primary-source corroboration of the first incident. According to my account, it would show ████████████ receiving a controlled substance from one individual and providing it to another -- in a public establishment, on camera. If the footage has been destroyed through routine retention cycles, the existence of my prior law enforcement reports establishes that I identified the location, the act, and the individual to federal and local agencies before the trial in which Loo is alleged to have signaled ████████████ to deny it.
+The security footage at Stonefish Grill, if preserved, would be primary-source corroboration of the first incident. According to my account, it would show ████████████ receiving a controlled substance from one individual and providing it to another -- in a public establishment, on camera. If the footage has been destroyed through routine retention cycles, the existence of my prior law enforcement reports establishes that I identified the location, the act, and the individual to federal and local agencies before the trial in which Loo is reported to have signaled ████████████ to deny it.
 
 ---
 
@@ -127,7 +127,7 @@ The record is public. The clock is running.
 
 ## The Federal Framework
 
-This investigation identifies [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242) -- deprivation of rights under color of law -- as the primary federal theory. It is purpose-built for state officials who abuse their authority to deny constitutional rights, and it has been upheld against state judges by the Supreme Court.
+This investigation identifies [18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242) -- deprivation of rights under color of law -- as the primary federal review statute. It is purpose-built for state officials who abuse their authority to deny constitutional rights, and it has been upheld against state judges by the Supreme Court.
 
 [21 U.S.C. § 841](https://www.law.cornell.edu/uscode/text/21/841) -- distribution of a Schedule I controlled substance -- would, if the witness's conduct is confirmed, provide independent federal jurisdiction and the standard basis for seeking cooperation.
 
@@ -143,9 +143,9 @@ This public-record brief relies on materials that are publicly accessible or pub
 
 | File | Published | Summary |
 | --- | --- | --- |
-| [The Nod](/hawaii-courts/the-nod-visual-allegation/) | Feb 12, 2026 | Firsthand allegation of judicial signaling from the bench |
-| [The Zero Commission](/hawaii-courts/zero-commission-judicial-conduct/) | Feb 15, 2026 | 100% dismissal rate: the architecture of judicial unaccountability |
-| [The Closed Loop](/hawaii-courts/closed-loop-oversight-failure/) | Feb 15, 2026 | Series overview: oversight controlled by the overseen |
+| [The Nod](/hawaii-courts/the-nod-visual-allegation/) | Feb 12, 2026 | Firsthand report of judicial signaling from the bench |
+| [The Zero Commission](/hawaii-courts/zero-commission-judicial-conduct/) | Feb 15, 2026 | Public-record review of judicial-discipline appointment, confidentiality, and complaint outcomes |
+| [The Closed Loop](/hawaii-courts/closed-loop-oversight-failure/) | Feb 15, 2026 | Series overview of oversight design and self-review limits |
 | [Wilson Loo: Investigation](/hawaii-courts/wilson-loo-judicial-signaling/) | Jun 12, 2025 | Original investigation into alleged judicial signaling and the Commission |
 
 ---

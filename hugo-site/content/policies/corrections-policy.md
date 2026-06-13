@@ -2,6 +2,7 @@
 title: "Corrections Policy"
 description: "Corrections policy explaining how GTCode reviews reported factual errors, updates Oahu Underground pages, adds dated notes, and handles clarifications."
 date: 2026-02-14
+lastmod: 2026-06-12
 type: "policies"
 outputs: ["HTML", "Markdown"]
 ---
@@ -20,6 +21,12 @@ Accuracy is treated as an ongoing obligation.
 ## What To Send
 
 Include the page URL, the specific statement in question, and supporting evidence.
+
+## Right Of Reply
+
+Subjects of reporting may send a statement, correction, or clarification. Oahu Underground reviews
+responses for relevance to the published record and may add a dated note, revise wording, link a
+source, or publish a summary where the response materially improves accuracy or context.
 
 ## Contact
 
