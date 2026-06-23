@@ -1,5 +1,6 @@
 {{- $normalizedBase := replace .Site.BaseURL "http://" "https://" -}}
 {{- $base := strings.TrimSuffix "/" $normalizedBase -}}
+{{- $pilgrimageMode := .Site.Params.pilgrimage_mode | default false -}}
 {{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
 {{- $minIndexableTermPages := int (.Site.Params.seo_min_indexable_term_pages | default 1) -}}
 {{- $siteLastMod := .Site.Lastmod -}}
@@ -11,6 +12,8 @@
 {{- end -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- /* In pilgrimage mode, skip all page entries - site is in maintenance mode */ -}}
+  {{- if not $pilgrimageMode }}
   {{- /* Static assets that need explicit inclusion (data-driven to avoid stale aliases) */ -}}
   {{- $staticEntries := .Site.Data.sitemap_static.entries | default slice -}}
   {{- range $static := $staticEntries }}
@@ -57,5 +60,6 @@
     <priority>{{- printf "%.2f" $priority -}}</priority>
   </url>
     {{- end -}}
+  {{- end }}
   {{- end }}
 </urlset>
