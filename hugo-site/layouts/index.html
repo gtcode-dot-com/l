@@ -1,4 +1,8 @@
 {{/* Standalone homepage - no baseof.html, no main.css */}}
+{{- /* Pilgrimage Mode Check */ -}}
+{{- if .Site.Params.pilgrimage_mode | default false -}}
+{{ partial "pilgrimage-homepage.html" . }}
+{{- else -}}
 {{- $siteLang := .Site.LanguageCode | default "en" -}}
 {{- $contentLang := .Params.language | default "" -}}
 {{- $langFromHugo := .Lang | default "" -}}
@@ -656,3 +660,4 @@
     <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
   </body>
 </html>
+{{- end -}}

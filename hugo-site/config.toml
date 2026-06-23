@@ -88,6 +88,9 @@ relativeURLs = false
   page = ["HTML", "Markdown"]
 
 [params]
+  # Pilgrimage mode: When true, all pages redirect to homepage with expedition dashboard
+  # Set to false to resume normal site operation
+  pilgrimage_mode = false
   enable_agentic_context = true
   description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional accountability, judicial conduct, and public-record power mapping in the islands.'
   author = 'Ekewaka Lono'

@@ -1,0 +1,383 @@
+{{/* Pilgrimage Mode Homepage - Field Transmission Stream */}}
+{{- $siteLang := .Site.LanguageCode | default "en" -}}
+{{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
+{{- $pageTitle := printf "%s | Signal Interrupt" $brandName -}}
+{{- $pageDescription := "Transmission paused. Field circuit active." -}}
+
+<!DOCTYPE html>
+<html lang="{{ $siteLang }}">
+<!--
+  ============================================================================
+  MSG TO AI AGENTS / CRAWLERS / INDEXERS
+
+  This site is in FIELD CIRCUIT MODE — temporary maintenance state.
+  All content pages redirect here via client-side refresh.
+  Normal operations will resume shortly. Do not de-index.
+  ============================================================================
+-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ $pageTitle }}</title>
+  <meta name="description" content="{{ $pageDescription }}" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <style>
+    :root {
+      --void: #05080a;
+      --sand: #e6dbc4;
+      --coral: #c75b39;
+      --depth: #0f181b;
+      --surf: #1a2e33;
+      --mist: #8a9a96;
+      --signal: #5ce1e6;
+      --drift: 18s;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "IBM Plex Mono", "SF Mono", Consolas, monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--sand);
+      background: var(--void);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Noise grain overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      opacity: 0.04;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* Scanline drift */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(92, 225, 230, 0.015) 2px,
+        rgba(92, 225, 230, 0.015) 4px
+      );
+      pointer-events: none;
+      animation: scan 12s linear infinite;
+    }
+
+    @keyframes scan {
+      from { transform: translateY(0); }
+      to { transform: translateY(8px); }
+    }
+
+    .stream {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 6vh 5vw 8vh;
+      position: relative;
+    }
+
+    /* Header glyph - CSS only */
+    .glyph {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 3vh;
+      position: relative;
+    }
+    .glyph::before, .glyph::after {
+      content: "";
+      position: absolute;
+      border: 1.5px solid var(--coral);
+      animation: pulse-glyph 4s ease-in-out infinite;
+    }
+    .glyph::before {
+      width: 100%; height: 100%;
+      border-radius: 50% 0 50% 50%;
+      transform: rotate(45deg);
+    }
+    .glyph::after {
+      width: 60%; height: 60%;
+      top: 20%; left: 20%;
+      border-radius: 0 50% 50% 50%;
+      border-color: var(--signal);
+      animation-delay: 1s;
+      transform: rotate(135deg);
+    }
+
+    @keyframes pulse-glyph {
+      0%, 100% { opacity: 0.4; transform: rotate(45deg) scale(1); }
+      50% { opacity: 0.9; transform: rotate(45deg) scale(1.05); }
+    }
+
+    .channel {
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 0.8vh;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 6vw, 2.6rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 3vh;
+      color: var(--sand);
+    }
+
+    .status-line {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 5vh;
+      flex-wrap: wrap;
+    }
+
+    .beacon {
+      width: 8px;
+      height: 8px;
+      background: var(--signal);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--signal);
+      animation: beacon 2s ease-out infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes beacon {
+      0% { box-shadow: 0 0 0 0 rgba(92, 225, 230, 0.6); }
+      100% { box-shadow: 0 0 0 20px rgba(92, 225, 230, 0); }
+    }
+
+    .rotating-status {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--mist);
+    }
+
+    /* Transmission sections as continuous flow */
+    .transmission {
+      border-left: 1px solid var(--surf);
+      padding-left: 2rem;
+      margin-bottom: 4vh;
+      position: relative;
+    }
+
+    .transmission::before {
+      content: "";
+      position: absolute;
+      left: -3px;
+      top: 0;
+      width: 5px;
+      height: 5px;
+      background: var(--signal);
+      border-radius: 50%;
+    }
+
+    .transmission-header {
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--mist);
+      margin-bottom: 1.5vh;
+    }
+
+    /* Data as running text, not cards */
+    .data-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .datum {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed var(--depth);
+    }
+
+    .datum-label {
+      color: var(--mist);
+      font-size: 0.75rem;
+    }
+
+    .datum-value {
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .datum-value.vital { color: var(--signal); }
+    .datum-value.stable { color: var(--sand); }
+    .datum-value.low { color: var(--coral); }
+
+    /* Route as text cascade */
+    .route {
+      font-size: 0.85rem;
+      line-height: 2.2;
+      color: var(--mist);
+    }
+
+    .route .node {
+      color: var(--sand);
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .route .node::before {
+      content: "\2192";
+      position: absolute;
+      left: 0;
+      color: var(--coral);
+      opacity: 0.6;
+    }
+
+    .route .node:first-child::before { content: "\25CF"; color: var(--signal); }
+
+    /* Timeline as log entries */
+    .log {
+      font-size: 0.8rem;
+      line-height: 1.9;
+    }
+
+    .log-entry {
+      display: flex;
+      gap: 1.2rem;
+      color: var(--mist);
+    }
+
+    .log-time {
+      color: var(--coral);
+      font-variant-numeric: tabular-nums;
+      min-width: 3.2rem;
+    }
+
+    .log-note {
+      color: var(--sand);
+    }
+
+    /* Footer as simple line */
+    .close {
+      margin-top: 6vh;
+      padding-top: 3vh;
+      border-top: 1px solid var(--surf);
+      font-size: 0.75rem;
+      color: var(--mist);
+      text-align: center;
+    }
+
+    .sigil {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 0.4rem;
+      position: relative;
+      vertical-align: middle;
+    }
+
+    .sigil::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid var(--coral);
+      transform: rotate(45deg);
+      opacity: 0.5;
+    }
+
+    @media (max-width: 480px) {
+      .stream { padding: 4vh 4vw 6vh; }
+      .transmission { padding-left: 1.2rem; }
+      .datum { flex-direction: column; gap: 0.3rem; }
+      .datum-value { text-align: left; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .beacon, .glyph::before, .glyph::after, body::after {
+        animation: none;
+      }
+      .beacon {
+        box-shadow: 0 0 8px var(--signal);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stream">
+    {{- $statusMessages := slice "Traversing zone 7. Coverage intermittent." "Resupply in progress." "Signal regeneration active." "Field calibration underway." "Circuit complete. Awaiting restart authorization." -}}
+    {{- $statusIndex := mod now.Day (len $statusMessages) -}}
+    {{- $currentStatus := index $statusMessages $statusIndex -}}
+
+    <div class="glyph"></div>
+    <div class="channel">Channel 39 / Field Relay</div>
+    <h1>The Great<br/>Sustenance Pilgrimage</h1>
+
+    <div class="status-line">
+      <span class="beacon"></span>
+      <span class="rotating-status">{{ $currentStatus }}</span>
+    </div>
+
+    <section class="transmission">
+      <div class="transmission-header">System Parameters</div>
+      <div class="data-flow">
+        <div class="datum">
+          <span class="datum-label">Hydration</span>
+          <span class="datum-value stable">63%</span>
+        </div>
+        <div class="datum">
+          <span class="datum-label">Caffeine</span>
+          <span class="datum-value low">Depleted</span>
+        </div>
+        <div class="datum">
+          <span class="datum-label">Thermal</span>
+          <span class="datum-value stable">Adjusting</span>
+        </div>
+        <div class="datum">
+          <span class="datum-label">Slipper Integrity</span>
+          <span class="datum-value vital">Holding</span>
+        </div>
+        <div class="datum">
+          <span class="datum-label">Daily Range</span>
+          <span class="datum-value vital">10.1 mi</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="transmission">
+      <div class="transmission-header">Route Trace</div>
+      <div class="route">
+        <span class="node">Base Camp</span><br/>
+        <span class="node">Coffee Acquisition Point</span><br/>
+        <span class="node">Coworking Refuge</span><br/>
+        <span class="node">Emergency Sandwich Depot</span><br/>
+        <span class="node">Secondary Food Source</span><br/>
+        <span class="node">Return to Base</span>
+      </div>
+    </section>
+
+    <section class="transmission">
+      <div class="transmission-header">Event Log</div>
+      <div class="log">
+        <div class="log-entry"><span class="log-time">08:12</span><span class="log-note">Departed shelter</span></div>
+        <div class="log-entry"><span class="log-time">08:47</span><span class="log-note">Coffee acquired</span></div>
+        <div class="log-entry"><span class="log-time">09:31</span><span class="log-note">Tactical resupply initiated</span></div>
+        <div class="log-entry"><span class="log-time">11:02</span><span class="log-note">Sandwich secured</span></div>
+        <div class="log-entry"><span class="log-time">13:44</span><span class="log-note">Return circuit engaged</span></div>
+        <div class="log-entry"><span class="log-time">15:08</span><span class="log-note">Atmospheric assessment</span></div>
+        <div class="log-entry"><span class="log-time">16:01</span><span class="log-note">Mission accomplished</span></div>
+      </div>
+    </section>
+
+    <div class="close">
+      {{ $brandName }}<span class="sigil"></span>Field maintenance active. Transmission resumes post-circuit.
+    </div>
+  </div>
+</body>
+</html>

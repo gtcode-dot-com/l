@@ -1,4 +1,21 @@
 {{/* Investigation base — uses oahu-underground.css (same as homepage) */}}
+{{- /* Pilgrimage Mode: Redirect all pages to home when enabled */ -}}
+{{- if and ($.Site.Params.pilgrimage_mode) (not .IsHome) -}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting to Expedition Base Camp...</title>
+  <meta name="robots" content="noindex,follow" />
+  <meta http-equiv="refresh" content="0; url={{ "/" | relURL }}" />
+  <script>window.location.href = "{{ "/" | relURL }}";</script>
+</head>
+<body>
+  <p>Redirecting to <a href="{{ "/" | relURL }}">Expedition Base Camp</a>...</p>
+</body>
+</html>
+{{- else -}}
 {{- $siteLang := .Site.LanguageCode | default "en" -}}
 {{- $contentLang := .Params.language | default "" -}}
 {{- $langFromHugo := .Lang | default "" -}}
@@ -232,3 +249,4 @@
     {{ end }}
   </body>
 </html>
+{{- end -}}

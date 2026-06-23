@@ -527,7 +527,7 @@ If the Department of Justice has investigated the referral and declined on the m
 
 [^49]: Sylvia Luke unreported contributions: Civil Beat, February 2026; Hawaii Public Radio, February 2026. The $10,000 from Tobi Solidum and Brian Pae received January 20–21, 2022, was not reported to the CSC until after Civil Beat inquiries, approximately February 7–8, 2026. ([archival copy](/sources/the-federal-layer/CivilBeat_SylviaLuke_Feb2026.html))
 
-[^50]: Commission on Judicial Conduct, State of Hawaii, letter to Paul Lowndes, March 13, 2025. Signed by Dickson C.H. Lee, Chair. On file with author (primary).
+[^50]: Commission on Judicial Conduct, State of Hawaii, letter, March 13, 2025. Signed by Dickson C.H. Lee, Chair. On file with author (primary).
 
 [^51]: Ibid. Rule 8.2(b), Rules of the Supreme Court of Hawaiʻi.
 
