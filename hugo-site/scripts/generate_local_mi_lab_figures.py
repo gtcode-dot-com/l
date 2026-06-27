@@ -79,7 +79,7 @@ def draw_practice_loop() -> None:
     fig.text(
         0.5,
         0.925,
-        "Local MI Lab got useful when every attractive result faced a control",
+        "Local MI Lab got useful when every attractive result faced a stricter test",
         ha="center",
         fontsize=18,
         weight="bold",
@@ -88,7 +88,7 @@ def draw_practice_loop() -> None:
     fig.text(
         0.5,
         0.872,
-        "The work moved from descriptive attention to causal patching, then to held-out prompt families and counterexamples.",
+        "The work moved from descriptive attention to causal patching, held-out prompts, and fixed-candidate characterization.",
         ha="center",
         fontsize=11.5,
         color=PALETTE["muted"],
@@ -96,20 +96,21 @@ def draw_practice_loop() -> None:
 
     y = 53
     ax.plot([9, 91], [y, y], color=PALETTE["line"], lw=2.2, solid_capstyle="round")
-    xs = [12, 29, 46, 63, 80]
-    colors = [PALETTE["blue"], PALETTE["teal"], PALETTE["orange"], PALETTE["purple"], PALETTE["red"]]
+    xs = [9, 25.4, 41.8, 58.2, 74.6, 91]
+    colors = [PALETTE["blue"], PALETTE["teal"], PALETTE["orange"], PALETTE["purple"], PALETTE["gray"], PALETTE["red"]]
     labels = [
         ("Baseline", "64/64 positives\nranked target\ninside top 10"),
         ("Controls", "Raw previous-token\nattention also fired\non control families"),
         ("Layer Patching", "attn_out moved\ncontrols; random heads\nlooked better"),
         ("hook_z Sweep", "72 heads x 3 seeds;\nfive narrow\nlocal candidates"),
         ("Held-Out", "16 fixed heads;\n11 falsified,\n5 downgraded"),
+        ("Characterization", "All 16 fixed heads\nclassified as\nfalsified_candidate"),
     ]
 
     for i, (x, color, (title, body)) in enumerate(zip(xs, colors, labels)):
         ax.scatter([x], [y], s=270, color=color, zorder=4, edgecolor="white", linewidth=2)
         top = y + 10 if i % 2 == 0 else y - 38
-        add_box(ax, x - 10.8, top, 21.6, 22, color, title, body)
+        add_box(ax, x - 8.1, top, 16.2, 22, color, title, body)
         if i % 2 == 0:
             ax.plot([x, x], [y + 2.5, top], color=color, lw=1.3)
         else:
@@ -118,7 +119,7 @@ def draw_practice_loop() -> None:
     ax.text(
         50,
         8,
-        "Each step made the intervention narrower, then gave controls another chance to break the story.",
+        "Each step narrowed the claim, then gave controls and characterization another chance to break it.",
         ha="center",
         va="center",
         fontsize=12,
@@ -133,25 +134,25 @@ def draw_candidate_gaps() -> None:
     heads = ["L7H7", "L9H11", "L7H11", "L7H0", "L0H8"]
     multiseed = np.array([0.080596, 0.035749, 0.025868, 0.010526, 0.007738])
     heldout = np.array([-0.009352, -0.049409, 0.182858, 0.074392, 0.000563])
-    statuses = ["falsified", "falsified", "downgraded", "falsified", "downgraded"]
+    characterized = np.array([-0.0550, -0.0048, -0.1316, -0.0336, -0.1949])
 
     fig, ax = plt.subplots(figsize=(11.5, 6.2))
     x = np.arange(len(heads))
-    width = 0.34
-    ax.bar(x - width / 2, multiseed, width, label="Original multi-seed gap", color=PALETTE["blue"])
-    heldout_colors = [PALETTE["red"] if status == "falsified" else PALETTE["orange"] for status in statuses]
-    ax.bar(x + width / 2, heldout, width, label="Held-out mean gap", color=heldout_colors)
+    width = 0.24
+    ax.bar(x - width, multiseed, width, label="Original multi-seed gap", color=PALETTE["blue"])
+    ax.bar(x, heldout, width, label="Held-out mean gap", color=PALETTE["orange"])
+    ax.bar(x + width, characterized, width, label="Characterization mean gap", color=PALETTE["red"])
     ax.axhline(0, color=PALETTE["ink"], lw=1)
     ax.set_xticks(x)
-    ax.set_xticklabels([f"{head}\n{status}" for head, status in zip(heads, statuses)])
+    ax.set_xticklabels([f"{head}\nfalsified" for head in heads])
     ax.set_ylabel("Mean positive-minus-control gap")
-    ax.set_title("The held-out matrix reversed the candidate story")
+    ax.set_title("Characterization closed the candidate set")
     ax.grid(axis="y", color=PALETTE["grid"], lw=0.9)
     ax.set_axisbelow(True)
     ax.legend(frameon=False, loc="upper right")
     ax.margins(x=0.04)
 
-    note = "L7H7 was the strongest original candidate and also carried a prior random-comparison label."
+    note = "All five primary heads ended as falsified_candidate after attention/effect, position, OV/QK, and prompt-family checks."
     fig.text(0.5, 0.02, note, ha="center", fontsize=10.5, color=PALETTE["muted"])
     fig.tight_layout(rect=(0, 0.055, 1, 1))
     save(fig, "candidate-heldout-gaps.svg")
@@ -191,10 +192,52 @@ def draw_heldout_status() -> None:
     save(fig, "heldout-status.svg")
 
 
+def draw_characterization_status() -> None:
+    groups = ["Primary\nheads", "Prior raw\nattention", "Negative\ncontrols", "All fixed\nheads"]
+    falsified = np.array([5, 5, 6, 16])
+    total = np.array([5, 5, 6, 16])
+
+    fig, ax = plt.subplots(figsize=(10.8, 6.0))
+    x = np.arange(len(groups))
+    ax.bar(x, falsified, color=PALETTE["red"], label="falsified_candidate")
+    ax.set_xticks(x)
+    ax.set_xticklabels(groups)
+    ax.set_ylabel("Candidate count")
+    ax.set_ylim(0, 18)
+    ax.set_title("Characterization falsified every fixed head")
+    ax.grid(axis="y", color=PALETTE["grid"], lw=0.9)
+    ax.set_axisbelow(True)
+    ax.legend(frameon=False, loc="upper left")
+
+    for i, (falsified_count, total_count) in enumerate(zip(falsified, total)):
+        ax.text(
+            i,
+            falsified_count + 0.35,
+            f"{falsified_count}/{total_count}",
+            ha="center",
+            va="bottom",
+            fontsize=10,
+            color=PALETTE["ink"],
+            weight="bold",
+        )
+
+    fig.text(
+        0.5,
+        0.02,
+        "The fixed set included five primary heads, five prior raw-attention heads, and six negative controls; none strengthened.",
+        ha="center",
+        fontsize=10.3,
+        color=PALETTE["muted"],
+    )
+    fig.tight_layout(rect=(0, 0.055, 1, 1))
+    save(fig, "characterization-status.svg")
+
+
 def main() -> None:
     draw_practice_loop()
     draw_candidate_gaps()
     draw_heldout_status()
+    draw_characterization_status()
 
 
 if __name__ == "__main__":

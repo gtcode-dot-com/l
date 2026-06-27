@@ -125,6 +125,8 @@ The scientific problem was harsher: the movement lacked enough specificity.
 
 There was also a task-calibration problem. The baseline intended-direction pass rate was only `7/30`. `property_negation` was especially bad, with `0/10` tasks passing intended-direction calibration. If the model does not reliably prefer the expected token contrast before intervention, the downstream intervention result is ambiguous. The run was telling me two things at once: the patch path can move logits, and the task suite was too weak a basis for a negation-specific feature claim.
 
+The likely failure mode was syntactic volume rather than semantic negation. In a Pythia-70M-scale model, contrast-ranked SAE features can pick up high-frequency transitions, token position, or common next-token boosts. Ablating them then acts like a generic perturbation. On matched controls such as "The movie was good. The movie was ...", the model may already sit inside a tighter local completion pattern, so a blunt residual edit can create a larger logit-contrast swing there than on the target prompts. I now call that pattern global control dominance: an SAE feature can correlate with a behavior while still moving controls more than targets.
+
 <figure>
   <img src="specificity-results.svg" alt="Bar chart comparing target prompt movement and control movement for E002, E003, and the best E004 aggregate run." loading="lazy" decoding="async">
   <figcaption>Figure 2. Logit movement mattered only after specificity pressure. Calibration and rescue attempts improved parts of the setup, but control and family failures kept the negation claim unsupported.</figcaption>
@@ -134,7 +136,9 @@ There was also a task-calibration problem. The baseline intended-direction pass 
 
 E003 was designed to test whether E002 had mostly failed because the task bank was bad. The fix was straightforward in principle: generate a larger candidate bank, baseline-calibrate before intervention, require each family to survive, and rerun the same kind of decoded SAE evaluation on the calibrated task source.
 
-The candidate bank had 240 token-valid tasks, 80 per required family. Baseline-only calibration kept 69 tasks: `property_negation=10`, `sentiment_negation=36`, and `state_negation=23`. A meaningful repair. The evaluated run had a baseline intended-direction pass rate of `1.0`.
+The candidate bank had 240 token-valid tasks, 80 per required family. Baseline-only calibration kept 69 tasks: `property_negation=10`, `sentiment_negation=36`, and `state_negation=23`. Of the 171 rejected tasks, 161 failed because the unpatched model favored the wrong direction, while 10 fell below the margin requirement. A meaningful repair. The evaluated run had a baseline intended-direction pass rate of `1.0`.
+
+That gate has to run before any patch score appears. A decoded SAE patch that shifts a margin by `+0.5` still fails if the unpatched model started at `-2.5` for the intended contrast. Without baseline-only calibration, that same number can look like progress while the model still prefers the wrong token.
 
 Then the intervention result got bigger in the wrong way.
 
@@ -144,17 +148,23 @@ The project stopped chasing a positive here and became an education. The larger 
 
 Less exciting. Truer.
 
+## Activation Manifold Telemetry
+
+One check mattered more than I expected: activation-manifold telemetry. The evaluator tracked relative norm drift for the patched residual stream and the decoded delta norm ratio for the SAE reconstruction. A patch that gets a larger target delta by moving the residual far from its baseline scale has stopped acting like a clean intervention. Once relative drift crosses warning levels such as `>0.5`, changed logits reflect a hard shove to the model more than the influence of a specific feature.
+
+The stricter rule denied `strong_candidate_evidence` whenever the norm-drift warning rate exceeded 0. That made a large target delta insufficient by construction. A behavior change accompanied by drift warnings counted as a broken perturbation rather than candidate support.
+
 ## E004: The Rescue Matrix Still Said No
 
 E004 was the specificity rescue attempt. It asked whether the E003 failure could be rescued by nearby layers, stricter pre-intervention feature selection, ablation plus amplification, and a multi-control suite. The matrix tried 15 cells across `blocks.1`, `blocks.2`, and `blocks.3`, using five feature-selection modes.
 
 All 15 cells completed. None reached candidate evidence.
 
-The best aggregate run was `block1_ensemble_specificity_ablate_amplify_multi`. It had target movement of `0.8960492`, control movement of `0.7598730`, and an aggregate specificity gap of `0.1361762`. For a minute, that was the tempting stopping point. The aggregate looked like progress. If I only cared about one number, this would be the place to start overselling.
+The best aggregate run was `block1_ensemble_specificity_ablate_amplify_multi`. It had target movement of `0.8960492`, control movement of `0.7598730`, an aggregate specificity gap of `0.1361762`, and a top-vs-control ratio of `1.179`. For a minute, that was the tempting stopping point. The aggregate looked like progress. If I only cared about one number, this would be the place to start overselling.
 
-But the stricter gates were there for that reason. The best aggregate run still had a multi-control minimum gap of `-0.0194242` and a family minimum gap of `-0.0900231`. At least one configured control suite and at least one required family still failed. The matrix-level adjudication was clear: no candidate cells, no candidate evidence, and no broad negation mechanism claim.
+But the stricter gates were there for that reason. The multi-control suite included lexical-identity, semantic-unrelated, shuffled-target, and hard-negative controls. The best aggregate run still had a multi-control minimum gap of `-0.0194242` and a family minimum gap of `-0.0900231`. At least one configured control suite and at least one required family still failed. The matrix-level adjudication was clear: no candidate cells, no candidate evidence, and no broad negation mechanism claim.
 
-E004 changed how I think about mechanistic interpretability practice. A causal-looking effect alone cannot carry the claim. A larger causal-looking effect cannot either. A favorable aggregate still fails if the family breakdown and control suite reveal the weakness. The evidence unit has to be the whole artifact contract that decides whether the number survives its controls.
+E004 changed how I think about mechanistic interpretability practice. A causal-looking effect alone cannot carry the claim. A larger causal-looking effect cannot either. A favorable aggregate still fails if the family breakdown and control suite reveal the weakness. One flattering mean could have hidden the failed slices; requiring every family and every control suite to stay positive turned the matrix into a falsification screen. The evidence unit has to be the whole artifact contract that decides whether the number survives its controls.
 
 ## The MechLedger Detour
 
@@ -165,6 +175,8 @@ That instinct is good, but it has a failure mode. Building a research-integrity 
 The useful part of MechLedger was the audit kernel: claim statuses, run records, debt reports, draft-claim checks, and a conservative mapping from SELF-GROUND outcomes into evidence statuses. In the MechLedger backfill, E002, E003, and E004 all stay negative or weakened under controls. A good audit tool should preserve that.
 
 The less useful part would have been believing that better provenance makes the science stronger by itself. Provenance makes the weakness easier to see. The experiment still has to carry the claim.
+
+The benchmark boundary got the same treatment. For the RAVEL/SAEBench bridge, I wrote a D008 API feasibility probe instead of claiming integration. The probe wrote a structured `probe_result.json`; in this environment, the status came back `not_installed` because the external `sae_bench` packages were absent. That fail-closed result kept the local work honest: a RAVEL-shaped custom token-contrast evaluation, with upstream benchmark compatibility left unclaimed until the API path supports custom datasets, custom SAE models, or precomputed activations.
 
 ## Starting Over With Smaller Questions
 
@@ -187,9 +199,9 @@ The beginner lesson was clean: raw attention is descriptive, layer-level `attn_o
 
 ## Head-Specific Patching Changed the Question, Not the Claim
 
-The next practice step was to verify whether TransformerLens exposed a truly head-specific hook for GPT-2 small. `blocks.<layer>.attn.hook_z` provided a head axis, while `hook_attn_out` was only layer-level. That distinction changed the intervention from "patch a whole layer's attention output" to "patch one head's output at a selected position."
+The next practice step was to verify whether TransformerLens exposed a truly head-specific hook for GPT-2 small. `blocks.<layer>.attn.hook_z` provided a head axis, while `hook_attn_out` was only layer-level. That distinction changed the intervention from "patch a whole layer's attention output" to "patch one head's output at a selected position." `hook_z` matters because it captures a head's mixed value vectors before the attention out-projection (`W_O`) maps and sums the head outputs back into the residual stream. Patching `hook_attn_out` moves the whole layer after head contributions have been summed, so a positive delta there cannot say which head carried the effect.
 
-The head-specific experiment also used a stricter metric: `true_vs_control_logit_diff`. The looser target-logit metric could reward nonspecific movement. The new metric asked whether the head moved the true token relative to a control token, and whether it did so more on positives than on controls.
+The head-specific experiment also used a stricter metric: `true_vs_control_logit_diff`. The looser target-logit metric could reward nonspecific movement. The new metric asked whether the head moved the true token relative to a control token, and whether it did so more on positives than on controls. That blocked a patch from getting credit for generic logit inflation, punctuation drift, or common-token bias.
 
 Across seeds 0, 1, and 2, the sweep tested 72 heads across selected layers. I noticed L7H7 because it kept coming back across seeds, the kind of thing that makes you want to start naming a mechanism. Other local candidates included L9H11, L7H11, L7H0, and L0H8 under the current rule. Most original raw-attention candidates still failed or became nonspecific. L11H8 had positive seeds but was classified as nonspecific because controls also moved.
 

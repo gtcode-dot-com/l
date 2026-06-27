@@ -11,14 +11,15 @@ ai_agent_note: |
   GPT-2 small induction practice work.
   Preserve the conservative framing: raw previous-occurrence attention failed as a
   sufficient filter; layer-level attn_out patching failed to isolate heads; hook_z
-  patching produced scoped replicated candidates; held-out robustness
-  downgraded or falsified every fixed candidate for this lab stage.
+  patching produced scoped replicated candidates; held-out robustness broke the
+  first candidate story; fixed-candidate characterization later classified all 16
+  heads as falsified_candidate.
 date: '2026-06-26T17:00:00.000000-10:00'
 lastmod: '2026-06-26T17:00:00.000000-10:00'
 author: GTCode.com
 draft: false
 seo_title: "Local MI Lab and GPT-2 Small Induction Practice"
-meta_description: "A first-person account of Local MI Lab, a GPT-2 small mechanistic interpretability practice loop where controls, head-specific patching, and held-out prompts broke an attractive induction-head story."
+meta_description: "A first-person account of Local MI Lab, a GPT-2 small mechanistic interpretability practice loop where controls, head-specific patching, held-out prompts, and candidate characterization falsified an attractive induction-head story."
 meta_keywords:
 - Mechanistic Interpretability
 - GPT-2 Small
@@ -33,7 +34,7 @@ meta_keywords:
 canonical: "https://gtcode.com/articles/local-mi-lab-gpt2-small-induction-controls/"
 robots: "index, follow, max-image-preview:large"
 og_title: "Local MI Lab: How Controls Broke My First Induction Story"
-og_description: "What GPT-2 small induction practice taught me about raw attention false positives, head-specific hook_z patching, held-out prompts, and counterexamples."
+og_description: "What GPT-2 small induction practice taught me about raw attention false positives, head-specific hook_z patching, held-out prompts, candidate characterization, and counterexamples."
 og_image: "/img/local-mi-lab.png"
 og_image_width: 1731
 og_image_height: 909
@@ -55,7 +56,7 @@ article_tags:
   - "AI Research"
 twitter_card: "summary_large_image"
 twitter_title: "Local MI Lab and GPT-2 Small Induction Practice"
-twitter_description: "Controls, hook_z patching, held-out prompts, and the discipline of breaking an attractive induction-head story."
+twitter_description: "Controls, hook_z patching, held-out prompts, characterization, and the discipline of breaking an attractive induction-head story."
 twitter_image: "/img/local-mi-lab.png"
 twitter_image_alt: "Abstract mechanistic interpretability research graphic for Local MI Lab"
 sitemap:
@@ -63,8 +64,8 @@ sitemap:
   priority: 0.8
 slug: local-mi-lab-gpt2-small-induction-controls
 structured_data_webpage:
-  about: A first-person technical reflection on Local MI Lab, GPT-2 small induction practice, causal controls, head-specific hook_z patching, held-out prompt robustness, and negative evidence.
-  description: This article explains how raw attention candidates failed under controls, how head-specific patching produced scoped replicated candidates, and how held-out robustness downgraded or falsified those candidates.
+  about: A first-person technical reflection on Local MI Lab, GPT-2 small induction practice, causal controls, head-specific hook_z patching, held-out prompt robustness, fixed-candidate characterization, and negative evidence.
+  description: This article explains how raw attention candidates failed under controls, how head-specific patching produced scoped replicated candidates, and how held-out robustness plus characterization falsified the fixed candidate set.
   headline: "Local MI Lab: How Controls Broke My First Induction Story"
   type: Article
 title: "Local MI Lab: How Controls Broke My First Induction Story"
@@ -78,8 +79,8 @@ I built Local MI Lab because [SELF-GROUND](/articles/first-mechanistic-interpret
 Coming from systems engineering shaped the lab more than I expected. I wanted scripts before notebooks, artifact files before impressions, and explicit run summaries before I let myself write a story. It also meant the lab kept forcing a question I had avoided in heavier work: when a result looks good, which control would make me give it up?
 
 <figure>
-  <img src="local-mi-lab-loop.svg" alt="Timeline of the Local MI Lab practice loop from baseline GPT-2 small induction behavior through controls, layer-level patching, head-specific hook_z patching, and held-out robustness." loading="lazy" decoding="async">
-  <figcaption>Figure 1. Each pass tightened the evidence contract: behavior first, then attention, controls, patch scope, replication, and held-out prompt families.</figcaption>
+  <img src="local-mi-lab-loop.svg" alt="Timeline of the Local MI Lab practice loop from baseline GPT-2 small induction behavior through controls, layer-level patching, head-specific hook_z patching, held-out robustness, and candidate characterization." loading="lazy" decoding="async">
+  <figcaption>Figure 1. Each pass tightened the evidence contract: behavior first, then attention, controls, patch scope, replication, held-out prompt families, and fixed-candidate characterization.</figcaption>
 </figure>
 
 ## The First Run Looked Clean
@@ -114,11 +115,11 @@ The metric changed too. The earlier target-logit-style metric could reward nonsp
 
 The head-specific sweep tested 72 heads across layers `[0, 2, 4, 7, 9, 11]` for seeds 0, 1, and 2. The artifacts recorded `head_specific_patch=true` and `actual_patch_scope=single_head_z`. Those fields sound bureaucratic until you have already seen how much interpretation can ride on the difference between a layer patch and a head patch.
 
-Seed 0 put L7H7 at the top with a positive-minus-control gap of `0.0884`. Seed 1 put L7H7 at the top again with `0.0893`. Seed 2 did it again with `0.0641`. A candidate repeating across seeds has a different feel from a one-off number. That was exactly the temptation the held-out pass needed to test.
+Seed 0 put L7H7 at the top with a positive-minus-control gap of `0.0884`. Seed 1 put L7H7 at the top again with `0.0893`. Seed 2 did it again with `0.0641`. A candidate repeating across seeds has a different feel from a one-off number. The held-out pass existed for that temptation.
 
 <figure>
-  <img src="candidate-heldout-gaps.svg" alt="Bar chart comparing original multi-seed positive-minus-control gaps with held-out mean gaps for L7H7, L9H11, L7H11, L7H0, and L0H8." loading="lazy" decoding="async">
-  <figcaption>Figure 2. The head-specific sweep made L7H7 look repeatable; the held-out matrix turned that repeatability into a falsification target.</figcaption>
+  <img src="candidate-heldout-gaps.svg" alt="Bar chart comparing original multi-seed, held-out, and characterization positive-minus-control gaps for L7H7, L9H11, L7H11, L7H0, and L0H8." loading="lazy" decoding="async">
+  <figcaption>Figure 2. The head-specific sweep made L7H7 look repeatable; characterization closed the five primary heads as falsified candidates.</figcaption>
 </figure>
 
 ## The Candidate That Kept Coming Back
@@ -150,13 +151,28 @@ L7H7 survived seed-level rows under final-position clean-to-corrupt patching and
 
 The negative controls made the held-out result hard to dodge. L11H0, selected as a negative-control no-effect head from the prior report, survived three seed-level rows and had a mean gap of `0.1124`, yet the consolidated report still falsified it because the detailed failures broke the survival story. If a negative control can look that good under permissive slices, then permissive slices are dangerous.
 
+## Characterization Closed The Candidate Set
+
+Held-out robustness was useful, but it still left an uncomfortable shape: some heads were falsified, some were downgraded, and a few seed-level rows still looked tempting. I did not want to leave the article there because the repo no longer stops there. The next pass fixed the candidate set and asked whether any of those heads could be strengthened by local signatures that looked more induction-like.
+
+The characterization pass kept the same 16 heads: five primary candidates, five prior raw-attention comparison heads, and six negative controls. It ran seeds 20, 21, and 22. The prompt families broadened the surface area again: symbolic short and long, word short and long, number short and long, multi-distractor, reversed-control, and target-swap-control prompts. The diagnostics also widened. Instead of only asking whether a patch moved a logit contrast, the pass checked attention/effect alignment, source and destination position sensitivity, token-domain and sequence-length sensitivity, and local OV/QK margins.
+
+The result was cleaner than the held-out pass. No candidate strengthened. All 16 fixed heads were classified as `falsified_candidate`. The five primary heads all failed: L7H7 ended at a mean positive-minus-control gap of `-0.0550`, L9H11 at `-0.0048`, L7H11 at `-0.1316`, L7H0 at `-0.0336`, and L0H8 at `-0.1949`.
+
+The comparison groups mattered as much as the primary heads. All five prior raw-attention heads ended falsified. L0H4 had one seed-level support row but did not replicate. All six negative controls also ended falsified, while some still produced seed-level support. That was the uncomfortable confirmation I wanted from the lab: even a stricter rule could still produce tempting local rows, so the final interpretation had to come from the consolidated matrix rather than any single good-looking example.
+
+<figure>
+  <img src="characterization-status.svg" alt="Bar chart showing all five primary heads, all five prior raw-attention heads, all six negative controls, and all 16 fixed heads classified as falsified_candidate after characterization." loading="lazy" decoding="async">
+  <figcaption>Figure 4. The characterization pass kept the candidate set fixed and classified all 16 heads as falsified_candidate.</figcaption>
+</figure>
+
 ## Counterexamples Did The Work
 
-The counterexample reports made the failure legible. L7H7 had strong successes: some symbolic and word-sequence rows moved by large amounts under zero or mean ablation. The same report also showed strong failures, control movement, and intervention sensitivity. For L7H7, the no-structure same-token control produced large movements under zero ablation. The final-position clean-to-corrupt mean effect was `-0.0208`, while zero ablation at final position moved positives on average `0.0433` and moved controls in 11 rows.
+The characterization counterexample reports made the failure legible. L7H7 still had strong successes: a `char_multi_distractor` row under zero ablation moved by `0.6624`, and mean ablation on the same family reached `0.6610`. The same candidate also had word-short failures at `-0.3868`, multi-distractor failures around `-0.2946`, and a target-swap control that moved by `1.0170`. That mix is exactly why the consolidated status matters.
 
-L9H11 told a similar story. It had strong symbolic successes, but no-structure controls also moved, including large zero-ablation effects. Its clean-to-corrupt final-position mean effect was only `0.0087`, and controls moved in 25 rows for that condition. L7H11 was even more dramatic: some strong positive examples, some very large failures, controls that moved, and final-position means that flipped negative across intervention types.
+L9H11 told a similar story. It had multi-distractor successes up to `0.3927`, but also a multi-distractor zero-ablation failure at `-0.6542` and reversed-control movement at `0.4538`. L7H11 was even more dramatic: successes around `0.4337`, a clean-to-corrupt multi-distractor failure at `-1.3689`, and a target-swap control that moved by `2.8701`.
 
-I trust that part of the lab most. The counterexample report went beyond a failed label. It showed where the appealing result broke: which family, which intervention, which position, which prompt. From a systems background, that felt like the difference between a red dashboard and a usable incident report. The failure had coordinates.
+I trust that part of the lab most. The counterexample reports went beyond a failed label. They showed where the appealing result broke: which family, which intervention, which position, which prompt. From a systems background, that felt like the difference between a red dashboard and a usable incident report. The failure had coordinates.
 
 ## What I Learned From This Lab
 
@@ -164,22 +180,14 @@ I learned to distrust raw attention faster. Attention patterns are useful for ch
 
 I also learned to treat patch scope as part of the claim. Layer-level `attn_out` patching can teach activation-patching mechanics, but it cannot support a head-level interpretation. The hook metadata matters because the claim depends on the intervention target. If the artifact cannot tell me whether the patch was `single_head_z` or a full layer output, the write-up should stay quiet.
 
-L7H7 changed how I read replication. A candidate can repeat across seeds, beat the original controls, and still fail when the prompt construction changes. Replication under one generator raises the bar for the next test; it does not end the test.
+L7H7 changed how I read replication. A candidate can repeat across seeds, beat the original controls, and still fail when the prompt construction changes. Replication under one generator raises the bar for the next test; it extends the test.
 
-I also got a better feel for what "held-out" has to mean in practice. Changing only the random seed would have been too weak. The useful held-out pass changed token domains, sequence length, control construction, interventions, and positions. It gave the candidate more ways to survive and more ways to contradict itself.
-
-## What I Would Do Next
-
-If I kept going, I would start with the counterexamples before the strongest successes. For L7H7 and L9H11, I would manually inspect the specific held-out rows where controls moved and where intervention variants disagreed. I would ask whether the effect tracks repeated-prefix structure, token identity, position, or some artifact of the clean/corrupt construction.
-
-I would also make the next candidate set smaller. The held-out matrix already did its job. Before adding another model or task, the better move is to take one or two heads, build a hand-inspected prompt set, and write down the failure conditions before running another sweep.
-
-I would keep negative controls in the main causal matrix. L11H0 looking good under seed-level slices mattered because it warned me about the rule. A method that can make a negative control look promising needs a stricter decision rule before it deserves more compute.
+I also got a better feel for what "held-out" and "characterization" have to mean in practice. Changing only the random seed would have been too weak. The useful passes changed token domains, sequence length, control construction, interventions, positions, and local diagnostics. They gave the candidate more ways to survive and more ways to contradict itself.
 
 ## The Result I Got
 
-Local MI Lab gave me a working practice loop for not letting an induction-head story harden before the controls ran.
+Local MI Lab gave me a completed practice loop for refusing an induction-head story before it hardened.
 
-The runs now form a progression: GPT-2 small handled the repeated-token prompts; controls showed that raw attention could follow structure without target specificity; layer-level patching moved metrics at the wrong scope; head-specific patching made replicated candidates worth chasing; held-out prompts forced those candidates to break or downgrade.
+The runs now form a progression: GPT-2 small handled the repeated-token prompts; controls showed that raw attention could follow structure without target specificity; layer-level patching moved metrics at the wrong scope; head-specific patching made replicated candidates worth chasing; held-out prompts broke or downgraded those candidates; fixed-candidate characterization falsified all 16 heads.
 
-I can now look at an attractive mechanistic interpretability artifact and ask a better question: which control, hook, metric, prompt family, or intervention variant would make me stop believing this story?
+No induction head, circuit, or broad GPT-2 claim came out of this lab. What came out was more useful for where I was: I can now look at an attractive mechanistic interpretability artifact and ask which control, hook, metric, prompt family, intervention variant, or diagnostic axis would make me stop believing the story.
