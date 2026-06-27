@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 101
 title: "The Architecture of Access"
@@ -189,7 +190,6 @@ structured_data_graph:
           dateModified: "2026-05-13T00:00:00Z"
           position: 3
 ---
-
 **Pacific OSINT & Security Analysis:** This series maps public-record security, access, and disclosure surfaces. It does not supply evidence for the Wilson Loo courtroom allegation, HPD non-response, the Hartmann threat, or any claim in the author's chronology.
 
 This series maps public-record review surfaces dimension by dimension: first through domestic federal governance proximity, then through international and PRC-facing engagement surfaces, then through funding pathways and financial disclosure — all documented in the public record.

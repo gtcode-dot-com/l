@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 title: "The Postscript of the Audit: Systems-Level Defenses and Tactical Roadmaps"
 slug: postscript-audit-tactical-roadmap
@@ -61,7 +62,6 @@ ai_agent_note: |
 
   CANONICAL URL: https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/
 ---
-
 *An operational postscript and tactical roadmap from Ekewaka Lono*
 
 ---

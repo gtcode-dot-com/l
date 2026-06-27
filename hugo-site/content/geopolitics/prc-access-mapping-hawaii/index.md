@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 13
 title: "The Bridges"
@@ -218,7 +219,6 @@ structured_data_graph:
           name: "counterintelligence exposure"
       keywords: "Warren K.K. Luke, Pacific Forum, APCSS Foundation, Punahou School, PRC party-state engagement, United Front Work Department, CFISS, CICIR, counterintelligence exposure, Hawaii"
 ---
-
 *By Ekewaka Lono | Oahu Underground*
 
 **Pacific OSINT & Security Analysis:** This article is public-record security and access-safeguard analysis. It does not explain the Wilson Loo allegations, HPD non-response, the Hartmann threat, or any claim in the author's chronology.

@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 14
 title: "The Ledger"
@@ -173,7 +174,6 @@ structured_data_graph:
           name: "Fujian Provincial Government"
       keywords: "Chinese Chamber of Commerce of Hawaii, IRS Form 990, Schedule F, Schedule I, Schedule B, Guo Ningning, Fujian Province, CAIFC, compliance analysis, Hawaii"
 ---
-
 **Pacific OSINT & Security Analysis:** This article is a public-record compliance and disclosure review. It is not evidence for the Wilson Loo allegations, HPD non-response, the Hartmann threat, or any claim in the author's chronology.
 
 *By Ekewaka Lono | Oahu Underground*

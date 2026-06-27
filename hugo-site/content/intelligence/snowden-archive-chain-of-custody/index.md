@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 17
 title: "The Chain of Custody"
@@ -176,7 +177,6 @@ structured_data_graph:
           name: "counterintelligence"
       keywords: "Edward Snowden, NSA, Hong Kong, Sheremetyevo, WikiLeaks, Sarah Harrison, Russian intelligence, HPSCI, First Look Media, archive custody"
 ---
-
 **Pacific OSINT & Security Analysis:** This standalone public-record reconstruction covers Snowden-related archive custody. It sits outside the Wilson Loo, Hawaii media, Bing visibility, and author chronology evidence chains and is not evidence for those claims.
 
 *By Ekewaka Lono | Oahu Underground*

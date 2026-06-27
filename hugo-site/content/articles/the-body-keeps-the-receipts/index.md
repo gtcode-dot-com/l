@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "The Body Keeps the Receipts"
 date: 2026-02-26
 lastmod: 2026-05-14T12:00:00-10:00

@@ -1,6 +1,8 @@
 {{ define "main" }}
-  {{ $portfolioLabel := .Params.portfolio_label | default "Investigations" }}
-  {{ $portfolioIndex := .Params.portfolio_index | default "/hawaii-courts/" }}
+  {{ $page := . }}
+  {{ $active := partial "exception/resolve-active-page.html" $page }}
+  {{ $portfolioLabel := $page.Params.portfolio_label | default "Investigations" }}
+  {{ $portfolioIndex := $page.Params.portfolio_index | default "/hawaii-courts/" }}
 
   <!-- Breadcrumb -->
   <nav class="ou-breadcrumb" aria-label="Breadcrumb">
@@ -8,62 +10,66 @@
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
     <a href="{{ $portfolioIndex }}">{{ $portfolioLabel }}</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
-    <strong>{{ .Title }}</strong>
+    <strong>{{ $active.Title }}</strong>
   </nav>
 
   <article class="ou-article">
     <header class="ou-article-header">
       <span class="ou-article-badge">Series</span>
-      <h1 class="ou-article-title">{{ .Title }}</h1>
-      {{ with .Params.subtitle }}
+      <h1 class="ou-article-title">{{ $active.Title }}</h1>
+      {{ with $active.Params.subtitle }}
+      <p class="ou-article-subtitle">{{ . }}</p>
+      {{ end }}
+      {{ with $active.Description }}
       <p class="ou-article-subtitle">{{ . }}</p>
       {{ end }}
       <div class="ou-article-meta">
-        {{ with .Params.author }}
+        {{ with $active.Params.author }}
           <span>By {{ . }}</span>
         {{ end }}
-        {{- $publishedDatetime := .Date.Format "2006-01-02" -}}
-        {{ if .Params.published_display }}
+        {{- $publishedDatetime := "" -}}
+        {{- if not $active.Date.IsZero }}{{ $publishedDatetime = $active.Date.Format "2006-01-02" }}{{ end -}}
+        {{ if and $active.Params.published_display (ne $publishedDatetime "") }}
           <span>&bull;</span>
-          <span>Published: <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.published_display }}</time></span>
+          <span>Published: <time datetime="{{ $publishedDatetime }}">{{ $active.Params.published_display }}</time></span>
         {{ end }}
         {{- $updatedDatetime := "" -}}
         {{- $updatedDisplay := "" -}}
-        {{- if .Lastmod -}}
-          {{- $updatedDatetime = .Lastmod.Format "2006-01-02" -}}
-          {{- $updatedDisplay = .Lastmod.Format "January 2, 2006" -}}
+        {{- if not $active.Lastmod.IsZero -}}
+          {{- $updatedDatetime = $active.Lastmod.Format "2006-01-02" -}}
+          {{- $updatedDisplay = $active.Lastmod.Format "January 2, 2006" -}}
         {{- end -}}
-        {{- with .Params.lastmod -}}
+        {{- with $active.Params.lastmod -}}
           {{- $updatedDatetime = (time.AsTime .).Format "2006-01-02" -}}
           {{- $updatedDisplay = (time.AsTime .).Format "January 2, 2006" -}}
         {{- end -}}
         {{ if and $updatedDatetime (ne $updatedDatetime $publishedDatetime) }}
           <span>&bull;</span>
-          <span>Updated: <time datetime="{{ $updatedDatetime }}">{{ .Params.modified_display | default $updatedDisplay }}</time></span>
+          <span>Updated: <time datetime="{{ $updatedDatetime }}">{{ $active.Params.modified_display | default $updatedDisplay }}</time></span>
         {{ end }}
       </div>
     </header>
 
-    {{ with (.Params.hero_image | default .Params.og_image) }}
+    {{ with ($active.Params.hero_image | default $active.Params.og_image) }}
     <figure class="ou-article-hero">
       {{ partial "media/responsive-image.html" (dict
-        "page" $
+        "page" $page
         "src" .
-        "alt" ($.Params.hero_image_alt | default $.Params.og_image_alt | default $.Title)
+        "alt" ($active.Params.hero_image_alt | default $active.Params.og_image_alt | default $active.Title)
         "slot" "investigation_article_hero"
         "loading" "eager"
         "fetchpriority" "high"
-        "width" ($.Params.hero_image_width | default $.Params.og_image_width | default 1200)
-        "height" ($.Params.hero_image_height | default $.Params.og_image_height | default 630)
+        "width" ($active.Params.hero_image_width | default $active.Params.og_image_width | default 1200)
+        "height" ($active.Params.hero_image_height | default $active.Params.og_image_height | default 630)
       ) }}
     </figure>
     {{ end }}
 
     <div class="ou-article-content">
-      {{ .Content }}
+      {{ $active.Content }}
     </div>
 
-    {{ partial "citation-block.html" . }}
+    {{ partial "citation-block.html" $page }}
 
     <footer class="ou-article-footer">
       <a class="ou-article-back" href="{{ $portfolioIndex }}">&larr; Back to {{ $portfolioLabel }}</a>

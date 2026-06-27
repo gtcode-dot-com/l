@@ -1,9 +1,10 @@
 {{- $ctx := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $ctx -}}
 <aside class="guides-sidebar" aria-label="Article navigation">
   <p class="guides-sidebar-eyebrow">In This Article</p>
   <nav class="guides-nav-level">
     <div class="guides-nav-item">
-      <a href="{{ .RelPermalink }}" class="guides-nav-link active">{{ .Title }}</a>
+      <a href="{{ $ctx.RelPermalink }}" class="guides-nav-link active">{{ $active.Title }}</a>
     </div>
   </nav>
 </aside>

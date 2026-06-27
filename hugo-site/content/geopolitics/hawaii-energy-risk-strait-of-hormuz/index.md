@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 15
 title: "The Barrel"
@@ -183,7 +184,6 @@ structured_data_graph:
           name: "Hawaiian Electric"
       keywords: "Hawaii, Strait of Hormuz, oil dependence, Par Pacific, Hawaiian Electric, energy security, food supply chain, Jones Act, war risk insurance, strategic petroleum reserve, Iran, ECRC"
 ---
-
 **Pacific OSINT & Security Analysis:** This article sits outside the Hawaii judicial-accountability evidence chain. It is an energy and security risk assessment preserved with dated assumptions and confidence levels.
 
 *By Ekewaka Lono | Oahu Underground*

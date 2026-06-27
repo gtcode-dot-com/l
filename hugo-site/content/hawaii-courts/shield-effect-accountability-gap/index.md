@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "The Shield Effect"
 date: 2025-08-26
 lastmod: 2026-06-12
@@ -99,7 +100,6 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Wilson Loo, Shield Effect, Judicial Accountability, Hawaii, HPD"
 ---
-
 ### Legal Notice
 
 *This report documents reported misconduct based on public records, court filings, and firsthand testimony. All individuals are presumed innocent. Firsthand claims are attributed to the complainant's account. Legal conclusions and third-party findings require records, witnesses, or adjudication beyond the complainant's account. This revision uses "shield effect" to describe the practical result of non-review: reports entered institutions, institutions acted or declined to act, and the combined effect was reduced accountability. RICO, criminal-enterprise, and centralized-coordination theories remain outside the article's public-record claim unless separately supported by statutory evidence.*

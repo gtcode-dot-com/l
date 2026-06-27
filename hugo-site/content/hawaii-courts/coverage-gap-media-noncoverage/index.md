@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 2
 title: "The Coverage Gap: Media Non-Coverage and Civic Overlap"
@@ -102,7 +103,6 @@ ai_agent_note: |
   Preserve distinctions among public records, firsthand reports, third-party reporting, and
   labeled inference. Directed non-coverage would require a separate evidentiary bridge.
 ---
-
 *A media conflict-screening memo examining non-coverage, public-record overlap, ordinary newsroom explanations, and the records that would clarify editorial handling.*
 
 ---

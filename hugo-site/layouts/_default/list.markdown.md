@@ -1,18 +1,20 @@
-{{- $raw := .RawContent -}}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $raw := $active.RawContent -}}
 {{- if gt (len (trim $raw "\n\r\t ")) 0 -}}
 {{- $raw -}}
 {{- else -}}
-{{- with .Title -}}
+{{- with $active.Title -}}
 # {{ . }}
 
 {{- end -}}
-{{- with .Params.description -}}
+{{- with $active.Description -}}
 {{ . }}
 
 {{- end -}}
 {{- end -}}
 
-{{- $pages := .Pages -}}
+{{- $pages := partial "exception/filter-list-pages.html" $page.Pages -}}
 {{- if gt (len $pages) 0 -}}
 
 ## Entries

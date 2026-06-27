@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 2
 title: "Reporter's Disclosures: Prior Law Enforcement Contact and Civic Overlap"
@@ -101,7 +102,6 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Oahu Underground reporter disclosures, prior law enforcement contact, civic overlap, firsthand account, evidence standards, Hawaii accountability"
 ---
-
 This page is a reporter-disclosure lane explaining the background against which the Oahu Underground investigations developed. Some events are documented. Some are firsthand accounts. Some depend on sealed records. Some are interpretations of how events accumulated over time.
 
 Oahu is a roughly 600-square-mile island where courts, local politics, law enforcement, military and intelligence-adjacent communities, private wealth, media, and civic institutions share limited institutional space. When a reporter's work moves from music, civic spaces, and technical systems into public-record accountability, overlap with high-voltage local networks is proximity before it is theory. The resulting friction is disclosed here as context and conflict environment, not as proof of a master design.

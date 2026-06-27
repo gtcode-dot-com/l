@@ -1,4 +1,6 @@
 ---
+exception: true
+exception_file: "exception.md"
 title: "The Shift They Taught Him"
 subtitle: "How repeated adult non-response taught a harmed child to minimize what happened"
 date: 2026-05-14
@@ -98,7 +100,6 @@ sitemap:
   changefreq: monthly
   priority: 0.8
 ---
-
 ![The Shift They Taught Him — An empty school hallway rendered as institutional memory, with records, a backpack, and forensic overlays.](the-shift-they-taught-him.jpg)
 
 > **Companion article:** This essay complements [The Body Keeps the Receipts](/articles/the-body-keeps-the-receipts/), which documents the neurobiological, trauma, and institutional mechanisms behind the same pattern.

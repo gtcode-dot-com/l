@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 18
 homepage_exclude: true
@@ -115,7 +116,6 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, judicial conduct question, sealed audio record, firsthand observation, professional responsibility, First Circuit, Hawaii"
 ---
-
 **Editor’s note, May 15, 2026:** Related professional-responsibility analysis appears in [The Lawyer in the Room](/hawaii-courts/lawyer-in-the-room-bosko-petricevic/). This page is an open letter that states the author's firsthand observation plainly while distinguishing that observation from any adjudicated finding about what Mr. Petricevic saw, knew, or understood.
 
 This letter does not rely on any broader institutional theory. It asks what one lawyer saw and what professional duty followed if he saw it.

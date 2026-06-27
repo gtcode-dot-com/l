@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "The Mathematics of Coordinated Silence"
 date: 2026-02-04
 lastmod: 2026-02-04
@@ -77,7 +78,6 @@ sitemap:
   changefreq: monthly
   priority: 0.8
 ---
-
 *How computational systems are learning to detect the invisible architecture of institutional coverups*
 
 ---

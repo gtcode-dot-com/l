@@ -1,3 +1,6 @@
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- partial "fetch-article-meta.html" (dict "context" .) -}}
 {{- $articleMeta := .Scratch.Get "_article_meta" -}}
 {{- if not $articleMeta -}}
@@ -16,7 +19,29 @@
 {{- if hasPrefix $siteLogo "/" }}{{ $siteLogo = printf "%s%s" (strings.TrimRight "/" $siteRoot) $siteLogo }}{{ end -}}
 {{- $siteLogo = replace $siteLogo "http://" "https://" -}}
 
-{{- if .Params.structured_data_graph -}}
+{{- if $isActiveException -}}
+  {{- $headline := partial "seo/plaintext.html" (dict "value" $active.Title "max" 110) -}}
+  {{- $descriptionSource := $active.Description | default ($active.Summary | plainify | truncate 220) -}}
+  {{- if eq (strings.TrimSpace $descriptionSource) "" }}{{ $descriptionSource = .Site.Params.description }}{{ end -}}
+  {{- $description := partial "seo/plaintext.html" (dict "value" $descriptionSource "max" $jsonldDescMax) -}}
+  {{- $schemaType := cond $page.IsPage "Article" "WebPage" -}}
+  {{- $data := dict
+        "@context" "https://schema.org"
+        "@type" $schemaType
+        "headline" $headline
+        "description" $description
+        "url" $pageURL
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" $pageURL)
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" $siteRoot)
+    -}}
+  {{- if not $active.Date.IsZero -}}
+    {{- $data = merge $data (dict "datePublished" ($active.Date.Format "2006-01-02T15:04:05Z07:00")) -}}
+  {{- end -}}
+  {{- if not $active.Lastmod.IsZero -}}
+    {{- $data = merge $data (dict "dateModified" ($active.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
+  {{- end -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if .Params.structured_data_graph -}}
 {{- $jsonText := "" -}}
 {{- if or (reflect.IsMap .Params.structured_data_graph) (reflect.IsSlice .Params.structured_data_graph) -}}
   {{- $jsonText = .Params.structured_data_graph | jsonify -}}

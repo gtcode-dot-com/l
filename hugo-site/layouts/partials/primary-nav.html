@@ -2,6 +2,7 @@
 {{- $section := $ctx.Section -}}
 {{- $portfolioKey := $ctx.Params.portfolio_key | default "" -}}
 {{- $rel := $ctx.RelPermalink -}}
+{{- $exceptionsEnabled := site.Params.enable_exceptions -}}
 {{- $isInvestigations := or
   (or (eq $section "hawaii-courts") (eq $portfolioKey "hawaii-courts") (eq $rel "/hawaii-courts/"))
   (or (eq $section "geopolitics") (eq $portfolioKey "geopolitics") (eq $rel "/geopolitics/"))
@@ -14,6 +15,14 @@
 <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" tabindex="-1">
   <a href="/" {{ if $ctx.IsHome }}class="active"{{ end }}>Home</a>
 
+  {{ if $exceptionsEnabled }}
+  <a href="/consulting/" {{ if eq $section "consulting" }}class="active"{{ end }}>AI Consulting</a>
+  <a href="/guides/" {{ if eq $section "guides" }}class="active"{{ end }}>Guides</a>
+  <a href="/papers/" {{ if eq $section "papers" }}class="active"{{ end }}>Papers</a>
+  <a href="/repos/" {{ if eq $section "repos" }}class="active"{{ end }}>Repos</a>
+  <a href="/articles/" {{ if eq $section "articles" }}class="active"{{ end }}>Articles</a>
+  <a href="/news/" {{ if eq $section "news" }}class="active"{{ end }}>News Wire</a>
+  {{ else }}
   <div class="nav-dropdown">
     <a href="/hawaii-courts/" {{ if $isInvestigations }}class="active"{{ end }}>Investigations</a>
     <div class="nav-dropdown-menu">
@@ -40,4 +49,5 @@
       <a href="/news/" {{ if eq $section "news" }}class="active"{{ end }}>News Wire</a>
     </div>
   </div>
+  {{ end }}
 </nav>

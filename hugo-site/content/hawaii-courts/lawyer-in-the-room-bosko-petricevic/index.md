@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 19
 homepage_exclude: true
@@ -131,7 +132,6 @@ structured_data_graph:
           name: "Sealed audio record"
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, Rule 8.3(b), reported judicial misconduct, reporting duty, sealed audio, Commission on Judicial Conduct, First Circuit, Hawaii"
 ---
-
 This article is the canonical professional-responsibility analysis for the Bosko Petricevic issue: what happened in the reported December 2, 2022 sequence, what the sealed audio can test, and what HRPC 8.3(b) would require if counsel witnessed and understood the reported judicial signal.
 
 ### Evidence Classification

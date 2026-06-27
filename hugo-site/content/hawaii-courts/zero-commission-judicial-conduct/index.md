@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 8
 title: "The Zero Commission"
@@ -146,7 +147,6 @@ structured_data_graph:
           name: "OIP Opinion Letter F22-02"
       keywords: "hawaii commission on judicial conduct, judicial oversight hawaii, rule 8.4 confidentiality, hb 3056, closed loop series, complaint outcomes"
 ---
-
 There is a building in Honolulu where complaints can leave almost no public review trail.
 
 You would not know it from the outside. The Commission on Judicial Conduct operates behind confidentiality rules that restrict public review of complaints, investigations, recusals, and dispositions. Seven members. All appointed by the Supreme Court. In fiscal year 2023–2024, the Commission received 1,009 inquiries from the public. It processed seven as formal complaints. It dismissed every one.

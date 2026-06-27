@@ -4,7 +4,15 @@
   Reads from site.Data.citations keyed by .RelPermalink.
   Only renders if citation data exists for the current page.
 */}}
-{{- $cite := index site.Data.citations .RelPermalink -}}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $cite := dict -}}
+{{- if not $isActiveException -}}
+  {{- with index site.Data.citations $page.RelPermalink -}}
+    {{- $cite = . -}}
+  {{- end -}}
+{{- end -}}
 {{- if $cite -}}
 <style>
 .citation-block{margin-top:3rem;padding:1.5rem;border:1px solid var(--ou-border,var(--color-border,#30363d));border-radius:.5rem;background:var(--ou-bg-alt,var(--color-bg-alt,#161b22))}

@@ -1,4 +1,6 @@
 ---
+exception: true
+exception_content_path: "exceptions/home"
 title: "Oahu Underground by GTCode | Hawaii Public-Interest Records Audit"
 seo_title: "Oahu Underground | Hawaii Public Records"
 description: "Oahu Underground is a public-interest records-audit project based in Hawaii. The homepage leads with The Silent Conspiracy and routes readers to the Hawaii Courts records package."
@@ -101,7 +103,6 @@ structured_data_graph:
           contactType: tips
           email: tips@gtcode.com
 ---
-
 *Independent public-interest records audit from Hawaii*
 
 ---

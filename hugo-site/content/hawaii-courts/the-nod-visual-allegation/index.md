@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 5
 title: "The Nod: Visual Report, Audio Sequence, and Review Gap"
@@ -107,7 +108,6 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Wilson Loo, Reported Judicial Misconduct, Hawaii, Courtroom Record, First Circuit"
 ---
-
 This article is about one disputed courtroom sequence: a firsthand visual report, a question asked under oath, an answer, an attempted record statement, an interruption, and a sealed audio record. Broader institutional questions are addressed separately and are not needed to evaluate this report.
 
 ### Evidence Classification

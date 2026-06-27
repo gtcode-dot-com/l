@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "Google and the Architecture of Information Control: A Technical Audit of Algorithmic Governance, Monopoly Maintenance, and Institutional Coordination"
 date: 2026-02-18
 lastmod: 2026-02-18
@@ -103,7 +104,6 @@ sitemap:
   changefreq: monthly
   priority: 0.8
 ---
-
 ![Google information control audit banner](/img/google-information-control-audit.jpg)
 
 ## Scope and thesis

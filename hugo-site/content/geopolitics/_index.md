@@ -1,4 +1,6 @@
 ---
+exception: true
+exception_content_path: "exceptions/geopolitics"
 draft: false
 title: "Geopolitics Research Files"
 seo_title: "Geopolitics Research Files | Oahu Underground"

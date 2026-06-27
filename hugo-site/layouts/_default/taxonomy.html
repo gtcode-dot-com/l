@@ -1,6 +1,7 @@
 {{/* Term page — individual tag (e.g. /tags/wilson-loo/) */}}
 {{ define "pagination-head" }}
   {{ $pages := .Pages }}
+  {{ $pages = partial "exception/filter-list-pages.html" $pages }}
   {{ if $pages }}
     {{ $paginator := .Paginate ($pages.ByDate.Reverse) }}
     {{ .Scratch.Set "_head_paginator" $paginator }}
@@ -24,13 +25,13 @@
   </nav>
 
   <!-- Tag Header -->
+  {{ $pages := partial "exception/filter-list-pages.html" .Pages }}
   <div class="section-header">
     <h1 class="section-title">{{ .Title }}</h1>
-    <p class="section-description">{{ len .Pages }} {{ cond (eq (len .Pages) 1) "article" "articles" }} tagged &ldquo;{{ .Title }}&rdquo;</p>
+    <p class="section-description">{{ len $pages }} {{ cond (eq (len $pages) 1) "article" "articles" }} tagged &ldquo;{{ .Title }}&rdquo;</p>
   </div>
 
   <!-- Tagged Articles -->
-  {{ $pages := .Pages }}
   {{ if $pages }}
     {{ $paginator := .Scratch.Get "_head_paginator" }}
     {{ if not $paginator }}

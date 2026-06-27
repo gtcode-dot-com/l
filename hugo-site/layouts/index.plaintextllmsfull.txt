@@ -1,8 +1,23 @@
 {{- /* llms-full.txt — expanded context for LLMs, per https://llmstxt.org/ */ -}}
-# {{ site.Title }}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+# {{ $active.Title | default site.Title }}
 
-> {{ site.Params.description }}
+> {{ $active.Description | default site.Params.description }}
 
+{{- if $isActiveException }}
+This site publishes GTCode technical work: AI systems consulting, ML research notes, implementation guides, software projects, and technical articles from Ekewaka Lono.
+
+- Author: {{ site.Params.author }}
+- Contact: {{ site.Params.contact_email }}
+- Concise version: {{ "llms.txt" | absURL }}
+- Consulting: {{ "consulting/" | absURL }}
+- Articles: {{ "articles/" | absURL }}
+- Guides: {{ "guides/" | absURL }}
+- Repositories: {{ "repos/" | absURL }}
+- News wire: {{ "news/" | absURL }}
+{{- else }}
 This site publishes: (1) Oahu Underground — independent investigative journalism documenting institutional accountability failures in Hawaiʻi through public records, financial disclosures, and court filings; and (2) GTCode — AI engineering consulting with open-source Elixir libraries on Hex.pm.
 
 - Author: {{ site.Params.author }}
@@ -12,8 +27,11 @@ This site publishes: (1) Oahu Underground — independent investigative journali
 - Hawaii courts hub: {{ "hawaii-courts/" | absURL }}
 - Full investigation archive: {{ "investigation/" | absURL }}
 - Research portfolios: {{ "portfolios/" | absURL }}
+{{- end }}
+{{- if not $isActiveException }}
 {{- with site.GetPage "/investigation" }}
 {{- $llmsInvestigationPages := where (where .Pages.ByWeight "Params.llms_exclude" "ne" true) "Params.portfolio_key" "hawaii-courts" -}}
+{{- $llmsInvestigationPages = partial "exception/filter-list-pages.html" $llmsInvestigationPages -}}
 {{ with $llmsInvestigationPages }}
 
 ## Hawaii Courts Portfolio
@@ -38,7 +56,8 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 ---
 {{ end }}
 {{ end }}{{ end }}
-{{- with site.GetPage "/articles" }}{{ with .Pages.ByDate.Reverse }}
+{{- end }}
+{{- with site.GetPage "/articles" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages.ByDate.Reverse }}
 
 ## Articles
 {{ range . }}
@@ -60,7 +79,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 ---
 {{ end }}
 {{ end }}{{ end }}
-{{- with site.GetPage "/papers" }}{{ with .Pages.ByDate.Reverse }}
+{{- with site.GetPage "/papers" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages.ByDate.Reverse }}
 
 ## Research Papers
 {{ range . }}
@@ -79,7 +98,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 ---
 {{ end }}
 {{ end }}{{ end }}
-{{- with site.GetPage "/guides" }}{{ with .Pages }}
+{{- with site.GetPage "/guides" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages }}
 
 ## Guides
 {{ range . }}
@@ -119,7 +138,29 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 
 {{ .RawContent }}
 {{- end }}
-{{- with site.GetPage "/policies" }}{{ with .Pages }}
+{{- if $isActiveException -}}
+{{- $pages := slice -}}
+{{- range (slice "/policies/ai" "/policies/agent" "/policies/llm" "/policies/robots" "/policies/humans") -}}
+  {{- with site.GetPage . -}}{{- $pages = $pages | append . -}}{{- end -}}
+{{- end -}}
+{{- with $pages }}
+
+## Policies
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}
+{{- else -}}
+{{- with site.GetPage "/policies" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages }}
 
 ## Policies
 {{ range . }}
@@ -135,3 +176,4 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 ---
 {{ end }}
 {{ end }}{{ end }}
+{{- end }}

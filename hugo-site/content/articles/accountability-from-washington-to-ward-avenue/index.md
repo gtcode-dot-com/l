@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "Accountability from Washington to Ward Avenue: What Federal Reform Means for Hawaii"
 date: 2026-01-29
 lastmod: 2026-01-29
@@ -78,7 +79,6 @@ sitemap:
   changefreq: monthly
   priority: 0.8
 ---
-
 In Washington they are talking about accountability again. The word gets used the way people in Honolulu use *aloha* — constantly, ceremonially, and sometimes to mean its opposite. But something concrete is happening at the Office of the Director of National Intelligence, and the person making it happen grew up on the windward side of Oahu, which means it belongs to us whether we claim it or not.
 
 Tulsi Gabbard, Hawaii's second district, DNI since February 2025. The partisan arguments about her you already know. Set those aside. What she has actually done in office is more interesting than what anyone thinks of her.

@@ -1,5 +1,6 @@
 {{ define "pagination-head" }}
   {{ $pages := .Pages | default .Site.RegularPages }}
+  {{ $pages = partial "exception/filter-list-pages.html" $pages }}
   {{ if $pages }}
     {{ $orderedScratch := newScratch }}
     {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
@@ -26,31 +27,34 @@
 {{ end }}
 
 {{ define "main" }}
+  {{- $page := . -}}
+  {{- $active := partial "exception/resolve-active-page.html" $page -}}
   <!-- Breadcrumb -->
   <nav class="breadcrumb">
     <a href="/">Home</a>
     <span class="breadcrumb-separator">&rsaquo;</span>
-    {{ if .IsSection }}
-      <strong>{{ .Title }}</strong>
+    {{ if $page.IsSection }}
+      <strong>{{ $active.Title }}</strong>
     {{ end }}
   </nav>
 
   <!-- Section Header -->
   <div class="section-header">
-    <h1 class="section-title">{{ .Title }}</h1>
-    {{ with .Params.description }}
+    <h1 class="section-title">{{ $active.Title }}</h1>
+    {{ with $active.Description }}
       <p class="section-description">{{ . }}</p>
     {{ end }}
   </div>
 
-  {{ with .Content }}
+  {{ with $active.Content }}
     <div class="section-body">
       {{ . | safeHTML }}
     </div>
   {{ end }}
 
   <!-- Articles List -->
-  {{ $pages := .Pages | default .Site.RegularPages }}
+  {{ $pages := $page.Pages | default $page.Site.RegularPages }}
+  {{ $pages = partial "exception/filter-list-pages.html" $pages }}
   {{/* Build available languages via CSV accumulation */}}
   {{/* Language filter UI removed; we now filter server-side */}}
   {{ if $pages }}
@@ -58,7 +62,7 @@
     {{ if not $paginator }}
       {{ $orderedScratch := newScratch }}
       {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
-      {{ $sortHint := lower (.Params.list_sort | default "") }}
+      {{ $sortHint := lower ($page.Params.list_sort | default "") }}
       {{ if eq $sortHint "weight" }}
         {{ $orderedScratch.Set "ordered" (sort $pages ".Params.weight") }}
       {{ else if eq $sortHint "weight_desc" }}

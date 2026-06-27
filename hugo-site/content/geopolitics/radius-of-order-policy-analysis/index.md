@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 16
 title: "The Radius of Order"
@@ -151,7 +152,6 @@ structured_data_graph:
         - "@type": "Place"
           name: "United States"
 ---
-
 **Separate policy analysis:** This article is a policy thought experiment. It is unrelated to the Hawaii accountability case files, the author chronology, Bing visibility, or access-and-safeguards portfolio.
 
 Big idea. No tweaking one sentencing guideline. No stapling on another useless pilot program. Redraw the whole country as five rings.

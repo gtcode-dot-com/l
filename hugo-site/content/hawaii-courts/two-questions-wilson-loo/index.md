@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 10
 title: "The Two Questions: How One Interview Could Test the Wilson Loo Case"
@@ -114,7 +115,6 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Wilson Loo, deprivation of rights, 18 USC 242, subornation of perjury, 18 USC 1622, DOJ Public Integrity, FBI, Hawaii, judicial accountability, statute of limitations, United States v Lanier"
 ---
-
 # The Two Questions
 
 ## How One Interview Could Test the Wilson Loo Case

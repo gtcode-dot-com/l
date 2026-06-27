@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "Cartography for Guppies"
 slug: cartography-for-guppies
 date: 2026-02-05
@@ -126,7 +127,6 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "Oahu Underground, publisher's note, Ekewaka Lono, investigative journalism, Hawaii"
 ---
-
 *A publisher's note from Ekewaka Lono*
 
 ---

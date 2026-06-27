@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 11
 title: "Mechanisms of Review Failure"
@@ -133,7 +134,6 @@ structured_data_graph:
       articleSection: "Investigations"
       keywords: "review failure, sealed records, complaint routing, reputational poisoning, oversight closure, structural analysis"
 ---
-
 When a complainant moves through multiple institutions and every channel closes, the most testable issues are procedural: what each institution did, what record it created, what it failed to review, and how one institution's non-response became the next institution's starting point.
 
 This piece describes a structural model assembled from public cases, litigation, oversight records, and reform debates. It describes how review failure can accumulate without proving that every actor decided to produce a shared outcome.

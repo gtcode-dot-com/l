@@ -1,4 +1,6 @@
 ---
+exception: true
+exception_content_path: "exceptions/disclosures"
 draft: false
 title: "Reporter Disclosures"
 seo_title: "Reporter Disclosures | Oahu Underground"

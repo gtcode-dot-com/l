@@ -1,9 +1,13 @@
-{{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $brandName := strings.TrimSpace ($active.Params.brand_name | default "Oahu Underground") -}}
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
 {{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Type" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Params.portfolio_key" "hawaii-courts" -}}
+{{- $investigationPagesAll = partial "exception/filter-list-pages.html" $investigationPagesAll -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationsByUpdated := sort $investigationPages "Lastmod" "desc" -}}
@@ -29,6 +33,14 @@
   {{- end -}}
 {{- end -}}
 {{- $data := .Site.Data.neutralization_stack -}}
+{{- if $isActiveException -}}
+# {{ $active.Title }}
+
+{{ with $active.Description }}{{ . }}
+
+{{ end -}}
+{{ $active.RawContent }}
+{{- else -}}
 # {{ .Title }}
 
 {{ .Params.hero_kicker | default "Open Letter" }}
@@ -269,7 +281,8 @@ If you have documents, first-hand knowledge, or information relevant to institut
 {{ end -}}
 
 ## Latest Articles
-{{ $articles := first 5 (sort (where .Site.RegularPages "Section" "articles") "Date" "desc") -}}
+{{ $articlePages := partial "exception/filter-list-pages.html" (where .Site.RegularPages "Section" "articles") -}}
+{{ $articles := first 5 (sort $articlePages "Date" "desc") -}}
 {{ range $articles }}
 - [{{ .Title }}]({{ .RelPermalink }}){{- with .Date }} — {{ .Format "2006-01-02" }}{{- end }}{{- with .Params.meta_description }}
   {{ . }}{{- end }}
@@ -278,4 +291,5 @@ If you have documents, first-hand knowledge, or information relevant to institut
 ## Site Sections
 {{ range sort .Site.Sections "Title" }}
 - [{{ .Title }}]({{ .RelPermalink }}) — {{ len .Pages }} pages{{- with .Params.description }} · {{ . }}{{- end }}
+{{- end }}
 {{- end }}

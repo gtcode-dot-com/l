@@ -1,4 +1,6 @@
 ---
+exception: true
+exception_content_path: "exceptions/intelligence"
 draft: false
 title: "Intelligence Research Files"
 seo_title: "Intelligence Research Files | Oahu Underground"

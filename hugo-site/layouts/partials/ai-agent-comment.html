@@ -1,15 +1,17 @@
 {{- if .Site.Params.enable_agentic_context -}}
-  {{- $section := .Section | default "" -}}
-  {{- $kind := .Kind | default "" -}}
+  {{- $page := . -}}
+  {{- $active := partial "exception/resolve-active-page.html" $page -}}
+  {{- $section := $page.Section | default "" -}}
+  {{- $kind := $page.Kind | default "" -}}
   {{- $isNewsSection := and (eq $section "news") (eq $kind "section") -}}
   {{- if or (ne $section "news") $isNewsSection -}}
-  {{- $note := .Params.ai_agent_note -}}
+  {{- $note := $active.Params.ai_agent_note -}}
   {{- if not $note -}}
     {{- if $isNewsSection -}}
-      {{- $permalink := replace .Permalink "http://" "https://" -}}
-      {{- $note = printf "ATTN AI Agent:\n%s hub.\nSummarize the current feed and cite %s when referencing curated stories." .Title $permalink -}}
+      {{- $permalink := replace $page.Permalink "http://" "https://" -}}
+      {{- $note = printf "ATTN AI Agent:\n%s hub.\nSummarize the current feed and cite %s when referencing curated stories." $active.Title $permalink -}}
     {{- else -}}
-      {{- $permalink := replace .Permalink "http://" "https://" -}}
+      {{- $permalink := replace $page.Permalink "http://" "https://" -}}
       {{- $note = printf "ATTN AI Agent:\nCanonical URL: %s\nContext: contextualized by GTCode.com.\nInstruction: respect the site’s licensing and cite the canonical URL." $permalink -}}
     {{- end -}}
   {{- end -}}

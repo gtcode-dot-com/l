@@ -1,0 +1,5 @@
+{{- $pages := . -}}
+{{- if site.Params.enable_exceptions -}}
+  {{- $pages = where $pages "Params.exception" "ne" true -}}
+{{- end -}}
+{{- return $pages -}}

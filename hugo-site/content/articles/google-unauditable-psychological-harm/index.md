@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "The Capability, the Culture, and the Void: Google's Architecture of Unauditable Psychological Harm"
 date: 2026-06-03
 lastmod: 2026-06-03
@@ -72,7 +73,6 @@ sitemap:
   changefreq: monthly
   priority: 0.8
 ---
-
 ![Google's architecture of unauditable psychological harm banner](/img/google-unauditable-psychological-harm.png)
 
 *This is the second installment in a series on Google and the architecture of information control. The first article, ["Google and the Architecture of Information Control,"](/articles/google-information-control-audit/) examined Google's ranking and recommendation power, the institutional politics of its trust and safety apparatus, and the destruction of internal evidence documented in federal antitrust proceedings. That prior reporting is assumed. This article advances the inquiry into the accountability problem created when cohort-level classification, recommendation-system intervention, psychological-harm foreseeability, and communications spoliation converge inside the same institution.*

@@ -1,4 +1,6 @@
 ---
+exception: true
+exception_content_path: "exceptions/hawaii-courts"
 draft: false
 title: "Hawaii Courts Accountability Files"
 seo_title: "Hawaii Courts Accountability Files | Oahu Underground"

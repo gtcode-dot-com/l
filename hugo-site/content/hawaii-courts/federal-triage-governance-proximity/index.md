@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 12
 title: "Federal Triage and Governance Proximity"
@@ -148,7 +149,6 @@ structured_data_graph:
           url: "https://www.law.cornell.edu/uscode/text/18/1622"
       keywords: "Wilson M.N. Loo, federal triage, conflict screening, sealed audio, 18 U.S.C. § 242, deprivation of rights under color of law, DOJ Public Integrity Section, institutional accountability"
 ---
-
 The Wilson Loo review path turns on ordinary investigative steps: interview the witness, obtain the sealed audio, review the court-file exhibit, reconstruct line of sight, and ask the people present what they saw. The review question is whether those records and interviews corroborate or undermine the reported December 2, 2022 courtroom sequence.
 
 There is no public indication that any investigative contact has been made, and no such contact has been communicated to the author.

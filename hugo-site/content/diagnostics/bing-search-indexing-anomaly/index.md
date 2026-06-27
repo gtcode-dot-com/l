@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 7
 title: "Bing Indexing Diagnostics"
@@ -120,7 +121,6 @@ structured_data:
       articleSection: "Diagnostics"
       keywords: "Bing, Search-Index Anomaly, Search Visibility, Microsoft, Open Source, Independent Journalism"
 ---
-
 Bing's own tools reported inconsistent states for gtcode.com depending on the page inspected: blocked, not discovered, invisible in public search, or indexed successfully. Public Bing behavior has now moved through three captured states: zero visible domain results on February 12, partial May 12 visibility with one visible gtcode.com result on the captured first page, and a May 17 return to zero visible `site:gtcode.com` results.
 
 The May 17 evidence adds two controls. First, a same-day public Bing search for `site:nshkr.com`, a lower-traffic same-stack control domain, returned ordinary visible results. Second, same-day Cloudflare analytics showed gtcode.com had materially more real traffic than the control domain over the previous 30 days. gtcode.com had more real traffic than the control domain. Bing still returned no visible site-search results for it.

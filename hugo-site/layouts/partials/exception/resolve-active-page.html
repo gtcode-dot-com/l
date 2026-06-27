@@ -1,0 +1,31 @@
+{{- $page := . -}}
+{{- $active := $page -}}
+
+{{- if and site.Params.enable_exceptions $page.Params.exception -}}
+  {{- $resolved := false -}}
+
+  {{- with $page.Params.exception_content_path -}}
+    {{- with site.GetPage . -}}
+      {{- $active = . -}}
+      {{- $resolved = true -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if not $resolved -}}
+    {{- $exceptionFile := $page.Params.exception_file | default "exception.md" -}}
+    {{- with $page.Resources.GetMatch $exceptionFile -}}
+      {{- $active = . -}}
+      {{- $resolved = true -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if not $resolved -}}
+    {{- $fallbackPath := site.Params.exception_fallback_path | default "exceptions/fallback" -}}
+    {{- with site.GetPage $fallbackPath -}}
+      {{- $active = . -}}
+      {{- $resolved = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $active -}}

@@ -1,1 +1,2 @@
-{{ .RawContent }}
+{{- $active := partial "exception/resolve-active-page.html" . -}}
+{{ $active.RawContent }}

@@ -1,19 +1,23 @@
 {{/* Standalone homepage - no baseof.html, no main.css */}}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- $siteLang := .Site.LanguageCode | default "en" -}}
-{{- $contentLang := .Params.language | default "" -}}
-{{- $langFromHugo := .Lang | default "" -}}
+{{- $contentLang := $active.Params.language | default "" -}}
+{{- $langFromHugo := $active.Lang | default "" -}}
 {{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
-{{- $brandName := strings.TrimSpace (.Params.brand_name | default "Oahu Underground") -}}
+{{- $brandName := strings.TrimSpace (cond site.Params.enable_exceptions ($active.Params.brand_name | default "GTCode") ($active.Params.brand_name | default "Oahu Underground")) -}}
 {{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
 {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
-{{- $pageTitle := .Params.seo_title | default .Title | default (printf "%s | Investigative Reporting" $brandName) -}}
-{{- $socialTitleSource := .Params.social_title | default (.Params.og_title | default (.Params.twitter_title | default $pageTitle)) -}}
+{{- $pageTitle := $active.Params.seo_title | default $active.Title | default (printf "%s | Investigative Reporting" $brandName) -}}
+{{- $socialTitleSource := $active.Params.social_title | default ($active.Params.og_title | default ($active.Params.twitter_title | default $pageTitle)) -}}
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
 
 {{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Type" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Params.portfolio_key" "hawaii-courts" -}}
+{{- $investigationPagesAll = partial "exception/filter-list-pages.html" $investigationPagesAll -}}
 {{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
 {{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
 {{- $investigationCount := len $investigationPages -}}
@@ -25,8 +29,8 @@
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
 {{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
-{{- $heroHeadline := .Params.hero_headline | default "The Silent Conspiracy" -}}
-{{- $homeHeroImage := .Params.hero_image | default "/img/ou-silent-conspiracy-hero-1600.jpg" -}}
+{{- $heroHeadline := $active.Params.hero_headline | default "The Silent Conspiracy" -}}
+{{- $homeHeroImage := $active.Params.hero_image | default "/img/ou-silent-conspiracy-hero-1600.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
   {{- $heroParsed := urls.Parse $homeHeroImage -}}
   {{- with $heroParsed.Path -}}
@@ -57,31 +61,32 @@
     <title>{{ $pageTitle }}</title>
 
     <!-- Meta tags -->
-    {{ partial "fetch-article-meta.html" (dict "context" .) }}
-    {{ $articleMeta := .Scratch.Get "_article_meta" }}
+    {{ partial "fetch-article-meta.html" (dict "context" $page) }}
+    {{ $articleMeta := $page.Scratch.Get "_article_meta" }}
     {{ if not $articleMeta }}
       {{ $articleMetaMap := default (dict) (index .Site.Data "article_meta") }}
-      {{ $articleMeta = index $articleMetaMap (trim .RelPermalink "/") }}
+      {{ $articleMeta = index $articleMetaMap (trim $page.RelPermalink "/") }}
     {{ end }}
+    {{ if $isActiveException }}{{ $articleMeta = dict }}{{ end }}
     {{ $pageDescription := .Site.Params.description }}
-    {{ if .Description }}{{ $pageDescription = .Description }}{{ end }}
-    {{ with .Params.meta_description }}{{ $pageDescription = . }}{{ end }}
+    {{ if $active.Description }}{{ $pageDescription = $active.Description }}{{ end }}
+    {{ with $active.Params.meta_description }}{{ $pageDescription = . }}{{ end }}
     {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ end }}
-    {{ $socialDescriptionSource := .Params.social_description | default (.Params.og_description | default (.Params.twitter_description | default $pageDescription)) }}
+    {{ $socialDescriptionSource := $active.Params.social_description | default ($active.Params.og_description | default ($active.Params.twitter_description | default $pageDescription)) }}
     {{ $pageDescription = partial "seo/plaintext.html" (dict "value" $pageDescription "max" $descMax) }}
     {{ $socialDescription := partial "seo/plaintext.html" (dict "value" $socialDescriptionSource "max" $descMax) }}
     <meta name="description" content="{{ $pageDescription }}" />
     <meta name="author" content="{{ .Site.Params.author }}" />
-    {{ with .Params.meta_keywords }}
+    {{ with $active.Params.meta_keywords }}
     <meta name="keywords" content="{{ delimit . ", " }}" />
     {{ end }}
-    {{ $robots := .Params.robots | default "max-image-preview:large" }}
+    {{ $robots := $page.Params.robots | default "max-image-preview:large" }}
     <meta name="robots" content="{{ $robots }}" />
 
-    {{ $canonical := .Permalink }}
-    {{ with .Params.canonical }}{{ $canonical = . }}{{ end }}
+    {{ $canonical := $page.Permalink }}
+    {{ with $page.Params.canonical }}{{ $canonical = . }}{{ end }}
     {{ $canonical = replace $canonical "http://" "https://" }}
-    {{ .Scratch.Set "_seo_canonical" $canonical }}
+    {{ $page.Scratch.Set "_seo_canonical" $canonical }}
     <link rel="canonical" href="{{ $canonical }}" />
     <link rel="alternate" hreflang="{{ $pageLang }}" href="{{ $canonical }}" />
     <link rel="alternate" hreflang="x-default" href="{{ $canonical }}" />
@@ -91,16 +96,16 @@
     {{ end }}
 
     {{ $ogImage := "/img/gtcode-core.svg" }}
-    {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
+    {{ with $active.Params.og_image }}{{ $ogImage = . }}{{ end }}
     {{ with $articleMeta.og_image }}{{ $ogImage = . }}{{ end }}
     {{ if hasPrefix $ogImage "/" }}{{ $ogImage = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $ogImage }}{{ end }}
     {{ $ogImage = replace $ogImage "http://" "https://" }}
-    {{ $ogImageWidth := printf "%v" (.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
-    {{ $ogImageHeight := printf "%v" (.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
+    {{ $ogImageWidth := printf "%v" ($active.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
+    {{ $ogImageHeight := printf "%v" ($active.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
     {{ $socialTitle := partial "seo/plaintext.html" (dict "value" $socialTitleSource "max" $titleMax) }}
-    {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" (.Params.og_image_alt | default (.Site.Params.og_image_alt | default $socialTitle)) "max" 120) }}
+    {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" ($active.Params.og_image_alt | default (.Site.Params.og_image_alt | default $socialTitle)) "max" 120) }}
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
-    {{ $twitterCreator := strings.TrimSpace (.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
+    {{ $twitterCreator := strings.TrimSpace ($active.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
 
     <meta property="og:title" content="{{ $socialTitle }}" />
     <meta property="og:locale" content="{{ $pageLang }}" />
@@ -130,12 +135,14 @@
     <style>{{ $fontsCSS.Content | safeCSS }}</style>
     <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
+    {{ if not $isActiveException }}
     {{ partial "media/preload-responsive-image.html" (dict
-      "page" .
+      "page" $page
       "src" $homeHeroImage
       "slot" "hero_banner"
       "fetchpriority" "high"
     ) }}
+    {{ end }}
 
     <!-- Oahu Underground Stylesheet (inlined to eliminate render-blocking request) -->
     {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify }}
@@ -143,6 +150,7 @@
 
     {{ partial "jsonld.html" . }}
 
+    {{ if not $isActiveException }}
     <!-- Homepage investigative schema -->
     {{ $siteRoot := replace .Site.BaseURL "http://" "https://" }}
     {{ $siteRoot = strings.TrimRight "/" $siteRoot }}
@@ -156,14 +164,14 @@
       "alternateName" (.Site.Params.seo_site_name | default "Oahu Underground by GTCode")
       "url" (printf "%s/" $siteRoot)
       "areaServed" (dict "@type" "AdministrativeArea" "name" "Hawaii")
-      "foundingDate" (.Params.newsroom_founding_date | default "2025-01-01")
+      "foundingDate" ($active.Params.newsroom_founding_date | default "2025-01-01")
       "contactPoint" (slice (dict "@type" "ContactPoint" "contactType" "news tips" "email" $tipsEmail))
       "publishingPrinciples" $editorialPolicyURL
       "correctionsPolicy" $correctionsPolicyURL
       "ethicsPolicy" $ethicsPolicyURL
       "logo" (dict "@type" "ImageObject" "url" $ogImage)
     }}
-    {{ with .Params.newsroom_sameas }}
+    {{ with $active.Params.newsroom_sameas }}
       {{ $newsroom = merge $newsroom (dict "sameAs" .) }}
     {{ end }}
 
@@ -191,6 +199,7 @@
       "@graph" (slice $newsroom $itemList)
     }}
     <script type="application/ld+json">{{ $homepageSchema | jsonify | safeJS }}</script>
+    {{ end }}
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
@@ -226,13 +235,30 @@
 
     <main class="site-main" id="main-content">
       {{ partial "ai-agent-comment.html" . }}
+      {{ if $isActiveException }}
+      <section class="ou-section">
+        <div class="ou-section-inner">
+          <article class="ou-article">
+            <header class="ou-article-header">
+              <h1 class="ou-article-title">{{ $active.Title }}</h1>
+              {{ with $active.Description }}
+              <p class="ou-article-subtitle">{{ . }}</p>
+              {{ end }}
+            </header>
+            <div class="ou-article-content">
+              {{ $active.Content }}
+            </div>
+          </article>
+        </div>
+      </section>
+      {{ else }}
       <!-- Hero Banner -->
       <section class="ou-hero">
         <div class="ou-hero-image">
           {{ partial "media/responsive-image.html" (dict
-            "page" .
+            "page" $page
             "src" $homeHeroImage
-            "alt" (.Params.hero_image_alt | default "Oahu Underground investigative reporting in Hawaii")
+            "alt" ($active.Params.hero_image_alt | default "Oahu Underground investigative reporting in Hawaii")
             "slot" "hero_banner"
             "loading" "eager"
             "fetchpriority" "high"
@@ -242,12 +268,12 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}" class="ou-hero-kicker-link">{{ .Params.hero_kicker | default "Legal Analysis" }}</a></p>
+          <p class="ou-hero-kicker"><a href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}" class="ou-hero-kicker-link">{{ $active.Params.hero_kicker | default "Legal Analysis" }}</a></p>
           <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
-          <p class="ou-hero-subtitle">{{ .Params.hero_subtitle | default "HRPC 8.3(b), mens rea, sealed-record dependency, and a reported First Circuit courtroom sequence" }}</p>
+          <p class="ou-hero-subtitle">{{ $active.Params.hero_subtitle | default "HRPC 8.3(b), mens rea, sealed-record dependency, and a reported First Circuit courtroom sequence" }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ .Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}">{{ .Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
-            <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ .Params.hero_secondary_cta_url | default "/hawaii-courts/" }}">{{ .Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}">{{ $active.Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ $active.Params.hero_secondary_cta_url | default "/hawaii-courts/" }}">{{ $active.Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>
         </div>
@@ -595,15 +621,17 @@
         </div>
       </section>
       {{ end }}
+      {{ end }}
     </main>
 
     <footer class="site-footer">
       <div class="site-footer-inner">
         <div class="footer-section">
           <p class="footer-heading">About</p>
-          <p>{{ .Site.Params.description }}</p>
+          <p>{{ if site.Params.enable_exceptions }}{{ $active.Description | default "GTCode is the technical home of Ekewaka Lono, focused on AI systems engineering, ML research, implementation guides, and consulting." }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
         </div>
 
+        {{ if not site.Params.enable_exceptions }}
         <div class="footer-section">
           <p class="footer-heading">Research Silos</p>
           <ul>
@@ -617,13 +645,23 @@
             {{ end }}
           </ul>
         </div>
+        {{ end }}
 
         <div class="footer-section">
-          <p class="footer-heading">Resources</p>
+          <p class="footer-heading">{{ if site.Params.enable_exceptions }}Technical Resources{{ else }}Resources{{ end }}</p>
           <ul>
+            {{ if not site.Params.enable_exceptions }}
             <li><a href="#start-here">Start Here</a></li>
             <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
             <li><a href="/disclosures/">Reporter Disclosures</a></li>
+            {{ else }}
+            <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/papers/">Papers</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/repos/">Repos</a></li>
+            <li><a href="/news/">News Wire</a></li>
+            {{ end }}
             <li><a href="/index.xml">Site RSS</a></li>
             <li><a href="{{ $newsRSS }}">News RSS</a></li>
             <li><a href="/agent.txt">agent.txt</a></li>
@@ -633,15 +671,24 @@
         </div>
 
         <div class="footer-section">
-          <p class="footer-heading">AI + Consulting</p>
+          <p class="footer-heading">{{ if site.Params.enable_exceptions }}AI Access{{ else }}AI + Consulting{{ end }}</p>
           <ul>
+            {{ if not site.Params.enable_exceptions }}
             <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>
+            <li><a href="/papers/">Papers</a></li>
             <li><a href="/repos/">Repos</a></li>
             <li><a href="/articles/">Articles</a></li>
             <li><a href="/news/">News Wire</a></li>
+            {{ end }}
+            {{ if site.Params.enable_exceptions }}
+            <li><a href="/policies/ai/">AI Policy</a></li>
+            <li><a href="/policies/agent/">AI Agent Policy</a></li>
+            <li><a href="/policies/llm/">LLM Usage Policy</a></li>
+            {{ else }}
             <li><a href="/policies/editorial-standards/">Editorial Standards</a></li>
             <li><a href="/policies/corrections-policy/">Corrections Policy</a></li>
+            {{ end }}
           </ul>
         </div>
       </div>

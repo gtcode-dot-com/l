@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 100
 title: "The Closed Loop"
@@ -168,7 +169,6 @@ structured_data_graph:
           dateModified: "2026-06-12T00:00:00Z"
           position: 2
 ---
-
 Hawaii government repeatedly builds oversight mechanisms structurally tied to the institutions they exist to oversee. The overseer is appointed by or routed through the institution under review. Proceedings are often confidential. Reform legislation can die before changing the process. The comparison is about design vulnerabilities, not coordinated conduct across branches.
 
 This series maps process design across branches. Ordinary explanations matter: confidentiality can protect complainants and subjects; prosecutors may decline for evidentiary reasons; reform bills may die for workload, drafting, or political-priority reasons. The residual issue is whether the design produces public evidence of independent review when the institution being reviewed controls appointment, information flow, or disposition. Corrupt intent by every official is outside the series claim.

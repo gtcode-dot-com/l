@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 20
 homepage_exclude: false
@@ -167,7 +168,6 @@ structured_data_graph:
           name: "ABA Model Rule 8.4(d)"
       keywords: "Bosko Petricevic, Wilson Loo, HRPC 8.3(b), HRPC 8.4(f), HRPC 8.4(c), HRPC 8.4(a), ABA Model Rule 8.4(d), Section 242, Lanier, Webb, Caperton, Napue, Giglio, overbroad Rule 1.6 rationale, judicial signaling, sealed audio, mens rea, professional responsibility, Hawaii First Circuit"
 ---
-
 On December 2, 2022, a Hawaii First Circuit courtroom sequence generated a review problem: the author reports a visual judicial signal, the sealed audio can test the answer, attempted record statement, interruption, and sealing sequence, and HRPC 8.3(b) supplies the professional-responsibility question that follows if a lawyer saw and understood the reported event.
 
 ## Evidence Note

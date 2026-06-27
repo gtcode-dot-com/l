@@ -1,4 +1,5 @@
-{{- $comments := .Params.ai_commentary -}}
+{{- $active := partial "exception/resolve-active-page.html" . -}}
+{{- $comments := $active.Params.ai_commentary -}}
 {{- if and $comments (gt (len $comments) 0) -}}
   <section class="ai-commentary">
     <!-- AI Commentary -->
@@ -9,7 +10,7 @@
         {{ if .body }}<p>{{ .body }}</p>{{ end }}
       </article>
     {{ end }}
-    {{ with .Params.ai_commentary_meta }}
+    {{ with $active.Params.ai_commentary_meta }}
       {{ if .provider }}
         <p class="text-muted" style="font-size:0.9rem;">
           Generated via {{ .provider }} {{ with .model }}({{ . }}){{ end }} on {{ .generated_at }}.

@@ -1,4 +1,6 @@
 ---
+exception: true
+exception_content_path: "exceptions/diagnostics"
 draft: false
 title: "Diagnostics Research Files"
 seo_title: "Diagnostics Research Files | Oahu Underground"

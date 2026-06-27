@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 4
 title: "Wilson Loo: Investigation into Reported Judicial Signaling and Oversight Failure in Hawaii"

@@ -1,32 +1,37 @@
 {{ define "main" }}
+  {{- $page := . -}}
+  {{- $active := partial "exception/resolve-active-page.html" $page -}}
   <!-- Breadcrumb -->
   <nav class="ou-breadcrumb">
     <a href="/">Home</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
     <a href="/articles/">Articles</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
-    <strong>{{ .Title }}</strong>
+    <strong>{{ $active.Title }}</strong>
   </nav>
 
   <article class="ou-article">
     <!-- Article Header -->
     <header class="ou-article-header">
-      {{ with .Params.category }}
+      {{ with $active.Params.category }}
         <span class="ou-article-badge">{{ . }}</span>
       {{ end }}
-      <h1 class="ou-article-title">{{ .Title }}</h1>
+      <h1 class="ou-article-title">{{ $active.Title }}</h1>
+      {{ with $active.Description }}
+        <p class="ou-article-subtitle">{{ . }}</p>
+      {{ end }}
       <div class="ou-article-meta">
-        {{ with .Params.author }}
+        {{ with $active.Params.author }}
           <span>By {{ . }}</span>
         {{ end }}
         {{ $publishedDate := "" }}
-        {{ with .Date }}
-          {{ $publishedDate = .Format "2006-01-02" }}
+        {{ if not $active.Date.IsZero }}
+          {{ $publishedDate = $active.Date.Format "2006-01-02" }}
           <span>&bull;</span>
-          <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
+          <time datetime="{{ $publishedDate }}">{{ $active.Date.Format "January 2, 2006" }}</time>
         {{ end }}
-        {{ $updated := .Lastmod }}
-        {{ with .Params.lastmod }}
+        {{ $updated := $active.Lastmod }}
+        {{ with $active.Params.lastmod }}
           {{ $updated = time.AsTime . }}
         {{ end }}
         {{ $updatedDate := "" }}
@@ -42,11 +47,11 @@
 
     <!-- Article Content -->
     <div class="ou-article-content">
-      {{ $cleanContent := replace (replace .Content "" "") "" "" }}
+      {{ $cleanContent := replace (replace $active.Content "" "") "" "" }}
       {{ $cleanContent | safeHTML }}
     </div>
 
-    {{ partial "citation-block.html" . }}
+    {{ partial "citation-block.html" $page }}
 
     <!-- Article Footer -->
     <footer class="ou-article-footer">

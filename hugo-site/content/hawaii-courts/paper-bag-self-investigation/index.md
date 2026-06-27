@@ -1,4 +1,5 @@
 ---
+exception: true
 draft: false
 weight: 9
 title: "The Paper Bag and the Architecture of Self-Investigation"
@@ -151,7 +152,6 @@ structured_data_graph:
           name: "SB2930 (2022)"
       keywords: "hawaii attorney general special prosecutor, sb2107 special counsel hawaii, hawaii SIPD public corruption, amemiya v sapienza, paper bag inquiry hawaii, executive branch self-investigation"
 ---
-
 In January 2024, [Senate Bill 2107](https://www.capitol.hawaii.gov/sessions/Session2024/Testimony/SB2107_TESTIMONY_JDC_01-25-24_.PDF) arrived at the Senate Judiciary Committee. It was a small piece of legislation — a few paragraphs amending HRS §28-8 to let the Attorney General appoint independent special counsel when an investigation "may present a conflict of interest for the Department." It formalized a power the AG arguably already possessed.
 
 Attorney General Anne Lopez did not forget about it. She submitted [written testimony](https://www.civilbeat.org/2026/02/hawaii-ag-not-giving-up-35k-paper-bag-case/) calling SB2107 "ultimately unnecessary." She already had authority under HRS § 28-8 to appoint special deputy attorneys general with specified duties and powers. She could tap any of the four county prosecutors. She could enlist the Department of Law Enforcement. The tools existed. The bill was redundant.

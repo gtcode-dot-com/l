@@ -5,5 +5,6 @@
 {{- else -}}
 {{- /* Render shortcodes but keep markdown structure, then emit unescaped text output. */ -}}
 {{- $content := $page.RenderShortcodes | htmlUnescape -}}
+{{- $content = replaceRE "^\\s+" "" $content -}}
 {{- $content | safeHTML -}}
 {{- end -}}
