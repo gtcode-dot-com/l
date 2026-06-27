@@ -211,12 +211,10 @@ For the negation SAE line, the honest next choice is either to retire the curren
 
 ## The Result I Actually Got
 
-I did not discover a negation mechanism. I did not discover an induction circuit. I did not produce a publishable feature claim.
+The negation mechanism didn't show up. Neither did the induction circuit. Nothing I'd stake a claim on came out of this.
 
-What I did get was more valuable for a first attempt: a working understanding of how easily mechanistic interpretability can overread its own artifacts, and a local workflow that makes overreading harder.
+What did come out: I know how to sit with a number I like and wait for the controls before writing anything down. The path moved logits. The calibration repair was real. E004's aggregate improved. L7H7 replicated across seeds. All of that was true; none carried the claim.
 
-The decoded SAE path moved logits, the calibrated task bank fixed a genuine blocker, the E004 matrix found an aggregate improvement, and the head-specific GPT-2 small sweep found narrow replicated candidates. Each of those results was real, but none, individually or together, supported the stronger claims I wanted to make.
+That gap between a result that runs and a claim that survives is the thing I didn't understand going in. I understand it now, not as a principle but as something I watched happen to my own numbers.
 
-Mechanistic interpretability requires more than finding internal structure. It also means learning what evidence would make a proposed structure false, then letting the experiment have enough authority to disappoint you. In this case, the disappointment was the research progress.
-
-The first serious result: I stopped treating "I found the feature" as earned by a path that runs or an effect that moves; the claim has to survive controls.
+The first serious result: I can now tell the difference between a path that runs, an effect that moves, and a claim that survives controls.
