@@ -159,7 +159,7 @@ The characterization pass kept the same 16 heads: five primary candidates, five 
 
 The result was cleaner than the held-out pass. No candidate strengthened. All 16 fixed heads were classified as `falsified_candidate`. The five primary heads all failed: L7H7 ended at a mean positive-minus-control gap of `-0.0550`, L9H11 at `-0.0048`, L7H11 at `-0.1316`, L7H0 at `-0.0336`, and L0H8 at `-0.1949`.
 
-The comparison groups mattered as much as the primary heads. All five prior raw-attention heads ended falsified. L0H4 had one seed-level support row but did not replicate. All six negative controls also ended falsified, while some still produced seed-level support. That was the uncomfortable confirmation I wanted from the lab: even a stricter rule could still produce tempting local rows, so the final interpretation had to come from the consolidated matrix rather than any single good-looking example.
+The comparison groups mattered as much as the primary heads. All five prior raw-attention heads ended falsified. L0H4 had one seed-level support row but did not replicate. All six negative controls also ended falsified, while some still produced seed-level support. The uncomfortable confirmation was the point of the lab: even a stricter rule could still produce tempting local rows, so the final interpretation had to come from the consolidated matrix rather than any single good-looking example.
 
 <figure>
   <img src="characterization-status.svg" alt="Bar chart showing all five primary heads, all five prior raw-attention heads, all six negative controls, and all 16 fixed heads classified as falsified_candidate after characterization." loading="lazy" decoding="async">
@@ -168,7 +168,7 @@ The comparison groups mattered as much as the primary heads. All five prior raw-
 
 ## Counterexamples Did The Work
 
-The characterization counterexample reports made the failure legible. L7H7 still had strong successes: a `char_multi_distractor` row under zero ablation moved by `0.6624`, and mean ablation on the same family reached `0.6610`. The same candidate also had word-short failures at `-0.3868`, multi-distractor failures around `-0.2946`, and a target-swap control that moved by `1.0170`. That mix is exactly why the consolidated status matters.
+The characterization counterexample reports made the failure legible. L7H7 still had strong successes: a `char_multi_distractor` row under zero ablation moved by `0.6624`, and mean ablation on the same family reached `0.6610`. The same candidate also had word-short failures at `-0.3868`, multi-distractor failures around `-0.2946`, and a target-swap control that moved by `1.0170`. That mix is why the consolidated status matters.
 
 L9H11 told a similar story. It had multi-distractor successes up to `0.3927`, but also a multi-distractor zero-ablation failure at `-0.6542` and reversed-control movement at `0.4538`. L7H11 was even more dramatic: successes around `0.4337`, a clean-to-corrupt multi-distractor failure at `-1.3689`, and a target-swap control that moved by `2.8701`.
 

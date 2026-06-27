@@ -1,6 +1,6 @@
 ---
 ai_agent_meta:
-  content_digest: null
+  content_digest: 59e3a1fb4ceca04431a7c7f8df50482bba33cad4
   generated_at: '2026-06-26T16:30:00.000000-10:00'
   model: gpt-5-codex
   prompt_version: v2026-06-26-self-ground-blog
@@ -17,7 +17,7 @@ date: '2026-06-26T16:30:00.000000-10:00'
 lastmod: '2026-06-26T16:30:00.000000-10:00'
 author: GTCode.com
 draft: false
-seo_title: "My First Mechanistic Interpretability Attempt"
+seo_title: "My First Real Mechanistic Interpretability Attempt"
 meta_description: "A first-person account of SELF-GROUND, a negation SAE experiment that taught me why controls, calibration, and negative results matter."
 meta_keywords:
 - Mechanistic Interpretability
@@ -55,7 +55,7 @@ article_tags:
   - "Activation Patching"
   - "AI Research"
 twitter_card: "summary_large_image"
-twitter_title: "My First Mechanistic Interpretability Attempt"
+twitter_title: "My First Real Mechanistic Interpretability Attempt"
 twitter_description: "SELF-GROUND, decoded SAE interventions, controls, calibration, and why the first useful result was negative."
 twitter_image: "/img/self-ground-hero.png"
 twitter_image_alt: "Abstract mechanistic interpretability research graphic for SELF-GROUND"
@@ -103,7 +103,7 @@ Path validation helped, but feature-level interpretability required sparse units
 
 Phase 2 moved to the decoded SAE path, and the project got more serious there. The repo verified semantic compatibility alongside tensor shape. It treated [`EleutherAI/pythia-70m`](https://huggingface.co/EleutherAI/pythia-70m) and [`EleutherAI/pythia-70m-deduped`](https://huggingface.co/EleutherAI/pythia-70m-deduped) as different checkpoints, even when a same-width SAE might appear shape-compatible. The matched path used [`EleutherAI/pythia-70m-deduped`](https://huggingface.co/EleutherAI/pythia-70m-deduped), `blocks.2.hook_resid_post`, and the [`pythia-70m-deduped-res-sm`](https://www.neuronpedia.org/pythia-70m-deduped/2-res-sm) SAE release.
 
-A wrong-checkpoint SAE can still have tensors that line up. If the code accepts that as "compatible," the rest of the experiment is built on sand. SELF-GROUND failed closed on the intentional mismatch and passed on the declared matching model and hook. Only after that did it run a decoded ablation: encode, modify SAE features, decode, patch, and measure.
+A wrong-checkpoint SAE can still have tensors that line up. If the code accepts that as "compatible," the rest of the experiment is built on sand. SELF-GROUND failed closed on the intentional mismatch and passed on the declared matching model and hook. Only after that did it run a decoded ablation: encode, modify SAE features, decode, patch, and measure. Ablation here meant zeroing selected SAE feature activations; amplification later meant scaling them up.
 
 The first decoded intervention produced a real nonzero effect. The phrase that mattered was "real nonzero effect"; "negation feature" would have oversold it. Smoke-scale only: four pairs, two selected features, no full control feature set, ablation only. The honest claim was that the path worked. Nothing stronger.
 
@@ -112,6 +112,8 @@ I started appreciating the value of a claim ledger here. The ledger has no glamo
 ## E002: The Path Worked. The Claim Didn't.
 
 E002 was the first serious artifact-backed negation SAE run. It used the TransformerLens plus SAELens decoded intervention path on CUDA, with activation-density-matched controls, random control feature sets, bottom-active controls, and 30 valid tasks across `sentiment_negation`, `property_negation`, and `state_negation`.
+
+A concrete task row looked like this: prompt `"The movie was not good. The movie was"`, target token ` bad`, foil token ` good`, matched control prompt `"The movie was good. The movie was"`, control target ` good`, and control foil ` bad`. That row supplies the unit behind the later specificity numbers: target movement has to beat the matched non-negation control, not merely move the logits.
 
 The run completed. It produced 240 behavioral rows and skipped none. The top feature set moved the target prompts by `0.0341995`.
 
@@ -176,7 +178,7 @@ The useful part of MechLedger was the audit kernel: claim statuses, run records,
 
 The less useful part would have been believing that better provenance makes the science stronger by itself. Provenance makes the weakness easier to see. The experiment still has to carry the claim.
 
-The benchmark boundary got the same treatment. For the RAVEL/SAEBench bridge, I wrote a D008 API feasibility probe instead of claiming integration. The probe wrote a structured `probe_result.json`; in this environment, the status came back `not_installed` because the external `sae_bench` packages were absent. That fail-closed result kept the local work honest: a RAVEL-shaped custom token-contrast evaluation, with upstream benchmark compatibility left unclaimed until the API path supports custom datasets, custom SAE models, or precomputed activations.
+The benchmark boundary got the same treatment. RAVEL-style evaluation asks whether an intervention isolates one causal attribute while leaving matched controls undisturbed. For the RAVEL/SAEBench bridge, I wrote a D008 API feasibility probe instead of claiming integration. The probe wrote a structured `probe_result.json`; in this environment, the status came back `not_installed` because the external `sae_bench` packages were absent. That fail-closed result kept the local work honest: a RAVEL-shaped custom token-contrast evaluation, with upstream benchmark compatibility left unclaimed until the API path supports custom datasets, custom SAE models, or precomputed activations.
 
 ## Starting Over With Smaller Questions
 
@@ -203,7 +205,7 @@ The next practice step was to verify whether TransformerLens exposed a truly hea
 
 The head-specific experiment also used a stricter metric: `true_vs_control_logit_diff`. The looser target-logit metric could reward nonspecific movement. The new metric asked whether the head moved the true token relative to a control token, and whether it did so more on positives than on controls. That blocked a patch from getting credit for generic logit inflation, punctuation drift, or common-token bias.
 
-Across seeds 0, 1, and 2, the sweep tested 72 heads across selected layers. I noticed L7H7 because it kept coming back across seeds, the kind of thing that makes you want to start naming a mechanism. Other local candidates included L9H11, L7H11, L7H0, and L0H8 under the current rule. Most original raw-attention candidates still failed or became nonspecific. L11H8 had positive seeds but was classified as nonspecific because controls also moved.
+Across seeds 0, 1, and 2, the sweep tested 72 heads across selected layers. I noticed L7H7 because it kept coming back across seeds, the kind of thing that makes you want to start naming a mechanism. Three seeds can flag a candidate, not settle one, especially when the same head also appeared as a prior random-comparison candidate. Other local candidates included L9H11, L7H11, L7H0, and L0H8 under the current rule. Most original raw-attention candidates still failed or became nonspecific. L11H8 had positive seeds but was classified as nonspecific because controls also moved.
 
 More interesting than the earlier false positives, still short of an induction-head discovery. The prompt set is synthetic. The intervention is final-position clean-to-corrupt `hook_z` patching. The sweep used selected layers. The controls are simple practice controls. L7H7 was also flagged as a prior random-comparison candidate, which means it deserves manual inspection before it deserves a story.
 
