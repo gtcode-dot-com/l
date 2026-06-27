@@ -233,11 +233,130 @@ def draw_characterization_status() -> None:
     save(fig, "characterization-status.svg")
 
 
+def draw_failure_taxonomy() -> None:
+    modes = [
+        "control_moved",
+        "target_swap_leak",
+        "domain_flip",
+        "length_flip",
+        "intervention_disagreement",
+        "reversed_control_leak",
+        "position_mismatch",
+    ]
+    counts = np.array([80, 54, 40, 40, 40, 26, 16])
+    labels = [
+        "Controls\nmoved",
+        "Target-swap\nleak",
+        "Domain\nflip",
+        "Length\nflip",
+        "Intervention\ndisagreement",
+        "Reversed-control\nleak",
+        "Position\nmismatch",
+    ]
+    colors = [
+        PALETTE["red"],
+        PALETTE["orange"],
+        PALETTE["blue"],
+        PALETTE["teal"],
+        PALETTE["purple"],
+        PALETTE["gray"],
+        PALETTE["green"],
+    ]
+
+    fig, ax = plt.subplots(figsize=(11.5, 6.2))
+    x = np.arange(len(modes))
+    ax.bar(x, counts, color=colors)
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
+    ax.set_ylabel("Row-level failure labels")
+    ax.set_ylim(0, 90)
+    ax.set_title("The taxonomy made the candidate failures specific")
+    ax.grid(axis="y", color=PALETTE["grid"], lw=0.9)
+    ax.set_axisbelow(True)
+
+    for i, value in enumerate(counts):
+        ax.text(i, value + 2, str(value), ha="center", va="bottom", fontsize=10, color=PALETTE["ink"], weight="bold")
+
+    fig.text(
+        0.5,
+        0.02,
+        "Across the primary counterexample artifacts, the failure labels concentrated on controls moving, target-swap leakage, and domain/length instability.",
+        ha="center",
+        fontsize=10.3,
+        color=PALETTE["muted"],
+    )
+    fig.tight_layout(rect=(0, 0.07, 1, 1))
+    save(fig, "failure-taxonomy.svg")
+
+
+def draw_metric_calibration() -> None:
+    families = [
+        "clean format\nvariant",
+        "clean\nnumber",
+        "clean\nsymbolic",
+        "clean\nword",
+        "frequency trap\ncontrol",
+        "no-repeat\ncontrol",
+        "reversed-order\ncontrol",
+        "same-frequency\ncontrol",
+        "target-swap\ncontrol",
+        "wrong-target\nsame prompt",
+    ]
+    values = np.array(
+        [
+            6.2758,
+            4.7463,
+            5.2454,
+            1.7428,
+            3.2170,
+            0.0835,
+            -1.0967,
+            -0.2299,
+            -3.5317,
+            -3.9115,
+        ]
+    )
+    is_positive = np.array([True, True, True, True, False, False, False, False, False, False])
+    colors = [PALETTE["blue"] if flag else PALETTE["gray"] for flag in is_positive]
+    colors[4] = PALETTE["red"]
+
+    fig, ax = plt.subplots(figsize=(12.2, 6.2))
+    x = np.arange(len(families))
+    ax.bar(x, values, color=colors)
+    ax.axhline(0, color=PALETTE["ink"], lw=1)
+    ax.axhline(1.7428, color=PALETTE["orange"], lw=1.2, linestyle="--", label="Weakest positive mean")
+    ax.set_xticks(x)
+    ax.set_xticklabels(families)
+    ax.set_ylabel("Mean true-vs-control logit diff")
+    ax.set_title("Metric calibration stopped the next candidate search")
+    ax.grid(axis="y", color=PALETTE["grid"], lw=0.9)
+    ax.set_axisbelow(True)
+    ax.legend(frameon=False, loc="upper right")
+
+    for i, value in enumerate(values):
+        offset = 0.18 if value >= 0 else -0.28
+        va = "bottom" if value >= 0 else "top"
+        ax.text(i, value + offset, f"{value:.2f}", ha="center", va=va, fontsize=8.8, color=PALETTE["ink"])
+
+    fig.text(
+        0.5,
+        0.02,
+        "The frequency-trap control averaged 3.2170 with fraction_diff_positive = 1.0, above the weakest positive family mean of 1.7428.",
+        ha="center",
+        fontsize=10.3,
+        color=PALETTE["muted"],
+    )
+    fig.tight_layout(rect=(0, 0.075, 1, 1))
+    save(fig, "metric-calibration.svg")
+
+
 def main() -> None:
     draw_practice_loop()
     draw_candidate_gaps()
     draw_heldout_status()
     draw_characterization_status()
+    draw_failure_taxonomy()
+    draw_metric_calibration()
 
 
 if __name__ == "__main__":

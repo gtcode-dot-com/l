@@ -13,13 +13,14 @@ ai_agent_note: |
   sufficient filter; layer-level attn_out patching failed to isolate heads; hook_z
   patching produced scoped replicated candidates; held-out robustness broke the
   first candidate story; fixed-candidate characterization later classified all 16
-  heads as falsified_candidate.
+  heads as falsified_candidate; failure taxonomy and metric calibration stopped
+  the next candidate search at metric_needs_revision.
 date: '2026-06-26T17:00:00.000000-10:00'
-lastmod: '2026-06-26T17:00:00.000000-10:00'
+lastmod: '2026-06-26T18:43:00.000000-10:00'
 author: GTCode.com
 draft: false
 seo_title: "Local MI Lab and GPT-2 Small Induction Practice"
-meta_description: "A first-person account of Local MI Lab, a GPT-2 small mechanistic interpretability practice loop where controls, head-specific patching, held-out prompts, and candidate characterization falsified an attractive induction-head story."
+meta_description: "A first-person account of Local MI Lab, a GPT-2 small mechanistic interpretability practice loop where controls, head-specific patching, characterization, failure taxonomy, and metric calibration falsified an attractive induction-head story."
 meta_keywords:
 - Mechanistic Interpretability
 - GPT-2 Small
@@ -34,7 +35,7 @@ meta_keywords:
 canonical: "https://gtcode.com/articles/local-mi-lab-gpt2-small-induction-controls/"
 robots: "index, follow, max-image-preview:large"
 og_title: "Local MI Lab: How Controls Broke My First Induction Story"
-og_description: "What GPT-2 small induction practice taught me about raw attention false positives, head-specific hook_z patching, held-out prompts, candidate characterization, and counterexamples."
+og_description: "What GPT-2 small induction practice taught me about raw attention false positives, head-specific hook_z patching, characterization, failure taxonomy, metric calibration, and counterexamples."
 og_image: "/img/local-mi-lab.png"
 og_image_width: 1731
 og_image_height: 909
@@ -46,7 +47,7 @@ hero_image_width: 1731
 hero_image_height: 909
 article_author: "https://gtcode.com/#gtcode-staff"
 article_published_time: "2026-06-27T03:00:00Z"
-article_modified_time: "2026-06-27T03:00:00Z"
+article_modified_time: "2026-06-27T04:43:00Z"
 article_section: "Articles"
 article_tags:
   - "Mechanistic Interpretability"
@@ -56,7 +57,7 @@ article_tags:
   - "AI Research"
 twitter_card: "summary_large_image"
 twitter_title: "Local MI Lab and GPT-2 Small Induction Practice"
-twitter_description: "Controls, hook_z patching, held-out prompts, characterization, and the discipline of breaking an attractive induction-head story."
+twitter_description: "Controls, hook_z patching, characterization, failure taxonomy, calibration, and the discipline of breaking an attractive induction-head story."
 twitter_image: "/img/local-mi-lab.png"
 twitter_image_alt: "Abstract mechanistic interpretability research graphic for Local MI Lab"
 sitemap:
@@ -64,8 +65,8 @@ sitemap:
   priority: 0.8
 slug: local-mi-lab-gpt2-small-induction-controls
 structured_data_webpage:
-  about: A first-person technical reflection on Local MI Lab, GPT-2 small induction practice, causal controls, head-specific hook_z patching, held-out prompt robustness, fixed-candidate characterization, and negative evidence.
-  description: This article explains how raw attention candidates failed under controls, how head-specific patching produced scoped replicated candidates, and how held-out robustness plus characterization falsified the fixed candidate set.
+  about: A first-person technical reflection on Local MI Lab, GPT-2 small induction practice, causal controls, head-specific hook_z patching, held-out prompt robustness, fixed-candidate characterization, failure taxonomy, metric calibration, and negative evidence.
+  description: This article explains how raw attention candidates failed under controls, how head-specific patching produced scoped replicated candidates, how characterization falsified the fixed candidate set, and how metric calibration stopped the next candidate search.
   headline: "Local MI Lab: How Controls Broke My First Induction Story"
   type: Article
 title: "Local MI Lab: How Controls Broke My First Induction Story"
@@ -168,11 +169,41 @@ The comparison groups mattered as much as the primary heads. All five prior raw-
 
 ## Counterexamples Did The Work
 
-The characterization counterexample reports made the failure legible. L7H7 still had strong successes: a `char_multi_distractor` row under zero ablation moved by `0.6624`, and mean ablation on the same family reached `0.6610`. The same candidate also had word-short failures at `-0.3868`, multi-distractor failures around `-0.2946`, and a target-swap control that moved by `1.0170`. That mix is why the consolidated status matters.
+The characterization counterexample reports made the failure legible. L7H7 still had strong successes: a `char_multi_distractor` row under zero ablation moved by `0.6624`, and mean ablation on the same family reached `0.6610`. The same candidate also had word-short failures at `-0.3868`, multi-distractor failures around `-0.2946`, and a target-swap control that moved by `1.0170`. That mix explains why the consolidated status matters.
 
 L9H11 told a similar story. It had multi-distractor successes up to `0.3927`, but also a multi-distractor zero-ablation failure at `-0.6542` and reversed-control movement at `0.4538`. L7H11 was even more dramatic: successes around `0.4337`, a clean-to-corrupt multi-distractor failure at `-1.3689`, and a target-swap control that moved by `2.8701`.
 
 I trust that part of the lab most. The counterexample reports went beyond a failed label. They showed where the appealing result broke: which family, which intervention, which position, which prompt. From a systems background, that felt like the difference between a red dashboard and a usable incident report. The failure had coordinates.
+
+## Failure Taxonomy Made The Breakage Boring
+
+After characterization, I did the unglamorous thing I should have wanted from the beginning: I turned the counterexamples into a deterministic failure taxonomy. I did not need another way to talk about L7H7. I needed the failures to become comparable enough that the next step could be constrained.
+
+The taxonomy used the five primary counterexample files and the consolidated characterization summary as inputs. It produced `296` row-level failure labels across the fixed set. The largest category was `control_moved`, with `80` rows. `target_swap_leak` followed with `54`. `domain_flip`, `length_flip`, and `intervention_disagreement` each appeared in `40` rows. `reversed_control_leak` appeared in `26`, and `position_mismatch` in `16`.
+
+<figure>
+  <img src="failure-taxonomy.svg" alt="Bar chart showing row-level failure taxonomy counts: control_moved 80, target_swap_leak 54, domain_flip 40, length_flip 40, intervention_disagreement 40, reversed_control_leak 26, and position_mismatch 16." loading="lazy" decoding="async">
+  <figcaption>Figure 5. The failure taxonomy made the negative result specific: controls moved, target-swap and reversed controls leaked, and domain, length, intervention, and position slices disagreed.</figcaption>
+</figure>
+
+The primary heads all had the same dominant pattern: `control_moved`, `target_swap_leak`, `reversed_control_leak`, `domain_flip`, and `length_flip`. L7H7 and L9H11 also had local OV/QK-looking hints earlier, but those hints never combined with causal specificity. I care about that because it blocks a common escape hatch. Extra diagnostics had joined the evidence for stopping.
+
+Once the failures were in a table, the next move became obvious. A new head search would just be a way to feed a false-positive-prone pipeline more chances. The next experiment had to test the metric and prompt setup itself.
+
+## Metric Calibration Stopped The Search
+
+The calibration pass asked a narrower question than the earlier head work: can `true_vs_control_logit_diff` separate repeated-token positives from controls before I use it to search for mechanisms? It used GPT-2 small, `72` examples, and a pre-registered family set: clean symbolic, word, number, and format-variant repeats on the positive side; wrong-target, target-swap, same-token-frequency, reversed-order, no-repeat, and frequency-trap families on the control side. Tokenization passed for all `72/72` rows.
+
+Some of the calibration looked good at first. The positive mean `true_vs_control_logit_diff` was `4.5026`. The max control mean was `3.2170`, so the aggregate positive-minus-hardest-control gap was `1.2856`. If I only cared about that one number, I could have called the metric usable and moved on.
+
+The pre-registered thresholds did not allow that. The weakest positive family, `calib_clean_repeat_word`, had mean `1.7428`. The hardest control, `calib_frequency_trap_control`, had mean `3.2170` and `fraction_diff_positive = 1.0`. A control family beat the weakest positive family and produced positive-looking rows every time. The final status was `metric_needs_revision`, with `search_allowed: false`.
+
+<figure>
+  <img src="metric-calibration.svg" alt="Bar chart comparing calibration family mean true-vs-control logit differences, showing the frequency-trap control above the weakest positive family mean." loading="lazy" decoding="async">
+  <figcaption>Figure 6. The aggregate metric separated positives from most controls, but the frequency-trap control scored too strongly for candidate search.</figcaption>
+</figure>
+
+The right place to stop was there. The metric had enough signal to be interesting and enough leakage to be dangerous. For a first mechanistic interpretability practice loop, that distinction matters more than squeezing one more head out of the sweep.
 
 ## What I Learned From This Lab
 
@@ -184,10 +215,12 @@ L7H7 changed how I read replication. A candidate can repeat across seeds, beat t
 
 I also got a better feel for what "held-out" and "characterization" have to mean in practice. Changing only the random seed would have been too weak. The useful passes changed token domains, sequence length, control construction, interventions, positions, and local diagnostics. They gave the candidate more ways to survive and more ways to contradict itself.
 
+The last lesson was about stopping. I wanted the pipeline to earn another search. The taxonomy and calibration work refused that. A metric can separate positives on average and still fail because one control family finds the shortcut. That failure is what the lab was built to surface.
+
 ## The Result I Got
 
-Local MI Lab gave me a completed practice loop for refusing an induction-head story before it hardened.
+Local MI Lab gave me a completed practice loop through the calibration stop point.
 
-The runs now form a progression: GPT-2 small handled the repeated-token prompts; controls showed that raw attention could follow structure without target specificity; layer-level patching moved metrics at the wrong scope; head-specific patching made replicated candidates worth chasing; held-out prompts broke or downgraded those candidates; fixed-candidate characterization falsified all 16 heads.
+The runs now form a progression: GPT-2 small handled the repeated-token prompts; controls showed that raw attention could follow structure without target specificity; layer-level patching moved metrics at the wrong scope; head-specific patching made replicated candidates worth chasing; held-out prompts broke or downgraded those candidates; fixed-candidate characterization falsified all 16 heads; failure taxonomy explained the breakage; metric calibration stopped the next search.
 
-No induction head, circuit, or broad GPT-2 claim came out of this lab. What came out was more useful for where I was: I can now look at an attractive mechanistic interpretability artifact and ask which control, hook, metric, prompt family, intervention variant, or diagnostic axis would make me stop believing the story.
+No induction head, circuit, broad GPT-2 claim, or new head search came out of this lab. What came out was more useful for where I was: I can now look at an attractive mechanistic interpretability artifact and ask which control, hook, metric, prompt family, intervention variant, diagnostic axis, or calibration threshold would make me stop believing the story.
