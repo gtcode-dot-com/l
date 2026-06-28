@@ -5,10 +5,8 @@
   Only renders if citation data exists for the current page.
 */}}
 {{- $page := . -}}
-{{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- $cite := dict -}}
-{{- if not $isActiveException -}}
+{{- if not site.Params.enable_exceptions -}}
   {{- with index site.Data.citations $page.RelPermalink -}}
     {{- $cite = . -}}
   {{- end -}}
