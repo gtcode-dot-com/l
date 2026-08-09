@@ -1,0 +1,545 @@
+{{/* Standalone Zork I player - "Subterranean Survey" theme, no baseof.html, no main.css */}}
+{{- $canonical := replace .Permalink "http://" "https://" -}}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{{ .Params.seo_title | default .Title }} | GTCode</title>
+    <meta name="description" content="{{ .Params.meta_description | default .Description }}" />
+    <meta name="author" content="{{ .Site.Params.author }}" />
+    <meta name="robots" content="{{ .Params.robots | default "index, follow" }}" />
+    <link rel="canonical" href="{{ $canonical }}" />
+    <meta property="og:title" content="{{ .Params.seo_title | default .Title }}" />
+    <meta property="og:description" content="{{ .Params.meta_description | default .Description }}" />
+    <meta name="twitter:title" content="{{ .Params.seo_title | default .Title }}" />
+    <meta name="twitter:description" content="{{ .Params.meta_description | default .Description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ $canonical }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.og_site_name }}" />
+    <meta name="theme-color" content="#0e1113" />
+    <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="/zork/interpreter/parchment.css" type="text/css" />
+    <style>
+      /* ============================================================
+         SUBTERRANEAN SURVEY
+         A drafting sheet, lit by lantern, below ground.
+         ============================================================ */
+      :root {
+        --ground: #0e1113;
+        --ground-lift: #171c1f;
+        --paper: #e9dfc9;
+        --paper-shade: #ded2b7;
+        --ink: #23201c;
+        --ink-soft: #5d564a;
+        --ink-faint: #8b8271;
+        --rule: #bcae8f;
+        --rule-ground: #232a2e;
+        --brass: #b98d4a;
+        --brass-bright: #d8a95f;
+        --oxide: #9c5233;
+
+        /* One source of truth for the sheet geometry: the depth scale and
+           registration marks are positioned against these. */
+        --sheet-w: 780px;
+        --sheet-half: 390px;
+
+        --serif: "Iowan Old Style", "Palatino Linotype", Palatino,
+          "Book Antiqua", "Hoefler Text", Georgia, serif;
+        --mono: ui-monospace, "SF Mono", "JetBrains Mono", "IBM Plex Mono",
+          "DejaVu Sans Mono", Menlo, Consolas, monospace;
+
+        /* Retheme the GlkOte interpreter surface as inked paper */
+        --glkote-buffer-bg: #e9dfc9;
+        --glkote-buffer-fg: #23201c;
+        --glkote-buffer-size: 17px;
+        --glkote-buffer-line-height: 1.62;
+        --glkote-buffer-reverse-bg: #23201c;
+        --glkote-buffer-reverse-fg: #e9dfc9;
+        /* Zork draws its status line in reverse video, so the reverse
+           pair is what actually paints the inked header strip. */
+        --glkote-grid-bg: #e9dfc9;
+        --glkote-grid-fg: #23201c;
+        --glkote-grid-size: 13px;
+        --glkote-grid-line-height: 22px;
+        --glkote-grid-reverse-bg: #23201c;
+        --glkote-grid-reverse-fg: #e0d3b4;
+        --glkote-input-fg: #9c5233;
+        --glkote-mono-family: var(--mono);
+        --glkote-prop-family: var(--serif);
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        margin: 0;
+        background: var(--ground);
+        color: var(--paper);
+        font-family: var(--mono);
+        display: flex;
+        flex-direction: column;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* ---- Title block: drafting-sheet header ------------------- */
+      .titleblock {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: stretch;
+        background: var(--ground-lift);
+        border-bottom: 1px solid var(--rule-ground);
+      }
+
+      .tb-cell {
+        padding: 0.5rem clamp(0.6rem, 2vw, 1.15rem);
+        border-right: 1px solid var(--rule-ground);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.18rem;
+        min-width: 0;
+      }
+
+      .tb-cell:last-child {
+        border-right: 0;
+      }
+
+      .tb-label {
+        font-size: 0.575rem;
+        letter-spacing: 0.19em;
+        text-transform: uppercase;
+        color: #6d7a80;
+        white-space: nowrap;
+      }
+
+      .tb-value {
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+        color: #c4cdd1;
+        white-space: nowrap;
+      }
+
+      .tb-cell--mark {
+        background: linear-gradient(180deg, #1b2225, #12171a);
+      }
+
+      .tb-title {
+        margin: 0;
+        font-family: var(--serif);
+        font-size: clamp(1.05rem, 2.6vw, 1.4rem);
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--brass-bright);
+        line-height: 1.05;
+      }
+
+      .tb-subtitle {
+        font-size: 0.6rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #7f8b91;
+      }
+
+      .tb-cell--links {
+        margin-left: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.1rem;
+        border-right: 0;
+        border-left: 1px solid var(--rule-ground);
+      }
+
+      .tb-cell--links a {
+        font-size: 0.62rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: #8a959a;
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #2c3439;
+        transition: color 0.15s ease, border-color 0.15s ease;
+      }
+
+      .tb-cell--links a:hover,
+      .tb-cell--links a:focus-visible {
+        color: var(--brass-bright);
+        border-bottom-color: var(--brass);
+      }
+
+      /* ---- The excavation: dark ground, lantern light ----------- */
+      .excavation {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        justify-content: center;
+        padding: clamp(0.75rem, 2.2vh, 1.6rem) 1rem 0;
+        background:
+          radial-gradient(
+            135% 88% at 50% -6%,
+            rgba(205, 160, 86, 0.22),
+            rgba(190, 145, 78, 0.09) 38%,
+            rgba(120, 95, 55, 0.03) 62%,
+            transparent 80%
+          ),
+          var(--ground);
+      }
+
+      /* Depth scale ruled into the rock at the left margin */
+      .depthscale {
+        position: absolute;
+        right: calc(50% + var(--sheet-half) + 36px);
+        top: 0;
+        bottom: 0;
+        width: 46px;
+        pointer-events: none;
+        user-select: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 6px;
+        opacity: 0.85;
+      }
+
+      .depthscale::after {
+        content: "";
+        width: 11px;
+        align-self: stretch;
+        border-left: 1px solid #3b464d;
+        background-image: repeating-linear-gradient(
+            180deg,
+            #333d43 0 1px,
+            transparent 1px 13px
+          ),
+          repeating-linear-gradient(
+            180deg,
+            transparent 0 64px,
+            #4a565d 64px 65px
+          );
+        background-size: 5px 100%, 11px 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0, 0 0;
+      }
+
+      .depthscale span {
+        writing-mode: vertical-rl;
+        font-size: 0.53rem;
+        letter-spacing: 0.34em;
+        text-transform: uppercase;
+        color: #647178;
+        margin-top: 4px;
+      }
+
+      /* ---- The sheet -------------------------------------------- */
+      .sheet {
+        position: relative;
+        width: min(var(--sheet-w), 100%);
+        height: 100%;
+        background: var(--paper);
+        background-image: /* ruled margin, as on a bound log sheet */
+          linear-gradient(
+            90deg,
+            transparent 33px,
+            rgba(156, 82, 51, 0.22) 33px 34px,
+            transparent 34px
+          ),
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0) 140px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgba(120, 105, 75, 0.035) 0 1px,
+            transparent 1px 4px
+          );
+        box-shadow:
+          0 0 0 1px var(--paper-shade),
+          0 -1px 0 0 rgba(255, 255, 255, 0.25) inset,
+          0 22px 60px -12px rgba(0, 0, 0, 0.75),
+          0 4px 14px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Printer's registration crosshairs, set into the rock */
+      .regmark {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        pointer-events: none;
+        opacity: 0.5;
+      }
+
+      .regmark::before,
+      .regmark::after {
+        content: "";
+        position: absolute;
+        background: #4e5a60;
+      }
+
+      .regmark::before {
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        transform: translateX(-50%);
+      }
+
+      .regmark::after {
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        transform: translateY(-50%);
+      }
+
+      /* Positioned against the centred sheet, out in the rock, so they
+         are never clipped by #gameport's overflow. */
+      .regmark--tl { right: calc(50% + var(--sheet-half) + 7px); top: calc(clamp(0.75rem, 2.2vh, 1.6rem) + 10px); }
+      .regmark--tr { left: calc(50% + var(--sheet-half) + 7px); top: calc(clamp(0.75rem, 2.2vh, 1.6rem) + 10px); }
+      .regmark--bl { right: calc(50% + var(--sheet-half) + 7px); bottom: 10px; }
+      .regmark--br { left: calc(50% + var(--sheet-half) + 7px); bottom: 10px; }
+
+      #windowport {
+        height: 100%;
+        width: 100%;
+      }
+
+      /* Generous margins on the sheet, like a bound survey log */
+      .BufferWindowInner {
+        padding: 26px clamp(22px, 4.4vw, 52px) 30px;
+      }
+
+      /* Let the sheet itself supply the paper: GlkOte otherwise paints an
+         opaque background over the ruled margin, grain and top sheen. */
+      .WindowFrame,
+      .BufferWindow {
+        background: transparent;
+      }
+
+      /* Status line reads as the sheet's inked header strip.
+         Zork sets it in reverse video, so .GridWindow.reverse (higher
+         specificity, from parchment.css) is what actually paints it. */
+      .GridWindow {
+        background: var(--glkote-grid-bg);
+        padding: 5px clamp(22px, 4.4vw, 52px);
+        letter-spacing: 0.055em;
+        border-bottom: 1px solid #3a352d;
+      }
+
+      .BufferWindow {
+        scrollbar-color: #c0b294 var(--paper);
+      }
+
+      .BufferWindow::-webkit-scrollbar-thumb {
+        background: #c0b294;
+      }
+
+      /* Typed commands read as pencil annotations on the survey */
+      .Style_input {
+        color: var(--oxide);
+        font-family: var(--mono);
+        font-size: 0.86em;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      /* ---- Loading + error --------------------------------------- */
+      #loadingpane {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.85rem;
+        color: #6f7c82;
+        font-size: 0.62rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+      }
+
+      /* ---- Legend ------------------------------------------------ */
+      .legend {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 0.55rem 1.5rem;
+        flex-wrap: wrap;
+        padding: 0.5rem clamp(0.75rem, 3vw, 1.5rem);
+        padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+        background: var(--ground-lift);
+        border-top: 1px solid var(--rule-ground);
+        font-size: 0.63rem;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: #6d7a80;
+      }
+
+      .legend b {
+        font-weight: 400;
+        color: #a9b3b7;
+      }
+
+      .legend kbd {
+        font-family: var(--mono);
+        font-size: 0.95em;
+        letter-spacing: 0.06em;
+        color: var(--brass-bright);
+        text-transform: none;
+      }
+
+      .legend-note {
+        margin-left: auto;
+        color: #6a767b;
+        text-transform: none;
+        letter-spacing: 0.02em;
+      }
+
+      @media (max-width: 1000px) {
+        .depthscale,
+        .regmark {
+          display: none;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .tb-cell--narrow {
+          display: none;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .tb-cell--meta {
+          display: none;
+        }
+        .tb-cell--links {
+          gap: 0.7rem;
+        }
+        .tb-cell--links a {
+          font-size: 0.56rem;
+          letter-spacing: 0.1em;
+          white-space: nowrap;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .excavation {
+          padding: 0;
+        }
+        .sheet {
+          box-shadow: none;
+          width: 100%;
+          /* drop the ruled margin: text padding is too tight for it */
+          background-image: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.3),
+              rgba(255, 255, 255, 0) 120px
+            ),
+            repeating-linear-gradient(
+              90deg,
+              rgba(120, 105, 75, 0.02) 0 1px,
+              transparent 1px 5px
+            );
+        }
+        .tb-cell--serial,
+        .tb-cell--compiler,
+        .tb-subtitle,
+        .legend-note {
+          display: none;
+        }
+        .legend {
+          gap: 0.4rem 1rem;
+        }
+      }
+    </style>
+
+    <script src="/zork/interpreter/jquery.min.js"></script>
+    <script src="/zork/interpreter/ie.js" nomodule></script>
+    <script src="/zork/interpreter/parchment.js"></script>
+    <script>
+      window.parchment_options = {
+        jsonp: "ParchmentResource",
+        lib_path: "/zork/interpreter/",
+        story: {
+          filename: "zork1.z3",
+          url: "zork1.z3.js"
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <header class="titleblock">
+      <div class="tb-cell tb-cell--mark">
+        <h1 class="tb-title">Zork&nbsp;I</h1>
+        <span class="tb-subtitle">The Great Underground Empire</span>
+      </div>
+      <div class="tb-cell tb-cell--meta">
+        <span class="tb-label">Release</span>
+        <span class="tb-value">1</span>
+      </div>
+      <div class="tb-cell tb-cell--meta tb-cell--narrow">
+        <span class="tb-label">Serial</span>
+        <span class="tb-value">260808</span>
+      </div>
+      <div class="tb-cell tb-cell--meta">
+        <span class="tb-label">Machine</span>
+        <span class="tb-value">Z&#8209;code v3</span>
+      </div>
+      <div class="tb-cell tb-cell--meta tb-cell--narrow">
+        <span class="tb-label">Compiler</span>
+        <span class="tb-value">ZILF 0.11.1</span>
+      </div>
+      <div class="tb-cell tb-cell--links">
+        <a href="/zork/zork1.z3" download>Story file</a>
+        <a href="https://github.com/the-infocom-files/zork1" rel="noopener">ZIL source</a>
+        <a href="/">GTCode</a>
+      </div>
+    </header>
+
+    <main class="excavation">
+      <div class="depthscale" aria-hidden="true"><span>Depth</span></div>
+
+      <i class="regmark regmark--tl" aria-hidden="true"></i>
+      <i class="regmark regmark--tr" aria-hidden="true"></i>
+      <i class="regmark regmark--bl" aria-hidden="true"></i>
+      <i class="regmark regmark--br" aria-hidden="true"></i>
+
+      {{/* GlkOte measures #gameport for its window metrics, so that id
+           belongs on the sheet itself - not on the outer container. */}}
+      <div class="sheet" id="gameport">
+        <div id="windowport">
+          <noscript>
+            <p style="padding: 2rem; color: #23201c; font-family: Georgia, serif">
+              Zork I runs on a Z-machine interpreter in your browser, so
+              JavaScript needs to be enabled. You can also
+              <a href="/zork/zork1.z3">download the story file</a> and play it in
+              Frotz or any other Z-machine interpreter.
+            </p>
+          </noscript>
+        </div>
+      </div>
+
+      <div id="loadingpane">
+        <img src="/zork/interpreter/waiting.gif" alt="" width="16" height="16" />
+        <span>Descending&hellip;</span>
+      </div>
+      <div id="errorpane" style="display: none"><div id="errorcontent">&hellip;</div></div>
+    </main>
+
+    <footer class="legend">
+      <span><b>Survey commands</b> <kbd>look</kbd> <kbd>north</kbd>
+        <kbd>take lamp</kbd> <kbd>open mailbox</kbd> <kbd>inventory</kbd></span>
+      <span><b>Session</b> <kbd>save</kbd> <kbd>restore</kbd> <kbd>script</kbd></span>
+      <span class="legend-note">Compiled from the original Infocom ZIL source.</span>
+    </footer>
+  </body>
+</html>
