@@ -89,7 +89,7 @@ relativeURLs = false
 
 [params]
   # HOMEPAGE SWITCH: true = blank Hello World page; false = original homepage.
-  alternative_homepage = true
+  alternative_homepage = false
   enable_exceptions = true
   exception_fallback_path = "exceptions/fallback"
   enable_agentic_context = true
