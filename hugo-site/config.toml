@@ -88,6 +88,8 @@ relativeURLs = false
   page = ["HTML", "Markdown"]
 
 [params]
+  # HOMEPAGE SWITCH: true = blank Hello World page; false = original homepage.
+  alternative_homepage = true
   enable_exceptions = true
   exception_fallback_path = "exceptions/fallback"
   enable_agentic_context = true

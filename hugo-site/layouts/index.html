@@ -1,3 +1,18 @@
+{{- if site.Params.alternative_homepage -}}
+{{- $alternativeHome := site.GetPage "/homepage-alternative" -}}
+<!doctype html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ with $alternativeHome }}{{ .Title }}{{ else }}Hello{{ end }}</title>
+  </head>
+  <body>
+    {{- with $alternativeHome }}
+      {{ .Content }}
+    {{- end }}
+  </body>
+</html>
+{{- else -}}
 {{/* Standalone homepage - no baseof.html, no main.css */}}
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
@@ -703,3 +718,4 @@
     <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
   </body>
 </html>
+{{- end -}}
