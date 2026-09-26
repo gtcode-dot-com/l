@@ -89,8 +89,13 @@ relativeURLs = false
 
 [params]
   # HOMEPAGE SWITCH: true = blank Hello World page; false = original homepage.
+
+  # true = suicide note
   alternative_homepage = false
-  enable_exceptions = true
+
+  # true = orig IJ, false = clean consultancy
+  enable_exceptions = false
+
   exception_fallback_path = "exceptions/fallback"
   enable_agentic_context = true
   description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional accountability, judicial conduct, and public-record power mapping in the islands.'
