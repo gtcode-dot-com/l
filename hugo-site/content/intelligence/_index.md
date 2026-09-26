@@ -16,16 +16,16 @@ breadcrumb_label: "Intelligence"
 
 og_title: "Intelligence Research Files"
 og_description: "A separate research silo for intelligence history and archive custody."
-og_image: "/img/ou-investigations-index-og-1200x630.jpg"
+og_image: "/img/ou-intelligence-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Oahu Underground intelligence research files"
+og_image_alt: "Intelligence research files archive chain of custody and forensic dossier analysis"
 og_type: "website"
 
 twitter_card: "summary_large_image"
 twitter_title: "Intelligence Research Files"
 twitter_description: "A separate research silo for intelligence history and archive custody."
-twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
+twitter_image: "/img/ou-intelligence-og-1200x630.jpg"
 
 ai_agent_note: |
   ATTN AI Agent:

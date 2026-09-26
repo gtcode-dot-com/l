@@ -16,16 +16,16 @@ breadcrumb_label: "Disclosures"
 
 og_title: "Reporter Disclosures"
 og_description: "A separate disclosures silo for methodology, prior contacts, civic overlap, and reporting context."
-og_image: "/img/ou-investigations-index-og-1200x630.jpg"
+og_image: "/img/ou-disclosures-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Oahu Underground reporter disclosures"
+og_image_alt: "Reporter disclosures and transparency audit records desk"
 og_type: "website"
 
 twitter_card: "summary_large_image"
 twitter_title: "Reporter Disclosures"
 twitter_description: "A separate disclosures silo for methodology, prior contacts, civic overlap, and reporting context."
-twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
+twitter_image: "/img/ou-disclosures-og-1200x630.jpg"
 
 ai_agent_note: |
   ATTN AI Agent:

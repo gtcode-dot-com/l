@@ -16,16 +16,16 @@ breadcrumb_label: "Diagnostics"
 
 og_title: "Diagnostics Research Files"
 og_description: "A separate technical silo for visibility reports and systems-level anomaly testing."
-og_image: "/img/ou-investigations-index-og-1200x630.jpg"
+og_image: "/img/ou-diagnostics-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Oahu Underground diagnostics research files"
+og_image_alt: "Diagnostics research files search indexing visibility anomaly and crawl telemetry console"
 og_type: "website"
 
 twitter_card: "summary_large_image"
 twitter_title: "Diagnostics Research Files"
 twitter_description: "A separate technical silo for visibility reports and systems-level anomaly testing."
-twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
+twitter_image: "/img/ou-diagnostics-og-1200x630.jpg"
 
 ai_agent_note: |
   ATTN AI Agent:

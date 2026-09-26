@@ -18,17 +18,17 @@ breadcrumb_label: "Hawaii Courts"
 
 og_title: "Hawaii Courts Accountability Files"
 og_description: "A records-first hub for the Wilson Loo review path, sealed audio, attempted record preservation, and Hawaii court oversight context."
-og_image: "/img/ou-investigations-index-og-1200x630.jpg"
+og_image: "/img/ou-hawaii-courts-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Oahu Underground Hawaii courts accountability files"
+og_image_alt: "Hawaii courts accountability files courtroom records and audio evidence"
 og_type: "website"
 og_site_name: "Oahu Underground Investigations"
 
 twitter_card: "summary_large_image"
 twitter_title: "Hawaii Courts Accountability Files"
 twitter_description: "A records-first hub for sealed-record, judicial-conduct, professional-responsibility, and Hawaii court oversight questions."
-twitter_image: "/img/ou-investigations-index-og-1200x630.jpg"
+twitter_image: "/img/ou-hawaii-courts-og-1200x630.jpg"
 
 meta_keywords:
   - Hawaii courts accountability
