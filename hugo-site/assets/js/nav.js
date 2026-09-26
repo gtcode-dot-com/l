@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var nav = document.getElementById("primary-nav");
   var overlay = document.querySelector(".site-nav-overlay");
   if (!toggle || !nav) return;
-  var mobileQuery = window.matchMedia("(max-width: 960px)");
+  var mobileQuery = window.matchMedia("(max-width: 1120px)");
   var syncNavState = function () {
     if (mobileQuery.matches) {
       nav.setAttribute("aria-hidden", body.classList.contains("nav-open") ? "false" : "true");
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("keyup", function (e) {
     if (e.key === "Escape" && closeNav()) toggle.focus();
   });
-  var mq = window.matchMedia("(min-width: 961px)");
+  var mq = window.matchMedia("(min-width: 1121px)");
   var mqHandler = function (e) { if (e.matches) closeNav(); syncNavState(); };
   if (mq.addEventListener) mq.addEventListener("change", mqHandler);
   else if (mq.addListener) mq.addListener(mqHandler);

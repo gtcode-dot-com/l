@@ -148,8 +148,8 @@
     <!-- Font faces (inlined to eliminate render-blocking request) -->
     {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify }}
     <style>{{ $fontsCSS.Content | safeCSS }}</style>
-    <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
+    <link rel="preload" as="font" href="/fonts/inter-400.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="image" href="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" type="image/svg+xml" />
     {{ if not $isActiveException }}
     {{ partial "media/preload-responsive-image.html" (dict
       "page" $page
@@ -160,7 +160,7 @@
     {{ end }}
 
     <!-- Oahu Underground Stylesheet (inlined to eliminate render-blocking request) -->
-    {{ $ouCSS := resources.Get "css/oahu-underground.css" | minify }}
+    {{ $ouCSS := slice (resources.Get "css/oahu-underground.css") (resources.Get "css/site-theme.css") | resources.Concat "css/journalism.css" | minify }}
     <style>{{ $ouCSS.Content | safeCSS }}</style>
 
     {{ partial "jsonld.html" . }}
@@ -217,11 +217,7 @@
     {{ end }}
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    {{ partial "brand/icons.html" "#111c20" }}
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -229,7 +225,7 @@
     <header class="site-header">
       <div class="site-header-inner">
         <a href="/" class="site-logo" aria-label="{{ $brandName }} home">
-          <img src="/img/gtcode-badge.svg" alt="{{ $brandName }} mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
+          <img src="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" alt="{{ $brandName }} mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
           <span>{{ $brandName }}</span>
         </a>
 

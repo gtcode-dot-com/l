@@ -4,18 +4,18 @@
   "description": "An AI Engineering Consultant and Investigative Journalist focused on building advanced technological solutions and ensuring public accountability.",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/android-chrome-192x192.png?v=74adb4e843f7",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/android-chrome-512x512.png?v=25f87b6d8548",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#2563eb",
-  "background_color": "#f8fafc"
+  "theme_color": "#111c20",
+  "background_color": "#111c20"
 }

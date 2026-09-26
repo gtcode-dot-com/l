@@ -17,9 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ $canonical }}" />
     <meta property="og:site_name" content="{{ .Site.Params.og_site_name }}" />
-    <meta name="theme-color" content="#0e1113" />
-    <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    {{ partial "brand/icons.html" "#111c20" }}
 
     <link rel="stylesheet" href="/zork/interpreter/parchment.css" type="text/css" />
     <style>

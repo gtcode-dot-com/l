@@ -912,8 +912,8 @@
     "author": "GTCode Editorial",
     "author_family": "GTCode Editorial",
     "author_given": "",
-    "date": "2025-11-28",
-    "lastmod": "2025-11-28",
+    "date": "2026-09-25",
+    "lastmod": "2026-09-25",
     "abstract": "# Editor Test Article for Testing Editor Opening",
     "canonical": "https://gtcode.com/articles/editor-test-article-for-testing-editor-opening/",
     "section": "articles",
@@ -927,10 +927,10 @@
     "journal": "GTCode.com Articles",
     "repo_path": "articles/editor-test-article-for-testing-editor-opening",
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/editor-test-article-for-testing-editor-opening",
-    "bibtex_key": "gtcodeeditorial2025editortestarticle",
-    "bibtex": "@article{gtcodeeditorial2025editortestarticle,\n  author  = {GTCode Editorial, },\n  title   = {Editor Test Article for Testing Editor Opening},\n  journal = {GTCode.com Articles},\n  year    = {2025},\n  month   = nov,\n  url     = {https://gtcode.com/articles/editor-test-article-for-testing-editor-opening/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/editor-test-article-for-testing-editor-opening}}\n}",
-    "apa": "GTCode Editorial (2025, November 28). Editor Test Article for Testing Editor Opening. *GTCode.com Articles*. https://gtcode.com/articles/editor-test-article-for-testing-editor-opening/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/editor-test-article-for-testing-editor-opening)",
-    "chicago": "GTCode Editorial. \"Editor Test Article for Testing Editor Opening.\" *GTCode.com Articles*, November 28, 2025. https://gtcode.com/articles/editor-test-article-for-testing-editor-opening/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/editor-test-article-for-testing-editor-opening."
+    "bibtex_key": "gtcodeeditorial2026editortestarticle",
+    "bibtex": "@article{gtcodeeditorial2026editortestarticle,\n  author  = {GTCode Editorial, },\n  title   = {Editor Test Article for Testing Editor Opening},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = sep,\n  url     = {https://gtcode.com/articles/editor-test-article-for-testing-editor-opening/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/editor-test-article-for-testing-editor-opening}}\n}",
+    "apa": "GTCode Editorial (2026, September 25). Editor Test Article for Testing Editor Opening. *GTCode.com Articles*. https://gtcode.com/articles/editor-test-article-for-testing-editor-opening/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/editor-test-article-for-testing-editor-opening)",
+    "chicago": "GTCode Editorial. \"Editor Test Article for Testing Editor Opening.\" *GTCode.com Articles*, September 25, 2026. https://gtcode.com/articles/editor-test-article-for-testing-editor-opening/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/editor-test-article-for-testing-editor-opening."
   },
   "/articles/epistemic-fragmentation-multi-model-ai-systems/": {
     "title": "Epistemic Fragmentation in Multi-Model AI Systems: The Challenge of Synthesizing Divergent Knowledge Claims",

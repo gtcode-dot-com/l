@@ -1,0 +1,5 @@
+{{/* Keep public asset paths stable; content hashes refresh browser caches. */}}
+{{- $path := . -}}
+{{- $source := printf "static%s" $path -}}
+{{- $version := substr (crypto.SHA256 (readFile $source)) 0 12 -}}
+{{- return (printf "%s?v=%s" ($path | relURL) $version) -}}

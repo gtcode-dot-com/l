@@ -176,12 +176,12 @@
     <!-- Font faces (inlined to eliminate render-blocking request) -->
     {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify }}
     <style>{{ $fontsCSS.Content | safeCSS }}</style>
-    <link rel="preload" as="font" href="/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" as="image" href="{{ "/img/gtcode-core.svg" | relURL }}" type="image/svg+xml" />
+    <link rel="preload" as="font" href="/fonts/inter-400.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="image" href="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" type="image/svg+xml" />
 
     <!-- Main Stylesheet -->
     {{ $postcssOpts := dict "inlineImports" true "config" "postcss.config.js" }}
-    {{ $mainCSS := resources.Get "css/main.css" | css.PostCSS $postcssOpts | minify | fingerprint }}
+    {{ $mainCSS := slice (resources.Get "css/main.css") (resources.Get "css/site-theme.css") | resources.Concat "css/technical.css" | css.PostCSS $postcssOpts | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}" crossorigin="anonymous" />
     {{ if $enableMath }}
     <link rel="stylesheet" href="/vendor/katex/katex.min.css" />
@@ -190,18 +190,14 @@
     {{ partial "jsonld.html" . }}
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/img/gtcode-core.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    {{ partial "brand/icons.html" "#f8faf9" }}
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="site-header">
       <div class="site-header-inner">
         <a href="/" class="site-logo">
-          <img src="/img/gtcode-badge.svg" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
+          <img src="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
           <span>{{ if site.Params.enable_exceptions }}GTCode{{ else }}{{ .Site.Params.site_brand_short | default .Site.Title }}{{ end }}</span>
         </a>
         <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
