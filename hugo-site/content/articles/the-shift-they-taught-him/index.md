@@ -104,6 +104,8 @@ sitemap:
 
 > **Companion article:** This essay complements [The Body Keeps the Receipts](/articles/the-body-keeps-the-receipts/), which documents the neurobiological, trauma, and institutional mechanisms behind the same pattern.
 
+> **Related open letter:** [An Open Letter to [Redacted] Township School District](/articles/open-letter-school-district/) asks the district to account for its response to the bullying, assaults, injuries, and educational consequences described here.
+
 > **Reporting note:** This firsthand public report and open letter describes childhood peer violence, institutional non-response, an officer-watched assault, suicidal ideation, and long-term bodily consequences. The citations provide context; the central account is the author's report.
 
 This is a records question: what did the school district and police department create, retain, produce, or fail to produce after repeated peer abuse, visible injury, and an officer-watched assault?
