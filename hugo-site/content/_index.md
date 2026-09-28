@@ -3,14 +3,14 @@ exception: true
 exception_content_path: "exceptions/home"
 title: "Oahu Underground by GTCode | Hawaii Public-Interest Records Audit"
 seo_title: "Oahu Underground | Hawaii Public Records"
-description: "Oahu Underground is a public-interest records-audit project based in Hawaii. The homepage leads with The Silent Conspiracy and routes readers to the Hawaii Courts records package."
+description: "Oahu Underground is a public-interest records-audit project based in Hawaii. The homepage opens with a notice and routes readers to the Hawaii Courts records package."
 lastmod: 2026-06-12
-meta_description: "Oahu Underground - public-interest records audit and independent reporting from Hawaii. The homepage leads with The Silent Conspiracy, a legal analysis of HRPC 8.3(b), mens rea, sealed audio, and sealed-record dependency."
+meta_description: "Oahu Underground - public-interest records audit and independent reporting from Hawaii. Read the latest notice and explore the Hawaii Courts records package."
 og_image: /img/ou-silent-conspiracy-og-1200x630.jpg
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "Oahu Underground cover art for The Silent Conspiracy, showing a sealed courtroom audio record and nonverbal signal geometry"
-og_description: "The homepage leads with The Silent Conspiracy, a legal analysis of HRPC 8.3(b), mens rea, sealed audio, and sealed-record dependency around a reported First Circuit courtroom sequence."
+og_description: "Read the latest notice from Oahu Underground, then explore the Hawaii Courts records package and The Silent Conspiracy."
 og_title: "Oahu Underground | The Silent Conspiracy and Records-First Reporting"
 twitter_title: "Oahu Underground | The Silent Conspiracy and Records-First Reporting"
 robots: "index, follow, max-image-preview:large"

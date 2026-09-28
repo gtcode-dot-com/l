@@ -286,6 +286,60 @@ body::before,
   top: 0;
 }
 
+/* Homepage notice sits immediately below the navigation. */
+.homepage-notice {
+  min-height: 70vh;
+  padding: clamp(4rem, 9vw, 8rem) var(--theme-gutter);
+  background: var(--theme-surface-alt);
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.homepage-notice-inner {
+  max-width: var(--ou-wide-width);
+  margin: 0 auto;
+}
+
+.homepage-notice-label {
+  margin: 0 0 1rem;
+  color: var(--theme-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.homepage-notice-title {
+  margin: 0 0 clamp(2rem, 5vw, 4rem);
+  color: var(--theme-ink);
+  font-family: var(--theme-heading);
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.homepage-notice-content {
+  max-width: 72ch;
+  color: var(--theme-copy);
+  font-size: clamp(1.125rem, 2vw, 1.4rem);
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.homepage-notice-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.homepage-notice-content p,
+.homepage-notice-content ul,
+.homepage-notice-content ol {
+  margin-bottom: 1.25rem;
+}
+
+.homepage-notice-content .twitter-tweet {
+  font-size: 1rem;
+}
+
 /* Lead story: a composed headline and image, without text over the artwork. */
 
 .ou-hero {

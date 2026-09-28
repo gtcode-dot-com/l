@@ -12,6 +12,9 @@ enableGitInfo = true
 canonifyURLs = false
 relativeURLs = false
 
+[privacy.x]
+  enableDNT = true
+
 [outputFormats]
   [outputFormats.Markdown]
     mediaType = "text/markdown"

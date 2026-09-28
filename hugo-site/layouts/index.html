@@ -28,6 +28,7 @@
 {{- $socialTitleSource := $active.Params.social_title | default ($active.Params.og_title | default ($active.Params.twitter_title | default $pageTitle)) -}}
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
+{{- $homepageNotice := .Site.GetPage "/homepage-notice" -}}
 
 {{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Type" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
 {{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
@@ -150,15 +151,6 @@
     <style>{{ $fontsCSS.Content | safeCSS }}</style>
     <link rel="preload" as="font" href="/fonts/inter-400.woff2" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="image" href="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" type="image/svg+xml" />
-    {{ if not $isActiveException }}
-    {{ partial "media/preload-responsive-image.html" (dict
-      "page" $page
-      "src" $homeHeroImage
-      "slot" "hero_banner"
-      "fetchpriority" "high"
-    ) }}
-    {{ end }}
-
     <!-- Oahu Underground Stylesheet (inlined to eliminate render-blocking request) -->
     {{ $ouCSS := slice (resources.Get "css/oahu-underground.css") (resources.Get "css/site-theme.css") | resources.Concat "css/journalism.css" | minify }}
     <style>{{ $ouCSS.Content | safeCSS }}</style>
@@ -246,12 +238,23 @@
 
     <main class="site-main" id="main-content">
       {{ partial "ai-agent-comment.html" . }}
+      {{ with $homepageNotice }}
+      <section class="homepage-notice" aria-labelledby="homepage-notice-title">
+        <div class="homepage-notice-inner">
+          <p class="homepage-notice-label">From the editor</p>
+          <h1 class="homepage-notice-title" id="homepage-notice-title">{{ .Title }}</h1>
+          <div class="homepage-notice-content">
+            {{ .Content }}
+          </div>
+        </div>
+      </section>
+      {{ end }}
       {{ if $isActiveException }}
       <section class="ou-section">
         <div class="ou-section-inner">
           <article class="ou-article">
             <header class="ou-article-header">
-              <h1 class="ou-article-title">{{ $active.Title }}</h1>
+              <h2 class="ou-article-title">{{ $active.Title }}</h2>
               {{ with $active.Description }}
               <p class="ou-article-subtitle">{{ . }}</p>
               {{ end }}
@@ -271,8 +274,7 @@
             "src" $homeHeroImage
             "alt" ($active.Params.hero_image_alt | default "Oahu Underground investigative reporting in Hawaii")
             "slot" "hero_banner"
-            "loading" "eager"
-            "fetchpriority" "high"
+            "loading" "lazy"
             "width" 1600
             "height" 475
           ) }}
@@ -280,7 +282,7 @@
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
           <p class="ou-hero-kicker"><a href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}" class="ou-hero-kicker-link">{{ $active.Params.hero_kicker | default "Legal Analysis" }}</a></p>
-          <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
+          <h2 class="ou-hero-headline">{{ $heroHeadline }}</h2>
           <p class="ou-hero-subtitle">{{ $active.Params.hero_subtitle | default "HRPC 8.3(b), mens rea, sealed-record dependency, and a reported First Circuit courtroom sequence" }}</p>
           <div class="ou-hero-actions">
             <a class="ou-hero-cta ou-hero-cta-primary" href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}">{{ $active.Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
