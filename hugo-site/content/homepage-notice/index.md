@@ -8,4 +8,4 @@ build:
 
 Enough time was granted.
 
-{{< x user="BrahEasy" id="2104605287751840188" >}}
+<!-- X post embed disabled: {{</* x user="BrahEasy" id="2104605287751840188" */>}} -->
