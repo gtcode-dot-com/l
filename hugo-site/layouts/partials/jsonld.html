@@ -227,6 +227,9 @@
         "dateModified" $modified
         "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" $siteRoot)
     -}}
+  {{- if reflect.IsMap $sdPage.author }}
+    {{- $data = merge $data (dict "author" $sdPage.author) -}}
+  {{- end -}}
   {{- if $sdPage.about }}
     {{- $data = merge $data (dict "about" $sdPage.about) -}}
   {{- end -}}

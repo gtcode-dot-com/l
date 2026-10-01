@@ -1,0 +1,590 @@
+{
+  "audit_date": "2026-10-01",
+  "scope": "All public citation URLs in the three articles were requested. The 13 replacement sources in The Body Keeps the Receipts were checked for identity and support of the stated claims. Companion references were also reviewed for the retained general context.",
+  "limitations": [
+    "Citation verification does not verify the personal events, symptoms, institutional motives, or records-search results.",
+    "Publisher and NCBI bot challenges are access limitations, not findings that the citation is false.",
+    "Redacted district URLs cannot be verified from this public checkout; no attempt was made to identify the district."
+  ],
+  "replacement_sources": [
+    {
+      "footnote": "cdc-guideline",
+      "title": "Centers for Disease Control and Prevention Guideline on the Diagnosis and Management of Mild Traumatic Brain Injury Among Children",
+      "authors": "Lumba-Brown A, Yeates KO, Sarmiento K, et al.",
+      "evidence_reviewed": "PMC full text and Europe PMC indexed abstract",
+      "claim_review": "Clinical assessment uses injury history, symptoms, and findings; a retrospective account cannot establish injury severity.",
+      "citation_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7006878/",
+        "https://doi.org/10.1001/jamapediatrics.2018.2853"
+      ]
+    },
+    {
+      "footnote": "pavlou",
+      "title": "Neurobiology of bruxism: The impact of stress (Review)",
+      "authors": "Pavlou IA, Spandidos DA, Zoumpourlis V, Papakosta VK",
+      "evidence_reviewed": "Publisher full text",
+      "claim_review": "Stress and bruxism review, not a scoping review establishing TBI causation.",
+      "citation_urls": [
+        "https://www.spandidos-publications.com/10.3892/br.2024.1747"
+      ]
+    },
+    {
+      "footnote": "kothari",
+      "title": "Occurrence, presence and severity of bruxism and its association with altered state of consciousness in individuals with severe acquired brain injury.",
+      "authors": "Kothari SF, Devendran A, Sørensen AB, Nielsen JF, Svensson P, Kothari M.",
+      "evidence_reviewed": "Publisher abstract and indexed abstract",
+      "claim_review": "Severe acquired brain injury cohort, not evidence diagnosing possible mild childhood injury.",
+      "citation_urls": [
+        "https://doi.org/10.1111/joor.13540"
+      ]
+    },
+    {
+      "footnote": "prevalence",
+      "title": "Global Prevalence of Sleep Bruxism and Awake Bruxism in Pediatric and Adult Populations: A Systematic Review and Meta-Analysis.",
+      "authors": "Zieliński G, Pająk A, Wójcicki M.",
+      "evidence_reviewed": "Full-text XML from Europe PMC (PMC11278015) and indexed abstract",
+      "claim_review": "Pooled prevalence approximately 22%; population estimate, not an individual attribution probability.",
+      "citation_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11278015/",
+        "https://pubmed.ncbi.nlm.nih.gov/39064299/",
+        "https://doi.org/10.3390/jcm13144259"
+      ]
+    },
+    {
+      "footnote": "noise",
+      "title": "Noise-Induced Hearing Loss",
+      "authors": "National Institute on Deafness and Other Communication Disorders",
+      "evidence_reviewed": "Official page, effects and signs section",
+      "claim_review": "Loud noise can cause tinnitus without a childhood head injury.",
+      "citation_urls": [
+        "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss"
+      ]
+    },
+    {
+      "footnote": "hyperacusis",
+      "title": "Noise sensitivity (hyperacusis)",
+      "authors": "NHS",
+      "evidence_reviewed": "Official page, causes section",
+      "claim_review": "Can follow sudden loud noise; cause remains incompletely understood.",
+      "citation_urls": [
+        "https://www.nhs.uk/conditions/hyperacusis/"
+      ]
+    },
+    {
+      "footnote": "harris",
+      "title": "Mild Traumatic Brain Injury and the Auditory System: An Overview of the Mechanisms, Clinical Presentations, and Current Diagnostic Modalities.",
+      "authors": "Harris M, Nguyen A, Brown NJ, Picton B, Gendreau J, Bui N, Sahyouni R, Lin HW.",
+      "evidence_reviewed": "Indexed paper abstract and metadata via Europe PMC; full text where available",
+      "claim_review": "Review of vestibular and auditory sequelae of mTBI; does not demonstrate this individual causal sequence.",
+      "citation_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37742111/",
+        "https://doi.org/10.1089/neu.2023.0059"
+      ]
+    },
+    {
+      "footnote": "ralli",
+      "title": "Somatosensory tinnitus: Current evidence and future perspectives",
+      "authors": "Ralli M, Greco A, Turchetta R, Altissimi G, de Vincentiis M, Cianfrone G",
+      "evidence_reviewed": "PMC full text",
+      "claim_review": "Somatosensory modulation and selected TMD treatment findings; does not prove this individual has a permanent feedback loop.",
+      "citation_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5536427/"
+      ]
+    },
+    {
+      "footnote": "betrayal",
+      "title": "Institutional betrayal.",
+      "authors": "Smith CP, Freyd JJ.",
+      "evidence_reviewed": "Indexed paper abstract and metadata via Europe PMC; full text where available",
+      "claim_review": "Institutional failure to prevent or respond supportively can compound harm; framework, not verification of personal events.",
+      "citation_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/25197837/",
+        "https://doi.org/10.1037/a0037564"
+      ]
+    },
+    {
+      "footnote": "yeager",
+      "title": "Loss of Institutional Trust Among Racial and Ethnic Minority Adolescents: A Consequence of Procedural Injustice and a Cause of Life-Span Outcomes.",
+      "authors": "Yeager DS, Purdie-Vaughns V, Hooper SY, Cohen GL.",
+      "evidence_reviewed": "Author-hosted Columbia University PDF and indexed abstract",
+      "claim_review": "Racial and ethnic minority adolescents and school procedural injustice; application here is an analogy.",
+      "citation_urls": [
+        "https://doi.org/10.1111/cdev.12697",
+        "https://www.columbia.edu/cu/psychology/vpvaughns/assets/pdfs/Loss%20of%20Institutional%20Trust.pdf"
+      ]
+    },
+    {
+      "footnote": "sariaslan",
+      "title": "Long-Term Outcomes Associated with Traumatic Brain Injury in Childhood and Adolescence: A Nationwide Swedish Cohort Study of a Wide Range of Medical and Social Outcomes.",
+      "authors": "Sariaslan A, Sharp DJ, D'Onofrio BM, Larsson H, Fazel S.",
+      "evidence_reviewed": "Full-text XML from Europe PMC and indexed abstract",
+      "claim_review": "Registry cohort, sibling comparisons, and adverse outcomes; does not diagnose an unassessed individual.",
+      "citation_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995002/"
+      ]
+    },
+    {
+      "footnote": "felitti",
+      "title": "Relationship of childhood abuse and household dysfunction to many of the leading causes of death in adults. The Adverse Childhood Experiences (ACE) Study.",
+      "authors": "Felitti VJ, Anda RF, Nordenberg D, Williamson DF, Spitz AM, Edwards V, Koss MP, Marks JS.",
+      "evidence_reviewed": "Indexed paper abstract and metadata via Europe PMC; full text where available",
+      "claim_review": "Graded population associations with specified childhood adversities; not an individual forecast.",
+      "citation_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/9635069/"
+      ]
+    },
+    {
+      "footnote": "peterson",
+      "title": "Economic Burden of Health Conditions Associated With Adverse Childhood Experiences Among US Adults.",
+      "authors": "Peterson C, Aslam MV, Niolon PH, Bacon S, Bellis MA, Mercy JA, Florence C.",
+      "evidence_reviewed": "Full-text XML from Europe PMC and indexed abstract",
+      "claim_review": "Annual model estimate includes $183 billion medical spending and $13.9 trillion monetized lost healthy life-years.",
+      "citation_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10701608/"
+      ]
+    }
+  ],
+  "citation_link_checks": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7006878/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Centers for Disease Control and Prevention Guideline on the Diagnosis and Management of Mild Traumatic Brain Injury Among Children - PMC"
+    },
+    {
+      "url": "https://doi.org/10.1001/jamapediatrics.2018.2853",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://www.spandidos-publications.com/10.3892/br.2024.1747",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Biomedical Reports"
+    },
+    {
+      "url": "https://doi.org/10.1111/joor.13540",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39064299/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 203,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Noise-Induced Hearing Loss (NIHL) | NIDCD"
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/hyperacusis/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Noise sensitivity (hyperacusis)\n - NHS"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37742111/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 203,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://doi.org/10.1089/neu.2023.0059",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5536427/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Somatosensory tinnitus: Current evidence and future perspectives - PMC"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25197837/",
+      "articles": [
+        "the-body-keeps-the-receipts",
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 203,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://doi.org/10.1037/a0037564",
+      "articles": [
+        "open-letter-school-district",
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://doi.org/10.1111/cdev.12697",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://www.columbia.edu/cu/psychology/vpvaughns/assets/pdfs/Loss%20of%20Institutional%20Trust.pdf",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Downloaded and read with pdftotext",
+      "verification_note": "Web tool access was inconsistent; local PDF retrieval succeeded."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995002/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 200,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9635069/",
+      "articles": [
+        "the-body-keeps-the-receipts",
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 203,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10701608/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 200,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://www.cdc.gov/youth-violence/about/about-bullying.html",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Bullying | Youth Violence Prevention | CDC"
+    },
+    {
+      "url": "https://www.stopbullying.gov/bullying/effects",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Long-Term Effects of Bullying | StopBullying.gov"
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/23482/preventing-bullying-through-science-policy-and-practice",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Preventing Bullying Through Science, Policy, and Practice"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4702491/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 200,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://www.cdc.gov/heads-up/about/index.html",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Concussion Basics | HEADS UP | CDC"
+    },
+    {
+      "url": "https://www.cdc.gov/heads-up/signs-symptoms/index.html",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Signs and Symptoms of Concussion | HEADS UP | CDC"
+    },
+    {
+      "url": "https://www.cdc.gov/heads-up/media/pdfs/schools/TBI_schools_checklist_508-a.pdf",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Downloaded and read with pdftotext",
+      "verification_note": "Web tool access was inconsistent; local PDF retrieval succeeded."
+    },
+    {
+      "url": "https://publications.aap.org/pediatrics/article/142/6/e20183074/37534/Sport-Related-Concussion-in-Children-and",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "PubMed record 30420472 and indexed publisher clinical report"
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/bruxism/symptoms-causes/syc-20356095",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Teeth grinding (bruxism) - Symptoms and causes - Mayo Clinic"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30805947/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 203,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482466/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 200,
+      "fallback": "Indexed NCBI Bookshelf text and PubMed record; author list includes Sankari"
+    },
+    {
+      "url": "https://developingchild.harvard.edu/key-concept/toxic-stress/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Toxic Stress : What is toxic stress?"
+    },
+    {
+      "url": "https://www.cdc.gov/aces/about/index.html",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "About Adverse Childhood Experiences | Adverse Childhood Experiences (ACEs) | CDC"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24743774/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 203,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5269482/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "The long‐term impact of bullying victimization on mental health - PMC"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5371173/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Consequences of bullying victimization in childhood and adolescence: A systematic review and meta-analysis - PMC"
+    },
+    {
+      "url": "https://www.stopbullying.gov/resources/laws",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Laws, Policies & Regulations | StopBullying.gov"
+    },
+    {
+      "url": "https://www.stopbullying.gov/resources/laws/key-components",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Common Components in State Anti-Bullying Laws, Policies and Regulations | StopBullying.gov"
+    },
+    {
+      "url": "https://www.childwelfare.gov/resources/mandatory-reporting-child-abuse-and-neglect/",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Mandatory Reporting of Child Abuse and Neglect | Child Welfare Information Gateway"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278830",
+      "articles": [
+        "the-shift-they-taught-him"
+      ],
+      "access_result": "Readable page",
+      "page_title": "Institutional courage buffers against institutional betrayal, protects employee health, and fosters organizational commitment following workplace sexual harassment | PLOS One"
+    },
+    {
+      "url": "https://www.nj.gov/education/code/current/title6a/chap16.pdf",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Downloaded and read with pdftotext",
+      "verification_note": "Web tool access was inconsistent; local PDF retrieval succeeded."
+    },
+    {
+      "url": "https://doi.org/10.1073/pnas.1514483113",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://doi.org/10.1037/edu0000157",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Author institution record and abstract, Utrecht University"
+    },
+    {
+      "url": "https://doi.org/10.1002/ab.21509",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jad.2018.07.023",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 200,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://doi.org/10.1080/15374416.2013.865194",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Automated access blocked or redirect only",
+      "http_status": 403,
+      "fallback": "Paper metadata and abstract retrieved through Europe PMC"
+    },
+    {
+      "url": "https://www.njstatelib.org/wp-content/uploads/law_files/imported/Research_Guides/Law/njregister/volume19number9%20page673-794.pdf",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Downloaded and read with pdftotext",
+      "verification_note": "Web tool access was inconsistent; local PDF retrieval succeeded."
+    },
+    {
+      "url": "https://www.njstatelib.org/wp-content/uploads/law_files/imported/Research_Guides/Law/njregister/volume20number9%20page951-1018.pdf",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Downloaded and read with pdftotext",
+      "verification_note": "Web tool access was inconsistent; local PDF retrieval succeeded."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11278015/",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "NCBI browser challenge",
+      "fallback": "Full text retrieved as XML from Europe PMC; title, authors, methods and pooled prevalence checked."
+    },
+    {
+      "url": "https://doi.org/10.3390/jcm13144259",
+      "articles": [
+        "the-body-keeps-the-receipts"
+      ],
+      "access_result": "Publisher blocked automated access",
+      "fallback": "DOI and bibliographic details verified in Europe PMC record and full-text XML."
+    },
+    {
+      "url": "https://research-portal.uu.nl/en/publications/teacher-behavior-and-peer-liking-and-disliking-the-teacher-as-a-s/",
+      "articles": [
+        "open-letter-school-district"
+      ],
+      "access_result": "Readable author institution page",
+      "verification_note": "Title, authors, 1420 fifth-graders, longitudinal design and negative teacher behavior/peer-disliking association matched."
+    }
+  ],
+  "additional_corrections": [
+    "Completed prevalence-review authors and bibliographic details.",
+    "Added Abdulghani Sankari to the StatPearls author list.",
+    "Removed et al. from the three-author Smidt citation.",
+    "Added an author-institution access link for the Hendrickx study."
+  ],
+  "historical_records_review": "Read 1987 and 1988 New Jersey Register PDFs. Located N.J.A.C. 6:3-2.2(i) annual review and deletion of permitted records, the mandated/permitted distinction, and retention/destruction provisions. Current 6A:16-7.7 distinguishes school specialist and district coordinator roles.",
+  "followup_spot_checks": [
+    {
+      "source": "Felitti et al. (1998)",
+      "evidence_reviewed": "PubMed title, authors, DOI and abstract; publisher full text unavailable",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9635069/",
+      "scope": "Graded population associations, not individual outcome predictions."
+    },
+    {
+      "source": "Harris et al. (2024)",
+      "evidence_reviewed": "Europe PMC indexed metadata and abstract; PubMed/PMC access challenges prevented full-text review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37742111/",
+      "scope": "Auditory symptoms after mTBI are described; this does not establish the cause of this individual’s symptoms."
+    },
+    {
+      "source": "Smith and Freyd (2014)",
+      "evidence_reviewed": "Accepted author manuscript; institutional action/inaction definition and research recommendations",
+      "url": "https://dynamic.uoregon.edu/jjf/articles/sfinpress.pdf",
+      "scope": "Institutional betrayal provides context; not independent verification of the recalled events."
+    },
+    {
+      "source": "Sariaslan et al. (2016)",
+      "evidence_reviewed": "Publisher full text, including discussion and limitations on mild-TBI ascertainment and residual genetic confounding",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002103",
+      "scope": "Cohort and sibling comparisons provide general context, not a retrospective diagnosis."
+    }
+  ]
+}
