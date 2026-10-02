@@ -6,7 +6,7 @@ title: "Hawaii Courts Accountability Files"
 seo_title: "Hawaii Courts Accountability Files | Oahu Underground"
 description: "A records-first hub for the Wilson Loo review path, sealed audio, attempted record preservation, HRPC 8.3(b), and Hawaii court oversight context."
 date: 2026-05-14
-lastmod: 2026-06-12
+lastmod: 2026-10-01
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/hawaii-courts/"
@@ -57,7 +57,7 @@ structured_data_graph:
   name: "Hawaii Courts Accountability Files"
   description: "A records-first hub for the Wilson Loo review path, sealed audio, attempted record preservation, HRPC 8.3(b), and Hawaii court oversight context."
   inLanguage: "en"
-  dateModified: "2026-06-12T00:00:00Z"
+  dateModified: "2026-10-01T00:00:00Z"
   hasPart:
     - "@type": "Article"
       name: "The Silent Conspiracy"
@@ -74,6 +74,12 @@ structured_data_graph:
     - "@type": "Article"
       name: "The Lawyer in the Room"
       url: "https://gtcode.com/hawaii-courts/lawyer-in-the-room-bosko-petricevic/"
+    - "@type": "Article"
+      name: "The Hypothetical Gun: The Closing-Argument Record"
+      url: "https://gtcode.com/hawaii-courts/the-hypothetical-gun/"
+    - "@type": "Article"
+      name: "The Threat Report: Counsel, Safety, and the Leave-Hawaiʻi Question"
+      url: "https://gtcode.com/hawaii-courts/the-threat-report/"
 
 standards_eyebrow: "Legal Audit Route"
 standards_title: "Hawaii Courts Portfolio"
@@ -94,6 +100,13 @@ portfolio_sections:
       - "/hawaii-courts/two-questions-wilson-loo"
       - "/hawaii-courts/wilson-loo-judicial-signaling"
       - "/hawaii-courts/lawyer-in-the-room-bosko-petricevic"
+  - id: "professional-responsibility"
+    eyebrow: "Trial and Counsel Record"
+    title: "Professional Responsibility"
+    description: "Public accountability letters concerning trial advocacy and counsel handling. They supersede the narrower unsubmitted drafts as the author’s published accounts. Neither draft has been submitted to ODC; no disciplinary findings are reported. Cross-linking does not imply coordination."
+    pages:
+      - "/hawaii-courts/the-hypothetical-gun"
+      - "/hawaii-courts/the-threat-report"
   - id: "oversight-failure"
     eyebrow: "Oversight Failure"
     title: "Judicial Discipline and Self-Investigation"

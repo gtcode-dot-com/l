@@ -213,7 +213,7 @@ Published {{ .Date.Format "Jan 2, 2006" }} · Updated {{ $updated.Format "Jan 2,
 {{ if gt (len $latestUpdates) 0 -}}
 ## Latest Updates
 
-New filings and recently updated files
+Public disclosures and recently updated files
 {{ range $latestUpdates }}
 {{ $updated := .Lastmod -}}
 {{ if $updated.IsZero }}{{ $updated = .Date }}{{ end -}}

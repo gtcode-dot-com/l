@@ -217,7 +217,15 @@
     <header class="site-header">
       <div class="site-header-inner">
         <a href="/" class="site-logo" aria-label="{{ $brandName }} home">
-          <img src="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" alt="{{ $brandName }} mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
+          {{ partial "media/responsive-image.html" (dict
+            "page" $page
+            "src" (partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg")
+            "alt" (printf "%s mark" $brandName)
+            "class" "site-logo-mark"
+            "width" 40
+            "height" 40
+            "loading" "eager"
+          ) }}
           <span>{{ $brandName }}</span>
         </a>
 
@@ -238,6 +246,7 @@
 
     <main class="site-main" id="main-content">
       {{ partial "ai-agent-comment.html" . }}
+      {{ if not $isActiveException }}
       {{ with $homepageNotice }}
       <section class="homepage-notice" aria-labelledby="homepage-notice-title">
         <div class="homepage-notice-inner">
@@ -248,6 +257,7 @@
           </div>
         </div>
       </section>
+      {{ end }}
       {{ end }}
       {{ if $isActiveException }}
       <section class="ou-section">
@@ -325,7 +335,7 @@
 
       <!-- Featured Investigations — side-by-side image + text -->
       <section class="ou-section" id="featured-investigations">
-        <div class="ou-section-wide">
+        <div class="ou-section-wide"{{ if not .Site.Params.show_home_neutralization_stack }} id="start-here"{{ end }}>
 
           {{/* Lead Investigation */}}
           {{ if $lead }}
@@ -534,7 +544,7 @@
       <section class="ou-section ou-wire" id="latest-updates">
         <div class="ou-section-inner">
           <p class="ou-section-label">Latest Updates</p>
-          <h2 class="ou-section-heading">New filings and recently updated files</h2>
+          <h2 class="ou-section-heading">Public disclosures and recently updated files</h2>
           <ul class="ou-wire-list">
             {{ range $latestUpdates }}
             {{ $updated := .Lastmod }}

@@ -15,6 +15,10 @@
 {{ end }}
 
 {{ define "main" }}
+  {{ if partial "exception/is-hidden.html" . }}
+    {{ $active := partial "exception/resolve-active-page.html" . }}
+    <section class="section-header"><h1>{{ $active.Title }}</h1>{{ $active.Content }}</section>
+  {{ else }}
   <!-- Breadcrumb -->
   <nav class="breadcrumb">
     <a href="/">Home</a>
@@ -76,4 +80,5 @@
       <p class="text-muted">No articles with this tag yet.</p>
     </div>
   {{ end }}
+{{ end }}
 {{ end }}

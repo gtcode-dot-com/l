@@ -6,7 +6,7 @@ title: "Reporter Disclosures"
 seo_title: "Reporter Disclosures | Oahu Underground"
 description: "Transparency regarding methodology, prior contacts, civic overlap, and reporting context."
 date: 2026-05-14
-lastmod: 2026-05-14
+lastmod: 2026-10-01
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/disclosures/"
@@ -40,7 +40,11 @@ structured_data_graph:
   name: "Reporter Disclosures"
   description: "Transparency regarding methodology, prior contacts, civic overlap, and reporting context."
   inLanguage: "en"
-  dateModified: "2026-05-14T00:00:00Z"
+  dateModified: "2026-10-01T00:00:00Z"
+  hasPart:
+    - "@type": "Article"
+      name: "Before the Tax Office"
+      url: "https://gtcode.com/disclosures/before-the-tax-office/"
 
 standards_eyebrow: "Transparency Silo"
 standards_title: "Reporter Disclosures"
@@ -55,6 +59,7 @@ portfolio_sections:
     title: "Reporting Context"
     description: "Transparency material about prior law-enforcement contact, civic overlap, and reporting method."
     pages:
+      - "/disclosures/before-the-tax-office"
       - "/disclosures/prior-law-enforcement-contact"
       - "/disclosures/cartography-for-guppies"
       - "/disclosures/postscript-audit-tactical-roadmap"

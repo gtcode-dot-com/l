@@ -266,6 +266,8 @@ reported misconduct by Audrey L.E. Stanley, now also serving as a First Circuit 
 
 The Stanley issue is a related oversight question. The current public record supports alignment of pressures: separate pressures, from separate channels, converged on the same practical result. Coordination or service of one event by another requires separate evidence. The public-record question is whether serious reports involving future judicial officers are documented, reviewed, or considered before appointment.
 
+The dedicated Stanley counsel-file disclosure is [The Threat Report](/hawaii-courts/the-threat-report/), based on a draft disciplinary complaint not submitted to ODC. It reports no disciplinary finding and does not prove the Wilson Loo account or coordination.
+
 ### Institutional Non-Response
 
 When confronted with evidence that their website still lists Wilson Loo as an active judge - contradicting

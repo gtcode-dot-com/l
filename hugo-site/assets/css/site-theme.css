@@ -639,6 +639,17 @@ body::before,
   letter-spacing: -0.025em;
 }
 
+/* Portfolio panels need an inset inside their themed borders. */
+.ou-portfolio-group,
+.ou-portfolio-group:first-child {
+  padding: clamp(1rem, 3vw, 2rem);
+  min-width: 0;
+}
+
+.ou-portfolio-cards + .ou-portfolio-description {
+  margin-top: 1.25rem;
+}
+
 .ou-card-kicker {
   font-size: 0.6875rem;
   color: var(--theme-accent);

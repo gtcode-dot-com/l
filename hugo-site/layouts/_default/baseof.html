@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $isActiveException := and site.Params.enable_exceptions (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- $siteLang := .Site.LanguageCode | default "en" -}}
 {{- $contentLang := $active.Params.language | default "" -}}
 {{- $langFromHugo := $active.Lang | default "" -}}
@@ -66,6 +66,7 @@
     {{ $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false }}
     {{ $minIndexableTermPages := int (.Site.Params.seo_min_indexable_term_pages | default 1) }}
     {{ $robots := $page.Params.robots }}
+    {{ if partial "exception/is-hidden.html" $page }}{{ $robots = "noindex,follow" }}{{ end }}
     {{ if and (not $robots) (eq $page.Kind "404") }}
       {{ $robots = "noindex,follow" }}
     {{ end }}
@@ -197,7 +198,7 @@
     <header class="site-header">
       <div class="site-header-inner">
         <a href="/" class="site-logo">
-          <img src="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
+          <img src="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" alt="GTCode mark" class="site-logo-mark" width="40" height="40" loading="eager" decoding="async" />
           <span>{{ if site.Params.enable_exceptions }}GTCode{{ else }}{{ .Site.Params.site_brand_short | default .Site.Title }}{{ end }}</span>
         </a>
         <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">

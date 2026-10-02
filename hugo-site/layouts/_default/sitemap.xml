@@ -28,7 +28,7 @@
     {{- end -}}
   {{- end }}
 
-  {{- range sort .Data.Pages "RelPermalink" "asc" }}
+  {{- range sort (partial "exception/filter-list-pages.html" .Data.Pages) "RelPermalink" "asc" }}
     {{- $robots := lower (printf "%v" .Params.robots) -}}
     {{- $isNoindex := in $robots "noindex" -}}
     {{- $isSyndicatedNews := and (eq .Section "news") .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}

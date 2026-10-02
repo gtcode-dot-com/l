@@ -217,7 +217,7 @@
                   {{ partial "media/responsive-image.html" (dict
                     "page" $cardPage
                     "src" .
-                    "alt" $cardPage.Title
+                    "alt" ($cardPage.Params.og_image_alt | default $cardPage.Title)
                     "slot" "investigation_card"
                     "width" ($cardPage.Params.og_image_width | default 1200)
                     "height" ($cardPage.Params.og_image_height | default 630)
@@ -239,6 +239,9 @@
               </article>
               {{ end }}
             </div>
+            {{ with $portfolio.context_url }}
+            <p class="ou-portfolio-description"><a href="{{ . }}">{{ $portfolio.context_label }}</a>. {{ $portfolio.context_note }}</p>
+            {{ end }}
           </section>
           {{ end }}
         {{ end }}
@@ -292,7 +295,7 @@
             {{ partial "media/responsive-image.html" (dict
               "page" $cardPage
               "src" .
-              "alt" $cardPage.Title
+              "alt" ($cardPage.Params.og_image_alt | default $cardPage.Title)
               "slot" "investigation_card"
               "width" ($cardPage.Params.og_image_width | default 1200)
               "height" ($cardPage.Params.og_image_height | default 630)

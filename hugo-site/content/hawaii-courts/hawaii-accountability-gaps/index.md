@@ -6,7 +6,7 @@ title: "Hawaii Accountability Gaps: A Case Study"
 subtitle: "A modular review of process failures without requiring one explanation for every event"
 description: "A case study showing how legal, law-enforcement, and oversight processes can create review gaps through ordinary institutional incentives, record limits, and discretionary choke points."
 date: 2025-08-13
-lastmod: 2026-06-12
+lastmod: 2026-10-01
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -15,7 +15,7 @@ portfolio_index: "/hawaii-courts/"
 homepage_exclude: true
 seo_title: "Hawaii Accountability Gaps — A Case Study in Review Failure"
 published_display: "August 13, 2025"
-modified_display: "June 12, 2026"
+modified_display: "October 1, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/"
@@ -43,7 +43,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-13T00:00:00Z"
-article_modified_time: "2026-06-12T00:00:00Z"
+article_modified_time: "2026-10-01T00:00:00Z"
 article_section: "Hawaii Courts"
 article_tags:
   - "Institutional Accountability"
@@ -82,7 +82,7 @@ structured_data:
   description: "Case study of reported and documented review failures in Hawaii"
   image: "/img/ou-investigations-index-og-1200x630.jpg"
   datePublished: "2025-08-13T00:00:00Z"
-  dateModified: "2026-06-12T00:00:00Z"
+  dateModified: "2026-10-01T00:00:00Z"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"
@@ -136,17 +136,19 @@ The subject reports a violent assault at age 12 that occurred, in the subject's 
 
 Additionally, the subject reports withheld background context that shaped how later law-enforcement contact was interpreted and documented. This article does not rely on biography to prove any institutional claim. Any official attention, basis, contents, and later use would require FOIA/Privacy Act responses, agency correspondence, name-check records, attorney files, or comparable documentation.
 
-## Record Surface 2: 2015-2017 Prosecution and Intake Records
+## Record Surface 2: Prosecution and Intake Records
 
 ### Tax-Office Encounter and Charging Path
 
 The Hawaii portion of this case study begins with a disputed interaction between the subject and a state tax official in a government building. The subject describes the encounter as a coercive payment demand under color of tax authority inside a small, camera-less booth: an inflated figure, a demand for payment before leaving, a verbal attack, and a warning that leaving without paying would bring worse consequences. The state's response was to indict the subject for making threats. The later accounting and trial record, according to the subject's account, supported a substantially lower tax figure than the amount initially pressed. This is a charging-direction dispute: a complainant's account of official misconduct became a criminal case against the complainant. The procedural point is the absence of a neutral record and the power of prosecutorial discretion to define the direction of a case from its inception.
 
+The preceding private-pressure chronology is mapped separately in [Before the Tax Office](/disclosures/before-the-tax-office/), a Reporter Disclosure providing chronology context rather than proof of this state-file account.
+
 According to the subject's account, the tax official's threat allegation was presented through the grand-jury process, a charging channel that is secret by design. The subject states that he told his attorney he had not made that threat. At trial, according to the subject, the alleged threat language was not presented, argued, or tested by any party. That creates a public-record gap: the allegation could shape the secret charging record while remaining absent from the adversarial trial record.
 
 **Alternative explanations and limits:** The state may have credited the tax official's account because it appeared more reliable, because the threat allegation met charging standards, or because prosecutors believed the underlying tax issue was collateral. Prosecutors may also have narrowed the trial theory, judged the alleged statement unnecessary, faced evidentiary limits, or avoided a prejudicial issue. The article's focus is the record gap: an unrecorded booth encounter became the predicate for a violent-threat narrative, while the later accounting and trial record bear on the underlying tax amount and the alleged threat language was not publicly tested at trial.
 
-**Records that would test this surface:** indictment materials, grand-jury material where available, trial transcripts, motions in limine or evidentiary rulings, jury instructions, verdict forms, attorney files, accounting exhibits, and expungement records.
+**Records that would test this surface:** indictment materials, grand-jury material where available, trial transcripts, motions in limine or evidentiary rulings, jury instructions, verdict forms, attorney files, accounting exhibits.
 
 ### Interstate Law Enforcement Interaction
 
@@ -166,21 +168,25 @@ While facing indictment, the subject reported stalking and a direct threat by in
 
 **Institutional Inaction:** The subject reports that law enforcement and prosecutorial bodies failed to act on the complaint.
 
-**Reported Witness Intimidation:** The subject reports witness intimidation through the quoted "Stay away from Jack" / "or you'll be whacked" sequence and a separate career-destruction threat by one specific man described as a friend of Jack and Kim Johnson.
+**Reported Witness Intimidation:** The subject reports witness intimidation through the quoted "Stay away from [name withheld]" / "or you'll be whacked" sequence and a separate career-destruction threat by one specific man described as an associate of a public figure and that person’s spouse, according to the author’s understanding.
 
 **Reported Legal-Representation Gap:** The subject reports that assigned counsel was told about witness intimidation that used a threat of lethal violence to control investigative conduct and later communicated a possible resolution concept under which the subject would leave Hawaiʻi. The existence, terms, source, and legal effect of that concept require attorney files, disclosures, communications, court records, or other records.
 
 ### Legal Representation and Conflict-Review Questions
 
-The institutional failure was compounded, in the subject's account, by a breakdown in his own legal defense. The subject reports that he told assigned counsel Audrey L.E. Stanley about the quoted threat sequence: "Stay away from Jack" followed by "or you'll be whacked." In the subject's account, that was witness intimidation using conditional phrasing: the condition identified the investigative conduct being controlled. Jack Johnson's name matters because, in the subject's account, it was used as the boundary marker in the coercive instruction.
+The institutional failure was compounded, in the subject's account, by a breakdown in his own legal defense. The subject reports that he told assigned counsel Audrey L.E. Stanley about the quoted threat sequence: "Stay away from [name withheld]" followed by "or you'll be whacked." In the subject's account, that was witness intimidation using conditional phrasing: the condition identified the investigative conduct being controlled. The name is withheld; in the subject's account, the person named was used as the boundary marker in the coercive instruction. Naming someone in a threat does not establish that person's participation.
 
 The subject also reports that, during the same representation, Stanley later communicated that there may be a way to resolve the matter if he left Hawaiʻi. The available public record leaves unresolved who originated that concept, whether it was formal or informal, whether written terms existed, and whether it was related to the reported threat. The review questions are what counsel documented, what advice was given, what terms were obtained, whether the overlap was recognized, and whether any reporting, conflict, or preservation duty existed.
+
+[The Threat Report](/hawaii-courts/the-threat-report/) is the dedicated counsel-file public disclosure for these reported threat-handling and leave-Hawaiʻi questions.
 
 ## Record Surface 3: Courtroom Procedure and Preservation
 
 ### Reported Deviations from Standard Courtroom Conduct
 
 During the trial related to the tax-office case, the subject reports that the prosecutor furnished misleading courtroom diagrams and, in closing argument, acknowledged there was no gun in the case, formed both hands into the shape of a pistol, pointed the two-handed mock pistol at all twelve jurors, asked them to imagine a gun anyway, urged conviction, and rested his case. The process issue is concrete: because the reported conduct combined words, physical gesture, and courtroom positioning, a transcript may not capture how the full verbal and visual sequence affected the proceeding.
+
+[The Hypothetical Gun](/hawaii-courts/the-hypothetical-gun/) examines the closing-argument record and separates transcript-testable words from the reported visual gesture.
 
 The subject links the sequence to the organized-crime frame introduced during the earlier out-of-state investigator encounter. In the subject's account, law enforcement had referenced childhood associates later publicly associated with organized-crime prosecutions, and the courtroom sequence visually invoked that same frame in front of jurors. The prosecutor's subjective intent, source of knowledge, and any coordination with the investigator remain separate questions requiring evidence beyond the subject's account.
 
@@ -220,9 +226,11 @@ The analysis now shifts to HPD's reported inaction in response to the subject's 
 
 This reported pattern of non-response had the practical effect of reducing review of the third party's reported conduct. The pattern is analyzed as an intake and triage risk created by discretionary non-response. By choosing where and when not to apply resources, an institution can create practical barriers to accountability without issuing any explicit illegal orders.
 
-**Officer Brandt intake-obstruction account:** The subject reports that Officer Brandt obstructed another HPD officer from fielding the subject's report about the quoted threat. The record category is a reported intake event involving a named officer. Relevant records would include bodycam, dispatch notes, CAD logs, incident reports, officer notes, report-intake records, officer identity, and any internal-affairs file.
+**September 2022 officer identifications:** The subject identifies Shatoo with the September 12, 2022 PaaLaa Road vehicle run-over attempt (report locator **22-353421**) and Brandt with the September 20, 2022 Breakers / North Shore Marketplace harassment and TRO-service-context event (report locator **22-365099**). These identifications come from the subject's recollection; CAD/RMS and officer-assignment records should independently establish the responses.
 
-**HPD allowed-threat statement:** The subject reports that an HPD officer made a statement to him using language indicating that Jack Johnson's inner circle was allowed to make murder threats. The claim is limited to the reported statement made to the subject; authorization by any specific person would require separate evidence. Ordinary explanations include credibility discounting: once a complainant is labeled unreliable, difficult, "known," or entangled in a civil dispute, officers may use that label to rationalize non-response. That would still be a serious process failure if it caused a reported threat to be ignored. Relevant records would include bodycam, dispatch notes, CAD logs, incident reports, officer identity, and any internal-affairs file.
+**Officer Brandt intake-obstruction account:** The subject reports that, after 2022, Officer Brandt obstructed another HPD officer from fielding the subject's report about the quoted Hartmann threat. This later reporting attempt is separate from the September 20, 2022 Breakers / North Shore Marketplace response. See the [later reporting account](/disclosures/before-the-tax-office/#years-later-trying-to-put-the-threat-into-a-police-record). The record category is a reported intake event involving a named officer. Relevant records would include bodycam, dispatch notes, CAD logs, incident reports, officer notes, report-intake records, officer identity, and any internal-affairs file.
+
+**HPD allowed-threat statement:** The subject reports that an HPD officer made a statement to him using language indicating that an unnamed public figure’s circle was allowed to make murder threats. The claim is limited to the reported statement made to the subject; authorization by any specific person would require separate evidence. Ordinary explanations include credibility discounting: once a complainant is labeled unreliable, difficult, "known," or entangled in a civil dispute, officers may use that label to rationalize non-response. That would still be a serious process failure if it caused a reported threat to be ignored. Relevant records would include bodycam, dispatch notes, CAD logs, incident reports, officer identity, and any internal-affairs file.
 
 The HPD issue is tested through system-level proxy records and the complainant-specific records. Public-record proxy examples elsewhere in this series include Police Commission oversight concerns, officer-discipline reversal through SHOPO arbitration, and the Legislature's creation of SIPD after federal prosecutors exposed public corruption that state channels had not surfaced. Those records test intake, discipline, and independent-review design; the subject's reports still require their own records.
 

@@ -17,9 +17,11 @@
   {{ if .Data.Terms }}
     <div class="tag-cloud" style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:2rem;">
       {{ range .Data.Terms.Alphabetical }}
+        {{ if not (partial "exception/is-hidden.html" .Page) }}
         <a href="{{ .Page.RelPermalink }}" class="badge badge-category" style="font-size:1rem; padding:0.5rem 1rem; text-decoration:none;">
           {{ .Page.Title }} <span class="text-muted" style="margin-left:0.25rem;">({{ .Count }})</span>
         </a>
+        {{ end }}
       {{ end }}
     </div>
   {{ else }}

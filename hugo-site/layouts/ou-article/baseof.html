@@ -39,10 +39,14 @@
     {{ $pageDescription = partial "seo/plaintext.html" (dict "value" $pageDescription "max" $descMax) }}
     <meta name="description" content="{{ $pageDescription }}" />
     <meta name="author" content="{{ $active.Params.author | default .Site.Params.author }}" />
+    {{ if $isActiveException }}
+    <meta name="robots" content="noindex,follow" />
+    {{ else }}
     {{ with $page.Params.robots }}
     <meta name="robots" content="{{ . }}" />
     {{ else }}
     <meta name="robots" content="index, follow, max-image-preview:large" />
+    {{ end }}
     {{ end }}
     {{- $keywords := "" -}}
     {{- with $active.Params.meta_keywords -}}

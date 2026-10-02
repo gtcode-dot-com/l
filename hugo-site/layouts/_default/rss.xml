@@ -1,6 +1,7 @@
+{{- $active := partial "exception/resolve-active-page.html" . -}}
 {{- $httpsPermalink := replace .Permalink "http://" "https://" -}}
 {{- $language := .Site.LanguageCode | default "en-us" -}}
-{{- $description := .Description | default (.Site.Params.description | default .Site.Title) -}}
+{{- $description := $active.Description | default (.Site.Params.description | default .Site.Title) -}}
 {{- $pages := .Pages -}}
 {{- if .IsHome -}}
   {{- $pages = .Site.RegularPages -}}
@@ -16,7 +17,7 @@
 {{- $siteRoot = strings.TrimRight "/" $siteRoot -}}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>{{ .Title }}</title>
+    <title>{{ $active.Title }}</title>
     <link>{{ $httpsPermalink }}</link>
     <description>{{ htmlEscape $description }}</description>
     <generator>Hugo</generator>
@@ -28,7 +29,7 @@
     {{- end }}
     <image>
       <url>{{ $siteRoot }}/apple-touch-icon.png</url>
-      <title>{{ .Title }}</title>
+      <title>{{ $active.Title }}</title>
       <link>{{ $httpsPermalink }}</link>
     </image>
     {{- range $pages }}

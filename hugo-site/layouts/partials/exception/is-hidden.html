@@ -1,0 +1,9 @@
+{{- $hidden := false -}}
+{{- if site.Params.enable_exceptions -}}
+  {{- $hidden = eq .Params.exception true -}}
+  {{- if and (eq .Kind "term") (gt (len .Pages) 0) -}}
+    {{- $visible := where .Pages "Params.exception" "ne" true -}}
+    {{- if eq (len $visible) 0 }}{{ $hidden = true }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $hidden -}}
