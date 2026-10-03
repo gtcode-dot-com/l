@@ -17,7 +17,7 @@ Ekewaka Lono
 
 # You Do Not Have to Believe Me. Retrieve the Records.
 
-I have reported threats, obstruction of police reporting, investigator intimidation, failures by counsel, a disputed official account, and conduct inside a courtroom.
+I have reported threats, violence, perjury, obstruction of police reporting, investigator intimidation, failures by counsel, a disputed official account, and conduct inside a courtroom.
 
 The easiest response is to make the person reporting those things the issue: discredit him, ignore him, isolate each event, call him unstable, or decide the story is too strange to examine.
 

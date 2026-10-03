@@ -622,6 +622,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:16.125850+00:00"
   },
+  "news/ai-research/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome": {
+    "slug": "news/ai-research/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
+    "meta_description": "We are grateful to our research collaborators at University of Exeter, Broad Institute, Boston Childrenâs Hospital, Stowers Institute for...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome\",\n  \"description\": \"We are grateful to our research collaborators at University of Exeter, Broad Institute, Boston Childrenâs Hospital, Stowers Institute for...\",\n  \"datePublished\": \"2026-10-03T03:01:13.660426+00:00\",\n  \"dateModified\": \"2026-10-03T03:01:13.660426+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome\"\n  },\n  \"url\": \"https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:16.643749+00:00"
+  },
   "news/ai-research/alphago-at-10-how-ai-innovation-is-paving-the-path-to-agi": {
     "slug": "news/ai-research/alphago-at-10-how-ai-innovation-is-paving-the-path-to-agi",
     "meta_description": "By proving it could navigate the massive search space of a Go board, AlphaGo demonstrated the potential for AI to help us better understand the...",
@@ -4171,6 +4178,13 @@
     "agent_callout": "",
     "generated_at": "2025-11-13T00:30:05.124901+00:00"
   },
+  "news/ai-research/introducing-agentic-video-understanding-with-gemini": {
+    "slug": "news/ai-research/introducing-agentic-video-understanding-with-gemini",
+    "meta_description": "Today, we’re launching agentic video understanding across our latest models: Gemini 3.7 Flash, 3.6 Flash and 3.5 Flash-Lite.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing agentic video understanding with Gemini\",\n  \"description\": \"Today, we’re launching agentic video understanding across our latest models: Gemini 3.7 Flash, 3.6 Flash and 3.5 Flash-Lite.\",\n  \"datePublished\": \"2026-10-03T03:01:17.982362+00:00\",\n  \"dateModified\": \"2026-10-03T03:01:17.982362+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-agentic-video-in-gemini\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-agentic-video-in-gemini\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:14.607432+00:00"
+  },
   "news/ai-research/introducing-amazon-bedrock-global-cross-region-inference-for-anthropics-claude-models-in-the-middle-east-regions-uae-and-bahrain": {
     "slug": "news/ai-research/introducing-amazon-bedrock-global-cross-region-inference-for-anthropics-claude-models-in-the-middle-east-regions-uae-and-bahrain",
     "meta_description": "We’re excited to announce the availability of Anthropic’s Claude Opus 4.6 , Claude Sonnet 4.6 , Claude Opus 4.5 , Claude Sonnet 4.",
@@ -4268,6 +4282,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing Gemini 3.7 Flash\",\n  \"description\": \"3.7 Flash shows strong gains over 3.6 Flash in coding tasks like debugging and issue resolution. It also achieves higher first-pass code accuracy...\",\n  \"datePublished\": \"2026-09-27T18:30:20.704250+00:00\",\n  \"dateModified\": \"2026-09-27T18:30:20.704250+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-gemini-3-7-flash\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-gemini-3-7-flash\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-27T18:31:13.515780+00:00"
+  },
+  "news/ai-research/introducing-gemini-3-8-flash-and-3-8-flash-cyber": {
+    "slug": "news/ai-research/introducing-gemini-3-8-flash-and-3-8-flash-cyber",
+    "meta_description": "Building on the momentum of 3.7 Flash from three weeks ago and marking our third Flash release in only six weeks, today we’re introducing Gemini 3.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing Gemini 3.8 Flash and 3.8 Flash Cyber\",\n  \"description\": \"Building on the momentum of 3.7 Flash from three weeks ago and marking our third Flash release in only six weeks, today we’re introducing Gemini 3.\",\n  \"datePublished\": \"2026-10-03T03:01:16.976036+00:00\",\n  \"dateModified\": \"2026-10-03T03:01:16.976036+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:15.040028+00:00"
   },
   "news/ai-research/introducing-gemini-omni": {
     "slug": "news/ai-research/introducing-gemini-omni",
@@ -4457,6 +4478,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing Visa Intelligent Commerce on AWS: Enabling agentic commerce with Amazon Bedrock AgentCore\",\n  \"description\": \"This post is cowritten with Sangeetha Bharath and Seemal Zaman from Visa. Across every industry, agentic AI is redefining how work gets done by...\",\n  \"datePublished\": \"2025-12-24T12:03:25.912959+00:00\",\n  \"dateModified\": \"2025-12-24T12:03:25.912959+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://aws.amazon.com/blogs/machine-learning/introducing-visa-intelligent-commerce-on-aws-enabling-agentic-commerce-with-amazon-bedrock-agentcore\"\n  },\n  \"url\": \"https://aws.amazon.com/blogs/machine-learning/introducing-visa-intelligent-commerce-on-aws-enabling-agentic-commerce-with-amazon-bedrock-agentcore\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:48.941062+00:00"
+  },
+  "news/ai-research/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model": {
+    "slug": "news/ai-research/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
+    "meta_description": "WeatherNext 3's biggest leap forward is what it learns from. Most AI weather models, including WeatherNext 2, are trained on data from numerical...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing WeatherNext 3, our most advanced and accurate global weather AI model\",\n  \"description\": \"WeatherNext 3's biggest leap forward is what it learns from. Most AI weather models, including WeatherNext 2, are trained on data from numerical...\",\n  \"datePublished\": \"2026-10-03T03:01:15.046002+00:00\",\n  \"dateModified\": \"2026-10-03T03:01:15.046002+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:17.107931+00:00"
   },
   "news/ai-research/investing-in-multi-agent-ai-safety-research": {
     "slug": "news/ai-research/investing-in-multi-agent-ai-safety-research",
@@ -6088,6 +6116,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Preview tool helps makers visualize 3D-printed objects\",\n  \"description\": \"Designers, makers, and others often use 3D printing to rapidly prototype a range of functional objects, from movie props to medical devices.\",\n  \"datePublished\": \"2026-04-02T08:15:42.157275+00:00\",\n  \"dateModified\": \"2026-04-02T08:15:42.157275+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/preview-tool-helps-makers-visualize-3d-printed-objects-0401\"\n  },\n  \"url\": \"https://news.mit.edu/2026/preview-tool-helps-makers-visualize-3d-printed-objects-0401\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T08:16:19.000194+00:00"
+  },
+  "news/ai-research/proactive-cyber-defense-for-governments-and-enterprises": {
+    "slug": "news/ai-research/proactive-cyber-defense-for-governments-and-enterprises",
+    "meta_description": "Defenders wanting to use advanced AI have faced a difficult dilemma: adopt enormous frontier models that could be expensive to deploy and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Proactive cyber defense for governments and enterprises\",\n  \"description\": \"Defenders wanting to use advanced AI have faced a difficult dilemma: adopt enormous frontier models that could be expensive to deploy and...\",\n  \"datePublished\": \"2026-10-03T03:01:16.052305+00:00\",\n  \"dateModified\": \"2026-10-03T03:01:16.052305+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises\"\n  },\n  \"url\": \"https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:15.544871+00:00"
   },
   "news/ai-research/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe": {
     "slug": "news/ai-research/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe",
@@ -7733,6 +7768,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"1980s Hacker Manifesto\",\n  \"description\": \"Forty years ago, The Mentor— Loyd Blankenship —published “ The Conscience of a Hacker ” in Phrack . > You bet your ass we’re all alike… we’ve been...\",\n  \"datePublished\": \"2026-01-13T12:15:14.098305+00:00\",\n  \"dateModified\": \"2026-01-13T12:15:14.098305+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/01/1980s-hacker-manifesto.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/01/1980s-hacker-manifesto.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:14.282756+00:00"
+  },
+  "news/ai-security/1password-s-ai-patching-benchmark-is-misleading": {
+    "slug": "news/ai-security/1password-s-ai-patching-benchmark-is-misleading",
+    "meta_description": "1Password’s FLAWED report , published on August 6, 2026, gives defenders a misleading picture of AI patching. Its headline says models produced...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"1Password's AI patching benchmark is misleading\",\n  \"description\": \"1Password’s FLAWED report , published on August 6, 2026, gives defenders a misleading picture of AI patching. Its headline says models produced...\",\n  \"datePublished\": \"2026-10-03T03:00:53.695385+00:00\",\n  \"dateModified\": \"2026-10-03T03:00:53.695385+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:12.141794+00:00"
   },
   "news/ai-security/2026-64-bits-malware-trend": {
     "slug": "news/ai-security/2026-64-bits-malware-trend",
@@ -10317,6 +10359,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-05T12:16:10.967366+00:00"
   },
+  "news/ai-security/data-broker-radaris-loses-domains-in-privacy-fight": {
+    "slug": "news/ai-security/data-broker-radaris-loses-domains-in-privacy-fight",
+    "meta_description": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Data Broker Radaris Loses Domains in Privacy Fight\",\n  \"description\": \"The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of...\",\n  \"datePublished\": \"2026-10-03T03:00:53.110933+00:00\",\n  \"dateModified\": \"2026-10-03T03:00:53.110933+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:12.568535+00:00"
+  },
   "news/ai-security/david-szalay-becomes-first-hungarian-british-author-to-win-the-booker-prize": {
     "slug": "news/ai-security/david-szalay-becomes-first-hungarian-british-author-to-win-the-booker-prize",
     "meta_description": "David Szalay, a Hungarian-British author, wins the Booker Prize for 'Flesh,' a novel exploring class and power, recognised for its unique narrative and...",
@@ -11303,6 +11352,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: Regulating Squid Fishing in the South Pacific\",\n  \"description\": \"The South Pacific Regional Fisheries Management Organization (SPRFMO) needs to regulate squid fishing in the South Pacific.\",\n  \"datePublished\": \"2026-05-23T03:18:48.775204+00:00\",\n  \"dateModified\": \"2026-05-23T03:18:48.775204+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/05/friday-squid-blogging-regulating-squid-fishing-in-the-south-pacific.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/05/friday-squid-blogging-regulating-squid-fishing-in-the-south-pacific.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-23T03:19:49.567632+00:00"
+  },
+  "news/ai-security/friday-squid-blogging-rotting-squid-on-a-beached-california-boat": {
+    "slug": "news/ai-security/friday-squid-blogging-rotting-squid-on-a-beached-california-boat",
+    "meta_description": "Smells awful : &gt; But an estimated 30 to 50 tons of dead squid remain inside the boat’s catch tank, where they have been decomposing for days.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: Rotting Squid on a Beached California Boat\",\n  \"description\": \"Smells awful : &gt; But an estimated 30 to 50 tons of dead squid remain inside the boat’s catch tank, where they have been decomposing for days.\",\n  \"datePublished\": \"2026-10-03T03:00:52.305175+00:00\",\n  \"dateModified\": \"2026-10-03T03:00:52.305175+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/friday-squid-blogging-rotting-squid-on-a-beached-california-boat.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/friday-squid-blogging-rotting-squid-on-a-beached-california-boat.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:13.137593+00:00"
   },
   "news/ai-security/friday-squid-blogging-squid-camouflage": {
     "slug": "news/ai-security/friday-squid-blogging-squid-camouflage",
@@ -13110,6 +13166,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T02:42:54.529469+00:00"
   },
+  "news/ai-security/isc-stormcast-for-thursday-september-17th-2026-https-isc-sans-edu-podcastdetail-10098-thu-sep-17th": {
+    "slug": "news/ai-security/isc-stormcast-for-thursday-september-17th-2026-https-isc-sans-edu-podcastdetail-10098-thu-sep-17th",
+    "meta_description": "Sign In Sign Up Handler on Duty: Xavier Mertens Threat Level: green [](/j/research) Homepage Diaries Podcasts Jobs Data + TCP/UDP Port Activity +...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Thursday, September 17th, 2026 https://isc.sans.edu/podcastdetail/10098, (Thu, Sep 17th)\",\n  \"description\": \"Sign In Sign Up Handler on Duty: Xavier Mertens Threat Level: green [](/j/research) Homepage Diaries Podcasts Jobs Data + TCP/UDP Port Activity +...\",\n  \"datePublished\": \"2026-10-03T03:00:54.253881+00:00\",\n  \"dateModified\": \"2026-10-03T03:00:54.253881+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33346\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33346\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:14.149468+00:00"
+  },
   "news/ai-security/isc-stormcast-for-tuesday-april-14th-2026-https-isc-sans-edu-podcastdetail-9890-tue-apr-14th": {
     "slug": "news/ai-security/isc-stormcast-for-tuesday-april-14th-2026-https-isc-sans-edu-podcastdetail-9890-tue-apr-14th",
     "meta_description": "ISC Stormcast For Tuesday, April 14th, 2026",
@@ -14768,6 +14831,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Mutation testing for the agentic era\",\n  \"description\": \"Code coverage is one of the most dangerous quality metrics in software testing. Many developers fail to realize that code coverage lies by...\",\n  \"datePublished\": \"2026-04-02T08:15:15.630569+00:00\",\n  \"dateModified\": \"2026-04-02T08:15:15.630569+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/04/01/mutation-testing-for-the-agentic-era\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/04/01/mutation-testing-for-the-agentic-era\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T08:16:18.442653+00:00"
+  },
+  "news/ai-security/my-talk-at-def-con": {
+    "slug": "news/ai-security/my-talk-at-def-con",
+    "meta_description": "Last month, I gave a talk at DEF CON on AI hacking: what happens when AIs become hackers. It’s a combination of the potentialities I raised in my...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"My Talk at DEF CON\",\n  \"description\": \"Last month, I gave a talk at DEF CON on AI hacking: what happens when AIs become hackers. It’s a combination of the potentialities I raised in my...\",\n  \"datePublished\": \"2026-10-03T03:00:52.699535+00:00\",\n  \"dateModified\": \"2026-10-03T03:00:52.699535+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/my-talk-at-def-con.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/my-talk-at-def-con.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:13.650043+00:00"
   },
   "news/ai-security/mythos-and-cybersecurity": {
     "slug": "news/ai-security/mythos-and-cybersecurity",
@@ -19893,6 +19963,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T03:25:41.836797+00:00"
   },
+  "news/comp-journalism/before-true-crime-was-everywhere-there-was-dateline": {
+    "slug": "news/comp-journalism/before-true-crime-was-everywhere-there-was-dateline",
+    "meta_description": "This article is part of The Poynter 50 , a series reflecting on 50 moments and people that shaped journalism over the past half-century — and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Before true crime was everywhere, there was ‘Dateline’\",\n  \"description\": \"This article is part of The Poynter 50 , a series reflecting on 50 moments and people that shaped journalism over the past half-century — and...\",\n  \"datePublished\": \"2026-10-03T03:02:01.786272+00:00\",\n  \"dateModified\": \"2026-10-03T03:02:01.786272+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/reporting-editing/2026/dateline-nbc-true-crime-history\"\n  },\n  \"url\": \"https://www.poynter.org/reporting-editing/2026/dateline-nbc-true-crime-history\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:19.149336+00:00"
+  },
   "news/comp-journalism/behind-the-scenes-at-wirecutter-for-an-epic-duel-of-air-purifiers": {
     "slug": "news/comp-journalism/behind-the-scenes-at-wirecutter-for-an-epic-duel-of-air-purifiers",
     "meta_description": "Tim Heffernan lights five matches with a single stroke and waves them up and down to spread the smoke. He sets them on a dinner plate as the small...",
@@ -21586,6 +21663,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How one company built £14m business by buying up flagging B2B titles\",\n  \"description\": \"Datateam homepage on 13 April 2026 A Kent-based communications business has grown to over £14m in turnover by acquiring more than 70...\",\n  \"datePublished\": \"2026-04-17T10:16:03.235234+00:00\",\n  \"dateModified\": \"2026-04-17T10:16:03.235234+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/b2b/how-one-datatream-built-14m-business-by-buying-up-flagging-b2b-titles\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/b2b/how-one-datatream-built-14m-business-by-buying-up-flagging-b2b-titles\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-17T10:16:16.568110+00:00"
+  },
+  "news/comp-journalism/how-one-newsletter-writer-is-building-a-subscription-business-when-paywalls-dont-really-work": {
+    "slug": "news/comp-journalism/how-one-newsletter-writer-is-building-a-subscription-business-when-paywalls-dont-really-work",
+    "meta_description": "A year ago, a spirited and public-records-powered newsletter needed a mascot. Sleuthy the Seal — born of a “fortuitous misunderstanding” — was...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How one newsletter writer is building a subscription business when “paywalls don’t really work”\",\n  \"description\": \"A year ago, a spirited and public-records-powered newsletter needed a mascot. Sleuthy the Seal — born of a “fortuitous misunderstanding” — was...\",\n  \"datePublished\": \"2026-10-03T03:02:00.988709+00:00\",\n  \"dateModified\": \"2026-10-03T03:02:00.988709+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/how-one-newsletter-writer-is-building-a-subscription-business-when-paywalls-dont-really-work\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/how-one-newsletter-writer-is-building-a-subscription-business-when-paywalls-dont-really-work\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:17.536374+00:00"
   },
   "news/comp-journalism/how-paywall-plus-philanthropy-saved-the-philadelphia-inquirer": {
     "slug": "news/comp-journalism/how-paywall-plus-philanthropy-saved-the-philadelphia-inquirer",
@@ -23687,6 +23771,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-03T02:50:27.263361+00:00"
   },
+  "news/comp-journalism/statement-from-the-international-fact-checking-network-on-metas-expansion-of-community-notes-to-latin-america": {
+    "slug": "news/comp-journalism/statement-from-the-international-fact-checking-network-on-metas-expansion-of-community-notes-to-latin-america",
+    "meta_description": "Anyone who cares about finding reliable, accurate information online should be deeply concerned about Meta’s announcement that it is testing its...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Statement from the International Fact-Checking Network on Meta’s expansion of Community Notes to Latin America\",\n  \"description\": \"Anyone who cares about finding reliable, accurate information online should be deeply concerned about Meta’s announcement that it is testing its...\",\n  \"datePublished\": \"2026-10-03T03:02:02.511122+00:00\",\n  \"dateModified\": \"2026-10-03T03:02:02.511122+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/fact-checking/2026/statement-from-the-international-fact-checking-network-on-metas-expansion-of-community-notes-to-latin-america\"\n  },\n  \"url\": \"https://www.poynter.org/fact-checking/2026/statement-from-the-international-fact-checking-network-on-metas-expansion-of-community-notes-to-latin-america\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:18.750349+00:00"
+  },
   "news/comp-journalism/stibo-dx-signs-content-technology-deal-with-major-japanese-publisher": {
     "slug": "news/comp-journalism/stibo-dx-signs-content-technology-deal-with-major-japanese-publisher",
     "meta_description": "Pictured left to right: CEO of Shizuoka Shimbun, Shinko Ōsuga , Go Oishi (representative director and chairman at Shizuoka Shimbun), Lau Harting...",
@@ -24253,6 +24344,20 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The 'Emergency' That Demanded Huge Tariffs on Swiss Imports Is Now Over. So What Was the Emergency?\",\n  \"description\": \"When President Donald Trump ordered a whopping 39 percent tariff on all imports from Switzerland earlier this year, he did so, of course, by...\",\n  \"datePublished\": \"2026-02-16T05:30:25.109059+00:00\",\n  \"dateModified\": \"2026-02-16T05:30:25.109059+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://reason.com/2025/11/17/the-emergency-that-demanded-huge-tariffs-on-swiss-imports-is-now-over-so-what-was-the-emergency\"\n  },\n  \"url\": \"https://reason.com/2025/11/17/the-emergency-that-demanded-huge-tariffs-on-swiss-imports-is-now-over-so-what-was-the-emergency\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:33.812817+00:00"
+  },
+  "news/comp-journalism/trump-administration-says-a-new-york-times-win-in-openai-lawsuit-would-threaten-national-security-and-hurt-small-newsrooms": {
+    "slug": "news/comp-journalism/trump-administration-says-a-new-york-times-win-in-openai-lawsuit-would-threaten-national-security-and-hurt-small-newsrooms",
+    "meta_description": "On Wednesday, the Trump administration threw its support behind OpenAI, backing the AI giant in its ongoing litigation with The New York Times.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Trump administration says a New York Times win in OpenAI lawsuit would “threaten national security” and hurt small newsrooms\",\n  \"description\": \"On Wednesday, the Trump administration threw its support behind OpenAI, backing the AI giant in its ongoing litigation with The New York Times.\",\n  \"datePublished\": \"2026-10-03T03:01:59.368922+00:00\",\n  \"dateModified\": \"2026-10-03T03:01:59.368922+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/trump-administration-says-a-new-york-times-win-in-openai-lawsuit-would-threaten-national-security-and-hurt-small-newsrooms\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/trump-administration-says-a-new-york-times-win-in-openai-lawsuit-would-threaten-national-security-and-hurt-small-newsrooms\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:17.929391+00:00"
+  },
+  "news/comp-journalism/trump-cant-get-the-media-to-use-gulf-of-america-will-lake-america-be-any-different": {
+    "slug": "news/comp-journalism/trump-cant-get-the-media-to-use-gulf-of-america-will-lake-america-be-any-different",
+    "meta_description": "He’s doing it again: Donald Trump has decided that Lake Ontario is actually Lake America. This follows his similar declaration last year that the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Trump can’t get the media to use “Gulf of America.” Will “Lake America” be any different?\",\n  \"description\": \"He’s doing it again: Donald Trump has decided that Lake Ontario is actually Lake America. This follows his similar declaration last year that the...\",\n  \"datePublished\": \"2026-10-03T03:01:56.401300+00:00\",\n  \"dateModified\": \"2026-10-03T03:01:56.401300+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/trump-cant-get-the-media-to-use-gulf-of-america-will-lake-america-be-any-different\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/trump-cant-get-the-media-to-use-gulf-of-america-will-lake-america-be-any-different\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T03:02:18.344083+00:00"
   },
   "news/comp-journalism/trump-files-10bn-lawsuit-against-bbc-over-speech-edit": {
     "slug": "news/comp-journalism/trump-files-10bn-lawsuit-against-bbc-over-speech-edit",
