@@ -3149,6 +3149,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-11T03:38:01.216397+00:00"
   },
+  "news/ai-research/how-an-mit-research-project-became-a-global-programming-language": {
+    "slug": "news/ai-research/how-an-mit-research-project-became-a-global-programming-language",
+    "meta_description": "It all started with some exasperated emails. Back in 2009, a group of researchers began venting their frustration with the programming languages...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How an MIT research project became a global programming language\",\n  \"description\": \"It all started with some exasperated emails. Back in 2009, a group of researchers began venting their frustration with the programming languages...\",\n  \"datePublished\": \"2026-10-03T02:49:24.773581+00:00\",\n  \"dateModified\": \"2026-10-03T02:49:24.773581+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831\"\n  },\n  \"url\": \"https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:25.512094+00:00"
+  },
   "news/ai-research/how-artificial-intelligence-can-help-achieve-a-clean-energy-future": {
     "slug": "news/ai-research/how-artificial-intelligence-can-help-achieve-a-clean-energy-future",
     "meta_description": "There is growing attention on the links between artificial intelligence and increased energy demands. But while the power-hungry data centers...",
@@ -3687,6 +3694,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Identifying Interactions at Scale for LLMs\",\n  \"description\": \"Understanding the behavior of complex machine learning systems, particularly Large Language Models (LLMs), is a critical challenge in modern...\",\n  \"datePublished\": \"2026-03-14T22:15:31.696737+00:00\",\n  \"dateModified\": \"2026-03-14T22:15:31.696737+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/03/13/spex\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/03/13/spex\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-14T22:16:02.469155+00:00"
+  },
+  "news/ai-research/ila-kumar-innovating-with-communities": {
+    "slug": "news/ai-research/ila-kumar-innovating-with-communities",
+    "meta_description": "Before graduate school, Kumar grew up in Philadelphia, attended the University of Pennsylvania, and worked on several projects at the intersection...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Ila Kumar: Innovating with communities\",\n  \"description\": \"Before graduate school, Kumar grew up in Philadelphia, attended the University of Pennsylvania, and worked on several projects at the intersection...\",\n  \"datePublished\": \"2026-10-03T02:49:24.233602+00:00\",\n  \"dateModified\": \"2026-10-03T02:49:24.233602+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/ila-kumar-innovates-with-communities-0901\"\n  },\n  \"url\": \"https://news.mit.edu/2026/ila-kumar-innovates-with-communities-0901\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:25.050481+00:00"
   },
   "news/ai-research/implement-automated-smoke-testing-using-amazon-nova-act-headless-mode": {
     "slug": "news/ai-research/implement-automated-smoke-testing-using-amazon-nova-act-headless-mode",
@@ -4605,6 +4619,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T04:07:59.166150+00:00"
   },
+  "news/ai-research/looking-beyond-natural-sequences": {
+    "slug": "news/ai-research/looking-beyond-natural-sequences",
+    "meta_description": "A protein’s function is determined by its structure, and structure — the way a protein folds — is determined by its sequence of amino acids, the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Looking beyond natural sequences\",\n  \"description\": \"A protein’s function is determined by its structure, and structure — the way a protein folds — is determined by its sequence of amino acids, the...\",\n  \"datePublished\": \"2026-10-03T02:49:25.021678+00:00\",\n  \"dateModified\": \"2026-10-03T02:49:25.021678+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/looking-beyond-natural-sequences-0827\"\n  },\n  \"url\": \"https://news.mit.edu/2026/looking-beyond-natural-sequences-0827\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:24.595599+00:00"
+  },
   "news/ai-research/lyria-3-pro-create-longer-tracks-in-more": {
     "slug": "news/ai-research/lyria-3-pro-create-longer-tracks-in-more",
     "meta_description": "High-quality music generation should be accessible wherever creativity happens. Whether you are an app developer, a business or music...",
@@ -4877,6 +4898,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"MIT projects selected for funding under US Department of Energy’s Genesis Mission\",\n  \"description\": \"MIT researchers are set to contribute to the U.S. Department of Energy’s (DOE) Genesis Mission , with 15 collaborative projects among those...\",\n  \"datePublished\": \"2026-09-10T00:42:06.294657+00:00\",\n  \"dateModified\": \"2026-09-10T00:42:06.294657+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723\"\n  },\n  \"url\": \"https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-10T00:43:53.985812+00:00"
+  },
+  "news/ai-research/mit-quantum-initiative-launches-postdoctoral-fellowship-program": {
+    "slug": "news/ai-research/mit-quantum-initiative-launches-postdoctoral-fellowship-program",
+    "meta_description": "The MIT Quantum Initiative (QMIT) has launched a new postdoctoral fellowship program to accelerate interdisciplinary quantum research and develop...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"MIT Quantum Initiative launches postdoctoral fellowship program\",\n  \"description\": \"The MIT Quantum Initiative (QMIT) has launched a new postdoctoral fellowship program to accelerate interdisciplinary quantum research and develop...\",\n  \"datePublished\": \"2026-10-03T02:49:24.470726+00:00\",\n  \"dateModified\": \"2026-10-03T02:49:24.470726+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/mit-quantum-initiative-launches-postdoctoral-fellowship-0831\"\n  },\n  \"url\": \"https://news.mit.edu/2026/mit-quantum-initiative-launches-postdoctoral-fellowship-0831\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:23.677229+00:00"
   },
   "news/ai-research/mit-researchers-teach-ai-models-to-interpret-charts": {
     "slug": "news/ai-research/mit-researchers-teach-ai-models-to-interpret-charts",
@@ -7461,6 +7489,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-06T20:16:08.283954+00:00"
   },
+  "news/ai-research/walter-torous-named-executive-director-of-mit-center-for-real-estate": {
+    "slug": "news/ai-research/walter-torous-named-executive-director-of-mit-center-for-real-estate",
+    "meta_description": "Walter Torous , senior lecturer in the MIT Department of Urban Studies and Planning (DUSP) and the MIT Sloan School of Management , and director...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Walter Torous named executive director of MIT Center for Real Estate\",\n  \"description\": \"Walter Torous , senior lecturer in the MIT Department of Urban Studies and Planning (DUSP) and the MIT Sloan School of Management , and director...\",\n  \"datePublished\": \"2026-10-03T02:49:23.994454+00:00\",\n  \"dateModified\": \"2026-10-03T02:49:23.994454+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/walter-torous-named-executive-director-mit-center-real-estate-0901\"\n  },\n  \"url\": \"https://news.mit.edu/2026/walter-torous-named-executive-director-mit-center-real-estate-0901\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:24.126862+00:00"
+  },
   "news/ai-research/warner-bros-discovery-achieves-60-cost-savings-and-faster-ml-inference-with-aws-graviton": {
     "slug": "news/ai-research/warner-bros-discovery-achieves-60-cost-savings-and-faster-ml-inference-with-aws-graviton",
     "meta_description": "This post is written by Nukul Sharma, Machine Learning Engineering Manager, and Karthik Dasani, Staff Machine Learning Engineer, at Warner Bros.",
@@ -7733,6 +7768,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages\",\n  \"description\": \"Ravie Lakshmanan Aug 25, 2026 Phishing / Threat Intelligence Cybersecurity researchers have disclosed details of a new campaign that uses a...\",\n  \"datePublished\": \"2026-09-26T16:53:32.360148+00:00\",\n  \"dateModified\": \"2026-09-26T16:53:32.360148+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-26T16:54:39.955232+00:00"
+  },
+  "news/ai-security/25-years-of-mass-surveillance-is-enough": {
+    "slug": "news/ai-security/25-years-of-mass-surveillance-is-enough",
+    "meta_description": "This essay was written with Cindy Cohn, and originally appeared in Lawfare . One of the many legacies of the terrorist attacks of Sept.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"25 Years of Mass Surveillance Is Enough\",\n  \"description\": \"This essay was written with Cindy Cohn, and originally appeared in Lawfare . One of the many legacies of the terrorist attacks of Sept.\",\n  \"datePublished\": \"2026-10-03T02:48:59.154342+00:00\",\n  \"dateModified\": \"2026-10-03T02:48:59.154342+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:21.846864+00:00"
   },
   "news/ai-security/26-fakewallet-apps-found-on-apple-app-store-targeting-crypto-seed-phrases": {
     "slug": "news/ai-security/26-fakewallet-apps-found-on-apple-app-store-targeting-crypto-seed-phrases",
@@ -14510,6 +14552,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-02T02:46:05.191529+00:00"
   },
+  "news/ai-security/microsofts-patching": {
+    "slug": "news/ai-security/microsofts-patching",
+    "meta_description": "Once a month, Microsoft pushes a security update to all Windows users. Tomorrow’s is a new record : &gt; Microsoft’s patch for September is a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft’s Patching\",\n  \"description\": \"Once a month, Microsoft pushes a security update to all Windows users. Tomorrow’s is a new record : &gt; Microsoft’s patch for September is a...\",\n  \"datePublished\": \"2026-10-03T02:49:00.441697+00:00\",\n  \"dateModified\": \"2026-10-03T02:49:00.441697+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/microsofts-patching.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/microsofts-patching.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:21.750729+00:00"
+  },
   "news/ai-security/mini-shai-hulud-worm-compromises-tanstack-mistral-ai-guardrails-ai-more-packages": {
     "slug": "news/ai-security/mini-shai-hulud-worm-compromises-tanstack-mistral-ai-guardrails-ai-more-packages",
     "meta_description": "TeamPCP , the threat actor behind the recentsupply chain attack spree, has been linked to the compromise of the npm and PyPI packages from...",
@@ -15426,6 +15475,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"On the Effectiveness of Mutational Grammar Fuzzing\",\n  \"description\": \"Mutational grammar fuzzing is a fuzzing technique in which the fuzzer uses a predefined grammar that describes the structure of the samples.\",\n  \"datePublished\": \"2026-03-06T22:15:14.749883+00:00\",\n  \"dateModified\": \"2026-03-06T22:15:14.749883+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://projectzero.google/2026/03/mutational-grammar-fuzzing.html\"\n  },\n  \"url\": \"https://projectzero.google/2026/03/mutational-grammar-fuzzing.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T05:28:28.832504+00:00"
+  },
+  "news/ai-security/on-the-nsas-supercomputer-from-the-1960s": {
+    "slug": "news/ai-security/on-the-nsas-supercomputer-from-the-1960s",
+    "meta_description": "Really interesting story about Harvest, a specialized code breaking computer built in the 1960s by IBM for the NSA. Tags: history of computing ,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"On the NSA’s Supercomputer from the 1960s\",\n  \"description\": \"Really interesting story about Harvest, a specialized code breaking computer built in the 1960s by IBM for the NSA. Tags: history of computing ,...\",\n  \"datePublished\": \"2026-10-03T02:48:59.532311+00:00\",\n  \"dateModified\": \"2026-10-03T02:48:59.532311+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/on-the-nsas-supercomputer-from-the-1960s.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/on-the-nsas-supercomputer-from-the-1960s.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:23.230857+00:00"
   },
   "news/ai-security/on-the-security-of-password-managers": {
     "slug": "news/ai-security/on-the-security-of-password-managers",
@@ -18178,6 +18234,13 @@
     "agent_callout": "",
     "generated_at": "2025-11-16T23:38:32.543190+00:00"
   },
+  "news/ai-security/upcoming-speaking-engagements-256f48": {
+    "slug": "news/ai-security/upcoming-speaking-engagements-256f48",
+    "meta_description": "This is a current list of where and when I am scheduled to speak: I’m speaking online (via Zoom) at a League of Women Voters event on Tuesday,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Upcoming Speaking Engagements\",\n  \"description\": \"This is a current list of where and when I am scheduled to speak: I’m speaking online (via Zoom) at a League of Women Voters event on Tuesday,...\",\n  \"datePublished\": \"2026-10-03T02:48:59.787893+00:00\",\n  \"dateModified\": \"2026-10-03T02:48:59.787893+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/upcoming-speaking-engagements-60.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/upcoming-speaking-engagements-60.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:22.277775+00:00"
+  },
   "news/ai-security/upcoming-speaking-engagements-431c69": {
     "slug": "news/ai-security/upcoming-speaking-engagements-431c69",
     "meta_description": "This is a current list of where and when I am scheduled to speak: I’m speaking at the David R. Cheriton School of Computer Science in Waterloo,...",
@@ -18254,6 +18317,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Using a VM to Contain an AI Agent\",\n  \"description\": \"It won’t work : &gt; My suspicion was that GPT 5.6-Cyber would succeed, but the frequency and manner of its success removed all doubt.\",\n  \"datePublished\": \"2026-09-29T00:30:50.040168+00:00\",\n  \"dateModified\": \"2026-09-29T00:30:50.040168+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/using-a-vm-to-contain-an-ai-agent.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/using-a-vm-to-contain-an-ai-agent.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-29T00:31:59.307388+00:00"
+  },
+  "news/ai-security/using-ai-for-weapons-development": {
+    "slug": "news/ai-security/using-ai-for-weapons-development",
+    "meta_description": "Last week, Anthropic released a long and detailed document describing current misuses of their Claude models. I’m still reading it, but I wanted...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Using AI for Weapons Development\",\n  \"description\": \"Last week, Anthropic released a long and detailed document describing current misuses of their Claude models. I’m still reading it, but I wanted...\",\n  \"datePublished\": \"2026-10-03T02:49:00.106910+00:00\",\n  \"dateModified\": \"2026-10-03T02:49:00.106910+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/using-ai-for-weapons-development.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/using-ai-for-weapons-development.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:22.759882+00:00"
   },
   "news/ai-security/using-ai-gemma-3-locally-with-a-single-cpu": {
     "slug": "news/ai-security/using-ai-gemma-3-locally-with-a-single-cpu",
@@ -19669,6 +19739,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-13T00:16:12.600693+00:00"
   },
+  "news/comp-journalism/at-three-years-old-deep-south-today-threads-the-needle-between-lean-and-mean-and-aggressive-expansion": {
+    "slug": "news/comp-journalism/at-three-years-old-deep-south-today-threads-the-needle-between-lean-and-mean-and-aggressive-expansion",
+    "meta_description": "On Adam Ganucheau’ s first day at Mississippi Today a decade ago, there was no Wi-Fi, and he used an upside-down cardboard box as a desk.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"At three years old, Deep South Today threads the needle between “lean and mean” and “aggressive expansion”\",\n  \"description\": \"On Adam Ganucheau’ s first day at Mississippi Today a decade ago, there was no Wi-Fi, and he used an upside-down cardboard box as a desk.\",\n  \"datePublished\": \"2026-10-03T02:50:05.105907+00:00\",\n  \"dateModified\": \"2026-10-03T02:50:05.105907+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/at-three-deep-south-today-threads-the-needle-between-lean-and-mean-and-aggressive-expansion\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/at-three-deep-south-today-threads-the-needle-between-lean-and-mean-and-aggressive-expansion\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:26.853029+00:00"
+  },
   "news/comp-journalism/auditors-at-bitpandas-german-subsidiary-flagged-information-security-issues-echoing-regulator-s-concerns": {
     "slug": "news/comp-journalism/auditors-at-bitpandas-german-subsidiary-flagged-information-security-issues-echoing-regulator-s-concerns",
     "meta_description": "Bitpanda prides itself on being one of the most regulated crypto exchanges in Europe. The Austrian firm — backed by investors including...",
@@ -19794,6 +19871,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"BBC’s Noor Nanji on investigating her own employer\",\n  \"description\": \"Noor Nanji picks up the Arts & Entertainment Journalism prize at the British Journalism Awards 2025. Picture: Press Gazette/Adam Duke Photography...\",\n  \"datePublished\": \"2026-01-09T12:15:48.685324+00:00\",\n  \"dateModified\": \"2026-01-09T12:15:48.685324+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/broadcast/bbcs-noor-nanji-on-invesigating-her-own-employer\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/broadcast/bbcs-noor-nanji-on-invesigating-her-own-employer\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:15:56.453936+00:00"
+  },
+  "news/comp-journalism/beehiiv-adds-three-new-journalists-to-its-media-collective": {
+    "slug": "news/comp-journalism/beehiiv-adds-three-new-journalists-to-its-media-collective",
+    "meta_description": "The Beehiiv Media Collective will add the longtime CBS News travel editor Peter Greenberg , former IndieWire editor-in-chief Dana Harris-Bridson ,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Beehiiv adds three new journalists to its media collective\",\n  \"description\": \"The Beehiiv Media Collective will add the longtime CBS News travel editor Peter Greenberg , former IndieWire editor-in-chief Dana Harris-Bridson ,...\",\n  \"datePublished\": \"2026-10-03T02:50:04.685188+00:00\",\n  \"dateModified\": \"2026-10-03T02:50:04.685188+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/beehiiv-adds-three-new-journalists-to-its-media-collective\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/beehiiv-adds-three-new-journalists-to-its-media-collective\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:27.725392+00:00"
   },
   "news/comp-journalism/beehiiv-ceo-says-platform-on-very-divergent-path-to-substack": {
     "slug": "news/comp-journalism/beehiiv-ceo-says-platform-on-very-divergent-path-to-substack",
@@ -23596,6 +23680,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-16T18:16:06.788438+00:00"
   },
+  "news/comp-journalism/stars-and-stripes-shows-how-government-funded-journalism-can-work-if-its-free-to-report-the-truth": {
+    "slug": "news/comp-journalism/stars-and-stripes-shows-how-government-funded-journalism-can-work-if-its-free-to-report-the-truth",
+    "meta_description": "As local and national news outlets continue to disappear across the U.S. , I’d always thought that the military newspaper Stars and Stripes...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Stars and Stripes shows how government‑funded journalism can work — if it’s free to report the truth\",\n  \"description\": \"As local and national news outlets continue to disappear across the U.S. , I’d always thought that the military newspaper Stars and Stripes...\",\n  \"datePublished\": \"2026-10-03T02:50:08.114449+00:00\",\n  \"dateModified\": \"2026-10-03T02:50:08.114449+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/stars-and-stripes-shows-how-government-funded-journalism-can-work-if-its-free-to-report-the-truth\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/stars-and-stripes-shows-how-government-funded-journalism-can-work-if-its-free-to-report-the-truth\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:27.263361+00:00"
+  },
   "news/comp-journalism/stibo-dx-signs-content-technology-deal-with-major-japanese-publisher": {
     "slug": "news/comp-journalism/stibo-dx-signs-content-technology-deal-with-major-japanese-publisher",
     "meta_description": "Pictured left to right: CEO of Shizuoka Shimbun, Shinko Ōsuga , Go Oishi (representative director and chairman at Shizuoka Shimbun), Lau Harting...",
@@ -24184,6 +24275,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T20:57:14.658419+00:00"
   },
+  "news/comp-journalism/twenty-years-into-the-facebook-news-feed-era-australia-wants-to-turn-back-the-clock": {
+    "slug": "news/comp-journalism/twenty-years-into-the-facebook-news-feed-era-australia-wants-to-turn-back-the-clock",
+    "meta_description": "Congratulations/regrets — today we celebrate the 20th anniversary of the birth of today’s internet. I suppose there are numerous candidates for...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Twenty years into the Facebook News Feed era, Australia wants to turn back the clock\",\n  \"description\": \"Congratulations/regrets — today we celebrate the 20th anniversary of the birth of today’s internet. I suppose there are numerous candidates for...\",\n  \"datePublished\": \"2026-10-03T02:50:06.618379+00:00\",\n  \"dateModified\": \"2026-10-03T02:50:06.618379+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/twenty-years-into-the-facebook-news-feed-era-australia-wants-to-turn-back-the-clock\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/twenty-years-into-the-facebook-news-feed-era-australia-wants-to-turn-back-the-clock\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:26.415684+00:00"
+  },
   "news/comp-journalism/twice-national-newspaper-editor-bill-hagerty-dies-aged-86": {
     "slug": "news/comp-journalism/twice-national-newspaper-editor-bill-hagerty-dies-aged-86",
     "meta_description": "Bill Hagerty. Picture: Reach PLC Former Sunday Today and The People editor Bill Hagerty has died aged 86 after a 70-year career spanning...",
@@ -24659,6 +24757,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Wired pulls plug on UK print edition as it focuses on global subscriber growth\",\n  \"description\": \"Wired global editorial director Katie Drummond, and Jan/Feb 2026 issue of Wired. Picture: Conde Nast Wired will not put out a print magazine in...\",\n  \"datePublished\": \"2026-04-02T14:15:55.895163+00:00\",\n  \"dateModified\": \"2026-04-02T14:15:55.895163+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/magazines/wired-ends-uk-print-magazine-amid-shake-up-of-london-staff-katie-drummond-interview\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/magazines/wired-ends-uk-print-magazine-amid-shake-up-of-london-staff-katie-drummond-interview\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T14:16:09.108136+00:00"
+  },
+  "news/comp-journalism/with-acquisition-of-vermont-newspapers-the-national-trust-for-local-news-expands-to-a-fourth-state": {
+    "slug": "news/comp-journalism/with-acquisition-of-vermont-newspapers-the-national-trust-for-local-news-expands-to-a-fourth-state",
+    "meta_description": "The nonprofit National Trust for Local News is acquiring the Vermont Community Newspaper Group in a deal that will close this month, the Trust...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"With acquisition of Vermont newspapers, the National Trust for Local News expands to a fourth state\",\n  \"description\": \"The nonprofit National Trust for Local News is acquiring the Vermont Community Newspaper Group in a deal that will close this month, the Trust...\",\n  \"datePublished\": \"2026-10-03T02:50:09.664756+00:00\",\n  \"dateModified\": \"2026-10-03T02:50:09.664756+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/with-acquisition-of-vermont-newspapers-the-national-trust-for-local-news-expands-to-a-fourth-state\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/with-acquisition-of-vermont-newspapers-the-national-trust-for-local-news-expands-to-a-fourth-state\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T02:50:25.970741+00:00"
   },
   "news/comp-journalism/with-its-new-season-the-podcast-scene-on-radio-takes-on-the-news": {
     "slug": "news/comp-journalism/with-its-new-season-the-podcast-scene-on-radio-takes-on-the-news",

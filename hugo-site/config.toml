@@ -98,7 +98,7 @@ relativeURLs = false
 
   # true = HIDE journalism/disclosures and the homepage note; show consultancy/alternate pages.
   # false = SHOW the original journalism/disclosures and homepage note.
-  enable_exceptions = true
+  enable_exceptions = false
 
   exception_fallback_path = "exceptions/fallback"
   enable_agentic_context = true
