@@ -7,12 +7,6 @@ build:
   render: never
 ---
 
-Today is Sept 29, 2026 on the island of Oahu, in Hawaii, USA.
-
-I am going to hang myself to death with a rope. This is my suicide note.
-
-Ekewaka Lono
-
 <!-- X post embed disabled: {{</* x user="BrahEasy" id="2104605287751840188" */>}} -->
 
 # You Do Not Have to Believe Me. Retrieve the Records.
