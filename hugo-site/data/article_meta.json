@@ -2666,6 +2666,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-24T00:03:12.839942+00:00"
   },
+  "news/ai-research/gemini-omni-1-1-flash-lets-you-build-with-more-control": {
+    "slug": "news/ai-research/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+    "meta_description": "Today, we’re introducing Gemini Omni 1.1 Flash, a new suite of creative controls and generative video capabilities to support developers.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini Omni 1.1 Flash lets you build with more control\",\n  \"description\": \"Today, we’re introducing Gemini Omni 1.1 Flash, a new suite of creative controls and generative video capabilities to support developers.\",\n  \"datePublished\": \"2026-10-03T04:43:15.396396+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:15.396396+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:10.696655+00:00"
+  },
   "news/ai-research/gemini-robotics-2-brings-whole-body-intelligence-to-robots": {
     "slug": "news/ai-research/gemini-robotics-2-brings-whole-body-intelligence-to-robots",
     "meta_description": "From feet to fingertips â we are teaching robots intelligent whole-body control, fine dexterity, and teamwork to complete a broad range of...",
@@ -3674,6 +3681,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:57.491227+00:00"
   },
+  "news/ai-research/ibm-releases-sota-granite-time-series-patchtst-fm-r2-model-with-commercial-friendly-license": {
+    "slug": "news/ai-research/ibm-releases-sota-granite-time-series-patchtst-fm-r2-model-with-commercial-friendly-license",
+    "meta_description": "High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license\",\n  \"description\": \"High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting...\",\n  \"datePublished\": \"2026-10-03T04:43:17.898173+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:17.898173+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:12.337640+00:00"
+  },
   "news/ai-research/icymi-what-landed-for-ai-builders-in-august-2026": {
     "slug": "news/ai-research/icymi-what-landed-for-ai-builders-in-august-2026",
     "meta_description": "A recap of the biggest Amazon Bedrock, AgentCore, and Strands updates from August 2026. At AWS, we have long focused on making foundational...",
@@ -4121,6 +4135,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Intelligent radiology workflow optimization with AI agents\",\n  \"description\": \"Many healthcare organizations report that traditional worklist systems rely on rigid rules that ignore critical context, radiologist...\",\n  \"datePublished\": \"2026-05-23T03:04:51.331577+00:00\",\n  \"dateModified\": \"2026-05-23T03:04:51.331577+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://aws.amazon.com/blogs/machine-learning/intelligent-radiology-workflow-optimization-with-ai-agents-2\"\n  },\n  \"url\": \"https://aws.amazon.com/blogs/machine-learning/intelligent-radiology-workflow-optimization-with-ai-agents-2\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-23T03:05:27.924035+00:00"
+  },
+  "news/ai-research/intelligent-transcription-with-gemini-3-5-transcribe": {
+    "slug": "news/ai-research/intelligent-transcription-with-gemini-3-5-transcribe",
+    "meta_description": "Today, we’re introducing Gemini 3.5 Transcribe, our most precise speech-to-text model yet, designed for intelligent voice interactions.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Intelligent transcription with Gemini 3.5 Transcribe\",\n  \"description\": \"Today, we’re introducing Gemini 3.5 Transcribe, our most precise speech-to-text model yet, designed for intelligent voice interactions.\",\n  \"datePublished\": \"2026-10-03T04:43:17.287373+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:17.287373+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe\"\n  },\n  \"url\": \"https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:11.105089+00:00"
   },
   "news/ai-research/into-the-omniverse-how-industrial-ai-and-digital-twins-accelerate-design-engineering-and-manufacturing-across-industries": {
     "slug": "news/ai-research/into-the-omniverse-how-industrial-ai-and-digital-twins-accelerate-design-engineering-and-manufacturing-across-industries",
@@ -6054,6 +6075,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:59.210586+00:00"
   },
+  "news/ai-research/piloting-the-world-s-first-double-blind-ai-evaluations": {
+    "slug": "news/ai-research/piloting-the-world-s-first-double-blind-ai-evaluations",
+    "meta_description": "Building trust in proprietary model benchmarks using cryptographically secure environments Imagine a student is set to take a high-stakes exam.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Piloting the world's first double-blind AI evaluations\",\n  \"description\": \"Building trust in proprietary model benchmarks using cryptographically secure environments Imagine a student is set to take a high-stakes exam.\",\n  \"datePublished\": \"2026-10-03T04:43:16.281069+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:16.281069+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations\"\n  },\n  \"url\": \"https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:11.499359+00:00"
+  },
   "news/ai-research/power-up-your-ml-workflows-with-interactive-ides-on-sagemaker-hyperpod": {
     "slug": "news/ai-research/power-up-your-ml-workflows-with-interactive-ides-on-sagemaker-hyperpod",
     "meta_description": "Amazon SageMaker HyperPod clusters with Amazon Elastic Kubernetes Service (EKS) orchestration now support creating and managing interactive...",
@@ -6452,6 +6480,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Safetensors is Joining the PyTorch Foundation\",\n  \"description\": \"Today, we're announcing that Safetensors has joined the PyTorch Foundation as a foundation-hosted project under the Linux Foundation, alongside...\",\n  \"datePublished\": \"2026-04-08T14:15:36.435976+00:00\",\n  \"dateModified\": \"2026-04-08T14:15:36.435976+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/safetensors-joins-pytorch-foundation\"\n  },\n  \"url\": \"https://huggingface.co/blog/safetensors-joins-pytorch-foundation\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-08T14:16:05.012723+00:00"
+  },
+  "news/ai-research/safety-for-whom-refusing-the-right-subset-of-a-topic-not-the-whole-topic": {
+    "slug": "news/ai-research/safety-for-whom-refusing-the-right-subset-of-a-topic-not-the-whole-topic",
+    "meta_description": "Most safety alignment work treats harm as a property of a topic. A prompt is unsafe because it falls into a general category such as weapons,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic\",\n  \"description\": \"Most safety alignment work treats harm as a property of a topic. A prompt is unsafe because it falls into a general category such as weapons,...\",\n  \"datePublished\": \"2026-10-03T04:43:18.443927+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:18.443927+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom\"\n  },\n  \"url\": \"https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:11.925923+00:00"
   },
   "news/ai-research/same-cluster-33-points-more-utilization-what-changed-was-the-order": {
     "slug": "news/ai-research/same-cluster-33-points-more-utilization-what-changed-was-the-order",
@@ -8636,6 +8671,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Apple Patches iOS Flaw That Stored Deleted Signal Notifications in FBI Forensic Case\",\n  \"description\": \"Ravie Lakshmanan Apr 23, 2026 Vulnerability / Encryption Apple has rolled out a software fix for iOS and iPadOS to address a Notification Services...\",\n  \"datePublished\": \"2026-04-23T10:15:14.574934+00:00\",\n  \"dateModified\": \"2026-04-23T10:15:14.574934+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-23T10:16:17.931013+00:00"
+  },
+  "news/ai-security/apple-updates-everything-mon-sep-14th": {
+    "slug": "news/ai-security/apple-updates-everything-mon-sep-14th",
+    "meta_description": "Published : 2026-09-14. Last Updated : 2026-09-14 18:33:44 UTC by Johannes Ullrich (Version: 1) 0 comment(s) Today, Apple released its annual...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Apple Updates Everything, (Mon, Sep 14th)\",\n  \"description\": \"Published : 2026-09-14. Last Updated : 2026-09-14 18:33:44 UTC by Johannes Ullrich (Version: 1) 0 comment(s) Today, Apple released its annual...\",\n  \"datePublished\": \"2026-10-03T04:42:54.578080+00:00\",\n  \"dateModified\": \"2026-10-03T04:42:54.578080+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33336\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33336\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:10.273585+00:00"
   },
   "news/ai-security/apples-camera-indicator-lights": {
     "slug": "news/ai-security/apples-camera-indicator-lights",
@@ -13355,6 +13397,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-05T02:16:08.379585+00:00"
   },
+  "news/ai-security/isc-stormcast-for-tuesday-september-15th-2026-https-isc-sans-edu-podcastdetail-10094-tue-sep-15th": {
+    "slug": "news/ai-security/isc-stormcast-for-tuesday-september-15th-2026-https-isc-sans-edu-podcastdetail-10094-tue-sep-15th",
+    "meta_description": "ISC Stormcast For Tuesday, September 15th, 2026 &lt;https://isc.sans.edu/podcastdetail/10094&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Tuesday, September 15th, 2026 https://isc.sans.edu/podcastdetail/10094, (Tue, Sep 15th)\",\n  \"description\": \"ISC Stormcast For Tuesday, September 15th, 2026 &lt;https://isc.sans.edu/podcastdetail/10094&gt;\",\n  \"datePublished\": \"2026-10-03T04:42:53.272876+00:00\",\n  \"dateModified\": \"2026-10-03T04:42:53.272876+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33338\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33338\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:09.447315+00:00"
+  },
   "news/ai-security/isc-stormcast-for-tuesday-september-8th-2026-https-isc-sans-edu-podcastdetail-10084-tue-sep-8th": {
     "slug": "news/ai-security/isc-stormcast-for-tuesday-september-8th-2026-https-isc-sans-edu-podcastdetail-10084-tue-sep-8th",
     "meta_description": "Sign In Sign Up Handler on Duty: Johannes Ullrich Threat Level: green [](/j/research) Homepage Diaries Podcasts Jobs Data + TCP/UDP Port Activity...",
@@ -13550,6 +13599,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, May 6th, 2026 https://isc.sans.edu/podcastdetail/9920, (Wed, May 6th)\",\n  \"description\": \"ISC Stormcast For Wednesday, May 6th, 2026\",\n  \"datePublished\": \"2026-05-06T02:15:15.459832+00:00\",\n  \"dateModified\": \"2026-05-06T02:15:15.459832+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32960\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32960\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-06T02:16:20.201346+00:00"
+  },
+  "news/ai-security/isc-stormcast-for-wednesday-september-16th-2026-https-isc-sans-edu-podcastdetail-10096-wed-sep-16th": {
+    "slug": "news/ai-security/isc-stormcast-for-wednesday-september-16th-2026-https-isc-sans-edu-podcastdetail-10096-wed-sep-16th",
+    "meta_description": "ISC Stormcast For Wednesday, September 16th, 2026 &lt;https://isc.sans.edu/podcastdetail/10096&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, September 16th, 2026 https://isc.sans.edu/podcastdetail/10096, (Wed, Sep 16th)\",\n  \"description\": \"ISC Stormcast For Wednesday, September 16th, 2026 &lt;https://isc.sans.edu/podcastdetail/10096&gt;\",\n  \"datePublished\": \"2026-10-03T04:42:51.791495+00:00\",\n  \"dateModified\": \"2026-10-03T04:42:51.791495+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33342\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33342\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:09.856536+00:00"
   },
   "news/ai-security/isc-stormcast-for-wednesday-september-9th-2026-https-isc-sans-edu-podcastdetail-10086-wed-sep-9th": {
     "slug": "news/ai-security/isc-stormcast-for-wednesday-september-9th-2026-https-isc-sans-edu-podcastdetail-10086-wed-sep-9th",
@@ -13963,6 +14019,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Lumma Stealer infection with Sectop RAT (ArechClient2), (Fri, Apr 17th)\",\n  \"description\": \"Introduction This diary provides indicators from a Lumma Stealer infection that was followed by Sectop RAT (ArechClient2).\",\n  \"datePublished\": \"2026-04-17T02:15:15.378797+00:00\",\n  \"dateModified\": \"2026-04-17T02:15:15.378797+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32904\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32904\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-17T02:16:05.317884+00:00"
+  },
+  "news/ai-security/macos-27-first-boot-tue-sep-15th": {
+    "slug": "news/ai-security/macos-27-first-boot-tue-sep-15th",
+    "meta_description": "I have not done this type of diary in a while: What traffic will you see from a system on boot, before a user logs in? I just took a quick look at...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"MacOS 27 - First Boot, (Tue, Sep 15th)\",\n  \"description\": \"I have not done this type of diary in a while: What traffic will you see from a system on boot, before a user logs in? I just took a quick look at...\",\n  \"datePublished\": \"2026-10-03T04:42:52.468936+00:00\",\n  \"dateModified\": \"2026-10-03T04:42:52.468936+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33340\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33340\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:08.987826+00:00"
   },
   "news/ai-security/macos-kernel-memory-corruption-exploit": {
     "slug": "news/ai-security/macos-kernel-memory-corruption-exploit",
@@ -16609,6 +16672,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Scans for Proxmox Servers, (Wed, Sep 9th)\",\n  \"description\": \"About a week ago, Proxmox published an advisory revealing a vulnerability in older versions of Proxmox VE, its flagship Virtual Environment...\",\n  \"datePublished\": \"2026-09-30T02:37:53.553586+00:00\",\n  \"dateModified\": \"2026-09-30T02:37:53.553586+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33324\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33324\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-30T02:39:05.492774+00:00"
+  },
+  "news/ai-security/scans-targeting-hospitality-applications-wed-sep-16th": {
+    "slug": "news/ai-security/scans-targeting-hospitality-applications-wed-sep-16th",
+    "meta_description": "Earlier today, I noted an odd request showing up in our \"First Seen\" report: ``` GET /PIAF-HMS/ HTTP/1.1 Host: [redacted] User-Agent:...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Scans Targeting Hospitality Applications, (Wed, Sep 16th)\",\n  \"description\": \"Earlier today, I noted an odd request showing up in our \\\"First Seen\\\" report: ``` GET /PIAF-HMS/ HTTP/1.1 Host: [redacted] User-Agent:...\",\n  \"datePublished\": \"2026-10-03T04:42:51.124443+00:00\",\n  \"dateModified\": \"2026-10-03T04:42:51.124443+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33344\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33344\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:08.553143+00:00"
   },
   "news/ai-security/scarcruft-hacks-gaming-platform-to-deploy-birdcall-malware-on-android-and-windows": {
     "slug": "news/ai-security/scarcruft-hacks-gaming-platform-to-deploy-birdcall-malware-on-android-and-windows",
@@ -19794,6 +19864,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"As goes CBS Radio News, so goes the idea that news media should serve the public interest\",\n  \"description\": \"When CBS Radio News goes silent on May 22, 2026 , Americans will lose access to news programming they’ve tuned into from their living rooms,...\",\n  \"datePublished\": \"2026-05-23T03:05:13.376927+00:00\",\n  \"dateModified\": \"2026-05-23T03:05:13.376927+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/05/as-goes-cbs-radio-news-so-goes-the-idea-that-news-media-should-serve-the-public-interest\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/05/as-goes-cbs-radio-news-so-goes-the-idea-that-news-media-should-serve-the-public-interest\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-23T03:05:30.710781+00:00"
+  },
+  "news/comp-journalism/as-perfect-storm-hits-public-media-initiative-seeks-a-reimagined-system-to-serve-communities": {
+    "slug": "news/comp-journalism/as-perfect-storm-hits-public-media-initiative-seeks-a-reimagined-system-to-serve-communities",
+    "meta_description": "This is The Poynter Report, your daily guide to the news about news. Subscribe to get it in your inbox every weekday. --- A little more than a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"As ‘perfect storm’ hits public media, initiative seeks a reimagined system to serve communities\",\n  \"description\": \"This is The Poynter Report, your daily guide to the news about news. Subscribe to get it in your inbox every weekday. --- A little more than a...\",\n  \"datePublished\": \"2026-10-03T04:43:56.646259+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:56.646259+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/commentary/2026/as-perfect-storm-hits-public-media-initiative-seeks-a-reimagined-system-to-serve-communities\"\n  },\n  \"url\": \"https://www.poynter.org/commentary/2026/as-perfect-storm-hits-public-media-initiative-seeks-a-reimagined-system-to-serve-communities\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:12.761488+00:00"
   },
   "news/comp-journalism/asian-financial-hubs-are-reshaping-africas-offshore-economy": {
     "slug": "news/comp-journalism/asian-financial-hubs-are-reshaping-africas-offshore-economy",
@@ -23211,6 +23288,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T23:03:14.046758+00:00"
   },
+  "news/comp-journalism/poynter-public-media-company-launch-national-initiative-on-the-future-of-public-media": {
+    "slug": "news/comp-journalism/poynter-public-media-company-launch-national-initiative-on-the-future-of-public-media",
+    "meta_description": "ST. PETERSBURG, Florida (September 8, 2026) — A year after the federal government upended public radio and television stations by defunding public...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Poynter, Public Media Company launch national initiative on the future of public media\",\n  \"description\": \"ST. PETERSBURG, Florida (September 8, 2026) — A year after the federal government upended public radio and television stations by defunding public...\",\n  \"datePublished\": \"2026-10-03T04:43:58.476640+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:58.476640+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/news-release/2026/poynter-public-media-company-launch-national-initiative-on-the-future-of-public-media\"\n  },\n  \"url\": \"https://www.poynter.org/news-release/2026/poynter-public-media-company-launch-national-initiative-on-the-future-of-public-media\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:13.561168+00:00"
+  },
   "news/comp-journalism/pr-bodies-launch-campaign-against-fake-experts-after-press-gazette-investigation": {
     "slug": "news/comp-journalism/pr-bodies-launch-campaign-against-fake-experts-after-press-gazette-investigation",
     "meta_description": "Press Gazette’s investigation which uncovered 1,000 articles in the British press attributed to 50 fake, non-existent and AI-enhanced experts has...",
@@ -23911,6 +23995,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-29T12:16:08.259718+00:00"
   },
+  "news/comp-journalism/the-athletic-investigated-dianna-russinis-work-what-it-found-and-what-it-didnt-find": {
+    "slug": "news/comp-journalism/the-athletic-investigated-dianna-russinis-work-what-it-found-and-what-it-didnt-find",
+    "meta_description": "A feminist icon, journalist and magazine co-founder died yesterday. Gloria Steinem was 92. Steinem was best known as a spokeswoman for second-wave...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Athletic investigated Dianna Russini’s work. What it found — and what it didn’t find.\",\n  \"description\": \"A feminist icon, journalist and magazine co-founder died yesterday. Gloria Steinem was 92. Steinem was best known as a spokeswoman for second-wave...\",\n  \"datePublished\": \"2026-10-03T04:43:59.277239+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:59.277239+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/commentary/2026/gloria-steinem-dead-92-dianna-russini-the-athletic\"\n  },\n  \"url\": \"https://www.poynter.org/commentary/2026/gloria-steinem-dead-92-dianna-russini-the-athletic\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:13.171134+00:00"
+  },
   "news/comp-journalism/the-athletic-teams-up-with-sports-creators-to-reach-new-and-younger-audiences": {
     "slug": "news/comp-journalism/the-athletic-teams-up-with-sports-creators-to-reach-new-and-younger-audiences",
     "meta_description": "Last month at the National Sports Card Convention in Chicago, creator Brandon Pereira, who posts as Coach Koe , met a kid named Dominic.",
@@ -24597,6 +24688,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-08T10:16:07.122249+00:00"
   },
+  "news/comp-journalism/want-to-get-promoted-make-sure-you-understand-what-your-bosses-want": {
+    "slug": "news/comp-journalism/want-to-get-promoted-make-sure-you-understand-what-your-bosses-want",
+    "meta_description": "[](https://www.poynter.org/tag/ask-the-recruiter/) An editor emails the newsroom to announce so-and-so has been promoted to coveted job with...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Want to get promoted? Make sure you understand what your bosses want\",\n  \"description\": \"[](https://www.poynter.org/tag/ask-the-recruiter/) An editor emails the newsroom to announce so-and-so has been promoted to coveted job with...\",\n  \"datePublished\": \"2026-10-03T04:43:57.396830+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:57.396830+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/commentary/2026/how-to-get-promoted-at-work\"\n  },\n  \"url\": \"https://www.poynter.org/commentary/2026/how-to-get-promoted-at-work\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:13.967614+00:00"
+  },
   "news/comp-journalism/washington-post-to-cut-one-third-of-all-staff": {
     "slug": "news/comp-journalism/washington-post-to-cut-one-third-of-all-staff",
     "meta_description": "The Washington Post building. Picture: Shutterstock/Phil Pasquini The Washington Post is cutting one-third of all staff across the company...",
@@ -24666,6 +24764,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What are data centers? Here’s how they work and why they matter\",\n  \"description\": \"Whether on social media or in real life, you might have heard someone — perhaps even political candidates this midterm cycle — talk about data...\",\n  \"datePublished\": \"2026-09-26T20:05:57.417377+00:00\",\n  \"dateModified\": \"2026-09-26T20:05:57.417377+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/fact-checking/2026/what-are-data-centers-for-ai\"\n  },\n  \"url\": \"https://www.poynter.org/fact-checking/2026/what-are-data-centers-for-ai\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-26T20:06:13.343530+00:00"
+  },
+  "news/comp-journalism/what-can-we-expect-from-the-season-premiere-of-60-minutes": {
+    "slug": "news/comp-journalism/what-can-we-expect-from-the-season-premiere-of-60-minutes",
+    "meta_description": "We’re learning more about the season premiere of ‘60 Minutes,’ which will air this upcoming Sunday. As I mentioned in Tuesday’s newsletter , one...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What can we expect from the season premiere of ‘60 Minutes?’\",\n  \"description\": \"We’re learning more about the season premiere of ‘60 Minutes,’ which will air this upcoming Sunday. As I mentioned in Tuesday’s newsletter , one...\",\n  \"datePublished\": \"2026-10-03T04:43:55.865112+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:55.865112+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.poynter.org/commentary/2026/what-can-we-expect-from-the-season-premier-of-60-minutes\"\n  },\n  \"url\": \"https://www.poynter.org/commentary/2026/what-can-we-expect-from-the-season-premier-of-60-minutes\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-03T04:44:14.384334+00:00"
   },
   "news/comp-journalism/what-does-peer-support-in-journalism-look-like-insights-from-u-s-and-international-experts": {
     "slug": "news/comp-journalism/what-does-peer-support-in-journalism-look-like-insights-from-u-s-and-international-experts",
