@@ -61,11 +61,13 @@ portfolio_sections:
       - "/geopolitics/ccch-financial-disclosure-ledger"
   - id: "strategic-risk"
     eyebrow: "Strategic Risk"
-    title: "Energy and Policy Analysis"
-    description: "The Barrel preserves the March 8–13, 2026 energy-risk assessment; its October revision is an editorial update. The policy-analysis file is separate from that dated assessment."
+    title: "Energy Risk Analysis"
+    description: "The Barrel preserves the March 8–13, 2026 energy-risk assessment; its October revision is an editorial update."
     pages:
       - "/geopolitics/hawaii-energy-risk-strait-of-hormuz"
-      - "/geopolitics/radius-of-order-policy-analysis"
+    context_url: "/policy-essays/radius-of-order-policy-analysis/"
+    context_label: "The Radius of Order"
+    context_note: "A domestic justice-policy thought experiment in the separate Policy Essays section."
 
 grid_eyebrow: "Additional Files"
 grid_title: "Geopolitics Files"

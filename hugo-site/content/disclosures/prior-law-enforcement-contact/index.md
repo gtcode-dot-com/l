@@ -7,7 +7,7 @@ seo_title: "Reporter's Disclosures: Prior Law Enforcement Contact and Civic Over
 subtitle: "Prior law-enforcement contact, prosecution history, and the background to Lono’s reporting"
 description: "Ekewaka Lono’s account of prior law-enforcement contact, prosecution, threats, and later reporting, with sources and records needed for review."
 date: 2026-05-13
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "disclosures"
@@ -111,19 +111,11 @@ structured_data_graph:
 ---
 This disclosure gives the background to my reporting for *Oahu Underground*. The events shaped my decisions to report threats, preserve evidence, and seek review. My firsthand account, public records, sealed evidence, and interpretations are identified separately.
 
-Courts, politics, law enforcement, private wealth, media, and civic institutions overlap on Oʻahu. My work in music, civic groups, and technical communities brought me into contact with some of those circles. Proximity alone does not establish a shared plan.
-
-The chronology explains how I reached the later investigations. Each article’s claims depend on its own records and witnesses. A sequence can suggest a connection; establishing one requires evidence of what passed between the participants.
+My work in music, civic groups, and technical communities brought me into contact with some of Oʻahu’s institutional circles. The chronology explains how I reached the later investigations. Establishing a connection between events requires evidence of what passed between participants.
 
 ## Evidence Categories
 
-| Category | Meaning in this chronology |
-|---|---|
-| **Documented public record** | A claim tied to a public filing, article, annual report, court record, legislative record, or other cited source. |
-| **Firsthand account** | My direct account of what I saw, heard, received, reported, or directly observed. |
-| **Sealed-record-dependent** | A claim that can be tested only by reviewing sealed audio, exhibits, filings, or related court material. |
-| **Context** | Background that explains why an event is included as legally, reputationally, or procedurally relevant to later reporting. |
-| **Inference or hypothesis** | A proposed explanation, risk, or investigative lead that requires further records or witness review. |
+Claims follow the [editorial standards](/policies/editorial-standards/#firsthand-evidence): firsthand account, identified record, sealed-record dependency, context, and labeled inference.
 
 ## Withheld Context
 
@@ -201,7 +193,7 @@ The police reports, dispatch records, service returns, recordings, emails, photo
 
 **Federal-buddy statement:** I overheard the man refer to a "federal buddy." The meaning of the statement is unresolved. Witness testimony and communications records could establish whether it referred to an actual relationship and, if so, whether that relationship had any relevance to later events. The statement alone does not establish an actual federal relationship.
 
-**September 2022 service-status allegation:** I allege that Brandt knowingly gave me contrary information about service; no adjudicated finding is reported. [The Shield Effect](/hawaii-courts/shield-effect-accountability-gap/#law-enforcement) sets out the allegation and the HPD records that could test it. The opposing party also filed a TRO and continued stalking and harassing me afterward, including the “How’s your parents?” harassment. Court filings and service records can establish the sequence of the competing TRO proceedings.
+**September 2022 service-status allegation:** I allege that Brandt knowingly gave me contrary information about service; no adjudicated finding is reported. [The Review Gap](/hawaii-courts/review-gap-police-judicial-oversight/#law-enforcement) sets out the allegation and the HPD records that could test it. The opposing party also filed a TRO and continued stalking and harassing me afterward, including the “How’s your parents?” harassment. Court filings and service records can establish the sequence of the competing TRO proceedings.
 
 **September 2022 officer identifications:** I identify Shatoo as the responding officer for the September 12, 2022 PaaLaa Road vehicle run-over attempt, located by report number **22-353421**, and Brandt as the responding officer for the September 20, 2022 Breakers / North Shore Marketplace harassment and alleged service-status deception event, located by report number **22-365099**. These officer identifications are my firsthand account; CAD/RMS and officer-assignment records could independently corroborate or contradict them.
 
@@ -223,18 +215,7 @@ My account records what I saw, with technical artifacts where preserved. Establi
 
 Loo cut off my explanation of the stalking, assault, and vehicle attacks; the [overview](/hawaii-courts/wilson-loo-judicial-signaling/#the-case-loo-cut-off) gives the full account and the legal argument about my right to present the case.
 
-The companion articles examine the December 2, 2022 hearing through its own records and witnesses. My account includes these events:
-
-- I asked a specific question about LSD / lysergic acid diethylamide;
-- a sealed text exhibit supplied the predicate for the question;
-- Judge Wilson M.N. Loo gave a nonverbal "no" signal before the witness answered;
-- Bosko Petricevic was looking at Judge Loo during the sequence;
-- the witness denied furnishing LSD;
-- I immediately attempted to place the judge's conduct on the record;
-- Judge Loo cut me off;
-- the sealed audio can test the timing around the question, answer, attempted record statement, and cutoff, though it cannot capture the visual signal itself.
-
-The prior prosecution, threats, and career-destruction warning explain why I treated the 2022 sequence as serious. The courtroom event stands or falls on testimony, sealed audio timing, the text exhibit, line of sight, witness interviews, and professional-responsibility review.
+[The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) holds my account of the signal, answer, and interrupted record statement. The prior prosecution, threats, and career-destruction warning explain why I treated the 2022 sequence as serious. Its review requires the hearing’s own records and eyewitnesses.
 
 ## Firsthand Report Chronology
 

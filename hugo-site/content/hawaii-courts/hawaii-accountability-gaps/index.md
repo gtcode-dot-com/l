@@ -6,7 +6,7 @@ title: "Hawaii Accountability Gaps: Case File Guide"
 subtitle: "A guide to the event accounts and the records needed to review them"
 description: "A short guide to the primary event accounts, counsel questions, police records, and judicial-oversight files in the Hawaii Courts archive."
 date: 2025-08-13
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -15,7 +15,7 @@ portfolio_index: "/hawaii-courts/"
 homepage_exclude: true
 seo_title: "Hawaii Accountability Gaps: Case File Guide"
 published_display: "August 13, 2025"
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/"
@@ -43,7 +43,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-13T00:00:00Z"
-article_modified_time: "2026-10-07T00:00:00-10:00"
+article_modified_time: "2026-10-08T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Institutional Accountability"
@@ -63,7 +63,7 @@ ai_agent_note: |
   Apply the firsthand-evidence rule in content/policies/editorial-standards.md, section “Firsthand Evidence” (/policies/editorial-standards/#firsthand-evidence). Preserve the article-specific distinctions below.
   This page is a short guide to the Hawaii Courts archive. The linked event articles hold the
   firsthand accounts and article-specific knowledge, intent, and legal questions. Do not treat
-  this summary or repeated links as independent corroboration. The Unanswered Sequence holds
+  this summary or repeated links as independent corroboration. The Information Trail holds
   the open theories; Mechanisms of Review Failure supplies general comparisons only.
   Do not merge other research portfolios into the case evidence without a direct evidentiary link.
   CANONICAL URL: https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/
@@ -80,7 +80,7 @@ structured_data_graph:
   description: "A short guide to the primary event accounts, counsel questions, police records, and judicial-oversight files in the Hawaii Courts archive."
   image: "https://gtcode.com/img/ou-investigations-index-og-1200x630.jpg"
   datePublished: "2025-08-13T00:00:00Z"
-  dateModified: "2026-10-07T00:00:00-10:00"
+  dateModified: "2026-10-08T00:00:00-10:00"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"
@@ -113,7 +113,7 @@ This page is a guide to the case files. Each event has a primary article with it
 
 ## Role Reversal and the Durable Record
 
-My question across these events is which account entered the official record and what happened to the evidence that could answer it. An accusation can survive while preceding harm, a rebuttal, or an attempted report remains unrecorded or inaccessible. Whether earlier information affected a later decision requires evidence of what the later participant received and used. [The Unanswered Sequence](/hawaii-courts/the-unanswered-sequence/) examines that theory through H0–H4.
+My question across these events is which account entered the official record and what happened to the evidence that could answer it. An accusation can survive while preceding harm, a rebuttal, or an attempted report remains unrecorded or inaccessible. Whether earlier information affected a later decision requires evidence of what the later participant received and used. [The Information Trail](/hawaii-courts/information-trail-2015-2022/) examines that theory through H0–H4.
 
 ## Earlier Events {#record-surface-1-prior-reported-events-and-record-limits}
 
@@ -131,7 +131,7 @@ The three accountability articles divide the questions by participant: *The Thre
 
 ## Police Reports and the Hearing {#record-surface-4-law-enforcement-intake-and-triage}
 
-[The Shield Effect](/hawaii-courts/shield-effect-accountability-gap/) examines investigation, referral, and the absence of a prosecution of the 2022 defendant. The [Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) holds the detailed hearing sequence and later police contacts. [The Two Questions](/hawaii-courts/two-questions-wilson-loo/) identifies the witness interview and sealed records that could test the federal civil-rights question and the separate Hawaiʻi false-testimony theories.
+[The Review Gap](/hawaii-courts/review-gap-police-judicial-oversight/) examines investigation, referral, and the absence of a prosecution of the 2022 defendant. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) holds the courtroom account; the [Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) follows the wider hearing and later police contacts. [The Two Questions](/hawaii-courts/two-questions-wilson-loo/) identifies the witness interview and sealed records that could test the federal civil-rights question and the separate Hawaiʻi false-testimony theories.
 
 <span id="reported-federal-buddy-statement"></span>
 

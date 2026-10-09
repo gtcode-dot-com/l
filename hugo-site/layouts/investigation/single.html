@@ -26,10 +26,7 @@
         {{ end }}
       {{ end }}
       <h1 class="ou-article-title">{{ $active.Title }}</h1>
-      {{ with $active.Params.subtitle }}
-      <p class="ou-article-subtitle">{{ . }}</p>
-      {{ end }}
-      {{ with $active.Description }}
+      {{ with ($active.Params.subtitle | default $active.Description) }}
       <p class="ou-article-subtitle">{{ . }}</p>
       {{ end }}
       <div class="ou-article-meta">
@@ -74,6 +71,9 @@
         "width" ($active.Params.hero_image_width | default $active.Params.og_image_width | default 1200)
         "height" ($active.Params.hero_image_height | default $active.Params.og_image_height | default 630)
       ) }}
+      {{ with $active.Params.hero_image_caption }}
+      <figcaption class="ou-article-hero-caption">{{ . | markdownify }}</figcaption>
+      {{ end }}
     </figure>
     {{ end }}
 

@@ -8,7 +8,7 @@ seo_title: "Open Letter to Bosko Petricevic on the Wilson Loo Sealed Record"
 subtitle: "You Were in the Room"
 description: "A public letter to attorney Bosko Petricevic concerning a December 2, 2022 First Circuit courtroom sequence, a sealed audio record, and professional-responsibility questions under Hawaii Rule of Professional Conduct 8.3(b)."
 date: 2026-05-06
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -115,37 +115,19 @@ structured_data_graph:
       articleSection: "Hawaii Courts"
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, judicial conduct question, sealed audio record, firsthand observation, professional responsibility, First Circuit, Hawaii"
 ---
-**Editor’s note, May 15, 2026:** Related professional-responsibility analysis appears in [The Lawyer in the Room](/hawaii-courts/lawyer-in-the-room-bosko-petricevic/). This page is an open letter that states the author's firsthand observation plainly while distinguishing that observation from any adjudicated finding about what Mr. Petricevic saw, knew, or understood.
-
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022]({{< relref "hawaii-courts/the-unanswered-sequence/index.md" >}}).
-
-This letter does not rely on any broader institutional theory. It asks what one lawyer saw and what professional duty followed if he saw it.
-
 Mr. Petricevic,
 
 You were in the room on December 2, 2022.
 
-You appeared in the First Circuit Court in Honolulu as counsel for ████████████. I appeared pro se. [Judge Wilson M.N. Loo](/hawaii-courts/wilson-loo-judicial-signaling/) presided. The proceeding was recorded by audio only. The record was later sealed at your request.
+You represented ████████████ in the First Circuit Court in Honolulu; I appeared pro se. Judge Wilson M.N. Loo presided. The hearing was recorded by audio only.
 
-This letter concerns the professional-responsibility questions arising from the sequence that occurred in that courtroom.
+I asked your sworn client whether he had furnished me LSD. A text-message exhibit in the court file supplied the context. Before your client answered, I saw Loo look toward him and make a “no” head gesture while scrunching his nose. I saw you and your client looking toward the judge. Your client then denied furnishing LSD.
 
-Your client was placed under oath. I [asked a question](/hawaii-courts/two-questions-wilson-loo/) that tested his testimony against a text-message exhibit already in the court file. That exhibit was directly relevant to the truthfulness of the testimony being given. As counsel, you had access to the file and were in a position to understand the context in which the question was being asked.
+I immediately began, “Let the record show that the judge just—”. Loo cut me off.
 
-I was facing Judge Loo while asking the question. Before your client answered, I observed Judge Loo look from me toward the witness and make a “no” head gesture while scrunching his nose. I also observed you and your client looking at Judge Loo during that sequence. You were seated facing the bench. You were positioned to observe the judge, the witness, and the exchange.
-
-Your client then gave testimony that appeared inconsistent with that exhibit.
-
-I immediately attempted to place what I had observed on the record. I began: “Let the record show that the judge just—”
-
-Judge Loo cut me off.
-
-That exchange is on the sealed audio. The words, the timing, and the interruption are preserved in the court’s own record.
-
-The gesture and where you were looking are my visual observations. The audio can test the spoken exchange, timing, and interruption. What you perceived or concluded is your account to give.
+You were seated facing the bench. The gesture and where you were looking are my visual observations; the sealed audio can test the words, timing, and interruption. What you perceived or concluded is your account to give. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) preserves the full account; [The Lawyer in the Room](/hawaii-courts/lawyer-in-the-room-bosko-petricevic/) examines the reporting rule.
 
 What did you see, what did you understand, and what did Rule 8.3(b) require if you saw and understood the sequence?
-
-The predicate for the question was the court file and the exhibit in that proceeding. This letter concerns the courtroom sequence I observed. The professional-responsibility question is conditional as to what you saw, what you understood, and whether Rule 1.6 barred a report. Platform, agency, or private-actor access to sealed material is outside this letter's factual claim.
 
 During final remarks, after testimony had ended, your client repeated a false claim as established fact. The court did not strike the statement or admonish your client. It did not permit me to answer before the record was sealed.
 
@@ -191,13 +173,7 @@ When they do, your role in the sequence can be evaluated through the same condit
 
 ## Scope Boundaries
 
-This letter makes a professional-responsibility claim with clear conditions. The public record contains no adjudicated finding that you violated Rule 8.3(b). Employment overlap, professional proximity, and your role as opposing counsel do not substitute for knowledge. A reporting duty would not have required you to abandon your client, disclose information protected by Rule 1.6, or litigate the issue publicly in the moment.
-
-It claims that I saw you looking at Judge Loo during a material courtroom sequence; that the sealed audio can test the immediate timing around that sequence; and that, if you saw and understood what I observed and no confidentiality rule barred an appropriate report, the professional-responsibility question was real.
-
-Credible contrary eyewitness evidence materially inconsistent with the reported sequence would weaken the allegation. Outside review should test testimony against the sealed audio, exhibit, courtroom layout, and other eyewitness accounts.
-
-The record can show the audio sequence. The remaining question is what those present saw, understood, and did with it.
+A reporting-duty finding requires evidence of qualifying judicial misconduct, your actual knowledge, a duty consistent with Rules 8.3(c) and 1.6, and failure to make the required report. The public record contains no adjudicated finding of a violation.
 
 ## What Would Resolve This
 

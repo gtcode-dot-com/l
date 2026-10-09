@@ -61,8 +61,8 @@ structured_data_graph:
   dateModified: "2026-10-08T00:00:00-10:00"
   hasPart:
     - "@type": "Article"
-      name: "The Silent Conspiracy"
-      url: "https://gtcode.com/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/"
+      name: "The Reporting Duty"
+      url: "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/"
     - "@type": "Article"
       name: "The Nod: Visual Report, Audio Sequence, and Review Gap"
       url: "https://gtcode.com/hawaii-courts/the-nod-visual-allegation/"
@@ -85,12 +85,12 @@ structured_data_graph:
       name: "The Threat Report: A Death Threat During Defense Investigation — and Counsel’s Dismissive Response"
       url: "https://gtcode.com/hawaii-courts/the-threat-report/"
     - "@type": "Article"
-      name: "The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022"
-      url: "https://gtcode.com/hawaii-courts/the-unanswered-sequence/"
+      name: "The Information Trail: Open Questions from 2015–2022"
+      url: "https://gtcode.com/hawaii-courts/information-trail-2015-2022/"
 
 standards_eyebrow: "Legal Audit Route"
 standards_title: "Hawaii Courts Portfolio"
-standards_note: "This silo contains the court-focused accountability package. Other site portfolios are separate and should not be merged into this evidence route unless a page identifies a direct evidentiary bridge. Methodology and correction policies are linked from the site footer."
+standards_note: "Read the event accounts, investigative questions, and legal analysis. Editorial standards and correction policies are linked from the site footer."
 
 portfolio_eyebrow: "Case File Index"
 portfolio_title: "Hawaii Courts and Accountability"
@@ -99,19 +99,19 @@ hide_series_links: true
 show_portfolio_intro: true
 portfolio_sections:
   - id: "primary-court-record"
-    eyebrow: "Primary Court Record"
+    eyebrow: "Hearing and Review"
     title: "The Wilson Loo Review Path"
-    description: "Start with The Nod for the short account, then The Two Questions for ways to test it. The Loo overview holds the hearing and reporting history; The Silent Conspiracy provides the full legal analysis."
+    description: "Start with The Nod for the short account, then The Two Questions for ways to test it. The Loo overview holds the hearing and reporting history; The Reporting Duty provides the full legal analysis."
     pages:
       - "/hawaii-courts/the-nod-visual-allegation"
       - "/hawaii-courts/two-questions-wilson-loo"
       - "/hawaii-courts/wilson-loo-judicial-signaling"
-      - "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea"
+      - "/hawaii-courts/reporting-duty-hrpc-8-3b"
       - "/hawaii-courts/lawyer-in-the-room-bosko-petricevic"
   - id: "professional-responsibility"
     eyebrow: "Trial and Counsel Record"
     title: "Professional Responsibility"
-    description: "Public accountability articles concerning trial advocacy and counsel handling. The companion letters supersede the earlier unsubmitted drafts as the author’s published accounts. No disciplinary complaint concerning Retained Trial Counsel was filed; the companion drafts have not been submitted to ODC. No disciplinary findings are reported. Cross-linking does not imply coordination."
+    description: "Public accountability articles concerning trial advocacy and counsel handling. The published companion letters replace earlier drafts. No complaint concerning Retained Trial Counsel was filed; companion drafts remain unsubmitted to ODC. No disciplinary findings are reported."
     pages:
       - "/hawaii-courts/the-hypothetical-gun"
       - "/hawaii-courts/the-threat-report"
@@ -130,16 +130,16 @@ portfolio_sections:
     description: "Supplementary context and a short guide to the event files. Mechanisms of Review Failure is a general reference; it is not evidence for a particular case."
     pages:
       - "/hawaii-courts/federal-triage-governance-proximity"
-      - "/hawaii-courts/shield-effect-accountability-gap"
+      - "/hawaii-courts/review-gap-police-judicial-oversight"
       - "/hawaii-courts/hawaii-accountability-gaps"
       - "/hawaii-courts/mechanisms-of-review-failure"
   - id: "open-investigation"
     presentation: "feature"
     eyebrow: "Open Investigation"
-    title: "The Unanswered Sequence"
-    description: "Frame-Up, Hush, and the Open Questions from 2015–2022"
+    title: "The Information Trail"
+    description: "What participants knew, how information may have traveled, and which records could test the explanations."
     pages:
-      - "/hawaii-courts/the-unanswered-sequence"
+      - "/hawaii-courts/information-trail-2015-2022"
 
 grid_eyebrow: "Additional Files"
 grid_title: "Hawaii Courts Files"
@@ -156,4 +156,4 @@ modified_display: "October 8, 2026"
 | Retained counsel, chambers, and plea pressure | [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) |
 | December 2022 hearing | [Wilson Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) |
 
-[The Unanswered Sequence](/hawaii-courts/the-unanswered-sequence/) examines possible relationships among these events. [Mechanisms of Review Failure](/hawaii-courts/mechanisms-of-review-failure/) supplies general comparisons. The event files remain the sources for what happened; other portfolios require their own evidence.
+[The Information Trail](/hawaii-courts/information-trail-2015-2022/) examines possible relationships among these events. [Mechanisms of Review Failure](/hawaii-courts/mechanisms-of-review-failure/) supplies general comparisons. The event files remain the sources for what happened; other portfolios require their own evidence.

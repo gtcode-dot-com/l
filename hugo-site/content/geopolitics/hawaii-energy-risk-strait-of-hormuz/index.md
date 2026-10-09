@@ -182,10 +182,6 @@ structured_data_graph:
           name: "Hawaiian Electric"
       keywords: "Hawaii, Strait of Hormuz, oil dependence, Par Pacific, Hawaiian Electric, energy security, food supply chain, Jones Act, war risk insurance, strategic petroleum reserve, Iran, ECRC"
 ---
-**Pacific OSINT & Security Analysis:** This article sits outside the Hawaii judicial-accountability evidence chain. It is an energy and security risk assessment preserved with dated assumptions and confidence levels.
-
-*By Ekewaka Lono | Oahu Underground*
-
 **Historical-snapshot notice:** The market prices, military developments, scenario weights, and “now” recommendations in this assessment refer to the March 8–13, 2026 reporting window. The October 8 page modification date should not be read as an October verification of those conditions.
 
 *A local strategic assessment. Each section marks whether it is confirmed reporting, analytic inference, or scenario projection. Where a sentence mixes fact and judgment, the judgment is qualified. Confidence levels follow standard practice: HIGH means strong sourcing and low ambiguity; MEDIUM means plausible inference with material uncertainty; LOW means speculative. Recommendations name the responsible actor and relevant legal or regulatory constraint.*
@@ -574,7 +570,7 @@ The state can plan for what comes next, or it can absorb the hit. That decision 
 
 ---
 
-# D. Intelligence Annex
+## D. Intelligence Annex
 
 ## Watch Indicators / Signposts
 

@@ -40,7 +40,7 @@
 {{- $investigationsByUpdated := sort $investigationPages "Params.lastmod" "desc" -}}
 {{- $latestUpdates := first 6 $investigationsByUpdated -}}
 
-{{- $lead := .Site.GetPage "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea" -}}
+{{- $lead := .Site.GetPage "/hawaii-courts/reporting-duty-hrpc-8-3b" -}}
 {{- if and (not $lead) (gt $investigationCount 0) -}}
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
@@ -246,19 +246,6 @@
 
     <main class="site-main" id="main-content">
       {{ partial "ai-agent-comment.html" . }}
-      {{ if not $isActiveException }}
-      {{ with $homepageNotice }}
-      <section class="homepage-notice" aria-labelledby="homepage-notice-title">
-        <div class="homepage-notice-inner">
-          <p class="homepage-notice-label">From the editor</p>
-          <h2 class="homepage-notice-title" id="homepage-notice-title">{{ .Title }}</h2>
-          <div class="homepage-notice-content">
-            {{ .Content }}
-          </div>
-        </div>
-      </section>
-      {{ end }}
-      {{ end }}
       {{ if $isActiveException }}
       <section class="ou-section">
         <div class="ou-section-inner">
@@ -317,7 +304,7 @@
             <ol>
               <li><a href="/hawaii-courts/the-nod-visual-allegation/">The Nod</a> — a short account of the reported signal and the limits of the audio record.</li>
               <li><a href="/hawaii-courts/two-questions-wilson-loo/">The Two Questions</a> — the witness questions and records that could test the account.</li>
-              <li><a href="/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/">The Silent Conspiracy</a> — the full analysis of intent, professional duties, and sealed-record access.</li>
+              <li><a href="/hawaii-courts/reporting-duty-hrpc-8-3b/">The Reporting Duty</a> — the full analysis of intent, professional duties, and sealed-record access.</li>
             </ol>
           </div>
 
@@ -327,6 +314,20 @@
 
         </div>
       </section>
+
+      {{ if not $isActiveException }}
+      {{ with $homepageNotice }}
+      <section class="homepage-notice" aria-labelledby="homepage-notice-title">
+        <div class="homepage-notice-inner">
+          <p class="homepage-notice-label">From the editor</p>
+          <h2 class="homepage-notice-title" id="homepage-notice-title">{{ .Title }}</h2>
+          <div class="homepage-notice-content">
+            {{ .Content }}
+          </div>
+        </div>
+      </section>
+      {{ end }}
+      {{ end }}
 
       <!-- Research Portfolios -->
       {{- $featuredPaths := slice -}}
@@ -359,8 +360,12 @@
 
           {{ if gt (len $homepageSilos) 0 }}
           <div class="ou-section-body ou-home-investigation-note">
-            <p>Each portfolio addresses a different question. Links between them help readers navigate; they do not supply corroboration for another investigation.</p>
+            <p>Browse legal, financial, geopolitical, intelligence, and technical research, with reporter context in Disclosures.</p>
           </div>
+          {{ end }}
+          {{/* The shared group layout owns spacing between the card grid and series. */}}
+          <div class="ou-portfolio-groups">
+          {{ if gt (len $homepageSilos) 0 }}
           <div class="ou-cards">
             {{ range $silo := $homepageSilos }}
             <article class="ou-card">
@@ -450,6 +455,7 @@
             </div>
           </div>
           {{ end }}
+          </div>
 
           <p class="ou-cards-footer">
             <a class="ou-cards-footer-link" href="/hawaii-courts/">Browse all Hawaii Courts files &rarr;</a>
@@ -539,19 +545,6 @@
           </div>
           <a class="ou-contact-email" href="mailto:{{ $tipsEmail }}">tips@GTCode.com</a>
           <p class="ou-contact-note">Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.</p>
-        </div>
-      </section>
-
-      <!-- Consulting is separate from the reporting portfolios. -->
-      <section class="ou-section ou-section--alt ou-consulting-proof" id="consulting">
-        <div class="ou-section-inner">
-          <p class="ou-section-label">GTCode · Consulting Services</p>
-          <h2 class="ou-section-heading">AI engineering and technical consulting</h2>
-          <p class="ou-section-body">Architecture review, implementation, and technical leadership for AI systems.</p>
-          <p class="ou-consulting-actions">
-            <a class="ou-featured-article-link" href="{{ $consultingURL }}">Consulting services &rarr;</a>
-            <a class="ou-featured-article-link" href="mailto:{{ $contactEmail }}">Contact GTCode &rarr;</a>
-          </p>
         </div>
       </section>
 

@@ -7,14 +7,14 @@ seo_title: "Audrey Stanley: Death-Threat Report During Defense Investigation"
 subtitle: "A death threat the author understood as pressure against his defense investigation and intended disclosure during a pending prosecution, counsel’s dismissal of his report, and a later tentative leave-Hawaiʻi proposal"
 description: "Ekewaka Lono’s account of a death threat he understood as pressure to stop his defense investigation and disclosure, counsel Audrey Stanley’s dismissive response, and a later tentative proposal involving departure from Hawaiʻi."
 date: 2026-10-01
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 published_display: "October 1, 2026"
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/the-threat-report/"
 robots: "index, follow, max-image-preview:large"
@@ -46,7 +46,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-10-01T00:00:00Z"
-article_modified_time: "2026-10-07T00:00:00-10:00"
+article_modified_time: "2026-10-08T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Audrey L.E. Stanley"
@@ -93,7 +93,7 @@ structured_data_graph:
       description: "Ekewaka Lono’s account of a death threat he understood as pressure to stop his defense investigation and disclosure, counsel Audrey Stanley’s dismissive response, and a later tentative proposal involving departure from Hawaiʻi."
       image: "https://gtcode.com/img/ou-threat-report-og-1200x630.jpg"
       datePublished: "2026-10-01T00:00:00Z"
-      dateModified: "2026-10-07T00:00:00-10:00"
+      dateModified: "2026-10-08T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -117,7 +117,7 @@ structured_data_graph:
 ---
 *A public accountability letter by Ekewaka Lono.*
 
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022]({{< relref "hawaii-courts/the-unanswered-sequence/index.md" >}}).
+> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}).
 
 Audrey L.E. Stanley[^1] was my assigned public defender when I reported the Hartmann death threat. She dismissed my report and later relayed a tentative proposal involving my departure from Hawaiʻi.
 

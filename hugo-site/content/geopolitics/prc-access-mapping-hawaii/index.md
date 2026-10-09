@@ -7,10 +7,10 @@ seo_title: "Warren K.K. Luke Network and Hawaii-PRC Access Mapping"
 subtitle: "Public-record mapping of Pacific Forum, APCSS Foundation, Punahou, and PRC-facing institutional engagement characterized by cited sources"
 description: "Public records map Warren K.K. Luke's roles across Pacific Forum, APCSS Foundation, and Punahou-linked programs with PRC-facing entities characterized in sources."
 date: 2026-03-01
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 published_display: "March 1, 2026"
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 type: "investigation"
 portfolio_key: "geopolitics"
 portfolio_label: "Geopolitics"
@@ -67,7 +67,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-01T00:00:00Z"
-article_modified_time: "2026-10-07T00:00:00-10:00"
+article_modified_time: "2026-10-08T00:00:00-10:00"
 article_section: "Geopolitics"
 article_tags:
   - "Warren K.K. Luke"
@@ -166,7 +166,7 @@ structured_data_graph:
       url: "https://gtcode.com/geopolitics/prc-access-mapping-hawaii/"
       image: "https://gtcode.com/img/ou-bridges-og-1200x630.jpg"
       datePublished: "2026-03-01T00:00:00Z"
-      dateModified: "2026-10-07T00:00:00-10:00"
+      dateModified: "2026-10-08T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -218,13 +218,9 @@ structured_data_graph:
           name: "counterintelligence exposure"
       keywords: "Warren K.K. Luke, Pacific Forum, APCSS Foundation, Punahou School, PRC party-state engagement, United Front Work Department, CFISS, CICIR, counterintelligence exposure, Hawaii"
 ---
-*By Ekewaka Lono | Oahu Underground*
-
-**Pacific OSINT & Security Analysis:** This article is public-record security and access-safeguard analysis. It does not explain the Wilson Loo allegations, HPD’s handling of the author’s reports, the Hartmann threat, or any claim in the author's chronology.
-
 *Part I of [The Architecture of Access](/geopolitics/architecture-of-access-luke-network/), examining documented PRC-facing institutional relationships and the safeguards attached to access.*
 
-*Espionage, direction, tasking, control, criminal conduct, or exploitation would require evidence beyond the public affiliations documented here.*
+Documented relationships establish access points. They do not, by themselves, establish espionage, direction, control, or misconduct; those conclusions require evidence beyond affiliation.
 
 ## Series Navigation
 

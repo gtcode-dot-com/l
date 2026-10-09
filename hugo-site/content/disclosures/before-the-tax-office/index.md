@@ -7,7 +7,7 @@ seo_title: "Before the Tax Office: The Housing-to-Haleiwa Record"
 subtitle: "The private-information and housing history, threats, and institutional account that followed"
 description: "Ekewaka Lono’s reporter-disclosure chronology follows an earlier redacted housing episode, the Haleʻiwa room inquiry, [venue redacted], the November 2015 investigator encounter, threats, and the later institutional framing."
 date: 2026-10-01
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "disclosures"
@@ -117,7 +117,7 @@ structured_data_graph:
 ---
 *A reporter-disclosure chronology and public accountability letter by Ekewaka Lono.*
 
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022]({{< relref "hawaii-courts/the-unanswered-sequence/index.md" >}}).
+> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}).
 
 The state file began with a tax-office encounter. My history did not.
 

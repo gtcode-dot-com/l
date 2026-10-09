@@ -3,7 +3,7 @@ exception: true
 title: "Cartography for Guppies"
 slug: cartography-for-guppies
 date: 2026-02-05
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 author: Ekewaka Lono
 draft: false
 type: "investigation"
@@ -13,7 +13,7 @@ portfolio_index: "/disclosures/"
 seo_title: "Cartography for Guppies — A Publisher's Note from Oahu Underground"
 subtitle: "A Publisher's Note"
 published_display: "February 5, 2026"
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 eyebrow: "Publisher's Note"
 card_summary: "How to read Oahu Underground: public records first, process failures second, and clear boundaries between fact, firsthand account, context, and inference."
 description: "Publisher's note from Ekewaka Lono on Oʻahu Underground's evidence method, public archive, and accountability work."
@@ -45,7 +45,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-05T00:00:00Z"
-article_modified_time: "2026-10-07T00:00:00-10:00"
+article_modified_time: "2026-10-08T00:00:00-10:00"
 article_section: "Disclosures"
 article_tags:
   - "Oahu Underground"
@@ -94,7 +94,7 @@ structured_data_graph:
       description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
       image: "https://gtcode.com/img/ou-cartography-for-guppies-og-1200x630.jpg"
       datePublished: "2026-02-05T00:00:00Z"
-      dateModified: "2026-10-07T00:00:00-10:00"
+      dateModified: "2026-10-08T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -175,7 +175,7 @@ Each article should answer five questions:
 
 The fifth question prevents atomization. Every individual event may admit an ordinary explanation; the test is whether the same explanations survive the full sequence.
 
-[The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) applies that method to the trial through a principal-agent and incomplete-information model. [The Unanswered Sequence](/hawaii-courts/the-unanswered-sequence/) carries it outward to information provenance, inherited framing, and containment.
+[The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) applies that method to the trial through a principal-agent and incomplete-information model. [The Information Trail](/hawaii-courts/information-trail-2015-2022/) carries it outward to information provenance, inherited framing, and containment.
 
 Theories belong in the place where they generate records requests. Facts stay attached to their sources. Wider circulation does not independently corroborate an account; new records, witnesses, and substantive responses can change its evidentiary position.
 

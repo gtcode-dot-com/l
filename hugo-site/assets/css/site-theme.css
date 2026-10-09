@@ -626,6 +626,12 @@ body::before,
   min-width: 0;
 }
 
+/* Long words must reflow inside cards and series when readers enlarge text. */
+.ou-card,
+.ou-hp-series-banner {
+  overflow-wrap: anywhere;
+}
+
 .ou-card-thumb {
   margin: -1.5rem -1.5rem 1.5rem;
   border-radius: 3px 3px 0 0;
@@ -780,9 +786,18 @@ body::before,
   border-radius: 3px 3px 0 0;
 }
 
+.ou-series-block-parts li a,
+.ou-hp-series-banner-parts li a {
+  flex-wrap: wrap;
+  row-gap: 0.35rem;
+}
+
 .ou-series-block-part-title {
   font-size: 0.875rem;
   line-height: 1.6;
+  flex: 1 1 12ch;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .ou-series-block-part {

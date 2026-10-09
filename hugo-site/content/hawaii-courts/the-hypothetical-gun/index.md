@@ -7,7 +7,7 @@ seo_title: "Vincent Kanemoto Closing Argument: The Hypothetical Gun Record"
 subtitle: "Kwak’s charging and trial accounts, the booth diagram, and Kanemoto’s mock-pistol closing"
 description: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
 date: 2026-10-01
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -29,14 +29,15 @@ eyebrow: "Professional Responsibility"
 card_summary: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
 
 # Hero / Open Graph
-hero_image: "/img/ou-hypothetical-gun-og-1200x630.jpg"
-hero_image_alt: "Editorial illustration of an empty courtroom jury box, a trial transcript, and an abstract evidence boundary; no people or weapon are depicted"
+hero_image: "/img/ou-information-trail-og-1200x630.jpg"
+hero_image_alt: "Editorial reconstruction of a prosecutor making a two-handed mock-pistol gesture toward twelve jurors during closing argument, with a symbolic gun-shaped shadow."
+hero_image_caption: "Editorial reconstruction of the two-handed mock-pistol gesture Ekewaka Lono witnessed during the 2017 closing argument. The gun-shaped shadow is a visual metaphor. This is an illustration, not a photograph or courtroom recording."
 og_title: "The Hypothetical Gun: The Closing-Argument Record"
 og_description: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
-og_image: "/img/ou-hypothetical-gun-og-1200x630.jpg"
+og_image: "/img/ou-information-trail-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Editorial illustration of an empty courtroom jury box, a trial transcript, and an abstract evidence boundary; no people or weapon are depicted"
+og_image_alt: "Editorial reconstruction of a prosecutor making a two-handed mock-pistol gesture toward twelve jurors during closing argument, with a symbolic gun-shaped shadow."
 og_type: "article"
 
 # Article metadata
@@ -55,8 +56,8 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "The Hypothetical Gun: The Closing-Argument Record"
 twitter_description: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
-twitter_image: "/img/ou-hypothetical-gun-og-1200x630.jpg"
-twitter_image_alt: "The Hypothetical Gun — editorial illustration of courtroom records and an evidence boundary"
+twitter_image: "/img/ou-information-trail-og-1200x630.jpg"
+twitter_image_alt: "Editorial reconstruction of a prosecutor making a two-handed mock-pistol gesture toward twelve jurors during closing argument, with a symbolic gun-shaped shadow."
 
 # Agentic Context
 ai_agent_note: |
@@ -89,7 +90,7 @@ structured_data_graph:
       headline: "The Hypothetical Gun: The Closing-Argument Record"
       alternativeHeadline: "Kwak’s charging and trial accounts, the booth diagram, and Kanemoto’s mock-pistol closing"
       description: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
-      image: "https://gtcode.com/img/ou-hypothetical-gun-og-1200x630.jpg"
+      image: "https://gtcode.com/img/ou-information-trail-og-1200x630.jpg"
       datePublished: "2026-10-01T00:00:00Z"
       dateModified: "2026-10-08T00:00:00-10:00"
       author:
@@ -115,7 +116,7 @@ structured_data_graph:
 ---
 *A public accountability letter by Ekewaka Lono.*
 
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022]({{< relref "hawaii-courts/the-unanswered-sequence/index.md" >}}).
+> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}).
 
 The prosecution arose from my November 2015 encounter with tax official Young Kwak. His accusation about what I said was false. The July 2017 trial ended in a hung jury. The State did not retry the case, and I later obtained an expungement.
 
@@ -307,7 +308,7 @@ Kanemoto, Kwak, Yuen, the relevant agencies, and any participant with records ma
 
 The trial ended without a conviction. I still want answers about what the state said and showed the jury, and how an encounter with a tax official came to be framed through childhood associations and an imaginary weapon.
 
-*The header image is generated editorial artwork and contains no documentary image from the trial. Image credit: generated editorial artwork for Oahu Underground / GTCode, October 1, 2026.*
+*Image credit: generated editorial reconstruction for Oahu Underground / GTCode, October 3, 2026; reused here unchanged on October 8, 2026.*
 
 ## Sources and Notes
 

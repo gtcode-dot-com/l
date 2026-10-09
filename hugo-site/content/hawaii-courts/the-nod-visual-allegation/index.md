@@ -6,7 +6,7 @@ title: "The Nod: Visual Report, Audio Sequence, and Review Gap"
 subtitle: "A firsthand visual report and the record sequence that can test it"
 description: "A records-focused editorial account of a firsthand visual report, the sealed audio sequence that can test the timing, and the oversight question that followed."
 date: 2026-02-12
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -108,34 +108,26 @@ structured_data_graph:
       articleSection: "Hawaii Courts"
       keywords: "Wilson Loo, Reported Judicial Misconduct, Hawaii, Courtroom Record, First Circuit"
 ---
-This article is about one disputed courtroom sequence: a firsthand visual report, a question asked under oath, an answer, an attempted record statement, an interruption, and a sealed audio record. Broader institutional questions are addressed separately and are not needed to evaluate this report.
+<span id="evidence-classification"></span>
+<span id="evidence-standard"></span>
 
-### Evidence Classification
+## The Courtroom Sequence {#the-courtroom-sequence}
 
-| Category | Status |
-| --- | --- |
-| Firsthand report | My courtroom observation; audio cannot directly capture the visual gesture |
-| Audio-confirmable | Question, answer, cutoff, sealing sequence |
-| Sealed-record-dependent | Audio and exhibits |
-| Legal inference | Judicial-conduct and federal review analysis |
-| Not claimed | Coordinated criminal conspiracy absent further evidence |
+The December 2, 2022 hearing was recorded by audio only. The signal described below is my firsthand visual observation; the sealed audio can test the spoken sequence.
 
 The scene in the courtroom should have been procedural. The question before the witness, (redacted), was simple: *Did you furnish the plaintiff with LSD?*
 
 The evidence was already in the file. I submitted a text message to the court in which I told (redacted), "I took the acid." Authorized review of the sealed court file could independently confirm the exhibit and establish what documentary evidence was available to Loo. The message and surrounding evidence supplied the context for my question about whether the witness had furnished that acid to me.
 
-When the question was asked, I saw [Judge Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf) look at the witness and signal with his head: *No.*
-
+When the question was asked, I saw [Judge Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf) look at the witness and signal with his head: *No*, with a nose-scrunching, lip-pursing expression. I also saw the witness and his lawyer, Bosko Petricevic, looking toward Loo. What they perceived and understood remains unresolved.
 
 (Redacted) then denied furnishing LSD. Whether that denial constituted perjury is a question for investigation or adjudication.
 
-I immediately tried to put the signal on the record: “Let the record show that the judge just—”. [Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) cut me off.
+I immediately tried to put the signal on the record: “Let the record show that the judge just—”. [Loo](https://disclosures.civilbeat.org/disclosures/wilson-loo-2-2/) cut me off, shouting, “Nah ah ah enough out of you!!”
 
 My allegation is judicial interference with sworn testimony and interruption of my contemporaneous attempt to preserve the record.
 
-Under **[18 U.S.C. § 242](https://www.law.cornell.edu/uscode/text/18/242)** — deprivation of rights under color of law — state-judge conduct can raise federal criminal questions when a constitutional deprivation is willful and occurs under official authority. The Supreme Court unanimously confirmed this statute's application to state judges in [*United States v. Lanier*, 520 U.S. 259 (1997)](https://supreme.justia.com/cases/federal/us/520/259/). If records and witness testimony support my account, the conduct described here would implicate both the right to be heard and the right to an impartial tribunal. The interruption preventing the objection from entering the record is captured on the sealed audio.
-
-Motive is unresolved. Ordinary defenses would begin with a different account of the gesture, a claim that it was ambiguous, or an assertion that the interruption was routine courtroom control. My inference is that, in Hawaii's legal ecosystem, social position and credibility framing can affect who receives deference. The record question is straightforward: whether the sealed audio, court file, line-of-sight reconstruction, and testimony from people present corroborate the courtroom sequence.
+Motive is unresolved. My inference is that, in Hawaii's legal ecosystem, social position and credibility framing can affect who receives deference. 
 
 The documented response did not produce public accountability.
 
@@ -146,10 +138,6 @@ The text message and sworn denial remain in the sealed court record. Audio-only 
 ## The Separate Hearing Issue
 
 Loo also cut off my explanation of the stalking, assault, and vehicle attacks; the [overview](/hawaii-courts/wilson-loo-judicial-signaling/#the-case-loo-cut-off) sets out that account and the court's duty to receive relevant evidence.
-
-## Evidence Standard
-
-Public-record claims are cited to documents available for review. The signal is my visual observation; the spoken sequence can be tested against the sealed audio. Reviewers need both the audio and eyewitness evidence.
 
 ## Competing Factual Accounts and Limits {#ordinary-defenses-and-limits}
 
@@ -162,6 +150,10 @@ Those accounts must be tested against the evidence. Intent and the legal require
 <span id="what-would-falsify-this"></span>
 
 The sealed audio and court file can test the question, answer, attempted record statement, cutoff, sealing sequence, and text-message exhibit. Eyewitness accounts and courtroom layout can test the signal and opportunity to see it. A materially different recording or exhibit, or credible contrary eyewitness evidence, would change the assessment. The weight of any account, including a participant’s denial, depends on specificity, line of sight, consistency with the audio and court file, and independent support. The [Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) holds the full hearing and reporting history; [The Two Questions](/hawaii-courts/two-questions-wilson-loo/) sets out the investigative steps.
+
+## Further Analysis
+
+The [Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) examines the hearing rights at stake. [The Reporting Duty](/hawaii-courts/reporting-duty-hrpc-8-3b/#federal-outer-ring-section-242-witness-exposure-and-investigability) develops the conditional federal criminal analysis, including Section 242 and *United States v. Lanier*, separately from this account of the event.
 
 ---
 

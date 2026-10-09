@@ -136,21 +136,13 @@ structured_data_graph:
           name: "Sealed audio record"
       keywords: "Bosko Petricevic, Wilson Loo, Hawaii Rule of Professional Conduct 8.3, Rule 8.3(b), reported judicial misconduct, reporting duty, sealed audio, Commission on Judicial Conduct, First Circuit, Hawaii"
 ---
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022]({{< relref "hawaii-courts/the-unanswered-sequence/index.md" >}}).
+<span id="evidence-classification"></span>
+
+> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}).
 
 Bosko Petricevic represented the witness at the December 2, 2022 hearing before Judge Wilson M.N. Loo. This article examines what he perceived and understood, and whether Hawaiʻi’s reporting rule required him to act.
 
-### Evidence Classification
-
-| Category | Status |
-| --- | --- |
-| Firsthand report | My courtroom observation and line-of-sight account |
-| Audio-confirmable | Question, answer, attempted statement for the record, cutoff |
-| Sealed-record-dependent | Audio and court-file exhibits |
-| Legal inference | HRPC 8.3(b) reporting-duty analysis |
-| Not claimed | Adjudicated finding that counsel saw, knew, or violated a rule |
-
-Loo signaled “no” to the witness and cut off my attempt to describe the signal. The audio was later sealed. I saw Petricevic looking toward Loo; what he perceived and understood remains unresolved. The [open letter](/hawaii-courts/open-letter-bosko-petricevic/) asks him to give his account.
+I saw Loo signal “no” before the sworn witness denied furnishing LSD, then cut off my attempt to describe the signal for the audio record. Petricevic represented the witness, and I saw him looking toward Loo during that sequence. What he perceived and understood remains unresolved. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) preserves the full courtroom account. The [open letter](/hawaii-courts/open-letter-bosko-petricevic/) asks him to give his account.
 
 Hawaiʻi Rule of Professional Conduct 8.3(b) requires a lawyer who knows of a judicial-conduct violation raising a substantial question as to the judge’s fitness for office to inform an appropriate authority. Rule 8.3(c) excludes information protected by Rule 1.6 from required disclosure.[^1] Whether Petricevic had actual knowledge, whether the conduct met the seriousness threshold, and whether disclosure was permitted determine whether he had a reporting duty. A violation also requires proof that the required report was not made.
 
@@ -168,9 +160,7 @@ Rule 8.3(b) is intentionally limited. Hawaiʻi’s own comment to Rule 8.3 expla
 
 That limitation matters. A lawyer need not report every sharp remark, every impatient ruling, every evidentiary mistake, or every instance of judicial discourtesy. Rule 8.3(b) should not become a weapon for relitigating adverse rulings through bar complaints.
 
-The signal concerns a witness’s answer; the cutoff concerns my attempt to preserve what happened. The [overview](/hawaii-courts/wilson-loo-judicial-signaling/) gives the sequence; this article examines Petricevic’s knowledge and duties.
-
-A judge controls the proceeding, the witness environment, the opportunity to object, and the record. Here, the conduct was visual and the recording was audio only. My immediate description was cut off before the signal could be named.
+The alleged direction of a sworn answer and interruption of record preservation raise the fitness question. This article examines whether Petricevic knew of that conduct and what duties followed.
 
 ## The Knowledge Question
 
@@ -242,7 +232,7 @@ Neither Rule 8.3 nor Rule 1.6 imposes a requirement to create or publicly disclo
 
 ## ABA Formal Opinion 522: Noncontrolling Guidance
 
-ABA Formal Opinion 522 discusses Model Rule 8.3(b)’s knowledge and seriousness requirements and Rule 1.6 confidentiality.[^9] It is nonbinding guidance and does not decide whether anyone in this hearing violated Hawaiʻi’s rules. [The Silent Conspiracy](/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/#the-rules-own-name) examines its relationship to the Hawaiʻi rules in detail.
+ABA Formal Opinion 522 discusses Model Rule 8.3(b)’s knowledge and seriousness requirements and Rule 1.6 confidentiality.[^9] It is nonbinding guidance and does not decide whether anyone in this hearing violated Hawaiʻi’s rules. [The Reporting Duty](/hawaii-courts/reporting-duty-hrpc-8-3b/#the-rules-own-name) examines its relationship to the Hawaiʻi rules in detail.
 
 ## Why Lawyers Should Care
 
@@ -292,7 +282,7 @@ These are ways to test the investigative theory, not a burden on counsel to disp
 
 ## Why This Is a Public-Accountability Issue
 
-A litigant without counsel may depend on someone else in the room to recognize and report serious judicial misconduct. Here, the potentially duty-bound lawyer represented the opposing party. [The Silent Conspiracy](/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/#the-design-defect-in-hrpc-83b) examines that conflict in the reporting system. This article asks the narrower question: what did Petricevic perceive, what could he lawfully disclose, and was a required report made?
+A litigant without counsel may depend on someone else in the room to recognize and report serious judicial misconduct. Here, the potentially duty-bound lawyer represented the opposing party. [The Reporting Duty](/hawaii-courts/reporting-duty-hrpc-8-3b/#the-design-defect-in-hrpc-83b) examines that conflict in the reporting system. This article asks the narrower question: what did Petricevic perceive, what could he lawfully disclose, and was a required report made?
 
 ## Conclusion
 

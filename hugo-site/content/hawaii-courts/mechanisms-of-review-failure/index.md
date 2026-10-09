@@ -7,7 +7,7 @@ seo_title: "Mechanisms of Review Failure — Sealed Records, Stigma, and Oversig
 subtitle: "A mechanism library for sealed records, stigma, routing, and oversight closure"
 description: "A cautious mechanism library for evaluating review failures after primary records are assembled, with attention to sealed records, complaint routing, written dispositions, and oversight closure."
 date: 2026-02-24
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -145,21 +145,9 @@ What follows is a catalog of mechanisms and failure paths.
 
 ### A Note on Scope and Method
 
-This article is a structural analysis. It compares the architecture of documented systems -- the shapes they leave behind -- while keeping severity, intent, and moral weight case-specific.
+This map draws on government investigations, court records, declassified directives, and peer-reviewed findings. Apply it after assembling a case’s primary records. The sections distinguish documented mechanisms, structural analogies (“shape matches”), and the inference that those analogies reflect recurring features. The “Observable Outputs” checklist identifies records that could test the model in a particular case.
 
-This page is a map for evaluating records. Diagnosis of any person and proof of any specific local allegation belong outside the framework unless primary records support them. It should be applied only after primary records are assembled. Competing explanations must be tested against case-specific evidence; this framework does not establish a cause for an adverse event. The model becomes useful only where retrievable records show repeated process gaps, information movement, sealed-record effects, or oversight closure.
-
-In this model, the person creating friction need not be important. The important fact is that a process optimized for speed, deference, or risk reduction can close around anyone who asks inconvenient questions and insists on a reviewable record.
-
-The cross-cutting discussion also uses attributed commentary and public-opinion reporting to establish Hawaiʻi accountability context. Those sources do not establish a mechanism or cause in any particular case.
-
-Three distinctions matter:
-
-**Systemic emergence.** Institutional incentives, information asymmetries, and procedural design can produce outcomes that appear aligned while the record leaves planning unresolved. Some historical examples in the appendix involved formal programs; others involved ordinary institutional incentives or defective safeguards. The structural observation is limited: a reviewer should ask what the records show before treating similar-looking outcomes as connected.
-
-**Documented mechanisms vs. subjective experience.** Every mechanism described in this article is drawn from a documented case: a government investigation, a court record, a declassified directive, or a peer-reviewed finding. Where the article describes a general pattern, the claim is that the pattern has been observed in those documented cases — not that it is universal or that any specific reader's experience necessarily fits the model.
-
-**Evidence vs. inference.** The article distinguishes between (a) mechanisms that are directly documented in primary sources, cited in Sources and Notes; (b) structural analogies between documented cases, marked as "shape matches"; and (c) the inference that these analogies reflect recurring architectural features. A reader can accept (a) and (b) while remaining skeptical of (c). The "Observable Outputs" checklist following Section I describes what a reviewer could look for to evaluate whether the architecture is present in any specific case.
+Institutional incentives and procedural design can produce similar outcomes. Whether those outcomes share a cause requires evidence about the actors and decisions involved.
 
 ---
 

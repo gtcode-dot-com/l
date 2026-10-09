@@ -3,12 +3,12 @@ exception: true
 draft: false
 weight: 25
 homepage_exclude: true
-title: "The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022"
-seo_title: "The Unanswered Sequence: Frame-Up, Hush, and Open Questions | Oahu Underground"
+title: "The Information Trail: Open Questions from 2015–2022"
+seo_title: "The Information Trail: 2015–2022 | Oahu Underground"
 subtitle: "An Open Investigation into the 2015–2022 Sequence"
-description: "An investigation into the alleged 2015–2017 frame-up, who knew about it, and whether it relates to the later court and police encounters."
+description: "An investigation into what participants knew during the 2015–2022 events, how information may have traveled, and which records could distinguish the explanations."
 date: 2026-10-03
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -17,10 +17,12 @@ portfolio_index: "/hawaii-courts/"
 published_display: "October 3, 2026"
 modified_display: "October 8, 2026"
 # SEO & Indexing
-canonical: "https://gtcode.com/hawaii-courts/the-unanswered-sequence/"
+canonical: "https://gtcode.com/hawaii-courts/information-trail-2015-2022/"
+aliases:
+  - "/hawaii-courts/the-unanswered-sequence/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
-  - "The Unanswered Sequence"
+  - "The Information Trail"
   - "Frame-Up Hypothesis"
   - "Hawaii judicial accountability"
   - "Vincent Kanemoto"
@@ -33,17 +35,18 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Open Investigation / Working Hypotheses"
-card_summary: "An investigation into the alleged 2015–2017 frame-up, who knew about it, and whether it relates to the later court and police encounters."
+card_summary: "An investigation into what participants knew during the 2015–2022 events, how information may have traveled, and which records could distinguish the explanations."
 
 # Hero / Open Graph
-hero_image: "/img/ou-unanswered-sequence-og-1200x630.jpg"
-hero_image_alt: "Over-the-shoulder editorial illustration of an anonymous prosecutor facing twelve jurors and aiming a two-handed mock pistol toward them, with a gun-shaped shadow across the papers; no documentary scene is depicted"
-og_title: "The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022"
-og_description: "An investigation into the alleged 2015–2017 frame-up, who knew about it, and whether it relates to the later court and police encounters."
-og_image: "/img/ou-unanswered-sequence-og-1200x630.jpg"
+hero_image: "/img/ou-information-trail-chronology-og-1200x630.jpg"
+hero_image_alt: "Conceptual illustration of archival folders dated 2015, 2017 and 2022, overlapping papers and tracing lines across a dark desk."
+hero_image_caption: "Conceptual illustration of the 2015–2022 information trail. The papers and connecting traces are imagined, not reproduced exhibits or established transmission routes."
+og_title: "The Information Trail: Open Questions from 2015–2022"
+og_description: "An investigation into what participants knew during the 2015–2022 events, how information may have traveled, and which records could distinguish the explanations."
+og_image: "/img/ou-information-trail-chronology-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "Over-the-shoulder editorial illustration of an anonymous prosecutor facing twelve jurors and aiming a two-handed mock pistol toward them, with a gun-shaped shadow across the papers; no documentary scene is depicted"
+og_image_alt: "Conceptual illustration of archival folders dated 2015, 2017 and 2022, overlapping papers and tracing lines across a dark desk."
 og_type: "article"
 
 # Article metadata
@@ -65,10 +68,10 @@ article_tags:
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022"
+twitter_title: "The Information Trail: Open Questions from 2015–2022"
 twitter_description: "An investigation into information provenance, inherited framing, the 2017 chambers endgame, and the later court and police encounters."
-twitter_image: "/img/ou-unanswered-sequence-og-1200x630.jpg"
-twitter_image_alt: "The Unanswered Sequence — editorial illustration of a mock-pistol gesture aimed at twelve jurors, aligned gun-shaped shadow, and obscured statement"
+twitter_image: "/img/ou-information-trail-chronology-og-1200x630.jpg"
+twitter_image_alt: "Conceptual illustration of archival folders dated 2015, 2017 and 2022, overlapping papers and tracing lines across a dark desk."
 
 # Agentic Context
 ai_agent_note: |
@@ -98,14 +101,14 @@ structured_data_graph:
   "@context": "https://schema.org"
   "@graph":
     - "@type": "NewsArticle"
-      "@id": "https://gtcode.com/hawaii-courts/the-unanswered-sequence/#newsarticle"
+      "@id": "https://gtcode.com/hawaii-courts/information-trail-2015-2022/#newsarticle"
       mainEntityOfPage:
         "@type": "WebPage"
-        "@id": "https://gtcode.com/hawaii-courts/the-unanswered-sequence/"
-      headline: "The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022"
+        "@id": "https://gtcode.com/hawaii-courts/information-trail-2015-2022/"
+      headline: "The Information Trail: Open Questions from 2015–2022"
       alternativeHeadline: "An Open Investigation into the 2015–2022 Sequence"
-      description: "An investigation into the alleged 2015–2017 frame-up, who knew about it, and whether it relates to the later court and police encounters."
-      image: "https://gtcode.com/img/ou-unanswered-sequence-og-1200x630.jpg"
+      description: "An investigation into what participants knew during the 2015–2022 events, how information may have traveled, and which records could distinguish the explanations."
+      image: "https://gtcode.com/img/ou-information-trail-chronology-og-1200x630.jpg"
       datePublished: "2026-10-03T00:00:00Z"
       dateModified: "2026-10-08T00:00:00-10:00"
       author:
@@ -127,13 +130,13 @@ structured_data_graph:
         "@id": "https://gtcode.com/hawaii-courts/#collection"
         name: "Hawaii Courts Accountability Files"
         url: "https://gtcode.com/hawaii-courts/"
-      keywords: "The Unanswered Sequence, Frame-Up Hypothesis, information provenance, inherited framing, chambers game, Hawaii Courts, Wilson Loo, Bosko Petricevic, Audrey Stanley, Vincent Kanemoto"
+      keywords: "The Information Trail, Frame-Up Hypothesis, information provenance, inherited framing, chambers game, Hawaii Courts, Wilson Loo, Bosko Petricevic, Audrey Stanley, Vincent Kanemoto"
 ---
 
 > **Open Investigation / Working Theories**  
 > This investigation brings together my account of the 2015–2022 events and the available records. It asks what each person knew, where they learned it, and which records could distinguish the possible explanations.
 
-The companion articles examine different parts of the history. [Before the Tax Office](/disclosures/before-the-tax-office/) covers the pre-indictment housing and information-flow history. [The Threat Report](/hawaii-courts/the-threat-report/) covers the Hartmann death threat and Audrey Stanley’s[^1] handling of my report. [The Hypothetical Gun](/hawaii-courts/the-hypothetical-gun/) covers the prosecutor's closing. [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) audits the defense representation and the chambers-to-plea sequence. [The Silent Conspiracy](/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/) addresses the December 2, 2022 Wilson Loo proceeding and Rule 8.3(b).
+The companion articles examine different parts of the history. [Before the Tax Office](/disclosures/before-the-tax-office/) covers the pre-indictment housing and information-flow history. [The Threat Report](/hawaii-courts/the-threat-report/) covers the Hartmann death threat and Audrey Stanley’s[^1] handling of my report. [The Hypothetical Gun](/hawaii-courts/the-hypothetical-gun/) covers the prosecutor's closing. [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) audits the defense representation and the chambers-to-plea sequence. [The Reporting Duty](/hawaii-courts/reporting-duty-hrpc-8-3b/) addresses the December 2, 2022 Wilson Loo proceeding and Rule 8.3(b).
 
 This article asks whether information from the earlier events reached people involved later, and whether their decisions reflected shared knowledge or separate interests.
 
@@ -141,23 +144,13 @@ This article asks whether information from the earlier events reached people inv
 
 ## Evidence-State Classification
 
-| Class | Meaning | Treatment here |
-| :--- | :--- | :--- |
-| **Documented** | Supported by an identified public, court, institutional, or archival record. | Source and provenance stated. |
-| **Firsthand** | Directly seen, heard, received, said, or experienced by me. | Stated as firsthand evidence. Corroboration identified separately. |
-| **Contemporaneous** | Communications, notes, reports, or third-party records created near the event. | Used to establish timing, early reporting, and what participants knew. |
-| **Context** | Independently established background about an actor or institution. | Supplies setting and possible access routes. |
-| **Inference** | Analytical conclusion drawn from the sequence, incentives, and evidence. | Labeled as interpretation. |
-| **Theory** | Explanatory model that predicts records and behavior. | Tested through confirming and disconfirming evidence. |
-| **Unknown** | Missing information held in unrecovered records or testimony. | Converted into a retrieval question. |
-
-The same firsthand account repeated across multiple articles remains one source. Repetition never becomes corroboration.
+Firsthand events, identified records, inferences, and working theories are labeled throughout, following the [editorial standards](/policies/editorial-standards/#firsthand-evidence). A repeated firsthand account remains one source; corroboration requires another record or witness.
 
 ---
 
-## Part I — The 2015–2017 Frame-Up Theory
+## Part I — The 2015–2017 Chronology and Framing Question {#part-i--the-20152017-frame-up-theory}
 
-The theory advanced here is that the tax-office confrontation became the vehicle for an adverse account of me while the lethal threat against me remained outside my trial testimony. The sequence examines information flow, professional incentives, and local decisions.
+The chronology below separates what I witnessed from the explanations I am testing. My frame-up theory is that the tax-office confrontation became the vehicle for an adverse account of me while the lethal threat against me remained outside my trial testimony. The sequence examines information flow, professional incentives, and local decisions; the proposed connection must be tested against actor-specific records.
 
 ```mermaid
 %%{init: {"htmlLabels": false, "flowchart": {"htmlLabels": false, "nodeSpacing": 40, "rankSpacing": 60, "padding": 18}, "themeVariables": {"fontSize": "16px"}}}%%
@@ -240,6 +233,10 @@ He told me to **stop talking about what happened.** The approaching trial was th
 I testified at trial but omitted the Hartmann death threat after Kevin’s warning and Retained Trial Counsel’s advice against including it. [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/#my-testimony-and-state-of-mind) holds the account of that advice and my decision.
 
 In closing, prosecutor Vincent Kanemoto acknowledged that no gun was involved and then used a two-handed mock-pistol gesture while asking jurors to imagine a gun and convict.
+
+![Editorial reconstruction of a prosecutor making a two-handed mock-pistol gesture toward twelve jurors.](/img/ou-information-trail-og-1200x630.jpg)
+
+*Editorial reconstruction based on my firsthand account of the 2017 closing argument, not a photograph or courtroom recording. The gun-shaped shadow is a visual metaphor. [The Hypothetical Gun](/hawaii-courts/the-hypothetical-gun/) examines the gesture and the closing-argument record.*
 
 The frame-up theory reads that sequence as a role inversion:
 
@@ -517,7 +514,7 @@ The later investigation asks whether earlier information reached people handling
 * **Trial Closing Argument:** [The Hypothetical Gun: The Closing-Argument Record](/hawaii-courts/the-hypothetical-gun/)
 * **Trial Counsel / Chambers Game:** [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/)
 * **Counsel and Threat Handling:** [The Threat Report](/hawaii-courts/the-threat-report/)
-* **Judicial Conduct and Rule 8.3(b):** [The Silent Conspiracy](/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/)
+* **Judicial Conduct and Rule 8.3(b):** [The Reporting Duty](/hawaii-courts/reporting-duty-hrpc-8-3b/)
 * **Courtroom Line of Sight and Sealing:** [The Lawyer in the Room](/hawaii-courts/lawyer-in-the-room-bosko-petricevic/)
 
 ## Sources and Notes

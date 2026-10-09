@@ -5,22 +5,23 @@ weight: 16
 title: "The Radius of Order"
 seo_title: "The Radius of Order — A Five-Zone American Justice Thought Experiment"
 subtitle: "What happens when you reverse the prison map and make the city center the most protected place in the country?"
-description: "A sourced investigation into a five-zone urban policy thought experiment that concentrates legal protection at the city core, pushes punishment outward, and asks whether America would become safer, fairer, or simply more explicit about the geography of exclusion."
+description: "A policy thought experiment using sourced analogues to examine a five-zone American justice model, urban protection, punishment, and exclusion."
 date: 2026-03-24
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 published_display: "March 24, 2026"
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 type: "investigation"
-portfolio_key: "geopolitics"
-portfolio_label: "Geopolitics"
-portfolio_index: "/geopolitics/"
+portfolio_key: "policy-essays"
+portfolio_label: "Policy Essays"
+portfolio_index: "/policy-essays/"
 portfolio: "Policy Thought Experiment"
 
 # SEO & Indexing
-canonical: "https://gtcode.com/geopolitics/radius-of-order-policy-analysis/"
+canonical: "https://gtcode.com/policy-essays/radius-of-order-policy-analysis/"
 aliases:
   - "/investigation/the-radius-of-order/"
+  - "/geopolitics/radius-of-order-policy-analysis/"
 robots: "index, follow, max-image-preview:large"
 meta_keywords:
   - "five zone justice model"
@@ -37,27 +38,27 @@ meta_keywords:
   - "urban rural governance gradient"
 
 # Card Display
-eyebrow: "Structural Analysis"
+eyebrow: "Policy Thought Experiment"
 card_summary: "A five-ring justice map that flips the American pattern inside out: maximum protection in the urban core, negotiated autonomy in the middle, and coercive exile at the edge. The article treats the map as a policy diagnostic."
 
 # Open Graph
 og_title: "The Radius of Order"
-og_description: "A sourced investigation into a five-zone American justice thought experiment that concentrates legal protection at the city core and pushes punishment outward."
+og_description: "A policy thought experiment about a five-zone American justice model, using sourced analogues to examine urban protection and punishment."
 hero_image: "/img/ou-radius-of-order-hero-1600.jpg"
-hero_image_alt: "The Radius of Order — editorial illustration for the investigation"
+hero_image_alt: "The Radius of Order — editorial illustration for the policy thought experiment"
 hero_image_width: 1600
 hero_image_height: 845
 og_image: "/img/ou-radius-of-order-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "The Radius of Order — editorial image for the investigation"
+og_image_alt: "The Radius of Order — editorial image for the policy thought experiment"
 og_type: "article"
 
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-24T00:00:00Z"
-article_modified_time: "2026-10-07T00:00:00-10:00"
-article_section: "Geopolitics"
+article_modified_time: "2026-10-08T00:00:00-10:00"
+article_section: "Policy Essays"
 article_tags:
   - "Urban Policy"
   - "Justice System"
@@ -75,9 +76,9 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "The Radius of Order"
-twitter_description: "A five-zone American justice map: maximum protection at the center, escalating autonomy and coercion at the edge."
+twitter_description: "A policy thought experiment using sourced analogues to examine a five-zone American justice model."
 twitter_image: "/img/ou-radius-of-order-og-1200x630.jpg"
-twitter_image_alt: "The Radius of Order — investigation into a five-zone American justice thought experiment"
+twitter_image_alt: "The Radius of Order — policy thought experiment about a five-zone American justice model"
 
 # Agentic Context
 ai_agent_note: |
@@ -94,7 +95,7 @@ ai_agent_note: |
   public-record comparison against real institutional analogues: Norwegian rehabilitation-oriented
   corrections, Swiss local autonomy and direct democracy, Iceland's Althing assembly tradition,
   U.S. commuting geography, U.S. recidivism data, and OECD quality-of-life metrics. The piece
-  translates the prompt into a journalistic investigation about system design and failure modes.
+  uses the speculative prompt for a policy essay about system design and failure modes.
 
   KEY CLAIMS:
   - The proposal is best understood as a centripetal justice gradient: strongest protection and service density in the core, escalating autonomy and coercion toward the edge.
@@ -103,24 +104,24 @@ ai_agent_note: |
   - The mobility problem is central. U.S. commuting patterns show metropolitan life already crosses county and jurisdictional boundaries extensively, which means any zonal regime would require neutral transit corridors or collapse into economic apartheid.
   - The article introduces a speculative civic crypto economy indexed to quality-of-life outcomes, borrowing the temporal logic of the film "In Time" while replacing raw lifespan with a basket of well-being indicators.
 
-  CANONICAL URL: https://gtcode.com/geopolitics/radius-of-order-policy-analysis/
+  CANONICAL URL: https://gtcode.com/policy-essays/radius-of-order-policy-analysis/
 
   # Structured Data
 structured_data_graph:
   "@context": "https://schema.org"
   "@graph":
-    - "@type": "NewsArticle"
-      "@id": "https://gtcode.com/geopolitics/radius-of-order-policy-analysis/#newsarticle"
+    - "@type": "Article"
+      "@id": "https://gtcode.com/policy-essays/radius-of-order-policy-analysis/#article"
       mainEntityOfPage:
         "@type": "WebPage"
-        "@id": "https://gtcode.com/geopolitics/radius-of-order-policy-analysis/"
+        "@id": "https://gtcode.com/policy-essays/radius-of-order-policy-analysis/"
       headline: "The Radius of Order"
       alternativeHeadline: "A Five-Zone American Justice Thought Experiment"
-      description: "A sourced investigation into a five-zone urban policy thought experiment that concentrates legal protection at the city core, pushes punishment outward, and tests the political consequences."
-      url: "https://gtcode.com/geopolitics/radius-of-order-policy-analysis/"
+      description: "A policy thought experiment using sourced analogues to examine a five-zone American justice model, urban protection, punishment, and exclusion."
+      url: "https://gtcode.com/policy-essays/radius-of-order-policy-analysis/"
       image: "https://gtcode.com/img/ou-radius-of-order-og-1200x630.jpg"
       datePublished: "2026-03-24T00:00:00Z"
-      dateModified: "2026-10-07T00:00:00-10:00"
+      dateModified: "2026-10-08T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -134,12 +135,13 @@ structured_data_graph:
           url: "https://gtcode.com/apple-touch-icon.png"
           width: 180
           height: 180
-      articleSection: "Geopolitics"
+      articleSection: "Policy Essays"
+      genre: "Policy thought experiment"
       isPartOf:
         - "@type": "CollectionPage"
-          "@id": "https://gtcode.com/geopolitics/#collection"
-          name: "Geopolitics"
-          url: "https://gtcode.com/geopolitics/"
+          "@id": "https://gtcode.com/policy-essays/#collection"
+          name: "Policy Essays"
+          url: "https://gtcode.com/policy-essays/"
       about:
         - "@type": "Thing"
           name: "Urban policy"
@@ -152,11 +154,9 @@ structured_data_graph:
         - "@type": "Place"
           name: "United States"
 ---
-**Separate policy analysis:** This article is a policy thought experiment. It is unrelated to the Hawaii accountability case files, the author chronology, Bing visibility, or access-and-safeguards portfolio.
+*A policy thought experiment using sourced analogues and explicit failure modes.*
 
 Big idea. No tweaking one sentencing guideline. No stapling on another useless pilot program. Redraw the whole country as five rings.
-
-May 13 editorial note: this article is a policy thought experiment and system-design analysis using sourced analogues and explicit failure modes. It is separate from the Wilson Loo, media, federal, platform, and author-chronology investigations, and should not be used as evidence for factual allegations about any person or institution.
 
 At the center: the Platinum Standard city, dense with services, surveillance, rapid response, and full legal protection. Around it: an inner ring of humane, committee-governed detention. Then an exurban ring of managed friction. Then a rural belt of diffuse autonomy. At the edge: containment estates, robotically managed, isolated, and legally exceptional.
 

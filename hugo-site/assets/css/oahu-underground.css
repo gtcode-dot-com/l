@@ -1528,6 +1528,12 @@ body.nav-open .site-nav-overlay {
   margin-top: clamp(1.75rem, 3vw, 2.5rem);
 }
 
+/* Group spacing belongs to the parent, not the nested grid or banner. */
+.ou-portfolio-groups > .ou-cards,
+.ou-portfolio-groups > .ou-hp-series-banner {
+  margin-block: 0;
+}
+
 .ou-portfolio-group {
   border-top: 1px solid var(--ou-border);
   padding-top: clamp(1.75rem, 3vw, 2.5rem);
@@ -2267,6 +2273,16 @@ body.nav-open .site-nav-overlay {
     linear-gradient(to bottom, var(--ou-bg) 0%, transparent 12%),
     linear-gradient(to left, var(--ou-bg) 0%, transparent 15%),
     linear-gradient(to right, var(--ou-bg) 0%, transparent 15%);
+}
+
+.ou-article-hero-caption {
+  position: relative;
+  z-index: 1;
+  background: var(--ou-bg);
+  padding: 0.75rem 0;
+  color: var(--ou-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
 }
 
 /* ---- Article Content ---- */

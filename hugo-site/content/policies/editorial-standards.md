@@ -2,11 +2,11 @@
 title: "Editorial Standards"
 description: "How Oahu Underground by GTCode handles sourcing, verification, and publication updates."
 date: 2026-02-14
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 type: "policies"
 # Contributor workflow: docs/investigations-editorial-workflow.md
 outputs: ["HTML", "Markdown"]
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 ---
 
 # Editorial Standards
@@ -45,13 +45,14 @@ Source notes in the investigations refer to this rule and identify the facts and
 | Hartmann threat, Stanley’s response, and the departure concept she relayed | [The Threat Report](/hawaii-courts/the-threat-report/) |
 | Kwak’s testimony, the booth diagram, and Kanemoto’s mock-pistol closing | [The Hypothetical Gun](/hawaii-courts/the-hypothetical-gun/) |
 | Retained counsel, chambers, and plea pressure | [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) |
-| December 2022 hearing and later reporting | [Wilson Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) |
+| December 2, 2022 signal, denial, and interrupted record statement | [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) |
+| Wider December 2022 hearing and later reporting | [Wilson Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) |
 
-Other articles summarize only what their question requires and link to the primary account. A repeated account is not additional corroboration. [The Unanswered Sequence](/hawaii-courts/the-unanswered-sequence/) holds the open theories connecting events; [Mechanisms of Review Failure](/hawaii-courts/mechanisms-of-review-failure/) is a general reference, not evidence that a mechanism operated in a particular case. Other research portfolios remain separate without a direct evidentiary link.
+Other articles summarize only what their question requires and link to the primary account. A repeated account is not additional corroboration. [The Information Trail](/hawaii-courts/information-trail-2015-2022/) holds the open theories connecting events; [Mechanisms of Review Failure](/hawaii-courts/mechanisms-of-review-failure/) is a general reference, not evidence that a mechanism operated in a particular case. Other research portfolios remain separate without a direct evidentiary link.
 
 Direct phrasing identifies the source as firsthand evidence; it does not convert firsthand testimony into independent corroboration or an adjudicated finding.
 
-**Updated:** October 7, 2026.
+**Updated:** October 8, 2026.
 
 ## Source Archive Policy
 

@@ -6,7 +6,7 @@ title: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻ
 subtitle: "Hawaii's Justice System Under Scrutiny"
 description: "Ekewaka Lono's firsthand account of judicial signaling, interruption while presenting stalking and vehicle attacks, and HPD responses, with sealed-record evidence and oversight failures involving the Hawaii Commission on Judicial Conduct."
 date: 2025-06-12
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -36,7 +36,7 @@ card_summary: "A nonverbal “no” signal, interruption of a stalking and vehic
 # Open Graph
 og_title: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
 og_description: "A nonverbal “no” signal, interruption of a stalking and vehicle-attack case, HPD responses, sealed audio, and Commission on Judicial Conduct oversight failure."
-og_image: "/img/ou-judicial-probe-og-1200x630.jpg"
+og_image: "/img/ou-review-gap-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "Broken scales, an hourglass and a revolving door depict the 90-day post-service jurisdiction limit that foreclosed renewed review."
@@ -57,7 +57,7 @@ article_tags:
 twitter_card: "summary_large_image"
 twitter_title: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
 twitter_description: "A nonverbal “no” signal, interruption of a stalking and vehicle-attack case, HPD responses, sealed audio, and Commission on Judicial Conduct oversight failure."
-twitter_image: "/img/ou-judicial-probe-og-1200x630.jpg"
+twitter_image: "/img/ou-review-gap-og-1200x630.jpg"
 twitter_image_alt: "Investigative report cover art highlighting the Wilson Loo case"
 
 # Agentic Comment
@@ -87,7 +87,7 @@ structured_data_graph:
       headline: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
       alternativeHeadline: "Hawaii's Justice System Under Scrutiny"
       description: "Ekewaka Lono's firsthand account of judicial signaling, interruption while presenting stalking and vehicle attacks, and HPD responses, with sealed-record evidence and oversight failures involving the Hawaii Commission on Judicial Conduct."
-      image: "https://gtcode.com/img/ou-judicial-probe-og-1200x630.jpg"
+      image: "https://gtcode.com/img/ou-review-gap-og-1200x630.jpg"
       datePublished: "2025-06-12T00:00:00Z"
       dateModified: "2026-10-08T00:00:00-10:00"
       author:
@@ -106,44 +106,20 @@ structured_data_graph:
       articleSection: "Hawaii Courts"
       keywords: "Wilson Loo, Judicial Signaling, Hawaii, Judicial Accountability, Commission on Judicial Conduct"
 ---
-At the December 2, 2022 First Circuit hearing, Judge Wilson M.N. Loo signaled “no” to a sworn witness before the answer and then interrupted my immediate attempt to put that visual act into an audio-only record. The allegation is judicial interference with testimony and record preservation. The sealed audio can test the question, answer, attempted record statement, cutoff, and sealing sequence; the visual signal requires eyewitness review.
+<span id="evidence-classification"></span>
+<span id="legal-notice"></span>
 
-### Evidence Classification
+This overview follows the reports before the December 2, 2022 hearing, the court’s handling of my evidence, and the oversight decisions afterward. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) holds my account of Loo’s signal, the witness’s denial, and the interruption of my attempted record statement. The sealed audio can test the spoken sequence; the visual signal requires eyewitness evidence.
 
-| Category | Status |
-| --- | --- |
-| Firsthand report | My observation of the signal, interruption while explaining the stalking and vehicle attacks, HPD desk-sergeant exchange, and detective call about money I was never paid |
-| Audio-confirmable | Question, answer, cutoff, sealing sequence, and what I was allowed to explain |
-| Sealed-record-dependent | Audio and exhibits |
-| Legal inference | Judicial-conduct and federal review analysis |
-| Not claimed | Coordinated criminal conspiracy absent further evidence |
-
-### Legal Notice
-
-This report represents a good faith effort to document and disclose matters of serious public concern.
-All factual assertions are grounded in a reasonable basis: firsthand observation, authenticated
-documentation, or clearly labeled inference. No criminal or disciplinary finding is represented unless specifically identified. This disclosure follows multiple attempts to address these
-issues through official channels.
-
-This report distinguishes public records, sealed-record-dependent claims, firsthand observations, and inference. The visual conduct in the December 2, 2022 proceeding is my firsthand observation. Public corroboration can be sought through eyewitness testimony and authorized review of the sealed file. The weight of testimony, including a denial by an involved participant, depends on specificity, opportunity to observe and line of sight, consistency with the audio and court file, and independent support. The sealed audio cannot prove the visual signal, but it can confirm or refute the timing, answer, attempted record statement, interruption, and sealing sequence described here. The case begins with witness testimony, line-of-sight reconstruction, and sealed-file review.
-
-**Records-first note, May 15, 2026:** This article is the Wilson Loo overview. The court process is the subject: question asked, witness answered, I attempted to make a record, judge interrupted, record sealed, and the oversight process later closed. Surrounding incidents are included as context, reported events, or investigative leads. Coordination among HPD, DOJ, private citizens, media institutions, platforms, or federal actors would require separate evidence.
-
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Unanswered Sequence: Frame-Up, Hush, and the Open Questions from 2015–2022]({{< relref "hawaii-courts/the-unanswered-sequence/index.md" >}}).
+> **Related investigation:** [The Information Trail]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}) examines what information may have passed between participants in the 2015–2022 events.
 
 ## The Core Report: Judicial Signaling in an Audio-Only Record
 
 ### What Happened in Judge Loo's Courtroom
 
-The injunction hearing was held in person and recorded only on audio. Judge Wilson Loo made an unambiguous nonverbal "no" signal—a head movement and facial expression—immediately before witness [Anonymous] answered a question about providing LSD to me. Other people present could confirm or contradict what I saw; authorized review of the audio and court file can test the surrounding sequence. What others perceived, Loo’s motive, and any coordination remain separate questions.
+At the December 2, 2022 hearing, I asked the sworn witness whether he had furnished me LSD. Before he answered, I saw Loo signal “no” with his head. The witness denied it. I began, “Let the record show that the judge just—”, and Loo cut me off. The audio-only recording cannot show the gesture; the sealed audio can test the spoken sequence. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) preserves the detailed account and quoted interruption.
 
-When I attempted to object, stating "Let the record show that the judge just...", Judge Loo cut me off, shouting "Nah ah ah enough out of you!!" His interruption stopped me from describing the signal in the audio record.
-
-**Legal Implications:** Loo made the “no” signal immediately before the sworn witness answered no, then cut off my attempt to put the signal on the record. The audio can establish the question, denial, and interruption; eyewitnesses can test the visual signal. Those acts warrant investigation under 18 U.S.C. § 242 for a willful deprivation of federal rights under color of law.[^1] The analysis below examines the witness’s answer under Hawaiʻi perjury law and the knowledge and intent investigators would need to establish.
-
-The audio could not capture Loo’s signal. He stopped me from describing it aloud, and the file was later sealed. Review now requires the complete file and testimony from the people who were there.
-
-**Limits:** This overview combines my firsthand account with public records. Motive, coordination, third-party direction, the cause of platform behavior, and criminal conduct each require separate evidence.
+The alleged direction of sworn testimony and interruption of record preservation warrant investigation under 18 U.S.C. § 242 for a willful deprivation of federal rights under color of law.[^1] The analysis below examines the witness’s answer under Hawaiʻi perjury law and the knowledge and intent investigators would need to establish.
 
 ## Events Before the Hearing {#reported-pre-hearing-events}
 
@@ -175,8 +151,6 @@ This chronology presents firsthand events and institutional outcomes. Intake not
 The central alleged false statement in this case concerns the defendant's testimony regarding drug distribution. When
 directly questioned under oath about providing LSD, the defendant denied doing so despite text message
 evidence already in the court file: a text I sent him saying, "I took the acid".
-
-The predicate for the LSD question was courtroom material: testimony, prior reporting, and the sealed text-message exhibit. Platform, search, advertising, or social-media access to sealed court information is outside this article's factual claim.
 
 Hawaiʻi’s [perjury statute, HRS §710-1060](https://data.capitol.hawaii.gov/hrscurrent/Vol14_Ch0701-0853/HRS0710/HRS_0710-1060.htm), requires a false statement in an official proceeding under an oath required or authorized by law, which the speaker does not believe to be true. A conviction also requires the court to find the statement materially false. The oath, actual provision of LSD, denial, witness’s knowledge, and materiality need to be examined through testimony and the complete court file. I reported the denial as perjury; no perjury conviction is reported here.
 
@@ -275,7 +249,7 @@ Public alumni records from Rutgers Law School establish that Wilson M.N. Loo gra
 
 I also attended Rutgers University before moving to Hawaiʻi. In the November 2015 encounter, a person introduced as a New Jersey State Police organized-crime task force investigator invoked my North Jersey childhood connections.
 
-Loo’s earlier work as an organized-crime prosecutor raises questions about whether he maintained interstate law-enforcement contacts or received information about me through them. His biography does not establish that he prosecuted cases involving New Jersey figures or knew about the 2015 investigator encounter. The Unanswered Sequence examines those questions.
+Loo’s earlier work as an organized-crime prosecutor raises questions about whether he maintained interstate law-enforcement contacts or received information about me through them. His biography does not establish that he prosecuted cases involving New Jersey figures or knew about the 2015 investigator encounter. The Information Trail examines those questions.
 
 ### The Oversight Sequence {#institutional-non-response}
 

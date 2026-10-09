@@ -7,10 +7,10 @@ seo_title: "Federal Triage: The Wilson Loo Referral"
 subtitle: "Referral chronology, federal legal requirements, sealed-record access, and unanswered agency review questions"
 description: "The Wilson Loo referral chronology, §242 and §1513(e) requirements, sealed evidence, and records needed to establish what DOJ and FBI reviewed."
 date: 2026-02-28
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 published_display: "February 28, 2026"
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
@@ -52,7 +52,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-28T00:00:00Z"
-article_modified_time: "2026-10-07T00:00:00-10:00"
+article_modified_time: "2026-10-08T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Wilson M.N. Loo"
@@ -102,7 +102,7 @@ structured_data_graph:
       url: "https://gtcode.com/hawaii-courts/federal-triage-governance-proximity/"
       image: "https://gtcode.com/img/ou-investigations-index-og-1200x630.jpg"
       datePublished: "2026-02-28T00:00:00Z"
-      dateModified: "2026-10-07T00:00:00-10:00"
+      dateModified: "2026-10-08T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -150,7 +150,7 @@ structured_data_graph:
 ---
 I filed a referral with the DOJ Public Integrity Section on July 12, 2025. DOJ acknowledged receipt. No further communication or investigative contact about that referral has been communicated to me.[^receipt] Receipt does not establish whether the matter was assigned, investigated, transferred, or declined.
 
-The December 2, 2022 hearing sequence is documented in the [Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/). Loo signaled “no” to the witness before the answer and cut off my attempt to describe the signal aloud. The sealed audio can test the question, answer, attempted record statement, and interruption. It cannot independently establish a visual signal.
+[The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) holds the underlying courtroom account. This file follows the federal referral and the records needed to establish its handling.
 
 ## Referral Chronology
 

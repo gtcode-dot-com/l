@@ -7,10 +7,10 @@ seo_title: "CCCH Form 990: FY2024 Contribution Spike and Grant Disclosures"
 subtitle: "IRS Form 990 filings show a one-year contribution spike and first-time grants; this report documents the filings and related public-record context."
 description: "IRS Form 990 filings show a FY2024 contribution spike and first-time grants at the Chinese Chamber of Commerce of Hawaii; this report maps disclosure thresholds and public-record context."
 date: 2026-03-04
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 published_display: "March 4, 2026"
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 type: "investigation"
 portfolio_key: "geopolitics"
 portfolio_label: "Geopolitics"
@@ -59,7 +59,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-03-04T00:00:00Z"
-article_modified_time: "2026-10-07T00:00:00-10:00"
+article_modified_time: "2026-10-08T00:00:00-10:00"
 article_section: "Geopolitics"
 article_tags:
   - "Chinese Chamber of Commerce of Hawaii"
@@ -130,7 +130,7 @@ structured_data_graph:
       url: "https://gtcode.com/geopolitics/ccch-financial-disclosure-ledger/"
       image: "https://gtcode.com/img/ou-the-ledger-og-1200x630.jpg"
       datePublished: "2026-03-04T00:00:00Z"
-      dateModified: "2026-10-07T00:00:00-10:00"
+      dateModified: "2026-10-08T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -172,13 +172,9 @@ structured_data_graph:
           name: "Fujian Provincial Government"
       keywords: "Chinese Chamber of Commerce of Hawaii, IRS Form 990, Schedule F, Schedule I, Schedule B, Guo Ningning, Fujian Province, CAIFC, compliance analysis, Hawaii"
 ---
-**Pacific OSINT & Security Analysis:** This article is a public-record compliance and disclosure review. It is not evidence for the Wilson Loo allegations, HPD’s handling of the author’s reports, the Hartmann threat, or any claim in the author's chronology.
-
-*By Ekewaka Lono | Oahu Underground*
-
 *Part II of [The Architecture of Access](/geopolitics/architecture-of-access-luke-network/), following [The Bridges](/geopolitics/prc-access-mapping-hawaii/). This article examines CCCH’s financial filings and disclosure requirements.*
 
-*Access mapping asks what relationships exist and what safeguards are visible. It does not convert relationship, donor, board, or school overlap into proof of control, misconduct, or coordination.*
+
 
 ## Series Navigation
 
@@ -191,11 +187,7 @@ structured_data_graph:
 
 ## Executive Summary
 
-> **What this is**: a public‑record compliance review of CCCH Form 990 filings and documented public events.
-> **Scope**: this is access-pattern mapping. It alleges neither foreign control nor illegal conduct, and it makes no claim about donor identities. Safeguards, donor explanations, and internal controls may exist outside the public record.
-> **Not legal advice.**
-
-**May 13 editorial standard**: This article places financial filings and public events beside each other to identify disclosure questions. Hidden direction, coordination, or donor identity remain unresolved unless records beyond the public filings establish them. The ordinary explanations for the filing pattern include domestic fundraising, one-time event revenue, charitable pass-through activity, accounting classification, and ordinary nonprofit recordkeeping. The unresolved issue is disclosure sufficiency and what records would clarify the spike.
+This review compares CCCH’s Form 990 filings with documented public events to identify disclosure questions. Donor identities, internal controls, and any foreign direction remain unresolved in the public record. Domestic fundraising, one-time event revenue, charitable pass-through activity, and accounting classification could explain the filing pattern.
 
 **Key Judgments**
 
