@@ -11,7 +11,7 @@ date: 2026-05-14T00:00:00Z
 lastmod: 2026-10-07
 author: "Ekewaka Lono"
 type: ou-article
-draft: false
+draft: true
 meta_description: "An editorial essay based on Ekewaka Lono’s childhood recollections, examining school responses, peer violence, and the records needed for institutional accountability."
 meta_keywords:
   - institutional betrayal

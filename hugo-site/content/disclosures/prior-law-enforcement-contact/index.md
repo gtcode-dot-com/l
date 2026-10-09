@@ -270,7 +270,6 @@ The remaining record questions include:
 
 This chronology shows why the questions exist and identifies the records-first investigations that should test them.
 
-<p class="personal-essays-entry"><a href="/personal-essays/">personal essays</a></p>
 
 ## Sources and Notes
 

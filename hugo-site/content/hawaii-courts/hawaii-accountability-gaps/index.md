@@ -121,7 +121,7 @@ My question across these events is which account entered the official record and
 
 <span id="early-reported-event-and-record-limits"></span>
 
-The [childhood accounts](/personal-essays/the-shift-they-taught-him/) and [Before the Tax Office](/disclosures/before-the-tax-office/) preserve the earlier history. They provide context for my later encounters; they do not establish what a particular official knew.
+[Before the Tax Office](/disclosures/before-the-tax-office/) preserves the earlier history. It provides context for my later encounters; it does not establish what a particular official knew.
 
 ## Prosecution and Counsel {#record-surface-2-prosecution-and-intake-records}
 
