@@ -8,14 +8,14 @@ seo_title: "Open Letter to Bosko Petricevic on the Wilson Loo Sealed Record"
 subtitle: "You Were in the Room"
 description: "A public letter asking Bosko Petricevic what he perceived, understood, and did, including any report under Hawaii Rule of Professional Conduct 8.3(b)."
 date: 2026-05-06
-lastmod: "2026-10-08"
+lastmod: "2026-10-09"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 published_display: "May 6, 2026"
-modified_display: "October 8, 2026"
+modified_display: "October 9, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/"
@@ -51,7 +51,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-06T00:00:00Z"
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-09T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Bosko Petricevic"
@@ -99,7 +99,7 @@ structured_data_graph:
       url: "https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/"
       image: "https://gtcode.com/img/ou-open-letter-bosko-petricevic-og-2848x1504.png"
       datePublished: "2026-05-06T00:00:00Z"
-      dateModified: "2026-10-08T00:00:00-10:00"
+      dateModified: "2026-10-09T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -177,6 +177,10 @@ A reporting-duty finding requires evidence of qualifying judicial misconduct, yo
 ## What Would Resolve This
 
 The resolution path is procedural: review the sealed audio; review the court-file exhibit; reconstruct the courtroom layout and line of sight; ask the witness what he saw; ask Mr. Petricevic what he saw, understood, and did; and determine whether a report satisfying Rule 8.3(b) was made to an appropriate authority. Evidence establishing an applicable Rule 1.6 barrier, a report satisfying Rule 8.3(b), or materially contrary eyewitness facts could weaken or defeat the reporting-duty allegation. The absence of a publicly available ethics analysis does not establish a violation. All testimony should be evaluated for specificity, opportunity to observe and line of sight, consistency with the audio and court file, and independent support. A finding of a reporting violation would require evidence establishing qualifying judicial misconduct, your actual knowledge, a reporting obligation consistent with Rule 8.3(c), and failure to make the required report.
+
+## Response and Corrections
+
+Mr. Petricevic and anyone with relevant records may respond through the site’s [Corrections Policy](/policies/corrections-policy/).
 
 ## Sources and Notes
 

@@ -4472,6 +4472,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:37.832322+00:00"
   },
+  "news/ai-security/anthropic-launches-free-ai-vulnerability-scanner-for-open-source-projects": {
+    "slug": "news/ai-security/anthropic-launches-free-ai-vulnerability-scanner-for-open-source-projects",
+    "meta_description": "Ravie Lakshmanan Oct 09, 2026 Vulnerability / Artificial Intelligence Anthropic on Thursday unveiled OSS Scanner as an opt-in vulnerability...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects\",\n  \"description\": \"Ravie Lakshmanan Oct 09, 2026 Vulnerability / Artificial Intelligence Anthropic on Thursday unveiled OSS Scanner as an opt-in vulnerability...\",\n  \"datePublished\": \"2026-10-09T22:35:10.476902+00:00\",\n  \"dateModified\": \"2026-10-09T22:35:10.476902+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/anthropic-launches-free-ai.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/anthropic-launches-free-ai.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T22:35:50.072100+00:00"
+  },
   "news/ai-security/anthropic-mcp-design-vulnerability-enables-rce-threatening-ai-supply-chain": {
     "slug": "news/ai-security/anthropic-mcp-design-vulnerability-enables-rce-threatening-ai-supply-chain",
     "meta_description": "Ravie Lakshmanan Apr 20, 2026 Artificial Intelligence / Vulnerability Cybersecurity researchers have discovered a critical \"by design\" weakness in...",
@@ -4828,6 +4835,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Attackers Don't Just Send Phishing Emails. They Weaponize Your SOC's Workload\",\n  \"description\": \"The most dangerous phishing campaigns aren’t just designed to fool employees. Many are designed to exhaust the analysts investigating them.\",\n  \"datePublished\": \"2026-03-12T22:15:15.934333+00:00\",\n  \"dateModified\": \"2026-03-12T22:15:15.934333+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/03/attackers-dont-just-send-phishing.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/03/attackers-dont-just-send-phishing.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-12T22:16:19.401643+00:00"
+  },
+  "news/ai-security/attackers-exploit-ahsaycbs-flaws-to-deploy-xmrig-miners-disguised-as-microsoft-edge": {
+    "slug": "news/ai-security/attackers-exploit-ahsaycbs-flaws-to-deploy-xmrig-miners-disguised-as-microsoft-edge",
+    "meta_description": "Ravie Lakshmanan Oct 09, 2026 Vulnerability / Cryptojacking Threat actors have been observed exploiting two recently disclosed flaws in the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge\",\n  \"description\": \"Ravie Lakshmanan Oct 09, 2026 Vulnerability / Cryptojacking Threat actors have been observed exploiting two recently disclosed flaws in the...\",\n  \"datePublished\": \"2026-10-09T22:35:10.761245+00:00\",\n  \"dateModified\": \"2026-10-09T22:35:10.761245+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T22:35:48.991797+00:00"
   },
   "news/ai-security/attackers-exploit-issabel-framework-flaw-enabling-unauthenticated-os-command-execution": {
     "slug": "news/ai-security/attackers-exploit-issabel-framework-flaw-enabling-unauthenticated-os-command-execution",
@@ -7258,6 +7272,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:47.400899+00:00"
   },
+  "news/ai-security/flax-typhoon-exploits-five-flaws-as-cisa-sets-october-11-deadline-for-federal-agencies": {
+    "slug": "news/ai-security/flax-typhoon-exploits-five-flaws-as-cisa-sets-october-11-deadline-for-federal-agencies",
+    "meta_description": "Ravie Lakshmanan Oct 09, 2026 Vulnerability / Cyber Espionage The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies\",\n  \"description\": \"Ravie Lakshmanan Oct 09, 2026 Vulnerability / Cyber Espionage The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added...\",\n  \"datePublished\": \"2026-10-09T22:35:11.054084+00:00\",\n  \"dateModified\": \"2026-10-09T22:35:11.054084+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T22:35:49.709847+00:00"
+  },
   "news/ai-security/flock-exposes-its-ai-enabled-surveillance-cameras": {
     "slug": "news/ai-security/flock-exposes-its-ai-enabled-surveillance-cameras",
     "meta_description": "404 Media has the story : > Unlike many of Flock’s cameras, which are designed to capture license plates as people drive by, Flock’s Condor...",
@@ -7474,6 +7495,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: How Squid Survived Extinction Events\",\n  \"description\": \"Science news : > Scientists have finally cracked a long-standing mystery about squid and cuttlefish evolution by analyzing newly sequenced genomes...\",\n  \"datePublished\": \"2026-04-24T22:15:13.062718+00:00\",\n  \"dateModified\": \"2026-04-24T22:15:13.062718+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-how-squid-survived-extinction-events.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-how-squid-survived-extinction-events.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-24T22:16:04.725316+00:00"
+  },
+  "news/ai-security/friday-squid-blogging-i-caught-a-squid": {
+    "slug": "news/ai-security/friday-squid-blogging-i-caught-a-squid",
+    "meta_description": "On Wednesday I spent a day fishing, on a small boat out of Gloucester, MA. We caught many cod (none of which we could keep), and a bunch of hake...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: I Caught a Squid\",\n  \"description\": \"On Wednesday I spent a day fishing, on a small boat out of Gloucester, MA. We caught many cod (none of which we could keep), and a bunch of hake...\",\n  \"datePublished\": \"2026-10-09T22:35:11.344783+00:00\",\n  \"dateModified\": \"2026-10-09T22:35:11.344783+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-i-caught-a-squid.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-i-caught-a-squid.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T22:35:49.348442+00:00"
   },
   "news/ai-security/friday-squid-blogging-increased-squid-population-in-the-falklands": {
     "slug": "news/ai-security/friday-squid-blogging-increased-squid-population-in-the-falklands",
@@ -12157,6 +12185,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates\",\n  \"description\": \"Ravie Lakshmanan Oct 01, 2026 Artificial Intelligence / Vulnerability OpenAI on Wednesday said it identified and disrupted a coordinated...\",\n  \"datePublished\": \"2026-10-07T01:55:26.297937+00:00\",\n  \"dateModified\": \"2026-10-07T01:55:26.297937+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T01:56:37.574180+00:00"
+  },
+  "news/ai-security/openai-fires-3-safety-researchers-in-dispute-over-ai-risks": {
+    "slug": "news/ai-security/openai-fires-3-safety-researchers-in-dispute-over-ai-risks",
+    "meta_description": "The ChatGPT maker said the researchers “violated clear policies on handling sensitive information.” By Associated Press | October 9, 2026 (5:07 PM...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks\",\n  \"description\": \"The ChatGPT maker said the researchers “violated clear policies on handling sensitive information.” By Associated Press | October 9, 2026 (5:07 PM...\",\n  \"datePublished\": \"2026-10-09T22:35:11.698941+00:00\",\n  \"dateModified\": \"2026-10-09T22:35:11.698941+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks\"\n  },\n  \"url\": \"https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T22:35:48.636680+00:00"
   },
   "news/ai-security/openai-launches-chatgpt-health-with-isolated-encrypted-health-data-controls": {
     "slug": "news/ai-security/openai-launches-chatgpt-health-with-isolated-encrypted-health-data-controls",
