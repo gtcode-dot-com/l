@@ -17499,6 +17499,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-27T00:16:21.411559+00:00"
   },
+  "news/comp-journalism/fox-news-attacks-the-media-roughly-every-15-minutes-our-study-finds-cnn-every-140-minutes": {
+    "slug": "news/comp-journalism/fox-news-attacks-the-media-roughly-every-15-minutes-our-study-finds-cnn-every-140-minutes",
+    "meta_description": "In 2025, trust in journalism reached a record low . According to Gallup, only 8% of Republicans expressed trust in the news media, compared with...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Fox News attacks the media roughly every 15 minutes, our study finds. (CNN? Every 140 minutes.)\",\n  \"description\": \"In 2025, trust in journalism reached a record low . According to Gallup, only 8% of Republicans expressed trust in the news media, compared with...\",\n  \"datePublished\": \"2026-10-09T01:35:42.030025+00:00\",\n  \"dateModified\": \"2026-10-09T01:35:42.030025+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/fox-news-attacks-the-media-roughly-every-15-minutes-our-study-finds-cnn-every-140-minutes\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/fox-news-attacks-the-media-roughly-every-15-minutes-our-study-finds-cnn-every-140-minutes\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T01:35:51.412975+00:00"
+  },
   "news/comp-journalism/french-political-title-contexte-hits-first-profit-on-revenue-of-eur12-9m": {
     "slug": "news/comp-journalism/french-political-title-contexte-hits-first-profit-on-revenue-of-eur12-9m",
     "meta_description": "Contexte homepage, EU edition on 15 May 2026 After a year of slowing down investment and expansion into the EU market, French policy title...",
@@ -20760,6 +20767,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Welcome to Dubai: Kinahan Cartel’s Visas Revealed\",\n  \"description\": \"This article is the result of a collaboration with The Sunday Times. You can find their corresponding piece here . The Kinahan cartel, led by...\",\n  \"datePublished\": \"2026-09-17T06:12:02.765176+00:00\",\n  \"dateModified\": \"2026-09-17T06:12:02.765176+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/news/2026/08/01/welcome-to-dubai-kinahan-cartels-visas-revealed\"\n  },\n  \"url\": \"https://www.bellingcat.com/news/2026/08/01/welcome-to-dubai-kinahan-cartels-visas-revealed\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-17T06:12:18.301384+00:00"
+  },
+  "news/comp-journalism/were-in-their-shit-theyre-not-in-ours-usa-today-co-execs-defend-palantir-deal": {
+    "slug": "news/comp-journalism/were-in-their-shit-theyre-not-in-ours-usa-today-co-execs-defend-palantir-deal",
+    "meta_description": "USA Today Co. executives are revealing new details about a controversial deal with Palantir . In a joint interview with Fast Company’s Alex...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"“We’re in their shit. They’re not in ours”: USA Today Co. execs defend Palantir deal\",\n  \"description\": \"USA Today Co. executives are revealing new details about a controversial deal with Palantir . In a joint interview with Fast Company’s Alex...\",\n  \"datePublished\": \"2026-10-09T01:35:42.431100+00:00\",\n  \"dateModified\": \"2026-10-09T01:35:42.431100+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/were-in-their-shit-theyre-not-in-ours-usa-today-co-execs-defend-palantir-deal\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/were-in-their-shit-theyre-not-in-ours-usa-today-co-execs-defend-palantir-deal\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T01:35:51.810689+00:00"
   },
   "news/comp-journalism/what-does-peer-support-in-journalism-look-like-insights-from-u-s-and-international-experts": {
     "slug": "news/comp-journalism/what-does-peer-support-in-journalism-look-like-insights-from-u-s-and-international-experts",
