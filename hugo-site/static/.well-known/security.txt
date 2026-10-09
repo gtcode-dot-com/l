@@ -1,0 +1,4 @@
+Contact: mailto:tips@gtcode.com
+Preferred-Languages: en
+Canonical: https://gtcode.com/.well-known/security.txt
+Policy: https://gtcode.com/policies/editorial-standards/

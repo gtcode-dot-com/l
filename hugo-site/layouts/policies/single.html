@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="policy-container">
+  <header class="policy-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.version }}
+    <div class="policy-version">Version {{ . }}</div>
+    {{ end }}
+    <div class="policy-meta">
+      <span>Last Updated: <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Params.modified_display | default (.Lastmod.Format "January 2, 2006") }}</time></span>
+    </div>
+  </header>
+
+  <div class="policy-content content">
+    {{ $content := printf "%s" .Content }}
+    {{ $content = replaceRE "(?i)<h1([^>]*)>" "<h2$1>" $content }}
+    {{ $content = replaceRE "(?i)</h1>" "</h2>" $content }}
+    {{ $content | safeHTML }}
+  </div>
+
+  {{ partial "citation-block.html" . }}
+
+  {{ with .Params.related_policies }}
+  <aside class="policy-related">
+    <h2>Related Policies</h2>
+    <ul>
+      {{ range . }}
+      <li><a href="{{ .url }}">{{ .title }}</a></li>
+      {{ end }}
+    </ul>
+  </aside>
+  {{ end }}
+</article>
+{{ end }}

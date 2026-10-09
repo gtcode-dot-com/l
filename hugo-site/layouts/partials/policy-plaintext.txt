@@ -1,0 +1,10 @@
+{{- $path := .path -}}
+{{- $page := site.GetPage $path -}}
+{{- if not $page -}}
+{{ printf "policy page not found: %s" $path }}
+{{- else -}}
+{{- /* Render shortcodes but keep markdown structure, then emit unescaped text output. */ -}}
+{{- $content := $page.RenderShortcodes | htmlUnescape -}}
+{{- $content = replaceRE "^\\s+" "" $content -}}
+{{- $content | safeHTML -}}
+{{- end -}}

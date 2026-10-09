@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640px" height="525px" viewBox="0 0 640 525" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" font-size="14px" fill="#2c3e50">
+    <style>
+        .process-box { fill: #ecf0f1; stroke: #95a5a6; stroke-width: 1.5; }
+        .data-object { fill: #e8f6f3; stroke: #73c6b6; stroke-width: 1.5; }
+        .line { stroke: #34495e; stroke-width: 1.5; fill: none; }
+        .label { font-size: 12px; fill: #34495e; }
+        .title { font-weight: bold; }
+    </style>
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+        </marker>
+    </defs>
+
+    <rect x="50" y="20" width="300" height="65" rx="5" class="process-box"/>
+    <text x="200" y="45" text-anchor="middle" class="title">Chiral Pair</text>
+    <text x="200" y="65" text-anchor="middle" class="label">(Narrative A, B)</text>
+    <path d="M 200 85 L 200 110" class="line" marker-end="url(#arrowhead)"/>
+
+    <rect x="50" y="110" width="300" height="65" rx="5" class="process-box"/>
+    <text x="200" y="135" text-anchor="middle" class="title">DSPy SynthesisModule</text>
+    <text x="200" y="155" text-anchor="middle" class="label">(Needs optimizing)</text>
+    <path d="M 200 175 L 200 200" class="line" marker-end="url(#arrowhead)"/>
+
+    <rect x="50" y="200" width="300" height="65" rx="5" class="process-box"/>
+    <text x="200" y="225" text-anchor="middle" class="title">Build Candidate SNO_C</text>
+    <text x="200" y="245" text-anchor="middle" class="label">(Hypothesis + Combined Logic)</text>
+    <path d="M 200 265 L 200 290" class="line" marker-end="url(#arrowhead)"/>
+
+    <rect x="50" y="290" width="300" height="65" rx="5" class="process-box"/>
+    <text x="200" y="315" text-anchor="middle" class="title">CNS 2.0 Critic Pipeline</text>
+    <text x="200" y="335" text-anchor="middle" class="label">(Grounding, Logic, Novelty)</text>
+    <path d="M 200 355 L 200 380" class="line" marker-end="url(#arrowhead)"/>
+
+    <text x="200" y="400" text-anchor="middle" class="label">(This score is the feedback signal)</text>
+    <path d="M 200 415 L 200 440" class="line" marker-end="url(#arrowhead)"/>
+
+    <rect x="50" y="440" width="300" height="65" rx="5" class="process-box"/>
+    <text x="200" y="465" text-anchor="middle" class="title">DSPy Optimizer</text>
+    <text x="200" y="485" text-anchor="middle" class="label">(e.g., BootstrapFewShot)</text>
+
+    <path d="M 350 142.5 L 400 142.5" class="line" marker-end="url(#arrowhead)"/>
+    <text x="405" y="135" text-anchor="start" class="label">(generates)</text>
+    <rect x="405" y="145" width="200" height="40" rx="5" class="data-object"/>
+    <text x="505" y="170" text-anchor="middle" class="title">[ Candidate Hypothesis ]</text>
+
+    <path d="M 350 322.5 L 400 322.5" class="line" marker-end="url(#arrowhead)"/>
+    <text x="405" y="315" text-anchor="start" class="label">(evaluates)</text>
+    <rect x="405" y="325" width="220" height="40" rx="5" class="data-object"/>
+    <text x="515" y="350" text-anchor="middle" class="title">[ Trust Score (0.0 to 1.0) ]</text>
+
+    <path d="M 50 472.5 L 25 472.5 L 25 142.5 L 50 142.5" class="line" marker-end="url(#arrowhead)"/>
+    <text x="20" y="300" text-anchor="middle" transform="rotate(-90 20,300)" class="label">(updates prompts/demos in SynthesisModule)</text>
+
+</svg>

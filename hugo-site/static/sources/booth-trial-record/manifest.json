@@ -1,0 +1,65 @@
+[
+  {
+    "file": "Hawaii_HRS_0710_2017.pdf",
+    "url": "https://data.capitol.hawaii.gov/sessions/session2017/HRS-Chapter-PDF%27s/HRS_0710.pdf",
+    "retrieved": "2026-10-06",
+    "bytes": 400260
+  },
+  {
+    "file": "Hawaii_HRE_901.html",
+    "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0626/HRS_0626-0001-0901.htm",
+    "retrieved": "2026-10-06",
+    "bytes": 18450
+  },
+  {
+    "file": "Hawaii_HRE_403.html",
+    "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0626/HRS_0626-0001-0403.htm",
+    "retrieved": "2026-10-06",
+    "bytes": 29902
+  },
+  {
+    "file": "State_v_Kwong_2021.html",
+    "url": "https://law.justia.com/cases/hawaii/supreme-court/2021/scwc-19-0000334.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "Birano_v_State_2018.html",
+    "url": "https://law.justia.com/cases/hawaii/supreme-court/2018/scwc-15-0000841.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "Briones_v_State_1993.html",
+    "url": "https://openjurist.org/74/haw/442/briones-v-state",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "State_v_Kwong_2021.pdf",
+    "url": "https://www.courts.state.hi.us/wp-content/uploads/2021/03/SCWC-19-0000334.pdf",
+    "retrieved": "2026-10-06",
+    "bytes": 269300
+  },
+  {
+    "file": "Birano_v_State_2018.pdf",
+    "url": "https://www.courts.state.hi.us/wp-content/uploads/2018/08/SCWC-15-0000841.pdf",
+    "retrieved": "2026-10-06",
+    "bytes": 636647
+  },
+  {
+    "file": "Grindling_v_State_2019.pdf",
+    "url": "https://www.courts.state.hi.us/wp-content/uploads/2019/06/SCWC-16-0000474ada.pdf",
+    "retrieved": "2026-10-06",
+    "bytes": 565813
+  },
+  {
+    "file": "Hawaii_HRE_2017.pdf",
+    "url": "https://data.capitol.hawaii.gov/sessions/session2017/HRS-Chapter-PDF%27s/HRS_0626.pdf",
+    "retrieved": "2026-10-06",
+    "bytes": 492150
+  },
+  {
+    "file": "State_v_Tuua_2011.pdf",
+    "url": "https://www.courts.state.hi.us/docs/opin_ord/sct/2011/apr/29125ada.pdf",
+    "retrieved": "2026-10-08",
+    "bytes": 132540
+  }
+]

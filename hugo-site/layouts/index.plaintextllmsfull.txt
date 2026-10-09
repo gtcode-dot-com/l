@@ -1,0 +1,181 @@
+{{- /* llms-full.txt — expanded context for LLMs, per https://llmstxt.org/ */ -}}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+# {{ $active.Title | default site.Title }}
+
+> {{ $active.Description | default site.Params.description }}
+
+Original content: all rights reserved. Linking is permitted. Republication requires prior written permission. Content-use policy: {{ "policies/content-use/" | absURL }}
+
+{{- if $isActiveException }}
+This site publishes GTCode technical work: AI systems consulting, ML research notes, implementation guides, software projects, and technical articles from Ekewaka Lono.
+
+- Author: {{ site.Params.author }}
+- Contact: {{ site.Params.contact_email }}
+- Concise version: {{ "llms.txt" | absURL }}
+- Consulting: {{ "consulting/" | absURL }}
+- Articles: {{ "articles/" | absURL }}
+- Guides: {{ "guides/" | absURL }}
+- Repositories: {{ "repos/" | absURL }}
+- News wire: {{ "news/" | absURL }}
+{{- else }}
+This site publishes: (1) Oahu Underground — independent investigative journalism documenting institutional accountability failures in Hawaiʻi through public records, financial disclosures, and court filings; and (2) GTCode — AI engineering consulting with open-source Elixir libraries on Hex.pm.
+
+- Author: {{ site.Params.author }}
+- Contact: {{ site.Params.contact_email }}
+- Tips: {{ site.Params.tips_email }}
+- Concise version: {{ "llms.txt" | absURL }}
+- Hawaii courts hub: {{ "hawaii-courts/" | absURL }}
+- Full investigation archive: {{ "investigation/" | absURL }}
+- Research portfolios: {{ "portfolios/" | absURL }}
+{{- end }}
+{{- if not $isActiveException }}
+{{- with site.GetPage "/investigation" }}
+{{- $llmsInvestigationPages := where (where .Pages.ByWeight "Params.llms_exclude" "ne" true) "Params.portfolio_key" "hawaii-courts" -}}
+{{- $llmsInvestigationPages = partial "exception/filter-list-pages.html" $llmsInvestigationPages -}}
+{{ with $llmsInvestigationPages }}
+
+## Hawaii Courts Portfolio
+Do not merge these court files with the source archive, PRC-facing access mapping, energy/security, policy-analysis, or technical-visibility portfolios unless an article identifies a direct evidentiary bridge.
+
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+- Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+- Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+{{- end }}
+{{- with site.GetPage "/articles" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages.ByDate.Reverse }}
+
+## Articles
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+- Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+- Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/papers" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages.ByDate.Reverse }}
+
+## Research Papers
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+- Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+{{- with site.GetPage "/guides" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages }}
+
+## Guides
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+
+## Open Source Libraries
+
+- Hex.pm Profile: https://hex.pm/users/nshkrdotcom
+- All Repositories: {{ "/repos/" | absURL }}
+{{ range site.Data.repos }}
+### {{ .name }}
+
+{{ .summary }}
+
+- Version: {{ .version }}
+- Stage: {{ .stage }}
+- Hex.pm: {{ .hex_url }}
+- Documentation: {{ .docs_url }}
+- Source: {{ .repo_url }}
+{{ end }}
+{{- with site.GetPage "/consulting" }}
+
+## Consulting
+
+- URL: {{ .Permalink }}
+
+{{ .RawContent }}
+{{- end }}
+{{- if $isActiveException -}}
+{{- $pages := slice -}}
+{{- range (slice "/policies/ai" "/policies/agent" "/policies/llm" "/policies/robots" "/policies/humans" "/policies/content-use") -}}
+  {{- with site.GetPage . -}}{{- $pages = $pages | append . -}}{{- end -}}
+{{- end -}}
+{{- with $pages }}
+
+## Policies
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}
+{{- else -}}
+{{- with site.GetPage "/policies" }}{{ $pages := partial "exception/filter-list-pages.html" .Pages }}{{ with $pages }}
+
+## Policies
+{{ range . }}
+### {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- with .Description }}
+- Summary: {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ end }}{{ end }}
+{{- end }}

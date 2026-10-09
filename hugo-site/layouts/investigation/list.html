@@ -1,0 +1,360 @@
+{{ define "main" }}
+  {{- $page := . -}}
+  {{- $active := partial "exception/resolve-active-page.html" $page -}}
+  {{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+  {{- $listPages := partial "exception/filter-list-pages.html" $page.Pages -}}
+  {{- $regularPages := partial "exception/filter-list-pages.html" $page.Site.RegularPages -}}
+  <!-- Breadcrumb -->
+  <nav class="ou-breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <strong>{{ $active.Params.breadcrumb_label | default $active.Title | default "Investigations" }}</strong>
+  </nav>
+  <h1 class="sr-only">{{ $active.Title }}</h1>
+
+  {{ if $isActiveException }}
+  <article class="ou-article">
+    <header class="ou-article-header">
+      <h1 class="ou-article-title">{{ $active.Title }}</h1>
+      {{ with $active.Description }}
+      <p class="ou-article-subtitle">{{ . }}</p>
+      {{ end }}
+    </header>
+    <div class="ou-article-content">
+      {{ $active.Content }}
+    </div>
+  </article>
+  {{ else }}
+
+  {{/* Featured Article Section */}}
+  {{ with .Params.featured_article }}
+  <article class="ou-article">
+    <header class="ou-article-header">
+      <h2 class="ou-article-title">{{ .title }}</h2>
+      {{ with .subtitle }}
+      <p class="ou-article-subtitle">{{ . }}</p>
+      {{ end }}
+      <div class="ou-article-meta">
+        {{ with .author }}
+          <span>By {{ . }}</span>
+        {{ end }}
+        {{ with .published_display }}
+          <span>&bull;</span>
+          <span>Published: {{ . }}</span>
+        {{ end }}
+      </div>
+    </header>
+
+    <div class="ou-article-content">
+      {{ .content | safeHTML }}
+    </div>
+  </article>
+  {{ end }}
+
+  {{/* ── Publisher's Note ── */}}
+  {{ range where $listPages "Params.eyebrow" "Publisher's Note" }}
+  <section class="ou-section ou-publisher-note-section">
+    <div class="ou-section-wide">
+      <article class="ou-publisher-note">
+        <div class="ou-publisher-note-left">
+          <div class="ou-publisher-note-badge">Publisher&rsquo;s Note</div>
+          <h2 class="ou-publisher-note-title">{{ .Title }}</h2>
+        </div>
+        <div class="ou-publisher-note-right">
+          {{ with .Params.card_summary }}
+          <p class="ou-publisher-note-text">{{ . }}</p>
+          {{ else with .Summary }}
+          <p class="ou-publisher-note-text">{{ . }}</p>
+          {{ end }}
+          <a class="ou-card-link" href="{{ .RelPermalink }}" aria-label="Read the note: {{ .Title }}">Read the note &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Hero Image — below publisher's note */}}
+  {{ with .Params.og_image }}
+  <div class="ou-list-hero">
+    <div class="ou-section-inner">
+      <figure class="ou-list-hero-fig">
+        {{ partial "media/responsive-image.html" (dict
+          "page" $
+          "src" .
+          "alt" "Oahu Underground Investigations"
+          "slot" "investigation_list_hero"
+          "width" ($.Params.og_image_width | default 1200)
+          "height" ($.Params.og_image_height | default 630)
+          "loading" "eager"
+          "fetchpriority" "high"
+        ) }}
+      </figure>
+    </div>
+  </div>
+  {{ end }}
+
+  {{/* ── Editorial Standards ── */}}
+  {{ with .Params.standards_note }}
+  <section class="ou-section ou-standards-note-section" aria-labelledby="investigation-standards-title">
+    <div class="ou-section-wide">
+      <aside class="ou-standards-note">
+        <div class="ou-standards-note-left">
+          <div class="ou-publisher-note-badge">{{ $.Params.standards_eyebrow | default "Editorial Standards" }}</div>
+          <h2 class="ou-publisher-note-title" id="investigation-standards-title">{{ $.Params.standards_title | default "Investigation Standards" }}</h2>
+        </div>
+        <div class="ou-standards-note-right">
+          <p class="ou-publisher-note-text">{{ . }}</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $active.Params.show_portfolio_intro }}
+    {{ with $active.Content }}
+    <section class="ou-section">
+      <div class="ou-section-wide ou-article-content">
+        {{ . }}
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+
+  {{/* ── Multi-Part Series ── */}}
+  {{ $seriesPages := where $listPages "Layout" "series" }}
+  {{ if and (gt (len $seriesPages) 0) (not .Params.portfolio_sections) }}
+  <section class="ou-section ou-portfolio-section">
+    <div class="ou-section-wide">
+      <p class="ou-section-label">Multi-Part Series</p>
+      <h2 class="ou-section-heading">In-Depth Investigations</h2>
+
+      <div class="ou-series-showcase">
+        {{ range $seriesPages }}
+        {{ $seriesPage := . }}
+        {{ $seriesName := .Title }}
+        {{ $seriesURL := .RelPermalink }}
+        {{ $parts := where (where $regularPages "Params.series" $seriesName) "Layout" "!=" "series" }}
+        {{ $parts = sort $parts "Params.series_part" "asc" }}
+        <article class="ou-series-block">
+          {{ with $seriesPage.Params.og_image }}
+          <figure class="ou-series-block-thumb">
+            {{ partial "media/responsive-image.html" (dict
+              "page" $seriesPage
+              "src" .
+              "alt" $seriesPage.Title
+              "slot" "investigation_series_thumb"
+              "width" ($seriesPage.Params.og_image_width | default 1200)
+              "height" ($seriesPage.Params.og_image_height | default 630)
+            ) }}
+          </figure>
+          {{ end }}
+          <div class="ou-series-block-badge">Series</div>
+          <h3 class="ou-series-block-title">
+            <a href="{{ $seriesURL }}">{{ $seriesName }}</a>
+          </h3>
+          {{ with .Params.card_summary }}
+          <p class="ou-series-block-desc">{{ . }}</p>
+          {{ else with .Params.subtitle }}
+          <p class="ou-series-block-desc">{{ . }}</p>
+          {{ end }}
+          {{ if $parts }}
+          <ol class="ou-series-block-parts">
+            {{ range $parts }}
+            <li>
+              <a href="{{ .RelPermalink }}">
+                <span class="ou-series-block-part">{{ .Params.series_part }}</span>
+                <span class="ou-series-block-part-title">{{ .Title }}</span>
+              </a>
+            </li>
+            {{ end }}
+          </ol>
+          {{ end }}
+          <a class="ou-card-link" href="{{ $seriesURL }}" aria-label="Read series: {{ $seriesName }}">Read series &rarr;</a>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ── Visible Portfolio Lanes ── */}}
+  {{ $portfolioPaths := slice }}
+  {{ with .Params.portfolio_sections }}
+  <section class="ou-section">
+    <div class="ou-section-wide">
+      {{ with $.Params.portfolio_eyebrow }}
+      <p class="ou-section-label">{{ . }}</p>
+      {{ end }}
+      {{ with $.Params.portfolio_title }}
+      <h2 class="ou-section-heading">{{ . }}</h2>
+      {{ end }}
+      {{ with $.Params.portfolio_description }}
+      <div class="ou-section-body"><p>{{ . | safeHTML }}</p></div>
+      {{ end }}
+
+      <div class="ou-portfolio-groups">
+          {{ range . }}
+          {{ $portfolio := . }}
+          {{ $portfolioID := $portfolio.id | default ($portfolio.eyebrow | default $portfolio.title) | urlize }}
+          {{ $portfolioPages := slice }}
+          {{ range $portfolio.pages }}
+            {{ with $.Site.GetPage . }}
+              {{ $portfolioPath := .RelPermalink }}
+              {{ with .File }}{{ $portfolioPath = .Path }}{{ end }}
+              {{ $portfolioPaths = $portfolioPaths | append $portfolioPath }}
+              {{ $portfolioPages = $portfolioPages | append . }}
+            {{ end }}
+          {{ end }}
+          {{ $portfolioPages = partial "exception/filter-list-pages.html" $portfolioPages }}
+          {{ if gt (len $portfolioPages) 0 }}
+          <section class="ou-portfolio-group{{ if eq $portfolio.presentation "feature" }} ou-portfolio-feature-group{{ end }}" id="{{ $portfolioID }}">
+            {{ if eq $portfolio.presentation "feature" }}
+              {{ range $portfolioPages }}
+                {{ $featurePage := . }}
+              <article class="ou-investigation-feature">
+                {{ with .Params.og_image }}
+                <a class="ou-investigation-feature-image" href="{{ $featurePage.RelPermalink }}" aria-label="Read {{ $featurePage.Title }}">
+                  {{ partial "media/responsive-image.html" (dict
+                    "page" $featurePage "src" .
+                    "alt" ($featurePage.Params.og_image_alt | default $featurePage.Title)
+                    "slot" "investigation_card"
+                    "width" ($featurePage.Params.og_image_width | default 1200)
+                    "height" ($featurePage.Params.og_image_height | default 630)
+                  ) }}
+                </a>
+                {{ end }}
+                <div class="ou-investigation-feature-body">
+                  <p class="ou-section-label">{{ $portfolio.eyebrow }}</p>
+                  <h3 class="ou-investigation-feature-title"><a href="{{ .RelPermalink }}">{{ $portfolio.title }}</a></h3>
+                  <p class="ou-investigation-feature-subtitle">{{ $portfolio.description }}</p>
+                  <p class="ou-investigation-feature-summary">An ongoing investigation connecting the reported sequence, actor information states, competing explanations, and the records needed to test them.</p>
+                  <a class="ou-investigation-feature-link" href="{{ .RelPermalink }}">Explore the investigation <span aria-hidden="true">&rarr;</span></a>
+                </div>
+              </article>
+              {{ end }}
+            {{ else }}
+            <header class="ou-portfolio-header">
+              {{ with $portfolio.eyebrow }}
+              <p class="ou-section-label ou-portfolio-label">{{ . }}</p>
+              {{ end }}
+              <h3 class="ou-portfolio-title">{{ $portfolio.title }}</h3>
+              {{ with $portfolio.description }}
+              <p class="ou-portfolio-description">{{ . }}</p>
+              {{ end }}
+            </header>
+
+            <div class="ou-cards ou-portfolio-cards">
+              {{ range $portfolioPages }}
+                {{ $cardPage := . }}
+              <article class="ou-card">
+                {{ with $cardPage.Params.og_image }}
+                <figure class="ou-card-thumb">
+                  {{ partial "media/responsive-image.html" (dict
+                    "page" $cardPage
+                    "src" .
+                    "alt" ($cardPage.Params.og_image_alt | default $cardPage.Title)
+                    "slot" "investigation_card"
+                    "width" ($cardPage.Params.og_image_width | default 1200)
+                    "height" ($cardPage.Params.og_image_height | default 630)
+                  ) }}
+                </figure>
+                {{ end }}
+                {{ if and $cardPage.Params.series_url (not $.Params.hide_series_links) (not $cardPage.Params.suppress_series_link) }}
+                <a href="{{ $cardPage.Params.series_url }}" class="ou-card-icon ou-card-icon-link">{{ $cardPage.Params.eyebrow | default "Investigative File" }}</a>
+                {{ else if $cardPage.Params.eyebrow }}
+                <div class="ou-card-icon">{{ $cardPage.Params.eyebrow }}</div>
+                {{ end }}
+                <h3 class="ou-card-title"><a href="{{ $cardPage.RelPermalink }}">{{ $cardPage.Title }}</a></h3>
+                {{ with $cardPage.Params.card_summary }}
+                <p class="ou-card-text">{{ . }}</p>
+                {{ else with $cardPage.Summary }}
+                <p class="ou-card-text">{{ . }}</p>
+                {{ end }}
+                <a class="ou-card-link" href="{{ $cardPage.RelPermalink }}" aria-label="Read the report: {{ $cardPage.Title }}">Read the report &rarr;</a>
+              </article>
+              {{ end }}
+            </div>
+            {{ end }}
+            {{ with $portfolio.context_url }}
+            <p class="ou-portfolio-description"><a href="{{ . }}">{{ $portfolio.context_label }}</a>. {{ $portfolio.context_note }}</p>
+            {{ end }}
+          </section>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ── Standalone Investigation Cards ── */}}
+  {{/* Exclude: Publisher's Note, series landing pages, series member articles */}}
+  {{ $seriesMembers := slice }}
+  {{ range where $listPages "Layout" "series" }}
+    {{ $name := .Title }}
+    {{ range where $regularPages "Params.series" $name }}
+      {{ $seriesMembers = $seriesMembers | append .File.Path }}
+    {{ end }}
+  {{ end }}
+
+  {{ $standalone := where $listPages "Layout" "!=" "series" }}
+  {{ $standalone = where $standalone "Params.eyebrow" "!=" "Publisher's Note" }}
+  {{ $standaloneVisible := slice }}
+  {{ range $standalone }}
+    {{ if not (in $seriesMembers .File.Path) }}
+      {{ if or (not $.Params.portfolio_sections) (not (in $portfolioPaths .File.Path)) }}
+        {{ $standaloneVisible = $standaloneVisible | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $standaloneVisible }}
+  <section class="ou-section">
+    <div class="ou-section-wide">
+      {{ with .Params.grid_eyebrow }}
+      <p class="ou-section-label">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.grid_title }}
+      <h2 class="ou-section-heading">{{ . }}</h2>
+      {{ else }}
+      <h2 class="ou-section-heading">{{ .Title }}</h2>
+      {{ end }}
+      {{ with .Params.grid_description }}
+      <div class="ou-section-body"><p>{{ . | safeHTML }}</p></div>
+      {{ end }}
+
+      <div class="ou-cards">
+        {{ range $standaloneVisible }}
+          {{ $cardPage := . }}
+        <article class="ou-card">
+          {{ with $cardPage.Params.og_image }}
+          <figure class="ou-card-thumb">
+            {{ partial "media/responsive-image.html" (dict
+              "page" $cardPage
+              "src" .
+              "alt" ($cardPage.Params.og_image_alt | default $cardPage.Title)
+              "slot" "investigation_card"
+              "width" ($cardPage.Params.og_image_width | default 1200)
+              "height" ($cardPage.Params.og_image_height | default 630)
+            ) }}
+          </figure>
+          {{ end }}
+          {{ if and .Params.series_url (not $.Params.hide_series_links) (not .Params.suppress_series_link) }}
+          <a href="{{ .Params.series_url }}" class="ou-card-icon ou-card-icon-link">{{ .Params.eyebrow | default "Investigative File" }}</a>
+          {{ else if .Params.eyebrow }}
+          <div class="ou-card-icon">{{ .Params.eyebrow }}</div>
+          {{ end }}
+          <h3 class="ou-card-title">{{ .Title }}</h3>
+          {{ with .Params.card_summary }}
+          <p class="ou-card-text">{{ . }}</p>
+          {{ else with .Summary }}
+          <p class="ou-card-text">{{ . }}</p>
+          {{ end }}
+          <a class="ou-card-link" href="{{ .RelPermalink }}" aria-label="Read the report: {{ .Title }}">Read the report &rarr;</a>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+{{ end }}

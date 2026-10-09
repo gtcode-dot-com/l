@@ -1,0 +1,29 @@
+# Robots.txt Configuration
+# Place this file as robots.txt in your website root directory
+
+User-agent: *
+Allow: /
+
+# Allow AI crawlers specifically
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Sitemap locations
+Sitemap: https://gtcode.com/sitemap.xml
+
+{{- if .Site.Params.robots_crawl_delay_enabled }}
+# Crawl delay (optional; disabled by default)
+Crawl-delay: {{ .Site.Params.robots_crawl_delay_seconds | default 1 }}
+{{- end }}

@@ -1,0 +1,83 @@
+    <script src="/vendor/mermaid/mermaid.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.mermaid) {
+          function fitMermaidDiagrams() {
+            document.querySelectorAll(".mermaid-scroll svg").forEach(function (svg) {
+              try {
+                var box = svg.getBBox();
+                if (!box || !box.width || !box.height) {
+                  return;
+                }
+                var padding = 18;
+                if (svg.closest(".mermaid-readable")) {
+                  svg.style.setProperty("--mermaid-natural-width", (box.width + padding * 2) + "px");
+                }
+                svg.setAttribute(
+                  "viewBox",
+                  [
+                    box.x - padding,
+                    box.y - padding,
+                    box.width + padding * 2,
+                    box.height + padding * 2
+                  ].join(" ")
+                );
+                svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+              } catch (error) {
+                return;
+              }
+            });
+          }
+
+          var phoneDiagrams = window.matchMedia("(max-width: 640px)");
+          var diagramSources = Array.from(document.querySelectorAll(".mermaid")).map(function (element) {
+            return { element: element, source: element.textContent };
+          });
+          function prepareDiagrams() {
+            diagramSources.forEach(function (diagram) {
+              diagram.element.removeAttribute("data-processed");
+              diagram.element.textContent = phoneDiagrams.matches
+                ? diagram.source.replace(/\b(flowchart|graph) LR\b/g, "$1 TD")
+                : diagram.source;
+            });
+          }
+          prepareDiagrams();
+          window.mermaid.initialize({
+            startOnLoad: false,
+            theme: "dark",
+            securityLevel: "loose",
+            sequence: {
+              wrap: true,
+              width: 120,
+              actorMargin: 25,
+              wrapPadding: 10
+            },
+            flowchart: {
+              useMaxWidth: true,
+              htmlLabels: true
+            }
+          });
+          if (typeof window.mermaid.run === "function") {
+            window.mermaid
+              .run({ querySelector: ".mermaid" })
+              .then(fitMermaidDiagrams)
+              .catch(function () {
+                window.setTimeout(fitMermaidDiagrams, 300);
+              });
+          } else {
+            window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+            window.setTimeout(fitMermaidDiagrams, 300);
+          }
+          phoneDiagrams.addEventListener("change", function () {
+            prepareDiagrams();
+            if (typeof window.mermaid.run === "function") {
+              window.mermaid.run({ querySelector: ".mermaid" }).then(fitMermaidDiagrams);
+            } else {
+              window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+              window.setTimeout(fitMermaidDiagrams, 300);
+            }
+          });
+          window.addEventListener("load", fitMermaidDiagrams);
+        }
+      });
+    </script>

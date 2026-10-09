@@ -1,0 +1,13 @@
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $thirdParty := or (and (eq $page.Section "news") (not $active.Params.news_original)) (and $active.Params.source_url (not $active.Params.news_original)) -}}
+{{- if and $page.IsPage (not $thirdParty) (ne $page.Section "repos") -}}
+  {{- with $active.Params.license -}}
+<p class="content-use-notice">License: {{ . }}. <a href="{{ "policies/content-use/" | relURL }}">Content-use policy</a>.</p>
+  {{- else -}}
+    {{- $owner := $active.Params.copyright_owner | default site.Params.author -}}
+    {{- $year := now.Format "2006" -}}
+    {{- if not $active.Date.IsZero }}{{ $year = $active.Date.Format "2006" }}{{ end -}}
+<p class="content-use-notice">&copy; {{ $year }} {{ $owner }}. All rights reserved. Linking is permitted. Republication requires prior written permission. <a href="{{ "policies/content-use/" | relURL }}">Content-use policy</a>.</p>
+  {{- end -}}
+{{- end -}}

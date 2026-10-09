@@ -1,0 +1,230 @@
+Title: NSA hacked Pacnet, Chinese telcos: Snowden
+
+URL Source: http://www.itnews.com.au/news/nsa-hacked-pacnet-chinese-telcos-snowden-347676
+
+Markdown Content:
+NSA hacked Pacnet, Chinese telcos: Snowden - iTnews
+===============
+
+[Latest News](http://www.itnews.com.au/news)
+
+[Atlassian to cut roughly 1600 jobs ----------------------------------](http://www.itnews.com.au/news/atlassian-to-cut-roughly-1600-jobs-624222)[EnergyAustralia's CIO of almost seven years to leave ----------------------------------------------------](http://www.itnews.com.au/news/energyaustralias-cio-of-almost-seven-years-to-leave-624214)[Australian Unity's 'shift left' on code quality and security is just in time for AI -----------------------------------------------------------------------------------](http://www.itnews.com.au/news/australian-unitys-shift-left-on-code-quality-and-security-is-just-in-time-for-ai-624200)[Foreign hacker in 2023 compromised Epstein files held by FBI ------------------------------------------------------------](http://www.itnews.com.au/news/foreign-hacker-in-2023-compromised-epstein-files-held-by-fbi-624213)[US medical device maker Stryker's Microsoft environment attacked ----------------------------------------------------------------](http://www.itnews.com.au/news/us-medical-device-maker-strykers-microsoft-environment-attacked-624212)
+
+[](https://www.linkedin.com/company/itnews "follow us on Linkedin")[](https://twitter.com/itnews_au "follow us on X")[](https://www.facebook.com/iTnewsAustralia "follow us on Facebook")[](https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2wwYm1WM2N5NWpiMjB1WVhVb0FBUAE "follow google news")[](https://whatsapp.com/channel/0029VbBQ4EHB4hdYliwNnX3p "follow us on WhatsApp")[](http://www.itnews.com.au/rss "RSS feeds")
+
+[](http://www.itnews.com.au/)
+
+[](https://twitter.com/itnews_au "follow us on X")[](https://www.facebook.com/iTnewsAustralia "follow us on Facebook")[](https://www.linkedin.com/company/itnews "follow us on Linkedin")[](http://www.itnews.com.au/rss "RSS feeds")
+
+[LOG IN](http://www.itnews.com.au/news/nsa-hacked-pacnet-chinese-telcos-snowden-347676)[SUBSCRIBE](http://www.itnews.com.au/register)[](http://www.itnews.com.au/news/nsa-hacked-pacnet-chinese-telcos-snowden-347676#)
+
+Search
+
+[BUSINESS](http://www.itnews.com.au/business)[CLOUD](http://www.itnews.com.au/technology/cloud)[DATA CENTRE](http://www.itnews.com.au/tag/data-centre)
+
+[EDUCATION](http://www.itnews.com.au/tag/education)[FINANCIAL SERVICES](http://www.itnews.com.au/business/financial-services)[HARDWARE](http://www.itnews.com.au/technology/hardware)
+
+[HEALTHCARE](http://www.itnews.com.au/tag/health)[INDUSTRIAL](http://www.itnews.com.au/tag/industrial)[NETWORKING](http://www.itnews.com.au/technology/networking)
+
+[PROJECTS](http://www.itnews.com.au/projects)[SOFTWARE](http://www.itnews.com.au/technology/software)[STORAGE](http://www.itnews.com.au/technology/storage)
+
+[STRATEGY](http://www.itnews.com.au/business/strategy)[TECHNOLOGY](http://www.itnews.com.au/technology)[TELCO/ISP](http://www.itnews.com.au/technology/telco-isp)
+
+[HR](http://www.itnews.com.au/digital-nation/hr)[MARKETING](http://www.itnews.com.au/digital-nation/marketing)[FINANCE](http://www.itnews.com.au/digital-nation/finance)[LEADERSHIP](http://www.itnews.com.au/digital-nation/leadership)[GOVERNANCE](http://www.itnews.com.au/digital-nation/governance)[EMERGING TECH](http://www.itnews.com.au/digital-nation/emerging-tech)
+
+[STATE OF SECURITY 2025](http://www.itnews.com.au/state-of-security-2025)[State of HR Tech](http://www.itnews.com.au/state-of-hr-tech)[State of AI 2024](http://www.itnews.com.au/state-of-ai)
+
+[Special Reports](http://www.itnews.com.au/special-reports)[Focal Points](https://www.itnews.com.au/focal-points/)[MEDIA HUB](https://www.itnews.com.au/media-hub/)
+
+[PARTNER CONTENT](http://www.itnews.com.au/partner-content)[PARTNER HUBS](https://www.itnews.com.au/partner-hubs)[RESEARCH](https://www.itnews.com.au/reports)
+
+[Tech Partner Views](http://www.itnews.com.au/techpartnernews-series)
+
+[Cloud Covered](https://pages.itnews.com.au/itn-_-dicker-data-ms-cloud-perth)[Executive Retreat](https://pages.itnews.com.au/-nsw-executive-retreat)[BENCHMARK AWARDS](http://www.itnews.com.au/awards/about)
+
+[![Image 2: iTnews](http://www.itnews.com.au/images/itnews-logo-sticky.png)](http://www.itnews.com.au/)
+*   [NEWS](http://www.itnews.com.au/news)
+*   [GOVERNMENT](http://www.itnews.com.au/tag/government)
+*   [SECURITY](http://www.itnews.com.au/technology/security)
+*   [AI](http://www.itnews.com.au/tag/ai)
+*   [DIGITAL NATION](http://www.itnews.com.au/digital-nation)
+*   [RESOURCES](http://www.itnews.com.au/resources)
+*   [PODCAST](http://www.itnews.com.au/page/the-itnews-podcast)
+*   [EVENTS](http://www.itnews.com.au/events)
+*   [ADVERTISE](https://pages.itnews.com.au/media-kit-landing-page)
+
+[![Image 3: iTnews](http://www.itnews.com.au/images/itnews-logo-white.png)](http://www.itnews.com.au/)
+
+[](http://www.itnews.com.au/news/nsa-hacked-pacnet-chinese-telcos-snowden-347676)
+
+[NEWS](http://www.itnews.com.au/news)
+
+[BUSINESS](http://www.itnews.com.au/business)[CLOUD](http://www.itnews.com.au/technology/cloud)[DATA CENTRE](http://www.itnews.com.au/tag/data-centre)[EDUCATION](http://www.itnews.com.au/tag/education)[FINANCIAL SERVICES](http://www.itnews.com.au/business/financial-services)[HARDWARE](http://www.itnews.com.au/technology/hardware)[HEALTHCARE](http://www.itnews.com.au/tag/health)[INDUSTRIAL](http://www.itnews.com.au/tag/industrial)[NETWORKING](http://www.itnews.com.au/technology/networking)[PROJECTS](http://www.itnews.com.au/projects)[SOFTWARE](http://www.itnews.com.au/technology/software)[STORAGE](http://www.itnews.com.au/technology/storage)[STRATEGY](http://www.itnews.com.au/business/strategy)[TECHNOLOGY](http://www.itnews.com.au/technology)[TELCO/ISP](http://www.itnews.com.au/technology/telco-isp)
+
+[GOVERNMENT](http://www.itnews.com.au/tag/government)[SECURITY](http://www.itnews.com.au/technology/security)[AI](http://www.itnews.com.au/tag/ai)[DIGITAL NATION](http://www.itnews.com.au/digital-nation)
+
+[HR](http://www.itnews.com.au/digital-nation/hr)[MARKETING](http://www.itnews.com.au/digital-nation/marketing)[FINANCE](http://www.itnews.com.au/digital-nation/finance)[LEADERSHIP](http://www.itnews.com.au/digital-nation/leadership)[GOVERNANCE](http://www.itnews.com.au/digital-nation/governance)[EMERGING TECH](http://www.itnews.com.au/digital-nation/emerging-tech)
+
+[RESOURCES](http://www.itnews.com.au/resources)
+
+[STATE OF SECURITY 2025](http://www.itnews.com.au/state-of-security-2025)[State of HR Tech](http://www.itnews.com.au/state-of-hr-tech)[State of AI 2024](http://www.itnews.com.au/state-of-ai)[Special Reports](http://www.itnews.com.au/special-reports)[Focal Points](https://www.itnews.com.au/focal-points/)[MEDIA HUB](https://www.itnews.com.au/media-hub/)[PARTNER CONTENT](http://www.itnews.com.au/partner-content)[PARTNER HUBS](https://www.itnews.com.au/partner-hubs)[RESEARCH](https://www.itnews.com.au/reports)[Tech Partner Views](http://www.itnews.com.au/techpartnernews-series)
+
+[PODCAST](http://www.itnews.com.au/page/the-itnews-podcast)[EVENTS](http://www.itnews.com.au/events)
+
+[Cloud Covered](https://pages.itnews.com.au/itn-_-dicker-data-ms-cloud-perth)[Executive Retreat](https://pages.itnews.com.au/-nsw-executive-retreat)[BENCHMARK AWARDS](http://www.itnews.com.au/awards/about)
+
+[ADVERTISE](https://pages.itnews.com.au/media-kit-landing-page)
+
+[](https://www.linkedin.com/company/itnews "follow us on Linkedin")[](https://twitter.com/itnews_au "follow us on X")[](https://www.facebook.com/iTnewsAustralia "follow us on Facebook")[](https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2wwYm1WM2N5NWpiMjB1WVhVb0FBUAE "follow google news")[](https://whatsapp.com/channel/0029VbBQ4EHB4hdYliwNnX3p "follow us on WhatsApp")[](http://www.itnews.com.au/rss "RSS feed")
+
+### Log In
+
+Email:
+
+Password:
+
+- [x] Remember me | [Forgot password?](http://www.itnews.com.au/forgot "Forgot your password?")
+
+[Don't have an account? Register now!](http://www.itnews.com.au/register)
+
+*   [Home](https://www.itnews.com.au/)
+*   [News](https://www.itnews.com.au/news)
+*   [Technology](https://www.itnews.com.au/technology)
+*   [Security](https://www.itnews.com.au/technology/security)
+
+NSA hacked Pacnet, Chinese telcos: Snowden
+==========================================
+
+ By [Juha Saarinen](http://www.itnews.com.au/author/juha-saarinen-224495)
+
+Jun 24 2013 6:43AM
+
+[](http://www.itnews.com.au/news/nsa-hacked-pacnet-chinese-telcos-snowden-347676#disqus_thread "Join the Conversation")[](https://twitter.com/intent/tweet?text=NSA%20hacked%20Pacnet,%20Chinese%20telcos:%20Snowden&related=&url=https%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source=desktop%26utm_medium=twitter%26utm_campaign=share "Share on Twitter")[](https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source=desktop%26utm_medium=facebook%26utm_campaign=share "Share on Facebook")[](https://www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source=desktop%26utm_medium=linkedin%26utm_campaign=share "Share on LinkedIn")[](http://www.itnews.com.au/feedback/?id=347676 "Send Feedback")[](mailto:?subject=iTnews:%20NSA%20hacked%20Pacnet,%20Chinese%20telcos:%20Snowden&body=Check%20out%20this%20great%20article%20I%20read%20on%20iTnews:%0D%0A%0D%0ANSA%20hacked%20Pacnet,%20Chinese%20telcos:%20Snowden%0D%0A%0D%0Ahttps%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source=desktop%26utm_medium=email%26utm_campaign=share "Email A Friend")[](http://www.itnews.com.au/tools/print.aspx?ciid=347676 "Print")
+
+[![Image 4: Follow google news](http://www.itnews.com.au/images/Follow%20Google%20News.png)](https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2wwYm1WM2N5NWpiMjB1WVhVb0FBUAE "Follow google news")
+
+Whistleblower leaves Hong Kong.
+-------------------------------
+
+Former United States National Security Agency (NSA) employee turned whistleblower Edward Snowden has reportedly revealed attacks by his former employer on network operator Pacnet.
+
+![Image 5: NSA hacked Pacnet, Chinese telcos: Snowden](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=http%3a%2f%2fi.nextmedia.com.au%2fNews%2fSnowden.jpg&h=420&w=748&c=0&s=0)
+
+ Edward Snowden 
+
+Speaking to Hong Kong's _[South China Morning Post](http://www.scmp.com/news/hong-kong/article/1266875/exclusive-us-hacked-pacnet-asia-pacific-fibre-optic-network-operator)_, Snowden said Pacnet's computers in Hong Kong were attacked by America but did not provide information as to the motive nor whether Pacnet suffered any damage in the now-closed hacking operation.
+
+Pacnet has circuits, points of presence and data centres in Australia and New Zealand as well as throughout Asia.
+
+Snowden also told the _[SCMP](http://www.scmp.com/news/china/article/1266821/us-hacks-chinese-mobile-phone-companies-steals-sms-data-edward-snowden)_ he had evidence of the NSA hacking Chinese mobile phone companies to steal customers' SMS data.
+
+The Chinese University of Hong Kong, which hosts the HK Internet Exchange ([HKIX](http://www.scmp.com/news/china/article/1266821/us-hacks-chinese-mobile-phone-companies-steals-sms-data-edward-snowden)) internet connectivity and peering hub, has also been targeted by the US spy agency, Snowden said, along with networks at mainland China's top ranking Tsinghua University.
+
+China has commenced a review of foreign-made telco equipment in the country's networks.
+
+Snowed also recently claimed Britain's Government Communications Headquarters (GCHQ) had been tapping directly into subsea fibre-optic cables and sharing the intercepted voice and data traffic with the NSA.
+
+Snowden has been formally charged by the United States with espionage and theft of government property and the Americans are seeking his extradition from Hong Kong.
+
+Over the weekend he left Hong Kong on a Russian Aeroflot flight, potentially to seek asylum in Cuba, Ecuador, Venezuela or Iceland, according to a _[Reuters](http://in.reuters.com/article/2013/06/23/us-usa-security-flight-idUSBRE95M02H20130623)_ report.
+
+### Add iTnews as your trusted source
+
+[![Image 6: Add iTnews As Your Trusted Source](http://www.itnews.com.au/images/google_preferred_source_badge.png)![Image 7: Add iTnews As Your Trusted Source](http://www.itnews.com.au/images/google_preferred_source_badge_dark.png)](https://www.google.com/preferences/source?q=itnews.com.au)
+
+ Got a news tip for our journalists? [Share it with us anonymously here](http://www.itnews.com.au/feedback/?id=347676&type=newstip). 
+
+[![Image 8](http://www.itnews.com.au/images/newsletter-promo-1.png)](http://www.itnews.com.au/register?src=ITN_ArticlePromo_1_347676)
+
+[Copyright © iTnews.com.au](https://www.itnews.com.au/) . All rights reserved. 
+
+Tags:
+
+[china](http://www.itnews.com.au/tag/china)[espionage](http://www.itnews.com.au/tag/espionage)[hong kong](http://www.itnews.com.au/tag/hong-kong)[infosec](http://www.itnews.com.au/tag/infosec)[nsa](http://www.itnews.com.au/tag/nsa)[security](http://www.itnews.com.au/technology/security)[snowden](http://www.itnews.com.au/tag/snowden)[telecommunications](http://www.itnews.com.au/tag/telecommunications)[usa](http://www.itnews.com.au/tag/usa)
+
+### Related Articles
+
+*   [![Image 9: US medical device maker Stryker's Microsoft environment attacked](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fmedical.png&h=140&w=231&c=1&s=0) US medical device maker Stryker's Microsoft environment attacked](http://www.itnews.com.au/news/us-medical-device-maker-strykers-microsoft-environment-attacked-624212)
+*   [![Image 10: Foreign hacker in 2023 compromised Epstein files held by FBI](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2f2026-03-11T100115Z_1_LYNXMPEM2A0L9_RTROPTP_4_USA-TRUMP-EPSTEIN-CYBER.JPG&h=140&w=231&c=1&s=0) Foreign hacker in 2023 compromised Epstein files held by FBI](http://www.itnews.com.au/news/foreign-hacker-in-2023-compromised-epstein-files-held-by-fbi-624213)
+*   [![Image 11: Russia-backed hackers breach Signal, WhatsApp accounts of officials, journalists](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fwhatsapp_encryption.jpg&h=140&w=231&c=1&s=0) Russia-backed hackers breach Signal, WhatsApp accounts of officials, journalists](http://www.itnews.com.au/news/russia-backed-hackers-breach-signal-whatsapp-accounts-of-officials-journalists-624153)
+*   [![Image 12: In Pictures: Securing AI agents and NHIs - Saviynt Sydney roundtable](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fGalleries%2f20260309011455_abc5f828cc991d043ae96bff1db987ad.jpg&h=140&w=231&c=1&s=0) In Pictures: Securing AI agents and NHIs - Saviynt Sydney roundtable](http://www.itnews.com.au/gallery/in-pictures-securing-ai-agents-and-nhis---saviynt-sydney-roundtable-624138)
+
+[Join our WhatsApp Channel](https://whatsapp.com/channel/0029VbBQ4EHB4hdYliwNnX3p "follow our WhatsApp")
+
+### [Partner Content](http://www.itnews.com.au/partner-content)
+
+[![Image 13: Beyond Compliance: How Australia's Aged Care Reforms Create an Innovation Imperative](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fFeatures%2f20260128014535_Untitled_design.jpg&h=140&w=231&c=1&s=0) Partner Content Beyond Compliance: How Australia's Aged Care Reforms Create an Innovation Imperative](http://www.itnews.com.au/feature/beyond-compliance-how-australias-aged-care-reforms-create-an-innovation-imperative-623222)[![Image 14: Security for smart devices &#8211; time to step forward because there's nowhere to hide](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fFeatures%2fHubspot_roundtable_backgrounds_(350_x_240_mm)_(36).jpg&h=140&w=231&c=1&s=0) Promoted Content Security for smart devices – time to step forward because there's nowhere to hide](http://www.itnews.com.au/feature/security-for-smart-devices-time-to-step-forward-because-theres-nowhere-to-hide-623882)[![Image 15: Cyconsol Unlocks Growth Potential for Cyber Vendors in Australia](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fFeatures%2fHubspot_roundtable_backgrounds_(350_x_240_mm)_(33).jpg&h=140&w=231&c=1&s=0) Promoted Content Cyconsol Unlocks Growth Potential for Cyber Vendors in Australia](http://www.itnews.com.au/feature/cyconsol-unlocks-growth-potential-for-cyber-vendors-in-australia-623271)[![Image 16: Targeting Maximum Competitive Advantage for Businesses](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fFeatures%2f20260218112300_Hero_image_EN.jpg&h=140&w=231&c=1&s=0) Promoted Content Targeting Maximum Competitive Advantage for Businesses](http://www.itnews.com.au/feature/targeting-maximum-competitive-advantage-for-businesses-623703)
+
+### [Sponsored Whitepapers](http://www.itnews.com.au/whitepapers)
+
+[![Image 17: 5 reasons to adopt a mobile first security strategy](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fReports%2f26314_5_reasons__to_adopt_a_mobile-first_security_strategy_V3-1.png&w=100&c=1&s=0) 5 reasons to adopt a mobile first security strategy](http://www.itnews.com.au/resource/5-reasons-to-adopt-a-mobile-first-security-strategy-623840)[![Image 18: Uncomplicate IT Service Delivery with AI Agents](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fReports%2fScreenshot_2026-01-29_at_11.02.32%e2%80%afam.png&w=100&c=1&s=0) Uncomplicate IT Service Delivery with AI Agents](http://www.itnews.com.au/resource/uncomplicate-it-service-delivery-with-ai-agents-623244)[![Image 19: Getting ahead of the tech: what&#8217;s next for Australian organisations in digital transformation](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fReports%2fNexon_content_syndication-1.png&w=100&c=1&s=0) Getting ahead of the tech: what’s next for Australian organisations in digital transformation](http://www.itnews.com.au/resource/getting-ahead-of-the-tech-whats-next-for-australian-organisations-in-digital-transformation-623214)[![Image 20: Fintech compliance made fast and secure](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fReports%2f20251215043931_Screenshot_2025-12-15_163904.png&w=100&c=1&s=0) Fintech compliance made fast and secure](http://www.itnews.com.au/resource/fintech-compliance-made-fast-and-secure-622612)[![Image 21: How to evaluate SIEM solutions Safeguarding your future Get a demo Download guide](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fReports%2fScreenshot_2025-12-15_163000.png&w=100&c=1&s=0) How to evaluate SIEM solutions Safeguarding your future Get a demo Download guide](http://www.itnews.com.au/resource/how-to-evaluate-siem-solutions-safeguarding-your-future-get-a-demo-download-guide-622611)
+
+### [Events](http://www.itnews.com.au/events)
+
+*   [![Image 22: Cyber Resilience Summit](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fEvents%2f20260305095430_Social-Card-Martin-Brundle-Post.jpg&w=120&c=1&s=0) Cyber Resilience Summit](http://www.itnews.com.au/event/cyber-resilience-summit-624039)
+*   [![Image 23: iTnews Executive Retreat - Security Leaders Edition](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fEvents%2f2025-07-22.png&w=120&c=1&s=0) iTnews Executive Retreat - Security Leaders Edition](http://www.itnews.com.au/event/itnews-executive-retreat---security-leaders-edition-622032)
+*   [![Image 24: Huntress + Eftsure Virtual Event -Fighting A New Frontier of Cyber-Fraud: How Leaders Can Work Together](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fEvents%2fScreenshot_2026-03-09_145200.png&w=120&c=1&s=0) Huntress + Eftsure Virtual Event -Fighting A New Frontier of Cyber-Fraud: How Leaders Can Work Together](http://www.itnews.com.au/event/huntress-eftsure-virtual-event--fighting-a-new-frontier-of-cyber-fraud-how-leaders-can-work-together-623923)
+*   [![Image 25: iTnews Cloud Covered Breakfast Summit](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fEvents%2fDicker_Data_Microsoft.png&w=120&c=1&s=0) iTnews Cloud Covered Breakfast Summit](http://www.itnews.com.au/event/itnews-cloud-covered-breakfast-summit-623315)
+*   [![Image 26: Live & Hands On Demo: Navigating the BMC AMI DevX Platform to Understand Code Faster Using AI](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fwww.itnews.com.au%2fImages%2fEvents%2f260307030956imgbin-bmc-software-remedy-corporation-it-service-management-computer-software-organization-china-cloud-QpZBKyUhpXBZN55xbVDLya76c_t.jpg&w=120&c=1&s=0) Live & Hands On Demo: Navigating the BMC AMI DevX Platform to Understand Code Faster Using AI](http://www.itnews.com.au/event/live-hands-on-demo-navigating-the-bmc-ami-devx-platform-to-understand-code-faster-using-ai-624101)
+
+[](https://twitter.com/intent/tweet?text=NSA%20hacked%20Pacnet,%20Chinese%20telcos:%20Snowden&related=&url=https%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source%3Dmobile%26utm_medium%3Dtwitter%26utm_campaign%3Dshare "Share on Twitter")[![Image 27: Share on Facebook](http://www.itnews.com.au/Images/mobile-share-facebook.png)](https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source%3Dmobile%26utm_medium%3Dfacebook%26utm_campaign%3Dshare "Share on Facebook")[![Image 28: Share on LinkedIn](http://www.itnews.com.au/Images/mobile-share-linkedin.png)](https://www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source%3Dmobile%26utm_medium%3Dlinkedin%26utm_campaign%3Dshare "Share on LinkedIn")[![Image 29: Share on Whatsapp](http://www.itnews.com.au/Images/mobile-share-whatsapp.png)](whatsapp://send?text=NSA%20hacked%20Pacnet,%20Chinese%20telcos:%20Snowden%0D%0A%0D%0Ahttps%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source%3Dmobile%26utm_medium%3Dwhatsapp%26utm_campaign%3Dshare "Share on WhatsApp")[![Image 30: Email A Friend](http://www.itnews.com.au/Images/mobile-share-email.png)](mailto:?subject=iTnews:%20NSA%20hacked%20Pacnet,%20Chinese%20telcos:%20Snowden&body=Check%20out%20this%20great%20article%20I%20read%20on%20iTnews:%0D%0A%0D%0ANSA%20hacked%20Pacnet,%20Chinese%20telcos:%20Snowden%0D%0A%0D%0Ahttps%3a%2f%2fwww.itnews.com.au%2fnews%2fnsa-hacked-pacnet-chinese-telcos-snowden-347676%3Futm_source%3Dmobile%26utm_medium%3Demail%26utm_campaign%3Dshare "Email A Friend")
+
+### Most Read Articles
+
+[![Image 31: Poor WA gov M365 security led to $71k theft and children's data breached](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fm365copilot_business.jpg&h=271&w=480&c=1&s=1) Poor WA gov M365 security led to $71k theft and children's data breached ------------------------------------------------------------------------](http://www.itnews.com.au/news/poor-wa-gov-m365-security-led-to-71k-theft-and-childrens-data-breached-624118)
+
+[![Image 32: Health and Aged Care CISO retires](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fparliament_federal_government.jpg&h=271&w=480&c=1&s=1) Health and Aged Care CISO retires ---------------------------------](http://www.itnews.com.au/news/health-and-aged-care-ciso-retires-623879)
+
+[![Image 33: Services Australia describes fraud, debt-related machine learning use cases](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fcentrelink.jpg&h=271&w=480&c=1&s=1) Services Australia describes fraud, debt-related machine learning use cases ---------------------------------------------------------------------------](http://www.itnews.com.au/news/services-australia-describes-fraud-debt-related-machine-learning-use-cases-615323)
+
+[![Image 34: US medical device maker Stryker's Microsoft environment attacked](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fmedical.png&h=271&w=480&c=1&s=1) US medical device maker Stryker's Microsoft environment attacked ----------------------------------------------------------------](http://www.itnews.com.au/news/us-medical-device-maker-strykers-microsoft-environment-attacked-624212)
+
+[![Image 35: techpartner.news logo](http://www.itnews.com.au/images/techpartner-logo-h.png)](https://www.techpartner.news/?__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)
+
+[![Image 36: Sydney-based AI-cloud waste startup raises $3m](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2f%c2%a9Hero-Shot-Photography-Optimaze-.jpg&h=140&w=231&c=1&s=0) Sydney-based AI-cloud waste startup raises $3m](https://www.techpartner.news/news/sydney-based-ai-cloud-waste-startup-raises-3m-621010?utm_source=itnews&utm_medium=web&utm_campaign=itn_boxout&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)[![Image 37: Brennan uses NiCE to modernise its contact centre](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2f1701401661408.jpg&h=140&w=231&c=1&s=0) Brennan uses NiCE to modernise its contact centre](https://www.techpartner.news/news/brennan-uses-nice-to-modernise-its-contact-centre-620983?utm_source=itnews&utm_medium=web&utm_campaign=itn_boxout&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)[![Image 38: Impact Awards: Tecala slashes customer response times for fintech IQumulate](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2f0_540_960_0_70__Galleries_20250818073743_17_PL-Awards25-154_Medium.jpg&h=140&w=231&c=1&s=0) Impact Awards: Tecala slashes customer response times for fintech IQumulate](https://www.techpartner.news/news/impact-awards-tecala-slashes-customer-response-times-for-fintech-iqumulate-621161?utm_source=itnews&utm_medium=web&utm_campaign=itn_boxout&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)[![Image 39: Interactive introduces private cloud platform](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fDan_Cox_(1)_(1).jpg&h=140&w=231&c=1&s=0) Interactive introduces private cloud platform](https://www.techpartner.news/news/interactive-introduces-private-cloud-platform-621177?utm_source=itnews&utm_medium=web&utm_campaign=itn_boxout&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)[![Image 40: Digital61 expands cybersecurity portfolio](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2f20230901110727_0_0_0_0_70__Features_20211207121924_cloud_1.jpg&h=140&w=231&c=1&s=0) Digital61 expands cybersecurity portfolio](https://www.techpartner.news/news/digital61-expands-cybersecurity-portfolio-620710?utm_source=itnews&utm_medium=web&utm_campaign=itn_boxout&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)
+
+Sponsored Links
+
+*   [![Image 41: Rubrik](https://i.nextmedia.com.au/Assets/82x25_Rubrik.png)](http://pubads.g.doubleclick.net/gampad/clk?id=7247095667&iu=/1003277/iTnews-SponsoredLinks) [Recover What Matters: Rubrik's Cyber Resilience Summit - Register free](http://pubads.g.doubleclick.net/gampad/clk?id=7247095667&iu=/1003277/iTnews-SponsoredLinks) 
+*   [![Image 42: Interactive](https://i.nextmedia.com.au/Assets/DCRelocation-SponsoredLink-Blue.png)](http://pubads.g.doubleclick.net/gampad/clk?id=7222505966&iu=/1003277/iTnews-SponsoredLinks) [Start your free trial of Keeper or request a demo](http://pubads.g.doubleclick.net/gampad/clk?id=7222505966&iu=/1003277/iTnews-SponsoredLinks) 
+*   [![Image 43: AIIA](https://i.nextmedia.com.au/Assets/2026_ITNews_Text_Logo.png)](http://pubads.g.doubleclick.net/gampad/clk?id=7209653183&iu=/1003277/iTnews-SponsoredLinks) [Take your tech innovation further: Enter the 2026 iAwards for national and international recognition](http://pubads.g.doubleclick.net/gampad/clk?id=7209653183&iu=/1003277/iTnews-SponsoredLinks) 
+
+### Most popular tech stories
+
+*    [![Image 44: Macquarie Uni's AI chief heads to La Trobe](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fphil_laufenberg_headshot_crop.jpg&h=236&w=349&c=1&s=1) Macquarie Uni's AI chief heads to La Trobe ------------------------------------------](http://www.itnews.com.au/news/macquarie-unis-ai-chief-heads-to-la-trobe-623997?utm_source=itnews&utm_medium=web&utm_campaign=networkbar) [Asahi Beverages targeting real-time sales insight -------------------------------------------------](http://www.itnews.com.au/news/asahi-beverages-targeting-real-time-sales-insight-623960?utm_source=itnews&utm_medium=web&utm_campaign=networkbar) [ABC drops Salesforce for Braze ------------------------------](http://www.itnews.com.au/news/abc-drops-salesforce-for-braze-621537?utm_source=itnews&utm_medium=web&utm_campaign=networkbar) [Medibank uses data cloud to hit and maintain "gold standard" for marketing --------------------------------------------------------------------------](http://www.itnews.com.au/news/medibank-uses-data-cloud-to-hit-and-maintain-gold-standard-for-marketing-623917?utm_source=itnews&utm_medium=web&utm_campaign=networkbar) [Virgin Australia, Wesfarmers strike OpenAI agreements -----------------------------------------------------](http://www.itnews.com.au/news/virgin-australia-wesfarmers-strike-openai-agreements-622235?utm_source=itnews&utm_medium=web&utm_campaign=networkbar) 
+*    [![Image 45: HamiltonJet partners with digital services provider Fortude](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fNews%2fARIA_AKL_Image.jpg&h=236&w=349&c=1&s=1) HamiltonJet partners with digital services provider Fortude -----------------------------------------------------------](https://www.techpartner.news/news/hamiltonjet-partners-with-digital-services-provider-fortude-619309?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [SentinelOne signs distribution agreement with Sektor ----------------------------------------------------](https://www.techpartner.news/news/sentinelone-signs-distribution-agreement-with-sektor-619307?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [Rapid7’s new SIEM combines exposure management with threat detection --------------------------------------------------------------------](https://www.techpartner.news/news/rapid7s-new-siem-combines-exposure-management-with-threat-detection-619294?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [The techpartner.news podcast, episode 3: Why security consultancy founder Kat McCrabb started with the hard stuff -----------------------------------------------------------------------------------------------------------------](https://www.techpartner.news/news/the-techpartnernews-podcast-episode-3-why-security-consultancy-founder-kat-mccrabb-started-with-the-hard-stuff-619272?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [Bluechip Infotech enters final stage of Goodson Imports acquisition -------------------------------------------------------------------](https://www.techpartner.news/news/bluechip-infotech-enters-final-stage-of-goodson-imports-acquisition-619284?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) 
+*    [![Image 46: 'Touch-free' smartphone controlled with head movements](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=http%3a%2f%2fi.nextmedia.com.au%2fNews%2f2014-09-29_Sesame_BASTIHANSEN_IMG_3129.jpg&h=236&w=349&c=1&s=1) 'Touch-free' smartphone controlled with head movements ------------------------------------------------------](https://www.iothub.com.au/news/touch-free-smartphone-controlled-with-head-movements-440246?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [Blackberry celebrates "giant step forward" ------------------------------------------](https://www.iothub.com.au/news/blackberry-celebrates-giant-step-forward-519699?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [Govt launches consumer tech label program for smart devices -----------------------------------------------------------](https://www.iothub.com.au/news/govt-launches-consumer-tech-label-program-for-smart-devices-618755?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [Photos: Australian industry explores data for net zero ------------------------------------------------------](https://www.iothub.com.au/gallery/photos-australian-industry-explores-data-for-net-zero-608808?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) [Axis Communications opens experience centre in Sydney tech hub --------------------------------------------------------------](https://www.iothub.com.au/news/axis-communications-opens-experience-centre-in-sydney-tech-hub-616447?utm_source=itnews&utm_medium=web&utm_campaign=networkbar&__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) 
+
+[Contact Us](http://www.itnews.com.au/page/contact)[About Us](http://www.itnews.com.au/page/about)[Editorial Guidelines](http://www.itnews.com.au/page/editorial-guidelines)[Authors](http://www.itnews.com.au/authors)[Feedback](http://www.itnews.com.au/feedback)[Advertise](http://www.itnews.com.au/page/advertising)[Newsletter Archive](http://www.itnews.com.au/newsletter)[Site Map](http://www.itnews.com.au/sitemap)[RSS](http://www.itnews.com.au/rss)
+
+[![Image 47: nextmedia](http://www.itnews.com.au/images/logo_nextmedia.png)](https://www.nextmedia.com.au/?__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)[© 2026 nextmedia Pty Ltd](http://www.itnews.com.au/page/copyright). 
+
+OTHER TECH SITES:[techpartner.news](https://www.techpartner.news/?__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)|[Digital Nation](https://www.itnews.com.au/digital-nation)|[IoT Hub](https://www.iothub.com.au/?__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f)
+
+ All rights reserved. This material may not be published, broadcast, rewritten or redistributed in any form without prior authorisation.
+
+Your use of this website constitutes acceptance of nextmedia's [Privacy Policy](https://www.nextmedia.com.au/privacy-policy/?__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) and [Terms & Conditions](https://www.nextmedia.com.au/terms-conditions/?__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f). 
+
+Powered By[![Image 48: Powered by Interactive](http://www.itnews.com.au/images/interactive-logo.png)](https://www.interactive.com.au/)
+
+Ad will close in 17s
+
+![Image 49](http://www.itnews.com.au/t.ashx?u=&c=347676&s=3&r=&n=%2fnews%2fArticle.aspx&q=id%3d347676)
+
+Accept
+
+By using our site you accept that we use and share cookies and similar technologies to perform analytics and provide content and ads tailored to your interests. By continuing to use our site, you consent to this. Please see our [Cookie Policy](https://www.nextmedia.com.au/cookie-policy?__hstc=119052758.113c6c5384faa82bce63eff76fa1ad33.1773281887015.1773281887015.1773281887015.1&__hssc=119052758.1.1773281887015&__hsfp=a9cc2efcfcc506695dc904ec491f705f) for more information.
+
+Close
+
+### Log In
+
+[Don't have an account? Register now!](http://www.itnews.com.au/register)
+
+Email:
+
+Password:
+
+- [x] Remember me  | [Forgot your password?](http://www.itnews.com.au/forgot "Forgot your password?")
+
+Log In Cancel

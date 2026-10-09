@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 680" width="420" height="680" role="img" aria-labelledby="title desc">
+<title id="title">Review sequence for secondary reviewers</title>
+<desc id="desc">Identify the claim, retain its evidence class, examine corroboration and contradiction, then record the conclusion or remaining gap.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L8 5L0 9" fill="none" stroke="#91a9bc" stroke-width="2"/></marker></defs>
+<rect width="420" height="680" rx="16" fill="#101824"/>
+<g font-family="system-ui, sans-serif" text-anchor="middle">
+<text x="210" y="44" fill="#f0f3f6" font-size="21" font-weight="700">KEEP THE RECORD REVIEWABLE</text>
+<text x="210" y="77" fill="#bac9d5" font-size="18">A continuity protocol</text>
+<text x="210" y="102" fill="#bac9d5" font-size="18">for secondary reviewers</text>
+<rect x="35" y="125" width="350" height="85" rx="10" fill="#1b2b3b" stroke="#647e93"/>
+<text x="210" y="159" fill="#f0f3f6" font-size="19">Identify</text>
+<text x="210" y="187" fill="#f0f3f6" font-size="19">the claim</text>
+<path d="M210 215V232" stroke="#91a9bc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="240" width="350" height="85" rx="10" fill="#1b2b3b" stroke="#647e93"/>
+<text x="210" y="274" fill="#f0f3f6" font-size="19">Retain its</text>
+<text x="210" y="302" fill="#f0f3f6" font-size="19">evidence class</text>
+<path d="M210 330V347" stroke="#91a9bc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="355" width="350" height="85" rx="10" fill="#1b2b3b" stroke="#647e93"/>
+<text x="210" y="389" fill="#f0f3f6" font-size="19">Examine evidence, corroboration,</text>
+<text x="210" y="417" fill="#f0f3f6" font-size="19">and contradiction</text>
+<path d="M210 445V462" stroke="#91a9bc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="470" width="350" height="85" rx="10" fill="#1b2b3b" stroke="#647e93"/>
+<text x="210" y="504" fill="#f0f3f6" font-size="19">Record the conclusion</text>
+<text x="210" y="532" fill="#f0f3f6" font-size="19">or remaining gap</text>
+<text x="210" y="605" fill="#bac9d5" font-size="18">Biography, criticism, and silence</text>
+<text x="210" y="632" fill="#bac9d5" font-size="18">are not verdicts.</text>
+</g></svg>

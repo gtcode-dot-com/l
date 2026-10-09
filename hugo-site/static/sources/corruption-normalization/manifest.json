@@ -1,0 +1,93 @@
+[
+  {
+    "file": "Hawaii_CISC_Final_Report_2022.pdf",
+    "url": "https://data.capitol.hawaii.gov/CommitteeFiles/Special/CISC/Document/FinalReport.pdf",
+    "retrieved": "2026-10-06",
+    "bytes": 7205596,
+    "sha256": "0b89ef8f463c948e33b9d1fa49732d69fe0e732a5e585dc6f6383cb441a800e4"
+  },
+  {
+    "file": "CivilBeat_Milner_Cant_Do_201608.html",
+    "url": "https://www.civilbeat.org/2016/08/neal-milner-hawaii-bureaucrats-and-the-cant-do-spirit/",
+    "retrieved": "2026-10-06",
+    "bytes": 152923,
+    "sha256": "2a00bb63534a460b42ab8491dfa95bdad3e6d8d136d147c61503b55e59f06539"
+  },
+  {
+    "file": "CivilBeat_Milner_Corruptomania_20260312.html",
+    "url": "https://www.civilbeat.org/2026/03/neal-milner-corruptomania-is-a-dangerous-thing/",
+    "retrieved": "2026-10-06",
+    "bytes": 146914,
+    "sha256": "544e3f0725aeca21725d3fbe663cba749d1b80cd142208dcfffaf42bb9c6ae2b"
+  },
+  {
+    "file": "CivilBeat_Roth_Public_Corruption_20231224.html",
+    "url": "https://www.civilbeat.org/2023/12/randy-roth-public-corruption-in-the-land-of-aloha/",
+    "retrieved": "2026-10-06",
+    "bytes": 170624,
+    "sha256": "7d541af99db470bebecfa675506a89c1661e94d45c4dc6747525e2fdd24f0af8"
+  },
+  {
+    "file": "Roth_Hawaii_Bar_Journal_202312.pdf",
+    "url": "https://media.randallroth.com/wp-content/uploads/2023/12/19151102/Public-Corruption-article-by-Randall-Roth-December2023HawaiiBarJournal.pdf",
+    "retrieved": "2026-10-06",
+    "bytes": 1082213,
+    "sha256": "b133b13e461fe71338465a69cedc61e01bc40d6bcdec9cf0ace3b40e1986d262"
+  },
+  {
+    "file": "CivilBeat_Sunshine_Survey_20240623.html",
+    "url": "https://www.civilbeat.org/2024/06/the-sunshine-survey-special-interests-have-too-much-influence-in-government/",
+    "retrieved": "2026-10-06",
+    "bytes": 162127,
+    "sha256": "945176fb14b76b0a2fdac00cd42fa7554631a5cbeb62e5d8dec9385827839f2e"
+  },
+  {
+    "file": "DOJ_Kealoha_Convictions_20190627_Metadata.json",
+    "url": "https://www.justice.gov/usao-sdca/pr/federal-jury-convicts-former-honolulu-prosecutor-katherine-kealoha-former-police-chief",
+    "retrieved": "2026-10-06",
+    "preservation": "Citation metadata only: direct download returned an access-check page; content verified through web retrieval.",
+    "sha256": "bd5a7727500ff53081d51720866be95e3c6961aeaf876601129b9d66bd1a100b"
+  },
+  {
+    "file": "DOJ_Kealoha_Sentencing_20201202_Metadata.json",
+    "url": "https://www.justice.gov/usao-sdca/pr/staggering-conspiracy-former-police-chief-prosecutor-and-police-officers-sentenced",
+    "retrieved": "2026-10-06",
+    "preservation": "Citation metadata only: direct download returned an access-check page; content verified through web retrieval.",
+    "sha256": "f36b3b098309b3a47307a12df572e05f57c5aa1e50461ee57efcf3a913fe240b"
+  },
+  {
+    "file": "DOJ_Honolulu_Officials_20250304_Metadata.json",
+    "url": "https://www.justice.gov/usao-sdca/pr/former-honolulu-city-officials-admit-they-conspired-secretly-pay-corrupt-former-chief",
+    "retrieved": "2026-10-06",
+    "preservation": "Citation metadata only: direct download returned an access-check page; content verified through web retrieval.",
+    "sha256": "d7a4b5cac9764de4837c26cea00f89ccb38d751e9072a404266f70f0f795f8f0"
+  },
+  {
+    "file": "Ashforth_Anand_2003_Metadata.json",
+    "url": "https://api.crossref.org/works/10.1016/S0191-3085(03)25001-2",
+    "retrieved": "2026-10-06",
+    "bytes": 56205,
+    "sha256": "b0a5ade7dcafc6eadc82483589c8b7aeff2815bc5cca97afed54a6d9cd602dd2"
+  },
+  {
+    "file": "Persson_Rothstein_Teorell_2013_Metadata.json",
+    "url": "https://api.crossref.org/works/10.1111/j.1468-0491.2012.01604.x",
+    "retrieved": "2026-10-06",
+    "bytes": 17970,
+    "sha256": "2d16b423917258bfc726fa980af7fac3cee81644f1f4721012c85e561fac203f"
+  },
+  {
+    "file": "Neshkova_Kalesnikaite_2019_Metadata.json",
+    "url": "https://api.crossref.org/works/10.1111/gove.12401",
+    "retrieved": "2026-10-06",
+    "bytes": 10327,
+    "sha256": "f6cea61d057ef0a176be32d3f2918dd44a6df206282675b91c506c98df6312d4"
+  },
+  {
+    "file": "Oxford_Participation_2021_Metadata.json",
+    "url": "https://academic.oup.com/book/39725/chapter-abstract/339754143",
+    "error": "HTTP Error 403: Forbidden",
+    "preservation": "Citation metadata only; publisher abstract verified through web retrieval; direct download HTTP 403.",
+    "sha256": "37c3e1173447e6a303516e428fb487860b6e90facf8e0146ab01261844e61867"
+  }
+]

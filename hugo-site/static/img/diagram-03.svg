@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="860px" height="240px" viewBox="0 150 860 25" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" font-size="14px" fill="#2c3e50">
+    <style>
+        .process-box { fill: #ecf0f1; stroke: #95a5a6; stroke-width: 1.5; }
+        .broker-box { fill: #fdedec; stroke: #c0392b; stroke-width: 1.5; } /* New style for broker */
+        .line { stroke: #34495e; stroke-width: 1.5; fill: none; }
+        .label { font-size: 12px; fill: #34495e; }
+        .title { font-weight: bold; }
+    </style>
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+        </marker>
+    </defs>
+
+    <!-- Client Request -->
+    <text x="55" y="140" text-anchor="middle" class="title">API Request</text>
+    <text x="55" y="170" text-anchor="middle" class="label">(e.g., POST /ingest)</text>
+    <path d="M 05 150 L 115 150" class="line" marker-end="url(#arrowhead)"/>
+
+    <!-- API Server -->
+    <rect x="115" y="100" width="180" height="100" rx="5" class="process-box"/>
+    <text x="205" y="140" text-anchor="middle" class="title">API Server</text>
+    <text x="205" y="160" text-anchor="middle" class="label">(FastAPI)</text>
+    <path d="M 295 150 L 370 150" class="line" marker-end="url(#arrowhead)"/>
+    <text x="332.5" y="135" text-anchor="middle" class="label">Push Task</text>
+
+    <!-- Message Broker -->
+    <rect x="370" y="100" width="190" height="100" rx="5" class="broker-box"/>
+    <text x="465" y="140" text-anchor="middle" class="title">Message Broker</text>
+    <text x="465" y="160" text-anchor="middle" class="label">(Redis Queue)</text>
+    <path d="M 560 150 L 625 150" class="line" marker-end="url(#arrowhead)"/>
+    <text x="592.5" y="135" text-anchor="middle" class="label">Pull Task</text>
+
+    <!-- Celery Workers -->
+    <g>
+        <title>A pool of scalable Celery workers</title>
+        <!-- Backmost Worker -->
+        <rect x="645" y="80" width="200" height="100" rx="5" class="process-box"/>
+        <!-- Middle Worker -->
+        <rect x="635" y="95" width="200" height="100" rx="5" class="process-box"/>
+        <!-- Frontmost Worker -->
+        <rect x="625" y="110" width="200" height="100" rx="5" class="process-box"/>
+        <text x="725" y="150" text-anchor="middle" class="title">Celery Worker</text>
+        <text x="725" y="170" text-anchor="middle" class="label">(CNS Application)</text>
+        <text x="805" y="200" text-anchor="middle" class="label" font-weight="bold">x N</text>
+    </g>
+</svg>

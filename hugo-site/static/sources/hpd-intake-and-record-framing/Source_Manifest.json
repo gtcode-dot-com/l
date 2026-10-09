@@ -1,0 +1,49 @@
+[
+  {
+    "file": "HPD_Policy_8_06_Police_Reports_20161101.pdf",
+    "publisher": "Honolulu Police Department",
+    "title": "Policy 8.06: Police Reports",
+    "publication_date": "2016-11-01",
+    "source_url": "https://www.honolulupd.org/wp-content/uploads/2020/01/PoliceReports-12-15-2016-21-57-49.pdf",
+    "resolved_url": "https://www.honolulupd.org/wp-content/uploads/2020/01/PoliceReports-12-15-2016-21-57-49.pdf",
+    "archived_on": "2026-10-06",
+    "sha256": "5ec83c386d943dce96ec7564837f830735b41ee03317279a852633e2cda2d30e",
+    "bytes": 1000381,
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "Hawaii_HRS_831_2017.pdf",
+    "publisher": "Hawaiʻi State Legislature",
+    "title": "HRS Chapter 831: Uniform Act on Status of Convicted Persons, 2017 edition",
+    "publication_date": "2017",
+    "source_url": "https://data.capitol.hawaii.gov/sessions/session2017/HRS-Chapter-PDF%27s/HRS_0831.pdf",
+    "resolved_url": "https://data.capitol.hawaii.gov/sessions/session2017/HRS-Chapter-PDF%27s/HRS_0831.pdf",
+    "archived_on": "2026-10-06",
+    "sha256": "82a2d9c5b0bf10bf627ec01f46acf451909c266a223abff77c38c3762ab00da6",
+    "bytes": 41139,
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "Hawaii_Act97_2018.pdf",
+    "publisher": "Hawaiʻi State Legislature",
+    "title": "2018 Act 97: criminal records, expungement and nonconviction data",
+    "publication_date": "2018-06-29",
+    "source_url": "https://data.capitol.hawaii.gov/sessions/sessionlaws/Years/SLH2018/SLH2018_Act97.pdf",
+    "resolved_url": "https://data.capitol.hawaii.gov/sessions/sessionlaws/Years/SLH2018/SLH2018_Act97.pdf",
+    "archived_on": "2026-10-06",
+    "sha256": "1380277161858747b5b86b53d6566f69246033c1e62c8d4bfcc797bb896131e0",
+    "bytes": 117572,
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "US_Schware_v_Board_of_Bar_Examiners_19570506.pdf",
+    "publisher": "Supreme Court of the United States; official U.S. Reports copy held by the Library of Congress",
+    "title": "Schware v. Board of Bar Examiners, 353 U.S. 232 (1957)",
+    "publication_date": "1957-05-06",
+    "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep353/usrep353232/usrep353232.pdf",
+    "archived_on": "2026-10-06",
+    "sha256": "834789b76533e5c2efa2c5dbc915c0f81d5b74df0ef9502bfb0859af337d181d",
+    "bytes": 573276,
+    "content_type": "application/pdf"
+  }
+]

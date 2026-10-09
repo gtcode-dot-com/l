@@ -1,0 +1,87 @@
+{
+  "layers": [
+    {
+      "num": 7,
+      "name": "Search-Index Anomaly",
+      "code": "THE INDEX",
+      "color": "#8844cc",
+      "url": "/diagnostics/bing-search-indexing-anomaly/",
+      "published": "Feb 13, 2026",
+      "mechanism": "Bing diagnostics show contradictory statuses and partial visibility",
+      "one_liner": "Bing previously returned zero visible results; a later site-search surfaced one non-investigative technical article and the captured first-page result set excluded the investigation corpus. Cause remains unresolved.",
+      "status": "published"
+    },
+    {
+      "num": 5,
+      "name": "Judicial Sealing",
+      "code": "THE NOD",
+      "color": "#44cccc",
+      "url": "/hawaii-courts/the-nod-visual-allegation/",
+      "published": "Feb 12, 2026",
+      "mechanism": "Disputed visual allegation in an audio-only proceeding followed by sealing",
+      "one_liner": "The visual allegation is a firsthand observation. The sealed audio can test the timing, answer, attempted record statement, and cutoff.",
+      "status": "published"
+    },
+    {
+      "num": 4,
+      "name": "Oversight Nullification",
+      "code": "THE ZERO COMMISSION",
+      "color": "#88cc44",
+      "url": "/hawaii-courts/zero-commission-judicial-conduct/",
+      "published": "Feb 15, 2026",
+      "mechanism": "100% complaint dismissal rate for six consecutive years",
+      "one_liner": "1,009 inquiries. 7 formal complaints. 0 sustained. Commissioner's spouse was an active judge for 21 years.",
+      "status": "published"
+    },
+    {
+      "num": 3,
+      "name": "Prosecution Blockade",
+      "code": "THE PAPER BAG",
+      "color": "#ffcc44",
+      "url": "/hawaii-courts/paper-bag-self-investigation/",
+      "published": "Feb 20, 2026",
+      "mechanism": "AG statements create a public-record conflict over special counsel authority",
+      "one_liner": "2024: 'The power already exists.' 2026: 'No such power exists.' The contradiction is documented; motive and internal rationale remain open.",
+      "status": "published"
+    },
+    {
+      "num": 2,
+      "name": "Report Suppression",
+      "code": "THE FIRST GATE",
+      "color": "#ff8844",
+      "url": "/hawaii-courts/the-first-gate/",
+      "published": "Mar 6, 2026",
+      "mechanism": "Report-intake refusal allegedly prevents case-number generation",
+      "one_liner": "Policy says 'shall.' Officer said 'stop telling me how to do my job.' PSO said 'totality.' No written authority found.",
+      "status": "live",
+      "live_detail": "HPD officer refused report intake, March 6, 2026, 8:10 AM HST"
+    }
+  ],
+  "series_hubs": [
+    {
+      "name": "The Closed Loop",
+      "url": "/hawaii-courts/closed-loop-oversight-failure/",
+      "desc": "Oversight series"
+    },
+    {
+      "name": "The Architecture of Access",
+      "url": "/geopolitics/architecture-of-access-luke-network/",
+      "desc": "Federal & PRC-facing mapping"
+    },
+    {
+      "name": "The Shape of the Cage",
+      "url": "/hawaii-courts/mechanisms-of-review-failure/",
+      "desc": "Structural model"
+    },
+    {
+      "name": "The Bridges",
+      "url": "/geopolitics/prc-access-mapping-hawaii/",
+      "desc": "PRC-facing access surface"
+    },
+    {
+      "name": "Cartography for Guppies",
+      "url": "/disclosures/cartography-for-guppies/",
+      "desc": "Methodology"
+    }
+  ]
+}

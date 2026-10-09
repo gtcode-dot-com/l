@@ -1,0 +1,644 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <style>
+      .body-text { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 13px; fill: #374151; }
+      .heading { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #111827; }
+      .small-text { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 11px; fill: #6B7280; }
+      .tiny-text { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 10px; fill: #9CA3AF; }
+      .code-text { font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; font-size: 12px; }
+      .badge-text { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 10px; font-weight: 500; }
+      .tab-text { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 12px; fill: #6B7280; }
+      .tab-active { fill: #3B82F6; font-weight: 600; }
+    </style>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadow-sm" x="-1%" y="-1%" width="102%" height="102%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="900" fill="#F7F8FA"/>
+
+  <!-- ===== TOP BAR ===== -->
+  <g id="topbar">
+    <rect x="0" y="0" width="1440" height="64" fill="#FFFFFF" stroke="#E2E6EA" stroke-width="1"/>
+    
+    <!-- Logo and Product Name -->
+    <g transform="translate(20, 18)">
+      <!-- Logo mark - film reel inspired -->
+      <circle cx="14" cy="14" r="12" fill="#3B82F6"/>
+      <circle cx="14" cy="14" r="4" fill="#FFFFFF"/>
+      <circle cx="14" cy="6" r="2" fill="#FFFFFF"/>
+      <circle cx="14" cy="22" r="2" fill="#FFFFFF"/>
+      <circle cx="6" cy="14" r="2" fill="#FFFFFF"/>
+      <circle cx="22" cy="14" r="2" fill="#FFFFFF"/>
+      <text x="34" y="19" class="heading" font-size="18px" fill="#111827">Cinema Debugger</text>
+    </g>
+
+    <!-- Fractal Breadcrumb Navigator -->
+    <g transform="translate(220, 20)">
+      <rect x="0" y="0" width="340" height="28" rx="4" fill="#F3F4F6" stroke="#E5E7EB"/>
+      <text x="12" y="18" class="small-text" fill="#9CA3AF">Program</text>
+      <text x="62" y="18" class="small-text" fill="#9CA3AF">›</text>
+      <text x="74" y="18" class="small-text" fill="#9CA3AF">Portfolio</text>
+      <text x="130" y="18" class="small-text" fill="#9CA3AF">›</text>
+      <text x="142" y="18" class="small-text" fill="#9CA3AF">Service</text>
+      <text x="188" y="18" class="small-text" fill="#9CA3AF">›</text>
+      <text x="200" y="18" class="small-text" fill="#3B82F6" font-weight="600">Repo</text>
+      <text x="232" y="18" class="small-text" fill="#9CA3AF">›</text>
+      <text x="244" y="18" class="small-text" fill="#3B82F6" font-weight="600">PR</text>
+      
+      <!-- Level dropdown -->
+      <rect x="270" y="3" width="64" height="22" rx="3" fill="#FFFFFF" stroke="#D1D5DB"/>
+      <text x="278" y="17" class="tiny-text" fill="#374151">Level ▾</text>
+    </g>
+
+    <!-- Search Box -->
+    <g transform="translate(590, 16)">
+      <rect x="0" y="0" width="320" height="32" rx="6" fill="#F9FAFB" stroke="#E5E7EB"/>
+      <circle cx="18" cy="16" r="7" fill="none" stroke="#9CA3AF" stroke-width="1.5"/>
+      <line x1="23" y1="21" x2="28" y2="26" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="38" y="20" class="small-text" fill="#9CA3AF">Search symbols, routes, risks, controls…</text>
+    </g>
+
+    <!-- Right side controls -->
+    <g transform="translate(1150, 16)">
+      <!-- Fellows Review Mode indicator -->
+      <rect x="0" y="0" width="130" height="28" rx="14" fill="#EEF2FF" stroke="#C7D2FE"/>
+      <circle cx="14" cy="14" r="4" fill="#6366F1"/>
+      <text x="24" y="18" class="small-text" fill="#4F46E5">Fellows Review Mode</text>
+      
+      <!-- Notification bell -->
+      <g transform="translate(150, 4)">
+        <circle cx="10" cy="10" r="10" fill="#F3F4F6"/>
+        <path d="M10 4 L10 5 M6 9 C6 6.8 7.8 5 10 5 C12.2 5 14 6.8 14 9 L14 12 L6 12 L6 9 M8 14 C8 15.1 8.9 16 10 16 C11.1 16 12 15.1 12 14" 
+              fill="none" stroke="#6B7280" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="14" cy="6" r="3" fill="#EF4444"/>
+      </g>
+      
+      <!-- User avatar -->
+      <g transform="translate(180, 0)">
+        <circle cx="14" cy="14" r="14" fill="#3B82F6"/>
+        <text x="14" y="18" text-anchor="middle" class="small-text" fill="#FFFFFF" font-weight="600">JD</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== SECONDARY CONTROL ROW ===== -->
+  <g id="secondary_controls">
+    <rect x="0" y="64" width="1440" height="44" fill="#FFFFFF" stroke="#E2E6EA" stroke-width="1"/>
+    
+    <!-- Lens Chips -->
+    <g transform="translate(20, 72)">
+      <!-- Security chip - active -->
+      <rect x="0" y="0" width="70" height="26" rx="13" fill="#3B82F6"/>
+      <text x="35" y="17" text-anchor="middle" class="badge-text" fill="#FFFFFF">Security</text>
+      
+      <!-- Public API chip -->
+      <rect x="78" y="0" width="76" height="26" rx="13" fill="#F3F4F6" stroke="#E5E7EB"/>
+      <text x="116" y="17" text-anchor="middle" class="badge-text" fill="#6B7280">Public API</text>
+      
+      <!-- Reliability chip -->
+      <rect x="162" y="0" width="74" height="26" rx="13" fill="#F3F4F6" stroke="#E5E7EB"/>
+      <text x="199" y="17" text-anchor="middle" class="badge-text" fill="#6B7280">Reliability</text>
+      
+      <!-- Performance chip - active -->
+      <rect x="244" y="0" width="86" height="26" rx="13" fill="#3B82F6"/>
+      <text x="287" y="17" text-anchor="middle" class="badge-text" fill="#FFFFFF">Performance</text>
+      
+      <!-- Maintainability chip -->
+      <rect x="338" y="0" width="96" height="26" rx="13" fill="#F3F4F6" stroke="#E5E7EB"/>
+      <text x="386" y="17" text-anchor="middle" class="badge-text" fill="#6B7280">Maintainability</text>
+      
+      <!-- Compliance chip -->
+      <rect x="442" y="0" width="80" height="26" rx="13" fill="#F3F4F6" stroke="#E5E7EB"/>
+      <text x="482" y="17" text-anchor="middle" class="badge-text" fill="#6B7280">Compliance</text>
+    </g>
+    
+    <!-- Keyboard hints -->
+    <g transform="translate(780, 78)">
+      <text class="tiny-text" fill="#9CA3AF">
+        <tspan fill="#6B7280" font-weight="500">j/k</tspan> navigate  
+        <tspan fill="#6B7280" font-weight="500">enter</tspan> expand  
+        <tspan fill="#6B7280" font-weight="500">g</tspan> graph  
+        <tspan fill="#6B7280" font-weight="500">/</tspan> search
+      </text>
+    </g>
+    
+    <!-- Index status -->
+    <g transform="translate(1300, 76)">
+      <circle cx="6" cy="10" r="4" fill="#22C55E"/>
+      <text x="16" y="14" class="small-text" fill="#6B7280">Index: up to date</text>
+    </g>
+  </g>
+
+  <!-- ===== MAIN BODY ===== -->
+  <g id="main_body" transform="translate(0, 108)">
+    
+    <!-- ===== COLUMN A: SCENE TIMELINE ===== -->
+    <g id="left_timeline" transform="translate(16, 16)">
+      <rect x="0" y="0" width="300" height="720" rx="8" fill="#FFFFFF" stroke="#E2E6EA" filter="url(#shadow)"/>
+      
+      <!-- Panel header -->
+      <rect x="0" y="0" width="300" height="44" rx="8" fill="#FFFFFF"/>
+      <rect x="0" y="36" width="300" height="8" fill="#FFFFFF"/>
+      <text x="16" y="28" class="heading">Scenes</text>
+      <text x="250" y="28" class="small-text" fill="#9CA3AF">12 total</text>
+      <line x1="0" y1="44" x2="300" y2="44" stroke="#E2E6EA"/>
+      
+      <!-- Scrub indicator (left edge) -->
+      <rect x="0" y="44" width="4" height="676" fill="#F3F4F6"/>
+      <rect x="0" y="180" width="4" height="60" fill="#3B82F6" rx="2"/>
+      
+      <!-- Scene cards -->
+      <g transform="translate(12, 52)">
+        <!-- Scene 1 -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-011</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">Init config refactor</text>
+          <rect x="48" y="22" width="50" height="14" rx="2" fill="#DBEAFE"/>
+          <text x="54" y="32" class="tiny-text" fill="#3B82F6">config</text>
+          <circle cx="260" cy="28" r="8" fill="#22C55E" opacity="0.2"/>
+          <path d="M256 28 L259 31 L265 25" stroke="#22C55E" stroke-width="1.5" fill="none"/>
+        </g>
+        
+        <!-- Scene 2 -->
+        <g transform="translate(0, 62)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-012</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">Auth middleware refactor</text>
+          <rect x="48" y="22" width="70" height="14" rx="2" fill="#FEF3C7"/>
+          <text x="54" y="32" class="tiny-text" fill="#D97706">boundary:auth</text>
+          <circle cx="260" cy="28" r="8" fill="#22C55E" opacity="0.2"/>
+          <path d="M256 28 L259 31 L265 25" stroke="#22C55E" stroke-width="1.5" fill="none"/>
+        </g>
+        
+        <!-- Scene 3 -->
+        <g transform="translate(0, 124)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-013</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">HTTP route changes</text>
+          <rect x="48" y="22" width="72" height="14" rx="2" fill="#DBEAFE"/>
+          <text x="54" y="32" class="tiny-text" fill="#3B82F6">interface:http</text>
+          <circle cx="260" cy="28" r="8" fill="#22C55E" opacity="0.2"/>
+          <path d="M256 28 L259 31 L265 25" stroke="#22C55E" stroke-width="1.5" fill="none"/>
+        </g>
+        
+        <!-- Scene 4 - SELECTED -->
+        <g transform="translate(0, 186)">
+          <rect x="0" y="0" width="276" height="72" rx="4" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#3B82F6"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#FFFFFF" font-weight="600">S-014</text>
+          <text x="48" y="14" class="small-text" fill="#1E40AF" font-weight="600">Add PII redaction</text>
+          <rect x="48" y="22" width="56" height="14" rx="2" fill="#FEE2E2"/>
+          <text x="54" y="32" class="tiny-text" fill="#DC2626">risk:pii_leak</text>
+          <rect x="110" y="22" width="70" height="14" rx="2" fill="#FEF3C7"/>
+          <text x="116" y="32" class="tiny-text" fill="#D97706">boundary:auth</text>
+          <rect x="48" y="40" width="80" height="14" rx="2" fill="#F3E8FF"/>
+          <text x="54" y="50" class="tiny-text" fill="#7C3AED">compliance:gdpr</text>
+          <circle cx="260" cy="36" r="8" fill="#F59E0B" opacity="0.2"/>
+          <circle cx="260" cy="36" r="3" fill="#F59E0B"/>
+        </g>
+        
+        <!-- Scene 5 -->
+        <g transform="translate(0, 264)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-015</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">Token validation update</text>
+          <rect x="48" y="22" width="70" height="14" rx="2" fill="#FEF3C7"/>
+          <text x="54" y="32" class="tiny-text" fill="#D97706">boundary:auth</text>
+          <circle cx="260" cy="28" r="8" fill="#E5E7EB"/>
+        </g>
+        
+        <!-- Scene 6 -->
+        <g transform="translate(0, 326)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-016</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">Error handling refactor</text>
+          <rect x="48" y="22" width="48" height="14" rx="2" fill="#DCFCE7"/>
+          <text x="54" y="32" class="tiny-text" fill="#16A34A">reliability</text>
+          <circle cx="260" cy="28" r="8" fill="#E5E7EB"/>
+        </g>
+        
+        <!-- Scene 7 -->
+        <g transform="translate(0, 388)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-017</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">Cache layer updates</text>
+          <rect x="48" y="22" width="58" height="14" rx="2" fill="#FEF3C7"/>
+          <text x="54" y="32" class="tiny-text" fill="#D97706">performance</text>
+          <circle cx="260" cy="28" r="8" fill="#E5E7EB"/>
+        </g>
+        
+        <!-- Scene 8 -->
+        <g transform="translate(0, 450)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-018</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">Database migration</text>
+          <rect x="48" y="22" width="50" height="14" rx="2" fill="#FEE2E2"/>
+          <text x="54" y="32" class="tiny-text" fill="#DC2626">risk:data</text>
+          <circle cx="260" cy="28" r="8" fill="#E5E7EB"/>
+        </g>
+        
+        <!-- Scene 9 -->
+        <g transform="translate(0, 512)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-019</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">API versioning</text>
+          <rect x="48" y="22" width="72" height="14" rx="2" fill="#DBEAFE"/>
+          <text x="54" y="32" class="tiny-text" fill="#3B82F6">interface:http</text>
+          <circle cx="260" cy="28" r="8" fill="#E5E7EB"/>
+        </g>
+        
+        <!-- Scene 10 -->
+        <g transform="translate(0, 574)">
+          <rect x="0" y="0" width="276" height="56" rx="4" fill="#F9FAFB"/>
+          <rect x="0" y="0" width="40" height="20" rx="3" fill="#E5E7EB"/>
+          <text x="20" y="14" text-anchor="middle" class="tiny-text" fill="#6B7280">S-020</text>
+          <text x="48" y="14" class="small-text" fill="#374151" font-weight="500">Test coverage additions</text>
+          <rect x="48" y="22" width="36" height="14" rx="2" fill="#DCFCE7"/>
+          <text x="54" y="32" class="tiny-text" fill="#16A34A">tests</text>
+          <circle cx="260" cy="28" r="8" fill="#E5E7EB"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- ===== COLUMN B: CENTER STAGE ===== -->
+    <g id="center_stage" transform="translate(332, 16)">
+      <rect x="0" y="0" width="720" height="720" rx="8" fill="#FFFFFF" stroke="#E2E6EA" filter="url(#shadow)"/>
+      
+      <!-- Scene header -->
+      <g transform="translate(20, 16)">
+        <rect x="0" y="0" width="46" height="24" rx="4" fill="#3B82F6"/>
+        <text x="23" y="16" text-anchor="middle" class="badge-text" fill="#FFFFFF">S-014</text>
+        <text x="58" y="18" class="heading" font-size="18px">Add PII Redaction to Login Audit Logs</text>
+        
+        <!-- Confidence meter -->
+        <g transform="translate(540, 0)">
+          <rect x="0" y="0" width="100" height="24" rx="4" fill="#F3F4F6"/>
+          <text x="10" y="16" class="small-text" fill="#6B7280">Confidence:</text>
+          <text x="72" y="16" class="small-text" fill="#3B82F6" font-weight="600">0.82</text>
+          <circle cx="92" cy="12" r="6" fill="none" stroke="#9CA3AF" stroke-width="1"/>
+          <text x="92" y="15" text-anchor="middle" class="tiny-text" fill="#9CA3AF">i</text>
+        </g>
+      </g>
+      
+      <!-- Claims section -->
+      <g transform="translate(20, 52)">
+        <text x="0" y="14" class="small-text" fill="#6B7280" font-weight="500">CLAIMS</text>
+        
+        <!-- Claim cards -->
+        <g transform="translate(0, 24)">
+          <!-- Claim 1 - Pending -->
+          <rect x="0" y="0" width="220" height="44" rx="6" fill="#FEF3C7" stroke="#F59E0B"/>
+          <circle cx="16" cy="22" r="6" fill="#F59E0B"/>
+          <text x="30" y="18" class="small-text" fill="#92400E" font-weight="500">No new PII reaches log sink</text>
+          <rect x="30" y="26" width="50" height="14" rx="2" fill="#FDE68A"/>
+          <text x="36" y="36" class="tiny-text" fill="#92400E">Pending</text>
+          
+          <!-- Claim 2 - Pass -->
+          <rect x="230" y="0" width="200" height="44" rx="6" fill="#DCFCE7" stroke="#22C55E"/>
+          <circle cx="246" cy="22" r="6" fill="#22C55E"/>
+          <path d="M243 22 L245 24 L249 20" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+          <text x="260" y="18" class="small-text" fill="#166534" font-weight="500">Auth boundary preserved</text>
+          <rect x="260" y="26" width="32" height="14" rx="2" fill="#BBF7D0"/>
+          <text x="266" y="36" class="tiny-text" fill="#166534">Pass</text>
+          
+          <!-- Claim 3 - Pass -->
+          <rect x="440" y="0" width="160" height="44" rx="6" fill="#DCFCE7" stroke="#22C55E"/>
+          <circle cx="456" cy="22" r="6" fill="#22C55E"/>
+          <path d="M453 22 L455 24 L459 20" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+          <text x="470" y="18" class="small-text" fill="#166534" font-weight="500">API unchanged</text>
+          <rect x="470" y="26" width="32" height="14" rx="2" fill="#BBF7D0"/>
+          <text x="476" y="36" class="tiny-text" fill="#166534">Pass</text>
+        </g>
+      </g>
+      
+      <!-- Tab bar for diff/graph/runtime/policies -->
+      <g transform="translate(20, 130)">
+        <rect x="0" y="0" width="680" height="36" rx="4" fill="#F3F4F6"/>
+        <rect x="2" y="2" width="60" height="32" rx="3" fill="#FFFFFF" filter="url(#shadow-sm)"/>
+        <text x="32" y="22" text-anchor="middle" class="tab-text tab-active">Diff</text>
+        <text x="100" y="22" text-anchor="middle" class="tab-text">Graph Slice</text>
+        <text x="190" y="22" text-anchor="middle" class="tab-text">Runtime</text>
+        <text x="270" y="22" text-anchor="middle" class="tab-text">Policies</text>
+      </g>
+      
+      <!-- Diff panel -->
+      <g transform="translate(20, 176)">
+        <rect x="0" y="0" width="680" height="400" rx="6" fill="#1F2937" stroke="#374151"/>
+        
+        <!-- Diff header -->
+        <rect x="0" y="0" width="680" height="32" rx="6" fill="#374151"/>
+        <rect x="0" y="24" width="680" height="8" fill="#374151"/>
+        <text x="16" y="20" class="code-text" fill="#9CA3AF">lib/auth/logger.ex</text>
+        <text x="580" y="20" class="tiny-text" fill="#6B7280">+12 -8 lines</text>
+        
+        <!-- Line numbers and code -->
+        <g transform="translate(0, 40)">
+          <!-- Context line -->
+          <rect x="0" y="0" width="680" height="24" fill="#1F2937"/>
+          <text x="16" y="16" class="code-text" fill="#6B7280">108</text>
+          <text x="50" y="16" class="code-text" fill="#9CA3AF">  def log_auth_event(event, metadata) do</text>
+          
+          <!-- Context line -->
+          <rect x="0" y="24" width="680" height="24" fill="#1F2937"/>
+          <text x="16" y="40" class="code-text" fill="#6B7280">109</text>
+          <text x="50" y="40" class="code-text" fill="#9CA3AF">    user = metadata[:user]</text>
+          
+          <!-- Removed line -->
+          <rect x="0" y="48" width="680" height="24" fill="#450A0A" opacity="0.5"/>
+          <text x="16" y="64" class="code-text" fill="#FCA5A5">110</text>
+          <text x="42" y="64" class="code-text" fill="#FCA5A5">-</text>
+          <text x="50" y="64" class="code-text" fill="#FCA5A5">    email = user.email</text>
+          
+          <!-- Added line -->
+          <rect x="0" y="72" width="680" height="24" fill="#052E16" opacity="0.5"/>
+          <text x="16" y="88" class="code-text" fill="#86EFAC">110</text>
+          <text x="42" y="88" class="code-text" fill="#86EFAC">+</text>
+          <text x="50" y="88" class="code-text" fill="#86EFAC">    email = redact(user.email)</text>
+          
+          <!-- Context line -->
+          <rect x="0" y="96" width="680" height="24" fill="#1F2937"/>
+          <text x="16" y="112" class="code-text" fill="#6B7280">111</text>
+          <text x="50" y="112" class="code-text" fill="#9CA3AF"></text>
+          
+          <!-- Removed line -->
+          <rect x="0" y="120" width="680" height="24" fill="#450A0A" opacity="0.5"/>
+          <text x="16" y="136" class="code-text" fill="#FCA5A5">112</text>
+          <text x="42" y="136" class="code-text" fill="#FCA5A5">-</text>
+          <text x="50" y="136" class="code-text" fill="#FCA5A5">    Logger.info("user_email=#{email}")</text>
+          
+          <!-- Added line -->
+          <rect x="0" y="144" width="680" height="24" fill="#052E16" opacity="0.5"/>
+          <text x="16" y="160" class="code-text" fill="#86EFAC">112</text>
+          <text x="42" y="160" class="code-text" fill="#86EFAC">+</text>
+          <text x="50" y="160" class="code-text" fill="#86EFAC">    Logger.info("user_email=#{redact(email)}")</text>
+          
+          <!-- Context lines -->
+          <rect x="0" y="168" width="680" height="24" fill="#1F2937"/>
+          <text x="16" y="184" class="code-text" fill="#6B7280">113</text>
+          <text x="50" y="184" class="code-text" fill="#9CA3AF">    Logger.info("auth_event=#{event}")</text>
+          
+          <rect x="0" y="192" width="680" height="24" fill="#1F2937"/>
+          <text x="16" y="208" class="code-text" fill="#6B7280">114</text>
+          <text x="50" y="208" class="code-text" fill="#9CA3AF">  end</text>
+          
+          <rect x="0" y="216" width="680" height="24" fill="#1F2937"/>
+          <text x="16" y="232" class="code-text" fill="#6B7280">115</text>
+          <text x="50" y="232" class="code-text" fill="#9CA3AF"></text>
+          
+          <!-- Added function -->
+          <rect x="0" y="240" width="680" height="24" fill="#052E16" opacity="0.5"/>
+          <text x="16" y="256" class="code-text" fill="#86EFAC">116</text>
+          <text x="42" y="256" class="code-text" fill="#86EFAC">+</text>
+          <text x="50" y="256" class="code-text" fill="#86EFAC">  defp redact(value) when is_binary(value) do</text>
+          
+          <rect x="0" y="264" width="680" height="24" fill="#052E16" opacity="0.5"/>
+          <text x="16" y="280" class="code-text" fill="#86EFAC">117</text>
+          <text x="42" y="280" class="code-text" fill="#86EFAC">+</text>
+          <text x="50" y="280" class="code-text" fill="#86EFAC">    "[REDACTED]"</text>
+          
+          <rect x="0" y="288" width="680" height="24" fill="#052E16" opacity="0.5"/>
+          <text x="16" y="304" class="code-text" fill="#86EFAC">118</text>
+          <text x="42" y="304" class="code-text" fill="#86EFAC">+</text>
+          <text x="50" y="304" class="code-text" fill="#86EFAC">  end</text>
+        </g>
+        
+        <!-- AST callout -->
+        <g transform="translate(420, 320)">
+          <rect x="0" y="0" width="250" height="48" rx="6" fill="#1E3A5F" stroke="#3B82F6"/>
+          <circle cx="16" cy="24" r="8" fill="#3B82F6"/>
+          <text x="16" y="28" text-anchor="middle" class="tiny-text" fill="#FFFFFF">✦</text>
+          <text x="32" y="18" class="tiny-text" fill="#93C5FD">AST-aware mapping</text>
+          <text x="32" y="34" class="tiny-text" fill="#BFDBFE">Move/Rename: token_verify/2 → verify_token/2</text>
+        </g>
+      </g>
+      
+      <!-- Scene scrubber timeline -->
+      <g transform="translate(20, 590)">
+        <text x="0" y="14" class="small-text" fill="#6B7280">Scene Timeline</text>
+        <rect x="0" y="24" width="680" height="8" rx="4" fill="#E5E7EB"/>
+        <!-- Scene markers -->
+        <circle cx="28" cy="28" r="4" fill="#22C55E"/>
+        <circle cx="85" cy="28" r="4" fill="#22C55E"/>
+        <circle cx="142" cy="28" r="4" fill="#22C55E"/>
+        <circle cx="199" cy="28" r="6" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+        <circle cx="256" cy="28" r="4" fill="#E5E7EB"/>
+        <circle cx="313" cy="28" r="4" fill="#E5E7EB"/>
+        <circle cx="370" cy="28" r="4" fill="#E5E7EB"/>
+        <circle cx="427" cy="28" r="4" fill="#E5E7EB"/>
+        <circle cx="484" cy="28" r="4" fill="#E5E7EB"/>
+        <circle cx="541" cy="28" r="4" fill="#E5E7EB"/>
+        <circle cx="598" cy="28" r="4" fill="#E5E7EB"/>
+        <circle cx="655" cy="28" r="4" fill="#E5E7EB"/>
+        
+        <!-- Progress fill -->
+        <rect x="0" y="24" width="199" height="8" rx="4" fill="#3B82F6" opacity="0.3"/>
+      </g>
+      
+      <!-- Action buttons -->
+      <g transform="translate(20, 640)">
+        <rect x="0" y="0" width="140" height="40" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+        <text x="70" y="25" text-anchor="middle" class="body-text" fill="#374151">Request changes</text>
+        
+        <rect x="152" y="0" width="130" height="40" rx="6" fill="#3B82F6"/>
+        <text x="217" y="25" text-anchor="middle" class="body-text" fill="#FFFFFF" font-weight="500">Approve scene</text>
+      </g>
+    </g>
+
+    <!-- ===== COLUMN C: EVIDENCE CONSOLE ===== -->
+    <g id="right_console" transform="translate(1068, 16)">
+      <rect x="0" y="0" width="356" height="720" rx="8" fill="#FFFFFF" stroke="#E2E6EA" filter="url(#shadow)"/>
+      
+      <!-- Panel header -->
+      <text x="16" y="28" class="heading">Evidence Console</text>
+      
+      <!-- Tabs -->
+      <g transform="translate(16, 44)">
+        <rect x="0" y="0" width="324" height="32" rx="4" fill="#F3F4F6"/>
+        <rect x="2" y="2" width="70" height="28" rx="3" fill="#FFFFFF" filter="url(#shadow-sm)"/>
+        <text x="37" y="20" text-anchor="middle" class="tab-text tab-active">Evidence</text>
+        <text x="105" y="20" text-anchor="middle" class="tab-text">Graph</text>
+        <text x="170" y="20" text-anchor="middle" class="tab-text">Runtime</text>
+        <text x="250" y="20" text-anchor="middle" class="tab-text">Compliance</text>
+      </g>
+      
+      <!-- Evidence list -->
+      <g transform="translate(16, 90)">
+        <text x="0" y="14" class="small-text" fill="#6B7280" font-weight="500">EVIDENCE</text>
+        
+        <!-- Evidence item 1 -->
+        <g transform="translate(0, 24)">
+          <rect x="0" y="0" width="324" height="44" rx="4" fill="#F9FAFB" stroke="#E5E7EB"/>
+          <circle cx="16" cy="22" r="8" fill="#DBEAFE"/>
+          <text x="16" y="26" text-anchor="middle" class="tiny-text" fill="#3B82F6">📄</text>
+          <text x="32" y="18" class="small-text" fill="#374151" font-weight="500">file: lib/auth/logger.ex</text>
+          <text x="32" y="32" class="tiny-text" fill="#6B7280">lines 112–135</text>
+          <text x="290" y="24" class="tiny-text" fill="#3B82F6">→</text>
+        </g>
+        
+        <!-- Evidence item 2 -->
+        <g transform="translate(0, 76)">
+          <rect x="0" y="0" width="324" height="44" rx="4" fill="#F9FAFB" stroke="#E5E7EB"/>
+          <circle cx="16" cy="22" r="8" fill="#DCFCE7"/>
+          <text x="16" y="26" text-anchor="middle" class="tiny-text" fill="#22C55E">✓</text>
+          <text x="32" y="18" class="small-text" fill="#374151" font-weight="500">test: auth_logger_redaction_test</text>
+          <text x="32" y="32" class="tiny-text" fill="#22C55E">14/14 passing</text>
+          <text x="290" y="24" class="tiny-text" fill="#3B82F6">→</text>
+        </g>
+        
+        <!-- Evidence item 3 -->
+        <g transform="translate(0, 128)">
+          <rect x="0" y="0" width="324" height="44" rx="4" fill="#F9FAFB" stroke="#E5E7EB"/>
+          <circle cx="16" cy="22" r="8" fill="#FEF3C7"/>
+          <text x="16" y="26" text-anchor="middle" class="tiny-text" fill="#F59E0B">⚡</text>
+          <text x="32" y="18" class="small-text" fill="#374151" font-weight="500">trace: POST /login p95</text>
+          <text x="32" y="32" class="tiny-text" fill="#6B7280">+3ms (pre-prod)</text>
+          <text x="290" y="24" class="tiny-text" fill="#3B82F6">→</text>
+        </g>
+      </g>
+      
+      <!-- Coverage bar -->
+      <g transform="translate(16, 280)">
+        <text x="0" y="14" class="small-text" fill="#6B7280" font-weight="500">COVERAGE</text>
+        <rect x="0" y="24" width="324" height="8" rx="4" fill="#E5E7EB"/>
+        <rect x="0" y="24" width="253" height="8" rx="4" fill="#3B82F6"/>
+        <text x="264" y="36" class="small-text" fill="#3B82F6" font-weight="600">78%</text>
+        <text x="290" y="36" class="tiny-text" fill="#22C55E">+4%</text>
+      </g>
+      
+      <!-- Policy gates -->
+      <g transform="translate(16, 330)">
+        <text x="0" y="14" class="small-text" fill="#6B7280" font-weight="500">POLICY GATES</text>
+        
+        <!-- Policy 1 - PASS -->
+        <g transform="translate(0, 24)">
+          <rect x="0" y="0" width="324" height="40" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+          <circle cx="16" cy="20" r="6" fill="#22C55E"/>
+          <path d="M13 20 L15 22 L19 18" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+          <text x="30" y="16" class="tiny-text" fill="#166534">policy:auth_changes_require_security_review</text>
+          <rect x="280" y="12" width="36" height="16" rx="3" fill="#22C55E"/>
+          <text x="298" y="23" text-anchor="middle" class="tiny-text" fill="#FFFFFF" font-weight="600">PASS</text>
+        </g>
+        
+        <!-- Policy 2 - WARN -->
+        <g transform="translate(0, 72)">
+          <rect x="0" y="0" width="324" height="52" rx="4" fill="#FFFBEB" stroke="#FDE68A"/>
+          <circle cx="16" cy="20" r="6" fill="#F59E0B"/>
+          <text x="16" y="24" text-anchor="middle" class="tiny-text" fill="#FFFFFF" font-weight="600">!</text>
+          <text x="30" y="16" class="tiny-text" fill="#92400E">policy:pii_logging_requires_redaction</text>
+          <rect x="272" y="8" width="44" height="16" rx="3" fill="#F59E0B"/>
+          <text x="294" y="19" text-anchor="middle" class="tiny-text" fill="#FFFFFF" font-weight="600">WARN</text>
+          <text x="30" y="38" class="tiny-text" fill="#D97706">Requires attestation</text>
+        </g>
+        
+        <!-- Policy 3 - PASS -->
+        <g transform="translate(0, 132)">
+          <rect x="0" y="0" width="324" height="40" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+          <circle cx="16" cy="20" r="6" fill="#22C55E"/>
+          <path d="M13 20 L15 22 L19 18" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+          <text x="30" y="16" class="tiny-text" fill="#166534">policy:public_api_compatibility</text>
+          <rect x="280" y="12" width="36" height="16" rx="3" fill="#22C55E"/>
+          <text x="298" y="23" text-anchor="middle" class="tiny-text" fill="#FFFFFF" font-weight="600">PASS</text>
+        </g>
+      </g>
+      
+      <!-- Approvals -->
+      <g transform="translate(16, 510)">
+        <text x="0" y="14" class="small-text" fill="#6B7280" font-weight="500">APPROVALS</text>
+        
+        <!-- Required approvals -->
+        <g transform="translate(0, 24)">
+          <!-- Security - Pending -->
+          <rect x="0" y="0" width="156" height="44" rx="4" fill="#FEF3C7" stroke="#FDE68A"/>
+          <circle cx="16" cy="22" r="6" fill="#F59E0B"/>
+          <text x="30" y="18" class="small-text" fill="#92400E" font-weight="500">Security</text>
+          <text x="30" y="32" class="tiny-text" fill="#D97706">Pending</text>
+          
+          <!-- Service Owner - Approved -->
+          <rect x="168" y="0" width="156" height="44" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+          <circle cx="184" cy="22" r="6" fill="#22C55E"/>
+          <path d="M181 22 L183 24 L187 20" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+          <text x="198" y="18" class="small-text" fill="#166534" font-weight="500">Service Owner</text>
+          <text x="198" y="32" class="tiny-text" fill="#22C55E">Approved</text>
+        </g>
+        
+        <!-- Signature chip -->
+        <g transform="translate(0, 76)">
+          <rect x="0" y="0" width="260" height="32" rx="16" fill="#EEF2FF" stroke="#C7D2FE"/>
+          <circle cx="16" cy="16" r="10" fill="#6366F1"/>
+          <text x="16" y="20" text-anchor="middle" class="tiny-text" fill="#FFFFFF" font-weight="600">AP</text>
+          <text x="34" y="20" class="small-text" fill="#4F46E5">Approved by A. Patel (Service Owner)</text>
+        </g>
+      </g>
+      
+      <!-- Call graph preview -->
+      <g transform="translate(16, 620)">
+        <text x="0" y="14" class="small-text" fill="#6B7280" font-weight="500">CALL GRAPH SLICE</text>
+        
+        <g transform="translate(0, 24)">
+          <rect x="0" y="0" width="324" height="70" rx="4" fill="#F9FAFB" stroke="#E5E7EB"/>
+          
+          <!-- Nodes -->
+          <circle cx="40" cy="35" r="12" fill="#DBEAFE" stroke="#3B82F6"/>
+          <text x="40" y="39" text-anchor="middle" class="tiny-text" fill="#3B82F6">auth</text>
+          
+          <circle cx="120" cy="20" r="10" fill="#FEF3C7" stroke="#F59E0B"/>
+          <text x="120" y="24" text-anchor="middle" class="tiny-text" fill="#D97706">log</text>
+          
+          <circle cx="120" cy="50" r="10" fill="#DCFCE7" stroke="#22C55E"/>
+          <text x="120" y="54" text-anchor="middle" class="tiny-text" fill="#16A34A">redact</text>
+          
+          <circle cx="200" cy="35" r="12" fill="#E5E7EB" stroke="#9CA3AF"/>
+          <text x="200" y="39" text-anchor="middle" class="tiny-text" fill="#6B7280">sink</text>
+          
+          <circle cx="280" cy="35" r="10" fill="#F3E8FF" stroke="#A855F7"/>
+          <text x="280" y="39" text-anchor="middle" class="tiny-text" fill="#7C3AED">ext</text>
+          
+          <!-- Edges -->
+          <line x1="52" y1="30" x2="108" y2="22" stroke="#9CA3AF" stroke-width="1"/>
+          <line x1="52" y1="40" x2="108" y2="48" stroke="#9CA3AF" stroke-width="1"/>
+          <line x1="130" y1="25" x2="188" y2="32" stroke="#9CA3AF" stroke-width="1"/>
+          <line x1="130" y1="45" x2="188" y2="38" stroke="#9CA3AF" stroke-width="1"/>
+          <line x1="212" y1="35" x2="268" y2="35" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3,2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== FOOTER ===== -->
+  <g id="footer">
+    <rect x="0" y="872" width="1440" height="28" fill="#F9FAFB" stroke="#E2E6EA" stroke-width="1"/>
+    
+    <!-- Left: Commit info -->
+    <text x="20" y="890" class="small-text" fill="#6B7280">
+      Commit: <tspan fill="#374151" font-family="SF Mono, Consolas, monospace">abc1234</tspan> → <tspan fill="#374151" font-family="SF Mono, Consolas, monospace">def5678</tspan>
+    </text>
+    
+    <!-- Center: Review info -->
+    <text x="720" y="890" text-anchor="middle" class="small-text" fill="#6B7280">
+      Scene 4/12 | Review packet generated | Provenance: toolchain v2.4.1
+    </text>
+    
+    <!-- Right: Status -->
+    <g transform="translate(1200, 878)">
+      <circle cx="6" cy="12" r="3" fill="#22C55E"/>
+      <text x="14" y="16" class="small-text" fill="#6B7280">Autosave on</text>
+      <text x="90" y="16" class="small-text" fill="#9CA3AF">|</text>
+      <text x="100" y="16" class="small-text" fill="#6B7280">Audit log enabled</text>
+    </g>
+  </g>
+</svg>

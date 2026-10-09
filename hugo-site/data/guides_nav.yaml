@@ -1,0 +1,37 @@
+pillars:
+  - title: "CNS 8.0"
+    contentPath: "guides/cns"
+    description: "Current CNS research framework: SNO-centered dialectical synthesis, tensor proof closure, predicate invention, orthesis validation, and audit reporting."
+    cta:
+      text: "Read the CNS 8.0 Hub"
+      url: "/guides/cns/"
+  - title: "CNS 7.1 / GCTS"
+    contentPath: "guides/cns-gcts"
+    description: "Historical access-aware likely-truth framework: evidence atoms, record-access states, possible worlds, and oracle-boundary discipline."
+    cta:
+      text: "Read the GCTS Hub"
+      url: "/guides/cns-gcts/"
+  - title: "Developer's Guide"
+    contentPath: "guides/building-cns-2.0-developers-guide"
+    description: "Historical CNS 2.0 Python builds centered on Structured Narrative Objects and critic pipelines."
+    cta:
+      text: "Start at Chapter 0"
+      url: "/guides/building-cns-2.0-developers-guide/chapter-0-quickstart/"
+  - title: "Research Roadmap"
+    contentPath: "guides/cns-2.0-research-roadmap"
+    description: "Historical CNS 2.0 roadmap, blueprint, validation protocols, and theoretical background."
+    cta:
+      text: "Read the Blueprint"
+      url: "/guides/cns-2.0-research-roadmap/blueprint/"
+  - title: "Tutorials"
+    contentPath: "guides/tutorials"
+    description: "Hands-on walkthroughs, DSPy optimization tracks, and field experiments for CNS operators."
+    cta:
+      text: "Browse Tutorials"
+      url: "/guides/tutorials/"
+  - title: "Case Studies & Experiments"
+    contentPath: "guides/case-studies-and-experiments"
+    description: "Narrative theory deep dives and empirical studies that pressure-test CNS assumptions."
+    cta:
+      text: "Review Evidence"
+      url: "/guides/case-studies-and-experiments/"

@@ -1,0 +1,23 @@
+{{- $ctx := .context -}}
+{{- $nav := index $ctx.Site.Data "guides_nav" -}}
+{{- if $nav -}}
+  {{- $pillars := or (index $nav "pillars") (slice) -}}
+  <aside class="guides-sidebar" aria-label="Guides navigation">
+    <p class="guides-sidebar-eyebrow">Guides Library</p>
+    {{- range $pillar := $pillars -}}
+      {{- $pillarPage := site.GetPage $pillar.contentPath -}}
+      {{- if not $pillarPage }}{{ continue }}{{ end -}}
+      {{- $isActive := strings.HasPrefix $ctx.RelPermalink $pillarPage.RelPermalink -}}
+      <details class="guides-sidebar-group" {{ if $isActive }}open{{ end }}>
+        <summary>
+          <span>{{ $pillar.title }}</span>
+        </summary>
+        <p class="guides-sidebar-desc">{{ $pillar.description }}</p>
+        {{- partial "guides-tree.html" (dict "page" $pillarPage "current" $ctx "depth" 0) -}}
+        {{- with $pillar.cta -}}
+          <a class="btn btn-link" href="{{ .url }}">{{ .text }}</a>
+        {{- end -}}
+      </details>
+    {{- end -}}
+  </aside>
+{{- end -}}

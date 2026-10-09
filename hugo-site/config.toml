@@ -1,0 +1,164 @@
+baseURL = 'https://gtcode.com/'
+languageCode = 'en-us'
+title = 'GTCode | Ekewaka Lono'
+theme = 'minimal'
+disableKinds = []
+enableGitInfo = true
+
+[frontmatter]
+  lastmod = ['lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published', 'git_lastmod_snapshot', ':git']
+
+[taxonomies]
+  tag = "article_tags"
+[pagination]
+  pagerSize = 25
+canonifyURLs = false
+relativeURLs = false
+
+[privacy.x]
+  enableDNT = true
+
+[outputFormats]
+  [outputFormats.Markdown]
+    mediaType = "text/markdown"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = false
+    suffix = "md"
+
+  [outputFormats.plaintextagent]
+    mediaType = "text/plain"
+    baseName = "agent"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextagents]
+    mediaType = "text/plain"
+    baseName = "agents"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextllm]
+    mediaType = "text/plain"
+    baseName = "llm"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextllms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextai]
+    mediaType = "text/plain"
+    baseName = "ai"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintexthumans]
+    mediaType = "text/plain"
+    baseName = "humans"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextrobots]
+    mediaType = "text/plain"
+    baseName = "robots"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.plaintextllmsfull]
+    mediaType = "text/plain"
+    baseName = "llms-full"
+    isPlainText = true
+    notAlternative = false
+    path = ""
+
+  [outputFormats.newsSitemap]
+    mediaType = "application/xml"
+    baseName = "news-sitemap"
+    isPlainText = false
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextllmsfull", "plaintextai", "plaintexthumans", "plaintextrobots", "newsSitemap"]
+  section = ["HTML", "Markdown", "RSS"]
+  page = ["HTML", "Markdown"]
+
+[params]
+  # HOMEPAGE SWITCH: true = blank Hello World page; false = original homepage.
+
+  # true = suicide note
+  alternative_homepage = false
+
+  # true = HIDE journalism/disclosures and the homepage note; show consultancy/alternate pages.
+  # false = SHOW the original journalism/disclosures and homepage note.
+  enable_exceptions = false
+
+  exception_fallback_path = "exceptions/fallback"
+  enable_agentic_context = true
+  description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional accountability, judicial conduct, and public-record power mapping in the islands.'
+  author = 'Ekewaka Lono'
+  home_title_suffix = 'Investigative Journalism + AI Consulting'
+  # SEO guardrails (template-level normalization/truncation)
+  seo_title_max_chars = 60
+  seo_description_max_chars = 158
+  og_site_name = 'Oahu Underground by GTCode'
+  seo_site_name = 'Oahu Underground by GTCode'
+  seo_title_site_name = 'GTCode'
+  seo_min_indexable_term_pages = 2
+  newsroom_name = 'Oahu Underground'
+  news_publication_name = 'Oahu Underground'
+  site_brand_short = 'GTCode'
+  logo = '/apple-touch-icon.png'
+  og_image = '/img/gtcode_mahalo_1200x630.jpg'
+  og_image_width = 1200
+  og_image_height = 630
+  og_image_alt = 'Oahu Underground investigative reporting in Hawaii'
+  contact_email = 'inquire@gtcode.com'
+  tips_email = 'tips@gtcode.com'
+  # News indexing strategy:
+  # false => syndicated feed imports remain noindex with canonical pointing to source_url.
+  # true  => syndicated imports can be indexed on gtcode.com.
+  news_index_syndicated = false
+  # Google News sitemap window in days (Google recommendation: last 2 days).
+  news_sitemap_window_days = 2
+  # Intentional non-HTML entries in sitemap.xml (suppress recurring audit warnings).
+  seo_sitemap_non_html_allowlist = ['https://gtcode.com/papers/ResearchProposal-ChiralNarrativeSynthesis_20250617_3.pdf']
+  # robots.txt policy
+  robots_crawl_delay_enabled = false
+  robots_crawl_delay_seconds = 1
+  author_image = '/img/gtcode_mahalo_1200x630.jpg'
+  author_sameas = ['https://github.com/nshkrdotcom', 'https://hex.pm/users/nshkrdotcom']
+
+[permalinks]
+  [permalinks.term]
+    article_tags = "/tags/:slug/"
+  [permalinks.taxonomy]
+    article_tags = "/tags/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [["$$","$$"], ["\\[","\\]"]]
+          inline = [["$","$"], ["\\(","\\)"]]
+
+[minify]
+  minifyOutput = true
+
+[minify.tdewolff.html]
+  keepComments = true
+  keepSpecialComments = true

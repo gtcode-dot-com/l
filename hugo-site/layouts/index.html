@@ -1,0 +1,729 @@
+{{- if site.Params.alternative_homepage -}}
+{{- $alternativeHome := site.GetPage "/homepage-alternative" -}}
+<!doctype html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ with $alternativeHome }}{{ .Title }}{{ else }}Hello{{ end }}</title>
+  </head>
+  <body>
+    {{- with $alternativeHome }}
+      {{ .Content }}
+    {{- end }}
+  </body>
+</html>
+{{- else -}}
+{{/* Standalone homepage - no baseof.html, no main.css */}}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $siteLang := .Site.LanguageCode | default "en" -}}
+{{- $contentLang := $active.Params.language | default "" -}}
+{{- $langFromHugo := $active.Lang | default "" -}}
+{{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
+{{- $brandName := strings.TrimSpace (cond site.Params.enable_exceptions ($active.Params.brand_name | default "GTCode") ($active.Params.brand_name | default "Oahu Underground")) -}}
+{{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
+{{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
+{{- $pageTitle := $active.Params.seo_title | default $active.Title | default (printf "%s | Investigative Reporting" $brandName) -}}
+{{- $socialTitleSource := $active.Params.social_title | default ($active.Params.og_title | default ($active.Params.twitter_title | default $pageTitle)) -}}
+{{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
+{{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
+{{- $homepageNotice := .Site.GetPage "/homepage-notice" -}}
+
+{{- $investigationPagesAll := sort (where (where (where .Site.RegularPages "Type" "investigation") "Params.homepage_exclude" "ne" true) "Params.series" "ne" "The Architecture of Access") "Date" "desc" -}}
+{{- $investigationPagesAll = where $investigationPagesAll "Title" "ne" "The Architecture of Access" -}}
+{{- $investigationPagesAll = where $investigationPagesAll "Params.portfolio_key" "hawaii-courts" -}}
+{{- $investigationPagesAll = partial "exception/filter-list-pages.html" $investigationPagesAll -}}
+{{- $investigationPagesEn := where $investigationPagesAll "Params.language" "en" -}}
+{{- $investigationPages := cond (gt (len $investigationPagesEn) 0) $investigationPagesEn $investigationPagesAll -}}
+{{- $investigationCount := len $investigationPages -}}
+{{- $investigationsByUpdated := sort $investigationPages "Params.lastmod" "desc" -}}
+{{- $latestUpdates := first 6 $investigationsByUpdated -}}
+
+{{- $lead := .Site.GetPage "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea" -}}
+{{- if and (not $lead) (gt $investigationCount 0) -}}
+  {{- $lead = index $investigationPages 0 -}}
+{{- end -}}
+{{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
+{{- $heroHeadline := $active.Params.hero_headline | default "The Silent Conspiracy" -}}
+{{- $homeHeroImage := $active.Params.hero_image | default "/img/ou-silent-conspiracy-hero-1600.jpg" -}}
+{{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
+  {{- $heroParsed := urls.Parse $homeHeroImage -}}
+  {{- with $heroParsed.Path -}}
+    {{- $homeHeroImage = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $consultingPage := .Site.GetPage "section" "consulting" -}}
+{{- $consultingURL := "/consulting/" -}}
+{{- if $consultingPage }}{{ $consultingURL = $consultingPage.RelPermalink }}{{ end -}}
+{{- $newsSection := .Site.GetPage "section" "news" -}}
+{{- $newsPagesAll := sort (where .Site.RegularPages "Section" "news") "Date" "desc" -}}
+{{- $newsPagesEn := where $newsPagesAll "Params.language" "en" -}}
+{{- $newsPages := cond (gt (len $newsPagesEn) 0) $newsPagesEn $newsPagesAll -}}
+{{- $latestNews := first 10 $newsPages -}}
+{{- $newsRSS := "/news/index.xml" -}}
+{{- if $newsSection -}}
+  {{- with $newsSection.OutputFormats.Get "RSS" -}}
+    {{- $newsRSS = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
+<!DOCTYPE html>
+<html lang="{{ $pageLang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{- $pageTitle = partial "seo/plaintext.html" (dict "value" $pageTitle "max" $titleMax) -}}
+    <title>{{ $pageTitle }}</title>
+
+    <!-- Meta tags -->
+    {{ partial "fetch-article-meta.html" (dict "context" $page) }}
+    {{ $articleMeta := $page.Scratch.Get "_article_meta" }}
+    {{ if not $articleMeta }}
+      {{ $articleMetaMap := default (dict) (index .Site.Data "article_meta") }}
+      {{ $articleMeta = index $articleMetaMap (trim $page.RelPermalink "/") }}
+    {{ end }}
+    {{ if $isActiveException }}{{ $articleMeta = dict }}{{ end }}
+    {{ $pageDescription := .Site.Params.description }}
+    {{ if $active.Description }}{{ $pageDescription = $active.Description }}{{ end }}
+    {{ with $active.Params.meta_description }}{{ $pageDescription = . }}{{ end }}
+    {{ with $articleMeta.meta_description }}{{ $pageDescription = . }}{{ end }}
+    {{ $socialDescriptionSource := $active.Params.social_description | default ($active.Params.og_description | default ($active.Params.twitter_description | default $pageDescription)) }}
+    {{ $pageDescription = partial "seo/plaintext.html" (dict "value" $pageDescription "max" $descMax) }}
+    {{ $socialDescription := partial "seo/plaintext.html" (dict "value" $socialDescriptionSource "max" $descMax) }}
+    <meta name="description" content="{{ $pageDescription }}" />
+    <meta name="author" content="{{ .Site.Params.author }}" />
+    {{ with $active.Params.meta_keywords }}
+    <meta name="keywords" content="{{ delimit . ", " }}" />
+    {{ end }}
+    {{ $robots := $page.Params.robots | default "max-image-preview:large" }}
+    <meta name="robots" content="{{ $robots }}" />
+
+    {{ $canonical := $page.Permalink }}
+    {{ with $page.Params.canonical }}{{ $canonical = . }}{{ end }}
+    {{ $canonical = replace $canonical "http://" "https://" }}
+    {{ $page.Scratch.Set "_seo_canonical" $canonical }}
+    <link rel="canonical" href="{{ $canonical }}" />
+    <link rel="alternate" hreflang="{{ $pageLang }}" href="{{ $canonical }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ $canonical }}" />
+
+    {{ with .Site.Home.OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $brandName }}" href="{{ .RelPermalink }}" />
+    {{ end }}
+
+    {{ $ogImage := "/img/gtcode-core.svg" }}
+    {{ with $active.Params.og_image }}{{ $ogImage = . }}{{ end }}
+    {{ with $articleMeta.og_image }}{{ $ogImage = . }}{{ end }}
+    {{ if hasPrefix $ogImage "/" }}{{ $ogImage = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $ogImage }}{{ end }}
+    {{ $ogImage = replace $ogImage "http://" "https://" }}
+    {{ $ogImageWidth := printf "%v" ($active.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
+    {{ $ogImageHeight := printf "%v" ($active.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
+    {{ $socialTitle := partial "seo/plaintext.html" (dict "value" $socialTitleSource "max" $titleMax) }}
+    {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" ($active.Params.og_image_alt | default (.Site.Params.og_image_alt | default $socialTitle)) "max" 120) }}
+    {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
+    {{ $twitterCreator := strings.TrimSpace ($active.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
+
+    <meta property="og:title" content="{{ $socialTitle }}" />
+    <meta property="og:locale" content="{{ $pageLang }}" />
+    <meta property="og:description" content="{{ $socialDescription }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ $canonical }}" />
+    <meta property="og:image" content="{{ $ogImage }}" />
+    <meta property="og:image:width" content="{{ $ogImageWidth }}" />
+    <meta property="og:image:height" content="{{ $ogImageHeight }}" />
+    <meta property="og:image:alt" content="{{ $ogImageAlt }}" />
+    <meta property="og:site_name" content="{{ $brandName }}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ $socialTitle }}" />
+    <meta name="twitter:description" content="{{ $socialDescription }}" />
+    <meta name="twitter:image" content="{{ $ogImage }}" />
+    <meta name="twitter:image:alt" content="{{ $ogImageAlt }}" />
+    {{ with $twitterSite }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+    {{ with $twitterCreator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
+
+    <!-- CSS Reset (inlined to eliminate render-blocking request) -->
+    {{ $resetCSS := resources.Get "css/reset.css" | minify }}
+    <style>{{ $resetCSS.Content | safeCSS }}</style>
+
+    <!-- Font faces (inlined to eliminate render-blocking request) -->
+    {{ $fontsCSS := resources.Get "fonts/fonts.css" | minify }}
+    <style>{{ $fontsCSS.Content | safeCSS }}</style>
+    <link rel="preload" as="font" href="/fonts/inter-400.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="image" href="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" type="image/svg+xml" />
+    <!-- Oahu Underground Stylesheet (inlined to eliminate render-blocking request) -->
+    {{ $ouCSS := slice (resources.Get "css/oahu-underground.css") (resources.Get "css/site-theme.css") | resources.Concat "css/journalism.css" | minify }}
+    <style>{{ $ouCSS.Content | safeCSS }}</style>
+
+    {{ partial "jsonld.html" . }}
+
+    {{ if not $isActiveException }}
+    <!-- Homepage investigative schema -->
+    {{ $siteRoot := replace .Site.BaseURL "http://" "https://" }}
+    {{ $siteRoot = strings.TrimRight "/" $siteRoot }}
+    {{ $editorialPolicyURL := printf "%s/policies/editorial-standards/" $siteRoot }}
+    {{ $correctionsPolicyURL := printf "%s/policies/corrections-policy/" $siteRoot }}
+    {{ $ethicsPolicyURL := printf "%s/policies/ethics-policy/" $siteRoot }}
+    {{ $newsroom := dict
+      "@type" "NewsMediaOrganization"
+      "@id" (printf "%s#newsroom" $siteRoot)
+      "name" $brandName
+      "alternateName" (.Site.Params.seo_site_name | default "Oahu Underground by GTCode")
+      "url" (printf "%s/" $siteRoot)
+      "areaServed" (dict "@type" "AdministrativeArea" "name" "Hawaii")
+      "foundingDate" ($active.Params.newsroom_founding_date | default "2025-01-01")
+      "contactPoint" (slice (dict "@type" "ContactPoint" "contactType" "news tips" "email" $tipsEmail))
+      "publishingPrinciples" $editorialPolicyURL
+      "correctionsPolicy" $correctionsPolicyURL
+      "ethicsPolicy" $ethicsPolicyURL
+      "logo" (dict "@type" "ImageObject" "url" $ogImage)
+    }}
+    {{ with $active.Params.newsroom_sameas }}
+      {{ $newsroom = merge $newsroom (dict "sameAs" .) }}
+    {{ end }}
+
+    {{ $listItems := slice }}
+    {{ range $idx, $page := $investigationPages }}
+      {{ $listItems = $listItems | append (dict
+        "@type" "ListItem"
+        "position" (add $idx 1)
+        "name" $page.Title
+        "url" (replace $page.Permalink "http://" "https://")
+      ) }}
+    {{ end }}
+
+    {{ $itemList := dict
+      "@type" "ItemList"
+      "@id" (printf "%s#investigation-itemlist" $canonical)
+      "name" "Oahu Underground Investigations"
+      "itemListOrder" "https://schema.org/ItemListOrderDescending"
+      "numberOfItems" (len $listItems)
+      "itemListElement" $listItems
+    }}
+
+    {{ $homepageSchema := dict
+      "@context" "https://schema.org"
+      "@graph" (slice $newsroom $itemList)
+    }}
+    <script type="application/ld+json">{{ $homepageSchema | jsonify | safeJS }}</script>
+    {{ end }}
+
+    <!-- Favicon -->
+    {{ partial "brand/icons.html" "#111c20" }}
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="/" class="site-logo" aria-label="{{ $brandName }} home">
+          {{ partial "media/responsive-image.html" (dict
+            "page" $page
+            "src" (partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg")
+            "alt" (printf "%s mark" $brandName)
+            "class" "site-logo-mark"
+            "width" 40
+            "height" 40
+            "loading" "eager"
+          ) }}
+          <span>{{ $brandName }}</span>
+        </a>
+
+        <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Toggle primary navigation</span>
+          <span class="site-nav-toggle-icon" aria-hidden="true">
+            <span class="site-nav-toggle-bar"></span>
+            <span class="site-nav-toggle-bar"></span>
+            <span class="site-nav-toggle-bar"></span>
+          </span>
+          <span class="site-nav-toggle-label">Menu</span>
+        </button>
+
+        {{ partial "primary-nav.html" . }}
+      </div>
+    </header>
+    <div class="site-nav-overlay" aria-hidden="true"></div>
+
+    <main class="site-main" id="main-content">
+      {{ partial "ai-agent-comment.html" . }}
+      {{ if not $isActiveException }}
+      {{ with $homepageNotice }}
+      <section class="homepage-notice" aria-labelledby="homepage-notice-title">
+        <div class="homepage-notice-inner">
+          <p class="homepage-notice-label">From the editor</p>
+          <h1 class="homepage-notice-title" id="homepage-notice-title">{{ .Title }}</h1>
+          <div class="homepage-notice-content">
+            {{ .Content }}
+          </div>
+        </div>
+      </section>
+      {{ end }}
+      {{ end }}
+      {{ if $isActiveException }}
+      <section class="ou-section">
+        <div class="ou-section-inner">
+          <article class="ou-article">
+            <header class="ou-article-header">
+              <h2 class="ou-article-title">{{ $active.Title }}</h2>
+              {{ with $active.Description }}
+              <p class="ou-article-subtitle">{{ . }}</p>
+              {{ end }}
+            </header>
+            <div class="ou-article-content">
+              {{ $active.Content }}
+            </div>
+          </article>
+        </div>
+      </section>
+      {{ else }}
+      <!-- Hero Banner -->
+      <section class="ou-hero">
+        <div class="ou-hero-image">
+          {{ partial "media/responsive-image.html" (dict
+            "page" $page
+            "src" $homeHeroImage
+            "alt" ($active.Params.hero_image_alt | default "Oahu Underground investigative reporting in Hawaii")
+            "slot" "hero_banner"
+            "loading" "lazy"
+            "width" 1600
+            "height" 475
+          ) }}
+        </div>
+        <div class="ou-hero-overlay"></div>
+        <div class="ou-hero-content">
+          <p class="ou-hero-kicker"><a href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}" class="ou-hero-kicker-link">{{ $active.Params.hero_kicker | default "Legal Analysis" }}</a></p>
+          <h2 class="ou-hero-headline">{{ $heroHeadline }}</h2>
+          <p class="ou-hero-subtitle">{{ $active.Params.hero_subtitle | default "HRPC 8.3(b), mens rea, sealed-record dependency, and a reported First Circuit courtroom sequence" }}</p>
+          <div class="ou-hero-actions">
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}">{{ $active.Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ $active.Params.hero_secondary_cta_url | default "/hawaii-courts/" }}">{{ $active.Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}</a>
+          </div>
+          <p class="ou-hero-brand">{{ $brandName }}</p>
+        </div>
+      </section>
+
+      {{ if .Site.Params.show_home_neutralization_stack }}
+      {{ partial "neutralization-stack.html" . }}
+      {{ end }}
+
+      <!-- AI Consulting Proof -->
+      <section class="ou-section ou-section--alt ou-consulting-proof" id="consulting">
+        <div class="ou-section-wide">
+          <p class="ou-section-label">GTCode Consulting</p>
+          <h2 class="ou-section-heading">AI engineering support for real deployments</h2>
+          <p class="ou-section-body">Consulting work focuses on shipping reliable systems: architecture choices, evaluation gates, observability, and operational hardening.</p>
+          <div class="ou-consulting-grid">
+            <article class="ou-consulting-card">
+              <h3>Architecture and Risk Review</h3>
+              <p>Rapid assessment of model, data, and integration risks before you commit to implementation paths.</p>
+            </article>
+            <article class="ou-consulting-card">
+              <h3>Build and Hardening</h3>
+              <p>Hands-on delivery for agent workflows, retrieval systems, and production inference pipelines.</p>
+            </article>
+            <article class="ou-consulting-card">
+              <h3>Fractional Technical Leadership</h3>
+              <p>Advisory support for roadmap decisions, engineering execution, and AI governance boundaries.</p>
+            </article>
+          </div>
+          <p class="ou-consulting-actions">
+            <a class="ou-featured-article-link" href="{{ $consultingURL }}">Open the consulting brief &rarr;</a>
+            <a class="ou-featured-article-link" href="mailto:{{ $contactEmail }}">Email Inquire@GTCode.com &rarr;</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured Investigations — side-by-side image + text -->
+      <section class="ou-section" id="featured-investigations">
+        <div class="ou-section-wide"{{ if not .Site.Params.show_home_neutralization_stack }} id="start-here"{{ end }}>
+
+          {{/* Lead Investigation */}}
+          {{ if $lead }}
+          {{ $leadUpdated := $lead.Lastmod }}
+          {{ with $lead.Params.lastmod }}{{ $leadUpdated = time.AsTime . }}{{ end }}
+          {{ if $leadUpdated.IsZero }}{{ $leadUpdated = $lead.Date }}{{ end }}
+          {{ $leadSummary := $lead.Params.card_summary | default $lead.Description }}
+          {{ if eq (strings.TrimSpace $leadSummary) "" }}{{ $leadSummary = $lead.Summary | plainify | truncate 260 }}{{ end }}
+          <article class="ou-feature-row" id="lead-investigation">
+            {{ with $lead.Params.og_image }}
+            <a href="{{ $lead.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
+              {{ partial "media/responsive-image.html" (dict
+                "page" $
+                "src" .
+                "alt" $lead.Title
+                "slot" "investigation_feature_row"
+                "width" ($lead.Params.og_image_width | default 1200)
+                "height" ($lead.Params.og_image_height | default 630)
+              ) }}
+            </a>
+            {{ end }}
+            <div class="ou-feature-row-body">
+              <p class="ou-section-label">Lead Investigation</p>
+              <h2 class="ou-feature-row-title">
+                <a href="{{ $lead.RelPermalink }}">{{ $lead.Title }}</a>
+              </h2>
+              {{ with $lead.Params.subtitle }}
+              <p class="ou-feature-row-subtitle">{{ . }}</p>
+              {{ end }}
+              <p class="ou-feature-row-text">{{ $leadSummary }}</p>
+              <p class="ou-feature-row-meta">
+                <span>Published {{ $lead.Date.Format "January 2, 2006" }}</span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Updated {{ $lead.Params.modified_display | default ($leadUpdated.Format "January 2, 2006") }}</span>
+              </p>
+              <a class="ou-featured-article-link" href="{{ $lead.RelPermalink }}">Read the investigation &rarr;</a>
+            </div>
+          </article>
+          {{ end }}
+
+          {{/* Publisher's Note */}}
+          {{ if $carto }}
+          {{ $cartoSummary := $carto.Params.card_summary | default $carto.Description }}
+          {{ if eq (strings.TrimSpace $cartoSummary) "" }}{{ $cartoSummary = $carto.Summary | plainify | truncate 220 }}{{ end }}
+          <article class="ou-feature-row" id="publishers-note">
+            {{ with $carto.Params.og_image }}
+            <a href="{{ $carto.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
+              {{ partial "media/responsive-image.html" (dict
+                "page" $
+                "src" .
+                "alt" $carto.Title
+                "slot" "investigation_feature_row"
+                "width" ($carto.Params.og_image_width | default 1200)
+                "height" ($carto.Params.og_image_height | default 630)
+              ) }}
+            </a>
+            {{ end }}
+            <div class="ou-feature-row-body">
+              <p class="ou-section-label">Publisher's Note</p>
+              <h2 class="ou-feature-row-title">
+                <a href="{{ $carto.RelPermalink }}">{{ $carto.Title }}</a>
+              </h2>
+              {{ with $carto.Params.subtitle }}
+              <p class="ou-feature-row-subtitle">{{ . }}</p>
+              {{ end }}
+              <p class="ou-feature-row-text">{{ $cartoSummary }}</p>
+              <a class="ou-featured-article-link" href="{{ $carto.RelPermalink }}">Read the full note &rarr;</a>
+            </div>
+          </article>
+          {{ end }}
+
+        </div>
+      </section>
+
+      <!-- Research Portfolios -->
+      {{- $featuredPaths := slice -}}
+      {{- if $lead }}{{ $featuredPaths = $featuredPaths | append $lead.RelPermalink }}{{ end -}}
+      {{- if $carto }}{{ $featuredPaths = $featuredPaths | append $carto.RelPermalink }}{{ end -}}
+
+      {{/* Also exclude Closed Loop series members — they get their own showcase */}}
+      {{- $closedLoopSeries := .Site.GetPage "/hawaii-courts/closed-loop-oversight-failure" -}}
+      {{- $closedLoopMembers := slice -}}
+      {{- if $closedLoopSeries -}}
+        {{- $featuredPaths = $featuredPaths | append $closedLoopSeries.RelPermalink -}}
+        {{- range where $.Site.RegularPages "Params.series" "The Closed Loop" -}}
+          {{- $closedLoopMembers = $closedLoopMembers | append . -}}
+          {{- $featuredPaths = $featuredPaths | append .RelPermalink -}}
+        {{- end -}}
+        {{- $closedLoopMembers = sort $closedLoopMembers "Params.series_part" "asc" -}}
+      {{- end -}}
+
+      {{- $archivePages := where $investigationPages ".RelPermalink" "not in" $featuredPaths -}}
+      {{- $homepageSilos := slice -}}
+      {{- range slice "/hawaii-courts" "/geopolitics" "/intelligence" "/diagnostics" "/disclosures" -}}
+        {{- with $.Site.GetPage . -}}
+          {{- $homepageSilos = $homepageSilos | append . -}}
+        {{- end -}}
+      {{- end -}}
+      <section class="ou-section" id="investigations">
+        <div class="ou-section-wide">
+          <p class="ou-section-label">Research Portfolios</p>
+          <h2 class="ou-section-heading">Separate research silos</h2>
+
+          {{/* Closed Loop series showcase — horizontal layout like publisher's note */}}
+          {{ if $closedLoopSeries }}
+          <div class="ou-hp-series-banner">
+            <div class="ou-hp-series-banner-left">
+              <div class="ou-publisher-note-badge">Series</div>
+              <h3 class="ou-publisher-note-title" style="font-style:normal">
+                <a href="{{ $closedLoopSeries.RelPermalink }}" style="color:inherit;text-decoration:none">{{ $closedLoopSeries.Title }}</a>
+              </h3>
+            </div>
+            <div class="ou-hp-series-banner-right">
+              {{ with $closedLoopSeries.Params.card_summary }}
+              <p class="ou-publisher-note-text">{{ . }}</p>
+              {{ end }}
+              {{ if $closedLoopMembers }}
+              <ol class="ou-hp-series-banner-parts">
+                {{ range $closedLoopMembers }}
+                <li>
+                  <a href="{{ .RelPermalink }}">
+                    <span class="ou-series-block-part">{{ .Params.series_part }}</span>
+                    <span class="ou-series-block-part-title">{{ .Title }}</span>
+                  </a>
+                </li>
+                {{ end }}
+              </ol>
+              {{ end }}
+              <a class="ou-card-link" href="{{ $closedLoopSeries.RelPermalink }}" aria-label="Read series: The Closed Loop">Read series &rarr;</a>
+            </div>
+          </div>
+          {{ end }}
+
+          {{ if gt (len $homepageSilos) 0 }}
+          <div class="ou-section-body ou-home-investigation-note">
+            <p>Other portfolios are listed for navigation only. Each silo carries its own evidence standard and should not be merged into the Hawaii Courts route without a direct evidentiary bridge.</p>
+          </div>
+          <div class="ou-cards">
+            {{ range $silo := $homepageSilos }}
+            <article class="ou-card">
+              {{ with $silo.Params.og_image }}
+              <figure class="ou-card-thumb">
+                {{ partial "media/responsive-image.html" (dict
+                  "page" $silo
+                  "src" .
+                  "alt" $silo.Title
+                  "slot" "investigation_card"
+                  "width" ($silo.Params.og_image_width | default 1200)
+                  "height" ($silo.Params.og_image_height | default 630)
+                ) }}
+              </figure>
+              {{ end }}
+              <p class="ou-card-kicker">Research Silo</p>
+              <h3 class="ou-card-title"><a href="{{ $silo.RelPermalink }}">{{ $silo.Title }}</a></h3>
+              <p class="ou-card-text">{{ $silo.Description }}</p>
+              <a class="ou-card-link" href="{{ $silo.RelPermalink }}" aria-label="Open silo: {{ $silo.Title }}">Open silo &rarr;</a>
+            </article>
+            {{ end }}
+          </div>
+          {{ else }}
+          <div class="ou-cards">
+            {{ range $idx, $page := first 8 $archivePages }}
+            {{ $updated := $page.Lastmod }}
+            {{ with $page.Params.lastmod }}{{ $updated = time.AsTime . }}{{ end }}
+            {{ if $updated.IsZero }}{{ $updated = $page.Date }}{{ end }}
+            {{ $summary := $page.Params.card_summary | default $page.Description }}
+            {{ if eq (strings.TrimSpace $summary) "" }}{{ $summary = $page.Summary | plainify | truncate 210 }}{{ end }}
+            <article class="ou-card">
+              {{ with $page.Params.og_image }}
+              <figure class="ou-card-thumb">
+                {{ partial "media/responsive-image.html" (dict
+                  "page" $page
+                  "src" .
+                  "alt" $page.Title
+                  "slot" "investigation_card"
+                  "width" ($page.Params.og_image_width | default 1200)
+                  "height" ($page.Params.og_image_height | default 630)
+                ) }}
+              </figure>
+              {{ end }}
+              {{ if $page.Params.series_url }}
+              <p class="ou-card-kicker"><a href="{{ $page.Params.series_url }}" class="ou-card-kicker-link">{{ $page.Params.eyebrow | default "Investigative File" }}</a></p>
+              {{ else }}
+              <p class="ou-card-kicker">{{ $page.Params.eyebrow | default "Investigative File" }}</p>
+              {{ end }}
+              <h3 class="ou-card-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+              <p class="ou-card-text">{{ $summary }}</p>
+              <p class="ou-card-meta">
+                <span>Published {{ $page.Date.Format "Jan 2, 2006" }}</span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Updated {{ $page.Params.modified_display | default ($updated.Format "Jan 2, 2006") }}</span>
+              </p>
+              <a class="ou-card-link" href="{{ $page.RelPermalink }}" aria-label="Read the file: {{ $page.Title }}">Read the file &rarr;</a>
+            </article>
+            {{ end }}
+          </div>
+          {{ end }}
+          <p class="ou-cards-footer">
+            <a class="ou-cards-footer-link" href="/hawaii-courts/">Open the Hawaii courts legal-audit route &rarr;</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Latest Investigative Updates -->
+      {{ if gt (len $latestUpdates) 0 }}
+      <section class="ou-section ou-wire" id="latest-updates">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Latest Updates</p>
+          <h2 class="ou-section-heading">Public disclosures and recently updated files</h2>
+          <ul class="ou-wire-list">
+            {{ range $latestUpdates }}
+            {{ $updated := .Lastmod }}
+            {{ with .Params.lastmod }}{{ $updated = time.AsTime . }}{{ end }}
+            {{ if $updated.IsZero }}{{ $updated = .Date }}{{ end }}
+            <li class="ou-wire-item">
+              <span class="ou-wire-date"><time datetime="{{ $updated.Format "2006-01-02" }}">{{ $updated.Format "Jan 2, 2006" }}</time></span>
+              {{ if .Params.series_url }}<a href="{{ .Params.series_url }}" class="ou-wire-badge ou-wire-badge-link">{{ .Params.eyebrow | default "Update" }}</a>{{ else }}<span class="ou-wire-badge">{{ .Params.eyebrow | default "Update" }}</span>{{ end }}
+              <a class="ou-wire-link" href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          <a class="ou-wire-more" href="/hawaii-courts/">View Hawaii courts updates &rarr;</a>
+        </div>
+      </section>
+      {{ end }}
+
+      <!-- Subscribe -->
+      <section class="ou-section ou-subscribe" id="subscribe">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Follow Updates</p>
+          <h2 class="ou-section-heading">Subscribe to the reporting feeds</h2>
+          <p class="ou-section-body">Track new investigations and the broader AI/news wire through RSS.</p>
+          <div class="ou-subscribe-actions">
+            <a class="ou-featured-article-link" href="/index.xml">Subscribe: Site RSS &rarr;</a>
+            <a class="ou-featured-article-link" href="{{ $newsRSS }}">Subscribe: News RSS &rarr;</a>
+          </div>
+          <div class="ou-share-links">
+            <span class="ou-share-label">Share this page:</span>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgtcode.com%2F&amp;text=Oahu%20Underground%20%E2%80%94%20independent%20investigative%20reporting%20from%20Hawaii" rel="noopener" target="_blank" aria-label="Share on X">X</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgtcode.com%2F" rel="noopener" target="_blank" aria-label="Share on LinkedIn">LinkedIn</a>
+            <a href="mailto:?subject=Oahu%20Underground&amp;body=Independent%20investigative%20reporting%20from%20Hawaii%3A%20https%3A%2F%2Fgtcode.com%2F" aria-label="Share via email">Email</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reporter + Methodology -->
+      <section class="ou-section ou-section--alt" id="about-reporter">
+        <div class="ou-section-wide">
+          <div class="ou-about-grid">
+            <div>
+              <p class="ou-section-label">About the Reporter</p>
+              <h2 class="ou-section-heading">Ekewaka Lono</h2>
+              <div class="ou-section-body">
+                <p>Ekewaka Lono is an independent investigative reporter based in Hawaii, focused on judicial accountability, institutional capture, and public-interest documentation within <a href="https://www.courts.state.hi.us/" rel="noopener" target="_blank">Hawaii&rsquo;s court system</a>.</p>
+                <p>Methodology is evidence-first: public records, primary-source documents, and clearly labeled firsthand testimony. Each claim is linked to source material where possible.</p>
+              </div>
+            </div>
+            <div class="ou-about-card">
+              <p class="ou-about-label">Reporting Method</p>
+              <ul class="ou-about-list">
+                <li>Map verifiable <a href="https://oip.hawaii.gov/" rel="noopener" target="_blank">public records</a> before narrative claims</li>
+                <li>Label firsthand testimony explicitly</li>
+                <li>Publish dates, revisions, and source context</li>
+                <li>Keep tip channels confidential and secure</li>
+              </ul>
+              {{ if $carto }}
+              <a class="ou-card-link" href="{{ $carto.RelPermalink }}">Read full methodology &rarr;</a>
+              {{ else }}
+              <a class="ou-card-link" href="/disclosures/">Read disclosures &rarr;</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="ou-section ou-contact" id="tips">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">Get in Touch</p>
+          <h2 class="ou-section-heading">Have information?</h2>
+          <div class="ou-section-body">
+            <p>If you have documents, first-hand knowledge, or information relevant to institutional misconduct in Hawaii, we want to hear from you. All inquiries are treated as confidential.</p>
+          </div>
+          <a class="ou-contact-email" href="mailto:{{ $tipsEmail }}">tips@GTCode.com</a>
+          <p class="ou-contact-note">Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.</p>
+        </div>
+      </section>
+
+      {{ if gt (len $latestNews) 0 }}
+      <section class="ou-section ou-wire" id="latest-news">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">News Wire</p>
+          <h2 class="ou-section-heading">Latest News Feed</h2>
+          <ul class="ou-wire-list">
+            {{ range $latestNews }}
+            <li class="ou-wire-item">
+              <span class="ou-wire-date">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+              </span>
+              <span class="ou-wire-badge">{{ .Params.category | default "News" }}</span>
+              <a class="ou-wire-link" href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          <a class="ou-wire-more" href="/news/">View full news feed &rarr;</a>
+        </div>
+      </section>
+      {{ end }}
+      {{ end }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div class="footer-section">
+          <p class="footer-heading">About</p>
+          <p>{{ if site.Params.enable_exceptions }}{{ $active.Description | default "GTCode is the technical home of Ekewaka Lono, focused on AI systems engineering, ML research, implementation guides, and consulting." }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
+        </div>
+
+        {{ if not site.Params.enable_exceptions }}
+        <div class="footer-section">
+          <p class="footer-heading">Research Silos</p>
+          <ul>
+            <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
+            <li><a href="/geopolitics/">Geopolitics</a></li>
+            <li><a href="/intelligence/">Intelligence</a></li>
+            <li><a href="/diagnostics/">Diagnostics</a></li>
+            <li><a href="/disclosures/">Disclosures</a></li>
+            {{ range first 5 $investigationPages }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+
+        <div class="footer-section">
+          <p class="footer-heading">{{ if site.Params.enable_exceptions }}Technical Resources{{ else }}Resources{{ end }}</p>
+          <ul>
+            {{ if not site.Params.enable_exceptions }}
+            <li><a href="#start-here">Start Here</a></li>
+            <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
+            <li><a href="/disclosures/">Reporter Disclosures</a></li>
+            {{ else }}
+            <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/papers/">Papers</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/repos/">Repos</a></li>
+            <li><a href="/news/">News Wire</a></li>
+            {{ end }}
+            <li><a href="/index.xml">Site RSS</a></li>
+            <li><a href="{{ $newsRSS }}">News RSS</a></li>
+            <li><a href="/agent.txt">agent.txt</a></li>
+            <li><a href="/llm.txt">llm.txt</a></li>
+            <li><a href="mailto:{{ $tipsEmail }}">Tips</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <p class="footer-heading">{{ if site.Params.enable_exceptions }}AI Access{{ else }}AI + Consulting{{ end }}</p>
+          <ul>
+            {{ if not site.Params.enable_exceptions }}
+            <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/papers/">Papers</a></li>
+            <li><a href="/repos/">Repos</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/news/">News Wire</a></li>
+            {{ end }}
+            {{ if site.Params.enable_exceptions }}
+            <li><a href="/policies/ai/">AI Policy</a></li>
+            <li><a href="/policies/agent/">AI Agent Policy</a></li>
+            <li><a href="/policies/llm/">LLM Usage Policy</a></li>
+            {{ else }}
+            <li><a href="/policies/editorial-standards/">Editorial Standards</a></li>
+            <li><a href="/policies/corrections-policy/">Corrections Policy</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ $brandName }}</a>. {{ partial "content-use-footer.html" . }} Powered by GCMS.
+      </div>
+    </footer>
+
+    {{ $navJS := resources.Get "js/nav.js" | minify | fingerprint }}
+    <script src="{{ $navJS.RelPermalink }}" integrity="{{ $navJS.Data.Integrity }}" defer></script>
+    {{ $ouTablesJS := resources.Get "js/ou-tables.js" | minify | fingerprint }}
+    <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
+  </body>
+</html>
+{{- end -}}

@@ -1,0 +1,14 @@
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $thirdParty := or (and (eq $page.Section "news") (not $active.Params.news_original)) (and $active.Params.source_url (not $active.Params.news_original)) -}}
+{{- if and $page.IsPage (not $thirdParty) (ne $page.Section "repos") -}}
+{{- with $active.Params.license -}}
+License: {{ . }}.
+{{- else -}}
+{{- $owner := $active.Params.copyright_owner | default site.Params.author -}}
+{{- $year := now.Format "2006" -}}
+{{- if not $active.Date.IsZero }}{{ $year = $active.Date.Format "2006" }}{{ end -}}
+© {{ $year }} {{ $owner }}. All rights reserved. Linking is permitted. Republishing or redistributing our original content requires prior written permission. Attribution alone does not grant permission.
+{{- end }}
+Content-use policy: {{ "policies/content-use/" | absURL }}
+{{- end -}}

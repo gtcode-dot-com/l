@@ -1,0 +1,57 @@
+{{- $active := partial "exception/resolve-active-page.html" . -}}
+{{- $httpsPermalink := replace .Permalink "http://" "https://" -}}
+{{- $language := .Site.LanguageCode | default "en-us" -}}
+{{- $description := $active.Description | default (.Site.Params.description | default .Site.Title) -}}
+{{- $pages := .Pages -}}
+{{- if .IsHome -}}
+  {{- $pages = .Site.RegularPages -}}
+{{- end -}}
+{{- $rssExcludePaths := slice "/intelligence/snowden-archive-chain-of-custody/" "/geopolitics/hawaii-energy-risk-strait-of-hormuz/" "/geopolitics/architecture-of-access-luke-network/" "/geopolitics/prc-access-mapping-hawaii/" "/geopolitics/ccch-financial-disclosure-ledger/" -}}
+{{- $pages = where (where $pages "Params.rss_exclude" "ne" true) ".RelPermalink" "not in" $rssExcludePaths -}}
+{{- $pages = partial "exception/filter-list-pages.html" $pages -}}
+{{- $limit := site.Config.Services.RSS.Limit | default -1 -}}
+{{- if ge $limit 0 -}}
+  {{- $pages = first $limit $pages -}}
+{{- end -}}
+{{- $siteRoot := replace .Site.BaseURL "http://" "https://" -}}
+{{- $siteRoot = strings.TrimRight "/" $siteRoot -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ $active.Title }}</title>
+    <link>{{ $httpsPermalink }}</link>
+    <description>{{ htmlEscape $description }}</description>
+    <copyright>Original content: all rights reserved. Linking is permitted. Republication requires prior written permission. {{ "policies/content-use/" | absURL }}</copyright>
+    <generator>Hugo</generator>
+    <language>{{ $language }}</language>
+    <lastBuildDate>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    {{- with .OutputFormats.Get "RSS" -}}
+      {{- $self := replace .Permalink "http://" "https://" }}
+    <atom:link href="{{ $self }}" rel="self" type="application/rss+xml" />
+    {{- end }}
+    <image>
+      <url>{{ $siteRoot }}/apple-touch-icon.png</url>
+      <title>{{ $active.Title }}</title>
+      <link>{{ $httpsPermalink }}</link>
+    </image>
+    {{- range $pages }}
+      {{- $itemPermalink := replace .Permalink "http://" "https://" -}}
+      {{- $pubDate := .Date -}}
+      {{- if $pubDate.IsZero }}{{ $pubDate = .PublishDate }}{{ end -}}
+      {{- if $pubDate.IsZero }}{{ $pubDate = .Lastmod }}{{ end -}}
+      {{- if $pubDate.IsZero }}{{ $pubDate = now }}{{ end -}}
+      <item>
+        <title>{{ htmlEscape .Title }}</title>
+        <link>{{ $itemPermalink }}</link>
+        <pubDate>{{ $pubDate.UTC.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+        <guid>{{ $itemPermalink }}</guid>
+        {{ $rssDesc := "" }}
+        {{ with .Description }}{{ $rssDesc = . }}{{ end }}
+        {{ if eq $rssDesc "" }}{{ with .Params.meta_description }}{{ $rssDesc = . }}{{ end }}{{ end }}
+        {{ if eq $rssDesc "" }}{{ with .Summary }}{{ $rssDesc = . | plainify | htmlUnescape | truncate 300 }}{{ end }}{{ end }}
+        <description>{{ htmlEscape $rssDesc }}</description>
+        {{ $rssContent := printf "%s%s" .Content (partial "content-use-notice.html" .) }}
+        <content:encoded>{{ printf "<![CDATA[%s]]>" (replace $rssContent "]]>" "]]]]><![CDATA[>") | safeHTML }}</content:encoded>
+      </item>
+    {{- end }}
+  </channel>
+</rss>

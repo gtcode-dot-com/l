@@ -1,0 +1,62 @@
+{{- $normalizedBase := replace .Site.BaseURL "http://" "https://" -}}
+{{- $base := strings.TrimSuffix "/" $normalizedBase -}}
+{{- $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false -}}
+{{- $minIndexableTermPages := int (.Site.Params.seo_min_indexable_term_pages | default 1) -}}
+{{- $siteLastMod := .Site.Lastmod -}}
+{{- $siteLastModString := "" -}}
+{{- if not ($siteLastMod.IsZero) -}}
+  {{- $siteLastModString = $siteLastMod.Format "2006-01-02" -}}
+{{- else -}}
+  {{- $siteLastModString = now.Format "2006-01-02" -}}
+{{- end -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- /* Static assets that need explicit inclusion (data-driven to avoid stale aliases) */ -}}
+  {{- $staticEntries := .Site.Data.sitemap_static.entries | default slice -}}
+  {{- range $static := $staticEntries }}
+    {{- $locRaw := strings.TrimSpace (printf "%v" ($static.loc | default "")) -}}
+    {{- if ne $locRaw "" -}}
+      {{- $loc := $locRaw -}}
+      {{- if hasPrefix $loc "/" }}{{ $loc = printf "%s%s" $base $loc }}{{ end -}}
+      {{- $loc = replace $loc "http://" "https://" -}}
+  <url>
+    <loc>{{- printf "%s" $loc -}}</loc>
+    <lastmod>{{- or $static.lastmod $siteLastModString -}}</lastmod>
+    <changefreq>{{- $static.changefreq | default "monthly" -}}</changefreq>
+    <priority>{{- printf "%.2f" (float ($static.priority | default 0.50)) -}}</priority>
+  </url>
+    {{- end -}}
+  {{- end }}
+
+  {{- range sort (partial "exception/filter-list-pages.html" .Data.Pages) "RelPermalink" "asc" }}
+    {{- $robots := lower (printf "%v" .Params.robots) -}}
+    {{- $isNoindex := in $robots "noindex" -}}
+    {{- $isSyndicatedNews := and (eq .Section "news") .Params.source_url (not .Params.news_original) (not $newsIndexSyndicated) -}}
+    {{- $isThinTerm := and (eq .Kind "term") (gt $minIndexableTermPages 1) (lt (len .Pages) $minIndexableTermPages) -}}
+    {{- if not (or $isNoindex $isSyndicatedNews $isThinTerm) -}}
+    {{- $lastmod := .Lastmod -}}
+    {{- if $lastmod.IsZero }}{{ $lastmod = .PublishDate }}{{ end -}}
+    {{- if $lastmod.IsZero }}{{ $lastmod = .Date }}{{ end -}}
+    {{- $allowFallback := or (not .IsPage) (eq .Section "news") -}}
+    {{- if and $lastmod.IsZero $allowFallback }}{{ $lastmod = $siteLastMod }}{{ end -}}
+    {{- if and $lastmod.IsZero $allowFallback }}{{ $lastmod = now }}{{ end -}}
+    {{- $changefreq := .Sitemap.ChangeFreq -}}
+    {{- if not $changefreq }}{{ $changefreq = "monthly" }}{{ end -}}
+    {{- $priority := 0.50 -}}
+    {{- $rawPriority := .Sitemap.Priority -}}
+    {{- if and (ne $rawPriority nil) (ge (float $rawPriority) 0) }}
+      {{- $priority = float $rawPriority -}}
+    {{- end -}}
+  <url>
+    {{- $loc := printf "%s%s" $base .RelPermalink -}}
+    {{- $loc = replace $loc "http://" "https://" -}}
+    <loc>{{- printf "%s" $loc -}}</loc>
+    {{- if not ($lastmod.IsZero) }}
+    <lastmod>{{- $lastmod.Format "2006-01-02" -}}</lastmod>
+    {{- end }}
+    <changefreq>{{- $changefreq -}}</changefreq>
+    <priority>{{- printf "%.2f" $priority -}}</priority>
+  </url>
+    {{- end -}}
+  {{- end }}
+</urlset>

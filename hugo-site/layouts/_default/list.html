@@ -1,0 +1,122 @@
+{{ define "pagination-head" }}
+  {{ $pages := .Pages | default .Site.RegularPages }}
+  {{ $pages = partial "exception/filter-list-pages.html" $pages }}
+  {{ if $pages }}
+    {{ $orderedScratch := newScratch }}
+    {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
+    {{ $sortHint := lower (.Params.list_sort | default "") }}
+    {{ if eq $sortHint "weight" }}
+      {{ $orderedScratch.Set "ordered" (sort $pages ".Params.weight") }}
+    {{ else if eq $sortHint "weight_desc" }}
+      {{ $orderedScratch.Set "ordered" ((sort $pages ".Params.weight").Reverse) }}
+    {{ else if eq $sortHint "date_asc" }}
+      {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
+    {{ end }}
+    {{ $ordered := $orderedScratch.Get "ordered" }}
+    {{ $english := where $ordered "Params.language" "en" }}
+    {{ $filtered := cond (gt (len $english) 0) $english $ordered }}
+    {{ $paginator := .Paginate $filtered }}
+    {{ .Scratch.Set "_head_paginator" $paginator }}
+    {{ if gt $paginator.PageNumber 1 }}
+    <link rel="prev" href="{{ (index $paginator.Pagers (sub $paginator.PageNumber 2)).URL | absURL }}" />
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <link rel="next" href="{{ (index $paginator.Pagers $paginator.PageNumber).URL | absURL }}" />
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{- $page := . -}}
+  {{- $active := partial "exception/resolve-active-page.html" $page -}}
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    {{ if $page.IsSection }}
+      <strong>{{ $active.Title }}</strong>
+    {{ end }}
+  </nav>
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <h1 class="section-title">{{ $active.Title }}</h1>
+    {{ with $active.Description }}
+      <p class="section-description">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  {{ with $active.Content }}
+    <div class="section-body">
+      {{ . | safeHTML }}
+    </div>
+  {{ end }}
+
+  <!-- Articles List -->
+  {{ $pages := $page.Pages | default $page.Site.RegularPages }}
+  {{ $pages = partial "exception/filter-list-pages.html" $pages }}
+  {{/* Build available languages via CSV accumulation */}}
+  {{/* Language filter UI removed; we now filter server-side */}}
+  {{ if $pages }}
+    {{ $paginator := .Scratch.Get "_head_paginator" }}
+    {{ if not $paginator }}
+      {{ $orderedScratch := newScratch }}
+      {{ $orderedScratch.Set "ordered" ($pages.ByDate.Reverse) }}
+      {{ $sortHint := lower ($page.Params.list_sort | default "") }}
+      {{ if eq $sortHint "weight" }}
+        {{ $orderedScratch.Set "ordered" (sort $pages ".Params.weight") }}
+      {{ else if eq $sortHint "weight_desc" }}
+        {{ $orderedScratch.Set "ordered" ((sort $pages ".Params.weight").Reverse) }}
+      {{ else if eq $sortHint "date_asc" }}
+        {{ $orderedScratch.Set "ordered" ($pages.ByDate) }}
+      {{ end }}
+      {{ $ordered := $orderedScratch.Get "ordered" }}
+      {{ $english := where $ordered "Params.language" "en" }}
+      {{ $filtered := cond (gt (len $english) 0) $english $ordered }}
+      {{ $paginator = .Paginate $filtered }}
+      {{ .Scratch.Set "_head_paginator" $paginator }}
+    {{ end }}
+    <div id="articles" class="article-list">
+      {{ range $paginator.Pages }}
+        <article class="article-item" data-lang="{{ with .Params.language }}{{ . | lower }}{{ end }}">
+          <div class="article-header">
+            {{ with .Params.category }}
+              <span class="badge badge-category">{{ . }}</span>
+            {{ end }}
+            {{ partial "language-badge.html" . }}
+            <h2 class="article-title">
+              <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </h2>
+          </div>
+
+          <div class="article-meta">
+            {{ with .Params.author }}
+              <span>By {{ . }}</span>
+              {{ if or $.Date $.Params.source_url $.Params.feed }}<span>&bull;</span>{{ end }}
+            {{ end }}
+            {{ partial "news-date.html" . }}
+            {{ with .Params.source_url }}
+              <span>&bull;</span>
+              <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
+            {{ end }}
+            {{ with .Params.feed }}
+              <span>&bull;</span>
+              <span class="text-muted">{{ . | replaceRE "^https?://(www\\.)?" "" | replaceRE "/.*$" "" }}</span>
+            {{ end }}
+          </div>
+
+          {{ with .Summary }}
+            {{ $clean := replace (replace . "" "") "" "" }}
+            <p class="article-summary">{{ $clean | plainify | truncate 200 }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+    {{ partial "pagination.html" (dict "paginator" $paginator) }}
+    {{ partial "news-itemlist.html" (dict "pages" $paginator.Pages) }}
+  {{ else }}
+    <div class="card">
+      <p class="text-muted">No entries yet in this section.</p>
+    </div>
+  {{ end }}
+{{ end }}

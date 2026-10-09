@@ -1,0 +1,9 @@
+{{- $pages := . -}}
+{{- if site.Params.enable_exceptions -}}
+  {{- $visible := slice -}}
+  {{- range $pages -}}
+    {{- if not (partial "exception/is-hidden.html" .) }}{{ $visible = $visible | append . }}{{ end -}}
+  {{- end -}}
+  {{- $pages = $visible -}}
+{{- end -}}
+{{- return $pages -}}

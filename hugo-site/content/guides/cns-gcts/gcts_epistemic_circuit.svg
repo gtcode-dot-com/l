@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="gcts-title gcts-desc">
+  <title id="gcts-title">GCTS epistemic circuit</title>
+  <desc id="gcts-desc">A structured diagram showing evidence and record-access states moving through tensor closure and oracle-boundary controls into ranked possible worlds and likely-truth outputs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071019"/>
+      <stop offset="0.48" stop-color="#0d1a24"/>
+      <stop offset="1" stop-color="#10130f"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102637"/>
+      <stop offset="1" stop-color="#122015"/>
+    </linearGradient>
+    <linearGradient id="engine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14354b"/>
+      <stop offset="0.52" stop-color="#173027"/>
+      <stop offset="1" stop-color="#31321a"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.18 0 0 0 0 0.78 0 0 0 0 0.78 0 0 0 .46 0" result="aqua"/>
+      <feMerge>
+        <feMergeNode in="aqua"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      svg { background: #071019; font-family: "Space Grotesk", "Inter", "Aptos", "Segoe UI", sans-serif; }
+      .bg { fill: url(#bg); }
+      .grid { stroke: rgba(145, 189, 191, .12); stroke-width: 1; }
+      .frame { fill: none; stroke: rgba(205, 232, 226, .22); stroke-width: 1.5; }
+      .eyebrow { fill: #8fded7; font-size: 17px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+      .title { fill: #f4f2e7; font-size: 38px; font-weight: 800; letter-spacing: -.02em; }
+      .subtitle { fill: #a9b9b6; font-size: 18px; font-weight: 500; }
+      .section { fill: #dbe9e4; font-size: 16px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+      .panel { fill: rgba(14, 29, 39, .92); stroke: rgba(151, 205, 198, .35); stroke-width: 1.3; }
+      .panel-soft { fill: rgba(17, 30, 31, .82); stroke: rgba(204, 221, 188, .28); stroke-width: 1.2; }
+      .card-title { fill: #f6f0dd; font-size: 17px; font-weight: 800; }
+      .card-body { fill: #acc0bd; font-size: 14px; font-weight: 600; }
+      .tiny { fill: #7f9997; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+      .micro { fill: #91aaa6; font-size: 12px; font-weight: 600; }
+      .line { fill: none; stroke: #6fd6d2; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .arrow-head { fill: none; stroke: #6fd6d2; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .line-soft { fill: none; stroke: rgba(111, 214, 210, .44); stroke-width: 1.7; stroke-linecap: round; stroke-dasharray: 5 7; }
+      .gold-line { fill: none; stroke: #e2c15b; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 6 8; }
+      .node { fill: #0b1821; stroke: #6fd6d2; stroke-width: 1.4; }
+      .gold-node { fill: #16170d; stroke: #e2c15b; stroke-width: 1.4; }
+      .engine-ring { fill: rgba(9, 20, 28, .72); stroke: rgba(111, 214, 210, .58); stroke-width: 2; }
+      .oracle-ring { fill: none; stroke: rgba(226, 193, 91, .82); stroke-width: 2.3; stroke-dasharray: 8 10; }
+      .engine-core { fill: url(#engine); stroke: rgba(244, 242, 231, .22); stroke-width: 1.2; }
+      .bar-bg { fill: rgba(244, 242, 231, .14); }
+      .bar-a { fill: #6fd6d2; }
+      .bar-b { fill: #e2c15b; }
+      .bar-c { fill: #dc806e; }
+      .output { fill: rgba(17, 27, 20, .94); stroke: rgba(226, 193, 91, .48); stroke-width: 1.5; }
+      .output-title { fill: #f6f0dd; font-size: 22px; font-weight: 850; }
+      .pill { fill: rgba(244, 242, 231, .08); stroke: rgba(244, 242, 231, .16); stroke-width: 1; }
+      .pill-text { fill: #dfe9dc; font-size: 13px; font-weight: 750; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="720" rx="34"/>
+
+  <g opacity=".72">
+    <path class="grid" d="M60 140 H1140 M60 220 H1140 M60 300 H1140 M60 380 H1140 M60 460 H1140 M60 540 H1140 M60 620 H1140"/>
+    <path class="grid" d="M120 118 V648 M240 118 V648 M360 118 V648 M480 118 V648 M600 118 V648 M720 118 V648 M840 118 V648 M960 118 V648 M1080 118 V648"/>
+  </g>
+  <rect class="frame" x="28" y="28" width="1144" height="664" rx="28"/>
+
+  <text class="eyebrow" x="60" y="64">CNS 7.1 / GCTS</text>
+  <text class="title" x="60" y="103">Grounded Chiral Tensor Synthesis</text>
+  <text class="subtitle" x="60" y="132">Evidence and access states pass through closure, residual checks, and ranked possible worlds.</text>
+
+  <text class="section" x="155" y="178" text-anchor="middle">Evidence input</text>
+  <text class="section" x="400" y="178" text-anchor="middle">Grounding layer</text>
+  <text class="section" x="640" y="178" text-anchor="middle">Closure engine</text>
+  <text class="section" x="985" y="178" text-anchor="middle">Ranked worlds</text>
+
+  <g id="evidence-input">
+    <rect class="panel" x="60" y="200" width="190" height="54" rx="15"/>
+    <text class="card-title" x="80" y="224">Available</text>
+    <text class="card-body" x="80" y="242">record</text>
+
+    <rect class="panel" x="60" y="270" width="190" height="54" rx="15"/>
+    <text class="card-title" x="80" y="294">Sealed /</text>
+    <text class="card-body" x="80" y="312">withheld</text>
+
+    <rect class="panel" x="60" y="340" width="190" height="54" rx="15"/>
+    <text class="card-title" x="80" y="364">Not-generated</text>
+    <text class="card-body" x="80" y="382">record</text>
+
+    <rect class="panel" x="60" y="410" width="190" height="54" rx="15"/>
+    <text class="card-title" x="80" y="434">Evidence</text>
+    <text class="card-body" x="80" y="452">of absence</text>
+
+    <rect class="panel" x="60" y="480" width="190" height="54" rx="15"/>
+    <text class="card-title" x="80" y="504">Source</text>
+    <text class="card-body" x="80" y="522">corpus</text>
+  </g>
+
+  <g id="grounding-layer">
+    <rect class="panel-soft" x="300" y="215" width="200" height="72" rx="18"/>
+    <text class="card-title" x="322" y="246">Evidence</text>
+    <text class="card-body" x="322" y="266">atoms</text>
+
+    <rect class="panel-soft" x="300" y="318" width="200" height="72" rx="18"/>
+    <text class="card-title" x="322" y="349">Record-access</text>
+    <text class="card-body" x="322" y="369">states</text>
+
+    <rect class="panel-soft" x="300" y="421" width="200" height="72" rx="18"/>
+    <text class="card-title" x="322" y="452">Claim graph</text>
+    <text class="card-body" x="322" y="472">and duties</text>
+  </g>
+
+  <path class="line" d="M250 227 L299 251"/>
+  <path class="arrow-head" d="M282.5 250.8 L299 251 L288.5 238.2"/>
+  <path class="line" d="M250 297 L299 341"/>
+  <path class="arrow-head" d="M284 337 L299 341 L293 326"/>
+  <path class="line" d="M250 367 L299 367"/>
+  <path class="arrow-head" d="M285 360 L299 367 L285 374"/>
+  <path class="line" d="M250 437 L299 444"/>
+  <path class="arrow-head" d="M284 449 L299 444 L286 435"/>
+  <path class="line" d="M250 507 L299 470"/>
+  <path class="arrow-head" d="M292 484 L299 470 L284 473"/>
+
+  <g id="closure-engine" filter="url(#glow)">
+    <circle class="engine-ring" cx="640" cy="354" r="142"/>
+    <circle class="oracle-ring" cx="640" cy="354" r="162"/>
+    <rect class="engine-core" x="526" y="270" width="228" height="168" rx="28"/>
+    <text class="tiny" x="640" y="255" text-anchor="middle">Oracle boundary</text>
+    <text class="output-title" x="640" y="307" text-anchor="middle">Tensor closure</text>
+    <text class="card-body" x="640" y="336" text-anchor="middle">rule graph</text>
+    <text class="card-body" x="640" y="361" text-anchor="middle">chirality residuals</text>
+    <text class="card-body" x="640" y="386" text-anchor="middle">confidence split</text>
+    <text class="micro" x="640" y="420" text-anchor="middle">labels calibrate offline</text>
+  </g>
+
+  <path class="line" d="M500 251 L525 312"/>
+  <path class="arrow-head" d="M514 302 L525 312 L525 297"/>
+  <path class="line" d="M500 354 H525"/>
+  <path class="arrow-head" d="M511 347 L525 354 L511 361"/>
+  <path class="line" d="M500 457 L525 398"/>
+  <path class="arrow-head" d="M526 414 L525 398 L513 408"/>
+
+  <g id="ranked-worlds">
+    <rect class="panel" x="830" y="205" width="310" height="76" rx="18"/>
+    <text class="card-title" x="854" y="234">World A</text>
+    <text class="card-body" x="854" y="260">high posterior / record-contingent</text>
+    <rect class="bar-bg" x="1010" y="225" width="100" height="10" rx="5"/>
+    <rect class="bar-a" x="1010" y="225" width="82" height="10" rx="5"/>
+
+    <rect class="panel" x="830" y="309" width="310" height="76" rx="18"/>
+    <text class="card-title" x="854" y="338">World B</text>
+    <text class="card-body" x="854" y="364">moderate posterior / conflicted</text>
+    <rect class="bar-bg" x="1010" y="329" width="100" height="10" rx="5"/>
+    <rect class="bar-b" x="1010" y="329" width="58" height="10" rx="5"/>
+
+    <rect class="panel" x="830" y="413" width="310" height="76" rx="18"/>
+    <text class="card-title" x="854" y="442">World C</text>
+    <text class="card-body" x="854" y="468">low posterior / access mismatch</text>
+    <rect class="bar-bg" x="1010" y="433" width="100" height="10" rx="5"/>
+    <rect class="bar-c" x="1010" y="433" width="34" height="10" rx="5"/>
+  </g>
+
+  <path class="line" d="M786 285 L829 243"/>
+  <path class="arrow-head" d="M824 258 L829 243 L814 248"/>
+  <path class="line" d="M786 354 H829"/>
+  <path class="arrow-head" d="M815 347 L829 354 L815 361"/>
+  <path class="line" d="M786 424 L829 451"/>
+  <path class="arrow-head" d="M813 450 L829 451 L821 438"/>
+
+  <path class="line" d="M985 489 V531"/>
+  <path class="arrow-head" d="M977 515 L985 531 L993 515"/>
+
+  <g id="output">
+    <rect class="output" x="830" y="532" width="310" height="124" rx="20"/>
+    <text class="output-title" x="854" y="570">Likely-truth output</text>
+    <rect class="pill" x="854" y="590" width="68" height="26" rx="13"/>
+    <text class="pill-text" x="888" y="606" text-anchor="middle">proven</text>
+    <rect class="pill" x="930" y="590" width="82" height="26" rx="13"/>
+    <text class="pill-text" x="971" y="606" text-anchor="middle">probable</text>
+    <rect class="pill" x="1020" y="590" width="86" height="26" rx="13"/>
+    <text class="pill-text" x="1063" y="606" text-anchor="middle">plausible</text>
+    <text class="micro" x="854" y="640">record_contingent / conflicted / rejected</text>
+  </g>
+
+  <g id="footer-notes">
+    <rect class="panel-soft" x="60" y="552" width="370" height="104" rx="20"/>
+    <text class="tiny" x="84" y="584">No runtime oracle</text>
+    <text class="micro" x="84" y="610">Closure is grounded in records, access state,</text>
+    <text class="micro" x="84" y="629">rules, and residual error.</text>
+  </g>
+
+  <g id="score-split">
+    <rect class="panel-soft" x="470" y="538" width="320" height="118" rx="20"/>
+    <text class="tiny" x="494" y="567">Score split</text>
+    <text class="micro" x="494" y="595">P(c | E,A,I) posterior mass</text>
+    <text class="micro" x="494" y="617">P0(c | E) strict support</text>
+    <text class="micro" x="494" y="639">Conf(c) uncertainty band</text>
+  </g>
+</svg>

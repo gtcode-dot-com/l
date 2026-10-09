@@ -1,0 +1,765 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f3ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </linearGradient>
+    
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff003c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff003c" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ff9d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00ff9d" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb800" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffb800" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="timelineIntensity" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9d" stop-opacity="0.3"/>
+      <stop offset="20%" stop-color="#00f3ff" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#ffb800" stop-opacity="0.7"/>
+      <stop offset="55%" stop-color="#ff003c" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#ffb800" stop-opacity="0.5"/>
+      <stop offset="85%" stop-color="#00f3ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00ff9d" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <linearGradient id="glassPanelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0d0d1a" stop-opacity="0.9"/>
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="redPulse" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+
+    <!-- Hexagon Symbol -->
+    <symbol id="hexagon" viewBox="-30 -26 60 52">
+      <polygon points="30,0 15,26 -15,26 -30,0 -15,-26 15,-26" 
+               fill="none" stroke-width="1.5"/>
+    </symbol>
+    
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a2e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  <rect width="1200" height="800" fill="url(#gridPattern)" opacity="0.4"/>
+  
+  <!-- Scanline Effect -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f3ff" stroke-width="1">
+      <animate attributeName="y1" values="0;800;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="0;800;0" dur="8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- LEFT SIDEBAR: FRACTAL Z-AXIS                -->
+  <!-- ============================================ -->
+  <g id="left-sidebar">
+    <!-- Panel Background -->
+    <rect x="10" y="60" width="70" height="620" fill="#0a0a15" fill-opacity="0.8" 
+          stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1" rx="4"/>
+    
+    <!-- Header -->
+    <text x="45" y="85" font-family="monospace, sans-serif" font-size="8" 
+          fill="#00f3ff" text-anchor="middle" letter-spacing="1">FRACTAL</text>
+    <text x="45" y="96" font-family="monospace, sans-serif" font-size="8" 
+          fill="#00f3ff" text-anchor="middle" letter-spacing="1">LEVEL</text>
+    
+    <!-- Vertical Track -->
+    <rect x="38" y="110" width="14" height="520" fill="#1a1a2e" rx="2"/>
+    <rect x="40" y="112" width="10" height="516" fill="#0d0d1a" rx="1"/>
+    
+    <!-- Level Markers and Labels -->
+    <g font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" fill-opacity="0.7">
+      <!-- L0 - Business -->
+      <line x1="30" y1="130" x2="38" y2="130" stroke="#00f3ff" stroke-opacity="0.5"/>
+      <text x="26" y="133" text-anchor="end">L₀</text>
+      <text x="56" y="133" font-size="5" fill-opacity="0.5">BUSINESS</text>
+      
+      <!-- L1 - Domain -->
+      <line x1="32" y1="180" x2="38" y2="180" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <text x="26" y="183" text-anchor="end">L₁</text>
+      <text x="56" y="183" font-size="5" fill-opacity="0.5">DOMAIN</text>
+      
+      <!-- L2 - Application -->
+      <line x1="32" y1="230" x2="38" y2="230" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <text x="26" y="233" text-anchor="end">L₂</text>
+      <text x="56" y="233" font-size="5" fill-opacity="0.5">APP</text>
+      
+      <!-- L3 - System Architecture (ACTIVE) -->
+      <rect x="36" y="270" width="18" height="30" fill="#00f3ff" fill-opacity="0.2" rx="2"/>
+      <line x1="30" y1="285" x2="38" y2="285" stroke="#00f3ff" stroke-width="2"/>
+      <text x="26" y="288" text-anchor="end" fill="#00f3ff" fill-opacity="1" font-size="8">L₃</text>
+      <text x="56" y="288" font-size="5" fill="#00f3ff" fill-opacity="1">SYSTEM</text>
+      <!-- Active Indicator -->
+      <circle cx="45" cy="285" r="4" fill="#00f3ff" filter="url(#glow)"/>
+      <circle cx="45" cy="285" r="2" fill="#ffffff"/>
+      
+      <!-- L4 - Service -->
+      <line x1="32" y1="335" x2="38" y2="335" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <text x="26" y="338" text-anchor="end">L₄</text>
+      <text x="56" y="338" font-size="5" fill-opacity="0.5">SERVICE</text>
+      
+      <!-- L5 - Module -->
+      <line x1="32" y1="385" x2="38" y2="385" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <text x="26" y="388" text-anchor="end">L₅</text>
+      <text x="56" y="388" font-size="5" fill-opacity="0.5">MODULE</text>
+      
+      <!-- L6 - Component -->
+      <line x1="32" y1="435" x2="38" y2="435" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <text x="26" y="438" text-anchor="end">L₆</text>
+      <text x="56" y="438" font-size="5" fill-opacity="0.5">COMP</text>
+      
+      <!-- L7 - Function -->
+      <line x1="32" y1="485" x2="38" y2="485" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <text x="26" y="488" text-anchor="end">L₇</text>
+      <text x="56" y="488" font-size="5" fill-opacity="0.5">FUNC</text>
+      
+      <!-- L8 - Statement -->
+      <line x1="32" y1="535" x2="38" y2="535" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <text x="26" y="538" text-anchor="end">L₈</text>
+      <text x="56" y="538" font-size="5" fill-opacity="0.5">STMT</text>
+      
+      <!-- L9 - Code -->
+      <line x1="30" y1="585" x2="38" y2="585" stroke="#00f3ff" stroke-opacity="0.5"/>
+      <text x="26" y="588" text-anchor="end">L₉</text>
+      <text x="56" y="588" font-size="5" fill-opacity="0.5">CODE</text>
+    </g>
+    
+    <!-- Vertical Move Indicator Arrow -->
+    <g transform="translate(45, 320)">
+      <path d="M 0 0 L 0 40" stroke="#00f3ff" stroke-width="1" stroke-dasharray="3,2"/>
+      <polygon points="0,45 -4,38 4,38" fill="#00f3ff"/>
+      <text x="12" y="25" font-family="monospace, sans-serif" font-size="5" fill="#00f3ff" fill-opacity="0.7">V-MOVE</text>
+    </g>
+    
+    <!-- Corner Decorations -->
+    <path d="M 10 60 L 10 70 M 10 60 L 20 60" stroke="#00f3ff" stroke-width="1" fill="none"/>
+    <path d="M 80 60 L 80 70 M 80 60 L 70 60" stroke="#00f3ff" stroke-width="1" fill="none"/>
+    <path d="M 10 680 L 10 670 M 10 680 L 20 680" stroke="#00f3ff" stroke-width="1" fill="none"/>
+    <path d="M 80 680 L 80 670 M 80 680 L 70 680" stroke="#00f3ff" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- RIGHT SIDEBAR: RISK HEATMAP                 -->
+  <!-- ============================================ -->
+  <g id="right-sidebar">
+    <!-- Panel Background -->
+    <rect x="1120" y="60" width="70" height="620" fill="#0a0a15" fill-opacity="0.8" 
+          stroke="#ff003c" stroke-opacity="0.3" stroke-width="1" rx="4"/>
+    
+    <!-- Header -->
+    <text x="1155" y="85" font-family="monospace, sans-serif" font-size="8" 
+          fill="#ff003c" text-anchor="middle" letter-spacing="1">RISK</text>
+    <text x="1155" y="96" font-family="monospace, sans-serif" font-size="8" 
+          fill="#ff003c" text-anchor="middle" letter-spacing="1">TOPOLOGY</text>
+    
+    <!-- Heatmap Track -->
+    <rect x="1140" y="110" width="30" height="520" fill="#1a1a2e" rx="2"/>
+    
+    <!-- Risk Density Visualization -->
+    <!-- Safe Zone 1 (Top) -->
+    <rect x="1143" y="115" width="24" height="40" fill="url(#greenGlow)" rx="1"/>
+    <text x="1155" y="138" font-family="monospace, sans-serif" font-size="5" 
+          fill="#00ff9d" text-anchor="middle">SAFE</text>
+    
+    <!-- Low Risk Zone -->
+    <rect x="1143" y="160" width="24" height="60" fill="#00f3ff" fill-opacity="0.15" rx="1"/>
+    
+    <!-- Warning Zone -->
+    <rect x="1143" y="225" width="24" height="35" fill="url(#amberGlow)" rx="1"/>
+    <text x="1155" y="245" font-family="monospace, sans-serif" font-size="5" 
+          fill="#ffb800" text-anchor="middle">WARN</text>
+    
+    <!-- CRITICAL RED ZONE -->
+    <rect x="1141" y="270" width="28" height="120" fill="url(#redGlow)" rx="2" filter="url(#redPulse)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1143" y="275" width="24" height="110" fill="#ff003c" fill-opacity="0.4" rx="1"/>
+    <text x="1155" y="325" font-family="monospace, sans-serif" font-size="6" 
+          fill="#ff003c" text-anchor="middle" font-weight="bold">CRIT</text>
+    <text x="1155" y="335" font-family="monospace, sans-serif" font-size="5" 
+          fill="#ff003c" text-anchor="middle">ZONE</text>
+    <!-- Danger lines -->
+    <g stroke="#ff003c" stroke-opacity="0.6" stroke-width="0.5">
+      <line x1="1143" y1="290" x2="1167" y2="290"/>
+      <line x1="1143" y1="310" x2="1167" y2="310"/>
+      <line x1="1143" y1="330" x2="1167" y2="330"/>
+      <line x1="1143" y1="350" x2="1167" y2="350"/>
+      <line x1="1143" y1="370" x2="1167" y2="370"/>
+    </g>
+    
+    <!-- Low Risk Zone 2 -->
+    <rect x="1143" y="400" width="24" height="50" fill="#00f3ff" fill-opacity="0.1" rx="1"/>
+    
+    <!-- Safe Zone 2 -->
+    <rect x="1143" y="455" width="24" height="30" fill="url(#greenGlow)" rx="1"/>
+    <text x="1155" y="473" font-family="monospace, sans-serif" font-size="5" 
+          fill="#00ff9d" text-anchor="middle">SAFE</text>
+    
+    <!-- Warning Zone 2 -->
+    <rect x="1143" y="490" width="24" height="25" fill="url(#amberGlow)" rx="1"/>
+    
+    <!-- Safe Zone 3 (Bottom) -->
+    <rect x="1143" y="520" width="24" height="55" fill="url(#greenGlow)" rx="1"/>
+    <text x="1155" y="550" font-family="monospace, sans-serif" font-size="5" 
+          fill="#00ff9d" text-anchor="middle">SAFE</text>
+    
+    <!-- Safe Zone 4 -->
+    <rect x="1143" y="580" width="24" height="45" fill="url(#greenGlow)" rx="1"/>
+    
+    <!-- Metrics -->
+    <g font-family="monospace, sans-serif" font-size="6" fill="#ff003c">
+      <text x="1130" y="655">CRIT:</text>
+      <text x="1165" y="655" fill="#ffffff">1</text>
+      <text x="1130" y="665" fill="#ffb800">WARN:</text>
+      <text x="1165" y="665" fill="#ffffff">2</text>
+      <text x="1130" y="675" fill="#00ff9d">SAFE:</text>
+      <text x="1165" y="675" fill="#ffffff">4</text>
+    </g>
+    
+    <!-- Corner Decorations -->
+    <path d="M 1120 60 L 1120 70 M 1120 60 L 1130 60" stroke="#ff003c" stroke-width="1" fill="none"/>
+    <path d="M 1190 60 L 1190 70 M 1190 60 L 1180 60" stroke="#ff003c" stroke-width="1" fill="none"/>
+    <path d="M 1120 680 L 1120 670 M 1120 680 L 1130 680" stroke="#ff003c" stroke-width="1" fill="none"/>
+    <path d="M 1190 680 L 1190 670 M 1190 680 L 1180 680" stroke="#ff003c" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- TOP HEADER BAR                              -->
+  <!-- ============================================ -->
+  <g id="header">
+    <rect x="90" y="10" width="1020" height="40" fill="#0a0a15" fill-opacity="0.9" 
+          stroke="#00f3ff" stroke-opacity="0.4" stroke-width="1" rx="4"/>
+    
+    <!-- Logo/Title -->
+    <text x="110" y="36" font-family="monospace, sans-serif" font-size="18" 
+          fill="#00f3ff" font-weight="bold" filter="url(#glow)">NEXUS</text>
+    <text x="195" y="36" font-family="monospace, sans-serif" font-size="12" 
+          fill="#ffffff" fill-opacity="0.7">CONTEXT-GRAPH CINEMA DEBUGGER</text>
+    
+    <!-- Status Indicators -->
+    <g transform="translate(650, 30)">
+      <circle cx="0" cy="0" r="4" fill="#00ff9d" filter="url(#glow)"/>
+      <text x="10" y="3" font-family="monospace, sans-serif" font-size="8" fill="#00ff9d">LIVE</text>
+      
+      <circle cx="70" cy="0" r="4" fill="#ffb800"/>
+      <text x="80" y="3" font-family="monospace, sans-serif" font-size="8" fill="#ffb800">3 WARNINGS</text>
+      
+      <circle cx="170" cy="0" r="4" fill="#ff003c" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+      </circle>
+      <text x="180" y="3" font-family="monospace, sans-serif" font-size="8" fill="#ff003c">1 CRITICAL</text>
+    </g>
+    
+    <!-- Version/Session -->
+    <text x="1000" y="28" font-family="monospace, sans-serif" font-size="7" 
+          fill="#00f3ff" fill-opacity="0.5" text-anchor="end">v2.4.1</text>
+    <text x="1000" y="38" font-family="monospace, sans-serif" font-size="7" 
+          fill="#00f3ff" fill-opacity="0.5" text-anchor="end">SESSION: 0x7F3A</text>
+    
+    <!-- Decorative corners -->
+    <path d="M 90 10 L 90 20 M 90 10 L 100 10" stroke="#00f3ff" stroke-width="2" fill="none"/>
+    <path d="M 1110 10 L 1110 20 M 1110 10 L 1100 10" stroke="#00f3ff" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM PANEL: EXECUTION CINEMA              -->
+  <!-- ============================================ -->
+  <g id="bottom-panel">
+    <!-- Panel Background -->
+    <rect x="90" y="690" width="1020" height="100" fill="#0a0a15" fill-opacity="0.9" 
+          stroke="#00f3ff" stroke-opacity="0.4" stroke-width="1" rx="4"/>
+    
+    <!-- Header -->
+    <text x="110" y="712" font-family="monospace, sans-serif" font-size="10" 
+          fill="#00f3ff" letter-spacing="2">EXECUTION CINEMA</text>
+    
+    <!-- Playback Controls -->
+    <g transform="translate(110, 730)">
+      <!-- Rewind -->
+      <g cursor="pointer">
+        <rect x="0" y="0" width="24" height="24" fill="#1a1a2e" stroke="#00f3ff" stroke-opacity="0.5" rx="3"/>
+        <polygon points="17,6 10,12 17,18" fill="#00f3ff"/>
+        <polygon points="11,6 4,12 11,18" fill="#00f3ff"/>
+      </g>
+      
+      <!-- Play/Pause -->
+      <g transform="translate(30, 0)" cursor="pointer">
+        <rect x="0" y="0" width="30" height="24" fill="#00f3ff" fill-opacity="0.2" 
+              stroke="#00f3ff" rx="3"/>
+        <polygon points="10,6 10,18 22,12" fill="#00f3ff" filter="url(#glow)"/>
+      </g>
+      
+      <!-- Forward -->
+      <g transform="translate(66, 0)" cursor="pointer">
+        <rect x="0" y="0" width="24" height="24" fill="#1a1a2e" stroke="#00f3ff" stroke-opacity="0.5" rx="3"/>
+        <polygon points="7,6 14,12 7,18" fill="#00f3ff"/>
+        <polygon points="13,6 20,12 13,18" fill="#00f3ff"/>
+      </g>
+      
+      <!-- Step Back -->
+      <g transform="translate(96, 0)" cursor="pointer">
+        <rect x="0" y="0" width="24" height="24" fill="#1a1a2e" stroke="#00f3ff" stroke-opacity="0.5" rx="3"/>
+        <rect x="6" y="6" width="3" height="12" fill="#00f3ff"/>
+        <polygon points="20,6 11,12 20,18" fill="#00f3ff"/>
+      </g>
+      
+      <!-- Step Forward -->
+      <g transform="translate(126, 0)" cursor="pointer">
+        <rect x="0" y="0" width="24" height="24" fill="#1a1a2e" stroke="#00f3ff" stroke-opacity="0.5" rx="3"/>
+        <polygon points="4,6 13,12 4,18" fill="#00f3ff"/>
+        <rect x="15" y="6" width="3" height="12" fill="#00f3ff"/>
+      </g>
+    </g>
+    
+    <!-- Timeline Track -->
+    <g transform="translate(270, 725)">
+      <!-- Track Background -->
+      <rect x="0" y="0" width="720" height="35" fill="#1a1a2e" rx="3"/>
+      
+      <!-- Data Flow Intensity Visualization -->
+      <rect x="2" y="2" width="716" height="31" fill="url(#timelineIntensity)" rx="2" opacity="0.8"/>
+      
+      <!-- Waveform Overlay -->
+      <g stroke="#00f3ff" stroke-opacity="0.4" fill="none" stroke-width="1">
+        <path d="M 10,17 Q 30,5 50,17 T 90,17 T 130,17 T 170,17 T 210,17 T 250,17"/>
+        <path d="M 250,17 Q 280,25 310,10 Q 340,30 370,5 Q 400,25 430,17"/>
+        <path d="M 430,17 Q 470,12 510,17 T 550,17 T 590,17 T 630,17 T 670,17 T 710,17"/>
+      </g>
+      
+      <!-- Critical Event Marker -->
+      <rect x="345" y="0" width="60" height="35" fill="#ff003c" fill-opacity="0.3" rx="2"/>
+      <text x="375" y="45" font-family="monospace, sans-serif" font-size="6" 
+            fill="#ff003c" text-anchor="middle">ANOMALY</text>
+      
+      <!-- Time Markers -->
+      <g font-family="monospace, sans-serif" font-size="6" fill="#00f3ff" fill-opacity="0.6">
+        <text x="0" y="-5">00:00</text>
+        <line x1="0" y1="0" x2="0" y2="5" stroke="#00f3ff" stroke-opacity="0.3"/>
+        
+        <text x="180" y="-5">02:30</text>
+        <line x1="180" y1="0" x2="180" y2="5" stroke="#00f3ff" stroke-opacity="0.3"/>
+        
+        <text x="360" y="-5">05:00</text>
+        <line x1="360" y1="0" x2="360" y2="5" stroke="#00f3ff" stroke-opacity="0.3"/>
+        
+        <text x="540" y="-5">07:30</text>
+        <line x1="540" y1="0" x2="540" y2="5" stroke="#00f3ff" stroke-opacity="0.3"/>
+        
+        <text x="710" y="-5" text-anchor="end">10:00</text>
+        <line x1="720" y1="0" x2="720" y2="5" stroke="#00f3ff" stroke-opacity="0.3"/>
+      </g>
+      
+      <!-- Scrubber Head -->
+      <g transform="translate(375, -8)">
+        <polygon points="0,0 -6,8 -6,48 6,48 6,8" fill="#ff003c" fill-opacity="0.8" filter="url(#glow)"/>
+        <rect x="-4" y="10" width="8" height="33" fill="#ff003c" fill-opacity="0.4"/>
+        <circle cx="0" cy="0" r="5" fill="#ff003c" stroke="#ffffff" stroke-width="1"/>
+      </g>
+    </g>
+    
+    <!-- Current Time Display -->
+    <text x="1000" y="752" font-family="monospace, sans-serif" font-size="14" 
+          fill="#00f3ff" text-anchor="end">05:12.847</text>
+    <text x="1000" y="765" font-family="monospace, sans-serif" font-size="8" 
+          fill="#00f3ff" fill-opacity="0.5" text-anchor="end">FRAME 15,642</text>
+    
+    <!-- Corner Decorations -->
+    <path d="M 90 690 L 90 700 M 90 690 L 100 690" stroke="#00f3ff" stroke-width="1" fill="none"/>
+    <path d="M 1110 690 L 1110 700 M 1110 690 L 1100 690" stroke="#00f3ff" stroke-width="1" fill="none"/>
+    <path d="M 90 790 L 90 780 M 90 790 L 100 790" stroke="#00f3ff" stroke-width="1" fill="none"/>
+    <path d="M 1110 790 L 1110 780 M 1110 790 L 1100 790" stroke="#00f3ff" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- MAIN VIEWPORT: CONTEXT GRAPH                -->
+  <!-- ============================================ -->
+  <g id="main-viewport">
+    <!-- Viewport Frame -->
+    <rect x="90" y="55" width="1020" height="625" fill="none" 
+          stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1" rx="4"/>
+    
+    <!-- Grid Overlay for Depth -->
+    <g stroke="#1a1a2e" stroke-width="0.5" opacity="0.5">
+      <line x1="300" y1="55" x2="300" y2="680"/>
+      <line x1="500" y1="55" x2="500" y2="680"/>
+      <line x1="700" y1="55" x2="700" y2="680"/>
+      <line x1="900" y1="55" x2="900" y2="680"/>
+      <line x1="90" y1="200" x2="1110" y2="200"/>
+      <line x1="90" y1="370" x2="1110" y2="370"/>
+      <line x1="90" y1="540" x2="1110" y2="540"/>
+    </g>
+
+    <!-- ========== CONNECTION LINES (BEZIER CURVES) ========== -->
+    <g id="connections" fill="none" stroke-width="1">
+      <!-- Normal Connections (Cyan) -->
+      <path d="M 250,180 Q 320,200 380,250" stroke="#00f3ff" stroke-opacity="0.4"/>
+      <path d="M 380,250 Q 420,280 450,320" stroke="#00f3ff" stroke-opacity="0.5"/>
+      <path d="M 450,320 Q 500,380 550,400" stroke="#00f3ff" stroke-opacity="0.5"/>
+      <path d="M 550,400 Q 620,420 680,390" stroke="#00f3ff" stroke-opacity="0.4"/>
+      <path d="M 680,390 Q 750,350 820,320" stroke="#00f3ff" stroke-opacity="0.4"/>
+      <path d="M 820,320 Q 880,290 940,260" stroke="#00f3ff" stroke-opacity="0.3"/>
+      
+      <!-- Branch connections -->
+      <path d="M 450,320 Q 400,380 350,450" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <path d="M 550,400 Q 500,480 480,550" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <path d="M 680,390 Q 720,460 750,520" stroke="#00f3ff" stroke-opacity="0.3"/>
+      <path d="M 820,320 Q 870,380 900,440" stroke="#00f3ff" stroke-opacity="0.3"/>
+      
+      <!-- Safe path connections (Green) -->
+      <path d="M 200,450 Q 260,480 320,500" stroke="#00ff9d" stroke-opacity="0.4"/>
+      <path d="M 320,500 Q 380,520 440,540" stroke="#00ff9d" stroke-opacity="0.4"/>
+      <path d="M 870,500 Q 920,480 970,450" stroke="#00ff9d" stroke-opacity="0.4"/>
+      
+      <!-- WARNING PATH (Amber) -->
+      <path d="M 300,280 Q 340,320 370,360" stroke="#ffb800" stroke-opacity="0.6" stroke-width="1.5"/>
+      <path d="M 370,360 Q 400,400 420,440" stroke="#ffb800" stroke-opacity="0.6" stroke-width="1.5"/>
+      
+      <!-- ========== CRITICAL RED PATH (Blast Radius) ========== -->
+      <g id="blast-radius-path">
+        <!-- Main danger chain -->
+        <path d="M 600,550 Q 620,500 640,450" stroke="#ff003c" stroke-width="2.5" 
+              stroke-opacity="0.9" filter="url(#redPulse)">
+          <animate attributeName="stroke-opacity" values="0.9;0.5;0.9" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 640,450 Q 660,400 680,350" stroke="#ff003c" stroke-width="2.5" 
+              stroke-opacity="0.9" filter="url(#redPulse)">
+          <animate attributeName="stroke-opacity" values="0.9;0.5;0.9" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 680,350 Q 650,280 620,220" stroke="#ff003c" stroke-width="2.5" 
+              stroke-opacity="0.9" filter="url(#redPulse)">
+          <animate attributeName="stroke-opacity" values="0.9;0.5;0.9" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 620,220 Q 580,160 540,120" stroke="#ff003c" stroke-width="2.5" 
+              stroke-opacity="0.9" filter="url(#redPulse)">
+          <animate attributeName="stroke-opacity" values="0.9;0.5;0.9" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        
+        <!-- Blast radius glow effect -->
+        <circle cx="640" cy="400" r="80" fill="#ff003c" fill-opacity="0.05" filter="url(#softGlow)">
+          <animate attributeName="r" values="80;100;80" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="fill-opacity" values="0.05;0.1;0.05" dur="3s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+
+    <!-- ========== HEXAGONAL NODES ========== -->
+    <g id="nodes">
+      <!-- TOP TIER: Business/Domain Nodes -->
+      <g transform="translate(250, 180)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#00f3ff" stroke-opacity="0.6"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" text-anchor="middle">API</text>
+      </g>
+      
+      <!-- Critical destination node (propagated risk) -->
+      <g transform="translate(540, 120)" filter="url(#redPulse)">
+        <use href="#hexagon" width="55" height="48" x="-27.5" y="-24" stroke="#ff003c" stroke-width="2"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#ff003c" text-anchor="middle">SLA</text>
+        <text x="0" y="14" font-family="monospace, sans-serif" font-size="5" fill="#ff003c" text-anchor="middle" fill-opacity="0.7">VIOLATED</text>
+      </g>
+      
+      <g transform="translate(940, 260)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#00f3ff" stroke-opacity="0.5"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" text-anchor="middle">AUTH</text>
+      </g>
+      
+      <!-- MID TIER: System Architecture Nodes -->
+      <g transform="translate(380, 250)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#00f3ff" stroke-opacity="0.7"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" text-anchor="middle">CACHE</text>
+      </g>
+      
+      <g transform="translate(300, 280)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#ffb800" stroke-opacity="0.8"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#ffb800" text-anchor="middle">QUEUE</text>
+      </g>
+      
+      <!-- Central changed code cluster -->
+      <g transform="translate(450, 320)">
+        <use href="#hexagon" width="55" height="48" x="-27.5" y="-24" stroke="#00f3ff"/>
+        <circle cx="0" cy="0" r="15" fill="#00f3ff" fill-opacity="0.1"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" text-anchor="middle">CORE</text>
+      </g>
+      
+      <g transform="translate(550, 400)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#00f3ff" stroke-opacity="0.8"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" text-anchor="middle">DB</text>
+      </g>
+      
+      <!-- Critical path node -->
+      <g transform="translate(620, 220)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#ff003c" stroke-opacity="0.9"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#ff003c" text-anchor="middle">LATENCY</text>
+      </g>
+      
+      <g transform="translate(680, 350)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#ff003c"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#ff003c" text-anchor="middle">PERF</text>
+      </g>
+      
+      <g transform="translate(680, 390)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#00f3ff" stroke-opacity="0.6"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" text-anchor="middle">LOG</text>
+      </g>
+      
+      <g transform="translate(820, 320)">
+        <use href="#hexagon" width="50" height="44" x="-25" y="-22" stroke="#00f3ff" stroke-opacity="0.6"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#00f3ff" text-anchor="middle">NET</text>
+      </g>
+      
+      <!-- Warning node -->
+      <g transform="translate(370, 360)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#ffb800"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#ffb800" text-anchor="middle">DEBT</text>
+      </g>
+      
+      <!-- LOWER TIER: Module/Component Nodes -->
+      <g transform="translate(350, 450)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#00f3ff" stroke-opacity="0.5"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#00f3ff" text-anchor="middle">UTIL</text>
+      </g>
+      
+      <g transform="translate(420, 440)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#ffb800" stroke-opacity="0.7"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#ffb800" text-anchor="middle">CONF</text>
+      </g>
+      
+      <!-- Critical source node (origin of blast radius) -->
+      <g transform="translate(640, 450)" filter="url(#glow)">
+        <use href="#hexagon" width="55" height="48" x="-27.5" y="-24" stroke="#ff003c" stroke-width="2"/>
+        <circle cx="0" cy="0" r="20" fill="#ff003c" fill-opacity="0.2">
+          <animate attributeName="r" values="20;28;20" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" fill="#ff003c" text-anchor="middle">CALC</text>
+      </g>
+      
+      <g transform="translate(480, 550)">
+        <use href="#hexagon" width="40" height="35" x="-20" y="-17.5" stroke="#00f3ff" stroke-opacity="0.4"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="5" fill="#00f3ff" text-anchor="middle">PARSE</text>
+      </g>
+      
+      <!-- Source code level node -->
+      <g transform="translate(600, 550)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#ff003c" stroke-opacity="0.8"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="5" fill="#ff003c" text-anchor="middle">LOOP</text>
+      </g>
+      
+      <g transform="translate(750, 520)">
+        <use href="#hexagon" width="40" height="35" x="-20" y="-17.5" stroke="#00f3ff" stroke-opacity="0.4"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="5" fill="#00f3ff" text-anchor="middle">IO</text>
+      </g>
+      
+      <g transform="translate(900, 440)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#00f3ff" stroke-opacity="0.5"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#00f3ff" text-anchor="middle">POOL</text>
+      </g>
+      
+      <!-- Safe zone nodes (Green) -->
+      <g transform="translate(200, 450)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#00ff9d" stroke-opacity="0.7"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#00ff9d" text-anchor="middle">TEST</text>
+      </g>
+      
+      <g transform="translate(320, 500)">
+        <use href="#hexagon" width="40" height="35" x="-20" y="-17.5" stroke="#00ff9d" stroke-opacity="0.6"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="5" fill="#00ff9d" text-anchor="middle">MOCK</text>
+      </g>
+      
+      <g transform="translate(440, 540)">
+        <use href="#hexagon" width="40" height="35" x="-20" y="-17.5" stroke="#00ff9d" stroke-opacity="0.5"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="5" fill="#00ff9d" text-anchor="middle">STUB</text>
+      </g>
+      
+      <g transform="translate(870, 500)">
+        <use href="#hexagon" width="45" height="39" x="-22.5" y="-19.5" stroke="#00ff9d" stroke-opacity="0.6"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="6" fill="#00ff9d" text-anchor="middle">SAFE</text>
+      </g>
+      
+      <g transform="translate(970, 450)">
+        <use href="#hexagon" width="40" height="35" x="-20" y="-17.5" stroke="#00ff9d" stroke-opacity="0.5"/>
+        <text x="0" y="4" font-family="monospace, sans-serif" font-size="5" fill="#00ff9d" text-anchor="middle">VALID</text>
+      </g>
+    </g>
+    
+    <!-- Changed Code Indicator -->
+    <g transform="translate(500, 380)">
+      <rect x="-50" y="-15" width="100" height="30" fill="#00f3ff" fill-opacity="0.05" 
+            stroke="#00f3ff" stroke-dasharray="3,3" stroke-opacity="0.5" rx="4"/>
+      <text x="0" y="4" font-family="monospace, sans-serif" font-size="7" 
+            fill="#00f3ff" text-anchor="middle" fill-opacity="0.7">CHANGED CODE</text>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- OVERLAY: HOLOGRAPHIC HUD (Detail View)      -->
+  <!-- ============================================ -->
+  <g id="hud-overlay">
+    <!-- Leader Line from Red Node to Panel -->
+    <path d="M 640,430 Q 720,380 780,280 L 850,230" 
+          stroke="#ff003c" stroke-width="1" stroke-dasharray="4,2" fill="none" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-12" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="640" cy="430" r="4" fill="#ff003c"/>
+    <circle cx="850" cy="230" r="3" fill="#ff003c"/>
+    
+    <!-- Glassmorphism Panel -->
+    <g transform="translate(850, 120)">
+      <!-- Panel Background -->
+      <rect x="0" y="0" width="220" height="140" fill="url(#glassPanelGrad)" 
+            stroke="#ff003c" stroke-width="1.5" rx="6" filter="url(#glow)"/>
+      
+      <!-- Scan Line Effect -->
+      <rect x="2" y="2" width="216" height="136" fill="none" rx="5">
+        <animate attributeName="stroke" values="#ff003c;#ff003c00;#ff003c" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      
+      <!-- Header -->
+      <rect x="0" y="0" width="220" height="28" fill="#ff003c" fill-opacity="0.3" rx="6"/>
+      <rect x="0" y="20" width="220" height="8" fill="#ff003c" fill-opacity="0.3"/>
+      
+      <!-- Warning Icon -->
+      <polygon points="18,7 25,20 11,20" fill="none" stroke="#ff003c" stroke-width="1.5"/>
+      <line x1="18" y1="11" x2="18" y2="15" stroke="#ff003c" stroke-width="1.5"/>
+      <circle cx="18" cy="17" r="1" fill="#ff003c"/>
+      
+      <text x="35" y="18" font-family="monospace, sans-serif" font-size="11" 
+            fill="#ff003c" font-weight="bold">⚠ RISK DETECTED</text>
+      
+      <!-- Metrics Section -->
+      <g transform="translate(15, 45)">
+        <text x="0" y="0" font-family="monospace, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.6">
+          CYCLOMATIC COMPLEXITY
+        </text>
+        <text x="0" y="18" font-family="monospace, sans-serif" font-size="20" fill="#ff003c" filter="url(#glow)">
+          +200%
+        </text>
+        <rect x="85" y="5" width="50" height="16" fill="#ff003c" fill-opacity="0.2" rx="2"/>
+        <text x="110" y="16" font-family="monospace, sans-serif" font-size="8" 
+              fill="#ff003c" text-anchor="middle">SEVERE</text>
+      </g>
+      
+      <!-- Insight Section -->
+      <g transform="translate(15, 90)">
+        <line x1="0" y1="0" x2="190" y2="0" stroke="#ff003c" stroke-opacity="0.3"/>
+        <text x="0" y="15" font-family="monospace, sans-serif" font-size="7" fill="#ffffff" fill-opacity="0.5">
+          CONSTRAINT VIOLATION
+        </text>
+        <text x="0" y="28" font-family="monospace, sans-serif" font-size="9" fill="#ffb800">
+          Violates Tier-1 Latency
+        </text>
+        <text x="0" y="40" font-family="monospace, sans-serif" font-size="9" fill="#ffb800">
+          Constraint (L₀ SLA)
+        </text>
+      </g>
+      
+      <!-- Corner Brackets -->
+      <path d="M 0 0 L 0 15 M 0 0 L 15 0" stroke="#ff003c" stroke-width="2" fill="none"/>
+      <path d="M 220 0 L 220 15 M 220 0 L 205 0" stroke="#ff003c" stroke-width="2" fill="none"/>
+      <path d="M 0 140 L 0 125 M 0 140 L 15 140" stroke="#ff003c" stroke-width="2" fill="none"/>
+      <path d="M 220 140 L 220 125 M 220 140 L 205 140" stroke="#ff003c" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ADDITIONAL UI ELEMENTS                      -->
+  <!-- ============================================ -->
+  
+  <!-- Mini-Map (Bottom Right of Main Viewport) -->
+  <g transform="translate(1000, 580)">
+    <rect x="0" y="0" width="100" height="70" fill="#0a0a15" fill-opacity="0.9" 
+          stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1" rx="3"/>
+    <text x="50" y="12" font-family="monospace, sans-serif" font-size="6" 
+          fill="#00f3ff" fill-opacity="0.5" text-anchor="middle">OVERVIEW</text>
+    
+    <!-- Simplified node dots -->
+    <circle cx="25" cy="30" r="2" fill="#00f3ff" fill-opacity="0.5"/>
+    <circle cx="40" cy="35" r="2" fill="#00f3ff" fill-opacity="0.6"/>
+    <circle cx="55" cy="40" r="3" fill="#ff003c"/>
+    <circle cx="70" cy="35" r="2" fill="#00f3ff" fill-opacity="0.5"/>
+    <circle cx="50" cy="50" r="2" fill="#00ff9d" fill-opacity="0.5"/>
+    <circle cx="30" cy="55" r="2" fill="#00ff9d" fill-opacity="0.5"/>
+    
+    <!-- Viewport indicator -->
+    <rect x="30" y="25" width="40" height="30" fill="none" stroke="#00f3ff" 
+          stroke-width="1" stroke-dasharray="2,2" rx="2"/>
+  </g>
+  
+  <!-- Stats Panel (Top Right of Main Viewport) -->
+  <g transform="translate(980, 70)">
+    <rect x="0" y="0" width="120" height="80" fill="#0a0a15" fill-opacity="0.85" 
+          stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1" rx="3"/>
+    
+    <text x="60" y="15" font-family="monospace, sans-serif" font-size="7" 
+          fill="#00f3ff" text-anchor="middle" letter-spacing="1">GRAPH STATS</text>
+    
+    <g font-family="monospace, sans-serif" font-size="8" transform="translate(10, 30)">
+      <text x="0" y="0" fill="#00f3ff" fill-opacity="0.6">NODES:</text>
+      <text x="70" y="0" fill="#ffffff">24</text>
+      
+      <text x="0" y="14" fill="#00f3ff" fill-opacity="0.6">EDGES:</text>
+      <text x="70" y="14" fill="#ffffff">31</text>
+      
+      <text x="0" y="28" fill="#00f3ff" fill-opacity="0.6">DEPTH:</text>
+      <text x="70" y="28" fill="#ffffff">L₃ → L₉</text>
+      
+      <text x="0" y="42" fill="#ff003c">AFFECTED:</text>
+      <text x="70" y="42" fill="#ff003c">6</text>
+    </g>
+  </g>
+  
+  <!-- Coordinate Display -->
+  <g transform="translate(110, 650)">
+    <text font-family="monospace, sans-serif" font-size="8" fill="#00f3ff" fill-opacity="0.4">
+      FOCUS: NODE[CALC] @ (640, 450) | ZOOM: 1.0x | RENDER: 60fps
+    </text>
+  </g>
+</svg>

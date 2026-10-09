@@ -1,0 +1,13 @@
+{{ .Title }}
+{{ $titleLen := len .Title }}{{ strings.Repeat "=" $titleLen }}
+
+Last Updated: {{ .Date.Format "2006-01-02" }}
+{{- with .Params.version }}
+Version: {{ . }}
+{{- end }}
+
+{{ .Content | plainify }}
+
+---
+Policy URL: {{ .Permalink }}
+Contact: {{ .Site.Params.author }}

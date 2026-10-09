@@ -1,0 +1,62 @@
+{{ define "main" }}
+  {{- $page := . -}}
+  {{- $section := .CurrentSection -}}
+  {{- $active := partial "exception/resolve-active-page.html" $page -}}
+  <!-- Breadcrumb -->
+  <nav class="ou-breadcrumb">
+    <a href="/">Home</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <a href="{{ $section.RelPermalink }}">{{ $section.Title }}</a>
+    <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    <strong>{{ $active.Title }}</strong>
+  </nav>
+
+  <article class="ou-article">
+    <!-- Article Header -->
+    <header class="ou-article-header">
+      {{ with $active.Params.category }}
+        <span class="ou-article-badge">{{ . }}</span>
+      {{ end }}
+      <h1 class="ou-article-title">{{ $active.Title }}</h1>
+      {{ with $active.Description }}
+        <p class="ou-article-subtitle">{{ . }}</p>
+      {{ end }}
+      <div class="ou-article-meta">
+        {{ with $active.Params.author }}
+          <span>By {{ . }}</span>
+        {{ end }}
+        {{ $publishedDate := "" }}
+        {{ if not $active.Date.IsZero }}
+          {{ $publishedDate = $active.Date.Format "2006-01-02" }}
+          <span>&bull;</span>
+          <time datetime="{{ $publishedDate }}">{{ $active.Date.Format "January 2, 2006" }}</time>
+        {{ end }}
+        {{ $updated := $active.Lastmod }}
+        {{ with $active.Params.lastmod }}
+          {{ $updated = time.AsTime . }}
+        {{ end }}
+        {{ $updatedDate := "" }}
+        {{ if not $updated.IsZero }}
+          {{ $updatedDate = $updated.Format "2006-01-02" }}
+        {{ end }}
+        {{ if and $updatedDate (ne $updatedDate $publishedDate) }}
+          <span>&bull;</span>
+          <span>Updated <time datetime="{{ $updatedDate }}">{{ $updated.Format "Jan 2, 2006" }}</time></span>
+        {{ end }}
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <div class="ou-article-content">
+      {{ $cleanContent := replace (replace $active.Content "" "") "" "" }}
+      {{ $cleanContent | safeHTML }}
+    </div>
+
+    {{ partial "citation-block.html" $page }}
+
+    <!-- Article Footer -->
+    <footer class="ou-article-footer">
+      <a class="ou-article-back" href="{{ $section.RelPermalink }}">&larr; Back to {{ $section.Title }}</a>
+    </footer>
+  </article>
+{{ end }}

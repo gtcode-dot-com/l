@@ -1,0 +1,24 @@
+[
+  {
+    "file": "Hawaii_First_Circuit_Per_Diem_Judges.html",
+    "url": "https://www.courts.state.hi.us/courts/district/first_circuit",
+    "retrieved": "2026-10-06",
+    "bytes": 145916
+  },
+  {
+    "file": "Hawaii_JSC_Nominees_20210913.html",
+    "url": "https://www.courts.state.hi.us/jsc/2021/09/judicial-selection-commission-press-release-circuit-judge-circuit-court-of-the-second-circuit-nominees-release-date-09-13-2021",
+    "retrieved": "2026-10-06",
+    "bytes": 145648
+  },
+  {
+    "file": "FindLaw_Audrey_L_Stanley.html",
+    "url": "https://lawyers.findlaw.com/hawaii/honolulu/5063522_1/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "Martindale_Audrey_Lani_Ehrhorn_Stanley.html",
+    "url": "https://www.martindale.com/attorney/audrey-lani-ehrhorn-stanley-168500074/",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

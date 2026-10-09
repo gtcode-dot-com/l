@@ -1,0 +1,3 @@
+{{- $active := partial "exception/resolve-active-page.html" . -}}
+{{ $active.RawContent }}
+{{ with partial "content-use-notice.txt" . }}{{ "\n\n---\n\n" }}{{ . }}{{ "\n" }}{{ end }}

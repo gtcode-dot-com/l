@@ -1,0 +1,84 @@
+{{/* Term page — individual tag (e.g. /tags/wilson-loo/) */}}
+{{ define "pagination-head" }}
+  {{ $pages := .Pages }}
+  {{ $pages = partial "exception/filter-list-pages.html" $pages }}
+  {{ if $pages }}
+    {{ $paginator := .Paginate ($pages.ByDate.Reverse) }}
+    {{ .Scratch.Set "_head_paginator" $paginator }}
+    {{ if gt $paginator.PageNumber 1 }}
+    <link rel="prev" href="{{ (index $paginator.Pagers (sub $paginator.PageNumber 2)).URL | absURL }}" />
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <link rel="next" href="{{ (index $paginator.Pagers $paginator.PageNumber).URL | absURL }}" />
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{ if partial "exception/is-hidden.html" . }}
+    {{ $active := partial "exception/resolve-active-page.html" . }}
+    <section class="section-header"><h1>{{ $active.Title }}</h1>{{ $active.Content }}</section>
+  {{ else }}
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <a href="/tags/">Tags</a>
+    <span class="breadcrumb-separator">&rsaquo;</span>
+    <strong>{{ .Title }}</strong>
+  </nav>
+
+  <!-- Tag Header -->
+  {{ $pages := partial "exception/filter-list-pages.html" .Pages }}
+  <div class="section-header">
+    <h1 class="section-title">{{ .Title }}</h1>
+    <p class="section-description">{{ len $pages }} {{ cond (eq (len $pages) 1) "article" "articles" }} tagged &ldquo;{{ .Title }}&rdquo;</p>
+  </div>
+
+  <!-- Tagged Articles -->
+  {{ if $pages }}
+    {{ $paginator := .Scratch.Get "_head_paginator" }}
+    {{ if not $paginator }}
+      {{ $paginator = .Paginate ($pages.ByDate.Reverse) }}
+      {{ .Scratch.Set "_head_paginator" $paginator }}
+    {{ end }}
+    <div id="articles" class="article-list">
+      {{ range $paginator.Pages }}
+        <article class="article-item">
+          <div class="article-header">
+            {{ with .Params.category }}
+              <span class="badge badge-category">{{ . }}</span>
+            {{ end }}
+            {{ partial "language-badge.html" . }}
+            <h2 class="article-title">
+              <a href="{{ .RelPermalink }}">{{ .Title | htmlUnescape }}</a>
+            </h2>
+          </div>
+
+          <div class="article-meta">
+            {{ with .Params.author }}
+              <span>By {{ . }}</span>
+              {{ if or $.Date $.Params.source_url }}<span>&bull;</span>{{ end }}
+            {{ end }}
+            {{ partial "news-date.html" . }}
+            {{ with .Params.source_url }}
+              <span>&bull;</span>
+              <a href="{{ . }}" target="_blank" rel="noopener">Source</a>
+            {{ end }}
+          </div>
+
+          {{ with .Summary }}
+            {{ $clean := replace (replace . "" "") "" "" }}
+            <p class="article-summary">{{ $clean | plainify | truncate 200 }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+    {{ partial "pagination.html" (dict "paginator" $paginator) }}
+  {{ else }}
+    <div class="card">
+      <p class="text-muted">No articles with this tag yet.</p>
+    </div>
+  {{ end }}
+{{ end }}
+{{ end }}

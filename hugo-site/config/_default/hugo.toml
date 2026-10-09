@@ -1,0 +1,752 @@
+# Preserve fallback modification dates when the site Git history is reset.
+# Explicit dates in article front matter take precedence.
+
+[[cascade]]
+git_lastmod_snapshot = "2026-10-04T12:02:41-10:00"
+[cascade._target]
+path = "/articles"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-14T13:09:38-10:00"
+[cascade._target]
+path = "/consulting"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions/diagnostics"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions/disclosures"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions/fallback"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions/geopolitics"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions/hawaii-courts"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions/home"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-06-27T13:04:10-10:00"
+[cascade._target]
+path = "/exceptions/intelligence"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-15T11:51:10-10:00"
+[cascade._target]
+path = "/guides/cns-2.0-research-roadmap/blueprint"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-15T11:51:10-10:00"
+[cascade._target]
+path = "/guides/cns-2.0-research-roadmap/ethics"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-15T11:51:10-10:00"
+[cascade._target]
+path = "/guides/cns-2.0-research-roadmap/in-depth"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-15T11:51:10-10:00"
+[cascade._target]
+path = "/guides/cns-2.0-research-roadmap/overview"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-15T11:51:10-10:00"
+[cascade._target]
+path = "/guides/cns-2.0-research-roadmap/theoretical-foundations"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-10-02T18:45:05-10:00"
+[cascade._target]
+path = "/homepage-alternative"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-13T16:30:49-10:00"
+[cascade._target]
+path = "/homepage-fragments"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-10-06T18:43:44-10:00"
+[cascade._target]
+path = "/homepage-notice"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-15T11:51:10-10:00"
+[cascade._target]
+path = "/news"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-13T16:30:49-10:00"
+[cascade._target]
+path = "/news/ai-research"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-13T16:30:49-10:00"
+[cascade._target]
+path = "/news/ai-security"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-01-06T11:30:30-10:00"
+[cascade._target]
+path = "/news/comp-journalism"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-10-04T12:02:41-10:00"
+[cascade._target]
+path = "/personal-essays"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-10-04T12:02:41-10:00"
+[cascade._target]
+path = "/personal-essays/the-shift-they-taught-him/exception"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-05-15T11:51:10-10:00"
+[cascade._target]
+path = "/repos"
+kind = "section"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/agent_session_manager"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/aitrace"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/altar"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/altar_ai"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/amp_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/anvil_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/arsenal"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/assessor"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-03-23T05:49:37Z"
+[cascade._target]
+path = "/repos/blitz"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/chz_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/citadel"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/claude_agent_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/claude_code_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/cli_subprocess_core"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/codex_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/command"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/coolify_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_adversary"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_bench"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_datasets"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_deployment"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_ensemble"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_feedback"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_framework"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_harness"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_hedging"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_ir"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_model_registry"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_telemetry"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_trace"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_train"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/crucible_xai"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/datasets_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/dspex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/duckdb_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/elixir_dashboard"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/elixir_scope"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/elixir_tracer"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/embed_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/eval_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/ex_data_check"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/ex_fairness"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/ex_topology"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/exdantic"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/external_runtime_transport"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/flowstone"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/flowstone_ai"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/forge_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-03-13T06:16:53Z"
+[cascade._target]
+path = "/repos/foundation"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/gemini_cli_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/gemini_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/gepa_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-02T02:47:05Z"
+[cascade._target]
+path = "/repos/github_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/hf_datasets_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/hf_hub"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/ingot"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/json_remedy"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/jules_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/labeling_ir"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/lineage_ir"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-02T06:17:05Z"
+[cascade._target]
+path = "/repos/linear_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/llama_cpp_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/llm_guard"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/mabeam"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/metrics_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-03-13T06:16:53Z"
+[cascade._target]
+path = "/repos/multipart_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-03-18T03:17:17Z"
+[cascade._target]
+path = "/repos/notion_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/nsai_gateway"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/nsai_registry"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/nsai_work"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/nx_penalties"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/ollixir"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/perimeter"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/pilot"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/pipeline_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/playwriter"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/portfolio_coder"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/portfolio_core"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/portfolio_index"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/portfolio_manager"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-02T06:17:05Z"
+[cascade._target]
+path = "/repos/prismatic"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-02T02:47:05Z"
+[cascade._target]
+path = "/repos/pristine"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-09T08:30:58Z"
+[cascade._target]
+path = "/repos/prompt_runner_sdk"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/rag_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/self_hosted_inference_core"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/sinter"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/skill_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/slither"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/snakebridge"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/snakepit"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/supertester"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/synapse"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/synapse_ai"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-03-13T08:17:08Z"
+[cascade._target]
+path = "/repos/telemetry_reporter"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/tiktoken_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/tinkex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/vllm"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-02-27T03:27:07Z"
+[cascade._target]
+path = "/repos/weaviate_ex"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-04-07T23:38:36Z"
+[cascade._target]
+path = "/repos/weld"
+kind = "page"
+
+[[cascade]]
+git_lastmod_snapshot = "2026-08-08T23:52:19-10:00"
+[cascade._target]
+path = "/zork"
+kind = "page"
