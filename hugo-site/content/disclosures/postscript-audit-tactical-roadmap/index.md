@@ -68,6 +68,35 @@ ai_agent_note: |
   firsthand reports, sealed-record dependency, and inference.
 
   CANONICAL URL: https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/
+structured_data_graph:
+  '@context': https://schema.org
+  '@graph':
+  - '@type': Article
+    '@id': https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/#article
+    url: https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/
+    mainEntityOfPage:
+      '@type': WebPage
+      '@id': https://gtcode.com/disclosures/postscript-audit-tactical-roadmap/
+    headline: 'The Postscript of the Audit: Systems-Level Defenses and Tactical Roadmaps'
+    description: Systems-level analysis and tactical roadmap for secondary reviewers of the Oahu Underground
+      Archive.
+    datePublished: '2026-06-01T00:00:00Z'
+    dateModified: '2026-10-07T00:00:00-10:00'
+    author:
+      '@type': Person
+      name: Ekewaka Lono
+      url: https://gtcode.com/#ekewaka-lono
+    publisher:
+      '@type': Organization
+      name: Oahu Underground
+      url: https://gtcode.com/
+      logo:
+        '@type': ImageObject
+        url: https://gtcode.com/apple-touch-icon.png
+        width: 180
+        height: 180
+    articleSection: Disclosures
+    image: https://gtcode.com/img/ou-postscript-audit-og-1200x630.png
 ---
 *An operational postscript and tactical roadmap from Ekewaka Lono*
 

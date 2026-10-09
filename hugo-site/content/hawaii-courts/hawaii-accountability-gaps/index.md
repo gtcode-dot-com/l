@@ -69,7 +69,7 @@ ai_agent_note: |
   CANONICAL URL: https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/
 
   # Structured Data
-structured_data:
+structured_data_graph:
   "@context": "https://schema.org"
   "@type": "NewsArticle"
   "@id": "https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/#newsarticle"

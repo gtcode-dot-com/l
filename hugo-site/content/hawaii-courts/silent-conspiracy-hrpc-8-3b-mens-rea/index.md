@@ -8,7 +8,7 @@ seo_title: "The Silent Conspiracy: HRPC 8.3(b), Mens Rea, and Sealed-Record Depe
 subtitle: "HRPC 8.3(b), Mens Rea, and Sealed-Record Dependency"
 description: "A records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, and HRPC 8.3(b)."
 date: 2026-06-08
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -271,19 +271,13 @@ The distinction is essential. Petricevic could recognize the professional-respon
 
 Courtroom layout and sightlines can test Petricevic’s opportunity to perceive the gesture. The audio cannot establish where he was looking. The absence of video does not resolve the visual observation.
 
-Petricevic's status as trained counsel matters because Rule 8.3(b) is premised on lawyers' capacity to recognize serious professional misconduct. A pro se litigant may perceive unfairness in real time yet lack the procedural vocabulary, institutional leverage, or reporting knowledge necessary to convert the event into reviewable fact. A trained lawyer is professionally equipped—and under the rules expected—to distinguish an adverse ruling from judicial interference with testimony, understand the professional rules, and recognize the evidentiary importance of verbalizing visual conduct for an audio-only record. That competence does not establish what Petricevic actually perceived or understood.
+[The Lawyer in the Room](/hawaii-courts/lawyer-in-the-room-bosko-petricevic/#the-knowledge-question) examines counsel’s actual knowledge and the limits of the reporting duty. The question here is how that duty operates when the lawyer represents the party who benefited from the reported conduct.
 
 I had no independent counsel in the room. The opposing lawyer with a potential Rule 8.3(b) duty represented the party who benefited from the alleged signal. That left me without my own trained advocate to object, preserve the issue, or assess a reporting duty. It did not eliminate my ability to complain, any reporting channels available to court personnel, or the possibility of later outside investigation.
 
 His client-benefit posture matters because it is the design defect. Rule 8.3(b) conceives of the observing lawyer as a professional officer of the court. The adversary system conceives of him as the advocate for a client whose position benefited from the alleged misconduct. Those conceptions collide where the misconduct favors the client and harms the opposing pro se party.
 
 That is the problem of relying on opposing counsel’s professional duty when the litigant has no independent lawyer present. A neutral lawyer who observes a judge signal a witness in an unrelated case can report without tactical cost to any client. An adversarial lawyer whose client benefits from the signal confronts a different payoff structure entirely. Reporting may undermine the client's victory, expose the client's testimony, generate conflict with the client, antagonize the judge or the local bench, and invite professional friction. Silence preserves the result—and can be rationalized through the rule's own thresholds.
-
-The trial-preparation asymmetry belongs here as well. Petricevic entered the case with superior trial experience; I appeared pro se. The potentially duty-bound lawyer in the room represented the party who benefited from the signal, while I had to try to preserve it without my own advocate.
-
-Looking toward Loo does not establish that Petricevic perceived the precise gesture. If he did, the next question is what he understood it to mean. His knowledge of the evidentiary file is separate. His perception and understanding of my attempted record statement also require examination.
-
-The LSD question bears on Petricevic's knowledge because it rendered the alleged signal intelligible. For purposes of HRPC 8.3(b), the inquiry remains whether a trained lawyer who saw a clear no-signal before a pending yes-or-no answer would understand the event as falling outside ordinary courtroom demeanor—irrespective of whether he knew Loo's motive or the truth of the drug predicate. A trained lawyer could comprehend that a judge may not nonverbally answer the LSD-furnishing question for a witness, without ever resolving the drug predicate. The question, the exhibit, the answer, and the attempted record statement invested the gesture with legal meaning in real time.
 
 The public record cannot yet resolve what Petricevic saw or understood. Line-of-sight reconstruction, eyewitness testimony, and the surrounding audio sequence must test perception first; if perception is established, the analysis turns to his understanding and the reporting duty.
 

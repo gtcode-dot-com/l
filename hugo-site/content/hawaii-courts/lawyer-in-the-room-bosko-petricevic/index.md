@@ -8,7 +8,7 @@ seo_title: "The Lawyer in the Room: Rule 8.3(b), Reported Judicial Misconduct, a
 subtitle: "What did Petricevic see and understand, and did Rule 8.3(b) require him to report?"
 description: "An analysis of Hawaii Rule of Professional Conduct 8.3(b), the author’s firsthand courtroom account, and what Petricevic saw and understood."
 date: 2026-05-10
-lastmod: 2026-10-08
+lastmod: "2026-10-08"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -242,11 +242,7 @@ Neither Rule 8.3 nor Rule 1.6 imposes a requirement to create or publicly disclo
 
 ## ABA Formal Opinion 522: Noncontrolling Guidance
 
-ABA Formal Opinion 522 addresses recusal and Model Rule 8.4(d), and expressly discusses Model Rule 8.3(b)'s knowledge and substantial-fitness requirements and Rule 1.6 confidentiality. It is nonbinding, analogical guidance, not an independent source of a Hawaiʻi reporting duty. [^9]
-
-Its usefulness is the distinction between a recusal concern and known misconduct serious enough to require reporting. The opinion emphasizes that suspicion or an uncertain recusal obligation does not alone satisfy Model Rule 8.3(b). Its reasoning helps separate knowledge, seriousness, and confidentiality, but does not decide whether any participant in this hearing violated Hawaiʻi's rules. [^9]
-
-If records and witness testimony support the December 2, 2022 courtroom sequence, the concern reaches beyond appearance to whether the judge remained a neutral adjudicator or became a participant in the testimony.
+ABA Formal Opinion 522 discusses Model Rule 8.3(b)’s knowledge and seriousness requirements and Rule 1.6 confidentiality.[^9] It is nonbinding guidance and does not decide whether anyone in this hearing violated Hawaiʻi’s rules. [The Silent Conspiracy](/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/#the-rules-own-name) examines its relationship to the Hawaiʻi rules in detail.
 
 ## Why Lawyers Should Care
 
@@ -296,15 +292,7 @@ These are ways to test the investigative theory, not a burden on counsel to disp
 
 ## Why This Is a Public-Accountability Issue
 
-For the public, nonreporting, if established despite a duty to report, would matter because of its implications for access to judicial accountability.
-
-Rule 8.3(b) provides a mechanism by which judicial misconduct witnessed inside a courtroom can reach an authority outside that courtroom. That mechanism is especially important when the harmed party is pro se, when the proceeding is audio-only, when the reported misconduct is nonverbal and visual, and when the judge, in my account, prevents the visual event from being translated into the record.
-
-In that environment, the represented lawyer who saw the event may be the only legally trained witness with professional standing, institutional knowledge, and an independent rule-based duty to act.
-
-If a lawyer with a reporting duty makes no required report before the Commission’s jurisdictional endpoint, the Commission review pathway can close after the judge leaves office. In my account, my attempted statement was truncated and the audio was sealed, restricting scrutiny of the reported event. Those circumstances explain the public interest in determining what was known and reported; they do not prove nonreporting or responsibility for the jurisdictional closure.
-
-That potential gap in accountability is one reason Rule 8.3(b) matters.
+A litigant without counsel may depend on someone else in the room to recognize and report serious judicial misconduct. Here, the potentially duty-bound lawyer represented the opposing party. [The Silent Conspiracy](/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/#the-design-defect-in-hrpc-83b) examines that conflict in the reporting system. This article asks the narrower question: what did Petricevic perceive, what could he lawfully disclose, and was a required report made?
 
 ## Conclusion
 

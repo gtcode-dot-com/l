@@ -6,7 +6,7 @@ title: "Geopolitics Research Files"
 seo_title: "Geopolitics Research Files | Oahu Underground"
 description: "Public-record analysis of energy risk, institutional access, and financial disclosure surfaces."
 date: 2026-05-14
-lastmod: 2026-06-12
+lastmod: "2026-10-08"
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/geopolitics/"
@@ -41,7 +41,7 @@ structured_data_graph:
   name: "Geopolitics Research Files"
   description: "Public-record analysis of energy risk, foreign access mapping, and financial disclosure surfaces."
   inLanguage: "en"
-  dateModified: "2026-06-12T00:00:00Z"
+  dateModified: "2026-10-08T00:00:00-10:00"
 
 standards_eyebrow: "Research Silo"
 standards_title: "Geopolitics Portfolio"
@@ -62,7 +62,7 @@ portfolio_sections:
   - id: "strategic-risk"
     eyebrow: "Strategic Risk"
     title: "Energy and Policy Analysis"
-    description: "Regional energy-risk and policy-analysis files outside the local court-audit silo."
+    description: "The Barrel preserves the March 8–13, 2026 energy-risk assessment; its October revision is an editorial update. The policy-analysis file is separate from that dated assessment."
     pages:
       - "/geopolitics/hawaii-energy-risk-strait-of-hormuz"
       - "/geopolitics/radius-of-order-policy-analysis"

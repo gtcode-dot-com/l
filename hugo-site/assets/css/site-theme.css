@@ -288,8 +288,7 @@ body::before,
 
 /* Homepage notice sits immediately below the navigation. */
 .homepage-notice {
-  min-height: 70vh;
-  padding: clamp(4rem, 9vw, 8rem) var(--theme-gutter);
+  padding: clamp(2rem, 4vw, 3rem) var(--theme-gutter);
   background: var(--theme-surface-alt);
   border-bottom: 1px solid var(--theme-border);
 }
@@ -309,10 +308,10 @@ body::before,
 }
 
 .homepage-notice-title {
-  margin: 0 0 clamp(2rem, 5vw, 4rem);
+  margin: 0 0 1.25rem;
   color: var(--theme-ink);
   font-family: var(--theme-heading);
-  font-size: clamp(4rem, 12vw, 9rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.95;
@@ -321,7 +320,7 @@ body::before,
 .homepage-notice-content {
   max-width: 72ch;
   color: var(--theme-copy);
-  font-size: clamp(1.125rem, 2vw, 1.4rem);
+  font-size: 1rem;
   line-height: 1.75;
   overflow-wrap: anywhere;
 }
@@ -338,6 +337,16 @@ body::before,
 
 .homepage-notice-content .twitter-tweet {
   font-size: 1rem;
+}
+
+.ou-reading-route ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.ou-reading-route li + li {
+  margin-top: 0.75rem;
 }
 
 /* Lead story: a composed headline and image, without text over the artwork. */

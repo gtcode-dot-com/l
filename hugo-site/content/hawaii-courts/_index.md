@@ -6,7 +6,7 @@ title: "Hawaii Courts Accountability Files"
 seo_title: "Hawaii Courts Accountability Files | Oahu Underground"
 description: "A records-first hub for the Wilson Loo review path, sealed audio, attempted record preservation, HRPC 8.3(b), and Hawaii court oversight context."
 date: 2026-05-14
-lastmod: 2026-10-07
+lastmod: "2026-10-08"
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/hawaii-courts/"
@@ -58,7 +58,7 @@ structured_data_graph:
   name: "Hawaii Courts Accountability Files"
   description: "A records-first hub for the Wilson Loo review path, sealed audio, attempted record preservation, HRPC 8.3(b), and Hawaii court oversight context."
   inLanguage: "en"
-  dateModified: "2026-10-07T00:00:00-10:00"
+  dateModified: "2026-10-08T00:00:00-10:00"
   hasPart:
     - "@type": "Article"
       name: "The Silent Conspiracy"
@@ -101,11 +101,11 @@ portfolio_sections:
   - id: "primary-court-record"
     eyebrow: "Primary Court Record"
     title: "The Wilson Loo Review Path"
-    description: "The Loo overview holds the hearing account. The companion articles examine the visual record, witness questions, and professional reporting duty."
+    description: "Start with The Nod for the short account, then The Two Questions for ways to test it. The Loo overview holds the hearing and reporting history; The Silent Conspiracy provides the full legal analysis."
     pages:
-      - "/hawaii-courts/wilson-loo-judicial-signaling"
       - "/hawaii-courts/the-nod-visual-allegation"
       - "/hawaii-courts/two-questions-wilson-loo"
+      - "/hawaii-courts/wilson-loo-judicial-signaling"
       - "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea"
       - "/hawaii-courts/lawyer-in-the-room-bosko-petricevic"
   - id: "professional-responsibility"
@@ -144,7 +144,7 @@ portfolio_sections:
 grid_eyebrow: "Additional Files"
 grid_title: "Hawaii Courts Files"
 grid_description: "Any remaining files in this silo are shown here without crossing into other research portfolios."
-modified_display: "October 7, 2026"
+modified_display: "October 8, 2026"
 ---
 ## Primary Event Accounts
 

@@ -45,8 +45,8 @@
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
 {{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
-{{- $heroHeadline := $active.Params.hero_headline | default "The Silent Conspiracy" -}}
-{{- $homeHeroImage := $active.Params.hero_image | default "/img/ou-silent-conspiracy-hero-1600.jpg" -}}
+{{- $heroHeadline := $active.Params.hero_headline | default "The Nod" -}}
+{{- $homeHeroImage := $active.Params.hero_image | default "/img/ou-the-nod-og-1200x630.jpg" -}}
 {{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
   {{- $heroParsed := urls.Parse $homeHeroImage -}}
   {{- with $heroParsed.Path -}}
@@ -251,7 +251,7 @@
       <section class="homepage-notice" aria-labelledby="homepage-notice-title">
         <div class="homepage-notice-inner">
           <p class="homepage-notice-label">From the editor</p>
-          <h1 class="homepage-notice-title" id="homepage-notice-title">{{ .Title }}</h1>
+          <h2 class="homepage-notice-title" id="homepage-notice-title">{{ .Title }}</h2>
           <div class="homepage-notice-content">
             {{ .Content }}
           </div>
@@ -291,11 +291,11 @@
         </div>
         <div class="ou-hero-overlay"></div>
         <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}" class="ou-hero-kicker-link">{{ $active.Params.hero_kicker | default "Legal Analysis" }}</a></p>
-          <h2 class="ou-hero-headline">{{ $heroHeadline }}</h2>
-          <p class="ou-hero-subtitle">{{ $active.Params.hero_subtitle | default "HRPC 8.3(b), mens rea, sealed-record dependency, and a reported First Circuit courtroom sequence" }}</p>
+          <p class="ou-hero-kicker"><a href="{{ $active.Params.hero_kicker_url | default "/hawaii-courts/" }}" class="ou-hero-kicker-link">{{ $active.Params.hero_kicker | default "Legal Analysis" }}</a></p>
+          <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
+          <p class="ou-hero-subtitle">{{ $active.Params.hero_subtitle | default "A firsthand account of a reported courtroom signal and the sealed audio sequence that could test it." }}</p>
           <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/" }}">{{ $active.Params.hero_primary_cta_label | default "Read the Analysis" }}</a>
+            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/the-nod-visual-allegation/" }}">{{ $active.Params.hero_primary_cta_label | default "Start with The Nod" }}</a>
             <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ $active.Params.hero_secondary_cta_url | default "/hawaii-courts/" }}">{{ $active.Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}</a>
           </div>
           <p class="ou-hero-brand">{{ $brandName }}</p>
@@ -306,105 +306,23 @@
       {{ partial "neutralization-stack.html" . }}
       {{ end }}
 
-      <!-- AI Consulting Proof -->
-      <section class="ou-section ou-section--alt ou-consulting-proof" id="consulting">
-        <div class="ou-section-wide">
-          <p class="ou-section-label">GTCode Consulting</p>
-          <h2 class="ou-section-heading">AI engineering support for real deployments</h2>
-          <p class="ou-section-body">Consulting work focuses on shipping reliable systems: architecture choices, evaluation gates, observability, and operational hardening.</p>
-          <div class="ou-consulting-grid">
-            <article class="ou-consulting-card">
-              <h3>Architecture and Risk Review</h3>
-              <p>Rapid assessment of model, data, and integration risks before you commit to implementation paths.</p>
-            </article>
-            <article class="ou-consulting-card">
-              <h3>Build and Hardening</h3>
-              <p>Hands-on delivery for agent workflows, retrieval systems, and production inference pipelines.</p>
-            </article>
-            <article class="ou-consulting-card">
-              <h3>Fractional Technical Leadership</h3>
-              <p>Advisory support for roadmap decisions, engineering execution, and AI governance boundaries.</p>
-            </article>
-          </div>
-          <p class="ou-consulting-actions">
-            <a class="ou-featured-article-link" href="{{ $consultingURL }}">Open the consulting brief &rarr;</a>
-            <a class="ou-featured-article-link" href="mailto:{{ $contactEmail }}">Email Inquire@GTCode.com &rarr;</a>
-          </p>
-        </div>
-      </section>
-
-      <!-- Featured Investigations — side-by-side image + text -->
+      <!-- Short reading route into the lead investigation. -->
       <section class="ou-section" id="featured-investigations">
         <div class="ou-section-wide"{{ if not .Site.Params.show_home_neutralization_stack }} id="start-here"{{ end }}>
 
-          {{/* Lead Investigation */}}
-          {{ if $lead }}
-          {{ $leadUpdated := $lead.Lastmod }}
-          {{ with $lead.Params.lastmod }}{{ $leadUpdated = time.AsTime . }}{{ end }}
-          {{ if $leadUpdated.IsZero }}{{ $leadUpdated = $lead.Date }}{{ end }}
-          {{ $leadSummary := $lead.Params.card_summary | default $lead.Description }}
-          {{ if eq (strings.TrimSpace $leadSummary) "" }}{{ $leadSummary = $lead.Summary | plainify | truncate 260 }}{{ end }}
-          <article class="ou-feature-row" id="lead-investigation">
-            {{ with $lead.Params.og_image }}
-            <a href="{{ $lead.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              {{ partial "media/responsive-image.html" (dict
-                "page" $
-                "src" .
-                "alt" $lead.Title
-                "slot" "investigation_feature_row"
-                "width" ($lead.Params.og_image_width | default 1200)
-                "height" ($lead.Params.og_image_height | default 630)
-              ) }}
-            </a>
-            {{ end }}
-            <div class="ou-feature-row-body">
-              <p class="ou-section-label">Lead Investigation</p>
-              <h2 class="ou-feature-row-title">
-                <a href="{{ $lead.RelPermalink }}">{{ $lead.Title }}</a>
-              </h2>
-              {{ with $lead.Params.subtitle }}
-              <p class="ou-feature-row-subtitle">{{ . }}</p>
-              {{ end }}
-              <p class="ou-feature-row-text">{{ $leadSummary }}</p>
-              <p class="ou-feature-row-meta">
-                <span>Published {{ $lead.Date.Format "January 2, 2006" }}</span>
-                <span aria-hidden="true">&bull;</span>
-                <span>Updated {{ $lead.Params.modified_display | default ($leadUpdated.Format "January 2, 2006") }}</span>
-              </p>
-              <a class="ou-featured-article-link" href="{{ $lead.RelPermalink }}">Read the investigation &rarr;</a>
-            </div>
-          </article>
-          {{ end }}
+          <div class="ou-section-body ou-reading-route" id="lead-investigation">
+            <p class="ou-section-label">Start Here · Hawaii Courts</p>
+            <h2 class="ou-section-heading">One hearing, three ways to read it</h2>
+            <p>The author reports that Judge Wilson Loo signaled an answer to a witness and interrupted his attempt to describe it for the record. The audio is sealed and cannot show the gesture. The allegation has not been independently established.</p>
+            <ol>
+              <li><a href="/hawaii-courts/the-nod-visual-allegation/">The Nod</a> — a short account of the reported signal and the limits of the audio record.</li>
+              <li><a href="/hawaii-courts/two-questions-wilson-loo/">The Two Questions</a> — the witness questions and records that could test the account.</li>
+              <li><a href="/hawaii-courts/silent-conspiracy-hrpc-8-3b-mens-rea/">The Silent Conspiracy</a> — the full analysis of intent, professional duties, and sealed-record access.</li>
+            </ol>
+          </div>
 
-          {{/* Publisher's Note */}}
-          {{ if $carto }}
-          {{ $cartoSummary := $carto.Params.card_summary | default $carto.Description }}
-          {{ if eq (strings.TrimSpace $cartoSummary) "" }}{{ $cartoSummary = $carto.Summary | plainify | truncate 220 }}{{ end }}
-          <article class="ou-feature-row" id="publishers-note">
-            {{ with $carto.Params.og_image }}
-            <a href="{{ $carto.RelPermalink }}" class="ou-feature-row-img" aria-hidden="true" tabindex="-1">
-              {{ partial "media/responsive-image.html" (dict
-                "page" $
-                "src" .
-                "alt" $carto.Title
-                "slot" "investigation_feature_row"
-                "width" ($carto.Params.og_image_width | default 1200)
-                "height" ($carto.Params.og_image_height | default 630)
-              ) }}
-            </a>
-            {{ end }}
-            <div class="ou-feature-row-body">
-              <p class="ou-section-label">Publisher's Note</p>
-              <h2 class="ou-feature-row-title">
-                <a href="{{ $carto.RelPermalink }}">{{ $carto.Title }}</a>
-              </h2>
-              {{ with $carto.Params.subtitle }}
-              <p class="ou-feature-row-subtitle">{{ . }}</p>
-              {{ end }}
-              <p class="ou-feature-row-text">{{ $cartoSummary }}</p>
-              <a class="ou-featured-article-link" href="{{ $carto.RelPermalink }}">Read the full note &rarr;</a>
-            </div>
-          </article>
+          {{ with $lead }}
+          <p class="ou-feature-row-meta">Full legal analysis published {{ .Date.Format "January 2, 2006" }} · revised {{ .Params.modified_display | default (.Lastmod.Format "January 2, 2006") }}.</p>
           {{ end }}
 
         </div>
@@ -437,41 +355,11 @@
       <section class="ou-section" id="investigations">
         <div class="ou-section-wide">
           <p class="ou-section-label">Research Portfolios</p>
-          <h2 class="ou-section-heading">Separate research silos</h2>
-
-          {{/* Closed Loop series showcase — horizontal layout like publisher's note */}}
-          {{ if $closedLoopSeries }}
-          <div class="ou-hp-series-banner">
-            <div class="ou-hp-series-banner-left">
-              <div class="ou-publisher-note-badge">Series</div>
-              <h3 class="ou-publisher-note-title" style="font-style:normal">
-                <a href="{{ $closedLoopSeries.RelPermalink }}" style="color:inherit;text-decoration:none">{{ $closedLoopSeries.Title }}</a>
-              </h3>
-            </div>
-            <div class="ou-hp-series-banner-right">
-              {{ with $closedLoopSeries.Params.card_summary }}
-              <p class="ou-publisher-note-text">{{ . }}</p>
-              {{ end }}
-              {{ if $closedLoopMembers }}
-              <ol class="ou-hp-series-banner-parts">
-                {{ range $closedLoopMembers }}
-                <li>
-                  <a href="{{ .RelPermalink }}">
-                    <span class="ou-series-block-part">{{ .Params.series_part }}</span>
-                    <span class="ou-series-block-part-title">{{ .Title }}</span>
-                  </a>
-                </li>
-                {{ end }}
-              </ol>
-              {{ end }}
-              <a class="ou-card-link" href="{{ $closedLoopSeries.RelPermalink }}" aria-label="Read series: The Closed Loop">Read series &rarr;</a>
-            </div>
-          </div>
-          {{ end }}
+          <h2 class="ou-section-heading">Browse the research portfolios</h2>
 
           {{ if gt (len $homepageSilos) 0 }}
           <div class="ou-section-body ou-home-investigation-note">
-            <p>Other portfolios are listed for navigation only. Each silo carries its own evidence standard and should not be merged into the Hawaii Courts route without a direct evidentiary bridge.</p>
+            <p>Each portfolio addresses a different question. Links between them help readers navigate; they do not supply corroboration for another investigation.</p>
           </div>
           <div class="ou-cards">
             {{ range $silo := $homepageSilos }}
@@ -488,10 +376,10 @@
                 ) }}
               </figure>
               {{ end }}
-              <p class="ou-card-kicker">Research Silo</p>
+              <p class="ou-card-kicker">Research Portfolio</p>
               <h3 class="ou-card-title"><a href="{{ $silo.RelPermalink }}">{{ $silo.Title }}</a></h3>
               <p class="ou-card-text">{{ $silo.Description }}</p>
-              <a class="ou-card-link" href="{{ $silo.RelPermalink }}" aria-label="Open silo: {{ $silo.Title }}">Open silo &rarr;</a>
+              <a class="ou-card-link" href="{{ $silo.RelPermalink }}" aria-label="Open portfolio: {{ $silo.Title }}">Open portfolio &rarr;</a>
             </article>
             {{ end }}
           </div>
@@ -533,8 +421,38 @@
             {{ end }}
           </div>
           {{ end }}
+          {{/* Closed Loop series showcase — horizontal layout like publisher's note */}}
+          {{ if $closedLoopSeries }}
+          <div class="ou-hp-series-banner">
+            <div class="ou-hp-series-banner-left">
+              <div class="ou-publisher-note-badge">Series</div>
+              <h3 class="ou-publisher-note-title" style="font-style:normal">
+                <a href="{{ $closedLoopSeries.RelPermalink }}" style="color:inherit;text-decoration:none">{{ $closedLoopSeries.Title }}</a>
+              </h3>
+            </div>
+            <div class="ou-hp-series-banner-right">
+              {{ with $closedLoopSeries.Params.card_summary }}
+              <p class="ou-publisher-note-text">{{ . }}</p>
+              {{ end }}
+              {{ if $closedLoopMembers }}
+              <ol class="ou-hp-series-banner-parts">
+                {{ range $closedLoopMembers }}
+                <li>
+                  <a href="{{ .RelPermalink }}">
+                    <span class="ou-series-block-part">{{ .Params.series_part }}</span>
+                    <span class="ou-series-block-part-title">{{ .Title }}</span>
+                  </a>
+                </li>
+                {{ end }}
+              </ol>
+              {{ end }}
+              <a class="ou-card-link" href="{{ $closedLoopSeries.RelPermalink }}" aria-label="Read series: The Closed Loop">Read series &rarr;</a>
+            </div>
+          </div>
+          {{ end }}
+
           <p class="ou-cards-footer">
-            <a class="ou-cards-footer-link" href="/hawaii-courts/">Open the Hawaii courts legal-audit route &rarr;</a>
+            <a class="ou-cards-footer-link" href="/hawaii-courts/">Browse all Hawaii Courts files &rarr;</a>
           </p>
         </div>
       </section>
@@ -544,7 +462,7 @@
       <section class="ou-section ou-wire" id="latest-updates">
         <div class="ou-section-inner">
           <p class="ou-section-label">Latest Updates</p>
-          <h2 class="ou-section-heading">Public disclosures and recently updated files</h2>
+          <h2 class="ou-section-heading">Recently revised Hawaii Courts files</h2>
           <ul class="ou-wire-list">
             {{ range $latestUpdates }}
             {{ $updated := .Lastmod }}
@@ -621,6 +539,19 @@
           </div>
           <a class="ou-contact-email" href="mailto:{{ $tipsEmail }}">tips@GTCode.com</a>
           <p class="ou-contact-note">Send only a brief, non-sensitive introduction. Encrypted channels are arranged for follow-up.</p>
+        </div>
+      </section>
+
+      <!-- Consulting is separate from the reporting portfolios. -->
+      <section class="ou-section ou-section--alt ou-consulting-proof" id="consulting">
+        <div class="ou-section-inner">
+          <p class="ou-section-label">GTCode · Consulting Services</p>
+          <h2 class="ou-section-heading">AI engineering and technical consulting</h2>
+          <p class="ou-section-body">Architecture review, implementation, and technical leadership for AI systems.</p>
+          <p class="ou-consulting-actions">
+            <a class="ou-featured-article-link" href="{{ $consultingURL }}">Consulting services &rarr;</a>
+            <a class="ou-featured-article-link" href="mailto:{{ $contactEmail }}">Contact GTCode &rarr;</a>
+          </p>
         </div>
       </section>
 

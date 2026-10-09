@@ -78,14 +78,38 @@ ai_agent_note: |
   This essay includes recollections in the first-person letter and additional recollections not in it.
   The essays are not independent corroboration.
   Research citations supply general context, and institutional records remain the subject of inquiry.
-structured_data_webpage:
-  type: Article
-  author:
-    "@type": Person
-    name: "Ekewaka Lono"
-  headline: "The Shift They Taught Him"
-  description: "An editorial essay based on Ekewaka Lono’s personal account and accompanying institutional records inquiry."
-  about: "Childhood recollections, peer violence, school responses, and institutional records"
+structured_data_graph:
+  '@context': https://schema.org
+  '@graph':
+  - '@type': Article
+    '@id': https://gtcode.com/personal-essays/the-shift-they-taught-him/#article
+    url: https://gtcode.com/personal-essays/the-shift-they-taught-him/
+    mainEntityOfPage:
+      '@type': WebPage
+      '@id': https://gtcode.com/personal-essays/the-shift-they-taught-him/
+    headline: The Shift They Taught Him
+    description: An editorial essay based on Ekewaka Lono’s personal account and accompanying institutional
+      records inquiry.
+    datePublished: '2026-05-14T00:00:00Z'
+    dateModified: '2026-10-07T00:00:00-10:00'
+    author:
+      '@type': Person
+      name: Ekewaka Lono
+      url: https://gtcode.com/#ekewaka-lono
+    publisher:
+      '@type': Organization
+      name: Oahu Underground
+      url: https://gtcode.com/
+      logo:
+        '@type': ImageObject
+        url: https://gtcode.com/apple-touch-icon.png
+        width: 180
+        height: 180
+    articleSection: Personal Essays
+    image: https://gtcode.com/personal-essays/the-shift-they-taught-him/the-shift-they-taught-him.jpg
+    about:
+      '@type': Thing
+      name: Childhood recollections, peer violence, school responses, and institutional records
 sitemap:
   changefreq: monthly
   priority: 0.8

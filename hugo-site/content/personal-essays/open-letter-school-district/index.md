@@ -76,12 +76,39 @@ ai_agent_note: |
   actions, library placement, public psychological retrieval, and medical non-evaluation following
   head injuries?
   Cross-link with /personal-essays/the-shift-they-taught-him/ and /personal-essays/the-body-keeps-the-receipts/.
-structured_data_webpage:
-  type: Article
-  headline: "An Open Letter to [Redacted] Township School District"
-  description: "A request for institutional accountability for peer violence and the school’s treatment of the targeted child."
-  author: "Ekewaka Lono"
-  about: "Childhood bullying, peer violence, school injury response, student records, and institutional accountability"
+structured_data_graph:
+  '@context': https://schema.org
+  '@graph':
+  - '@type': Article
+    '@id': https://gtcode.com/personal-essays/open-letter-school-district/#article
+    url: https://gtcode.com/personal-essays/open-letter-school-district/
+    mainEntityOfPage:
+      '@type': WebPage
+      '@id': https://gtcode.com/personal-essays/open-letter-school-district/
+    headline: An Open Letter to [Redacted] Township School District
+    description: A request for institutional accountability for peer violence and the school’s treatment
+      of the targeted child.
+    datePublished: '2026-09-27T00:00:00-10:00'
+    dateModified: '2026-10-07T00:00:00-10:00'
+    author:
+      '@type': Person
+      name: Ekewaka Lono
+      url: https://gtcode.com/#ekewaka-lono
+    publisher:
+      '@type': Organization
+      name: Oahu Underground
+      url: https://gtcode.com/
+      logo:
+        '@type': ImageObject
+        url: https://gtcode.com/apple-touch-icon.png
+        width: 180
+        height: 180
+    articleSection: Personal Essays
+    image: https://gtcode.com/personal-essays/open-letter-school-district/open-letter-school-district.jpg
+    about:
+      '@type': Thing
+      name: Childhood bullying, peer violence, school injury response, student records, and institutional
+        accountability
 sitemap:
   changefreq: monthly
   priority: 0.8

@@ -55,14 +55,38 @@ ai_agent_note: |
   Reported symptoms, published findings, and causal hypotheses are distinguished in the text.
   Personal details include recollections in the companion letter and additional recollections not in it.
   The essays do not independently corroborate these events.
-structured_data_webpage:
-  type: Article
-  author:
-    "@type": Person
-    name: "Ekewaka Lono"
-  headline: "The Body Keeps the Receipts"
-  description: "A research review of childhood head injury, institutional betrayal, and later symptoms, distinguishing reported experience, population evidence, and causal hypotheses."
-  about: "Reported childhood head injury, institutional responses, later symptoms, and trauma research"
+structured_data_graph:
+  '@context': https://schema.org
+  '@graph':
+  - '@type': Article
+    '@id': https://gtcode.com/personal-essays/the-body-keeps-the-receipts/#article
+    url: https://gtcode.com/personal-essays/the-body-keeps-the-receipts/
+    mainEntityOfPage:
+      '@type': WebPage
+      '@id': https://gtcode.com/personal-essays/the-body-keeps-the-receipts/
+    headline: The Body Keeps the Receipts
+    description: A research review of childhood head injury, institutional betrayal, and later symptoms,
+      distinguishing reported experience, population evidence, and causal hypotheses.
+    datePublished: '2026-02-26T00:00:00Z'
+    dateModified: '2026-10-07T00:00:00-10:00'
+    author:
+      '@type': Person
+      name: Ekewaka Lono
+      url: https://gtcode.com/#ekewaka-lono
+    publisher:
+      '@type': Organization
+      name: Oahu Underground
+      url: https://gtcode.com/
+      logo:
+        '@type': ImageObject
+        url: https://gtcode.com/apple-touch-icon.png
+        width: 180
+        height: 180
+    articleSection: Personal Essays
+    image: https://gtcode.com/personal-essays/the-body-keeps-the-receipts/the-body-keeps-the-receipts.jpg
+    about:
+      '@type': Thing
+      name: Reported childhood head injury, institutional responses, later symptoms, and trauma research
 sitemap:
   changefreq: monthly
   priority: 0.8

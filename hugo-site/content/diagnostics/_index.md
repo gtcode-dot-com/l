@@ -4,9 +4,9 @@ exception_content_path: "exceptions/diagnostics"
 draft: false
 title: "Diagnostics Research Files"
 seo_title: "Diagnostics Research Files | Oahu Underground"
-description: "Technical visibility reports and systems-level anomaly testing."
+description: "Dated search-indexing and platform diagnostics, with technical explanations and limits stated. The latest public Bing captures are from October 8, 2026."
 date: 2026-05-14
-lastmod: 2026-05-14
+lastmod: "2026-10-08"
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/diagnostics/"
@@ -41,7 +41,7 @@ structured_data_graph:
   name: "Diagnostics Research Files"
   description: "Technical visibility reports and systems-level anomaly testing."
   inLanguage: "en"
-  dateModified: "2026-05-14T00:00:00Z"
+  dateModified: "2026-10-08T00:00:00-10:00"
 
 standards_eyebrow: "Technical Silo"
 standards_title: "Diagnostics Portfolio"
@@ -54,7 +54,7 @@ portfolio_sections:
   - id: "search-indexing"
     eyebrow: "Search Indexing"
     title: "Bing Visibility Diagnostics"
-    description: "Technical anomaly testing and indexing diagnostics."
+    description: "Bing captures from February–October 2026. Each exhibit documents the observed result on its capture date."
     pages:
       - "/diagnostics/bing-search-indexing-anomaly"
 

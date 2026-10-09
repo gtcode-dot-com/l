@@ -91,6 +91,7 @@ structured_data_graph:
       mainEntityOfPage:
         "@type": "WebPage"
         "@id": "https://gtcode.com/disclosures/prior-law-enforcement-contact/"
+      image: "https://gtcode.com/img/ou-investigations-index-og-1200x630.jpg"
       headline: "Reporter's Disclosures: Prior Law Enforcement Contact and Civic Overlap"
       alternativeHeadline: "Prior law-enforcement contact, prosecution history, and the background to Lono’s reporting"
       description: "Ekewaka Lono’s account of prior law-enforcement contact, prosecution, threats, and later reporting, with sources and records needed for review."
@@ -200,7 +201,7 @@ The police reports, dispatch records, service returns, recordings, emails, photo
 
 **Federal-buddy statement:** I overheard the man refer to a "federal buddy." The meaning of the statement is unresolved. Witness testimony and communications records could establish whether it referred to an actual relationship and, if so, whether that relationship had any relevance to later events. The statement alone does not establish an actual federal relationship.
 
-**September 2022 service-status deception allegation:** Officer Shatoo told me that service had occurred. Officer Brandt later gave me contradictory information about that same service status during the subsequent harassment sequence. I allege that Brandt knowingly gave me contrary service-status information rather than merely relaying administrative confusion. That is my allegation about Brandt's state of mind, not an adjudicated finding. HPD service records, CAD/RMS entries, officer notes, body-camera footage, and related records can establish what each officer knew and what was represented. The opposing party also filed a TRO and continued stalking and harassing me afterward, including the “How’s your parents?” harassment. Court filings and service records can establish the sequence of the competing TRO proceedings.
+**September 2022 service-status allegation:** I allege that Brandt knowingly gave me contrary information about service; no adjudicated finding is reported. [The Shield Effect](/hawaii-courts/shield-effect-accountability-gap/#law-enforcement) sets out the allegation and the HPD records that could test it. The opposing party also filed a TRO and continued stalking and harassing me afterward, including the “How’s your parents?” harassment. Court filings and service records can establish the sequence of the competing TRO proceedings.
 
 **September 2022 officer identifications:** I identify Shatoo as the responding officer for the September 12, 2022 PaaLaa Road vehicle run-over attempt, located by report number **22-353421**, and Brandt as the responding officer for the September 20, 2022 Breakers / North Shore Marketplace harassment and alleged service-status deception event, located by report number **22-365099**. These officer identifications are my firsthand account; CAD/RMS and officer-assignment records could independently corroborate or contradict them.
 

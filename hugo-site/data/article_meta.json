@@ -16631,6 +16631,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-17T14:16:25.925119+00:00"
   },
+  "news/comp-journalism/bbc-apologises-to-pink-news-bosses-over-defamatory-sexual-misconduct-claims": {
+    "slug": "news/comp-journalism/bbc-apologises-to-pink-news-bosses-over-defamatory-sexual-misconduct-claims",
+    "meta_description": "Pink News chief executive and founder Benjamin Cohen at the Pink News Awards 2022. Picture: Pink News Pink News bosses Benjamin Cohen and Anthony...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"BBC apologises to Pink News bosses over defamatory sexual misconduct claims\",\n  \"description\": \"Pink News chief executive and founder Benjamin Cohen at the Pink News Awards 2022. Picture: Pink News Pink News bosses Benjamin Cohen and Anthony...\",\n  \"datePublished\": \"2026-10-09T01:27:43.359419+00:00\",\n  \"dateModified\": \"2026-10-09T01:27:43.359419+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/media_law/bbc-apologises-to-pink-news-bosses-over-defamatory-sexual-misconduct-claims\"\n  },\n  \"url\": \"https://pressgazette.co.uk/media_law/bbc-apologises-to-pink-news-bosses-over-defamatory-sexual-misconduct-claims\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T01:27:54.508758+00:00"
+  },
   "news/comp-journalism/bbc-proposes-to-close-regional-investigations-unit": {
     "slug": "news/comp-journalism/bbc-proposes-to-close-regional-investigations-unit",
     "meta_description": "BBC Media City in Salford. Picture: Shutterstock/Nebelung The BBC is proposing to close a unit dedicated to investigative journalism in the...",
@@ -18262,6 +18269,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T23:26:18.746963+00:00"
   },
+  "news/comp-journalism/independent-pays-damages-to-filmmaker-accused-of-fraud-in-dismissed-lawsuit": {
+    "slug": "news/comp-journalism/independent-pays-damages-to-filmmaker-accused-of-fraud-in-dismissed-lawsuit",
+    "meta_description": "Top of Independent homepage on 1 October 2026 The Independent has apologised and agreed to pay damages to a British filmmaker after it reported on...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Independent pays damages to filmmaker accused of fraud in dismissed lawsuit\",\n  \"description\": \"Top of Independent homepage on 1 October 2026 The Independent has apologised and agreed to pay damages to a British filmmaker after it reported on...\",\n  \"datePublished\": \"2026-10-09T01:27:42.076363+00:00\",\n  \"dateModified\": \"2026-10-09T01:27:42.076363+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/independent-pays-damages-to-filmmaker-accused-of-fraud-in-dismissed-lawsuit\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/independent-pays-damages-to-filmmaker-accused-of-fraud-in-dismissed-lawsuit\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T01:27:55.209686+00:00"
+  },
   "news/comp-journalism/independent-set-to-take-over-running-standard-website": {
     "slug": "news/comp-journalism/independent-set-to-take-over-running-standard-website",
     "meta_description": "The Standard website homepage on 20 January 2026 Editorial and commercial staff on the Standard website have been told they could be transferred...",
@@ -19494,6 +19508,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T23:03:14.046758+00:00"
   },
+  "news/comp-journalism/pr-agency-linked-to-fake-forbes-websites-posts-articles-to-help-us-visa-applications": {
+    "slug": "news/comp-journalism/pr-agency-linked-to-fake-forbes-websites-posts-articles-to-help-us-visa-applications",
+    "meta_description": "An article promoting Baden Bower appears on a fake Scotland edition of Forbes. A PR-agency which appears to have links to fake overseas editions...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"PR agency linked to fake Forbes websites posts articles to help US visa applications\",\n  \"description\": \"An article promoting Baden Bower appears on a fake Scotland edition of Forbes. A PR-agency which appears to have links to fake overseas editions...\",\n  \"datePublished\": \"2026-10-09T01:27:40.875418+00:00\",\n  \"dateModified\": \"2026-10-09T01:27:40.875418+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/pr-agency-linked-to-fake-forbes-websites-posts-articles-to-help-us-visa-applications\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/pr-agency-linked-to-fake-forbes-websites-posts-articles-to-help-us-visa-applications\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T01:27:54.861469+00:00"
+  },
   "news/comp-journalism/pr-bodies-launch-campaign-against-fake-experts-after-press-gazette-investigation": {
     "slug": "news/comp-journalism/pr-bodies-launch-campaign-against-fake-experts-after-press-gazette-investigation",
     "meta_description": "Press Gazette’s investigation which uncovered 1,000 articles in the British press attributed to 50 fake, non-existent and AI-enhanced experts has...",
@@ -19913,6 +19934,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Sir Simon Hughes says he was target for Mail after being outed by The Sun\",\n  \"description\": \"Sir Simon Hughes outside the Rolls Building in London in 2021. Picture: PA Media Former Lib Dem MP Sir Simon Hughes has spoken out about how his...\",\n  \"datePublished\": \"2026-01-27T18:15:44.153697+00:00\",\n  \"dateModified\": \"2026-01-27T18:15:44.153697+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/media_law/sir-simon-hughes-says-he-was-target-for-mail-after-being-outed-by-the-sun\"\n  },\n  \"url\": \"https://pressgazette.co.uk/media_law/sir-simon-hughes-says-he-was-target-for-mail-after-being-outed-by-the-sun\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:17.011496+00:00"
+  },
+  "news/comp-journalism/sinclairs-new-substack-repackages-its-local-tv-reporting-into-a-video-podcast": {
+    "slug": "news/comp-journalism/sinclairs-new-substack-repackages-its-local-tv-reporting-into-a-video-podcast",
+    "meta_description": "“How young is too young for a life in prison?” “SpaceX debris is washing ashore. Who’s responsible?” “Why schools get paid even when students fail.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Sinclair’s new Substack repackages its local TV reporting into a video podcast\",\n  \"description\": \"“How young is too young for a life in prison?” “SpaceX debris is washing ashore. Who’s responsible?” “Why schools get paid even when students fail.\",\n  \"datePublished\": \"2026-10-09T01:27:39.719500+00:00\",\n  \"dateModified\": \"2026-10-09T01:27:39.719500+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/sinclairs-new-substack-repackages-its-local-tv-reporting-into-a-video-podcast\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/sinclairs-new-substack-repackages-its-local-tv-reporting-into-a-video-podcast\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T01:27:55.644175+00:00"
   },
   "news/comp-journalism/sky-news-ditches-comfy-slippers-as-the-wrap-replaces-news-at-ten": {
     "slug": "news/comp-journalism/sky-news-ditches-comfy-slippers-as-the-wrap-replaces-news-at-ten",
@@ -20963,6 +20991,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"With Newpress, Iz and Johnny Harris incubate video journalism for the creator era\",\n  \"description\": \"In 2020, after five years at Vox, journalist Johnny Harris left to start his own YouTube channel . Today, the channel he built with his wife Iz ,...\",\n  \"datePublished\": \"2026-05-11T02:29:41.439333+00:00\",\n  \"dateModified\": \"2026-05-11T02:29:41.439333+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/03/with-newpress-iz-and-johnny-harris-incubate-video-journalism-for-the-creator-era\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/03/with-newpress-iz-and-johnny-harris-incubate-video-journalism-for-the-creator-era\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-11T02:29:55.817208+00:00"
+  },
+  "news/comp-journalism/woman-home-grows-live-events-and-video-as-it-turns-100": {
+    "slug": "news/comp-journalism/woman-home-grows-live-events-and-video-as-it-turns-100",
+    "meta_description": "Front cover of Woman &amp; Home marking its 100th anniversary. Picture: Submitted Future-owned women’s interest monthly Woman &amp; Home turns 100...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Woman & Home grows live events and video as it turns 100\",\n  \"description\": \"Front cover of Woman &amp; Home marking its 100th anniversary. Picture: Submitted Future-owned women’s interest monthly Woman &amp; Home turns 100...\",\n  \"datePublished\": \"2026-10-09T01:27:46.523502+00:00\",\n  \"dateModified\": \"2026-10-09T01:27:46.523502+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/magazines/woman-home-grows-live-events-and-video-as-it-turns-100\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/magazines/woman-home-grows-live-events-and-video-as-it-turns-100\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T01:27:54.147696+00:00"
   },
   "news/comp-journalism/womens-interest-magazine-sales-2025-harper-s-bazaar-grows-in-print-and-digital": {
     "slug": "news/comp-journalism/womens-interest-magazine-sales-2025-harper-s-bazaar-grows-in-print-and-digital",
