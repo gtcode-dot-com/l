@@ -44,7 +44,18 @@
 {{- else if .Params.structured_data_graph -}}
 {{- $jsonText := "" -}}
 {{- if or (reflect.IsMap .Params.structured_data_graph) (reflect.IsSlice .Params.structured_data_graph) -}}
-  {{- $jsonText = .Params.structured_data_graph | jsonify -}}
+  {{- $graph := .Params.structured_data_graph -}}
+  {{- if and .Params.generate_collection_parts (reflect.IsMap $graph) -}}
+    {{- /* Use the same visible section pages as the curated cards and Additional Files.
+         Titles and canonical URLs come from pages, not a second handwritten index. */ -}}
+    {{- $parts := slice -}}
+    {{- $visible := partial "exception/filter-list-pages.html" .RegularPages -}}
+    {{- range $visible.ByWeight -}}
+      {{- $parts = $parts | append (dict "@type" "Article" "name" .Title "url" (.Params.canonical | default .Permalink)) -}}
+    {{- end -}}
+    {{- $graph = merge $graph (dict "haspart" $parts) -}}
+  {{- end -}}
+  {{- $jsonText = $graph | jsonify -}}
 {{- else -}}
   {{- $jsonText = printf "%v" .Params.structured_data_graph -}}
 {{- end -}}

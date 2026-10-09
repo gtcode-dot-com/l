@@ -6,7 +6,7 @@ title: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
 subtitle: "Hawaii's Justice System Under Scrutiny"
 description: "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions."
 date: 2025-06-12
-lastmod: "2026-10-08"
+lastmod: "2026-10-09"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -14,7 +14,7 @@ portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 seo_title: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
 published_display: "June 12, 2025"
-modified_display: "October 8, 2026"
+modified_display: "October 9, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/"
@@ -45,7 +45,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-06-12T00:00:00Z"
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-09T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Wilson Loo"
@@ -88,7 +88,7 @@ structured_data_graph:
       description: "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions."
       image: "https://gtcode.com/img/ou-review-gap-og-1200x630.jpg"
       datePublished: "2025-06-12T00:00:00Z"
-      dateModified: "2026-10-08T00:00:00-10:00"
+      dateModified: "2026-10-09T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -238,7 +238,7 @@ My correspondence to the Commission also disclosed reported misconduct by Audrey
 
 The private pressure and the later proposal both pushed me toward leaving Hawaiʻi. I did not observe coordination between the participants. Stanley’s later judicial service adds to the present public interest in examining her earlier representation. This article makes no claim about the judicial appointment process. The public listing establishes her role; it does not corroborate our conversations.
 
-The dedicated Stanley counsel-file disclosure is [The Threat Report](/hawaii-courts/the-threat-report/), based on a draft disciplinary complaint not submitted to ODC. It reports no disciplinary finding and does not prove the Wilson Loo account or coordination.
+The dedicated Stanley counsel-file disclosure is [The Threat Report](/hawaii-courts/the-threat-report/), a public-interest account of Stanley’s handling of the threat report. It does not prove the Wilson Loo account or coordination.
 
 ### Documented Professional Background: Rutgers Law and Organized-Crime Prosecution
 

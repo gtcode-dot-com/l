@@ -6,7 +6,7 @@ title: "Hawaii Accountability Gaps: Case File Guide"
 subtitle: "A guide to the event accounts and the records needed to review them"
 description: "A short guide to the primary event accounts, counsel questions, police records, and judicial-oversight files in the Hawaii Courts archive."
 date: 2025-08-13
-lastmod: "2026-10-08"
+lastmod: "2026-10-09"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
@@ -15,7 +15,7 @@ portfolio_index: "/hawaii-courts/"
 homepage_exclude: true
 seo_title: "Hawaii Accountability Gaps: Case File Guide"
 published_display: "August 13, 2025"
-modified_display: "October 8, 2026"
+modified_display: "October 9, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/hawaii-accountability-gaps/"
@@ -43,7 +43,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2025-08-13T00:00:00Z"
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-09T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Institutional Accountability"
@@ -81,7 +81,7 @@ structured_data_graph:
   description: "A short guide to the primary event accounts, counsel questions, police records, and judicial-oversight files in the Hawaii Courts archive."
   image: "https://gtcode.com/img/ou-investigations-index-og-1200x630.jpg"
   datePublished: "2025-08-13T00:00:00Z"
-  dateModified: "2026-10-08T00:00:00-10:00"
+  dateModified: "2026-10-09T00:00:00-10:00"
   author:
     "@type": "Person"
     name: "Ekewaka Lono"
@@ -129,7 +129,7 @@ My question across these events is which account entered the official record and
 <span id="record-surface-3-courtroom-procedure-and-preservation"></span>
 <span id="reported-deviations-from-standard-courtroom-conduct"></span>
 
-The three accountability articles divide the questions by participant: *The Threat Report* examines Stanley’s handling of the threat and the departure concept she relayed; *The Hypothetical Gun* examines the prosecution’s testimony, diagram, and closing; *The Defense Table Went Quiet* examines retained counsel’s advice, chambers, and plea advocacy. The drafts concerning Stanley, Kanemoto, and Retained Trial Counsel were not submitted to ODC. No disciplinary findings are reported.
+The three accountability articles divide the questions by participant: *The Threat Report* examines Stanley’s handling of the threat and the departure concept she relayed; *The Hypothetical Gun* examines the prosecution’s testimony, diagram, and closing; *The Defense Table Went Quiet* examines retained counsel’s advice, chambers, and plea advocacy.
 
 ## Police Reports and the Hearing {#record-surface-4-law-enforcement-intake-and-triage}
 

@@ -4,7 +4,7 @@ exception_content_path: "exceptions/home"
 title: "Oahu Underground by GTCode | Hawaii Public-Interest Records Audit"
 seo_title: "Oahu Underground | Hawaii Public Records"
 description: "Oahu Underground is a public-interest records-audit project based in Hawaii. Start with The Nod, then follow the witness questions and legal analysis in the Hawaii Courts portfolio."
-lastmod: "2026-10-08"
+lastmod: "2026-10-09"
 meta_description: "Oahu Underground - public-interest records audit and independent reporting from Hawaii. Start with The Nod, the witness questions, and the legal analysis."
 og_image: "/img/ou-the-nod-og-1200x630.jpg"
 og_image_width: 1200
@@ -81,7 +81,7 @@ structured_data_graph:
         Oahu Underground publishes a public-interest Hawaii Courts records package
         with separate portfolio lanes for disclosure, technical, archive, and
         geopolitical work.
-      dateModified: "2026-10-08T00:00:00-10:00"
+      dateModified: "2026-10-09T00:00:00-10:00"
       inLanguage: en-US
       isPartOf:
         '@id': https://gtcode.com/#website
@@ -100,9 +100,9 @@ structured_data_graph:
           contactType: tips
           email: tips@gtcode.com
 
-modified_display: "October 8, 2026"
+modified_display: "October 9, 2026"
 
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-09T00:00:00-10:00"
 ---
 *Independent public-interest records audit from Hawaii*
 
@@ -125,6 +125,7 @@ Other site sections exist, but they are separate lanes unless a page identifies 
 - [Diagnostics](/diagnostics/) covers search and platform visibility.
 - [Intelligence](/intelligence/) covers source and archive accountability.
 - [Geopolitics](/geopolitics/) covers access, energy, and security-policy analysis.
+- [Policy Essays](/policy-essays/) covers policy thought experiments using sourced institutional analogues.
 
 Cross-links are navigation, not evidence.
 

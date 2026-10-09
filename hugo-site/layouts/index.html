@@ -348,7 +348,7 @@
 
       {{- $archivePages := where $investigationPages ".RelPermalink" "not in" $featuredPaths -}}
       {{- $homepageSilos := slice -}}
-      {{- range slice "/hawaii-courts" "/geopolitics" "/intelligence" "/diagnostics" "/disclosures" -}}
+      {{- range slice "/hawaii-courts" "/geopolitics" "/intelligence" "/diagnostics" "/disclosures" "/policy-essays" -}}
         {{- with $.Site.GetPage . -}}
           {{- $homepageSilos = $homepageSilos | append . -}}
         {{- end -}}
@@ -360,7 +360,7 @@
 
           {{ if gt (len $homepageSilos) 0 }}
           <div class="ou-section-body ou-home-investigation-note">
-            <p>Browse legal, financial, geopolitical, intelligence, and technical research, with reporter context in Disclosures.</p>
+            <p>Browse courts, geopolitics, intelligence, diagnostics, and policy thought experiments, with reporter context in Disclosures.</p>
           </div>
           {{ end }}
           {{/* The shared group layout owns spacing between the card grid and series. */}}
@@ -587,6 +587,7 @@
             <li><a href="/intelligence/">Intelligence</a></li>
             <li><a href="/diagnostics/">Diagnostics</a></li>
             <li><a href="/disclosures/">Disclosures</a></li>
+            <li><a href="/policy-essays/">Policy Essays</a></li>
             {{ range first 5 $investigationPages }}
             <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
@@ -601,6 +602,7 @@
             <li><a href="#start-here">Start Here</a></li>
             <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
             <li><a href="/disclosures/">Reporter Disclosures</a></li>
+            <li><a href="/policy-essays/">Policy Essays</a></li>
             {{ else }}
             <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>

@@ -6,7 +6,7 @@ title: "Hawaii Courts Accountability Files"
 seo_title: "Hawaii Courts Accountability Files | Oahu Underground"
 description: "A records-first hub for the Wilson Loo review path, sealed audio, attempted record preservation, HRPC 8.3(b), and Hawaii court oversight context."
 date: 2026-05-14
-lastmod: "2026-10-08"
+lastmod: "2026-10-09"
 type: "investigation"
 layout: "list"
 canonical: "https://gtcode.com/hawaii-courts/"
@@ -50,6 +50,7 @@ ai_agent_note: |
   Preserve distinctions among public records, firsthand reports, sealed-record-dependent claims,
   and legal inference. Other site portfolios are separate unless a page identifies a direct
   evidentiary bridge.
+generate_collection_parts: true
 structured_data_graph:
   "@context": "https://schema.org"
   "@type": "CollectionPage"
@@ -58,35 +59,7 @@ structured_data_graph:
   name: "Hawaii Courts Accountability Files"
   description: "A records-first hub for the Wilson Loo review path, sealed audio, attempted record preservation, HRPC 8.3(b), and Hawaii court oversight context."
   inLanguage: "en"
-  dateModified: "2026-10-08T00:00:00-10:00"
-  hasPart:
-    - "@type": "Article"
-      name: "The Reporting Duty"
-      url: "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/"
-    - "@type": "Article"
-      name: "The Nod: A Firsthand Courtroom Account"
-      url: "https://gtcode.com/hawaii-courts/the-nod-visual-allegation/"
-    - "@type": "Article"
-      name: "The Two Questions: How One Interview Could Test the Wilson Loo Case"
-      url: "https://gtcode.com/hawaii-courts/two-questions-wilson-loo/"
-    - "@type": "Article"
-      name: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
-      url: "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/"
-    - "@type": "Article"
-      name: "The Lawyer in the Room"
-      url: "https://gtcode.com/hawaii-courts/lawyer-in-the-room-bosko-petricevic/"
-    - "@type": "Article"
-      name: "The Hypothetical Gun: The Closing-Argument Record"
-      url: "https://gtcode.com/hawaii-courts/the-hypothetical-gun/"
-    - "@type": "Article"
-      name: "The Defense Table Went Quiet"
-      url: "https://gtcode.com/hawaii-courts/the-defense-table-went-quiet/"
-    - "@type": "Article"
-      name: "The Threat Report: A Death Threat During Defense Investigation — and Counsel’s Dismissive Response"
-      url: "https://gtcode.com/hawaii-courts/the-threat-report/"
-    - "@type": "Article"
-      name: "The Information Trail: Open Questions from 2015–2022"
-      url: "https://gtcode.com/hawaii-courts/information-trail-2015-2022/"
+  dateModified: "2026-10-09T00:00:00-10:00"
 
 standards_eyebrow: "Legal Audit Route"
 standards_title: "Hawaii Courts Portfolio"
@@ -108,10 +81,11 @@ portfolio_sections:
       - "/hawaii-courts/wilson-loo-judicial-signaling"
       - "/hawaii-courts/reporting-duty-hrpc-8-3b"
       - "/hawaii-courts/lawyer-in-the-room-bosko-petricevic"
+      - "/hawaii-courts/open-letter-bosko-petricevic"
   - id: "professional-responsibility"
     eyebrow: "Trial and Counsel Record"
     title: "Professional Responsibility"
-    description: "Public accountability articles concerning trial advocacy and counsel handling. The published companion letters replace earlier drafts. No complaint concerning Retained Trial Counsel was filed; companion drafts remain unsubmitted to ODC. No disciplinary findings are reported."
+    description: "Public-interest reporting on trial advocacy and counsel handling."
     pages:
       - "/hawaii-courts/the-hypothetical-gun"
       - "/hawaii-courts/the-threat-report"
@@ -144,17 +118,18 @@ portfolio_sections:
 grid_eyebrow: "Additional Files"
 grid_title: "Hawaii Courts Files"
 grid_description: "Any remaining files in this silo are shown here without crossing into other research portfolios."
-modified_display: "October 8, 2026"
+modified_display: "October 9, 2026"
 ---
 ## Primary Event Accounts
 
 | Event | Start here |
 | --- | --- |
-| Pre-prosecution chronology | [Before the Tax Office](/disclosures/before-the-tax-office/) |
 | Hartmann threat, Stanley’s response, and departure concept | [The Threat Report](/hawaii-courts/the-threat-report/) |
 | Kwak’s testimony, diagram, and mock-pistol closing | [The Hypothetical Gun](/hawaii-courts/the-hypothetical-gun/) |
 | Retained counsel, chambers, and plea pressure | [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) |
 | December 2, 2022 courtroom sequence | [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) |
 | Wider hearing and subsequent reporting | [Wilson Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) |
+
+**Reporter background — Disclosures:** [Before the Tax Office](/disclosures/before-the-tax-office/) supplies the pre-prosecution chronology and Hartmann-threat background. It is not evidence for the December 2, 2022 courtroom sequence.
 
 [The Information Trail](/hawaii-courts/information-trail-2015-2022/) examines possible relationships among these events. [Mechanisms of Review Failure](/hawaii-courts/mechanisms-of-review-failure/) supplies general comparisons. The event files remain the sources for what happened; other portfolios require their own evidence.

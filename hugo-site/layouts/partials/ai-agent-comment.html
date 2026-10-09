@@ -1,1 +1,8 @@
-{{/* Editorial ai_agent_note stays in source; never emit it into public HTML. */}}
+{{- if site.Params.render_ai_agent_notes -}}
+  {{- $active := partial "exception/resolve-active-page.html" . -}}
+  {{- with $active.Params.ai_agent_note -}}
+    {{- /* Escape markup and comment delimiters so notes remain comments. */ -}}
+    {{- $note := replace (htmlEscape .) "--" "&#45;&#45;" -}}
+    {{- printf "<!-- ai_agent_note:\n%s\n-->" $note | safeHTML -}}
+  {{- end -}}
+{{- end -}}

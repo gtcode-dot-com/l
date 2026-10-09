@@ -8,6 +8,7 @@
   (or (eq $section "geopolitics") (eq $portfolioKey "geopolitics") (eq $rel "/geopolitics/"))
   (or (eq $section "intelligence") (eq $portfolioKey "intelligence") (eq $rel "/intelligence/"))
   (or (eq $section "diagnostics") (eq $portfolioKey "diagnostics") (eq $rel "/diagnostics/"))
+  (or (eq $section "policy-essays") (eq $portfolioKey "policy-essays") (eq $rel "/policy-essays/"))
   (or (eq $section "disclosures") (eq $portfolioKey "disclosures") (eq $rel "/disclosures/"))
 -}}
 {{- $isLibrary := or (eq $section "consulting") (eq $section "guides") (eq $section "papers") (eq $section "repos") (eq $section "articles") (eq $section "news") -}}
@@ -31,6 +32,7 @@
       <a href="/intelligence/" {{ if or (eq $section "intelligence") (eq $portfolioKey "intelligence") (eq $rel "/intelligence/") }}class="active"{{ end }}>Intelligence</a>
       <a href="/diagnostics/" {{ if or (eq $section "diagnostics") (eq $portfolioKey "diagnostics") (eq $rel "/diagnostics/") }}class="active"{{ end }}>Diagnostics</a>
       <a href="/disclosures/" {{ if or (eq $section "disclosures") (eq $portfolioKey "disclosures") (eq $rel "/disclosures/") }}class="active"{{ end }}>Disclosures</a>
+      <a href="/policy-essays/" {{ if or (eq $section "policy-essays") (eq $portfolioKey "policy-essays") (eq $rel "/policy-essays/") }}class="active"{{ end }}>Policy Essays</a>
     </div>
   </div>
 
