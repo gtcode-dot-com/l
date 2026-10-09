@@ -17303,6 +17303,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T07:02:51.794824+00:00"
   },
+  "news/comp-journalism/facebook-cash-for-links-scheme-excludes-publishers-for-now": {
+    "slug": "news/comp-journalism/facebook-cash-for-links-scheme-excludes-publishers-for-now",
+    "meta_description": "Meta One subscription announcement published in September 2026. Picture: Shutterstock/Koshiro K News publishers are excluded from new restrictions...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Facebook cash-for-links scheme excludes publishers (for now)\",\n  \"description\": \"Meta One subscription announcement published in September 2026. Picture: Shutterstock/Koshiro K News publishers are excluded from new restrictions...\",\n  \"datePublished\": \"2026-10-09T00:56:26.977764+00:00\",\n  \"dateModified\": \"2026-10-09T00:56:26.977764+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/platforms/facebook-cash-for-links-scheme-excludes-publishers-for-now\"\n  },\n  \"url\": \"https://pressgazette.co.uk/platforms/facebook-cash-for-links-scheme-excludes-publishers-for-now\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T00:56:35.365596+00:00"
+  },
   "news/comp-journalism/facebook-comment-sections-rife-with-misinformation-following-pfizers-covid-19-antiviral-pill-announcement": {
     "slug": "news/comp-journalism/facebook-comment-sections-rife-with-misinformation-following-pfizers-covid-19-antiviral-pill-announcement",
     "meta_description": "Last week Pfizer published interim trial results for its experimental Covid-19 antiviral pill, Paxlovid, which the company said reduced the chance...",
@@ -18626,6 +18633,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:10.718615+00:00"
   },
+  "news/comp-journalism/mails-interactive-storytelling-strand-deep-dive-drives-up-to-100-average-subs-per-article": {
+    "slug": "news/comp-journalism/mails-interactive-storytelling-strand-deep-dive-drives-up-to-100-average-subs-per-article",
+    "meta_description": "Picture of host Robin Morgan (left), the Daily Mail’s director of visual storytelling Harry Lewis-Irlam, and Press Gazette UK editor Charlotte...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Mail’s interactive storytelling strand Deep Dive drives up to 100 average subs per article\",\n  \"description\": \"Picture of host Robin Morgan (left), the Daily Mail’s director of visual storytelling Harry Lewis-Irlam, and Press Gazette UK editor Charlotte...\",\n  \"datePublished\": \"2026-10-09T00:56:20.851588+00:00\",\n  \"dateModified\": \"2026-10-09T00:56:20.851588+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/digital-journalism/mails-interactive-storytelling-strand-deep-dive-drives-up-to-100-news-subs-per-article\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/digital-journalism/mails-interactive-storytelling-strand-deep-dive-drives-up-to-100-news-subs-per-article\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T00:56:35.709794+00:00"
+  },
   "news/comp-journalism/major-publishers-back-universal-ai-licensing-technology": {
     "slug": "news/comp-journalism/major-publishers-back-universal-ai-licensing-technology",
     "meta_description": "Chinese robot pictured at Web Summit in Lisbon. Picture: Press Gazette/Dominic Ponsford A broad coalition of news publishers have backed shared...",
@@ -19186,6 +19200,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-12T21:34:40.065048+00:00"
   },
+  "news/comp-journalism/newsletter-tips-boost-interactivity-but-keep-subject-lines-boring": {
+    "slug": "news/comp-journalism/newsletter-tips-boost-interactivity-but-keep-subject-lines-boring",
+    "meta_description": "Clockwise from top left: Christopher Sopher, CEO at Letterhead, David Skok, CEO and editor-in-chief at The Logic, George Monaghan, newsletters...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Newsletter tips: Boost interactivity, but keep subject lines ‘boring’\",\n  \"description\": \"Clockwise from top left: Christopher Sopher, CEO at Letterhead, David Skok, CEO and editor-in-chief at The Logic, George Monaghan, newsletters...\",\n  \"datePublished\": \"2026-10-09T00:56:25.700238+00:00\",\n  \"dateModified\": \"2026-10-09T00:56:25.700238+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/newsletters/newsletter-tips-for-publishers\"\n  },\n  \"url\": \"https://pressgazette.co.uk/newsletters/newsletter-tips-for-publishers\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T00:56:36.054400+00:00"
+  },
   "news/comp-journalism/newsletters-live-coverage-a-one-time-magazine-the-world-cup-is-becoming-a-testbed-for-journalism-experiments": {
     "slug": "news/comp-journalism/newsletters-live-coverage-a-one-time-magazine-the-world-cup-is-becoming-a-testbed-for-journalism-experiments",
     "meta_description": "The FIFA World Cup, which begins on June 11, is by many measures the biggest World Cup in history : 48 teams will compete in 104 matches across...",
@@ -19206,6 +19227,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Newsquest grows profit as online subscribers rise to 159,000\",\n  \"description\": \"Newsquest CEO Henry Faure Walker. Picture: Press Gazette Newsquest has reached 159,000 paying digital subscribers, up 18% from 135,000 one year...\",\n  \"datePublished\": \"2026-10-07T01:17:11.186156+00:00\",\n  \"dateModified\": \"2026-10-07T01:17:11.186156+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/media_business/newsquest-accounts-2025\"\n  },\n  \"url\": \"https://pressgazette.co.uk/media_business/newsquest-accounts-2025\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T01:17:26.887195+00:00"
+  },
+  "news/comp-journalism/nieman-lab-has-a-new-look": {
+    "slug": "news/comp-journalism/nieman-lab-has-a-new-look",
+    "meta_description": "You may have noticed that things look a little different around here. We’ve just launched the third major redesign in Nieman Lab history.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Nieman Lab has a new look\",\n  \"description\": \"You may have noticed that things look a little different around here. We’ve just launched the third major redesign in Nieman Lab history.\",\n  \"datePublished\": \"2026-10-09T00:56:21.675745+00:00\",\n  \"dateModified\": \"2026-10-09T00:56:21.675745+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/nieman-lab-has-a-new-look\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/nieman-lab-has-a-new-look\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T00:56:34.564154+00:00"
   },
   "news/comp-journalism/no-cavalry-is-coming-how-investigative-journalism-must-rethink-money-metrics-and-survival": {
     "slug": "news/comp-journalism/no-cavalry-is-coming-how-investigative-journalism-must-rethink-money-metrics-and-survival",
@@ -20515,6 +20543,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"U.S. news jobs are more than 3× more likely to be based in Manhattan than they were 25 years ago\",\n  \"description\": \"Ten years ago, I wrote a piece on how the internet was sucking journalistic resources out of the middle of the country and concentrating it on the...\",\n  \"datePublished\": \"2026-08-09T09:51:01.480449+00:00\",\n  \"dateModified\": \"2026-08-09T09:51:01.480449+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/08/u-s-news-jobs-are-more-than-3-more-likely-to-be-based-in-manhattan-than-they-were-25-years-ago\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/08/u-s-news-jobs-are-more-than-3-more-likely-to-be-based-in-manhattan-than-they-were-25-years-ago\"\n}",
     "agent_callout": "",
     "generated_at": "2026-08-09T09:51:20.353630+00:00"
+  },
+  "news/comp-journalism/uber-agents-undercover-ai-personas-and-other-ways-newsrooms-are-using-ai-in-investigations": {
+    "slug": "news/comp-journalism/uber-agents-undercover-ai-personas-and-other-ways-newsrooms-are-using-ai-in-investigations",
+    "meta_description": "Late last month, about 150 journalists, researchers, and technologists gathered on the 15th floor of The New York Times Building for a forum on...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"“Uber agents,” undercover AI personas, and other ways newsrooms are using AI in investigations\",\n  \"description\": \"Late last month, about 150 journalists, researchers, and technologists gathered on the 15th floor of The New York Times Building for a forum on...\",\n  \"datePublished\": \"2026-10-09T00:56:21.341233+00:00\",\n  \"dateModified\": \"2026-10-09T00:56:21.341233+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/uber-agents-undercover-ai-personas-and-other-ways-newsrooms-are-using-ai-in-investigations\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/uber-agents-undercover-ai-personas-and-other-ways-newsrooms-are-using-ai-in-investigations\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-09T00:56:34.986563+00:00"
   },
   "news/comp-journalism/ufos-personalities-and-new-content-niches-fuel-newsnation-youtube-expansion": {
     "slug": "news/comp-journalism/ufos-personalities-and-new-content-niches-fuel-newsnation-youtube-expansion",
