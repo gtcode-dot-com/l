@@ -146,7 +146,7 @@
     "author_given": "Ekewaka",
     "date": "2026-05-10",
     "lastmod": "2026-10-08",
-    "abstract": "An analysis of Hawaii Rule of Professional Conduct 8.3(b), the author’s firsthand courtroom account, and what Petricevic saw and understood.",
+    "abstract": "What did Bosko Petricevic perceive and understand, and did Hawaii’s judicial-misconduct reporting rule require him to act?",
     "canonical": "https://gtcode.com/hawaii-courts/lawyer-in-the-room-bosko-petricevic/",
     "section": "investigation",
     "section_label": "Investigations",
@@ -217,7 +217,7 @@
     "author_given": "Ekewaka",
     "date": "2026-05-06",
     "lastmod": "2026-10-08",
-    "abstract": "A public letter to attorney Bosko Petricevic concerning a December 2, 2022 First Circuit courtroom sequence, a sealed audio record, and professional-responsibility questions under Hawaii Rule of Professional Conduct 8.3(b).",
+    "abstract": "A public letter asking Bosko Petricevic what he perceived, understood, and did, including any report under Hawaii Rule of Professional Conduct 8.3(b).",
     "canonical": "https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/",
     "section": "investigation",
     "section_label": "Investigations",
@@ -291,7 +291,7 @@
     "author_given": "Ekewaka",
     "date": "2026-06-08",
     "lastmod": "2026-10-08",
-    "abstract": "A records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, and HRPC 8.3(b).",
+    "abstract": "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct.",
     "canonical": "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/",
     "section": "investigation",
     "section_label": "Investigations",
@@ -420,7 +420,7 @@
     "chicago": "Ekewaka Lono. \"The Hypothetical Gun: The Closing-Argument Record.\" *GTCode.com Investigations*, October 1, 2026. https://gtcode.com/hawaii-courts/the-hypothetical-gun/. Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-hypothetical-gun."
   },
   "/hawaii-courts/the-nod-visual-allegation/": {
-    "title": "The Nod: Visual Report, Audio Sequence, and Review Gap",
+    "title": "The Nod: A Firsthand Courtroom Account",
     "author": "Ekewaka Lono",
     "author_family": "Lono",
     "author_given": "Ekewaka",
@@ -447,9 +447,9 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-nod-visual-allegation",
     "license_url": "https://gtcode.com/policies/content-use/",
     "bibtex_key": "lono2026nodvisualallegation",
-    "bibtex": "@article{lono2026nodvisualallegation,\n  author  = {Lono, Ekewaka},\n  title   = {The Nod: Visual Report, Audio Sequence, and Review Gap},\n  journal = {GTCode.com Investigations},\n  year    = {2026},\n  month   = feb,\n  url     = {https://gtcode.com/hawaii-courts/the-nod-visual-allegation/},\n  note    = {Last modified 2026-10-08; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-nod-visual-allegation}}\n}",
-    "apa": "Lono, E. (2026, February 12). The Nod: Visual Report, Audio Sequence, and Review Gap. *GTCode.com Investigations*. https://gtcode.com/hawaii-courts/the-nod-visual-allegation/ (Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-nod-visual-allegation)",
-    "chicago": "Ekewaka Lono. \"The Nod: Visual Report, Audio Sequence, and Review Gap.\" *GTCode.com Investigations*, February 12, 2026. https://gtcode.com/hawaii-courts/the-nod-visual-allegation/. Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-nod-visual-allegation."
+    "bibtex": "@article{lono2026nodvisualallegation,\n  author  = {Lono, Ekewaka},\n  title   = {The Nod: A Firsthand Courtroom Account},\n  journal = {GTCode.com Investigations},\n  year    = {2026},\n  month   = feb,\n  url     = {https://gtcode.com/hawaii-courts/the-nod-visual-allegation/},\n  note    = {Last modified 2026-10-08; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-nod-visual-allegation}}\n}",
+    "apa": "Lono, E. (2026, February 12). The Nod: A Firsthand Courtroom Account. *GTCode.com Investigations*. https://gtcode.com/hawaii-courts/the-nod-visual-allegation/ (Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-nod-visual-allegation)",
+    "chicago": "Ekewaka Lono. \"The Nod: A Firsthand Courtroom Account.\" *GTCode.com Investigations*, February 12, 2026. https://gtcode.com/hawaii-courts/the-nod-visual-allegation/. Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/the-nod-visual-allegation."
   },
   "/hawaii-courts/the-threat-report/": {
     "title": "The Threat Report: A Death Threat During Defense Investigation — and Counsel’s Dismissive Response",
@@ -519,13 +519,13 @@
     "chicago": "Ekewaka Lono. \"The Two Questions: How One Interview Could Test the Wilson Loo Case.\" *GTCode.com Investigations*, February 23, 2026. https://gtcode.com/hawaii-courts/two-questions-wilson-loo/. Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/two-questions-wilson-loo."
   },
   "/hawaii-courts/wilson-loo-judicial-signaling/": {
-    "title": "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi",
+    "title": "Wilson Loo: Hearing and Oversight in Hawaiʻi",
     "author": "Ekewaka Lono",
     "author_family": "Lono",
     "author_given": "Ekewaka",
     "date": "2025-06-12",
     "lastmod": "2026-10-08",
-    "abstract": "Ekewaka Lono's firsthand account of judicial signaling, interruption while presenting stalking and vehicle attacks, and HPD responses, with sealed-record evidence and oversight failures involving the Hawaii Commission on Judicial Conduct.",
+    "abstract": "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions.",
     "canonical": "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/",
     "section": "investigation",
     "section_label": "Investigations",
@@ -545,9 +545,9 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/wilson-loo-judicial-signaling",
     "license_url": "https://gtcode.com/policies/content-use/",
     "bibtex_key": "lono2025wilsonloojudicial",
-    "bibtex": "@article{lono2025wilsonloojudicial,\n  author  = {Lono, Ekewaka},\n  title   = {Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi},\n  journal = {GTCode.com Investigations},\n  year    = {2025},\n  month   = jun,\n  url     = {https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/},\n  note    = {Last modified 2026-10-08; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/wilson-loo-judicial-signaling}}\n}",
-    "apa": "Lono, E. (2025, June 12). Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi. *GTCode.com Investigations*. https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/ (Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/wilson-loo-judicial-signaling)",
-    "chicago": "Ekewaka Lono. \"Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi.\" *GTCode.com Investigations*, June 12, 2025. https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/. Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/wilson-loo-judicial-signaling."
+    "bibtex": "@article{lono2025wilsonloojudicial,\n  author  = {Lono, Ekewaka},\n  title   = {Wilson Loo: Hearing and Oversight in Hawaiʻi},\n  journal = {GTCode.com Investigations},\n  year    = {2025},\n  month   = jun,\n  url     = {https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/},\n  note    = {Last modified 2026-10-08; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/wilson-loo-judicial-signaling}}\n}",
+    "apa": "Lono, E. (2025, June 12). Wilson Loo: Hearing and Oversight in Hawaiʻi. *GTCode.com Investigations*. https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/ (Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/wilson-loo-judicial-signaling)",
+    "chicago": "Ekewaka Lono. \"Wilson Loo: Hearing and Oversight in Hawaiʻi.\" *GTCode.com Investigations*, June 12, 2025. https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/. Archived at https://github.com/GTCode-Press/publications/tree/main/hawaii-courts/wilson-loo-judicial-signaling."
   },
   "/hawaii-courts/zero-commission-judicial-conduct/": {
     "title": "The Zero Commission",

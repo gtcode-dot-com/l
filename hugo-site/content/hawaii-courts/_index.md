@@ -64,13 +64,13 @@ structured_data_graph:
       name: "The Reporting Duty"
       url: "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/"
     - "@type": "Article"
-      name: "The Nod: Visual Report, Audio Sequence, and Review Gap"
+      name: "The Nod: A Firsthand Courtroom Account"
       url: "https://gtcode.com/hawaii-courts/the-nod-visual-allegation/"
     - "@type": "Article"
       name: "The Two Questions: How One Interview Could Test the Wilson Loo Case"
       url: "https://gtcode.com/hawaii-courts/two-questions-wilson-loo/"
     - "@type": "Article"
-      name: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
+      name: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
       url: "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/"
     - "@type": "Article"
       name: "The Lawyer in the Room"
@@ -154,6 +154,7 @@ modified_display: "October 8, 2026"
 | Hartmann threat, Stanley’s response, and departure concept | [The Threat Report](/hawaii-courts/the-threat-report/) |
 | Kwak’s testimony, diagram, and mock-pistol closing | [The Hypothetical Gun](/hawaii-courts/the-hypothetical-gun/) |
 | Retained counsel, chambers, and plea pressure | [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) |
-| December 2022 hearing | [Wilson Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) |
+| December 2, 2022 courtroom sequence | [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) |
+| Wider hearing and subsequent reporting | [Wilson Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) |
 
 [The Information Trail](/hawaii-courts/information-trail-2015-2022/) examines possible relationships among these events. [Mechanisms of Review Failure](/hawaii-courts/mechanisms-of-review-failure/) supplies general comparisons. The event files remain the sources for what happened; other portfolios require their own evidence.

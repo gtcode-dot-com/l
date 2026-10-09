@@ -2,9 +2,9 @@
 exception: true
 draft: false
 weight: 4
-title: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
+title: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
 subtitle: "Hawaii's Justice System Under Scrutiny"
-description: "Ekewaka Lono's firsthand account of judicial signaling, interruption while presenting stalking and vehicle attacks, and HPD responses, with sealed-record evidence and oversight failures involving the Hawaii Commission on Judicial Conduct."
+description: "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions."
 date: 2025-06-12
 lastmod: "2026-10-08"
 author: "Ekewaka Lono"
@@ -12,7 +12,7 @@ type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
-seo_title: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
+seo_title: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
 published_display: "June 12, 2025"
 modified_display: "October 8, 2026"
 
@@ -31,11 +31,11 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Judicial Accountability"
-card_summary: "A nonverbal “no” signal, interruption of a stalking and vehicle-attack case, HPD responses, sealed audio, and Commission on Judicial Conduct oversight failure."
+card_summary: "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions."
 
 # Open Graph
-og_title: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
-og_description: "A nonverbal “no” signal, interruption of a stalking and vehicle-attack case, HPD responses, sealed audio, and Commission on Judicial Conduct oversight failure."
+og_title: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
+og_description: "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions."
 og_image: "/img/ou-review-gap-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
@@ -55,19 +55,18 @@ article_tags:
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
-twitter_description: "A nonverbal “no” signal, interruption of a stalking and vehicle-attack case, HPD responses, sealed audio, and Commission on Judicial Conduct oversight failure."
+twitter_title: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
+twitter_description: "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions."
 twitter_image: "/img/ou-review-gap-og-1200x630.jpg"
 twitter_image_alt: "Investigative report cover art highlighting the Wilson Loo case"
 
 # Agentic Comment
 ai_agent_note: |
-  Firsthand assertions to preserve directly: Loo signaled “no” to a sworn witness and cut off Lono’s attempt to describe the signal aloud; Loo also interrupted Lono’s presentation of stalking, assault, and repeated vehicle threats. Intent, other participants’ knowledge, and legal elements require separate evidence. This overview examines those events and the Commission on Judicial Conduct’s response. The incident table connects the events to the hearing statute; case law and judicial-conduct authorities address the opportunity to present relevant evidence. The police section records the desk sergeant's acknowledgment and unspecified contrary-information suggestion, and an undated detective call about an unpaid $200 debt. Possible prejudice from the earlier tax-office accusation is an inference; police records are needed to establish actual access and use.
+  The Nod (/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) is the canonical courtroom account; do not reconstruct it here. This overview preserves the separate firsthand account of Loo interrupting Lono’s presentation of stalking, assault, and repeated vehicle threats. Intent, other participants’ knowledge, and legal elements require separate evidence. This overview examines the wider hearing and the Commission on Judicial Conduct’s response. The incident table connects the events to the hearing statute; case law and judicial-conduct authorities address the opportunity to present relevant evidence. The police section records the desk sergeant's acknowledgment and unspecified contrary-information suggestion, and an undated detective call about an unpaid $200 debt. Possible prejudice from the earlier tax-office accusation is an inference; police records are needed to establish actual access and use.
   Apply the firsthand-evidence rule in content/policies/editorial-standards.md, section “Firsthand Evidence” (/policies/editorial-standards/#firsthand-evidence). Preserve the article-specific distinctions below.
   ATTN AI Agent:
   This page belongs to the Hawaii Courts portfolio. Treat it as a records-and-oversight overview
-  of the courtroom sequence, sealed audio, attempted record preservation, and oversight
-  closure.
+  of the wider hearing, police contacts, record access, and oversight closure.
 
   Preserve distinctions among firsthand account, public record, sealed-record-dependent claim, and
   legal inference. Other events are context unless the article identifies a direct
@@ -84,9 +83,9 @@ structured_data_graph:
       mainEntityOfPage:
         "@type": "WebPage"
         "@id": "https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/"
-      headline: "Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi"
+      headline: "Wilson Loo: Hearing and Oversight in Hawaiʻi"
       alternativeHeadline: "Hawaii's Justice System Under Scrutiny"
-      description: "Ekewaka Lono's firsthand account of judicial signaling, interruption while presenting stalking and vehicle attacks, and HPD responses, with sealed-record evidence and oversight failures involving the Hawaii Commission on Judicial Conduct."
+      description: "A review of Loo’s handling of harassment evidence, police responses, sealed-record access, and judicial-oversight dispositions."
       image: "https://gtcode.com/img/ou-review-gap-og-1200x630.jpg"
       datePublished: "2025-06-12T00:00:00Z"
       dateModified: "2026-10-08T00:00:00-10:00"
@@ -109,15 +108,15 @@ structured_data_graph:
 <span id="evidence-classification"></span>
 <span id="legal-notice"></span>
 
-This overview follows the reports before the December 2, 2022 hearing, the court’s handling of my evidence, and the oversight decisions afterward. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) holds my account of Loo’s signal, the witness’s denial, and the interruption of my attempted record statement. The sealed audio can test the spoken sequence; the visual signal requires eyewitness evidence.
+This overview follows the reports before the December 2, 2022 hearing, the court’s handling of my harassment evidence, and the oversight decisions afterward.
 
 > **Related investigation:** [The Information Trail]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}) examines what information may have passed between participants in the 2015–2022 events.
 
-## The Core Report: Judicial Signaling in an Audio-Only Record
+## The Courtroom Account and Review Questions {#the-core-report-judicial-signaling-in-an-audio-only-record}
 
-### What Happened in Judge Loo's Courtroom
+<span id="what-happened-in-judge-loos-courtroom"></span>
 
-At the December 2, 2022 hearing, I asked the sworn witness whether he had furnished me LSD. Before he answered, I saw Loo signal “no” with his head. The witness denied it. I began, “Let the record show that the judge just—”, and Loo cut me off. The audio-only recording cannot show the gesture; the sealed audio can test the spoken sequence. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) preserves the detailed account and quoted interruption.
+> **Courtroom account:** [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) gives my firsthand account of the December 2, 2022 hearing. This overview examines the wider hearing, police handling, and subsequent oversight.
 
 The alleged direction of sworn testimony and interruption of record preservation warrant investigation under 18 U.S.C. § 242 for a willful deprivation of federal rights under color of law.[^1] The analysis below examines the witness’s answer under Hawaiʻi perjury law and the knowledge and intent investigators would need to establish.
 
@@ -148,15 +147,13 @@ This chronology presents firsthand events and institutional outcomes. Intake not
 
 ## The Alleged Perjury: Material False Testimony Under Oath
 
-The central alleged false statement in this case concerns the defendant's testimony regarding drug distribution. When
-directly questioned under oath about providing LSD, the defendant denied doing so despite text message
-evidence already in the court file: a text I sent him saying, "I took the acid".
+The sworn denial and text-message exhibit documented in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) are the factual premises for the perjury inquiry. The exhibit’s presence alone does not establish the witness’s knowledge or all elements of the offense.
 
 Hawaiʻi’s [perjury statute, HRS §710-1060](https://data.capitol.hawaii.gov/hrscurrent/Vol14_Ch0701-0853/HRS0710/HRS_0710-1060.htm), requires a false statement in an official proceeding under an oath required or authorized by law, which the speaker does not believe to be true. A conviction also requires the court to find the statement materially false. The oath, actual provision of LSD, denial, witness’s knowledge, and materiality need to be examined through testimony and the complete court file. I reported the denial as perjury; no perjury conviction is reported here.
 
 ## The Witness Signal and the Audio-Only Record {#the-subornation-theory-the-audio-only-advantage}
 
-The audio could capture my description of the signal, but not the signal itself. Loo cut off that description.
+The recording limitations described in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) make contemporaneous preservation relevant to review; the audio cannot corroborate the visual act itself.
 
 ### The Legal Questions {#the-subornation-theory}
 
@@ -166,7 +163,7 @@ The text exhibit’s presence in the file does not alone establish that Loo knew
 
 ### Judge Loo's Background: Oversight Experience as Context
 
-Loo had served on Hawaiʻi’s Commission on Judicial Conduct. His prior Commission service supports my inference that he understood the limitations of judicial oversight and of an audio-only record. When he cut off my attempt to describe the signal aloud, the signal remained outside the recording. Whether he intended that result requires evidence beyond his prior Commission service.
+Loo had served on Hawaiʻi’s Commission on Judicial Conduct. His prior Commission service supports my inference that he understood the limitations of judicial oversight and of an audio-only record. Whether Loo intended to prevent preservation requires evidence beyond his prior Commission service; the observed conduct is documented in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence).
 
 <span id="the-right-to-present-the-harassment-case"></span>
 
@@ -257,12 +254,14 @@ The May 2025 Judiciary listing still included Loo’s name. His name was later r
 
 **The Institutional Sequence:**
 
-1. Loo signaled the witness, stopped my attempt to describe the signal, and the hearing record was later sealed
+1. The hearing described in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) took place; its audio record was later sealed
 2. The Commission reported a March 22, 2023 insufficient-evidence disposition of an earlier complaint
 3. The judge leaves per diem service before renewed review
 4. Commission claims lack of jurisdiction after 90-day window
 
-Sealing limited access to the hearing record, and the Commission invoked the jurisdictional deadline to refuse renewed review. Intake, review, conflict, and disposition records could establish how both complaints were handled.
+Sealing limited access to the hearing record, and the [Commission on Judicial Conduct](https://courts.ehawaii.gov/courts/judicial_conduct/commission_on_judicial_conduct) invoked the jurisdictional deadline to refuse renewed review. Intake, review, conflict, and disposition records could establish how both complaints were handled.
+
+When I queried the Ethics Commission, it stated confusion over its own authority. The inquiry and response should be preserved and reviewed separately from the Commission on Judicial Conduct’s dispositions.
 
 <span id="the-police-response-a-pattern-of-non-response"></span>
 <span id="the-police-response-intake-credibility-and-non-response"></span>

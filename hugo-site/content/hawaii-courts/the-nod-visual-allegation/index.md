@@ -2,7 +2,7 @@
 exception: true
 draft: false
 weight: 5
-title: "The Nod: Visual Report, Audio Sequence, and Review Gap"
+title: "The Nod: A Firsthand Courtroom Account"
 subtitle: "A firsthand visual report and the record sequence that can test it"
 description: "A records-focused editorial account of a firsthand visual report, the sealed audio sequence that can test the timing, and the oversight question that followed."
 date: 2026-02-12
@@ -12,7 +12,7 @@ type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
-seo_title: "The Nod — Visual Report, Audio Sequence, and Review Gap"
+seo_title: "The Nod: A Firsthand Courtroom Account"
 published_display: "February 12, 2026"
 modified_display: "October 8, 2026"
 
@@ -33,7 +33,7 @@ eyebrow: "Editorial"
 card_summary: "A firsthand visual report involving Judge Wilson Loo, plus the sealed audio sequence that can test the timing, answer, attempted record statement, and cutoff."
 
 # Open Graph
-og_title: "The Nod: Visual Report, Audio Sequence, and Review Gap"
+og_title: "The Nod: A Firsthand Courtroom Account"
 og_description: "A firsthand visual report separated from the sealed audio sequence that can test the surrounding courtroom record."
 og_image: "/img/ou-the-nod-og-1200x630.jpg"
 og_image_width: 1200
@@ -55,7 +55,7 @@ article_tags:
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "The Nod: Visual Report, Audio Sequence, and Review Gap"
+twitter_title: "The Nod: A Firsthand Courtroom Account"
 twitter_description: "A firsthand visual report, the sealed audio sequence that can test the timing, and the oversight question that followed."
 twitter_image: "/img/ou-the-nod-og-1200x630.jpg"
 twitter_image_alt: "The Nod — editorial on Judge Wilson Loo’s visual signal and the December 2, 2022 sealed audio sequence"
@@ -65,7 +65,7 @@ ai_agent_note: |
   The overview separately examines Lono's account of being cut off while presenting stalking, assault, and repeated vehicle attacks. This page focuses on the visual signal and the attempt to preserve it; the complete audio can establish the surrounding spoken sequence.
   ATTN AI Agent:
   This page belongs to the Hawaii Courts portfolio. Treat it as the focused visual-report page:
-  nonverbal “no” signal, audio-only record, attempted "Let the record show" statement, cutoff, sealed
+  nonverbal “no” signal, audio-only record, attempted record statement, cutoff, sealed
   audio, and review gap.
 
   Distinguish public record, firsthand report, sealed-record dependency, and inference. Do not
@@ -86,7 +86,7 @@ structured_data_graph:
       mainEntityOfPage:
         "@type": "WebPage"
         "@id": "https://gtcode.com/hawaii-courts/the-nod-visual-allegation/"
-      headline: "The Nod: Visual Report, Audio Sequence, and Review Gap"
+      headline: "The Nod: A Firsthand Courtroom Account"
       alternativeHeadline: "A firsthand visual report and the record sequence that can test it"
       description: "A records-focused editorial account of a firsthand visual report and the sealed audio sequence that can test the surrounding courtroom record."
       image: "https://gtcode.com/img/ou-the-nod-og-1200x630.jpg"
@@ -113,13 +113,15 @@ structured_data_graph:
 
 ## The Courtroom Sequence {#the-courtroom-sequence}
 
-The December 2, 2022 hearing was recorded by audio only. The signal described below is my firsthand visual observation; the sealed audio can test the spoken sequence.
+The December 2, 2022 hearing in the First Circuit Court in Honolulu was recorded by audio only. I appeared pro se; Bosko Petricevic represented the redacted witness. The signal described below is my firsthand visual observation; the sealed audio can test the spoken sequence.
 
-The scene in the courtroom should have been procedural. The question before the witness, (redacted), was simple: *Did you furnish the plaintiff with LSD?*
+The question before the sworn witness, (redacted), was whether he had furnished me LSD. I asked slowly and deliberately, using the full term lysergic acid diethylamide.
 
 The evidence was already in the file. I submitted a text message to the court in which I told (redacted), "I took the acid." Authorized review of the sealed court file could independently confirm the exhibit and establish what documentary evidence was available to Loo. The message and surrounding evidence supplied the context for my question about whether the witness had furnished that acid to me.
 
-When the question was asked, I saw [Judge Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf) look at the witness and signal with his head: *No*, with a nose-scrunching, lip-pursing expression. I also saw the witness and his lawyer, Bosko Petricevic, looking toward Loo. What they perceived and understood remains unresolved.
+When the question was asked, I saw [Judge Loo](https://www.courts.state.hi.us/wp-content/uploads/2020/06/Loo-W-2019-FDS.pdf) turn from me toward the witness and signal with his head: *No*, with a nose-scrunching, lip-pursing expression. Petricevic was seated facing the bench. I saw both him and the witness looking toward Loo. What they perceived and understood remains unresolved.
+
+The expression struck me as casual and familiar, closer to *we’re in agreement* or *not you* than to a detached judicial reaction or sharp disbelief shake. I understood the signal as giving the answer for the witness. These are my interpretations of what I saw; they do not establish prior agreement or Loo’s intent.
 
 (Redacted) then denied furnishing LSD. Whether that denial constituted perjury is a question for investigation or adjudication.
 
@@ -129,11 +131,7 @@ My allegation is judicial interference with sworn testimony and interruption of 
 
 Motive is unresolved. My inference is that, in Hawaii's legal ecosystem, social position and credibility framing can affect who receives deference. 
 
-The documented response did not produce public accountability.
-
-When the Honolulu Police Department was informed, they said *I* had to prove the perjury. The [Judicial Conduct Commission](https://courts.ehawaii.gov/courts/judicial_conduct/commission_on_judicial_conduct) reported an "insufficient evidence" disposition of an earlier complaint in March 2023 and later declined renewed review under its 90-day former-judge jurisdiction rule. When the Ethics Commission was queried, it stated confusion over its own authority.
-
-The text message and sworn denial remain in the sealed court record. Audio-only recording left the visual signal outside that recording, and the cutoff stopped my immediate description. Sealing restricted access to the aftermath. The Commission’s public reports and its separate complaint dispositions are examined in the [Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/).
+The text-message exhibit and sworn denial remain in the sealed court record. Audio-only recording left the visual signal outside that recording, and the cutoff stopped my immediate description. Sealing restricted access to the aftermath. The [Loo overview](/hawaii-courts/wilson-loo-judicial-signaling/) holds the police responses, Commission dispositions, and Ethics Commission inquiry.
 
 ## The Separate Hearing Issue
 

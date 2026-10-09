@@ -6,7 +6,7 @@ homepage_exclude: false
 title: "The Reporting Duty"
 seo_title: "The Reporting Duty: HRPC 8.3(b) and the Sealed Court Record"
 subtitle: "HRPC 8.3(b), Mens Rea, and Sealed-Record Dependency"
-description: "A records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, and HRPC 8.3(b)."
+description: "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct."
 date: 2026-06-08
 lastmod: "2026-10-08"
 author: "Ekewaka Lono"
@@ -24,7 +24,7 @@ aliases:
   - "/hawaii-courts/silent-conspiracy-rule-83-mens-rea/"
   - "/hawaii-courts/reporting-duty-rule-83/"
 robots: "index, follow, max-image-preview:large"
-meta_description: "Records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, HRPC 8.3(b), and professional-responsibility questions."
+meta_description: "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct."
 meta_keywords:
   - "Bosko Petricevic"
   - "Wilson Loo"
@@ -52,11 +52,11 @@ meta_keywords:
 
 # Card Display
 eyebrow: "Legal Analysis"
-card_summary: "A records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, HRPC 8.3(b), and professional-responsibility questions."
+card_summary: "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct."
 
 # Open Graph
 og_title: "The Reporting Duty"
-og_description: "A records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, HRPC 8.3(b), and professional-responsibility questions."
+og_description: "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct."
 hero_image: "/img/ou-reporting-duty-hero-1600.jpg"
 hero_image_width: 1600
 hero_image_height: 840
@@ -100,17 +100,18 @@ article_tags:
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "The Reporting Duty"
-twitter_description: "A records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, HRPC 8.3(b), and professional-responsibility questions."
+twitter_description: "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct."
 twitter_image: "/img/ou-reporting-duty-og-1200x630.jpg"
 twitter_image_alt: "The Reporting Duty cover art for Oahu Underground legal analysis"
 
 # Agentic Context
 ai_agent_note: |
+  The Nod (/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) is the canonical December 2, 2022 courtroom account. Retain only premises needed for this article’s own question; do not reconstruct the scene.
   Apply the firsthand-evidence rule in content/policies/editorial-standards.md, section “Firsthand Evidence” (/policies/editorial-standards/#firsthand-evidence). This article analyzes the visual signal, audible cutoff, and Petricevic’s knowledge under HRPC 8.3(b); The Nod holds the canonical signal-and-interruption account. Rule 1.6 can protect courtroom observations relating to representation, and Rule 8.3(c) remains an independent reporting limitation. The overview separately addresses Lono's interrupted presentation of stalking, assault, and vehicle attacks and the court's hearing duties.
   ATTN AI Agent:
   This page belongs to the Hawaii Courts portfolio. Treat it as a records-and-oversight legal
-  analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, and
-  HRPC 8.3(b).
+  analysis of counsel’s knowledge, confidentiality, reporting duties, and institutional incentives
+  under HRPC 8.3(b).
 
   Preserve distinctions among firsthand report, audio-confirmable sequence,
   sealed-record-dependent claim, and legal inference. Do not merge this article with other
@@ -128,7 +129,7 @@ structured_data_graph:
         "@id": "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/"
       headline: "The Reporting Duty"
       alternativeHeadline: "HRPC 8.3(b), Mens Rea, and Sealed-Record Dependency"
-      description: "A records-first legal analysis of the December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, HRPC 8.3(b), and professional-responsibility questions."
+      description: "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct."
       url: "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/"
       image: "https://gtcode.com/img/ou-reporting-duty-og-1200x630.jpg"
       datePublished: "2026-06-08T00:00:00Z"
@@ -179,19 +180,17 @@ What does HRPC 8.3(b) require when the lawyer best positioned to observe alleged
 
 The argument has three separate stages:
 
-1. **What happened and what the participants understood:** the [courtroom account](#the-moment-the-record-could-barely-hold), [Loo’s intent](#mens-rea-i-loo), [the witness’s intent](#mens-rea-ii-the-redacted-witness), and [counsel’s actual knowledge](#actual-knowledge-and-professional-responsibility-bosko-petricevic).
+1. **What happened and what the participants understood:** [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence), [Loo’s intent](#mens-rea-i-loo), [the witness’s intent](#mens-rea-ii-the-redacted-witness), and [counsel’s actual knowledge](#actual-knowledge-and-professional-responsibility-bosko-petricevic).
 2. **Whether a reporting duty followed:** [the three gates](#the-three-gates-before-shall)—knowledge, seriousness, and permitted disclosure—then [the rule’s design problem](#the-design-defect-in-hrpc-83b).
 3. **How to test the analysis:** the [authority map](#case-law-and-authority-map), [records to retrieve](#records-that-would-clarify), and [strongest innocent reading](#the-strongest-innocent-reading).
 
 The central claim is about incentives: a rule that depends on an opposing lawyer’s knowledge can leave a contested event unclarified. A finding against any participant still requires the evidence and legal elements examined below.
 
-## The Moment the Record Could Barely Hold
+## The Account and the Reporting Question {#the-moment-the-record-could-barely-hold}
 
-At the December 2, 2022 hearing, I asked a sworn witness whether he had furnished me LSD. I saw Judge Loo signal “no” before the witness denied it. I began, “Let the record show that the judge just—”, and Loo cut me off. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) holds the full firsthand account.[^1]
+> **Courtroom account:** [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) gives my firsthand account of the December 2, 2022 hearing. This article examines participants’ knowledge and intent, confidentiality, and the reporting obligation.[^1]
 
-I appeared pro se; Petricevic represented the witness. I saw both men looking toward Loo. That observation identifies an opportunity to perceive the signal; what counsel saw and understood is the professional-responsibility question examined here.
-
-The sealed audio can test the spoken sequence and sealing request. It cannot show the gesture. The witness remains redacted because the subject here is the court process and the reporting rule.
+Petricevic represented the witness; I had no independent counsel present. His opportunity to perceive the conduct is distinct from what he actually saw and understood. The witness remains redacted because the subject here is the court process and the reporting rule.
 
 ## Scope and Method
 
@@ -209,15 +208,13 @@ The answer was material to the injunction proceeding: it bore directly on the wi
 
 Before the hearing, Petricevic offered a cross-injunction resolution and urged me to accept it. Acceptance would have avoided live testimony and the LSD question, along with the disputed answer and record-preservation problem that followed. The proposal’s purpose is unresolved; correspondence and his explanation could establish why it was made.
 
-I understood Loo’s signal as giving the answer for the witness. His duty of neutrality applied while the witness answered.
+The neutrality question concerns a judge directing a pending answer, regardless of whether the witness’s underlying answer was true.
 
 ## Mens Rea I: Loo
 
 Loo’s intent requires evidence beyond the head movement itself. Timing, line of sight, courtroom layout, the question, exhibit, answer, immediate cutoff, and sealing sequence all bear on that inquiry.
 
-I asked the question slowly and deliberately, using the full term lysergic acid diethylamide. Loo turned from me toward the witness. His “no” signal matched a specific possible answer: no, I did not furnish LSD.
-
-The expression struck me as casual and familiar, closer to *we’re in agreement* or *not you* than to a detached judicial reaction. That is how I read it. It does not establish that they knew one another’s position beforehand.
+The timing and communicative character described in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) are relevant to distinguishing an instruction from an ordinary reaction. My interpretation of familiarity remains an inference; it does not establish prior agreement.
 
 The strongest innocent reading contests communicative intent while leaving the visual observation itself specific and legally meaningful.
 
@@ -227,14 +224,14 @@ Six explanations and indicators bear on Loo’s intent. Their force depends on t
 | --- | --- | --- |
 | Innocent movement | A head motion or expression without communicative intent | Whether the movement’s direction and timing fit a physical reaction rather than an answer |
 | Courtroom management | A ruling, admonishment, relevance decision, or interruption directed at me | Whether it explains a “no” gesture toward the witness before the pending answer |
-| Disbelief or body language | A reaction evaluating the claim before the judge | My perception was a casual, lip-pursing expression of social alignment, familiar and pre-assessed, rather than a sharp disbelief shake. Eyewitness accounts must test that interpretation. |
+| Disbelief or body language | A reaction evaluating the claim before the judge | Whether eyewitness evidence supports the expression and perceived familiarity described in The Nod, rather than an ordinary reaction of disbelief |
 | Communicative signal | Nonverbal instruction to a sworn witness about how to answer | Whether the gesture communicated a desired answer to the material question |
 | Consciousness of significance | An interruption intended to prevent preservation of the signal | Whether Loo understood what I was trying to record and intended to stop it |
 | Sealing as consequence | Restricted outside access to the recorded aftermath | The basis for sealing and its effect on reviewability; legitimate sealing alone proves no illicit intent |
 
 In my assessment, innocent-movement explanations become harder to sustain against the combined timing, direction, answer, and immediate interruption. That is an inference to test, not a substitute for testimony.
 
-The sealed audio can test the question, denial, attempted record statement, cutoff, and sealing request. It cannot show Loo’s eyes, head, face, or intent. Intent must be inferred from the totality of circumstances.
+The sealed audio could establish timing and courtroom control; it cannot establish visual conduct or intent. Those questions require eyewitness evidence and assessment of the totality of circumstances.
 
 The distinction matters because judicial discipline and federal criminal law operate at different mens rea thresholds. A judicial-conduct analysis asks whether the conduct violated standards of impartiality, fairness, decorum, and public confidence in the judiciary.[^3] A federal Section 242 prosecution requires proof of willfulness and the deprivation of a clearly established federal right under color of law.[^4] The same courtroom event can be serious enough to warrant discipline and still fall short of federal criminal proof.
 
@@ -286,9 +283,9 @@ The nickname matters because HRPC 8.3(b) deploys mandatory language for judicial
 
 To call a report “snitching” is to reframe a lawyer’s duty to the court and the public as betrayal. The pressure need never be made explicit. In a small legal community, lawyers may absorb the lesson indirectly: reporting serious misconduct is mandatory in the rulebook and socially dangerous in the room. “Shall” commands one thing. The nickname warns against it.
 
-Gate one is knowledge. Hawaii's professional rules preserve the actual-knowledge requirement, though actual knowledge may be inferred from circumstances.[^10] The distinction is consequential. Actual knowledge does not mean confessed subjective certainty, and "I was not certain" ought not defeat the rule where the surrounding facts support an inference that the lawyer knew what he saw and understood its significance. Yet actual knowledge remains a demanding threshold where the act is visual, fleeting, nonverbal, and beneficial to the lawyer's client. A lawyer may characterize a witnessed signal as mere movement. He may characterize a facial expression as noncommunicative. He may acknowledge hearing the attempted "Let the record show..." statement without crediting the underlying visual claim. Each position preserves ambiguity.
+Gate one is knowledge. Hawaii's professional rules preserve the actual-knowledge requirement, though actual knowledge may be inferred from circumstances.[^10] The distinction is consequential. Actual knowledge does not mean confessed subjective certainty, and "I was not certain" ought not defeat the rule where the surrounding facts support an inference that the lawyer knew what he saw and understood its significance. Yet actual knowledge remains a demanding threshold where the act is visual, fleeting, nonverbal, and beneficial to the lawyer's client. A lawyer may characterize a witnessed signal as mere movement. He may characterize a facial expression as noncommunicative. He may acknowledge hearing the attempted record statement without crediting the underlying visual claim. Each position preserves ambiguity.
 
-A serious counterargument exists here, and it deserves a direct answer. Knowledge under the rules "may be inferred from circumstances," and persuasive professional-responsibility authority from other jurisdictions construes the reporting trigger objectively rather than subjectively. In *In re Riehlmann*, the Louisiana Supreme Court held that a lawyer possesses reportable knowledge when "a reasonable lawyer under the circumstances would form a firm belief that the conduct in question had more likely than not occurred," and stated expressly that the standard is "measured by an objective standard that is not tied to the subjective beliefs of the lawyer in question."[^11] In *In re Himmel*, the Illinois Supreme Court suspended a lawyer for one year for failing to report another lawyer's known, unprivileged misconduct, holding the duty mandatory notwithstanding the client's preference for silence, after finding the information unprivileged.[^12] Both decisions arose under the lawyer-on-lawyer branch of the reporting rule rather than the judicial branch; they are analogies, not Hawaii law. *Riehlmann*, moreover, arose from an explicit verbal confession retained for years, so its analogy to a fleeting visual courtroom event carries substantial factual-posture limits and leaves Hawaii's knowledge standard in control. Yet if a wide, unambiguous no-nod immediately preceded a sworn denial and was followed at once by a litigant's attempt to make a record, the out-of-state reasoning renders the "I could not be sure" position considerably harder to maintain—even as HRPC continues to require actual knowledge or knowledge inferred from circumstances. The escape hatch may be smaller than a purely subjective account suggests. What props it open in this fact pattern is the combined effect of a visual-only act, a conflicted observer, an audio-only record, and a seal: the very circumstances from which an outside reviewer would infer knowledge are the circumstances the seal removes from outside review.
+A serious counterargument exists here, and it deserves a direct answer. Knowledge under the rules "may be inferred from circumstances," and persuasive professional-responsibility authority from other jurisdictions construes the reporting trigger objectively rather than subjectively. In *In re Riehlmann*, the Louisiana Supreme Court held that a lawyer possesses reportable knowledge when "a reasonable lawyer under the circumstances would form a firm belief that the conduct in question had more likely than not occurred," and stated expressly that the standard is "measured by an objective standard that is not tied to the subjective beliefs of the lawyer in question."[^11] In *In re Himmel*, the Illinois Supreme Court suspended a lawyer for one year for failing to report another lawyer's known, unprivileged misconduct, holding the duty mandatory notwithstanding the client's preference for silence, after finding the information unprivileged.[^12] Both decisions arose under the lawyer-on-lawyer branch of the reporting rule rather than the judicial branch; they are analogies, not Hawaii law. *Riehlmann*, moreover, arose from an explicit verbal confession retained for years, so its analogy to a fleeting visual courtroom event carries substantial factual-posture limits and leaves Hawaii's knowledge standard in control. Yet if the circumstances described in The Nod support an inference of actual perception and understanding, the out-of-state reasoning renders the "I could not be sure" position considerably harder to maintain—even as HRPC continues to require actual knowledge or knowledge inferred from circumstances. The escape hatch may be smaller than a purely subjective account suggests. What props it open in this fact pattern is the combined effect of a visual-only act, a conflicted observer, an audio-only record, and a seal: the very circumstances from which an outside reviewer would infer knowledge are the circumstances the seal removes from outside review.
 
 The question and its documentary basis bear on what a trained observer could understand from a “no” signal immediately before the answer. They do not resolve whether Petricevic perceived it or had the actual knowledge the rule requires.
 
@@ -366,7 +363,7 @@ And it would impose an affirmative preservation duty: a lawyer who observes pote
 
 A contemporaneous-preservation duty would accomplish more than preserving access. It would preserve evidence bearing on intent, knowledge, timing, line of sight, perceived communicative content, uncertainty, and the observer's immediate understanding. That matters because later institutions cannot fairly assess intent if the only trained observer's memory is permitted to dissolve into ambiguity after the audio has been sealed.
 
-The preservation point is not abstract. My attempted "Let the record show..." statement was itself an attempt to translate a visual courtroom event into an audio record, and the cutoff is precisely why third-party preservation matters.
+My interrupted attempt at contemporaneous preservation, documented in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence), is the case-specific premise for an independent preservation mechanism.
 
 The objections are real, and they point toward guardrails rather than abandonment. The category should turn on materiality, witness-facing conduct, timing during a pending answer, line of sight, and contemporaneous preservation facts. A calendar-call grimace, a ruling from the bench, or ordinary courtroom friction with counsel remains outside the category. A judge turning toward a witness and delivering a no-nod before a pending answer belongs to a different class. Reports can be confidential, confined to observed courtroom conduct, routed to an appropriate authority, and screened for bad faith. Contemporaneous preservation can record uncertainty as uncertainty. The answer to the weaponization risk is disciplined intake, confidentiality, and sanctions for bad-faith use.
 
@@ -398,11 +395,7 @@ The record-access problem is concrete. The equilibrium is a proposed explanation
 
 The sealed audio is the central evidence.
 
-The audio cannot show the visual nod. What it can show is the procedural reaction to my attempt to preserve the nod: the exact LSD question, whether the witness denied, whether I immediately attempted to create a record, whether Loo cut me off before the visual claim could be spoken, the final remarks and my opportunity to respond, and the manner in which the sealing request entered the proceeding. It can test timing, tone, sequence, interruption, and courtroom control.
-
-The yes-or-no structure of the question magnifies the audio's importance. The audio can show whether I reacted immediately after the witness's answer in the manner of someone attempting to preserve a visual courtroom event. That timing matters because the LSD-furnishing question had just compelled a material answer.
-
-The audio is thus the objective witness to that portion of the event the audio is capable of holding.
+The audio can test the timing of my attempted preservation, the court’s response, final remarks, my opportunity to answer, and the sealing request. It cannot capture the visual signal. The yes-or-no question makes contemporaneous timing relevant to whether my response concerned the pending testimony. [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) supplies the account against which those records should be compared.
 
 Sealing converts that witness into an institutional black box. The sealed record permits every actor to demand proof while foreclosing public review of the proof-adjacent sequence. The public cannot inspect the answer, the attempted record statement, the cutoff, or the sealing request. The disciplinary bodies can characterize the absence of a public record as a review problem. The lawyer can characterize the absence of visible proof as a knowledge problem. The judge can characterize the visual act as a litigant's characterization.
 
@@ -487,7 +480,7 @@ The path to clarification is procedurally ordinary:
 8. Ask Petricevic, under proper authority, what he saw and understood.
 9. Ask whether Petricevic performed an HRPC 8.3(b) analysis.
 10. Ask whether any report was made.
-11. Ask Loo what the movement was and why he cut off the attempted "Let the record show..." statement.
+11. Ask Loo what the movement was and why he cut off the attempted record statement.
 12. Identify whether the Commission on Judicial Conduct, ODC, any court administrator, or any law-enforcement body ever reviewed the sealed audio.
 13. Produce written reasons for any declination that state which primary records were reviewed.
 14. Document and preserve the specific context, date, audience, and exact wording of the redacted witness's reported pre-trial statement referencing a federal contact.
@@ -505,9 +498,7 @@ Those records would clarify the dispute without requiring the public to accept m
 
 A fair analysis must state the best version of the opposing position. The strongest version can accept my perception of the room without reducing it to generic confusion—I saw what I saw—and it concentrates instead on intent and institutional caution.
 
-As to intent, the most favorable account available to Loo is generic courtroom reaction: the claim that the movement carried no communicative purpose and that the witness was expected to answer independently. That reading grows harder to maintain against the sequence described here: I asked a deliberate yes-or-no exposure question, Loo turned toward the witness, the witness was looking toward Loo, and Loo gave a no-nod before the denial.
-
-The strongest innocent reading must also account for the quality of the expression. My account describes a casual, familiar, socially aligned expression—a *not you* look—rather than a detached adjudicative reaction. That quality alone proves no corrupt intent, but it gives the innocent account something specific to answer. An investigator would still be required to ask why, during the LSD-furnishing question, the judge turned toward the witness and delivered a casual negative signal before the witness denied. A casual, socially aligned expression preceding a yes-or-no denial renders the innocent reading harder to sustain, without requiring that the allegation be proved.
+As to intent, the most favorable account available to Loo is generic courtroom reaction without communicative purpose. That explanation must address the timing, direction, and expression documented in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) and examined in [Mens Rea I](#mens-rea-i-loo). Those circumstances make the innocent account harder to sustain in my assessment; they do not themselves establish corrupt intent.
 
 As to caution, a lawyer who reports a sitting judge on a contested allegation places at risk his client's interests, his standing before the local bench, and his exposure to sanction for a frivolous or weaponized complaint. The limited scope of Rule 8.3(b) exists precisely to prevent every adverse gesture from becoming a discipline file. Rule 1.6 requires examination of the information a report would disclose and any lawful basis for disclosure. None of this should be waved away.
 
@@ -521,7 +512,7 @@ The rule says "shall" when its requirements are met. The incentive model asks wh
 
 ## Sources and Notes
 
-[^1]: Oahu Underground/GTCode, [homepage](https://gtcode.com/) and the [Hawaii Courts Accountability Files](https://gtcode.com/hawaii-courts/), including [The Nod](https://gtcode.com/hawaii-courts/the-nod-visual-allegation/), [The Two Questions](https://gtcode.com/hawaii-courts/two-questions-wilson-loo/), [An Open Letter to Bosko Petricevic, Esq.](https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/), [The Lawyer in the Room](https://gtcode.com/hawaii-courts/lawyer-in-the-room-bosko-petricevic/), [Wilson Loo: A Nonverbal ‘No’ Signal and Oversight Failure in Hawaiʻi](https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/), [The Zero Commission](https://gtcode.com/hawaii-courts/zero-commission-judicial-conduct/), [Mechanisms of Review Failure](https://gtcode.com/hawaii-courts/mechanisms-of-review-failure/), [The Review Gap](https://gtcode.com/hawaii-courts/review-gap-police-judicial-oversight/), and [The Closed Loop](https://gtcode.com/hawaii-courts/closed-loop-oversight-failure/).
+[^1]: Oahu Underground/GTCode, [homepage](https://gtcode.com/) and the [Hawaii Courts Accountability Files](https://gtcode.com/hawaii-courts/), including [The Nod](https://gtcode.com/hawaii-courts/the-nod-visual-allegation/), [The Two Questions](https://gtcode.com/hawaii-courts/two-questions-wilson-loo/), [An Open Letter to Bosko Petricevic, Esq.](https://gtcode.com/hawaii-courts/open-letter-bosko-petricevic/), [The Lawyer in the Room](https://gtcode.com/hawaii-courts/lawyer-in-the-room-bosko-petricevic/), [Wilson Loo: Hearing and Oversight in Hawaiʻi](https://gtcode.com/hawaii-courts/wilson-loo-judicial-signaling/), [The Zero Commission](https://gtcode.com/hawaii-courts/zero-commission-judicial-conduct/), [Mechanisms of Review Failure](https://gtcode.com/hawaii-courts/mechanisms-of-review-failure/), [The Review Gap](https://gtcode.com/hawaii-courts/review-gap-police-judicial-oversight/), and [The Closed Loop](https://gtcode.com/hawaii-courts/closed-loop-oversight-failure/).
 
 [^2]: *Baxter v. Palmigiano*, 425 U.S. 308 (1976), available through [Justia](https://supreme.justia.com/cases/federal/us/425/308/) and [Cornell LII](https://www.law.cornell.edu/supremecourt/text/425/308). The Supreme Court recognized that the Fifth Amendment does not forbid adverse inferences against parties in civil actions when they refuse to testify in response to probative evidence offered against them. This article uses the case only for limited civil-adverse-inference background. Because the witness denied rather than invoked privilege, *Baxter* is secondary. ([archival copy — Justia](/sources/silent-conspiracy-rule-83-mens-rea/Justia_Baxter_v_Palmigiano.html)) ([archival copy — Cornell LII](/sources/silent-conspiracy-rule-83-mens-rea/Cornell_Baxter_v_Palmigiano.html))
 

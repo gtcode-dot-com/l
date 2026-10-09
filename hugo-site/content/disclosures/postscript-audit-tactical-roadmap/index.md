@@ -151,7 +151,7 @@ A successor should preserve what was submitted, to whom, when, any documented re
 
 #### 2. Sealed Records and the Limits of Audio
 
-The December 2, 2022 Wilson Loo hearing illustrates two separate retrieval questions. The head movement is my firsthand visual observation. The sealed courtroom audio could establish the spoken sequence, interruptions, and my attempt to describe the movement on the record; it cannot independently capture the movement itself.
+The hearing documented in [The Nod](/hawaii-courts/the-nod-visual-allegation/#the-courtroom-sequence) illustrates why a successor must pursue visual corroboration and audio-record access as separate retrieval tasks.
 
 A successor should identify the existing recording, any transcript, the sealing order, and the available access process. Access requirements must be checked against those records rather than assumed from whether the reviewer was a party. Independent corroboration of the visual account requires a separate source, such as another observer or a visual recording if one exists. [The Nod](/hawaii-courts/the-nod-visual-allegation/) separates the visual signal from the audio-confirmable sequence.
 
