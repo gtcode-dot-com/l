@@ -12,5 +12,7 @@ Useful starting points:
 - [AI consulting](/consulting/)
 - [Articles](/articles/)
 - [Guides](/guides/)
+{{% repos-visible %}}
 - [Repos](/repos/)
+{{% /repos-visible %}}
 - [News wire](/news/)

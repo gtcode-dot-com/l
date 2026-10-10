@@ -1,0 +1,7 @@
+{{- $text := string . -}}
+{{- if not site.Params.display_repos -}}
+  {{- $text = replaceRE `(?s)\{\{% repos-visible %\}\}.*?\{\{% /repos-visible %\}\}` "" $text -}}
+{{- else -}}
+  {{- $text = replaceRE `\{\{% /?repos-visible %\}\}\n?` "" $text -}}
+{{- end -}}
+{{- return $text -}}

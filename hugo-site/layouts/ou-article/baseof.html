@@ -18,7 +18,7 @@
     {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
     {{- $pageTitle := $active.Params.seo_title | default $active.Title -}}
     {{- $pageTitle = partial "seo/title.html" (dict "title" $pageTitle "siteName" $titleSiteName "max" $titleMax) -}}
-    {{ $rawContent := $active.RawContent | default "" }}
+    {{ $rawContent := (partial "repos-source.html" $active.RawContent) | default "" }}
     {{ $hasMathSyntax := or (in $rawContent "```math") (in $rawContent "$$") (in $rawContent "\\(") (in $rawContent "\\[") }}
     {{ $autoMath := and (ne $page.Section "news") $hasMathSyntax }}
     {{ $enableMath := or $active.Params.math $page.Site.Params.math $autoMath }}
@@ -197,7 +197,7 @@
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/papers/">Papers</a></li>
             <li><a href="/articles/">Articles</a></li>
-            <li><a href="/repos/">Repos</a></li>
+            {{ if site.Params.display_repos }}<li><a href="/repos/">Repos</a></li>{{ end }}
             <li><a href="/news/">News Wire</a></li>
             <li><a href="/agent.txt">agent.txt</a></li>
             <li><a href="/llm.txt">llm.txt</a></li>

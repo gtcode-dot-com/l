@@ -11,6 +11,8 @@ Active public sections:
 
 - [Articles](/articles/)
 - [Guides](/guides/)
+{{% repos-visible %}}
 - [Repos](/repos/)
+{{% /repos-visible %}}
 - [AI research news](/news/ai-research/)
 - [Consulting](/consulting/)

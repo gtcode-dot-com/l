@@ -89,7 +89,7 @@
       </ul>
       <div class="card-actions">
         <a class="btn btn-primary" href="mailto:{{ .Site.Params.contact_email | default "inquire@gtcode.com" }}">Discuss Your Project</a>
-        <a class="btn btn-secondary" href="/repos/">View Open Source Work</a>
+        {{ if site.Params.display_repos }}<a class="btn btn-secondary" href="/repos/">View Open Source Work</a>{{ end }}
         <a class="btn btn-secondary" href="/articles/">Read Technical Writing</a>
       </div>
     </div>

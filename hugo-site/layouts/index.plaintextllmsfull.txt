@@ -53,7 +53,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 - Summary: {{ . }}
 {{- end }}
 
-{{ .RawContent }}
+{{ partial "repos-source.html" .RawContent }}
 
 ---
 {{ end }}
@@ -76,7 +76,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 - Summary: {{ . }}
 {{- end }}
 
-{{ .RawContent }}
+{{ partial "repos-source.html" .RawContent }}
 
 ---
 {{ end }}
@@ -95,7 +95,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 - Summary: {{ . }}
 {{- end }}
 
-{{ .RawContent }}
+{{ partial "repos-source.html" .RawContent }}
 
 ---
 {{ end }}
@@ -111,13 +111,13 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 - Summary: {{ . }}
 {{- end }}
 
-{{ .RawContent }}
+{{ partial "repos-source.html" .RawContent }}
 
 ---
 {{ end }}
 {{ end }}{{ end }}
 
-## Open Source Libraries
+{{ if site.Params.display_repos }}## Open Source Libraries
 
 - Hex.pm Profile: https://hex.pm/users/nshkrdotcom
 - All Repositories: {{ "/repos/" | absURL }}
@@ -131,14 +131,14 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 - Hex.pm: {{ .hex_url }}
 - Documentation: {{ .docs_url }}
 - Source: {{ .repo_url }}
-{{ end }}
+{{ end }}{{ end }}
 {{- with site.GetPage "/consulting" }}
 
 ## Consulting
 
 - URL: {{ .Permalink }}
 
-{{ .RawContent }}
+{{ partial "repos-source.html" .RawContent }}
 {{- end }}
 {{- if $isActiveException -}}
 {{- $pages := slice -}}
@@ -156,7 +156,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 - Summary: {{ . }}
 {{- end }}
 
-{{ .RawContent }}
+{{ partial "repos-source.html" .RawContent }}
 
 ---
 {{ end }}
@@ -173,7 +173,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 - Summary: {{ . }}
 {{- end }}
 
-{{ .RawContent }}
+{{ partial "repos-source.html" .RawContent }}
 
 ---
 {{ end }}

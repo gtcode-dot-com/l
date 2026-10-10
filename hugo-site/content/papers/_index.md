@@ -145,4 +145,6 @@ toward access-aware likely-truth ranking over structured possible worlds. Older
 CNS 2.0 material remains available as prior work on Structured Narrative Objects,
 chirality, evidential entanglement, and dialectical synthesis.
 
+{{% repos-visible %}}
 For technical implementation details, see the [CNS repositories](/repos/) including `dspex`, `pipeline_ex`, and related Elixir/BEAM packages.
+{{% /repos-visible %}}

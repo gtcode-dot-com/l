@@ -12,5 +12,7 @@ Continue through the active public sections:
 - [Consulting](/consulting/)
 - [Articles](/articles/)
 - [Guides](/guides/)
+{{% repos-visible %}}
 - [Repos](/repos/)
+{{% /repos-visible %}}
 - [AI policy](/policies/ai/)

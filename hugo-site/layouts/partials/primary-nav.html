@@ -20,7 +20,7 @@
   <a href="/consulting/" {{ if eq $section "consulting" }}class="active"{{ end }}>AI Consulting</a>
   <a href="/guides/" {{ if eq $section "guides" }}class="active"{{ end }}>Guides</a>
   <a href="/papers/" {{ if eq $section "papers" }}class="active"{{ end }}>Papers</a>
-  <a href="/repos/" {{ if eq $section "repos" }}class="active"{{ end }}>Repos</a>
+  {{ if site.Params.display_repos }}<a href="/repos/" {{ if eq $section "repos" }}class="active"{{ end }}>Repos</a>{{ end }}
   <a href="/articles/" {{ if eq $section "articles" }}class="active"{{ end }}>Articles</a>
   <a href="/news/" {{ if eq $section "news" }}class="active"{{ end }}>News Wire</a>
   {{ else }}
@@ -46,7 +46,7 @@
       <a href="/consulting/" {{ if eq $section "consulting" }}class="active"{{ end }}>AI Consulting</a>
       <a href="/guides/" {{ if eq $section "guides" }}class="active"{{ end }}>Guides</a>
       <a href="/papers/" {{ if eq $section "papers" }}class="active"{{ end }}>Papers</a>
-      <a href="/repos/" {{ if eq $section "repos" }}class="active"{{ end }}>Repos</a>
+      {{ if site.Params.display_repos }}<a href="/repos/" {{ if eq $section "repos" }}class="active"{{ end }}>Repos</a>{{ end }}
       <a href="/articles/" {{ if eq $section "articles" }}class="active"{{ end }}>Articles</a>
       <a href="/news/" {{ if eq $section "news" }}class="active"{{ end }}>News Wire</a>
     </div>

@@ -12,5 +12,7 @@ Current public paths:
 - [AI consulting](/consulting/)
 - [Technical articles](/articles/)
 - [Guides and research notes](/guides/)
+{{% repos-visible %}}
 - [Repositories](/repos/)
+{{% /repos-visible %}}
 - [AI research news](/news/ai-research/)

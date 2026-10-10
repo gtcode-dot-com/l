@@ -38,7 +38,7 @@
 {{ with $active.Description }}{{ . }}
 
 {{ end -}}
-{{ $active.RawContent }}
+{{ (partial "repos-source.html" $active.RawContent) }}
 {{- else -}}
 # {{ .Title }}
 

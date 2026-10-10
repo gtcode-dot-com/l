@@ -608,7 +608,7 @@
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/papers/">Papers</a></li>
             <li><a href="/articles/">Articles</a></li>
-            <li><a href="/repos/">Repos</a></li>
+            {{ if site.Params.display_repos }}<li><a href="/repos/">Repos</a></li>{{ end }}
             <li><a href="/news/">News Wire</a></li>
             {{ end }}
             <li><a href="/index.xml">Site RSS</a></li>
@@ -626,7 +626,7 @@
             <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/papers/">Papers</a></li>
-            <li><a href="/repos/">Repos</a></li>
+            {{ if site.Params.display_repos }}<li><a href="/repos/">Repos</a></li>{{ end }}
             <li><a href="/articles/">Articles</a></li>
             <li><a href="/news/">News Wire</a></li>
             {{ end }}

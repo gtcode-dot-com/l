@@ -7909,6 +7909,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:26.141666+00:00"
   },
+  "news/ai-security/google-domains-impacted-by-recent-cctld-hijacks": {
+    "slug": "news/ai-security/google-domains-impacted-by-recent-cctld-hijacks",
+    "meta_description": "Hackers hijacked the .gh, .sl, and .as ccTLDs and obtained HTTPS certificates for several Google domains. By Ionut Arghire | October 9, 2026 (7:43...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google Domains Impacted by Recent ccTLD Hijacks\",\n  \"description\": \"Hackers hijacked the .gh, .sl, and .as ccTLDs and obtained HTTPS certificates for several Google domains. By Ionut Arghire | October 9, 2026 (7:43...\",\n  \"datePublished\": \"2026-10-10T20:20:43.662137+00:00\",\n  \"dateModified\": \"2026-10-10T20:20:43.662137+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/google-domains-impacted-by-recent-cctld-domain-hijacks\"\n  },\n  \"url\": \"https://www.securityweek.com/google-domains-impacted-by-recent-cctld-domain-hijacks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T20:21:27.810635+00:00"
+  },
   "news/ai-security/google-doubleclick-abused-in-new-malspam-campaign-to-deliver-desckvb-rat": {
     "slug": "news/ai-security/google-doubleclick-abused-in-new-malspam-campaign-to-deliver-desckvb-rat",
     "meta_description": "Ravie Lakshmanan Jun 03, 2026 Malware / Microsoft Defender Cybersecurity researchers have flagged a new malspam campaign that makes use of...",
@@ -8650,6 +8657,13 @@
     "json_ld": "{\n  \"@context\": \"http://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Immigration agents have new technology to identify and track people\",\n  \"description\": \"Immigration and Customs Enforcement (ICE) is acquiring powerful new surveillance tools to identify and monitor people, including facial recognition apps and social media monitoring software, raising privacy and legal concerns.\",\n  \"datePublished\": \"2025-11-13T00:34:57+00:00\",\n  \"dateModified\": \"2025-11-13T00:34:57+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.wncw.org/2025-11-08/immigration-agents-have-new-technology-to-identify-and-track-people\"\n  },\n  \"sameAs\": \"https://www.wncw.org/2025-11-08/immigration-agents-have-new-technology-to-identify-and-track-people\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T00:35:46.845374+00:00"
+  },
+  "news/ai-security/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years": {
+    "slug": "news/ai-security/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years",
+    "meta_description": "Noteworthy stories that might have slipped under the radar: Tensorlake npm SDK compromised, Empire Market co-founder gets 40 years, exposed NVIDIA...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"In Other News: AI Used in Korean Bank Breaches, Poem-Guided Botnet, Empire Admin Gets 40 Years\",\n  \"description\": \"Noteworthy stories that might have slipped under the radar: Tensorlake npm SDK compromised, Empire Market co-founder gets 40 years, exposed NVIDIA...\",\n  \"datePublished\": \"2026-10-10T20:20:41.253392+00:00\",\n  \"dateModified\": \"2026-10-10T20:20:41.253392+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years\"\n  },\n  \"url\": \"https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T20:21:28.909785+00:00"
   },
   "news/ai-security/incendio-a-milano-aree-industriali-in-fiamme": {
     "slug": "news/ai-security/incendio-a-milano-aree-industriali-in-fiamme",
@@ -12606,6 +12620,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T22:14:50.603787+00:00"
   },
+  "news/ai-security/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries": {
+    "slug": "news/ai-security/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries",
+    "meta_description": "Midnight Mimosa is the name given to a malware campaign primarily running preinstalled on low-cost Android devices. By Kevin Townsend | October 9,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Pre-Baked Firmware Malware Hits Budget Android Devices in 150+ Countries\",\n  \"description\": \"Midnight Mimosa is the name given to a malware campaign primarily running preinstalled on low-cost Android devices. By Kevin Townsend | October 9,...\",\n  \"datePublished\": \"2026-10-10T20:20:44.331309+00:00\",\n  \"dateModified\": \"2026-10-10T20:20:44.331309+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries\"\n  },\n  \"url\": \"https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T20:21:28.549806+00:00"
+  },
   "news/ai-security/preparing-for-the-quantum-era-post-quantum-cryptography-webinar-for-security-leaders": {
     "slug": "news/ai-security/preparing-for-the-quantum-era-post-quantum-cryptography-webinar-for-security-leaders",
     "meta_description": "The Hacker News Mar 05, 2026 Encryption / Data Protection Most organizations assume encrypted data is safe. But many attackers are already...",
@@ -15084,6 +15105,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-04T03:26:22.031791+00:00"
   },
+  "news/ai-security/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild": {
+    "slug": "news/ai-security/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild",
+    "meta_description": "The flaws, CVE-2026-105133 and CVE-2026-105134, allow attackers to bypass authentication and inject OS commands. By Ionut Arghire | October 9,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Unpatched AhsayCBS Vulnerabilities Exploited in the Wild\",\n  \"description\": \"The flaws, CVE-2026-105133 and CVE-2026-105134, allow attackers to bypass authentication and inject OS commands. By Ionut Arghire | October 9,...\",\n  \"datePublished\": \"2026-10-10T20:20:44.009536+00:00\",\n  \"dateModified\": \"2026-10-10T20:20:44.009536+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild\"\n  },\n  \"url\": \"https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T20:21:28.191159+00:00"
+  },
   "news/ai-security/unpatched-critical-lmcache-flaw-lets-unauthenticated-attackers-run-code-remotely": {
     "slug": "news/ai-security/unpatched-critical-lmcache-flaw-lets-unauthenticated-attackers-run-code-remotely",
     "meta_description": "Swati Khandelwal Oct 07, 2026 Vulnerability / Artificial Intelligence A critical vulnerability in LMCache , open-source software that speeds up...",
@@ -15202,6 +15230,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"US Declassifies Information on JUMPSEAT Spy Satellites\",\n  \"description\": \"The US National Reconnaissance Office has declassified information about a fleet of spy satellites operating between 1971 and 2006.\",\n  \"datePublished\": \"2026-02-04T12:15:14.829410+00:00\",\n  \"dateModified\": \"2026-02-04T12:15:14.829410+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/02/us-declassifies-information-on-jumpseat-spy-satellites.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/02/us-declassifies-information-on-jumpseat-spy-satellites.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:49.376563+00:00"
+  },
+  "news/ai-security/us-disrupts-chinese-state-sponsored-hacking-tools": {
+    "slug": "news/ai-security/us-disrupts-chinese-state-sponsored-hacking-tools",
+    "meta_description": "Flax Typhoon and other APTs used MicroScan and FishHub to scan and hack US and foreign critical infrastructure. By Ionut Arghire | October 9, 2026...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"US Disrupts Chinese State-Sponsored Hacking Tools\",\n  \"description\": \"Flax Typhoon and other APTs used MicroScan and FishHub to scan and hack US and foreign critical infrastructure. By Ionut Arghire | October 9, 2026...\",\n  \"datePublished\": \"2026-10-10T20:20:47.723198+00:00\",\n  \"dateModified\": \"2026-10-10T20:20:47.723198+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/us-disrupts-chinese-state-sponsored-hacking-tools\"\n  },\n  \"url\": \"https://www.securityweek.com/us-disrupts-chinese-state-sponsored-hacking-tools\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T20:21:27.447603+00:00"
   },
   "news/ai-security/use-gwp-asan-to-detect-exploits-in-production-environments": {
     "slug": "news/ai-security/use-gwp-asan-to-detect-exploits-in-production-environments",

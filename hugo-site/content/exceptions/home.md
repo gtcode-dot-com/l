@@ -21,7 +21,9 @@ The current public site is focused on practical AI architecture, model evaluatio
 - [AI consulting](/consulting/) for production architecture, delivery support, model evaluation, agentic workflows, data pipelines, and operational reliability.
 - [Technical articles](/articles/) on AI systems, engineering practice, interpretability, computational investigation, and applied research.
 - [Guides and research notes](/guides/) for CNS / GCTS work, structured narrative objects, evidence modeling, and implementation experiments.
+{{% repos-visible %}}
 - [Repositories](/repos/) covering software projects, AI tooling, and system prototypes.
+{{% /repos-visible %}}
 - [AI research news](/news/ai-research/) and [AI security news](/news/ai-security/) for curated technical monitoring.
 
 ## Consulting

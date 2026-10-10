@@ -12,5 +12,7 @@ Start here:
 - [AI consulting](/consulting/)
 - [Harness engineering](/articles/harness-engineering/)
 - [Guides](/guides/)
+{{% repos-visible %}}
 - [Repos](/repos/)
+{{% /repos-visible %}}
 - [AI security news](/news/ai-security/)

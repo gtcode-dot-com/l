@@ -50,7 +50,6 @@ structured_data_graph:
           email: inquire@gtcode.com
       sameAs:
         - https://gtcode.com/guides/
-        - https://gtcode.com/repos/
       knowsAbout:
         - LLM evaluation
         - retrieval-augmented generation

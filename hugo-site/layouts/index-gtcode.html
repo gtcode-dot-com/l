@@ -46,6 +46,7 @@
   {{- $missions := $missionData.missions | default slice -}}
   <div class="news-grid mission-grid">
     {{- range $missions }}
+    {{- if or site.Params.display_repos (ne .title_url "/repos/") }}
     <article class="card">
       <div class="card-meta">
         <span class="badge badge-category">{{ .badge }}</span>
@@ -72,6 +73,7 @@
       </div>
       {{- end }}
     </article>
+    {{- end }}
     {{- end }}
   </div>
 

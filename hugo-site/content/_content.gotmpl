@@ -1,0 +1,8 @@
+{{- /* Build the repos section with visibility inherited by scraper-managed pages. */ -}}
+{{- $meta := .Site.Data.repos_section -}}
+{{- $page := dict "path" "repos" "kind" "section" "title" $meta.title "params" $meta -}}
+{{- if not .Site.Params.display_repos -}}
+  {{- $build := dict "render" "never" "list" "never" "publishResources" false -}}
+  {{- $page = merge $page (dict "build" $build "cascade" (dict "build" $build)) -}}
+{{- end -}}
+{{- .AddPage $page -}}

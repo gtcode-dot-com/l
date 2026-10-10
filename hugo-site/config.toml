@@ -88,8 +88,14 @@ relativeURLs = false
     isPlainText = false
     notAlternative = true
 
+  [outputFormats.plaintextAgentsMarkdown]
+    mediaType = "text/markdown"
+    baseName = "AGENTS"
+    isPlainText = true
+    notAlternative = true
+
 [outputs]
-  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextllmsfull", "plaintextai", "plaintexthumans", "plaintextrobots", "newsSitemap"]
+  home = ["HTML", "Markdown", "RSS", "plaintextagent", "plaintextagents", "plaintextllm", "plaintextllms", "plaintextllmsfull", "plaintextai", "plaintexthumans", "plaintextrobots", "newsSitemap", "plaintextAgentsMarkdown"]
   section = ["HTML", "Markdown", "RSS"]
   page = ["HTML", "Markdown"]
 
@@ -102,6 +108,10 @@ relativeURLs = false
   # true = HIDE journalism/disclosures and the homepage note; show consultancy/alternate pages.
   # false = SHOW the original journalism/disclosures and homepage note.
   enable_exceptions = false
+
+  # true = show the Repos menu items and all /repos pages; false = hide them entirely.
+  # Data scraping (data/repos.yaml, content/repos) is unaffected.
+  display_repos = false
 
   exception_fallback_path = "exceptions/fallback"
   enable_agentic_context = true

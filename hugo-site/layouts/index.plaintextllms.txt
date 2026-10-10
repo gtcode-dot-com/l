@@ -62,13 +62,13 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 {{- end }}
 {{ end }}{{ end }}
 
-## Open Source Libraries
+{{ if site.Params.display_repos }}## Open Source Libraries
 
 - [Hex.pm Profile](https://hex.pm/users/nshkrdotcom): Complete Elixir package catalog
 - [All Repositories]({{ "/repos/" | absURL }}): Full library listing
 {{ range site.Data.repos }}
 - [{{ .name }}]({{ .hex_url }}): {{ .summary }}
-{{- end }}
+{{- end }}{{ end }}
 {{- with site.GetPage "/consulting" }}
 
 ## Consulting

@@ -14,16 +14,16 @@
       <div class="not-found-actions">
         <a class="btn btn-primary" href="/">Return home</a>
         <a class="btn btn-secondary" href="/news/">Browse news</a>
-        <a class="btn btn-link" href="/repos/">Repos</a>
+        {{ if site.Params.display_repos }}<a class="btn btn-link" href="/repos/">Repos</a>{{ end }}
       </div>
     </div>
   </section>
-  <script>
+  {{ if site.Params.display_repos }}<script>
     (function () {
       var path = window.location.pathname || "";
       if (path.length > 6 && path.indexOf("/repos/") === 0 && path !== "/repos/") {
         window.location.replace("/repos/");
       }
     })();
-  </script>
+  </script>{{ end }}
 {{ end }}

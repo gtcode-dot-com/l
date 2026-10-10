@@ -55,6 +55,17 @@
     {{- end -}}
     {{- $graph = merge $graph (dict "haspart" $parts) -}}
   {{- end -}}
+  {{- if and site.Params.display_repos (eq .Section "consulting") (reflect.IsMap $graph) -}}
+    {{- $nodes := slice -}}
+    {{- range index $graph "@graph" -}}
+      {{- $node := . -}}
+      {{- with .sameas -}}
+        {{- $node = merge $node (dict "sameas" (. | append ("repos/" | absURL))) -}}
+      {{- end -}}
+      {{- $nodes = $nodes | append $node -}}
+    {{- end -}}
+    {{- $graph = merge $graph (dict "@graph" $nodes) -}}
+  {{- end -}}
   {{- $jsonText = $graph | jsonify -}}
 {{- else -}}
   {{- $jsonText = printf "%v" .Params.structured_data_graph -}}
@@ -184,8 +195,14 @@
 {{- if .Site.Params.author_image }}
   {{- $person = merge $person (dict "image" (replace .Site.Params.author_image "http://" "https://")) -}}
 {{- end -}}
-{{- if .Site.Params.author_sameas }}
-  {{- $person = merge $person (dict "sameAs" .Site.Params.author_sameas) -}}
+{{- $sameAs := slice -}}
+{{- range .Site.Params.author_sameas -}}
+  {{- if or site.Params.display_repos (not (findRE `(?i)^https?://hex\.pm(?:/|$)` .)) -}}
+    {{- $sameAs = $sameAs | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- with $sameAs -}}
+  {{- $person = merge $person (dict "sameAs" .) -}}
 {{- end -}}
 <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
 {{- $sd := .Params.structured_data -}}

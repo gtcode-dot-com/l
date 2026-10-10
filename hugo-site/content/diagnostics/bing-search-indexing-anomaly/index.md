@@ -166,7 +166,9 @@ This status could reflect a page awaiting discovery or an out-of-date diagnostic
 
 This is the exhibit that first indicated the diagnostic pattern was not limited to one article.
 
+{{% repos-visible %}}
 URL Inspection of `gtcode.com/repos/agent_session_manager/` — an open-source Elixir software package page — returns **"Blocked."**
+{{% /repos-visible %}}
 
 ![Bing URL Inspection showing "Blocked" for open-source Elixir package](/img/bing-block-agent-session-manager.webp)
 
@@ -305,7 +307,9 @@ Compare this to the other URL Inspections documented in this investigation:
 |------|---------|-------------|
 | `/` | Homepage | **Discovered but not crawled** |
 | `/hawaii-courts/the-nod-visual-allegation/` | Judicial-accountability investigation | **Blocked** |
+{{% repos-visible %}}
 | `/repos/agent_session_manager/` | Open-source Elixir software docs | **Blocked** |
+{{% /repos-visible %}}
 | `/consulting/` | Services page | **Indexed successfully** |
 
 Bing's own URL Inspection tool reported that a consulting page on `gtcode.com` was indexed and could appear in search results. But Exhibit A showed that, on February 12, 2026, a `site:gtcode.com` search on Bing returned **zero visible results**. Not reduced results. Not filtered results. Zero.

@@ -1,6 +1,6 @@
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $raw := $active.RawContent -}}
+{{- $raw := (partial "repos-source.html" $active.RawContent) -}}
 {{- if gt (len (trim $raw "\n\r\t ")) 0 -}}
 {{- $raw -}}
 {{- else -}}
