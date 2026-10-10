@@ -4451,6 +4451,20 @@
     "agent_callout": "",
     "generated_at": "2026-03-12T00:34:51.952594+00:00"
   },
+  "news/ai-security/anthropic-cuts-live-internet-access-for-internal-ai-tests-after-claude-exploits-injection-flaws": {
+    "slug": "news/ai-security/anthropic-cuts-live-internet-access-for-internal-ai-tests-after-claude-exploits-injection-flaws",
+    "meta_description": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws\",\n  \"description\": \"Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which...\",\n  \"datePublished\": \"2026-10-10T21:29:39.973112+00:00\",\n  \"dateModified\": \"2026-10-10T21:29:39.973112+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T21:30:19.944261+00:00"
+  },
+  "news/ai-security/anthropic-fast-tracks-ai-bug-reports-to-oss-maintainers-taps-11-firms-for-ot-security": {
+    "slug": "news/ai-security/anthropic-fast-tracks-ai-bug-reports-to-oss-maintainers-taps-11-firms-for-ot-security",
+    "meta_description": "OSS Scanner sends unreviewed, model-generated vulnerability reports to open source maintainers that opt in. By Eduard Kovacs | October 9, 2026...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Anthropic Fast-Tracks AI Bug Reports to OSS Maintainers, Taps 11 Firms for OT Security\",\n  \"description\": \"OSS Scanner sends unreviewed, model-generated vulnerability reports to open source maintainers that opt in. By Eduard Kovacs | October 9, 2026...\",\n  \"datePublished\": \"2026-10-10T21:29:37.928174+00:00\",\n  \"dateModified\": \"2026-10-10T21:29:37.928174+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/anthropic-fast-tracks-ai-bug-reports-to-oss-maintainers-taps-11-firms-for-ot-security\"\n  },\n  \"url\": \"https://www.securityweek.com/anthropic-fast-tracks-ai-bug-reports-to-oss-maintainers-taps-11-firms-for-ot-security\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T21:30:19.601946+00:00"
+  },
   "news/ai-security/anthropic-finds-22-firefox-vulnerabilities-using-claude-opus-4-6-ai-model": {
     "slug": "news/ai-security/anthropic-finds-22-firefox-vulnerabilities-using-claude-opus-4-6-ai-model",
     "meta_description": "Ravie Lakshmanan Mar 07, 2026 Browser Security / Artificial Intelligence Anthropic on Friday said it discovered 22 new security vulnerabilities in...",
@@ -5913,6 +5927,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Citizen Lab: Law Enforcement Used Webloc to Track 500 Million Devices via Ad Data\",\n  \"description\": \"Hungarian domestic intelligence, the national police in El Salvador, and several U.S. law enforcement and police departments have been attributed...\",\n  \"datePublished\": \"2026-04-11T08:15:13.772810+00:00\",\n  \"dateModified\": \"2026-04-11T08:15:13.772810+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-11T08:16:06.453299+00:00"
+  },
+  "news/ai-security/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability": {
+    "slug": "news/ai-security/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability",
+    "meta_description": "The security defect, tracked as CVE-2026-107406, could lead to remote code execution or denial-of-service. By Ionut Arghire | October 9, 2026...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Citrix Urges Immediate Patching of Critical NetScaler Vulnerability\",\n  \"description\": \"The security defect, tracked as CVE-2026-107406, could lead to remote code execution or denial-of-service. By Ionut Arghire | October 9, 2026...\",\n  \"datePublished\": \"2026-10-10T21:29:38.333470+00:00\",\n  \"dateModified\": \"2026-10-10T21:29:38.333470+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability\"\n  },\n  \"url\": \"https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T21:30:20.288297+00:00"
   },
   "news/ai-security/claimed-bug-bounty-hunter-likely-used-llm-to-build-phantomraven-npm-stealer": {
     "slug": "news/ai-security/claimed-bug-bounty-hunter-likely-used-llm-to-build-phantomraven-npm-stealer",
@@ -9133,6 +9154,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Friday, October 2nd, 2026 https://isc.sans.edu/podcastdetail/10120, (Fri, Oct 2nd)\",\n  \"description\": \"ISC Stormcast For Friday, October 2nd, 2026 &lt;https://isc.sans.edu/podcastdetail/10120&gt;\",\n  \"datePublished\": \"2026-10-07T04:14:43.562644+00:00\",\n  \"dateModified\": \"2026-10-07T04:14:43.562644+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33390\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33390\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T04:15:50.169541+00:00"
+  },
+  "news/ai-security/isc-stormcast-for-friday-october-9th-2026-https-isc-sans-edu-podcastdetail-10130-fri-oct-9th": {
+    "slug": "news/ai-security/isc-stormcast-for-friday-october-9th-2026-https-isc-sans-edu-podcastdetail-10130-fri-oct-9th",
+    "meta_description": "ISC Stormcast For Friday, October 9th, 2026 &lt;https://isc.sans.edu/podcastdetail/10130&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Friday, October 9th, 2026 https://isc.sans.edu/podcastdetail/10130, (Fri, Oct 9th)\",\n  \"description\": \"ISC Stormcast For Friday, October 9th, 2026 &lt;https://isc.sans.edu/podcastdetail/10130&gt;\",\n  \"datePublished\": \"2026-10-10T21:29:39.136190+00:00\",\n  \"dateModified\": \"2026-10-10T21:29:39.136190+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33412\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33412\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T21:30:19.092376+00:00"
   },
   "news/ai-security/isc-stormcast-for-friday-september-18th-2026-https-isc-sans-edu-podcastdetail-10100-fri-sep-18th": {
     "slug": "news/ai-security/isc-stormcast-for-friday-september-18th-2026-https-isc-sans-edu-podcastdetail-10100-fri-sep-18th",
@@ -14341,6 +14369,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The State of Trusted Open Source Report\",\n  \"description\": \"In December 2025 , we shared the first-ever The State of Trusted Open Source report, featuring insights from our product data and customer base on...\",\n  \"datePublished\": \"2026-04-02T14:15:14.520710+00:00\",\n  \"dateModified\": \"2026-04-02T14:15:14.520710+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/the-state-of-trusted-open-source-report.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/the-state-of-trusted-open-source-report.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T14:16:09.869697+00:00"
+  },
+  "news/ai-security/the-third-party-agent-problem-why-security-built-for-ai-you-chose-misses-the-agents-you-didn-t": {
+    "slug": "news/ai-security/the-third-party-agent-problem-why-security-built-for-ai-you-chose-misses-the-agents-you-didn-t",
+    "meta_description": "In environments studied for the 2026 State of Agent Security Report , roughly 1,280 third-party products now embed AI. About 282 of them sit...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't\",\n  \"description\": \"In environments studied for the 2026 State of Agent Security Report , roughly 1,280 third-party products now embed AI. About 282 of them sit...\",\n  \"datePublished\": \"2026-10-10T21:29:39.657471+00:00\",\n  \"dateModified\": \"2026-10-10T21:29:39.657471+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-10T21:30:20.644998+00:00"
   },
   "news/ai-security/the-truth-about-get-and-http-standards-tue-sep-22nd": {
     "slug": "news/ai-security/the-truth-about-get-and-http-standards-tue-sep-22nd",
