@@ -8,14 +8,14 @@ seo_title: "The Lawyer in the Room: Rule 8.3(b), Reported Judicial Misconduct, a
 subtitle: "What did Petricevic see and understand, and did Rule 8.3(b) require him to report?"
 description: "What did Bosko Petricevic perceive and understand, and did Hawaii’s judicial-misconduct reporting rule require him to act?"
 date: 2026-05-10
-lastmod: "2026-10-08"
+lastmod: "2026-10-10"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 published_display: "May 10, 2026"
-modified_display: "October 8, 2026"
+modified_display: "October 10, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/lawyer-in-the-room-bosko-petricevic/"
@@ -55,7 +55,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-05-10T00:00:00Z"
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-10T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Bosko Petricevic"
@@ -108,7 +108,7 @@ structured_data_graph:
       url: "https://gtcode.com/hawaii-courts/lawyer-in-the-room-bosko-petricevic/"
       image: "https://gtcode.com/img/ou-lawyer-in-the-room-og-1200x630.jpg"
       datePublished: "2026-05-10T00:00:00Z"
-      dateModified: "2026-10-08T00:00:00-10:00"
+      dateModified: "2026-10-10T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -139,7 +139,7 @@ structured_data_graph:
 ---
 <span id="evidence-classification"></span>
 
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}).
+> **Related reading:** [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}) lists participant-knowledge questions and records that could test possible connections.
 
 Bosko Petricevic represented the witness at the December 2, 2022 hearing before Judge Wilson M.N. Loo. This article examines what he perceived and understood, and whether Hawaiʻi’s reporting rule required him to act.
 

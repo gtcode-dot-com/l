@@ -7,14 +7,14 @@ seo_title: "Vincent Kanemoto Closing Argument: The Hypothetical Gun Record"
 subtitle: "Kwak’s charging and trial accounts, the booth diagram, and Kanemoto’s mock-pistol closing"
 description: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
 date: 2026-10-01
-lastmod: "2026-10-09"
+lastmod: "2026-10-10"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 published_display: "October 1, 2026"
-modified_display: "October 9, 2026"
+modified_display: "October 10, 2026"
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/the-hypothetical-gun/"
 robots: "index, follow, max-image-preview:large"
@@ -43,7 +43,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-10-01T00:00:00Z"
-article_modified_time: "2026-10-09T00:00:00-10:00"
+article_modified_time: "2026-10-10T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Vincent Kanemoto"
@@ -92,7 +92,7 @@ structured_data_graph:
       description: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
       image: "https://gtcode.com/img/ou-information-trail-og-1200x630.jpg"
       datePublished: "2026-10-01T00:00:00Z"
-      dateModified: "2026-10-09T00:00:00-10:00"
+      dateModified: "2026-10-10T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -116,7 +116,7 @@ structured_data_graph:
 ---
 *A public accountability letter by Ekewaka Lono.*
 
-> **Related open investigation:** This event is one component of the ongoing 2015–2022 sequence analysis. See [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}).
+> **Related reading:** [The Information Trail: Open Questions from 2015–2022]({{< relref "hawaii-courts/information-trail-2015-2022/index.md" >}}) lists participant-knowledge questions and records that could test possible connections.
 
 The prosecution arose from my November 2015 encounter with tax official Young Kwak. His accusation about what I said was false. The July 2017 trial ended in a hung jury. The State did not retry the case, and I later obtained an expungement.
 
@@ -198,7 +198,7 @@ Any accounts of chambers could establish whether the closing was discussed and w
 
 ## What My Trial Counsel Did
 
-I testified at the July 2017 trial but omitted the Hartmann episode after Retained Trial Counsel advised against including it. He also continued pressing a plea while the jury deliberated, despite my refusals. [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) holds the account of his opening, advice, chambers, preservation choices, and plea advocacy. This article examines Kwak’s testimony, the diagram, and Kanemoto’s closing.
+I testified at the July 2017 trial but omitted the Hartmann episode after Retained Trial Counsel advised against including it. He also continued pressing a plea while the jury deliberated, despite my refusals. [The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) holds the account of his opening, advice, chambers, preservation choices, and plea advocacy. This article examines Kwak’s testimony, the diagram, and Kanemoto’s closing. The companion article also addresses [the appellate consequence counsel never explained](/hawaii-courts/the-defense-table-went-quiet/#the-appellate-consequence-he-did-not-explain): an ordinary unconditional plea would generally have barred direct appellate review of the earlier closing-argument misconduct.
 
 ## The Witness Account, the Diagram, and the Booth
 

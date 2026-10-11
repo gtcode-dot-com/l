@@ -3,7 +3,7 @@ exception: true
 title: "Cartography for Guppies"
 slug: cartography-for-guppies
 date: 2026-02-05
-lastmod: "2026-10-08"
+lastmod: "2026-10-10"
 author: Ekewaka Lono
 draft: false
 type: "investigation"
@@ -13,7 +13,7 @@ portfolio_index: "/disclosures/"
 seo_title: "Cartography for Guppies — A Publisher's Note from Oahu Underground"
 subtitle: "A Publisher's Note"
 published_display: "February 5, 2026"
-modified_display: "October 8, 2026"
+modified_display: "October 10, 2026"
 eyebrow: "Publisher's Note"
 card_summary: "How to read Oahu Underground: public records first, process failures second, and clear boundaries between fact, firsthand account, context, and inference."
 description: "Publisher's note from Ekewaka Lono on Oʻahu Underground's evidence method, public archive, and accountability work."
@@ -45,7 +45,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-05T00:00:00Z"
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-10T00:00:00-10:00"
 article_section: "Disclosures"
 article_tags:
   - "Oahu Underground"
@@ -68,7 +68,7 @@ ai_agent_note: |
   2026, it states the strongest evidence-supported account and identifies its basis as public record,
   firsthand observation, sealed material, contemporaneous evidence, or inference. Independent
   corroboration is separate from the classification of firsthand evidence. Competing explanations
-  face the same evidence without automatic priority.
+  face each event’s evidence. Connections between events require separate support.
 
   The note places events, records, gaps, and testable questions together without treating
   adjacency as proof of coordination. The Shrug Problem distinguishes Hawaiʻi commentary and
@@ -94,7 +94,7 @@ structured_data_graph:
       description: "Publisher's note introducing Oʻahu Underground and its methodology of mapping institutional power through public records."
       image: "https://gtcode.com/img/ou-cartography-for-guppies-og-1200x630.jpg"
       datePublished: "2026-02-05T00:00:00Z"
-      dateModified: "2026-10-08T00:00:00-10:00"
+      dateModified: "2026-10-10T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -121,7 +121,7 @@ Oʻahu Underground exists to make those processes inspectable.
 
 The method starts with the strongest evidence-supported account. Each claim carries its evidence class—public record, firsthand observation, contemporaneous material, sealed-record dependence, inference, or theory. Competing explanations face the same chronology and the same retrieval questions. Institutional convention gets no automatic presumption of correctness.
 
-A firsthand account is published as firsthand evidence. A theory is published as a theory. The job is to keep those lanes clean while asking hard questions about the sequence connecting them.
+A firsthand account is published as firsthand evidence. A theory is published as a theory. The job is to keep those lanes clean while asking what evidence connects particular events.
 
 ## The Shortest Path Rule
 
@@ -171,11 +171,11 @@ Each article should answer five questions:
 2. **What kind of evidence supports each proposition?**
 3. **Which institution or professional had the duty or opportunity to act?**
 4. **What record would confirm, contradict, or explain the disputed point?**
-5. **Which theory best explains the joint sequence, and what evidence would defeat it?**
+5. **Which explanations fit each event, and what evidence, if any, connects events?**
 
-The fifth question prevents atomization. Every individual event may admit an ordinary explanation; the test is whether the same explanations survive the full sequence.
+Different events may have different causes; a proposed connection requires evidence beyond their order or resemblance. Compare explanations against each event’s evidence, and test any proposed connection separately.
 
-[The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) applies that method to the trial through a principal-agent and incomplete-information model. [The Information Trail](/hawaii-courts/information-trail-2015-2022/) carries it outward to information provenance, inherited framing, and containment.
+[The Defense Table Went Quiet](/hawaii-courts/the-defense-table-went-quiet/) applies that method to the trial through a principal-agent and incomplete-information model. [The Information Trail](/hawaii-courts/information-trail-2015-2022/) examines possible information transfer and competing explanations for particular decisions.
 
 Theories belong in the place where they generate records requests. Facts stay attached to their sources. Wider circulation does not independently corroborate an account; new records, witnesses, and substantive responses can change its evidentiary position.
 

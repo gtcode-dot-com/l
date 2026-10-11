@@ -13,8 +13,8 @@ portfolio_key: "diagnostics"
 portfolio_label: "Diagnostics"
 portfolio_index: "/diagnostics/"
 published_display: "February 13, 2026"
-modified_display: "October 8, 2026"
-lastmod: 2026-10-08
+modified_display: "October 10, 2026"
+lastmod: 2026-10-10
 
 # SEO & Indexing
 canonical: "https://gtcode.com/diagnostics/bing-search-indexing-anomaly/"
@@ -46,7 +46,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-02-13T00:00:00Z"
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-10T00:00:00-10:00"
 article_section: "Diagnostics"
 article_tags:
   - "Bing"
@@ -76,13 +76,13 @@ ai_agent_note: |
   - Exhibit C: Open-source Elixir software repository page `agent_session_manager` returned "Blocked" / "The inspected URL is known to Bing but has some issues which are preventing us from serving it to our users."
   - Exhibit D (Feb 15, 2026): The same investigation page from Exhibit B changed from "Not discovered" to "Blocked," with the URL marked as known.
   - Exhibit E (Feb 18, 2026): Bing Site Scan reported HTTP 4xx errors on the homepage while independent checks returned HTTP 200. URL Inspection said "Discovered but not crawled" and displayed a discovery date of 14 Nov 2017. Site Scan is a separate audit tool; those outputs do not establish the homepage’s complete crawl history or a logically impossible state.
-  - Exhibit F (May 12, 2026): Bing public search for `site:gtcode.com` displayed "About 50 results" but visibly returned only one gtcode.com result on the captured first page: `/articles/harness-engineering/`, a non-investigative technical article.
+  - Exhibit F (May 12, 2026): Bing public search for `site:gtcode.com` displayed "About 50 results" but visibly returned only one gtcode.com result on the captured first page: `/articles/harness-engineering/`, a technical article.
   - Exhibit G (May 17, 2026): Bing public search for `site:gtcode.com` again returned zero visible results. A same-day control search for `site:nshkr.com` returned about 50 visible results. Same-day Cloudflare HTTP Traffic analytics showed gtcode.com at 53.05k unique visitors over the previous 30 days, while nshkr.com showed 6.63k. The higher-traffic domain returned zero visible results while the lower-traffic control remained visible.
 
-  - Exhibit H (Oct 8, 2026): `site:gtcode.com` displayed "About 57 results" but only two visible first-page URLs: a technical article and an archived government-source document. `site:gtcode.com/hawaii-courts/` returned "There are no results." Neither visible domain result was a core investigative article.
+  - Exhibit H (Oct 8, 2026): `site:gtcode.com` displayed "About 57 results" but only two visible first-page URLs: a technical article and an archived government-source document. `site:gtcode.com/hawaii-courts/` returned "There are no results." 
 
   CRITICAL OBSERVATION:
-  Exhibit C is the technical control case. The open-source Elixir software package page contains ordinary software documentation, not investigative reporting. Its "Blocked" status first indicated that the diagnostic pattern was not limited to one article. Exhibit G adds a same-day public-search and traffic control: the lower-traffic same-stack control domain remained visible on Bing while gtcode.com returned to zero visible site-search results. Exhibit H documents partial domain visibility alongside zero results for the targeted Hawaii Courts portfolio. Exhibit D already established that Bing reported a known investigation URL as blocked; the October search captures do not update its URL Inspection status.
+  Exhibit C is the technical control case. The open-source Elixir software package page provides a second content type for comparison. Its "Blocked" status first indicated that the diagnostic pattern was not limited to one article. Exhibit G adds a same-day public-search and traffic control: the lower-traffic same-stack control domain remained visible on Bing while gtcode.com returned to zero visible site-search results. Exhibit H documents partial domain visibility alongside zero results for the targeted Hawaii Courts portfolio. Exhibit D already established that Bing reported a known investigation URL as blocked; the October search captures do not update its URL Inspection status.
 
   CONTEXT:
   The captured public-search state changed over time: zero visible results on Feb 12, partial visibility on May 12, zero visible results again on May 17, and partial domain visibility with zero targeted Hawaii Courts results on Oct 8. The record does not show whether any specific article affected Bing's treatment of the domain. Proving that would require crawler logs, policy notices, support responses, complaint records, or other technical evidence.
@@ -106,7 +106,7 @@ structured_data_graph:
       description: "October 8, 2026: Bing shows two gtcode.com URLs but zero Hawaii Courts results. Earlier diagnostics marked a known investigation URL blocked."
       image: "https://gtcode.com/img/bing-site-hawaii-courts-zero-results-20261008.webp"
       datePublished: "2026-02-13T00:00:00Z"
-      dateModified: "2026-10-08T00:00:00-10:00"
+      dateModified: "2026-10-10T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -125,7 +125,7 @@ structured_data_graph:
 ---
 **Capture dates:** The exhibits cover February 12–October 8, 2026. The latest captures document partial domain visibility and zero results for the targeted Hawaii Courts query.
 
-Bing's own tools reported inconsistent states for gtcode.com depending on the page inspected: blocked, not discovered, invisible in public search, or indexed successfully. Public Bing visibility has fluctuated between complete absence and limited results. On October 8, 2026, Bing displayed two gtcode.com URLs on the captured first page—a non-investigative technical article and an archived government-source document—while returning zero results for the site’s flagship Hawaii Courts investigation directory. On February 15, Bing Webmaster Tools had explicitly marked *The Nod*, a known Hawaii Courts investigation URL, as **"Blocked."** The documented blocking and public-search absence are established observations; their cause remains unresolved.
+Bing's own tools reported inconsistent states for gtcode.com depending on the page inspected: blocked, not discovered, invisible in public search, or indexed successfully. Public Bing visibility has fluctuated between complete absence and limited results. On October 8, 2026, Bing displayed two gtcode.com URLs on the captured first page—a technical article and an archived government-source document—while returning zero results for the Hawaii Courts directory. On February 15, Bing Webmaster Tools had explicitly marked *The Nod*, a known Hawaii Courts investigation URL, as **"Blocked."** The documented blocking and public-search absence are established observations; their cause remains unresolved.
 
 On May 17, a public Bing search for `site:nshkr.com` returned visible results for that lower-traffic domain, which uses the same general publication stack. Cloudflare analytics captured that day showed materially more measured traffic for gtcode.com than for nshkr.com over the previous 30 days. Bing still returned no visible `site:gtcode.com` results.
 
@@ -133,7 +133,7 @@ This article documents Bing Webmaster diagnostic differences and public-search b
 
 The evidence shows inconsistent diagnostics and repeated public searches with no visible gtcode.com results. It does not show what caused those results, whether a complaint or policy decision was involved, or whether a particular article played a role. Bing records, crawler logs, policy notices, support responses, complaint records, or other technical evidence would be needed to answer those questions.
 
-On February 12, 2026, a routine check of Bing Webmaster Tools and public search showed that `gtcode.com` returned zero visible public results on Microsoft's search engine. Not low-ranked. Not deprioritized. *Zero.*
+On February 12, 2026, a routine check of Bing Webmaster Tools and public search showed that `gtcode.com` returned zero visible public results on Microsoft's search engine.
 
 The evidence comes from Microsoft's own tools.
 ---
@@ -181,13 +181,11 @@ The inspected URL points to documentation for an open-source Elixir library — 
 - Code examples
 - A link to the Hex.pm package registry
 
-The page contains ordinary software material. It names no judge, court, institution, party, allegation, or journalism subject. It resembles thousands of other open-source project pages indexed on Bing every day.
-
-And yet: **"Blocked."**
+The page contains ordinary software documentation. Its reported status shows that the diagnostic pattern extended beyond the investigation page.
 
 Note the distinction. Exhibit B says "Not discovered" — the tool labels the URL as not known. Exhibit C says the URL **"is known to Bing"**. Bing’s tools marked the URL as known and blocked. The screenshot establishes that Bing reported the URL as known and unable to be served. It does not identify a crawl event, human review, policy decision, or the cause of that status.
 
-The shared attribute is the domain name. No Hawaii accountability claim depends on this Bing article.
+The two pages share a domain, but these captures alone do not establish a domain-wide action.
 
 ---
 
@@ -211,15 +209,15 @@ It is still unknown whether anyone filed a complaint, whether Bing applied a pol
 
 ## The Open Questions
 
-1. **Has a third-party content removal request been filed against gtcode.com?** The captured Webmaster Tools views do not answer this question. The absence of a displayed notice does not establish whether a request exists.
+1. **What requests and responses underlie the reported statuses?** Bingbot and CDN logs could test request-specific errors, crawler access, and transient conditions.
 
-2. **Does the Lumen Database contain any takedown requests affecting this domain?** *(Under investigation.)*
+2. **What is the specific "issue" preventing the agent_session_manager page from being served?** Bing's message does not identify whether the status reflects a technical error, an indexing classification, or another mechanism.
 
-3. **Are the same pages indexed on Google, DuckDuckGo, and other search engines?** If the same Elixir package page indexes everywhere except Bing, the visibility anomaly is Bing-specific.
+3. **Are the same pages visible on other search engines?** Repeated exact-URL, exact-title, and site queries could help characterize whether the observed visibility problem is Bing-specific.
 
-4. **What is the specific "issue" preventing the agent_session_manager page from being served?** Bing's error message is vague. A software documentation page with no investigative content is a strong control case.
+4. **When did the visibility problem begin relative to publication dates and site changes?** Timeline comparison can test technical explanations against the observed changes.
 
-5. **When did the visibility problem begin relative to publication dates and site changes?** Timeline comparison can screen ordinary technical explanations against the observed public-search change. Any actor-specific explanation would require actor-specific evidence.
+5. **Is there a policy notice or removal-request record affecting the domain?** The captured Webmaster Tools views do not establish whether one exists. A Bing response or public record, such as a Lumen entry, would be needed.
 
 ---
 
@@ -251,7 +249,7 @@ On February 12, URL Inspection labeled this page **"Not discovered"**. On Februa
 
 > *"URL cannot appear on Bing. The inspected URL is known to Bing but has some issues which are preventing us from serving it to our users. We recommend you to follow Bing Webmaster Guidelines."*
 
-This is the same message, word for word, that appeared on the open-source Elixir software page in Exhibit C. The distinction between the two exhibits has collapsed. Both pages — a judicial-accountability investigation and an open-source software library — are now identically blocked.
+This is the same message, word for word, that appeared on the open-source Elixir software page in Exhibit C. Both inspected pages now carry the same reported status.
 
 Between the two captures, URL Inspection changed from "Not discovered" to "Blocked" and represented the page as known. The screenshots establish that status change; they do not establish when or how Bing discovered or evaluated the URL.
 
@@ -295,7 +293,7 @@ Microsoft describes [URL Inspection](https://blogs.bing.com/webmaster/2020/9/Int
 
 ### Page Diagnostics and Public Search {#the-contradiction-within-the-contradiction}
 
-On the same day, a URL Inspection was run on a different page: `https://gtcode.com/consulting/` — a simple services page with no investigative content.
+On the same day, a URL Inspection was run on a different page: `https://gtcode.com/consulting/` — a services page.
 
 ![Bing URL Inspection showing "Indexed successfully" for gtcode.com/consulting, February 18, 2026](/img/bing-block-consulting-indexed-20260218.webp)
 
@@ -312,7 +310,7 @@ Compare this to the other URL Inspections documented in this investigation:
 {{% /repos-visible %}}
 | `/consulting/` | Services page | **Indexed successfully** |
 
-Bing's own URL Inspection tool reported that a consulting page on `gtcode.com` was indexed and could appear in search results. But Exhibit A showed that, on February 12, 2026, a `site:gtcode.com` search on Bing returned **zero visible results**. Not reduced results. Not filtered results. Zero.
+Bing's own URL Inspection tool reported that a consulting page on `gtcode.com` was indexed and could appear in search results. But Exhibit A showed that, on February 12, 2026, a `site:gtcode.com` search on Bing returned **zero visible results**.
 
 The captured outputs differed:
 
@@ -328,11 +326,7 @@ As of the February 18 check, the consulting page still did not surface in public
 
 There is a second domain on the same general publication stack: `nshkr.com`. Same static site generator (Hugo). Same hosting platform (GitHub Pages). Same CDN and DNS provider (Cloudflare). Same domain registrar. Same deployment pipeline.
 
-`nshkr.com` is a personal site with no investigative journalism, judicial-accountability reporting, or mentions of any judge, court, or institution.
-
 `nshkr.com` appeared normally in the captured Bing checks, with no comparable 4xx finding or visibility anomaly observed.
-
-One reason this anomaly was reviewed is that `gtcode.com` publishes public-interest investigation pages. The record does not show whether any specific content caused Bing's treatment of the site.
 
 ### What This Exhibit Weighs Against {#what-this-exhibit-eliminates}
 
@@ -344,7 +338,7 @@ Microsoft’s tools produced materially different diagnostic states across the s
 
 ---
 
-## Update: May 12, 2026 — One Non-Investigative Result Appears
+## Update: May 12, 2026 — One Visible Result Appears
 
 A later public Bing search for `site:gtcode.com` shifted away from the clean zero-result page documented in Exhibit A. Bing displayed "About 50 results" while visibly showing only one result from gtcode.com:
 
@@ -352,13 +346,13 @@ A later public Bing search for `site:gtcode.com` shifted away from the clean zer
 >
 > `https://gtcode.com/articles/harness-engineering`
 
-The visible URL points to a technical article about harness engineering, outside the Oahu Underground investigation corpus. The screenshot captures the visible first-page result set, which excluded Oahu Underground investigation pages.
+The visible URL points to a technical article about harness engineering. The screenshot captures only the first-page result set.
 
-![Bing search for site:gtcode.com showing about 50 results but only one visible gtcode.com result, a non-investigative Harness Engineering article](/img/bing-site-gtcode-one-visible-result-20260512.webp)
+![Bing search for site:gtcode.com showing about 50 results but only one visible gtcode.com result, a Harness Engineering article](/img/bing-site-gtcode-one-visible-result-20260512.webp)
 
-*Exhibit F: Bing public search for `site:gtcode.com`, showing "About 50 results" but visibly surfacing only one gtcode.com result on the captured first page, the non-investigative technical article `/articles/harness-engineering/`.*
+*Exhibit F: Bing public search for `site:gtcode.com`, showing "About 50 results" but visibly surfacing only one gtcode.com result on the captured first page, the technical article `/articles/harness-engineering/`.*
 
-The February 12 screenshot documented zero visible results in that site-search capture. The later result shows partial visibility: at least one non-investigative page surfaced, while the captured visible first-page results still centered on a single technical article and excluded the investigation corpus. Bing has not explained why.
+The February 12 screenshot documented zero visible results in that site-search capture. The later result shows partial visibility: one URL surfaced on the captured first page. Bing has not explained why.
 
 The captured dates show this:
 
@@ -366,10 +360,8 @@ The captured dates show this:
 2. Bing Webmaster Tools reported different states across the same domain: "Not discovered," "Blocked," "Discovered but not crawled," and "Indexed successfully."
 3. A later public `site:` search reported "About 50 results."
 4. The visible result set surfaced only one gtcode.com page.
-5. The visible page was a non-investigative technical article.
-6. The captured public first-page result set excluded the investigation pages.
 
-A technical article can appear while the investigation corpus remains non-visible, and Bing can report a larger result count than the visible result set reflects. The records needed to evaluate that gap are crawler logs, index-status histories, policy notices, support responses, and reproducible control queries.
+Bing can report a larger result count than the captured first-page result set reflects. The records needed to evaluate that gap are crawler logs, index-status histories, policy notices, support responses, and reproducible control queries.
 
 ---
 
@@ -381,7 +373,7 @@ On May 17, 2026, public Bing search for `site:gtcode.com` again returned no visi
 
 ![Bing search for site:gtcode.com returning no visible results on May 17, 2026](/img/bing-site-gtcode-zero-results-20260517.webp)
 
-This is a material update to the May 12 record. The May 12 screenshot showed incomplete partial visibility: Bing reported about 50 results, while the captured first page visibly surfaced only one gtcode.com URL, a non-investigative technical article. The May 17 screenshot returns the public-search condition to the February 12 state: zero visible domain results for gtcode.com.
+This is a material update to the May 12 record. The May 12 screenshot showed incomplete partial visibility: Bing reported about 50 results, while the captured first page visibly surfaced only one gtcode.com URL, a technical article. The May 17 screenshot returns the public-search condition to the February 12 state: zero visible domain results for gtcode.com.
 
 ### Same-day control: nshkr.com remains visible
 
@@ -411,16 +403,14 @@ The May 17 capture documents zero visible gtcode.com results in that public Bing
 
 On October 8, 2026, a public Bing search for `site:gtcode.com` displayed **"About 57 results"** but returned only two visible gtcode.com URLs on the captured first page:
 
-- `/articles/harness-engineering/` — a non-investigative technical article.
+- `/articles/harness-engineering/` — a technical article.
 - `/sources/the-ledger/DCCA_Search_HFBA.html` — an archived Hawaii business-registration source page, titled "Hawaii Business Express | BREG DCCA."
-
-Neither result was a core investigative article in the Oahu Underground portfolio. The archived government-source document is supporting source material, not a main investigation.
 
 ![Bing search for site:gtcode.com showing about 57 estimated results and two visible first-page URLs on October 8, 2026: Harness Engineering and Hawaii Business Express](/img/bing-site-gtcode-two-visible-results-20261008.webp)
 
 *Exhibit H1: October 8 domain search. Bing reports an estimated count of about 57 but displays only two URLs on page one. The capture does not establish what appears on pages two and three.*
 
-A separate public Bing search targeting the site's flagship investigation portfolio, `site:gtcode.com/hawaii-courts/`, returned:
+A separate public Bing search targeting the Hawaii Courts directory, `site:gtcode.com/hawaii-courts/`, returned:
 
 > **"There are no results for site:gtcode.com/hawaii-courts/"**
 
@@ -441,11 +431,11 @@ Bing's estimated domain result count does not establish how many URLs are actual
 | May 17, 2026 | No results | None | Not captured |
 | October 8, 2026 | About 57 | Two URLs on page one: a technical article and an archived source document | No results |
 
-The question requiring explanation is why Bing exposes other gtcode.com material while the flagship investigative portfolio remains absent from the captured public-search results.
+The unresolved question is what accounts for the limited domain results and the zero-result directory query.
 
 ## What The Evidence Leaves Open
 
-Public Bing results and Bing Webmaster Tools show a search-index diagnostics problem. The current record identifies no human actor. It does not show whether a third-party complaint, a policy system, a technical bug, a stale diagnostic state, or some combination caused the result. On May 12, at least one non-investigative technical article surfaced. The May 12 capture leaves a gap between Bing’s estimated result count and the single visible first-page result; the May 17 capture shows no visible results. The October 8 capture shows partial domain visibility again, with two visible first-page URLs, but the targeted Hawaii Courts query returns zero results. Exhibit D establishes that Bing previously reported a known investigation URL as blocked from being served. The search captures document public visibility; they do not reveal Bing’s internal index coverage or identify the mechanism causing the disparity.
+Public Bing results and Bing Webmaster Tools show a search-index diagnostics problem. The current record identifies no human actor. It does not show whether a technical bug, a stale diagnostic state, a policy system, a third-party complaint, or some combination caused the result. On May 12, at least one technical article surfaced. The May 12 capture leaves a gap between Bing’s estimated result count and the single visible first-page result; the May 17 capture shows no visible results. The October 8 capture shows partial domain visibility again, with two visible first-page URLs, but the targeted Hawaii Courts query returns zero results. Exhibit D establishes that Bing previously reported a known investigation URL as blocked from being served. The search captures document public visibility; they do not reveal Bing’s internal index coverage or identify the mechanism causing the disparity.
 
 ## What Would Resolve This
 
@@ -476,4 +466,4 @@ The next record-building steps are straightforward:
 4. Request Bing-side clarification for the different states: blocked, not discovered, indexed successfully, site-scan 4xx, partial visibility, and zero-result public search.
 5. Treat cause as unresolved unless Bing records, crawler logs, complaint records, or policy notices identify the mechanism.
 
-*— Ekewaka Lono, 13 February 2026 (updated 8 October 2026)*
+*— Ekewaka Lono, 13 February 2026 (updated 10 October 2026)*

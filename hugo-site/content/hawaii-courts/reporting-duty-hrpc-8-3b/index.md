@@ -8,14 +8,14 @@ seo_title: "The Reporting Duty: HRPC 8.3(b) and the Sealed Court Record"
 subtitle: "HRPC 8.3(b), Mens Rea, and Sealed-Record Dependency"
 description: "A legal analysis of HRPC 8.3(b), counsel’s actual knowledge, confidentiality, and institutional incentives affecting reports of judicial misconduct."
 date: 2026-06-08
-lastmod: "2026-10-08"
+lastmod: "2026-10-10"
 author: "Ekewaka Lono"
 type: "investigation"
 portfolio_key: "hawaii-courts"
 portfolio_label: "Hawaii Courts"
 portfolio_index: "/hawaii-courts/"
 published_display: "June 8, 2026"
-modified_display: "October 8, 2026"
+modified_display: "October 10, 2026"
 
 # SEO & Indexing
 canonical: "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/"
@@ -70,7 +70,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#ekewaka-lono"
 article_published_time: "2026-06-08T00:00:00Z"
-article_modified_time: "2026-10-08T00:00:00-10:00"
+article_modified_time: "2026-10-10T00:00:00-10:00"
 article_section: "Hawaii Courts"
 article_tags:
   - "Bosko Petricevic"
@@ -133,7 +133,7 @@ structured_data_graph:
       url: "https://gtcode.com/hawaii-courts/reporting-duty-hrpc-8-3b/"
       image: "https://gtcode.com/img/ou-reporting-duty-og-1200x630.jpg"
       datePublished: "2026-06-08T00:00:00Z"
-      dateModified: "2026-10-08T00:00:00-10:00"
+      dateModified: "2026-10-10T00:00:00-10:00"
       author:
         "@type": "Person"
         name: "Ekewaka Lono"
@@ -247,7 +247,7 @@ If the witness saw the nod and adopted it, the denial supports a coached-answer 
 
 If the witness had already resolved to deny, the nod retains significance. Judicial confirmation can stabilize a false denial, if the denial was false, even where the witness required little encouragement; a judge's nonverbal agreement can convert a risky denial into the safer answer inside the room.
 
-In this strategic model, silence is attractive to the witness after the hearing. Reopening the answer invites exposure on the drug issue, the denial, the courtroom sequence, and the relationship between the answer and the court-file exhibit. Silence preserves the denial and avoids any new statement. A self-interested denial by the witness would nonetheless constitute evidence; its weight would depend on specificity, consistency with the sealed file, line of sight, and independent corroboration.
+The strategic model identifies a possible incentive for the witness to avoid reopening the answer. Lack of a further statement does not establish that incentive or distinguish it from other reasons for not responding. A self-interested denial by the witness would nonetheless constitute evidence; its weight would depend on specificity, consistency with the sealed file, line of sight, and independent corroboration.
 
 ## Actual Knowledge and Professional Responsibility: Bosko Petricevic
 
@@ -265,7 +265,7 @@ I had no independent counsel in the room. The opposing lawyer with a potential R
 
 His client-benefit posture matters because it is the design defect. Rule 8.3(b) conceives of the observing lawyer as a professional officer of the court. The adversary system conceives of him as the advocate for a client whose position benefited from the alleged misconduct. Those conceptions collide where the misconduct favors the client and harms the opposing pro se party.
 
-That is the problem of relying on opposing counsel’s professional duty when the litigant has no independent lawyer present. A neutral lawyer who observes a judge signal a witness in an unrelated case can report without tactical cost to any client. An adversarial lawyer whose client benefits from the signal confronts a different payoff structure entirely. Reporting may undermine the client's victory, expose the client's testimony, generate conflict with the client, antagonize the judge or the local bench, and invite professional friction. Silence preserves the result—and can be rationalized through the rule's own thresholds.
+That is the problem of relying on opposing counsel’s professional duty when the litigant has no independent lawyer present. A neutral lawyer who observes a judge signal a witness in an unrelated case can report without tactical cost to any client. An adversarial lawyer whose client benefits from the signal confronts a different payoff structure entirely. Reporting may undermine the client's victory, expose the client's testimony, generate conflict with the client, antagonize the judge or the local bench, and invite professional friction. Those possible incentives do not establish whether counsel had reportable knowledge, made a report, or relied on a particular threshold.
 
 The public record cannot yet resolve what Petricevic saw or understood. Line-of-sight reconstruction, eyewitness testimony, and the surrounding audio sequence must test perception first; if perception is established, the analysis turns to his understanding and the reporting duty.
 
@@ -309,7 +309,7 @@ Mandatory reporting regimes function best when the reporter's professional incen
 
 HRPC 8.3(b) operates most cleanly under that assumption: the reporter derives no benefit from the conduct remaining concealed. A lawyer who incidentally learns that a judge fabricated citations in an unrelated matter has no stake in concealment. There the rule performs real work, and "shall" means something close to what it says.
 
-But the rule's reach extends beyond neutral witnesses. It applies the identical mandatory verb to a lawyer seated at counsel table representing the party whose position the alleged misconduct assisted. That lawyer is differently situated from a disinterested officer of the court who happened to observe something across the room. If the visual act I report is credited, that lawyer's client benefited from the very act the rule would require him to report. Disclosure unwinds the benefit; silence preserves it. The rule supplies the same word for both lawyers while leaving sufficient interior doctrinal space that the adversarial beneficiary can arrive at non-disclosure through ordinary professional reasoning.
+But the rule's reach extends beyond neutral witnesses. It applies the identical mandatory verb to a lawyer seated at counsel table representing the party whose position the alleged misconduct assisted. That lawyer is differently situated from a disinterested officer of the court who happened to observe something across the room. If the visual act I report is credited, that lawyer's client benefited from the very act the rule would require him to report. Reporting could prompt scrutiny of the result. Whether counsel perceived misconduct, had a duty to report, or made a report remains unresolved; a lack of public comment answers none of those questions.
 
 A lawyer who would prefer not to report can proceed through a series of individually defensible steps:
 
@@ -322,13 +322,13 @@ A lawyer who would prefer not to report can proceed through a series of individu
 - I assumed the court already knew, because it happened in open court.
 - I assumed the pro se litigant could complain for himself.
 
-Some of these positions can be asserted in good faith in some cases. Stacked together, they can convert a mandatory rule into one that functions as discretionary. The Rule 1.6 rung stands apart: confidentiality cannot serve as an unexamined blanket excuse. The lawyer must identify how the proposed disclosure relates to protected representation information and assess whether disclosure is authorized. A neutral witness has no reason to climb this ladder. The adversarial beneficiary has every reason to climb it—and the rule's threshold structure supplies most of the rungs.
+Some of these positions can be asserted in good faith in some cases. Stacked together, they can convert a mandatory rule into one that functions as discretionary. The Rule 1.6 rung stands apart: confidentiality cannot serve as an unexamined blanket excuse. The lawyer must identify how the proposed disclosure relates to protected representation information and assess whether disclosure is authorized. Those possibilities do not establish which assessment counsel made. His account and any notes, consultation, or report are needed to distinguish a good-faith threshold assessment from avoidance of a duty.
 
 ## The Design Defect in HRPC 8.3(b)
 
 The failure mode of HRPC 8.3(b) in this fact pattern is a function of the rule's design. The rule appears mandatory; its coverage is limited by design. That selectivity serves legitimate ends: it forestalls frivolous reporting, tactical bar complaints, and the conversion of every courtroom disagreement into a discipline file. But the same selectivity can shelter non-reporting where the misconduct is visual, nonverbal, unrecorded, sealed, and useful to one side.
 
-The deeper pattern is that the rule operates best where it is needed least, and worst where it is needed most. A judge who fabricates a citation in a published opinion leaves a documentary record: the knowledge element is objective, the violation is legible, and the fitness question nearly answers itself. A judge whose financial conflict goes undisclosed leaves a disclosure trail. A judge who berates a witness aloud leaves a transcript. But a judge who signals a sworn witness with a glance and a no-nod leaves only perception, timing, and context—and where the litigant lacks independent counsel and the opposing lawyer with a potential reporting duty represents the party who gained from it, the rule's own thresholds become the mechanism of silence rather than its cure. Documentary misconduct manufactures its own evidence. Behavioral misconduct manufactures only witnesses, and this rule permits the best-positioned witness to decline to be one. The institutional comfort zone emerges where conduct obvious inside the room becomes non-reviewable outside it, because the record is audio-only and the trained observer bearing the clearest professional duty is simultaneously the adversarial beneficiary.
+The deeper pattern is that the rule operates best where it is needed least, and worst where it is needed most. A judge who fabricates a citation in a published opinion leaves a documentary record: the knowledge element is objective, the violation is legible, and the fitness question nearly answers itself. A judge whose financial conflict goes undisclosed leaves a disclosure trail. A judge who berates a witness aloud leaves a transcript. An alleged visual signal in an audio-only proceeding instead depends on observer accounts, timing, and context. Where the litigant lacks independent counsel, the opposing lawyer’s account may be important, but his opportunity to observe does not establish his knowledge or whether the reporting duty arose. Those questions require evidence rather than an inference from silence.
 
 The LSD question intensifies the defect. A visual signal during casual testimony might be buried beneath claims of demeanor. A visual signal preceding a material exposure question tied to a court-file exhibit has a specific referent. Yet the rule still permits the lawyer who benefited from the answer to control the threshold analysis.
 
@@ -502,7 +502,7 @@ As to intent, the most favorable account available to Loo is generic courtroom r
 
 As to caution, a lawyer who reports a sitting judge on a contested allegation places at risk his client's interests, his standing before the local bench, and his exposure to sanction for a frivolous or weaponized complaint. The limited scope of Rule 8.3(b) exists precisely to prevent every adverse gesture from becoming a discipline file. Rule 1.6 requires examination of the information a report would disclose and any lawful basis for disclosure. None of this should be waved away.
 
-But the innocent reading leaves the problem intact—and locates it. It explains why a single actor, consulting only his own incentives, might decline to act. What it leaves unexplained is why every record capable of testing the competing accounts is unavailable. Genuine doubt about a judge's intent counsels examination of the evidence, not its sealing. Independent review of the sealed audio and the courtroom sequence would strengthen an innocent explanation. The innocent reading and the accountability demand thus converge on the same remedy: produce the audio, reconstruct the room, and examine under oath the people who were in it. The pattern is troubling even without proof of bad faith by any single actor, because an open record is at once the one outcome the process design forecloses and the one outcome capable of vindicating any of them.
+The remaining access question is separate from intent: what grounds supported sealing, what review is legally available, and what records did the responsible bodies examine? Confidentiality, jurisdictional limits, or a procedural decline do not by themselves establish avoidance or bad faith. Authorized review of the audio, courtroom layout, and participant accounts could test the competing explanations. Records showing substantive review or an independently justified restriction would change the assessment of institutional handling.
 
 ## The Professional Duty to Convert Ambiguity
 
