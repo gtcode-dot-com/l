@@ -31,7 +31,6 @@ card_summary: "Ekewaka Lono examines Kwak’s charging and trial accounts, recor
 # Hero / Open Graph
 hero_image: "/img/ou-information-trail-og-1200x630.jpg"
 hero_image_alt: "Editorial reconstruction of a prosecutor making a two-handed mock-pistol gesture toward twelve jurors during closing argument, with a symbolic gun-shaped shadow."
-hero_image_caption: "Editorial reconstruction of the two-handed mock-pistol gesture Ekewaka Lono witnessed during the 2017 closing argument. The gun-shaped shadow is a visual metaphor. This is an illustration, not a photograph or courtroom recording."
 og_title: "The Hypothetical Gun: The Closing-Argument Record"
 og_description: "Ekewaka Lono examines Kwak’s charging and trial accounts, recordings omitted at trial, the booth diagram, and Kanemoto’s mock-pistol closing."
 og_image: "/img/ou-information-trail-og-1200x630.jpg"

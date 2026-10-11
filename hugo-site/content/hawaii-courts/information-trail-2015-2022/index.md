@@ -40,7 +40,6 @@ card_summary: "An investigation into what participants knew during the 2015–20
 # Hero / Open Graph
 hero_image: "/img/ou-information-trail-chronology-og-1200x630.jpg"
 hero_image_alt: "Conceptual illustration of archival folders dated 2015, 2017 and 2022, overlapping papers and tracing lines across a dark desk."
-hero_image_caption: "Conceptual illustration of the 2015–2022 information trail. The papers and connecting traces are imagined, not reproduced exhibits or established transmission routes."
 og_title: "The Information Trail: Open Questions from 2015–2022"
 og_description: "An investigation into what participants knew during the 2015–2022 events, how information may have traveled, and which records could distinguish the explanations."
 og_image: "/img/ou-information-trail-chronology-og-1200x630.jpg"
