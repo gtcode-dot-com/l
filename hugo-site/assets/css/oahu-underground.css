@@ -471,9 +471,7 @@ body.nav-open .site-nav-overlay {
 }
 
 .footer-copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   text-align: center;
   color: var(--ou-text-muted);
   font-size: 0.875rem;
