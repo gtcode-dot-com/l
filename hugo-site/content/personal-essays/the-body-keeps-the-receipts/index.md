@@ -9,7 +9,7 @@ lastmod: 2026-10-07
 modified_display: "October 7, 2026"
 author: "Ekewaka Lono"
 type: ou-article
-draft: true
+draft: false
 meta_description: "A research review of childhood head injury, institutional betrayal, and later symptoms, distinguishing reported experience, population evidence, and causal hypotheses."
 meta_keywords:
   - childhood head injury
