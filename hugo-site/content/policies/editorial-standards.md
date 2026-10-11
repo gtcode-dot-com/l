@@ -1,4 +1,5 @@
 ---
+exception: true
 title: "Editorial Standards"
 description: "How Oahu Underground by GTCode handles sourcing, verification, and publication updates."
 date: 2026-02-14

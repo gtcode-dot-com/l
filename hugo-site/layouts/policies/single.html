@@ -1,17 +1,18 @@
 {{ define "main" }}
+{{ $active := partial "exception/resolve-active-page.html" . }}
 <article class="policy-container">
   <header class="policy-header">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.version }}
+    <h1>{{ $active.Title }}</h1>
+    {{ with $active.Params.version }}
     <div class="policy-version">Version {{ . }}</div>
     {{ end }}
     <div class="policy-meta">
-      <span>Last Updated: <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Params.modified_display | default (.Lastmod.Format "January 2, 2006") }}</time></span>
+      <span>Last Updated: <time datetime="{{ $active.Lastmod.Format "2006-01-02" }}">{{ $active.Params.modified_display | default ($active.Lastmod.Format "January 2, 2006") }}</time></span>
     </div>
   </header>
 
   <div class="policy-content content">
-    {{ $content := printf "%s" .Content }}
+    {{ $content := printf "%s" $active.Content }}
     {{ $content = replaceRE "(?i)<h1([^>]*)>" "<h2$1>" $content }}
     {{ $content = replaceRE "(?i)</h1>" "</h2>" $content }}
     {{ $content | safeHTML }}
@@ -19,7 +20,7 @@
 
   {{ partial "citation-block.html" . }}
 
-  {{ with .Params.related_policies }}
+  {{ with $active.Params.related_policies }}
   <aside class="policy-related">
     <h2>Related Policies</h2>
     <ul>

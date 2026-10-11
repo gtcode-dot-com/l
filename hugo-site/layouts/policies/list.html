@@ -6,7 +6,7 @@
   </header>
 
   <div class="policy-grid">
-    {{ range .Pages }}
+    {{ range partial "exception/filter-list-pages.html" .Pages }}
     <article class="policy-card card">
       <h2 class="card-title">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>

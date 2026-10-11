@@ -1,3 +1,9 @@
+{{- $target := . -}}
+{{- with site.GetPage .RelPermalink -}}
+  {{- if partial "exception/is-hidden.html" . -}}
+    {{- $target = site.Home -}}
+  {{- end -}}
+{{- end -}}
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
 <head>
@@ -7,12 +13,12 @@
   <title>Redirecting…</title>
   <meta name="description" content="Redirecting to the canonical URL." />
   <meta name="robots" content="noindex,follow" />
-  <link rel="canonical" href="{{ replace .Permalink "http://" "https://" }}" />
-  <meta http-equiv="refresh" content="0; url={{ .RelPermalink }}" />
+  <link rel="canonical" href="{{ replace $target.Permalink "http://" "https://" }}" />
+  <meta http-equiv="refresh" content="0; url={{ $target.RelPermalink }}" />
   <meta property="og:title" content="Redirecting…" />
   <meta property="og:description" content="Redirecting to the canonical URL." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ replace .Permalink "http://" "https://" }}" />
+  <meta property="og:url" content="{{ replace $target.Permalink "http://" "https://" }}" />
   <meta property="og:image" content="{{ replace (printf "%s/img/gtcode-core.svg" (strings.TrimRight "/" .Site.BaseURL)) "http://" "https://" }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Redirecting…" />
@@ -23,7 +29,7 @@
   <h1>Redirecting…</h1>
   <p>
     This page has moved to
-    <a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a>.
+    <a href="{{ $target.RelPermalink }}">{{ $target.RelPermalink }}</a>.
   </p>
 </body>
 </html>

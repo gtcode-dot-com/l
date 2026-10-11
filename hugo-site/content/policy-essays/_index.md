@@ -1,4 +1,7 @@
 ---
+# Mask new descendants automatically when enable_exceptions is true.
+cascade:
+  exception: true
 exception: true
 draft: false
 title: "Policy Essays"

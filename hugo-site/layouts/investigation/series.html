@@ -8,8 +8,10 @@
   <nav class="ou-breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    {{ if not site.Params.enable_exceptions }}
     <a href="{{ $portfolioIndex }}">{{ $portfolioLabel }}</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    {{ end }}
     <strong>{{ $active.Title }}</strong>
   </nav>
 
@@ -72,7 +74,11 @@
     {{ partial "citation-block.html" $page }}
 
     <footer class="ou-article-footer">
+      {{ if site.Params.enable_exceptions }}
+      <a class="ou-article-back" href="/">&larr; Back to Home</a>
+      {{ else }}
       <a class="ou-article-back" href="{{ $portfolioIndex }}">&larr; Back to {{ $portfolioLabel }}</a>
+      {{ end }}
     </footer>
   </article>
 {{ end }}

@@ -1,12 +1,13 @@
-{{ .Title }}
-{{ $titleLen := len .Title }}{{ strings.Repeat "=" $titleLen }}
+{{- $active := partial "exception/resolve-active-page.html" . -}}
+{{ $active.Title }}
+{{ $titleLen := len $active.Title }}{{ strings.Repeat "=" $titleLen }}
 
-Last Updated: {{ .Date.Format "2006-01-02" }}
-{{- with .Params.version }}
+Last Updated: {{ $active.Date.Format "2006-01-02" }}
+{{- with $active.Params.version }}
 Version: {{ . }}
 {{- end }}
 
-{{ .Content | plainify }}
+{{ $active.Content | plainify }}
 
 ---
 Policy URL: {{ .Permalink }}

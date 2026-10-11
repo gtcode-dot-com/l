@@ -6,8 +6,10 @@
   <nav class="ou-breadcrumb">
     <a href="/">Home</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    {{ if not (partial "exception/is-hidden.html" $section) }}
     <a href="{{ $section.RelPermalink }}">{{ $section.Title }}</a>
     <span class="ou-breadcrumb-sep">&rsaquo;</span>
+    {{ end }}
     <strong>{{ $active.Title }}</strong>
   </nav>
 
@@ -56,7 +58,11 @@
 
     <!-- Article Footer -->
     <footer class="ou-article-footer">
+      {{ if partial "exception/is-hidden.html" $section }}
+      <a class="ou-article-back" href="/">&larr; Back to Home</a>
+      {{ else }}
       <a class="ou-article-back" href="{{ $section.RelPermalink }}">&larr; Back to {{ $section.Title }}</a>
+      {{ end }}
     </footer>
   </article>
 {{ end }}
