@@ -4,12 +4,6 @@
   {{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
   {{- $listPages := partial "exception/filter-list-pages.html" $page.Pages -}}
   {{- $regularPages := partial "exception/filter-list-pages.html" $page.Site.RegularPages -}}
-  <!-- Breadcrumb -->
-  <nav class="ou-breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a>
-    <span class="ou-breadcrumb-sep">&rsaquo;</span>
-    <strong>{{ $active.Params.breadcrumb_label | default $active.Title | default "Investigations" }}</strong>
-  </nav>
   <h1 class="sr-only">{{ $active.Title }}</h1>
 
   {{ if $isActiveException }}

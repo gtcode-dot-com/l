@@ -19,14 +19,6 @@
     {{ $active := partial "exception/resolve-active-page.html" . }}
     <section class="section-header"><h1>{{ $active.Title }}</h1>{{ $active.Content }}</section>
   {{ else }}
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb">
-    <a href="/">Home</a>
-    <span class="breadcrumb-separator">&rsaquo;</span>
-    <a href="/tags/">Tags</a>
-    <span class="breadcrumb-separator">&rsaquo;</span>
-    <strong>{{ .Title }}</strong>
-  </nav>
 
   <!-- Tag Header -->
   {{ $pages := partial "exception/filter-list-pages.html" .Pages }}

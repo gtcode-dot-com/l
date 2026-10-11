@@ -86,6 +86,17 @@
         -webkit-text-size-adjust: 100%;
       }
 
+      .breadcrumb {
+        flex: 0 0 auto;
+        display: flex;
+        gap: 0.6rem;
+        align-items: center;
+        padding: 0.5rem clamp(0.6rem, 2vw, 1.15rem);
+        font-size: 0.7rem;
+      }
+      .breadcrumb a { color: var(--paper); }
+      .breadcrumb strong { font-weight: normal; }
+
       /* ---- Title block: drafting-sheet header ------------------- */
       .titleblock {
         flex: 0 0 auto;
@@ -475,6 +486,7 @@
     </script>
   </head>
   <body>
+    {{ partial "breadcrumbs.html" . }}
     <header class="titleblock">
       <div class="tb-cell tb-cell--mark">
         <h1 class="tb-title">Zork&nbsp;I</h1>

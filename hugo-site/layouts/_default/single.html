@@ -1,18 +1,6 @@
 {{ define "main" }}
   {{- $page := . -}}
   {{- $active := partial "exception/resolve-active-page.html" $page -}}
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a>
-    <span class="breadcrumb-separator">&rsaquo;</span>
-    {{ if $page.CurrentSection }}
-      <a href="{{ $page.CurrentSection.RelPermalink }}">{{ $page.CurrentSection.Title }}</a>
-    {{ else }}
-      <a href="/news/">News</a>
-    {{ end }}
-    <span class="breadcrumb-separator">&rsaquo;</span>
-    <strong>{{ $active.Title }}</strong>
-  </nav>
 
   <div class="guides-shell">
     {{ partial "article-sidebar.html" $page }}
@@ -94,7 +82,7 @@
         {{ if $page.CurrentSection }}
           <a class="btn btn-secondary" href="{{ $page.CurrentSection.RelPermalink }}">&larr; Back to {{ $page.CurrentSection.Title }}</a>
         {{ else }}
-          <a class="btn btn-secondary" href="/news/">&larr; Back to News</a>
+          <a class="btn btn-secondary" href="/">&larr; Back to Home</a>
         {{ end }}
       </p>
     </footer>

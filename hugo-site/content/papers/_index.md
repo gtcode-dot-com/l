@@ -1,4 +1,5 @@
 ---
+breadcrumb_label: "Papers"
 title: "Research Papers"
 description: "Research papers and technical specifications from GTCode covering geometric semantic communication, embedding-space publish-subscribe routing, media provenance, and Chiral Narrative Synthesis."
 meta_description: "Research papers and technical specifications from GTCode covering geometric semantic communication, embedding-space routing, media provenance, and Chiral Narrative Synthesis."

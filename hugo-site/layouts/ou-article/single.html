@@ -2,16 +2,6 @@
   {{- $page := . -}}
   {{- $section := .CurrentSection -}}
   {{- $active := partial "exception/resolve-active-page.html" $page -}}
-  <!-- Breadcrumb -->
-  <nav class="ou-breadcrumb">
-    <a href="/">Home</a>
-    <span class="ou-breadcrumb-sep">&rsaquo;</span>
-    {{ if not (partial "exception/is-hidden.html" $section) }}
-    <a href="{{ $section.RelPermalink }}">{{ $section.Title }}</a>
-    <span class="ou-breadcrumb-sep">&rsaquo;</span>
-    {{ end }}
-    <strong>{{ $active.Title }}</strong>
-  </nav>
 
   <article class="ou-article">
     <!-- Article Header -->

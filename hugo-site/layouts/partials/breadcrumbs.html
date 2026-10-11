@@ -1,0 +1,23 @@
+{{- if not .IsHome -}}
+{{- $page := . -}}
+{{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- $class := "breadcrumb" -}}
+{{- $separator := "breadcrumb-separator" -}}
+{{- if or (eq .Type "investigation") (eq .Type "ou-article") -}}
+  {{- $class = "ou-breadcrumb" -}}
+  {{- $separator = "ou-breadcrumb-sep" -}}
+{{- else if eq .Section "guides" -}}
+  {{- $class = "breadcrumb breadcrumb-guides" -}}
+{{- end -}}
+<nav class="{{ $class }}" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  {{- range .Ancestors.Reverse -}}
+    {{- if and (not .IsHome) (not (partial "exception/is-hidden.html" .)) -}}
+      <span class="{{ $separator }}">&rsaquo;</span>
+      <a href="{{ .RelPermalink }}">{{ if eq .Kind "taxonomy" }}Tags{{ else }}{{ .Params.breadcrumb_label | default .LinkTitle }}{{ end }}</a>
+    {{- end -}}
+  {{- end -}}
+  <span class="{{ $separator }}">&rsaquo;</span>
+  <strong aria-current="page">{{ if and (eq $page.Kind "taxonomy") (not (partial "exception/is-hidden.html" $page)) }}Tags{{ else }}{{ $active.Params.breadcrumb_label | default $active.LinkTitle | default $active.Title }}{{ end }}</strong>
+</nav>
+{{- end -}}

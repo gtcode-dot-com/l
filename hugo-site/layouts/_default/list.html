@@ -29,14 +29,6 @@
 {{ define "main" }}
   {{- $page := . -}}
   {{- $active := partial "exception/resolve-active-page.html" $page -}}
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb">
-    <a href="/">Home</a>
-    <span class="breadcrumb-separator">&rsaquo;</span>
-    {{ if $page.IsSection }}
-      <strong>{{ $active.Title }}</strong>
-    {{ end }}
-  </nav>
 
   <!-- Section Header -->
   <div class="section-header">

@@ -1,4 +1,5 @@
 ---
+breadcrumb_label: "Policies"
 title: "Site Policies"
 description: "Copyright, republication, editorial, and automated-access policies for GTCode and Oahu Underground."
 lastmod: 2026-10-08
