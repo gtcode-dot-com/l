@@ -277,7 +277,7 @@ The transcript can show what counsel asked, how extensively he questioned Kwak, 
 
 I testified at the July 2017 trial. While I was under indictment and investigating matters for my defense, I intended to disclose what I was uncovering. That included the Hartmann episode and the surrounding pressure history described in [Before the Tax Office](/disclosures/before-the-tax-office/) and [my report to appointed counsel](/hawaii-courts/the-threat-report/).
 
-Retained Trial Counsel advised against including that event. I followed his advice and did not testify about it. By trial, Kevin’s warning was also still affecting my willingness to disclose it, as described in [Before the Tax Office](/disclosures/before-the-tax-office/#may-or-june-2017-the-career-warning).
+I told Retained Trial Counsel about the Hartmann death threat. He did not take it seriously and advised me against including it in my trial testimony. I followed that advice and did not testify about it. What he did to assess the report before advising me is separate from whether the testimony would have been admissible. *Aplaca* supports examining the inquiry behind that decision.[^12] His file and account could show what he investigated, what he considered, and what he explained. By trial, Kevin’s warning was also still affecting my willingness to disclose it, as described in [Before the Tax Office](/disclosures/before-the-tax-office/#may-or-june-2017-the-career-warning).
 
 I assess that advice together with his handling of Kwak and the booth evidence. The separate witness-intimidation and extortion questions appear in the [primary account](/hawaii-courts/the-threat-report/#the-legal-questions).
 
@@ -302,6 +302,8 @@ The lawyers knew more than I did about mistrial standards, preservation, curativ
 I saw the gesture and the judge’s reaction. I depended on counsel to explain what they meant for my legal position.
 
 The transcript can establish Kanemoto's words, any objection, interruption or recess, reference to chambers, and jury instruction. It may say nothing about his hand gesture. A recording, contemporaneous notes, or another witness could support or contradict my observation of it.
+
+ABA Defense Function Standard 4-1.5 calls for a clear record for review.[^22] What steps did counsel take to preserve the closing and the court's response?
 
 Counsel's file could show which options were discussed in chambers and immediately afterward:
 
@@ -387,7 +389,7 @@ Counsel kept pressing.
 
 The confrontation moved to a courthouse bench while the jury deliberated. I was praying. Counsel scolded me, saying in substance that he did not **“believe in that religion stuff”**, while continuing to push the plea.
 
-I had already refused the plea. Counsel kept trying to reverse my decision while twelve jurors were deciding the case.
+I had already refused the plea. Counsel kept trying to reverse my decision while twelve jurors were deciding the case. ABA Defense Function Standard 4-5.1(f) cautions against undue influence on a client's plea decision.[^21] What counsel said, the advice he gave, and the circumstances of that pressure matter when assessing whether he crossed that line.
 
 The prosecutor could offer reduced charges and counsel could recommend acceptance. A plea could also avoid the cost and uncertainty of another trial. But it required my consent.
 
@@ -565,7 +567,7 @@ Any participant with records that materially alter the chronology may respond th
 
 [^2]: *Briones v. State*, 74 Haw. 442, 462–64, 848 P.2d 966, 976–77 (1993), [opinion](https://law.justia.com/cases/hawaii/supreme-court/1993/15833-2.html). Specific omissions, potentially meritorious defenses, possible effect, and tactical choices. An obvious tactical benefit protects the particular decision; absent such a basis and with impairment of a potentially meritorious defense, the court examines counsel's knowledge and investigation. The same framework is discussed in the Hawaiʻi Supreme Court's [2019 Grindling opinion, pp. 22–23](https://www.courts.state.hi.us/wp-content/uploads/2019/06/SCWC-16-0000474ada.pdf). ([archival copy — Grindling](/sources/booth-trial-record/Grindling_v_State_2019.pdf))
 
-[^12]: *State v. Aplaca*, 74 Haw. 54, 837 P.2d 1298 (1992), section II.A, [opinion](https://law.justia.com/cases/hawaii/supreme-court/1992/15402-2.html). The court held that failure to investigate prospective defense witnesses could not be treated as trial strategy without adequate inquiry. It concerned different facts and does not establish deficient representation here; it supplies the benchmark for examining counsel's preparation before calling a choice tactical.
+[^12]: *State v. Aplaca*, 74 Haw. 54, 837 P.2d 1298 (1992), section III.A, [opinion](https://law.justia.com/cases/hawaii/supreme-court/1992/15402-2.html). The court held that failure to investigate prospective defense witnesses could not be treated as trial strategy without adequate inquiry. It concerned different facts and does not establish deficient representation here; it supplies the benchmark for examining counsel's preparation before calling a choice tactical.
 
 [^13]: Hawaiʻi Rules of Professional Conduct, Rules 1.1 and 1.3, competence and diligence. The [official rules PDF](https://www.courts.state.hi.us/docs/court_rules/rules/hrpc.pdf) requires reasonably necessary legal knowledge, skill, thoroughness, and preparation under Rule 1.1, and reasonable diligence and promptness under Rule 1.3. The relevant pages in the [archived compilation](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_docs_rules_pdf.pdf#page=13) are HRPC–7 (release December 2013, PDF p. 13) and HRPC–10 (release December 2015, PDF p. 16). These duties supply professional standards for the conduct examined here.
 
@@ -597,3 +599,7 @@ Any participant with records that materially alter the chronology may respond th
 [^19]: *State v. Kealaiki*, 95 Hawaiʻi 309, 22 P.3d 588 (2001), section IV and footnote 5, [opinion](https://law.justia.com/cases/hawaii/supreme-court/2001/23484.html), quoting *State v. Morin*, 71 Haw. 159, 162, 785 P.2d 1316, 1318–19 (1990), on the general waiver rule and the equivalent effect of no-contest pleas. Section IV reproduces HRPP Rule 11(a)(2), which addresses specified adverse pretrial motion rulings. *Kealaiki* concerned a deferred plea and a suppression ruling; the application here to an ordinary unconditional plea following closing argument is legal analysis, not a holding on this trial.
 
 [^20]: Hawaiʻi Rules of Professional Conduct, Rule 1.4(b), in the [June 25, 2013 adoption order and rules, effective January 1, 2014](https://www.courts.state.hi.us/docs/court_rules/pdf/2013/2013_hrpc_ada.pdf). The rule requires explanation reasonably necessary for informed client decisions. See also the December 2015 release of Rule 1.4 in the [archived compilation](/sources/silent-conspiracy-rule-83-mens-rea/Hawaii_HRPC_docs_rules_pdf.pdf#page=17), printed HRPC–11. This professional duty supplies a standard for assessing the advice; it is not a finding that a disciplinary violation occurred.
+
+[^21]: American Bar Association, [Criminal Justice Standards for the Defense Function, Fourth Edition](https://www.americanbar.org/groups/criminal_justice/resources/standards/defense-function/), Standards 4-5.1(f) and 4-6.2(e). Standard 4-6.2(e) permits counsel to recommend a disposition but cautions against unduly pressuring the client toward a particular decision. Standard 4-1.1(b) identifies these standards as aspirational guidance, not independent grounds for discipline or civil liability. This benchmark does not itself establish misconduct here.
+
+[^22]: American Bar Association, [Defense Function Standards](https://www.americanbar.org/groups/criminal_justice/resources/standards/defense-function/), Standard 4-1.5. It addresses preservation for review without requiring a mistrial motion in every case; see the limits in Standard 4-1.1(b).
