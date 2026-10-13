@@ -5165,6 +5165,13 @@
     "agent_callout": "",
     "generated_at": "2026-02-16T04:38:54.360166+00:00"
   },
+  "news/ai-security/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild": {
+    "slug": "news/ai-security/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild",
+    "meta_description": "The vulnerability tracked as CVE-2026-85097 can allow threat actors to take control of the targeted WordPress websites. By Eduard Kovacs | October...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Bricksforge WordPress Plugin Vulnerability Exploited in the Wild\",\n  \"description\": \"The vulnerability tracked as CVE-2026-85097 can allow threat actors to take control of the targeted WordPress websites. By Eduard Kovacs | October...\",\n  \"datePublished\": \"2026-10-13T00:02:32.772156+00:00\",\n  \"dateModified\": \"2026-10-13T00:02:32.772156+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild\"\n  },\n  \"url\": \"https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-13T00:03:39.841773+00:00"
+  },
   "news/ai-security/bridging-the-ai-agent-authority-gap-continuous-observability-as-the-decision-engine": {
     "slug": "news/ai-security/bridging-the-ai-agent-authority-gap-continuous-observability-as-the-decision-engine",
     "meta_description": "As discussed in our previous article, AI agents are exposing a structural gap in enterprise security, but the problem is often framed too narrowly.",
@@ -5297,6 +5304,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"‘CanisterWorm’ Springs Wiper Attack Targeting Iran\",\n  \"description\": \"A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through...\",\n  \"datePublished\": \"2026-04-02T02:44:59.984849+00:00\",\n  \"dateModified\": \"2026-04-02T02:44:59.984849+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T02:46:05.582914+00:00"
+  },
+  "news/ai-security/canonical-websites-disrupted-in-second-ddos-attack-this-year": {
+    "slug": "news/ai-security/canonical-websites-disrupted-in-second-ddos-attack-this-year",
+    "meta_description": "The outage hit the main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal. By Eduard Kovacs | October 12, 2026 (7:58...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Canonical Websites Disrupted in Second DDoS Attack This Year\",\n  \"description\": \"The outage hit the main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal. By Eduard Kovacs | October 12, 2026 (7:58...\",\n  \"datePublished\": \"2026-10-13T00:02:34.077414+00:00\",\n  \"dateModified\": \"2026-10-13T00:02:34.077414+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year\"\n  },\n  \"url\": \"https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-13T00:03:39.440437+00:00"
   },
   "news/ai-security/canvas-breach-disrupts-schools-colleges-nationwide": {
     "slug": "news/ai-security/canvas-breach-disrupts-schools-colleges-nationwide",
@@ -6502,6 +6516,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:11.615288+00:00"
   },
+  "news/ai-security/cyberxero-uses-claude-code-in-campaign-that-stole-over-628000-ukrainian-records": {
+    "slug": "news/ai-security/cyberxero-uses-claude-code-in-campaign-that-stole-over-628000-ukrainian-records",
+    "meta_description": "Cybersecurity researchers have disclosed details of a two-pronged artificial intelligence (AI)-augmented initial access campaign targeting...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records\",\n  \"description\": \"Cybersecurity researchers have disclosed details of a two-pronged artificial intelligence (AI)-augmented initial access campaign targeting...\",\n  \"datePublished\": \"2026-10-13T00:02:29.765005+00:00\",\n  \"dateModified\": \"2026-10-13T00:02:29.765005+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-13T00:03:38.686762+00:00"
+  },
   "news/ai-security/daemon-tools-supply-chain-attack-compromises-official-installers-with-malware": {
     "slug": "news/ai-security/daemon-tools-supply-chain-attack-compromises-official-installers-with-malware",
     "meta_description": "A newly identified supply chain attack targeting DAEMON Tools software has compromised its installers to serve a malicious payload, according to...",
@@ -7145,6 +7166,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"FBI Arrests Executive at Ransomware Negotiation Firm\",\n  \"description\": \"Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested an executive at a Canadian cybersecurity firm in connection with an...\",\n  \"datePublished\": \"2026-10-10T21:49:46.045511+00:00\",\n  \"dateModified\": \"2026-10-10T21:49:46.045511+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-10T21:50:24.386044+00:00"
+  },
+  "news/ai-security/fbi-arrests-suspect-in-fbi-hacking-case": {
+    "slug": "news/ai-security/fbi-arrests-suspect-in-fbi-hacking-case",
+    "meta_description": "In September, hackers from a group called ShinyHunters announced that they stole a trove of FBI data about its own agents.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"FBI Arrests Suspect in FBI-Hacking Case\",\n  \"description\": \"In September, hackers from a group called ShinyHunters announced that they stole a trove of FBI data about its own agents.\",\n  \"datePublished\": \"2026-10-13T00:02:30.132729+00:00\",\n  \"dateModified\": \"2026-10-13T00:02:30.132729+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-13T00:03:39.052082+00:00"
   },
   "news/ai-security/fbi-extracts-deleted-signal-messages-from-iphone-notification-database": {
     "slug": "news/ai-security/fbi-extracts-deleted-signal-messages-from-iphone-notification-database",
@@ -8895,6 +8923,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Investigating a New Click-Fix Variant\",\n  \"description\": \"Disclaimer : This report has been prepared by the Threat Research Center to enhance cybersecurity awareness and support the strengthening of...\",\n  \"datePublished\": \"2026-03-14T05:50:06.002122+00:00\",\n  \"dateModified\": \"2026-03-14T05:50:06.002122+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/03/investigating-new-click-fix-variant.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/03/investigating-new-click-fix-variant.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-14T05:50:58.960321+00:00"
+  },
+  "news/ai-security/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion": {
+    "slug": "news/ai-security/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion",
+    "meta_description": "The all-stock deal brings Elisity’s least-privilege access technology into IonQ’s security portfolio. By SecurityWeek News | October 12, 2026...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion\",\n  \"description\": \"The all-stock deal brings Elisity’s least-privilege access technology into IonQ’s security portfolio. By SecurityWeek News | October 12, 2026...\",\n  \"datePublished\": \"2026-10-13T00:02:30.469302+00:00\",\n  \"dateModified\": \"2026-10-13T00:02:30.469302+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion\"\n  },\n  \"url\": \"https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-13T00:03:40.202193+00:00"
   },
   "news/ai-security/iphone-lockdown-mode-protects-washington-post-reporter": {
     "slug": "news/ai-security/iphone-lockdown-mode-protects-washington-post-reporter",
