@@ -1014,6 +1014,20 @@
     "agent_callout": "",
     "generated_at": "2026-10-06T22:56:03.748271+00:00"
   },
+  "news/ai-research/gemini-4-argon-built-to-solve-your-hardest-problems": {
+    "slug": "news/ai-research/gemini-4-argon-built-to-solve-your-hardest-problems",
+    "meta_description": "By bringing together advanced visual-semantic reasoning, deep physical understanding, and autonomous code generation, Argon unlocks new workflows...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini 4 Argon: Built to solve your hardest problems\",\n  \"description\": \"By bringing together advanced visual-semantic reasoning, deep physical understanding, and autonomous code generation, Argon unlocks new workflows...\",\n  \"datePublished\": \"2026-10-14T23:35:07.190522+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:07.190522+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-gemini-4-argon\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-gemini-4-argon\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:52.319708+00:00"
+  },
+  "news/ai-research/gemini-4-argon-for-robotics": {
+    "slug": "news/ai-research/gemini-4-argon-for-robotics",
+    "meta_description": "Gemini 4 Argon marks a step change in physical understanding, code generation, and visual-semantic reasoning—unlocking new workflows across the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini 4 Argon for Robotics\",\n  \"description\": \"Gemini 4 Argon marks a step change in physical understanding, code generation, and visual-semantic reasoning—unlocking new workflows across the...\",\n  \"datePublished\": \"2026-10-14T23:35:05.445529+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:05.445529+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-4-argon-for-robotics\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-4-argon-for-robotics\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:52.816152+00:00"
+  },
   "news/ai-research/gemini-4-argon-our-next-era-of-frontier-intelligence": {
     "slug": "news/ai-research/gemini-4-argon-our-next-era-of-frontier-intelligence",
     "meta_description": "Gemini 4 Argon’s capabilities across coding, reasoning, and multimodality and its ability to sustain long, multi-step tasks enable it to excel...",
@@ -1244,6 +1258,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemma Scope 2: helping the AI safety community deepen understanding of complex language model behavior\",\n  \"description\": \"Announcing a new, open suite of tools for language model interpretability Large Language Models (LLMs) are capable of incredible feats of...\",\n  \"datePublished\": \"2025-12-19T12:03:28.051570+00:00\",\n  \"dateModified\": \"2025-12-19T12:03:28.051570+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T23:40:47.326381+00:00"
+  },
+  "news/ai-research/hiro-acev2-simulating-extreme-weather-at-3-km-resolution-for-a-fraction-of-the-cost": {
+    "slug": "news/ai-research/hiro-acev2-simulating-extreme-weather-at-3-km-resolution-for-a-fraction-of-the-cost",
+    "meta_description": "🤗 Models | 📄 Paper | 📓 Tutorial notebooks | 🌎 Demo [](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost\",\n  \"description\": \"🤗 Models | 📄 Paper | 📓 Tutorial notebooks | 🌎 Demo [](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40...\",\n  \"datePublished\": \"2026-10-14T23:35:08.483571+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:08.483571+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/allenai/hiro-acev2\"\n  },\n  \"url\": \"https://huggingface.co/blog/allenai/hiro-acev2\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:51.091462+00:00"
   },
   "news/ai-research/holo3-1-fast-local-computer-use-agents": {
     "slug": "news/ai-research/holo3-1-fast-local-computer-use-agents",
@@ -2960,6 +2981,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:41.183820+00:00"
   },
+  "news/ai-research/researchers-improve-weather-forecasts-looking-two-to-six-weeks-out": {
+    "slug": "news/ai-research/researchers-improve-weather-forecasts-looking-two-to-six-weeks-out",
+    "meta_description": "In 2021, Texas suffered the worst energy infrastructure failure in state history, following three severe winter storms in February.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Researchers improve weather forecasts looking two to six weeks out\",\n  \"description\": \"In 2021, Texas suffered the worst energy infrastructure failure in state history, following three severe winter storms in February.\",\n  \"datePublished\": \"2026-10-14T23:35:08.069469+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:08.069469+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014\"\n  },\n  \"url\": \"https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:51.909979+00:00"
+  },
   "news/ai-research/robot-make-me-a-chair": {
     "slug": "news/ai-research/robot-make-me-a-chair",
     "meta_description": "Computer-aided design (CAD) systems are tried-and-true tools used to design many of the physical objects we use each day.",
@@ -2973,6 +3001,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Run a vLLM Server on HF Jobs in One Command\",\n  \"description\": \"You can spin up a private, OpenAI-compatible LLM endpoint on Hugging Face infrastructure with a single command — no servers to provision, no...\",\n  \"datePublished\": \"2026-06-27T04:22:54.244017+00:00\",\n  \"dateModified\": \"2026-06-27T04:22:54.244017+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/vllm-jobs\"\n  },\n  \"url\": \"https://huggingface.co/blog/vllm-jobs\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-27T04:23:26.066781+00:00"
+  },
+  "news/ai-research/run-fast-private-agents-on-device-with-lfm2-5-24b-a2b": {
+    "slug": "news/ai-research/run-fast-private-agents-on-device-with-lfm2-5-24b-a2b",
+    "meta_description": "LFM2.5-24B-A2B is a 24B-parameter reasoning model with just 2B active parameters, built for fast, private agents on-device.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Run fast, private agents on-device with LFM2.5-24B-A2B\",\n  \"description\": \"LFM2.5-24B-A2B is a 24B-parameter reasoning model with just 2B active parameters, built for fast, private agents on-device.\",\n  \"datePublished\": \"2026-10-14T23:35:07.834066+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:07.834066+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b\"\n  },\n  \"url\": \"https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:51.517001+00:00"
   },
   "news/ai-research/safetensors-is-joining-the-pytorch-foundation": {
     "slug": "news/ai-research/safetensors-is-joining-the-pytorch-foundation",
@@ -6943,6 +6978,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T03:44:11.855018+00:00"
   },
+  "news/ai-security/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say": {
+    "slug": "news/ai-security/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say",
+    "meta_description": "Saudi national Abdulrahman Alfozan was arrested Friday and terminated by OpenAI. By Associated Press | October 13, 2026 (7:07 PM ET) + Flipboard +...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say\",\n  \"description\": \"Saudi national Abdulrahman Alfozan was arrested Friday and terminated by OpenAI. By Associated Press | October 13, 2026 (7:07 PM ET) + Flipboard +...\",\n  \"datePublished\": \"2026-10-14T23:34:44.145738+00:00\",\n  \"dateModified\": \"2026-10-14T23:34:44.145738+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say\"\n  },\n  \"url\": \"https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:49.136926+00:00"
+  },
   "news/ai-security/encrypted-client-hello-ready-for-prime-time": {
     "slug": "news/ai-security/encrypted-client-hello-ready-for-prime-time",
     "meta_description": "Last week, two related RFCs were published: RFC 9848 : Bootstrapping TLS Encrypted ClientHello with DNS Service Bindings RFC 9849 : TLS Encrypted...",
@@ -7915,6 +7957,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike\",\n  \"description\": \"The Belarus-aligned threat group known as Ghostwriter has been attributed to a fresh set of attacks targeting governmental organizations in...\",\n  \"datePublished\": \"2026-05-14T22:13:51.295397+00:00\",\n  \"dateModified\": \"2026-05-14T22:13:51.295397+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-14T22:14:49.178071+00:00"
+  },
+  "news/ai-security/github-tightens-npm-publishing-after-flaw-left-1500-packages-vulnerable-to-hijacking": {
+    "slug": "news/ai-security/github-tightens-npm-publishing-after-flaw-left-1500-packages-vulnerable-to-hijacking",
+    "meta_description": "GitHub has taken the step of expiring unvalidated npm trusted publishing configurations 48 hours after creation after researchers found that it...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking\",\n  \"description\": \"GitHub has taken the step of expiring unvalidated npm trusted publishing configurations 48 hours after creation after researchers found that it...\",\n  \"datePublished\": \"2026-10-14T23:34:42.909381+00:00\",\n  \"dateModified\": \"2026-10-14T23:34:42.909381+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:50.325770+00:00"
   },
   "news/ai-security/github-to-disable-npm-install-scripts-by-default-to-stop-supply-chain-attacks": {
     "slug": "news/ai-security/github-to-disable-npm-install-scripts-by-default-to-stop-supply-chain-attacks",
@@ -11234,6 +11283,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-28T08:16:10.362888+00:00"
   },
+  "news/ai-security/microsoft-patches-more-than-1400-security-flaws": {
+    "slug": "news/ai-security/microsoft-patches-more-than-1400-security-flaws",
+    "meta_description": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Patches More Than 1,400 Security Flaws\",\n  \"description\": \"Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software.\",\n  \"datePublished\": \"2026-10-14T23:34:43.539987+00:00\",\n  \"dateModified\": \"2026-10-14T23:34:43.539987+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:49.526526+00:00"
+  },
   "news/ai-security/microsoft-patches-record-1413-flaws-including-exploited-windows-shell-bug": {
     "slug": "news/ai-security/microsoft-patches-record-1413-flaws-including-exploited-windows-shell-bug",
     "meta_description": "Microsoft on Tuesday shattered its own Patch Tuesday record by shipping patches for a whopping 1,413 vulnerabilities , including one that it said...",
@@ -13473,6 +13529,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Samsung Mobile Flaw Exploited as Zero-Day to Deploy LANDFALL Android Spyware\",\n  \"description\": \"A now-patched security flaw in Samsung Galaxy Android devices was exploited as a zero-day to deliver a \\\"commercial-grade\\\" Android spyware dubbed...\",\n  \"datePublished\": \"2025-11-12T22:51:24.877766+00:00\",\n  \"dateModified\": \"2025-11-12T22:51:24.877766+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/samsung-zero-click-flaw-exploited-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/samsung-zero-click-flaw-exploited-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T00:29:07.648122+00:00"
+  },
+  "news/ai-security/sap-discloses-critical-cvss-10-flaw-in-cloud-sdk-for-python-allowing-oauth2-credential-theft": {
+    "slug": "news/ai-security/sap-discloses-critical-cvss-10-flaw-in-cloud-sdk-for-python-allowing-oauth2-credential-theft",
+    "meta_description": "Swati Khandelwal Oct 13, 2026 Vulnerability / Cloud Security A flaw in SAP's Cloud SDK for Python can send an application's OAuth2 client...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft\",\n  \"description\": \"Swati Khandelwal Oct 13, 2026 Vulnerability / Cloud Security A flaw in SAP's Cloud SDK for Python can send an application's OAuth2 client...\",\n  \"datePublished\": \"2026-10-14T23:34:42.614698+00:00\",\n  \"dateModified\": \"2026-10-14T23:34:42.614698+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:49.929889+00:00"
   },
   "news/ai-security/sap-related-npm-packages-compromised-in-credential-stealing-supply-chain-attack": {
     "slug": "news/ai-security/sap-related-npm-packages-compromised-in-credential-stealing-supply-chain-attack",
@@ -16484,6 +16547,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-04T04:56:04.509043+00:00"
   },
+  "news/ai-security/xandr-fined-a-record-eur8-6-million-for-relaying-grindr-data-revealing-sexual-orientation": {
+    "slug": "news/ai-security/xandr-fined-a-record-eur8-6-million-for-relaying-grindr-data-revealing-sexual-orientation",
+    "meta_description": "Ravie Lakshmanan Oct 13, 2026 Data Privacy / Compliance The Norwegian Data Protection Authority (DPA) has fined Xandr, an advertising unit owned...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation\",\n  \"description\": \"Ravie Lakshmanan Oct 13, 2026 Data Privacy / Compliance The Norwegian Data Protection Authority (DPA) has fined Xandr, an advertising unit owned...\",\n  \"datePublished\": \"2026-10-14T23:34:43.221608+00:00\",\n  \"dateModified\": \"2026-10-14T23:34:43.221608+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:50.701049+00:00"
+  },
   "news/ai-security/yara-x-1-11-0-release-hash-function-warnings": {
     "slug": "news/ai-security/yara-x-1-11-0-release-hash-function-warnings",
     "meta_description": "YARA-X's 1.11.0 release brings a new feature: hash function warnings. When you write a YARA rule to match a cryptographic hash (either the full...",
@@ -17156,6 +17226,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-17T06:20:29.284496+00:00"
   },
+  "news/comp-journalism/business-is-booming-for-free-video-first-specialist-newsbrand-electrifying": {
+    "slug": "news/comp-journalism/business-is-booming-for-free-video-first-specialist-newsbrand-electrifying",
+    "meta_description": "Electrifying Specialist online newsbrand covering the electric car market Electrifying is said to be turning a healthy profit for its founders...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Business is booming for free, video-first specialist newsbrand Electrifying\",\n  \"description\": \"Electrifying Specialist online newsbrand covering the electric car market Electrifying is said to be turning a healthy profit for its founders...\",\n  \"datePublished\": \"2026-10-14T23:35:39.839371+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:39.839371+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/b2b/newsbrand-electrifying-grows-revenue-video-llm-strategy\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/b2b/newsbrand-electrifying-grows-revenue-video-llm-strategy\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:54.383082+00:00"
+  },
   "news/comp-journalism/by-what-metric-features-source-an-opennews-project": {
     "slug": "news/comp-journalism/by-what-metric-features-source-an-opennews-project",
     "meta_description": "“Where did you learn to teach?” This is the question that the authors of this post–all recently appointed professors of data journalism–found...",
@@ -17281,6 +17358,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cision investigates and MyJobQuote maintains silence over fake experts network\",\n  \"description\": \"Stories featuring dubious experts US PR services giant Cision is now investigating the press releases it hosts for the site MyJobQuote which...\",\n  \"datePublished\": \"2025-12-27T12:03:47.273706+00:00\",\n  \"dateModified\": \"2025-12-27T12:03:47.273706+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/cision-investigates-and-myjobquote-maintains-silence-over-fake-experts-network\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/cision-investigates-and-myjobquote-maintains-silence-over-fake-experts-network\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:07.667312+00:00"
+  },
+  "news/comp-journalism/city-university-ends-newspaper-journalism-post-grad-after-44-years": {
+    "slug": "news/comp-journalism/city-university-ends-newspaper-journalism-post-grad-after-44-years",
+    "meta_description": "City St George’s University has ended its Newspaper Journalism MA after 44 years, replacing it with a Journalism MA Course.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"City University ends Newspaper Journalism post grad after 44 years\",\n  \"description\": \"City St George’s University has ended its Newspaper Journalism MA after 44 years, replacing it with a Journalism MA Course.\",\n  \"datePublished\": \"2026-10-14T23:35:41.168912+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:41.168912+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/city-university-ends-newspaper-ma-after-50-years\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/city-university-ends-newspaper-ma-after-50-years\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:53.207702+00:00"
   },
   "news/comp-journalism/clandestine-airstrips-a-mexican-mega-leak-and-a-crisis-of-unidentified-missing-people-2025s-best-investigative-stories-in-spanish": {
     "slug": "news/comp-journalism/clandestine-airstrips-a-mexican-mega-leak-and-a-crisis-of-unidentified-missing-people-2025s-best-investigative-stories-in-spanish",
@@ -20999,6 +21083,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T22:04:43.729447+00:00"
   },
+  "news/comp-journalism/two-creators-went-to-nyus-business-school-then-decided-to-make-a-show-about-the-news": {
+    "slug": "news/comp-journalism/two-creators-went-to-nyus-business-school-then-decided-to-make-a-show-about-the-news",
+    "meta_description": "The data is in : News creators and influencers are a major source of news for Americans, especially people under 30. This is the latest edition of...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Two creators went to NYU’s business school, then decided to make a show about the news\",\n  \"description\": \"The data is in : News creators and influencers are a major source of news for Americans, especially people under 30. This is the latest edition of...\",\n  \"datePublished\": \"2026-10-14T23:35:37.130696+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:37.130696+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/two-creators-went-to-nyus-business-school-then-decided-to-make-a-show-about-the-news\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/two-creators-went-to-nyus-business-school-then-decided-to-make-a-show-about-the-news\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:53.959103+00:00"
+  },
   "news/comp-journalism/two-waves-of-bombing-new-videos-reveal-further-details-about-iran-school-strike": {
     "slug": "news/comp-journalism/two-waves-of-bombing-new-videos-reveal-further-details-about-iran-school-strike",
     "meta_description": "Bellingcat has geolocated and verified two new videos showing the deadly strikes that hit an Iranian Revolutionary Guard Corps (IRGC) compound as...",
@@ -21257,6 +21348,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What I’ve learned: Science writer Deborah Cohen says ‘arseholes’ keep her motivated\",\n  \"description\": \"Dr Deborah Cohen. Picture: Submitted Former Newsnight correspondent and British Medical Journal investigations editor Deborah Cohen says “powerful...\",\n  \"datePublished\": \"2026-10-08T07:02:35.079743+00:00\",\n  \"dateModified\": \"2026-10-08T07:02:35.079743+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news-leaders/what-ive-learned-science-writer-deborah-cohen-says-arseholes-keep-her-motivated\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news-leaders/what-ive-learned-science-writer-deborah-cohen-says-arseholes-keep-her-motivated\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-08T07:02:52.205073+00:00"
+  },
+  "news/comp-journalism/what-ive-learned-susie-boniface-says-be-proud-every-day-or-go-into-pr": {
+    "slug": "news/comp-journalism/what-ive-learned-susie-boniface-says-be-proud-every-day-or-go-into-pr",
+    "meta_description": "Headshot of Susie Boniface. Picture: Submitted Freelance investigative journalist Susie Boniface says if journalists have “only one thing to be...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What I’ve learned: Susie Boniface says be proud every day ‘or go into PR’\",\n  \"description\": \"Headshot of Susie Boniface. Picture: Submitted Freelance investigative journalist Susie Boniface says if journalists have “only one thing to be...\",\n  \"datePublished\": \"2026-10-14T23:35:38.427450+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:38.427450+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news-leaders/what-ive-learned-susie-boniface-says-be-proud-every-day-or-go-into-pr\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news-leaders/what-ive-learned-susie-boniface-says-be-proud-every-day-or-go-into-pr\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-14T23:35:53.588601+00:00"
   },
   "news/comp-journalism/what-ive-learned-ttg-boss-daniel-pearce-says-finding-our-purpose-was-business-turning-point": {
     "slug": "news/comp-journalism/what-ive-learned-ttg-boss-daniel-pearce-says-finding-our-purpose-was-business-turning-point",

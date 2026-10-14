@@ -6,7 +6,7 @@ exception: true
 title: "An Open Letter to [Redacted] Township School District"
 subtitle: "A request for institutional accountability for peer violence, school responses, head injuries, and educational consequences during 1988–1992"
 date: 2026-09-27
-lastmod: 2026-10-07
+lastmod: 2026-10-14
 author: "Ekewaka Lono"
 type: ou-article
 draft: false
@@ -89,7 +89,7 @@ structured_data_graph:
     description: A request for institutional accountability for peer violence and the school’s treatment
       of the targeted child.
     datePublished: '2026-09-27T00:00:00-10:00'
-    dateModified: '2026-10-07T00:00:00-10:00'
+    dateModified: '2026-10-14T00:00:00-10:00'
     author:
       '@type': Person
       name: Ekewaka Lono
@@ -113,15 +113,70 @@ sitemap:
   changefreq: monthly
   priority: 0.8
 
-modified_display: "October 7, 2026"
+modified_display: "October 14, 2026"
 
-article_modified_time: "2026-10-07T00:00:00-10:00"
+article_modified_time: "2026-10-14T00:00:00-10:00"
 ---
 ![An Open Letter to [Redacted] Township School District — A confidential student records folder with redactions and an official open letter manuscript on an administrative conference table, with an empty school hallway and library in the background.](open-letter-school-district.jpg)
 
 > **Companion articles:** This open letter accompanies [The Shift They Taught Him](/personal-essays/the-shift-they-taught-him/) and [The Body Keeps the Receipts](/personal-essays/the-body-keeps-the-receipts/), which examine the narrative and research on possible neurobiological and psychological mechanisms relevant to the injuries and later symptoms described here.
 
 > **Editorial & Transmittal Note:** The following formal instrument of inquiry and records audit was transmitted directly to the designated statutory officers of the school district on September 27, 2026. Non-author personal identifiers, administrative email addresses, and specific municipal designations have been redacted for public publication.
+
+### Correspondence update — October 14, 2026
+
+The correspondence record now includes the original transmission, a follow-up requesting acknowledgement, and two automated delivery-failure notices. The following timeline summarizes those four records. All times below are Hawaiʻi Standard Time (UTC−10:00).
+
+| Record | Date and time | Documented event |
+| --- | --- | --- |
+| 1. Original email | September 27, 2026, 8:28:24 a.m. | The inquiry reproduced below was sent jointly to the district’s designated Anti-Bullying Specialist and Anti-Bullying Coordinator and Director of Special Services. The retained sent message documents transmission; it does not establish receipt or review. |
+| 2. Follow-up | October 14, 2026, 11:43:54 a.m. | A reply in the same email thread was sent to both officials, requesting acknowledgement of receipt: “Following up for acknowledgement on receipt of the inquiry.” |
+| 3. Delivery-failure notice: Coordinator | October 14, 2026, 11:44:06 a.m. | An automated notice reported “Message blocked” for the Coordinator’s address and returned status `550 5.7.1`. |
+| 4. Delivery-failure notice: Specialist | October 14, 2026, 11:44:06 a.m. | A separate automated notice reported “Message blocked” for the Specialist’s address and returned the same status, `550 5.7.1`. |
+
+Both notices arrived twelve seconds after the follow-up’s recorded send time. Each states that a user or domain policy prohibited the message and labels the diagnostic as a response from the recipient enterprise administrator. Their attached headers identify the October 14 follow-up as the affected message. These records document rejection of that follow-up for both recipients. They do not establish whether the September 27 email was delivered or read, when the policy took effect, who configured it, or whether it specifically targeted this correspondence.
+
+#### Selected technical evidence
+
+The following excerpts preserve the thread linkage, the shared Base64 body-hash value recorded in the returned headers, and the distinct SMTP diagnostic identifiers. Personal names, sender and recipient email addresses, district domains, postal addresses, and telephone numbers are omitted. The opaque Message-ID values below identify messages rather than personal mailboxes.
+
+```text
+Original message — September 27, 2026:
+Message-ID: <CAPpYJk+nZnoEv9MPxCEWht0i8OpEiKMOQCRVuwLOWsGOVttK7A@mail.gmail.com>
+
+Follow-up — October 14, 2026:
+Message-ID: <CAPpYJk+msrVeAuM05gr+ZkokY2u+Y5gBSdU3Wwdfuaz29xU2Dw@mail.gmail.com>
+In-Reply-To: <CAPpYJk+nZnoEv9MPxCEWht0i8OpEiKMOQCRVuwLOWsGOVttK7A@mail.gmail.com>
+
+Returned headers in both failure notices — selected DKIM fields:
+a=rsa-sha256; c=relaxed/relaxed;
+bh=7oturFJSL/DLQpXUKN2q/ldYaP1FeuWlRjb3GOgT6uk=;
+
+Coordinator failure notice — complete SMTP diagnostic:
+550 5.7.1 The user or domain that you are sending to (or from) has a policy that prohibited the mail that you sent. Please contact your domain administrator for further details. For more information, go to https://support.google.com/a/answer/172179 586e51a60fabf-4a6dc999473sor3668434fac.0 - gsmtp
+
+Specialist failure notice — complete SMTP diagnostic:
+550 5.7.1 The user or domain that you are sending to (or from) has a policy that prohibited the mail that you sent. Please contact your domain administrator for further details. For more information, go to https://support.google.com/a/answer/172179 5614622812f47-52ad53a2264sor2795142b6e.9 - gsmtp
+```
+
+These are selected excerpts from the four retained source records. Both SMTP diagnostic messages are reproduced in full. The body-hash value is reproduced as recorded; these excerpts alone do not provide independent cryptographic verification of the correspondence. The full email bodies, signatures, and encoded image attachments are omitted from this public update.
+
+#### Source-record preservation and integrity
+
+Byte-for-byte copies of the four raw email source files supplied for this update are archived separately from the public site. The supplied files have `.md` filenames but contain email headers and MIME content; the fingerprints below cover their exact supplied bytes, before any public redaction. The archive preserves the headers, message bodies, and encoded content present in those files. Personal identifiers and full source files are withheld from this public publication.
+
+These SHA-256 fingerprints allow a subsequently disclosed source file to be compared with the record fingerprint published here. They do not independently establish authenticity, delivery, receipt, or the date on which the source file was created.
+
+| Record | Archived source filename | SHA-256 |
+| --- | --- | --- |
+| 1. Original correspondence | `0001.md` | `849b6e6349f9a38504ed449e493de8202f7e7c54c53e0c9d4ed9fba52543fc17` |
+| 2. Follow-up correspondence | `0002.md` | `bef528297dc58d0be8de2aa28ac196516ed4b2d93502c61e2114454c34bdb2d3` |
+| 3. Coordinator delivery failure | `0003.md` | `aa1dc3354bcdd147f95e0d1b074e8a61f8a08a04d61b44c49d7fcfabffe5f74e` |
+| 4. Specialist delivery failure | `0004.md` | `3d0e10a318b571f37208a08a39a0cfed5daa2159a14d719421aeb5fa82749593` |
+
+The request for a substantive institutional review and records search remains outstanding. I ask the district to identify a working channel for this correspondence, acknowledge receipt of the inquiry, and provide the requested timetable for a written response.
+
+### Original letter — September 27, 2026
 
 September 27, 2026
 

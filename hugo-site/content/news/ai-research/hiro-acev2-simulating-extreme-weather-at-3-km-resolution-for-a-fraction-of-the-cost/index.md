@@ -1,0 +1,90 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: ai-research
+date: '2026-10-14T23:35:08.483571+00:00'
+exported_at: '2026-10-14T23:35:09.770323+00:00'
+feed: https://huggingface.co/blog/feed.xml
+source_url: https://huggingface.co/blog/allenai/hiro-acev2
+structured_data:
+  about: []
+  author: ''
+  description: A Blog post by Ai2 on Hugging Face
+  headline: 'HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction
+    of the cost'
+  keywords: []
+  main_image: ''
+  original_source: https://huggingface.co/blog/allenai/hiro-acev2
+  publisher:
+    logo: /favicon.ico
+    name: GTCode
+title: 'HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of
+  the cost'
+updated_at: '2026-10-14T23:35:08.483571+00:00'
+url_hash: 672ebf75c430cf70c5939989b244112c7eac909f
+---
+
+🤗
+
+[Models](https://huggingface.co/allenai/HiRO-ACEv2)
+
+| 📄
+
+[Paper](http://arxiv.org/abs/2610.17693)
+
+| 📓
+
+[Tutorial notebooks](https://ai2cm.github.io/ace/)
+
+| 🌎
+
+[Demo](http://ace.allen.ai)
+
+[![HiRO-ACEv2: Downscaling coarse global climate outputs into fine weather detail.](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png)](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png)
+
+We introduce
+[**HiRO-ACEv2**](https://huggingface.co/allenai/HiRO-ACEv2)
+, the newest update to our High Resolution Output Ai2 Climate Emulator (HiRO-ACE) system. HiROv2 can reproduce even extremely rare rain, wind, and pressure events with high accuracy, while the full system can generate global 3 km climate data at about 1/300th the cost of X-SHiELD, a high-resolution global atmospheric model that explicitly simulates storms and other small-scale weather.
+
+HiRO-ACE,
+[introduced earlier in 2026](https://allenai.org/blog/hiro-ace)
+, has two parts: ACE, an AI model that operates at a coarser 100 km resolution, and HiRO, a model that sharpens those coarse outputs into fine 3 km detail. The biggest change in HiRO-ACEv2 is the new downscaling model, HiROv2, which can now 1) predict several high-resolution fields at once instead of just rainfall, so it can capture a much wider range of extreme weather, and 2) has improved skill in predicting extreme events.
+
+Our main focus with HiRO-ACEv2 was to simulate extreme events well. Changes to how we train HiROv2 improved its ability to reproduce the most intense rain, wind, and pressure values. When given coarsened X-SHiELD data, it matches the target simulation's high-resolution statistics to within 3%, even for events so rare they occur only once in a million data points. It also accurately estimates the total energy of tropical cyclones, including storms it never saw during training, and generates hurricanes with realistic eyes and rain bands, though winds and pressure around the eye remain somewhat more lopsided than in X-SHiELD. Additionally, HiROv2 realistically generates strong winds flowing down mountain slopes.
+
+We also trained an updated version of ACE for this system. Over a 10-year simulation, its hurricanes, average climate patterns, and overall distributions of rain, wind, and pressure all line up well with X-SHiELD. That tells us ACE's coarse simulations are a solid foundation for producing long-term high-resolution climate data.
+
+Putting HiROv2 and ACE together, we generated a full year of global 3 km data. Its statistics closely match X-SHiELD's, even though HiRO was working from a simulation ACE ran on its own rather than from real X-SHiELD data. Across a 10-year run, the energy of HiRO-ACEv2's hurricanes is comparable to X-SHiELD's over the same period, and snapshots from that run show a variety of other extreme events that resemble those in X-SHiELD.
+
+[![An example of a strong hurricane in the North Atlantic, generated during the 10-year HiRO-ACEv2 simulation.](https://www.datocms-assets.com/64837/1791928654-hiro-acev2-blog-draft-google-docs-image-2.png?fit=max&amp;h=810&amp;w=1550)](https://www.datocms-assets.com/64837/1791928654-hiro-acev2-blog-draft-google-docs-image-2.png?fit=max&amp;h=810&amp;w=1550)
+
+*An example of a strong hurricane in the North Atlantic, generated during the 10-year HiRO-ACEv2 simulation.*
+
+Overall, HiRO-ACEv2 offers researchers a flexible and inexpensive way to generate many versions of high-resolution rain, wind, and pressure data for extreme events over 10 years or more. Producing global high-resolution data with it costs roughly 300 times less than running X-SHiELD. If only one region is needed, the savings can be more than a hundred times greater, depending on the size of the area. We're also working on a streamlined version of HiROv2 that could make it more than ten times faster still.
+
+We still have future work ahead of us: because HiRO learned from X-SHiELD, it only works with the version of ACE tuned to match X-SHiELD. That means it can't yet produce high-resolution data for other climates, such as a warmer future or the historical record in datasets like ERA5. Next, we plan to train on new X-SHiELD datasets, including one simulating a world 4°C warmer, so the system can handle different climates. We also plan to add outputs like near-surface temperature and snow and ice, which would allow for even more uses, such as snowpack prediction.
+
+## Visualizing and using HiRO outputs
+
+[![Simulated 10 m wind speed over Baja California in the ACE data visualizer: ACE2 at 100 km resolution on the main map and HiRO-ACEv2 at 3 km in the inset.](https://www.datocms-assets.com/64837/1791928757-hiro-acev2-blog-draft-google-docs-image-3.png?fit=max&amp;h=810&amp;w=1550)](https://www.datocms-assets.com/64837/1791928757-hiro-acev2-blog-draft-google-docs-image-3.png?fit=max&amp;h=810&amp;w=1550)
+
+*Simulated 10 m wind speed over Baja California in the ACE data visualizer: ACE2 at 100 km resolution on the main map and HiRO-ACEv2 at 3 km in the inset.*
+
+[![A simulated storm over the northeastern Pacific in the ACE data visualizer. The main map shows 10 m wind speed at 100 km resolution; the 3 km HiRO-ACEv2 inset shows finer structure within the storm.](https://www.datocms-assets.com/64837/1791928822-hiro-acev2-blog-draft-google-docs-image-4.png?fit=max&amp;h=810&amp;w=1550)](https://www.datocms-assets.com/64837/1791928822-hiro-acev2-blog-draft-google-docs-image-4.png?fit=max&amp;h=810&amp;w=1550)
+
+*A simulated storm over the northeastern Pacific in the ACE data visualizer. The main map shows 10 m wind speed at 100 km resolution; the 3 km HiRO-ACEv2 inset shows finer structure within the storm.*
+
+To make it easy to see what HiRO produces without running any inference, we built a
+[web demo](http://ace.allen.ai)
+that shows pre-generated precipitation, wind, and sea-level pressure output from HiROv1 and HiROv2 side by side with X-SHiELD, the simulation they were trained on. The demo complements the quantitative comparisons in our tech report: it offers a quick visual check of how the outputs look, and lets users zoom in on their own region of interest to judge performance there.
+
+For more in-depth analysis, the models are available to
+[download](https://huggingface.co/allenai/HiRO-ACEv2)
+, and our
+[tutorial notebooks](https://ai2cm.github.io/ace/)
+walk through how to run them.
