@@ -5956,6 +5956,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:28.179179+00:00"
   },
+  "news/ai-security/cisa-urges-immediate-ivanti-connect-secure-updates-as-honeypots-log-105-exploit-attempts": {
+    "slug": "news/ai-security/cisa-urges-immediate-ivanti-connect-secure-updates-as-honeypots-log-105-exploit-attempts",
+    "meta_description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts\",\n  \"description\": \"The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti...\",\n  \"datePublished\": \"2026-10-15T04:02:38.206269+00:00\",\n  \"dateModified\": \"2026-10-15T04:02:38.206269+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T04:03:29.729926+00:00"
+  },
   "news/ai-security/cisa-warns-of-active-exploitation-of-gogs-vulnerability-enabling-code-execution": {
     "slug": "news/ai-security/cisa-warns-of-active-exploitation-of-gogs-vulnerability-enabling-code-execution",
     "meta_description": "Jan 13, 2026 Ravie Lakshmanan Vulnerability / Network Security The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has warned of...",
@@ -6585,6 +6592,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CTM360 Exposes a Global WhatsApp Hijacking Campaign: HackOnChat\",\n  \"description\": \"Nov 20, 2025 The Hacker News Online Fraud / Web Security CTM360 has identified a rapidly expanding WhatsApp account-hacking campaign targeting...\",\n  \"datePublished\": \"2025-11-21T00:00:08.414956+00:00\",\n  \"dateModified\": \"2025-11-21T00:00:08.414956+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/ctm360-exposes-global-whatsapp.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/ctm360-exposes-global-whatsapp.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:19.028606+00:00"
+  },
+  "news/ai-security/curl-patches-http-2-upload-flaw-after-poc-demonstrates-client-side-code-execution": {
+    "slug": "news/ai-security/curl-patches-http-2-upload-flaw-after-poc-demonstrates-client-side-code-execution",
+    "meta_description": "A flaw in how curl handles HTTP/2 uploads lets a malicious server receiving an upload corrupt the client's memory, and the researcher who reported...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution\",\n  \"description\": \"A flaw in how curl handles HTTP/2 uploads lets a malicious server receiving an upload corrupt the client's memory, and the researcher who reported...\",\n  \"datePublished\": \"2026-10-15T04:02:38.513843+00:00\",\n  \"dateModified\": \"2026-10-15T04:02:38.513843+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T04:03:30.913291+00:00"
   },
   "news/ai-security/cybercrime-groups-using-vishing-and-sso-abuse-in-rapid-saas-extortion-attacks": {
     "slug": "news/ai-security/cybercrime-groups-using-vishing-and-sso-abuse-in-rapid-saas-extortion-attacks",
@@ -8426,6 +8440,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Actively Exploiting 7-Zip Symbolic Link–Based RCE Vulnerability (CVE-2025-11001)\",\n  \"description\": \"Nov 19, 2025 Ravie Lakshmanan Vulnerability / Threat Intelligence A recently disclosed security flaw impacting 7-Zip has come under active...\",\n  \"datePublished\": \"2025-11-20T00:00:06.500072+00:00\",\n  \"dateModified\": \"2025-11-20T00:00:06.500072+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/hackers-actively-exploiting-7-zip.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/hackers-actively-exploiting-7-zip.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:02.523927+00:00"
+  },
+  "news/ai-security/hackers-backdoor-nextcloud-servers-through-critical-flaw-in-collaboras-built-in-code-app": {
+    "slug": "news/ai-security/hackers-backdoor-nextcloud-servers-through-critical-flaw-in-collaboras-built-in-code-app",
+    "meta_description": "Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server , to plant web shells on Nextcloud servers.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App\",\n  \"description\": \"Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server , to plant web shells on Nextcloud servers.\",\n  \"datePublished\": \"2026-10-15T04:02:37.285316+00:00\",\n  \"dateModified\": \"2026-10-15T04:02:37.285316+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T04:03:31.305601+00:00"
   },
   "news/ai-security/hackers-exploit-c-ares-dll-side-loading-to-bypass-security-and-deploy-malware": {
     "slug": "news/ai-security/hackers-exploit-c-ares-dll-side-loading-to-bypass-security-and-deploy-malware",
@@ -11149,6 +11170,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Discloses DNS-Based ClickFix Attack Using Nslookup for Malware Staging\",\n  \"description\": \"Microsoft has disclosed details of a new version of the ClickFix social engineering tactic in which the attackers trick unsuspecting users into...\",\n  \"datePublished\": \"2026-02-25T05:16:35.909995+00:00\",\n  \"dateModified\": \"2026-02-25T05:16:35.909995+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/microsoft-discloses-dns-based-clickfix.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/microsoft-discloses-dns-based-clickfix.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:23.175721+00:00"
+  },
+  "news/ai-security/microsoft-disrupts-3-phishing-kits-linked-to-over-1-billion-scam-messages": {
+    "slug": "news/ai-security/microsoft-disrupts-3-phishing-kits-linked-to-over-1-billion-scam-messages",
+    "meta_description": "Microsoft and Health-ISAC, along with the Japan Cybercrime Control Center (JC3) and a coalition of private sector companies, such as Resecurity,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Disrupts 3 Phishing Kits Linked to Over 1 Billion Scam Messages\",\n  \"description\": \"Microsoft and Health-ISAC, along with the Japan Cybercrime Control Center (JC3) and a coalition of private sector companies, such as Resecurity,...\",\n  \"datePublished\": \"2026-10-15T04:02:37.612325+00:00\",\n  \"dateModified\": \"2026-10-15T04:02:37.612325+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T04:03:30.511919+00:00"
   },
   "news/ai-security/microsoft-exchange-flaw-lets-authenticated-attackers-read-other-users-mailboxes": {
     "slug": "news/ai-security/microsoft-exchange-flaw-lets-authenticated-attackers-read-other-users-mailboxes",
@@ -15314,6 +15342,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"U.S. Offers Up to $10 Million for Tips on Zhang Yu, Charged in HAFNIUM Hacks\",\n  \"description\": \"Swati Khandelwal Oct 08, 2026 Cybercrime / Cyber Espionage The U.S. State Department is offering up to $10 million for information leading to the...\",\n  \"datePublished\": \"2026-10-08T08:36:44.960996+00:00\",\n  \"dateModified\": \"2026-10-08T08:36:44.960996+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-08T08:37:37.700673+00:00"
+  },
+  "news/ai-security/u-s-shuts-down-over-40-laptop-farms-charges-14-in-north-korean-it-worker-fraud": {
+    "slug": "news/ai-security/u-s-shuts-down-over-40-laptop-farms-charges-14-in-north-korean-it-worker-fraud",
+    "meta_description": "The U.S. Department of Justice (DoJ) on Tuesday charged 14 people and seized about 187 computers as part of its ongoing efforts to disrupt North...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud\",\n  \"description\": \"The U.S. Department of Justice (DoJ) on Tuesday charged 14 people and seized about 187 computers as part of its ongoing efforts to disrupt North...\",\n  \"datePublished\": \"2026-10-15T04:02:37.920733+00:00\",\n  \"dateModified\": \"2026-10-15T04:02:37.920733+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T04:03:30.127428+00:00"
   },
   "news/ai-security/u-s-soldier-gets-70-months-in-prison-for-at-t-verizon-extortions": {
     "slug": "news/ai-security/u-s-soldier-gets-70-months-in-prison-for-at-t-verizon-extortions",
