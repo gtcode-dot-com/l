@@ -127,12 +127,25 @@ article_modified_time: "2026-10-14T00:00:00-10:00"
 
 The correspondence record now includes the original transmission, a follow-up requesting acknowledgement, and two automated delivery-failure notices. The following timeline summarizes those four records. All times below are Hawaiʻi Standard Time (UTC−10:00).
 
-| Record | Date and time | Documented event |
-| --- | --- | --- |
-| 1. Original email | September 27, 2026, 8:28:24 a.m. | The inquiry reproduced below was sent jointly to the district’s designated Anti-Bullying Specialist and Anti-Bullying Coordinator and Director of Special Services. The retained sent message documents transmission; it does not establish receipt or review. |
-| 2. Follow-up | October 14, 2026, 11:43:54 a.m. | A reply in the same email thread was sent to both officials, requesting acknowledgement of receipt: “Following up for acknowledgement on receipt of the inquiry.” |
-| 3. Delivery-failure notice: Coordinator | October 14, 2026, 11:44:06 a.m. | An automated notice reported “Message blocked” for the Coordinator’s address and returned status `550 5.7.1`. |
-| 4. Delivery-failure notice: Specialist | October 14, 2026, 11:44:06 a.m. | A separate automated notice reported “Message blocked” for the Specialist’s address and returned the same status, `550 5.7.1`. |
+**1. Original email**  
+September 27, 2026, 8:28:24 a.m.
+
+The inquiry reproduced below was sent jointly to the district’s designated Anti-Bullying Specialist and Anti-Bullying Coordinator and Director of Special Services. The retained sent message documents transmission; it does not establish receipt or review.
+
+**2. Follow-up**  
+October 14, 2026, 11:43:54 a.m.
+
+A reply in the same email thread was sent to both officials, requesting acknowledgement of receipt: “Following up for acknowledgement on receipt of the inquiry.”
+
+**3. Delivery-failure notice: Coordinator**  
+October 14, 2026, 11:44:06 a.m.
+
+An automated notice reported “Message blocked” for the Coordinator’s address and returned status `550 5.7.1`.
+
+**4. Delivery-failure notice: Specialist**  
+October 14, 2026, 11:44:06 a.m.
+
+A separate automated notice reported “Message blocked” for the Specialist’s address and returned the same status, `550 5.7.1`.
 
 Both notices arrived twelve seconds after the follow-up’s recorded send time. Each states that a user or domain policy prohibited the message and labels the diagnostic as a response from the recipient enterprise administrator. Their attached headers identify the October 14 follow-up as the affected message. These records document rejection of that follow-up for both recipients. They do not establish whether the September 27 email was delivered or read, when the policy took effect, who configured it, or whether it specifically targeted this correspondence.
 

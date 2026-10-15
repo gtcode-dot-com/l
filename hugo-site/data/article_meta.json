@@ -4339,6 +4339,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:57.752866+00:00"
   },
+  "news/ai-security/ai-turns-familiar-cyberattacks-into-a-race-against-time": {
+    "slug": "news/ai-security/ai-turns-familiar-cyberattacks-into-a-race-against-time",
+    "meta_description": "IBM’s Steve Wallin talks to SecurityWeek on the effect of AI-driven attacks on enterprise defenses. By Kevin Townsend | October 13, 2026 (7:00 AM...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Turns Familiar Cyberattacks Into a Race Against Time\",\n  \"description\": \"IBM’s Steve Wallin talks to SecurityWeek on the effect of AI-driven attacks on enterprise defenses. By Kevin Townsend | October 13, 2026 (7:00 AM...\",\n  \"datePublished\": \"2026-10-15T00:13:23.111018+00:00\",\n  \"dateModified\": \"2026-10-15T00:13:23.111018+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time\"\n  },\n  \"url\": \"https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:14:17.193321+00:00"
+  },
   "news/ai-security/ai-used-to-decrypt-medieval-ciphers": {
     "slug": "news/ai-security/ai-used-to-decrypt-medieval-ciphers",
     "meta_description": "Researchers are using machine learning algorithms to decrypt historical pencil-and-paper ciphers. Tags: AI , history of cryptography , machine...",
@@ -6032,6 +6039,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access\",\n  \"description\": \"Ravie Lakshmanan Feb 26, 2026 Vulnerability / Network Security A newly disclosed maximum-severity security flaw in Cisco Catalyst SD-WAN...\",\n  \"datePublished\": \"2026-03-03T06:42:41.039719+00:00\",\n  \"dateModified\": \"2026-03-03T06:42:41.039719+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:07.980795+00:00"
+  },
+  "news/ai-security/cisco-warns-of-active-attacks-exploiting-new-critical-secure-email-gateway-vulnerability": {
+    "slug": "news/ai-security/cisco-warns-of-active-attacks-exploiting-new-critical-secure-email-gateway-vulnerability",
+    "meta_description": "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability\",\n  \"description\": \"Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating...\",\n  \"datePublished\": \"2026-10-15T00:13:28.392457+00:00\",\n  \"dateModified\": \"2026-10-15T00:13:28.392457+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:14:17.582684+00:00"
   },
   "news/ai-security/cisco-warns-of-active-attacks-exploiting-unpatched-0-day-in-asyncos-email-security-appliances": {
     "slug": "news/ai-security/cisco-warns-of-active-attacks-exploiting-unpatched-0-day-in-asyncos-email-security-appliances",
@@ -10219,6 +10233,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-06T02:16:20.201346+00:00"
   },
+  "news/ai-security/isc-stormcast-for-wednesday-october-14th-2026-https-isc-sans-edu-podcastdetail-10136-wed-oct-14th": {
+    "slug": "news/ai-security/isc-stormcast-for-wednesday-october-14th-2026-https-isc-sans-edu-podcastdetail-10136-wed-oct-14th",
+    "meta_description": "ISC Stormcast For Wednesday, October 14th, 2026 &lt;https://isc.sans.edu/podcastdetail/10136&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, October 14th, 2026 https://isc.sans.edu/podcastdetail/10136, (Wed, Oct 14th)\",\n  \"description\": \"ISC Stormcast For Wednesday, October 14th, 2026 &lt;https://isc.sans.edu/podcastdetail/10136&gt;\",\n  \"datePublished\": \"2026-10-15T00:13:24.067352+00:00\",\n  \"dateModified\": \"2026-10-15T00:13:24.067352+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33424\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33424\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:14:18.336773+00:00"
+  },
   "news/ai-security/isc-stormcast-for-wednesday-october-7th-2026-https-isc-sans-edu-podcastdetail-10126-wed-oct-7th": {
     "slug": "news/ai-security/isc-stormcast-for-wednesday-october-7th-2026-https-isc-sans-edu-podcastdetail-10126-wed-oct-7th",
     "meta_description": "ISC Stormcast For Wednesday, October 7th, 2026 &lt;https://isc.sans.edu/podcastdetail/10126&gt;",
@@ -12332,6 +12353,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OceanLotus Hits Vietnam Investors With SPECTRALVIPER in FireAnt Attack\",\n  \"description\": \"The Vietnam-aligned threat actor known as OceanLotus has been attributed to two distinct campaigns that targeted domestic entities and stock...\",\n  \"datePublished\": \"2026-06-12T21:33:10.242522+00:00\",\n  \"dateModified\": \"2026-06-12T21:33:10.242522+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/06/oceanlotus-hits-vietnam-investors-with.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/06/oceanlotus-hits-vietnam-investors-with.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-12T21:34:36.218252+00:00"
+  },
+  "news/ai-security/october-2026-microsoft-patch-tuesday-tue-oct-13th": {
+    "slug": "news/ai-security/october-2026-microsoft-patch-tuesday-tue-oct-13th",
+    "meta_description": "Published : 2026-10-13. Last Updated : 2026-10-13 19:25:52 UTC by Johannes Ullrich (Version: 1) 1 comment(s) Microsoft today released patches for...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"October 2026 Microsoft Patch Tuesday, (Tue, Oct 13th)\",\n  \"description\": \"Published : 2026-10-13. Last Updated : 2026-10-13 19:25:52 UTC by Johannes Ullrich (Version: 1) 1 comment(s) Microsoft today released patches for...\",\n  \"datePublished\": \"2026-10-15T00:13:27.693085+00:00\",\n  \"dateModified\": \"2026-10-15T00:13:27.693085+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33422\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33422\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:14:18.722463+00:00"
   },
   "news/ai-security/odd-weblogic-request-possible-cve-2026-21962-exploit-attempt-or-ai-slop": {
     "slug": "news/ai-security/odd-weblogic-request-possible-cve-2026-21962-exploit-attempt-or-ai-slop",
@@ -16588,6 +16616,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation\",\n  \"description\": \"Ravie Lakshmanan Oct 13, 2026 Data Privacy / Compliance The Norwegian Data Protection Authority (DPA) has fined Xandr, an advertising unit owned...\",\n  \"datePublished\": \"2026-10-14T23:34:43.221608+00:00\",\n  \"dateModified\": \"2026-10-14T23:34:43.221608+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-14T23:35:50.701049+00:00"
+  },
+  "news/ai-security/xworm-rat-evolves-into-surveillance-platform": {
+    "slug": "news/ai-security/xworm-rat-evolves-into-surveillance-platform",
+    "meta_description": "Expanded plugin count allows the malware to monitor users’ location, stream live audio, and interact with authenticated browser sessions.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"XWorm RAT Evolves Into Surveillance Platform\",\n  \"description\": \"Expanded plugin count allows the malware to monitor users’ location, stream live audio, and interact with authenticated browser sessions.\",\n  \"datePublished\": \"2026-10-15T00:13:22.054719+00:00\",\n  \"dateModified\": \"2026-10-15T00:13:22.054719+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform\"\n  },\n  \"url\": \"https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:14:17.965299+00:00"
   },
   "news/ai-security/yara-x-1-11-0-release-hash-function-warnings": {
     "slug": "news/ai-security/yara-x-1-11-0-release-hash-function-warnings",
