@@ -4129,6 +4129,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:05.771642+00:00"
   },
+  "news/ai-security/adobe-patches-176-vulnerabilities-across-11-products": {
+    "slug": "news/ai-security/adobe-patches-176-vulnerabilities-across-11-products",
+    "meta_description": "The flaws affect products such as Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker and Bridge. By Eduard Kovacs | October 13,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Adobe Patches 176 Vulnerabilities Across 11 Products\",\n  \"description\": \"The flaws affect products such as Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker and Bridge. By Eduard Kovacs | October 13,...\",\n  \"datePublished\": \"2026-10-15T00:08:12.744931+00:00\",\n  \"dateModified\": \"2026-10-15T00:08:12.744931+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products\"\n  },\n  \"url\": \"https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:09:01.726113+00:00"
+  },
   "news/ai-security/adobe-patches-actively-exploited-acrobat-reader-flaw-cve-2026-34621": {
     "slug": "news/ai-security/adobe-patches-actively-exploited-acrobat-reader-flaw-cve-2026-34621",
     "meta_description": "Ravie Lakshmanan Apr 12, 2026 Vulnerability / Endpoint Security Adobe has released emergency updates to fix a critical security flaw in Acrobat...",
@@ -8161,6 +8168,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:12.961164+00:00"
   },
+  "news/ai-security/google-partially-reverses-chrome-bug-bounty-cuts": {
+    "slug": "news/ai-security/google-partially-reverses-chrome-bug-bounty-cuts",
+    "meta_description": "Google is restructuring bug bounty rewards with a focus on complex memory safety vulnerabilities. By Eduard Kovacs | October 13, 2026 (1:00 PM ET)...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google Partially Reverses Chrome Bug Bounty Cuts\",\n  \"description\": \"Google is restructuring bug bounty rewards with a focus on complex memory safety vulnerabilities. By Eduard Kovacs | October 13, 2026 (1:00 PM ET)...\",\n  \"datePublished\": \"2026-10-15T00:08:14.519109+00:00\",\n  \"dateModified\": \"2026-10-15T00:08:14.519109+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts\"\n  },\n  \"url\": \"https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:09:02.151245+00:00"
+  },
   "news/ai-security/google-patches-107-android-flaws-including-two-framework-bugs-exploited-in-the-wild": {
     "slug": "news/ai-security/google-patches-107-android-flaws-including-two-framework-bugs-exploited-in-the-wild",
     "meta_description": "Dec 02, 2025 Ravie Lakshmanan Mobile Security / Vulnerability Google on Monday released monthly security updates for the Android operating system,...",
@@ -10268,6 +10282,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-11T02:01:09.590732+00:00"
   },
+  "news/ai-security/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn": {
+    "slug": "news/ai-security/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn",
+    "meta_description": "CVE-2026-104935 affects Ivanti Connect Secure and it can be exploited for unauthenticated remote code execution with elevated privileges.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN\",\n  \"description\": \"CVE-2026-104935 affects Ivanti Connect Secure and it can be exploited for unauthenticated remote code execution with elevated privileges.\",\n  \"datePublished\": \"2026-10-15T00:08:12.301770+00:00\",\n  \"dateModified\": \"2026-10-15T00:08:12.301770+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn\"\n  },\n  \"url\": \"https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:09:01.345237+00:00"
+  },
   "news/ai-security/jackfix-uses-fake-windows-update-pop-ups-on-adult-sites-to-deliver-multiple-stealers": {
     "slug": "news/ai-security/jackfix-uses-fake-windows-update-pop-ups-on-adult-sites-to-deliver-multiple-stealers",
     "meta_description": "Cybersecurity researchers are calling attention to a new campaign that's leveraging a combination of ClickFix lures and fake adult websites to...",
@@ -11002,6 +11023,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta Is Testing Facial Recognition for Police and Military\",\n  \"description\": \"We know that ICE wants to deploy eyeglasses with facial recognition that can identify people in real time. Turns out Meta is prototyping the...\",\n  \"datePublished\": \"2026-06-27T03:35:19.874185+00:00\",\n  \"dateModified\": \"2026-06-27T03:35:19.874185+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/06/meta-is-testing-facial-recognition-for-police-and-military.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/06/meta-is-testing-facial-recognition-for-police-and-military.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-27T03:36:19.085967+00:00"
+  },
+  "news/ai-security/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach": {
+    "slug": "news/ai-security/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach",
+    "meta_description": "Most of the affected individuals are Meta employees in the United States and they are being offered credit monitoring services.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach\",\n  \"description\": \"Most of the affected individuals are Meta employees in the United States and they are being offered credit monitoring services.\",\n  \"datePublished\": \"2026-10-15T00:08:14.914436+00:00\",\n  \"dateModified\": \"2026-10-15T00:08:14.914436+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach\"\n  },\n  \"url\": \"https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:09:00.966922+00:00"
   },
   "news/ai-security/meta-to-shut-down-instagram-end-to-end-encrypted-chat-support-starting-may-2026": {
     "slug": "news/ai-security/meta-to-shut-down-instagram-end-to-end-encrypted-chat-support-starting-may-2026",
@@ -14026,6 +14054,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SloppyLemming Targets Pakistan and Bangladesh Governments Using Dual Malware Chains\",\n  \"description\": \"Ravie Lakshmanan Mar 03, 2026 Malware / Phishing The threat activity cluster known as SloppyLemming has been attributed to a fresh set of attacks...\",\n  \"datePublished\": \"2026-03-09T05:30:35.585529+00:00\",\n  \"dateModified\": \"2026-03-09T05:30:35.585529+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T05:31:15.746292+00:00"
+  },
+  "news/ai-security/small-ai-models-could-soon-self-replicate-on-iot-devices-anthropic-warns": {
+    "slug": "news/ai-security/small-ai-models-could-soon-self-replicate-on-iot-devices-anthropic-warns",
+    "meta_description": "Experiments show cheap TV boxes can run capable AI models, and small models may soon be able to spread across such devices on their own.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Small AI Models Could Soon Self-Replicate on IoT Devices, Anthropic Warns\",\n  \"description\": \"Experiments show cheap TV boxes can run capable AI models, and small models may soon be able to spread across such devices on their own.\",\n  \"datePublished\": \"2026-10-15T00:08:15.619333+00:00\",\n  \"dateModified\": \"2026-10-15T00:08:15.619333+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns\"\n  },\n  \"url\": \"https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-15T00:09:02.534711+00:00"
   },
   "news/ai-security/smart-glasses-for-the-authorities": {
     "slug": "news/ai-security/smart-glasses-for-the-authorities",
