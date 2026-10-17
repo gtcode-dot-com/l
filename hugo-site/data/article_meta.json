@@ -1,4 +1,11 @@
 {
+  "news/ai-research/2026-bair-graduate-showcase": {
+    "slug": "news/ai-research/2026-bair-graduate-showcase",
+    "meta_description": "Congratulations to the Berkeley Artificial Intelligence Research (BAIR) Lab class of 2026! This year, BAIR celebrates another remarkable group of...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"2026 BAIR Graduate Showcase\",\n  \"description\": \"Congratulations to the Berkeley Artificial Intelligence Research (BAIR) Lab class of 2026! This year, BAIR celebrates another remarkable group of...\",\n  \"datePublished\": \"2026-10-17T22:10:50.764711+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:50.764711+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/07/01/grads-2026\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/07/01/grads-2026\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:40.471524+00:00"
+  },
   "news/ai-research/3-questions-a-new-resource-to-empower-young-entrepreneurs": {
     "slug": "news/ai-research/3-questions-a-new-resource-to-empower-young-entrepreneurs",
     "meta_description": "The book “Disciplined Entrepreneurship” by Bill Aulet, managing director of the Martin Trust Center for MIT Entrepreneurship and the Ethernet...",
@@ -153,6 +160,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-17T06:12:16.676927+00:00"
   },
+  "news/ai-research/accelerating-the-search-for-antimicrobial-peptides-with-google-antigravity": {
+    "slug": "news/ai-research/accelerating-the-search-for-antimicrobial-peptides-with-google-antigravity",
+    "meta_description": "October 15, 2026 Science Pengfei Tian, Maxwell L. Bileschi, Zoi Tsangalidou, Sukhdeep Singh and Lucy J. Colwell Copied New antibiotics are...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Accelerating the search for antimicrobial peptides with Google Antigravity\",\n  \"description\": \"October 15, 2026 Science Pengfei Tian, Maxwell L. Bileschi, Zoi Tsangalidou, Sukhdeep Singh and Lucy J. Colwell Copied New antibiotics are...\",\n  \"datePublished\": \"2026-10-17T22:10:51.470269+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:51.470269+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/accelerating-antimicrobial-discovery\"\n  },\n  \"url\": \"https://deepmind.google/blog/accelerating-antimicrobial-discovery\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:41.645955+00:00"
+  },
   "news/ai-research/accelerating-transformers-fine-tuning-with-nvidia-nemo-automodel": {
     "slug": "news/ai-research/accelerating-transformers-fine-tuning-with-nvidia-nemo-automodel",
     "meta_description": "HuggingFace Transformers has become the foundation of the open-source AI ecosystem, and the recent Transformers v5 release strengthened it with...",
@@ -250,6 +264,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI evals are becoming the new compute bottleneck\",\n  \"description\": \"Summary. AI evaluation has crossed a cost threshold that changes who can do it. The Holistic Agent Leaderboard (HAL) recently spent about $40,000...\",\n  \"datePublished\": \"2026-04-29T18:15:35.972167+00:00\",\n  \"dateModified\": \"2026-04-29T18:15:35.972167+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/evaleval/eval-costs-bottleneck\"\n  },\n  \"url\": \"https://huggingface.co/blog/evaleval/eval-costs-bottleneck\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-29T18:16:22.476898+00:00"
+  },
+  "news/ai-research/ai-model-decodes-the-language-cells-use-to-communicate": {
+    "slug": "news/ai-research/ai-model-decodes-the-language-cells-use-to-communicate",
+    "meta_description": "A new computational approach reveals how cells communicate to assemble into tissues. This could accelerate stem cell engineering, improve disease...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI model decodes the language cells use to communicate\",\n  \"description\": \"A new computational approach reveals how cells communicate to assemble into tissues. This could accelerate stem cell engineering, improve disease...\",\n  \"datePublished\": \"2026-10-17T22:03:54.016359+00:00\",\n  \"dateModified\": \"2026-10-17T22:03:54.016359+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/ai-model-decodes-language-cells-use-communicate-1015\"\n  },\n  \"url\": \"https://news.mit.edu/2026/ai-model-decodes-language-cells-use-communicate-1015\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:30.493602+00:00"
   },
   "news/ai-research/ai-model-update-designed-for-science": {
     "slug": "news/ai-research/ai-model-update-designed-for-science",
@@ -965,12 +986,26 @@
     "agent_callout": "",
     "generated_at": "2026-06-11T02:10:00.411176+00:00"
   },
+  "news/ai-research/fostering-community-amid-kendall-squares-innovation": {
+    "slug": "news/ai-research/fostering-community-amid-kendall-squares-innovation",
+    "meta_description": "The 18th annual Kendall Square Association Annual Meeting explored how new technologies could be a force for shared prosperity in society.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Fostering community amid Kendall Square’s innovation\",\n  \"description\": \"The 18th annual Kendall Square Association Annual Meeting explored how new technologies could be a force for shared prosperity in society.\",\n  \"datePublished\": \"2026-10-17T22:03:53.498056+00:00\",\n  \"dateModified\": \"2026-10-17T22:03:53.498056+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/fostering-community-amid-kendall-square-innovation-1016\"\n  },\n  \"url\": \"https://news.mit.edu/2026/fostering-community-amid-kendall-square-innovation-1016\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:30.820790+00:00"
+  },
   "news/ai-research/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games": {
     "slug": "news/ai-research/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
     "meta_description": "From Atari to Go to StarCraft, games have driven some of the biggest breakthroughs in AI. Now, weâre partnering with game developers to...",
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"From Atari to EVE Online: Building on 15 Years of AI Research in Games\",\n  \"description\": \"From Atari to Go to StarCraft, games have driven some of the biggest breakthroughs in AI. Now, weâre partnering with game developers to...\",\n  \"datePublished\": \"2026-09-27T18:30:19.503225+00:00\",\n  \"dateModified\": \"2026-09-27T18:30:19.503225+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games\"\n  },\n  \"url\": \"https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-27T18:31:12.659961+00:00"
+  },
+  "news/ai-research/from-cuda-to-mlx-how-k-search-brings-decades-of-kernel-expertise-to-apple-silicon": {
+    "slug": "news/ai-research/from-cuda-to-mlx-how-k-search-brings-decades-of-kernel-expertise-to-apple-silicon",
+    "meta_description": "Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon\",\n  \"description\": \"Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather...\",\n  \"datePublished\": \"2026-10-17T22:03:55.148617+00:00\",\n  \"dateModified\": \"2026-10-17T22:03:55.148617+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:31.499257+00:00"
   },
   "news/ai-research/from-mit-to-ibm-expediting-ai-and-quantum-deployment": {
     "slug": "news/ai-research/from-mit-to-ibm-expediting-ai-and-quantum-deployment",
@@ -1202,6 +1237,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality\",\n  \"description\": \"> TL;DR: > Two new Apache 2.0 multilingual embedding models built on ModernBERT — a 97M-parameter compact model that beats every open sub-100M...\",\n  \"datePublished\": \"2026-05-14T21:21:53.646952+00:00\",\n  \"dateModified\": \"2026-05-14T21:21:53.646952+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-14T21:22:30.121883+00:00"
+  },
+  "news/ai-research/granite-switch-4-1-chat-decisions-and-speech-from-one-endpoint": {
+    "slug": "news/ai-research/granite-switch-4-1-chat-decisions-and-speech-from-one-endpoint",
+    "meta_description": "Introduced last spring, the Granite Switch project enables a modular approach to model development. Now Granite Switch 4.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint\",\n  \"description\": \"Introduced last spring, the Granite Switch project enables a modular approach to model development. Now Granite Switch 4.\",\n  \"datePublished\": \"2026-10-17T22:16:43.798193+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:43.798193+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-granite/granite-switch-4-1\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-granite/granite-switch-4-1\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:12.980119+00:00"
   },
   "news/ai-research/guided-learning-lets-untrainable-neural-networks-realize-their-potential": {
     "slug": "news/ai-research/guided-learning-lets-untrainable-neural-networks-realize-their-potential",
@@ -1839,6 +1881,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents\",\n  \"description\": \"[](https://cdn-uploads.huggingface.co/production/uploads/677629b4931b3b2eb8d5820a/oGFhvAEhWZLctvTLeUoZ6.png) VAKRA Dataset | LeaderBoard | Release...\",\n  \"datePublished\": \"2026-04-15T18:15:44.143399+00:00\",\n  \"dateModified\": \"2026-04-15T18:15:44.143399+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-15T18:16:13.166003+00:00"
+  },
+  "news/ai-research/intelligence-is-free-now-what-br-data-systems-for-of-and-by-agents": {
+    "slug": "news/ai-research/intelligence-is-free-now-what-br-data-systems-for-of-and-by-agents",
+    "meta_description": "... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Intelligence is Free, Now What? Data Systems for, of, and by Agents\",\n  \"description\": \"... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly.\",\n  \"datePublished\": \"2026-10-17T22:10:50.238019+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:50.238019+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:41.992231+00:00"
   },
   "news/ai-research/intelligent-transcription-with-gemini-3-5-transcribe": {
     "slug": "news/ai-research/intelligent-transcription-with-gemini-3-5-transcribe",
@@ -2918,6 +2967,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-26T20:06:11.061474+00:00"
   },
+  "news/ai-research/q-a-the-collision-between-ai-your-brain-and-society": {
+    "slug": "news/ai-research/q-a-the-collision-between-ai-your-brain-and-society",
+    "meta_description": "In a new book, Professor Eric So explores how the technology affects our thinking skills. As artificial intelligence use becomes more widespread,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Q&A: The “collision” between AI, your brain, and society\",\n  \"description\": \"In a new book, Professor Eric So explores how the technology affects our thinking skills. As artificial intelligence use becomes more widespread,...\",\n  \"datePublished\": \"2026-10-17T22:03:54.287410+00:00\",\n  \"dateModified\": \"2026-10-17T22:03:54.287410+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/collision-between-ai-your-brain-and-society-eric-so-book-1015\"\n  },\n  \"url\": \"https://news.mit.edu/2026/collision-between-ai-your-brain-and-society-eric-so-book-1015\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:31.151852+00:00"
+  },
   "news/ai-research/qimma-qimw-a-quality-first-arabic-llm-leaderboard": {
     "slug": "news/ai-research/qimma-qimw-a-quality-first-arabic-llm-leaderboard",
     "meta_description": "[](https://cdn-uploads.huggingface.co/production/uploads/66c8620a79b42e5c941b0265/rugVGTdLrdovOU99Hek9T.png) > QIMMA validates benchmarks before...",
@@ -3037,6 +3093,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:42.780683+00:00"
   },
+  "news/ai-research/scaling-indic-pretraining-2-8-trillion-tokens-and-an-open-data-generation-pipeline": {
+    "slug": "news/ai-research/scaling-indic-pretraining-2-8-trillion-tokens-and-an-open-data-generation-pipeline",
+    "meta_description": "Native-script data for 22 languages, romanized data for twelve, and a reusable GPU-accelerated pipeline for translation, quality assessment, and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline\",\n  \"description\": \"Native-script data for 22 languages, romanized data for twelve, and a reusable GPU-accelerated pipeline for translation, quality assessment, and...\",\n  \"datePublished\": \"2026-10-17T22:10:52.059045+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:52.059045+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/nvidia/scaling-indic-pretraining\"\n  },\n  \"url\": \"https://huggingface.co/blog/nvidia/scaling-indic-pretraining\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:41.307244+00:00"
+  },
   "news/ai-research/scaling-up-reinforcement-learning-for-traffic-smoothing-a-100-av-highway-deployment": {
     "slug": "news/ai-research/scaling-up-reinforcement-learning-for-traffic-smoothing-a-100-av-highway-deployment",
     "meta_description": "Training Diffusion Models with Reinforcement Learning We deployed 100 reinforcement learning (RL)-controlled cars into rush-hour highway traffic...",
@@ -3149,6 +3212,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-18T22:16:15.827395+00:00"
   },
+  "news/ai-research/state-of-supply-chain-sustainability-report-finds-corporate-commitment-at-record-high-but-governance-lags-behind": {
+    "slug": "news/ai-research/state-of-supply-chain-sustainability-report-finds-corporate-commitment-at-record-high-but-governance-lags-behind",
+    "meta_description": "MIT's Center for Transportation and Logistics finds sustainability commitments are strong, but governance gaps and external disruptions prevent...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"State of Supply Chain Sustainability Report finds corporate commitment at record high, but governance lags behind\",\n  \"description\": \"MIT's Center for Transportation and Logistics finds sustainability commitments are strong, but governance gaps and external disruptions prevent...\",\n  \"datePublished\": \"2026-10-17T22:03:53.756852+00:00\",\n  \"dateModified\": \"2026-10-17T22:03:53.756852+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/state-of-supply-chain-sustainability-report-1015\"\n  },\n  \"url\": \"https://news.mit.edu/2026/state-of-supply-chain-sustainability-report-1015\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:31.837470+00:00"
+  },
   "news/ai-research/stone-center-on-inequality-and-shaping-the-future-of-work-launches-at-mit": {
     "slug": "news/ai-research/stone-center-on-inequality-and-shaping-the-future-of-work-launches-at-mit",
     "meta_description": "The James M. and Cathleen D. Stone Center on Inequality and Shaping the Future of Work officially launched on Nov. 3, 2025, bringing together...",
@@ -3218,6 +3288,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Teaching AI models to say “I’m not sure”\",\n  \"description\": \"Confidence is persuasive. In artificial intelligence systems, it is often misleading. Today's most capable reasoning models share a trait with the...\",\n  \"datePublished\": \"2026-04-22T20:15:44.576508+00:00\",\n  \"dateModified\": \"2026-04-22T20:15:44.576508+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/teaching-ai-models-to-say-im-not-sure-0422\"\n  },\n  \"url\": \"https://news.mit.edu/2026/teaching-ai-models-to-say-im-not-sure-0422\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-22T20:16:14.254961+00:00"
+  },
+  "news/ai-research/teaching-llms-to-update-beliefs-for-efficient-long-horizon-interaction": {
+    "slug": "news/ai-research/teaching-llms-to-update-beliefs-for-efficient-long-horizon-interaction",
+    "meta_description": "Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agentâs working context,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction\",\n  \"description\": \"Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agentâs working context,...\",\n  \"datePublished\": \"2026-10-17T22:10:49.704673+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:49.704673+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/07/26/abbel\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/07/26/abbel\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:40.959768+00:00"
   },
   "news/ai-research/technology-usually-creates-jobs-for-young-skilled-workers-will-ai-do-the-same": {
     "slug": "news/ai-research/technology-usually-creates-jobs-for-young-skilled-workers-will-ai-do-the-same",
@@ -3604,12 +3681,33 @@
     "agent_callout": "",
     "generated_at": "2026-09-10T01:01:02.469968+00:00"
   },
+  "news/ai-research/welcome-beam-a-501b-open-model-you-can-own-customize-and-scale": {
+    "slug": "news/ai-research/welcome-beam-a-501b-open-model-you-can-own-customize-and-scale",
+    "meta_description": "Beam by Reflection is out on Hugging Face! It is the first model from the new US lab, Reflection, and it’s open! It's a mixture-of-experts (MoEs)...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Welcome Beam: a 501B open model you can own, customize, and scale\",\n  \"description\": \"Beam by Reflection is out on Hugging Face! It is the first model from the new US lab, Reflection, and it’s open! It's a mixture-of-experts (MoEs)...\",\n  \"datePublished\": \"2026-10-17T22:16:43.250361+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:43.250361+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/reflection-beam\"\n  },\n  \"url\": \"https://huggingface.co/blog/reflection-beam\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:13.344538+00:00"
+  },
+  "news/ai-research/welcome-flux-3-image-klein-in-diffusers": {
+    "slug": "news/ai-research/welcome-flux-3-image-klein-in-diffusers",
+    "meta_description": "Black Forest Labs FLUX.3 Image Klein is here, and it runs in Diffusers from day one. One model does text-to-image and multi-reference...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Welcome FLUX.3 Image Klein in Diffusers\",\n  \"description\": \"Black Forest Labs FLUX.3 Image Klein is here, and it runs in Diffusers from day one. One model does text-to-image and multi-reference...\",\n  \"datePublished\": \"2026-10-17T22:16:44.982714+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:44.982714+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/flux-3\"\n  },\n  \"url\": \"https://huggingface.co/blog/flux-3\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:14.012225+00:00"
+  },
   "news/ai-research/welcome-gemma-4-frontier-multimodal-intelligence-on-device": {
     "slug": "news/ai-research/welcome-gemma-4-frontier-multimodal-intelligence-on-device",
     "meta_description": "The Gemma 4 family of multimodal models by Google DeepMind is out on Hugging Face, with support for your favorite agents, inference engines, and...",
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Welcome Gemma 4: Frontier multimodal intelligence on device\",\n  \"description\": \"The Gemma 4 family of multimodal models by Google DeepMind is out on Hugging Face, with support for your favorite agents, inference engines, and...\",\n  \"datePublished\": \"2026-04-02T16:15:38.550285+00:00\",\n  \"dateModified\": \"2026-04-02T16:15:38.550285+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/gemma4\"\n  },\n  \"url\": \"https://huggingface.co/blog/gemma4\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T16:16:08.724781+00:00"
+  },
+  "news/ai-research/welcome-muse-spark-open-open-weight-frontier-multimodal-mixture-of-experts-model-from-meta": {
+    "slug": "news/ai-research/welcome-muse-spark-open-open-weight-frontier-multimodal-mixture-of-experts-model-from-meta",
+    "meta_description": "Muse Spark Open is an open-weight model from Meta. The mixture of experts model brings text, images, audio, and video into a model with...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta\",\n  \"description\": \"Muse Spark Open is an open-weight model from Meta. The mixture of experts model brings text, images, audio, and video into a model with...\",\n  \"datePublished\": \"2026-10-17T22:16:44.435481+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:44.435481+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/meta-muse-spark-open\"\n  },\n  \"url\": \"https://huggingface.co/blog/meta-muse-spark-open\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:13.676935+00:00"
   },
   "news/ai-research/welcome-nvidia-cosmos-3-the-first-open-omni-model-for-physical-ai-reasoning-and-action": {
     "slug": "news/ai-research/welcome-nvidia-cosmos-3-the-first-open-omni-model-for-physical-ai-reasoning-and-action",
@@ -4268,6 +4366,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Coding Assistants Secretly Copying All Code to China\",\n  \"description\": \"There’s a new report about two AI coding assistants, used by 1.5 million developers, that are surreptitiously sending a copy of everything they...\",\n  \"datePublished\": \"2026-02-02T12:15:15.180692+00:00\",\n  \"dateModified\": \"2026-02-02T12:15:15.180692+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/02/ai-coding-assistants-secretly-copying-all-code-to-china.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/02/ai-coding-assistants-secretly-copying-all-code-to-china.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:41.123215+00:00"
+  },
+  "news/ai-security/ai-decision-models-and-their-impact-on-ai-soc-platforms": {
+    "slug": "news/ai-security/ai-decision-models-and-their-impact-on-ai-soc-platforms",
+    "meta_description": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Decision Models and Their Impact on AI SOC Platforms\",\n  \"description\": \"In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a...\",\n  \"datePublished\": \"2026-10-17T22:16:30.409171+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:30.409171+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:14.852048+00:00"
   },
   "news/ai-security/ai-driven-pushpaganda-scam-exploits-google-discover-to-spread-scareware-and-ad-fraud": {
     "slug": "news/ai-security/ai-driven-pushpaganda-scam-exploits-google-discover-to-spread-scareware-and-ad-fraud",
@@ -4989,6 +5094,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Attackers Hijack .gh, .sl, and .as Registries to Obtain Certificates for Google Domains\",\n  \"description\": \"Attackers compromised three country-code top-level domains (ccTLDs) and obtained unauthorized HTTPS certificates for several Google domains,...\",\n  \"datePublished\": \"2026-10-08T01:03:54.033009+00:00\",\n  \"dateModified\": \"2026-10-08T01:03:54.033009+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-08T01:04:50.269191+00:00"
+  },
+  "news/ai-security/attackers-tampered-with-aomei-backupper-s-update-servers-for-minutes-to-deliver-a-backdoor": {
+    "slug": "news/ai-security/attackers-tampered-with-aomei-backupper-s-update-servers-for-minutes-to-deliver-a-backdoor",
+    "meta_description": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor\",\n  \"description\": \"Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a...\",\n  \"datePublished\": \"2026-10-17T22:16:29.450562+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:29.450562+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:15.189814+00:00"
   },
   "news/ai-security/attackers-target-miniorange-saml-flaws-that-can-grant-wordpress-admin-access": {
     "slug": "news/ai-security/attackers-target-miniorange-saml-flaws-that-can-grant-wordpress-admin-access",
@@ -8490,6 +8602,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:21.628328+00:00"
   },
+  "news/ai-security/hackers-use-compromised-connectwise-credential-to-sign-in-to-173-microsoft-365-tenants": {
+    "slug": "news/ai-security/hackers-use-compromised-connectwise-credential-to-sign-in-to-173-microsoft-365-tenants",
+    "meta_description": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants\",\n  \"description\": \"Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft...\",\n  \"datePublished\": \"2026-10-17T22:10:36.719481+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:36.719481+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:42.662092+00:00"
+  },
   "news/ai-security/hackers-use-linkedin-messages-to-spread-rat-malware-through-dll-sideloading": {
     "slug": "news/ai-security/hackers-use-linkedin-messages-to-spread-rat-malware-through-dll-sideloading",
     "meta_description": "Ravie Lakshmanan Jan 20, 2026 Malware / Threat Intelligence Cybersecurity researchers have uncovered a new phishing campaign that exploits social...",
@@ -10800,6 +10919,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-23T03:05:26.444309+00:00"
   },
+  "news/ai-security/malfex-npm-package-imgdecode-hides-shellcode-loader-in-windows-native-addon": {
+    "slug": "news/ai-security/malfex-npm-package-imgdecode-hides-shellcode-loader-in-windows-native-addon",
+    "meta_description": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon\",\n  \"description\": \"Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed...\",\n  \"datePublished\": \"2026-10-17T22:10:36.383391+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:36.383391+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:42.325873+00:00"
+  },
   "news/ai-security/malicious-ad-for-homebrew-leads-to-macsync-stealer-fri-may-1st": {
     "slug": "news/ai-security/malicious-ad-for-homebrew-leads-to-macsync-stealer-fri-may-1st",
     "meta_description": "Introduction As macbooks and mac minis become more popular, we're seeing more campaigns targeting these macOS hosts. Malicious ads have popped up...",
@@ -12613,6 +12739,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T23:03:13.007682+00:00"
   },
+  "news/ai-security/openai-research-model-spent-3rd-party-test-eth-without-permission-to-deploy-smart-contract": {
+    "slug": "news/ai-security/openai-research-model-spent-3rd-party-test-eth-without-permission-to-deploy-smart-contract",
+    "meta_description": "Ravie Lakshmanan Oct 16, 2026 Artificial Intelligence / Web Security OpenAI has disclosed seven new incidents in which its artificial intelligence...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract\",\n  \"description\": \"Ravie Lakshmanan Oct 16, 2026 Artificial Intelligence / Web Security OpenAI has disclosed seven new incidents in which its artificial intelligence...\",\n  \"datePublished\": \"2026-10-17T22:16:30.118088+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:30.118088+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:15.848225+00:00"
+  },
   "news/ai-security/openai-revokes-macos-app-certificate-after-malicious-axios-supply-chain-incident": {
     "slug": "news/ai-security/openai-revokes-macos-app-certificate-after-malicious-axios-supply-chain-incident",
     "meta_description": "OpenAI revealed a GitHub Actions workflow used to sign its macOS apps, which downloaded the malicious Axios library on March 31, but noted that no...",
@@ -13263,6 +13396,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Researchers Capture Lazarus APT's Remote-Worker Scheme Live on Camera\",\n  \"description\": \"Dec 02, 2025 The Hacker News Identity Theft / Threat Intelligence A joint investigation led by Mauro Eldritch, founder of BCA LTD , conducted...\",\n  \"datePublished\": \"2025-12-03T00:03:07.933912+00:00\",\n  \"dateModified\": \"2025-12-03T00:03:07.933912+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/researchers-capture-lazarus-apts-remote.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/researchers-capture-lazarus-apts-remote.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:54.734657+00:00"
+  },
+  "news/ai-security/researchers-demonstrate-openbsd-root-exploit-chaining-37-year-old-shared-memory-bug": {
+    "slug": "news/ai-security/researchers-demonstrate-openbsd-root-exploit-chaining-37-year-old-shared-memory-bug",
+    "meta_description": "Swati Khandelwal Oct 16, 2026 Vulnerability / OpenBSD A local privilege escalation exploit published today gains root on OpenBSD 7.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug\",\n  \"description\": \"Swati Khandelwal Oct 16, 2026 Vulnerability / OpenBSD A local privilege escalation exploit published today gains root on OpenBSD 7.\",\n  \"datePublished\": \"2026-10-17T22:16:29.079110+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:29.079110+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:14.363637+00:00"
   },
   "news/ai-security/researchers-detail-tuoni-c2-s-role-in-an-attempted-2025-real-estate-cyber-intrusion": {
     "slug": "news/ai-security/researchers-detail-tuoni-c2-s-role-in-an-attempted-2025-real-estate-cyber-intrusion",
@@ -15406,6 +15546,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-09T18:16:16.531145+00:00"
   },
+  "news/ai-security/uat-11985-uses-fake-event-invites-to-target-taiwan-research-affiliates-with-google-aitm-phishing": {
+    "slug": "news/ai-security/uat-11985-uses-fake-event-invites-to-target-taiwan-research-affiliates-with-google-aitm-phishing",
+    "meta_description": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing\",\n  \"description\": \"Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals...\",\n  \"datePublished\": \"2026-10-17T22:16:29.791009+00:00\",\n  \"dateModified\": \"2026-10-17T22:16:29.791009+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:15.511250+00:00"
+  },
   "news/ai-security/uat-9921-deploys-voidlink-malware-to-target-technology-and-financial-sectors": {
     "slug": "news/ai-security/uat-9921-deploys-voidlink-malware-to-target-technology-and-financial-sectors",
     "meta_description": "Ravie Lakshmanan Feb 13, 2026 Cloud Security / Cyber Espionage A previously unknown threat actor tracked as UAT-9921 has been observed leveraging...",
@@ -16806,6 +16953,13 @@
     "agent_callout": "",
     "generated_at": "2026-08-09T09:46:20.210164+00:00"
   },
+  "news/comp-journalism/a-new-report-argues-newsrooms-need-to-do-more-experiments-like-the-kind-with-randomization-and-results": {
+    "slug": "news/comp-journalism/a-new-report-argues-newsrooms-need-to-do-more-experiments-like-the-kind-with-randomization-and-results",
+    "meta_description": "Mississippi Today had a question. Did the stories around its Pulitzer Prize-winning investigative reporting affect the way those investigations...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"A new report argues newsrooms need to do more experiments — like, the kind with randomization and results\",\n  \"description\": \"Mississippi Today had a question. Did the stories around its Pulitzer Prize-winning investigative reporting affect the way those investigations...\",\n  \"datePublished\": \"2026-10-17T22:04:22.278293+00:00\",\n  \"dateModified\": \"2026-10-17T22:04:22.278293+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/a-new-report-argues-newsrooms-need-to-do-more-experiments-like-the-kind-with-randomization-and-results\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/a-new-report-argues-newsrooms-need-to-do-more-experiments-like-the-kind-with-randomization-and-results\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:28.750662+00:00"
+  },
   "news/comp-journalism/a-new-report-looks-at-559-funding-proposals-to-determine-local-journalisms-biggest-problems": {
     "slug": "news/comp-journalism/a-new-report-looks-at-559-funding-proposals-to-determine-local-journalisms-biggest-problems",
     "meta_description": "Journalism-funding-world spicy isn’t the same as, uh, regular-world spicy. But for the journalism-funding world, ProPublica founder Dick Tofel’s...",
@@ -17498,6 +17652,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CMA says UK publishers should be allowed to opt out of Google AI Overviews\",\n  \"description\": \"Google AI Overviews shown in front of a Google webpage. Picture: Shutterstock/DIA TV The UK’s competition watchdog has said publishers should be...\",\n  \"datePublished\": \"2026-01-28T12:15:40.793499+00:00\",\n  \"dateModified\": \"2026-01-28T12:15:40.793499+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/google-ai-overviews-search-cma-proposals\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/google-ai-overviews-search-cma-proposals\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:18.697345+00:00"
+  },
+  "news/comp-journalism/cnn-bundles-web-live-and-on-demand-in-uk-paywall-launch": {
+    "slug": "news/comp-journalism/cnn-bundles-web-live-and-on-demand-in-uk-paywall-launch",
+    "meta_description": "CNN All Access subscription promo image, with Anderson Cooper in centre screen CNN is “focused on building a more durable direct-to-consumer...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CNN bundles web, live and on-demand in UK paywall launch\",\n  \"description\": \"CNN All Access subscription promo image, with Anderson Cooper in centre screen CNN is “focused on building a more durable direct-to-consumer...\",\n  \"datePublished\": \"2026-10-17T22:11:29.449359+00:00\",\n  \"dateModified\": \"2026-10-17T22:11:29.449359+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/north-america/cnn-uk-canada-subscriptions-website-paywall-streaming\"\n  },\n  \"url\": \"https://pressgazette.co.uk/north-america/cnn-uk-canada-subscriptions-website-paywall-streaming\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:39.654570+00:00"
   },
   "news/comp-journalism/collaborations-and-primary-elections-boosted-traffic-to-public-media-sites-this-quarter": {
     "slug": "news/comp-journalism/collaborations-and-primary-elections-boosted-traffic-to-public-media-sites-this-quarter",
@@ -18521,6 +18682,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-22T04:27:32.728346+00:00"
   },
+  "news/comp-journalism/googles-news-ai-pilot-expands-to-over-400-publications-including-u-s-local-news-outlets": {
+    "slug": "news/comp-journalism/googles-news-ai-pilot-expands-to-over-400-publications-including-u-s-local-news-outlets",
+    "meta_description": "In December, Google launched its News AI pilot program, which licenses content from select publishers and uses it to test new AI features in...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google’s News AI pilot expands to over 400 publications, including U.S. local news outlets\",\n  \"description\": \"In December, Google launched its News AI pilot program, which licenses content from select publishers and uses it to test new AI features in...\",\n  \"datePublished\": \"2026-10-17T22:04:22.552985+00:00\",\n  \"dateModified\": \"2026-10-17T22:04:22.552985+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/googles-news-ai-pilot-expands-to-over-400-publications-including-u-s-local-news-outlets\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/googles-news-ai-pilot-expands-to-over-400-publications-including-u-s-local-news-outlets\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:29.803159+00:00"
+  },
   "news/comp-journalism/grazia-editor-in-chief-hattie-brett-to-step-down-after-eight-years": {
     "slug": "news/comp-journalism/grazia-editor-in-chief-hattie-brett-to-step-down-after-eight-years",
     "meta_description": "Hattie Brett, editor-in-chief of Grazia. Picture: Bauer Grazia editor-in-chief Hattie Brett will leave the publication in September after eight...",
@@ -18548,6 +18716,20 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Growing a Small Nonprofit Can Be a Bit Like Adolescence — Painful, Difficult, Awkward\",\n  \"description\": \"Anyone who has interacted with a teenager, or remembers having been one themselves, knows the challenges of adolescence. It’s a period of change...\",\n  \"datePublished\": \"2026-01-09T10:15:45.981024+00:00\",\n  \"dateModified\": \"2026-01-09T10:15:45.981024+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://gijn.org/stories/growing-nonprofit-journalism-sustainability\"\n  },\n  \"url\": \"https://gijn.org/stories/growing-nonprofit-journalism-sustainability\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:19.007855+00:00"
+  },
+  "news/comp-journalism/guardian-and-sun-agree-on-ban-for-deceptive-ai-bots": {
+    "slug": "news/comp-journalism/guardian-and-sun-agree-on-ban-for-deceptive-ai-bots",
+    "meta_description": "News bosses among those who signed AI transparency letter to prime minister, clockwise from top left: FT CEO Jon Slade, Guardian CEO Anna Bateson,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Guardian and Sun agree on ban for deceptive AI bots\",\n  \"description\": \"News bosses among those who signed AI transparency letter to prime minister, clockwise from top left: FT CEO Jon Slade, Guardian CEO Anna Bateson,...\",\n  \"datePublished\": \"2026-10-17T22:11:30.198879+00:00\",\n  \"dateModified\": \"2026-10-17T22:11:30.198879+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/guardian-and-sun-agree-on-ban-for-deceptive-ai-bots\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/guardian-and-sun-agree-on-ban-for-deceptive-ai-bots\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:38.255287+00:00"
+  },
+  "news/comp-journalism/guardian-boosted-online-ad-revenue-by-simplifying-process-and-sharing-reader-data": {
+    "slug": "news/comp-journalism/guardian-boosted-online-ad-revenue-by-simplifying-process-and-sharing-reader-data",
+    "meta_description": "Duane Thompson, head of digital optimisation at The Guardian (left) and Imogen Fox, global chief advertising officer at The Guardian (right).",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Guardian boosted online ad revenue by simplifying process and sharing reader data\",\n  \"description\": \"Duane Thompson, head of digital optimisation at The Guardian (left) and Imogen Fox, global chief advertising officer at The Guardian (right).\",\n  \"datePublished\": \"2026-10-17T22:17:07.085753+00:00\",\n  \"dateModified\": \"2026-10-17T22:17:07.085753+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/marketing/guardian-increases-ad-inventory-revenue-new-commercial-strategy\"\n  },\n  \"url\": \"https://pressgazette.co.uk/marketing/guardian-increases-ad-inventory-revenue-new-commercial-strategy\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:17:12.622254+00:00"
   },
   "news/comp-journalism/guardian-creates-40-jobs-to-train-journalists-with-content-creator-skills": {
     "slug": "news/comp-journalism/guardian-creates-40-jobs-to-train-journalists-with-content-creator-skills",
@@ -18814,6 +18996,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How Wildlife Traffickers Are Using Coded Language to Sell Protected Animals On Facebook\",\n  \"description\": \"A Bellingcat investigation has identified nine Facebook groups with a combined membership of more than 70,000 people, in which coded language has...\",\n  \"datePublished\": \"2026-03-24T04:49:27.303221+00:00\",\n  \"dateModified\": \"2026-03-24T04:49:27.303221+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/news/2026/03/19/how-wildlife-traffickers-are-using-coded-language-to-sell-protected-animals-on-facebook\"\n  },\n  \"url\": \"https://www.bellingcat.com/news/2026/03/19/how-wildlife-traffickers-are-using-coded-language-to-sell-protected-animals-on-facebook\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-24T04:49:41.955676+00:00"
+  },
+  "news/comp-journalism/huw-edwards-loses-daily-mail-complaint-and-bemoans-ipso-travesty": {
+    "slug": "news/comp-journalism/huw-edwards-loses-daily-mail-complaint-and-bemoans-ipso-travesty",
+    "meta_description": "Huw Edwards photo issued by the Metropolitan Police to mark his sentencing on 16 September 2024. Picture: Metropolitan Police/PA Wire Disgraced...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Huw Edwards loses Daily Mail complaint and bemoans IPSO ‘travesty’\",\n  \"description\": \"Huw Edwards photo issued by the Metropolitan Police to mark his sentencing on 16 September 2024. Picture: Metropolitan Police/PA Wire Disgraced...\",\n  \"datePublished\": \"2026-10-17T22:11:30.937535+00:00\",\n  \"dateModified\": \"2026-10-17T22:11:30.937535+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/the-wire/newspaper-corrections-media-mistakes-errors-legal/huw-edwards-loses-ipso-daily-mail-complaint\"\n  },\n  \"url\": \"https://pressgazette.co.uk/the-wire/newspaper-corrections-media-mistakes-errors-legal/huw-edwards-loses-ipso-daily-mail-complaint\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:39.330358+00:00"
   },
   "news/comp-journalism/huw-edwards-sun-scoop-reporter-explains-why-channel-5-dramatisation-is-needed": {
     "slug": "news/comp-journalism/huw-edwards-sun-scoop-reporter-explains-why-channel-5-dramatisation-is-needed",
@@ -19102,6 +19291,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-08T08:16:05.091473+00:00"
   },
+  "news/comp-journalism/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes": {
+    "slug": "news/comp-journalism/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes",
+    "meta_description": "Meta has removed the word “train” from its upcoming terms of service for business accounts. The company revised its terms after Nieman Lab’s story...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Legal experts warn Meta’s new terms still grant broad scraping permissions, despite language changes\",\n  \"description\": \"Meta has removed the word “train” from its upcoming terms of service for business accounts. The company revised its terms after Nieman Lab’s story...\",\n  \"datePublished\": \"2026-10-17T22:04:21.595912+00:00\",\n  \"dateModified\": \"2026-10-17T22:04:21.595912+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:30.151667+00:00"
+  },
   "news/comp-journalism/lessons-learned-over-four-decades-as-an-investigative-journalist-in-india": {
     "slug": "news/comp-journalism/lessons-learned-over-four-decades-as-an-investigative-journalist-in-india",
     "meta_description": "It is not easy to catch Ritu Sarin for an interview on the sidelines of journalism conferences, and almost not at all when she is busy in the...",
@@ -19185,6 +19381,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Local stories by nonprofit college media resonated nationally at the start of 2026\",\n  \"description\": \"At Nieman Lab, we’ve long covered the impact of student-run news outlets filling information gaps in their communities. Recent data from...\",\n  \"datePublished\": \"2026-05-15T03:36:31.902441+00:00\",\n  \"dateModified\": \"2026-05-15T03:36:31.902441+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/05/local-stories-by-nonprofit-college-media-resonated-nationally-at-the-start-of-2026\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/05/local-stories-by-nonprofit-college-media-resonated-nationally-at-the-start-of-2026\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-15T03:36:44.692132+00:00"
+  },
+  "news/comp-journalism/london-centric-hits-5500-paid-subscribers-two-years-after-substack-launch": {
+    "slug": "news/comp-journalism/london-centric-hits-5500-paid-subscribers-two-years-after-substack-launch",
+    "meta_description": "Jim Waterson inside London Centric’s ice cream van for investigation. Picture: Jennifer Forward-Hayter Jim Waterson’s London Centric has grown to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"London Centric hits 5,500 paid subscribers two years after Substack launch\",\n  \"description\": \"Jim Waterson inside London Centric’s ice cream van for investigation. Picture: Jennifer Forward-Hayter Jim Waterson’s London Centric has grown to...\",\n  \"datePublished\": \"2026-10-17T22:11:32.302660+00:00\",\n  \"dateModified\": \"2026-10-17T22:11:32.302660+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/newsletters/london-centric-hits-5500-paid-subscribers-two-years-after-substack-launch\"\n  },\n  \"url\": \"https://pressgazette.co.uk/newsletters/london-centric-hits-5500-paid-subscribers-two-years-after-substack-launch\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:39.999661+00:00"
   },
   "news/comp-journalism/london-news-website-publishes-misleading-ai-generated-fiction": {
     "slug": "news/comp-journalism/london-news-website-publishes-misleading-ai-generated-fiction",
@@ -19360,6 +19563,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Mehdi Hasan launches Zeteo in UK with line-up of star left-wing writers\",\n  \"description\": \"Zeteo UK’s launch team. Picture: Zeteo Former MSNBC host Mehdi Hasan is launching his left-of-centre newsbrand Zeteo in the UK after surpassing...\",\n  \"datePublished\": \"2026-06-10T22:16:08.507694+00:00\",\n  \"dateModified\": \"2026-06-10T22:16:08.507694+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/mehdi-hasan-zeteo-paid-subscribers-uk-launch\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/mehdi-hasan-zeteo-paid-subscribers-uk-launch\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-10T22:16:21.120399+00:00"
+  },
+  "news/comp-journalism/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say": {
+    "slug": "news/comp-journalism/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say",
+    "meta_description": "Meta can use web scrapers to crawl and collect content from websites “associated with” business accounts on its platforms, according to its new...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta’s new commercial terms will allow the scraping of news sites, legal experts say\",\n  \"description\": \"Meta can use web scrapers to crawl and collect content from websites “associated with” business accounts on its platforms, according to its new...\",\n  \"datePublished\": \"2026-10-17T22:04:21.874093+00:00\",\n  \"dateModified\": \"2026-10-17T22:04:21.874093+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:29.100868+00:00"
   },
   "news/comp-journalism/metrics-for-publishers-in-2026": {
     "slug": "news/comp-journalism/metrics-for-publishers-in-2026",
@@ -20502,6 +20712,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-17T06:20:28.880887+00:00"
   },
+  "news/comp-journalism/satellite-images-show-extent-of-trump-admins-tree-felling-at-dc-golf-course": {
+    "slug": "news/comp-journalism/satellite-images-show-extent-of-trump-admins-tree-felling-at-dc-golf-course",
+    "meta_description": "Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Satellite imagery obtained by Bellingcat lays...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Satellite Images Show Extent of Trump Admin’s Tree-Felling at DC Golf Course\",\n  \"description\": \"Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Satellite imagery obtained by Bellingcat lays...\",\n  \"datePublished\": \"2026-10-17T22:11:28.166541+00:00\",\n  \"dateModified\": \"2026-10-17T22:11:28.166541+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/news/us-canada/2026/10/15/satellite-images-show-extent-of-trump-admins-tree-felling-at-dc-golf-course\"\n  },\n  \"url\": \"https://www.bellingcat.com/news/us-canada/2026/10/15/satellite-images-show-extent-of-trump-admins-tree-felling-at-dc-golf-course\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:11:38.621439+00:00"
+  },
   "news/comp-journalism/scamming-landlord-libel-claim-thrown-out-as-lammy-promises-legislation-on-slapps": {
     "slug": "news/comp-journalism/scamming-landlord-libel-claim-thrown-out-as-lammy-promises-legislation-on-slapps",
     "meta_description": "Freelance journalist Cormac Kehoe and Mill Media founder Joshi Herrmann outside the Royal Courts of Justice in London. Picture: Mill Media A libel...",
@@ -20536,6 +20753,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Senior news leaders reflect on 2025 and what’s ahead in 2026 – via emojis\",\n  \"description\": \"L-R top to bottom: Newsweek chief revenue officer Danielle Varvaro, Politico chief executive Goli Sheikholeslami, Forbes CEO Sherry Phillips,...\",\n  \"datePublished\": \"2026-01-08T21:58:47.368579+00:00\",\n  \"dateModified\": \"2026-01-08T21:58:47.368579+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/senior-news-leaders-reflect-on-2025-and-whats-ahead-in-2026-via-emojis\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/senior-news-leaders-reflect-on-2025-and-whats-ahead-in-2026-via-emojis\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:02.560085+00:00"
+  },
+  "news/comp-journalism/seven-takeaways-from-nicar25": {
+    "slug": "news/comp-journalism/seven-takeaways-from-nicar25",
+    "meta_description": "Looking to find out how others had experienced the conference we surveyed and interviewed more than two dozen attendees about their experiences at...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Seven takeaways from NICAR25\",\n  \"description\": \"Looking to find out how others had experienced the conference we surveyed and interviewed more than two dozen attendees about their experiences at...\",\n  \"datePublished\": \"2026-10-17T22:04:20.957992+00:00\",\n  \"dateModified\": \"2026-10-17T22:04:20.957992+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://source.opennews.org/articles/seven-takeaways-nicar25\"\n  },\n  \"url\": \"https://source.opennews.org/articles/seven-takeaways-nicar25\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-17T22:04:29.463810+00:00"
   },
   "news/comp-journalism/shahed-type-drones-filmed-during-mali-village-attacks": {
     "slug": "news/comp-journalism/shahed-type-drones-filmed-during-mali-village-attacks",

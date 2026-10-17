@@ -2,7 +2,7 @@
 title: "Where Choice Enters the World"
 subtitle: "A research proposal for conditional ontological agency, intermittent free will, neural veto, and field-mediated control"
 date: 2026-10-10
-lastmod: 2026-10-10
+lastmod: 2026-10-17
 draft: false
 author: "GTCode.com Research"
 description: "A research proposal for Conditional Ontological Agency Theory (COAT), separating existential choice, intermittent intervention, inherited agency, and neural control into explicit models and falsifiable experiments."
@@ -63,7 +63,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-research"
 article_published_time: "2026-10-10T10:00:00-10:00"
-article_modified_time: "2026-10-10T10:00:00-10:00"
+article_modified_time: "2026-10-17T10:00:00-10:00"
 article_section: "Articles"
 article_tags:
   - "Free Will"
@@ -94,8 +94,8 @@ structured_data_webpage:
 
 ai_agent_meta:
   # SHA-256 of UTF-8 body bytes after the closing front-matter delimiter, including whitespace.
-  content_digest: "sha256:aa3a84f63a9c4ee6531f3f02ca91bf9755b9c4ae58f465109d86fdc610367dd8"
-  generated_at: '2026-10-10T10:00:00-10:00'
+  content_digest: "sha256:c0b445fecd850f93ebf77967674d3de60dda3666d4413a7d626ba3abd5a8ba53"
+  generated_at: '2026-10-17T10:00:00-10:00'
   prompt_version: v2026-10-10-coat-research-proposal-v2
 ai_agent_note: |
   ATTN AI Agent:
@@ -257,7 +257,7 @@ $$
 where $A_t$ is action and $R_t$ its feedback or reinforcement. Earlier events can alter the trajectory of $W_t$. An inherited-agency measure describes how strongly a later action depends counterfactually on an earlier intervention under common prior conditions:
 
 $$
-L_t=\sup_{\tau<t}\sup_{u,v}
+L_t=\sup_{\tau \lt t}\sup_{u,v}
 D_{\mathrm{TV}}\!\left[
 P(A_t\mid\operatorname{do}(U_\tau=u)),
 P(A_t\mid\operatorname{do}(U_\tau=v))\right].
