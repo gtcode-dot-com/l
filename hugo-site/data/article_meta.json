@@ -503,6 +503,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-13T20:16:06.834892+00:00"
   },
+  "news/ai-research/beyond-tree-cover-mapping-the-worlds-forest-types": {
+    "slug": "news/ai-research/beyond-tree-cover-mapping-the-worlds-forest-types",
+    "meta_description": "October 22, 2026 Research Maxim Neumann and Charlotte Stanton Copied A new 10-meter resolution map shows which of the world's forests are natural,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Beyond tree cover: mapping the world’s forest types\",\n  \"description\": \"October 22, 2026 Research Maxim Neumann and Charlotte Stanton Copied A new 10-meter resolution map shows which of the world's forests are natural,...\",\n  \"datePublished\": \"2026-10-22T20:29:24.766322+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:24.766322+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types\"\n  },\n  \"url\": \"https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:50.876357+00:00"
+  },
   "news/ai-research/brian-hedden-named-co-associate-dean-of-social-and-ethical-responsibilities-of-computing": {
     "slug": "news/ai-research/brian-hedden-named-co-associate-dean-of-social-and-ethical-responsibilities-of-computing",
     "meta_description": "Brian Hedden PhD ’12 has been appointed co-associate dean of the Social and Ethical Responsibilities of Computing (SERC) at MIT, a cross-cutting...",
@@ -874,6 +881,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:07:08.419373+00:00"
   },
+  "news/ai-research/ensemble-forecasting-with-ibm-granite-time-series-models": {
+    "slug": "news/ai-research/ensemble-forecasting-with-ibm-granite-time-series-models",
+    "meta_description": "Four open Granite models, one extensible forecasting interface, and less guesswork about which model to use. Pre-trained time-series models can...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Ensemble forecasting with IBM Granite time-series models\",\n  \"description\": \"Four open Granite models, one extensible forecasting interface, and less guesswork about which model to use. Pre-trained time-series models can...\",\n  \"datePublished\": \"2026-10-22T20:29:25.802554+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:25.802554+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:51.559640+00:00"
+  },
   "news/ai-research/estimating-suicide-risk-from-text": {
     "slug": "news/ai-research/estimating-suicide-risk-from-text",
     "meta_description": "When people reach out during a mental health crisis, a top priority for counselors is identifying those with a high risk of suicide.",
@@ -1167,6 +1181,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Give Your Coding Agents a Memory You Own\",\n  \"description\": \"I work across several machines, and I switch coding agents depending on the task. Every one of them meets my projects as a stranger.\",\n  \"datePublished\": \"2026-10-03T05:01:05.412269+00:00\",\n  \"dateModified\": \"2026-10-03T05:01:05.412269+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/funes\"\n  },\n  \"url\": \"https://huggingface.co/blog/funes\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-03T05:02:07.344272+00:00"
+  },
+  "news/ai-research/giving-ai-a-crystal-clear-view-of-the-materials-world": {
+    "slug": "news/ai-research/giving-ai-a-crystal-clear-view-of-the-materials-world",
+    "meta_description": "New research can help AI models understand crystalline materials in 3D and reason about their properties. In principle, artificial intelligence...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Giving AI a “crystal clear” view of the materials world\",\n  \"description\": \"New research can help AI models understand crystalline materials in 3D and reason about their properties. In principle, artificial intelligence...\",\n  \"datePublished\": \"2026-10-22T20:29:23.898164+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:23.898164+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018\"\n  },\n  \"url\": \"https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:52.218111+00:00"
   },
   "news/ai-research/google-deepmind-and-singapore-government-announce-new-ai-tool-to-protect-citizens-against-scams": {
     "slug": "news/ai-research/google-deepmind-and-singapore-government-announce-new-ai-tool-to-protect-citizens-against-scams",
@@ -2743,6 +2764,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-24T00:21:05.298443+00:00"
   },
+  "news/ai-research/olmoearth-v1-3-state-of-the-art-embeddings-for-the-whole-planet": {
+    "slug": "news/ai-research/olmoearth-v1-3-state-of-the-art-embeddings-for-the-whole-planet",
+    "meta_description": "🤗 Models | 📄 Tech Report | 📊 Data | 💻 Code | 🌎 Embeddings Explorer | 🗺️ Interactive story [](https://www.datocms-assets.com/64837/1792611867-olmoea...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OlmoEarth v1.3: State-of-the-art embeddings for the whole planet\",\n  \"description\": \"🤗 Models | 📄 Tech Report | 📊 Data | 💻 Code | 🌎 Embeddings Explorer | 🗺️ Interactive story [](https://www.datocms-assets.com/64837/1792611867-olmoea...\",\n  \"datePublished\": \"2026-10-22T20:29:25.270062+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:25.270062+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/allenai/olmoearth-v1-3\"\n  },\n  \"url\": \"https://huggingface.co/blog/allenai/olmoearth-v1-3\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:51.882803+00:00"
+  },
   "news/ai-research/on-algorithms-life-and-learning": {
     "slug": "news/ai-research/on-algorithms-life-and-learning",
     "meta_description": "From enhancing international business logistics to freeing up more hospital beds to helping farmers, MIT Professor Dimitris Bertsimas SM ’87, PhD...",
@@ -3799,6 +3827,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Why it’s critical to move beyond overly aggregated machine-learning metrics\",\n  \"description\": \"MIT researchers have identified significant examples of machine-learning model failure when those models are applied to data other than what they...\",\n  \"datePublished\": \"2026-01-20T22:15:25.801333+00:00\",\n  \"dateModified\": \"2026-01-20T22:15:25.801333+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/why-its-critical-to-move-beyond-overly-aggregated-machine-learning-metrics-0120\"\n  },\n  \"url\": \"https://news.mit.edu/2026/why-its-critical-to-move-beyond-overly-aggregated-machine-learning-metrics-0120\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:19:01.305849+00:00"
+  },
+  "news/ai-research/why-teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable": {
+    "slug": "news/ai-research/why-teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable",
+    "meta_description": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Why teaching AI about symmetry could make prenatal diagnosis more reliable\",\n  \"description\": \"A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing...\",\n  \"datePublished\": \"2026-10-22T20:29:23.633004+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:23.633004+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019\"\n  },\n  \"url\": \"https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:51.219627+00:00"
   },
   "news/ai-research/why-you-should-care-about-partial-differential-equations-pdes": {
     "slug": "news/ai-research/why-you-should-care-about-partial-differential-equations-pdes",
@@ -5200,6 +5235,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-10T08:16:09.496750+00:00"
   },
+  "news/ai-security/backdooring-open-weight-ai-models": {
+    "slug": "news/ai-security/backdooring-open-weight-ai-models",
+    "meta_description": "This is a problem: &gt; Any open model whose weights have been edited can carry a backdoor, whether it’s a task-specific fine-tune, a merged...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Backdooring Open-Weight AI Models\",\n  \"description\": \"This is a problem: &gt; Any open model whose weights have been edited can carry a backdoor, whether it’s a task-specific fine-tune, a merged...\",\n  \"datePublished\": \"2026-10-22T20:29:09.455183+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:09.455183+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:50.533063+00:00"
+  },
   "news/ai-security/badges-bytes-and-blackmail": {
     "slug": "news/ai-security/badges-bytes-and-blackmail",
     "meta_description": "Behind the scenes of law enforcement in cyber: what do we know about caught cybercriminals? What brought them in, where do they come from and what...",
@@ -5689,6 +5731,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"China-Linked Hackers Exploit VMware ESXi Zero-Days to Escape Virtual Machines\",\n  \"description\": \"Jan 09, 2026 Ravie Lakshmanan Virtualization / Vulnerability Chinese-speaking threat actors are suspected to have leveraged a compromised...\",\n  \"datePublished\": \"2026-01-09T20:15:13.618698+00:00\",\n  \"dateModified\": \"2026-01-09T20:15:13.618698+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/chinese-linked-hackers-exploit-vmware.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/chinese-linked-hackers-exploit-vmware.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:00.781958+00:00"
+  },
+  "news/ai-security/china-linked-hackers-exploited-beyondtrust-zero-day-to-take-over-remote-support-servers": {
+    "slug": "news/ai-security/china-linked-hackers-exploited-beyondtrust-zero-day-to-take-over-remote-support-servers",
+    "meta_description": "Ravie Lakshmanan Oct 16, 2026 Zero-Day / Vulnerability The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers\",\n  \"description\": \"Ravie Lakshmanan Oct 16, 2026 Zero-Day / Vulnerability The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp...\",\n  \"datePublished\": \"2026-10-22T20:29:08.821768+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:08.821768+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/china-linked-hackers-exploited.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/china-linked-hackers-exploited.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:50.189191+00:00"
   },
   "news/ai-security/china-linked-hackers-have-used-the-peckbirdy-javascript-c2-framework-since-2023": {
     "slug": "news/ai-security/china-linked-hackers-have-used-the-peckbirdy-javascript-c2-framework-since-2023",
@@ -7929,6 +7978,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: Rotting Squid on a Beached California Boat\",\n  \"description\": \"Smells awful : &gt; But an estimated 30 to 50 tons of dead squid remain inside the boat’s catch tank, where they have been decomposing for days.\",\n  \"datePublished\": \"2026-10-03T03:00:52.305175+00:00\",\n  \"dateModified\": \"2026-10-03T03:00:52.305175+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/09/friday-squid-blogging-rotting-squid-on-a-beached-california-boat.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/09/friday-squid-blogging-rotting-squid-on-a-beached-california-boat.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-03T03:02:13.137593+00:00"
+  },
+  "news/ai-security/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact": {
+    "slug": "news/ai-security/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact",
+    "meta_description": "New research shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event. As usual, you can also use...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: Squid Before the Chicxulub Meteor Impact\",\n  \"description\": \"New research shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event. As usual, you can also use...\",\n  \"datePublished\": \"2026-10-22T20:29:09.166943+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:09.166943+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:49.493959+00:00"
   },
   "news/ai-security/friday-squid-blogging-squid-camouflage": {
     "slug": "news/ai-security/friday-squid-blogging-squid-camouflage",
@@ -11135,6 +11191,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Maybe a Little Bit More Interesting React2Shell Exploit, (Wed, Dec 17th)\",\n  \"description\": \"I have already talked about various React2Shell exploit attempts we have observed in the last weeks. But new varieties of the exploit are popping...\",\n  \"datePublished\": \"2025-12-19T04:44:05.024909+00:00\",\n  \"dateModified\": \"2025-12-19T04:44:05.024909+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32578\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32578\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:32.932267+00:00"
+  },
+  "news/ai-security/measuring-human-cryptanalysis-effort": {
+    "slug": "news/ai-security/measuring-human-cryptanalysis-effort",
+    "meta_description": "Matthew Green has a new site that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Measuring Human Cryptanalysis Effort\",\n  \"description\": \"Matthew Green has a new site that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key...\",\n  \"datePublished\": \"2026-10-22T20:29:09.729255+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:09.729255+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:49.152795+00:00"
   },
   "news/ai-security/medieval-encrypted-letter-decoded": {
     "slug": "news/ai-security/medieval-encrypted-letter-decoded",
@@ -15709,10 +15772,10 @@
   },
   "news/ai-security/upcoming-speaking-engagements": {
     "slug": "news/ai-security/upcoming-speaking-engagements",
-    "meta_description": "Bruce Schneier announces his upcoming speaking engagements on AI security and related topics in November and December 2025, and February 2026.",
-    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Upcoming Speaking Engagements\",\n  \"description\": \"A list of upcoming speaking engagements for Bruce Schneier on topics related to AI and security.\",\n  \"datePublished\": \"2025-11-16T23:37:57+00:00\",\n  \"dateModified\": \"2025-11-16T23:37:57+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://www.schneier.com/static/images/logo.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2025/11/upcoming-speaking-engagements-50.html\"\n  },\n  \"sameAs\": \"https://www.schneier.com/blog/archives/2025/11/upcoming-speaking-engagements-50.html\"\n}",
+    "meta_description": "This is a current list of where and when I am scheduled to speak: I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Quebec, Canada.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Upcoming Speaking Engagements\",\n  \"description\": \"This is a current list of where and when I am scheduled to speak: I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Quebec, Canada.\",\n  \"datePublished\": \"2026-10-22T20:29:09.980861+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:09.980861+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html\"\n}",
     "agent_callout": "",
-    "generated_at": "2025-11-16T23:38:32.543190+00:00"
+    "generated_at": "2026-10-22T20:29:49.861911+00:00"
   },
   "news/ai-security/upcoming-speaking-engagements-256f48": {
     "slug": "news/ai-security/upcoming-speaking-engagements-256f48",
@@ -19039,6 +19102,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T22:06:15.734955+00:00"
   },
+  "news/comp-journalism/in-the-ai-age-publishers-who-understand-what-readers-want-will-do-best-a-new-report-argues": {
+    "slug": "news/comp-journalism/in-the-ai-age-publishers-who-understand-what-readers-want-will-do-best-a-new-report-argues",
+    "meta_description": "AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"In the AI age, publishers who understand what readers want will do best, a new report argues\",\n  \"description\": \"AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...\",\n  \"datePublished\": \"2026-10-22T20:29:42.736326+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:42.736326+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/in-the-ai-age-publishers-who-understand-what-readers-want-will-do-best-a-new-report-argues\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/in-the-ai-age-publishers-who-understand-what-readers-want-will-do-best-a-new-report-argues\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:52.903122+00:00"
+  },
   "news/comp-journalism/independent-appoints-new-president-of-north-america-for-next-phase-of-growth": {
     "slug": "news/comp-journalism/independent-appoints-new-president-of-north-america-for-next-phase-of-growth",
     "meta_description": "Chris Anthony. Picture: Independent Media The Independent has hired a new president to oversee its business in North America through its “next...",
@@ -20481,6 +20551,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-24T04:49:41.766558+00:00"
   },
+  "news/comp-journalism/publishers-pressure-meta-to-nix-new-terms-that-would-let-the-company-scrape-their-websites": {
+    "slug": "news/comp-journalism/publishers-pressure-meta-to-nix-new-terms-that-would-let-the-company-scrape-their-websites",
+    "meta_description": "The largest news publishing trade association in the United States is calling on Meta CEO Mark Zuckerberg to suspend the implementation of the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Publishers pressure Meta to nix new terms that would let the company scrape their websites\",\n  \"description\": \"The largest news publishing trade association in the United States is calling on Meta CEO Mark Zuckerberg to suspend the implementation of the...\",\n  \"datePublished\": \"2026-10-22T20:29:41.899405+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:41.899405+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/publishers-pressure-meta-to-nix-new-terms-that-would-let-it-scrape-their-websites\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/publishers-pressure-meta-to-nix-new-terms-that-would-let-it-scrape-their-websites\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:52.550501+00:00"
+  },
   "news/comp-journalism/publishers-urged-to-embrace-future-where-bot-readers-provide-majority-of-revenue": {
     "slug": "news/comp-journalism/publishers-urged-to-embrace-future-where-bot-readers-provide-majority-of-revenue",
     "meta_description": "Tollbit co-founders Olivia Joslin and Toshit Panigrahi. Picture: Tollbit AI agents and bots will become the “primary” revenue source for the...",
@@ -21174,6 +21251,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:22.210958+00:00"
   },
+  "news/comp-journalism/the-ringer-bets-on-substacks-network-over-its-own-website": {
+    "slug": "news/comp-journalism/the-ringer-bets-on-substacks-network-over-its-own-website",
+    "meta_description": "“Very interesting that The Ringer’s writers write on Substack and not…The Ringer.” “What’s the point of the website then?” “Hold up.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Ringer bets on Substack’s network over its own website\",\n  \"description\": \"“Very interesting that The Ringer’s writers write on Substack and not…The Ringer.” “What’s the point of the website then?” “Hold up.\",\n  \"datePublished\": \"2026-10-22T20:29:42.338454+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:42.338454+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/the-ringer-bets-on-substacks-network-over-its-own-website\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/the-ringer-bets-on-substacks-network-over-its-own-website\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:53.589361+00:00"
+  },
   "news/comp-journalism/the-seo-parasites-buying-exploiting-and-ultimately-killing-online-newsbrands": {
     "slug": "news/comp-journalism/the-seo-parasites-buying-exploiting-and-ultimately-killing-online-newsbrands",
     "meta_description": "Website of Charlie Gard Foundation now promotes gambling for SEO firm Parasitical SEO companies are buying respected online news outlets in order...",
@@ -21208,6 +21292,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The use of AI chatbots for news is on the rise — but not everywhere\",\n  \"description\": \"This year’s Digital News Report marked a notable milestone: for the first time, social and video networks overtook news publishers as a source of...\",\n  \"datePublished\": \"2026-06-23T17:58:32.203974+00:00\",\n  \"dateModified\": \"2026-06-23T17:58:32.203974+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/06/the-use-of-ai-chatbots-for-news-is-on-the-rise-but-not-everywhere\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/06/the-use-of-ai-chatbots-for-news-is-on-the-rise-but-not-everywhere\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-23T17:58:46.161763+00:00"
+  },
+  "news/comp-journalism/the-wall-street-journals-new-ai-tool-doppler-forecasts-the-issues-that-will-shape-the-midterm-elections": {
+    "slug": "news/comp-journalism/the-wall-street-journals-new-ai-tool-doppler-forecasts-the-issues-that-will-shape-the-midterm-elections",
+    "meta_description": "More than 100 million voters are expected to cast ballots in the 2026 U.S. midterm elections. In recent election cycles, political reporting based...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Wall Street Journal’s new AI tool, “Doppler,” forecasts the issues that will shape the midterm elections\",\n  \"description\": \"More than 100 million voters are expected to cast ballots in the 2026 U.S. midterm elections. In recent election cycles, political reporting based...\",\n  \"datePublished\": \"2026-10-22T20:29:43.488427+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:43.488427+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/the-wall-street-journals-new-ai-tool-doppler-forecasts-the-issues-that-will-shape-the-midterm-elections\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/the-wall-street-journals-new-ai-tool-doppler-forecasts-the-issues-that-will-shape-the-midterm-elections\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:53.249627+00:00"
   },
   "news/comp-journalism/the-war-youre-not-allowed-to-see-how-the-uae-rewrites-the-story-of-iranian-strikes": {
     "slug": "news/comp-journalism/the-war-youre-not-allowed-to-see-how-the-uae-rewrites-the-story-of-iranian-strikes",
@@ -21432,6 +21523,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Two years ago, Meta killed CrowdTangle. Can a new AI tool fill the void?\",\n  \"description\": \"In 2024, Meta shuttered CrowdTangle , a tool used to track how content spread across Facebook and Instagram. The portal was an essential tool for...\",\n  \"datePublished\": \"2026-10-02T01:12:40.822880+00:00\",\n  \"dateModified\": \"2026-10-02T01:12:40.822880+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/two-years-ago-meta-killed-crowdtangle-can-a-new-ai-tool-fill-the-void\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/two-years-ago-meta-killed-crowdtangle-can-a-new-ai-tool-fill-the-void\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-02T01:13:03.764341+00:00"
+  },
+  "news/comp-journalism/u-k-politicians-and-german-publishers-call-on-regulators-to-pause-metas-new-terms-before-october-30-deadline": {
+    "slug": "news/comp-journalism/u-k-politicians-and-german-publishers-call-on-regulators-to-pause-metas-new-terms-before-october-30-deadline",
+    "meta_description": "The U.K. competition and consumer protection authority sent a formal letter to Meta to discuss its new commercial terms of service.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"U.K. politicians and German publishers call on regulators to pause Meta’s new terms before October 30 deadline\",\n  \"description\": \"The U.K. competition and consumer protection authority sent a formal letter to Meta to discuss its new commercial terms of service.\",\n  \"datePublished\": \"2026-10-22T20:29:43.116948+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:43.116948+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/u-k-politicians-and-german-publishers-call-on-regulators-to-pause-metas-new-terms-before-october-30-deadline\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/u-k-politicians-and-german-publishers-call-on-regulators-to-pause-metas-new-terms-before-october-30-deadline\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-10-22T20:29:53.923426+00:00"
   },
   "news/comp-journalism/u-s-news-jobs-are-more-than-3x-more-likely-to-be-based-in-manhattan-than-they-were-25-years-ago": {
     "slug": "news/comp-journalism/u-s-news-jobs-are-more-than-3x-more-likely-to-be-based-in-manhattan-than-they-were-25-years-ago",

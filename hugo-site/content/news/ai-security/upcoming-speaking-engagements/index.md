@@ -7,52 +7,51 @@ ai_commentary_meta:
   prompt_version: ''
   provider: ''
 category: ai-security
-date: '2025-11-16T23:37:57.455615+00:00'
-exported_at: '2025-11-16T23:37:58.756395+00:00'
+date: '2026-10-22T20:29:09.980861+00:00'
+exported_at: '2026-10-22T20:29:10.694236+00:00'
 feed: https://www.schneier.com/feed/atom/
 language: en
-source_url: https://www.schneier.com/blog/archives/2025/11/upcoming-speaking-engagements-50.html
+source_url: https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html
 structured_data:
   about: []
   author: ''
   description: 'This is a current list of where and when I am scheduled to speak:
-    My coauthor Nathan E. Sanders and I are speaking at the Rayburn House Office Building
-    in Washington, DC at noon ET on November 17, 2025. The event is hosted by the
-    POPVOX Foundation and the topic is “AI and Congress: Practical Steps to Govern
-    and Prepare.” I’m speaking on “Integrity and Trustworthy AI” at North Hennepin
-    Community College in Brooklyn Park, Minnesota, USA, on Friday, November 21, 2025,
-    at 2:00 PM CT. The event is cohosted by the college and The Twin Cities IEEE Computer
-    Society...'
+    I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Quebec, Canada. The
+    event runs October 21–23, 2026, and my talk is on Wednesday, October 21. I’m speaking
+    at the University of Toronto in Toronto, Ontario, Canada, at 5 PM ET on October
+    22, 20...'
   headline: Upcoming Speaking Engagements
   inLanguage: en
   keywords: []
   main_image: ''
-  original_source: https://www.schneier.com/blog/archives/2025/11/upcoming-speaking-engagements-50.html
+  original_source: https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html
   publisher:
     logo: /favicon.ico
-    name: gtcode.com
+    name: GTCode
 title: Upcoming Speaking Engagements
-updated_at: '2025-11-16T23:37:57.455615+00:00'
-url_hash: be2c1b765d5fc1122b56c114daba267ae0b869be
+updated_at: '2026-10-22T20:29:09.980861+00:00'
+url_hash: 4d5b36d13b300c3b0d8b544940b993f46b07c6dc
 ---
 
 ## Upcoming Speaking Engagements
 
 This is a current list of where and when I am scheduled to speak:
 
-* My coauthor Nathan E. Sanders and I are speaking at the Rayburn House Office Building in Washington, DC at noon ET on November 17, 2025. The event is hosted by the POPVOX Foundation and the topic is “
-  [AI and Congress: Practical Steps to Govern and Prepare](https://www.popvox.org/events/ai-and-congress)
-  .”
-* I’m speaking on “Integrity and Trustworthy AI” at
-  [North Hennepin Community College](https://events.vtools.ieee.org/m/462883)
-  in Brooklyn Park, Minnesota, USA, on Friday, November 21, 2025, at 2:00 PM CT. The event is cohosted by the college and The Twin Cities IEEE Computer Society.
-* Nathan E. Sanders and I will be speaking at the
-  [MIT Museum](https://mitpress.mit.edu/event/bruce-schneier-at-the-mit-museum/)
-  in Cambridge, Massachusetts, USA, on December 1, 2025, at 6:00 pm ET.
-* Nathan E. Sanders and I will be speaking at a
-  [virtual event](https://citylights.com/events/rewiring-democracy-with-bruce-schneier-and-nathan-e-sanders/)
-  hosted by City Lights on the Zoom platform, on December 3, 2025, at 6:00 PM PT.
-* I’m speaking and signing books at the Chicago Public Library in Chicago, Illinois, USA, on February 5, 2026. Details to come.
+* I’m speaking at
+  [ATTENTION: Democracy, Rebuilt](https://www.attentionconferences.com/conferences/2026-forum)
+  in Montreal, Quebec, Canada. The event runs October 21–23, 2026, and my talk is on Wednesday, October 21.
+* I’m speaking at the
+  [University of Toronto](https://www.eventbrite.ca/e/conversations-in-computing-bruce-schneier-on-hacking-ai-tickets-1998780074007)
+  in Toronto, Ontario, Canada, at 5 PM ET on October 22, 2026.
+* I’m speaking at
+  [[un]prompted](https://unpromptedcon.org/)
+  in San Francisco, California. The event runs October 27–29, 2026, and my talk is at 11:35 AM PT on Thursday, October 29.
+* I’m speaking at the
+  [Catalyst Summit](https://luma.com/a3pk9zbg)
+  in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.
+* I’m speaking at
+  [QT Qonference 2026](https://queertech.org/en/events/qonference/qtq-2026)
+  in Toronto, Ontario, Canada, on Thursday, November 19, 2026.
 
 The list is maintained on
 [this page](https://www.schneier.com/events/)
@@ -61,8 +60,8 @@ The list is maintained on
 Tags:
 [Schneier news](https://www.schneier.com/tag/schneier-news/)
 
-[Posted on November 14, 2025 at 12:08 PM](https://www.schneier.com/blog/archives/2025/11/upcoming-speaking-engagements-50.html)
+[Posted on October 14, 2026 at 12:02 PM](https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html)
 •
-[0 Comments](https://www.schneier.com/blog/archives/2025/11/upcoming-speaking-engagements-50.html#respond)
+[1 Comments](https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html#comments)
 
 Sidebar photo of Bruce Schneier by Joe MacInnis.

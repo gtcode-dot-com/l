@@ -1,0 +1,70 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: ai-research
+date: '2026-10-22T20:29:23.633004+00:00'
+exported_at: '2026-10-22T20:29:26.540294+00:00'
+feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
+language: en
+source_url: https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019
+structured_data:
+  about: []
+  author: ''
+  description: A new AI model called E(3)-Pose helps capture high-resolution images
+    of a human fetus&#039;s head to improve the early detection of developmental anomalies
+    during pregnancy.
+  headline: Why teaching AI about symmetry could make prenatal diagnosis more reliable
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019
+  publisher:
+    logo: /favicon.ico
+    name: GTCode
+title: Why teaching AI about symmetry could make prenatal diagnosis more reliable
+updated_at: '2026-10-22T20:29:23.633004+00:00'
+url_hash: 0dbde1ea11534cb3dcb195e1e82aaa1459e9f664
+---
+
+A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.
+
+Despite millions of years of evolution, the development of the human fetus remains a complex process that is vulnerable to genetic, environmental, and metabolic disruptions. These disruptions could result in developmental abnormalities, starting with one of the first organs to begin developing in the fetus that continues to develop after birth: the brain.
+
+In a routine prenatal ultrasound, the sonographer will flag possible brain abnormalities for additional magnetic resonance imaging (MRI). But imperfect imaging can result in missed or incorrect diagnoses.
+
+To assist with the early detection and treatment of these abnormalities, researchers at MIT, Boston Children’s Hospital, and Inria have developed and trained a deep learning model called E(3)-Pose that helps image the fetus’s head while it’s in motion to capture a high-resolution image that the radiologist can examine. A paper about the work was presented at the
+[2026 European Conference on Computer Vision](https://eccv.ecva.net/)
+.
+
+“One of the problems with having the baby move is that the slices are all over the place,” says first author Ramya Muthukrishnan. Muthukrishnan is an MIT PhD student in the lab of Sunlin (1966) and Priscilla Chou Professor of Electrical Engineering and Computer Science Polina Golland, who is a principal investigator at the
+[MIT Abdul Latif Jameel Clinic for Machine Learning in Health](https://jclinic.mit.edu/)
+(Jameel Clinic) and the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL).
+
+By slices, Muthukrishnan is referring to a series of 2D images taken during a fetal MRI scan. These 2D planes stacked together effectively make up one high-resolution, 3D image of the fetus’s head. But if the head shifts during imaging, each 2D image “slice” could end up being taken from a different angle, resulting in gaps in the final scan and unusual slice orientation. These problems may cause the physician reviewing the MRI to miss or incorrectly diagnose a pathology in the fetal brain.
+
+“There are very fine details that you need a very good volumetric picture of the brain to see,” explains Muthukrishnan. “If you have coverage gaps, you can’t see critical regions, and you need to be able to see well to detect abnormal development.”
+
+What makes E(3)-Pose particularly good at tracking fetal motion is its focus on physics. Rather than simply training the model to learn physics from the data, the very principles of physics are baked into the neural network: left-right symmetry of the fetal head is embedded in the model architecture, making it easier for the model to accurately identify the brain’s orientation.
+
+When Muthukrishnan began working on the project at the start of her PhD, she had no background in physics, let alone MRI physics. Most of her experience was in computer science. “I was surprised when I had to go and implement this on the scanner,” she recalls. “I was not prepared for how many times I would crash the scanner because putting things on hardware and getting it to work on hardware is a different beast than training a model to run on data on a GPU.”
+
+Despite the challenges, Muthukrishnan persisted. She remembers shadowing a radiologist who performed fetal MRI scans at Boston Children’s Hospital at the start of her PhD and observing the shared frustration of the patient and radiologist: the pregnant mother felt uncomfortable after spending an hour in an MRI, only to quit the scan halfway; the radiologist was unable to procure a full, high-quality MRI to monitor the development of the fetus.
+
+“Seeing frustration about it helped me decide what I wanted to do with my PhD, because it felt like this was a pain point,” Muthukrishnan says.
+
+Fortunately, she had help: Co-author Borjan Gagoski, an assistant professor of radiology at Harvard Medical School and a researcher at Boston Children's Hospital, developed a sequence that acquires additional MRI scans to assist with training E(3)-Pose and worked with Muthukrishnan to help troubleshoot the scanner whenever it crashed. Co-author and Boston Children’s Research Assistant Aryn Lee recruited the pregnant volunteers and assisted with acquiring each of the MRI scans. Senior authors who helped guide the project include Elfar Adalsteinsson, MIT professor of electrical engineering and computer science; Ellen Grant, the Käthe Beutler Professor of Pediatrics and professor of radiology at Harvard Medical School; and Golland. Benjamin Billot, a researcher at Inria and a former postdoc in Golland’s group, helped Muthukrishnan get started with the initial method he developed.
+
+“Ramya’s work elegantly combines geometric concepts like equivariance and symmetry with the power of deep learning to change how MRI scanners acquire the images, and to ultimately help the physicians detect and treat problems early in development. It’s an impressive research project that is deep and fundamental in how it models image acquisition, with clear clinical impact,” says Golland.
+
+Grant, who directs the Fetal Neonatal Neuroimaging and Developmental Science Center (FNNDSC) at Boston Children’s, adds that Muthukrishnan’s work “will automate fetal brain MRI, replacing today's slow, manual process with faster and more comfortable scans for mothers, while also providing higher-quality images for radiologists to interpret.”
+
+E(3)-Pose’s applications could extend beyond motion tracking for fetal MRIs. It could assist with imaging other hard-to-image anatomy, and even autonomous driving applications, where limited sensors need to capture noisy, 3D data in order to track 3D objects.
+
+For now, Muthukrishnan hopes to improve E(3)-Pose so that it can help with imaging second-trimester or younger fetuses, as the model is primarily trained on third trimester fetuses. Second-trimester fetuses are “so small, they move around a lot more because there’s more space in the uterus,” Muthukrishnan says. “They’re more important to focus on because the earlier you detect brain abnormalities, the easier it is to intervene.”
+
+This work is supported by the MIT Jameel Clinic, the MIT Takeda Program, the Chou Family Transformative Research Fund, the National Institute of Biomedical Imaging and Bioengineering, and the Eunice Kennedy Shriver National Institute of Child Health and Human Development.
