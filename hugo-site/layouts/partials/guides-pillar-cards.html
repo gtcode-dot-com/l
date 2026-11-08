@@ -1,4 +1,4 @@
-{{- $nav := index .Site.Data "guides_nav" -}}
+{{- $nav := index hugo.Data "guides_nav" -}}
 {{- if $nav -}}
   {{- $pillars := or (index $nav "pillars") (slice) -}}
   <section class="guides-pillar-cards">

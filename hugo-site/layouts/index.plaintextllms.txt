@@ -66,7 +66,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 
 - [Hex.pm Profile](https://hex.pm/users/nshkrdotcom): Complete Elixir package catalog
 - [All Repositories]({{ "/repos/" | absURL }}): Full library listing
-{{ range site.Data.repos }}
+{{ range hugo.Data.repos }}
 - [{{ .name }}]({{ .hex_url }}): {{ .summary }}
 {{- end }}{{ end }}
 {{- with site.GetPage "/consulting" }}

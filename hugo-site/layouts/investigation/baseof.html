@@ -2,7 +2,7 @@
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
 {{- $isActiveException := and site.Params.enable_exceptions (ne $active.RelPermalink $page.RelPermalink) -}}
-{{- $siteLang := .Site.LanguageCode | default "en" -}}
+{{- $siteLang := .Site.Language.Locale | default "en" -}}
 {{- $contentLang := $active.Params.language | default "" -}}
 {{- $langFromHugo := $active.Lang | default "" -}}
 {{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
@@ -170,7 +170,7 @@
         </div>
         <div class="footer-section">
           <p class="footer-heading">News</p>
-          {{- $newsData := .Site.Data.news_categories | default dict -}}
+          {{- $newsData := hugo.Data.news_categories | default dict -}}
           {{- $categories := $newsData.categories | default slice -}}
           <ul>
             {{- if gt (len $categories) 0 -}}

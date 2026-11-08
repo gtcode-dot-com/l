@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{/* Look up repo from the single source of truth: data/repos.yaml */}}
 {{ $slug := .File.ContentBaseName }}
-{{ $matches := where .Site.Data.repos "slug" $slug }}
+{{ $matches := where hugo.Data.repos "slug" $slug }}
 {{ if $matches }}
   {{ $repo := index $matches 0 }}
 

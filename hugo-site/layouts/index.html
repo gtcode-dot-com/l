@@ -1,7 +1,7 @@
 {{- if site.Params.alternative_homepage -}}
 {{- $alternativeHome := site.GetPage "/homepage-alternative" -}}
 <!doctype html>
-<html lang="{{ site.LanguageCode | default "en" }}">
+<html lang="{{ site.Language.Locale | default "en" }}">
   <head>
     <meta charset="utf-8" />
     <title>{{ with $alternativeHome }}{{ .Title }}{{ else }}Hello{{ end }}</title>
@@ -17,7 +17,7 @@
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
 {{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
-{{- $siteLang := .Site.LanguageCode | default "en" -}}
+{{- $siteLang := .Site.Language.Locale | default "en" -}}
 {{- $contentLang := $active.Params.language | default "" -}}
 {{- $langFromHugo := $active.Lang | default "" -}}
 {{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
@@ -80,7 +80,7 @@
     {{ partial "fetch-article-meta.html" (dict "context" $page) }}
     {{ $articleMeta := $page.Scratch.Get "_article_meta" }}
     {{ if not $articleMeta }}
-      {{ $articleMetaMap := default (dict) (index .Site.Data "article_meta") }}
+      {{ $articleMetaMap := default (dict) (index hugo.Data "article_meta") }}
       {{ $articleMeta = index $articleMetaMap (trim $page.RelPermalink "/") }}
     {{ end }}
     {{ if $isActiveException }}{{ $articleMeta = dict }}{{ end }}
@@ -395,7 +395,7 @@
             {{ with $page.Params.lastmod }}{{ $updated = time.AsTime . }}{{ end }}
             {{ if $updated.IsZero }}{{ $updated = $page.Date }}{{ end }}
             {{ $summary := $page.Params.card_summary | default $page.Description }}
-            {{ if eq (strings.TrimSpace $summary) "" }}{{ $summary = $page.Summary | plainify | truncate 210 }}{{ end }}
+            {{ if eq (strings.TrimSpace $summary) "" }}{{ $summary = (partial "summary-text.html" $page.Summary) | truncate 210 }}{{ end }}
             <article class="ou-card">
               {{ with $page.Params.og_image }}
               <figure class="ou-card-thumb">

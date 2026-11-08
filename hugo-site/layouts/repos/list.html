@@ -33,7 +33,7 @@
       </div>
     </section>
 
-    {{ $repos := .Site.Data.repos }}
+    {{ $repos := hugo.Data.repos }}
     {{ if $repos }}
       <section class="repo-grid">
         {{ range $repos }}

@@ -1,5 +1,5 @@
 {{- $ctx := .context -}}
-{{- $nav := index $ctx.Site.Data "guides_nav" -}}
+{{- $nav := index hugo.Data "guides_nav" -}}
 {{- if $nav -}}
   {{- $pillars := or (index $nav "pillars") (slice) -}}
   <aside class="guides-sidebar" aria-label="Guides navigation">

@@ -99,7 +99,7 @@
 
           {{ with .Summary }}
             {{ $clean := replace (replace . "" "") "" "" }}
-            <p class="article-summary">{{ $clean | plainify | truncate 200 }}</p>
+            <p class="article-summary">{{ (partial "summary-text.html" $clean) | truncate 200 }}</p>
           {{ end }}
         </article>
       {{ end }}

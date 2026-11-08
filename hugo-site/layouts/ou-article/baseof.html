@@ -2,7 +2,7 @@
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
 {{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
-{{- $siteLang := .Site.LanguageCode | default "en" -}}
+{{- $siteLang := .Site.Language.Locale | default "en" -}}
 {{- $contentLang := $active.Params.language | default "" -}}
 {{- $langFromHugo := $active.Lang | default "" -}}
 {{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
@@ -28,7 +28,7 @@
     {{ partial "fetch-article-meta.html" (dict "context" $page) }}
     {{ $articleMeta := $page.Scratch.Get "_article_meta" }}
     {{ if not $articleMeta }}
-      {{ $articleMetaMap := default (dict) (index .Site.Data "article_meta") }}
+      {{ $articleMetaMap := default (dict) (index hugo.Data "article_meta") }}
       {{ $articleMeta = index $articleMetaMap (trim $page.RelPermalink "/") }}
     {{ end }}
     {{ if $isActiveException }}{{ $articleMeta = dict }}{{ end }}
@@ -177,7 +177,7 @@
         </div>
         <div class="footer-section">
           <p class="footer-heading">News</p>
-          {{- $newsData := .Site.Data.news_categories | default dict -}}
+          {{- $newsData := hugo.Data.news_categories | default dict -}}
           {{- $categories := $newsData.categories | default slice -}}
           <ul>
             {{- if gt (len $categories) 0 -}}

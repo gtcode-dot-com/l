@@ -121,7 +121,7 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 
 - Hex.pm Profile: https://hex.pm/users/nshkrdotcom
 - All Repositories: {{ "/repos/" | absURL }}
-{{ range site.Data.repos }}
+{{ range hugo.Data.repos }}
 ### {{ .name }}
 
 {{ .summary }}

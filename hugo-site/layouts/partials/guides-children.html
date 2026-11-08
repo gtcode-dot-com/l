@@ -9,7 +9,7 @@
       <article class="guides-child-card">
         <p class="guides-child-eyebrow">{{ $type }}</p>
         <h3><a href="{{ $child.RelPermalink }}">{{ $child.LinkTitle | default $child.Title }}</a></h3>
-        <p>{{ with $child.Description }}{{ . }}{{ else }}{{ $child.Summary | plainify | truncate 180 }}{{ end }}</p>
+        <p>{{ with $child.Description }}{{ . }}{{ else }}{{ (partial "summary-text.html" $child.Summary) | truncate 180 }}{{ end }}</p>
         <div class="guides-child-meta">
           {{- if eq $child.Kind "page" -}}
             <span>{{ $child.ReadingTime }} min read</span>

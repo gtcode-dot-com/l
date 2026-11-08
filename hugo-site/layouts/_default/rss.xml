@@ -1,6 +1,6 @@
 {{- $active := partial "exception/resolve-active-page.html" . -}}
 {{- $httpsPermalink := replace .Permalink "http://" "https://" -}}
-{{- $language := .Site.LanguageCode | default "en-us" -}}
+{{- $language := .Site.Language.Locale | default "en-us" -}}
 {{- $description := $active.Description | default (.Site.Params.description | default .Site.Title) -}}
 {{- $pages := .Pages -}}
 {{- if .IsHome -}}

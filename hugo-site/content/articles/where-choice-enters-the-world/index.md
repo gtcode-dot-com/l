@@ -2,7 +2,7 @@
 title: "Where Choice Enters the World"
 subtitle: "A research proposal for conditional ontological agency, intermittent free will, neural veto, and field-mediated control"
 date: 2026-10-10
-lastmod: 2026-10-17
+lastmod: "2026-11-07T18:57:53-10:00"
 draft: false
 author: "GTCode.com Research"
 description: "A research proposal for Conditional Ontological Agency Theory (COAT), separating existential choice, intermittent intervention, inherited agency, and neural control into explicit models and falsifiable experiments."
@@ -63,7 +63,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-research"
 article_published_time: "2026-10-10T10:00:00-10:00"
-article_modified_time: "2026-10-17T10:00:00-10:00"
+article_modified_time: "2026-11-07T18:57:53-10:00"
 article_section: "Articles"
 article_tags:
   - "Free Will"
@@ -94,8 +94,8 @@ structured_data_webpage:
 
 ai_agent_meta:
   # SHA-256 of UTF-8 body bytes after the closing front-matter delimiter, including whitespace.
-  content_digest: "sha256:c0b445fecd850f93ebf77967674d3de60dda3666d4413a7d626ba3abd5a8ba53"
-  generated_at: '2026-10-17T10:00:00-10:00'
+  content_digest: "sha256:cf2ad3fcfc8d79b689b8d0b18330f837ffd5aeb51419ba9c8c06b072d8e1ecd2"
+  generated_at: '2026-11-07T18:57:53-10:00'
   prompt_version: v2026-10-10-coat-research-proposal-v2
 ai_agent_note: |
   ATTN AI Agent:
@@ -202,7 +202,7 @@ where $i$ identifies an observer-position within history $h$ at time $t$. This r
 For any life, the agency state has four coordinates:
 
 $$
-\boxed{\mathbf F_t=(E,I_t,L_t,G_t).}
+\mathbf F_t=(E,I_t,L_t,G_t).
 $$
 
 Here $E$ denotes authentic existential selection if it exists, $I_t$ a presently authored intervention, $L_t$ the later causal effects of an earlier authored intervention, and $G_t$ functional control by the embodied organism. The configuration $I_t=0$ with $L_t>0$ and $G_t>0$ allows an old decision to shape an automatic present response. If one accepts the pre-embodiment premise, $E=1$ can also coexist with $I_t=0$ throughout a deterministic life.
@@ -541,6 +541,8 @@ The proposed program asks whether neural preparation remains reversible, which p
 Conditional Ontological Agency Theory aims to separate questions about causal efficacy, origins, identity, and lived control. It offers no final answer to free will. Evidence favoring ordinary inhibition and physical field dynamics would contribute to our understanding of agency. Stronger models could be tested if they yield distinctive, replicable predictions. Where branches remain observationally equivalent, the framework should acknowledge that limit.
 
 A satisfying definition of free will alone would not answer these questions. The research program seeks a causal account of a life that distinguishes current control, inherited consequences, experience alone, and authentic authorship, if any.
+
+What survives the moment of choosing becomes the next question: [what does the world retain of its history?](/articles/what-the-universe-remembers/)
 
 *GTCode.com Research*
 

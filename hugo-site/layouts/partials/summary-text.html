@@ -1,0 +1,4 @@
+{{/* Omit footnote references before flattening excerpts to plain text. */}}
+{{- $text := printf "%v" . -}}
+{{- $text = replaceRE `(?is)<sup\b[^>]*>\s*<a\b[^>]*\bclass=["']?footnote-ref\b[^>]*>.*?</a>\s*</sup>` "" $text -}}
+{{- return (plainify $text) -}}

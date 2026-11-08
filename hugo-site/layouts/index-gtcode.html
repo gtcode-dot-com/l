@@ -42,7 +42,7 @@
     <p class="section-description">Consultancy services, open-source libraries, and computational truth-seeking that reinforce one another.</p>
   </section>
 
-  {{- $missionData := index .Site.Data.home "mission" | default dict -}}
+  {{- $missionData := index hugo.Data.home "mission" | default dict -}}
   {{- $missions := $missionData.missions | default slice -}}
   <div class="news-grid mission-grid">
     {{- range $missions }}
@@ -164,7 +164,7 @@
         </div>
         {{ with .Summary }}
           {{ $clean := replace (replace . "" "") "" "" }}
-          <p class="article-summary">{{ $clean | plainify | truncate 160 }}</p>
+          <p class="article-summary">{{ (partial "summary-text.html" $clean) | truncate 160 }}</p>
         {{ end }}
       </article>
     {{ end }}

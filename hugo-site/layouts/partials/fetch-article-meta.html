@@ -3,7 +3,7 @@
   {{- $scratchKey := .scratchKey | default "_article_meta" -}}
   {{- $scratch := .scratch | default $ctx.Scratch -}}
   {{- if and $scratch (not ($scratch.Get $scratchKey)) -}}
-    {{- $data := site.Data.article_meta -}}
+    {{- $data := hugo.Data.article_meta -}}
     {{- if $data -}}
       {{- $rel := "" -}}
       {{- with $ctx.RelPermalink -}}

@@ -1259,6 +1259,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T21:22:30.121883+00:00"
   },
+  "news/ai-research/granite-speech-5-0-transcribe-translate-and-attribute-more-accurately-and-faster": {
+    "slug": "news/ai-research/granite-speech-5-0-transcribe-translate-and-attribute-more-accurately-and-faster",
+    "meta_description": "We're excited to share three updates to IBM's Granite Speech collection: a new speech-language model, granite-speech-5.0-2b , and revised versions...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster\",\n  \"description\": \"We're excited to share three updates to IBM's Granite Speech collection: a new speech-language model, granite-speech-5.0-2b , and revised versions...\",\n  \"datePublished\": \"2026-11-08T04:59:48.810773+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:48.810773+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-granite/granite-speech-5\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-granite/granite-speech-5\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:17.206698+00:00"
+  },
   "news/ai-research/granite-switch-4-1-chat-decisions-and-speech-from-one-endpoint": {
     "slug": "news/ai-research/granite-switch-4-1-chat-decisions-and-speech-from-one-endpoint",
     "meta_description": "Introduced last spring, the Granite Switch project enables a modular approach to model development. Now Granite Switch 4.",
@@ -1455,6 +1462,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T21:28:20.697861+00:00"
   },
+  "news/ai-research/how-specializing-the-vocabulary-of-slms-can-cut-inference-cost-by-77-in-real-applications": {
+    "slug": "news/ai-research/how-specializing-the-vocabulary-of-slms-can-cut-inference-cost-by-77-in-real-applications",
+    "meta_description": "Models specialized for a domain or a task by fine-tuning general open-source models, such as Qwen and Gemma, inherit a vocabulary built for many...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications\",\n  \"description\": \"Models specialized for a domain or a task by fine-tuning general open-source models, such as Qwen and Gemma, inherit a vocabulary built for many...\",\n  \"datePublished\": \"2026-11-08T04:59:47.652451+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:47.652451+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization\"\n  },\n  \"url\": \"https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:16.493226+00:00"
+  },
   "news/ai-research/how-the-metaverse-can-transform-education": {
     "slug": "news/ai-research/how-the-metaverse-can-transform-education",
     "meta_description": "Digital technologies have transformed education over the last two decades. I’m only in my 50s, but when I went to school the most technologically...",
@@ -1503,6 +1517,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How UK AISI and EvalEval Are Making Benchmark Results Reproducible\",\n  \"description\": \"The EvalEval Coalition is thrilled to share that the UK AI Security Institute (AISI) is using EvalEval's infrastructure to openly share evaluation...\",\n  \"datePublished\": \"2026-10-07T01:16:32.048766+00:00\",\n  \"dateModified\": \"2026-10-07T01:16:32.048766+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/evaleval-aisi\"\n  },\n  \"url\": \"https://huggingface.co/blog/evaleval-aisi\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T01:17:25.724528+00:00"
+  },
+  "news/ai-research/hugging-face-torchtpu-tpus-natively": {
+    "slug": "news/ai-research/hugging-face-torchtpu-tpus-natively",
+    "meta_description": "If you ever tried to run PyTorch on a TPU, you probably ported your code to `torchxla` , or you ended up having to learn JAX.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hugging Face ❤️ TorchTPU: TPUs, Natively\",\n  \"description\": \"If you ever tried to run PyTorch on a TPU, you probably ported your code to `torchxla` , or you ended up having to learn JAX.\",\n  \"datePublished\": \"2026-11-08T04:59:49.298851+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:49.298851+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/hf-torchtpu\"\n  },\n  \"url\": \"https://huggingface.co/blog/hf-torchtpu\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:16.862864+00:00"
   },
   "news/ai-research/human-machine-teaming-dives-underwater": {
     "slug": "news/ai-research/human-machine-teaming-dives-underwater",
@@ -2736,6 +2757,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-17T16:16:10.930435+00:00"
   },
+  "news/ai-research/nvidia-kumo-relational-outperforms-supervised-machine-learning-on-relational-data-no-training-required": {
+    "slug": "news/ai-research/nvidia-kumo-relational-outperforms-supervised-machine-learning-on-relational-data-no-training-required",
+    "meta_description": "NVIDIA Kumo Relational is a pre-trained relational foundation model that makes predictions directly on enterprise databases.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required\",\n  \"description\": \"NVIDIA Kumo Relational is a pre-trained relational foundation model that makes predictions directly on enterprise databases.\",\n  \"datePublished\": \"2026-11-08T04:59:47.138677+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:47.138677+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/nvidia/kumo-relational\"\n  },\n  \"url\": \"https://huggingface.co/blog/nvidia/kumo-relational\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:15.797049+00:00"
+  },
   "news/ai-research/nvidia-kumo-tabular-sets-a-new-accuracy-efficiency-frontier-for-tabular-prediction": {
     "slug": "news/ai-research/nvidia-kumo-tabular-sets-a-new-accuracy-efficiency-frontier-for-tabular-prediction",
     "meta_description": "NVIDIA Kumo Tabular, part of the NVIDIA Kumo Structured model collection, is an open foundation model for tabular data now available on Hugging...",
@@ -2938,6 +2966,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP\",\n  \"description\": \"[](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/torch-mlp-fusion/thumbnail.png) In the first part of this...\",\n  \"datePublished\": \"2026-06-12T21:44:29.474166+00:00\",\n  \"dateModified\": \"2026-06-12T21:44:29.474166+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/torch-mlp-fusion\"\n  },\n  \"url\": \"https://huggingface.co/blog/torch-mlp-fusion\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-12T21:45:10.300573+00:00"
+  },
+  "news/ai-research/profiling-torchneuron-part-1-system-level-profiling-on-aws-trainium": {
+    "slug": "news/ai-research/profiling-torchneuron-part-1-system-level-profiling-on-aws-trainium",
+    "meta_description": "Many ML practitioners have some intuition about how to make models run fast, but fewer know how to analyze why a model is slow.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.\",\n  \"description\": \"Many ML practitioners have some intuition about how to make models run fast, but fewer know how to analyze why a model is slow.\",\n  \"datePublished\": \"2026-11-08T04:59:48.234756+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:48.234756+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/amazon/profiling-torchneuron-part-1\"\n  },\n  \"url\": \"https://huggingface.co/blog/amazon/profiling-torchneuron-part-1\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:16.140484+00:00"
   },
   "news/ai-research/protecting-people-from-harmful-manipulation": {
     "slug": "news/ai-research/protecting-people-from-harmful-manipulation",
@@ -6761,6 +6796,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-15T04:03:30.913291+00:00"
   },
+  "news/ai-security/cyberattack-on-connected-fridges-in-france": {
+    "slug": "news/ai-security/cyberattack-on-connected-fridges-in-france",
+    "meta_description": "Another IoT cyberattack , this one in France: &gt; Hackers gained control of the software that regulates the temperatures of the refrigeration...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cyberattack on Connected Fridges in France\",\n  \"description\": \"Another IoT cyberattack , this one in France: &gt; Hackers gained control of the software that regulates the temperatures of the refrigeration...\",\n  \"datePublished\": \"2026-11-08T04:59:30.953551+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:30.953551+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:14.092072+00:00"
+  },
   "news/ai-security/cybercrime-groups-using-vishing-and-sso-abuse-in-rapid-saas-extortion-attacks": {
     "slug": "news/ai-security/cybercrime-groups-using-vishing-and-sso-abuse-in-rapid-saas-extortion-attacks",
     "meta_description": "Ravie Lakshmanan May 01, 2026 Malware / Social Engineering Cybersecurity researchers are warning of two cybercrime groups that are carrying out...",
@@ -9574,6 +9616,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Friday, May 8th, 2026 https://isc.sans.edu/podcastdetail/9924, (Fri, May 8th)\",\n  \"description\": \"ISC Stormcast For Friday, May 8th, 2026\",\n  \"datePublished\": \"2026-05-14T02:41:51.310414+00:00\",\n  \"dateModified\": \"2026-05-14T02:41:51.310414+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32966\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32966\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-14T02:42:52.769381+00:00"
+  },
+  "news/ai-security/isc-stormcast-for-friday-october-16th-2026-https-isc-sans-edu-podcastdetail-10140-fri-oct-16th": {
+    "slug": "news/ai-security/isc-stormcast-for-friday-october-16th-2026-https-isc-sans-edu-podcastdetail-10140-fri-oct-16th",
+    "meta_description": "ISC Stormcast For Friday, October 16th, 2026 &lt;https://isc.sans.edu/podcastdetail/10140&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Friday, October 16th, 2026 https://isc.sans.edu/podcastdetail/10140, (Fri, Oct 16th)\",\n  \"description\": \"ISC Stormcast For Friday, October 16th, 2026 &lt;https://isc.sans.edu/podcastdetail/10140&gt;\",\n  \"datePublished\": \"2026-11-08T04:59:33.577760+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:33.577760+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33432\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33432\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:14.426861+00:00"
   },
   "news/ai-security/isc-stormcast-for-friday-october-2nd-2026-https-isc-sans-edu-podcastdetail-10120-fri-oct-2nd": {
     "slug": "news/ai-security/isc-stormcast-for-friday-october-2nd-2026-https-isc-sans-edu-podcastdetail-10120-fri-oct-2nd",
@@ -12921,6 +12970,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-09T22:09:57.341188+00:00"
   },
+  "news/ai-security/package-managers-have-an-integrity-problem": {
+    "slug": "news/ai-security/package-managers-have-an-integrity-problem",
+    "meta_description": "I tested 25 of the most popular package managers to check whether they detect a compromised package repository injecting malicious code into...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Package managers have an integrity problem\",\n  \"description\": \"I tested 25 of the most popular package managers to check whether they detect a compromised package repository injecting malicious code into...\",\n  \"datePublished\": \"2026-11-08T04:59:32.581338+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:32.581338+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:15.113119+00:00"
+  },
   "news/ai-security/packagist-supply-chain-attack-infects-8-packages-using-github-hosted-linux-malware": {
     "slug": "news/ai-security/packagist-supply-chain-attack-infects-8-packages-using-github-hosted-linux-malware",
     "meta_description": "Ravie Lakshmanan May 23, 2026 Malware / DevSecOps A new \"coordinated\" supply chain attack campaign has impacted eight packages on Packagist...",
@@ -14755,6 +14811,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:07.205195+00:00"
   },
+  "news/ai-security/the-future-of-ai-cryptanalysis": {
+    "slug": "news/ai-security/the-future-of-ai-cryptanalysis",
+    "meta_description": "Matthew Green has been writing a rather pessimistic series of posts about the potential for AI systems to vastly outperform humans in...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Future of AI Cryptanalysis\",\n  \"description\": \"Matthew Green has been writing a rather pessimistic series of posts about the potential for AI systems to vastly outperform humans in...\",\n  \"datePublished\": \"2026-11-08T04:59:30.583331+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:30.583331+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:14.772839+00:00"
+  },
   "news/ai-security/the-gentlemen-ransomware-claims-478-victims-can-spread-like-a-worm": {
     "slug": "news/ai-security/the-gentlemen-ransomware-claims-478-victims-can-spread-like-a-worm",
     "meta_description": "A new analysis of The Gentlemen operation has revealed that the financially motivated threat group initially operated as an affiliate responsible...",
@@ -15510,6 +15573,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Two Ivanti EPMM Zero-Day RCE Flaws Actively Exploited, Security Updates Released\",\n  \"description\": \"Ravie Lakshmanan Jan 30, 2026 Vulnerability / Enterprise Security Ivanti has rolled out security updates to address two security flaws impacting...\",\n  \"datePublished\": \"2026-01-30T08:15:12.919428+00:00\",\n  \"dateModified\": \"2026-01-30T08:15:12.919428+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/two-ivanti-epmm-zero-day-rce-flaws.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/two-ivanti-epmm-zero-day-rce-flaws.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:29.162235+00:00"
+  },
+  "news/ai-security/u-k-sanctions-cryptomus-for-ru-money-laundering": {
+    "slug": "news/ai-security/u-k-sanctions-cryptomus-for-ru-money-laundering",
+    "meta_description": "The United Kingdom has issued economic sanctions against Cryptomus , a chameleonic cryptocurrency platform that experts say serves as a major...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"U.K. Sanctions Cryptomus for RU Money Laundering\",\n  \"description\": \"The United Kingdom has issued economic sanctions against Cryptomus , a chameleonic cryptocurrency platform that experts say serves as a major...\",\n  \"datePublished\": \"2026-11-08T04:59:32.065091+00:00\",\n  \"dateModified\": \"2026-11-08T04:59:32.065091+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:15.466869+00:00"
   },
   "news/ai-security/u-s-agencies-accuse-china-ai-firms-of-distilling-claude-gpt-gemini-and-grok": {
     "slug": "news/ai-security/u-s-agencies-accuse-china-ai-firms-of-distilling-claude-gpt-gemini-and-grok",
@@ -17597,6 +17667,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T01:32:28.782703+00:00"
   },
+  "news/comp-journalism/can-llms-supercharge-geolocations-our-tests-show-big-improvements-but-humans-remain-key": {
+    "slug": "news/comp-journalism/can-llms-supercharge-geolocations-our-tests-show-big-improvements-but-humans-remain-key",
+    "meta_description": "Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . In September, the AI company Anthropic...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Can LLMs Supercharge Geolocations? Our Tests Show Big Improvements But Humans Remain Key\",\n  \"description\": \"Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . In September, the AI company Anthropic...\",\n  \"datePublished\": \"2026-11-08T05:00:07.031016+00:00\",\n  \"dateModified\": \"2026-11-08T05:00:07.031016+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/resources/2026/10/22/can-llms-supercharge-geolocations-our-tests-show-big-improvements-but-humans-remain-key\"\n  },\n  \"url\": \"https://www.bellingcat.com/resources/2026/10/22/can-llms-supercharge-geolocations-our-tests-show-big-improvements-but-humans-remain-key\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:17.895370+00:00"
+  },
   "news/comp-journalism/can-public-media-build-its-own-social-network-chicago-public-media-teams-up-with-new-public-to-try": {
     "slug": "news/comp-journalism/can-public-media-build-its-own-social-network-chicago-public-media-teams-up-with-new-public-to-try",
     "meta_description": "If a news outlet announces a website launch, you might think it’s safe to assume it’s a news website that’s launching. But that’s not what Chicago...",
@@ -17736,6 +17813,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Columbia Journalism School will pause its M.A. program (and launch an online degree)\",\n  \"description\": \"The Columbia Journalism School will pause admissions for its Master of Arts program, dean Jelani Cobb announced on Thursday.\",\n  \"datePublished\": \"2026-10-08T22:04:31.489357+00:00\",\n  \"dateModified\": \"2026-10-08T22:04:31.489357+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/columbia-journalism-school-will-temporarily-pause-its-m-a-program-and-launch-an-online-degree\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/columbia-journalism-school-will-temporarily-pause-its-m-a-program-and-launch-an-online-degree\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-08T22:04:42.940693+00:00"
+  },
+  "news/comp-journalism/convenings-for-ceos-will-help-semafor-reach-a-second-profitable-year": {
+    "slug": "news/comp-journalism/convenings-for-ceos-will-help-semafor-reach-a-second-profitable-year",
+    "meta_description": "AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"“Convenings” for CEOs will help Semafor reach a second profitable year\",\n  \"description\": \"AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...\",\n  \"datePublished\": \"2026-11-08T05:00:04.992747+00:00\",\n  \"dateModified\": \"2026-11-08T05:00:04.992747+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/convenings-for-ceos-will-help-semafor-reach-a-second-profitable-year\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/convenings-for-ceos-will-help-semafor-reach-a-second-profitable-year\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:18.254881+00:00"
   },
   "news/comp-journalism/cost-cuts-and-new-donors-help-full-fact-weather-loss-of-ps1m-google-funding": {
     "slug": "news/comp-journalism/cost-cuts-and-new-donors-help-full-fact-weather-loss-of-ps1m-google-funding",
@@ -21384,6 +21468,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:14.474959+00:00"
   },
+  "news/comp-journalism/tommy-robinson-wanted-to-put-pressure-on-daily-mail-journalists-he-tells-court": {
+    "slug": "news/comp-journalism/tommy-robinson-wanted-to-put-pressure-on-daily-mail-journalists-he-tells-court",
+    "meta_description": "Tommy Robinson arrives at Southwark Crown Court on 22 October 2026. Picture: James Manning/Press Association Tommy Robinson has admitted he wanted...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tommy Robinson wanted to ‘put pressure’ on Daily Mail journalists, he tells court\",\n  \"description\": \"Tommy Robinson arrives at Southwark Crown Court on 22 October 2026. Picture: James Manning/Press Association Tommy Robinson has admitted he wanted...\",\n  \"datePublished\": \"2026-11-08T05:00:07.968337+00:00\",\n  \"dateModified\": \"2026-11-08T05:00:07.968337+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/tommy-robinson-wanted-to-put-pressure-on-daily-mail-journalists-he-tells-court\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/tommy-robinson-wanted-to-put-pressure-on-daily-mail-journalists-he-tells-court\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:18.581674+00:00"
+  },
   "news/comp-journalism/tony-livesey-facing-questions-over-time-as-daily-sport-editor-amid-allegations-against-former-boss-david-sullivan": {
     "slug": "news/comp-journalism/tony-livesey-facing-questions-over-time-as-daily-sport-editor-amid-allegations-against-former-boss-david-sullivan",
     "meta_description": "Tony Livesey with David Sullivan. Picture: BBC Panorama. BBC Radio 5 Live presenter Tony Livesey was absent from his usual late-night slot as an...",
@@ -21509,6 +21600,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Two creators went to NYU’s business school, then decided to make a show about the news\",\n  \"description\": \"The data is in : News creators and influencers are a major source of news for Americans, especially people under 30. This is the latest edition of...\",\n  \"datePublished\": \"2026-10-14T23:35:37.130696+00:00\",\n  \"dateModified\": \"2026-10-14T23:35:37.130696+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/two-creators-went-to-nyus-business-school-then-decided-to-make-a-show-about-the-news\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/two-creators-went-to-nyus-business-school-then-decided-to-make-a-show-about-the-news\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-14T23:35:53.959103+00:00"
+  },
+  "news/comp-journalism/two-out-of-five-americans-regularly-get-their-news-on-facebook": {
+    "slug": "news/comp-journalism/two-out-of-five-americans-regularly-get-their-news-on-facebook",
+    "meta_description": "AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Two out of five Americans regularly get their news on Facebook\",\n  \"description\": \"AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...\",\n  \"datePublished\": \"2026-11-08T05:00:04.436975+00:00\",\n  \"dateModified\": \"2026-11-08T05:00:04.436975+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/two-out-of-five-americans-are-regularly-getting-their-news-on-facebook\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/two-out-of-five-americans-are-regularly-getting-their-news-on-facebook\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:18.937557+00:00"
   },
   "news/comp-journalism/two-waves-of-bombing-new-videos-reveal-further-details-about-iran-school-strike": {
     "slug": "news/comp-journalism/two-waves-of-bombing-new-videos-reveal-further-details-about-iran-school-strike",
@@ -21817,6 +21915,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"When disaster strikes, newsrooms scramble. A new website aims to help tame the chaos.\",\n  \"description\": \"On the day Hurricane Helene hit Western North Carolina in September 2024, Laura Lee was thousands of miles away on vacation in Peru.\",\n  \"datePublished\": \"2026-10-07T21:16:01.577509+00:00\",\n  \"dateModified\": \"2026-10-07T21:16:01.577509+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/when-disaster-strikes-newsrooms-scramble-a-new-website-aims-to-help-tame-the-chaos\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/when-disaster-strikes-newsrooms-scramble-a-new-website-aims-to-help-tame-the-chaos\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T21:16:15.570302+00:00"
+  },
+  "news/comp-journalism/when-hackers-become-sources-inside-the-new-craft-of-reporting-on-hacked-data": {
+    "slug": "news/comp-journalism/when-hackers-become-sources-inside-the-new-craft-of-reporting-on-hacked-data",
+    "meta_description": "Some consequential reporting of recent years has emerged thanks to what is normally defined as a “hack-and-leak,” a specific kind of cyberattack...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"When hackers become sources: Inside the new craft of reporting on hacked data\",\n  \"description\": \"Some consequential reporting of recent years has emerged thanks to what is normally defined as a “hack-and-leak,” a specific kind of cyberattack...\",\n  \"datePublished\": \"2026-11-08T05:00:04.719375+00:00\",\n  \"dateModified\": \"2026-11-08T05:00:04.719375+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/when-hackers-become-sources-inside-the-new-craft-of-reporting-on-hacked-data\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/when-hackers-become-sources-inside-the-new-craft-of-reporting-on-hacked-data\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:00:17.573384+00:00"
   },
   "news/comp-journalism/when-ice-came-to-minneapolis-readers-turned-to-the-minnesota-star-tribunes-free-live-blog": {
     "slug": "news/comp-journalism/when-ice-came-to-minneapolis-readers-turned-to-the-minnesota-star-tribunes-free-live-blog",

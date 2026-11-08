@@ -4,7 +4,7 @@
   Falls back to empty if file doesn't exist
 */ -}}
 
-{{- $newsData := .Site.Data.news_categories | default dict -}}
+{{- $newsData := hugo.Data.news_categories | default dict -}}
 {{- $categories := $newsData.categories | default slice -}}
 
 <div class="nav-dropdown">

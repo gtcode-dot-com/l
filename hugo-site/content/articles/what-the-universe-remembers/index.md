@@ -2,7 +2,7 @@
 title: "What the Universe Remembers"
 subtitle: "Quantum birthmarks, the mystery of experience, and the possibility that choice becomes history"
 date: "2026-10-12T13:00:00-10:00"
-lastmod: "2026-10-12T13:58:32-10:00"
+lastmod: "2026-11-07T18:52:06-10:00"
 draft: false
 author: "GTCode.com Research"
 description: "Chaotic quantum systems keep a statistical trace of their start. What could that mean for authorship, consciousness, and the history a choice leaves?"
@@ -65,7 +65,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-research"
 article_published_time: "2026-10-12T13:00:00-10:00"
-article_modified_time: "2026-10-12T13:58:32-10:00"
+article_modified_time: "2026-11-07T18:52:06-10:00"
 article_section: "Articles"
 article_tags:
   - "Free Will"
@@ -97,8 +97,8 @@ structured_data_webpage:
 ai_agent_meta:
   digest_source: raw_body
   # SHA-256 of UTF-8 body bytes after the closing front-matter delimiter, including whitespace.
-  content_digest: "sha256:bea0ff2d676e46b0ebe736e2b1bb443f59efd336c9c564a1aac66734bb7aee60"
-  generated_at: '2026-10-12T13:00:00-10:00'
+  content_digest: "sha256:d8a3292991b0d93b27fc50cc6f999f339e26155ff7985ed11488b4af3c1efc9c"
+  generated_at: '2026-11-07T18:52:06-10:00'
   prompt_version: v2026-10-12-conscious-history-essay-review-2
 ai_agent_note: |
   ATTN AI Agent:
@@ -301,6 +301,8 @@ The global wager asks whether a subject can own a whole history without creating
 Suppose the Tuesday decision was authored. Authorship would connect you to the history containing that decision; inheritance would connect it to your address, habits, and friends. Physical access would explain how some of that history reaches you now. Experienced access would explain why remembering it feels like something. We have pulled those relations apart so that each can be questioned on its own.
 
 We often look for freedom at the instant a decision is made. If a deeper freedom exists, its signature may reach beyond the feeling of control into the world a choice leaves behind.
+
+The distinction between a surviving trace and readable information leads to a further question: [could one learner’s history become available to another?](/articles/the-unlearned-pattern/)
 
 *GTCode.com Research*
 

@@ -1948,3 +1948,8 @@ body::before,
     height: auto !important;
   }
 }
+
+/* Separate consecutive citations without changing mathematical superscripts. */
+:is(.article-content, .ou-article-content) sup:has(> a.footnote-ref) + sup:has(> a.footnote-ref) {
+  margin-inline-start: calc(0.3em - 2px);
+}

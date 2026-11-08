@@ -1,14 +1,14 @@
 {{/*
   Citation block partial — renders "How to Cite" section for citable pages.
 
-  Reads from site.Data.citations keyed by .RelPermalink.
+  Reads from hugo.Data.citations keyed by .RelPermalink.
   Only renders if citation data exists for the current page.
 */}}
 {{ partial "content-use-notice.html" . }}
 {{- $page := . -}}
 {{- $cite := dict -}}
-{{- if not site.Params.enable_exceptions -}}
-  {{- with index site.Data.citations $page.RelPermalink -}}
+{{- if not (partial "exception/is-hidden.html" $page) -}}
+  {{- with index hugo.Data.citations $page.RelPermalink -}}
     {{- $cite = . -}}
   {{- end -}}
 {{- end -}}

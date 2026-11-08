@@ -31,7 +31,7 @@
     {{- $newsRSS = .RelPermalink -}}
   {{- end -}}
 {{- end -}}
-{{- $data := .Site.Data.neutralization_stack -}}
+{{- $data := hugo.Data.neutralization_stack -}}
 {{- if $isActiveException -}}
 # {{ $active.Title }}
 

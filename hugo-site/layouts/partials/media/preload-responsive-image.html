@@ -2,7 +2,7 @@
 {{- $srcInput := strings.TrimSpace (.src | default "") -}}
 {{- if ne $srcInput "" -}}
   {{- $slotName := .slot | default "default" -}}
-  {{- $slots := $page.Site.Data.media_slots.slots | default dict -}}
+  {{- $slots := hugo.Data.media_slots.slots | default dict -}}
   {{- $slotConfig := index $slots $slotName | default (index $slots "default") -}}
   {{- $widths := $slotConfig.widths | default (slice 360 480 640 760 960 1200) -}}
   {{- $sizes := .sizes | default ($slotConfig.sizes | default "100vw") -}}
