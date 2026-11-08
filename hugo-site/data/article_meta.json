@@ -69,6 +69,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-14T05:08:04.887624+00:00"
   },
+  "news/ai-research/3-questions-why-infrastructure-is-entering-a-defining-era": {
+    "slug": "news/ai-research/3-questions-why-infrastructure-is-entering-a-defining-era",
+    "meta_description": "Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"3 Questions: Why infrastructure is entering a defining era\",\n  \"description\": \"Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers...\",\n  \"datePublished\": \"2026-11-08T05:29:55.624014+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:55.624014+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028\"\n  },\n  \"url\": \"https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:19.498372+00:00"
+  },
   "news/ai-research/a-better-method-for-identifying-overconfident-large-language-models": {
     "slug": "news/ai-research/a-better-method-for-identifying-overconfident-large-language-models",
     "meta_description": "Large language models (LLMs) can generate credible but inaccurate responses, so researchers have developed uncertainty quantification methods to...",
@@ -2386,6 +2393,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:11.750357+00:00"
   },
+  "news/ai-research/mit-affiliates-named-2026-schmidt-sciences-ai2050-fellows": {
+    "slug": "news/ai-research/mit-affiliates-named-2026-schmidt-sciences-ai2050-fellows",
+    "meta_description": "Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI. Five MIT faculty members and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows\",\n  \"description\": \"Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI. Five MIT faculty members and...\",\n  \"datePublished\": \"2026-11-08T05:29:55.173935+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:55.173935+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030\"\n  },\n  \"url\": \"https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:19.856593+00:00"
+  },
   "news/ai-research/mit-affiliates-win-2026-hertz-foundation-fellowships": {
     "slug": "news/ai-research/mit-affiliates-win-2026-hertz-foundation-fellowships",
     "meta_description": "The Hertz Foundation announced that it awarded 2026 fellowships to three current MIT students as well as an incoming graduate student.",
@@ -2974,6 +2988,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-11T02:09:59.925288+00:00"
   },
+  "news/ai-research/powering-up-for-a-pivotal-moment": {
+    "slug": "news/ai-research/powering-up-for-a-pivotal-moment",
+    "meta_description": "From a nuclear revival to qubits, the MIT Energy Initiative’s annual research conference tracked deployment of today’s technologies to discovery...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Powering up for a pivotal moment\",\n  \"description\": \"From a nuclear revival to qubits, the MIT Energy Initiative’s annual research conference tracked deployment of today’s technologies to discovery...\",\n  \"datePublished\": \"2026-11-08T05:29:54.695473+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:54.695473+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102\"\n  },\n  \"url\": \"https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:19.170540+00:00"
+  },
   "news/ai-research/preview-tool-helps-makers-visualize-3d-printed-objects": {
     "slug": "news/ai-research/preview-tool-helps-makers-visualize-3d-printed-objects",
     "meta_description": "Designers, makers, and others often use 3D printing to rapidly prototype a range of functional objects, from movie props to medical devices.",
@@ -3051,6 +3072,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T20:40:57.976196+00:00"
   },
+  "news/ai-research/q-a-hey-ai-who-should-i-vote-for-this-year": {
+    "slug": "news/ai-research/q-a-hey-ai-who-should-i-vote-for-this-year",
+    "meta_description": "MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Q&A: Hey AI, who should I vote for this year?\",\n  \"description\": \"MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S.\",\n  \"datePublished\": \"2026-11-08T05:29:55.405839+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:55.405839+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030\"\n  },\n  \"url\": \"https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:18.841441+00:00"
+  },
   "news/ai-research/q-a-mit-shass-and-the-future-of-education-in-the-age-of-ai": {
     "slug": "news/ai-research/q-a-mit-shass-and-the-future-of-education-in-the-age-of-ai",
     "meta_description": "The MIT School of Humanities, Arts, and Social Sciences (SHASS) was founded in 1950 in response to “a new era emerging from social upheaval and...",
@@ -3120,6 +3148,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Accelerating Mathematical and Scientific Discovery with Gemini Deep Think\",\n  \"description\": \"Collaborating with experts on 18 research problems, an advanced version of Gemini Deep Think helped resolve long-standing bottlenecks across...\",\n  \"datePublished\": \"2026-02-17T00:39:35.079670+00:00\",\n  \"dateModified\": \"2026-02-17T00:39:35.079670+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think\"\n  },\n  \"url\": \"https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think\"\n}",
     "agent_callout": "",
     "generated_at": "2026-02-17T00:40:06.114792+00:00"
+  },
+  "news/ai-research/regina-barzilay-and-jim-collins-win-pritzker-prize-for-ai-and-science-research-excellence-for-work-in-ai-enabled-antibiotic-discovery": {
+    "slug": "news/ai-research/regina-barzilay-and-jim-collins-win-pritzker-prize-for-ai-and-science-research-excellence-for-work-in-ai-enabled-antibiotic-discovery",
+    "meta_description": "The MIT professors collaborated to identify the first AI-discovered antibiotic, a scientific breakthrough that is widely recognized as a milestone...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Regina Barzilay and Jim Collins win Pritzker Prize for AI and Science Research Excellence for work in AI-enabled antibiotic discovery\",\n  \"description\": \"The MIT professors collaborated to identify the first AI-discovered antibiotic, a scientific breakthrough that is widely recognized as a milestone...\",\n  \"datePublished\": \"2026-11-08T05:29:54.961490+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:54.961490+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102\"\n  },\n  \"url\": \"https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:18.496670+00:00"
   },
   "news/ai-research/research-breakthroughs-of-the-year": {
     "slug": "news/ai-research/research-breakthroughs-of-the-year",
@@ -5101,6 +5136,13 @@
     "json_ld": "{\n  \"@context\": \"http://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Are Your Google Searches Actually Private?\",\n  \"description\": \"Google search data isn't as private as users think. The company collects data from searches, communications, and browsing history, using it to train AI and even sharing it with third parties due to legal battles. Alternatives offering enhanced privacy exist.\",\n  \"datePublished\": \"2025-11-12T22:51:24+00:00\",\n  \"dateModified\": \"2025-11-12T22:51:24+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://example.com/gtcode_logo.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bgr.com/2014803/are-google-searches-private\"\n  },\n  \"sameAs\": \"https://www.bgr.com/2014803/are-google-searches-private\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T00:29:47.308974+00:00"
+  },
+  "news/ai-security/arista-warns-of-critical-velocloud-sql-injection-zero-day-exploited-in-attacks": {
+    "slug": "news/ai-security/arista-warns-of-critical-velocloud-sql-injection-zero-day-exploited-in-attacks",
+    "meta_description": "Swati Khandelwal Oct 22, 2026 Vulnerability / Enterprise Security Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks\",\n  \"description\": \"Swati Khandelwal Oct 22, 2026 Vulnerability / Enterprise Security Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud...\",\n  \"datePublished\": \"2026-11-08T05:29:42.493754+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:42.493754+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:17.789003+00:00"
   },
   "news/ai-security/army-reservist-visits-dutch-battlefield-where-grandfather-fought-nazis": {
     "slug": "news/ai-security/army-reservist-visits-dutch-battlefield-where-grandfather-fought-nazis",
@@ -7257,6 +7299,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say\",\n  \"description\": \"Saudi national Abdulrahman Alfozan was arrested Friday and terminated by OpenAI. By Associated Press | October 13, 2026 (7:07 PM ET) + Flipboard +...\",\n  \"datePublished\": \"2026-10-14T23:34:44.145738+00:00\",\n  \"dateModified\": \"2026-10-14T23:34:44.145738+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say\"\n  },\n  \"url\": \"https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-14T23:35:49.136926+00:00"
+  },
+  "news/ai-security/emudhra-to-exit-global-ssl-tls-business-after-8-intermediate-ca-keys-found-easily-guessable": {
+    "slug": "news/ai-security/emudhra-to-exit-global-ssl-tls-business-after-8-intermediate-ca-keys-found-easily-guessable",
+    "meta_description": "eMudhra , an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday .",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable\",\n  \"description\": \"eMudhra , an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday .\",\n  \"datePublished\": \"2026-11-08T05:29:42.791093+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:42.791093+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:17.027350+00:00"
   },
   "news/ai-security/encrypted-client-hello-ready-for-prime-time": {
     "slug": "news/ai-security/encrypted-client-hello-ready-for-prime-time",
@@ -14797,6 +14846,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-30T02:39:05.879622+00:00"
   },
+  "news/ai-security/the-ai-agent-nobody-owns-watch-expert-webinar-on-your-newest-insider-threat": {
+    "slug": "news/ai-security/the-ai-agent-nobody-owns-watch-expert-webinar-on-your-newest-insider-threat",
+    "meta_description": "The Hacker News Oct 22, 2026 Enterprise Security / Artificial Intelligence Right now, there is probably an AI agent running on a laptop somewhere...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat\",\n  \"description\": \"The Hacker News Oct 22, 2026 Enterprise Security / Artificial Intelligence Right now, there is probably an AI agent running on a laptop somewhere...\",\n  \"datePublished\": \"2026-11-08T05:29:42.165701+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:42.165701+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:17.360971+00:00"
+  },
   "news/ai-security/the-back-door-attackers-know-about-and-most-security-teams-still-havent-closed": {
     "slug": "news/ai-security/the-back-door-attackers-know-about-and-most-security-teams-still-havent-closed",
     "meta_description": "Every AI tool, workflow automation, and productivity app your employees connected to Google or Microsoft this year left something behind: a...",
@@ -15146,6 +15202,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories\",\n  \"description\": \"Ravie Lakshmanan Oct 01, 2026 Hacking News / Cybersecurity News This week, the useful words are boring ones: inspect, cache, compile, store, trust.\",\n  \"datePublished\": \"2026-10-07T01:31:19.783791+00:00\",\n  \"dateModified\": \"2026-10-07T01:31:19.783791+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T01:32:25.612394+00:00"
+  },
+  "news/ai-security/threatsday-ai-secrets-leak-pingcap-source-theft-signal-hang-up-flaw-laravel-auth-bypass-21-more": {
+    "slug": "news/ai-security/threatsday-ai-secrets-leak-pingcap-source-theft-signal-hang-up-flaw-laravel-auth-bypass-21-more",
+    "meta_description": "Ravie Lakshmanan Oct 22, 2026 Hacking News / Cybersecurity News This week has already been rough for cybersecurity. Critical PHP and GitLab RCE...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More\",\n  \"description\": \"Ravie Lakshmanan Oct 22, 2026 Hacking News / Cybersecurity News This week has already been rough for cybersecurity. Critical PHP and GitLab RCE...\",\n  \"datePublished\": \"2026-11-08T05:29:43.105611+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:43.105611+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:18.151100+00:00"
   },
   "news/ai-security/threatsday-bulletin-0-days-linkedin-spies-crypto-crimes-iot-flaws-and-new-malware-waves": {
     "slug": "news/ai-security/threatsday-bulletin-0-days-linkedin-spies-crypto-crimes-iot-flaws-and-new-malware-waves",
@@ -15615,6 +15678,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Two Chrome Extensions Caught Secretly Stealing Credentials from Over 170 Sites\",\n  \"description\": \"Cybersecurity researchers have discovered two malicious Google Chrome extensions with the same name and published by the same developer that come...\",\n  \"datePublished\": \"2025-12-24T00:03:12.893231+00:00\",\n  \"dateModified\": \"2025-12-24T00:03:12.893231+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/two-chrome-extensions-caught-secretly.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/two-chrome-extensions-caught-secretly.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:48.810177+00:00"
+  },
+  "news/ai-security/two-cvss-9-0-linux-ksmbd-rce-flaws-disclosed-on-public-mailing-lists-before-kernel-fixes": {
+    "slug": "news/ai-security/two-cvss-9-0-linux-ksmbd-rce-flaws-disclosed-on-public-mailing-lists-before-kernel-fixes",
+    "meta_description": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes\",\n  \"description\": \"Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.\",\n  \"datePublished\": \"2026-11-08T05:29:43.391292+00:00\",\n  \"dateModified\": \"2026-11-08T05:29:43.391292+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:16.674005+00:00"
   },
   "news/ai-security/two-cybersecurity-professionals-get-4-year-sentences-in-blackcat-ransomware-attacks": {
     "slug": "news/ai-security/two-cybersecurity-professionals-get-4-year-sentences-in-blackcat-ransomware-attacks",
@@ -19802,6 +19872,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-10T22:16:21.120399+00:00"
   },
+  "news/comp-journalism/meta-pulls-down-controversial-terms-of-service": {
+    "slug": "news/comp-journalism/meta-pulls-down-controversial-terms-of-service",
+    "meta_description": "Meta has indefinitely delayed its proposed commercial terms of service, which would have permitted the company to scrape the websites of Meta...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta pulls down controversial terms of service\",\n  \"description\": \"Meta has indefinitely delayed its proposed commercial terms of service, which would have permitted the company to scrape the websites of Meta...\",\n  \"datePublished\": \"2026-11-08T05:30:10.708068+00:00\",\n  \"dateModified\": \"2026-11-08T05:30:10.708068+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:20.191353+00:00"
+  },
   "news/comp-journalism/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say": {
     "slug": "news/comp-journalism/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say",
     "meta_description": "Meta can use web scrapers to crawl and collect content from websites “associated with” business accounts on its platforms, according to its new...",
@@ -21412,6 +21489,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T22:04:44.172005+00:00"
   },
+  "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-6-2026": {
+    "slug": "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-6-2026",
+    "meta_description": "What a week! Recap it with the second edition of the Nieman Lab News-About-News Quiz, your weekly incentive to keep up with the latest happenings...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Nieman Lab News-About-News Quiz, November 6, 2026\",\n  \"description\": \"What a week! Recap it with the second edition of the Nieman Lab News-About-News Quiz, your weekly incentive to keep up with the latest happenings...\",\n  \"datePublished\": \"2026-11-08T05:30:10.574200+00:00\",\n  \"dateModified\": \"2026-11-08T05:30:10.574200+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/the-nieman-lab-news-about-news-quiz-november-6-2026\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/the-nieman-lab-news-about-news-quiz-november-6-2026\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:21.558477+00:00"
+  },
   "news/comp-journalism/the-non-profit-publisher-making-local-news-pay-in-london": {
     "slug": "news/comp-journalism/the-non-profit-publisher-making-local-news-pay-in-london",
     "meta_description": "February 2026 editions of Social Spider newspapers Waltham Forest Echo, Enfield Dispatch, Barnet Post and Newham Voices. Picture: Press Gazette...",
@@ -21832,6 +21916,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-11T01:37:10.367763+00:00"
   },
+  "news/comp-journalism/video-is-now-literally-at-the-heart-of-the-sun-newsroom": {
+    "slug": "news/comp-journalism/video-is-now-literally-at-the-heart-of-the-sun-newsroom",
+    "meta_description": "The Sun’s From The Newsroom host Sam Homewood with data journalist Thomas Godfrey on the newsroom studio set. Picture: The Sun The Sun has made...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Video is now literally at the heart of The Sun newsroom\",\n  \"description\": \"The Sun’s From The Newsroom host Sam Homewood with data journalist Thomas Godfrey on the newsroom studio set. Picture: The Sun The Sun has made...\",\n  \"datePublished\": \"2026-11-08T05:30:09.037585+00:00\",\n  \"dateModified\": \"2026-11-08T05:30:09.037585+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/digital-journalism/video-is-now-literally-at-the-heart-of-the-sun-newsroom\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/digital-journalism/video-is-now-literally-at-the-heart-of-the-sun-newsroom\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:20.878200+00:00"
+  },
   "news/comp-journalism/video-shows-us-tomahawk-missile-strike-next-to-girls-school-in-iran": {
     "slug": "news/comp-journalism/video-shows-us-tomahawk-missile-strike-next-to-girls-school-in-iran",
     "meta_description": "New video footage shows a US Tomahawk missile hitting an Islamic Revolutionary Guard Corps (IRGC) facility in Minab, Iran, on Feb 28, showing for...",
@@ -21985,6 +22076,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What I’ve learned: TTG boss Daniel Pearce says ‘finding our purpose’ was business turning point\",\n  \"description\": \"Daniel Pearce, CEO of TTG Media. Picture: Submitted The CEO of B2B travel trade magazine TTG Daniel Pearce says transparency and “leading from...\",\n  \"datePublished\": \"2026-10-07T04:30:44.287755+00:00\",\n  \"dateModified\": \"2026-10-07T04:30:44.287755+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/b2b/what-ive-learned-ttg-ceo-daniel-pearce\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/b2b/what-ive-learned-ttg-ceo-daniel-pearce\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T04:31:02.532635+00:00"
+  },
+  "news/comp-journalism/what-ive-learned-with-peter-geoghegan-fail-fail-again-fail-better": {
+    "slug": "news/comp-journalism/what-ive-learned-with-peter-geoghegan-fail-fail-again-fail-better",
+    "meta_description": "Peter Geoghegan, editor and founder of Democracy for Sale The founder of investigative journalism outlet Democracy for Sale has said the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What I’ve learned with Peter Geoghegan: ‘Fail, fail again, fail better’\",\n  \"description\": \"Peter Geoghegan, editor and founder of Democracy for Sale The founder of investigative journalism outlet Democracy for Sale has said the...\",\n  \"datePublished\": \"2026-11-08T05:30:10.242193+00:00\",\n  \"dateModified\": \"2026-11-08T05:30:10.242193+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news-leaders/what-ive-learned-democracy-for-sale-peter-geoghegan\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news-leaders/what-ive-learned-democracy-for-sale-peter-geoghegan\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:20.512541+00:00"
   },
   "news/comp-journalism/what-journalist-parents-ask-for-and-what-they-don-t": {
     "slug": "news/comp-journalism/what-journalist-parents-ask-for-and-what-they-don-t",
@@ -22160,6 +22258,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"With acquisition of Vermont newspapers, the National Trust for Local News expands to a fourth state\",\n  \"description\": \"The nonprofit National Trust for Local News is acquiring the Vermont Community Newspaper Group in a deal that will close this month, the Trust...\",\n  \"datePublished\": \"2026-10-03T02:50:09.664756+00:00\",\n  \"dateModified\": \"2026-10-03T02:50:09.664756+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/09/with-acquisition-of-vermont-newspapers-the-national-trust-for-local-news-expands-to-a-fourth-state\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/09/with-acquisition-of-vermont-newspapers-the-national-trust-for-local-news-expands-to-a-fourth-state\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-03T02:50:25.970741+00:00"
+  },
+  "news/comp-journalism/with-bimbo-university-nikita-redkar-leans-into-femininity-to-explain-the-news": {
+    "slug": "news/comp-journalism/with-bimbo-university-nikita-redkar-leans-into-femininity-to-explain-the-news",
+    "meta_description": "The data is in : News creators and influencers are a major source of news for Americans, especially people under 30. This is the latest edition of...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"With “Bimbo University,” Nikita Redkar leans into femininity to explain the news\",\n  \"description\": \"The data is in : News creators and influencers are a major source of news for Americans, especially people under 30. This is the latest edition of...\",\n  \"datePublished\": \"2026-11-08T05:30:10.984136+00:00\",\n  \"dateModified\": \"2026-11-08T05:30:10.984136+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/with-bimbo-university-nikita-redkar-leans-into-femininity-to-explain-the-news\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/with-bimbo-university-nikita-redkar-leans-into-femininity-to-explain-the-news\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:30:21.202481+00:00"
   },
   "news/comp-journalism/with-its-new-season-the-podcast-scene-on-radio-takes-on-the-news": {
     "slug": "news/comp-journalism/with-its-new-season-the-podcast-scene-on-radio-takes-on-the-news",
