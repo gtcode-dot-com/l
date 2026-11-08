@@ -237,6 +237,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:07:05.877354+00:00"
   },
+  "news/ai-research/agentic-cheminformatics-with-google-antigravity": {
+    "slug": "news/ai-research/agentic-cheminformatics-with-google-antigravity",
+    "meta_description": "November 3, 2026 Science Zoi Tsangalidou, Ruijie (Kelly) Zhang, Sukhdeep Singh and Michael V. LeVine Copied Designing new medicines requires...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Agentic cheminformatics with Google Antigravity\",\n  \"description\": \"November 3, 2026 Science Zoi Tsangalidou, Ruijie (Kelly) Zhang, Sukhdeep Singh and Michael V. LeVine Copied Designing new medicines requires...\",\n  \"datePublished\": \"2026-11-08T05:50:03.610122+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:03.610122+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity\"\n  },\n  \"url\": \"https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:27.537407+00:00"
+  },
   "news/ai-research/agentic-resource-discovery-let-agents-search": {
     "slug": "news/ai-research/agentic-resource-discovery-let-agents-search",
     "meta_description": "If you build with agents today, you probably know three protocols. MCP gives agents a standard way to call tools. Skills give agents a way of...",
@@ -1112,6 +1119,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T04:42:51.580534+00:00"
   },
+  "news/ai-research/gemini-4-carbon-our-next-frontier-model": {
+    "slug": "news/ai-research/gemini-4-carbon-our-next-frontier-model",
+    "meta_description": "Today, we’re announcing the next frontier model: Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini 4 Carbon: Our next frontier model\",\n  \"description\": \"Today, we’re announcing the next frontier model: Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon...\",\n  \"datePublished\": \"2026-11-08T05:50:05.367373+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:05.367373+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:27.184487+00:00"
+  },
   "news/ai-research/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery": {
     "slug": "news/ai-research/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery",
     "meta_description": "For centuries, the scientific method has been the greatest engine of human progress. At Google, our mission is deeply rooted in building tools to...",
@@ -1125,6 +1139,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini Omni 1.1 Flash lets you build with more control\",\n  \"description\": \"Today, we’re introducing Gemini Omni 1.1 Flash, a new suite of creative controls and generative video capabilities to support developers.\",\n  \"datePublished\": \"2026-10-03T04:43:15.396396+00:00\",\n  \"dateModified\": \"2026-10-03T04:43:15.396396+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-03T04:44:10.696655+00:00"
+  },
+  "news/ai-research/gemini-omni-1-2-flash-fast-and-cost-effective-with-longer-clips": {
+    "slug": "news/ai-research/gemini-omni-1-2-flash-fast-and-cost-effective-with-longer-clips",
+    "meta_description": "Today, we’re rolling out Gemini Omni 1.2 Flash, and making it generally available across the Gemini API and Gemini for business . Gemini Omni 1.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips\",\n  \"description\": \"Today, we’re rolling out Gemini Omni 1.2 Flash, and making it generally available across the Gemini API and Gemini for business . Gemini Omni 1.\",\n  \"datePublished\": \"2026-11-08T05:50:02.905502+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:02.905502+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:26.203875+00:00"
   },
   "news/ai-research/gemini-robotics-2-brings-whole-body-intelligence-to-robots": {
     "slug": "news/ai-research/gemini-robotics-2-brings-whole-body-intelligence-to-robots",
@@ -1188,6 +1209,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Generative AI tool helps 3D print personal items that sustain daily use\",\n  \"description\": \"Generative artificial intelligence models have left such an indelible impact on digital content creation that it’s getting harder to recall what...\",\n  \"datePublished\": \"2026-01-14T22:15:26.972353+00:00\",\n  \"dateModified\": \"2026-01-14T22:15:26.972353+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/genai-tool-helps-3d-print-personal-items-sustain-daily-use-0114\"\n  },\n  \"url\": \"https://news.mit.edu/2026/genai-tool-helps-3d-print-personal-items-sustain-daily-use-0114\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:54.370862+00:00"
+  },
+  "news/ai-research/genie-4-a-new-generation-of-world-simulation": {
+    "slug": "news/ai-research/genie-4-a-new-generation-of-world-simulation",
+    "meta_description": "October 27, 2026 Models Raia Hadsell, Diego Rivas and Hang Qi Copied Today, we are announcing Genie 4, our new world model, which unlocks...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Genie 4: A new generation of world simulation\",\n  \"description\": \"October 27, 2026 Models Raia Hadsell, Diego Rivas and Hang Qi Copied Today, we are announcing Genie 4, our new world model, which unlocks...\",\n  \"datePublished\": \"2026-11-08T05:50:06.485085+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:06.485085+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation\"\n  },\n  \"url\": \"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:26.532801+00:00"
   },
   "news/ai-research/getting-the-source-right-not-just-the-fact-source-aware-verification-for-mcp-agents": {
     "slug": "news/ai-research/getting-the-source-right-not-just-the-fact-source-aware-verification-for-mcp-agents",
@@ -3323,6 +3351,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook\",\n  \"description\": \"--- In April, we released DharmaOCR — a pair of specialized small language models for structured OCR, alongside a benchmark and the accompanying...\",\n  \"datePublished\": \"2026-05-24T00:20:30.922275+00:00\",\n  \"dateModified\": \"2026-05-24T00:20:30.922275+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/Dharma-AI/specialization-beats-scale\"\n  },\n  \"url\": \"https://huggingface.co/blog/Dharma-AI/specialization-beats-scale\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-24T00:21:06.116628+00:00"
+  },
+  "news/ai-research/speeding-up-planning-decisions-with-ai": {
+    "slug": "news/ai-research/speeding-up-planning-decisions-with-ai",
+    "meta_description": "October 31, 2026 Responsibility &amp; Safety Owen Larter and David Thacker Copied PlanAssist has shown it can cut the time planning officers spend...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Speeding up planning decisions with AI\",\n  \"description\": \"October 31, 2026 Responsibility &amp; Safety Owen Larter and David Thacker Copied PlanAssist has shown it can cut the time planning officers spend...\",\n  \"datePublished\": \"2026-11-08T05:50:04.402821+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:04.402821+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/speeding-up-planning-decisions-with-ai\"\n  },\n  \"url\": \"https://deepmind.google/blog/speeding-up-planning-decisions-with-ai\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:26.864137+00:00"
   },
   "news/ai-research/startups-nuclear-inspired-cooling-system-could-make-data-centers-more-sustainable": {
     "slug": "news/ai-research/startups-nuclear-inspired-cooling-system-could-make-data-centers-more-sustainable",
@@ -9337,6 +9372,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:34.912824+00:00"
   },
+  "news/ai-security/interpol-arrests-1462-suspects-disrupts-10909-cybercrime-networks-in-global-crackdown": {
+    "slug": "news/ai-security/interpol-arrests-1462-suspects-disrupts-10909-cybercrime-networks-in-global-crackdown",
+    "meta_description": "Ravie Lakshmanan Oct 22, 2026 Cybercrime / Law Enforcement INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown\",\n  \"description\": \"Ravie Lakshmanan Oct 22, 2026 Cybercrime / Law Enforcement INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted...\",\n  \"datePublished\": \"2026-11-08T05:49:48.781511+00:00\",\n  \"dateModified\": \"2026-11-08T05:49:48.781511+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:25.522940+00:00"
+  },
   "news/ai-security/interpol-arrests-574-in-africa-ukrainian-ransomware-affiliate-pleads-guilty": {
     "slug": "news/ai-security/interpol-arrests-574-in-africa-ukrainian-ransomware-affiliate-pleads-guilty",
     "meta_description": "A law enforcement operation coordinated by INTERPOL has led to the recovery of $3 million and the arrest of 574 suspects by authorities from 19...",
@@ -11395,6 +11437,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T03:36:19.085967+00:00"
   },
+  "news/ai-security/meta-ordered-to-pay-25-billion-after-court-finds-43-million-privacy-violations": {
+    "slug": "news/ai-security/meta-ordered-to-pay-25-billion-after-court-finds-43-million-privacy-violations",
+    "meta_description": "Ravie Lakshmanan Oct 22, 2026 Data Privacy / Regulatory Social media giant Meta was ordered to pay 25 billion in penalties by a New Mexico court...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations\",\n  \"description\": \"Ravie Lakshmanan Oct 22, 2026 Data Privacy / Regulatory Social media giant Meta was ordered to pay 25 billion in penalties by a New Mexico court...\",\n  \"datePublished\": \"2026-11-08T05:49:48.424334+00:00\",\n  \"dateModified\": \"2026-11-08T05:49:48.424334+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:24.817460+00:00"
+  },
   "news/ai-security/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach": {
     "slug": "news/ai-security/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach",
     "meta_description": "Most of the affected individuals are Meta employees in the United States and they are being offered credit monitoring services.",
@@ -12416,6 +12465,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New Russia-Linked GREYVIBE Targets Ukraine with AI-Powered Cyberattacks\",\n  \"description\": \"Ravie Lakshmanan May 29, 2026 Cyber Espionage / Artificial Intelligence A previously undocumented threat actor dubbed GREYVIBE has been attributed...\",\n  \"datePublished\": \"2026-06-01T01:10:11.037582+00:00\",\n  \"dateModified\": \"2026-06-01T01:10:11.037582+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-01T01:11:09.125506+00:00"
+  },
+  "news/ai-security/new-serious-php-vulnerabilities-released-and-patched": {
+    "slug": "news/ai-security/new-serious-php-vulnerabilities-released-and-patched",
+    "meta_description": "PHP maintainers have released fixes for two critical vulnerabilities: &gt; PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New Serious PHP Vulnerabilities Released and Patched\",\n  \"description\": \"PHP maintainers have released fixes for two critical vulnerabilities: &gt; PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities...\",\n  \"datePublished\": \"2026-11-08T05:49:49.374357+00:00\",\n  \"dateModified\": \"2026-11-08T05:49:49.374357+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:25.855511+00:00"
   },
   "news/ai-security/new-sharkloader-malware-deploys-cobalt-strike-in-strikeshark-cyberattacks": {
     "slug": "news/ai-security/new-sharkloader-malware-deploys-cobalt-strike-in-strikeshark-cyberattacks",
@@ -13508,6 +13564,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Quick Howto: ZIP Files Inside RTF, (Mon, Mar 2nd)\",\n  \"description\": \"In diary entry \\\" Quick Howto: Extract URLs from RTF files \\\" I mentioned ZIP files. There are OLE objects inside this RTF file: They can be...\",\n  \"datePublished\": \"2026-03-09T04:45:12.023786+00:00\",\n  \"dateModified\": \"2026-03-09T04:45:12.023786+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32696\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32696\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:15.860827+00:00"
+  },
+  "news/ai-security/railway-says-intruder-may-have-accessed-customer-secrets-urges-credential-rotation": {
+    "slug": "news/ai-security/railway-says-intruder-may-have-accessed-customer-secrets-urges-credential-rotation",
+    "meta_description": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation\",\n  \"description\": \"Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \\\"anomalous activity\\\" related to systems that store customer environment...\",\n  \"datePublished\": \"2026-11-08T05:49:49.080390+00:00\",\n  \"dateModified\": \"2026-11-08T05:49:49.080390+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:25.171259+00:00"
   },
   "news/ai-security/ransomware-negotiator-pleads-guilty-to-aiding-blackcat-attacks-in-2023": {
     "slug": "news/ai-security/ransomware-negotiator-pleads-guilty-to-aiding-blackcat-attacks-in-2023",
@@ -17030,6 +17093,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:48.416123+00:00"
   },
+  "news/ai-security/workshop-on-economics-and-information-security-weis-archive": {
+    "slug": "news/ai-security/workshop-on-economics-and-information-security-weis-archive",
+    "meta_description": "There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Workshop on Economics and Information Security (WEIS) Archive\",\n  \"description\": \"There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource.\",\n  \"datePublished\": \"2026-11-08T05:49:49.631240+00:00\",\n  \"dateModified\": \"2026-11-08T05:49:49.631240+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:24.470765+00:00"
+  },
   "news/ai-security/wormable-xmrig-campaign-uses-byovd-exploit-and-time-based-logic-bomb": {
     "slug": "news/ai-security/wormable-xmrig-campaign-uses-byovd-exploit-and-time-based-logic-bomb",
     "meta_description": "Cybersecurity researchers have disclosed details of a new cryptojacking campaign that uses pirated software bundles as lures to deploy a bespoke...",
@@ -17456,6 +17526,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Anna Starnes named Ipswich Star and EADT editor\",\n  \"description\": \"Anna Starners. Picture: Newsquest Newsquest has appointed Anna Starnes as editor of the Ipswich Star and East Anglian Daily Times.\",\n  \"datePublished\": \"2026-01-30T12:15:44.686668+00:00\",\n  \"dateModified\": \"2026-01-30T12:15:44.686668+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/the-wire/media-jobs-uk-news/anna-starnes-named-ipswich-star-and-eadt-editor\"\n  },\n  \"url\": \"https://pressgazette.co.uk/the-wire/media-jobs-uk-news/anna-starnes-named-ipswich-star-and-eadt-editor\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:15.766153+00:00"
+  },
+  "news/comp-journalism/anthropic-openai-google-and-microsoft-will-make-it-easier-for-publishers-to-opt-out-of-being-scraped": {
+    "slug": "news/comp-journalism/anthropic-openai-google-and-microsoft-will-make-it-easier-for-publishers-to-opt-out-of-being-scraped",
+    "meta_description": "AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Anthropic, OpenAI, Google, and Microsoft will make it easier for publishers to opt out of being scraped\",\n  \"description\": \"AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...\",\n  \"datePublished\": \"2026-11-08T05:50:18.539561+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:18.539561+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/anthropic-openai-google-and-microsoft-will-make-it-easier-for-publishers-to-opt-out-of-being-scraped\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/anthropic-openai-google-and-microsoft-will-make-it-easier-for-publishers-to-opt-out-of-being-scraped\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:28.865478+00:00"
   },
   "news/comp-journalism/ap-verify-launches-for-publishers-to-meet-demand-for-authenticity": {
     "slug": "news/comp-journalism/ap-verify-launches-for-publishers-to-meet-demand-for-authenticity",
@@ -18184,6 +18261,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Elections Under Attack, Shadow Aircraft Fleet, National Park Land Grabs: 2025’s Best Investigative Stories from Sub-Saharan Africa\",\n  \"description\": \"In many African countries, perpetrators of crime or illegal activities bank on being able to act with impunity, emboldened by the perception that...\",\n  \"datePublished\": \"2026-01-29T08:15:40.737291+00:00\",\n  \"dateModified\": \"2026-01-29T08:15:40.737291+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://gijn.org/stories/2025-editors-picks-sub-saharan-africa\"\n  },\n  \"url\": \"https://gijn.org/stories/2025-editors-picks-sub-saharan-africa\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:00.939882+00:00"
+  },
+  "news/comp-journalism/elon-musks-grokipedia-is-littered-with-mistakes-but-wikipedia-could-still-learn-some-things-from-it": {
+    "slug": "news/comp-journalism/elon-musks-grokipedia-is-littered-with-mistakes-but-wikipedia-could-still-learn-some-things-from-it",
+    "meta_description": "When I saw Grokipedia’s articles about me, the memories came rushing back: my 19 years in minor league baseball, including that impressive season...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Elon Musk’s Grokipedia is littered with mistakes. But Wikipedia could still learn some things from it.\",\n  \"description\": \"When I saw Grokipedia’s articles about me, the memories came rushing back: my 19 years in minor league baseball, including that impressive season...\",\n  \"datePublished\": \"2026-11-08T05:50:18.791512+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:18.791512+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/elon-musks-grokipedia-is-littered-with-mistakes-but-wikipedia-could-still-learn-some-things-from-it\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/elon-musks-grokipedia-is-littered-with-mistakes-but-wikipedia-could-still-learn-some-things-from-it\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:28.194249+00:00"
   },
   "news/comp-journalism/emily-maitlis-joins-the-new-world-as-columnist": {
     "slug": "news/comp-journalism/emily-maitlis-joins-the-new-world-as-columnist",
@@ -21489,6 +21573,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T22:04:44.172005+00:00"
   },
+  "news/comp-journalism/the-new-york-times-stays-on-track-to-reach-15-million-subscribers-by-the-end-of-2027": {
+    "slug": "news/comp-journalism/the-new-york-times-stays-on-track-to-reach-15-million-subscribers-by-the-end-of-2027",
+    "meta_description": "The New York Times added 420,000 new digital subscribers in the third quarter of 2026, keeping it on track to achieve its goal of hitting 15...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The New York Times stays on track to reach 15 million subscribers by the end of 2027\",\n  \"description\": \"The New York Times added 420,000 new digital subscribers in the third quarter of 2026, keeping it on track to achieve its goal of hitting 15...\",\n  \"datePublished\": \"2026-11-08T05:50:18.255053+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:18.255053+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/the-new-york-times-stays-on-track-to-reach-15-million-subscribers-by-the-end-of-2027\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/the-new-york-times-stays-on-track-to-reach-15-million-subscribers-by-the-end-of-2027\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:29.184755+00:00"
+  },
   "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-6-2026": {
     "slug": "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-6-2026",
     "meta_description": "What a week! Recap it with the second edition of the Nieman Lab News-About-News Quiz, your weekly incentive to keep up with the latest happenings...",
@@ -21502,6 +21593,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The non-profit publisher making local news pay in London\",\n  \"description\": \"February 2026 editions of Social Spider newspapers Waltham Forest Echo, Enfield Dispatch, Barnet Post and Newham Voices. Picture: Press Gazette...\",\n  \"datePublished\": \"2026-03-11T10:15:54.280635+00:00\",\n  \"dateModified\": \"2026-03-11T10:15:54.280635+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/regional-newspapers/the-non-profit-publisher-making-local-news-pay-in-london\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/regional-newspapers/the-non-profit-publisher-making-local-news-pay-in-london\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-11T10:16:06.089594+00:00"
+  },
+  "news/comp-journalism/the-onions-new-plan-to-market-its-print-newspaper-sponsoring-a-bowl-game": {
+    "slug": "news/comp-journalism/the-onions-new-plan-to-market-its-print-newspaper-sponsoring-a-bowl-game",
+    "meta_description": "College football already has an Orange Bowl , a Peach Bowl , and a Citrus Bowl , so on its face, there’s nothing outlandish about the concept of...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Onion’s new plan to market its print newspaper: sponsoring a bowl game\",\n  \"description\": \"College football already has an Orange Bowl , a Peach Bowl , and a Citrus Bowl , so on its face, there’s nothing outlandish about the concept of...\",\n  \"datePublished\": \"2026-11-08T05:50:17.705122+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:17.705122+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/the-onions-new-plan-to-market-its-print-newspaper-sponsoring-a-bowl-game\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/the-onions-new-plan-to-market-its-print-newspaper-sponsoring-a-bowl-game\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:27.876937+00:00"
   },
   "news/comp-journalism/the-projects-publishers-are-most-proud-of-in-2025": {
     "slug": "news/comp-journalism/the-projects-publishers-are-most-proud-of-in-2025",
@@ -22006,6 +22104,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"We asked where journalism gatherings go wrong: Here’s what we heard\",\n  \"description\": \"A few weeks ago, we published an article arguing that journalism gatherings have a closed-loop problem : the same speakers presenting the same...\",\n  \"datePublished\": \"2026-03-26T22:52:11.706994+00:00\",\n  \"dateModified\": \"2026-03-26T22:52:11.706994+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://source.opennews.org/articles/we-asked-where-journalism-gatherings-go-wrong\"\n  },\n  \"url\": \"https://source.opennews.org/articles/we-asked-where-journalism-gatherings-go-wrong\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-26T22:52:24.737288+00:00"
+  },
+  "news/comp-journalism/weird-animals-win-on-instagram-mongabays-next-best-choice-its-reporters": {
+    "slug": "news/comp-journalism/weird-animals-win-on-instagram-mongabays-next-best-choice-its-reporters",
+    "meta_description": "Mongabay’s most successful videos are about weird animals . But not every video from the environmental newsroom can be about strange — or...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Weird animals win on Instagram. Mongabay’s next-best choice? Its reporters.\",\n  \"description\": \"Mongabay’s most successful videos are about weird animals . But not every video from the environmental newsroom can be about strange — or...\",\n  \"datePublished\": \"2026-11-08T05:50:17.981776+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:17.981776+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/weird-animals-win-on-instagram-mongabays-next-best-choice-its-reporters\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/weird-animals-win-on-instagram-mongabays-next-best-choice-its-reporters\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:50:28.526669+00:00"
   },
   "news/comp-journalism/welcome-to-dubai-kinahan-cartels-visas-revealed": {
     "slug": "news/comp-journalism/welcome-to-dubai-kinahan-cartels-visas-revealed",

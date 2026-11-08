@@ -1,23 +1,22 @@
 ---
 title: "The Unlearned Pattern"
-subtitle: "Quantum memory, distant learning, and the reach of acquired history"
+subtitle: "Distant learning, physical memory, and the reach of acquired history"
 date: "2026-11-07T10:00:00-10:00"
-lastmod: "2026-11-07T19:21:55-10:00"
+lastmod: "2026-11-07T19:48:51-10:00"
 draft: false
 author: "GTCode.com Research"
 description: "Can learning in one place change what an untrained mind discovers elsewhere? A research proposal for testing the reach of acquired history."
 type: article
 slug: the-unlearned-pattern
 tags:
+  - Learning
+  - Causal Inference
+  - Research Proposal
+  - Physical Memory
+  - Morphic Resonance
   - Quantum Memory
   - Quantum Birthmarks
   - Bioelectricity
-  - Morphic Resonance
-  - Learning
-  - Causal Inference
-  - Consciousness
-  - Agency
-  - Research Proposal
 categories:
   - research
   - conceptual
@@ -29,14 +28,15 @@ canonical: "https://gtcode.com/articles/the-unlearned-pattern/"
 robots: "index, follow, max-image-preview:large"
 meta_description: "Can learning in one place change what an untrained mind discovers elsewhere? A research proposal for testing the reach of acquired history."
 meta_keywords:
+  - distant learning research proposal
+  - causal inference with interference
+  - structural learning
   - physical memory and historical dependence
-  - quantum birthmarks
+  - morphic resonance
   - environmental memory
   - bioelectric pattern memory
-  - morphic resonance
-  - structural learning
+  - quantum birthmarks
   - no-signalling
-  - causal inference with interference
   - prospective coincidence research
 
 # Hero / Open Graph
@@ -57,23 +57,23 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-research"
 article_published_time: "2026-11-07T10:00:00-10:00"
-article_modified_time: "2026-11-07T19:21:55-10:00"
+article_modified_time: "2026-11-07T19:48:51-10:00"
 article_section: "Articles"
 article_tags:
-  - "Quantum Memory"
-  - "Bioelectricity"
-  - "Morphic Resonance"
   - "Learning"
   - "Causal Inference"
-  - "Consciousness"
   - "Research Proposal"
+  - "Physical Memory"
+  - "Morphic Resonance"
+  - "Quantum Memory"
+  - "Bioelectricity"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_image: "/img/the-unlearned-pattern-og-1200x630.jpg"
 twitter_image_alt: "A learned amber route in one network beside a separate untrained network"
 twitter_title: "The Unlearned Pattern"
-twitter_description: "Quantum memory, distant learning, and the reach of acquired history."
+twitter_description: "Distant learning, physical memory, and the reach of acquired history."
 
 sitemap:
   changefreq: monthly
@@ -82,14 +82,14 @@ sitemap:
 structured_data_webpage:
   type: Article
   headline: "The Unlearned Pattern"
-  description: "A research proposal joining physical memory, bioelectric organization, and a controlled test of whether distant learning changes an untrained system's responses."
-  about: "Quantum birthmarks, environmental memory, bioelectricity, morphic resonance, structural learning, causal inference, consciousness, and global boundary selection"
+  description: "A research proposal testing whether distant learning changes an untrained system's responses, with independent experiments on physical memory and bioelectric organization."
+  about: "Distant learning, causal inference, structural learning, physical memory, morphic resonance tests, environmental memory, bioelectricity, and quantum birthmarks"
 
 ai_agent_meta:
   digest_source: raw_body
   # SHA-256 of UTF-8 body bytes after the closing front-matter delimiter, including whitespace.
-  content_digest: "sha256:e55141bbb71f25e39950cef2fdd9b75522b0ee490415d5e944f234d1145ad131"
-  generated_at: '2026-11-07T19:21:55-10:00'
+  content_digest: "sha256:9c779429336f403b36ebff7bc20bda68d506a41365a5db71a786996fd90f866b"
+  generated_at: '2026-11-07T19:48:51-10:00'
   prompt_version: v2026-11-07-unlearned-pattern-1
 ai_agent_note: |
   ATTN AI Agent:
@@ -140,9 +140,9 @@ $$
 \qquad |\psi(0)\rangle=\sum_n c_n|E_n\rangle.
 $$
 
-The coefficients describe how the preparation occupies the energy eigenstates. To identify a birthmark, compare overlap with that preparation against overlap with an independently chosen state satisfying the appropriate energy and symmetry constraints. Comparing each state's return to itself answers a different question. Xiaoya and colleagues' companion analysis finds enhancement factors approaching two or three in the relevant random-matrix limits. Those factors describe ensembles under specified comparisons. Early returns can strengthen the trace; Heller's quantum scars are an important precedent.[^4][^5]
+The coefficients describe how the preparation occupies the energy eigenstates. To identify a birthmark, compare overlap with that preparation against overlap with an independently chosen state satisfying the appropriate energy and symmetry constraints. Comparing each state's return to itself answers a different question. Xiaoya and colleagues find enhancement factors approaching two or three under specified random-matrix comparisons; early returns can strengthen the trace, with Heller's scars as precedent.[^4][^5]
 
-Reading this history poses a further problem. An infinite-time average gives little guidance by itself about a measurement that must finish next week. Nor does every environmental disturbance erase the same information. Pure dephasing in the energy basis preserves the populations entering the displayed sum; energy relaxation can change them. Phase information may disappear while a trace of preparation remains. An experiment therefore needs an observable, a description of the disturbance, and a time within which the trace can be read.
+An infinite-time average does not specify a practical readout time. Nor does every environmental disturbance erase the same information. Pure dephasing in the energy basis preserves the populations entering the displayed sum; energy relaxation can change them. Phase information may disappear while a trace of preparation remains. An experiment therefore needs an observable, a description of the disturbance, and a time within which the trace can be read.
 
 Kos, Wild, and Nielsen study another form of persistence: magnetic domains stabilized by symmetry-protected zero modes in interacting spin systems. Under their model's symmetries and preparation conditions, an initial magnetic pattern can resist the thermalization expected from the remaining dynamics.[^6] Protection of a particular part of the state gives the past a means of surviving. Perturbations that remove that protection offer a way to test why it survived.
 
@@ -156,8 +156,6 @@ Pollock and colleagues approach memory through sequences of interventions. In th
 
 For our proposal, the useful question is what happens when a suspected carrier is replaced, reset, or disconnected. If an effect survives, the intervention left a relevant cause intact. Locating that cause requires another change to the apparatus and another measurement.
 
-Quantum Darwinism concerns records that become available in a different way. Interactions distribute information about selected system properties among environmental fragments that several observers can read.[^11] The environment may conceal a record from one measurement and make it available to another. It can also return information to the system that supplied it. These are physical processes with different carriers and readouts. Together they sharpen the question of how a past event becomes available elsewhere.
-
 ## A body can remember its shape
 
 A regenerating organism rebuilds a form after losing some of the structures that made it recognizable. Genes, biochemical signals, mechanical conditions, and electrical organization contribute to the outcome. Turing's reaction–diffusion account showed how interacting components could generate form without consulting a stored picture of the finished animal.[^12]
@@ -166,11 +164,9 @@ Bioelectric experiments show that a tissue's anatomical dispositions can also ch
 
 Surviving biological material carries the history in these experiments. They provide no demonstration that an untreated worm elsewhere acquires the altered form. What they do reveal is a disposition that a photograph of the animal may miss: its current appearance and its response to a later injury can tell different stories about its state.
 
-Models help investigate how that disposition could persist. Cervera, Levin, and Mafe examine stable and oscillating patterns supported by ion channels, cellular voltages, and connections between cells.[^14] Manicka and Levin's later computational work studies how a tissue's electrostatic field can feed back on its bioelectric organization, and how transient inputs can steer the pattern.[^15] These models give a revisable target form physical components to investigate. Connecting a particular electrical configuration to a particular anatomical result remains a task for further modeling and experiment.
+Cervera, Levin, and Mafe model stable and oscillating patterns supported by ion channels, cellular voltages, and connections between cells.[^14] Manicka and Levin model how electrostatic feedback and transient inputs steer bioelectric patterns.[^15] Connecting those electrical configurations to particular anatomical outcomes remains an experimental task.
 
-McMillen and Levin's 2026 imaging study follows some of those components directly. Fluorescence-lifetime measurements in frog neural-crest explants recorded bioelectric activity over seconds, minutes, and hours. Patterns extended across cells, and some voltage dynamics differed from the accompanying calcium dynamics.[^16] The observations concern electrical activity within tissue, without testing transmission between disconnected cultures. They make more of that tissue's history available for comparison with its later development.
-
-Neural studies add mechanisms that should be kept distinct from one another. Anastassiou and colleagues demonstrated that extracellular fields can influence cortical neurons through ephaptic coupling. Pinotsis and Miller investigated how relatively stable field representations could coexist with changing neural ensembles.[^17][^18] Gap junctions, extracellular fields, and molecular signals act through different physical relations. Their differences determine which intervention could test their contribution.
+McMillen and Levin used fluorescence-lifetime measurements to record bioelectric patterns across cells in frog neural-crest explants over seconds to hours.[^16] The study recorded activity within tissue; it did not test transmission between disconnected cultures.
 
 This work leaves us with two questions: where does an acquired disposition reside, and what would another system have to share to acquire it?
 
@@ -317,7 +313,9 @@ Recovering arbitrary content would give a proposed historical influence obligati
 
 We propose a staged program whose main round would begin only after feasibility review. Before that round, participating institutions would need a costed recruitment plan, demonstrated source-session throughput, task validation, and simulation-based sample sizes, with resources committed to independent replication before the first main outcome. Its source populations would need enough exposure to test a claim about accumulated experience, while its receiver populations would need enough independent assigned histories to distinguish a small effect from task variation.
 
-Provisional planning ranges are 240–480 independently generated and randomized families per main round, tens of thousands of receiver first responses, and tens of thousands to several hundred thousand source sessions. A high-dose family might receive a thousand sessions distributed across many people. Separate comparisons would distinguish more learners from more repetitions by each learner. These ranges remain unvalidated for the two-sided test proposed below. Final allocations would require new simulations using pilot estimates of task, participant, and site variation and checking sensitivity to stronger dependence. At least 90% power for the primary comparison would be a design requirement, not a claim about the current ranges. If that target proved out of reach, recruitment or the number of independently assigned families would have to increase before the main study began.[^31]
+Provisional planning ranges are 240–480 independently generated and randomized families per main round, tens of thousands of receiver first responses, and tens of thousands to several hundred thousand source sessions. A high-dose family might receive a thousand sessions distributed across many people. Separate comparisons would distinguish more learners from more repetitions by each learner.
+
+These ranges remain unvalidated for the two-sided test proposed below. Pilots on separate families would estimate how widely baseline preference varies across families, including preferences created by the asymmetric scaffolds needed to identify corresponding choices. Final sample-size simulations would preserve that variation, include participant and site variation, and check sensitivity to stronger dependence. Additional responses within a family cannot substitute for independently assigned histories. At least 90% power for the primary comparison would be a design requirement, not a claim about the current ranges. If that target proved out of reach, recruitment or the number of independently assigned families would have to increase before the main study began.[^31]
 
 The primary estimate would use source-trained families at the prespecified high assigned dose: their equally weighted mean source-policy agreement on the first diagnostic choice in the original presentation, minus one half. With balanced source signs, isolation gives expected agreement of one half even if receivers ordinarily prefer one exit. We would provisionally design for a two-percentage-point increase in agreement. Under those balanced signs, that corresponds to a four-percentage-point difference in raw positive-option choice between the source-positive and source-negative assignments. These numbers specify sensitivity, not an expected effect or an estimate borrowed from resonance studies. The task family carries the randomized assignment; ten thousand responses to a single assigned rule remain one assigned history.
 
@@ -375,7 +373,7 @@ A registered report would place the protocol and analysis before reviewers while
 
 The protocol would declare its primary contrast, the postulate’s predicted positive direction, the two-sided test, exclusions, missing-data treatment, stopping rule, and analysis. Structural transfer, learning interference, source type, and lag comparisons would have an explicit order and multiplicity policy. Neural decoding or an alternative similarity metric discovered afterward could motivate another study. They could not replace a failed declared endpoint. Selecting an analysis on the same observations used to judge it creates a well-established inference problem.[^36][^37]
 
-For the first main round, we propose a two-sided randomization threshold of $p\leq0.005$, accompanied by a signed effect estimate and a two-sided 99.5% confidence interval constructed under the registered analysis. Alignment would support the postulate’s positive coupling; anti-alignment would contradict that direction. Advancing beyond the initial finding would require an information audit and replication of the same signed assignment effect across new families under independent implementation. Because anti-alignment was not the predicted direction, a negative-direction finding would require a newly registered replication with that direction declared before it could support further mechanism or structural-transfer claims. Leaving out each site in turn would assess dominance and heterogeneity, not demand significance in every smaller subset. A structural-transfer claim would also require replication of its specific interaction.
+For the first main round, we propose a two-sided randomization threshold of $p\leq0.005$, accompanied by a signed effect estimate and a two-sided 99.5% confidence interval constructed under the registered analysis. Given the absence of established evidence for this transfer, leakage or procedural error is a more credible initial explanation for a single threshold crossing. A crossing would justify an information audit and replication of the same signed assignment effect across new families under independent implementation, not establish a transmission route. Alignment has the direction predicted by the postulate; anti-alignment contradicts it. Because anti-alignment was not the predicted direction, a negative-direction finding would require a newly registered replication with that direction declared before it could support further mechanism or structural-transfer claims. Leaving out each site in turn would assess dominance and heterogeneity, not demand significance in every smaller subset. A structural-transfer claim would also require replication of its specific interaction.
 
 An estimate too imprecise to distinguish zero from the design target would call for a newly registered study or an extension already allowed by a preplanned sequential rule. It would not justify collecting indefinitely until significance appeared. A two-sided 99.5% confidence interval lying wholly between minus and plus two percentage points would exclude effects of the design-target magnitude in either direction under the analysis’s assumptions. An interval excluding only the positive target would leave a negative effect of that magnitude unresolved. A reproducible smaller effect might still warrant work if its arbitrary content were secure. Repeated failures at adequate precision would end this version of the proposal in its declared task domain and dose range. Changing the relevant similarity afterward would begin a new hypothesis and a new public record.
 
@@ -391,11 +389,11 @@ The source's retention offers another comparison. Does the receiver track the nu
 
 ### Experiments with known carriers
 
-A parallel physics program would create a history whose carrier could be deliberately preserved, moved, or partly erased, then test what a new reader recovers.
+A parallel physics program would create a history whose carrier could be deliberately preserved, moved, or partly erased, then test what a new reader recovers. Its success criteria are independent of the distant-learning outcome: distinguish prepared histories on held-out trials, identify which interventions preserve or erase readable information, and reproduce those results. An adequately precise null that excludes a declared readout accuracy at the tested delays and disturbances also meets those criteria: it establishes limits on what remains readable. A null in the behavioral experiment would leave those results intact.
 
 Simulations could begin with the chaotic billiards and protected magnetic domains discussed earlier. We would introduce disturbances that preserve or disrupt the suspected means of retention, then ask which traces remain readable within a fixed observation period. For the billiard, dephasing and energy relaxation need separate tests; for the magnetic domains, the comparison would include perturbations that break the protecting symmetry. A surviving trace would matter experimentally only if a specified measurement could distinguish the earlier preparations. These tests would connect long-time mathematical persistence to information a later observer could recover.[^3][^6]
 
-Structured quantum environments allow a system's current state and its environmental history to be manipulated separately. White and colleagues have already demonstrated process-tensor characterization and improved control on a quantum processor with memory.[^38] A source qubit could write one of two randomized preparations into a characterized environment. After resetting or replacing the source, a fresh second probe would attempt to distinguish those preparations on held-out trials. Varying the delay, perturbing the environment, and replacing the probe would reveal which prepared distinctions remained readable. Process-tensor interventions and kernel reconstruction could help identify the relevant temporal dependence.[^7][^9][^8] Coupling supplies the transmission route in this experiment; the research concerns how it preserves information that a memoryless description misses.
+Structured quantum environments allow a system's current state and its environmental history to be manipulated separately. White and colleagues have already demonstrated process-tensor characterization and improved control on a quantum processor with memory.[^38] A source qubit could write one of two randomized preparations into a characterized environment. After resetting or replacing the source, a fresh second probe would attempt to distinguish those preparations on held-out trials. Varying the delay, perturbing the environment, and replacing the probe would reveal which prepared distinctions remained readable. Process-tensor interventions and kernel reconstruction could help identify the relevant temporal dependence.[^7][^9][^8] The characterized environment carries the information between probes. The experiment asks what it retains after a reset and what the second probe can read.
 
 Living tissue offers a corresponding program. Researchers could write a reproducible bioelectric pattern, disturb selected electrical or intercellular routes, and measure the subsequent developmental response. Existing planarian manipulations and optical voltage measurements provide systems in which to begin.[^13][^16] Extending the test to physically separate cultures would introduce another claim. It would require newly assigned distinguishable target patterns, independent batches, and a separate account of transmission; spontaneous resemblance between two regenerates would leave the arbitrary-content question unanswered.
 
@@ -477,8 +475,6 @@ Return to the invented junction. Two exits offer equal local evidence. Somewhere
 
 [^10]: Pollock, F. A., Rodríguez-Rosario, C., Frauenheim, T., Paternostro, M., & Modi, K. (2018). [*Non-Markovian quantum processes: Complete framework and efficient characterization*](https://doi.org/10.1103/PhysRevA.97.012127). *Physical Review A*, 97, 012127.
 
-[^11]: Zurek, W. H. (2009). [*Quantum Darwinism*](https://doi.org/10.1038/nphys1202). *Nature Physics*, 5, 181–188.
-
 [^12]: Turing, A. M. (1952). [*The Chemical Basis of Morphogenesis*](https://doi.org/10.1098/rstb.1952.0012). *Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences*, 237(641), 37–72.
 
 [^13]: Durant, F., Morokuma, J., Fields, C., Williams, K., Adams, D. S., & Levin, M. (2017). [*Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients*](https://doi.org/10.1016/j.bpj.2017.04.011). *Biophysical Journal*, 112(10), 2231–2243.
@@ -488,10 +484,6 @@ Return to the invented junction. Two exits offer equal local evidence. Somewhere
 [^15]: Manicka, S., & Levin, M. (2025). [*Field-mediated bioelectric basis of morphogenetic prepatterning*](https://doi.org/10.1016/j.xcrp.2025.102865). *Cell Reports Physical Science*, 6(10), 102865. Computational model of field feedback and bioelectric pattern formation.
 
 [^16]: McMillen, P., & Levin, M. (2026). [*Lifetime imaging reveals long-distance non-neural bioelectric patterns on timescales from seconds to hours*](https://doi.org/10.1016/j.ydbio.2026.08.001). *Developmental Biology*, 539, 65–81. Published online August 5, 2026; November issue.
-
-[^17]: Anastassiou, C. A., Perin, R., Markram, H., & Koch, C. (2011). [*Ephaptic coupling of cortical neurons*](https://doi.org/10.1038/nn.2727). *Nature Neuroscience*, 14, 217–223.
-
-[^18]: Pinotsis, D. A., & Miller, E. K. (2022). [*Beyond dimension reduction: Stable electric fields emerge from and allow representational drift*](https://doi.org/10.1016/j.neuroimage.2022.119058). *NeuroImage*, 253, 119058.
 
 [^19]: Sheldrake, R. (1981). [*A New Science of Life: The Hypothesis of Formative Causation*](https://www.sheldrake.org/books-by-rupert-sheldrake/a-new-science-of-life-morphic-resonance). Blond & Briggs. The linked author page also describes the later revised edition, *Morphic Resonance*.
 

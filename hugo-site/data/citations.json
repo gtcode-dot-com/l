@@ -1417,13 +1417,13 @@
     "series_part": null,
     "series_part_title": null,
     "tags": [
-      "Quantum Memory",
-      "Bioelectricity",
-      "Morphic Resonance",
       "Learning",
       "Causal Inference",
-      "Consciousness",
-      "Research Proposal"
+      "Research Proposal",
+      "Physical Memory",
+      "Morphic Resonance",
+      "Quantum Memory",
+      "Bioelectricity"
     ],
     "bibtex_type": "article",
     "cff_type": "article",
