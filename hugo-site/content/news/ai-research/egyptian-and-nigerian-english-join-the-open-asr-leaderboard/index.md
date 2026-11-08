@@ -1,0 +1,79 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: ai-research
+date: '2026-11-08T05:56:02.924154+00:00'
+exported_at: '2026-11-08T05:56:05.361395+00:00'
+feed: https://huggingface.co/blog/feed.xml
+source_url: https://huggingface.co/blog/open-asr-leaderboard-liva
+structured_data:
+  about: []
+  author: ''
+  description: We’re on a journey to advance and democratize artificial intelligence
+    through open source and open science.
+  headline: Egyptian and Nigerian English join the Open ASR Leaderboard
+  keywords: []
+  main_image: ''
+  original_source: https://huggingface.co/blog/open-asr-leaderboard-liva
+  publisher:
+    logo: /favicon.ico
+    name: GTCode
+title: Egyptian and Nigerian English join the Open ASR Leaderboard
+updated_at: '2026-11-08T05:56:02.924154+00:00'
+url_hash: 82196d4ece0a644eb652d153eb38399732392fcf
+---
+
+# Egyptian and Nigerian English join the Open ASR Leaderboard
+
+A few months ago, we added private data to the
+[Open ASR Leaderboard](https://huggingface.co/spaces/hf-audio/open_asr_leaderboard)
+: 11 splits from Appen and DataOceanAI covering scripted and conversational speech from five accents (
+[blog](https://huggingface.co/blog/open-asr-leaderboard-private-data)
+). The community response was great, with many
+**highlighting the importance of held-out sets for trustworthy evaluations**
+. Since then, we added one more private split for Indian-accented English with Voice Arena (
+[blog](https://huggingface.co/blog/open-asr-leaderboard-global-south)
+).
+
+We’re excited to announce a new collaboration with
+[Liva AI](https://huggingface.co/liva-ai)
+to add even more private data with two new accents:
+**Egyptian**
+🇪🇬 and
+**Nigerian**
+🇳🇬.
+
+| Dataset | Accent | Duration [h] | Style | Transcription |
+| --- | --- | --- | --- | --- |
+| Liva AI Conversational EG | Egyptian | 1.34 | Conversational, spontaneous | Punctuated, cased, with disfluencies. |
+| Liva AI Conversational NG | Nigerian | 1.55 | Conversational, spontaneous | Punctuated, cased, with disfluencies. |
+
+This is part of our continued effort to improve representation in ASR evals (more accents and more languages) and to improve trust (new private data to minimize benchmaxxing, and new data providers). We’re excited to see the community continuing to push ASR performance for the world 🤗
+
+## Richer accent breakdown in the Private tab
+
+With these new accents, we can now present a richer breakdown of accents, based on
+[Kachru’s Three Circles](https://en.wikipedia.org/wiki/World_Englishes#Kachru%27s_Three_Circles_of_English)
+(kudos to Hume AI for this idea in their
+[leaderboard](https://huggingface.co/spaces/HumeAI/asr-leaderboard)
+). The Open ASR Leaderboard will now report:
+
+1. US vs. non-US (
+   *UK, Australia, Canada, India, Nigeria, Egypt*
+   )
+2. Inner Circle (
+   *US, UK, Australia, Canada*
+   ) vs. Outer &amp; Expanding Circles (
+   *India, Nigeria, Egypt*
+   )
+
+As more accents join, we’ll split the Outer and Expanding Circles.
+
+## About Liva AI
+
+Liva AI collects multimodal interaction data through consumer products used by real people. Because Liva owns both the collection environment and distribution, it can design products around specific model gaps across domains, industries, languages, modalities, and interaction types. This gives it access to natural, high-context behavior that emerges through real product use, rather than artificially elicited or task-based interactions.

@@ -104,6 +104,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-09T05:28:33.534360+00:00"
   },
+  "news/ai-research/a-closer-look-at-phonon-tts-launching-high-quality-on-device-speech-that-tops-the-benchmarks": {
+    "slug": "news/ai-research/a-closer-look-at-phonon-tts-launching-high-quality-on-device-speech-that-tops-the-benchmarks",
+    "meta_description": "Two weeks ago, we opened up Phonon, our small text-to-speech model that runs on your own device. It needs no server and no network, and what you...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.\",\n  \"description\": \"Two weeks ago, we opened up Phonon, our small text-to-speech model that runs on your own device. It needs no server and no network, and what you...\",\n  \"datePublished\": \"2026-11-08T05:56:03.930511+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:03.930511+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/phonon-tts\"\n  },\n  \"url\": \"https://huggingface.co/blog/phonon-tts\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:27.909826+00:00"
+  },
   "news/ai-research/a-faster-way-to-estimate-ai-power-consumption": {
     "slug": "news/ai-research/a-faster-way-to-estimate-ai-power-consumption",
     "meta_description": "Due to the explosive growth of artificial intelligence, it is estimated that data centers will consume up to 12 percent of total U.S.",
@@ -825,6 +832,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-14T05:08:04.528917+00:00"
   },
+  "news/ai-research/dharma-field-extractor-any-document-in-structured-fields-in-json-out": {
+    "slug": "news/ai-research/dharma-field-extractor-any-document-in-structured-fields-in-json-out",
+    "meta_description": "A 2-billion-parameter model that extracts exactly the fields you ask for, from any document type, outperforming every frontier LLM we tested, at a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Dharma Field Extractor: Any Document In, Structured Fields in JSON Out\",\n  \"description\": \"A 2-billion-parameter model that extracts exactly the fields you ask for, from any document type, outperforming every frontier LLM we tested, at a...\",\n  \"datePublished\": \"2026-11-08T05:56:04.517806+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:04.517806+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/Dharma-AI/dharma-field-extractor\"\n  },\n  \"url\": \"https://huggingface.co/blog/Dharma-AI/dharma-field-extractor\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:27.236008+00:00"
+  },
   "news/ai-research/differential-transformer-v2": {
     "slug": "news/ai-research/differential-transformer-v2",
     "meta_description": "Tianzhu Ye, Li Dong, Yutao Sun, Furu Wei Github Link We introduce Differential Transformer V2 (DIFF V2), an improved version of Differential...",
@@ -873,6 +887,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents\",\n  \"description\": \"> TL;DR > — We extend the RLVE framework from single-turn reasoning puzzles to > multi-turn, tool-augmented e-commerce conversations > .\",\n  \"datePublished\": \"2026-04-17T14:15:48.124504+00:00\",\n  \"dateModified\": \"2026-04-17T14:15:48.124504+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ecom-rlve\"\n  },\n  \"url\": \"https://huggingface.co/blog/ecom-rlve\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-17T14:16:26.724138+00:00"
+  },
+  "news/ai-research/egyptian-and-nigerian-english-join-the-open-asr-leaderboard": {
+    "slug": "news/ai-research/egyptian-and-nigerian-english-join-the-open-asr-leaderboard",
+    "meta_description": "A few months ago, we added private data to the Open ASR Leaderboard : 11 splits from Appen and DataOceanAI covering scripted and conversational...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Egyptian and Nigerian English join the Open ASR Leaderboard\",\n  \"description\": \"A few months ago, we added private data to the Open ASR Leaderboard : 11 splits from Appen and DataOceanAI covering scripted and conversational...\",\n  \"datePublished\": \"2026-11-08T05:56:02.924154+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:02.924154+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/open-asr-leaderboard-liva\"\n  },\n  \"url\": \"https://huggingface.co/blog/open-asr-leaderboard-liva\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:28.227368+00:00"
   },
   "news/ai-research/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model": {
     "slug": "news/ai-research/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
@@ -2771,6 +2792,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:26.946888+00:00"
   },
+  "news/ai-research/new-nvidia-cosmos-3-open-models-for-interactive-world-simulation": {
+    "slug": "news/ai-research/new-nvidia-cosmos-3-open-models-for-interactive-world-simulation",
+    "meta_description": "NVIDIA Cosmos world model development platform adds four new open-weight checkpoints to its Cosmos 3 model family for generating interactive world...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New NVIDIA Cosmos 3 Open Models for Interactive World Simulation\",\n  \"description\": \"NVIDIA Cosmos world model development platform adds four new open-weight checkpoints to its Cosmos 3 model family for generating interactive world...\",\n  \"datePublished\": \"2026-11-08T05:56:03.475458+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:03.475458+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation\"\n  },\n  \"url\": \"https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:27.586434+00:00"
+  },
   "news/ai-research/new-technique-makes-ai-models-leaner-and-faster-while-theyre-still-learning": {
     "slug": "news/ai-research/new-technique-makes-ai-models-leaner-and-faster-while-theyre-still-learning",
     "meta_description": "Training a large artificial intelligence model is expensive, not just in dollars, but in time, energy, and computational resources.",
@@ -3631,6 +3659,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models\",\n  \"description\": \"[](https://cdn-uploads.huggingface.co/production/uploads/68fbf4dfb3a931deae49375f/qvMqz8ohVx75oGkjaCI-.gif) Large language models (LLMs) have...\",\n  \"datePublished\": \"2026-05-24T00:20:30.473793+00:00\",\n  \"dateModified\": \"2026-05-24T00:20:30.473793+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/nvidia/nemotron-labs-diffusion\"\n  },\n  \"url\": \"https://huggingface.co/blog/nvidia/nemotron-labs-diffusion\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-24T00:21:07.998637+00:00"
+  },
+  "news/ai-research/toyblocks-a-controlled-world-for-robot-learning-and-evaluation": {
+    "slug": "news/ai-research/toyblocks-a-controlled-world-for-robot-learning-and-evaluation",
+    "meta_description": "💻 Code | 📊 Data | 🤖 Models | 📖 Documentation [](https://www.datocms-assets.com/64837/1793826687-david-thumbnail-download-1.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ToyBlocks: A controlled world for robot learning and evaluation\",\n  \"description\": \"💻 Code | 📊 Data | 🤖 Models | 📖 Documentation [](https://www.datocms-assets.com/64837/1793826687-david-thumbnail-download-1.\",\n  \"datePublished\": \"2026-11-08T05:56:02.474862+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:02.474862+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/allenai/toyblocks\"\n  },\n  \"url\": \"https://huggingface.co/blog/allenai/toyblocks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:28.542817+00:00"
   },
   "news/ai-research/train-ai-models-with-unsloth-and-hugging-face-jobs-for-free": {
     "slug": "news/ai-research/train-ai-models-with-unsloth-and-hugging-face-jobs-for-free",
@@ -7755,6 +7790,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-26T22:52:25.493091+00:00"
   },
+  "news/ai-security/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site": {
+    "slug": "news/ai-security/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site",
+    "meta_description": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site\",\n  \"description\": \"U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified...\",\n  \"datePublished\": \"2026-11-08T05:55:50.502403+00:00\",\n  \"dateModified\": \"2026-11-08T05:55:50.502403+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:26.534359+00:00"
+  },
   "news/ai-security/felons-fraudsters-flog-offensive-cybersecurity-startup": {
     "slug": "news/ai-security/felons-fraudsters-flog-offensive-cybersecurity-startup",
     "meta_description": "A cybersecurity startup dangling millions of dollars to acquire zero-day security vulnerabilities in popular software is run by a pair of...",
@@ -8762,6 +8804,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hacked App Part of US/Israeli Propaganda Campaign Against Iran\",\n  \"description\": \"Wired has the story : > Shortly after the first set of explosions, Iranians received bursts of notifications on their phones.\",\n  \"datePublished\": \"2026-03-12T00:34:03.914938+00:00\",\n  \"dateModified\": \"2026-03-12T00:34:03.914938+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/03/hacked-app-part-of-us-israeli-propaganda-campaign-against-iran.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/03/hacked-app-part-of-us-israeli-propaganda-campaign-against-iran.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-12T00:34:51.192401+00:00"
+  },
+  "news/ai-security/hacker-conversations-corey-thuen-and-the-evil-bit": {
+    "slug": "news/ai-security/hacker-conversations-corey-thuen-and-the-evil-bit",
+    "meta_description": "Corey Thuen is a hacker with a hacker mindset that is focused on the right way to do wrong things to get the right result.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hacker Conversations: Corey Thuen and the Evil Bit\",\n  \"description\": \"Corey Thuen is a hacker with a hacker mindset that is focused on the right way to do wrong things to get the right result.\",\n  \"datePublished\": \"2026-11-08T05:55:50.748886+00:00\",\n  \"dateModified\": \"2026-11-08T05:55:50.748886+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit\"\n  },\n  \"url\": \"https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:25.847882+00:00"
   },
   "news/ai-security/hackers-actively-exploiting-7-zip-symbolic-link-based-rce-vulnerability-cve-2025-11001": {
     "slug": "news/ai-security/hackers-actively-exploiting-7-zip-symbolic-link-based-rce-vulnerability-cve-2025-11001",
@@ -13376,6 +13425,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:04.695039+00:00"
   },
+  "news/ai-security/possible-new-cellebrite-iphone-radio-zero-day": {
+    "slug": "news/ai-security/possible-new-cellebrite-iphone-radio-zero-day",
+    "meta_description": "Justin.sh is reporting on a confidential Cellebrite document that has been leaked to him: &gt; Cellebrite calls it Advanced Unlocks (AU from here...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Possible new Cellebrite iPhone Radio Zero-Day\",\n  \"description\": \"Justin.sh is reporting on a confidential Cellebrite document that has been leaked to him: &gt; Cellebrite calls it Advanced Unlocks (AU from here...\",\n  \"datePublished\": \"2026-11-08T05:55:48.196964+00:00\",\n  \"dateModified\": \"2026-11-08T05:55:48.196964+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:26.189832+00:00"
+  },
   "news/ai-security/possible-new-result-in-quantum-factorization": {
     "slug": "news/ai-security/possible-new-result-in-quantum-factorization",
     "meta_description": "I’m skeptical about—and not qualified to review—this new result in factorization with a quantum computer, but if it’s true it’s a theoretical...",
@@ -15567,6 +15623,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-23T12:16:09.492565+00:00"
   },
+  "news/ai-security/training-ais-to-solve-captchas": {
+    "slug": "news/ai-security/training-ais-to-solve-captchas",
+    "meta_description": "Interesting research : &gt; Abstract &gt; : Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Training AIs to Solve CAPTCHAs\",\n  \"description\": \"Interesting research : &gt; Abstract &gt; : Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents...\",\n  \"datePublished\": \"2026-11-08T05:55:48.496915+00:00\",\n  \"dateModified\": \"2026-11-08T05:55:48.496915+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:25.505748+00:00"
+  },
   "news/ai-security/transparent-tribe-deploys-new-rust-backdoor-using-private-github-repositories-for-c2": {
     "slug": "news/ai-security/transparent-tribe-deploys-new-rust-backdoor-using-private-github-repositories-for-c2",
     "meta_description": "Ravie Lakshmanan Sep 18, 2026 Malware / Cyber Espionage The Pakistan-aligned threat group tracked as Transparent Tribe (aka APT36 and Earth...",
@@ -16981,6 +17044,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T21:17:46.756637+00:00"
   },
+  "news/ai-security/widespread-php-flaw-may-cause-many-site-outages-today": {
+    "slug": "news/ai-security/widespread-php-flaw-may-cause-many-site-outages-today",
+    "meta_description": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Widespread PHP Flaw May Cause Many Site Outages Today\",\n  \"description\": \"Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of...\",\n  \"datePublished\": \"2026-11-08T05:55:49.583652+00:00\",\n  \"dateModified\": \"2026-11-08T05:55:49.583652+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:26.877198+00:00"
+  },
   "news/ai-security/wikimedia-says-openai-agents-tried-to-compromise-etherpad-and-use-wiki-tools-as-proxies": {
     "slug": "news/ai-security/wikimedia-says-openai-agents-tried-to-compromise-etherpad-and-use-wiki-tools-as-proxies",
     "meta_description": "The Wikimedia Foundation, which hosts Wikipedia, has confirmed that it has discovered activity by rogue OpenAI agents on its platforms, including...",
@@ -18297,6 +18367,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-24T12:16:02.122055+00:00"
   },
+  "news/comp-journalism/eu-satellite-imagery-delayed-over-gaza-and-parts-of-west-bank-by-24-hours": {
+    "slug": "news/comp-journalism/eu-satellite-imagery-delayed-over-gaza-and-parts-of-west-bank-by-24-hours",
+    "meta_description": "Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Become a member and support our work here .",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"EU Satellite Imagery Delayed Over Gaza and Parts of West Bank by 24-hours\",\n  \"description\": \"Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Become a member and support our work here .\",\n  \"datePublished\": \"2026-11-08T05:56:19.619634+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:19.619634+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/news/2026/10/29/eu-satellite-imagery-delayed-over-gaza-and-parts-of-west-bank-by-24-hours\"\n  },\n  \"url\": \"https://www.bellingcat.com/news/2026/10/29/eu-satellite-imagery-delayed-over-gaza-and-parts-of-west-bank-by-24-hours\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:30.380190+00:00"
+  },
   "news/comp-journalism/eu-senior-policy-advisor": {
     "slug": "news/comp-journalism/eu-senior-policy-advisor",
     "meta_description": "The Sentry Remote/Brussels Open until filled The Sentry is seeking an experienced and dynamic EU Senior Policy Advisor to lead the organization’s...",
@@ -19270,6 +19347,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-03T03:02:17.536374+00:00"
   },
+  "news/comp-journalism/how-online-maps-lay-bare-the-us-military-bases-targeted-by-iran": {
+    "slug": "news/comp-journalism/how-online-maps-lay-bare-the-us-military-bases-targeted-by-iran",
+    "meta_description": "Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Become a member and support our work here .",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How Online Maps Lay Bare the US Military Bases Targeted by Iran\",\n  \"description\": \"Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Become a member and support our work here .\",\n  \"datePublished\": \"2026-11-08T05:56:16.955087+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:16.955087+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/news/2026/11/05/how-online-maps-lay-bare-the-us-military-bases-targeted-by-iran\"\n  },\n  \"url\": \"https://www.bellingcat.com/news/2026/11/05/how-online-maps-lay-bare-the-us-military-bases-targeted-by-iran\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:29.698171+00:00"
+  },
   "news/comp-journalism/how-paywall-plus-philanthropy-saved-the-philadelphia-inquirer": {
     "slug": "news/comp-journalism/how-paywall-plus-philanthropy-saved-the-philadelphia-inquirer",
     "meta_description": "Newspaper boxes outside the Philadelphia Inquirer Building in February 2009. Picture: William Thomas Cain/Getty Images The CEO of the Philadelphia...",
@@ -19451,6 +19535,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Independent set to take over running Standard website\",\n  \"description\": \"The Standard website homepage on 20 January 2026 Editorial and commercial staff on the Standard website have been told they could be transferred...\",\n  \"datePublished\": \"2026-01-20T14:15:41.894498+00:00\",\n  \"dateModified\": \"2026-01-20T14:15:41.894498+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/independent-set-to-take-over-running-standard-website\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/independent-set-to-take-over-running-standard-website\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:20.951270+00:00"
+  },
+  "news/comp-journalism/inside-the-secretive-contradictory-world-of-campaign-ads-funded-by-ai-super-pacs": {
+    "slug": "news/comp-journalism/inside-the-secretive-contradictory-world-of-campaign-ads-funded-by-ai-super-pacs",
+    "meta_description": "Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Become a member and support our work here .",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Inside the Secretive, Contradictory World of Campaign Ads Funded by AI Super PACs\",\n  \"description\": \"Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published . Become a member and support our work here .\",\n  \"datePublished\": \"2026-11-08T05:56:18.662552+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:18.662552+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/news/2026/11/02/ai-super-pacs-political-advertising\"\n  },\n  \"url\": \"https://www.bellingcat.com/news/2026/11/02/ai-super-pacs-political-advertising\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:28.891567+00:00"
   },
   "news/comp-journalism/inside-the-strike-the-us-munition-that-hit-a-residential-building-in-venezuela": {
     "slug": "news/comp-journalism/inside-the-strike-the-us-munition-that-hit-a-residential-building-in-venezuela",
@@ -20761,6 +20852,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-24T18:16:07.787971+00:00"
   },
+  "news/comp-journalism/press-forward-gave-20-million-to-205-local-newsrooms-over-two-years-heres-how-some-of-them-spent-it": {
+    "slug": "news/comp-journalism/press-forward-gave-20-million-to-205-local-newsrooms-over-two-years-heres-how-some-of-them-spent-it",
+    "meta_description": "Most local newsrooms in the U.S. have one thing in common: They need more money , and many dream of dollars they can use however they want .",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Press Forward gave $20 million to 205 local newsrooms over two years. Here’s how some of them spent it.\",\n  \"description\": \"Most local newsrooms in the U.S. have one thing in common: They need more money , and many dream of dollars they can use however they want .\",\n  \"datePublished\": \"2026-11-08T05:56:15.966684+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:15.966684+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/press-forward-gave-20-million-to-205-local-newsrooms-over-two-years-heres-how-some-of-them-spent-it\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/press-forward-gave-20-million-to-205-local-newsrooms-over-two-years-heres-how-some-of-them-spent-it\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:29.376826+00:00"
+  },
   "news/comp-journalism/press-gazette-expose-of-parasite-seo-firm-removed-from-google-results": {
     "slug": "news/comp-journalism/press-gazette-expose-of-parasite-seo-firm-removed-from-google-results",
     "meta_description": "Clickout Media uses what have been described as parasite SEO tactics A Press Gazette investigation into parasite SEO firm Clickout Media has been...",
@@ -21586,6 +21684,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Nieman Lab News-About-News Quiz, November 6, 2026\",\n  \"description\": \"What a week! Recap it with the second edition of the Nieman Lab News-About-News Quiz, your weekly incentive to keep up with the latest happenings...\",\n  \"datePublished\": \"2026-11-08T05:30:10.574200+00:00\",\n  \"dateModified\": \"2026-11-08T05:30:10.574200+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/the-nieman-lab-news-about-news-quiz-november-6-2026\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/the-nieman-lab-news-about-news-quiz-november-6-2026\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-08T05:30:21.558477+00:00"
+  },
+  "news/comp-journalism/the-nieman-lab-news-about-news-quiz-october-30-2026": {
+    "slug": "news/comp-journalism/the-nieman-lab-news-about-news-quiz-october-30-2026",
+    "meta_description": "For decades now, news publishers have been yammering on about “gamifying” the news. But what about gamifying the news about the news?",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Nieman Lab News-About-News Quiz, October 30, 2026\",\n  \"description\": \"For decades now, news publishers have been yammering on about “gamifying” the news. But what about gamifying the news about the news?\",\n  \"datePublished\": \"2026-11-08T05:56:15.681789+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:15.681789+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/10/the-nieman-lab-news-about-news-quiz-october-30-2026\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/10/the-nieman-lab-news-about-news-quiz-october-30-2026\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:56:30.049564+00:00"
   },
   "news/comp-journalism/the-non-profit-publisher-making-local-news-pay-in-london": {
     "slug": "news/comp-journalism/the-non-profit-publisher-making-local-news-pay-in-london",
