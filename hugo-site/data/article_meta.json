@@ -398,6 +398,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-08T00:16:18.518943+00:00"
   },
+  "news/ai-research/anylanguagemodel-1-0-one-year-of-local-models-on-apple-platforms": {
+    "slug": "news/ai-research/anylanguagemodel-1-0-one-year-of-local-models-on-apple-platforms",
+    "meta_description": "Last November, we introduced AnyLanguageModel on this blog: a drop-in replacement for Apple's Foundation Models framework that lets you choose the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms\",\n  \"description\": \"Last November, we introduced AnyLanguageModel on this blog: a drop-in replacement for Apple's Foundation Models framework that lets you choose the...\",\n  \"datePublished\": \"2026-11-08T05:23:19.388940+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:19.388940+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/anylanguagemodel-1-0\"\n  },\n  \"url\": \"https://huggingface.co/blog/anylanguagemodel-1-0\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:49.076895+00:00"
+  },
   "news/ai-research/apriel-1-6-15b-thinker-cost-efficient-frontier-multimodal-performance": {
     "slug": "news/ai-research/apriel-1-6-15b-thinker-cost-efficient-frontier-multimodal-performance",
     "meta_description": "We release Apriel-1.6-15b-Thinker , a 15-billion parameter multimodal reasoning model in ServiceNow’s Apriel SLM series which achieves SOTA...",
@@ -587,6 +594,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T20:57:12.959452+00:00"
   },
+  "news/ai-research/building-connections-across-the-research-infrastructure": {
+    "slug": "news/ai-research/building-connections-across-the-research-infrastructure",
+    "meta_description": "MIT.nano and the Northeast Microelectronics Coalition gathered facility leaders and technology professionals from across the nation to explore...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Building connections across the research infrastructure\",\n  \"description\": \"MIT.nano and the Northeast Microelectronics Coalition gathered facility leaders and technology professionals from across the nation to explore...\",\n  \"datePublished\": \"2026-11-08T05:23:20.334670+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:20.334670+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103\"\n  },\n  \"url\": \"https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:50.225826+00:00"
+  },
   "news/ai-research/can-ai-help-predict-which-heart-failure-patients-will-worsen-within-a-year": {
     "slug": "news/ai-research/can-ai-help-predict-which-heart-failure-patients-will-worsen-within-a-year",
     "meta_description": "Characterized by weakened or damaged heart musculature, heart failure results in the gradual buildup of fluid in a patient’s lungs, legs, feet,...",
@@ -614,6 +628,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Chris Bourg named vice provost and Barbara K. Ostrom (1978) Director of the MIT Libraries\",\n  \"description\": \"Chris Bourg, who has served as director of the MIT Libraries since 2015, has been named vice provost and Barbara K. Ostrom (1978) Director of the...\",\n  \"datePublished\": \"2026-10-08T07:02:12.653146+00:00\",\n  \"dateModified\": \"2026-10-08T07:02:12.653146+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/chris-bourg-named-vice-provost-and-barbara-ostrom-director-mit-libraries-1006\"\n  },\n  \"url\": \"https://news.mit.edu/2026/chris-bourg-named-vice-provost-and-barbara-ostrom-director-mit-libraries-1006\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-08T07:02:49.784660+00:00"
+  },
+  "news/ai-research/clearing-up-a-robots-fuzzy-memory": {
+    "slug": "news/ai-research/clearing-up-a-robots-fuzzy-memory",
+    "meta_description": "A new system identifies and corrects unreliable object descriptions stored in a robot’s memory, improving the robot’s ability to interact with its...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Clearing up a robot’s fuzzy memory\",\n  \"description\": \"A new system identifies and corrects unreliable object descriptions stored in a robot’s memory, improving the robot’s ability to interact with its...\",\n  \"datePublished\": \"2026-11-08T05:23:20.075002+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:20.075002+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105\"\n  },\n  \"url\": \"https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:48.727911+00:00"
   },
   "news/ai-research/code-concepts-a-large-scale-synthetic-dataset-generated-from-programming-concept-seeds": {
     "slug": "news/ai-research/code-concepts-a-large-scale-synthetic-dataset-generated-from-programming-concept-seeds",
@@ -1497,6 +1518,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-21T02:16:16.149618+00:00"
   },
+  "news/ai-research/how-to-predict-the-behavior-of-molecules-from-scant-data": {
+    "slug": "news/ai-research/how-to-predict-the-behavior-of-molecules-from-scant-data",
+    "meta_description": "A machine-learning approach called CheMeleon provides a practical way to develop new drugs or other molecules with much less detailed, expensive...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How to predict the behavior of molecules from scant data\",\n  \"description\": \"A machine-learning approach called CheMeleon provides a practical way to develop new drugs or other molecules with much less detailed, expensive...\",\n  \"datePublished\": \"2026-11-08T05:23:19.856832+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:19.856832+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/how-to-predict-molecule-behavior-with-scant-data-1106\"\n  },\n  \"url\": \"https://news.mit.edu/2026/how-to-predict-molecule-behavior-with-scant-data-1106\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:49.412560+00:00"
+  },
   "news/ai-research/how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulation-and-learning-workflows": {
     "slug": "news/ai-research/how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulation-and-learning-workflows",
     "meta_description": "Classic MuJoCo provides fast CPU-based robot simulation for developing, testing, and controlling robots and it can parallelize sampling across CPU...",
@@ -1881,6 +1909,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space\",\n  \"description\": \"Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...\",\n  \"datePublished\": \"2026-10-12T23:17:45.244853+00:00\",\n  \"dateModified\": \"2026-10-12T23:17:45.244853+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://importai.substack.com/p/import-ai-476-creativity-and-rsi\"\n  },\n  \"url\": \"https://importai.substack.com/p/import-ai-476-creativity-and-rsi\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-12T23:18:44.443772+00:00"
+  },
+  "news/ai-research/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun": {
+    "slug": "news/ai-research/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun",
+    "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Import AI 477: In which I tell the IMF the Singularity has begun\",\n  \"description\": \"Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...\",\n  \"datePublished\": \"2026-11-08T05:23:19.646657+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:19.646657+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://importai.substack.com/p/import-ai-477-in-which-i-tell-the\"\n  },\n  \"url\": \"https://importai.substack.com/p/import-ai-477-in-which-i-tell-the\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:49.747239+00:00"
   },
   "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text": {
     "slug": "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text",
@@ -10037,6 +10072,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T02:42:54.529469+00:00"
   },
+  "news/ai-security/isc-stormcast-for-thursday-october-15th-2026-https-isc-sans-edu-podcastdetail-10138-thu-oct-15th": {
+    "slug": "news/ai-security/isc-stormcast-for-thursday-october-15th-2026-https-isc-sans-edu-podcastdetail-10138-thu-oct-15th",
+    "meta_description": "ISC Stormcast For Thursday, October 15th, 2026 &lt;https://isc.sans.edu/podcastdetail/10138&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Thursday, October 15th, 2026 https://isc.sans.edu/podcastdetail/10138, (Thu, Oct 15th)\",\n  \"description\": \"ISC Stormcast For Thursday, October 15th, 2026 &lt;https://isc.sans.edu/podcastdetail/10138&gt;\",\n  \"datePublished\": \"2026-11-08T05:23:06.879995+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:06.879995+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33428\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33428\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:48.347075+00:00"
+  },
   "news/ai-security/isc-stormcast-for-thursday-october-1st-2026-https-isc-sans-edu-podcastdetail-10118-thu-oct-1st": {
     "slug": "news/ai-security/isc-stormcast-for-thursday-october-1st-2026-https-isc-sans-edu-podcastdetail-10118-thu-oct-1st",
     "meta_description": "ISC Stormcast For Thursday, October 1st, 2026 &lt;https://isc.sans.edu/podcastdetail/10118&gt;",
@@ -12935,6 +12977,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:41.112931+00:00"
   },
+  "news/ai-security/orphaned-vba-projects-inside-dwg-files-wed-oct-14th": {
+    "slug": "news/ai-security/orphaned-vba-projects-inside-dwg-files-wed-oct-14th",
+    "meta_description": "Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg). In a nutshell: the VBA code is stored inside an OLE...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Orphaned VBA Projects Inside DWG Files, (Wed, Oct 14th)\",\n  \"description\": \"Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg). In a nutshell: the VBA code is stored inside an OLE...\",\n  \"datePublished\": \"2026-11-08T05:23:07.629137+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:07.629137+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33420\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33420\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:48.014686+00:00"
+  },
   "news/ai-security/ousted-south-korean-leader-yoon-indicted-over-drone-flights": {
     "slug": "news/ai-security/ousted-south-korean-leader-yoon-indicted-over-drone-flights",
     "meta_description": "South Korea's ex-leader Yoon is indicted for allegedly orchestrating drone flights to provoke North Korea and justify declaring martial law in late 2024.",
@@ -13018,6 +13067,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation\",\n  \"description\": \"Ravie Lakshmanan May 30, 2026 Vulnerability / Network Security Palo Alto Networks has warned that a recently disclosed medium-severity security...\",\n  \"datePublished\": \"2026-06-01T00:57:41.005159+00:00\",\n  \"dateModified\": \"2026-06-01T00:57:41.005159+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-01T00:58:50.273029+00:00"
+  },
+  "news/ai-security/panchan-s-mining-island-guest-diary-wed-oct-14th": {
+    "slug": "news/ai-security/panchan-s-mining-island-guest-diary-wed-oct-14th",
+    "meta_description": "This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu [BACS program] Crypto mining malware has been active and spreading...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Panchan's Mining Island &#x5b;Guest Diary&#x5d;, (Wed, Oct 14th)\",\n  \"description\": \"This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu [BACS program] Crypto mining malware has been active and spreading...\",\n  \"datePublished\": \"2026-11-08T05:23:06.149644+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:06.149644+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33426\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33426\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:47.211958+00:00"
   },
   "news/ai-security/parallels-desktop-flaw-lets-non-admin-mac-users-gain-root-but-intel-macs-can-t-install-fix": {
     "slug": "news/ai-security/parallels-desktop-flaw-lets-non-admin-mac-users-gain-root-but-intel-macs-can-t-install-fix",
@@ -14369,6 +14425,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SloppyLemming Targets Pakistan and Bangladesh Governments Using Dual Malware Chains\",\n  \"description\": \"Ravie Lakshmanan Mar 03, 2026 Malware / Phishing The threat activity cluster known as SloppyLemming has been attributed to a fresh set of attacks...\",\n  \"datePublished\": \"2026-03-09T05:30:35.585529+00:00\",\n  \"dateModified\": \"2026-03-09T05:30:35.585529+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T05:31:15.746292+00:00"
+  },
+  "news/ai-security/small-agents-smaller-blast-radius-controlling-what-ai-can-do-fri-oct-16th": {
+    "slug": "news/ai-security/small-agents-smaller-blast-radius-controlling-what-ai-can-do-fri-oct-16th",
+    "meta_description": "I believe the cybersecurity industry may be approaching AI security the wrong way. AI agents are becoming more powerful every day.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)\",\n  \"description\": \"I believe the cybersecurity industry may be approaching AI security the wrong way. AI agents are becoming more powerful every day.\",\n  \"datePublished\": \"2026-11-08T05:23:05.307964+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:05.307964+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33430\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33430\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:47.620389+00:00"
   },
   "news/ai-security/small-ai-models-could-soon-self-replicate-on-iot-devices-anthropic-warns": {
     "slug": "news/ai-security/small-ai-models-could-soon-self-replicate-on-iot-devices-anthropic-warns",
@@ -17170,6 +17233,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-16T08:16:11.510194+00:00"
   },
+  "news/comp-journalism/ai-answer-engines-bypass-local-news-outlets-going-straight-to-official-sources": {
+    "slug": "news/comp-journalism/ai-answer-engines-bypass-local-news-outlets-going-straight-to-official-sources",
+    "meta_description": "Sussex crime news query ChatGPT Research has shown that popular AI chatbots such as ChatGPT and Google Gemini often ignore local publishers, even...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI answer engines bypass local news outlets going straight to official sources\",\n  \"description\": \"Sussex crime news query ChatGPT Research has shown that popular AI chatbots such as ChatGPT and Google Gemini often ignore local publishers, even...\",\n  \"datePublished\": \"2026-11-08T05:23:36.189069+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:36.189069+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/ai-answer-engines-bypass-local-news-outlets-going-straight-to-official-sources\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/ai-answer-engines-bypass-local-news-outlets-going-straight-to-official-sources\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:51.576362+00:00"
+  },
   "news/comp-journalism/ai-authentication-tools-are-built-without-adequate-journalist-input-new-report-finds": {
     "slug": "news/comp-journalism/ai-authentication-tools-are-built-without-adequate-journalist-input-new-report-finds",
     "meta_description": "It has never been easier (or cheaper) to fake and alter media. The evidence that journalists rely on to verify facts — photographs, videos,...",
@@ -19172,6 +19242,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-04T03:33:04.957723+00:00"
   },
+  "news/comp-journalism/iconic-media-buys-publisher-of-northern-ireland-glossy-ulster-tatler": {
+    "slug": "news/comp-journalism/iconic-media-buys-publisher-of-northern-ireland-glossy-ulster-tatler",
+    "meta_description": "Ulster Tatler front cover for October 2026 Iconic Media has bought the publisher of Northern Ireland monthly lifestyle and society magazine Ulster...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Iconic Media buys publisher of Northern Ireland glossy Ulster Tatler\",\n  \"description\": \"Ulster Tatler front cover for October 2026 Iconic Media has bought the publisher of Northern Ireland monthly lifestyle and society magazine Ulster...\",\n  \"datePublished\": \"2026-11-08T05:23:41.075296+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:41.075296+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/the-wire/media-mergers-news-tracker/iconic-media-buys-publisher-of-northern-ireland-glossy-ulster-tatler\"\n  },\n  \"url\": \"https://pressgazette.co.uk/the-wire/media-mergers-news-tracker/iconic-media-buys-publisher-of-northern-ireland-glossy-ulster-tatler\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:50.916123+00:00"
+  },
   "news/comp-journalism/identifying-the-crypto-entrepreneur-linked-to-popular-forum-trading-in-leaked-nudes-of-women": {
     "slug": "news/comp-journalism/identifying-the-crypto-entrepreneur-linked-to-popular-forum-trading-in-leaked-nudes-of-women",
     "meta_description": "This investigation is a collaboration between Bellingcat and New Zealand news site The Press. You can read The Press’ piece here .",
@@ -19465,6 +19542,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Lethal Firing Orders at Protests, Besieged Bawm Community, an Island Habitat in Peril: 2025’s Top Investigative Stories from Bangladesh\",\n  \"description\": \"Following the 2024 uprising and the fall of the Sheikh Hasina government, an interim administration assumed power in Bangladesh.\",\n  \"datePublished\": \"2026-01-12T10:15:42.847396+00:00\",\n  \"dateModified\": \"2026-01-12T10:15:42.847396+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://gijn.org/stories/editors-picks-2025-bangladesh\"\n  },\n  \"url\": \"https://gijn.org/stories/editors-picks-2025-bangladesh\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:01.082756+00:00"
+  },
+  "news/comp-journalism/lifestyle-and-news-site-for-british-muslims-hyphen-set-to-close": {
+    "slug": "news/comp-journalism/lifestyle-and-news-site-for-british-muslims-hyphen-set-to-close",
+    "meta_description": "Hyphen homepage Hyphen, a news outlet focused on Muslim life in the UK and Europe, is set to close, affecting around 18 journalists.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Lifestyle and news site for British Muslims Hyphen set to close\",\n  \"description\": \"Hyphen homepage Hyphen, a news outlet focused on Muslim life in the UK and Europe, is set to close, affecting around 18 journalists.\",\n  \"datePublished\": \"2026-11-08T05:23:37.161947+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:37.161947+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/digital-journalism/lifestyle-and-news-site-for-british-muslims-hyphen-set-to-close\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/digital-journalism/lifestyle-and-news-site-for-british-muslims-hyphen-set-to-close\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:51.903784+00:00"
   },
   "news/comp-journalism/like-nailing-jell-o-to-a-wall-why-unions-are-struggling-to-protect-journalists-rights-in-the-age-of-ai": {
     "slug": "news/comp-journalism/like-nailing-jell-o-to-a-wall-why-unions-are-struggling-to-protect-journalists-rights-in-the-age-of-ai",
@@ -20761,6 +20845,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-09T00:12:47.108507+00:00"
   },
+  "news/comp-journalism/reform-says-it-has-reported-itv-to-the-police-over-undercover-investigation": {
+    "slug": "news/comp-journalism/reform-says-it-has-reported-itv-to-the-police-over-undercover-investigation",
+    "meta_description": "Reform UK’s Zia Yusuf. Picture: Gareth Fuller/PA Wire Reform UK said it has reported ITV to the police following the broadcaster’s expose which...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Reform says it has reported ITV to the police over undercover investigation\",\n  \"description\": \"Reform UK’s Zia Yusuf. Picture: Gareth Fuller/PA Wire Reform UK said it has reported ITV to the police following the broadcaster’s expose which...\",\n  \"datePublished\": \"2026-11-08T05:23:39.988984+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:39.988984+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/reform-says-it-has-reported-itv-to-the-police-over-undercover-investigation\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/reform-says-it-has-reported-itv-to-the-police-over-undercover-investigation\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:51.248418+00:00"
+  },
   "news/comp-journalism/remember-that-raid-on-a-small-town-kansas-newspaper-the-city-has-agreed-to-pay-one-reporter-850000": {
     "slug": "news/comp-journalism/remember-that-raid-on-a-small-town-kansas-newspaper-the-city-has-agreed-to-pay-one-reporter-850000",
     "meta_description": "On August 11, 2023, local law enforcement seized electronics and reporting materials from the Marion County Record in a raid that provoked a...",
@@ -21656,6 +21747,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"UK-based sports publisher cuts 60 staff due to Google updates\",\n  \"description\": \"Homepages for NBA Analysis and United In Focus A UK-based sports website publisher has cut 60 staff since September as a result of falling Google...\",\n  \"datePublished\": \"2025-12-27T12:03:43.638461+00:00\",\n  \"dateModified\": \"2025-12-27T12:03:43.638461+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/uk-based-sports-publisher-cuts-60-staff-due-to-google-updates\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/uk-based-sports-publisher-cuts-60-staff-due-to-google-updates\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:11.620368+00:00"
+  },
+  "news/comp-journalism/uk-competition-watchdog-very-alive-to-risks-from-sweeping-meta-scraping-change": {
+    "slug": "news/comp-journalism/uk-competition-watchdog-very-alive-to-risks-from-sweeping-meta-scraping-change",
+    "meta_description": "Will Hayter Update 23 October: Meta now appears to have delayed the terms and conditions change to 20 November. News Media Association chief...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"UK competition watchdog ‘very alive’ to risks from sweeping Meta scraping change\",\n  \"description\": \"Will Hayter Update 23 October: Meta now appears to have delayed the terms and conditions change to 20 November. News Media Association chief...\",\n  \"datePublished\": \"2026-11-08T05:23:38.542981+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:38.542981+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/uk-competition-chief-very-alive-to-risks-from-sweeping-meta-scraping-change\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/uk-competition-chief-very-alive-to-risks-from-sweeping-meta-scraping-change\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-08T05:23:50.597984+00:00"
   },
   "news/comp-journalism/uk-government-backs-down-on-plan-to-weaken-copyright-in-favour-of-ai-firms": {
     "slug": "news/comp-journalism/uk-government-backs-down-on-plan-to-weaken-copyright-in-favour-of-ai-firms",

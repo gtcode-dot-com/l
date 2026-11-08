@@ -60,7 +60,7 @@
     {{ end }}
     {{ $pageDescription = partial "seo/plaintext.html" (dict "value" $pageDescription "max" $descMax) }}
     <meta name="description" content="{{ $pageDescription }}" />
-    <meta name="author" content="{{ .Site.Params.author }}" />
+    <meta name="author" content="{{ $active.Params.author | default .Site.Params.author }}" />
     {{ block "pagination-head" . }}{{ end }}
     {{ $headPaginator := .Scratch.Get "_head_paginator" }}
     {{ $newsIndexSyndicated := .Site.Params.news_index_syndicated | default false }}

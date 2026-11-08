@@ -2,7 +2,7 @@
 title: "The Unlearned Pattern"
 subtitle: "Quantum memory, distant learning, and the reach of acquired history"
 date: "2026-11-07T10:00:00-10:00"
-lastmod: "2026-11-07T18:56:35-10:00"
+lastmod: "2026-11-07T19:21:55-10:00"
 draft: false
 author: "GTCode.com Research"
 description: "Can learning in one place change what an untrained mind discovers elsewhere? A research proposal for testing the reach of acquired history."
@@ -38,8 +38,6 @@ meta_keywords:
   - no-signalling
   - causal inference with interference
   - prospective coincidence research
-  - Conditional Ontological Agency Theory
-  - global boundary conditions
 
 # Hero / Open Graph
 images:
@@ -59,7 +57,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-research"
 article_published_time: "2026-11-07T10:00:00-10:00"
-article_modified_time: "2026-11-07T18:56:35-10:00"
+article_modified_time: "2026-11-07T19:21:55-10:00"
 article_section: "Articles"
 article_tags:
   - "Quantum Memory"
@@ -90,8 +88,8 @@ structured_data_webpage:
 ai_agent_meta:
   digest_source: raw_body
   # SHA-256 of UTF-8 body bytes after the closing front-matter delimiter, including whitespace.
-  content_digest: "sha256:7d7160e473eb4355df46221bb463d9d3b7eea3ee36dabbd7683889095eba3654"
-  generated_at: '2026-11-07T18:56:35-10:00'
+  content_digest: "sha256:e55141bbb71f25e39950cef2fdd9b75522b0ee490415d5e944f234d1145ad131"
+  generated_at: '2026-11-07T19:21:55-10:00'
   prompt_version: v2026-11-07-unlearned-pattern-1
 ai_agent_note: |
   ATTN AI Agent:
@@ -120,7 +118,11 @@ This article proposes a program to test that possibility, discover which kinds o
 
 The question extends [*Where Choice Enters the World*](https://gtcode.com/articles/where-choice-enters-the-world/) and [*What the Universe Remembers*](https://gtcode.com/articles/what-the-universe-remembers/). The first developed Conditional Ontological Agency Theory (COAT) to examine agency and the consequences of earlier choices; the second considered physical memory and the possibility that authorship concerns a whole history. Here we ask how far a history can reach. That question permits experiments before we settle whether consciousness has powers beyond ordinary biological control.[^1][^2]
 
+The experiment does not test COAT’s claims about authentic authorship or global selection. It tests a distinct claim about acquired history, motivated by questions the earlier essays left open.
+
 ## Where the past is kept
+
+The results below establish ways that physical systems retain and expose their own histories. They supply methods for investigating a carrier, but no evidence that learning transfers between isolated people. The distant-learning proposal stands or falls on its separate experiment.
 
 A system can lose an obvious record while retaining a less accessible one. Physics offers several ways to investigate the difference: separate persistence from successful readout, disturb a suspected carrier, and measure what survives an attempted erasure. These methods would remain useful to the proposed research even if every effect eventually yielded to an ordinary physical explanation.
 
@@ -238,7 +240,7 @@ An influence too weak to affect an uninstructed first choice might emerge as the
 
 The interpretation would follow the endpoint. A positive learning-curve result would support the declared learning claim while leaving a failed test of uninstructed content failed.
 
-## Two formal commitments
+## An isolation result and a candidate response model
 
 The experiment asks mathematics to do two jobs: state what ordinary isolation predicts, and specify an additional historical influence precisely enough to test. The isolation proposition applies a standard result. The response law that follows is a conjecture introduced here.
 
@@ -272,7 +274,7 @@ Suppose a receiver encounters a diagnostic choice $j$ at time $t$. Let $p_j(t)$ 
 
 $$
 \begin{aligned}
-H_j(t)&=\sum_{e:\,t_e<t}
+H_j(t)&=\sum_{e:\,t_e\lt t}
 z_{ej}\,w(G_e,G_j)\,k(t-t_e),\\
 \operatorname{logit}p_j(t)&=a_j(t)+\lambda H_j(t).
 \end{aligned}
@@ -290,7 +292,7 @@ A lasting accumulation model uses $k(\Delta t)=1$. A fading-memory model weights
 
 Randomization can identify the primary assignment contrast without fitting this kernel. Identifying unique values of $\lambda$, $w$, and $k$ asks more: a restricted baseline, separately varied dose, lag, and structure, and predictions on held-out observations. Normalization fixes arbitrary scale but does not solve that problem. An unrestricted $a_j(t)$ could absorb the entire apparent historical contribution. Nor can the analysis treat earlier receiver responses as harmless adjustments if those responses may already carry the influence under study.
 
-Ordinary task pilots would establish learnability and measurement, not estimate an unestablished distant effect. We would declare a small set of candidate kernels before the main run. If discovery-stage data revealed a signal, response mapping could estimate its properties; those choices would then be frozen for held-out tests and independent replication with new families. Transformations and training sequences excluded from the fit would test whether the model predicts more than the data used to construct it.
+Ordinary task pilots would establish learnability and measurement, not estimate an unestablished distant effect. Before source assignments were disclosed, we would fix the baseline specification and a declared set of candidate kernels and similarity weights. Only $\lambda$ would be estimated for each candidate from confirmatory outcomes, with multiplicity handled in the registered analysis. If discovery-stage data revealed a signal, response mapping could estimate its properties; those choices would then be frozen for held-out tests and independent replication with new families. Transformations and training sequences excluded from the fit would test whether the model predicts more than the data used to construct it.
 
 A completed session is also different from an assigned one. The protocol would randomize the number and kind of sessions offered, record completion and acquisition separately, and retain noncompliance in the primary comparison of assigned programs. A kernel fitted to completed sessions describes realized history and would be secondary unless a fixed, preregistered replacement rule ensured the assigned completed dose. Watching a stimulus, solving a problem, reaching a criterion, and executing a familiar response remain distinct candidate histories. Success-only analyses would be secondary too, because mastery itself is not randomized.
 
@@ -313,13 +315,13 @@ Recovering arbitrary content would give a proposed historical influence obligati
 
 ## Building the experiment
 
-The program would bring together several institutions and commit resources to independent replication before the first main outcome. Its source populations would need enough exposure to test a claim about accumulated experience, while its receiver populations would need enough independent assigned histories to distinguish a small effect from task variation.
+We propose a staged program whose main round would begin only after feasibility review. Before that round, participating institutions would need a costed recruitment plan, demonstrated source-session throughput, task validation, and simulation-based sample sizes, with resources committed to independent replication before the first main outcome. Its source populations would need enough exposure to test a claim about accumulated experience, while its receiver populations would need enough independent assigned histories to distinguish a small effect from task variation.
 
-An initial budget would allow 240–480 independently generated and randomized families per main round, tens of thousands of receiver first responses, and tens of thousands to several hundred thousand source sessions. A high-dose family might receive a thousand sessions distributed across many people. Separate comparisons would distinguish more learners from more repetitions by each learner. These are budgeting ranges. Final allocations would follow simulations using pilot estimates of task, participant, and site variation, targeting at least 90% power for the primary comparison and checking sensitivity to stronger dependence. If that target proved out of reach, recruitment or the number of independently assigned families would have to increase before the main study began.[^31]
+Provisional planning ranges are 240–480 independently generated and randomized families per main round, tens of thousands of receiver first responses, and tens of thousands to several hundred thousand source sessions. A high-dose family might receive a thousand sessions distributed across many people. Separate comparisons would distinguish more learners from more repetitions by each learner. These ranges remain unvalidated for the two-sided test proposed below. Final allocations would require new simulations using pilot estimates of task, participant, and site variation and checking sensitivity to stronger dependence. At least 90% power for the primary comparison would be a design requirement, not a claim about the current ranges. If that target proved out of reach, recruitment or the number of independently assigned families would have to increase before the main study began.[^31]
 
 The primary estimate would use source-trained families at the prespecified high assigned dose: their equally weighted mean source-policy agreement on the first diagnostic choice in the original presentation, minus one half. With balanced source signs, isolation gives expected agreement of one half even if receivers ordinarily prefer one exit. We would provisionally design for a two-percentage-point increase in agreement. Under those balanced signs, that corresponds to a four-percentage-point difference in raw positive-option choice between the source-positive and source-negative assignments. These numbers specify sensitivity, not an expected effect or an estimate borrowed from resonance studies. The task family carries the randomized assignment; ten thousand responses to a single assigned rule remain one assigned history.
 
-Matched untrained families would receive concealed shadow policies for scoring, with training versus no training also randomized. A claim that source training matters would require a direct trained-versus-untrained contrast. Significance in the trained group and an inconclusive result in the control group would not establish that contrast. The primary causal claim concerns assignment to a source program; which part of that program matters, including the necessity of human learning, would require subsequent comparisons.
+Matched untrained families would receive concealed shadow policies for scoring, with training versus no training also randomized. A claim that source training matters would require a direct trained-versus-untrained contrast. Significance in the trained group and an inconclusive result in the control group would not establish that contrast. The primary causal claim concerns assignment to a source program, without identifying the source learner as its carrier. Which part of that program matters, including the necessity of human learning or later access to the assignment, would require subsequent comparisons, including the post-readout assignment control described below.
 
 The first main round would concentrate resources on substantial source exposure and the distinction between structural and visual resemblance. The latter needs its own powered interaction test: does the source-sign effect differ between a new presentation that preserves the graph and a familiar presentation with changed relations? Separate significance decisions in those conditions cannot answer the interaction question. Dose, lag, temporal reversal, and source-type comparisons would receive separately powered rounds instead of dividing the initial families among every combination.
 
@@ -345,6 +347,8 @@ Calibration would use separate families given weak, deliberate ordinary informat
 
 Receiver records would be sealed before the assignment key was released for scoring. A cryptographic commitment can establish when a record became fixed; it cannot establish that the record is truthful or that information never entered earlier. Independent implementation, custody, and observation would address those questions separately.
 
+Sealing records before disclosure blocks later ordinary communication from changing those recorded responses. It does not exclude a proposed anomalous influence attributed to someone who learns the assignment afterward, including an analyst at unsealing. The post-readout source-assignment control below probes accounts in which later learning can align an earlier record with the assigned policy; any such account would need to state its prediction for that control.
+
 ### Accounting for accumulated experience
 
 A history-dependent hypothesis changes the meaning of a control. Tomorrow's supposedly untreated task may already have been trained today. Receiver exposure can contribute new experience, and reusing materials in replication may change the quantity being tested.
@@ -369,11 +373,11 @@ The ordinary source-first experiment is timelike: light and conventional message
 
 A registered report would place the protocol and analysis before reviewers while the outcome was unknown.[^34] Proponents of historical transfer, skeptical experimentalists, learning researchers, statisticians, and information-leakage specialists would help design it. Cogitate provides a recent example of competing theoretical commitments examined through a shared preregistered experiment.[^35] Such collaboration gives disagreement a role in constructing the test, before there is a result to dispute.
 
-The protocol would declare its primary contrast and positive direction, exclusions, missing-data treatment, stopping rule, and analysis. Structural transfer, learning interference, source type, and lag comparisons would have an explicit order and multiplicity policy. Neural decoding or an alternative similarity metric discovered afterward could motivate another study. They could not replace a failed declared endpoint. Selecting an analysis on the same observations used to judge it creates a well-established inference problem.[^36][^37]
+The protocol would declare its primary contrast, the postulate’s predicted positive direction, the two-sided test, exclusions, missing-data treatment, stopping rule, and analysis. Structural transfer, learning interference, source type, and lag comparisons would have an explicit order and multiplicity policy. Neural decoding or an alternative similarity metric discovered afterward could motivate another study. They could not replace a failed declared endpoint. Selecting an analysis on the same observations used to judge it creates a well-established inference problem.[^36][^37]
 
-For the first main round, we propose a one-sided randomization threshold of $p\leq0.005$ in the preregistered positive direction, accompanied by an effect estimate and interval. Advancing beyond that round would also require the assigned sign to track responses across new families, an information audit, and replication under independent implementation. Leaving out each site in turn would assess dominance and heterogeneity, not demand significance in every smaller subset. A structural-transfer claim would require replication of its specific interaction.
+For the first main round, we propose a two-sided randomization threshold of $p\leq0.005$, accompanied by a signed effect estimate and a two-sided 99.5% confidence interval constructed under the registered analysis. Alignment would support the postulate’s positive coupling; anti-alignment would contradict that direction. Advancing beyond the initial finding would require an information audit and replication of the same signed assignment effect across new families under independent implementation. Because anti-alignment was not the predicted direction, a negative-direction finding would require a newly registered replication with that direction declared before it could support further mechanism or structural-transfer claims. Leaving out each site in turn would assess dominance and heterogeneity, not demand significance in every smaller subset. A structural-transfer claim would also require replication of its specific interaction.
 
-An estimate too imprecise to distinguish zero from the design target would call for a newly registered study or an extension already allowed by a preplanned sequential rule. It would not justify collecting indefinitely until significance appeared. A confidence interval whose upper endpoint fell below the two-percentage-point target, at the preregistered coverage, would exclude that target under the analysis's assumptions. A reproducible smaller effect might still warrant work if its arbitrary content were secure. Repeated failures at adequate precision would end this version of the proposal in its declared task domain and dose range. Changing the relevant similarity afterward would begin a new hypothesis and a new public record.
+An estimate too imprecise to distinguish zero from the design target would call for a newly registered study or an extension already allowed by a preplanned sequential rule. It would not justify collecting indefinitely until significance appeared. A two-sided 99.5% confidence interval lying wholly between minus and plus two percentage points would exclude effects of the design-target magnitude in either direction under the analysis’s assumptions. An interval excluding only the positive target would leave a negative effect of that magnitude unresolved. A reproducible smaller effect might still warrant work if its arbitrary content were secure. Repeated failures at adequate precision would end this version of the proposal in its declared task domain and dose range. Changing the relevant similarity afterward would begin a new hypothesis and a new public record.
 
 ## From a signal to a cause
 
@@ -439,7 +443,7 @@ COAT distinguishes present control from inherited consequences. Decisions can re
 
 ## What the program would change
 
-We propose a first three-year cycle, with its schedule contingent on recruitment, facilities, and task validation. It would begin with learnable families, verified source acquisition, concealed assignments, and simulated statistical sensitivity. The main round would test arbitrary content at substantial source doses. Independent replication would use new families, code, and investigators. Mechanism studies would pursue signatures that repeated, while the known-memory experiments developed ways to locate a history and test its readability.
+We propose a staged program whose main round would begin only after the feasibility review described above. Its schedule would follow demonstrated recruitment and training capacity, available facilities, and the simulation-based allocations. It would begin with learnable families, verified source acquisition, concealed assignments, and simulated statistical sensitivity. The main round would test arbitrary content at substantial source doses. Independent replication would use new families, code, and investigators. Mechanism studies would pursue signatures that repeated, while the known-memory experiments developed ways to locate a history and test its readability.
 
 This is proposed work. Human and tissue experiments would require appropriate institutional review, and participant materials would describe learning tasks without promising extraordinary abilities. Protocols, code, results, and stimuli after their final use would be released for independent examination while protecting participants.
 
