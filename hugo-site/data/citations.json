@@ -1408,7 +1408,7 @@
     "author_family": "GTCode.com Research",
     "author_given": "",
     "date": "2026-11-07",
-    "lastmod": "2026-11-07",
+    "lastmod": "2026-11-08",
     "abstract": "Can learning in one place change what an untrained mind discovers elsewhere? A research proposal for testing the reach of acquired history.",
     "canonical": "https://gtcode.com/articles/the-unlearned-pattern/",
     "section": "articles",
@@ -1432,7 +1432,7 @@
     "repo_url": "https://github.com/GTCode-Press/publications/tree/main/articles/the-unlearned-pattern",
     "license_url": "https://gtcode.com/policies/content-use/",
     "bibtex_key": "gtcodecomresearch2026unlearnedpattern",
-    "bibtex": "@article{gtcodecomresearch2026unlearnedpattern,\n  author  = {{GTCode.com Research}},\n  title   = {The Unlearned Pattern},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = nov,\n  url     = {https://gtcode.com/articles/the-unlearned-pattern/},\n  note    = {Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/the-unlearned-pattern}}\n}",
+    "bibtex": "@article{gtcodecomresearch2026unlearnedpattern,\n  author  = {{GTCode.com Research}},\n  title   = {The Unlearned Pattern},\n  journal = {GTCode.com Articles},\n  year    = {2026},\n  month   = nov,\n  url     = {https://gtcode.com/articles/the-unlearned-pattern/},\n  note    = {Last modified 2026-11-08; Archived at \\url{https://github.com/GTCode-Press/publications/tree/main/articles/the-unlearned-pattern}}\n}",
     "apa": "GTCode.com Research (2026, November 7). The Unlearned Pattern. *GTCode.com Articles*. https://gtcode.com/articles/the-unlearned-pattern/ (Archived at https://github.com/GTCode-Press/publications/tree/main/articles/the-unlearned-pattern)",
     "chicago": "GTCode.com Research. \"The Unlearned Pattern.\" *GTCode.com Articles*, November 7, 2026. https://gtcode.com/articles/the-unlearned-pattern/. Archived at https://github.com/GTCode-Press/publications/tree/main/articles/the-unlearned-pattern."
   },

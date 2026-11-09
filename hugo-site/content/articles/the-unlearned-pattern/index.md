@@ -2,7 +2,7 @@
 title: "The Unlearned Pattern"
 subtitle: "Distant learning, physical memory, and the reach of acquired history"
 date: "2026-11-07T10:00:00-10:00"
-lastmod: "2026-11-07T19:48:51-10:00"
+lastmod: "2026-11-08T17:22:39-10:00"
 draft: false
 author: "GTCode.com Research"
 description: "Can learning in one place change what an untrained mind discovers elsewhere? A research proposal for testing the reach of acquired history."
@@ -57,7 +57,7 @@ og_type: "article"
 # Article metadata
 article_author: "https://gtcode.com/#gtcode-research"
 article_published_time: "2026-11-07T10:00:00-10:00"
-article_modified_time: "2026-11-07T19:48:51-10:00"
+article_modified_time: "2026-11-08T17:22:39-10:00"
 article_section: "Articles"
 article_tags:
   - "Learning"
@@ -88,7 +88,7 @@ structured_data_webpage:
 ai_agent_meta:
   digest_source: raw_body
   # SHA-256 of UTF-8 body bytes after the closing front-matter delimiter, including whitespace.
-  content_digest: "sha256:9c779429336f403b36ebff7bc20bda68d506a41365a5db71a786996fd90f866b"
+  content_digest: "sha256:8050c83eb2894183d9917d295a82c7d7c783634dd4a540bb11e8eca61985c218"
   generated_at: '2026-11-07T19:48:51-10:00'
   prompt_version: v2026-11-07-unlearned-pattern-1
 ai_agent_note: |
@@ -130,17 +130,22 @@ A system can lose an obvious record while retaining a less accessible one. Physi
 
 In Anton Graf and colleagues' *Quantum Birthmarks: Ergodicity Breaking Beyond Scarring*, a chaotic quantum system retains statistical traces of its preparation. Their billiard calculations follow a wavepacket as it spreads through an enclosure. Long-time statistics nevertheless show enhanced overlap with its starting state and the states along its subsequent orbit through Hilbert space.[^3]
 
-For a time-independent Hamiltonian with nondegenerate energies, the infinite-time-averaged return probability is
+Write the initial state in the energy eigenbasis as
+
+$$
+|\psi(0)\rangle=\sum_n c_n|E_n\rangle.
+$$
+
+Here, $|E_n\rangle$ are the energy eigenstates, and $|c_n|^2$ is the probability of occupying each one. For a time-independent Hamiltonian with nondegenerate energies, the infinite-time-averaged return probability is then
 
 $$
 \overline{P}_{\mathrm{return}}
 =\lim_{T\to\infty}\frac{1}{T}\int_0^T
 \left|\langle\psi(0)|\psi(t)\rangle\right|^2\,dt
-=\sum_n |c_n|^4,
-\qquad |\psi(0)\rangle=\sum_n c_n|E_n\rangle.
+=\sum_n |c_n|^4.
 $$
 
-The coefficients describe how the preparation occupies the energy eigenstates. To identify a birthmark, compare overlap with that preparation against overlap with an independently chosen state satisfying the appropriate energy and symmetry constraints. Comparing each state's return to itself answers a different question. Xiaoya and colleagues find enhancement factors approaching two or three under specified random-matrix comparisons; early returns can strengthen the trace, with Heller's scars as precedent.[^4][^5]
+To identify a birthmark, compare overlap with that preparation against overlap with an independently chosen state satisfying the appropriate energy and symmetry constraints. Comparing each state's return to itself answers a different question. Xiaoya and colleagues find enhancement factors approaching two or three under specified random-matrix comparisons; early returns can strengthen the trace, with Heller's scars as precedent.[^4][^5]
 
 An infinite-time average does not specify a practical readout time. Nor does every environmental disturbance erase the same information. Pure dephasing in the energy basis preserves the populations entering the displayed sum; energy relaxation can change them. Phase information may disappear while a trace of preparation remains. An experiment therefore needs an observable, a description of the disturbance, and a time within which the trace can be read.
 

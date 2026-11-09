@@ -734,6 +734,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:09.687083+00:00"
   },
+  "news/ai-research/cwe-bench-v2-more-coverage-quality-and-transparency": {
+    "slug": "news/ai-research/cwe-bench-v2-more-coverage-quality-and-transparency",
+    "meta_description": "CWE-bench is designed to test the limits of frontier cyber capabilities. In our continued pursuit to push the horizon at Collinear AI , CWE-bench...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CWE-bench v2: More coverage, quality, and transparency\",\n  \"description\": \"CWE-bench is designed to test the limits of frontier cyber capabilities. In our continued pursuit to push the horizon at Collinear AI , CWE-bench...\",\n  \"datePublished\": \"2026-11-09T03:34:43.139077+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:43.139077+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/cwe-bench\"\n  },\n  \"url\": \"https://huggingface.co/blog/cwe-bench\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:09.637207+00:00"
+  },
   "news/ai-research/daniela-rus-receives-bavarian-minister-president-s-high-tech-prize": {
     "slug": "news/ai-research/daniela-rus-receives-bavarian-minister-president-s-high-tech-prize",
     "meta_description": "Daniela Rus, director of MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) and the Panasonic Professor of Computer Science,...",
@@ -1973,6 +1980,20 @@
     "agent_callout": "",
     "generated_at": "2026-11-08T05:23:49.747239+00:00"
   },
+  "news/ai-research/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means": {
+    "slug": "news/ai-research/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means",
+    "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means\",\n  \"description\": \"Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...\",\n  \"datePublished\": \"2026-11-09T03:34:43.984690+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:43.984690+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://importai.substack.com/p/import-ai-478-math-for-alignment\"\n  },\n  \"url\": \"https://importai.substack.com/p/import-ai-478-math-for-alignment\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:08.975692+00:00"
+  },
+  "news/ai-research/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4": {
+    "slug": "news/ai-research/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4",
+    "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4\",\n  \"description\": \"Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...\",\n  \"datePublished\": \"2026-11-09T03:34:43.853036+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:43.853036+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://importai.substack.com/p/import-ai-479-spacewar-low-latency\"\n  },\n  \"url\": \"https://importai.substack.com/p/import-ai-479-spacewar-low-latency\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:09.992991+00:00"
+  },
   "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text": {
     "slug": "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text",
     "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please...",
@@ -2988,6 +3009,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-01T00:58:53.113760+00:00"
   },
+  "news/ai-research/palette-teaching-a-small-model-to-build-decks-in-your-design-language": {
+    "slug": "news/ai-research/palette-teaching-a-small-model-to-build-decks-in-your-design-language",
+    "meta_description": "Ask a frontier model for a slide deck and you'll get a good one. Ask for ten and they start to look alike: the same tasteful defaults, the same...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Palette: teaching a small model to build decks in your design language\",\n  \"description\": \"Ask a frontier model for a slide deck and you'll get a good one. Ask for ten and they start to look alike: the same tasteful defaults, the same...\",\n  \"datePublished\": \"2026-11-09T03:34:42.682818+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:42.682818+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-research/palette-deck-building\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-research/palette-deck-building\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:09.317613+00:00"
+  },
   "news/ai-research/parking-aware-navigation-system-could-prevent-frustration-and-emissions": {
     "slug": "news/ai-research/parking-aware-navigation-system-could-prevent-frustration-and-emissions",
     "meta_description": "It happens every day — a motorist heading across town checks a navigation app to see how long the trip will take, but they find no parking spots...",
@@ -3708,6 +3736,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Transformers.js v4 Preview: Now Available on NPM!\",\n  \"description\": \"We're excited to announce that Transformers.js v4 (preview) is now available on NPM! After nearly a year of development (we started in March 2025...\",\n  \"datePublished\": \"2026-02-19T04:26:30.547189+00:00\",\n  \"dateModified\": \"2026-02-19T04:26:30.547189+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/transformersjs-v4\"\n  },\n  \"url\": \"https://huggingface.co/blog/transformersjs-v4\"\n}",
     "agent_callout": "",
     "generated_at": "2026-02-19T04:27:06.488202+00:00"
+  },
+  "news/ai-research/transformers-model-integration-contracts": {
+    "slug": "news/ai-research/transformers-model-integration-contracts",
+    "meta_description": "On July 30, 2026, Transformers enabled PyTorch's scaled dot-product attention (SDPA) for T5. As a side effect, UMT5's decoder could attend to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Transformers Model Integration Contracts\",\n  \"description\": \"On July 30, 2026, Transformers enabled PyTorch's scaled dot-product attention (SDPA) for T5. As a side effect, UMT5's decoder could attend to...\",\n  \"datePublished\": \"2026-11-09T03:34:43.677231+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:43.677231+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/transformers-mic\"\n  },\n  \"url\": \"https://huggingface.co/blog/transformers-mic\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:10.333171+00:00"
   },
   "news/ai-research/transformers-now-runs-llama-cpp-quants": {
     "slug": "news/ai-research/transformers-now-runs-llama-cpp-quants",
@@ -6347,6 +6382,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cisco Fixes Actively Exploited Zero-Day CVE-2026-20045 in Unified CM and Webex\",\n  \"description\": \"Ravie Lakshmanan Jan 22, 2026 Vulnerability / Zero-Day Cisco has released fresh patches to address what it described as a \\\"critical\\\" security...\",\n  \"datePublished\": \"2026-01-22T06:15:12.980610+00:00\",\n  \"dateModified\": \"2026-01-22T06:15:12.980610+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/cisco-fixes-actively-exploited-zero-day.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/cisco-fixes-actively-exploited-zero-day.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:40.918068+00:00"
+  },
+  "news/ai-security/cisco-patches-34-vulnerabilities-across-multiple-products": {
+    "slug": "news/ai-security/cisco-patches-34-vulnerabilities-across-multiple-products",
+    "meta_description": "Cisco on Wednesday announced patches for 34 vulnerabilities across Expressway Series, IOS XR, Snort 3, and Unified Communications products.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cisco Patches 34 Vulnerabilities Across Multiple Products\",\n  \"description\": \"Cisco on Wednesday announced patches for 34 vulnerabilities across Expressway Series, IOS XR, Snort 3, and Unified Communications products.\",\n  \"datePublished\": \"2026-11-09T03:34:29.590865+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:29.590865+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products\"\n  },\n  \"url\": \"https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:08.264350+00:00"
   },
   "news/ai-security/cisco-patches-9-8-cvss-imc-and-ssm-flaws-allowing-remote-system-compromise": {
     "slug": "news/ai-security/cisco-patches-9-8-cvss-imc-and-ssm-flaws-allowing-remote-system-compromise",
@@ -9329,6 +9371,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Indian Users Targeted in Tax Phishing Campaign Delivering Blackmoon Malware\",\n  \"description\": \"Ravie Lakshmanan Jan 26, 2026 Cyber Espionage / Malware Cybersecurity researchers have discovered an ongoing campaign that's targeting Indian...\",\n  \"datePublished\": \"2026-01-26T18:15:12.864605+00:00\",\n  \"dateModified\": \"2026-01-26T18:15:12.864605+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/indian-users-targeted-in-tax-phishing.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/indian-users-targeted-in-tax-phishing.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:21.440684+00:00"
+  },
+  "news/ai-security/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform": {
+    "slug": "news/ai-security/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform",
+    "meta_description": "Amsterdam-based industrial cybersecurity firm Indurex has raised €7 million (roughly $7.84 million) in a round led by Contrarian Ventures, with...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform\",\n  \"description\": \"Amsterdam-based industrial cybersecurity firm Indurex has raised €7 million (roughly $7.84 million) in a round led by Contrarian Ventures, with...\",\n  \"datePublished\": \"2026-11-09T03:34:28.419859+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:28.419859+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform\"\n  },\n  \"url\": \"https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:07.491803+00:00"
   },
   "news/ai-security/infection-repeatedly-adds-scheduled-tasks-and-increases-traffic-to-the-same-c2-domain": {
     "slug": "news/ai-security/infection-repeatedly-adds-scheduled-tasks-and-increases-traffic-to-the-same-c2-domain",
@@ -14538,6 +14587,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:32.591855+00:00"
   },
+  "news/ai-security/signal-vulnerability-lets-malicious-callers-block-hang-ups": {
+    "slug": "news/ai-security/signal-vulnerability-lets-malicious-callers-block-hang-ups",
+    "meta_description": "Signal has resolved a critical-severity vulnerability that could allow a malicious caller to keep audio and video tracks enabled even after the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Signal Vulnerability Lets Malicious Callers Block Hang-Ups\",\n  \"description\": \"Signal has resolved a critical-severity vulnerability that could allow a malicious caller to keep audio and video tracks enabled even after the...\",\n  \"datePublished\": \"2026-11-09T03:34:28.707415+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:28.707415+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups\"\n  },\n  \"url\": \"https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:07.134723+00:00"
+  },
   "news/ai-security/silver-fox-deploys-abcdoor-malware-via-tax-themed-phishing-in-india-and-russia": {
     "slug": "news/ai-security/silver-fox-deploys-abcdoor-malware-via-tax-themed-phishing-in-india-and-russia",
     "meta_description": "The China-based cybercrime group known as Silver Fox has been linked to a new campaign targeting organizations in Russia and India with a new...",
@@ -14712,6 +14768,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"South Korean Police Accidentally Post Cryptocurrency Wallet Password\",\n  \"description\": \"An expensive mistake : > Someone jumped at the opportunity to steal $4.4 million in crypto assets after South Korea’s National Tax Service exposed...\",\n  \"datePublished\": \"2026-03-18T03:15:27.637144+00:00\",\n  \"dateModified\": \"2026-03-18T03:15:27.637144+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/03/south-korean-police-accidentally-post-cryptocurrency-wallet-password.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/03/south-korean-police-accidentally-post-cryptocurrency-wallet-password.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-18T03:16:24.763577+00:00"
+  },
+  "news/ai-security/splunk-solarwinds-release-fresh-security-updates": {
+    "slug": "news/ai-security/splunk-solarwinds-release-fresh-security-updates",
+    "meta_description": "Splunk and SolarWinds this week released patches for multiple vulnerabilities, including flaws leading to code execution, privilege escalation,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Splunk, SolarWinds Release Fresh Security Updates\",\n  \"description\": \"Splunk and SolarWinds this week released patches for multiple vulnerabilities, including flaws leading to code execution, privilege escalation,...\",\n  \"datePublished\": \"2026-11-09T03:34:29.376148+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:29.376148+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/splunk-solarwinds-release-fresh-security-updates\"\n  },\n  \"url\": \"https://www.securityweek.com/splunk-solarwinds-release-fresh-security-updates\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:07.831760+00:00"
   },
   "news/ai-security/spotting-issues-in-defi-with-dimensional-analysis": {
     "slug": "news/ai-security/spotting-issues-in-defi-with-dimensional-analysis",
@@ -14936,6 +14999,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"TeamPCP Weekly Analysis: 2026-W18 (2026-04-27 through 2026-05-03), (Mon, May 4th)\",\n  \"description\": \"Published : 2026-05-04. Last Updated : 2026-05-04 17:12:18 UTC by Kenneth Hartman (Version: 1) 0 comment(s) The most significant development of...\",\n  \"datePublished\": \"2026-05-04T18:15:14.698285+00:00\",\n  \"dateModified\": \"2026-05-04T18:15:14.698285+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32950\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32950\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-04T18:16:20.030442+00:00"
+  },
+  "news/ai-security/tech-and-security-companies-respond-to-php2shell-vulnerabilities": {
+    "slug": "news/ai-security/tech-and-security-companies-respond-to-php2shell-vulnerabilities",
+    "meta_description": "Tech vendors, cybersecurity companies and government agencies have published advisories, detections and mitigations for the PHP2Shell...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tech and Security Companies Respond to PHP2Shell Vulnerabilities\",\n  \"description\": \"Tech vendors, cybersecurity companies and government agencies have published advisories, detections and mitigations for the PHP2Shell...\",\n  \"datePublished\": \"2026-11-09T03:34:28.935363+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:28.935363+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities\"\n  },\n  \"url\": \"https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:08.615407+00:00"
   },
   "news/ai-security/tensorlake-npm-package-compromised-to-deliver-shai-hulud-credential-stealing-worm": {
     "slug": "news/ai-security/tensorlake-npm-package-compromised-to-deliver-shai-hulud-credential-stealing-worm",
@@ -19137,6 +19207,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-17T22:04:29.803159+00:00"
   },
+  "news/comp-journalism/government-names-50-local-news-publishers-receiving-share-of-ps6m-grant": {
+    "slug": "news/comp-journalism/government-names-50-local-news-publishers-receiving-share-of-ps6m-grant",
+    "meta_description": "February 2026 editions of Social Spider newspapers Waltham Forest Echo, Enfield Dispatch, Barnet Post and Newham Voices, which received funding...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Government names 50 local news publishers receiving share of £6m grant\",\n  \"description\": \"February 2026 editions of Social Spider newspapers Waltham Forest Echo, Enfield Dispatch, Barnet Post and Newham Voices, which received funding...\",\n  \"datePublished\": \"2026-11-09T03:35:01.312233+00:00\",\n  \"dateModified\": \"2026-11-09T03:35:01.312233+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/local-media-funding-government-grants\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/local-media-funding-government-grants\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:11.981683+00:00"
+  },
   "news/comp-journalism/grazia-editor-in-chief-hattie-brett-to-step-down-after-eight-years": {
     "slug": "news/comp-journalism/grazia-editor-in-chief-hattie-brett-to-step-down-after-eight-years",
     "meta_description": "Hattie Brett, editor-in-chief of Grazia. Picture: Bauer Grazia editor-in-chief Hattie Brett will leave the publication in September after eight...",
@@ -19682,6 +19759,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Jobs at risk as Sun set to merge features desk and Fabulous team\",\n  \"description\": \"Sun Fabulous magazine cover on 1 February and top of Fabulous website section on 4 February 2026 The Sun has proposed merging its features team...\",\n  \"datePublished\": \"2026-02-04T16:15:50.409336+00:00\",\n  \"dateModified\": \"2026-02-04T16:15:50.409336+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/nationals/jobs-at-risk-as-sun-set-to-merge-features-desk-and-fabulous-team\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/nationals/jobs-at-risk-as-sun-set-to-merge-features-desk-and-fabulous-team\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:07.024777+00:00"
+  },
+  "news/comp-journalism/journalism-came-under-attack-during-brand-trial-and-was-vindicated-by-guilty-verdict": {
+    "slug": "news/comp-journalism/journalism-came-under-attack-during-brand-trial-and-was-vindicated-by-guilty-verdict",
+    "meta_description": "Russell Brand’s conviction for rape and sexual assault came about as a direct result of investigative journalism by The Times, Sunday Times and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Journalism came under attack during Brand trial and was vindicated by guilty verdict\",\n  \"description\": \"Russell Brand’s conviction for rape and sexual assault came about as a direct result of investigative journalism by The Times, Sunday Times and...\",\n  \"datePublished\": \"2026-11-09T03:34:57.112420+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:57.112420+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/journalism-came-under-attack-during-brand-trial-and-was-vindicated-by-guilty-verdict\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/journalism-came-under-attack-during-brand-trial-and-was-vindicated-by-guilty-verdict\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:11.317407+00:00"
   },
   "news/comp-journalism/journalism-job-cuts-in-2026-tracked": {
     "slug": "news/comp-journalism/journalism-job-cuts-in-2026-tracked",
@@ -20285,6 +20369,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-12T23:18:45.949720+00:00"
   },
+  "news/comp-journalism/new-york-times-boosts-digital-subscribers-by-420000-in-three-months": {
+    "slug": "news/comp-journalism/new-york-times-boosts-digital-subscribers-by-420000-in-three-months",
+    "meta_description": "The New York Times building in New York City. Image: Stas Malyarevsky / Shutterstock.com The New York Times has added 420,000 digital-only...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New York Times boosts digital subscribers by 420,000 in three months\",\n  \"description\": \"The New York Times building in New York City. Image: Stas Malyarevsky / Shutterstock.com The New York Times has added 420,000 digital-only...\",\n  \"datePublished\": \"2026-11-09T03:35:00.369733+00:00\",\n  \"dateModified\": \"2026-11-09T03:35:00.369733+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/media_business/new-york-times-boosts-digital-subscribers-by-420000-in-three-months\"\n  },\n  \"url\": \"https://pressgazette.co.uk/media_business/new-york-times-boosts-digital-subscribers-by-420000-in-three-months\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:11.646044+00:00"
+  },
   "news/comp-journalism/new-york-times-chief-how-and-why-publishers-should-fight-ai-tsunami": {
     "slug": "news/comp-journalism/new-york-times-chief-how-and-why-publishers-should-fight-ai-tsunami",
     "meta_description": "New York Times chairman and publisher AG Sulzberger at the WAN-IFRA World News Media Congress on 1 June 2026. Picture: WAN-IFRA New York Times...",
@@ -20767,6 +20858,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Photographer awarded compensation from news website whose owners cannot be found\",\n  \"description\": \"A London-based photographer has successfully sued a local news website only to find that its owners and editors are impossible to track down.\",\n  \"datePublished\": \"2026-01-09T04:15:42.566162+00:00\",\n  \"dateModified\": \"2026-01-09T04:15:42.566162+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/regional-newspapers/photographer-wins-payout-from-news-website-whose-owners-cannot-be-found\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/regional-newspapers/photographer-wins-payout-from-news-website-whose-owners-cannot-be-found\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:05.305897+00:00"
+  },
+  "news/comp-journalism/piers-morgan-production-company-moves-into-red-but-has-big-ambitions": {
+    "slug": "news/comp-journalism/piers-morgan-production-company-moves-into-red-but-has-big-ambitions",
+    "meta_description": "Piers Morgan. Picture: Uncensored Piers Morgan’s Morgan’s Uncensored has ambitions to become a top five digital first newsbrand, despite his...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Piers Morgan production company moves into red but has big ambitions\",\n  \"description\": \"Piers Morgan. Picture: Uncensored Piers Morgan’s Morgan’s Uncensored has ambitions to become a top five digital first newsbrand, despite his...\",\n  \"datePublished\": \"2026-11-09T03:34:57.897937+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:57.897937+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/broadcast/piers-morgan-uncensored-reports-3m-loss-after-leaving-news-uk-fold\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/broadcast/piers-morgan-uncensored-reports-3m-loss-after-leaving-news-uk-fold\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:10.655179+00:00"
   },
   "news/comp-journalism/plunging-google-discover-traffic-hits-reach-digital-revenue": {
     "slug": "news/comp-journalism/plunging-google-discover-traffic-hits-reach-digital-revenue",
@@ -22237,6 +22335,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What does peer support in journalism look like: Insights from U.S. and international experts\",\n  \"description\": \"Journalists are increasingly facing online abuse and psychological strain, yet many lack consistent support structures, like peer support networks.\",\n  \"datePublished\": \"2026-02-21T06:13:17.731785+00:00\",\n  \"dateModified\": \"2026-02-21T06:13:17.731785+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://source.opennews.org/articles/what-does-peer-support-look-like\"\n  },\n  \"url\": \"https://source.opennews.org/articles/what-does-peer-support-look-like\"\n}",
     "agent_callout": "",
     "generated_at": "2026-02-21T06:13:25.501384+00:00"
+  },
+  "news/comp-journalism/what-ive-learned-cameron-barr-on-swapping-washington-post-for-mill-media": {
+    "slug": "news/comp-journalism/what-ive-learned-cameron-barr-on-swapping-washington-post-for-mill-media",
+    "meta_description": "Mill Media Investigations Editor Cameron Barr. Image: Marvin Joseph / The Washington Post Mill Media investigations editor Cameron Barr says the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What I’ve learned: Cameron Barr on swapping Washington Post for Mill Media\",\n  \"description\": \"Mill Media Investigations Editor Cameron Barr. Image: Marvin Joseph / The Washington Post Mill Media investigations editor Cameron Barr says the...\",\n  \"datePublished\": \"2026-11-09T03:34:59.445145+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:59.445145+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/regional-newspapers/what-ive-learned-cameron-barr-on-swapping-washington-post-for-mill-media\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/regional-newspapers/what-ive-learned-cameron-barr-on-swapping-washington-post-for-mill-media\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-09T03:35:10.994584+00:00"
   },
   "news/comp-journalism/what-ive-learned-computer-weekly-editor-bryan-glick": {
     "slug": "news/comp-journalism/what-ive-learned-computer-weekly-editor-bryan-glick",
