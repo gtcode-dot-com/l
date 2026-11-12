@@ -160,6 +160,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:52.554358+00:00"
   },
+  "news/ai-research/a-single-ai-model-simulates-the-behavior-of-many-substances-from-sliding-sand-to-folding-proteins": {
+    "slug": "news/ai-research/a-single-ai-model-simulates-the-behavior-of-many-substances-from-sliding-sand-to-folding-proteins",
+    "meta_description": "By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more. The system represents every...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"A single AI model simulates the behavior of many substances, from sliding sand to folding proteins\",\n  \"description\": \"By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more. The system represents every...\",\n  \"datePublished\": \"2026-11-12T21:38:04.239042+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:04.239042+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109\"\n  },\n  \"url\": \"https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:32.703014+00:00"
+  },
   "news/ai-research/accelerating-science-with-ai-and-simulations": {
     "slug": "news/ai-research/accelerating-science-with-ai-and-simulations",
     "meta_description": "For more than a decade, MIT Associate Professor Rafael Gómez-Bombarelli has used artificial intelligence to create new materials.",
@@ -278,6 +285,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI and the Future of Cybersecurity: Why Openness Matters\",\n  \"description\": \"Following the announcement of Mythos and Project Glasswing , institutions throughout the world are grappling with the potential dawn of a new era...\",\n  \"datePublished\": \"2026-04-21T16:15:37.239176+00:00\",\n  \"dateModified\": \"2026-04-21T16:15:37.239176+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/cybersecurity-openness\"\n  },\n  \"url\": \"https://huggingface.co/blog/cybersecurity-openness\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-21T16:16:07.739374+00:00"
+  },
+  "news/ai-research/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands": {
+    "slug": "news/ai-research/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands",
+    "meta_description": "The new approach, known as FLEX, could lead to more intuitive, interactive household and assistive robots. Humans are intuitive by nature.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI-assisted learning platform helps robots reason beyond literal commands\",\n  \"description\": \"The new approach, known as FLEX, could lead to more intuitive, interactive household and assistive robots. Humans are intuitive by nature.\",\n  \"datePublished\": \"2026-11-12T21:38:04.453056+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:04.453056+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109\"\n  },\n  \"url\": \"https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:33.055317+00:00"
   },
   "news/ai-research/ai-evals-are-becoming-the-new-compute-bottleneck": {
     "slug": "news/ai-research/ai-evals-are-becoming-the-new-compute-bottleneck",
@@ -2533,6 +2547,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T04:07:58.396322+00:00"
   },
+  "news/ai-research/mit-led-team-receives-funding-to-develop-next-generation-alternatives-to-modern-weed-killers": {
+    "slug": "news/ai-research/mit-led-team-receives-funding-to-develop-next-generation-alternatives-to-modern-weed-killers",
+    "meta_description": "With up to $53 million from ARPA-H, the researchers will use AI to generate safer herbicides that reduce dependence on imports and improve the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"MIT-led team receives funding to develop next-generation alternatives to modern weed killers\",\n  \"description\": \"With up to $53 million from ARPA-H, the researchers will use AI to generate safer herbicides that reduce dependence on imports and improve the...\",\n  \"datePublished\": \"2026-11-12T21:38:04.001631+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:04.001631+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110\"\n  },\n  \"url\": \"https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:31.998342+00:00"
+  },
   "news/ai-research/mit-lincoln-laboratory-hosts-national-security-commission-on-emerging-biotechnology": {
     "slug": "news/ai-research/mit-lincoln-laboratory-hosts-national-security-commission-on-emerging-biotechnology",
     "meta_description": "MIT Lincoln Laboratory hosted the National Security Commission on Emerging Biotechnology (NSCEB) on Sept. 3, for a stop on its national roadshow.",
@@ -2819,6 +2840,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New NVIDIA Cosmos 3 Open Models for Interactive World Simulation\",\n  \"description\": \"NVIDIA Cosmos world model development platform adds four new open-weight checkpoints to its Cosmos 3 model family for generating interactive world...\",\n  \"datePublished\": \"2026-11-08T05:56:03.475458+00:00\",\n  \"dateModified\": \"2026-11-08T05:56:03.475458+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation\"\n  },\n  \"url\": \"https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-08T05:56:27.586434+00:00"
+  },
+  "news/ai-research/new-research-could-lead-to-faster-trustworthy-ai-models-for-climate-prediction": {
+    "slug": "news/ai-research/new-research-could-lead-to-faster-trustworthy-ai-models-for-climate-prediction",
+    "meta_description": "MIT scientists developed a training method to generate models that simulate the effects of human activities on climate much more quickly than...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New research could lead to faster, trustworthy AI models for climate prediction\",\n  \"description\": \"MIT scientists developed a training method to generate models that simulate the effects of human activities on climate much more quickly than...\",\n  \"datePublished\": \"2026-11-12T21:38:03.783976+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:03.783976+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112\"\n  },\n  \"url\": \"https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:32.353014+00:00"
   },
   "news/ai-research/new-technique-makes-ai-models-leaner-and-faster-while-theyre-still-learning": {
     "slug": "news/ai-research/new-technique-makes-ai-models-leaner-and-faster-while-theyre-still-learning",
@@ -3659,6 +3687,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"“This is science!” – MIT president talks about the importance of America’s research enterprise on GBH’s Boston Public Radio\",\n  \"description\": \"In a wide-ranging live conversation, MIT President Sally Kornbluth joined Jim Braude and Margery Eagan live in studio for GBH’s Boston Public...\",\n  \"datePublished\": \"2026-02-16T05:52:24.692743+00:00\",\n  \"dateModified\": \"2026-02-16T05:52:24.692743+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/science-mit-president-talks-about-importance-americas-research-enterprise-gbhs-boston-public\"\n  },\n  \"url\": \"https://news.mit.edu/2026/science-mit-president-talks-about-importance-americas-research-enterprise-gbhs-boston-public\"\n}",
     "agent_callout": "",
     "generated_at": "2026-02-16T05:52:54.467588+00:00"
+  },
+  "news/ai-research/three-lincoln-laboratory-technologies-receive-2026-r-d-100-awards": {
+    "slug": "news/ai-research/three-lincoln-laboratory-technologies-receive-2026-r-d-100-awards",
+    "meta_description": "A secure operating system, a quantum microsystem platform, and a 5G interference-canceling algorithm are named among the year's most significant...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Three Lincoln Laboratory technologies receive 2026 R&D 100 Awards\",\n  \"description\": \"A secure operating system, a quantum microsystem platform, and a 5G interference-canceling algorithm are named among the year's most significant...\",\n  \"datePublished\": \"2026-11-12T21:38:03.565964+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:03.565964+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/lincoln-laboratory-technologies-receive-rd-100-awards-1112\"\n  },\n  \"url\": \"https://news.mit.edu/2026/lincoln-laboratory-technologies-receive-rd-100-awards-1112\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:33.374840+00:00"
   },
   "news/ai-research/tod-machover-receives-george-peabody-medal-for-contributions-to-music-and-technology": {
     "slug": "news/ai-research/tod-machover-receives-george-peabody-medal-for-contributions-to-music-and-technology",
@@ -6872,6 +6907,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Critical Node.js Vulnerability Can Cause Server Crashes via async_hooks Stack Overflow\",\n  \"description\": \"Jan 14, 2026 Ravie Lakshmanan Application Security / Vulnerability Node.js has released updates to fix what it described as a critical security...\",\n  \"datePublished\": \"2026-01-14T10:15:13.613824+00:00\",\n  \"dateModified\": \"2026-01-14T10:15:13.613824+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/critical-nodejs-vulnerability-can-cause.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/critical-nodejs-vulnerability-can-cause.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:59.770983+00:00"
+  },
+  "news/ai-security/critical-php-vulnerability-cve-2026-109618-cve-2026-109619-infocon-yellow-wed-oct-21st": {
+    "slug": "news/ai-security/critical-php-vulnerability-cve-2026-109618-cve-2026-109619-infocon-yellow-wed-oct-21st",
+    "meta_description": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)\",\n  \"description\": \"PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the...\",\n  \"datePublished\": \"2026-11-12T21:37:49.543748+00:00\",\n  \"dateModified\": \"2026-11-12T21:37:49.543748+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33440\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33440\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:30.264786+00:00"
   },
   "news/ai-security/critical-react2shell-flaw-added-to-cisa-kev-after-confirmed-active-exploitation": {
     "slug": "news/ai-security/critical-react2shell-flaw-added-to-cisa-kev-after-confirmed-active-exploitation",
@@ -10275,6 +10317,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T02:34:39.871988+00:00"
   },
+  "news/ai-security/isc-stormcast-for-thursday-october-22nd-2026-https-isc-sans-edu-podcastdetail-10146-thu-oct-22nd": {
+    "slug": "news/ai-security/isc-stormcast-for-thursday-october-22nd-2026-https-isc-sans-edu-podcastdetail-10146-thu-oct-22nd",
+    "meta_description": "ISC Stormcast For Thursday, October 22nd, 2026 &lt;https://isc.sans.edu/podcastdetail/10146&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Thursday, October 22nd, 2026 https://isc.sans.edu/podcastdetail/10146, (Thu, Oct 22nd)\",\n  \"description\": \"ISC Stormcast For Thursday, October 22nd, 2026 &lt;https://isc.sans.edu/podcastdetail/10146&gt;\",\n  \"datePublished\": \"2026-11-12T21:37:48.789682+00:00\",\n  \"dateModified\": \"2026-11-12T21:37:48.789682+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33446\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33446\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:30.602899+00:00"
+  },
   "news/ai-security/isc-stormcast-for-thursday-october-8th-2026-https-isc-sans-edu-podcastdetail-10128-thu-oct-8th": {
     "slug": "news/ai-security/isc-stormcast-for-thursday-october-8th-2026-https-isc-sans-edu-podcastdetail-10128-thu-oct-8th",
     "meta_description": "ISC Stormcast For Thursday, October 8th, 2026 &lt;https://isc.sans.edu/podcastdetail/10128&gt;",
@@ -13173,6 +13222,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-24T04:45:26.179270+00:00"
   },
+  "news/ai-security/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu": {
+    "slug": "news/ai-security/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu",
+    "meta_description": "Oracle has released its Critical Patch Update (CPU) for October 2026. The latest updates bring 1,295 new fixes across dozens of products.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU\",\n  \"description\": \"Oracle has released its Critical Patch Update (CPU) for October 2026. The latest updates bring 1,295 new fixes across dozens of products.\",\n  \"datePublished\": \"2026-11-12T21:37:47.541231+00:00\",\n  \"dateModified\": \"2026-11-12T21:37:47.541231+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu\"\n  },\n  \"url\": \"https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:30.962347+00:00"
+  },
   "news/ai-security/orchid-security-introduces-continuous-identity-observability-for-enterprise-applications": {
     "slug": "news/ai-security/orchid-security-introduces-continuous-identity-observability-for-enterprise-applications",
     "meta_description": "An innovative approach to discovering, analyzing, and governing identity usage beyond traditional IAM controls. Identity and access management...",
@@ -13368,6 +13424,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Phishing Campaign Hits 80+ Orgs Using SimpleHelp and ScreenConnect RMM Tools\",\n  \"description\": \"Ravie Lakshmanan May 04, 2026 Network Security / Endpoint Security An active phishing campaign has been observed targeting multiple vectors since...\",\n  \"datePublished\": \"2026-05-04T18:15:13.733586+00:00\",\n  \"dateModified\": \"2026-05-04T18:15:13.733586+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-04T18:16:20.304742+00:00"
+  },
+  "news/ai-security/php2shell-exploitation-started-days-before-patches": {
+    "slug": "news/ai-security/php2shell-exploitation-started-days-before-patches",
+    "meta_description": "Threat actors started probing for servers affected by two critical remote code execution (RCE) vulnerabilities in PHP four days before the fixes,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"PHP2Shell Exploitation Started Days Before Patches\",\n  \"description\": \"Threat actors started probing for servers affected by two critical remote code execution (RCE) vulnerabilities in PHP four days before the fixes,...\",\n  \"datePublished\": \"2026-11-12T21:37:47.125155+00:00\",\n  \"dateModified\": \"2026-11-12T21:37:47.125155+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/php2shell-exploitation-started-days-before-patches\"\n  },\n  \"url\": \"https://www.securityweek.com/php2shell-exploitation-started-days-before-patches\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:31.314371+00:00"
   },
   "news/ai-security/picklescan-bugs-allow-malicious-pytorch-models-to-evade-scans-and-execute-code": {
     "slug": "news/ai-security/picklescan-bugs-allow-malicious-pytorch-models-to-evade-scans-and-execute-code",
@@ -17317,6 +17380,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:41.889558+00:00"
   },
+  "news/ai-security/your-ai-agent-fixed-the-bug-but-what-else-did-it-change": {
+    "slug": "news/ai-security/your-ai-agent-fixed-the-bug-but-what-else-did-it-change",
+    "meta_description": "Today we’re publishing patching-bugs and regression-hunt , two plugins that let engineers delegate patch development and regression checks to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Your AI agent fixed the bug, but what else did it change?\",\n  \"description\": \"Today we’re publishing patching-bugs and regression-hunt , two plugins that let engineers delegate patch development and regression checks to...\",\n  \"datePublished\": \"2026-11-12T21:37:47.939795+00:00\",\n  \"dateModified\": \"2026-11-12T21:37:47.939795+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:31.659701+00:00"
+  },
   "news/ai-security/your-ai-agents-are-already-inside-the-perimeter-do-you-know-what-they-re-doing": {
     "slug": "news/ai-security/your-ai-agents-are-already-inside-the-perimeter-do-you-know-what-they-re-doing",
     "meta_description": "Analysts recently confirmed what identity security teams have quietly feared: AI agents are being deployed faster than enterprises can govern them.",
@@ -17772,6 +17842,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:07:28.143697+00:00"
   },
+  "news/comp-journalism/awards-nomination-for-jason-arday-story-prompts-more-than-500-complaints": {
+    "slug": "news/comp-journalism/awards-nomination-for-jason-arday-story-prompts-more-than-500-complaints",
+    "meta_description": "Jack Grove article in THE Press Gazette has received more than 500 emailed complaints after Times Higher Education was nominated for a British...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Awards nomination for Jason Arday story prompts more than 500 complaints\",\n  \"description\": \"Jack Grove article in THE Press Gazette has received more than 500 emailed complaints after Times Higher Education was nominated for a British...\",\n  \"datePublished\": \"2026-11-12T21:38:22.516414+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:22.516414+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/awards-nomination-for-jason-arday-story-prompts-more-than-500-complaints\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/awards-nomination-for-jason-arday-story-prompts-more-than-500-complaints\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:34.731824+00:00"
+  },
   "news/comp-journalism/axel-springer-given-uk-government-approval-for-telegraph-takeover": {
     "slug": "news/comp-journalism/axel-springer-given-uk-government-approval-for-telegraph-takeover",
     "meta_description": "Axel Springer CEO Mathias Döpfner. Picture: Robert Downs/INMA Axel Springer’s planned £575m takeover of Telegraph Media Group has been approved by...",
@@ -18065,6 +18142,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Canny marketing has powered growing revenue at London Review of Books\",\n  \"description\": \"Renee Doegar, publisher of London Review of Books (top left), London Review of Books website (bottom left) and December 2025 edition of the...\",\n  \"datePublished\": \"2026-04-02T04:22:13.957190+00:00\",\n  \"dateModified\": \"2026-04-02T04:22:13.957190+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/magazines/how-marketing-helped-london-review-of-books-become-a-bestseller\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/magazines/how-marketing-helped-london-review-of-books-become-a-bestseller\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T04:22:28.331755+00:00"
+  },
+  "news/comp-journalism/carbon-brief-adds-paid-memberships-offering-access-to-reddit-style-forum": {
+    "slug": "news/comp-journalism/carbon-brief-adds-paid-memberships-offering-access-to-reddit-style-forum",
+    "meta_description": "Carbon Brief editor Leo Hickman picks up the Energy &amp; Environment Journalism award for colleague Simon Evans from Suchandrika Chakrabarti and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Carbon Brief adds paid memberships offering access to Reddit-style forum\",\n  \"description\": \"Carbon Brief editor Leo Hickman picks up the Energy &amp; Environment Journalism award for colleague Simon Evans from Suchandrika Chakrabarti and...\",\n  \"datePublished\": \"2026-11-12T21:38:24.479014+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:24.479014+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/paywalls/carbon-brief-memberships-community\"\n  },\n  \"url\": \"https://pressgazette.co.uk/paywalls/carbon-brief-memberships-community\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:36.052513+00:00"
   },
   "news/comp-journalism/cathy-newman-to-leave-channel-4-news-for-sky": {
     "slug": "news/comp-journalism/cathy-newman-to-leave-channel-4-news-for-sky",
@@ -19795,6 +19879,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T02:29:55.401373+00:00"
   },
+  "news/comp-journalism/judge-rules-against-famous-man-but-itn-guardian-injunction-stands-pending-appeal": {
+    "slug": "news/comp-journalism/judge-rules-against-famous-man-but-itn-guardian-injunction-stands-pending-appeal",
+    "meta_description": "High Court in London. Picture: Getty Images A famous man has lost his bid for a High Court injunction against two media organisations to prevent...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Judge rules against ‘famous man’ – but ITN/Guardian injunction stands pending appeal\",\n  \"description\": \"High Court in London. Picture: Getty Images A famous man has lost his bid for a High Court injunction against two media organisations to prevent...\",\n  \"datePublished\": \"2026-11-12T21:38:23.507381+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:23.507381+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/media_law/famous-man-injunction\"\n  },\n  \"url\": \"https://pressgazette.co.uk/media_law/famous-man-injunction\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:35.056964+00:00"
+  },
   "news/comp-journalism/judges-body-hits-journalist-with-ps14k-costs-bill-for-pursuing-foi-request": {
     "slug": "news/comp-journalism/judges-body-hits-journalist-with-ps14k-costs-bill-for-pursuing-foi-request",
     "meta_description": "Barnie Choudhury Former BBC journalist and British Journalism Award nominee Barnie Choudhury has been hit with charges of £14,270.",
@@ -19920,6 +20011,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Lobby journalists ‘furious’ as No 10 scraps afternoon briefing\",\n  \"description\": \"The Houses of Parliament building in Westminster, London, UK. Picture: Nigel J Harris/Shutterstock Downing Street has scrapped its daily afternoon...\",\n  \"datePublished\": \"2026-01-08T21:49:06.993001+00:00\",\n  \"dateModified\": \"2026-01-08T21:49:06.993001+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/lobby-journalists-warn-of-loss-of-scrutiny-as-no-10-scraps-afternoon-press-briefing\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/lobby-journalists-warn-of-loss-of-scrutiny-as-no-10-scraps-afternoon-press-briefing\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:23.622323+00:00"
+  },
+  "news/comp-journalism/local-journalism-is-in-peril-google-and-bbc-seen-as-part-of-problem": {
+    "slug": "news/comp-journalism/local-journalism-is-in-peril-google-and-bbc-seen-as-part-of-problem",
+    "meta_description": "Manchester Evening News editor Sarah Lester. Picture: Reach I think journalism is in a perilous position, and we are in danger of sleepwalking...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Local journalism is in peril: Google and BBC seen as part of problem\",\n  \"description\": \"Manchester Evening News editor Sarah Lester. Picture: Reach I think journalism is in a perilous position, and we are in danger of sleepwalking...\",\n  \"datePublished\": \"2026-11-12T21:38:19.609449+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:19.609449+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/comment-analysis/local-journalism-is-in-peril-google-and-bbc-seen-as-part-of-problem\"\n  },\n  \"url\": \"https://pressgazette.co.uk/comment-analysis/local-journalism-is-in-peril-google-and-bbc-seen-as-part-of-problem\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:35.407422+00:00"
   },
   "news/comp-journalism/local-news-audiences-arent-disappearing-but-their-habits-are-changing-fast": {
     "slug": "news/comp-journalism/local-news-audiences-arent-disappearing-but-their-habits-are-changing-fast",
@@ -20130,6 +20228,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Mehdi Hasan launches Zeteo in UK with line-up of star left-wing writers\",\n  \"description\": \"Zeteo UK’s launch team. Picture: Zeteo Former MSNBC host Mehdi Hasan is launching his left-of-centre newsbrand Zeteo in the UK after surpassing...\",\n  \"datePublished\": \"2026-06-10T22:16:08.507694+00:00\",\n  \"dateModified\": \"2026-06-10T22:16:08.507694+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/mehdi-hasan-zeteo-paid-subscribers-uk-launch\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/mehdi-hasan-zeteo-paid-subscribers-uk-launch\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-10T22:16:21.120399+00:00"
+  },
+  "news/comp-journalism/meta-holding-publishers-over-a-barrel-says-news-media-association-chief": {
+    "slug": "news/comp-journalism/meta-holding-publishers-over-a-barrel-says-news-media-association-chief",
+    "meta_description": "Theo Bamber, chief executive of NMA. Picture: Submitted The News Media Association (NMA) has called on the UK Government to back the Competition...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta ‘holding publishers over a barrel’, says News Media Association chief\",\n  \"description\": \"Theo Bamber, chief executive of NMA. Picture: Submitted The News Media Association (NMA) has called on the UK Government to back the Competition...\",\n  \"datePublished\": \"2026-11-12T21:38:21.028179+00:00\",\n  \"dateModified\": \"2026-11-12T21:38:21.028179+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/meta-terms-publishers-nma-ceo\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/meta-terms-publishers-nma-ceo\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-12T21:38:35.740097+00:00"
   },
   "news/comp-journalism/meta-pulls-down-controversial-terms-of-service": {
     "slug": "news/comp-journalism/meta-pulls-down-controversial-terms-of-service",
