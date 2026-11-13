@@ -363,6 +363,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:16.125850+00:00"
   },
+  "news/ai-research/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease": {
+    "slug": "news/ai-research/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease",
+    "meta_description": "November 11, 2026 Science Adam Gayoso, Natasha Latysheva, Pushmeet Kohli and Å½iga Avsec Copied Our next-generation DNA sequence model bridges...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AlphaGenome 2: Deciphering how cells read DNA to better understand disease\",\n  \"description\": \"November 11, 2026 Science Adam Gayoso, Natasha Latysheva, Pushmeet Kohli and Å½iga Avsec Copied Our next-generation DNA sequence model bridges...\",\n  \"datePublished\": \"2026-11-13T00:21:54.392038+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:54.392038+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease\"\n  },\n  \"url\": \"https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:19.520272+00:00"
+  },
   "news/ai-research/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome": {
     "slug": "news/ai-research/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
     "meta_description": "We are grateful to our research collaborators at University of Exeter, Broad Institute, Boston Childrenâs Hospital, Stowers Institute for...",
@@ -502,6 +509,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AutoSynthData: Generating Training Data for Enterprise Agents\",\n  \"description\": \"[](https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/mlI168havBLGXY2qbd4ud.png) Enterprises need agents that work...\",\n  \"datePublished\": \"2026-10-08T00:22:09.977753+00:00\",\n  \"dateModified\": \"2026-10-08T00:22:09.977753+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ServiceNow-AI/autosynthdata\"\n  },\n  \"url\": \"https://huggingface.co/blog/ServiceNow-AI/autosynthdata\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-08T00:22:46.312646+00:00"
+  },
+  "news/ai-research/bair-at-corl-2026": {
+    "slug": "news/ai-research/bair-at-corl-2026",
+    "meta_description": "Junyi Zhang, Jiaxin Ge, Hanjun Yoo, Letian Fu, Zihan Yang, Yaowei Liu, Raj Saravanan, Shaofeng Yin, Justin Yu, Dantong Niu, Zirui Wang, Roei...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"BAIR at CoRL 2026\",\n  \"description\": \"Junyi Zhang, Jiaxin Ge, Hanjun Yoo, Letian Fu, Zihan Yang, Yaowei Liu, Raj Saravanan, Shaofeng Yin, Justin Yu, Dantong Niu, Zirui Wang, Roei...\",\n  \"datePublished\": \"2026-11-13T00:21:52.397886+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:52.397886+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/11/09/bair-at-corl-2026\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/11/09/bair-at-corl-2026\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:20.175762+00:00"
   },
   "news/ai-research/baseten-on-hugging-face-inference-providers": {
     "slug": "news/ai-research/baseten-on-hugging-face-inference-providers",
@@ -1160,6 +1174,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini 4 Argon: our next era of frontier intelligence\",\n  \"description\": \"Gemini 4 Argon’s capabilities across coding, reasoning, and multimodality and its ability to sustain long, multi-step tasks enable it to excel...\",\n  \"datePublished\": \"2026-10-07T04:42:04.336406+00:00\",\n  \"dateModified\": \"2026-10-07T04:42:04.336406+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T04:42:51.580534+00:00"
+  },
+  "news/ai-research/gemini-4-carbon-is-now-available": {
+    "slug": "news/ai-research/gemini-4-carbon-is-now-available",
+    "meta_description": "Today, we’re making Gemini 4 Carbon available to developers, enterprises, scientists, and consumers. Carbon is our strongest model with frontier...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini 4 Carbon is now available\",\n  \"description\": \"Today, we’re making Gemini 4 Carbon available to developers, enterprises, scientists, and consumers. Carbon is our strongest model with frontier...\",\n  \"datePublished\": \"2026-11-13T00:21:55.425304+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:55.425304+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-4-carbon-is-now-available\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-4-carbon-is-now-available\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:20.517166+00:00"
   },
   "news/ai-research/gemini-4-carbon-our-next-frontier-model": {
     "slug": "news/ai-research/gemini-4-carbon-our-next-frontier-model",
@@ -2071,6 +2092,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-03T03:02:14.607432+00:00"
   },
+  "news/ai-research/introducing-alphaproof-code-a-breakthrough-in-verifying-complex-software-at-depth": {
+    "slug": "news/ai-research/introducing-alphaproof-code-a-breakthrough-in-verifying-complex-software-at-depth",
+    "meta_description": "How Google DeepMind researchers built a new agentic framework that formally verified the code of Signalâs cryptographic protocol â long...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing AlphaProof Code: a breakthrough in verifying complex software at depth\",\n  \"description\": \"How Google DeepMind researchers built a new agentic framework that formally verified the code of Signalâs cryptographic protocol â long...\",\n  \"datePublished\": \"2026-11-13T00:21:56.203741+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:56.203741+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-alphaproof-code\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-alphaproof-code\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:19.851127+00:00"
+  },
   "news/ai-research/introducing-computer-use-in-gemini-3-5-flash": {
     "slug": "news/ai-research/introducing-computer-use-in-gemini-3-5-flash",
     "meta_description": "Breadcrumb 2. Innovation &amp; AI 3. Models &amp; research 4. Gemini Models Jun 24, 2026 · Share x.com Facebook LinkedIn Mail Copy link Computer...",
@@ -2147,6 +2175,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing Gemini 3.8 Live with Live Avatar\",\n  \"description\": \"Breadcrumb 1. Home 2. Innovation &amp; AI 3. Models &amp; research 4. Gemini Models Sep 24, 2026 | x.com Facebook LinkedIn Mail Copy link Gemini 3.\",\n  \"datePublished\": \"2026-10-06T22:55:19.654554+00:00\",\n  \"dateModified\": \"2026-10-06T22:55:19.654554+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-06T22:56:04.543187+00:00"
+  },
+  "news/ai-research/introducing-gemini-4-hydrogen": {
+    "slug": "news/ai-research/introducing-gemini-4-hydrogen",
+    "meta_description": "Today, we’re introducing Gemini 4 Hydrogen, bringing cutting-edge intelligence to everyone — with speed and efficiency for everyday coding and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing Gemini 4 Hydrogen\",\n  \"description\": \"Today, we’re introducing Gemini 4 Hydrogen, bringing cutting-edge intelligence to everyone — with speed and efficiency for everyday coding and...\",\n  \"datePublished\": \"2026-11-13T00:21:53.740957+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:53.740957+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-gemini-4-hydrogen\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-gemini-4-hydrogen\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:19.152954+00:00"
   },
   "news/ai-research/introducing-gemini-omni": {
     "slug": "news/ai-research/introducing-gemini-omni",
@@ -6523,6 +6558,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:40.139555+00:00"
   },
+  "news/ai-security/claude-code-s-don-t-ask-again-file-exposes-passwords-and-keys-in-1122-public-copies-on-github": {
+    "slug": "news/ai-security/claude-code-s-don-t-ask-again-file-exposes-passwords-and-keys-in-1122-public-copies-on-github",
+    "meta_description": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub\",\n  \"description\": \"Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone...\",\n  \"datePublished\": \"2026-11-13T00:21:38.496235+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:38.496235+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:18.448867+00:00"
+  },
   "news/ai-security/claude-code-security-and-magecart-getting-the-threat-model-right": {
     "slug": "news/ai-security/claude-code-security-and-magecart-getting-the-threat-model-right",
     "meta_description": "When a Magecart payload hides inside the EXIF data of a dynamically loaded third-party favicon, no repository scanner will catch it – because the...",
@@ -9463,6 +9505,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-10T21:50:24.007606+00:00"
   },
+  "news/ai-security/installing-the-fix-for-an-exploited-wordpress-flaw-can-expose-some-sites-one-last-time": {
+    "slug": "news/ai-security/installing-the-fix-for-an-exploited-wordpress-flaw-can-expose-some-sites-one-last-time",
+    "meta_description": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time\",\n  \"description\": \"Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security...\",\n  \"datePublished\": \"2026-11-13T00:21:38.796753+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:38.796753+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:18.809524+00:00"
+  },
   "news/ai-security/instructure-reaches-ransom-agreement-with-shinyhunters-to-stop-3-65tb-canvas-leak": {
     "slug": "news/ai-security/instructure-reaches-ransom-agreement-with-shinyhunters-to-stop-3-65tb-canvas-leak",
     "meta_description": "Ravie Lakshmanan May 12, 2026 Vulnerability / Network Security American educational technology company Instructure, the parent company of Canvas,...",
@@ -10534,6 +10583,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-13T04:44:03.497031+00:00"
   },
+  "news/ai-security/isc-stormcast-for-tuesday-october-20th-2026-https-isc-sans-edu-podcastdetail-10142-tue-oct-20th": {
+    "slug": "news/ai-security/isc-stormcast-for-tuesday-october-20th-2026-https-isc-sans-edu-podcastdetail-10142-tue-oct-20th",
+    "meta_description": "ISC Stormcast For Tuesday, October 20th, 2026 &lt;https://isc.sans.edu/podcastdetail/10142&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)\",\n  \"description\": \"ISC Stormcast For Tuesday, October 20th, 2026 &lt;https://isc.sans.edu/podcastdetail/10142&gt;\",\n  \"datePublished\": \"2026-11-13T00:21:37.213470+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:37.213470+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33436\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33436\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:18.108660+00:00"
+  },
   "news/ai-security/isc-stormcast-for-tuesday-october-6th-2026-https-isc-sans-edu-podcastdetail-10124-tue-oct-6th": {
     "slug": "news/ai-security/isc-stormcast-for-tuesday-october-6th-2026-https-isc-sans-edu-podcastdetail-10124-tue-oct-6th",
     "meta_description": "ISC Stormcast For Tuesday, October 6th, 2026 &lt;https://isc.sans.edu/podcastdetail/10124&gt;",
@@ -10764,6 +10820,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, October 14th, 2026 https://isc.sans.edu/podcastdetail/10136, (Wed, Oct 14th)\",\n  \"description\": \"ISC Stormcast For Wednesday, October 14th, 2026 &lt;https://isc.sans.edu/podcastdetail/10136&gt;\",\n  \"datePublished\": \"2026-10-15T00:13:24.067352+00:00\",\n  \"dateModified\": \"2026-10-15T00:13:24.067352+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33424\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33424\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-15T00:14:18.336773+00:00"
+  },
+  "news/ai-security/isc-stormcast-for-wednesday-october-21st-2026-https-isc-sans-edu-podcastdetail-10144-wed-oct-21st": {
+    "slug": "news/ai-security/isc-stormcast-for-wednesday-october-21st-2026-https-isc-sans-edu-podcastdetail-10144-wed-oct-21st",
+    "meta_description": "ISC Stormcast For Wednesday, October 21st, 2026 &lt;https://isc.sans.edu/podcastdetail/10144&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)\",\n  \"description\": \"ISC Stormcast For Wednesday, October 21st, 2026 &lt;https://isc.sans.edu/podcastdetail/10144&gt;\",\n  \"datePublished\": \"2026-11-13T00:21:36.529537+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:36.529537+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33438\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33438\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:17.774168+00:00"
   },
   "news/ai-security/isc-stormcast-for-wednesday-october-7th-2026-https-isc-sans-edu-podcastdetail-10126-wed-oct-7th": {
     "slug": "news/ai-security/isc-stormcast-for-wednesday-october-7th-2026-https-isc-sans-edu-podcastdetail-10126-wed-oct-7th",
@@ -13242,6 +13305,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Orphaned VBA Projects Inside DWG Files, (Wed, Oct 14th)\",\n  \"description\": \"Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg). In a nutshell: the VBA code is stored inside an OLE...\",\n  \"datePublished\": \"2026-11-08T05:23:07.629137+00:00\",\n  \"dateModified\": \"2026-11-08T05:23:07.629137+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33420\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33420\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-08T05:23:48.014686+00:00"
+  },
+  "news/ai-security/orphaned-vba-projects-inside-dwg-files-yara-rule-sun-oct-18th": {
+    "slug": "news/ai-security/orphaned-vba-projects-inside-dwg-files-yara-rule-sun-oct-18th",
+    "meta_description": "Here is the YARA rule I used to detect \" Orphaned VBA Projects Inside DWG Files \". &gt; rule &gt; &gt; autocad\\orphaned\\vba\\_project &gt; &gt; {...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)\",\n  \"description\": \"Here is the YARA rule I used to detect \\\" Orphaned VBA Projects Inside DWG Files \\\". &gt; rule &gt; &gt; autocad\\\\orphaned\\\\vba\\\\_project &gt; &gt; {...\",\n  \"datePublished\": \"2026-11-13T00:21:37.883023+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:37.883023+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33434\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33434\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:17.401589+00:00"
   },
   "news/ai-security/ousted-south-korean-leader-yoon-indicted-over-drone-flights": {
     "slug": "news/ai-security/ousted-south-korean-leader-yoon-indicted-over-drone-flights",
@@ -17478,6 +17548,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-01T00:58:54.894321+00:00"
   },
+  "news/comp-journalism/a-government-that-gets-it-canada-recommits-to-federal-funding-for-news": {
+    "slug": "news/comp-journalism/a-government-that-gets-it-canada-recommits-to-federal-funding-for-news",
+    "meta_description": "A Canadian program to place local reporters in underserved communities has lived from renewal to renewal. Publishers who relied on the Local...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"“A government that ‘gets it’”: Canada recommits to federal funding for news\",\n  \"description\": \"A Canadian program to place local reporters in underserved communities has lived from renewal to renewal. Publishers who relied on the Local...\",\n  \"datePublished\": \"2026-11-13T00:22:11.058422+00:00\",\n  \"dateModified\": \"2026-11-13T00:22:11.058422+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/a-government-that-gets-it-canada-recommits-to-federal-funding-for-news\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/a-government-that-gets-it-canada-recommits-to-federal-funding-for-news\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:21.580926+00:00"
+  },
   "news/comp-journalism/a-lack-of-professional-ai-guidelines-leads-to-feelings-of-ai-shame-a-new-study-finds": {
     "slug": "news/comp-journalism/a-lack-of-professional-ai-guidelines-leads-to-feelings-of-ai-shame-a-new-study-finds",
     "meta_description": "AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...",
@@ -17617,6 +17694,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI in journalism: Live tracker of scandals and mistakes\",\n  \"description\": \"Four stories cited in Press Gazette round-up of AI going wrong in news publications AI is being widely used in journalism and can lead to...\",\n  \"datePublished\": \"2026-04-24T16:15:51.465392+00:00\",\n  \"dateModified\": \"2026-04-24T16:15:51.465392+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/digital-journalism/ai-journalism-mistakes\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/digital-journalism/ai-journalism-mistakes\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-24T16:16:04.271099+00:00"
+  },
+  "news/comp-journalism/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news": {
+    "slug": "news/comp-journalism/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
+    "meta_description": "In my Nieman Lab prediction this time last year, I wrote that “in 2026, the use of AI as an information gateway will only rise further.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI is becoming an information gateway. Audiences still don’t want it making their news.\",\n  \"description\": \"In my Nieman Lab prediction this time last year, I wrote that “in 2026, the use of AI as an information gateway will only rise further.\",\n  \"datePublished\": \"2026-11-13T00:22:11.604688+00:00\",\n  \"dateModified\": \"2026-11-13T00:22:11.604688+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:23.286648+00:00"
   },
   "news/comp-journalism/ai-is-direct-contributor-to-increase-profitability-at-the-daily-beast": {
     "slug": "news/comp-journalism/ai-is-direct-contributor-to-increase-profitability-at-the-daily-beast",
@@ -19809,6 +19893,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-24T00:03:15.889554+00:00"
   },
+  "news/comp-journalism/its-either-this-or-death-canada-renews-the-local-journalism-initiative-and-extends-journalism-tax-credit": {
+    "slug": "news/comp-journalism/its-either-this-or-death-canada-renews-the-local-journalism-initiative-and-extends-journalism-tax-credit",
+    "meta_description": "Canada’s proposed federal budget includes some good news for local journalism . The federal government is extending its journalism tax credit by...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"“It’s either this or death”: Canada renews the Local Journalism Initiative and extends journalism tax credit\",\n  \"description\": \"Canada’s proposed federal budget includes some good news for local journalism . The federal government is extending its journalism tax credit by...\",\n  \"datePublished\": \"2026-11-13T00:22:11.895900+00:00\",\n  \"dateModified\": \"2026-11-13T00:22:11.895900+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/its-either-this-or-death-frankly-canada-renews-the-local-journalism-initiative-and-extends-journalism-tax-credit\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/its-either-this-or-death-frankly-canada-renews-the-local-journalism-initiative-and-extends-journalism-tax-credit\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:20.918520+00:00"
+  },
   "news/comp-journalism/james-murdoch-buys-up-half-of-vox-media-grabbing-new-york-and-podcasts-but-leaving-the-verge-and-sb-nation": {
     "slug": "news/comp-journalism/james-murdoch-buys-up-half-of-vox-media-grabbing-new-york-and-podcasts-but-leaving-the-verge-and-sb-nation",
     "meta_description": "This is May 2026 in digital media: Arguably the two most prominent digital media startups of the 2010s are both being sold — one to the former...",
@@ -21545,6 +21636,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-02T04:22:28.721370+00:00"
   },
+  "news/comp-journalism/some-local-news-outlets-are-losing-physical-newsrooms": {
+    "slug": "news/comp-journalism/some-local-news-outlets-are-losing-physical-newsrooms",
+    "meta_description": "When the Covid-19 pandemic normalized remote work, a second trend caught on: shutting down physical newsrooms. A report from Northwestern...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Some local news outlets are losing physical newsrooms\",\n  \"description\": \"When the Covid-19 pandemic normalized remote work, a second trend caught on: shutting down physical newsrooms. A report from Northwestern...\",\n  \"datePublished\": \"2026-11-13T00:22:11.331497+00:00\",\n  \"dateModified\": \"2026-11-13T00:22:11.331497+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/some-local-news-outlets-are-losing-physical-newsrooms\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/some-local-news-outlets-are-losing-physical-newsrooms\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:21.238173+00:00"
+  },
   "news/comp-journalism/some-stories-just-work-better-through-film-on-the-strategy-behind-making-an-investigative-documentary": {
     "slug": "news/comp-journalism/some-stories-just-work-better-through-film-on-the-strategy-behind-making-an-investigative-documentary",
     "meta_description": "When “ The Dynasty” was released earlier this year, few expected a 55-minute investigative film about Hungarian Prime Minister Viktor Orban’s...",
@@ -22685,6 +22783,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"With “Bimbo University,” Nikita Redkar leans into femininity to explain the news\",\n  \"description\": \"The data is in : News creators and influencers are a major source of news for Americans, especially people under 30. This is the latest edition of...\",\n  \"datePublished\": \"2026-11-08T05:30:10.984136+00:00\",\n  \"dateModified\": \"2026-11-08T05:30:10.984136+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/with-bimbo-university-nikita-redkar-leans-into-femininity-to-explain-the-news\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/with-bimbo-university-nikita-redkar-leans-into-femininity-to-explain-the-news\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-08T05:30:21.202481+00:00"
+  },
+  "news/comp-journalism/with-event-costs-up-and-funding-down-journalism-organizations-cancel-conferences-and-cut-staff": {
+    "slug": "news/comp-journalism/with-event-costs-up-and-funding-down-journalism-organizations-cancel-conferences-and-cut-staff",
+    "meta_description": "When the pandemic forced conferences to go virtual, the question was whether people would come back in person post-Covid . For a while, they did.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"With event costs up and funding down, journalism organizations cancel conferences and cut staff\",\n  \"description\": \"When the pandemic forced conferences to go virtual, the question was whether people would come back in person post-Covid . For a while, they did.\",\n  \"datePublished\": \"2026-11-13T00:22:10.758467+00:00\",\n  \"dateModified\": \"2026-11-13T00:22:10.758467+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/with-event-costs-up-and-funding-down-journalism-organizations-cancel-conferences-and-cut-staff\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/with-event-costs-up-and-funding-down-journalism-organizations-cancel-conferences-and-cut-staff\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T00:22:22.946576+00:00"
   },
   "news/comp-journalism/with-its-new-season-the-podcast-scene-on-radio-takes-on-the-news": {
     "slug": "news/comp-journalism/with-its-new-season-the-podcast-scene-on-radio-takes-on-the-news",
