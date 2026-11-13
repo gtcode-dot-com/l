@@ -790,6 +790,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T04:07:57.540677+00:00"
   },
+  "news/ai-research/decision-models-in-hugging-face": {
+    "slug": "news/ai-research/decision-models-in-hugging-face",
+    "meta_description": "Large Language Models (LLMs) are exceptionally good at generating text. We use them to answer questions, write code, reason about problems, and so...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Decision Models in Hugging Face\",\n  \"description\": \"Large Language Models (LLMs) are exceptionally good at generating text. We use them to answer questions, write code, reason about problems, and so...\",\n  \"datePublished\": \"2026-11-13T03:11:04.574800+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:04.574800+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/decision\"\n  },\n  \"url\": \"https://huggingface.co/blog/decision\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:32.637476+00:00"
+  },
   "news/ai-research/decoding-the-arctic-to-predict-winter-weather": {
     "slug": "news/ai-research/decoding-the-arctic-to-predict-winter-weather",
     "meta_description": "Every autumn, as the Northern Hemisphere moves toward winter, Judah Cohen starts to piece together a complex atmospheric puzzle.",
@@ -2043,6 +2050,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-09T03:35:09.992991+00:00"
   },
+  "news/ai-research/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence": {
+    "slug": "news/ai-research/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence",
+    "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence\",\n  \"description\": \"Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...\",\n  \"datePublished\": \"2026-11-13T03:11:05.992012+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:05.992012+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://importai.substack.com/p/import-ai-480-self-sustaining-space\"\n  },\n  \"url\": \"https://importai.substack.com/p/import-ai-480-self-sustaining-space\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:32.299188+00:00"
+  },
   "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text": {
     "slug": "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text",
     "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please...",
@@ -2785,6 +2799,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:29.317733+00:00"
   },
+  "news/ai-research/nemotron-personas-finance-japan-a-synthetic-dataset-capturing-japan-s-demographics-and-financial-context": {
+    "slug": "news/ai-research/nemotron-personas-finance-japan-a-synthetic-dataset-capturing-japan-s-demographics-and-financial-context",
+    "meta_description": "A compound AI approach to Japanese personas grounded in real-world distributions In the financial sector, the utilization of real-world data faces...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context\",\n  \"description\": \"A compound AI approach to Japanese personas grounded in real-world distributions In the financial sector, the utilization of real-world data faces...\",\n  \"datePublished\": \"2026-11-13T03:11:05.150189+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:05.150189+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan\"\n  },\n  \"url\": \"https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:31.896533+00:00"
+  },
   "news/ai-research/nemotron-personas-singapore-co-designed-data-for-sovereign-ai": {
     "slug": "news/ai-research/nemotron-personas-singapore-co-designed-data-for-sovereign-ai",
     "meta_description": "[](https://cdn-uploads.huggingface.co/production/uploads/68d2fec8856b85d927e44d32/Ya-w2owKyVkHOsfSpoyBO.png) A compound AI approach to personas...",
@@ -3127,6 +3148,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Paving the way for greener ammonia production\",\n  \"description\": \"Ammonia is one of the most important chemicals produced in the world, ranking second only to sulfuric acid in the total volume produced each year.\",\n  \"datePublished\": \"2026-09-26T20:05:26.585898+00:00\",\n  \"dateModified\": \"2026-09-26T20:05:26.585898+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/paving-way-for-greener-ammonia-production-0820\"\n  },\n  \"url\": \"https://news.mit.edu/2026/paving-way-for-greener-ammonia-production-0820\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-26T20:06:12.183795+00:00"
+  },
+  "news/ai-research/pay-for-hugging-face-hub-with-your-google-cloud-account": {
+    "slug": "news/ai-research/pay-for-hugging-face-hub-with-your-google-cloud-account",
+    "meta_description": "You can now link your Hugging Face organization to your Google Cloud account, so that your Hugging Face usage shows up on your Google Cloud bill...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Pay for Hugging Face Hub with your Google Cloud Account\",\n  \"description\": \"You can now link your Hugging Face organization to your Google Cloud account, so that your Hugging Face usage shows up on your Google Cloud bill...\",\n  \"datePublished\": \"2026-11-13T03:11:03.844849+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:03.844849+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/hub-gcp-marketplace\"\n  },\n  \"url\": \"https://huggingface.co/blog/hub-gcp-marketplace\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:34.307770+00:00"
   },
   "news/ai-research/personalization-features-can-make-llms-more-agreeable": {
     "slug": "news/ai-research/personalization-features-can-make-llms-more-agreeable",
@@ -4206,6 +4234,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-04T03:33:03.254758+00:00"
   },
+  "news/ai-research/your-experts-have-partners-there-s-hope-for-keeping-them-together": {
+    "slug": "news/ai-research/your-experts-have-partners-there-s-hope-for-keeping-them-together",
+    "meta_description": "Mixture-of-Experts (MoE) models have enabled state-of-the-art LLMs to be scaled to hundreds of billions of parameters, but they come with a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Your Experts Have Partners. There's HOPE for Keeping Them Together\",\n  \"description\": \"Mixture-of-Experts (MoE) models have enabled state-of-the-art LLMs to be scaled to hundreds of billions of parameters, but they come with a...\",\n  \"datePublished\": \"2026-11-13T03:11:05.739753+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:05.739753+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/amazon/higher-order-pruning-experts\"\n  },\n  \"url\": \"https://huggingface.co/blog/amazon/higher-order-pruning-experts\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:33.992407+00:00"
+  },
   "news/ai-security/101-malicious-npm-packages-add-developers-whatsapp-accounts-to-groups-without-consent": {
     "slug": "news/ai-security/101-malicious-npm-packages-add-developers-whatsapp-accounts-to-groups-without-consent",
     "meta_description": "Ravie Lakshmanan Sep 29, 2026 Supply Chain / Malware Cybersecurity researchers have identified a cluster of 101 npm packages that are used to trap...",
@@ -4815,6 +4850,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:23.534182+00:00"
   },
+  "news/ai-security/ai-vulnerability-finding": {
+    "slug": "news/ai-security/ai-vulnerability-finding",
+    "meta_description": "A comment : &gt; 3% of ‘critical’ software security bugs, in all of recorded history, have been found in the last month. This is on pace to find...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Vulnerability Finding\",\n  \"description\": \"A comment : &gt; 3% of ‘critical’ software security bugs, in all of recorded history, have been found in the last month. This is on pace to find...\",\n  \"datePublished\": \"2026-11-13T03:10:50.435849+00:00\",\n  \"dateModified\": \"2026-11-13T03:10:50.435849+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:30.334918+00:00"
+  },
   "news/ai-security/ai-worm": {
     "slug": "news/ai-security/ai-worm",
     "meta_description": "Researchers have prototyped an AI-powered internet worm . The coolest thing about the prototype is that it carries its own LLM with it, and runs...",
@@ -4849,6 +4891,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AIs Exploiting Smart Contracts\",\n  \"description\": \"I have long maintained that smart contracts are a dumb idea: that a human process is actually a security feature. Here’s some interesting research...\",\n  \"datePublished\": \"2025-12-12T00:03:08.040398+00:00\",\n  \"dateModified\": \"2025-12-12T00:03:08.040398+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2025/12/ais-exploiting-smart-contracts.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2025/12/ais-exploiting-smart-contracts.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:48.613675+00:00"
+  },
+  "news/ai-security/ais-hacking-the-law": {
+    "slug": "news/ai-security/ais-hacking-the-law",
+    "meta_description": "In both a 2021 essay and my 2022 book, A Hacker’s Mind , I talk about AIs finding vulnerabilities and exploits—hacking—the legal system.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AIs Hacking the Law\",\n  \"description\": \"In both a 2021 essay and my 2022 book, A Hacker’s Mind , I talk about AIs finding vulnerabilities and exploits—hacking—the legal system.\",\n  \"datePublished\": \"2026-11-13T03:10:50.126707+00:00\",\n  \"dateModified\": \"2026-11-13T03:10:50.126707+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:29.929174+00:00"
   },
   "news/ai-security/alby-hub-critical-flaw-could-let-attackers-take-over-internet-exposed-bitcoin-wallets": {
     "slug": "news/ai-security/alby-hub-critical-flaw-could-let-attackers-take-over-internet-exposed-bitcoin-wallets",
@@ -5955,6 +6004,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CERT-UA Impersonation Campaign Spread AGEWHEEZE Malware to 1 Million Emails\",\n  \"description\": \"Ravie Lakshmanan Apr 01, 2026 Email Security / Artificial Intelligence The Computer Emergency Response Team of Ukraine (CERT-UA) has disclosed...\",\n  \"datePublished\": \"2026-04-02T05:34:56.653895+00:00\",\n  \"dateModified\": \"2026-04-02T05:34:56.653895+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/cert-ua-impersonation-campaign-spread.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/cert-ua-impersonation-campaign-spread.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T05:35:54.833606+00:00"
+  },
+  "news/ai-security/chainalysis-breach-exposes-all-users-credentials-forces-shutdown-of-key-services": {
+    "slug": "news/ai-security/chainalysis-breach-exposes-all-users-credentials-forces-shutdown-of-key-services",
+    "meta_description": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services\",\n  \"description\": \"Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed...\",\n  \"datePublished\": \"2026-11-13T03:10:49.159149+00:00\",\n  \"dateModified\": \"2026-11-13T03:10:49.159149+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:31.081227+00:00"
   },
   "news/ai-security/chainlit-ai-framework-flaws-enable-data-theft-via-file-read-and-ssrf-bugs": {
     "slug": "news/ai-security/chainlit-ai-framework-flaws-enable-data-theft-via-file-read-and-ssrf-bugs",
@@ -8293,6 +8349,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: New Giant Squid Video\",\n  \"description\": \"Pretty fantastic video from Japan of a giant squid eating another squid. As usual, you can also use this squid post to talk about the security...\",\n  \"datePublished\": \"2026-04-17T22:15:14.425986+00:00\",\n  \"dateModified\": \"2026-04-17T22:15:14.425986+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-new-giant-squid-video-2.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-new-giant-squid-video-2.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-17T22:16:06.517030+00:00"
+  },
+  "news/ai-security/friday-squid-blogging-new-jurassic-squid-predecessors": {
+    "slug": "news/ai-security/friday-squid-blogging-new-jurassic-squid-predecessors",
+    "meta_description": "News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen .” &gt; Scientists have identified the “fattest” belemnite...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: New Jurassic Squid Predecessors\",\n  \"description\": \"News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen .” &gt; Scientists have identified the “fattest” belemnite...\",\n  \"datePublished\": \"2026-11-13T03:10:49.522252+00:00\",\n  \"dateModified\": \"2026-11-13T03:10:49.522252+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:30.691259+00:00"
   },
   "news/ai-security/friday-squid-blogging-new-squid-species-discovered": {
     "slug": "news/ai-security/friday-squid-blogging-new-squid-species-discovered",
@@ -13572,6 +13635,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:10.339251+00:00"
   },
+  "news/ai-security/pinpointing-location-of-videos-from-background-airplane-sounds": {
+    "slug": "news/ai-security/pinpointing-location-of-videos-from-background-airplane-sounds",
+    "meta_description": "This is fascinating : &gt; The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Pinpointing Location of Videos from Background Airplane Sounds\",\n  \"description\": \"This is fascinating : &gt; The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its...\",\n  \"datePublished\": \"2026-11-13T03:10:49.841100+00:00\",\n  \"dateModified\": \"2026-11-13T03:10:49.841100+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:31.474213+00:00"
+  },
   "news/ai-security/please-dont-feed-the-scattered-lapsus-shinyhunters": {
     "slug": "news/ai-security/please-dont-feed-the-scattered-lapsus-shinyhunters",
     "meta_description": "A prolific data ransom gang that calls itself Scattered Lapsus ShinyHunters (SLSH) has a distinctive playbook when it seeks to extort payment from...",
@@ -17926,6 +17996,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-16T08:16:11.313599+00:00"
   },
+  "news/comp-journalism/around-90-of-uk-local-news-agencies-appear-to-have-closed-since-the-1980s": {
+    "slug": "news/comp-journalism/around-90-of-uk-local-news-agencies-appear-to-have-closed-since-the-1980s",
+    "meta_description": "Former news agency chief Don Leigh Britain’s once-thriving network of independent news agencies has shrunk from hundreds of businesses supplying...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Around 90% of UK local news agencies appear to have closed since the 1980s\",\n  \"description\": \"Former news agency chief Don Leigh Britain’s once-thriving network of independent news agencies has shrunk from hundreds of businesses supplying...\",\n  \"datePublished\": \"2026-11-13T03:11:21.013260+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:21.013260+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/wires_and_agencies/around-90-of-uk-local-news-agencies-appear-to-have-closed-since-the-1980s\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/wires_and_agencies/around-90-of-uk-local-news-agencies-appear-to-have-closed-since-the-1980s\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:35.956398+00:00"
+  },
   "news/comp-journalism/as-ai-data-centers-scale-investigating-their-impact-becomes-its-own-beat": {
     "slug": "news/comp-journalism/as-ai-data-centers-scale-investigating-their-impact-becomes-its-own-beat",
     "meta_description": "Data centers have long underpinned the internet as we know it, but the generative AI boom has ushered in a new era of rapid, largely unchecked...",
@@ -19795,6 +19872,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-02T04:22:28.534518+00:00"
   },
+  "news/comp-journalism/hyperlocal-publishers-bid-to-transform-reporting-in-southport-with-local-news-fund-boon": {
+    "slug": "news/comp-journalism/hyperlocal-publishers-bid-to-transform-reporting-in-southport-with-local-news-fund-boon",
+    "meta_description": "Left to right: W24ST founder Phil O’Brien, Stand Up For Southport founder and editor Andrew Brown and MP for Southport Patrick Hurley.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hyperlocal publisher’s bid to transform reporting in Southport with local news fund boon\",\n  \"description\": \"Left to right: W24ST founder Phil O’Brien, Stand Up For Southport founder and editor Andrew Brown and MP for Southport Patrick Hurley.\",\n  \"datePublished\": \"2026-11-13T03:11:19.958637+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:19.958637+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/regional-newspapers/hyperlocal-publishers-bid-to-transform-reporting-in-southport-with-local-news-fund-boon\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/regional-newspapers/hyperlocal-publishers-bid-to-transform-reporting-in-southport-with-local-news-fund-boon\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:35.112337+00:00"
+  },
   "news/comp-journalism/ib-times-freelance-reporter-earns-2-62-for-782-word-article": {
     "slug": "news/comp-journalism/ib-times-freelance-reporter-earns-2-62-for-782-word-article",
     "meta_description": "IB Times freelance article International Business Times UK is facing sharp criticism from contributors over its unpaid internship programme and a...",
@@ -19857,6 +19941,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Independent set to take over running Standard website\",\n  \"description\": \"The Standard website homepage on 20 January 2026 Editorial and commercial staff on the Standard website have been told they could be transferred...\",\n  \"datePublished\": \"2026-01-20T14:15:41.894498+00:00\",\n  \"dateModified\": \"2026-01-20T14:15:41.894498+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/independent-set-to-take-over-running-standard-website\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/independent-set-to-take-over-running-standard-website\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:20.951270+00:00"
+  },
+  "news/comp-journalism/indonesias-new-copyright-bill-would-force-google-and-meta-to-pay-to-aggregate-news": {
+    "slug": "news/comp-journalism/indonesias-new-copyright-bill-would-force-google-and-meta-to-pay-to-aggregate-news",
+    "meta_description": "On Wednesday, Meta, TikTok, and Google testified in the Indonesian parliament in opposition to a new copyright bill. The proposed law would...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Indonesia’s new copyright bill would force Google and Meta to pay to aggregate news\",\n  \"description\": \"On Wednesday, Meta, TikTok, and Google testified in the Indonesian parliament in opposition to a new copyright bill. The proposed law would...\",\n  \"datePublished\": \"2026-11-13T03:11:23.927086+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:23.927086+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/indonesias-new-copyright-bill-would-force-google-and-meta-to-pay-to-aggregate-news\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/indonesias-new-copyright-bill-would-force-google-and-meta-to-pay-to-aggregate-news\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:35.539287+00:00"
   },
   "news/comp-journalism/inside-the-secretive-contradictory-world-of-campaign-ads-funded-by-ai-super-pacs": {
     "slug": "news/comp-journalism/inside-the-secretive-contradictory-world-of-campaign-ads-funded-by-ai-super-pacs",
@@ -20551,6 +20642,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-23T03:05:31.122745+00:00"
   },
+  "news/comp-journalism/most-major-uk-news-publishers-saw-google-search-visibility-fall-in-2026": {
+    "slug": "news/comp-journalism/most-major-uk-news-publishers-saw-google-search-visibility-fall-in-2026",
+    "meta_description": "Google search for ‘UK budget’ on 28 October 2026 brought up an AI Overview with a link carousel highlighting the BBC, The Guardian and The...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Most major UK news publishers saw Google search visibility fall in 2026\",\n  \"description\": \"Google search for ‘UK budget’ on 28 October 2026 brought up an AI Overview with a link carousel highlighting the BBC, The Guardian and The...\",\n  \"datePublished\": \"2026-11-13T03:11:22.593882+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:22.593882+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/media-audience-and-business-data/most-major-uk-news-publishers-saw-google-search-visibility-fall-in-2026\"\n  },\n  \"url\": \"https://pressgazette.co.uk/media-audience-and-business-data/most-major-uk-news-publishers-saw-google-search-visibility-fall-in-2026\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:36.270412+00:00"
+  },
   "news/comp-journalism/most-serious-allegation-struck-out-of-prince-harry-mail-privacy-trial": {
     "slug": "news/comp-journalism/most-serious-allegation-struck-out-of-prince-harry-mail-privacy-trial",
     "meta_description": "Prince Harry, the Duke of Sussex arrives at the Royal Courts Of Justice in London on Monday 19 January 2026 for the start of his trial with six...",
@@ -20865,6 +20963,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"News diary 9-15 March: MPs vote on child social media limits, UN Security Council discusses Iran sanctions, Oscars\",\n  \"description\": \"Oscar winners holding their awards in the photo room at the 89th Annual Academy Awards at Dolby Theatre, Los Angeles. Picture: Featureflash Photo...\",\n  \"datePublished\": \"2026-03-06T22:53:17.679251+00:00\",\n  \"dateModified\": \"2026-03-06T22:53:17.679251+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/news-diary-9-15-march-mps-vote-on-child-social-media-limits-un-security-council-discusses-iran-sanctions-oscars\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/news-diary-9-15-march-mps-vote-on-child-social-media-limits-un-security-council-discusses-iran-sanctions-oscars\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T05:28:43.941839+00:00"
+  },
+  "news/comp-journalism/news-diary-9-15-november-russia-ukraine-peace-talks-cop31-climate-summit-kings-78th-birthday": {
+    "slug": "news/comp-journalism/news-diary-9-15-november-russia-ukraine-peace-talks-cop31-climate-summit-kings-78th-birthday",
+    "meta_description": "FotoField / Shutterstock.com One to watch: Recent reporting suggests Alan Milburn’s report on youth inactivity and NEETs could be imminent.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"News diary 9-15 November: Russia-Ukraine peace talks, COP31 climate summit, King’s 78th birthday\",\n  \"description\": \"FotoField / Shutterstock.com One to watch: Recent reporting suggests Alan Milburn’s report on youth inactivity and NEETs could be imminent.\",\n  \"datePublished\": \"2026-11-13T03:11:23.594416+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:23.594416+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/news-diary-9-15-november-russia-ukraine-peace-talks-cop31-climate-summit-kings-78th-birthday\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/news-diary-9-15-november-russia-ukraine-peace-talks-cop31-climate-summit-kings-78th-birthday\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T03:11:34.641901+00:00"
   },
   "news/comp-journalism/news-diary-february-16-22-covid-inquiry-enters-final-stage-baftas-chinese-new-year": {
     "slug": "news/comp-journalism/news-diary-february-16-22-covid-inquiry-enters-final-stage-baftas-chinese-new-year",
