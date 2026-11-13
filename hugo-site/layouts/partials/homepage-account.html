@@ -1,0 +1,20 @@
+{{- with site.GetPage "/homepage-fragments/adult-sequence" -}}
+<section class="home-account" aria-labelledby="home-account-title" id="start-here">
+  <header class="home-account-header">
+    <p class="ou-section-label">Reporter disclosures · Ekewaka Lono</p>
+    <h1 id="home-account-title">{{ .Title }}</h1>
+    <p class="home-account-intro">{{ .Description }}</p>
+    <a href="#supporting-records">Supporting records and reporting &darr;</a>
+  </header>
+  <div class="home-account-layout">
+    <nav class="home-account-contents" aria-label="Account sections">
+      <p class="ou-section-label">In this account</p>
+      {{ .TableOfContents }}
+      <a href="#supporting-records">Supporting records and reporting</a>
+    </nav>
+    <article class="home-account-body" aria-label="Adult sequence: 25 entries">
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+{{- end -}}

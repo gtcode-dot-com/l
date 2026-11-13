@@ -1,3 +1,8 @@
+{{- if site.Params.alternative_homepage -}}
+{{ with site.GetPage "/homepage-alternative" }}# {{ .Title }}
+
+{{ .RawContent }}{{ end }}
+{{- else -}}
 {{- $page := . -}}{{- $active := partial "exception/resolve-active-page.html" $page -}}{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}# {{ $active.Title | default site.Title }}
 
 > {{ $active.Description | default site.Params.description }}
@@ -25,6 +30,15 @@ This site publishes: (1) Oahu Underground — independent investigative journali
 - Hawaii courts hub: {{ "hawaii-courts/" | absURL }}
 - Full investigation archive: {{ "investigation/" | absURL }}
 - Research portfolios: {{ "portfolios/" | absURL }}
+{{- end }}
+{{- if not $isActiveException }}
+{{ with site.GetPage "/homepage-fragments/adult-sequence" }}
+## Homepage: {{ .Title }}
+
+{{ .Description }}
+
+[Read the full account]({{ site.Home.Permalink }}#start-here)
+{{ end }}
 {{- end }}
 {{- if not $isActiveException }}
 {{- with site.GetPage "/investigation" }}
@@ -96,3 +110,5 @@ Do not merge these court files with the source archive, PRC-facing access mappin
 {{- end }}
 {{ end }}{{ end }}
 {{- end }}
+
+{{- end -}}

@@ -45,14 +45,6 @@
   {{- $lead = index $investigationPages 0 -}}
 {{- end -}}
 {{- $carto := .Site.GetPage "/disclosures/cartography-for-guppies" -}}
-{{- $heroHeadline := $active.Params.hero_headline | default "The Nod" -}}
-{{- $homeHeroImage := $active.Params.hero_image | default "/img/ou-the-nod-og-1200x630.jpg" -}}
-{{- if and (or (hasPrefix $homeHeroImage "https://") (hasPrefix $homeHeroImage "http://")) (urls.Parse $homeHeroImage) -}}
-  {{- $heroParsed := urls.Parse $homeHeroImage -}}
-  {{- with $heroParsed.Path -}}
-    {{- $homeHeroImage = . -}}
-  {{- end -}}
-{{- end -}}
 {{- $consultingPage := .Site.GetPage "section" "consulting" -}}
 {{- $consultingURL := "/consulting/" -}}
 {{- if $consultingPage }}{{ $consultingURL = $consultingPage.RelPermalink }}{{ end -}}
@@ -263,49 +255,25 @@
         </div>
       </section>
       {{ else }}
-      <!-- Hero Banner -->
-      <section class="ou-hero">
-        <div class="ou-hero-image">
-          {{ partial "media/responsive-image.html" (dict
-            "page" $page
-            "src" $homeHeroImage
-            "alt" ($active.Params.hero_image_alt | default "Oahu Underground investigative reporting in Hawaii")
-            "slot" "hero_banner"
-            "loading" "lazy"
-            "width" 1600
-            "height" 475
-          ) }}
-        </div>
-        <div class="ou-hero-overlay"></div>
-        <div class="ou-hero-content">
-          <p class="ou-hero-kicker"><a href="{{ $active.Params.hero_kicker_url | default "/hawaii-courts/" }}" class="ou-hero-kicker-link">{{ $active.Params.hero_kicker | default "Legal Analysis" }}</a></p>
-          <h1 class="ou-hero-headline">{{ $heroHeadline }}</h1>
-          <p class="ou-hero-subtitle">{{ $active.Params.hero_subtitle | default "A firsthand account of a reported courtroom signal and the sealed audio sequence that could test it." }}</p>
-          <div class="ou-hero-actions">
-            <a class="ou-hero-cta ou-hero-cta-primary" href="{{ $active.Params.hero_primary_cta_url | default "/hawaii-courts/the-nod-visual-allegation/" }}">{{ $active.Params.hero_primary_cta_label | default "Start with The Nod" }}</a>
-            <a class="ou-hero-cta ou-hero-cta-secondary" href="{{ $active.Params.hero_secondary_cta_url | default "/hawaii-courts/" }}">{{ $active.Params.hero_secondary_cta_label | default "Open Hawaii Courts Hub" }}</a>
-          </div>
-          <p class="ou-hero-brand">{{ $brandName }}</p>
-        </div>
-      </section>
-
-      {{ if .Site.Params.show_home_neutralization_stack }}
-      {{ partial "neutralization-stack.html" . }}
-      {{ end }}
+      {{ partial "homepage-account.html" . }}
 
       <!-- Short reading route into the lead investigation. -->
-      <section class="ou-section" id="featured-investigations">
-        <div class="ou-section-wide"{{ if not .Site.Params.show_home_neutralization_stack }} id="start-here"{{ end }}>
+      <section class="ou-section" id="supporting-records">
+        <div class="ou-section-wide">
 
           <div class="ou-section-body ou-reading-route" id="lead-investigation">
-            <p class="ou-section-label">Start Here · Hawaii Courts</p>
-            <h2 class="ou-section-heading">One hearing, three ways to read it</h2>
+            <p class="ou-section-label">Supporting records · Hawaii Courts</p>
+            <h2 class="ou-section-heading">Supporting records and reporting</h2>
             <p>The author reports that Judge Wilson Loo signaled an answer to a witness and interrupted his attempt to describe it for the record. The audio is sealed and cannot show the gesture. The allegation has not been independently established.</p>
             <ol>
               <li><a href="/hawaii-courts/the-nod-visual-allegation/">The Nod</a> — a short account of the reported signal and the limits of the audio record.</li>
               <li><a href="/hawaii-courts/two-questions-wilson-loo/">The Two Questions</a> — the witness questions and records that could test the account.</li>
               <li><a href="/hawaii-courts/reporting-duty-hrpc-8-3b/">The Reporting Duty</a> — the full analysis of intent, professional duties, and sealed-record access.</li>
             </ol>
+          </div>
+
+          <div class="ou-section-body">
+            <p>Longer firsthand accounts: <a href="/disclosures/before-the-tax-office/">Before the Tax Office</a> and <a href="/disclosures/prior-law-enforcement-contact/">Prior Law Enforcement Contact and Civic Overlap</a>. <a href="/hawaii-courts/information-trail-2015-2022/">The Information Trail</a> identifies open questions and records to obtain. These accounts distinguish firsthand reports, public sources, and inference; linked accounts are not independent corroboration.</p>
           </div>
 
           {{ with $lead }}
@@ -327,6 +295,10 @@
         </div>
       </section>
       {{ end }}
+      {{ end }}
+
+      {{ if .Site.Params.show_home_neutralization_stack }}
+      {{ partial "neutralization-stack.html" . }}
       {{ end }}
 
       <!-- Research Portfolios -->
@@ -498,7 +470,7 @@
           </div>
           <div class="ou-share-links">
             <span class="ou-share-label">Share this page:</span>
-            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgtcode.com%2F&amp;text=Oahu%20Underground%20%E2%80%94%20independent%20investigative%20reporting%20from%20Hawaii" rel="noopener" target="_blank" aria-label="Share on X">X</a>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgtcode.com%2F&amp;text=Oahu%20Underground%20%E2%80%94%20firsthand%20account%20and%20investigative%20allegations" rel="noopener" target="_blank" aria-label="Share on X">X</a>
             <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgtcode.com%2F" rel="noopener" target="_blank" aria-label="Share on LinkedIn">LinkedIn</a>
             <a href="mailto:?subject=Oahu%20Underground&amp;body=Independent%20investigative%20reporting%20from%20Hawaii%3A%20https%3A%2F%2Fgtcode.com%2F" aria-label="Share via email">Email</a>
           </div>

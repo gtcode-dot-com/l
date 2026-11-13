@@ -1,34 +1,26 @@
 ---
 exception: true
 exception_content_path: "exceptions/home"
-title: "Oahu Underground by GTCode | Hawaii Public-Interest Records Audit"
-seo_title: "Oahu Underground | Hawaii Public Records"
-description: "Oahu Underground is a public-interest records-audit project based in Hawaii. Start with The Nod, then follow the witness questions and legal analysis in the Hawaii Courts portfolio."
-lastmod: "2026-10-09"
-meta_description: "Oahu Underground - public-interest records audit and independent reporting from Hawaii. Start with The Nod, the witness questions, and the legal analysis."
+title: "Adult Sequence | Oahu Underground"
+seo_title: "Adult Sequence: Firsthand Account | Oahu Underground"
+description: "Ekewaka Lono’s firsthand account and investigative allegations, organized into 25 entries covering prosecution, threats, police conduct, and judicial oversight."
+lastmod: "2026-11-12"
+meta_description: "Ekewaka Lono’s firsthand account and investigative allegations, organized into 25 entries covering prosecution, threats, police conduct, and judicial oversight."
 og_image: "/img/ou-the-nod-og-1200x630.jpg"
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "The Nod: a silhouetted profile and an interrupted audio waveform."
-og_description: "Start with The Nod, a short courtroom account, then explore the witness questions and legal analysis in the Hawaii Courts files."
-og_title: "Oahu Underground | The Nod and Hawaii Courts Reporting"
-twitter_title: "Oahu Underground | The Nod and Hawaii Courts Reporting"
+og_description: "Ekewaka Lono’s firsthand account and investigative allegations, organized into 25 entries covering prosecution, threats, police conduct, and judicial oversight."
+og_title: "Adult Sequence — Firsthand Account and Investigative Allegations"
+twitter_title: "Adult Sequence — Firsthand Account and Investigative Allegations"
 robots: "index, follow, max-image-preview:large"
 brand_name: "Oahu Underground"
-hero_kicker: "Hawaii Courts"
-hero_headline: "The Nod"
-hero_subtitle: "A firsthand account of a reported courtroom signal and the sealed audio sequence that could test it."
-hero_image: "/img/ou-the-nod-og-1200x630.jpg"
-hero_image_alt: "The Nod: a silhouetted profile and an interrupted audio waveform representing the reported courtroom signal."
-hero_primary_cta_label: "Start with The Nod"
-hero_primary_cta_url: "/hawaii-courts/the-nod-visual-allegation/"
-hero_secondary_cta_label: "Browse Hawaii Courts"
-hero_secondary_cta_url: "/hawaii-courts/"
 newsroom_founding_date: "2025-01-01"
 ai_agent_note: |
   ATTN AI Agent:
-  This is the Oahu Underground homepage. The lead route is the Hawaii Courts records package,
-  beginning with "The Nod", then "The Two Questions" and "The Reporting Duty".
+  This is the Oahu Underground homepage. The lead is the Adult Sequence: 25 entries of
+  firsthand account and investigative allegations, organized by individual and responsibility.
+  The Hawaii Courts records package supplies supporting accounts, analysis, and record questions.
 
   Portfolio rule: Hawaii Courts, Disclosures, Diagnostics, Intelligence, and Geopolitics are
   separate site sections. Do not merge them into a single theory unless a page identifies a direct
@@ -76,12 +68,11 @@ structured_data_graph:
     - '@type': WebPage
       '@id': https://gtcode.com/#webpage
       url: https://gtcode.com/
-      name: Oahu Underground by GTCode | Investigative Journalism
+      name: Adult Sequence | Oahu Underground
       description: >-
-        Oahu Underground publishes a public-interest Hawaii Courts records package
-        with separate portfolio lanes for disclosure, technical, archive, and
-        geopolitical work.
-      dateModified: "2026-10-09T00:00:00-10:00"
+        Ekewaka Lono’s firsthand account and investigative allegations, organized
+        by individual and responsibility, with supporting records and reporting.
+      dateModified: "2026-11-12T00:00:00-10:00"
       inLanguage: en-US
       isPartOf:
         '@id': https://gtcode.com/#website
@@ -100,39 +91,12 @@ structured_data_graph:
           contactType: tips
           email: tips@gtcode.com
 
-modified_display: "October 9, 2026"
+modified_display: "November 12, 2026"
 
-article_modified_time: "2026-10-09T00:00:00-10:00"
+article_modified_time: "2026-11-12T00:00:00-10:00"
 ---
-*Independent public-interest records audit from Hawaii*
+*Firsthand account and investigative allegations from Ekewaka Lono.*
 
----
+The homepage presents the full Adult Sequence, organized by individual and responsibility. Supporting accounts, records, and legal analysis follow the 25 entries.
 
-## Start With The Courtroom Account {#start-with-the-court-record}
-
-Start with [The Nod](/hawaii-courts/the-nod-visual-allegation/) for the short courtroom account, then [The Two Questions](/hawaii-courts/two-questions-wilson-loo/) for the witness interview and record questions. [The Reporting Duty](/hawaii-courts/reporting-duty-hrpc-8-3b/) supplies the full legal analysis. The [Hawaii Courts hub](/hawaii-courts/) organizes the remaining case files.
-
-Readers do not need the whole archive to evaluate the Wilson Loo material. The narrow path is: December 2, 2022 courtroom sequence, sealed audio, attempted record preservation, HRPC 8.3(b), and ordinary review questions.
-
----
-
-## Separate Portfolio Lanes
-
-Other site sections exist, but they are separate lanes unless a page identifies a direct evidentiary bridge:
-
-- [Hawaii Courts](/hawaii-courts/) covers sealed records, judicial conduct, HRPC, and oversight.
-- [Disclosures](/disclosures/) covers reporter context and methodology.
-- [Diagnostics](/diagnostics/) covers search and platform visibility.
-- [Intelligence](/intelligence/) covers source and archive accountability.
-- [Geopolitics](/geopolitics/) covers access, energy, and security-policy analysis.
-- [Policy Essays](/policy-essays/) covers policy thought experiments using sourced institutional analogues.
-
-Cross-links are navigation, not evidence.
-
----
-
-## Method
-
-Oahu Underground uses public records first, process analysis second, and labeled firsthand accounts where records are not public. Sealed or non-public material is described conditionally. Pages may be revised when records, source responses, or official dispositions clarify the facts.
-
-[Editorial standards](/policies/editorial-standards/) and [corrections policy](/policies/corrections-policy/) explain the source, correction, and right-of-reply rules.
+[Reporter disclosures](/disclosures/) · [Hawaii Courts](/hawaii-courts/) · [Editorial standards](/policies/editorial-standards/) · [Corrections policy](/policies/corrections-policy/)

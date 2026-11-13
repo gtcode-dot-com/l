@@ -566,6 +566,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-22T20:29:50.876357+00:00"
   },
+  "news/ai-research/botpsy-on-device-personal-assistant-with-a-sub-billion-parameter-agentic-language-model": {
+    "slug": "news/ai-research/botpsy-on-device-personal-assistant-with-a-sub-billion-parameter-agentic-language-model",
+    "meta_description": "Frontier cloud LLMs carry high operational costs that can fluctuate unexpectedly, and relying on such third-party models introduces...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model\",\n  \"description\": \"Frontier cloud LLMs carry high operational costs that can fluctuate unexpectedly, and relying on such third-party models introduces...\",\n  \"datePublished\": \"2026-11-13T01:17:11.374582+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:11.374582+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/qvac/botpsy\"\n  },\n  \"url\": \"https://huggingface.co/blog/qvac/botpsy\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:37.682320+00:00"
+  },
   "news/ai-research/brian-hedden-named-co-associate-dean-of-social-and-ethical-responsibilities-of-computing": {
     "slug": "news/ai-research/brian-hedden-named-co-associate-dean-of-social-and-ethical-responsibilities-of-computing",
     "meta_description": "Brian Hedden PhD ’12 has been appointed co-associate dean of the Social and Ethical Responsibilities of Computing (SERC) at MIT, a cross-cutting...",
@@ -1209,6 +1216,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips\",\n  \"description\": \"Today, we’re rolling out Gemini Omni 1.2 Flash, and making it generally available across the Gemini API and Gemini for business . Gemini Omni 1.\",\n  \"datePublished\": \"2026-11-08T05:50:02.905502+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:02.905502+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-08T05:50:26.203875+00:00"
+  },
+  "news/ai-research/gemini-robotics-2-5-accelerates-real-world-general-dexterity": {
+    "slug": "news/ai-research/gemini-robotics-2-5-accelerates-real-world-general-dexterity",
+    "meta_description": "November 10, 2026 Models Carolina Parada Copied Weâre enabling robots to learn faster for the real world - from everyday skills to the factory...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Gemini Robotics 2.5 accelerates real-world general dexterity\",\n  \"description\": \"November 10, 2026 Models Carolina Parada Copied Weâre enabling robots to learn faster for the real world - from everyday skills to the factory...\",\n  \"datePublished\": \"2026-11-13T01:17:09.630334+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:09.630334+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence\"\n  },\n  \"url\": \"https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:36.678221+00:00"
   },
   "news/ai-research/gemini-robotics-2-brings-whole-body-intelligence-to-robots": {
     "slug": "news/ai-research/gemini-robotics-2-brings-whole-body-intelligence-to-robots",
@@ -2399,6 +2413,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Linguistic Bias in ChatGPT: Language Models Reinforce Dialect Discrimination\",\n  \"description\": \"Sample language model responses to different varieties of English and native speaker reactions. ChatGPT does amazingly well at communicating with...\",\n  \"datePublished\": \"2026-02-17T00:39:32.632666+00:00\",\n  \"dateModified\": \"2026-02-17T00:39:32.632666+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2024/09/20/linguistic-bias\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2024/09/20/linguistic-bias\"\n}",
     "agent_callout": "",
     "generated_at": "2026-02-17T00:40:06.950268+00:00"
+  },
+  "news/ai-research/llmon-an-llm-native-markup-language-now-in-granite-4-1-3b-and-8b": {
+    "slug": "news/ai-research/llmon-an-llm-native-markup-language-now-in-granite-4-1-3b-and-8b",
+    "meta_description": "LLMs rely on their context to generate the next set of tokens. Over a long trajectory, the context fills with numerous types of components: a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B\",\n  \"description\": \"LLMs rely on their context to generate the next set of tokens. Over a long trajectory, the context fills with numerous types of components: a...\",\n  \"datePublished\": \"2026-11-13T01:17:10.155420+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:10.155420+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:36.250654+00:00"
   },
   "news/ai-research/llms-help-robots-understand-vague-instructions-and-focus-on-key-details": {
     "slug": "news/ai-research/llms-help-robots-understand-vague-instructions-and-focus-on-key-details",
@@ -3632,6 +3653,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-11T01:37:07.888754+00:00"
   },
+  "news/ai-research/the-definitive-fine-tuning-guide-for-3d-generation-models": {
+    "slug": "news/ai-research/the-definitive-fine-tuning-guide-for-3d-generation-models",
+    "meta_description": "[](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/3d-lora-finetuning/soleorbitbasevslora.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Definitive Fine-Tuning Guide for 3D Generation Models\",\n  \"description\": \"[](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/3d-lora-finetuning/soleorbitbasevslora.\",\n  \"datePublished\": \"2026-11-13T01:17:10.844336+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:10.844336+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/3d-lora-finetuning\"\n  },\n  \"url\": \"https://huggingface.co/blog/3d-lora-finetuning\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:37.341454+00:00"
+  },
   "news/ai-research/the-effects-of-an-algorithmic-monoculture-depend-on-the-details": {
     "slug": "news/ai-research/the-effects-of-an-algorithmic-monoculture-depend-on-the-details",
     "meta_description": "AI tools are increasingly replacing human judgements in some settings. For instance, resume screening algorithms are often used in hiring, where...",
@@ -3736,6 +3764,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tod Machover receives George Peabody Medal for contributions to music and technology\",\n  \"description\": \"Tod Machover, the Muriel R. Cooper Professor of Music and Media, faculty director of the MIT Media Lab, and director of the Opera of the Future...\",\n  \"datePublished\": \"2026-06-10T03:42:43.623490+00:00\",\n  \"dateModified\": \"2026-06-10T03:42:43.623490+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/tod-machover-receives-george-peabody-medal-0603\"\n  },\n  \"url\": \"https://news.mit.edu/2026/tod-machover-receives-george-peabody-medal-0603\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-10T03:43:18.403561+00:00"
+  },
+  "news/ai-research/token-pooling-aware-training-for-multi-vector-embedding-models": {
+    "slug": "news/ai-research/token-pooling-aware-training-for-multi-vector-embedding-models",
+    "meta_description": "Multi-vector embedding models give each query token its own opportunity to find a match in a document. This makes them wonderfully expressive for...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Token Pooling-Aware Training for Multi-Vector Embedding Models\",\n  \"description\": \"Multi-vector embedding models give each query token its own opportunity to find a match in a document. This makes them wonderfully expressive for...\",\n  \"datePublished\": \"2026-11-13T01:17:12.075877+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:12.075877+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/token-pooling\"\n  },\n  \"url\": \"https://huggingface.co/blog/token-pooling\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:37.015550+00:00"
   },
   "news/ai-research/tokenization-in-transformers-v5-simpler-clearer-and-more-modular": {
     "slug": "news/ai-research/tokenization-in-transformers-v5-simpler-clearer-and-more-modular",
@@ -8994,6 +9029,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:21.628328+00:00"
   },
+  "news/ai-security/hackers-target-openssh-sshole-flaw-within-hours-of-disclosure-gain-root-on-honeypot": {
+    "slug": "news/ai-security/hackers-target-openssh-sshole-flaw-within-hours-of-disclosure-gain-root-on-honeypot",
+    "meta_description": "Ravie Lakshmanan Nov 06, 2026 Vulnerability / Cyber Attack Threat actors are attempting to exploit a recently disclosed security flaw impacting...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot\",\n  \"description\": \"Ravie Lakshmanan Nov 06, 2026 Vulnerability / Cyber Attack Threat actors are attempting to exploit a recently disclosed security flaw impacting...\",\n  \"datePublished\": \"2026-11-13T01:16:55.461200+00:00\",\n  \"dateModified\": \"2026-11-13T01:16:55.461200+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:35.061892+00:00"
+  },
   "news/ai-security/hackers-use-compromised-connectwise-credential-to-sign-in-to-173-microsoft-365-tenants": {
     "slug": "news/ai-security/hackers-use-compromised-connectwise-credential-to-sign-in-to-173-microsoft-365-tenants",
     "meta_description": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft...",
@@ -11381,6 +11423,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-02T04:16:24.016200+00:00"
   },
+  "news/ai-security/malicious-browser-extensions-could-use-claude-dispatch-to-run-code-on-users-computers": {
+    "slug": "news/ai-security/malicious-browser-extensions-could-use-claude-dispatch-to-run-code-on-users-computers",
+    "meta_description": "Swati Khandelwal Nov 06, 2026 Artificial Intelligence / Browser Security A browser extension that can run scripts on claude.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers\",\n  \"description\": \"Swati Khandelwal Nov 06, 2026 Artificial Intelligence / Browser Security A browser extension that can run scripts on claude.\",\n  \"datePublished\": \"2026-11-13T01:16:56.293496+00:00\",\n  \"dateModified\": \"2026-11-13T01:16:56.293496+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:34.176839+00:00"
+  },
   "news/ai-security/malicious-chrome-extension-steals-mexc-api-keys-by-masquerading-as-trading-tool": {
     "slug": "news/ai-security/malicious-chrome-extension-steals-mexc-api-keys-by-masquerading-as-trading-tool",
     "meta_description": "Jan 13, 2026 Ravie Lakshmanan Web Security / Online Fraud Cybersecurity researchers have disclosed details of a malicious Google Chrome extension...",
@@ -11849,6 +11898,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Office Zero-Day (CVE-2026-21509) - Emergency Patch Issued for Active Exploitation\",\n  \"description\": \"Ravie Lakshmanan Jan 27, 2026 Zero-Day / Vulnerability Microsoft on Monday issued out-of-band security patches for a high-severity Microsoft...\",\n  \"datePublished\": \"2026-01-27T10:15:12.726938+00:00\",\n  \"dateModified\": \"2026-01-27T10:15:12.726938+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:43.098498+00:00"
+  },
+  "news/ai-security/microsoft-paint-rce-fix-now-available-but-windows-update-won-t-deliver-it": {
+    "slug": "news/ai-security/microsoft-paint-rce-fix-now-available-but-windows-update-won-t-deliver-it",
+    "meta_description": "Swati Khandelwal Nov 06, 2026 Vulnerability / Windows Security A fix for CVE-2026-83844 , a remote code execution flaw in Windows Paint, is now in...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It\",\n  \"description\": \"Swati Khandelwal Nov 06, 2026 Vulnerability / Windows Security A fix for CVE-2026-83844 , a remote code execution flaw in Windows Paint, is now in...\",\n  \"datePublished\": \"2026-11-13T01:16:56.019265+00:00\",\n  \"dateModified\": \"2026-11-13T01:16:56.019265+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:34.554611+00:00"
   },
   "news/ai-security/microsoft-patch-tuesday-april-2026-tue-apr-14th": {
     "slug": "news/ai-security/microsoft-patch-tuesday-april-2026-tue-apr-14th",
@@ -13193,6 +13249,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenAI Launches GPT-5.4-Cyber with Expanded Access for Security Teams\",\n  \"description\": \"Ravie Lakshmanan Apr 15, 2026 Vulnerability / Secure Coding OpenAI on Tuesday unveiled GPT-5.4-Cyber , a variant of its latest flagship model,...\",\n  \"datePublished\": \"2026-04-15T06:15:15.020448+00:00\",\n  \"dateModified\": \"2026-04-15T06:15:15.020448+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-15T06:16:13.658372+00:00"
+  },
+  "news/ai-security/openai-launches-gpt-6-cyber-after-ai-helps-find-81-firefox-flaws-948-linux-exploits": {
+    "slug": "news/ai-security/openai-launches-gpt-6-cyber-after-ai-helps-find-81-firefox-flaws-948-linux-exploits",
+    "meta_description": "Ravie Lakshmanan Nov 06, 2026 Artificial Intelligence / Software Security OpenAI on Thursday unveiled GPT‑6 Cyber , which it described as a major...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits\",\n  \"description\": \"Ravie Lakshmanan Nov 06, 2026 Artificial Intelligence / Software Security OpenAI on Thursday unveiled GPT‑6 Cyber , which it described as a major...\",\n  \"datePublished\": \"2026-11-13T01:16:55.769290+00:00\",\n  \"dateModified\": \"2026-11-13T01:16:55.769290+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:35.443217+00:00"
   },
   "news/ai-security/openai-parts-ways-with-three-safety-researchers-over-sensitive-information-mishandling": {
     "slug": "news/ai-security/openai-parts-ways-with-three-safety-researchers-over-sensitive-information-mishandling",
@@ -15251,6 +15314,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The First 90 Seconds: How Early Decisions Shape Incident Response Investigations\",\n  \"description\": \"Many incident response failures do not come from a lack of tools, intelligence, or technical skills. They come from what happens immediately after...\",\n  \"datePublished\": \"2026-02-04T12:15:14.724901+00:00\",\n  \"dateModified\": \"2026-02-04T12:15:14.724901+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/the-first-90-seconds-how-early.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/the-first-90-seconds-how-early.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:07.205195+00:00"
+  },
+  "news/ai-security/the-flood-is-coming-and-the-pipes-were-already-full": {
+    "slug": "news/ai-security/the-flood-is-coming-and-the-pipes-were-already-full",
+    "meta_description": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier .",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Flood is Coming And The Pipes Were Already Full\",\n  \"description\": \"An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier .\",\n  \"datePublished\": \"2026-11-13T01:16:56.615411+00:00\",\n  \"dateModified\": \"2026-11-13T01:16:56.615411+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:35.908894+00:00"
   },
   "news/ai-security/the-future-of-ai-cryptanalysis": {
     "slug": "news/ai-security/the-future-of-ai-cryptanalysis",
@@ -19543,6 +19613,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-11T19:52:56.885900+00:00"
   },
+  "news/comp-journalism/how-attitude-magazine-is-cashing-in-on-apple-news": {
+    "slug": "news/comp-journalism/how-attitude-magazine-is-cashing-in-on-apple-news",
+    "meta_description": "Covers for two issues of digital magazine Attitude Uncut. Pictures: Attitude LGBTQ+ magazine Attitude has more than doubled its Apple News revenue...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"How Attitude magazine is cashing in on Apple News\",\n  \"description\": \"Covers for two issues of digital magazine Attitude Uncut. Pictures: Attitude LGBTQ+ magazine Attitude has more than doubled its Apple News revenue...\",\n  \"datePublished\": \"2026-11-13T01:17:27.325298+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:27.325298+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/magazines/attitude-apple-news-uncut-magazine\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/magazines/attitude-apple-news-uncut-magazine\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:40.148184+00:00"
+  },
   "news/comp-journalism/how-dave-jorgenson-took-the-washington-post-video-audience-with-him": {
     "slug": "news/comp-journalism/how-dave-jorgenson-took-the-washington-post-video-audience-with-him",
     "meta_description": "Dave Jorgenson presenting news on Washington Post cuts and AI companies for Local News International (LNI). Picture: Youtube Shorts The Washington...",
@@ -20810,6 +20887,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:07:29.383995+00:00"
   },
+  "news/comp-journalism/news-uk-provides-major-funding-for-first-national-journalists-memorial": {
+    "slug": "news/comp-journalism/news-uk-provides-major-funding-for-first-national-journalists-memorial",
+    "meta_description": "End of Copy, winning design by Wolfgang Buttress for UK’s first national memorial to journalists killed in conflict News UK has become the first...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"News UK provides major funding for first national journalists’ memorial\",\n  \"description\": \"End of Copy, winning design by Wolfgang Buttress for UK’s first national memorial to journalists killed in conflict News UK has become the first...\",\n  \"datePublished\": \"2026-11-13T01:17:28.221733+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:28.221733+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/news-uk-provides-major-funding-for-first-national-journalists-memorial\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/news-uk-provides-major-funding-for-first-national-journalists-memorial\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:38.065966+00:00"
+  },
   "news/comp-journalism/newsbrand-launched-by-ex-observer-staff-expands-team-six-months-on": {
     "slug": "news/comp-journalism/newsbrand-launched-by-ex-observer-staff-expands-team-six-months-on",
     "meta_description": "The Nerve team including co-founders and new hires at the International Journalism Festival in Perugia in April 2026. Picture: Supplied The Nerve,...",
@@ -21468,6 +21552,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-23T05:48:40.536406+00:00"
   },
+  "news/comp-journalism/russell-brand-trial-video-shows-push-10m-views-but-audio-still-king-says-mail-podcast-chief": {
+    "slug": "news/comp-journalism/russell-brand-trial-video-shows-push-10m-views-but-audio-still-king-says-mail-podcast-chief",
+    "meta_description": "Russell Brand trial podcasts reached nearly 10m views on Youtube. Picture: Collage / Shutterstock Five dedicated podcasts sprung up to cover the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Russell Brand trial: Video shows push 10m views but audio still ‘king’ says Mail podcast chief\",\n  \"description\": \"Russell Brand trial podcasts reached nearly 10m views on Youtube. Picture: Collage / Shutterstock Five dedicated podcasts sprung up to cover the...\",\n  \"datePublished\": \"2026-11-13T01:17:25.979753+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:25.979753+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/podcasts/russell-brand-trial-video-shows-push-10m-views-but-audio-still-king-says-mail-podcast-chief\"\n  },\n  \"url\": \"https://pressgazette.co.uk/podcasts/russell-brand-trial-video-shows-push-10m-views-but-audio-still-king-says-mail-podcast-chief\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:38.401865+00:00"
+  },
   "news/comp-journalism/russias-grain-smuggling-fleet-continues-undeterred": {
     "slug": "news/comp-journalism/russias-grain-smuggling-fleet-continues-undeterred",
     "meta_description": "An investigation by Bellingcat has identified yet another Russian-flagged bulk carrier, Irtysh (IMO: 9664976), operating in defiance of Western...",
@@ -21719,6 +21810,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Stories came from lonely celebs and ‘hangers on’ says former Mail on Sunday editor\",\n  \"description\": \"The Mail on Sunday, 30 April 2023 Celebrities are often lonely and confide in journalists, according to former Mail on Sunday editor Peter Wright...\",\n  \"datePublished\": \"2026-03-09T23:27:41.035893+00:00\",\n  \"dateModified\": \"2026-03-09T23:27:41.035893+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/stories-came-from-lonely-celebs-and-hangers-on-says-former-mail-on-sunday-editor\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/stories-came-from-lonely-celebs-and-hangers-on-says-former-mail-on-sunday-editor\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T23:27:50.070460+00:00"
+  },
+  "news/comp-journalism/student-journalists-are-reporting-more-local-news-for-real-audiences-their-professors-are-exhausted": {
+    "slug": "news/comp-journalism/student-journalists-are-reporting-more-local-news-for-real-audiences-their-professors-are-exhausted",
+    "meta_description": "If there’s one big takeaway from the past two decades of local news struggle — the often perilous, occasionally brilliant transition from dominant...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Student journalists are reporting more local news for real audiences. Their professors are exhausted.\",\n  \"description\": \"If there’s one big takeaway from the past two decades of local news struggle — the often perilous, occasionally brilliant transition from dominant...\",\n  \"datePublished\": \"2026-11-13T01:17:24.203237+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:24.203237+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/student-journalists-are-reporting-more-local-news-for-real-audiences-their-professors-are-exhausted\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/student-journalists-are-reporting-more-local-news-for-real-audiences-their-professors-are-exhausted\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:40.548709+00:00"
   },
   "news/comp-journalism/stv-journalists-to-strike-over-salary-freeze-as-broadcaster-profits-drop": {
     "slug": "news/comp-journalism/stv-journalists-to-strike-over-salary-freeze-as-broadcaster-profits-drop",
@@ -22566,6 +22664,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What I’ve learned: Longtime The Grocer editor-in-chief Adam Leyland who led ‘B2B powerhouse’ for 20 years\",\n  \"description\": \"Former The Grocer editor-in-chief Adam Leyland, now editor-at-large. Picture: Submitted Adam Leyland spent 20 years as editor-in-chief for William...\",\n  \"datePublished\": \"2026-10-04T00:15:40.122910+00:00\",\n  \"dateModified\": \"2026-10-04T00:15:40.122910+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/b2b/what-ive-learned-longtime-the-grocer-editor-in-chief-adam-leyland\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/b2b/what-ive-learned-longtime-the-grocer-editor-in-chief-adam-leyland\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-04T00:15:53.910514+00:00"
+  },
+  "news/comp-journalism/what-ive-learned-mediahuis-ni-exec-editor-martin-breen-says-everyone-has-a-story": {
+    "slug": "news/comp-journalism/what-ive-learned-mediahuis-ni-exec-editor-martin-breen-says-everyone-has-a-story",
+    "meta_description": "Martin Breen, executive editor of Mediahuis Northern Ireland. Picture: Submitted “Some of the best stories come from the most unexpected places...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"What I’ve learned: Mediahuis NI exec editor Martin Breen says ‘everyone has a story’\",\n  \"description\": \"Martin Breen, executive editor of Mediahuis Northern Ireland. Picture: Submitted “Some of the best stories come from the most unexpected places...\",\n  \"datePublished\": \"2026-11-13T01:17:25.175295+00:00\",\n  \"dateModified\": \"2026-11-13T01:17:25.175295+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/regional-newspapers/what-ive-learned-mediahuis-ni-exec-editor-martin-breen-says-everyone-has-a-story\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/regional-newspapers/what-ive-learned-mediahuis-ni-exec-editor-martin-breen-says-everyone-has-a-story\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T01:17:39.777830+00:00"
   },
   "news/comp-journalism/what-ive-learned-nctj-chief-executive-joanne-forbes": {
     "slug": "news/comp-journalism/what-ive-learned-nctj-chief-executive-joanne-forbes",
