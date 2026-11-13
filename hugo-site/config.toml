@@ -107,7 +107,7 @@ relativeURLs = false
 
   # true = HIDE journalism, disclosures, personal essays, and the homepage note; show consultancy/alternate pages.
   # false = SHOW the original journalism, disclosures, personal essays, and homepage note.
-  enable_exceptions = false
+  enable_exceptions = true
 
   # true = show the Repos menu items and all /repos pages; false = hide them entirely.
   # Data scraping (data/repos.yaml, content/repos) is unaffected.

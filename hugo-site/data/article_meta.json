@@ -608,6 +608,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-26T22:52:26.240857+00:00"
   },
+  "news/ai-research/build-a-robot-pick-and-place-simulation-with-simready-assets": {
+    "slug": "news/ai-research/build-a-robot-pick-and-place-simulation-with-simready-assets",
+    "meta_description": "[](https://cdn-uploads.huggingface.co/production/uploads/6abfe9e7d7cf09a9b38ef308/NlngGWIKZEQ8kuWKZtoyM.gif) This walkthrough showcases a beverage...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Build a Robot Pick-and-Place Simulation with SimReady Assets\",\n  \"description\": \"[](https://cdn-uploads.huggingface.co/production/uploads/6abfe9e7d7cf09a9b38ef308/NlngGWIKZEQ8kuWKZtoyM.gif) This walkthrough showcases a beverage...\",\n  \"datePublished\": \"2026-11-13T19:23:50.629598+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:50.629598+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place\"\n  },\n  \"url\": \"https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:14.660366+00:00"
+  },
   "news/ai-research/build-an-agent-that-thinks-like-a-data-scientist-how-we-hit-1-on-dabstep-with-reusable-tool-generation": {
     "slug": "news/ai-research/build-an-agent-that-thinks-like-a-data-scientist-how-we-hit-1-on-dabstep-with-reusable-tool-generation",
     "meta_description": "The world of data is vast, but quantitative information is often sparse or unavailable in text form online, presenting a significant challenge for...",
@@ -1461,6 +1468,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Helping power-system planners prepare for an unknown future\",\n  \"description\": \"A new computer modeling tool developed by an MIT Energy Initiative (MITEI) research team will help infrastructure planners working in the...\",\n  \"datePublished\": \"2025-12-04T00:03:19.685852+00:00\",\n  \"dateModified\": \"2025-12-04T00:03:19.685852+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2025/helping-power-system-planners-prepare-unknown-future-1203\"\n  },\n  \"url\": \"https://news.mit.edu/2025/helping-power-system-planners-prepare-unknown-future-1203\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:56.036238+00:00"
+  },
+  "news/ai-research/helping-robots-fit-into-the-human-workplace": {
+    "slug": "news/ai-research/helping-robots-fit-into-the-human-workplace",
+    "meta_description": "Founded by Anthony Jules ’92, SM ’92 and Professor Emeritus Rodney Brooks, Robust AI’s robots are designed to collaborate with humans in factories...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Helping robots fit into the human workplace\",\n  \"description\": \"Founded by Anthony Jules ’92, SM ’92 and Professor Emeritus Rodney Brooks, Robust AI’s robots are designed to collaborate with humans in factories...\",\n  \"datePublished\": \"2026-11-13T19:23:49.146521+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:49.146521+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113\"\n  },\n  \"url\": \"https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:14.003262+00:00"
   },
   "news/ai-research/helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior-a-google-deepmind": {
     "slug": "news/ai-research/helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior-a-google-deepmind",
@@ -2827,6 +2841,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:58.296798+00:00"
   },
+  "news/ai-research/new-ai-copilot-helps-engineers-design-better-structures": {
+    "slug": "news/ai-research/new-ai-copilot-helps-engineers-design-better-structures",
+    "meta_description": "The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges. The use of algorithms to design...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New AI “copilot” helps engineers design better structures\",\n  \"description\": \"The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges. The use of algorithms to design...\",\n  \"datePublished\": \"2026-11-13T19:23:48.874403+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:48.874403+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113\"\n  },\n  \"url\": \"https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:14.321025+00:00"
+  },
   "news/ai-research/new-ai-technique-could-make-minimally-invasive-surgeries-safer-and-more-precise": {
     "slug": "news/ai-research/new-ai-technique-could-make-minimally-invasive-surgeries-safer-and-more-precise",
     "meta_description": "Researchers created a new technique that accurately and rapidly matches X-rays captured during surgery with a patient’s preoperative 3D medical...",
@@ -3085,6 +3106,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments\",\n  \"description\": \"AI agents often perform impressively in controlled research settings, yet struggle when deployed in real-world systems where they must reason...\",\n  \"datePublished\": \"2026-02-19T04:08:11.286310+00:00\",\n  \"dateModified\": \"2026-02-19T04:08:11.286310+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/openenv-turing\"\n  },\n  \"url\": \"https://huggingface.co/blog/openenv-turing\"\n}",
     "agent_callout": "",
     "generated_at": "2026-02-19T04:08:56.335683+00:00"
+  },
+  "news/ai-research/opening-the-datasets-behind-our-ai-weather-models": {
+    "slug": "news/ai-research/opening-the-datasets-behind-our-ai-weather-models",
+    "meta_description": "November 13, 2026 Science WeatherNext team Copied We are releasing PARDIG and SatWeave to help researchers and developers build new weather,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Opening the datasets behind our AI weather models\",\n  \"description\": \"November 13, 2026 Science WeatherNext team Copied We are releasing PARDIG and SatWeave to help researchers and developers build new weather,...\",\n  \"datePublished\": \"2026-11-13T19:23:50.078686+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:50.078686+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models\"\n  },\n  \"url\": \"https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:13.323032+00:00"
   },
   "news/ai-research/our-approach-to-bioresilience": {
     "slug": "news/ai-research/our-approach-to-bioresilience",
@@ -4226,6 +4254,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Wristband enables wearers to control a robotic hand with their own movements\",\n  \"description\": \"The next time you’re scrolling your phone, take a moment to appreciate the feat: The seemingly mundane act is possible thanks to the coordination...\",\n  \"datePublished\": \"2026-04-02T04:59:16.163516+00:00\",\n  \"dateModified\": \"2026-04-02T04:59:16.163516+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/wristband-enables-wearers-control-robotic-hand-with-own-movements-0325\"\n  },\n  \"url\": \"https://news.mit.edu/2026/wristband-enables-wearers-control-robotic-hand-with-own-movements-0325\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T04:59:49.255386+00:00"
+  },
+  "news/ai-research/xybench-helping-with-the-problem-behind-the-question": {
+    "slug": "news/ai-research/xybench-helping-with-the-problem-behind-the-question",
+    "meta_description": "📄 Paper | 🤗 Data | 💻 Code [](https://www.datocms-assets.com/64837/1794335088-xybench-featured.png) Truly useful AI assistants need to be able to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"XYBench: Helping with the problem behind the question\",\n  \"description\": \"📄 Paper | 🤗 Data | 💻 Code [](https://www.datocms-assets.com/64837/1794335088-xybench-featured.png) Truly useful AI assistants need to be able to...\",\n  \"datePublished\": \"2026-11-13T19:23:51.144060+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:51.144060+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/allenai/xybench\"\n  },\n  \"url\": \"https://huggingface.co/blog/allenai/xybench\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:13.654757+00:00"
   },
   "news/ai-research/your-agent-aced-the-task-will-it-do-it-again": {
     "slug": "news/ai-research/your-agent-aced-the-task-will-it-do-it-again",
@@ -5738,6 +5773,13 @@
     "json_ld": "{\n  \"@context\": \"http://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Black-headed gulls migrate to SW China's Kunming in winter\",\n  \"description\": \"Xinhua photos show black-headed gulls migrating to Kunming, China, for the winter, attracting tourists.\",\n  \"datePublished\": \"2025-11-13T06:43:57+00:00\",\n  \"dateModified\": \"2025-11-13T06:43:57+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\"\n  },\n  \"mainEntityOfPage\": \"https://en.gmw.cn/2025-11/11/content_38405131.htm\",\n  \"sameAs\": \"https://en.gmw.cn/2025-11/11/content_38405131.htm\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T06:44:50.688884+00:00"
+  },
+  "news/ai-security/bloatware-in-aftermarket-auto-parts": {
+    "slug": "news/ai-security/bloatware-in-aftermarket-auto-parts",
+    "meta_description": "This story is interesting: &gt; One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Bloatware in Aftermarket Auto Parts\",\n  \"description\": \"This story is interesting: &gt; One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on...\",\n  \"datePublished\": \"2026-11-13T19:23:34.037709+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:34.037709+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:12.577365+00:00"
   },
   "news/ai-security/block-the-prompt-not-the-work-the-end-of-doctor-no": {
     "slug": "news/ai-security/block-the-prompt-not-the-work-the-end-of-doctor-no",
@@ -8252,6 +8294,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-17T16:13:24.284988+00:00"
   },
+  "news/ai-security/friday-squid-blogging-bigfin-squid-off-california-coast": {
+    "slug": "news/ai-security/friday-squid-blogging-bigfin-squid-off-california-coast",
+    "meta_description": "Neat video : &gt; The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the &gt;...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: Bigfin Squid Off California Coast\",\n  \"description\": \"Neat video : &gt; The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the &gt;...\",\n  \"datePublished\": \"2026-11-13T19:23:33.763912+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:33.763912+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:11.844537+00:00"
+  },
   "news/ai-security/friday-squid-blogging-bioluminescent-bacteria-in-squid": {
     "slug": "news/ai-security/friday-squid-blogging-bioluminescent-bacteria-in-squid",
     "meta_description": "The Hawaiian bobtail squid has bioluminescent bacteria . Tags: squid Posted on March 27, 2026 at 4:18 PM • 29 Comments",
@@ -9196,6 +9245,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hiding Bluetooth Trackers in Mail\",\n  \"description\": \"It was used to track a Dutch naval ship: > Dutch journalist Just Vervaart, working for regional media network Omroep Gelderland, followed the...\",\n  \"datePublished\": \"2026-04-24T12:15:13.881883+00:00\",\n  \"dateModified\": \"2026-04-24T12:15:13.881883+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/04/hiding-bluetooth-trackers-in-mail.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/04/hiding-bluetooth-trackers-in-mail.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-24T12:16:02.342874+00:00"
+  },
+  "news/ai-security/hiding-capabilities-in-ai-models": {
+    "slug": "news/ai-security/hiding-capabilities-in-ai-models",
+    "meta_description": "Interesting research: “ AI Models Can Provably Hide Arbitrary Capabilities ” &gt; Abstract: &gt; Capability evaluations aim to surface dangerous...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hiding Capabilities in AI Models\",\n  \"description\": \"Interesting research: “ AI Models Can Provably Hide Arbitrary Capabilities ” &gt; Abstract: &gt; Capability evaluations aim to surface dangerous...\",\n  \"datePublished\": \"2026-11-13T19:23:34.640391+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:34.640391+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:12.194445+00:00"
   },
   "news/ai-security/high-court-judge-to-rule-on-whether-bell-hotel-can-accommodate-asylum-seekers": {
     "slug": "news/ai-security/high-court-judge-to-rule-on-whether-bell-hotel-can-accommodate-asylum-seekers",
@@ -15126,6 +15182,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:24.336407+00:00"
   },
+  "news/ai-security/studying-fraudulent-north-korean-it-workers": {
+    "slug": "news/ai-security/studying-fraudulent-north-korean-it-workers",
+    "meta_description": "Researchers set up a fake start-up company to study fraudulent North Korean IT workers. Tags: employment , fraud , North Korea Posted on October...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Studying Fraudulent North Korean IT Workers\",\n  \"description\": \"Researchers set up a fake start-up company to study fraudulent North Korean IT workers. Tags: employment , fraud , North Korea Posted on October...\",\n  \"datePublished\": \"2026-11-13T19:23:34.358400+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:34.358400+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:11.478786+00:00"
+  },
   "news/ai-security/sua-peste-1-400-de-zboruri-au-fost-anulate-pe-fondul-blocajului-guvernamental": {
     "slug": "news/ai-security/sua-peste-1-400-de-zboruri-au-fost-anulate-pe-fondul-blocajului-guvernamental",
     "meta_description": "Over 1,400 flights in the US were canceled due to government shutdown, affecting travel and potentially impacting various sectors.",
@@ -16672,6 +16735,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Vulnerability Disclosure in the Age of AI\",\n  \"description\": \"New article: “ Responsible Disclosure in the Age of AI: A Call for Urgent Action ,” by Melissa Hathaway. &gt; Abstract: &gt; Artificial...\",\n  \"datePublished\": \"2026-06-09T01:58:47.714697+00:00\",\n  \"dateModified\": \"2026-06-09T01:58:47.714697+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/06/vulnerability-disclosure-in-the-age-of-ai.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/06/vulnerability-disclosure-in-the-age-of-ai.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-09T01:59:53.979672+00:00"
+  },
+  "news/ai-security/want-to-rent-an-internet-address-at-the-white-house": {
+    "slug": "news/ai-security/want-to-rent-an-internet-address-at-the-white-house",
+    "meta_description": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Want to Rent an Internet Address at the White House?\",\n  \"description\": \"Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet...\",\n  \"datePublished\": \"2026-11-13T19:23:34.993759+00:00\",\n  \"dateModified\": \"2026-11-13T19:23:34.993759+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:12.977548+00:00"
   },
   "news/ai-security/warlock-exploits-sharepoint-flaws-to-disable-security-tools-and-deploy-ransomware": {
     "slug": "news/ai-security/warlock-exploits-sharepoint-flaws-to-disable-security-tools-and-deploy-ransomware",
@@ -20103,6 +20173,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:07.024777+00:00"
   },
+  "news/comp-journalism/john-barnes-and-karl-weaver-join-william-reed-top-team": {
+    "slug": "news/comp-journalism/john-barnes-and-karl-weaver-join-william-reed-top-team",
+    "meta_description": "Karl Weaver (left) and John Barnes (right). Pictures: Submitted Family-owned UK B2B media business William Reed has added two new senior roles to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"John Barnes and Karl Weaver join William Reed top team\",\n  \"description\": \"Karl Weaver (left) and John Barnes (right). Pictures: Submitted Family-owned UK B2B media business William Reed has added two new senior roles to...\",\n  \"datePublished\": \"2026-11-13T19:24:05.713542+00:00\",\n  \"dateModified\": \"2026-11-13T19:24:05.713542+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/the-wire/media-jobs-uk-news/john-barnes-and-karl-weaver-join-william-reed-top-team\"\n  },\n  \"url\": \"https://pressgazette.co.uk/the-wire/media-jobs-uk-news/john-barnes-and-karl-weaver-join-william-reed-top-team\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:15.841785+00:00"
+  },
   "news/comp-journalism/journalism-came-under-attack-during-brand-trial-and-was-vindicated-by-guilty-verdict": {
     "slug": "news/comp-journalism/journalism-came-under-attack-during-brand-trial-and-was-vindicated-by-guilty-verdict",
     "meta_description": "Russell Brand’s conviction for rape and sexual assault came about as a direct result of investigative journalism by The Times, Sunday Times and...",
@@ -21643,6 +21720,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:11.914888+00:00"
   },
+  "news/comp-journalism/robot-local-news-reporter-confuses-enfield-connecticut-with-north-london": {
+    "slug": "news/comp-journalism/robot-local-news-reporter-confuses-enfield-connecticut-with-north-london",
+    "meta_description": "London News North’s Enfield story. Picture: Press Gazette screenshot A network of seemingly AI -generated local news websites is confusing UK and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Robot local news reporter confuses Enfield, Connecticut, with North London\",\n  \"description\": \"London News North’s Enfield story. Picture: Press Gazette screenshot A network of seemingly AI -generated local news websites is confusing UK and...\",\n  \"datePublished\": \"2026-11-13T19:24:04.647284+00:00\",\n  \"dateModified\": \"2026-11-13T19:24:04.647284+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/regional-newspapers/robot-local-news-reporter-confuses-enfield-connecticut-with-north-london\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/regional-newspapers/robot-local-news-reporter-confuses-enfield-connecticut-with-north-london\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:15.003616+00:00"
+  },
   "news/comp-journalism/rock-of-us-sun-paul-vale-dies-aged-50": {
     "slug": "news/comp-journalism/rock-of-us-sun-paul-vale-dies-aged-50",
     "meta_description": "Paul Vale. Picture: Submitted US Sun managing editor Paul Vale has died aged 50 after being diagnosed with cancer three years ago.",
@@ -22181,6 +22265,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The New York Times stays on track to reach 15 million subscribers by the end of 2027\",\n  \"description\": \"The New York Times added 420,000 new digital subscribers in the third quarter of 2026, keeping it on track to achieve its goal of hitting 15...\",\n  \"datePublished\": \"2026-11-08T05:50:18.255053+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:18.255053+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/the-new-york-times-stays-on-track-to-reach-15-million-subscribers-by-the-end-of-2027\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/the-new-york-times-stays-on-track-to-reach-15-million-subscribers-by-the-end-of-2027\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-08T05:50:29.184755+00:00"
+  },
+  "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-13-2026": {
+    "slug": "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-13-2026",
+    "meta_description": "It’s been another busy week. Recap it with the second edition of the Nieman Lab News-About-News Quiz, your weekly incentive to keep up with the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The Nieman Lab News-About-News Quiz, November 13, 2026\",\n  \"description\": \"It’s been another busy week. Recap it with the second edition of the Nieman Lab News-About-News Quiz, your weekly incentive to keep up with the...\",\n  \"datePublished\": \"2026-11-13T19:24:03.884813+00:00\",\n  \"dateModified\": \"2026-11-13T19:24:03.884813+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/the-nieman-lab-news-about-news-quiz-november-13-2026\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/the-nieman-lab-news-about-news-quiz-november-13-2026\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-13T19:24:15.408540+00:00"
   },
   "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-6-2026": {
     "slug": "news/comp-journalism/the-nieman-lab-news-about-news-quiz-november-6-2026",
