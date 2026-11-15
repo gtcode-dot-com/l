@@ -5599,6 +5599,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-01T19:25:43.397289+00:00"
   },
+  "news/ai-security/attackers-exploit-unrealircd-flaw-that-enables-server-level-command-injection": {
+    "slug": "news/ai-security/attackers-exploit-unrealircd-flaw-that-enables-server-level-command-injection",
+    "meta_description": "Ravie Lakshmanan Nov 14, 2026 Vulnerability / Network Security The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection\",\n  \"description\": \"Ravie Lakshmanan Nov 14, 2026 Vulnerability / Network Security The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a...\",\n  \"datePublished\": \"2026-11-15T07:47:11.700484+00:00\",\n  \"dateModified\": \"2026-11-15T07:47:11.700484+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:47:40.373801+00:00"
+  },
   "news/ai-security/attackers-hijack-gh-sl-and-as-registries-to-obtain-certificates-for-google-domains": {
     "slug": "news/ai-security/attackers-hijack-gh-sl-and-as-registries-to-obtain-certificates-for-google-domains",
     "meta_description": "Attackers compromised three country-code top-level domains (ccTLDs) and obtained unauthorized HTTPS certificates for several Google domains,...",
@@ -11787,6 +11794,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-05T04:01:32.090378+00:00"
   },
+  "news/ai-security/macfinger-clickfix-campaign-sends-downthedrain-infostealer-for-macos-fri-nov-13th": {
+    "slug": "news/ai-security/macfinger-clickfix-campaign-sends-downthedrain-infostealer-for-macos-fri-nov-13th",
+    "meta_description": "Introduction In this diary, I've given a nickname to the macOS infostealer we've been seeing from the Macfinger ClickFix campaign.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)\",\n  \"description\": \"Introduction In this diary, I've given a nickname to the macOS infostealer we've been seeing from the Macfinger ClickFix campaign.\",\n  \"datePublished\": \"2026-11-15T07:47:11.152447+00:00\",\n  \"dateModified\": \"2026-11-15T07:47:11.152447+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33518\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33518\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:47:41.095645+00:00"
+  },
   "news/ai-security/macfinger-clickfix-campaign-tue-sep-22nd": {
     "slug": "news/ai-security/macfinger-clickfix-campaign-tue-sep-22nd",
     "meta_description": "Introduction I've found several legitimate websites with injected script for a campaign using the ClickFix social engineering technique .",
@@ -13320,6 +13334,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:33.336667+00:00"
   },
+  "news/ai-security/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop": {
+    "slug": "news/ai-security/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop",
+    "meta_description": "Security researcher Abdelhamid Naceri, known online as Nightmare Eclipse , this week dropped another zero-day exploit targeting Windows systems.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’\",\n  \"description\": \"Security researcher Abdelhamid Naceri, known online as Nightmare Eclipse , this week dropped another zero-day exploit targeting Windows systems.\",\n  \"datePublished\": \"2026-11-15T07:47:10.028586+00:00\",\n  \"dateModified\": \"2026-11-15T07:47:10.028586+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop\"\n  },\n  \"url\": \"https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:47:39.677908+00:00"
+  },
   "news/ai-security/nine-crackarmor-flaws-in-linux-apparmor-enable-root-escalation-bypass-container-isolation": {
     "slug": "news/ai-security/nine-crackarmor-flaws-in-linux-apparmor-enable-root-escalation-bypass-container-isolation",
     "meta_description": "Ravie Lakshmanan Mar 13, 2026 Linux / Vulnerability Cybersecurity researchers have disclosed multiple security vulnerabilities within the Linux...",
@@ -13782,6 +13803,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:07.026091+00:00"
   },
+  "news/ai-security/openai-unveils-daybreak-red-team-defense-factory-security-tools": {
+    "slug": "news/ai-security/openai-unveils-daybreak-red-team-defense-factory-security-tools",
+    "meta_description": "OpenAI has introduced two new Daybreak cybersecurity products that use AI agents to test web applications for vulnerabilities and help security...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools\",\n  \"description\": \"OpenAI has introduced two new Daybreak cybersecurity products that use AI agents to test web applications for vulnerabilities and help security...\",\n  \"datePublished\": \"2026-11-15T07:47:09.736612+00:00\",\n  \"dateModified\": \"2026-11-15T07:47:09.736612+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools\"\n  },\n  \"url\": \"https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:47:40.032264+00:00"
+  },
   "news/ai-security/openais-gpt-5-5-is-as-good-as-mythos-at-finding-security-vulnerabilities": {
     "slug": "news/ai-security/openais-gpt-5-5-is-as-good-as-mythos-at-finding-security-vulnerabilities",
     "meta_description": "The UK’s AI Security Institute evaluated GPT-5.5’s ability to find security vulnerabilities, and found that it is comparable to Claude Mythos.",
@@ -14152,6 +14180,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Policy and Disclosure: 2025 Edition\",\n  \"description\": \"Posted by Tim Willis, Google Project Zero In 2021, we updated our vulnerability disclosure policy to the current \\\"90+30\\\" model.\",\n  \"datePublished\": \"2025-12-18T12:03:14.887647+00:00\",\n  \"dateModified\": \"2025-12-18T12:03:14.887647+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://projectzero.google/2025/07/reporting-transparency.html\"\n  },\n  \"url\": \"https://projectzero.google/2025/07/reporting-transparency.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:00.548263+00:00"
+  },
+  "news/ai-security/policy-and-disclosure-2026-edition": {
+    "slug": "news/ai-security/policy-and-disclosure-2026-edition",
+    "meta_description": "Since 2021, Project Zero has followed a â90 + 30â vulnerability disclosure policy, allowing vendors up to 90 days to remediate a vulnerability...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Policy and Disclosure: 2026 Edition\",\n  \"description\": \"Since 2021, Project Zero has followed a â90 + 30â vulnerability disclosure policy, allowing vendors up to 90 days to remediate a vulnerability...\",\n  \"datePublished\": \"2026-11-15T07:47:10.309826+00:00\",\n  \"dateModified\": \"2026-11-15T07:47:10.309826+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://projectzero.google/2026/11/disclosure-policy.html\"\n  },\n  \"url\": \"https://projectzero.google/2026/11/disclosure-policy.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:47:40.711563+00:00"
   },
   "news/ai-security/positive-trends-related-to-public-ip-ranges-from-the-year-2025": {
     "slug": "news/ai-security/positive-trends-related-to-public-ip-ranges-from-the-year-2025",
