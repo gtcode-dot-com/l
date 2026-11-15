@@ -5361,6 +5361,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T06:00:12.536594+00:00"
   },
+  "news/ai-security/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data": {
+    "slug": "news/ai-security/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data",
+    "meta_description": "Apple has published a detailed description of Secure Exclaves, a security architecture in its silicon designed to keep camera and microphone data...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Apple Reveals How Secure Exclaves Shield Camera and Microphone Data\",\n  \"description\": \"Apple has published a detailed description of Secure Exclaves, a security architecture in its silicon designed to keep camera and microphone data...\",\n  \"datePublished\": \"2026-11-15T20:22:59.212397+00:00\",\n  \"dateModified\": \"2026-11-15T20:22:59.212397+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data\"\n  },\n  \"url\": \"https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T20:23:31.880235+00:00"
+  },
   "news/ai-security/apple-updates-everything-mon-sep-14th": {
     "slug": "news/ai-security/apple-updates-everything-mon-sep-14th",
     "meta_description": "Published : 2026-09-14. Last Updated : 2026-09-14 18:33:44 UTC by Johannes Ullrich (Version: 1) 0 comment(s) Today, Apple released its annual...",
@@ -8581,6 +8588,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-03T23:19:37.883242+00:00"
   },
+  "news/ai-security/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters": {
+    "slug": "news/ai-security/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters",
+    "meta_description": "Climate change is the issue . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters\",\n  \"description\": \"Climate change is the issue . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered.\",\n  \"datePublished\": \"2026-11-15T20:22:58.721166+00:00\",\n  \"dateModified\": \"2026-11-15T20:22:58.721166+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T20:23:32.264268+00:00"
+  },
   "news/ai-security/friday-squid-blogging-participatory-squid-dissection-in-october-in-tennessee": {
     "slug": "news/ai-security/friday-squid-blogging-participatory-squid-dissection-in-october-in-tennessee",
     "meta_description": "I feel like someone who reads this blog will want to go to this : &gt; Families are invited to dive into the fascinating world of marine biology...",
@@ -10120,6 +10134,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Is AI Good for Democracy?\",\n  \"description\": \"Politicians fixate on the global race for technological supremacy between US and China. They debate geopolitical implications of chip exports,...\",\n  \"datePublished\": \"2026-03-03T03:02:08.351607+00:00\",\n  \"dateModified\": \"2026-03-03T03:02:08.351607+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/02/is-ai-good-for-democracy.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/02/is-ai-good-for-democracy.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:40.945070+00:00"
+  },
+  "news/ai-security/is-ai-making-us-worse-at-cybersecurity": {
+    "slug": "news/ai-security/is-ai-making-us-worse-at-cybersecurity",
+    "meta_description": "I was recently asked to speak at an event but was unable to accept due to a prior speaking commitment on the same day. This, in and of itself, is...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Is AI Making Us Worse at Cybersecurity?\",\n  \"description\": \"I was recently asked to speak at an event but was unable to accept due to a prior speaking commitment on the same day. This, in and of itself, is...\",\n  \"datePublished\": \"2026-11-15T20:22:58.963369+00:00\",\n  \"dateModified\": \"2026-11-15T20:22:58.963369+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity\"\n  },\n  \"url\": \"https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T20:23:32.985966+00:00"
   },
   "news/ai-security/is-hackback-official-us-cybersecurity-strategy": {
     "slug": "news/ai-security/is-hackback-official-us-cybersecurity-strategy",
@@ -13361,6 +13382,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"No Exploit Needed: How Attackers Walk Through the Front Door via Identity-Based Attacks\",\n  \"description\": \"The cybersecurity industry has spent the last several years chasing sophisticated threats like zero-days, supply chain compromises, and...\",\n  \"datePublished\": \"2026-04-21T12:15:14.081368+00:00\",\n  \"dateModified\": \"2026-04-21T12:15:14.081368+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-21T12:16:07.950748+00:00"
+  },
+  "news/ai-security/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update": {
+    "slug": "news/ai-security/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update",
+    "meta_description": "US officials have found no evidence that hackers caused the outage that led the Federal Aviation Administration (FAA) to halt flight departures...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update\",\n  \"description\": \"US officials have found no evidence that hackers caused the outage that led the Federal Aviation Administration (FAA) to halt flight departures...\",\n  \"datePublished\": \"2026-11-15T20:22:59.487408+00:00\",\n  \"dateModified\": \"2026-11-15T20:22:59.487408+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update\"\n  },\n  \"url\": \"https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T20:23:33.332509+00:00"
   },
   "news/ai-security/nomani-investment-scam-surges-62-using-ai-deepfake-ads-on-social-media": {
     "slug": "news/ai-security/nomani-investment-scam-surges-62-using-ai-deepfake-ads-on-social-media",
@@ -17008,6 +17036,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Upcoming Speaking Engagements\",\n  \"description\": \"This is a current list of where and when I am scheduled to speak: I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Quebec, Canada.\",\n  \"datePublished\": \"2026-10-22T20:29:09.980861+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:09.980861+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-22T20:29:49.861911+00:00"
+  },
+  "news/ai-security/upcoming-speaking-engagements-10621b": {
+    "slug": "news/ai-security/upcoming-speaking-engagements-10621b",
+    "meta_description": "This is a current list of where and when I am scheduled to speak: I’m speaking at the Catalyst Summit in Brampton, Ontario, Canada, on Wednesday,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Upcoming Speaking Engagements\",\n  \"description\": \"This is a current list of where and when I am scheduled to speak: I’m speaking at the Catalyst Summit in Brampton, Ontario, Canada, on Wednesday,...\",\n  \"datePublished\": \"2026-11-15T20:22:58.407781+00:00\",\n  \"dateModified\": \"2026-11-15T20:22:58.407781+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T20:23:32.630688+00:00"
   },
   "news/ai-security/upcoming-speaking-engagements-256f48": {
     "slug": "news/ai-security/upcoming-speaking-engagements-256f48",
