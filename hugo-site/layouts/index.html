@@ -659,6 +659,8 @@
 
     {{ $navJS := resources.Get "js/nav.js" | minify | fingerprint }}
     <script src="{{ $navJS.RelPermalink }}" integrity="{{ $navJS.Data.Integrity }}" defer></script>
+    {{ $koreanAccountJS := resources.Get "js/korean-account.js" | minify | fingerprint }}
+    <script src="{{ $koreanAccountJS.RelPermalink }}" integrity="{{ $koreanAccountJS.Data.Integrity }}" defer></script>
     {{ $ouTablesJS := resources.Get "js/ou-tables.js" | minify | fingerprint }}
     <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
   </body>

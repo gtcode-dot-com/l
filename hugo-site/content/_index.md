@@ -4,7 +4,7 @@ exception_content_path: "exceptions/home"
 title: "Threats, Attacks, and Official Misconduct | Oahu Underground"
 seo_title: "Threats, Attacks, and Official Misconduct"
 description: "Ekewaka Lono names the people involved in reported death threats, attacks, courtroom interference, blocked police reports, and failed oversight in Hawaiʻi."
-lastmod: "2026-11-14"
+lastmod: "2026-11-15"
 meta_description: "Ekewaka Lono names the people involved in reported death threats, attacks, courtroom interference, blocked police reports, and failed oversight in Hawaiʻi."
 og_image: "/img/ou-the-nod-og-1200x630.jpg"
 og_image_width: 1200
@@ -63,7 +63,7 @@ structured_data_graph:
       description: >-
         Ekewaka Lono’s firsthand account of threats, attacks, courtroom conduct,
         blocked police reports, and institutional responses, in 25 standalone entries.
-      dateModified: "2026-11-14T00:00:00-10:00"
+      dateModified: "2026-11-15T00:00:00-10:00"
       inLanguage: en-US
       isPartOf:
         '@id': https://gtcode.com/#website
@@ -82,9 +82,9 @@ structured_data_graph:
           contactType: tips
           email: tips@gtcode.com
 
-modified_display: "November 14, 2026"
+modified_display: "November 15, 2026"
 
-article_modified_time: "2026-11-14T00:00:00-10:00"
+article_modified_time: "2026-11-15T00:00:00-10:00"
 ---
 *Firsthand account by Ekewaka Lono.*
 

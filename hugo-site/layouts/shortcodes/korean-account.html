@@ -1,0 +1,9 @@
+{{- with site.GetPage "/homepage-fragments/korean-account" -}}
+<details class="ko-audit-dossier" id="kwak-yuen-korean-record">
+  <summary><span lang="ko">한국어 기록 및 공개 질의 — Young Kwak</span> / Korean account &amp; questions</summary>
+  <div lang="ko" class="ko-dossier-body">
+    {{- $body := replace .Content "<table>" `<div class="ko-table-scroll" role="region" tabindex="0" aria-label="세 가지 쟁점 대조표"><table><caption>Young Kwak의 세금 요구·증언·부스 도면 대조</caption>` -}}
+    {{ replace $body "</table>" "</table></div>" | safeHTML }}
+  </div>
+</details>
+{{- end -}}

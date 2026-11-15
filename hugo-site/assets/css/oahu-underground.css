@@ -3740,3 +3740,21 @@ a.ou-wire-badge-link:focus {
 .ou-article-content .personal-essays-entry a { color: #777; text-decoration: none; border-bottom: 0; }
 .ou-article-content .personal-essays-entry a:hover,
 .ou-article-content .personal-essays-entry a:focus-visible { text-decoration: underline; }
+
+/* Korean account: native disclosure and a keyboard-scrollable comparison table. */
+.ko-audit-dossier {
+  margin-block: 1rem;
+  border: 1px solid var(--ou-border);
+  border-radius: 0.25rem;
+  padding: 0.85rem 1rem;
+  background: var(--ou-bg-alt);
+  min-width: 0;
+}
+.ko-audit-dossier > summary { cursor: pointer; color: var(--ou-accent-a11y); line-height: 1.6; }
+.ko-audit-dossier > summary:focus-visible,
+.ko-dossier-body .ko-table-scroll:focus-visible { outline: 2px solid var(--ou-accent-a11y); outline-offset: 4px; }
+.ko-dossier-body { margin-top: 1.25rem; overflow-wrap: anywhere; word-break: normal; line-height: 1.85; }
+.ko-dossier-body .ko-table-scroll { overflow-x: auto; max-width: 100%; margin-block: 1rem; }
+.ko-dossier-body table { width: 100%; min-width: 42rem; border-collapse: collapse; font-size: 0.9em; }
+.ko-dossier-body th, .ko-dossier-body td { border: 1px solid var(--ou-border); padding: 0.65rem; vertical-align: top; text-align: left; }
+.ko-dossier-body h3, .ko-dossier-body h4 { line-height: 1.5; }

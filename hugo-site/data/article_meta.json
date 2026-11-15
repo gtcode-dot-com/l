@@ -7335,6 +7335,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-15T04:03:30.913291+00:00"
   },
+  "news/ai-security/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-code-extension-incident": {
+    "slug": "news/ai-security/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-code-extension-incident",
+    "meta_description": "Ravie Lakshmanan Nov 15, 2026 Artificial Intelligence / Software Security The compromise of Anthropic's official Claude Code extension on Cursor's...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident\",\n  \"description\": \"Ravie Lakshmanan Nov 15, 2026 Artificial Intelligence / Software Security The compromise of Anthropic's official Claude Code extension on Cursor's...\",\n  \"datePublished\": \"2026-11-15T21:30:13.038360+00:00\",\n  \"dateModified\": \"2026-11-15T21:30:13.038360+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T21:30:53.960840+00:00"
+  },
   "news/ai-security/cyberattack-on-connected-fridges-in-france": {
     "slug": "news/ai-security/cyberattack-on-connected-fridges-in-france",
     "meta_description": "Another IoT cyberattack , this one in France: &gt; Hackers gained control of the software that regulates the temperatures of the refrigeration...",
@@ -7922,6 +7929,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Extending Ruzzy with LibAFL\",\n  \"description\": \"LibAFL is all the rage in the fuzzing community these days, especially with LLVM’s libFuzzer being placed in maintenance mode .\",\n  \"datePublished\": \"2026-04-29T12:15:15.227378+00:00\",\n  \"dateModified\": \"2026-04-29T12:15:15.227378+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/04/29/extending-ruzzy-with-libafl\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/04/29/extending-ruzzy-with-libafl\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-29T12:16:09.051529+00:00"
+  },
+  "news/ai-security/faa-ground-stop-issued-due-to-extraordinary-circumstances": {
+    "slug": "news/ai-security/faa-ground-stop-issued-due-to-extraordinary-circumstances",
+    "meta_description": "The Federal Aviation Administration (FAA) issued a nationwide ground stop for all U.S. airports on Friday afternoon, citing “extraordinary...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’\",\n  \"description\": \"The Federal Aviation Administration (FAA) issued a nationwide ground stop for all U.S. airports on Friday afternoon, citing “extraordinary...\",\n  \"datePublished\": \"2026-11-15T21:30:12.149929+00:00\",\n  \"dateModified\": \"2026-11-15T21:30:12.149929+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances\"\n  },\n  \"url\": \"https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T21:30:52.848128+00:00"
   },
   "news/ai-security/factoring-short-sleeve-rsa-keys-with-polynomials": {
     "slug": "news/ai-security/factoring-short-sleeve-rsa-keys-with-polynomials",
@@ -11353,6 +11367,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:56.748748+00:00"
   },
+  "news/ai-security/italy-fines-meta-eur805-million-over-facebook-s-android-gallery-access-without-explicit-consent": {
+    "slug": "news/ai-security/italy-fines-meta-eur805-million-over-facebook-s-android-gallery-access-without-explicit-consent",
+    "meta_description": "Swati Khandelwal Nov 15, 2026 Data Privacy / Regulatory Compliance Meta was fined €805 million in Italy yesterday over a Facebook for Android...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent\",\n  \"description\": \"Swati Khandelwal Nov 15, 2026 Data Privacy / Regulatory Compliance Meta was fined €805 million in Italy yesterday over a Facebook for Android...\",\n  \"datePublished\": \"2026-11-15T21:30:12.707682+00:00\",\n  \"dateModified\": \"2026-11-15T21:30:12.707682+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T21:30:53.585425+00:00"
+  },
   "news/ai-security/ivanti-fortinet-and-sap-release-patches-for-multiple-critical-vulnerabilities": {
     "slug": "news/ai-security/ivanti-fortinet-and-sap-release-patches-for-multiple-critical-vulnerabilities",
     "meta_description": "Ravie Lakshmanan Jun 10, 2026 Vulnerability / Patch Management Fortinet, Ivanti, and SAP have released security updates to address multiple...",
@@ -12136,6 +12157,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta Files Lawsuits Against Brazil, China, Vietnam Advertisers Over Celeb-Bait Scams\",\n  \"description\": \"Ravie Lakshmanan Feb 27, 2026 Online Scam / Digital Advertising Meta on Thursday said it's taking legal action to tackle scams on its platforms by...\",\n  \"datePublished\": \"2026-02-27T08:15:13.879721+00:00\",\n  \"dateModified\": \"2026-02-27T08:15:13.879721+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/meta-files-lawsuits-against-brazil.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/meta-files-lawsuits-against-brazil.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:50.376636+00:00"
+  },
+  "news/ai-security/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook": {
+    "slug": "news/ai-security/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook",
+    "meta_description": "Italy announced an €805 million ($887 million) fine against Meta on Saturday for using photos and videos from Android users’ galleries on Facebook...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook\",\n  \"description\": \"Italy announced an €805 million ($887 million) fine against Meta on Saturday for using photos and videos from Android users’ galleries on Facebook...\",\n  \"datePublished\": \"2026-11-15T21:30:13.586254+00:00\",\n  \"dateModified\": \"2026-11-15T21:30:13.586254+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook\"\n  },\n  \"url\": \"https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T21:30:53.212859+00:00"
   },
   "news/ai-security/meta-is-testing-facial-recognition-for-police-and-military": {
     "slug": "news/ai-security/meta-is-testing-facial-recognition-for-police-and-military",
@@ -14068,6 +14096,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Pentagon Designates Anthropic Supply Chain Risk Over AI Military Dispute\",\n  \"description\": \"Anthropic on Friday hit back after U.S. Secretary of Defense Pete Hegseth directed the Pentagon to designate the artificial intelligence (AI)...\",\n  \"datePublished\": \"2026-03-03T19:51:56.297473+00:00\",\n  \"dateModified\": \"2026-03-03T19:51:56.297473+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:07.256870+00:00"
+  },
+  "news/ai-security/pentagon-renames-cdao-super-intelligence-office": {
+    "slug": "news/ai-security/pentagon-renames-cdao-super-intelligence-office",
+    "meta_description": "The Pentagon on Friday renamed its Chief Digital and Artificial Intelligence Office (CDAO) the Super Intelligence Office, adopting the terminology...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Pentagon Renames CDAO ‘Super Intelligence Office’\",\n  \"description\": \"The Pentagon on Friday renamed its Chief Digital and Artificial Intelligence Office (CDAO) the Super Intelligence Office, adopting the terminology...\",\n  \"datePublished\": \"2026-11-15T21:30:13.310295+00:00\",\n  \"dateModified\": \"2026-11-15T21:30:13.310295+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office\"\n  },\n  \"url\": \"https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T21:30:52.467205+00:00"
   },
   "news/ai-security/phantom-stealer-spread-by-iso-phishing-emails-hitting-russian-finance-sector": {
     "slug": "news/ai-security/phantom-stealer-spread-by-iso-phishing-emails-hitting-russian-finance-sector",

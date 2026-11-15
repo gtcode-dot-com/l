@@ -1,4 +1,14 @@
 {{- $source := . -}}
+{{- /* Expand the same Korean source for Markdown exports, without disclosure markup. */ -}}
+{{- if strings.Contains $source "{{< korean-account >}}" -}}
+  {{- with site.GetPage "/homepage-fragments/korean-account" -}}
+    {{- /* Preserve the enclosing entry's Markdown indentation on every line. */ -}}
+    {{- $korean := replace (strings.TrimSpace .RawContent) "\n" "\n   " -}}
+    {{- $korean = replaceRE `<a href="([^"]+)"[^>]*>([^<]+)</a>` "[$2]($1)" $korean -}}
+    {{- $korean = printf "<span id=\"kwak-yuen-korean-record\"></span>\n\n   %s" $korean -}}
+    {{- $source = replace $source "{{< korean-account >}}" $korean -}}
+  {{- end -}}
+{{- end -}}
 {{- /* Keep the raw Markdown export readable without shortcode/widget markup. */ -}}
 {{- $source = replace $source "{{< record-failures-post >}}" "**[How “not recorded” becomes “never happened.”](https://x.com/p_lowndes/status/2121787363777228970)**\n\nFour failures in how institutions record events and review complaints. **[Read the post on X →](https://x.com/p_lowndes/status/2121787363777228970)**" -}}
 {{- if partial "exception/homepage-only.html" . -}}
