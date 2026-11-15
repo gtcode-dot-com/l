@@ -5249,6 +5249,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-15T06:10:37.523367+00:00"
   },
+  "news/ai-security/apify-confirms-customer-data-accessed-in-cyberattack": {
+    "slug": "news/ai-security/apify-confirms-customer-data-accessed-in-cyberattack",
+    "meta_description": "Web scraping and automation company Apify has confirmed that customer data was accessed in a cyberattack that compromised internal systems and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Apify Confirms Customer Data Accessed in Cyberattack\",\n  \"description\": \"Web scraping and automation company Apify has confirmed that customer data was accessed in a cyberattack that compromised internal systems and...\",\n  \"datePublished\": \"2026-11-15T07:32:27.611133+00:00\",\n  \"dateModified\": \"2026-11-15T07:32:27.611133+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack\"\n  },\n  \"url\": \"https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:32:57.344194+00:00"
+  },
   "news/ai-security/apple-coregraphics-poc-emerges-as-whatsapp-pdf-checks-hint-at-possible-delivery-path": {
     "slug": "news/ai-security/apple-coregraphics-poc-emerges-as-whatsapp-pdf-checks-hint-at-possible-delivery-path",
     "meta_description": "Security researchers have published the first public proof-of-concept for CVE-2026-86950 , an Apple CoreGraphics flaw Apple says may have been...",
@@ -6760,6 +6767,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Citizen Lab: Law Enforcement Used Webloc to Track 500 Million Devices via Ad Data\",\n  \"description\": \"Hungarian domestic intelligence, the national police in El Salvador, and several U.S. law enforcement and police departments have been attributed...\",\n  \"datePublished\": \"2026-04-11T08:15:13.772810+00:00\",\n  \"dateModified\": \"2026-04-11T08:15:13.772810+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-11T08:16:06.453299+00:00"
+  },
+  "news/ai-security/citrix-patches-10-critical-netscaler-vulnerabilities": {
+    "slug": "news/ai-security/citrix-patches-10-critical-netscaler-vulnerabilities",
+    "meta_description": "Citrix on Thursday announced patches for 28 vulnerabilities in NetScaler ADC and NetScaler Gateway, including nine critical-severity bugs.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Citrix Patches 10 Critical NetScaler Vulnerabilities\",\n  \"description\": \"Citrix on Thursday announced patches for 28 vulnerabilities in NetScaler ADC and NetScaler Gateway, including nine critical-severity bugs.\",\n  \"datePublished\": \"2026-11-15T07:32:28.294396+00:00\",\n  \"dateModified\": \"2026-11-15T07:32:28.294396+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities\"\n  },\n  \"url\": \"https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:32:57.011006+00:00"
   },
   "news/ai-security/citrix-patches-12-netscaler-and-secure-access-client-flaws-including-authentication-bypass": {
     "slug": "news/ai-security/citrix-patches-12-netscaler-and-secure-access-client-flaws-including-authentication-bypass",
@@ -11542,6 +11556,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-03T23:19:38.324768+00:00"
   },
+  "news/ai-security/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure": {
+    "slug": "news/ai-security/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure",
+    "meta_description": "Law enforcement agencies in the US, Europe, Australia, and Canada have seized infrastructure behind the notorious Gootloader, CastleRAT, and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure\",\n  \"description\": \"Law enforcement agencies in the US, Europe, Australia, and Canada have seized infrastructure behind the notorious Gootloader, CastleRAT, and...\",\n  \"datePublished\": \"2026-11-15T07:32:28.040167+00:00\",\n  \"dateModified\": \"2026-11-15T07:32:28.040167+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure\"\n  },\n  \"url\": \"https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:32:56.304444+00:00"
+  },
   "news/ai-security/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak": {
     "slug": "news/ai-security/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak",
     "meta_description": "Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity &amp; Infrastructure Security Agency (CISA) after...",
@@ -12486,6 +12507,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Silently Patches Windows LNK Flaw After Years of Active Exploitation\",\n  \"description\": \"Dec 03, 2025 Ravie Lakshmanan Vulnerability / Endpoint Security Microsoft has silently plugged a security flaw that has been exploited by several...\",\n  \"datePublished\": \"2025-12-04T00:03:08.042205+00:00\",\n  \"dateModified\": \"2025-12-04T00:03:08.042205+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/microsoft-silently-patches-windows-lnk.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/microsoft-silently-patches-windows-lnk.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:05.941508+00:00"
+  },
+  "news/ai-security/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage": {
+    "slug": "news/ai-security/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage",
+    "meta_description": "From Asia to the U.S., Microsoft’s outage involving services like Outlook and Teams has dragged on for hours and impacted users, companies and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Struggles to Restore Email and Other Services in a Global Outage\",\n  \"description\": \"From Asia to the U.S., Microsoft’s outage involving services like Outlook and Teams has dragged on for hours and impacted users, companies and...\",\n  \"datePublished\": \"2026-11-15T07:32:27.325896+00:00\",\n  \"dateModified\": \"2026-11-15T07:32:27.325896+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage\"\n  },\n  \"url\": \"https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:32:57.694120+00:00"
   },
   "news/ai-security/microsoft-threatening-security-researcher": {
     "slug": "news/ai-security/microsoft-threatening-security-researcher",
@@ -15286,6 +15314,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Signal Vulnerability Lets Malicious Callers Block Hang-Ups\",\n  \"description\": \"Signal has resolved a critical-severity vulnerability that could allow a malicious caller to keep audio and video tracks enabled even after the...\",\n  \"datePublished\": \"2026-11-09T03:34:28.707415+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:28.707415+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups\"\n  },\n  \"url\": \"https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-09T03:35:07.134723+00:00"
+  },
+  "news/ai-security/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks": {
+    "slug": "news/ai-security/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks",
+    "meta_description": "Telecom software and cybersecurity company Enea has detailed the activity of a previously unknown threat actor that intercepts phone calls and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks\",\n  \"description\": \"Telecom software and cybersecurity company Enea has detailed the activity of a previously unknown threat actor that intercepts phone calls and...\",\n  \"datePublished\": \"2026-11-15T07:32:27.820432+00:00\",\n  \"dateModified\": \"2026-11-15T07:32:27.820432+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks\"\n  },\n  \"url\": \"https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:32:56.666641+00:00"
   },
   "news/ai-security/silentair-hijacks-asian-telecom-networks-to-intercept-sms-2fa-codes-and-spy-on-taiwanese-users": {
     "slug": "news/ai-security/silentair-hijacks-asian-telecom-networks-to-intercept-sms-2fa-codes-and-spy-on-taiwanese-users",
