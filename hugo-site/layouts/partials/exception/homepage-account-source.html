@@ -3,7 +3,12 @@
 {{- if strings.Contains $source "{{< korean-account >}}" -}}
   {{- with site.GetPage "/homepage-fragments/korean-account" -}}
     {{- /* Preserve the enclosing entry's Markdown indentation on every line. */ -}}
-    {{- $korean := replace (strings.TrimSpace .RawContent) "\n" "\n   " -}}
+    {{- $koreanSource := strings.TrimSpace .RawContent -}}
+    {{- with site.GetPage "/homepage-fragments/korean-satirical-note" -}}
+      {{- $note := printf "<span id=\"korean-satirical-note\"></span>\n\n#### %s / A brief satirical note\n\n%s" .Title (strings.TrimSpace .RawContent) -}}
+      {{- $koreanSource = replace $koreanSource "{{< korean-satirical-note >}}" $note -}}
+    {{- end -}}
+    {{- $korean := replace $koreanSource "\n" "\n   " -}}
     {{- $korean = replaceRE `<a href="([^"]+)"[^>]*>([^<]+)</a>` "[$2]($1)" $korean -}}
     {{- $korean = printf "<span id=\"kwak-yuen-korean-record\"></span>\n\n   %s" $korean -}}
     {{- $source = replace $source "{{< korean-account >}}" $korean -}}

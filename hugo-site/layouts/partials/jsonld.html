@@ -1,5 +1,9 @@
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
+{{- /* Homepage-only mode renders the account, not its technical exception page. */ -}}
+{{- if and $page.IsHome (partial "exception/homepage-only.html" $page) -}}
+  {{- $active = $page -}}
+{{- end -}}
 {{- $isActiveException := and (partial "exception/enabled.html" .) (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- partial "fetch-article-meta.html" (dict "context" .) -}}
 {{- $articleMeta := .Scratch.Get "_article_meta" -}}

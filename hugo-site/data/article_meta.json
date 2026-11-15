@@ -18255,6 +18255,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T04:30:58.499481+00:00"
   },
+  "news/ai-security/yara-x-1-23-0-release-sun-nov-15th": {
+    "slug": "news/ai-security/yara-x-1-23-0-release-sun-nov-15th",
+    "meta_description": "Published : 2026-11-15. Last Updated : 2026-11-15 18:17:27 UTC by Didier Stevens (Version: 1) 1 comment(s) YARA-X's 1.23.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"YARA-X 1.23.0 Release, (Sun, Nov 15th)\",\n  \"description\": \"Published : 2026-11-15. Last Updated : 2026-11-15 18:17:27 UTC by Didier Stevens (Version: 1) 1 comment(s) YARA-X's 1.23.\",\n  \"datePublished\": \"2026-11-15T22:05:17.689679+00:00\",\n  \"dateModified\": \"2026-11-15T22:05:17.689679+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33496\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33496\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T22:05:45.771453+00:00"
+  },
   "news/ai-security/years-of-jsonformatter-and-codebeautify-leaks-expose-thousands-of-passwords-and-api-keys": {
     "slug": "news/ai-security/years-of-jsonformatter-and-codebeautify-leaks-expose-thousands-of-passwords-and-api-keys",
     "meta_description": "Nov 25, 2025 Ravie Lakshmanan Data Exposure / Cloud Security New research has found that organizations in various sensitive sectors, including...",
