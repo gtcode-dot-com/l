@@ -212,6 +212,8 @@ I attended Rutgers University before moving to Hawaiʻi. Loo graduated from Rutg
 
 ## What happened to my complaints {#case-outcomes}
 
+Across these encounters, the conduct I reported repeatedly gave way to scrutiny of me. I described Kwak shouting, demanding approximately seven times what I owed, and threatening that another man would not be nice if I left. His trial testimony instead described routine form instructions. After I reported a vehicle attack, an HPD detective questioned me about taxes on money the man I reported had never paid me. My cycling on a public path was portrayed as stalking even though that man approached me from behind in a vehicle. The reversal—not merely the failure to act on my reports—is central to this account.
+
 Stanley dismissed my report of a death threat. My retained lawyer advised me to omit it from my testimony, and I followed that advice. Brandt blocked a later effort to place the threat in a police report. Loo stopped my immediate description of his signal; sealing then restricted access to the spoken sequence and the exhibit already in the file. What never enters the record becomes harder to bring before the next reviewer. What is sealed becomes harder to examine from outside.
 
 {{< record-failures-post >}}
