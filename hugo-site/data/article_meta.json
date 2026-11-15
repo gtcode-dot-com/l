@@ -7853,6 +7853,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:13.163289+00:00"
   },
+  "news/ai-security/exploit-attempts-for-gpustack-authentication-bypass-cve-2026-102895-thu-nov-12th": {
+    "slug": "news/ai-security/exploit-attempts-for-gpustack-authentication-bypass-cve-2026-102895-thu-nov-12th",
+    "meta_description": "CVE-2026-102895 is a trivial authentication-bypass vulnerability. GPUStack is also an attractive target. It is open-source software that manages...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)\",\n  \"description\": \"CVE-2026-102895 is a trivial authentication-bypass vulnerability. GPUStack is also an attractive target. It is open-source software that manages...\",\n  \"datePublished\": \"2026-11-15T06:49:04.575634+00:00\",\n  \"dateModified\": \"2026-11-15T06:49:04.575634+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33514\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33514\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:49:37.285065+00:00"
+  },
   "news/ai-security/exposure-assessment-platforms-signal-a-shift-in-focus": {
     "slug": "news/ai-security/exposure-assessment-platforms-signal-a-shift-in-focus",
     "meta_description": "Gartner® doesn't create new categories lightly. Generally speaking, a new acronym only emerges when the industry's collective \"to-do list\" has...",
@@ -9267,6 +9274,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:21.628328+00:00"
   },
+  "news/ai-security/hackers-target-n-central-zero-days-as-n-able-rushes-patches": {
+    "slug": "news/ai-security/hackers-target-n-central-zero-days-as-n-able-rushes-patches",
+    "meta_description": "N-able has rolled out patches for several of the zero-days a researcher dropped over the weekend and warned of in-the-wild activity targeting them.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Target N-central Zero-Days as N-able Rushes Patches\",\n  \"description\": \"N-able has rolled out patches for several of the zero-days a researcher dropped over the weekend and warned of in-the-wild activity targeting them.\",\n  \"datePublished\": \"2026-11-15T06:49:03.637217+00:00\",\n  \"dateModified\": \"2026-11-15T06:49:03.637217+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches\"\n  },\n  \"url\": \"https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:49:36.928536+00:00"
+  },
   "news/ai-security/hackers-target-openssh-sshole-flaw-within-hours-of-disclosure-gain-root-on-honeypot": {
     "slug": "news/ai-security/hackers-target-openssh-sshole-flaw-within-hours-of-disclosure-gain-root-on-honeypot",
     "meta_description": "Ravie Lakshmanan Nov 06, 2026 Vulnerability / Cyber Attack Threat actors are attempting to exploit a recently disclosed security flaw impacting...",
@@ -10667,6 +10681,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T02:42:54.529469+00:00"
   },
+  "news/ai-security/isc-stormcast-for-thursday-november-12th-2026-https-isc-sans-edu-podcastdetail-10176-thu-nov-12th": {
+    "slug": "news/ai-security/isc-stormcast-for-thursday-november-12th-2026-https-isc-sans-edu-podcastdetail-10176-thu-nov-12th",
+    "meta_description": "ISC Stormcast For Thursday, November 12th, 2026 &lt;https://isc.sans.edu/podcastdetail/10176&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Thursday, November 12th, 2026 https://isc.sans.edu/podcastdetail/10176, (Thu, Nov 12th)\",\n  \"description\": \"ISC Stormcast For Thursday, November 12th, 2026 &lt;https://isc.sans.edu/podcastdetail/10176&gt;\",\n  \"datePublished\": \"2026-11-15T06:49:05.181597+00:00\",\n  \"dateModified\": \"2026-11-15T06:49:05.181597+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33512\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33512\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:49:37.687941+00:00"
+  },
   "news/ai-security/isc-stormcast-for-thursday-november-5th-2026-https-isc-sans-edu-podcastdetail-10166-thu-nov-5th": {
     "slug": "news/ai-security/isc-stormcast-for-thursday-november-5th-2026-https-isc-sans-edu-podcastdetail-10166-thu-nov-5th",
     "meta_description": "ISC Stormcast For Thursday, November 5th, 2026 &lt;https://isc.sans.edu/podcastdetail/10166&gt;",
@@ -11142,6 +11163,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, May 6th, 2026 https://isc.sans.edu/podcastdetail/9920, (Wed, May 6th)\",\n  \"description\": \"ISC Stormcast For Wednesday, May 6th, 2026\",\n  \"datePublished\": \"2026-05-06T02:15:15.459832+00:00\",\n  \"dateModified\": \"2026-05-06T02:15:15.459832+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32960\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32960\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-06T02:16:20.201346+00:00"
+  },
+  "news/ai-security/isc-stormcast-for-wednesday-november-11th-2026-https-isc-sans-edu-podcastdetail-10174-wed-nov-11th": {
+    "slug": "news/ai-security/isc-stormcast-for-wednesday-november-11th-2026-https-isc-sans-edu-podcastdetail-10174-wed-nov-11th",
+    "meta_description": "ISC Stormcast For Wednesday, November 11th, 2026 &lt;https://isc.sans.edu/podcastdetail/10174&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)\",\n  \"description\": \"ISC Stormcast For Wednesday, November 11th, 2026 &lt;https://isc.sans.edu/podcastdetail/10174&gt;\",\n  \"datePublished\": \"2026-11-15T06:49:09.182098+00:00\",\n  \"dateModified\": \"2026-11-15T06:49:09.182098+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33510\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33510\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:49:36.567739+00:00"
   },
   "news/ai-security/isc-stormcast-for-wednesday-november-4th-2026-https-isc-sans-edu-podcastdetail-10164-wed-nov-4th": {
     "slug": "news/ai-security/isc-stormcast-for-wednesday-november-4th-2026-https-isc-sans-edu-podcastdetail-10164-wed-nov-4th",
@@ -12269,6 +12297,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Patch Tuesday, November 2025 Edition\",\n  \"description\": \"Microsoft this week pushed security updates to fix more than 60 vulnerabilities in its Windows operating systems and supported software, including...\",\n  \"datePublished\": \"2025-12-12T12:03:13.484690+00:00\",\n  \"dateModified\": \"2025-12-12T12:03:13.484690+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2025/11/microsoft-patch-tuesday-november-2025-edition\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2025/11/microsoft-patch-tuesday-november-2025-edition\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:30.056516+00:00"
+  },
+  "news/ai-security/microsoft-patch-tuesday-november-2026-tue-nov-10th": {
+    "slug": "news/ai-security/microsoft-patch-tuesday-november-2026-tue-nov-10th",
+    "meta_description": "Published : 2026-11-10. Last Updated : 2026-11-11 18:28:43 UTC by Johannes Ullrich (Version: 1) 6 comment(s) Microsoft continues its AI-induced...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)\",\n  \"description\": \"Published : 2026-11-10. Last Updated : 2026-11-11 18:28:43 UTC by Johannes Ullrich (Version: 1) 6 comment(s) Microsoft continues its AI-induced...\",\n  \"datePublished\": \"2026-11-15T06:49:08.153849+00:00\",\n  \"dateModified\": \"2026-11-15T06:49:08.153849+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33508\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33508\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:49:38.085356+00:00"
   },
   "news/ai-security/microsoft-patches-138-vulnerabilities-including-dns-and-netlogon-rce-flaws": {
     "slug": "news/ai-security/microsoft-patches-138-vulnerabilities-including-dns-and-netlogon-rce-flaws",
