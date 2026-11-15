@@ -15,13 +15,15 @@
 {{- else -}}
 {{/* Standalone homepage - no baseof.html, no main.css */}}
 {{- $page := . -}}
+{{- $homepageOnly := partial "exception/homepage-only.html" . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- if partial "exception/homepage-only.html" . -}}{{- $active = $page -}}{{- end -}}
+{{- $isActiveException := and (partial "exception/enabled.html" .) $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- $siteLang := .Site.Language.Locale | default "en" -}}
 {{- $contentLang := $active.Params.language | default "" -}}
 {{- $langFromHugo := $active.Lang | default "" -}}
 {{- $pageLang := cond (ne $contentLang "") $contentLang (cond (ne $langFromHugo "") $langFromHugo $siteLang) -}}
-{{- $brandName := strings.TrimSpace (cond site.Params.enable_exceptions ($active.Params.brand_name | default "GTCode") ($active.Params.brand_name | default "Oahu Underground")) -}}
+{{- $brandName := strings.TrimSpace (cond (partial "exception/enabled.html" .) ($active.Params.brand_name | default "GTCode") ($active.Params.brand_name | default "Oahu Underground")) -}}
 {{- $titleMax := int (.Site.Params.seo_title_max_chars | default 68) -}}
 {{- $descMax := int (.Site.Params.seo_description_max_chars | default 158) -}}
 {{- $pageTitle := $active.Params.seo_title | default $active.Title | default (printf "%s | Investigative Reporting" $brandName) -}}
@@ -149,7 +151,7 @@
 
     {{ partial "jsonld.html" . }}
 
-    {{ if not $isActiveException }}
+    {{ if and (not $isActiveException) (not $homepageOnly) }}
     <!-- Homepage investigative schema -->
     {{ $siteRoot := replace .Site.BaseURL "http://" "https://" }}
     {{ $siteRoot = strings.TrimRight "/" $siteRoot }}
@@ -257,6 +259,7 @@
       {{ else }}
       {{ partial "homepage-account.html" . }}
 
+      {{ if not $homepageOnly }}
       <!-- Short reading route into the lead investigation. -->
       <section class="ou-section" id="supporting-records">
         <div class="ou-section-wide">
@@ -283,7 +286,7 @@
         </div>
       </section>
 
-      {{ if not $isActiveException }}
+      {{ if and (not $isActiveException) (not $homepageOnly) }}
       {{ with $homepageNotice }}
       <section class="homepage-notice" aria-labelledby="homepage-notice-title">
         <div class="homepage-notice-inner">
@@ -458,6 +461,8 @@
       </section>
       {{ end }}
 
+      {{ end }}
+
       <!-- Subscribe -->
       <section class="ou-section ou-subscribe" id="subscribe">
         <div class="ou-section-inner">
@@ -497,10 +502,12 @@
                 <li>Publish dates, revisions, and source context</li>
                 <li>Keep tip channels confidential and secure</li>
               </ul>
+              {{ if not $homepageOnly }}
               {{ if $carto }}
               <a class="ou-card-link" href="{{ $carto.RelPermalink }}">Read full methodology &rarr;</a>
               {{ else }}
               <a class="ou-card-link" href="/disclosures/">Read disclosures &rarr;</a>
+              {{ end }}
               {{ end }}
             </div>
           </div>
@@ -547,10 +554,10 @@
       <div class="site-footer-inner">
         <div class="footer-section">
           <p class="footer-heading">About</p>
-          <p>{{ if site.Params.enable_exceptions }}{{ $active.Description | default "GTCode is the technical home of Ekewaka Lono, focused on AI systems engineering, ML research, implementation guides, and consulting." }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
+          <p>{{ if (partial "exception/enabled.html" .) }}{{ $active.Description | default "GTCode is the technical home of Ekewaka Lono, focused on AI systems engineering, ML research, implementation guides, and consulting." }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
         </div>
 
-        {{ if not site.Params.enable_exceptions }}
+        {{ if not (partial "exception/enabled.html" .) }}
         <div class="footer-section">
           <p class="footer-heading">Research Silos</p>
           <ul>
@@ -568,9 +575,9 @@
         {{ end }}
 
         <div class="footer-section">
-          <p class="footer-heading">{{ if site.Params.enable_exceptions }}Technical Resources{{ else }}Resources{{ end }}</p>
+          <p class="footer-heading">{{ if (partial "exception/enabled.html" .) }}Technical Resources{{ else }}Resources{{ end }}</p>
           <ul>
-            {{ if not site.Params.enable_exceptions }}
+            {{ if not (partial "exception/enabled.html" .) }}
             <li><a href="#start-here">Start Here</a></li>
             <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
             <li><a href="/disclosures/">Reporter Disclosures</a></li>
@@ -593,9 +600,9 @@
         </div>
 
         <div class="footer-section">
-          <p class="footer-heading">{{ if site.Params.enable_exceptions }}AI Access{{ else }}AI + Consulting{{ end }}</p>
+          <p class="footer-heading">{{ if (partial "exception/enabled.html" .) }}AI Access{{ else }}AI + Consulting{{ end }}</p>
           <ul>
-            {{ if not site.Params.enable_exceptions }}
+            {{ if not (partial "exception/enabled.html" .) }}
             <li><a href="{{ $consultingURL }}">AI Consulting</a></li>
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/papers/">Papers</a></li>
@@ -603,7 +610,7 @@
             <li><a href="/articles/">Articles</a></li>
             <li><a href="/news/">News Wire</a></li>
             {{ end }}
-            {{ if site.Params.enable_exceptions }}
+            {{ if (partial "exception/enabled.html" .) }}
             <li><a href="/policies/ai/">AI Policy</a></li>
             <li><a href="/policies/agent/">AI Agent Policy</a></li>
             <li><a href="/policies/llm/">LLM Usage Policy</a></li>

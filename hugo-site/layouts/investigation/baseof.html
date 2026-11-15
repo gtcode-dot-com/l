@@ -1,7 +1,7 @@
 {{/* Investigation base — uses oahu-underground.css (same as homepage) */}}
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $isActiveException := and site.Params.enable_exceptions (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $isActiveException := and (partial "exception/enabled.html" .) (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- $siteLang := .Site.Language.Locale | default "en" -}}
 {{- $contentLang := $active.Params.language | default "" -}}
 {{- $langFromHugo := $active.Lang | default "" -}}
@@ -139,8 +139,8 @@
     <header class="site-header">
       <div class="site-header-inner">
         <a href="/" class="site-logo">
-          <img src="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" alt="{{ if site.Params.enable_exceptions }}GTCode{{ else }}Oahu Underground{{ end }} mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
-          <span>{{ if site.Params.enable_exceptions }}GTCode{{ else }}{{ .Site.Params.newsroom_name | default "Oahu Underground" }}{{ end }}</span>
+          <img src="{{ partialCached "brand/asset-url.html" "/img/gtcode-badge.svg" "/img/gtcode-badge.svg" }}" alt="{{ if (partial "exception/enabled.html" .) }}GTCode{{ else }}Oahu Underground{{ end }} mark" class="site-logo-mark" width="40" height="40" loading="lazy" decoding="async" />
+          <span>{{ if (partial "exception/enabled.html" .) }}GTCode{{ else }}{{ .Site.Params.newsroom_name | default "Oahu Underground" }}{{ end }}</span>
         </a>
         <button class="site-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
           <span class="sr-only">Toggle primary navigation</span>
@@ -166,7 +166,7 @@
       <div class="site-footer-inner">
         <div class="footer-section">
           <p class="footer-heading">About</p>
-          <p>{{ if site.Params.enable_exceptions }}GTCode is the technical home of Ekewaka Lono, focused on AI systems engineering, ML research, implementation guides, and consulting.{{ else }}{{ .Site.Params.description }}{{ end }}</p>
+          <p>{{ if (partial "exception/enabled.html" .) }}GTCode is the technical home of Ekewaka Lono, focused on AI systems engineering, ML research, implementation guides, and consulting.{{ else }}{{ .Site.Params.description }}{{ end }}</p>
         </div>
         <div class="footer-section">
           <p class="footer-heading">News</p>
@@ -187,7 +187,7 @@
         <div class="footer-section">
           <p class="footer-heading">Categories</p>
           <ul>
-            {{ if not site.Params.enable_exceptions }}
+            {{ if not (partial "exception/enabled.html" .) }}
             <li><a href="/hawaii-courts/">Hawaii Courts</a></li>
             <li><a href="/geopolitics/">Geopolitics</a></li>
             <li><a href="/intelligence/">Intelligence</a></li>
@@ -203,7 +203,7 @@
             <li><a href="/news/">News Wire</a></li>
             <li><a href="/agent.txt">agent.txt</a></li>
             <li><a href="/llm.txt">llm.txt</a></li>
-            {{ if site.Params.enable_exceptions }}
+            {{ if (partial "exception/enabled.html" .) }}
             <li><a href="/policies/ai/">AI Policy</a></li>
             <li><a href="/policies/agent/">AI Agent Policy</a></li>
             <li><a href="/policies/llm/">LLM Usage Policy</a></li>
@@ -215,7 +215,7 @@
         </div>
       </div>
       <div class="footer-copyright">
-        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ if site.Params.enable_exceptions }}GTCode{{ else }}{{ .Site.Params.newsroom_name | default "Oahu Underground" }}{{ end }}</a>. {{ partial "content-use-footer.html" . }} Powered by GCMS.
+        &copy; {{ now.Format "2006" }}&nbsp;<a href="/">{{ if (partial "exception/enabled.html" .) }}GTCode{{ else }}{{ .Site.Params.newsroom_name | default "Oahu Underground" }}{{ end }}</a>. {{ partial "content-use-footer.html" . }} Powered by GCMS.
       </div>
     </footer>
 

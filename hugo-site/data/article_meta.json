@@ -8602,6 +8602,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-17T16:13:23.288187+00:00"
   },
+  "news/ai-security/fuzzers-vs-ai-comparing-fuzzilli-and-bigsleep-on-javascript-engines": {
+    "slug": "news/ai-security/fuzzers-vs-ai-comparing-fuzzilli-and-bigsleep-on-javascript-engines",
+    "meta_description": "Project Zero compared two automated tools used by Google to find vulnerabilities in Chromeâs JavaScript engine, V8, on a regular basis.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines\",\n  \"description\": \"Project Zero compared two automated tools used by Google to find vulnerabilities in Chromeâs JavaScript engine, V8, on a regular basis.\",\n  \"datePublished\": \"2026-11-15T02:41:06.090076+00:00\",\n  \"dateModified\": \"2026-11-15T02:41:06.090076+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://projectzero.google/2026/10/fuzzing-v-AI.html\"\n  },\n  \"url\": \"https://projectzero.google/2026/10/fuzzing-v-AI.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:41:34.914066+00:00"
+  },
   "news/ai-security/gainsight-expands-impacted-customer-list-following-salesforce-security-alert": {
     "slug": "news/ai-security/gainsight-expands-impacted-customer-list-following-salesforce-security-alert",
     "meta_description": "Nov 27, 2025 Ravie Lakshmanan Ransomware / Cloud Security Gainsight has disclosed that the recent suspicious activity targeting its applications...",
@@ -9028,6 +9035,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Grandstream GXP1600 VoIP Phones Exposed to Unauthenticated Remote Code Execution\",\n  \"description\": \"Ravie Lakshmanan Feb 18, 2026 Network Security / Enterprise Security Cybersecurity researchers have disclosed a critical security flaw in the...\",\n  \"datePublished\": \"2026-02-27T06:25:15.560875+00:00\",\n  \"dateModified\": \"2026-02-27T06:25:15.560875+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/grandstream-gxp1600-voip-phones-exposed.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/grandstream-gxp1600-voip-phones-exposed.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:12.534130+00:00"
+  },
+  "news/ai-security/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack": {
+    "slug": "news/ai-security/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack",
+    "meta_description": "Dutch-Belgian grocery giant Ahold Delhaize estimates that last month’s cyberattack, which disrupted operations in the US and the Benelux, will...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Grocery Giant Ahold Delhaize Estimates Financial Toll of October Cyberattack\",\n  \"description\": \"Dutch-Belgian grocery giant Ahold Delhaize estimates that last month’s cyberattack, which disrupted operations in the US and the Benelux, will...\",\n  \"datePublished\": \"2026-11-15T02:41:05.327774+00:00\",\n  \"dateModified\": \"2026-11-15T02:41:05.327774+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack\"\n  },\n  \"url\": \"https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:41:35.310917+00:00"
   },
   "news/ai-security/grosses-bauunternehmen-meldet-uberraschend-insolvenz-an-was-das-fur-mitarbeiter-in-munchen-bedeutet": {
     "slug": "news/ai-security/grosses-bauunternehmen-meldet-uberraschend-insolvenz-an-was-das-fur-mitarbeiter-in-munchen-bedeutet",
@@ -13432,6 +13446,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-13T08:16:09.641159+00:00"
   },
+  "news/ai-security/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line": {
+    "slug": "news/ai-security/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line",
+    "meta_description": "OpenAI on Thursday unveiled GPT-6 Cyber, a security model the company says is far more capable than its predecessor and more disciplined about...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"OpenAI Says New GPT-6 Cyber Model Hunts Flaws Without Crossing the Line\",\n  \"description\": \"OpenAI on Thursday unveiled GPT-6 Cyber, a security model the company says is far more capable than its predecessor and more disciplined about...\",\n  \"datePublished\": \"2026-11-15T02:41:04.445497+00:00\",\n  \"dateModified\": \"2026-11-15T02:41:04.445497+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line\"\n  },\n  \"url\": \"https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:41:35.984471+00:00"
+  },
   "news/ai-security/openai-shelves-gpt-6-1-astra-after-tests-find-deception-and-unauthorized-actions": {
     "slug": "news/ai-security/openai-shelves-gpt-6-1-astra-after-tests-find-deception-and-unauthorized-actions",
     "meta_description": "Ravie Lakshmanan Sep 29, 2026 Artificial Intelligence / Supply Chain OpenAI on Monday shelved plans to release GPT-6.1 Astra, a next-generation...",
@@ -14187,6 +14208,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Researchers Find Malicious VS Code, Go, npm, and Rust Packages Stealing Developer Data\",\n  \"description\": \"Dec 09, 2025 Ravie Lakshmanan Malware / Threat Analysis Cybersecurity researchers have discovered two new extensions on Microsoft Visual Studio...\",\n  \"datePublished\": \"2025-12-09T12:03:07.905782+00:00\",\n  \"dateModified\": \"2025-12-09T12:03:07.905782+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/researchers-find-malicious-vs-code-go.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/researchers-find-malicious-vs-code-go.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:30.987823+00:00"
+  },
+  "news/ai-security/researchers-find-residential-proxies-on-white-house-network": {
+    "slug": "news/ai-security/researchers-find-residential-proxies-on-white-house-network",
+    "meta_description": "Security researchers have discovered multiple computers on the White House network that are used as residential proxy exit nodes.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Researchers Find Residential Proxies on White House Network\",\n  \"description\": \"Security researchers have discovered multiple computers on the White House network that are used as residential proxy exit nodes.\",\n  \"datePublished\": \"2026-11-15T02:41:05.585627+00:00\",\n  \"dateModified\": \"2026-11-15T02:41:05.585627+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network\"\n  },\n  \"url\": \"https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:41:35.646810+00:00"
   },
   "news/ai-security/researchers-find-serious-ai-bugs-exposing-meta-nvidia-and-microsoft-inference-frameworks": {
     "slug": "news/ai-security/researchers-find-serious-ai-bugs-exposing-meta-nvidia-and-microsoft-inference-frameworks",
@@ -16609,6 +16637,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Urban VPN Proxy Surreptitiously Intercepts AI Chats\",\n  \"description\": \"This is pretty scary : > Urban VPN Proxy targets conversations across ten AI platforms: ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity,...\",\n  \"datePublished\": \"2025-12-25T00:03:18.803029+00:00\",\n  \"dateModified\": \"2025-12-25T00:03:18.803029+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2025/12/urban-vpn-proxy-surreptitiously-intercepts-ai-chats.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2025/12/urban-vpn-proxy-surreptitiously-intercepts-ai-chats.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:23.350188+00:00"
+  },
+  "news/ai-security/us-agencies-urge-organizations-to-harden-refrigeration-controllers": {
+    "slug": "news/ai-security/us-agencies-urge-organizations-to-harden-refrigeration-controllers",
+    "meta_description": "The US government is urging healthcare, chemical, food, and transportation organizations to harden their industrial refrigeration and cold chain...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"US Agencies Urge Organizations to Harden Refrigeration Controllers\",\n  \"description\": \"The US government is urging healthcare, chemical, food, and transportation organizations to harden their industrial refrigeration and cold chain...\",\n  \"datePublished\": \"2026-11-15T02:41:04.916003+00:00\",\n  \"dateModified\": \"2026-11-15T02:41:04.916003+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers\"\n  },\n  \"url\": \"https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:41:34.531798+00:00"
   },
   "news/ai-security/us-bans-all-foreign-made-consumer-routers": {
     "slug": "news/ai-security/us-bans-all-foreign-made-consumer-routers",

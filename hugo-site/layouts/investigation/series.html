@@ -64,7 +64,7 @@
     {{ partial "citation-block.html" $page }}
 
     <footer class="ou-article-footer">
-      {{ if site.Params.enable_exceptions }}
+      {{ if (partial "exception/enabled.html" .) }}
       <a class="ou-article-back" href="/">&larr; Back to Home</a>
       {{ else }}
       <a class="ou-article-back" href="{{ $portfolioIndex }}">&larr; Back to {{ $portfolioLabel }}</a>

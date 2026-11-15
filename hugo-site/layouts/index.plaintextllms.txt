@@ -3,7 +3,7 @@
 
 {{ .RawContent }}{{ end }}
 {{- else -}}
-{{- $page := . -}}{{- $active := partial "exception/resolve-active-page.html" $page -}}{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}# {{ $active.Title | default site.Title }}
+{{- $page := . -}}{{- $active := partial "exception/resolve-active-page.html" $page -}}{{- $isActiveException := and (partial "exception/enabled.html" .) $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}# {{ $active.Title | default site.Title }}
 
 > {{ $active.Description | default site.Params.description }}
 

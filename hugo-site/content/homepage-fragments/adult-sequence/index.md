@@ -1,5 +1,5 @@
 ---
-title: "Adult Sequence — Names and Allegations of Criminal Conduct and Misconduct"
+title: "My Account: Threats, Prosecution, and Institutional Failures"
 description: "My firsthand account and investigative allegations, organized by individual and responsibility."
 exception: true
 build:

@@ -2,7 +2,7 @@
 {{- $section := $ctx.Section -}}
 {{- $portfolioKey := $ctx.Params.portfolio_key | default "" -}}
 {{- $rel := $ctx.RelPermalink -}}
-{{- $exceptionsEnabled := site.Params.enable_exceptions -}}
+{{- $exceptionsEnabled := (partial "exception/enabled.html" .) -}}
 {{- $isInvestigations := or
   (or (eq $section "hawaii-courts") (eq $portfolioKey "hawaii-courts") (eq $rel "/hawaii-courts/"))
   (or (eq $section "geopolitics") (eq $portfolioKey "geopolitics") (eq $rel "/geopolitics/"))

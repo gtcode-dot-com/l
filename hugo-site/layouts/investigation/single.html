@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ $page := . }}
   {{ $active := partial "exception/resolve-active-page.html" $page }}
-  {{ $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) }}
+  {{ $isActiveException := and (partial "exception/enabled.html" .) $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) }}
   {{ $currentPage := $page }}
   {{ $portfolioLabel := $page.Params.portfolio_label | default "Investigations" }}
   {{ $portfolioIndex := $page.Params.portfolio_index | default "/hawaii-courts/" }}
@@ -150,7 +150,7 @@
     {{ end }}
 
     <footer class="ou-article-footer">
-      {{ if site.Params.enable_exceptions }}
+      {{ if (partial "exception/enabled.html" .) }}
       <a class="ou-article-back" href="/">&larr; Back to Home</a>
       {{ else }}
       <a class="ou-article-back" href="{{ $portfolioIndex }}">&larr; Back to {{ $portfolioLabel }}</a>

@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{- $page := . -}}
   {{- $active := partial "exception/resolve-active-page.html" $page -}}
-  {{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+  {{- $isActiveException := and (partial "exception/enabled.html" .) $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
   {{- $listPages := partial "exception/filter-list-pages.html" $page.Pages -}}
   {{- $regularPages := partial "exception/filter-list-pages.html" $page.Site.RegularPages -}}
   <h1 class="sr-only">{{ $active.Title }}</h1>

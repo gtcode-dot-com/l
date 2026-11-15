@@ -1,6 +1,6 @@
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $isActiveException := and site.Params.enable_exceptions (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $isActiveException := and (partial "exception/enabled.html" .) (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- partial "fetch-article-meta.html" (dict "context" .) -}}
 {{- $articleMeta := .Scratch.Get "_article_meta" -}}
 {{- if not $articleMeta -}}

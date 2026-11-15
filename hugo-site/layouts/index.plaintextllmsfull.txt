@@ -6,7 +6,7 @@
 {{- /* llms-full.txt — expanded context for LLMs, per https://llmstxt.org/ */ -}}
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $isActiveException := and (partial "exception/enabled.html" .) $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
 # {{ $active.Title | default site.Title }}
 
 > {{ $active.Description | default site.Params.description }}

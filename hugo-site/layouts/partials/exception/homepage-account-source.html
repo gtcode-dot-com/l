@@ -1,0 +1,5 @@
+{{- $source := . -}}
+{{- if partial "exception/homepage-only.html" . -}}
+  {{- $source = replaceRE `<span class="home-account-related">[\s\S]*?</span>` "" $source -}}
+{{- end -}}
+{{- return $source -}}

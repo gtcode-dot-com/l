@@ -1,5 +1,5 @@
 {{- $pages := . -}}
-{{- if site.Params.enable_exceptions -}}
+{{- if (partial "exception/enabled.html" .) -}}
   {{- $visible := slice -}}
   {{- range $pages -}}
     {{- if not (partial "exception/is-hidden.html" .) }}{{ $visible = $visible | append . }}{{ end -}}

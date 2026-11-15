@@ -1,5 +1,5 @@
 {{- $hidden := false -}}
-{{- if site.Params.enable_exceptions -}}
+{{- if (partial "exception/enabled.html" .) -}}
   {{- $hidden = eq .Params.exception true -}}
   {{- if and (eq .Kind "term") (gt (len .Pages) 0) -}}
     {{- $visible := where .Pages "Params.exception" "ne" true -}}

@@ -109,6 +109,11 @@ relativeURLs = false
   # false = SHOW the original journalism, disclosures, personal essays, and homepage note.
   enable_exceptions = false
 
+  # With enable_exceptions = false: keep the 25-entry homepage without related-reporting
+  # or disclosure-subpage links; apply exception mode everywhere else.
+  # false restores normal behavior. enable_exceptions = true still takes precedence.
+  homepage_only_disclosures = true
+
   # true = show the Repos menu items and all /repos pages; false = hide them entirely.
   # Data scraping (data/repos.yaml, content/repos) is unaffected.
   display_repos = false

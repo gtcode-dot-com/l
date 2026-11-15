@@ -5,7 +5,8 @@
 {{- else -}}
 {{- $page := . -}}
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
-{{- $isActiveException := and site.Params.enable_exceptions $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- if partial "exception/homepage-only.html" . -}}{{- $active = $page -}}{{- end -}}
+{{- $isActiveException := and (partial "exception/enabled.html" .) $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
 {{- $brandName := strings.TrimSpace ($active.Params.brand_name | default "Oahu Underground") -}}
 {{- $tipsEmail := .Site.Params.tips_email | default "tips@gtcode.com" -}}
 {{- $contactEmail := .Site.Params.contact_email | default "inquire@gtcode.com" -}}
@@ -44,9 +45,10 @@
 
 *{{ .Description }}*
 
-{{ .RawContent }}
+{{ partial "exception/homepage-account-source.html" .RawContent }}
 {{ end }}
 
+{{ if not (partial "exception/homepage-only.html" .) }}
 ## Supporting records and reporting
 
 Longer firsthand accounts:
@@ -94,6 +96,8 @@ The December 2, 2022 courtroom allegation has not been independently established
 - [Reporter disclosures and methodology](/disclosures/)
 - [Tips and responses](mailto:{{ $tipsEmail }})
 - [AI consulting]({{ $consultingURL }})
+
+{{ end }}
 
 ## Latest news
 
