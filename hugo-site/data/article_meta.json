@@ -5830,6 +5830,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-10T01:01:00.312119+00:00"
   },
+  "news/ai-security/brava-security-emerges-from-stealth-with-15-million-in-funding": {
+    "slug": "news/ai-security/brava-security-emerges-from-stealth-with-15-million-in-funding",
+    "meta_description": "Security operations startup Brava Security has emerged from stealth mode with $15 million in a seed funding round led by F2 Venture Capital and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Brava Security Emerges From Stealth With $15 Million in Funding\",\n  \"description\": \"Security operations startup Brava Security has emerged from stealth mode with $15 million in a seed funding round led by F2 Venture Capital and...\",\n  \"datePublished\": \"2026-11-15T04:03:31.461004+00:00\",\n  \"dateModified\": \"2026-11-15T04:03:31.461004+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding\"\n  },\n  \"url\": \"https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:04:01.627132+00:00"
+  },
   "news/ai-security/brazil-hit-by-banking-trojan-spread-via-whatsapp-worm-and-relaynfc-nfc-relay-fraud": {
     "slug": "news/ai-security/brazil-hit-by-banking-trojan-spread-via-whatsapp-worm-and-relaynfc-nfc-relay-fraud",
     "meta_description": "The threat actor known as Water Saci is actively evolving its tactics, switching to a sophisticated, highly layered infection chain that uses HTML...",
@@ -10338,6 +10345,20 @@
     "agent_callout": "",
     "generated_at": "2026-05-04T02:16:06.858616+00:00"
   },
+  "news/ai-security/isc-stormcast-for-monday-november-2nd-2026-https-isc-sans-edu-podcastdetail-10160-mon-nov-2nd": {
+    "slug": "news/ai-security/isc-stormcast-for-monday-november-2nd-2026-https-isc-sans-edu-podcastdetail-10160-mon-nov-2nd",
+    "meta_description": "ISC Stormcast For Monday, November 2nd, 2026 &lt;https://isc.sans.edu/podcastdetail/10160&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)\",\n  \"description\": \"ISC Stormcast For Monday, November 2nd, 2026 &lt;https://isc.sans.edu/podcastdetail/10160&gt;\",\n  \"datePublished\": \"2026-11-15T04:03:31.202823+00:00\",\n  \"dateModified\": \"2026-11-15T04:03:31.202823+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33480\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33480\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:04:02.341921+00:00"
+  },
+  "news/ai-security/isc-stormcast-for-monday-november-9th-2026-https-isc-sans-edu-podcastdetail-10170-mon-nov-9th": {
+    "slug": "news/ai-security/isc-stormcast-for-monday-november-9th-2026-https-isc-sans-edu-podcastdetail-10170-mon-nov-9th",
+    "meta_description": "ISC Stormcast For Monday, November 9th, 2026 &lt;https://isc.sans.edu/podcastdetail/10170&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)\",\n  \"description\": \"ISC Stormcast For Monday, November 9th, 2026 &lt;https://isc.sans.edu/podcastdetail/10170&gt;\",\n  \"datePublished\": \"2026-11-15T04:03:32.410343+00:00\",\n  \"dateModified\": \"2026-11-15T04:03:32.410343+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33500\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33500\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:04:01.995040+00:00"
+  },
   "news/ai-security/isc-stormcast-for-monday-october-12th-2026-https-isc-sans-edu-podcastdetail-10132-mon-oct-12th": {
     "slug": "news/ai-security/isc-stormcast-for-monday-october-12th-2026-https-isc-sans-edu-podcastdetail-10132-mon-oct-12th",
     "meta_description": "ISC Stormcast For Monday, October 12th, 2026 &lt;https://isc.sans.edu/podcastdetail/10132&gt;",
@@ -14643,6 +14664,13 @@
     "agent_callout": "",
     "generated_at": "2026-09-30T02:39:05.492774+00:00"
   },
+  "news/ai-security/scans-for-sshole-vulnerability-cve-2026-123158-sun-nov-8th": {
+    "slug": "news/ai-security/scans-for-sshole-vulnerability-cve-2026-123158-sun-nov-8th",
+    "meta_description": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)\",\n  \"description\": \"Our honeypots use \\\"Cowrie\\\" to collect SSH data. With the emergence of the \\\"sshole\\\" vulnerability last week, we are now seeing an increase in...\",\n  \"datePublished\": \"2026-11-15T04:03:33.224168+00:00\",\n  \"dateModified\": \"2026-11-15T04:03:33.224168+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33498\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33498\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:04:02.668526+00:00"
+  },
   "news/ai-security/scans-for-wordfence-protected-websites-tue-sep-29th": {
     "slug": "news/ai-security/scans-for-wordfence-protected-websites-tue-sep-29th",
     "meta_description": "Starting yesterday, our sensors picked up a small number of scans for \"wordfence-waf.php\". This particular script is used by Wordfence, a solution...",
@@ -17064,6 +17092,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"[Webinar] Securing Agentic AI: From MCPs and Tool Access to Shadow API Key Sprawl\",\n  \"description\": \"Jan 13, 2026 The Hacker News Artificial Intelligence / Automation Security AI agents are no longer just writing code. They are executing it.\",\n  \"datePublished\": \"2026-01-13T16:15:15.170420+00:00\",\n  \"dateModified\": \"2026-01-13T16:15:15.170420+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/webinar-t-from-mcps-and-tool-access-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/webinar-t-from-mcps-and-tool-access-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:44.105168+00:00"
+  },
+  "news/ai-security/webinar-see-how-identity-blind-spots-put-your-soc-at-risk-and-how-to-close-them": {
+    "slug": "news/ai-security/webinar-see-how-identity-blind-spots-put-your-soc-at-risk-and-how-to-close-them",
+    "meta_description": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them\",\n  \"description\": \"Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to...\",\n  \"datePublished\": \"2026-11-15T04:03:33.745776+00:00\",\n  \"dateModified\": \"2026-11-15T04:03:33.745776+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:04:03.004697+00:00"
   },
   "news/ai-security/webinar-stop-guessing-learn-to-validate-your-defenses-against-real-attacks": {
     "slug": "news/ai-security/webinar-stop-guessing-learn-to-validate-your-defenses-against-real-attacks",
