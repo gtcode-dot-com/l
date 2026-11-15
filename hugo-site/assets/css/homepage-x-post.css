@@ -1,16 +1,10 @@
 .home-x-post {
   box-sizing: border-box;
   inline-size: 100%;
-  max-inline-size: 550px;
+  max-inline-size: 420px;
   min-inline-size: 0;
   margin: 1.5rem auto 2rem;
 }
-.home-x-post-widget,
-.home-x-post-fallback {
-  min-inline-size: 0;
-  max-inline-size: 100%;
-}
-.home-x-post-widget:empty { display: none; }
 .home-x-post img {
   display: block;
   inline-size: 100%;
@@ -18,14 +12,6 @@
   block-size: auto;
   border-radius: 0.5rem;
 }
-.home-x-post iframe,
-.home-x-post .twitter-tweet {
-  max-width: 100% !important;
-  min-width: 0 !important;
-}
-.home-x-post [hidden] { display: none !important; }
-.home-x-post details { margin-block: 0.75rem; }
-.home-x-post summary { cursor: pointer; }
 .home-x-post figcaption {
   margin-block-start: 0.75rem;
   font-size: 0.9rem;

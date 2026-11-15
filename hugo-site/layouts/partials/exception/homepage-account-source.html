@@ -1,6 +1,6 @@
 {{- $source := . -}}
 {{- /* Keep the raw Markdown export readable without shortcode/widget markup. */ -}}
-{{- $source = replace $source "{{< record-failures-post >}}" "[How reporting and record failures accumulate](https://x.com/p_lowndes/status/2121787363777228970)" -}}
+{{- $source = replace $source "{{< record-failures-post >}}" "**[How “not recorded” becomes “never happened.”](https://x.com/p_lowndes/status/2121787363777228970)**\n\nFour failures in how institutions record events and review complaints. **[Read the post on X →](https://x.com/p_lowndes/status/2121787363777228970)**" -}}
 {{- if partial "exception/homepage-only.html" . -}}
   {{- $source = replaceRE `<span class="home-account-related">[\s\S]*?</span>` "" $source -}}
 {{- end -}}

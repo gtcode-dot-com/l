@@ -661,10 +661,6 @@
     <script src="{{ $navJS.RelPermalink }}" integrity="{{ $navJS.Data.Integrity }}" defer></script>
     {{ $ouTablesJS := resources.Get "js/ou-tables.js" | minify | fingerprint }}
     <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
-    {{ if $hasXPost }}
-    {{ $xPostJS := resources.Get "js/homepage-x-post.js" | minify | fingerprint }}
-    <script src="{{ $xPostJS.RelPermalink }}" integrity="{{ $xPostJS.Data.Integrity }}" defer></script>
-    {{ end }}
   </body>
 </html>
 {{- end -}}
