@@ -4318,6 +4318,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T16:28:03.400860+00:00"
   },
+  "news/ai-security/186-fake-ai-domains-redirect-users-to-clickfix-lures-browser-malware-and-search-hijackers": {
+    "slug": "news/ai-security/186-fake-ai-domains-redirect-users-to-clickfix-lures-browser-malware-and-search-hijackers",
+    "meta_description": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers\",\n  \"description\": \"Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix...\",\n  \"datePublished\": \"2026-11-15T04:10:46.235664+00:00\",\n  \"dateModified\": \"2026-11-15T04:10:46.235664+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:11:16.025215+00:00"
+  },
   "news/ai-security/1980s-hacker-manifesto": {
     "slug": "news/ai-security/1980s-hacker-manifesto",
     "meta_description": "Forty years ago, The Mentor— Loyd Blankenship —published “ The Conscience of a Hacker ” in Phrack . > You bet your ass we’re all alike… we’ve been...",
@@ -6698,6 +6705,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-11T08:16:06.453299+00:00"
   },
+  "news/ai-security/citrix-patches-12-netscaler-and-secure-access-client-flaws-including-authentication-bypass": {
+    "slug": "news/ai-security/citrix-patches-12-netscaler-and-secure-access-client-flaws-including-authentication-bypass",
+    "meta_description": "Ravie Lakshmanan Nov 12, 2026 Vulnerability / Network Security Citrix has released patches for multiple critical security flaws impacting...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass\",\n  \"description\": \"Ravie Lakshmanan Nov 12, 2026 Vulnerability / Network Security Citrix has released patches for multiple critical security flaws impacting...\",\n  \"datePublished\": \"2026-11-15T04:10:45.803507+00:00\",\n  \"dateModified\": \"2026-11-15T04:10:45.803507+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:11:14.945243+00:00"
+  },
   "news/ai-security/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability": {
     "slug": "news/ai-security/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability",
     "meta_description": "The security defect, tracked as CVE-2026-107406, could lead to remote code execution or denial-of-service. By Ionut Arghire | October 9, 2026...",
@@ -7124,6 +7138,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Critical React2Shell Flaw Added to CISA KEV After Confirmed Active Exploitation\",\n  \"description\": \"Dec 06, 2025 Ravie Lakshmanan Vulnerability / Patch Management The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday formally...\",\n  \"datePublished\": \"2025-12-06T12:03:08.289507+00:00\",\n  \"dateModified\": \"2025-12-06T12:03:08.289507+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/critical-react2shell-flaw-added-to-cisa.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/critical-react2shell-flaw-added-to-cisa.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:45.867568+00:00"
+  },
+  "news/ai-security/critical-red-hat-quay-flaw-lets-attackers-read-and-overwrite-all-private-container-images-in-a-registry": {
+    "slug": "news/ai-security/critical-red-hat-quay-flaw-lets-attackers-read-and-overwrite-all-private-container-images-in-a-registry",
+    "meta_description": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry\",\n  \"description\": \"A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every...\",\n  \"datePublished\": \"2026-11-15T04:10:45.389051+00:00\",\n  \"dateModified\": \"2026-11-15T04:10:45.389051+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:11:15.304771+00:00"
   },
   "news/ai-security/critical-rsc-bugs-in-react-and-next-js-allow-unauthenticated-remote-code-execution": {
     "slug": "news/ai-security/critical-rsc-bugs-in-react-and-next-js-allow-unauthenticated-remote-code-execution",
@@ -12977,6 +12998,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T03:25:36.002035+00:00"
   },
+  "news/ai-security/new-signdrop-zero-day-exploit-turns-windows-clfs-security-feature-into-system-access": {
+    "slug": "news/ai-security/new-signdrop-zero-day-exploit-turns-windows-clfs-security-feature-into-system-access",
+    "meta_description": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access\",\n  \"description\": \"Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System...\",\n  \"datePublished\": \"2026-11-15T04:10:45.094968+00:00\",\n  \"dateModified\": \"2026-11-15T04:10:45.094968+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:11:16.369614+00:00"
+  },
   "news/ai-security/new-spectre-v2-btr-attack-leaks-linux-memory-despite-existing-defenses": {
     "slug": "news/ai-security/new-spectre-v2-btr-attack-leaks-linux-memory-despite-existing-defenses",
     "meta_description": "A group of academics from VUSec and Scuola Superiore Sant'Anna have disclosed details of a new Spectre CPU vulnerability variant that affects...",
@@ -15881,6 +15909,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Threat Intelligence Alone Won't Close the Exploitation Gap\",\n  \"description\": \"The Hacker News Sep 16, 2026 Threat Intelligence / Security Validation A leaked credential shows up in a criminal marketplace, or a vulnerability...\",\n  \"datePublished\": \"2026-10-02T01:11:32.493487+00:00\",\n  \"dateModified\": \"2026-10-02T01:11:32.493487+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/09/threat-intelligence-alone-wont-close.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/09/threat-intelligence-alone-wont-close.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-02T01:12:58.571529+00:00"
+  },
+  "news/ai-security/threatsday-59-linux-kernel-bugs-falcon-spyware-gsocket-backdoors-17-more-stories": {
+    "slug": "news/ai-security/threatsday-59-linux-kernel-bugs-falcon-spyware-gsocket-backdoors-17-more-stories",
+    "meta_description": "Ravie Lakshmanan Nov 12, 2026 Hacking News / Cybersecurity News A search result isn't always safe. An access request isn't always harmless.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories\",\n  \"description\": \"Ravie Lakshmanan Nov 12, 2026 Hacking News / Cybersecurity News A search result isn't always safe. An access request isn't always harmless.\",\n  \"datePublished\": \"2026-11-15T04:10:44.687668+00:00\",\n  \"dateModified\": \"2026-11-15T04:10:44.687668+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:11:15.656263+00:00"
   },
   "news/ai-security/threatsday-ai-powered-zero-day-chain-543k-live-secrets-model-inspection-rce-and-13-more-stories": {
     "slug": "news/ai-security/threatsday-ai-powered-zero-day-chain-543k-live-secrets-model-inspection-rce-and-13-more-stories",
