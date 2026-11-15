@@ -5102,6 +5102,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-14T02:42:53.699654+00:00"
   },
+  "news/ai-security/another-way-police-are-locating-people-from-their-smartphones": {
+    "slug": "news/ai-security/another-way-police-are-locating-people-from-their-smartphones",
+    "meta_description": "Penlink’s Webloc is an application that locates people using information from the weather, gaming, email, and religious apps on their phone.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Another Way Police Are Locating People from Their Smartphones\",\n  \"description\": \"Penlink’s Webloc is an application that locates people using information from the weather, gaming, email, and religious apps on their phone.\",\n  \"datePublished\": \"2026-11-15T04:28:51.993494+00:00\",\n  \"dateModified\": \"2026-11-15T04:28:51.993494+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:29:21.633339+00:00"
+  },
   "news/ai-security/anthropic-and-the-pentagon": {
     "slug": "news/ai-security/anthropic-and-the-pentagon",
     "meta_description": "OpenAI is in and Anthropic is out as a supplier of AI technology for the US defense department. This news caps a week of bluster by the highest...",
@@ -8825,6 +8832,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google Brings AirDrop Compatibility to Android’s Quick Share Using Rust-Hardened Security\",\n  \"description\": \"Nov 21, 2025 Ravie Lakshmanan Data Protection / Technology In a surprise move, Google on Thursday announced that it has updated Quick Share, its...\",\n  \"datePublished\": \"2025-11-22T00:00:07.520123+00:00\",\n  \"dateModified\": \"2025-11-22T00:00:07.520123+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/google-adds-airdrop-compatibility-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/google-adds-airdrop-compatibility-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:34.272886+00:00"
+  },
+  "news/ai-security/google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data-across-processes-in-vms": {
+    "slug": "news/ai-security/google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data-across-processes-in-vms",
+    "meta_description": "Swati Khandelwal Nov 12, 2026 Vulnerability / Cloud Security Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs\",\n  \"description\": \"Swati Khandelwal Nov 12, 2026 Vulnerability / Cloud Security Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to...\",\n  \"datePublished\": \"2026-11-15T04:28:51.697923+00:00\",\n  \"dateModified\": \"2026-11-15T04:28:51.697923+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:29:21.985824+00:00"
   },
   "news/ai-security/google-confirms-cve-2026-21385-in-qualcomm-android-component-exploited": {
     "slug": "news/ai-security/google-confirms-cve-2026-21385-in-qualcomm-android-component-exploited",
@@ -12935,6 +12949,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T06:00:13.100998+00:00"
   },
+  "news/ai-security/new-openssh-vulnerability": {
+    "slug": "news/ai-security/new-openssh-vulnerability",
+    "meta_description": "It’s a bad one , and it’s been in the code for a decade: &gt; A newly disclosed flaw involving OpenSSH and musl, dubbed “\\*sshole,” allows...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New OpenSSH Vulnerability\",\n  \"description\": \"It’s a bad one , and it’s been in the code for a decade: &gt; A newly disclosed flaw involving OpenSSH and musl, dubbed “\\\\*sshole,” allows...\",\n  \"datePublished\": \"2026-11-15T04:28:52.559717+00:00\",\n  \"dateModified\": \"2026-11-15T04:28:52.559717+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:29:22.357795+00:00"
+  },
   "news/ai-security/new-osiris-ransomware-emerges-as-new-strain-using-poortry-driver-in-byovd-attack": {
     "slug": "news/ai-security/new-osiris-ransomware-emerges-as-new-strain-using-poortry-driver-in-byovd-attack",
     "meta_description": "Cybersecurity researchers have disclosed details of a new ransomware family called Osiris that targeted a major food service franchisee operator...",
@@ -14832,6 +14853,13 @@
     "agent_callout": "",
     "generated_at": "2025-11-13T00:27:57.482255+00:00"
   },
+  "news/ai-security/sckit-malware-turns-screenconnect-support-sessions-into-potential-msp-attack-paths": {
+    "slug": "news/ai-security/sckit-malware-turns-screenconnect-support-sessions-into-potential-msp-attack-paths",
+    "meta_description": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths\",\n  \"description\": \"The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the...\",\n  \"datePublished\": \"2026-11-15T04:28:51.144941+00:00\",\n  \"dateModified\": \"2026-11-15T04:28:51.144941+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:29:20.937302+00:00"
+  },
   "news/ai-security/screenconnect-client-ab-used-by-attackers-thu-oct-1st": {
     "slug": "news/ai-security/screenconnect-client-ab-used-by-attackers-thu-oct-1st",
     "meta_description": "Threat Actors do not always use top-notch techniques or very complex malware to perform their attacks. Sometimes, they just abuse of existing...",
@@ -16126,6 +16154,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Three PCIe Encryption Weaknesses Expose PCIe 5.0+ Systems to Faulty Data Handling\",\n  \"description\": \"Dec 10, 2025 Ravie Lakshmanan Hardware Security / Vulnerability Three security vulnerabilities have been disclosed in the Peripheral Component...\",\n  \"datePublished\": \"2025-12-11T00:03:08.174617+00:00\",\n  \"dateModified\": \"2025-12-11T00:03:08.174617+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/three-pcie-encryption-weaknesses-expose.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/three-pcie-encryption-weaknesses-expose.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:49.045072+00:00"
+  },
+  "news/ai-security/three-people-arrested-for-ai-enhanced-impersonation-fraud": {
+    "slug": "news/ai-security/three-people-arrested-for-ai-enhanced-impersonation-fraud",
+    "meta_description": "It’s hard to believe how lucrative this crime can be: &gt; According to a &gt; press release &gt; from the United States attorney’s office for the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Three People Arrested for AI-Enhanced Impersonation Fraud\",\n  \"description\": \"It’s hard to believe how lucrative this crime can be: &gt; According to a &gt; press release &gt; from the United States attorney’s office for the...\",\n  \"datePublished\": \"2026-11-15T04:28:52.276625+00:00\",\n  \"dateModified\": \"2026-11-15T04:28:52.276625+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T04:29:21.295005+00:00"
   },
   "news/ai-security/three-threat-groups-target-russian-enterprises-with-backdoors-ransomware-and-wipers": {
     "slug": "news/ai-security/three-threat-groups-target-russian-enterprises-with-backdoors-ransomware-and-wipers",
