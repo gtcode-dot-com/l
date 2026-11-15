@@ -1,7 +1,7 @@
 {{- with site.GetPage "/homepage-fragments/adult-sequence" -}}
 <section class="home-account" aria-labelledby="home-account-title" id="start-here">
   <header class="home-account-header">
-    <p class="ou-section-label">Reporter disclosures · Ekewaka Lono</p>
+    <p class="ou-section-label">A public account · Ekewaka Lono</p>
     <h1 id="home-account-title">{{ .Title }}</h1>
     <p class="home-account-intro">{{ .Description }}</p>
     {{ if not (partial "exception/homepage-only.html" .) }}
@@ -16,7 +16,7 @@
       <a href="#supporting-records">Supporting records and reporting</a>
       {{ end }}
     </nav>
-    <article class="home-account-body" aria-label="Adult sequence: 25 entries">
+    <article class="home-account-body" aria-label="Threats, attacks, and official misconduct: 25 entries">
       {{ partial "exception/homepage-account-source.html" .Content | safeHTML }}
     </article>
   </div>

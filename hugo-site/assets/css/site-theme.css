@@ -1965,6 +1965,7 @@ body::before,
   margin-inline: auto;
 }
 .home-account-header { margin-bottom: 2.5rem; }
+
 .home-account-header h1 {
   max-width: 25ch;
   margin: 1rem 0;
@@ -2029,6 +2030,7 @@ body::before,
 .home-account-body li::marker { color: var(--theme-accent); font-weight: 700; }
 .home-account-body li > strong:first-of-type { color: var(--theme-ink); }
 .home-account-body p { margin: 0 0 1rem; }
+.home-account-body img { display: block; max-width: 100%; height: auto; }
 .home-account-anchor { scroll-margin-top: 7rem; }
 .home-account-body #case-outcomes {
   padding-top: 2rem;

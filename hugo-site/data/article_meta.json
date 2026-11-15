@@ -4696,6 +4696,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:17.518930+00:00"
   },
+  "news/ai-security/after-binance-check-what-your-signing-systems-can-approve": {
+    "slug": "news/ai-security/after-binance-check-what-your-signing-systems-can-approve",
+    "meta_description": "Binance’s October 2026 security incident raises an operational question for every organization holding user funds: Can your security controls...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"After Binance, check what your signing systems can approve\",\n  \"description\": \"Binance’s October 2026 security incident raises an operational question for every organization holding user funds: Can your security controls...\",\n  \"datePublished\": \"2026-11-15T03:47:43.096911+00:00\",\n  \"dateModified\": \"2026-11-15T03:47:43.096911+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/11/06/after-binance-check-what-your-signing-systems-can-approve\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/11/06/after-binance-check-what-your-signing-systems-can-approve\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T03:48:15.470959+00:00"
+  },
   "news/ai-security/after-mythos-new-playbooks-for-a-zero-window-era": {
     "slug": "news/ai-security/after-mythos-new-playbooks-for-a-zero-window-era",
     "meta_description": "When patching isn’t fast enough, NDR helps contain the next era of threats. If you’ve been tracking advancements in AI, you know the exploit...",
@@ -5654,6 +5661,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Backdooring Open-Weight AI Models\",\n  \"description\": \"This is a problem: &gt; Any open model whose weights have been edited can carry a backdoor, whether it’s a task-specific fine-tune, a merged...\",\n  \"datePublished\": \"2026-10-22T20:29:09.455183+00:00\",\n  \"dateModified\": \"2026-10-22T20:29:09.455183+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-22T20:29:50.533063+00:00"
+  },
+  "news/ai-security/backporting-security-fixes-at-scale-with-codex": {
+    "slug": "news/ai-security/backporting-security-fixes-at-scale-with-codex",
+    "meta_description": "Stable Linux releases lack existing security fixes because backporting them is time-consuming and often thankless work. We’re using Codex to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Backporting security fixes at scale with Codex\",\n  \"description\": \"Stable Linux releases lack existing security fixes because backporting them is time-consuming and often thankless work. We’re using Codex to...\",\n  \"datePublished\": \"2026-11-15T03:47:44.068414+00:00\",\n  \"dateModified\": \"2026-11-15T03:47:44.068414+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T03:48:15.136252+00:00"
   },
   "news/ai-security/badges-bytes-and-blackmail": {
     "slug": "news/ai-security/badges-bytes-and-blackmail",
@@ -10127,6 +10141,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Friday, May 8th, 2026 https://isc.sans.edu/podcastdetail/9924, (Fri, May 8th)\",\n  \"description\": \"ISC Stormcast For Friday, May 8th, 2026\",\n  \"datePublished\": \"2026-05-14T02:41:51.310414+00:00\",\n  \"dateModified\": \"2026-05-14T02:41:51.310414+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32966\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32966\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-14T02:42:52.769381+00:00"
+  },
+  "news/ai-security/isc-stormcast-for-friday-november-6th-2026-https-isc-sans-edu-podcastdetail-10168-fri-nov-6th": {
+    "slug": "news/ai-security/isc-stormcast-for-friday-november-6th-2026-https-isc-sans-edu-podcastdetail-10168-fri-nov-6th",
+    "meta_description": "ISC Stormcast For Friday, November 6th, 2026 &lt;https://isc.sans.edu/podcastdetail/10168&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)\",\n  \"description\": \"ISC Stormcast For Friday, November 6th, 2026 &lt;https://isc.sans.edu/podcastdetail/10168&gt;\",\n  \"datePublished\": \"2026-11-15T03:47:44.743362+00:00\",\n  \"dateModified\": \"2026-11-15T03:47:44.743362+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33494\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33494\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T03:48:14.767249+00:00"
   },
   "news/ai-security/isc-stormcast-for-friday-october-16th-2026-https-isc-sans-edu-podcastdetail-10140-fri-oct-16th": {
     "slug": "news/ai-security/isc-stormcast-for-friday-october-16th-2026-https-isc-sans-edu-podcastdetail-10140-fri-oct-16th",
@@ -15497,6 +15518,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:15.079387+00:00"
   },
+  "news/ai-security/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential": {
+    "slug": "news/ai-security/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential",
+    "meta_description": "As millions of Americans vote in today’s U.S. midterms, most will use paper ballots, which are protected by strict chain-of-custody protocols and,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The cryptography behind electronic voting (and why paper ballots are still essential)\",\n  \"description\": \"As millions of Americans vote in today’s U.S. midterms, most will use paper ballots, which are protected by strict chain-of-custody protocols and,...\",\n  \"datePublished\": \"2026-11-15T03:47:43.645299+00:00\",\n  \"dateModified\": \"2026-11-15T03:47:43.645299+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T03:48:14.425660+00:00"
+  },
   "news/ai-security/the-ctem-divide-why-84-of-security-programs-are-falling-behind": {
     "slug": "news/ai-security/the-ctem-divide-why-84-of-security-programs-are-falling-behind",
     "meta_description": "The Hacker News Feb 12, 2026 Enterprise Security / Breach Prevention A new 2026 market intelligence study of 128 enterprise security...",
@@ -16812,6 +16840,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Vulnerability Disclosure in the Age of AI\",\n  \"description\": \"New article: “ Responsible Disclosure in the Age of AI: A Call for Urgent Action ,” by Melissa Hathaway. &gt; Abstract: &gt; Artificial...\",\n  \"datePublished\": \"2026-06-09T01:58:47.714697+00:00\",\n  \"dateModified\": \"2026-06-09T01:58:47.714697+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/06/vulnerability-disclosure-in-the-age-of-ai.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/06/vulnerability-disclosure-in-the-age-of-ai.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-06-09T01:59:53.979672+00:00"
+  },
+  "news/ai-security/vulnerability-scans-for-older-cisco-ios-vulnerability-opt-out-headers-thu-nov-5th": {
+    "slug": "news/ai-security/vulnerability-scans-for-older-cisco-ios-vulnerability-opt-out-headers-thu-nov-5th",
+    "meta_description": "This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. Instead, I first ran into some GeoServer exploits,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)\",\n  \"description\": \"This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. Instead, I first ran into some GeoServer exploits,...\",\n  \"datePublished\": \"2026-11-15T03:47:45.660666+00:00\",\n  \"dateModified\": \"2026-11-15T03:47:45.660666+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33492\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33492\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T03:48:14.057801+00:00"
   },
   "news/ai-security/want-to-rent-an-internet-address-at-the-white-house": {
     "slug": "news/ai-security/want-to-rent-an-internet-address-at-the-white-house",

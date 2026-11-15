@@ -19,6 +19,12 @@
 {{- $active := partial "exception/resolve-active-page.html" $page -}}
 {{- if partial "exception/homepage-only.html" . -}}{{- $active = $page -}}{{- end -}}
 {{- $isActiveException := and (partial "exception/enabled.html" .) $page.Params.exception (ne $active.RelPermalink $page.RelPermalink) -}}
+{{- $hasXPost := false -}}
+{{- if not $isActiveException -}}
+  {{- with site.GetPage "/homepage-fragments/adult-sequence" -}}
+    {{- $hasXPost = strings.Contains .RawContent "{{< record-failures-post >}}" -}}
+  {{- end -}}
+{{- end -}}
 {{- $siteLang := .Site.Language.Locale | default "en" -}}
 {{- $contentLang := $active.Params.language | default "" -}}
 {{- $langFromHugo := $active.Lang | default "" -}}
@@ -108,12 +114,18 @@
     {{ $ogImage := "/img/gtcode-core.svg" }}
     {{ with $active.Params.og_image }}{{ $ogImage = . }}{{ end }}
     {{ with $articleMeta.og_image }}{{ $ogImage = . }}{{ end }}
+    {{ if $homepageOnly }}{{ $ogImage = "/img/homepage-tax-office.jpg" }}{{ end }}
     {{ if hasPrefix $ogImage "/" }}{{ $ogImage = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) $ogImage }}{{ end }}
     {{ $ogImage = replace $ogImage "http://" "https://" }}
     {{ $ogImageWidth := printf "%v" ($active.Params.og_image_width | default (.Site.Params.og_image_width | default 1200)) }}
     {{ $ogImageHeight := printf "%v" ($active.Params.og_image_height | default (.Site.Params.og_image_height | default 630)) }}
     {{ $socialTitle := partial "seo/plaintext.html" (dict "value" $socialTitleSource "max" $titleMax) }}
     {{ $ogImageAlt := partial "seo/plaintext.html" (dict "value" ($active.Params.og_image_alt | default (.Site.Params.og_image_alt | default $socialTitle)) "max" 120) }}
+    {{ if $homepageOnly }}
+      {{ $ogImageWidth = "1774" }}
+      {{ $ogImageHeight = "1338" }}
+      {{ $ogImageAlt = "Tax-office cartoon: seven times the tax owed, false testimony, and a misleading booth diagram." }}
+    {{ end }}
     {{ $twitterSite := strings.TrimSpace (.Site.Params.twitter_site | default "") }}
     {{ $twitterCreator := strings.TrimSpace ($active.Params.twitter_creator | default (.Site.Params.twitter_creator | default "")) }}
 
@@ -148,6 +160,11 @@
     <!-- Oahu Underground Stylesheet (inlined to eliminate render-blocking request) -->
     {{ $ouCSS := slice (resources.Get "css/oahu-underground.css") (resources.Get "css/site-theme.css") | resources.Concat "css/journalism.css" | minify }}
     <style>{{ $ouCSS.Content | safeCSS }}</style>
+
+    {{ if $hasXPost }}
+    {{ $xPostCSS := resources.Get "css/homepage-x-post.css" | minify }}
+    <style>{{ $xPostCSS.Content | safeCSS }}</style>
+    {{ end }}
 
     {{ partial "jsonld.html" . }}
 
@@ -491,10 +508,23 @@
               <h2 class="ou-section-heading">Ekewaka Lono</h2>
               <div class="ou-section-body">
                 <p>Ekewaka Lono is an independent investigative reporter based in Hawaii, focused on judicial accountability, institutional capture, and public-interest documentation within <a href="https://www.courts.state.hi.us/" rel="noopener" target="_blank">Hawaii&rsquo;s court system</a>.</p>
+                {{ if $homepageOnly }}
+                <p>This page gives my firsthand account, identifies each person’s role, and includes the dates, police-report numbers, and correspondence relevant to the incidents described.</p>
+                {{ else }}
                 <p>Methodology is evidence-first: public records, primary-source documents, and clearly labeled firsthand testimony. Each claim is linked to source material where possible.</p>
+                {{ end }}
               </div>
             </div>
             <div class="ou-about-card">
+              {{ if $homepageOnly }}
+              <p class="ou-about-label">About this account</p>
+              <ul class="ou-about-list">
+                <li>Named people and individual roles</li>
+                <li>Dates, places, and incident details</li>
+                <li>Police-report numbers and correspondence</li>
+                <li>Responses and factual corrections welcome</li>
+              </ul>
+              {{ else }}
               <p class="ou-about-label">Reporting Method</p>
               <ul class="ou-about-list">
                 <li>Map verifiable <a href="https://oip.hawaii.gov/" rel="noopener" target="_blank">public records</a> before narrative claims</li>
@@ -502,6 +532,7 @@
                 <li>Publish dates, revisions, and source context</li>
                 <li>Keep tip channels confidential and secure</li>
               </ul>
+              {{ end }}
               {{ if not $homepageOnly }}
               {{ if $carto }}
               <a class="ou-card-link" href="{{ $carto.RelPermalink }}">Read full methodology &rarr;</a>
@@ -630,6 +661,10 @@
     <script src="{{ $navJS.RelPermalink }}" integrity="{{ $navJS.Data.Integrity }}" defer></script>
     {{ $ouTablesJS := resources.Get "js/ou-tables.js" | minify | fingerprint }}
     <script src="{{ $ouTablesJS.RelPermalink }}" integrity="{{ $ouTablesJS.Data.Integrity }}" defer></script>
+    {{ if $hasXPost }}
+    {{ $xPostJS := resources.Get "js/homepage-x-post.js" | minify | fingerprint }}
+    <script src="{{ $xPostJS.RelPermalink }}" integrity="{{ $xPostJS.Data.Integrity }}" defer></script>
+    {{ end }}
   </body>
 </html>
 {{- end -}}
