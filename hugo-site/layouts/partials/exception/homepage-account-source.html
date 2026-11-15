@@ -5,7 +5,7 @@
     {{- /* Preserve the enclosing entry's Markdown indentation on every line. */ -}}
     {{- $koreanSource := strings.TrimSpace .RawContent -}}
     {{- with site.GetPage "/homepage-fragments/korean-satirical-note" -}}
-      {{- $note := printf "<span id=\"korean-satirical-note\"></span>\n\n#### %s / A brief satirical note\n\n%s" .Title (strings.TrimSpace .RawContent) -}}
+      {{- $note := printf "<span id=\"korean-satirical-note\"></span>\n\n#### %s / Once it enters the record\n\n%s" .Title (strings.TrimSpace .RawContent) -}}
       {{- $koreanSource = replace $koreanSource "{{< korean-satirical-note >}}" $note -}}
     {{- end -}}
     {{- $korean := replace $koreanSource "\n" "\n   " -}}

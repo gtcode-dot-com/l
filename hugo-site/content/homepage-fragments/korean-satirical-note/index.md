@@ -1,5 +1,5 @@
 ---
-title: "짧은 풍자 메모"
+title: "기록으로 옮겨지면"
 build:
   render: never
   list: never
