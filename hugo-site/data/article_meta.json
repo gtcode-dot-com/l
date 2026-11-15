@@ -2442,6 +2442,13 @@
     "agent_callout": "",
     "generated_at": "2026-02-17T00:40:06.950268+00:00"
   },
+  "news/ai-research/llama-cpp-v1-0-0-a-stronger-foundation-for-the-local-ai-ecosystem": {
+    "slug": "news/ai-research/llama-cpp-v1-0-0-a-stronger-foundation-for-the-local-ai-ecosystem",
+    "meta_description": "llama.cpp makes it possible to run multi-modal LLMs across a wide range of hardware - from consumer-grade local machines to high-end enterprise...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem\",\n  \"description\": \"llama.cpp makes it possible to run multi-modal LLMs across a wide range of hardware - from consumer-grade local machines to high-end enterprise...\",\n  \"datePublished\": \"2026-11-15T02:04:27.810886+00:00\",\n  \"dateModified\": \"2026-11-15T02:04:27.810886+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ggml-org/llama-cpp-v1\"\n  },\n  \"url\": \"https://huggingface.co/blog/ggml-org/llama-cpp-v1\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:04:49.320515+00:00"
+  },
   "news/ai-research/llmon-an-llm-native-markup-language-now-in-granite-4-1-3b-and-8b": {
     "slug": "news/ai-research/llmon-an-llm-native-markup-language-now-in-granite-4-1-3b-and-8b",
     "meta_description": "LLMs rely on their context to generate the next set of tokens. Over a long trajectory, the context fills with numerous types of components: a...",
@@ -7433,6 +7440,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-09T05:28:26.203925+00:00"
   },
+  "news/ai-security/digicert-data-breach-impacts-business-customer-information": {
+    "slug": "news/ai-security/digicert-data-breach-impacts-business-customer-information",
+    "meta_description": "DigiCert has disclosed a data breach impacting its business customers’ contact information, including names and email addresses.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"DigiCert Data Breach Impacts Business Customer Information\",\n  \"description\": \"DigiCert has disclosed a data breach impacting its business customers’ contact information, including names and email addresses.\",\n  \"datePublished\": \"2026-11-15T02:04:13.347064+00:00\",\n  \"dateModified\": \"2026-11-15T02:04:13.347064+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information\"\n  },\n  \"url\": \"https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:04:47.460038+00:00"
+  },
   "news/ai-security/discover-the-ai-tools-fueling-the-next-cybercrime-wave-watch-the-webinar": {
     "slug": "news/ai-security/discover-the-ai-tools-fueling-the-next-cybercrime-wave-watch-the-webinar",
     "meta_description": "Dec 03, 2025 The Hacker News Cybercrime / Artificial Intelligence Remember when phishing emails were easy to spot? Bad grammar, weird formatting,...",
@@ -9589,6 +9603,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-10T20:21:28.909785+00:00"
   },
+  "news/ai-security/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days": {
+    "slug": "news/ai-security/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days",
+    "meta_description": "SecurityWeek’s weekly cybersecurity news roundup offers a concise overview of important developments that may not receive full standalone coverage...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days\",\n  \"description\": \"SecurityWeek’s weekly cybersecurity news roundup offers a concise overview of important developments that may not receive full standalone coverage...\",\n  \"datePublished\": \"2026-11-15T02:04:13.104442+00:00\",\n  \"dateModified\": \"2026-11-15T02:04:13.104442+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days\"\n  },\n  \"url\": \"https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:04:48.647202+00:00"
+  },
   "news/ai-security/incendio-a-milano-aree-industriali-in-fiamme": {
     "slug": "news/ai-security/incendio-a-milano-aree-industriali-in-fiamme",
     "meta_description": "> Un > incendio > di vaste proporzioni ha devastato un'area industriale di > Milano > , obbligando all'evacuazione di centinaia di persone.",
@@ -11100,6 +11121,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"January 2026 Microsoft Patch Tuesday Summary, (Tue, Jan 13th)\",\n  \"description\": \"Published : 2026-01-13. Last Updated : 2026-01-13 19:05:41 UTC by Johannes Ullrich (Version: 1) 0 comment(s) Today, Microsoft released patches for...\",\n  \"datePublished\": \"2026-01-13T20:15:14.628777+00:00\",\n  \"dateModified\": \"2026-01-13T20:15:14.628777+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32624\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32624\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:05.106745+00:00"
+  },
+  "news/ai-security/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks": {
+    "slug": "news/ai-security/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks",
+    "meta_description": "Japan on Friday announced an emergency cybersecurity package that includes the use of artificial intelligence and cyber rescue teams after a wave...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks\",\n  \"description\": \"Japan on Friday announced an emergency cybersecurity package that includes the use of artificial intelligence and cyber rescue teams after a wave...\",\n  \"datePublished\": \"2026-11-15T02:04:12.647470+00:00\",\n  \"dateModified\": \"2026-11-15T02:04:12.647470+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks\"\n  },\n  \"url\": \"https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:04:48.292981+00:00"
   },
   "news/ai-security/japan-sees-sharp-rise-in-web-data-leaks-amid-mobile-api-abuse-and-metabase-attacks": {
     "slug": "news/ai-security/japan-sees-sharp-rise-in-web-data-leaks-amid-mobile-api-abuse-and-metabase-attacks",
@@ -15084,6 +15112,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T01:04:51.015046+00:00"
   },
+  "news/ai-security/sonicwall-patches-exploited-sonicos-vulnerability-that-weakens-vpn-logins": {
+    "slug": "news/ai-security/sonicwall-patches-exploited-sonicos-vulnerability-that-weakens-vpn-logins",
+    "meta_description": "SonicWall has patched a SonicOS vulnerability that can be used to bypass SAML authentication, warning customers that it may have been exploited in...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins\",\n  \"description\": \"SonicWall has patched a SonicOS vulnerability that can be used to bypass SAML authentication, warning customers that it may have been exploited in...\",\n  \"datePublished\": \"2026-11-15T02:04:12.373722+00:00\",\n  \"dateModified\": \"2026-11-15T02:04:12.373722+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins\"\n  },\n  \"url\": \"https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:04:49.002092+00:00"
+  },
   "news/ai-security/south-korean-police-accidentally-post-cryptocurrency-wallet-password": {
     "slug": "news/ai-security/south-korean-police-accidentally-post-cryptocurrency-wallet-password",
     "meta_description": "An expensive mistake : > Someone jumped at the opportunity to steal $4.4 million in crypto assets after South Korea’s National Tax Service exposed...",
@@ -15335,6 +15370,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tech and Security Companies Respond to PHP2Shell Vulnerabilities\",\n  \"description\": \"Tech vendors, cybersecurity companies and government agencies have published advisories, detections and mitigations for the PHP2Shell...\",\n  \"datePublished\": \"2026-11-09T03:34:28.935363+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:28.935363+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities\"\n  },\n  \"url\": \"https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-09T03:35:08.615407+00:00"
+  },
+  "news/ai-security/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies": {
+    "slug": "news/ai-security/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies",
+    "meta_description": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies\",\n  \"description\": \"Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with...\",\n  \"datePublished\": \"2026-11-15T02:04:12.058440+00:00\",\n  \"dateModified\": \"2026-11-15T02:04:12.058440+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T02:04:47.952415+00:00"
   },
   "news/ai-security/tensorlake-npm-package-compromised-to-deliver-shai-hulud-credential-stealing-worm": {
     "slug": "news/ai-security/tensorlake-npm-package-compromised-to-deliver-shai-hulud-credential-stealing-worm",
