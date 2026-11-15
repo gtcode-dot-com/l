@@ -5536,6 +5536,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-01T19:25:41.832383+00:00"
   },
+  "news/ai-security/attacker-targets-60000-github-repositories-in-credential-theft-campaign": {
+    "slug": "news/ai-security/attacker-targets-60000-github-repositories-in-credential-theft-campaign",
+    "meta_description": "An attacker has tested stolen access to more than 60,000 GitHub repositories and inserted credential-stealing code in thousands of them, several...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Attacker Targets 60,000 GitHub Repositories in Credential Theft Campaign\",\n  \"description\": \"An attacker has tested stolen access to more than 60,000 GitHub repositories and inserted credential-stealing code in thousands of them, several...\",\n  \"datePublished\": \"2026-11-15T06:22:23.082914+00:00\",\n  \"dateModified\": \"2026-11-15T06:22:23.082914+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/attacker-targets-60000-github-repositories-in-credential-theft-campaign\"\n  },\n  \"url\": \"https://www.securityweek.com/attacker-targets-60000-github-repositories-in-credential-theft-campaign\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:22:50.951779+00:00"
+  },
   "news/ai-security/attackers-bypass-wafs-to-exploit-oracle-peoplesoft-flaw-and-deploy-web-shells": {
     "slug": "news/ai-security/attackers-bypass-wafs-to-exploit-oracle-peoplesoft-flaw-and-deploy-web-shells",
     "meta_description": "Ravie Lakshmanan Sep 26, 2026 Vulnerability / Web Security Google is warning of renewed mass exploitation of a known security vulnerability in...",
@@ -6354,6 +6361,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Chrome Extension Turns Malicious After Ownership Transfer, Enabling Code Injection and Data Theft\",\n  \"description\": \"Two Google Chrome extensions have turned malicious after what appears to be a case of ownership transfer , offering attackers a way to push...\",\n  \"datePublished\": \"2026-03-10T00:15:15.621443+00:00\",\n  \"dateModified\": \"2026-03-10T00:15:15.621443+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/03/chrome-extension-turns-malicious-after.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/03/chrome-extension-turns-malicious-after.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:03.244691+00:00"
+  },
+  "news/ai-security/chrome-firefox-updates-patch-over-180-vulnerabilities": {
+    "slug": "news/ai-security/chrome-firefox-updates-patch-over-180-vulnerabilities",
+    "meta_description": "Google and Mozilla have released fresh Chrome and Firefox security updates that resolve more than 180 vulnerabilities. The Chrome refresh fixes 83...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Chrome, Firefox Updates Patch Over 180 Vulnerabilities\",\n  \"description\": \"Google and Mozilla have released fresh Chrome and Firefox security updates that resolve more than 180 vulnerabilities. The Chrome refresh fixes 83...\",\n  \"datePublished\": \"2026-11-15T06:22:22.791939+00:00\",\n  \"dateModified\": \"2026-11-15T06:22:22.791939+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities\"\n  },\n  \"url\": \"https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:22:51.327672+00:00"
   },
   "news/ai-security/chrome-targeted-by-active-in-the-wild-exploit-tied-to-undisclosed-high-severity-flaw": {
     "slug": "news/ai-security/chrome-targeted-by-active-in-the-wild-exploit-tied-to-undisclosed-high-severity-flaw",
@@ -7376,6 +7390,13 @@
     "json_ld": "{\n  \"@context\": \"http://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"David Szalay becomes first Hungarian-British author to win the Booker Prize\",\n  \"description\": \"David Szalay wins the Booker Prize for his novel 'Flesh,' a rags-to-riches tale exploring class and power. The judges praised its singularity and use of white space.\",\n  \"datePublished\": \"2025-11-13T15:26:58Z\",\n  \"dateModified\": \"2025-11-13T15:26:58Z\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"\"\n    }\n  },\n  \"mainEntityOfPage\": \"https://www.bridgwatermercury.co.uk/news/national/25611390.david-szalay-becomes-first-hungarian-british-author-win-booker-prize\",\n  \"sameAs\": \"https://www.bridgwatermercury.co.uk/news/national/25611390.david-szalay-becomes-first-hungarian-british-author-win-Booker-Prize\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T15:27:10.849507+00:00"
+  },
+  "news/ai-security/daylight-lands-80-million-for-ai-powered-security-operations": {
+    "slug": "news/ai-security/daylight-lands-80-million-for-ai-powered-security-operations",
+    "meta_description": "Israeli-American cybersecurity startup Daylight has raised $80 million in a Series B funding round that brings the total raised by the company to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Daylight Lands $80 Million for AI-Powered Security Operations\",\n  \"description\": \"Israeli-American cybersecurity startup Daylight has raised $80 million in a Series B funding round that brings the total raised by the company to...\",\n  \"datePublished\": \"2026-11-15T06:22:23.318834+00:00\",\n  \"dateModified\": \"2026-11-15T06:22:23.318834+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations\"\n  },\n  \"url\": \"https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:22:51.669127+00:00"
   },
   "news/ai-security/dead-vax-malware-campaign-deploys-asyncrat-via-ipfs-hosted-vhd-phishing-files": {
     "slug": "news/ai-security/dead-vax-malware-campaign-deploys-asyncrat-via-ipfs-hosted-vhd-phishing-files",
@@ -9196,6 +9217,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App\",\n  \"description\": \"Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server , to plant web shells on Nextcloud servers.\",\n  \"datePublished\": \"2026-10-15T04:02:37.285316+00:00\",\n  \"dateModified\": \"2026-10-15T04:02:37.285316+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-15T04:03:31.305601+00:00"
+  },
+  "news/ai-security/hackers-deploy-malware-in-fresh-screenconnect-campaign": {
+    "slug": "news/ai-security/hackers-deploy-malware-in-fresh-screenconnect-campaign",
+    "meta_description": "A threat actor has compromised hundreds of endpoints across dozens of ConnectWise ScreenConnect customers in a fresh campaign, cybersecurity...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Deploy Malware in Fresh ScreenConnect Campaign\",\n  \"description\": \"A threat actor has compromised hundreds of endpoints across dozens of ConnectWise ScreenConnect customers in a fresh campaign, cybersecurity...\",\n  \"datePublished\": \"2026-11-15T06:22:23.832663+00:00\",\n  \"dateModified\": \"2026-11-15T06:22:23.832663+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign\"\n  },\n  \"url\": \"https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:22:52.454078+00:00"
   },
   "news/ai-security/hackers-exploit-c-ares-dll-side-loading-to-bypass-security-and-deploy-malware": {
     "slug": "news/ai-security/hackers-exploit-c-ares-dll-side-loading-to-bypass-security-and-deploy-malware",
@@ -13270,6 +13298,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Notepad++ Official Update Mechanism Hijacked to Deliver Malware to Select Users\",\n  \"description\": \"Ravie Lakshmanan Feb 02, 2026 Threat Intelligence / Malware The maintainer of Notepad++ has revealed that state-sponsored attackers hijacked the...\",\n  \"datePublished\": \"2026-02-02T10:15:14.292670+00:00\",\n  \"dateModified\": \"2026-02-02T10:15:14.292670+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/notepad-official-update-mechanism.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/notepad-official-update-mechanism.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:33.027635+00:00"
+  },
+  "news/ai-security/notion-customer-data-compromised-in-fireworks-ai-hack": {
+    "slug": "news/ai-security/notion-customer-data-compromised-in-fireworks-ai-hack",
+    "meta_description": "All-in-one collaborative workspace and productivity platform Notion is notifying a small set of customers that their information was compromised...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Notion Customer Data Compromised in Fireworks AI Hack\",\n  \"description\": \"All-in-one collaborative workspace and productivity platform Notion is notifying a small set of customers that their information was compromised...\",\n  \"datePublished\": \"2026-11-15T06:22:23.582932+00:00\",\n  \"dateModified\": \"2026-11-15T06:22:23.582932+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack\"\n  },\n  \"url\": \"https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:22:52.033359+00:00"
   },
   "news/ai-security/now-patched-fortinet-fortiweb-flaw-exploited-in-attacks-to-create-admin-accounts": {
     "slug": "news/ai-security/now-patched-fortinet-fortiweb-flaw-exploited-in-attacks-to-create-admin-accounts",
