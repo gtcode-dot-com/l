@@ -72,6 +72,8 @@ The 2015–2017 case began with the November 2015 tax-office encounter and was p
 
 9. <span id="account-8" class="home-account-anchor"></span>**Unnamed retained lawyer — Advising me to omit the death threat, leaving evidence unchallenged, and pressing a resolution I refused.**
 
+   **The relationship before trial.** Our relationship had already broken down before trial. When I raised holding him accountable, he threatened to sue me. He continued representing me.
+
    **The death-threat report and my testimony.** I personally told him that Gene and Rita Hartmann had threatened to kill me. He did not take it seriously, did not explain investigative or protective options, and advised me to leave the death threat out of my testimony. I followed his advice. The jury did not hear that account from me. Kevin’s warning to stop talking was also still affecting my willingness to disclose the threat.
 
    **The box seat at the 2016 Eddie.** My lawyer told me he attended the [2016 Eddie competition](https://en.wikipedia.org/wiki/The_Eddie) and was in the box seat with the person he called “the high priest.” This was the lawyer to whom I reported Gene and Rita Hartmann’s death threat, and who advised me to leave it out of my testimony.
