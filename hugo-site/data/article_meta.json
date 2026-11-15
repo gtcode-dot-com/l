@@ -8098,6 +8098,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-08T19:08:59.668253+00:00"
   },
+  "news/ai-security/fbi-says-north-korean-hackers-stole-over-400-million-in-crypto-using-deepfake-video-calls": {
+    "slug": "news/ai-security/fbi-says-north-korean-hackers-stole-over-400-million-in-crypto-using-deepfake-video-calls",
+    "meta_description": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls\",\n  \"description\": \"The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka...\",\n  \"datePublished\": \"2026-11-15T07:14:00.199313+00:00\",\n  \"dateModified\": \"2026-11-15T07:14:00.199313+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:14:30.610347+00:00"
+  },
   "news/ai-security/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance": {
     "slug": "news/ai-security/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance",
     "meta_description": "The FBI said Thursday that it had seized more than $1.2 billion of cryptocurrency reported stolen last month from Binance, the world’s largest...",
@@ -13054,6 +13061,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-08T00:16:18.066643+00:00"
   },
+  "news/ai-security/new-mior-and-skyfall-attacks-let-rogue-cloud-hosts-steal-secrets-from-amd-sev-snp-vms": {
+    "slug": "news/ai-security/new-mior-and-skyfall-attacks-let-rogue-cloud-hosts-steal-secrets-from-amd-sev-snp-vms",
+    "meta_description": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs\",\n  \"description\": \"Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep...\",\n  \"datePublished\": \"2026-11-15T07:13:59.907793+00:00\",\n  \"dateModified\": \"2026-11-15T07:13:59.907793+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:14:30.942038+00:00"
+  },
   "news/ai-security/new-mongodb-flaw-lets-unauthenticated-attackers-read-uninitialized-memory": {
     "slug": "news/ai-security/new-mongodb-flaw-lets-unauthenticated-attackers-read-uninitialized-memory",
     "meta_description": "Dec 27, 2025 Ravie Lakshmanan Database Security / Vulnerability A high-severity security flaw has been disclosed in MongoDB that could allow...",
@@ -14124,6 +14138,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Possible Vulnerability in Apple’s Automatic Reboot\",\n  \"description\": \"404Media is reporting (alternate link ) that a cyber-weapons arms manufacturer is exploiting a vulnerability in iOS to bypass its automatic reboot...\",\n  \"datePublished\": \"2026-10-08T00:21:46.023789+00:00\",\n  \"dateModified\": \"2026-10-08T00:21:46.023789+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/10/possible-vulnerability-in-apples-automatic-reboot.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/10/possible-vulnerability-in-apples-automatic-reboot.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-08T00:22:43.932784+00:00"
+  },
+  "news/ai-security/postgresql-patches-52-flaws-including-22-year-old-bug-enabling-authenticated-rce": {
+    "slug": "news/ai-security/postgresql-patches-52-flaws-including-22-year-old-bug-enabling-authenticated-rce",
+    "meta_description": "Swati Khandelwal Nov 13, 2026 Vulnerability / Database Security A type confusion flaw in PostgreSQL lets a database user who can create objects...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE\",\n  \"description\": \"Swati Khandelwal Nov 13, 2026 Vulnerability / Database Security A type confusion flaw in PostgreSQL lets a database user who can create objects...\",\n  \"datePublished\": \"2026-11-15T07:13:59.550862+00:00\",\n  \"dateModified\": \"2026-11-15T07:13:59.550862+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:14:31.329032+00:00"
   },
   "news/ai-security/praisonai-cve-2026-44338-auth-bypass-targeted-within-hours-of-disclosure": {
     "slug": "news/ai-security/praisonai-cve-2026-44338-auth-bypass-targeted-within-hours-of-disclosure",
@@ -16435,6 +16456,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:34.710336+00:00"
   },
+  "news/ai-security/trezor-confirms-hidden-implants-in-cryptobilis-sold-wallets-that-can-steal-recovery-phrases": {
+    "slug": "news/ai-security/trezor-confirms-hidden-implants-in-cryptobilis-sold-wallets-that-can-steal-recovery-phrases",
+    "meta_description": "Swati Khandelwal Nov 13, 2026 Cryptocurrency / Supply Chain Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases\",\n  \"description\": \"Swati Khandelwal Nov 13, 2026 Cryptocurrency / Supply Chain Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant,...\",\n  \"datePublished\": \"2026-11-15T07:14:00.522093+00:00\",\n  \"dateModified\": \"2026-11-15T07:14:00.522093+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:14:30.258745+00:00"
+  },
   "news/ai-security/trivy-hack-spreads-infostealer-via-docker-triggers-worm-and-kubernetes-wiper": {
     "slug": "news/ai-security/trivy-hack-spreads-infostealer-via-docker-triggers-worm-and-kubernetes-wiper",
     "meta_description": "Cybersecurity researchers have uncovered malicious artifacts distributed via Docker Hub following the Trivy supply chain attack , highlighting the...",
@@ -17666,6 +17694,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"WhatsApp Worm Spreads Astaroth Banking Trojan Across Brazil via Contact Auto-Messaging\",\n  \"description\": \"Jan 08, 2026 Ravie Lakshmanan Malware / Financial Crime Cybersecurity researchers have disclosed details of a new campaign that uses WhatsApp as a...\",\n  \"datePublished\": \"2026-01-08T21:28:28.663849+00:00\",\n  \"dateModified\": \"2026-01-08T21:28:28.663849+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/whatsapp-worm-spreads-astaroth-banking.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/whatsapp-worm-spreads-astaroth-banking.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:52.419941+00:00"
+  },
+  "news/ai-security/when-an-ai-agent-goes-wrong-can-you-stop-it": {
+    "slug": "news/ai-security/when-an-ai-agent-goes-wrong-can-you-stop-it",
+    "meta_description": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"When an AI Agent Goes Wrong, Can You Stop It?\",\n  \"description\": \"Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export...\",\n  \"datePublished\": \"2026-11-15T07:14:00.791336+00:00\",\n  \"dateModified\": \"2026-11-15T07:14:00.791336+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:14:29.906088+00:00"
   },
   "news/ai-security/when-attacks-come-faster-than-patches-why-2026-will-be-the-year-of-machine-speed-security": {
     "slug": "news/ai-security/when-attacks-come-faster-than-patches-why-2026-will-be-the-year-of-machine-speed-security",
