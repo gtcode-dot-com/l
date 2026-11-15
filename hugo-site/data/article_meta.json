@@ -4885,6 +4885,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:57.752866+00:00"
   },
+  "news/ai-security/ai-security": {
+    "slug": "news/ai-security/ai-security",
+    "meta_description": "Two weeks ago, I attended the [[un]prompted](https://unpromptedcon.org/) AI security conference in San Francisco. It was an excellent event: three...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Security\",\n  \"description\": \"Two weeks ago, I attended the [[un]prompted](https://unpromptedcon.org/) AI security conference in San Francisco. It was an excellent event: three...\",\n  \"datePublished\": \"2026-11-15T06:10:05.368983+00:00\",\n  \"dateModified\": \"2026-11-15T06:10:05.368983+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/ai-security.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/ai-security.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:10:37.164867+00:00"
+  },
   "news/ai-security/ai-turns-familiar-cyberattacks-into-a-race-against-time": {
     "slug": "news/ai-security/ai-turns-familiar-cyberattacks-into-a-race-against-time",
     "meta_description": "IBM’s Steve Wallin talks to SecurityWeek on the effect of AI-driven attacks on enterprise defenses. By Kevin Townsend | October 13, 2026 (7:00 AM...",
@@ -5227,6 +5234,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Apache ActiveMQ CVE-2026-34197 Added to CISA KEV Amid Active Exploitation\",\n  \"description\": \"Ravie Lakshmanan Apr 17, 2026 Vulnerability / Enterprise Security A recently disclosed high-severity security flaw in Apache ActiveMQ Classic has...\",\n  \"datePublished\": \"2026-04-17T04:15:16.888858+00:00\",\n  \"dateModified\": \"2026-04-17T04:15:16.888858+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-17T04:16:05.042922+00:00"
+  },
+  "news/ai-security/apache-patches-critical-http-server-rce-found-by-anthropic-google": {
+    "slug": "news/ai-security/apache-patches-critical-http-server-rce-found-by-anthropic-google",
+    "meta_description": "Apache has patched a critical HTTP Server vulnerability that could allow unauthenticated remote code execution (RCE), following independent...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Apache Patches Critical HTTP Server RCE Found by Anthropic, Google\",\n  \"description\": \"Apache has patched a critical HTTP Server vulnerability that could allow unauthenticated remote code execution (RCE), following independent...\",\n  \"datePublished\": \"2026-11-15T06:10:06.691295+00:00\",\n  \"dateModified\": \"2026-11-15T06:10:06.691295+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google\"\n  },\n  \"url\": \"https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:10:37.523367+00:00"
   },
   "news/ai-security/apple-coregraphics-poc-emerges-as-whatsapp-pdf-checks-hint-at-possible-delivery-path": {
     "slug": "news/ai-security/apple-coregraphics-poc-emerges-as-whatsapp-pdf-checks-hint-at-possible-delivery-path",
@@ -12032,6 +12046,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-09T02:59:19.604936+00:00"
   },
+  "news/ai-security/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams": {
+    "slug": "news/ai-security/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams",
+    "meta_description": "UPDATE – Microsoft 365 suffered a widespread outage Thursday, which has extended into Friday, disrupting access to business email and other cloud...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams\",\n  \"description\": \"UPDATE – Microsoft 365 suffered a widespread outage Thursday, which has extended into Friday, disrupting access to business email and other cloud...\",\n  \"datePublished\": \"2026-11-15T06:10:06.444083+00:00\",\n  \"dateModified\": \"2026-11-15T06:10:06.444083+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams\"\n  },\n  \"url\": \"https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:10:36.827618+00:00"
+  },
   "news/ai-security/microsoft-begins-ntlm-phase-out-with-three-stage-plan-to-move-windows-to-kerberos": {
     "slug": "news/ai-security/microsoft-begins-ntlm-phase-out-with-three-stage-plan-to-move-windows-to-kerberos",
     "meta_description": "Ravie Lakshmanan Feb 02, 2026 Kerberos / Enterprise Security Microsoft has announced a three-phase approach to phase out New Technology LAN...",
@@ -12094,6 +12115,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Fixes 63 Security Flaws, Including a Windows Kernel Zero-Day Under Active Attack\",\n  \"description\": \"Microsoft released patches for 63 new security vulnerabilities identified in its software, including one that has come under active exploitation in the wild.\",\n  \"datePublished\": \"2025-11-13T15:28:41+00:00\",\n  \"dateModified\": \"2025-11-13T15:28:41+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://example.com/logo.png\"\n    }\n  },\n  \"mainEntityOfPage\": \"https://thehackernews.com/2025/11/microsoft-fixes-63-security-flaws.html\",\n  \"sameAs\": \"https://thehackernews.com/2025/11/microsoft-fixes-63-security-flaws.html\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T15:29:12.888634+00:00"
+  },
+  "news/ai-security/microsoft-fixes-nearly-1100-security-vulnerabilities": {
+    "slug": "news/ai-security/microsoft-fixes-nearly-1100-security-vulnerabilities",
+    "meta_description": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Fixes Nearly 1,100 Security Vulnerabilities\",\n  \"description\": \"Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems...\",\n  \"datePublished\": \"2026-11-15T06:10:06.154808+00:00\",\n  \"dateModified\": \"2026-11-15T06:10:06.154808+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:10:36.052822+00:00"
   },
   "news/ai-security/microsoft-flags-multi-stage-aitm-phishing-and-bec-attacks-targeting-energy-firms": {
     "slug": "news/ai-security/microsoft-flags-multi-stage-aitm-phishing-and-bec-attacks-targeting-energy-firms",
@@ -17603,6 +17631,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Who Operates the Badbox 2.0 Botnet?\",\n  \"description\": \"The cybercriminals in control of Kimwolf — a disruptive botnet that has infected more than 2 million devices — recently shared a screenshot...\",\n  \"datePublished\": \"2026-02-22T08:15:16.375216+00:00\",\n  \"dateModified\": \"2026-02-22T08:15:16.375216+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-02T02:39:44.861911+00:00"
+  },
+  "news/ai-security/who-runs-the-ransomware-group-qilin": {
+    "slug": "news/ai-security/who-runs-the-ransomware-group-qilin",
+    "meta_description": "The cybercrime group Qilin has emerged as the world’s most active ransomware affiliate program, claiming at least 365 victim organizations in the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Who Runs the Ransomware Group Qilin?\",\n  \"description\": \"The cybercrime group Qilin has emerged as the world’s most active ransomware affiliate program, claiming at least 365 victim organizations in the...\",\n  \"datePublished\": \"2026-11-15T06:10:05.772775+00:00\",\n  \"dateModified\": \"2026-11-15T06:10:05.772775+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin\"\n  },\n  \"url\": \"https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T06:10:36.495605+00:00"
   },
   "news/ai-security/who-runs-the-ransomware-group-the-gentlemen": {
     "slug": "news/ai-security/who-runs-the-ransomware-group-the-gentlemen",

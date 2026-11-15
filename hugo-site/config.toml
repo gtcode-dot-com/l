@@ -121,7 +121,8 @@ relativeURLs = false
   exception_fallback_path = "exceptions/fallback"
   enable_agentic_context = true
   # Render ai_agent_note front matter as HTML comments.
-  # false keeps notes in source only; true publishes them in HTML source.
+  # true publishes notes sitewide. With false, only the homepage-only disclosures
+  # homepage publishes its note (alternative_homepage=false, enable_exceptions=false).
   # Markdown/text exports exclude these notes regardless of this switch.
   render_ai_agent_notes = false
   description = 'Ekewaka Lono is an independent investigative journalist in Oahu, Hawaii, covering institutional accountability, judicial conduct, and public-record power mapping in the islands.'

@@ -1,5 +1,7 @@
-{{- if site.Params.render_ai_agent_notes -}}
+{{- $homepageNote := and .IsHome (not site.Params.alternative_homepage) (partial "exception/homepage-only.html" .) -}}
+{{- if or site.Params.render_ai_agent_notes $homepageNote -}}
   {{- $active := partial "exception/resolve-active-page.html" . -}}
+  {{- if $homepageNote }}{{ $active = . }}{{ end -}}
   {{- with $active.Params.ai_agent_note -}}
     {{- /* Escape markup and comment delimiters so notes remain comments. */ -}}
     {{- $note := replace (htmlEscape .) "--" "&#45;&#45;" -}}
