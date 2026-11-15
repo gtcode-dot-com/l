@@ -88,7 +88,7 @@ The 2015–2017 case began with the November 2015 tax-office encounter and was p
 
    **His closing.** His closing used a broad political argument against government power.
 
-   **Pressure during jury deliberations.** After the mock-pistol closing and chambers conference, while the jury deliberated, my lawyer presented a reduced proposal to me for the first time. I wanted the jury to finish. I repeatedly refused and told him to stop pressing. He kept trying to reverse my decision. On a courthouse bench, while I prayed, he scolded me and said, in substance, that I did not believe in “that religion stuff.” He continued pressing me to accept.
+   **Pressure during jury deliberations.** After the mock-pistol closing and chambers conference, while the jury deliberated and I prayed on a courthouse bench, my lawyer offered—for the first time—a reduced version of the proposal he had been pressing me to accept. I wanted the jury to finish. Despite my repeated refusals and requests that he stop, he kept pressing me and mocked me for praying, saying, in substance, that I did not believe in “that religion stuff.”
 
    **The consequence he did not explain.** He did not explain that accepting an ordinary unconditional resolution could foreclose a direct appeal over the prosecutor’s earlier conduct. He kept urging acceptance without explaining that cost, the alternatives, or the significance of the mock-pistol incident for my options. I repeatedly refused the proposal. He also did not tell me I could report the prosecutor’s conduct to a disciplinary authority. What did he do to evaluate or report the prosecutorial conduct he personally witnessed, including under HRPC Rule 8.3(a)?
 
