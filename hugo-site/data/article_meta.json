@@ -4815,6 +4815,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-17T22:17:14.852048+00:00"
   },
+  "news/ai-security/ai-doesnt-have-to-go-rogue-to-break-the-world": {
+    "slug": "news/ai-security/ai-doesnt-have-to-go-rogue-to-break-the-world",
+    "meta_description": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Doesn’t Have to Go Rogue to Break the World\",\n  \"description\": \"This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared...\",\n  \"datePublished\": \"2026-11-15T07:19:52.139842+00:00\",\n  \"dateModified\": \"2026-11-15T07:19:52.139842+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:20:22.826332+00:00"
+  },
   "news/ai-security/ai-driven-pushpaganda-scam-exploits-google-discover-to-spread-scareware-and-ad-fraud": {
     "slug": "news/ai-security/ai-driven-pushpaganda-scam-exploits-google-discover-to-spread-scareware-and-ad-fraud",
     "meta_description": "Cybersecurity researchers have unmasked a novel ad fraud scheme that has been found to leverage search engine poisoning (SEO) techniques and...",
@@ -9288,6 +9295,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:53.924967+00:00"
   },
+  "news/ai-security/hackers-exploit-php2shell-flaws-in-check-point-gateways-to-deploy-tsga-backdoor-and-wipe-esxi-files": {
+    "slug": "news/ai-security/hackers-exploit-php2shell-flaws-in-check-point-gateways-to-deploy-tsga-backdoor-and-wipe-esxi-files",
+    "meta_description": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files\",\n  \"description\": \"An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell...\",\n  \"datePublished\": \"2026-11-15T07:19:51.836586+00:00\",\n  \"dateModified\": \"2026-11-15T07:19:51.836586+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:20:21.366417+00:00"
+  },
   "news/ai-security/hackers-exploiting-triofox-flaw-to-install-remote-access-tools-via-antivirus-feature": {
     "slug": "news/ai-security/hackers-exploiting-triofox-flaw-to-install-remote-access-tools-via-antivirus-feature",
     "meta_description": "Hackers are actively exploiting a Triofox vulnerability (CVE-2025-12480) to install remote access tools by abusing the antivirus feature, according to M...",
@@ -9756,6 +9770,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"In Other News: AI Used in Korean Bank Breaches, Poem-Guided Botnet, Empire Admin Gets 40 Years\",\n  \"description\": \"Noteworthy stories that might have slipped under the radar: Tensorlake npm SDK compromised, Empire Market co-founder gets 40 years, exposed NVIDIA...\",\n  \"datePublished\": \"2026-10-10T20:20:41.253392+00:00\",\n  \"dateModified\": \"2026-10-10T20:20:41.253392+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years\"\n  },\n  \"url\": \"https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-10T20:21:28.909785+00:00"
+  },
+  "news/ai-security/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach": {
+    "slug": "news/ai-security/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach",
+    "meta_description": "SecurityWeek’s weekly cybersecurity news roundup offers a concise overview of important developments that may not receive full standalone coverage...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach\",\n  \"description\": \"SecurityWeek’s weekly cybersecurity news roundup offers a concise overview of important developments that may not receive full standalone coverage...\",\n  \"datePublished\": \"2026-11-15T07:19:52.505080+00:00\",\n  \"dateModified\": \"2026-11-15T07:19:52.505080+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach\"\n  },\n  \"url\": \"https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:20:22.163792+00:00"
   },
   "news/ai-security/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days": {
     "slug": "news/ai-security/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days",
@@ -13761,6 +13782,13 @@
     "agent_callout": "",
     "generated_at": "2025-11-13T20:21:38.746703+00:00"
   },
+  "news/ai-security/operation-endgame-takes-down-gootloader-castlerat-and-stealc-servers-seizes-6-4m-stolen-logins": {
+    "slug": "news/ai-security/operation-endgame-takes-down-gootloader-castlerat-and-stealc-servers-seizes-6-4m-stolen-logins",
+    "meta_description": "An international police operation took down servers behind Gootloader , CastleRAT and StealC this week. Criminals used the three malware tools to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins\",\n  \"description\": \"An international police operation took down servers behind Gootloader , CastleRAT and StealC this week. Criminals used the three malware tools to...\",\n  \"datePublished\": \"2026-11-15T07:19:51.406139+00:00\",\n  \"dateModified\": \"2026-11-15T07:19:51.406139+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:20:21.732454+00:00"
+  },
   "news/ai-security/operation-poweroff-seizes-53-ddos-domains-exposes-3-million-criminal-accounts": {
     "slug": "news/ai-security/operation-poweroff-seizes-53-ddos-domains-exposes-3-million-criminal-accounts",
     "meta_description": "Ravie Lakshmanan Apr 17, 2026 DDoS / Cybercrime An international law enforcement operation has taken down 53 domains and arrested four people in...",
@@ -15258,6 +15286,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Signal Vulnerability Lets Malicious Callers Block Hang-Ups\",\n  \"description\": \"Signal has resolved a critical-severity vulnerability that could allow a malicious caller to keep audio and video tracks enabled even after the...\",\n  \"datePublished\": \"2026-11-09T03:34:28.707415+00:00\",\n  \"dateModified\": \"2026-11-09T03:34:28.707415+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups\"\n  },\n  \"url\": \"https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-09T03:35:07.134723+00:00"
+  },
+  "news/ai-security/silentair-hijacks-asian-telecom-networks-to-intercept-sms-2fa-codes-and-spy-on-taiwanese-users": {
+    "slug": "news/ai-security/silentair-hijacks-asian-telecom-networks-to-intercept-sms-2fa-codes-and-spy-on-taiwanese-users",
+    "meta_description": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users\",\n  \"description\": \"A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in...\",\n  \"datePublished\": \"2026-11-15T07:19:51.085337+00:00\",\n  \"dateModified\": \"2026-11-15T07:19:51.085337+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-15T07:20:22.499024+00:00"
   },
   "news/ai-security/silver-fox-deploys-abcdoor-malware-via-tax-themed-phishing-in-india-and-russia": {
     "slug": "news/ai-security/silver-fox-deploys-abcdoor-malware-via-tax-themed-phishing-in-india-and-russia",
