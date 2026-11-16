@@ -1679,6 +1679,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T01:17:25.724528+00:00"
   },
+  "news/ai-research/hugging-face-and-openrouter-join-forces-to-make-open-weight-models-easy-to-run": {
+    "slug": "news/ai-research/hugging-face-and-openrouter-join-forces-to-make-open-weight-models-easy-to-run",
+    "meta_description": "Hugging Face and OpenRouter are teaming up to make open-weight models easy to run. Every major open-weight release is already being published on...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hugging Face and OpenRouter join forces to make open-weight models easy to run\",\n  \"description\": \"Hugging Face and OpenRouter are teaming up to make open-weight models easy to run. Every major open-weight release is already being published on...\",\n  \"datePublished\": \"2026-11-16T17:56:35.296042+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:35.296042+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/openrouter\"\n  },\n  \"url\": \"https://huggingface.co/blog/openrouter\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:58.133409+00:00"
+  },
   "news/ai-research/hugging-face-torchtpu-tpus-natively": {
     "slug": "news/ai-research/hugging-face-torchtpu-tpus-natively",
     "meta_description": "If you ever tried to run PyTorch on a TPU, you probably ported your code to `torchxla` , or you ended up having to learn JAX.",
@@ -2071,6 +2078,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-13T03:11:32.299188+00:00"
   },
+  "news/ai-research/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development": {
+    "slug": "news/ai-research/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development",
+    "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development\",\n  \"description\": \"Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support...\",\n  \"datePublished\": \"2026-11-16T17:56:35.466816+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:35.466816+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://importai.substack.com/p/import-ai-481-ai-sub-contractors\"\n  },\n  \"url\": \"https://importai.substack.com/p/import-ai-481-ai-sub-contractors\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:58.471947+00:00"
+  },
   "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text": {
     "slug": "news/ai-research/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text",
     "meta_description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please...",
@@ -2116,7 +2130,7 @@
   "news/ai-research/intelligence-is-free-now-what-br-data-systems-for-of-and-by-agents": {
     "slug": "news/ai-research/intelligence-is-free-now-what-br-data-systems-for-of-and-by-agents",
     "meta_description": "... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly.",
-    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Intelligence is Free, Now What? <br> Data Systems for, of, and by Agents\",\n  \"description\": \"... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly.\",\n  \"datePublished\": \"2026-10-17T22:10:50.238019+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:50.238019+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what\"\n}",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Intelligence is Free, Now What? Data Systems for, of, and by Agents\",\n  \"description\": \"... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly.\",\n  \"datePublished\": \"2026-10-17T22:10:50.238019+00:00\",\n  \"dateModified\": \"2026-10-17T22:10:50.238019+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what\"\n  },\n  \"url\": \"http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-17T22:11:41.992231+00:00"
   },
@@ -9008,6 +9022,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-09T02:16:00.946298+00:00"
   },
+  "news/ai-security/google-finds-hackers-using-ai-agents-to-build-and-run-exploits-from-software-patches": {
+    "slug": "news/ai-security/google-finds-hackers-using-ai-agents-to-build-and-run-exploits-from-software-patches",
+    "meta_description": "Ravie Lakshmanan Nov 16, 2026 Agentic AI / Cyber Attacks Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches\",\n  \"description\": \"Ravie Lakshmanan Nov 16, 2026 Agentic AI / Cyber Attacks Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat...\",\n  \"datePublished\": \"2026-11-16T17:56:20.991242+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:20.991242+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:57.460206+00:00"
+  },
   "news/ai-security/google-fined-eur403-million-over-gdpr-violations-tied-to-location-data": {
     "slug": "news/ai-security/google-fined-eur403-million-over-gdpr-violations-tied-to-location-data",
     "meta_description": "Swati Khandelwal Sep 21, 2026 Data Privacy / Regulatory Compliance Google has been fined €403 million for breaking the EU's data protection law,...",
@@ -14748,6 +14769,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:42.914956+00:00"
   },
+  "news/ai-security/retadup-worm-resurfaces-7-years-after-takedown-to-spread-coffeeloader-malware": {
+    "slug": "news/ai-security/retadup-worm-resurfaces-7-years-after-takedown-to-spread-coffeeloader-malware",
+    "meta_description": "Ravie Lakshmanan Nov 16, 2026 Threat Intelligence / Endpoint Security Cybersecurity researchers have disclosed details of a new variant of...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware\",\n  \"description\": \"Ravie Lakshmanan Nov 16, 2026 Threat Intelligence / Endpoint Security Cybersecurity researchers have disclosed details of a new variant of...\",\n  \"datePublished\": \"2026-11-16T17:56:21.800805+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:21.800805+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:57.798382+00:00"
+  },
   "news/ai-security/rethinking-mdr-as-attackers-and-defenders-embrace-ai": {
     "slug": "news/ai-security/rethinking-mdr-as-attackers-and-defenders-embrace-ai",
     "meta_description": "For most of the past decade, managed detection and response was the answer to a real problem. Security teams couldn't staff around the clock,...",
@@ -14957,6 +14985,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Samsung Mobile Flaw Exploited as Zero-Day to Deploy LANDFALL Android Spyware\",\n  \"description\": \"A now-patched security flaw in Samsung Galaxy Android devices was exploited as a zero-day to deliver a \\\"commercial-grade\\\" Android spyware dubbed...\",\n  \"datePublished\": \"2025-11-12T22:51:24.877766+00:00\",\n  \"dateModified\": \"2025-11-12T22:51:24.877766+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/samsung-zero-click-flaw-exploited-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/samsung-zero-click-flaw-exploited-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T00:29:07.648122+00:00"
+  },
+  "news/ai-security/sansar-linux-cryptomining-malware-uses-modified-nvidia-library-to-hide-gpu-activity": {
+    "slug": "news/ai-security/sansar-linux-cryptomining-malware-uses-modified-nvidia-library-to-hide-gpu-activity",
+    "meta_description": "Ravie Lakshmanan Nov 16, 2026 United States A financially motivated threat activity cluster tracked as REF3364 has been attributed to a...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity\",\n  \"description\": \"Ravie Lakshmanan Nov 16, 2026 United States A financially motivated threat activity cluster tracked as REF3364 has been attributed to a...\",\n  \"datePublished\": \"2026-11-16T17:56:22.060707+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:22.060707+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:56.421679+00:00"
   },
   "news/ai-security/sap-discloses-critical-cvss-10-flaw-in-cloud-sdk-for-python-allowing-oauth2-credential-theft": {
     "slug": "news/ai-security/sap-discloses-critical-cvss-10-flaw-in-cloud-sdk-for-python-allowing-oauth2-credential-theft",
@@ -15475,6 +15510,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Six mistakes in ERC-4337 smart accounts\",\n  \"description\": \"Account abstraction transforms fixed “private key can do anything” models into programmable systems that enable batching, recovery and spending...\",\n  \"datePublished\": \"2026-03-11T12:15:14.354410+00:00\",\n  \"dateModified\": \"2026-03-11T12:15:14.354410+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/03/11/six-mistakes-in-erc-4337-smart-accounts\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/03/11/six-mistakes-in-erc-4337-smart-accounts\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-11T12:16:05.035704+00:00"
+  },
+  "news/ai-security/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow-remote-takeover-without-login": {
+    "slug": "news/ai-security/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow-remote-takeover-without-login",
+    "meta_description": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login\",\n  \"description\": \"Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security...\",\n  \"datePublished\": \"2026-11-16T17:56:21.554847+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:21.554847+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:57.119748+00:00"
   },
   "news/ai-security/slh-offers-500-1000-per-call-to-recruit-women-for-it-help-desk-vishing-attacks": {
     "slug": "news/ai-security/slh-offers-500-1000-per-call-to-recruit-women-for-it-help-desk-vishing-attacks",
@@ -17701,6 +17743,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"⚡ Weekly Recap: MongoDB Attacks, Wallet Breaches, Android Spyware, Insider Crime & More\",\n  \"description\": \"Dec 29, 2026 Ravie Lakshmanan Hacking News / Cybersecurity Last week's cyber news in 2025 was not about one big incident.\",\n  \"datePublished\": \"2025-12-30T00:15:13.200994+00:00\",\n  \"dateModified\": \"2025-12-30T00:15:13.200994+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/weekly-recap-mongodb-attacks-wallet.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/weekly-recap-mongodb-attacks-wallet.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:42.690665+00:00"
+  },
+  "news/ai-security/weekly-recap-n-able-0-days-windows-0-days-chrome-0-days-fridge-0-days-and-more-bad-days": {
+    "slug": "news/ai-security/weekly-recap-n-able-0-days-windows-0-days-chrome-0-days-fridge-0-days-and-more-bad-days",
+    "meta_description": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days\",\n  \"description\": \"A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in.\",\n  \"datePublished\": \"2026-11-16T17:56:21.311511+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:21.311511+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:56.766581+00:00"
   },
   "news/ai-security/weekly-recap-netscaler-and-fortimail-0-days-ai-coding-leaks-spectre-v2-and-ransomware-arrests": {
     "slug": "news/ai-security/weekly-recap-netscaler-and-fortimail-0-days-ai-coding-leaks-spectre-v2-and-ransomware-arrests",
@@ -21524,6 +21573,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:15:58.487072+00:00"
   },
+  "news/comp-journalism/news-diary-16-11-november-eu-uk-smmit-prince-william-attends-earthshot-prize-awards-in-india-im-a-celeb-returns": {
+    "slug": "news/comp-journalism/news-diary-16-11-november-eu-uk-smmit-prince-william-attends-earthshot-prize-awards-in-india-im-a-celeb-returns",
+    "meta_description": "Picture: Euan Cherry / Shutterstock.com Monday (November 16): Andy Burnham delivers foreign policy speech at the Lord Mayor’s Banquet; Andrew...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"News diary 16-11 November: EU-UK smmit, Prince William attends Earthshot Prize Awards in India, I’m a Celeb returns\",\n  \"description\": \"Picture: Euan Cherry / Shutterstock.com Monday (November 16): Andy Burnham delivers foreign policy speech at the Lord Mayor’s Banquet; Andrew...\",\n  \"datePublished\": \"2026-11-16T17:56:49.379652+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:49.379652+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/news-diary-16-11-november-eu-uk-smmit-prince-william-attends-earthshot-prize-awards-in-india-im-a-celeb-returns\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/news-diary-16-11-november-eu-uk-smmit-prince-william-attends-earthshot-prize-awards-in-india-im-a-celeb-returns\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:58.793887+00:00"
+  },
   "news/comp-journalism/news-diary-16-22-march-carney-visits-uk-bbc-seeks-trump-lawsuit-dismissal-snl-launches-in-uk": {
     "slug": "news/comp-journalism/news-diary-16-22-march-carney-visits-uk-bbc-seeks-trump-lawsuit-dismissal-snl-launches-in-uk",
     "meta_description": "Trump threatens to sue BBC for apology or $1bn over Trump speech was doctored, which dominated the front page of UK newspapers.",
@@ -22644,6 +22700,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-09T00:12:48.262863+00:00"
   },
+  "news/comp-journalism/substack-allows-publishers-to-use-customised-themes": {
+    "slug": "news/comp-journalism/substack-allows-publishers-to-use-customised-themes",
+    "meta_description": "The Trend Report on Substack. Picture: Substack Substack has launched seven new design themes in the “first of a series of improvements” to give...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Substack allows publishers to use customised themes\",\n  \"description\": \"The Trend Report on Substack. Picture: Substack Substack has launched seven new design themes in the “first of a series of improvements” to give...\",\n  \"datePublished\": \"2026-11-16T17:56:50.437422+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:50.437422+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/newsletters/substack-allows-publishers-to-use-customised-themes\"\n  },\n  \"url\": \"https://pressgazette.co.uk/newsletters/substack-allows-publishers-to-use-customised-themes\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:59.104796+00:00"
+  },
   "news/comp-journalism/sun-editor-optimistic-about-future-after-reimagining-the-newsroom": {
     "slug": "news/comp-journalism/sun-editor-optimistic-about-future-after-reimagining-the-newsroom",
     "meta_description": "Sun editor-in-chief Victoria Newton giving the Hugh Cudlipp Lecture in London on 10 September 2026. Picture: Submitted Sun editor-in-chief...",
@@ -23099,6 +23162,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-15T17:21:33.028989+00:00"
   },
+  "news/comp-journalism/top-uk-news-providers-of-the-last-year-recognised-by-british-journalism-awards": {
+    "slug": "news/comp-journalism/top-uk-news-providers-of-the-last-year-recognised-by-british-journalism-awards",
+    "meta_description": "British Journalism Awards News Provider of the Year shortlist for 2026 The British Journalism Awards has shortlisted eight organisations for the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Top UK news providers of the last year recognised by British Journalism Awards\",\n  \"description\": \"British Journalism Awards News Provider of the Year shortlist for 2026 The British Journalism Awards has shortlisted eight organisations for the...\",\n  \"datePublished\": \"2026-11-16T17:56:48.390259+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:48.390259+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/top-uk-news-providers-of-the-last-year-recognised-by-british-journalism-awards\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/top-uk-news-providers-of-the-last-year-recognised-by-british-journalism-awards\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:59.463362+00:00"
+  },
   "news/comp-journalism/tracing-digital-links-between-viory-and-ruptly": {
     "slug": "news/comp-journalism/tracing-digital-links-between-viory-and-ruptly",
     "meta_description": "“In the age of misinformation, the line between fact and fiction is blurrier than ever.” “For those of us working in video news, verification...",
@@ -23126,6 +23196,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tracking a Sanctioned Russian Vessel’s West African Odyssey\",\n  \"description\": \"*Sign up here to receive Bellingcat’s biggest investigations by email as soon as they are published. A sanctioned vessel that was previously...\",\n  \"datePublished\": \"2026-10-02T01:12:38.726694+00:00\",\n  \"dateModified\": \"2026-10-02T01:12:38.726694+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.bellingcat.com/news/africa/2026/08/25/patria-sanctioned-russian-vessel-russia-us-africa-cameroon-gabon-lagos-nigeria\"\n  },\n  \"url\": \"https://www.bellingcat.com/news/africa/2026/08/25/patria-sanctioned-russian-vessel-russia-us-africa-cameroon-gabon-lagos-nigeria\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-02T01:13:04.413606+00:00"
+  },
+  "news/comp-journalism/traffic-is-declining-for-local-newspapers-here-are-some-things-that-helped-small-publishers-make-gains": {
+    "slug": "news/comp-journalism/traffic-is-declining-for-local-newspapers-here-are-some-things-that-helped-small-publishers-make-gains",
+    "meta_description": "We’ve now been publishing roundups of local newspaper traffic for a full year, so we can compare this year’s traffic to last year’s.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Traffic is declining for local newspapers. Here are some things that helped small publishers make gains.\",\n  \"description\": \"We’ve now been publishing roundups of local newspaper traffic for a full year, so we can compare this year’s traffic to last year’s.\",\n  \"datePublished\": \"2026-11-16T17:56:47.624778+00:00\",\n  \"dateModified\": \"2026-11-16T17:56:47.624778+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/traffic-is-declining-for-local-newspapers-here-are-some-things-that-helped-small-publishers-make-gains\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/traffic-is-declining-for-local-newspapers-here-are-some-things-that-helped-small-publishers-make-gains\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T17:56:59.792777+00:00"
   },
   "news/comp-journalism/travel-journalist-simon-calder-moves-to-telegraph": {
     "slug": "news/comp-journalism/travel-journalist-simon-calder-moves-to-telegraph",
