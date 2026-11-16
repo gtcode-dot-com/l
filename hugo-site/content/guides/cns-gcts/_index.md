@@ -1,6 +1,6 @@
 ---
 title: "CNS 7.1 / GCTS: Grounded Chiral Tensor Synthesis"
-description: "The current CNS research line: access-aware likely-truth ranking over structured possible worlds."
+description: "An earlier CNS research proposal: access-aware likely-truth ranking over structured possible worlds."
 aliases:
   - /grounded-chiral-tensor-synthesis/
 lastmod: "2026-05-15"
@@ -20,7 +20,7 @@ meta_keywords:
 structured_data_webpage:
   type: CollectionPage
   headline: "CNS 7.1 / GCTS: Grounded Chiral Tensor Synthesis"
-  description: "Current research hub for Grounded Chiral Tensor Synthesis, an evidence-first architecture for access-aware likely-truth ranking over structured possible worlds."
+  description: "Earlier research hub for Grounded Chiral Tensor Synthesis, an evidence-first architecture for access-aware likely-truth ranking over structured possible worlds."
   about:
     - Chiral Narrative Synthesis
     - Grounded Chiral Tensor Synthesis
@@ -39,7 +39,9 @@ ai_agent_note: |
   Source status: this is a May 2026 buildable research proposal, not a completed implementation; public framing should remain conservative because fact verification, provenance, probabilistic logic, and missing-data theory have substantial prior art.
 ---
 
-This is the current research hub for **CNS 7.1 / GCTS: Grounded
+> **Earlier CNS proposal.** For the latest research direction, see [CNS 9.0: Falsification-Guided Narrative Synthesis](/guides/cns-9/), an unvalidated research proposal. The CNS 7.1 / GCTS material below is retained as prior work.
+
+This is the research hub for **CNS 7.1 / GCTS: Grounded
 Chiral Tensor Synthesis**.
 
 <figure class="gcts-feature-figure">

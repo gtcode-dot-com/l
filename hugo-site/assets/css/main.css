@@ -1802,6 +1802,15 @@ body.nav-open .site-nav-overlay {
   vertical-align: top;
 }
 
+/* Keep short identifiers such as B1 intact while allowing labels to wrap at spaces. */
+.guides-page-body table th:first-child,
+.guides-page-body table td:first-child,
+.guides-article-body table th:first-child,
+.guides-article-body table td:first-child {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .guides-page-body table th,
 .guides-article-body table th {
   background: var(--color-bg-alt);
@@ -1903,6 +1912,11 @@ body.nav-open .site-nav-overlay {
   margin: 0;
 }
 
+.guides-toc-list .guides-toc-list {
+  padding-inline-start: var(--space-5);
+  margin-top: var(--space-2);
+}
+
 .guides-toc-list li {
   margin-bottom: var(--space-2);
 }
@@ -1976,7 +1990,7 @@ body.nav-open .site-nav-overlay {
 
 .guides-series-nav {
   margin-top: var(--space-8);
-  padding-top: var(--space-5);
+  padding: var(--space-5);
   border-top: 1px solid var(--color-border-light);
   display: flex;
   flex-direction: column;

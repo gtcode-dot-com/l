@@ -4,6 +4,7 @@ title: "Research Papers"
 description: "Research papers and technical specifications from GTCode covering geometric semantic communication, embedding-space publish-subscribe routing, media provenance, and Chiral Narrative Synthesis."
 meta_description: "Research papers and technical specifications from GTCode covering geometric semantic communication, embedding-space routing, media provenance, and Chiral Narrative Synthesis."
 date: 2025-06-17
+lastmod: "2026-11-15"
 structured_data_webpage:
   type: CollectionPage
   headline: "GTCode Research Papers"
@@ -13,6 +14,18 @@ structured_data_webpage:
     - embedding-space routing
     - media provenance
     - Chiral Narrative Synthesis
+---
+
+## Chiral Narrative Synthesis 9.0
+
+**[Chiral Narrative Synthesis 9.0: Falsification-Guided Narrative Synthesis for Predictive Knowledge Discovery](/papers/cns-9/)**
+
+An unvalidated research proposal for turning conflicting accounts into measurable explanations, committed predictions, and discriminating evidence acquisition. Includes three falsifiable hypotheses and a proposed, unregistered evaluation; no CNS 9.0 experiments or demonstrated improvements are reported.
+
+- **Date:** November 15, 2026 · **Version:** 0.1
+- **Read:** [Illustrated overview](/guides/cns-9/overview/) · [Proposed evaluation](/guides/cns-9/evaluation/)
+- **Download:** [Paper PDF (17 pages)](/papers/cns-9/cns-9-research-proposal.pdf) · [LaTeX source](/papers/cns-9/cns-9-latex-source.zip)
+
 ---
 
 ## Geometric Semantic Communication Research
@@ -50,12 +63,12 @@ A research design note proposing a windowed state-and-transition digest for medi
 
 ---
 
-## Grounded Chiral Tensor Synthesis (Current CNS Research)
+## Grounded Chiral Tensor Synthesis (Earlier CNS Research)
 
-### Current Research Hub
+### Earlier Research Hub
 
 **[CNS 7.1 / GCTS: Grounded Chiral Tensor Synthesis](/guides/cns-gcts/)**
-The current Chiral Narrative Synthesis research line: an access-aware,
+An earlier Chiral Narrative Synthesis research line: an access-aware,
 evidence-grounded framework for ranking likely truth across structured possible
 worlds under limited, contradictory, and adversarial evidence.
 
@@ -140,9 +153,11 @@ Templates and frameworks for implementing dialectical reasoning in narrative gen
 ## About This Research
 
 The Chiral Narrative Synthesis (CNS) project explores computational methods for
-reasoning under conflict, uncertainty, and incomplete evidence. The current
-research line is **CNS 7.1 / GCTS**, which shifts from narrative generation
-toward access-aware likely-truth ranking over structured possible worlds. Older
+reasoning under conflict, uncertainty, and incomplete evidence. The latest
+proposal is **CNS 9.0**, focused on falsification-guided synthesis and prospective
+evaluation. [CNS 8.0](/guides/cns/) and CNS 7.1 / GCTS remain available as prior
+frameworks; GCTS explores access-aware likely-truth ranking over structured
+possible worlds. Older
 CNS 2.0 material remains available as prior work on Structured Narrative Objects,
 chirality, evidential entanglement, and dialectical synthesis.
 

@@ -1,0 +1,223 @@
+{
+  "schema": "gtcode.cns9.publication-overlay.v0.1",
+  "publication": {
+    "title": "Chiral Narrative Synthesis 9.0: Falsification-Guided Narrative Synthesis for Predictive Knowledge Discovery",
+    "version": "0.1",
+    "date": "2026-11-15",
+    "author": "GTCode.com",
+    "status": "Unvalidated conceptual research proposal; not implemented, registered, empirically evaluated or peer reviewed",
+    "paper_pdf_pages": 17,
+    "paper_web_cited_sources": 38,
+    "annotated_reference_registry_count": 54,
+    "hypothesis_identifiers": [
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "proposed_synthetic_independent_roots": 3840,
+    "proposed_confirmatory_roots": 2400,
+    "proposed_prospective_executions": 17280,
+    "proposed_systems": 10,
+    "counts_status": "Conditional planning targets pending target/view and stratum feasibility certification",
+    "publication_date_status": "Unpublished preparation date; version remains 0.1"
+  },
+  "canonical_urls": {
+    "guide": "https://gtcode.com/guides/cns-9/overview/",
+    "research_paper": "https://gtcode.com/papers/cns-9/",
+    "evaluation": "https://gtcode.com/guides/cns-9/evaluation/",
+    "guide_landing": "https://gtcode.com/guides/cns-9/"
+  },
+  "publication_assets_root": "https://gtcode.com/papers/cns-9/",
+  "input_provenance": {
+    "research_packet": "Five-document CNS 9.0 research docset from prior conversation: assessment, theory/specification, experimental protocol, execution planning, annotated prior art",
+    "original_source_tex": "David Lopez-Paz Against All Likelihood TeX files paper.tex and aal.tex were inputs, NOT included or republished",
+    "source_reference_registry": "45 packet sources plus nine added related-work records, each with disclosed reading depth",
+    "master_authoring_file": "hugo-site/static/sources/cns-9-publication-v0.1/latex/manuscript.md"
+  },
+  "site_integration": {
+    "existing_site_checkout_supplied": true,
+    "full_hugo_build_performed": true,
+    "site_configuration_or_templates_modified": false,
+    "live_deployment_performed": false
+  },
+  "hashes": "hugo-site/static/sources/cns-9-publication-v0.1/SHA256SUMS.txt",
+  "hash_note": "Full digest checks in separate SHA256SUMS file, which is excluded from hashing itself.",
+  "file_inventory": [
+    {
+      "path": "hugo-site/content/guides/cns-9/_index.md",
+      "role": "Hugo publication page"
+    },
+    {
+      "path": "hugo-site/content/guides/cns-9/evaluation.md",
+      "role": "Hugo publication page"
+    },
+    {
+      "path": "hugo-site/content/guides/cns-9/overview.md",
+      "role": "Hugo publication page"
+    },
+    {
+      "path": "hugo-site/content/papers/cns-9/index.md",
+      "role": "Hugo publication page"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/cns-9-citation.bib",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/cns-9-latex-source.zip",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/cns-9-research-proposal.pdf",
+      "role": "compiled research paper PDF"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/figures/cns-9-caching-example.pdf",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/figures/cns-9-caching-example.svg",
+      "role": "editable accessible technical figure"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/figures/cns-9-discovery-loop.pdf",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/figures/cns-9-discovery-loop.svg",
+      "role": "editable accessible technical figure"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/figures/cns-9-research-lineage.pdf",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/figures/cns-9-research-lineage.svg",
+      "role": "editable accessible technical figure"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/proposed-evaluation-protocol.yaml",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/references.bib",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/papers/cns-9/references.json",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/PUBLICATION_MANIFEST.json",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/README.md",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/SHA256SUMS.txt",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/SOURCE_AND_CLAIM_AUDIT.md",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/VALIDATION_REPORT.md",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/README.md",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/build.sh",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/cns-9-citation.bib",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figure-source/README.md",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figure-source/render_figures.py",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figures/cns-9-caching-example.pdf",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figures/cns-9-caching-example.svg",
+      "role": "editable accessible technical figure"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figures/cns-9-discovery-loop.pdf",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figures/cns-9-discovery-loop.svg",
+      "role": "editable accessible technical figure"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figures/cns-9-research-lineage.pdf",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/figures/cns-9-research-lineage.svg",
+      "role": "editable accessible technical figure"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/latexmkrc",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/main.tex",
+      "role": "generated complete LaTeX manuscript"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/manuscript.md",
+      "role": "shared scientific manuscript"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/references.bib",
+      "role": "publication asset"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/render_manuscript.py",
+      "role": "shared-source TeX/Hugo renderer"
+    },
+    {
+      "path": "hugo-site/static/sources/cns-9-publication-v0.1/latex/template.tex",
+      "role": "editable typography template"
+    }
+  ],
+  "typography": {
+    "body": "TeX Gyre Pagella",
+    "math": "TeX Gyre Pagella Math",
+    "headings": "TeX Gyre Heros",
+    "code": "TeX Gyre Cursor",
+    "abstract": "Full-width flush-left; no first-line indentation"
+  },
+  "generation": {
+    "scientific_text": "latex/manuscript.md",
+    "typography": "latex/template.tex",
+    "renderer": "latex/render_manuscript.py",
+    "figures": "latex/figure-source/render_figures.py",
+    "design_reference": "https://github.com/ChenLiu-1996/figures4papers"
+  },
+  "verification": {
+    "full_hugo_build": true,
+    "source_parity": true,
+    "clean_source_rebuild": true,
+    "browser_widths": [
+      390,
+      1440
+    ],
+    "scientific_experiments_performed": false
+  }
+}

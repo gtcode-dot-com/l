@@ -23,6 +23,9 @@ ai_agent_note: |
   The page states that evidence/access/possible-world machinery is only a constraint and reporting substrate; it does not replace narrative synthesis.
   Status is research proposal + implementation plan + test plan, not full production code.
 ---
+
+> **Earlier CNS proposal.** For the latest research direction, see [CNS 9.0: Falsification-Guided Narrative Synthesis](/guides/cns-9/), an unvalidated research proposal. The CNS 8.0 material below is retained as prior work.
+
 # Chiral Narrative Synthesis 8.0
 
 ## Grounded Dialectical Orthesis
