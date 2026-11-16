@@ -1,10 +1,10 @@
 pillars:
-  - title: "CNS 9.0"
-    contentPath: "guides/cns-9"
+  - title: "TRACE"
+    contentPath: "guides/trace"
     description: "Unvalidated research proposal: falsification-guided synthesis, committed predictions, and a proposed evaluation."
     cta:
-      text: "Explore CNS 9.0"
-      url: "/guides/cns-9/"
+      text: "Explore TRACE"
+      url: "/guides/trace/"
   - title: "CNS 8.0"
     contentPath: "guides/cns"
     description: "Earlier CNS research framework: SNO-centered dialectical synthesis, tensor proof closure, predicate invention, orthesis validation, and audit reporting."

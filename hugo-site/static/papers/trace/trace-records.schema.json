@@ -1,0 +1,1357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gtcode.com/papers/trace/trace-records.schema.json",
+  "title": "TRACE cross-case records",
+  "description": "Proposed interchange schema. Semantic contracts in paper Section 4 govern references, units, source fidelity, missingness and temporal availability. Runtime records never include evaluator scores.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "phase",
+    "run_id",
+    "system_id",
+    "questions",
+    "evidence",
+    "reports",
+    "conflicts",
+    "variables",
+    "observations",
+    "candidates",
+    "predictions",
+    "actions",
+    "decisions",
+    "scores"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "phase": {
+      "enum": [
+        "runtime",
+        "evaluation_export"
+      ]
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "system_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/question"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/report"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conflict"
+      }
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/variable"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/prediction"
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/action"
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/decision"
+      }
+    },
+    "scores": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/score"
+      }
+    }
+  },
+  "$defs": {
+    "expression": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "op",
+            "value"
+          ],
+          "properties": {
+            "op": {
+              "const": "constant"
+            },
+            "value": {
+              "type": [
+                "number",
+                "string",
+                "boolean"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "op",
+            "variable_id"
+          ],
+          "properties": {
+            "op": {
+              "const": "variable"
+            },
+            "variable_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "op",
+            "args"
+          ],
+          "properties": {
+            "op": {
+              "enum": [
+                "add",
+                "subtract",
+                "multiply",
+                "divide",
+                "lt",
+                "le",
+                "eq",
+                "and"
+              ]
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expression"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "op",
+            "args"
+          ],
+          "properties": {
+            "op": {
+              "const": "if"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expression"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            }
+          }
+        }
+      ]
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "question_id",
+        "outcome",
+        "aggregation",
+        "population",
+        "time_window",
+        "intervention_context",
+        "units",
+        "tolerance"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome": {
+          "type": "string"
+        },
+        "aggregation": {
+          "type": "string"
+        },
+        "population": {
+          "type": "string"
+        },
+        "time_window": {
+          "type": "string"
+        },
+        "intervention_context": {
+          "type": "string"
+        },
+        "units": {
+          "type": "string"
+        },
+        "tolerance": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "evidence_id",
+        "source_id",
+        "span_or_measurement",
+        "timestamp",
+        "access_state",
+        "lineage_id",
+        "collection_context"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "span_or_measurement": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "access_state": {
+          "type": "string"
+        },
+        "lineage_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "collection_context": {
+          "type": "string"
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id",
+        "text",
+        "evidence_ids",
+        "attribution"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "attribution": {
+          "enum": [
+            "source_stated",
+            "extractor_inferred"
+          ]
+        }
+      }
+    },
+    "report": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "report_id",
+        "question_id",
+        "claims",
+        "assumptions",
+        "relationships",
+        "observation_ids"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claim"
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claim"
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claim"
+          }
+        },
+        "observation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "context_difference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "variable_id",
+        "report_a_value",
+        "report_b_value",
+        "evidence_ids",
+        "interpretation"
+      ],
+      "properties": {
+        "variable_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_a_value": {
+          "type": [
+            "number",
+            "string",
+            "boolean",
+            "null"
+          ]
+        },
+        "report_b_value": {
+          "type": [
+            "number",
+            "string",
+            "boolean",
+            "null"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "interpretation": {
+          "type": "string"
+        }
+      }
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mapping_id",
+        "from_units",
+        "to_units",
+        "expression",
+        "preconditions",
+        "state",
+        "evidence_ids"
+      ],
+      "properties": {
+        "mapping_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "from_units": {
+          "type": "string"
+        },
+        "to_units": {
+          "type": "string"
+        },
+        "expression": {
+          "$ref": "#/$defs/expression"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "state": {
+          "enum": [
+            "validated",
+            "rejected",
+            "unknown"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "conflict_id",
+        "report_ids",
+        "question_ids",
+        "estimand_status",
+        "lineage_status",
+        "lineage_evidence_ids",
+        "incompatible_claim_ids",
+        "observed_interval_contrast",
+        "context_differences",
+        "mappings",
+        "unresolved_fields"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conflict_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "question_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "estimand_status": {
+          "enum": [
+            "same",
+            "unit_convertible",
+            "different",
+            "unknown"
+          ]
+        },
+        "lineage_status": {
+          "enum": [
+            "shared_origin",
+            "distinct_origins",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "lineage_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "incompatible_claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "observed_interval_contrast": {
+          "enum": [
+            "different",
+            "overlapping",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "context_differences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/context_difference"
+          }
+        },
+        "mappings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mapping"
+          }
+        },
+        "unresolved_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "variable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "variable_id",
+        "definition",
+        "value_type",
+        "units",
+        "categories",
+        "conflict_ids",
+        "provenance_state",
+        "evidence_ids",
+        "conjecture",
+        "measurement_procedure",
+        "available_at",
+        "required_action_ids"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variable_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definition": {
+          "type": "string"
+        },
+        "value_type": {
+          "enum": [
+            "numeric",
+            "categorical",
+            "boolean"
+          ]
+        },
+        "units": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provenance_state": {
+          "enum": [
+            "observed_shared",
+            "observed_asymmetric",
+            "inferred_unmeasured"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conjecture": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "measurement_procedure": {
+          "type": "string"
+        },
+        "available_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "required_action_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflict_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "Applicable conflict records; empty during extraction or for shared variables with no localized conflict."
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "observation_id",
+        "report_ids",
+        "question_id",
+        "evidence_ids",
+        "lineage_id",
+        "context_values",
+        "target_value",
+        "tolerance",
+        "observed_at",
+        "acquisition_action_id"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "lineage_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "context_values": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "number",
+              "string",
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "target_value": {
+          "type": [
+            "number",
+            "string",
+            "boolean",
+            "null"
+          ]
+        },
+        "tolerance": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "acquisition_action_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "value",
+        "origin",
+        "evidence_ids",
+        "observation_ids"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "origin": {
+          "enum": [
+            "fitted",
+            "source_specified",
+            "conjectured"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "observation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "candidate_id",
+        "system_id",
+        "round",
+        "conflict_ids",
+        "retained_claim_ids",
+        "rejected_claim_ids",
+        "added_relationship",
+        "assumptions",
+        "variable_ids",
+        "accounted_observation_ids",
+        "accounting_justification",
+        "parameters",
+        "prediction_form",
+        "expression",
+        "required_action_ids",
+        "status",
+        "generation_rank",
+        "priority_rank",
+        "fit_score",
+        "rejection_reason",
+        "cost"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "system_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "conflict_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "retained_claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rejected_claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "added_relationship": {
+          "type": "string"
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "variable_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "accounted_observation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "accounting_justification": {
+          "type": "string"
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/parameter"
+          }
+        },
+        "prediction_form": {
+          "enum": [
+            "expression",
+            "conditional_rule",
+            "action_commitment",
+            "pending"
+          ]
+        },
+        "expression": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/expression"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "required_action_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "status": {
+          "enum": [
+            "valid",
+            "invalid",
+            "pending_prediction",
+            "requires_measurement",
+            "measurement_unavailable",
+            "inadequate"
+          ]
+        },
+        "generation_rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "priority_rank": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "fit_score": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "rejection_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cost": {
+          "type": "number"
+        }
+      }
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "lower",
+        "upper",
+        "categories",
+        "units"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "numeric_interval",
+            "categorical_set",
+            "unknown"
+          ]
+        },
+        "lower": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "upper": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "units": {
+          "type": "string"
+        }
+      }
+    },
+    "prediction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "prediction_id",
+        "candidate_id",
+        "question_id",
+        "action_id",
+        "context_values",
+        "region",
+        "tolerance",
+        "tolerance_applied",
+        "committed_at",
+        "commitment_digest",
+        "unknown_reason"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prediction_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "context_values": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "number",
+              "string",
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "region": {
+          "$ref": "#/$defs/region"
+        },
+        "tolerance": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "tolerance_applied": {
+          "type": "boolean"
+        },
+        "committed_at": {
+          "type": "string"
+        },
+        "commitment_digest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unknown_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "action_id",
+        "candidate_ids",
+        "purpose",
+        "measurement_procedure",
+        "required_variable_ids",
+        "permitted",
+        "declared_cost",
+        "selection_score",
+        "selection_reason",
+        "requested_at",
+        "returned_evidence_ids",
+        "returned_observation_ids",
+        "actual_cost",
+        "status"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "purpose": {
+          "enum": [
+            "discriminate",
+            "prerequisite_measurement"
+          ]
+        },
+        "measurement_procedure": {
+          "type": "string"
+        },
+        "required_variable_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "permitted": {
+          "type": "boolean"
+        },
+        "declared_cost": {
+          "type": "number"
+        },
+        "selection_score": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "selection_reason": {
+          "type": "string"
+        },
+        "requested_at": {
+          "type": "string"
+        },
+        "returned_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "returned_observation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "actual_cost": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "requested",
+            "completed",
+            "unavailable",
+            "failed"
+          ]
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "decision_id",
+        "stage",
+        "claim_ids",
+        "candidate_ids",
+        "evidence_ids",
+        "reason",
+        "warrant",
+        "unresolved_candidate_ids",
+        "recorded_at"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stage": {
+          "enum": [
+            "alignment",
+            "lineage",
+            "generation",
+            "investigation"
+          ]
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reason": {
+          "type": "string"
+        },
+        "warrant": {
+          "enum": [
+            "source_reported",
+            "derived_given_premises",
+            "candidate_prediction",
+            "empirically_supported_in_scope",
+            "refuted_in_scope",
+            "unresolved"
+          ]
+        },
+        "unresolved_candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "recorded_at": {
+          "type": "string"
+        }
+      }
+    },
+    "score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "score_id",
+        "prediction_ids",
+        "candidate_id",
+        "outcome",
+        "error",
+        "endpoint",
+        "verdict",
+        "family_strata",
+        "fidelity_verdict",
+        "novelty_verdict",
+        "adjudication_reason"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "score_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prediction_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "candidate_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "outcome": {
+          "type": [
+            "number",
+            "string",
+            "boolean",
+            "null"
+          ]
+        },
+        "error": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "endpoint": {
+          "type": "string"
+        },
+        "verdict": {
+          "type": "string"
+        },
+        "family_strata": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fidelity_verdict": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "novelty_verdict": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "adjudication_reason": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "runtime"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "scores": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ]
+}

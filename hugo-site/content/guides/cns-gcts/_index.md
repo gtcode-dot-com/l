@@ -39,7 +39,7 @@ ai_agent_note: |
   Source status: this is a May 2026 buildable research proposal, not a completed implementation; public framing should remain conservative because fact verification, provenance, probabilistic logic, and missing-data theory have substantial prior art.
 ---
 
-> **Earlier CNS proposal.** For the latest research direction, see [CNS 9.0: Falsification-Guided Narrative Synthesis](/guides/cns-9/), an unvalidated research proposal. The CNS 7.1 / GCTS material below is retained as prior work.
+> **Earlier CNS proposal.** For the latest research direction, see [TRACE (Testing Rival Accounts through Contrast and Evidence)](/guides/trace/), an unvalidated research proposal. The CNS 7.1 / GCTS material below is retained as prior work.
 
 This is the research hub for **CNS 7.1 / GCTS: Grounded
 Chiral Tensor Synthesis**.

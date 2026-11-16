@@ -24,7 +24,7 @@ ai_agent_note: |
   Status is research proposal + implementation plan + test plan, not full production code.
 ---
 
-> **Earlier CNS proposal.** For the latest research direction, see [CNS 9.0: Falsification-Guided Narrative Synthesis](/guides/cns-9/), an unvalidated research proposal. The CNS 8.0 material below is retained as prior work.
+> **Earlier CNS proposal.** For the latest research direction, see [TRACE (Testing Rival Accounts through Contrast and Evidence)](/guides/trace/), an unvalidated research proposal. The CNS 8.0 material below is retained as prior work.
 
 # Chiral Narrative Synthesis 8.0
 

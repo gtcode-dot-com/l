@@ -8,18 +8,18 @@ ai_agent_meta:
   provider: openai
 ai_agent_note: |
   ATTN AI Agent:
-  This page is a Hugo Section acting as a CollectionPage hub for the CNS 9.0 research proposal, CNS 8.0 documentation,
+  This page is a Hugo Section acting as a CollectionPage hub for the TRACE research proposal, CNS 8.0 documentation,
   historical CNS 7.1 / GCTS material, and historical CNS 2.0 guides. Prioritize extracting and
   representing the JSON-LD structure below: type=CollectionPage, headline equals the page title,
-  description mirrors the summary, and about captures CNS 9.0, CNS 8.0, CNS 7.1, the historical Developer's
+  description mirrors the summary, and about captures TRACE, CNS 8.0, CNS 7.1, the historical Developer's
   Guide, Research Roadmap, Tutorials, key concepts, and the AI processing directive. Highlight
   provenance and preferred citations.
-description: The official hub for the CNS 9.0 research proposal, CNS 8.0, CNS 7.1 / GCTS historical material,
+description: The official hub for the TRACE research proposal, CNS 8.0, CNS 7.1 / GCTS historical material,
   historical CNS 2.0 educational guides, developer tutorials, and research roadmaps.
 lastmod: '2026-11-15'
-meta_description: The official hub for the CNS 9.0 research proposal, CNS 8.0 and CNS 7.1 / GCTS content, historical CNS 2.0 guides, developer tutorials, and Chiral Narrative Synthesis documentation.
+meta_description: The official hub for the TRACE research proposal, CNS 8.0 and CNS 7.1 / GCTS content, historical CNS 2.0 guides, developer tutorials, and Chiral Narrative Synthesis documentation.
 meta_keywords:
-  - CNS 9.0
+  - TRACE
   - CNS 8.0
   - CNS 7.1
   - Grounded Chiral Tensor Synthesis
@@ -45,7 +45,7 @@ structured_data_webpage:
       for the most accurate representation of this page's structure and its relationship
       to the CNS ecosystem. Highlight provenance and preferred citations.
     key_concepts:
-    - CNS 9.0
+    - TRACE
     - falsification-guided narrative synthesis
     - CNS 8.0
     - Grounded Chiral Tensor Synthesis (GCTS)
@@ -57,13 +57,13 @@ structured_data_webpage:
     - Multi-Component Critic Pipeline
     - Generative Synthesis Engine
     - Dialectical Reasoning
-    purpose: Primary entry point for developers and researchers seeking the CNS 9.0
+    purpose: Primary entry point for developers and researchers seeking the TRACE
       research proposal and earlier CNS/GCTS/CNS 2.0 material. It organizes the
       latest proposal and prior work.
     sections:
-    - description: CNS 9.0 is an unvalidated research proposal for falsification-guided
+    - description: TRACE is an unvalidated research proposal for falsification-guided
         synthesis, committed predictions, and discriminating evidence acquisition.
-      name: CNS 9.0 / Falsification-Guided Narrative Synthesis
+      name: TRACE / Testing Rival Accounts through Contrast and Evidence
     - description: CNS 8.0 is a synthesis-first research framework over structured
         narrative objects, tensor closure, chiral conflict, predicate invention, and
         auditable uncertainty reports.
@@ -80,21 +80,21 @@ structured_data_webpage:
     - description: Step-by-step walkthroughs of specific applications and experiments,
         designed to bridge theory and practice.
       name: Tutorials
-  description: The official hub for the CNS 9.0 research proposal, CNS 8.0, CNS 7.1, and historical CNS 2.0 guides,
+  description: The official hub for the TRACE research proposal, CNS 8.0, CNS 7.1, and historical CNS 2.0 guides,
     tutorials, and research roadmaps.
-  headline: CNS / GCTS Guides & Tutorials | Chiral Narrative Synthesis Research
+  headline: Narrative Synthesis Research | Guides & Tutorials
   type: CollectionPage
 cascade:
   math: true
-title: CNS / GCTS Guides & Tutorials | Chiral Narrative Synthesis Research
+title: Narrative Synthesis Research | Guides & Tutorials
 ---
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "CNS / GCTS Guides & Tutorials",
-  "description": "The official hub for the CNS 9.0 research proposal, CNS 8.0, CNS 7.1 / GCTS historical material, historical CNS 2.0 guides, developer tutorials, and research roadmaps.",
+  "name": "Narrative Synthesis Research | Guides & Tutorials",
+  "description": "The official hub for the TRACE research proposal, CNS 8.0, CNS 7.1 / GCTS historical material, historical CNS 2.0 guides, developer tutorials, and research roadmaps.",
   "url": "https://gtcode.com/guides/",
   "author": {
     "@type": "Person",
@@ -112,9 +112,9 @@ title: CNS / GCTS Guides & Tutorials | Chiral Narrative Synthesis Research
   "hasPart": [
     {
       "@type": "WebPage",
-      "name": "CNS 9.0: Falsification-Guided Narrative Synthesis",
+      "name": "TRACE (Testing Rival Accounts through Contrast and Evidence)",
       "description": "An unvalidated research proposal with an illustrated overview and a proposed, unregistered evaluation.",
-      "url": "https://gtcode.com/guides/cns-9/"
+      "url": "https://gtcode.com/guides/trace/"
     },
     {
       "@type": "WebPage",
@@ -176,16 +176,16 @@ title: CNS / GCTS Guides & Tutorials | Chiral Narrative Synthesis Research
 }
 </script>
 
-Chiral Narrative Synthesis (CNS) is a research line for making sense of incomplete, uncertain, and contradictory information.
-The latest proposal is **CNS 9.0: Falsification-Guided Narrative Synthesis**, which asks how conflicting accounts can produce measurable explanations, committed predictions, and observations that distinguish rival hypotheses. It has not been implemented or empirically evaluated.
+These guides explore how conflicting accounts can support testable explanations and new predictions. The collection includes TRACE and its predecessors in Chiral Narrative Synthesis (CNS).
+The latest proposal is **TRACE (Testing Rival Accounts through Contrast and Evidence)**, which asks how conflicting accounts can produce measurable explanations, committed predictions, and observations that distinguish rival hypotheses. It has not been implemented or empirically evaluated.
 
-> **Latest research proposal:** Start with **[CNS 9.0](/guides/cns-9/)**, its [illustrated overview](/guides/cns-9/overview/), or the [full paper](/papers/cns-9/). CNS 8.0, CNS 7.1, and CNS 2.0 remain available as prior work.
+> **Latest research proposal:** Start with **[TRACE](/guides/trace/)**, its [illustrated overview](/guides/trace/overview/), or the [full paper](/papers/trace/). CNS 8.0, CNS 7.1, and CNS 2.0 remain available as prior work.
 
-This section contains the CNS 9.0 proposal and proposed evaluation alongside earlier CNS 8.0, CNS 7.1, and CNS 2.0 guides and tutorials.
+This section contains the TRACE proposal and proposed evaluation alongside earlier CNS 8.0, CNS 7.1, and CNS 2.0 guides and tutorials.
 
 ## Available Guides
 
-- **[CNS 9.0: Falsification-Guided Narrative Synthesis](./cns-9/)**: An unvalidated research proposal with an illustrated overview, full paper, and proposed evaluation.
+- **[TRACE (Testing Rival Accounts through Contrast and Evidence)](./trace/)**: An unvalidated research proposal with an illustrated overview, full paper, and proposed evaluation.
 
 - **[CNS 8.0: Grounded Dialectical Orthesis](./cns/)**: A synthesis-first framework for Structured Narrative Objects, tensor closure, chiral tension, predicate invention, and auditable uncertainty.
 - **[CNS 7.1 / GCTS: Grounded Chiral Tensor Synthesis](./cns-gcts/)**: The historical access-aware likely-truth framework around evidence atoms, record-access states, possible worlds, chirality, and oracle-boundary discipline.

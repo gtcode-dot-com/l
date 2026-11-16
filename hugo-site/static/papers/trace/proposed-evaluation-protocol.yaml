@@ -1,0 +1,361 @@
+# Proposed design; not implemented, registered or executed.
+title: 'Testing Rival Accounts through Contrast and Evidence: proposed falsification-guided evaluation protocol'
+status: PROPOSED ONLY - not preregistered, not implemented, not executed
+design_version: '0.1'
+prepared: '2026-11-15'
+independent_unit: root world or record-generating episode
+data:
+  engineering_fixtures: 120
+  development_roots: 600
+  calibration_roots: 600
+  pilot_roots: 240
+  confirmatory_roots: 2400
+  families: 8
+  roots_per_family: 300
+  discovery_eligible_roots: 1200
+  direct_rejection_roots: 600
+  nonidentifiable_roots: 600
+  external_text_groups_target: 900
+  discovery_transfer_tasks: 60
+  prospective_scenarios: 240
+  families_held_out_entirely_from_prior_phases:
+  - F7_rare_nonlinear
+  - F8_observational_equivalence
+  per_family_confirmatory_composition:
+    discovery_eligible: 150
+    direct_rejection: 75
+    nonidentifiable: 75
+  nonidentifiable_definition: Compatible worlds yield different answers to the declared target under all permitted
+    evidence/actions; causal-graph ambiguity alone does not imply predictive non-identifiability.
+  independent_confirmatory_roots: 2400
+  counts_status: Planning targets; final target/view identifiability and stratum feasibility must be certified before
+    registration; all dependent arithmetic must change if denominators change.
+  per_family_confirmatory_composition_status: Provisional, not guaranteed feasible. Certify static and reduced adaptive
+    views separately; do not force impossible F8 cells.
+  F8_scope: Causally observationally equivalent mechanisms may agree on an identifiable observational prediction.
+    Causal identification is not credited without appropriate actions/assumptions.
+primary_design:
+  systems: 10
+  model_families: 2
+  seeds_per_family: 2
+  static_branches_per_root: 11
+  nuisance_branches: 6
+  relevant_change_branches: 4
+  adaptive_branches_per_root: 1
+  primary_model_family: null
+  primary_seed: null
+  remaining_models_seeds: replications, not independent roots
+  primary_model_family_pending: Exact model and immutable model version must be pinned before registration, chosen
+    without confirmatory test access.
+  primary_seed_pending: A fixed seed must be selected before unblinding; all others are sensitivity replications,
+    not new roots.
+  systems_list:
+  - id: B1
+    name: strong single-agent retrieval-augmented generation
+  - id: B2
+    name: retrieval plus chain-of-verification
+  - id: B3
+    name: retrieval plus self-consistency
+  - id: B4
+    name: AAL multi-context sketch, our operationalization (not author-released system)
+  - id: B5
+    name: grounded AAL sketch, our operationalization (not author-released system)
+  - id: B6
+    name: grounded debate
+  - id: B7
+    name: documented experimental subset of CNS 8.0
+  - id: B8
+    name: fixed common-extractor classical rule/tree/regression learner
+  - id: B9
+    name: documented iterative hypothesis-refinement adaptation
+  - id: TRACE
+    name: proposed TRACE engine
+  seven_ablation_controls:
+  - disable nuisance testing
+  - disable relevant-change testing
+  - disable source-lineage handling
+  - disable finite scope invention
+  - disable external evidence acquisition
+  - replace action policy with random acquisition
+  - retain SNO schema but solve directly without TRACE loop
+  ablation_roots: 600
+  evaluation_label_access: Sealed; runtime never accesses root generator, gold labels or withheld predictions.
+  required_primary_H2_comparator_candidates:
+  - B8
+  - B9
+  common_extractor_control: Freeze identical extracted view for B8 mechanism comparison; separately report end-to-end
+    results with equal raw evidence, action access and total costs. TRACE may propose and acquire missing variables;
+    paired acquired-evidence replay is a separate diagnostic.
+  additional_secondary_mechanism_controls:
+  - matched_generation_with_and_without_supplied_conflict_localization
+  - fixed_candidate_pool_prioritization_permutation
+  - numerical_ordering_budget_curve_and_exhaustive_control
+  - noncontradictory_packets_preserving_relevant_facts
+  - menu_only_shortcut
+  grid_planning:
+    system_root_runs: 96000
+    static_branch_runs: 1056000
+    adaptive_branch_runs: 96000
+    independent_roots: 2400
+    note: 10 systems x 2 model families x 2 seeds x 2400 target roots; conditional planning only.
+budgets:
+  static_branch_input_tokens: 8000
+  static_branch_output_tokens: 2000
+  adaptive_input_tokens: 32000
+  adaptive_output_tokens: 8000
+  system_root_input_tokens: 120000
+  system_root_output_tokens: 30000
+  max_external_actions: 3
+  max_action_cost_units: 12
+  token_ceiling_status: Proposed maximum, not actual metered usage.
+  adaptive_branches_per_root: 1
+hypotheses:
+  H1:
+    n: 2400
+    endpoint: binary root contrastive success on base plus six nuisance and four relevant-change branches
+    target_absolute_difference: 0.05
+    coverage_margin: -0.02
+    coverage_guard: one-sided 95% lower bound > -0.02 on 1800 resolvable roots
+    required_diagnostics: Unconditional base/nuisance/relevant-change scores, family breakdown and risk-coverage.
+      Any conditional analysis uses a predeclared common stratum.
+    component_gate_status: One primary endpoint retained; non-degradation margins/composite gates, if adopted, require
+      justification and pre-registration freeze.
+  H2:
+    n: 1200
+    endpoint: operational novel rule and >=4/5 correct withheld predictions
+    target_absolute_difference: 0.1
+    negative_control_n: 1200
+    false_invention_guard: one-sided 95% upper bound <= 0.05
+    challenge_design: Family-specific rival-distinguishing conditions with fixed tolerances, near-boundary cases
+      where appropriate, and constant/unconditional controls; no universal sign-reversal or 2+2+1 requirement.
+    fidelity_and_novelty: Source-faithful account of motivating observations plus added relationship/scope and new
+      prediction; alignment, deduplication and extraction of an existing rule do not qualify.
+    information_boundary: Static permitted record only; unresolved missing measurements cannot use withheld labels.
+      Adaptive post-acquisition discovery is secondary beside H3.
+  H3:
+    n: 1800
+    endpoint: correct resolution within three actions and 12 cost units
+    target_absolute_difference: 0.1
+    negative_control_n: 600
+    false_resolution_guard: one-sided 95% upper bound <= 0.05
+    secondary_target: 25% cost reduction at frozen matched accuracy; cannot replace primary endpoint
+    evidence_sufficiency: Acquired observations must identify the target at claimed warrant in the certified compatibility
+      class; accept equivalent sequences and joint observations, reject lucky unsupported guesses.
+analysis:
+  familywise_alpha: 0.05
+  primary_tests: 3
+  per_test_alpha: 0.016666666666666666
+  test: exact two-sided McNemar on paired binary root outcomes
+  effect_ci: paired-root percentile bootstrap
+  ci_level: 0.9833333333333333
+  bootstrap_resamples: 10000
+  bootstrap_seed: 9001
+  ci_sensitivity: paired-score interval
+  invalid_output_policy: failure
+  baseline_selection: development only, best compliant metric then lower cost on a tie
+  replicates_policy: separate primary analyses, root-clustered pooled sensitivity only
+  planned_primary_comparisons: One development-selected frozen comparator per hypothesis; H2 selection must include
+    compliant B8/B9; all ten systems reported.
+  primary_success_interpretation: Positive effect with exact paired test at allocated alpha AND positive lower bound
+    of frozen 98.333% bootstrap interval AND safeguards. Discordance is reported as inconclusive; no favorable method
+    substitution.
+  confirmation_date: null
+  confirmation_date_pending: Not scheduled; registration and independent sealing are required first.
+  absolute_guards: Retain 5% absolute false-promotion/false-resolution limits. Valid bound construction for actual
+    binomial/stratified sampling and feasibility/power must be frozen; relative improvements reported separately.
+  binomial_guard_illustration:
+    method: one-sided 95% exact Clopper-Pearson, only under binomial assumptions
+    n: 600
+    max_failures_for_upper_bound_at_most_0_05: 20
+    not_a_frozen_sampling_assumption: true
+prospective:
+  settings_per_scenario: 12
+  initial_settings: 2
+  candidate_actions: 5
+  withheld_settings: 5
+  conditions: 2
+  repeats_per_condition: 3
+  total_executions: 17280
+  withheld_collection: after predictions are timestamped and hashed
+  type: Proposed, not measured engineering transfer experiment.
+  environments: 240 independently seeded workload scenarios; randomized cache-on/off conditions and three repeats
+    per setting; freshness constraint.
+  estimand_scope: Prediction over workload distribution conditional on a specified service/configuration; 240 workloads
+    are not 240 independently replicated mechanisms.
+  blocking: Hardware/day, carryover and shared service regimes; broader transfer requires multiple independently
+    defined regimes and uncertainty appropriate to cluster count.
+  variables:
+    r: Fraction of read requests repeating a key in fixed reuse window; not hit rate
+    u: Write/invalidation requests divided by all offered requests; 0 <= u < 1
+    controls: Offered arrival rate, external background contention, concurrency policy and capacity; do not hold
+      treatment-induced backend work fixed
+    freshness: Predict/score staleness separately and retain failures; deployment success requires prespecified
+      bound, no post-hoc request filtering
+freeze_requirements:
+- exact model IDs and versions
+- all prompts and inference settings
+- candidate grammar and limits
+- all transformation contracts and validators
+- outcome tolerances by family
+- evaluator code and hashes
+- selected primary comparator per hypothesis
+- evidence snapshots and licenses
+- action menu, costs and outcome service
+- exclusion and amendment log
+- security and leakage checks
+- target/view identifiability and final stratum feasibility
+- B8/B9 adaptations and common extraction interface
+- family-specific H2 challenge/tolerance design
+- H1 component diagnostic and any gate semantics
+- absolute-guard confidence method valid for actual sampling
+- test/interval discordance rule and Monte Carlo handling
+- action-menu cue checks and H3 joint evidence-sufficiency evaluator
+- candidate deduplication, noise-aware adequacy and finite reopening
+- prospective conditional estimand, regimes, blocking and small-cluster analysis
+claims_not_made:
+- experimental validation
+- completed TRACE implementation
+- empirical superiority
+- guaranteed truth
+- universal OOD generalization
+- exhaustive novelty
+- preregistered study
+- current vendor pricing
+registration_state: not registered
+execution_state: not executed
+publication_version: '0.1'
+canonical_protocol_page: https://gtcode.com/guides/trace/evaluation/
+publication_paper: https://gtcode.com/papers/trace/
+protocol_authority: Public evaluation specification v0.1. Exact operational settings must be frozen and registered
+  before any confirmatory unblinding.
+pending_freeze_fields:
+  model_versions: null
+  inference_seeds_and_settings: null
+  dataset_versions_and_permissions: null
+  candidate_scope_rule_grammar_and_complexity_limit: Candidate interface in 4.3; numerical compiler in 4.4; confirm
+    implementation and engineering settings before registration.
+  transformation_contracts_and_admissibility_oracles: null
+  measurement_tolerances_per_family: null
+  baseline_implementations_and_selected_comparators: null
+  action_menu_and_cost_units: null
+  independent_evaluator_and_code_hashes: null
+  source_cluster_split_and_retrieval_snapshot_hashes: null
+  scoring_functions_and_predicate_fidelity_checks: null
+  exclusion_amendment_and_transport_retry_rules: null
+  target_view_feasibility_and_final_strata: null
+  common_extractor_and_B8_B9_adaptations: null
+  guard_interval_method_and_power: null
+  H1_component_gate_rules: null
+  prospective_regime_and_blocking_analysis: null
+  semantic_fidelity_novelty_rubric_and_adjudication: null
+  component_inference_families_and_multiplicity: null
+pending_freeze_fields_reason: Operational identities, exact datasets, implementations, costs and validators are
+  undecided because no study is being executed; null is intentional, not missing publication work.
+classification_note: Synthetic-root counts are independent worlds; branches, seeds and repeat runs are NOT additional
+  independent units.
+contracts:
+  integrity: Restricted representation/evidence-integrity checks with validated preconditions; semantic cases can
+    remain unknown.
+  rival_response: Hypothesis-indexed response prediction, not a truth/admissibility oracle.
+  evaluator: Sealed gold target/response relation used only after output commitment.
+  evidence_deletion: No universal monotonic confidence rule; preserve support and defeat paths.
+acquisition_policy:
+  type: proposed deterministic normalized pairwise set separation per positive cost
+  prediction_region: Comparable outcome region after frozen tolerance/noise expansion exactly once
+  candidate_set: Deduplicated with frozen normalization; residual duplicates audited
+  eligibility: At least two live comparable candidates, all providing admissible predictions for the action
+  missing_prediction: Action unscorable; logged, not silently dropped from pair denominator
+  zero_cost: Common initial lookup evidence, excluded from positive-cost acquisition scoring
+  tie_break: Stable action ID assigned independently of hidden mechanism
+  no_positive_score: no_separating_action; never implies resolution
+  limitations: Not optimal information gain or logical refutation of stochastic models; may miss useful overlapping/repeated/multivariate
+    observations
+  action_menu: Public and equal; audit names/costs/outcomes for answer cues, including menu-only controls
+  prerequisite_measurements: When all-candidate separation is unscorable because of missing dependencies, choose
+    the lowest-cost permitted measurement supplying an explicit dependency; ties by candidate priority then stable
+    action ID. Same total action budget; log purpose as data completion, not information gain.
+candidate_failure_policy:
+  all_inadequate: Reopen only within fixed candidate/round/action budget; otherwise unresolved/model-inadequate.
+    Never promote least-bad failed candidate.
+  adequacy: Noise-aware thresholds and sequential/stopping rules pending freeze; an interval tail event is not automatic
+    falsification.
+  warrant: Dependency-aware support/defeat graph, not a scalar weakest-link ladder.
+readiness: Unvalidated conceptual proposal; not ready for preregistration/execution. No experiment is scheduled.
+method:
+  specification: paper_sections_4_1_through_4_6
+  stages:
+  - alignment
+  - lineage_accounting
+  - rival_generation
+  - investigation_and_warrant
+  record_schema: https://gtcode.com/papers/trace/trace-records.schema.json
+  variable_provenance:
+  - observed_shared
+  - observed_asymmetric
+  - inferred_unmeasured
+  extraction_calls: 1
+  generation_calls_per_round: 1
+  schema_repair_calls_per_round: 1
+  proposals_per_round: 8
+  active_candidates: 4
+  static_rounds: 1
+  adaptive_rounds: 2
+  candidate_forms:
+  - interpreted_expression
+  - conditional_rule
+  - action_specific_commitment
+  - pending_prediction
+  prediction_expression_operators:
+  - constant
+  - variable
+  - add
+  - subtract
+  - multiply
+  - divide
+  - lt
+  - le
+  - eq
+  - and
+  - if
+  variable_growth: Allowed with source or conjecture provenance and explicit measurement dependencies; never impute
+    missing observations from explanatory convenience.
+  prioritization:
+  - localized_incompatibility
+  - supported_context_coverage
+  - fewer_new_assumptions
+  - canonical_candidate_id
+  prompts: Extractor and generator instructions in paper section 4.3; exact serialized templates and model settings
+    frozen before confirmation.
+  semantic_adjudication: Blinded frozen fidelity and novelty rubric; never feedback to runtime.
+  independence: Distinct origins are not a statistical independence certificate.
+numerical_compiler:
+  scope: One Stage-C candidate compiler, not the full architecture
+  rule_language: constant_or_two_constants_split_by_one_or_two_predicates
+  minimum_measurement_lineages_per_leaf: 2
+  numeric_thresholds: observed_midpoints
+  fit: equal_lineage_weighted_least_squares
+  target_scale: declared_positive_per_question
+  predicate_penalty_initial: 0.01
+  penalty_status: development_justification_and_freeze_required
+  small_table_policy: exhaustive_search_when_affordable
+  missing_cells: requires_measurement_no_silent_complete_case_selection
+  search_order_diagnostic_prefix: 64
+  prefix_scope: high_dimensional_distractor_cases_with_budget_curves_not_a_B8_cap
+  outputs_outside_supported_domain: unknown
+component_comparisons:
+  generation: Same source facts, extraction, model and budgets; supplied conflict record/instruction versus generic
+    hypothesis generation; downstream stages held fixed.
+  prioritization: Same frozen generated pool; vary ranking only.
+  numerical_ordering: Same extracted variables and rule language; contrast order versus seeded permutation and exhaustive
+    search.
+  extraction: Report common-input mechanism comparison separately from equal-access end-to-end comparison.
+  statistics: Secondary paired-root estimates; prespecify inferential family and multiplicity before superiority
+    claims.
+  costs:
+  - candidate_count
+  - cpu_time
+  - model_calls
+  - input_tokens
+  - output_tokens
+  - external_actions
+  - total_cost
