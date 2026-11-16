@@ -76,31 +76,25 @@
 \vspace{0.8em}
 {\color{CNSBlue}\hrule height 0.7pt}
 \begin{abstract}
-Conflicting accounts can reflect different measurements, dependent
-sources, omitted conditions or competing mechanisms. We propose
-\textbf{TRACE (Testing Rival Accounts through Contrast and Evidence)} to
-test whether explicit comparison of these accounts improves explanatory
-discovery. The procedure aligns questions and units, accounts for
-evidence lineage, generates rival explanations from localized conflicts,
-and tests committed predictions through permitted observations.
-Candidates state which claims they retain or reject, what relationship
-they add and which observations would distinguish them. Variables may be
-recorded in both accounts, reported in only one, or proposed for
-measurement; missing values remain unknown. A numerical rule compiler
-handles measured conditional relationships without defining the entire
-synthesis process. Shared conflict, candidate, prediction and decision
-records support analysis across cases. Separate controls distinguish
-candidate generation from prioritization and isolate reasoning after
-extraction from end-to-end performance. TRACE develops earlier CNS work
-on structured accounts and provenance, informed by Lopez-Paz's argument
-for investigating invariance and admissible transformations. Three
-proposed hypotheses concern reliability, predictive synthesis and
-evidence acquisition. The evaluation has a planning target of 2,400
-confirmatory roots, subject to feasibility certification. \textbf{No
-TRACE system has been implemented or experimentally evaluated for this
-publication.} The contribution is a specified research procedure and
-comparative design; its effectiveness and methodological novelty remain
-unestablished.
+Conflicting reports can expose measurement differences, copied evidence
+or omitted explanatory conditions. \textbf{TRACE (Testing Rival Accounts
+through Contrast and Evidence)} investigates whether explicitly locating
+these differences improves discovery beyond established contrastive and
+abductive methods given the same source evidence and resources. The
+procedure aligns claims, accounts for evidence lineage, generates rival
+explanations and tests committed predictions. Its primary comparison
+adds a generated conflict record to a common contrastive-discovery
+scaffold, holding downstream selection and prediction scoring fixed.
+Further comparisons distinguish lineage handling, extraction and
+candidate ordering. Success requires a measurable explanatory
+relationship absent from the source packet and accurate predictions on
+sealed observations. The proposed first study uses 12--20 development
+cases followed by a separate 30--60-case exploratory pilot. Reliability
+measures constrain interpretation; adaptive investigation and larger
+studies depend on the pilot's findings. TRACE integrates established
+techniques and proposes a test of their incremental value. No
+implementation or experiments are reported, and neither superiority nor
+methodological novelty has been established.
 \end{abstract}
 
 \section{Introduction: when disagreement is
@@ -119,7 +113,7 @@ genuinely unresolved alternatives.
 This example exposes a gap between \emph{answer selection} and
 \emph{explanatory discovery}. Selecting the more credible report can be
 useful. So can identifying the source of a contradiction or expressing
-uncertainty. The larger research opportunity is to infer a
+uncertainty. An established goal of abductive research is to infer a
 \textbf{measurable condition} not stated in either report, state what
 new observations that condition predicts, and seek an observation
 capable of refuting it. If the condition merely redescribes the evidence
@@ -169,11 +163,12 @@ variables and distinguishing predictions. Acquisition can supply
 initially missing context, while warrant remains separate from
 hypothesis generation. Sections 4.1--4.6 specify the record types,
 generator interface, numerical compiler, action policy and stopping
-states. The central claim concerns predictive explanatory synthesis;
-generation and ordering experiments investigate possible mechanisms
-behind any improvement.
+states. The primary research question concerns the incremental
+predictive value of localized source disagreement beyond existing
+discovery methods; generation and ordering experiments distinguish
+possible mechanisms behind any improvement.
 
-\textbf{Scope.} The proposed theory addresses empirical claims with
+\textbf{Scope.} The proposed procedure addresses empirical claims with
 explicit target variables, accessible records, or feasible observations.
 It does not claim a universal criterion of truth, solve disputes of
 values, or recover causal structure without identification assumptions.
@@ -183,6 +178,61 @@ central TRACE claims. No experimental findings are offered here.
 
 \section{Related work and contribution
 boundary}\label{related-work-and-contribution-boundary}
+
+\subsection{Closest source-conflict and discovery
+precedents}\label{closest-source-conflict-and-discovery-precedents}
+
+Contrastive Discovery represents a scientific question through competing
+explanations and uses evidence-induced belief redistribution to evaluate
+and guide discovery \citep{R41}. Its data-and-metadata experiments
+directly precede TRACE's rival-comparison loop. TRACE cannot claim
+priority for contrastive experimentation; the proposed distinction is
+the incremental value of source-conflict localization, tested without
+withholding source facts from that comparator.
+
+POPPER implements agentic falsification with sequential statistical
+safeguards \citep{R42}. Its guarantees require valid implications and
+conditionally valid tests; TRACE's deterministic set-separation
+heuristic does not inherit those guarantees. A later investigation study
+must compare against a faithful POPPER adaptation wherever valid
+statistical tests are available, and report task incompatibilities
+instead of replacing it with a weak prompt.
+
+Claim Cards records explicit interpretations before evidence gathering
+\citep{R43}. ConfRAG evaluates reasoning over conflicting web references
+\citep{R44}. Perceive-Then-Adjudicate addresses conflicts between model
+knowledge and retrieved evidence \citep{R46}. These precedents constrain
+claims for alignment, conflict organization and agent arbitration; their
+outcomes are not equivalent to new held-out predictive conditions.
+
+Contradiction-driven explanation itself is established: Behfar and
+Okhuysen discuss abductive inquiry into discordant findings \citep{R47}.
+PARADOX analyzes pharmacological contradictions and contextual
+differences \citep{R48}. The publisher links an official repository
+containing sentence-pair classification, iterative refinement, GPT
+contradiction checking and graph construction. In the inspected
+evaluation notebook, the reference labels are GPT labels, not
+independent outcome measurements. No committed held-out
+condition-prediction workflow was identified in the inspected notebooks.
+The full article remains subscription-only, so this implementation
+inspection does not settle full-method differentiation. Contextual
+reconciliation is already prior art; TRACE must establish added
+predictive value. Earlier clinical work also uses ChatGPT to
+differentiate conflicting scientific evidence \citep{R49}. Failing to
+Falsify supplies a required simple counterexample-prompting control
+\citep{R45}.
+
+\textbf{Contribution boundary.} The remaining question is whether a
+particular representation of documented disagreement improves candidate
+generation and independently predictive scope discovery under matched
+information and cost. Neither source independence nor useful
+localization is assumed from a citation count. The
+\href{https://gtcode.com/papers/trace/prior-art-audit.md}{prior-art
+audit} records inspection depth, assumptions and access gaps; the
+\href{https://gtcode.com/papers/trace/contribution-matrix.md}{contribution
+matrix} assigns each proposed contribution a precedent and a comparison
+that could eliminate it. These are targeted searches, not an exhaustive
+novelty certificate.
 
 \subsection{Invariance and its
 limitations}\label{invariance-and-its-limitations}
@@ -269,15 +319,12 @@ computational forms include cost-based first-order abduction
 rule and predicate learning in a specified language \citep{R21}. These
 traditions already cover substantial ground claimed informally by many
 ``discovery'' systems. TRACE does not claim to invent abduction,
-argument attacks, or predicate invention. The proposed contribution is a
-specified architecture and evaluation design for
-\textbf{contradiction-guided predictive synthesis}. Its research claim
-concerns the incremental value of combining these components, rather
-than the invention of invariance testing, abductive explanation, or
-experimental design individually. The specification alone does not
-establish novelty; comparisons with existing hypothesis-generation and
-discovery systems must establish what, if anything, the combination
-adds.
+argument attacks, or predicate invention. The proposed artifact is a
+procedure and comparative design for testing
+\textbf{conflict-conditioned predictive discovery}. Combining familiar
+components does not establish methodological novelty. The empirical
+question is whether explicit source-conflict localization adds
+predictive value beyond those methods.
 
 Iterative hypothesis generation is already a close precedent. HypoGeniC
 updates a bank of natural-language hypotheses using prediction errors on
@@ -294,12 +341,19 @@ capability.
 \subsection{Choosing observations and existing discovery
 agents}\label{choosing-observations-and-existing-discovery-agents}
 
-Piriyakulkij and colleagues combine LLM-proposed natural-language rules,
-probabilistic belief updates and experiment design \citep{R40}. This is
-a close precedent for the hypothesis--experiment loop. TRACE therefore
-tests the added value of explicit comparison between source accounts,
-including their measurement and lineage differences, rather than
-claiming to originate automated experimentation.
+AutoDiscovery already generates contexts, derived variables and
+relationships, including hypotheses across datasets; its released
+implementation also defines structured hypothesis dimensions
+\citep{R50}. These capabilities are inherited, not distinctive to TRACE.
+Its search uses model belief change, which is not an external
+correctness label. A credible comparator must retain its ability to
+propose conditional explanations. Piriyakulkij and colleagues combine
+LLM-proposed natural-language rules, probabilistic belief updates and
+experiment design \citep{R40}. This is a close precedent for the
+hypothesis--experiment loop. TRACE therefore tests the added value of
+explicit comparison between source accounts, including their measurement
+and lineage differences, rather than claiming to originate automated
+experimentation.
 
 Bayesian experimental design gives a principled account of selecting
 actions to reduce uncertainty when the relevant hypotheses, likelihoods
@@ -315,15 +369,12 @@ Scientist} automates parts of idea generation, experimental code and
 reporting \citep{R34}; \emph{Co-Scientist} develops scientific
 hypotheses through agent coordination and evaluation \citep{R35}; and
 \emph{Robin} connects literature agents, analysis and experimental
-biology \citep{R36}. These contributions sharply constrain any claim
-that CNS invented multiagent research, hypothesis generation or
-experiment planning. TRACE instead proposes to test whether
-\textbf{specific contradiction-derived scope rules, prediction
-commitments and measured falsification opportunities} add value over
-well-resourced alternatives. DiscoveryBench provides a separate transfer
-diagnostic, while FEVER, SciFact and AVeriTeC test forms of
-source-grounded verification rather than universal truth
-\citep{R25, R26, R27, R28}.
+biology \citep{R36}. These workflows provide established alternatives
+for hypothesis generation and experiment planning. TRACE focuses on the
+additional value of explicitly locating disagreement in their source
+evidence. DiscoveryBench provides a separate transfer diagnostic, while
+FEVER, SciFact and AVeriTeC test forms of source-grounded verification
+rather than universal truth \citep{R25, R26, R27, R28}.
 
 \section{Epistemic commitments and
 nonclaims}\label{epistemic-commitments-and-nonclaims}
@@ -490,6 +541,16 @@ allows the same analysis to distinguish alignment corrections,
 dependence adjustments, new conditions, refuted candidates and
 unresolved cases across F1--F8 without passing family labels to runtime.
 
+\textbf{Role of the architecture.} Alignment and provenance accounting
+implement inherited safeguards. Stage C is the principal experimental
+target: does an explicit conflict record improve the proposed conditions
+and their predictions? Stage D implements investigation using
+established experimental-design ideas. Neither multiple agents nor the
+numerical compiler is required to be an innovation. The primary
+mechanism comparison in Section 8 holds downstream compilation and
+evaluation fixed; a separate end-to-end comparison measures the cost and
+errors of producing the conflict record itself.
+
 \subsection{Transformation contracts}\label{transformation-contracts}
 
 Three records must remain separate. A
@@ -562,15 +623,20 @@ permitted action, or mark unavailable. Include an account-rejection
 explanation only when evidence supports a defect; allow all accounts to
 be inadequate. Output candidate records, not a consensus essay.''
 
-The initial specification permits up to eight proposals per generation
+The TRACE implementation permits up to eight proposals per generation
 call, one schema-repair call containing only structural errors, and two
-generation rounds in an adaptive run. A static run has one round and no
-acquisition. The second adaptive round receives acquired observations
-and the preceding candidate records, with old predictions immutable.
-These are proposed engineering limits, to be fixed with the model
-version, inference settings and packet construction before confirmation.
-Invalid or excess proposals remain logged and consume generation budget;
-repairs cannot receive scoring outcomes.
+generation rounds in an adaptive run. A separate localization call turns
+the extracted records into conflict records, cites supporting spans,
+preserves unknowns and proposes no explanatory condition. Its tokens and
+errors count toward the run. These call allocations describe TRACE and
+the matched scaffold comparison; faithful method-level competitors can
+allocate their calls differently within the same total resource ceiling.
+A static run has one round and no acquisition. The second adaptive round
+receives acquired observations and the preceding candidate records, with
+old predictions immutable. These are proposed engineering limits, to be
+fixed with the model version, inference settings and packet construction
+before confirmation. Invalid or excess proposals remain logged and
+consume generation budget; repairs cannot receive scoring outcomes.
 
 \textbf{Variable acquisition.} An asymmetric variable cites the source
 passage establishing its presence and the rows where its value is
@@ -617,12 +683,14 @@ assignment, then by fewer newly assumed variables; break ties by
 canonical candidate ID. These are auditable proposal features, not
 calibrated truth probabilities. Include measurable pending candidates as
 well as currently executable ones. Log all proposals and rankings so
-candidate generation can be separated from selection effects. Select a
-final prediction candidate using the same ordering among candidates that
-remain adequate; report unresolved where none qualifies. The numerical
-compiler may rank alternative parameterized rules within a candidate
-using Section 4.4; its training score cannot compare arbitrary prose
-mechanisms or confer warrant.
+candidate generation can be separated from selection effects. In the
+complete TRACE procedure, select a final prediction candidate using the
+same ordering among candidates that remain adequate; report unresolved
+where none qualifies. The controlled C--B generation experiment replaces
+this conflict-sensitive selector with the common selector specified in
+Section 8.2. The numerical compiler may rank alternative parameterized
+rules within a candidate using Section 4.4; its training score cannot
+compare arbitrary prose mechanisms or confer warrant.
 
 Before any scored observation is revealed, write a prediction commitment
 \(k=(h,q,\hat y,\tau,a,t_0)\) with the candidate, question, prediction,
@@ -664,8 +732,8 @@ Record identifiers, source identities and target-derived variables
 cannot be predictors. Numeric extrapolation, unseen categories and
 missing prediction inputs return unknown under this compiler.
 
-Fit branch constants by weighted least squares and rank fitted
-alternatives by \[
+For the complete lineage-aware procedure (D), fit branch constants by
+weighted least squares and rank fitted alternatives by \[
 J(g)=\sum_i w_i\left(\frac{y_i-g(x_i)}{s_q}\right)^2+\lambda k(g),\qquad
 w_i=\frac{1}{L n_{\ell(i)}}.
 \] Here \(L\) is the number of identified measurement lineages,
@@ -674,11 +742,20 @@ w_i=\frac{1}{L n_{\ell(i)}}.
 count. Equal lineage weights prevent duplicated reporting from
 increasing weight; they do not establish independence or optimal
 statistical weighting. Unknown lineage is retained for dependence
-sensitivity analysis. The initial penalty \(\lambda=0.01\) is an
-engineering setting requiring development-stage justification. Training
-fit chooses alternatives to test; only subsequent observations can
-support the predictions. Tolerance-expanded prediction regions are not
-asserted to be calibrated confidence intervals.
+sensitivity analysis. In the controlled B/C conditions, fitting uses
+equal weights over unique observed rows and the same minimum row count
+per leaf; exact repeated records are removed in all conditions. D
+instead uses the lineage weights above and requires distinct lineages
+per leaf. Distinct records sharing an origin therefore remain a
+meaningful test of D. The D--C contrast measures this explicit
+accounting package, including its eligibility and warrant rules, rather
+than a weighting formula alone. Classical learners may use supplied
+lineage facts with their documented methods. The initial penalty
+\(\lambda=0.01\) is an engineering setting requiring development-stage
+justification. Training fit chooses alternatives to test; only
+subsequent observations can support the predictions. Tolerance-expanded
+prediction regions are not asserted to be calibrated confidence
+intervals.
 
 For small tables, enumerate all admissible conditions. Do not withhold
 inexpensive classical computation to manufacture an advantage for TRACE.
@@ -702,26 +779,16 @@ calls/tokens, external actions and total measured cost. If all
 conditions fit within the budget, rankings should coincide and there is
 no search-order advantage to explain.
 
-The \textbf{generation experiment} is distinct. Give TRACE and its
-matched generator control identical raw evidence, extracted records,
-models, call budgets and downstream compilers/action policies. TRACE
-receives the explicit conflict record and the contrast-directed
-generation instruction. The control receives the same source facts and
-the instruction to propose and test explanations, without supplied
-conflict localization or contrast-priority instructions; it is free to
-discover conflicts itself. Differences in the resulting candidate pool
-test the value of supplied structured comparison. B9 provides the
-stronger end-to-end iterative-refinement comparison. To study
-prioritization alone, freeze a candidate pool produced without
-evaluation outcomes and permute only its ordering. Never compare
-different generated pools and attribute the result solely to ordering.
-
-These component experiments are secondary mechanism analyses, with
-paired root-level estimates and intervals reported separately from
-H1--H3. Prespecify any inferential family and multiplicity treatment
-before claiming component superiority. A positive overall H2 result
-supports the evaluated pipeline; it cannot by itself identify the
-contribution of generation, extraction or prioritization.
+The \textbf{generation experiment} in Section 8.2 compares a contrastive
+generator with and without supplied conflict localization. It uses the
+same facts, prediction interface and downstream selector; differences in
+candidate pools concern generation. The ordinary iterative-refinement
+system A is an additional method-level comparator. To study
+prioritization alone, freeze a candidate pool generated without
+evaluator outcomes and change only its ordering. Numerical search
+ordering is a further, separate intervention over a fixed table and rule
+language. A positive pipeline comparison cannot identify which of these
+mechanisms caused an improvement without the corresponding controls.
 
 \subsection{Selecting evidence}\label{selecting-evidence}
 
@@ -816,10 +883,11 @@ A system records claim-specific warrant using these statuses:
 
 These states are not a ladder that turns derivability into truth. A
 compound SNO can contain differently warranted claims. A conditional
-synthesis may be promoted only when scope and measurement are explicit,
-its essential evidence is traceable, and its externally checked
-predictions satisfy a prespecified threshold. That promotion is
-provisional and revisable.
+synthesis may be promoted at runtime only when scope and measurement are
+explicit, its essential evidence is traceable, and independently
+acquired permitted observations meet a prespecified adequacy criterion.
+Sealed benchmark outcomes score the run afterward and never change its
+runtime warrant. That promotion is provisional and revisable.
 
 Warrant is tracked through the evidence/assumption dependency graph, not
 a scalar weakest-link ladder. Derivation preserves its premise
@@ -967,6 +1035,18 @@ measurable factor as \CNSIdentifier{inferred\_unmeasured}, with a measurement
 procedure and a falsifiable prediction. If no action can measure it and
 no justified prediction is available, it remains pending.
 
+\textbf{What would distinguish TRACE here?} Every comparator receives
+the same report spans, workload facts and available measurements.
+Ordinary refinement and the Contrastive Discovery adaptation may
+discover reuse, write fraction or contention without supplied
+localization. TRACE additionally organizes the conflicting latency
+generalizations and their missing-context links; its lineage variant
+accounts explicitly for shared measurement origins. The example
+establishes no advantage. Only a different, valid candidate pool
+followed by stronger sealed predictions at matched cost would support
+the localization hypothesis. Naming the same moderator more fluently
+earns no credit.
+
 Other outcomes follow the same record path. A milliseconds/seconds
 difference yields a validated mapping and an alignment decision, with no
 H2 discovery credit. A p99/median difference yields distinct questions.
@@ -983,200 +1063,360 @@ rule/regression learners. Correct predictive scope need not identify a
 unique causal graph; causal wording requires defensible interventions
 and assumptions.
 
-\section{Three falsifiable
-hypotheses}\label{three-falsifiable-hypotheses}
+\section{Primary question and supporting
+hypotheses}\label{primary-question-and-supporting-hypotheses}
 
-The following are \textbf{proposed} hypotheses, sample sizes and
-effect-size targets. They are not measured effects or a registered
-protocol. The full public specification is at
-\href{https://gtcode.com/guides/trace/evaluation/}{the TRACE proposed
-evaluation page}.
+\textbf{H2 --- Independently predictive discovery (primary).} Does
+explicit conflict localization improve the discovery of measurable
+conditions beyond an established contrastive-discovery adaptation
+receiving the same source facts? The primary comparison is C versus B in
+Section 8. Each system locks its explanatory relationship, parameters
+and final candidate before receiving the five prediction contexts. It
+then applies that fixed candidate to those contexts and commits the
+outputs before any outcome is revealed. All systems receive the same
+context fields from a task dictionary fixed during development; field
+selection must not disclose the correct moderator. New variables require
+an operational mapping to available fields or remain unmeasured. The
+evaluator selects challenge settings before generation, independently of
+each system's proposals. Success requires a source-faithful explanatory
+relationship not explicitly supplied in the packet, a distinguishing new
+prediction, and at least four of five predictions correct under frozen
+tolerances, including every prespecified diagnostic setting needed to
+distinguish the task's principal unconditional alternative. Alignment,
+copying detection and restatement earn no discovery credit. Candidate
+novelty is relative to the initial packet, not a claim of novelty to
+science. A condition may be new even when its variables occur in the
+reports; what must be absent is the explanatory relationship. No credit
+requires guessing an unobservable latent variable. A blinded semantic
+rubric and held-out prediction scoring assess different requirements;
+neither substitutes for the other.
 
-\textbf{H1 --- Contrastive reliability.} Compared with the best
-compliant development-selected baseline, will TRACE more often issue
-warranted answers that preserve semantics under six nuisance changes and
-respond correctly to four relevant changes? The independent root-level
-endpoint requires correct base content and all ten appropriate branch
-relations. The proposed primary population has \(n=2400\) roots and a
-target of \textbf{+5 percentage points} in root-level success. A
-safeguard on 1,800 resolvable cases demands that the lower one-sided
-95\% confidence bound for the coverage difference exceed \textbf{-2
-percentage points}. A positive result explained entirely by abstention
-would not support H1.
+The generation-only study uses a fixed permitted evidence snapshot. A
+variable absent from the measurements can support a conjecture, but
+unsupported assignments cannot manufacture fit or warrant. A case
+needing further measurements remains pending on the static branch;
+discovery following acquisition belongs to the subsequent adaptive
+study. Each positive challenge set must distinguish a plausible
+unconditional alternative; use mixed regimes and boundary settings where
+appropriate, rather than require sign reversals for every mechanism
+family.
 
-\textbf{H2 --- Independently predictive synthesis.} On 1,200
-discovery-eligible roots, will TRACE more often generate a measurable,
-non-circular scope rule, at least one new distinguishing prediction
-absent from the initial narratives, and \textbf{at least four correct
-outcomes out of five withheld predictions}? The target is \textbf{+10
-percentage points} versus a development-selected comparator pool that
-must include the common-extractor learner and iterative refinement
-system. On the other 1,200 roots, the upper one-sided 95\% confidence
-bound for false novel-scope promotion must not exceed \textbf{5\%}. If a
-direct rule learner, regression model, or better-calibrated verifier
-matches TRACE, the distinctive synthesis hypothesis is weakened or
-falsified. H2 tests the proposed synthesis procedure.
+\textbf{H1 --- Reliability (supporting quality measure).} Report
+base-answer correctness, response to nuisance and relevant changes,
+coverage, false promotion and unsupported resolution. A system that wins
+H2 by inventing conditions indiscriminately or refusing difficult cases
+has not established a useful discovery method. Include negative controls
+where no new condition is justified and cases where accessible evidence
+cannot identify the answer. Report denominators and unconditional
+scores; do not select only successful generations for analysis.
 
-For H2, the selected prediction set is locked on the static branch's
-permitted record. An initially unmeasured variable may support a
-hypothetical rival, but cannot earn H2 success without the measurements
-or justified commitments needed to predict all five scoring settings.
-Static and adaptive results are not pooled: synthesis after acquired
-context is a secondary adaptive endpoint, reported beside H3. Alignment
-corrections, duplicate-source accounting and faithful restatement of an
-existing rule do not qualify as novel synthesis. H2 also requires a
-source-linked account of the motivating observations; a frozen, blinded
-rubric assesses fidelity and novelty separately from numerical
-prediction accuracy.
+\textbf{H3 --- Investigation (conditional subsequent study).} Only after
+the representation and generation stages show credible predictive value,
+compare evidence acquisition against Contrastive Discovery, POPPER where
+its statistical assumptions can be met, ordinary experimental design and
+simple random/relevance policies. All receive the same action access and
+costs. The endpoint is an evidence-supported scoped conclusion within
+budget, not the number of self-declared resolved questions. Static and
+adaptive outcomes remain separate.
 
-\textbf{H3 --- Disagreement-guided investigation.} Given the same
-reduced evidence and at most \textbf{three external actions / 12 cost
-units}, will TRACE more often reach the correct scoped conclusion on
-1,800 action-resolvable roots than random, relevance-based,
-uncertainty-only, or further-discussion alternatives? The target is
-\textbf{+10 percentage points}. A 600-root non-identifiable control
-imposes an upper one-sided 95\% bound of \textbf{5\%} on false
-resolution. A secondary action-cost target is 25\% reduction at matched
-accuracy; it cannot replace a failed primary endpoint.
+H2 is the scientific priority. H1-only improvement supports a narrower
+reliability tool; H3-only improvement may support ordinary active
+learning. Neither rescues a failed claim about conflict-conditioned
+discovery. No superiority, fixed effect size or statistical power is
+claimed for the exploratory pilot.
 
-The hypotheses may succeed or fail separately. H1 without H2 would
-support a contrastive verifier rather than a new method of knowledge
-discovery. H3 without H2 could indicate useful active learning based on
-ordinary hypotheses. H2 without credible source tracing and withheld
-evaluation would not establish the claim being made here. No decision is
-rescued by post hoc reweighting of the three endpoints.
+\section{Proposed evaluation design and decision
+gates}\label{proposed-evaluation-design-and-decision-gates}
 
-\section{Proposed evaluation design and
-safeguards}\label{proposed-evaluation-design-and-safeguards}
+\subsection{Development and exploratory
+pilot}\label{development-and-exploratory-pilot}
 
-The controlled study is built around \textbf{independent root worlds},
-not the number of prompts. It proposes 120 engineering fixtures outside
-the scientific evidence; 600 development roots; 600 calibration roots;
-240 pilot roots; and 2,400 confirmatory roots, totaling \textbf{3,840
-new research roots}. Confirmatory cases span eight mechanism families
-with 300 roots each: confounding; effect modification; selection and
-missingness; measurement/representation; regime change; dependent
-reporting; rare/nonlinear interactions; and observational equivalence.
-F7 and F8 are held out from prompt and generator tuning as families,
-with the limitation that pre-trained models may still know the abstract
-concepts. The provisional allocation is 150 discovery-eligible, 75
-direct/rejection and 75 non-identifiable roots per family (1,200/600/600
-overall). These are planning targets pending a target/view feasibility
-audit. For F8, causal graphs can remain observationally equivalent while
-agreeing on the observational prediction scored by H2; that does not
-license causal identification. A root is non-identifiable only if
-accessible evidence/actions leave different answers to its declared
-target possible. Static and reduced adaptive views are certified
-separately. Family labels describe evaluator challenges, not runtime
-routing instructions; a root may require several stages and no operator
-is assumed to solve an entire family. Eligibility is certified
-separately for static predictive synthesis and adaptive resolution. If
-the proposed cells cannot be constructed without shortcuts, revise the
-allocation, denominators and dependent arithmetic before registration
-rather than forcing the uniform grid.
+Start with \textbf{12--20 manually inspected development cases}. Include
+genuine same-estimand conflicts, apparent unit/measurement differences,
+copied sources, asymmetric missing context, an unstated measurable
+condition and non-identifiable alternatives. Use the eight mechanism
+families as a coverage taxonomy, not a forced equal-size factorial grid.
+Experts must check whether the target is identifiable from each
+permitted evidence view and whether the five withheld settings can
+distinguish a plausible wrong rule. A realistic source packet may
+contain several issues at once.
 
-Each root supplies one base presentation, six nuisance branches and four
-relevant-change branches: \textbf{11 static presentations per root}. An
-adaptive action branch starts from a fresh state and may reveal
-permitted measurements; it is separate from the static evaluations.
-Repeated branches, different prompt orderings and model seeds do not
-create additional independent worlds. Gold transformations are
-established by generator checks and independent review before the test.
-Invalid contracts discovered later are disclosed, not silently removed.
+Then freeze the extractor, models, prompts, schemas, candidate limits,
+tolerances, costs, adjudication rubric and scoring process for a
+separate \textbf{30--60-case exploratory pilot} with unseen outcomes and
+disjoint generating episodes/source clusters. These counts diagnose
+feasibility; they are not powered sample sizes for a superiority claim.
+Include eligible discovery cases and prespecified
+no-discovery/non-identifiable controls; publish their actual counts and
+uncertainty separately. Eligibility is fixed before any system runs; all
+eligible cases remain in the H2 denominator, including abstentions,
+invalid outputs and missing predictions. Control strata have their own
+denominators. Case selection must not depend on TRACE succeeding or
+competitors failing. Family labels and eligibility certificates remain
+evaluator-only.
 
-Ten systems are proposed: strong retrieval-augmented generation (B1);
-RAG plus chain-of-verification (B2); RAG with self-consistency (B3); an
-operational interpretation of the focal essay's multi-context sketch
-(B4); a grounded/provenance-aware extension of that sketch (B5);
-grounded debate (B6); a transparently documented operational subset of
-CNS 8.0 (B7); a common-extractor ordinary learner (B8); a documented
-iterative hypothesis-refinement adaptation (B9); and TRACE. B4 and B5
-are \textbf{our documented operationalizations} of Lopez-Paz's
-inference-time sketch, not implementations provided by its author. They
-do not represent an exhaustive implementation of the essay's broader
-philosophical program. Comparisons against them assess these particular
-procedures under the stated budgets. B7 must list omissions and cannot
-stand for all possible CNS 8.0 systems. B8 and B9 are required primary
-H2 comparator candidates. The B8 mechanism comparison shares a fixed
-pre-action extraction result and charges extraction to every system;
-end-to-end results are also reported. TRACE may propose new measurable
-variables under Section 4.3. Shared-extraction comparisons freeze their
-common input view; end-to-end comparisons permit different extraction
-and acquisition paths with the same source evidence, action menu and
-total budget. Report both rather than attributing an end-to-end gain
-solely to reasoning. B9 uses the same evidence and budget, with its
-adaptation to this task disclosed \citep{R37, R38}. Section 4.4
-separates generation, candidate prioritization and numerical
-search-order controls; their paired root-level estimates are reported
-separately from the three primary tests. Seven ablations remain
-secondary controls. A positive primary H2 result alone cannot establish
-which stage caused the gain. Noncontradictory controls must not remove
-relevant facts merely to weaken the alternative.
+All development and pilot cases produce the common records in Section
+4.1. Repeated prompts, five predictions, source copies and model seeds
+are not independent research cases. Pilot revisions require fresh cases
+for a subsequent evaluation. No benchmark data, pilot or implementation
+has yet been produced.
 
-Fairness requires identical accessible evidence, action menus and
-effective compute ceilings, not identical rhetoric or forced token
-spending. The proposed budget is at most 120,000 input and 30,000 output
-tokens per system-root: eleven static branches at 8,000/2,000 apiece,
-and one adaptive branch at 32,000/8,000. Each system has at most three
-adaptive actions costing at most 12 units. The primary comparator for
-each hypothesis is selected using \textbf{development data only} and
-frozen before final evaluation. Two model families and two seeds are
-suggested as replications; a prespecified one-family/one-seed
-configuration anchors the primary comparisons, and repeated roots are
-analyzed as clusters.
+\subsection{Identical facts, different evidence
+organization}\label{identical-facts-different-evidence-organization}
 
-The proposal allocates a familywise alpha of 0.05 across three primary
-comparisons (Bonferroni, two-sided \(\alpha=0.05/3\)), paired root-level
-exact McNemar tests, and \textbf{98.333\%} effect intervals estimated by
-a frozen paired bootstrap; a paired-score interval is sensitivity
-analysis. Primary claims require both the adjusted exact test and the
-frozen bootstrap lower bound to support a positive effect, plus their
-safeguards; a test/interval disagreement is reported as inconclusive,
-not resolved by choosing the favorable result; reaching a point target
-is descriptive unless its adjusted lower confidence bound also exceeds
-that target. Absolute 5\% false-promotion/false-resolution limits are
-retained, not relaxed to match a weak baseline; their interval method
-and attainability under the actual sampling design must be frozen. H1
-keeps one strict primary endpoint with required unconditional component
-diagnostics; any non-degradation margins are pending. H2 challenge sets
-must distinguish plausible rivals by task, not impose sign reversals on
-every family. H3 requires sufficient acquired evidence for its target,
-not merely a lucky correct guess or a prescribed action. Menus and costs
-must be checked for hidden-answer cues. Approximate power calculations
-assume a particular discordance rate and are \textbf{not} guarantees of
-statistical power. All numeric choices remain changeable \textbf{before}
-registration, with a visible versioned amendment history; they may not
-change after viewing confirmatory outcomes without breaking the primary
-claim.
+The common-input study freezes source-linked questions, measurements,
+missingness, report text and available lineage facts. An evaluator may
+certify targets but must never supply the true moderator or causal
+mechanism to runtime. All systems can inspect the same original spans
+and infer their own conflicts or dependencies.
 
-Transfer tests are proposed, not executed: 900 source-clustered groups
-across FEVER, SciFact and AVeriTeC; 60 eligible DiscoveryBench tasks;
-and 240 prospective caching/workload scenarios. The caching design calls
-for 12 settings per scenario, two cache conditions and three repeats,
-yielding \textbf{17,280 planned executions}. Measurements for five
-withheld settings would be collected after predictions are locked.
-Benchmark labels about document support, fact checking and inferred data
-relationships are not interchangeable certificates of external truth.
-All study phases require secure runtime/evaluator separation,
-source-cluster splits, prediction hashes, frozen inference settings,
-deterministic scoring where possible, and independent review of semantic
-edge cases.
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+System
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Proposed operation on the common evidence
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A & Strong iterative hypothesis refinement, with an additional
+counterexample-prompting variant; adapted from established
+hypothesis-refinement methods \\
+B & Contrastive Discovery adaptation: explicit alternative explanations;
+generation and scoring documented against the original method \\
+C & Same scaffold as B, augmented with a generated conflict-alignment
+record and conflict-directed generation; common row-based fitting and
+warrant rules \\
+D & Same as C plus explicit dependence-aware weighting and warrant
+accounting from the available lineage facts \\
+\end{longtable}
 
-A failure analysis is part of the design. Leakage of hidden labels, post
-hoc tolerance changes, source duplication across splits, or inability to
-reproduce the scorer invalidate a confirmatory claim. Excessive
-abstention, arbitrary invented predicates, harms from extra model calls,
-or gains achieved only against intentionally weak controls count against
-TRACE. The prospective scenario-level estimand is conditional on its
-service configuration, with hardware/day/carryover blocks; 240 workloads
-are not 240 independent mechanisms. Broader transfer claims require
-multiple independently defined regimes and an analysis appropriate to
-the number of clusters. A synthetic success without prospective transfer
-would support at most a narrower benchmark result, not generalized
-scientific discovery. An optional future feasibility study may diagnose
-extraction, scoring and acquisition bottlenecks before scaling; no small
-fixed effect threshold is claimed decisive and no experiment is
-scheduled by this proposal.
+\textbf{C versus B is the primary comparison.} Both propose explicit
+rival explanations. C receives an additional generated conflict record
+and conflict-directed instruction; B may identify conflicts itself. Hold
+the model, source packet, proposal capacity, prediction interface and
+final selector fixed. This measures the localization package, not the
+isolated effect of a single field or instruction. A matched auxiliary
+condition gives B an equally budgeted source-summary call, using the
+same evidence without instructions to localize conflicts. It tests
+whether extra preprocessing explains an apparent gain. All preprocessing
+consumes the common resource ceiling.
+
+\textbf{Common selection.} After structural validation, a shared
+selector receives source evidence and candidate predictions/assumptions,
+with system identity, conflict IDs and generation order hidden. Order
+candidates by coverage of observed contexts without invented values,
+then fewer unsupported assumptions, then canonical candidate ID. Within
+the numerical form, apply the same training-loss criterion and row
+weights. This selector uses no test outcomes or localization-specific
+score. It can select an unresolved result. Log candidate-pool quality
+separately from the selected-candidate endpoint. The full TRACE ranking
+in Section 4.3 is tested separately.
+
+\textbf{Comparator fidelity.} B is a static adaptation of contrast-set
+generation to a fixed evidence snapshot. It does not reproduce
+Contrastive Discovery's adaptive search, and the common selector
+replaces its native scoring for this mechanism experiment. Its
+alternative set should cover a declared question with disjoint
+explanations; log incomplete or overlapping coverage. An explicit
+residual explanation means none of the specified explanations applies;
+uncertainty about which explanation holds is a separate decision state.
+Neither makes an arbitrary set logically exhaustive.
+
+\textbf{Transfer to an existing discovery method.} Compare the same
+capable discovery implementation with and without generated TRACE
+conflict records. Preserve its native hypothesis generation, belief
+scoring, search, revision and stopping rules; the intervention supplies
+source-linked localization and instructions for using it, not TRACE's
+selector or rule compiler. Both conditions receive identical source
+facts and access to the same analysis service. Include an equally
+budgeted source-summary condition. Charge extraction, localization,
+elicitation, failed attempts and analysis to a common resource ceiling
+established during development that permits the native workflow to
+operate. Record any interface changes and pin code, prompts and model
+versions. Sealed outcomes remain inaccessible to all search tools. At
+the budget boundary, lock each method's selected explanation and use the
+same outcome-blind prediction interface and held-out scoring; report
+this external endpoint separately from native belief-based resolution.
+
+Contrastive Discovery is the closest contrastive comparator, but its
+author page lists code as forthcoming. A paper-based implementation must
+be labeled a reproduction attempt, with unresolved fidelity differences
+disclosed. AutoDiscovery offers a released implementation for a
+complementary transfer comparison; its current defaults differ from its
+paper and must not be presented as the original experimental
+configuration. Report either comparison separately from static C--B, and
+report adaptive evidence acquisition separately from fixed-evidence
+analysis. Belief scores are not correctness labels. If the native
+procedure cannot operate within the task interface, disclose the
+incompatibility. A static C--B gain supports that scaffold-specific
+intervention; evidence for a transferable component requires improvement
+within an existing method with its native scoring and search preserved.
+
+\textbf{D versus C tests lineage handling}, not the benefit of giving D
+extra source facts. Both receive identical lineage metadata; C can
+reason about it ordinarily, while D applies explicit accounting. In the
+controlled compiler, B/C use row-based fitting and D uses the
+lineage-aware fitting and eligibility rules in Section 4.4. The
+comparison therefore isolates the accounting package, not an information
+advantage. A full two-by-two localization/lineage factorial can be added
+if interaction is itself a research target. Without that factorial, D--C
+is conditional on localization and cannot establish an independent main
+effect of lineage.
+
+The common-input experiment tests evidence organization on a frozen,
+source-faithful extraction. Because that extraction may favor some
+methods, its errors and construction procedure must be disclosed. Also
+run an equal-access end-to-end comparison in which extraction and
+localization are generated separately for each method and all their
+costs/errors count. Common-input records produced by TRACE must not
+contain its inferred answer. Human-corrected conflict records are an
+oracle diagnostic reported separately, never the primary result. Freeze
+provenance of every field so an apparent algorithmic advantage cannot
+conceal additional information.
+
+Retain an ordinary common-extractor rule/tree/regression learner (B8),
+with exhaustive search when inexpensive. It tests whether tabular
+learning explains any gain. A and B should receive serious development
+tuning, the same evidence and comparable tuning resources; the
+counterexample-prompting control tests whether a simple instruction
+captures the effect. Prior RAG, verification, debate, AAL-sketch and
+CNS-subset comparators are optional diagnostics rather than a mandatory
+ten-system first study. Our AAL implementations remain
+operationalizations of Lopez-Paz's sketch, not author-released systems.
+
+\subsection{Outcomes, budgets and causal
+attribution}\label{outcomes-budgets-and-causal-attribution}
+
+Score the final locked candidate per case, all five predictions, and all
+invalid or missing outputs. Report the H2 success proportion, prediction
+loss, source-fidelity errors, new measurable candidate yield,
+false-condition promotion, unsupported resolution, coverage and actual
+cost. Log every proposed candidate before selection so a predictive gain
+can be distinguished from more proposals or better selection. Candidate
+equivalence is judged through variable definitions, relationships and
+predicted consequences rather than different prose alone; adjudicators
+are blinded to system identity and disagreements are retained. For
+continuous targets, the primary correctness score uses a point
+prediction and a tolerance fixed from the measurement design; each
+candidate cannot choose its own acceptance width. For categorical
+targets, require one category. Optional uncertainty intervals are scored
+separately with a width-sensitive rule, and probabilistic forecasts with
+an appropriate proper score. Wide intervals and multiple guesses cannot
+satisfy the primary prediction gate. Specify how noisy repeated
+measurements form the target estimate before unblinding.
+
+Two independently blinded reviewers apply the source-fidelity and
+packet-relative novelty rubric to candidate records. Resolve
+disagreements with a third reviewer and report initial agreement and
+unresolved cases. Human decisions never return to runtime. On the small
+pilot, inspect all cases rather than extrapolate from a favorable
+subset. Outcome scoring uses the frozen executable rule wherever
+possible.
+
+For TRACE and the controlled B/C scaffold, start with one shared
+extraction, one preprocessing call per condition, up to eight proposals,
+one structural repair and at most four active rivals. The common
+selector is also charged. Faithful iterative or adaptive method-level
+competitors may divide the same total budget differently. For the pilot,
+propose a common per-case ceiling of 16,000 input and 4,000 output
+tokens across all static stages, including extraction, localization and
+repair. Context packing must preserve the same evidence across systems;
+if this is infeasible, change the setting during development, then
+freeze it. Report usage rather than require waste to equalize totals.
+Measure CPU time for ordinary learners and model tokens, calls and
+latency for every method. Generated localization consumes the common
+budget; an oracle-localization result is a separate diagnostic.
+
+Freeze one model/version and seed for the exploratory primary
+configuration; additional seeds are paired sensitivity runs. In
+candidate-generation comparisons, common compilation and scoring follow
+generation. In prioritization diagnostics, freeze the candidate pool and
+vary only ranking. In numerical search-order diagnostics, freeze the
+extracted table and rule language, compare contrast order, seeded
+permutation and exhaustive enumeration, and report the complete cost
+curve. These are different interventions.
+
+\subsection{Interpretation and stop
+decisions}\label{interpretation-and-stop-decisions}
+
+Report paired case-level differences and uncertainty, errors by case
+type, all exclusions and the full candidate/commitment records. The
+pilot is exploratory: neither a favorable p-value nor four correct
+predictions in one case demonstrates scientific superiority. State the
+sampled population and source clustering before selecting an interval
+method; avoid a nominal precision calculation that treats related
+packets as independent. Do not infer equivalence from a nonsignificant
+difference.
+
+Proceed through four gates: \textbf{representation}, can claims, scope
+and lineage be extracted without unsupported values;
+\textbf{generation}, does localization produce different measurable
+candidates from B; \textbf{prediction}, do those candidates improve
+sealed predictions without unacceptable false promotion or coverage
+loss; \textbf{cost and transfer}, does the pattern survive metered
+budgets and genuinely different case construction? Publish paired
+estimates at every gate. Gates guide continuation, not post hoc
+filtering of reported failures. If candidate content and frequency are
+similar but selection improves, investigate selection as the mechanism.
+If neither candidate yield nor sealed prediction shows useful change,
+stop scaling until a concrete repair warrants fresh cases. A small
+inconclusive pilot warrants an uncertainty assessment, not a declaration
+that the methods are equivalent.
+
+Before a confirmatory study, choose a smallest worthwhile effect and
+safety margins with domain justification; estimate paired discordance
+and source clustering from development/pilot data; then select a sample
+size with power and sensitivity calculations. Freeze the primary C--B
+comparison, its independent unit, valid interval/test, treatment of
+invalid outputs and multiplicity family. D--C and other comparisons
+remain secondary unless additional error control is specified. The pilot
+cannot certify a 5\% false-promotion ceiling on a small control stratum.
+Report exact counts and sampling-appropriate uncertainty instead of
+treating absence of observed errors as safety.
+
+Stop or reduce the proposal if ordinary refinement or contrastive
+discovery produces equivalent candidates and predictions at lower cost,
+if localization mainly inserts unsupported assumptions, or if all
+benefit is extraction/deduplication. A useful benchmark or reliability
+tool would require its own contribution argument; neither is an
+automatic consolation prize. If prior work already specifies the same
+operational distinction, withdraw the methodological claim rather than
+add machinery to protect it.
+
+\subsection{Conditional extensions}\label{conditional-extensions}
+
+A later H3 study may use the same three-action/12-cost-unit engineering
+ceiling, but must define action costs and identifying evidence
+independently of the hidden answer. A faithful POPPER comparison
+requires valid test statistics and implication checks; when these are
+unavailable, disclose incompatibility and report only a labeled
+falsification-style adaptation without inheriting its statistical
+guarantee. Compare full search policies separately from experiments that
+hold the candidate pool fixed. TRACE's set-separation score is a
+heuristic, not sequential error control.
+
+Larger synthetic studies across F1--F8, source-clustered verification
+panels, DiscoveryBench and prospective caching measurements remain
+possible extensions \citep{R25, R26, R27, R28}. ConfRAG is an additional
+conflict-reasoning diagnostic, not a substitute for predictive discovery
+\citep{R44}. Sample sizes and execution counts for these extensions
+require a separate design after feasibility is established. A
+prospective study must first specify service regimes,
+hardware/day/carryover blocks, withheld measurement collection after
+commitment and uncertainty at the independent regime level. Workload
+seeds and repeated requests do not establish independent mechanisms.
+
+All phases require sealed evaluator outcomes, source-cluster separation,
+immutable prediction commitments and publication of failures. Runtime
+receives only permitted records and measurement results, never gold
+mechanisms, eligibility labels or evaluator judgments. Leakage, changed
+tolerances after unblinding or source overlap invalidate confirmatory
+interpretation.
 
 \section{Relationship to earlier CNS and design
 choices}\label{relationship-to-earlier-cns-and-design-choices}
@@ -1203,7 +1443,7 @@ revisions, rival interpretations, and the ability to construct a
 conditional new account. It revises the meaning of productive conflict:
 shared target, explicit evidentiary relationships and \textbf{testable
 differences in predictions} matter more than a single combined chirality
-score. The previous literature's use of ``Evidential Entanglement''
+score. The previous literature's use of ``Evidential~Entanglement''
 conflated at times shared evidence identifiers with comparable study
 endpoints; TRACE records semantic comparability, shared records and
 source copying independently \citep{G09}.
@@ -1285,25 +1525,22 @@ contradiction hides a discoverable conditional truth.
 \section{Research agenda and
 conclusion}\label{research-agenda-and-conclusion}
 
-The first implementation should follow Sections 4.1--4.6 and provide a
-benchmark that separates runtime observations from evaluator answers.
-The generator, action service and scorer must enforce that separation. A
-second gate tests whether novel scope rules predict hidden observations
-better than selection, verification and simple induction. A third
-evaluates whether choosing discriminating actions changes what the
-system can legitimately conclude. Only after these gates should
-training, learned contract discovery, more elaborate geometry or broader
-causal claims be considered.
+The immediate work is a faithful representation and comparator exercise
+on a small development set, followed by a frozen exploratory pilot.
+Sections 4.1--4.6 define interfaces for that exercise; they do not
+require a production agent platform before the central comparison can be
+examined. Expert review should challenge source fidelity, comparator
+adaptations and case identifiability before more resources are
+committed.
 
-TRACE tests whether structured comparison of conflicting accounts helps
-produce explanations with independent predictive value. Its records
-connect source claims and localized disagreements to generated
-candidates, required measurements, committed predictions and final
-warrant. The evaluation separates whole-pipeline performance from the
-contributions of extraction, generation, prioritization and acquisition.
-Evidence of an advantage would support the tested procedure in the
-stated settings; comparable performance from simpler methods would limit
-the case for using it.
+TRACE asks whether localized disagreement between documented accounts
+adds predictive value beyond existing contrastive and abductive
+discovery methods. The common records and controlled comparisons specify
+what evidence would answer that question. A contribution requires
+demonstrated incremental value and adequate differentiation from prior
+work. If the primary comparison fails, the appropriate outcome may be a
+simpler reliability tool, a separately justified benchmark, or
+retirement of the proposed method.
 
 \section{Citation and version note}\label{citation-and-version-note}
 

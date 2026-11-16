@@ -18,14 +18,15 @@ ai_agent_note: |
   between proposed hypotheses, hypothetical illustrations, and experimental results.
 ---
 
-**Research proposal · Version 0.1 · 15 November 2026.** TRACE tests whether structured comparison of conflicting accounts improves explanatory discovery. Its four stages align questions, account for source dependence, generate rival explanations and investigate committed predictions. Shared records connect every stage to the proposed evaluation. No TRACE implementation or experimental results are reported.
+**Research proposal · Version 0.1 · 15 November 2026.** TRACE asks whether explicit source-conflict localization improves predictive discovery beyond established contrastive and abductive methods. Its four stages align questions, account for source dependence, generate rival explanations and investigate committed predictions. Shared records connect every stage to the proposed evaluation. No TRACE implementation or experimental results are reported.
 
 Start with the [illustrated overview](/guides/trace/overview/), then read the [full research paper](/papers/trace/) and [proposed evaluation specification](/guides/trace/evaluation/).
 
 ## Paper and research materials
 
-- [Research paper (PDF, 22 pages)](/papers/trace/trace-research-proposal.pdf)
+- [Research paper (PDF, 27 pages)](/papers/trace/trace-research-proposal.pdf)
 - [Reproducible LaTeX source (ZIP)](/papers/trace/trace-latex-source.zip)
+- [Prior-art audit](/papers/trace/prior-art-audit.md) and [contribution matrix](/papers/trace/contribution-matrix.md)
 - [Cross-case record schema (JSON)](/papers/trace/trace-records.schema.json)
 - [Proposed evaluation protocol (YAML)](/papers/trace/proposed-evaluation-protocol.yaml)
 - [Paper citation (BibTeX)](/papers/trace/trace-citation.bib)

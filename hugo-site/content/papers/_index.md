@@ -20,11 +20,11 @@ structured_data_webpage:
 
 **[TRACE: Contrast-Guided Discovery from Conflicting Accounts](/papers/trace/)**
 
-An unvalidated research proposal for turning conflicting accounts into measurable explanations, committed predictions, and discriminating evidence acquisition. Includes three falsifiable hypotheses and a proposed, unregistered evaluation; no TRACE experiments or demonstrated improvements are reported.
+An unvalidated research proposal for turning conflicting accounts into measurable explanations, committed predictions, and discriminating evidence acquisition. Makes predictive discovery primary, with a small exploratory pilot and direct contrastive-discovery comparisons; no TRACE experiments or demonstrated improvements are reported.
 
 - **Date:** November 15, 2026 · **Version:** 0.1
 - **Read:** [Illustrated overview](/guides/trace/overview/) · [Proposed evaluation](/guides/trace/evaluation/)
-- **Download:** [Paper PDF (22 pages)](/papers/trace/trace-research-proposal.pdf) · [LaTeX source](/papers/trace/trace-latex-source.zip)
+- **Download:** [Paper PDF (27 pages)](/papers/trace/trace-research-proposal.pdf) · [LaTeX source](/papers/trace/trace-latex-source.zip)
 
 ---
 

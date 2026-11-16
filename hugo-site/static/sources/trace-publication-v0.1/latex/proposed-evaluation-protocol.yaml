@@ -1,0 +1,291 @@
+# Proposed design only; no study performed.
+title: 'TRACE: source-conflict localization and independently predictive discovery'
+publication_version: '0.1'
+design_version: '0.1'
+prepared: '2026-11-15'
+status: Proposed, unimplemented, unregistered and unexecuted
+primary_question: Does supplied conflict localization improve candidate generation and sealed prediction beyond
+  established contrastive discovery with the same facts and resources?
+independent_unit: Disjoint generating episode or source cluster; branches, predictions, seeds and source copies
+  are not new independent cases
+phases:
+  development:
+    case_range:
+    - 12
+    - 20
+    purpose: Inspect representation, identifiable targets, controls and comparator fidelity
+  exploratory_pilot:
+    case_range:
+    - 30
+    - 60
+    purpose: Frozen methods on unseen cases and outcomes; feasibility and paired effect estimation only
+    discovery_negative_nonidentifiable_counts: Determine during development and freeze before pilot; report every
+      denominator separately
+  confirmation:
+    sample_size: null
+    status: Conditional on pilot; justify power, clustering, worthwhile effect, safeguards and multiplicity independently
+  adaptive_H3:
+    status: Conditional subsequent study; do not pool with static H2
+  transfer:
+    status: Conditional; no fixed scenario count or execution grid
+hypotheses:
+  H2:
+    role: primary
+    comparison: C minus B
+    endpoint: Final source-faithful relationship absent from packet; >=4/5 predictions correct including all prespecified
+      diagnostic settings
+    novelty_scope: Initial source packet, not science-wide priority
+    missing_measurements: No invented values; pending cases score no static discovery success
+    target_settings: Lock relationship, parameters and final candidate before revealing prediction contexts; same
+      task dictionary, no answer-selective fields; lock predictions before outcomes
+    denominator: All evaluator-certified eligible cases fixed before runs, including abstentions and invalid/missing
+      predictions; separate control denominators
+    prediction_scoring: Point prediction with evaluator-fixed tolerance or single category; intervals/probabilities
+      scored separately, never broaden primary acceptance
+    adjudication: Two blinded reviewers, third for disagreements; report initial agreement and unresolved cases;
+      no feedback to runtime
+  H1:
+    role: supporting quality measures
+    metrics:
+    - base correctness
+    - nuisance/relevant response
+    - coverage
+    - false-condition promotion
+    - unsupported resolution
+  H3:
+    role: conditional subsequent investigation
+    endpoint: Evidence-supported scoped conclusion within action and cost budget
+    required_comparators:
+    - Contrastive Discovery adaptation
+    - POPPER when implication/conditional-validity assumptions can be met
+    - ordinary experimental design
+    - random and relevance policies
+systems:
+  A: Strong iterative hypothesis refinement; simple counterexample-prompting variant
+  B: Contrastive Discovery adaptation
+  C: B scaffold with generated conflict record and conflict-directed generation; common neutral lineage treatment
+  D: C plus explicit dependence-aware weighting and warrant accounting
+  B8: Common-extractor ordinary rule/tree/regression learner, exhaustive when inexpensive
+comparison_design:
+  primary: Static C versus B, with shared source snapshot, model, proposal capacity, row weights and blinded common
+    selector; effect of localization record plus instruction
+  lineage: D versus C with identical metadata. B/C row weights and minimum rows; D lineage weights, distinct-lineage
+    eligibility and warrant accounting. Conditional package effect.
+  method_fidelity: Report faithful method-level comparator separately if shared scaffold omits essential published
+    method components
+  information_control: All have original spans, shared extracted facts and lineage metadata; no true moderator,
+    mechanism or eligibility labels
+  oracle_localization: Human-corrected records only as separately labeled diagnostic
+  end_to_end: Independent extraction/localization, equal source access, errors and costs charged
+  candidate_ordering: Fixed pool, vary ranking only
+  numerical_ordering: Fixed table/language, contrast order versus seeded permutation and exhaustive search
+  factorial: Add full localization x lineage factorial if interaction/main effects become targets
+  static_B: Contrast-set generation adapted to fixed evidence; common selector replaces native scoring. No claim
+    to reproduce or outperform published adaptive search.
+  faithful_B: Native-method comparison with and without generated localization and equal-budget summary control;
+    retain scoring/search and report separately. See native_method_transfer.
+  common_selector: Hide system identity, conflict IDs and proposal order. Rank source-context coverage without invented
+    values, then fewer unsupported assumptions, then canonical ID. Shared numerical training criterion. No sealed
+    outcomes.
+  preprocessing_control: Equally budgeted source-summary call for B; C uses its call for localization; all costs
+    included
+  partition_semantics: Residual explanation and unresolved epistemic state are distinct; log overlapping/incomplete
+    partitions
+pilot_budgets:
+  input_tokens_per_case: 16000
+  output_tokens_per_case: 4000
+  scope: All static extraction, preprocessing, generation, repair and common selection; faithful method-level competitors
+    can allocate calls differently
+  external_actions: 0
+  primary_models: 1
+  primary_seeds: 1
+  usage: Meter actual calls, tokens, CPU time, latency and costs; no forced spending
+later_action_ceiling:
+  actions: 3
+  cost_units: 12
+  status: Engineering starting setting for conditional H3, not guaranteed optimal
+pilot_analysis:
+  status: Exploratory, no superiority claim
+  report:
+  - paired root-level effects and sampling-appropriate uncertainty
+  - actual positive/control denominators
+  - all predictions and invalid outputs
+  - candidate equivalence with blinded adjudication
+  - fidelity, coverage, false promotion and cost
+  - source-cluster dependence and exclusions
+  limitations:
+  - No equivalence from nonsignificance
+  - No 5% safety certification from small error-free control stratum
+  - No post hoc pooling of adaptive/static or seeds as independent cases
+  confirmatory_fields_pending:
+  - estimand and sampling frame
+  - minimum worthwhile effect and quality margins
+  - paired discordance and cluster-aware power
+  - sample size
+  - primary comparison and multiplicity
+  - valid interval/test and handling of invalid outputs
+  generation_gate: If candidate yield is unchanged but selection improves, test selection. Inconclusive small-pilot
+    results do not establish equivalence.
+gates:
+- representation without invented values
+- different measurable candidates versus B
+- sealed predictive value without quality loss
+- cost and fresh case construction
+stop_or_reduce:
+- No useful localization effect
+- Unsupported conditions dominate
+- Gain fully explained by extraction or deduplication
+- Prior work already covers operational distinction
+families:
+- F1 confounding
+- F2 effect modification
+- F3 selection/missingness
+- F4 measurement/representation
+- F5 regime change
+- F6 dependent reporting
+- F7 rare/nonlinear interactions
+- F8 observational equivalence
+family_use: Coverage taxonomy; no equal-size allocation. Certify target/view identifiability without runtime labels.
+freeze_requirements:
+- exact models and prompts
+- all source packets/licenses and disjoint splits
+- candidate and repair limits
+- comparator fidelity and adaptation details
+- field-level provenance and localization cost
+- five prediction settings, tolerances and novelty rubric
+- independent units and denominators
+- quality margins and analysis plan appropriate to study phase
+- sealed evaluator and immutable commitments
+prior_art_audit: https://gtcode.com/papers/trace/prior-art-audit.md
+contribution_matrix: https://gtcode.com/papers/trace/contribution-matrix.md
+method:
+  specification: paper_sections_4_1_through_4_6
+  stages:
+  - alignment
+  - lineage_accounting
+  - rival_generation
+  - investigation_and_warrant
+  record_schema: https://gtcode.com/papers/trace/trace-records.schema.json
+  variable_provenance:
+  - observed_shared
+  - observed_asymmetric
+  - inferred_unmeasured
+  extraction_calls: 1
+  generation_calls_per_round: 1
+  schema_repair_calls_per_round: 1
+  proposals_per_round: 8
+  active_candidates: 4
+  static_rounds: 1
+  adaptive_rounds: 2
+  candidate_forms:
+  - interpreted_expression
+  - conditional_rule
+  - action_specific_commitment
+  - pending_prediction
+  prediction_expression_operators:
+  - constant
+  - variable
+  - add
+  - subtract
+  - multiply
+  - divide
+  - lt
+  - le
+  - eq
+  - and
+  - if
+  variable_growth: Allowed with source or conjecture provenance and explicit measurement dependencies; never impute
+    missing observations from explanatory convenience.
+  prioritization:
+  - localized_incompatibility
+  - supported_context_coverage
+  - fewer_new_assumptions
+  - canonical_candidate_id
+  prompts: Paper section 4.3; comparator adaptations in section 8.2; serialized templates frozen before exploratory
+    pilot
+  semantic_adjudication: Blinded frozen fidelity and novelty rubric; never feedback to runtime.
+  independence: Distinct origins are not a statistical independence certificate.
+  priors: Conflict localization is a proposed generation aid, not a calibrated truth prior
+  localization_calls: 1
+  localization_instruction: Cite observed incompatibilities and missing context; preserve unknowns, propose no explanatory
+    condition
+  comparison_override: Controlled B/C use shared selector and row-based compiler; full TRACE ranking and lineage
+    accounting tested separately
+contracts:
+  integrity: Restricted representation/evidence-integrity checks with validated preconditions; semantic cases can
+    remain unknown.
+  rival_response: Hypothesis-indexed response prediction, not a truth/admissibility oracle.
+  evaluator: Sealed gold target/response relation used only after output commitment.
+  evidence_deletion: No universal monotonic confidence rule; preserve support and defeat paths.
+acquisition_policy:
+  type: proposed deterministic normalized pairwise set separation per positive cost
+  prediction_region: Comparable outcome region after frozen tolerance/noise expansion exactly once
+  candidate_set: Deduplicated with frozen normalization; residual duplicates audited
+  eligibility: At least two live comparable candidates, all providing admissible predictions for the action
+  missing_prediction: Action unscorable; logged, not silently dropped from pair denominator
+  zero_cost: Common initial lookup evidence, excluded from positive-cost acquisition scoring
+  tie_break: Stable action ID assigned independently of hidden mechanism
+  no_positive_score: no_separating_action; never implies resolution
+  limitations: Not optimal information gain or logical refutation of stochastic models; may miss useful overlapping/repeated/multivariate
+    observations
+  action_menu: Public and equal; audit names/costs/outcomes for answer cues, including menu-only controls
+  prerequisite_measurements: When all-candidate separation is unscorable because of missing dependencies, choose
+    the lowest-cost permitted measurement supplying an explicit dependency; ties by candidate priority then stable
+    action ID. Same total action budget; log purpose as data completion, not information gain.
+candidate_failure_policy:
+  all_inadequate: Reopen only within fixed candidate/round/action budget; otherwise unresolved/model-inadequate.
+    Never promote least-bad failed candidate.
+  adequacy: Noise-aware thresholds and sequential/stopping rules pending freeze; an interval tail event is not automatic
+    falsification.
+  warrant: Dependency-aware support/defeat graph, not a scalar weakest-link ladder.
+numerical_compiler:
+  scope: One Stage-C candidate compiler, not the full architecture
+  rule_language: constant_or_two_constants_split_by_one_or_two_predicates
+  minimum_measurement_lineages_per_leaf: 2
+  numeric_thresholds: observed_midpoints
+  fit: equal_lineage_weighted_least_squares
+  target_scale: declared_positive_per_question
+  predicate_penalty_initial: 0.01
+  penalty_status: development_justification_and_freeze_required
+  small_table_policy: exhaustive_search_when_affordable
+  missing_cells: requires_measurement_no_silent_complete_case_selection
+  search_order_diagnostic_prefix: 64
+  prefix_scope: high_dimensional_distractor_cases_with_budget_curves_not_a_B8_cap
+  outputs_outside_supported_domain: unknown
+  comparison_weights: B/C equal unique-row weights and minimum rows; D lineage weights and minimum distinct lineages;
+    exact duplicate records collapsed for all
+claims_not_made:
+- experimental validation
+- completed TRACE implementation
+- empirical superiority
+- guaranteed truth
+- universal OOD generalization
+- exhaustive novelty
+- preregistered study
+- current vendor pricing
+readiness: Conceptual publication only; comparator implementations, data and statistical choices remain unexecuted
+canonical_protocol_page: https://gtcode.com/guides/trace/evaluation/
+native_method_transfer:
+  purpose: Test whether generated conflict localization improves an existing capable discovery method, separately
+    from controlled static C-B.
+  conditions:
+  - Native discovery method with original evidence
+  - Same native method plus generated conflict records and usage instruction
+  - Same native method plus equally budgeted source summary
+  preserve:
+  - hypothesis generation including conditional explanations
+  - native belief scoring and search
+  - revision and stopping rules
+  controls: Same source facts and analysis access; no TRACE selector/compiler substitution; no sealed outcomes accessible
+    to tools; charge all preprocessing, elicitation, failed attempts and analyses.
+  budget: Set a common ceiling during development that accommodates native operation; do not automatically impose
+    the static pilot token ceiling on adaptive search.
+  endpoint: Lock native selected explanation at budget boundary; same outcome-blind prediction interface and sealed
+    scoring. Report native resolution separately.
+  implementations:
+    Contrastive_Discovery: Author code listed forthcoming; any paper-based implementation labeled reproduction attempt
+      with fidelity gaps.
+    AutoDiscovery: Released implementation at 30e080f4ecf50912bb0771abb4accbf1e67bb736; document differences from
+      paper defaults.
+  reporting: Pin versions and adapters; distinguish fixed-evidence analysis from adaptive acquisition. Static-only
+    gains do not establish transfer; inconclusive results do not establish absence.

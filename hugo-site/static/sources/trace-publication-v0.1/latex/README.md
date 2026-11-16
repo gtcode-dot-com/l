@@ -28,3 +28,5 @@ Inline identifiers use a uniform monospace macro with discretionary, hyphenless 
 No original Lopez-Paz TeX inputs, licensed datasets, package caches, TeX build logs or unpublished evaluation answers are bundled. No blanket redistribution license was supplied for the manuscript or third-party materials.
 
 The cross-case interchange schema is `trace-records.schema.json` in the LaTeX source directory and public paper downloads. Sections 4.1–4.6 specify its semantic requirements and the generator, compiler, acquisition and adjudication stages. The schema is a proposed interface, not an implemented scientific engine.
+
+The prior-art audit and contribution matrix are included as prior-art-audit.md and contribution-matrix.md in the portable source. The protocol prioritizes H2 with development cases and an exploratory pilot; H1 supplies quality measures and H3 is conditional subsequent work. Named comparator adaptations require implementation-fidelity review before experiments.

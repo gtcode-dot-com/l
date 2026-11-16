@@ -23,6 +23,8 @@ def tex_source(master):
   latex='\n'.join([r'\begin{figure}[htbp]',r'\centering',rf'\includegraphics[width=\linewidth]{{figures/{slug}.pdf}}',rf'\caption{{{caption}}}',rf'\label{{fig:{slug}}}',r'\end{figure}'])
   body=body.replace('{{FIGURE_'+str(i)+'}}',latex)
  text=latex_fragment('## '+body)
+ # Keep this short named term together across line and page breaks.
+ text=text.replace('Evidential Entanglement', 'Evidential~Entanglement')
  text=text.replace(r'\begin{verbatim}',r'\par\medskip'+'\n'+r'\noindent\begin{minipage}{\linewidth}'+'\n'+r'\begin{CNSAlgorithm}').replace(r'\end{verbatim}',r'\end{CNSAlgorithm}'+'\n'+r'\end{minipage}\par\medskip')
  text=re.sub(r'\\texttt\{([^{}]+)\}',lambda m:r'\CNSIdentifier{'+m[1]+'}',text)
  text=re.sub(r'(?=\\section\{Proposed operational\s+algorithm\})',lambda _:r'\Needspace{12\baselineskip}'+ '\n',text)
@@ -48,6 +50,7 @@ def web_body(master,records):
  out+='''## Publication downloads and self-citation
 
 - [Compiled research PDF](/papers/trace/trace-research-proposal.pdf) · [Standalone LaTeX source](/papers/trace/trace-latex-source.zip) · [BibTeX self-citation](/papers/trace/trace-citation.bib)
+- [Prior-art audit](/papers/trace/prior-art-audit.md) · [Contribution matrix](/papers/trace/contribution-matrix.md)
 - [Cross-case record schema](/papers/trace/trace-records.schema.json)
 - [Annotated reference registry](/papers/trace/references.json) · [Bibliography](/papers/trace/references.bib) · [Proposed protocol YAML](/papers/trace/proposed-evaluation-protocol.yaml)
 

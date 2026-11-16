@@ -177,7 +177,7 @@ title: Narrative Synthesis Research | Guides & Tutorials
 </script>
 
 These guides explore how conflicting accounts can support testable explanations and new predictions. The collection includes TRACE and its predecessors in Chiral Narrative Synthesis (CNS).
-The latest proposal is **TRACE (Testing Rival Accounts through Contrast and Evidence)**, which asks how conflicting accounts can produce measurable explanations, committed predictions, and observations that distinguish rival hypotheses. It has not been implemented or empirically evaluated.
+The latest proposal is **TRACE (Testing Rival Accounts through Contrast and Evidence)**, which asks whether explicit source-conflict localization improves predictive discovery beyond existing methods under matched evidence and cost. It has not been implemented or empirically evaluated.
 
 > **Latest research proposal:** Start with **[TRACE](/guides/trace/)**, its [illustrated overview](/guides/trace/overview/), or the [full paper](/papers/trace/). CNS 8.0, CNS 7.1, and CNS 2.0 remain available as prior work.
 

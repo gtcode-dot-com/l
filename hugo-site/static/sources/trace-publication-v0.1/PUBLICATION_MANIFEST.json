@@ -6,20 +6,26 @@
     "date": "2026-11-15",
     "author": "GTCode.com",
     "status": "Unvalidated conceptual research proposal; not implemented, registered, empirically evaluated or peer reviewed",
-    "paper_pdf_pages": 22,
-    "paper_web_cited_sources": 39,
-    "annotated_reference_registry_count": 55,
+    "paper_pdf_pages": 27,
+    "paper_web_cited_sources": 49,
+    "annotated_reference_registry_count": 65,
     "hypothesis_identifiers": [
       "H1",
       "H2",
       "H3"
     ],
-    "proposed_synthetic_independent_roots": 3840,
-    "proposed_confirmatory_roots": 2400,
-    "proposed_prospective_executions": 17280,
-    "proposed_systems": 10,
-    "counts_status": "Conditional planning targets pending target/view and stratum feasibility certification",
-    "publication_date_status": "Unpublished preparation date; version remains 0.1"
+    "publication_date_status": "Unpublished preparation date; version remains 0.1",
+    "primary_research_question": "H2: incremental predictive value of source-conflict localization",
+    "development_case_range": [
+      12,
+      20
+    ],
+    "exploratory_pilot_case_range": [
+      30,
+      60
+    ],
+    "confirmatory_sample_size": null,
+    "counts_status": "Exploratory feasibility choices; later studies require independent design and power justification"
   },
   "canonical_urls": {
     "guide": "https://gtcode.com/guides/trace/overview/",
@@ -29,9 +35,9 @@
   },
   "publication_assets_root": "https://gtcode.com/papers/trace/",
   "input_provenance": {
-    "research_packet": "Five-document TRACE research docset from prior conversation: assessment, theory/specification, experimental protocol, execution planning, annotated prior art",
+    "research_packet": "Original local CNS research packet at ~/jb/docs/20261115/CNS_9_0_Research_Docset/; conceptual input, not experimental evidence",
     "original_source_tex": "David Lopez-Paz Against All Likelihood TeX files paper.tex and aal.tex were inputs, NOT included or republished",
-    "source_reference_registry": "45 packet sources plus ten added related-work records, each with disclosed reading depth",
+    "source_reference_registry": "45 originating records plus twenty targeted related-work entries, R31–R50; per-record reading depth disclosed",
     "master_authoring_file": "hugo-site/static/sources/trace-publication-v0.1/latex/manuscript.md"
   },
   "site_integration": {
@@ -45,163 +51,183 @@
   "file_inventory": [
     {
       "path": "hugo-site/content/guides/trace/_index.md",
-      "role": "Hugo publication page"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/content/guides/trace/evaluation.md",
-      "role": "Hugo publication page"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/content/guides/trace/overview.md",
-      "role": "Hugo publication page"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/content/papers/trace/index.md",
-      "role": "Hugo publication page"
+      "role": "publication source or asset"
     },
     {
-      "path": "hugo-site/static/papers/trace/trace-citation.bib",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/papers/trace/trace-latex-source.zip",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/papers/trace/trace-research-proposal.pdf",
-      "role": "compiled research paper PDF"
+      "path": "hugo-site/static/papers/trace/contribution-matrix.md",
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/figures/trace-caching-example.pdf",
-      "role": "publication asset"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/figures/trace-caching-example.svg",
-      "role": "editable accessible technical figure"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/figures/trace-discovery-loop.pdf",
-      "role": "publication asset"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/figures/trace-discovery-loop.svg",
-      "role": "editable accessible technical figure"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/figures/trace-research-lineage.pdf",
-      "role": "publication asset"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/figures/trace-research-lineage.svg",
-      "role": "editable accessible technical figure"
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/papers/trace/prior-art-audit.md",
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/proposed-evaluation-protocol.yaml",
-      "role": "publication asset"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/references.bib",
-      "role": "publication asset"
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/references.json",
-      "role": "publication asset"
+      "role": "publication source or asset"
     },
     {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/PUBLICATION_MANIFEST.json",
-      "role": "publication asset"
+      "path": "hugo-site/static/papers/trace/trace-citation.bib",
+      "role": "publication source or asset"
     },
     {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/README.md",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/SHA256SUMS.txt",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/SOURCE_AND_CLAIM_AUDIT.md",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/VALIDATION_REPORT.md",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/README.md",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/build.sh",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/trace-citation.bib",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figure-source/README.md",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figure-source/render_figures.py",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-caching-example.pdf",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-caching-example.svg",
-      "role": "editable accessible technical figure"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-discovery-loop.pdf",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-discovery-loop.svg",
-      "role": "editable accessible technical figure"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-research-lineage.pdf",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-research-lineage.svg",
-      "role": "editable accessible technical figure"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/latexmkrc",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/main.tex",
-      "role": "generated complete LaTeX manuscript"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/manuscript.md",
-      "role": "shared scientific manuscript"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/references.bib",
-      "role": "publication asset"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/render_manuscript.py",
-      "role": "shared-source TeX/Hugo renderer"
-    },
-    {
-      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/template.tex",
-      "role": "editable typography template"
+      "path": "hugo-site/static/papers/trace/trace-latex-source.zip",
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/papers/trace/trace-records.schema.json",
-      "role": "cross-case interchange schema"
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/papers/trace/trace-research-proposal.pdf",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/PUBLICATION_MANIFEST.json",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/README.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/SOURCE_AND_CLAIM_AUDIT.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/VALIDATION_REPORT.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/README.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/build.sh",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/contribution-matrix.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figure-source/README.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figure-source/render_figures.py",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-caching-example.pdf",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-caching-example.svg",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-discovery-loop.pdf",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-discovery-loop.svg",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-research-lineage.pdf",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/figures/trace-research-lineage.svg",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/latexmkrc",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/main.tex",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/manuscript.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/prior-art-audit.md",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/proposed-evaluation-protocol.yaml",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/references.bib",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/references.json",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/render_manuscript.py",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/template.tex",
+      "role": "publication source or asset"
+    },
+    {
+      "path": "hugo-site/static/sources/trace-publication-v0.1/latex/trace-citation.bib",
+      "role": "publication source or asset"
     },
     {
       "path": "hugo-site/static/sources/trace-publication-v0.1/latex/trace-records.schema.json",
-      "role": "portable cross-case interchange schema"
+      "role": "publication source or asset"
     }
   ],
   "typography": {
@@ -222,5 +248,13 @@
     "scientific_experiments_performed": false,
     "tests_and_site_checks_performed": false,
     "pdf_compiled_from_source": true
+  },
+  "literature_audit": {
+    "scope": "Targeted primary-source audit, not exhaustive systematic review",
+    "audit": "hugo-site/static/papers/trace/prior-art-audit.md",
+    "contribution_matrix": "hugo-site/static/papers/trace/contribution-matrix.md",
+    "access_gap": "PARADOX full article unavailable; official code inspected selectively. Contrastive Discovery author code listed forthcoming. Operational novelty unresolved.",
+    "code_reproduced": false,
+    "implementation_inspection": "Selected PARADOX, POPPER and AutoDiscovery paths; commit identifiers in references.json; none executed."
   }
 }

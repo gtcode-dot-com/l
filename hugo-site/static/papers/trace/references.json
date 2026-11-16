@@ -604,5 +604,118 @@
     "contribution": "Combines LLM natural-language rule proposals with probabilistic online updates and experiment design; close precedent for the investigation loop.",
     "limitation": "Studied rule-inference tasks do not establish the value of TRACE conflict alignment or source-lineage accounting.",
     "accessed": "2026-11-15"
+  },
+  {
+    "id": "R41",
+    "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+    "authors": "Ziang Liu; James J. Kim; Yijia Dai; Jennifer J. Sun",
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2611.14514v1",
+    "review_depth": "Primary HTML introduction, contrast-set/belief/search methods, evaluation framing, dataset and mechanical-audit appendices; author project page. Code not reproduced.",
+    "contribution": "Explicit contrast sets and evidence-guided discovery; direct comparative precedent.",
+    "limitation": "Belief concentration and expert agreement do not certify new externally true conditions. Project page lists code as soon; adaptation fidelity must be documented.",
+    "accessed": "2026-11-15"
+  },
+  {
+    "id": "R42",
+    "title": "Automated Hypothesis Validation with Agentic Sequential Falsifications",
+    "authors": "Kexin Huang; Ying Jin; Ryan Li; Michael Y. Li; Emmanuel Candes; Jure Leskovec",
+    "year": 2025,
+    "url": "https://arxiv.org/abs/2502.09858v1",
+    "review_depth": "Primary method, assumptions and sequential-validity argument; official repository entry point and sequential-testing paths at 59611864e09dd15d7528e240ad87c7ddbb4a701c; not executed.",
+    "contribution": "POPPER: adaptive falsification with statistical error control under stated assumptions.",
+    "limitation": "Guarantees depend on implication and conditional validity; arbitrary reused data or LLM scores do not meet them automatically.",
+    "accessed": "2026-11-15",
+    "implementation_url": "https://github.com/snap-stanford/POPPER/tree/59611864e09dd15d7528e240ad87c7ddbb4a701c"
+  },
+  {
+    "id": "R43",
+    "title": "Same Claim, Different Interpretations: How LLM Agents Resolve Ambiguity in Scientific Claims",
+    "authors": "Delip Rao; Ahmed Muharram; Chris Callison-Burch",
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2610.20457v1",
+    "review_depth": "Primary HTML introduction, card mechanism, experimental framing and selected consistency appendix.",
+    "contribution": "Claim Cards makes interpretations explicit before evidence collection.",
+    "limitation": "Interpretation logging does not by itself improve agreement or demonstrate predictive discovery.",
+    "accessed": "2026-11-15"
+  },
+  {
+    "id": "R44",
+    "title": "Benchmarking LLM’s Capability in Reasoning over Conflicting Web References",
+    "authors": "Yizhen Yuan; Rui Kong; Dongze Li; Yuanchun Li; Yunxin Liu",
+    "year": 2026,
+    "url": "https://aclanthology.org/2026.acl-long.11/",
+    "review_depth": "Official ACL metadata; downloaded PDF introduction, benchmark/task construction and selected evaluation/limitations.",
+    "contribution": "ConfRAG evaluates organization and explanation of conflicting web evidence.",
+    "limitation": "Conflict-reasoning labels are not prospective prediction outcomes or a source-independence certificate.",
+    "accessed": "2026-11-15"
+  },
+  {
+    "id": "R45",
+    "title": "Failing to Falsify: Evaluating and Mitigating Confirmation Bias in Language Models",
+    "authors": "Ayush Rajesh Jhaveri; Anthony GX-Chen; Ilia Sucholutsky; Eunsol Choi",
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2604.02485v2",
+    "review_depth": "Primary v2 abstract, selected Wason/Blicket results and evaluation framing, version metadata and method/appendix navigation; detailed statistical implementation not audited.",
+    "contribution": "Simple counterexample-oriented prompting is a required low-complexity control.",
+    "limitation": "Hidden-rule tasks do not establish source-conflict discovery or general scientific validity.",
+    "accessed": "2026-11-15"
+  },
+  {
+    "id": "R46",
+    "title": "Perceive-Then-Adjudicate: A Multi-Agent Framework for Resolving Knowledge-Evidence Conflicts in LLM Fact-Checking",
+    "authors": "Yongcheng Zhang; Xin Zhang; Fei Li; Chong Teng; Jiang-Ming Yang; Donghong Ji; Zhuang Li",
+    "year": 2026,
+    "url": "https://aclanthology.org/2026.findings-emnlp.1445/",
+    "review_depth": "Official ACL record; downloaded PDF opening, architecture and selected experimental framing.",
+    "contribution": "Knowledge/evidence arbitration and rejection of erroneous consensus.",
+    "limitation": "Fact-checking performance is not held-out explanatory-condition discovery; code link announced, not executed.",
+    "accessed": "2026-11-15"
+  },
+  {
+    "id": "R47",
+    "title": "Perspective—Discovery Within Validation Logic: Deliberately Surfacing, Complementing, and Substituting Abductive Reasoning in Hypothetico-Deductive Inquiry",
+    "authors": "Kristin Behfar; Gerardo A. Okhuysen",
+    "year": 2018,
+    "url": "https://doi.org/10.1287/orsc.2017.1193",
+    "review_depth": "Publisher full HTML selected sections on abductive anomaly/discordance and theory development; metadata.",
+    "contribution": "Contradictory findings as an impetus for abductive explanation predates TRACE.",
+    "limitation": "Methodological perspective, not a computational benchmark result.",
+    "accessed": "2026-11-15"
+  },
+  {
+    "id": "R48",
+    "title": "PARADOX: pharmacological analysis of relation anomalies and drug contradictions extraction",
+    "authors": "Ali Fata; Hossein Rahmani",
+    "year": 2026,
+    "url": "https://doi.org/10.1007/s10822-026-00965-5",
+    "review_depth": "Publisher abstract, metadata and data availability; selected cells in all three official notebooks and supplied CSV headers/counts at 10d7a04d50e72dc375cff4146e19a42c5b022dec. Subscription full article unavailable; code not executed.",
+    "contribution": "Contradiction analysis includes condition differences and missing context.",
+    "limitation": "Inspected evaluation uses GPT reference labels. No committed held-out condition-prediction workflow identified in inspected notebooks; full article not reviewed, so operational differentiation remains unresolved.",
+    "accessed": "2026-11-15",
+    "implementation_url": "https://github.com/ali-ft/PARADOX/tree/10d7a04d50e72dc375cff4146e19a42c5b022dec"
+  },
+  {
+    "id": "R49",
+    "title": "Utilizing ChatGPT as a scientific reasoning engine to differentiate conflicting evidence and summarize challenges in controversial clinical questions",
+    "authors": "Shiyao Xie and colleagues",
+    "year": 2024,
+    "url": "https://doi.org/10.1093/jamia/ocae100",
+    "review_depth": "Primary PMC full article: abstract, evidence/assertion workflow and selected error discussion.",
+    "contribution": "Earlier LLM-assisted differentiation of conflicting scientific evidence.",
+    "limitation": "Evidence synthesis and expert assessment do not establish the proposed sealed predictive endpoint.",
+    "accessed": "2026-11-15"
+  },
+  {
+    "id": "R50",
+    "title": "AutoDiscovery: Open-ended Scientific Discovery via Bayesian Surprise",
+    "authors": "Dhruv Agarwal; Bodhisattwa Prasad Majumder; Reece Adamson; Megha Chakravorty; Satvika Reddy Gavireddy; Aditya Parashar; Harshit Surana; Bhavana Dalvi Mishra; Andrew McCallum; Ashish Sabharwal; Peter Clark",
+    "year": 2025,
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/23b127521af7ca7a42f5cdb7507be4f2-Abstract-Conference.html",
+    "review_depth": "Official abstract and method documentation; generator instructions, structured outputs and scoring path at 30e080f4ecf50912bb0771abb4accbf1e67bb736. Not executed or exhaustively audited.",
+    "contribution": "Existing context, derived-variable and relationship generation plus surprise-guided discovery; usable native-method transfer comparator.",
+    "limitation": "Model belief shift is not independent truth; current implementation defaults differ from paper experiments.",
+    "accessed": "2026-11-15",
+    "implementation_url": "https://github.com/allenai/asta-autodiscovery/tree/30e080f4ecf50912bb0771abb4accbf1e67bb736"
   }
 ]
