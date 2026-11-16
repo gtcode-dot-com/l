@@ -5011,6 +5011,13 @@
     "agent_callout": "",
     "generated_at": "2026-06-27T03:25:36.526636+00:00"
   },
+  "news/ai-security/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-other-apps-for-api-keys": {
+    "slug": "news/ai-security/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-other-apps-for-api-keys",
+    "meta_description": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM , One API , and Dify to steal the AI provider...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys\",\n  \"description\": \"Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM , One API , and Dify to steal the AI provider...\",\n  \"datePublished\": \"2026-11-16T18:21:51.742765+00:00\",\n  \"dateModified\": \"2026-11-16T18:21:51.742765+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:22:20.788526+00:00"
+  },
   "news/ai-security/amazon-uncovers-attacks-exploited-cisco-ise-and-citrix-netscaler-as-zero-day-flaws": {
     "slug": "news/ai-security/amazon-uncovers-attacks-exploited-cisco-ise-and-citrix-netscaler-as-zero-day-flaws",
     "meta_description": "Amazon's threat intelligence team uncovered attacks exploiting zero-day flaws in Cisco ISE and Citrix NetScaler to deliver custom malware, highlighting...",
@@ -5906,6 +5913,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Bloody Wolf Expands Java-based NetSupport RAT Attacks in Kyrgyzstan and Uzbekistan\",\n  \"description\": \"Nov 27, 2025 Ravie Lakshmanan Malware / Social Engineering The threat actor known as Bloody Wolf has been attributed to a cyber attack campaign...\",\n  \"datePublished\": \"2025-11-28T00:00:07.463168+00:00\",\n  \"dateModified\": \"2025-11-28T00:00:07.463168+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/bloody-wolf-expands-java-based.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/bloody-wolf-expands-java-based.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:35.109396+00:00"
+  },
+  "news/ai-security/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian-firm-s-code-signing-server": {
+    "slug": "news/ai-security/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian-firm-s-code-signing-server",
+    "meta_description": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server\",\n  \"description\": \"An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development...\",\n  \"datePublished\": \"2026-11-16T18:21:52.065764+00:00\",\n  \"dateModified\": \"2026-11-16T18:21:52.065764+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:22:19.754205+00:00"
   },
   "news/ai-security/book-review-the-business-of-secrets": {
     "slug": "news/ai-security/book-review-the-business-of-secrets",
@@ -7355,6 +7369,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident\",\n  \"description\": \"Ravie Lakshmanan Nov 15, 2026 Artificial Intelligence / Software Security The compromise of Anthropic's official Claude Code extension on Cursor's...\",\n  \"datePublished\": \"2026-11-15T21:30:13.038360+00:00\",\n  \"dateModified\": \"2026-11-15T21:30:13.038360+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-15T21:30:53.960840+00:00"
+  },
+  "news/ai-security/cursor-supply-chain-attack-started-at-fireworks-ai": {
+    "slug": "news/ai-security/cursor-supply-chain-attack-started-at-fireworks-ai",
+    "meta_description": "Credentials compromised in the hack of AI inference platform Fireworks AI allowed attackers to steal more secrets and push malicious Claude Code...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cursor Supply Chain Attack Started at Fireworks AI\",\n  \"description\": \"Credentials compromised in the hack of AI inference platform Fireworks AI allowed attackers to steal more secrets and push malicious Claude Code...\",\n  \"datePublished\": \"2026-11-16T18:21:52.585419+00:00\",\n  \"dateModified\": \"2026-11-16T18:21:52.585419+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks\"\n  },\n  \"url\": \"https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:22:21.140662+00:00"
   },
   "news/ai-security/cyberattack-on-connected-fridges-in-france": {
     "slug": "news/ai-security/cyberattack-on-connected-fridges-in-france",
@@ -9105,6 +9126,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google Presentations Abused for Phishing, (Fri, Jan 30th)\",\n  \"description\": \"Charlie, one of our readers, has forwarded an interesting phishing email. The email was sent to users of the Vivladi Webmail service.\",\n  \"datePublished\": \"2026-01-30T18:15:12.936185+00:00\",\n  \"dateModified\": \"2026-01-30T18:15:12.936185+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32668\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32668\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:59.364922+00:00"
+  },
+  "news/ai-security/google-project-zero-sets-course-for-30-day-disclosure-deadline": {
+    "slug": "news/ai-security/google-project-zero-sets-course-for-30-day-disclosure-deadline",
+    "meta_description": "In the context of AI-assisted vulnerability discovery and exploitation, Google Project Zero is significantly shrinking bug disclosure windows.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Google Project Zero Sets Course for 30-Day Disclosure Deadline\",\n  \"description\": \"In the context of AI-assisted vulnerability discovery and exploitation, Google Project Zero is significantly shrinking bug disclosure windows.\",\n  \"datePublished\": \"2026-11-16T18:21:53.106568+00:00\",\n  \"dateModified\": \"2026-11-16T18:21:53.106568+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline\"\n  },\n  \"url\": \"https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:22:20.091630+00:00"
   },
   "news/ai-security/google-reports-state-backed-hackers-using-gemini-ai-for-recon-and-attack-support": {
     "slug": "news/ai-security/google-reports-state-backed-hackers-using-gemini-ai-for-recon-and-attack-support",
@@ -17211,6 +17239,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"US Disrupts Chinese State-Sponsored Hacking Tools\",\n  \"description\": \"Flax Typhoon and other APTs used MicroScan and FishHub to scan and hack US and foreign critical infrastructure. By Ionut Arghire | October 9, 2026...\",\n  \"datePublished\": \"2026-10-10T20:20:47.723198+00:00\",\n  \"dateModified\": \"2026-10-10T20:20:47.723198+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/us-disrupts-chinese-state-sponsored-hacking-tools\"\n  },\n  \"url\": \"https://www.securityweek.com/us-disrupts-chinese-state-sponsored-hacking-tools\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-10T20:21:27.447603+00:00"
+  },
+  "news/ai-security/usable-security-at-luxury-hotels": {
+    "slug": "news/ai-security/usable-security-at-luxury-hotels",
+    "meta_description": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Usable Security at Luxury Hotels\",\n  \"description\": \"Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine...\",\n  \"datePublished\": \"2026-11-16T18:21:52.322178+00:00\",\n  \"dateModified\": \"2026-11-16T18:21:52.322178+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:22:20.435529+00:00"
   },
   "news/ai-security/use-gwp-asan-to-detect-exploits-in-production-environments": {
     "slug": "news/ai-security/use-gwp-asan-to-detect-exploits-in-production-environments",
