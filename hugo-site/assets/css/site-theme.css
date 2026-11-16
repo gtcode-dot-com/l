@@ -2057,3 +2057,20 @@ body::before,
   font-size: 0.875rem;
   line-height: 1.7;
 }
+
+/* Sentence-length table cells need wrapping rather than single-line row labels. */
+@media (min-width: 721px) {
+  .article-content.article-content--prose-tables table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .article-content.article-content--prose-tables table th,
+  .article-content.article-content--prose-tables table td {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    min-width: 0;
+    vertical-align: top;
+  }
+}

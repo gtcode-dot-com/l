@@ -60,7 +60,7 @@
     {{ end }}
 
     <!-- Article Content -->
-    <div class="article-content">
+    <div class="article-content{{ if $active.Params.prose_tables }} article-content--prose-tables{{ end }}">
       {{ $cleanContent := replace (replace $active.Content "" "") "" "" }}
       {{ $cleanContent | safeHTML }}
     </div>

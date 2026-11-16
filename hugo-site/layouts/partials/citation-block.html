@@ -60,7 +60,9 @@
 
   <div class="citation-actions">
     <button class="citation-copy" type="button" aria-label="Copy citation to clipboard" data-bibtex="{{ $cite.bibtex | htmlEscape }}" data-apa="{{ $cite.apa }}" data-chicago="{{ $cite.chicago }}">Copy</button>
-    <a class="citation-repo-link" href="{{ $cite.repo_url }}" target="_blank" rel="noopener">View on GitHub</a>
+    {{ with $cite.repo_url }}
+    <a class="citation-repo-link" href="{{ . }}" target="_blank" rel="noopener">View on GitHub</a>
+    {{ end }}
   </div>
 </aside>
 
