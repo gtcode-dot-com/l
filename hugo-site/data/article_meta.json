@@ -5781,6 +5781,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:42.493670+00:00"
   },
+  "news/ai-security/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks": {
+    "slug": "news/ai-security/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks",
+    "meta_description": "The Artex agentic AI penetration testing framework has become a common tool in Chinese threat actors’ arsenal, and Barracuda is one of its victims.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks\",\n  \"description\": \"The Artex agentic AI penetration testing framework has become a common tool in Chinese threat actors’ arsenal, and Barracuda is one of its victims.\",\n  \"datePublished\": \"2026-11-16T18:53:46.915546+00:00\",\n  \"dateModified\": \"2026-11-16T18:53:46.915546+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks\"\n  },\n  \"url\": \"https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:54:17.267818+00:00"
+  },
   "news/ai-security/battling-cryptojacking-botnets-and-iabs-guest-diary": {
     "slug": "news/ai-security/battling-cryptojacking-botnets-and-iabs-guest-diary",
     "meta_description": "This is a Guest Diary by Matthew Presnal, an ISC intern as part of the SANS.edu [BACS program] Cryptojacking and botnets can pose a greater threat...",
@@ -9413,6 +9420,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Hijack Blender 3D Assets to Deploy StealC V2 Data-Stealing Malware\",\n  \"description\": \"Nov 25, 2025 Ravie Lakshmanan Malware / Browser Security Cybersecurity researchers have disclosed details of a new campaign that has leveraged...\",\n  \"datePublished\": \"2025-11-25T12:00:08.061671+00:00\",\n  \"dateModified\": \"2025-11-25T12:00:08.061671+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/hackers-hijack-blender-3d-assets-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/hackers-hijack-blender-3d-assets-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:21.628328+00:00"
+  },
+  "news/ai-security/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers": {
+    "slug": "news/ai-security/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers",
+    "meta_description": "Exploitation attempts against a vulnerability in Copeland’s XWEB EVO refrigeration controllers began less than two hours after the issue was made...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers\",\n  \"description\": \"Exploitation attempts against a vulnerability in Copeland’s XWEB EVO refrigeration controllers began less than two hours after the issue was made...\",\n  \"datePublished\": \"2026-11-16T18:53:47.651468+00:00\",\n  \"dateModified\": \"2026-11-16T18:53:47.651468+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers\"\n  },\n  \"url\": \"https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:54:17.596424+00:00"
   },
   "news/ai-security/hackers-target-n-central-zero-days-as-n-able-rushes-patches": {
     "slug": "news/ai-security/hackers-target-n-central-zero-days-as-n-able-rushes-patches",
@@ -14608,6 +14622,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T04:42:49.975932+00:00"
   },
+  "news/ai-security/recent-unrealircd-vulnerability-exploited-in-attacks": {
+    "slug": "news/ai-security/recent-unrealircd-vulnerability-exploited-in-attacks",
+    "meta_description": "Threat actors started exploiting a high-severity vulnerability in the open source Internet Relay Chat (IRC) server UnrealIRCd one day after public...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Recent UnrealIRCd Vulnerability Exploited in Attacks\",\n  \"description\": \"Threat actors started exploiting a high-severity vulnerability in the open source Internet Relay Chat (IRC) server UnrealIRCd one day after public...\",\n  \"datePublished\": \"2026-11-16T18:53:47.433683+00:00\",\n  \"dateModified\": \"2026-11-16T18:53:47.433683+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks\"\n  },\n  \"url\": \"https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:54:16.906757+00:00"
+  },
   "news/ai-security/reconstructing-ai-agent-activity-two-new-scripts-for-forensic-review-thu-oct-8th": {
     "slug": "news/ai-security/reconstructing-ai-agent-activity-two-new-scripts-for-forensic-review-thu-oct-8th",
     "meta_description": "We just did a major update to FOR577 and added a lot of new material on day 5 about investigating AI usage in incident response.",
@@ -15938,6 +15959,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-15T02:04:47.952415+00:00"
   },
+  "news/ai-security/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch": {
+    "slug": "news/ai-security/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch",
+    "meta_description": "Kaspersky has warned that a vulnerability in Telegram’s newly launched widgets may have been exploited in the wild to deliver the WebRAT malware.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch\",\n  \"description\": \"Kaspersky has warned that a vulnerability in Telegram’s newly launched widgets may have been exploited in the wild to deliver the WebRAT malware.\",\n  \"datePublished\": \"2026-11-16T18:53:47.192284+00:00\",\n  \"dateModified\": \"2026-11-16T18:53:47.192284+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch\"\n  },\n  \"url\": \"https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:54:17.933614+00:00"
+  },
   "news/ai-security/tensorlake-npm-package-compromised-to-deliver-shai-hulud-credential-stealing-worm": {
     "slug": "news/ai-security/tensorlake-npm-package-compromised-to-deliver-shai-hulud-credential-stealing-worm",
     "meta_description": "Ravie Lakshmanan Oct 08, 2026 Artificial Intelligence / Cloud Security The npm package known as \" tensorlake ,\" a TypeScript software development...",
@@ -16994,6 +17022,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"UAT-9921 Deploys VoidLink Malware to Target Technology and Financial Sectors\",\n  \"description\": \"Ravie Lakshmanan Feb 13, 2026 Cloud Security / Cyber Espionage A previously unknown threat actor tracked as UAT-9921 has been observed leveraging...\",\n  \"datePublished\": \"2026-02-19T04:26:11.022541+00:00\",\n  \"dateModified\": \"2026-02-19T04:26:11.022541+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/02/uat-9921-deploys-voidlink-malware-to.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/02/uat-9921-deploys-voidlink-malware-to.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-09T04:46:18.492968+00:00"
+  },
+  "news/ai-security/uber-data-breach-impacts-150000-people": {
+    "slug": "news/ai-security/uber-data-breach-impacts-150000-people",
+    "meta_description": "Uber is notifying roughly 150,000 drivers that their personal information was stolen in a data breach involving a third-party services provider.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Uber Data Breach Impacts 150,000 People\",\n  \"description\": \"Uber is notifying roughly 150,000 drivers that their personal information was stolen in a data breach involving a third-party services provider.\",\n  \"datePublished\": \"2026-11-16T18:53:47.872326+00:00\",\n  \"dateModified\": \"2026-11-16T18:53:47.872326+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/uber-data-breach-impacts-150000-people\"\n  },\n  \"url\": \"https://www.securityweek.com/uber-data-breach-impacts-150000-people\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T18:54:18.303294+00:00"
   },
   "news/ai-security/ubuntu-cve-2026-3888-bug-lets-attackers-gain-root-via-systemd-cleanup-timing-exploit": {
     "slug": "news/ai-security/ubuntu-cve-2026-3888-bug-lets-attackers-gain-root-via-systemd-cleanup-timing-exploit",
