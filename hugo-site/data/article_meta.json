@@ -15105,6 +15105,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-13T14:16:21.130264+00:00"
   },
+  "news/ai-security/scans-for-litellm-starlette-cve-2026-42271-cve-2026-48710-mon-nov-16th": {
+    "slug": "news/ai-security/scans-for-litellm-starlette-cve-2026-42271-cve-2026-48710-mon-nov-16th",
+    "meta_description": "This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)\",\n  \"description\": \"This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit...\",\n  \"datePublished\": \"2026-11-16T20:00:52.361513+00:00\",\n  \"dateModified\": \"2026-11-16T20:00:52.361513+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33522\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33522\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T20:01:23.218448+00:00"
+  },
   "news/ai-security/scans-for-proxmox-servers-wed-sep-9th": {
     "slug": "news/ai-security/scans-for-proxmox-servers-wed-sep-9th",
     "meta_description": "About a week ago, Proxmox published an advisory revealing a vulnerability in older versions of Proxmox VE, its flagship Virtual Environment...",
@@ -16651,6 +16658,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Top Five Sales Challenges Costing MSPs Cybersecurity Revenue\",\n  \"description\": \"The managed security services market is projected to grow from $38.31 billion in 2025 to $69.16 billion by 2030 [1] , with cybersecurity being the...\",\n  \"datePublished\": \"2026-05-02T02:15:15.121161+00:00\",\n  \"dateModified\": \"2026-05-02T02:15:15.121161+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/05/top-five-sales-challenges-costing-msps.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/05/top-five-sales-challenges-costing-msps.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-02T02:16:25.681059+00:00"
+  },
+  "news/ai-security/tor-updates-dos-defenses-again-as-relay-attacks-continue": {
+    "slug": "news/ai-security/tor-updates-dos-defenses-again-as-relay-attacks-continue",
+    "meta_description": "The Tor Project has released new security fixes for its core software as a distributed denial-of-service (DDoS) attack continues to strain the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tor Updates DoS Defenses Again as Relay Attacks Continue\",\n  \"description\": \"The Tor Project has released new security fixes for its core software as a distributed denial-of-service (DDoS) attack continues to strain the...\",\n  \"datePublished\": \"2026-11-16T20:00:51.454264+00:00\",\n  \"dateModified\": \"2026-11-16T20:00:51.454264+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue\"\n  },\n  \"url\": \"https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-16T20:01:22.871275+00:00"
   },
   "news/ai-security/toxic-combinations-when-cross-app-permissions-stack-into-risk": {
     "slug": "news/ai-security/toxic-combinations-when-cross-app-permissions-stack-into-risk",
