@@ -2074,3 +2074,17 @@ body::before,
     vertical-align: top;
   }
 }
+
+.home-account-meta { font-size: .875rem; margin-top: 1rem; }
+.home-featured { max-width: var(--ou-wide-width); margin: 0 auto 2.5rem; padding-block: 1.5rem; border-block: 1px solid var(--theme-border); }
+.home-featured h2 { margin-top: 0; font-size: 1.25rem; }
+.home-featured ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; padding: 0; }
+.home-featured li { min-width: 0; }
+.home-featured-link { display: grid; grid-template-columns: minmax(0, 1fr); gap: .75rem; align-content: start; text-decoration: none; }
+.home-featured-link picture { display: block; }
+.home-featured-link img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 3px; }
+.home-featured-title { display: block; font-weight: 700; line-height: 1.4; text-decoration: underline; text-underline-offset: .2em; }
+.home-featured-summary { display: block; color: var(--theme-copy); font-size: .875rem; line-height: 1.45; }
+@media (max-width: 639px) {
+  .home-featured ul { grid-template-columns: 1fr; gap: 1.75rem; }
+}

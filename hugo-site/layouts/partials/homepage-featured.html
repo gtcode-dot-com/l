@@ -1,0 +1,29 @@
+<section class="home-featured" aria-labelledby="home-featured-title">
+  <h2 id="home-featured-title">Featured investigations</h2>
+  <ul>
+    {{ range slice
+      (dict "path" "/hawaii-courts/the-nod-visual-allegation/" "title" "The Nod" "summary" "Examines the reported courtroom signal and the limits of an audio-only record.")
+      (dict "path" "/hawaii-courts/lawyer-in-the-room-bosko-petricevic/" "title" "The Lawyer in the Room" "summary" "Examines what opposing counsel observed and the professional duties involved.")
+      (dict "path" "/hawaii-courts/zero-commission-judicial-conduct/" "title" "The Zero Commission" "summary" "Examines judicial oversight, confidentiality, and complaint outcomes.")
+    }}
+      {{ $item := . }}
+      {{ with site.GetPage .path }}
+      <li>
+        <a class="home-featured-link" href="{{ .RelPermalink }}">
+          <span class="home-featured-title">{{ $item.title }}</span>
+          {{ partial "media/responsive-image.html" (dict
+            "page" .
+            "src" (.Params.hero_image | default .Params.og_image)
+            "alt" ""
+            "slot" "homepage_featured_thumb"
+            "width" (.Params.hero_image_width | default .Params.og_image_width)
+            "height" (.Params.hero_image_height | default .Params.og_image_height)
+          ) }}
+          <span class="home-featured-summary">{{ $item.summary }}</span>
+        </a>
+      </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+  <a href="/hawaii-courts/">Browse Hawaiʻi courts investigations →</a>
+</section>

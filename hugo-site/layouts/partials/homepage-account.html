@@ -1,13 +1,20 @@
 {{- with site.GetPage "/homepage-fragments/adult-sequence" -}}
 <section class="home-account" aria-labelledby="home-account-title" id="start-here">
   <header class="home-account-header">
-    <p class="ou-section-label">A public account · Ekewaka Lono</p>
+    <p class="ou-section-label">Oahu Underground · Independent investigative reporting from Hawaiʻi by Ekewaka Lono</p>
+    <p>This homepage presents my firsthand account of threats, attacks, and official responses.{{ if not site.Params.homepage_only_disclosures }} The linked investigations examine supporting records, legal duties, and institutional oversight.{{ end }}</p>
     <h1 id="home-account-title">{{ .Title }}</h1>
     <p class="home-account-intro">{{ .Description }}</p>
+    {{ with site.Home }}
+    <p class="home-account-meta">Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" }}</time> · <a href="#responses-and-corrections">Responses and corrections</a></p>
+    {{ end }}
     {{ if not (partial "exception/homepage-only.html" .) }}
     <a href="#supporting-records">Supporting records and reporting &darr;</a>
     {{ end }}
   </header>
+  {{ if not site.Params.homepage_only_disclosures }}
+    {{ partial "homepage-featured.html" . }}
+  {{ end }}
   <div class="home-account-layout">
     <nav class="home-account-contents" aria-label="Account sections">
       <p class="ou-section-label">In this account</p>

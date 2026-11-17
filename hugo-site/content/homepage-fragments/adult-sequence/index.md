@@ -16,6 +16,7 @@ At the December 2, 2022 hearing, I asked the defendant, who was under oath, whet
 
 I name the people involved and describe what I saw and heard. The dates, report numbers, and outcomes are here so that each person and institution can answer for the conduct attributed to them.
 
+
 ## I. Death threats and pressure to stay silent
 
 1. <span id="account-3" class="home-account-anchor"></span>**[Gene (Eugene) Hartmann](https://en.wikipedia.org/wiki/United_States_Army_Security_Agency) — “Stay away,” then a “murder mystery.”** I knew Gene and Rita Hartmann through the Haleʻiwa duplex where I rented the back unit and they occupied the front. During an in-person encounter after February 2016 and before July 2017, Gene calmly told me, “Stay away from [name withheld].” Rita immediately supplied the consequence: “Or you will get whacked.”
@@ -29,6 +30,8 @@ I name the people involved and describe what I saw and heard. The dates, report 
 3. <span id="account-5" class="home-account-anchor"></span>**“Kevin” — A warning to stop talking, backed by a threat to destroy my career.** In May or June 2017, a man I identify as Kevin approached me outside Kahala Whole Foods. He described himself as an associate of the public figure named in the earlier threat and that person’s spouse. He threatened to destroy my career if I continued discussing the Hartmann threat and related conduct.
 
    Kevin also invoked a prominent technology investor’s name to reinforce the warning. The encounter came shortly before I would testify in July 2017.
+
+<span class="home-account-related">Related reporting: <a href="/hawaii-courts/the-threat-report/">The death-threat report and the response</a>.</span>
 
 ## II. The tax-office account, the imaginary gun, and my lawyers
 
@@ -61,6 +64,8 @@ The 2015–2017 case began with the November 2015 tax-office encounter and was p
    Kanemoto’s presentation omitted Kwak’s earlier false and defamatory grand-jury statements and the recordings of my distress, while putting forward Kwak’s false routine-form account and the misleading booth diagram. Yuen worked directly with him preparing the case. The actual death threat I had reported to my lawyers did not reach the jury through my testimony; Kanemoto’s imaginary weapon did reach the jury through his closing.
 
    When I confronted Kanemoto at Glazer’s in Honolulu in an encounter I place in summer 2019, he denied making the mock-pistol gesture.
+
+   <span class="home-account-related">Related reporting: <a href="/hawaii-courts/the-hypothetical-gun/">The hypothetical gun in closing argument</a>.</span>
 
 8. <span id="account-7" class="home-account-anchor"></span>**[Audrey L.E. Stanley](https://lawyers.findlaw.com/hawaii/honolulu/5063522_1/) — Dismissing the death threat and relaying a proposal that I leave Hawaiʻi.** Stanley was my assigned lawyer when I reported the Hartmann threat. I began explaining who had spoken, the condition attached to the threat, and why I took it seriously. She interrupted, called it a “conditional death threat,” and dismissed it, in substance, as “no big deal.” She did not explain how it would be documented, investigated, or addressed, or what reporting and protective options were available.
 
@@ -143,6 +148,8 @@ The 2015–2017 case began with the November 2015 tax-office encounter and was p
 
     [Rutgers Law’s August 2024 alumni account](https://law.rutgers.edu/alumni-updates-1) identifies Loo as a 1980 graduate and a former organized-crime prosecutor for Honolulu. His professional experience makes his handling of the evidence and my attempt to preserve the signal a question he should answer directly.
 
+   <span class="home-account-related">Related reporting: <a href="/hawaii-courts/the-nod-visual-allegation/">The Nod: examining the reported judicial signal</a>.</span>
+
 15. <span id="account-14" class="home-account-anchor"></span>**[Bosko Petricevic](https://boskolaw.com/meet-your-attorney/) — Portraying my presence on a public road as stalking, then requesting sealing.** Petricevic represented the defendant. Before the hearing, he offered and urged a cross-injunction resolution that would have avoided live testimony. I did not accept it.
 
     At the hearing, Petricevic used the final, post-service Haleʻiwa Road encounter to portray me as stalking his client. I was cycling on the ocean-side public path. His client came from behind in a vehicle, slowed beside me, and growled. I called 911. I was not following or approaching him. I was not given a chance to answer counsel’s portrayal of my travel on that public path as stalking.
@@ -152,6 +159,8 @@ The 2015–2017 case began with the November 2015 tax-office encounter and was p
     Petricevic’s [résumé filed with the Hawaiʻi Labor Relations Board](https://labor.hawaii.gov/hlrb/files/2024/01/Bosko-Petricevic-RESUME-2024.pdf) places him in the Attorney General’s Employment Law Division from June 2013 to March 2019, encompassing the 2015–2017 case. An [official 2016 filing](https://ag.hawaii.gov/wp-content/uploads/2016/01/News-Release-2016-77.pdf) identifies Kanemoto as a Deputy Attorney General during that period. His Attorney General service overlapped with Kanemoto’s work on the 2015–2017 case. Did they discuss me or exchange information later available to Petricevic when he represented the opposing party before Loo?
 
     Petricevic requested sealing, and Loo granted it. The result restricted public access to the spoken sequence, my interrupted record statement, and the hearing file. I watched Petricevic look toward Loo at the moment of the signal. What did Petricevic see and understand? When did he know, if ever, that his client's material sworn denial was false? What correction did he make under [HRPC Rule 3.3(a)(4) and (b)](https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrpcond_ada.htm), whose continuing duty of candor expressly applies even if compliance requires disclosure otherwise protected by Rule 1.6? What did he do about the judicial signal under [HRPC Rule 8.3(b)](https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrpcond_ada.htm), and why did he request sealing instead of seeking preservation and review of the encounter? I have received no answer from him.
+
+<span class="home-account-related">Related reporting: <a href="/hawaii-courts/lawyer-in-the-room-bosko-petricevic/">The Lawyer in the Room: Bosko Petricevic</a> · <a href="/hawaii-courts/reporting-duty-hrpc-8-3b/">Judicial-misconduct reporting duties under HRPC 8.3(b)</a>.</span>
 
 ## V. Police reports blocked, complaints diverted, and review closed
 
@@ -188,6 +197,8 @@ Two HPD reference numbers locate the September 2022 incidents:
 
     HPD did investigate the Starbucks assault and refer it to prosecutors. The separate post-hearing drug-distribution report was refused, and the handling of other reports was never explained to me. None resulted in prosecution of the defendant. HPD personnel also responded to reports about Loo by calling him “honorable.” His title did not answer what I reported seeing him do.
 
+<span class="home-account-related">Related reporting: <a href="/hawaii-courts/review-gap-police-judicial-oversight/">The gap between police reporting and judicial oversight</a>.</span>
+
 ### The assault referral and institutional review
 
 23. <span id="account-23" class="home-account-anchor"></span>**The prosecutor handling the assault referral — Closure in December 2022 without contacting me.** HPD investigated the Starbucks kick and referred it to prosecutors. The intake officer had warned me, in substance, that if I got the date wrong, the case would be thrown out. No one from HPD contacted me to resolve the date discrepancy.
@@ -201,6 +212,8 @@ Two HPD reference numbers locate the September 2022 incidents:
     The same letter declined renewed review because Loo was “no longer a per diem judge as of July 2024” and more than 90 days had passed since his departure. My original contact and the reported 2023 closure both preceded that departure. Before the reported March 2023 closure, did the Commission obtain the hearing audio, inspect the text-message exhibit, or interview anyone present? What did it review, how did it classify my report, and what records support the disposition?
 
     The Judiciary’s public website still listed Loo as an active First Circuit Per Diem Judge in May 2025, after the Commission’s letter said he had left in July 2024. His name was later removed. That discrepancy needs an explanation. I received an insufficient-evidence disposition followed by a jurisdictional refusal, without an account of how the primary evidence had been examined.
+
+   <span class="home-account-related">Related reporting: <a href="/hawaii-courts/zero-commission-judicial-conduct/">The Zero Commission: appointments, confidentiality, and complaint outcomes</a>.</span>
 
 25. <span id="account-25" class="home-account-anchor"></span>**The Hawaiʻi Ethics Commission — Confusion over its authority when I sought review.** When I asked the Ethics Commission about the judicial-conduct issues, it expressed confusion over its own authority. That response left me without a clear review path through that office. It belongs alongside the Commission on Judicial Conduct’s closures as part of what happened when I sought institutional scrutiny.
 
