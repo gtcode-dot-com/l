@@ -783,6 +783,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-09T03:35:09.637207+00:00"
   },
+  "news/ai-research/daisyrose-27b-pushing-the-frontier-of-post-training-efficiency": {
+    "slug": "news/ai-research/daisyrose-27b-pushing-the-frontier-of-post-training-efficiency",
+    "meta_description": "[](https://www.radixark.com/images/daisyrose-27b/hero.png) Today we are releasing DaisyRose-27B , RadixArk’s first model, built on Qwen3.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency\",\n  \"description\": \"[](https://www.radixark.com/images/daisyrose-27b/hero.png) Today we are releasing DaisyRose-27B , RadixArk’s first model, built on Qwen3.\",\n  \"datePublished\": \"2026-11-19T01:44:07.973753+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:07.973753+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin\"\n  },\n  \"url\": \"https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:32.948956+00:00"
+  },
   "news/ai-research/daniela-rus-receives-bavarian-minister-president-s-high-tech-prize": {
     "slug": "news/ai-research/daniela-rus-receives-bavarian-minister-president-s-high-tech-prize",
     "meta_description": "Daniela Rus, director of MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) and the Panasonic Professor of Computer Science,...",
@@ -1307,6 +1314,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Genie 4: A new generation of world simulation\",\n  \"description\": \"October 27, 2026 Models Raia Hadsell, Diego Rivas and Hang Qi Copied Today, we are announcing Genie 4, our new world model, which unlocks...\",\n  \"datePublished\": \"2026-11-08T05:50:06.485085+00:00\",\n  \"dateModified\": \"2026-11-08T05:50:06.485085+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation\"\n  },\n  \"url\": \"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-08T05:50:26.532801+00:00"
+  },
+  "news/ai-research/genie-4-is-now-available": {
+    "slug": "news/ai-research/genie-4-is-now-available",
+    "meta_description": "Earlier this year we introduced Project Genie , an experimental research prototype that lets you generate and explore interactive worlds.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Genie 4 is now available\",\n  \"description\": \"Earlier this year we introduced Project Genie , an experimental research prototype that lets you generate and explore interactive worlds.\",\n  \"datePublished\": \"2026-11-19T01:44:07.552335+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:07.552335+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/genie-4-is-now-available\"\n  },\n  \"url\": \"https://deepmind.google/blog/genie-4-is-now-available\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:33.341499+00:00"
   },
   "news/ai-research/getting-the-source-right-not-just-the-fact-source-aware-verification-for-mcp-agents": {
     "slug": "news/ai-research/getting-the-source-right-not-just-the-fact-source-aware-verification-for-mcp-agents",
@@ -2245,6 +2259,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing Gemini 4 Hydrogen\",\n  \"description\": \"Today, we’re introducing Gemini 4 Hydrogen, bringing cutting-edge intelligence to everyone — with speed and efficiency for everyday coding and...\",\n  \"datePublished\": \"2026-11-13T00:21:53.740957+00:00\",\n  \"dateModified\": \"2026-11-13T00:21:53.740957+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-gemini-4-hydrogen\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-gemini-4-hydrogen\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-13T00:22:19.152954+00:00"
+  },
+  "news/ai-research/introducing-gemini-4-neon": {
+    "slug": "news/ai-research/introducing-gemini-4-neon",
+    "meta_description": "Today, we’re introducing Gemini 4 Neon — bringing frontier-level intelligence with fast end-to-end task completion across complex software...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing Gemini 4 Neon\",\n  \"description\": \"Today, we’re introducing Gemini 4 Neon — bringing frontier-level intelligence with fast end-to-end task completion across complex software...\",\n  \"datePublished\": \"2026-11-19T01:44:06.577192+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:06.577192+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://deepmind.google/blog/introducing-gemini-4-neon\"\n  },\n  \"url\": \"https://deepmind.google/blog/introducing-gemini-4-neon\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:34.500844+00:00"
   },
   "news/ai-research/introducing-gemini-omni": {
     "slug": "news/ai-research/introducing-gemini-omni",
@@ -3870,6 +3891,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-12T21:38:33.374840+00:00"
   },
+  "news/ai-research/time-series-models-in-the-streamhouse-a-new-frontier-and-use-cases": {
+    "slug": "news/ai-research/time-series-models-in-the-streamhouse-a-new-frontier-and-use-cases",
+    "meta_description": "Real-time forecasting, anomaly detection, and optimization, powered by IBM time-series models with more than 50 million downloads.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Time-Series Models in the Streamhouse: A New Frontier and Use Cases\",\n  \"description\": \"Real-time forecasting, anomaly detection, and optimization, powered by IBM time-series models with more than 50 million downloads.\",\n  \"datePublished\": \"2026-11-19T01:44:09.035800+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:09.035800+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse\"\n  },\n  \"url\": \"https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:34.136163+00:00"
+  },
   "news/ai-research/tod-machover-receives-george-peabody-medal-for-contributions-to-music-and-technology": {
     "slug": "news/ai-research/tod-machover-receives-george-peabody-medal-for-contributions-to-music-and-technology",
     "meta_description": "Tod Machover, the Muriel R. Cooper Professor of Music and Media, faculty director of the MIT Media Lab, and director of the Opera of the Future...",
@@ -4268,6 +4296,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Why You Should Care About Partial Differential Equations (PDEs)\",\n  \"description\": \"TLDR : PDEs help us model the world across various variables (space and time). Machine learning based-solvers like PINNs and Neural Operators...\",\n  \"datePublished\": \"2025-12-13T12:03:36.627035+00:00\",\n  \"dateModified\": \"2025-12-13T12:03:36.627035+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/hugging-science/pde\"\n  },\n  \"url\": \"https://huggingface.co/blog/hugging-science/pde\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:18:54.148370+00:00"
+  },
+  "news/ai-research/why-your-fine-tuning-job-takes-longer-than-the-flops-say": {
+    "slug": "news/ai-research/why-your-fine-tuning-job-takes-longer-than-the-flops-say",
+    "meta_description": "Predicting end-to-end fine-tuning time on shared GPU clusters, from 272 production runs. *A preview of our upcoming paper, Predicting End-to-End...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Why your fine-tuning job takes longer than the FLOPs say\",\n  \"description\": \"Predicting end-to-end fine-tuning time on shared GPU clusters, from 272 production runs. *A preview of our upcoming paper, Predicting End-to-End...\",\n  \"datePublished\": \"2026-11-19T01:44:08.503341+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:08.503341+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time\"\n  },\n  \"url\": \"https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:33.766404+00:00"
   },
   "news/ai-research/wire-it-run-it-deploy-it-ai-workflows-in-gradio": {
     "slug": "news/ai-research/wire-it-run-it-deploy-it-ai-workflows-in-gradio",
@@ -4926,6 +4961,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Is Learning to Write Genetic Code\",\n  \"description\": \"This sort of research is both exciting and terrifying: &gt; The two models in question were told to generate complete genomes for a viable...\",\n  \"datePublished\": \"2026-09-18T19:21:17.314233+00:00\",\n  \"dateModified\": \"2026-09-18T19:21:17.314233+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/08/ai-is-learning-to-write-genetic-code.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/08/ai-is-learning-to-write-genetic-code.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-09-18T19:22:20.929605+00:00"
+  },
+  "news/ai-security/ai-pentesting-checklist-for-web-apps-15-questions-to-ask-before-choosing-a-vendor": {
+    "slug": "news/ai-security/ai-pentesting-checklist-for-web-apps-15-questions-to-ask-before-choosing-a-vendor",
+    "meta_description": "The Hacker News Nov 18, 2026 Penetration Testing / Artificial Intelligence TL;DR Attackers move first. On average, exploitation now starts before...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor\",\n  \"description\": \"The Hacker News Nov 18, 2026 Penetration Testing / Artificial Intelligence TL;DR Attackers move first. On average, exploitation now starts before...\",\n  \"datePublished\": \"2026-11-19T01:43:50.791088+00:00\",\n  \"dateModified\": \"2026-11-19T01:43:50.791088+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:31.827853+00:00"
   },
   "news/ai-security/ai-phishing-is-crushing-socs-with-alert-volume-how-to-reduce-tier-1-overload": {
     "slug": "news/ai-security/ai-phishing-is-crushing-socs-with-alert-volume-how-to-reduce-tier-1-overload",
@@ -8427,6 +8469,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-07T23:54:11.263741+00:00"
   },
+  "news/ai-security/formal-verification-of-the-signal-protocol-using-ai": {
+    "slug": "news/ai-security/formal-verification-of-the-signal-protocol-using-ai",
+    "meta_description": "This seems like a good thing: &gt; Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Formal Verification of the Signal Protocol Using AI\",\n  \"description\": \"This seems like a good thing: &gt; Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the...\",\n  \"datePublished\": \"2026-11-19T01:43:51.988490+00:00\",\n  \"dateModified\": \"2026-11-19T01:43:51.988490+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:32.220233+00:00"
+  },
   "news/ai-security/former-google-engineers-indicted-over-trade-secret-transfers-to-iran": {
     "slug": "news/ai-security/former-google-engineers-indicted-over-trade-secret-transfers-to-iran",
     "meta_description": "Two former Google engineers and one of their husbands have been indicted in the U.S. for allegedly committing trade secret theft from the search...",
@@ -8538,6 +8587,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Four Ways AI Is Being Used to Strengthen Democracies Worldwide\",\n  \"description\": \"Democracy is colliding with the technologies of artificial intelligence. Judging from the audience reaction at the recent World Forum on Democracy...\",\n  \"datePublished\": \"2025-11-25T12:01:07.995255+00:00\",\n  \"dateModified\": \"2025-11-25T12:01:07.995255+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2025/11/four-ways-ai-is-being-used-to-strengthen-democracies-worldwide.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2025/11/four-ways-ai-is-being-used-to-strengthen-democracies-worldwide.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:51.757158+00:00"
+  },
+  "news/ai-security/france-is-blaming-iran-for-the-fridge-cyberattack": {
+    "slug": "news/ai-security/france-is-blaming-iran-for-the-fridge-cyberattack",
+    "meta_description": "Interesting : &gt; U.S. intelligence agencies have recently reached a “”ow confidence” assessment that Iran was responsible for the attacks in...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"France Is Blaming Iran for the Fridge Cyberattack\",\n  \"description\": \"Interesting : &gt; U.S. intelligence agencies have recently reached a “”ow confidence” assessment that Iran was responsible for the attacks in...\",\n  \"datePublished\": \"2026-11-19T01:43:51.695930+00:00\",\n  \"dateModified\": \"2026-11-19T01:43:51.695930+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html\"\n  },\n  \"url\": \"https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:30.974551+00:00"
   },
   "news/ai-security/freepbx-patches-critical-sqli-file-upload-and-authtype-bypass-flaws-enabling-rce": {
     "slug": "news/ai-security/freepbx-patches-critical-sqli-file-upload-and-authtype-bypass-flaws-enabling-rce",
@@ -11584,6 +11640,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:06:13.344198+00:00"
   },
+  "news/ai-security/java4shell-flaw-cve-2026-114938-enables-pre-auth-rce-in-jira-jenkins-keycloak-and-more": {
+    "slug": "news/ai-security/java4shell-flaw-cve-2026-114938-enables-pre-auth-rce-in-jira-jenkins-keycloak-and-more",
+    "meta_description": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More\",\n  \"description\": \"A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used...\",\n  \"datePublished\": \"2026-11-19T01:43:51.097296+00:00\",\n  \"dateModified\": \"2026-11-19T01:43:51.097296+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:31.417044+00:00"
+  },
   "news/ai-security/kadnap-malware-infects-14000-edge-devices-to-power-stealth-proxy-botnet": {
     "slug": "news/ai-security/kadnap-malware-infects-14000-edge-devices-to-power-stealth-proxy-botnet",
     "meta_description": "Cybersecurity researchers have discovered a new malware called KadNap that's primarily targeting Asus routers to enlist them into a botnet for...",
@@ -14600,6 +14663,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Qilin Ransomware Turns South Korean MSP Breach Into 28-Victim 'Korean Leaks' Data Heist\",\n  \"description\": \"South Korea's financial sector has been targeted by what has been described as a sophisticated supply chain attack that led to the deployment of...\",\n  \"datePublished\": \"2025-11-27T00:00:08.357768+00:00\",\n  \"dateModified\": \"2025-11-27T00:00:08.357768+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/qilin-ransomware-turns-south-korean-msp.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/11/qilin-ransomware-turns-south-korean-msp.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:46.451818+00:00"
+  },
+  "news/ai-security/quality-isnt-the-main-worry-about-ai-pentesting-data-privacy-and-production-safety-are": {
+    "slug": "news/ai-security/quality-isnt-the-main-worry-about-ai-pentesting-data-privacy-and-production-safety-are",
+    "meta_description": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are\",\n  \"description\": \"AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production.\",\n  \"datePublished\": \"2026-11-19T01:43:51.408433+00:00\",\n  \"dateModified\": \"2026-11-19T01:43:51.408433+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:32.570627+00:00"
   },
   "news/ai-security/quasar-linux-rat-steals-developer-credentials-for-software-supply-chain-compromise": {
     "slug": "news/ai-security/quasar-linux-rat-steals-developer-credentials-for-software-supply-chain-compromise",
@@ -19172,6 +19242,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-05T01:07:35.856249+00:00"
   },
+  "news/comp-journalism/bots-are-replacing-reporters-in-cryptocurrency-journalism": {
+    "slug": "news/comp-journalism/bots-are-replacing-reporters-in-cryptocurrency-journalism",
+    "meta_description": "Crypto news websites Multiple financial news sites appear to have replaced human reporters with AI bots in recent months.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Bots are replacing reporters in cryptocurrency journalism\",\n  \"description\": \"Crypto news websites Multiple financial news sites appear to have replaced human reporters with AI bots in recent months.\",\n  \"datePublished\": \"2026-11-19T01:44:22.387083+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:22.387083+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/bots-are-replacing-reporters-in-cryptocurrency-journalism\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/bots-are-replacing-reporters-in-cryptocurrency-journalism\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:36.509685+00:00"
+  },
   "news/comp-journalism/breakthrough-for-crime-reporters-as-police-prs-agree-to-answer-the-phone": {
     "slug": "news/comp-journalism/breakthrough-for-crime-reporters-as-police-prs-agree-to-answer-the-phone",
     "meta_description": "Police officer with phone. Picture: Monkey Business Images/Shutterstock All police forces in England and Wales will be expected to answer phone...",
@@ -19480,6 +19557,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-09T05:28:38.849508+00:00"
   },
+  "news/comp-journalism/daily-mail-joins-coalition-of-publishers-taking-on-ai-news-scrapers": {
+    "slug": "news/comp-journalism/daily-mail-joins-coalition-of-publishers-taking-on-ai-news-scrapers",
+    "meta_description": "Dailymail.com website. Picture: DennisF/Shutterstock DMGT – owner of the Daily Mail, Metro, The i Paper and the New Scientist – has joined the...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Daily Mail joins coalition of publishers taking on AI news scrapers\",\n  \"description\": \"Dailymail.com website. Picture: DennisF/Shutterstock DMGT – owner of the Daily Mail, Metro, The i Paper and the New Scientist – has joined the...\",\n  \"datePublished\": \"2026-11-19T01:44:24.230520+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:24.230520+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/daily-mail-joins-coalition-of-publishers-taking-on-ai-news-scrapers\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/daily-mail-joins-coalition-of-publishers-taking-on-ai-news-scrapers\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:34.934813+00:00"
+  },
   "news/comp-journalism/daily-mail-s-stephen-wright-devastated-by-doreen-lawrence-hacking-claims": {
     "slug": "news/comp-journalism/daily-mail-s-stephen-wright-devastated-by-doreen-lawrence-hacking-claims",
     "meta_description": "Stephen Wright interviewing member of notorious Latin Kings mob, who help Albanian gangs supply cocaine to Europe Former Daily Mail crime editor...",
@@ -19591,6 +19675,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Doreen Lawrence accuses Mail of ‘pretending to be her friend’ while stealing her private information\",\n  \"description\": \"Baroness Doreen Lawrence arriving at the International Dispute Resolution Centre in November 2025. Picture: James Manning/PA Wire Baroness Doreen...\",\n  \"datePublished\": \"2026-02-02T16:15:45.074109+00:00\",\n  \"dateModified\": \"2026-02-02T16:15:45.074109+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/doreen-lawrence-accuses-mail-of-pretending-to-be-her-friend-while-stealing-her-private-information\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/doreen-lawrence-accuses-mail-of-pretending-to-be-her-friend-while-stealing-her-private-information\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:22.841180+00:00"
+  },
+  "news/comp-journalism/dubious-b2b-sites-suspected-of-using-ai-generated-reporters-tell-press-gazette-prove-youre-not-a-robot": {
+    "slug": "news/comp-journalism/dubious-b2b-sites-suspected-of-using-ai-generated-reporters-tell-press-gazette-prove-youre-not-a-robot",
+    "meta_description": "Security Guys News and Warehouse News Three linked B2B trade websites, apparently based in the US, have multiple reporters who appear to be...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Dubious B2B sites suspected of using AI-generated reporters tell Press Gazette ‘prove you’re not a robot’\",\n  \"description\": \"Security Guys News and Warehouse News Three linked B2B trade websites, apparently based in the US, have multiple reporters who appear to be...\",\n  \"datePublished\": \"2026-11-19T01:44:23.514273+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:23.514273+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/north-america/dubious-b2b-sites-suspected-of-using-ai-generated-reporters-tell-press-gazette-prove-youre-not-a-robot\"\n  },\n  \"url\": \"https://pressgazette.co.uk/north-america/dubious-b2b-sites-suspected-of-using-ai-generated-reporters-tell-press-gazette-prove-youre-not-a-robot\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:36.141015+00:00"
   },
   "news/comp-journalism/economist-president-luke-bradley-jones-to-become-group-ceo": {
     "slug": "news/comp-journalism/economist-president-luke-bradley-jones-to-become-group-ceo",
@@ -21131,6 +21222,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Le Monde CEO urges publishers to sign AI partnerships to stay competitive\",\n  \"description\": \"Louis Dreyfus, CEO of Le Monde. Picture: Delporte Publishers should be signing AI licensing deals to ensure “strong competition” in journalism,...\",\n  \"datePublished\": \"2026-04-08T08:15:50.666454+00:00\",\n  \"dateModified\": \"2026-04-08T08:15:50.666454+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/le-monde-ceo-urges-publishers-to-sign-ai-partnerships-to-stay-competitive\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/le-monde-ceo-urges-publishers-to-sign-ai-partnerships-to-stay-competitive\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-08T08:16:05.091473+00:00"
+  },
+  "news/comp-journalism/leeds-is-making-local-news-pay-with-social-first-journalism": {
+    "slug": "news/comp-journalism/leeds-is-making-local-news-pay-with-social-first-journalism",
+    "meta_description": "The Leeds+ team, from left: Holly, Andy Seddon, Shola, Alyssa, Daisy, Matt Millington. Picture: Story+ A local news title in Leeds that only...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Leeds+ is making local news pay with social-first journalism\",\n  \"description\": \"The Leeds+ team, from left: Holly, Andy Seddon, Shola, Alyssa, Daisy, Matt Millington. Picture: Story+ A local news title in Leeds that only...\",\n  \"datePublished\": \"2026-11-19T01:44:20.832067+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:20.832067+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/social_media/leeds-is-making-local-news-pay-with-social-first-journalism\"\n  },\n  \"url\": \"https://pressgazette.co.uk/social_media/leeds-is-making-local-news-pay-with-social-first-journalism\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:35.747181+00:00"
   },
   "news/comp-journalism/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes": {
     "slug": "news/comp-journalism/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes",
@@ -22972,6 +23070,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tech journalist Joanna Stern on leaving the Wall Street Journal and moving on to New Things\",\n  \"description\": \"Joanna Stern is no stranger to new things. It’s part of the job: Stern began working as a technology journalist in 2007, the year Apple launched...\",\n  \"datePublished\": \"2026-05-23T03:05:15.920431+00:00\",\n  \"dateModified\": \"2026-05-23T03:05:15.920431+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-23T03:05:31.632531+00:00"
+  },
+  "news/comp-journalism/tech-title-second-chapter-aims-to-fill-gap-in-long-form-tech-journalism-covering-europe": {
+    "slug": "news/comp-journalism/tech-title-second-chapter-aims-to-fill-gap-in-long-form-tech-journalism-covering-europe",
+    "meta_description": "Co-founders John Stanley Hunter (left) and Eleanor Warnock (right). Picture: Submitted Newly launched European tech title Second Chapter aims to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tech title Second Chapter aims to fill ‘gap’ in long-form tech journalism covering Europe\",\n  \"description\": \"Co-founders John Stanley Hunter (left) and Eleanor Warnock (right). Picture: Submitted Newly launched European tech title Second Chapter aims to...\",\n  \"datePublished\": \"2026-11-19T01:44:25.230944+00:00\",\n  \"dateModified\": \"2026-11-19T01:44:25.230944+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/digital-journalism/tech-title-second-chapter-aims-to-fill-gap-in-long-form-tech-journalism-covering-europe\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/digital-journalism/tech-title-second-chapter-aims-to-fill-gap-in-long-form-tech-journalism-covering-europe\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:44:35.328396+00:00"
   },
   "news/comp-journalism/telegraph-declines-to-tell-regulator-how-fake-banker-story-got-published": {
     "slug": "news/comp-journalism/telegraph-declines-to-tell-regulator-how-fake-banker-story-got-published",
