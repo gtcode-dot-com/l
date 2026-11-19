@@ -1455,6 +1455,13 @@
     "agent_callout": "",
     "generated_at": "2026-02-16T05:52:55.149548+00:00"
   },
+  "news/ai-research/helping-ai-text-detectors-keep-up-with-changing-conditions": {
+    "slug": "news/ai-research/helping-ai-text-detectors-keep-up-with-changing-conditions",
+    "meta_description": "A more flexible training method can make AI text detectors more robust when new models emerge or AI-generated text is disguised to appear human.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Helping AI text detectors keep up with changing conditions\",\n  \"description\": \"A more flexible training method can make AI text detectors more robust when new models emerge or AI-generated text is disguised to appear human.\",\n  \"datePublished\": \"2026-11-19T01:23:50.596919+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:50.596919+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118\"\n  },\n  \"url\": \"https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:18.544517+00:00"
+  },
   "news/ai-research/helping-data-centers-deliver-higher-performance-with-less-hardware": {
     "slug": "news/ai-research/helping-data-centers-deliver-higher-performance-with-less-hardware",
     "meta_description": "To improve data center efficiency, multiple storage devices are often pooled together over a network so many applications can share them.",
@@ -2428,6 +2435,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T21:28:17.990899+00:00"
   },
+  "news/ai-research/learning-the-language-of-machine-learning": {
+    "slug": "news/ai-research/learning-the-language-of-machine-learning",
+    "meta_description": "By studying the computational foundations of language learning, Associate Professor Jacob Andreas builds intelligent systems that can communicate...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Learning the language of machine learning\",\n  \"description\": \"By studying the computational foundations of language learning, Associate Professor Jacob Andreas builds intelligent systems that can communicate...\",\n  \"datePublished\": \"2026-11-19T01:23:51.282846+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:51.282846+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117\"\n  },\n  \"url\": \"https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:19.758075+00:00"
+  },
   "news/ai-research/lerobot-v0-5-0-scaling-every-dimension": {
     "slug": "news/ai-research/lerobot-v0-5-0-scaling-every-dimension",
     "meta_description": "With over 200 merged PRs and over 50 new contributors since v0.4.0, LeRobot v0.5.0 is our biggest release yet — expanding in every direction at...",
@@ -3296,6 +3310,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-09T05:28:37.832097+00:00"
   },
+  "news/ai-research/putting-a-spotlight-on-ai-society-and-humanity": {
+    "slug": "news/ai-research/putting-a-spotlight-on-ai-society-and-humanity",
+    "meta_description": "Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Putting a spotlight on AI, society, and humanity\",\n  \"description\": \"Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education.\",\n  \"datePublished\": \"2026-11-19T01:23:50.828660+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:50.828660+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117\"\n  },\n  \"url\": \"https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:18.927451+00:00"
+  },
   "news/ai-research/putting-sign-language-ai-into-users-hands": {
     "slug": "news/ai-research/putting-sign-language-ai-into-users-hands",
     "meta_description": "We believe in building with the Deaf community, not just for it. Deaf perspectives have shaped every stage of this project â from...",
@@ -3344,6 +3365,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Q&A: The “collision” between AI, your brain, and society\",\n  \"description\": \"In a new book, Professor Eric So explores how the technology affects our thinking skills. As artificial intelligence use becomes more widespread,...\",\n  \"datePublished\": \"2026-10-17T22:03:54.287410+00:00\",\n  \"dateModified\": \"2026-10-17T22:03:54.287410+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/collision-between-ai-your-brain-and-society-eric-so-book-1015\"\n  },\n  \"url\": \"https://news.mit.edu/2026/collision-between-ai-your-brain-and-society-eric-so-book-1015\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-17T22:04:31.151852+00:00"
+  },
+  "news/ai-research/q-a-why-building-math-muscles-remains-important-in-the-ai-era": {
+    "slug": "news/ai-research/q-a-why-building-math-muscles-remains-important-in-the-ai-era",
+    "meta_description": "Assistant Professor John Urschel explains why learning the fundamental skills of mathematics is still essential despite the evolution of AI tools.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Q&A: Why building math muscles remains important in the AI era\",\n  \"description\": \"Assistant Professor John Urschel explains why learning the fundamental skills of mathematics is still essential despite the evolution of AI tools.\",\n  \"datePublished\": \"2026-11-19T01:23:51.053733+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:51.053733+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117\"\n  },\n  \"url\": \"https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:19.337629+00:00"
   },
   "news/ai-research/qimma-qimw-a-quality-first-arabic-llm-leaderboard": {
     "slug": "news/ai-research/qimma-qimw-a-quality-first-arabic-llm-leaderboard",
@@ -3813,6 +3841,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"The promise and peril of using visual AI to study cities\",\n  \"description\": \"The scholars explore these topics in “ How AI Sees the City: Urban Visual Intelligence ,” published this month by Routledge.\",\n  \"datePublished\": \"2026-10-06T21:50:47.930243+00:00\",\n  \"dateModified\": \"2026-10-06T21:50:47.930243+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/studying-cities-using-visual-ai-fabio-duarte-martina-mazzarello-carlo-ratti-fan-zhang-book-0924\"\n  },\n  \"url\": \"https://news.mit.edu/2026/studying-cities-using-visual-ai-fabio-duarte-martina-mazzarello-carlo-ratti-fan-zhang-book-0924\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-06T21:51:33.281282+00:00"
+  },
+  "news/ai-research/this-featherweight-flying-robot-carries-its-own-sensors-and-computers": {
+    "slug": "news/ai-research/this-featherweight-flying-robot-carries-its-own-sensors-and-computers",
+    "meta_description": "The speedy microrobot flies without an attached motion-capture system, moving it closer to applications like agriculture or industrial...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"This featherweight, flying robot carries its own sensors and computers\",\n  \"description\": \"The speedy microrobot flies without an attached motion-capture system, moving it closer to applications like agriculture or industrial...\",\n  \"datePublished\": \"2026-11-19T01:23:50.331705+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:50.331705+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118\"\n  },\n  \"url\": \"https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:18.140596+00:00"
   },
   "news/ai-research/this-game-playing-ai-is-the-new-champ-at-stratego": {
     "slug": "news/ai-research/this-game-playing-ai-is-the-new-champ-at-stratego",
@@ -4296,6 +4331,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Your Experts Have Partners. There's HOPE for Keeping Them Together\",\n  \"description\": \"Mixture-of-Experts (MoE) models have enabled state-of-the-art LLMs to be scaled to hundreds of billions of parameters, but they come with a...\",\n  \"datePublished\": \"2026-11-13T03:11:05.739753+00:00\",\n  \"dateModified\": \"2026-11-13T03:11:05.739753+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/amazon/higher-order-pruning-experts\"\n  },\n  \"url\": \"https://huggingface.co/blog/amazon/higher-order-pruning-experts\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-13T03:11:33.992407+00:00"
+  },
+  "news/ai-security/10-year-old-nginx-http-2-flaw-lets-unauthenticated-attackers-execute-code-on-servers": {
+    "slug": "news/ai-security/10-year-old-nginx-http-2-flaw-lets-unauthenticated-attackers-execute-code-on-servers",
+    "meta_description": "A flaw in NGINX 's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers\",\n  \"description\": \"A flaw in NGINX 's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in.\",\n  \"datePublished\": \"2026-11-19T01:23:35.222134+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:35.222134+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:17.337091+00:00"
   },
   "news/ai-security/101-malicious-npm-packages-add-developers-whatsapp-accounts-to-groups-without-consent": {
     "slug": "news/ai-security/101-malicious-npm-packages-add-developers-whatsapp-accounts-to-groups-without-consent",
@@ -7139,6 +7181,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-05T18:16:14.651673+00:00"
   },
+  "news/ai-security/critical-apache-roller-rce-flaw-under-active-exploitation-no-authentication-required": {
+    "slug": "news/ai-security/critical-apache-roller-rce-flaw-under-active-exploitation-no-authentication-required",
+    "meta_description": "Ravie Lakshmanan Nov 18, 2026 Vulnerability / Cyber Attack A critical security flaw in Apache Roller , an open-source, Java-based blogging...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required\",\n  \"description\": \"Ravie Lakshmanan Nov 18, 2026 Vulnerability / Cyber Attack A critical security flaw in Apache Roller , an open-source, Java-based blogging...\",\n  \"datePublished\": \"2026-11-19T01:23:35.746118+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:35.746118+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:15.713442+00:00"
+  },
   "news/ai-security/critical-atlassian-flaw-lets-unauthenticated-attackers-read-known-files-across-8-products": {
     "slug": "news/ai-security/critical-atlassian-flaw-lets-unauthenticated-attackers-read-known-files-across-8-products",
     "meta_description": "A critical flaw in 8 Atlassian Data Center products, which customers host themselves, allows an attacker with no login access to read specific...",
@@ -7971,6 +8020,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Extending Ruzzy with LibAFL\",\n  \"description\": \"LibAFL is all the rage in the fuzzing community these days, especially with LLVM’s libFuzzer being placed in maintenance mode .\",\n  \"datePublished\": \"2026-04-29T12:15:15.227378+00:00\",\n  \"dateModified\": \"2026-04-29T12:15:15.227378+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://blog.trailofbits.com/2026/04/29/extending-ruzzy-with-libafl\"\n  },\n  \"url\": \"https://blog.trailofbits.com/2026/04/29/extending-ruzzy-with-libafl\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-29T12:16:09.051529+00:00"
+  },
+  "news/ai-security/f5-warns-6-critical-big-ip-flaws-can-crash-traffic-in-specific-setups-may-allow-rce": {
+    "slug": "news/ai-security/f5-warns-6-critical-big-ip-flaws-can-crash-traffic-in-specific-setups-may-allow-rce",
+    "meta_description": "Swati Khandelwal Nov 18, 2026 Network Security / Vulnerability Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE\",\n  \"description\": \"Swati Khandelwal Nov 18, 2026 Network Security / Vulnerability Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic...\",\n  \"datePublished\": \"2026-11-19T01:23:35.495408+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:35.495408+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:17.735595+00:00"
   },
   "news/ai-security/faa-ground-stop-issued-due-to-extraordinary-circumstances": {
     "slug": "news/ai-security/faa-ground-stop-issued-due-to-extraordinary-circumstances",
@@ -13075,6 +13131,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T21:28:13.135040+00:00"
   },
+  "news/ai-security/new-attack-bypasses-tpm-lockout-to-crack-windows-hello-and-bitlocker-pins-in-days-not-years": {
+    "slug": "news/ai-security/new-attack-bypasses-tpm-lockout-to-crack-windows-hello-and-bitlocker-pins-in-days-not-years",
+    "meta_description": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years\",\n  \"description\": \"On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case,...\",\n  \"datePublished\": \"2026-11-19T01:23:36.341144+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:36.341144+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:16.246321+00:00"
+  },
   "news/ai-security/new-attacks-against-secure-enclaves": {
     "slug": "news/ai-security/new-attacks-against-secure-enclaves",
     "meta_description": "Encryption can protect data at rest and data in transit, but does nothing for data in use. What we have are secure enclaves.",
@@ -13144,6 +13207,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New DynoWiper Malware Used in Attempted Sandworm Attack on Polish Power Sector\",\n  \"description\": \"Ravie Lakshmanan Jan 24, 2026 Malware / Critical Infrastructure The Russian nation-state hacking group known as Sandworm has been attributed to...\",\n  \"datePublished\": \"2026-01-24T10:15:12.435923+00:00\",\n  \"dateModified\": \"2026-01-24T10:15:12.435923+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/new-dynowiper-malware-used-in-attempted.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/new-dynowiper-malware-used-in-attempted.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:46.644388+00:00"
+  },
+  "news/ai-security/new-eggstreme-malware-variant-goes-silent-to-evade-security-tools-in-government-attacks": {
+    "slug": "news/ai-security/new-eggstreme-malware-variant-goes-silent-to-evade-security-tools-in-government-attacks",
+    "meta_description": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks\",\n  \"description\": \"The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to...\",\n  \"datePublished\": \"2026-11-19T01:23:36.031917+00:00\",\n  \"dateModified\": \"2026-11-19T01:23:36.031917+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:16.620311+00:00"
   },
   "news/ai-security/new-evalusion-clickfix-campaign-delivers-amatera-stealer-and-netsupport-rat": {
     "slug": "news/ai-security/new-evalusion-clickfix-campaign-delivers-amatera-stealer-and-netsupport-rat",
@@ -18528,6 +18598,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-13T00:22:21.580926+00:00"
   },
+  "news/comp-journalism/a-healthy-degree-of-vitality-medill-takes-a-look-at-the-twin-cities-local-news-ecosystem": {
+    "slug": "news/comp-journalism/a-healthy-degree-of-vitality-medill-takes-a-look-at-the-twin-cities-local-news-ecosystem",
+    "meta_description": "This year’s State of Local News Report from Medill was grim . But in the Twin Cities, Neal St. Anthony writes , a rich local news ecosystem offers...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"“A healthy degree of vitality”: Medill takes a look at the Twin Cities’ local news ecosystem\",\n  \"description\": \"This year’s State of Local News Report from Medill was grim . But in the Twin Cities, Neal St. Anthony writes , a rich local news ecosystem offers...\",\n  \"datePublished\": \"2026-11-19T01:24:06.870668+00:00\",\n  \"dateModified\": \"2026-11-19T01:24:06.870668+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/a-healthy-degree-of-vitality-medill-takes-a-look-at-the-twin-cities-local-news-ecosystem\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/a-healthy-degree-of-vitality-medill-takes-a-look-at-the-twin-cities-local-news-ecosystem\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:20.210677+00:00"
+  },
   "news/comp-journalism/a-lack-of-professional-ai-guidelines-leads-to-feelings-of-ai-shame-a-new-study-finds": {
     "slug": "news/comp-journalism/a-lack-of-professional-ai-guidelines-leads-to-feelings-of-ai-shame-a-new-study-finds",
     "meta_description": "AI &amp; Journalism AI Search &amp; Platforms Search &amp; Platforms Audience &amp; Creators Audience &amp; Creators Local News Local News...",
@@ -18611,6 +18688,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Africa Coordinator, Forest Governance Media Initiative\",\n  \"description\": \"Internews Remote Open until filled Internews’ Earth Journalism Network is seeking to hire an Africa Coordinator to support a new 3-year project...\",\n  \"datePublished\": \"2026-01-09T22:15:42.559978+00:00\",\n  \"dateModified\": \"2026-01-09T22:15:42.559978+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://gijn.org/jobs/africa-coordinator-forest-governance-media-initiative\"\n  },\n  \"url\": \"https://gijn.org/jobs/africa-coordinator-forest-governance-media-initiative\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:08.448388+00:00"
+  },
+  "news/comp-journalism/after-gutting-newsrooms-mcclatchy-plans-to-rebuild-itself-around-ai": {
+    "slug": "news/comp-journalism/after-gutting-newsrooms-mcclatchy-plans-to-rebuild-itself-around-ai",
+    "meta_description": "Two months after McClatchy Media laid off more than 90 journalists nationwide, executives at the storied local newspaper chain offered a blunt...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"After gutting newsrooms, McClatchy plans to rebuild itself around AI\",\n  \"description\": \"Two months after McClatchy Media laid off more than 90 journalists nationwide, executives at the storied local newspaper chain offered a blunt...\",\n  \"datePublished\": \"2026-11-19T01:24:06.727146+00:00\",\n  \"dateModified\": \"2026-11-19T01:24:06.727146+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/after-gutting-newsrooms-mcclatchy-plans-to-rebuild-itself-around-ai\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/after-gutting-newsrooms-mcclatchy-plans-to-rebuild-itself-around-ai\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:21.065189+00:00"
   },
   "news/comp-journalism/agency-faces-ps100000-legal-costs-from-mail-and-telegraph-over-ps200-pictures-claim": {
     "slug": "news/comp-journalism/agency-faces-ps100000-legal-costs-from-mail-and-telegraph-over-ps200-pictures-claim",
@@ -18975,6 +19059,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"BBC apologises to Pink News bosses over defamatory sexual misconduct claims\",\n  \"description\": \"Pink News chief executive and founder Benjamin Cohen at the Pink News Awards 2022. Picture: Pink News Pink News bosses Benjamin Cohen and Anthony...\",\n  \"datePublished\": \"2026-10-09T01:27:43.359419+00:00\",\n  \"dateModified\": \"2026-10-09T01:27:43.359419+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/media_law/bbc-apologises-to-pink-news-bosses-over-defamatory-sexual-misconduct-claims\"\n  },\n  \"url\": \"https://pressgazette.co.uk/media_law/bbc-apologises-to-pink-news-bosses-over-defamatory-sexual-misconduct-claims\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-09T01:27:54.508758+00:00"
+  },
+  "news/comp-journalism/bbc-claims-its-users-have-higher-trust-and-community-cohesion-after-survey-findings": {
+    "slug": "news/comp-journalism/bbc-claims-its-users-have-higher-trust-and-community-cohesion-after-survey-findings",
+    "meta_description": "The homepage of the BBC News website, on 6th May 2015. Picture: Chris Dorney/Shutterstock BBC News and BBC Local News users report higher levels...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"BBC claims its users have higher trust and community cohesion after survey findings\",\n  \"description\": \"The homepage of the BBC News website, on 6th May 2015. Picture: Chris Dorney/Shutterstock BBC News and BBC Local News users report higher levels...\",\n  \"datePublished\": \"2026-11-19T01:24:08.075000+00:00\",\n  \"dateModified\": \"2026-11-19T01:24:08.075000+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/bbc-news-claims-its-users-have-higher-trust-and-community-cohesion-after-survey-findings\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/bbc-news-claims-its-users-have-higher-trust-and-community-cohesion-after-survey-findings\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:20.625931+00:00"
   },
   "news/comp-journalism/bbc-proposes-to-close-regional-investigations-unit": {
     "slug": "news/comp-journalism/bbc-proposes-to-close-regional-investigations-unit",
@@ -22406,6 +22497,13 @@
     "agent_callout": "",
     "generated_at": "2026-10-07T01:17:27.698099+00:00"
   },
+  "news/comp-journalism/reader-funded-cardiff-newsletter-launches-as-part-of-local-news-network-covering-missed-stories": {
+    "slug": "news/comp-journalism/reader-funded-cardiff-newsletter-launches-as-part-of-local-news-network-covering-missed-stories",
+    "meta_description": "Team behind Proper Cardiff News. Left to right: Co-founder Will Hayward, editor Marcus Hughes, co-founder Catrin Pascoe and investigative...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Reader-funded Cardiff newsletter launches as part of local news network covering ‘missed’ stories\",\n  \"description\": \"Team behind Proper Cardiff News. Left to right: Co-founder Will Hayward, editor Marcus Hughes, co-founder Catrin Pascoe and investigative...\",\n  \"datePublished\": \"2026-11-19T01:24:09.584406+00:00\",\n  \"dateModified\": \"2026-11-19T01:24:09.584406+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/newsletters/reader-funded-cardiff-newsletter-launches-as-part-of-local-news-network-covering-missed-stories\"\n  },\n  \"url\": \"https://pressgazette.co.uk/newsletters/reader-funded-cardiff-newsletter-launches-as-part-of-local-news-network-covering-missed-stories\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:21.880231+00:00"
+  },
   "news/comp-journalism/readers-turned-to-these-local-newspapers-for-real-time-safety-updates-and-weekend-reads": {
     "slug": "news/comp-journalism/readers-turned-to-these-local-newspapers-for-real-time-safety-updates-and-weekend-reads",
     "meta_description": "Deliberate audience initiatives and breaking news alike have driven traffic to local newspapers in the last few months. According to Similarweb’s...",
@@ -22587,6 +22685,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"‘Scamming’ landlord libel claim thrown out as Lammy promises legislation on SLAPPs\",\n  \"description\": \"Freelance journalist Cormac Kehoe and Mill Media founder Joshi Herrmann outside the Royal Courts of Justice in London. Picture: Mill Media A libel...\",\n  \"datePublished\": \"2026-05-24T00:20:55.286129+00:00\",\n  \"dateModified\": \"2026-05-24T00:20:55.286129+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/mill-media-libel-thrown-out-lammy-slapps\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/mill-media-libel-thrown-out-lammy-slapps\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-24T00:21:08.451221+00:00"
+  },
+  "news/comp-journalism/seals-construction-and-midterms-drive-traffic-gains-at-massachusetts-nonprofit-news-outlets": {
+    "slug": "news/comp-journalism/seals-construction-and-midterms-drive-traffic-gains-at-massachusetts-nonprofit-news-outlets",
+    "meta_description": "Is something in the water in Nieman Lab’s home state? In our latest quarterly ranking of nonprofit news outlets, eight Massachusetts nonprofit...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Seals, construction, and midterms drive traffic gains at Massachusetts nonprofit news outlets\",\n  \"description\": \"Is something in the water in Nieman Lab’s home state? In our latest quarterly ranking of nonprofit news outlets, eight Massachusetts nonprofit...\",\n  \"datePublished\": \"2026-11-19T01:24:07.147631+00:00\",\n  \"dateModified\": \"2026-11-19T01:24:07.147631+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.niemanlab.org/2026/11/seals-construction-and-midterms-drive-traffic-gains-at-massachusetts-nonprofit-news-outlets\"\n  },\n  \"url\": \"https://www.niemanlab.org/2026/11/seals-construction-and-midterms-drive-traffic-gains-at-massachusetts-nonprofit-news-outlets\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-19T01:24:21.450963+00:00"
   },
   "news/comp-journalism/semafor-plans-investment-and-expansion-after-celebrating-first-profitable-year": {
     "slug": "news/comp-journalism/semafor-plans-investment-and-expansion-after-celebrating-first-profitable-year",
