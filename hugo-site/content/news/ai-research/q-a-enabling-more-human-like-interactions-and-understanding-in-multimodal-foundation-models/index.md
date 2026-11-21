@@ -1,0 +1,110 @@
+---
+ai_commentary: []
+ai_commentary_meta:
+  content_digest: ''
+  generated_at: ''
+  model: ''
+  prompt_version: ''
+  provider: ''
+category: ai-research
+date: '2026-11-21T00:02:15.749708+00:00'
+exported_at: '2026-11-21T00:02:16.891215+00:00'
+feed: https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml
+language: en
+source_url: https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120
+structured_data:
+  about: []
+  author: ''
+  description: Jim Glass, a researcher with the MIT-IBM Computing Research Lab and
+    the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL), relates
+    text, imagery, video, and audio using machine learning, AI, and algorithms. In
+    a Q&amp;A, he describes how this builds multimodal fluency in foundation AI models.
+  headline: 'Q&A: Enabling more human-like interactions and understanding in multimodal
+    foundation models'
+  inLanguage: en
+  keywords: []
+  main_image: ''
+  original_source: https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120
+  publisher:
+    logo: /favicon.ico
+    name: GTCode
+title: 'Q&A: Enabling more human-like interactions and understanding in multimodal
+  foundation models'
+updated_at: '2026-11-21T00:02:15.749708+00:00'
+url_hash: 33a61caea8aae9aabd53f5a8bd9cfe51789a129a
+---
+
+Senior Research Scientist Jim Glass discusses how his MIT-IBM Computing Research Lab collaboration connects perception and language, and addresses the shortcoming of current models.
+
+*Humans experience and interact with the world through sensory information. This could mean learning correspondences between the sound of bird chirps and the word “robin,” or being able to visually identify and follow your friend “Sarah” in a crowd of people. In many cases, people are able to draw on their latent “multimodal” knowledge — information across multiple data types, from audio to video to text or spoken word — to perform these tasks without many, or sometimes even any, examples.*
+
+*Multimodal foundation models of artificial intelligence are increasingly gaining capabilities that mimic this. However, their apparent multimodal fluency often belies their actual understanding. An MIT-IBM Computing Research Lab team, co-led by Jim Glass, senior research scientist in the MIT Computer Science and Artificial Intelligence Laboratory, has been investigating critical failures of state-of-the-art multimodal models and developing benchmarks and data-efficient methods to overcome these performance gaps with limited supervision. He speaks about this work in the following interview.*
+
+**Q:**
+What were your goals for this project, and why would you opt to address AI models’ weaknesses over scaling to larger models?
+
+**A:**
+This project has been going on for many years now, with roughly the same MIT-IBM team of speech and vision experts. We've wanted to explore the relationship between perception (things that you see and hear) and language, largely speaking: We have all of this absorbed knowledge and language skills, text-based, in the form of a large language model, so we wanted to know how you can relate them without using a whole bunch of annotated training data. Sometimes the models have seen certain phenomena, a latent representation of something that they have internally, but maybe due to subsequent fine-tuning or something, it disappears, so, developing techniques to try to make this capability re-emerge is a useful thing.
+
+As you study these publicly available models, you can see weaknesses even in big ones, so I think it's important to try to address these limitations. If you had an unlimited budget, you could go out and create the annotations that you need, but it's also good to be able to try to get these models to learn more on their own. We’ve done that by creating novel benchmarks that we can evaluate against, then developing techniques that perform better on these benchmarks, and getting these models to learn on their own. Throughout our research collaboration — and this has very much been a strong collaboration between MIT and IBM — we have continued to release public benchmarks for people to use, and that's a lasting artifact.
+
+I think the overriding themes are multimodalities with language models, trying to address the shortcomings of these models, and trying to develop techniques that do not require a lot of annotated data to complete tasks better.
+
+**Q:**
+Can you walk us through how the project has evolved?
+
+**A:**
+When we first started this project, we were trying to build models that could learn correspondences automatically, not telling the machine anything more than, “This audio caption goes with this picture,” sort of like reading a picture book to a child who's learning language. We would just show it these matching examples, and we'd show it mismatching examples. They could learn that the sequence of sounds that says “lighthouse” corresponds to a picture of a lighthouse, without any text being involved.
+
+Moving beyond speech was to include general audio, and then we started looking at video instead of still images. We would train the model, showing it matching video sequences with the corresponding audio stream and then mismatching ones, and make it reconstruct them. We would also mask some of the images or the audio, and have the model reconstruct it. The model would learn strong relationships; then, far beyond speech, it would learn what parrots sound like, or electric guitars versus acoustic guitars, for example.
+
+Then, when these large language models started coming out — and this was in the early days, before it had been done by the big companies — we started to learn correspondences between audio and language. Since that time, these large multimodal models have become available, and we've started looking at what some of the limitations of these models are, and are trying to improve upon them with these more or less supervised techniques.
+
+**Q:**
+What would you say are some recent highlights of your work?
+
+**A:**
+Our
+[IPLoc research](https://arxiv.org/pdf/2411.13317v2)
+was looking at the fact that these state-of-the-art models, like GPT-40, can't localize specific objects, given just a few-shot examples. We came up with this technique where we would train it with a pseudonym substitution. There's an example there where we replaced “airplane” with “Elizabeth.” It forces the model to not fall back on things that it had previously learned about and pay more attention to the visual context.
+
+Then, we had an audio-based paper,
+[OmniR1](https://openreview.net/pdf?id=7Q1ApHpX31)
+, that was looking at audio-large language models, so these are models that can listen to something and talk about them. One of the disturbing things we found is some of these benchmarks are
+[multiple-choice answers](https://proceedings.iclr.cc/paper_files/paper/2026/file/d6c01b025cad37d5c8bab4ba18846c02-Paper-Conference.pdf)
+. A lot of times, these models aren't really listening to the sound, but they're almost gaming the question by looking at the answer. What animal is roaring in this audio — like a chipmunk, a lion, an alligator, and a chickadee, or something? It's not even really paying attention to the audio, [but] just going, “Oh, lion.” Part of the reason people do that is that it’s simple to evaluate, whereas if you asked for a text response, you’d somehow have to grade whether it’s accurate. Do you get humans to evaluate it, which can be expensive and time-consuming, or do you use some other language model to be the judge that can have its own set of issues as well? One way to address that is to evaluate these models on a variety of different kinds of benchmarks.
+
+We realized you could feed random noise, and they were still doing quite well, which shows that they're just paying attention to the question. So, we tried to develop some methods to have it pay more attention to the audio and minimize this behavior.
+
+**Q:**
+Given resource constraints, what is your approach to adapting these large foundation models, and what blend of AI and algorithmic methods do you use that don't require extensive annotated data?
+
+**A:**
+These days, we can't create one of these very large foundation models ourselves. We don't have the resources to do that, so we're tending to use these available models and trying to adapt them, train them in a weakly supervised way, methods that don't require as much data, like our work on
+[test-time reinforcement learning](https://openaccess.thecvf.com/content/CVPR2026/papers/Singh_TTRV_Test-Time_Reinforcement_Learning_for_Vision_Language_Models_CVPR_2026_paper.pdf)
+.
+
+Our project was not monolithic, in the sense that we're not all working on one thing. It's more like a thousand flowers bloom, so there's no one particular way that we're approaching things.
+
+**Q:**
+In the near future, how do you see multimodal research evolving in your MIT-IBM research team?
+
+**A:**
+Over the years, we probably produced two dozen or so significant collaborative papers, and during this work, it was amazing to me that the machines could learn these correspondences without being told anything. No one had ever shown that machines could do it before we did that. Some of our early work combining audio with large language models was fun, too: seeing the model talk about what it heard and then having a conversation with it. Now, we are starting to take this for granted, but at the time, it was fun to see.
+
+Moving forward, for the coming year, with our MIT-IBM collaboration, we're going to switch gears a little bit and focus more on what's known as full-duplex spoken dialogue systems. These are models that are listening while they’re talking, so it’s more like how humans operate, and this is quite different from what we’ve been doing up until now, which is joint audio-visual work, which we will also continue.
+
+Now, we’ll be focusing on the speech side of things. These full-duplex models have suddenly become an interesting thing to look at, because they would move you away from the rigid turn-taking approach that is used right now when you're talking to some of these models. Ultimately, I think they will be more natural to interact with.
+
+These full-duplex models are just starting to emerge, and some of the ones that are publicly available aren't as good as the big, large language models. They can handle some of these low-level communication skills, but they're still missing some things, like the concept of time, or knowledge depth. So, we're working on trying to address some of these issues.
+
+*This research has been conducted in coordination with the MIT-IBM Computing Research Lab teams of*
+[*Rogerio Feris*](https://research.ibm.com/people/rogerio-feris)
+*,*
+[*Brian Kingsbury*](https://research.ibm.com/people/brian-kingsbury)
+*, and*
+[*Samuel Thomas*](https://research.ibm.com/people/samuel-thomas)
+*of IBM Research, and*
+[*Hilde Kuehne*](https://hildekuehne.github.io/about.html)
+*of the University of Tuebingen, who is an MIT-IBM affiliated researche*
+r.
