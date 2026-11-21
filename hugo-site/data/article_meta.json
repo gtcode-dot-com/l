@@ -4731,6 +4731,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:12.045772+00:00"
   },
+  "news/ai-security/a-phishing-page-interested-in-mx-records-tue-nov-17th": {
+    "slug": "news/ai-security/a-phishing-page-interested-in-mx-records-tue-nov-17th",
+    "meta_description": "I’ve mentioned before in some of my diaries that it can be instructive to look at what appear to be “generic” phishing messages in detail from...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"A phishing page interested in MX records, (Tue, Nov 17th)\",\n  \"description\": \"I’ve mentioned before in some of my diaries that it can be instructive to look at what appear to be “generic” phishing messages in detail from...\",\n  \"datePublished\": \"2026-11-21T00:36:18.265877+00:00\",\n  \"dateModified\": \"2026-11-21T00:36:18.265877+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33526\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33526\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:36:47.424566+00:00"
+  },
   "news/ai-security/a-proof-of-fermats-last-theorem-that-fits-the-margin": {
     "slug": "news/ai-security/a-proof-of-fermats-last-theorem-that-fits-the-margin",
     "meta_description": "Fermat famously claimed to have a “truly marvelous proof” of his Last Theorem , but he never wrote it down, insisting the margin of his page was...",
@@ -5948,6 +5955,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Battling Cryptojacking, Botnets, and IABs &#x5b;Guest Diary&#x5d;, (Thu, Jan 15th)\",\n  \"description\": \"This is a Guest Diary by Matthew Presnal, an ISC intern as part of the SANS.edu [BACS program] Cryptojacking and botnets can pose a greater threat...\",\n  \"datePublished\": \"2026-01-15T12:15:13.928967+00:00\",\n  \"dateModified\": \"2026-01-15T12:15:13.928967+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/32632\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/32632\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:29.488895+00:00"
+  },
+  "news/ai-security/bazuka-android-malware-uses-fake-screen-overlays-to-hide-credential-theft-and-device-control": {
+    "slug": "news/ai-security/bazuka-android-malware-uses-fake-screen-overlays-to-hide-credential-theft-and-device-control",
+    "meta_description": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control\",\n  \"description\": \"Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model...\",\n  \"datePublished\": \"2026-11-21T00:36:18.829163+00:00\",\n  \"dateModified\": \"2026-11-21T00:36:18.829163+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:36:48.210578+00:00"
   },
   "news/ai-security/bbc-expected-to-apologise-over-panorama-edit-of-trump-speech": {
     "slug": "news/ai-security/bbc-expected-to-apologise-over-panorama-edit-of-trump-speech",
@@ -11570,6 +11584,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-15T06:49:36.567739+00:00"
   },
+  "news/ai-security/isc-stormcast-for-wednesday-november-18th-2026-https-isc-sans-edu-podcastdetail-10184-wed-nov-18th": {
+    "slug": "news/ai-security/isc-stormcast-for-wednesday-november-18th-2026-https-isc-sans-edu-podcastdetail-10184-wed-nov-18th",
+    "meta_description": "ISC Stormcast For Wednesday, November 18th, 2026 &lt;https://isc.sans.edu/podcastdetail/10184&gt;",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"ISC Stormcast For Wednesday, November 18th, 2026 https://isc.sans.edu/podcastdetail/10184, (Wed, Nov 18th)\",\n  \"description\": \"ISC Stormcast For Wednesday, November 18th, 2026 &lt;https://isc.sans.edu/podcastdetail/10184&gt;\",\n  \"datePublished\": \"2026-11-21T00:36:17.498740+00:00\",\n  \"dateModified\": \"2026-11-21T00:36:17.498740+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33528\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33528\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:36:46.977321+00:00"
+  },
   "news/ai-security/isc-stormcast-for-wednesday-november-4th-2026-https-isc-sans-edu-podcastdetail-10164-wed-nov-4th": {
     "slug": "news/ai-security/isc-stormcast-for-wednesday-november-4th-2026-https-isc-sans-edu-podcastdetail-10164-wed-nov-4th",
     "meta_description": "ISC Stormcast For Wednesday, November 4th, 2026 &lt;https://isc.sans.edu/podcastdetail/10164&gt;",
@@ -12024,6 +12045,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan\",\n  \"description\": \"Linux backdoors targeting telecom and network appliances in South Korea and Taiwan have been disguising their traffic as email services and...\",\n  \"datePublished\": \"2026-10-07T21:15:15.113685+00:00\",\n  \"dateModified\": \"2026-10-07T21:15:15.113685+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-10-07T21:16:11.916315+00:00"
+  },
+  "news/ai-security/linux-kvm-flaw-cve-2026-99312-lets-guest-vms-access-host-memory-on-amd-hosts": {
+    "slug": "news/ai-security/linux-kvm-flaw-cve-2026-99312-lets-guest-vms-access-host-memory-on-amd-hosts",
+    "meta_description": "A flaw in KVM , the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts\",\n  \"description\": \"A flaw in KVM , the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual...\",\n  \"datePublished\": \"2026-11-21T00:36:19.156022+00:00\",\n  \"dateModified\": \"2026-11-21T00:36:19.156022+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:36:48.604309+00:00"
   },
   "news/ai-security/linux-process-name-masquerading-wed-jun-24th": {
     "slug": "news/ai-security/linux-process-name-masquerading-wed-jun-24th",
@@ -18275,6 +18303,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"WhatsApp Malware 'Maverick' Hijacks Browser Sessions to Target Brazil's Biggest Banks\",\n  \"description\": \"A new WhatsApp malware named Maverick hijacks browser sessions to target major banks in Brazil, sharing code with the Coyote banking trojan and spreading via WhatsApp Web.\",\n  \"datePublished\": \"2025-11-13T15:26:59+00:00\",\n  \"dateModified\": \"2025-11-13T15:26:59+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://example.com/logo.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/11/whatsapp-malware-maverick-hijacks.html\"\n  },\n  \"sameAs\": \"https://thehackernews.com/2025/11/whatsapp-malware-maverick-hijacks.html\"\n}",
     "agent_callout": "",
     "generated_at": "2025-11-13T15:27:19.742572+00:00"
+  },
+  "news/ai-security/whatsapp-patches-3-security-flaws-including-android-bug-suspected-of-use-in-scams": {
+    "slug": "news/ai-security/whatsapp-patches-3-security-flaws-including-android-bug-suspected-of-use-in-scams",
+    "meta_description": "Ravie Lakshmanan Nov 20, 2026 Vulnerability / Mobile Security Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams\",\n  \"description\": \"Ravie Lakshmanan Nov 20, 2026 Vulnerability / Mobile Security Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting...\",\n  \"datePublished\": \"2026-11-21T00:36:18.524900+00:00\",\n  \"dateModified\": \"2026-11-21T00:36:18.524900+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:36:47.828233+00:00"
   },
   "news/ai-security/whatsapp-rolls-out-lockdown-style-security-mode-to-protect-targeted-users-from-spyware": {
     "slug": "news/ai-security/whatsapp-rolls-out-lockdown-style-security-mode-to-protect-targeted-users-from-spyware",
