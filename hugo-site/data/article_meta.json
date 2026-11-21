@@ -307,6 +307,13 @@
     "agent_callout": "",
     "generated_at": "2026-04-29T18:16:22.476898+00:00"
   },
+  "news/ai-research/ai-helps-researchers-investigate-how-thousands-of-medical-studies-share-code": {
+    "slug": "news/ai-research/ai-helps-researchers-investigate-how-thousands-of-medical-studies-share-code",
+    "meta_description": "An MIT and Dana-Farber Institute-led team used large language models to examine nearly 4,000 studies and hundreds of code repositories, revealing...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"AI helps researchers investigate how thousands of medical studies share code\",\n  \"description\": \"An MIT and Dana-Farber Institute-led team used large language models to examine nearly 4,000 studies and hundreds of code repositories, revealing...\",\n  \"datePublished\": \"2026-11-21T00:31:43.762563+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:43.762563+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119\"\n  },\n  \"url\": \"https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:06.321261+00:00"
+  },
   "news/ai-research/ai-model-decodes-the-language-cells-use-to-communicate": {
     "slug": "news/ai-research/ai-model-decodes-the-language-cells-use-to-communicate",
     "meta_description": "A new computational approach reveals how cells communicate to assemble into tissues. This could accelerate stem cell engineering, improve disease...",
@@ -2302,6 +2309,13 @@
     "agent_callout": "",
     "generated_at": "2026-05-24T00:03:13.305171+00:00"
   },
+  "news/ai-research/introducing-harness-adapters-adapt-your-favorite-model-to-your-harness-to-improve-performance-and-cost": {
+    "slug": "news/ai-research/introducing-harness-adapters-adapt-your-favorite-model-to-your-harness-to-improve-performance-and-cost",
+    "meta_description": "Combining RL on a custom task distribution with your favorite agent harness yields more accurate and efficient models for that target harness and...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost\",\n  \"description\": \"Combining RL on a custom task distribution with your favorite agent harness yields more accurate and efficient models for that target harness and...\",\n  \"datePublished\": \"2026-11-21T00:31:45.275533+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:45.275533+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/harness-adapters-at-scale\"\n  },\n  \"url\": \"https://huggingface.co/blog/harness-adapters-at-scale\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:07.070524+00:00"
+  },
   "news/ai-research/introducing-huggingface-kernels-200-webgpu-kernels-for-local-ai": {
     "slug": "news/ai-research/introducing-huggingface-kernels-200-webgpu-kernels-for-local-ai",
     "meta_description": "One of our biggest goals on the WebAI team at Hugging Face is to make browser inference as fast and as user-friendly as possible.",
@@ -3723,6 +3737,13 @@
     "agent_callout": "",
     "generated_at": "2026-02-16T05:52:53.709814+00:00"
   },
+  "news/ai-research/study-reveals-data-centers-long-distance-damage-to-air-quality": {
+    "slug": "news/ai-research/study-reveals-data-centers-long-distance-damage-to-air-quality",
+    "meta_description": "Researchers find air pollution from data center electricity use can affect communities far from the facilities, with some of the highest impacts...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Study reveals data centers’ long-distance damage to air quality\",\n  \"description\": \"Researchers find air pollution from data center electricity use can affect communities far from the facilities, with some of the highest impacts...\",\n  \"datePublished\": \"2026-11-21T00:31:44.041919+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:44.041919+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119\"\n  },\n  \"url\": \"https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:05.935043+00:00"
+  },
   "news/ai-research/supercomputing-researchers-document-evolution-of-ai-hardware": {
     "slug": "news/ai-research/supercomputing-researchers-document-evolution-of-ai-hardware",
     "meta_description": "As artificial intelligence transforms industries and national security, understanding the latest hardware capabilities is important for...",
@@ -4219,6 +4240,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Welcome Gemma 4: Frontier multimodal intelligence on device\",\n  \"description\": \"The Gemma 4 family of multimodal models by Google DeepMind is out on Hugging Face, with support for your favorite agents, inference engines, and...\",\n  \"datePublished\": \"2026-04-02T16:15:38.550285+00:00\",\n  \"dateModified\": \"2026-04-02T16:15:38.550285+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/gemma4\"\n  },\n  \"url\": \"https://huggingface.co/blog/gemma4\"\n}",
     "agent_callout": "",
     "generated_at": "2026-04-02T16:16:08.724781+00:00"
+  },
+  "news/ai-research/welcome-inkling-2-mini-cutting-edge-performance-for-your-local-setup": {
+    "slug": "news/ai-research/welcome-inkling-2-mini-cutting-edge-performance-for-your-local-setup",
+    "meta_description": "TLDR; Inkling 2 Mini is a new looped transformer model. It’s a multimodal Mixture-of-Experts with ~26B physical total and 3B active parameters per...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup\",\n  \"description\": \"TLDR; Inkling 2 Mini is a new looped transformer model. It’s a multimodal Mixture-of-Experts with ~26B physical total and 3B active parameters per...\",\n  \"datePublished\": \"2026-11-21T00:31:44.626867+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:44.626867+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://huggingface.co/blog/inkling2mini\"\n  },\n  \"url\": \"https://huggingface.co/blog/inkling2mini\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:06.712272+00:00"
   },
   "news/ai-research/welcome-muse-spark-open-open-weight-frontier-multimodal-mixture-of-experts-model-from-meta": {
     "slug": "news/ai-research/welcome-muse-spark-open-open-weight-frontier-multimodal-mixture-of-experts-model-from-meta",
@@ -6551,6 +6579,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:46.255407+00:00"
   },
+  "news/ai-security/chrome-158-patches-204-vulnerabilities": {
+    "slug": "news/ai-security/chrome-158-patches-204-vulnerabilities",
+    "meta_description": "Google on Tuesday announced the release of Chrome 158 to the stable channel with patches for 204 vulnerabilities, including six critical-severity...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Chrome 158 Patches 204 Vulnerabilities\",\n  \"description\": \"Google on Tuesday announced the release of Chrome 158 to the stable channel with patches for 204 vulnerabilities, including six critical-severity...\",\n  \"datePublished\": \"2026-11-21T00:31:29.263237+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:29.263237+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/chrome-158-patches-204-vulnerabilities\"\n  },\n  \"url\": \"https://www.securityweek.com/chrome-158-patches-204-vulnerabilities\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:05.590538+00:00"
+  },
   "news/ai-security/chrome-extension-caught-injecting-hidden-solana-transfer-fees-into-raydium-swaps": {
     "slug": "news/ai-security/chrome-extension-caught-injecting-hidden-solana-transfer-fees-into-raydium-swaps",
     "meta_description": "Nov 26, 2025 Ravie Lakshmanan Browser Security / Cryptocurrency Cybersecurity researchers have discovered a new malicious extension on the Chrome...",
@@ -6921,6 +6956,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Cisco Warns of Active Attacks Exploiting Unpatched 0-Day in AsyncOS Email Security Appliances\",\n  \"description\": \"Dec 18, 2025 Ravie Lakshmanan Vulnerability / Network Security Cisco has alerted users to a maximum-severity zero-day flaw in Cisco AsyncOS...\",\n  \"datePublished\": \"2025-12-19T12:03:13.068747+00:00\",\n  \"dateModified\": \"2025-12-19T12:03:13.068747+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2025/12/cisco-warns-of-active-attacks.html\"\n  },\n  \"url\": \"https://thehackernews.com/2025/12/cisco-warns-of-active-attacks.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:27.348826+00:00"
+  },
+  "news/ai-security/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do": {
+    "slug": "news/ai-security/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do",
+    "meta_description": "Patti Degnan’s journey is unusual. She didn’t have an early plan to become a CISO; but perhaps life events made it inevitable.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do\",\n  \"description\": \"Patti Degnan’s journey is unusual. She didn’t have an early plan to become a CISO; but perhaps life events made it inevitable.\",\n  \"datePublished\": \"2026-11-21T00:31:28.977773+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:28.977773+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do\"\n  },\n  \"url\": \"https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:04.060487+00:00"
   },
   "news/ai-security/ciso-s-expert-guide-to-ai-supply-chain-attacks": {
     "slug": "news/ai-security/ciso-s-expert-guide-to-ai-supply-chain-attacks",
@@ -7376,6 +7418,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Critical Node.js Vulnerability Can Cause Server Crashes via async_hooks Stack Overflow\",\n  \"description\": \"Jan 14, 2026 Ravie Lakshmanan Application Security / Vulnerability Node.js has released updates to fix what it described as a critical security...\",\n  \"datePublished\": \"2026-01-14T10:15:13.613824+00:00\",\n  \"dateModified\": \"2026-01-14T10:15:13.613824+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://thehackernews.com/2026/01/critical-nodejs-vulnerability-can-cause.html\"\n  },\n  \"url\": \"https://thehackernews.com/2026/01/critical-nodejs-vulnerability-can-cause.html\"\n}",
     "agent_callout": "",
     "generated_at": "2026-03-10T00:17:59.770983+00:00"
+  },
+  "news/ai-security/critical-perforce-puppet-rce-exploited-in-attacks": {
+    "slug": "news/ai-security/critical-perforce-puppet-rce-exploited-in-attacks",
+    "meta_description": "Threat actors have been exploiting a critical-severity vulnerability in Perforce Puppet to execute code on vulnerable servers.",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Critical Perforce Puppet RCE Exploited in Attacks\",\n  \"description\": \"Threat actors have been exploiting a critical-severity vulnerability in Perforce Puppet to execute code on vulnerable servers.\",\n  \"datePublished\": \"2026-11-21T00:31:29.729345+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:29.729345+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks\"\n  },\n  \"url\": \"https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:05.198008+00:00"
   },
   "news/ai-security/critical-php-vulnerability-cve-2026-109618-cve-2026-109619-infocon-yellow-wed-oct-21st": {
     "slug": "news/ai-security/critical-php-vulnerability-cve-2026-109618-cve-2026-109619-infocon-yellow-wed-oct-21st",
@@ -11689,6 +11738,13 @@
     "agent_callout": "",
     "generated_at": "2026-11-19T01:44:31.417044+00:00"
   },
+  "news/ai-security/java4shell-nginx2shell-and-more-why-we-are-not-at-yellow-wed-nov-18th": {
+    "slug": "news/ai-security/java4shell-nginx2shell-and-more-why-we-are-not-at-yellow-wed-nov-18th",
+    "meta_description": "About a month ago, we went to Infocon Yellow for the first time in a few years. We decided to address the php2shell vulnerability and alert our...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Java4Shell, NGINX2Shell and more: Why we are not at \\\"Yellow\\\", (Wed, Nov 18th)\",\n  \"description\": \"About a month ago, we went to Infocon Yellow for the first time in a few years. We decided to address the php2shell vulnerability and alert our...\",\n  \"datePublished\": \"2026-11-21T00:31:30.757836+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:30.757836+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://isc.sans.edu/diary/rss/33532\"\n  },\n  \"url\": \"https://isc.sans.edu/diary/rss/33532\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:04.457862+00:00"
+  },
   "news/ai-security/kadnap-malware-infects-14000-edge-devices-to-power-stealth-proxy-botnet": {
     "slug": "news/ai-security/kadnap-malware-infects-14000-edge-devices-to-power-stealth-proxy-botnet",
     "meta_description": "Cybersecurity researchers have discovered a new malware called KadNap that's primarily targeting Asus routers to enlist them into a botnet for...",
@@ -12500,6 +12556,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams\",\n  \"description\": \"UPDATE – Microsoft 365 suffered a widespread outage Thursday, which has extended into Friday, disrupting access to business email and other cloud...\",\n  \"datePublished\": \"2026-11-15T06:10:06.444083+00:00\",\n  \"dateModified\": \"2026-11-15T06:10:06.444083+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams\"\n  },\n  \"url\": \"https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams\"\n}",
     "agent_callout": "",
     "generated_at": "2026-11-15T06:10:36.827618+00:00"
+  },
+  "news/ai-security/microsoft-agent-framework-releases-poisoned-with-credential-stealer": {
+    "slug": "news/ai-security/microsoft-agent-framework-releases-poisoned-with-credential-stealer",
+    "meta_description": "Hackers distributed two malicious versions of Microsoft’s Agent Framework Python package through PyPI in a November 17 supply chain attack,...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Microsoft Agent Framework Releases Poisoned With Credential Stealer\",\n  \"description\": \"Hackers distributed two malicious versions of Microsoft’s Agent Framework Python package through PyPI in a November 17 supply chain attack,...\",\n  \"datePublished\": \"2026-11-21T00:31:29.474054+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:29.474054+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer\"\n  },\n  \"url\": \"https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:04.848405+00:00"
   },
   "news/ai-security/microsoft-begins-ntlm-phase-out-with-three-stage-plan-to-move-windows-to-kerberos": {
     "slug": "news/ai-security/microsoft-begins-ntlm-phase-out-with-three-stage-plan-to-move-windows-to-kerberos",
@@ -21265,6 +21328,13 @@
     "agent_callout": "",
     "generated_at": "2026-03-10T00:16:17.928517+00:00"
   },
+  "news/comp-journalism/kyiv-independent-sees-future-beyond-ukraine-in-age-of-confrontation": {
+    "slug": "news/comp-journalism/kyiv-independent-sees-future-beyond-ukraine-in-age-of-confrontation",
+    "meta_description": "The Kyiv Independent by Bogdana Ferguson Five years after launch, the Kyiv Independent continues to prove that there is journalistic opportunity...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Kyiv Independent sees future beyond Ukraine in ‘age of confrontation’\",\n  \"description\": \"The Kyiv Independent by Bogdana Ferguson Five years after launch, the Kyiv Independent continues to prove that there is journalistic opportunity...\",\n  \"datePublished\": \"2026-11-21T00:31:57.228789+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:57.228789+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/kyiv-independent-sees-future-beyond-ukraine-in-age-of-confrontation\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/kyiv-independent-sees-future-beyond-ukraine-in-age-of-confrontation\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:07.781945+00:00"
+  },
   "news/comp-journalism/lachlan-cartwright-matches-legacy-media-salary-one-year-in-with-own-newsbrand": {
     "slug": "news/comp-journalism/lachlan-cartwright-matches-legacy-media-salary-one-year-in-with-own-newsbrand",
     "meta_description": "Breaker founder Lachlan Cartwright (left) and Breaker Media’s website homepage on 6 February 2026. A New York-based news site and twice-weekly...",
@@ -23490,6 +23560,13 @@
     "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Thomson Reuters boss says AI licensing deals only involve archive text\",\n  \"description\": \"Steve Hasker, president and CEO, Thomson Reuters, speaking at the Truth Tellers Summit in London on Wednesday 6 May 2026.\",\n  \"datePublished\": \"2026-05-15T02:03:53.874613+00:00\",\n  \"dateModified\": \"2026-05-15T02:03:53.874613+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/publishers/wires_and_agencies/thomson-reuters-boss-says-ai-licensing-deals-only-involve-archive-text\"\n  },\n  \"url\": \"https://pressgazette.co.uk/publishers/wires_and_agencies/thomson-reuters-boss-says-ai-licensing-deals-only-involve-archive-text\"\n}",
     "agent_callout": "",
     "generated_at": "2026-05-15T02:04:11.764805+00:00"
+  },
+  "news/comp-journalism/tikok-will-serve-ads-alongside-mail-and-metro-videos-in-uk-first-deal": {
+    "slug": "news/comp-journalism/tikok-will-serve-ads-alongside-mail-and-metro-videos-in-uk-first-deal",
+    "meta_description": "Picture: Jakub Porzycki/NurPhoto via Getty Images The publisher of the Daily Mail and Metro news titles has partnered with Tiktok to serve...",
+    "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"NewsArticle\",\n  \"headline\": \"Tikok will serve ads alongside Mail and Metro videos in UK-first deal\",\n  \"description\": \"Picture: Jakub Porzycki/NurPhoto via Getty Images The publisher of the Daily Mail and Metro news titles has partnered with Tiktok to serve...\",\n  \"datePublished\": \"2026-11-21T00:31:58.234752+00:00\",\n  \"dateModified\": \"2026-11-21T00:31:58.234752+00:00\",\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"GTCode\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://gtcode.com/apple-touch-icon.png\"\n    }\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://pressgazette.co.uk/news/tikok-will-serve-ads-alongside-mail-and-metro-videos-in-uk-first-deal-for-news-publisher\"\n  },\n  \"url\": \"https://pressgazette.co.uk/news/tikok-will-serve-ads-alongside-mail-and-metro-videos-in-uk-first-deal-for-news-publisher\"\n}",
+    "agent_callout": "",
+    "generated_at": "2026-11-21T00:32:07.421183+00:00"
   },
   "news/comp-journalism/tim-davie-bbc-must-act-urgently-to-secure-scale": {
     "slug": "news/comp-journalism/tim-davie-bbc-must-act-urgently-to-secure-scale",
